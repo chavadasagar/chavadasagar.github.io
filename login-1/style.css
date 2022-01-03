@@ -1,0 +1,66 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.main
+{
+    display: grid;
+    grid-template-columns: auto auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    grid-gap: 15px;
+    border-right: 5px solid black;
+    box-shadow: 5px 5px 20px rgb(255, 3, 221);
+    padding: 20px;
+}
+.main .login_icon{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.main .login_icon img{
+    width: 150px;
+    height:150px;
+}
+.main .login_box{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+
+}
+.main .login_box .login_title{
+    /* text-align: center;
+    padding: 40px; */
+}
+.main .login_box input[type=text],input[type=password]
+{
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 10px; 
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    text-align: center;
+    outline: none;
+}
+.main .login_box .btn button
+{
+    background: transparent;
+    padding: 10px;
+    border: 2px solid black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.main .login_box .btn button:hover
+{
+    border: none;
+    /* padding: 15px; */
+    transition: 1s;
+    border-top: 2px solid rgba(238, 27, 227, 0.651);
+    border-bottom: 2px solid rgba(238, 27, 227, 0.651);
+    background: transparent;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
