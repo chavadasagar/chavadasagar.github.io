@@ -1,0 +1,51 @@
+main{
+    display: grid;
+    justify-content: center;
+    background: rgb(148, 216, 223);
+    width: fit-content;
+    height: fit-content;
+    padding: 10px 50px;
+    box-shadow: 2px 2px 5px red;
+    font-family: sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+main div form
+{
+    display: grid;
+    justify-content: center;
+    width: 100%;
+}
+main div form div{
+    padding: 3px;
+}
+main div form div input[type=text],input[type=password],input[type=email]{
+    width: 100%;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid black;
+    text-align: center;
+}
+main div form div input[type=submit]
+{
+    padding: 5px;
+    width: 108%;
+    background-color: transparent;
+    border:     1px solid black;
+    border-radius: 10px;
+}
+main div form div input[type=submit]:hover{
+    background: white;
+    color: black;
+}
+div.title{
+    background-color: gray;
+    width: 100%;
+    padding-left: 10px;
+    border-left: 4px solid green;
+    border-radius: 10px;
+    outline: none;
+}
