@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genrate Strong Password</title>
+</head>
+
+<body>
+
+    <form action="" name="myform">
+        <input type="text" pattern="[0-9]" min="2" max="4" placeholder="Enter Password Length" name="len">
+        <input type="button" onclick="check()" value="getPassword">
+        <h1 id="result"></h1>
+    </form>
+</body>
+
+</html>
+<script>
+    function check() {
+        var len = myform.len.value;
+        var all = [];
+
+        for (x = 0; x < 10; x++) {
+            all.push(x);
+        }
+
+        // capital
+        for (x = 65; x < 91; x++) {
+            all.push(String.fromCharCode(x));
+        }
+
+        // small
+        for (x = 97; x < 123; x++) {
+            all.push(String.fromCharCode(x))
+        }
+
+        var result_arr = [];
+
+        for(x=0;x<all.length;x++)
+        {
+            result_arr.push(all[parseInt(Math.random()*all.length-1)]);
+        }   
+
+        // document.write(result_arr.join(""));
+
+        var pas = [];
+
+        for(x=0;x<Number(len);x++)
+        {
+            pas.push(result_arr[x]);
+        }
+
+        document.getElementById("result").innerHTML = "Password :"+pas.join("");
+    }
+</script>
