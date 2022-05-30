@@ -1,0 +1,80 @@
+<form action="" name="myform">
+    <input type="text" name="password" onkeyup="show()"> <span id="msg">Enter Your Password</span>
+    <h1 id="result">Enter Yur Password Genrate Strong Passowrd ...</h1>
+</form>
+
+<script>
+
+
+    // this function genrate strong password acording your password
+    // this function acccept one argume and return new password acording to your argument   
+    function genrateStrongPassword(yourPassword) {
+
+        var your_password = yourPassword;
+        var new_password = your_password.split("");
+
+        for (x = 0; x < new_password.length; x++) {
+            if (new_password[x] == 's' || new_password[x] == 'S') {
+                new_password[x] = '$';
+            }
+            if (new_password[x] == 'a' || new_password[x] == 'A') {
+                new_password[x] = '@';
+            }
+            if (new_password[x] == 'g' || new_password[x] == 'G') {
+                new_password[x] = '9';
+            }
+            if (new_password[x] == 'h' || new_password[x] == 'H') {
+                new_password[x] = '#';
+            }
+            if (new_password[x] == 'w' || new_password[x] == 'W') {
+                new_password[x] = "\/\/";
+            }
+            if (new_password[x] == 'm' || new_password[x] == 'M') {
+                new_password[x] = "/\/\ ";
+            }
+            if (new_password[x] == 'h' || new_password[x] == 'H') {
+                new_password[x] = '#';
+            }
+            if (new_password[x] == 'v' || new_password[x] == 'V') {
+                new_password[x] = '\/';
+            }
+            if (new_password[x] == 'X' || new_password[x] == 'x') {
+                new_password[x] = '+';
+            }
+            if (new_password[x] == 'n' || new_password[x] == 'N') {
+                new_password[x] = '/\/';
+            }
+            if (new_password[x] == 'o' || new_password[x] == 'O') {
+                new_password[x] = '0';
+            }
+            if (new_password[x] == 'l' || new_password[x] == 'L') {
+                new_password[x] = '|';
+            }
+            if (new_password[x] == ' ') {
+                new_password[x] = '_';
+            }
+        }
+        return new_password.join("");
+    }
+
+    function show() {
+        var pas = myform.password.value;
+
+        if (pas != "") {
+            document.getElementById("msg").style.color = "green";
+            document.getElementById("msg").style.fontWeight = "bold";
+            document.getElementById("msg").innerHTML = "ok ..";
+        }
+        else if (pas == "") {
+            document.getElementById("msg").style.color = "red";
+            document.getElementById("msg").style.fontWeight = "bold";
+            document.getElementById("msg").innerHTML = "Enter Your Password";
+
+        }
+
+        document.getElementById("result").innerHTML = "new password :"+genrateStrongPassword(pas);
+
+
+    }
+
+</script>
