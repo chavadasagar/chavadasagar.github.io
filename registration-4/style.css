@@ -1,0 +1,51 @@
+
+    table{
+        border: 1px solid black;
+        padding: 10px;
+        box-shadow: 1px 2px 15px red;
+        border-radius: 10px;
+        background: rgb(145, 145, 145);
+    }
+    .title
+    {
+        box-shadow: 1px 2px 9px;
+        padding: 3vh;
+        border-radius: 10px;
+
+    }
+    table td {
+        text-align: center;
+        padding: 5px;
+    }
+
+    table td input {
+        text-align: center;
+    }
+
+    .email,.username,.password
+    {
+        
+        border: none;
+        border-bottom: 3px solid black;
+        padding: 5px;
+        outline: none;
+        font-size: x-large;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    .btn {
+        padding: 10px;
+        width: 100%;
+        background: rgb(0, 0, 0);
+        color: aliceblue;
+        border: 1px solid white;
+        font-size: x-large;
+        border-radius: 10px;
+
+    }
+    .btn:hover{
+
+        background: blue;
+        transition: 1s;
+
+    }
