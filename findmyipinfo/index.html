@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Site</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-light">
+
+    <div class="container mt-5">
+
+
+        <div class="card" style="width:30rem;">
+            <div class="card-body">
+                <h5 class="card-title">Find ip Detail</h5>
+                <div class="">
+                    <input type="text" name="ipadd" id="ipadd" onkeyup="check()" class="form-control mt-1"
+                        placeholder="Enter Your Ip Address"> <button class="btn btn-outline-primary mt-2 btn"
+                        id="check">Check</button>
+
+
+
+                    <table id="info" class="table mt-2 ml-5">
+                        <tbody>
+                            <tr>
+                                <th>Version :</th>
+                                <td id="version"></td>
+                            </tr>
+                            <tr>
+                                <th>city :</th>
+                                <td id="ct"></td>
+                            </tr>
+                            <tr>
+                                <th>region :</th>
+                                <td id="region"></td>
+                            </tr>
+                            <tr>
+                                <th>region_code :</th>
+                                <td id="region_code"></td>
+                            </tr>
+                            <tr>
+                                <th>country_name :</th>
+                                <td id="country_name"> </td>
+                            </tr>
+                            <tr>
+                                <th>postal :</th>
+                                <td id="postal"></td>
+                            </tr>
+                            <tr>
+                                <th>latitude :</th>
+                                <td id="latitude"></td>
+                            </tr>
+                            <tr>
+                                <th>longitude :</th>
+                                <td id="longitude"></td>
+                            </tr>
+                            <tr>
+                                <th>timezone :</th>
+                                <td id="timezone"></td>
+                            </tr>
+                            <tr>
+                                <th>country_calling_code :</th>
+                                <td id="country_calling_code"></td>
+                            </tr>
+                            <tr>
+                                <th>currency :</th>
+                                <td id="currency"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+        <script src="../jquery-3.6.0.min.js"></script>
+
+</body>
+
+</html>
+
+
+<script>
+
+    // get system ip
+    // http://checkip.dyndns.org/
+
+    console.log("sash");
+    // get info mation about ip address
+    // https://ipapi.co/171.50.244.98/json/
+
+
+
+
+    var ip = document.getElementById("ipadd");
+
+
+    function setdata() {
+        // https://api.ipify.org/?format=json
+
+        fetch("https://api.ipify.org/?format=json")
+            .then((res) => res.json())
+            .then((data) => {
+
+                document.getElementById("ipadd").value = data.ip;
+
+            });
+
+    }
+
+    setdata();
+
+    function check() {
+        if (ip.value != "") {
+
+            document.getElementById("info").style.display = "none";
+            fetch(`https://ipapi.co/${ip.value}/json/`)
+                .then((res) => res.json())
+                .then((data) => {
+
+
+
+                    document.getElementById("info").style.display = "block";
+
+
+                    document.getElementById("info").style.transition = "1s";
+
+                    document.getElementById("version").innerHTML = data.version;
+                    document.getElementById("ct").innerHTML = data.city;
+                    document.getElementById("region").innerHTML = data.region;
+                    document.getElementById("region_code").innerHTML = data.region_code;
+                    document.getElementById("country_name").innerHTML = data.country_name;
+                    document.getElementById("postal").innerHTML = data.postal;
+                    document.getElementById("longitude").innerHTML = data.longitude;
+                    document.getElementById("latitude").innerHTML = data.latitude;
+                    document.getElementById("timezone").innerHTML = data.timezone;
+                    document.getElementById("country_calling_code").innerHTML = data.country_calling_code;
+                    document.getElementById("currency").innerHTML = data.currency;
+
+                });
+        }
+        else {
+            document.getElementById("info").style.display = "block";
+        }
+    }
+
+    check();
+    function getandsetdata() {
+
+        // set user ip address
+
+        fetch("https://api.ipify.org/?format=json")
+            .then((res) => res.json())
+            .then((data) => {
+
+                document.getElementById("ipadd").value = data.ip;
+
+            });
+
+        // set ip data inside table
+
+        fetch(`https://ipapi.co/${ip.value}/json/`)
+            .then((res) => res.json())
+            .then((data) => {
+
+
+
+                document.getElementById("info").style.display = "block";
+
+
+                document.getElementById("info").style.transition = "1s";
+
+                document.getElementById("version").innerHTML = data.version;
+                document.getElementById("ct").innerHTML = data.city;
+                document.getElementById("region").innerHTML = data.region;
+                document.getElementById("region_code").innerHTML = data.region_code;
+                document.getElementById("country_name").innerHTML = data.country_name;
+                document.getElementById("postal").innerHTML = data.postal;
+                document.getElementById("longitude").innerHTML = data.longitude;
+                document.getElementById("latitude").innerHTML = data.latitude;
+                document.getElementById("timezone").innerHTML = data.timezone;
+                document.getElementById("country_calling_code").innerHTML = data.country_calling_code;
+                document.getElementById("currency").innerHTML = data.currency;
+
+            });
+
+
+
+    }
+    document.getElementById("check").onclick = function () {
+
+
+        
+
+        getandsetdata();
+
+    }
+
+    getandsetdata();
+
+
+
+
+
+</script>
