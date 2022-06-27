@@ -114,7 +114,7 @@ var modal = function () {
         for (var row in self.users()) {
             if (all[row].id == Number(document.getElementById("up_id").value)) {
 
-                var temp = { id: Number(document.getElementById("up_id").value), city:this.up_selectedcity(),gender:this.up_selectedgender(),dob:this.up_dob(),name: String(document.getElementById("up_name").value), email: String(document.getElementById("up_email").value), address: String(document.getElementById("up_address").value), phone: String(document.getElementById("up_phone").value) };
+                var temp = { id: Number(document.getElementById("up_id").value), city:this.up_selectedcity(),gender:this.up_selectedgender(),dob:document.getElementById("up_dob").value,name: String(document.getElementById("up_name").value), email: String(document.getElementById("up_email").value), address: String(document.getElementById("up_address").value), phone: String(document.getElementById("up_phone").value) };
                 self.users.remove(all[row]);
                 self.users.push(temp);
                 Swal.fire(
