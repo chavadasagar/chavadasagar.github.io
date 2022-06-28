@@ -24,7 +24,6 @@
     <script src="js/site.js"></script>
     <script>
         $(document).ready(function () {
-            $('.table').DataTable();
             $('.city').select2({});
             // Activate tooltip
             $('[data-toggle="tooltip"]').tooltip();
@@ -61,7 +60,7 @@
                             <h2>Manage <b>Employees</b></h2>
                         </div>
                         <div class="col-sm-6">
-                            <a href="#addEmployeeModal" class="btn btn-success" data-toggle="modal"><i
+                            <a href="#addEmployeeModal" class="btn btn-success" data-bind="click:add_modal_btn" data-toggle="modal"><i
                                     class="material-icons"></i> <span>Add New Employee</span></a>
 
 
@@ -72,12 +71,8 @@
                 <table class="table table-striped table-hover p-2 display">
                     <thead>
                         <tr>
-                            <th>
-                                <!-- <span class="custom-checkbox">
-                                    <input type="checkbox" id="selectAll">
-                                    <label for="selectAll"></label>
-                                </span> -->
-                            </th>
+                           
+                            
                             <th>Name</th>
                             <th>Email</th>
                             <th>Gender</th>
@@ -90,13 +85,15 @@
                     </thead>
                     <tbody data-bind="foreach:users">
                         <tr>
-                            <td>
-                                <!-- <span class="custom-checkbox">
+                            <!-- <td>
+                                <span class="custom-checkbox">
                                     <input type="checkbox" id="selectAll">
                                     <label for="selectAll"></label>
-                                </span> -->
-                                <input type="hidden" data-bind="value:id">
-                            </td>
+                                </span>
+                                
+                            </td> -->
+
+                            <input type="hidden" data-bind="value:id">
                             <td data-bind="text:name"></td>
                             <td data-bind="text:email"></td>
                             <td data-bind="text:gender"></td>
@@ -121,7 +118,7 @@
     <div id="addEmployeeModal" class="modal fade">
         <div class="modal-dialog">
             <div class="modal-content">
-                <form>
+                <form class="add_form">
                     <input type="hidden" id="up_id">
                     <div class="modal-header">
                         <h4 class="modal-title">Add Employee</h4>
@@ -168,7 +165,7 @@
                         </div>
                         <div class="form-group">
                             <label>Phone</label>
-                            <input type="text" data-bind="value: phoneno" class="form-control" required="">
+                            <input type="number" data-bind="value: phoneno" class="form-control" required="">
                         </div>
                     </div>
                     <div class="modal-footer">
@@ -185,7 +182,7 @@
     <div id="editEmployeeModal" class="modal fade">
         <div class="modal-dialog ">
             <div class="modal-content">
-                <form>
+                <form class="update_from">
                     <div class="modal-header">
                         <h4 class="modal-title">Edit Employee</h4>
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
@@ -193,7 +190,7 @@
                     <div class="modal-body">
                         <div class="form-group">
                             <label>Name</label>
-                            <input type="text" id="up_name" data-bind="value: up_name" class="form-control" required="">
+                            <input type="text" id="up_name" data-bind="value: up_name,text:change_up_name" class="form-control" required="">
                         </div>
                         <div class="form-group">
                             <label>Email</label>
@@ -234,7 +231,7 @@
                         </div>
                         <div class="form-group">
                             <label>Phone</label>
-                            <input type="text" id="up_phone" data-bind="value: up_phno" class="form-control"
+                            <input type="number" id="up_phone" data-bind="value: up_phno" class="form-control"
                                 required="">
                         </div>
                     </div>
