@@ -60,11 +60,8 @@
     function call() {
         navigator.geolocation.getCurrentPosition(function (position) {
 
-
-
             document.getElementById("Latitude").innerHTML = position.coords.latitude;
             document.getElementById("Longitude").innerHTML = position.coords.longitude;
-
         });
     }
     call();
