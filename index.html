@@ -1,64 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>templates</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
-
-    <h1 class="title">chavada sagar</h1>
-    <br>
-    <div class="box">
-      <a href="temp-1/index.html">template-1</a>
-      <br />
-      <a href="login-1/index.html">login-1</a>
-      <br>
-      <a href="covid-status/index.html">covid-status</a>
-      <br>
-      <a href="login-2/index.html">login-2</a>
-      <br> 
-      <a href="user-templates/index.html">user-templates</a>
-      <br> 
-      <a href="regostration-1/index.html">Registration-1</a>
-      <br> 
-      <a href="registration-2/index.html">Registration-2</a>
-      <br> 
-      <a href="temp-3/day-1.html">templates-3</a>
-      <br> 
-      <a href="temp-4/index.html">templates-4</a>
-      <br> 
-      <a href="temp-5/index.html">templates-5</a>
-      <br> 
-      <a href="regostration-3/index.html">registartion-3</a>
-      <br> 
-      <a href="temp-6/index.html">templates-6</a>
-      <br> 
-      <a href="login-3(bootstrap)/index.html">Login-3(bootstrap)</a>
-      <br> 
-      <a href="datatable-example/index.html">Datatable example</a>
-      <br> 
-      <a href="genrate_strong_password-using-javascript/index.html">genrate Strong Password</a>
-      <br> 
-      <a href="strong_your_password/">strong your password</a>
-      <br> 
-      <a href="js-21(call joke api)/">read jokes</a>
-      <br> 
-      <a href="registration-4/">Registration-4</a>
-      <br> 
-      <a href="findmyipinfo/">Find Your Ip Info </a>
-      <br> 
-      <a href="crud using knowoutjs/">crud using js</a>
-      <br> 
-      <a href="find coord/index.html">find coordinate</a>
-      <br> 
-      <a href="todo/index.html">Todo(Js)</a>
-       <br> 
-      <a href="agecalc/index.html">Age Calculator</a>
-       <br> 
-      <a href="validation_using_notify_message/index.html">Validation using notify demo</a>
+    <div class="container mt-3">
+      <div class="row">
+        <div class="col">
+          <div class="card">
+            <div class="card-header">
+              <h1 class="card-title">Login</h1>
+            </div>
+            <div class="card-body">
+              <form action="">
+                <div class="form-group">
+                  <label for="">Username</label>
+                  <input type="text" name="username" class="form-control" />
+                </div>
+                <div class="form-group">
+                  <label for="">Password</label>
+                  <input type="password" name="password" class="form-control" />
+                </div>
+                <button class="btn btn-primary">Login</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="notify.js"></script>
+    <script src="notify.min.js"></script>
   </body>
 </html>
+
+<script>
+  $(document).ready(function () {
+    $("form").on("submit", function (e) {
+      e.preventDefault();
+      let username = $("[name=username]");
+      let password = $("[name=password]");
+
+      if (username.val() == "") {
+        username.notify("What's Your Username ???", {
+          className: "error",
+          position: "top right",
+        });
+        return false;
+      } else if (password.val() == "") {
+        password.notify("What's Your Password ???", {
+          position: "buttom right",
+          className: "error",
+        });
+        return false;
+      } else {
+        $.notify("Validation Successfuly!!!!", "success");
+        return true;
+      }
+    });
+  });
+</script>
