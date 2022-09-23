@@ -1,0 +1,23 @@
+<script>
+function gamestart(){
+    RandNo = Math.floor(Math.random()*100);
+    attemp=0;
+    console.log(RandNo);
+    while(true){
+    userno = prompt("Please Enter Number");
+    
+    if(userno < RandNo){
+        attemp=attemp+1;
+        alert("It Is Small Number Please Enter Big  Number");
+    }
+    else if(userno>RandNo){
+        attemp=attemp+1;
+        alert("It Is Big Number Please Enter Small Number");
+    }else{
+        alert("You Are Win !!! Atemp "+attemp);
+        break
+    }
+    }
+}
+gamestart();
+</script>
