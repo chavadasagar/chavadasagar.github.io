@@ -6,6 +6,9 @@ function addtodo() {
         document.querySelector("#todo").value = "";
         Display();
     }
+    else if (document.querySelector("#todo").value == "") {
+        swal.fire("Please Enter Todo Name","","error");
+    }
     else {
         var temparr = JSON.parse(localStorage.alltodo);
         var id = temparr.length + 1;
@@ -23,14 +26,18 @@ function Display() {
             JSON.parse(localStorage.alltodo).forEach(val => {
 
                 if (val.isComplate) {
-                    document.querySelector(".alltodo").innerHTML += `<a href="#" ondblclick='isFinish(${val.id})' class="bg-success text-white list-group-item list-group-item-action">${val.name} 
+                    document.querySelector(".alltodo").innerHTML += `<a href="#" ondblclick='isFinish(${val.id})' class=" text-dark display-4 list-group-item list-group-item-action"><s>${val.name}</s>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-                <button class='btn btn-danger' onclick='deletetodo(${val.id})'> <i class='fa fa-trash'></i> delete</button>&nbsp;
-                <button class='btn btn-primary ' onclick='showpopup(${val.id})'> <i class='fa fa-edit'></i> Update</button></a>`;
+                <i class="fa fa-check btn-success rounded-circle" aria-hidden="true"></i>
+                <br>
+                <button class='btn btn-danger' onclick='deletetodo(${val.id})'> <i class='fa fa-trash' onclick='deletetodo(${val.id})'></i> delete</button>&nbsp;
+                <button class='btn btn-primary ' onclick='showpopup(${val.id})'> <i class='fa fa-edit' ></i> Update</button></a>`;
                 }
                 else {
-                    document.querySelector(".alltodo").innerHTML += `<a href="#" ondblclick='isFinish(${val.id})' class="bg-dark text-white list-group-item list-group-item-action">${val.name} 
+                    document.querySelector(".alltodo").innerHTML += `<a href="#" ondblclick='isFinish(${val.id})' class="text-dark display-4 list-group-item list-group-item-action">${val.name} 
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                <i class="fa fa-close rounded-circle p-2 btn-danger"></i>
+                <br>
                 <button class='btn btn-danger' onclick='deletetodo(${val.id})'> <i class='fa fa-trash'></i> delete</button>&nbsp;
                 <button class='btn btn-primary ' onclick='showpopup(${val.id})'> <i class='fa fa-edit'></i> Update</button></a>`;
                 }
@@ -106,12 +113,12 @@ function isFinish(id) {
             if (todo.isComplate) {
                 return { id: todo.id, name: todo.name, isComplate: false };
             }
-            else{
+            else {
                 return { id: todo.id, name: todo.name, isComplate: true };
             }
-            
+
         }
-        else{
+        else {
             return todo;
         }
     });
