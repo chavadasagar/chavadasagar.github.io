@@ -1,57 +1,59 @@
 
-function addtodo()
-{
+function addtodo() {
     var todo = document.querySelector("#todo").value;
-    if(localStorage.alltodo == undefined)
-    {
-        localStorage.alltodo = JSON.stringify([{id:1,name:todo,isComplate:false}]);
+    if (localStorage.alltodo == undefined) {
+        localStorage.alltodo = JSON.stringify([{ id: 1, name: todo, isComplate: false }]);
+        document.querySelector("#todo").value = "";
         Display();
     }
-    else
-    {
+    else {
         var temparr = JSON.parse(localStorage.alltodo);
-        var id = temparr.length+1;
-        temparr.push({id:id,name:todo,isComplate:false});    
+        var id = temparr.length + 1;
+        temparr.push({ id: id, name: todo, isComplate: false });
         localStorage.alltodo = JSON.stringify(temparr);
-        Display();        
+        document.querySelector("#todo").value = "";
+        Display();
     }
 }
 
-function Display()
-{
-    debugger
+function Display() {
     document.querySelector(".alltodo").innerHTML = "";
-    if(localStorage.alltodo!=undefined)
-    {
-        if(JSON.parse(localStorage.alltodo).length != 0)
-        {
+    if (localStorage.alltodo != undefined) {
+        if (JSON.parse(localStorage.alltodo).length != 0) {
             JSON.parse(localStorage.alltodo).forEach(val => {
-                document.querySelector(".alltodo").innerHTML += `<a href="#" class="list-group-item list-group-item-action">${val.name} 
+
+                if (val.isComplate) {
+                    document.querySelector(".alltodo").innerHTML += `<a href="#" ondblclick='isFinish(${val.id})' class="bg-success text-white list-group-item list-group-item-action">${val.name} 
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-                <button class='btn btn-danger' onclick='deletetodo(${val.id})'>delete</button>&nbsp;
-                <button class='btn btn-primary' onclick='showpopup(${val.id})'>Update</button></a>`;
+                <button class='btn btn-danger' onclick='deletetodo(${val.id})'> <i class='fa fa-trash'></i> delete</button>&nbsp;
+                <button class='btn btn-primary ' onclick='showpopup(${val.id})'> <i class='fa fa-edit'></i> Update</button></a>`;
+                }
+                else {
+                    document.querySelector(".alltodo").innerHTML += `<a href="#" ondblclick='isFinish(${val.id})' class="bg-dark text-white list-group-item list-group-item-action">${val.name} 
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                <button class='btn btn-danger' onclick='deletetodo(${val.id})'> <i class='fa fa-trash'></i> delete</button>&nbsp;
+                <button class='btn btn-primary ' onclick='showpopup(${val.id})'> <i class='fa fa-edit'></i> Update</button></a>`;
+                }
             });
-        }   
-        else{
+        }
+        else {
             document.querySelector(".alltodo").innerHTML = "<div class='mt-3'>Empty</div>";
-        }     
+        }
     }
-    else{
+    else {
         document.querySelector(".alltodo").innerHTML = "<div class='mt-3'>Empty</div>";
     }
 }
 
-function clearalltodo()
-{
+function clearalltodo() {
     localStorage.removeItem("alltodo");
     Display();
 }
 
-function deletetodo(id)
-{
+function deletetodo(id) {
     debugger
     var alltodo = JSON.parse(localStorage.alltodo).filter(val => {
-        return val.id != id;        
+        return val.id != id;
     });
 
     localStorage.alltodo = JSON.stringify(alltodo);
@@ -59,8 +61,7 @@ function deletetodo(id)
 }
 
 
-function showpopup(id)
-{
+function showpopup(id) {
     document.querySelector("#todoid").value = id;
     document.querySelector("#newtodoname").value = JSON.parse(localStorage.alltodo).filter(val => {
         return val.id == id;
@@ -72,8 +73,8 @@ function showpopup(id)
 
 }
 
-function updatetodo(){
-    
+function updatetodo() {
+
     // document.querySelector("#todoid").value = id;
     // document.querySelector("#newtodoname").value = JSON.parse(localStorage.alltodo).filter(val => {
     //     return val.id == id;
@@ -85,9 +86,8 @@ function updatetodo(){
     var newname = document.querySelector("#newtodoname").value;
 
     var updatedtodoarray = JSON.parse(localStorage.alltodo).map(val => {
-        if(val.id == id)
-        {
-            return {id:val.id,name:newname,isComplate:val.isComplate};
+        if (val.id == id) {
+            return { id: val.id, name: newname, isComplate: val.isComplate };
         }
         return val;
     });
@@ -96,8 +96,30 @@ function updatetodo(){
     $(".modal").modal("hide");
     Display()
 
-
 }
+
+function isFinish(id) {
+    debugger
+    var alltodo = JSON.parse(localStorage.alltodo);
+    var newtodo = alltodo.map(todo => {
+        if (todo.id == id) {
+            if (todo.isComplate) {
+                return { id: todo.id, name: todo.name, isComplate: false };
+            }
+            else{
+                return { id: todo.id, name: todo.name, isComplate: true };
+            }
+            
+        }
+        else{
+            return todo;
+        }
+    });
+
+    localStorage.alltodo = JSON.stringify(newtodo);
+    Display();
+}
+
 
 
 
