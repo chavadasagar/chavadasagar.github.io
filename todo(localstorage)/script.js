@@ -2,7 +2,7 @@
 function addtodo() {
     var todo = document.querySelector("#todo").value;
     if (localStorage.alltodo == undefined) {
-        localStorage.alltodo = JSON.stringify([{ id: 1, name: todo, isComplate: false }]);
+        localStorage.alltodo = JSON.stringify([{ id: 1, name: todo, isComplate: false ,createdTime:new Date() }]);
         document.querySelector("#todo").value = "";
         Display();
     }
@@ -26,21 +26,32 @@ function Display() {
             JSON.parse(localStorage.alltodo).forEach(val => {
 
                 if (val.isComplate) {
-                    document.querySelector(".alltodo").innerHTML += `<a href="#" ondblclick='isFinish(${val.id})' class=" text-dark display-4 list-group-item list-group-item-action"><s>${val.name}</s>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                    document.querySelector(".alltodo").innerHTML += `<a href="#${val.id}" ondblclick='isFinish(${val.id})' class=" text-dark display-4 list-group-item list-group-item-action"><s>${val.name}</s>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                
                 <i class="fa fa-check btn-success rounded-circle" aria-hidden="true"></i>
+                &nbsp;&nbsp;
+                <br>
+                <span style='font-size: 30px;'>${window.moment(val.createdTime).format("DD-MM-YYYY LT")}</span>
                 <br>
                 <button class='btn btn-danger' onclick='deletetodo(${val.id})'> <i class='fa fa-trash' onclick='deletetodo(${val.id})'></i> delete</button>&nbsp;
-                <button class='btn btn-primary ' onclick='showpopup(${val.id})'> <i class='fa fa-edit' ></i> Update</button></a>`;
-                }
-                else {
-                    document.querySelector(".alltodo").innerHTML += `<a href="#" ondblclick='isFinish(${val.id})' class="text-dark display-4 list-group-item list-group-item-action">${val.name} 
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                <button class='btn btn-primary ' onclick='showpopup(${val.id})'> <i class='fa fa-edit' ></i> Update</button></a>
+                `;
+            }
+            else {
+                document.querySelector(".alltodo").innerHTML += `<a href="#${val.id}" ondblclick='isFinish(${val.id})' class="text-dark display-4 list-group-item list-group-item-action">${val.name} 
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
                 <i class="fa fa-close rounded-circle p-2 btn-danger"></i>
+                &nbsp;&nbsp;
+                <br>
+                <span style='font-size: 30px;'>${window.moment(val.createdTime).format("DD-MM-YYYY LT")}</span>
                 <br>
                 <button class='btn btn-danger' onclick='deletetodo(${val.id})'> <i class='fa fa-trash'></i> delete</button>&nbsp;
-                <button class='btn btn-primary ' onclick='showpopup(${val.id})'> <i class='fa fa-edit'></i> Update</button></a>`;
-                }
+                <button class='btn btn-primary ' onclick='showpopup(${val.id})'> <i class='fa fa-edit'></i> Update</button></a>
+            
+                
+                `;
+            }
             });
         }
         else {
@@ -94,7 +105,7 @@ function updatetodo() {
 
     var updatedtodoarray = JSON.parse(localStorage.alltodo).map(val => {
         if (val.id == id) {
-            return { id: val.id, name: newname, isComplate: val.isComplate };
+            return { id: val.id, name: newname, isComplate: val.isComplate ,createdTime:val.createdTime};
         }
         return val;
     });
