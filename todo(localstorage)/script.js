@@ -11,7 +11,7 @@ function generateUUID() { // Public Domain/MIT
             d2 = Math.floor(d2/16);
         }
         return (c === 'x' ? r : (r & 0x3 | 0x8)).toString(16);
-    });
+    }).toString();
 }
 function addtodo() {
     var todo = document.querySelector("#todo").value;
@@ -82,7 +82,7 @@ function clearalltodo() {
     Display();
 }
 
-function deletetodo(id) {
+function deletetodo(String(id)) {
     debugger
     var alltodo = JSON.parse(localStorage.alltodo).filter(val => {
         return val.id != id;
