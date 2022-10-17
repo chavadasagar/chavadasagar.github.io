@@ -11,12 +11,12 @@ function generateUUID() { // Public Domain/MIT
             d2 = Math.floor(d2/16);
         }
         return (c === 'x' ? r : (r & 0x3 | 0x8)).toString(16);
-    }).toString();
+    })
 }
 function addtodo() {
     var todo = document.querySelector("#todo").value;
     if (localStorage.alltodo == undefined) {
-        localStorage.alltodo = JSON.stringify([{ id: generateUUID(), name: todo, isComplate: false ,createdTime:new Date() }]);
+        localStorage.alltodo = JSON.stringify([{ id: 1, name: todo, isComplate: false ,createdTime:new Date() }]);
         document.querySelector("#todo").value = "";
         Display();
     }
@@ -25,7 +25,7 @@ function addtodo() {
     }
     else {
         var temparr = JSON.parse(localStorage.alltodo);
-        var id = generateUUID();
+        var id = temparr.length + 1;
         temparr.push({ id: id, name: todo, isComplate: false });
         localStorage.alltodo = JSON.stringify(temparr);
         document.querySelector("#todo").value = "";
@@ -82,8 +82,7 @@ function clearalltodo() {
     Display();
 }
 
-function deletetodo(String(id)) {
-    debugger
+function deletetodo(id) {
     var alltodo = JSON.parse(localStorage.alltodo).filter(val => {
         return val.id != id;
     });
