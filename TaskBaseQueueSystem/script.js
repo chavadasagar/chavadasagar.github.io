@@ -3,7 +3,6 @@ let taskname = document.getElementById("taskname");
 
 showallcontent();
 
-
 document.getElementById("addstatusbtn").addEventListener("click", () => {
   let statusinput = document.createElement("input");
   let br = document.createElement("br");
@@ -13,9 +12,9 @@ document.getElementById("addstatusbtn").addEventListener("click", () => {
   statusbox.append(br);
 });
 
-document.getElementById("cleartaskbtn").addEventListener("click",()=>{
-    localStorage.clear();
-    showallcontent();
+document.getElementById("cleartaskbtn").addEventListener("click", () => {
+  localStorage.clear();
+  showallcontent();
 });
 
 document.getElementById("addtaskbtn").addEventListener("click", () => {
@@ -31,9 +30,7 @@ document.getElementById("addtaskbtn").addEventListener("click", () => {
 
   statusbox.innerHTML = "";
 
-
   document.getElementById("taskform").reset();
-
 
   showallcontent();
 });
@@ -43,14 +40,15 @@ function showallcontent() {
 
   taskcontent.innerHTML = "";
 
-  let taskdata = Array.from(crudOperation());
+  //let taskdata = Array.from(crudOperation());
+  let taskdata = Array.from(PrepareDummyObject());
 
   let table = document.createElement("table");
 
-  table.className = "table table-primary";
+  table.className = "table";
 
   table.border = 1;
-debugger
+  debugger;
   taskdata.forEach((val, index, arr) => {
     // row
     let tr = document.createElement("tr");
@@ -60,13 +58,13 @@ debugger
     tdindex.textContent = index;
     tr.append(tdindex);
 
-
     let tdtaskname = document.createElement("td");
     tdtaskname.textContent = val.name;
     tr.append(tdtaskname);
 
     let tdqueue = document.createElement("td");
-    tdqueue.append(Array.from(val.TaskStatus).join(" == >"));
+    // tdqueue.append(Array.from(val.TaskStatus).join(" == >"));
+    tdqueue.innerHTML = GetProgressBarHtmlContent(val.TaskStatus);
 
     tr.append(tdqueue);
 
@@ -114,4 +112,59 @@ function crudOperation(operation = "get", data) {
     default:
       console.error("Invalid operation");
   }
+}
+
+function GetProgressBarHtmlContent(arr) {
+  if (arr == undefined || arr == "") {
+    return "<h3>no queue</h3>";
+  }
+
+  let htmlcontent = `<div class="stepper-wrapper">`;
+
+  let step = `<div class="stepper-item [status]">
+<div class="step-counter">[index]</div>
+<div class="step-name">[value]</div>
+</div>`;
+
+  Array.from(arr).forEach((val, index, arr) => {
+    htmlcontent += step
+      .replace("[index]", index)
+      .replace("[value]", val)
+      .replace("[status]", "completed");
+  });
+
+  htmlcontent += `</div>`;
+
+  return htmlcontent;
+}
+
+function PrepareDummyObject() {
+  return [
+    {
+      id: 1710694567915,
+      name: "Slice (Optional)",
+      TaskStatus: ["Optionally, slice the sandwich in half"],
+    },
+    {
+      id: 1710694685389,
+      name: "Building a Birdhouse",
+      TaskStatus: [
+        "Gather Materials",
+        "Plan Design",
+        "Cut Wood to Size",
+        "Sand Edges",
+        "Assemble Base",
+      ],
+    },
+    {
+      id: 1710694757989,
+      name: "Making a Simple Herb Garden",
+      TaskStatus: ["Select Location", "Gather Materials", "Prepare Containers"],
+    },
+    {
+      id: 1710694855217,
+      name: "junagadh rajkot",
+      TaskStatus: ["junagadh", "vadal", "limdi", "jetalsar", "rajkot"],
+    },
+  ];
 }
