@@ -24,6 +24,7 @@ document.getElementById("addtaskbtn").addEventListener("click", () => {
     TaskStatus: Array.from(statusbox.children)
       .filter((x) => x.tagName == "INPUT")
       .map((x) => x.value),
+    CurrentStep: 2,
   };
 
   crudOperation("post", task);
@@ -40,8 +41,8 @@ function showallcontent() {
 
   taskcontent.innerHTML = "";
 
-  //let taskdata = Array.from(crudOperation());
-  let taskdata = Array.from(PrepareDummyObject());
+  let taskdata = Array.from(crudOperation());
+  // let taskdata = Array.from(PrepareDummyObject());
 
   let table = document.createElement("table");
 
@@ -64,7 +65,7 @@ function showallcontent() {
 
     let tdqueue = document.createElement("td");
     // tdqueue.append(Array.from(val.TaskStatus).join(" == >"));
-    tdqueue.innerHTML = GetProgressBarHtmlContent(val.TaskStatus);
+    tdqueue.innerHTML = GetProgressBarHtmlContent(val);
 
     tr.append(tdqueue);
 
@@ -115,22 +116,36 @@ function crudOperation(operation = "get", data) {
 }
 
 function GetProgressBarHtmlContent(arr) {
-  if (arr == undefined || arr == "") {
+  if (arr.TaskStatus == undefined || arr.TaskStatus == "") {
     return "<h3>no queue</h3>";
   }
 
   let htmlcontent = `<div class="stepper-wrapper">`;
 
-  let step = `<div class="stepper-item [status]">
+  let step = `<div class="stepper-item [status]" onclick='[UpdateQueueStatusStageByTaskId]'>
 <div class="step-counter">[index]</div>
 <div class="step-name">[value]</div>
 </div>`;
 
-  Array.from(arr).forEach((val, index, arr) => {
-    htmlcontent += step
-      .replace("[index]", index)
-      .replace("[value]", val)
-      .replace("[status]", "completed");
+  Array.from(arr.TaskStatus).forEach((val, index, arrr) => {
+    let updateevent = "UpdateQueueStatusStageByTaskId([id],[step])"
+      .replace("[id]", arr.id)
+      .replace("[step]", index);
+
+
+    if (arr.CurrentStep == index) {
+      htmlcontent += step
+        .replace("[index]", index)
+        .replace("[value]", val)
+        .replace("[status]", "completed")
+        .replace("[UpdateQueueStatusStageByTaskId]", updateevent);
+    } else {
+      htmlcontent += step
+        .replace("[index]", index)
+        .replace("[value]", val)
+        .replace("[status]", "")
+        .replace("[UpdateQueueStatusStageByTaskId]", updateevent);
+    }
   });
 
   htmlcontent += `</div>`;
@@ -138,12 +153,22 @@ function GetProgressBarHtmlContent(arr) {
   return htmlcontent;
 }
 
+function UpdateQueueStatusStageByTaskId(taskid, currentstep) {
+  debugger;
+  let taskdata = Array.from(crudOperation());
+  task = taskdata.find((x) => x.id == taskid);
+  task.CurrentStep = currentstep;
+  crudOperation("put", task);
+  showallcontent();
+}
+
 function PrepareDummyObject() {
   return [
     {
       id: 1710694567915,
       name: "Slice (Optional)",
-      TaskStatus: ["Optionally, slice the sandwich in half"],
+      TaskStatus: ["Optionally", "slice the sandwich in half"],
+      CurrentStep: 0,
     },
     {
       id: 1710694685389,
@@ -155,16 +180,19 @@ function PrepareDummyObject() {
         "Sand Edges",
         "Assemble Base",
       ],
+      CurrentStep: 0,
     },
     {
       id: 1710694757989,
       name: "Making a Simple Herb Garden",
       TaskStatus: ["Select Location", "Gather Materials", "Prepare Containers"],
+      CurrentStep: 0,
     },
     {
       id: 1710694855217,
       name: "junagadh rajkot",
       TaskStatus: ["junagadh", "vadal", "limdi", "jetalsar", "rajkot"],
+      CurrentStep: 0,
     },
   ];
 }
