@@ -132,7 +132,6 @@ function GetProgressBarHtmlContent(arr) {
       .replace("[id]", arr.id)
       .replace("[step]", index);
 
-
     if (arr.CurrentStep == index) {
       htmlcontent += step
         .replace("[index]", index)
@@ -140,11 +139,19 @@ function GetProgressBarHtmlContent(arr) {
         .replace("[status]", "completed")
         .replace("[UpdateQueueStatusStageByTaskId]", updateevent);
     } else {
-      htmlcontent += step
-        .replace("[index]", index)
-        .replace("[value]", val)
-        .replace("[status]", "")
-        .replace("[UpdateQueueStatusStageByTaskId]", updateevent);
+      if (arr.CurrentStep < index) {
+        htmlcontent += step
+          .replace("[index]", index)
+          .replace("[value]", val)
+          .replace("[status]", "")
+          .replace("[UpdateQueueStatusStageByTaskId]", updateevent);
+      } else {
+        htmlcontent += step
+          .replace("[index]", index)
+          .replace("[value]", val)
+          .replace("[status]", "completed")
+          .replace("[UpdateQueueStatusStageByTaskId]", updateevent);
+      }
     }
   });
 
