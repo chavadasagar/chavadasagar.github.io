@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Project System</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="card bg-dark mt-2">
+        <div class="card-header">
+          <div class="d-flex p-2 justify-content-between align-items-center">
+            <h2 class="card-title text-secondary">Projects</h2>
+            
+            <div class="btn-group">
+              <button
+              data-bs-toggle="modal"
+              data-bs-target="#addprojectmodel"
+              class="btn btn-primary btn-sm text-white"
+            >
+              Project
+            </button>
+            <button class="btn btn-primary" data-bs-toggle="modal" onclick="LoadProjectDropDown()" data-bs-target="#projectbyspirntmodal">Sprint</button>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#createtaskbyprojectspirntmodal">Task</button>
+            <button class="btn btn-primary" data-bs-toggle="modal"data-bs-target="#createusermodal">User</button>
+            <button class="btn btn-primary" data-bs-toggle="modal"data-bs-target="#createstatusmodal">Status</button>
+            </div>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="row g-1" id="project_list_view">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Add Project Model -->
+    <div
+      class="modal fade" tabindex="-1"
+      id="addprojectmodel"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog text-secondary">
+        <div class="modal-content bg-dark">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Add Project</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body text-secondary">
+            <form action="" class="" id="createprojectform">
+              <div class="mb-3">
+                <label for="" class="form-label">Name :</label>
+                <input type="text" name="name" class="form-control bg-dark text-white" />
+              </div>
+              <div class="mb-3">
+                <label for="" class="form-label">Description :</label>
+                <textarea
+                  name="description"
+                  class="form-control bg-dark text-white"
+                  id=""
+                  rows="5"
+                ></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="CreateProject(createprojectform)">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Add Sprint Model -->
+    <div class="modal fade" tabindex="-1" id="addsprintmodel">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content bg-dark">
+          <div class="modal-header text-secondary">
+            <h5>Add Sprint</h5>
+          </div>
+          <div class="modal-body bg-dark text-secondary">
+            <form action="" class="">
+              <div class="mb-3">
+                <label for="" class="form-label">Name :</label>
+                <input type="text" class="form-control bg-dark text-white" />
+              </div>
+              <div class="mb-3">
+                <label for="" class="form-label">Start Date :</label>
+                <input type="date" class="form-control bg-dark text-white" />
+              </div>
+              <div class="mb-3">
+                <label for="" class="form-label">End Date :</label>
+                <input type="date" class="form-control bg-dark text-white" />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sprint Box Modal -->
+    <div class="modal fade" tabindex="-1" id="spirntviewmodal">
+      <div
+        class="modal-dialog modal-dialog-centered modal-fullscreen modal-dialog-scrollable"
+      >
+        <div class="modal-content bg-dark text-secondary">
+          <div class="modal-header d-flex justify-content-between align-items-center">
+            <h5 class="modal-title">Sprints</h5>
+            <button class="btn btn-primary">Add</button>
+
+          </div>
+          <div class="modal-body">
+            <div class="row g-1" id="project_sprints_view">
+              <div class="col-md-4">
+                <div class="card">
+                  <div class="card-header">
+                    <h6>Sprint (Start-End) Created Date</h6>
+                  </div>
+                  <div class="card-body">
+                    <ol class="list-group list-group-numbered">
+                      <li
+                        class="list-group-item d-flex justify-content-between align-items-start"
+                      >
+                        <div class="ms-2 me-auto">
+                          <div class="fw-bold">Subheading</div>
+                          Content for list item
+                        </div>
+                        <span class="badge bg-primary rounded-pill">14</span>
+                      </li>
+                      <li
+                        class="list-group-item d-flex justify-content-between align-items-start"
+                      >
+                        <div class="ms-2 me-auto">
+                          <div class="fw-bold">Subheading</div>
+                          Content for list item
+                        </div>
+                        <span class="badge bg-primary rounded-pill">14</span>
+                      </li>
+
+                      <li
+                        class="list-group-item d-flex justify-content-between align-items-start"
+                      >
+                        <div class="ms-2 me-auto">
+                          <div class="fw-bold">Subheading</div>
+                          Content for list item
+                        </div>
+                        <span class="badge bg-primary rounded-pill">14</span>
+                      </li>
+                    </ol>
+                    <br />
+                    <button class="btn btn-primary btn-sm">Create Task</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <div class="card-header">
+                    <h6>Sprint (Start-End) Created Date</h6>
+                  </div>
+                  <div class="card-body">
+                    <ol class="list-group list-group-numbered">
+                      <li
+                        class="list-group-item d-flex justify-content-between align-items-start"
+                      >
+                        <div class="ms-2 me-auto">
+                          <div class="fw-bold">Subheading</div>
+                          Content for list item
+                        </div>
+                        <span class="badge bg-primary rounded-pill">14</span>
+                      </li>
+                      <li
+                        class="list-group-item d-flex justify-content-between align-items-start"
+                      >
+                        <div class="ms-2 me-auto">
+                          <div class="fw-bold">Subheading</div>
+                          Content for list item
+                        </div>
+                        <span class="badge bg-primary rounded-pill">14</span>
+                      </li>
+                      <li
+                        class="list-group-item d-flex justify-content-between align-items-start"
+                      >
+                        <div class="ms-2 me-auto">
+                          <div class="fw-bold">Subheading</div>
+                          Content for list item
+                        </div>
+                        <span class="badge bg-primary rounded-pill">14</span>
+                      </li>
+                    </ol>
+                    <br />
+                    <button class="btn btn-primary btn-sm">Create Task</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <div class="card-header">
+                    <h6>Sprint (Start-End) Created Date</h6>
+                  </div>
+                  <div class="card-body">
+                    <ol class="list-group list-group-numbered">
+                      <li
+                        class="list-group-item d-flex justify-content-between align-items-start"
+                      >
+                        <div class="ms-2 me-auto">
+                          <div class="fw-bold">Subheading</div>
+                          Content for list item
+                        </div>
+                        <span class="badge bg-primary rounded-pill">14</span>
+                      </li>
+                      <li
+                        class="list-group-item d-flex justify-content-between align-items-start"
+                      >
+                        <div class="ms-2 me-auto">
+                          <div class="fw-bold">Subheading</div>
+                          Content for list item
+                        </div>
+                        <span class="badge bg-primary rounded-pill">14</span>
+                      </li>
+                      <li
+                        class="list-group-item d-flex justify-content-between align-items-start"
+                      >
+                        <div class="ms-2 me-auto">
+                          <div class="fw-bold">Subheading</div>
+                          Content for list item
+                        </div>
+                        <span class="badge bg-primary rounded-pill">14</span>
+                      </li>
+                    </ol>
+                    <br />
+                    <button class="btn btn-primary btn-sm">Create Task</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <div class="card-header">
+                    <h6>Sprint (Start-End) Created Date</h6>
+                  </div>
+                  <div class="card-body">
+                    <ol class="list-group list-group-numbered">
+                      <li
+                        class="list-group-item d-flex justify-content-between align-items-start"
+                      >
+                        <div class="ms-2 me-auto">
+                          <div class="fw-bold">Subheading</div>
+                          Content for list item
+                        </div>
+                        <span class="badge bg-primary rounded-pill">14</span>
+                      </li>
+                      <li
+                        class="list-group-item d-flex justify-content-between align-items-start"
+                      >
+                        <div class="ms-2 me-auto">
+                          <div class="fw-bold">Subheading</div>
+                          Content for list item
+                        </div>
+                        <span class="badge bg-primary rounded-pill">14</span>
+                      </li>
+                      <li
+                        class="list-group-item d-flex justify-content-between align-items-start"
+                      >
+                        <div class="ms-2 me-auto">
+                          <div class="fw-bold">Subheading</div>
+                          Content for list item
+                        </div>
+                        <span class="badge bg-primary rounded-pill">14</span>
+                      </li>
+                    </ol>
+                    <br />
+                    <button class="btn btn-primary btn-sm">Create Task</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <div class="card-header">
+                    <h6>Sprint (Start-End) Created Date</h6>
+                  </div>
+                  <div class="card-body">
+                    <ol class="list-group list-group-numbered">
+                      <li
+                        class="list-group-item d-flex justify-content-between align-items-start"
+                      >
+                        <div class="ms-2 me-auto">
+                          <div class="fw-bold">Subheading</div>
+                          Content for list item
+                        </div>
+                        <span class="badge bg-primary rounded-pill">14</span>
+                      </li>
+                      <li
+                        class="list-group-item d-flex justify-content-between align-items-start"
+                      >
+                        <div class="ms-2 me-auto">
+                          <div class="fw-bold">Subheading</div>
+                          Content for list item
+                        </div>
+                        <span class="badge bg-primary rounded-pill">14</span>
+                      </li>
+                      <li
+                        class="list-group-item d-flex justify-content-between align-items-start"
+                      >
+                        <div class="ms-2 me-auto">
+                          <div class="fw-bold">Subheading</div>
+                          Content for list item
+                        </div>
+                        <span class="badge bg-primary rounded-pill">14</span>
+                      </li>
+                    </ol>
+                    <br />
+                    <button class="btn btn-primary btn-sm">Create Task</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <div class="card-header">
+                    <h6>Sprint (Start-End) Created Date</h6>
+                  </div>
+                  <div class="card-body">
+                    <ol class="list-group list-group-numbered">
+                      <li
+                        class="list-group-item d-flex justify-content-between align-items-start"
+                      >
+                        <div class="ms-2 me-auto">
+                          <div class="fw-bold">Subheading</div>
+                          Content for list item
+                        </div>
+                        <span class="badge bg-primary rounded-pill">14</span>
+                      </li>
+                      <li
+                        class="list-group-item d-flex justify-content-between align-items-start"
+                      >
+                        <div class="ms-2 me-auto">
+                          <div class="fw-bold">Subheading</div>
+                          Content for list item
+                        </div>
+                        <span class="badge bg-primary rounded-pill">14</span>
+                      </li>
+                      <li
+                        class="list-group-item d-flex justify-content-between align-items-start"
+                      >
+                        <div class="ms-2 me-auto">
+                          <div class="fw-bold">Subheading</div>
+                          Content for list item
+                        </div>
+                        <span class="badge bg-primary rounded-pill">14</span>
+                      </li>
+                    </ol>
+                    <br />
+                    <button class="btn btn-primary btn-sm">Create Task</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <div class="card-header">
+                    <h6>Sprint (Start-End) Created Date</h6>
+                  </div>
+                  <div class="card-body">
+                    <ol class="list-group list-group-numbered">
+                      <li
+                        class="list-group-item d-flex justify-content-between align-items-start"
+                      >
+                        <div class="ms-2 me-auto">
+                          <div class="fw-bold">Subheading</div>
+                          Content for list item
+                        </div>
+                        <span class="badge bg-primary rounded-pill">14</span>
+                      </li>
+                      <li
+                        class="list-group-item d-flex justify-content-between align-items-start"
+                      >
+                        <div class="ms-2 me-auto">
+                          <div class="fw-bold">Subheading</div>
+                          Content for list item
+                        </div>
+                        <span class="badge bg-primary rounded-pill">14</span>
+                      </li>
+                      <li
+                        class="list-group-item d-flex justify-content-between align-items-start"
+                      >
+                        <div class="ms-2 me-auto">
+                          <div class="fw-bold">Subheading</div>
+                          Content for list item
+                        </div>
+                        <span class="badge bg-primary rounded-pill">14</span>
+                      </li>
+                    </ol>
+                    <br />
+                    <button class="btn btn-primary btn-sm">Create Task</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <div class="card-header">
+                    <h6>Sprint (Start-End) Created Date</h6>
+                  </div>
+                  <div class="card-body">
+                    <ol class="list-group list-group-numbered">
+                      <li
+                        class="list-group-item d-flex justify-content-between align-items-start"
+                      >
+                        <div class="ms-2 me-auto">
+                          <div class="fw-bold">Subheading</div>
+                          Content for list item
+                        </div>
+                        <span class="badge bg-primary rounded-pill">14</span>
+                      </li>
+                      <li
+                        class="list-group-item d-flex justify-content-between align-items-start"
+                      >
+                        <div class="ms-2 me-auto">
+                          <div class="fw-bold">Subheading</div>
+                          Content for list item
+                        </div>
+                        <span class="badge bg-primary rounded-pill">14</span>
+                      </li>
+                      <li
+                        class="list-group-item d-flex justify-content-between align-items-start"
+                      >
+                        <div class="ms-2 me-auto">
+                          <div class="fw-bold">Subheading</div>
+                          Content for list item
+                        </div>
+                        <span class="badge bg-primary rounded-pill">14</span>
+                      </li>
+                    </ol>
+                    <br />
+                    <button class="btn btn-primary btn-sm">Create Task</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" data-bs-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Create Task Modal -->
+    <div class="modal fade" tabindex="-1" id="createtaskmodal">
+      <div class="modal-dialog">
+        <div class="modal-content bg-dark tex-se">
+          <div class="modal-header">
+            <h6 class="text-secondary">Create Task</h6>
+          </div>
+          <div class="modal-body">
+            <form action="" class="text-secondary">
+              <div class="mb-3">
+                <label for="" class="form-label">Name :</label>
+                <input
+                  type="text"
+                  class="form-control bg-dark text-secondary"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="" class="form-label">Description :</label>
+                <textarea rows="5" class="form-control bg-dark text-secondary"></textarea>
+              </div>
+              <div class="mb-3">
+                <label for="" class="form-label">Status :</label>
+                <input type= "text" class="form-control bg-dark text-secondary" />
+              </div>
+            </div>
+            </form>
+            <div class="modal-footer">
+              <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button class="btn btn-primary" data-bs-dismiss="modal">Create</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Create spirnt by project modal -->
+    <div class="modal fade" tabindex="-1" id="projectbyspirntmodal">
+      <div class="modal-dialog">
+        <div class="modal-content bg-dark tex-se">
+          <div class="modal-header">
+            <h6 class="text-secondary">Create Spirnt</h6>
+          </div>
+          <div class="modal-body">
+            <form action="" class="text-secondary" id="createspirntform">
+              <div class="mb-3">
+                <label for="" class="form-label">Project :</label>
+                <select name="projectid" id="" class="projectdropdown form-control bg-dark text-secondary">
+                  <option disabled selected>select project</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="" class="form-label">Name :</label>
+                <input type="text" name="name" class="form-control bg-dark text-secondary" />
+              </div>
+              <div class="mb-3">
+                <label for="" class="form-label">Start Date :</label>
+                <input type="date" name="startdate" class="form-control bg-dark text-secondary" />
+              </div>
+              <div class="mb-3">
+                <label for="" class="form-label">End Date :</label>
+                <input type="date" name="enddate" class="form-control bg-dark text-secondary" />
+              </div>
+            </div>
+            </form>
+            <div class="modal-footer">
+              <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button class="btn btn-primary" data-bs-dismiss="modal" onclick="CreateSprintByProject(createspirntform)">Create</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Create task by sprint and project -->
+    <div class="modal fade" tabindex="-1" id="createtaskbyprojectspirntmodal">
+      <div class="modal-dialog">
+        <div class="modal-content bg-dark text-secondary">
+          <div class="modal-header">
+            <h6 class="text-secondary">Create Task</h6>
+          </div>
+          <div class="modal-body">
+            <form action="" class="text-secondary" id="createtaskbyprojectandspirntform">
+              <div class="mb-3">
+                <label for="" class="form-label">Project :</label>
+                <select name="projectid" id="" onchange="SetProjectBySprintDropdown(event)" class="projectdropdown form-control bg-dark text-secondary">
+                  <option disabled selected>select project</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="" class="form-label">Sprint :</label>
+                <select name="sprintid" id="" class="sprintdropdown form-control bg-dark text-secondary">
+                  <option disabled selected>select spirnt</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="" class="form-label">Name :</label>
+                <input type="text" name="name" class="form-control bg-dark text-secondary" />
+              </div>
+              <div class="mb-3">
+                <label for="" class="form-label">Description :</label>
+                <textarea rows="5" name="description" class="form-control bg-dark text-secondary"></textarea>
+              </div>
+              <div class="mb-3">
+                <label for="" class="form-label">Status</label>
+                <select name="status" id="" class="statusdropdown form-control bg-dark text-secondary">
+                  <option disabled selected>select</option>
+                  <option value="Pending">Pending</option>
+                  <option value="Complated">Complated</option>
+                  <option value="Progress">In progress</option>
+                  <option value="Hold">Hold</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="" class="form-label">Assined to</label>
+                <select name="assined_user" id="" class="userdropdown form-control bg-dark text-secondary">
+                </select>
+              </div>
+            </div>
+            </form>
+            <div class="modal-footer">
+              <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button class="btn btn-primary" data-bs-dismiss="modal" onclick="CreateTaskByProjectAndSprint(createtaskbyprojectandspirntform)">Create</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Create Task By Spirnt And Project Only -->
+    <div class="modal fade" tabindex="-1" id="taskmodalbynoselectsprintandproject">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-dark">
+          <div class="modal-header">
+            <h6 class="text-secondary">Create Task</h6>
+          </div>
+          <div class="modal-body">
+            <form action="" class="text-secondary" id="taskbynoselectsprintandprojectform">
+              <input type="hidden" name="projectid">
+              <input type="hidden" name="sprintid">
+              <div class="mb-3">
+                <label for="" class="form-label">Name :</label>
+                <input type="text" name="name" class="form-control bg-dark text-secondary" />
+              </div>
+              <div class="mb-3">
+                <label for="" class="form-label">Description :</label>
+                <textarea rows="5" name="description" class="form-control bg-dark text-secondary"></textarea>
+              </div>
+              <div class="mb-3">
+                <label for="" class="form-label">Status</label>
+                <select name="status" id="" class="statusdropdown form-control bg-dark text-secondary">
+                  <option disabled selected>select</option>
+                  <option value="Pending">Pending</option>
+                  <option value="Complated">Complated</option>
+                  <option value="Progress">In progress</option>
+                  <option value="Hold">Hold</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="" class="form-label">Assined to</label>
+                <select name="assined_user" id="" class="userdropdown form-control bg-dark text-secondary">
+                  <option disabled selected>select</option>
+                  <option value="Hold">John</option>
+                  <option value="Hold">willam</option>
+                  <option value="Hold">nick</option>
+                </select>
+              </div>
+            </div>
+            </form>
+            <div class="modal-footer">
+              <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button class="btn btn-primary" onclick="CreateTaskByProjectAndSprint(taskbynoselectsprintandprojectform)" data-bs-dismiss="modal">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SubTask list Modal -->
+    <div class="modal fade" id="SubTasklistmodal" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-dark">
+          <div class="modal-header d-flex justify-content-between align-items-center">
+            <h6 class="text-secondary">Subtask</h6>
+            <button class="btn btn-primary btn-sm" id="add_subtask_btn">Add</button>
+          </div>
+          <div class="modal-body">
+            <ul class="list-group bg-dark text-secondary" id="subtasklistdata">
+              <li class="list-group-item">one description</li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button data-bs-dismiss="modal" class="btn btn-secondary closebtn">Close</button>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Create SubtaskModal -->
+    <div class="modal fade" tabindex="-1" id="createsubtaskmodal">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-dark">
+          <div class="modal-header">
+            <h6 class="text-secondary">Create Subtask</h6>
+          </div>
+          <div class="modal-body">
+            <form action="" class="text-secondary" id="createsubtaskform">
+              <input type="hidden" name="projectid">
+              <input type="hidden" name="sprintid"> 
+              <input type="hidden" name="taskid">
+              <div class="mb-3">
+                <label for="" class="form-label">Name :</label>
+                <input type="text" name="name" class="form-control bg-dark text-secondary" />
+              </div>
+              <div class="mb-3">
+                <label for="" class="form-label">Description :</label>
+                <textarea rows="5" name="description" class="form-control bg-dark text-secondary"></textarea>
+              </div>
+              <div class="mb-3">
+                <label for="" class="form-label">Status</label>
+                <select name="status" id="" class="statusdropdown form-control bg-dark text-secondary">
+                  <option disabled selected>select</option>
+                  <option value="Pending">Pending</option>
+                  <option value="Complated">Complated</option>
+                  <option value="Progress">In progress</option>
+                  <option value="Hold">Hold</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="" class="form-label">Assined to</label>
+                <select name="assined_user" id="" class="userdropdown form-control bg-dark text-secondary">
+                  <option disabled selected>select user</option>
+                </select>
+              </div>
+            </div>
+            </form>
+            <div class="modal-footer">
+              <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button class="btn btn-primary" onclick="CreateSubtask(createsubtaskform)" data-bs-dismiss="modal">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Create User Modal -->
+    <div class="modal fade" tabindex="-1" id="createusermodal">
+      <div class="modal-dialog">
+        <div class="modal-content bg-dark tex-se">
+          <div class="modal-header">
+            <h6 class="text-secondary">Create User</h6>
+          </div>
+          <div class="modal-body">
+            <form action="" class="text-secondary" id="createuserform">
+              <div class="mb-3">
+                <label for="" class="form-label">Fullname :</label>
+                <input
+                name="fullname"
+                  type="text"
+                  class="form-control bg-dark text-secondary"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="" class="form-label">Role :</label>
+                <input
+                name="role"
+                  type="text"
+                  class="form-control bg-dark text-secondary"
+                />
+              </div>
+            </div>
+            </form>
+            <div class="modal-footer">
+              <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button class="btn btn-primary" data-bs-dismiss="modal" onclick="CreateUser(createuserform)">Create</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+     <!-- Create User Modal -->
+     <div class="modal fade" tabindex="-1" id="createstatusmodal">
+      <div class="modal-dialog">
+        <div class="modal-content bg-dark tex-se">
+          <div class="modal-header">
+            <h6 class="text-secondary">Create Status</h6>
+          </div>
+          <div class="modal-body">
+            <form action="" class="text-secondary" id="createstatusform">
+              <div class="mb-3">
+                <label for="" class="form-label">Name :</label>
+                <input
+                name="name"
+                  type="text"
+                  class="form-control bg-dark text-secondary"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="" class="form-label">Description :</label>
+                <textarea class="form-control bg-dark text-secondary" name="description" rows="5"></textarea>
+              </div>
+            </div>
+            </form>
+            <div class="modal-footer">
+              <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button class="btn btn-primary" data-bs-dismiss="modal" onclick="CreateStatus(createstatusform)">Create</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+  <script src="script.js"></script>
+</html>

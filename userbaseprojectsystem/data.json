@@ -1,0 +1,42 @@
+[
+	{
+		"name": "Project X",
+		"description": "A project aimed at improving customer experience on the company's website.",
+		"sprints": [
+			{
+				"name": "Sprint 1",
+				"start_date": "2024-03-01",
+				"end_date": "2024-03-15",
+				"tasks": [
+					{
+						"name": "Design landing page",
+						"description": "Create a visually appealing landing page with clear call-to-action buttons.",
+						"assigned_user": "John Doe",
+						"status": "completed",
+						"subtasks": [
+							{
+								"name": "Sketch initial layout",
+								"description": "Draft the initial layout for the landing page.",
+								"status": "completed",
+								"assigned_user": "Jane Smith"
+							},
+							{
+								"name": "Finalize graphics",
+								"description": "Select and finalize graphics to be used on the landing page.",
+								"status": "completed",
+								"assigned_user": "John Doe"
+							}
+						]
+					},
+					{
+						"name": "Implement backend functionality",
+						"description": "Develop backend functionality to handle user registrations and logins.",
+						"assigned_user": "Emily Johnson",
+						"status": "pending",
+						"subtasks": []
+					}
+				]
+			}
+		]
+	}
+]
