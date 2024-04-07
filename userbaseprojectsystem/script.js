@@ -16,9 +16,28 @@ function CreateProject(projectparam) {
   new bootstrap.Modal(addprojectmodel).hide();
 }
 
+document.addEventListener("OnCreateSpirnt", function (e) {
+  LoadSprintsByProject(e.detail.projectid);
+});
+
+function ShowCreateSpirntWithNoSelectProjectModal(projectid) {
+  new bootstrap.Modal(CreateSpirntWithNoSelectProjectModal).show();
+
+  CreateSpirntWithNoSelectProjectForm["projectid"].value = projectid;
+}
+
 function LoadSprintsByProject(projectid) {
   let project_sprints_view_element = document.getElementById(
     "project_sprints_view"
+  );
+
+  let AddSprintBtnInSprintViewModal_element = document.getElementById(
+    "AddSprintBtnInSprintViewModal"
+  );
+
+  AddSprintBtnInSprintViewModal_element.setAttribute(
+    "onclick",
+    `ShowCreateSpirntWithNoSelectProjectModal("${projectid}")`
   );
 
   project_sprints_view_element.innerHTML = "";
@@ -71,7 +90,9 @@ function LoadSprintsByProject(projectid) {
             task.id
           }")' class="list-group-item d-flex justify-content-between align-items-start">
           <div class="ms-2 me-auto">
-          <div class="fw-bold">${task.name} (${UserById(task.assined_user).fullname})</div>
+          <div class="fw-bold">${task.name} (${
+            UserById(task.assined_user).fullname
+          })</div>
           ${task.description}
           </div>
           <span class="badge bg-primary rounded-pill">${
@@ -94,9 +115,11 @@ function LoadSprintsByProject(projectid) {
 }
 
 function UserById(userid) {
-  return ToArray(crudOperation("get", undefined, "users")).find(
-    (x) => x.id == userid
-  ) ?? {fullname:"Test",role:"Test"};
+  return (
+    ToArray(crudOperation("get", undefined, "users")).find(
+      (x) => x.id == userid
+    ) ?? { fullname: "Test", role: "Test" }
+  );
 }
 
 function LoadSubtaskByTask(sprintid, projectid, taskid) {
@@ -123,7 +146,9 @@ function LoadSubtaskByTask(sprintid, projectid, taskid) {
 
     ToArray(task.subtask).forEach((x) => {
       subtasklistdata_element.innerHTML += `
-      <li class="list-group-item">${x.name} (${UserById(x.assined_user).fullname})</li>
+      <li class="list-group-item">${x.name} (${
+        UserById(x.assined_user).fullname
+      })</li>
       `;
     });
   }
@@ -288,6 +313,8 @@ function CreateSprintByProject(sprintpram) {
     crudOperation("put", projects[index]);
   }
 
+  CreateSprintEvent(sprint);
+
   sprintpram.reset();
 }
 
@@ -368,6 +395,14 @@ function LoadProjectDropDown() {
       dropdown.innerHTML += `<option value='${x.id}'>${x.name}</option>`;
     });
   });
+}
+
+// Custome Events
+
+function CreateSprintEvent(sprint) {
+  let event = new CustomEvent("OnCreateSpirnt", {detail:sprint});
+  //dispatch event
+  document.dispatchEvent(event);
 }
 
 function crudOperation(operation = "get", data, objname = "obj") {
