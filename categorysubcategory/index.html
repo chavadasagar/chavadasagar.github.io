@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Category-Subcategory</title>
+  </head>
+  <body>
+    <ul id="category" class="current_ul">
+      <li>Electronics</li>
+      <ul>
+        <li>Computers</li>
+        <ul>
+          <li>Laptops</li>
+          <li>Desktops</li>
+        </ul>
+        <li>Smartphones</li>
+        <li>Televisions</li>
+        <ul>
+          <li>LED TVs</li>
+          <li>Smart TVs</li>
+        </ul>
+      </ul>
+      <li>Home Appliances</li>
+      <ul>
+        <li>Refrigerators</li>
+        <li>Washing Machines</li>
+      </ul>
+
+      <li class="live"><input class="live_input" onkeydown="CreateCategoryNode(event)"/></li>
+    </ul>
+    <script src="script.js"></script>
+  </body>
+</html>
