@@ -1,0 +1,70 @@
+{
+    "plans": [
+        {
+            "id": 1,
+            "name": "Basic Plan",
+            "price": 9.99,
+            "duration": "Monthly"
+        },
+        {
+            "id": 2,
+            "name": "Standard Plan",
+            "price": 19.99,
+            "duration": "Monthly"
+        },
+        {
+            "id": 3,
+            "name": "Premium Plan",
+            "price": 29.99,
+            "duration": "Monthly"
+        }
+    ],
+    "features": [
+        {
+            "id": 1,
+            "name": "Access to Basic Features"
+        },
+        {
+            "id": 2,
+            "name": "Priority Support"
+        },
+        {
+            "id": 3,
+            "name": "Unlimited Data Usage"
+        },
+        {
+            "id": 4,
+            "name": "Custom Reporting"
+        }
+    ],
+    "planFeatures": [
+        {
+            "planId": 1,
+            "featureId": 1
+        },
+        {
+            "planId": 2,
+            "featureId": 1
+        },
+        {
+            "planId": 2,
+            "featureId": 2
+        },
+        {
+            "planId": 3,
+            "featureId": 1
+        },
+        {
+            "planId": 3,
+            "featureId": 2
+        },
+        {
+            "planId": 3,
+            "featureId": 3
+        },
+        {
+            "planId": 3,
+            "featureId": 4
+        }
+    ]
+}
