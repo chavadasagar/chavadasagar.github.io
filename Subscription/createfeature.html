@@ -14,18 +14,19 @@
 </head>
 
 <body class="p-2">
+    <a href="index.html">Home</a>
     <!-- Create Feature Form -->
     <div class="card mb-4">
         <div class="card-header bg-primary text-white">
             Create Feature
         </div>
         <div class="card-body">
-            <form id="createFeatureForm" method="post">
+            <form id="createFeatureForm">
                 <div class="mb-3">
                     <label for="featureName" class="form-label">Feature Name</label>
                     <input type="text" class="form-control" name="name" id="featureName" placeholder="Enter feature name" required>
                 </div>
-                <button type="submit" class="btn btn-success">Create Feature</button>
+                <button type="button" class="btn btn-success" id="CreateFeatureBtn">Create Feature</button>
             </form>
         </div>
     </div>
