@@ -14,13 +14,14 @@
 </head>
 
 <body class="p-2">
+    <a href="index.html">Home</a>
     <!-- Create Plan Form -->
     <div class="card mb-4">
         <div class="card-header bg-primary text-white">
             Create Plan
         </div>
         <div class="card-body">
-            <form id="createPlanForm" method="post">
+            <form id="createPlanForm">
                 <div class="mb-3">
                     <label for="planName" class="form-label">Plan Name</label>
                     <input type="text" name="name"  class="form-control" id="planName" placeholder="Enter plan name" required>
@@ -37,7 +38,7 @@
                         <option value="Yearly">Yearly</option>
                     </select>
                 </div>
-                <button type="submit" class="btn btn-success">Create Plan</button>
+                <button type="button" class="btn btn-success" id="CreatePlanBtn">Create Plan</button>
             </form>
         </div>
     </div>
