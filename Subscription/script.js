@@ -1,12 +1,12 @@
 document.getElementById("CreatePlanBtn")?.addEventListener("click", function () {
     CreatePlan(FormObjectToJSObject(createPlanForm));
 
-    document.location.pathname = "index.html";
+    document.location.pathname = "Subscription/index.html";
 });
 
 document.getElementById("CreateFeatureBtn")?.addEventListener("click", function () {
     CreateFeature(FormObjectToJSObject(createFeatureForm));
-    document.location.pathname = "index.html";
+    document.location.pathname = "Subscription/index.html";
 });
 
 document.getElementById("AssignFeaturesBtn")?.addEventListener("click", function (data) {
@@ -16,7 +16,7 @@ document.getElementById("AssignFeaturesBtn")?.addEventListener("click", function
 
     mappedResult.forEach(current => AssignFeatureToPlan(current));
 
-    document.location.pathname = "index.html";
+    document.location.pathname = "Subscription/index.html";
 });
 
 function loadDropdowns() {
