@@ -13,8 +13,8 @@
     <title>Subscription System</title>
 </head>
 
-<body class="p-2">
-
+<body class="p-2" onload="loadDropdowns()">
+    <a href="index.html">Home</a>
     <div class="card">
         <div class="card-header bg-primary text-white">
             Assign Features to Plan
@@ -40,7 +40,7 @@
                         <option value="4">Custom Reporting</option>
                     </select>
                 </div>
-                <button type="submit" class="btn btn-success">Assign Features</button>
+                <button type="button" class="btn btn-success" id="AssignFeaturesBtn">Assign Features</button>
             </form>
         </div>
     </div>
