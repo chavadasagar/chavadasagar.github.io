@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Slot Form</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4">Create Slot</h1>
+        <form id="createSloteForm">
+            <div class="row">
+                <div class="col-md-6">
+                    <!-- Provider Dropdown -->
+                    <div class="mb-3">
+                        <label for="providerSelect" class="form-label">Select Provider</label>
+                        <select class="form-select" id="providerSelect" required>
+                            <opti value="" selected disabled>Select a Provider</option>
+                                <option value="provider1">Provider 1</option>
+                                <option value="provider2">Provider 2</option>
+                                <option value="provider3">Provider 3</option>
+                                <!-- Add more providers as needed -->
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-6">
+
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="date" class="form-label">Select Date:</label>
+                            <input type="date" id="date" name="date" class="form-control" required>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="timeSlotsContainer">
+                <div class="row g-3 align-items-center mb-3 time-slot">
+                    <div class="col-md-5">
+                        <label for="startTime1" class="form-label">Start Time:</label>
+                        <input type="time" id="startTime1" name="startTime[]" class="form-control" required>
+                    </div>
+                    <div class="col-md-5">
+                        <label for="endTime1" class="form-label">End Time:</label>
+                        <input type="time" id="endTime1" name="endTime[]" class="form-control" required>
+                    </div>
+                    <!-- <div class="col-md-2 d-flex align-items-end">
+                        <button type="button" class="btn btn-danger remove-slot" disabled>Remove</button>
+                    </div> -->
+                </div>
+            </div>
+
+            <button type="button" id="addSlotButton" class="btn btn-primary">Add Another Slot</button>
+            <button type="button" class="btn btn-success" onclick="createSlots(createSloteForm)">Submit</button>
+            <a href="createProvider.html">create provider</a>
+            &nbsp;
+            &nbsp;
+            <a href="index.html">appointment</a>
+        </form>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            let slotCount = 1;
+
+            const timeSlotsContainer = document.getElementById('timeSlotsContainer');
+            const addSlotButton = document.getElementById('addSlotButton');
+
+            addSlotButton.addEventListener('click', () => {
+                slotCount++;
+                const timeSlotRow = document.createElement('div');
+                timeSlotRow.className = 'row g-3 align-items-center mb-3 time-slot';
+                timeSlotRow.innerHTML = `
+          <div class="col-md-5">
+            <label for="startTime${slotCount}" class="form-label">Start Time:</label>
+            <input type="time" id="startTime${slotCount}" name="startTime[${slotCount}]" class="form-control" required>
+          </div>
+          <div class="col-md-5">
+            <label for="endTime${slotCount}" class="form-label">End Time:</label>
+            <input type="time" id="endTime${slotCount}" name="endTime[${slotCount}]" class="form-control" required>
+          </div>
+          <div class="col-md-2 d-flex align-items-end">
+            <button type="button" class="btn btn-danger remove-slot"> - </button>
+          </div>
+        `;
+                timeSlotsContainer.appendChild(timeSlotRow);
+
+                // Add remove functionality to the new "Remove" button
+                timeSlotRow.querySelector('.remove-slot')?.addEventListener('click', () => {
+                    timeSlotRow.remove();
+                });
+            });
+
+            // Add remove functionality for the initial row
+            document.querySelector('.remove-slot')?.addEventListener('click', function () {
+                this.closest('.time-slot').remove();
+            });
+        });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
