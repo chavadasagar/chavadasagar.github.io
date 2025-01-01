@@ -11,7 +11,7 @@
 <body>
     <div class="container mt-5">
         <div class="row">
-            <div class="col-md-8">
+            <div class="col-md-12">
                 <h2>Appointment Form</h2>
                 <form>
                     <div class="row">
@@ -30,24 +30,41 @@
                         <!-- Provider Dropdown -->
                         <div class="mb-3 col-md-6">
                             <label for="providerSelect" class="form-label">Select Provider</label>
-                            <select class="form-select" id="providerSelect" required>
-                                <opti value="" selected disabled>Select a Provider</option>
-                                    <option value="provider1">Provider 1</option>
-                                    <option value="provider2">Provider 2</option>
-                                    <option value="provider3">Provider 3</option>
-                                    <!-- Add more providers as needed -->
+                            <select class="form-select" onchange="showProviderSlots(providerSelect,date)"
+                                id="providerSelect" required>
+                                <option value="" selected disabled>Select a Provider</option>
+                                <option value="provider1">Provider 1</option>
+                                <option value="provider2">Provider 2</option>
+                                <option value="provider3">Provider 3</option>
+                                <!-- Add more providers as needed -->
+                            </select>
+                            <a href="createProvider.html">create</a>
+                        </div>
+
+                        <div class="mb-3 col-md-6">
+                            <label for="providerSlots" class="form-label">Select Slots</label>
+                            <select class="form-select" id="providerSlots" required>
+                                <option value="" selected disabled>Select a Slot</option>
+                                <option value="Slot1">Slot 1</option>
+                                <option value="Slot2">Slot 2</option>
+                                <option value="Slot3">Slot 3</option>
+                                <!-- Add more providers as needed -->
                             </select>
                         </div>
+
+
+
+                    </div>
+                    <div class="row">
 
                         <div class="mb-3 col-md-6">
                             <label for="note" class="form-label">Note</label>
                             <textarea class="form-control" id="note" rows="3" required></textarea>
                         </div>
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="summary" class="form-label">Summary</label>
-                        <textarea class="form-control" id="summary" rows="3" required></textarea>
+                        <div class="mb-3 col-md-6">
+                            <label for="summary" class="form-label">Summary</label>
+                            <textarea class="form-control" id="summary" rows="3" required></textarea>
+                        </div>
                     </div>
 
                     <button type="button" class="btn btn-primary">Schedule</button>

@@ -22,25 +22,48 @@ if (document.location.pathname.includes("createSlots.html")) {
     loadDropDowns(queryParams.get("providerId"));
 }
 
+
+function showProviderSlots(provider, date) {
+    debugger
+
+    let result = Array.from(SlotsByProivderAndDate(provider.value, date.value));
+
+    if (date.value == '') {
+        alert("please select data");
+        return;
+    }
+
+    if (result.length == 0) {
+        alert("no slot are available");
+        return;
+    }
+
+    providerSlots.innerHTML =
+        result.map(val => `<option value=${val.startTime} to ${val.endTime}>${val.startTime} to ${val.endTime}</option>`).join();
+
+}
+
 function SlotsByProivderAndDate(providerId, date) {
     // Find the provider object by matching providerId and date
     const provider = providersSlots.find(item => item.providerId == providerId && item.date == date);
-    
+
     // If provider is found, return the slots, otherwise return an empty array
     return provider ? provider.slot : [];
 }
 
 function loadDropDowns(id) {
-    if (document.getElementById("providerSelect"))
-    {
+    if (document.getElementById("providerSelect")) {
+        document.getElementById("providerSelect").innerHTML = `<option value="" selected disabled>Select a Provider</option>`;
+
         document.getElementById("providerSelect").innerHTML
-            = Array.from(providers).map(x => `<option value='${x.id}' ${id == x.id ? 'selected' : ''}>${x.name}</option>`).join("");
+            += Array.from(providers).map(x => `<option value='${x.id}' ${id == x.id ? 'selected' : ''}>${x.name}</option>`).join("");
     }
 }
 
 function createSlots(providerSlots) {
     providersSlots.push(MapProviderSlotsToObject(providerSlots));
     localStorage.setItem("providerSlots", JSON.stringify(providersSlots));
+    document.location.href = `createAppointment.html`;
 }
 
 
@@ -58,11 +81,12 @@ function MapProviderSlotsToObject(providerSlots) {
     let startTime = providerSlots.querySelectorAll("[name*=startTime]");
     let endTime = providerSlots.querySelectorAll("[name*=endTime]");
 
-    result.providerId = FormObjectToJSObject(providerSlots).id;
+    result.id = FormObjectToJSObject(providerSlots).id;
+    result.providerId = FormObjectToJSObject(providerSlots).provider;
     result.date = FormObjectToJSObject(providerSlots).date;
 
     result.slot = Array.from(startTime).map((val, i) => {
-        return { startTime: val, endTime: endTime[i] };
+        return { startTime: val.value, endTime: endTime[i].value };
     });
 
     return result;
