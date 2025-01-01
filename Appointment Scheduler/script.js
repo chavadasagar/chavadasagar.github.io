@@ -1,6 +1,7 @@
 // storage
 let providers = JSON.parse(localStorage.getItem("providers")) ?? [];
 let providersSlots = JSON.parse(localStorage.getItem("providerSlots")) ?? [];
+let appointments = JSON.parse(localStorage.getItem("appointments")) ?? [];
 
 // events
 let onCreateProvider = new Event("onCreateProvider");
@@ -22,6 +23,18 @@ if (document.location.pathname.includes("createSlots.html")) {
     loadDropDowns(queryParams.get("providerId"));
 }
 
+
+function createAppointment(appointment) {
+    appointments.push(FormObjectToJSObject(appointment));
+    JSON.setItem("appointments", JSON.stringify(appointments));
+    loadAllAppointments();
+}
+
+
+function loadAllAppointments()
+{
+    
+}
 
 function showProviderSlots(provider, date) {
     debugger

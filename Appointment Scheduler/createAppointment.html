@@ -13,7 +13,7 @@
         <div class="row">
             <div class="col-md-12">
                 <h2>Appointment Form</h2>
-                <form>
+                <form id="createAppointment">
                     <div class="row">
                         <div class="mb-3 col-md-6">
                             <label for="name" class="form-label">Name</label>
@@ -30,7 +30,7 @@
                         <!-- Provider Dropdown -->
                         <div class="mb-3 col-md-6">
                             <label for="providerSelect" class="form-label">Select Provider</label>
-                            <select class="form-select" onchange="showProviderSlots(providerSelect,date)"
+                            <select class="form-select" name="provider" onchange="showProviderSlots(providerSelect,date)"
                                 id="providerSelect" required>
                                 <option value="" selected disabled>Select a Provider</option>
                                 <option value="provider1">Provider 1</option>
@@ -43,7 +43,7 @@
 
                         <div class="mb-3 col-md-6">
                             <label for="providerSlots" class="form-label">Select Slots</label>
-                            <select class="form-select" id="providerSlots" required>
+                            <select class="form-select" name="time" id="providerSlots" required>
                                 <option value="" selected disabled>Select a Slot</option>
                                 <option value="Slot1">Slot 1</option>
                                 <option value="Slot2">Slot 2</option>
@@ -59,15 +59,15 @@
 
                         <div class="mb-3 col-md-6">
                             <label for="note" class="form-label">Note</label>
-                            <textarea class="form-control" id="note" rows="3" required></textarea>
+                            <textarea class="form-control" id="note" name="note" rows="3" required></textarea>
                         </div>
                         <div class="mb-3 col-md-6">
                             <label for="summary" class="form-label">Summary</label>
-                            <textarea class="form-control" id="summary" rows="3" required></textarea>
+                            <textarea class="form-control" name="summary" id="summary" rows="3" required></textarea>
                         </div>
                     </div>
 
-                    <button type="button" class="btn btn-primary">Schedule</button>
+                    <button type="button" class="btn btn-primary" onclick="createAppointment(createAppointment)">Schedule</button>
                 </form>
             </div>
         </div>
