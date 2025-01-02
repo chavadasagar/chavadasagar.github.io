@@ -1,5 +1,67 @@
-<a href="createAppointment.html">create</a>
-<div id="appointments">
+<!DOCTYPE html>
+<html lang="en">
 
-</div>
-<script src="script.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Listings</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Appointment Listings</h2>
+
+        <!-- Schedule Button -->
+        <div class="mb-4 text-center">
+            <a class="btn btn-primary" href="createAppointment.html">Schedule Appointment</a>
+        </div>
+
+        <!-- Appointment Listing Table -->
+        <div class="table-responsive">
+            <table class="table table-striped table-bordered">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Provider</th>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Note</th>
+                        <th>Summary</th>
+                    </tr>
+                </thead>
+                <tbody id="appointments">
+                    <tr>
+                        <td>John Doe</td>
+                        <td>Dr. Smith</td>
+                        <td>2025-01-10</td>
+                        <td>10:00 AM</td>
+                        <td>Follow-up on routine check-up.</td>
+                        <td>Scheduled for a follow-up visit for check-up.</td>
+                    </tr>
+                    <tr>
+                        <td>Jane Smith</td>
+                        <td>Dr. Lee</td>
+                        <td>2025-01-12</td>
+                        <td>02:30 PM</td>
+                        <td>Consultation regarding allergies.</td>
+                        <td>Consultation scheduled for allergy discussion and treatment.</td>
+                    </tr>
+                    <tr>
+                        <td>Mark Johnson</td>
+                        <td>Dr. Carter</td>
+                        <td>2025-01-15</td>
+                        <td>11:00 AM</td>
+                        <td>Annual physical check-up.</td>
+                        <td>Annual physical exam with Dr. Carter.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

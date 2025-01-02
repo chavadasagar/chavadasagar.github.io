@@ -5,9 +5,12 @@ let appointments = JSON.parse(localStorage.getItem("appointments")) ?? [];
 
 // events
 let onCreateProvider = new Event("onCreateProvider");
+let onCreateAppointment = new Event("onCreateAppointment");
+let onCreateSlots = new Event("onCreateSlots");
 
 // init
 loadDropDowns();
+loadAllAppointments();
 
 
 // trigger event
@@ -16,24 +19,64 @@ document.addEventListener("onCreateProvider", function (el) {
     document.location.href = `createSlots.html?providerId=${String(el.data.id)}`;
 });
 
+document.addEventListener("onCreateAppointment", function (el) {
+    console.log(el);
+    loadAllAppointments();
+    document.location.href = `index.html?id=${el.data.id}`;
+});
 
-if (document.location.pathname.includes("createSlots.html")) {
+
+document.addEventListener("onCreateSlots", function (el) {
+    console.log(el);
+    loadAllAppointments();
+    document.location.href = `createAppointment.html?providerid=${el.data.id}`;
+});
+
+
+if (document.location.href.includes("createSlots.html")) {
     debugger
     const queryParams = new URLSearchParams(document.location.search);
     loadDropDowns(queryParams.get("providerId"));
 }
 
 
-function createAppointment(appointment) {
-    appointments.push(FormObjectToJSObject(appointment));
-    JSON.setItem("appointments", JSON.stringify(appointments));
-    loadAllAppointments();
+if (document.location.search.includes("providerid")) {
+    const queryParams = new URLSearchParams(document.location.href);
+    loadDropDowns(queryParams.get("providerId"));
 }
 
 
-function loadAllAppointments()
-{
-    
+function createAppointment(appointment) {
+    let createdAppointment = FormObjectToJSObject(appointment);
+    appointments.push(createdAppointment);
+    localStorage.setItem("appointments", JSON.stringify(appointments));
+    onCreateAppointment.data = createdAppointment;
+    document.dispatchEvent(onCreateAppointment);
+}
+
+
+function loadAllAppointments() {
+    if (document.getElementById("appointments")) {
+        document.getElementById("appointments").innerHTML =
+            Array.from(gteAllAppointments()).map(appointment => appointmentByHTML(appointment)).join()
+    }
+}
+
+function appointmentByHTML(appointment) {
+    if (appointment) {
+        return `<tr>
+                        <td>${appointment.name}</td>
+                        <td>${appointment.provider}</td>
+                        <td>${appointment.date}</td>
+                        <td>${appointment.time}</td>
+                        <td>${appointment.note}</td>
+                        <td>${appointment.summary}</td>
+                    </tr>`;
+    }
+}
+
+function gteAllAppointments() {
+    return mapAppoitnemtToProvider(appointments);
 }
 
 function showProviderSlots(provider, date) {
@@ -74,9 +117,11 @@ function loadDropDowns(id) {
 }
 
 function createSlots(providerSlots) {
-    providersSlots.push(MapProviderSlotsToObject(providerSlots));
+    let createdproviderSlots = MapProviderSlotsToObject(providerSlots);
+    providersSlots.push(createdproviderSlots);
     localStorage.setItem("providerSlots", JSON.stringify(providersSlots));
-    document.location.href = `createAppointment.html`;
+    onCreateSlots.data = createdproviderSlots;
+    document.dispatchEvent(onCreateSlots);
 }
 
 
@@ -103,6 +148,20 @@ function MapProviderSlotsToObject(providerSlots) {
     });
 
     return result;
+}
+
+function mapAppoitnemtToProvider(appointments) {
+    return appointments.map(appointment => {
+        if (appointment && appointment.providerId) {
+            appointment.provider = providerById(appointment.providerId).name;
+            return appointment;
+        }
+    });
+}
+
+function providerById(id) {
+    return Array.from(providers)
+        .filter(provider => provider.id == id)[0];
 }
 
 function FormObjectToJSObject(obj) {

@@ -13,11 +13,11 @@
         <div class="row">
             <div class="col-md-12">
                 <h2>Appointment Form</h2>
-                <form id="createAppointment">
+                <form id="createAppointmentForm">
                     <div class="row">
                         <div class="mb-3 col-md-6">
                             <label for="name" class="form-label">Name</label>
-                            <input type="text" class="form-control" id="name" required>
+                            <input type="text" class="form-control" name="name" id="name" required>
                         </div>
                         <div class="mb-3 col-md-6">
                             <label for="date" class="form-label">Date</label>
@@ -30,8 +30,8 @@
                         <!-- Provider Dropdown -->
                         <div class="mb-3 col-md-6">
                             <label for="providerSelect" class="form-label">Select Provider</label>
-                            <select class="form-select" name="provider" onchange="showProviderSlots(providerSelect,date)"
-                                id="providerSelect" required>
+                            <select class="form-select" name="providerId"
+                                onchange="showProviderSlots(providerSelect,date)" id="providerSelect" required>
                                 <option value="" selected disabled>Select a Provider</option>
                                 <option value="provider1">Provider 1</option>
                                 <option value="provider2">Provider 2</option>
@@ -67,7 +67,8 @@
                         </div>
                     </div>
 
-                    <button type="button" class="btn btn-primary" onclick="createAppointment(createAppointment)">Schedule</button>
+                    <button type="button" class="btn btn-primary"
+                        onclick="createAppointment(createAppointmentForm)">Schedule</button>
                 </form>
             </div>
         </div>
