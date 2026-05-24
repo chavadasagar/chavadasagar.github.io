@@ -20,7 +20,6 @@
   }
 
   *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
-
   html { scroll-behavior: smooth; }
 
   body {
@@ -32,7 +31,6 @@
     overflow-x: hidden;
   }
 
-  /* ── GRAIN OVERLAY ── */
   body::before {
     content: '';
     position: fixed;
@@ -43,21 +41,8 @@
     z-index: 1000;
   }
 
-  /* ── ANIMATED BG BLOBS ── */
-  .bg-blobs {
-    position: fixed;
-    inset: 0;
-    pointer-events: none;
-    overflow: hidden;
-    z-index: 0;
-  }
-  .blob {
-    position: absolute;
-    border-radius: 50%;
-    filter: blur(120px);
-    opacity: 0.15;
-    animation: drift 20s ease-in-out infinite;
-  }
+  .bg-blobs { position: fixed; inset: 0; pointer-events: none; overflow: hidden; z-index: 0; }
+  .blob { position: absolute; border-radius: 50%; filter: blur(120px); opacity: 0.15; animation: drift 20s ease-in-out infinite; }
   .blob-1 { width: 600px; height: 600px; background: var(--accent); top: -200px; left: -100px; animation-delay: 0s; }
   .blob-2 { width: 500px; height: 500px; background: var(--accent2); bottom: -150px; right: -100px; animation-delay: -7s; }
   .blob-3 { width: 400px; height: 400px; background: var(--accent3); top: 50%; left: 50%; transform: translate(-50%,-50%); animation-delay: -14s; }
@@ -68,7 +53,6 @@
     66% { transform: translate(-20px, 30px) scale(0.95); }
   }
 
-  /* ── NAV ── */
   nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -81,545 +65,159 @@
     backdrop-filter: blur(20px);
     border-bottom: 1px solid var(--border);
   }
-  .nav-logo {
-    font-family: 'DM Serif Display', serif;
-    font-size: 1.4rem;
-    color: var(--text);
-    text-decoration: none;
-    letter-spacing: -0.02em;
-  }
+  .nav-logo { font-family: 'DM Serif Display', serif; font-size: 1.4rem; color: var(--text); text-decoration: none; letter-spacing: -0.02em; }
   .nav-logo span { color: var(--accent); }
   .nav-links { display: flex; gap: 2.5rem; list-style: none; }
-  .nav-links a {
-    font-size: 0.85rem;
-    font-weight: 500;
-    color: var(--muted);
-    text-decoration: none;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    transition: color 0.2s;
-  }
+  .nav-links a { font-size: 0.85rem; font-weight: 500; color: var(--muted); text-decoration: none; letter-spacing: 0.06em; text-transform: uppercase; transition: color 0.2s; }
   .nav-links a:hover { color: var(--text); }
-  .nav-cta {
-    font-size: 0.8rem;
-    font-weight: 600;
-    color: var(--accent);
-    text-decoration: none;
-    border: 1px solid var(--accent);
-    padding: 0.45rem 1.1rem;
-    border-radius: 4px;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    transition: all 0.2s;
-  }
+  .nav-cta { font-size: 0.8rem; font-weight: 600; color: var(--accent); text-decoration: none; border: 1px solid var(--accent); padding: 0.45rem 1.1rem; border-radius: 4px; letter-spacing: 0.06em; text-transform: uppercase; transition: all 0.2s; }
   .nav-cta:hover { background: var(--accent); color: #fff; }
 
-  /* ── LAYOUT ── */
   main { position: relative; z-index: 1; }
   .section { padding: 7rem 0; }
   .container { max-width: 1080px; margin: 0 auto; padding: 0 2.5rem; }
 
-  /* ── HERO ── */
-  #hero {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    padding: 8rem 0 4rem;
-  }
-  .hero-inner {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    gap: 4rem;
-    align-items: center;
-  }
-  .hero-tag {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-family: 'DM Mono', monospace;
-    font-size: 0.75rem;
-    color: var(--accent3);
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    margin-bottom: 1.5rem;
-    padding: 0.4rem 0.9rem;
-    border: 1px solid rgba(0,217,166,0.25);
-    border-radius: 100px;
-    width: fit-content;
-  }
-  .hero-tag::before {
-    content: '';
-    width: 6px; height: 6px;
-    background: var(--accent3);
-    border-radius: 50%;
-    animation: pulse 2s ease-in-out infinite;
-  }
-  @keyframes pulse {
-    0%,100% { opacity:1; transform:scale(1); }
-    50% { opacity:0.4; transform:scale(0.8); }
-  }
-  .hero-name {
-    font-family: 'DM Serif Display', serif;
-    font-size: clamp(3.5rem, 7vw, 6rem);
-    line-height: 1;
-    letter-spacing: -0.03em;
-    color: var(--text);
-    margin-bottom: 0.3rem;
-  }
-  .hero-name em {
-    font-style: italic;
-    color: var(--accent);
-  }
-  .hero-title {
-    font-family: 'DM Mono', monospace;
-    font-size: 1rem;
-    color: var(--muted);
-    margin-bottom: 1.8rem;
-    letter-spacing: 0.04em;
-  }
+  /* HERO */
+  #hero { min-height: 100vh; display: flex; align-items: center; padding: 8rem 0 4rem; }
+  .hero-inner { display: grid; grid-template-columns: 1fr auto; gap: 4rem; align-items: center; }
+  .hero-tag { display: inline-flex; align-items: center; gap: 0.5rem; font-family: 'DM Mono', monospace; font-size: 0.75rem; color: var(--accent3); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 1.5rem; padding: 0.4rem 0.9rem; border: 1px solid rgba(0,217,166,0.25); border-radius: 100px; width: fit-content; }
+  .hero-tag::before { content: ''; width: 6px; height: 6px; background: var(--accent3); border-radius: 50%; animation: pulse 2s ease-in-out infinite; }
+  @keyframes pulse { 0%,100% { opacity:1; transform:scale(1); } 50% { opacity:0.4; transform:scale(0.8); } }
+  .hero-name { font-family: 'DM Serif Display', serif; font-size: clamp(3.5rem, 7vw, 6rem); line-height: 1; letter-spacing: -0.03em; color: var(--text); margin-bottom: 0.3rem; }
+  .hero-name em { font-style: italic; color: var(--accent); }
+  .hero-title { font-family: 'DM Mono', monospace; font-size: 1rem; color: var(--muted); margin-bottom: 1.8rem; letter-spacing: 0.04em; }
   .hero-title span { color: var(--accent2); }
-  .hero-bio {
-    font-size: 1.05rem;
-    color: #9999b8;
-    max-width: 560px;
-    line-height: 1.75;
-    margin-bottom: 2.5rem;
-  }
+  .hero-bio { font-size: 1.05rem; color: #9999b8; max-width: 560px; line-height: 1.75; margin-bottom: 2.5rem; }
   .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
-  .btn-primary {
-    padding: 0.85rem 2rem;
-    background: var(--accent);
-    color: #fff;
-    text-decoration: none;
-    border-radius: 6px;
-    font-weight: 600;
-    font-size: 0.9rem;
-    letter-spacing: 0.02em;
-    transition: all 0.2s;
-    box-shadow: 0 0 30px rgba(124,107,255,0.3);
-  }
+  .btn-primary { padding: 0.85rem 2rem; background: var(--accent); color: #fff; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.9rem; letter-spacing: 0.02em; transition: all 0.2s; box-shadow: 0 0 30px rgba(124,107,255,0.3); }
   .btn-primary:hover { background: #6a58f0; box-shadow: 0 0 50px rgba(124,107,255,0.5); transform: translateY(-1px); }
-  .btn-ghost {
-    padding: 0.85rem 2rem;
-    border: 1px solid var(--border);
-    color: var(--muted);
-    text-decoration: none;
-    border-radius: 6px;
-    font-weight: 500;
-    font-size: 0.9rem;
-    transition: all 0.2s;
-  }
+  .btn-ghost { padding: 0.85rem 2rem; border: 1px solid var(--border); color: var(--muted); text-decoration: none; border-radius: 6px; font-weight: 500; font-size: 0.9rem; transition: all 0.2s; }
   .btn-ghost:hover { border-color: var(--accent); color: var(--accent); }
 
-  /* Hero Stats */
-  .hero-stats {
+  /* AVATAR PANEL */
+  .hero-right {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
-  }
-  .stat-card {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 1.5rem 2rem;
-    text-align: center;
-    min-width: 130px;
-    position: relative;
-    overflow: hidden;
-    transition: transform 0.2s, border-color 0.2s;
-  }
-  .stat-card:hover { transform: translateX(-4px); border-color: var(--accent); }
-  .stat-card::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(135deg, var(--highlight), transparent);
-  }
-  .stat-num {
-    font-family: 'DM Serif Display', serif;
-    font-size: 2.8rem;
-    color: var(--accent);
-    line-height: 1;
-    margin-bottom: 0.3rem;
-  }
-  .stat-label {
-    font-size: 0.72rem;
-    color: var(--muted);
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-  }
-
-  /* ── SECTION HEADER ── */
-  .section-label {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.72rem;
-    color: var(--accent);
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    margin-bottom: 0.8rem;
-    display: flex;
     align-items: center;
-    gap: 0.8rem;
+    gap: 1.2rem;
   }
-  .section-label::after {
-    content: '';
-    flex: 1;
-    max-width: 60px;
-    height: 1px;
-    background: var(--accent);
-    opacity: 0.4;
+  .avatar-wrap {
+    position: relative;
+    width: 280px;
+    height: 290px;
+    flex-shrink: 0;
   }
-  .section-title {
-    font-family: 'DM Serif Display', serif;
-    font-size: clamp(2rem, 4vw, 3rem);
-    letter-spacing: -0.02em;
-    color: var(--text);
-    margin-bottom: 1rem;
-    line-height: 1.1;
-  }
-  .section-sub {
-    font-size: 1rem;
-    color: var(--muted);
-    max-width: 520px;
-    line-height: 1.7;
-    margin-bottom: 3.5rem;
+ .avatar-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid var(--accent);
+  box-shadow: 0 0 40px rgba(124,107,255,0.25);
+}
+  @keyframes float {
+    0%,100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
   }
 
-  /* ── SKILLS ── */
+  /* Stats row under avatar */
+  .stats-row { display: flex; gap: 0.85rem; }
+  .stat-card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 1.1rem 1.4rem; text-align: center; position: relative; overflow: hidden; transition: transform 0.2s, border-color 0.2s; }
+  .stat-card:hover { transform: translateY(-3px); border-color: var(--accent); }
+  .stat-card::before { content: ''; position: absolute; inset: 0; background: linear-gradient(135deg, var(--highlight), transparent); }
+  .stat-num { font-family: 'DM Serif Display', serif; font-size: 2.2rem; color: var(--accent); line-height: 1; margin-bottom: 0.2rem; }
+  .stat-label { font-size: 0.68rem; color: var(--muted); letter-spacing: 0.08em; text-transform: uppercase; }
+
+  /* SECTION HEADER */
+  .section-label { font-family: 'DM Mono', monospace; font-size: 0.72rem; color: var(--accent); letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 0.8rem; display: flex; align-items: center; gap: 0.8rem; }
+  .section-label::after { content: ''; flex: 1; max-width: 60px; height: 1px; background: var(--accent); opacity: 0.4; }
+  .section-title { font-family: 'DM Serif Display', serif; font-size: clamp(2rem, 4vw, 3rem); letter-spacing: -0.02em; color: var(--text); margin-bottom: 1rem; line-height: 1.1; }
+  .section-sub { font-size: 1rem; color: var(--muted); max-width: 520px; line-height: 1.7; margin-bottom: 3.5rem; }
+
+  /* SKILLS */
   #skills { background: var(--surface); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
   .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
-  .skill-group {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 14px;
-    padding: 1.8rem;
-    transition: border-color 0.2s, transform 0.2s;
-  }
+  .skill-group { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 1.8rem; transition: border-color 0.2s, transform 0.2s; }
   .skill-group:hover { border-color: rgba(124,107,255,0.4); transform: translateY(-3px); }
-  .skill-group-name {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.72rem;
-    font-weight: 500;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--accent3);
-    margin-bottom: 1.2rem;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-  }
+  .skill-group-name { font-family: 'DM Mono', monospace; font-size: 0.72rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent3); margin-bottom: 1.2rem; display: flex; align-items: center; gap: 0.5rem; }
   .skill-group-name .icon { font-size: 1rem; }
   .skill-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; }
-  .tag {
-    font-size: 0.8rem;
-    font-weight: 500;
-    padding: 0.35rem 0.8rem;
-    border-radius: 6px;
-    background: rgba(255,255,255,0.05);
-    border: 1px solid var(--border);
-    color: #bbbbd8;
-    transition: all 0.15s;
-  }
+  .tag { font-size: 0.8rem; font-weight: 500; padding: 0.35rem 0.8rem; border-radius: 6px; background: rgba(255,255,255,0.05); border: 1px solid var(--border); color: #bbbbd8; transition: all 0.15s; }
   .tag:hover { background: var(--highlight); border-color: var(--accent); color: var(--text); }
   .tag.hot { border-color: rgba(124,107,255,0.35); color: var(--accent); background: var(--highlight); }
 
-  /* ── EXPERIENCE ── */
+  /* EXPERIENCE */
   .timeline { position: relative; }
-  .timeline::before {
-    content: '';
-    position: absolute;
-    left: 18px;
-    top: 0; bottom: 0;
-    width: 1px;
-    background: var(--border);
-  }
-  .exp-item {
-    display: grid;
-    grid-template-columns: 38px 1fr;
-    gap: 0 1.8rem;
-    margin-bottom: 3.5rem;
-    opacity: 0;
-    transform: translateY(20px);
-    animation: slideUp 0.5s forwards;
-  }
+  .timeline::before { content: ''; position: absolute; left: 18px; top: 0; bottom: 0; width: 1px; background: var(--border); }
+  .exp-item { display: grid; grid-template-columns: 38px 1fr; gap: 0 1.8rem; margin-bottom: 3.5rem; opacity: 0; transform: translateY(20px); animation: slideUp 0.5s forwards; }
   .exp-item:nth-child(1) { animation-delay: 0.1s; }
   .exp-item:nth-child(2) { animation-delay: 0.2s; }
   .exp-item:nth-child(3) { animation-delay: 0.3s; }
-
-  @keyframes slideUp {
-    to { opacity:1; transform:translateY(0); }
-  }
-
-  .exp-dot {
-    width: 38px; height: 38px;
-    border-radius: 50%;
-    background: var(--card);
-    border: 2px solid var(--accent);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1rem;
-    position: relative;
-    z-index: 1;
-    flex-shrink: 0;
-    box-shadow: 0 0 20px rgba(124,107,255,0.3);
-  }
-  .exp-body {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 14px;
-    padding: 2rem;
-    transition: border-color 0.2s;
-    position: relative;
-    overflow: hidden;
-  }
-  .exp-body::before {
-    content: '';
-    position: absolute;
-    top: 0; left: 0; right: 0;
-    height: 2px;
-    background: linear-gradient(90deg, var(--accent), var(--accent3));
-    opacity: 0;
-    transition: opacity 0.2s;
-  }
+  @keyframes slideUp { to { opacity:1; transform:translateY(0); } }
+  .exp-dot { width: 38px; height: 38px; border-radius: 50%; background: var(--card); border: 2px solid var(--accent); display: flex; align-items: center; justify-content: center; font-size: 1rem; position: relative; z-index: 1; flex-shrink: 0; box-shadow: 0 0 20px rgba(124,107,255,0.3); }
+  .exp-body { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 2rem; transition: border-color 0.2s; position: relative; overflow: hidden; }
+  .exp-body::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px; background: linear-gradient(90deg, var(--accent), var(--accent3)); opacity: 0; transition: opacity 0.2s; }
   .exp-body:hover::before { opacity: 1; }
   .exp-body:hover { border-color: rgba(124,107,255,0.3); }
   .exp-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem; margin-bottom: 0.4rem; flex-wrap: wrap; }
-  .exp-role {
-    font-family: 'DM Serif Display', serif;
-    font-size: 1.4rem;
-    color: var(--text);
-    letter-spacing: -0.01em;
-  }
-  .exp-period {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.72rem;
-    color: var(--accent3);
-    letter-spacing: 0.08em;
-    background: rgba(0,217,166,0.1);
-    border: 1px solid rgba(0,217,166,0.2);
-    padding: 0.3rem 0.7rem;
-    border-radius: 100px;
-    white-space: nowrap;
-  }
-  .exp-company {
-    font-size: 0.88rem;
-    color: var(--accent);
-    font-weight: 500;
-    margin-bottom: 0.3rem;
-  }
-  .exp-location {
-    font-size: 0.78rem;
-    color: var(--muted);
-    margin-bottom: 1rem;
-    font-family: 'DM Mono', monospace;
-  }
+  .exp-role { font-family: 'DM Serif Display', serif; font-size: 1.4rem; color: var(--text); letter-spacing: -0.01em; }
+  .exp-period { font-family: 'DM Mono', monospace; font-size: 0.72rem; color: var(--accent3); letter-spacing: 0.08em; background: rgba(0,217,166,0.1); border: 1px solid rgba(0,217,166,0.2); padding: 0.3rem 0.7rem; border-radius: 100px; white-space: nowrap; }
+  .exp-company { font-size: 0.88rem; color: var(--accent); font-weight: 500; margin-bottom: 0.3rem; }
+  .exp-location { font-size: 0.78rem; color: var(--muted); margin-bottom: 1rem; font-family: 'DM Mono', monospace; }
   .exp-desc { font-size: 0.9rem; color: #9999b8; margin-bottom: 1.2rem; line-height: 1.7; }
   .exp-bullets { list-style: none; display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 1.2rem; }
-  .exp-bullets li {
-    font-size: 0.88rem;
-    color: #9999b8;
-    padding-left: 1.2rem;
-    position: relative;
-    line-height: 1.6;
-  }
-  .exp-bullets li::before {
-    content: '▸';
-    position: absolute;
-    left: 0;
-    color: var(--accent);
-    font-size: 0.7rem;
-    top: 4px;
-  }
-  .exp-env {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.4rem;
-  }
-  .env-tag {
-    font-size: 0.72rem;
-    font-family: 'DM Mono', monospace;
-    color: var(--muted);
-    background: rgba(255,255,255,0.04);
-    border: 1px solid var(--border);
-    padding: 0.25rem 0.6rem;
-    border-radius: 4px;
-    letter-spacing: 0.03em;
-  }
+  .exp-bullets li { font-size: 0.88rem; color: #9999b8; padding-left: 1.2rem; position: relative; line-height: 1.6; }
+  .exp-bullets li::before { content: '▸'; position: absolute; left: 0; color: var(--accent); font-size: 0.7rem; top: 4px; }
+  .exp-env { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+  .env-tag { font-size: 0.72rem; font-family: 'DM Mono', monospace; color: var(--muted); background: rgba(255,255,255,0.04); border: 1px solid var(--border); padding: 0.25rem 0.6rem; border-radius: 4px; letter-spacing: 0.03em; }
 
-  /* ── PROJECTS ── */
+  /* PROJECTS */
   #projects { background: var(--surface); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
   .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
-  .project-card {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 16px;
-    padding: 2rem;
-    transition: all 0.25s;
-    position: relative;
-    overflow: hidden;
-  }
-  .project-card::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(135deg, rgba(124,107,255,0.05), transparent 60%);
-    opacity: 0;
-    transition: opacity 0.25s;
-  }
+  .project-card { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 2rem; transition: all 0.25s; position: relative; overflow: hidden; }
+  .project-card::after { content: ''; position: absolute; inset: 0; background: linear-gradient(135deg, rgba(124,107,255,0.05), transparent 60%); opacity: 0; transition: opacity 0.25s; }
   .project-card:hover { transform: translateY(-5px); border-color: rgba(124,107,255,0.35); }
   .project-card:hover::after { opacity: 1; }
-  .project-num {
-    font-family: 'DM Serif Display', serif;
-    font-size: 3rem;
-    color: rgba(124,107,255,0.1);
-    line-height: 1;
-    margin-bottom: 0.8rem;
-    font-style: italic;
-  }
-  .project-name {
-    font-family: 'DM Serif Display', serif;
-    font-size: 1.35rem;
-    color: var(--text);
-    margin-bottom: 0.8rem;
-    line-height: 1.2;
-  }
-  .project-desc {
-    font-size: 0.87rem;
-    color: var(--muted);
-    line-height: 1.65;
-    margin-bottom: 1.3rem;
-  }
+  .project-num { font-family: 'DM Serif Display', serif; font-size: 3rem; color: rgba(124,107,255,0.1); line-height: 1; margin-bottom: 0.8rem; font-style: italic; }
+  .project-name { font-family: 'DM Serif Display', serif; font-size: 1.35rem; color: var(--text); margin-bottom: 0.8rem; line-height: 1.2; }
+  .project-desc { font-size: 0.87rem; color: var(--muted); line-height: 1.65; margin-bottom: 1.3rem; }
   .project-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
 
-  /* ── CONTACT ── */
+  /* CONTACT */
   #contact { text-align: center; padding: 8rem 0; }
-  .contact-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 1rem;
-    margin-top: 3rem;
-    text-align: left;
-  }
-  .contact-item {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 1.5rem;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    text-decoration: none;
-    color: var(--text);
-    transition: all 0.2s;
-  }
+  .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; margin-top: 3rem; text-align: left; }
+  .contact-item { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; display: flex; align-items: center; gap: 1rem; text-decoration: none; color: var(--text); transition: all 0.2s; }
   .contact-item:hover { border-color: var(--accent); background: var(--highlight); }
-  .contact-icon {
-    width: 44px; height: 44px;
-    background: var(--highlight);
-    border: 1px solid rgba(124,107,255,0.3);
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.2rem;
-    flex-shrink: 0;
-  }
+  .contact-icon { width: 44px; height: 44px; background: var(--highlight); border: 1px solid rgba(124,107,255,0.3); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; flex-shrink: 0; }
   .contact-text-label { font-size: 0.7rem; color: var(--muted); letter-spacing: 0.08em; text-transform: uppercase; font-family: 'DM Mono', monospace; }
   .contact-text-value { font-size: 0.9rem; font-weight: 500; color: var(--text); margin-top: 0.15rem; word-break: break-all; }
 
-  /* ── EDUCATION ── */
-  .edu-card {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 14px;
-    padding: 2rem;
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    transition: border-color 0.2s;
-  }
+  /* EDUCATION */
+  .edu-card { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 2rem; display: flex; align-items: center; gap: 2rem; transition: border-color 0.2s; }
   .edu-card:hover { border-color: rgba(0,217,166,0.3); }
-  .edu-icon {
-    width: 60px; height: 60px;
-    background: rgba(0,217,166,0.1);
-    border: 1px solid rgba(0,217,166,0.25);
-    border-radius: 14px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.6rem;
-    flex-shrink: 0;
-  }
-  .edu-degree {
-    font-family: 'DM Serif Display', serif;
-    font-size: 1.3rem;
-    color: var(--text);
-    margin-bottom: 0.3rem;
-  }
+  .edu-icon { width: 60px; height: 60px; background: rgba(0,217,166,0.1); border: 1px solid rgba(0,217,166,0.25); border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 1.6rem; flex-shrink: 0; }
+  .edu-degree { font-family: 'DM Serif Display', serif; font-size: 1.3rem; color: var(--text); margin-bottom: 0.3rem; }
   .edu-school { font-size: 0.88rem; color: var(--muted); line-height: 1.5; }
-  .edu-year {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.75rem;
-    color: var(--accent3);
-    margin-top: 0.4rem;
-    letter-spacing: 0.06em;
-  }
+  .edu-year { font-family: 'DM Mono', monospace; font-size: 0.75rem; color: var(--accent3); margin-top: 0.4rem; letter-spacing: 0.06em; }
 
-  /* ── DIVIDER ── */
-  .divider {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-    margin: 5rem 0;
-    color: var(--muted);
-    font-size: 0.75rem;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    font-family: 'DM Mono', monospace;
-  }
-  .divider::before, .divider::after {
-    content: '';
-    flex: 1;
-    height: 1px;
-    background: var(--border);
-  }
+  footer { border-top: 1px solid var(--border); padding: 2rem 0; text-align: center; font-size: 0.8rem; color: var(--muted); font-family: 'DM Mono', monospace; position: relative; z-index: 1; }
 
-  /* ── FOOTER ── */
-  footer {
-    border-top: 1px solid var(--border);
-    padding: 2rem 0;
-    text-align: center;
-    font-size: 0.8rem;
-    color: var(--muted);
-    font-family: 'DM Mono', monospace;
-    position: relative;
-    z-index: 1;
-  }
+  [data-reveal] { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
+  [data-reveal].visible { opacity: 1; transform: none; }
 
-  /* ── ANIMATIONS ── */
-  [data-reveal] {
-    opacity: 0;
-    transform: translateY(24px);
-    transition: opacity 0.6s ease, transform 0.6s ease;
-  }
-  [data-reveal].visible {
-    opacity: 1;
-    transform: none;
-  }
-
-  /* ── SCROLLBAR ── */
   ::-webkit-scrollbar { width: 5px; }
   ::-webkit-scrollbar-track { background: var(--bg); }
   ::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 10px; }
 
-  /* ── RESPONSIVE ── */
+  @media (max-width: 900px) {
+    .hero-inner { grid-template-columns: 1fr; }
+    .hero-right { flex-direction: row; align-items: flex-start; flex-wrap: wrap; }
+    .avatar-wrap { width: 220px; height: 220px; }
+    .stats-row { flex-direction: column; }
+  }
   @media (max-width: 768px) {
     nav { padding: 1rem 1.5rem; }
     .nav-links { display: none; }
-    .hero-inner { grid-template-columns: 1fr; }
-    .hero-stats { flex-direction: row; flex-wrap: wrap; }
-    .stat-card { flex: 1; min-width: 100px; }
     .container { padding: 0 1.5rem; }
     .section { padding: 4rem 0; }
     .timeline::before { left: 15px; }
@@ -627,19 +225,21 @@
     .exp-dot { width: 32px; height: 32px; font-size: 0.8rem; }
     .edu-card { flex-direction: column; align-items: flex-start; }
     .contact-grid { grid-template-columns: 1fr; }
+    .hero-right { justify-content: center; }
+    .avatar-wrap { width: 200px; height: 210px; }
+    .stats-row { flex-direction: row; flex-wrap: wrap; }
+    .stat-card { flex: 1; min-width: 85px; }
   }
 </style>
 </head>
 <body>
 
-<!-- BG BLOBS -->
 <div class="bg-blobs">
   <div class="blob blob-1"></div>
   <div class="blob blob-2"></div>
   <div class="blob blob-3"></div>
 </div>
 
-<!-- NAV -->
 <nav>
   <a href="#hero" class="nav-logo">Sagar<span>.</span></a>
   <ul class="nav-links">
@@ -657,6 +257,8 @@
   <section id="hero" class="section">
     <div class="container">
       <div class="hero-inner">
+
+        <!-- LEFT: Text -->
         <div>
           <div class="hero-tag">Available for Opportunities</div>
           <h1 class="hero-name">Sagar<br><em>Chavda</em></h1>
@@ -669,20 +271,32 @@
             <a href="mailto:sagarchavada80@gmail.com" class="btn-ghost">Get in Touch</a>
           </div>
         </div>
-        <div class="hero-stats">
-          <div class="stat-card">
-            <div class="stat-num">4+</div>
-            <div class="stat-label">Years of<br>Experience</div>
+
+        <!-- RIGHT: Avatar + Stats -->
+        <div class="hero-right">
+
+          <!-- Developer Avatar SVG -->
+          <div class="avatar-wrap">
+           <img src="sagar.jpg" alt="Sagar Chavda" />
           </div>
-          <div class="stat-card">
-            <div class="stat-num">4</div>
-            <div class="stat-label">Projects<br>Delivered</div>
+
+          <!-- Stats under avatar -->
+          <div class="stats-row">
+            <div class="stat-card">
+              <div class="stat-num">4+</div>
+              <div class="stat-label">Years Exp</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-num">4</div>
+              <div class="stat-label">Projects</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-num">3</div>
+              <div class="stat-label">Companies</div>
+            </div>
           </div>
-          <div class="stat-card">
-            <div class="stat-num">3</div>
-            <div class="stat-label">Companies<br>Worked At</div>
-          </div>
-        </div>
+
+        </div><!-- /hero-right -->
       </div>
     </div>
   </section>
@@ -699,64 +313,40 @@
         <div class="skill-group">
           <div class="skill-group-name"><span class="icon">⚙️</span> Backend</div>
           <div class="skill-tags">
-            <span class="tag hot">ASP.NET Core</span>
-            <span class="tag hot">.NET MVC</span>
-            <span class="tag hot">Web API</span>
-            <span class="tag">.NET Core 6.0</span>
-            <span class="tag">RESTful APIs</span>
-            <span class="tag">RabbitMQ</span>
-            <span class="tag">Redis</span>
+            <span class="tag hot">ASP.NET Core</span><span class="tag hot">.NET MVC</span><span class="tag hot">Web API</span>
+            <span class="tag">.NET Core 6.0</span><span class="tag">RESTful APIs</span><span class="tag">RabbitMQ</span><span class="tag">Redis</span>
           </div>
         </div>
         <div class="skill-group">
           <div class="skill-group-name"><span class="icon">🗄️</span> Databases</div>
           <div class="skill-tags">
-            <span class="tag hot">PostgreSQL</span>
-            <span class="tag hot">MS SQL Server</span>
-            <span class="tag">Entity Framework</span>
-            <span class="tag">Stored Procedures</span>
-            <span class="tag">Query Optimization</span>
+            <span class="tag hot">PostgreSQL</span><span class="tag hot">MS SQL Server</span>
+            <span class="tag">Entity Framework</span><span class="tag">Stored Procedures</span><span class="tag">Query Optimization</span>
           </div>
         </div>
         <div class="skill-group">
-          <div class="skill-group-name"><span class="icon">☁️</span> Cloud & DevOps</div>
+          <div class="skill-group-name"><span class="icon">☁️</span> Cloud &amp; DevOps</div>
           <div class="skill-tags">
-            <span class="tag hot">AWS Lambda</span>
-            <span class="tag">Azure Functions</span>
-            <span class="tag">Azure Logic Apps</span>
-            <span class="tag">TFS (Azure)</span>
-            <span class="tag">CI/CD</span>
-            <span class="tag">IIS Server</span>
+            <span class="tag hot">AWS Lambda</span><span class="tag">Azure Functions</span>
+            <span class="tag">Azure Logic Apps</span><span class="tag">TFS (Azure)</span><span class="tag">CI/CD</span><span class="tag">IIS Server</span>
           </div>
         </div>
         <div class="skill-group">
           <div class="skill-group-name"><span class="icon">🎨</span> Frontend</div>
           <div class="skill-tags">
-            <span class="tag">Angular</span>
-            <span class="tag">JavaScript</span>
-            <span class="tag">jQuery</span>
-            <span class="tag">Bootstrap</span>
-            <span class="tag">WebForms</span>
+            <span class="tag">Angular</span><span class="tag">JavaScript</span><span class="tag">jQuery</span><span class="tag">Bootstrap</span><span class="tag">WebForms</span>
           </div>
         </div>
         <div class="skill-group">
-          <div class="skill-group-name"><span class="icon">🔧</span> Tools & Workflow</div>
+          <div class="skill-group-name"><span class="icon">🔧</span> Tools &amp; Workflow</div>
           <div class="skill-tags">
-            <span class="tag hot">Git</span>
-            <span class="tag">JIRA</span>
-            <span class="tag">Agile</span>
-            <span class="tag">Claude Code</span>
-            <span class="tag">ChatGPT</span>
+            <span class="tag hot">Git</span><span class="tag">JIRA</span><span class="tag">Agile</span><span class="tag">Claude Code</span><span class="tag">ChatGPT</span>
           </div>
         </div>
         <div class="skill-group">
           <div class="skill-group-name"><span class="icon">🏗️</span> Architecture</div>
           <div class="skill-tags">
-            <span class="tag">RBAC / ABAC</span>
-            <span class="tag">Serverless</span>
-            <span class="tag">Microservices</span>
-            <span class="tag">Database Design</span>
-            <span class="tag">Cloud Migrations</span>
+            <span class="tag">RBAC / ABAC</span><span class="tag">Serverless</span><span class="tag">Microservices</span><span class="tag">Database Design</span><span class="tag">Cloud Migrations</span>
           </div>
         </div>
       </div>
@@ -773,7 +363,6 @@
       </div>
       <div class="timeline">
 
-        <!-- Casepoint -->
         <div class="exp-item">
           <div class="exp-dot">⚖️</div>
           <div class="exp-body">
@@ -791,17 +380,12 @@
               <li>Analyzed and enhanced existing application workflows and modules</li>
             </ul>
             <div class="exp-env">
-              <span class="env-tag">.NET MVC</span>
-              <span class="env-tag">PostgreSQL</span>
-              <span class="env-tag">Redis</span>
-              <span class="env-tag">RabbitMQ</span>
-              <span class="env-tag">TFS/Azure</span>
-              <span class="env-tag">JavaScript</span>
+              <span class="env-tag">.NET MVC</span><span class="env-tag">PostgreSQL</span><span class="env-tag">Redis</span>
+              <span class="env-tag">RabbitMQ</span><span class="env-tag">TFS/Azure</span><span class="env-tag">JavaScript</span>
             </div>
           </div>
         </div>
 
-        <!-- Metizsoft -->
         <div class="exp-item">
           <div class="exp-dot">🏢</div>
           <div class="exp-body">
@@ -819,16 +403,12 @@
               <li>Developed scalable REST APIs using .NET Core 6.0 with Angular frontend</li>
             </ul>
             <div class="exp-env">
-              <span class="env-tag">.NET Core 6.0</span>
-              <span class="env-tag">Angular</span>
-              <span class="env-tag">MS SQL</span>
-              <span class="env-tag">Entity Framework</span>
-              <span class="env-tag">ASP.NET Identity</span>
+              <span class="env-tag">.NET Core 6.0</span><span class="env-tag">Angular</span><span class="env-tag">MS SQL</span>
+              <span class="env-tag">Entity Framework</span><span class="env-tag">ASP.NET Identity</span>
             </div>
           </div>
         </div>
 
-        <!-- Shine Infosoft -->
         <div class="exp-item">
           <div class="exp-dot">✨</div>
           <div class="exp-body">
@@ -846,12 +426,8 @@
               <li>Maintained multi-city parking enforcement workflows</li>
             </ul>
             <div class="exp-env">
-              <span class="env-tag">.NET Core 3.1</span>
-              <span class="env-tag">AWS Lambda</span>
-              <span class="env-tag">MS SQL</span>
-              <span class="env-tag">WebForms</span>
-              <span class="env-tag">Git</span>
-              <span class="env-tag">JIRA</span>
+              <span class="env-tag">.NET Core 3.1</span><span class="env-tag">AWS Lambda</span><span class="env-tag">MS SQL</span>
+              <span class="env-tag">WebForms</span><span class="env-tag">Git</span><span class="env-tag">JIRA</span>
             </div>
           </div>
         </div>
@@ -869,55 +445,38 @@
         <p class="section-sub">Four production-grade systems across legal, healthcare, parking, and document management domains.</p>
       </div>
       <div class="projects-grid" data-reveal>
-
         <div class="project-card">
           <div class="project-num">01</div>
           <div class="project-name">eDiscovery Platform<br>(Casepoint)</div>
           <p class="project-desc">Cloud-based legal platform for managing ESI — document collection, review, tagging, audit tracking, and role-based collaboration between legal teams.</p>
           <div class="project-tags">
-            <span class="tag">.NET MVC</span>
-            <span class="tag">PostgreSQL</span>
-            <span class="tag">Redis</span>
-            <span class="tag">RabbitMQ</span>
+            <span class="tag">.NET MVC</span><span class="tag">PostgreSQL</span><span class="tag">Redis</span><span class="tag">RabbitMQ</span>
           </div>
         </div>
-
         <div class="project-card">
           <div class="project-num">02</div>
           <div class="project-name">Parking Enforcement System<br>(Roker)</div>
           <p class="project-desc">Multi-city parking management system with permit purchasing, violation tracking, patroller management, and vendor/tenant portals.</p>
           <div class="project-tags">
-            <span class="tag">.NET Core 3.1</span>
-            <span class="tag">AWS Lambda</span>
-            <span class="tag">MS SQL</span>
-            <span class="tag">CI/CD</span>
+            <span class="tag">.NET Core 3.1</span><span class="tag">AWS Lambda</span><span class="tag">MS SQL</span><span class="tag">CI/CD</span>
           </div>
         </div>
-
         <div class="project-card">
           <div class="project-num">03</div>
           <div class="project-name">Caregiver Management System<br>(Shiftware)</div>
           <p class="project-desc">Full-stack healthcare platform with client, caregiver, and staff management — scheduling, timesheets, incidents, and a Super Admin Panel.</p>
           <div class="project-tags">
-            <span class="tag">.NET Core 6.0</span>
-            <span class="tag">Angular</span>
-            <span class="tag">EF Core</span>
-            <span class="tag">MS SQL</span>
+            <span class="tag">.NET Core 6.0</span><span class="tag">Angular</span><span class="tag">EF Core</span><span class="tag">MS SQL</span>
           </div>
         </div>
-
         <div class="project-card">
           <div class="project-num">04</div>
           <div class="project-name">Document Management System</div>
           <p class="project-desc">Centralized DMS with role-based access, categorized storage, advanced search, and multi-format support (PDF, Word, AutoCAD) for cross-department collaboration.</p>
           <div class="project-tags">
-            <span class="tag">.NET MVC 4</span>
-            <span class="tag">MS SQL</span>
-            <span class="tag">jQuery</span>
-            <span class="tag">Bootstrap</span>
+            <span class="tag">.NET MVC 4</span><span class="tag">MS SQL</span><span class="tag">jQuery</span><span class="tag">Bootstrap</span>
           </div>
         </div>
-
       </div>
     </div>
   </section>
@@ -992,26 +551,16 @@
 </footer>
 
 <script>
-  // Scroll reveal
   const observer = new IntersectionObserver((entries) => {
-    entries.forEach(e => {
-      if (e.isIntersecting) {
-        e.target.classList.add('visible');
-      }
-    });
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
   }, { threshold: 0.1 });
-
   document.querySelectorAll('[data-reveal]').forEach(el => observer.observe(el));
 
-  // Smooth active nav highlight
   const sections = document.querySelectorAll('section[id]');
   const navLinks = document.querySelectorAll('.nav-links a');
-
   window.addEventListener('scroll', () => {
     let current = '';
-    sections.forEach(s => {
-      if (window.scrollY >= s.offsetTop - 200) current = s.id;
-    });
+    sections.forEach(s => { if (window.scrollY >= s.offsetTop - 200) current = s.id; });
     navLinks.forEach(a => {
       a.style.color = a.getAttribute('href') === `#${current}` ? 'var(--text)' : '';
     });
