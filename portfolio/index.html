@@ -93,6 +93,8 @@
   .btn-primary:hover { background: #6a58f0; box-shadow: 0 0 50px rgba(124,107,255,0.5); transform: translateY(-1px); }
   .btn-ghost { padding: 0.85rem 2rem; border: 1px solid var(--border); color: var(--muted); text-decoration: none; border-radius: 6px; font-weight: 500; font-size: 0.9rem; transition: all 0.2s; }
   .btn-ghost:hover { border-color: var(--accent); color: var(--accent); }
+  .btn-resume { padding: 0.85rem 2rem; border: 1px solid rgba(0,217,166,0.4); color: var(--accent3); text-decoration: none; border-radius: 6px; font-weight: 500; font-size: 0.9rem; transition: all 0.2s; display: inline-flex; align-items: center; gap: 0.5rem; }
+  .btn-resume:hover { border-color: var(--accent3); background: rgba(0,217,166,0.08); transform: translateY(-1px); }
 
   /* AVATAR PANEL */
   .hero-right {
@@ -107,17 +109,13 @@
     height: 290px;
     flex-shrink: 0;
   }
- .avatar-wrap img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 2px solid var(--accent);
-  box-shadow: 0 0 40px rgba(124,107,255,0.25);
-}
-  @keyframes float {
-    0%,100% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
+  .avatar-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid var(--accent);
+    box-shadow: 0 0 40px rgba(124,107,255,0.25);
   }
 
   /* Stats row under avatar */
@@ -189,6 +187,8 @@
   .contact-item { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; display: flex; align-items: center; gap: 1rem; text-decoration: none; color: var(--text); transition: all 0.2s; }
   .contact-item:hover { border-color: var(--accent); background: var(--highlight); }
   .contact-icon { width: 44px; height: 44px; background: var(--highlight); border: 1px solid rgba(124,107,255,0.3); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; flex-shrink: 0; }
+  .contact-icon.resume-icon { background: rgba(0,217,166,0.1); border-color: rgba(0,217,166,0.3); }
+  .contact-item.resume-item:hover { border-color: var(--accent3); background: rgba(0,217,166,0.06); }
   .contact-text-label { font-size: 0.7rem; color: var(--muted); letter-spacing: 0.08em; text-transform: uppercase; font-family: 'DM Mono', monospace; }
   .contact-text-value { font-size: 0.9rem; font-weight: 500; color: var(--text); margin-top: 0.15rem; word-break: break-all; }
 
@@ -208,6 +208,80 @@
   ::-webkit-scrollbar { width: 5px; }
   ::-webkit-scrollbar-track { background: var(--bg); }
   ::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 10px; }
+
+  /* RESUME MODAL */
+  .resume-modal-overlay {
+    position: fixed; inset: 0; z-index: 999;
+    background: rgba(0,0,0,0.85);
+    backdrop-filter: blur(8px);
+    display: flex; align-items: center; justify-content: center;
+    opacity: 0; pointer-events: none;
+    transition: opacity 0.3s ease;
+    padding: 1.5rem;
+  }
+  .resume-modal-overlay.open {
+    opacity: 1; pointer-events: all;
+  }
+  .resume-modal {
+    background: var(--card);
+    border: 1px solid rgba(124,107,255,0.3);
+    border-radius: 16px;
+    width: 100%; max-width: 860px;
+    height: 90vh;
+    display: flex; flex-direction: column;
+    overflow: hidden;
+    transform: scale(0.95) translateY(20px);
+    transition: transform 0.3s ease;
+    box-shadow: 0 0 80px rgba(124,107,255,0.2);
+  }
+  .resume-modal-overlay.open .resume-modal {
+    transform: scale(1) translateY(0);
+  }
+  .resume-modal-header {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid var(--border);
+    flex-shrink: 0;
+  }
+  .resume-modal-title {
+    font-family: 'DM Mono', monospace; font-size: 0.78rem;
+    color: var(--accent3); letter-spacing: 0.1em; text-transform: uppercase;
+    display: flex; align-items: center; gap: 0.5rem;
+  }
+  .resume-modal-actions { display: flex; gap: 0.6rem; align-items: center; }
+  .modal-btn-download {
+    font-size: 0.78rem; font-weight: 600; font-family: 'Outfit', sans-serif;
+    color: #fff; background: var(--accent);
+    border: none; border-radius: 6px; padding: 0.45rem 1rem;
+    cursor: pointer; text-decoration: none;
+    transition: background 0.2s;
+    display: inline-flex; align-items: center; gap: 0.4rem;
+  }
+  .modal-btn-download:hover { background: #6a58f0; }
+  .modal-btn-close {
+    width: 34px; height: 34px; border-radius: 8px;
+    background: rgba(255,255,255,0.05); border: 1px solid var(--border);
+    color: var(--muted); font-size: 1.1rem; cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+    transition: all 0.2s;
+  }
+  .modal-btn-close:hover { background: rgba(255,107,107,0.15); border-color: var(--accent2); color: var(--accent2); }
+  .resume-modal-body { flex: 1; overflow: hidden; position: relative; }
+  .resume-modal-body iframe {
+    width: 100%; height: 100%; border: none; display: block;
+  }
+  .resume-modal-loading {
+    position: absolute; inset: 0;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    gap: 1rem; color: var(--muted); font-family: 'DM Mono', monospace; font-size: 0.8rem;
+  }
+  .spinner {
+    width: 36px; height: 36px; border-radius: 50%;
+    border: 2px solid var(--border);
+    border-top-color: var(--accent);
+    animation: spin 0.8s linear infinite;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
 
   @media (max-width: 900px) {
     .hero-inner { grid-template-columns: 1fr; }
@@ -268,6 +342,7 @@
           </p>
           <div class="hero-actions">
             <a href="#experience" class="btn-primary">View Experience</a>
+            <a href="#" data-resume class="btn-resume">📄 View Resume</a>
             <a href="mailto:sagarchavada80@gmail.com" class="btn-ghost">Get in Touch</a>
           </div>
         </div>
@@ -275,7 +350,6 @@
         <!-- RIGHT: Avatar + Stats -->
         <div class="hero-right">
 
-          <!-- Developer Avatar SVG -->
           <div class="avatar-wrap">
            <img src="sagar.JPG" alt="Sagar Chavda" />
           </div>
@@ -531,6 +605,13 @@
             <div class="contact-text-value">+91 82001 23173</div>
           </div>
         </a>
+        <a href="#" data-resume class="contact-item resume-item">
+          <div class="contact-icon resume-icon">📄</div>
+          <div>
+            <div class="contact-text-label">Resume</div>
+            <div class="contact-text-value">View / Download CV</div>
+          </div>
+        </a>
         <div class="contact-item" style="cursor:default;">
           <div class="contact-icon">📍</div>
           <div>
@@ -543,6 +624,26 @@
   </section>
 
 </main>
+
+<!-- RESUME MODAL -->
+<div class="resume-modal-overlay" id="resumeModal">
+  <div class="resume-modal">
+    <div class="resume-modal-header">
+      <div class="resume-modal-title">📄 Sagar Chavda — Resume</div>
+      <div class="resume-modal-actions">
+        <a href="https://drive.google.com/uc?export=download&id=1ZZlupNtbX8L_MPQ3upVPvz_ED0EnvHRW" class="modal-btn-download" target="_blank">⬇ Download</a>
+        <button class="modal-btn-close" id="closeModal">✕</button>
+      </div>
+    </div>
+    <div class="resume-modal-body">
+      <div class="resume-modal-loading" id="resumeLoading">
+        <div class="spinner"></div>
+        <span>Loading resume...</span>
+      </div>
+      <iframe id="resumeFrame" src="" allow="autoplay" onload="document.getElementById('resumeLoading').style.display='none'"></iframe>
+    </div>
+  </div>
+</div>
 
 <footer>
   <div class="container">
@@ -564,6 +665,39 @@
     navLinks.forEach(a => {
       a.style.color = a.getAttribute('href') === `#${current}` ? 'var(--text)' : '';
     });
+  });
+
+  // Resume Modal
+  const modal = document.getElementById('resumeModal');
+  const frame = document.getElementById('resumeFrame');
+  const loading = document.getElementById('resumeLoading');
+  const RESUME_SRC = 'https://drive.google.com/file/d/1ZZlupNtbX8L_MPQ3upVPvz_ED0EnvHRW/preview';
+
+  function openResume() {
+    loading.style.display = 'flex';
+    frame.src = RESUME_SRC;
+    modal.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeResume() {
+    modal.classList.remove('open');
+    document.body.style.overflow = '';
+    setTimeout(() => { frame.src = ''; }, 300);
+  }
+
+  document.querySelectorAll('[data-resume]').forEach(el => {
+    el.addEventListener('click', e => { e.preventDefault(); openResume(); });
+  });
+
+  document.getElementById('closeModal').addEventListener('click', closeResume);
+
+  modal.addEventListener('click', e => {
+    if (e.target === modal) closeResume();
+  });
+
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') closeResume();
   });
 </script>
 </body>
