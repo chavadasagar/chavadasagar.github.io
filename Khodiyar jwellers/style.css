@@ -694,3 +694,101 @@ footer.app-footer {
     page-break-inside: avoid;
   }
 }
+
+/* ==========================================================================
+   SCREEN RESPONSIVENESS AND MOBILE FRIENDLY STYLES
+   ========================================================================== */
+#bill-items-table {
+  min-width: 950px; /* Prevents input squishing on small screens, scrolling container instead */
+}
+
+.bills-table {
+  min-width: 750px; /* Prevents invoice history lists from squishing columns */
+}
+
+@media (max-width: 992px) {
+  header {
+    padding: 1rem 1.5rem;
+  }
+  .logo-text {
+    font-size: 1.25rem;
+  }
+  .two-column-layout {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  nav {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+  }
+  
+  nav button {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.8rem;
+    flex: 1 1 auto;
+  }
+  
+  main {
+    padding: 1.25rem 1rem;
+  }
+  
+  .card {
+    padding: 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  body {
+    font-size: 14px;
+  }
+  
+  .logo-text {
+    font-size: 1.1rem;
+  }
+  
+  .card-title {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  
+  input, select, textarea {
+    padding: 0.6rem;
+    font-size: 0.9rem;
+  }
+  
+  .btn {
+    padding: 0.6rem 1rem;
+    font-size: 0.85rem;
+  }
+  
+  .action-bar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+  }
+  
+  .action-bar .btn {
+    width: 100%;
+  }
+  
+  .summary-container {
+    grid-template-columns: 1fr;
+  }
+}
+
