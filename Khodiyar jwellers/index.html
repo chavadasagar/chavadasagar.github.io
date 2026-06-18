@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shree Khodiyar Jewellers - Billing System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Header -->
+  <header>
+    <div class="logo-container">
+      <span class="logo-icon">✨</span>
+      <h1 class="logo-text" id="header-shop-name">Shree Khodiyar Jewellers</h1>
+    </div>
+    <nav>
+      <button class="nav-btn active" data-tab="create-bill">
+        <i>📝</i> Create Bill
+      </button>
+      <button class="nav-btn" data-tab="bill-history">
+        <i>📋</i> Bill History
+      </button>
+      <button class="nav-btn" data-tab="item-master">
+        <i>💎</i> Jewellery Items
+      </button>
+      <button class="nav-btn" data-tab="settings">
+        <i>⚙️</i> Settings
+      </button>
+    </nav>
+  </header>
+
+  <!-- Main Workspace -->
+  <main>
+    
+    <!-- TAB 1: CREATE BILL -->
+    <section id="create-bill" class="tab-content active">
+      <div class="card">
+        <div class="card-title">
+          <span>Customer & Invoice Details</span>
+          <span style="font-family: var(--font-sans); font-size: 0.9rem; color: var(--gold-primary);">
+            Bill No: <strong id="current-bill-no">Auto-Generating</strong>
+          </span>
+        </div>
+        <form id="customer-form" class="form-grid">
+          <div class="form-group">
+            <label for="cust-date">Invoice Date</label>
+            <input type="date" id="cust-date" required>
+          </div>
+          <div class="form-group double-width">
+            <label for="cust-name">Customer Name</label>
+            <input type="text" id="cust-name" placeholder="Enter Full Name" required autocomplete="off">
+          </div>
+          <div class="form-group">
+            <label for="cust-phone">Phone Number</label>
+            <input type="text" id="cust-phone" placeholder="10 Digit Mobile" maxlength="15" autocomplete="off">
+          </div>
+          <div class="form-group double-width">
+            <label for="cust-address">Address</label>
+            <input type="text" id="cust-address" placeholder="Street/Area Address" autocomplete="off">
+          </div>
+          <div class="form-group">
+            <label for="cust-village">Village / City</label>
+            <input type="text" id="cust-village" placeholder="Village or City Name" autocomplete="off">
+          </div>
+          <div class="form-group">
+            <label for="cust-gstin">GSTIN (Optional)</label>
+            <input type="text" id="cust-gstin" placeholder="24AAAAA0000A1Z0" maxlength="15" style="text-transform: uppercase;" autocomplete="off">
+          </div>
+          <div class="form-group">
+            <label for="cust-state">State</label>
+            <input type="text" id="cust-state" value="Gujarat" required>
+          </div>
+        </form>
+      </div>
+
+      <!-- Bill Items Table Card -->
+      <div class="card">
+        <div class="card-title">Billing Items</div>
+        
+        <div class="table-container">
+          <table id="bill-items-table">
+            <thead>
+              <tr>
+                <th class="col-sr">Sr</th>
+                <th class="col-desc">Description</th>
+                <th class="col-hsn">HSN</th>
+                <th class="col-wt">Gross Wt (g)</th>
+                <th class="col-wt">Net Wt (g)</th>
+                <th class="col-rate">Rate (Rs / g)</th>
+                <th class="col-making">Making Charge</th>
+                <th class="col-amount">Amount (Rs)</th>
+                <th class="col-action">Action</th>
+              </tr>
+            </thead>
+            <tbody id="items-tbody">
+              <!-- Item rows populated by JS -->
+            </tbody>
+          </table>
+        </div>
+
+        <div class="action-bar">
+          <button type="button" class="btn btn-secondary" id="add-row-btn">
+            <i>➕</i> Add Item Row
+          </button>
+          <div class="quick-helpers">
+            <!-- Dynamic dropdown references are loaded here -->
+            <datalist id="items-datalist">
+              <!-- Dynamically populated from Jewellery Item Master -->
+            </datalist>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bill Calculations Summary -->
+      <div class="summary-container">
+        <!-- Action Buttons -->
+        <div class="card" style="margin-bottom: 0; align-self: stretch; display: flex; flex-direction: column; justify-content: center; gap: 1rem;">
+          <button type="button" class="btn btn-success" id="save-print-btn" style="padding: 1rem;">
+            <i>💾</i> Save & Print Invoice
+          </button>
+          <button type="button" class="btn btn-secondary" id="reset-bill-btn">
+            <i>🔄</i> Reset Bill Form
+          </button>
+        </div>
+
+        <!-- Math calculations summary -->
+        <div class="summary-details">
+          <div class="summary-row">
+            <span>Total Gross Weight:</span>
+            <span><strong id="total-gross-wt">0.000</strong> g</span>
+          </div>
+          <div class="summary-row">
+            <span>Total Net Weight:</span>
+            <span><strong id="total-net-wt">0.000</strong> g</span>
+          </div>
+          <div class="summary-row">
+            <span>Subtotal (Items Total):</span>
+            <span>₹ <span id="items-subtotal">0.00</span></span>
+          </div>
+          <div class="summary-row">
+            <span>CGST (<span id="summary-cgst-pct">1.5</span>%):</span>
+            <span>₹ <span id="items-cgst">0.00</span></span>
+          </div>
+          <div class="summary-row">
+            <span>SGST (<span id="summary-sgst-pct">1.5</span>%):</span>
+            <span>₹ <span id="items-sgst">0.00</span></span>
+          </div>
+          <div class="summary-row grand-total">
+            <span>Grand Total:</span>
+            <span>₹ <span id="items-grand-total">0.00</span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 2: BILL HISTORY -->
+    <section id="bill-history" class="tab-content">
+      <div class="card">
+        <div class="card-title">Saved Invoices History</div>
+        
+        <div class="history-filters">
+          <input type="text" id="search-query" placeholder="Search customer, bill no, phone...">
+          <input type="date" id="filter-date-start" placeholder="Start Date">
+          <input type="date" id="filter-date-end" placeholder="End Date">
+          <button class="btn btn-secondary" id="clear-filters-btn">Clear</button>
+        </div>
+
+        <div class="bills-table-container">
+          <table class="bills-table">
+            <thead>
+              <tr>
+                <th>Bill No</th>
+                <th>Date</th>
+                <th>Customer Name</th>
+                <th>Village</th>
+                <th>Total Net Wt</th>
+                <th>Grand Total</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="history-tbody">
+              <!-- Generated invoices displayed here -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 3: JEWELLERY ITEMS MASTER -->
+    <section id="item-master" class="tab-content">
+      <div class="two-column-layout">
+        <!-- Add Item Panel -->
+        <div class="card">
+          <div class="card-title">Add/Edit Jewelry Item</div>
+          <form id="item-master-form" style="display: flex; flex-direction: column; gap: 1rem;">
+            <input type="hidden" id="edit-item-index">
+            <div class="form-group">
+              <label for="item-name">Jewellery Name</label>
+              <input type="text" id="item-name" placeholder="e.g. Gold Ring, Bangles" required autocomplete="off">
+            </div>
+            <div class="form-group">
+              <label for="item-hsn">HSN Code</label>
+              <input type="text" id="item-hsn" placeholder="e.g. 7113" required autocomplete="off">
+            </div>
+            <div class="form-group">
+              <label for="item-default-rate">Default Rate per g (Optional)</label>
+              <input type="number" id="item-default-rate" placeholder="e.g. 7100" step="0.01">
+            </div>
+            <div class="form-group">
+              <label for="item-default-making">Default Making Charge (Optional)</label>
+              <input type="number" id="item-default-making" placeholder="e.g. 350" step="0.01">
+            </div>
+            <div style="display: flex; gap: 0.5rem; margin-top: 0.5rem;">
+              <button type="submit" class="btn btn-primary" id="save-item-btn" style="flex: 1;">Save Item</button>
+              <button type="button" class="btn btn-secondary" id="cancel-item-edit-btn" style="display: none;">Cancel</button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Items List Panel -->
+        <div class="card">
+          <div class="card-title">Registered Jewellery Items (Dropdown Templates)</div>
+          <div class="item-list-container" id="item-list-container">
+            <!-- Autocomplete list rows -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 4: SHOP SETTINGS -->
+    <section id="settings" class="tab-content">
+      <div class="card">
+        <div class="card-title">Shop Details & Business Settings</div>
+        
+        <form id="settings-form">
+          <h3 style="color: var(--gold-primary); font-family: var(--font-serif); margin-bottom: 1rem; font-size: 1.1rem;">Shop Details</h3>
+          <div class="form-grid" style="margin-bottom: 2rem;">
+            <div class="form-group double-width">
+              <label for="shop-name">Shop Name</label>
+              <input type="text" id="shop-name" required>
+            </div>
+            <div class="form-group">
+              <label for="shop-gstin">Shop GSTIN</label>
+              <input type="text" id="shop-gstin" required style="text-transform: uppercase;">
+            </div>
+            <div class="form-group">
+              <label for="shop-state">Shop State</label>
+              <input type="text" id="shop-state" required>
+            </div>
+            <div class="form-group double-width">
+              <label for="shop-address">Shop Address</label>
+              <input type="text" id="shop-address" required>
+            </div>
+          </div>
+
+          <h3 style="color: var(--gold-primary); font-family: var(--font-serif); margin-bottom: 1rem; font-size: 1.1rem;">Bank Details</h3>
+          <div class="form-grid" style="margin-bottom: 2rem;">
+            <div class="form-group">
+              <label for="shop-bank">Bank Name</label>
+              <input type="text" id="shop-bank" required>
+            </div>
+            <div class="form-group">
+              <label for="shop-ifsc">IFSC Code</label>
+              <input type="text" id="shop-ifsc" required style="text-transform: uppercase;">
+            </div>
+            <div class="form-group">
+              <label for="shop-acc-no">Account Number</label>
+              <input type="text" id="shop-acc-no" required>
+            </div>
+          </div>
+
+          <h3 style="color: var(--gold-primary); font-family: var(--font-serif); margin-bottom: 1rem; font-size: 1.1rem;">Taxation & Billing System</h3>
+          <div class="form-grid" style="margin-bottom: 2rem;">
+            <div class="form-group">
+              <label for="shop-cgst-pct">Default CGST (%)</label>
+              <input type="number" id="shop-cgst-pct" step="0.01" required>
+            </div>
+            <div class="form-group">
+              <label for="shop-sgst-pct">Default SGST (%)</label>
+              <input type="number" id="shop-sgst-pct" step="0.01" required>
+            </div>
+            <div class="form-group">
+              <label for="shop-next-bill">Next Invoice Number (Seed)</label>
+              <input type="number" id="shop-next-bill" min="1" required>
+            </div>
+          </div>
+
+          <h3 style="color: var(--gold-primary); font-family: var(--font-serif); margin-bottom: 0.5rem; font-size: 1.1rem; display: flex; justify-content: space-between; align-items: center;">
+            <span>Invoice Footer Notes / Terms</span>
+            <button type="button" class="btn btn-secondary" id="add-note-btn" style="padding: 0.3rem 0.8rem; font-size: 0.8rem;">+ Add Note Line</button>
+          </h3>
+          <p style="color: var(--text-secondary); font-size: 0.85rem; margin-bottom: 1rem;">These notes will print at the bottom of the invoice (e.g. Gujarati guidelines, jurisdictions).</p>
+          <div id="footer-notes-container" style="margin-bottom: 2rem;">
+            <!-- Note input boxes populated by JS -->
+          </div>
+
+          <div style="display: flex; gap: 1rem;">
+            <button type="submit" class="btn btn-primary" style="padding: 0.9rem 2rem;">Save Settings</button>
+            <button type="button" class="btn btn-secondary" id="reset-system-btn" style="border-color: var(--danger); color: var(--danger);">Reset All to Defaults</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="app-footer">
+    <p>&copy; 2026 Shree Khodiyar Jewellers billing application. Designed with premium aesthetics.</p>
+  </footer>
+
+  <!-- DYNAMIC INVOICE VIEW CONTAINER FOR PRINTING (hidden on screen, visible during window.print()) -->
+  <div id="print-invoice-container">
+    <div class="print-invoice">
+      <!-- Invoice Header -->
+      <div class="invoice-header">
+        <div class="invoice-shop-title" id="print-shop-name">Shree Khodiyar Jewellers</div>
+        <div class="invoice-shop-subtitle">
+          <span id="print-shop-address">Rupnath Road, Bora Seri, Gadhada</span><br>
+          GSTIN: <span id="print-shop-gstin" style="font-weight: 700;">24EBQPS9853C1Z2</span> | State: <span id="print-shop-state">Gujarat</span>
+        </div>
+        <div class="invoice-title-badge">Tax Invoice / Bill</div>
+      </div>
+
+      <!-- Invoice Metadata Grid -->
+      <div class="invoice-meta-grid">
+        <div class="meta-column">
+          <h3>Customer Details</h3>
+          <div class="meta-row">
+            <div class="meta-label">Name:</div>
+            <div class="meta-value" id="print-cust-name">-</div>
+          </div>
+          <div class="meta-row">
+            <div class="meta-label">Address:</div>
+            <div class="meta-value" id="print-cust-address">-</div>
+          </div>
+          <div class="meta-row">
+            <div class="meta-label">Village/City:</div>
+            <div class="meta-value" id="print-cust-village">-</div>
+          </div>
+          <div class="meta-row">
+            <div class="meta-label">Phone No:</div>
+            <div class="meta-value" id="print-cust-phone">-</div>
+          </div>
+          <div class="meta-row">
+            <div class="meta-label">GSTIN:</div>
+            <div class="meta-value" id="print-cust-gstin">-</div>
+          </div>
+          <div class="meta-row">
+            <div class="meta-label">State:</div>
+            <div class="meta-value" id="print-cust-state">-</div>
+          </div>
+        </div>
+
+        <div class="meta-column">
+          <h3>Invoice Details</h3>
+          <div class="meta-row">
+            <div class="meta-label">Invoice No:</div>
+            <div class="meta-value" id="print-invoice-no" style="font-weight: 700;">-</div>
+          </div>
+          <div class="meta-row">
+            <div class="meta-label">Invoice Date:</div>
+            <div class="meta-value" id="print-invoice-date">-</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Invoice Items Table -->
+      <table class="invoice-items-table">
+        <thead>
+          <tr>
+            <th class="text-center" style="width: 50px;">Sr</th>
+            <th>Description of Jewellery</th>
+            <th class="text-center" style="width: 80px;">HSN</th>
+            <th class="text-right" style="width: 100px;">Gross Wt (g)</th>
+            <th class="text-right" style="width: 100px;">Net Wt (g)</th>
+            <th class="text-right" style="width: 120px;">Rate (₹/g)</th>
+            <th class="text-right" style="width: 110px;">Making (₹)</th>
+            <th class="text-right" style="width: 130px;">Amount (₹)</th>
+          </tr>
+        </thead>
+        <tbody id="print-items-tbody">
+          <!-- Filled by Javascript -->
+        </tbody>
+      </table>
+
+      <!-- Totals & Bank Details Grid -->
+      <div class="invoice-summary-grid">
+        <div class="bank-notes-box">
+          <div>
+            <div class="bank-details-title">Bank Account Details:</div>
+            <div class="bank-info" id="print-bank-details">
+              Bank: Bank of Baroda<br>
+              Account No: 49970200000074<br>
+              IFSC: BARBOGIRGAD
+            </div>
+          </div>
+          <div>
+            <div class="notes-title">Terms & Conditions / Guidelines:</div>
+            <ol class="notes-list" id="print-footer-notes">
+              <!-- Notes filled by JS -->
+            </ol>
+          </div>
+        </div>
+
+        <div class="totals-box">
+          <div class="totals-row">
+            <span>Total Items:</span>
+            <span id="print-total-items" style="font-weight: 700;">0</span>
+          </div>
+          <div class="totals-row">
+            <span>Total Gross Weight:</span>
+            <span><span id="print-total-gross" style="font-weight: 700;">0.000</span> g</span>
+          </div>
+          <div class="totals-row">
+            <span>Total Net Weight:</span>
+            <span><span id="print-total-net" style="font-weight: 700;">0.000</span> g</span>
+          </div>
+          <div class="totals-row" style="border-top: 1px solid #000000; padding-top: 6px; margin-top: 4px;">
+            <span>Taxable Subtotal:</span>
+            <span>₹ <span id="print-subtotal">0.00</span></span>
+          </div>
+          <div class="totals-row">
+            <span>CGST (<span id="print-cgst-pct">1.5</span>%):</span>
+            <span>₹ <span id="print-cgst-amt">0.00</span></span>
+          </div>
+          <div class="totals-row">
+            <span>SGST (<span id="print-sgst-pct">1.5</span>%):</span>
+            <span>₹ <span id="print-sgst-amt">0.00</span></span>
+          </div>
+          <div class="totals-row grand-total">
+            <span>Grand Total:</span>
+            <span>₹ <span id="print-grand-total">0.00</span></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Signatures footer -->
+      <div class="signature-grid">
+        <div>
+          <br><br>
+          <div class="signature-box">Customer's Signature</div>
+        </div>
+        <div>
+          <span style="font-weight: 700;" id="print-footer-shop-name">For, Shree Khodiyar Jewellers</span>
+          <br><br><br>
+          <div class="signature-box">Authorized Signatory</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
