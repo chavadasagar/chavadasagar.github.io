@@ -8,306 +8,447 @@
 </head>
 <body>
 
-  <!-- Navigation Header -->
-  <header>
-    <div class="logo-container">
-      <span class="logo-icon">✨</span>
-      <h1 class="logo-text" id="header-shop-name">Shree Khodiyar Jewellers</h1>
-    </div>
-    <nav>
-      <button class="nav-btn active" data-tab="create-bill">
-        <i>📝</i> Create Bill
-      </button>
-      <button class="nav-btn" data-tab="bill-history">
-        <i>📋</i> Bill History
-      </button>
-      <button class="nav-btn" data-tab="item-master">
-        <i>💎</i> Jewellery Items
-      </button>
-      <button class="nav-btn" data-tab="settings">
-        <i>⚙️</i> Settings
-      </button>
-    </nav>
-  </header>
-
-  <!-- Main Workspace -->
-  <main>
+  <!-- App Main Layout Wrapper -->
+  <div class="app-container">
     
-    <!-- TAB 1: CREATE BILL -->
-    <section id="create-bill" class="tab-content active">
-      <div class="card">
-        <div class="card-title">
-          <span>Customer & Invoice Details</span>
-          <span style="font-family: var(--font-sans); font-size: 0.9rem; color: var(--gold-primary);">
-            Bill No: <strong id="current-bill-no">Auto-Generating</strong>
-          </span>
-        </div>
-        <form id="customer-form" class="form-grid">
-          <div class="form-group">
-            <label for="cust-date">Invoice Date</label>
-            <input type="date" id="cust-date" required>
-          </div>
-          <div class="form-group double-width">
-            <label for="cust-name">Customer Name</label>
-            <input type="text" id="cust-name" placeholder="Enter Full Name" required autocomplete="off">
-          </div>
-          <div class="form-group">
-            <label for="cust-phone">Phone Number</label>
-            <input type="text" id="cust-phone" placeholder="10 Digit Mobile" maxlength="15" autocomplete="off">
-          </div>
-          <div class="form-group double-width">
-            <label for="cust-address">Address</label>
-            <input type="text" id="cust-address" placeholder="Street/Area Address" autocomplete="off">
-          </div>
-          <div class="form-group">
-            <label for="cust-village">Village / City</label>
-            <input type="text" id="cust-village" placeholder="Village or City Name" autocomplete="off">
-          </div>
-          <div class="form-group">
-            <label for="cust-gstin">GSTIN (Optional)</label>
-            <input type="text" id="cust-gstin" placeholder="24AAAAA0000A1Z0" maxlength="15" style="text-transform: uppercase;" autocomplete="off">
-          </div>
-          <div class="form-group">
-            <label for="cust-state">State</label>
-            <input type="text" id="cust-state" value="Gujarat" required>
-          </div>
-        </form>
+    <!-- Left Sidebar -->
+    <aside class="sidebar" id="app-sidebar">
+      <div class="logo-container">
+        <span class="logo-icon">✨</span>
+        <h1 class="logo-text">Khodiyar Jewellers</h1>
       </div>
+      <nav class="sidebar-nav">
+        <button class="nav-btn active" data-tab="create-bill" id="nav-create-bill">
+          <i>📝</i> Create Bill
+        </button>
+        <button class="nav-btn" data-tab="bill-history" id="nav-bill-history">
+          <i>📋</i> Bill History
+        </button>
+        <button class="nav-btn" data-tab="item-master" id="nav-item-master">
+          <i>💎</i> Jewellery Items
+        </button>
+        <button class="nav-btn" data-tab="settings" id="nav-settings">
+          <i>⚙️</i> Settings
+        </button>
+      </nav>
+    </aside>
 
-      <!-- Bill Items Table Card -->
-      <div class="card">
-        <div class="card-title">Billing Items</div>
-        
-        <div class="table-container">
-          <table id="bill-items-table">
-            <thead>
-              <tr>
-                <th class="col-sr">Sr</th>
-                <th class="col-desc">Description</th>
-                <th class="col-hsn">HSN</th>
-                <th class="col-wt">Gross Wt (g)</th>
-                <th class="col-wt">Net Wt (g)</th>
-                <th class="col-rate">Rate (Rs / g)</th>
-                <th class="col-making">Making Charge</th>
-                <th class="col-amount">Amount (Rs)</th>
-                <th class="col-action">Action</th>
-              </tr>
-            </thead>
-            <tbody id="items-tbody">
-              <!-- Item rows populated by JS -->
-            </tbody>
-          </table>
+    <!-- Overlay backdrop for mobile sidebar -->
+    <div class="sidebar-overlay" id="sidebar-backdrop"></div>
+
+    <!-- Right Workspace Area -->
+    <div class="main-wrapper">
+      
+      <!-- Top Navbar -->
+      <header class="top-navbar">
+        <div class="navbar-left">
+          <button class="btn-toggle-sidebar" id="toggle-sidebar-btn" title="Toggle Navigation">☰</button>
+          <div class="search-container">
+            <input type="text" id="global-search" placeholder="Search tabs (settings...) or bills (name/no)..." autocomplete="off">
+            <span class="search-icon">🔍</span>
+            <div id="search-results-popup" class="search-results-popup"></div>
+          </div>
         </div>
-
-        <div class="action-bar">
-          <button type="button" class="btn btn-secondary" id="add-row-btn">
-            <i>➕</i> Add Item Row
+        <div class="navbar-right">
+          <button class="theme-toggle-btn" id="theme-toggle-btn" title="Toggle Theme" style="margin-right: 1.25rem;">
+            <span id="theme-icon">🌙</span>
           </button>
-          <div class="quick-helpers">
-            <!-- Dynamic dropdown references are loaded here -->
-            <datalist id="items-datalist">
-              <!-- Dynamically populated from Jewellery Item Master -->
-            </datalist>
-          </div>
+          <span class="current-date-display" id="nav-date-display">-</span>
         </div>
-      </div>
+      </header>
 
-      <!-- Bill Calculations Summary -->
-      <div class="summary-container">
-        <!-- Action Buttons -->
-        <div class="card" style="margin-bottom: 0; align-self: stretch; display: flex; flex-direction: column; justify-content: center; gap: 1rem;">
-          <button type="button" class="btn btn-success" id="save-print-btn" style="padding: 1rem;">
-            <i>💾</i> Save & Print Invoice
-          </button>
-          <button type="button" class="btn btn-secondary" id="reset-bill-btn">
-            <i>🔄</i> Reset Bill Form
-          </button>
-        </div>
-
-        <!-- Math calculations summary -->
-        <div class="summary-details">
-          <div class="summary-row">
-            <span>Total Gross Weight:</span>
-            <span><strong id="total-gross-wt">0.000</strong> g</span>
-          </div>
-          <div class="summary-row">
-            <span>Total Net Weight:</span>
-            <span><strong id="total-net-wt">0.000</strong> g</span>
-          </div>
-          <div class="summary-row">
-            <span>Subtotal (Items Total):</span>
-            <span>₹ <span id="items-subtotal">0.00</span></span>
-          </div>
-          <div class="summary-row">
-            <span>CGST (<span id="summary-cgst-pct">1.5</span>%):</span>
-            <span>₹ <span id="items-cgst">0.00</span></span>
-          </div>
-          <div class="summary-row">
-            <span>SGST (<span id="summary-sgst-pct">1.5</span>%):</span>
-            <span>₹ <span id="items-sgst">0.00</span></span>
-          </div>
-          <div class="summary-row grand-total">
-            <span>Grand Total:</span>
-            <span>₹ <span id="items-grand-total">0.00</span></span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- TAB 2: BILL HISTORY -->
-    <section id="bill-history" class="tab-content">
-      <div class="card">
-        <div class="card-title">Saved Invoices History</div>
+      <!-- Main Tab Content Area -->
+      <main class="main-content">
         
-        <div class="history-filters">
-          <input type="text" id="search-query" placeholder="Search customer, bill no, phone...">
-          <input type="date" id="filter-date-start" placeholder="Start Date">
-          <input type="date" id="filter-date-end" placeholder="End Date">
-          <button class="btn btn-secondary" id="clear-filters-btn">Clear</button>
-        </div>
-
-        <div class="bills-table-container">
-          <table class="bills-table">
-            <thead>
-              <tr>
-                <th>Bill No</th>
-                <th>Date</th>
-                <th>Customer Name</th>
-                <th>Village</th>
-                <th>Total Net Wt</th>
-                <th>Grand Total</th>
-                <th>Actions</th>
-              </tr>
-            </thead>
-            <tbody id="history-tbody">
-              <!-- Generated invoices displayed here -->
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </section>
-
-    <!-- TAB 3: JEWELLERY ITEMS MASTER -->
-    <section id="item-master" class="tab-content">
-      <div class="two-column-layout">
-        <!-- Add Item Panel -->
-        <div class="card">
-          <div class="card-title">Add/Edit Jewelry Item</div>
-          <form id="item-master-form" style="display: flex; flex-direction: column; gap: 1rem;">
-            <input type="hidden" id="edit-item-index">
-            <div class="form-group">
-              <label for="item-name">Jewellery Name</label>
-              <input type="text" id="item-name" placeholder="e.g. Gold Ring, Bangles" required autocomplete="off">
+        <!-- TAB 1: CREATE BILL (Wizard Flow) -->
+        <section id="create-bill" class="tab-content active">
+          
+          <!-- Stepper Header -->
+          <div class="stepper-header">
+            <div class="step-indicator active" id="step-ind-1">
+              <span class="step-num">1</span>
+              <span class="step-label">Basic Info</span>
             </div>
-            <div class="form-group">
-              <label for="item-hsn">HSN Code</label>
-              <input type="text" id="item-hsn" placeholder="e.g. 7113" required autocomplete="off">
+            <div class="step-line" id="step-line-1"></div>
+            <div class="step-indicator" id="step-ind-2">
+              <span class="step-num">2</span>
+              <span class="step-label">Location & Tax</span>
             </div>
-            <div class="form-group">
-              <label for="item-default-rate">Default Rate per g (Optional)</label>
-              <input type="number" id="item-default-rate" placeholder="e.g. 7100" step="0.01">
-            </div>
-            <div class="form-group">
-              <label for="item-default-making">Default Making Charge (Optional)</label>
-              <input type="number" id="item-default-making" placeholder="e.g. 350" step="0.01">
-            </div>
-            <div style="display: flex; gap: 0.5rem; margin-top: 0.5rem;">
-              <button type="submit" class="btn btn-primary" id="save-item-btn" style="flex: 1;">Save Item</button>
-              <button type="button" class="btn btn-secondary" id="cancel-item-edit-btn" style="display: none;">Cancel</button>
-            </div>
-          </form>
-        </div>
-
-        <!-- Items List Panel -->
-        <div class="card">
-          <div class="card-title">Registered Jewellery Items (Dropdown Templates)</div>
-          <div class="item-list-container" id="item-list-container">
-            <!-- Autocomplete list rows -->
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- TAB 4: SHOP SETTINGS -->
-    <section id="settings" class="tab-content">
-      <div class="card">
-        <div class="card-title">Shop Details & Business Settings</div>
-        
-        <form id="settings-form">
-          <h3 style="color: var(--gold-primary); font-family: var(--font-serif); margin-bottom: 1rem; font-size: 1.1rem;">Shop Details</h3>
-          <div class="form-grid" style="margin-bottom: 2rem;">
-            <div class="form-group double-width">
-              <label for="shop-name">Shop Name</label>
-              <input type="text" id="shop-name" required>
-            </div>
-            <div class="form-group">
-              <label for="shop-gstin">Shop GSTIN</label>
-              <input type="text" id="shop-gstin" required style="text-transform: uppercase;">
-            </div>
-            <div class="form-group">
-              <label for="shop-state">Shop State</label>
-              <input type="text" id="shop-state" required>
-            </div>
-            <div class="form-group double-width">
-              <label for="shop-address">Shop Address</label>
-              <input type="text" id="shop-address" required>
+            <div class="step-line" id="step-line-2"></div>
+            <div class="step-indicator" id="step-ind-3">
+              <span class="step-num">3</span>
+              <span class="step-label">Add Items & Calc</span>
             </div>
           </div>
 
-          <h3 style="color: var(--gold-primary); font-family: var(--font-serif); margin-bottom: 1rem; font-size: 1.1rem;">Bank Details</h3>
-          <div class="form-grid" style="margin-bottom: 2rem;">
-            <div class="form-group">
-              <label for="shop-bank">Bank Name</label>
-              <input type="text" id="shop-bank" required>
-            </div>
-            <div class="form-group">
-              <label for="shop-ifsc">IFSC Code</label>
-              <input type="text" id="shop-ifsc" required style="text-transform: uppercase;">
-            </div>
-            <div class="form-group">
-              <label for="shop-acc-no">Account Number</label>
-              <input type="text" id="shop-acc-no" required>
+          <!-- STEP 1: CUSTOMER DETAILS (Part A) -->
+          <div id="bill-step-1" class="wizard-step active">
+            <div class="card">
+              <div class="card-title">
+                <span>Customer & Invoice Info (Step 1)</span>
+                <span style="font-family: var(--font-sans); font-size: 0.9rem; color: var(--gold-primary);">
+                  Bill No: <strong id="current-bill-no">Auto-Generating</strong>
+                </span>
+              </div>
+              
+              <form id="customer-form-wizard-1" class="form-grid">
+                <div class="form-group">
+                  <label for="cust-date">Invoice Date</label>
+                  <input type="date" id="cust-date" required>
+                </div>
+                <div class="form-group double-width">
+                  <label for="cust-name">Customer Name</label>
+                  <input type="text" id="cust-name" placeholder="Enter Full Name" required autocomplete="off">
+                </div>
+                <div class="form-group">
+                  <label for="cust-phone">Phone Number</label>
+                  <input type="text" id="cust-phone" placeholder="10 Digit Mobile" maxlength="10" required autocomplete="off">
+                </div>
+                <div class="form-group double-width">
+                  <label for="cust-address">Address</label>
+                  <input type="text" id="cust-address" placeholder="Street/Area Address" required autocomplete="off">
+                </div>
+              </form>
+
+              <div style="display: flex; justify-content: flex-end; margin-top: 2rem; border-top: 1px solid var(--border-color); padding-top: 1.25rem;">
+                <button type="button" class="btn btn-primary" id="btn-to-step-2">
+                  Next: Location & GSTIN ➡️
+                </button>
+              </div>
             </div>
           </div>
 
-          <h3 style="color: var(--gold-primary); font-family: var(--font-serif); margin-bottom: 1rem; font-size: 1.1rem;">Taxation & Billing System</h3>
-          <div class="form-grid" style="margin-bottom: 2rem;">
-            <div class="form-group">
-              <label for="shop-cgst-pct">Default CGST (%)</label>
-              <input type="number" id="shop-cgst-pct" step="0.01" required>
-            </div>
-            <div class="form-group">
-              <label for="shop-sgst-pct">Default SGST (%)</label>
-              <input type="number" id="shop-sgst-pct" step="0.01" required>
-            </div>
-            <div class="form-group">
-              <label for="shop-next-bill">Next Invoice Number (Seed)</label>
-              <input type="number" id="shop-next-bill" min="1" required>
+          <!-- STEP 2: CUSTOMER LOCATION & TAX (Part B) -->
+          <div id="bill-step-2" class="wizard-step">
+            <div class="card">
+              <div class="card-title">
+                <span>Location & Tax Details (Step 2)</span>
+              </div>
+              
+              <form id="customer-form-wizard-2" class="form-grid">
+                <div class="form-group">
+                  <label for="cust-village">Village / City</label>
+                  <input type="text" id="cust-village" placeholder="Village or City Name" required autocomplete="off">
+                </div>
+                <div class="form-group">
+                  <label for="cust-gstin">GSTIN (Optional)</label>
+                  <input type="text" id="cust-gstin" placeholder="24AAAAA0000A1Z0 (Optional)" maxlength="15" style="text-transform: uppercase;" autocomplete="off">
+                </div>
+                <div class="form-group">
+                  <label for="cust-state">State</label>
+                  <input type="text" id="cust-state" value="Gujarat" required>
+                </div>
+              </form>
+
+              <div style="display: flex; justify-content: space-between; margin-top: 2rem; border-top: 1px solid var(--border-color); padding-top: 1.25rem;">
+                <button type="button" class="btn btn-secondary" id="btn-back-to-step-1">
+                  ⬅️ Back to Step 1
+                </button>
+                <button type="button" class="btn btn-primary" id="btn-to-step-3">
+                  Next: Add Items & Rate ➡️
+                </button>
+              </div>
             </div>
           </div>
 
-          <h3 style="color: var(--gold-primary); font-family: var(--font-serif); margin-bottom: 0.5rem; font-size: 1.1rem; display: flex; justify-content: space-between; align-items: center;">
-            <span>Invoice Footer Notes / Terms</span>
-            <button type="button" class="btn btn-secondary" id="add-note-btn" style="padding: 0.3rem 0.8rem; font-size: 0.8rem;">+ Add Note Line</button>
-          </h3>
-          <p style="color: var(--text-secondary); font-size: 0.85rem; margin-bottom: 1rem;">These notes will print at the bottom of the invoice (e.g. Gujarati guidelines, jurisdictions).</p>
-          <div id="footer-notes-container" style="margin-bottom: 2rem;">
-            <!-- Note input boxes populated by JS -->
+          <!-- STEP 3: ITEMS & TOTALS (Part C) -->
+          <div id="bill-step-3" class="wizard-step">
+            <!-- Add Item Builder Form (Form Card) -->
+            <div class="card" id="add-item-form-card">
+              <div class="card-title">
+                <span>Add Jewellery Item</span>
+                <span style="font-family: var(--font-sans); font-size: 0.95rem; font-weight: normal; color: var(--text-secondary);">
+                  Customer: <strong id="step3-cust-name-badge" style="color: var(--gold-primary);"></strong>
+                </span>
+              </div>
+              
+              <div class="form-grid" id="item-builder-form">
+                <input type="hidden" id="item-edit-index">
+                <div class="form-group double-width">
+                  <label for="builder-item-desc">Description of Jewellery</label>
+                  <input type="text" id="builder-item-desc" placeholder="e.g. Gold Ring (સોનાની વીંટી)" list="items-datalist" required autocomplete="off">
+                </div>
+                <div class="form-group">
+                  <label for="builder-item-hsn">HSN Code</label>
+                  <input type="text" id="builder-item-hsn" placeholder="7113" value="7113" autocomplete="off">
+                </div>
+                <div class="form-group">
+                  <label for="builder-item-gross">Gross Weight (g)</label>
+                  <input type="number" id="builder-item-gross" step="0.001" placeholder="0.000" min="0" required>
+                </div>
+                <div class="form-group">
+                  <label for="builder-item-net">Net Weight (g)</label>
+                  <input type="number" id="builder-item-net" step="0.001" placeholder="0.000" min="0" required>
+                </div>
+                <div class="form-group">
+                  <label for="builder-item-rate">Rate (Rs / g)</label>
+                  <input type="number" id="builder-item-rate" step="0.01" placeholder="0.00" min="0" required>
+                </div>
+                <div class="form-group">
+                  <label for="builder-item-making">Making Charge (Rs)</label>
+                  <input type="number" id="builder-item-making" step="0.01" placeholder="0.00" min="0" required>
+                </div>
+              </div>
+
+              <!-- Item Preview and Add button -->
+              <div class="item-builder-footer" style="display: flex; justify-content: space-between; align-items: center; margin-top: 1.5rem; padding-top: 1.25rem; border-top: 1px solid var(--border-color); flex-wrap: wrap; gap: 1rem;">
+                <div class="builder-preview-box" style="background-color: var(--bg-tertiary); padding: 0.75rem 1.25rem; border-radius: var(--border-radius); border: 1px solid var(--border-color);">
+                  <span style="font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.5px; color: var(--text-secondary); display: block;">Calculated Amount:</span>
+                  <strong style="font-size: 1.25rem; color: var(--gold-primary); font-family: var(--font-sans);" id="builder-preview-amount">₹ 0.00</strong>
+                </div>
+                <div style="display: flex; gap: 0.5rem;">
+                  <button type="button" class="btn btn-secondary" id="btn-builder-clear" style="display: none;">Cancel Edit</button>
+                  <button type="button" class="btn btn-primary" id="btn-builder-add">
+                    Confirm & Add Item
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Added Items List (Desktop table + Mobile cards parent) -->
+            <div class="card">
+              <div class="card-title">Added Items List</div>
+              
+              <!-- Desktop Table View -->
+              <div class="table-container desktop-only-view">
+                <table id="bill-items-table">
+                  <thead>
+                    <tr>
+                      <th class="col-sr">Sr</th>
+                      <th class="col-desc">Description</th>
+                      <th class="col-hsn">HSN</th>
+                      <th class="col-wt">Gross Wt (g)</th>
+                      <th class="col-wt">Net Wt (g)</th>
+                      <th class="col-rate">Rate (Rs / g)</th>
+                      <th class="col-making">Making Charge</th>
+                      <th class="col-amount">Amount (Rs)</th>
+                      <th class="col-action">Action</th>
+                    </tr>
+                  </thead>
+                  <tbody id="items-tbody">
+                    <!-- Added items will populate here -->
+                  </tbody>
+                </table>
+              </div>
+
+              <!-- Mobile Cards View -->
+              <div class="mobile-only-view" id="mobile-items-list-container" style="display: flex; flex-direction: column; gap: 1rem;">
+                <!-- Dynamically populated mobile list cards -->
+              </div>
+
+              <div class="quick-helpers">
+                <datalist id="items-datalist">
+                  <!-- Dynamically populated from Jewellery Item Master -->
+                </datalist>
+              </div>
+            </div>
+
+            <!-- Bill Calculations Summary -->
+            <div class="summary-container">
+              <!-- Action Buttons -->
+              <div class="card" style="margin-bottom: 0; align-self: stretch; display: flex; flex-direction: column; justify-content: center; gap: 1rem;">
+                <button type="button" class="btn btn-success" id="save-print-btn" style="padding: 1rem; font-size: 1rem;">
+                  <i>💾</i> Save & Print Invoice
+                </button>
+                <div style="display: flex; gap: 0.5rem;">
+                  <button type="button" class="btn btn-secondary" id="btn-back-to-step-2" style="flex: 1;">
+                    ⬅️ Edit Location
+                  </button>
+                  <button type="button" class="btn btn-secondary" id="reset-bill-btn" style="color: var(--danger); border-color: rgba(231, 76, 60, 0.2);">
+                    Clear All
+                  </button>
+                </div>
+              </div>
+
+              <!-- Math calculations summary -->
+              <div class="summary-details">
+                <div class="summary-row">
+                  <span>Total Gross Weight:</span>
+                  <span><strong id="total-gross-wt">0.000</strong> g</span>
+                </div>
+                <div class="summary-row">
+                  <span>Total Net Weight:</span>
+                  <span><strong id="total-net-wt">0.000</strong> g</span>
+                </div>
+                <div class="summary-row">
+                  <span>Subtotal (Items Total):</span>
+                  <span>₹ <span id="items-subtotal">0.00</span></span>
+                </div>
+                <div class="summary-row">
+                  <span>CGST (<span id="summary-cgst-pct">1.5</span>%):</span>
+                  <span>₹ <span id="items-cgst">0.00</span></span>
+                </div>
+                <div class="summary-row">
+                  <span>SGST (<span id="summary-sgst-pct">1.5</span>%):</span>
+                  <span>₹ <span id="items-sgst">0.00</span></span>
+                </div>
+                <div class="summary-row grand-total">
+                  <span>Grand Total:</span>
+                  <span>₹ <span id="items-grand-total">0.00</span></span>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div style="display: flex; gap: 1rem;">
-            <button type="submit" class="btn btn-primary" style="padding: 0.9rem 2rem;">Save Settings</button>
-            <button type="button" class="btn btn-secondary" id="reset-system-btn" style="border-color: var(--danger); color: var(--danger);">Reset All to Defaults</button>
+        </section>
+
+        <!-- TAB 2: BILL HISTORY -->
+        <section id="bill-history" class="tab-content">
+          <div class="card">
+            <div class="card-title">Saved Invoices History</div>
+            
+            <div class="history-filters">
+              <input type="text" id="search-query" placeholder="Filter customer name, bill no, village...">
+              <input type="date" id="filter-date-start" placeholder="Start Date">
+              <input type="date" id="filter-date-end" placeholder="End Date">
+              <button class="btn btn-secondary" id="clear-filters-btn">Clear</button>
+            </div>
+
+            <div class="bills-table-container">
+              <table class="bills-table">
+                <thead>
+                  <tr>
+                    <th>Bill No</th>
+                    <th>Date</th>
+                    <th>Customer Name</th>
+                    <th>Village</th>
+                    <th>Total Net Wt</th>
+                    <th>Grand Total</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody id="history-tbody">
+                  <!-- Generated invoices displayed here -->
+                </tbody>
+              </table>
+            </div>
           </div>
-        </form>
-      </div>
-    </section>
+        </section>
 
-  </main>
+        <!-- TAB 3: JEWELLERY ITEMS MASTER -->
+        <section id="item-master" class="tab-content">
+          <div class="two-column-layout">
+            <!-- Add Item Panel -->
+            <div class="card">
+              <div class="card-title">Add/Edit Jewelry Item</div>
+              <form id="item-master-form" style="display: flex; flex-direction: column; gap: 1rem;">
+                <input type="hidden" id="edit-item-index">
+                <div class="form-group">
+                  <label for="item-name">Jewellery Name</label>
+                  <input type="text" id="item-name" placeholder="e.g. Gold Ring, Bangles" required autocomplete="off">
+                </div>
+                <div class="form-group">
+                  <label for="item-hsn">HSN Code</label>
+                  <input type="text" id="item-hsn" placeholder="e.g. 7113" required autocomplete="off">
+                </div>
+                <div class="form-group">
+                  <label for="item-default-rate">Default Rate per g (Optional)</label>
+                  <input type="number" id="item-default-rate" placeholder="e.g. 7100" step="0.01">
+                </div>
+                <div class="form-group">
+                  <label for="item-default-making">Default Making Charge (Optional)</label>
+                  <input type="number" id="item-default-making" placeholder="e.g. 350" step="0.01">
+                </div>
+                <div style="display: flex; gap: 0.5rem; margin-top: 0.5rem;">
+                  <button type="submit" class="btn btn-primary" id="save-item-btn" style="flex: 1;">Save Item</button>
+                  <button type="button" class="btn btn-secondary" id="cancel-item-edit-btn" style="display: none;">Cancel</button>
+                </div>
+              </form>
+            </div>
 
-  <footer class="app-footer">
-    <p>&copy; 2026 Shree Khodiyar Jewellers billing application. Designed with premium aesthetics.</p>
-  </footer>
+            <!-- Items List Panel -->
+            <div class="card">
+              <div class="card-title">Registered Jewellery Items (Dropdown Templates)</div>
+              <div class="item-list-container" id="item-list-container">
+                <!-- Autocomplete list rows -->
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- TAB 4: SHOP SETTINGS -->
+        <section id="settings" class="tab-content">
+          <div class="card">
+            <div class="card-title">Shop Details & Business Settings</div>
+            
+            <form id="settings-form">
+              <h3 style="color: var(--gold-primary); font-family: var(--font-serif); margin-bottom: 1rem; font-size: 1.1rem;">Shop Details</h3>
+              <div class="form-grid" style="margin-bottom: 2rem;">
+                <div class="form-group double-width">
+                  <label for="shop-name">Shop Name</label>
+                  <input type="text" id="shop-name" required>
+                </div>
+                <div class="form-group">
+                  <label for="shop-gstin">Shop GSTIN</label>
+                  <input type="text" id="shop-gstin" required style="text-transform: uppercase;">
+                </div>
+                <div class="form-group">
+                  <label for="shop-state">Shop State</label>
+                  <input type="text" id="shop-state" required>
+                </div>
+                <div class="form-group double-width">
+                  <label for="shop-address">Shop Address</label>
+                  <input type="text" id="shop-address" required>
+                </div>
+              </div>
+
+              <h3 style="color: var(--gold-primary); font-family: var(--font-serif); margin-bottom: 1rem; font-size: 1.1rem;">Bank Details</h3>
+              <div class="form-grid" style="margin-bottom: 2rem;">
+                <div class="form-group">
+                  <label for="shop-bank">Bank Name</label>
+                  <input type="text" id="shop-bank" required>
+                </div>
+                <div class="form-group">
+                  <label for="shop-ifsc">IFSC Code</label>
+                  <input type="text" id="shop-ifsc" required style="text-transform: uppercase;">
+                </div>
+                <div class="form-group">
+                  <label for="shop-acc-no">Account Number</label>
+                  <input type="text" id="shop-acc-no" required>
+                </div>
+              </div>
+
+              <h3 style="color: var(--gold-primary); font-family: var(--font-serif); margin-bottom: 1rem; font-size: 1.1rem;">Taxation & Billing System</h3>
+              <div class="form-grid" style="margin-bottom: 2rem;">
+                <div class="form-group">
+                  <label for="shop-cgst-pct">Default CGST (%)</label>
+                  <input type="number" id="shop-cgst-pct" step="0.01" required>
+                </div>
+                <div class="form-group">
+                  <label for="shop-sgst-pct">Default SGST (%)</label>
+                  <input type="number" id="shop-sgst-pct" step="0.01" required>
+                </div>
+                <div class="form-group">
+                  <label for="shop-next-bill">Next Invoice Number (Seed)</label>
+                  <input type="number" id="shop-next-bill" min="1" required>
+                </div>
+              </div>
+
+              <h3 style="color: var(--gold-primary); font-family: var(--font-serif); margin-bottom: 0.5rem; font-size: 1.1rem; display: flex; justify-content: space-between; align-items: center;">
+                <span>Invoice Footer Notes / Terms</span>
+                <button type="button" class="btn btn-secondary" id="add-note-btn" style="padding: 0.3rem 0.8rem; font-size: 0.8rem;">+ Add Note Line</button>
+              </h3>
+              <p style="color: var(--text-secondary); font-size: 0.85rem; margin-bottom: 1rem;">These notes will print at the bottom of the invoice (e.g. Gujarati guidelines, jurisdictions).</p>
+              <div id="footer-notes-container" style="margin-bottom: 2rem;">
+                <!-- Note input boxes populated by JS -->
+              </div>
+
+              <div style="display: flex; gap: 1rem;">
+                <button type="submit" class="btn btn-primary" style="padding: 0.9rem 2rem;">Save Settings</button>
+                <button type="button" class="btn btn-secondary" id="reset-system-btn" style="border-color: var(--danger); color: var(--danger);">Reset All to Defaults</button>
+              </div>
+            </form>
+          </div>
+        </section>
+
+      </main>
+
+      <!-- Small Footer inside layout -->
+      <footer class="app-footer" style="background-color: transparent; border: none; margin-top: auto;">
+        <p>&copy; 2026 Shree Khodiyar Jewellers. All rights reserved.</p>
+      </footer>
+    </div>
+  </div>
 
   <!-- DYNAMIC INVOICE VIEW CONTAINER FOR PRINTING (hidden on screen, visible during window.print()) -->
   <div id="print-invoice-container">
@@ -450,6 +591,9 @@
 
     </div>
   </div>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container" class="toast-container"></div>
 
   <script src="app.js"></script>
 </body>
