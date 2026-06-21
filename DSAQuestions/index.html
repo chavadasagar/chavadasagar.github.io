@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DSA Master Sheet</title>
+<style>
+  :root{
+    --ink:#10141c;
+    --paper:#f6f5f1;
+    --card:#ffffff;
+    --line:#e3e0d6;
+    --accent:#1f4e78;
+    --accent-soft:#e8f0f7;
+    --mono:#5b5648;
+    --easy-bg:#e3f3e6; --easy-fg:#1f7a3d; --easy-line:#bfe3c8;
+    --med-bg:#fdf1d9;  --med-fg:#9c6500; --med-line:#f3dba3;
+    --hard-bg:#fbe3e3; --hard-fg:#a32a2a; --hard-line:#f0bcbc;
+    font-size:16px;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif;
+    -webkit-font-smoothing:antialiased;
+    padding-bottom:60px;
+  }
+  header{
+    position:sticky; top:0; z-index:30;
+    background:var(--accent);
+    color:#fff;
+    padding:14px 16px 12px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.12);
+  }
+  header h1{
+    margin:0 0 2px;
+    font-size:1.15rem;
+    letter-spacing:0.2px;
+  }
+  header p{
+    margin:0;
+    font-size:0.78rem;
+    opacity:0.85;
+  }
+  .controls{
+    position:sticky; top:62px; z-index:29;
+    background:var(--paper);
+    padding:10px 12px 8px;
+    border-bottom:1px solid var(--line);
+  }
+  .search-wrap{
+    position:relative;
+    margin-bottom:8px;
+  }
+  #search{
+    width:100%;
+    padding:10px 12px 10px 34px;
+    border-radius:10px;
+    border:1px solid var(--line);
+    background:var(--card);
+    font-size:0.92rem;
+    color:var(--ink);
+  }
+  .search-wrap svg{
+    position:absolute; left:10px; top:50%; transform:translateY(-50%);
+    width:16px; height:16px; opacity:0.45;
+  }
+  .filter-row{
+    display:flex;
+    gap:6px;
+    overflow-x:auto;
+    padding-bottom:4px;
+    scrollbar-width:none;
+  }
+  .filter-row::-webkit-scrollbar{display:none;}
+  .chip{
+    flex:0 0 auto;
+    padding:6px 12px;
+    border-radius:999px;
+    border:1px solid var(--line);
+    background:var(--card);
+    font-size:0.76rem;
+    color:var(--mono);
+    white-space:nowrap;
+    cursor:pointer;
+    user-select:none;
+  }
+  .chip.active{
+    background:var(--accent);
+    border-color:var(--accent);
+    color:#fff;
+  }
+  .filter-label{
+    font-size:0.68rem;
+    text-transform:uppercase;
+    letter-spacing:0.07em;
+    color:var(--mono);
+    margin:6px 2px 4px;
+  }
+  #count{
+    font-size:0.74rem;
+    color:var(--mono);
+    margin:6px 2px 0;
+  }
+  main{
+    padding:10px 12px 0;
+    max-width:760px;
+    margin:0 auto;
+  }
+  .card{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:14px;
+    margin-bottom:12px;
+    overflow:hidden;
+  }
+  .card-head{
+    padding:13px 14px 11px;
+    cursor:pointer;
+    display:flex;
+    gap:10px;
+    align-items:flex-start;
+  }
+  .num{
+    font-size:0.7rem;
+    color:var(--mono);
+    background:var(--accent-soft);
+    border-radius:6px;
+    padding:2px 6px;
+    font-weight:600;
+    flex:0 0 auto;
+    margin-top:2px;
+  }
+  .head-text{flex:1;}
+  .badges{
+    display:flex; gap:6px; flex-wrap:wrap; margin-bottom:5px;
+  }
+  .badge{
+    font-size:0.66rem;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:0.04em;
+    padding:2px 8px;
+    border-radius:999px;
+    border:1px solid transparent;
+  }
+  .badge.cat{
+    background:var(--accent-soft);
+    color:var(--accent);
+    border-color:#d3e2ee;
+  }
+  .badge.Easy{ background:var(--easy-bg); color:var(--easy-fg); border-color:var(--easy-line); }
+  .badge.Medium{ background:var(--med-bg); color:var(--med-fg); border-color:var(--med-line); }
+  .badge.Hard{ background:var(--hard-bg); color:var(--hard-fg); border-color:var(--hard-line); }
+  .q-title{
+    font-size:0.97rem;
+    font-weight:600;
+    line-height:1.35;
+    color:var(--ink);
+  }
+  .chev{
+    flex:0 0 auto;
+    width:20px; height:20px;
+    margin-top:2px;
+    transition:transform 0.2s ease;
+    opacity:0.5;
+  }
+  .card.open .chev{ transform:rotate(180deg); }
+  .card-body{
+    display:none;
+    padding:0 14px 16px;
+    border-top:1px dashed var(--line);
+  }
+  .card.open .card-body{ display:block; }
+  .section{
+    margin-top:12px;
+  }
+  .section-label{
+    font-size:0.68rem;
+    text-transform:uppercase;
+    letter-spacing:0.08em;
+    color:var(--accent);
+    font-weight:700;
+    margin-bottom:4px;
+    display:flex;
+    align-items:center;
+    gap:6px;
+  }
+  .section-label .ico{font-size:0.85rem;}
+  .section-text{
+    font-size:0.88rem;
+    line-height:1.5;
+    color:#2b2b2b;
+  }
+  pre.code{
+    background:#10141c;
+    color:#dce6f0;
+    font-family:"SF Mono", "Consolas", monospace;
+    font-size:0.78rem;
+    line-height:1.55;
+    padding:11px 12px;
+    border-radius:10px;
+    overflow-x:auto;
+    white-space:pre;
+    margin:0;
+  }
+  .sample-list{
+    display:flex;
+    flex-direction:column;
+    gap:6px;
+  }
+  .sample-item{
+    background:#fbfaf6;
+    border:1px solid var(--line);
+    border-left:3px solid var(--accent);
+    border-radius:8px;
+    padding:7px 10px;
+    font-size:0.82rem;
+    line-height:1.5;
+    font-family:"SF Mono","Consolas",monospace;
+    color:#2b2b2b;
+    overflow-x:auto;
+  }
+  .sample-tag{
+    font-family:"Segoe UI", system-ui, sans-serif;
+    font-size:0.62rem;
+    font-weight:700;
+    text-transform:uppercase;
+    color:var(--accent);
+    margin-right:6px;
+    background:var(--accent-soft);
+    padding:1px 6px;
+    border-radius:5px;
+  }
+  .meta-row{
+    display:flex;
+    gap:10px;
+    margin-top:12px;
+  }
+  .meta-box{
+    flex:1;
+    background:var(--paper);
+    border:1px solid var(--line);
+    border-radius:10px;
+    padding:8px 10px;
+    text-align:center;
+  }
+  .meta-box .lbl{
+    font-size:0.62rem;
+    text-transform:uppercase;
+    color:var(--mono);
+    letter-spacing:0.05em;
+  }
+  .meta-box .val{
+    font-size:0.82rem;
+    font-weight:700;
+    color:var(--ink);
+    margin-top:2px;
+  }
+  .status-row{
+    margin-top:12px;
+    display:flex;
+    gap:6px;
+  }
+  .status-btn{
+    flex:1;
+    padding:7px 4px;
+    text-align:center;
+    font-size:0.72rem;
+    border-radius:8px;
+    border:1px solid var(--line);
+    background:var(--card);
+    color:var(--mono);
+    cursor:pointer;
+  }
+  .status-btn.active[data-s="Not Started"]{ background:#eee; color:#555; border-color:#ccc; }
+  .status-btn.active[data-s="Practicing"]{ background:var(--med-bg); color:var(--med-fg); border-color:var(--med-line); }
+  .status-btn.active[data-s="Done"]{ background:var(--easy-bg); color:var(--easy-fg); border-color:var(--easy-line); }
+  .card.status-Done{ border-color:var(--easy-line); }
+  .card.status-Done .card-head{ background:linear-gradient(90deg, var(--easy-bg), transparent 40%); }
+  #empty{
+    text-align:center;
+    color:var(--mono);
+    font-size:0.85rem;
+    padding:40px 10px;
+    display:none;
+  }
+  footer{
+    text-align:center;
+    font-size:0.72rem;
+    color:var(--mono);
+    padding:18px 10px 30px;
+  }
+  .topbtn{
+    position:fixed;
+    bottom:16px; right:16px;
+    width:42px; height:42px;
+    border-radius:50%;
+    background:var(--accent);
+    color:#fff;
+    display:flex; align-items:center; justify-content:center;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+    cursor:pointer;
+    z-index:25;
+    opacity:0;
+    transition:opacity 0.2s;
+  }
+  .topbtn.show{ opacity:1; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>📘 DSA Master Practice Sheet</h1>
+  <p>Easy → Medium → Hard · Real-life examples · Sample I/O · Pseudocode</p>
+</header>
+
+<div class="controls">
+  <div class="search-wrap">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+    <input id="search" type="text" placeholder="Search question, category, keyword...">
+  </div>
+  <div class="filter-label">Priority</div>
+  <div class="filter-row" id="priorityFilters"></div>
+  <div class="filter-label">Category</div>
+  <div class="filter-row" id="categoryFilters"></div>
+  <div id="count"></div>
+</div>
+
+<main id="cardContainer"></main>
+<div id="empty">Koi question nahi mila — search/filter change karo 🙂</div>
+
+<footer>Tap kisi bhi card par — approach, sample I/O, pseudocode aur use-case khulega.<br>Status save ho jata hai isi browser me (offline, no server).</footer>
+
+<div class="topbtn" id="topBtn">↑</div>
+
+<script>
+// ===== DATASET as a JSON object (keyed by question id, not a plain array) =====
+const DATA_DB = {"q1": {"id": "q1", "p": "Easy", "cat": "Arrays", "q": "Find Max/Min in Array", "life": "Ek class ke saare students ke marks me se highest/lowest marks dhundna.", "approach": "Array ko ek baar loop karo, ek variable me max/min track karo. Har element ko compare karo abhi tak ke max/min se.", "tech": "Single Pass Linear Scan", "code": "1. max = arr[0]\n2. for i in arr:\n     if i > max: max = i\n3. return max", "time": "O(n)", "space": "O(1)", "use": "Dashboard me KPI ka highest/lowest value nikalna, monitoring alerts", "samples": ["arr = [3, 5, 1, 9, 2] -> max = 9, min = 1", "arr = [-4, -1, -7, -2] -> max = -1, min = -7", "arr = [10] -> max = 10, min = 10", "arr = [5, 5, 5, 5] -> max = 5, min = 5"]}, "q2": {"id": "q2", "p": "Easy", "cat": "Arrays", "q": "Two Sum (find pair with given sum)", "life": "Bill split karte time do friends ki combined amount exactly ek target ke equal honi chahiye.", "approach": "Brute force me do nested loop lagte hai O(n^2). Better: HashMap me already dekha hua number store karo, complement (target-num) check karo map me hai ya nahi.", "tech": "HashMap (one-pass)", "code": "1. map = {}\n2. for i, num in arr:\n     comp = target - num\n     if comp in map: return (map[comp], i)\n     map[num] = i", "time": "O(n)", "space": "O(n)", "use": "Payment systems me transaction matching, e-commerce cart discount combos", "samples": ["arr = [2, 7, 11, 15], target = 9 -> [0, 1]  (2+7=9)", "arr = [3, 2, 4], target = 6 -> [1, 2]  (2+4=6)", "arr = [1, 5, 3], target = 100 -> No pair found", "arr = [-3, 4, 1, 90], target = 1 -> [0, 2]  (-3+4=1)"]}, "q3": {"id": "q3", "p": "Easy", "cat": "Arrays", "q": "Move Zeroes to End", "life": "Inventory list me out-of-stock items (0 qty) ko list ke end me bhej dena, available items aage rakhna.", "approach": "Two pointer approach - ek pointer non-zero element rakhne ki position track kare, dusra scan kare.", "tech": "Two Pointer (in-place)", "code": "1. j = 0\n2. for i in arr:\n     if arr[i] != 0:\n        swap(arr[i], arr[j]); j++", "time": "O(n)", "space": "O(1)", "use": "E-commerce inventory reordering, data cleaning pipelines", "samples": ["arr = [0, 1, 0, 3, 12] -> [1, 3, 12, 0, 0]", "arr = [0, 0, 1] -> [1, 0, 0]", "arr = [1, 2, 3] -> [1, 2, 3]  (no change)", "arr = [0, 0, 0] -> [0, 0, 0]"]}, "q4": {"id": "q4", "p": "Easy", "cat": "Arrays", "q": "Reverse an Array / String", "life": "Ek queue ki line ko ulta karna (last person pehle).", "approach": "Two pointer - start aur end se aage badho, swap karte jao jab tak dono milte nahi.", "tech": "Two Pointer Swap", "code": "1. l=0, r=n-1\n2. while l<r:\n     swap(arr[l], arr[r])\n     l++; r--", "time": "O(n)", "space": "O(1)", "use": "Undo/redo stacks, palindrome checking, UI animations (reverse list)", "samples": ["s = \"hello\" -> \"olleh\"", "arr = [1, 2, 3, 4] -> [4, 3, 2, 1]", "s = \"a\" -> \"a\"", "arr = [] -> []"]}, "q5": {"id": "q5", "p": "Easy", "cat": "Strings", "q": "Check Palindrome", "life": "Check karna ki ek username ya code (jaise 'madam') ulta padhne par bhi same hai ya nahi.", "approach": "Two pointer se string ke start aur end compare karo, andar tak aate jao.", "tech": "Two Pointer", "code": "1. l=0, r=len-1\n2. while l<r:\n     if s[l]!=s[r]: return False\n     l++; r--\n3. return True", "time": "O(n)", "space": "O(1)", "use": "Input validation, DNA sequence matching, data integrity checks", "samples": ["s = \"madam\" -> True", "s = \"hello\" -> False", "s = \"racecar\" -> True", "s = \"a\" -> True"]}, "q6": {"id": "q6", "p": "Easy", "cat": "Strings", "q": "Check Anagram", "life": "Two ingredient lists same hai ya nahi check karna (order matter nahi karta, jaise 'listen' & 'silent').", "approach": "Dono strings sort karke compare karo, ya character frequency count karke compare karo.", "tech": "HashMap Frequency Count", "code": "1. if len(s1)!=len(s2): return False\n2. count = {}\n3. for c in s1: count[c]++\n4. for c in s2: count[c]--\n5. check all counts == 0", "time": "O(n)", "space": "O(n)", "use": "Spell-check / search engines, plagiarism detection, word games", "samples": ["s1 = \"listen\", s2 = \"silent\" -> True", "s1 = \"hello\", s2 = \"world\" -> False", "s1 = \"aabbcc\", s2 = \"abcabc\" -> True", "s1 = \"abc\", s2 = \"ab\" -> False (length mismatch)"]}, "q7": {"id": "q7", "p": "Easy", "cat": "Strings", "q": "First Non-Repeating Character", "life": "Customer feedback me sabse pehla unique word/keyword dhundna jo repeat nahi hua.", "approach": "Frequency map banao har character ki, fir string firse scan karo jab tak count==1 wala character mile.", "tech": "HashMap + Linear Scan", "code": "1. freq = {}\n2. for c in s: freq[c]++\n3. for c in s:\n     if freq[c]==1: return c", "time": "O(n)", "space": "O(n)", "use": "Log analysis (first unique error), text processing tools", "samples": ["s = \"swiss\" -> 'w'", "s = \"aabb\" -> No unique character", "s = \"teeter\" -> 'r'", "s = \"z\" -> 'z'"]}, "q8": {"id": "q8", "p": "Easy", "cat": "Hashing", "q": "Find Duplicate Elements", "life": "Attendance sheet me kisi student ka naam do baar entry ho gaya hai usse pakadna.", "approach": "Set/HashMap me dekha hua element store karo, agar already set me hai to duplicate mil gaya.", "tech": "HashSet Lookup", "code": "1. seen = set()\n2. for x in arr:\n     if x in seen: return x\n     seen.add(x)", "time": "O(n)", "space": "O(n)", "use": "Database deduplication, fraud detection (duplicate transactions)", "samples": ["arr = [1, 2, 3, 2, 5] -> Duplicate = 2", "arr = [4, 5, 6] -> No duplicate", "arr = [7, 7, 7] -> Duplicate = 7", "arr = [1] -> No duplicate"]}, "q9": {"id": "q9", "p": "Easy", "cat": "Sorting", "q": "Sort an Array (Bubble/Selection basics)", "life": "Restaurant orders ko priority ke hisaab se arrange karna (jaise wait time).", "approach": "Built-in sort use karo production me (TimSort/QuickSort internally), interview me bubble/selection samjhao.", "tech": "Built-in Sort / QuickSort", "code": "1. for i in range(n):\n     for j in range(0,n-i-1):\n        if arr[j]>arr[j+1]: swap", "time": "O(n log n)*", "space": "O(1)/O(n)", "use": "Order queues, leaderboard ranking, CSV/report sorting", "samples": ["arr = [5, 2, 9, 1] -> [1, 2, 5, 9]", "arr = [3, 3, 1] -> [1, 3, 3]", "arr = [1] -> [1]", "arr = [-2, 5, 0, -8] -> [-8, -2, 0, 5]"]}, "q10": {"id": "q10", "p": "Easy", "cat": "Searching", "q": "Binary Search", "life": "Phone book (sorted) me ek naam dhundna - beech se start karo, half discard karte jao.", "approach": "Sorted array me mid point check karo, target chhota hai to left half me jao, bada hai to right half me.", "tech": "Binary Search (Divide & Conquer)", "code": "1. l=0, r=n-1\n2. while l<=r:\n     mid=(l+r)//2\n     if arr[mid]==target: return mid\n     elif arr[mid]<target: l=mid+1\n     else: r=mid-1", "time": "O(log n)", "space": "O(1)", "use": "Auto-complete search, database indexing, version control (git bisect)", "samples": ["arr = [1,3,5,7,9,11], target = 7 -> index 3", "arr = [1,2,3,4,5], target = 6 -> -1 (not found)", "arr = [2,4,6,8], target = 2 -> index 0", "arr = [10], target = 10 -> index 0"]}, "q11": {"id": "q11", "p": "Easy", "cat": "LinkedList", "q": "Reverse a Linked List", "life": "Ek chain of tasks/playlist songs ko reverse order me play karna.", "approach": "3 pointers rakho: prev, curr, next. Curr ka next ko prev bana do, aage badhte jao.", "tech": "Iterative Pointer Reversal", "code": "1. prev=None, curr=head\n2. while curr:\n     nxt=curr.next\n     curr.next=prev\n     prev=curr\n     curr=nxt\n3. head=prev", "time": "O(n)", "space": "O(1)", "use": "Undo history, browser back button chain, music playlist reverse", "samples": ["1->2->3->4 -> 4->3->2->1", "1->2 -> 2->1", "1 (single node) -> 1", "Empty list -> Empty list"]}, "q12": {"id": "q12", "p": "Easy", "cat": "Stack", "q": "Valid Parentheses / Balanced Brackets", "life": "Code editor jo automatically check karta hai ki '(' , '{' , '[' sab properly close hue hai ya nahi.", "approach": "Stack me opening bracket push karo, closing bracket aaye to stack ka top match karke pop karo.", "tech": "Stack", "code": "1. stack=[]\n2. for c in s:\n     if c is opening: stack.push(c)\n     else:\n        if stack empty or not matching: return False\n        stack.pop()\n3. return stack is empty", "time": "O(n)", "space": "O(n)", "use": "Code editors/IDE syntax checking, JSON/XML validators, compilers", "samples": ["s = \"()[]{}\" -> True", "s = \"(]\" -> False", "s = \"{[()]}\" -> True", "s = \"(((\" -> False"]}, "q13": {"id": "q13", "p": "Easy", "cat": "Stack", "q": "Implement Stack using Array/LinkedList", "life": "Plates ka stack - jo plate sabse last me rakhi, wahi sabse pehle uthaogi (LIFO).", "approach": "Array/list ke end me push/pop karo, ya linked list ke head pe.", "tech": "Array-based / Linked List Stack", "code": "1. push(x): arr.append(x)\n2. pop(): return arr.pop()\n3. peek(): return arr[-1]", "time": "O(1) per op", "space": "O(n)", "use": "Browser history, function call stack, undo feature", "samples": ["push(1), push(2), push(3) -> stack = [1,2,3]", "pop() on [1,2,3] -> returns 3, stack = [1,2]", "peek() on [1,2] -> returns 2 (stack unchanged)", "pop() on empty stack -> Error/Underflow"]}, "q14": {"id": "q14", "p": "Easy", "cat": "Queue", "q": "Implement Queue using Array/LinkedList", "life": "Bank line - jo pehle aaya wahi pehle serve hoga (FIFO).", "approach": "Front se remove karo, rear me add karo. Circular array ya linked list use karo efficient ops ke liye.", "tech": "Circular Array / Linked List Queue", "code": "1. enqueue(x): rear.add(x)\n2. dequeue(): return front.remove()", "time": "O(1) per op", "space": "O(n)", "use": "Task scheduling, print queue, message queues (Kafka/RabbitMQ basics)", "samples": ["enqueue(A), enqueue(B), enqueue(C) -> queue = [A,B,C]", "dequeue() on [A,B,C] -> returns A, queue = [B,C]", "front() on [B,C] -> returns B (unchanged)", "dequeue() on empty queue -> Error/Underflow"]}, "q15": {"id": "q15", "p": "Medium", "cat": "Arrays", "q": "Kadane's Algorithm (Max Subarray Sum)", "life": "Stock ke daily profit/loss data me sabse best consecutive din dhundna jaha max profit hua.", "approach": "Current running sum track karo, agar negative ho jaye to reset karo, max sum ko har step pe update karo.", "tech": "Dynamic Programming (1D)", "code": "1. maxSum=arr[0], curr=arr[0]\n2. for i in arr[1:]:\n     curr=max(i, curr+i)\n     maxSum=max(maxSum, curr)\n3. return maxSum", "time": "O(n)", "space": "O(1)", "use": "Stock analysis tools, sensor anomaly detection, revenue trend analysis", "samples": ["arr = [-2,1,-3,4,-1,2,1,-5,4] -> 6  (subarray [4,-1,2,1])", "arr = [1,2,3,4] -> 10 (whole array)", "arr = [-1,-2,-3] -> -1 (single best element)", "arr = [5] -> 5"]}, "q16": {"id": "q16", "p": "Medium", "cat": "Arrays", "q": "Sliding Window Maximum / Subarray problems", "life": "Last 7 din ka rolling average sales nikalna jo continuously slide hota rehta hai.", "approach": "Fixed/variable size window ko array par slide karo, deque ya running sum se window update karo bina firse pura recalculate kiye.", "tech": "Sliding Window + Deque", "code": "1. window=deque()\n2. for i in arr:\n     remove out-of-window indices from front\n     remove smaller elements from back\n     window.append(i)\n     result.append(window[front])", "time": "O(n)", "space": "O(k)", "use": "Real-time analytics dashboards, network traffic monitoring, rate limiting", "samples": ["arr=[1,3,-1,-3,5,3,6,7], k=3 -> [3,3,5,5,6,7]", "arr=[4,4,4], k=2 -> [4,4]", "arr=[9,5,2,1], k=1 -> [9,5,2,1] (window size 1 = same array)", "arr=[1,2,3,4,5], k=5 -> [5] (whole array, max once)"]}, "q17": {"id": "q17", "p": "Medium", "cat": "Arrays", "q": "Merge Intervals", "life": "Calendar app me overlapping meetings ko ek single combined slot me merge karna.", "approach": "Intervals ko start time se sort karo, fir ek-ek karke check karo ki current interval previous se overlap karta hai ya nahi, overlap ho to merge karo.", "tech": "Sort + Linear Merge", "code": "1. sort intervals by start\n2. result=[intervals[0]]\n3. for interval in intervals[1:]:\n     if interval.start <= result[-1].end:\n        result[-1].end = max(result[-1].end, interval.end)\n     else: result.append(interval)", "time": "O(n log n)", "space": "O(n)", "use": "Calendar/booking systems, CPU process scheduling, log range compression", "samples": ["intervals=[[1,3],[2,6],[8,10],[15,18]] -> [[1,6],[8,10],[15,18]]", "intervals=[[1,4],[4,5]] -> [[1,5]]  (touching counts as overlap)", "intervals=[[1,2],[3,4]] -> [[1,2],[3,4]]  (no overlap)", "intervals=[[1,10],[2,3],[4,5]] -> [[1,10]]  (all inside first)"]}, "q18": {"id": "q18", "p": "Medium", "cat": "Arrays", "q": "Product of Array Except Self", "life": "E-commerce me ek product hata kar baaki sabka combined discount factor calculate karna.", "approach": "Left side se prefix product aur right side se suffix product precompute karo, bina division use kiye.", "tech": "Prefix & Suffix Product Arrays", "code": "1. left[0]=1; for i: left[i]=left[i-1]*arr[i-1]\n2. right[n-1]=1; for i reverse: right[i]=right[i+1]*arr[i+1]\n3. result[i]=left[i]*right[i]", "time": "O(n)", "space": "O(n)", "use": "Recommendation engines, pricing engines, financial ratio calculations", "samples": ["arr=[1,2,3,4] -> [24,12,8,6]", "arr=[-1,1,0,-3,3] -> [0,0,9,0,0]", "arr=[2,3] -> [3,2]", "arr=[5] -> [1]  (no other elements)"]}, "q19": {"id": "q19", "p": "Medium", "cat": "Hashing", "q": "Group Anagrams", "life": "Customer support tickets ko similar keyword pattern ke hisaab se groups me organize karna.", "approach": "Har string ko sort karke ek 'key' bana do, same key wali strings ek hashmap list me group ho jaayengi.", "tech": "HashMap with Sorted-String Key", "code": "1. map = {}\n2. for word in words:\n     key = sorted(word)\n     map[key].append(word)\n3. return map.values()", "time": "O(n*k log k)", "space": "O(n*k)", "use": "Search/Tag grouping systems, log clustering, content deduplication", "samples": ["words=[\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"] -> [[\"eat\",\"tea\",\"ate\"],[\"tan\",\"nat\"],[\"bat\"]]", "words=[\"abc\",\"bca\",\"cab\"] -> [[\"abc\",\"bca\",\"cab\"]]", "words=[\"a\"] -> [[\"a\"]]", "words=[\"x\",\"y\",\"z\"] -> [[\"x\"],[\"y\"],[\"z\"]]  (no anagrams)"]}, "q20": {"id": "q20", "p": "Medium", "cat": "Hashing", "q": "Longest Substring Without Repeating Characters", "life": "Live chat me bina kisi repeated word ke sabse lambi unique message string dhundna.", "approach": "Sliding window + hashmap (character -> last index). Window ko shrink karo jab duplicate mile.", "tech": "Sliding Window + HashMap", "code": "1. map={}, l=0, maxLen=0\n2. for r in range(len(s)):\n     if s[r] in map and map[s[r]]>=l: l=map[s[r]]+1\n     map[s[r]]=r\n     maxLen=max(maxLen, r-l+1)", "time": "O(n)", "space": "O(min(n,m))", "use": "Auto-suggest/search systems, DNA sequencing, text editors", "samples": ["s = \"abcabcbb\" -> 3  (\"abc\")", "s = \"bbbbb\" -> 1  (\"b\")", "s = \"pwwkew\" -> 3  (\"wke\")", "s = \"\" -> 0"]}, "q21": {"id": "q21", "p": "Medium", "cat": "LinkedList", "q": "Detect Cycle in Linked List", "life": "Ek circular dependency chain (jaise microservices A->B->C->A) detect karna jo infinite loop create kare.", "approach": "Fast aur slow pointer (Tortoise & Hare). Agar wo kabhi mile to cycle hai.", "tech": "Floyd's Cycle Detection", "code": "1. slow=fast=head\n2. while fast and fast.next:\n     slow=slow.next; fast=fast.next.next\n     if slow==fast: return True\n3. return False", "time": "O(n)", "space": "O(1)", "use": "Dependency graph validation, memory leak detection, deadlock detection", "samples": ["1->2->3->4->2 (cycle back to node 2) -> True", "1->2->3->None -> False", "1->1 (self loop) -> True", "Empty list -> False"]}, "q22": {"id": "q22", "p": "Medium", "cat": "LinkedList", "q": "Merge Two Sorted Linked Lists", "life": "Do alag sorted playlists ko ek single sorted playlist me merge karna.", "approach": "Dono lists ke heads compare karo, jo chhota hai usse result me add karo, aage badho. Dummy node use karo simplicity ke liye.", "tech": "Two Pointer Merge", "code": "1. dummy=Node(); tail=dummy\n2. while l1 and l2:\n     if l1.val<l2.val: tail.next=l1; l1=l1.next\n     else: tail.next=l2; l2=l2.next\n     tail=tail.next\n3. tail.next = l1 or l2", "time": "O(n+m)", "space": "O(1)", "use": "Merge sort step, combining sorted log files, database merge-join", "samples": ["l1=1->2->4, l2=1->3->4 -> 1->1->2->3->4->4", "l1=Empty, l2=1->2 -> 1->2", "l1=Empty, l2=Empty -> Empty", "l1=5, l2=1 -> 1->5"]}, "q23": {"id": "q23", "p": "Medium", "cat": "Stack", "q": "Next Greater Element", "life": "Stock prices me har din ke baad pehla din dhundna jab price usse zyada ho (for trend prediction).", "approach": "Stack me indices rakho, jab current element stack ke top se bada ho to top ka answer set karo aur pop karo.", "tech": "Monotonic Stack", "code": "1. stack=[]\n2. for i in arr:\n     while stack and stack.top < i:\n        result[stack.pop()] = i\n     stack.push(i)", "time": "O(n)", "space": "O(n)", "use": "Stock trend analysis, temperature span problems, histogram-based UI", "samples": ["arr=[2,1,2,4,3] -> [4,2,4,-1,-1]", "arr=[1,2,3,4] -> [2,3,4,-1]  (already increasing)", "arr=[4,3,2,1] -> [-1,-1,-1,-1]  (already decreasing)", "arr=[5] -> [-1]"]}, "q24": {"id": "q24", "p": "Medium", "cat": "Stack", "q": "Implement Min Stack (O(1) getMin)", "life": "Live bidding system me current minimum bid ko O(1) me track karna chahte hai while bids push/pop hote rahein.", "approach": "Ek extra stack rakho jo current minimum track kare har push/pop ke saath.", "tech": "Auxiliary Stack", "code": "1. push(x): mainStack.push(x); minStack.push(min(x, minStack.top or x))\n2. pop(): mainStack.pop(); minStack.pop()\n3. getMin(): return minStack.top", "time": "O(1) per op", "space": "O(n)", "use": "Real-time bidding systems, stock min-tracking, undo with constraints", "samples": ["push(5), push(2), push(8) -> getMin() = 2", "push(3), pop(), push(1) -> getMin() = 1", "push(-2), push(0), push(-3) -> getMin() = -3", "push(7) only -> getMin() = 7"]}, "q25": {"id": "q25", "p": "Medium", "cat": "Queue", "q": "Implement Queue using Stack / LRU Cache Design", "life": "Browser cache jo limited recently-used pages hi yaad rakhta hai, purani unused page automatically hata deta hai.", "approach": "Doubly linked list + hashmap. Hashmap fast lookup deta hai, linked list recent order maintain karta hai.", "tech": "HashMap + Doubly Linked List", "code": "1. get(key): move node to front, return value\n2. put(key,val):\n     if exists: update & move to front\n     else: insert at front; if size>cap: remove tail", "time": "O(1) per op", "space": "O(capacity)", "use": "Browser/CDN caching, database query cache, OS page replacement", "samples": ["capacity=2; put(1,'A'); put(2,'B'); get(1) -> 'A'", "...continued; put(3,'C') -> evicts key 2 (least recently used)", "get(2) -> -1 (already evicted)", "get(3) -> 'C' (still present)"]}, "q26": {"id": "q26", "p": "Medium", "cat": "Trees", "q": "Binary Tree Level Order Traversal (BFS)", "life": "Company ke org-chart ko level by level (designation hierarchy ke according) print karna.", "approach": "Queue use karo - root daalo, har level ke saare nodes process karo, unke children next level me daalo.", "tech": "BFS using Queue", "code": "1. queue=[root]\n2. while queue:\n     level=[]\n     for _ in range(len(queue)):\n        node=queue.pop(0)\n        level.append(node.val)\n        queue.extend(node.children)\n     result.append(level)", "time": "O(n)", "space": "O(n)", "use": "Org-chart rendering, file system tree views, social network friend levels", "samples": ["tree=[3,9,20,null,null,15,7] -> [[3],[9,20],[15,7]]", "tree=[1] -> [[1]]", "tree=Empty -> []", "tree=[1,2,3,4,5] -> [[1],[2,3],[4,5]]"]}, "q27": {"id": "q27", "p": "Medium", "cat": "Trees", "q": "Validate Binary Search Tree", "life": "Library catalog system check karna ki books sahi sorted order me organized hai ya nahi (left always less, right always more).", "approach": "Recursively check karo har node ek (min,max) range ke andar hai, range ko children call karte time update karo.", "tech": "Recursive Range Check (DFS)", "code": "1. def valid(node, low, high):\n     if not node: return True\n     if not(low<node.val<high): return False\n     return valid(node.left,low,node.val) and valid(node.right,node.val,high)", "time": "O(n)", "space": "O(h)", "use": "Database index validation (B-Trees), file system hierarchy checks", "samples": ["tree=[2,1,3] -> True (valid BST)", "tree=[5,1,4,null,null,3,6] -> False (4's right child 3 < 4)", "tree=[1] -> True (single node)", "tree=[10,5,15,null,null,6,20] -> False (15's left child 6 < 15 but invalid range)"]}, "q28": {"id": "q28", "p": "Medium", "cat": "Trees", "q": "Lowest Common Ancestor (LCA)", "life": "Org chart me do employees ka common reporting manager (sabse near wala) dhundna.", "approach": "Recursively dono nodes dhundo, jaha dono alag subtree me milte hai wahi unka LCA hai.", "tech": "Recursive DFS", "code": "1. def lca(root,p,q):\n     if not root or root==p or root==q: return root\n     left=lca(root.left,p,q)\n     right=lca(root.right,p,q)\n     if left and right: return root\n     return left or right", "time": "O(n)", "space": "O(h)", "use": "Org hierarchy queries, version control merge-base (git), taxonomy systems", "samples": ["tree=[3,5,1,6,2,0,8], p=5, q=1 -> LCA = 3", "tree=[3,5,1,6,2,0,8], p=5, q=4 -> LCA = 5 (4 is child of 2 under 5)", "tree=[1,2], p=1, q=2 -> LCA = 1", "tree=[5], p=5, q=5 -> LCA = 5"]}, "q29": {"id": "q29", "p": "Medium", "cat": "Trees", "q": "Diameter of Binary Tree", "life": "Company network ke do farthest connected offices ke beech longest communication path dhundna.", "approach": "Har node par left aur right subtree ki height nikalo, dono ka sum hi us node se guzarne wala diameter hai.", "tech": "DFS + Height Calculation", "code": "1. def height(node):\n     if not node: return 0\n     l=height(node.left); r=height(node.right)\n     diameter=max(diameter, l+r)\n     return max(l,r)+1", "time": "O(n)", "space": "O(h)", "use": "Network topology analysis, organizational span analysis", "samples": ["tree=[1,2,3,4,5] -> diameter = 3 (path 4-2-1-3 or 5-2-1-3)", "tree=[1] -> diameter = 0", "tree=[1,2] -> diameter = 1", "tree=Empty -> diameter = 0"]}, "q30": {"id": "q30", "p": "Medium", "cat": "Graphs", "q": "BFS / DFS Traversal of Graph", "life": "Social network me ek user ke saare friends-of-friends connections explore karna.", "approach": "BFS queue use karke level-wise explore karta hai, DFS stack/recursion use karke deep explore karta hai. Visited set zaroor rakho.", "tech": "Adjacency List + BFS/DFS", "code": "1. visited=set([start])\n2. queue=[start]\n3. while queue:\n     node=queue.pop(0)\n     for neighbor in graph[node]:\n        if neighbor not in visited:\n           visited.add(neighbor); queue.append(neighbor)", "time": "O(V+E)", "space": "O(V)", "use": "Social network connections, web crawlers, network routing protocols", "samples": ["graph={A:[B,C], B:[D], C:[D], D:[]}, start=A -> BFS: A,B,C,D", "graph={1:[2], 2:[3], 3:[1]}, start=1 -> DFS: 1,2,3 (cycle handled by visited set)", "graph={X:[]}, start=X -> [X] (isolated node)", "graph={A:[B], B:[A]}, start=A -> BFS: A,B"]}, "q31": {"id": "q31", "p": "Medium", "cat": "Graphs", "q": "Number of Islands (Connected Components)", "life": "Satellite image me alag-alag connected land patches (islands) ki count nikalna.", "approach": "Grid ke har unvisited land cell se DFS/BFS chalao, connected sab cells ko visited mark karo, count++.", "tech": "DFS/BFS on Grid", "code": "1. count=0\n2. for each cell:\n     if cell=='1' and not visited:\n        count++; dfs(cell) marking visited", "time": "O(rows*cols)", "space": "O(rows*cols)", "use": "Image segmentation, fraud ring detection (connected accounts), network cluster analysis", "samples": ["grid=[[1,1,0],[0,1,0],[0,0,1]] -> 2 islands", "grid=[[1,0],[0,1]] -> 2 islands (diagonal not connected)", "grid=[[0,0],[0,0]] -> 0 islands", "grid=[[1,1],[1,1]] -> 1 island (all connected)"]}, "q32": {"id": "q32", "p": "Medium", "cat": "Graphs", "q": "Topological Sort", "life": "Project tasks ka order decide karna jab kuch tasks dusre tasks par dependent hai (jaise CI/CD pipeline).", "approach": "Har node ki in-degree count karo, jin nodes ki in-degree 0 hai unhe queue me daalo, process karte jao aur neighbors ki in-degree kam karo.", "tech": "Kahn's Algorithm (BFS) / DFS-based", "code": "1. compute in-degree of all nodes\n2. queue = nodes with in-degree 0\n3. while queue:\n     node=queue.pop()\n     result.append(node)\n     for neighbor in graph[node]:\n        indegree[neighbor]--\n        if indegree[neighbor]==0: queue.append(neighbor)", "time": "O(V+E)", "space": "O(V)", "use": "Build systems (Maven/Webpack), task scheduling, course prerequisite systems", "samples": ["tasks: A->B, A->C, B->D, C->D -> Order: A,B,C,D (or A,C,B,D)", "courses: [1 depends on 0] -> Order: 0,1", "courses with cycle: [0 depends on 1, 1 depends on 0] -> Not possible (cycle detected)", "tasks: no dependencies [A,B,C] -> Any order: A,B,C"]}, "q33": {"id": "q33", "p": "Medium", "cat": "Graphs", "q": "Dijkstra's Shortest Path", "life": "Google Maps me do locations ke beech sabse kam time/distance wala route dhundna.", "approach": "Min-heap (priority queue) use karo, hamesha sabse kam distance wala node process karo, neighbors ki distance update (relax) karo.", "tech": "Priority Queue (Min-Heap)", "code": "1. dist[start]=0, others=infinity\n2. pq=[(0,start)]\n3. while pq:\n     (d,node)=pq.pop_min()\n     for (neighbor,weight) in graph[node]:\n        if d+weight < dist[neighbor]:\n           dist[neighbor]=d+weight\n           pq.push((dist[neighbor],neighbor))", "time": "O((V+E) log V)", "space": "O(V)", "use": "Maps/navigation apps, network packet routing, flight price optimization", "samples": ["graph: A-B(4), A-C(1), C-B(2), start=A -> dist: A=0,B=3,C=1", "graph: single node A, start=A -> dist: A=0", "graph: A-B(10), no other path, start=A -> dist: A=0,B=10", "graph: disconnected node D, start=A -> dist: D=infinity (unreachable)"]}, "q34": {"id": "q34", "p": "Medium", "cat": "Recursion", "q": "Generate Permutations / Combinations", "life": "Lock ke saare possible password combinations generate karna (testing/security audit ke liye).", "approach": "Backtracking - ek choice pick karo, recurse karo baaki elements ke saath, fir undo (backtrack) karke next choice try karo.", "tech": "Backtracking", "code": "1. def backtrack(path, remaining):\n     if not remaining: result.append(path); return\n     for i in remaining:\n        backtrack(path+[i], remaining-{i})", "time": "O(n!)", "space": "O(n)", "use": "Password strength testing, scheduling combinations, game move generation", "samples": ["arr=[1,2,3] -> [[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]]", "arr=[1,2] -> [[1,2],[2,1]]", "arr=[1] -> [[1]]", "arr=[] -> [[]]"]}, "q35": {"id": "q35", "p": "Medium", "cat": "Backtracking", "q": "N-Queens / Sudoku Solver", "life": "Class timetable banana jaha conflicting subjects same time slot me na ho (constraint satisfaction).", "approach": "Ek cell/position try karo, validity check karo, agar valid hai to aage recurse karo, invalid/dead-end pe backtrack karo.", "tech": "Backtracking with Constraint Check", "code": "1. def solve(board, pos):\n     if pos==end: return True\n     for choice in options:\n        if isValid(board, pos, choice):\n           place(choice)\n           if solve(board,pos+1): return True\n           undo(choice)\n     return False", "time": "Exponential (pruned)", "space": "O(n)", "use": "Scheduling/timetabling engines, resource allocation, game AI (puzzle solvers)", "samples": ["n=4 (4-Queens) -> 2 valid solutions exist", "n=1 -> 1 solution (single queen)", "n=2 or n=3 -> 0 solutions (impossible to place safely)", "n=8 (8-Queens, classic problem) -> 92 valid solutions"]}, "q36": {"id": "q36", "p": "Medium", "cat": "DP", "q": "Fibonacci with Memoization", "life": "Compound interest jaisi recursive growth calculation jaha bar-bar same sub-calculation repeat hoti hai.", "approach": "Pehle plain recursion (slow), fir ek dictionary/array me already computed results store karo (memoization) taki dobara calculate na karna pade.", "tech": "Top-Down Memoization / Bottom-Up DP", "code": "1. memo={}\n2. def fib(n):\n     if n in memo: return memo[n]\n     if n<=1: return n\n     memo[n]=fib(n-1)+fib(n-2)\n     return memo[n]", "time": "O(n)", "space": "O(n)", "use": "Caching/memoization patterns in APIs, financial growth modeling", "samples": ["n=5 -> 5  (0,1,1,2,3,5)", "n=10 -> 55", "n=0 -> 0", "n=1 -> 1"]}, "q37": {"id": "q37", "p": "Medium", "cat": "DP", "q": "0/1 Knapsack Problem", "life": "Limited budget me sabse best ROI dene wale projects choose karna (har project ek baar hi le sakte ho).", "approach": "Har item ke liye 2 choice: lo ya na lo. DP table banao (items x capacity) jo max value store kare.", "tech": "2D Dynamic Programming Table", "code": "1. dp[i][w] = max(dp[i-1][w], dp[i-1][w-wt[i]]+val[i]) if wt[i]<=w else dp[i-1][w]\n2. answer = dp[n][capacity]", "time": "O(n*capacity)", "space": "O(n*capacity)", "use": "Budget/resource allocation, cargo loading optimization, portfolio selection", "samples": ["weights=[1,3,4,5], values=[1,4,5,7], capacity=7 -> max value = 9", "weights=[2,3], values=[3,4], capacity=4 -> max value = 4", "weights=[5], values=[10], capacity=3 -> max value = 0 (doesn't fit)", "weights=[1,1,1], values=[10,20,30], capacity=2 -> max value = 50"]}, "q38": {"id": "q38", "p": "Medium", "cat": "DP", "q": "Longest Common Subsequence (LCS)", "life": "Git diff / Word's 'track changes' feature jo do document versions me common matching parts dhundta hai.", "approach": "2D DP table banao - agar characters match karte hai to diagonal+1, nahi to max(top,left).", "tech": "2D Dynamic Programming Table", "code": "1. dp[i][j] = dp[i-1][j-1]+1 if s1[i]==s2[j]\n2. else dp[i][j] = max(dp[i-1][j], dp[i][j-1])", "time": "O(n*m)", "space": "O(n*m)", "use": "Diff tools (git diff), DNA sequence alignment, plagiarism detection", "samples": ["s1=\"abcde\", s2=\"ace\" -> LCS length = 3 (\"ace\")", "s1=\"abc\", s2=\"def\" -> LCS length = 0 (nothing common)", "s1=\"abc\", s2=\"abc\" -> LCS length = 3 (identical)", "s1=\"\", s2=\"abc\" -> LCS length = 0"]}, "q39": {"id": "q39", "p": "Medium", "cat": "DP", "q": "Coin Change (Min Coins / Ways)", "life": "ATM machine jo minimum number of currency notes me ek amount dispense karta hai.", "approach": "DP array banao jaha dp[amount] = minimum coins chahiye. Har coin ke liye dp update karo bottom-up.", "tech": "Bottom-Up DP (Unbounded Knapsack style)", "code": "1. dp=[inf]*(amount+1); dp[0]=0\n2. for coin in coins:\n     for a in range(coin, amount+1):\n        dp[a]=min(dp[a], dp[a-coin]+1)", "time": "O(amount*coins)", "space": "O(amount)", "use": "ATM/cash dispensing systems, currency exchange optimization, billing systems", "samples": ["coins=[1,2,5], amount=11 -> 3 coins (5+5+1)", "coins=[2], amount=3 -> -1 (not possible, odd amount with only 2s)", "coins=[1], amount=0 -> 0 coins", "coins=[1,5,10,25], amount=30 -> 2 coins (25+5)"]}, "q40": {"id": "q40", "p": "Hard", "cat": "DP", "q": "Edit Distance (Levenshtein Distance)", "life": "Spell-checker jo batata hai ek galat spelled word ko correct karne ke liye minimum kitne changes chahiye.", "approach": "2D DP table - insert/delete/replace operations ka minimum cost track karo cell by cell.", "tech": "2D Dynamic Programming Table", "code": "1. dp[i][j] = dp[i-1][j-1] if s1[i]==s2[j]\n2. else dp[i][j] = 1+min(dp[i-1][j], dp[i][j-1], dp[i-1][j-1])", "time": "O(n*m)", "space": "O(n*m)", "use": "Spell checkers, autocorrect (mobile keyboards), DNA/genome comparison", "samples": ["word1=\"horse\", word2=\"ros\" -> 3 edits", "word1=\"intention\", word2=\"execution\" -> 5 edits", "word1=\"abc\", word2=\"abc\" -> 0 edits (identical)", "word1=\"\", word2=\"abc\" -> 3 edits (all insertions)"]}, "q41": {"id": "q41", "p": "Hard", "cat": "Trees", "q": "Serialize and Deserialize Binary Tree", "life": "Ek tree-structured data (jaise file system/org chart) ko file/network me save karna aur fir wapas reconstruct karna.", "approach": "Preorder traversal use karo serialize karne ke liye (null markers ke saath), fir same order me deserialize karo.", "tech": "Preorder DFS with Markers", "code": "1. serialize: preorder traverse, append 'null' for empty nodes, join with comma\n2. deserialize: split string, recursively rebuild using same order", "time": "O(n)", "space": "O(n)", "use": "Database storage of tree structures, API payloads for hierarchical data, distributed system state transfer", "samples": ["tree=[1,2,3,null,null,4,5] -> serialized: \"1,2,null,null,3,4,null,null,5,null,null\"", "tree=[1] -> serialized: \"1,null,null\"", "tree=Empty -> serialized: \"null\"", "deserialize(\"1,2,null,null,3,null,null\") -> tree=[1,2,3]"]}, "q42": {"id": "q42", "p": "Hard", "cat": "Graphs", "q": "Clone a Graph / Detect Cycle in Directed Graph", "life": "Microservices ke dependency graph me circular dependency (deadlock risk) detect karna.", "approach": "DFS karte time 3 states rakho: unvisited, visiting (in current path), visited. Agar 'visiting' node firse mil jaye to cycle hai.", "tech": "DFS with 3-state Coloring", "code": "1. states = {} # 0=unvisited,1=visiting,2=done\n2. def dfs(node):\n     if states[node]==1: return True # cycle\n     if states[node]==2: return False\n     states[node]=1\n     for n in graph[node]:\n        if dfs(n): return True\n     states[node]=2\n     return False", "time": "O(V+E)", "space": "O(V)", "use": "Microservice dependency analysis, deadlock detection, build dependency graphs", "samples": ["graph: A->B, B->C, C->A -> Cycle detected = True", "graph: A->B, B->C, C->D -> Cycle detected = False", "graph: A->A (self-loop) -> Cycle detected = True", "graph: A->B, A->C, B->D, C->D -> Cycle detected = False (DAG)"]}, "q43": {"id": "q43", "p": "Hard", "cat": "Heap", "q": "Top K Frequent Elements / Kth Largest Element", "life": "E-commerce site par 'Top 10 trending products' ki list real-time data se nikalna.", "approach": "Min-heap of size k maintain karo. Agar naya element heap ke smallest se bada hai to smallest hata kar naya daalo.", "tech": "Min-Heap of size K", "code": "1. heap=[]\n2. for num in arr:\n     push(heap, num)\n     if len(heap)>k: pop_min(heap)\n3. return heap", "time": "O(n log k)", "space": "O(k)", "use": "Trending products/hashtags, leaderboard top scores, recommendation systems", "samples": ["arr=[1,1,1,2,2,3], k=2 -> Top 2 frequent = [1,2]", "arr=[3,2,3,1,2,4,5,5,6], k=2 -> 2nd largest = 5", "arr=[1], k=1 -> Top 1 = [1]", "arr=[7,10,4,3,20,15], k=3 -> 3rd largest = 10"]}, "q44": {"id": "q44", "p": "Hard", "cat": "Heap", "q": "Merge K Sorted Lists", "life": "Multiple servers/log files (already sorted by timestamp) ko ek single sorted timeline me merge karna.", "approach": "Min-heap me har list ka current smallest element daalo. Heap se smallest nikalo, result me daalo, uski list ka next element heap me push karo.", "tech": "Min-Heap (K-way Merge)", "code": "1. heap = [(list[0], i, 0) for i, list in enumerate(lists)]\n2. while heap:\n     val, listIdx, elemIdx = pop_min(heap)\n     result.append(val)\n     if next element exists: push it", "time": "O(n log k)", "space": "O(k)", "use": "Distributed log aggregation (ELK stack), merging sorted database shards, external merge sort", "samples": ["lists=[[1,4,5],[1,3,4],[2,6]] -> merged = [1,1,2,3,4,4,5,6]", "lists=[[],[]] -> merged = []", "lists=[[1]] -> merged = [1]", "lists=[[1,5],[2],[3,4]] -> merged = [1,2,3,4,5]"]}, "q45": {"id": "q45", "p": "Hard", "cat": "System Design", "q": "Design Rate Limiter (Sliding Window/Token Bucket)", "life": "API gateway jo ek user ko per minute limited requests hi allow karta hai (DDoS/abuse prevent karne ke liye).", "approach": "Token bucket: tokens fixed rate se refill hote hai, request aane par token consume hota hai, token na ho to reject. Sliding window: timestamp deque maintain karo.", "tech": "Token Bucket / Sliding Window Counter", "code": "1. tokens = capacity\n2. refill tokens based on elapsed time\n3. if tokens>=1: tokens-=1; allow request\n4. else: reject request", "time": "O(1) per request", "space": "O(users)", "use": "API rate limiting (Stripe/AWS), DDoS protection, login attempt throttling", "samples": ["capacity=5, refill=1/sec; 5 requests in 1 sec -> All 5 allowed, 6th rejected", "capacity=5; after 5 sec wait, bucket refills -> New requests allowed again", "capacity=1; 2 requests at same instant -> 1 allowed, 1 rejected (429 Too Many Requests)", "capacity=100/min; 50 requests spread over 1 min -> All 50 allowed (under limit)"]}, "q46": {"id": "q46", "p": "Hard", "cat": "Trie", "q": "Implement Trie (Prefix Tree) for Autocomplete", "life": "Google search bar / mobile keyboard jo type karte time matching suggestions show karta hai.", "approach": "Har character ek tree node hota hai, common prefixes share hote hai. Word end par flag mark karo.", "tech": "Trie Data Structure", "code": "1. insert(word): node=root; for c in word: if c not in node.children: create; node=node.children[c]; mark end\n2. search(prefix): traverse nodes for each char, return matches", "time": "O(L) per op", "space": "O(total chars)", "use": "Autocomplete/search suggestions, spell checkers, IP routing tables", "samples": ["insert(\"apple\"); search(\"app\") -> True (prefix exists)", "insert(\"apple\"); search(\"appl\") with exact match -> False (not a complete word)", "insert(\"car\"), insert(\"care\"), insert(\"cart\"); prefix=\"car\" -> suggestions=[\"car\",\"care\",\"cart\"]", "search(\"xyz\") when not inserted -> False"]}, "q47": {"id": "q47", "p": "Medium", "cat": "Hashing", "q": "LFU Cache (Least Frequently Used)", "life": "Streaming app me cache ka size limited hai, kam dekhe gaye videos hata kar sabse zyada dekha gaya video cache me rakhna hai.", "approach": "HashMap (key -> value+freq) rakho aur ek dusra HashMap (freq -> ordered set of keys). minFreq track karo, eviction time minFreq bucket se sabse purana key hatao.", "tech": "HashMap + Frequency Buckets", "code": "1. get(key): freq[key]++; move key to new freq bucket; return value\n2. put(key,val):\n     if exists: update value, increase freq\n     else:\n        if size==capacity: evict key with minFreq (oldest in that bucket)\n        insert key with freq=1; minFreq=1", "time": "O(1) per op", "space": "O(capacity)", "use": "CDN edge caching, in-memory cache layers (Redis-like LFU eviction), recommendation pre-fetch caching", "samples": ["capacity=2; put(1,'A'); put(2,'B'); get(1) -> 'A' (freq of 1 becomes 2)", "put(3,'C') -> evicts key 2 (lowest freq, since 1 was accessed more)", "get(2) -> -1 (already evicted)", "get(3) -> 'C' (still present, freq=1)"]}, "q48": {"id": "q48", "p": "Hard", "cat": "Hashing", "q": "Bloom Filter for Fast Existence Check", "life": "Username available check karte time DB hit se pehle fast 'shayad already exists' check karna, taaki har baar DB pe load na jaye.", "approach": "Bit array banao, har insert pe k alag hash functions se k positions ko 1 set karo. Check time pe agar koi bhi position 0 hai to 100% absent hai, sab 1 hai to 'maybe present' (false positive possible, false negative kabhi nahi).", "tech": "Bit Array + Multiple Hash Functions", "code": "1. insert(x): for hash in hashFns: bitArray[hash(x) % m] = 1\n2. mightExist(x):\n     for hash in hashFns:\n        if bitArray[hash(x)%m]==0: return False\n     return True  (maybe exists)", "time": "O(k) per op (k = number of hash functions)", "space": "O(m) bits", "use": "Username/email duplicate check before DB call, malicious URL/spam detection, CDN cache-miss avoidance, Cassandra/HBase read-path optimization", "samples": ["insert('sagar'); mightExist('sagar') -> True (definitely could be present)", "mightExist('random_unused_name') -> usually False (not inserted)", "insert('a'), insert('b'); mightExist('c') -> False most of the time (small false-positive chance)", "Bloom filter never says 'absent' for something actually inserted (no false negatives)"]}, "q49": {"id": "q49", "p": "Medium", "cat": "Bit Manipulation", "q": "Distributed Unique ID Generator (Snowflake-style)", "life": "Multiple servers ek saath orders create kar rahe hai, sabko globally unique aur time-sortable order ID chahiye bina central DB auto-increment sequence ke.", "approach": "64-bit number ko parts me todo: pehle bits timestamp ke, beech ke bits machine/worker-id ke, last bits per-millisecond sequence counter ke. Bit-shift (<<) aur OR (|) karke sabko combine karo.", "tech": "Bit Shifting & Masking", "code": "1. id = (timestamp << 22) | (workerId << 12) | sequence\n2. sequence resets every millisecond, increments if same ms\n3. timestamp = currentTimeMillis - epoch", "time": "O(1)", "space": "O(1)", "use": "Order IDs in distributed e-commerce systems, message-queue ids (Kafka partitioned ids), database sharding/partition keys", "samples": ["workerId=1, timestamp=T, seq=0 -> ID = (T<<22)|(1<<12)|0", "Same ms, next call -> seq=1, new unique ID even on same worker", "Different worker (workerId=2) same ms -> different ID due to different workerId bits", "IDs generated later always have a numerically larger value (time-sortable)"]}, "q50": {"id": "q50", "p": "Medium", "cat": "Hashing", "q": "Idempotency Key Deduplication", "life": "Payment retry hone par same payment do baar process na ho jaaye - client ek 'Idempotency-Key' header bhejta hai, usse duplicate request detect karna hai.", "approach": "Incoming request ka idempotency key HashMap/Redis me store karo (saath me cached response, TTL ke saath). Same key dobara aaye to stored response wapas bhej do, dobara process mat karo.", "tech": "HashMap/Redis with TTL Expiry", "code": "1. key = request.idempotencyKey\n2. if key in cache: return cache[key]   // duplicate, return old response\n3. response = processRequest(request)\n4. cache[key] = response  (with TTL, e.g. 24hrs)\n5. return response", "time": "O(1) per check", "space": "O(active keys within TTL window)", "use": "Payment gateways (Razorpay/Stripe duplicate charge prevention), order-creation APIs, webhook retry handling", "samples": ["key='abc123' first call -> processes payment, caches response", "key='abc123' retried (network timeout retry) -> returns same cached response, no double charge", "key='xyz999' new request -> processed normally", "key='abc123' after TTL expires (24hrs) -> treated as fresh request"]}, "q51": {"id": "q51", "p": "Medium", "cat": "Queue", "q": "Design Hit Counter / Sliding Window Request Count", "life": "Last 5 minutes me kisi API endpoint par kitne hits hue, ye real-time count karna (per-user rate-limit dashboards ke liye).", "approach": "Deque me request timestamps store karo. Naya hit aane par window se bahar (purane) timestamps front se remove karo, deque ka current size hi count hai.", "tech": "Deque (Sliding Window)", "code": "1. hit(timestamp): deque.append(timestamp)\n2. getCount(timestamp):\n     while deque and deque[0] <= timestamp - WINDOW:\n        deque.popleft()\n     return len(deque)", "time": "O(1) amortized per hit, O(n) worst-case for getCount", "space": "O(window size)", "use": "API analytics dashboards, abuse/bot detection, real-time metrics counters (Grafana-style live graphs)", "samples": ["hit(1); hit(2); hit(3); getCount(4) with window=5 -> 3 (all within last 5 sec)", "hit at t=1..100, getCount(105) with window=5 -> only hits from t=100..105 counted", "No hits in last window -> getCount returns 0", "window=60 (1 min); 1000 hits in 1 sec -> getCount = 1000 (all within window)"]}, "q52": {"id": "q52", "p": "Hard", "cat": "Heap", "q": "Find Median from Data Stream", "life": "Live server response-time monitoring jaha continuously naya latency data aata rehta hai, aur real-time median latency dikhani hoti hai.", "approach": "Do heaps rakho - max-heap chhote half ke liye, min-heap bade half ke liye. Dono heaps ko balance (size diff <=1) rakhte raho, median heaps ke top se O(1) me mil jata hai.", "tech": "Two Heaps (Max-Heap + Min-Heap)", "code": "1. addNum(num):\n     if maxHeap empty or num<=maxHeap.top: maxHeap.push(num)\n     else: minHeap.push(num)\n     rebalance sizes (diff <= 1)\n2. findMedian():\n     if sizes equal: avg of both tops\n     else: top of bigger heap", "time": "O(log n) insert, O(1) get median", "space": "O(n)", "use": "Real-time latency/SLA monitoring dashboards, live analytics pipelines, streaming sensor/IoT data aggregation", "samples": ["stream=[5,2,3] -> after all inserted, median=3", "stream=[5,2,3,8] -> median = (3+5)/2 = 4.0", "stream=[1] -> median = 1", "stream=[] -> undefined/no median yet"]}, "q53": {"id": "q53", "p": "Medium", "cat": "Graphs", "q": "Word Ladder / Shortest Transformation Path", "life": "Autocorrect/typo-fix system jaha ek galat word ko minimum steps me valid word tak transform karna hai, har step me sirf ek character change.", "approach": "BFS use karo - har valid word ek node hai, agar ek character change karke dusra valid word banta hai to unke beech edge hai. BFS se minimum transformations (shortest path) milta hai.", "tech": "BFS on Implicit Graph", "code": "1. queue=[(startWord, 1)]\n2. while queue:\n     word, steps = queue.pop(0)\n     if word==endWord: return steps\n     for each possible 1-char variation of word:\n        if variation in wordSet and not visited:\n           visited.add(variation); queue.append((variation, steps+1))\n3. return 0  (no path found)", "time": "O(n * L^2) where n=words, L=word length", "space": "O(n)", "use": "Spell-correction engines, fuzzy search ranking/suggestions, DNA mutation path analysis", "samples": ["start='hit', end='cog', wordList=['hot','dot','dog','lot','log','cog'] -> 5 steps (hit->hot->dot->dog->cog)", "start='hit', end='cog', wordList=['hot','dot','dog','lot','log'] -> 0 (cog not reachable, not in list)", "start='a', end='c', wordList=['a','b','c'] -> 2 steps (a->c directly if 1-char diff, or via b)", "start=end same word -> 1 step (no transformation needed)"]}, "q54": {"id": "q54", "p": "Medium", "cat": "Graphs", "q": "Union-Find (Disjoint Set) for Connectivity", "life": "Bank fraud detection me pata karna ki kaunse accounts ek hi fraud-ring (connected cluster) me hai, transactions ke links ke basis par.", "approach": "Har element apna 'parent' rakhta hai. Union operation do groups ko merge karta hai (root ko jod do), Find operation root parent dhundta hai. Path compression + union by rank se operations near O(1) ho jaate hai.", "tech": "Disjoint Set Union (Union-Find)", "code": "1. find(x): if parent[x]!=x: parent[x]=find(parent[x]); return parent[x]\n2. union(x,y):\n     rootX=find(x); rootY=find(y)\n     if rootX!=rootY: parent[rootX]=rootY  (or by rank)\n3. connected(x,y): return find(x)==find(y)", "time": "O(1) amortized per operation (with path compression + rank)", "space": "O(n)", "use": "Fraud-ring/connected-account detection, network connectivity checks, Kruskal's MST algorithm, social-network friend-circle counting", "samples": ["accounts: union(A,B); union(B,C) -> A,B,C all connected (1 ring)", "union(X,Y); connected(X,Y) -> True", "No union called between P and Q -> connected(P,Q) = False", "union(1,2); union(3,4); union(2,3) -> all 4 (1,2,3,4) end up in same group"]}, "q55": {"id": "q55", "p": "Hard", "cat": "Concurrency", "q": "Producer-Consumer with Bounded Queue", "life": "Order-processing system jaha multiple producers (order-creation APIs) orders generate karte hai aur limited background workers (consumers) unhe process karte hai; queue full hone par producer ko wait karna padta hai.", "approach": "Fixed-size queue banao jiske saath lock/semaphore ho. Queue full ho to producer block/wait kare, queue empty ho to consumer wait kare. Signal/notify se dono coordinate karte hai bina busy-waiting ke.", "tech": "Bounded Blocking Queue (Semaphore/Monitor)", "code": "1. produce(item):\n     wait until queue.size < capacity\n     queue.enqueue(item)\n     notify consumers\n2. consume():\n     wait until queue.size > 0\n     item = queue.dequeue()\n     notify producers\n     return item", "time": "O(1) per enqueue/dequeue (excluding wait time)", "space": "O(buffer/queue capacity)", "use": "Message queues (RabbitMQ/Kafka consumer groups), background job processing pipelines, thread-pool task queues in .NET (Channel<T>, BlockingCollection)", "samples": ["capacity=3; 3 producers enqueue items -> queue full, 4th producer blocks until space frees", "Consumer dequeues 1 item -> blocked producer wakes up, enqueues its item", "Empty queue, consumer tries to dequeue -> consumer blocks until a producer adds an item", "capacity=1; rapid alternating produce/consume -> always exactly 0 or 1 item in queue"]}, "q56": {"id": "q56", "p": "Medium", "cat": "DP", "q": "Exponential Backoff with Jitter (Retry Logic)", "life": "External payment gateway API down ho jaaye to turant retry karne se overload badhta hai - thoda wait karke, har fail pe wait time double karke phir retry karna better hai.", "approach": "Retry attempt ke saath wait time = baseDelay * 2^attempt rakho. Randomness (jitter) add karo taaki saare clients exactly same time pe retry na karein (thundering herd problem avoid hota hai).", "tech": "Exponential Backoff + Jitter", "code": "1. for attempt in range(maxRetries):\n     try: return callAPI()\n     except Error:\n        delay = min(maxDelay, baseDelay * 2^attempt)\n        jitter = random(0, delay)\n        sleep(jitter)\n2. raise FinalFailure", "time": "O(1) per retry calculation", "space": "O(1)", "use": "Third-party API retry logic (payment gateways, AWS SDK), distributed-system fault tolerance, message-queue consumer retry policies", "samples": ["attempt=0, base=1s -> delay~1s (with jitter, e.g. 0.3-1s)", "attempt=1, base=1s -> delay~2s (0.5-2s with jitter)", "attempt=2, base=1s -> delay~4s, capped at maxDelay if set (e.g. max=10s)", "All retries exhausted (e.g. 5 attempts) -> propagate final failure/exception to caller"]}, "q57": {"id": "q57", "p": "Medium", "cat": "Arrays", "q": "Cursor-Based Pagination", "life": "Social-media feed me 'load more' button jo har baar last dekhe gaye post ke baad ka data laata hai, page-number ke basis par nahi.", "approach": "Last record ka unique sortable id/timestamp 'cursor' ke roop me client ko bhejo. Next request me 'WHERE id > cursor ORDER BY id LIMIT n' query karo - OFFSET use mat karo kyuki bade data me wo slow ho jata hai.", "tech": "Cursor/Keyset-based Query", "code": "1. firstPage: SELECT * FROM posts ORDER BY id DESC LIMIT 20\n2. cursor = lastReturnedRow.id\n3. nextPage: SELECT * FROM posts WHERE id < cursor ORDER BY id DESC LIMIT 20", "time": "O(log n) per page (with proper index on cursor column)", "space": "O(page size)", "use": "Infinite-scroll feeds (Instagram/Twitter timelines), large-dataset REST/GraphQL APIs, real-time chat message history loading", "samples": ["page1: 20 posts, last id=980 -> cursor=980 returned to client", "page2 request with cursor=980 -> returns next 20 posts with id<980", "New post inserted between requests -> cursor pagination still works correctly (unlike offset, no duplicate/skip)", "cursor=null (first request) -> returns the very first page"]}, "q58": {"id": "q58", "p": "Hard", "cat": "Arrays", "q": "Trapping Rain Water", "life": "Buildings/terrain ke beech rain-water collection capacity calculate karna - elevation/terrain analysis jaisa real scenario.", "approach": "Har position ke liye left-max height aur right-max height precompute karo (ya two-pointer se on-the-fly track karo). Us position par paani = min(leftMax,rightMax) - height[i], agar negative ho to 0.", "tech": "Two Pointer / Prefix-Suffix Max", "code": "1. l=0, r=n-1, leftMax=0, rightMax=0, water=0\n2. while l<r:\n     if height[l]<height[r]:\n        leftMax=max(leftMax, height[l])\n        water += leftMax - height[l]; l++\n     else:\n        rightMax=max(rightMax, height[r])\n        water += rightMax - height[r]; r--\n3. return water", "time": "O(n)", "space": "O(1) with two-pointer approach", "use": "Terrain/elevation analysis tools, resource/tank capacity planning, histogram-based UI water-fill visualizations", "samples": ["height=[0,1,0,2,1,0,1,3,2,1,2,1] -> trapped water = 6", "height=[4,2,0,3,2,5] -> trapped water = 9", "height=[1,2,3,4] -> trapped water = 0 (strictly increasing, no trap)", "height=[5] or [] -> trapped water = 0"]}};
+
+// Convert object -> array form for easy iteration, but DATA_DB remains the source of truth (JSON object)
+const DATA = Object.values(DATA_DB);
+
+const STORAGE_KEY = "dsa-sheet-status-v1";
+let statusMap = {};
+try{ statusMap = JSON.parse(localStorage.getItem(STORAGE_KEY)) || {}; }catch(e){ statusMap = {}; }
+
+let activePriority = "All";
+let activeCategory = "All";
+let searchTerm = "";
+
+const container = document.getElementById("cardContainer");
+const emptyMsg = document.getElementById("empty");
+const countEl = document.getElementById("count");
+
+const categories = ["All", ...Array.from(new Set(DATA.map(d=>d.cat)))];
+const priorities = ["All","Easy","Medium","Hard"];
+
+function buildChips(){
+  const pWrap = document.getElementById("priorityFilters");
+  pWrap.innerHTML = "";
+  priorities.forEach(p=>{
+    const chip = document.createElement("div");
+    chip.className = "chip" + (p===activePriority ? " active" : "");
+    chip.textContent = p;
+    chip.onclick = ()=>{ activePriority = p; render(); buildChips(); };
+    pWrap.appendChild(chip);
+  });
+
+  const cWrap = document.getElementById("categoryFilters");
+  cWrap.innerHTML = "";
+  categories.forEach(c=>{
+    const chip = document.createElement("div");
+    chip.className = "chip" + (c===activeCategory ? " active" : "");
+    chip.textContent = c;
+    chip.onclick = ()=>{ activeCategory = c; render(); buildChips(); };
+    cWrap.appendChild(chip);
+  });
+}
+
+function escapeHtml(str){
+  return str.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+}
+
+function matches(item){
+  if(activePriority!=="All" && item.p!==activePriority) return false;
+  if(activeCategory!=="All" && item.cat!==activeCategory) return false;
+  if(searchTerm){
+    const hay = (item.q+" "+item.cat+" "+item.tech+" "+item.use).toLowerCase();
+    if(!hay.includes(searchTerm.toLowerCase())) return false;
+  }
+  return true;
+}
+
+function render(){
+  const filtered = DATA.filter(matches);
+  container.innerHTML = "";
+  countEl.textContent = filtered.length + " / " + DATA.length + " questions";
+  emptyMsg.style.display = filtered.length ? "none" : "block";
+
+  filtered.forEach((item, displayIdx)=>{
+    const qid = item.id;
+    const status = statusMap[qid] || "Not Started";
+    const card = document.createElement("div");
+    card.className = "card status-" + status.replace(" ","-");
+
+    const samplesHtml = (item.samples || []).map((s, i) =>
+      `<div class="sample-item"><span class="sample-tag">Ex ${i+1}</span>${escapeHtml(s)}</div>`
+    ).join("");
+
+    card.innerHTML = `
+      <div class="card-head" data-id="${qid}">
+        <div class="num">${displayIdx+1}</div>
+        <div class="head-text">
+          <div class="badges">
+            <span class="badge ${item.p}">${item.p}</span>
+            <span class="badge cat">${escapeHtml(item.cat)}</span>
+          </div>
+          <div class="q-title">${escapeHtml(item.q)}</div>
+        </div>
+        <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </div>
+      <div class="card-body">
+        <div class="section">
+          <div class="section-label"><span class="ico">🏠</span> Real Life Example</div>
+          <div class="section-text">${escapeHtml(item.life)}</div>
+        </div>
+        <div class="section">
+          <div class="section-label"><span class="ico">💡</span> Approach / Intuition</div>
+          <div class="section-text">${escapeHtml(item.approach)}</div>
+        </div>
+        <div class="section">
+          <div class="section-label"><span class="ico">⭐</span> Recommended Technique</div>
+          <div class="section-text"><strong>${escapeHtml(item.tech)}</strong></div>
+        </div>
+        <div class="section">
+          <div class="section-label"><span class="ico">🔢</span> Sample Input → Output</div>
+          <div class="sample-list">${samplesHtml}</div>
+        </div>
+        <div class="section">
+          <div class="section-label"><span class="ico">⌨️</span> Pseudocode</div>
+          <pre class="code">${escapeHtml(item.code)}</pre>
+        </div>
+        <div class="meta-row">
+          <div class="meta-box"><div class="lbl">Time</div><div class="val">${escapeHtml(item.time)}</div></div>
+          <div class="meta-box"><div class="lbl">Space</div><div class="val">${escapeHtml(item.space)}</div></div>
+        </div>
+        <div class="section">
+          <div class="section-label"><span class="ico">🏢</span> Industry Use Case</div>
+          <div class="section-text">${escapeHtml(item.use)}</div>
+        </div>
+        <div class="status-row">
+          <div class="status-btn ${status==='Not Started'?'active':''}" data-s="Not Started" data-id="${qid}">Not Started</div>
+          <div class="status-btn ${status==='Practicing'?'active':''}" data-s="Practicing" data-id="${qid}">Practicing</div>
+          <div class="status-btn ${status==='Done'?'active':''}" data-s="Done" data-id="${qid}">Done</div>
+        </div>
+      </div>
+    `;
+    container.appendChild(card);
+  });
+
+  container.querySelectorAll(".card-head").forEach(head=>{
+    head.addEventListener("click", ()=>{
+      head.closest(".card").classList.toggle("open");
+    });
+  });
+
+  container.querySelectorAll(".status-btn").forEach(btn=>{
+    btn.addEventListener("click", (e)=>{
+      e.stopPropagation();
+      const qid = btn.getAttribute("data-id");
+      const s = btn.getAttribute("data-s");
+      statusMap[qid] = s;
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(statusMap));
+      render();
+      const reopened = container.querySelector(`.card-head[data-id="${qid}"]`);
+      if(reopened) reopened.closest(".card").classList.add("open");
+    });
+  });
+}
+
+document.getElementById("search").addEventListener("input", (e)=>{
+  searchTerm = e.target.value;
+  render();
+});
+
+const topBtn = document.getElementById("topBtn");
+window.addEventListener("scroll", ()=>{
+  topBtn.classList.toggle("show", window.scrollY > 300);
+});
+topBtn.addEventListener("click", ()=> window.scrollTo({top:0, behavior:"smooth"}));
+
+buildChips();
+render();
+</script>
+</body>
+</html>
