@@ -47,29 +47,65 @@
   .controls{
     position:sticky; top:62px; z-index:29;
     background:var(--paper);
-    padding:10px 12px 8px;
+    padding:10px 12px 10px;
     border-bottom:1px solid var(--line);
+    display:flex;
+    gap:8px;
+    align-items:center;
   }
   .search-wrap{
     position:relative;
-    margin-bottom:8px;
+    flex:1;
   }
   #search{
     width:100%;
-    padding:10px 12px 10px 34px;
-    border-radius:10px;
+    min-height:44px;
+    padding:11px 12px 11px 36px;
+    border-radius:11px;
     border:1px solid var(--line);
     background:var(--card);
-    font-size:0.92rem;
+    font-size:0.95rem;
     color:var(--ink);
   }
   .search-wrap svg{
-    position:absolute; left:10px; top:50%; transform:translateY(-50%);
-    width:16px; height:16px; opacity:0.45;
+    position:absolute; left:11px; top:50%; transform:translateY(-50%);
+    width:17px; height:17px; opacity:0.45;
+  }
+  .filter-open-btn{
+    flex:0 0 auto;
+    min-width:44px; min-height:44px;
+    border-radius:11px;
+    border:1px solid var(--line);
+    background:var(--card);
+    display:flex; align-items:center; justify-content:center;
+    cursor:pointer;
+    position:relative;
+    color:var(--accent);
+  }
+  .filter-open-btn svg{ width:20px; height:20px; }
+  .filter-open-btn .badge-count{
+    position:absolute; top:-5px; right:-5px;
+    background:var(--accent);
+    color:#fff;
+    font-size:0.62rem;
+    font-weight:700;
+    min-width:16px; height:16px;
+    border-radius:999px;
+    display:none;
+    align-items:center; justify-content:center;
+    padding:0 3px;
+  }
+  .filter-open-btn .badge-count.show{ display:flex; }
+  #countBar{
+    font-size:0.74rem;
+    color:var(--mono);
+    padding:8px 14px 0;
+    max-width:760px;
+    margin:0 auto;
   }
   .filter-row{
     display:flex;
-    gap:6px;
+    gap:8px;
     overflow-x:auto;
     padding-bottom:4px;
     scrollbar-width:none;
@@ -77,11 +113,13 @@
   .filter-row::-webkit-scrollbar{display:none;}
   .chip{
     flex:0 0 auto;
-    padding:6px 12px;
+    min-height:38px;
+    display:flex; align-items:center;
+    padding:0 14px;
     border-radius:999px;
     border:1px solid var(--line);
-    background:var(--card);
-    font-size:0.76rem;
+    background:var(--paper);
+    font-size:0.83rem;
     color:var(--mono);
     white-space:nowrap;
     cursor:pointer;
@@ -93,16 +131,73 @@
     color:#fff;
   }
   .filter-label{
-    font-size:0.68rem;
+    font-size:0.7rem;
     text-transform:uppercase;
     letter-spacing:0.07em;
     color:var(--mono);
-    margin:6px 2px 4px;
+    margin:14px 2px 8px;
   }
-  #count{
-    font-size:0.74rem;
-    color:var(--mono);
-    margin:6px 2px 0;
+  .filter-label:first-child{ margin-top:0; }
+  /* ===== Bottom Sheet ===== */
+  .sheet-backdrop{
+    position:fixed; inset:0;
+    background:rgba(16,20,28,0.45);
+    z-index:40;
+    opacity:0;
+    pointer-events:none;
+    transition:opacity 0.22s ease;
+  }
+  .sheet-backdrop.show{ opacity:1; pointer-events:auto; }
+  .bottom-sheet{
+    position:fixed;
+    left:0; right:0; bottom:0;
+    z-index:41;
+    background:var(--card);
+    border-radius:18px 18px 0 0;
+    box-shadow:0 -6px 24px rgba(0,0,0,0.18);
+    max-height:78vh;
+    transform:translateY(100%);
+    transition:transform 0.26s ease;
+    display:flex;
+    flex-direction:column;
+  }
+  .bottom-sheet.show{ transform:translateY(0); }
+  .sheet-handle{
+    width:40px; height:4px;
+    background:var(--line);
+    border-radius:999px;
+    margin:10px auto 4px;
+    flex:0 0 auto;
+  }
+  .sheet-head{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:6px 16px 4px;
+    flex:0 0 auto;
+  }
+  .sheet-head h3{ margin:0; font-size:1rem; }
+  .sheet-clear{
+    font-size:0.8rem; color:var(--accent); font-weight:600; cursor:pointer;
+  }
+  .sheet-body{
+    padding:4px 16px 10px;
+    overflow-y:auto;
+    flex:1;
+  }
+  .sheet-footer{
+    padding:10px 16px calc(14px + env(safe-area-inset-bottom));
+    border-top:1px solid var(--line);
+    flex:0 0 auto;
+  }
+  .sheet-apply-btn{
+    width:100%;
+    min-height:48px;
+    border-radius:12px;
+    background:var(--accent);
+    color:#fff;
+    border:none;
+    font-size:0.95rem;
+    font-weight:700;
+    cursor:pointer;
   }
   main{
     padding:10px 12px 0;
@@ -117,11 +212,12 @@
     overflow:hidden;
   }
   .card-head{
-    padding:13px 14px 11px;
+    padding:14px 14px 12px;
     cursor:pointer;
     display:flex;
     gap:10px;
     align-items:flex-start;
+    min-height:44px;
   }
   .num{
     font-size:0.7rem;
@@ -266,10 +362,13 @@
   }
   .status-btn{
     flex:1;
+    min-height:44px;
+    display:flex; align-items:center; justify-content:center;
     padding:7px 4px;
     text-align:center;
-    font-size:0.72rem;
-    border-radius:8px;
+    font-size:0.76rem;
+    font-weight:600;
+    border-radius:9px;
     border:1px solid var(--line);
     background:var(--card);
     color:var(--mono);
@@ -296,7 +395,7 @@
   .topbtn{
     position:fixed;
     bottom:16px; right:16px;
-    width:42px; height:42px;
+    width:46px; height:46px;
     border-radius:50%;
     background:var(--accent);
     color:#fff;
@@ -322,12 +421,12 @@
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
     <input id="search" type="text" placeholder="Search question, category, keyword...">
   </div>
-  <div class="filter-label">Priority</div>
-  <div class="filter-row" id="priorityFilters"></div>
-  <div class="filter-label">Category</div>
-  <div class="filter-row" id="categoryFilters"></div>
-  <div id="count"></div>
+  <div class="filter-open-btn" id="filterOpenBtn">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M7 12h10M10 18h4"/></svg>
+    <div class="badge-count" id="filterBadge">1</div>
+  </div>
 </div>
+<div id="countBar"></div>
 
 <main id="cardContainer"></main>
 <div id="empty">Koi question nahi mila — search/filter change karo 🙂</div>
@@ -335,6 +434,24 @@
 <footer>Tap kisi bhi card par — approach, sample I/O, pseudocode aur use-case khulega.<br>Status save ho jata hai isi browser me (offline, no server).</footer>
 
 <div class="topbtn" id="topBtn">↑</div>
+
+<div class="sheet-backdrop" id="sheetBackdrop"></div>
+<div class="bottom-sheet" id="bottomSheet">
+  <div class="sheet-handle"></div>
+  <div class="sheet-head">
+    <h3>Filters</h3>
+    <div class="sheet-clear" id="sheetClear">Reset</div>
+  </div>
+  <div class="sheet-body">
+    <div class="filter-label">Priority</div>
+    <div class="filter-row" id="priorityFilters"></div>
+    <div class="filter-label">Category</div>
+    <div class="filter-row" id="categoryFilters"></div>
+  </div>
+  <div class="sheet-footer">
+    <button class="sheet-apply-btn" id="sheetApply">Apply Filters</button>
+  </div>
+</div>
 
 <script>
 // ===== DATASET as a JSON object (keyed by question id, not a plain array) =====
@@ -353,19 +470,23 @@ let searchTerm = "";
 
 const container = document.getElementById("cardContainer");
 const emptyMsg = document.getElementById("empty");
-const countEl = document.getElementById("count");
+const countEl = document.getElementById("countBar");
 
 const categories = ["All", ...Array.from(new Set(DATA.map(d=>d.cat)))];
 const priorities = ["All","Easy","Medium","Hard"];
+
+// Draft state used inside the bottom sheet (applied to activePriority/activeCategory on "Apply")
+let draftPriority = activePriority;
+let draftCategory = activeCategory;
 
 function buildChips(){
   const pWrap = document.getElementById("priorityFilters");
   pWrap.innerHTML = "";
   priorities.forEach(p=>{
     const chip = document.createElement("div");
-    chip.className = "chip" + (p===activePriority ? " active" : "");
+    chip.className = "chip" + (p===draftPriority ? " active" : "");
     chip.textContent = p;
-    chip.onclick = ()=>{ activePriority = p; render(); buildChips(); };
+    chip.onclick = ()=>{ draftPriority = p; buildChips(); };
     pWrap.appendChild(chip);
   });
 
@@ -373,9 +494,9 @@ function buildChips(){
   cWrap.innerHTML = "";
   categories.forEach(c=>{
     const chip = document.createElement("div");
-    chip.className = "chip" + (c===activeCategory ? " active" : "");
+    chip.className = "chip" + (c===draftCategory ? " active" : "");
     chip.textContent = c;
-    chip.onclick = ()=>{ activeCategory = c; render(); buildChips(); };
+    chip.onclick = ()=>{ draftCategory = c; buildChips(); };
     cWrap.appendChild(chip);
   });
 }
@@ -492,7 +613,56 @@ window.addEventListener("scroll", ()=>{
 });
 topBtn.addEventListener("click", ()=> window.scrollTo({top:0, behavior:"smooth"}));
 
+// ===== Bottom Sheet (Filters) wiring =====
+const sheetBackdrop = document.getElementById("sheetBackdrop");
+const bottomSheet = document.getElementById("bottomSheet");
+const filterOpenBtn = document.getElementById("filterOpenBtn");
+const filterBadge = document.getElementById("filterBadge");
+const sheetApply = document.getElementById("sheetApply");
+const sheetClear = document.getElementById("sheetClear");
+
+function updateFilterBadge(){
+  let n = 0;
+  if(activePriority !== "All") n++;
+  if(activeCategory !== "All") n++;
+  filterBadge.textContent = n;
+  filterBadge.classList.toggle("show", n > 0);
+}
+
+function openSheet(){
+  draftPriority = activePriority;
+  draftCategory = activeCategory;
+  buildChips();
+  sheetBackdrop.classList.add("show");
+  bottomSheet.classList.add("show");
+  document.body.style.overflow = "hidden";
+}
+
+function closeSheet(){
+  sheetBackdrop.classList.remove("show");
+  bottomSheet.classList.remove("show");
+  document.body.style.overflow = "";
+}
+
+filterOpenBtn.addEventListener("click", openSheet);
+sheetBackdrop.addEventListener("click", closeSheet);
+
+sheetApply.addEventListener("click", ()=>{
+  activePriority = draftPriority;
+  activeCategory = draftCategory;
+  updateFilterBadge();
+  render();
+  closeSheet();
+});
+
+sheetClear.addEventListener("click", ()=>{
+  draftPriority = "All";
+  draftCategory = "All";
+  buildChips();
+});
+
 buildChips();
+updateFilterBadge();
 render();
 </script>
 </body>
