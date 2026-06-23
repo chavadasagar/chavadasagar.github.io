@@ -10,7 +10,7 @@ const STORAGE_KEYS = {
 const DEFAULT_SETTINGS = {
   shopName: "Shree Khodiyar Jewellers",
   gstin: "24EBQPS9853C1Z2",
-  address: "Rupnath Road, Bora Seri, Gadhada",
+  address: "સુખનાથ ચોક, બોરા શેરી, ગીરગઢડા ગુજરાત કોડ(૨૪)",
   state: "Gujarat",
   bankDetails: {
     bankName: "Bank of Baroda",
@@ -18,12 +18,13 @@ const DEFAULT_SETTINGS = {
     accountNo: "49970200000074"
   },
   footerNotes: [
-    "દાનગીના નકદ કરી અપાવવાની રહેશે નહિ.",
-    "આ માલ અમારી દુકાન નહિ ગીર ગઢડાથી આપેલ છે.",
-    "ન્યાય ક્ષેત્ર ગઢડા રહેશે."
+    "આ માલ અમારી દુકાન બેઠા ગીર ગઢડામાંથી આપેલ છે.",
+    "ન્યાય ક્ષેત્ર ગીરગઢડા રહેશે."
   ],
   cgstPct: 1.5,
   sgstPct: 1.5,
+  makingCgstPct: 2.5,
+  makingSgstPct: 2.5,
   nextBillNo: 1
 };
 
@@ -170,6 +171,11 @@ const elements = {
   get summarySgstPct() { return document.getElementById('summary-sgst-pct'); },
   get itemsCgst() { return document.getElementById('items-cgst'); },
   get itemsSgst() { return document.getElementById('items-sgst'); },
+  get itemsMakingSubtotal() { return document.getElementById('items-making-subtotal'); },
+  get summaryMakingCgstPct() { return document.getElementById('summary-making-cgst-pct'); },
+  get summaryMakingSgstPct() { return document.getElementById('summary-making-sgst-pct'); },
+  get itemsMakingCgst() { return document.getElementById('items-making-cgst'); },
+  get itemsMakingSgst() { return document.getElementById('items-making-sgst'); },
   get itemsGrandTotal() { return document.getElementById('items-grand-total'); },
   get savePrintBtn() { return document.getElementById('save-print-btn'); },
   get resetBillBtn() { return document.getElementById('reset-bill-btn'); },
@@ -203,6 +209,8 @@ const elements = {
   get shopAccNo() { return document.getElementById('shop-acc-no'); },
   get shopCgstPct() { return document.getElementById('shop-cgst-pct'); },
   get shopSgstPct() { return document.getElementById('shop-sgst-pct'); },
+  get shopMakingCgstPct() { return document.getElementById('shop-making-cgst-pct'); },
+  get shopMakingSgstPct() { return document.getElementById('shop-making-sgst-pct'); },
   get shopNextBill() { return document.getElementById('shop-next-bill'); },
   get footerNotesContainer() { return document.getElementById('footer-notes-container'); },
   get addNoteBtn() { return document.getElementById('add-note-btn'); },
@@ -224,19 +232,25 @@ const elements = {
   get printItemsTbody() { return document.getElementById('print-items-tbody'); },
   get printBankDetails() { return document.getElementById('print-bank-details'); },
   get printFooterNotes() { return document.getElementById('print-footer-notes'); },
-  get printTotalItems() { return document.getElementById('print-total-items'); },
-  get printTotalGross() { return document.getElementById('print-total-gross'); },
-  get printTotalNet() { return document.getElementById('print-total-net'); },
   get printSubtotal() { return document.getElementById('print-subtotal'); },
   get printCgstPct() { return document.getElementById('print-cgst-pct'); },
   get printCgstAmt() { return document.getElementById('print-cgst-amt'); },
   get printSgstPct() { return document.getElementById('print-sgst-pct'); },
   get printSgstAmt() { return document.getElementById('print-sgst-amt'); },
+  get printMakingSubtotal() { return document.getElementById('print-making-subtotal'); },
+  get printMakingCgstPct() { return document.getElementById('print-making-cgst-pct'); },
+  get printMakingCgstAmt() { return document.getElementById('print-making-cgst-amt'); },
+  get printMakingSgstPct() { return document.getElementById('print-making-sgst-pct'); },
+  get printMakingSgstAmt() { return document.getElementById('print-making-sgst-amt'); },
   get printGrandTotal() { return document.getElementById('print-grand-total'); },
   get printFooterShopName() { return document.getElementById('print-footer-shop-name'); },
   get searchResultsPopup() { return document.getElementById('search-results-popup'); },
   get themeToggleBtn() { return document.getElementById('theme-toggle-btn'); },
-  get themeIcon() { return document.getElementById('theme-icon'); }
+  get themeIcon() { return document.getElementById('theme-icon'); },
+  get searchModal() { return document.getElementById('search-modal'); },
+  get modalSearchInput() { return document.getElementById('modal-search-input'); },
+  get closeSearchModalBtn() { return document.getElementById('close-search-modal-btn'); },
+  get modalSearchResults() { return document.getElementById('modal-search-results'); }
 };
 
 // Setup Event Listeners after DOM is guaranteed ready
@@ -273,16 +287,14 @@ function setupEventListeners() {
     });
   }
 
-  elements.globalSearch.addEventListener('input', (e) => {
-    const rawVal = e.target.value;
+  function performSearch(rawVal, popup, inputElement) {
     const query = rawVal.toLowerCase().trim();
-    const popup = elements.searchResultsPopup;
     currentHighlightIndex = -1; // Reset highlight on input change
     
     if (!query) {
       popup.innerHTML = '';
       popup.classList.remove('active');
-      if (document.getElementById('bill-history').classList.contains('active')) {
+      if (inputElement === elements.globalSearch && document.getElementById('bill-history').classList.contains('active')) {
         elements.searchQuery.value = '';
         renderBillsList();
       }
@@ -389,8 +401,12 @@ function setupEventListeners() {
         item.addEventListener('click', () => {
           const tabId = item.getAttribute('data-tab');
           switchTab(tabId);
-          elements.globalSearch.value = '';
+          inputElement.value = '';
+          popup.innerHTML = '';
           popup.classList.remove('active');
+          if (elements.searchModal.classList.contains('active')) {
+            closeSearchModal();
+          }
         });
       } else if (item.classList.contains('bill-result-item')) {
         item.addEventListener('click', (event) => {
@@ -398,8 +414,12 @@ function setupEventListeners() {
           const billNo = item.getAttribute('data-bill-no');
           switchTab('bill-history');
           elements.searchQuery.value = billNo;
-          elements.globalSearch.value = '';
+          inputElement.value = '';
+          popup.innerHTML = '';
           popup.classList.remove('active');
+          if (elements.searchModal.classList.contains('active')) {
+            closeSearchModal();
+          }
           renderBillsList();
         });
       }
@@ -413,16 +433,18 @@ function setupEventListeners() {
         const matchedBill = bills.find(b => b.billNo === billNo);
         if (matchedBill) {
           printBill(matchedBill);
+          inputElement.value = '';
+          popup.innerHTML = '';
           popup.classList.remove('active');
-          elements.globalSearch.value = '';
+          if (elements.searchModal.classList.contains('active')) {
+            closeSearchModal();
+          }
         }
       });
     });
-  });
+  }
 
-  // Handle keyboard navigation on globalSearch input
-  elements.globalSearch.addEventListener('keydown', (e) => {
-    const popup = elements.searchResultsPopup;
+  function handleSearchKeydown(e, popup) {
     if (!popup || !popup.classList.contains('active')) return;
     
     const popupItems = popup.querySelectorAll('.search-result-item');
@@ -449,6 +471,65 @@ function setupEventListeners() {
       }
     } else if (e.key === 'Escape') {
       popup.classList.remove('active');
+    }
+  }
+
+  function openSearchModal() {
+    elements.searchModal.classList.add('active');
+    elements.modalSearchInput.value = '';
+    elements.modalSearchResults.innerHTML = '';
+    elements.modalSearchResults.classList.remove('active');
+    setTimeout(() => {
+      elements.modalSearchInput.focus();
+    }, 50);
+  }
+
+  function closeSearchModal() {
+    elements.searchModal.classList.remove('active');
+    elements.globalSearch.focus();
+  }
+
+  // 1. Global Navbar Search Bindings
+  elements.globalSearch.addEventListener('input', (e) => {
+    performSearch(e.target.value, elements.searchResultsPopup, elements.globalSearch);
+  });
+
+  elements.globalSearch.addEventListener('keydown', (e) => {
+    handleSearchKeydown(e, elements.searchResultsPopup);
+  });
+
+  // 2. Command Palette Modal Search Bindings
+  elements.modalSearchInput.addEventListener('input', (e) => {
+    performSearch(e.target.value, elements.modalSearchResults, elements.modalSearchInput);
+  });
+
+  elements.modalSearchInput.addEventListener('keydown', (e) => {
+    handleSearchKeydown(e, elements.modalSearchResults);
+  });
+
+  // Close search modal click handlers
+  elements.closeSearchModalBtn.addEventListener('click', closeSearchModal);
+  
+  elements.searchModal.addEventListener('click', (e) => {
+    if (e.target === elements.searchModal) {
+      closeSearchModal();
+    }
+  });
+
+  // Global Ctrl+K / Cmd+K key down shortcut listener
+  document.addEventListener('keydown', (e) => {
+    if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k') {
+      e.preventDefault(); // Stop default browser search bar focus
+      if (elements.searchModal.classList.contains('active')) {
+        closeSearchModal();
+      } else {
+        openSearchModal();
+      }
+    }
+    
+    // Escape key closes search modal if active
+    if (e.key === 'Escape' && elements.searchModal.classList.contains('active')) {
+      closeSearchModal();
     }
   });
 
@@ -614,11 +695,16 @@ function setupEventListeners() {
       items: billItemsList,
       totalGrossWeight: calcs.totalGross,
       totalNetWeight: calcs.totalNet,
-      subtotal: calcs.subtotal,
+      subtotal: calcs.jewellerySubtotal,
       cgstPct: settings.cgstPct,
-      cgstAmount: calcs.cgstAmt,
+      cgstAmount: calcs.jewelleryCgstAmt,
       sgstPct: settings.sgstPct,
-      sgstAmount: calcs.sgstAmt,
+      sgstAmount: calcs.jewellerySgstAmt,
+      makingSubtotal: calcs.makingSubtotal,
+      makingCgstPct: settings.makingCgstPct !== undefined ? settings.makingCgstPct : 2.5,
+      makingCgstAmount: calcs.makingCgstAmt,
+      makingSgstPct: settings.makingSgstPct !== undefined ? settings.makingSgstPct : 2.5,
+      makingSgstAmount: calcs.makingSgstAmt,
       grandTotal: calcs.grandTotal,
       shopSnapshot: {
         shopName: settings.shopName,
@@ -821,6 +907,8 @@ function setupEventListeners() {
       footerNotes: gatheredNotes,
       cgstPct: parseFloat(elements.shopCgstPct.value) || 0,
       sgstPct: parseFloat(elements.shopSgstPct.value) || 0,
+      makingCgstPct: parseFloat(elements.shopMakingCgstPct.value) || 0,
+      makingSgstPct: parseFloat(elements.shopMakingSgstPct.value) || 0,
       nextBillNo: parseInt(elements.shopNextBill.value) || 1
     };
     
@@ -829,6 +917,8 @@ function setupEventListeners() {
     elements.currentBillNo.textContent = String(settings.nextBillNo).padStart(4, '0');
     elements.summaryCgstPct.textContent = settings.cgstPct;
     elements.summarySgstPct.textContent = settings.sgstPct;
+    elements.summaryMakingCgstPct.textContent = settings.makingCgstPct;
+    elements.summaryMakingSgstPct.textContent = settings.makingSgstPct;
     
     calculateTotals();
     showToast("Settings saved successfully!", "success");
@@ -848,6 +938,12 @@ function setupEventListeners() {
     if (parseFloat(e.target.value) < 0) e.target.value = 0;
   });
   elements.shopSgstPct.addEventListener('input', (e) => {
+    if (parseFloat(e.target.value) < 0) e.target.value = 0;
+  });
+  elements.shopMakingCgstPct.addEventListener('input', (e) => {
+    if (parseFloat(e.target.value) < 0) e.target.value = 0;
+  });
+  elements.shopMakingSgstPct.addEventListener('input', (e) => {
     if (parseFloat(e.target.value) < 0) e.target.value = 0;
   });
   elements.shopNextBill.addEventListener('input', (e) => {
@@ -1020,34 +1116,50 @@ function updateDatalist() {
 function calculateTotals() {
   let totalGross = 0;
   let totalNet = 0;
-  let subtotal = 0;
+  let jewellerySubtotal = 0;
+  let makingSubtotal = 0;
   
   currentBillItems.forEach(item => {
     totalGross += item.grossWeight;
     totalNet += item.netWeight;
-    subtotal += item.amount;
+    jewellerySubtotal += item.netWeight * item.rate;
+    makingSubtotal += item.makingCharge;
   });
   
   const cgstPct = parseFloat(settings.cgstPct) || 0;
   const sgstPct = parseFloat(settings.sgstPct) || 0;
+  const makingCgstPct = parseFloat(settings.makingCgstPct !== undefined ? settings.makingCgstPct : 2.5);
+  const makingSgstPct = parseFloat(settings.makingSgstPct !== undefined ? settings.makingSgstPct : 2.5);
   
-  const cgstAmt = subtotal * (cgstPct / 100);
-  const sgstAmt = subtotal * (sgstPct / 100);
-  const grandTotal = subtotal + cgstAmt + sgstAmt;
+  const jewelleryCgstAmt = jewellerySubtotal * (cgstPct / 100);
+  const jewellerySgstAmt = jewellerySubtotal * (sgstPct / 100);
+  const makingCgstAmt = makingSubtotal * (makingCgstPct / 100);
+  const makingSgstAmt = makingSubtotal * (makingSgstPct / 100);
+  
+  const grandTotal = jewellerySubtotal + jewelleryCgstAmt + jewellerySgstAmt + makingSubtotal + makingCgstAmt + makingSgstAmt;
   
   elements.totalGrossWt.textContent = totalGross.toFixed(3);
   elements.totalNetWt.textContent = totalNet.toFixed(3);
-  elements.itemsSubtotal.textContent = subtotal.toFixed(2);
-  elements.itemsCgst.textContent = cgstAmt.toFixed(2);
-  elements.itemsSgst.textContent = sgstAmt.toFixed(2);
+  
+  elements.itemsSubtotal.textContent = jewellerySubtotal.toFixed(2);
+  elements.itemsCgst.textContent = jewelleryCgstAmt.toFixed(2);
+  elements.itemsSgst.textContent = jewellerySgstAmt.toFixed(2);
+  
+  elements.itemsMakingSubtotal.textContent = makingSubtotal.toFixed(2);
+  elements.itemsMakingCgst.textContent = makingCgstAmt.toFixed(2);
+  elements.itemsMakingSgst.textContent = makingSgstAmt.toFixed(2);
+  
   elements.itemsGrandTotal.textContent = grandTotal.toFixed(2);
   
   return {
     totalGross,
     totalNet,
-    subtotal,
-    cgstAmt,
-    sgstAmt,
+    jewellerySubtotal,
+    makingSubtotal,
+    jewelleryCgstAmt,
+    jewellerySgstAmt,
+    makingCgstAmt,
+    makingSgstAmt,
     grandTotal
   };
 }
@@ -1196,15 +1308,20 @@ function printBill(bill) {
   elements.printShopName.textContent = shop.shopName;
   elements.printShopAddress.textContent = shop.address;
   elements.printShopGstin.textContent = shop.gstin;
-  elements.printShopState.textContent = shop.state;
-  elements.printFooterShopName.textContent = `For, ${shop.shopName}`;
+  elements.printFooterShopName.textContent = shop.shopName;
   
   elements.printCustName.textContent = bill.customer.name;
   elements.printCustAddress.textContent = bill.customer.address || '-';
   elements.printCustVillage.textContent = bill.customer.village || '-';
   elements.printCustPhone.textContent = bill.customer.phone || '-';
-  elements.printCustGstin.textContent = bill.customer.gstin || 'N/A';
-  elements.printCustState.textContent = bill.customer.state || 'Gujarat';
+  elements.printCustGstin.textContent = bill.customer.gstin || '-';
+  
+  // Format state to Gujarati or English
+  let stateDisplay = bill.customer.state || 'Gujarat';
+  if (stateDisplay.toLowerCase() === 'gujarat') {
+    stateDisplay = 'ગુજરાત (૨૪)';
+  }
+  elements.printCustState.textContent = stateDisplay;
   
   elements.printInvoiceNo.textContent = String(bill.billNo).padStart(4, '0');
   elements.printInvoiceDate.textContent = formatDate(bill.date);
@@ -1223,10 +1340,12 @@ function printBill(bill) {
       elements.printFooterNotes.appendChild(li);
     });
   } else {
-    elements.printFooterNotes.innerHTML = '<li>Terms as applicable.</li>';
+    elements.printFooterNotes.innerHTML = '<li>દાગીનાની તુટ ફુટની જવાબદારી રહેશે નહી.</li>';
   }
   
   elements.printItemsTbody.innerHTML = '';
+  
+  // Render item rows
   bill.items.forEach(item => {
     const tr = document.createElement('tr');
     tr.innerHTML = `
@@ -1242,15 +1361,66 @@ function printBill(bill) {
     elements.printItemsTbody.appendChild(tr);
   });
   
-  elements.printTotalItems.textContent = bill.items.length;
-  elements.printTotalGross.textContent = bill.totalGrossWeight.toFixed(3);
-  elements.printTotalNet.textContent = bill.totalNetWeight.toFixed(3);
-  elements.printSubtotal.textContent = bill.subtotal.toFixed(2);
-  elements.printCgstPct.textContent = bill.cgstPct;
-  elements.printCgstAmt.textContent = bill.cgstAmount.toFixed(2);
-  elements.printSgstPct.textContent = bill.sgstPct;
-  elements.printSgstAmt.textContent = bill.sgstAmount.toFixed(2);
-  elements.printGrandTotal.textContent = bill.grandTotal.toFixed(2);
+  // Pad with empty rows to keep vertical lines going down and height uniform (min 8 rows)
+  const minRows = 8;
+  const currentRowsCount = bill.items.length;
+  if (currentRowsCount < minRows) {
+    for (let i = currentRowsCount; i < minRows; i++) {
+      const tr = document.createElement('tr');
+      tr.className = 'empty-item-row';
+      tr.innerHTML = `
+        <td class="text-center">&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      `;
+      elements.printItemsTbody.appendChild(tr);
+    }
+  }
+  
+  // Append a totals footer row inside tbody for Gross and Net weight
+  const totalsTr = document.createElement('tr');
+  totalsTr.className = 'table-totals-row';
+  totalsTr.style.fontWeight = '700';
+  totalsTr.innerHTML = `
+    <td colspan="3" class="text-center" style="border-top: 1.5px solid #000000 !important; font-weight: 700;">કુલ (Totals)</td>
+    <td class="text-right" style="border-top: 1.5px solid #000000 !important; font-weight: 700;">${bill.totalGrossWeight.toFixed(3)}</td>
+    <td class="text-right" style="border-top: 1.5px solid #000000 !important; font-weight: 700;">${bill.totalNetWeight.toFixed(3)}</td>
+    <td colspan="3" style="border-top: 1.5px solid #000000 !important;"></td>
+  `;
+  elements.printItemsTbody.appendChild(totalsTr);
+  
+  // Calculations for printing
+  const jewellerySubtotal = bill.subtotal;
+  const makingSubtotal = bill.makingSubtotal !== undefined ? bill.makingSubtotal : 0;
+  
+  const cgstPct = bill.cgstPct;
+  const sgstPct = bill.sgstPct;
+  const makingCgstPct = bill.makingCgstPct !== undefined ? bill.makingCgstPct : 2.5;
+  const makingSgstPct = bill.makingSgstPct !== undefined ? bill.makingSgstPct : 2.5;
+  
+  const jewelleryCgstAmt = bill.cgstAmount;
+  const jewellerySgstAmt = bill.sgstAmount;
+  const makingCgstAmt = bill.makingCgstAmount !== undefined ? bill.makingCgstAmount : 0;
+  const makingSgstAmt = bill.makingSgstAmount !== undefined ? bill.makingSgstAmount : 0;
+  
+  elements.printSubtotal.textContent = `₹ ${jewellerySubtotal.toFixed(2)}`;
+  elements.printCgstPct.textContent = cgstPct;
+  elements.printCgstAmt.textContent = `₹ ${jewelleryCgstAmt.toFixed(2)}`;
+  elements.printSgstPct.textContent = sgstPct;
+  elements.printSgstAmt.textContent = `₹ ${jewellerySgstAmt.toFixed(2)}`;
+  
+  elements.printMakingSubtotal.textContent = `₹ ${makingSubtotal.toFixed(2)}`;
+  elements.printMakingCgstPct.textContent = makingCgstPct;
+  elements.printMakingCgstAmt.textContent = `₹ ${makingCgstAmt.toFixed(2)}`;
+  elements.printMakingSgstPct.textContent = makingSgstPct;
+  elements.printMakingSgstAmt.textContent = `₹ ${makingSgstAmt.toFixed(2)}`;
+  
+  elements.printGrandTotal.textContent = `₹ ${bill.grandTotal.toFixed(2)}`;
   
   window.print();
 }
@@ -1413,6 +1583,8 @@ function loadSettingsForm() {
   elements.shopAccNo.value = settings.bankDetails.accountNo;
   elements.shopCgstPct.value = settings.cgstPct;
   elements.shopSgstPct.value = settings.sgstPct;
+  elements.shopMakingCgstPct.value = settings.makingCgstPct || 2.5;
+  elements.shopMakingSgstPct.value = settings.makingSgstPct || 2.5;
   elements.shopNextBill.value = settings.nextBillNo;
   
   elements.footerNotesContainer.innerHTML = '';

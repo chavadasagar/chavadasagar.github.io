@@ -271,16 +271,28 @@
                   <span><strong id="total-net-wt">0.000</strong> g</span>
                 </div>
                 <div class="summary-row">
-                  <span>Subtotal (Items Total):</span>
+                  <span>Jewellery Subtotal:</span>
                   <span>₹ <span id="items-subtotal">0.00</span></span>
                 </div>
                 <div class="summary-row">
-                  <span>CGST (<span id="summary-cgst-pct">1.5</span>%):</span>
+                  <span>Jewellery CGST (<span id="summary-cgst-pct">1.5</span>%):</span>
                   <span>₹ <span id="items-cgst">0.00</span></span>
                 </div>
                 <div class="summary-row">
-                  <span>SGST (<span id="summary-sgst-pct">1.5</span>%):</span>
+                  <span>Jewellery SGST (<span id="summary-sgst-pct">1.5</span>%):</span>
                   <span>₹ <span id="items-sgst">0.00</span></span>
+                </div>
+                <div class="summary-row">
+                  <span>Making Subtotal:</span>
+                  <span>₹ <span id="items-making-subtotal">0.00</span></span>
+                </div>
+                <div class="summary-row">
+                  <span>Making CGST (<span id="summary-making-cgst-pct">2.5</span>%):</span>
+                  <span>₹ <span id="items-making-cgst">0.00</span></span>
+                </div>
+                <div class="summary-row">
+                  <span>Making SGST (<span id="summary-making-sgst-pct">2.5</span>%):</span>
+                  <span>₹ <span id="items-making-sgst">0.00</span></span>
                 </div>
                 <div class="summary-row grand-total">
                   <span>Grand Total:</span>
@@ -411,12 +423,20 @@
               <h3 style="color: var(--gold-primary); font-family: var(--font-serif); margin-bottom: 1rem; font-size: 1.1rem;">Taxation & Billing System</h3>
               <div class="form-grid" style="margin-bottom: 2rem;">
                 <div class="form-group">
-                  <label for="shop-cgst-pct">Default CGST (%)</label>
+                  <label for="shop-cgst-pct">Jewellery CGST (%)</label>
                   <input type="number" id="shop-cgst-pct" step="0.01" required>
                 </div>
                 <div class="form-group">
-                  <label for="shop-sgst-pct">Default SGST (%)</label>
+                  <label for="shop-sgst-pct">Jewellery SGST (%)</label>
                   <input type="number" id="shop-sgst-pct" step="0.01" required>
+                </div>
+                <div class="form-group">
+                  <label for="shop-making-cgst-pct">Making CGST (%)</label>
+                  <input type="number" id="shop-making-cgst-pct" step="0.01" required>
+                </div>
+                <div class="form-group">
+                  <label for="shop-making-sgst-pct">Making SGST (%)</label>
+                  <input type="number" id="shop-making-sgst-pct" step="0.01" required>
                 </div>
                 <div class="form-group">
                   <label for="shop-next-bill">Next Invoice Number (Seed)</label>
@@ -453,55 +473,64 @@
   <!-- DYNAMIC INVOICE VIEW CONTAINER FOR PRINTING (hidden on screen, visible during window.print()) -->
   <div id="print-invoice-container">
     <div class="print-invoice">
-      <!-- Invoice Header -->
-      <div class="invoice-header">
-        <div class="invoice-shop-title" id="print-shop-name">Shree Khodiyar Jewellers</div>
-        <div class="invoice-shop-subtitle">
-          <span id="print-shop-address">Rupnath Road, Bora Seri, Gadhada</span><br>
-          GSTIN: <span id="print-shop-gstin" style="font-weight: 700;">24EBQPS9853C1Z2</span> | State: <span id="print-shop-state">Gujarat</span>
+      <!-- Invoice Header Grid -->
+      <div class="invoice-header-layout">
+        <div class="header-left">
+          <div class="invoice-shop-title-gj" id="print-shop-name">શ્રી ખોડીયાર જ્વેલર્સ</div>
+          <div class="invoice-shop-address-gj-box">
+            <span id="print-shop-address">સુખનાથ ચોક, બોરા શેરી, ગીરગઢડા ગુજરાત કોડ(૨૪)</span>
+          </div>
+          <div class="invoice-shop-details-row">
+            <div class="shop-gstin-box">GSTIN: <span id="print-shop-gstin">24EBQPS9853C1Z2</span></div>
+            <div class="invoice-recipient-text">Original for Recipient / Duplicate for Supplier</div>
+          </div>
+          <div class="invoice-tagline-gj">સોના-ચાંદીના ફેન્સી આભૂષણો ૯૧૬ હોલમાર્ક બનાવી આપનાર</div>
         </div>
-        <div class="invoice-title-badge">Tax Invoice / Bill</div>
+
+        <div class="header-right">
+          <div class="tax-invoice-badge">TAX INVOICE</div>
+          <div class="cash-memo-badge">CASH / DEBIT MEMO</div>
+          <div class="bill-no-date-box">
+            <div class="bill-no-row">
+              <span class="label">બીલ નંબર</span>
+              <span class="value" id="print-invoice-no">-</span>
+            </div>
+            <div class="bill-date-row">
+              <span class="label">તારીખ:</span>
+              <span class="value" id="print-invoice-date">-</span>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <!-- Invoice Metadata Grid -->
-      <div class="invoice-meta-grid">
-        <div class="meta-column">
-          <h3>Customer Details</h3>
-          <div class="meta-row">
-            <div class="meta-label">Name:</div>
-            <div class="meta-value" id="print-cust-name">-</div>
+      <!-- Customer Details Section -->
+      <div class="print-customer-box">
+        <div class="cust-row full-width">
+          <span class="label">નામ:</span>
+          <span class="value" id="print-cust-name">-</span>
+        </div>
+        <div class="cust-row split-width">
+          <div class="cust-col-left">
+            <span class="label">સરનામું:</span>
+            <span class="value" id="print-cust-address">-</span>
           </div>
-          <div class="meta-row">
-            <div class="meta-label">Address:</div>
-            <div class="meta-value" id="print-cust-address">-</div>
-          </div>
-          <div class="meta-row">
-            <div class="meta-label">Village/City:</div>
-            <div class="meta-value" id="print-cust-village">-</div>
-          </div>
-          <div class="meta-row">
-            <div class="meta-label">Phone No:</div>
-            <div class="meta-value" id="print-cust-phone">-</div>
-          </div>
-          <div class="meta-row">
-            <div class="meta-label">GSTIN:</div>
-            <div class="meta-value" id="print-cust-gstin">-</div>
-          </div>
-          <div class="meta-row">
-            <div class="meta-label">State:</div>
-            <div class="meta-value" id="print-cust-state">-</div>
+          <div class="cust-col-right">
+            <span class="label">ગામ:</span>
+            <span class="value" id="print-cust-village">-</span>
           </div>
         </div>
-
-        <div class="meta-column">
-          <h3>Invoice Details</h3>
-          <div class="meta-row">
-            <div class="meta-label">Invoice No:</div>
-            <div class="meta-value" id="print-invoice-no" style="font-weight: 700;">-</div>
+        <div class="cust-row split-three-width">
+          <div class="cust-col-1">
+            <span class="label">GSTIN:</span>
+            <span class="value" id="print-cust-gstin">-</span>
           </div>
-          <div class="meta-row">
-            <div class="meta-label">Invoice Date:</div>
-            <div class="meta-value" id="print-invoice-date">-</div>
+          <div class="cust-col-2">
+            <span class="label">મો.</span>
+            <span class="value" id="print-cust-phone">-</span>
+          </div>
+          <div class="cust-col-3">
+            <span class="label">રાજ્ય:</span>
+            <span class="value" id="print-cust-state">-</span>
           </div>
         </div>
       </div>
@@ -510,14 +539,14 @@
       <table class="invoice-items-table">
         <thead>
           <tr>
-            <th class="text-center" style="width: 50px;">Sr</th>
-            <th>Description of Jewellery</th>
-            <th class="text-center" style="width: 80px;">HSN</th>
-            <th class="text-right" style="width: 100px;">Gross Wt (g)</th>
-            <th class="text-right" style="width: 100px;">Net Wt (g)</th>
-            <th class="text-right" style="width: 120px;">Rate (₹/g)</th>
-            <th class="text-right" style="width: 110px;">Making (₹)</th>
-            <th class="text-right" style="width: 130px;">Amount (₹)</th>
+            <th class="text-center" style="width: 5%;">ક્રમ</th>
+            <th style="width: 35%;">વિગત</th>
+            <th class="text-center" style="width: 10%;">HSN</th>
+            <th class="text-right" style="width: 11%;">ગ્રોસ વજન</th>
+            <th class="text-right" style="width: 11%;">નેટ વજન</th>
+            <th class="text-right" style="width: 10%;">ભાવ</th>
+            <th class="text-right" style="width: 8%;">મજુરી</th>
+            <th class="text-right" style="width: 10%;">રકમ</th>
           </tr>
         </thead>
         <tbody id="print-items-tbody">
@@ -528,67 +557,80 @@
       <!-- Totals & Bank Details Grid -->
       <div class="invoice-summary-grid">
         <div class="bank-notes-box">
-          <div>
-            <div class="bank-details-title">Bank Account Details:</div>
+          <div class="bank-details-block">
             <div class="bank-info" id="print-bank-details">
               Bank: Bank of Baroda<br>
               Account No: 49970200000074<br>
               IFSC: BARBOGIRGAD
             </div>
           </div>
-          <div>
-            <div class="notes-title">Terms & Conditions / Guidelines:</div>
-            <ol class="notes-list" id="print-footer-notes">
+          
+          <div class="notes-block">
+            <div class="notes-title-gj">દાગીનાની તુટ ફુટની જવાબદારી રહેશે નહી.</div>
+            <ul class="notes-list-gj" id="print-footer-notes">
               <!-- Notes filled by JS -->
-            </ol>
+            </ul>
           </div>
         </div>
 
         <div class="totals-box">
           <div class="totals-row">
-            <span>Total Items:</span>
-            <span id="print-total-items" style="font-weight: 700;">0</span>
+            <span class="label">પેટા ટોટલ</span>
+            <span class="value" id="print-subtotal">₹ 0.00</span>
           </div>
           <div class="totals-row">
-            <span>Total Gross Weight:</span>
-            <span><span id="print-total-gross" style="font-weight: 700;">0.000</span> g</span>
+            <span class="label">વેચાણ <span id="print-cgst-pct">1.5</span> % CGST</span>
+            <span class="value" id="print-cgst-amt">₹ 0.00</span>
           </div>
           <div class="totals-row">
-            <span>Total Net Weight:</span>
-            <span><span id="print-total-net" style="font-weight: 700;">0.000</span> g</span>
-          </div>
-          <div class="totals-row" style="border-top: 1px solid #000000; padding-top: 6px; margin-top: 4px;">
-            <span>Taxable Subtotal:</span>
-            <span>₹ <span id="print-subtotal">0.00</span></span>
+            <span class="label" style="text-indent: 35px;"><span id="print-sgst-pct">1.5</span> % SGST</span>
+            <span class="value" id="print-sgst-amt">₹ 0.00</span>
           </div>
           <div class="totals-row">
-            <span>CGST (<span id="print-cgst-pct">1.5</span>%):</span>
-            <span>₹ <span id="print-cgst-amt">0.00</span></span>
+            <span class="label">મજુરી</span>
+            <span class="value" id="print-making-subtotal">₹ 0.00</span>
           </div>
           <div class="totals-row">
-            <span>SGST (<span id="print-sgst-pct">1.5</span>%):</span>
-            <span>₹ <span id="print-sgst-amt">0.00</span></span>
+            <span class="label">મજુરી <span id="print-making-cgst-pct">2.5</span> % CGST</span>
+            <span class="value" id="print-making-cgst-amt">₹ 0.00</span>
+          </div>
+          <div class="totals-row">
+            <span class="label" style="text-indent: 35px;"><span id="print-making-sgst-pct">2.5</span> % SGST</span>
+            <span class="value" id="print-making-sgst-amt">₹ 0.00</span>
           </div>
           <div class="totals-row grand-total">
-            <span>Grand Total:</span>
-            <span>₹ <span id="print-grand-total">0.00</span></span>
+            <span class="label">ટોટલ</span>
+            <span class="value" id="print-grand-total">₹ 0.00</span>
           </div>
         </div>
       </div>
 
       <!-- Signatures footer -->
       <div class="signature-grid">
-        <div>
-          <br><br>
-          <div class="signature-box">Customer's Signature</div>
+        <div class="cust-sig-block">
+          <div class="signature-box-gj">ગ્રાહક ની સહી,</div>
         </div>
-        <div>
-          <span style="font-weight: 700;" id="print-footer-shop-name">For, Shree Khodiyar Jewellers</span>
-          <br><br><br>
-          <div class="signature-box">Authorized Signatory</div>
+        <div class="shop-sig-block">
+          <div class="print-footer-shop-name-gj" id="print-footer-shop-name">શ્રી ખોડીયાર જ્વેલર્સ</div>
+          <div class="signature-box-gj" style="margin-top: 45px;">અધિકૃત વ્યક્તિની સહી</div>
         </div>
       </div>
 
+    </div>
+  </div>
+
+  <!-- Centered Command Palette Search Modal (Ctrl+K) -->
+  <div id="search-modal" class="search-modal-overlay">
+    <div class="search-modal-content">
+      <div class="search-modal-header">
+        <span class="search-modal-icon">🔍</span>
+        <input type="text" id="modal-search-input" placeholder="Search menu pages, customers, or invoices..." autocomplete="off">
+        <button class="search-modal-close-btn" id="close-search-modal-btn" title="Close Search Modal">&times;</button>
+      </div>
+      <div id="modal-search-results" class="modal-search-results-container"></div>
+      <div class="search-modal-footer">
+        <span>Use <kbd>↑</kbd> <kbd>↓</kbd> to navigate, <kbd>Enter</kbd> to select, <kbd>Esc</kbd> to close.</span>
+      </div>
     </div>
   </div>
 
