@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Members Directory | AegisLib - Library Management System</title>
+    <!-- Fonts and Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/forms.css">
+    <link rel="stylesheet" href="../css/table.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    
+    <style>
+        /* Profile Modal CSS Split */
+        .member-profile-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 1.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .member-profile-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .profile-side-card {
+            background: var(--bg-primary);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 1rem;
+        }
+
+        .profile-avatar-large {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.2rem;
+            color: white;
+            font-weight: 600;
+            box-shadow: 0 4px 14px var(--primary-glow);
+        }
+
+        .profile-side-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+
+        .profile-side-subtitle {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        .profile-detail-item {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.85rem;
+            border-bottom: 1px solid var(--border-color);
+            padding: 0.5rem 0;
+        }
+
+        .profile-detail-item:last-child {
+            border-bottom: none;
+        }
+
+        .tab-menu {
+            display: flex;
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 1rem;
+            gap: 1rem;
+        }
+
+        .tab-btn {
+            background: none;
+            border: none;
+            border-bottom: 2px solid transparent;
+            padding: 0.5rem 0.25rem;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--text-secondary);
+            cursor: pointer;
+            transition: all var(--transition-fast);
+        }
+
+        .tab-btn.active {
+            border-color: var(--primary);
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        .tab-content-pane {
+            display: none;
+        }
+
+        .tab-content-pane.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div id="app-layout">
+        <div class="content-body">
+            <!-- Table Action Controls -->
+            <div class="table-header-controls">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="search-input" class="form-control" placeholder="Search by name, email, ID...">
+                </div>
+                <div class="filter-actions">
+                    <select id="filter-type" class="form-control" style="width: 150px; padding-top:0.5rem; padding-bottom:0.5rem;">
+                        <option value="">All Memberships</option>
+                        <option value="Regular">Regular</option>
+                        <option value="Student">Student</option>
+                        <option value="Premium">Premium</option>
+                    </select>
+                    <select id="filter-status" class="form-control" style="width: 130px; padding-top:0.5rem; padding-bottom:0.5rem;">
+                        <option value="">All Statuses</option>
+                        <option value="Active">Active</option>
+                        <option value="Suspended">Suspended</option>
+                    </select>
+                    <button class="btn btn-primary" id="add-member-btn">
+                        <i class="fas fa-plus"></i> Add Member
+                    </button>
+                </div>
+            </div>
+
+            <!-- Members Datatable -->
+            <div class="table-wrapper">
+                <table class="data-table" id="members-table">
+                    <thead>
+                        <tr>
+                            <th class="sortable asc" data-column="id">Member ID</th>
+                            <th class="sortable" data-column="name">Name</th>
+                            <th>Email</th>
+                            <th>Phone</th>
+                            <th>Type</th>
+                            <th>Status</th>
+                            <th style="width: 120px; text-align: center;">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="members-tbody">
+                        <!-- Loaded dynamically -->
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Pagination footer -->
+            <div class="pagination-wrapper">
+                <div class="pagination-info" id="pagination-info">Showing 0 to 0 of 0 entries</div>
+                <div class="pagination-controls" id="pagination-controls">
+                    <!-- Buttons loaded dynamically -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Form (Add/Edit Member) -->
+    <div class="modal-overlay" id="member-modal">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h3 class="modal-title" id="modal-title-text">Add New Member</h3>
+                <span class="modal-close" data-dismiss="modal">&times;</span>
+            </div>
+            <form id="member-form" novalidate>
+                <input type="hidden" name="id" id="member-id-field">
+                <div class="modal-content">
+                    <div class="form-group">
+                        <label class="form-label" for="member-name">Full Name</label>
+                        <input class="form-control" type="text" id="member-name" name="name" required>
+                        <span class="form-error-msg">Full name is required.</span>
+                    </div>
+
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label class="form-label" for="member-email">Email Address</label>
+                            <input class="form-control" type="email" id="member-email" name="email" required>
+                            <span class="form-error-msg">Please enter a valid email.</span>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="member-phone">Phone Number</label>
+                            <input class="form-control" type="text" id="member-phone" name="phone" required>
+                            <span class="form-error-msg">Enter a valid phone number.</span>
+                        </div>
+                    </div>
+
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label class="form-label" for="member-type">Membership Level</label>
+                            <select class="form-control" id="member-type" name="membershipType" required>
+                                <option value="Regular">Regular (5 Books Max)</option>
+                                <option value="Student">Student (3 Books Max)</option>
+                                <option value="Premium">Premium (10 Books Max)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="member-status">Account Status</label>
+                            <select class="form-control" id="member-status" name="status" required>
+                                <option value="Active">Active</option>
+                                <option value="Suspended">Suspended</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <button type="submit" class="btn btn-primary" id="save-member-btn">Save Member</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal View (Member Profile Card & History) -->
+    <div class="modal-overlay" id="member-profile-modal">
+        <div class="modal-container" style="max-width: 800px;">
+            <div class="modal-header">
+                <h3 class="modal-title">Member Profile & History</h3>
+                <span class="modal-close" data-dismiss="modal">&times;</span>
+            </div>
+            <div class="modal-content" style="padding: 1.5rem;">
+                <div class="member-profile-grid">
+                    <!-- Left Column: Avatar & Contact -->
+                    <div class="profile-side-card">
+                        <div class="profile-avatar-large" id="prof-avatar">JD</div>
+                        <div>
+                            <div class="profile-side-title" id="prof-name">John Doe</div>
+                            <div class="profile-side-subtitle" id="prof-id">MEM-7001</div>
+                        </div>
+                        <div style="width: 100%; border-top: 1px solid var(--border-color); padding-top: 0.5rem;">
+                            <div class="profile-detail-item">
+                                <span>Membership</span>
+                                <strong id="prof-type">-</strong>
+                            </div>
+                            <div class="profile-detail-item">
+                                <span>Status</span>
+                                <span class="badge" id="prof-status-badge">-</span>
+                            </div>
+                            <div class="profile-detail-item">
+                                <span>Registered</span>
+                                <strong id="prof-join">-</strong>
+                            </div>
+                            <div class="profile-detail-item">
+                                <span>Email</span>
+                                <strong id="prof-email" style="max-width: 130px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">-</strong>
+                            </div>
+                            <div class="profile-detail-item">
+                                <span>Phone</span>
+                                <strong id="prof-phone">-</strong>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Tabs (Circulation, Fines) -->
+                    <div>
+                        <div class="tab-menu">
+                            <button class="tab-btn active" data-target="pane-active-loans">Active Checkouts</button>
+                            <button class="tab-btn" data-target="pane-past-loans">Return History</button>
+                            <button class="tab-btn" data-target="pane-fines">Unpaid Fines</button>
+                        </div>
+
+                        <!-- Active Loans Pane -->
+                        <div class="tab-content-pane active" id="pane-active-loans">
+                            <div class="table-wrapper" style="margin-bottom: 0;">
+                                <table class="data-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Barcode</th>
+                                            <th>Book Title</th>
+                                            <th>Due Date</th>
+                                            <th>Overdue Fine</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="prof-active-tbody">
+                                        <!-- rows -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- History Pane -->
+                        <div class="tab-content-pane" id="pane-past-loans">
+                            <div class="table-wrapper" style="margin-bottom: 0;">
+                                <table class="data-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Book Title</th>
+                                            <th>Issue Date</th>
+                                            <th>Return Date</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="prof-history-tbody">
+                                        <!-- rows -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- Fines Pane -->
+                        <div class="tab-content-pane" id="pane-fines">
+                            <div class="table-wrapper" style="margin-bottom: 0;">
+                                <table class="data-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Fine ID</th>
+                                            <th>Due Date</th>
+                                            <th>Overdue Days</th>
+                                            <th>Amount</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="prof-fines-tbody">
+                                        <!-- rows -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close Profile</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script modules -->
+    <script src="../js/storage.js"></script>
+    <script src="../js/utils.js"></script>
+    <script src="../js/auth.js"></script>
+    <script src="../js/app.js"></script>
+    <script src="../js/members.js"></script>
+</body>
+</html>

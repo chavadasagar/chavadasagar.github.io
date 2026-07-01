@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Copies | AegisLib - Library Management System</title>
+    <!-- Fonts and Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/forms.css">
+    <link rel="stylesheet" href="../css/table.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+    <div id="app-layout">
+        <div class="content-body">
+            <!-- Table Action Controls -->
+            <div class="table-header-controls">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="search-input" class="form-control" placeholder="Search by barcode, title, shelf...">
+                </div>
+                <div class="filter-actions">
+                    <select id="filter-status" class="form-control" style="width: 140px; padding-top:0.5rem; padding-bottom:0.5rem;">
+                        <option value="">All Statuses</option>
+                        <option value="Available">Available</option>
+                        <option value="Issued">Issued</option>
+                        <option value="Reserved">Reserved</option>
+                        <option value="Maintenance">Maintenance</option>
+                    </select>
+                    <select id="filter-branch" class="form-control" style="width: 140px; padding-top:0.5rem; padding-bottom:0.5rem;">
+                        <option value="">All Branches</option>
+                    </select>
+                    <button class="btn btn-primary" id="add-copy-btn">
+                        <i class="fas fa-plus"></i> Add Book Copy
+                    </button>
+                </div>
+            </div>
+
+            <!-- Copies Datatable -->
+            <div class="table-wrapper">
+                <table class="data-table" id="copies-table">
+                    <thead>
+                        <tr>
+                            <th class="sortable asc" data-column="id">Copy ID</th>
+                            <th>Barcode</th>
+                            <th class="sortable" data-column="title">Book Title</th>
+                            <th>Branch</th>
+                            <th>Shelf Location</th>
+                            <th>Status</th>
+                            <th style="width: 100px; text-align: center;">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="copies-tbody">
+                        <!-- Loaded dynamically -->
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Pagination footer -->
+            <div class="pagination-wrapper">
+                <div class="pagination-info" id="pagination-info">Showing 0 to 0 of 0 entries</div>
+                <div class="pagination-controls" id="pagination-controls">
+                    <!-- Buttons loaded dynamically -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Form (Add/Edit Book Copy) -->
+    <div class="modal-overlay" id="copy-modal">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h3 class="modal-title" id="modal-title-text">Add New Book Copy</h3>
+                <span class="modal-close" data-dismiss="modal">&times;</span>
+            </div>
+            <form id="copy-form" novalidate>
+                <input type="hidden" name="id" id="copy-id-field">
+                <div class="modal-content">
+                    <div class="form-group">
+                        <label class="form-label" for="copy-book">Select Book Title</label>
+                        <select class="form-control" id="copy-book" name="bookId" required>
+                            <option value="">Select Book</option>
+                        </select>
+                        <span class="form-error-msg">Book title is required.</span>
+                    </div>
+
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label class="form-label" for="copy-barcode">Unique Barcode</label>
+                            <input class="form-control" type="text" id="copy-barcode" name="barcode" placeholder="e.g. 1000001A" required>
+                            <span class="form-error-msg">Barcode must be unique.</span>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="copy-shelf">Shelf Location</label>
+                            <input class="form-control" type="text" id="copy-shelf" name="shelfLocation" placeholder="e.g. Aisle 2, Shelf D" required>
+                            <span class="form-error-msg">Shelf location is required.</span>
+                        </div>
+                    </div>
+
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label class="form-label" for="copy-branch">Branch Registered</label>
+                            <select class="form-control" id="copy-branch" name="branchId" required>
+                                <option value="">Select Branch</option>
+                            </select>
+                            <span class="form-error-msg">Branch selection is required.</span>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="copy-status">Copy Status</label>
+                            <select class="form-control" id="copy-status" name="status" required>
+                                <option value="Available">Available</option>
+                                <option value="Issued">Issued</option>
+                                <option value="Reserved">Reserved</option>
+                                <option value="Maintenance">Maintenance</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <button type="submit" class="btn btn-primary" id="save-copy-btn">Save Copy</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Script modules -->
+    <script src="../js/storage.js"></script>
+    <script src="../js/utils.js"></script>
+    <script src="../js/auth.js"></script>
+    <script src="../js/app.js"></script>
+    <script src="../js/copies.js"></script>
+</body>
+</html>

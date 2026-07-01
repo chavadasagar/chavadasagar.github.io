@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AegisLib - Library Management System</title>
+    <script src="./js/storage.js"></script>
+    <script src="./js/auth.js"></script>
+    <script>
+        
+        // Fast redirect based on authentication
+        if (auth.isAuthenticated()) {
+            auth.redirect('./dashboard.html');
+        } else {
+            auth.redirect('./login.html');
+        }
+    </script>
+</head>
+<body style="background: #090d16; display: flex; align-items: center; justify-content: center; height: 100vh; font-family: sans-serif; color: white;">
+    <div style="text-align: center;">
+        <h2 style="font-weight: 400; margin-bottom: 10px;">Loading AegisLib...</h2>
+        <div style="width: 30px; height: 30px; border: 3px solid rgba(255,255,255,0.1); border-top-color: #818cf8; border-radius: 50%; animation: spin 1s linear infinite; margin: 0 auto;"></div>
+    </div>
+    <style>
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+    </style>
+</body>
+</html>

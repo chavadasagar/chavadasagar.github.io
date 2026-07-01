@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Role Permissions | AegisLib - Library Management System</title>
+    <!-- Fonts and Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/forms.css">
+    <link rel="stylesheet" href="../css/table.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <style>
+        .perm-grid-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 0.75rem;
+            font-size: 0.85rem;
+        }
+        .perm-grid-table th {
+            background: var(--bg-tertiary);
+            color: var(--text-primary);
+            font-weight: 600;
+            padding: 0.5rem 0.75rem;
+            border-bottom: 2px solid var(--border-color);
+            text-align: center;
+        }
+        .perm-grid-table th:first-child {
+            text-align: left;
+        }
+        .perm-grid-table td {
+            padding: 0.5rem 0.75rem;
+            border-bottom: 1px solid var(--border-color);
+            text-align: center;
+        }
+        .perm-grid-table td:first-child {
+            text-align: left;
+            font-weight: 500;
+            color: var(--text-primary);
+        }
+        .perm-checkbox {
+            width: 16px;
+            height: 16px;
+            cursor: pointer;
+            accent-color: var(--primary);
+        }
+        .module-badge {
+            display: inline-block;
+            padding: 0.15rem 0.4rem;
+            font-size: 0.7rem;
+            background: var(--bg-tertiary);
+            border: 1px solid var(--border-color);
+            color: var(--text-secondary);
+            border-radius: var(--radius-sm);
+            margin: 1px;
+        }
+        .module-badge.active {
+            background: rgba(99, 102, 241, 0.15);
+            border-color: rgba(99, 102, 241, 0.3);
+            color: var(--primary);
+        }
+    </style>
+</head>
+<body>
+    <div id="app-layout">
+        <div class="content-body">
+            <!-- Table Action Controls -->
+            <div class="table-header-controls">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="search-input" class="form-control" placeholder="Search roles...">
+                </div>
+                <button class="btn btn-primary" id="add-role-btn">
+                    <i class="fas fa-user-shield"></i> Add Role
+                </button>
+            </div>
+
+            <!-- Roles Datatable -->
+            <div class="table-wrapper">
+                <table class="data-table" id="roles-table">
+                    <thead>
+                        <tr>
+                            <th style="width: 120px;">Role ID</th>
+                            <th style="width: 180px;">Role Name</th>
+                            <th>Description</th>
+                            <th style="width: 350px;">Allowed Modules</th>
+                            <th style="width: 100px; text-align: center;">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="roles-tbody">
+                        <!-- Loaded dynamically -->
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Pagination footer -->
+            <div class="pagination-wrapper">
+                <div class="pagination-info" id="pagination-info">Showing 0 to 0 of 0 entries</div>
+                <div class="pagination-controls" id="pagination-controls">
+                    <!-- Buttons loaded dynamically -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Form (Add/Edit Role) -->
+    <div class="modal-overlay" id="role-modal">
+        <div class="modal-container" style="max-width: 650px;">
+            <div class="modal-header">
+                <h3 class="modal-title" id="modal-title-text">Add Access Role</h3>
+                <span class="modal-close" data-dismiss="modal">&times;</span>
+            </div>
+            <form id="role-form" novalidate>
+                <input type="hidden" name="id" id="role-id-field">
+                <div class="modal-content" style="max-height: 480px; overflow-y: auto;">
+                    <div class="form-group">
+                        <label class="form-label" for="role-name">Role Name</label>
+                        <input class="form-control" type="text" id="role-name" name="name" placeholder="e.g. Front Desk Operator" required>
+                        <span class="form-error-msg">Role name is required.</span>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="role-description">Role Description</label>
+                        <textarea class="form-control" id="role-description" name="description" placeholder="Brief summary of responsibilities..." style="height: 60px;"></textarea>
+                    </div>
+                    
+                    <div class="form-group" style="margin-bottom: 0;">
+                        <label class="form-label">Modular Permission Rights</label>
+                        <table class="perm-grid-table">
+                            <thead>
+                                <tr>
+                                    <th>System Module</th>
+                                    <th>View</th>
+                                    <th>Add</th>
+                                    <th>Edit</th>
+                                    <th>Delete</th>
+                                </tr>
+                            </thead>
+                            <tbody id="permissions-matrix-tbody">
+                                <!-- Generated Dynamically -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <button type="submit" class="btn btn-primary" id="save-role-btn">Save Role</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Script modules -->
+    <script src="../js/storage.js"></script>
+    <script src="../js/utils.js"></script>
+    <script src="../js/auth.js"></script>
+    <script src="../js/app.js"></script>
+    <script src="../js/roles.js"></script>
+</body>
+</html>

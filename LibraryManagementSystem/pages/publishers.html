@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publishers | AegisLib - Library Management System</title>
+    <!-- Fonts and Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/forms.css">
+    <link rel="stylesheet" href="../css/table.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+    <div id="app-layout">
+        <div class="content-body">
+            <!-- Table Action Controls -->
+            <div class="table-header-controls">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="search-input" class="form-control" placeholder="Search publishers...">
+                </div>
+                <button class="btn btn-primary" id="add-publisher-btn">
+                    <i class="fas fa-plus"></i> Add Publisher
+                </button>
+            </div>
+
+            <!-- Publishers Datatable -->
+            <div class="table-wrapper">
+                <table class="data-table" id="publishers-table">
+                    <thead>
+                        <tr>
+                            <th class="sortable asc" data-column="id">Publisher ID</th>
+                            <th class="sortable" data-column="name">Name</th>
+                            <th>Address</th>
+                            <th>Phone</th>
+                            <th style="width: 100px; text-align: center;">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="publishers-tbody">
+                        <!-- Loaded dynamically -->
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Pagination footer -->
+            <div class="pagination-wrapper">
+                <div class="pagination-info" id="pagination-info">Showing 0 to 0 of 0 entries</div>
+                <div class="pagination-controls" id="pagination-controls">
+                    <!-- Buttons loaded dynamically -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Form (Add/Edit Publisher) -->
+    <div class="modal-overlay" id="publisher-modal">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h3 class="modal-title" id="modal-title-text">Add New Publisher</h3>
+                <span class="modal-close" data-dismiss="modal">&times;</span>
+            </div>
+            <form id="publisher-form" novalidate>
+                <input type="hidden" name="id" id="publisher-id-field">
+                <div class="modal-content">
+                    <div class="form-group">
+                        <label class="form-label" for="publisher-name">Publisher Name</label>
+                        <input class="form-control" type="text" id="publisher-name" name="name" placeholder="e.g. O'Reilly Media" required>
+                        <span class="form-error-msg">Publisher name is required.</span>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="publisher-address">Corporate Address</label>
+                        <input class="form-control" type="text" id="publisher-address" name="address" placeholder="e.g. 1005 Gravenstein Hwy N" required>
+                        <span class="form-error-msg">Address is required.</span>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="publisher-phone">Contact Number</label>
+                        <input class="form-control" type="text" id="publisher-phone" name="phone" placeholder="e.g. 7078290515" required>
+                        <span class="form-error-msg">Please enter a valid phone number.</span>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <button type="submit" class="btn btn-primary" id="save-publisher-btn">Save Publisher</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Script modules -->
+    <script src="../js/storage.js"></script>
+    <script src="../js/utils.js"></script>
+    <script src="../js/auth.js"></script>
+    <script src="../js/app.js"></script>
+    <script src="../js/publishers.js"></script>
+</body>
+</html>

@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Catalog | AegisLib - Library Management System</title>
+    <!-- Fonts and Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/forms.css">
+    <link rel="stylesheet" href="../css/table.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    
+    <style>
+        /* Catalog Cards Grid */
+        .catalog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .book-card {
+            display: flex;
+            gap: 1rem;
+            height: 180px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .book-card-cover {
+            width: 100px;
+            height: 100%;
+            background: linear-gradient(135deg, #1e1b4b, #312e81);
+            border-radius: var(--radius-sm);
+            flex-shrink: 0;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+
+        .book-card-cover img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .book-cover-fallback {
+            font-size: 1.5rem;
+            color: var(--text-muted);
+            text-align: center;
+            font-weight: 700;
+            padding: 0.5rem;
+            line-height: 1.2;
+            text-transform: uppercase;
+        }
+
+        .book-card-details {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-width: 0;
+        }
+
+        .book-card-title {
+            font-size: 1rem;
+            font-weight: 600;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin-bottom: 0.25rem;
+        }
+
+        .book-card-author {
+            font-size: 0.825rem;
+            color: var(--text-secondary);
+            margin-bottom: 0.5rem;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .book-card-meta {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+        }
+
+        .book-card-badges {
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+            margin-top: 0.5rem;
+        }
+
+        .book-card-actions {
+            display: flex;
+            gap: 0.35rem;
+            justify-content: flex-end;
+            margin-top: auto;
+        }
+
+        /* Detail Modal Layout splitting */
+        .book-details-split {
+            display: grid;
+            grid-template-columns: 160px 1fr;
+            gap: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .book-details-split {
+                grid-template-columns: 1fr;
+                justify-items: center;
+            }
+        }
+
+        .detail-cover-container {
+            width: 160px;
+            height: 220px;
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 8px 24px var(--glass-shadow);
+        }
+
+        .detail-cover-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .detail-section-title {
+            font-size: 0.95rem;
+            font-weight: 600;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 0.35rem;
+            margin: 1.5rem 0 0.75rem 0;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--primary);
+        }
+
+        .review-item {
+            border-bottom: 1px solid var(--border-color);
+            padding: 0.75rem 0;
+        }
+
+        .review-item:last-child {
+            border-bottom: none;
+        }
+
+        .review-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.25rem;
+            font-size: 0.8rem;
+        }
+
+        .stars-container {
+            color: #fbbf24;
+        }
+    </style>
+</head>
+<body>
+    <div id="app-layout">
+        <div class="content-body">
+            <!-- Filtering & Action Controls -->
+            <div class="card" style="margin-bottom: 1.5rem; padding: 1.25rem;">
+                <div class="table-header-controls" style="margin-bottom: 0;">
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" id="search-input" class="form-control" placeholder="Search by title, author, ISBN...">
+                    </div>
+                    <div class="filter-actions">
+                        <select id="filter-category" class="form-control" style="width: 140px; padding-top:0.5rem; padding-bottom:0.5rem;">
+                            <option value="">All Categories</option>
+                        </select>
+                        <select id="filter-author" class="form-control" style="width: 140px; padding-top:0.5rem; padding-bottom:0.5rem;">
+                            <option value="">All Authors</option>
+                        </select>
+                        <select id="filter-availability" class="form-control" style="width: 130px; padding-top:0.5rem; padding-bottom:0.5rem;">
+                            <option value="">Availability</option>
+                            <option value="available">Available Now</option>
+                            <option value="unavailable">Checked Out</option>
+                        </select>
+                        <button class="btn btn-primary" id="add-book-btn">
+                            <i class="fas fa-plus"></i> Add Book
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Books Grid Catalog -->
+            <div class="catalog-grid" id="catalog-grid-container">
+                <!-- Dynamic cards populated by script -->
+            </div>
+
+            <!-- Pagination footer -->
+            <div class="pagination-wrapper">
+                <div class="pagination-info" id="pagination-info">Showing 0 to 0 of 0 entries</div>
+                <div class="pagination-controls" id="pagination-controls">
+                    <!-- Buttons -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Form (Add/Edit Book) -->
+    <div class="modal-overlay" id="book-modal">
+        <div class="modal-container" style="max-width: 750px;">
+            <div class="modal-header">
+                <h3 class="modal-title" id="modal-title-text">Add New Book</h3>
+                <span class="modal-close" data-dismiss="modal">&times;</span>
+            </div>
+            <form id="book-form" novalidate>
+                <input type="hidden" name="id" id="book-id-field">
+                <input type="hidden" name="coverImage" id="book-cover-base64">
+                
+                <div class="modal-content">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label class="form-label" for="book-title">Book Title</label>
+                            <input class="form-control" type="text" id="book-title" name="title" required>
+                            <span class="form-error-msg">Title is required.</span>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="book-isbn">ISBN Code</label>
+                            <input class="form-control" type="text" id="book-isbn" name="isbn" placeholder="e.g. 9780132350884" required>
+                            <span class="form-error-msg">Enter a valid 10 or 13 digit ISBN.</span>
+                        </div>
+                    </div>
+
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label class="form-label" for="book-author">Author</label>
+                            <select class="form-control" id="book-author" name="authorId" required>
+                                <option value="">Select Author</option>
+                            </select>
+                            <span class="form-error-msg">Author selection is required.</span>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="book-category">Category</label>
+                            <select class="form-control" id="book-category" name="categoryId" required>
+                                <option value="">Select Category</option>
+                            </select>
+                            <span class="form-error-msg">Category selection is required.</span>
+                        </div>
+                    </div>
+
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label class="form-label" for="book-publisher">Publisher</label>
+                            <select class="form-control" id="book-publisher" name="publisherId" required>
+                                <option value="">Select Publisher</option>
+                            </select>
+                            <span class="form-error-msg">Publisher selection is required.</span>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="book-year">Publish Year</label>
+                            <input class="form-control" type="number" id="book-year" name="publishYear" min="1000" max="2100" required>
+                            <span class="form-error-msg">Enter a valid publish year.</span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="book-desc">Description / Synopsis</label>
+                        <textarea class="form-control" id="book-desc" name="description" placeholder="Synopsis details..."></textarea>
+                    </div>
+
+                    <!-- Base64 Uploader -->
+                    <div class="form-group">
+                        <label class="form-label">Cover Book Image</label>
+                        <div class="image-uploader-zone" id="cover-drop-zone">
+                            <i class="fas fa-cloud-upload-alt image-uploader-icon"></i>
+                            <div class="image-uploader-text">Drag and drop cover image here, or <span>browse files</span></div>
+                            <input type="file" id="cover-file-input" accept="image/*">
+                        </div>
+                        <div class="image-preview-container" id="cover-preview-container">
+                            <img id="cover-preview-img" src="" alt="Cover Preview">
+                            <button type="button" class="image-preview-remove" id="cover-preview-remove">&times;</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <button type="submit" class="btn btn-primary" id="save-book-btn">Save Book</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal View (Book Details & Copies & Reviews) -->
+    <div class="modal-overlay" id="book-detail-modal">
+        <div class="modal-container" style="max-width: 800px;">
+            <div class="modal-header">
+                <h3 class="modal-title" id="detail-modal-title">Book Details</h3>
+                <span class="modal-close" data-dismiss="modal">&times;</span>
+            </div>
+            <div class="modal-content" style="padding: 2rem;">
+                <div class="book-details-split">
+                    <!-- Left: Cover -->
+                    <div class="detail-cover-container" id="detail-cover-panel">
+                        <!-- image injected -->
+                    </div>
+                    <!-- Right: Info -->
+                    <div>
+                        <h2 style="font-size: 1.5rem; margin-bottom: 0.25rem;" id="detail-title">Steve Jobs</h2>
+                        <div style="font-size: 0.95rem; color: var(--text-secondary); margin-bottom: 1rem;" id="detail-author">by Walter Isaacson</div>
+                        
+                        <p style="font-size: 0.9rem; line-height: 1.5; color: var(--text-secondary); margin-bottom: 1rem;" id="detail-desc">
+                            Book description synopsis goes here.
+                        </p>
+
+                        <div class="form-grid" style="grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); margin-bottom: 0;">
+                            <div>
+                                <span style="font-size: 0.75rem; color: var(--text-muted); display: block;">CATEGORY</span>
+                                <strong style="font-size: 0.85rem;" id="detail-category">-</strong>
+                            </div>
+                            <div>
+                                <span style="font-size: 0.75rem; color: var(--text-muted); display: block;">PUBLISHER</span>
+                                <strong style="font-size: 0.85rem;" id="detail-publisher">-</strong>
+                            </div>
+                            <div>
+                                <span style="font-size: 0.75rem; color: var(--text-muted); display: block;">ISBN CODE</span>
+                                <strong style="font-size: 0.85rem;" id="detail-isbn">-</strong>
+                            </div>
+                            <div>
+                                <span style="font-size: 0.75rem; color: var(--text-muted); display: block;">PUBLISHED YEAR</span>
+                                <strong style="font-size: 0.85rem;" id="detail-year">-</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section: Copies -->
+                <div class="detail-section-title">
+                    <i class="fas fa-barcode"></i>
+                    <span>Registered Book Copies</span>
+                </div>
+                <div class="table-wrapper" style="margin-bottom: 0;">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Barcode</th>
+                                <th>Branch</th>
+                                <th>Shelf Location</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody id="detail-copies-tbody">
+                            <!-- Dynamic rows -->
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Section: Reviews -->
+                <div class="detail-section-title">
+                    <i class="fas fa-star"></i>
+                    <span>Reviews & Ratings</span>
+                </div>
+                <div id="detail-reviews-container">
+                    <!-- Dynamic reviews cards -->
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script modules -->
+    <script src="../js/storage.js"></script>
+    <script src="../js/utils.js"></script>
+    <script src="../js/auth.js"></script>
+    <script src="../js/app.js"></script>
+    <script src="../js/books.js"></script>
+</body>
+</html>

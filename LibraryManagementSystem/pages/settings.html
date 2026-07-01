@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Settings | AegisLib - Library Management System</title>
+    <!-- Fonts and Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/forms.css">
+    <link rel="stylesheet" href="../css/table.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    
+    <style>
+        .settings-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+
+        @media (max-width: 992px) {
+            .settings-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        .setting-section-desc {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            margin-bottom: 1.25rem;
+            line-height: 1.4;
+        }
+
+        .db-action-card {
+            border: 1px solid var(--border-color);
+            background: var(--bg-primary);
+            border-radius: var(--radius-md);
+            padding: 1.25rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+        }
+
+        .db-action-details {
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+        }
+    </style>
+</head>
+<body>
+    <div id="app-layout">
+        <div class="content-body">
+            <div class="settings-grid">
+                <!-- Left: Configuration & Rules -->
+                <div class="card">
+                    <div class="card-title">Circulation Rules</div>
+                    <form id="rules-form">
+                        <div class="form-group">
+                            <label class="form-label" for="rule-fine-rate">Daily Overdue Fine ($)</label>
+                            <input class="form-control" type="number" id="rule-fine-rate" name="fineRate" value="1.00" step="0.25" min="0" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="rule-loan-period">Default Borrow Duration (Days)</label>
+                            <input class="form-control" type="number" id="rule-loan-period" name="loanPeriod" value="14" min="1" required>
+                        </div>
+                        <button class="btn btn-primary" type="submit" style="width: 100%;">
+                            <i class="fas fa-save"></i> Save Rules
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Right: DB controls -->
+                <div class="card">
+                    <div class="card-title">Database Maintenance</div>
+                    <p class="setting-section-desc">Utility operations to control the LocalStorage JSON collections state.</p>
+                    
+                    <div class="db-action-card">
+                        <div class="db-action-details">
+                            <strong style="font-size: 0.9rem;">System Diagnostics</strong>
+                            <span style="font-size: 0.75rem; color: var(--text-secondary);">Run automated unit tests suite.</span>
+                        </div>
+                        <button class="btn btn-secondary" id="db-test-btn" style="padding: 0.4rem 0.8rem; font-size: 0.8rem;">
+                            <i class="fas fa-vial"></i> Run Tests
+                        </button>
+                    </div>
+
+                    <div class="db-action-card">
+                        <div class="db-action-details">
+                            <strong style="font-size: 0.9rem;">Reset Database</strong>
+                            <span style="font-size: 0.75rem; color: var(--text-secondary);">Wipe all and re-seed defaults.</span>
+                        </div>
+                        <button class="btn btn-secondary" id="db-reset-btn" style="padding: 0.4rem 0.8rem; font-size: 0.8rem;">
+                            <i class="fas fa-sync-alt"></i> Reset
+                        </button>
+                    </div>
+
+                    <div class="db-action-card" style="border-color: rgba(239, 68, 68, 0.2);">
+                        <div class="db-action-details">
+                            <strong style="font-size: 0.9rem; color: var(--danger);">Wipe LocalStorage</strong>
+                            <span style="font-size: 0.75rem; color: var(--text-secondary);">Clear all library data tables.</span>
+                        </div>
+                        <button class="btn btn-danger" id="db-clear-btn" style="padding: 0.4rem 0.8rem; font-size: 0.8rem;">
+                            <i class="fas fa-trash-alt"></i> Clear
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script modules -->
+    <script src="../js/storage.js"></script>
+    <script src="../js/utils.js"></script>
+    <script src="../js/auth.js"></script>
+    <script src="../js/app.js"></script>
+    <script src="../js/tests.js"></script>
+    <script src="../js/settings.js"></script>
+</body>
+</html>

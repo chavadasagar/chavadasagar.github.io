@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservations Queue | AegisLib - Library Management System</title>
+    <!-- Fonts and Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/forms.css">
+    <link rel="stylesheet" href="../css/table.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+    <div id="app-layout">
+        <div class="content-body">
+            <!-- Table Action Controls -->
+            <div class="table-header-controls">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="search-input" class="form-control" placeholder="Search by member, book title...">
+                </div>
+                <div class="filter-actions">
+                    <select id="filter-status" class="form-control" style="width: 140px; padding-top:0.5rem; padding-bottom:0.5rem;">
+                        <option value="">All Statuses</option>
+                        <option value="Pending">Pending</option>
+                        <option value="Completed">Completed</option>
+                        <option value="Cancelled">Cancelled</option>
+                    </select>
+                    <button class="btn btn-primary" id="add-hold-btn">
+                        <i class="fas fa-bookmark"></i> Place Book Hold
+                    </button>
+                </div>
+            </div>
+
+            <!-- Reservations Datatable -->
+            <div class="table-wrapper">
+                <table class="data-table" id="holds-table">
+                    <thead>
+                        <tr>
+                            <th class="sortable asc" data-column="id">Hold ID</th>
+                            <th class="sortable" data-column="title">Book Title</th>
+                            <th>Member</th>
+                            <th class="sortable" data-column="reservationDate">Reserved Date</th>
+                            <th>Status</th>
+                            <th style="width: 120px; text-align: center;">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="holds-tbody">
+                        <!-- Loaded dynamically -->
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Pagination footer -->
+            <div class="pagination-wrapper">
+                <div class="pagination-info" id="pagination-info">Showing 0 to 0 of 0 entries</div>
+                <div class="pagination-controls" id="pagination-controls">
+                    <!-- Buttons loaded dynamically -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Form (Place Hold / Reservation) -->
+    <div class="modal-overlay" id="hold-modal">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h3 class="modal-title">Place Book Reservation Hold</h3>
+                <span class="modal-close" data-dismiss="modal">&times;</span>
+            </div>
+            <form id="hold-form" novalidate>
+                <div class="modal-content">
+                    <div class="form-group">
+                        <label class="form-label" for="hold-member">Select Member Borrower</label>
+                        <select class="form-control" id="hold-member" name="memberId" required>
+                            <option value="">Select Borrower</option>
+                        </select>
+                        <span class="form-error-msg">Member borrower selection is required.</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="hold-book">Select Book Title</label>
+                        <select class="form-control" id="hold-book" name="bookId" required>
+                            <option value="">Select Book Title</option>
+                        </select>
+                        <span class="form-error-msg">Book selection is required.</span>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <button type="submit" class="btn btn-primary">Place Hold</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Script modules -->
+    <script src="../js/storage.js"></script>
+    <script src="../js/utils.js"></script>
+    <script src="../js/auth.js"></script>
+    <script src="../js/app.js"></script>
+    <script src="../js/reservations.js"></script>
+</body>
+</html>

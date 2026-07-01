@@ -1,0 +1,107 @@
+/* Responsive Breakpoints & Viewport Rules */
+
+@media (max-width: 1024px) {
+    :root {
+        --sidebar-width: 240px;
+    }
+    
+    .form-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    #sidebar {
+        transform: translateX(-100%);
+        box-shadow: none;
+    }
+
+    #sidebar.open {
+        transform: translateX(0);
+        box-shadow: 8px 0 32px var(--glass-shadow);
+    }
+
+    #main-container {
+        margin-left: 0;
+    }
+
+    #top-navbar .mobile-toggle {
+        display: block;
+    }
+
+    .content-body {
+        padding: 1.25rem;
+    }
+
+    .table-header-controls {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .search-box {
+        max-width: 100%;
+    }
+
+    .filter-actions {
+        justify-content: flex-start;
+    }
+
+    .pagination-wrapper {
+        flex-direction: column;
+        gap: 0.75rem;
+        align-items: center;
+    }
+
+    .modal-container {
+        width: 95%;
+        max-height: 95vh;
+    }
+}
+
+@media (max-width: 480px) {
+    #top-navbar {
+        padding: 0 1rem;
+    }
+
+    .page-title {
+        font-size: 1.1rem;
+    }
+
+    .card {
+        padding: 1rem;
+    }
+
+    .dialog-container {
+        width: 95%;
+        padding: 1.25rem;
+    }
+
+    .dialog-buttons {
+        flex-direction: column-reverse;
+    }
+
+    .dialog-buttons .btn {
+        width: 100%;
+    }
+}
+
+/* Sidebar Overlay for Mobile */
+.sidebar-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(15, 23, 42, 0.3);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    z-index: 95;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.sidebar-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}

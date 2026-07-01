@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | AegisLib - Library Management System</title>
+    <!-- Fonts and Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/forms.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    
+    <style>
+        .login-wrapper {
+            display: flex;
+            min-height: 100vh;
+            align-items: center;
+            justify-content: center;
+            background: radial-gradient(circle at 10% 20%, rgba(99, 102, 241, 0.15) 0%, transparent 40%),
+                        radial-gradient(circle at 90% 80%, rgba(13, 148, 136, 0.15) 0%, transparent 40%),
+                        var(--bg-primary);
+            padding: 1.5rem;
+        }
+
+        .login-card {
+            width: 100%;
+            max-width: 440px;
+            padding: 2.5rem 2rem;
+            animation: slideUp 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .login-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .login-logo {
+            font-size: 2.5rem;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 0.5rem;
+        }
+
+        .login-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 0.25rem;
+        }
+
+        .login-subtitle {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+        }
+
+        .login-theme-btn {
+            position: absolute;
+            top: 24px;
+            right: 24px;
+        }
+
+        .login-footer-info {
+            margin-top: 1.5rem;
+            font-size: 0.8rem;
+            text-align: center;
+            color: var(--text-muted);
+            line-height: 1.5;
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <button class="theme-toggle-btn login-theme-btn" id="theme-toggle" title="Toggle Light/Dark Mode">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <div class="login-wrapper">
+        <div class="card login-card">
+            <div class="login-header">
+                <div class="login-logo"><i class="fas fa-book-reader"></i></div>
+                <h2 class="login-title">AegisLib Portal</h2>
+                <p class="login-subtitle">Sign in to manage library resources</p>
+            </div>
+
+            <form id="login-form" novalidate>
+                <div class="form-group">
+                    <label class="form-label" for="login-email">Email Address</label>
+                    <input class="form-control" type="email" id="login-email" name="email" placeholder="e.g. admin@library.com" required>
+                    <span class="form-error-msg">Please enter a valid email address.</span>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="login-password">Password</label>
+                    <input class="form-control" type="password" id="login-password" name="password" placeholder="••••••••" required>
+                    <span class="form-error-msg">Password is required.</span>
+                </div>
+
+                <div class="form-group" style="flex-direction: row; justify-content: space-between; align-items: center; margin-top: 0.5rem;">
+                    <label class="checkbox-group">
+                        <input type="checkbox" name="remember" class="checkbox-control" id="login-remember">
+                        <span>Remember credentials</span>
+                    </label>
+                </div>
+
+                <button class="btn btn-primary" type="submit" style="width: 100%; margin-top: 1.5rem; height: 46px;">
+                    <i class="fas fa-sign-in-alt"></i> Sign In
+                </button>
+            </form>
+
+            <div class="login-footer-info">
+                <strong>Demo Accounts:</strong><br>
+                Admin: <code>admin@library.com</code> / <code>admin</code><br>
+                Staff: <code>staff@library.com</code> / <code>staff</code>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script imports -->
+    <script src="./js/storage.js"></script>
+    <script src="./js/utils.js"></script>
+    <script src="./js/auth.js"></script>
+    <script>
+
+        // Set theme on load
+        const storedTheme = localStorage.getItem('theme') || 'dark';
+        document.documentElement.setAttribute('data-theme', storedTheme);
+        const themeBtnIcon = document.querySelector('#theme-toggle i');
+        themeBtnIcon.className = storedTheme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+
+        // Theme toggle action
+        document.getElementById('theme-toggle').addEventListener('click', () => {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            document.documentElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            themeBtnIcon.className = newTheme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+        });
+
+        // Form Submit Handler
+        document.getElementById('login-form').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const form = e.target;
+            const emailInput = form.email;
+            const passwordInput = form.password;
+            const rememberCheck = form.remember;
+
+            // Reset error validation UI
+            validate.clearErrors(form);
+
+            let errors = {};
+            if (!validate.required(emailInput.value)) {
+                errors.email = 'Email address is required.';
+            } else if (!validate.email(emailInput.value)) {
+                errors.email = 'Please enter a valid email address.';
+            }
+
+            if (!validate.required(passwordInput.value)) {
+                errors.password = 'Password is required.';
+            }
+
+            if (Object.keys(errors).length > 0) {
+                validate.showErrors(form, errors);
+                return;
+            }
+
+            // Show loading animation
+            loader.show();
+
+            // Small delay to simulate connection security
+            setTimeout(() => {
+                const result = auth.login(emailInput.value, passwordInput.value, rememberCheck.checked);
+                loader.hide();
+
+                if (result.success) {
+                    toast.show(`Welcome back, ${result.user.name}! Redirecting...`, 'success');
+                    setTimeout(() => {
+                        auth.redirect('./dashboard.html');
+                    }, 800);
+                } else {
+                    toast.show(result.message, 'error');
+                }
+            }, 600);
+        });
+    </script>
+</body>
+</html>
