@@ -1,0 +1,17 @@
+{
+  "name": "vyunix-technologies-website",
+  "version": "1.0.0",
+  "description": "Vyunix Technologies Agency Landing Page",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx -y lite-server"
+  },
+  "keywords": [
+    "vyunixtech",
+    "agency",
+    "dark-theme",
+    "modern"
+  ],
+  "author": "Sagar Chavada",
+  "license": "MIT"
+}
