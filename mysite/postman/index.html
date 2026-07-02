@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="assets/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <title>Postman</title>
+  </head>
+  <body>
+    <div class="container">
+      <form id="postmanform">
+        <div class="p-4">
+          <h3>Postman</h3>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="form-group">
+              <label for="" class="form-label">URL</label>
+              <input
+                type="text"
+                class="form-control"
+                name="url"
+                placeholder="Please Enter url"
+              />
+            </div>
+          </div>
+
+          <div class="col-md-12 mt-3">
+            <div class="form-group">
+              <label for="" class="form-label">Request Type :</label>
+              &nbsp; &nbsp; &nbsp;
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="requesttype"
+                  value="post"
+                  id="flexRadioDefault1"
+                />
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Post
+                </label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="requesttype"
+                  id="flexRadioDefault2"
+                  value="get"
+                />
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Get
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-12 mt-3">
+            <div class="form-group">
+              <label for="">Content Type :</label>
+              &nbsp; &nbsp; &nbsp;
+              <div class="form-check form-check-inline">
+                <input
+                  type="radio"
+                  class="form-check-input"
+                  id="jsonstr"
+                  value="jsonstring"
+                  name="parametertype"
+                />
+                <label for="">Json String</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  type="radio"
+                  class="form-check-input"
+                  id="param"
+                  value="parameter"
+                  name="parametertype"
+                />
+                <label for="">Custom Parameter</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-12 mt-3" id="jsonstringbox">
+            <label for="" class="form-label">Json String :</label>
+            <textarea
+              name=""
+              placeholder="Enter Json String"
+              class="form-control"
+              id="jsonstring"
+              cols="30"
+              rows="5"
+            ></textarea>
+          </div>
+
+          <div class="col-md-12 mt-3" id="customparameterbox">
+              <div class="row parambox">
+                <div class="row col-md-12">
+                  <div class="form-group col">
+                    <label for="" class="form-label">Key</label>
+                    <input type="text" class="form-control key" />
+                  </div>
+
+                  <div class="form-group col">
+                    <label for="" class="form-label">Value</label>
+                    <input type="text" class="form-control value" />
+                  </div>
+
+                  <div class="col align-items-center d-flex">
+                    <button
+                      class="btn btn-primary btn-sm mt-4"
+                      type="button"
+                      onclick="addparam()"
+                    >
+                      +
+                    </button>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+        <button class="btn btn-primary btn-sm mt-3">Submit</button>
+        <div class="col-md-12 mt-3">
+          <div class="form-group">
+            <textarea
+              name=""
+              class="form-control"
+              placeholder="Response"
+              id="responsetext"
+              cols="30"
+              rows="5"
+            ></textarea>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="assets/bootstrap/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+
+    <script src="assets/js/script.js" type="module"></script>
+    <script src="assets/js/sweetalert/sweetalert2.js"></script>
+  </body>
+</html>

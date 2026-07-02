@@ -1,0 +1,13 @@
+.container{
+    padding: 10px;
+    margin: 10px;
+}
+.elements
+{
+    display: grid;  
+    grid-gap: 10px;  
+}
+#check{
+    font-size: 20px;
+    font-weight: bold;
+}
