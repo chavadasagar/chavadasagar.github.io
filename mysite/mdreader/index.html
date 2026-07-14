@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en" class="dark-mode" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Markdown Reader</title>
+    
+    <!-- Design System Typography & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Third-Party Library CDNs -->
+    <!-- HighlightJS (Syntax Highlighting) Core & Default Theme -->
+    <script src="https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/highlight.min.js"></script>
+    <link id="hljs-theme-link" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/styles/github-dark.min.css">
+    
+    <!-- Marked (Markdown Parsing) -->
+    <script src="https://cdn.jsdelivr.net/npm/marked@12.0.1/marked.min.js"></script>
+    
+    <!-- DOMPurify (HTML Sanitization for XSS Prevention) -->
+    <script src="https://cdn.jsdelivr.net/npm/dompurify@3.0.9/dist/purify.min.js"></script>
+    
+    <!-- Mermaid (Flowcharts & Diagrams) -->
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.0/dist/mermaid.min.js"></script>
+    
+    <!-- KaTeX (Mathematical Formulas LaTeX) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    
+    <!-- SheetJS (Excel Grid Exporting) -->
+    <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+</head>
+<body>
+
+    <!-- Top Navigation Header -->
+    <header class="search-exclude">
+        <div class="logo-area">
+            <span class="material-icons-round logo-icon">menu_book</span>
+            <span class="logo-text">Markdown Reader</span>
+        </div>
+        
+        <div class="file-controls">
+            <input type="file" id="file-input" multiple style="display: none;">
+            <button class="menu-btn primary" id="btn-open-file">
+                <span class="material-icons-round">file_open</span>Open File
+            </button>
+            <button class="menu-btn" id="btn-reload-file" title="Reload active file">
+                <span class="material-icons-round">refresh</span>Reload
+            </button>
+            <div class="dropdown-wrapper">
+                <button class="menu-btn" id="btn-export-dropdown">
+                    <span class="material-icons-round">download</span>Export
+                </button>
+                <div class="dropdown-menu">
+                    <button id="export-pdf">Export PDF (Print)</button>
+                    <button id="export-html">Export Standalone HTML</button>
+                    <button id="export-txt">Export Raw Markdown (.md)</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="header-actions">
+            <button class="toolbar-btn" id="btn-theme-toggle" title="Switch Theme">
+                <span class="material-icons-round">dark_mode</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- App Main Workspace -->
+    <div class="workspace-container">
+        
+        <!-- Left Sidebar Navigation & Panel Controls -->
+        <aside class="sidebar" id="sidebar">
+            <nav class="sidebar-navigation search-exclude">
+                <button class="sidebar-tab-btn active" data-panel="files" title="Open Files & Recents">
+                    <span class="material-icons-round">folder_open</span>
+                </button>
+                <button class="sidebar-tab-btn" data-panel="outline" title="Table of Contents">
+                    <span class="material-icons-round">toc</span>
+                </button>
+                <button class="sidebar-tab-btn" data-panel="bookmarks" title="Bookmarks">
+                    <span class="material-icons-round">bookmarks</span>
+                </button>
+                <button class="sidebar-tab-btn" data-panel="settings" title="Reader Customization">
+                    <span class="material-icons-round">settings</span>
+                </button>
+            </nav>
+            
+            <div class="sidebar-content">
+                <!-- 1. Files & Recents Panel -->
+                <div class="sidebar-panel" id="panel-files">
+                    <div class="sidebar-header">
+                        <span>Workspace</span>
+                        <button class="toolbar-btn" id="btn-collapse-sidebar" title="Collapse Sidebar">
+                            <span class="material-icons-round">chevron_left</span>
+                        </button>
+                    </div>
+                    <div class="sidebar-panel-content">
+                        <div class="settings-group">
+                            <span class="settings-group-title">Recent Files</span>
+                            <div class="recent-files-list" id="recent-files-list">
+                                <div class="empty-panel-message">No recent files</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 2. Table of Contents / Outline Panel -->
+                <div class="sidebar-panel hidden" id="panel-outline">
+                    <div class="sidebar-header">
+                        <span>Outline</span>
+                    </div>
+                    <div class="outline-list" id="outline-list">
+                        <div class="empty-panel-message">No active document</div>
+                    </div>
+                </div>
+                
+                <!-- 3. Bookmarks Panel -->
+                <div class="sidebar-panel hidden" id="panel-bookmarks">
+                    <div class="sidebar-header">
+                        <span>Bookmarks</span>
+                    </div>
+                    <div class="bookmarks-list" id="bookmarks-list">
+                        <div class="empty-panel-message">No bookmarks saved</div>
+                    </div>
+                </div>
+                
+                <!-- 4. Customize Preferences Settings Panel -->
+                <div class="sidebar-panel hidden" id="panel-settings">
+                    <div class="sidebar-header">
+                        <span>Preferences</span>
+                    </div>
+                    <div class="sidebar-panel-content">
+                        <!-- Typography customizations -->
+                        <div class="settings-group">
+                            <span class="settings-group-title">Typography</span>
+                            <div class="settings-control">
+                                <label for="setting-font-family">Font Family</label>
+                                <select id="setting-font-family">
+                                    <option value="System Default">System Default</option>
+                                    <option value="Inter">Inter (Sans)</option>
+                                    <option value="Outfit">Outfit (Clean)</option>
+                                    <option value="Georgia">Georgia (Serif)</option>
+                                    <option value="Fira Code">Fira Code (Monospace)</option>
+                                </select>
+                            </div>
+                            <div class="settings-control">
+                                <label for="setting-font-size">Font Size (px)</label>
+                                <input type="number" id="setting-font-size" min="12" max="32" value="16">
+                            </div>
+                            <div class="settings-control">
+                                <label for="setting-line-height">Line Height</label>
+                                <input type="number" id="setting-line-height" min="1.1" max="2.2" step="0.1" value="1.6">
+                            </div>
+                        </div>
+                        
+                        <!-- Layout Customizations -->
+                        <div class="settings-group">
+                            <span class="settings-group-title">Layout & Colors</span>
+                            <div class="settings-control">
+                                <label for="setting-content-width">Max Read Width (px)</label>
+                                <input type="number" id="setting-content-width" min="400" max="1400" step="50" value="800">
+                            </div>
+                            <div class="settings-control">
+                                <label for="setting-theme">Color Theme</label>
+                                <select id="setting-theme">
+                                    <option value="dark">Dark Theme</option>
+                                    <option value="light">Light Theme</option>
+                                    <option value="system">System Theme</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Clear data -->
+                        <div class="settings-group">
+                            <span class="settings-group-title">Clear Storage</span>
+                            <button class="primary-btn" id="btn-clear-recents" style="width: 100%; justify-content: center;">
+                                <span class="material-icons-round">delete_sweep</span>Clear Recents
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="sidebar-resize-handle" id="sidebar-resize-handle"></div>
+        </aside>
+
+        <!-- Floating Button to Toggle Expand Sidebar back -->
+        <button class="btn-expand-sidebar hidden search-exclude" id="btn-expand-sidebar" title="Expand Sidebar">
+            <span class="material-icons-round">chevron_right</span>
+        </button>
+
+        <!-- Main Document Area -->
+        <main class="editor-container">
+            
+            <!-- Open tabs at the top -->
+            <div class="tab-bar search-exclude" id="tab-bar">
+                <div class="no-tabs-msg">No files open</div>
+            </div>
+            
+            <!-- Toolbar for active document -->
+            <div class="toolbar search-exclude">
+                <div class="toolbar-left">
+                    <div class="toolbar-current-heading-wrap">
+                        <span class="material-icons-round" style="font-size: 16px;">tag</span>
+                        <span id="toolbar-current-heading" style="font-weight: 500;"></span>
+                    </div>
+                </div>
+                
+                <div class="toolbar-right">
+                    <!-- Zoom actions -->
+                    <button class="toolbar-btn" id="btn-zoom-out" title="Zoom Out (Ctrl+Minus)"><span class="material-icons-round">remove</span></button>
+                    <button class="toolbar-btn" id="btn-zoom-reset" title="Reset Zoom (Ctrl+0)"><span class="material-icons-round">search</span></button>
+                    <button class="toolbar-btn" id="btn-zoom-in" title="Zoom In (Ctrl+Plus)"><span class="material-icons-round">add</span></button>
+                    
+                    <div class="toolbar-divider"></div>
+                    
+                    <!-- Search button -->
+                    <button class="toolbar-btn" id="btn-toolbar-search" title="Find in Document (Ctrl+F)">
+                        <span class="material-icons-round">search</span>
+                    </button>
+                    
+                    <!-- Bookmarks toggler (adds bookmark on active file heading) -->
+                    <button class="toolbar-btn" id="btn-bookmark-heading" title="Bookmark Section">
+                        <span class="material-icons-round">bookmark_add</span>
+                    </button>
+                    
+                    <div class="toolbar-divider"></div>
+                    
+                    <!-- Focus & Presentation -->
+                    <button class="toolbar-btn" id="btn-focus-mode" title="Focus Mode (Esc to Exit)"><span class="material-icons-round">fullscreen</span></button>
+                    <button class="toolbar-btn" id="btn-presentation-mode" title="Presentation Mode"><span class="material-icons-round">slideshow</span></button>
+                </div>
+            </div>
+            
+            <!-- Progress Bar -->
+            <div class="progress-container search-exclude">
+                <div id="reading-progress-bar"></div>
+            </div>
+            
+            <!-- Document rendering container -->
+            <div class="viewer-scroll-container" id="viewer-container">
+                <article class="markdown-body" id="viewer-content">
+                    <div class="welcome-screen">
+                        <span class="material-icons-round welcome-icon">menu_book</span>
+                        <h1>Markdown Reader</h1>
+                        <p>Drag and drop a Markdown file here, or click Open File to browse.</p>
+                        <div class="welcome-actions">
+                            <button class="primary-btn" onclick="document.getElementById('file-input').click()">
+                                <span class="material-icons-round">file_open</span> Open File
+                            </button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            
+        </main>
+        
+        <!-- Floating Ctrl+F Search Bar panel -->
+        <div class="search-bar search-exclude" id="search-bar">
+            <span class="material-icons-round" style="color: var(--fg-secondary); font-size: 18px;">search</span>
+            <div class="search-input-wrapper">
+                <input type="text" id="search-input" placeholder="Find in document...">
+                <span id="search-count">0 of 0</span>
+            </div>
+            <button class="search-btn" id="btn-search-prev" title="Previous Occurrence"><span class="material-icons-round">arrow_upward</span></button>
+            <button class="search-btn" id="btn-search-next" title="Next Occurrence"><span class="material-icons-round">arrow_downward</span></button>
+            <button class="search-btn" id="btn-search-close" title="Close Search (Esc)"><span class="material-icons-round">close</span></button>
+        </div>
+
+    </div>
+
+    <!-- Status Bar Footer -->
+    <footer class="status-bar search-exclude">
+        <div class="status-left">
+            <div class="status-stat"><span class="material-icons-round">notes</span><span id="stat-words">0</span> words</div>
+            <div class="status-stat"><span class="material-icons-round">title</span><span id="stat-chars">0</span> characters</div>
+            <div class="status-stat"><span class="material-icons-round">view_headline</span><span id="stat-headings">0</span> headings</div>
+        </div>
+        <div class="status-right">
+            <div class="status-stat"><span class="material-icons-round">image</span><span id="stat-images">0</span> images</div>
+            <div class="status-stat"><span class="material-icons-round">grid_on</span><span id="stat-tables">0</span> tables</div>
+            <div class="status-stat"><span class="material-icons-round">link</span><span id="stat-links">0</span> links</div>
+            <div class="status-divider"></div>
+            <div class="status-stat"><span class="material-icons-round">schedule</span><span id="stat-reading-time">1 min</span> read</div>
+            <div class="status-stat"><span class="material-icons-round">zoom_in</span><span id="stat-zoom-level">100%</span></div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Script App orchestration -->
+    <script src="utils.js"></script>
+    <script src="storage.js"></script>
+    <script src="theme.js"></script>
+    <script src="search.js"></script>
+    <script src="mermaid.js"></script>
+    <script src="table.js"></script>
+    <script src="markdown.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
