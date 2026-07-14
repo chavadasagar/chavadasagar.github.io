@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aegis Health - Hospital Management System</title>
+  
+  <!-- Inter Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="light-mode">
+
+  <!-- ========================================== -->
+  <!-- AUTH SCREEN OVERLAY (Login, Sign-up, Forgot Pass) -->
+  <!-- ========================================== -->
+  <div id="auth-screen" class="auth-screen hidden">
+    <div class="auth-card">
+      <div class="auth-header">
+        <div class="auth-logo">
+          <i class="fa-solid fa-house-chimney-medical"></i>
+          <span>Aegis Health</span>
+        </div>
+        <p class="auth-subtitle">Hospital Management System</p>
+      </div>
+      
+      <!-- Login View -->
+      <div id="login-view" class="auth-form-view">
+        <form id="login-form" novalidate>
+          <div class="form-group">
+            <label for="login-username">Username</label>
+            <div class="input-wrapper">
+              <i class="fa-regular fa-user"></i>
+              <input type="text" id="login-username" placeholder="Enter username" required>
+            </div>
+            <div class="error-msg" id="login-username-err"></div>
+          </div>
+          
+          <div class="form-group">
+            <label for="login-password">Password</label>
+            <div class="input-wrapper">
+              <i class="fa-solid fa-lock"></i>
+              <input type="password" id="login-password" placeholder="Enter password" required>
+            </div>
+            <div class="error-msg" id="login-password-err"></div>
+          </div>
+
+          <div class="form-row-auth">
+            <a href="#" id="goto-forgot" class="auth-link">Forgot Password?</a>
+          </div>
+          
+          <button type="submit" class="btn btn-primary btn-block">
+            <span>Login</span> <i class="fa-solid fa-right-to-bracket"></i>
+          </button>
+        </form>
+        <div class="auth-footer">
+          <span>Need patient access?</span> <a href="#" id="goto-signup" class="auth-link font-semibold">Register here</a>
+        </div>
+        <div class="auth-demo-hint">
+          <p><strong>Demo Logins (Password: <code>password</code>):</strong></p>
+          <div class="demo-login-tags">
+            <span class="demo-tag" onclick="window.HMS_AUTH.fillDemo('admin')">Admin</span>
+            <span class="demo-tag" onclick="window.HMS_AUTH.fillDemo('doctor')">Doctor</span>
+            <span class="demo-tag" onclick="window.HMS_AUTH.fillDemo('receptionist')">Receptionist</span>
+            <span class="demo-tag" onclick="window.HMS_AUTH.fillDemo('pharmacist')">Pharmacist</span>
+            <span class="demo-tag" onclick="window.HMS_AUTH.fillDemo('labtech')">Lab Tech</span>
+            <span class="demo-tag" onclick="window.HMS_AUTH.fillDemo('patient')">Patient</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Patient Signup View -->
+      <div id="signup-view" class="auth-form-view hidden">
+        <h3 class="auth-form-title">Patient Self-Registration</h3>
+        <form id="signup-form" novalidate>
+          <div class="form-group">
+            <label for="signup-name">Full Name</label>
+            <input type="text" id="signup-name" placeholder="John Doe" required>
+            <div class="error-msg" id="signup-name-err"></div>
+          </div>
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="signup-dob">Date of Birth</label>
+              <input type="date" id="signup-dob" required>
+              <div class="error-msg" id="signup-dob-err"></div>
+            </div>
+            <div class="form-group">
+              <label for="signup-gender">Gender</label>
+              <select id="signup-gender" required>
+                <option value="">Select</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+              </select>
+              <div class="error-msg" id="signup-gender-err"></div>
+            </div>
+          </div>
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="signup-blood">Blood Group</label>
+              <select id="signup-blood" required>
+                <option value="">Select</option>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+              </select>
+              <div class="error-msg" id="signup-blood-err"></div>
+            </div>
+            <div class="form-group">
+              <label for="signup-phone">Phone Number</label>
+              <input type="tel" id="signup-phone" placeholder="10-digit number" required>
+              <div class="error-msg" id="signup-phone-err"></div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="signup-email">Email Address</label>
+            <input type="email" id="signup-email" placeholder="john@example.com" required>
+            <div class="error-msg" id="signup-email-err"></div>
+          </div>
+          <div class="form-group">
+            <label for="signup-address">Full Address</label>
+            <input type="text" id="signup-address" placeholder="123 Main St..." required>
+            <div class="error-msg" id="signup-address-err"></div>
+          </div>
+          <div class="form-group">
+            <label for="signup-emergency">Emergency Contact (Relation - Phone)</label>
+            <input type="text" id="signup-emergency" placeholder="Jane Doe (Wife) - 9876543211" required>
+            <div class="error-msg" id="signup-emergency-err"></div>
+          </div>
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="signup-username">Create Username</label>
+              <input type="text" id="signup-username" placeholder="john_doe" required>
+              <div class="error-msg" id="signup-username-err"></div>
+            </div>
+            <div class="form-group">
+              <label for="signup-password">Create Password</label>
+              <input type="password" id="signup-password" placeholder="••••••••" required>
+              <div class="error-msg" id="signup-password-err"></div>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Register Account</button>
+        </form>
+        <div class="auth-footer">
+          <span>Already registered?</span> <a href="#" id="goto-login" class="auth-link font-semibold">Back to Login</a>
+        </div>
+      </div>
+      
+      <!-- Forgot Password View -->
+      <div id="forgot-view" class="auth-form-view hidden">
+        <h3 class="auth-form-title">Reset Password</h3>
+        <p class="auth-description">Enter your username or email address and we will simulate sending a password reset code.</p>
+        <form id="forgot-form" novalidate>
+          <div class="form-group">
+            <label for="forgot-username">Username or Email</label>
+            <input type="text" id="forgot-username" placeholder="Enter username or email" required>
+            <div class="error-msg" id="forgot-username-err"></div>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Send Reset Link</button>
+        </form>
+        <div class="auth-footer">
+          <a href="#" id="forgot-back-login" class="auth-link font-semibold"><i class="fa-solid fa-arrow-left"></i> Back to Login</a>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+  <!-- ========================================== -->
+  <!-- MAIN APP CONTAINER -->
+  <!-- ========================================== -->
+  <div id="app-container" class="app-container">
+    
+    <!-- Sidebar Navigation -->
+    <aside id="sidebar" class="sidebar">
+      <div class="sidebar-brand">
+        <i class="fa-solid fa-house-chimney-medical"></i>
+        <span>Aegis Health</span>
+      </div>
+      
+      <div class="sidebar-user-brief">
+        <div class="avatar" id="sidebar-user-avatar">AH</div>
+        <div class="user-details">
+          <h4 id="sidebar-user-name">User Name</h4>
+          <span class="role-badge" id="sidebar-user-role">Role</span>
+        </div>
+      </div>
+
+      <nav class="sidebar-menu">
+        <ul id="sidebar-menu-list">
+          <!-- Dynamic sidebar items injected based on logged-in role -->
+        </ul>
+      </nav>
+      
+      <div class="sidebar-footer">
+        <button id="logout-btn" class="btn-logout">
+          <i class="fa-solid fa-right-from-bracket"></i>
+          <span>Logout</span>
+        </button>
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main id="main-content" class="main-content">
+      
+      <!-- Topbar Header -->
+      <header class="topbar">
+        <div class="topbar-left">
+          <button id="sidebar-toggle" class="sidebar-toggle-btn" aria-label="Toggle Sidebar">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          
+          <!-- Breadcrumbs -->
+          <div class="breadcrumbs" id="breadcrumbs">
+            <span class="breadcrumb-item active">Dashboard</span>
+          </div>
+        </div>
+        
+        <div class="topbar-right">
+          <!-- Global Search -->
+          <div class="global-search-container">
+            <div class="search-input-wrapper">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input type="text" id="global-search" placeholder="Search patients, doctors...">
+            </div>
+            <div id="global-search-results" class="global-search-dropdown hidden">
+              <!-- Dynamically populated results -->
+            </div>
+          </div>
+          
+          <!-- Theme Switcher -->
+          <button id="theme-toggle" class="theme-toggle-btn" title="Toggle Light/Dark Theme">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+
+          <!-- Current Time Display -->
+          <div class="current-time-display" id="current-time-display">
+            2026-07-14 16:18
+          </div>
+        </div>
+      </header>
+
+      <!-- Dynamic View Container -->
+      <div class="view-viewport">
+        <!-- Skeleton Loader (Simulated view loading) -->
+        <div id="skeleton-loader" class="skeleton-loader hidden">
+          <div class="skeleton-header">
+            <div class="skeleton-line title"></div>
+            <div class="skeleton-line subtitle"></div>
+          </div>
+          <div class="skeleton-grid">
+            <div class="skeleton-card"></div>
+            <div class="skeleton-card"></div>
+            <div class="skeleton-card"></div>
+          </div>
+          <div class="skeleton-table">
+            <div class="skeleton-row header"></div>
+            <div class="skeleton-row"></div>
+            <div class="skeleton-row"></div>
+            <div class="skeleton-row"></div>
+          </div>
+        </div>
+        
+        <!-- View Outlet -->
+        <div id="view-outlet" class="view-outlet">
+          <!-- Views will be dynamically loaded here by the routing system -->
+        </div>
+      </div>
+      
+    </main>
+  </div>
+
+  <!-- ========================================== -->
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <!-- ========================================== -->
+  <div id="toast-container" class="toast-container"></div>
+
+  <!-- ========================================== -->
+  <!-- REUSABLE CONFIRMATION MODAL -->
+  <!-- ========================================== -->
+  <div id="confirm-modal" class="modal-backdrop hidden">
+    <div class="modal">
+      <div class="modal-header">
+        <h3 id="confirm-modal-title">Confirm Action</h3>
+        <button class="modal-close" onclick="window.HMS_APP.closeConfirmModal()">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p id="confirm-modal-message">Are you sure you want to perform this action? This cannot be undone.</p>
+        <div id="confirm-modal-extra" class="form-group hidden">
+          <!-- Extra inputs like Cancellation Reason Dropdown -->
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button id="confirm-modal-cancel" class="btn btn-secondary" onclick="window.HMS_APP.closeConfirmModal()">Cancel</button>
+        <button id="confirm-modal-submit" class="btn btn-danger">Confirm</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/storage.js"></script>
+  <script src="js/seed-data.js"></script>
+  <script src="js/modules/auth.js"></script>
+  <script src="js/modules/patients.js"></script>
+  <script src="js/modules/doctors.js"></script>
+  <script src="js/modules/appointments.js"></script>
+  <script src="js/modules/admissions.js"></script>
+  <script src="js/modules/records.js"></script>
+  <script src="js/modules/lab.js"></script>
+  <script src="js/modules/pharmacy.js"></script>
+  <script src="js/modules/billing.js"></script>
+  <script src="js/modules/surgery.js"></script>
+  <script src="js/modules/ambulance.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
