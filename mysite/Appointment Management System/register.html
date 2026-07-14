@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register - ClinicSys</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .register-container {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: var(--spacing-md);
+      background: radial-gradient(circle at 10% 20%, rgb(242, 246, 248) 0%, rgb(224, 238, 241) 90.1%);
+    }
+    .register-card {
+      width: 100%;
+      max-width: 500px;
+      background: white;
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-lg);
+      padding: var(--spacing-xl);
+      border: 1px solid var(--neutral-200);
+    }
+    .register-header {
+      text-align: center;
+      margin-bottom: var(--spacing-lg);
+    }
+    .register-brand {
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--neutral-900);
+      margin-bottom: var(--spacing-xs);
+    }
+    .register-brand span {
+      color: var(--primary);
+    }
+    .register-subtitle {
+      font-size: 14px;
+      color: var(--neutral-400);
+    }
+  </style>
+</head>
+<body class="register-container">
+
+  <div class="register-card">
+    <div class="register-header">
+      <div class="register-brand">🩺 <span>Clinic</span>Sys</div>
+      <p class="register-subtitle">Create your Patient Account</p>
+    </div>
+
+    <form id="register-form">
+      <div class="form-group">
+        <label class="form-label" for="fullName">Full Name</label>
+        <input class="form-control" type="text" id="fullName" required placeholder="John Doe">
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label" for="phone">Phone Number</label>
+          <input class="form-control" type="tel" id="phone" required placeholder="555-0199">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="gender">Gender</label>
+          <select class="form-control" id="gender" required>
+            <option value="" disabled selected>Select Gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label" for="dob">Date of Birth</label>
+          <input class="form-control" type="date" id="dob" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="email">Email Address</label>
+          <input class="form-control" type="email" id="email" required placeholder="john.doe@example.com">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label" for="password">Password</label>
+          <input class="form-control" type="password" id="password" required placeholder="Min 6 characters">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="confirmPassword">Confirm Password</label>
+          <input class="form-control" type="password" id="confirmPassword" required placeholder="Repeat password">
+        </div>
+      </div>
+
+      <button class="btn btn-primary" type="submit" style="width: 100%; margin-top: var(--spacing-sm);">Register Account</button>
+    </form>
+
+    <div style="text-align: center; margin-top: var(--spacing-lg); font-size: 13px; color: var(--neutral-600);">
+      Already have an account? <a href="login.html" style="font-weight: 600;">Sign In</a>
+    </div>
+  </div>
+
+  <script src="js/db.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/toast.js"></script>
+  <script src="js/modal.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const registerForm = document.getElementById('register-form');
+
+      registerForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        const fullName = document.getElementById('fullName').value.trim();
+        const phone = document.getElementById('phone').value.trim();
+        const gender = document.getElementById('gender').value;
+        const dob = document.getElementById('dob').value;
+        const email = document.getElementById('email').value.trim().toLowerCase();
+        const password = document.getElementById('password').value;
+        const confirmPassword = document.getElementById('confirmPassword').value;
+
+        // Validations
+        if (password.length < 6) {
+          window.Toast.show("Password must be at least 6 characters long.", "error");
+          return;
+        }
+
+        if (password !== confirmPassword) {
+          window.Toast.show("Passwords do not match.", "error");
+          return;
+        }
+
+        // Check if email already exists
+        const users = window.DB.get(window.DB_COLLECTIONS.USERS);
+        if (users.some(u => u.email.toLowerCase() === email)) {
+          window.Toast.show("Email is already registered. Please login.", "error");
+          return;
+        }
+
+        // 1. Create Patient Record
+        const newPatient = {
+          fullName,
+          phone,
+          email,
+          gender,
+          dob,
+          password
+        };
+        const patient = window.DB.insert(window.DB_COLLECTIONS.PATIENTS, newPatient);
+
+        // 2. Create User Record
+        const newUser = {
+          email,
+          password,
+          role: 'Patient',
+          linkedId: patient.id
+        };
+        window.DB.insert(window.DB_COLLECTIONS.USERS, newUser);
+
+        window.Toast.show("Account registered successfully!", "success");
+
+        // 3. Log user in and redirect
+        setTimeout(() => {
+          const authRes = window.AUTH.login(email, password);
+          if (authRes.success) {
+            window.location.href = 'patient/doctor-search.html';
+          } else {
+            window.location.href = 'login.html';
+          }
+        }, 1000);
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manage Staff - ClinicSys</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Sidebar injected here -->
+
+    <main class="main-content">
+      <header style="margin-bottom: var(--spacing-lg); display: flex; justify-content: space-between; align-items: center;">
+        <div>
+          <h2>Manage Reception Staff</h2>
+          <p style="color: var(--neutral-400); font-size: 14px;">Register and manage clinic receptionist accounts for front-desk operations.</p>
+        </div>
+        <button class="btn btn-primary" id="btn-add-staff">👥 Add Receptionist</button>
+      </header>
+
+      <!-- Staff List Card -->
+      <section class="card">
+        <div class="table-container">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Account ID</th>
+                <th>Email Address</th>
+                <th>Role</th>
+                <th>Temp Password</th>
+                <th style="text-align: right;">Action</th>
+              </tr>
+            </thead>
+            <tbody id="staff-rows">
+              <!-- Loaded dynamically -->
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="../js/db.js"></script>
+  <script src="../js/auth.js"></script>
+  <script src="../js/toast.js"></script>
+  <script src="../js/modal.js"></script>
+  <script src="../js/navbar.js"></script>
+  <script>
+    // Role Guard
+    if (window.AUTH) {
+      window.AUTH.checkRole(['ClinicAdmin']);
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const staffRows = document.getElementById('staff-rows');
+      const btnAddStaff = document.getElementById('btn-add-staff');
+
+      const renderStaff = () => {
+        staffRows.innerHTML = '';
+        if (!window.DB) return;
+
+        const users = window.DB.get(window.DB_COLLECTIONS.USERS);
+        // Receptionists
+        const staff = users.filter(u => u.role === 'Receptionist');
+
+        if (staff.length === 0) {
+          staffRows.innerHTML = `
+            <tr>
+              <td colspan="5" style="text-align: center; color: var(--neutral-400); padding: 24px 0;">No receptionist accounts created yet.</td>
+            </tr>
+          `;
+          return;
+        }
+
+        staff.forEach(member => {
+          const row = document.createElement('tr');
+          row.innerHTML = `
+            <td><code>${member.id}</code></td>
+            <td><strong>${member.email}</strong></td>
+            <td><span class="badge badge-inprogress">${member.role}</span></td>
+            <td><code>${member.password}</code></td>
+            <td style="text-align: right;">
+              <button class="btn btn-danger btn-xs" onclick="removeStaff('${member.id}')">Delete</button>
+            </td>
+          `;
+          staffRows.appendChild(row);
+        });
+      };
+
+      // Remove Staff account
+      window.removeStaff = (userId) => {
+        // Prevent deleting the preseeded demo receptionist
+        const users = window.DB.get(window.DB_COLLECTIONS.USERS);
+        const user = users.find(u => u.id === userId);
+        
+        if (user && user.email === 'reception@demo.com') {
+          window.Toast.show("Cannot delete the preseeded demo receptionist account.", "error");
+          return;
+        }
+
+        window.Modal.confirm({
+          title: "Delete Staff Account?",
+          body: `Are you sure you want to delete receptionist account <strong>${user ? user.email : ''}</strong>? This user will lose access to the system immediately.`,
+          confirmText: "Delete Account",
+          onConfirm: () => {
+            const deleted = window.DB.delete(window.DB_COLLECTIONS.USERS, userId);
+            if (deleted) {
+              window.Toast.show("Staff account deleted successfully.", "success");
+              renderStaff();
+            } else {
+              window.Toast.show("Failed to delete account.", "error");
+            }
+          }
+        });
+      };
+
+      // Add Staff Modal prompt
+      btnAddStaff.onclick = () => {
+        window.Modal.prompt({
+          title: "👥 Add Receptionist Account",
+          bodyHtml: `
+            <div class="form-group">
+              <label class="form-label">Email Address</label>
+              <input class="form-control" type="email" name="email" required placeholder="receptionist@clinic.com">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Password</label>
+              <input class="form-control" type="password" name="password" required value="Demo@123" placeholder="Set temporary password...">
+            </div>
+          `,
+          confirmText: "Create Account",
+          onConfirm: (formData) => {
+            const email = formData.email.trim().toLowerCase();
+            const password = formData.password.trim();
+
+            if (!email || !password) {
+              window.Toast.show("Please enter email and password.", "error");
+              return false;
+            }
+
+            const users = window.DB.get(window.DB_COLLECTIONS.USERS);
+            if (users.some(u => u.email.toLowerCase() === email)) {
+              window.Toast.show("This email is already in use by another account.", "error");
+              return false;
+            }
+
+            // Create Receptionist User
+            window.DB.insert(window.DB_COLLECTIONS.USERS, {
+              email,
+              password,
+              role: 'Receptionist',
+              linkedId: null
+            });
+
+            window.Toast.show("Receptionist account created successfully!", "success");
+            renderStaff();
+          }
+        });
+      };
+
+      renderStaff();
+    });
+  </script>
+</body>
+</html>

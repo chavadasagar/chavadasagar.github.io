@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manage Doctors - ClinicSys</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <style>
+    /* Styling for active/inactive status column */
+    .status-toggle {
+      position: relative;
+      display: inline-block;
+      width: 44px;
+      height: 24px;
+    }
+    .status-toggle input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+    .status-slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: var(--neutral-300);
+      transition: .3s;
+      border-radius: 24px;
+    }
+    .status-slider:before {
+      position: absolute;
+      content: "";
+      height: 18px;
+      width: 18px;
+      left: 3px;
+      bottom: 3px;
+      background-color: white;
+      transition: .3s;
+      border-radius: 50%;
+    }
+    input:checked + .status-slider {
+      background-color: var(--primary);
+    }
+    input:checked + .status-slider:before {
+      transform: translateX(20px);
+    }
+  </style>
+</head>
+<body>
+  <div class="app-container">
+    <!-- Sidebar injected here -->
+
+    <main class="main-content">
+      <header style="margin-bottom: var(--spacing-lg); display: flex; justify-content: space-between; align-items: center;">
+        <div>
+          <h2>Manage Doctors</h2>
+          <p style="color: var(--neutral-400); font-size: 14px;">Register new physicians, modify consulting parameters, and toggle staff accounts.</p>
+        </div>
+        <button class="btn btn-primary" id="btn-add-doctor">👨‍⚕️ Add Doctor</button>
+      </header>
+
+      <!-- Search Bar -->
+      <section class="card" style="padding: var(--spacing-sm) var(--spacing-md); margin-bottom: var(--spacing-md);">
+        <input type="text" id="doctor-search-input" class="form-control" placeholder="Search doctors by name, qualification or specialization...">
+      </section>
+
+      <!-- Doctors Table -->
+      <section class="card">
+        <div class="table-container">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Physician Details</th>
+                <th>Specialization</th>
+                <th>Clinic</th>
+                <th>Consultation Fee</th>
+                <th>Experience / Rating</th>
+                <th>Active State</th>
+                <th style="text-align: right;">Action</th>
+              </tr>
+            </thead>
+            <tbody id="doctors-rows">
+              <!-- Loaded dynamically -->
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="../js/db.js"></script>
+  <script src="../js/auth.js"></script>
+  <script src="../js/slots.js"></script>
+  <script src="../js/toast.js"></script>
+  <script src="../js/modal.js"></script>
+  <script src="../js/navbar.js"></script>
+  <script>
+    // Role Guard
+    if (window.AUTH) {
+      window.AUTH.checkRole(['ClinicAdmin']);
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const searchInput = document.getElementById('doctor-search-input');
+      const doctorsRows = document.getElementById('doctors-rows');
+      const btnAddDoctor = document.getElementById('btn-add-doctor');
+
+      // Fetch Seed Data
+      const specializations = window.DB.get(window.DB_COLLECTIONS.SPECIALIZATIONS);
+      const clinics = window.DB.get(window.DB_COLLECTIONS.CLINICS);
+
+      const renderDoctors = () => {
+        doctorsRows.innerHTML = '';
+        const doctors = window.DB.get(window.DB_COLLECTIONS.DOCTORS);
+        const query = searchInput.value.toLowerCase();
+
+        const filtered = doctors.filter(doc => {
+          const spec = specializations.find(s => s.id === doc.specializationId) || {};
+          const matchesQuery = doc.fullName.toLowerCase().includes(query) || 
+                               doc.qualification.toLowerCase().includes(query) ||
+                               (spec.name && spec.name.toLowerCase().includes(query));
+          return matchesQuery;
+        });
+
+        if (filtered.length === 0) {
+          doctorsRows.innerHTML = `<tr><td colspan="7" style="text-align: center; color: var(--neutral-400);">No doctors match your criteria.</td></tr>`;
+          return;
+        }
+
+        filtered.forEach(doc => {
+          const spec = specializations.find(s => s.id === doc.specializationId) || { name: 'General' };
+          const clinic = clinics.find(c => c.id === doc.clinicId) || { name: 'Clinic' };
+          const row = document.createElement('tr');
+
+          row.innerHTML = `
+            <td>
+              <strong>${doc.fullName}</strong><br>
+              <span style="font-size: 11px; color: var(--neutral-400);">${doc.qualification}</span>
+            </td>
+            <td><span class="badge badge-completed">${spec.name}</span></td>
+            <td>${clinic.name} (${clinic.city})</td>
+            <td style="font-weight: 600; color: var(--neutral-800);">$${doc.consultationFee} <span style="font-size: 11px; font-weight: 400; color: var(--neutral-400);">/ slot</span></td>
+            <td><strong>${doc.experienceYears} Years</strong><br><span style="font-size: 11px; color: var(--status-pending);">⭐ ${doc.rating} / 5.0</span></td>
+            <td>
+              <label class="status-toggle">
+                <input type="checkbox" onchange="toggleDoctorActive('${doc.id}', this.checked)" ${doc.isActive ? 'checked' : ''}>
+                <span class="status-slider"></span>
+              </label>
+            </td>
+            <td style="text-align: right;">
+              <button class="btn btn-secondary btn-xs" onclick="editDoctor('${doc.id}')">✏️ Edit</button>
+            </td>
+          `;
+
+          doctorsRows.appendChild(row);
+        });
+      };
+
+      searchInput.oninput = renderDoctors;
+
+      // Toggle Active State
+      window.toggleDoctorActive = (id, isChecked) => {
+        window.DB.update(window.DB_COLLECTIONS.DOCTORS, id, { isActive: isChecked });
+        window.Toast.show(`Doctor account status updated.`, "success");
+      };
+
+      // Select dropdown items template helpers
+      const getSpecOptionsHtml = (selectedId = '') => 
+        specializations.map(s => `<option value="${s.id}" ${s.id === selectedId ? 'selected' : ''}>${s.name}</option>`).join('');
+
+      const getClinicOptionsHtml = (selectedId = '') => 
+        clinics.map(c => `<option value="${c.id}" ${c.id === selectedId ? 'selected' : ''}>${c.name} (${c.city})</option>`).join('');
+
+      // ADD DOCTOR DIALOG
+      btnAddDoctor.onclick = () => {
+        window.Modal.prompt({
+          title: "👨‍⚕️ Register New Doctor",
+          bodyHtml: `
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label">Full Name</label>
+                <input class="form-control" type="text" name="fullName" required placeholder="Dr. John Doe">
+              </div>
+              <div class="form-group">
+                <label class="form-label">Email</label>
+                <input class="form-control" type="email" name="email" required placeholder="doctor@clinic.com">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label">Phone</label>
+                <input class="form-control" type="text" name="phone" required placeholder="555-0210">
+              </div>
+              <div class="form-group">
+                <label class="form-label">Temporary Password</label>
+                <input class="form-control" type="text" name="password" required value="Demo@123">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label">Specialization</label>
+                <select class="form-control" name="specializationId" required>
+                  ${getSpecOptionsHtml()}
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Assign Clinic</label>
+                <select class="form-control" name="clinicId" required>
+                  ${getClinicOptionsHtml()}
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label">Qualifications</label>
+                <input class="form-control" type="text" name="qualification" required placeholder="MD - Internal Medicine">
+              </div>
+              <div class="form-group">
+                <label class="form-label">Years of Experience</label>
+                <input class="form-control" type="number" name="experienceYears" required min="1" value="5">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label">Consultation Fee ($)</label>
+                <input class="form-control" type="number" name="consultationFee" required min="10" value="50">
+              </div>
+              <div class="form-group">
+                <label class="form-label">Avg Slot Duration (mins)</label>
+                <select class="form-control" name="avgSlotDurationMinutes" required>
+                  <option value="15" selected>15 mins</option>
+                  <option value="20">20 mins</option>
+                  <option value="30">30 mins</option>
+                  <option value="45">45 mins</option>
+                </select>
+              </div>
+            </div>
+          `,
+          confirmText: "Save Doctor",
+          onConfirm: (formData) => {
+            const email = formData.email.trim().toLowerCase();
+            const fullName = formData.fullName.trim();
+            const password = formData.password.trim();
+
+            if (!fullName || !email || !password) {
+              window.Toast.show("Please enter name, email, and password.", "error");
+              return false;
+            }
+
+            // Check duplicate email
+            const users = window.DB.get(window.DB_COLLECTIONS.USERS);
+            if (users.some(u => u.email.toLowerCase() === email)) {
+              window.Toast.show("Email is already in use.", "error");
+              return false;
+            }
+
+            // Insert Doctor
+            const doc = window.DB.insert(window.DB_COLLECTIONS.DOCTORS, {
+              fullName,
+              email,
+              phone: formData.phone.trim(),
+              qualification: formData.qualification.trim(),
+              experienceYears: Number(formData.experienceYears),
+              consultationFee: Number(formData.consultationFee),
+              avgSlotDurationMinutes: Number(formData.avgSlotDurationMinutes),
+              specializationId: formData.specializationId,
+              clinicId: formData.clinicId,
+              rating: 5.0,
+              isActive: true,
+              password
+            });
+
+            // Insert User credential map
+            window.DB.insert(window.DB_COLLECTIONS.USERS, {
+              email, password, role: 'Doctor', linkedId: doc.id
+            });
+
+            // Create default schedules (Mon-Fri 09:00 - 17:00)
+            const schedules = window.DB.get(window.DB_COLLECTIONS.DOCTOR_SCHEDULES);
+            for (let day = 1; day <= 5; day++) {
+              schedules.push({
+                id: `sched-${doc.id}-${day}`,
+                doctorId: doc.id,
+                dayOfWeek: day,
+                startTime: '09:00',
+                endTime: '17:00',
+                slotDurationMinutes: doc.avgSlotDurationMinutes
+              });
+            }
+            window.DB.save(window.DB_COLLECTIONS.DOCTOR_SCHEDULES, schedules);
+
+            // Sync Slots
+            window.SLOTS.generateSlots(doc.id, 30);
+
+            window.Toast.show("Doctor registered and default weekly schedule created!", "success");
+            renderDoctors();
+          }
+        });
+      };
+
+      // EDIT DOCTOR DIALOG
+      window.editDoctor = (id) => {
+        const doc = window.DB.getById(window.DB_COLLECTIONS.DOCTORS, id);
+        if (!doc) return;
+
+        window.Modal.prompt({
+          title: `✏️ Edit Profile: ${doc.fullName}`,
+          bodyHtml: `
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label">Full Name</label>
+                <input class="form-control" type="text" name="fullName" required value="${doc.fullName}">
+              </div>
+              <div class="form-group">
+                <label class="form-label">Phone</label>
+                <input class="form-control" type="text" name="phone" required value="${doc.phone}">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label">Specialization</label>
+                <select class="form-control" name="specializationId" required>
+                  ${getSpecOptionsHtml(doc.specializationId)}
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Clinic</label>
+                <select class="form-control" name="clinicId" required>
+                  ${getClinicOptionsHtml(doc.clinicId)}
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label">Qualifications</label>
+                <input class="form-control" type="text" name="qualification" required value="${doc.qualification}">
+              </div>
+              <div class="form-group">
+                <label class="form-label">Years of Experience</label>
+                <input class="form-control" type="number" name="experienceYears" required value="${doc.experienceYears}">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label">Consultation Fee ($)</label>
+                <input class="form-control" type="number" name="consultationFee" required value="${doc.consultationFee}">
+              </div>
+              <div class="form-group">
+                <label class="form-label">Slot Duration (cannot change templates on editing)</label>
+                <input class="form-control" type="text" readonly value="${doc.avgSlotDurationMinutes} mins">
+              </div>
+            </div>
+          `,
+          confirmText: "Update Doctor",
+          onConfirm: (formData) => {
+            const fullName = formData.fullName.trim();
+            if (!fullName) return false;
+
+            window.DB.update(window.DB_COLLECTIONS.DOCTORS, id, {
+              fullName,
+              phone: formData.phone.trim(),
+              specializationId: formData.specializationId,
+              clinicId: formData.clinicId,
+              qualification: formData.qualification.trim(),
+              experienceYears: Number(formData.experienceYears),
+              consultationFee: Number(formData.consultationFee)
+            });
+
+            window.Toast.show("Doctor profile updated successfully.", "success");
+            renderDoctors();
+          }
+        });
+      };
+
+      // Initial render
+      renderDoctors();
+    });
+  </script>
+</body>
+</html>

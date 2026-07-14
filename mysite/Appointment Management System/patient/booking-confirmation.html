@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Confirm Booking - ClinicSys</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <style>
+    .payment-option {
+      border: 1px solid var(--neutral-300);
+      border-radius: var(--radius-md);
+      padding: var(--spacing-md);
+      display: flex;
+      align-items: center;
+      gap: var(--spacing-md);
+      cursor: pointer;
+      transition: all 0.2s;
+      margin-bottom: var(--spacing-sm);
+    }
+    .payment-option:hover {
+      border-color: var(--primary);
+      background-color: var(--neutral-50);
+    }
+    .payment-option.active {
+      border-color: var(--primary);
+      background-color: var(--primary-light);
+    }
+  </style>
+</head>
+<body>
+  <div class="app-container">
+    <!-- Sidebar injected here -->
+
+    <main class="main-content">
+      <header style="margin-bottom: var(--spacing-lg); display: flex; align-items: center; gap: var(--spacing-sm);">
+        <button class="btn btn-secondary btn-sm" onclick="window.history.back()">⬅️ Back</button>
+        <h2>Confirm Your Booking</h2>
+      </header>
+
+      <div class="grid-cols-2">
+        <!-- Recap Card -->
+        <section class="card">
+          <h3 class="card-title">Booking Summary</h3>
+          <div style="display: flex; flex-direction: column; gap: 14px; margin-top: var(--spacing-md);" id="recap-container">
+            <!-- Loaded dynamically -->
+          </div>
+        </section>
+
+        <!-- Booking details & payment Form -->
+        <section class="card">
+          <h3 class="card-title">Reason & Payment</h3>
+          <form id="confirm-booking-form" style="margin-top: var(--spacing-md);">
+            <div class="form-group">
+              <label class="form-label" for="reason">Reason for Visit</label>
+              <textarea class="form-control" id="reason" rows="3" required placeholder="Describe your symptoms or reason for consulting the doctor..."></textarea>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Choose Payment Option</label>
+              
+              <label class="payment-option active" id="pay-now-label">
+                <input type="radio" name="paymentMode" value="PAY_NOW" checked style="accent-color: var(--primary);">
+                <div>
+                  <strong>💳 Pay Online Now ($50)</strong>
+                  <span style="font-size: 12px; color: var(--neutral-600); display: block;">Simulate secure card payment now (instantly approved).</span>
+                </div>
+              </label>
+
+              <label class="payment-option" id="pay-clinic-label">
+                <input type="radio" name="paymentMode" value="PAY_AT_CLINIC" style="accent-color: var(--primary);">
+                <div>
+                  <strong>🏥 Pay at Clinic ($50)</strong>
+                  <span style="font-size: 12px; color: var(--neutral-600); display: block;">Pay at the front desk when you arrive.</span>
+                </div>
+              </label>
+            </div>
+
+            <button class="btn btn-primary" type="submit" style="width: 100%; margin-top: var(--spacing-md);">Confirm Appointment</button>
+          </form>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <script src="../js/db.js"></script>
+  <script src="../js/auth.js"></script>
+  <script src="../js/appointments.js"></script>
+  <script src="../js/toast.js"></script>
+  <script src="../js/modal.js"></script>
+  <script src="../js/navbar.js"></script>
+  <script>
+    // Role Guard
+    if (window.AUTH) {
+      window.AUTH.checkRole(['Patient']);
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const params = new URLSearchParams(window.location.search);
+      const doctorId = params.get('doctorId');
+      const slotId = params.get('slotId');
+
+      if (!doctorId || !slotId || !window.DB) {
+        window.location.href = 'doctor-search.html';
+        return;
+      }
+
+      const doctor = window.DB.getById(window.DB_COLLECTIONS.DOCTORS, doctorId);
+      const slot = window.DB.getById(window.DB_COLLECTIONS.DOCTOR_SLOTS, slotId);
+      
+      if (!doctor || !slot) {
+        window.Toast.show("Required details missing.", "error");
+        setTimeout(() => window.location.href = 'doctor-search.html', 1000);
+        return;
+      }
+
+      const specialization = window.DB.getById(window.DB_COLLECTIONS.SPECIALIZATIONS, doctor.specializationId);
+      const clinic = window.DB.getById(window.DB_COLLECTIONS.CLINICS, doctor.clinicId);
+      
+      // Render Recap Info
+      const recapContainer = document.getElementById('recap-container');
+      const formattedDate = new Date(slot.slotDate).toLocaleDateString(undefined, { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+
+      recapContainer.innerHTML = `
+        <div>
+          <span style="font-size: 12px; color: var(--neutral-400); text-transform: uppercase;">Doctor</span>
+          <h4 style="margin: 0; font-size: 16px;">${doctor.fullName}</h4>
+          <span style="font-size: 13px; color: var(--neutral-600);">${specialization ? specialization.name : 'General'}</span>
+        </div>
+        <div>
+          <span style="font-size: 12px; color: var(--neutral-400); text-transform: uppercase;">Clinic</span>
+          <h4 style="margin: 0; font-size: 15px;">${clinic ? clinic.name : 'Clinic'}</h4>
+          <span style="font-size: 13px; color: var(--neutral-600);">${clinic ? clinic.address : ''}, ${clinic ? clinic.city : ''}</span>
+        </div>
+        <div style="background-color: var(--neutral-50); border: 1px solid var(--neutral-200); padding: var(--spacing-sm) var(--spacing-md); border-radius: var(--radius-md);">
+          <span style="font-size: 12px; color: var(--neutral-400); text-transform: uppercase;">Date & Time</span>
+          <div style="font-size: 15px; font-weight: 600; color: var(--neutral-800); margin-top: 2px;">🗓️ ${formattedDate}</div>
+          <div style="font-size: 15px; font-weight: 600; color: var(--primary); margin-top: 2px;">🕒 ${slot.startTime} - ${slot.endTime}</div>
+        </div>
+        <div>
+          <span style="font-size: 12px; color: var(--neutral-400); text-transform: uppercase;">Consultation Fee</span>
+          <h3 style="margin: 0; font-size: 20px; color: var(--neutral-900); font-weight: 700;">$${doctor.consultationFee}</h3>
+        </div>
+      `;
+
+      // Handle radio active borders style
+      const payNowLabel = document.getElementById('pay-now-label');
+      const payClinicLabel = document.getElementById('pay-clinic-label');
+      
+      payNowLabel.onclick = () => {
+        payNowLabel.classList.add('active');
+        payClinicLabel.classList.remove('active');
+      };
+
+      payClinicLabel.onclick = () => {
+        payClinicLabel.classList.add('active');
+        payNowLabel.classList.remove('active');
+      };
+
+      // Form Submit
+      const form = document.getElementById('confirm-booking-form');
+      form.onsubmit = (e) => {
+        e.preventDefault();
+
+        const reason = document.getElementById('reason').value.trim();
+        const paymentMode = form.elements['paymentMode'].value;
+        const currentUser = window.AUTH.getCurrentUser();
+
+        if (!currentUser || !currentUser.linkedId) {
+          window.Toast.show("Session error: Patient not found.", "error");
+          return;
+        }
+
+        // Mock payment step warning / information
+        if (paymentMode === 'PAY_NOW') {
+          // Simulate online payment success dialog first
+          window.Modal.confirm({
+            title: "Simulate Payment Success?",
+            body: "We will now simulate a secure mock credit card/online checkout gateway step. The transaction is instantly marked as PAID.",
+            confirmText: "Proceed",
+            onConfirm: () => {
+              executeBooking(currentUser.linkedId, reason, paymentMode);
+            }
+          });
+        } else {
+          executeBooking(currentUser.linkedId, reason, paymentMode);
+        }
+      };
+
+      function executeBooking(patientId, reason, paymentMode) {
+        const result = window.APPOINTMENTS.book(
+          patientId,
+          doctorId,
+          doctor.clinicId,
+          slotId,
+          reason,
+          paymentMode,
+          'ONLINE'
+        );
+
+        if (result.success) {
+          window.Toast.show("Appointment booked successfully!", "success");
+          
+          window.Modal.confirm({
+            title: "🎉 Booking Confirmed!",
+            body: `Your appointment is confirmed with <strong>${doctor.fullName}</strong> for <strong>${formattedDate}</strong> at <strong>${slot.startTime}</strong>.<br><br>Two automated SMS/email reminders have been pre-scheduled (24 hours and 1 hour prior). You can inspect them using the 🔔 <strong>Reminders Panel</strong> at the bottom left.`,
+            confirmText: "Go to My Appointments",
+            cancelText: "Close",
+            onConfirm: () => {
+              window.location.href = 'my-appointments.html';
+            },
+            onCancel: () => {
+              window.location.href = 'my-appointments.html';
+            }
+          });
+        } else {
+          window.Toast.show(result.error, "error");
+        }
+      }
+    });
+  </script>
+</body>
+</html>

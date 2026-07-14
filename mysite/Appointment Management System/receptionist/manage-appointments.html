@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manage Bookings - ClinicSys</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Sidebar injected here -->
+
+    <main class="main-content">
+      <header style="margin-bottom: var(--spacing-lg);">
+        <h2>Manage Clinic Bookings</h2>
+        <p style="color: var(--neutral-400); font-size: 14px;">View, filter, reschedule, or cancel appointments across the entire clinic.</p>
+      </header>
+
+      <!-- Advanced Filters Card -->
+      <section class="card">
+        <h3 class="card-title" style="font-size: 14px; margin-bottom: var(--spacing-md);">Search & Filter Bookings</h3>
+        <form id="filter-form" style="display: flex; gap: var(--spacing-md); flex-wrap: wrap; align-items: flex-end;">
+          <div class="form-group" style="flex: 1; min-width: 200px; margin-bottom: 0;">
+            <label class="form-label" for="search-patient">Patient Name</label>
+            <input type="text" id="search-patient" class="form-control" placeholder="Search by patient name...">
+          </div>
+
+          <div class="form-group" style="flex: 1; min-width: 150px; margin-bottom: 0;">
+            <label class="form-label" for="filter-doctor">Doctor</label>
+            <select class="form-control" id="filter-doctor">
+              <option value="all">All Doctors</option>
+              <!-- Loaded dynamically -->
+            </select>
+          </div>
+
+          <div class="form-group" style="flex: 1; min-width: 130px; margin-bottom: 0;">
+            <label class="form-label" for="filter-date">Date</label>
+            <input class="form-control" type="date" id="filter-date">
+          </div>
+
+          <div class="form-group" style="flex: 1; min-width: 130px; margin-bottom: 0;">
+            <label class="form-label" for="filter-status">Status</label>
+            <select class="form-control" id="filter-status">
+              <option value="all">All Statuses</option>
+              <option value="PENDING">Pending</option>
+              <option value="CONFIRMED">Confirmed</option>
+              <option value="IN_PROGRESS">In Progress</option>
+              <option value="COMPLETED">Completed</option>
+              <option value="CANCELLED">Cancelled</option>
+              <option value="NO_SHOW">No Show</option>
+              <option value="RESCHEDULED">Rescheduled</option>
+            </select>
+          </div>
+
+          <div style="display: flex; gap: var(--spacing-sm);">
+            <button class="btn btn-secondary" type="button" id="btn-reset-filters" style="height: 42px;">Reset</button>
+          </div>
+        </form>
+      </section>
+
+      <!-- Bookings Table -->
+      <section class="card">
+        <div class="table-container">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Patient</th>
+                <th>Doctor</th>
+                <th>Date & Time</th>
+                <th>Type</th>
+                <th>Status</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="bookings-rows">
+              <!-- Loaded dynamically -->
+            </tbody>
+          </table>
+        </div>
+
+        <div id="no-bookings" class="empty-state" style="display: none;">
+          <div class="empty-state-icon">📅</div>
+          <div class="empty-state-title">No bookings match filter criteria</div>
+          <div class="empty-state-desc">Try resetting the filters to view all scheduled appointments.</div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="../js/db.js"></script>
+  <script src="../js/auth.js"></script>
+  <script src="../js/appointments.js"></script>
+  <script src="../js/slots.js"></script>
+  <script src="../js/toast.js"></script>
+  <script src="../js/modal.js"></script>
+  <script src="../js/navbar.js"></script>
+  <script>
+    // Role Guard: Receptionist or Admin can access
+    if (window.AUTH) {
+      window.AUTH.checkRole(['Receptionist', 'ClinicAdmin']);
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      // Elements
+      const searchPatient = document.getElementById('search-patient');
+      const filterDoctor = document.getElementById('filter-doctor');
+      const filterDate = document.getElementById('filter-date');
+      const filterStatus = document.getElementById('filter-status');
+      const btnResetFilters = document.getElementById('btn-reset-filters');
+      const bookingsRows = document.getElementById('bookings-rows');
+      const noBookings = document.getElementById('no-bookings');
+
+      // Fetch Seed Data
+      const doctors = window.DB.get(window.DB_COLLECTIONS.DOCTORS);
+      const clinics = window.DB.get(window.DB_COLLECTIONS.CLINICS);
+      const specializations = window.DB.get(window.DB_COLLECTIONS.SPECIALIZATIONS);
+
+      // Populate Doctor Filter Dropdown
+      filterDoctor.innerHTML += doctors.map(d => `<option value="${d.id}">${d.fullName}</option>`).join('');
+
+      const renderBookings = () => {
+        bookingsRows.innerHTML = '';
+        
+        const appointments = window.DB.get(window.DB_COLLECTIONS.APPOINTMENTS);
+        const patients = window.DB.get(window.DB_COLLECTIONS.PATIENTS);
+
+        const searchQuery = searchPatient.value.toLowerCase();
+        const docFilterVal = filterDoctor.value;
+        const dateFilterVal = filterDate.value;
+        const statusFilterVal = filterStatus.value;
+
+        // Filter appointments
+        const filtered = appointments.filter(apt => {
+          const patient = patients.find(p => p.id === apt.patientId) || {};
+          
+          // Search Name
+          if (searchQuery && !patient.fullName.toLowerCase().includes(searchQuery)) {
+            return false;
+          }
+          // Doctor Filter
+          if (docFilterVal !== 'all' && apt.doctorId !== docFilterVal) {
+            return false;
+          }
+          // Date Filter
+          if (dateFilterVal && apt.appointmentDate !== dateFilterVal) {
+            return false;
+          }
+          // Status Filter
+          if (statusFilterVal !== 'all' && apt.status !== statusFilterVal) {
+            return false;
+          }
+
+          return true;
+        });
+
+        // Sort soonest / latest
+        filtered.sort((a, b) => new Date(`${b.appointmentDate}T${b.startTime}`) - new Date(`${a.appointmentDate}T${a.startTime}`));
+
+        if (filtered.length === 0) {
+          document.querySelector('.table-container').style.display = 'none';
+          noBookings.style.display = 'block';
+          return;
+        }
+
+        document.querySelector('.table-container').style.display = 'block';
+        noBookings.style.display = 'none';
+
+        filtered.forEach(apt => {
+          const patient = patients.find(p => p.id === apt.patientId) || {};
+          const doc = doctors.find(d => d.id === apt.doctorId) || {};
+          const spec = specializations.find(s => s.id === doc.specializationId) || {};
+
+          const row = document.createElement('tr');
+          const dateFormatted = new Date(apt.appointmentDate).toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric' });
+
+          // Badges
+          let badgeClass = 'badge-pending';
+          if (apt.status === 'CONFIRMED') badgeClass = 'badge-confirmed';
+          if (apt.status === 'IN_PROGRESS') badgeClass = 'badge-inprogress';
+          if (apt.status === 'COMPLETED') badgeClass = 'badge-completed';
+          if (apt.status === 'CANCELLED') badgeClass = 'badge-cancelled';
+          if (apt.status === 'NO_SHOW') badgeClass = 'badge-noshow';
+          if (apt.status === 'RESCHEDULED') badgeClass = 'badge-rescheduled';
+
+          // Action buttons builder
+          let actionsHtml = '';
+          const isModifiable = ['PENDING', 'CONFIRMED', 'RESCHEDULED'].includes(apt.status);
+          
+          if (isModifiable) {
+            actionsHtml = `
+              <button class="btn btn-secondary btn-xs" onclick="rescheduleOnBehalf('${apt.id}')">Reschedule</button>
+              <button class="btn btn-danger btn-xs" onclick="cancelOnBehalf('${apt.id}')">Cancel</button>
+            `;
+          } else {
+            actionsHtml = `<span style="font-size: 12px; color: var(--neutral-400); font-style: italic;">Locked</span>`;
+          }
+
+          row.innerHTML = `
+            <td><strong>${patient.fullName || 'Guest'}</strong><br><span style="font-size: 11px; color: var(--neutral-400);">Ph: ${patient.phone || '-'}</span></td>
+            <td><strong>${doc.fullName || 'Doctor'}</strong><br><span style="font-size: 11px; color: var(--neutral-400);">${spec.name || 'General'}</span></td>
+            <td><strong>${dateFormatted}</strong><br><span style="font-size: 11px; color: var(--primary); font-weight: 500;">${apt.startTime} - ${apt.endTime}</span></td>
+            <td><span class="badge badge-completed" style="font-size: 10px; background-color: var(--neutral-100); color: var(--neutral-800); border: 1px solid var(--neutral-300);">${apt.bookingType}</span></td>
+            <td><span class="badge ${badgeClass}">${apt.status}</span></td>
+            <td>
+              <div style="display: flex; gap: 4px;">
+                ${actionsHtml}
+                <button class="btn btn-secondary btn-xs" onclick="viewAuditTrail('${apt.id}')">Audit Log</button>
+              </div>
+            </td>
+          `;
+
+          bookingsRows.appendChild(row);
+        });
+      };
+
+      // Search & Filters inputs event wiring
+      searchPatient.oninput = renderBookings;
+      filterDoctor.onchange = renderBookings;
+      filterDate.onchange = renderBookings;
+      filterStatus.onchange = renderBookings;
+
+      btnResetFilters.onclick = () => {
+        searchPatient.value = '';
+        filterDoctor.value = 'all';
+        filterDate.value = '';
+        filterStatus.value = 'all';
+        renderBookings();
+      };
+
+      // CANCEL ON BEHALF (Bypasses rules)
+      window.cancelOnBehalf = (aptId) => {
+        const apt = window.DB.getById(window.DB_COLLECTIONS.APPOINTMENTS, aptId);
+        const patients = window.DB.get(window.DB_COLLECTIONS.PATIENTS);
+        const patient = patients.find(p => p.id === apt.patientId) || {};
+
+        window.Modal.prompt({
+          title: `Cancel Booking: ${patient.fullName}`,
+          bodyHtml: `
+            <p style="color: var(--status-cancelled); font-weight: 600; margin-bottom: 8px;">⚠️ Receptionist Overrides Rules: You can cancel this booking even if it is within the 2-hour lockout window.</p>
+            <div class="form-group">
+              <label class="form-label">Cancellation Reason</label>
+              <textarea class="form-control" name="reason" rows="3" required placeholder="Enter cancellation reason..."></textarea>
+            </div>
+          `,
+          confirmText: "Force Cancel Booking",
+          onConfirm: (formData) => {
+            const reason = formData.reason.trim();
+            if (!reason) {
+              window.Toast.show("Please enter a reason.", "error");
+              return false;
+            }
+
+            const currentUser = window.AUTH.getCurrentUser();
+            const operatorName = currentUser ? currentUser.role : 'Receptionist';
+
+            const res = window.APPOINTMENTS.cancel(aptId, operatorName, reason, true); // true = bypassRules
+            if (res.success) {
+              window.Toast.show("Booking cancelled successfully.", "success");
+              renderBookings();
+            } else {
+              window.Toast.show(res.error, "error");
+            }
+          }
+        });
+      };
+
+      // RESCHEDULE ON BEHALF (Bypasses rules, loads slots grid in modal)
+      window.rescheduleOnBehalf = (aptId) => {
+        const apt = window.DB.getById(window.DB_COLLECTIONS.APPOINTMENTS, aptId);
+        const doc = window.DB.getById(window.DB_COLLECTIONS.DOCTORS, apt.doctorId);
+        const patients = window.DB.get(window.DB_COLLECTIONS.PATIENTS);
+        const patient = patients.find(p => p.id === apt.patientId) || {};
+
+        window.Modal.prompt({
+          title: `Reschedule Booking: ${patient.fullName}`,
+          bodyHtml: `
+            <div style="max-height: 400px; overflow-y: auto;">
+              <p style="color: var(--primary); font-weight: 600; margin-bottom: 8px;">⚠️ Receptionist Overrides Rules: Rescheduling will bypass lockout rules.</p>
+              <p style="font-size: 12px; color: var(--neutral-400); margin-bottom: 8px;">Doctor: ${doc.fullName}</p>
+              <div class="date-scroller-container">
+                <div class="date-scroller" id="resched-days"></div>
+              </div>
+              <div class="slot-grid" id="resched-slots" style="margin-top: var(--spacing-sm);">
+                <div class="empty-state" style="padding: 12px 0;"><p class="empty-state-desc">Select a date</p></div>
+              </div>
+              <div class="form-group" style="margin-top: var(--spacing-sm);">
+                <label class="form-label">Reason for Rescheduling</label>
+                <input class="form-control" type="text" name="reason" required placeholder="Reason for change...">
+              </div>
+              <input type="hidden" name="selectedSlotId" id="resched-selected-slot">
+            </div>
+          `,
+          confirmText: "Force Reschedule",
+          onConfirm: (formData, closeModal) => {
+            const newSlotId = formData.selectedSlotId;
+            const reason = formData.reason.trim();
+
+            if (!newSlotId) {
+              window.Toast.show("Please select an available slot.", "error");
+              return false;
+            }
+            if (!reason) {
+              window.Toast.show("Please enter a reason.", "error");
+              return false;
+            }
+
+            const currentUser = window.AUTH.getCurrentUser();
+            const operatorName = currentUser ? currentUser.role : 'Receptionist';
+
+            const res = window.APPOINTMENTS.reschedule(aptId, newSlotId, reason, operatorName, true); // true = bypassRules
+            if (res.success) {
+              window.Toast.show("Rescheduled successfully!", "success");
+              closeModal();
+              renderBookings();
+            } else {
+              window.Toast.show(res.error, "error");
+              return false;
+            }
+          }
+        });
+
+        // Modal Date & Slot Logic
+        const reschedDays = document.getElementById('resched-days');
+        const reschedSlots = document.getElementById('resched-slots');
+        const reschedSelectedSlot = document.getElementById('resched-selected-slot');
+
+        const todayObj = new Date();
+        let modalSelectedDateStr = window.SLOTS.formatDate(todayObj);
+
+        // Populate days
+        const daysOfWeekNames = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+        for (let i = 0; i < 14; i++) {
+          const targetDate = new Date();
+          targetDate.setDate(todayObj.getDate() + i);
+          const dateStr = window.SLOTS.formatDate(targetDate);
+          const isToday = i === 0;
+
+          const dateItem = document.createElement('div');
+          dateItem.className = `date-item ${isToday ? 'active' : ''}`;
+          dateItem.style.width = '64px';
+          dateItem.innerHTML = `
+            <div class="date-item-day" style="font-size: 10px;">${daysOfWeekNames[targetDate.getDay()]}</div>
+            <div class="date-item-num" style="font-size: 15px;">${targetDate.getDate()}</div>
+          `;
+
+          dateItem.onclick = () => {
+            const activeDate = reschedDays.querySelector('.date-item.active');
+            if (activeDate) activeDate.classList.remove('active');
+            dateItem.classList.add('active');
+            modalSelectedDateStr = dateStr;
+            reschedSelectedSlot.value = '';
+            renderModalSlots();
+          };
+
+          reschedDays.appendChild(dateItem);
+        }
+
+        const renderModalSlots = () => {
+          reschedSlots.innerHTML = '';
+          const allSlots = window.DB.get(window.DB_COLLECTIONS.DOCTOR_SLOTS);
+          const filteredSlots = allSlots.filter(s => s.doctorId === apt.doctorId && s.slotDate === modalSelectedDateStr);
+          filteredSlots.sort((a, b) => a.startTime.localeCompare(b.startTime));
+
+          if (filteredSlots.length === 0) {
+            reschedSlots.innerHTML = `<div class="empty-state" style="padding: 12px 0; grid-column: 1/-1;"><p class="empty-state-desc">No slots available on this date.</p></div>`;
+            return;
+          }
+
+          filteredSlots.forEach(slot => {
+            const slotBtn = document.createElement('div');
+            let cls = 'slot-card';
+            if (slot.isBooked) cls += ' booked';
+            else if (slot.isBlocked) cls += ' blocked';
+
+            slotBtn.className = cls;
+            slotBtn.textContent = slot.startTime;
+
+            if (!slot.isBooked && !slot.isBlocked) {
+              slotBtn.onclick = () => {
+                const activeSlot = reschedSlots.querySelector('.slot-card.selected');
+                if (activeSlot) activeSlot.classList.remove('selected');
+                slotBtn.classList.add('selected');
+                reschedSelectedSlot.value = slot.id;
+              };
+            }
+
+            reschedSlots.appendChild(slotBtn);
+          });
+        };
+
+        renderModalSlots();
+      };
+
+      // VIEW AUDIT LOG / STATUS HISTORY POPUP
+      window.viewAuditTrail = (aptId) => {
+        const histories = window.DB.get(window.DB_COLLECTIONS.STATUS_HISTORY).filter(h => h.appointmentId === aptId);
+        histories.sort((a, b) => new Date(a.changedAt) - new Date(b.changedAt));
+
+        let rowsHtml = '';
+        if (histories.length === 0) {
+          rowsHtml = `<tr><td colspan="4" style="text-align: center; color: var(--neutral-400);">No history rows recorded.</td></tr>`;
+        } else {
+          rowsHtml = histories.map(h => `
+            <tr>
+              <td style="font-size: 12px;">${new Date(h.changedAt).toLocaleString()}</td>
+              <td><span class="badge badge-completed" style="font-size: 10px; background-color: var(--neutral-100); color: var(--neutral-800); border: 1px solid var(--neutral-300);">${h.oldStatus} ➔ ${h.newStatus}</span></td>
+              <td><strong>${h.changedBy}</strong></td>
+              <td style="font-size: 12px;">${h.remarks || '-'}</td>
+            </tr>
+          `).join('');
+        }
+
+        window.Modal.confirm({
+          title: `Audit History Log (Apt ID: ${aptId.substring(0,8)}...)`,
+          body: `
+            <div class="table-container">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Date & Time</th>
+                    <th>Transition</th>
+                    <th>Changed By</th>
+                    <th>Remarks</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  ${rowsHtml}
+                </tbody>
+              </table>
+            </div>
+          `,
+          confirmText: "Close Log",
+          cancelText: "Done",
+          onConfirm: () => {}
+        });
+      };
+
+      // Initial Render
+      renderBookings();
+    });
+  </script>
+</body>
+</html>

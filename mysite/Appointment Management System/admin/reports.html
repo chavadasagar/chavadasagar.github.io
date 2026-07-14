@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reports & Analytics - ClinicSys</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Sidebar injected here -->
+
+    <main class="main-content">
+      <header style="margin-bottom: var(--spacing-lg);">
+        <h2>Clinic Reports & Statistics</h2>
+        <p style="color: var(--neutral-400); font-size: 14px;">Realtime metrics, cancellation rates, and physician consulting volumes.</p>
+      </header>
+
+      <!-- Stat Cards -->
+      <section class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-value" id="stat-today-bookings">0</div>
+          <div class="stat-label">Total Bookings Today</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value" id="stat-week-bookings">0</div>
+          <div class="stat-label">Bookings This Week</div>
+        </div>
+        <div class="stat-card" style="border-left: 4px solid var(--status-cancelled);">
+          <div class="stat-value" id="stat-cancel-rate" style="color: var(--status-cancelled);">0%</div>
+          <div class="stat-label">Cancellation Rate</div>
+        </div>
+      </section>
+
+      <!-- Charts & Lists Grid -->
+      <div class="grid-cols-2">
+        <!-- Top Doctors Chart -->
+        <section class="card">
+          <h3 class="card-title">Top Doctors (Booking Volume)</h3>
+          <p style="font-size: 12px; color: var(--neutral-400); margin-bottom: var(--spacing-md);">Proportional volume of total scheduled consultations by doctor.</p>
+          
+          <div class="chart-container" id="top-doctors-chart">
+            <!-- Loaded dynamically with CSS Bars -->
+          </div>
+        </section>
+
+        <!-- Booking Types breakdown & summary stats -->
+        <section class="card">
+          <h3 class="card-title">Booking Type Summary</h3>
+          <p style="font-size: 12px; color: var(--neutral-400); margin-bottom: var(--spacing-md);">Breakdown of scheduling sources (Online portals vs Front desk walk-ins).</p>
+          
+          <div style="display: flex; flex-direction: column; gap: var(--spacing-md); margin-top: var(--spacing-lg);">
+            <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--neutral-100); padding-bottom: 8px;">
+              <span style="font-weight: 500; color: var(--neutral-600);">🖥️ Online Bookings</span>
+              <strong id="type-online-count" style="font-size: 16px;">0</strong>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--neutral-100); padding-bottom: 8px;">
+              <span style="font-weight: 500; color: var(--neutral-600);">🚶 Walk-in Bookings</span>
+              <strong id="type-walkin-count" style="font-size: 16px;">0</strong>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <span style="font-weight: 500; color: var(--neutral-600);">💵 Gross Projected Fees</span>
+              <strong id="projected-fees-sum" style="font-size: 20px; color: var(--primary); font-weight: 700;">$0</strong>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <script src="../js/db.js"></script>
+  <script src="../js/auth.js"></script>
+  <script src="../js/toast.js"></script>
+  <script src="../js/modal.js"></script>
+  <script src="../js/navbar.js"></script>
+  <script>
+    // Role Guard
+    if (window.AUTH) {
+      window.AUTH.checkRole(['ClinicAdmin']);
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      // Elements
+      const statTodayBookings = document.getElementById('stat-today-bookings');
+      const statWeekBookings = document.getElementById('stat-week-bookings');
+      const statCancelRate = document.getElementById('stat-cancel-rate');
+      
+      const chartContainer = document.getElementById('top-doctors-chart');
+      const typeOnlineCount = document.getElementById('type-online-count');
+      const typeWalkinCount = document.getElementById('type-walkin-count');
+      const projectedFeesSum = document.getElementById('projected-fees-sum');
+
+      const renderReports = () => {
+        if (!window.DB) return;
+
+        const appointments = window.DB.get(window.DB_COLLECTIONS.APPOINTMENTS);
+        const doctors = window.DB.get(window.DB_COLLECTIONS.DOCTORS);
+        const payments = window.DB.get(window.DB_COLLECTIONS.PAYMENTS);
+
+        const today = new Date();
+        const todayStr = today.toISOString().split('T')[0];
+
+        // 1. Calculations: Today's bookings
+        const todayBookings = appointments.filter(a => a.appointmentDate === todayStr);
+        statTodayBookings.textContent = todayBookings.length;
+
+        // 2. Calculations: Weekly bookings (last 7 days)
+        const sevenDaysAgo = new Date();
+        sevenDaysAgo.setDate(today.getDate() - 7);
+        const sevenDaysAgoStr = sevenDaysAgo.toISOString().split('T')[0];
+
+        const weeklyBookings = appointments.filter(a => a.appointmentDate >= sevenDaysAgoStr && a.appointmentDate <= todayStr);
+        statWeekBookings.textContent = weeklyBookings.length;
+
+        // 3. Calculations: Cancellation rate
+        const totalApts = appointments.length;
+        const cancelledApts = appointments.filter(a => a.status === 'CANCELLED').length;
+        const rate = totalApts > 0 ? Math.round((cancelledApts / totalApts) * 100) : 0;
+        statCancelRate.textContent = `${rate}%`;
+
+        // 4. Calculations: Booking types
+        const onlineCount = appointments.filter(a => a.bookingType === 'ONLINE').length;
+        const walkinCount = appointments.filter(a => a.bookingType === 'WALK_IN').length;
+        
+        typeOnlineCount.textContent = onlineCount;
+        typeWalkinCount.textContent = walkinCount;
+
+        // 5. Calculations: Projected revenue (exclude cancelled/no-shows for completed/pending)
+        const activeApts = appointments.filter(a => !['CANCELLED', 'NO_SHOW'].includes(a.status));
+        const projectedRevenue = activeApts.reduce((sum, apt) => {
+          const doc = doctors.find(d => d.id === apt.doctorId);
+          return sum + (doc ? doc.consultationFee : 0);
+        }, 0);
+
+        projectedFeesSum.textContent = `$${projectedRevenue}`;
+
+        // 6. Calculations: Top Doctors (Booking volume)
+        const docBookingsMap = {};
+        doctors.forEach(d => {
+          docBookingsMap[d.id] = { name: d.fullName, count: 0 };
+        });
+
+        appointments.forEach(apt => {
+          if (docBookingsMap[apt.doctorId]) {
+            docBookingsMap[apt.doctorId].count++;
+          }
+        });
+
+        // Convert map to array and sort
+        const docList = Object.values(docBookingsMap).sort((a, b) => b.count - a.count);
+        const topDocs = docList.slice(0, 5); // top 5
+        const maxBookings = topDocs.length > 0 ? topDocs[0].count : 1;
+
+        chartContainer.innerHTML = '';
+        if (topDocs.every(d => d.count === 0)) {
+          chartContainer.innerHTML = `
+            <div class="empty-state" style="padding: var(--spacing-md) 0;">
+              <p class="empty-state-desc" style="margin:0;">No bookings registered for doctors yet.</p>
+            </div>
+          `;
+          return;
+        }
+
+        topDocs.forEach(doc => {
+          if (doc.count === 0) return;
+          const percentage = Math.round((doc.count / maxBookings) * 100);
+
+          const barRow = document.createElement('div');
+          barRow.className = 'chart-bar-row';
+          barRow.innerHTML = `
+            <div class="chart-bar-label">${doc.name}</div>
+            <div class="chart-bar-outer">
+              <div class="chart-bar-inner" style="width: ${percentage}%;"></div>
+            </div>
+            <div class="chart-bar-value">${doc.count}</div>
+          `;
+
+          chartContainer.appendChild(barRow);
+        });
+      };
+
+      renderReports();
+    });
+  </script>
+</body>
+</html>

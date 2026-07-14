@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Appointment Details - ClinicSys</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <style>
+    .detail-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: var(--spacing-lg);
+    }
+    @media (max-width: 768px) {
+      .detail-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="app-container">
+    <!-- Sidebar injected here -->
+
+    <main class="main-content">
+      <header style="margin-bottom: var(--spacing-lg); display: flex; align-items: center; justify-content: space-between;">
+        <div style="display: flex; align-items: center; gap: var(--spacing-sm);">
+          <button class="btn btn-secondary btn-sm" onclick="window.location.href='my-appointments.html'">⬅️ Back</button>
+          <h2>Appointment Details</h2>
+        </div>
+        <div id="badge-container">
+          <!-- Status badge loaded dynamically -->
+        </div>
+      </header>
+
+      <!-- Cancellation Lock Alert -->
+      <div id="lock-alert" class="card" style="background-color: var(--status-noshow-bg); border-color: #fca5a5; color: var(--status-noshow); display: none; padding: 12px 16px; margin-bottom: var(--spacing-md); font-weight: 500;">
+        ⚠️ Modify Window Closed: You cannot reschedule or cancel this appointment because it is less than 2 hours before the scheduled time. Please contact receptionist at the clinic if you require assistance.
+      </div>
+
+      <div class="detail-grid">
+        <!-- Left: Details & History -->
+        <div>
+          <!-- Core Info -->
+          <section class="card">
+            <h3 class="card-title">Consultation Information</h3>
+            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; font-size: 14px; margin-top: var(--spacing-md);" id="info-section">
+              <!-- Loaded dynamically -->
+            </div>
+            
+            <div style="border-top: 1px solid var(--neutral-100); padding-top: var(--spacing-md); margin-top: var(--spacing-md);">
+              <span style="font-size: 12px; color: var(--neutral-400); text-transform: uppercase; font-weight: 600;">Reason for Consultation</span>
+              <p style="font-size: 14px; color: var(--neutral-800); margin-top: 4px;" id="reason-text"></p>
+            </div>
+
+            <div id="cancellation-info" style="border-top: 1px solid var(--neutral-100); padding-top: var(--spacing-md); margin-top: var(--spacing-md); display: none;">
+              <span style="font-size: 12px; color: var(--neutral-400); text-transform: uppercase; font-weight: 600; color: var(--status-cancelled);">Cancellation Info</span>
+              <p style="font-size: 14px; color: var(--neutral-800); margin-top: 4px;" id="cancel-reason-text"></p>
+            </div>
+          </section>
+
+          <!-- Status History Audit Trail -->
+          <section class="card">
+            <h3 class="card-title">Appointment Log (Audit Trail)</h3>
+            <div class="table-container" style="margin-top: var(--spacing-md);">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Date & Time</th>
+                    <th>Action</th>
+                    <th>Changed By</th>
+                    <th>Remarks</th>
+                  </tr>
+                </thead>
+                <tbody id="history-rows">
+                  <!-- Loaded dynamically -->
+                </tbody>
+              </table>
+            </div>
+          </section>
+        </div>
+
+        <!-- Right: Actions & Fees -->
+        <div>
+          <!-- Payments Card -->
+          <section class="card">
+            <h3 class="card-title">Payment Summary</h3>
+            <div id="payment-section" style="margin-top: var(--spacing-md); display: flex; flex-direction: column; gap: 10px;">
+              <!-- Loaded dynamically -->
+            </div>
+          </section>
+
+          <!-- Patient Action Panel -->
+          <section class="card" id="actions-panel">
+            <h3 class="card-title">Actions</h3>
+            <div style="display: flex; flex-direction: column; gap: var(--spacing-sm); margin-top: var(--spacing-md);">
+              <button class="btn btn-secondary" id="btn-reschedule" style="width: 100%;">🗓️ Reschedule</button>
+              <button class="btn btn-danger" id="btn-cancel" style="width: 100%;">❌ Cancel Appointment</button>
+              <button class="btn btn-primary" id="btn-review" style="width: 100%; display: none;">⭐ Leave a Review</button>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="../js/db.js"></script>
+  <script src="../js/auth.js"></script>
+  <script src="../js/appointments.js"></script>
+  <script src="../js/slots.js"></script>
+  <script src="../js/toast.js"></script>
+  <script src="../js/modal.js"></script>
+  <script src="../js/navbar.js"></script>
+  <script>
+    // Role Guard
+    if (window.AUTH) {
+      window.AUTH.checkRole(['Patient']);
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const params = new URLSearchParams(window.location.search);
+      const appointmentId = params.get('id');
+
+      if (!appointmentId || !window.DB) {
+        window.location.href = 'my-appointments.html';
+        return;
+      }
+
+      const currentUser = window.AUTH.getCurrentUser();
+
+      const loadDetails = () => {
+        const apt = window.DB.getById(window.DB_COLLECTIONS.APPOINTMENTS, appointmentId);
+        if (!apt) {
+          window.Toast.show("Appointment not found.", "error");
+          setTimeout(() => window.location.href = 'my-appointments.html', 1000);
+          return;
+        }
+
+        const doctor = window.DB.getById(window.DB_COLLECTIONS.DOCTORS, apt.doctorId);
+        const clinic = window.DB.getById(window.DB_COLLECTIONS.CLINICS, apt.clinicId);
+        const spec = window.DB.getById(window.DB_COLLECTIONS.SPECIALIZATIONS, doctor.specializationId);
+        const payments = window.DB.get(window.DB_COLLECTIONS.PAYMENTS);
+        const payment = payments.find(p => p.appointmentId === apt.id) || {};
+        const histories = window.DB.get(window.DB_COLLECTIONS.STATUS_HISTORY).filter(h => h.appointmentId === apt.id);
+        const reviews = window.DB.get(window.DB_COLLECTIONS.REVIEWS).filter(r => r.appointmentId === apt.id);
+
+        const formattedDate = new Date(apt.appointmentDate).toLocaleDateString(undefined, { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+
+        // Enforce lock window (Lock reschedule / cancel 2 hours before)
+        const isLocked = window.APPOINTMENTS.isWithinCancellationWindow(apt.appointmentDate, apt.startTime);
+        const canModify = ['PENDING', 'CONFIRMED', 'RESCHEDULED'].includes(apt.status);
+
+        if (isLocked && canModify) {
+          document.getElementById('lock-alert').style.display = 'block';
+          document.getElementById('btn-reschedule').disabled = true;
+          document.getElementById('btn-cancel').disabled = true;
+        } else if (!canModify) {
+          // If status is complete or cancelled, hide cancel/reschedule actions
+          document.getElementById('btn-reschedule').style.display = 'none';
+          document.getElementById('btn-cancel').style.display = 'none';
+        }
+
+        // Show/Hide Review Button
+        if (apt.status === 'COMPLETED' && reviews.length === 0) {
+          document.getElementById('btn-review').style.display = 'inline-flex';
+        } else {
+          document.getElementById('btn-review').style.display = 'none';
+        }
+
+        // Render Status Badge
+        let badgeClass = 'badge-pending';
+        if (apt.status === 'CONFIRMED') badgeClass = 'badge-confirmed';
+        if (apt.status === 'IN_PROGRESS') badgeClass = 'badge-inprogress';
+        if (apt.status === 'COMPLETED') badgeClass = 'badge-completed';
+        if (apt.status === 'CANCELLED') badgeClass = 'badge-cancelled';
+        if (apt.status === 'NO_SHOW') badgeClass = 'badge-noshow';
+        if (apt.status === 'RESCHEDULED') badgeClass = 'badge-rescheduled';
+        document.getElementById('badge-container').innerHTML = `<span class="badge ${badgeClass}" style="font-size: 14px; padding: 6px 14px;">${apt.status}</span>`;
+
+        // Render Core Info
+        document.getElementById('info-section').innerHTML = `
+          <div>
+            <strong style="color: var(--neutral-400); display: block; font-size: 11px; text-transform: uppercase;">Doctor</strong>
+            <span style="font-weight: 600; font-size: 15px;">${doctor.fullName}</span>
+            <span style="font-size: 13px; color: var(--neutral-600); display: block;">${spec ? spec.name : 'General'}</span>
+          </div>
+          <div>
+            <strong style="color: var(--neutral-400); display: block; font-size: 11px; text-transform: uppercase;">Clinic</strong>
+            <span style="font-weight: 600; font-size: 15px;">${clinic ? clinic.name : 'Clinic'}</span>
+            <span style="font-size: 13px; color: var(--neutral-600); display: block;">${clinic ? clinic.address : ''}, ${clinic ? clinic.city : ''}</span>
+          </div>
+          <div>
+            <strong style="color: var(--neutral-400); display: block; font-size: 11px; text-transform: uppercase;">Scheduled Date</strong>
+            <span style="font-weight: 600; font-size: 15px;">🗓️ ${formattedDate}</span>
+          </div>
+          <div>
+            <strong style="color: var(--neutral-400); display: block; font-size: 11px; text-transform: uppercase;">Scheduled Time</strong>
+            <span style="font-weight: 600; font-size: 15px; color: var(--primary);">🕒 ${apt.startTime} - ${apt.endTime}</span>
+          </div>
+        `;
+
+        document.getElementById('reason-text').textContent = apt.reason;
+
+        // Render Cancellation Info if cancelled
+        if (apt.status === 'CANCELLED') {
+          document.getElementById('cancellation-info').style.display = 'block';
+          document.getElementById('cancel-reason-text').innerHTML = `
+            <strong>Cancelled By:</strong> ${apt.cancelledBy}<br>
+            <strong>Reason:</strong> ${apt.cancellationReason || 'No reason provided.'}
+          `;
+        } else {
+          document.getElementById('cancellation-info').style.display = 'none';
+        }
+
+        // Render Payment Section
+        let payBadgeClass = payment.paymentStatus === 'PAID' ? 'badge-confirmed' : (payment.paymentStatus === 'CANCELLED' ? 'badge-cancelled' : 'badge-pending');
+        document.getElementById('payment-section').innerHTML = `
+          <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--neutral-100); padding-bottom: 8px;">
+            <span style="font-weight: 500; font-size: 14px; color: var(--neutral-600);">Consultation Fee</span>
+            <strong style="font-size: 16px;">$${payment.amount}</strong>
+          </div>
+          <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--neutral-100); padding-bottom: 8px;">
+            <span style="font-weight: 500; font-size: 14px; color: var(--neutral-600);">Payment Mode</span>
+            <span style="font-size: 13px; font-weight: 600;">${payment.paymentMode === 'PAY_NOW' ? '💳 Online Credit' : '🏥 Pay at Clinic'}</span>
+          </div>
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <span style="font-weight: 500; font-size: 14px; color: var(--neutral-600);">Payment Status</span>
+            <span class="badge ${payBadgeClass}">${payment.paymentStatus}</span>
+          </div>
+          ${payment.paidAt ? `<div style="font-size: 11px; text-align: right; color: var(--neutral-400); margin-top: 4px;">Paid At: ${new Date(payment.paidAt).toLocaleString()}</div>` : ''}
+        `;
+
+        // Render History Rows
+        histories.sort((a, b) => new Date(a.changedAt) - new Date(b.changedAt));
+        document.getElementById('history-rows').innerHTML = histories.map(h => `
+          <tr>
+            <td>${new Date(h.changedAt).toLocaleString()}</td>
+            <td>
+              <span class="badge badge-completed" style="font-size: 11px; background-color: var(--neutral-100); color: var(--neutral-800); border: 1px solid var(--neutral-300);">
+                ${h.oldStatus} ➔ ${h.newStatus}
+              </span>
+            </td>
+            <td><strong>${h.changedBy}</strong></td>
+            <td>${h.remarks || '-'}</td>
+          </tr>
+        `).join('');
+
+        // Wire actions
+        // 1. CANCEL ACTION
+        document.getElementById('btn-cancel').onclick = () => {
+          window.Modal.prompt({
+            title: "Cancel Appointment?",
+            bodyHtml: `
+              <p style="margin-bottom: var(--spacing-sm);">Please provide a brief reason for cancelling your appointment with Dr. ${doctor.fullName}:</p>
+              <div class="form-group">
+                <textarea class="form-control" name="cancellationReason" rows="3" required placeholder="Reason for cancellation..."></textarea>
+              </div>
+            `,
+            confirmText: "Cancel Appointment",
+            onConfirm: (formData) => {
+              const reasonText = formData.cancellationReason.trim();
+              if (!reasonText) {
+                window.Toast.show("Please enter a reason for cancellation.", "error");
+                return false; // prevent modal close
+              }
+
+              const res = window.APPOINTMENTS.cancel(apt.id, 'Patient', reasonText);
+              if (res.success) {
+                window.Toast.show("Appointment cancelled successfully.", "success");
+                loadDetails();
+              } else {
+                window.Toast.show(res.error, "error");
+              }
+            }
+          });
+        };
+
+        // 2. LEAVE A REVIEW
+        document.getElementById('btn-review').onclick = () => {
+          window.Modal.prompt({
+            title: "Leave a Review",
+            bodyHtml: `
+              <p style="margin-bottom: var(--spacing-sm);">Share your feedback on Dr. ${doctor.fullName}:</p>
+              <div class="form-group">
+                <label class="form-label">Rating</label>
+                <select class="form-control" name="rating" required>
+                  <option value="5">⭐⭐⭐⭐⭐ (5 - Excellent)</option>
+                  <option value="4">⭐⭐⭐⭐ (4 - Good)</option>
+                  <option value="3">⭐⭐⭐ (3 - Average)</option>
+                  <option value="2">⭐⭐ (2 - Poor)</option>
+                  <option value="1">⭐ (1 - Terrible)</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Comments</label>
+                <textarea class="form-control" name="comment" rows="3" required placeholder="Write a comment about your visit..."></textarea>
+              </div>
+            `,
+            confirmText: "Submit Review",
+            onConfirm: (formData) => {
+              const rating = formData.rating;
+              const comment = formData.comment.trim();
+
+              if (!comment) {
+                window.Toast.show("Please write a comment.", "error");
+                return false;
+              }
+
+              const res = window.APPOINTMENTS.leaveReview(apt.id, rating, comment);
+              if (res.success) {
+                window.Toast.show("Review submitted successfully!", "success");
+                loadDetails();
+              } else {
+                window.Toast.show(res.error, "error");
+              }
+            }
+          });
+        };
+
+        // 3. RESCHEDULE ACTION (on-page picker)
+        document.getElementById('btn-reschedule').onclick = () => {
+          // Open Modal containing slot picker
+          window.Modal.prompt({
+            title: "Reschedule Appointment",
+            bodyHtml: `
+              <div style="max-height: 400px; overflow-y: auto;">
+                <p style="margin-bottom: var(--spacing-sm);">Select a new date and slot for your reschedule:</p>
+                <div class="date-scroller-container">
+                  <div class="date-scroller" id="resched-days" style="margin-bottom: var(--spacing-sm);"></div>
+                </div>
+                <div class="slot-grid" id="resched-slots">
+                  <div class="empty-state" style="padding: 12px 0;"><p class="empty-state-desc">Select a date first</p></div>
+                </div>
+                <div class="form-group" style="margin-top: var(--spacing-sm);">
+                  <label class="form-label">Reason for Rescheduling</label>
+                  <input class="form-control" type="text" name="reschedReason" required placeholder="Reason (e.g. Work conflict)...">
+                </div>
+                <input type="hidden" name="selectedSlotId" id="resched-selected-slot">
+              </div>
+            `,
+            confirmText: "Confirm Reschedule",
+            onConfirm: (formData, closeModal) => {
+              const newSlotId = formData.selectedSlotId;
+              const reasonText = formData.reschedReason.trim();
+
+              if (!newSlotId) {
+                window.Toast.show("Please select an available slot.", "error");
+                return false;
+              }
+              if (!reasonText) {
+                window.Toast.show("Please enter a reason for rescheduling.", "error");
+                return false;
+              }
+
+              const res = window.APPOINTMENTS.reschedule(apt.id, newSlotId, reasonText, 'Patient');
+              if (res.success) {
+                window.Toast.show("Rescheduled successfully!", "success");
+                closeModal();
+                // Redirect to details for the new appointment!
+                window.location.href = `appointment-details.html?id=${res.appointment.id}`;
+              } else {
+                window.Toast.show(res.error, "error");
+                return false;
+              }
+            }
+          });
+
+          // Dynamic rendering inside rescheduling modal
+          const reschedDays = document.getElementById('resched-days');
+          const reschedSlots = document.getElementById('resched-slots');
+          const reschedSelectedSlot = document.getElementById('resched-selected-slot');
+          
+          const todayObj = new Date();
+          let modalSelectedDateStr = window.SLOTS.formatDate(todayObj);
+
+          // Populate 14 days in modal
+          const daysOfWeekNames = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+          for (let i = 0; i < 14; i++) {
+            const targetDate = new Date();
+            targetDate.setDate(todayObj.getDate() + i);
+            const dateStr = window.SLOTS.formatDate(targetDate);
+            const isToday = i === 0;
+
+            const dayNum = targetDate.getDate();
+            const dayName = daysOfWeekNames[targetDate.getDay()];
+
+            const dateItem = document.createElement('div');
+            dateItem.className = `date-item ${isToday ? 'active' : ''}`;
+            dateItem.style.width = '64px';
+            dateItem.innerHTML = `
+              <div class="date-item-day" style="font-size: 10px;">${dayName}</div>
+              <div class="date-item-num" style="font-size: 15px;">${dayNum}</div>
+            `;
+
+            dateItem.onclick = () => {
+              const activeDate = reschedDays.querySelector('.date-item.active');
+              if (activeDate) activeDate.classList.remove('active');
+              dateItem.classList.add('active');
+              modalSelectedDateStr = dateStr;
+              reschedSelectedSlot.value = '';
+              renderModalSlots();
+            };
+
+            reschedDays.appendChild(dateItem);
+          }
+
+          // Render slots inside modal
+          const renderModalSlots = () => {
+            reschedSlots.innerHTML = '';
+            
+            const allSlots = window.DB.get(window.DB_COLLECTIONS.DOCTOR_SLOTS);
+            const filteredSlots = allSlots.filter(s => s.doctorId === apt.doctorId && s.slotDate === modalSelectedDateStr);
+            filteredSlots.sort((a, b) => a.startTime.localeCompare(b.startTime));
+
+            if (filteredSlots.length === 0) {
+              reschedSlots.innerHTML = `
+                <div class="empty-state" style="padding: 12px 0; grid-column: 1/-1;">
+                  <p class="empty-state-desc" style="margin: 0;">No availability on this date.</p>
+                </div>
+              `;
+              return;
+            }
+
+            filteredSlots.forEach(slot => {
+              const slotBtn = document.createElement('div');
+              let cls = 'slot-card';
+              if (slot.isBooked) cls += ' booked';
+              else if (slot.isBlocked) cls += ' blocked';
+
+              slotBtn.className = cls;
+              slotBtn.textContent = slot.startTime;
+
+              if (!slot.isBooked && !slot.isBlocked) {
+                slotBtn.onclick = () => {
+                  const activeSlot = reschedSlots.querySelector('.slot-card.selected');
+                  if (activeSlot) activeSlot.classList.remove('selected');
+                  slotBtn.classList.add('selected');
+                  reschedSelectedSlot.value = slot.id;
+                };
+              }
+
+              reschedSlots.appendChild(slotBtn);
+            });
+          };
+
+          // Render first day slots initially
+          renderModalSlots();
+        };
+      };
+
+      loadDetails();
+    });
+  </script>
+</body>
+</html>

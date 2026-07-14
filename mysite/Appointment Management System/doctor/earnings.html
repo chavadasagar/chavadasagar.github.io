@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Earnings & Reports - ClinicSys</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Sidebar injected here -->
+
+    <main class="main-content">
+      <header style="margin-bottom: var(--spacing-lg);">
+        <h2>Consultation Earnings & Reports</h2>
+        <p style="color: var(--neutral-400); font-size: 14px;">Track your completed consultations and total earnings report.</p>
+      </header>
+
+      <!-- Date Range Filter Card -->
+      <section class="card">
+        <h3 class="card-title" style="font-size: 14px;">Filter Earnings by Date Range</h3>
+        <form id="earnings-filter-form" class="form-row" style="align-items: flex-end; margin: 0;">
+          <div class="form-group">
+            <label class="form-label" for="start-date">Start Date</label>
+            <input class="form-control" type="date" id="start-date" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="end-date">End Date</label>
+            <input class="form-control" type="date" id="end-date" required>
+          </div>
+          <button class="btn btn-primary" type="submit" style="height: 42px;">Apply Filter</button>
+          <button class="btn btn-secondary" type="button" id="btn-clear-filter" style="height: 42px;">Reset</button>
+        </form>
+      </section>
+
+      <!-- Earnings Stat Grid -->
+      <section class="stat-grid">
+        <div class="stat-card" style="border-left: 4px solid var(--primary);">
+          <div class="stat-value" id="stat-revenue">$0</div>
+          <div class="stat-label">Total Revenue Earned</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value" id="stat-completed-count">0</div>
+          <div class="stat-label">Completed Consultations</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value" id="stat-avg-fee">$0</div>
+          <div class="stat-label">Average Fee per Visit</div>
+        </div>
+      </section>
+
+      <!-- Earnings Details Table Card -->
+      <section class="card">
+        <h3 class="card-title">Detailed Consultation Log</h3>
+        <div class="table-container" style="margin-top: var(--spacing-md);">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Patient Name</th>
+                <th>Payment Mode</th>
+                <th>Payment Status</th>
+                <th style="text-align: right;">Fee Paid</th>
+              </tr>
+            </thead>
+            <tbody id="earnings-rows">
+              <!-- Loaded dynamically -->
+            </tbody>
+          </table>
+        </div>
+        
+        <div id="empty-earnings" class="empty-state" style="display: none;">
+          <div class="empty-state-icon">💸</div>
+          <div class="empty-state-title">No completed consultations found</div>
+          <div class="empty-state-desc">Try expanding your filter date range or complete pending consultations.</div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="../js/db.js"></script>
+  <script src="../js/auth.js"></script>
+  <script src="../js/toast.js"></script>
+  <script src="../js/modal.js"></script>
+  <script src="../js/navbar.js"></script>
+  <script>
+    // Role Guard
+    if (window.AUTH) {
+      window.AUTH.checkRole(['Doctor']);
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const form = document.getElementById('earnings-filter-form');
+      const startDateInput = document.getElementById('start-date');
+      const endDateInput = document.getElementById('end-date');
+      const clearBtn = document.getElementById('btn-clear-filter');
+
+      const statRevenue = document.getElementById('stat-revenue');
+      const statCompletedCount = document.getElementById('stat-completed-count');
+      const statAvgFee = document.getElementById('stat-avg-fee');
+
+      const earningsRows = document.getElementById('earnings-rows');
+      const emptyEarnings = document.getElementById('empty-earnings');
+
+      // Fetch Doctor Session
+      const currentUser = window.AUTH.getCurrentUser();
+      if (!currentUser || !currentUser.linkedId) {
+        window.location.href = '../login.html';
+        return;
+      }
+      const doctorId = currentUser.linkedId;
+
+      // Set default dates: 30 days ago to today
+      const today = new Date();
+      const thirtyDaysAgo = new Date();
+      thirtyDaysAgo.setDate(today.getDate() - 30);
+
+      const formatDate = (date) => date.toISOString().split('T')[0];
+
+      startDateInput.value = formatDate(thirtyDaysAgo);
+      endDateInput.value = formatDate(today);
+
+      const renderEarnings = () => {
+        earningsRows.innerHTML = '';
+        
+        const startVal = startDateInput.value;
+        const endVal = endDateInput.value;
+
+        if (startVal > endVal) {
+          window.Toast.show("Start Date cannot be after End Date.", "error");
+          return;
+        }
+
+        const appointments = window.DB.get(window.DB_COLLECTIONS.APPOINTMENTS);
+        const patients = window.DB.get(window.DB_COLLECTIONS.PATIENTS);
+        const payments = window.DB.get(window.DB_COLLECTIONS.PAYMENTS);
+
+        // Filter: COMPLETED appointments for this doctor in date range
+        const filteredApts = appointments.filter(apt => 
+          apt.doctorId === doctorId &&
+          apt.status === 'COMPLETED' &&
+          apt.appointmentDate >= startVal &&
+          apt.appointmentDate <= endVal
+        );
+
+        // Sort newest first
+        filteredApts.sort((a, b) => b.appointmentDate.localeCompare(a.appointmentDate));
+
+        let totalRevenue = 0;
+        let count = filteredApts.length;
+
+        if (count === 0) {
+          document.querySelector('.table-container').style.display = 'none';
+          emptyEarnings.style.display = 'block';
+          
+          statRevenue.textContent = '$0';
+          statCompletedCount.textContent = '0';
+          statAvgFee.textContent = '$0';
+          return;
+        }
+
+        document.querySelector('.table-container').style.display = 'block';
+        emptyEarnings.style.display = 'none';
+
+        filteredApts.forEach(apt => {
+          const patient = patients.find(p => p.id === apt.patientId) || {};
+          const payment = payments.find(p => p.appointmentId === apt.id) || { amount: 0, paymentStatus: 'PENDING', paymentMode: 'PAY_AT_CLINIC' };
+          
+          totalRevenue += payment.amount;
+
+          const row = document.createElement('tr');
+          const dateFormatted = new Date(apt.appointmentDate).toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric' });
+          const payBadgeClass = payment.paymentStatus === 'PAID' ? 'badge-confirmed' : 'badge-pending';
+
+          row.innerHTML = `
+            <td>${dateFormatted}</td>
+            <td>${apt.startTime}</td>
+            <td><strong>${patient.fullName || 'Guest'}</strong></td>
+            <td>${payment.paymentMode === 'PAY_NOW' ? '💳 Online Card' : '🏥 Pay at Clinic'}</td>
+            <td><span class="badge ${payBadgeClass}">${payment.paymentStatus}</span></td>
+            <td style="text-align: right; font-weight: 600; color: var(--neutral-800);">$${payment.amount}</td>
+          `;
+
+          earningsRows.appendChild(row);
+        });
+
+        // Update stats
+        statRevenue.textContent = `$${totalRevenue}`;
+        statCompletedCount.textContent = count;
+        statAvgFee.textContent = `$${Math.round(totalRevenue / count)}`;
+      };
+
+      // Filter submit
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        renderEarnings();
+      });
+
+      // Clear filter
+      clearBtn.onclick = () => {
+        startDateInput.value = formatDate(thirtyDaysAgo);
+        endDateInput.value = formatDate(today);
+        renderEarnings();
+      };
+
+      // Initial Render
+      renderEarnings();
+    });
+  </script>
+</body>
+</html>

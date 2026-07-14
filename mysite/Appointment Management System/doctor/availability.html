@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manage Availability - ClinicSys</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <style>
+    .schedule-day-row {
+      display: flex;
+      align-items: center;
+      gap: var(--spacing-md);
+      padding: var(--spacing-sm) 0;
+      border-bottom: 1px solid var(--neutral-100);
+      flex-wrap: wrap;
+    }
+    .schedule-day-row:last-child {
+      border-bottom: none;
+    }
+    .day-toggle-label {
+      width: 120px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: var(--spacing-sm);
+    }
+    .time-inputs {
+      display: flex;
+      align-items: center;
+      gap: var(--spacing-sm);
+      flex-grow: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="app-container">
+    <!-- Sidebar injected here -->
+
+    <main class="main-content">
+      <header style="margin-bottom: var(--spacing-lg);">
+        <h2>Manage Availability</h2>
+        <p style="color: var(--neutral-400); font-size: 14px;">Set your weekly schedule template and block out vacation/leave days.</p>
+      </header>
+
+      <div class="grid-cols-3" style="grid-template-columns: 2fr 1fr;">
+        <!-- Left: Weekly Schedule Templates -->
+        <section class="card">
+          <h3 class="card-title">Weekly Schedule Settings</h3>
+          <p style="font-size: 13px; color: var(--neutral-400); margin-bottom: var(--spacing-md);">Enable working days and set consultation time limits. Changes will update slot generation for the next 30 days.</p>
+          
+          <form id="weekly-schedule-form">
+            <div id="weekly-days-list" style="display: flex; flex-direction: column; gap: var(--spacing-sm);">
+              <!-- Days will load dynamically (Mon - Sun) -->
+            </div>
+
+            <div style="border-top: 1px solid var(--neutral-200); padding-top: var(--spacing-md); margin-top: var(--spacing-md); display: flex; justify-content: flex-end;">
+              <button class="btn btn-primary" type="submit">Save Weekly Schedule</button>
+            </div>
+          </form>
+        </section>
+
+        <!-- Right: Block Dates -->
+        <div style="display: flex; flex-direction: column; gap: var(--spacing-lg);">
+          <!-- Block a Date Form -->
+          <section class="card">
+            <h3 class="card-title">Block a Specific Date</h3>
+            <p style="font-size: 12px; color: var(--neutral-400); margin-bottom: var(--spacing-sm);">Prevent bookings on a specific calendar day (e.g. sick leave, holidays).</p>
+            
+            <form id="block-date-form">
+              <div class="form-group">
+                <label class="form-label" for="block-date-picker">Date to Block</label>
+                <input class="form-control" type="date" id="block-date-picker" required>
+              </div>
+              
+              <div class="form-group">
+                <label class="form-label" for="block-reason">Reason</label>
+                <input class="form-control" type="text" id="block-reason" required placeholder="e.g. Staff conference, Vacation">
+              </div>
+
+              <button class="btn btn-danger" type="submit" style="width: 100%;">🚫 Block This Date</button>
+            </form>
+          </section>
+
+          <!-- Currently Blocked Dates List -->
+          <section class="card">
+            <h3 class="card-title">Active Blocked Dates</h3>
+            <div id="blocked-dates-list" style="display: flex; flex-direction: column; gap: var(--spacing-sm); max-height: 250px; overflow-y: auto;">
+              <!-- Blocked dates loaded dynamically -->
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="../js/db.js"></script>
+  <script src="../js/auth.js"></script>
+  <script src="../js/appointments.js"></script>
+  <script src="../js/slots.js"></script>
+  <script src="../js/toast.js"></script>
+  <script src="../js/modal.js"></script>
+  <script src="../js/navbar.js"></script>
+  <script>
+    // Role Guard
+    if (window.AUTH) {
+      window.AUTH.checkRole(['Doctor']);
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const weeklyDaysList = document.getElementById('weekly-days-list');
+      const weeklyScheduleForm = document.getElementById('weekly-schedule-form');
+      
+      const blockDateForm = document.getElementById('block-date-form');
+      const blockDatePicker = document.getElementById('block-date-picker');
+      const blockReasonInput = document.getElementById('block-reason');
+      const blockedDatesList = document.getElementById('blocked-dates-list');
+
+      // Set min date for date blocker (today)
+      const todayStr = new Date().toISOString().split('T')[0];
+      blockDatePicker.min = todayStr;
+
+      // Fetch Doctor Session
+      const currentUser = window.AUTH.getCurrentUser();
+      if (!currentUser || !currentUser.linkedId) {
+        window.location.href = '../login.html';
+        return;
+      }
+      const doctorId = currentUser.linkedId;
+
+      // Days mapping
+      const days = [
+        { key: 1, name: 'Monday' },
+        { key: 2, name: 'Tuesday' },
+        { key: 3, name: 'Wednesday' },
+        { key: 4, name: 'Thursday' },
+        { key: 5, name: 'Friday' },
+        { key: 6, name: 'Saturday' },
+        { key: 0, name: 'Sunday' }
+      ];
+
+      // Load weekly schedule data
+      const schedules = window.DB.get(window.DB_COLLECTIONS.DOCTOR_SCHEDULES);
+      const doctorSchedules = schedules.filter(s => s.doctorId === doctorId);
+
+      // Render Weekly Form
+      days.forEach(day => {
+        const sched = doctorSchedules.find(s => s.dayOfWeek === day.key);
+        const isActive = !!sched;
+        const startTime = sched ? sched.startTime : '09:00';
+        const endTime = sched ? sched.endTime : '17:00';
+        const slotDuration = sched ? sched.slotDurationMinutes : 20;
+
+        const row = document.createElement('div');
+        row.className = 'schedule-day-row';
+        row.innerHTML = `
+          <label class="day-toggle-label">
+            <input type="checkbox" id="toggle-day-${day.key}" name="activeDays" value="${day.key}" ${isActive ? 'checked' : ''} style="accent-color: var(--primary);">
+            <span>${day.name}</span>
+          </label>
+          <div class="time-inputs" id="inputs-container-${day.key}" style="opacity: ${isActive ? 1 : 0.4}; pointer-events: ${isActive ? 'auto' : 'none'};">
+            <input type="time" class="form-control" style="width: 100px;" id="start-${day.key}" value="${startTime}">
+            <span style="color: var(--neutral-400);">to</span>
+            <input type="time" class="form-control" style="width: 100px;" id="end-${day.key}" value="${endTime}">
+            <span style="color: var(--neutral-400); margin-left: 8px;">Duration</span>
+            <select class="form-control" style="width: 90px;" id="dur-${day.key}">
+              <option value="10" ${slotDuration == 10 ? 'selected' : ''}>10m</option>
+              <option value="15" ${slotDuration == 15 ? 'selected' : ''}>15m</option>
+              <option value="20" ${slotDuration == 20 ? 'selected' : ''}>20m</option>
+              <option value="30" ${slotDuration == 30 ? 'selected' : ''}>30m</option>
+              <option value="45" ${slotDuration == 45 ? 'selected' : ''}>45m</option>
+            </select>
+          </div>
+        `;
+
+        // Toggle day inputs activation on checkbox click
+        const checkbox = row.querySelector(`#toggle-day-${day.key}`);
+        const inputsContainer = row.querySelector(`#inputs-container-${day.key}`);
+        checkbox.addEventListener('change', () => {
+          if (checkbox.checked) {
+            inputsContainer.style.opacity = '1';
+            inputsContainer.style.pointer-events = 'auto';
+          } else {
+            inputsContainer.style.opacity = '0.4';
+            inputsContainer.style.pointer-events = 'none';
+          }
+        });
+
+        weeklyDaysList.appendChild(row);
+      });
+
+      // Save Weekly Schedule Template handler
+      weeklyScheduleForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        // 1. Construct target schedules list from UI values
+        const checkedBoxes = weeklyScheduleForm.querySelectorAll('input[name="activeDays"]:checked');
+        const proposedSchedules = [];
+
+        checkedBoxes.forEach(box => {
+          const key = Number(box.value);
+          const startTime = document.getElementById(`start-${key}`).value;
+          const endTime = document.getElementById(`end-${key}`).value;
+          const slotDurationMinutes = Number(document.getElementById(`dur-${key}`).value);
+
+          proposedSchedules.push({
+            id: `sched-${doctorId}-${key}`,
+            doctorId,
+            dayOfWeek: key,
+            startTime,
+            endTime,
+            slotDurationMinutes
+          });
+        });
+
+        // 2. Perform schedule changes check
+        const conflicts = window.SLOTS.getScheduleConflicts(doctorId, proposedSchedules);
+        
+        if (conflicts.length > 0) {
+          const patients = window.DB.get(window.DB_COLLECTIONS.PATIENTS);
+          const conflictListHtml = conflicts.map(apt => {
+            const pat = patients.find(p => p.id === apt.patientId) || {};
+            return `<li>📅 <strong>${apt.appointmentDate}</strong> at ${apt.startTime} - Patient: <strong>${pat.fullName || 'Guest'}</strong> (Reason: "${apt.reason}")</li>`;
+          }).join('');
+
+          // Prompt doctor for validation override
+          window.Modal.confirm({
+            title: "⚠️ Warning: Schedule Conflicts Detected",
+            body: `
+              <p style="color: var(--status-cancelled); font-weight: 600; margin-bottom: 8px;">Saving this schedule will conflict with the following ${conflicts.length} booked appointments in the next 30 days:</p>
+              <ul style="padding-left: 20px; font-size: 13px; line-height: 1.5; display: flex; flex-direction: column; gap: 4px; margin-bottom: 12px;">
+                ${conflictListHtml}
+              </ul>
+              <p>Proceeding will <strong>force-cancel</strong> these bookings and notify the patients. Do you want to proceed?</p>
+            `,
+            confirmText: "Yes, Save & Cancel Bookings",
+            cancelText: "No, Go back",
+            onConfirm: () => {
+              // Execute schedule save + cancel affected appointments
+              saveWeeklySchedule(proposedSchedules, conflicts);
+            }
+          });
+        } else {
+          saveWeeklySchedule(proposedSchedules, []);
+        }
+      });
+
+      function saveWeeklySchedule(proposedSchedules, conflictsToCancel) {
+        // Cancel conflicted bookings
+        conflictsToCancel.forEach(apt => {
+          window.APPOINTMENTS.cancel(
+            apt.id, 
+            'Doctor', 
+            "Doctor modified their weekly availability templates, slot no longer offered.", 
+            true // bypass cancellation window check since doctor forces it
+          );
+        });
+
+        // Update DB schedules: delete doctor's current, then insert new
+        const allSchedules = window.DB.get(window.DB_COLLECTIONS.DOCTOR_SCHEDULES);
+        const filteredSchedules = allSchedules.filter(s => s.doctorId !== doctorId);
+        const mergedSchedules = [...filteredSchedules, ...proposedSchedules];
+        
+        window.DB.save(window.DB_COLLECTIONS.DOCTOR_SCHEDULES, mergedSchedules);
+
+        // Sync Slots for the next 30 days
+        window.SLOTS.generateSlots(doctorId, 30);
+
+        window.Toast.show("Weekly schedule updated successfully!", "success");
+      }
+
+      // Load blocked dates list
+      const renderBlockedDates = () => {
+        blockedDatesList.innerHTML = '';
+        const blocks = window.DB.get('doctorBlocks') || [];
+        const docBlocks = blocks.filter(b => b.doctorId === doctorId);
+
+        if (docBlocks.length === 0) {
+          blockedDatesList.innerHTML = `
+            <div class="empty-state" style="padding: 12px 0;">
+              <p class="empty-state-desc" style="margin: 0; font-size: 11px;">No blocked dates added.</p>
+            </div>
+          `;
+          return;
+        }
+
+        // Sort soonest block first
+        docBlocks.sort((a, b) => a.blockDate.localeCompare(b.blockDate));
+
+        docBlocks.forEach(block => {
+          const item = document.createElement('div');
+          item.className = 'reminder-item';
+          item.style.display = 'flex';
+          item.style.justifyContent = 'space-between';
+          item.style.alignItems = 'center';
+          item.style.padding = '8px 12px';
+
+          const formattedBlockDate = new Date(block.blockDate).toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric' });
+
+          item.innerHTML = `
+            <div>
+              <strong style="font-size: 12px;">🚫 ${formattedBlockDate}</strong>
+              <p style="margin: 2px 0 0 0; font-size: 11px; color: var(--neutral-600);">${block.reason}</p>
+            </div>
+            <button class="btn btn-secondary btn-xs" onclick="unblockDate('${block.blockDate}')" style="padding: 2px 6px;">Unblock</button>
+          `;
+          
+          blockedDatesList.appendChild(item);
+        });
+      };
+
+      // Unblock date trigger
+      window.unblockDate = (dateStr) => {
+        window.Modal.confirm({
+          title: "Unblock Date?",
+          body: `Are you sure you want to unblock availability for <strong>${dateStr}</strong>? Future slots will become available for booking again.`,
+          onConfirm: () => {
+            const success = window.SLOTS.unblockDate(doctorId, dateStr);
+            if (success) {
+              window.Toast.show("Date unblocked successfully.", "success");
+              renderBlockedDates();
+            } else {
+              window.Toast.show("Failed to unblock date.", "error");
+            }
+          }
+        });
+      };
+
+      // Block Date Submit
+      blockDateForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        
+        const dateStr = blockDatePicker.value;
+        const reason = blockReasonInput.value.trim();
+
+        // Check for conflicts
+        const conflicts = window.SLOTS.getConflictsForDate(doctorId, dateStr);
+
+        if (conflicts.length > 0) {
+          const patients = window.DB.get(window.DB_COLLECTIONS.PATIENTS);
+          const conflictsHtml = conflicts.map(apt => {
+            const pat = patients.find(p => p.id === apt.patientId) || {};
+            return `<li>🕒 <strong>${apt.startTime}</strong> - Patient: <strong>${pat.fullName || 'Guest'}</strong></li>`;
+          }).join('');
+
+          window.Modal.confirm({
+            title: "⚠️ Date Block Conflicts",
+            body: `
+              <p style="color: var(--status-cancelled); font-weight: 600; margin-bottom: 8px;">Blocking this date conflicts with ${conflicts.length} scheduled appointments:</p>
+              <ul style="padding-left: 20px; font-size: 13px; line-height: 1.5; margin-bottom: 12px;">
+                ${conflictsHtml}
+              </ul>
+              <p>Proceeding will block the date, <strong>force-cancel</strong> these appointments, and notify patients. Do you want to proceed?</p>
+            `,
+            confirmText: "Block & Force Cancel",
+            onConfirm: () => {
+              executeDateBlock(dateStr, reason, conflicts);
+            }
+          });
+        } else {
+          executeDateBlock(dateStr, reason, []);
+        }
+      });
+
+      function executeDateBlock(dateStr, reason, conflictsToCancel) {
+        // Cancel conflicts
+        conflictsToCancel.forEach(apt => {
+          window.APPOINTMENTS.cancel(apt.id, 'Doctor', `Doctor blocked this date for leave: "${reason}"`, true);
+        });
+
+        // Block Date
+        const success = window.SLOTS.blockDate(doctorId, dateStr, reason);
+        if (success) {
+          window.Toast.show("Date blocked successfully!", "success");
+          blockDateForm.reset();
+          renderBlockedDates();
+        } else {
+          window.Toast.show("This date is already blocked.", "error");
+        }
+      }
+
+      // Initial renders
+      renderBlockedDates();
+    });
+  </script>
+</body>
+</html>

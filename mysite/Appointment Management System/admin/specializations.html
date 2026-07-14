@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manage Specializations - ClinicSys</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Sidebar injected here -->
+
+    <main class="main-content">
+      <header style="margin-bottom: var(--spacing-lg); display: flex; justify-content: space-between; align-items: center;">
+        <div>
+          <h2>Manage Specializations</h2>
+          <p style="color: var(--neutral-400); font-size: 14px;">Define, edit, and delete medical specialization tags offered in the clinic.</p>
+        </div>
+        <button class="btn btn-primary" id="btn-add-spec">🏷️ Add Specialization</button>
+      </header>
+
+      <!-- Specializations List Card -->
+      <section class="card">
+        <div class="table-container">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Specialization Name</th>
+                <th>Description</th>
+                <th>Assigned Doctors</th>
+                <th style="text-align: right;">Actions</th>
+              </tr>
+            </thead>
+            <tbody id="spec-rows">
+              <!-- Loaded dynamically -->
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="../js/db.js"></script>
+  <script src="../js/auth.js"></script>
+  <script src="../js/toast.js"></script>
+  <script src="../js/modal.js"></script>
+  <script src="../js/navbar.js"></script>
+  <script>
+    // Role Guard
+    if (window.AUTH) {
+      window.AUTH.checkRole(['ClinicAdmin']);
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const specRows = document.getElementById('spec-rows');
+      const btnAddSpec = document.getElementById('btn-add-spec');
+
+      const renderSpecs = () => {
+        specRows.innerHTML = '';
+        if (!window.DB) return;
+
+        const specializations = window.DB.get(window.DB_COLLECTIONS.SPECIALIZATIONS);
+        const doctors = window.DB.get(window.DB_COLLECTIONS.DOCTORS);
+
+        if (specializations.length === 0) {
+          specRows.innerHTML = `
+            <tr>
+              <td colspan="4" style="text-align: center; color: var(--neutral-400); padding: 24px 0;">No specializations defined.</td>
+            </tr>
+          `;
+          return;
+        }
+
+        specializations.forEach(spec => {
+          const docCount = doctors.filter(d => d.specializationId === spec.id).length;
+          const row = document.createElement('tr');
+          
+          row.innerHTML = `
+            <td><strong>${spec.name}</strong></td>
+            <td style="font-size: 13px; color: var(--neutral-600);">${spec.description || 'No description provided.'}</td>
+            <td><span class="badge badge-completed" style="font-size: 11px;">${docCount} Doctors</span></td>
+            <td style="text-align: right;">
+              <button class="btn btn-secondary btn-xs" onclick="editSpec('${spec.id}')">✏️ Edit</button>
+              <button class="btn btn-danger btn-xs" onclick="deleteSpec('${spec.id}', ${docCount})">Delete</button>
+            </td>
+          `;
+          specRows.appendChild(row);
+        });
+      };
+
+      // Add Specialization
+      btnAddSpec.onclick = () => {
+        window.Modal.prompt({
+          title: "🏷️ Add Specialization",
+          bodyHtml: `
+            <div class="form-group">
+              <label class="form-label">Name</label>
+              <input class="form-control" type="text" name="name" required placeholder="e.g. Dermatology">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Description</label>
+              <textarea class="form-control" name="description" rows="3" required placeholder="Description of medical coverage..."></textarea>
+            </div>
+          `,
+          confirmText: "Create Specialization",
+          onConfirm: (formData) => {
+            const name = formData.name.trim();
+            const description = formData.description.trim();
+
+            if (!name || !description) {
+              window.Toast.show("Please enter name and description.", "error");
+              return false;
+            }
+
+            const id = 'spec-' + name.toLowerCase().substring(0, 5).replace(/\s+/g, '');
+            window.DB.insert(window.DB_COLLECTIONS.SPECIALIZATIONS, {
+              id,
+              name,
+              description
+            });
+
+            window.Toast.show("Specialization added successfully!", "success");
+            renderSpecs();
+          }
+        });
+      };
+
+      // Edit Specialization
+      window.editSpec = (id) => {
+        const spec = window.DB.getById(window.DB_COLLECTIONS.SPECIALIZATIONS, id);
+        if (!spec) return;
+
+        window.Modal.prompt({
+          title: `✏️ Edit Specialization: ${spec.name}`,
+          bodyHtml: `
+            <div class="form-group">
+              <label class="form-label">Name</label>
+              <input class="form-control" type="text" name="name" required value="${spec.name}">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Description</label>
+              <textarea class="form-control" name="description" rows="3" required>${spec.description}</textarea>
+            </div>
+          `,
+          confirmText: "Update",
+          onConfirm: (formData) => {
+            const name = formData.name.trim();
+            const description = formData.description.trim();
+
+            if (!name || !description) return false;
+
+            window.DB.update(window.DB_COLLECTIONS.SPECIALIZATIONS, id, {
+              name,
+              description
+            });
+
+            window.Toast.show("Specialization updated successfully.", "success");
+            renderSpecs();
+          }
+        });
+      };
+
+      // Delete Specialization (prevent if docCount > 0)
+      window.deleteSpec = (id, docCount) => {
+        if (docCount > 0) {
+          window.Toast.show(`Cannot delete: ${docCount} doctor(s) are assigned to this specialization. Reassign them first.`, "error");
+          return;
+        }
+
+        const spec = window.DB.getById(window.DB_COLLECTIONS.SPECIALIZATIONS, id);
+
+        window.Modal.confirm({
+          title: "Delete Specialization?",
+          body: `Are you sure you want to delete specialization <strong>${spec ? spec.name : ''}</strong>? This action cannot be undone.`,
+          confirmText: "Delete",
+          onConfirm: () => {
+            const deleted = window.DB.delete(window.DB_COLLECTIONS.SPECIALIZATIONS, id);
+            if (deleted) {
+              window.Toast.show("Specialization deleted successfully.", "success");
+              renderSpecs();
+            } else {
+              window.Toast.show("Failed to delete.", "error");
+            }
+          }
+        });
+      };
+
+      renderSpecs();
+    });
+  </script>
+</body>
+</html>

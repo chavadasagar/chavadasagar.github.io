@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reviews - ClinicSys</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <style>
+    .rating-summary-card {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: var(--spacing-lg);
+      text-align: center;
+      background-color: var(--primary-light);
+      border-color: var(--primary);
+    }
+  </style>
+</head>
+<body>
+  <div class="app-container">
+    <!-- Sidebar injected here -->
+
+    <main class="main-content">
+      <header style="margin-bottom: var(--spacing-lg);">
+        <h2>Reviews Received</h2>
+        <p style="color: var(--neutral-400); font-size: 14px;">Feedback and ratings left by your patients after their completed appointments.</p>
+      </header>
+
+      <div class="grid-cols-3" style="grid-template-columns: 1fr 2fr;">
+        <!-- Left: Rating Summary Card -->
+        <section class="card rating-summary-card">
+          <div style="font-size: 14px; text-transform: uppercase; font-weight: 600; color: var(--primary);">Average Rating</div>
+          <div style="font-size: 56px; font-weight: 800; color: var(--primary); margin: var(--spacing-sm) 0;" id="avg-rating-val">0.0</div>
+          <div style="font-size: 20px; letter-spacing: 2px;" id="avg-stars">⭐⭐⭐⭐⭐</div>
+          <div style="font-size: 12px; color: var(--neutral-600); margin-top: var(--spacing-sm);" id="total-reviews-count">Based on 0 reviews</div>
+        </section>
+
+        <!-- Right: Reviews List -->
+        <section class="card">
+          <h3 class="card-title">Patient Comments</h3>
+          <div style="display: flex; flex-direction: column; gap: var(--spacing-md);" id="reviews-list-container">
+            <!-- Loaded dynamically -->
+          </div>
+
+          <div id="no-reviews" class="empty-state" style="display: none; padding: 32px 0;">
+            <div class="empty-state-icon">⭐</div>
+            <div class="empty-state-title">No reviews yet</div>
+            <div class="empty-state-desc">Reviews left by patients after completing their visits will show up here.</div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <script src="../js/db.js"></script>
+  <script src="../js/auth.js"></script>
+  <script src="../js/toast.js"></script>
+  <script src="../js/modal.js"></script>
+  <script src="../js/navbar.js"></script>
+  <script>
+    // Role Guard
+    if (window.AUTH) {
+      window.AUTH.checkRole(['Doctor']);
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const avgRatingVal = document.getElementById('avg-rating-val');
+      const avgStars = document.getElementById('avg-stars');
+      const totalReviewsCount = document.getElementById('total-reviews-count');
+      const listContainer = document.getElementById('reviews-list-container');
+      const noReviewsEl = document.getElementById('no-reviews');
+
+      // Fetch Doctor Session
+      const currentUser = window.AUTH.getCurrentUser();
+      if (!currentUser || !currentUser.linkedId) {
+        window.location.href = '../login.html';
+        return;
+      }
+      const doctorId = currentUser.linkedId;
+
+      // Load Reviews Data
+      const reviews = window.DB.get(window.DB_COLLECTIONS.REVIEWS);
+      const docReviews = reviews.filter(r => r.doctorId === doctorId);
+      const patients = window.DB.get(window.DB_COLLECTIONS.PATIENTS);
+
+      // Sort newest first
+      docReviews.sort((a, b) => b.createdAt.localeCompare(a.createdAt));
+
+      // Calculate Average
+      let totalRating = 0;
+      let count = docReviews.length;
+      let avg = 0;
+
+      if (count > 0) {
+        totalRating = docReviews.reduce((sum, r) => sum + r.rating, 0);
+        avg = parseFloat((totalRating / count).toFixed(1));
+      }
+
+      avgRatingVal.textContent = avg.toFixed(1);
+      avgStars.textContent = '⭐'.repeat(Math.round(avg)) + '☆'.repeat(5 - Math.round(avg));
+      totalReviewsCount.textContent = `Based on ${count} ${count === 1 ? 'review' : 'reviews'}`;
+
+      if (count === 0) {
+        listContainer.style.display = 'none';
+        noReviewsEl.style.display = 'block';
+        return;
+      }
+
+      listContainer.style.display = 'flex';
+      noReviewsEl.style.display = 'none';
+
+      docReviews.forEach(rev => {
+        const patient = patients.find(p => p.id === rev.patientId) || {};
+        const revDate = new Date(rev.createdAt).toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric' });
+        
+        const card = document.createElement('div');
+        card.className = 'reminder-item';
+        card.style.background = 'white';
+        card.style.border = '1px solid var(--neutral-200)';
+        card.style.borderRadius = 'var(--radius-md)';
+        card.style.padding = '16px';
+
+        card.innerHTML = `
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 6px;">
+            <div>
+              <strong style="font-size: 14px; color: var(--neutral-800);">${patient.fullName || 'Anonymous Patient'}</strong>
+              <div style="font-size: 12px; color: var(--primary); margin-top: 2px;">${'⭐'.repeat(rev.rating)}</div>
+            </div>
+            <span style="font-size: 11px; color: var(--neutral-400);">${revDate}</span>
+          </div>
+          <p style="font-size: 13px; color: var(--neutral-600); font-style: italic; line-height: 1.4; margin: 0;">
+            "${rev.comment}"
+          </p>
+        `;
+
+        listContainer.appendChild(card);
+      });
+    });
+  </script>
+</body>
+</html>

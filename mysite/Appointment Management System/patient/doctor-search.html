@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Doctors - ClinicSys</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Sidebar injected here -->
+    
+    <main class="main-content">
+      <header style="margin-bottom: var(--spacing-lg);">
+        <h2>Find a Doctor</h2>
+        <p style="color: var(--neutral-400); font-size: 14px;">Select a specialization or search by name to book your appointment.</p>
+      </header>
+
+      <!-- Search Bar & Filters -->
+      <section class="card" style="padding: var(--spacing-md);">
+        <div class="form-group" style="margin-bottom: var(--spacing-md);">
+          <input type="text" id="search-input" class="form-control" placeholder="🔍 Search doctors by name, qualification, or clinic...">
+        </div>
+        
+        <div class="form-label" style="margin-bottom: var(--spacing-sm);">Specializations</div>
+        <div class="filter-container" id="spec-filters">
+          <button class="filter-chip active" data-spec-id="all">All</button>
+          <!-- Specialization chips loaded dynamically -->
+        </div>
+      </section>
+
+      <!-- Doctor Cards Grid -->
+      <section class="grid-cols-3" id="doctors-grid">
+        <!-- Loaded dynamically -->
+      </section>
+
+      <div id="no-results" class="empty-state" style="display: none;">
+        <div class="empty-state-icon">🕵️‍♂️</div>
+        <div class="empty-state-title">No doctors found</div>
+        <div class="empty-state-desc">Try clearing filters or search terms.</div>
+      </div>
+    </main>
+  </div>
+
+  <script src="../js/db.js"></script>
+  <script src="../js/auth.js"></script>
+  <script src="../js/toast.js"></script>
+  <script src="../js/modal.js"></script>
+  <script src="../js/navbar.js"></script>
+  <script>
+    // 1. Role Guard
+    if (window.AUTH) {
+      window.AUTH.checkRole(['Patient']);
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const searchInput = document.getElementById('search-input');
+      const specFiltersContainer = document.getElementById('spec-filters');
+      const doctorsGrid = document.getElementById('doctors-grid');
+      const noResults = document.getElementById('no-results');
+
+      let selectedSpecId = 'all';
+      let searchQuery = '';
+
+      // 2. Fetch data from DB
+      const doctors = window.DB.get(window.DB_COLLECTIONS.DOCTORS).filter(d => d.isActive);
+      const specializations = window.DB.get(window.DB_COLLECTIONS.SPECIALIZATIONS);
+      const clinics = window.DB.get(window.DB_COLLECTIONS.CLINICS);
+
+      // 3. Render Specialization Chips
+      specializations.forEach(spec => {
+        const chip = document.createElement('button');
+        chip.className = 'filter-chip';
+        chip.setAttribute('data-spec-id', spec.id);
+        chip.textContent = spec.name;
+        specFiltersContainer.appendChild(chip);
+      });
+
+      // 4. Render Doctor Cards
+      const renderDoctors = () => {
+        doctorsGrid.innerHTML = '';
+        let matchCount = 0;
+
+        doctors.forEach(doc => {
+          const spec = specializations.find(s => s.id === doc.specializationId);
+          const clinic = clinics.find(c => c.id === doc.clinicId);
+          
+          const specName = spec ? spec.name : 'General';
+          const clinicName = clinic ? clinic.name : 'Clinic';
+          const clinicCity = clinic ? clinic.city : '';
+
+          // Filter by specialization
+          if (selectedSpecId !== 'all' && doc.specializationId !== selectedSpecId) {
+            return;
+          }
+
+          // Filter by search query
+          if (searchQuery) {
+            const query = searchQuery.toLowerCase();
+            const matchesName = doc.fullName.toLowerCase().includes(query);
+            const matchesQual = doc.qualification.toLowerCase().includes(query);
+            const matchesClinic = clinicName.toLowerCase().includes(query);
+            if (!matchesName && !matchesQual && !matchesClinic) {
+              return;
+            }
+          }
+
+          matchCount++;
+
+          // Build Doctor Card HTML
+          const initials = doc.fullName.split(' ').map(n => n[0]).join('').replace('Dr.', '').substring(0, 2).toUpperCase();
+          
+          const card = document.createElement('article');
+          card.className = 'card';
+          card.style.cursor = 'pointer';
+          card.style.display = 'flex';
+          card.style.flexDirection = 'column';
+          card.style.gap = '12px';
+          card.style.padding = '20px';
+
+          card.innerHTML = `
+            <div style="display: flex; gap: 16px; align-items: center;">
+              <div class="photo-placeholder">${initials}</div>
+              <div>
+                <h3 style="margin: 0; font-size: 16px;">${doc.fullName}</h3>
+                <span class="badge badge-completed" style="font-size: 11px; padding: 2px 8px; margin-top: 4px;">${specName}</span>
+              </div>
+            </div>
+            
+            <div style="border-top: 1px solid var(--neutral-100); padding-top: var(--spacing-sm); font-size: 13px; color: var(--neutral-600); display: flex; flex-direction: column; gap: 4px;">
+              <div>🏫 <strong>Quals:</strong> ${doc.qualification}</div>
+              <div>💼 <strong>Exp:</strong> ${doc.experienceYears} Years</div>
+              <div>🏥 <strong>Clinic:</strong> ${clinicName} (${clinicCity})</div>
+              <div>⭐ <strong>Rating:</strong> ${doc.rating} / 5.0</div>
+            </div>
+
+            <div style="border-top: 1px solid var(--neutral-100); padding-top: var(--spacing-sm); display: flex; justify-content: space-between; align-items: center;">
+              <div>
+                <span style="font-size: 11px; color: var(--neutral-400); display: block; text-transform: uppercase;">Fee</span>
+                <strong style="font-size: 16px; color: var(--neutral-900);">$${doc.consultationFee}</strong>
+              </div>
+              <button class="btn btn-primary btn-sm">Book Appointment</button>
+            </div>
+          `;
+
+          card.onclick = () => {
+            window.location.href = `doctor-profile.html?id=${doc.id}`;
+          };
+
+          doctorsGrid.appendChild(card);
+        });
+
+        if (matchCount === 0) {
+          doctorsGrid.style.display = 'none';
+          noResults.style.display = 'block';
+        } else {
+          doctorsGrid.style.display = 'grid';
+          noResults.style.display = 'none';
+        }
+      };
+
+      // Filter click handler
+      specFiltersContainer.addEventListener('click', (e) => {
+        if (e.target.classList.contains('filter-chip')) {
+          const activeChip = specFiltersContainer.querySelector('.filter-chip.active');
+          if (activeChip) activeChip.classList.remove('active');
+          
+          e.target.classList.add('active');
+          selectedSpecId = e.target.getAttribute('data-spec-id');
+          renderDoctors();
+        }
+      });
+
+      // Search input handler
+      searchInput.addEventListener('input', (e) => {
+        searchQuery = e.target.value;
+        renderDoctors();
+      });
+
+      // Initial Render
+      renderDoctors();
+    });
+  </script>
+</body>
+</html>

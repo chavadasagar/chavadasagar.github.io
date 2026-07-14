@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Front Desk - ClinicSys</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <style>
+    .split-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--spacing-lg);
+    }
+    @media (max-width: 1024px) {
+      .split-layout {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="app-container">
+    <!-- Sidebar injected here -->
+
+    <main class="main-content">
+      <header style="margin-bottom: var(--spacing-lg);">
+        <h2>Front Desk Operations</h2>
+        <p style="color: var(--neutral-400); font-size: 14px;">Register patients, schedule bookings, and manage clinic walk-in queues.</p>
+      </header>
+
+      <div class="split-layout">
+        <!-- LEFT: Doctor Schedules & On-behalf Booking -->
+        <div style="display: flex; flex-direction: column; gap: var(--spacing-lg);">
+          <section class="card">
+            <h3 class="card-title">Doctor Daily Schedules</h3>
+            <p style="font-size: 12px; color: var(--neutral-400); margin-bottom: var(--spacing-md);">Select a doctor and date to view slots or book on behalf of a patient.</p>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="schedule-doctor">Doctor</label>
+                <select class="form-control" id="schedule-doctor">
+                  <!-- Loaded dynamically -->
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="schedule-date">Date</label>
+                <input class="form-control" type="date" id="schedule-date">
+              </div>
+            </div>
+
+            <div style="margin-top: var(--spacing-md);">
+              <div class="slot-grid" id="desk-slots-container">
+                <!-- Loaded dynamically -->
+              </div>
+              <div id="desk-no-slots" class="empty-state" style="display: none; padding: 20px 0;">
+                <div class="empty-state-icon">🗓️</div>
+                <div class="empty-state-title">No schedule for this day</div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Patient Search / Registration Directory -->
+          <section class="card">
+            <h3 class="card-title">Patient Directory</h3>
+            <div style="display: flex; gap: var(--spacing-sm); margin-bottom: var(--spacing-md);">
+              <input type="text" id="patient-search" class="form-control" placeholder="🔍 Search patients by name or phone...">
+              <button class="btn btn-primary" id="btn-add-patient" style="white-space: nowrap;">👤 Add Patient</button>
+            </div>
+            
+            <div class="table-container" style="max-height: 250px; overflow-y: auto;">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Phone</th>
+                    <th>Gender</th>
+                    <th>D.O.B</th>
+                    <th style="text-align: right;">Action</th>
+                  </tr>
+                </thead>
+                <tbody id="patient-directory-rows">
+                  <!-- Loaded dynamically -->
+                </tbody>
+              </table>
+            </div>
+          </section>
+        </div>
+
+        <!-- RIGHT: Walk-In Booker -->
+        <section class="card" style="align-self: start;">
+          <h3 class="card-title">Add Walk-In Appointment</h3>
+          <p style="font-size: 12px; color: var(--neutral-400); margin-bottom: var(--spacing-md);">Quick book the next available consultation slot for walk-in patients today.</p>
+          
+          <form id="walkin-booking-form">
+            <div class="form-group">
+              <label class="form-label" for="walkin-doctor">Assign Doctor</label>
+              <select class="form-control" id="walkin-doctor" required>
+                <!-- Loaded dynamically -->
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="walkin-patient">Select Patient</label>
+              <select class="form-control" id="walkin-patient" required>
+                <option value="" disabled selected>Choose registered patient...</option>
+                <!-- Loaded dynamically -->
+              </select>
+              <span style="font-size: 11px; color: var(--neutral-400); margin-top: 4px; display: block;">Patient not listed? Create them first using the Patient Directory.</span>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="walkin-slot-mode">Scheduling Mode</label>
+              <select class="form-control" id="walkin-slot-mode" required>
+                <option value="next_available" selected>⚡ Next Available Slot Today</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="walkin-reason">Reason for Visit</label>
+              <input class="form-control" type="text" id="walkin-reason" required placeholder="e.g. Sudden headache, Flu symptoms">
+            </div>
+
+            <button class="btn btn-primary" type="submit" style="width: 100%; margin-top: var(--spacing-sm);">Book Walk-In Now</button>
+          </form>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <script src="../js/db.js"></script>
+  <script src="../js/auth.js"></script>
+  <script src="../js/slots.js"></script>
+  <script src="../js/appointments.js"></script>
+  <script src="../js/toast.js"></script>
+  <script src="../js/modal.js"></script>
+  <script src="../js/navbar.js"></script>
+  <script>
+    // Role Guard
+    if (window.AUTH) {
+      window.AUTH.checkRole(['Receptionist']);
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      // Elements
+      const scheduleDoctor = document.getElementById('schedule-doctor');
+      const scheduleDate = document.getElementById('schedule-date');
+      const deskSlotsContainer = document.getElementById('desk-slots-container');
+      const deskNoSlots = document.getElementById('desk-no-slots');
+
+      const patientSearch = document.getElementById('patient-search');
+      const btnAddPatient = document.getElementById('btn-add-patient');
+      const patientDirectoryRows = document.getElementById('patient-directory-rows');
+
+      const walkinDoctor = document.getElementById('walkin-doctor');
+      const walkinPatient = document.getElementById('walkin-patient');
+      const walkinBookingForm = document.getElementById('walkin-booking-form');
+
+      // Date Setup (default today)
+      const today = new Date();
+      const todayStr = window.SLOTS.formatDate(today);
+      scheduleDate.value = todayStr;
+      scheduleDate.min = todayStr;
+
+      // Fetch Data
+      const doctors = window.DB.get(window.DB_COLLECTIONS.DOCTORS).filter(d => d.isActive);
+      const clinics = window.DB.get(window.DB_COLLECTIONS.CLINICS);
+      const specializations = window.DB.get(window.DB_COLLECTIONS.SPECIALIZATIONS);
+
+      // Populate Doctor Dropdowns
+      const docOptions = doctors.map(doc => {
+        const spec = specializations.find(s => s.id === doc.specializationId);
+        return `<option value="${doc.id}">${doc.fullName} (${spec ? spec.name : 'General'})</option>`;
+      }).join('');
+
+      scheduleDoctor.innerHTML = docOptions;
+      walkinDoctor.innerHTML = docOptions;
+
+      // Sync slots for all active doctors for the next 30 days
+      doctors.forEach(doc => {
+        window.SLOTS.generateSlots(doc.id, 30);
+      });
+
+      // 1. RENDER DOCTOR SLOTS
+      const renderDeskSlots = () => {
+        deskSlotsContainer.innerHTML = '';
+        const docId = scheduleDoctor.value;
+        const dateVal = scheduleDate.value;
+
+        if (!docId || !dateVal) return;
+
+        const allSlots = window.DB.get(window.DB_COLLECTIONS.DOCTOR_SLOTS);
+        const filteredSlots = allSlots.filter(s => s.doctorId === docId && s.slotDate === dateVal);
+        filteredSlots.sort((a, b) => a.startTime.localeCompare(b.startTime));
+
+        if (filteredSlots.length === 0) {
+          deskSlotsContainer.style.display = 'none';
+          deskNoSlots.style.display = 'block';
+          return;
+        }
+
+        deskSlotsContainer.style.display = 'grid';
+        deskNoSlots.style.display = 'none';
+
+        filteredSlots.forEach(slot => {
+          const card = document.createElement('div');
+          let cls = 'slot-card';
+          if (slot.isBooked) cls += ' booked';
+          else if (slot.isBlocked) cls += ' blocked';
+
+          card.className = cls;
+          card.textContent = slot.startTime;
+
+          // If available, receptionist can click to book on-behalf
+          if (!slot.isBooked && !slot.isBlocked) {
+            card.onclick = () => {
+              openBookOnBehalfModal(slot);
+            };
+          }
+
+          deskSlotsContainer.appendChild(card);
+        });
+      };
+
+      scheduleDoctor.onchange = renderDeskSlots;
+      scheduleDate.onchange = renderDeskSlots;
+
+      // 2. PATIENT DIRECTORY
+      const renderPatients = () => {
+        patientDirectoryRows.innerHTML = '';
+        const query = patientSearch.value.toLowerCase();
+        
+        const patients = window.DB.get(window.DB_COLLECTIONS.PATIENTS);
+        const filtered = patients.filter(p => 
+          p.fullName.toLowerCase().includes(query) || 
+          p.phone.includes(query)
+        );
+
+        // Update Walkin Dropdown options
+        walkinPatient.innerHTML = '<option value="" disabled selected>Choose registered patient...</option>' + 
+          patients.map(p => `<option value="${p.id}">${p.fullName} (Ph: ${p.phone})</option>`).join('');
+
+        if (filtered.length === 0) {
+          patientDirectoryRows.innerHTML = `
+            <tr>
+              <td colspan="5" style="text-align: center; color: var(--neutral-400);">No patients registered.</td>
+            </tr>
+          `;
+          return;
+        }
+
+        filtered.forEach(pat => {
+          const row = document.createElement('tr');
+          row.innerHTML = `
+            <td><strong>${pat.fullName}</strong></td>
+            <td>${pat.phone}</td>
+            <td>${pat.gender}</td>
+            <td>${pat.dob}</td>
+            <td style="text-align: right;">
+              <button class="btn btn-secondary btn-xs" onclick="viewPatientHistory('${pat.id}')">View History</button>
+            </td>
+          `;
+          patientDirectoryRows.appendChild(row);
+        });
+      };
+
+      patientSearch.oninput = renderPatients;
+
+      // Register new patient via modal
+      btnAddPatient.onclick = () => {
+        window.Modal.prompt({
+          title: "👤 Register New Patient",
+          bodyHtml: `
+            <div class="form-group">
+              <label class="form-label">Full Name</label>
+              <input class="form-control" type="text" name="fullName" required placeholder="John Doe">
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label">Phone</label>
+                <input class="form-control" type="text" name="phone" required placeholder="555-0199">
+              </div>
+              <div class="form-group">
+                <label class="form-label">Gender</label>
+                <select class="form-control" name="gender" required>
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label">Date of Birth</label>
+                <input class="form-control" type="date" name="dob" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Email</label>
+                <input class="form-control" type="email" name="email" required placeholder="john@example.com">
+              </div>
+            </div>
+          `,
+          confirmText: "Register Patient",
+          onConfirm: (formData) => {
+            const email = formData.email.trim().toLowerCase();
+            const fullName = formData.fullName.trim();
+            const phone = formData.phone.trim();
+            const gender = formData.gender;
+            const dob = formData.dob;
+
+            if (!fullName || !phone || !email || !dob) {
+              window.Toast.show("All fields are required.", "error");
+              return false;
+            }
+
+            // Check duplicate email
+            const users = window.DB.get(window.DB_COLLECTIONS.USERS);
+            if (users.some(u => u.email.toLowerCase() === email)) {
+              window.Toast.show("Email is already registered.", "error");
+              return false;
+            }
+
+            // Save Patient
+            const p = window.DB.insert(window.DB_COLLECTIONS.PATIENTS, {
+              fullName, phone, email, gender, dob, password: 'Demo@123'
+            });
+
+            // Save User
+            window.DB.insert(window.DB_COLLECTIONS.USERS, {
+              email, password: 'Demo@123', role: 'Patient', linkedId: p.id
+            });
+
+            window.Toast.show("Patient registered successfully!", "success");
+            renderPatients();
+          }
+        });
+      };
+
+      // View patient consultation history popup
+      window.viewPatientHistory = (patId) => {
+        const patients = window.DB.get(window.DB_COLLECTIONS.PATIENTS);
+        const patient = patients.find(p => p.id === patId) || {};
+        
+        const appointments = window.DB.get(window.DB_COLLECTIONS.APPOINTMENTS);
+        const doctors = window.DB.get(window.DB_COLLECTIONS.DOCTORS);
+        
+        const patApts = appointments.filter(a => a.patientId === patId);
+        
+        let historyHtml = '';
+        if (patApts.length === 0) {
+          historyHtml = `<p style="color: var(--neutral-400); font-style: italic;">No appointments found for this patient.</p>`;
+        } else {
+          patApts.sort((a, b) => b.appointmentDate.localeCompare(a.appointmentDate));
+          historyHtml = `
+            <div class="table-container" style="max-height: 250px; overflow-y: auto;">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Date</th>
+                    <th>Doctor</th>
+                    <th>Reason</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  ${patApts.map(apt => {
+                    const doc = doctors.find(d => d.id === apt.doctorId) || {};
+                    return `
+                      <tr>
+                        <td>${apt.appointmentDate} (${apt.startTime})</td>
+                        <td><strong>${doc.fullName || 'Doctor'}</strong></td>
+                        <td>${apt.reason}</td>
+                        <td><span class="badge badge-completed" style="font-size: 10px;">${apt.status}</span></td>
+                      </tr>
+                    `;
+                  }).join('')}
+                </tbody>
+              </table>
+            </div>
+          `;
+        }
+
+        window.Modal.confirm({
+          title: `Consultation History: ${patient.fullName}`,
+          body: `
+            <div style="font-size: 13px; margin-bottom: 12px;">
+              <strong>Patient Info:</strong> ${patient.gender} | DOB: ${patient.dob} | Phone: ${patient.phone}
+            </div>
+            ${historyHtml}
+          `,
+          confirmText: "Close",
+          cancelText: "Done",
+          onConfirm: () => {}
+        });
+      };
+
+      // 3. BOOK ON BEHALF OF PATIENT (Clicked from slot viewer grid)
+      function openBookOnBehalfModal(slot) {
+        const patients = window.DB.get(window.DB_COLLECTIONS.PATIENTS);
+        const doctor = window.DB.getById(window.DB_COLLECTIONS.DOCTORS, slot.doctorId);
+        
+        const patientOptions = patients.map(p => `<option value="${p.id}">${p.fullName} (Ph: ${p.phone})</option>`).join('');
+
+        window.Modal.prompt({
+          title: `📅 Book Slot: ${slot.startTime} on behalf of...`,
+          bodyHtml: `
+            <p style="font-size: 12px; color: var(--neutral-400); margin-bottom: 8px;">Date: ${slot.slotDate} | Doctor: ${doctor.fullName}</p>
+            <div class="form-group">
+              <label class="form-label">Select Registered Patient</label>
+              <select class="form-control" name="patientId" required>
+                <option value="" disabled selected>Choose patient...</option>
+                ${patientOptions}
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Reason for Consultation</label>
+              <input class="form-control" type="text" name="reason" required placeholder="e.g. Regular Checkup">
+            </div>
+          `,
+          confirmText: "Schedule Booking",
+          onConfirm: (formData) => {
+            const patientId = formData.patientId;
+            const reason = formData.reason.trim();
+
+            if (!patientId || !reason) {
+              window.Toast.show("Please fill in all fields.", "error");
+              return false;
+            }
+
+            const res = window.APPOINTMENTS.book(
+              patientId, 
+              slot.doctorId, 
+              doctor.clinicId, 
+              slot.id, 
+              reason, 
+              'PAY_AT_CLINIC', 
+              'ONLINE' // book on-behalf is online schedule format
+            );
+
+            if (res.success) {
+              window.Toast.show("Appointment scheduled successfully!", "success");
+              renderDeskSlots();
+            } else {
+              window.Toast.show(res.error, "error");
+            }
+          }
+        });
+      }
+
+      // 4. WALK-IN FORM SUBMISSION
+      walkinBookingForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        const docId = walkinDoctor.value;
+        const patientId = walkinPatient.value;
+        const reason = document.getElementById('walkin-reason').value.trim();
+
+        if (!docId || !patientId || !reason) {
+          window.Toast.show("Please select doctor, patient, and reason.", "error");
+          return;
+        }
+
+        // Find next available slot for today
+        const allSlots = window.DB.get(window.DB_COLLECTIONS.DOCTOR_SLOTS);
+        
+        // Filter active available slots for this doctor today
+        const docTodaySlots = allSlots.filter(s => 
+          s.doctorId === docId && 
+          s.slotDate === todayStr && 
+          !s.isBooked && 
+          !s.isBlocked
+        );
+        docTodaySlots.sort((a, b) => a.startTime.localeCompare(b.startTime));
+
+        if (docTodaySlots.length === 0) {
+          window.Toast.show("No available slots left for this doctor today. Register booking manually or pick another doctor.", "error");
+          return;
+        }
+
+        // Lock the next available slot
+        const targetSlot = docTodaySlots[0];
+        const doctor = window.DB.getById(window.DB_COLLECTIONS.DOCTORS, docId);
+
+        const res = window.APPOINTMENTS.book(
+          patientId,
+          docId,
+          doctor.clinicId,
+          targetSlot.id,
+          reason,
+          'PAY_AT_CLINIC',
+          'WALK_IN'
+        );
+
+        if (res.success) {
+          window.Toast.show(`Walk-in booked! Assigned slot ${targetSlot.startTime}.`, "success");
+          walkinBookingForm.reset();
+          renderDeskSlots();
+        } else {
+          window.Toast.show(res.error, "error");
+        }
+      });
+
+      // Initial Renders
+      renderDeskSlots();
+      renderPatients();
+    });
+  </script>
+</body>
+</html>

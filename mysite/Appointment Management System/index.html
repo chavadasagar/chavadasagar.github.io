@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ClinicSys - Appointment Management System</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    /* Unique styling for landing page */
+    .landing-body {
+      background: radial-gradient(circle at 10% 20%, rgb(242, 246, 248) 0%, rgb(224, 238, 241) 90.1%);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .landing-header {
+      background: white;
+      border-bottom: 1px solid var(--neutral-200);
+      padding: var(--spacing-md) var(--spacing-xl);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: var(--shadow-sm);
+    }
+    .hero-section {
+      flex-grow: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: var(--spacing-xl);
+      max-width: 1200px;
+      margin: 0 auto;
+      width: 100%;
+    }
+    .hero-content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: var(--spacing-md);
+      max-width: 600px;
+    }
+    .hero-title {
+      font-size: 48px;
+      font-weight: 800;
+      color: var(--neutral-900);
+      line-height: 1.2;
+    }
+    .hero-title span {
+      color: var(--primary);
+    }
+    .hero-desc {
+      font-size: 18px;
+      color: var(--neutral-600);
+    }
+    .hero-cta {
+      display: flex;
+      gap: var(--spacing-md);
+      margin-top: var(--spacing-md);
+    }
+    .hero-image {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .hero-illustration {
+      font-size: 180px;
+      animation: pulse 4s infinite alternate;
+    }
+    @keyframes pulse {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(-15px); }
+    }
+    .specialty-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: var(--spacing-md);
+      margin-top: var(--spacing-xl);
+    }
+    .specialty-card {
+      background: white;
+      padding: var(--spacing-md);
+      border-radius: var(--radius-md);
+      text-align: center;
+      border: 1px solid var(--neutral-200);
+    }
+    .specialty-icon {
+      font-size: 32px;
+      margin-bottom: var(--spacing-sm);
+    }
+    .specialty-name {
+      font-weight: 600;
+    }
+    @media (max-width: 768px) {
+      .hero-section {
+        flex-direction: column;
+        text-align: center;
+      }
+      .hero-cta {
+        justify-content: center;
+      }
+      .hero-illustration {
+        font-size: 120px;
+        margin-top: var(--spacing-lg);
+      }
+      .hero-title {
+        font-size: 36px;
+      }
+    }
+  </style>
+</head>
+<body class="landing-body">
+
+  <header class="landing-header">
+    <div class="sidebar-brand" style="font-size: 22px;">
+      🩺 <span>Clinic</span>Sys
+    </div>
+    <div style="display: flex; gap: var(--spacing-sm);" id="nav-auth-buttons">
+      <!-- Loaded dynamically -->
+    </div>
+  </header>
+
+  <main class="hero-section">
+    <div class="hero-content">
+      <h1 class="hero-title">Your Health, <span>Simplified.</span></h1>
+      <p class="hero-desc">Book doctor appointments, view lab results, consult online, and manage your health records effortlessly from our modern clinic system.</p>
+      
+      <div class="hero-cta">
+        <button class="btn btn-primary" id="cta-find-doctor">Find a Doctor</button>
+        <button class="btn btn-secondary" id="cta-how-it-works">Learn More</button>
+      </div>
+
+      <div class="specialty-grid">
+        <div class="specialty-card">
+          <div class="specialty-icon">🩺</div>
+          <div class="specialty-name">General Medicine</div>
+        </div>
+        <div class="specialty-card">
+          <div class="specialty-icon">👶</div>
+          <div class="specialty-name">Pediatrics</div>
+        </div>
+        <div class="specialty-card">
+          <div class="specialty-icon">❤️</div>
+          <div class="specialty-name">Cardiology</div>
+        </div>
+        <div class="specialty-card">
+          <div class="specialty-icon">🧴</div>
+          <div class="specialty-name">Dermatology</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-image">
+      <div class="hero-illustration">🏥</div>
+    </div>
+  </main>
+
+  <script src="js/db.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/toast.js"></script>
+  <script src="js/modal.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const authButtons = document.getElementById('nav-auth-buttons');
+      const currentUser = window.AUTH.getCurrentUser();
+
+      // Dynamically display login/logout or dashboard button
+      if (currentUser) {
+        authButtons.innerHTML = `
+          <button class="btn btn-secondary" id="btn-dashboard">Dashboard</button>
+          <button class="btn btn-danger" id="btn-logout">Logout</button>
+        `;
+
+        document.getElementById('btn-dashboard').onclick = () => {
+          window.AUTH.redirectToDashboard(currentUser.role);
+        };
+        document.getElementById('btn-logout').onclick = () => {
+          window.AUTH.logout();
+        };
+
+        document.getElementById('cta-find-doctor').onclick = () => {
+          window.AUTH.redirectToDashboard(currentUser.role);
+        };
+      } else {
+        authButtons.innerHTML = `
+          <a href="login.html" class="btn btn-secondary">Login</a>
+          <a href="register.html" class="btn btn-primary">Register</a>
+        `;
+
+        document.getElementById('cta-find-doctor').onclick = () => {
+          window.location.href = 'login.html';
+        };
+      }
+
+      document.getElementById('cta-how-it-works').onclick = () => {
+        window.Toast.show("This is a demo system of ClinicSys. You can switch roles instantly in the login screen!", "info", 5000);
+      };
+
+      // Check if redirected with unauthorized warning
+      const params = new URLSearchParams(window.location.search);
+      if (params.get('error') === 'unauthorized') {
+        window.Toast.show("Access Denied: You do not have permissions to access that page.", "error", 4000);
+      }
+    });
+  </script>
+</body>
+</html>

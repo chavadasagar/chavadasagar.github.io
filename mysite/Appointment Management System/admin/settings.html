@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clinic Settings - ClinicSys</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Sidebar injected here -->
+
+    <main class="main-content">
+      <header style="margin-bottom: var(--spacing-lg);">
+        <h2>Clinic Settings</h2>
+        <p style="color: var(--neutral-400); font-size: 14px;">Configure appointment policies, default scheduling parameters, and databases.</p>
+      </header>
+
+      <div class="grid-cols-2">
+        <!-- Settings Form -->
+        <section class="card">
+          <h3 class="card-title">Policy & Scheduling Parameters</h3>
+          <form id="settings-form" style="margin-top: var(--spacing-md);">
+            <div class="form-group">
+              <label class="form-label" for="cancellation-window">Cancellation Lock Window (Hours)</label>
+              <input class="form-control" type="number" id="cancellation-window" min="0" max="72" required>
+              <span style="font-size: 11px; color: var(--neutral-400); margin-top: 4px; display: block;">Prevent patients from rescheduling or cancelling appointments online less than X hours before starting.</span>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="working-hours-start">Default Working Start</label>
+                <input class="form-control" type="time" id="working-hours-start" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="working-hours-end">Default Working End</label>
+                <input class="form-control" type="time" id="working-hours-end" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">System Timezone (Display Only)</label>
+              <input class="form-control" type="text" id="timezone-display" readonly>
+            </div>
+
+            <button class="btn btn-primary" type="submit" style="width: 100%; margin-top: var(--spacing-sm);">Save Settings</button>
+          </form>
+        </section>
+
+        <!-- Database Management Panel -->
+        <section class="card">
+          <h3 class="card-title" style="color: var(--status-cancelled);">Danger Zone</h3>
+          <p style="font-size: 13px; color: var(--neutral-600); margin-bottom: var(--spacing-md);">Perform database maintenance. Reseeding will delete all active appointments, reviews, custom schedules, and restore the original demo records.</p>
+          
+          <div style="background-color: var(--status-cancelled-bg); border: 1px solid #fca5a5; padding: var(--spacing-md); border-radius: var(--radius-md); display: flex; flex-direction: column; gap: var(--spacing-sm);">
+            <div style="font-size: 13px; font-weight: 600; color: var(--status-noshow);">Reset System Database</div>
+            <p style="font-size: 12px; color: var(--neutral-800); margin: 0;">This will completely wipe local storage and recreate default clinics, patients, specializations, and demo users.</p>
+            <button class="btn btn-danger" id="btn-reseed-db" style="margin-top: var(--spacing-xs); background-color: #ef4444; border-color: #ef4444; color: white;">Reseed Database</button>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <script src="../js/db.js"></script>
+  <script src="../js/auth.js"></script>
+  <script src="../js/toast.js"></script>
+  <script src="../js/modal.js"></script>
+  <script src="../js/navbar.js"></script>
+  <script>
+    // Role Guard
+    if (window.AUTH) {
+      window.AUTH.checkRole(['ClinicAdmin']);
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const form = document.getElementById('settings-form');
+      const windowInput = document.getElementById('cancellation-window');
+      const startInput = document.getElementById('working-hours-start');
+      const endInput = document.getElementById('working-hours-end');
+      const timezoneDisplay = document.getElementById('timezone-display');
+      const reseedBtn = document.getElementById('btn-reseed-db');
+
+      // Load Settings
+      const loadSettings = () => {
+        if (!window.DB) return;
+        const settings = window.DB.get(window.DB_COLLECTIONS.SETTINGS)[0] || {
+          cancellationWindowHours: 2,
+          defaultWorkingHoursStart: '09:00',
+          defaultWorkingHoursEnd: '17:00',
+          timezone: 'GMT-4'
+        };
+
+        windowInput.value = settings.cancellationWindowHours;
+        startInput.value = settings.defaultWorkingHoursStart;
+        endInput.value = settings.defaultWorkingHoursEnd;
+        timezoneDisplay.value = settings.timezone + ' (Eastern Standard Time)';
+      };
+
+      // Form Submit
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        const cancellationWindowHours = Number(windowInput.value);
+        const defaultWorkingHoursStart = startInput.value;
+        const defaultWorkingHoursEnd = endInput.value;
+
+        if (defaultWorkingHoursStart >= defaultWorkingHoursEnd) {
+          window.Toast.show("Start hours must be before End hours.", "error");
+          return;
+        }
+
+        // Save back to DB (Settings is stored as a single object inside array)
+        const updated = {
+          cancellationWindowHours,
+          defaultWorkingHoursStart,
+          defaultWorkingHoursEnd,
+          timezone: 'GMT-4'
+        };
+
+        window.DB.save(window.DB_COLLECTIONS.SETTINGS, [updated]);
+        window.Toast.show("Clinic settings saved successfully!", "success");
+      });
+
+      // Reseed Trigger
+      reseedBtn.onclick = () => {
+        window.Modal.confirm({
+          title: "Reset System Database?",
+          body: "Are you sure you want to reseed? All custom patients, appointments, schedules and reviews will be permanently deleted and original demo values loaded.",
+          confirmText: "Yes, Reseed DB",
+          onConfirm: () => {
+            window.DB.reseed();
+            window.Toast.show("Database reseeded successfully! Redirecting to login...", "success");
+            setTimeout(() => {
+              window.location.href = '../login.html';
+            }, 1000);
+          }
+        });
+      };
+
+      loadSettings();
+    });
+  </script>
+</body>
+</html>

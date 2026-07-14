@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - ClinicSys</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .login-container {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: var(--spacing-md);
+      background: radial-gradient(circle at 10% 20%, rgb(242, 246, 248) 0%, rgb(224, 238, 241) 90.1%);
+    }
+    .login-card {
+      width: 100%;
+      max-width: 440px;
+      background: white;
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-lg);
+      padding: var(--spacing-xl);
+      border: 1px solid var(--neutral-200);
+    }
+    .login-header {
+      text-align: center;
+      margin-bottom: var(--spacing-lg);
+    }
+    .login-brand {
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--neutral-900);
+      margin-bottom: var(--spacing-xs);
+    }
+    .login-brand span {
+      color: var(--primary);
+    }
+    .login-subtitle {
+      font-size: 14px;
+      color: var(--neutral-400);
+    }
+    .presets-container {
+      background-color: var(--neutral-50);
+      border: 1px solid var(--neutral-200);
+      border-radius: var(--radius-md);
+      padding: var(--spacing-sm) var(--spacing-md);
+      margin-bottom: var(--spacing-lg);
+    }
+    .presets-title {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--neutral-600);
+      margin-bottom: var(--spacing-xs);
+      text-align: center;
+    }
+    .presets-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 6px;
+    }
+    .preset-btn {
+      padding: 6px;
+      font-size: 11px;
+      text-align: center;
+      border: 1px solid var(--neutral-300);
+      background: white;
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      font-weight: 500;
+      transition: all 0.2s;
+    }
+    .preset-btn:hover {
+      border-color: var(--primary);
+      background-color: var(--primary-light);
+      color: var(--primary);
+    }
+  </style>
+</head>
+<body class="login-container">
+
+  <div class="login-card">
+    <div class="login-header">
+      <div class="login-brand">🩺 <span>Clinic</span>Sys</div>
+      <p class="login-subtitle">Sign in to manage your medical appointments</p>
+    </div>
+
+    <!-- Quick Presets -->
+    <div class="presets-container">
+      <div class="presets-title">⚡ QUICK DEMO LOGINS</div>
+      <div class="presets-grid">
+        <button class="preset-btn" data-email="patient@demo.com" data-role="Patient">Patient</button>
+        <button class="preset-btn" data-email="doctor@demo.com" data-role="Doctor">Doctor</button>
+        <button class="preset-btn" data-email="reception@demo.com" data-role="Receptionist">Receptionist</button>
+        <button class="preset-btn" data-email="admin@demo.com" data-role="ClinicAdmin">Clinic Admin</button>
+      </div>
+    </div>
+
+    <!-- Login Form -->
+    <form id="login-form">
+      <div class="form-group">
+        <label class="form-label" for="email">Email Address</label>
+        <input class="form-control" type="email" id="email" required placeholder="name@example.com">
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="password">Password</label>
+        <input class="form-control" type="password" id="password" required placeholder="••••••••">
+      </div>
+
+      <button class="btn btn-primary" type="submit" style="width: 100%; margin-top: var(--spacing-sm);">Sign In</button>
+    </form>
+
+    <div style="text-align: center; margin-top: var(--spacing-lg); font-size: 13px; color: var(--neutral-600);">
+      Don't have a patient account? <a href="register.html" style="font-weight: 600;">Register Here</a>
+    </div>
+  </div>
+
+  <script src="js/db.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/toast.js"></script>
+  <script src="js/modal.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const loginForm = document.getElementById('login-form');
+      const emailInput = document.getElementById('email');
+      const passwordInput = document.getElementById('password');
+      const presetButtons = document.querySelectorAll('.preset-btn');
+
+      // Wire up quick presets
+      presetButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const email = btn.getAttribute('data-email');
+          emailInput.value = email;
+          passwordInput.value = 'Demo@123';
+          window.Toast.show(`Autofilled ${btn.getAttribute('data-role')} credentials!`, "info");
+        });
+      });
+
+      // Handle login form submission
+      loginForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const email = emailInput.value.trim();
+        const password = passwordInput.value;
+
+        const result = window.AUTH.login(email, password);
+        if (result.success) {
+          window.Toast.show(`Welcome back, ${result.user.role}!`, "success");
+          
+          // Check for redirect URL
+          const params = new URLSearchParams(window.location.search);
+          const returnUrl = params.get('returnUrl');
+          
+          setTimeout(() => {
+            if (returnUrl) {
+              window.location.href = decodeURIComponent(returnUrl);
+            } else {
+              window.AUTH.redirectToDashboard(result.user.role);
+            }
+          }, 800);
+        } else {
+          window.Toast.show(result.error, "error");
+        }
+      });
+    });
+  </script>
+</body>
+</html>

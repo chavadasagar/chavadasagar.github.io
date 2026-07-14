@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doctor Profile - ClinicSys</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <style>
+    .profile-card {
+      display: flex;
+      gap: var(--spacing-lg);
+      align-items: flex-start;
+    }
+    @media (max-width: 768px) {
+      .profile-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="app-container">
+    <!-- Sidebar injected here -->
+
+    <main class="main-content">
+      <header style="margin-bottom: var(--spacing-lg); display: flex; align-items: center; gap: var(--spacing-sm);">
+        <button class="btn btn-secondary btn-sm" onclick="window.history.back()">⬅️ Back</button>
+        <h2>Doctor Profile & Slot Booking</h2>
+      </header>
+
+      <!-- Doctor Detail Card -->
+      <section class="card profile-card" id="doctor-info-card">
+        <!-- Loaded dynamically -->
+      </section>
+
+      <!-- Slot Selection Card -->
+      <section class="card">
+        <h3 class="card-title">Select Appointment Date & Time</h3>
+        <p style="font-size: 13px; color: var(--neutral-400); margin-bottom: var(--spacing-sm);">Select a date from the next 14 days to view available slots.</p>
+
+        <!-- Horizontal Date Scroller -->
+        <div class="date-scroller-container">
+          <button class="btn btn-secondary btn-sm" id="scroll-left">◀</button>
+          <div class="date-scroller" id="days-container">
+            <!-- Days loaded dynamically -->
+          </div>
+          <button class="btn btn-secondary btn-sm" id="scroll-right">▶</button>
+        </div>
+
+        <!-- Slots Display -->
+        <div id="slots-section">
+          <h4 class="slot-title" id="selected-date-label">Available Slots</h4>
+          <div class="slot-grid" id="slots-container">
+            <!-- Slots loaded dynamically -->
+          </div>
+          <div id="no-slots" class="empty-state" style="display: none; padding: 24px 0;">
+            <div class="empty-state-icon">😴</div>
+            <div class="empty-state-title">No slots available</div>
+            <div class="empty-state-desc">The doctor has no scheduled availability or is fully blocked on this day.</div>
+          </div>
+        </div>
+
+        <!-- Confirm Selection CTA -->
+        <div style="border-top: 1px solid var(--neutral-200); padding-top: var(--spacing-md); display: flex; justify-content: flex-end; align-items: center; gap: var(--spacing-md);">
+          <div id="selected-slot-summary" style="font-size: 14px; font-weight: 500; color: var(--neutral-600);"></div>
+          <button class="btn btn-primary" id="btn-proceed-booking" disabled>Confirm & Proceed</button>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="../js/db.js"></script>
+  <script src="../js/auth.js"></script>
+  <script src="../js/slots.js"></script>
+  <script src="../js/toast.js"></script>
+  <script src="../js/modal.js"></script>
+  <script src="../js/navbar.js"></script>
+  <script>
+    // Role Guard
+    if (window.AUTH) {
+      window.AUTH.checkRole(['Patient']);
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const params = new URLSearchParams(window.location.search);
+      const doctorId = params.get('id');
+
+      if (!doctorId || !window.DB) {
+        window.location.href = 'doctor-search.html';
+        return;
+      }
+
+      // 1. Fetch Doctor and generate slots ahead for next 30 days (ensures calendar is populated)
+      if (window.SLOTS) {
+        window.SLOTS.generateSlots(doctorId, 30);
+      }
+
+      const doctor = window.DB.getById(window.DB_COLLECTIONS.DOCTORS, doctorId);
+      if (!doctor) {
+        window.Toast.show("Doctor not found.", "error");
+        setTimeout(() => window.location.href = 'doctor-search.html', 1000);
+        return;
+      }
+
+      const specialization = window.DB.getById(window.DB_COLLECTIONS.SPECIALIZATIONS, doctor.specializationId);
+      const clinic = window.DB.getById(window.DB_COLLECTIONS.CLINICS, doctor.clinicId);
+
+      // Render Doctor Profile Details
+      const infoCard = document.getElementById('doctor-info-card');
+      const initials = doctor.fullName.split(' ').map(n => n[0]).join('').replace('Dr.', '').substring(0, 2).toUpperCase();
+      
+      infoCard.innerHTML = `
+        <div class="photo-placeholder" style="width: 100px; height: 100px; font-size: 36px;">${initials}</div>
+        <div style="flex-grow: 1;">
+          <h2 style="margin: 0; font-size: 22px;">${doctor.fullName}</h2>
+          <div style="display: flex; gap: 8px; margin-top: 4px; align-items: center; flex-wrap: wrap;">
+            <span class="badge badge-completed">${specialization ? specialization.name : 'General'}</span>
+            <span style="color: var(--neutral-400); font-size: 13px;">|</span>
+            <span style="font-size: 14px; font-weight: 500; color: var(--neutral-600);">⭐ ${doctor.rating} / 5.0 Rating</span>
+          </div>
+          
+          <div style="margin-top: var(--spacing-md); display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; font-size: 14px; color: var(--neutral-600);">
+            <div>🏫 <strong>Qualification:</strong> ${doctor.qualification}</div>
+            <div>💼 <strong>Experience:</strong> ${doctor.experienceYears} Years</div>
+            <div>🏥 <strong>Clinic:</strong> ${clinic ? clinic.name : 'Clinic'} (${clinic ? clinic.city : ''})</div>
+            <div>📍 <strong>Address:</strong> ${clinic ? clinic.address : ''}</div>
+          </div>
+        </div>
+        <div style="background-color: var(--neutral-50); border: 1px solid var(--neutral-200); padding: var(--spacing-md); border-radius: var(--radius-md); text-align: center; min-width: 150px;" class="card-mobile-full">
+          <span style="font-size: 12px; color: var(--neutral-400); text-transform: uppercase; font-weight: 600; display: block;">Fee</span>
+          <strong style="font-size: 24px; color: var(--neutral-900);">$${doctor.consultationFee}</strong>
+          <span style="font-size: 11px; color: var(--neutral-400); display: block; margin-top: 4px;">per slot (${doctor.avgSlotDurationMinutes} mins)</span>
+        </div>
+      `;
+
+      // 2. Generate Calendar list for the next 14 days
+      const daysContainer = document.getElementById('days-container');
+      const today = new Date();
+      let selectedDateStr = window.SLOTS.formatDate(today);
+
+      const daysOfWeekNames = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+
+      for (let i = 0; i < 14; i++) {
+        const targetDate = new Date();
+        targetDate.setDate(today.getDate() + i);
+        const dateStr = window.SLOTS.formatDate(targetDate);
+        const isToday = i === 0;
+
+        const dayNum = targetDate.getDate();
+        const dayName = daysOfWeekNames[targetDate.getDay()];
+
+        const dateItem = document.createElement('div');
+        dateItem.className = `date-item ${isToday ? 'active' : ''}`;
+        dateItem.setAttribute('data-date', dateStr);
+        dateItem.innerHTML = `
+          <div class="date-item-day">${dayName}</div>
+          <div class="date-item-num">${dayNum}</div>
+        `;
+
+        dateItem.onclick = () => {
+          const activeDate = daysContainer.querySelector('.date-item.active');
+          if (activeDate) activeDate.classList.remove('active');
+          dateItem.classList.add('active');
+          selectedDateStr = dateStr;
+          selectedSlotId = null;
+          document.getElementById('btn-proceed-booking').disabled = true;
+          document.getElementById('selected-slot-summary').textContent = '';
+          renderSlots();
+        };
+
+        daysContainer.appendChild(dateItem);
+      }
+
+      // Date scroller button navigation
+      document.getElementById('scroll-left').onclick = () => {
+        daysContainer.scrollBy({ left: -160, behavior: 'smooth' });
+      };
+      document.getElementById('scroll-right').onclick = () => {
+        daysContainer.scrollBy({ left: 160, behavior: 'smooth' });
+      };
+
+      // 3. Render Slots for selected doctor + selected date
+      let selectedSlotId = null;
+
+      const renderSlots = () => {
+        const slotsContainer = document.getElementById('slots-container');
+        const noSlotsEl = document.getElementById('no-slots');
+        slotsContainer.innerHTML = '';
+
+        // Read slots from localStorage
+        const allSlots = window.DB.get(window.DB_COLLECTIONS.DOCTOR_SLOTS);
+        
+        // Filter slots for this doctor and this date
+        const filteredSlots = allSlots.filter(s => s.doctorId === doctorId && s.slotDate === selectedDateStr);
+
+        // Sort by start time
+        filteredSlots.sort((a, b) => a.startTime.localeCompare(b.startTime));
+
+        const formattedDateLabel = new Date(selectedDateStr).toLocaleDateString(undefined, { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+        document.getElementById('selected-date-label').textContent = `Available slots for ${formattedDateLabel}`;
+
+        if (filteredSlots.length === 0) {
+          slotsContainer.style.display = 'none';
+          noSlotsEl.style.display = 'block';
+          return;
+        }
+
+        slotsContainer.style.display = 'grid';
+        noSlotsEl.style.display = 'none';
+
+        filteredSlots.forEach(slot => {
+          const slotCard = document.createElement('div');
+          
+          let stateClass = '';
+          if (slot.isBooked) stateClass = 'booked';
+          else if (slot.isBlocked) stateClass = 'blocked';
+          else if (slot.id === selectedSlotId) stateClass = 'selected';
+
+          slotCard.className = `slot-card ${stateClass}`;
+          
+          let displayLabel = slot.startTime;
+          if (slot.isBooked) displayLabel += ' (Booked)';
+          else if (slot.isBlocked) displayLabel += ' (Blocked)';
+
+          slotCard.textContent = displayLabel;
+
+          if (!slot.isBooked && !slot.isBlocked) {
+            slotCard.onclick = () => {
+              const activeSlot = slotsContainer.querySelector('.slot-card.selected');
+              if (activeSlot) activeSlot.classList.remove('selected');
+              
+              selectedSlotId = slot.id;
+              slotCard.classList.add('selected');
+              
+              // Enable proceed CTA
+              document.getElementById('btn-proceed-booking').disabled = false;
+              document.getElementById('selected-slot-summary').innerHTML = `Selected: <strong>${formattedDateLabel} at ${slot.startTime}</strong>`;
+            };
+          }
+
+          slotsContainer.appendChild(slotCard);
+        });
+      };
+
+      // Proceed booking handler
+      document.getElementById('btn-proceed-booking').onclick = () => {
+        if (!selectedSlotId) return;
+        window.location.href = `booking-confirmation.html?doctorId=${doctorId}&slotId=${selectedSlotId}`;
+      };
+
+      // Initial slots render for today
+      renderSlots();
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Appointments - ClinicSys</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Sidebar injected here -->
+
+    <main class="main-content">
+      <header style="margin-bottom: var(--spacing-lg); display: flex; justify-content: space-between; align-items: center;">
+        <div>
+          <h2>My Appointments</h2>
+          <p style="color: var(--neutral-400); font-size: 14px;">Track, manage, reschedule or review your consultations.</p>
+        </div>
+        <a href="doctor-search.html" class="btn btn-primary">➕ Book New Appointment</a>
+      </header>
+
+      <!-- Tabs Navigation -->
+      <nav class="tab-container">
+        <button class="tab-btn active" id="tab-upcoming">Upcoming</button>
+        <button class="tab-btn" id="tab-completed">Completed</button>
+        <button class="tab-btn" id="tab-cancelled">Cancelled & No-Shows</button>
+      </nav>
+
+      <!-- Appointments List Grid -->
+      <section style="display: flex; flex-direction: column; gap: var(--spacing-md);" id="appointments-list">
+        <!-- Loaded dynamically -->
+      </section>
+
+      <!-- Empty State -->
+      <div id="empty-state-view" class="empty-state" style="display: none;">
+        <div class="empty-state-icon">📅</div>
+        <div class="empty-state-title" id="empty-state-title">No appointments found</div>
+        <div class="empty-state-desc" id="empty-state-desc">You don't have any appointments in this category.</div>
+        <a href="doctor-search.html" class="btn btn-primary btn-sm" id="empty-state-cta">Book a Consultation</a>
+      </div>
+    </main>
+  </div>
+
+  <script src="../js/db.js"></script>
+  <script src="../js/auth.js"></script>
+  <script src="../js/toast.js"></script>
+  <script src="../js/modal.js"></script>
+  <script src="../js/navbar.js"></script>
+  <script>
+    // Role Guard
+    if (window.AUTH) {
+      window.AUTH.checkRole(['Patient']);
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const appointmentsList = document.getElementById('appointments-list');
+      const emptyStateView = document.getElementById('empty-state-view');
+      const emptyTitle = document.getElementById('empty-state-title');
+      const emptyDesc = document.getElementById('empty-state-desc');
+      const emptyCta = document.getElementById('empty-state-cta');
+
+      const tabUpcoming = document.getElementById('tab-upcoming');
+      const tabCompleted = document.getElementById('tab-completed');
+      const tabCancelled = document.getElementById('tab-cancelled');
+
+      let currentTab = 'upcoming'; // 'upcoming', 'completed', 'cancelled'
+
+      // Fetch patient session
+      const currentUser = window.AUTH.getCurrentUser();
+      if (!currentUser || !currentUser.linkedId) {
+        window.location.href = '../login.html';
+        return;
+      }
+
+      // Fetch data
+      const appointments = window.DB.get(window.DB_COLLECTIONS.APPOINTMENTS);
+      const doctors = window.DB.get(window.DB_COLLECTIONS.DOCTORS);
+      const clinics = window.DB.get(window.DB_COLLECTIONS.CLINICS);
+      const specializations = window.DB.get(window.DB_COLLECTIONS.SPECIALIZATIONS);
+
+      // Render appointments depending on currentTab
+      const renderAppointments = () => {
+        appointmentsList.innerHTML = '';
+        
+        // Filter patient appointments
+        let patientApts = appointments.filter(apt => apt.patientId === currentUser.linkedId);
+
+        // Filter by tab
+        if (currentTab === 'upcoming') {
+          patientApts = patientApts.filter(apt => ['PENDING', 'CONFIRMED', 'IN_PROGRESS', 'RESCHEDULED'].includes(apt.status));
+          // Sort soonest first
+          patientApts.sort((a, b) => new Date(`${a.appointmentDate}T${a.startTime}`) - new Date(`${b.appointmentDate}T${b.startTime}`));
+        } else if (currentTab === 'completed') {
+          patientApts = patientApts.filter(apt => apt.status === 'COMPLETED');
+          // Sort newest first
+          patientApts.sort((a, b) => new Date(`${b.appointmentDate}T${b.startTime}`) - new Date(`${a.appointmentDate}T${a.startTime}`));
+        } else {
+          patientApts = patientApts.filter(apt => ['CANCELLED', 'NO_SHOW'].includes(apt.status));
+          // Sort newest first
+          patientApts.sort((a, b) => new Date(`${b.appointmentDate}T${b.startTime}`) - new Date(`${a.appointmentDate}T${a.startTime}`));
+        }
+
+        if (patientApts.length === 0) {
+          appointmentsList.style.display = 'none';
+          emptyStateView.style.display = 'block';
+          
+          if (currentTab === 'upcoming') {
+            emptyTitle.textContent = "No upcoming appointments";
+            emptyDesc.textContent = "Schedule a visit with one of our healthcare professionals today.";
+            emptyCta.style.display = 'inline-flex';
+          } else if (currentTab === 'completed') {
+            emptyTitle.textContent = "No completed consultations";
+            emptyDesc.textContent = "Your past medical visit history will appear here once you complete a consultation.";
+            emptyCta.style.display = 'none';
+          } else {
+            emptyTitle.textContent = "No cancelled visits";
+            emptyDesc.textContent = "You don't have any cancelled or missed appointments.";
+            emptyCta.style.display = 'none';
+          }
+          return;
+        }
+
+        appointmentsList.style.display = 'flex';
+        emptyStateView.style.display = 'none';
+
+        patientApts.forEach(apt => {
+          const doc = doctors.find(d => d.id === apt.doctorId) || {};
+          const clinic = clinics.find(c => c.id === apt.clinicId) || {};
+          const spec = specializations.find(s => s.id === doc.specializationId) || {};
+
+          const formattedDate = new Date(apt.appointmentDate).toLocaleDateString(undefined, { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric' });
+          const initials = doc.fullName ? doc.fullName.split(' ').map(n => n[0]).join('').replace('Dr.', '').substring(0, 2).toUpperCase() : 'DR';
+
+          const card = document.createElement('div');
+          card.className = 'card';
+          card.style.margin = '0';
+          card.style.display = 'flex';
+          card.style.justifyContent = 'space-between';
+          card.style.alignItems = 'center';
+          card.style.gap = '16px';
+          card.style.flexWrap = 'wrap';
+
+          // Get badge class
+          let badgeClass = 'badge-pending';
+          if (apt.status === 'CONFIRMED') badgeClass = 'badge-confirmed';
+          if (apt.status === 'IN_PROGRESS') badgeClass = 'badge-inprogress';
+          if (apt.status === 'COMPLETED') badgeClass = 'badge-completed';
+          if (apt.status === 'CANCELLED') badgeClass = 'badge-cancelled';
+          if (apt.status === 'NO_SHOW') badgeClass = 'badge-noshow';
+          if (apt.status === 'RESCHEDULED') badgeClass = 'badge-rescheduled';
+
+          card.innerHTML = `
+            <div style="display: flex; gap: 16px; align-items: center; flex: 1; min-width: 250px;">
+              <div class="photo-placeholder" style="width: 52px; height: 52px; font-size: 20px;">${initials}</div>
+              <div>
+                <h3 style="margin: 0; font-size: 15px;">${doc.fullName || 'Doctor'}</h3>
+                <p style="font-size: 12px; color: var(--neutral-400); font-weight: 500;">${spec.name || 'General'} | ${clinic.name || 'Clinic'}</p>
+                <div style="display: flex; align-items: center; gap: 6px; margin-top: 4px;">
+                  <span class="badge ${badgeClass}">${apt.status}</span>
+                  <span style="font-size: 11px; color: var(--neutral-400);">Booked as ${apt.bookingType}</span>
+                </div>
+              </div>
+            </div>
+
+            <div style="display: flex; flex-direction: column; gap: 4px; min-width: 150px;">
+              <div style="font-size: 13px; font-weight: 600; color: var(--neutral-600);">🗓️ ${formattedDate}</div>
+              <div style="font-size: 13px; font-weight: 600; color: var(--primary);">🕒 ${apt.startTime} - ${apt.endTime}</div>
+            </div>
+
+            <div style="display: flex; align-items: center; gap: var(--spacing-sm);">
+              <a href="appointment-details.html?id=${apt.id}" class="btn btn-secondary btn-sm">View Details</a>
+            </div>
+          `;
+
+          appointmentsList.appendChild(card);
+        });
+      };
+
+      // Tab switcher clicks
+      const setTabActive = (activeTabBtn, tabName) => {
+        [tabUpcoming, tabCompleted, tabCancelled].forEach(btn => btn.classList.remove('active'));
+        activeTabBtn.classList.add('active');
+        currentTab = tabName;
+        renderAppointments();
+      };
+
+      tabUpcoming.onclick = () => setTabActive(tabUpcoming, 'upcoming');
+      tabCompleted.onclick = () => setTabActive(tabCompleted, 'completed');
+      tabCancelled.onclick = () => setTabActive(tabCancelled, 'cancelled');
+
+      // Initial Render
+      renderAppointments();
+    });
+  </script>
+</body>
+</html>

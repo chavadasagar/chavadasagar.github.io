@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doctor Dashboard - ClinicSys</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Sidebar injected here -->
+
+    <main class="main-content">
+      <header style="margin-bottom: var(--spacing-lg); display: flex; justify-content: space-between; align-items: center;">
+        <div>
+          <h2>Today's Patient Queue</h2>
+          <p id="today-date-label" style="color: var(--neutral-400); font-size: 14px; font-weight: 500;">Tuesday, July 14, 2026</p>
+        </div>
+      </header>
+
+      <!-- Stat Cards -->
+      <section class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-value" id="stat-total">0</div>
+          <div class="stat-label">Total Appointments</div>
+        </div>
+        <div class="stat-card" style="border-left: 4px solid var(--status-completed);">
+          <div class="stat-value" id="stat-completed" style="color: var(--status-completed);">0</div>
+          <div class="stat-label">Completed Today</div>
+        </div>
+        <div class="stat-card" style="border-left: 4px solid var(--status-noshow);">
+          <div class="stat-value" id="stat-noshow" style="color: var(--status-noshow);">0</div>
+          <div class="stat-label">No-Shows / Missed</div>
+        </div>
+      </section>
+
+      <!-- Queue List -->
+      <section class="card">
+        <h3 class="card-title">Schedule Queue</h3>
+        <div style="display: flex; flex-direction: column; gap: var(--spacing-md);" id="queue-container">
+          <!-- Loaded dynamically -->
+        </div>
+
+        <div id="empty-queue" class="empty-state" style="display: none;">
+          <div class="empty-state-icon">☕</div>
+          <div class="empty-state-title">No appointments scheduled for today</div>
+          <div class="empty-state-desc">You are free! Enjoy your break or update your availability settings.</div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="../js/db.js"></script>
+  <script src="../js/auth.js"></script>
+  <script src="../js/appointments.js"></script>
+  <script src="../js/toast.js"></script>
+  <script src="../js/modal.js"></script>
+  <script src="../js/navbar.js"></script>
+  <script>
+    // Role Guard
+    if (window.AUTH) {
+      window.AUTH.checkRole(['Doctor']);
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const queueContainer = document.getElementById('queue-container');
+      const emptyQueue = document.getElementById('empty-queue');
+      const todayDateLabel = document.getElementById('today-date-label');
+
+      // Stats
+      const statTotal = document.getElementById('stat-total');
+      const statCompleted = document.getElementById('stat-completed');
+      const statNoshow = document.getElementById('stat-noshow');
+
+      // Current Date Setup
+      const today = new Date();
+      const todayStr = today.toISOString().split('T')[0];
+      todayDateLabel.textContent = today.toLocaleDateString(undefined, { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+
+      // Fetch Session
+      const currentUser = window.AUTH.getCurrentUser();
+      if (!currentUser || !currentUser.linkedId) {
+        window.location.href = '../login.html';
+        return;
+      }
+      const doctorId = currentUser.linkedId;
+
+      const renderQueue = () => {
+        queueContainer.innerHTML = '';
+
+        const appointments = window.DB.get(window.DB_COLLECTIONS.APPOINTMENTS);
+        const patients = window.DB.get(window.DB_COLLECTIONS.PATIENTS);
+
+        // Filter: today's appointments for this doctor
+        const todayApts = appointments.filter(apt => apt.doctorId === doctorId && apt.appointmentDate === todayStr);
+
+        // Sort by start time
+        todayApts.sort((a, b) => a.startTime.localeCompare(b.startTime));
+
+        // Update stats
+        const total = todayApts.length;
+        const completed = todayApts.filter(a => a.status === 'COMPLETED').length;
+        const noshow = todayApts.filter(a => a.status === 'NO_SHOW').length;
+
+        statTotal.textContent = total;
+        statCompleted.textContent = completed;
+        statNoshow.textContent = noshow;
+
+        if (todayApts.length === 0) {
+          queueContainer.style.display = 'none';
+          emptyQueue.style.display = 'block';
+          return;
+        }
+
+        queueContainer.style.display = 'flex';
+        emptyQueue.style.display = 'none';
+
+        todayApts.forEach((apt, idx) => {
+          const patient = patients.find(p => p.id === apt.patientId) || {};
+          
+          // Calculate patient age
+          let ageStr = 'N/A';
+          if (patient.dob) {
+            const birthYear = new Date(patient.dob).getFullYear();
+            const currentYear = new Date().getFullYear();
+            ageStr = `${currentYear - birthYear} y/o`;
+          }
+
+          const card = document.createElement('div');
+          card.className = 'card';
+          card.style.margin = '0';
+          card.style.display = 'flex';
+          card.style.justifyContent = 'space-between';
+          card.style.alignItems = 'center';
+          card.style.flexWrap = 'wrap';
+          card.style.gap = '16px';
+          card.style.borderLeft = idx === 0 && apt.status === 'CONFIRMED' ? '4px solid var(--primary)' : '1px solid var(--neutral-200)';
+
+          // Badges
+          let badgeClass = 'badge-pending';
+          if (apt.status === 'CONFIRMED') badgeClass = 'badge-confirmed';
+          if (apt.status === 'IN_PROGRESS') badgeClass = 'badge-inprogress';
+          if (apt.status === 'COMPLETED') badgeClass = 'badge-completed';
+          if (apt.status === 'CANCELLED') badgeClass = 'badge-cancelled';
+          if (apt.status === 'NO_SHOW') badgeClass = 'badge-noshow';
+          if (apt.status === 'RESCHEDULED') badgeClass = 'badge-rescheduled';
+
+          // Actions builder
+          let actionBtnsHtml = '';
+          if (apt.status === 'CONFIRMED') {
+            actionBtnsHtml = `
+              <button class="btn btn-primary btn-sm" onclick="changeAptStatus('${apt.id}', 'IN_PROGRESS', 'Consultation started.')">▶ Start Consultation</button>
+              <button class="btn btn-danger btn-sm" onclick="changeAptStatus('${apt.id}', 'NO_SHOW', 'Patient did not arrive.')">Mark No-Show</button>
+            `;
+          } else if (apt.status === 'IN_PROGRESS') {
+            actionBtnsHtml = `
+              <button class="btn btn-completed btn-sm" style="background-color: var(--status-completed); border-color: var(--status-completed); color: white;" onclick="changeAptStatus('${apt.id}', 'COMPLETED', 'Finished treatment consultation.')">✅ Mark Completed</button>
+            `;
+          }
+
+          card.innerHTML = `
+            <div style="display: flex; align-items: center; gap: 16px; flex: 1; min-width: 250px;">
+              <div style="font-size: 14px; font-weight: 700; color: var(--primary); width: 80px;">${apt.startTime}</div>
+              <div>
+                <h3 style="margin: 0; font-size: 15px;">${patient.fullName || 'Patient'}</h3>
+                <p style="font-size: 12px; color: var(--neutral-400); font-weight: 500;">
+                  ${patient.gender || 'Other'} (${ageStr}) | Ph: ${patient.phone || '-'}
+                </p>
+                <div style="display: flex; gap: 8px; margin-top: 4px; align-items: center;">
+                  <span class="badge ${badgeClass}">${apt.status}</span>
+                  <span style="font-size: 11px; color: var(--neutral-400);">Reason: "${apt.reason}"</span>
+                </div>
+              </div>
+            </div>
+
+            <div style="display: flex; gap: var(--spacing-sm); align-items: center;">
+              ${actionBtnsHtml}
+            </div>
+          `;
+
+          queueContainer.appendChild(card);
+        });
+      };
+
+      // Status change trigger
+      window.changeAptStatus = (id, newStatus, remarks) => {
+        window.Modal.confirm({
+          title: `Change Status to ${newStatus}?`,
+          body: `Are you sure you want to transition this appointment's status to <strong>${newStatus}</strong>?`,
+          confirmText: "Update",
+          onConfirm: () => {
+            const res = window.APPOINTMENTS.changeStatus(id, newStatus, 'Doctor', remarks);
+            if (res.success) {
+              window.Toast.show(`Queue updated successfully!`, "success");
+              renderQueue();
+            } else {
+              window.Toast.show(res.error, "error");
+            }
+          }
+        });
+      };
+
+      // Render today's queue
+      renderQueue();
+    });
+  </script>
+</body>
+</html>
