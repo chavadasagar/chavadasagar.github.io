@@ -1,0 +1,11 @@
+{
+  "name": "stayease-hms",
+  "version": "1.0.0",
+  "description": "StayEase Hotel Management System",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx browser-sync start --server --files \"index.html, css/*.css, js/*.js\""
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}

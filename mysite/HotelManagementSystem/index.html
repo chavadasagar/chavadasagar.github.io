@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StayEase — Enterprise Hotel Management System</title>
+  
+  <!-- Premium Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Loading State (Fades out once main.js mounts) -->
+  <div id="app-loading-screen" class="loading-overlay">
+    <div class="spinner-box">
+      <div class="hms-spinner"></div>
+      <h2>StayEase HMS</h2>
+      <p>Initializing Hotel Database...</p>
+    </div>
+  </div>
+
+  <!-- Database & Utility Scripts -->
+  <script src="js/db.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/auth.js"></script>
+  
+  <!-- Module Controllers -->
+  <script src="js/dashboard.js"></script>
+  <script src="js/rooms.js"></script>
+  <script src="js/bookings.js"></script>
+  <script src="js/guests.js"></script>
+  <script src="js/billing.js"></script>
+  <script src="js/staff.js"></script>
+  <script src="js/services.js"></script>
+  <script src="js/housekeeping.js"></script>
+  <script src="js/inventory.js"></script>
+  <script src="js/maintenance.js"></script>
+  <script src="js/reviews.js"></script>
+  <script src="js/reports.js"></script>
+  <script src="js/settings.js"></script>
+  
+  <!-- SPA Router Coordinator -->
+  <script src="js/main.js"></script>
+  
+  <script>
+    // Fade out loading screen on script finish
+    window.addEventListener('load', () => {
+      const loader = document.getElementById('app-loading-screen');
+      if (loader) {
+        loader.style.opacity = '0';
+        setTimeout(() => loader.remove(), 400);
+      }
+    });
+  </script>
+</body>
+</html>
