@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AURA JEWELLERS — Showroom Management System</title>
+  
+  <!-- CDNs for visual icons & modern font -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+
+  <!-- ==================== LOGIN LAYOUT SHELL ==================== -->
+  <div id="login-layout" class="login-bg" style="display: none;">
+    <!-- Centered login card rendered dynamically by LoginModule -->
+  </div>
+
+  <!-- ==================== PRINCIPAL APPLICATION LAYOUT ==================== -->
+  <div id="app-layout" style="display: flex;">
+    
+    <!-- Collapsible Sidebar Navigation Panel -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <div class="sidebar-logo">
+          <i class="fa-solid fa-gem"></i>
+          <span>AURA JEWELLERS</span>
+        </div>
+        <button class="sidebar-toggle" onclick="toggleSidebar()"><i class="fa fa-bars"></i></button>
+      </div>
+      
+      <ul class="sidebar-menu">
+        <!-- 🏠 Dashboard -->
+        <li class="menu-item">
+          <a class="menu-link active" data-module="dashboard" href="#dashboard">
+            <i class="fa fa-home menu-icon"></i>
+            <span>Dashboard</span>
+          </a>
+        </li>
+        
+        <!-- 📦 Inventory Sub-Menu -->
+        <li class="menu-item">
+          <a class="menu-link" data-module="inventory" href="#inventory/products">
+            <i class="fa fa-box menu-icon"></i>
+            <span>Inventory</span>
+          </a>
+          <ul class="submenu">
+            <li><a class="submenu-link" data-submodule="inventory/products" href="#inventory/products">Products Directory</a></li>
+            <li><a class="submenu-link" data-submodule="inventory/stock-transfer" href="#inventory/stock-transfer">Stock Transfer</a></li>
+            <li><a class="submenu-link" data-submodule="inventory/stock-audit" href="#inventory/stock-audit">Stock Audit</a></li>
+          </ul>
+        </li>
+        
+        <!-- 👤 Customers CRM -->
+        <li class="menu-item">
+          <a class="menu-link" data-module="customers" href="#customers">
+            <i class="fa fa-users menu-icon"></i>
+            <span>Customers</span>
+          </a>
+        </li>
+        
+        <!-- 🏷️ Masters Sub-Menu -->
+        <li class="menu-item">
+          <a class="menu-link" data-module="masters" href="#masters/metals">
+            <i class="fa fa-tags menu-icon"></i>
+            <span>Masters Config</span>
+          </a>
+          <ul class="submenu">
+            <li><a class="submenu-link" data-submodule="masters/metals" href="#masters/metals">Metal Master</a></li>
+            <li><a class="submenu-link" data-submodule="masters/purities" href="#masters/purities">Purity Master</a></li>
+            <li><a class="submenu-link" data-submodule="masters/categories" href="#masters/categories">Category Master</a></li>
+            <li><a class="submenu-link" data-submodule="masters/stone-types" href="#masters/stone-types">Stone Types</a></li>
+            <li><a class="submenu-link" data-submodule="masters/rates" href="#masters/rates">Daily Metal Rates</a></li>
+            <li><a class="submenu-link" data-submodule="masters/huid" href="#masters/huid">Hallmark / HUID</a></li>
+            <li><a class="submenu-link" data-submodule="masters/gst" href="#masters/gst">GST Tax Master</a></li>
+            <li><a class="submenu-link" data-submodule="masters/branches" href="#masters/branches">Branch Master</a></li>
+          </ul>
+        </li>
+
+        <!-- 🏭 Suppliers & Karigar Sub-Menu -->
+        <li class="menu-item">
+          <a class="menu-link" data-module="suppliers" href="#suppliers/list">
+            <i class="fa fa-industry menu-icon"></i>
+            <span>Karigars & Suppliers</span>
+          </a>
+          <ul class="submenu">
+            <li><a class="submenu-link" data-submodule="suppliers/list" href="#suppliers/list">Supplier Directory</a></li>
+            <li><a class="submenu-link" data-submodule="suppliers/job-orders" href="#suppliers/job-orders">Job Orders</a></li>
+          </ul>
+        </li>
+
+        <!-- 💛 Gold Savings Schemes Sub-Menu -->
+        <li class="menu-item">
+          <a class="menu-link" data-module="schemes" href="#schemes/dashboard">
+            <i class="fa fa-piggy-bank menu-icon"></i>
+            <span>Gold Schemes</span>
+          </a>
+          <ul class="submenu">
+            <li><a class="submenu-link" data-submodule="schemes/dashboard" href="#schemes/dashboard">Scheme Account</a></li>
+            <li><a class="submenu-link" data-submodule="schemes/masters" href="#schemes/masters">Scheme Master</a></li>
+          </ul>
+        </li>
+
+        <!-- ♻️ Old Gold Exchange -->
+        <li class="menu-item">
+          <a class="menu-link" data-module="oldgold" href="#oldgold">
+            <i class="fa fa-scale-balanced menu-icon"></i>
+            <span>Old Gold Exchange</span>
+          </a>
+        </li>
+
+        <!-- 🧾 Sales POS & Billing Sub-Menu -->
+        <li class="menu-item">
+          <a class="menu-link" data-module="sales" href="#sales/new-invoice">
+            <i class="fa fa-file-invoice-dollar menu-icon"></i>
+            <span>Sales & POS</span>
+          </a>
+          <ul class="submenu">
+            <li><a class="submenu-link" data-submodule="sales/new-invoice" href="#sales/new-invoice">New Sale POS</a></li>
+            <li><a class="submenu-link" data-submodule="sales/invoice-list" href="#sales/invoice-list">Invoice List</a></li>
+            <li><a class="submenu-link" data-submodule="sales/sales-returns" href="#sales/sales-returns">Sales Return</a></li>
+          </ul>
+        </li>
+
+        <!-- 📋 Special Custom Orders Sub-Menu -->
+        <li class="menu-item">
+          <a class="menu-link" data-module="orders" href="#orders/approvals">
+            <i class="fa fa-clipboard-list menu-icon"></i>
+            <span>Special Orders</span>
+          </a>
+          <ul class="submenu">
+            <li><a class="submenu-link" data-submodule="orders/approvals" href="#orders/approvals">Trial Approvals</a></li>
+            <li><a class="submenu-link" data-submodule="orders/custom" href="#orders/custom">Custom Designs</a></li>
+          </ul>
+        </li>
+
+        <!-- 🔧 Repairs Tracker -->
+        <li class="menu-item">
+          <a class="menu-link" data-module="repairs" href="#repairs">
+            <i class="fa fa-screwdriver-wrench menu-icon"></i>
+            <span>Repairs & Service</span>
+          </a>
+        </li>
+
+        <!-- 📊 Business Analytics Reports -->
+        <li class="menu-item">
+          <a class="menu-link" data-module="reports" href="#reports">
+            <i class="fa fa-chart-pie menu-icon"></i>
+            <span>Reports Ledger</span>
+          </a>
+        </li>
+
+        <!-- ⚙️ Admin Settings -->
+        <li class="menu-item">
+          <a class="menu-link" data-module="settings" href="#settings">
+            <i class="fa fa-gears menu-icon"></i>
+            <span>Admin Settings</span>
+          </a>
+        </li>
+      </ul>
+    </aside>
+
+    <!-- Content Pane -->
+    <div class="main-container">
+      
+      <!-- Top header bar containing stats, search box, profile details and logs -->
+      <header class="top-header">
+        <div class="header-left">
+          <button class="btn btn-secondary btn-icon" onclick="toggleSidebar()"><i class="fa fa-bars"></i></button>
+          <div class="header-search">
+            <i class="fa fa-search"></i>
+            <input type="text" id="global-search-input" placeholder="Quick Search (Ctrl + K)..." readonly />
+          </div>
+        </div>
+
+        <div class="header-right">
+          <!-- Digital Clock -->
+          <div id="header-clock" style="font-size: 0.8rem; font-weight: 500; color: var(--text-muted);"></div>
+
+          <!-- Notification Bell icon dropdown button -->
+          <button class="header-icon-btn" id="bell-btn" type="button">
+            <i class="fa fa-bell"></i>
+            <span class="badge-dot" id="notif-badge" style="display: none;"></span>
+          </button>
+          
+          <!-- Alerts List Panel Dropdown -->
+          <div class="notif-dropdown" id="notif-dropdown">
+            <div class="notif-header">
+              <span>System Alerts</span>
+              <span class="text-accent"><i class="fa fa-circle-check"></i></span>
+            </div>
+            <div class="notif-list" id="notif-list">
+              <!-- Loaded dynamically by UI notifications panel -->
+            </div>
+          </div>
+
+          <!-- Vertical Separator -->
+          <div style="width: 1px; height: 24px; background: var(--border);"></div>
+
+          <!-- Current User Profile summary -->
+          <div class="user-badge">
+            <div class="user-avatar" id="header-avatar">SA</div>
+            <div class="user-info">
+              <div class="username" id="header-username">SUPER ADMIN</div>
+              <div class="role" id="header-role">Admin</div>
+            </div>
+          </div>
+
+          <!-- Logout Button -->
+          <button class="header-icon-btn" onclick="Auth.logout()" title="Logout System"><i class="fa-solid fa-right-from-bracket" style="color:var(--danger)"></i></button>
+        </div>
+      </header>
+
+      <!-- Breadcrumbs navigation panel -->
+      <nav class="breadcrumb-bar" id="breadcrumb-list">
+        <a href="#dashboard"><i class="fa fa-home"></i> Home</a>
+        <span class="breadcrumb-separator">/</span>
+        <span>Dashboard</span>
+      </nav>
+
+      <!-- Main viewport panel -->
+      <main class="main-content" id="main-content">
+        <!-- Dyn-loaded content goes here -->
+      </main>
+      
+    </div>
+  </div>
+
+  <!-- ==================== GENERIC SYSTEM MODAL OVERLAY ==================== -->
+  <div class="modal-overlay" id="global-modal">
+    <div class="modal-content-wrapper">
+      <div class="modal-header">
+        <h3 class="modal-title">Modal Title</h3>
+        <button class="modal-close-btn" onclick="UI.closeModal()"><i class="fa fa-times"></i></button>
+      </div>
+      <div class="modal-body">
+        <!-- Render form contents dynamically here -->
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" onclick="UI.closeModal()">Close</button>
+        <button class="btn btn-accent">Submit</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== TOAST MESSAGES PANEL CONTAINER ==================== -->
+  <div id="toast-container"></div>
+
+  <!-- ==================== SCREEN LOADER OVERLAY ==================== -->
+  <div id="loading-spinner">
+    <div class="spinner"></div>
+  </div>
+
+  <!-- JavaScript Applications scripts source -->
+  <script src="database.js"></script>
+  <script src="modules_part1.js"></script>
+  <script src="modules_part2.js"></script>
+  <script src="app.js"></script>
+
+</body>
+</html>
