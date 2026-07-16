@@ -146,11 +146,41 @@
     background: #0a1520;
     border: 1px solid var(--border);
     border-radius: 8px;
-    padding: 10px 12px;
+    padding: 10px 85px 10px 12px;
     margin-bottom: 14px;
     word-break: break-word;
+    position: relative;
   }
   .subject-line span { color: var(--muted); display: block; font-size: 10px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px; }
+
+  .copy-sub-btn {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--muted);
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 11px;
+    cursor: pointer;
+    font-family: var(--mono);
+    transition: all 0.2s ease;
+  }
+  .copy-sub-btn:hover {
+    border-color: var(--teal);
+    color: var(--teal);
+    background: #0d2534;
+  }
+  .copy-sub-btn:active {
+    transform: translateY(-50%) scale(0.95);
+  }
+  .copy-sub-btn.copied {
+    background: var(--teal);
+    border-color: var(--teal);
+    color: var(--navy);
+  }
 
   .body-preview {
     background: #0a1520;
@@ -212,12 +242,13 @@
     <div class="card">
       <div class="preview-head">
         <h2 id="previewTitle" style="margin:0;">Preview — Initial Email</h2>
-        <button class="copy-btn" id="copyBtn" onclick="copyEmail()">Copy Email</button>
+        <button class="copy-btn" id="copyBtn" onclick="copyEmail()">Copy Body</button>
       </div>
 
       <div class="subject-line">
         <span>Subject</span>
         <span id="subjectOut"></span>
+        <button class="copy-sub-btn" id="copySubBtn" onclick="copySubject()">Copy</button>
       </div>
 
       <div class="body-preview" id="bodyOut"></div>
@@ -316,19 +347,35 @@ function render() {
   const { subject, body } = activeTab === 'initial' ? buildInitial() : buildFollowup();
   document.getElementById('subjectOut').textContent = subject;
   document.getElementById('bodyOut').textContent = body;
-  document.getElementById('copyBtn').classList.remove('copied');
-  document.getElementById('copyBtn').textContent = 'Copy Email';
+  
+  const copyBtn = document.getElementById('copyBtn');
+  copyBtn.classList.remove('copied');
+  copyBtn.textContent = 'Copy Body';
+
+  const copySubBtn = document.getElementById('copySubBtn');
+  if (copySubBtn) {
+    copySubBtn.classList.remove('copied');
+    copySubBtn.textContent = 'Copy';
+  }
 }
 
 function copyEmail() {
-  const subject = document.getElementById('subjectOut').textContent;
   const body = document.getElementById('bodyOut').textContent;
-  const full = `Subject: ${subject}\n\n${body}`;
-  navigator.clipboard.writeText(full).then(() => {
+  navigator.clipboard.writeText(body).then(() => {
     const btn = document.getElementById('copyBtn');
     btn.textContent = 'Copied ✓';
     btn.classList.add('copied');
-    setTimeout(() => { btn.textContent = 'Copy Email'; btn.classList.remove('copied'); }, 1800);
+    setTimeout(() => { btn.textContent = 'Copy Body'; btn.classList.remove('copied'); }, 1800);
+  });
+}
+
+function copySubject() {
+  const subject = document.getElementById('subjectOut').textContent;
+  navigator.clipboard.writeText(subject).then(() => {
+    const btn = document.getElementById('copySubBtn');
+    btn.textContent = 'Copied ✓';
+    btn.classList.add('copied');
+    setTimeout(() => { btn.textContent = 'Copy'; btn.classList.remove('copied'); }, 1800);
   });
 }
 
