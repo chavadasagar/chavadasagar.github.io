@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sagar Chavda — HR Outreach Generator</title>
+<style>
+  :root {
+    --navy: #0b1622;
+    --navy-2: #0f1e2e;
+    --panel: #12233696;
+    --teal: #2de2c4;
+    --teal-dim: #1ba38b;
+    --text: #e8f1f2;
+    --muted: #8fa3ad;
+    --border: #1e3446;
+    --mono: 'JetBrains Mono', 'Consolas', monospace;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background: radial-gradient(circle at 20% -10%, #133248 0%, var(--navy) 55%);
+    color: var(--text);
+    min-height: 100vh;
+    padding: 32px 16px 64px;
+  }
+  .wrap { max-width: 980px; margin: 0 auto; }
+
+  header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 28px;
+  }
+  .mark {
+    width: 44px; height: 44px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, var(--teal), var(--teal-dim));
+    display: flex; align-items: center; justify-content: center;
+    font-family: var(--mono);
+    font-weight: 700;
+    color: var(--navy);
+    font-size: 18px;
+    flex-shrink: 0;
+  }
+  header h1 { font-size: 19px; margin: 0; letter-spacing: 0.2px; }
+  header p { margin: 2px 0 0; color: var(--muted); font-size: 13px; }
+
+  .tabs {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--border);
+  }
+  .tab {
+    padding: 10px 18px;
+    background: none;
+    border: none;
+    color: var(--muted);
+    font-size: 14px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    font-family: var(--mono);
+  }
+  .tab.active {
+    color: var(--teal);
+    border-bottom: 2px solid var(--teal);
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 340px 1fr;
+    gap: 20px;
+  }
+  @media (max-width: 780px) {
+    .grid { grid-template-columns: 1fr; }
+  }
+
+  .card {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 20px;
+    backdrop-filter: blur(6px);
+  }
+  .card h2 {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: var(--teal);
+    margin: 0 0 16px;
+    font-family: var(--mono);
+  }
+  label {
+    display: block;
+    font-size: 12.5px;
+    color: var(--muted);
+    margin-bottom: 6px;
+    margin-top: 14px;
+  }
+  label:first-of-type { margin-top: 0; }
+  input, select {
+    width: 100%;
+    padding: 10px 12px;
+    background: #0a1520;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    color: var(--text);
+    font-size: 14px;
+    outline: none;
+  }
+  input:focus, select:focus { border-color: var(--teal); }
+  input::placeholder { color: #4a6272; }
+
+  .hint {
+    font-size: 11px;
+    color: #5c7484;
+    margin-top: 5px;
+  }
+
+  .preview-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  .copy-btn {
+    background: var(--teal);
+    color: var(--navy);
+    border: none;
+    padding: 9px 16px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 13px;
+    cursor: pointer;
+    font-family: var(--mono);
+    transition: transform 0.1s ease;
+  }
+  .copy-btn:active { transform: scale(0.96); }
+  .copy-btn.copied { background: #7dffc0; }
+
+  .subject-line {
+    font-family: var(--mono);
+    font-size: 13px;
+    color: var(--teal);
+    background: #0a1520;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 10px 12px;
+    margin-bottom: 14px;
+    word-break: break-word;
+  }
+  .subject-line span { color: var(--muted); display: block; font-size: 10px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px; }
+
+  .body-preview {
+    background: #0a1520;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 18px;
+    font-size: 14px;
+    line-height: 1.7;
+    white-space: pre-wrap;
+    color: #d7e4e7;
+    min-height: 300px;
+  }
+  .missing { color: #ff9d7a; font-weight: 600; }
+
+  footer {
+    text-align: center;
+    color: var(--muted);
+    font-size: 12px;
+    margin-top: 28px;
+    font-family: var(--mono);
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="mark">SC</div>
+    <div>
+      <h1>HR Outreach Generator</h1>
+      <p>Fill placeholders once → get ready-to-send Initial + Follow-up emails</p>
+    </div>
+  </header>
+
+  <div class="tabs">
+    <button class="tab active" data-tab="initial">Initial Email</button>
+    <button class="tab" data-tab="followup">Follow-up Email</button>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <h2>Placeholders</h2>
+
+      <label>Company Name *</label>
+      <input id="company" placeholder="e.g. Zycus" oninput="render()">
+
+      <label>Job Title *</label>
+      <input id="jobtitle" placeholder="e.g. .NET Developer" value=".NET Developer" oninput="render()">
+
+      <label>Hiring Manager / Team Name</label>
+      <input id="hrname" placeholder="e.g. Riya (leave blank if unknown)" oninput="render()">
+      <div class="hint">Blank → "Hiring Team" use hoga</div>
+
+      <label>Days Since Initial Email (for follow-up)</label>
+      <input id="days" type="number" value="4" min="1" oninput="render()">
+
+    </div>
+
+    <div class="card">
+      <div class="preview-head">
+        <h2 id="previewTitle" style="margin:0;">Preview — Initial Email</h2>
+        <button class="copy-btn" id="copyBtn" onclick="copyEmail()">Copy Email</button>
+      </div>
+
+      <div class="subject-line">
+        <span>Subject</span>
+        <span id="subjectOut"></span>
+      </div>
+
+      <div class="body-preview" id="bodyOut"></div>
+    </div>
+  </div>
+
+  <footer>Sagar P. Chavda &nbsp;·&nbsp; .NET Developer &nbsp;·&nbsp; sagarchavada80@gmail.com &nbsp;·&nbsp; +91 8200123173</footer>
+</div>
+
+<script>
+let activeTab = 'initial';
+
+document.querySelectorAll('.tab').forEach(t => {
+  t.addEventListener('click', () => {
+    document.querySelectorAll('.tab').forEach(x => x.classList.remove('active'));
+    t.classList.add('active');
+    activeTab = t.dataset.tab;
+    document.getElementById('previewTitle').textContent =
+      activeTab === 'initial' ? 'Preview — Initial Email' : 'Preview — Follow-up Email';
+    render();
+  });
+});
+
+function val(id, fallback) {
+  const v = document.getElementById(id).value.trim();
+  return v.length ? v : fallback;
+}
+
+function buildInitial() {
+  const company = val('company', '[Company Name]');
+  const jobtitle = val('jobtitle', '.NET Developer');
+  const hr = val('hrname', 'Hiring Team');
+
+  const subject = `.NET Developer (4 Yrs Exp) — Immediate Joiner | Application for ${company}`;
+
+  const body =
+`Hi ${hr},
+
+I'm Sagar Chavda, a .NET Developer with 4 years of experience building scalable backend systems using ASP.NET Core, Web API, SQL Server, and PostgreSQL. I came across the ${jobtitle} opening at ${company} and wanted to share my profile — I'm an immediate joiner.
+
+A quick snapshot of my experience:
+- Designed and developed REST APIs and role-based access control (RBAC) systems for multi-tenant applications
+- Worked extensively with Clean Architecture, CQRS, and Dapper/EF Core for high-performance data access
+- Built and maintained production systems at Casepoint Pvt. Ltd. (eDiscovery platform), along with prior experience at Metizsoft Solutions and Shine Infosoft
+
+I'd love the opportunity to discuss how I can contribute to your team. My resume is attached below for your review, and I'm available for a call at your convenience.
+
+Portfolio: https://chavadasagar.github.io/mysite/portfolio
+
+Thanks & Regards,
+Sagar P. Chavda
+.NET Developer
+📞 +91 8200123173
+📧 sagarchavada80@gmail.com
+🔗 LinkedIn: https://linkedin.com/in/sagarchavada
+
+(Resume attached as PDF)`;
+
+  return { subject, body };
+}
+
+function buildFollowup() {
+  const company = val('company', '[Company Name]');
+  const jobtitle = val('jobtitle', '.NET Developer');
+  const hr = val('hrname', 'Hiring Team');
+  const days = val('days', '4');
+
+  const subject = `Following up — ${jobtitle} Application at ${company}`;
+
+  const body =
+`Hi ${hr},
+
+I hope you're doing well. I wanted to briefly follow up on my application for the ${jobtitle} role at ${company}, which I sent about ${days} days ago.
+
+I understand hiring timelines can be busy, so just wanted to re-share my profile in case it got buried:
+
+- 4 years of experience in ASP.NET Core, Web API, SQL Server, and PostgreSQL
+- Hands-on with Clean Architecture, CQRS, RBAC systems, and multi-tenant applications
+- Immediate joiner, available to start right away
+
+I'm still very interested in this opportunity and would welcome a chance to speak further. Happy to resend my resume if needed.
+
+Portfolio: https://chavadasagar.github.io/mysite/portfolio
+
+Thanks & Regards,
+Sagar P. Chavda
+.NET Developer
+📞 +91 8200123173
+📧 sagarchavada80@gmail.com
+🔗 LinkedIn: https://linkedin.com/in/sagarchavada`;
+
+  return { subject, body };
+}
+
+function render() {
+  const { subject, body } = activeTab === 'initial' ? buildInitial() : buildFollowup();
+  document.getElementById('subjectOut').textContent = subject;
+  document.getElementById('bodyOut').textContent = body;
+  document.getElementById('copyBtn').classList.remove('copied');
+  document.getElementById('copyBtn').textContent = 'Copy Email';
+}
+
+function copyEmail() {
+  const subject = document.getElementById('subjectOut').textContent;
+  const body = document.getElementById('bodyOut').textContent;
+  const full = `Subject: ${subject}\n\n${body}`;
+  navigator.clipboard.writeText(full).then(() => {
+    const btn = document.getElementById('copyBtn');
+    btn.textContent = 'Copied ✓';
+    btn.classList.add('copied');
+    setTimeout(() => { btn.textContent = 'Copy Email'; btn.classList.remove('copied'); }, 1800);
+  });
+}
+
+render();
+</script>
+</body>
+</html>
