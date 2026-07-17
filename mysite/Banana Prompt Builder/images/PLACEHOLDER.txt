@@ -1,0 +1,3 @@
+This directory will hold all your reference images generated using the prompts in image_generation_brief.md.
+
+Save your generated files directly here (e.g. age_teen.jpg, hair_straight.jpg, etc.) and they will render in the web application instantly!
