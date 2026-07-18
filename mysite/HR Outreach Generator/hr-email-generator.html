@@ -123,6 +123,8 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 16px;
+    flex-wrap: wrap;
+    gap: 12px;
   }
   .copy-btn {
     background: var(--teal);
@@ -212,6 +214,15 @@
     color: var(--muted);
     border-color: var(--border);
   }
+  .btn-gmail {
+    background: #ea4335;
+    color: #fff;
+    border: none;
+  }
+  .btn-gmail:hover {
+    background: #d13022;
+    color: #fff;
+  }
 
   .body-preview {
     background: #0a1520;
@@ -272,9 +283,19 @@
       <label>Days Since Initial Email (for follow-up)</label>
       <input id="days" type="number" value="4" min="1" oninput="render()">
 
-      <button class="send-btn disabled" id="sidebarSendBtn" onclick="sendEmail()" style="width: 100%; margin-top: 20px;">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: inline-block; vertical-align: middle;"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
-        <span>Send Email</span>
+      <button class="send-btn disabled btn-gmail" id="sidebarGmailBtn" onclick="sendViaGmail()" style="width: 100%; margin-top: 20px;">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style="display: inline-block; vertical-align: middle; margin-right: 6px;">
+          <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+        </svg>
+        <span>Send via Gmail</span>
+      </button>
+      
+      <button class="send-btn disabled" id="sidebarCopySheetBtn" onclick="copySheetInfo()" style="width: 100%; margin-top: 10px; background: #1b2f3f; color: var(--text); border-color: var(--border);">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: inline-block; vertical-align: middle; margin-right: 6px;">
+          <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+          <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+        </svg>
+        <span>Copy for Sheets</span>
       </button>
     </div>
 
@@ -283,9 +304,18 @@
         <h2 id="previewTitle" style="margin:0;">Preview — Initial Email</h2>
         <div style="display: flex; gap: 8px;">
           <button class="copy-btn" id="copyBtn" onclick="copyEmail()">Copy Body</button>
-          <button class="send-btn disabled" id="headerSendBtn" onclick="sendEmail()">
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: inline-block; vertical-align: middle; margin-right: 4px;"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
-            Send Email
+          <button class="send-btn disabled btn-gmail" id="headerGmailBtn" onclick="sendViaGmail()">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" style="display: inline-block; vertical-align: middle; margin-right: 4px;">
+              <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+            </svg>
+            Send via Gmail
+          </button>
+          <button class="send-btn disabled" id="headerCopySheetBtn" onclick="copySheetInfo()" style="background: #1b2f3f; color: var(--text); border-color: var(--border);">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: inline-block; vertical-align: middle; margin-right: 4px;">
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+            </svg>
+            Copy Log
           </button>
         </div>
       </div>
@@ -323,8 +353,10 @@ function handleEmailInput() {
   const companyInput = document.getElementById('company');
   const currentCompany = companyInput.value.trim();
   
-  const sidebarSendBtn = document.getElementById('sidebarSendBtn');
-  const headerSendBtn = document.getElementById('headerSendBtn');
+  const sidebarGmailBtn = document.getElementById('sidebarGmailBtn');
+  const headerGmailBtn = document.getElementById('headerGmailBtn');
+  const sidebarCopySheetBtn = document.getElementById('sidebarCopySheetBtn');
+  const headerCopySheetBtn = document.getElementById('headerCopySheetBtn');
   
   if (email) {
     const extracted = extractCompanyName(email);
@@ -334,11 +366,15 @@ function handleEmailInput() {
         lastExtractedCompany = extracted;
       }
     }
-    sidebarSendBtn.classList.remove('disabled');
-    headerSendBtn.classList.remove('disabled');
+    sidebarGmailBtn.classList.remove('disabled');
+    headerGmailBtn.classList.remove('disabled');
+    sidebarCopySheetBtn.classList.remove('disabled');
+    headerCopySheetBtn.classList.remove('disabled');
   } else {
-    sidebarSendBtn.classList.add('disabled');
-    headerSendBtn.classList.add('disabled');
+    sidebarGmailBtn.classList.add('disabled');
+    headerGmailBtn.classList.add('disabled');
+    sidebarCopySheetBtn.classList.add('disabled');
+    headerCopySheetBtn.classList.add('disabled');
   }
   render();
 }
@@ -363,12 +399,42 @@ function extractCompanyName(email) {
     .join(' ');
 }
 
-function sendEmail() {
+function sendViaGmail() {
   const email = document.getElementById('email').value.trim();
   if (!email) return;
   const { subject, body } = activeTab === 'initial' ? buildInitial() : buildFollowup();
-  const mailtoUrl = `mailto:${encodeURIComponent(email)}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-  window.location.href = mailtoUrl;
+  const formattedBody = body.replace(/\r?\n/g, '\r\n');
+  const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(email)}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(formattedBody)}`;
+  window.open(gmailUrl, '_blank');
+}
+
+function copySheetInfo() {
+  const company = document.getElementById('company').value.trim() || '[Company Name]';
+  const email = document.getElementById('email').value.trim();
+  if (!email) return;
+  
+  const textToCopy = `${company}\t${email}\t\tEmail send`;
+  
+  navigator.clipboard.writeText(textToCopy).then(() => {
+    const sidebarBtn = document.getElementById('sidebarCopySheetBtn');
+    const headerBtn = document.getElementById('headerCopySheetBtn');
+    
+    const prevSidebarText = sidebarBtn.innerHTML;
+    const prevHeaderText = headerBtn.innerHTML;
+    
+    sidebarBtn.innerHTML = 'Copied ✓';
+    headerBtn.innerHTML = 'Copied ✓';
+    
+    sidebarBtn.classList.add('copied');
+    headerBtn.classList.add('copied');
+    
+    setTimeout(() => {
+      sidebarBtn.innerHTML = prevSidebarText;
+      headerBtn.innerHTML = prevHeaderText;
+      sidebarBtn.classList.remove('copied');
+      headerBtn.classList.remove('copied');
+    }, 1800);
+  });
 }
 
 function val(id, fallback) {
@@ -458,14 +524,20 @@ function render() {
   }
 
   const email = document.getElementById('email').value.trim();
-  const sidebarSendBtn = document.getElementById('sidebarSendBtn');
-  const headerSendBtn = document.getElementById('headerSendBtn');
+  const sidebarGmailBtn = document.getElementById('sidebarGmailBtn');
+  const headerGmailBtn = document.getElementById('headerGmailBtn');
+  const sidebarCopySheetBtn = document.getElementById('sidebarCopySheetBtn');
+  const headerCopySheetBtn = document.getElementById('headerCopySheetBtn');
   if (email) {
-    sidebarSendBtn.classList.remove('disabled');
-    headerSendBtn.classList.remove('disabled');
+    sidebarGmailBtn.classList.remove('disabled');
+    headerGmailBtn.classList.remove('disabled');
+    sidebarCopySheetBtn.classList.remove('disabled');
+    headerCopySheetBtn.classList.remove('disabled');
   } else {
-    sidebarSendBtn.classList.add('disabled');
-    headerSendBtn.classList.add('disabled');
+    sidebarGmailBtn.classList.add('disabled');
+    headerGmailBtn.classList.add('disabled');
+    sidebarCopySheetBtn.classList.add('disabled');
+    headerCopySheetBtn.classList.add('disabled');
   }
 }
 
