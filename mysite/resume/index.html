@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sagar Chavda — Software Engineer, .NET</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg: #0D1117;
+    --panel: #12181F;
+    --panel-border: #212B36;
+    --text: #E6EAF0;
+    --muted: #7C8797;
+    --ok: #3FB950;
+    --ok-dim: #1A3A24;
+    --amber: #D4A24C;
+    --mono: 'JetBrains Mono', monospace;
+    --display: 'Space Grotesk', sans-serif;
+  }
+
+  *{box-sizing:border-box; margin:0; padding:0;}
+
+  body{
+    background:var(--bg);
+    color:var(--text);
+    font-family:var(--display);
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  a{color:inherit;}
+
+  .wrap{
+    max-width:900px;
+    margin:0 auto;
+    padding:56px 24px 120px;
+  }
+
+  /* ---- Request bar (signature element) ---- */
+  .request-bar{
+    background:var(--panel);
+    border:1px solid var(--panel-border);
+    border-radius:10px;
+    overflow:hidden;
+    margin-bottom:40px;
+  }
+  .request-bar__top{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    padding:12px 18px;
+    border-bottom:1px solid var(--panel-border);
+  }
+  .dot{width:9px; height:9px; border-radius:50%; background:#3A4552;}
+  .request-bar__url{
+    font-family:var(--mono);
+    font-size:13px;
+    color:var(--muted);
+    margin-left:6px;
+    overflow-x:auto;
+    white-space:nowrap;
+  }
+  .request-bar__body{
+    padding:22px 24px 26px;
+  }
+  .method{
+    display:inline-block;
+    font-family:var(--mono);
+    font-size:12px;
+    font-weight:600;
+    color:var(--ok);
+    background:var(--ok-dim);
+    padding:3px 9px;
+    border-radius:5px;
+    letter-spacing:.04em;
+    margin-bottom:16px;
+  }
+  h1{
+    font-size:clamp(28px, 5vw, 40px);
+    font-weight:700;
+    letter-spacing:-0.01em;
+    margin-bottom:6px;
+  }
+  .role{
+    font-size:16px;
+    color:var(--muted);
+    margin-bottom:18px;
+  }
+  .contact-row{
+    display:flex;
+    flex-wrap:wrap;
+    gap:14px 22px;
+    font-family:var(--mono);
+    font-size:12.5px;
+    color:var(--muted);
+  }
+  .contact-row a:hover{color:var(--ok);}
+  .status-line{
+    font-family:var(--mono);
+    font-size:12px;
+    color:var(--ok);
+    margin-top:18px;
+    padding-top:16px;
+    border-top:1px dashed var(--panel-border);
+  }
+  .status-line span{color:var(--muted);}
+
+  /* ---- Route sections ---- */
+  .route{
+    margin-bottom:34px;
+  }
+  .route__head{
+    display:flex;
+    align-items:baseline;
+    gap:10px;
+    margin-bottom:14px;
+  }
+  .route__method{
+    font-family:var(--mono);
+    font-size:11px;
+    font-weight:600;
+    color:var(--bg);
+    background:var(--muted);
+    padding:2px 7px;
+    border-radius:4px;
+  }
+  .route__path{
+    font-family:var(--mono);
+    font-size:14px;
+    color:var(--text);
+  }
+  .route__line{
+    flex:1;
+    height:1px;
+    background:var(--panel-border);
+  }
+
+  .panel{
+    background:var(--panel);
+    border:1px solid var(--panel-border);
+    border-radius:10px;
+    padding:22px 24px;
+  }
+
+  .summary-text{
+    font-size:15px;
+    color:#C7CEDA;
+  }
+
+  /* skills */
+  .skill-grid{
+    display:grid;
+    grid-template-columns:120px 1fr;
+    gap:12px 18px;
+    font-size:13.5px;
+  }
+  .skill-key{
+    font-family:var(--mono);
+    color:var(--amber);
+    font-size:12px;
+    padding-top:2px;
+  }
+  .skill-val{color:#C7CEDA;}
+
+  /* experience */
+  .job{
+    padding:20px 0;
+    border-bottom:1px solid var(--panel-border);
+  }
+  .job:last-child{border-bottom:none; padding-bottom:0;}
+  .job:first-child{padding-top:0;}
+  .job__top{
+    display:flex;
+    justify-content:space-between;
+    align-items:baseline;
+    flex-wrap:wrap;
+    gap:6px 16px;
+    margin-bottom:4px;
+  }
+  .job__title{font-weight:600; font-size:16px;}
+  .job__date{
+    font-family:var(--mono);
+    font-size:12px;
+    color:var(--ok);
+    white-space:nowrap;
+  }
+  .job__company{
+    color:var(--muted);
+    font-size:13.5px;
+    margin-bottom:12px;
+  }
+  .job__project{
+    font-family:var(--mono);
+    font-size:11.5px;
+    color:var(--amber);
+    letter-spacing:.02em;
+    margin-bottom:10px;
+    display:inline-block;
+  }
+  .job ul{
+    list-style:none;
+    display:flex;
+    flex-direction:column;
+    gap:9px;
+  }
+  .job li{
+    font-size:14px;
+    color:#C7CEDA;
+    padding-left:18px;
+    position:relative;
+  }
+  .job li::before{
+    content:"→";
+    position:absolute;
+    left:0;
+    color:var(--muted);
+    font-size:12px;
+  }
+
+  /* education */
+  .edu-title{font-weight:600; font-size:15px; margin-bottom:4px;}
+  .edu-sub{color:var(--muted); font-size:13.5px;}
+
+  /* PDF preview panel */
+  .doc-panel{
+    background:var(--panel);
+    border:1px solid var(--panel-border);
+    border-radius:10px;
+    overflow:hidden;
+  }
+  .doc-panel__bar{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:12px 18px;
+    border-bottom:1px solid var(--panel-border);
+    flex-wrap:wrap;
+    gap:10px;
+  }
+  .doc-panel__label{
+    font-family:var(--mono);
+    font-size:12px;
+    color:var(--muted);
+  }
+  .curl-btn{
+    font-family:var(--mono);
+    font-size:12px;
+    color:var(--ok);
+    background:var(--ok-dim);
+    border:1px solid transparent;
+    padding:7px 14px;
+    border-radius:6px;
+    text-decoration:none;
+    transition:border-color .15s ease;
+    white-space:nowrap;
+  }
+  .curl-btn:hover{border-color:var(--ok);}
+  .doc-panel iframe{
+    width:100%;
+    height:640px;
+    border:none;
+    display:block;
+    background:#1B222B;
+  }
+  .doc-fallback{
+    padding:60px 24px;
+    text-align:center;
+    color:var(--muted);
+    font-size:14px;
+    display:none;
+  }
+
+  footer{
+    margin-top:50px;
+    text-align:center;
+    font-family:var(--mono);
+    font-size:11.5px;
+    color:var(--muted);
+  }
+
+  @media (max-width:560px){
+    .skill-grid{grid-template-columns:1fr;}
+    .skill-key{padding-top:0;}
+    .doc-panel iframe{height:480px;}
+  }
+
+  @media (prefers-reduced-motion:no-preference){
+    .route{
+      animation:rise .5s ease both;
+    }
+    .route:nth-child(1){animation-delay:.02s;}
+    .route:nth-child(2){animation-delay:.08s;}
+    .route:nth-child(3){animation-delay:.14s;}
+    .route:nth-child(4){animation-delay:.20s;}
+    .route:nth-child(5){animation-delay:.26s;}
+  }
+  @keyframes rise{
+    from{opacity:0; transform:translateY(8px);}
+    to{opacity:1; transform:translateY(0);}
+  }
+
+  :focus-visible{
+    outline:2px solid var(--ok);
+    outline-offset:2px;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- Signature: request/response header -->
+  <div class="request-bar">
+    <div class="request-bar__top">
+      <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+      <span class="request-bar__url">sagarchavda.dev/resume</span>
+    </div>
+    <div class="request-bar__body">
+      <span class="method">GET /engineers/sagar-chavda &nbsp;200 OK</span>
+      <h1>Sagar P. Chavda</h1>
+      <div class="role">Software Engineer — .NET &amp; C# Backend Development</div>
+      <div class="contact-row">
+        <span>📍 Ahmedabad, Gujarat, India</span>
+        <a href="tel:+918200123173">+91 8200123173</a>
+        <a href="mailto:sagarchavada80@gmail.com">sagarchavada80@gmail.com</a>
+        <a href="https://linkedin.com/in/sagarchavada" target="_blank" rel="noopener">linkedin.com/in/sagarchavada</a>
+      </div>
+      <div class="status-line">
+        <span>latency:</span> 4 yrs exp &nbsp;·&nbsp; <span>stack:</span> C# / ASP.NET Core / SQL / Azure / AWS
+      </div>
+    </div>
+  </div>
+
+  <!-- Summary -->
+  <div class="route">
+    <div class="route__head">
+      <span class="route__method">GET</span>
+      <span class="route__path">/summary</span>
+      <span class="route__line"></span>
+    </div>
+    <div class="panel">
+      <p class="summary-text">
+        Software Engineer with 4 years of experience designing and delivering scalable backend systems using C# and ASP.NET Core.
+        Skilled in building secure REST APIs, optimizing SQL databases, and implementing cloud-native serverless architectures on AWS and Azure.
+        Applies SOLID principles, clean architecture, and dependency injection to build testable, maintainable backend applications across legal tech and healthcare domains.
+      </p>
+    </div>
+  </div>
+
+  <!-- Skills -->
+  <div class="route">
+    <div class="route__head">
+      <span class="route__method">GET</span>
+      <span class="route__path">/skills</span>
+      <span class="route__line"></span>
+    </div>
+    <div class="panel skill-grid">
+      <div class="skill-key">languages</div><div class="skill-val">C#, LINQ, JavaScript</div>
+      <div class="skill-key">frameworks</div><div class="skill-val">.NET 6, ASP.NET Core, Web API, ASP.NET MVC, Angular</div>
+      <div class="skill-key">databases</div><div class="skill-val">MS SQL Server, PostgreSQL, Entity Framework Core</div>
+      <div class="skill-key">cloud</div><div class="skill-val">AWS Lambda, Azure Functions, Azure Logic Apps, IIS Server</div>
+      <div class="skill-key">messaging</div><div class="skill-val">RabbitMQ</div>
+      <div class="skill-key">architecture</div><div class="skill-val">SOLID Principles, Clean Architecture, Repository Pattern, Dependency Injection</div>
+      <div class="skill-key">auth</div><div class="skill-val">JWT Authentication, ASP.NET Core Identity</div>
+      <div class="skill-key">devops</div><div class="skill-val">CI/CD, Azure DevOps (TFS)</div>
+      <div class="skill-key">tools</div><div class="skill-val">Git, Jira, Swagger, Redis</div>
+    </div>
+  </div>
+
+  <!-- Experience -->
+  <div class="route">
+    <div class="route__head">
+      <span class="route__method">GET</span>
+      <span class="route__path">/experience</span>
+      <span class="route__line"></span>
+    </div>
+    <div class="panel">
+
+      <div class="job">
+        <div class="job__top">
+          <span class="job__title">Software Engineer — Casepoint Pvt. Ltd.</span>
+          <span class="job__date">May 2025 – Present</span>
+        </div>
+        <div class="job__company">Surat, Gujarat</div>
+        <span class="job__project">PROJECT: eDiscovery Platform — legal tech ESI portal at terabyte scale</span>
+        <ul>
+          <li>Engineered REST APIs using ASP.NET Core for legal document workflows across distributed systems, improving module execution efficiency by 30%.</li>
+          <li>Designed a Redis caching layer that cut average API response latency from 350ms to 80ms.</li>
+          <li>Implemented an asynchronous RabbitMQ pipeline for background workloads, achieving 99.99% message delivery reliability.</li>
+          <li>Optimized PostgreSQL and LINQ queries, reducing search execution times by 25% across case management modules.</li>
+          <li>Configured Azure DevOps CI/CD pipelines, cutting manual deployment steps and errors by 50%.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job__top">
+          <span class="job__title">Software Engineer — Metizsoft Solutions Pvt. Ltd.</span>
+          <span class="job__date">Jan 2024 – Mar 2025</span>
+        </div>
+        <div class="job__company">Ahmedabad, Gujarat</div>
+        <span class="job__project">PROJECT: Parking Enforcement System (Roker Enforcement) — municipal compliance platform</span>
+        <ul>
+          <li>Migrated serverless workloads from Azure Functions to AWS Lambda, reducing operational hosting costs by 20%.</li>
+          <li>Refactored core backend services in C#, improving API response rates by 15% across municipal systems.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job__top">
+          <span class="job__title">Junior Software Engineer — Shine Infosoft</span>
+          <span class="job__date">May 2022 – Dec 2023</span>
+        </div>
+        <div class="job__company">Ahmedabad, Gujarat</div>
+        <span class="job__project">PROJECT: Caregiver Management System (Shiftware) — healthcare booking &amp; staffing</span>
+        <ul>
+          <li>Designed relational schemas with Entity Framework Core for caregiver scheduling, reducing booking latency by 30%.</li>
+          <li>Integrated JWT-based security to protect patient records for 5K+ monthly active users.</li>
+        </ul>
+        <span class="job__project" style="margin-top:16px;">PROJECT: Document Management System (DMS) — secure storage &amp; indexing portal</span>
+        <ul>
+          <li>Engineered secure file storage in ASP.NET MVC supporting multi-format indexing, improving retrieval efficiency by 40%.</li>
+          <li>Deployed on IIS with role-based access control, achieving 100% compliance in security audits.</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Education -->
+  <div class="route">
+    <div class="route__head">
+      <span class="route__method">GET</span>
+      <span class="route__path">/education</span>
+      <span class="route__line"></span>
+    </div>
+    <div class="panel">
+      <div class="edu-title">Bachelor of Computer Applications (BCA)</div>
+      <div class="edu-sub">S.S. Institute of Information Technology, Gujarat · 2022</div>
+    </div>
+  </div>
+
+  <!-- PDF document -->
+  <div class="route">
+    <div class="route__head">
+      <span class="route__method">GET</span>
+      <span class="route__path">/resume.pdf</span>
+      <span class="route__line"></span>
+    </div>
+    <div class="doc-panel">
+      <div class="doc-panel__bar">
+        <span class="doc-panel__label">Sagar_Chavda_Resume.pdf</span>
+        <a class="curl-btn" href="Sagar_Chavda_Resume.pdf" download>↓ download original</a>
+      </div>
+      <iframe src="Sagar_Chavda_Resume.pdf" title="Sagar Chavda Resume PDF"></iframe>
+      <div class="doc-fallback">
+        Preview not supported on this device. Use the download button above.
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    © 2026 Sagar P. Chavda — response generated in 4 years, 0 exceptions thrown
+  </footer>
+
+</div>
+</body>
+</html>

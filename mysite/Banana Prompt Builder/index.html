@@ -1364,6 +1364,569 @@
             transition: transform 0.3s ease;
         }
 
+        }
+
+        /* --------------------------------------------------
+           NEW QUICK MODE INTERACTIVE WIZARD STYLES
+        -------------------------------------------------- */
+        .quick-wizard-container {
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+            animation: fadeIn 0.3s ease-out;
+            width: 100%;
+        }
+
+        .quick-wizard-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-bottom: 0.75rem;
+            border-bottom: 1px solid var(--border-muted);
+            margin-bottom: 0.5rem;
+        }
+
+        .quick-wizard-title {
+            font-size: 1.1rem;
+            font-weight: 800;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .quick-wizard-breadcrumbs {
+            font-size: 0.8rem;
+            color: #94a3b8;
+            font-weight: 500;
+            margin-left: 0.5rem;
+        }
+
+        .quick-wizard-back-btn {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--border-muted);
+            color: #cbd5e1;
+            padding: 0.4rem 0.85rem;
+            border-radius: 30px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 0.35rem;
+            transition: var(--transition);
+        }
+
+        .quick-wizard-back-btn:hover {
+            background: rgba(255, 255, 255, 0.1);
+            color: #ffffff;
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .quick-step-card-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.25rem;
+            width: 100%;
+        }
+
+        .quick-step-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-muted);
+            border-radius: var(--radius-lg);
+            padding: 2rem 1.5rem;
+            text-align: center;
+            cursor: pointer;
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            user-select: none;
+            position: relative;
+            overflow: hidden;
+            min-height: 180px;
+        }
+
+        .quick-step-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: transparent;
+            transition: var(--transition);
+        }
+
+        .quick-step-card:hover {
+            transform: translateY(-4px);
+            background: var(--bg-card-hover);
+            box-shadow: var(--shadow-glass);
+        }
+
+        /* Male Card Theme (Cyan Glow) */
+        .gender-card.male-card:hover {
+            border-color: var(--accent-cyan);
+            box-shadow: var(--shadow-cyan-glow);
+        }
+        .gender-card.male-card:hover::before {
+            background: var(--accent-cyan);
+        }
+
+        /* Female Card Theme (Purple Glow) */
+        .gender-card.female-card:hover {
+            border-color: var(--accent-purple);
+            box-shadow: 0 0 15px rgba(139, 92, 246, 0.4);
+        }
+        .gender-card.female-card:hover::before {
+            background: var(--accent-purple);
+        }
+
+        /* Pathway Card Theme (Gold / Blue Glow) */
+        .pathway-card.events-path:hover {
+            border-color: var(--accent-banana);
+            box-shadow: var(--shadow-banana-glow);
+        }
+        .pathway-card.events-path:hover::before {
+            background: var(--accent-banana);
+        }
+
+        .pathway-card.direct-path:hover {
+            border-color: var(--accent-cyan);
+            box-shadow: var(--shadow-cyan-glow);
+        }
+        .pathway-card.direct-path:hover::before {
+            background: var(--accent-cyan);
+        }
+
+        .quick-card-icon {
+            font-size: 2.75rem;
+            line-height: 1;
+            transition: transform 0.25s ease;
+        }
+
+        .quick-step-card:hover .quick-card-icon {
+            transform: scale(1.18) rotate(2deg);
+        }
+
+        .quick-card-label {
+            font-size: 1.1rem;
+            font-weight: 800;
+            color: #ffffff;
+        }
+
+        .quick-card-desc {
+            font-size: 0.8rem;
+            color: #94a3b8;
+            line-height: 1.4;
+            max-width: 90%;
+        }
+
+        /* Search input bar */
+        .quick-search-container {
+            display: flex;
+            width: 100%;
+            margin-bottom: 0.5rem;
+        }
+
+        .quick-search-input {
+            width: 100%;
+            background: var(--bg-input);
+            border: 1px solid var(--border-muted);
+            padding: 0.75rem 1rem;
+            border-radius: var(--radius-md);
+            color: #f8fafc;
+            font-family: var(--font-family);
+            font-size: 0.9rem;
+            outline: none;
+            transition: var(--transition);
+        }
+
+        .quick-search-input:focus {
+            border-color: var(--accent-banana);
+            box-shadow: var(--shadow-banana-glow);
+        }
+
+        /* Events Browser Workspace */
+        .events-workspace {
+            display: grid;
+            grid-template-columns: 240px 1fr;
+            gap: 1.25rem;
+            width: 100%;
+            min-height: 420px;
+        }
+
+        @media (max-width: 768px) {
+            .events-workspace {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Sidebar category list */
+        .category-sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 0.35rem;
+            max-height: 480px;
+            overflow-y: auto;
+            padding-right: 0.25rem;
+        }
+
+        @media (max-width: 768px) {
+            .category-sidebar {
+                flex-direction: row;
+                overflow-x: auto;
+                padding-bottom: 0.5rem;
+                max-height: none;
+            }
+        }
+
+        .category-pill {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid var(--border-muted);
+            color: #cbd5e1;
+            padding: 0.65rem 1rem;
+            border-radius: var(--radius-md);
+            font-size: 0.85rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            text-align: left;
+            white-space: nowrap;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            user-select: none;
+        }
+
+        .category-pill:hover {
+            background: rgba(255, 255, 255, 0.06);
+            color: #ffffff;
+        }
+
+        .category-pill.active {
+            background: linear-gradient(135deg, rgba(250, 204, 21, 0.15) 0%, rgba(234, 179, 8, 0.15) 100%);
+            border-color: var(--accent-banana);
+            color: var(--accent-banana);
+            font-weight: 700;
+            box-shadow: 0 0 10px rgba(250, 204, 21, 0.1);
+        }
+
+        /* Event Grid & Card */
+        .events-panel {
+            max-height: 480px;
+            overflow-y: auto;
+            padding-right: 0.25rem;
+        }
+
+        .events-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+            gap: 0.75rem;
+            width: 100%;
+        }
+
+        .event-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-muted);
+            border-radius: var(--radius-md);
+            padding: 0.85rem 0.65rem;
+            text-align: center;
+            cursor: pointer;
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 0.35rem;
+            min-height: 90px;
+            user-select: none;
+        }
+
+        .event-card:hover {
+            transform: translateY(-2px);
+            background: var(--bg-card-hover);
+            border-color: rgba(255, 255, 255, 0.2);
+            box-shadow: var(--shadow-glass);
+        }
+
+        .event-card-emoji {
+            font-size: 1.5rem;
+        }
+
+        .event-card-name {
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: #e2e8f0;
+            line-height: 1.3;
+        }
+
+        /* Event Prompts Modal / Slide-in Overlay */
+        .quick-prompts-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(9, 13, 22, 0.85);
+            backdrop-filter: blur(8px);
+            z-index: 1000;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 1.5rem;
+            animation: fadeIn 0.25s ease-out;
+        }
+
+        .quick-prompts-content {
+            background: #0d1527;
+            border: 1px solid var(--border-muted);
+            border-radius: var(--radius-lg);
+            width: 100%;
+            max-width: 750px;
+            max-height: 85vh;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+            overflow: hidden;
+            position: relative;
+        }
+
+        .quick-prompts-content::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: var(--banana-gradient);
+        }
+
+        .quick-prompts-header {
+            padding: 1.25rem 1.5rem;
+            border-bottom: 1px solid var(--border-muted);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.01);
+        }
+
+        .quick-prompts-title {
+            font-size: 1.1rem;
+            font-weight: 800;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .quick-modal-close {
+            background: none;
+            border: none;
+            color: #94a3b8;
+            font-size: 1.5rem;
+            cursor: pointer;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+        }
+
+        .quick-modal-close:hover {
+            background: rgba(255, 255, 255, 0.05);
+            color: #ffffff;
+        }
+
+        .quick-prompts-toolbar {
+            padding: 0.85rem 1.5rem;
+            background: rgba(255, 255, 255, 0.02);
+            border-bottom: 1px solid var(--border-muted);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+        }
+
+        .quick-prompts-body {
+            padding: 1.25rem 1.5rem;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            flex-grow: 1;
+        }
+
+        /* Prompt Row / Item inside modal */
+        .prompt-row-card {
+            background: rgba(255, 255, 255, 0.01);
+            border: 1px solid var(--border-muted);
+            border-radius: var(--radius-md);
+            padding: 1rem;
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .prompt-row-card:hover {
+            border-color: rgba(250, 204, 21, 0.3);
+            background: rgba(255, 255, 255, 0.02);
+        }
+
+        .prompt-row-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .prompt-num-badge {
+            background: rgba(250, 204, 21, 0.15);
+            color: var(--accent-banana);
+            font-size: 0.75rem;
+            font-weight: 700;
+            padding: 0.2rem 0.5rem;
+            border-radius: 30px;
+        }
+
+        .prompt-row-style-badge {
+            font-size: 0.7rem;
+            font-weight: 700;
+            padding: 0.2rem 0.5rem;
+            border-radius: 30px;
+            background: rgba(6, 182, 212, 0.1);
+            color: var(--accent-cyan);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .prompt-row-text {
+            font-size: 0.85rem;
+            line-height: 1.5;
+            color: #cbd5e1;
+            font-style: italic;
+        }
+
+        .prompt-row-actions {
+            display: flex;
+            justify-content: flex-end;
+            gap: 0.5rem;
+            border-top: 1px dashed rgba(255, 255, 255, 0.05);
+            padding-top: 0.75rem;
+            margin-top: 0.25rem;
+        }
+
+        /* Direct Prompts Reference Grid */
+        .ref-prompts-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.25rem;
+            width: 100%;
+        }
+
+        @media (max-width: 640px) {
+            .ref-prompts-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .ref-prompt-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-muted);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            cursor: pointer;
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .ref-prompt-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--accent-cyan);
+            box-shadow: var(--shadow-cyan-glow);
+        }
+
+        .ref-img-wrapper {
+            width: 100%;
+            height: 180px;
+            overflow: hidden;
+            position: relative;
+            background: #111a2e;
+        }
+
+        .ref-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .ref-prompt-card:hover .ref-img {
+            transform: scale(1.08);
+        }
+
+        .ref-img-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 1.5rem 1rem 0.5rem 1rem;
+            background: linear-gradient(to top, rgba(9, 13, 22, 0.9) 0%, transparent 100%);
+            display: flex;
+            align-items: flex-end;
+        }
+
+        .ref-img-tag {
+            background: var(--accent-gradient);
+            color: #ffffff;
+            font-size: 0.7rem;
+            font-weight: 700;
+            padding: 0.2rem 0.5rem;
+            border-radius: var(--radius-sm);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            box-shadow: 0 2px 8px rgba(6, 182, 212, 0.3);
+        }
+
+        .ref-info-body {
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            flex-grow: 1;
+        }
+
+        .ref-title {
+            font-size: 0.95rem;
+            font-weight: 800;
+            color: #ffffff;
+            letter-spacing: -0.2px;
+        }
+
+        .ref-desc {
+            font-size: 0.75rem;
+            color: #94a3b8;
+            line-height: 1.4;
+            flex-grow: 1;
+        }
+
+        .ref-card-action {
+            display: flex;
+            align-items: center;
+            gap: 0.35rem;
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: var(--accent-cyan);
+            margin-top: 0.5rem;
+        }
+
         /* Recent Prompts Drawer/History Toggle */
         .history-toggle-btn {
             background: rgba(255, 255, 255, 0.03);
@@ -1545,140 +2108,114 @@
 
             <!-- QUICK MODE SECTION -->
             <div id="quick-mode-section">
-                <!-- Presets Section -->
-                <div class="presets-section">
-                    <div class="presets-header">
-                        <span class="presets-title">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="stroke: var(--accent-banana); fill: none;">
-                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                <!-- Quick Mode Wizard -->
+                <div class="quick-wizard-container">
+                    
+                    <!-- Wizard Navigation Header -->
+                    <div class="quick-wizard-header">
+                        <div class="quick-wizard-title">
+                            <span style="background: var(--banana-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">⚡ Quick Option</span>
+                            <span class="quick-wizard-breadcrumbs" id="quick-breadcrumbs">Step 1: Gender</span>
+                        </div>
+                        <button type="button" class="quick-wizard-back-btn" id="quick-back-btn" onclick="prevQuickStep()" style="display: none;">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                                <polyline points="15 18 9 12 15 6"></polyline>
                             </svg>
-                            Preset Scenarios
-                        </span>
-                        <button type="button" class="btn btn-secondary surprise-btn" onclick="triggerSurpriseMe()" title="Surprise Me (Random Prompt)">
-                            <svg class="dice-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 4px; vertical-align: middle;">
-                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
-                                <circle cx="8.5" cy="8.5" r="1.5" fill="currentColor"></circle>
-                                <circle cx="15.5" cy="8.5" r="1.5" fill="currentColor"></circle>
-                                <circle cx="15.5" cy="15.5" r="1.5" fill="currentColor"></circle>
-                                <circle cx="8.5" cy="15.5" r="1.5" fill="currentColor"></circle>
-                                <circle cx="12" cy="12" r="1.5" fill="currentColor"></circle>
-                            </svg>
-                            Surprise Me
+                            Back
                         </button>
                     </div>
-                    <div class="presets-grid">
-                        <div class="preset-card" onclick="applyPreset('Casual Selfie')">
-                            <span class="preset-emoji">🤳</span>
-                            <span class="preset-label">Casual Selfie</span>
-                        </div>
-                        <div class="preset-card" onclick="applyPreset('Professional Photo')">
-                            <span class="preset-emoji">👔</span>
-                            <span class="preset-label">Professional Photo</span>
-                        </div>
-                        <div class="preset-card" onclick="applyPreset('Romantic Couple')">
-                            <span class="preset-emoji">👩‍❤️‍👨</span>
-                            <span class="preset-label">Romantic Couple</span>
-                        </div>
-                        <div class="preset-card" onclick="applyPreset('Friends Hangout')">
-                            <span class="preset-emoji">🍻</span>
-                            <span class="preset-label">Friends Hangout</span>
-                        </div>
-                        <div class="preset-card" onclick="applyPreset('Festival/Traditional Look')">
-                            <span class="preset-emoji">🥻</span>
-                            <span class="preset-label">Festival/Traditional</span>
-                        </div>
-                        <div class="preset-card" onclick="applyPreset('Travel/Outdoor Vibe')">
-                            <span class="preset-emoji">⛰️</span>
-                            <span class="preset-label">Travel/Outdoor Vibe</span>
+
+                    <!-- STEP 1: GENDER SELECTION -->
+                    <div id="quick-step-1" class="quick-step-content">
+                        <div class="quick-step-card-grid">
+                            <div class="quick-step-card gender-card male-card" onclick="selectQuickGender('Male')">
+                                <div class="quick-card-icon">👨</div>
+                                <div class="quick-card-label">Male</div>
+                                <div class="quick-card-desc">Generate images featuring male subjects, tailored events and custom templates.</div>
+                            </div>
+                            <div class="quick-step-card gender-card female-card" onclick="selectQuickGender('Female')">
+                                <div class="quick-card-icon">👩</div>
+                                <div class="quick-card-label">Female</div>
+                                <div class="quick-card-desc">Generate images featuring female subjects, tailored events and custom templates.</div>
+                            </div>
                         </div>
                     </div>
+
+                    <!-- STEP 2: PATHWAY SELECTION -->
+                    <div id="quick-step-2" class="quick-step-content" style="display: none;">
+                        <div class="quick-step-card-grid">
+                            <div class="quick-step-card pathway-card events-path" onclick="selectQuickPath('events')">
+                                <div class="quick-card-icon">🎉</div>
+                                <div class="quick-card-label">Events / Festivals</div>
+                                <div class="quick-card-desc">Choose from 75+ categorized events like Birthday, Diwali, Product Launch, and more.</div>
+                            </div>
+                            <div class="quick-step-card pathway-card direct-path" onclick="selectQuickPath('direct')">
+                                <div class="quick-card-icon">🖼️</div>
+                                <div class="quick-card-label">Direct Prompts</div>
+                                <div class="quick-card-desc">Use quick presets based on highly popular reference image styles.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- STEP 3A: EVENTS BROWSER -->
+                    <div id="quick-step-3-events" class="quick-step-content" style="display: none;">
+                        <!-- Search Box -->
+                        <div class="quick-search-container">
+                            <input type="text" id="quick-event-search" class="quick-search-input" placeholder="🔍 Search events (e.g. Birthday, Diwali, Wedding)..." oninput="filterQuickEvents()">
+                        </div>
+                        
+                        <!-- Events Workspace Layout -->
+                        <div class="events-workspace">
+                            <!-- Sidebar Categories -->
+                            <div class="category-sidebar" id="quick-category-list">
+                                <!-- Dynamically Rendered -->
+                            </div>
+                            <!-- Events Grid Panel -->
+                            <div class="events-panel">
+                                <div class="events-grid" id="quick-events-grid">
+                                    <!-- Dynamically Rendered -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- STEP 3B: DIRECT PROMPTS GRID -->
+                    <div id="quick-step-3-direct" class="quick-step-content" style="display: none;">
+                        <div class="ref-prompts-grid" id="quick-direct-grid">
+                            <!-- Dynamically Rendered -->
+                        </div>
+                    </div>
+
                 </div>
+            </div>
 
-                <!-- Quick Mode Form Card -->
-                <div class="card" style="display: block; margin-top: 1.5rem;">
-                    <div class="card-header">
-                        <div class="card-header-left">
-                            <span class="step-num" style="background: var(--banana-gradient); color: #000;">⚡</span>
-                            <div class="card-title-group">
-                                <h2>Quick Art Director</h2>
-                                <span class="card-summary">Configure core elements in seconds</span>
-                            </div>
+            <!-- EVENT PROMPTS MODAL OVERLAY -->
+            <div class="quick-prompts-modal" id="quick-prompts-modal">
+                <div class="quick-prompts-content">
+                    <div class="quick-prompts-header">
+                        <div class="quick-prompts-title">
+                            <span id="quick-modal-event-emoji">🎉</span>
+                            <span id="quick-modal-event-name">Event Name</span>
+                        </div>
+                        <button type="button" class="quick-modal-close" onclick="closeQuickPromptsModal()">&times;</button>
+                    </div>
+                    
+                    <!-- Custom Toolbar inside Modal -->
+                    <div class="quick-prompts-toolbar">
+                        <div style="font-size: 0.8rem; color: #94a3b8; font-weight: 500;">
+                            Select one of the 10 detail-oriented prompts below to copy or load.
+                        </div>
+                        <!-- Subject Gender Modifier Toggle -->
+                        <div style="display: flex; align-items: center; gap: 0.5rem; background: rgba(255,255,255,0.03); border: 1px solid var(--border-muted); padding: 0.35rem 0.75rem; border-radius: 30px;">
+                            <input type="checkbox" id="quick-gender-toggle" checked style="cursor: pointer;">
+                            <label for="quick-gender-toggle" style="font-size: 0.75rem; font-weight: 700; color: #cbd5e1; cursor: pointer; user-select: none;" id="quick-gender-toggle-label">
+                                Auto-customize with Male Subject
+                            </label>
                         </div>
                     </div>
-                    <div class="card-body">
-                        <div class="form-grid">
-                            <!-- 1. Number of Subjects -->
-                            <div class="form-group">
-                                <label class="form-label">Number of Subjects</label>
-                                <div class="chip-group" data-key="numSubjects">
-                                    <div class="chip-option">
-                                        <input type="radio" id="qm-sub-1" name="qm_subjects" value="1" checked onchange="setSubjectsDirect(1)">
-                                        <label for="qm-sub-1" class="chip-label">Single</label>
-                                    </div>
-                                    <div class="chip-option">
-                                        <input type="radio" id="qm-sub-2" name="qm_subjects" value="2" onchange="setSubjectsDirect(2)">
-                                        <label for="qm-sub-2" class="chip-label">Couple</label>
-                                    </div>
-                                    <div class="chip-option">
-                                        <input type="radio" id="qm-sub-3" name="qm_subjects" value="3" onchange="setSubjectsDirect(3)">
-                                        <label for="qm-sub-3" class="chip-label">Group</label>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- 2. Mood -->
-                            <div class="form-group">
-                                <label class="form-label">Mood</label>
-                                <div class="chip-group" data-key="mood">
-                                    <div class="chip-option"><input type="radio" id="qm-m-romantic" name="qm_mood" value="Romantic"><label for="qm-m-romantic" class="chip-label">Romantic</label></div>
-                                    <div class="chip-option"><input type="radio" id="qm-m-aggressive" name="qm_mood" value="Aggressive"><label for="qm-m-aggressive" class="chip-label">Aggressive</label></div>
-                                    <div class="chip-option"><input type="radio" id="qm-m-serious" name="qm_mood" value="Serious"><label for="qm-m-serious" class="chip-label">Serious</label></div>
-                                    <div class="chip-option"><input type="radio" id="qm-m-happy" name="qm_mood" value="Happy" checked><label for="qm-m-happy" class="chip-label">Happy</label></div>
-                                    <div class="chip-option"><input type="radio" id="qm-m-playful" name="qm_mood" value="Playful"><label for="qm-m-playful" class="chip-label">Playful</label></div>
-                                    <div class="chip-option"><input type="radio" id="qm-m-calm" name="qm_mood" value="Calm"><label for="qm-m-calm" class="chip-label">Calm</label></div>
-                                </div>
-                            </div>
-
-                            <!-- 3. Location/Setting -->
-                            <div class="form-group">
-                                <label class="form-label">Location/Setting</label>
-                                <div class="chip-group" data-key="locationSetting">
-                                    <div class="chip-option"><input type="radio" id="qm-l-stud" name="qm_location" value="Studio" checked><label for="qm-l-stud" class="chip-label">Studio</label></div>
-                                    <div class="chip-option"><input type="radio" id="qm-l-out" name="qm_location" value="Nature-outdoor"><label for="qm-l-out" class="chip-label">Outdoor</label></div>
-                                    <div class="chip-option"><input type="radio" id="qm-l-urb" name="qm_location" value="Urban street"><label for="qm-l-urb" class="chip-label">Urban street</label></div>
-                                    <div class="chip-option"><input type="radio" id="qm-l-cafe" name="qm_location" value="Cafe"><label for="qm-l-cafe" class="chip-label">Cafe</label></div>
-                                    <div class="chip-option"><input type="radio" id="qm-l-home" name="qm_location" value="Indoor home"><label for="qm-l-home" class="chip-label">Home</label></div>
-                                    <div class="chip-option"><input type="radio" id="qm-l-beach" name="qm_location" value="Beach"><label for="qm-l-beach" class="chip-label">Beach</label></div>
-                                </div>
-                            </div>
-
-                            <!-- 4. Outfit style -->
-                            <div class="form-group">
-                                <label class="form-label">Outfit Style</label>
-                                <div class="chip-group" data-key="outfitStyle">
-                                    <div class="chip-option"><input type="radio" id="qm-o-cas" name="qm_outfit" value="Casual" checked><label for="qm-o-cas" class="chip-label">Casual</label></div>
-                                    <div class="chip-option"><input type="radio" id="qm-o-form" name="qm_outfit" value="Formal"><label for="qm-o-form" class="chip-label">Formal</label></div>
-                                    <div class="chip-option"><input type="radio" id="qm-o-trad" name="qm_outfit" value="Traditional-Ethnic"><label for="qm-o-trad" class="chip-label">Traditional</label></div>
-                                    <div class="chip-option"><input type="radio" id="qm-o-street" name="qm_outfit" value="Streetwear"><label for="qm-o-street" class="chip-label">Streetwear</label></div>
-                                </div>
-                            </div>
-
-                            <!-- 5. Optional Free Text -->
-                            <div class="form-group full-width">
-                                <label for="qm_specific" class="form-label">Anything specific? (e.g. red saree, sunset, laughing)</label>
-                                <input type="text" id="qm_specific" class="form-input" placeholder="Enter custom subject details, background elements, lighting style..." data-key="quickSpecific">
-                            </div>
-
-                            <!-- 6. Generate Button -->
-                            <div class="form-group full-width" style="margin-top: 1rem;">
-                                <button type="button" class="btn btn-primary" onclick="generateQuickPrompt()" style="width: 100%; font-size: 1rem; padding: 1rem;">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="margin-right: 4px; vertical-align: middle;">
-                                        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
-                                    </svg>
-                                    Generate Quick Prompt
-                                </button>
-                            </div>
-                        </div>
+                    
+                    <div class="quick-prompts-body" id="quick-modal-prompts-body">
+                        <!-- Dynamically Rendered -->
                     </div>
                 </div>
             </div>
@@ -2728,9 +3265,13 @@
        JAVASCRIPT APP CONTROLLER
     -------------------------------------------------- */ -->
     <script>
+const EVENT_DATA = [{"events":[{"prompts":["Elegant birthday poster with a 3-tier gold and cream cake at center, soft golden balloons floating above, warm bokeh lights in background, confetti falling, pastel pink and gold color palette, Instagram square format, celebratory and luxurious mood.","Minimalist flat-lay birthday design viewed from top, cake slice, candles, gift box wrapped in kraft paper, dried flowers scattered around, neutral beige background, soft natural light, clean modern aesthetic for LinkedIn corporate greeting.","Vibrant kids\u0027 birthday scene with colorful balloons, cartoon party hats, rainbow confetti, \\\"1st Birthday\\\" number balloon glowing, bright playful colors, cheerful cartoon-style illustration, high energy composition.","Dark moody birthday poster with a single lit candle on chocolate cake, smoke wisps rising, deep navy background with tiny gold sparkles, cinematic lighting, premium editorial feel.","Traditional Indian birthday setup with marigold garlands framing a cake table, brass diya beside it, red and gold fabric backdrop, warm tungsten lighting, festive Indian aesthetic.","Instagram story format birthday template with large empty text space at top, balloons and streamers at bottom edge only, soft gradient pastel background, minimal clutter for text overlay.","Luxury birthday invite design with rose gold typography space, champagne glasses clinking, sparkler fireworks in soft focus background, elegant black and gold palette, high-end party vibe.","Watercolor illustration style birthday card with hand-painted flowers, butterflies, and a small cake, soft pastel washes, whimsical and artistic, greeting-card composition.","Corporate \\\"Happy Birthday to our Team Member\\\" LinkedIn banner with clean geometric shapes, brand-safe blue and white palette, subtle confetti icons, professional yet warm tone, space reserved for name and photo.","Nighttime rooftop birthday party scene, string fairy lights overhead, city skyline blurred in background, friends silhouettes with sparklers, cinematic warm-cool color contrast, aspirational lifestyle mood."],"name":"Birthday"},{"prompts":["Bright sunrise-toned poster with \\\"Happy Birthday\\\" balloon letters floating over a garden party table, fresh flowers, pastel yellow and coral palette, joyful morning light.","Close-up macro shot style of a birthday candle flame with soft bokeh gold lights blurred behind, warm intimate mood, minimal text space at bottom.","Instagram carousel-style flat design, layered paper-cut balloons and stars, bold typography space center, bright multi-color palette, modern playful vibe.","Elegant marble background with gold foil confetti scattered, champagne pour in soft focus, sophisticated adult birthday celebration mood, LinkedIn-safe professional tone.","Cartoon birthday cake with candles shaped like number, surrounded by floating gift boxes and party horns, vibrant primary colors, kids\u0027 party illustration style.","Soft focus bouquet of pastel balloons against a clear blue sky, sunlight flare, uplifting and airy mood, wide empty space for greeting text.","Vintage-style birthday poster with retro typography frame, string lights, polaroid photo props scattered, warm sepia and cream tones, nostalgic aesthetic.","3D render style birthday cake with glossy fondant icing, gold sprinkles, floating candles mid-air, studio lighting, hyper-realistic product-photography feel.","Minimal Scandinavian-style birthday card, single balloon, thin line art, muted sage green and terracotta palette, calm modern aesthetic for lifestyle brands.","Festive Indian-fusion birthday design with mehendi-pattern borders, marigold accents, and a diya beside the cake, warm red-gold palette, culturally rich composition."],"name":"Happy Birthday"},{"prompts":["Soft pastel nursery-themed poster with \\\"ONE\\\" balloon, teddy bear, tiny cake smash setup, cloud and star motifs, dreamy soft-focus background.","Cake-smash photography style, baby hands touching a small white cake with pastel frosting, confetti scattered on floor, warm natural light, candid joyful mood.","Boho-themed first birthday setup with macrame backdrop, dried pampas grass, cream and terracotta balloons, rustic aesthetic, Instagram-worthy styled shoot look.","Jungle-safari themed poster with cute cartoon animals, green and yellow palette, \\\"Wild One\\\" typography space, playful and vibrant kids\u0027 party design.","Elegant princess-themed setup with pink tulle backdrop, gold crown prop, fairy lights, soft glow lighting, dreamy fairytale mood.","Minimalist flat-lay with baby milestone card, tiny shoes, single cupcake with one candle, neutral beige tones, clean modern parenting-blog aesthetic.","Circus/carnival themed first birthday poster with colorful bunting flags, popcorn stand illustration, bright red-yellow-blue palette, festive fun-fair mood.","Indian traditional first birthday (varshapoorthi) setup with silk fabric backdrop, gold jewelry props, marigold flowers, warm festive lighting, cultural richness.","Space/galaxy themed poster with stars, planets, \\\"One in a Million\\\" text space, deep blue and silver palette, whimsical dreamy illustration style.","Soft watercolor birthday card illustration of a baby with balloons, gentle pastel strokes, hand-drawn charm, warm and tender emotional tone."],"name":"First Birthday"},{"prompts":["Romantic candlelit table setting for two, rose petals scattered, wine glasses, soft warm glow, deep red and gold palette, intimate elegant mood.","Vintage sepia-toned poster with an old photograph frame effect, wedding rings placed on lace fabric, nostalgic warm tones, sentimental design.","Modern minimalist anniversary card with interlocked rings icon, clean typography space, soft blush pink background, elegant contemporary style.","Golden anniversary theme with shimmering gold confetti, elderly couple\u0027s silhouette walking on a beach at sunset, warm nostalgic cinematic tone.","Floral arch backdrop with fairy lights, two chairs facing each other, soft bokeh, dreamy romantic garden-party aesthetic.","Corporate \\\"Work Anniversary\\\" LinkedIn banner with clean geometric badge design, brand blue palette, subtle confetti, professional celebratory tone.","Silver anniversary poster with metallic silver ribbons, elegant script text space, deep navy background, sophisticated formal mood.","Indian traditional anniversary setup with fresh flower garlands, brass diya, silk saree drape in background, warm festive cultural palette.","Beach sunset anniversary poster, couple\u0027s footprints in sand, soft orange-pink sky gradient, romantic serene composition.","Paper-cut style illustration of a heart with a calendar date highlighted, warm coral and cream palette, modern greeting-card design."],"name":"Anniversary"},{"prompts":["Grand Indian wedding mandap decorated with fresh marigold and red roses, golden drapes, soft warm lighting, opulent festive atmosphere.","Minimalist western wedding invite design with elegant floral border, soft ivory and sage green palette, calligraphy text space, clean elegant look.","Sunset outdoor wedding aisle with white flower arrangements, fairy lights strung overhead, romantic golden-hour lighting, dreamy composition.","Traditional South Indian wedding setup with banana leaf decor, brass lamps, jasmine flower garlands, warm cultural authenticity.","Royal palace-style wedding backdrop with chandelier, deep maroon and gold drapery, opulent Rajasthani aesthetic, cinematic grandeur.","Modern rooftop wedding reception scene, string lights, city skyline, elegant table settings, soft romantic bokeh mood.","Bridal mehndi-hand close-up with intricate henna patterns, gold bangles, warm soft lighting, detailed macro photography style.","Beach destination wedding setup with white flowing drapes, ocean backdrop, soft pastel sunset tones, breezy romantic mood.","Vintage-style wedding save-the-date card with lace texture, sepia tones, classic typography frame, nostalgic elegant design.","Floral shower entrance decor with hanging flower curtains in pink and white, soft diffused light, dreamy garden-wedding aesthetic."],"name":"Wedding (Marriage)"},{"prompts":["Close-up of hands exchanging a diamond ring, soft bokeh fairy lights in background, warm romantic golden tones, intimate mood.","Elegant floral arch backdrop in blush pink and gold, two engagement rings displayed on velvet cushion, soft dreamy lighting.","Traditional Gujarati engagement setup with marigold garlands, silver thali with sweets, red and gold fabric backdrop, festive cultural warmth.","Modern minimalist engagement announcement card, clean ring icon illustration, soft champagne background, elegant contemporary typography space.","Candlelit evening engagement party scene, string lights overhead, champagne toast in soft focus, romantic celebratory mood.","Rose-gold themed poster with sparkling confetti, ring box open, soft glow lighting, luxurious engagement announcement aesthetic.","Garden engagement party setup with pastel balloons, floral centerpieces, soft natural daylight, joyful outdoor celebration mood.","Indian ring ceremony (sagai) setup with silk saree drapes, gold jewelry trays, marigold flowers, warm traditional lighting.","Watercolor illustration of two intertwined rings with delicate floral accents, soft pastel wash, romantic greeting-card style.","Nighttime rooftop engagement celebration with sparklers, city lights blurred in background, warm-cool cinematic color contrast."],"name":"Engagement"},{"prompts":["Golden-hour countryside field shoot, couple silhouette holding hands, soft warm backlight, dreamy romantic cinematic composition.","Vintage cafe-themed pre-wedding setup with fairy lights, old typewriter and books as props, warm nostalgic tone.","Beach pre-wedding scene at sunset, flowing white fabric, soft pastel sky gradient, breezy romantic mood.","Traditional Rajasthani havelis backdrop with ornate architecture, couple in ethnic attire, warm golden lighting, royal aesthetic.","Urban rooftop pre-wedding shoot with string lights and city skyline, soft bokeh, modern romantic vibe.","Floral garden pre-wedding setup with pastel flower walls, soft diffused daylight, dreamy fairytale mood.","Snowy mountain pre-wedding concept, couple in warm winter attire, soft cool-toned lighting, adventurous romantic mood.","Classic black-and-white portrait style pre-wedding poster, elegant timeless composition, soft studio lighting.","Boho-themed pre-wedding setup with macrame backdrop, dried flowers, warm earthy tones, artistic rustic aesthetic.","Candid laughter moment style shot, soft natural park lighting, warm autumn leaves scattered, joyful genuine mood."],"name":"Pre-Wedding"},{"prompts":["Vibrant yellow marigold flower backdrop, brass haldi bowls with turmeric paste, bright sunny outdoor lighting, festive joyful mood.","Traditional mandap setup with yellow and orange fabric drapes, banana leaf decor, warm golden natural light, cultural authenticity.","Close-up of hands applying turmeric paste with flower petals scattered, warm soft lighting, intimate ceremonial detail shot.","Bright yellow balloon and marigold garland backdrop, festive rangoli on floor, cheerful vibrant color palette.","Outdoor courtyard haldi setup with string marigold garlands hanging, brass diyas, warm afternoon sunlight, rustic festive charm.","Bride/groom seated on decorated stool with yellow flower shower, joyful family members around, candid celebratory mood.","Turmeric and rose petal flat-lay with brass pooja thali, marigold flowers, warm top-down natural lighting, clean composition.","Yellow-themed photobooth backdrop with paper flowers and bunting, bright playful colors, Instagram-ready festive design.","Traditional South Indian haldi setup with turmeric leaves, brass lamps, banana stalks decor, warm cultural richness.","Dreamy soft-focus shot of turmeric powder being tossed in air, golden light rays, joyful dynamic movement."],"name":"Haldi Ceremony"},{"prompts":["Intricate henna pattern close-up on bride\u0027s hand, gold bangles, warm soft studio lighting, detailed macro photography.","Vibrant green and pink themed mehndi stage backdrop with marigold strings, floor cushions, festive colorful decor.","Outdoor garden mehndi setup with hanging flower chandeliers, pastel drapes, soft golden-hour lighting, dreamy festive mood.","Traditional mehndi thali with henna cones, rose petals, gold jewelry displayed, warm top-down flat-lay composition.","Colorful dupatta and bangles flat-lay with henna designs sketched on fabric, vibrant festive palette, artistic composition.","Bride sitting on decorated swing (jhoola) with flower garlands, mehndi being applied, warm joyful candid mood.","Bright bandhani-print backdrop with hanging marigold and paper lanterns, festive Rajasthani aesthetic, vibrant color contrast.","Group of women dancing at mehndi function, colorful outfits blurred in motion, warm string lights, joyful energetic mood.","Minimalist mehndi invite design with henna-pattern border illustration, cream and green palette, elegant typography space.","Close-up of intricately hennaed feet with anklets, flower petals scattered, soft warm ceremonial lighting."],"name":"Mehndi Ceremony"},{"prompts":["Glamorous stage setup with dramatic uplighting, sequin backdrop, disco ball reflections, high-energy nightclub-style party mood.","Bollywood-themed dance floor scene with colorful spotlights, confetti cannons firing, vibrant dynamic composition.","Elegant string-light draped outdoor sangeet stage, floral side arrangements, warm romantic evening ambiance.","Neon-lit dance floor with silhouettes mid-dance, bold pink and blue lighting, energetic modern party aesthetic.","Traditional dhol player performing under fairy lights, festive crowd dancing, warm golden stage lighting.","Luxury banquet hall sangeet setup with crystal chandeliers, gold drapery, elegant formal celebratory mood.","Rooftop sangeet night scene with city skyline backdrop, string lights, DJ booth silhouette, vibrant urban party vibe.","Retro Bollywood disco theme with vintage microphone prop, colorful spotlight beams, glamorous 70s-inspired aesthetic.","Close-up of dancing feet in traditional jewelry (payal) with vibrant lehenga fabric motion blur, festive energetic detail.","Fireworks and sparkler finale shot over an outdoor sangeet stage, night sky, celebratory grand finale mood."],"name":"Sangeet Night"},{"prompts":["Grand banquet hall reception stage with floral backdrop, crystal chandeliers, elegant couple entrance moment, warm luxurious lighting.","Elegant round tables with white floral centerpieces, fairy-lit ceiling, soft romantic reception hall ambiance.","Modern minimalist reception stage with greenery wall, soft gold accent lighting, contemporary elegant aesthetic.","Traditional Indian reception mandap with red and gold drapes, marigold garlands, opulent festive royal mood.","Outdoor garden reception setup with string lights strung between trees, soft dusk lighting, romantic al-fresco dining mood.","Cake-cutting moment style shot, tiered white cake with gold accents, soft spotlight, celebratory close-up composition.","Luxury ballroom reception with grand staircase entrance, sparkling chandelier, formal high-society aesthetic.","Candid toast moment with champagne glasses raised, warm bokeh string lights, joyful celebratory atmosphere.","Beachside reception dinner setup, long table with candles, ocean sunset backdrop, breezy romantic mood.","Rooftop reception party with city skyline view, elegant table settings, warm evening golden-hour lighting."],"name":"Reception"},{"prompts":["Soft pastel pink and blue balloon arch, \\\"Oh Baby\\\" banner space, delicate cloud and star decor, dreamy nursery mood.","Elegant flat-lay with tiny baby shoes, pastel booties, soft blanket, and floral accents, warm top-down natural light.","Boho-themed baby shower setup with macrame backdrop, dried pampas grass, cream and terracotta balloons, rustic aesthetic.","Gender-neutral safari-themed decor with cute animal cutouts, soft green and yellow palette, playful whimsical mood.","Vintage teddy bear and rattle prop flat-lay, soft cream tones, nostalgic tender baby-shower card design.","Garden party baby shower with pastel bunting flags, floral centerpieces, soft daylight, joyful outdoor celebration mood.","Traditional Indian godh bharai setup with fruits, flowers, and gold jewelry displayed, warm cultural festive tones.","Watercolor illustration of baby items (bottle, booties, rattle) with soft pastel wash, gentle greeting-card aesthetic.","Balloon garland in soft sage green and white with dried flowers woven in, minimalist modern baby-shower backdrop.","Cute cake-table setup with small fondant baby figurines, pastel macarons, soft studio lighting, celebratory sweet mood."],"name":"Baby Shower"},{"prompts":["Dramatic smoke-bomb burst in pink and blue against a neutral outdoor backdrop, dynamic action shot, joyful surprise mood.","Balloon box reveal moment with pink or blue balloons floating out, confetti burst, high-energy celebratory composition.","Elegant \\\"He or She\\\" banner backdrop with gold balloons and neutral cream tones, sophisticated modern design.","Cake-cutting reveal shot with pink or blue frosting inside a white cake, soft warm spotlight, suspenseful joyful moment.","Confetti cannon reveal scene in a garden setting, soft daylight, dynamic celebratory motion blur.","Minimalist flat-lay design with tiny pink and blue baby socks tied together, neutral beige background, clean modern aesthetic.","Fireworks-style gender reveal at dusk, pink and blue smoke trails in the sky, dramatic outdoor celebration mood.","Watercolor-style gender reveal card illustration with question mark and baby silhouette, soft pastel wash design.","Family group reaction shot around a reveal box, warm candid joy, soft natural lighting, heartfelt emotional composition.","Balloon pop reveal close-up with colored powder bursting out, dynamic freeze-frame photography style."],"name":"Gender Reveal"},{"prompts":["Traditional cradle (jhula) decorated with flowers and ribbons, baby name written on a wooden plaque, warm cultural setup.","Elegant floral backdrop with baby\u0027s name in gold lettering, soft pastel balloons, festive naming-ceremony aesthetic.","South Indian naming ceremony setup with banana leaves, brass lamps, jasmine garlands, warm traditional lighting.","Soft pastel invite design with baby footprints, delicate typography space, cream and gold palette, elegant card style.","Family gathered around a decorated cradle with flower petals, warm candid emotional moment, soft natural light.","Modern minimalist naming ceremony banner with baby name calligraphy, soft blush and white palette, clean design.","Traditional Punjabi naming ceremony (Namkaran) setup with gurdwara-style decor, marigold flowers, warm festive tones.","Rice-writing ritual close-up shot with baby\u0027s name being traced in rice grains, warm soft ceremonial lighting.","Balloon garland spelling out \\\"Welcome [Name]\\\" with pastel and gold accents, joyful festive backdrop design.","Watercolor illustration of a baby cradle with flowers and name tag, soft dreamy pastel aesthetic."],"name":"Naming Ceremony"},{"prompts":["Traditional decorated doorway with marigold torans, rangoli at entrance, brass kalash with coconut, warm festive Indian aesthetic.","Modern minimalist housewarming invite with house-key icon illustration, soft sage green and cream palette, clean design.","Warm interior shot of a new home with fairy lights, plants, and welcome mat, cozy inviting lifestyle mood.","Pooja setup at new home entrance with diya, flowers, and traditional silver items, warm ceremonial lighting.","Family group photo pose in front of new house with balloons, joyful candid celebration mood.","Elegant flat-lay with house keys, small potted plant, and welcome card, soft natural top-down lighting.","Rangoli design flat-lay at the doorstep with diyas and flower petals, vibrant festive colors, top-down composition.","Warm evening shot of a new home lit up with string lights, family silhouette at the door, inviting cozy mood.","Traditional Maharashtrian griha pravesh setup with turmeric-rice kalash, mango leaves toran, warm cultural richness.","Modern housewarming party scene with balloons, banner, and friends toasting, soft indoor warm lighting, joyful mood."],"name":"Housewarming (Griha Pravesh)"},{"prompts":["Elegant formal poster with a vintage pocket watch and \\\"Happy Retirement\\\" typography space, deep navy and gold palette.","Office desk flat-lay with a farewell card, pen, and coffee cup, warm soft natural light, sentimental professional mood.","Sunset beach scene symbolizing new beginnings, silhouette walking peacefully, warm golden-hour tones, reflective calm mood.","Corporate LinkedIn banner with clean geometric design, subtle laurel wreath icon, brand blue and gold palette, respectful tone.","Group photo style office celebration with balloons and cake, warm candid joyful farewell atmosphere.","Vintage-style poster with old photographs and a \\\"Thank You for Your Service\\\" typography frame, nostalgic sepia tones.","Golf course or garden retirement celebration scene, soft daylight, relaxed leisurely lifestyle mood.","Minimalist card design with a rocking chair icon and warm sunset gradient background, serene retirement symbolism.","Office team gathered around a decorated cake with \\\"Congratulations on Your Retirement\\\" banner, warm indoor lighting.","Elegant certificate-style design with gold border, ribbon seal, formal typography space, professional recognition mood."],"name":"Retirement"},{"prompts":["Graduation cap toss moment against a clear blue sky, joyful dynamic action shot, celebratory bright mood.","Elegant diploma flat-lay with graduation cap, tassel, and flowers, soft natural top-down lighting, formal composition.","University campus backdrop with graduates in gowns, warm golden-hour lighting, proud nostalgic mood.","Minimalist modern poster with graduation cap icon, bold typography space, deep blue and gold palette.","Confetti and balloon backdrop in school colors, \\\"Congratulations Graduate\\\" banner space, festive celebratory design.","Close-up of hands holding a rolled diploma tied with ribbon, soft warm studio lighting, achievement-focused composition.","Family celebration scene with graduate in gown surrounded by loved ones, warm candid joyful moment.","Night-time stadium or auditorium graduation ceremony with stage lighting, formal proud atmosphere.","Watercolor illustration of a graduation cap with stars and ribbons, soft pastel artistic design.","LinkedIn-style professional announcement banner with clean geometric shapes, subtle cap-and-scroll icon, corporate blue palette."],"name":"Graduation"},{"prompts":["Office desk being cleared with a farewell card and flowers, warm nostalgic soft lighting, sentimental mood.","Group photo of colleagues waving goodbye, warm indoor lighting, candid emotional farewell moment.","Elegant minimalist \\\"Wishing You Well\\\" card design with a compass or road icon, soft neutral palette.","Sunset road with a silhouette walking away, symbolizing new journeys, warm golden cinematic tone.","Balloon and banner setup in an office space reading \\\"We\u0027ll Miss You\\\", warm candid celebratory mood.","Vintage suitcase and travel props flat-lay symbolizing a new journey, warm sepia nostalgic tones.","Corporate LinkedIn farewell banner with clean geometric design, subtle handshake icon, professional blue-gold palette.","Cake-cutting farewell party scene in an office setting, warm soft lighting, joyful bittersweet mood.","Watercolor illustration of a paper airplane flying off, symbolizing new beginnings, soft pastel artistic design.","Team gathered around a farewell card signing moment, warm candid emotional composition, heartfelt tone."],"name":"Farewell"},{"prompts":["Warm doorway scene with a \\\"Welcome Home\\\" banner, balloons, and flowers, soft golden interior lighting, joyful reunion mood.","Family embrace at the front door with luggage nearby, warm candid emotional homecoming moment.","Elegant flat-lay with house keys, a welcome mat, and fresh flowers, soft natural top-down lighting.","Military homecoming scene with flag backdrop, warm emotional candid embrace, patriotic respectful tone.","Cozy living room setup with fairy lights and a \\\"Welcome Home\\\" banner, warm inviting soft lighting.","Balloon arch at the entrance with pastel colors, joyful festive homecoming celebration design.","Minimalist modern card design with a house and heart icon, soft sage and cream palette, clean aesthetic.","Table set with homemade food and a welcome banner, warm family gathering mood, soft indoor lighting.","Nighttime porch scene with string lights and a welcome sign, warm cozy inviting atmosphere.","Watercolor illustration of a house with open door and flowers, soft warm pastel homecoming design."],"name":"Welcome Home"}],"category":"Personal Events"},{"events":[{"prompts":["Rows of glowing terracotta diyas along a doorway, warm golden bokeh lights, rangoli patterns on the floor, festive night mood.","Vibrant rangoli flower design flat-lay with marigold petals and diyas, bright top-down natural lighting, colorful festive composition.","Fireworks bursting over a night sky with silhouetted rooftops, warm-cool color contrast, grand celebratory mood.","Elegant gold and maroon themed Diwali greeting card with diya illustration, traditional motifs bordering the frame.","Family lighting diyas together on a decorated doorstep, warm candid emotional moment, soft golden-hour lighting.","Modern minimalist Diwali poster with a single diya, geometric mandala pattern background, deep navy and gold palette.","Sweet box (mithai) flat-lay with dry fruits, gold foil packaging, and diyas, warm festive product-style composition.","Sky lanterns floating at dusk with warm string lights below, dreamy peaceful festive atmosphere.","Traditional pooja thali with diya, kumkum, and flowers, warm ceremonial top-down lighting, cultural richness.","Corporate Diwali greeting banner with clean geometric diya icon, brand-safe gold and maroon palette, professional festive tone."],"name":"Diwali"},{"prompts":["Explosive burst of colorful powder (gulal) in mid-air against a bright blue sky, dynamic high-energy composition.","Group of people joyfully throwing colors at each other, vibrant motion blur, festive candid celebration mood.","Close-up of color-stained hands holding a handful of gulal powder, warm bright macro photography style.","Traditional Holi bonfire (Holika Dahan) scene at dusk, warm orange glow, cultural ceremonial atmosphere.","Water balloons and pichkaris (water guns) flat-lay with colorful powder scattered, playful vibrant composition.","Elegant modern Holi poster with abstract color-splash design, bold rainbow palette, clean typography space.","Rooftop Holi party scene with colorful smoke bombs, joyful dancing silhouettes, vibrant dynamic mood.","Thandai and traditional sweets flat-lay with color powder bowls, warm festive product-style composition.","Children playing with colors in a courtyard, bright candid joyful action shot, warm daylight.","Watercolor-style illustration of color splashes forming a heart shape, vibrant playful greeting-card design."],"name":"Holi"},{"prompts":["Crescent moon and star silhouette against a deep blue twilight sky, warm string lights below, serene festive mood.","Elegant lantern (fanoos) illuminated with warm golden light, intricate geometric patterns, traditional Eid aesthetic.","Traditional feast table flat-lay with dates, biryani, and sweets, warm inviting top-down composition.","Family gathering for Eid prayers, warm candid emotional moment, soft golden morning light.","Modern minimalist Eid greeting card with crescent moon icon, deep green and gold palette, elegant typography space.","Mosque silhouette at sunset with warm orange sky gradient, peaceful spiritual festive atmosphere.","Henna-decorated hands close-up with Eid-themed patterns, warm soft ceremonial lighting, cultural detail shot.","Gift boxes and Eidi envelopes flat-lay with gold ribbon, warm festive celebratory composition.","Corporate Eid Mubarak LinkedIn banner with clean geometric lantern icon, professional green-gold palette.","Nighttime skyline with mosque minarets illuminated, warm festive lighting, grand celebratory mood."],"name":"Eid Mubarak"},{"prompts":["Decorated Christmas tree with warm twinkling lights and gold ornaments, cozy living room setting, festive warm glow.","Snowy village scene at dusk with warm-lit cottage windows, soft falling snow, magical winter atmosphere.","Flat-lay of wrapped gift boxes with red ribbon, pine branches, and cinnamon sticks, warm festive top-down composition.","Fireplace scene with stockings hung, warm cozy glow, family gathered mood, soft golden lighting.","Elegant minimalist Christmas card design with a single ornament illustration, deep red and gold palette.","Santa sleigh silhouette against a starry night sky, warm magical festive mood, whimsical composition.","Gingerbread cookies and hot cocoa flat-lay with holly leaves, warm cozy product-style photography.","Corporate Christmas LinkedIn banner with clean geometric tree icon, brand-safe red-green-gold palette, professional festive tone.","Candlelit Christmas dinner table setting with pine centerpiece, warm intimate family gathering mood.","Watercolor illustration of a snow-covered pine tree with warm string lights, soft pastel winter aesthetic."],"name":"Christmas"},{"prompts":["Fireworks bursting over a city skyline at midnight, vibrant multi-color celebration, grand dynamic composition.","Champagne toast close-up with sparklers in background, warm golden bokeh, celebratory New Year mood.","Elegant \\\"Happy New Year\\\" poster with gold confetti and clock striking midnight, deep navy and gold palette.","Rooftop New Year party scene with string lights and city view, joyful candid celebration mood.","Minimalist modern countdown-themed design with bold numerals, clean geometric background, festive corporate tone.","Balloon drop moment at a party venue, dynamic high-energy celebratory composition, warm spotlight.","Watercolor illustration of fireworks over a calendar page turning, soft pastel artistic New Year design.","Corporate New Year LinkedIn banner with clean geometric design, brand-safe blue-gold palette, professional celebratory tone.","Family gathered around a table with New Year resolutions written on cards, warm candid heartfelt mood.","Sparkler writing \\\"2027\\\" in the night sky, long-exposure light trail photography, festive dynamic mood."],"name":"New Year"},{"prompts":["Close-up of a decorative rakhi being tied on a wrist, warm soft ceremonial lighting, intimate cultural detail shot.","Traditional pooja thali with rakhi, roli, rice, and sweets, warm top-down festive composition.","Sibling embrace moment with rakhi visible on wrist, warm candid emotional lighting, heartfelt mood.","Elegant modern Raksha Bandhan poster with thread and floral motif, deep red and gold palette.","Flat-lay of colorful rakhis with sweets and gift box, warm festive product-style photography.","Sisters tying rakhi on brother\u0027s wrist in a decorated home setting, warm golden-hour lighting.","Watercolor illustration of a rakhi thread with floral accents, soft pastel greeting-card design.","Corporate Raksha Bandhan LinkedIn banner with clean geometric rakhi icon, professional festive palette.","Traditional Indian courtyard setup with marigold garlands and rakhi thali, warm cultural richness.","Gift exchange moment between siblings with warm candid joy, soft indoor natural lighting."],"name":"Raksha Bandhan"},{"prompts":["Decorated Krishna idol with peacock feather crown, flowers, and diyas, warm ceremonial golden lighting.","Dahi Handi celebration scene with human pyramid formation, dynamic energetic festive composition.","Traditional flower and diya decor around a swing (jhula) for Krishna idol, warm cultural richness.","Elegant modern Janmashtami poster with peacock feather motif, deep blue and gold palette.","Midnight temple celebration scene with warm glowing lights, devotional serene atmosphere.","Flat-lay of traditional sweets (makhan-mishri) with tulsi leaves, warm festive product-style composition.","Children dressed as Krishna and Radha, warm candid joyful cultural celebration mood.","Watercolor illustration of Lord Krishna with flute under a tree, soft pastel spiritual design.","Rangoli design flat-lay with peacock feather patterns and diyas, vibrant festive composition.","Temple bells and flower garland close-up shot, warm devotional ceremonial lighting."],"name":"Janmashtami"},{"prompts":["Beautifully decorated Ganesh idol with flower garlands and modak offerings, warm festive golden lighting.","Grand pandal decoration with lights and drapes framing the idol, vibrant devotional atmosphere.","Elegant modern Ganesh Chaturthi poster with modak and flower motif, deep orange and gold palette.","Visarjan procession scene with crowd dancing, dynamic energetic festive composition, warm daylight.","Flat-lay of modak sweets with hibiscus flowers and diyas, warm top-down product-style photography.","Close-up of Ganesh idol\u0027s decorated crown with intricate jewelry, warm ceremonial detail shot.","Family performing aarti in front of a home Ganesh setup, warm candid devotional mood.","Watercolor illustration of Lord Ganesh with modak, soft pastel spiritual greeting-card design.","Corporate Ganesh Chaturthi LinkedIn banner with clean geometric idol silhouette, professional festive palette.","Night-time immersion (visarjan) scene at a river with lights reflecting on water, serene festive mood."],"name":"Ganesh Chaturthi"},{"prompts":["Vibrant garba dance scene with colorful chaniya choli outfits swirling, dynamic energetic night celebration.","Elegant Durga idol decorated with flowers and traditional jewelry, warm devotional golden lighting.","Dandiya sticks crossed in mid-dance, colorful bokeh lights in background, festive dynamic composition.","Nine-day Navratri color theme flat-lay with fabric swatches representing each day\u0027s color, vibrant creative composition.","Traditional garba circle formation viewed from above, colorful outfits, warm string-lit venue, grand festive mood.","Flat-lay of pooja thali with kalash, coconut, and marigold flowers, warm cultural top-down composition.","Watercolor illustration of a dandiya dancer in traditional attire, vibrant artistic greeting-card design.","Corporate Navratri LinkedIn banner with clean geometric dandiya stick icon, festive multi-color palette.","Close-up of intricate mirror-work chaniya choli fabric with jewelry, warm cultural detail shot.","Night-time garba venue with colorful lighting and dancing crowd silhouettes, dynamic grand celebration mood."],"name":"Navratri"},{"prompts":["Grand Durga idol pandal with intricate decorations and warm devotional lighting, cultural grandeur.","Traditional dhak (drum) player performing at a pandal, warm festive candid composition.","Flat-lay of pooja thali with red hibiscus flowers, sindoor, and diya, warm ceremonial top-down shot.","Sindoor khela celebration scene with women in red-bordered white sarees, warm candid festive mood.","Elegant modern Durga Puja poster with goddess silhouette and floral motif, deep red and gold palette.","Night-time pandal hopping scene with colorful lights and crowds, dynamic festive urban atmosphere.","Watercolor illustration of Goddess Durga with lotus flowers, soft artistic devotional design.","Close-up of traditional dhunuchi dance with smoke and rhythm, warm dramatic festive lighting.","Corporate Durga Puja LinkedIn banner with clean geometric idol silhouette, professional festive palette.","Immersion procession (visarjan) scene at a river ghat, warm dusk lighting, emotional cultural mood."],"name":"Durga Puja"},{"prompts":["Colorful kites soaring against a clear blue sky, dynamic joyful festive composition.","Flat-lay of til-gud sweets with sesame seeds and jaggery, warm top-down product-style photography.","Rooftop kite-flying scene with string lights and crowd silhouettes, vibrant festive urban mood.","Elegant modern Makar Sankranti poster with kite motif, warm orange and yellow palette.","Traditional bonfire scene at dawn with warm golden glow, cultural harvest-festival atmosphere.","Close-up of hands holding a kite spool (manjha), warm daylight, dynamic action detail shot.","Watercolor illustration of colorful kites in the sky, soft pastel artistic festive design.","Family gathered on a rooftop flying kites together, warm candid joyful celebration mood.","Flat-lay of harvest crops and til-gud laddoos, warm rustic top-down composition.","Corporate Makar Sankranti LinkedIn banner with clean geometric kite icon, festive orange-yellow palette."],"name":"Makar Sankranti"},{"prompts":["Traditional clay pot with overflowing rice and milk (Pongal dish) on a decorated stove, warm festive lighting.","Vibrant kolam (rangoli) design at a doorstep with flowers, bright top-down natural composition.","Sugarcane stalks and banana leaves decor flat-lay, warm harvest-festival cultural composition.","Elegant modern Pongal poster with pot and sugarcane motif, deep yellow and green palette.","Family gathered around a Pongal pot cooking outdoors, warm candid cultural celebration mood.","Close-up of Pongal dish garnished with cashews and ghee, warm appetizing food-photography style.","Bullock cart or Jallikattu festive scene, dynamic cultural rural celebration composition.","Watercolor illustration of a Pongal pot with sugarcane, soft pastel artistic harvest design.","Corporate Pongal LinkedIn banner with clean geometric pot icon, festive yellow-green palette.","Sunrise farm field scene with harvest crops, warm golden agricultural festive mood."],"name":"Pongal"},{"prompts":["Elaborate pookalam (flower rangoli) design in a courtyard, vibrant multi-color floral top-down composition.","Traditional Onam sadya feast spread on a banana leaf, warm festive top-down food photography.","Kathakali dancer in vibrant traditional makeup and costume, dramatic warm stage lighting.","Elegant modern Onam poster with pookalam and boat motif, deep gold and green palette.","Vallam Kali (snake boat race) scene on a river, dynamic energetic cultural celebration.","Family gathered around a decorated Onam sadya table, warm candid cultural festive mood.","Close-up of a pookalam being arranged with marigold and jasmine petals, warm detailed composition.","Watercolor illustration of a snake boat with flowers, soft pastel artistic festive design.","Corporate Onam LinkedIn banner with clean geometric pookalam icon, festive gold-green palette.","Traditional Kerala house with banana leaf decor and oil lamps, warm cultural rustic atmosphere."],"name":"Onam"},{"prompts":["Vibrant Bhangra dance scene with colorful turbans and dynamic movement, energetic festive composition.","Golden wheat fields at harvest time with warm sunlight, rustic Punjab agricultural mood.","Traditional Gurdwara decorated with flowers and lights, warm devotional festive atmosphere.","Elegant modern Baisakhi poster with wheat stalk and dhol motif, warm yellow and orange palette.","Flat-lay of traditional Punjabi sweets and turban fabric, warm festive top-down composition.","Dhol player performing at a Baisakhi celebration, dynamic warm festive candid shot.","Watercolor illustration of a farmer with wheat harvest, soft pastel artistic rustic design.","Family gathered for a Baisakhi feast with traditional Punjabi dishes, warm candid celebration mood.","Corporate Baisakhi LinkedIn banner with clean geometric wheat icon, festive yellow-orange palette.","Sunset farmland scene with harvest celebration silhouettes, warm golden rustic festive mood."],"name":"Baisakhi"},{"prompts":["Bonfire celebration scene at night with warm orange glow, festive gathering silhouettes around it.","Flat-lay of til, gajak, and popcorn traditional Lohri treats, warm top-down festive composition.","Family dancing around a bonfire in warm traditional attire, dynamic candid celebration mood.","Elegant modern Lohri poster with bonfire and wheat motif, deep orange and gold palette.","Children distributing sweets during Lohri celebrations, warm candid joyful cultural mood.","Close-up of peanuts and til-gud being offered to the bonfire, warm ceremonial detail shot.","Watercolor illustration of a bonfire with stars in the night sky, soft pastel artistic design.","Corporate Lohri LinkedIn banner with clean geometric flame icon, festive orange-gold palette.","Traditional Punjabi folk dance around a decorated fire, warm energetic festive composition.","Winter evening courtyard scene with warm bonfire light and festive decorations, cozy cultural mood."],"name":"Lohri"},{"prompts":["Woman looking at the moon through a decorative sieve (chalni), warm moonlit romantic composition.","Traditional pooja thali with diya, sindoor, and sweets, warm ceremonial top-down festive shot.","Elegant modern Karwa Chauth poster with moon and sieve motif, deep red and gold palette.","Couple sharing water after the fast is broken, warm candid emotional romantic moment.","Flat-lay of bangles, mehndi, and traditional sweets, warm festive cultural top-down composition.","Night sky with a full moon and warm string lights below, serene romantic festive mood.","Watercolor illustration of a woman in traditional attire looking at the moon, soft artistic design.","Close-up of hennaed hands holding a diya, warm ceremonial detailed composition.","Women gathered for a Karwa Chauth pooja circle, warm candid cultural celebration mood.","Corporate Karwa Chauth LinkedIn-style greeting banner with clean geometric moon icon, festive red-gold palette."],"name":"Karwa Chauth"}],"category":"Festivals"},{"events":[{"prompts":["Ribbon-cutting ceremony scene with scissors and red ribbon, confetti falling, professional celebratory composition.","Elegant storefront with \\\"Grand Opening\\\" banner, balloons, and warm welcoming lighting, inviting commercial aesthetic.","Modern minimalist grand opening poster with bold typography space, clean geometric shapes, brand-color palette.","Crowd gathered outside a newly opened store with balloons and banners, warm candid celebratory mood.","Close-up of a ribbon-cutting moment with dignitaries, formal professional lighting, corporate event style.","Nighttime storefront illuminated with string lights and a glowing \\\"Now Open\\\" sign, inviting warm ambiance.","Flat-lay of a grand opening invitation card with gold foil accents, professional elegant design.","Balloon arch entrance at a new business location, vibrant festive commercial celebration mood.","LinkedIn-style professional banner announcing a grand opening with clean geometric building icon, corporate palette.","Fireworks or confetti cannon celebration outside a new store at dusk, dynamic grand celebratory mood."],"name":"Grand Opening"},{"prompts":["Elegant storefront display with new product arrangements, warm inviting retail lighting, professional commercial composition.","Modern minimalist \\\"Store Launch\\\" poster with bold typography space, clean brand-color geometric design.","Crowd browsing a newly launched store with warm ambient lighting, candid commercial lifestyle mood.","Flat-lay of store launch invitation with product samples and ribbon accents, professional elegant composition.","Close-up of a shopfront signboard being unveiled, formal celebratory professional lighting.","Balloon and banner decorated storefront entrance, vibrant festive commercial celebration mood.","Interior shot of a newly launched store with clean shelving and warm welcoming light.","LinkedIn-style professional banner announcing a store launch with clean geometric shop icon, corporate palette.","Nighttime storefront illuminated with warm string lights and a \\\"Store Launch\\\" glowing sign.","Team photo in front of the new store with a ribbon-cutting moment, warm candid celebratory mood."],"name":"Store Launch"},{"prompts":["Spotlight on a product silhouette with dramatic reveal lighting, sleek modern professional composition.","Elegant minimalist product launch poster with bold typography space, clean geometric brand-color background.","Stage setup with a product displayed on a pedestal, dramatic uplighting, high-tech launch event mood.","Flat-lay of product packaging with launch date typography space, professional clean commercial photography.","Confetti burst reveal moment around a product on display, dynamic celebratory launch composition.","Close-up macro shot of the product with soft studio lighting, premium commercial photography style.","Crowd at a launch event applauding, warm professional celebratory event photography mood.","LinkedIn-style professional banner announcing a product launch with clean geometric icon, corporate palette.","Digital screen displaying product launch countdown, sleek modern tech-event aesthetic.","Press conference style scene with product on a table and microphones, formal professional launch mood."],"name":"Product Launch"},{"prompts":["Elegant office lobby decorated with balloons and a milestone-year banner, professional celebratory composition.","Modern minimalist company anniversary poster with bold number typography space, clean brand-color palette.","Team gathered for a cake-cutting celebration in office attire, warm candid professional celebration mood.","Flat-lay of a company anniversary card with gold foil milestone number, elegant corporate design.","Timeline-style graphic layout showing years of growth, clean geometric professional infographic composition.","Office celebration scene with confetti and a \\\"Celebrating X Years\\\" banner, warm professional mood.","LinkedIn-style banner with clean geometric milestone badge icon, brand-safe corporate palette.","Close-up of a commemorative plaque or trophy, formal professional recognition lighting.","Group toast moment with employees raising glasses, warm candid celebratory office atmosphere.","Elegant stage backdrop for an anniversary event with company logo and gold accents, formal grand mood."],"name":"Company Anniversary"},{"prompts":["Modern conference hall stage with branded backdrop and professional stage lighting, formal corporate composition.","Elegant networking event scene with round tables and soft ambient lighting, professional business mood.","Flat-lay of corporate event invitation with clean geometric design, brand-color professional palette.","Panel discussion stage setup with microphones and branded banner, formal business event composition.","Close-up of a name badge and lanyard on a table, professional clean corporate detail shot.","Audience seated in a conference hall with stage lighting, formal professional event atmosphere.","LinkedIn-style banner announcing a corporate event with clean geometric icon, brand-safe palette.","Cocktail networking reception scene with soft warm lighting, professional social business mood.","Stage backdrop with company logo and welcome message, formal grand corporate event mood.","Team photo at a corporate event with branded step-and-repeat backdrop, professional celebratory composition."],"name":"Corporate Event"},{"prompts":["Modern lecture hall with a speaker on stage and screen presentation, professional educational composition.","Flat-lay of seminar materials — notebook, pen, and agenda card, clean professional top-down shot.","Audience taking notes during a seminar session, warm candid professional learning atmosphere.","LinkedIn-style banner announcing a seminar with clean geometric icon, brand-safe professional palette.","Close-up of a presentation slide on a large screen with a speaker silhouette, formal educational mood.","Networking break scene during a seminar with attendees chatting, warm professional social composition.","Panel of speakers seated at a seminar stage, formal professional event lighting.","Registration desk setup with banners and name tags, clean professional event composition.","Certificate of participation flat-lay with a pen and ribbon seal, formal recognition design.","Wide shot of a full seminar hall with attentive audience, professional grand educational mood."],"name":"Seminar"},{"prompts":["Hands-on workshop scene with participants working at tables, warm collaborative professional atmosphere.","Flat-lay of workshop materials — tools, notebook, and laptop, clean professional top-down composition.","Instructor demonstrating a technique to engaged participants, warm educational candid mood.","LinkedIn-style banner announcing a workshop with clean geometric icon, brand-safe professional palette.","Close-up of hands creating or building something during a workshop, warm detailed craft photography.","Group discussion circle setup at a workshop, warm collaborative professional composition.","Whiteboard filled with workshop notes and diagrams, clean professional educational atmosphere.","Certificate and workshop kit flat-lay, professional clean recognition design.","Wide shot of a workshop space with participants engaged at stations, warm collaborative mood.","Feedback session scene at the end of a workshop, warm candid professional closing atmosphere."],"name":"Workshop"},{"prompts":["Grand conference hall stage with large screen and branded backdrop, formal professional composition.","Flat-lay of conference badge, agenda booklet, and pen, clean professional top-down shot.","Keynote speaker on stage with dramatic spotlight, formal professional event lighting.","LinkedIn-style banner announcing a conference with clean geometric icon, brand-safe professional palette.","Networking hall scene with attendees at branded booths, warm professional business atmosphere.","Wide shot of a packed conference auditorium with stage lighting, grand professional mood.","Panel discussion setup with multiple speakers and microphones, formal business event composition.","Close-up of a conference lanyard and badge, clean professional detail shot.","Exhibition booth with branded displays and banners, professional commercial event mood.","Closing ceremony stage with confetti and applause, warm celebratory professional atmosphere."],"name":"Conference"},{"prompts":["Clean modern laptop screen showing a webinar presentation, professional digital composition.","Flat-lay of webinar setup — laptop, headphones, and notebook, clean professional top-down shot.","Speaker recording in a home studio setup with ring light, professional digital content-creation mood.","LinkedIn-style banner announcing a webinar with clean geometric icon, brand-safe professional palette.","Split-screen style graphic showing speaker and presentation slide, modern digital event composition.","Close-up of a webinar registration page mockup on a screen, clean professional digital design.","Calendar reminder graphic with webinar date and time, clean modern professional composition.","Chat/Q\u0026A interface mockup on a screen during a live webinar, professional digital engagement mood.","Certificate of webinar attendance flat-lay design, professional clean recognition composition.","Wide shot of a home office setup with webinar streaming equipment, professional modern remote-work mood."],"name":"Webinar"},{"prompts":["Elegant stage with a spotlight on a trophy, dramatic formal award-ceremony composition.","Flat-lay of a trophy, certificate, and gold ribbon, clean professional recognition design.","Winner receiving an award on stage with applause, warm formal celebratory composition.","LinkedIn-style banner announcing an award with clean geometric trophy icon, brand-safe professional palette.","Close-up of hands holding a glass award trophy, elegant formal professional detail shot.","Red carpet entrance scene for an award ceremony, glamorous formal grand composition.","Stage backdrop with category names and spotlight beams, formal professional award-show mood.","Group photo of winners holding trophies, warm candid celebratory professional atmosphere.","Elegant gala dinner setup before an award ceremony, formal sophisticated professional mood.","Certificate and medal flat-lay with gold accents, clean formal recognition composition."],"name":"Award Ceremony"},{"prompts":["Professional headshot-style composition with an upward arrow graphic symbolizing growth, clean corporate design.","Flat-lay of a promotion letter, pen, and name badge, clean professional top-down shot.","Office celebration scene with colleagues congratulating, warm candid professional mood.","LinkedIn-style banner announcing a promotion with clean geometric upward-arrow icon, brand-safe palette.","Close-up of a new business card design symbolizing a title change, professional clean detail shot.","Handshake moment between employee and manager, warm formal professional celebratory composition.","Office desk flat-lay with a \\\"Congratulations on Your Promotion\\\" card, clean professional design.","Team applauding in a meeting room, warm candid celebratory office atmosphere.","Elegant certificate-style design with a new title and gold border, formal recognition composition.","Modern minimalist poster with a staircase icon symbolizing career growth, clean corporate palette."],"name":"Promotion Announcement"}],"category":"Business Events"},{"events":[{"prompts":["Close-up of intertwined hands with a red rose, soft warm romantic bokeh lighting.","Elegant candlelit dinner table for two with rose petals, warm intimate romantic composition.","Minimalist heart-shaped balloon against a soft pastel pink background, clean romantic design.","Flat-lay of roses, chocolates, and a handwritten love note, warm romantic top-down composition.","Couple silhouette walking on a beach at sunset, warm golden romantic cinematic mood.","Watercolor illustration of two hearts intertwined with roses, soft pastel romantic greeting-card design.","Rose petal heart shape on a bed, soft warm romantic lighting, dreamy intimate composition.","Gift box with a red ribbon and rose on top, warm romantic product-style photography.","LinkedIn-style professional \\\"Happy Valentine\u0027s Day\\\" banner with clean heart icon, brand-safe soft palette.","Nighttime rooftop date scene with string lights and city view, warm romantic ambiance."],"name":"Valentine\u0027s Day"},{"prompts":["Warm embrace between mother and child, soft natural lighting, tender emotional composition.","Flat-lay of fresh flowers, a handwritten card, and a cup of tea, warm soft top-down design.","Elegant minimalist \\\"Happy Mother\u0027s Day\\\" poster with floral motif, soft pastel palette.","Mother and child baking together in a warm kitchen setting, candid joyful lifestyle mood.","Bouquet of pastel flowers tied with ribbon, soft natural light, gentle greeting-card composition.","Watercolor illustration of a mother holding a child with floral background, soft artistic design.","Breakfast-in-bed tray setup with flowers and a card, warm cozy morning composition.","Vintage-style photo frame effect with mother and child silhouette, warm nostalgic tones.","LinkedIn-style \\\"Happy Mother\u0027s Day\\\" banner with clean floral icon, brand-safe soft palette.","Garden setting with mother and child among flowers, warm soft daylight, joyful tender mood."],"name":"Mother\u0027s Day"},{"prompts":["Warm embrace between father and child, soft natural lighting, heartfelt emotional composition.","Flat-lay of a necktie, watch, and handwritten card, clean warm top-down design.","Elegant minimalist \\\"Happy Father\u0027s Day\\\" poster with tie motif, deep navy and gold palette.","Father and child playing together outdoors, candid joyful warm lifestyle mood.","Coffee mug and newspaper flat-lay with a \\\"Best Dad\\\" card, warm cozy morning composition.","Watercolor illustration of a father holding a child\u0027s hand, soft artistic tender design.","Vintage-style photo frame effect with father and child silhouette, warm nostalgic tones.","LinkedIn-style \\\"Happy Father\u0027s Day\\\" banner with clean tie icon, brand-safe professional palette.","Fishing or outdoor adventure scene with father and child, warm golden-hour bonding mood.","Grilling/barbecue family scene with father at the center, warm candid celebratory composition."],"name":"Father\u0027s Day"},{"prompts":["Group of friends laughing together outdoors, warm candid joyful natural lighting.","Flat-lay of friendship bands, polaroid photos, and a handwritten note, warm nostalgic top-down design.","Elegant minimalist \\\"Happy Friendship Day\\\" poster with interlocked hands icon, soft pastel palette.","Friends taking a group selfie at sunset, warm candid joyful lifestyle composition.","Close-up of hands tying a friendship band, warm soft ceremonial detail shot.","Watercolor illustration of friends holding hands under a rainbow, soft pastel artistic design.","Picnic scene with friends gathered on a blanket, warm daylight, joyful candid mood.","LinkedIn-style \\\"Happy Friendship Day\\\" banner with clean handshake icon, brand-safe soft palette.","Road trip scene with friends in a car, warm golden-hour candid adventure mood.","Coffee shop scene with friends chatting, warm cozy candid lifestyle composition."],"name":"Friendship Day"},{"prompts":["Empowering portrait-style silhouette of a woman against a sunrise, warm inspiring composition.","Elegant minimalist \\\"Happy Women\u0027s Day\\\" poster with floral and gender-symbol motif, soft purple-gold palette.","Group of diverse women standing together, warm candid empowering professional mood.","Flat-lay of flowers, a book, and a candle symbolizing strength and grace, warm top-down design.","Watercolor illustration of a woman with flowers blooming around her, soft artistic empowering design.","Close-up of hands holding a purple ribbon or flower, warm symbolic detail shot.","LinkedIn-style \\\"Happy Women\u0027s Day\\\" banner with clean geometric icon, brand-safe purple-gold palette.","Professional women in a workplace setting, warm candid empowering corporate mood.","Silhouette of a woman raising a fist or hand in celebration, warm inspiring dynamic composition.","Elegant portrait with soft natural light highlighting confidence and grace, warm empowering tone."],"name":"Women\u0027s Day"},{"prompts":["Classroom scene with a teacher writing on a chalkboard, warm nostalgic educational composition.","Flat-lay of books, an apple, and a handwritten thank-you card, warm top-down design.","Elegant minimalist \\\"Happy Teachers\u0027 Day\\\" poster with book and pencil motif, soft gold-blue palette.","Students presenting flowers to a teacher, warm candid heartfelt classroom mood.","Watercolor illustration of a book opening into a tree, soft artistic educational design.","Close-up of a teacher\u0027s desk with chalk, books, and an apple, warm nostalgic detail shot.","LinkedIn-style \\\"Happy Teachers\u0027 Day\\\" banner with clean geometric book icon, brand-safe professional palette.","Graduation-style tribute scene honoring teachers, warm formal respectful composition.","Classroom celebration with balloons and a \\\"Thank You Teachers\\\" banner, warm candid joyful mood.","Vintage-style chalkboard with \\\"Happy Teachers\u0027 Day\\\" written in cursive, warm nostalgic aesthetic."],"name":"Teachers\u0027 Day"},{"prompts":["Children playing joyfully in a park, bright warm candid lifestyle composition.","Flat-lay of toys, balloons, and colorful candies, bright playful top-down design.","Elegant minimalist \\\"Happy Children\u0027s Day\\\" poster with balloon and kite motif, bright rainbow palette.","Kids in school uniforms celebrating with balloons, warm candid joyful classroom mood.","Watercolor illustration of children playing under a rainbow, soft pastel artistic design.","Close-up of a child\u0027s hands holding colorful balloons, bright warm joyful detail shot.","LinkedIn-style \\\"Happy Children\u0027s Day\\\" banner with clean geometric balloon icon, brand-safe bright palette.","Classroom party scene with cake and games, warm candid celebratory mood.","Children flying kites in a park, bright dynamic joyful outdoor composition.","Storytelling scene with kids gathered around a teacher, warm cozy educational mood."],"name":"Children\u0027s Day"}],"category":"️ Special Days"},{"events":[{"prompts":["Elegant floral-bordered invitation card mockup with gold foil calligraphy space, ivory and blush palette.","Traditional Indian wedding invite with peacock and marigold motifs, warm gold and red palette.","Minimalist modern wedding invite design with clean typography frame, soft sage green palette.","Flat-lay of a wedding invitation card with dried flowers and ribbon, warm elegant top-down composition.","Royal-style invitation with ornate gold border and crest motif, opulent formal aesthetic.","Watercolor floral wedding invite design with soft pastel wash, romantic artistic composition.","Vintage lace-textured wedding invite with classic script typography space, nostalgic elegant design.","Beach-themed wedding invite with seashell and wave motifs, soft coastal color palette.","Regal Rajasthani-style invite with elephant and mandala motifs, warm maroon-gold palette.","Digital-style modern invite mockup with QR code space and clean geometric design, contemporary aesthetic."],"name":"Wedding Invitation"},{"prompts":["Traditional pooja invitation card with diya and lotus motif, warm gold-red palette.","Elegant flat-lay of a puja invite with flowers, kumkum, and rice grains, warm ceremonial composition.","Minimalist modern puja invite design with clean typography frame, soft cream-gold palette.","Om symbol bordered invitation card with marigold accents, warm devotional aesthetic.","Watercolor illustration style puja invite with lotus and diya, soft pastel spiritual design.","Temple-bell motif bordered invitation card, warm traditional ceremonial composition.","Flat-lay of a puja thali beside an invitation card, warm cultural top-down photography.","Vintage-style puja invite with intricate mandala pattern border, warm nostalgic aesthetic.","South Indian style puja invite with banana leaf and lamp motifs, warm cultural composition.","Digital mockup of a modern puja invite with clean geometric temple icon, contemporary aesthetic."],"name":"Puja Invitation"},{"prompts":["Traditional pooja setup with Satyanarayan idol, banana leaves, and diyas, warm devotional composition.","Flat-lay of prasad (sweets) and pooja thali with tulsi leaves, warm ceremonial top-down shot.","Elegant invitation card design with lotus and diya motif, warm gold-red palette.","Family gathered for katha with a priest performing rituals, warm candid devotional mood.","Close-up of a decorated kalash with coconut and mango leaves, warm ceremonial detail shot.","Watercolor illustration of a diya with lotus flowers, soft pastel spiritual design.","Traditional home pooja room decorated with flowers and lights, warm devotional atmosphere.","Flat-lay of religious books, incense, and bell beside a diya, warm cultural composition.","Evening aarti scene with warm glowing diyas in hand, devotional serene mood.","Modern minimalist invite design with Om symbol and floral border, clean devotional aesthetic."],"name":"Satyanarayan Katha"},{"prompts":["Warm evening gathering scene with musicians playing harmonium and tabla, devotional cultural composition.","Flat-lay of musical instruments (harmonium, tabla, manjira) with flowers, warm cultural top-down shot.","Elegant invitation card with lotus and musical note motif, warm gold-cream palette.","Candlelit devotional singing circle scene, warm intimate spiritual atmosphere.","Close-up of hands playing tabla with warm ambient stage lighting, cultural musical detail shot.","Watercolor illustration of a diya with musical notes floating, soft pastel spiritual design.","Temple courtyard setup for an evening bhajan session, warm devotional cultural composition.","Group of devotees singing together with warm string lighting, candid spiritual celebration mood.","Modern minimalist invite design with harmonium icon and floral border, clean devotional aesthetic.","Nighttime outdoor bhajan sandhya with fairy lights and floral decor, warm serene composition."],"name":"Bhajan Sandhya"},{"prompts":["Decorated Devi idol setup with red chunri, flowers, and diyas, warm devotional composition.","Flat-lay of pooja thali with kumkum, coconut, and marigold flowers, warm ceremonial top-down shot.","Elegant invitation card design with trishul and diya motif, warm red-gold palette.","Warm evening chowki setup with red and gold fabric backdrop, devotional festive atmosphere.","Close-up of a decorated Devi idol\u0027s crown and jewelry, warm ceremonial detail shot.","Watercolor illustration of a diya with red chunri drape, soft artistic spiritual design.","Family gathered for a chowki with a priest performing aarti, warm candid devotional mood.","Flat-lay of dhol and manjira instruments beside flowers, warm cultural musical composition.","Modern minimalist invite design with trishul icon and floral border, clean devotional aesthetic.","Nighttime outdoor chowki setup with string lights and red drapes, warm festive devotional mood."],"name":"Mata Ki Chowki"},{"prompts":["Traditional havan kund with sacred fire and rising smoke, warm ceremonial spiritual composition.","Flat-lay of havan samagri (offerings), ghee, and wooden sticks, warm ritual top-down shot.","Priest performing havan rituals with mantras, warm devotional candid composition.","Elegant invitation card design with fire and Om motif, warm gold-red palette.","Close-up of hands offering ghee into the sacred fire, warm ceremonial detail shot.","Watercolor illustration of a havan kund with rising flames, soft artistic spiritual design.","Family seated around a havan kund performing rituals together, warm candid devotional mood.","Flat-lay of religious texts and a bell beside the havan setup, warm cultural composition.","Modern minimalist invite design with flame icon and floral border, clean devotional aesthetic.","Outdoor havan ceremony at sunrise with warm golden light, serene spiritual atmosphere."],"name":"Havan"},{"prompts":["Decorated Guru Granth Sahib setup with flowers and chandoa canopy, warm devotional composition.","Flat-lay of prasad (karah parshad) and pooja thali, warm ceremonial top-down shot.","Elegant invitation card design with khanda symbol and floral border, warm gold-blue palette.","Devotees seated for continuous scripture reading, warm candid spiritual composition.","Close-up of a decorated palki (canopy) with flowers, warm ceremonial detail shot.","Watercolor illustration of a khanda symbol with floral accents, soft artistic spiritual design.","Gurdwara interior decorated with lights and flowers, warm devotional cultural atmosphere.","Flat-lay of religious texts and a ceremonial sword (kirpan) motif, warm cultural composition.","Modern minimalist invite design with khanda icon and floral border, clean devotional aesthetic.","Community langar (meal) scene alongside the akhand path, warm candid cultural community mood."],"name":"Akhand Path"}],"category":"Religious Events"},{"events":[{"prompts":["Elegant school stage setup with curtains and spotlight, formal cultural-event composition.","Flat-lay of a school annual day program booklet and medal, clean professional top-down shot.","Children performing on stage in colorful costumes, warm candid festive school composition.","LinkedIn-style banner announcing an annual day event with clean geometric star icon, brand-safe palette.","Close-up of a trophy and certificate on a decorated table, formal recognition composition.","Audience of parents watching a school performance, warm candid proud atmosphere.","Balloon and banner decorated school auditorium stage, festive celebratory composition.","Watercolor illustration of a stage curtain with stars, soft artistic celebratory design.","Prize distribution ceremony scene with children receiving medals, warm formal candid mood.","Wide shot of a decorated school ground with stage and seating, grand celebratory atmosphere."],"name":"School Annual Day"},{"prompts":["Vibrant college fest stage with colorful lighting and a live performance, dynamic energetic composition.","Flat-lay of fest merchandise, wristbands, and a program guide, clean vibrant top-down shot.","Students dancing at a college fest, warm candid dynamic celebratory mood.","LinkedIn-style banner announcing a college fest with clean geometric icon, brand-safe vibrant palette.","Close-up of a stage with DJ equipment and colorful lights, dynamic modern event composition.","Food stalls and game booths at a college fest ground, warm candid festive atmosphere.","Group of students posing with fest banners, warm joyful candid composition.","Night-time concert scene at a college fest with crowd silhouettes, dynamic energetic mood.","Watercolor illustration of confetti and a stage, soft artistic celebratory design.","Wide shot of a decorated college campus with fest banners and lights, vibrant grand atmosphere."],"name":"College Fest"},{"prompts":["Graduates in gowns and caps standing in formation, formal proud academic composition.","Flat-lay of a diploma scroll, cap, and medal, clean formal top-down shot.","Stage ceremony scene with a dean handing over degrees, formal academic composition.","LinkedIn-style banner announcing a convocation with clean geometric cap icon, brand-safe professional palette.","Close-up of hands holding a rolled diploma with ribbon, formal achievement-focused composition.","Graduation cap toss moment against a clear sky, joyful dynamic celebratory shot.","Family celebrating with a graduate outside the convocation hall, warm candid proud mood.","Watercolor illustration of a graduation cap with stars, soft artistic academic design.","Wide shot of a grand convocation hall with formal stage setup, academic prestigious atmosphere.","Portrait-style shot of a graduate in gown and cap, formal proud professional composition."],"name":"Convocation"},{"prompts":["Flat-lay of a report card, pen, and trophy, clean celebratory top-down composition.","Student celebrating with raised arms after seeing results, warm candid joyful mood.","Elegant minimalist \\\"Exam Success\\\" poster with star and checkmark motif, clean bright palette.","Family congratulating a student with a cake, warm candid celebratory home atmosphere.","Close-up of a certificate with a gold star sticker, formal recognition composition.","Watercolor illustration of a book with a trophy on top, soft artistic celebratory design.","LinkedIn-style \\\"Congratulations on Your Success\\\" banner with clean geometric icon, brand-safe palette.","Student holding a result sheet with a big smile, warm candid joyful composition.","Balloon and banner decorated study desk, festive celebratory academic mood.","Sunrise scene with an open book and a trophy silhouette, symbolic hopeful composition."],"name":"Exam Success"},{"prompts":["Flat-lay of a result card, pen, and small trophy, clean celebratory top-down composition.","Elegant minimalist \\\"Congratulations\\\" poster with star burst motif, clean bright palette.","Student jumping with joy after checking results online, warm candid dynamic mood.","Family celebration scene with sweets and a \\\"Well Done\\\" banner, warm candid festive atmosphere.","Close-up of hands holding a phone showing a result notification, warm modern candid composition.","Watercolor illustration of a certificate with confetti, soft artistic celebratory design.","LinkedIn-style \\\"Congratulations on Your Results\\\" banner with clean geometric icon, brand-safe palette.","Balloon arch over a study desk with books and a trophy, festive celebratory composition.","Group photo of friends celebrating results together, warm candid joyful mood.","Sunburst-style graphic with \\\"Congratulations\\\" typography space, bright celebratory modern design."],"name":"Result Congratulations"}],"category":"Education"},{"events":[{"prompts":["Confetti burst with a gold star motif, bright celebratory dynamic composition.","Elegant minimalist \\\"Congratulations\\\" poster with ribbon and medal icon, clean gold-white palette.","Flat-lay of a trophy, certificate, and flowers, clean formal celebratory composition.","Handshake moment with warm professional celebratory lighting, formal achievement mood.","Watercolor illustration of a star burst with ribbons, soft artistic celebratory design.","LinkedIn-style \\\"Congratulations\\\" banner with clean geometric star icon, brand-safe professional palette.","Group applauding scene with warm candid celebratory office or event atmosphere.","Close-up of hands holding a certificate with a gold seal, formal recognition composition.","Balloon and banner decorated celebration scene, festive candid joyful mood.","Sunburst graphic background with bold \\\"Congratulations\\\" typography space, bright modern design."],"name":"Congratulations"},{"prompts":["Elegant minimalist \\\"Best Wishes\\\" card design with floral border, soft pastel palette.","Flat-lay of a greeting card, flowers, and a small gift box, warm top-down composition.","Watercolor illustration of a bouquet with a ribbon, soft artistic warm design.","Sunrise scene symbolizing new beginnings, warm hopeful cinematic composition.","LinkedIn-style \\\"Best Wishes\\\" banner with clean geometric icon, brand-safe soft palette.","Close-up of a handwritten \\\"Best Wishes\\\" note with a pen, warm sentimental composition.","Balloon bouquet in soft pastel colors against a clean background, warm celebratory design.","Compass or pathway graphic symbolizing a new journey, warm inspiring modern composition.","Gift box with a ribbon and a small card, warm celebratory product-style photography.","Soft-focus floral bouquet with warm natural light, gentle heartfelt greeting-card mood."],"name":"Best Wishes"},{"prompts":["Four-leaf clover close-up with soft natural lighting, symbolic hopeful composition.","Elegant minimalist \\\"Good Luck\\\" poster with horseshoe motif, clean bright palette.","Flat-lay of a good luck card with a small charm and flowers, warm top-down design.","Watercolor illustration of a shooting star with sparkles, soft artistic hopeful design.","LinkedIn-style \\\"Good Luck\\\" banner with clean geometric icon, brand-safe professional palette.","Close-up of hands giving a thumbs-up gesture, warm candid encouraging composition.","Sunrise over a pathway symbolizing new beginnings, warm hopeful cinematic mood.","Balloon with a \\\"Good Luck\\\" tag against a clean bright background, celebratory design.","Open road stretching toward the horizon, symbolic adventurous hopeful composition.","Soft-focus dandelion seeds blowing in the wind, warm dreamy hopeful greeting-card mood."],"name":"Good Luck"},{"prompts":["Confetti and champagne toast scene, warm celebratory dynamic composition.","Elegant minimalist \\\"Success\\\" poster with upward arrow and star motif, clean gold palette.","Flat-lay of a trophy, medal, and confetti, clean formal celebratory composition.","Group of colleagues celebrating with raised arms, warm candid joyful office mood.","Watercolor illustration of a mountain peak with a flag, soft artistic achievement design.","LinkedIn-style \\\"Success\\\" banner with clean geometric trophy icon, brand-safe professional palette.","Fireworks over a city skyline symbolizing triumph, dynamic grand celebratory mood.","Close-up of hands holding a trophy with warm spotlight, formal achievement composition.","Sunburst graphic with bold \\\"We Did It\\\" typography space, bright celebratory design.","Team high-five moment with warm candid dynamic office celebration mood."],"name":"Success Celebration"},{"prompts":["Professional headshot-style composition with an upward arrow graphic symbolizing growth, clean corporate design.","Flat-lay of a promotion letter, pen, and business card, clean professional top-down shot.","Office celebration scene with colleagues congratulating, warm candid professional mood.","LinkedIn-style banner announcing a promotion with clean geometric upward-arrow icon, brand-safe palette.","Handshake moment between employee and manager, warm formal professional celebratory composition.","Staircase graphic symbolizing career growth, clean modern corporate composition.","Close-up of a new title on a business card, professional clean detail shot.","Team applauding in a meeting room, warm candid celebratory office atmosphere.","Elegant certificate-style design with new title and gold border, formal recognition composition.","Confetti falling over an office desk with a \\\"Congratulations on Your Promotion\\\" card."],"name":"Promotion"},{"prompts":["Elegant plaque or trophy on a desk with a spotlight, formal recognition composition.","Flat-lay of a certificate, medal, and a name tag, clean professional top-down shot.","Employee receiving recognition in front of colleagues, warm candid professional celebratory mood.","LinkedIn-style \\\"Employee of the Month\\\" banner with clean geometric star icon, brand-safe palette.","Close-up of a framed photo on an office recognition wall, formal professional composition.","Office celebration scene with balloons and a \\\"Employee of the Month\\\" banner, warm candid mood.","Watercolor illustration of a star badge, soft artistic professional recognition design.","Team applauding an honored colleague, warm candid celebratory office atmosphere.","Elegant certificate with gold border and ribbon seal, formal recognition composition.","Modern minimalist poster with a spotlight and star icon, clean corporate professional palette."],"name":"Employee of the Month"}],"category":"Achievement"},{"events":[{"prompts":["Soft candle flame glowing in darkness, warm gentle solemn composition.","Elegant minimalist tribute card design with a single white lily, soft muted palette.","Flat-lay of a framed photo, flowers, and a candle, warm respectful top-down composition.","Watercolor illustration of a dove flying over soft clouds, gentle peaceful tribute design.","Sunset sky with a silhouette of a tree, symbolic serene composition.","Close-up of hands placing a white flower gently, warm respectful solemn detail shot.","Soft-focus field of white flowers swaying, peaceful gentle tribute atmosphere.","LinkedIn-style respectful tribute banner with clean geometric candle icon, muted professional palette.","Quiet chapel or memorial hall interior with soft warm light through windows, solemn composition.","Gentle wave of light rays through clouds, symbolic peaceful and comforting mood."],"name":"Tribute"},{"prompts":["Soft white lily flat-lay with a muted gray background, gentle solemn composition.","Elegant minimalist condolence card design with a dove motif, soft muted palette.","Candle flame in a quiet dark room, warm gentle respectful composition.","Watercolor illustration of clasped hands offering comfort, soft gentle empathetic design.","Soft-focus sunrise over calm water, symbolic peaceful hopeful composition.","Close-up of a single white rose with dew drops, gentle respectful detail shot.","Quiet garden path with soft natural light, peaceful reflective composition.","Muted-tone floral wreath flat-lay, formal respectful condolence design.","LinkedIn-style respectful condolence banner with clean geometric dove icon, muted professional palette.","Soft clouds parting to reveal light, symbolic comforting peaceful mood."],"name":"Condolence"},{"prompts":["Soft candlelight gathering scene with quiet warm ambiance, solemn respectful composition.","Flat-lay of a prayer book, beads, and a candle, warm gentle top-down composition.","Elegant minimalist prayer meeting invite design with a soft dove or lotus motif, muted palette.","Group seated together in quiet reflection, warm respectful candid composition.","Watercolor illustration of folded hands in prayer, soft gentle spiritual design.","Soft light streaming through a window onto an empty chair, symbolic solemn composition.","Close-up of a lit candle beside a framed photo, warm respectful detail shot.","Quiet outdoor garden setting for a gathering, peaceful reflective composition.","LinkedIn-style respectful prayer meeting banner with clean geometric candle icon, muted palette.","Soft clouds and warm light rays, symbolic peaceful comforting mood."],"name":"Prayer Meeting"},{"prompts":["Soft-focus floral arrangement beside a framed photo, warm respectful solemn composition.","Elegant minimalist memorial service invite design with a dove and lily motif, muted palette.","Quiet chapel interior with soft warm light through stained glass, solemn composition.","Flat-lay of a memorial program booklet, candle, and flowers, warm respectful top-down shot.","Watercolor illustration of a tree with falling leaves, symbolic peaceful reflective design.","Soft sunset sky over a quiet landscape, symbolic serene composition.","Close-up of hands lighting a candle in remembrance, warm gentle respectful detail shot.","Group gathered quietly for a memorial service, warm respectful candid composition.","LinkedIn-style respectful memorial banner with clean geometric candle icon, muted professional palette.","Soft clouds parting with warm light rays, symbolic comforting peaceful mood."],"name":"Memorial Service"}],"category":"Memorial"}];
+
+
         // Central Application State
         let promptState = {
             currentMode: "quick", // "quick" or "advanced"
+            quickPromptText: "", // Selected quick mode prompt
             quickSpecific: "", // Optional free text in quick mode
             lastPreset: null, // Active preset scenario
             numSubjects: 1,
@@ -3320,6 +3861,15 @@
             const outBox = document.getElementById('prompt-output');
             const isQuick = (promptState.currentMode === 'quick');
             
+            if (isQuick) {
+                const text = promptState.quickPromptText || "Please select Male or Female, then choose an Event or Direct Prompt to generate your custom AI prompt brief.";
+                if (outBox) {
+                    outBox.innerText = text;
+                    updateCounters(text);
+                }
+                return;
+            }
+            
             // Construct sections
             let openingSegment = "";
             let subject1Desc = "";
@@ -3647,8 +4197,7 @@
 
             document.getElementById('char-counter').innerText = `${charCount} chars`;
             document.getElementById('word-counter').innerText = `${wordCount} words`;
-
-            // Gauge calculations: optimal prompt length for AI is typically 80 to 200 words
+                // Gauge calculations: optimal prompt length for AI is typically 80 to 200 words
             const fill = document.getElementById('strength-bar-fill');
             let percentage = (wordCount / 220) * 100;
             if (percentage > 100) percentage = 100;
@@ -3659,105 +4208,8 @@
         function resetForm() {
             // Restore PromptState
             promptState = {
-                numSubjects: 1,
-                person1_gender: "Male",
-                person1_age: "Young Adult",
-                person1_ethnicity: "Not specified",
-                person1_hairstyle: "Messy",
-                person1_hairColor: "brown",
-                person1_hairLength: "Medium",
-                mood: "Confident",
-                facialExpression: "Soft smile",
-                eyeContact: "Looking at camera",
-                poseType: "Standing",
-                bodyAngle: "Three-quarter view",
-                relationshipType: "Couple - romantic",
-                interactionPose: "Standing side by side",
-                outfitStyle: "Streetwear",
-                outfitDescription: "comfortable clothing",
-                outfitColor: "complementary colors",
-                locationSetting: "Studio",
-                customSetting: "",
-                timeOfDay: "Golden hour",
-                bgBlur: "Soft bokeh blur",
-                lightingType: "Natural sunlight",
-                shotType: "Portrait",
-                cameraAngle: "Eye-level",
-                lensStyle: "Shallow depth of field 85mm look",
-                artStyle: "Photorealistic",
-                colorGrading: "Warm tones",
-                accessories: "",
-                customNotes: "",
-                extraPeople: []
-            };
-
-            // Programmatically reset input controls in DOM to baseline values
-            
-            // Standard Radios/Chips reset helper
-            const resetRadioGroup = (name, value) => {
-                const radios = document.getElementsByName(name);
-                radios.forEach(r => {
-                    r.checked = (r.value === value);
-                });
-            };
-
-             resetRadioGroup('p1_gender', 'Male');
-             resetRadioGroup('p1_age', 'Young Adult');
-            document.getElementById('p1_ethnicity').value = 'Not specified';
-
-            resetRadioGroup('p1_hairLength', 'Medium');
-            resetRadioGroup('p1_hairstyle', 'Messy');
-            document.getElementById('p1_hairColor_picker').value = '#8B4513';
-            document.getElementById('p1_hairColor_text').value = 'brown';
-
-            resetRadioGroup('p1_mood', 'Confident');
-            resetRadioGroup('p1_expr', 'Soft smile');
-            resetRadioGroup('p1_eye', 'Looking at camera');
-
-            // Set stepper to 1
-            setSubjectsDirect(1);
-
-            resetRadioGroup('p1_pose', 'Standing');
-            resetRadioGroup('p1_angle', 'Three-quarter view');
-
-            resetRadioGroup('p1_outfit', 'Streetwear');
-            document.getElementById('p1_outfit_desc').value = 'comfortable clothing';
-            document.getElementById('p1_outfitColor_picker').value = '#555555';
-            document.getElementById('p1_outfitColor_text').value = 'complementary colors';
-
-            resetRadioGroup('loc_set', 'Studio');
-            document.getElementById('custom-setting-group').style.display = 'none';
-            document.getElementById('custom_setting').value = '';
-            
-            resetRadioGroup('time_day', 'Golden hour');
-            resetRadioGroup('bg_blur', 'Soft bokeh blur');
-            resetRadioGroup('light_type', 'Natural sunlight');
-
-            resetRadioGroup('shot_type', 'Portrait');
-            resetRadioGroup('cam_angle', 'Eye-level');
-            resetRadioGroup('lens_style', 'Shallow depth of field 85mm look');
-
-            resetRadioGroup('art_style', 'Photorealistic');
-            resetRadioGroup('color_grade', 'Warm tones');
-
-            document.getElementById('acc_text').value = '';
-            document.getElementById('custom_notes').value = '';
-
-            // Reset Wizard to Step 1
-            goToStep(1);
-
-            updateGenderBasedImages();
-            updateCardSummaries();
-            updatePrompt();
-            
-            showToast("Successfully reset all selections to defaults.");
-        }
-
-        // Reset all forms to defaults
-        function resetForm() {
-            // Restore PromptState
-            promptState = {
                 currentMode: promptState.currentMode, // preserve mode
+                quickPromptText: "", // Reset quick prompt text
                 quickSpecific: "",
                 lastPreset: null,
                 numSubjects: 1,
@@ -3791,6 +4243,16 @@
                 customNotes: "",
                 extraPeople: []
             };
+
+            // Reset Quick Mode Wizard State
+            quickState = {
+                step: 1,
+                gender: 'Male',
+                path: '',
+                selectedCategory: null,
+                selectedEvent: null
+            };
+            setQuickStep(1);
 
             // Programmatically reset input controls in DOM to baseline values
             
@@ -3860,6 +4322,7 @@
             goToStep(1);
 
             updateGenderBasedImages();
+            updateCardSummaries();
             syncUIFromState();
             updatePrompt();
             
@@ -3935,6 +4398,9 @@
                 builderForm.classList.add('mode-quick');
                 qBtn.classList.add('active');
                 aBtn.classList.remove('active');
+                if (typeof setQuickStep === 'function') {
+                    setQuickStep(quickState.step || 1);
+                }
             } else {
                 builderForm.classList.remove('mode-quick');
                 builderForm.classList.add('mode-advanced');
@@ -3946,6 +4412,551 @@
             
             syncUIFromState();
             updatePrompt();
+        }
+
+        /* --------------------------------------------------
+           NEW QUICK MODE INTERACTIVE WIZARD JAVASCRIPT
+        -------------------------------------------------- */
+        let quickState = {
+            step: 1,
+            gender: 'Male',
+            path: '',
+            selectedCategory: null,
+            selectedEvent: null
+        };
+
+        const POPULAR_EVENTS = [
+            { name: "Birthday", emoji: "🎂" },
+            { name: "Wedding", emoji: "💍" },
+            { name: "Engagement", emoji: "💎" },
+            { name: "Anniversary", emoji: "❤️" },
+            { name: "Baby Shower", emoji: "👶" },
+            { name: "Housewarming", emoji: "🏡" },
+            { name: "Graduation", emoji: "🎓" },
+            { name: "Congratulations", emoji: "🎉" },
+            { name: "New Year", emoji: "🎆" },
+            { name: "Christmas", emoji: "🎄" },
+            { name: "Diwali", emoji: "🪔" },
+            { name: "Holi", emoji: "🌈" },
+            { name: "Eid Mubarak", emoji: "🌙" },
+            { name: "Valentine's Day", emoji: "❤️" },
+            { name: "Mother's Day", emoji: "🌸" },
+            { name: "Father's Day", emoji: "👔" },
+            { name: "Product Launch", emoji: "🚀" },
+            { name: "Grand Opening", emoji: "🏢" },
+            { name: "Farewell", emoji: "👋" },
+            { name: "Retirement", emoji: "🎊" }
+        ];
+
+        const DIRECT_PROMPTS = {
+            Male: [
+                {
+                    title: "Professional Corporate Headshot",
+                    desc: "A clean, modern headshot of a handsome 28-year-old Indian man wearing a tailored suit, looking confident, soft office backdrop.",
+                    tag: "LinkedIn",
+                    img: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=300&fit=crop&q=80",
+                    prompt: "A professional headshot of a handsome 28-year-old Indian man wearing a tailored charcoal suit and crisp white shirt, clean-shaven, styled hair, confident and friendly smile, soft corporate office background with elegant warm bokeh, natural daytime window lighting, photorealistic, 8k resolution, shot on 85mm lens."
+                },
+                {
+                    title: "Casual Cafe Selfie",
+                    desc: "A candid, warm selfie of a smiling young man holding a coffee cup at a cozy outdoor street cafe.",
+                    tag: "Instagram",
+                    img: "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?w=400&h=300&fit=crop&q=80",
+                    prompt: "A candid selfie of a handsome 25-year-old Indian man at a trendy outdoor cafe, holding a coffee cup, wearing a light beige linen shirt, genuine laughter and smiling, soft golden hour sunlight filtering through trees, cozy blurred background of street life, realistic skin textures, shot on iPhone 15 Pro, highly detailed."
+                },
+                {
+                    title: "Streetwear Urban Style",
+                    desc: "A cool streetwear portrait of a man standing in Tokyo's neon streets at night, misty cinematic rain.",
+                    tag: "Streetwear",
+                    img: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=300&fit=crop&q=80",
+                    prompt: "A dramatic cinematic portrait of a stylish Indian man in a black oversized hoodie and techwear jacket, standing on a neon-lit street in Tokyo at night, glowing neon signs reflection in puddles on the ground, cool color grade, misty rainy atmosphere, high-end fashion editorial vibe, detailed."
+                },
+                {
+                    title: "Royal Traditional Wedding",
+                    desc: "A grand portrait of a groom wearing an embroidered royal white and gold sherwani at a palace courtyard.",
+                    tag: "Traditional",
+                    img: "https://images.unsplash.com/photo-1566492031773-4f4e44671857?w=400&h=300&fit=crop&q=80",
+                    prompt: "A grand luxury wedding portrait of a handsome Indian groom wearing an exquisitely embroidered cream and gold sherwani with a royal turban, standing inside a heritage Rajasthani palace courtyard, warm ambient lighting from crystal chandeliers, majestic architecture, opulent festive atmosphere."
+                },
+                {
+                    title: "Fitness Gym Session",
+                    desc: "An intense gym workout capture of an athletic man lifting dumbbells under high-contrast sports lights.",
+                    tag: "Fitness",
+                    img: "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?w=400&h=300&fit=crop&q=80",
+                    prompt: "A high-contrast action portrait of a muscular Indian man lifting heavy dumbbells in a modern industrial gym, sweat on skin, intense focused facial expression, dramatic split lighting, dark moody background, high fidelity details, realistic athletic physique."
+                },
+                {
+                    title: "Traveler Peak Sunrise",
+                    desc: "A scenic wide shot of a traveler sitting on a mountain peak edge overlooking a sea of clouds.",
+                    tag: "Travel",
+                    img: "https://images.unsplash.com/photo-1488161628813-04466f872be2?w=400&h=300&fit=crop&q=80",
+                    prompt: "A wide-angle landscape photograph of a male adventurer sitting on a rugged mountain peak edge at sunrise, wearing outdoor gear, looking out over a sea of clouds, epic golden rays of sunlight, massive scale, adventurous and reflective mood, shot on 24mm lens."
+                },
+                {
+                    title: "Luxury Sports Car Portrait",
+                    desc: "An aspirational lifestyle image of a man leaning against a sports car overlooking a city skyline at sunset.",
+                    tag: "Lifestyle",
+                    img: "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?w=400&h=300&fit=crop&q=80",
+                    prompt: "An aspirational lifestyle photograph of a handsome man in casual luxury attire leaning against a sleek modern sports car, parked on a scenic overlook with a city skyline in the far background at sunset, warm cinematic lighting, high-end editorial feel."
+                },
+                {
+                    title: "Festive Diwali Kurta",
+                    desc: "A warm portrait of a smiling man in a yellow silk kurta holding a clay diya with marigolds behind.",
+                    tag: "Festival",
+                    img: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=300&fit=crop&q=80",
+                    prompt: "A warm festive portrait of a smiling Indian man wearing a vibrant yellow silk kurta, holding a glowing clay diya in his hands, soft golden sparklers and marigold decorations in the background, intimate warm lighting, celebrating Diwali, joyful holiday mood."
+                }
+            ],
+            Female: [
+                {
+                    title: "Professional Corporate Headshot",
+                    desc: "A clean, confident headshot of a professional businesswoman in a formal blazer, modern office background.",
+                    tag: "LinkedIn",
+                    img: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=300&fit=crop&q=80",
+                    prompt: "A professional headshot of a confident 28-year-old Indian woman with styled hair, wearing a navy blue blazer and white blouse, friendly warm smile, modern corporate office interior background with soft bokeh, natural window lighting, clean corporate layout, photorealistic."
+                },
+                {
+                    title: "Casual Cafe Selfie",
+                    desc: "A candid selfie of a beautiful woman in a pastel summer dress, sitting at a sunlit cafe table.",
+                    tag: "Instagram",
+                    img: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&h=300&fit=crop&q=80",
+                    prompt: "A candid selfie of a beautiful 24-year-old Indian woman sitting at a cozy wooden table in an aesthetic cafe, wearing a pastel green summer dress, soft natural smile, warm sunlight, blurred indoor plants and shelves in background, realistic skin textures, shot on modern smartphone."
+                },
+                {
+                    title: "Traditional Royal Saree",
+                    desc: "A stunning portrait of an elegant woman wearing a classic crimson red silk saree near a palace archway.",
+                    tag: "Traditional",
+                    img: "https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?w=400&h=300&fit=crop&q=80",
+                    prompt: "A stunning traditional portrait of an elegant Indian woman wearing a classic crimson red silk saree with intricate golden zari embroidery, royal kundan jewelry, hair styled in a bun with jasmine flowers, standing in front of a majestic palace archway, warm golden hour lighting."
+                },
+                {
+                    title: "Streetwear Neon City",
+                    desc: "A trendy streetwear photo of a young woman in an oversized jacket under vibrant neon lights at night.",
+                    tag: "Streetwear",
+                    img: "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=400&h=300&fit=crop&q=80",
+                    prompt: "A trendy fashion portrait of a stylish Indian girl wearing an oversized colorful jacket and streetwear, standing in a vibrant night market with neon signs, bokeh lights, rainy reflection on asphalt, cool atmospheric cinematic lighting."
+                },
+                {
+                    title: "Fitness Yoga Session",
+                    desc: "A serene fitness portrait of an athletic woman executing a yoga pose in a bright, modern plant-filled studio.",
+                    tag: "Fitness",
+                    img: "https://images.unsplash.com/photo-1518310383802-640c2de311b2?w=400&h=300&fit=crop&q=80",
+                    prompt: "A serene fitness photograph of an athletic Indian woman in matching sage green activewear, executing a perfect yoga pose inside a bright modern studio with large windows, soft morning light, green plants, peaceful and focused atmosphere."
+                },
+                {
+                    title: "Traveler Valley Overlook",
+                    desc: "A scenic travel photograph of a female backpacker looking over a beautiful mountain valley.",
+                    tag: "Travel",
+                    img: "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&h=300&fit=crop&q=80",
+                    prompt: "A scenic travel photograph of a young female backpacker standing on a grassy mountain ridge, looking down at a lush green valley with winding rivers, wind blowing through her hair, sunny clear day, adventurous and free-spirited vibe, wide composition."
+                },
+                {
+                    title: "Grand Bridal Lehenga",
+                    desc: "A gorgeous bridal portrait of a bride in an ornate pink lehenga under warm glowing fairy lights.",
+                    tag: "Wedding",
+                    img: "https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=400&h=300&fit=crop&q=80",
+                    prompt: "A breathtaking bridal portrait of a beautiful Indian bride wearing a heavily embroidered pink lehenga, adorned with luxury bridal jewelry and a sheer veil, smiling softly, warm glowing background with delicate fairy lights, emotional and opulent mood."
+                },
+                {
+                    title: "Aesthetic Anime Artwork",
+                    desc: "A digital anime-style illustration of a cute girl with flowing pastel hair in a glowing magical forest.",
+                    tag: "Anime",
+                    img: "https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?w=400&h=300&fit=crop&q=80",
+                    prompt: "A beautiful digital anime art style illustration of a cute girl with long flowing pastel hair and sparkling purple eyes, standing in a magical glowing forest with floating fireflies, soft celestial lighting, whimsical fantasy concept art, high detail."
+                }
+            ]
+        };
+
+        function setQuickStep(step) {
+            quickState.step = step;
+            
+            // Hide all step sections
+            document.getElementById('quick-step-1').style.display = 'none';
+            document.getElementById('quick-step-2').style.display = 'none';
+            document.getElementById('quick-step-3-events').style.display = 'none';
+            document.getElementById('quick-step-3-direct').style.display = 'none';
+            
+            // Back button
+            const backBtn = document.getElementById('quick-back-btn');
+            if (step > 1) {
+                backBtn.style.display = 'flex';
+            } else {
+                backBtn.style.display = 'none';
+            }
+            
+            // Breadcrumbs
+            const breadcrumbs = document.getElementById('quick-breadcrumbs');
+            if (step === 1) {
+                document.getElementById('quick-step-1').style.display = 'block';
+                breadcrumbs.innerText = 'Step 1: Gender';
+            } else if (step === 2) {
+                document.getElementById('quick-step-2').style.display = 'block';
+                breadcrumbs.innerText = `Step 2: Selection Type (${quickState.gender})`;
+            } else if (step === 3) {
+                if (quickState.path === 'events') {
+                    document.getElementById('quick-step-3-events').style.display = 'block';
+                    breadcrumbs.innerText = `Step 3: Browse Events (${quickState.gender} > Events)`;
+                    renderEventsBrowser();
+                } else {
+                    document.getElementById('quick-step-3-direct').style.display = 'block';
+                    breadcrumbs.innerText = `Step 3: Direct Prompts (${quickState.gender} > Direct)`;
+                    renderDirectPrompts();
+                }
+            }
+        }
+
+        function prevQuickStep() {
+            if (quickState.step > 1) {
+                setQuickStep(quickState.step - 1);
+            }
+        }
+
+        function selectQuickGender(gender) {
+            quickState.gender = gender;
+            promptState.person1_gender = gender; // Sync standard state
+            
+            const toggleLabel = document.getElementById('quick-gender-toggle-label');
+            if (toggleLabel) {
+                toggleLabel.innerText = `Auto-customize with ${gender} Subject`;
+            }
+            
+            setQuickStep(2);
+        }
+
+        function selectQuickPath(path) {
+            quickState.path = path;
+            setQuickStep(3);
+        }
+
+        function findEventPrompts(eventName) {
+            const cleanName = eventName.replace(/[^\w\s]/g, '').toLowerCase().trim();
+            for (let cat of EVENT_DATA) {
+                for (let ev of cat.events) {
+                    const evClean = ev.name.replace(/[^\w\s]/g, '').toLowerCase().trim();
+                    if (evClean === cleanName || evClean.includes(cleanName) || cleanName.includes(evClean)) {
+                        return { name: ev.name, prompts: ev.prompts };
+                    }
+                }
+            }
+            return null;
+        }
+
+        function renderEventsBrowser() {
+            const sidebar = document.getElementById('quick-category-list');
+            
+            if (!sidebar) return;
+            sidebar.innerHTML = '';
+            
+            // Add Popular category
+            const popPill = document.createElement('button');
+            popPill.type = 'button';
+            popPill.className = 'category-pill active';
+            popPill.innerHTML = `⭐ Popular`;
+            popPill.onclick = () => selectQuickCategory('Popular', popPill);
+            sidebar.appendChild(popPill);
+            
+            // Add other categories
+            EVENT_DATA.forEach(cat => {
+                const pill = document.createElement('button');
+                pill.type = 'button';
+                pill.className = 'category-pill';
+                
+                let emoji = '📌';
+                if (cat.category.includes('Festivals')) emoji = '🎄';
+                else if (cat.category.includes('Business')) emoji = '💼';
+                else if (cat.category.includes('Special')) emoji = '❤️';
+                else if (cat.category.includes('Religious')) emoji = '🙏';
+                else if (cat.category.includes('Education')) emoji = '🎓';
+                else if (cat.category.includes('Achievement')) emoji = '🏆';
+                else if (cat.category.includes('Memorial')) emoji = '😢';
+                
+                pill.innerHTML = `${emoji} ${cat.category}`;
+                pill.onclick = () => selectQuickCategory(cat.category, pill);
+                sidebar.appendChild(pill);
+            });
+            
+            quickState.selectedCategory = 'Popular';
+            renderCategoryEvents('Popular');
+        }
+
+        function selectQuickCategory(catName, pillEl) {
+            quickState.selectedCategory = catName;
+            document.querySelectorAll('.category-pill').forEach(pill => {
+                pill.classList.remove('active');
+            });
+            pillEl.classList.add('active');
+            renderCategoryEvents(catName);
+        }
+
+        function renderCategoryEvents(catName) {
+            const grid = document.getElementById('quick-events-grid');
+            if (!grid) return;
+            grid.innerHTML = '';
+            
+            if (catName === 'Popular') {
+                POPULAR_EVENTS.forEach(ev => {
+                    const card = document.createElement('div');
+                    card.className = 'event-card';
+                    card.onclick = () => openEventPrompts(ev.name, ev.emoji);
+                    card.innerHTML = `
+                        <div class="event-card-emoji">${ev.emoji}</div>
+                        <div class="event-card-name">${ev.name}</div>
+                    `;
+                    grid.appendChild(card);
+                });
+            } else {
+                const category = EVENT_DATA.find(c => c.category === catName);
+                if (!category) return;
+                
+                category.events.forEach(ev => {
+                    let emoji = '🎉';
+                    if (catName.includes('Festivals')) {
+                        if (ev.name.includes('Diwali')) emoji = '🪔';
+                        else if (ev.name.includes('Holi')) emoji = '🌈';
+                        else if (ev.name.includes('Eid')) emoji = '🌙';
+                        else if (ev.name.includes('Christmas')) emoji = '🎄';
+                        else if (ev.name.includes('New Year')) emoji = '🎆';
+                        else if (ev.name.includes('Karwa')) emoji = '🌙';
+                        else emoji = '🥻';
+                    } else if (catName.includes('Business')) {
+                        if (ev.name.includes('Opening')) emoji = '🏢';
+                        else if (ev.name.includes('Product')) emoji = '🚀';
+                        else emoji = '💼';
+                    } else if (catName.includes('Special')) {
+                        if (ev.name.includes('Valentine')) emoji = '❤️';
+                        else if (ev.name.includes('Mother')) emoji = '🌸';
+                        else if (ev.name.includes('Father')) emoji = '👔';
+                        else emoji = '❤️';
+                    } else if (catName.includes('Religious')) {
+                        emoji = '🙏';
+                    } else if (catName.includes('Education')) {
+                        emoji = '🎓';
+                    } else if (catName.includes('Achievement')) {
+                        emoji = '🏆';
+                    } else if (catName.includes('Memorial')) {
+                        emoji = '😢';
+                    } else {
+                        const popMatch = POPULAR_EVENTS.find(p => p.name.toLowerCase() === ev.name.toLowerCase());
+                        if (popMatch) emoji = popMatch.emoji;
+                    }
+                    
+                    const card = document.createElement('div');
+                    card.className = 'event-card';
+                    card.onclick = () => openEventPrompts(ev.name, emoji);
+                    card.innerHTML = `
+                        <div class="event-card-emoji">${emoji}</div>
+                        <div class="event-card-name">${ev.name}</div>
+                    `;
+                    grid.appendChild(card);
+                });
+            }
+        }
+
+        function filterQuickEvents() {
+            const searchInput = document.getElementById('quick-event-search');
+            const query = searchInput.value.toLowerCase().trim();
+            const grid = document.getElementById('quick-events-grid');
+            
+            if (!grid) return;
+            
+            if (query === '') {
+                renderCategoryEvents(quickState.selectedCategory);
+                return;
+            }
+            
+            grid.innerHTML = '';
+            let results = [];
+            
+            EVENT_DATA.forEach(cat => {
+                cat.events.forEach(ev => {
+                    if (ev.name.toLowerCase().includes(query)) {
+                        if (!results.some(r => r.name.toLowerCase() === ev.name.toLowerCase())) {
+                            let emoji = '🎉';
+                            const popMatch = POPULAR_EVENTS.find(p => p.name.toLowerCase() === ev.name.toLowerCase() || ev.name.toLowerCase().includes(p.name.toLowerCase()));
+                            if (popMatch) emoji = popMatch.emoji;
+                            results.push({ name: ev.name, emoji: emoji });
+                        }
+                    }
+                });
+            });
+            
+            if (results.length === 0) {
+                grid.innerHTML = '<div style="grid-column: 1/-1; padding: 2rem; text-align: center; color: #94a3b8;">No matching events found. Try another keyword.</div>';
+            } else {
+                results.forEach(ev => {
+                    const card = document.createElement('div');
+                    card.className = 'event-card';
+                    card.onclick = () => openEventPrompts(ev.name, ev.emoji);
+                    card.innerHTML = `
+                        <div class="event-card-emoji">${ev.emoji}</div>
+                        <div class="event-card-name">${ev.name}</div>
+                    `;
+                    grid.appendChild(card);
+                });
+            }
+        }
+
+        function openEventPrompts(eventName, emoji) {
+            const match = findEventPrompts(eventName);
+            if (!match) {
+                showToast("Prompts for this event are coming soon!");
+                return;
+            }
+            
+            quickState.selectedEvent = match.name;
+            
+            document.getElementById('quick-modal-event-emoji').innerText = emoji;
+            document.getElementById('quick-modal-event-name').innerText = match.name;
+            
+            renderModalPrompts(match.prompts);
+            
+            const modal = document.getElementById('quick-prompts-modal');
+            modal.style.display = 'flex';
+        }
+
+        function closeQuickPromptsModal() {
+            document.getElementById('quick-prompts-modal').style.display = 'none';
+        }
+
+        function renderModalPrompts(prompts) {
+            const body = document.getElementById('quick-modal-prompts-body');
+            if (!body) return;
+            body.innerHTML = '';
+            
+            const styleLabels = [
+                "Elegant Poster", "Minimal Corporate", "Playful Cartoon", "Cinematic Portrait",
+                "Traditional Festive", "Instagram Template", "Luxury Invite", "Watercolor Sketch",
+                "LinkedIn Branding", "Aspirational Vibe"
+            ];
+            
+            prompts.forEach((prompt, idx) => {
+                const style = styleLabels[idx % styleLabels.length];
+                const card = document.createElement('div');
+                card.className = 'prompt-row-card';
+                card.innerHTML = `
+                    <div class="prompt-row-meta">
+                        <span class="prompt-num-badge">Prompt #${idx + 1}</span>
+                        <span class="prompt-row-style-badge">${style}</span>
+                    </div>
+                    <div class="prompt-row-text" id="prompt-text-${idx}">${prompt}</div>
+                    <div class="prompt-row-actions">
+                        <button type="button" class="btn btn-secondary" onclick="copyPromptText(${idx})" style="padding: 0.4rem 0.8rem; font-size: 0.75rem;">
+                            Copy
+                        </button>
+                        <button type="button" class="btn btn-primary" onclick="useQuickPromptText(${idx})" style="padding: 0.4rem 0.8rem; font-size: 0.75rem;">
+                            Use Prompt
+                        </button>
+                    </div>
+                `;
+                body.appendChild(card);
+            });
+        }
+
+        function getGenderedPrompt(text, customize) {
+            if (!customize) return text;
+            const gender = quickState.gender;
+            
+            let modifier = "";
+            if (gender === 'Male') {
+                modifier = "featuring a handsome 25-year-old Indian man, realistic skin textures, sharp focus, styled hair, dressed in matching clean attire, ";
+            } else {
+                modifier = "featuring a beautiful 25-year-old Indian woman, realistic skin textures, sharp focus, elegant makeup and hair, dressed in matching clean attire, ";
+            }
+            
+            if (text.toLowerCase().startsWith("elegant") || text.toLowerCase().startsWith("vibrant") || text.toLowerCase().startsWith("traditional") || text.toLowerCase().startsWith("luxury") || text.toLowerCase().startsWith("festive")) {
+                return `A professional photograph ${modifier}standing beside an ${text.charAt(0).toLowerCase() + text.slice(1)}`;
+            } else if (text.toLowerCase().startsWith("close-up") || text.toLowerCase().startsWith("minimalist") || text.toLowerCase().startsWith("flat-lay") || text.toLowerCase().startsWith("watercolor") || text.toLowerCase().startsWith("cartoon") || text.toLowerCase().startsWith("3d render")) {
+                return `${text}, ${modifier.replace(", ", "")}`;
+            } else {
+                return `A professional capture ${modifier}integrated into the scene of: ${text}`;
+            }
+        }
+
+        function copyPromptText(idx) {
+            const promptEl = document.getElementById(`prompt-text-${idx}`);
+            if (!promptEl) return;
+            const rawText = promptEl.innerText;
+            const genderCustomize = document.getElementById('quick-gender-toggle').checked;
+            const finalPrompt = getGenderedPrompt(rawText, genderCustomize);
+            
+            navigator.clipboard.writeText(finalPrompt).then(() => {
+                showToast("Prompt copied to clipboard! 📋");
+            });
+        }
+
+        function useQuickPromptText(idx) {
+            const promptEl = document.getElementById(`prompt-text-${idx}`);
+            if (!promptEl) return;
+            const rawText = promptEl.innerText;
+            const genderCustomize = document.getElementById('quick-gender-toggle').checked;
+            const finalPrompt = getGenderedPrompt(rawText, genderCustomize);
+            
+            promptState.quickPromptText = finalPrompt;
+            updatePrompt();
+            closeQuickPromptsModal();
+            
+            const promptBox = document.getElementById('prompt-output');
+            if (promptBox) {
+                promptBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                promptBox.classList.add('pulse-highlight');
+                setTimeout(() => promptBox.classList.remove('pulse-highlight'), 1000);
+            }
+            showToast("Prompt loaded into Art Director! 🍌");
+            saveCurrentPromptToHistory();
+        }
+
+        function renderDirectPrompts() {
+            const grid = document.getElementById('quick-direct-grid');
+            if (!grid) return;
+            
+            const gender = quickState.gender;
+            const list = DIRECT_PROMPTS[gender];
+            grid.innerHTML = '';
+            
+            list.forEach((item, idx) => {
+                const card = document.createElement('div');
+                card.className = 'ref-prompt-card';
+                card.onclick = () => useDirectPrompt(gender, idx);
+                card.innerHTML = `
+                    <div class="ref-img-wrapper">
+                        <img src="${item.img}" class="ref-img" alt="${item.title}">
+                        <div class="ref-img-overlay">
+                            <span class="ref-img-tag">${item.tag}</span>
+                        </div>
+                    </div>
+                    <div class="ref-info-body">
+                        <div class="ref-title">${item.title}</div>
+                        <div class="ref-desc">${item.desc}</div>
+                        <div class="ref-card-action">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                            </svg>
+                            Use Direct Prompt
+                        </div>
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        function useDirectPrompt(gender, idx) {
+            const item = DIRECT_PROMPTS[gender][idx];
+            if (!item) return;
+            
+            navigator.clipboard.writeText(item.prompt).then(() => {
+                showToast("Copied to clipboard & loaded! 🍌");
+            });
+            
+            promptState.quickPromptText = item.prompt;
+            updatePrompt();
+            
+            const promptBox = document.getElementById('prompt-output');
+            if (promptBox) {
+                promptBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                promptBox.classList.add('pulse-highlight');
+                setTimeout(() => promptBox.classList.remove('pulse-highlight'), 1000);
+            }
+            saveCurrentPromptToHistory();
         }
 
         function generateQuickPrompt() {
@@ -4588,3 +5599,4 @@
     </script>
 </body>
 </html>
+
