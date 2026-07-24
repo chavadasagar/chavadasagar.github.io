@@ -1,102 +1,441 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chavada sagar</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chavada Sagar | Project Showcase</title>
+<style>
+  :root{
+    --bg:#0f1115;
+    --bg2:#161922;
+    --card:#1b1f2a;
+    --card-hover:#232838;
+    --text:#e8eaf0;
+    --muted:#8b93a7;
+    --accent:#6c8cff;
+    --accent2:#ff6c9d;
+    --border:#2a2f3d;
+    --shadow: 0 8px 24px rgba(0,0,0,.35);
+  }
+  [data-theme="light"]{
+    --bg:#f4f6fb;
+    --bg2:#ffffff;
+    --card:#ffffff;
+    --card-hover:#eef1fb;
+    --text:#1a1d29;
+    --muted:#5b6172;
+    --border:#e2e6f0;
+    --shadow: 0 8px 20px rgba(30,40,80,.08);
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    font-family:'Segoe UI', system-ui, -apple-system, Roboto, sans-serif;
+    background:radial-gradient(circle at 20% 0%, var(--bg2), var(--bg) 60%);
+    color:var(--text);
+    min-height:100vh;
+    transition:background .3s ease, color .3s ease;
+  }
+  header{
+    padding:48px 24px 20px;
+    text-align:center;
+    position:relative;
+  }
+  header .badge{
+    display:inline-block;
+    padding:4px 14px;
+    border:1px solid var(--border);
+    border-radius:999px;
+    font-size:12px;
+    letter-spacing:1px;
+    color:var(--muted);
+    margin-bottom:14px;
+    text-transform:uppercase;
+  }
+  h1.title{
+    margin:0;
+    font-size:clamp(28px,5vw,44px);
+    font-weight:800;
+    letter-spacing:-1px;
+    background:linear-gradient(90deg,var(--accent),var(--accent2));
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
+  }
+  .subtitle{
+    color:var(--muted);
+    margin-top:8px;
+    font-size:15px;
+  }
+  .theme-toggle{
+    position:absolute;
+    top:24px;
+    right:24px;
+    background:var(--card);
+    border:1px solid var(--border);
+    color:var(--text);
+    padding:8px 14px;
+    border-radius:999px;
+    cursor:pointer;
+    font-size:13px;
+    transition:.2s;
+  }
+  .theme-toggle:hover{ background:var(--card-hover); }
 
-  <link rel="stylesheet" href="assets/css/style.css">
-  <script src="assets/js/script.js" type="module"></script>
+  .controls{
+    max-width:900px;
+    margin:28px auto 8px;
+    padding:0 20px;
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+    justify-content:center;
+  }
+  .search-wrap{
+    flex:1 1 320px;
+    position:relative;
+  }
+  .search-wrap input{
+    width:100%;
+    padding:14px 18px 14px 42px;
+    border-radius:14px;
+    border:1px solid var(--border);
+    background:var(--card);
+    color:var(--text);
+    font-size:15px;
+    outline:none;
+    transition:.2s;
+  }
+  .search-wrap input:focus{
+    border-color:var(--accent);
+    box-shadow:0 0 0 3px rgba(108,140,255,.15);
+  }
+  .search-wrap::before{
+    content:"🔍";
+    position:absolute;
+    left:14px;
+    top:50%;
+    transform:translateY(-50%);
+    font-size:15px;
+    opacity:.6;
+  }
 
+  .filters{
+    max-width:1100px;
+    margin:18px auto 0;
+    padding:0 20px;
+    display:flex;
+    gap:8px;
+    flex-wrap:wrap;
+    justify-content:center;
+  }
+  .chip{
+    padding:7px 16px;
+    border-radius:999px;
+    border:1px solid var(--border);
+    background:var(--card);
+    color:var(--muted);
+    font-size:13px;
+    cursor:pointer;
+    user-select:none;
+    transition:.2s;
+    white-space:nowrap;
+  }
+  .chip:hover{ color:var(--text); border-color:var(--accent);}
+  .chip.active{
+    background:linear-gradient(90deg,var(--accent),var(--accent2));
+    color:#fff;
+    border-color:transparent;
+    font-weight:600;
+  }
+
+  .stats{
+    text-align:center;
+    color:var(--muted);
+    font-size:13px;
+    margin:18px 0 6px;
+  }
+
+  .grid{
+    max-width:1200px;
+    margin:0 auto;
+    padding:16px 20px 80px;
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(260px,1fr));
+    gap:16px;
+  }
+
+  .card{
+    background:var(--card);
+    border:1px solid var(--border);
+    border-radius:16px;
+    padding:20px;
+    text-decoration:none;
+    color:var(--text);
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    position:relative;
+    overflow:hidden;
+    transition:transform .18s ease, box-shadow .18s ease, border-color .18s ease, background .18s ease;
+    opacity:0;
+    animation:fadeUp .45s ease forwards;
+  }
+  .card::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(135deg, rgba(108,140,255,.08), rgba(255,108,157,.06));
+    opacity:0;
+    transition:opacity .25s ease;
+  }
+  .card:hover{
+    transform:translateY(-6px);
+    box-shadow:var(--shadow);
+    border-color:var(--accent);
+    background:var(--card-hover);
+  }
+  .card:hover::before{ opacity:1; }
+  .card .icon{
+    font-size:26px;
+    line-height:1;
+  }
+  .card .name{
+    font-weight:700;
+    font-size:15.5px;
+    z-index:1;
+  }
+  .card .tag{
+    font-size:11px;
+    color:var(--muted);
+    text-transform:uppercase;
+    letter-spacing:.5px;
+    z-index:1;
+  }
+  .card .arrow{
+    position:absolute;
+    right:18px;
+    bottom:16px;
+    opacity:0;
+    transform:translateX(-6px);
+    transition:.2s;
+    color:var(--accent);
+    z-index:1;
+  }
+  .card:hover .arrow{ opacity:1; transform:translateX(0); }
+
+  @keyframes fadeUp{
+    from{ opacity:0; transform:translateY(14px); }
+    to{ opacity:1; transform:translateY(0); }
+  }
+
+  .empty{
+    text-align:center;
+    color:var(--muted);
+    padding:60px 20px;
+    display:none;
+  }
+  .empty.show{ display:block; }
+
+  footer{
+    text-align:center;
+    color:var(--muted);
+    font-size:12.5px;
+    padding:24px;
+    border-top:1px solid var(--border);
+  }
+</style>
 </head>
-
 <body>
-  <h1 class="title">chavada sagar</h1>
-  <br>
-  <div class="box">
-    <a href="user-templates/index.html">user-templates</a>
-    <br>
-    <a href="datatable-example/index.html">Datatable example</a>
-    <br>
-    <a href="genrate_strong_password-using-javascript/index.html">genrate Strong Password</a>
-    <br>
-    <a href="strong_your_password/">strong your password</a>
-    <br>
-    <a href="js-21(call joke api)/">read jokes</a>
-    <br>
-    <a href="findmyipinfo/">Find Your Ip Info </a>
-    <br>
-    <a href="find coord/index.html">find coordinate</a>
-    <br>
-    <a href="todo/index.html">Todo(Js)</a>
-    <br>
-    <a href="agecalc/index.html">Age Calculator</a>
-    <br>
-    <a href="validation_using_notify_message/index.html">Validation using notify demo</a>
-    <br>
-    <a href="toastr/index.html">toastr demo</a>
-    <br>
-    <a href="jqueryvalidationplugin/">jquery validation plugin</a>
-    <br>
-    <a href="guessthenumber/index.html">Guess The Number(js)</a>
-    <br>
-    <a href="portfolio/index.html">Portfolio</a>
-    <br>
-    <a href="todo(localstorage)/index.html">Todo(Using Localstorage)</a>
-    <br>
-    <a href="getarrayrepeatedvalue/index.html">String Reapeated Value</a>
-    <br>
-    <a href="numbertoword/index.html">Number To Word</a>
-    <br>
-    <a href="postman/index.html">Postman</a>
-    <br>
-    <a href="guid/index.html">GUID Genrator</a>
-    <br>
-    <a href="fileinfo/index.html">File Info</a>
-    <br>
-    <a href="Kendogrid/index.html">Kendo Grid</a>
-    <br>
-    <a href="viewimage/index.html">View Image Js</a>
-    <br>
-    <a href="UploadImageInLocalStorage/index.html">Upload Image Base64string and View</a>
-    <br>
-    <a href="TaskBaseQueueSystem/index.html">Queue Base Task System</a>
-    <br>
-    <a href="userbaseprojectsystem/index.html">Project System</a>
-    <br>
-    <a href="Appointment Scheduler/index.html">Appointment Scheduler</a>
-    <br>
-    <a href="Subscription/index.html">Subscription Scheduler</a>
-    <br>
-    <a href="hrmui/index.html">HRM UI</a>
-    <br>
-    <a href="Khodiyar jwellers/index.html">Khodiyar Jwellers</a>
-	<br>
-    <a href="DSAQuestions/index.html">DSA Questions</a>
-	<br>
-    <a href="LibraryManagementSystem/index.html">Library Management System</a>
-	<br>
-    <a href="restaurantmanagementsystem/index.html">Restaurant Management System</a>
-	<br>
-    <a href="jewellery management system/index.html">jewellery management system</a>
-	<br>
-    <a href="Hospital Management System/index.html">Hospital Management System</a>
-	<br>
-    <a href="HotelManagementSystem/index.html">Hotel Management System</a>
-	<br>
-    <a href="Appointment Management System/index.html">Appointment Management System</a>
-	<br>
-    <a href="mdreader/index.html">md reader</a>
-	<br>
-    <a href="HR Outreach Generator/hr-email-generator.html">HR Outreach Generator</a>
-	<br>
-    <a href="Banana Prompt Builder/index.html">Banana Prompt Builder</a>
-    <br>
-    <a href="Seat Booking & Billing System/index.html">Seat Booking & Billing System</a>
-	<br>
-    <a href="resume/index.html">Resume</a>
-</body>
 
+<header>
+  <button class="theme-toggle" id="themeToggle">🌙 Dark</button>
+  <div class="badge">Chavada Sagar</div>
+  <h1 class="title">Project Playground</h1>
+  <div class="subtitle">.NET Backend Developer · Vanilla JS / HTML / CSS Builds · <span id="totalCount">0</span> mini projects & systems</div>
+</header>
+
+<div class="controls">
+  <div class="search-wrap">
+    <input type="text" id="searchInput" placeholder="Search projects... (e.g. hospital, todo, resume)">
+  </div>
+</div>
+
+<div class="filters" id="filters"></div>
+
+<div class="stats" id="stats"></div>
+
+<div class="grid" id="grid"></div>
+<div class="empty" id="emptyState">😕 No matching project found. Try a different keyword.</div>
+
+<footer>Built with vanilla HTML · CSS · JS — no framework, just discipline. 🚀</footer>
+
+<script>
+  // =====================================================================
+  // 👇 NAYA PROJECT ADD KARNE KE LIYE: bas is list me EK line add karo.
+  // Sirf "name" aur "href" zaroori hai. category/icon AUTO-DETECT ho jayega
+  // niche diye gaye keyword rules se (KEYWORD_RULES array me).
+  // Agar auto-detect galat ho ya khud control karna ho, to teesra/chautha
+  // field { cat:"...", icon:"..." } manually bhi de sakte ho — wo priority
+  // lega auto-detect ke upar.
+  // =====================================================================
+  const projects = [
+    { name:"user-templates", href:"user-templates/index.html" },
+    { name:"Datatable example", href:"datatable-example/index.html" },
+    { name:"Generate Strong Password", href:"genrate_strong_password-using-javascript/index.html" },
+    { name:"Strong Your Password", href:"strong_your_password/" },
+    { name:"Read Jokes (Call Joke API)", href:"js-21(call joke api)/" },
+    { name:"Find Your IP Info", href:"findmyipinfo/" },
+    { name:"Find Coordinate", href:"find coord/index.html" },
+    { name:"Todo (JS)", href:"todo/index.html" },
+    { name:"Age Calculator", href:"agecalc/index.html" },
+    { name:"Validation using Notify Demo", href:"validation_using_notify_message/index.html" },
+    { name:"Toastr Demo", href:"toastr/index.html" },
+    { name:"jQuery Validation Plugin", href:"jqueryvalidationplugin/" },
+    { name:"Guess The Number (JS)", href:"guessthenumber/index.html" },
+    { name:"Portfolio", href:"portfolio/index.html" },
+    { name:"Todo (Using LocalStorage)", href:"todo(localstorage)/index.html" },
+    { name:"String Repeated Value", href:"getarrayrepeatedvalue/index.html" },
+    { name:"Number To Word", href:"numbertoword/index.html" },
+    { name:"Postman", href:"postman/index.html" },
+    { name:"GUID Generator", href:"guid/index.html" },
+    { name:"File Info", href:"fileinfo/index.html" },
+    { name:"Kendo Grid", href:"Kendogrid/index.html" },
+    { name:"View Image (JS)", href:"viewimage/index.html" },
+    { name:"Upload Image (Base64 + LocalStorage)", href:"UploadImageInLocalStorage/index.html" },
+    { name:"Queue Base Task System", href:"TaskBaseQueueSystem/index.html" },
+    { name:"Project System", href:"userbaseprojectsystem/index.html" },
+    { name:"Appointment Scheduler", href:"Appointment Scheduler/index.html" },
+    { name:"Subscription Scheduler", href:"Subscription/index.html" },
+    { name:"HRM UI", href:"hrmui/index.html" },
+    { name:"Khodiyar Jewellers", href:"Khodiyar jwellers/index.html" },
+    { name:"DSA Questions", href:"DSAQuestions/index.html" },
+    { name:"Library Management System", href:"LibraryManagementSystem/index.html" },
+    { name:"Restaurant Management System", href:"restaurantmanagementsystem/index.html" },
+    { name:"Jewellery Management System", href:"jewellery management system/index.html" },
+    { name:"Hospital Management System", href:"Hospital Management System/index.html" },
+    { name:"Hotel Management System", href:"HotelManagementSystem/index.html" },
+    { name:"Appointment Management System", href:"Appointment Management System/index.html" },
+    { name:"MD Reader", href:"mdreader/index.html" },
+    { name:"HR Outreach Generator", href:"HR Outreach Generator/hr-email-generator.html" },
+    { name:"Banana Prompt Builder", href:"Banana Prompt Builder/index.html" },
+    { name:"Seat Booking & Billing System", href:"Seat Booking & Billing System/index.html" },
+    { name:"Resume", href:"resume/index.html" }
+
+    // 👉 Example: naya project add karna ho to bas yeh copy-paste karke edit karo:
+    // { name:"Your New Project Name", href:"your-folder/index.html" },
+  ];
+
+  // Keyword → {category, icon} rules. Order matters: pehla match jeetta hai.
+  // Naya keyword pattern add karna ho to bas is array me ek line add karo.
+  const KEYWORD_RULES = [
+    { keywords:["resume", "portfolio"], cat:"Portfolio", icon:"📄" },
+    { keywords:["hospital"], cat:"System", icon:"🏥" },
+    { keywords:["hotel"], cat:"System", icon:"🏨" },
+    { keywords:["restaurant"], cat:"System", icon:"🍽️" },
+    { keywords:["jewel"], cat:"System", icon:"💎" },
+    { keywords:["library"], cat:"System", icon:"📚" },
+    { keywords:["appointment", "scheduler", "subscription", "booking", "seat"], cat:"System", icon:"📅" },
+    { keywords:["hrm", "hr outreach", "hr email"], cat:"System", icon:"🧑‍💼" },
+    { keywords:["queue", "project system"], cat:"System", icon:"🗂️" },
+    { keywords:["dsa", "question"], cat:"Learning", icon:"🧠" },
+    { keywords:["password"], cat:"Tools", icon:"🔐" },
+    { keywords:["ip info", "coordinate", "guid", "file info", "md reader", "number to word", "postman", "prompt builder", "template"], cat:"Tools", icon:"🧰" },
+    { keywords:["todo"], cat:"Demo", icon:"✅" },
+    { keywords:["joke"], cat:"Demo", icon:"😂" },
+    { keywords:["image"], cat:"Demo", icon:"🖼️" },
+    { keywords:["grid", "datatable"], cat:"Demo", icon:"📊" },
+    { keywords:["validation", "toastr", "notify"], cat:"Demo", icon:"⚠️" },
+    { keywords:["guess the number"], cat:"Demo", icon:"🎯" },
+    { keywords:["string repeated", "repeated value"], cat:"Demo", icon:"🔤" }
+  ];
+
+  const DEFAULT_RULE = { cat:"Demo", icon:"⚙️" };
+
+  // Auto-detect karta hai category/icon, agar project me manually nahi diya
+  function autoDetect(name){
+    const lower = name.toLowerCase();
+    for (const rule of KEYWORD_RULES){
+      if (rule.keywords.some(k => lower.includes(k))) return rule;
+    }
+    return DEFAULT_RULE;
+  }
+
+  // Har project ko normalize karo: agar cat/icon manually diya hai to wahi use hoga,
+  // warna auto-detect se fill ho jayega.
+  projects.forEach(p => {
+    const detected = autoDetect(p.name);
+    p.cat = p.cat || detected.cat;
+    p.icon = p.icon || detected.icon;
+  });
+
+  const grid = document.getElementById('grid');
+  const searchInput = document.getElementById('searchInput');
+  const filtersEl = document.getElementById('filters');
+  const statsEl = document.getElementById('stats');
+  const emptyState = document.getElementById('emptyState');
+  const totalCount = document.getElementById('totalCount');
+
+  totalCount.textContent = projects.length;
+
+  const categories = ["All", ...Array.from(new Set(projects.map(p => p.cat)))];
+  let activeCat = "All";
+  let query = "";
+
+  function renderChips(){
+    filtersEl.innerHTML = "";
+    categories.forEach(cat => {
+      const chip = document.createElement('div');
+      chip.className = "chip" + (cat === activeCat ? " active" : "");
+      chip.textContent = cat;
+      chip.onclick = () => { activeCat = cat; renderChips(); renderGrid(); };
+      filtersEl.appendChild(chip);
+    });
+  }
+
+  function renderGrid(){
+    const q = query.trim().toLowerCase();
+    const filtered = projects.filter(p => {
+      const matchesCat = activeCat === "All" || p.cat === activeCat;
+      const matchesQuery = !q || p.name.toLowerCase().includes(q) || p.cat.toLowerCase().includes(q);
+      return matchesCat && matchesQuery;
+    });
+
+    grid.innerHTML = "";
+    filtered.forEach((p, i) => {
+      const a = document.createElement('a');
+      a.className = "card";
+      a.href = p.href;
+      a.style.animationDelay = (i * 0.02) + "s";
+      a.innerHTML = `
+        <div class="icon">${p.icon}</div>
+        <div class="name">${p.name}</div>
+        <div class="tag">${p.cat}</div>
+        <div class="arrow">→</div>
+      `;
+      grid.appendChild(a);
+    });
+
+    emptyState.classList.toggle('show', filtered.length === 0);
+    statsEl.textContent = `Showing ${filtered.length} of ${projects.length} projects`;
+  }
+
+  searchInput.addEventListener('input', (e) => {
+    query = e.target.value;
+    renderGrid();
+  });
+
+  // Theme toggle (in-memory only, no localStorage per artifact constraints)
+  const themeToggle = document.getElementById('themeToggle');
+  let isLight = false;
+  themeToggle.addEventListener('click', () => {
+    isLight = !isLight;
+    document.documentElement.setAttribute('data-theme', isLight ? 'light' : 'dark');
+    themeToggle.textContent = isLight ? '☀️ Light' : '🌙 Dark';
+  });
+
+  renderChips();
+  renderGrid();
+</script>
+</body>
 </html>
