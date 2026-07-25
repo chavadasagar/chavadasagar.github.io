@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - ShopEase</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+    <!-- Header Injector Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <main class="container" style="max-width: 440px; display: flex; align-items: center; justify-content: center; min-height: calc(100vh - 250px);">
+        <div class="card" style="width: 100%; margin: 20px 0;">
+            <div class="text-center mb-5">
+                <h1 style="margin-bottom: 8px;">Welcome Back</h1>
+                <p class="text-muted" style="font-size: 14px;">Sign in to your ShopEase account</p>
+            </div>
+
+            <form id="login-form">
+                <div class="form-group">
+                    <label class="form-label" for="login-email">Email Address</label>
+                    <input type="email" id="login-email" class="form-control" placeholder="name@domain.com" required>
+                </div>
+                
+                <div class="form-group">
+                    <div class="flex-between mb-1">
+                        <label class="form-label" for="login-password" style="margin: 0;">Password</label>
+                    </div>
+                    <input type="password" id="login-password" class="form-control" placeholder="••••••••" required>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-full mb-4" id="login-submit-btn">
+                    Sign In
+                </button>
+            </form>
+
+            <div class="text-center" style="font-size: 14px; margin-bottom: 24px;">
+                <span class="text-muted">New to ShopEase?</span> 
+                <a href="register.html" class="btn-link" style="font-weight: 600;">Create an account</a>
+            </div>
+
+            <!-- Testing helper shortcuts -->
+            <!-- Hinglish comment: Testing asan karne ke liye humne login page me shortcuts diye hain. -->
+            <div style="border-top: 1px dashed var(--border); padding-top: 16px;">
+                <p class="text-muted text-center mb-3" style="font-size: 12px; font-weight: 600;">TESTING QUICK LOGINS</p>
+                <div class="flex-column gap-2">
+                    <button type="button" class="btn btn-outline btn-sm btn-full" id="autofill-customer">
+                        👤 Customer Account (Rahul)
+                    </button>
+                    <button type="button" class="btn btn-outline btn-sm btn-full" id="autofill-seller">
+                        💼 Seller Hub (TechCorp)
+                    </button>
+                    <button type="button" class="btn btn-outline btn-sm btn-full" id="autofill-admin">
+                        ⚙️ System Admin
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Scripts -->
+    <script src="js/db.js"></script>
+    <script src="js/seed.js"></script>
+    <script src="js/ui-helpers.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Check if already logged in, redirect
+            if (Auth.isLoggedIn()) {
+                const user = Auth.getCurrentUser();
+                redirectUser(user.user_type);
+            }
+
+            const loginForm = document.getElementById('login-form');
+            const emailInput = document.getElementById('login-email');
+            const passwordInput = document.getElementById('login-password');
+
+            // Form Submit handler
+            loginForm.onsubmit = (e) => {
+                e.preventDefault();
+                
+                const email = emailInput.value;
+                const password = passwordInput.value;
+
+                const result = Auth.login(email, password);
+                if (result.success) {
+                    UI.showToast('Login successful! Welcome back.', 'success');
+                    setTimeout(() => {
+                        redirectUser(result.user.user_type);
+                    }, 1000);
+                } else {
+                    UI.showToast(result.message, 'danger');
+                }
+            };
+
+            // Helper Autofill Button Click Handlers
+            document.getElementById('autofill-customer').onclick = () => {
+                emailInput.value = 'customer@ecom.com';
+                passwordInput.value = 'password123';
+                UI.showToast('Autofilled Customer credentials', 'info');
+            };
+
+            document.getElementById('autofill-seller').onclick = () => {
+                emailInput.value = 'seller@ecom.com';
+                passwordInput.value = 'password123';
+                UI.showToast('Autofilled Seller credentials', 'info');
+            };
+
+            document.getElementById('autofill-admin').onclick = () => {
+                emailInput.value = 'admin@ecom.com';
+                passwordInput.value = 'password123';
+                UI.showToast('Autofilled Admin credentials', 'info');
+            };
+
+            // Redirect dispatcher
+            function redirectUser(userType) {
+                const urlParams = new URLSearchParams(window.location.search);
+                const redirectPath = urlParams.get('redirect');
+                
+                if (redirectPath) {
+                    window.location.href = decodeURIComponent(redirectPath);
+                    return;
+                }
+
+                if (userType === 'ADMIN') {
+                    window.location.href = 'admin-dashboard.html';
+                } else if (userType === 'SELLER') {
+                    window.location.href = 'seller-dashboard.html';
+                } else {
+                    window.location.href = 'index.html';
+                }
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - ShopEase</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+    <!-- Header Injector Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <main class="container" style="max-width: 460px; display: flex; align-items: center; justify-content: center; min-height: calc(100vh - 250px);">
+        <div class="card" style="width: 100%; margin: 20px 0;">
+            <div class="text-center mb-5">
+                <h1 style="margin-bottom: 8px;">Create Account</h1>
+                <p class="text-muted" style="font-size: 14px;">Register a new ShopEase profile</p>
+            </div>
+
+            <form id="register-form">
+                <div class="form-group">
+                    <label class="form-label" for="reg-name">Full Name</label>
+                    <input type="text" id="reg-name" class="form-control" placeholder="John Doe" required>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="reg-email">Email Address</label>
+                    <input type="email" id="reg-email" class="form-control" placeholder="john@example.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="reg-phone">Phone Number</label>
+                    <input type="tel" id="reg-phone" class="form-control" placeholder="9876543210" pattern="[0-9]{10}" title="Please enter a valid 10-digit phone number" required>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="reg-type">I want to register as a</label>
+                    <select id="reg-type" class="form-select">
+                        <option value="CUSTOMER">Customer (Buyer)</option>
+                        <option value="SELLER">Seller (Merchant)</option>
+                    </select>
+                    <small class="text-muted" style="font-size: 11px; display: block; margin-top: 4px;">Sellers require administrator approval before logging in.</small>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="reg-password">Password</label>
+                    <input type="password" id="reg-password" class="form-control" placeholder="At least 6 characters" minlength="6" required>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="reg-confirm">Confirm Password</label>
+                    <input type="password" id="reg-confirm" class="form-control" placeholder="Confirm your password" required>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-full mb-4" id="reg-submit-btn">
+                    Create Account
+                </button>
+            </form>
+
+            <div class="text-center" style="font-size: 14px;">
+                <span class="text-muted">Already have an account?</span> 
+                <a href="login.html" class="btn-link" style="font-weight: 600;">Sign In</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Scripts -->
+    <script src="js/db.js"></script>
+    <script src="js/seed.js"></script>
+    <script src="js/ui-helpers.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            if (Auth.isLoggedIn()) {
+                window.location.href = 'index.html';
+            }
+
+            const regForm = document.getElementById('register-form');
+            const nameInput = document.getElementById('reg-name');
+            const emailInput = document.getElementById('reg-email');
+            const phoneInput = document.getElementById('reg-phone');
+            const typeSelect = document.getElementById('reg-type');
+            const passwordInput = document.getElementById('reg-password');
+            const confirmInput = document.getElementById('reg-confirm');
+
+            regForm.onsubmit = (e) => {
+                e.preventDefault();
+
+                const name = nameInput.value.trim();
+                const email = emailInput.value.trim();
+                const phone = phoneInput.value.trim();
+                const type = typeSelect.value;
+                const password = passwordInput.value;
+                const confirm = confirmInput.value;
+
+                // Validate Password Matches
+                if (password !== confirm) {
+                    UI.showToast('Passwords do not match. Please verify.', 'danger');
+                    return;
+                }
+
+                // Check if user already exists
+                const users = DB.get('users');
+                const emailExists = users.some(u => u.email.toLowerCase() === email.toLowerCase());
+                if (emailExists) {
+                    UI.showToast('This email is already registered.', 'danger');
+                    return;
+                }
+                const phoneExists = users.some(u => u.phone_number === phone);
+                if (phoneExists) {
+                    UI.showToast('This phone number is already registered.', 'danger');
+                    return;
+                }
+
+                // Trigger Simulated OTP Modal Dialog
+                // Hinglish comment: Mock verification flow: register form submit par hum fake OTP enter modal show karenge.
+                const otpVal = Math.floor(100000 + Math.random() * 900000);
+                
+                UI.showModal({
+                    title: 'Verify Mobile Number',
+                    bodyHTML: `
+                        <p style="margin-bottom: 12px;">We have sent a simulated 6-digit OTP verification code to <strong>+91 ${phone}</strong>.</p>
+                        <p style="font-size:12px; color:var(--text-muted); margin-bottom:16px;">Demo Code: <strong style="font-size:14px; color:var(--primary);">${otpVal}</strong></p>
+                        <div class="form-group">
+                            <label class="form-label" for="otp-input-val">Enter 6-Digit OTP</label>
+                            <input type="text" id="otp-input-val" class="form-control text-center font-bold" placeholder="0 0 0 0 0 0" maxlength="6" style="letter-spacing: 6px; font-size: 20px;">
+                        </div>
+                    `,
+                    primaryText: 'Verify & Register',
+                    secondaryText: 'Cancel',
+                    onConfirm: () => {
+                        const enteredOtp = document.getElementById('otp-input-val').value.trim();
+                        if (enteredOtp.length !== 6 || isNaN(enteredOtp)) {
+                            UI.showToast('Invalid OTP format. Must be a 6-digit number.', 'danger');
+                            return false; // Keep modal open
+                        }
+
+                        if (enteredOtp !== String(otpVal)) {
+                            UI.showToast('Incorrect OTP code. Please try again.', 'danger');
+                            return false; // Keep modal open
+                        }
+
+                        // OTP Verified! Complete registration in DB
+                        const result = Auth.register(name, email, phone, password, type);
+                        if (result.success) {
+                            if (type === 'SELLER') {
+                                UI.showToast('Registration successful! Waiting for administrator approval.', 'success');
+                            } else {
+                                UI.showToast('Registration complete! Please sign in to continue.', 'success');
+                            }
+                            
+                            setTimeout(() => {
+                                window.location.href = 'login.html';
+                            }, 1500);
+                        } else {
+                            UI.showToast(result.message, 'danger');
+                        }
+                    }
+                });
+            };
+        });
+    </script>
+</body>
+</html>

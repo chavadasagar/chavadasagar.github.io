@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Tracking Details - ShopEase</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <style>
+        /* Details layout customization */
+        .order-detail-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 24px;
+            margin-bottom: 40px;
+        }
+
+        @media(min-width: 1025px) {
+            .order-detail-grid {
+                grid-template-columns: 1.5fr 0.9fr;
+                gap: 32px;
+            }
+        }
+
+        /* receipt detail rows */
+        .receipt-billing-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 13px;
+            margin-bottom: 10px;
+        }
+
+        .receipt-billing-row:last-child {
+            margin-bottom: 0;
+        }
+
+        .item-receipt-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12px 0;
+            border-bottom: 1px dashed var(--border);
+        }
+
+        .item-receipt-row:last-child {
+            border-bottom: none;
+        }
+
+        /* Audit history list styling */
+        .audit-list {
+            list-style: none;
+            padding-left: 20px;
+            border-left: 2px solid var(--border);
+            margin: 12px 0;
+        }
+
+        .audit-item {
+            position: relative;
+            padding-bottom: 20px;
+        }
+
+        .audit-item:last-child {
+            padding-bottom: 0;
+        }
+
+        .audit-marker {
+            position: absolute;
+            left: -27px;
+            top: 4px;
+            width: 12px;
+            height: 12px;
+            border-radius: var(--radius-full);
+            background-color: var(--border);
+            border: 2px solid var(--bg-card);
+        }
+
+        .audit-item.active .audit-marker {
+            background-color: var(--primary);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Injector Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <main class="container">
+        <!-- Breadcrumbs -->
+        <div class="breadcrumb">
+            <a href="index.html">Home</a>
+            <span class="breadcrumb-separator">&rarr;</span>
+            <a href="orders.html">My Orders</a>
+            <span class="breadcrumb-separator">&rarr;</span>
+            <span class="breadcrumb-item active" id="breadcrumb-order-num">ORD#000</span>
+        </div>
+
+        <div class="flex-between mb-5" style="flex-wrap: wrap; gap:12px;">
+            <div>
+                <h1 style="margin: 0; font-size:22px; display:inline-flex; align-items:center; gap:8px;" id="detail-order-number">
+                    Order details
+                </h1>
+                <span class="badge badge-info" id="detail-order-status" style="margin-left: 8px;">Status</span>
+            </div>
+            
+            <!-- Cancellation button -->
+            <button class="btn btn-danger btn-sm d-none" id="cancel-order-action-btn">
+                🛑 Cancel Order
+            </button>
+        </div>
+
+        <div class="order-detail-grid" id="order-detail-main-layout">
+            <!-- 1. Left Tracking History and Items List -->
+            <section>
+                <!-- Timeline status history logs -->
+                <div class="card mb-4">
+                    <h2 class="card-title" style="font-size:16px;">Tracking Timeline</h2>
+                    <div class="timeline" id="detail-timeline-container">
+                        <!-- Loaded dynamically -->
+                    </div>
+                </div>
+
+                <!-- Items list -->
+                <div class="card">
+                    <h2 class="card-title" style="font-size:16px; border-bottom:1px solid var(--border); padding-bottom:12px;">Ordered Items</h2>
+                    <div id="detail-items-container">
+                        <!-- Loaded dynamically -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- 2. Right address and receipt block summaries -->
+            <aside>
+                <!-- Shipping Address Snapshot -->
+                <div class="card mb-4">
+                    <h2 class="card-title" style="font-size:16px; border-bottom:1px solid var(--border); padding-bottom:10px; margin-bottom:14px;">Shipping Address</h2>
+                    <div id="detail-address-block" style="font-size:13px; line-height: 1.5; color: var(--text-muted);">
+                        <!-- Address snapshot fields -->
+                    </div>
+                </div>
+
+                <!-- Payment details and Receipts breakdown -->
+                <div class="card">
+                    <h2 class="card-title" style="font-size:16px; border-bottom:1px solid var(--border); padding-bottom:10px; margin-bottom:14px;">Payment Summary</h2>
+                    
+                    <div id="detail-receipt-pricing" style="margin-bottom:16px;">
+                        <!-- Pricing snapshot summary -->
+                    </div>
+
+                    <div style="border-top:1px dashed var(--border); padding-top:14px; font-size:11px; color:var(--text-muted); line-height:1.5;" id="detail-payment-meta">
+                        <!-- Method and transactions IDs -->
+                    </div>
+
+                    <!-- Refund Section (Show if order cancelled or refund exists) -->
+                    <div id="detail-refund-block" class="mt-4 d-none" style="background-color: var(--danger-light); padding: 12px 16px; border-radius: var(--radius-md); border: 1px solid #fecaca;">
+                        <div class="font-bold text-danger" style="font-size:13px; margin-bottom:4px;">💸 Refund Initiated (Simulated)</div>
+                        <div id="detail-refund-text" style="font-size:12px; color:var(--danger);">Refund details...</div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Review Submission Dialog Modal -->
+    <div class="modal-overlay" id="pdp-review-modal-overlay">
+        <div class="modal-content" style="max-width: 440px;">
+            <div class="modal-header">
+                <h3 class="modal-title">Write a Review</h3>
+                <button class="modal-close-btn" id="close-pdp-review-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="submit-pdp-review-form">
+                    <div class="form-group">
+                        <label class="form-label">Your Rating</label>
+                        <div class="rating-stars-interactive" id="interactive-pdp-rating-stars">
+                            <span class="star" data-value="1">&#9733;</span>
+                            <span class="star" data-value="2">&#9733;</span>
+                            <span class="star" data-value="3">&#9733;</span>
+                            <span class="star" data-value="4">&#9733;</span>
+                            <span class="star" data-value="5">&#9733;</span>
+                        </div>
+                        <input type="hidden" id="pdp-review-rating-val" value="0">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label" for="pdp-review-title">Review Title</label>
+                        <input type="text" id="pdp-review-title" class="form-control" placeholder="Best purchase ever" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="pdp-review-comment">Comment Details</label>
+                        <textarea id="pdp-review-comment" class="form-control" rows="4" placeholder="Share your experience..." required></textarea>
+                    </div>
+
+                    <input type="hidden" id="pdp-review-product-id">
+
+                    <button type="submit" class="btn btn-primary btn-full">
+                        Submit Review
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/db.js"></script>
+    <script src="js/seed.js"></script>
+    <script src="js/ui-helpers.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/orders.js"></script>
+    <script src="js/reviews.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        let currentOrderId = null;
+        let selectedReviewRating = 0;
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // Require login
+            if (!Auth.requireAuth()) return;
+
+            const urlParams = new URLSearchParams(window.location.search);
+            currentOrderId = urlParams.get('id');
+
+            if (!currentOrderId) {
+                window.location.href = 'orders.html';
+                return;
+            }
+
+            renderOrderDetailPage();
+
+            // Bind cancellation action
+            const cancelBtn = document.getElementById('cancel-order-action-btn');
+            if (cancelBtn) {
+                cancelBtn.onclick = handleCancelOrderAction;
+            }
+
+            // Setup Interactive reviews stars triggers inside modal
+            setupInteractiveStars();
+        });
+
+        // Main loader dispatcher
+        function renderOrderDetailPage() {
+            const data = Orders.getOrderDetails(currentOrderId);
+            if (!data) {
+                window.location.href = 'orders.html';
+                return;
+            }
+
+            const { order, items, history, payment, refund } = data;
+
+            // Set Breadcrumbs and headings
+            document.getElementById('breadcrumb-order-num').innerText = order.order_number;
+            document.getElementById('detail-order-number').innerText = `Order: ${order.order_number}`;
+            
+            // Set status badges
+            const statusEl = document.getElementById('detail-order-status');
+            statusEl.innerText = order.order_status;
+            statusEl.className = 'badge'; // Reset
+            
+            let badgeClass = 'badge-info';
+            if (order.order_status === 'DELIVERED') badgeClass = 'badge-success';
+            else if (order.order_status === 'CANCELLED') badgeClass = 'badge-danger';
+            else if (order.order_status === 'OUT_FOR_DELIVERY' || order.order_status === 'SHIPPED') badgeClass = 'badge-warning';
+            statusEl.classList.add(badgeClass);
+
+            // Toggle Cancel Order button visibility
+            const cancelBtn = document.getElementById('cancel-order-action-btn');
+            if (['PLACED', 'CONFIRMED'].includes(order.order_status)) {
+                cancelBtn.classList.remove('d-none');
+            } else {
+                cancelBtn.classList.add('d-none');
+            }
+
+            // Render tracking timeline list
+            const timelineContainer = document.getElementById('detail-timeline-container');
+            let timelineHtml = '';
+
+            // Standard step checkpoints
+            const checkpoints = ['PLACED', 'CONFIRMED', 'SHIPPED', 'DELIVERED'];
+            
+            // Check if cancelled
+            if (order.order_status === 'CANCELLED') {
+                checkpoints.splice(2, 2, 'CANCELLED'); // Replaces shipped/delivered with CANCELLED
+            }
+
+            checkpoints.forEach((chk, idx) => {
+                // Find matching log in history trail
+                const log = history.find(h => h.status === chk);
+                const isActive = log !== undefined || (order.order_status === 'CANCELLED' && chk === 'CANCELLED');
+                
+                let checkTime = '';
+                let checkNotes = '';
+                
+                if (log) {
+                    checkTime = new Date(log.changed_at).toLocaleString('en-IN', {
+                        month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit'
+                    });
+                    checkNotes = log.notes;
+                } else if (isActive && chk === 'CANCELLED') {
+                    const cancelLog = history.find(h => h.status === 'CANCELLED');
+                    if (cancelLog) {
+                        checkTime = new Date(cancelLog.changed_at).toLocaleString('en-IN', {
+                            month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit'
+                        });
+                        checkNotes = cancelLog.notes;
+                    }
+                }
+
+                timelineHtml += `
+                    <div class="timeline-item ${isActive ? 'active' : ''}">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-title">${chk}</div>
+                            ${checkTime ? `<div class="timeline-time">${checkTime}</div>` : ''}
+                            ${checkNotes ? `<div class="timeline-desc">${checkNotes}</div>` : ''}
+                        </div>
+                    </div>
+                `;
+            });
+            timelineContainer.innerHTML = timelineHtml;
+
+            // Render Address Box Snapshot
+            const addr = order.shipping_address;
+            document.getElementById('detail-address-block').innerHTML = `
+                <div style="font-weight: 600; color: var(--text-main); font-size:14px; margin-bottom:4px;">${addr.recipient_name}</div>
+                <div>${addr.address_line1}</div>
+                ${addr.address_line2 ? `<div>${addr.address_line2}</div>` : ''}
+                <div>${addr.city}, ${addr.state} - ${addr.pincode}</div>
+                <div style="margin-top:6px; font-weight:550; color:var(--text-main);">📞 +91 ${addr.phone_number}</div>
+            `;
+
+            // Render Billing Summary Receipt Box
+            const receiptContainer = document.getElementById('detail-receipt-pricing');
+            receiptContainer.innerHTML = `
+                <div class="receipt-billing-row">
+                    <span class="text-muted">Subtotal</span>
+                    <span>${UI.formatCurrency(order.subtotal_amount)}</span>
+                </div>
+                ${order.discount_amount > 0 ? `
+                    <div class="receipt-billing-row" style="color:var(--success)">
+                        <span>Coupon Discount</span>
+                        <span>-${UI.formatCurrency(order.discount_amount)}</span>
+                    </div>
+                ` : ''}
+                <div class="receipt-billing-row">
+                    <span class="text-muted">GST Tax (12%)</span>
+                    <span>${UI.formatCurrency(order.tax_amount)}</span>
+                </div>
+                <div class="receipt-billing-row">
+                    <span class="text-muted">Shipping fee</span>
+                    <span>${order.shipping_charge === 0 ? 'FREE' : UI.formatCurrency(order.shipping_charge)}</span>
+                </div>
+                <div class="receipt-billing-row" style="font-weight:750; font-size:16px; border-top:1px dashed var(--border); padding-top:10px; margin-top:10px;">
+                    <span>Grand Total</span>
+                    <span style="color:var(--primary); font-size:18px;">${UI.formatCurrency(order.total_amount)}</span>
+                </div>
+            `;
+
+            // Payment method details
+            document.getElementById('detail-payment-meta').innerHTML = `
+                <div>Payment Method: <strong>${payment ? payment.payment_method : 'COD'}</strong></div>
+                ${payment && payment.transaction_id ? `<div>Transaction ID: <span style="font-family:monospace;">${payment.transaction_id}</span></div>` : ''}
+                ${payment && payment.paid_at ? `<div>Paid on: ${new Date(payment.paid_at).toLocaleString('en-IN')}</div>` : ''}
+            `;
+
+            // Refund panel trigger
+            const refundBlock = document.getElementById('detail-refund-block');
+            const refundText = document.getElementById('detail-refund-text');
+            if (refund) {
+                refundBlock.classList.remove('d-none');
+                refundText.innerHTML = `
+                    <div>Amount: <strong>${UI.formatCurrency(refund.refund_amount)}</strong></div>
+                    <div>Reason: ${refund.reason}</div>
+                    <div>Simulated status: <strong style="text-transform:uppercase;">${refund.status}</strong></div>
+                `;
+            } else {
+                refundBlock.classList.add('d-none');
+            }
+
+            // Render Ordered Items list
+            const itemsContainer = document.getElementById('detail-items-container');
+            let itemsHtml = '';
+            
+            items.forEach(item => {
+                const variant = DB.findById('product_variants', item.variant_id);
+                const reviewExists = DB.findOne('reviews', { product_id: variant ? variant.product_id : 0, user_id: order.user_id });
+                
+                // Show Review button only if delivered AND not yet reviewed
+                let reviewBtn = '';
+                if (order.order_status === 'DELIVERED' && !reviewExists && variant) {
+                    reviewBtn = `<button class="btn btn-secondary btn-sm" onclick="openReviewPopup(${variant.product_id})">✍️ Review Product</button>`;
+                } else if (reviewExists) {
+                    reviewBtn = `<span style="font-size:11px; color:var(--success); font-weight:600;">✔️ Review Submitted</span>`;
+                }
+
+                itemsHtml += `
+                    <div class="item-receipt-row">
+                        <div style="flex-grow:1; display:flex; flex-direction:column; gap:4px;">
+                            <div class="font-semibold" style="font-size:14px;">${item.product_name_snapshot}</div>
+                            <div style="font-size:12px; color:var(--text-muted);">
+                                ${item.quantity} &times; ${UI.formatCurrency(item.unit_price_snapshot)}
+                            </div>
+                            <div style="font-size:11px; color:var(--text-muted);">Item status: <strong style="color:var(--text-main);">${item.item_status}</strong></div>
+                        </div>
+                        <div style="text-align:right; display:flex; flex-direction:column; align-items:flex-end; gap:8px;">
+                            <span class="font-bold">${UI.formatCurrency(item.item_total)}</span>
+                            ${reviewBtn}
+                        </div>
+                    </div>
+                `;
+            });
+            itemsContainer.innerHTML = itemsHtml;
+        }
+
+        // Cancel order click handler
+        // Hinglish comment: Cancellation simulation: customer popup validation modal show hota hai.
+        function handleCancelOrderAction() {
+            UI.showModal({
+                title: 'Cancel Order?',
+                bodyHTML: `
+                    <p style="margin-bottom:12px;">Are you sure you want to cancel this order? Stock counts will automatically revert in database.</p>
+                    <div class="form-group" style="margin:0;">
+                        <label class="form-label" for="cancel-reason-input">Reason for cancellation</label>
+                        <select id="cancel-reason-input" class="form-select">
+                            <option value="Ordered by mistake">Ordered by mistake</option>
+                            <option value="Incorrect shipping address selected">Incorrect shipping address selected</option>
+                            <option value="Found better deal elsewhere">Found better deal elsewhere</option>
+                            <option value="Delivery taking too long">Delivery taking too long</option>
+                        </select>
+                    </div>
+                `,
+                primaryText: 'Yes, Cancel Order',
+                secondaryText: 'Keep Order',
+                onConfirm: () => {
+                    const reason = document.getElementById('cancel-reason-input').value;
+                    const result = Orders.cancelOrder(currentOrderId, reason);
+                    if (result.success) {
+                        UI.showToast(result.message, 'success');
+                        renderOrderDetailPage(); // Refresh UI
+                    } else {
+                        UI.showToast(result.message, 'danger');
+                    }
+                }
+            });
+        }
+
+        // Review Popup handlers
+        function openReviewPopup(productId) {
+            const overlay = document.getElementById('pdp-review-modal-overlay');
+            document.getElementById('pdp-review-product-id').value = productId;
+            overlay.classList.add('show');
+        }
+
+        function setupInteractiveStars() {
+            const overlay = document.getElementById('pdp-review-modal-overlay');
+            const closeBtn = document.getElementById('close-pdp-review-modal');
+            const form = document.getElementById('submit-pdp-review-form');
+
+            closeBtn.onclick = () => overlay.classList.remove('show');
+
+            const stars = document.querySelectorAll('#interactive-pdp-rating-stars .star');
+            stars.forEach(st => {
+                st.onclick = () => {
+                    const val = parseInt(st.getAttribute('data-value'));
+                    selectedReviewRating = val;
+                    document.getElementById('pdp-review-rating-val').value = val;
+
+                    stars.forEach(s => {
+                        const starVal = parseInt(s.getAttribute('data-value'));
+                        if (starVal <= val) {
+                            s.classList.add('active');
+                        } else {
+                            s.classList.remove('active');
+                        }
+                    });
+                };
+            });
+
+            // Review Modal Form submit handler
+            form.onsubmit = (e) => {
+                e.preventDefault();
+                const pId = document.getElementById('pdp-review-product-id').value;
+                const title = document.getElementById('pdp-review-title').value;
+                const comment = document.getElementById('pdp-review-comment').value;
+                const rating = document.getElementById('pdp-review-rating-val').value;
+
+                if (rating == 0) {
+                    UI.showToast('Please click stars to select rating.', 'danger');
+                    return;
+                }
+
+                const result = Reviews.submitReview({
+                    productId: pId,
+                    rating: rating,
+                    title: title,
+                    comment: comment
+                });
+
+                if (result.success) {
+                    UI.showToast(result.message, 'success');
+                    overlay.classList.remove('show');
+                    
+                    // Reset
+                    form.reset();
+                    stars.forEach(s => s.classList.remove('active'));
+                    document.getElementById('pdp-review-rating-val').value = 0;
+                    
+                    renderOrderDetailPage(); // Refresh list to show submitted state
+                } else {
+                    UI.showToast(result.message, 'danger');
+                }
+            };
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seller Hub - ShopEase</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <style>
+        /* Seller layout overrides */
+        .seller-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 24px;
+            margin-bottom: 40px;
+        }
+
+        @media(min-width: 1025px) {
+            .seller-grid {
+                grid-template-columns: 1.1fr 0.9fr;
+                gap: 32px;
+            }
+        }
+
+        .seller-stat-card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-md);
+            padding: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Injector Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <main class="container">
+        <!-- Title and Stats -->
+        <div class="flex-between mb-5" style="flex-wrap: wrap; gap:12px;">
+            <div>
+                <h1 style="margin:0; font-size:22px;">Seller Dashboard</h1>
+                <p class="text-muted" style="font-size:12px; margin-top:2px;" id="seller-business-title">Loading Hub...</p>
+            </div>
+            <button class="btn btn-primary btn-sm" id="seller-toggle-product-form-btn">
+                ➕ Add New Product
+            </button>
+        </div>
+
+        <!-- Inline add product details form -->
+        <!-- Hinglish comment: Seller dashboard me new product and variants create karne ka option seed storage ke sath. -->
+        <div class="card mb-5" id="seller-new-product-drawer" style="display: none;">
+            <h2 class="card-title" style="font-size:16px; border-bottom: 1px solid var(--border); padding-bottom:10px; margin-bottom:16px;">Add New Catalog Product</h2>
+            <form id="seller-add-product-form">
+                <div class="grid-2-col mb-4">
+                    <div class="form-group" style="margin:0;">
+                        <label class="form-label" for="sp-name">Product Title</label>
+                        <input type="text" id="sp-name" class="form-control" placeholder="e.g. Ultra Smartwatch V2" required>
+                    </div>
+                    <div class="form-group" style="margin:0;">
+                        <label class="form-label" for="sp-base-price">Base Price (₹)</label>
+                        <input type="number" id="sp-base-price" class="form-control" placeholder="e.g. 2999" required>
+                    </div>
+                </div>
+
+                <div class="grid-2-col mb-4">
+                    <div class="form-group" style="margin:0;">
+                        <label class="form-label" for="sp-category">Category</label>
+                        <select id="sp-category" class="form-select" required>
+                            <!-- Dynamic loaded categories -->
+                        </select>
+                    </div>
+                    <div class="form-group" style="margin:0;">
+                        <label class="form-label" for="sp-brand">Brand</label>
+                        <select id="sp-brand" class="form-select" required>
+                            <!-- Dynamic loaded brands -->
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="sp-desc">Description</label>
+                    <textarea id="sp-desc" class="form-control" rows="3" placeholder="Provide details specifications" required></textarea>
+                </div>
+
+                <!-- Variant properties input list (Requires 1 default variant) -->
+                <div style="border:1px solid var(--border); padding:16px; border-radius:var(--radius-md); background-color:var(--bg-main);" class="mb-4">
+                    <h3 style="font-size:13px; font-weight:600; margin-bottom:12px;">Primary Variant Options</h3>
+                    <div class="grid-3-col mb-3">
+                        <div class="form-group" style="margin:0;">
+                            <label class="form-label" for="sp-var-name" style="font-size:11px;">Option Label (e.g. Blue - XL)</label>
+                            <input type="text" id="sp-var-name" class="form-control" placeholder="Standard Black" required>
+                        </div>
+                        <div class="form-group" style="margin:0;">
+                            <label class="form-label" for="sp-var-sku" style="font-size:11px;">SKU Code</label>
+                            <input type="text" id="sp-var-sku" class="form-control" placeholder="SKU-CODE-001" required>
+                        </div>
+                        <div class="form-group" style="margin:0;">
+                            <label class="form-label" for="sp-var-stock" style="font-size:11px;">Stock Inventory Qty</label>
+                            <input type="number" id="sp-var-stock" class="form-control" placeholder="25" min="1" required>
+                        </div>
+                    </div>
+                    <div class="grid-3-col">
+                        <div class="form-group" style="margin:0;">
+                            <label class="form-label" for="sp-var-price" style="font-size:11px;">Selling Price (₹)</label>
+                            <input type="number" id="sp-var-price" class="form-control" placeholder="e.g. 2999" required>
+                        </div>
+                        <div class="form-group" style="margin:0;">
+                            <label class="form-label" for="sp-var-disc" style="font-size:11px;">Discount Price (Optional)</label>
+                            <input type="number" id="sp-var-disc" class="form-control" placeholder="e.g. 2499">
+                        </div>
+                        <div class="form-group" style="margin:0;">
+                            <label class="form-label" for="sp-var-img" style="font-size:11px;">Demo Image URL (Unsplash/Picsum)</label>
+                            <input type="url" id="sp-var-img" class="form-control" placeholder="https://images.unsplash.com/photo-..." required>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="display:flex; gap:12px;">
+                    <button type="submit" class="btn btn-primary btn-sm">Add Product Catalog</button>
+                    <button type="button" class="btn btn-outline btn-sm" id="seller-cancel-product-drawer">Cancel</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="seller-grid">
+            <!-- 1. Left Catalog Products list -->
+            <section class="card" style="padding:16px 20px;">
+                <h2 class="card-title" style="font-size:16px; border-bottom:1px solid var(--border); padding-bottom:10px; margin-bottom:16px;">My Catalog Items</h2>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Product Details</th>
+                                <th>Status</th>
+                                <th>Base Price</th>
+                                <th>Avg Rating</th>
+                            </tr>
+                        </thead>
+                        <tbody id="seller-products-table-body">
+                            <!-- Loaded dynamically -->
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- 2. Right Seller Order items list -->
+            <section class="card" style="padding:16px 20px;">
+                <h2 class="card-title" style="font-size:16px; border-bottom:1px solid var(--border); padding-bottom:10px; margin-bottom:16px;">Orders to Fulfill (Ordered Items)</h2>
+                <div id="seller-orders-list">
+                    <!-- Loaded dynamically -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Scripts -->
+    <script src="js/db.js"></script>
+    <script src="js/seed.js"></script>
+    <script src="js/ui-helpers.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        let sellerRecord = null;
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // Require Seller Role
+            if (!Auth.requireRole(['SELLER'])) return;
+
+            const user = Auth.getCurrentUser();
+            // Fetch seller profile details
+            sellerRecord = DB.findOne('sellers', { user_id: user.user_id });
+            if (!sellerRecord) {
+                // If not found (e.g. pending), show warning
+                document.getElementById('seller-business-title').innerText = 'Verification Pending...';
+                UI.showToast('Seller profile is pending administrator verification.', 'warning');
+                return;
+            }
+
+            document.getElementById('seller-business-title').innerText = `Business: ${sellerRecord.business_name} | Rating: ⭐ ${sellerRecord.rating || '0.0'}`;
+
+            // Load dashboards datasets
+            loadSellerProducts();
+            loadSellerOrders();
+
+            // Category select dropdown mapping
+            const categories = Products.getCategories();
+            let catOptions = '';
+            categories.forEach(c => catOptions += `<option value="${c.category_id}">${c.category_name}</option>`);
+            document.getElementById('sp-category').innerHTML = catOptions;
+
+            // Brand select dropdown mapping
+            const brands = Products.getBrands();
+            let brandOptions = '';
+            brands.forEach(b => brandOptions += `<option value="${b.brand_id}">${b.brand_name}</option>`);
+            document.getElementById('sp-brand').innerHTML = brandOptions;
+
+            // Toggle add product forms click triggers
+            const addBtn = document.getElementById('seller-toggle-product-form-btn');
+            const drawer = document.getElementById('seller-new-product-drawer');
+            const cancelBtn = document.getElementById('seller-cancel-product-drawer');
+
+            addBtn.onclick = () => {
+                drawer.style.display = 'block';
+                addBtn.style.display = 'none';
+            };
+
+            cancelBtn.onclick = () => {
+                drawer.reset();
+                drawer.style.display = 'none';
+                addBtn.style.display = 'inline-block';
+            };
+
+            // Form Submit handler
+            const form = document.getElementById('seller-add-product-form');
+            form.onsubmit = handleAddProductCatalog;
+        });
+
+        // Seller Products loader
+        function loadSellerProducts() {
+            const products = DB.find('products', { seller_id: sellerRecord.seller_id });
+            const tbody = document.getElementById('seller-products-table-body');
+
+            if (products.length === 0) {
+                tbody.innerHTML = '<tr><td colspan="4" class="text-muted text-center">No products added. Click Add New Product.</td></tr>';
+                return;
+            }
+
+            let html = '';
+            products.forEach(p => {
+                const statusClass = p.status === 'APPROVED' ? 'badge-success' : (p.status === 'PENDING' ? 'badge-warning' : 'badge-danger');
+                html += `
+                    <tr>
+                        <td>
+                            <div style="font-weight:600; font-size:13px;">${p.product_name}</div>
+                            <div style="font-size:11px; color:var(--text-muted);">ID: ${p.product_id}</div>
+                        </td>
+                        <td>
+                            <span class="badge ${statusClass}">${p.status}</span>
+                        </td>
+                        <td>
+                            <span class="font-medium">${UI.formatCurrency(p.base_price)}</span>
+                        </td>
+                        <td>
+                            <span>⭐ ${p.avg_rating > 0 ? p.avg_rating : '0.0'}</span>
+                        </td>
+                    </tr>
+                `;
+            });
+            tbody.innerHTML = html;
+        }
+
+        // Seller Fulfilling Orders list loader
+        // Hinglish comment: Seller dashboard ordered items: items list display block aur status changer select dropdown.
+        function loadSellerOrders() {
+            const orderItems = DB.find('order_items', { seller_id: sellerRecord.seller_id });
+            const container = document.getElementById('seller-orders-list');
+
+            if (orderItems.length === 0) {
+                container.innerHTML = '<p class="text-muted text-center" style="padding:20px 0;">No matching orders placed containing your products.</p>';
+                return;
+            }
+
+            let html = '';
+            orderItems.forEach(item => {
+                const order = DB.findById('orders', item.order_id);
+                if (!order) return;
+
+                html += `
+                    <div style="border:1px solid var(--border); padding:14px; border-radius:var(--radius-md); margin-bottom:12px; font-size:12px;">
+                        <div class="flex-between mb-2">
+                            <span class="font-bold" style="color:var(--primary);">${order.order_number}</span>
+                            <span class="text-muted">${new Date(order.placed_at).toLocaleDateString('en-IN')}</span>
+                        </div>
+                        <div class="font-semibold" style="font-size:13px; color:var(--text-main); margin-bottom:4px;">${item.product_name_snapshot}</div>
+                        <div class="mb-3" style="color:var(--text-muted);">Quantity: ${item.quantity} | Total: <strong style="color:var(--text-main);">${UI.formatCurrency(item.item_total)}</strong></div>
+                        
+                        <!-- Status Update trigger -->
+                        <div style="display:flex; align-items:center; justify-content:space-between; gap:12px;">
+                            <span>Status: <span class="badge badge-info">${item.item_status}</span></span>
+                            
+                            ${item.item_status !== 'CANCELLED' && item.item_status !== 'DELIVERED' ? `
+                                <select class="form-select form-select-sm" onchange="updateOrderItemStatus(this, ${item.order_item_id})" style="width:120px; font-size:11px; padding:4px 8px; min-height:auto;">
+                                    <option value="" disabled selected>Update...</option>
+                                    <option value="CONFIRMED">CONFIRMED</option>
+                                    <option value="SHIPPED">SHIPPED</option>
+                                    <option value="DELIVERED">DELIVERED</option>
+                                </select>
+                            ` : ''}
+                        </div>
+                    </div>
+                `;
+            });
+            container.innerHTML = html;
+        }
+
+        // Action callback: update item fulfillment status
+        // Hinglish comment: Seller jab single item status update kare, customer orders details aur audit logs append ho jayenge.
+        function updateOrderItemStatus(selectElement, orderItemId) {
+            const newStatus = selectElement.value;
+            if (!newStatus) return;
+
+            const item = DB.findById('order_items', orderItemId);
+            if (!item) return;
+
+            // Update item record
+            DB.update('order_items', orderItemId, { item_status: newStatus });
+
+            // Create tracking audit history entry
+            DB.insert('order_status_history', {
+                order_id: item.order_id,
+                status: newStatus,
+                changed_by: 'SELLER',
+                changed_at: new Date().toISOString(),
+                notes: `Product item "${item.product_name_snapshot}" updated to ${newStatus}.`
+            });
+
+            // If ALL items in order match status, update parent order status
+            const siblingItems = DB.find('order_items', { order_id: item.order_id });
+            const allMatch = siblingItems.every(sib => sib.item_status === newStatus || sib.item_status === 'CANCELLED');
+            
+            if (allMatch) {
+                DB.update('orders', item.order_id, { order_status: newStatus });
+                
+                // Add alert notification for parent update
+                const order = DB.findById('orders', item.order_id);
+                if (order) {
+                    DB.insert('notifications', {
+                        user_id: order.user_id,
+                        type: 'ORDER_UPDATE',
+                        title: `Order Status: ${newStatus}`,
+                        message: `All items in order ${order.order_number} have been updated to ${newStatus}.`,
+                        is_read: false
+                    });
+                }
+            }
+
+            UI.showToast(`Item status updated to ${newStatus}!`, 'success');
+            loadSellerOrders(); // Refresh
+        }
+
+        // Add Product Submit Callback
+        function handleAddProductCatalog(e) {
+            e.preventDefault();
+
+            // Extract fields
+            const name = document.getElementById('sp-name').value.trim();
+            const basePrice = parseFloat(document.getElementById('sp-base-price').value);
+            const categoryId = parseInt(document.getElementById('sp-category').value);
+            const brandId = parseInt(document.getElementById('sp-brand').value);
+            const desc = document.getElementById('sp-desc').value.trim();
+
+            const varName = document.getElementById('sp-var-name').value.trim();
+            const varSku = document.getElementById('sp-var-sku').value.trim();
+            const varStock = parseInt(document.getElementById('sp-var-stock').value);
+            const varPrice = parseFloat(document.getElementById('sp-var-price').value);
+            const varDiscInput = document.getElementById('sp-var-disc').value;
+            const varDisc = varDiscInput ? parseFloat(varDiscInput) : null;
+            const varImg = document.getElementById('sp-var-img').value.trim();
+
+            // Auto slug generator
+            const slug = name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)+/g, '');
+
+            // 1. Insert product record
+            const newProd = {
+                seller_id: sellerRecord.seller_id,
+                category_id: categoryId,
+                brand_id: brandId,
+                product_name: name,
+                slug: slug,
+                description: desc,
+                base_price: basePrice,
+                is_active: true,
+                status: 'APPROVED', // Auto approved for demo ease, else PENDING
+                avg_rating: 0,
+                total_reviews: 0
+            };
+            const createdProduct = DB.insert('products', newProd);
+
+            // 2. Insert primary Variant record
+            const newVar = {
+                product_id: createdProduct.product_id,
+                sku: varSku,
+                variant_name: varName,
+                price: varPrice,
+                discount_price: varDisc,
+                weight_grams: 250,
+                is_active: true
+            };
+            const createdVariant = DB.insert('product_variants', newVar);
+
+            // 3. Insert Variant primary Image
+            DB.insert('product_images', {
+                variant_id: createdVariant.variant_id,
+                image_url: varImg,
+                is_primary: true,
+                display_order: 1
+            });
+
+            // 4. Insert Inventory stock count ledger
+            DB.insert('inventory_stock', {
+                variant_id: createdVariant.variant_id,
+                quantity_available: varStock,
+                quantity_reserved: 0,
+                reorder_threshold: 3
+            });
+
+            // Reset and close drawer
+            const form = document.getElementById('seller-add-product-form');
+            const drawer = document.getElementById('seller-new-product-drawer');
+            const addBtn = document.getElementById('seller-toggle-product-form-btn');
+            
+            form.reset();
+            drawer.style.display = 'none';
+            addBtn.style.display = 'inline-block';
+
+            UI.showToast('Product Catalog item created successfully!', 'success');
+            loadSellerProducts(); // Refresh tables
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - ShopEase</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <style>
+        /* Admin layout overrides */
+        .admin-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 24px;
+            margin-bottom: 40px;
+        }
+
+        @media(min-width: 1025px) {
+            .admin-grid {
+                grid-template-columns: 1.15fr 0.85fr;
+                gap: 32px;
+            }
+        }
+
+        .seller-pending-row {
+            border: 1px solid var(--border);
+            border-radius: var(--radius-md);
+            padding: 14px;
+            margin-bottom: 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Injector Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <main class="container">
+        <h1 class="mb-5">Administration Dashboard</h1>
+
+        <div class="admin-grid">
+            <!-- 1. Left seller verification and category setup -->
+            <section class="flex-column gap-4">
+                <!-- Seller onboarding list -->
+                <!-- Hinglish comment: Seller verification and onboarding approve/reject simulation panel. -->
+                <div class="card">
+                    <h2 class="card-title" style="font-size:16px; border-bottom:1px solid var(--border); padding-bottom:10px; margin-bottom:16px;">Sellers Verification Logs</h2>
+                    <div id="admin-sellers-verification-list">
+                        <!-- Loaded dynamically -->
+                    </div>
+                </div>
+
+                <!-- Categories manager list -->
+                <div class="card">
+                    <div class="flex-between mb-3">
+                        <h2 class="card-title" style="font-size:16px; margin:0;">Product Categories</h2>
+                        <button class="btn btn-outline btn-sm" id="admin-add-category-btn">➕ New Category</button>
+                    </div>
+                    
+                    <!-- Inline category adder form -->
+                    <form id="admin-category-form" style="display:none; background-color:var(--bg-main); padding:16px; border-radius:var(--radius-md); border:1px solid var(--border);" class="mb-4">
+                        <h3 style="font-size:13px; font-weight:600;" class="mb-3">Add Category</h3>
+                        <div class="form-group">
+                            <label class="form-label" for="ac-name">Category Name</label>
+                            <input type="text" id="ac-name" class="form-control" required placeholder="e.g. Health & Fitness">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="ac-img">Image URL</label>
+                            <input type="url" id="ac-img" class="form-control" required placeholder="https://images.unsplash.com/...">
+                        </div>
+                        <div style="display:flex; gap:12px;">
+                            <button type="submit" class="btn btn-primary btn-sm">Add Category</button>
+                            <button type="button" class="btn btn-outline btn-sm" id="admin-cancel-category-btn">Cancel</button>
+                        </div>
+                    </form>
+
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Category Title</th>
+                                    <th>Slug</th>
+                                </tr>
+                            </thead>
+                            <tbody id="admin-categories-table-body">
+                                <!-- Loaded dynamically -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 2. Right coupons manager section -->
+            <aside class="flex-column gap-4">
+                <!-- Coupons listing and creation -->
+                <div class="card">
+                    <div class="flex-between mb-3" style="border-bottom:1px solid var(--border); padding-bottom:10px; margin-bottom:16px;">
+                        <h2 class="card-title" style="font-size:16px; margin:0;">Promo Coupons</h2>
+                        <button class="btn btn-outline btn-sm" id="admin-add-coupon-btn">Create Coupon</button>
+                    </div>
+
+                    <!-- Inline Coupon creation form -->
+                    <!-- Hinglish comment: Promo coupon insert form with parameters. -->
+                    <form id="admin-coupon-form" style="display:none; background-color:var(--bg-main); padding:16px; border-radius:var(--radius-md); border:1px solid var(--border);" class="mb-4">
+                        <div class="form-group">
+                            <label class="form-label" for="c-code">Coupon Code (Uppercase)</label>
+                            <input type="text" id="c-code" class="form-control" placeholder="E.G. FESTIVE50" style="text-transform:uppercase;" required>
+                        </div>
+                        <div class="grid-2-col mb-3">
+                            <div class="form-group" style="margin:0;">
+                                <label class="form-label" for="c-type">Type</label>
+                                <select id="c-type" class="form-select" required>
+                                    <option value="FLAT">FLAT (₹ Off)</option>
+                                    <option value="PERCENTAGE">PERCENTAGE (% Off)</option>
+                                </select>
+                            </div>
+                            <div class="form-group" style="margin:0;">
+                                <label class="form-label" for="c-val">Discount Value</label>
+                                <input type="number" id="c-val" class="form-control" placeholder="100" required>
+                            </div>
+                        </div>
+                        <div class="grid-2-col mb-4">
+                            <div class="form-group" style="margin:0;">
+                                <label class="form-label" for="c-min">Min Order (₹)</label>
+                                <input type="number" id="c-min" class="form-control" placeholder="500" required>
+                            </div>
+                            <div class="form-group" style="margin:0;">
+                                <label class="form-label" for="c-limit">Max Limit Per User</label>
+                                <input type="number" id="c-limit" class="form-control" value="1" required>
+                            </div>
+                        </div>
+                        <div style="display:flex; gap:12px;">
+                            <button type="submit" class="btn btn-primary btn-sm">Create Coupon</button>
+                            <button type="button" class="btn btn-outline btn-sm" id="admin-cancel-coupon-btn">Cancel</button>
+                        </div>
+                    </form>
+
+                    <!-- Active Coupons List -->
+                    <div id="admin-coupons-list">
+                        <!-- Loaded dynamically -->
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Scripts -->
+    <script src="js/db.js"></script>
+    <script src="js/seed.js"></script>
+    <script src="js/ui-helpers.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Require Admin Role
+            if (!Auth.requireRole(['ADMIN'])) return;
+
+            // Load components
+            loadPendingSellers();
+            loadAdminCategories();
+            loadAdminCoupons();
+
+            // Toggle category form click triggers
+            const addCatBtn = document.getElementById('admin-add-category-btn');
+            const catForm = document.getElementById('admin-category-form');
+            const cancelCatBtn = document.getElementById('admin-cancel-category-btn');
+
+            addCatBtn.onclick = () => {
+                catForm.style.display = 'block';
+                addCatBtn.style.display = 'none';
+            };
+
+            cancelCatBtn.onclick = () => {
+                catForm.reset();
+                catForm.style.display = 'none';
+                addCatBtn.style.display = 'inline-block';
+            };
+
+            // Category form submission handler
+            catForm.onsubmit = (e) => {
+                e.preventDefault();
+                const name = document.getElementById('ac-name').value.trim();
+                const img = document.getElementById('ac-img').value.trim();
+                const slug = name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)+/g, '');
+
+                DB.insert('categories', {
+                    parent_category_id: null,
+                    category_name: name,
+                    slug: slug,
+                    description: `${name} products collection`,
+                    image_url: img,
+                    is_active: true,
+                    display_order: 10
+                });
+
+                catForm.reset();
+                catForm.style.display = 'none';
+                addCatBtn.style.display = 'inline-block';
+
+                UI.showToast('Product Category added successfully!', 'success');
+                loadAdminCategories();
+            };
+
+            // Toggle coupon form click triggers
+            const addCoupBtn = document.getElementById('admin-add-coupon-btn');
+            const coupForm = document.getElementById('admin-coupon-form');
+            const cancelCoupBtn = document.getElementById('admin-cancel-coupon-btn');
+
+            addCoupBtn.onclick = () => {
+                coupForm.style.display = 'block';
+                addCoupBtn.style.display = 'none';
+            };
+
+            cancelCoupBtn.onclick = () => {
+                coupForm.reset();
+                coupForm.style.display = 'none';
+                addCoupBtn.style.display = 'inline-block';
+            };
+
+            // Coupon form submission handler
+            coupForm.onsubmit = (e) => {
+                e.preventDefault();
+                const code = document.getElementById('c-code').value.toUpperCase().trim();
+                const type = document.getElementById('c-type').value;
+                const value = parseFloat(document.getElementById('c-val').value);
+                const min = parseFloat(document.getElementById('c-min').value);
+                const limit = parseInt(document.getElementById('c-limit').value);
+
+                DB.insert('coupons', {
+                    coupon_code: code,
+                    discount_type: type,
+                    discount_value: value,
+                    min_order_value: min,
+                    max_discount_amount: type === 'PERCENTAGE' ? 500 : value,
+                    usage_limit_per_user: limit,
+                    total_usage_limit: 1000,
+                    valid_from: new Date().toISOString(),
+                    valid_until: new Date('2027-12-31').toISOString(),
+                    is_active: true
+                });
+
+                coupForm.reset();
+                coupForm.style.display = 'none';
+                addCoupBtn.style.display = 'inline-block';
+
+                UI.showToast('Promo Coupon created successfully!', 'success');
+                loadAdminCoupons();
+            };
+        });
+
+        // Pending Seller onboarding list loader
+        // Hinglish comment: Sellers array query karke pending accounts verification action render hota hai.
+        function loadPendingSellers() {
+            const sellers = DB.find('sellers', { status: 'PENDING' });
+            const container = document.getElementById('admin-sellers-verification-list');
+
+            if (sellers.length === 0) {
+                container.innerHTML = '<p class="text-muted" style="padding:10px 0; font-size:13px;">No pending seller verification logs found.</p>';
+                return;
+            }
+
+            let html = '';
+            sellers.forEach(sel => {
+                const user = DB.findById('users', sel.user_id);
+                const name = user ? user.full_name : 'Merchant Candidate';
+                html += `
+                    <div class="seller-pending-row">
+                        <div>
+                            <div class="font-bold" style="font-size:13.5px; color:var(--text-main);">${sel.business_name}</div>
+                            <div class="text-muted" style="font-size:11px;">Candidate: ${name} | GST: ${sel.gst_number}</div>
+                        </div>
+                        <div style="display:flex; gap:8px;">
+                            <button class="btn btn-primary btn-sm" onclick="approveSeller(${sel.seller_id}, ${sel.user_id})" style="min-height:30px; font-size:11px; padding:4px 8px;">Approve</button>
+                            <button class="btn btn-outline btn-sm text-danger" onclick="rejectSeller(${sel.seller_id})" style="min-height:30px; font-size:11px; padding:4px 8px;">Reject</button>
+                        </div>
+                    </div>
+                `;
+            });
+            container.innerHTML = html;
+        }
+
+        // Categories list loader
+        function loadAdminCategories() {
+            const categories = Products.getCategories();
+            const tbody = document.getElementById('admin-categories-table-body');
+
+            let html = '';
+            categories.forEach(c => {
+                html += `
+                    <tr>
+                        <td class="font-semibold">${c.category_id}</td>
+                        <td style="font-size:13px;">${c.category_name}</td>
+                        <td style="font-family:monospace; font-size:11px;">${c.slug}</td>
+                    </tr>
+                `;
+            });
+            tbody.innerHTML = html;
+        }
+
+        // Active Coupons list loader
+        function loadAdminCoupons() {
+            const coupons = DB.get('coupons');
+            const container = document.getElementById('admin-coupons-list');
+
+            if (coupons.length === 0) {
+                container.innerHTML = '<p class="text-muted" style="padding:10px 0; font-size:13px;">No coupons created.</p>';
+                return;
+            }
+
+            let html = '';
+            coupons.forEach(c => {
+                const details = c.discount_type === 'FLAT' ? `Flat ₹${c.discount_value} Off` : `${c.discount_value}% Off up to ₹${c.max_discount_amount}`;
+                html += `
+                    <div style="border:1px solid var(--border); padding:10px 14px; border-radius:var(--radius-md); margin-bottom:10px; display:flex; justify-content:space-between; align-items:center; font-size:12.5px;">
+                        <div>
+                            <div class="font-bold" style="color:var(--primary); font-family:monospace;">${c.coupon_code}</div>
+                            <div class="text-muted" style="font-size:11px; margin-top:2px;">${details} | Min Order: ₹${c.min_order_value}</div>
+                        </div>
+                        <span class="badge ${c.is_active ? 'badge-success' : 'badge-danger'}">${c.is_active ? 'Active' : 'Expired'}</span>
+                    </div>
+                `;
+            });
+            container.innerHTML = html;
+        }
+
+        // Approve Seller callback handler
+        // Hinglish comment: Seller verify hone par status database update aur success alerts trigger honge.
+        function approveSeller(sellerId, userId) {
+            DB.update('sellers', sellerId, { status: 'ACTIVE', is_verified: true });
+            DB.update('users', userId, { status: 'ACTIVE' });
+
+            // Create seller welcome notification
+            DB.insert('notifications', {
+                user_id: userId,
+                type: 'SYSTEM',
+                title: 'Seller Account Verified!',
+                message: 'Your merchant profile has been successfully approved by administrative team. Access Seller Hub to start catalog uploads.',
+                is_read: false
+            });
+
+            UI.showToast('Seller profile approved successfully!', 'success');
+            loadPendingSellers();
+        }
+
+        // Reject Seller callback helper
+        function rejectSeller(sellerId) {
+            DB.update('sellers', sellerId, { status: 'REJECTED' });
+            UI.showToast('Seller onboarding application rejected.', 'info');
+            loadPendingSellers();
+        }
+    </script>
+</body>
+</html>

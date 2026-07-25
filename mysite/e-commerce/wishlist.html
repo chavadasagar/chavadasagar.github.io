@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Wishlist - ShopEase</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+    <!-- Header Injector Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <main class="container">
+        <h1 class="mb-5">My Wishlist</h1>
+
+        <!-- Wishlist Grid -->
+        <div class="product-grid" id="wishlist-products-grid">
+            <!-- Loaded dynamically -->
+        </div>
+
+        <!-- Empty state -->
+        <div class="empty-state d-none" id="wishlist-empty-state">
+            <span class="empty-state-icon">🤍</span>
+            <h3 class="empty-state-title">Your Wishlist is Empty</h3>
+            <p class="empty-state-desc">You haven't saved any items yet. Browse products and click on heart icons to save your favorites!</p>
+            <a href="products.html" class="btn btn-primary btn-lg">Start Shopping</a>
+        </div>
+    </main>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Scripts -->
+    <script src="js/db.js"></script>
+    <script src="js/seed.js"></script>
+    <script src="js/ui-helpers.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Require login
+            if (!Auth.requireAuth()) return;
+
+            loadWishlistGrid();
+        });
+
+        // Wishlist products grid loader
+        function loadWishlistGrid() {
+            const session = DB.findOne('current_session', {});
+            const activeUserId = session ? session.user_id : 'guest';
+            const wishlistItems = DB.find('wishlists', { user_id: activeUserId });
+            
+            const grid = document.getElementById('wishlist-products-grid');
+            const emptyState = document.getElementById('wishlist-empty-state');
+
+            if (wishlistItems.length === 0) {
+                grid.style.display = 'none';
+                emptyState.classList.remove('d-none');
+                return;
+            }
+
+            grid.style.display = 'grid';
+            emptyState.classList.add('d-none');
+
+            let html = '';
+            wishlistItems.forEach(item => {
+                const p = Products.getProductDetails(item.product_id);
+                if (!p) return;
+
+                // lowest price variant display details
+                const activePrice = p.variants[0].discount_price || p.variants[0].price;
+                const originalPrice = p.variants[0].discount_price ? p.variants[0].price : null;
+                const discountPercent = originalPrice ? Math.round(((originalPrice - activePrice) / originalPrice) * 100) : 0;
+                
+                // Get primary image
+                let imgUrl = 'https://placehold.co/400';
+                if (p.variants[0].images && p.variants[0].images.length > 0) {
+                    imgUrl = p.variants[0].images[0].image_url;
+                }
+
+                const ratingHtml = p.avg_rating > 0 
+                    ? `⭐ ${p.avg_rating} <span>(${p.reviews.length})</span>`
+                    : '<span style="color:var(--text-muted); font-weight:400;">No reviews</span>';
+
+                html += `
+                    <article class="product-card" id="wish-card-${p.product_id}">
+                        <div class="product-card-img-container">
+                            <a href="product-detail.html?id=${p.product_id}" style="width:100%; height:100%; display:block;">
+                                <img src="${imgUrl}" alt="${p.product_name}" class="product-card-img">
+                            </a>
+                            <button class="product-card-wishlist-btn active" onclick="removeFromWishlist(event, ${item.wishlist_id}, ${p.product_id})">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+                            </button>
+                        </div>
+                        <div class="product-card-body">
+                            <div class="product-card-brand">${p.brand ? p.brand.brand_name : 'Generic'}</div>
+                            <h3 class="product-card-title">
+                                <a href="product-detail.html?id=${p.product_id}">${p.product_name}</a>
+                            </h3>
+                            <div class="product-card-rating">${ratingHtml}</div>
+                            <div class="product-card-price-container">
+                                <span class="product-card-price">${UI.formatCurrency(activePrice)}</span>
+                                ${originalPrice ? `
+                                    <span class="product-card-original-price">${UI.formatCurrency(originalPrice)}</span>
+                                    <span class="product-card-discount">${discountPercent}% OFF</span>
+                                ` : ''}
+                            </div>
+                            
+                            <!-- Move to Cart triggers -->
+                            <!-- Hinglish comment: Touch target accessible button quick-action -->
+                            <button class="btn btn-primary btn-sm mt-3" style="width:100%; font-size:12px; min-height:36px;" onclick="moveItemToCart(${item.wishlist_id}, ${p.variants[0].variant_id})">
+                                🛒 Move to Cart
+                            </button>
+                        </div>
+                    </article>
+                `;
+            });
+            grid.innerHTML = html;
+        }
+
+        // Remove wishlist callback
+        function removeFromWishlist(event, wishlistId, productId) {
+            event.stopPropagation();
+            event.preventDefault();
+
+            DB.remove('wishlists', wishlistId);
+            UI.showToast('Item removed from wishlist.', 'info');
+            loadWishlistGrid();
+            UI.updateNavBadges();
+        }
+
+        // Move to Cart handler
+        function moveItemToCart(wishlistId, variantId) {
+            const result = Cart.addToCart(variantId, 1);
+            if (result.success) {
+                DB.remove('wishlists', wishlistId);
+                UI.showToast('Product moved to cart successfully!', 'success');
+                loadWishlistGrid();
+                UI.updateNavBadges();
+            } else {
+                UI.showToast(result.message, 'danger');
+            }
+        }
+    </script>
+</body>
+</html>

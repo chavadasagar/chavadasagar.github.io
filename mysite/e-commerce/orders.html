@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Orders - ShopEase</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <style>
+        /* Orders list custom styles */
+        .order-card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-md);
+            padding: 20px;
+            margin-bottom: 20px;
+            transition: var(--transition);
+        }
+
+        .order-card:hover {
+            border-color: var(--border-hover);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .order-card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 12px;
+            margin-bottom: 12px;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .order-card-item-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 8px;
+            font-size: 13px;
+        }
+
+        .order-card-item-row:last-child {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Injector Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <main class="container">
+        <h1 class="mb-5">My Orders</h1>
+
+        <!-- Orders list -->
+        <div id="orders-list-container" style="max-width: 800px; margin: 0 auto;">
+            <!-- Dynamic rendering -->
+        </div>
+
+        <!-- Empty state -->
+        <div class="empty-state d-none" id="orders-empty-state">
+            <span class="empty-state-icon">📦</span>
+            <h3 class="empty-state-title">No Orders Found</h3>
+            <p class="empty-state-desc">You haven't placed any orders yet on ShopEase. Buy premium products today!</p>
+            <a href="products.html" class="btn btn-primary btn-lg">Start Shopping</a>
+        </div>
+    </main>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Scripts -->
+    <script src="js/db.js"></script>
+    <script src="js/seed.js"></script>
+    <script src="js/ui-helpers.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/orders.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Require login
+            if (!Auth.requireAuth()) return;
+
+            loadCustomerOrdersList();
+        });
+
+        // Customer orders list loader
+        function loadCustomerOrdersList() {
+            const orders = Orders.getCustomerOrders();
+            const container = document.getElementById('orders-list-container');
+            const emptyState = document.getElementById('orders-empty-state');
+
+            if (orders.length === 0) {
+                container.style.display = 'none';
+                emptyState.classList.remove('d-none');
+                return;
+            }
+
+            container.style.display = 'block';
+            emptyState.classList.add('d-none');
+
+            let html = '';
+            orders.forEach(order => {
+                const formattedDate = new Date(order.placed_at).toLocaleDateString('en-IN', {
+                    year: 'numeric',
+                    month: 'short',
+                    day: 'numeric'
+                });
+
+                // Set status badges
+                let badgeClass = 'badge-info';
+                if (order.order_status === 'DELIVERED') badgeClass = 'badge-success';
+                else if (order.order_status === 'CANCELLED') badgeClass = 'badge-danger';
+                else if (order.order_status === 'OUT_FOR_DELIVERY' || order.order_status === 'SHIPPED') badgeClass = 'badge-warning';
+
+                // Fetch item previews (up to 3)
+                const items = DB.find('order_items', { order_id: order.order_id });
+                let itemsListHtml = '';
+                
+                items.forEach(item => {
+                    itemsListHtml += `
+                        <div class="order-card-item-row">
+                            <span class="text-muted">${item.product_name_snapshot} <strong style="color:var(--text-main)">&times; ${item.quantity}</strong></span>
+                            <span class="font-medium">${UI.formatCurrency(item.item_total)}</span>
+                        </div>
+                    `;
+                });
+
+                html += `
+                    <div class="order-card">
+                        <div class="order-card-header">
+                            <div>
+                                <div style="font-weight: 700; font-size: 15px; color: var(--primary);">${order.order_number}</div>
+                                <div class="text-muted" style="font-size: 12px; margin-top:2px;">Placed on: ${formattedDate}</div>
+                            </div>
+                            <div style="display:flex; flex-direction:column; align-items:flex-end; gap:6px;">
+                                <span class="badge ${badgeClass}">${order.order_status}</span>
+                                <div style="font-weight: 750; font-size:16px; color:var(--text-main);">${UI.formatCurrency(order.total_amount)}</div>
+                            </div>
+                        </div>
+
+                        <!-- Item list preview -->
+                        <div style="margin: 12px 0;">
+                            ${itemsListHtml}
+                        </div>
+
+                        <!-- Card Action buttons -->
+                        <div style="display:flex; justify-content:flex-end; border-top:1px solid var(--border); padding-top:12px; margin-top:12px;">
+                            <a href="order-detail.html?id=${order.order_id}" class="btn btn-outline btn-sm">
+                                📊 Track & View Details
+                            </a>
+                        </div>
+                    </div>
+                `;
+            });
+
+            container.innerHTML = html;
+        }
+    </script>
+</body>
+</html>

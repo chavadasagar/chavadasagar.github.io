@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile - ShopEase</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <style>
+        /* Profile layout overrides */
+        .profile-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 24px;
+            margin-bottom: 40px;
+        }
+
+        @media(min-width: 1025px) {
+            .profile-grid {
+                grid-template-columns: 0.9fr 1.15fr;
+                gap: 32px;
+            }
+        }
+
+        .address-box-item {
+            border: 1px solid var(--border);
+            border-radius: var(--radius-md);
+            padding: 16px;
+            margin-bottom: 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Injector Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <main class="container">
+        <h1 class="mb-5">My Profile</h1>
+
+        <div class="profile-grid">
+            <!-- 1. Left details and password settings forms -->
+            <section class="flex-column gap-4">
+                <!-- Profile details form -->
+                <div class="card">
+                    <h2 class="card-title" style="font-size:16px;">Personal Details</h2>
+                    <form id="profile-details-form">
+                        <div class="form-group">
+                            <label class="form-label" for="prof-name">Full Name</label>
+                            <input type="text" id="prof-name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="prof-email">Email Address</label>
+                            <input type="email" id="prof-email" class="form-control" readonly style="background-color:var(--bg-main); cursor:not-allowed;">
+                            <small class="text-muted" style="font-size:11px;">Email address modification is disabled.</small>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="prof-phone">Phone Number</label>
+                            <input type="tel" id="prof-phone" class="form-control" pattern="[0-9]{10}" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-sm">Update Profile</button>
+                    </form>
+                </div>
+
+                <!-- Password modification form -->
+                <div class="card">
+                    <h2 class="card-title" style="font-size:16px;">Change Password</h2>
+                    <form id="profile-password-form">
+                        <div class="form-group">
+                            <label class="form-label" for="pass-curr">Current Password</label>
+                            <input type="password" id="pass-curr" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="pass-new">New Password</label>
+                            <input type="password" id="pass-new" class="form-control" minlength="6" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-sm">Change Password</button>
+                    </form>
+                </div>
+            </section>
+
+            <!-- 2. Right shipping addresses lists -->
+            <section class="card">
+                <div class="flex-between mb-4" style="border-bottom: 1px solid var(--border); padding-bottom: 12px;">
+                    <h2 style="font-size:16px; font-weight:700;">Manage Addresses</h2>
+                    <button class="btn btn-outline btn-sm" id="prof-toggle-address-form">➕ Add Address</button>
+                </div>
+
+                <!-- Inline form container -->
+                <form id="prof-address-form" style="display: none; background-color:var(--bg-main); padding:20px; border-radius:var(--radius-md); margin-bottom:20px; border:1px solid var(--border);">
+                    <h3 class="mb-3" style="font-size:13px; font-weight:600;">New Shipping Details</h3>
+                    <div class="grid-2-col mb-4">
+                        <div class="form-group" style="margin:0;">
+                            <label class="form-label" for="prof-add-name">Recipient Name</label>
+                            <input type="text" id="prof-add-name" class="form-control" required>
+                        </div>
+                        <div class="form-group" style="margin:0;">
+                            <label class="form-label" for="prof-add-phone">Phone Number</label>
+                            <input type="tel" id="prof-add-phone" class="form-control" pattern="[0-9]{10}" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="prof-add-line1">Address Line 1</label>
+                        <input type="text" id="prof-add-line1" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="prof-add-line2">Address Line 2</label>
+                        <input type="text" id="prof-add-line2" class="form-control">
+                    </div>
+                    <div class="grid-3-col mb-4">
+                        <div class="form-group" style="margin:0;">
+                            <label class="form-label" for="prof-add-city">City</label>
+                            <input type="text" id="prof-add-city" class="form-control" required>
+                        </div>
+                        <div class="form-group" style="margin:0;">
+                            <label class="form-label" for="prof-add-state">State</label>
+                            <input type="text" id="prof-add-state" class="form-control" required>
+                        </div>
+                        <div class="form-group" style="margin:0;">
+                            <label class="form-label" for="prof-add-pincode">Pincode</label>
+                            <input type="text" id="prof-add-pincode" class="form-control" pattern="[0-9]{6}" required>
+                        </div>
+                    </div>
+                    <div style="display:flex; gap:12px;">
+                        <button type="submit" class="btn btn-primary btn-sm">Add Address</button>
+                        <button type="button" class="btn btn-outline btn-sm" id="prof-cancel-address-form">Cancel</button>
+                    </div>
+                </form>
+
+                <!-- Addresses list container -->
+                <div id="prof-addresses-container">
+                    <!-- Dynamic rendering -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Scripts -->
+    <script src="js/db.js"></script>
+    <script src="js/seed.js"></script>
+    <script src="js/ui-helpers.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Require login
+            if (!Auth.requireAuth()) return;
+
+            loadProfileDetails();
+            loadProfileAddresses();
+
+            // Profile update form submission handler
+            const detailForm = document.getElementById('profile-details-form');
+            detailForm.onsubmit = (e) => {
+                e.preventDefault();
+                const user = Auth.getCurrentUser();
+
+                const name = document.getElementById('prof-name').value.trim();
+                const phone = document.getElementById('prof-phone').value.trim();
+
+                DB.update('users', user.user_id, {
+                    full_name: name,
+                    phone_number: phone
+                });
+
+                UI.showToast('Profile details updated successfully!', 'success');
+                UI.injectSharedHeaderAndFooter(); // Refresh navbar
+            };
+
+            // Password update form submission handler
+            const passForm = document.getElementById('profile-password-form');
+            passForm.onsubmit = (e) => {
+                e.preventDefault();
+                const user = Auth.getCurrentUser();
+
+                const curr = document.getElementById('pass-curr').value;
+                const newPass = document.getElementById('pass-new').value;
+
+                // Match simple hash
+                if (user.password_hash !== btoa(curr)) {
+                    UI.showToast('Current password entered is incorrect.', 'danger');
+                    return;
+                }
+
+                DB.update('users', user.user_id, {
+                    password_hash: btoa(newPass)
+                });
+
+                passForm.reset();
+                UI.showToast('Password changed successfully!', 'success');
+            };
+
+            // Address forms toggle click triggers
+            const addBtn = document.getElementById('prof-toggle-address-form');
+            const form = document.getElementById('prof-address-form');
+            const cancelBtn = document.getElementById('prof-cancel-address-form');
+
+            addBtn.onclick = () => {
+                form.style.display = 'block';
+                addBtn.style.display = 'none';
+            };
+
+            cancelBtn.onclick = () => {
+                form.reset();
+                form.style.display = 'none';
+                addBtn.style.display = 'inline-block';
+            };
+
+            // Address form submission handler
+            form.onsubmit = (e) => {
+                e.preventDefault();
+                const user = Auth.getCurrentUser();
+
+                const newAddr = {
+                    user_id: user.user_id,
+                    address_type: 'HOME',
+                    recipient_name: document.getElementById('prof-add-name').value.trim(),
+                    phone_number: document.getElementById('prof-add-phone').value.trim(),
+                    address_line1: document.getElementById('prof-add-line1').value.trim(),
+                    address_line2: document.getElementById('prof-add-line2').value.trim(),
+                    city: document.getElementById('prof-add-city').value.trim(),
+                    state: document.getElementById('prof-add-state').value.trim(),
+                    pincode: document.getElementById('prof-add-pincode').value.trim(),
+                    country: 'India',
+                    is_default: false
+                };
+
+                DB.insert('addresses', newAddr);
+                form.reset();
+                form.style.display = 'none';
+                addBtn.style.display = 'inline-block';
+
+                UI.showToast('Shipping address added successfully!', 'success');
+                loadProfileAddresses();
+            };
+        });
+
+        // Fill detail form fields
+        function loadProfileDetails() {
+            const user = Auth.getCurrentUser();
+            document.getElementById('prof-name').value = user.full_name;
+            document.getElementById('prof-email').value = user.email;
+            document.getElementById('prof-phone').value = user.phone_number;
+        }
+
+        // Profile address block renderer
+        function loadProfileAddresses() {
+            const user = Auth.getCurrentUser();
+            const addresses = DB.find('addresses', { user_id: user.user_id });
+            const container = document.getElementById('prof-addresses-container');
+
+            if (addresses.length === 0) {
+                container.innerHTML = '<p class="text-muted" style="padding:16px 0;">No addresses saved yet.</p>';
+                return;
+            }
+
+            let html = '';
+            addresses.forEach(addr => {
+                html += `
+                    <div class="address-box-item">
+                        <div style="font-size: 13px; line-height: 1.5; color: var(--text-muted);">
+                            <div class="font-bold" style="color:var(--text-main); font-size:14px; margin-bottom:4px; display:flex; align-items:center; gap:6px;">
+                                ${addr.recipient_name}
+                                ${addr.is_default ? '<span class="badge badge-success" style="font-size:8px; padding:1px 3px;">Default</span>' : ''}
+                            </div>
+                            <div>${addr.address_line1}</div>
+                            ${addr.address_line2 ? `<div>${addr.address_line2}</div>` : ''}
+                            <div>${addr.city}, ${addr.state} - ${addr.pincode}</div>
+                            <div style="margin-top:4px; font-weight:600; color:var(--text-main)">📞 +91 ${addr.phone_number}</div>
+                        </div>
+
+                        <div style="display:flex; flex-direction:column; align-items:flex-end; gap:8px;">
+                            <button class="btn-link text-danger" onclick="deleteAddress(${addr.address_id})" style="font-size: 12px;">Delete</button>
+                            ${!addr.is_default ? `
+                                <button class="btn-link" onclick="setDefaultAddress(${addr.address_id})" style="font-size: 12px;">Set Default</button>
+                            ` : ''}
+                        </div>
+                    </div>
+                `;
+            });
+            container.innerHTML = html;
+        }
+
+        // Delete address callback helper
+        function deleteAddress(addressId) {
+            UI.showModal({
+                title: 'Delete Address?',
+                bodyHTML: '<p>Are you sure you want to remove this shipping address from your profile?</p>',
+                primaryText: 'Delete',
+                secondaryText: 'Cancel',
+                onConfirm: () => {
+                    DB.remove('addresses', addressId);
+                    UI.showToast('Address removed successfully.', 'info');
+                    loadProfileAddresses();
+                }
+            });
+        }
+
+        // Set default address callback helper
+        function setDefaultAddress(addressId) {
+            const user = Auth.getCurrentUser();
+            const addresses = DB.find('addresses', { user_id: user.user_id });
+            
+            addresses.forEach(addr => {
+                DB.update('addresses', addr.address_id, {
+                    is_default: addr.address_id === addressId
+                });
+            });
+
+            UI.showToast('Default address set.', 'success');
+            loadProfileAddresses();
+        }
+    </script>
+</body>
+</html>

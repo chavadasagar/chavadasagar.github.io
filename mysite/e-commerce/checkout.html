@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - ShopEase</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <style>
+        /* Checkout grid */
+        .checkout-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 24px;
+            margin-bottom: 40px;
+        }
+
+        @media(min-width: 1025px) {
+            .checkout-grid {
+                grid-template-columns: 1.5fr 0.9fr;
+                gap: 32px;
+            }
+        }
+
+        /* Step Card layouts */
+        .step-card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+
+        .step-header {
+            padding: 18px 24px;
+            background-color: var(--bg-main);
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .step-num {
+            width: 24px;
+            height: 24px;
+            border-radius: var(--radius-full);
+            background-color: var(--primary);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: 700;
+        }
+
+        .step-title {
+            font-size: 16px;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        .step-body {
+            padding: 24px;
+        }
+
+        /* Address card grids */
+        .address-card-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+
+        @media(min-width: 640px) {
+            .address-card-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        .address-select-card {
+            border: 1px solid var(--border);
+            border-radius: var(--radius-md);
+            padding: 16px;
+            cursor: pointer;
+            position: relative;
+            transition: var(--transition);
+        }
+
+        .address-select-card.active {
+            border-color: var(--primary);
+            background-color: var(--primary-light);
+        }
+
+        .address-radio-btn {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            accent-color: var(--primary);
+        }
+
+        /* Payment selection */
+        .payment-method-option {
+            border: 1px solid var(--border);
+            border-radius: var(--radius-md);
+            padding: 14px 18px;
+            cursor: pointer;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            transition: var(--transition);
+        }
+
+        .payment-method-option.active {
+            border-color: var(--primary);
+            background-color: var(--primary-light);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Injector Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <main class="container">
+        <h1 class="mb-5">Checkout</h1>
+
+        <div class="checkout-grid" id="checkout-main-content">
+            <!-- 1. Left Checkout Steps -->
+            <section>
+                <!-- STEP 1: SHIPPING ADDRESS -->
+                <div class="step-card">
+                    <div class="step-header">
+                        <div class="step-num">1</div>
+                        <h2 class="step-title">Shipping Address</h2>
+                    </div>
+                    <div class="step-body">
+                        <!-- Address List -->
+                        <div class="address-card-grid" id="checkout-address-list">
+                            <!-- Dynamic rendering of customer addresses -->
+                        </div>
+
+                        <!-- Add new address trigger -->
+                        <button class="btn btn-outline btn-sm mb-4" id="toggle-address-form-btn">
+                            ➕ Add New Address
+                        </button>
+
+                        <!-- Add Address Inline Form -->
+                        <form id="checkout-new-address-form" style="display: none; border-top: 1px dashed var(--border); padding-top: 20px;">
+                            <h3 class="mb-3" style="font-size:14px; font-weight:600;">Add Shipping Details</h3>
+                            <div class="grid-2-col mb-4">
+                                <div class="form-group" style="margin:0;">
+                                    <label class="form-label" for="add-name">Recipient Name</label>
+                                    <input type="text" id="add-name" class="form-control" placeholder="Rahul Sharma" required>
+                                </div>
+                                <div class="form-group" style="margin:0;">
+                                    <label class="form-label" for="add-phone">Phone Number</label>
+                                    <input type="tel" id="add-phone" class="form-control" placeholder="9876543210" pattern="[0-9]{10}" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="add-line1">Address Line 1</label>
+                                <input type="text" id="add-line1" class="form-control" placeholder="Flat / House No, Building Name" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="add-line2">Address Line 2 (Optional)</label>
+                                <input type="text" id="add-line2" class="form-control" placeholder="Street, Sector, Landmark">
+                            </div>
+                            <div class="grid-3-col mb-4">
+                                <div class="form-group" style="margin:0;">
+                                    <label class="form-label" for="add-city">City</label>
+                                    <input type="text" id="add-city" class="form-control" placeholder="Noida" required>
+                                </div>
+                                <div class="form-group" style="margin:0;">
+                                    <label class="form-label" for="add-state">State</label>
+                                    <input type="text" id="add-state" class="form-control" placeholder="Uttar Pradesh" required>
+                                </div>
+                                <div class="form-group" style="margin:0;">
+                                    <label class="form-label" for="add-pincode">Pincode</label>
+                                    <input type="text" id="add-pincode" class="form-control" placeholder="201301" pattern="[0-9]{6}" required>
+                                </div>
+                            </div>
+                            <div style="display:flex; gap:12px;">
+                                <button type="submit" class="btn btn-primary btn-sm">Save Address</button>
+                                <button type="button" class="btn btn-outline btn-sm" id="cancel-address-form-btn">Cancel</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- STEP 2: PAYMENT METHOD -->
+                <div class="step-card">
+                    <div class="step-header">
+                        <div class="step-num">2</div>
+                        <h2 class="step-title">Payment Method</h2>
+                    </div>
+                    <div class="step-body">
+                        <div class="payment-method-option active" data-method="UPI" onclick="selectPaymentMethod('UPI')">
+                            <input type="radio" name="payment-method-radio" value="UPI" class="form-checkbox" checked>
+                            <div style="display:flex; flex-direction:column;">
+                                <span class="font-semibold" style="font-size:14px;">Instant UPI Transfer</span>
+                                <span class="text-muted" style="font-size:11px;">Pay instantly using PhonePe, GPay, Paytm</span>
+                            </div>
+                        </div>
+
+                        <!-- Simulated UPI Details input -->
+                        <div id="payment-upi-details" class="mb-4" style="padding-left: 32px;">
+                            <div class="form-group" style="margin:0; max-width: 320px;">
+                                <label class="form-label" for="payment-upi-id" style="font-size:12px;">Enter UPI ID</label>
+                                <input type="text" id="payment-upi-id" class="form-control form-control-sm" placeholder="username@upi" style="padding: 6px 10px; font-size:13px;">
+                            </div>
+                        </div>
+
+                        <div class="payment-method-option" data-method="CARD" onclick="selectPaymentMethod('CARD')">
+                            <input type="radio" name="payment-method-radio" value="CARD" class="form-checkbox">
+                            <div style="display:flex; flex-direction:column;">
+                                <span class="font-semibold" style="font-size:14px;">Credit / Debit Card</span>
+                                <span class="text-muted" style="font-size:11px;">All Visa, MasterCard, RuPay cards supported</span>
+                            </div>
+                        </div>
+
+                        <!-- Simulated Card Details input -->
+                        <div id="payment-card-details" class="mb-4" style="padding-left: 32px; display:none;">
+                            <div style="display:flex; flex-direction:column; gap:10px; max-width: 360px;">
+                                <div class="form-group" style="margin:0;">
+                                    <label class="form-label" for="card-num" style="font-size:11px;">Card Number</label>
+                                    <input type="text" id="card-num" class="form-control" placeholder="4321 8765 0987 1111" maxlength="19">
+                                </div>
+                                <div style="display:flex; gap:12px;">
+                                    <div class="form-group" style="margin:0; flex-grow:1;">
+                                        <label class="form-label" for="card-expiry" style="font-size:11px;">Expiry Date</label>
+                                        <input type="text" id="card-expiry" class="form-control" placeholder="MM/YY" maxlength="5">
+                                    </div>
+                                    <div class="form-group" style="margin:0; width:80px;">
+                                        <label class="form-label" for="card-cvv" style="font-size:11px;">CVV</label>
+                                        <input type="password" id="card-cvv" class="form-control" placeholder="•••" maxlength="3">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="payment-method-option" data-method="COD" onclick="selectPaymentMethod('COD')">
+                            <input type="radio" name="payment-method-radio" value="COD" class="form-checkbox">
+                            <div style="display:flex; flex-direction:column;">
+                                <span class="font-semibold" style="font-size:14px;">Cash on Delivery (COD)</span>
+                                <span class="text-muted" style="font-size:11px;">Pay in cash when order is delivered</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 2. Right checkout summary drawer -->
+            <aside>
+                <div class="card">
+                    <h2 class="card-title" style="font-size:16px; border-bottom: 1px solid var(--border); padding-bottom:12px; margin-bottom:16px;">Billing Details</h2>
+                    
+                    <div id="checkout-pricing-breakdown">
+                        <!-- Pricing details -->
+                    </div>
+
+                    <button class="btn btn-primary btn-full btn-lg mt-4" id="place-order-submit-btn">
+                        Place Order (Simulate Pay)
+                    </button>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Scripts -->
+    <script src="js/db.js"></script>
+    <script src="js/seed.js"></script>
+    <script src="js/ui-helpers.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/orders.js"></script>
+    <script src="js/coupons.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        let selectedAddressId = null;
+        let selectedPayment = 'UPI';
+        let checkoutCouponCode = null;
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // Force authentication guard
+            if (!Auth.requireAuth()) return;
+
+            // Read coupon query parameter
+            const urlParams = new URLSearchParams(window.location.search);
+            checkoutCouponCode = urlParams.get('coupon') || null;
+
+            // Load Address lists
+            renderAddressList();
+
+            // Load billing information details
+            renderCheckoutPrices();
+
+            // Toggle add address form
+            const addFormBtn = document.getElementById('toggle-address-form-btn');
+            const addressForm = document.getElementById('checkout-new-address-form');
+            const cancelFormBtn = document.getElementById('cancel-address-form-btn');
+
+            addFormBtn.onclick = () => {
+                addressForm.style.display = 'block';
+                addFormBtn.style.display = 'none';
+            };
+
+            cancelFormBtn.onclick = () => {
+                addressForm.reset();
+                addressForm.style.display = 'none';
+                addFormBtn.style.display = 'block';
+            };
+
+            // Save address form submit handler
+            addressForm.onsubmit = (e) => {
+                e.preventDefault();
+                const user = Auth.getCurrentUser();
+                
+                const newAddress = {
+                    user_id: user.user_id,
+                    address_type: 'HOME',
+                    recipient_name: document.getElementById('add-name').value.trim(),
+                    phone_number: document.getElementById('add-phone').value.trim(),
+                    address_line1: document.getElementById('add-line1').value.trim(),
+                    address_line2: document.getElementById('add-line2').value.trim(),
+                    city: document.getElementById('add-city').value.trim(),
+                    state: document.getElementById('add-state').value.trim(),
+                    pincode: document.getElementById('add-pincode').value.trim(),
+                    country: 'India',
+                    is_default: false
+                };
+
+                // Insert database record
+                const created = DB.insert('addresses', newAddress);
+                selectedAddressId = created.address_id;
+
+                addressForm.reset();
+                addressForm.style.display = 'none';
+                addFormBtn.style.display = 'block';
+
+                UI.showToast('Address added and selected successfully!', 'success');
+                renderAddressList();
+            };
+
+            // Place Order submit handler
+            const placeOrderBtn = document.getElementById('place-order-submit-btn');
+            placeOrderBtn.onclick = handlePlaceOrder;
+        });
+
+        // Address list renderer
+        function renderAddressList() {
+            const user = Auth.getCurrentUser();
+            const addresses = DB.find('addresses', { user_id: user.user_id });
+            const listContainer = document.getElementById('checkout-address-list');
+
+            if (addresses.length === 0) {
+                listContainer.innerHTML = '<p class="text-muted" style="grid-column:1/-1;">No shipping addresses found. Please add a new address to continue.</p>';
+                selectedAddressId = null;
+                return;
+            }
+
+            // Set default address choice on first load
+            if (!selectedAddressId) {
+                const defAddress = addresses.find(a => a.is_default) || addresses[0];
+                selectedAddressId = defAddress.address_id;
+            }
+
+            let html = '';
+            addresses.forEach(addr => {
+                const isSelected = selectedAddressId === addr.address_id;
+                html += `
+                    <div class="address-select-card ${isSelected ? 'active' : ''}" onclick="selectAddress(${addr.address_id})">
+                        <input type="radio" name="address-radio" value="${addr.address_id}" class="address-radio-btn" ${isSelected ? 'checked' : ''}>
+                        <div class="font-semibold" style="font-size:14px; margin-bottom:4px; display:flex; align-items:center; gap:6px;">
+                            ${addr.recipient_name}
+                            ${addr.is_default ? '<span class="badge badge-success" style="font-size:8px; padding:1px 3px;">Default</span>' : ''}
+                        </div>
+                        <div style="font-size:12px; color:var(--text-muted); line-height: 1.4;">
+                            ${addr.address_line1}, ${addr.address_line2 ? addr.address_line2 + ',' : ''} ${addr.city}, ${addr.state} - ${addr.pincode}
+                        </div>
+                        <div style="font-size:11px; font-weight:600; margin-top:6px; color:var(--text-main);">📞 +91 ${addr.phone_number}</div>
+                    </div>
+                `;
+            });
+            listContainer.innerHTML = html;
+        }
+
+        // Select address callback
+        function selectAddress(addressId) {
+            selectedAddressId = addressId;
+            renderAddressList();
+        }
+
+        // Select Payment option callback
+        function selectPaymentMethod(method) {
+            selectedPayment = method;
+            
+            // Adjust radio checked visual
+            const options = document.querySelectorAll('.payment-method-option');
+            options.forEach(opt => {
+                const radio = opt.querySelector('input[type="radio"]');
+                if (opt.getAttribute('data-method') === method) {
+                    opt.classList.add('active');
+                    radio.checked = true;
+                } else {
+                    opt.classList.remove('active');
+                    radio.checked = false;
+                }
+            });
+
+            // Toggle entry panels
+            document.getElementById('payment-upi-details').style.display = method === 'UPI' ? 'block' : 'none';
+            document.getElementById('payment-card-details').style.display = method === 'CARD' ? 'block' : 'none';
+        }
+
+        // Checkout pricing breakdown renderer
+        function renderCheckoutPrices() {
+            const breakdown = Cart.getBreakdown(checkoutCouponCode);
+            const container = document.getElementById('checkout-pricing-breakdown');
+            const items = Cart.getItems();
+
+            let html = `
+                <div class="price-breakdown-row">
+                    <span class="text-muted">Subtotal (${items.length} items)</span>
+                    <span class="font-medium">${UI.formatCurrency(breakdown.subtotal)}</span>
+                </div>
+            `;
+
+            if (breakdown.discount > 0) {
+                html += `
+                    <div class="price-breakdown-row" style="color:var(--success); font-weight:550;">
+                        <span>Coupon Discount (${checkoutCouponCode.toUpperCase()})</span>
+                        <span>-${UI.formatCurrency(breakdown.discount)}</span>
+                    </div>
+                `;
+            }
+
+            html += `
+                <div class="price-breakdown-row">
+                    <span class="text-muted">Simulated GST Tax (12%)</span>
+                    <span class="font-medium">${UI.formatCurrency(breakdown.tax)}</span>
+                </div>
+                <div class="price-breakdown-row">
+                    <span class="text-muted">Shipping Charges</span>
+                    <span class="font-medium">${breakdown.shipping === 0 ? 'FREE' : UI.formatCurrency(breakdown.shipping)}</span>
+                </div>
+                <div class="grand-total-row">
+                    <span>Grand Total</span>
+                    <span style="color:var(--primary); font-size:20px;">${UI.formatCurrency(breakdown.total)}</span>
+                </div>
+            `;
+            container.innerHTML = html;
+        }
+
+        // Place order core click logic handler
+        // Hinglish comment: Simulated payment processing: form checking, payment processing, aur dynamic redirect.
+        function handlePlaceOrder() {
+            if (!selectedAddressId) {
+                UI.showToast('Please select or add a shipping address.', 'danger');
+                return;
+            }
+
+            // Validate Payment fields
+            if (selectedPayment === 'UPI') {
+                const upiId = document.getElementById('payment-upi-id').value.trim();
+                if (!upiId) {
+                    UI.showToast('Please enter your UPI ID.', 'danger');
+                    return;
+                }
+            } else if (selectedPayment === 'CARD') {
+                const card = document.getElementById('card-num').value.trim();
+                const expiry = document.getElementById('card-expiry').value.trim();
+                const cvv = document.getElementById('card-cvv').value.trim();
+
+                if (!card || !expiry || !cvv) {
+                    UI.showToast('Please complete credit card input fields.', 'danger');
+                    return;
+                }
+            }
+
+            // Show Processing modal screen
+            // Hinglish comment: Pay simulation modal pop-up and loading spinner spinner show ho rahe hain.
+            UI.showModal({
+                title: 'Processing Payment',
+                bodyHTML: `
+                    <div style="display:flex; flex-direction:column; align-items:center; gap:16px; padding:16px 0;">
+                        <div class="spinner"></div>
+                        <p style="font-size:14px; font-weight:550; color:var(--text-main);" id="pay-load-txt">Contacting payment gateway simulation...</p>
+                        <p style="font-size:11px; color:var(--text-muted);">Completing transactional security handshake.</p>
+                    </div>
+                `,
+                primaryText: 'Simulating...',
+                secondaryText: 'Cancel',
+                onConfirm: () => {} // Disabled during processing
+            });
+
+            // Disable modal actions
+            const modalFooter = document.querySelector('.modal-footer');
+            if (modalFooter) modalFooter.style.display = 'none';
+
+            // Simulate Payment loading for 1.8 seconds
+            setTimeout(() => {
+                const loadTxt = document.getElementById('pay-load-txt');
+                if (loadTxt) loadTxt.innerText = 'Creating order records in Local Storage...';
+
+                setTimeout(() => {
+                    // Place order records
+                    const result = Orders.placeOrder({
+                        addressId: selectedAddressId,
+                        paymentMethod: selectedPayment,
+                        couponCode: checkoutCouponCode
+                    });
+
+                    // Hide modal overlay
+                    const overlay = document.getElementById('global-modal-overlay');
+                    if (overlay) overlay.classList.remove('show');
+
+                    if (result.success) {
+                        UI.showToast(`Order placed successfully! Order ID: ${result.order_number}`, 'success');
+                        setTimeout(() => {
+                            window.location.href = `orders.html`;
+                        }, 1200);
+                    } else {
+                        UI.showToast(result.message, 'danger');
+                    }
+                }, 1000);
+            }, 1000);
+        }
+    </script>
+</body>
+</html>
