@@ -237,6 +237,340 @@
   }
   .missing { color: #ff9d7a; font-weight: 600; }
 
+  /* Records View Styles */
+  .records-container {
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .records-container.active {
+    display: flex;
+  }
+  
+  .records-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .records-actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .records-search {
+    background: #0a1520;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 10px 14px;
+    color: var(--text);
+    font-size: 14px;
+    width: 250px;
+    outline: none;
+  }
+  .records-search:focus {
+    border-color: var(--teal);
+  }
+
+  .table-wrap {
+    overflow-x: auto;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: var(--panel);
+    backdrop-filter: blur(6px);
+  }
+  table.records-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    text-align: left;
+  }
+  table.records-table th {
+    background: #0f1e2e;
+    color: var(--teal);
+    padding: 12px 16px;
+    font-family: var(--mono);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    border-bottom: 1px solid var(--border);
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.15s ease;
+  }
+  table.records-table th:hover:not(:last-child) {
+    background: #15293d;
+  }
+  table.records-table td {
+    padding: 12px 16px;
+    border-bottom: 1px solid #1e344650;
+    color: #d7e4e7;
+    max-width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  table.records-table tr:last-child td {
+    border-bottom: none;
+  }
+  table.records-table tr {
+    transition: background 0.15s ease;
+  }
+  table.records-table tr:hover {
+    background: #12283d80;
+  }
+  
+  .badge {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 10.5px;
+    font-weight: 600;
+    font-family: var(--mono);
+  }
+  .badge.status-send {
+    background: #11382b;
+    color: #4ef0b9;
+    border: 1px solid #1b533e;
+  }
+  .badge.status-not-shortlist {
+    background: #472121;
+    color: #ff8c8c;
+    border: 1px solid #663232;
+  }
+  .badge.status-other {
+    background: #252e3b;
+    color: #b0c4de;
+    border: 1px solid var(--border);
+  }
+
+  .action-btn {
+    background: #1b2f3f;
+    border: 1px solid var(--border);
+    color: var(--text);
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 11.5px;
+    font-family: var(--mono);
+    transition: all 0.15s ease;
+  }
+  .action-btn:hover {
+    color: var(--navy);
+    background: var(--teal);
+    border-color: var(--teal);
+  }
+  .action-btn.delete {
+    background: #2b171c;
+    border-color: #55222b;
+    color: #ff8c8c;
+  }
+  .action-btn.delete:hover {
+    color: white;
+    background: #ea4335;
+    border-color: #ea4335;
+  }
+
+  /* Modal Styles */
+  .modal-overlay {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(5, 11, 18, 0.85);
+    backdrop-filter: blur(8px);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    padding: 16px;
+  }
+  .modal-overlay.active {
+    display: flex;
+  }
+  .modal {
+    background: var(--navy-2);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    overflow: hidden;
+    animation: modalFadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  @keyframes modalFadeIn {
+    from { opacity: 0; transform: scale(0.95) translateY(10px); }
+    to { opacity: 1; transform: scale(1) translateY(0); }
+  }
+  .modal-header {
+    padding: 16px 20px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .modal-header h3 {
+    margin: 0;
+    font-size: 16px;
+    color: var(--teal);
+    font-family: var(--mono);
+  }
+  .close-modal {
+    background: none;
+    border: none;
+    color: var(--muted);
+    font-size: 24px;
+    cursor: pointer;
+    line-height: 1;
+  }
+  .close-modal:hover {
+    color: var(--text);
+  }
+  .modal-body {
+    padding: 20px;
+  }
+  .modal-footer {
+    padding: 14px 20px;
+    border-top: 1px solid var(--border);
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+  .btn-secondary {
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--text);
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: var(--mono);
+    font-size: 13px;
+    outline: none;
+  }
+  .btn-secondary:hover {
+    border-color: var(--muted);
+  }
+  .btn-primary {
+    background: var(--teal);
+    color: var(--navy);
+    border: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: var(--mono);
+    font-size: 13px;
+    outline: none;
+  }
+  .btn-primary:hover {
+    background: #7dffc0;
+  }
+  .import-textarea {
+    width: 100%;
+    height: 180px;
+    background: #0a1520;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    color: var(--text);
+    font-family: var(--mono);
+    font-size: 12px;
+    padding: 12px;
+    resize: vertical;
+    outline: none;
+    margin-top: 12px;
+  }
+  .import-textarea:focus {
+    border-color: var(--teal);
+  }
+
+  /* Toast Notification */
+  .toast {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    background: var(--navy-2);
+    border-left: 4px solid var(--teal);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    border-right: 1px solid var(--border);
+    padding: 12px 20px;
+    border-radius: 0 8px 8px 0;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    z-index: 2000;
+    font-size: 13px;
+    color: var(--text);
+    transform: translateY(150%);
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .toast.active {
+    transform: translateY(0);
+  }
+
+  /* Pagination Styles */
+  .pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 16px;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .pagination-info {
+    font-size: 13px;
+    color: var(--muted);
+  }
+  .pagination-controls {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+  }
+  .page-btn {
+    background: #1b2f3f;
+    border: 1px solid var(--border);
+    color: var(--text);
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 12.5px;
+    font-family: var(--mono);
+    cursor: pointer;
+    transition: all 0.15s ease;
+    min-width: 32px;
+    text-align: center;
+    outline: none;
+  }
+  .page-btn:hover:not(.disabled) {
+    color: var(--navy);
+    background: var(--teal);
+    border-color: var(--teal);
+  }
+  .page-btn.active {
+    background: var(--teal-dim);
+    color: var(--text);
+    border-color: var(--teal-dim);
+    pointer-events: none;
+  }
+  .page-btn.disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+  .page-size-selector {
+    background: #0a1520;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    color: var(--text);
+    font-size: 13px;
+    padding: 4px 8px;
+    outline: none;
+    cursor: pointer;
+  }
+  .page-size-selector:focus {
+    border-color: var(--teal);
+  }
+
   footer {
     text-align: center;
     color: var(--muted);
@@ -260,6 +594,7 @@
   <div class="tabs">
     <button class="tab active" data-tab="initial">Initial Email</button>
     <button class="tab" data-tab="followup">Follow-up Email</button>
+    <button class="tab" data-tab="records">Outreach Logs</button>
   </div>
 
   <div class="grid">
@@ -283,6 +618,28 @@
       <label>Days Since Initial Email (for follow-up)</label>
       <input id="days" type="number" value="4" min="1" oninput="render()">
 
+      <label>Phone No.</label>
+      <input id="phone" placeholder="e.g. +91 82001 23173" oninput="render()">
+
+      <label>Comment</label>
+      <input id="comment" placeholder="e.g. he is find 5 year exp" oninput="render()">
+
+      <label>Status</label>
+      <select id="status" onchange="render()">
+        <option value="Email send">Email send</option>
+        <option value="Not Shortlist">Not Shortlist</option>
+        <option value="Shortlisted">Shortlisted</option>
+        <option value="Applied">Applied</option>
+        <option value="Follow-up sent">Follow-up sent</option>
+        <option value="No response">No response</option>
+      </select>
+
+      <label>Gmail Status</label>
+      <select id="gmailStatus" onchange="render()">
+        <option value="Not send">Not send</option>
+        <option value="Email send">Email send</option>
+      </select>
+
       <button class="send-btn disabled btn-gmail" id="sidebarGmailBtn" onclick="sendViaGmail()" style="width: 100%; margin-top: 20px;">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style="display: inline-block; vertical-align: middle; margin-right: 6px;">
           <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
@@ -296,6 +653,15 @@
           <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
         </svg>
         <span>Copy for Sheets</span>
+      </button>
+
+      <button class="send-btn disabled" id="sidebarSaveBtn" onclick="saveCurrentRecordFromForm()" style="width: 100%; margin-top: 10px; background: #0f2e2d; color: var(--teal); border-color: var(--teal-dim);">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: inline-block; vertical-align: middle; margin-right: 6px;">
+          <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path>
+          <polyline points="17 21 17 13 7 13 7 21"></polyline>
+          <polyline points="7 3 7 8 15 8"></polyline>
+        </svg>
+        <span>Save Record</span>
       </button>
     </div>
 
@@ -330,21 +696,133 @@
     </div>
   </div>
 
+  <!-- Outreach Logs Container -->
+  <div class="records-container">
+    <div class="card">
+      <div class="records-header">
+        <h2 style="margin: 0;">Outreach Database</h2>
+        <div class="records-actions">
+          <input type="text" class="records-search" id="recordsSearch" placeholder="Search by Company or Email..." oninput="currentPage = 1; renderRecordsTable()">
+          
+          <select class="records-search" id="filterStatus" onchange="currentPage = 1; renderRecordsTable()" style="width: 150px; cursor: pointer;">
+            <option value="">All Statuses</option>
+            <option value="Email send">Email send</option>
+            <option value="Not Shortlist">Not Shortlist</option>
+            <option value="Shortlisted">Shortlisted</option>
+            <option value="Applied">Applied</option>
+            <option value="Follow-up sent">Follow-up sent</option>
+            <option value="No response">No response</option>
+          </select>
+          
+          <select class="records-search" id="filterGmailStatus" onchange="currentPage = 1; renderRecordsTable()" style="width: 160px; cursor: pointer;">
+            <option value="">All Gmail Status</option>
+            <option value="Email send">Email send</option>
+            <option value="Not send">Not send</option>
+          </select>
+
+          <button class="copy-btn" onclick="openImportModal()">Import from Excel</button>
+          <button class="copy-btn" onclick="copyAllToExcel()" style="background: #1b2f3f; color: var(--text); border-color: var(--border);">Copy All for Excel</button>
+          <button class="copy-btn" onclick="clearAllRecords()" style="background: #ea4335; color: white;">Clear All</button>
+        </div>
+      </div>
+      
+      <div style="margin-top: 14px; font-size: 13px; color: var(--muted); display: flex; gap: 16px;" id="recordsStats"></div>
+      
+      <div class="table-wrap" style="margin-top: 18px;">
+        <table class="records-table">
+          <thead>
+            <tr>
+              <th style="width: 80px;" onclick="handleSort('sNo')">S.No <span id="sort-icon-sNo" style="font-size: 10px;"></span></th>
+              <th onclick="handleSort('company')">Company Name <span id="sort-icon-company" style="font-size: 10px;"></span></th>
+              <th onclick="handleSort('email')">Career/Apply Email <span id="sort-icon-email" style="font-size: 10px;"></span></th>
+              <th onclick="handleSort('phone')">Phone No. <span id="sort-icon-phone" style="font-size: 10px;"></span></th>
+              <th onclick="handleSort('comment')">Comment <span id="sort-icon-comment" style="font-size: 10px;"></span></th>
+              <th style="width: 150px;" onclick="handleSort('status')">Status <span id="sort-icon-status" style="font-size: 10px;"></span></th>
+              <th style="width: 150px;" onclick="handleSort('gmailStatus')">Gmail Status <span id="sort-icon-gmailStatus" style="font-size: 10px;"></span></th>
+              <th style="width: 140px; text-align: center; cursor: default;">Actions</th>
+            </tr>
+          </thead>
+          <tbody id="recordsTbody"></tbody>
+        </table>
+      </div>
+      <!-- Pagination Controls -->
+      <div class="pagination" id="recordsPagination"></div>
+    </div>
+  </div>
+
+  <!-- Import Modal -->
+  <div class="modal-overlay" id="importModal">
+    <div class="modal">
+      <div class="modal-header">
+        <h3>Import from Excel / Google Sheets</h3>
+        <button class="close-modal" onclick="closeImportModal()">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p style="margin-top: 0; font-size: 13px; color: var(--muted); line-height: 1.5;">
+          Copy your spreadsheet rows and paste them here. The columns should be tab-separated in this order:<br>
+          <code style="color: var(--teal); font-family: var(--mono); display: block; margin: 6px 0; background: #0a1520; padding: 6px 8px; border-radius: 4px; font-size: 11px;">
+            S.No &nbsp;&nbsp;&nbsp;&nbsp; Company Name &nbsp;&nbsp;&nbsp;&nbsp; Career/Apply Email &nbsp;&nbsp;&nbsp;&nbsp; Phone No. &nbsp;&nbsp;&nbsp;&nbsp; Comment &nbsp;&nbsp;&nbsp;&nbsp; Status &nbsp;&nbsp;&nbsp;&nbsp; Gmail Status
+          </code>
+          Any emails that already exist in your outreach logs will be automatically skipped to prevent duplicates.
+        </p>
+        <textarea class="import-textarea" id="importTextarea" placeholder="Paste tab-separated rows here...&#10;e.g.&#10;486	Moontechnolabs	mansi@moontechnolabs.com		he is find 5 year exp	Not Shortlist	&#10;487	seefattechnologies	hr.seefattechnologies@gmail.com			Email send	Email send"></textarea>
+      </div>
+      <div class="modal-footer">
+        <button class="btn-secondary" onclick="closeImportModal()">Cancel</button>
+        <button class="btn-primary" onclick="submitImport()">Import Data</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--teal);"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+    <span id="toastText">Message goes here</span>
+  </div>
+
   <footer>Sagar P. Chavda &nbsp;·&nbsp; .NET Developer &nbsp;·&nbsp; sagarchavada80@gmail.com &nbsp;·&nbsp; +91 8200123173</footer>
 </div>
 
 <script>
 let activeTab = 'initial';
 let lastExtractedCompany = '';
+let records = [];
+let currentPage = 1;
+let pageSize = 20;
+let sortColumn = 'sNo';
+let sortDirection = 'asc';
 
+// Load records from localStorage on startup
+try {
+  const stored = localStorage.getItem('hr_outreach_records');
+  if (stored) {
+    records = JSON.parse(stored);
+  }
+} catch (e) {
+  console.error("Failed to load records from localStorage:", e);
+}
+
+// Tab toggles
 document.querySelectorAll('.tab').forEach(t => {
   t.addEventListener('click', () => {
     document.querySelectorAll('.tab').forEach(x => x.classList.remove('active'));
     t.classList.add('active');
     activeTab = t.dataset.tab;
-    document.getElementById('previewTitle').textContent =
-      activeTab === 'initial' ? 'Preview — Initial Email' : 'Preview — Follow-up Email';
-    render();
+    
+    const grid = document.querySelector('.grid');
+    const recordsContainer = document.querySelector('.records-container');
+    
+    if (activeTab === 'records') {
+      grid.style.display = 'none';
+      recordsContainer.classList.add('active');
+      renderRecordsTable();
+    } else {
+      grid.style.display = 'grid';
+      recordsContainer.classList.remove('active');
+      document.getElementById('previewTitle').textContent =
+        activeTab === 'initial' ? 'Preview — Initial Email' : 'Preview — Follow-up Email';
+      render();
+    }
   });
 });
 
@@ -357,6 +835,7 @@ function handleEmailInput() {
   const headerGmailBtn = document.getElementById('headerGmailBtn');
   const sidebarCopySheetBtn = document.getElementById('sidebarCopySheetBtn');
   const headerCopySheetBtn = document.getElementById('headerCopySheetBtn');
+  const sidebarSaveBtn = document.getElementById('sidebarSaveBtn');
   
   if (email) {
     const extracted = extractCompanyName(email);
@@ -370,11 +849,13 @@ function handleEmailInput() {
     headerGmailBtn.classList.remove('disabled');
     sidebarCopySheetBtn.classList.remove('disabled');
     headerCopySheetBtn.classList.remove('disabled');
+    sidebarSaveBtn.classList.remove('disabled');
   } else {
     sidebarGmailBtn.classList.add('disabled');
     headerGmailBtn.classList.add('disabled');
     sidebarCopySheetBtn.classList.add('disabled');
     headerCopySheetBtn.classList.add('disabled');
+    sidebarSaveBtn.classList.add('disabled');
   }
   render();
 }
@@ -399,9 +880,86 @@ function extractCompanyName(email) {
     .join(' ');
 }
 
+// LocalStorage helpers
+function saveToLocalStorage() {
+  try {
+    localStorage.setItem('hr_outreach_records', JSON.stringify(records));
+  } catch (e) {
+    console.error("Failed to save records to localStorage:", e);
+  }
+}
+
+// Save/Update a record in database
+function saveRecord(company, email, phone, comment, status, gmailStatus) {
+  if (!email) return;
+  
+  company = company.trim();
+  email = email.trim();
+  phone = phone.trim();
+  comment = comment.trim();
+  status = status.trim() || 'Email send';
+  gmailStatus = gmailStatus.trim() || 'Not send';
+  
+  const existingIndex = records.findIndex(r => r.email.toLowerCase() === email.toLowerCase());
+  
+  if (existingIndex !== -1) {
+    // Preserves existing S.No
+    records[existingIndex] = {
+      ...records[existingIndex],
+      company: company || records[existingIndex].company,
+      phone: phone || records[existingIndex].phone,
+      comment: comment || records[existingIndex].comment,
+      status: status,
+      gmailStatus: gmailStatus
+    };
+    showToast(`Updated record for ${company || email}`);
+  } else {
+    // Generate next S.No
+    let nextSNo = 1;
+    if (records.length > 0) {
+      const maxSNo = Math.max(...records.map(r => parseInt(r.sNo) || 0));
+      nextSNo = maxSNo + 1;
+    }
+    
+    records.push({
+      sNo: nextSNo,
+      company: company || '[Company Name]',
+      email: email,
+      phone: phone,
+      comment: comment,
+      status: status,
+      gmailStatus: gmailStatus
+    });
+    showToast(`Saved new record for ${company || email}`);
+  }
+  saveToLocalStorage();
+}
+
+function saveCurrentRecordFromForm() {
+  const email = document.getElementById('email').value.trim();
+  if (!email) {
+    showToast("Email is required to save a record.");
+    return;
+  }
+  const company = document.getElementById('company').value.trim() || '[Company Name]';
+  const phone = document.getElementById('phone').value.trim();
+  const comment = document.getElementById('comment').value.trim();
+  const status = document.getElementById('status').value;
+  const gmailStatus = document.getElementById('gmailStatus').value;
+  
+  saveRecord(company, email, phone, comment, status, gmailStatus);
+}
+
 function sendViaGmail() {
   const email = document.getElementById('email').value.trim();
   if (!email) return;
+  
+  // Set Gmail status to sent
+  document.getElementById('gmailStatus').value = "Email send";
+  
+  // Auto save record
+  saveCurrentRecordFromForm();
+  
   const { subject, body } = activeTab === 'initial' ? buildInitial() : buildFollowup();
   const formattedBody = body.replace(/\r?\n/g, '\r\n');
   const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(email)}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(formattedBody)}`;
@@ -409,13 +967,27 @@ function sendViaGmail() {
 }
 
 function copySheetInfo() {
-  const company = document.getElementById('company').value.trim() || '[Company Name]';
   const email = document.getElementById('email').value.trim();
   if (!email) return;
   
-  const textToCopy = `${company}\t${email}\t\tEmail send`;
+  const company = document.getElementById('company').value.trim() || '[Company Name]';
+  const phone = document.getElementById('phone').value.trim();
+  const comment = document.getElementById('comment').value.trim();
+  const status = document.getElementById('status').value;
+  const gmailStatus = document.getElementById('gmailStatus').value;
+  
+  // Find current S.No to write to clipboard
+  const existingRecord = records.find(r => r.email.toLowerCase() === email.toLowerCase());
+  const sNo = existingRecord ? existingRecord.sNo : (records.length > 0 ? Math.max(...records.map(r => parseInt(r.sNo) || 0)) + 1 : 1);
+  
+  const textToCopy = `${sNo}\t${company}\t${email}\t${phone}\t${comment}\t${status}\t${gmailStatus}`;
   
   navigator.clipboard.writeText(textToCopy).then(() => {
+    showToast("Copied single row for Excel!");
+    
+    // Auto save record
+    saveRecord(company, email, phone, comment, status, gmailStatus);
+    
     const sidebarBtn = document.getElementById('sidebarCopySheetBtn');
     const headerBtn = document.getElementById('headerCopySheetBtn');
     
@@ -528,16 +1100,20 @@ function render() {
   const headerGmailBtn = document.getElementById('headerGmailBtn');
   const sidebarCopySheetBtn = document.getElementById('sidebarCopySheetBtn');
   const headerCopySheetBtn = document.getElementById('headerCopySheetBtn');
+  const sidebarSaveBtn = document.getElementById('sidebarSaveBtn');
+  
   if (email) {
     sidebarGmailBtn.classList.remove('disabled');
     headerGmailBtn.classList.remove('disabled');
     sidebarCopySheetBtn.classList.remove('disabled');
     headerCopySheetBtn.classList.remove('disabled');
+    sidebarSaveBtn.classList.remove('disabled');
   } else {
     sidebarGmailBtn.classList.add('disabled');
     headerGmailBtn.classList.add('disabled');
     sidebarCopySheetBtn.classList.add('disabled');
     headerCopySheetBtn.classList.add('disabled');
+    sidebarSaveBtn.classList.add('disabled');
   }
 }
 
@@ -559,6 +1135,478 @@ function copySubject() {
     btn.classList.add('copied');
     setTimeout(() => { btn.textContent = 'Copy'; btn.classList.remove('copied'); }, 1800);
   });
+}
+
+// Toast notification helper
+let toastTimeout;
+function showToast(message) {
+  const toast = document.getElementById('toast');
+  const toastText = document.getElementById('toastText');
+  toastText.textContent = message;
+  toast.classList.add('active');
+  
+  clearTimeout(toastTimeout);
+  toastTimeout = setTimeout(() => {
+    toast.classList.remove('active');
+  }, 3000);
+}
+
+// Outreach Database functions
+function renderRecordsTable() {
+  const tbody = document.getElementById('recordsTbody');
+  const searchQuery = document.getElementById('recordsSearch').value.toLowerCase().trim();
+  const statusFilter = document.getElementById('filterStatus').value;
+  const gmailFilter = document.getElementById('filterGmailStatus').value;
+  tbody.innerHTML = '';
+  
+  // Make sure current active sort is applied
+  applyActiveSort();
+  
+  const filtered = records.filter(r => {
+    const matchesSearch = 
+      r.company.toLowerCase().includes(searchQuery) ||
+      r.email.toLowerCase().includes(searchQuery) ||
+      (r.phone && r.phone.toLowerCase().includes(searchQuery)) ||
+      (r.comment && r.comment.toLowerCase().includes(searchQuery)) ||
+      (r.status && r.status.toLowerCase().includes(searchQuery));
+      
+    const matchesStatus = !statusFilter || r.status === statusFilter;
+    const matchesGmail = !gmailFilter || r.gmailStatus === gmailFilter;
+    
+    return matchesSearch && matchesStatus && matchesGmail;
+  });
+  
+  const total = records.length;
+  const sent = records.filter(r => r.gmailStatus === 'Email send' || r.status === 'Email send').length;
+  document.getElementById('recordsStats').innerHTML = `
+    <span><strong>Total Records:</strong> ${total}</span>
+    <span><strong>Emails Sent:</strong> ${sent}</span>
+    <span><strong>Filtered:</strong> ${filtered.length}</span>
+  `;
+  
+  if (filtered.length === 0) {
+    tbody.innerHTML = `
+      <tr>
+        <td colspan="8" style="text-align: center; color: var(--muted); padding: 30px; font-family: var(--mono);">
+          No records found. Click "Import from Excel" or save a record to add.
+        </td>
+      </tr>
+    `;
+    document.getElementById('recordsPagination').innerHTML = '';
+    return;
+  }
+  
+  // Calculate total pages
+  const totalPages = Math.ceil(filtered.length / pageSize);
+  if (currentPage > totalPages) currentPage = totalPages;
+  if (currentPage < 1) currentPage = 1;
+  
+  // Slice records for current page
+  const startIdx = (currentPage - 1) * pageSize;
+  const endIdx = startIdx + pageSize;
+  const pageRecords = filtered.slice(startIdx, endIdx);
+  
+  pageRecords.forEach(r => {
+    const tr = document.createElement('tr');
+    tr.onclick = (e) => {
+      if (e.target.closest('.action-btn') || e.target.closest('a')) return;
+      loadRecordIntoForm(r);
+    };
+    
+    let statusClass = 'status-other';
+    const st = r.status ? r.status.toLowerCase() : '';
+    if (st.includes('send') || st.includes('applied') || st.includes('shortlisted')) statusClass = 'status-send';
+    else if (st.includes('not shortlist')) statusClass = 'status-not-shortlist';
+    
+    let gmailClass = r.gmailStatus === 'Email send' ? 'status-send' : 'status-other';
+    
+    tr.innerHTML = `
+      <td style="font-family: var(--mono); font-weight: bold; color: var(--teal);">${r.sNo}</td>
+      <td style="font-weight: 500;" title="${r.company}">${r.company}</td>
+      <td title="${r.email}"><a href="mailto:${r.email}" style="color: var(--teal); text-decoration: none;" onclick="event.stopPropagation();">${r.email}</a></td>
+      <td title="${r.phone || ''}">${r.phone || '<span style="color: #4a6272;">—</span>'}</td>
+      <td title="${r.comment || ''}" style="max-width: 200px;">${r.comment || '<span style="color: #4a6272;">—</span>'}</td>
+      <td><span class="badge ${statusClass}">${r.status}</span></td>
+      <td><span class="badge ${gmailClass}">${r.gmailStatus}</span></td>
+      <td style="text-align: center;">
+        <button class="action-btn" title="Load into Generator" onclick="event.stopPropagation(); loadRecordByEmail('${r.email}')">
+          Load
+        </button>
+        <button class="action-btn delete" title="Delete record" onclick="event.stopPropagation(); deleteRecord('${r.email}')">
+          Delete
+        </button>
+      </td>
+    `;
+    tbody.appendChild(tr);
+  });
+  
+  // Render pagination controls
+  renderPaginationControls(filtered.length);
+  // Update sorting indicators
+  updateSortIcons();
+}
+
+function applyActiveSort() {
+  records.sort((a, b) => {
+    let valA = a[sortColumn];
+    let valB = b[sortColumn];
+    
+    if (valA === undefined || valA === null) valA = '';
+    if (valB === undefined || valB === null) valB = '';
+    
+    if (sortColumn === 'sNo') {
+      const numA = parseInt(valA) || 0;
+      const numB = parseInt(valB) || 0;
+      return sortDirection === 'asc' ? numA - numB : numB - numA;
+    }
+    
+    valA = valA.toString().toLowerCase();
+    valB = valB.toString().toLowerCase();
+    
+    if (valA < valB) return sortDirection === 'asc' ? -1 : 1;
+    if (valA > valB) return sortDirection === 'asc' ? 1 : -1;
+    return 0;
+  });
+}
+
+function handleSort(column) {
+  if (sortColumn === column) {
+    sortDirection = sortDirection === 'asc' ? 'desc' : 'asc';
+  } else {
+    sortColumn = column;
+    sortDirection = 'asc';
+  }
+  applyActiveSort();
+  currentPage = 1; // Reset to page 1 on sort change
+  renderRecordsTable();
+}
+
+function updateSortIcons() {
+  const columns = ['sNo', 'company', 'email', 'phone', 'comment', 'status', 'gmailStatus'];
+  columns.forEach(col => {
+    const el = document.getElementById(`sort-icon-${col}`);
+    if (el) {
+      if (sortColumn === col) {
+        el.innerHTML = sortDirection === 'asc' ? ' &uarr;' : ' &darr;';
+        el.style.opacity = '1';
+        el.style.color = 'var(--teal)';
+      } else {
+        el.innerHTML = ' &updownarrow;';
+        el.style.opacity = '0.25';
+        el.style.color = 'var(--muted)';
+      }
+    }
+  });
+}
+
+function renderPaginationControls(totalItems) {
+  const container = document.getElementById('recordsPagination');
+  container.innerHTML = '';
+  
+  if (totalItems === 0) {
+    return;
+  }
+  
+  const totalPages = Math.ceil(totalItems / pageSize);
+  if (currentPage > totalPages) currentPage = totalPages;
+  if (currentPage < 1) currentPage = 1;
+  
+  // Info text
+  const startItem = (currentPage - 1) * pageSize + 1;
+  const endItem = Math.min(currentPage * pageSize, totalItems);
+  
+  const infoDiv = document.createElement('div');
+  infoDiv.className = 'pagination-info';
+  infoDiv.innerHTML = `Showing <strong>${startItem}</strong> to <strong>${endItem}</strong> of <strong>${totalItems}</strong> records`;
+  container.appendChild(infoDiv);
+  
+  // Page size dropdown
+  const sizeSelectorWrap = document.createElement('div');
+  sizeSelectorWrap.style.display = 'flex';
+  sizeSelectorWrap.style.alignItems = 'center';
+  sizeSelectorWrap.style.gap = '8px';
+  sizeSelectorWrap.className = 'pagination-info';
+  sizeSelectorWrap.innerHTML = `
+    <span>Show</span>
+    <select class="page-size-selector" id="pageSizeSelect" onchange="changePageSize(this.value)">
+      <option value="10" ${pageSize === 10 ? 'selected' : ''}>10</option>
+      <option value="20" ${pageSize === 20 ? 'selected' : ''}>20</option>
+      <option value="50" ${pageSize === 50 ? 'selected' : ''}>50</option>
+      <option value="100" ${pageSize === 100 ? 'selected' : ''}>100</option>
+    </select>
+    <span>rows</span>
+  `;
+  container.appendChild(sizeSelectorWrap);
+  
+  // Controls
+  const controlsDiv = document.createElement('div');
+  controlsDiv.className = 'pagination-controls';
+  
+  // First & Prev buttons
+  const firstBtn = document.createElement('button');
+  firstBtn.className = `page-btn ${currentPage === 1 ? 'disabled' : ''}`;
+  firstBtn.innerHTML = '&laquo;';
+  firstBtn.title = 'First Page';
+  firstBtn.onclick = () => { currentPage = 1; renderRecordsTable(); };
+  controlsDiv.appendChild(firstBtn);
+  
+  const prevBtn = document.createElement('button');
+  prevBtn.className = `page-btn ${currentPage === 1 ? 'disabled' : ''}`;
+  prevBtn.innerHTML = '&lsaquo;';
+  prevBtn.title = 'Previous Page';
+  prevBtn.onclick = () => { if (currentPage > 1) { currentPage--; renderRecordsTable(); } };
+  controlsDiv.appendChild(prevBtn);
+  
+  // Page numbers
+  let startPage = Math.max(1, currentPage - 2);
+  let endPage = Math.min(totalPages, currentPage + 2);
+  
+  if (startPage > 1) {
+    const pBtn = document.createElement('button');
+    pBtn.className = 'page-btn';
+    pBtn.textContent = '1';
+    pBtn.onclick = () => { currentPage = 1; renderRecordsTable(); };
+    controlsDiv.appendChild(pBtn);
+    
+    if (startPage > 2) {
+      const ellipsis = document.createElement('span');
+      ellipsis.textContent = '...';
+      ellipsis.style.color = 'var(--muted)';
+      ellipsis.style.padding = '0 4px';
+      controlsDiv.appendChild(ellipsis);
+    }
+  }
+  
+  for (let p = startPage; p <= endPage; p++) {
+    const pBtn = document.createElement('button');
+    pBtn.className = `page-btn ${currentPage === p ? 'active' : ''}`;
+    pBtn.textContent = p;
+    pBtn.onclick = () => { currentPage = p; renderRecordsTable(); };
+    controlsDiv.appendChild(pBtn);
+  }
+  
+  if (endPage < totalPages) {
+    if (endPage < totalPages - 1) {
+      const ellipsis = document.createElement('span');
+      ellipsis.textContent = '...';
+      ellipsis.style.color = 'var(--muted)';
+      ellipsis.style.padding = '0 4px';
+      controlsDiv.appendChild(ellipsis);
+    }
+    
+    const pBtn = document.createElement('button');
+    pBtn.className = 'page-btn';
+    pBtn.textContent = totalPages;
+    pBtn.onclick = () => { currentPage = totalPages; renderRecordsTable(); };
+    controlsDiv.appendChild(pBtn);
+  }
+  
+  // Next & Last buttons
+  const nextBtn = document.createElement('button');
+  nextBtn.className = `page-btn ${currentPage === totalPages ? 'disabled' : ''}`;
+  nextBtn.innerHTML = '&rsaquo;';
+  nextBtn.title = 'Next Page';
+  nextBtn.onclick = () => { if (currentPage < totalPages) { currentPage++; renderRecordsTable(); } };
+  controlsDiv.appendChild(nextBtn);
+  
+  const lastBtn = document.createElement('button');
+  lastBtn.className = `page-btn ${currentPage === totalPages ? 'disabled' : ''}`;
+  lastBtn.innerHTML = '&raquo;';
+  lastBtn.title = 'Last Page';
+  lastBtn.onclick = () => { currentPage = totalPages; renderRecordsTable(); };
+  controlsDiv.appendChild(lastBtn);
+  
+  container.appendChild(controlsDiv);
+}
+
+function changePageSize(size) {
+  pageSize = parseInt(size) || 20;
+  currentPage = 1;
+  renderRecordsTable();
+}
+
+function loadRecordByEmail(email) {
+  const r = records.find(rec => rec.email.toLowerCase() === email.toLowerCase());
+  if (r) {
+    loadRecordIntoForm(r);
+  }
+}
+
+function loadRecordIntoForm(r) {
+  document.getElementById('email').value = r.email;
+  document.getElementById('company').value = r.company === '[Company Name]' ? '' : r.company;
+  document.getElementById('phone').value = r.phone || '';
+  document.getElementById('comment').value = r.comment || '';
+  document.getElementById('status').value = r.status || 'Email send';
+  document.getElementById('gmailStatus').value = r.gmailStatus || 'Not send';
+  
+  handleEmailInput();
+  
+  document.querySelectorAll('.tab').forEach(x => x.classList.remove('active'));
+  const initialTabBtn = document.querySelector('.tab[data-tab="initial"]');
+  initialTabBtn.classList.add('active');
+  activeTab = 'initial';
+  
+  const grid = document.querySelector('.grid');
+  const recordsContainer = document.querySelector('.records-container');
+  grid.style.display = 'grid';
+  recordsContainer.classList.remove('active');
+  document.getElementById('previewTitle').textContent = 'Preview — Initial Email';
+  
+  render();
+  showToast(`Loaded ${r.company} into generator!`);
+}
+
+function deleteRecord(email) {
+  if (confirm("Are you sure you want to delete this record?")) {
+    records = records.filter(r => r.email.toLowerCase() !== email.toLowerCase());
+    saveToLocalStorage();
+    renderRecordsTable();
+    showToast("Record deleted.");
+  }
+}
+
+function clearAllRecords() {
+  if (confirm("WARNING: Are you sure you want to delete ALL outreach records? This cannot be undone.")) {
+    records = [];
+    saveToLocalStorage();
+    renderRecordsTable();
+    showToast("All records cleared.");
+  }
+}
+
+function copyAllToExcel() {
+  if (records.length === 0) {
+    showToast("No records to copy!");
+    return;
+  }
+  
+  const lines = records.map(r => 
+    `${r.sNo}\t${r.company}\t${r.email}\t${r.phone || ''}\t${r.comment || ''}\t${r.status || ''}\t${r.gmailStatus || ''}`
+  );
+  
+  const textToCopy = lines.join('\n');
+  
+  navigator.clipboard.writeText(textToCopy).then(() => {
+    showToast("All records copied for Excel!");
+  }).catch(err => {
+    console.error("Failed to copy records: ", err);
+    showToast("Error: Failed to copy to clipboard.");
+  });
+}
+
+function openImportModal() {
+  document.getElementById('importTextarea').value = '';
+  document.getElementById('importModal').classList.add('active');
+}
+
+document.getElementById('importModal').addEventListener('click', (e) => {
+  if (e.target === document.getElementById('importModal')) {
+    closeImportModal();
+  }
+});
+
+function closeImportModal() {
+  document.getElementById('importModal').classList.remove('active');
+}
+
+function submitImport() {
+  const text = document.getElementById('importTextarea').value;
+  importFromTSV(text);
+  closeImportModal();
+}
+
+function importFromTSV(text) {
+  if (!text || !text.trim()) {
+    showToast("Error: Please paste some data to import.");
+    return;
+  }
+  
+  const lines = text.split(/\r?\n/);
+  let importedCount = 0;
+  let skippedCount = 0;
+  
+  let nextSNo = 1;
+  if (records.length > 0) {
+    nextSNo = Math.max(...records.map(r => parseInt(r.sNo) || 0)) + 1;
+  }
+  
+  for (let line of lines) {
+    if (!line.trim()) continue;
+    
+    // Try tab split first
+    let cols = line.split('\t');
+    if (cols.length < 3) {
+      // Try space split (2 or more spaces)
+      cols = line.split(/ {2,}/);
+    }
+    if (cols.length < 3) {
+      // Try comma split
+      cols = line.split(',');
+    }
+    
+    if (cols.length < 2) {
+      continue; 
+    }
+    
+    // Find the column containing '@'
+    const emailIdx = cols.findIndex(c => c && c.includes('@'));
+    if (emailIdx === -1) {
+      continue; // Skip lines without email (headers or empty lines)
+    }
+    
+    let email = cols[emailIdx].trim();
+    let company = '';
+    let sNoStr = '';
+    
+    if (emailIdx > 0) {
+      company = cols[emailIdx - 1].trim();
+    }
+    if (emailIdx > 1) {
+      sNoStr = cols[emailIdx - 2].trim();
+    }
+    
+    let phone = cols[emailIdx + 1] ? cols[emailIdx + 1].trim() : '';
+    let comment = cols[emailIdx + 2] ? cols[emailIdx + 2].trim() : '';
+    let status = cols[emailIdx + 3] ? cols[emailIdx + 3].trim() : 'Email send';
+    let gmailStatus = cols[emailIdx + 4] ? cols[emailIdx + 4].trim() : 'Not send';
+    
+    const exists = records.some(r => r.email.toLowerCase() === email.toLowerCase());
+    if (exists) {
+      skippedCount++;
+      continue;
+    }
+    
+    let finalSNo = parseInt(sNoStr);
+    if (isNaN(finalSNo)) {
+      finalSNo = nextSNo++;
+    } else {
+      if (finalSNo >= nextSNo) {
+        nextSNo = finalSNo + 1;
+      }
+    }
+    
+    records.push({
+      sNo: finalSNo,
+      company: company || '[Company Name]',
+      email: email,
+      phone: phone,
+      comment: comment,
+      status: status || 'Email send',
+      gmailStatus: gmailStatus || 'Not send'
+    });
+    
+    importedCount++;
+  }
+  
+  if (importedCount > 0) {
+    applyActiveSort();
+    saveToLocalStorage();
+    renderRecordsTable();
+    showToast(`Imported ${importedCount} records. Skipped ${skippedCount} duplicates.`);
+  } else {
+    showToast(`No new records imported. Skipped ${skippedCount} duplicates.`);
+  }
 }
 
 render();
