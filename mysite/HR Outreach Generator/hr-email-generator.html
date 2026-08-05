@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>Sagar Chavda — HR Outreach Generator</title>
 <style>
   :root {
@@ -648,6 +649,143 @@
   }
   .page-size-selector:focus {
     border-color: var(--teal);
+  }
+
+  /* Mobile Responsive Optimizations */
+  @media (max-width: 768px) {
+    body {
+      padding: 16px 10px 40px;
+    }
+    header {
+      margin-bottom: 20px;
+      gap: 10px;
+    }
+    header h1 {
+      font-size: 17px;
+    }
+    header p {
+      font-size: 12px;
+    }
+    .tabs {
+      overflow-x: auto;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+      padding-bottom: 4px;
+    }
+    .tab {
+      padding: 10px 14px;
+      font-size: 13px;
+      flex-shrink: 0;
+    }
+    input, select {
+      font-size: 16px; /* Prevents auto-zoom on iOS */
+      padding: 12px 12px;
+      min-height: 44px;
+    }
+    .preview-head {
+      flex-direction: column;
+      align-items: stretch;
+    }
+    .preview-head > div {
+      width: 100%;
+      display: grid !important;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px !important;
+    }
+    .preview-head button {
+      width: 100%;
+      text-align: center;
+      justify-content: center;
+    }
+    .subject-line {
+      padding: 10px 12px 48px 12px;
+    }
+    .copy-sub-btn {
+      top: auto;
+      bottom: 8px;
+      right: 12px;
+      transform: none;
+      width: calc(100% - 24px);
+      text-align: center;
+    }
+    .copy-sub-btn:active {
+      transform: scale(0.98);
+    }
+    .body-preview {
+      padding: 14px;
+      font-size: 13.5px;
+      min-height: 220px;
+    }
+    /* Records section mobile styling */
+    .records-header {
+      flex-direction: column;
+      align-items: stretch;
+    }
+    .records-actions {
+      flex-direction: column;
+      width: 100%;
+    }
+    .records-search {
+      width: 100% !important;
+      font-size: 16px;
+      min-height: 44px;
+    }
+    .records-actions .copy-btn {
+      width: 100%;
+      text-align: center;
+    }
+    .records-actions select {
+      width: 100% !important;
+    }
+    table.records-table th, table.records-table td {
+      padding: 10px 12px;
+    }
+    /* Modal mobile styling */
+    .modal-overlay {
+      padding: 10px;
+      align-items: flex-end;
+    }
+    .modal {
+      border-radius: 16px 16px 12px 12px;
+      max-height: 90vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .modal-body {
+      overflow-y: auto;
+      padding: 16px 14px;
+    }
+    .wizard-progress {
+      gap: 4px;
+    }
+    .wizard-step-pill {
+      font-size: 10px;
+      padding: 6px 2px;
+      margin: 0;
+    }
+    .wizard-preview-box {
+      max-height: 180px;
+      padding: 12px;
+      font-size: 12.5px;
+    }
+    .wizard-action-btn {
+      min-height: 48px;
+      font-size: 14px;
+    }
+    /* Toast mobile */
+    .toast {
+      left: 12px;
+      right: 12px;
+      bottom: 16px;
+      border-radius: 8px;
+      justify-content: center;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .preview-head > div {
+      grid-template-columns: 1fr;
+    }
   }
 
   footer {
