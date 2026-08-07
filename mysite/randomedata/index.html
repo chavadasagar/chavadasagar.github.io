@@ -1,0 +1,1490 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataForge Pro - Random Data & Mock API Generator</title>
+    <meta name="description" content="Generate realistic mock data for developers, designers, and testers. Export as JSON, CSV, SQL, XML or interactive table view instantly.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            --font-mono: 'Fira Code', monospace;
+            
+            /* Dark Theme Colors */
+            --bg-primary: #0b0f19;
+            --bg-secondary: #111827;
+            --bg-card: rgba(17, 24, 39, 0.7);
+            --bg-card-hover: rgba(31, 41, 55, 0.8);
+            --bg-input: #1f2937;
+            
+            --border-color: rgba(255, 255, 255, 0.08);
+            --border-hover: rgba(99, 102, 241, 0.4);
+            
+            --text-primary: #f9fafb;
+            --text-secondary: #9ca3af;
+            --text-muted: #6b7280;
+            
+            --accent-primary: #6366f1;
+            --accent-secondary: #8b5cf6;
+            --accent-gradient: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+            --accent-glow: rgba(99, 102, 241, 0.25);
+            
+            --success-color: #10b981;
+            --warning-color: #f59e0b;
+            --danger-color: #ef4444;
+            
+            --radius-sm: 8px;
+            --radius-md: 14px;
+            --radius-lg: 20px;
+            
+            --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
+            --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.5), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            --glass-backdrop: blur(16px) saturate(180%);
+        }
+
+        [data-theme="light"] {
+            --bg-primary: #f8fafc;
+            --bg-secondary: #ffffff;
+            --bg-card: rgba(255, 255, 255, 0.8);
+            --bg-card-hover: rgba(241, 245, 249, 0.9);
+            --bg-input: #f1f5f9;
+            
+            --border-color: rgba(0, 0, 0, 0.08);
+            --border-hover: rgba(99, 102, 241, 0.5);
+            
+            --text-primary: #0f172a;
+            --text-secondary: #475569;
+            --text-muted: #94a3b8;
+            
+            --accent-glow: rgba(99, 102, 241, 0.15);
+            --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.08);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.2s ease, border-color 0.2s ease;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background-image: 
+                radial-gradient(circle at 15% 15%, rgba(99, 102, 241, 0.08) 0%, transparent 45%),
+                radial-gradient(circle at 85% 85%, rgba(168, 85, 247, 0.08) 0%, transparent 45%);
+            background-attachment: fixed;
+            line-height: 1.5;
+        }
+
+        /* Navbar */
+        header {
+            background: var(--bg-card);
+            backdrop-filter: var(--glass-backdrop);
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            padding: 0.85rem 2rem;
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            text-decoration: none;
+            color: var(--text-primary);
+        }
+
+        .brand-icon {
+            width: 40px;
+            height: 40px;
+            background: var(--accent-gradient);
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+            box-shadow: 0 4px 12px var(--accent-glow);
+        }
+
+        .brand-title {
+            font-size: 1.25rem;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            background: var(--accent-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .brand-badge {
+            font-size: 0.7rem;
+            font-weight: 700;
+            background: rgba(99, 102, 241, 0.15);
+            color: var(--accent-primary);
+            padding: 2px 8px;
+            border-radius: 20px;
+            border: 1px solid rgba(99, 102, 241, 0.3);
+            text-transform: uppercase;
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .theme-toggle-btn {
+            background: var(--bg-input);
+            border: 1px solid var(--border-color);
+            color: var(--text-primary);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+            transition: all 0.2s ease;
+        }
+
+        .theme-toggle-btn:hover {
+            border-color: var(--accent-primary);
+            transform: scale(1.05);
+        }
+
+        /* Layout Main */
+        main {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem;
+            flex: 1;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 360px 1fr;
+            gap: 2rem;
+        }
+
+        @media (max-width: 1024px) {
+            main {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Card Container */
+        .glass-panel {
+            background: var(--bg-card);
+            backdrop-filter: var(--glass-backdrop);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            padding: 1.5rem;
+            box-shadow: var(--shadow-sm);
+        }
+
+        /* Sidebar Configurations */
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .panel-title {
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.75rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .panel-title i {
+            color: var(--accent-primary);
+        }
+
+        /* Preset Cards Grid */
+        .presets-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.75rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .preset-card {
+            background: var(--bg-input);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-sm);
+            padding: 0.85rem;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+            align-items: flex-start;
+            transition: all 0.2s ease;
+        }
+
+        .preset-card:hover, .preset-card.active {
+            border-color: var(--accent-primary);
+            background: rgba(99, 102, 241, 0.1);
+            transform: translateY(-2px);
+        }
+
+        .preset-card i {
+            font-size: 1.2rem;
+            color: var(--accent-primary);
+        }
+
+        .preset-card-title {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .preset-card-desc {
+            font-size: 0.72rem;
+            color: var(--text-muted);
+        }
+
+        /* Tabs for Sidebar Modes */
+        .mode-tabs {
+            display: flex;
+            background: var(--bg-input);
+            padding: 4px;
+            border-radius: var(--radius-md);
+            border: 1px solid var(--border-color);
+            margin-bottom: 1.25rem;
+        }
+
+        .mode-tab {
+            flex: 1;
+            padding: 0.5rem 0.75rem;
+            font-size: 0.85rem;
+            font-weight: 600;
+            border: none;
+            background: transparent;
+            color: var(--text-secondary);
+            border-radius: var(--radius-sm);
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-align: center;
+        }
+
+        .mode-tab.active {
+            background: var(--accent-gradient);
+            color: white;
+            box-shadow: 0 2px 8px var(--accent-glow);
+        }
+
+        /* Form Controls */
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+            margin-bottom: 1.1rem;
+        }
+
+        .form-label {
+            font-size: 0.82rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .form-control, .form-select {
+            background: var(--bg-input);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-sm);
+            padding: 0.65rem 0.85rem;
+            color: var(--text-primary);
+            font-family: var(--font-sans);
+            font-size: 0.9rem;
+            outline: none;
+            transition: all 0.2s ease;
+        }
+
+        .form-control:focus, .form-select:focus {
+            border-color: var(--accent-primary);
+            box-shadow: 0 0 0 3px var(--accent-glow);
+        }
+
+        /* Range Slider */
+        .range-container {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .range-slider {
+            flex: 1;
+            accent-color: var(--accent-primary);
+            cursor: pointer;
+        }
+
+        .count-badge {
+            font-family: var(--font-mono);
+            background: var(--bg-input);
+            padding: 2px 10px;
+            border-radius: var(--radius-sm);
+            border: 1px solid var(--border-color);
+            font-weight: 600;
+            font-size: 0.85rem;
+            color: var(--accent-primary);
+        }
+
+        /* Custom Schema Builder UI */
+        .schema-builder-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.6rem;
+            max-height: 280px;
+            overflow-y: auto;
+            padding-right: 4px;
+            margin-bottom: 1rem;
+        }
+
+        .schema-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr 32px;
+            gap: 0.5rem;
+            align-items: center;
+        }
+
+        .btn-icon-danger {
+            background: rgba(239, 68, 68, 0.1);
+            border: 1px solid rgba(239, 68, 68, 0.3);
+            color: var(--danger-color);
+            border-radius: var(--radius-sm);
+            width: 32px;
+            height: 32px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s ease;
+        }
+
+        .btn-icon-danger:hover {
+            background: var(--danger-color);
+            color: white;
+        }
+
+        .btn-secondary-sm {
+            background: var(--bg-input);
+            border: 1px dashed var(--border-color);
+            color: var(--text-primary);
+            padding: 0.5rem;
+            border-radius: var(--radius-sm);
+            font-size: 0.82rem;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.4rem;
+        }
+
+        .btn-secondary-sm:hover {
+            border-color: var(--accent-primary);
+            color: var(--accent-primary);
+        }
+
+        /* Primary Action Buttons */
+        .btn-primary {
+            background: var(--accent-gradient);
+            color: white;
+            border: none;
+            padding: 0.85rem 1.5rem;
+            border-radius: var(--radius-md);
+            font-size: 0.95rem;
+            font-weight: 700;
+            cursor: pointer;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.6rem;
+            box-shadow: 0 4px 16px var(--accent-glow);
+            transition: all 0.25 ease;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px var(--accent-glow);
+        }
+
+        .btn-primary:active {
+            transform: translateY(0);
+        }
+
+        /* Main Display Content Area */
+        .content-area {
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+        }
+
+        /* Format Toolbar */
+        .toolbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            padding: 1rem 1.25rem;
+        }
+
+        .format-tabs {
+            display: flex;
+            gap: 0.4rem;
+            background: var(--bg-input);
+            padding: 4px;
+            border-radius: var(--radius-md);
+            border: 1px solid var(--border-color);
+        }
+
+        .format-tab {
+            padding: 0.45rem 0.85rem;
+            font-size: 0.82rem;
+            font-weight: 600;
+            border: none;
+            background: transparent;
+            color: var(--text-secondary);
+            border-radius: var(--radius-sm);
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .format-tab.active {
+            background: var(--bg-card);
+            color: var(--accent-primary);
+            border: 1px solid var(--border-color);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .action-btns {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+        }
+
+        .btn-action {
+            background: var(--bg-input);
+            border: 1px solid var(--border-color);
+            color: var(--text-primary);
+            padding: 0.5rem 0.9rem;
+            border-radius: var(--radius-sm);
+            font-size: 0.82rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+            transition: all 0.2s ease;
+        }
+
+        .btn-action:hover {
+            border-color: var(--accent-primary);
+            color: var(--accent-primary);
+        }
+
+        /* Search / Filter Input inside table */
+        .search-box {
+            position: relative;
+        }
+
+        .search-box i {
+            position: absolute;
+            left: 0.75rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+        .search-input {
+            padding-left: 2.2rem !important;
+            height: 36px;
+            font-size: 0.82rem !important;
+            width: 200px;
+        }
+
+        /* Code & Data Container */
+        .data-display-wrapper {
+            position: relative;
+            min-height: 480px;
+            max-height: 650px;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        /* Code View */
+        .code-container {
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            font-family: var(--font-mono);
+            font-size: 0.88rem;
+            padding: 1.25rem;
+            background: rgba(11, 15, 25, 0.8);
+            border-radius: var(--radius-md);
+            border: 1px solid var(--border-color);
+            color: #e2e8f0;
+            white-space: pre;
+            line-height: 1.6;
+        }
+
+        /* Syntax Highlighted JSON / SQL */
+        .token-key { color: #f472b6; }
+        .token-string { color: #34d399; }
+        .token-number { color: #fbbf24; }
+        .token-boolean { color: #60a5fa; }
+        .token-null { color: #94a3b8; }
+        .token-keyword { color: #c084fc; font-weight: bold; }
+
+        /* Table View */
+        .table-responsive {
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            border-radius: var(--radius-md);
+            border: 1px solid var(--border-color);
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.85rem;
+            text-align: left;
+        }
+
+        .data-table th {
+            background: var(--bg-input);
+            color: var(--text-primary);
+            font-weight: 700;
+            padding: 0.75rem 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            border-bottom: 1px solid var(--border-color);
+            white-space: nowrap;
+        }
+
+        .data-table td {
+            padding: 0.65rem 1rem;
+            border-bottom: 1px solid var(--border-color);
+            color: var(--text-secondary);
+            white-space: nowrap;
+        }
+
+        .data-table tbody tr:hover {
+            background: rgba(99, 102, 241, 0.05);
+        }
+
+        .avatar-img {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            vertical-align: middle;
+            margin-right: 0.5rem;
+            object-fit: cover;
+        }
+
+        .badge-status {
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .badge-active { background: rgba(16, 185, 129, 0.15); color: #10b981; }
+        .badge-pending { background: rgba(245, 158, 11, 0.15); color: #f59e0b; }
+        .badge-inactive { background: rgba(239, 68, 68, 0.15); color: #ef4444; }
+
+        /* Stats Bar */
+        .stats-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0.75rem 1.25rem;
+            background: var(--bg-input);
+            border-radius: var(--radius-md);
+            border: 1px solid var(--border-color);
+            font-size: 0.82rem;
+            color: var(--text-secondary);
+        }
+
+        .stat-item {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .stat-item strong {
+            color: var(--text-primary);
+        }
+
+        /* Toast Notifications */
+        .toast-container {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .toast {
+            background: var(--bg-secondary);
+            border: 1px solid var(--accent-primary);
+            color: var(--text-primary);
+            padding: 0.85rem 1.25rem;
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-lg);
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-size: 0.9rem;
+            font-weight: 600;
+            animation: slideIn 0.3s ease forwards;
+        }
+
+        @keyframes slideIn {
+            from { transform: translateX(100%); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 3rem;
+            padding: 1.5rem;
+            text-align: center;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+        footer a {
+            color: var(--accent-primary);
+            text-decoration: none;
+        }
+
+        /* Mobile & Responsive Breakpoints */
+        @media (max-width: 768px) {
+            header {
+                padding: 0.75rem 1rem;
+            }
+
+            main {
+                padding: 1rem;
+                gap: 1.25rem;
+            }
+
+            .toolbar {
+                flex-direction: column;
+                align-items: stretch;
+                padding: 0.85rem;
+            }
+
+            .format-tabs {
+                overflow-x: auto;
+                padding: 4px;
+                -webkit-overflow-scrolling: touch;
+            }
+
+            .format-tab {
+                white-space: nowrap;
+            }
+
+            .action-btns {
+                justify-content: space-between;
+                flex-wrap: wrap;
+            }
+
+            .search-input {
+                width: 100% !important;
+            }
+
+            .search-box {
+                flex: 1 1 100%;
+            }
+
+            .stats-bar {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.5rem;
+            }
+
+            .data-display-wrapper {
+                min-height: 380px;
+                max-height: 500px;
+            }
+
+            .toast-container {
+                bottom: 1rem;
+                right: 1rem;
+                left: 1rem;
+            }
+
+            .toast {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .presets-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 0.5rem;
+            }
+
+            .preset-card {
+                padding: 0.65rem;
+            }
+
+            .preset-card-title {
+                font-size: 0.78rem;
+            }
+
+            .preset-card-desc {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="nav-container">
+            <a href="#" class="brand">
+                <div class="brand-icon">
+                    <i class="fa-solid fa-cubes"></i>
+                </div>
+                <div>
+                    <span class="brand-title">DataForge Pro</span>
+                    <span class="brand-badge">v2.5</span>
+                </div>
+            </a>
+            
+            <div class="header-actions">
+                <button class="theme-toggle-btn" id="themeToggleBtn" title="Toggle Light/Dark Theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main>
+        <!-- Sidebar Controls -->
+        <aside class="sidebar">
+            <div class="glass-panel">
+                <div class="panel-title">
+                    <i class="fa-solid fa-sliders"></i> Generator Setup
+                </div>
+
+                <!-- Mode Selection: Presets vs Custom Schema -->
+                <div class="mode-tabs">
+                    <button class="mode-tab active" data-mode="preset" onclick="switchMode('preset')">
+                        <i class="fa-solid fa-layer-group"></i> Presets
+                    </button>
+                    <button class="mode-tab" data-mode="custom" onclick="switchMode('custom')">
+                        <i class="fa-solid fa-code-branch"></i> Custom Builder
+                    </button>
+                </div>
+
+                <!-- Preset Mode Panel -->
+                <div id="presetModePanel">
+                    <div class="form-group">
+                        <label class="form-label">Select Preset Category</label>
+                        <div class="presets-grid">
+                            <div class="preset-card active" data-preset="users" onclick="selectPreset('users', this)">
+                                <i class="fa-solid fa-user-gear"></i>
+                                <span class="preset-card-title">User Profiles</span>
+                                <span class="preset-card-desc">Names, Emails, Roles</span>
+                            </div>
+                            <div class="preset-card" data-preset="ecommerce" onclick="selectPreset('ecommerce', this)">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <span class="preset-card-title">E-Commerce</span>
+                                <span class="preset-card-desc">Orders & Products</span>
+                            </div>
+                            <div class="preset-card" data-preset="finance" onclick="selectPreset('finance', this)">
+                                <i class="fa-solid fa-credit-card"></i>
+                                <span class="preset-card-title">Finance</span>
+                                <span class="preset-card-desc">Cards, IBAN, Status</span>
+                            </div>
+                            <div class="preset-card" data-preset="location" onclick="selectPreset('location', this)">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span class="preset-card-title">Geo & Address</span>
+                                <span class="preset-card-desc">Cities, Lat/Long</span>
+                            </div>
+                            <div class="preset-card" data-preset="developer" onclick="selectPreset('developer', this)">
+                                <i class="fa-solid fa-network-wired"></i>
+                                <span class="preset-card-title">Dev Assets</span>
+                                <span class="preset-card-desc">UUID, IP, Hashes</span>
+                            </div>
+                            <div class="preset-card" data-preset="lorem" onclick="selectPreset('lorem', this)">
+                                <i class="fa-solid fa-quote-right"></i>
+                                <span class="preset-card-title">Lorem Ipsum</span>
+                                <span class="preset-card-desc">Text & Paragraphs</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Custom Mode Panel (Hidden by default) -->
+                <div id="customModePanel" style="display: none;">
+                    <div class="form-group">
+                        <label class="form-label">Table / Collection Name</label>
+                        <input type="text" id="tableNameInput" class="form-control" value="users">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Configure Fields</label>
+                        <div class="schema-builder-list" id="schemaFieldsList">
+                            <!-- Rows added dynamically -->
+                        </div>
+                        <button class="btn-secondary-sm" onclick="addSchemaField()">
+                            <i class="fa-solid fa-plus"></i> Add Field
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Common Controls -->
+                <div class="form-group">
+                    <label class="form-label">
+                        <span>Quantity Records</span>
+                        <span class="count-badge" id="countBadge">10</span>
+                    </label>
+                    <div class="range-container">
+                        <input type="range" id="quantityRange" class="range-slider" min="1" max="250" value="10" oninput="updateCountDisplay(this.value)">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Locale / Region</label>
+                    <select id="localeSelect" class="form-select">
+                        <option value="en_US">Global / English (US)</option>
+                        <option value="en_IN">India (IN)</option>
+                        <option value="en_GB">United Kingdom (UK)</option>
+                        <option value="de_DE">Germany (DE)</option>
+                    </select>
+                </div>
+
+                <button class="btn-primary" onclick="generateData()">
+                    <i class="fa-solid fa-bolt"></i> Generate Data
+                </button>
+            </div>
+        </aside>
+
+        <!-- Right Content & Output Display -->
+        <section class="content-area">
+            <!-- Format Toolbar -->
+            <div class="glass-panel toolbar">
+                <div class="format-tabs">
+                    <button class="format-tab active" data-format="json" onclick="setFormat('json')">
+                        <i class="fa-solid fa-code"></i> JSON
+                    </button>
+                    <button class="format-tab" data-format="table" onclick="setFormat('table')">
+                        <i class="fa-solid fa-table"></i> Table View
+                    </button>
+                    <button class="format-tab" data-format="csv" onclick="setFormat('csv')">
+                        <i class="fa-solid fa-file-csv"></i> CSV
+                    </button>
+                    <button class="format-tab" data-format="sql" onclick="setFormat('sql')">
+                        <i class="fa-solid fa-database"></i> SQL
+                    </button>
+                    <button class="format-tab" data-format="xml" onclick="setFormat('xml')">
+                        <i class="fa-solid fa-file-code"></i> XML
+                    </button>
+                </div>
+
+                <div class="action-btns">
+                    <div class="search-box" id="tableSearchContainer" style="display: none;">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" id="searchInput" class="form-control search-input" placeholder="Search records..." oninput="filterTableData()">
+                    </div>
+                    <button class="btn-action" onclick="copyToClipboard()" title="Copy to Clipboard">
+                        <i class="fa-solid fa-copy"></i> Copy
+                    </button>
+                    <button class="btn-action" onclick="downloadFile()" title="Download File">
+                        <i class="fa-solid fa-download"></i> Download
+                    </button>
+                </div>
+            </div>
+
+            <!-- Main Data Viewer Box -->
+            <div class="data-display-wrapper">
+                <div class="code-container" id="codeDisplay">
+                    <!-- JSON / CSV / SQL / XML rendered here -->
+                </div>
+                <div class="table-responsive" id="tableDisplay" style="display: none;">
+                    <table class="data-table" id="dataTable">
+                        <thead id="tableHead"></thead>
+                        <tbody id="tableBody"></tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Stats & Info Bar -->
+            <div class="stats-bar">
+                <div class="stat-item">
+                    <i class="fa-solid fa-list-check" style="color: var(--accent-primary);"></i>
+                    <span>Generated Records: <strong id="statCount">0</strong></span>
+                </div>
+                <div class="stat-item">
+                    <i class="fa-solid fa-weight-hanging" style="color: var(--warning-color);"></i>
+                    <span>Estimated Size: <strong id="statSize">0 KB</strong></span>
+                </div>
+                <div class="stat-item">
+                    <i class="fa-solid fa-stopwatch" style="color: var(--success-color);"></i>
+                    <span>Generation Speed: <strong id="statTime">0 ms</strong></span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>DataForge Pro &copy; 2026 - Created for fast API prototyping, testing, & database seeding.</p>
+    </footer>
+
+    <!-- Toast Notifications Placeholder -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <script>
+        /* ========================================================
+           STATE & CONFIGURATION
+           ======================================================== */
+        let currentMode = 'preset'; // 'preset' or 'custom'
+        let selectedPreset = 'users';
+        let currentFormat = 'json';
+        let generatedDataList = [];
+        let schemaFields = [
+            { name: 'id', type: 'uuid' },
+            { name: 'fullName', type: 'fullName' },
+            { name: 'email', type: 'email' },
+            { name: 'role', type: 'role' },
+            { name: 'status', type: 'status' }
+        ];
+
+        /* Data Dictionaries for Mock Generation */
+        const firstNames = ['Alexander', 'Sophia', 'Ethan', 'Emma', 'Liam', 'Olivia', 'Noah', 'Ava', 'Jackson', 'Isabella', 'Aarav', 'Priya', 'Rohan', 'Ananya', 'Lucas', 'Mia', 'Mateo', 'Zoe', 'Oliver', 'Charlotte'];
+        const lastNames = ['Smith', 'Johnson', 'Williams', 'Brown', 'Jones', 'Garcia', 'Miller', 'Davis', 'Rodriguez', 'Chavda', 'Patel', 'Sharma', 'Wilson', 'Anderson', 'Taylor', 'Thomas', 'White', 'Harris', 'Martin'];
+        const domains = ['gmail.com', 'outlook.com', 'yahoo.com', 'company.io', 'techcorp.dev', 'cloudsystem.org'];
+        const jobTitles = ['Senior Fullstack Engineer', 'UI/UX Product Designer', 'DevOps Specialist', 'Product Manager', 'Data Scientist', 'QA Automation Engineer', 'Backend Architect'];
+        const cities = ['San Francisco', 'New York', 'London', 'Tokyo', 'Berlin', 'Mumbai', 'Toronto', 'Sydney', 'Paris', 'Singapore'];
+        const countries = ['United States', 'India', 'United Kingdom', 'Germany', 'Japan', 'Canada', 'Australia', 'France', 'Singapore'];
+        const streets = ['Market Street', 'Broadway', '5th Avenue', 'Sunset Boulevard', 'Park Lane', 'MG Road', 'Main Street', 'Oak Drive'];
+        const companySuffixes = ['Tech', 'Labs', 'Solutions', 'Global', 'Inc', 'Group', 'Networks', 'Systems'];
+        const loremWords = ['lorem', 'ipsum', 'dolor', 'sit', 'amet', 'consectetur', 'adipiscing', 'elit', 'sed', 'do', 'eiusmod', 'tempor', 'incididunt', 'ut', 'labore', 'et', 'dolore', 'magna', 'aliqua'];
+
+        /* ========================================================
+           INITIALIZATION & EVENT LISTENERS
+           ======================================================== */
+        document.addEventListener('DOMContentLoaded', () => {
+            renderSchemaFields();
+            generateData();
+            initTheme();
+        });
+
+        function initTheme() {
+            const themeBtn = document.getElementById('themeToggleBtn');
+            themeBtn.addEventListener('click', () => {
+                const html = document.documentElement;
+                const isDark = html.getAttribute('data-theme') === 'dark';
+                html.setAttribute('data-theme', isDark ? 'light' : 'dark');
+                themeBtn.innerHTML = isDark ? '<i class="fa-solid fa-sun"></i>' : '<i class="fa-solid fa-moon"></i>';
+            });
+        }
+
+        function updateCountDisplay(val) {
+            document.getElementById('countBadge').innerText = val;
+        }
+
+        function switchMode(mode) {
+            currentMode = mode;
+            document.querySelectorAll('.mode-tab').forEach(t => {
+                t.classList.toggle('active', t.getAttribute('data-mode') === mode);
+            });
+
+            document.getElementById('presetModePanel').style.display = mode === 'preset' ? 'block' : 'none';
+            document.getElementById('customModePanel').style.display = mode === 'custom' ? 'block' : 'none';
+
+            generateData();
+        }
+
+        function selectPreset(presetKey, el) {
+            selectedPreset = presetKey;
+            document.querySelectorAll('.preset-card').forEach(c => c.classList.remove('active'));
+            el.classList.add('active');
+            generateData();
+        }
+
+        function setFormat(fmt) {
+            currentFormat = fmt;
+            document.querySelectorAll('.format-tab').forEach(t => {
+                t.classList.toggle('active', t.getAttribute('data-format') === fmt);
+            });
+
+            const codeDisplay = document.getElementById('codeDisplay');
+            const tableDisplay = document.getElementById('tableDisplay');
+            const searchContainer = document.getElementById('tableSearchContainer');
+
+            if (fmt === 'table') {
+                codeDisplay.style.display = 'none';
+                tableDisplay.style.display = 'block';
+                searchContainer.style.display = 'block';
+                renderTableView(generatedDataList);
+            } else {
+                codeDisplay.style.display = 'block';
+                tableDisplay.style.display = 'none';
+                searchContainer.style.display = 'none';
+                renderCodeView();
+            }
+        }
+
+        /* ========================================================
+           CUSTOM SCHEMA BUILDER LOGIC
+           ======================================================== */
+        function renderSchemaFields() {
+            const container = document.getElementById('schemaFieldsList');
+            container.innerHTML = '';
+            
+            schemaFields.forEach((field, index) => {
+                const row = document.createElement('div');
+                row.className = 'schema-row';
+                row.innerHTML = `
+                    <input type="text" class="form-control" value="${field.name}" placeholder="Field Name" onchange="updateSchemaFieldName(${index}, this.value)">
+                    <select class="form-select" onchange="updateSchemaFieldType(${index}, this.value)">
+                        <option value="uuid" ${field.type === 'uuid' ? 'selected' : ''}>UUID v4</option>
+                        <option value="fullName" ${field.type === 'fullName' ? 'selected' : ''}>Full Name</option>
+                        <option value="email" ${field.type === 'email' ? 'selected' : ''}>Email</option>
+                        <option value="phone" ${field.type === 'phone' ? 'selected' : ''}>Phone Number</option>
+                        <option value="job" ${field.type === 'job' ? 'selected' : ''}>Job Title</option>
+                        <option value="company" ${field.type === 'company' ? 'selected' : ''}>Company</option>
+                        <option value="creditCard" ${field.type === 'creditCard' ? 'selected' : ''}>Credit Card</option>
+                        <option value="city" ${field.type === 'city' ? 'selected' : ''}>City</option>
+                        <option value="country" ${field.type === 'country' ? 'selected' : ''}>Country</option>
+                        <option value="price" ${field.type === 'price' ? 'selected' : ''}>Price ($)</option>
+                        <option value="status" ${field.type === 'status' ? 'selected' : ''}>Status</option>
+                        <option value="boolean" ${field.type === 'boolean' ? 'selected' : ''}>Boolean</option>
+                        <option value="ip" ${field.type === 'ip' ? 'selected' : ''}>IP Address</option>
+                    </select>
+                    <button class="btn-icon-danger" onclick="removeSchemaField(${index})" title="Delete Field">
+                        <i class="fa-solid fa-trash"></i>
+                    </button>
+                `;
+                container.appendChild(row);
+            });
+        }
+
+        function addSchemaField() {
+            schemaFields.push({ name: `field_${schemaFields.length + 1}`, type: 'fullName' });
+            renderSchemaFields();
+        }
+
+        function removeSchemaField(index) {
+            if (schemaFields.length <= 1) {
+                showToast('At least one field is required!', 'warning');
+                return;
+            }
+            schemaFields.splice(index, 1);
+            renderSchemaFields();
+        }
+
+        function updateSchemaFieldName(index, val) {
+            schemaFields[index].name = val.trim() || `field_${index + 1}`;
+        }
+
+        function updateSchemaFieldType(index, val) {
+            schemaFields[index].type = val;
+        }
+
+        /* ========================================================
+           RANDOM DATA GENERATORS
+           ======================================================== */
+        function getRandomElem(arr) {
+            return arr[Math.floor(Math.random() * arr.length)];
+        }
+
+        function getRandomInt(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+
+        function generateUUID() {
+            return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+                const r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
+                return v.toString(16);
+            });
+        }
+
+        function generateIPv4() {
+            return `${getRandomInt(10, 220)}.${getRandomInt(0, 255)}.${getRandomInt(0, 255)}.${getRandomInt(1, 254)}`;
+        }
+
+        function generateCreditCard() {
+            const prefix = getRandomElem(['4532', '5424', '3782', '6011']);
+            return `${prefix} **** **** ${getRandomInt(1000, 9999)}`;
+        }
+
+        function generatePhone() {
+            return `+1 (${getRandomInt(200, 999)}) ${getRandomInt(200, 999)}-${getRandomInt(1000, 9999)}`;
+        }
+
+        function generateValueByType(type) {
+            const fName = getRandomElem(firstNames);
+            const lName = getRandomElem(lastNames);
+
+            switch(type) {
+                case 'uuid': return generateUUID();
+                case 'fullName': return `${fName} ${lName}`;
+                case 'email': return `${fName.toLowerCase()}.${lName.toLowerCase()}${getRandomInt(10, 99)}@${getRandomElem(domains)}`;
+                case 'phone': return generatePhone();
+                case 'job': return getRandomElem(jobTitles);
+                case 'company': return `${lName} ${getRandomElem(companySuffixes)}`;
+                case 'creditCard': return generateCreditCard();
+                case 'city': return getRandomElem(cities);
+                case 'country': return getRandomElem(countries);
+                case 'price': return (Math.random() * 500 + 10).toFixed(2);
+                case 'status': return getRandomElem(['Active', 'Pending', 'Inactive']);
+                case 'boolean': return Math.random() > 0.5;
+                case 'ip': return generateIPv4();
+                default: return 'Sample Value';
+            }
+        }
+
+        /* Main Data Generation Handler */
+        function generateData() {
+            const startTime = performance.now();
+            const count = parseInt(document.getElementById('quantityRange').value, 10);
+            generatedDataList = [];
+
+            if (currentMode === 'preset') {
+                for (let i = 0; i < count; i++) {
+                    generatedDataList.push(createPresetRecord(i + 1, selectedPreset));
+                }
+            } else {
+                for (let i = 0; i < count; i++) {
+                    const record = {};
+                    schemaFields.forEach(f => {
+                        record[f.name] = generateValueByType(f.type);
+                    });
+                    generatedDataList.push(record);
+                }
+            }
+
+            const endTime = performance.now();
+            const timeTaken = (endTime - startTime).toFixed(1);
+
+            // Update Statistics
+            document.getElementById('statCount').innerText = generatedDataList.length;
+            document.getElementById('statTime').innerText = `${timeTaken} ms`;
+            
+            const rawString = JSON.stringify(generatedDataList);
+            const sizeKB = (new Blob([rawString]).size / 1024).toFixed(2);
+            document.getElementById('statSize').innerText = `${sizeKB} KB`;
+
+            // Render output
+            if (currentFormat === 'table') {
+                renderTableView(generatedDataList);
+            } else {
+                renderCodeView();
+            }
+        }
+
+        function createPresetRecord(id, preset) {
+            const fName = getRandomElem(firstNames);
+            const lName = getRandomElem(lastNames);
+            const email = `${fName.toLowerCase()}.${lName.toLowerCase()}${getRandomInt(10, 99)}@${getRandomElem(domains)}`;
+
+            switch (preset) {
+                case 'users':
+                    return {
+                        id: id,
+                        guid: generateUUID(),
+                        name: `${fName} ${lName}`,
+                        email: email,
+                        avatar: `https://i.pravatar.cc/150?img=${getRandomInt(1, 70)}`,
+                        role: getRandomElem(jobTitles),
+                        status: getRandomElem(['Active', 'Pending', 'Inactive']),
+                        joinedDate: new Date(Date.now() - getRandomInt(0, 10000000000)).toISOString().split('T')[0]
+                    };
+                case 'ecommerce':
+                    return {
+                        orderId: `ORD-${getRandomInt(10000, 99999)}`,
+                        customer: `${fName} ${lName}`,
+                        product: getRandomElem(['Wireless Headphones', 'Mechanical Keyboard', '4K Monitor', 'Gaming Mouse', 'Smart Watch']),
+                        amount: parseFloat((Math.random() * 300 + 20).toFixed(2)),
+                        paymentStatus: getRandomElem(['Paid', 'Refunded', 'Failed', 'Processing']),
+                        shippingCity: getRandomElem(cities)
+                    };
+                case 'finance':
+                    return {
+                        transactionId: generateUUID(),
+                        accountHolder: `${fName} ${lName}`,
+                        cardNumber: generateCreditCard(),
+                        amount: parseFloat((Math.random() * 5000 + 50).toFixed(2)),
+                        currency: 'USD',
+                        status: getRandomElem(['Completed', 'Pending', 'Flagged'])
+                    };
+                case 'location':
+                    return {
+                        id: id,
+                        street: `${getRandomInt(100, 9999)} ${getRandomElem(streets)}`,
+                        city: getRandomElem(cities),
+                        country: getRandomElem(countries),
+                        zipCode: `${getRandomInt(10000, 99999)}`,
+                        latitude: (Math.random() * 180 - 90).toFixed(6),
+                        longitude: (Math.random() * 360 - 180).toFixed(6)
+                    };
+                case 'developer':
+                    return {
+                        id: generateUUID(),
+                        ipAddress: generateIPv4(),
+                        macAddress: 'XX:XX:XX:XX:XX:XX'.replace(/X/g, () => '0123456789ABCDEF'[Math.floor(Math.random() * 16)]),
+                        useragent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/120.0.0.0',
+                        isVerified: Math.random() > 0.5
+                    };
+                case 'lorem':
+                    return {
+                        id: id,
+                        title: `${getRandomElem(loremWords)} ${getRandomElem(loremWords)} ${getRandomElem(loremWords)}`,
+                        body: Array.from({length: 8}, () => getRandomElem(loremWords)).join(' ') + '.'
+                    };
+            }
+        }
+
+        /* ========================================================
+           RENDERERS (Code & Table)
+           ======================================================== */
+        function renderCodeView() {
+            const container = document.getElementById('codeDisplay');
+            let outputText = '';
+
+            if (currentFormat === 'json') {
+                outputText = highlightJSON(JSON.stringify(generatedDataList, null, 2));
+            } else if (currentFormat === 'csv') {
+                outputText = escapeHTML(convertToCSV(generatedDataList));
+            } else if (currentFormat === 'sql') {
+                const tableName = currentMode === 'custom' ? document.getElementById('tableNameInput').value.trim() || 'data_records' : selectedPreset;
+                outputText = highlightSQL(convertToSQL(generatedDataList, tableName));
+            } else if (currentFormat === 'xml') {
+                outputText = escapeHTML(convertToXML(generatedDataList));
+            }
+
+            container.innerHTML = outputText;
+        }
+
+        function renderTableView(data) {
+            const head = document.getElementById('tableHead');
+            const body = document.getElementById('tableBody');
+            
+            head.innerHTML = '';
+            body.innerHTML = '';
+
+            if (!data || data.length === 0) {
+                body.innerHTML = '<tr><td colspan="10" style="text-align:center; padding:2rem;">No matching data found.</td></tr>';
+                return;
+            }
+
+            const keys = Object.keys(data[0]);
+            
+            // Header Row
+            const trHead = document.createElement('tr');
+            keys.forEach(k => {
+                const th = document.createElement('th');
+                th.innerText = k.toUpperCase();
+                trHead.appendChild(th);
+            });
+            head.appendChild(trHead);
+
+            // Data Rows
+            data.forEach(row => {
+                const tr = document.createElement('tr');
+                keys.forEach(k => {
+                    const td = document.createElement('td');
+                    const val = row[k];
+                    
+                    if (k === 'avatar' && typeof val === 'string') {
+                        td.innerHTML = `<img src="${val}" class="avatar-img" alt="avatar">`;
+                    } else if (k === 'status' || k === 'paymentStatus') {
+                        const statusClass = val === 'Active' || val === 'Paid' || val === 'Completed' ? 'badge-active' : (val === 'Pending' || val === 'Processing' ? 'badge-pending' : 'badge-inactive');
+                        td.innerHTML = `<span class="badge-status ${statusClass}">${val}</span>`;
+                    } else {
+                        td.innerText = val;
+                    }
+                    tr.appendChild(td);
+                });
+                body.appendChild(tr);
+            });
+        }
+
+        function filterTableData() {
+            const query = document.getElementById('searchInput').value.toLowerCase();
+            if (!query) {
+                renderTableView(generatedDataList);
+                return;
+            }
+            const filtered = generatedDataList.filter(row => {
+                return Object.values(row).some(v => String(v).toLowerCase().includes(query));
+            });
+            renderTableView(filtered);
+        }
+
+        /* ========================================================
+           CONVERTERS & HIGHLIGHTERS
+           ======================================================== */
+        function convertToCSV(data) {
+            if (!data || !data.length) return '';
+            const headers = Object.keys(data[0]);
+            const rows = data.map(obj => headers.map(h => JSON.stringify(obj[h] ?? '')).join(','));
+            return [headers.join(','), ...rows].join('\n');
+        }
+
+        function convertToSQL(data, tableName) {
+            if (!data || !data.length) return '';
+            const headers = Object.keys(data[0]);
+            const columns = headers.join(', ');
+            
+            const insertStatements = data.map(obj => {
+                const values = headers.map(h => {
+                    const val = obj[h];
+                    if (typeof val === 'number' || typeof val === 'boolean') return val;
+                    return `'${String(val).replace(/'/g, "''")}'`;
+                }).join(', ');
+                return `INSERT INTO ${tableName} (${columns}) VALUES (${values});`;
+            });
+
+            return insertStatements.join('\n');
+        }
+
+        function convertToXML(data) {
+            if (!data || !data.length) return '';
+            let xml = '<?xml version="1.0" encoding="UTF-8"?>\n<records>\n';
+            data.forEach(row => {
+                xml += '  <record>\n';
+                Object.keys(row).forEach(k => {
+                    xml += `    <${k}>${escapeHTML(String(row[k]))}</${k}>\n`;
+                });
+                xml += '  </record>\n';
+            });
+            xml += '</records>';
+            return xml;
+        }
+
+        function escapeHTML(str) {
+            return str.replace(/[&<>'"]/g, 
+                tag => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' }[tag] || tag)
+            );
+        }
+
+        function highlightJSON(jsonStr) {
+            return jsonStr.replace(/("(\\u[a-zA-Z0-9]{4}|\\[^u]|[^\\"])*"(\s*:)?|\b(true|false|null)\b|-?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?)/g, function (match) {
+                let cls = 'token-number';
+                if (/^"/.test(match)) {
+                    if (/:$/.test(match)) {
+                        cls = 'token-key';
+                    } else {
+                        cls = 'token-string';
+                    }
+                } else if (/true|false/.test(match)) {
+                    cls = 'token-boolean';
+                } else if (/null/.test(match)) {
+                    cls = 'token-null';
+                }
+                return `<span class="${cls}">${escapeHTML(match)}</span>`;
+            });
+        }
+
+        function highlightSQL(sqlStr) {
+            return sqlStr.replace(/\b(INSERT INTO|VALUES)\b/g, '<span class="token-keyword">$1</span>');
+        }
+
+        /* ========================================================
+           EXPORTS & UTILITIES
+           ======================================================== */
+        function getRawOutputString() {
+            if (currentFormat === 'json') return JSON.stringify(generatedDataList, null, 2);
+            if (currentFormat === 'csv') return convertToCSV(generatedDataList);
+            if (currentFormat === 'sql') {
+                const tableName = currentMode === 'custom' ? document.getElementById('tableNameInput').value.trim() || 'data_records' : selectedPreset;
+                return convertToSQL(generatedDataList, tableName);
+            }
+            if (currentFormat === 'xml') return convertToXML(generatedDataList);
+            return JSON.stringify(generatedDataList, null, 2);
+        }
+
+        function copyToClipboard() {
+            const text = getRawOutputString();
+            navigator.clipboard.writeText(text).then(() => {
+                showToast('Copied to clipboard successfully!', 'success');
+            }).catch(err => {
+                showToast('Failed to copy text.', 'danger');
+            });
+        }
+
+        function downloadFile() {
+            const text = getRawOutputString();
+            const extMap = { json: 'json', csv: 'csv', sql: 'sql', xml: 'xml', table: 'json' };
+            const ext = extMap[currentFormat] || 'txt';
+            
+            const blob = new Blob([text], { type: 'text/plain;charset=utf-8' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `mock_data_${Date.now()}.${ext}`;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+
+            showToast(`Downloaded mock_data.${ext}!`, 'success');
+        }
+
+        function showToast(message, type = 'success') {
+            const container = document.getElementById('toastContainer');
+            const toast = document.createElement('div');
+            toast.className = 'toast';
+            const icon = type === 'success' ? 'fa-circle-check' : 'fa-circle-exclamation';
+            const color = type === 'success' ? 'var(--success-color)' : 'var(--warning-color)';
+            
+            toast.innerHTML = `<i class="fa-solid ${icon}" style="color: ${color};"></i> ${message}`;
+            container.appendChild(toast);
+
+            setTimeout(() => {
+                toast.style.animation = 'slideIn 0.3s ease reverse forwards';
+                setTimeout(() => toast.remove(), 300);
+            }, 2500);
+        }
+    </script>
+</body>
+</html>

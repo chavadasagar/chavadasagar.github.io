@@ -1,23 +1,646 @@
-<script>
-function gamestart(){
-    RandNo = Math.floor(Math.random()*100);
-    attemp=0;
-    console.log(RandNo);
-    while(true){
-    userno = prompt("Please Enter Number");
-    
-    if(userno < RandNo){
-        attemp=attemp+1;
-        alert("It Is Small Number Please Enter Big  Number");
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guess The Number - Modern Mobile Web Game</title>
+  <meta name="description" content="An exciting, mobile-friendly number guessing game with dynamic hints, score tracking, and smooth visuals.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Canvas Confetti CDN for victory celebration -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+  <style>
+    :root {
+      --bg-gradient: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #311042 100%);
+      --card-bg: rgba(30, 41, 59, 0.65);
+      --card-border: rgba(255, 255, 255, 0.12);
+      --card-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+      --accent-blue: #3b82f6;
+      --accent-purple: #8b5cf6;
+      --accent-pink: #ec4899;
+      --accent-green: #10b981;
+      --accent-yellow: #f59e0b;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
     }
-    else if(userno>RandNo){
-        attemp=attemp+1;
-        alert("It Is Big Number Please Enter Small Number");
-    }else{
-        alert("You Are Win !!! Atemp "+attemp);
-        break
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+      -webkit-tap-highlight-color: transparent;
     }
+
+    body {
+      min-height: 100vh;
+      background: var(--bg-gradient);
+      color: var(--text-main);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 16px;
+      overflow-x: hidden;
     }
-}
-gamestart();
-</script>
+
+    /* Ambient background glow effects */
+    body::before, body::after {
+      content: '';
+      position: absolute;
+      width: 280px;
+      height: 280px;
+      border-radius: 50%;
+      filter: blur(90px);
+      z-index: -1;
+      opacity: 0.5;
+    }
+
+    body::before {
+      top: 10%;
+      left: 10%;
+      background: var(--accent-purple);
+    }
+
+    body::after {
+      bottom: 10%;
+      right: 10%;
+      background: var(--accent-blue);
+    }
+
+    .game-card {
+      width: 100%;
+      max-width: 440px;
+      background: var(--card-bg);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid var(--card-border);
+      border-radius: 28px;
+      padding: 28px 24px;
+      box-shadow: var(--card-shadow);
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      position: relative;
+      animation: fadeIn 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    /* Header */
+    .header {
+      text-align: center;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 6px 14px;
+      border-radius: 20px;
+      background: rgba(139, 92, 246, 0.2);
+      border: 1px solid rgba(139, 92, 246, 0.4);
+      color: #c084fc;
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .header h1 {
+      font-size: 1.9rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 6px;
+    }
+
+    .header p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    /* Stats Dashboard */
+    .stats-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .stat-box {
+      background: rgba(15, 23, 42, 0.5);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 18px;
+      padding: 12px 16px;
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+
+    .stat-label {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+
+    .stat-value {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--accent-blue);
+      margin-top: 2px;
+    }
+
+    .stat-value.best {
+      color: var(--accent-yellow);
+    }
+
+    /* Feedback Box */
+    .feedback-box {
+      background: rgba(15, 23, 42, 0.6);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 20px;
+      padding: 20px;
+      text-align: center;
+      min-height: 110px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .feedback-icon {
+      font-size: 2.2rem;
+      margin-bottom: 6px;
+      transition: transform 0.3s ease;
+    }
+
+    .feedback-text {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--text-main);
+    }
+
+    .range-indicator {
+      margin-top: 8px;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    /* Input & Control Form */
+    .input-form {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .input-group {
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+
+    .number-input {
+      width: 100%;
+      height: 60px;
+      background: rgba(15, 23, 42, 0.8);
+      border: 2px solid rgba(255, 255, 255, 0.15);
+      border-radius: 18px;
+      padding: 0 20px;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--text-main);
+      text-align: center;
+      outline: none;
+      transition: all 0.2s ease;
+      letter-spacing: 1px;
+    }
+
+    .number-input:focus {
+      border-color: var(--accent-purple);
+      box-shadow: 0 0 0 4px rgba(139, 92, 246, 0.25);
+      background: rgba(15, 23, 42, 0.95);
+    }
+
+    .number-input::placeholder {
+      color: rgba(148, 163, 184, 0.4);
+      font-weight: 400;
+      font-size: 1.1rem;
+    }
+
+    .btn-submit {
+      height: 56px;
+      border-radius: 18px;
+      border: none;
+      background: linear-gradient(135deg, var(--accent-blue) 0%, var(--accent-purple) 100%);
+      color: #ffffff;
+      font-size: 1.05rem;
+      font-weight: 700;
+      cursor: pointer;
+      box-shadow: 0 8px 20px rgba(59, 130, 246, 0.35);
+      transition: all 0.2s ease;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .btn-submit:active {
+      transform: scale(0.98);
+      box-shadow: 0 4px 12px rgba(59, 130, 246, 0.2);
+    }
+
+    .btn-restart {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      color: var(--text-muted);
+      height: 48px;
+      border-radius: 16px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .btn-restart:hover, .btn-restart:active {
+      background: rgba(255, 255, 255, 0.15);
+      color: var(--text-main);
+    }
+
+    /* History section */
+    .history-section {
+      margin-top: 4px;
+    }
+
+    .history-title {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      margin-bottom: 10px;
+    }
+
+    .history-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      max-height: 90px;
+      overflow-y: auto;
+      padding-right: 4px;
+    }
+
+    .history-chips::-webkit-scrollbar {
+      width: 4px;
+    }
+
+    .history-chips::-webkit-scrollbar-thumb {
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 4px;
+    }
+
+    .chip {
+      padding: 6px 12px;
+      border-radius: 12px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      animation: popIn 0.3s ease;
+    }
+
+    .chip.too-high {
+      background: rgba(236, 72, 153, 0.15);
+      border: 1px solid rgba(236, 72, 153, 0.3);
+      color: #f472b6;
+    }
+
+    .chip.too-low {
+      background: rgba(59, 130, 246, 0.15);
+      border: 1px solid rgba(59, 130, 246, 0.3);
+      color: #60a5fa;
+    }
+
+    .chip.win {
+      background: rgba(16, 185, 129, 0.2);
+      border: 1px solid rgba(16, 185, 129, 0.4);
+      color: #34d399;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes popIn {
+      0% { opacity: 0; transform: scale(0.7); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+
+    .shake {
+      animation: shakeAnim 0.4s ease-in-out;
+    }
+
+    @keyframes shakeAnim {
+      0%, 100% { transform: translateX(0); }
+      20%, 60% { transform: translateX(-8px); }
+      40%, 80% { transform: translateX(8px); }
+    }
+
+    /* Win overlay inside card */
+    .win-overlay {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      gap: 16px;
+      padding: 20px 0;
+      animation: popIn 0.4s ease;
+    }
+
+    .win-title {
+      font-size: 2.2rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, #34d399 0%, #60a5fa 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .win-stats {
+      font-size: 1.1rem;
+      color: var(--text-main);
+    }
+
+    /* Mobile media query overrides */
+    @media (max-width: 480px) {
+      .game-card {
+        padding: 22px 18px;
+        border-radius: 24px;
+      }
+      .header h1 {
+        font-size: 1.65rem;
+      }
+      .number-input {
+        height: 56px;
+        font-size: 1.35rem;
+      }
+      .btn-submit {
+        height: 52px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="game-card" id="gameCard">
+    <!-- Header -->
+    <div class="header">
+      <span class="badge">🎯 Number Challenge</span>
+      <h1>Guess The Number</h1>
+      <p>I'm thinking of a number between 1 and 100.</p>
+    </div>
+
+    <!-- Stats Dashboard -->
+    <div class="stats-container">
+      <div class="stat-box">
+        <div class="stat-label">Attempts</div>
+        <div class="stat-value" id="attemptsCount">0</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-label">Best Score</div>
+        <div class="stat-value best" id="bestScore">--</div>
+      </div>
+    </div>
+
+    <!-- Gameplay Area (Active Game) -->
+    <div id="activeGameArea" style="display: flex; flex-direction: column; gap: 16px;">
+      <!-- Feedback display -->
+      <div class="feedback-box" id="feedbackBox">
+        <div class="feedback-icon" id="feedbackIcon">🔮</div>
+        <div class="feedback-text" id="feedbackText">Take your first guess!</div>
+        <div class="range-indicator" id="rangeIndicator">Possible Range: 1 - 100</div>
+      </div>
+
+      <!-- Input Form -->
+      <form class="input-form" id="guessForm" onsubmit="handleGuess(event)">
+        <div class="input-group">
+          <input 
+            type="number" 
+            id="guessInput" 
+            class="number-input" 
+            placeholder="Enter 1 - 100" 
+            min="1" 
+            max="100" 
+            inputmode="numeric" 
+            autocomplete="off" 
+            required 
+          />
+        </div>
+        <button type="submit" class="btn-submit" id="submitBtn">
+          <span>Submit Guess</span> 🚀
+        </button>
+      </form>
+    </div>
+
+    <!-- Victory Overlay (Shown on Win) -->
+    <div class="win-overlay" id="winOverlay">
+      <div style="font-size: 4rem;">🏆</div>
+      <div class="win-title">YOU WON!</div>
+      <div class="win-stats" id="winMessage">You guessed the secret number in 5 attempts!</div>
+      <button type="button" class="btn-submit" onclick="resetGame()" style="width: 100%;">
+        Play Again 🔄
+      </button>
+    </div>
+
+    <!-- History Section -->
+    <div class="history-section">
+      <div class="history-title">Previous Guesses</div>
+      <div class="history-chips" id="historyChips">
+        <span style="color: var(--text-muted); font-size: 0.85rem; font-style: italic;">No guesses yet</span>
+      </div>
+    </div>
+
+    <!-- Reset Button -->
+    <button type="button" class="btn-restart" onclick="resetGame()" id="restartBtn">
+      Reset Game 🔄
+    </button>
+  </div>
+
+  <script>
+    // State variables
+    let secretNumber = 0;
+    let attempts = 0;
+    let minRange = 1;
+    let maxRange = 100;
+    let guessHistory = [];
+    let isGameOver = false;
+
+    // Elements
+    const attemptsCountEl = document.getElementById('attemptsCount');
+    const bestScoreEl = document.getElementById('bestScore');
+    const feedbackBox = document.getElementById('feedbackBox');
+    const feedbackIcon = document.getElementById('feedbackIcon');
+    const feedbackText = document.getElementById('feedbackText');
+    const rangeIndicator = document.getElementById('rangeIndicator');
+    const guessInput = document.getElementById('guessInput');
+    const historyChips = document.getElementById('historyChips');
+    const gameCard = document.getElementById('gameCard');
+    const activeGameArea = document.getElementById('activeGameArea');
+    const winOverlay = document.getElementById('winOverlay');
+    const winMessage = document.getElementById('winMessage');
+
+    // Initialize on load
+    window.addEventListener('DOMContentLoaded', () => {
+      loadBestScore();
+      initGame();
+    });
+
+    function initGame() {
+      secretNumber = Math.floor(Math.random() * 100) + 1;
+      attempts = 0;
+      minRange = 1;
+      maxRange = 100;
+      guessHistory = [];
+      isGameOver = false;
+
+      // Reset UI elements
+      attemptsCountEl.textContent = '0';
+      feedbackIcon.textContent = '🔮';
+      feedbackText.textContent = 'Take your first guess!';
+      rangeIndicator.textContent = `Possible Range: ${minRange} - ${maxRange}`;
+      guessInput.value = '';
+      guessInput.disabled = false;
+      historyChips.innerHTML = `<span style="color: var(--text-muted); font-size: 0.85rem; font-style: italic;">No guesses yet</span>`;
+      
+      activeGameArea.style.display = 'flex';
+      winOverlay.style.display = 'none';
+      
+      // Auto-focus input on non-touch desktop or when starting
+      if (window.innerWidth > 768) {
+        guessInput.focus();
+      }
+
+      console.log('Secret Number:', secretNumber); // Kept for debugging
+    }
+
+    function loadBestScore() {
+      const best = localStorage.getItem('guessthenumber_best');
+      if (best) {
+        bestScoreEl.textContent = best;
+      } else {
+        bestScoreEl.textContent = '--';
+      }
+    }
+
+    function saveBestScore(currentAttempts) {
+      const best = localStorage.getItem('guessthenumber_best');
+      if (!best || currentAttempts < parseInt(best)) {
+        localStorage.setItem('guessthenumber_best', currentAttempts);
+        bestScoreEl.textContent = currentAttempts;
+        return true; // New record!
+      }
+      return false;
+    }
+
+    function handleGuess(event) {
+      event.preventDefault();
+      if (isGameOver) return;
+
+      const userVal = parseInt(guessInput.value.trim());
+
+      // Validation
+      if (isNaN(userVal) || userVal < 1 || userVal > 100) {
+        triggerShake();
+        feedbackIcon.textContent = '⚠️';
+        feedbackText.textContent = 'Please enter a number between 1 & 100!';
+        return;
+      }
+
+      attempts++;
+      attemptsCountEl.textContent = attempts;
+      guessInput.value = '';
+
+      if (userVal < secretNumber) {
+        // Too Low
+        minRange = Math.max(minRange, userVal + 1);
+        feedbackIcon.textContent = '📈';
+        feedbackText.textContent = `${userVal} is Too Small! Go Higher!`;
+        addHistoryChip(userVal, 'too-low', '📈 Small');
+        triggerShake();
+      } else if (userVal > secretNumber) {
+        // Too High
+        maxRange = Math.min(maxRange, userVal - 1);
+        feedbackIcon.textContent = '📉';
+        feedbackText.textContent = `${userVal} is Too Big! Go Lower!`;
+        addHistoryChip(userVal, 'too-high', '📉 Big');
+        triggerShake();
+      } else {
+        // Correct Answer!
+        isGameOver = true;
+        addHistoryChip(userVal, 'win', '🎉 Correct');
+        handleWin();
+        return;
+      }
+
+      rangeIndicator.textContent = `Possible Range: ${minRange} - ${maxRange}`;
+      guessInput.focus();
+    }
+
+    function addHistoryChip(val, type, label) {
+      if (guessHistory.length === 0) {
+        historyChips.innerHTML = '';
+      }
+      guessHistory.push({ val, type });
+
+      const chip = document.createElement('span');
+      chip.className = `chip ${type}`;
+      chip.innerHTML = `${val} <small style="font-weight: normal; opacity: 0.8;">(${label})</small>`;
+      historyChips.prepend(chip);
+    }
+
+    function handleWin() {
+      const isNewRecord = saveBestScore(attempts);
+      
+      activeGameArea.style.display = 'none';
+      winOverlay.style.display = 'flex';
+      
+      if (isNewRecord) {
+        winMessage.innerHTML = `🎉 <b>NEW RECORD!</b> You solved it in only <b>${attempts}</b> attempt${attempts > 1 ? 's' : ''}!`;
+      } else {
+        winMessage.innerHTML = `You solved it in <b>${attempts}</b> attempt${attempts > 1 ? 's' : ''}!`;
+      }
+
+      // Fire victory confetti celebration
+      if (typeof confetti === 'function') {
+        confetti({
+          particleCount: 100,
+          spread: 70,
+          origin: { y: 0.6 }
+        });
+      }
+    }
+
+    function triggerShake() {
+      gameCard.classList.remove('shake');
+      void gameCard.offsetWidth; // Force reflow
+      gameCard.classList.add('shake');
+    }
+
+    function resetGame() {
+      initGame();
+    }
+  </script>
+</body>
+</html>

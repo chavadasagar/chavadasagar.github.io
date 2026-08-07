@@ -2,29 +2,61 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Array Repeated item</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Array Repeated Value Counter</title>
+    <meta name="description" content="Calculate frequency and repeated values in an array or string instantly." />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <div class="container">
-      <h1>Get Arraya Reapeted Value</h1>
-      <div class="elements">
-        <label for="">Enter Array :</label>
-        <textarea name="" id="UserString" cols="30" rows="10"></textarea>
-        <button type="btn" id="check">Check</button>
-        <a href="GetSeqWiseCountVal.html">get sequence wise count value</a>
-      </div>
-      <br />
-   
-      <div class="output">
-        
-      </div>     
-        
-      </table>
+    <div class="app-wrapper">
+      <header class="header">
+        <h1>Array Value Analyzer</h1>
+        <p>Analyze frequency & sequential occurrences of characters or array values</p>
+      </header>
+
+      <nav class="nav-tabs" aria-label="Mode Navigation">
+        <a href="index.html" class="nav-tab active">Frequency Count</a>
+        <a href="GetSeqWiseCountVal.html" class="nav-tab">Sequence-wise Count</a>
+      </nav>
+
+      <main class="card">
+        <div class="form-group">
+          <div class="form-label">
+            <label for="UserString">Enter String / Array Items</label>
+            <span>Type or paste below</span>
+          </div>
+          <textarea 
+            id="UserString" 
+            placeholder="e.g. aaabbcdddd or 1,2,2,3,3,3"
+            spellcheck="false"
+          ></textarea>
+
+          <div class="quick-samples">
+            <span class="sample-title">Try sample:</span>
+            <button class="chip" data-val="aabbbccdddd">aabbbccdddd</button>
+            <button class="chip" data-val="mississippi">mississippi</button>
+            <button class="chip" data-val="11223334444">11223334444</button>
+          </div>
+        </div>
+
+        <div class="action-row">
+          <button type="button" id="check" class="btn btn-primary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+            Count Repeated Values
+          </button>
+          <button type="button" id="clear_btn" class="btn btn-secondary">Clear</button>
+        </div>
+
+        <section class="output-section">
+          <div class="output">
+            <div class="empty-state">
+              Enter text above and press "Count Repeated Values" to view results.
+            </div>
+          </div>
+        </section>
+      </main>
     </div>
 
-    <script src="assets/js/script.js" type="module"></script>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>

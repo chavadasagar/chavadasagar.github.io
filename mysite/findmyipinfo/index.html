@@ -3,215 +3,857 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap Site</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
-        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
-        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
-        crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>IP Inspector | Find & Analyze Any IP Address</title>
+    <meta name="description" content="Instant IP address lookup tool providing detailed geolocation, network provider, timezone, and security insights.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            --bg-dark: #0b0f19;
+            --card-bg: rgba(22, 28, 45, 0.65);
+            --card-border: rgba(255, 255, 255, 0.08);
+            --card-hover-border: rgba(99, 102, 241, 0.4);
+            --accent-primary: #6366f1;
+            --accent-gradient: linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #ec4899 100%);
+            --accent-glow: rgba(99, 102, 241, 0.35);
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --success: #10b981;
+            --error: #ef4444;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1.5rem 1rem;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        /* Dynamic Background Blobs */
+        .bg-glow-1, .bg-glow-2 {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(120px);
+            z-index: -1;
+            opacity: 0.45;
+            pointer-events: none;
+        }
+
+        .bg-glow-1 {
+            width: 350px;
+            height: 350px;
+            background: #4f46e5;
+            top: -80px;
+            left: -80px;
+        }
+
+        .bg-glow-2 {
+            width: 380px;
+            height: 380px;
+            background: #d946ef;
+            bottom: -100px;
+            right: -80px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(99, 102, 241, 0.15);
+            border: 1px solid rgba(99, 102, 241, 0.3);
+            color: #818cf8;
+            padding: 0.4rem 1rem;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 0.85rem;
+            backdrop-filter: blur(8px);
+        }
+
+        .badge-dot {
+            width: 8px;
+            height: 8px;
+            background-color: var(--success);
+            border-radius: 50%;
+            box-shadow: 0 0 10px var(--success);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(0.95); opacity: 0.8; }
+            50% { transform: scale(1.2); opacity: 1; }
+            100% { transform: scale(0.95); opacity: 0.8; }
+        }
+
+        h1 {
+            font-size: clamp(1.8rem, 5vw, 2.75rem);
+            font-weight: 800;
+            letter-spacing: -0.025em;
+            background: var(--accent-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 0.5rem;
+            line-height: 1.2;
+        }
+
+        p.subtitle {
+            color: var(--text-muted);
+            font-size: clamp(0.95rem, 2.5vw, 1.1rem);
+            line-height: 1.5;
+        }
+
+        /* Search Section */
+        .search-box {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            backdrop-filter: blur(16px);
+            padding: 0.6rem;
+            border-radius: 18px;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+            margin-bottom: 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .search-box:focus-within {
+            border-color: var(--accent-primary);
+            box-shadow: 0 0 25px var(--accent-glow);
+        }
+
+        .search-icon {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            margin-left: 0.75rem;
+        }
+
+        .search-box input {
+            flex: 1;
+            background: transparent;
+            border: none;
+            outline: none;
+            color: var(--text-main);
+            font-size: 1rem; /* Prevents auto-zoom on Mobile Safari */
+            padding: 0.75rem 0.5rem;
+            width: 100%;
+        }
+
+        .search-box input::placeholder {
+            color: #64748b;
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .btn {
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 0.75rem 1.25rem;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            min-height: 44px; /* Touch target sizing */
+            transition: all 0.2s ease;
+            white-space: nowrap;
+        }
+
+        .btn-primary {
+            background: var(--accent-gradient);
+            color: #fff;
+            box-shadow: 0 4px 15px var(--accent-glow);
+        }
+
+        .btn-primary:active {
+            transform: scale(0.98);
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.05);
+            color: var(--text-muted);
+            border: 1px solid var(--card-border);
+        }
+
+        .btn-secondary:active {
+            background: rgba(255, 255, 255, 0.12);
+        }
+
+        /* Error Message */
+        .error-banner {
+            display: none;
+            background: rgba(239, 68, 68, 0.1);
+            border: 1px solid rgba(239, 68, 68, 0.3);
+            color: #fca5a5;
+            padding: 0.85rem 1rem;
+            border-radius: 14px;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            font-size: 0.9rem;
+            backdrop-filter: blur(10px);
+        }
+
+        /* IP Header Card */
+        .ip-overview {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            backdrop-filter: blur(16px);
+            border-radius: 20px;
+            padding: 1.5rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1.25rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+        }
+
+        .ip-info-meta h2 {
+            font-size: clamp(1.6rem, 4vw, 2.2rem);
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            word-break: break-all;
+        }
+
+        .ip-info-meta p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-top: 0.3rem;
+            word-break: break-word;
+        }
+
+        .action-btns {
+            display: flex;
+            gap: 0.6rem;
+            width: auto;
+        }
+
+        /* Grid Layout */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.25rem;
+            margin-bottom: 2rem;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            backdrop-filter: blur(16px);
+            border-radius: 20px;
+            padding: 1.25rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-header {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.75rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .card-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 12px;
+            background: rgba(99, 102, 241, 0.1);
+            color: #818cf8;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+            flex-shrink: 0;
+        }
+
+        .card-title {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: var(--text-main);
+        }
+
+        .info-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.85rem;
+        }
+
+        .info-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.9rem;
+            gap: 0.5rem;
+        }
+
+        .info-label {
+            color: var(--text-muted);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            white-space: nowrap;
+        }
+
+        .info-value {
+            font-weight: 600;
+            color: var(--text-main);
+            text-align: right;
+            max-width: 65%;
+            word-break: break-word;
+        }
+
+        .flag-icon {
+            width: 22px;
+            height: 15px;
+            border-radius: 2px;
+            object-fit: cover;
+            vertical-align: middle;
+            margin-right: 0.25rem;
+        }
+
+        /* Map Embed Container */
+        .map-card {
+            grid-column: 1 / -1;
+        }
+
+        .map-frame-container {
+            width: 100%;
+            height: 250px;
+            border-radius: 14px;
+            overflow: hidden;
+            border: 1px solid var(--card-border);
+            margin-top: 0.75rem;
+            position: relative;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        /* Toast Notification */
+        .toast {
+            position: fixed;
+            bottom: 1.5rem;
+            left: 50%;
+            transform: translateX(-50%) translateY(100px);
+            background: #1e293b;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            color: var(--text-main);
+            padding: 0.75rem 1.25rem;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            font-size: 0.9rem;
+            opacity: 0;
+            transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            z-index: 1000;
+            white-space: nowrap;
+        }
+
+        .toast.show {
+            transform: translateX(-50%) translateY(0);
+            opacity: 1;
+        }
+
+        .toast i {
+            color: var(--success);
+        }
+
+        /* Skeleton Loader */
+        .skeleton {
+            display: inline-block;
+            background: linear-gradient(90deg, rgba(255, 255, 255, 0.05) 25%, rgba(255, 255, 255, 0.15) 37%, rgba(255, 255, 255, 0.05) 63%);
+            background-size: 400% 100%;
+            animation: skeleton-loading 1.4s ease infinite;
+            border-radius: 6px;
+            color: transparent !important;
+            user-select: none;
+            min-width: 70px;
+        }
+
+        @keyframes skeleton-loading {
+            0% { background-position: 100% 50%; }
+            100% { background-position: 0 50%; }
+        }
+
+        footer {
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            margin-top: auto;
+            padding-top: 1.5rem;
+        }
+
+        /* Ultra Mobile Responsiveness */
+        @media (max-width: 600px) {
+            body { padding: 1rem 0.75rem; }
+            .search-box { flex-direction: column; padding: 0.6rem; }
+            .search-icon { display: none; }
+            .search-box input { text-align: center; padding: 0.6rem 0.25rem; }
+            .btn-group { width: 100%; }
+            .btn-group .btn { flex: 1; }
+            .ip-overview { flex-direction: column; align-items: stretch; text-align: center; padding: 1.25rem; }
+            .ip-info-meta h2 { justify-content: center; }
+            .action-btns { width: 100%; }
+            .action-btns .btn { flex: 1; }
+            .map-frame-container { height: 200px; }
+        }
+    </style>
 </head>
 
-<body class="bg-light">
+<body>
+    <div class="bg-glow-1"></div>
+    <div class="bg-glow-2"></div>
 
-    <div class="container mt-5">
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <div class="badge">
+                <span class="badge-dot"></span>
+                <span>Live IP Intelligence</span>
+            </div>
+            <h1>IP Info & Geolocation Inspector</h1>
+            <p class="subtitle">Discover complete network metadata, precise location, and timezone details instantly.</p>
+        </header>
 
-
-        <div class="card" style="width:30rem;">
-            <div class="card-body">
-                <h5 class="card-title">Find ip Detail</h5>
-                <div class="">
-                    <input type="text" name="ipadd" id="ipadd" onkeyup="check()" class="form-control mt-1"
-                        placeholder="Enter Your Ip Address"> <button class="btn btn-outline-primary mt-2 btn"
-                        id="check">Check</button>
-
-
-
-                    <table id="info" class="table mt-2 ml-5">
-                        <tbody>
-                            <tr>
-                                <th>Version :</th>
-                                <td id="version"></td>
-                            </tr>
-                            <tr>
-                                <th>city :</th>
-                                <td id="ct"></td>
-                            </tr>
-                            <tr>
-                                <th>region :</th>
-                                <td id="region"></td>
-                            </tr>
-                            <tr>
-                                <th>region_code :</th>
-                                <td id="region_code"></td>
-                            </tr>
-                            <tr>
-                                <th>country_name :</th>
-                                <td id="country_name"> </td>
-                            </tr>
-                            <tr>
-                                <th>postal :</th>
-                                <td id="postal"></td>
-                            </tr>
-                            <tr>
-                                <th>latitude :</th>
-                                <td id="latitude"></td>
-                            </tr>
-                            <tr>
-                                <th>longitude :</th>
-                                <td id="longitude"></td>
-                            </tr>
-                            <tr>
-                                <th>timezone :</th>
-                                <td id="timezone"></td>
-                            </tr>
-                            <tr>
-                                <th>country_calling_code :</th>
-                                <td id="country_calling_code"></td>
-                            </tr>
-                            <tr>
-                                <th>currency :</th>
-                                <td id="currency"></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
+        <!-- Search Bar -->
+        <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            <input type="text" id="ipInput" placeholder="Enter any IPv4 or IPv6 (e.g. 8.8.8.8)" autocomplete="off" spellcheck="false">
+            <div class="btn-group">
+                <button class="btn btn-secondary" id="myIpBtn" title="Detect My Current IP">
+                    <i class="fa-solid fa-crosshairs"></i> My IP
+                </button>
+                <button class="btn btn-primary" id="lookupBtn">
+                    <i class="fa-solid fa-arrow-right"></i> Inspect
+                </button>
             </div>
         </div>
 
+        <!-- Error Banner -->
+        <div class="error-banner" id="errorBanner">
+            <i class="fa-solid fa-triangle-exclamation"></i> <span id="errorMessage">Unable to fetch IP details. Please check your query or connection.</span>
+        </div>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
-        <script src="../jquery-3.6.0.min.js"></script>
+        <!-- IP Overview Box -->
+        <div class="ip-overview">
+            <div class="ip-info-meta">
+                <h2 id="displayIp"><span class="skeleton">192.168.1.1</span></h2>
+                <p id="displayOrg"><i class="fa-solid fa-server"></i> <span class="skeleton">Loading provider...</span></p>
+            </div>
+            <div class="action-btns">
+                <button class="btn btn-secondary" id="copyIpBtn">
+                    <i class="fa-regular fa-copy"></i> Copy IP
+                </button>
+                <button class="btn btn-secondary" id="shareBtn">
+                    <i class="fa-solid fa-share-nodes"></i> Share
+                </button>
+            </div>
+        </div>
 
+        <!-- Info Cards Grid -->
+        <div class="grid">
+            <!-- Location Details -->
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-icon"><i class="fa-solid fa-location-dot"></i></div>
+                    <div class="card-title">Location Info</div>
+                </div>
+                <div class="info-list">
+                    <div class="info-item">
+                        <span class="info-label"><i class="fa-solid fa-earth-americas"></i> Country</span>
+                        <span class="info-value" id="valCountry"><span class="skeleton">Loading...</span></span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label"><i class="fa-solid fa-city"></i> City</span>
+                        <span class="info-value" id="valCity"><span class="skeleton">Loading...</span></span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label"><i class="fa-solid fa-map-pin"></i> Region</span>
+                        <span class="info-value" id="valRegion"><span class="skeleton">Loading...</span></span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label"><i class="fa-solid fa-mail-bulk"></i> Postal Code</span>
+                        <span class="info-value" id="valPostal"><span class="skeleton">Loading...</span></span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label"><i class="fa-solid fa-compass"></i> Coordinates</span>
+                        <span class="info-value" id="valCoords"><span class="skeleton">Loading...</span></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Network & Connection Details -->
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-icon"><i class="fa-solid fa-network-wired"></i></div>
+                    <div class="card-title">Network & ISP</div>
+                </div>
+                <div class="info-list">
+                    <div class="info-item">
+                        <span class="info-label"><i class="fa-solid fa-layer-group"></i> IP Version</span>
+                        <span class="info-value" id="valVersion"><span class="skeleton">Loading...</span></span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label"><i class="fa-solid fa-building"></i> ISP / Org</span>
+                        <span class="info-value" id="valIsp"><span class="skeleton">Loading...</span></span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label"><i class="fa-solid fa-hashtag"></i> ASN</span>
+                        <span class="info-value" id="valAsn"><span class="skeleton">Loading...</span></span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label"><i class="fa-solid fa-phone"></i> Country Code</span>
+                        <span class="info-value" id="valCallingCode"><span class="skeleton">Loading...</span></span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label"><i class="fa-solid fa-coins"></i> Currency</span>
+                        <span class="info-value" id="valCurrency"><span class="skeleton">Loading...</span></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Timezone & System Details -->
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-icon"><i class="fa-solid fa-clock"></i></div>
+                    <div class="card-title">Timezone & Locale</div>
+                </div>
+                <div class="info-list">
+                    <div class="info-item">
+                        <span class="info-label"><i class="fa-solid fa-globe"></i> Time Zone</span>
+                        <span class="info-value" id="valTimezone"><span class="skeleton">Loading...</span></span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label"><i class="fa-solid fa-business-time"></i> UTC Offset</span>
+                        <span class="info-value" id="valUtcOffset"><span class="skeleton">Loading...</span></span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label"><i class="fa-solid fa-flag"></i> ISO Code</span>
+                        <span class="info-value" id="valIsoCode"><span class="skeleton">Loading...</span></span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label"><i class="fa-solid fa-money-bill-wave"></i> Currency Code</span>
+                        <span class="info-value" id="valCurrencyCode"><span class="skeleton">Loading...</span></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Map View Card -->
+            <div class="card map-card">
+                <div class="card-header">
+                    <div class="card-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+                    <div class="card-title">Map Geolocation</div>
+                </div>
+                <div class="map-frame-container">
+                    <iframe id="mapFrame" title="Location Map" src="about:blank"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; <span id="currentYear"></span> IP Inspector. Fully responsive & fast.</p>
+        </footer>
+    </div>
+
+    <!-- Toast Component -->
+    <div class="toast" id="toast">
+        <i class="fa-solid fa-circle-check"></i>
+        <span id="toastMsg">Copied to clipboard!</span>
+    </div>
+
+    <script>
+        // State Management
+        let currentIpData = null;
+
+        // Element Selectors
+        const ipInput = document.getElementById('ipInput');
+        const lookupBtn = document.getElementById('lookupBtn');
+        const myIpBtn = document.getElementById('myIpBtn');
+        const copyIpBtn = document.getElementById('copyIpBtn');
+        const shareBtn = document.getElementById('shareBtn');
+        const errorBanner = document.getElementById('errorBanner');
+        const errorMessage = document.getElementById('errorMessage');
+        const toast = document.getElementById('toast');
+        const toastMsg = document.getElementById('toastMsg');
+        const mapFrame = document.getElementById('mapFrame');
+
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Toast Helper
+        function showToast(message) {
+            toastMsg.textContent = message;
+            toast.classList.add('show');
+            setTimeout(() => {
+                toast.classList.remove('show');
+            }, 3000);
+        }
+
+        // Validate IP Input
+        function isValidIP(ip) {
+            if (!ip) return false;
+            const ipv4Pattern = /^(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/;
+            const ipv6Pattern = /^(?:[a-fA-F0-9]{1,4}:){7}[a-fA-F0-9]{1,4}$/;
+            return ipv4Pattern.test(ip.trim()) || ipv6Pattern.test(ip.trim());
+        }
+
+        // Show Skeleton State
+        function showSkeletons() {
+            document.getElementById('displayIp').innerHTML = `<span class="skeleton">Searching...</span>`;
+            document.getElementById('displayOrg').innerHTML = `<i class="fa-solid fa-server"></i> <span class="skeleton">Fetching ISP...</span>`;
+            
+            const ids = ['valCountry', 'valCity', 'valRegion', 'valPostal', 'valCoords', 'valVersion', 'valIsp', 'valAsn', 'valCallingCode', 'valCurrency', 'valTimezone', 'valUtcOffset', 'valIsoCode', 'valCurrencyCode'];
+            ids.forEach(id => {
+                const el = document.getElementById(id);
+                if (el) el.innerHTML = `<span class="skeleton">Loading...</span>`;
+            });
+        }
+
+        // Display Data in UI
+        function updateUI(data) {
+            currentIpData = data;
+
+            // Header Overview
+            document.getElementById('displayIp').textContent = data.ip || 'N/A';
+            document.getElementById('displayOrg').innerHTML = `<i class="fa-solid fa-server"></i> ${data.org || data.asn || 'Unknown Network Provider'}`;
+            ipInput.value = data.ip || '';
+
+            // Country & Flag
+            const countryName = data.country_name || 'N/A';
+            const countryCode = data.country_code ? data.country_code.toLowerCase() : '';
+            const flagUrl = countryCode ? `https://flagcdn.com/24x18/${countryCode}.png` : '';
+            
+            document.getElementById('valCountry').innerHTML = flagUrl 
+                ? `<img src="${flagUrl}" class="flag-icon" alt="${countryName}"> ${countryName}`
+                : countryName;
+
+            document.getElementById('valCity').textContent = data.city || 'N/A';
+            document.getElementById('valRegion').textContent = `${data.region || 'N/A'} ${data.region_code ? '(' + data.region_code + ')' : ''}`;
+            document.getElementById('valPostal').textContent = data.postal || 'N/A';
+            
+            const lat = data.latitude;
+            const lon = data.longitude;
+            document.getElementById('valCoords').textContent = (lat != null && lon != null) ? `${lat}, ${lon}` : 'N/A';
+
+            // Network
+            document.getElementById('valVersion').textContent = data.version || (data.ip && data.ip.includes(':') ? 'IPv6' : 'IPv4');
+            document.getElementById('valIsp').textContent = data.org || 'N/A';
+            document.getElementById('valAsn').textContent = data.asn || 'N/A';
+            document.getElementById('valCallingCode').textContent = data.country_calling_code || 'N/A';
+            document.getElementById('valCurrency').textContent = data.currency_name ? `${data.currency_name} (${data.currency || ''})` : (data.currency || 'N/A');
+
+            // Timezone
+            document.getElementById('valTimezone').textContent = data.timezone || 'N/A';
+            document.getElementById('valUtcOffset').textContent = data.utc_offset || 'N/A';
+            document.getElementById('valIsoCode').textContent = data.country_code || 'N/A';
+            document.getElementById('valCurrencyCode').textContent = data.currency || 'N/A';
+
+            // Map (OpenStreetMap iframe)
+            if (lat != null && lon != null && !isNaN(lat) && !isNaN(lon)) {
+                const bboxOffset = 0.05;
+                const bbox = `${lon - bboxOffset},${lat - bboxOffset},${lon + bboxOffset},${lat + bboxOffset}`;
+                mapFrame.src = `https://www.openstreetmap.org/export/embed.html?bbox=${bbox}&layer=mapnik&marker=${lat},${lon}`;
+            } else {
+                mapFrame.src = 'about:blank';
+            }
+        }
+
+        // Multi-Provider Async IP Fetcher
+        async function fetchIpDetails(queryIp = '') {
+            showSkeletons();
+            errorBanner.style.display = 'none';
+
+            let data = null;
+            const target = queryIp.trim();
+
+            // Provider 1: ipwho.is (Primary: HTTPS, free, CORS enabled)
+            try {
+                const url = target ? `https://ipwho.is/${encodeURIComponent(target)}` : 'https://ipwho.is/';
+                const res = await fetch(url);
+                if (res.ok) {
+                    const json = await res.json();
+                    if (json.success !== false) {
+                        data = {
+                            ip: json.ip,
+                            version: json.type || (json.ip && json.ip.includes(':') ? 'IPv6' : 'IPv4'),
+                            city: json.city || 'N/A',
+                            region: json.region || 'N/A',
+                            region_code: json.region_code || '',
+                            country_name: json.country || 'N/A',
+                            country_code: json.country_code || '',
+                            postal: json.postal || 'N/A',
+                            latitude: json.latitude,
+                            longitude: json.longitude,
+                            timezone: json.timezone ? json.timezone.id : 'N/A',
+                            utc_offset: json.timezone ? json.timezone.utc : 'N/A',
+                            org: json.connection ? (json.connection.org || json.connection.isp) : 'N/A',
+                            asn: json.connection && json.connection.asn ? `AS${json.connection.asn}` : 'N/A',
+                            country_calling_code: json.calling_code ? `+${json.calling_code}` : 'N/A',
+                            currency: json.currency ? json.currency.code : 'N/A',
+                            currency_name: json.currency ? json.currency.name : 'N/A'
+                        };
+                    }
+                }
+            } catch (err) {
+                console.warn('Provider 1 (ipwho.is) failed:', err);
+            }
+
+            // Provider 2: ipapi.co (Fallback)
+            if (!data) {
+                try {
+                    const url = target ? `https://ipapi.co/${encodeURIComponent(target)}/json/` : 'https://ipapi.co/json/';
+                    const res = await fetch(url);
+                    if (res.ok) {
+                        const json = await res.json();
+                        if (!json.error) {
+                            data = {
+                                ip: json.ip,
+                                version: json.version || (json.ip && json.ip.includes(':') ? 'IPv6' : 'IPv4'),
+                                city: json.city || 'N/A',
+                                region: json.region || 'N/A',
+                                region_code: json.region_code || '',
+                                country_name: json.country_name || 'N/A',
+                                country_code: json.country_code || '',
+                                postal: json.postal || 'N/A',
+                                latitude: json.latitude,
+                                longitude: json.longitude,
+                                timezone: json.timezone || 'N/A',
+                                utc_offset: json.utc_offset || 'N/A',
+                                org: json.org || json.asn || 'N/A',
+                                asn: json.asn || 'N/A',
+                                country_calling_code: json.country_calling_code || 'N/A',
+                                currency: json.currency || 'N/A',
+                                currency_name: json.currency_name || 'N/A'
+                            };
+                        }
+                    }
+                } catch (err) {
+                    console.warn('Provider 2 (ipapi.co) failed:', err);
+                }
+            }
+
+            // Provider 3: ipify + fallback
+            if (!data && !target) {
+                try {
+                    const res = await fetch('https://api.ipify.org?format=json');
+                    const json = await res.json();
+                    if (json.ip) {
+                        return fetchIpDetails(json.ip);
+                    }
+                } catch (err) {
+                    console.warn('Provider 3 (ipify) failed:', err);
+                }
+            }
+
+            if (data) {
+                updateUI(data);
+            } else {
+                errorMessage.textContent = 'Unable to fetch IP details. Please verify your internet connection or IP address.';
+                errorBanner.style.display = 'block';
+                document.getElementById('displayIp').textContent = target || 'Lookup Failed';
+                document.getElementById('displayOrg').textContent = 'Error loading details';
+            }
+        }
+
+        // Event Handlers
+        lookupBtn.addEventListener('click', () => {
+            const query = ipInput.value.trim();
+            if (query && !isValidIP(query)) {
+                errorMessage.textContent = 'Please enter a valid IPv4 or IPv6 address.';
+                errorBanner.style.display = 'block';
+                return;
+            }
+            fetchIpDetails(query);
+        });
+
+        ipInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                lookupBtn.click();
+            }
+        });
+
+        myIpBtn.addEventListener('click', () => {
+            ipInput.value = '';
+            fetchIpDetails('');
+        });
+
+        copyIpBtn.addEventListener('click', () => {
+            if (currentIpData && currentIpData.ip) {
+                navigator.clipboard.writeText(currentIpData.ip).then(() => {
+                    showToast('IP address copied to clipboard!');
+                }).catch(() => {
+                    showToast('Failed to copy IP address.');
+                });
+            }
+        });
+
+        shareBtn.addEventListener('click', () => {
+            if (navigator.share && currentIpData) {
+                navigator.share({
+                    title: `IP Information for ${currentIpData.ip}`,
+                    text: `IP ${currentIpData.ip} details: ${currentIpData.city}, ${currentIpData.country_name}`,
+                    url: window.location.href,
+                }).catch(() => {});
+            } else if (currentIpData) {
+                navigator.clipboard.writeText(window.location.href).then(() => {
+                    showToast('Page link copied to clipboard!');
+                });
+            }
+        });
+
+        // Auto-run on page load
+        window.addEventListener('DOMContentLoaded', () => {
+            fetchIpDetails();
+        });
+    </script>
 </body>
 
 </html>
-
-
-<script>
-
-    // get system ip
-    // http://checkip.dyndns.org/
-
-    console.log("sash");
-    // get info mation about ip address
-    // https://ipapi.co/171.50.244.98/json/
-
-
-
-
-    var ip = document.getElementById("ipadd");
-
-
-    function setdata() {
-        // https://api.ipify.org/?format=json
-
-        fetch("https://api.ipify.org/?format=json")
-            .then((res) => res.json())
-            .then((data) => {
-
-                document.getElementById("ipadd").value = data.ip;
-
-            });
-
-    }
-
-    setdata();
-
-    function check() {
-        if (ip.value != "") {
-
-            document.getElementById("info").style.display = "none";
-            fetch(`https://ipapi.co/${ip.value}/json/`)
-                .then((res) => res.json())
-                .then((data) => {
-
-
-
-                    document.getElementById("info").style.display = "block";
-
-
-                    document.getElementById("info").style.transition = "1s";
-
-                    document.getElementById("version").innerHTML = data.version;
-                    document.getElementById("ct").innerHTML = data.city;
-                    document.getElementById("region").innerHTML = data.region;
-                    document.getElementById("region_code").innerHTML = data.region_code;
-                    document.getElementById("country_name").innerHTML = data.country_name;
-                    document.getElementById("postal").innerHTML = data.postal;
-                    document.getElementById("longitude").innerHTML = data.longitude;
-                    document.getElementById("latitude").innerHTML = data.latitude;
-                    document.getElementById("timezone").innerHTML = data.timezone;
-                    document.getElementById("country_calling_code").innerHTML = data.country_calling_code;
-                    document.getElementById("currency").innerHTML = data.currency;
-
-                });
-        }
-        else {
-            document.getElementById("info").style.display = "block";
-        }
-    }
-
-    check();
-    function getandsetdata() {
-
-        // set user ip address
-
-        fetch("https://api.ipify.org/?format=json")
-            .then((res) => res.json())
-            .then((data) => {
-
-                document.getElementById("ipadd").value = data.ip;
-
-            });
-
-        // set ip data inside table
-
-        fetch(`https://ipapi.co/${ip.value}/json/`)
-            .then((res) => res.json())
-            .then((data) => {
-
-
-
-                document.getElementById("info").style.display = "block";
-
-
-                document.getElementById("info").style.transition = "1s";
-
-                document.getElementById("version").innerHTML = data.version;
-                document.getElementById("ct").innerHTML = data.city;
-                document.getElementById("region").innerHTML = data.region;
-                document.getElementById("region_code").innerHTML = data.region_code;
-                document.getElementById("country_name").innerHTML = data.country_name;
-                document.getElementById("postal").innerHTML = data.postal;
-                document.getElementById("longitude").innerHTML = data.longitude;
-                document.getElementById("latitude").innerHTML = data.latitude;
-                document.getElementById("timezone").innerHTML = data.timezone;
-                document.getElementById("country_calling_code").innerHTML = data.country_calling_code;
-                document.getElementById("currency").innerHTML = data.currency;
-
-            });
-
-
-
-    }
-    document.getElementById("check").onclick = function () {
-
-
-        
-
-        getandsetdata();
-
-    }
-
-    getandsetdata();
-
-
-
-
-
-</script>

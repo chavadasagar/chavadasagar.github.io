@@ -1,58 +1,203 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Genrate Strong Password</title>
+    
+    <!-- Primary Meta Tags -->
+    <title>Strong Password Generator | Secure & Responsive Password Tool</title>
+    <meta name="title" content="Strong Password Generator | Secure & Responsive Password Tool">
+    <meta name="description" content="Generate cryptographically secure strong passwords and passphrases instantly. Mobile and PC friendly with real-time strength indicators.">
+    <meta name="keywords" content="password generator, strong password, random password, secure password, responsive tool, javascript password generator">
+    <meta name="author" content="Chavada Sagar">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Strong Password Generator | Secure & Responsive Password Tool">
+    <meta property="og:description" content="Generate cryptographically secure strong passwords and passphrases instantly with real-time strength indicators.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+    <!-- Ambient Background Glow Effect -->
+    <div class="ambient-glow" aria-hidden="true"></div>
 
-    <form action="" name="myform">
-        <input type="text" pattern="[0-9]" min="2" max="4" placeholder="Enter Password Length" name="len">
-        <input type="button" onclick="check()" value="getPassword">
-        <h1 id="result"></h1>
-    </form>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="app-header">
+            <button id="themeToggleBtn" class="theme-toggle-btn" aria-label="Toggle Light/Dark Theme" title="Toggle Theme">
+                <svg viewBox="0 0 24 24"><path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-.46-.04-.92-.1-1.36-.98 1.37-2.58 2.26-4.4 2.26-2.98 0-5.4-2.42-5.4-5.4 0-1.81.89-3.42 2.26-4.4C12.92 3.04 12.46 3 12 3z"/></svg>
+            </button>
+
+            <div class="brand-badge">
+                <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8s0 .01 0 .01z"/></svg>
+                Cryptographically Secure & Mobile Ready
+            </div>
+            <h1>Strong Password Generator</h1>
+            <p>Generate bulletproof passwords with Web Crypto API — Works on Mobile & PC</p>
+        </header>
+
+        <!-- Main Card Interface -->
+        <main class="generator-card">
+            <!-- Mode Switcher Tabs (Full Width) -->
+            <div class="mode-tabs" role="tablist" aria-label="Generator Modes">
+                <button id="tabPassword" class="tab-btn active" role="tab" aria-selected="true">
+                    ⚡ Random Password
+                </button>
+                <button id="tabPassphrase" class="tab-btn" role="tab" aria-selected="false">
+                    🔑 Passphrase
+                </button>
+            </div>
+
+            <!-- Left Column (Desktop) / Main Column (Mobile) -->
+            <div class="main-col-left">
+                <!-- Password Display & Copy Box -->
+                <div class="output-box">
+                    <div id="passwordDisplay" class="password-display placeholder" aria-live="polite">Click Generate</div>
+                    <div class="output-actions">
+                        <button id="refreshBtn" class="icon-btn" title="Generate New Password" aria-label="Generate New Password">
+                            <svg viewBox="0 0 24 24"><path d="M17.65 6.35C16.2 4.9 14.21 4 12 4c-4.42 0-7.99 3.58-7.99 8s3.57 8 7.99 8c3.73 0 6.84-2.55 7.73-6h-2.08c-.82 2.33-3.04 4-5.65 4-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z"/></svg>
+                        </button>
+                        <button id="copyBtn" class="icon-btn" title="Copy to Clipboard" aria-label="Copy to Clipboard">
+                            <svg viewBox="0 0 24 24"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Password Strength Bar & Stats -->
+                <div class="strength-section">
+                    <div class="strength-header">
+                        <span class="strength-title">Security Strength:</span>
+                        <span id="strengthStatus" class="strength-status">Very Strong</span>
+                    </div>
+                    <div class="strength-meter-bar">
+                        <div id="strengthFill" class="strength-fill"></div>
+                    </div>
+                    <div class="crack-time-info">
+                        <span>Estimated Crack Time: <strong id="crackTimeValue">Centuries</strong></span>
+                        <span>Entropy: <strong id="entropyValue">128 bits</strong></span>
+                    </div>
+                </div>
+
+                <!-- Primary Generate Button -->
+                <button id="generateBtn" class="generate-btn">
+                    <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                    Generate Password
+                </button>
+            </div>
+
+            <!-- Right Column (Desktop) / Secondary Column (Mobile) -->
+            <div class="main-col-right">
+                <!-- Password Customization Controls -->
+                <div id="passwordControls" class="control-group">
+                    <!-- Length Slider -->
+                    <div class="control-label">
+                        <span>Password Length</span>
+                        <span id="lengthValue" class="length-badge">16</span>
+                    </div>
+                    <input type="range" id="lengthInput" min="6" max="64" value="16" aria-label="Password Length Slider">
+
+                    <!-- Quick Presets -->
+                    <div class="preset-chips">
+                        <button type="button" class="chip" data-length="8">8 chars</button>
+                        <button type="button" class="chip" data-length="12">12 chars</button>
+                        <button type="button" class="chip active" data-length="16">16 chars</button>
+                        <button type="button" class="chip" data-length="24">24 chars</button>
+                        <button type="button" class="chip" data-length="32">32 chars</button>
+                    </div>
+                </div>
+
+                <!-- Character Options Grid -->
+                <div class="options-grid">
+                    <label class="toggle-option">
+                        <div class="toggle-info">
+                            <span class="toggle-title">Uppercase</span>
+                            <span class="toggle-desc">A-Z</span>
+                        </div>
+                        <span class="switch">
+                            <input type="checkbox" id="optUppercase" checked>
+                            <span class="slider"></span>
+                        </span>
+                    </label>
+
+                    <label class="toggle-option">
+                        <div class="toggle-info">
+                            <span class="toggle-title">Lowercase</span>
+                            <span class="toggle-desc">a-z</span>
+                        </div>
+                        <span class="switch">
+                            <input type="checkbox" id="optLowercase" checked>
+                            <span class="slider"></span>
+                        </span>
+                    </label>
+
+                    <label class="toggle-option">
+                        <div class="toggle-info">
+                            <span class="toggle-title">Numbers</span>
+                            <span class="toggle-desc">0-9</span>
+                        </div>
+                        <span class="switch">
+                            <input type="checkbox" id="optNumbers" checked>
+                            <span class="slider"></span>
+                        </span>
+                    </label>
+
+                    <label class="toggle-option">
+                        <div class="toggle-info">
+                            <span class="toggle-title">Symbols</span>
+                            <span class="toggle-desc">!@#$%^&*</span>
+                        </div>
+                        <span class="switch">
+                            <input type="checkbox" id="optSymbols" checked>
+                            <span class="slider"></span>
+                        </span>
+                    </label>
+
+                    <label class="toggle-option full-width">
+                        <div class="toggle-info">
+                            <span class="toggle-title">Avoid Ambiguous Characters</span>
+                            <span class="toggle-desc">Exclude easily confused chars (0, O, 1, l, I)</span>
+                        </div>
+                        <span class="switch">
+                            <input type="checkbox" id="optAmbiguous">
+                            <span class="slider"></span>
+                        </span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- History Section (Full Width Bottom) -->
+            <section class="history-section">
+                <div class="history-header">
+                    <span class="history-title">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M13 3c-4.97 0-9 4.03-9 9H1l3.89 3.89.07.14L9 12H6c0-3.87 3.13-7 7-7s7 3.13 7 7-3.13 7-7 7c-1.93 0-3.68-.79-4.94-2.06l-1.42 1.42C8.27 19.99 10.51 21 13 21c4.97 0 9-4.03 9-9s-4.03-9-9-9zm-1 5v5l4.28 2.54.72-1.21-3.5-2.08V8H12z"/></svg>
+                        Recent Session History
+                    </span>
+                    <button id="clearHistoryBtn" class="clear-btn">Clear History</button>
+                </div>
+                <div id="historyList" class="history-list"></div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="app-footer">
+            <p>100% Secure & Client-Side. No data ever leaves your device.</p>
+        </footer>
+    </div>
+
+    <!-- Toast Notification Container -->
+    <div id="toastContainer" class="toast-container" aria-live="polite"></div>
+
+    <!-- Script -->
+    <script src="script.js"></script>
 </body>
 
 </html>
-<script>
-    function check() {
-        var len = myform.len.value;
-        var all = [];
-
-        for (x = 0; x < 10; x++) {
-            all.push(x);
-        }
-
-        // capital
-        for (x = 65; x < 91; x++) {
-            all.push(String.fromCharCode(x));
-        }
-
-        // small
-        for (x = 97; x < 123; x++) {
-            all.push(String.fromCharCode(x))
-        }
-
-        var result_arr = [];
-
-        for(x=0;x<all.length;x++)
-        {
-            result_arr.push(all[parseInt(Math.random()*all.length-1)]);
-        }   
-
-        // document.write(result_arr.join(""));
-
-        var pas = [];
-
-        for(x=0;x<Number(len);x++)
-        {
-            pas.push(result_arr[x]);
-        }
-
-        document.getElementById("result").innerHTML = "Password :"+pas.join("");
-    }
-</script>

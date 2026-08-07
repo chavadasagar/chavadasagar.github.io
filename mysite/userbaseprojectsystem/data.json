@@ -1,42 +1,174 @@
-[
-	{
-		"name": "Project X",
-		"description": "A project aimed at improving customer experience on the company's website.",
-		"sprints": [
-			{
-				"name": "Sprint 1",
-				"start_date": "2024-03-01",
-				"end_date": "2024-03-15",
-				"tasks": [
-					{
-						"name": "Design landing page",
-						"description": "Create a visually appealing landing page with clear call-to-action buttons.",
-						"assigned_user": "John Doe",
-						"status": "completed",
-						"subtasks": [
-							{
-								"name": "Sketch initial layout",
-								"description": "Draft the initial layout for the landing page.",
-								"status": "completed",
-								"assigned_user": "Jane Smith"
-							},
-							{
-								"name": "Finalize graphics",
-								"description": "Select and finalize graphics to be used on the landing page.",
-								"status": "completed",
-								"assigned_user": "John Doe"
-							}
-						]
-					},
-					{
-						"name": "Implement backend functionality",
-						"description": "Develop backend functionality to handle user registrations and logins.",
-						"assigned_user": "Emily Johnson",
-						"status": "pending",
-						"subtasks": []
-					}
-				]
-			}
-		]
-	}
-]
+{
+  "tenants": [
+    {
+      "id": "tenant-001",
+      "name": "Acme Corp",
+      "slug": "acme",
+      "email": "admin@acme.com",
+      "password": "password123",
+      "createdAt": "2026-03-01T08:00:00.000Z"
+    },
+    {
+      "id": "tenant-002",
+      "name": "TechStart Labs",
+      "slug": "techstart",
+      "email": "contact@techstart.io",
+      "password": "password123",
+      "createdAt": "2026-03-10T12:00:00.000Z"
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj-101",
+      "tenantId": "tenant-001",
+      "name": "Project X Portal",
+      "description": "A next-gen customer experience portal with real-time analytics and user management.",
+      "category": "Web Application",
+      "color": "#6366f1",
+      "createdAt": "2026-03-01T10:00:00.000Z"
+    },
+    {
+      "id": "proj-102",
+      "tenantId": "tenant-001",
+      "name": "Mobile Companion App",
+      "description": "Cross-platform mobile application for field services and instant notifications.",
+      "category": "Mobile App",
+      "color": "#ec4899",
+      "createdAt": "2026-03-10T14:30:00.000Z"
+    },
+    {
+      "id": "proj-103",
+      "tenantId": "tenant-002",
+      "name": "DevOps Infrastructure",
+      "description": "Migration of microservices to Kubernetes cluster with automated CI/CD pipelines.",
+      "category": "Infrastructure",
+      "color": "#10b981",
+      "createdAt": "2026-03-15T09:15:00.000Z"
+    }
+  ],
+  "sprints": [
+    {
+      "id": "sprint-201",
+      "tenantId": "tenant-001",
+      "projectId": "proj-101",
+      "name": "Sprint 1 - Foundation & Design",
+      "startDate": "2026-03-01",
+      "endDate": "2026-03-15",
+      "status": "completed"
+    },
+    {
+      "id": "sprint-202",
+      "tenantId": "tenant-001",
+      "projectId": "proj-101",
+      "name": "Sprint 2 - Core UI & Auth Integration",
+      "startDate": "2026-03-16",
+      "endDate": "2026-03-30",
+      "status": "active"
+    },
+    {
+      "id": "sprint-203",
+      "tenantId": "tenant-001",
+      "projectId": "proj-102",
+      "name": "Sprint 1 - iOS & Android MVP",
+      "startDate": "2026-03-10",
+      "endDate": "2026-03-24",
+      "status": "active"
+    },
+    {
+      "id": "sprint-204",
+      "tenantId": "tenant-002",
+      "projectId": "proj-103",
+      "name": "Sprint 1 - K8s Setup & Helm Charts",
+      "startDate": "2026-03-15",
+      "endDate": "2026-03-29",
+      "status": "active"
+    }
+  ],
+  "statuses": [
+    { "id": "status-backlog", "name": "Backlog", "color": "#64748b", "order": 1 },
+    { "id": "status-todo", "name": "To Do", "color": "#3b82f6", "order": 2 },
+    { "id": "status-in-progress", "name": "In Progress", "color": "#f59e0b", "order": 3 },
+    { "id": "status-in-review", "name": "In Review", "color": "#8b5cf6", "order": 4 },
+    { "id": "status-done", "name": "Done", "color": "#10b981", "order": 5 }
+  ],
+  "users": [
+    {
+      "id": "usr-1",
+      "tenantId": "tenant-001",
+      "fullname": "Alex Morgan",
+      "role": "Product Manager",
+      "email": "alex.morgan@acme.com",
+      "avatarBg": "#6366f1"
+    },
+    {
+      "id": "usr-2",
+      "tenantId": "tenant-001",
+      "fullname": "Sarah Jenkins",
+      "role": "Lead UI/UX Designer",
+      "email": "sarah.j@acme.com",
+      "avatarBg": "#ec4899"
+    },
+    {
+      "id": "usr-3",
+      "tenantId": "tenant-001",
+      "fullname": "David Chen",
+      "role": "Senior Full-Stack Engineer",
+      "email": "david.c@acme.com",
+      "avatarBg": "#10b981"
+    },
+    {
+      "id": "usr-4",
+      "tenantId": "tenant-002",
+      "fullname": "Emily Watson",
+      "role": "DevOps Specialist",
+      "email": "emily.w@techstart.io",
+      "avatarBg": "#f59e0b"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "task-301",
+      "tenantId": "tenant-001",
+      "projectId": "proj-101",
+      "sprintId": "sprint-202",
+      "name": "Design Landing Page & Dashboard Mockups",
+      "description": "Create high-fidelity responsive wireframes and interactive prototypes in Figma.",
+      "statusId": "status-done",
+      "assignedUserId": "usr-2",
+      "priority": "high",
+      "dueDate": "2026-03-20",
+      "subtasks": [
+        { "id": "sub-1", "name": "Draft hero section layout", "completed": true },
+        { "id": "sub-2", "name": "Finalize typography & color tokens", "completed": true }
+      ]
+    },
+    {
+      "id": "task-302",
+      "tenantId": "tenant-001",
+      "projectId": "proj-101",
+      "sprintId": "sprint-202",
+      "name": "Implement JWT Auth & Role Access Control",
+      "description": "Secure API endpoints with JWT tokens, refresh tokens, and granular permission checking.",
+      "statusId": "status-in-progress",
+      "assignedUserId": "usr-3",
+      "priority": "urgent",
+      "dueDate": "2026-03-25",
+      "subtasks": [
+        { "id": "sub-4", "name": "Set up OAuth2 provider integration", "completed": true }
+      ]
+    },
+    {
+      "id": "task-306",
+      "tenantId": "tenant-002",
+      "projectId": "proj-103",
+      "sprintId": "sprint-204",
+      "name": "Configure Terraform Scripts for AWS EKS",
+      "description": "Automate infrastructure provisioning with terraform modules for VPC, EKS, and IAM roles.",
+      "statusId": "status-in-review",
+      "assignedUserId": "usr-4",
+      "priority": "urgent",
+      "dueDate": "2026-03-24",
+      "subtasks": []
+    }
+  ]
+}

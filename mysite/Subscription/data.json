@@ -1,70 +1,126 @@
 {
-    "plans": [
-        {
-            "id": 1,
-            "name": "Basic Plan",
-            "price": 9.99,
-            "duration": "Monthly"
-        },
-        {
-            "id": 2,
-            "name": "Standard Plan",
-            "price": 19.99,
-            "duration": "Monthly"
-        },
-        {
-            "id": 3,
-            "name": "Premium Plan",
-            "price": 29.99,
-            "duration": "Monthly"
-        }
-    ],
-    "features": [
-        {
-            "id": 1,
-            "name": "Access to Basic Features"
-        },
-        {
-            "id": 2,
-            "name": "Priority Support"
-        },
-        {
-            "id": 3,
-            "name": "Unlimited Data Usage"
-        },
-        {
-            "id": 4,
-            "name": "Custom Reporting"
-        }
-    ],
-    "planFeatures": [
-        {
-            "planId": 1,
-            "featureId": 1
-        },
-        {
-            "planId": 2,
-            "featureId": 1
-        },
-        {
-            "planId": 2,
-            "featureId": 2
-        },
-        {
-            "planId": 3,
-            "featureId": 1
-        },
-        {
-            "planId": 3,
-            "featureId": 2
-        },
-        {
-            "planId": 3,
-            "featureId": 3
-        },
-        {
-            "planId": 3,
-            "featureId": 4
-        }
-    ]
+  "plans": [
+    {
+      "id": "plan-1",
+      "name": "Starter",
+      "tagline": "Perfect for individuals and small side projects",
+      "priceMonthly": 9.99,
+      "priceYearly": 99.00,
+      "badge": "Free Trial",
+      "isPopular": false,
+      "subscribersCount": 142
+    },
+    {
+      "id": "plan-2",
+      "name": "Professional",
+      "tagline": "Best for growing teams and scaling businesses",
+      "priceMonthly": 29.99,
+      "priceYearly": 299.00,
+      "badge": "Most Popular",
+      "isPopular": true,
+      "subscribersCount": 488
+    },
+    {
+      "id": "plan-3",
+      "name": "Business Pro",
+      "tagline": "Advanced features, custom tools, and security",
+      "priceMonthly": 79.99,
+      "priceYearly": 799.00,
+      "badge": "Best Value",
+      "isPopular": false,
+      "subscribersCount": 195
+    },
+    {
+      "id": "plan-4",
+      "name": "Enterprise",
+      "tagline": "Dedicated infrastructure and premium white-glove support",
+      "priceMonthly": 199.99,
+      "priceYearly": 1999.00,
+      "badge": "Enterprise",
+      "isPopular": false,
+      "subscribersCount": 63
+    }
+  ],
+  "features": [
+    {
+      "id": "feat-1",
+      "name": "Core Platform Access",
+      "category": "General",
+      "description": "Full access to dashboard and main productivity features"
+    },
+    {
+      "id": "feat-2",
+      "name": "Standard Community Support",
+      "category": "Support",
+      "description": "Help center docs and community forum access"
+    },
+    {
+      "id": "feat-3",
+      "name": "24/7 Priority Support",
+      "category": "Support",
+      "description": "Direct chat and email support with sub-1 hour response time"
+    },
+    {
+      "id": "feat-4",
+      "name": "Unlimited Cloud Storage",
+      "category": "Storage",
+      "description": "Store unlimited files, assets, and project backups"
+    },
+    {
+      "id": "feat-5",
+      "name": "Custom Branding & Domain",
+      "category": "Customization",
+      "description": "Remove default logo and connect your custom domain"
+    },
+    {
+      "id": "feat-6",
+      "name": "Advanced Analytics Dashboard",
+      "category": "Analytics",
+      "description": "Real-time metrics, custom reports, and export options"
+    },
+    {
+      "id": "feat-7",
+      "name": "API & Webhook Integrations",
+      "category": "Developer",
+      "description": "Full REST API access with custom webhooks and key controls"
+    },
+    {
+      "id": "feat-8",
+      "name": "Multi-user Team Roles & RBAC",
+      "category": "Management",
+      "description": "Granular permissions, team management, and audit logs"
+    },
+    {
+      "id": "feat-9",
+      "name": "Dedicated Success Manager",
+      "category": "Support",
+      "description": "Personal account manager for onboarding and custom SLA"
+    }
+  ],
+  "planFeatures": [
+    { "planId": "plan-1", "featureId": "feat-1" },
+    { "planId": "plan-1", "featureId": "feat-2" },
+    { "planId": "plan-2", "featureId": "feat-1" },
+    { "planId": "plan-2", "featureId": "feat-2" },
+    { "planId": "plan-2", "featureId": "feat-3" },
+    { "planId": "plan-2", "featureId": "feat-4" },
+    { "planId": "plan-2", "featureId": "feat-5" },
+    { "planId": "plan-3", "featureId": "feat-1" },
+    { "planId": "plan-3", "featureId": "feat-2" },
+    { "planId": "plan-3", "featureId": "feat-3" },
+    { "planId": "plan-3", "featureId": "feat-4" },
+    { "planId": "plan-3", "featureId": "feat-5" },
+    { "planId": "plan-3", "featureId": "feat-6" },
+    { "planId": "plan-3", "featureId": "feat-7" },
+    { "planId": "plan-3", "featureId": "feat-8" },
+    { "planId": "plan-4", "featureId": "feat-1" },
+    { "planId": "plan-4", "featureId": "feat-2" },
+    { "planId": "plan-4", "featureId": "feat-3" },
+    { "planId": "plan-4", "featureId": "feat-4" },
+    { "planId": "plan-4", "featureId": "feat-5" },
+    { "planId": "plan-4", "featureId": "feat-6" },
+    { "planId": "plan-4", "featureId": "feat-7" },
+    { "planId": "plan-4", "featureId": "feat-8" },
+    { "planId": "plan-4", "featureId": "feat-9" }
+  ]
 }

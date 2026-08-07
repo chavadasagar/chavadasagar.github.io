@@ -1,70 +1,1104 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <title>Your Coords</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeoPulse — Find Your Exact Coordinates & Location</title>
+    
+    <!-- Meta tags for SEO & UX -->
+    <meta name="description" content="Find your exact GPS coordinates, latitude, longitude, altitude, accuracy, reverse geocoded address, and view your location on an interactive live map.">
+    <meta name="theme-color" content="#0f172a">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Fonts: Inter & JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Leaflet CSS for Map -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
+
+    <style>
+        :root {
+            --bg-main: #090d16;
+            --bg-card: rgba(18, 24, 38, 0.75);
+            --bg-card-hover: rgba(26, 35, 54, 0.85);
+            --border-color: rgba(255, 255, 255, 0.08);
+            --border-glow: rgba(56, 189, 248, 0.3);
+            
+            --primary: #38bdf8;
+            --primary-glow: rgba(56, 189, 248, 0.25);
+            --accent: #818cf8;
+            --emerald: #34d399;
+            --rose: #fb7185;
+            --amber: #fbbf24;
+
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --text-dim: #64748b;
+
+            --radius-lg: 18px;
+            --radius-md: 12px;
+            --radius-sm: 8px;
+            
+            --shadow-glow: 0 0 30px rgba(56, 189, 248, 0.15);
+            --font-main: 'Inter', system-ui, -apple-system, sans-serif;
+            --font-mono: 'JetBrains Mono', monospace;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-main);
+            background-image: 
+                radial-gradient(circle at 15% 15%, rgba(56, 189, 248, 0.08) 0%, transparent 40%),
+                radial-gradient(circle at 85% 85%, rgba(129, 140, 248, 0.08) 0%, transparent 40%);
+            color: var(--text-main);
+            font-family: var(--font-main);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            line-height: 1.5;
+            overflow-x: hidden;
+        }
+
+        /* Header Navigation */
+        .header {
+            background: rgba(9, 13, 22, 0.8);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding: 1rem 1.5rem;
+        }
+
+        .header-container {
+            max-width: 1280px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            text-decoration: none;
+            color: var(--text-main);
+        }
+
+        .brand-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #000;
+            font-size: 1.25rem;
+            box-shadow: 0 0 15px var(--primary-glow);
+        }
+
+        .brand-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            background: linear-gradient(135deg, #fff 30%, var(--primary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .status-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.4rem 0.9rem;
+            border-radius: 9999px;
+            font-size: 0.825rem;
+            font-weight: 500;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--border-color);
+        }
+
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--amber);
+            box-shadow: 0 0 8px var(--amber);
+        }
+
+        .status-dot.active {
+            background: var(--emerald);
+            box-shadow: 0 0 10px var(--emerald);
+            animation: pulse-dot 2s infinite;
+        }
+
+        .status-dot.error {
+            background: var(--rose);
+            box-shadow: 0 0 10px var(--rose);
+        }
+
+        @keyframes pulse-dot {
+            0% { transform: scale(0.95); opacity: 0.8; }
+            50% { transform: scale(1.2); opacity: 1; }
+            100% { transform: scale(0.95); opacity: 0.8; }
+        }
+
+        /* Main Layout */
+        .main-container {
+            max-width: 1280px;
+            width: 100%;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.75rem;
+            flex: 1;
+        }
+
+        @media (min-width: 1024px) {
+            .main-container {
+                grid-template-columns: 460px 1fr;
+            }
+        }
+
+        /* Mobile Optimization */
+        @media (max-width: 640px) {
+            .main-container {
+                padding: 0 0.85rem;
+                margin: 1rem auto;
+                gap: 1.25rem;
+            }
+            .glass-card {
+                padding: 1.15rem;
+            }
+            .data-grid {
+                grid-template-columns: 1fr;
+            }
+            .data-box.full-width {
+                grid-column: span 1;
+            }
+            .btn-group {
+                grid-template-columns: 1fr;
+            }
+            .map-wrapper, #map {
+                min-height: 340px;
+                height: 340px;
+            }
+            .brand-title {
+                font-size: 1.1rem;
+            }
+            .toast-container {
+                bottom: 1rem;
+                left: 1rem;
+                right: 1rem;
+            }
+            .toast {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+
+        /* Glass Cards */
+        .glass-card {
+            background: var(--bg-card);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            padding: 1.5rem;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            transition: border-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .glass-card:hover {
+            border-color: rgba(255, 255, 255, 0.15);
+        }
+
+        .card-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 1.25rem;
+            padding-bottom: 0.75rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .card-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            color: var(--text-main);
+        }
+
+        .card-title i {
+            color: var(--primary);
+        }
+
+        /* Controls / Buttons */
+        .btn-group {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+            gap: 0.75rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1rem;
+            border-radius: var(--radius-md);
+            font-size: 0.875rem;
+            font-weight: 600;
+            cursor: pointer;
+            border: 1px solid transparent;
+            transition: all 0.2s ease;
+            text-decoration: none;
+            font-family: inherit;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary), #0284c7);
+            color: #041329;
+            box-shadow: 0 4px 14px rgba(56, 189, 248, 0.3);
+        }
+
+        .btn-primary:hover {
+            filter: brightness(1.1);
+            transform: translateY(-1px);
+            box-shadow: 0 6px 20px rgba(56, 189, 248, 0.4);
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.05);
+            color: var(--text-main);
+            border-color: var(--border-color);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.2);
+            transform: translateY(-1px);
+        }
+
+        .btn-accent {
+            background: rgba(129, 140, 248, 0.15);
+            color: var(--accent);
+            border-color: rgba(129, 140, 248, 0.3);
+        }
+
+        .btn-accent:hover {
+            background: rgba(129, 140, 248, 0.25);
+        }
+
+        .btn-active {
+            background: var(--emerald) !important;
+            color: #022c22 !important;
+            box-shadow: 0 0 15px rgba(52, 211, 153, 0.4) !important;
+        }
+
+        .btn i.spin {
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Coords Display Data Grid */
+        .data-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .data-box {
+            background: rgba(10, 15, 26, 0.6);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            padding: 1rem;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.2s ease;
+        }
+
+        .data-box.full-width {
+            grid-column: span 2;
+        }
+
+        .data-box:hover {
+            border-color: var(--border-glow);
+            background: rgba(15, 23, 42, 0.8);
+        }
+
+        .data-label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-muted);
+            margin-bottom: 0.35rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .data-value {
+            font-family: var(--font-mono);
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: var(--text-main);
+            word-break: break-all;
+        }
+
+        .data-value.primary-highlight {
+            color: var(--primary);
+            font-size: 1.35rem;
+        }
+
+        .copy-btn {
+            background: transparent;
+            border: none;
+            color: var(--text-dim);
+            cursor: pointer;
+            font-size: 0.85rem;
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            transition: color 0.2s, background 0.2s;
+        }
+
+        .copy-btn:hover {
+            color: var(--primary);
+            background: rgba(56, 189, 248, 0.1);
+        }
+
+        /* Address Box */
+        .address-box {
+            background: rgba(129, 140, 248, 0.05);
+            border: 1px solid rgba(129, 140, 248, 0.2);
+            border-radius: var(--radius-md);
+            padding: 1rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .address-text {
+            font-size: 0.925rem;
+            color: var(--text-main);
+            line-height: 1.4;
+        }
+
+        /* Map Container */
+        .map-wrapper {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            min-height: 420px;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+        }
+
+        #map {
+            width: 100%;
+            height: 100%;
+            min-height: 420px;
+            background: #0f172a;
+            z-index: 1;
+        }
+
+        .map-overlay-controls {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            z-index: 500;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .map-btn {
+            width: 38px;
+            height: 38px;
+            background: rgba(15, 23, 42, 0.85);
+            backdrop-filter: blur(8px);
+            border: 1px solid var(--border-color);
+            color: var(--text-main);
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            transition: all 0.2s ease;
+        }
+
+        .map-btn:hover {
+            background: var(--primary);
+            color: #041329;
+        }
+
+        /* History Section */
+        .history-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.6rem;
+            max-height: 220px;
+            overflow-y: auto;
+            padding-right: 0.25rem;
+        }
+
+        .history-list::-webkit-scrollbar {
+            width: 5px;
+        }
+        .history-list::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 4px;
+        }
+
+        .history-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0.75rem;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-sm);
+            font-size: 0.85rem;
+            transition: background 0.2s ease;
+        }
+
+        .history-item:hover {
+            background: rgba(255, 255, 255, 0.06);
+        }
+
+        .history-info {
+            display: flex;
+            flex-direction: column;
+            gap: 0.2rem;
+        }
+
+        .history-coords {
+            font-family: var(--font-mono);
+            color: var(--primary);
+            font-weight: 500;
+        }
+
+        .history-time {
+            font-size: 0.75rem;
+            color: var(--text-dim);
+        }
+
+        .history-actions {
+            display: flex;
+            gap: 0.3rem;
+        }
+
+        /* Toast Notifications */
+        .toast-container {
+            position: fixed;
+            bottom: 1.5rem;
+            right: 1.5rem;
+            z-index: 9999;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .toast {
+            background: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(12px);
+            border: 1px solid var(--primary);
+            color: var(--text-main);
+            padding: 0.8rem 1.25rem;
+            border-radius: var(--radius-md);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-size: 0.875rem;
+            animation: slideIn 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(100%) scale(0.9); opacity: 0; }
+            to { transform: translateY(0) scale(1); opacity: 1; }
+        }
+
+        .empty-history {
+            text-align: center;
+            color: var(--text-dim);
+            font-size: 0.85rem;
+            padding: 1rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            color: var(--text-dim);
+            font-size: 0.8rem;
+            border-top: 1px solid var(--border-color);
+            margin-top: 2rem;
+        }
+    </style>
 </head>
-
 <body>
 
-    <div class="container mt-4">
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="header-container">
+            <a href="#" class="brand">
+                <div class="brand-icon">
+                    <i class="fa-solid fa-location-crosshairs"></i>
+                </div>
+                <span class="brand-title">GeoPulse Coords</span>
+            </a>
+            
+            <div class="status-badge" id="statusBadge">
+                <span class="status-dot" id="statusDot"></span>
+                <span id="statusText">Initializing...</span>
+            </div>
+        </div>
+    </header>
 
-        <div class="row">
-            <div class="col">
-                <div class="card">
-                    <div class="card-header">
-                        <h3>Your Coords</h3>
+    <!-- Main Content Area -->
+    <main class="main-container">
+        
+        <!-- Left Column: Controls & Data Cards -->
+        <div class="left-panel" style="display: flex; flex-direction: column; gap: 1.5rem;">
+            
+            <!-- Coordinates Card -->
+            <div class="glass-card">
+                <div class="card-header">
+                    <h2 class="card-title">
+                        <i class="fa-solid fa-compass"></i> Current Location
+                    </h2>
+                    <span style="font-size: 0.75rem; color: var(--text-dim);" id="timestamp">--:--:--</span>
+                </div>
+
+                <!-- Action Bar -->
+                <div class="btn-group">
+                    <button class="btn btn-primary" id="refreshBtn" onclick="getLocation()">
+                        <i class="fa-solid fa-rotate-right" id="refreshIcon"></i> Locate Me
+                    </button>
+                    <button class="btn btn-secondary" id="trackBtn" onclick="toggleLiveTracking()">
+                        <i class="fa-solid fa-satellite"></i> Live Track
+                    </button>
+                    <button class="btn btn-secondary" onclick="copyAllDetails()">
+                        <i class="fa-regular fa-copy"></i> Copy All
+                    </button>
+                </div>
+
+                <!-- Coordinates Data Grid -->
+                <div class="data-grid">
+                    <div class="data-box">
+                        <div class="data-label">
+                            <span>Latitude</span>
+                            <button class="copy-btn" onclick="copyText(document.getElementById('latValue').innerText, 'Latitude')" title="Copy Latitude">
+                                <i class="fa-regular fa-copy"></i>
+                            </button>
+                        </div>
+                        <div class="data-value primary-highlight" id="latValue">--</div>
                     </div>
-                    <div class="card-body">
-                        <p class="lead">Latitude: <span id="Latitude"></span> </p>
-                        <p class="lead">Longitude: <span id="Longitude"></span> </p>
+
+                    <div class="data-box">
+                        <div class="data-label">
+                            <span>Longitude</span>
+                            <button class="copy-btn" onclick="copyText(document.getElementById('lngValue').innerText, 'Longitude')" title="Copy Longitude">
+                                <i class="fa-regular fa-copy"></i>
+                            </button>
+                        </div>
+                        <div class="data-value primary-highlight" id="lngValue">--</div>
                     </div>
-                    <div class="card-footer">
-                        <button class="btn btn-outline-primary" onclick="call()">Refresh</button>
+
+                    <div class="data-box full-width">
+                        <div class="data-label">
+                            <span>DMS Notation (Deg, Min, Sec)</span>
+                            <button class="copy-btn" onclick="copyText(document.getElementById('dmsValue').innerText, 'DMS Coords')" title="Copy DMS">
+                                <i class="fa-regular fa-copy"></i>
+                            </button>
+                        </div>
+                        <div class="data-value" id="dmsValue" style="font-size: 0.95rem; color: var(--accent);">--</div>
                     </div>
+
+                    <div class="data-box">
+                        <div class="data-label">Accuracy</div>
+                        <div class="data-value" id="accValue">--</div>
+                    </div>
+
+                    <div class="data-box">
+                        <div class="data-label">Altitude</div>
+                        <div class="data-value" id="altValue">--</div>
+                    </div>
+                </div>
+
+                <!-- Address Box -->
+                <div class="address-box">
+                    <div class="data-label" style="margin-bottom: 0.4rem;">
+                        <span><i class="fa-solid fa-map-pin" style="color: var(--rose);"></i> Approximate Address</span>
+                    </div>
+                    <div class="address-text" id="addressValue">
+                        Click <strong>Locate Me</strong> to fetch reverse geocoded address.
+                    </div>
+                </div>
+
+                <!-- External Links Group -->
+                <div class="btn-group" style="margin-bottom: 0;">
+                    <a class="btn btn-accent" id="gmapsLink" target="_blank" href="https://maps.google.com">
+                        <i class="fa-brands fa-google"></i> Google Maps
+                    </a>
+                    <button class="btn btn-secondary" onclick="saveToHistory()">
+                        <i class="fa-regular fa-bookmark"></i> Save Point
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- Saved History Card -->
+            <div class="glass-card">
+                <div class="card-header">
+                    <h3 class="card-title">
+                        <i class="fa-solid fa-clock-rotate-left"></i> Location History
+                    </h3>
+                    <button class="copy-btn" onclick="clearHistory()" title="Clear History" style="color: var(--rose);">
+                        <i class="fa-solid fa-trash-can"></i>
+                    </button>
+                </div>
+                
+                <div class="history-list" id="historyList">
+                    <div class="empty-history">No saved coordinates yet.</div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Right Column: Interactive Map -->
+        <div class="right-panel">
+            <div class="map-wrapper">
+                <div id="map"></div>
+                <div class="map-overlay-controls">
+                    <button class="map-btn" onclick="recenterMap()" title="Center on My Location">
+                        <i class="fa-solid fa-crosshairs"></i>
+                    </button>
+                    <button class="map-btn" onclick="toggleMapStyle()" title="Toggle Map View">
+                        <i class="fa-solid fa-layer-group"></i>
+                    </button>
                 </div>
             </div>
         </div>
 
-    </div>
+    </main>
 
+    <!-- Footer -->
+    <footer>
+        GeoPulse GPS & Coords Locator &bull; Browser Geolocation API & OpenStreetMap
+    </footer>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- Toast Notifications Container -->
+    <div class="toast-container" id="toastContainer"></div>
 
-</body>
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 
-</html>
+    <script>
+        // Application State
+        let currentPos = null;
+        let watchId = null;
+        let map = null;
+        let marker = null;
+        let accuracyCircle = null;
+        let isDarkModeTile = true;
+        let locationHistory = JSON.parse(localStorage.getItem('geo_history') || '[]');
 
-<script>
+        // Tile Layers
+        const darkTileUrl = 'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png';
+        const lightTileUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+        let currentTileLayer = null;
 
-
-
-    function call() {
-        navigator.geolocation.getCurrentPosition(function (position) {
-
-            document.getElementById("Latitude").innerHTML = position.coords.latitude;
-            document.getElementById("Longitude").innerHTML = position.coords.longitude;
+        // Initialize App on DOM Load
+        document.addEventListener('DOMContentLoaded', () => {
+            initMap();
+            renderHistory();
+            getLocation(); // Trigger initial location fetch
         });
-    }
-    call();
 
+        // Initialize Leaflet Map
+        function initMap() {
+            // Default view set to world or center
+            map = L.map('map', {
+                zoomControl: false
+            }).setView([20.5937, 78.9629], 4);
 
-</script>
+            currentTileLayer = L.tileLayer(darkTileUrl, {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/">CARTO</a>',
+                subdomains: 'abcd',
+                maxZoom: 19
+            }).addTo(map);
+
+            L.control.zoom({ position: 'bottomright' }).addTo(map);
+        }
+
+        // Get Location via Geolocation API
+        function getLocation() {
+            const statusDot = document.getElementById('statusDot');
+            const statusText = document.getElementById('statusText');
+            const refreshIcon = document.getElementById('refreshIcon');
+
+            statusDot.className = 'status-dot';
+            statusText.innerText = 'Locating...';
+            refreshIcon.classList.add('spin');
+
+            if (!navigator.geolocation) {
+                showStatus('error', 'Geolocation not supported by browser');
+                showToast('Geolocation is not supported by your browser', 'error');
+                refreshIcon.classList.remove('spin');
+                return;
+            }
+
+            const options = {
+                enableHighAccuracy: true,
+                timeout: 15000,
+                maximumAge: 0
+            };
+
+            navigator.geolocation.getCurrentPosition(
+                handlePositionSuccess,
+                handlePositionError,
+                options
+            );
+        }
+
+        // Handle Successful Position Retrieval
+        function handlePositionSuccess(position) {
+            currentPos = position;
+            const coords = position.coords;
+            const lat = coords.latitude;
+            const lng = coords.longitude;
+            const accuracy = coords.accuracy;
+            const altitude = coords.altitude;
+
+            // Stop refresh spinner
+            document.getElementById('refreshIcon').classList.remove('spin');
+
+            // Update UI fields
+            document.getElementById('latValue').innerText = lat.toFixed(6);
+            document.getElementById('lngValue').innerText = lng.toFixed(6);
+            document.getElementById('dmsValue').innerText = convertToDMS(lat, lng);
+            document.getElementById('accValue').innerText = `±${Math.round(accuracy)} m`;
+            document.getElementById('altValue').innerText = altitude !== null ? `${Math.round(altitude)} m` : 'N/A';
+            
+            const now = new Date();
+            document.getElementById('timestamp').innerText = now.toLocaleTimeString();
+
+            // Update Status Badge
+            showStatus('active', `High Accuracy (${Math.round(accuracy)}m)`);
+
+            // Update Google Maps Link
+            document.getElementById('gmapsLink').href = `https://www.google.com/maps?q=${lat},${lng}`;
+
+            // Update Map View
+            updateMapPosition(lat, lng, accuracy);
+
+            // Fetch Reverse Geocode (Address)
+            fetchAddress(lat, lng);
+        }
+
+        // Handle Geolocation Errors
+        function handlePositionError(error) {
+            document.getElementById('refreshIcon').classList.remove('spin');
+            let msg = 'Failed to get location';
+            
+            switch (error.code) {
+                case error.PERMISSION_DENIED:
+                    msg = 'Location permission denied by user';
+                    break;
+                case error.POSITION_UNAVAILABLE:
+                    msg = 'Location information unavailable';
+                    break;
+                case error.TIMEOUT:
+                    msg = 'Location request timed out';
+                    break;
+            }
+
+            showStatus('error', msg);
+            showToast(msg, 'error');
+        }
+
+        // Update Map Marker and Accuracy Circle
+        function updateMapPosition(lat, lng, accuracy) {
+            const latLng = [lat, lng];
+
+            if (!marker) {
+                // Custom glowing icon
+                const pulseIcon = L.divIcon({
+                    className: 'custom-map-pin',
+                    html: `<div style="
+                        width: 18px; 
+                        height: 18px; 
+                        background: #38bdf8; 
+                        border: 3px solid #ffffff; 
+                        border-radius: 50%; 
+                        box-shadow: 0 0 15px #38bdf8;
+                    "></div>`,
+                    iconSize: [18, 18],
+                    iconAnchor: [9, 9]
+                });
+
+                marker = L.marker(latLng, { icon: pulseIcon }).addTo(map);
+            } else {
+                marker.setLatLng(latLng);
+            }
+
+            if (!accuracyCircle) {
+                accuracyCircle = L.circle(latLng, {
+                    radius: accuracy,
+                    color: '#38bdf8',
+                    fillColor: '#38bdf8',
+                    fillOpacity: 0.15,
+                    weight: 1.5
+                }).addTo(map);
+            } else {
+                accuracyCircle.setLatLng(latLng);
+                accuracyCircle.setRadius(accuracy);
+            }
+
+            map.flyTo(latLng, 16, { animate: true, duration: 1.5 });
+        }
+
+        // Recenter Map on Current Location
+        function recenterMap() {
+            if (currentPos) {
+                const lat = currentPos.coords.latitude;
+                const lng = currentPos.coords.longitude;
+                map.flyTo([lat, lng], 16, { animate: true });
+                showToast('Centered on location');
+            } else {
+                getLocation();
+            }
+        }
+
+        // Toggle Map View Style (Dark vs Light Tile)
+        function toggleMapStyle() {
+            map.removeLayer(currentTileLayer);
+            isDarkModeTile = !isDarkModeTile;
+
+            const newTileUrl = isDarkModeTile ? darkTileUrl : lightTileUrl;
+            currentTileLayer = L.tileLayer(newTileUrl, {
+                attribution: '&copy; OpenStreetMap contributors',
+                maxZoom: 19
+            }).addTo(map);
+
+            showToast(isDarkModeTile ? 'Switched to Dark Canvas map' : 'Switched to Street map');
+        }
+
+        // Toggle Continuous Geolocation Tracking
+        function toggleLiveTracking() {
+            const trackBtn = document.getElementById('trackBtn');
+
+            if (watchId !== null) {
+                // Stop tracking
+                navigator.geolocation.clearWatch(watchId);
+                watchId = null;
+                trackBtn.classList.remove('btn-active');
+                trackBtn.innerHTML = `<i class="fa-solid fa-satellite"></i> Live Track`;
+                showToast('Live tracking paused');
+            } else {
+                // Start tracking
+                if (!navigator.geolocation) return;
+
+                trackBtn.classList.add('btn-active');
+                trackBtn.innerHTML = `<i class="fa-solid fa-spinner spin"></i> Tracking...`;
+
+                watchId = navigator.geolocation.watchPosition(
+                    (pos) => {
+                        handlePositionSuccess(pos);
+                    },
+                    (err) => {
+                        handlePositionError(err);
+                        toggleLiveTracking();
+                    },
+                    { enableHighAccuracy: true, timeout: 10000, maximumAge: 2000 }
+                );
+
+                showToast('Live tracking active — updating in real-time');
+            }
+        }
+
+        // Reverse Geocoding with Nominatim OSM API
+        async function fetchAddress(lat, lng) {
+            const addressEl = document.getElementById('addressValue');
+            addressEl.innerHTML = `<i class="fa-solid fa-spinner spin" style="color: var(--primary);"></i> Fetching address...`;
+
+            try {
+                const res = await fetch(`https://nominatim.openstreetmap.org/reverse?format=jsonv2&lat=${lat}&lon=${lng}`);
+                if (!res.ok) throw new Error('Geocoding service unavailable');
+
+                const data = await res.json();
+                if (data && data.display_name) {
+                    addressEl.innerText = data.display_name;
+                } else {
+                    addressEl.innerText = 'Address details not found.';
+                }
+            } catch (err) {
+                addressEl.innerText = 'Unable to resolve address (Network issue or rate limit).';
+            }
+        }
+
+        // Decimal Degrees to DMS Conversion
+        function convertToDMS(lat, lng) {
+            function toDMS(deg, isLat) {
+                const absolute = Math.abs(deg);
+                const degrees = Math.floor(absolute);
+                const minutesNotTruncated = (absolute - degrees) * 60;
+                const minutes = Math.floor(minutesNotTruncated);
+                const seconds = ((minutesNotTruncated - minutes) * 60).toFixed(1);
+
+                let direction = '';
+                if (isLat) {
+                    direction = deg >= 0 ? 'N' : 'S';
+                } else {
+                    direction = deg >= 0 ? 'E' : 'W';
+                }
+
+                return `${degrees}° ${minutes}' ${seconds}" ${direction}`;
+            }
+
+            return `${toDMS(lat, true)}, ${toDMS(lng, false)}`;
+        }
+
+        // Helper: Update Status Badge
+        function showStatus(type, text) {
+            const statusDot = document.getElementById('statusDot');
+            const statusText = document.getElementById('statusText');
+
+            statusDot.className = `status-dot ${type}`;
+            statusText.innerText = text;
+        }
+
+        // Copy Text & Toast Feedback
+        function copyText(text, label) {
+            if (!text || text === '--') return;
+
+            navigator.clipboard.writeText(text).then(() => {
+                showToast(`Copied ${label} to clipboard!`);
+            }).catch(() => {
+                showToast('Failed to copy', 'error');
+            });
+        }
+
+        // Copy All Location Details
+        function copyAllDetails() {
+            if (!currentPos) {
+                showToast('No location acquired yet', 'error');
+                return;
+            }
+
+            const lat = currentPos.coords.latitude.toFixed(6);
+            const lng = currentPos.coords.longitude.toFixed(6);
+            const dms = document.getElementById('dmsValue').innerText;
+            const address = document.getElementById('addressValue').innerText;
+
+            const textToCopy = `Location Coordinates:\nLatitude: ${lat}\nLongitude: ${lng}\nDMS: ${dms}\nAddress: ${address}\nGoogle Maps: https://www.google.com/maps?q=${lat},${lng}`;
+
+            copyText(textToCopy, 'Complete Location Details');
+        }
+
+        // History Management
+        function saveToHistory() {
+            if (!currentPos) {
+                showToast('No active position to save', 'error');
+                return;
+            }
+
+            const lat = currentPos.coords.latitude.toFixed(6);
+            const lng = currentPos.coords.longitude.toFixed(6);
+            const time = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+            const address = document.getElementById('addressValue').innerText.split(',')[0] || 'Saved Pin';
+
+            const newEntry = { lat, lng, time, address, id: Date.now() };
+
+            // Avoid duplicate contiguous saves
+            if (locationHistory.length > 0 && locationHistory[0].lat === lat && locationHistory[0].lng === lng) {
+                showToast('This point is already saved', 'error');
+                return;
+            }
+
+            locationHistory.unshift(newEntry);
+            if (locationHistory.length > 20) locationHistory.pop(); // Keep last 20
+
+            localStorage.setItem('geo_history', JSON.stringify(locationHistory));
+            renderHistory();
+            showToast('Saved point to history!');
+        }
+
+        function renderHistory() {
+            const listEl = document.getElementById('historyList');
+            if (locationHistory.length === 0) {
+                listEl.innerHTML = `<div class="empty-history">No saved coordinates yet.</div>`;
+                return;
+            }
+
+            listEl.innerHTML = locationHistory.map(item => `
+                <div class="history-item">
+                    <div class="history-info">
+                        <span class="history-coords">${item.lat}, ${item.lng}</span>
+                        <span class="history-time"><i class="fa-solid fa-location-dot" style="color: var(--primary);"></i> ${item.address} &bull; ${item.time}</span>
+                    </div>
+                    <div class="history-actions">
+                        <button class="copy-btn" onclick="copyText('${item.lat}, ${item.lng}', 'Coordinates')" title="Copy">
+                            <i class="fa-regular fa-copy"></i>
+                        </button>
+                        <button class="copy-btn" onclick="map.flyTo([${item.lat}, ${item.lng}], 16)" title="Show on Map">
+                            <i class="fa-solid fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function clearHistory() {
+            if (locationHistory.length === 0) return;
+            locationHistory = [];
+            localStorage.removeItem('geo_history');
+            renderHistory();
+            showToast('History cleared');
+        }
+
+        // Toast Notification System
+        function showToast(message, type = 'success') {
+            const container = document.getElementById('toastContainer');
+            const toast = document.createElement('div');
+            toast.className = 'toast';
+            
+            const icon = type === 'success' 
+                ? '<i class="fa-solid fa-circle-check" style="color: var(--emerald);"></i>' 
+                : '<i class="fa-solid fa-triangle-exclamation" style="color: var(--rose);"></i>';
+
+            toast.innerHTML = `${icon} <span>${message}</span>`;
+            container.appendChild(toast);
+
+            setTimeout(() => {
+                toast.style.opacity = '0';
+                toast.style.transform = 'translateY(100%)';
+                toast.style.transition = 'all 0.3s ease';
+                setTimeout(() => toast.remove(), 300);
+            }, 3000);
+        }
+    </script>
+</body>
+</html>

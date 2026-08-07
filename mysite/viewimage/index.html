@@ -1,47 +1,300 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ViewImage Pro - Next-Gen Image Viewer & Inspector</title>
+  <meta name="description" content="ViewImage Pro is an advanced web-based image viewer with pan & zoom, image editing filters, color picker, EXIF metadata viewer, and format converter." />
+  
+  <!-- Google Fonts & Font Awesome Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
+  <!-- App Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
 
-    <title>Hello, world!</title>
-  </head>
-  <body>
-    <nav class="navbar navbar-dark bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"> View Image </a>
+  <!-- Header -->
+  <header class="app-header">
+    <div class="brand">
+      <div class="brand-icon">
+        <i class="fa-solid fa-eye"></i>
       </div>
-    </nav>
-
-    <div class="container mt-5">
-        <input type="file" name="" onchange="showimg(event)" id="file">
-        <img src="" alt="" id="image" class="mt-3 w-100">
+      <h1 class="brand-title">ViewImage <span style="font-size: 0.75rem; color: var(--accent-cyan); font-weight:600; vertical-align: super;">PRO</span></h1>
     </div>
 
+    <div class="header-actions">
+      <input type="file" id="fileInput" multiple accept="image/*" style="display: none;" />
+      <button class="btn btn-secondary" id="btnOpen">
+        <i class="fa-solid fa-folder-open"></i> Open Images
+      </button>
+      <button class="btn btn-primary" id="btnExport" disabled>
+        <i class="fa-solid fa-download"></i> Save / Export
+      </button>
+    </div>
+  </header>
 
-    <!-- Optional JavaScript; choose one of the two! -->
+  <!-- Main Layout -->
+  <div class="app-layout">
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-    <script src="script.js"></script>
+    <!-- Left Gallery Sidebar -->
+    <aside class="gallery-sidebar" id="gallerySidebar">
+      <div class="sidebar-header">
+        <span class="sidebar-title"><i class="fa-solid fa-images"></i> Workspace (<span id="imgCount">0</span>)</span>
+        <button class="btn btn-secondary btn-icon-only" id="btnClearAll" title="Clear Workspace">
+          <i class="fa-solid fa-trash-can"></i>
+        </button>
+      </div>
+      <div class="gallery-list" id="galleryList">
+        <!-- Thumbnail items injected dynamically -->
+      </div>
+    </aside>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    -->
-  </body>
+    <!-- Center Interactive Viewport -->
+    <main class="main-viewport transparent-grid" id="viewport">
+      
+      <!-- Empty Dropzone State -->
+      <div class="dropzone" id="dropzone">
+        <div class="dropzone-icon">
+          <i class="fa-solid fa-cloud-arrow-up"></i>
+        </div>
+        <div class="dropzone-title">Drag & Drop Images Here</div>
+        <div class="dropzone-desc">Supports PNG, JPG, WEBP, SVG, GIF, & BMP.<br>Pan, zoom, inspect colors, and apply filters instantly.</div>
+        <button class="btn btn-primary" id="btnDropzoneBrowse">Browse Files</button>
+        <div class="sample-pills">
+          <span class="sample-pill" id="btnSample1"><i class="fa-solid fa-wand-magic-sparkles"></i> Try Sample Image</span>
+        </div>
+      </div>
+
+      <!-- Canvas Wrapper for Panning and Zooming -->
+      <div class="image-canvas-wrapper" id="canvasWrapper" style="display: none;">
+        <img id="activeImage" src="" alt="Active View" />
+      </div>
+
+      <!-- Magnifier Loupe element for Eyedropper Tool -->
+      <canvas id="loupeCanvas" width="120" height="120"></canvas>
+
+      <!-- Floating Canvas Toolbar -->
+      <div class="floating-toolbar" id="floatingToolbar" style="display: none;">
+        <button class="tool-btn" id="btnZoomOut" title="Zoom Out (Ctrl -)"><i class="fa-solid fa-minus"></i></button>
+        <span class="zoom-indicator" id="zoomVal">100%</span>
+        <button class="tool-btn" id="btnZoomIn" title="Zoom In (Ctrl +)"><i class="fa-solid fa-plus"></i></button>
+        <button class="tool-btn" id="btnFit" title="Fit Screen"><i class="fa-solid fa-expand"></i></button>
+        <button class="tool-btn" id="btnActual" title="100% Scale"><i class="fa-solid fa-1"></i></button>
+
+        <div class="toolbar-divider"></div>
+
+        <button class="tool-btn" id="btnRotateLeft" title="Rotate Left 90°"><i class="fa-solid fa-rotate-left"></i></button>
+        <button class="tool-btn" id="btnRotateRight" title="Rotate Right 90°"><i class="fa-solid fa-rotate-right"></i></button>
+        <button class="tool-btn" id="btnFlipH" title="Flip Horizontal"><i class="fa-solid fa-arrows-left-right"></i></button>
+        <button class="tool-btn" id="btnFlipV" title="Flip Vertical"><i class="fa-solid fa-arrows-up-down"></i></button>
+
+        <div class="toolbar-divider"></div>
+
+        <button class="tool-btn" id="btnEyedropper" title="Color Picker Tool"><i class="fa-solid fa-eye-dropper"></i></button>
+        <button class="tool-btn" id="btnToggleGrid" title="Toggle Background Grid"><i class="fa-solid fa-border-all"></i></button>
+      </div>
+
+    </main>
+
+    <!-- Right Control & Inspection Sidebar -->
+    <aside class="control-sidebar" id="controlSidebar">
+      <div class="tabs-header">
+        <button class="tab-btn active" data-tab="tabAdjust"><i class="fa-solid fa-sliders"></i> Adjust</button>
+        <button class="tab-btn" data-tab="tabPresets"><i class="fa-solid fa-wand-magic"></i> Presets</button>
+        <button class="tab-btn" data-tab="tabInfo"><i class="fa-solid fa-circle-info"></i> Info</button>
+      </div>
+
+      <!-- Tab 1: Image Adjustments -->
+      <div class="tab-content active" id="tabAdjust">
+        
+        <div class="control-group">
+          <div class="control-group-title">
+            <span>Color Picker</span>
+            <span id="colorHexText" style="color: var(--accent-cyan); font-family: monospace;">#------</span>
+          </div>
+          <div class="color-picker-box">
+            <div class="color-preview-swatch" id="colorSwatch"></div>
+            <div class="color-details">
+              <div class="color-hex" id="colorHex">#FFFFFF</div>
+              <div class="color-rgb" id="colorRgb">rgb(255, 255, 255)</div>
+            </div>
+            <button class="btn btn-secondary btn-icon-only" id="btnCopyColor" title="Copy Color HEX">
+              <i class="fa-regular fa-copy"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="control-group">
+          <div class="control-group-title">
+            <span>Lighting & Color</span>
+            <button class="btn btn-secondary" style="padding: 2px 8px; font-size: 0.7rem;" id="btnResetFilters">Reset</button>
+          </div>
+
+          <div class="slider-control">
+            <div class="slider-label-row">
+              <span class="slider-name">Brightness</span>
+              <span class="slider-val" id="valBrightness">100%</span>
+            </div>
+            <input type="range" id="sliderBrightness" min="0" max="200" value="100" />
+          </div>
+
+          <div class="slider-control">
+            <div class="slider-label-row">
+              <span class="slider-name">Contrast</span>
+              <span class="slider-val" id="valContrast">100%</span>
+            </div>
+            <input type="range" id="sliderContrast" min="0" max="200" value="100" />
+          </div>
+
+          <div class="slider-control">
+            <div class="slider-label-row">
+              <span class="slider-name">Saturation</span>
+              <span class="slider-val" id="valSaturate">100%</span>
+            </div>
+            <input type="range" id="sliderSaturate" min="0" max="200" value="100" />
+          </div>
+
+          <div class="slider-control">
+            <div class="slider-label-row">
+              <span class="slider-name">Hue Rotate</span>
+              <span class="slider-val" id="valHue">0°</span>
+            </div>
+            <input type="range" id="sliderHue" min="0" max="360" value="0" />
+          </div>
+        </div>
+
+        <div class="control-group">
+          <div class="control-group-title">Special Effects</div>
+
+          <div class="slider-control">
+            <div class="slider-label-row">
+              <span class="slider-name">Blur</span>
+              <span class="slider-val" id="valBlur">0px</span>
+            </div>
+            <input type="range" id="sliderBlur" min="0" max="20" value="0" />
+          </div>
+
+          <div class="slider-control">
+            <div class="slider-label-row">
+              <span class="slider-name">Grayscale</span>
+              <span class="slider-val" id="valGrayscale">0%</span>
+            </div>
+            <input type="range" id="sliderGrayscale" min="0" max="100" value="0" />
+          </div>
+
+          <div class="slider-control">
+            <div class="slider-label-row">
+              <span class="slider-name">Sepia</span>
+              <span class="slider-val" id="valSepia">0%</span>
+            </div>
+            <input type="range" id="sliderSepia" min="0" max="100" value="0" />
+          </div>
+
+          <div class="slider-control">
+            <div class="slider-label-row">
+              <span class="slider-name">Invert</span>
+              <span class="slider-val" id="valInvert">0%</span>
+            </div>
+            <input type="range" id="sliderInvert" min="0" max="100" value="0" />
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Tab 2: Color Presets -->
+      <div class="tab-content" id="tabPresets">
+        <div class="control-group">
+          <div class="control-group-title">One-Tap Color Styles</div>
+          <div class="preset-grid">
+            <div class="preset-card active" data-preset="normal">Normal</div>
+            <div class="preset-card" data-preset="cyberpunk">Cyberpunk</div>
+            <div class="preset-card" data-preset="vintage">Vintage</div>
+            <div class="preset-card" data-preset="monochrome">Monochrome</div>
+            <div class="preset-card" data-preset="dramatic">Dramatic</div>
+            <div class="preset-card" data-preset="warm">Warm Glow</div>
+            <div class="preset-card" data-preset="cool">Cool Breeze</div>
+            <div class="preset-card" data-preset="invert">Negative</div>
+            <div class="preset-card" data-preset="highcontrast">Vivid</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab 3: Image Metadata -->
+      <div class="tab-content" id="tabInfo">
+        <div class="control-group">
+          <div class="control-group-title">File Details</div>
+          <div class="info-grid">
+            <div class="info-card">
+              <div class="info-label">File Name</div>
+              <div class="info-value" id="infoFileName">-</div>
+            </div>
+            <div class="info-card">
+              <div class="info-label">Dimensions</div>
+              <div class="info-value" id="infoDimensions">-</div>
+            </div>
+            <div class="info-card">
+              <div class="info-label">File Size</div>
+              <div class="info-value" id="infoFileSize">-</div>
+            </div>
+            <div class="info-card">
+              <div class="info-label">MIME Type</div>
+              <div class="info-value" id="infoFileType">-</div>
+            </div>
+            <div class="info-card" style="grid-column: span 2;">
+              <div class="info-label">Aspect Ratio</div>
+              <div class="info-value" id="infoAspectRatio">-</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </aside>
+
+  </div>
+
+  <!-- Export Modal -->
+  <div class="modal-overlay" id="exportModal">
+    <div class="modal-card">
+      <div class="modal-header">
+        <div class="modal-title"><i class="fa-solid fa-download"></i> Save & Export Image</div>
+        <button class="modal-close" id="btnCloseModal"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="control-group">
+        <div class="slider-control">
+          <div class="slider-label-row">
+            <span class="slider-name">File Name</span>
+          </div>
+          <input type="text" id="exportFileName" value="edited-image" style="width:100%; padding:8px 12px; border-radius:6px; background:rgba(255,255,255,0.05); border:1px solid var(--bg-card-border); color:white; font-family:inherit;" />
+        </div>
+        <div class="slider-control" style="margin-top:14px;">
+          <div class="slider-label-row">
+            <span class="slider-name">Export Format</span>
+          </div>
+          <select id="exportFormat" style="width:100%; padding:8px 12px; border-radius:6px; background:#1e293b; border:1px solid var(--bg-card-border); color:white; font-family:inherit;">
+            <option value="image/png">PNG (Lossless, Transparent)</option>
+            <option value="image/jpeg">JPEG (Compressed)</option>
+            <option value="image/webp">WEBP (Modern Web)</option>
+          </select>
+        </div>
+      </div>
+      <div style="display:flex; justify-content:flex-end; gap:10px; margin-top:20px;">
+        <button class="btn btn-secondary" id="btnCancelExport">Cancel</button>
+        <button class="btn btn-primary" id="btnConfirmExport"><i class="fa-solid fa-download"></i> Download</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Notification Toast -->
+  <div class="toast" id="toast">
+    <i class="fa-solid fa-circle-check" style="color: var(--success);" id="toastIcon"></i>
+    <span id="toastMsg">Action completed</span>
+  </div>
+
+  <!-- App Script -->
+  <script src="script.js"></script>
+</body>
 </html>

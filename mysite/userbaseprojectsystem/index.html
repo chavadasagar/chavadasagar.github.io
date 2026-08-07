@@ -1,827 +1,600 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Project System</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-    <div class="container-fluid">
-      <div class="card bg-dark mt-2">
-        <div class="card-header">
-          <div class="d-flex p-2 justify-content-between align-items-center">
-            <h2 class="card-title text-secondary">Projects</h2>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nexus Agile - Multi-Tenant Platform</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Custom Design System -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ==================== GATEWAY 1: ROLE SELECTION SCREEN ==================== -->
+  <div id="role-selection-view" class="gateway-screen">
+    <div style="text-align: center; max-width: 600px;">
+      <div class="brand-icon" style="margin: 0 auto 1rem auto; width: 56px; height: 56px; font-size: 1.75rem;">N</div>
+      <h1 style="font-family: var(--font-heading); font-size: 2.25rem; font-weight: 800; letter-spacing: -0.03em; margin-bottom: 0.5rem;">Welcome to Nexus Agile</h1>
+      <p style="color: var(--text-muted); font-size: 1rem;">Select your portal access to proceed into the system.</p>
+    </div>
+
+    <div class="portal-grid">
+      <!-- Super Admin Option -->
+      <div class="portal-card" style="--card-accent: var(--accent-secondary);" onclick="selectPortalRole('admin')">
+        <div class="portal-icon" style="background: rgba(236, 72, 153, 0.15); color: var(--accent-secondary);">
+          🛡️
+        </div>
+        <h3 class="portal-title">Super Admin Portal</h3>
+        <p class="portal-desc">Manage all tenant workspaces, monitor platform activity, and oversee system metrics.</p>
+        <button class="btn btn-secondary" style="width: 100%; justify-content: center;">Enter as Admin →</button>
+      </div>
+
+      <!-- Client (Tenant) Option -->
+      <div class="portal-card" style="--card-accent: var(--accent-primary);" onclick="selectPortalRole('client')">
+        <div class="portal-icon" style="background: rgba(99, 102, 241, 0.15); color: var(--accent-primary);">
+          🏢
+        </div>
+        <h3 class="portal-title">Client / Tenant Portal</h3>
+        <p class="portal-desc">Sign in to your organization's isolated workspace or register a new Client Tenant account.</p>
+        <button class="btn btn-primary" style="width: 100%; justify-content: center;">Client Login / Sign Up →</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== GATEWAY 2: CLIENT (TENANT) LOGIN / SIGN UP ==================== -->
+  <div id="tenant-auth-view" class="gateway-screen" style="display: none;">
+    <button class="btn btn-secondary btn-sm" style="position: absolute; top: 2rem; left: 2rem;" onclick="showRoleSelection()">
+      ← Back to Portal Selection
+    </button>
+
+    <div class="auth-card">
+      <div style="text-align: center;">
+        <h2 style="font-family: var(--font-heading); font-size: 1.5rem; font-weight: 700; margin-bottom: 0.25rem;">Client Gateway</h2>
+        <p style="color: var(--text-muted); font-size: 0.875rem;">Access your company workspace or register your organization.</p>
+      </div>
+
+      <div class="auth-tabs">
+        <div id="tab-btn-login" class="auth-tab active" onclick="switchAuthTab('login')">Log In</div>
+        <div id="tab-btn-signup" class="auth-tab" onclick="switchAuthTab('signup')">Sign Up (New Tenant)</div>
+      </div>
+
+      <!-- Client Login Form -->
+      <form id="tenant-login-form" onsubmit="handleTenantLogin(event)">
+        <div class="form-group" style="margin-bottom: 1rem;">
+          <label for="login-email">Tenant Work Email</label>
+          <input type="email" id="login-email" class="form-control" placeholder="admin@acme.com" required />
+        </div>
+        <div class="form-group" style="margin-bottom: 1.5rem;">
+          <label for="login-password">Password</label>
+          <input type="password" id="login-password" class="form-control" placeholder="••••••••" required />
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">Sign In to Workspace</button>
+      </form>
+
+      <!-- Client Sign Up Form (Creates New Tenant) -->
+      <form id="tenant-signup-form" style="display: none;" onsubmit="handleTenantSignUp(event)">
+        <div class="form-group" style="margin-bottom: 0.75rem;">
+          <label for="signup-tenant-name">Company / Tenant Name *</label>
+          <input type="text" id="signup-tenant-name" class="form-control" placeholder="e.g. Acme Innovations" required />
+        </div>
+        <div class="form-group" style="margin-bottom: 0.75rem;">
+          <label for="signup-email">Work Email *</label>
+          <input type="email" id="signup-email" class="form-control" placeholder="admin@acme.com" required />
+        </div>
+        <div class="form-group" style="margin-bottom: 1.25rem;">
+          <label for="signup-password">Password *</label>
+          <input type="password" id="signup-password" class="form-control" placeholder="••••••••" required minlength="6" />
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">Create Tenant Account & Workspace</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ==================== GATEWAY 3: SUPER ADMIN DASHBOARD ==================== -->
+  <div id="admin-dashboard-view" class="gateway-screen" style="display: none; align-items: flex-start; justify-content: flex-start;">
+    <div style="width: 100%; max-width: 1100px; margin: 0 auto;">
+      <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 2rem;">
+        <div>
+          <button class="btn btn-secondary btn-sm" style="margin-bottom: 0.5rem;" onclick="showRoleSelection()">← Back to Portal Selection</button>
+          <h2 style="font-family: var(--font-heading); font-size: 1.85rem; font-weight: 800;">🛡️ Super Admin Portal</h2>
+          <p style="color: var(--text-muted); font-size: 0.9rem;">Overview of all registered Client Tenants and global platform metrics.</p>
+        </div>
+      </div>
+
+      <!-- Admin Global Metrics -->
+      <div class="metrics-grid" style="margin-bottom: 2rem;">
+        <div class="metric-card">
+          <div class="metric-info">
+            <h4>Total Tenants</h4>
+            <div id="admin-stat-tenants" class="metric-value">0</div>
+          </div>
+          <div class="metric-icon" style="background: rgba(236, 72, 153, 0.15); color: #ec4899;">🏢</div>
+        </div>
+
+        <div class="metric-card">
+          <div class="metric-info">
+            <h4>Total Projects</h4>
+            <div id="admin-stat-projects" class="metric-value">0</div>
+          </div>
+          <div class="metric-icon" style="background: rgba(99, 102, 241, 0.15); color: #6366f1;">📁</div>
+        </div>
+
+        <div class="metric-card">
+          <div class="metric-info">
+            <h4>Total Tasks</h4>
+            <div id="admin-stat-tasks" class="metric-value">0</div>
+          </div>
+          <div class="metric-icon" style="background: rgba(16, 185, 129, 0.15); color: #10b981;">📋</div>
+        </div>
+      </div>
+
+      <!-- Tenants Roster -->
+      <h3 style="font-family: var(--font-heading); font-size: 1.2rem; font-weight: 700; margin-bottom: 1rem;">Registered Client Tenants</h3>
+      <div id="admin-tenants-grid" class="projects-grid">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== MAIN TENANT WORKSPACE APP ==================== -->
+  <div id="app-workspace-container" class="app-container" style="display: none;">
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-icon">N</div>
+        <div>
+          <h1 class="brand-title">Nexus</h1>
+          <span id="sidebar-tenant-name-badge" style="font-size: 0.7rem; color: var(--accent-primary); text-transform: uppercase; letter-spacing: 0.08em; font-weight: 700;">Client Workspace</span>
+        </div>
+      </div>
+
+      <ul class="nav-menu">
+        <li>
+          <a class="nav-item active" data-view="dashboard-view" onclick="switchView('dashboard-view')">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+            Dashboard
+          </a>
+        </li>
+        <li>
+          <a class="nav-item" data-view="kanban-view" onclick="switchView('kanban-view')">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+            Sprint Board
+          </a>
+        </li>
+        <li>
+          <a class="nav-item" data-view="projects-view" onclick="switchView('projects-view')">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M22 19a2 2 0 01-2 2H4a2 2 0 01-2-2V5a2 2 0 012-2h5l2 3h9a2 2 0 012 2z"></path></svg>
+            Projects
+          </a>
+        </li>
+        <li>
+          <a class="nav-item" data-view="team-view" onclick="switchView('team-view')">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 00-3-3.87"></path><path d="M16 3.13a4 4 0 010 7.75"></path></svg>
+            Team Members
+          </a>
+        </li>
+        <li>
+          <a class="nav-item" data-view="settings-view" onclick="switchView('settings-view')">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-2 2 2 2 0 01-2-2v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 01-2-2 2 2 0 012-2h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 012-2 2 2 0 012 2v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 012 2 2 2 0 01-2 2h-.09a1.65 1.65 0 00-1.51 1z"></path></svg>
+            Workflow Statuses
+          </a>
+        </li>
+      </ul>
+
+      <div class="sidebar-project-select">
+        <label for="global-project-select">Active Project</label>
+        <select id="global-project-select" class="select-control" onchange="onGlobalProjectChange(this.value)">
+          <!-- Populated by JS -->
+        </select>
+      </div>
+    </aside>
+
+    <!-- Main Workspace Wrapper -->
+    <div class="main-wrapper">
+      <!-- Top Header -->
+      <header class="top-header">
+        <div class="header-left">
+          <div class="search-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            <input type="text" id="global-search-input" class="search-input" placeholder="Search tasks, sprints, projects..." oninput="onGlobalSearch(this.value)" />
+          </div>
+        </div>
+
+        <div class="header-actions">
+          <button class="btn btn-secondary" onclick="openModal('sprint-modal')">
+            <span>+</span> Sprint
+          </button>
+          <button class="btn btn-primary" onclick="openModal('task-modal')">
+            <span>+</span> New Task
+          </button>
+          <button class="btn btn-secondary btn-icon" title="Add Project" onclick="openModal('project-modal')">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+          </button>
+          <button class="btn btn-danger btn-sm" title="Exit Workspace / Switch Role" onclick="showRoleSelection()">
+            Exit / Switch Portal
+          </button>
+        </div>
+      </header>
+
+      <!-- Content Views Body -->
+      <main class="content-body">
+        <!-- 1. DASHBOARD VIEW -->
+        <section id="dashboard-view" class="view-section active-view">
+          <div class="section-header">
+            <div>
+              <h2 class="section-title">Workspace Dashboard</h2>
+              <p class="section-subtitle">Real-time overview of projects, active sprints, and team productivity.</p>
+            </div>
+            <button class="btn btn-primary" onclick="openModal('project-modal')">
+              + New Project
+            </button>
+          </div>
+
+          <!-- Metrics Widgets -->
+          <div class="metrics-grid">
+            <div class="metric-card">
+              <div class="metric-info">
+                <h4>Total Projects</h4>
+                <div id="stat-total-projects" class="metric-value">0</div>
+              </div>
+              <div class="metric-icon" style="background: rgba(99, 102, 241, 0.15); color: #6366f1;">📁</div>
+            </div>
+
+            <div class="metric-card">
+              <div class="metric-info">
+                <h4>Active Sprints</h4>
+                <div id="stat-active-sprints" class="metric-value">0</div>
+              </div>
+              <div class="metric-icon" style="background: rgba(236, 72, 153, 0.15); color: #ec4899;">🚀</div>
+            </div>
+
+            <div class="metric-card">
+              <div class="metric-info">
+                <h4>Completed Tasks</h4>
+                <div id="stat-completed-tasks" class="metric-value">0</div>
+              </div>
+              <div class="metric-icon" style="background: rgba(16, 185, 129, 0.15); color: #10b981;">✅</div>
+            </div>
+
+            <div class="metric-card">
+              <div class="metric-info">
+                <h4>Team Members</h4>
+                <div id="stat-team-count" class="metric-value">0</div>
+              </div>
+              <div class="metric-icon" style="background: rgba(245, 158, 11, 0.15); color: #f59e0b;">👥</div>
+            </div>
+          </div>
+
+          <!-- Projects List Section -->
+          <div>
+            <h3 style="font-family: var(--font-heading); font-size: 1.15rem; font-weight: 700; margin-bottom: 1rem;">Active Projects</h3>
+            <div id="dashboard-projects-grid" class="projects-grid">
+              <!-- Rendered by JS -->
+            </div>
+          </div>
+        </section>
+
+        <!-- 2. KANBAN SPRINT BOARD VIEW -->
+        <section id="kanban-view" class="view-section">
+          <div class="section-header">
+            <div>
+              <h2 id="kanban-project-title" class="section-title">Sprint Board</h2>
+              <p class="section-subtitle">Manage tasks, update progress, and track sprint completion.</p>
+            </div>
+            <div style="display: flex; gap: 0.75rem;">
+              <button class="btn btn-secondary" onclick="openModal('sprint-modal')">+ Add Sprint</button>
+              <button class="btn btn-primary" onclick="openModal('task-modal')">+ Create Task</button>
+            </div>
+          </div>
+
+          <!-- Sprint Selector Tabs -->
+          <div id="sprint-tabs-bar" class="sprint-tab-bar">
+            <!-- Populated by JS -->
+          </div>
+
+          <!-- Kanban Columns Grid -->
+          <div id="kanban-board-container" class="kanban-board">
+            <!-- Dynamic Columns populated by JS -->
+          </div>
+        </section>
+
+        <!-- 3. PROJECTS VIEW -->
+        <section id="projects-view" class="view-section">
+          <div class="section-header">
+            <div>
+              <h2 class="section-title">Projects Portfolio</h2>
+              <p class="section-subtitle">Manage project settings, sprints, and team allocations.</p>
+            </div>
+            <button class="btn btn-primary" onclick="openModal('project-modal')">+ New Project</button>
+          </div>
+
+          <div id="all-projects-grid" class="projects-grid">
+            <!-- Rendered by JS -->
+          </div>
+        </section>
+
+        <!-- 4. TEAM MEMBERS VIEW -->
+        <section id="team-view" class="view-section">
+          <div class="section-header">
+            <div>
+              <h2 class="section-title">Team Roster</h2>
+              <p class="section-subtitle">Collaborators, roles, and assigned workloads.</p>
+            </div>
+            <button class="btn btn-primary" onclick="openModal('user-modal')">+ Add Team Member</button>
+          </div>
+
+          <div id="team-members-grid" class="users-grid">
+            <!-- Rendered by JS -->
+          </div>
+        </section>
+
+        <!-- 5. WORKFLOW SETTINGS VIEW -->
+        <section id="settings-view" class="view-section">
+          <div class="section-header">
+            <div>
+              <h2 class="section-title">Workflow Statuses</h2>
+              <p class="section-subtitle">Customize task status columns and workflow colors.</p>
+            </div>
+            <button class="btn btn-primary" onclick="openModal('status-modal')">+ Add Status Tag</button>
+          </div>
+
+          <div id="statuses-list-container" style="display: flex; flex-direction: column; gap: 0.75rem; max-width: 600px;">
+            <!-- Rendered by JS -->
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <!-- ==================== MODALS ==================== -->
+
+  <!-- Project Modal -->
+  <div id="project-modal" class="modal-overlay">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h3 class="modal-title">Create New Project</h3>
+        <button class="modal-close-btn" onclick="closeModal('project-modal')">&times;</button>
+      </div>
+      <form id="project-form" onsubmit="handleSaveProject(event)">
+        <div class="modal-body">
+          <input type="hidden" name="id" id="project-id" />
+          <div class="form-group">
+            <label for="project-name">Project Name *</label>
+            <input type="text" id="project-name" name="name" class="form-control" required placeholder="e.g. Website Redesign" />
+          </div>
+          <div class="form-group">
+            <label for="project-description">Description</label>
+            <textarea id="project-description" name="description" class="form-control" placeholder="Brief project summary..."></textarea>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="project-category">Category</label>
+              <input type="text" id="project-category" name="category" class="form-control" placeholder="e.g. Web App" />
+            </div>
+            <div class="form-group">
+              <label for="project-color">Accent Color</label>
+              <input type="color" id="project-color" name="color" class="form-control" value="#6366f1" style="height: 42px; padding: 0.2rem;" />
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" onclick="closeModal('project-modal')">Cancel</button>
+          <button type="submit" class="btn btn-primary">Save Project</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Sprint Modal -->
+  <div id="sprint-modal" class="modal-overlay">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h3 class="modal-title">Create / Edit Sprint</h3>
+        <button class="modal-close-btn" onclick="closeModal('sprint-modal')">&times;</button>
+      </div>
+      <form id="sprint-form" onsubmit="handleSaveSprint(event)">
+        <div class="modal-body">
+          <input type="hidden" name="id" id="sprint-id" />
+          <div class="form-group">
+            <label for="sprint-project-id">Target Project *</label>
+            <select id="sprint-project-id" name="projectId" class="form-control" required>
+              <!-- JS options -->
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="sprint-name">Sprint Name *</label>
+            <input type="text" id="sprint-name" name="name" class="form-control" required placeholder="e.g. Sprint 1 - Foundation" />
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="sprint-start-date">Start Date</label>
+              <input type="date" id="sprint-start-date" name="startDate" class="form-control" />
+            </div>
+            <div class="form-group">
+              <label for="sprint-end-date">End Date</label>
+              <input type="date" id="sprint-end-date" name="endDate" class="form-control" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="sprint-status">Sprint Lifecycle Status</label>
+            <select id="sprint-status" name="status" class="form-control">
+              <option value="upcoming">Upcoming</option>
+              <option value="active" selected>Active</option>
+              <option value="completed">Completed</option>
+            </select>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" onclick="closeModal('sprint-modal')">Cancel</button>
+          <button type="submit" class="btn btn-primary">Save Sprint</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Task Modal -->
+  <div id="task-modal" class="modal-overlay">
+    <div class="modal-container" style="max-width: 650px;">
+      <div class="modal-header">
+        <h3 id="task-modal-title" class="modal-title">Task Details</h3>
+        <button class="modal-close-btn" onclick="closeModal('task-modal')">&times;</button>
+      </div>
+      <form id="task-form" onsubmit="handleSaveTask(event)">
+        <div class="modal-body">
+          <input type="hidden" name="id" id="task-id" />
+          <div class="form-row">
+            <div class="form-group">
+              <label for="task-project-id">Project *</label>
+              <select id="task-project-id" name="projectId" class="form-control" required onchange="populateTaskSprintOptions(this.value)">
+                <!-- JS options -->
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="task-sprint-id">Sprint *</label>
+              <select id="task-sprint-id" name="sprintId" class="form-control" required>
+                <!-- JS options -->
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="task-name">Task Name / Title *</label>
+            <input type="text" id="task-name" name="name" class="form-control" required placeholder="e.g. Implement authentication flow" />
+          </div>
+
+          <div class="form-group">
+            <label for="task-description">Task Description</label>
+            <textarea id="task-description" name="description" class="form-control" placeholder="Detailed criteria and notes..."></textarea>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="task-status-id">Status Column</label>
+              <select id="task-status-id" name="statusId" class="form-control">
+                <!-- JS options -->
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="task-priority">Priority</label>
+              <select id="task-priority" name="priority" class="form-control">
+                <option value="low">Low</option>
+                <option value="medium" selected>Medium</option>
+                <option value="high">High</option>
+                <option value="urgent">Urgent</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="task-assigned-user">Assigned Member</label>
+              <select id="task-assigned-user" name="assignedUserId" class="form-control">
+                <!-- JS options -->
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="task-due-date">Due Date</label>
+              <input type="date" id="task-due-date" name="dueDate" class="form-control" />
+            </div>
+          </div>
+
+          <!-- Subtasks Checklist Section -->
+          <div class="subtasks-manager">
+            <div style="display: flex; align-items: center; justify-content: space-between;">
+              <label style="font-size: 0.8rem; font-weight: 600; color: var(--text-muted);">Checklist / Subtasks</label>
+              <span id="subtasks-count-text" style="font-size: 0.75rem; color: var(--text-dim);">0 items</span>
+            </div>
             
-            <div class="btn-group">
-              <button
-              data-bs-toggle="modal"
-              data-bs-target="#addprojectmodel"
-              class="btn btn-primary btn-sm text-white"
-            >
-              Project
-            </button>
-            <button class="btn btn-primary" data-bs-toggle="modal" onclick="LoadProjectDropDown()" data-bs-target="#projectbyspirntmodal">Sprint</button>
-            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#createtaskbyprojectspirntmodal">Task</button>
-            <button class="btn btn-primary" data-bs-toggle="modal"data-bs-target="#createusermodal">User</button>
-            <button class="btn btn-primary" data-bs-toggle="modal"data-bs-target="#createstatusmodal">Status</button>
+            <div id="subtasks-list-container" style="display: flex; flex-direction: column; gap: 0.5rem;">
+              <!-- JS Subtasks list -->
+            </div>
+
+            <div style="display: flex; gap: 0.5rem; margin-top: 0.3rem;">
+              <input type="text" id="new-subtask-input" class="form-control" placeholder="Add subtask step..." />
+              <button type="button" class="btn btn-secondary btn-sm" onclick="handleAddSubtaskFromInput()">Add</button>
             </div>
           </div>
         </div>
-        <div class="card-body">
-          <div class="row g-1" id="project_list_view">
-          </div>
+        <div class="modal-footer">
+          <button type="button" id="task-delete-btn" class="btn btn-danger" style="margin-right: auto; display: none;" onclick="handleDeleteCurrentTask()">Delete Task</button>
+          <button type="button" class="btn btn-secondary" onclick="closeModal('task-modal')">Cancel</button>
+          <button type="submit" class="btn btn-primary">Save Task</button>
         </div>
-      </div>
+      </form>
     </div>
+  </div>
 
-    <!-- Add Project Model -->
-    <div
-      class="modal fade" tabindex="-1"
-      id="addprojectmodel"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog text-secondary">
-        <div class="modal-content bg-dark">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Add Project</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
+  <!-- User / Team Member Modal -->
+  <div id="user-modal" class="modal-overlay">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h3 class="modal-title">Add Team Member</h3>
+        <button class="modal-close-btn" onclick="closeModal('user-modal')">&times;</button>
+      </div>
+      <form id="user-form" onsubmit="handleSaveUser(event)">
+        <div class="modal-body">
+          <input type="hidden" name="id" id="user-id" />
+          <div class="form-group">
+            <label for="user-fullname">Full Name *</label>
+            <input type="text" id="user-fullname" name="fullname" class="form-control" required placeholder="e.g. Alex Morgan" />
           </div>
-          <div class="modal-body text-secondary">
-            <form action="" class="" id="createprojectform">
-              <div class="mb-3">
-                <label for="" class="form-label">Name :</label>
-                <input type="text" name="name" class="form-control bg-dark text-white" />
-              </div>
-              <div class="mb-3">
-                <label for="" class="form-label">Description :</label>
-                <textarea
-                  name="description"
-                  class="form-control bg-dark text-white"
-                  id=""
-                  rows="5"
-                ></textarea>
-              </div>
-            </form>
+          <div class="form-group">
+            <label for="user-role">Role Title</label>
+            <input type="text" id="user-role" name="role" class="form-control" placeholder="e.g. Lead Designer" />
           </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
-            <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="CreateProject(createprojectform)">Save changes</button>
+          <div class="form-group">
+            <label for="user-email">Email Address</label>
+            <input type="email" id="user-email" name="email" class="form-control" placeholder="alex@company.com" />
+          </div>
+          <div class="form-group">
+            <label for="user-avatar-bg">Avatar Badge Accent</label>
+            <input type="color" id="user-avatar-bg" name="avatarBg" class="form-control" value="#6366f1" style="height: 42px; padding: 0.2rem;" />
           </div>
         </div>
-      </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" onclick="closeModal('user-modal')">Cancel</button>
+          <button type="submit" class="btn btn-primary">Save Member</button>
+        </div>
+      </form>
     </div>
-    <!-- Add Sprint Model -->
-    <div class="modal fade" tabindex="-1" id="addsprintmodel">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content bg-dark">
-          <div class="modal-header text-secondary">
-            <h5>Add Sprint</h5>
+  </div>
+
+  <!-- Workflow Status Modal -->
+  <div id="status-modal" class="modal-overlay">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h3 class="modal-title">Add Custom Workflow Status</h3>
+        <button class="modal-close-btn" onclick="closeModal('status-modal')">&times;</button>
+      </div>
+      <form id="status-form" onsubmit="handleSaveStatus(event)">
+        <div class="modal-body">
+          <input type="hidden" name="id" id="status-id" />
+          <div class="form-group">
+            <label for="status-name">Status Column Name *</label>
+            <input type="text" id="status-name" name="name" class="form-control" required placeholder="e.g. QA Testing" />
           </div>
-          <div class="modal-body bg-dark text-secondary">
-            <form action="" class="">
-              <div class="mb-3">
-                <label for="" class="form-label">Name :</label>
-                <input type="text" class="form-control bg-dark text-white" />
-              </div>
-              <div class="mb-3">
-                <label for="" class="form-label">Start Date :</label>
-                <input type="date" class="form-control bg-dark text-white" />
-              </div>
-              <div class="mb-3">
-                <label for="" class="form-label">End Date :</label>
-                <input type="date" class="form-control bg-dark text-white" />
-              </div>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
-            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Save changes</button>
+          <div class="form-group">
+            <label for="status-color">Column Color Identifier</label>
+            <input type="color" id="status-color" name="color" class="form-control" value="#3b82f6" style="height: 42px; padding: 0.2rem;" />
           </div>
         </div>
-      </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" onclick="closeModal('status-modal')">Cancel</button>
+          <button type="submit" class="btn btn-primary">Save Status Tag</button>
+        </div>
+      </form>
     </div>
+  </div>
 
-    <!-- Sprint Box Modal -->
-    <div class="modal fade" tabindex="-1" id="spirntviewmodal">
-      <div
-        class="modal-dialog modal-dialog-centered modal-fullscreen modal-dialog-scrollable"
-      >
-        <div class="modal-content bg-dark text-secondary">
-          <div class="modal-header d-flex justify-content-between align-items-center">
-            <h5 class="modal-title">Sprints</h5>
-            <button class="btn btn-primary" id="AddSprintBtnInSprintViewModal">Add</button>
+  <!-- Toast Overlay Container -->
+  <div id="toast-container" class="toast-container"></div>
 
-          </div>
-          <div class="modal-body">
-            <div class="row g-1" id="project_sprints_view">
-              <div class="col-md-4">
-                <div class="card">
-                  <div class="card-header">
-                    <h6>Sprint (Start-End) Created Date</h6>
-                  </div>
-                  <div class="card-body">
-                    <ol class="list-group list-group-numbered">
-                      <li
-                        class="list-group-item d-flex justify-content-between align-items-start"
-                      >
-                        <div class="ms-2 me-auto">
-                          <div class="fw-bold">Subheading</div>
-                          Content for list item
-                        </div>
-                        <span class="badge bg-primary rounded-pill">14</span>
-                      </li>
-                      <li
-                        class="list-group-item d-flex justify-content-between align-items-start"
-                      >
-                        <div class="ms-2 me-auto">
-                          <div class="fw-bold">Subheading</div>
-                          Content for list item
-                        </div>
-                        <span class="badge bg-primary rounded-pill">14</span>
-                      </li>
-
-                      <li
-                        class="list-group-item d-flex justify-content-between align-items-start"
-                      >
-                        <div class="ms-2 me-auto">
-                          <div class="fw-bold">Subheading</div>
-                          Content for list item
-                        </div>
-                        <span class="badge bg-primary rounded-pill">14</span>
-                      </li>
-                    </ol>
-                    <br />
-                    <button class="btn btn-primary btn-sm">Create Task</button>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="card">
-                  <div class="card-header">
-                    <h6>Sprint (Start-End) Created Date</h6>
-                  </div>
-                  <div class="card-body">
-                    <ol class="list-group list-group-numbered">
-                      <li
-                        class="list-group-item d-flex justify-content-between align-items-start"
-                      >
-                        <div class="ms-2 me-auto">
-                          <div class="fw-bold">Subheading</div>
-                          Content for list item
-                        </div>
-                        <span class="badge bg-primary rounded-pill">14</span>
-                      </li>
-                      <li
-                        class="list-group-item d-flex justify-content-between align-items-start"
-                      >
-                        <div class="ms-2 me-auto">
-                          <div class="fw-bold">Subheading</div>
-                          Content for list item
-                        </div>
-                        <span class="badge bg-primary rounded-pill">14</span>
-                      </li>
-                      <li
-                        class="list-group-item d-flex justify-content-between align-items-start"
-                      >
-                        <div class="ms-2 me-auto">
-                          <div class="fw-bold">Subheading</div>
-                          Content for list item
-                        </div>
-                        <span class="badge bg-primary rounded-pill">14</span>
-                      </li>
-                    </ol>
-                    <br />
-                    <button class="btn btn-primary btn-sm">Create Task</button>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="card">
-                  <div class="card-header">
-                    <h6>Sprint (Start-End) Created Date</h6>
-                  </div>
-                  <div class="card-body">
-                    <ol class="list-group list-group-numbered">
-                      <li
-                        class="list-group-item d-flex justify-content-between align-items-start"
-                      >
-                        <div class="ms-2 me-auto">
-                          <div class="fw-bold">Subheading</div>
-                          Content for list item
-                        </div>
-                        <span class="badge bg-primary rounded-pill">14</span>
-                      </li>
-                      <li
-                        class="list-group-item d-flex justify-content-between align-items-start"
-                      >
-                        <div class="ms-2 me-auto">
-                          <div class="fw-bold">Subheading</div>
-                          Content for list item
-                        </div>
-                        <span class="badge bg-primary rounded-pill">14</span>
-                      </li>
-                      <li
-                        class="list-group-item d-flex justify-content-between align-items-start"
-                      >
-                        <div class="ms-2 me-auto">
-                          <div class="fw-bold">Subheading</div>
-                          Content for list item
-                        </div>
-                        <span class="badge bg-primary rounded-pill">14</span>
-                      </li>
-                    </ol>
-                    <br />
-                    <button class="btn btn-primary btn-sm">Create Task</button>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="card">
-                  <div class="card-header">
-                    <h6>Sprint (Start-End) Created Date</h6>
-                  </div>
-                  <div class="card-body">
-                    <ol class="list-group list-group-numbered">
-                      <li
-                        class="list-group-item d-flex justify-content-between align-items-start"
-                      >
-                        <div class="ms-2 me-auto">
-                          <div class="fw-bold">Subheading</div>
-                          Content for list item
-                        </div>
-                        <span class="badge bg-primary rounded-pill">14</span>
-                      </li>
-                      <li
-                        class="list-group-item d-flex justify-content-between align-items-start"
-                      >
-                        <div class="ms-2 me-auto">
-                          <div class="fw-bold">Subheading</div>
-                          Content for list item
-                        </div>
-                        <span class="badge bg-primary rounded-pill">14</span>
-                      </li>
-                      <li
-                        class="list-group-item d-flex justify-content-between align-items-start"
-                      >
-                        <div class="ms-2 me-auto">
-                          <div class="fw-bold">Subheading</div>
-                          Content for list item
-                        </div>
-                        <span class="badge bg-primary rounded-pill">14</span>
-                      </li>
-                    </ol>
-                    <br />
-                    <button class="btn btn-primary btn-sm">Create Task</button>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="card">
-                  <div class="card-header">
-                    <h6>Sprint (Start-End) Created Date</h6>
-                  </div>
-                  <div class="card-body">
-                    <ol class="list-group list-group-numbered">
-                      <li
-                        class="list-group-item d-flex justify-content-between align-items-start"
-                      >
-                        <div class="ms-2 me-auto">
-                          <div class="fw-bold">Subheading</div>
-                          Content for list item
-                        </div>
-                        <span class="badge bg-primary rounded-pill">14</span>
-                      </li>
-                      <li
-                        class="list-group-item d-flex justify-content-between align-items-start"
-                      >
-                        <div class="ms-2 me-auto">
-                          <div class="fw-bold">Subheading</div>
-                          Content for list item
-                        </div>
-                        <span class="badge bg-primary rounded-pill">14</span>
-                      </li>
-                      <li
-                        class="list-group-item d-flex justify-content-between align-items-start"
-                      >
-                        <div class="ms-2 me-auto">
-                          <div class="fw-bold">Subheading</div>
-                          Content for list item
-                        </div>
-                        <span class="badge bg-primary rounded-pill">14</span>
-                      </li>
-                    </ol>
-                    <br />
-                    <button class="btn btn-primary btn-sm">Create Task</button>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="card">
-                  <div class="card-header">
-                    <h6>Sprint (Start-End) Created Date</h6>
-                  </div>
-                  <div class="card-body">
-                    <ol class="list-group list-group-numbered">
-                      <li
-                        class="list-group-item d-flex justify-content-between align-items-start"
-                      >
-                        <div class="ms-2 me-auto">
-                          <div class="fw-bold">Subheading</div>
-                          Content for list item
-                        </div>
-                        <span class="badge bg-primary rounded-pill">14</span>
-                      </li>
-                      <li
-                        class="list-group-item d-flex justify-content-between align-items-start"
-                      >
-                        <div class="ms-2 me-auto">
-                          <div class="fw-bold">Subheading</div>
-                          Content for list item
-                        </div>
-                        <span class="badge bg-primary rounded-pill">14</span>
-                      </li>
-                      <li
-                        class="list-group-item d-flex justify-content-between align-items-start"
-                      >
-                        <div class="ms-2 me-auto">
-                          <div class="fw-bold">Subheading</div>
-                          Content for list item
-                        </div>
-                        <span class="badge bg-primary rounded-pill">14</span>
-                      </li>
-                    </ol>
-                    <br />
-                    <button class="btn btn-primary btn-sm">Create Task</button>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="card">
-                  <div class="card-header">
-                    <h6>Sprint (Start-End) Created Date</h6>
-                  </div>
-                  <div class="card-body">
-                    <ol class="list-group list-group-numbered">
-                      <li
-                        class="list-group-item d-flex justify-content-between align-items-start"
-                      >
-                        <div class="ms-2 me-auto">
-                          <div class="fw-bold">Subheading</div>
-                          Content for list item
-                        </div>
-                        <span class="badge bg-primary rounded-pill">14</span>
-                      </li>
-                      <li
-                        class="list-group-item d-flex justify-content-between align-items-start"
-                      >
-                        <div class="ms-2 me-auto">
-                          <div class="fw-bold">Subheading</div>
-                          Content for list item
-                        </div>
-                        <span class="badge bg-primary rounded-pill">14</span>
-                      </li>
-                      <li
-                        class="list-group-item d-flex justify-content-between align-items-start"
-                      >
-                        <div class="ms-2 me-auto">
-                          <div class="fw-bold">Subheading</div>
-                          Content for list item
-                        </div>
-                        <span class="badge bg-primary rounded-pill">14</span>
-                      </li>
-                    </ol>
-                    <br />
-                    <button class="btn btn-primary btn-sm">Create Task</button>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="card">
-                  <div class="card-header">
-                    <h6>Sprint (Start-End) Created Date</h6>
-                  </div>
-                  <div class="card-body">
-                    <ol class="list-group list-group-numbered">
-                      <li
-                        class="list-group-item d-flex justify-content-between align-items-start"
-                      >
-                        <div class="ms-2 me-auto">
-                          <div class="fw-bold">Subheading</div>
-                          Content for list item
-                        </div>
-                        <span class="badge bg-primary rounded-pill">14</span>
-                      </li>
-                      <li
-                        class="list-group-item d-flex justify-content-between align-items-start"
-                      >
-                        <div class="ms-2 me-auto">
-                          <div class="fw-bold">Subheading</div>
-                          Content for list item
-                        </div>
-                        <span class="badge bg-primary rounded-pill">14</span>
-                      </li>
-                      <li
-                        class="list-group-item d-flex justify-content-between align-items-start"
-                      >
-                        <div class="ms-2 me-auto">
-                          <div class="fw-bold">Subheading</div>
-                          Content for list item
-                        </div>
-                        <span class="badge bg-primary rounded-pill">14</span>
-                      </li>
-                    </ol>
-                    <br />
-                    <button class="btn btn-primary btn-sm">Create Task</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button class="btn btn-secondary" data-bs-dismiss="modal">
-              Close
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Create Task Modal -->
-    <div class="modal fade" tabindex="-1" id="createtaskmodal">
-      <div class="modal-dialog">
-        <div class="modal-content bg-dark tex-se">
-          <div class="modal-header">
-            <h6 class="text-secondary">Create Task</h6>
-          </div>
-          <div class="modal-body">
-            <form action="" class="text-secondary">
-              <div class="mb-3">
-                <label for="" class="form-label">Name :</label>
-                <input
-                  type="text"
-                  class="form-control bg-dark text-secondary"
-                />
-              </div>
-              <div class="mb-3">
-                <label for="" class="form-label">Description :</label>
-                <textarea rows="5" class="form-control bg-dark text-secondary"></textarea>
-              </div>
-              <div class="mb-3">
-                <label for="" class="form-label">Status :</label>
-                <input type= "text" class="form-control bg-dark text-secondary" />
-              </div>
-            </div>
-            </form>
-            <div class="modal-footer">
-              <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button class="btn btn-primary" data-bs-dismiss="modal">Create</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Create spirnt by project modal -->
-    <div class="modal fade" tabindex="-1" id="projectbyspirntmodal">
-      <div class="modal-dialog">
-        <div class="modal-content bg-dark tex-se">
-          <div class="modal-header">
-            <h6 class="text-secondary">Create Spirnt</h6>
-          </div>
-          <div class="modal-body">
-            <form action="" class="text-secondary" id="createspirntform">
-              <div class="mb-3">
-                <label for="" class="form-label">Project :</label>
-                <select name="projectid" id="" class="projectdropdown form-control bg-dark text-secondary">
-                  <option disabled selected>select project</option>
-                </select>
-              </div>
-              <div class="mb-3">
-                <label for="" class="form-label">Name :</label>
-                <input type="text" name="name" class="form-control bg-dark text-secondary" />
-              </div>
-              <div class="mb-3">
-                <label for="" class="form-label">Start Date :</label>
-                <input type="date" name="startdate" class="form-control bg-dark text-secondary" />
-              </div>
-              <div class="mb-3">
-                <label for="" class="form-label">End Date :</label>
-                <input type="date" name="enddate" class="form-control bg-dark text-secondary" />
-              </div>
-            </div>
-            </form>
-            <div class="modal-footer">
-              <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button class="btn btn-primary" data-bs-dismiss="modal" onclick="CreateSprintByProject(createspirntform)">Create</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-      <!-- Create spirnt with no select project modal -->
-      <div class="modal fade" tabindex="-1" id="CreateSpirntWithNoSelectProjectModal">
-        <div class="modal-dialog">
-          <div class="modal-content bg-dark tex-se">
-            <div class="modal-header">
-              <h6 class="text-secondary">Create Spirnt</h6>
-            </div>
-            <div class="modal-body">
-              <form action="" class="text-secondary" id="CreateSpirntWithNoSelectProjectForm">
-                <input type="hidden" name="projectid">
-                <div class="mb-3">
-                  <label for="" class="form-label">Name :</label>
-                  <input type="text" name="name" class="form-control bg-dark text-secondary" />
-                </div>
-                <div class="mb-3">
-                  <label for="" class="form-label">Start Date :</label>
-                  <input type="date" name="startdate" class="form-control bg-dark text-secondary" />
-                </div>
-                <div class="mb-3">
-                  <label for="" class="form-label">End Date :</label>
-                  <input type="date" name="enddate" class="form-control bg-dark text-secondary" />
-                </div>
-              </div>
-              </form>
-              <div class="modal-footer">
-                <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button class="btn btn-primary" data-bs-dismiss="modal" onclick="CreateSprintByProject(CreateSpirntWithNoSelectProjectForm)">Create</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    <!-- Create task by sprint and project -->
-    <div class="modal fade" tabindex="-1" id="createtaskbyprojectspirntmodal">
-      <div class="modal-dialog">
-        <div class="modal-content bg-dark text-secondary">
-          <div class="modal-header">
-            <h6 class="text-secondary">Create Task</h6>
-          </div>
-          <div class="modal-body">
-            <form action="" class="text-secondary" id="createtaskbyprojectandspirntform">
-              <div class="mb-3">
-                <label for="" class="form-label">Project :</label>
-                <select name="projectid" id="" onchange="SetProjectBySprintDropdown(event)" class="projectdropdown form-control bg-dark text-secondary">
-                  <option disabled selected>select project</option>
-                </select>
-              </div>
-              <div class="mb-3">
-                <label for="" class="form-label">Sprint :</label>
-                <select name="sprintid" id="" class="sprintdropdown form-control bg-dark text-secondary">
-                  <option disabled selected>select spirnt</option>
-                </select>
-              </div>
-              <div class="mb-3">
-                <label for="" class="form-label">Name :</label>
-                <input type="text" name="name" class="form-control bg-dark text-secondary" />
-              </div>
-              <div class="mb-3">
-                <label for="" class="form-label">Description :</label>
-                <textarea rows="5" name="description" class="form-control bg-dark text-secondary"></textarea>
-              </div>
-              <div class="mb-3">
-                <label for="" class="form-label">Status</label>
-                <select name="status" id="" class="statusdropdown form-control bg-dark text-secondary">
-                  <option disabled selected>select</option>
-                  <option value="Pending">Pending</option>
-                  <option value="Complated">Complated</option>
-                  <option value="Progress">In progress</option>
-                  <option value="Hold">Hold</option>
-                </select>
-              </div>
-              <div class="mb-3">
-                <label for="" class="form-label">Assined to</label>
-                <select name="assined_user" id="" class="userdropdown form-control bg-dark text-secondary">
-                </select>
-              </div>
-            </div>
-            </form>
-            <div class="modal-footer">
-              <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button class="btn btn-primary" data-bs-dismiss="modal" onclick="CreateTaskByProjectAndSprint(createtaskbyprojectandspirntform)">Create</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Create Task By Spirnt And Project Only -->
-    <div class="modal fade" tabindex="-1" id="taskmodalbynoselectsprintandproject">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content bg-dark">
-          <div class="modal-header">
-            <h6 class="text-secondary">Create Task</h6>
-          </div>
-          <div class="modal-body">
-            <form action="" class="text-secondary" id="taskbynoselectsprintandprojectform">
-              <input type="hidden" name="projectid">
-              <input type="hidden" name="sprintid">
-              <div class="mb-3">
-                <label for="" class="form-label">Name :</label>
-                <input type="text" name="name" class="form-control bg-dark text-secondary" />
-              </div>
-              <div class="mb-3">
-                <label for="" class="form-label">Description :</label>
-                <textarea rows="5" name="description" class="form-control bg-dark text-secondary"></textarea>
-              </div>
-              <div class="mb-3">
-                <label for="" class="form-label">Status</label>
-                <select name="status" id="" class="statusdropdown form-control bg-dark text-secondary">
-                  <option disabled selected>select</option>
-                  <option value="Pending">Pending</option>
-                  <option value="Complated">Complated</option>
-                  <option value="Progress">In progress</option>
-                  <option value="Hold">Hold</option>
-                </select>
-              </div>
-              <div class="mb-3">
-                <label for="" class="form-label">Assined to</label>
-                <select name="assined_user" id="" class="userdropdown form-control bg-dark text-secondary">
-                  <option disabled selected>select</option>
-                  <option value="Hold">John</option>
-                  <option value="Hold">willam</option>
-                  <option value="Hold">nick</option>
-                </select>
-              </div>
-            </div>
-            </form>
-            <div class="modal-footer">
-              <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button class="btn btn-primary" onclick="CreateTaskByProjectAndSprint(taskbynoselectsprintandprojectform)" data-bs-dismiss="modal">Save changes</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- SubTask list Modal -->
-    <div class="modal fade" id="SubTasklistmodal" tabindex="-1">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content bg-dark">
-          <div class="modal-header d-flex justify-content-between align-items-center">
-            <h6 class="text-secondary">Subtask</h6>
-            <button class="btn btn-primary btn-sm" id="add_subtask_btn">Add</button>
-          </div>
-          <div class="modal-body">
-            <ul class="list-group bg-dark text-secondary" id="subtasklistdata">
-              <li class="list-group-item">one description</li>
-            </ul>
-          </div>
-          <div class="modal-footer">
-            <button data-bs-dismiss="modal" class="btn btn-secondary closebtn">Close</button>
-          </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    <!-- Create SubtaskModal -->
-    <div class="modal fade" tabindex="-1" id="createsubtaskmodal">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content bg-dark">
-          <div class="modal-header">
-            <h6 class="text-secondary">Create Subtask</h6>
-          </div>
-          <div class="modal-body">
-            <form action="" class="text-secondary" id="createsubtaskform">
-              <input type="hidden" name="projectid">
-              <input type="hidden" name="sprintid"> 
-              <input type="hidden" name="taskid">
-              <div class="mb-3">
-                <label for="" class="form-label">Name :</label>
-                <input type="text" name="name" class="form-control bg-dark text-secondary" />
-              </div>
-              <div class="mb-3">
-                <label for="" class="form-label">Description :</label>
-                <textarea rows="5" name="description" class="form-control bg-dark text-secondary"></textarea>
-              </div>
-              <div class="mb-3">
-                <label for="" class="form-label">Status</label>
-                <select name="status" id="" class="statusdropdown form-control bg-dark text-secondary">
-                  <option disabled selected>select</option>
-                  <option value="Pending">Pending</option>
-                  <option value="Complated">Complated</option>
-                  <option value="Progress">In progress</option>
-                  <option value="Hold">Hold</option>
-                </select>
-              </div>
-              <div class="mb-3">
-                <label for="" class="form-label">Assined to</label>
-                <select name="assined_user" id="" class="userdropdown form-control bg-dark text-secondary">
-                  <option disabled selected>select user</option>
-                </select>
-              </div>
-            </div>
-            </form>
-            <div class="modal-footer">
-              <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button class="btn btn-primary" onclick="CreateSubtask(createsubtaskform)" data-bs-dismiss="modal">Save changes</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Create User Modal -->
-    <div class="modal fade" tabindex="-1" id="createusermodal">
-      <div class="modal-dialog">
-        <div class="modal-content bg-dark tex-se">
-          <div class="modal-header">
-            <h6 class="text-secondary">Create User</h6>
-          </div>
-          <div class="modal-body">
-            <form action="" class="text-secondary" id="createuserform">
-              <div class="mb-3">
-                <label for="" class="form-label">Fullname :</label>
-                <input
-                name="fullname"
-                  type="text"
-                  class="form-control bg-dark text-secondary"
-                />
-              </div>
-              <div class="mb-3">
-                <label for="" class="form-label">Role :</label>
-                <input
-                name="role"
-                  type="text"
-                  class="form-control bg-dark text-secondary"
-                />
-              </div>
-            </div>
-            </form>
-            <div class="modal-footer">
-              <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button class="btn btn-primary" data-bs-dismiss="modal" onclick="CreateUser(createuserform)">Create</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-     <!-- Create User Modal -->
-     <div class="modal fade" tabindex="-1" id="createstatusmodal">
-      <div class="modal-dialog">
-        <div class="modal-content bg-dark tex-se">
-          <div class="modal-header">
-            <h6 class="text-secondary">Create Status</h6>
-          </div>
-          <div class="modal-body">
-            <form action="" class="text-secondary" id="createstatusform">
-              <div class="mb-3">
-                <label for="" class="form-label">Name :</label>
-                <input
-                name="name"
-                  type="text"
-                  class="form-control bg-dark text-secondary"
-                />
-              </div>
-              <div class="mb-3">
-                <label for="" class="form-label">Description :</label>
-                <textarea class="form-control bg-dark text-secondary" name="description" rows="5"></textarea>
-              </div>
-            </div>
-            </form>
-            <div class="modal-footer">
-              <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button class="btn btn-primary" data-bs-dismiss="modal" onclick="CreateStatus(createstatusform)">Create</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <!-- Main JavaScript App Core -->
   <script src="script.js"></script>
+</body>
 </html>

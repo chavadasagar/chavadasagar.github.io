@@ -1,166 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Modern Mobile-Friendly Web Postman API Client Tool" />
+    <title>Postman Web Studio - API Testing Client</title>
 
     <!-- Bootstrap CSS -->
-    <link
-      href="assets/bootstrap/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-
-    <title>Postman</title>
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link href="assets/css/style.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="container">
-      <form id="postmanform">
-        <div class="p-4">
-          <h3>Postman</h3>
+    <div class="app-container">
+      <!-- App Header -->
+      <header class="app-header">
+        <div class="brand-logo">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+          </svg>
+          <h1 class="brand-title">Postman Web</h1>
         </div>
+        <div class="d-flex gap-2">
+          <button class="btn btn-outline-light btn-sm d-flex align-items-center gap-1" id="presetBtn">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            <span class="d-none d-sm-inline">Sample Request</span>
+          </button>
+          <button class="btn btn-outline-warning btn-sm d-flex align-items-center gap-1" data-bs-toggle="offcanvas" data-bs-target="#historyOffcanvas">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            <span>History</span>
+          </button>
+        </div>
+      </header>
 
-        <div class="row">
-          <div class="col-md-12">
-            <div class="form-group">
-              <label for="" class="form-label">URL</label>
-              <input
-                type="text"
-                class="form-control"
-                name="url"
-                placeholder="Please Enter url"
-              />
-            </div>
+      <!-- Main Request Form -->
+      <form id="postmanform">
+        <div class="custom-card">
+          <!-- Request Bar -->
+          <div class="input-group url-input-group mb-3">
+            <select class="form-select method-select method-get" id="requestMethod" name="requesttype">
+              <option value="GET" class="method-get" selected>GET</option>
+              <option value="POST" class="method-post">POST</option>
+              <option value="PUT" class="method-put">PUT</option>
+              <option value="DELETE" class="method-delete">DELETE</option>
+              <option value="PATCH" class="method-patch">PATCH</option>
+            </select>
+            <input
+              type="text"
+              class="form-control url-input"
+              id="requestUrl"
+              name="url"
+              placeholder="https://jsonplaceholder.typicode.com/posts/1"
+              required
+            />
+            <button class="btn btn-send" type="submit" id="btnSend">
+              <span id="btnSendText">Send</span>
+              <span id="btnSendSpinner" class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span>
+            </button>
           </div>
 
-          <div class="col-md-12 mt-3">
-            <div class="form-group">
-              <label for="" class="form-label">Request Type :</label>
-              &nbsp; &nbsp; &nbsp;
-              <div class="form-check form-check-inline">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="requesttype"
-                  value="post"
-                  id="flexRadioDefault1"
-                />
-                <label class="form-check-label" for="flexRadioDefault1">
-                  Post
-                </label>
-              </div>
-              <div class="form-check form-check-inline">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="requesttype"
-                  id="flexRadioDefault2"
-                  value="get"
-                />
-                <label class="form-check-label" for="flexRadioDefault2">
-                  Get
-                </label>
-              </div>
-            </div>
-          </div>
+          <!-- Configuration Tabs -->
+          <ul class="nav nav-tabs custom-nav-tabs" id="requestTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="params-tab" data-bs-toggle="tab" data-bs-target="#params-pane" type="button" role="tab">Params</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="headers-tab" data-bs-toggle="tab" data-bs-target="#headers-pane" type="button" role="tab">Headers</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="body-tab" data-bs-toggle="tab" data-bs-target="#body-pane" type="button" role="tab">Body</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="auth-tab" data-bs-toggle="tab" data-bs-target="#auth-pane" type="button" role="tab">Auth</button>
+            </li>
+          </ul>
 
-          <div class="col-md-12 mt-3">
-            <div class="form-group">
-              <label for="">Content Type :</label>
-              &nbsp; &nbsp; &nbsp;
-              <div class="form-check form-check-inline">
-                <input
-                  type="radio"
-                  class="form-check-input"
-                  id="jsonstr"
-                  value="jsonstring"
-                  name="parametertype"
-                />
-                <label for="">Json String</label>
+          <div class="tab-content pt-3" id="requestTabsContent">
+            <!-- Params Pane -->
+            <div class="tab-pane fade show active" id="params-pane" role="tabpanel">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <small class="text-muted">Query Parameters</small>
+                <button type="button" class="btn btn-sm btn-outline-primary" id="btnAddParam">+ Add Param</button>
               </div>
-              <div class="form-check form-check-inline">
-                <input
-                  type="radio"
-                  class="form-check-input"
-                  id="param"
-                  value="parameter"
-                  name="parametertype"
-                />
-                <label for="">Custom Parameter</label>
+              <div id="queryParamsContainer">
+                <!-- Dynamic Param rows will be rendered here -->
               </div>
             </div>
-          </div>
 
-          <div class="col-md-12 mt-3" id="jsonstringbox">
-            <label for="" class="form-label">Json String :</label>
-            <textarea
-              name=""
-              placeholder="Enter Json String"
-              class="form-control"
-              id="jsonstring"
-              cols="30"
-              rows="5"
-            ></textarea>
-          </div>
+            <!-- Headers Pane -->
+            <div class="tab-pane fade" id="headers-pane" role="tabpanel">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <small class="text-muted">HTTP Request Headers</small>
+                <button type="button" class="btn btn-sm btn-outline-primary" id="btnAddHeader">+ Add Header</button>
+              </div>
+              <div id="headersContainer">
+                <!-- Dynamic Header rows will be rendered here -->
+              </div>
+            </div>
 
-          <div class="col-md-12 mt-3" id="customparameterbox">
-              <div class="row parambox">
-                <div class="row col-md-12">
-                  <div class="form-group col">
-                    <label for="" class="form-label">Key</label>
-                    <input type="text" class="form-control key" />
-                  </div>
-
-                  <div class="form-group col">
-                    <label for="" class="form-label">Value</label>
-                    <input type="text" class="form-control value" />
-                  </div>
-
-                  <div class="col align-items-center d-flex">
-                    <button
-                      class="btn btn-primary btn-sm mt-4"
-                      type="button"
-                      onclick="addparam()"
-                    >
-                      +
-                    </button>
-                  </div>
+            <!-- Body Pane -->
+            <div class="tab-pane fade" id="body-pane" role="tabpanel">
+              <div class="mb-3">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="bodyType" id="bodyTypeNone" value="none" checked />
+                  <label class="form-check-label text-muted" for="bodyTypeNone">none</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="bodyType" id="bodyTypeJson" value="json" />
+                  <label class="form-check-label" for="bodyTypeJson">raw (JSON)</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="bodyType" id="bodyTypeForm" value="form" />
+                  <label class="form-check-label" for="bodyTypeForm">x-www-form-urlencoded</label>
                 </div>
               </div>
-          </div>
-        </div>
-        <button class="btn btn-primary btn-sm mt-3">Submit</button>
-        <div class="col-md-12 mt-3">
-          <div class="form-group">
-            <textarea
-              name=""
-              class="form-control"
-              placeholder="Response"
-              id="responsetext"
-              cols="30"
-              rows="5"
-            ></textarea>
+
+              <!-- JSON Body Editor -->
+              <div id="jsonBodySection" class="d-none">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <small class="text-muted">JSON Request Body</small>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" id="btnFormatJson">Prettify JSON</button>
+                </div>
+                <textarea
+                  id="jsonstring"
+                  class="form-control kv-input"
+                  rows="6"
+                  placeholder='{\n  "title": "foo",\n  "body": "bar",\n  "userId": 1\n}'
+                ></textarea>
+              </div>
+
+              <!-- Form Body Editor -->
+              <div id="formBodySection" class="d-none">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <small class="text-muted">Form Key-Value Pairs</small>
+                  <button type="button" class="btn btn-sm btn-outline-primary" id="btnAddFormParam">+ Add Key-Value</button>
+                </div>
+                <div id="formBodyContainer">
+                  <!-- Dynamic Form Body rows -->
+                </div>
+              </div>
+            </div>
+
+            <!-- Auth Pane -->
+            <div class="tab-pane fade" id="auth-pane" role="tabpanel">
+              <div class="row g-3">
+                <div class="col-md-4">
+                  <label class="form-label text-muted">Auth Type</label>
+                  <select class="form-select kv-input" id="authType">
+                    <option value="none" selected>No Auth</option>
+                    <option value="bearer">Bearer Token</option>
+                    <option value="basic">Basic Auth</option>
+                  </select>
+                </div>
+                <div class="col-md-8 d-none" id="bearerAuthBox">
+                  <label class="form-label text-muted">Token</label>
+                  <input type="text" class="form-control kv-input" id="authToken" placeholder="e.g. eyJhbGciOiJIUzI1Ni..." />
+                </div>
+                <div class="col-md-4 d-none basicAuthBox">
+                  <label class="form-label text-muted">Username</label>
+                  <input type="text" class="form-control kv-input" id="authUsername" placeholder="Username" />
+                </div>
+                <div class="col-md-4 d-none basicAuthBox">
+                  <label class="form-label text-muted">Password</label>
+                  <input type="password" class="form-control kv-input" id="authPassword" placeholder="Password" />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </form>
+
+      <!-- Response Card -->
+      <div class="custom-card">
+        <div class="response-header">
+          <div class="d-flex align-items-center gap-3">
+            <h5 class="m-0 fw-bold">Response</h5>
+            <span id="responseStatusBadge" class="status-badge d-none">200 OK</span>
+          </div>
+          <div class="response-meta d-none" id="responseMeta">
+            <span>Time: <strong id="responseTime" class="text-light">0 ms</strong></span>
+            <span>Size: <strong id="responseSize" class="text-light">0 B</strong></span>
+          </div>
+        </div>
+
+        <ul class="nav nav-tabs custom-nav-tabs mb-3" id="responseTabs" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="resp-pretty-tab" data-bs-toggle="tab" data-bs-target="#resp-pretty-pane" type="button" role="tab">Pretty</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="resp-headers-tab" data-bs-toggle="tab" data-bs-target="#resp-headers-pane" type="button" role="tab">Headers</button>
+          </li>
+          <li class="nav-item ms-auto" role="presentation">
+            <button class="btn btn-sm btn-outline-light d-flex align-items-center gap-1" id="btnCopyResponse">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"></path></svg>
+              <span>Copy</span>
+            </button>
+          </li>
+        </ul>
+
+        <div class="tab-content">
+          <div class="tab-pane fade show active" id="resp-pretty-pane" role="tabpanel">
+            <div id="responsetext" class="response-box">Submit a request to see the response here...</div>
+          </div>
+          <div class="tab-pane fade" id="resp-headers-pane" role="tabpanel">
+            <div id="responseHeadersBox" class="response-box text-muted">No response headers yet</div>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script
-      src="assets/bootstrap/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
+    <!-- History Offcanvas -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="historyOffcanvas" aria-labelledby="historyOffcanvasLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title fw-bold" id="historyOffcanvasLabel">Request History</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <small class="text-muted">Recent API Calls</small>
+          <button class="btn btn-sm btn-outline-danger" id="btnClearHistory">Clear All</button>
+        </div>
+        <div id="historyList">
+          <div class="text-center text-muted py-4">No history recorded yet</div>
+        </div>
+      </div>
+    </div>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    -->
-
-    <script src="assets/js/script.js" type="module"></script>
+    <!-- Bootstrap Bundle JS -->
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- SweetAlert2 -->
     <script src="assets/js/sweetalert/sweetalert2.js"></script>
+    <!-- Main Script -->
+    <script src="assets/js/script.js" type="module"></script>
   </body>
 </html>

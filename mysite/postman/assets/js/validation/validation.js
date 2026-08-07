@@ -1,7 +1,25 @@
 export function isUrlValid(userInput) {
-    var res = userInput.match(/(http(s)?:\/\/.)?(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)/g);
-    if(res == null)
+    if (!userInput || typeof userInput !== 'string') return false;
+    let urlString = userInput.trim();
+    
+    // Auto prefix http if protocol omitted
+    if (!/^https?:\/\//i.test(urlString)) {
+        urlString = 'http://' + urlString;
+    }
+
+    try {
+        const url = new URL(urlString);
+        return url.protocol === "http:" || url.protocol === "https:";
+    } catch (_) {
         return false;
-    else
-        return true;
+    }
+}
+
+export function formatUrl(userInput) {
+    if (!userInput) return '';
+    let urlString = userInput.trim();
+    if (!/^https?:\/\//i.test(urlString)) {
+        urlString = 'https://' + urlString;
+    }
+    return urlString;
 }
