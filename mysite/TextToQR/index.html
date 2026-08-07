@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR Code Studio - Custom ISO/IEC 18004 Encoder & Decoder</title>
+  <meta name="description" content="Production-quality QR Code Studio built entirely from scratch in pure Vanilla JavaScript (zero external dependencies). Full ISO/IEC 18004 implementation.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- CSS Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Header -->
+    <header class="app-header">
+      <div class="header-brand">
+        <div class="brand-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="7" height="7" rx="1.5"></rect>
+            <rect x="14" y="3" width="7" height="7" rx="1.5"></rect>
+            <rect x="3" y="14" width="7" height="7" rx="1.5"></rect>
+            <path d="M14 14h3v3h-3z"></path>
+            <path d="M18 18h3v3h-3z"></path>
+            <path d="M14 18h.01"></path>
+            <path d="M18 14h.01"></path>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <h1>QR Code <span>Studio</span></h1>
+          <p class="brand-tagline">100% Custom ISO/IEC 18004 Engine &bull; Zero External Libraries</p>
+        </div>
+      </div>
+
+      <div class="header-actions">
+        <button id="theme-toggle" class="btn-theme-toggle" aria-label="Toggle light and dark theme">
+          <span class="theme-icon icon-sun">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg>
+          </span>
+          <span class="theme-icon icon-moon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path></svg>
+          </span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Main Navigation Tabs -->
+    <nav class="app-nav">
+      <div class="nav-tabs" role="tablist">
+        <button class="nav-tab active" data-tab="tab-text" role="tab" aria-selected="true" aria-controls="tab-text-content" id="tab-text-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"></path><path d="m15 5 4 4"></path></svg>
+          <span>Text to QR</span>
+        </button>
+        <button class="nav-tab" data-tab="tab-image" role="tab" aria-selected="false" aria-controls="tab-image-content" id="tab-image-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"></rect><circle cx="9" cy="9" r="2"></circle><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"></path></svg>
+          <span>Image to QR</span>
+        </button>
+        <button class="nav-tab" data-tab="tab-scan" role="tab" aria-selected="false" aria-controls="tab-scan-content" id="tab-scan-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7V5a2 2 0 0 1 2-2h2"></path><path d="M17 3h2a2 2 0 0 1 2 2v2"></path><path d="M21 17v2a2 2 0 0 1-2 2h-2"></path><path d="M7 21H5a2 2 0 0 1-2-2v-2"></path><rect x="7" y="7" width="10" height="10" rx="1"></rect></svg>
+          <span>Scan & Decode</span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main class="app-main">
+
+      <!-- ================= TAB 1: TEXT TO QR ================= -->
+      <section id="tab-text-content" class="tab-panel active" role="tabpanel" aria-labelledby="tab-text-btn">
+        <div class="panel-grid">
+          
+          <!-- Input & Controls Card -->
+          <div class="card card-input">
+            <div class="card-header">
+              <h2 class="card-title">Input Content</h2>
+              <span class="live-indicator">
+                <span class="pulse-dot"></span> Live Custom Engine
+              </span>
+            </div>
+            
+            <div class="form-group">
+              <label for="text-input" class="form-label">
+                Enter Text, Message or URL:
+              </label>
+              <div class="textarea-wrapper">
+                <textarea id="text-input" placeholder="Type or paste any URL (e.g. https://example.com) or message here..." rows="5"></textarea>
+              </div>
+              <div class="input-meta">
+                <span id="char-counter" class="meta-counter">0 chars | 0 bytes</span>
+                <span id="detected-mode-badge" class="meta-badge">Mode: Auto</span>
+                <button type="button" id="clear-text-btn" class="btn-text-link">Clear text</button>
+              </div>
+            </div>
+
+            <!-- Customization Options Grid -->
+            <div class="options-section">
+              <h3 class="options-title">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1Z"></path></svg>
+                Customization Options
+              </h3>
+
+              <div class="options-grid">
+                <!-- Size / Resolution -->
+                <div class="option-item">
+                  <label for="qr-size-select" class="form-label">QR Canvas Size</label>
+                  <select id="qr-size-select" class="form-select">
+                    <option value="256">Small (256 x 256 px)</option>
+                    <option value="400" selected>Medium (400 x 400 px)</option>
+                    <option value="600">Large (600 x 600 px)</option>
+                    <option value="900">Ultra HD (900 x 900 px)</option>
+                  </select>
+                </div>
+
+                <!-- Error Correction Level -->
+                <div class="option-item">
+                  <label for="qr-ecl-select" class="form-label">Error Correction Level</label>
+                  <select id="qr-ecl-select" class="form-select">
+                    <option value="L">Level L (~7% recovery)</option>
+                    <option value="M" selected>Level M (~15% recovery)</option>
+                    <option value="Q">Level Q (~25% recovery)</option>
+                    <option value="H">Level H (~30% recovery)</option>
+                  </select>
+                </div>
+
+                <!-- Foreground Color -->
+                <div class="option-item">
+                  <label for="qr-fg-color" class="form-label">Foreground Color</label>
+                  <div class="color-picker-group">
+                    <input type="color" id="qr-fg-color" value="#0F172A" class="form-color">
+                    <input type="text" id="qr-fg-text" value="#0F172A" class="form-text-small" maxlength="7">
+                  </div>
+                  <div class="swatches" id="fg-swatches">
+                    <button type="button" class="swatch" data-color="#0F172A" style="background:#0F172A" title="Dark Slate"></button>
+                    <button type="button" class="swatch" data-color="#00D2B8" style="background:#00D2B8" title="Electric Teal"></button>
+                    <button type="button" class="swatch" data-color="#4F46E5" style="background:#4F46E5" title="Indigo"></button>
+                    <button type="button" class="swatch" data-color="#E11D48" style="background:#E11D48" title="Rose Red"></button>
+                    <button type="button" class="swatch" data-color="#059669" style="background:#059669" title="Emerald"></button>
+                  </div>
+                </div>
+
+                <!-- Background Color -->
+                <div class="option-item">
+                  <label for="qr-bg-color" class="form-label">Background Color</label>
+                  <div class="color-picker-group">
+                    <input type="color" id="qr-bg-color" value="#FFFFFF" class="form-color">
+                    <input type="text" id="qr-bg-text" value="#FFFFFF" class="form-text-small" maxlength="7">
+                  </div>
+                  <div class="swatches" id="bg-swatches">
+                    <button type="button" class="swatch" data-color="#FFFFFF" style="background:#FFFFFF; border:1px solid #ccc" title="Pure White"></button>
+                    <button type="button" class="swatch" data-color="#F8FAFC" style="background:#F8FAFC; border:1px solid #ccc" title="Off White"></button>
+                    <button type="button" class="swatch" data-color="#F1F5F9" style="background:#F1F5F9; border:1px solid #ccc" title="Light Gray"></button>
+                    <button type="button" class="swatch" data-color="#FEF3C7" style="background:#FEF3C7" title="Warm Cream"></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="action-row">
+              <button type="button" id="btn-generate-text-qr" class="btn btn-primary btn-block">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v3m0 12v3M3 12h3m12 0h3"></path><path d="M5.6 5.6l2.1 2.1m8.6 8.6l2.1 2.1M5.6 18.4l2.1-2.1m8.6-8.6l2.1-2.1"></path></svg>
+                Generate QR Code
+              </button>
+            </div>
+          </div>
+
+          <!-- Preview & Export Card -->
+          <div class="card card-output">
+            <div class="card-header">
+              <h2 class="card-title">QR Code Preview</h2>
+              <span class="badge badge-success" id="encoder-status-badge">Custom ISO Engine</span>
+            </div>
+
+            <div class="preview-box">
+              <div class="canvas-wrapper" id="text-canvas-wrapper">
+                <canvas id="text-qr-canvas"></canvas>
+                <div class="placeholder-state" id="text-placeholder">
+                  <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"></rect><circle cx="9" cy="9" r="2"></circle><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"></path></svg>
+                  <p>Type text above to instantly encode into a scannable QR Code</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Encoder Metadata Info -->
+            <div id="encoder-stats-panel" class="encoder-stats-panel hidden">
+              <div class="stat-pill"><span class="pill-label">Version:</span> <strong id="stat-version">1 (21x21)</strong></div>
+              <div class="stat-pill"><span class="pill-label">Mask:</span> <strong id="stat-mask">Pattern 0</strong></div>
+              <div class="stat-pill"><span class="pill-label">EC Codewords:</span> <strong id="stat-ec">10 bytes</strong></div>
+            </div>
+
+            <div class="export-actions">
+              <button type="button" id="download-text-qr-btn" class="btn btn-secondary" disabled>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                Download PNG
+              </button>
+              <button type="button" id="copy-text-qr-btn" class="btn btn-outline" disabled>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg>
+                Copy Image
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ================= TAB 2: IMAGE TO QR ================= -->
+      <section id="tab-image-content" class="tab-panel" role="tabpanel" aria-labelledby="tab-image-btn">
+        <div class="panel-stack">
+          
+          <!-- Upload & Compression Card -->
+          <div class="card">
+            <div class="card-header">
+              <h2 class="card-title">Upload Image for Custom QR Encoding</h2>
+              <span class="badge badge-info">Capacity Optimized</span>
+            </div>
+
+            <!-- Warning Callout -->
+            <div class="alert alert-warning">
+              <div class="alert-icon">⚠️</div>
+              <div class="alert-content">
+                <strong>QR Code Storage Limits:</strong> QR codes have a strict physical limit of ~2,950 bytes. Our custom engine will progressively scale down and compress your image to a low-res thumbnail to fit inside the QR matrix!
+              </div>
+            </div>
+
+            <!-- Dropzone -->
+            <div class="dropzone" id="image-dropzone">
+              <input type="file" id="image-file-input" accept="image/jpeg,image/png,image/webp,image/gif" class="file-input-hidden">
+              <div class="dropzone-content">
+                <div class="dropzone-icon">
+                  <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"></path><path d="M12 12v9"></path><path d="m16 16-4-4-4 4"></path></svg>
+                </div>
+                <p class="dropzone-text"><strong>Click to browse</strong> or drag & drop an image file here</p>
+                <p class="dropzone-sub">Supports JPG, PNG, WebP (Max file size: 10MB)</p>
+              </div>
+            </div>
+
+            <!-- Paste Image Action for Encoding -->
+            <div class="paste-action-wrapper" style="margin-top: 1rem; text-align: center;">
+              <button type="button" id="btn-paste-encode-img" class="btn btn-secondary">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>
+                Paste Image from Clipboard (Ctrl+V)
+              </button>
+            </div>
+
+            <!-- Options & Compression Trigger -->
+            <div class="image-options-row">
+              <div class="option-item">
+                <label for="img-ecl-select" class="form-label">Error Correction Level</label>
+                <select id="img-ecl-select" class="form-select">
+                  <option value="L" selected>Level L (~2,950 bytes max capacity - Recommended)</option>
+                  <option value="M">Level M (~2,330 bytes max capacity)</option>
+                  <option value="Q">Level Q (~1,660 bytes max capacity)</option>
+                  <option value="H">Level H (~1,270 bytes max capacity)</option>
+                </select>
+              </div>
+              <div class="option-item">
+                <label for="img-qr-color" class="form-label">QR Module Color</label>
+                <div class="color-picker-group">
+                  <input type="color" id="img-qr-color" value="#0F172A" class="form-color">
+                  <input type="text" id="img-qr-color-text" value="#0F172A" class="form-text-small" maxlength="7">
+                </div>
+              </div>
+            </div>
+
+            <!-- Compression Live Status Box (Hidden by default) -->
+            <div id="compression-status-card" class="compression-status-card hidden">
+              <div class="status-header">
+                <div class="spinner-sm"></div>
+                <span id="compression-status-text">Initializing image compression loop...</span>
+              </div>
+              <div class="progress-bar-track">
+                <div id="compression-progress-bar" class="progress-bar-fill" style="width: 0%"></div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Results & Previews (Hidden until image processed) -->
+          <div id="image-results-container" class="image-results-container hidden">
+            
+            <!-- Side-by-Side Comparison -->
+            <div class="card">
+              <h3 class="card-title">Compression Comparison</h3>
+              <div class="side-by-side-grid">
+                
+                <!-- Original Image Card -->
+                <div class="compare-box">
+                  <h4 class="compare-title">Original Image</h4>
+                  <div class="img-preview-frame">
+                    <img id="orig-img-preview" src="" alt="Original upload preview">
+                  </div>
+                  <div class="compare-stats">
+                    <div class="stat-line"><span>File Size:</span> <strong id="orig-stat-size">0 KB</strong></div>
+                    <div class="stat-line"><span>Dimensions:</span> <strong id="orig-stat-dims">0 x 0 px</strong></div>
+                  </div>
+                </div>
+
+                <!-- Arrow divider -->
+                <div class="compare-arrow">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                </div>
+
+                <!-- Compressed Thumbnail Card -->
+                <div class="compare-box">
+                  <h4 class="compare-title">Encoded Thumbnail</h4>
+                  <div class="img-preview-frame pixelated">
+                    <img id="comp-img-preview" src="" alt="Compressed image thumbnail">
+                  </div>
+                  <div class="compare-stats">
+                    <div class="stat-line"><span>Compressed Size:</span> <strong id="comp-stat-size" class="text-teal">0 bytes</strong></div>
+                    <div class="stat-line"><span>Resolution:</span> <strong id="comp-stat-dims">0 x 0 px</strong></div>
+                    <div class="stat-line"><span>Reduction:</span> <strong id="comp-stat-savings" class="text-teal">0%</strong></div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Output QR Card -->
+            <div class="card card-output-image">
+              <div class="card-header">
+                <h2 class="card-title">Generated Custom Image QR Code</h2>
+                <span class="badge badge-success">Scannable QR</span>
+              </div>
+
+              <div class="image-qr-flex">
+                <div class="canvas-wrapper">
+                  <canvas id="image-qr-canvas"></canvas>
+                </div>
+                <div class="image-qr-info">
+                  <h3>Scannable Image Data QR</h3>
+                  <p>This QR code contains the full compressed Base64 data of your image. Scanning it with any QR reader (or our built-in custom Decoder tab) will restore your image!</p>
+                  <div class="export-actions">
+                    <button type="button" id="download-img-qr-btn" class="btn btn-primary">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                      Download Image QR PNG
+                    </button>
+                    <button type="button" id="copy-img-qr-btn" class="btn btn-secondary">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg>
+                      Copy Image QR Code
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Error Alert Card (Hidden unless compression fails) -->
+          <div id="image-error-card" class="alert alert-danger hidden">
+            <div class="alert-icon">❌</div>
+            <div class="alert-content">
+              <strong>Unable to fit image into QR limits:</strong>
+              <span id="image-error-message">This image is too complex to compress under the ~2.9 KB QR capacity limit. Please try a simpler icon, logo, or lower resolution image.</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ================= TAB 3: SCAN & DECODE QR ================= -->
+      <section id="tab-scan-content" class="tab-panel" role="tabpanel" aria-labelledby="tab-scan-btn">
+        <div class="panel-grid">
+
+          <!-- Scanner Input Mode Card -->
+          <div class="card">
+            <div class="card-header">
+              <h2 class="card-title">Scan QR Code (Custom Decoder)</h2>
+            </div>
+
+            <!-- Mode Selector Switcher -->
+            <div class="scan-mode-switcher">
+              <button type="button" id="mode-file-btn" class="btn-mode active">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>
+                Upload Image File
+              </button>
+              <button type="button" id="mode-camera-btn" class="btn-mode">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
+                Live Camera Scan
+              </button>
+            </div>
+
+            <!-- Mode 1: File Dropzone -->
+            <div id="scan-file-view" class="scan-view-section">
+              <div class="dropzone" id="scan-dropzone">
+                <input type="file" id="scan-file-input" accept="image/*" class="file-input-hidden">
+                <div class="dropzone-content">
+                  <div class="dropzone-icon">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="7" height="7" rx="1.5"></rect><rect x="14" y="3" width="7" height="7" rx="1.5"></rect><rect x="3" y="14" width="7" height="7" rx="1.5"></rect><path d="M14 14h3v3h-3z"></path><path d="M18 18h3v3h-3z"></path></svg>
+                  </div>
+                  <p class="dropzone-text"><strong>Upload a QR code image</strong> to decode</p>
+                  <p class="dropzone-sub">Drop QR image here or click to choose file</p>
+                </div>
+              </div>
+
+              <!-- Paste QR Code from Clipboard Action -->
+              <div class="paste-action-wrapper" style="margin-top: 1rem; text-align: center;">
+                <button type="button" id="btn-paste-scan" class="btn btn-secondary">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>
+                  Paste QR Code from Clipboard (Ctrl+V)
+                </button>
+              </div>
+            </div>
+
+            <!-- Mode 2: Camera Viewfinder -->
+            <div id="scan-camera-view" class="scan-view-section hidden">
+              <div class="camera-container">
+                <video id="scanner-video" playsinline></video>
+                <canvas id="scanner-canvas" class="hidden-canvas"></canvas>
+                
+                <!-- Target Box & Laser -->
+                <div class="scanner-target-overlay">
+                  <div class="corner corner-tl"></div>
+                  <div class="corner corner-tr"></div>
+                  <div class="corner corner-bl"></div>
+                  <div class="corner corner-br"></div>
+                  <div class="scan-laser-line"></div>
+                </div>
+
+                <div id="camera-loading" class="camera-status-overlay">
+                  <div class="spinner"></div>
+                  <p>Starting Camera Feed...</p>
+                </div>
+
+                <div id="camera-error" class="camera-status-overlay hidden">
+                  <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#E11D48" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+                  <p id="camera-error-msg">Camera permission denied or camera not available.</p>
+                  <button type="button" id="btn-retry-camera" class="btn btn-outline btn-sm">Retry Camera</button>
+                </div>
+              </div>
+
+              <div class="camera-controls">
+                <button type="button" id="btn-toggle-camera" class="btn btn-secondary">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.5 2v6h-6"></path><path d="M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"></path></svg>
+                  Flip Camera
+                </button>
+                <button type="button" id="btn-stop-camera" class="btn btn-outline">Stop Camera</button>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Decoded Results Card -->
+          <div class="card">
+            <div class="card-header">
+              <h2 class="card-title">Decoded Content</h2>
+              <span id="decode-type-badge" class="badge badge-neutral">Awaiting QR</span>
+            </div>
+
+            <!-- Empty State -->
+            <div id="decode-empty-state" class="placeholder-state">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"></rect><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"></path></svg>
+              <p>Upload a QR image or use live camera to decode with our custom engine.</p>
+            </div>
+
+            <!-- Decoded Output View (Hidden by default) -->
+            <div id="decode-result-view" class="decode-result-view hidden">
+              
+              <!-- Result Type 1: Text or URL -->
+              <div id="decode-text-container" class="decode-container hidden">
+                <label for="decoded-textarea" class="form-label">Decoded Payload:</label>
+                <textarea id="decoded-textarea" class="form-textarea readonly-text" readonly rows="5"></textarea>
+                <div class="decode-actions">
+                  <button type="button" id="btn-copy-decoded" class="btn btn-secondary">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg>
+                    Copy Text
+                  </button>
+                  <a id="btn-open-url" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary hidden">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                    Open Link
+                  </a>
+                </div>
+              </div>
+
+              <!-- Result Type 2: Decoded Base64 Image -->
+              <div id="decode-image-container" class="decode-container hidden">
+                <label class="form-label">Decoded Image Payload:</label>
+                <div class="decoded-img-frame">
+                  <img id="decoded-img-element" src="" alt="Decoded QR image content">
+                </div>
+                <div class="img-meta-row">
+                  <span id="decoded-img-dims" class="meta-tag">0 x 0 px</span>
+                  <span id="decoded-img-size" class="meta-tag">0 KB</span>
+                </div>
+                <div class="decode-actions">
+                  <button type="button" id="btn-download-decoded-img" class="btn btn-primary">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                    Download Decoded Image
+                  </button>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="app-footer">
+      <p>QR Code Studio &bull; Built with Pure HTML, CSS & Vanilla JavaScript &bull; ISO/IEC 18004 Spec Compliant</p>
+    </footer>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container" class="toast-container"></div>
+
+  <!-- JavaScript Modules (Loaded in dependency order) -->
+  <script src="qr-encoder.js"></script>
+  <script src="qr-decoder.js"></script>
+  <script src="image-compressor.js"></script>
+  <script src="ui.js"></script>
+</body>
+</html>
