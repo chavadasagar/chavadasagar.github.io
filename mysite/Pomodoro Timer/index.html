@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="A modern, mobile-friendly Pomodoro Timer with customizable work/break intervals, circular progress ring, sound notifications, screen wake lock, and weekly statistics.">
+  <meta name="theme-color" content="#12141a">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>Pomodoro Focus Timer</title>
+  
+  <!-- Google Fonts: Inter & JetBrains Mono for crisp digits -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+  <link id="dynamic-favicon" rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%23ff5e57'/><text y='.9em' x='50%' text-anchor='middle' font-size='60' fill='white'>🍅</text></svg>">
+</head>
+<body>
+  <div class="app-wrapper">
+    <!-- Header Navigation -->
+    <header class="app-header" id="app-header">
+      <div class="brand">
+        <span class="brand-icon">🍅</span>
+        <h1 class="brand-title">PomoFocus</h1>
+      </div>
+
+      <div class="header-actions">
+        <button id="btn-toggle-sound" class="icon-btn" aria-label="Toggle Sound Alert" title="Toggle Sound">
+          <svg class="icon icon-sound-on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+            <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+          </svg>
+          <svg class="icon icon-sound-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none;">
+            <line x1="1" y1="1" x2="23" y2="23"></line>
+            <path d="M9 9v3a3 3 0 0 0 5.12 2.12M15 9.34V4.5a2.5 2.5 0 0 0-5 0v.68"></path>
+            <path d="M17 16.95A7 7 0 0 1 5 12v-2m14 0v2a7 7 0 0 1-.11 1.23"></path>
+            <line x1="12" y1="19" x2="12" y2="23"></line>
+            <line x1="8" y1="23" x2="16" y2="23"></line>
+          </svg>
+        </button>
+
+        <button id="btn-open-stats" class="icon-btn" aria-label="View Statistics" title="Statistics">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 20V10"></path>
+            <path d="M12 20V4"></path>
+            <path d="M6 20v-6"></path>
+          </svg>
+        </button>
+
+        <button id="btn-open-settings" class="icon-btn" aria-label="Open Settings" title="Settings">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="3"></circle>
+            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="main-container">
+      <!-- Session Mode Selector Pills -->
+      <nav class="mode-selector" aria-label="Timer Mode Selector">
+        <button id="mode-work" class="mode-tab active" data-mode="work">
+          <span class="mode-dot"></span>
+          <span class="mode-label">Work</span>
+        </button>
+        <button id="mode-shortBreak" class="mode-tab" data-mode="shortBreak">
+          <span class="mode-dot"></span>
+          <span class="mode-label">Short Break</span>
+        </button>
+        <button id="mode-longBreak" class="mode-tab" data-mode="longBreak">
+          <span class="mode-dot"></span>
+          <span class="mode-label">Long Break</span>
+        </button>
+      </nav>
+
+      <!-- Centerpiece: Circular Timer Display -->
+      <div class="timer-card">
+        <div class="circle-container" id="circle-container">
+          <svg class="progress-ring" viewBox="0 0 320 320" width="100%" height="100%">
+            <defs>
+              <linearGradient id="ring-gradient-work" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="var(--accent-work-start)" />
+                <stop offset="100%" stop-color="var(--accent-work-end)" />
+              </linearGradient>
+              <linearGradient id="ring-gradient-short" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="var(--accent-short-start)" />
+                <stop offset="100%" stop-color="var(--accent-short-end)" />
+              </linearGradient>
+              <linearGradient id="ring-gradient-long" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="var(--accent-long-start)" />
+                <stop offset="100%" stop-color="var(--accent-long-end)" />
+              </linearGradient>
+              <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+                <feGaussianBlur stdDeviation="6" result="blur" />
+                <feComposite in="SourceGraphic" in2="blur" operator="over" />
+              </filter>
+            </defs>
+
+            <!-- Background Track -->
+            <circle
+              class="progress-ring-track"
+              cx="160"
+              cy="160"
+              r="140"
+            />
+            
+            <!-- Animated Progress Stroke -->
+            <circle
+              id="progress-stroke"
+              class="progress-ring-indicator"
+              cx="160"
+              cy="160"
+              r="140"
+              stroke="url(#ring-gradient-work)"
+            />
+          </svg>
+
+          <!-- Inside the Circle -->
+          <div class="timer-center-content">
+            <div id="session-badge" class="session-badge">Focus Session</div>
+            <div id="timer-display" class="timer-display" aria-live="polite">25:00</div>
+            <div class="cycle-tracker" id="cycle-tracker" title="Current cycle progress">
+              <!-- Dots dynamically generated by JS -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Extra Quick Controls (+1m, +5m) -->
+        <div class="quick-adjust-bar">
+          <button id="btn-add-1m" class="chip-btn" title="Add 1 minute">+1 min</button>
+          <button id="btn-add-5m" class="chip-btn" title="Add 5 minutes">+5 min</button>
+        </div>
+
+        <!-- Primary Action Controls -->
+        <div class="controls-container">
+          <button id="btn-reset" class="control-btn secondary-btn" aria-label="Reset Timer" title="Reset (R)">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
+              <path d="M3 3v5h5"></path>
+            </svg>
+          </button>
+
+          <button id="btn-main-action" class="control-btn primary-btn" aria-label="Start Timer" title="Start / Pause (Space)">
+            <span class="btn-icon-wrapper">
+              <svg id="icon-play" class="icon" viewBox="0 0 24 24" fill="currentColor">
+                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+              </svg>
+              <svg id="icon-pause" class="icon" viewBox="0 0 24 24" fill="currentColor" style="display:none;">
+                <rect x="6" y="4" width="4" height="16" rx="1"></rect>
+                <rect x="14" y="4" width="4" height="16" rx="1"></rect>
+              </svg>
+            </span>
+            <span id="label-main-action" class="btn-label">START</span>
+          </button>
+
+          <button id="btn-skip" class="control-btn secondary-btn" aria-label="Skip to next phase" title="Skip (S)">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="5 4 15 12 5 20 5 4"></polygon>
+              <line x1="19" y1="5" x2="19" y2="19"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Keep-Awake / Screen Wake Lock Notice Banner -->
+      <section class="wake-lock-card" id="wake-lock-card">
+        <div class="wake-lock-header">
+          <div class="wake-status-dot" id="wake-status-dot"></div>
+          <span class="wake-title" id="wake-title">Screen Keep-Awake: Active</span>
+          <button id="btn-toggle-wakelock" class="text-link-btn" title="Toggle Wake Lock">Toggle</button>
+        </div>
+        <p class="wake-desc" id="wake-desc">
+          Using the Screen Wake Lock API to prevent your phone or screen from going to sleep while focusing. 
+          <span class="wake-subnote">Note: If your browser locks or tab is hidden, audio alerts will still chime at session end.</span>
+        </p>
+      </section>
+
+      <!-- Mini Today Tracker Footbar -->
+      <div class="today-mini-summary" id="today-mini-summary">
+        <div class="summary-item">
+          <span class="summary-label">Today's Focus</span>
+          <span class="summary-value" id="mini-today-count">0 🍅</span>
+        </div>
+        <div class="summary-divider"></div>
+        <div class="summary-item">
+          <span class="summary-label">This Week</span>
+          <span class="summary-value" id="mini-week-count">0 🍅</span>
+        </div>
+        <div class="summary-divider"></div>
+        <div class="summary-item">
+          <span class="summary-label">Cycle</span>
+          <span class="summary-value" id="mini-cycle-count">1 / 4</span>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="app-footer">
+      <p class="footer-text">Press <kbd>Space</kbd> to Start/Pause &bull; <kbd>R</kbd> to Reset &bull; <kbd>S</kbd> to Skip</p>
+    </footer>
+  </div>
+
+  <!-- STATS MODAL SHEET -->
+  <div id="modal-stats" class="modal-backdrop" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-sheet">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <svg class="icon modal-header-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 20V10"></path>
+            <path d="M12 20V4"></path>
+            <path d="M6 20v-6"></path>
+          </svg>
+          <h2 class="modal-title">Productivity Stats</h2>
+        </div>
+        <button id="btn-close-stats" class="icon-btn modal-close-btn" aria-label="Close Statistics">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        <!-- Stats KPI Grid -->
+        <div class="stats-kpi-grid">
+          <div class="kpi-card">
+            <span class="kpi-icon">📅</span>
+            <div class="kpi-info">
+              <span class="kpi-value" id="kpi-today-sessions">0</span>
+              <span class="kpi-label">Today's Pomodoros</span>
+            </div>
+          </div>
+          <div class="kpi-card">
+            <span class="kpi-icon">🔥</span>
+            <div class="kpi-info">
+              <span class="kpi-value" id="kpi-week-sessions">0</span>
+              <span class="kpi-label">This Week Total</span>
+            </div>
+          </div>
+          <div class="kpi-card">
+            <span class="kpi-icon">⏱️</span>
+            <div class="kpi-info">
+              <span class="kpi-value" id="kpi-focus-hours">0h 0m</span>
+              <span class="kpi-label">Total Focus Time</span>
+            </div>
+          </div>
+          <div class="kpi-card">
+            <span class="kpi-icon">🎯</span>
+            <div class="kpi-info">
+              <span class="kpi-value" id="kpi-streak-days">0 days</span>
+              <span class="kpi-label">Active Streak</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7-Day Chart Section -->
+        <div class="chart-section">
+          <div class="chart-header">
+            <h3 class="chart-title">Last 7 Days Activity</h3>
+            <span class="chart-subtitle" id="chart-week-range">Recent Sessions</span>
+          </div>
+
+          <div class="chart-container" id="chart-container">
+            <!-- Dynamic SVG Bar Chart injected here -->
+          </div>
+
+          <div class="chart-legend">
+            <div class="legend-item">
+              <span class="legend-box current-day"></span>
+              <span>Today</span>
+            </div>
+            <div class="legend-item">
+              <span class="legend-box past-day"></span>
+              <span>Past Days</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stats Actions -->
+        <div class="stats-footer-actions">
+          <button id="btn-export-stats" class="secondary-btn btn-sm">Export Data (JSON)</button>
+          <button id="btn-reset-stats" class="danger-btn btn-sm">Reset History</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SETTINGS MODAL SHEET -->
+  <div id="modal-settings" class="modal-backdrop" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-sheet">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <svg class="icon modal-header-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="3"></circle>
+            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+          </svg>
+          <h2 class="modal-title">Settings</h2>
+        </div>
+        <button id="btn-close-settings" class="icon-btn modal-close-btn" aria-label="Close Settings">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        <!-- Timer Durations -->
+        <fieldset class="settings-group">
+          <legend class="settings-legend">Time (Minutes)</legend>
+          
+          <div class="input-grid">
+            <div class="input-field">
+              <label for="setting-work-duration">Focus Work</label>
+              <div class="stepper-input">
+                <input type="number" id="setting-work-duration" min="1" max="90" value="25" step="1">
+                <span class="unit">min</span>
+              </div>
+            </div>
+
+            <div class="input-field">
+              <label for="setting-short-duration">Short Break</label>
+              <div class="stepper-input">
+                <input type="number" id="setting-short-duration" min="1" max="30" value="5" step="1">
+                <span class="unit">min</span>
+              </div>
+            </div>
+
+            <div class="input-field">
+              <label for="setting-long-duration">Long Break</label>
+              <div class="stepper-input">
+                <input type="number" id="setting-long-duration" min="1" max="60" value="15" step="1">
+                <span class="unit">min</span>
+              </div>
+            </div>
+
+            <div class="input-field">
+              <label for="setting-cycle-sessions">Long Break Interval</label>
+              <div class="stepper-input">
+                <input type="number" id="setting-cycle-sessions" min="1" max="12" value="4" step="1">
+                <span class="unit">rounds</span>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- Automation & Flow -->
+        <fieldset class="settings-group">
+          <legend class="settings-legend">Automation</legend>
+          
+          <div class="toggle-row">
+            <div class="toggle-info">
+              <span class="toggle-title">Auto-start Breaks</span>
+              <span class="toggle-desc">Automatically begin break timer when focus session finishes</span>
+            </div>
+            <label class="switch">
+              <input type="checkbox" id="setting-auto-breaks">
+              <span class="slider"></span>
+            </label>
+          </div>
+
+          <div class="toggle-row">
+            <div class="toggle-info">
+              <span class="toggle-title">Auto-start Pomodoros</span>
+              <span class="toggle-desc">Automatically start next focus session after break</span>
+            </div>
+            <label class="switch">
+              <input type="checkbox" id="setting-auto-pomodoros">
+              <span class="slider"></span>
+            </label>
+          </div>
+        </fieldset>
+
+        <!-- Sound & Haptics -->
+        <fieldset class="settings-group">
+          <legend class="settings-legend">Sound & Notifications</legend>
+          
+          <div class="setting-row">
+            <label for="setting-sound-type" class="setting-row-label">Alarm Chime</label>
+            <div class="sound-select-group">
+              <select id="setting-sound-type" class="custom-select">
+                <option value="bell">Zen Bell</option>
+                <option value="marimba">Marimba Chime</option>
+                <option value="digital">Digital Pulse</option>
+                <option value="gong">Deep Gong</option>
+              </select>
+              <button id="btn-preview-sound" class="secondary-btn btn-sm" title="Test selected sound">▶ Test</button>
+            </div>
+          </div>
+
+          <div class="setting-row">
+            <label for="setting-sound-volume" class="setting-row-label">Alarm Volume</label>
+            <div class="range-slider-wrap">
+              <input type="range" id="setting-sound-volume" min="0" max="100" value="80" class="range-slider">
+              <span id="volume-val-display" class="volume-val">80%</span>
+            </div>
+          </div>
+
+          <div class="toggle-row">
+            <div class="toggle-info">
+              <span class="toggle-title">Vibration Haptics</span>
+              <span class="toggle-desc">Vibrate mobile device when timer expires (navigator.vibrate)</span>
+            </div>
+            <label class="switch">
+              <input type="checkbox" id="setting-vibrate" checked>
+              <span class="slider"></span>
+            </label>
+          </div>
+
+          <div class="toggle-row">
+            <div class="toggle-info">
+              <span class="toggle-title">Desktop Notifications</span>
+              <span class="toggle-desc">Notify when backgrounded or tab inactive</span>
+            </div>
+            <label class="switch">
+              <input type="checkbox" id="setting-notifications">
+              <span class="slider"></span>
+            </label>
+          </div>
+
+          <div class="toggle-row">
+            <div class="toggle-info">
+              <span class="toggle-title">Screen Keep-Awake</span>
+              <span class="toggle-desc">Request Screen Wake Lock API to prevent phone sleeping</span>
+            </div>
+            <label class="switch">
+              <input type="checkbox" id="setting-wakelock" checked>
+              <span class="slider"></span>
+            </label>
+          </div>
+        </fieldset>
+
+        <!-- Aesthetic Theme Selection -->
+        <fieldset class="settings-group">
+          <legend class="settings-legend">Color Theme</legend>
+          <div class="theme-picker" id="theme-picker">
+            <button class="theme-option active" data-theme-name="dark">
+              <span class="theme-swatch" style="background:#12141a; border: 2px solid #ff5e57;"></span>
+              <span class="theme-name">Midnight Dark</span>
+            </button>
+            <button class="theme-option" data-theme-name="oled">
+              <span class="theme-swatch" style="background:#000000; border: 2px solid #00f2fe;"></span>
+              <span class="theme-name">Pure OLED</span>
+            </button>
+            <button class="theme-option" data-theme-name="sunset">
+              <span class="theme-swatch" style="background:#1a101f; border: 2px solid #ff758c;"></span>
+              <span class="theme-name">Sunset Glow</span>
+            </button>
+            <button class="theme-option" data-theme-name="forest">
+              <span class="theme-swatch" style="background:#0d1b15; border: 2px solid #10b981;"></span>
+              <span class="theme-name">Forest Calm</span>
+            </button>
+          </div>
+        </fieldset>
+
+        <!-- Footer actions in settings -->
+        <div class="settings-footer-actions">
+          <button id="btn-restore-defaults" class="secondary-btn btn-sm">Restore Defaults</button>
+          <button id="btn-save-settings" class="primary-btn btn-sm">Save & Apply</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification element -->
+  <div id="toast" class="toast" role="alert" aria-live="assertive"></div>
+
+  <!-- Core JavaScript -->
+  <script src="app.js"></script>
+</body>
+</html>

@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-  <title>Age Calculator - jQuery UI Datepicker</title>
-  <meta name="description" content="Calculate your exact age in years, months, days using jQuery UI Datepicker." />
+  <title>Smart Calculators - Age, EMI & Income Tax Calculator</title>
+  <meta name="description" content="All-in-one mobile-friendly calculator suite for Age calculation, Home/Personal Loan EMI, and Income Tax calculation." />
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -27,138 +27,400 @@
       <div class="header-top">
         <div class="logo">
           <div class="logo-icon">
-            <i class="fa-solid fa-cake-candles"></i>
+            <i class="fa-solid fa-shapes"></i>
           </div>
-          <span>Age Calc</span>
+          <span>CalcHub</span>
         </div>
         <button class="theme-toggle" id="themeToggle" aria-label="Toggle Theme">
           <i class="fa-solid fa-sun"></i>
         </button>
       </div>
-      <p class="tagline">Calculate your exact age using jQuery UI Datepicker</p>
+      <p class="tagline">Smart, Fast & Mobile-Friendly Multi-Calculator Suite</p>
     </header>
 
-    <!-- Main Card -->
-    <main class="glass-card">
-      <div class="form-grid">
-        <!-- Date of Birth Input using jQuery UI Datepicker -->
-        <div class="form-group">
-          <label for="datepicker">
-            <i class="fa-regular fa-calendar-check" style="color: var(--accent-primary);"></i> Date of Birth
-          </label>
-          <div class="input-wrapper">
-            <i class="fa-solid fa-calendar-days input-icon"></i>
-            <input type="text" id="datepicker" placeholder="Select Birth Date" readonly />
-          </div>
-        </div>
+    <!-- Top Tab Navigation -->
+    <nav class="tab-navigation">
+      <button class="tab-btn active" data-target="age-panel">
+        <i class="fa-solid fa-cake-candles"></i> Age Calc
+      </button>
+      <button class="tab-btn" data-target="emi-panel">
+        <i class="fa-solid fa-calculator"></i> EMI Calc
+      </button>
+      <button class="tab-btn" data-target="tax-panel">
+        <i class="fa-solid fa-receipt"></i> Tax Calc
+      </button>
+    </nav>
 
-        <!-- Target Date Input using jQuery UI Datepicker -->
-        <div class="form-group">
-          <label for="targetDatepicker">
-            <i class="fa-solid fa-clock-history" style="color: var(--accent-primary);"></i> Age at Date (Today)
-          </label>
-          <div class="input-wrapper">
-            <i class="fa-solid fa-calendar-check input-icon"></i>
-            <input type="text" id="targetDatepicker" placeholder="Select Target Date" readonly />
-          </div>
-        </div>
-      </div>
-
-      <!-- Quick Preset Years -->
-      <div class="presets-bar">
-        <span style="font-size: 0.75rem; color: var(--text-muted); font-weight: 600;">Quick Presets:</span>
-        <button type="button" class="preset-chip" data-year="2005">2005</button>
-        <button type="button" class="preset-chip" data-year="2000">2000</button>
-        <button type="button" class="preset-chip" data-year="1995">1995</button>
-        <button type="button" class="preset-chip" data-year="1990">1990</button>
-        <button type="button" class="preset-chip" data-year="1985">1985</button>
-      </div>
-
-      <div class="error-msg" id="errorMsg">Please select a valid date of birth.</div>
-
-      <div class="btn-container">
-        <button class="btn btn-primary" id="calcBtn" type="button">
-          <i class="fa-solid fa-calculator"></i> Calculate Age
-        </button>
-        <button class="btn btn-secondary" id="resetBtn" type="button" title="Reset">
-          <i class="fa-solid fa-rotate-right"></i>
-        </button>
-      </div>
-    </main>
-
-    <!-- Results Section -->
-    <section class="results-container" id="resultsContainer">
-      <!-- Primary Card Output -->
-      <div class="glass-card" style="margin-bottom: 0;">
-        <div class="primary-results">
-          <div class="counter-card">
-            <div class="counter-value" id="yearsVal">0</div>
-            <div class="counter-label">Years</div>
-          </div>
-          <div class="counter-card">
-            <div class="counter-value" id="monthsVal">0</div>
-            <div class="counter-label">Months</div>
-          </div>
-          <div class="counter-card">
-            <div class="counter-value" id="daysVal">0</div>
-            <div class="counter-label">Days</div>
-          </div>
-        </div>
-
-        <!-- Next Birthday Banner -->
-        <div class="highlight-banner" style="margin-top: 1.2rem;">
-          <div class="banner-item">
-            <div class="banner-icon">
-              <i class="fa-solid fa-gift"></i>
-            </div>
-            <div class="banner-text">
-              <h4>Next Birthday</h4>
-              <p id="nextBdayText">-- Days Remaining</p>
+    <!-- ============================================== -->
+    <!-- 1. AGE CALCULATOR PANEL -->
+    <!-- ============================================== -->
+    <div class="calc-panel active" id="age-panel">
+      <!-- Main Card -->
+      <main class="glass-card">
+        <div class="form-grid">
+          <!-- Date of Birth Input using jQuery UI Datepicker -->
+          <div class="form-group">
+            <label for="datepicker">
+              <span><i class="fa-regular fa-calendar-check" style="color: var(--accent-primary);"></i> Date of Birth</span>
+            </label>
+            <div class="input-wrapper">
+              <i class="fa-solid fa-calendar-days input-icon"></i>
+              <input type="text" id="datepicker" placeholder="Select Birth Date" readonly />
             </div>
           </div>
-          <div class="banner-text" style="text-align: right;">
-            <p id="nextBdaySub" style="font-size: 0.85rem; color: var(--text-secondary);"></p>
+
+          <!-- Target Date Input using jQuery UI Datepicker -->
+          <div class="form-group">
+            <label for="targetDatepicker">
+              <span><i class="fa-solid fa-clock-history" style="color: var(--accent-primary);"></i> Age at Date (Today)</span>
+            </label>
+            <div class="input-wrapper">
+              <i class="fa-solid fa-calendar-check input-icon"></i>
+              <input type="text" id="targetDatepicker" placeholder="Select Target Date" readonly />
+            </div>
           </div>
         </div>
 
-        <!-- Lifetime Breakdown Grid -->
-        <div style="margin-top: 1.5rem;">
+        <!-- Quick Preset Years -->
+        <div class="presets-bar">
+          <span style="font-size: 0.75rem; color: var(--text-muted); font-weight: 600;">Quick Presets:</span>
+          <button type="button" class="preset-chip" data-year="2005">2005</button>
+          <button type="button" class="preset-chip" data-year="2000">2000</button>
+          <button type="button" class="preset-chip" data-year="1995">1995</button>
+          <button type="button" class="preset-chip" data-year="1990">1990</button>
+          <button type="button" class="preset-chip" data-year="1985">1985</button>
+        </div>
+
+        <div class="error-msg" id="errorMsg">Please select a valid date of birth.</div>
+
+        <div class="btn-container">
+          <button class="btn btn-primary" id="calcBtn" type="button">
+            <i class="fa-solid fa-calculator"></i> Calculate Age
+          </button>
+          <button class="btn btn-secondary" id="resetBtn" type="button" title="Reset">
+            <i class="fa-solid fa-rotate-right"></i>
+          </button>
+        </div>
+      </main>
+
+      <!-- Results Section -->
+      <section class="results-container" id="resultsContainer">
+        <div class="glass-card" style="margin-bottom: 0;">
+          <div class="primary-results">
+            <div class="counter-card">
+              <div class="counter-value" id="yearsVal">0</div>
+              <div class="counter-label">Years</div>
+            </div>
+            <div class="counter-card">
+              <div class="counter-value" id="monthsVal">0</div>
+              <div class="counter-label">Months</div>
+            </div>
+            <div class="counter-card">
+              <div class="counter-value" id="daysVal">0</div>
+              <div class="counter-label">Days</div>
+            </div>
+          </div>
+
+          <!-- Next Birthday Banner -->
+          <div class="highlight-banner" style="margin-top: 1.2rem;">
+            <div class="banner-item">
+              <div class="banner-icon">
+                <i class="fa-solid fa-gift"></i>
+              </div>
+              <div class="banner-text">
+                <h4>Next Birthday</h4>
+                <p id="nextBdayText">-- Days Remaining</p>
+              </div>
+            </div>
+            <div class="banner-text" style="text-align: right;">
+              <p id="nextBdaySub" style="font-size: 0.85rem; color: var(--text-secondary);"></p>
+            </div>
+          </div>
+
+          <!-- Lifetime Breakdown Grid -->
+          <div style="margin-top: 1.5rem;">
+            <div class="stats-header">
+              <i class="fa-solid fa-chart-pie" style="color: var(--accent-primary);"></i> Lifetime Summary
+            </div>
+            <div class="stats-grid">
+              <div class="stat-item">
+                <span class="stat-val" id="bornDayVal">--</span>
+                <span class="stat-lbl">Born On</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-val" id="zodiacVal">--</span>
+                <span class="stat-lbl">Zodiac Sign</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-val" id="totalMonthsVal">0</span>
+                <span class="stat-lbl">Total Months</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-val" id="totalWeeksVal">0</span>
+                <span class="stat-lbl">Total Weeks</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-val" id="totalDaysVal">0</span>
+                <span class="stat-lbl">Total Days</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-val" id="totalHoursVal">0</span>
+                <span class="stat-lbl">Total Hours</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ============================================== -->
+    <!-- 2. EMI CALCULATOR PANEL -->
+    <!-- ============================================== -->
+    <div class="calc-panel" id="emi-panel">
+      <main class="glass-card">
+        <div class="form-group" style="margin-bottom: 1.2rem;">
+          <label for="emiAmount">
+            <span><i class="fa-solid fa-sack-dollar" style="color: var(--color-green);"></i> Loan Amount</span>
+            <span id="emiAmountDisplay" style="color: var(--accent-primary); font-weight: 700;">₹ 10,00,000</span>
+          </label>
+          <div class="input-wrapper">
+            <i class="fa-solid fa-indian-rupee-sign input-icon"></i>
+            <input type="number" id="emiAmount" value="1000000" min="10000" max="100000000" step="10000" />
+          </div>
+          <div class="range-slider-wrapper">
+            <input type="range" id="emiAmountSlider" min="50000" max="10000000" step="25000" value="1000000" />
+            <div class="slider-labels">
+              <span>₹ 50 K</span>
+              <span>₹ 50 Lakh</span>
+              <span>₹ 1 Cr</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-grid">
+          <!-- Interest Rate -->
+          <div class="form-group">
+            <label for="emiRate">
+              <span><i class="fa-solid fa-percent" style="color: var(--accent-secondary);"></i> Interest Rate (% p.a.)</span>
+              <span id="emiRateDisplay" style="color: var(--accent-primary); font-weight: 700;">8.5 %</span>
+            </label>
+            <div class="input-wrapper">
+              <i class="fa-solid fa-chart-line input-icon"></i>
+              <input type="number" id="emiRate" value="8.5" min="1" max="30" step="0.1" />
+            </div>
+            <div class="range-slider-wrapper">
+              <input type="range" id="emiRateSlider" min="1" max="20" step="0.1" value="8.5" />
+              <div class="slider-labels">
+                <span>1%</span>
+                <span>10%</span>
+                <span>20%</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Loan Tenure -->
+          <div class="form-group">
+            <label for="emiTenure">
+              <span><i class="fa-solid fa-calendar-days" style="color: var(--color-blue);"></i> Loan Tenure (Years)</span>
+              <span id="emiTenureDisplay" style="color: var(--accent-primary); font-weight: 700;">5 Years</span>
+            </label>
+            <div class="input-wrapper">
+              <i class="fa-solid fa-hourglass-half input-icon"></i>
+              <input type="number" id="emiTenure" value="5" min="1" max="30" step="1" />
+            </div>
+            <div class="range-slider-wrapper">
+              <input type="range" id="emiTenureSlider" min="1" max="30" step="1" value="5" />
+              <div class="slider-labels">
+                <span>1 Yr</span>
+                <span>15 Yrs</span>
+                <span>30 Yrs</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn-container">
+          <button class="btn btn-primary" id="emiCalcBtn" type="button">
+            <i class="fa-solid fa-calculator"></i> Calculate EMI
+          </button>
+          <button class="btn btn-secondary" id="emiResetBtn" type="button" title="Reset">
+            <i class="fa-solid fa-rotate-right"></i>
+          </button>
+        </div>
+      </main>
+
+      <!-- EMI Results Card -->
+      <section class="results-container active" id="emiResultsContainer">
+        <div class="glass-card" style="margin-bottom: 0;">
+          <!-- Monthly EMI Banner -->
+          <div class="hero-stat-card">
+            <span class="hero-stat-label">Monthly EMI Payment</span>
+            <div class="hero-stat-val" id="monthlyEmiVal">₹ 20,517</div>
+          </div>
+
+          <!-- Total Payment Details Grid -->
+          <div class="stats-grid" style="grid-template-columns: 1fr 1fr; margin-bottom: 1rem;">
+            <div class="stat-item">
+              <span class="stat-val" id="totalPrincipalVal" style="color: var(--color-green);">₹ 10,00,000</span>
+              <span class="stat-lbl">Principal Amount</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-val" id="totalInterestVal" style="color: var(--color-purple);">₹ 2,30,992</span>
+              <span class="stat-lbl">Total Interest</span>
+            </div>
+          </div>
+
+          <div class="stat-item" style="margin-bottom: 1.2rem;">
+            <span class="stat-val" id="totalPaymentVal" style="color: var(--accent-primary);">₹ 12,30,992</span>
+            <span class="stat-lbl">Total Amount Payable (Principal + Interest)</span>
+          </div>
+
+          <!-- Visual Breakdown Split Bar -->
           <div class="stats-header">
-            <i class="fa-solid fa-chart-pie" style="color: var(--accent-primary);"></i> Lifetime Summary
+            <i class="fa-solid fa-chart-pie" style="color: var(--accent-primary);"></i> Payment Breakdown
           </div>
-          <div class="stats-grid">
-            <div class="stat-item">
-              <span class="stat-val" id="bornDayVal">--</span>
-              <span class="stat-lbl">Born On</span>
+          <div class="progress-split-bar">
+            <div class="bar-principal" id="barPrincipal" style="width: 81.2%;"></div>
+            <div class="bar-interest" id="barInterest" style="width: 18.8%;"></div>
+          </div>
+          <div class="progress-legend">
+            <div class="legend-item">
+              <span class="legend-dot" style="background: var(--color-green);"></span>
+              <span>Principal: <strong id="principalPercent">81.2%</strong></span>
             </div>
-            <div class="stat-item">
-              <span class="stat-val" id="zodiacVal">--</span>
-              <span class="stat-lbl">Zodiac Sign</span>
-            </div>
-            <div class="stat-item">
-              <span class="stat-val" id="totalMonthsVal">0</span>
-              <span class="stat-lbl">Total Months</span>
-            </div>
-            <div class="stat-item">
-              <span class="stat-val" id="totalWeeksVal">0</span>
-              <span class="stat-lbl">Total Weeks</span>
-            </div>
-            <div class="stat-item">
-              <span class="stat-val" id="totalDaysVal">0</span>
-              <span class="stat-lbl">Total Days</span>
-            </div>
-            <div class="stat-item">
-              <span class="stat-val" id="totalHoursVal">0</span>
-              <span class="stat-lbl">Total Hours</span>
+            <div class="legend-item">
+              <span class="legend-dot" style="background: var(--color-purple);"></span>
+              <span>Interest: <strong id="interestPercent">18.8%</strong></span>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
+
+    <!-- ============================================== -->
+    <!-- 3. INCOME TAX CALCULATOR PANEL -->
+    <!-- ============================================== -->
+    <div class="calc-panel" id="tax-panel">
+      <main class="glass-card">
+        <div class="form-grid">
+          <!-- Annual Income -->
+          <div class="form-group">
+            <label for="taxIncome">
+              <span><i class="fa-solid fa-money-bill-wave" style="color: var(--color-green);"></i> Annual Gross Salary (₹)</span>
+            </label>
+            <div class="input-wrapper">
+              <i class="fa-solid fa-indian-rupee-sign input-icon"></i>
+              <input type="number" id="taxIncome" value="1200000" min="100000" step="50000" />
+            </div>
+          </div>
+
+          <!-- Standard Deduction (Auto-filled) -->
+          <div class="form-group">
+            <label for="taxStdDeduction">
+              <span><i class="fa-solid fa-shield-halved" style="color: var(--color-blue);"></i> Standard Deduction (₹)</span>
+            </label>
+            <div class="input-wrapper">
+              <i class="fa-solid fa-receipt input-icon"></i>
+              <input type="number" id="taxStdDeduction" value="75000" min="0" step="5000" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Optional Deductions for Old Regime -->
+        <div style="margin-top: 1.2rem;">
+          <div class="stats-header" style="font-size: 0.95rem;">
+            <i class="fa-solid fa-tags" style="color: var(--accent-primary);"></i> Old Regime Deductions (Optional)
+          </div>
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="tax80C">Section 80C (PPF, ELSS, EPF max 1.5L)</label>
+              <div class="input-wrapper">
+                <i class="fa-solid fa-piggy-bank input-icon"></i>
+                <input type="number" id="tax80C" value="150000" min="0" max="150000" step="10000" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="tax80D">Section 80D (Health Insurance)</label>
+              <div class="input-wrapper">
+                <i class="fa-solid fa-heart-pulse input-icon"></i>
+                <input type="number" id="tax80D" value="25000" min="0" max="100000" step="5000" />
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group" style="margin-top: 0.8rem;">
+            <label for="taxOther">Other Exemptions (HRA, Home Loan Int, NPS)</label>
+            <div class="input-wrapper">
+              <i class="fa-solid fa-house-chimney input-icon"></i>
+              <input type="number" id="taxOther" value="0" min="0" step="10000" />
+            </div>
+          </div>
+        </div>
+
+        <div class="btn-container">
+          <button class="btn btn-primary" id="taxCalcBtn" type="button">
+            <i class="fa-solid fa-calculator"></i> Calculate Tax
+          </button>
+          <button class="btn btn-secondary" id="taxResetBtn" type="button" title="Reset">
+            <i class="fa-solid fa-rotate-right"></i>
+          </button>
+        </div>
+      </main>
+
+      <!-- Tax Results Section -->
+      <section class="results-container active" id="taxResultsContainer">
+        <div class="glass-card" style="margin-bottom: 0;">
+          <!-- Monthly In-Hand Takehome Salary -->
+          <div class="hero-stat-card">
+            <span class="hero-stat-label">Monthly In-Hand Salary (New Regime)</span>
+            <div class="hero-stat-val" id="monthlyTakeHomeVal">₹ 94,167</div>
+          </div>
+
+          <!-- Comparison Grid: New vs Old Regime -->
+          <div class="regime-comparison-box">
+            <!-- New Regime Card -->
+            <div class="regime-card" id="newRegimeCard">
+              <span class="regime-badge" id="newRegimeBadge">Recommended</span>
+              <h4 style="color: var(--accent-primary);">New Tax Regime</h4>
+              <div style="font-size: 1.4rem; font-weight: 800;" id="newTaxTotal">₹ 70,000</div>
+              <p style="font-size: 0.82rem; color: var(--text-secondary);">Tax + 4% Cess Included</p>
+              <div style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.3rem;">
+                Effective Rate: <strong id="newTaxRate">5.8%</strong>
+              </div>
+            </div>
+
+            <!-- Old Regime Card -->
+            <div class="regime-card" id="oldRegimeCard">
+              <span class="regime-badge" id="oldRegimeBadge" style="display: none;">Recommended</span>
+              <h4 style="color: var(--text-primary);">Old Tax Regime</h4>
+              <div style="font-size: 1.4rem; font-weight: 800;" id="oldTaxTotal">₹ 1,17,000</div>
+              <p style="font-size: 0.82rem; color: var(--text-secondary);">Tax + 4% Cess Included</p>
+              <div style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.3rem;">
+                Effective Rate: <strong id="oldTaxRate">9.8%</strong>
+              </div>
+            </div>
+          </div>
+
+          <!-- Recommendation Banner -->
+          <div class="highlight-banner" style="margin-top: 1.2rem;">
+            <div class="banner-item">
+              <div class="banner-icon" style="background: rgba(16, 185, 129, 0.15); color: var(--color-green);">
+                <i class="fa-solid fa-coins"></i>
+              </div>
+              <div class="banner-text">
+                <h4 id="taxSavingTitle">Tax Savings Suggestion</h4>
+                <p id="taxSavingAdvice" style="font-size: 1.05rem;">🎉 You save ₹47,000 under the New Tax Regime!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
 
     <!-- Footer -->
     <footer>
-      Crafted with <i class="fa-solid fa-heart" style="color: #ec4899;"></i> | Responsive Age Calculator
+      Crafted with <i class="fa-solid fa-heart" style="color: #ec4899;"></i> | All-in-One Mobile-Friendly Calculators
     </footer>
   </div>
 

@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="theme-color" content="#6366f1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="SpendFlow">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="description" content="Mobile-first, modern Expense Tracker web app with localStorage persistence, visual charts, swipe gestures, and CSV export.">
+  <title>SpendFlow | Modern Mobile Expense Tracker</title>
+  
+  <!-- Modern SVG Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%236366f1' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='2' y='5' width='20' height='14' rx='3' fill='%236366f1' stroke='%234f46e5'/%3E%3Cpath d='M16 12h4' stroke='%23ffffff' stroke-width='2.5'/%3E%3Ccircle cx='18' cy='12' r='1' fill='%23ffffff'/%3E%3Cpath d='M6 9l3 3 4-4' stroke='%2310b981' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+
+  <!-- Google Fonts: Outfit & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top App Wrapper -->
+  <div class="app-wrapper">
+    
+    <!-- App Header -->
+    <header class="app-header">
+      <div class="brand-section">
+        <div class="brand-icon" aria-label="SpendFlow Logo">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+            <!-- Modern Fintech Smart Wallet with Growth Pulse -->
+            <rect x="2" y="5" width="20" height="15" rx="3"></rect>
+            <path d="M16 12.5h4.5a1.5 1.5 0 0 1 0 3H16v-3z" fill="rgba(255,255,255,0.3)"></path>
+            <circle cx="18" cy="14" r="0.8" fill="currentColor"></circle>
+            <polyline points="6 15 9 11 12 14 15 10"></polyline>
+          </svg>
+        </div>
+        <div class="brand-info">
+          <h1>SpendFlow</h1>
+          <span class="app-subtitle">Smart Personal Finance</span>
+        </div>
+      </div>
+
+      <div class="header-actions">
+        <!-- Theme Toggle -->
+        <button id="themeToggleBtn" class="icon-btn" title="Toggle Light/Dark Theme" aria-label="Toggle Theme">
+          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+        
+        <!-- Settings Modal Trigger -->
+        <button id="openSettingsBtn" class="icon-btn" title="Settings & Currency" aria-label="Settings">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="3"></circle>
+            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+          </svg>
+        </button>
+
+        <!-- Desktop Add Transaction Button -->
+        <button id="desktopAddBtn" class="desktop-add-btn" aria-label="Add Transaction">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="5" x2="12" y2="19"></line>
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+          </svg>
+          <span>Add Entry</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Month Navigation Bar -->
+    <div class="month-nav-bar">
+      <button id="prevMonthBtn" class="nav-arrow-btn" aria-label="Previous Month">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+      </button>
+
+      <div class="month-nav-title" id="currentMonthDisplay" title="Select Month & Year">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+          <line x1="16" y1="2" x2="16" y2="6"></line>
+          <line x1="8" y1="2" x2="8" y2="6"></line>
+          <line x1="3" y1="10" x2="21" y2="10"></line>
+        </svg>
+        <span id="monthYearText">August 2026</span>
+      </div>
+
+      <div style="display: flex; align-items: center; gap: 0.4rem;">
+        <button id="jumpToTodayBtn" class="month-today-btn">This Month</button>
+        <button id="nextMonthBtn" class="nav-arrow-btn" aria-label="Next Month">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Monthly Summary Cards Grid -->
+    <section class="summary-grid" aria-label="Monthly Financial Summary">
+      
+      <!-- Total Income Card -->
+      <div class="summary-card income-card">
+        <div class="card-header-flex">
+          <span class="card-label">Total Income</span>
+          <div class="card-icon-pill">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="12" y1="19" x2="12" y2="5"></line>
+              <polyline points="5 12 12 5 19 12"></polyline>
+            </svg>
+          </div>
+        </div>
+        <div class="card-amount" id="totalIncomeAmount">₹0.00</div>
+        <div class="card-footer-info">
+          <span id="incomeEntriesCount">0 entries</span>
+          <span style="color: var(--income); font-weight: 600;">+ Received</span>
+        </div>
+      </div>
+
+      <!-- Total Expense Card -->
+      <div class="summary-card expense-card">
+        <div class="card-header-flex">
+          <span class="card-label">Total Expense</span>
+          <div class="card-icon-pill">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <polyline points="19 12 12 19 5 12"></polyline>
+            </svg>
+          </div>
+        </div>
+        <div class="card-amount" id="totalExpenseAmount">₹0.00</div>
+        <div class="card-footer-info">
+          <span id="expenseEntriesCount">0 entries</span>
+          <span style="color: var(--expense); font-weight: 600;">- Spent</span>
+        </div>
+      </div>
+
+      <!-- Net Balance Card -->
+      <div class="summary-card net-balance">
+        <div class="card-header-flex">
+          <span class="card-label">Net Balance</span>
+          <div class="card-icon-pill">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="card-amount" id="netBalanceAmount">₹0.00</div>
+        <div class="card-footer-info">
+          <span>Savings Rate</span>
+          <div class="savings-rate-badge positive" id="savingsRateBadge">0%</div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Main Dashboard Split Grid -->
+    <main class="main-dashboard-grid">
+
+      <!-- Left Analytics Column: Category Breakdown Pie / Doughnut Chart -->
+      <aside class="analytics-section">
+        <div class="section-header">
+          <h2 class="section-title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path>
+              <path d="M22 12A10 10 0 0 0 12 2v10z"></path>
+            </svg>
+            <span>Breakdown</span>
+          </h2>
+          <span id="chartTypeLabel" style="font-size: 0.76rem; color: var(--text-muted); font-weight: 600;">Expense Share</span>
+        </div>
+
+        <div class="chart-container-wrapper" id="chartWrapper">
+          <div class="chart-canvas-box" id="canvasBox">
+            <canvas id="categoryPieChart" width="200" height="200"></canvas>
+            <div class="chart-center-label" id="chartCenterLabel">
+              <div class="center-count" id="chartCenterCount">0</div>
+              <div class="center-text">Entries</div>
+            </div>
+          </div>
+          
+          <!-- Category Legend / Breakdown list -->
+          <div class="category-breakdown-list" id="categoryBreakdownList">
+            <!-- Dynamically injected -->
+          </div>
+
+          <!-- Empty Chart State -->
+          <div class="chart-empty-state" id="chartEmptyState" style="display: none;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="12" y1="8" x2="12" y2="12"></line>
+              <line x1="12" y1="16" x2="12.01" y2="16"></line>
+            </svg>
+            <p>No expense data in this period to chart</p>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Right Column: Transactions Feed & Filtering -->
+      <section class="transactions-section">
+        
+        <!-- Filter & Search Toolbar -->
+        <div class="filter-toolbar">
+          
+          <!-- Search Bar -->
+          <div class="search-input-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input type="text" id="searchInput" class="search-input" placeholder="Search by note, category, amount..." autocomplete="off">
+            <button id="searchClearBtn" class="search-clear-btn" aria-label="Clear Search">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+              </svg>
+            </button>
+          </div>
+
+          <!-- Filter Controls Row -->
+          <div class="filter-row">
+            
+            <!-- Category Filter Dropdown -->
+            <select id="categoryFilter" class="filter-select" aria-label="Filter by category">
+              <option value="ALL">All Categories</option>
+              <option value="Food">🍔 Food</option>
+              <option value="Travel">✈️ Travel</option>
+              <option value="Bills">💡 Bills</option>
+              <option value="Shopping">🛍️ Shopping</option>
+              <option value="Other">📦 Other</option>
+              <option value="Salary">💰 Salary (Income)</option>
+              <option value="Freelance">💻 Freelance (Income)</option>
+              <option value="Investment">📈 Investment (Income)</option>
+            </select>
+
+            <!-- Date Range Selector -->
+            <select id="dateRangeFilter" class="filter-select" aria-label="Filter by date range">
+              <option value="THIS_MONTH">Selected Month</option>
+              <option value="ALL_TIME">All Time</option>
+              <option value="LAST_7_DAYS">Last 7 Days</option>
+              <option value="LAST_30_DAYS">Last 30 Days</option>
+            </select>
+
+            <!-- Quick CSV Export Button -->
+            <button id="exportCsvBtn" class="export-btn-toolbar" title="Export filtered records to CSV">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              <span>Export CSV</span>
+            </button>
+
+          </div>
+
+          <!-- Transaction Type Tabs (All / Expense / Income) -->
+          <div class="type-filter-tabs">
+            <button class="type-tab-btn active" data-type="ALL">All Transactions</button>
+            <button class="type-tab-btn" data-type="expense">Expenses Only</button>
+            <button class="type-tab-btn" data-type="income">Income Only</button>
+          </div>
+
+        </div>
+
+        <!-- Recent Transactions Container (Grouped by Date) -->
+        <div class="transactions-container" id="transactionsContainer">
+          <!-- Transactions will be dynamically rendered here -->
+        </div>
+
+        <!-- Empty State UI -->
+        <div class="empty-state-card" id="emptyStateCard" style="display: none;">
+          <div class="empty-state-illustration">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+              <line x1="6" y1="8" x2="10" y2="8"></line>
+              <line x1="6" y1="12" x2="14" y2="12"></line>
+              <line x1="6" y1="16" x2="18" y2="16"></line>
+            </svg>
+          </div>
+          <h3 class="empty-title">No transactions found</h3>
+          <p class="empty-subtitle">You haven't recorded any entries for this period or filter. Tap below to log your first one!</p>
+          <button id="emptyAddBtn" class="empty-add-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+            <span>Add First Entry</span>
+          </button>
+        </div>
+
+      </section>
+
+    </main>
+
+  </div>
+
+  <!-- Mobile Bottom Sticky Navigation Bar -->
+  <nav class="mobile-bottom-bar" aria-label="Mobile Navigation">
+    <button class="bottom-nav-item active" id="mobileHomeNavBtn">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+      </svg>
+      <span>Dashboard</span>
+    </button>
+
+    <!-- Floating Center Add Action -->
+    <button class="mobile-fab-center" id="mobileFabAddBtn" aria-label="Add Entry">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="12" y1="5" x2="12" y2="19"></line>
+        <line x1="5" y1="12" x2="19" y2="12"></line>
+      </svg>
+    </button>
+
+    <button class="bottom-nav-item" id="mobileSettingsNavBtn">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="3"></circle>
+        <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+      </svg>
+      <span>Settings</span>
+    </button>
+  </nav>
+
+  <!-- ==========================================================================
+       BOTTOM-SHEET / FULL-SCREEN MODAL: ADD / EDIT TRANSACTION
+       ========================================================================== -->
+  <div class="modal-backdrop" id="entryModalBackdrop" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-sheet" id="entryModalSheet">
+      <div class="sheet-drag-handle"></div>
+      
+      <div class="sheet-header">
+        <h2 class="sheet-title" id="modalTitle">Add Transaction</h2>
+        <button class="sheet-close-btn" id="closeEntryModalBtn" aria-label="Close dialog">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <form id="entryForm" novalidate>
+        <input type="hidden" id="entryId" value="">
+
+        <!-- Expense / Income Toggle Switch -->
+        <div class="form-type-toggle">
+          <button type="button" class="toggle-option-btn active expense" id="toggleExpenseBtn" data-type="expense">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <polyline points="19 12 12 19 5 12"></polyline>
+            </svg>
+            <span>Expense</span>
+          </button>
+          <button type="button" class="toggle-option-btn income" id="toggleIncomeBtn" data-type="income">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="12" y1="19" x2="12" y2="5"></line>
+              <polyline points="5 12 12 5 19 12"></polyline>
+            </svg>
+            <span>Income</span>
+          </button>
+        </div>
+
+        <!-- Amount Input with live currency symbol -->
+        <div class="form-group">
+          <label class="form-label" for="entryAmount">Amount *</label>
+          <div class="input-with-symbol">
+            <span class="currency-addon" id="inputCurrencyAddon">₹</span>
+            <input type="number" id="entryAmount" class="form-input-amount" placeholder="0" step="any" min="0.01" inputmode="decimal" required>
+          </div>
+          <span class="field-error" id="amountError">Please enter a valid positive amount</span>
+        </div>
+
+        <!-- Category Selection Pills Grid -->
+        <div class="form-group">
+          <label class="form-label">Category *</label>
+          <input type="hidden" id="entryCategory" value="Food" required>
+          <div class="category-pills-row" id="categoryPillsRow">
+            <!-- Dynamically injected category pills -->
+          </div>
+          <span class="field-error" id="categoryError">Please select a category</span>
+        </div>
+
+        <!-- Date Input -->
+        <div class="form-group">
+          <label class="form-label" for="entryDate">Date *</label>
+          <input type="date" id="entryDate" class="form-input" required>
+          <span class="field-error" id="dateError">Please select a valid date</span>
+        </div>
+
+        <!-- Note / Description Input -->
+        <div class="form-group">
+          <label class="form-label" for="entryNote">Note / Description</label>
+          <input type="text" id="entryNote" class="form-input" placeholder="e.g., Grocery, Taxi, Dinner, Shopping" maxlength="80">
+        </div>
+
+        <!-- Form Actions -->
+        <div class="form-actions">
+          <button type="button" class="btn-secondary" id="cancelEntryBtn">Cancel</button>
+          <button type="submit" class="btn-primary-submit" id="saveEntryBtn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+            <span id="saveBtnText">Save Entry</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       SETTINGS & PREFERENCES MODAL
+       ========================================================================== -->
+  <div class="modal-backdrop" id="settingsModalBackdrop" role="dialog" aria-modal="true" aria-labelledby="settingsTitle">
+    <div class="modal-sheet" id="settingsModalSheet">
+      <div class="sheet-drag-handle"></div>
+
+      <div class="sheet-header">
+        <h2 class="sheet-title" id="settingsTitle">Preferences & Data</h2>
+        <button class="sheet-close-btn" id="closeSettingsModalBtn" aria-label="Close Settings">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Currency Selection Setting -->
+      <div class="settings-group">
+        <div class="settings-label-box">
+          <span class="settings-title">Display Currency</span>
+          <span class="settings-desc">Choose your preferred currency symbol</span>
+        </div>
+
+        <div class="currency-selector-grid" id="currencyGrid">
+          <button type="button" class="currency-option active" data-symbol="₹" data-code="INR">
+            <span class="cur-symbol">₹</span>
+            <span class="cur-code">INR (₹)</span>
+          </button>
+          <button type="button" class="currency-option" data-symbol="$" data-code="USD">
+            <span class="cur-symbol">$</span>
+            <span class="cur-code">USD ($)</span>
+          </button>
+          <button type="button" class="currency-option" data-symbol="€" data-code="EUR">
+            <span class="cur-symbol">€</span>
+            <span class="cur-code">EUR (€)</span>
+          </button>
+          <button type="button" class="currency-option" data-symbol="£" data-code="GBP">
+            <span class="cur-symbol">£</span>
+            <span class="cur-code">GBP (£)</span>
+          </button>
+          <button type="button" class="currency-option" data-symbol="¥" data-code="JPY">
+            <span class="cur-symbol">¥</span>
+            <span class="cur-code">JPY (¥)</span>
+          </button>
+          <button type="button" class="currency-option" data-symbol="₩" data-code="KRW">
+            <span class="cur-symbol">₩</span>
+            <span class="cur-code">KRW (₩)</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- CSV Data Export -->
+      <div class="settings-group">
+        <div class="settings-row">
+          <div class="settings-label-box">
+            <span class="settings-title">Export All Data</span>
+            <span class="settings-desc">Download complete history as CSV</span>
+          </div>
+          <button class="export-btn-toolbar" id="settingsExportCsvBtn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            <span>Download CSV</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Sample Demo Data Generator -->
+      <div class="settings-group">
+        <div class="settings-row">
+          <div class="settings-label-box">
+            <span class="settings-title">Sample Demo Data</span>
+            <span class="settings-desc">Populate realistic test transactions</span>
+          </div>
+          <button class="export-btn-toolbar" id="loadDemoDataBtn">
+            <span>Load Demo Data</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Danger Zone: Reset Data -->
+      <div class="settings-group">
+        <div class="settings-label-box" style="margin-bottom: 0.5rem;">
+          <span class="settings-title" style="color: var(--expense);">Danger Zone</span>
+          <span class="settings-desc">Wipe all stored data from localStorage</span>
+        </div>
+        <button type="button" class="danger-btn" id="resetAllDataBtn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 16px; height: 16px;">
+            <polyline points="3 6 5 6 21 6"></polyline>
+            <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+          </svg>
+          <span>Reset All Transactions</span>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <!-- Vanilla JavaScript Application Logic -->
+  <script src="js/app.js"></script>
+</body>
+</html>

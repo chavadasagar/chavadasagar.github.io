@@ -1,121 +1,341 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>TODO</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+<html lang="hi" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#4f46e5" />
+  <meta name="description" content="Modern, sleek, mobile-friendly Todo & Kanban Board Web App with local storage." />
+  <title>TaskMaster • Modern Todo & Kanban Board</title>
 
-    <link rel="icon" type="image/x-icon" href="siteicon/todo.ico">
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  </head>
-  <body>
-    <div class="container p-2 pl-5">
-      <h1 class="display-1">To-do</h1>
-      <hr />
-    </div>
-    <div class="container mt-3">
-      <input
-        type="text"
-        class="form-control"
-        placeholder="Todo Name"
-        id="todo"
-      />
+  <!-- Google Fonts: Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
 
-      <div class="form-group">
-        <button
-          class="btn btn-primary mt-2 btn-sm"
-          style="word-wrap: break-word"
-          onclick="addtodo()"
-        >
-          Add Todo
-        </button>
-        <button class="btn btn-danger mt-2 btn-sm" onclick="clearalltodo()">
-          Clear All
-        </button>
+  <!-- FontAwesome 6 CDN for modern icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- SweetAlert2 for modern alerts and confirmations -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" />
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/x-icon" href="siteicon/todo.ico" />
+</head>
+<body>
+  <div class="app-container">
+    
+    <!-- Top Header Card -->
+    <header class="app-header">
+      <div class="header-top">
+        <div class="brand-wrapper">
+          <div class="brand-icon">
+            <i class="fa-solid fa-layer-group"></i>
+          </div>
+          <div>
+            <h1 class="brand-title">TaskMaster</h1>
+            <span class="brand-subtitle" id="greeting-text">Daily Task & Kanban Board</span>
+          </div>
+        </div>
+
+        <div class="header-actions">
+          <!-- View Switcher (Kanban vs List) -->
+          <div class="view-switcher" role="group" aria-label="View Mode">
+            <button class="view-btn active" id="view-kanban-btn" onclick="switchView('kanban')" title="Kanban Board View">
+              <i class="fa-solid fa-table-columns"></i> <span>Kanban</span>
+            </button>
+            <button class="view-btn" id="view-list-btn" onclick="switchView('list')" title="List View">
+              <i class="fa-solid fa-list-check"></i> <span>List</span>
+            </button>
+          </div>
+
+          <button id="theme-toggle-btn" class="icon-btn" title="Toggle Dark / Light Mode" aria-label="Toggle Dark / Light Mode">
+            <i class="fa-solid fa-moon" id="theme-icon"></i>
+          </button>
+          <button id="export-btn" class="icon-btn" title="Export Backup" aria-label="Export Backup">
+            <i class="fa-solid fa-file-export"></i>
+          </button>
+        </div>
       </div>
-    </div>
 
-    <div class="container mt-4">
-      <div class="list-group">
-        <a href="#" class="list-group-item list-group-item-action active">
-          Todos
-        </a>
-        <div class="alltodo"></div>
+      <!-- Date & Status Meta -->
+      <div class="header-meta">
+        <div class="date-badge">
+          <i class="fa-regular fa-calendar-days"></i>
+          <span id="current-date-display">Today</span>
+        </div>
+        <div class="stats-badge-group">
+          <span class="stat-pill" id="stat-total">0 Tasks</span>
+          <span class="stat-pill inprogress" id="stat-inprogress">0 In Progress</span>
+          <span class="stat-pill done" id="stat-completed">0 Done</span>
+        </div>
       </div>
-    </div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-      ></script>
-      <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-      ></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  </body>
-</html>
-
-
-<!-- Modal -->
-<div
-  class="modal fade"
-  id="exampleModalCenter"
-  tabindex="-1"
-  role="dialog"
-  aria-labelledby="exampleModalCenterTitle"
-  aria-hidden="true"
->
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Update Todo</h5>
-        <button
-          type="button"
-          class="close"
-          data-dismiss="modal"
-          aria-label="Close"
-        >
-          <span aria-hidden="true">&times;</span>
-        </button>
+      <!-- Live Progress Bar -->
+      <div class="progress-container">
+        <div class="progress-info">
+          <span>Overall Progress</span>
+          <span id="progress-percent">0%</span>
+        </div>
+        <div class="progress-track">
+          <div class="progress-bar" id="progress-fill"></div>
+        </div>
       </div>
-      <div class="modal-body">
-          <form action="">
-            <div class="form-group">
-              <label for="">Todo Name</label>
-              <input type="hidden" id="todoid">
-              <input type="text" class="form-control" id="newtodoname" placeholder="Todo">
+    </header>
+
+    <!-- Task Input Card (Clean, Modern & Perfectly Aligned) -->
+    <section class="input-card">
+      <form id="todo-form" onsubmit="event.preventDefault(); addtodo();">
+        <div class="input-main-row">
+          <div class="input-field-wrapper">
+            <i class="fa-solid fa-plus input-icon"></i>
+            <input
+              type="text"
+              id="todo"
+              class="task-input"
+              placeholder="What needs to be done? (उदा. नया काम लिखें...)"
+              autocomplete="off"
+            />
+          </div>
+          <button type="submit" class="btn-primary-gradient" id="add-btn">
+            <i class="fa-solid fa-paper-plane"></i>
+            <span>Add Task</span>
+          </button>
+        </div>
+
+        <!-- Priority & Status Pre-selection -->
+        <div class="input-options-row">
+          <div class="options-group">
+            <span class="options-label">Priority:</span>
+            <div class="priority-selector" id="priority-options">
+              <div class="option-chip active priority-low" data-priority="Low" onclick="setPriority('Low')">
+                <i class="fa-regular fa-circle-dot"></i> Low
+              </div>
+              <div class="option-chip priority-medium" data-priority="Medium" onclick="setPriority('Medium')">
+                <i class="fa-solid fa-arrow-up"></i> Med
+              </div>
+              <div class="option-chip priority-high" data-priority="High" onclick="setPriority('High')">
+                <i class="fa-solid fa-fire"></i> High
+              </div>
             </div>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">
-          Close
+          </div>
+
+          <div class="options-group">
+            <span class="options-label">Column:</span>
+            <div class="status-selector" id="status-options">
+              <div class="option-chip active" data-status="todo" onclick="setAddStatus('todo')">
+                <i class="fa-regular fa-clock"></i> To Do
+              </div>
+              <div class="option-chip" data-status="in-progress" onclick="setAddStatus('in-progress')">
+                <i class="fa-solid fa-spinner"></i> In Progress
+              </div>
+              <div class="option-chip" data-status="done" onclick="setAddStatus('done')">
+                <i class="fa-solid fa-check"></i> Done
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <!-- Toolbar: Search & Quick Batch Actions -->
+    <section class="toolbar-card">
+      <div class="search-box">
+        <i class="fa-solid fa-magnifying-glass search-icon-left"></i>
+        <input
+          type="text"
+          id="search-input"
+          class="search-input"
+          placeholder="Search across all tasks..."
+          oninput="handleSearch(this.value)"
+        />
+        <button id="clear-search" class="clear-search-btn" onclick="clearSearch()" title="Clear search">
+          <i class="fa-solid fa-xmark"></i>
         </button>
-        <button type="button" class="btn btn-primary" onclick="updatetodo()">Save</button>
+      </div>
+
+      <!-- Filters (Active primarily in List View) -->
+      <div class="filter-tabs-wrapper">
+        <div class="filter-tabs" id="list-filter-tabs">
+          <button class="filter-tab-btn active" data-filter="all" onclick="setFilter('all')">
+            All <span class="count-bubble" id="count-all">0</span>
+          </button>
+          <button class="filter-tab-btn" data-filter="todo" onclick="setFilter('todo')">
+            To Do <span class="count-bubble" id="count-todo">0</span>
+          </button>
+          <button class="filter-tab-btn" data-filter="in-progress" onclick="setFilter('in-progress')">
+            In Progress <span class="count-bubble" id="count-inprogress">0</span>
+          </button>
+          <button class="filter-tab-btn" data-filter="done" onclick="setFilter('done')">
+            Done <span class="count-bubble" id="count-done">0</span>
+          </button>
+        </div>
+
+        <div class="batch-actions">
+          <button class="btn-secondary-sm" onclick="clearCompletedTodos()" title="Clear Completed Tasks">
+            <i class="fa-solid fa-broom"></i> Clean Done
+          </button>
+          <button class="btn-secondary-sm" onclick="clearalltodo()" title="Delete All Tasks">
+            <i class="fa-solid fa-trash-can"></i> Clear All
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kanban Board View (Drag & Drop) -->
+    <main id="kanban-view-container" class="kanban-board-container">
+      <!-- 1. To Do Column -->
+      <div class="kanban-column" id="column-todo-wrapper">
+        <div class="kanban-column-header">
+          <div class="column-title-group">
+            <span class="column-indicator todo"></span>
+            <span class="column-title">To Do</span>
+            <span class="column-count" id="kanban-count-todo">0</span>
+          </div>
+          <button class="column-quick-add-btn" onclick="quickAddForColumn('todo')" title="Add to To Do">
+            <i class="fa-solid fa-plus"></i>
+          </button>
+        </div>
+        <div
+          class="kanban-dropzone"
+          id="dropzone-todo"
+          ondragover="handleDragOver(event)"
+          ondragleave="handleDragLeave(event)"
+          ondrop="handleDrop(event, 'todo')"
+        >
+          <!-- Task cards dynamically rendered here -->
+        </div>
+      </div>
+
+      <!-- 2. In Progress Column -->
+      <div class="kanban-column" id="column-inprogress-wrapper">
+        <div class="kanban-column-header">
+          <div class="column-title-group">
+            <span class="column-indicator inprogress"></span>
+            <span class="column-title">In Progress</span>
+            <span class="column-count" id="kanban-count-inprogress">0</span>
+          </div>
+          <button class="column-quick-add-btn" onclick="quickAddForColumn('in-progress')" title="Add to In Progress">
+            <i class="fa-solid fa-plus"></i>
+          </button>
+        </div>
+        <div
+          class="kanban-dropzone"
+          id="dropzone-in-progress"
+          ondragover="handleDragOver(event)"
+          ondragleave="handleDragLeave(event)"
+          ondrop="handleDrop(event, 'in-progress')"
+        >
+          <!-- Task cards dynamically rendered here -->
+        </div>
+      </div>
+
+      <!-- 3. Done Column -->
+      <div class="kanban-column" id="column-done-wrapper">
+        <div class="kanban-column-header">
+          <div class="column-title-group">
+            <span class="column-indicator done"></span>
+            <span class="column-title">Done</span>
+            <span class="column-count" id="kanban-count-done">0</span>
+          </div>
+          <button class="column-quick-add-btn" onclick="quickAddForColumn('done')" title="Add to Done">
+            <i class="fa-solid fa-plus"></i>
+          </button>
+        </div>
+        <div
+          class="kanban-dropzone"
+          id="dropzone-done"
+          ondragover="handleDragOver(event)"
+          ondragleave="handleDragLeave(event)"
+          ondrop="handleDrop(event, 'done')"
+        >
+          <!-- Task cards dynamically rendered here -->
+        </div>
+      </div>
+    </main>
+
+    <!-- Traditional List View (Hidden when Kanban is active) -->
+    <main id="list-view-container" class="todo-list-container alltodo" style="display: none;">
+      <!-- List items render dynamically here -->
+    </main>
+
+  </div>
+
+  <!-- Modern Update Modal (Bottom-sheet on mobile, centered modal on desktop) -->
+  <div class="modal-overlay" id="edit-modal">
+    <div class="modal-box">
+      <div class="modal-header">
+        <div class="modal-title">
+          <i class="fa-solid fa-pen-to-square" style="color: var(--primary);"></i>
+          <span>Update Task</span>
+        </div>
+        <button type="button" class="modal-close-btn" onclick="closeEditModal()" aria-label="Close">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <input type="hidden" id="todoid" />
+        
+        <div>
+          <label class="form-label" for="newtodoname">Task Name</label>
+          <input
+            type="text"
+            class="task-input"
+            id="newtodoname"
+            placeholder="Edit task name..."
+            autocomplete="off"
+          />
+        </div>
+
+        <div>
+          <label class="form-label">Priority</label>
+          <div class="priority-selector" id="edit-priority-options">
+            <div class="option-chip edit-priority-chip priority-low" data-priority="Low" onclick="setEditPriority('Low')">
+              <i class="fa-regular fa-circle-dot"></i> Low
+            </div>
+            <div class="option-chip edit-priority-chip priority-medium" data-priority="Medium" onclick="setEditPriority('Medium')">
+              <i class="fa-solid fa-arrow-up"></i> Med
+            </div>
+            <div class="option-chip edit-priority-chip priority-high" data-priority="High" onclick="setEditPriority('High')">
+              <i class="fa-solid fa-fire"></i> High
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <label class="form-label">Status / Column</label>
+          <div class="status-selector" id="edit-status-options">
+            <div class="option-chip edit-status-chip" data-status="todo" onclick="setEditStatus('todo')">
+              <i class="fa-regular fa-clock"></i> To Do
+            </div>
+            <div class="option-chip edit-status-chip" data-status="in-progress" onclick="setEditStatus('in-progress')">
+              <i class="fa-solid fa-spinner"></i> In Progress
+            </div>
+            <div class="option-chip edit-status-chip" data-status="done" onclick="setEditStatus('done')">
+              <i class="fa-solid fa-check"></i> Done
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn-secondary" onclick="closeEditModal()">
+          Cancel
+        </button>
+        <button type="button" class="btn-primary-gradient" onclick="updatetodo()" style="min-height: 42px; padding: 0 1.2rem;">
+          <i class="fa-solid fa-check"></i> Save Changes
+        </button>
       </div>
     </div>
   </div>
-</div>
+
+  <!-- Toast Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- SweetAlert2 library -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <!-- Application JS Logic -->
+  <script src="script.js"></script>
+</body>
+</html>

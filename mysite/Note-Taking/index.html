@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#0d1117" />
+  <meta name="description" content="A fast, mobile-friendly Markdown Notes app with live split-view, tag filtering, debounced auto-save, and zero dependencies." />
+  <title>Markdown Notes - Fast, Mobile-First Markdown Editor</title>
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="app">
+    <!-- ==========================================
+         SIDEBAR: NOTES LIST (FULLSCREEN ON MOBILE)
+         ========================================== -->
+    <aside class="sidebar" id="sidebar" aria-label="Notes Directory">
+      <!-- App Header -->
+      <header class="sidebar-header">
+        <div class="app-brand">
+          <div class="app-logo">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 20h9"></path>
+              <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+            </svg>
+          </div>
+          <h1 class="app-title">Markdown Notes</h1>
+        </div>
+
+        <div class="header-actions">
+          <!-- Theme Toggle -->
+          <button class="icon-btn" id="btn-theme-toggle" title="Toggle Light/Dark Theme" aria-label="Toggle Theme">
+            <svg class="theme-icon-dark" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+          </button>
+
+          <!-- Shortcuts Dialog -->
+          <button class="icon-btn" id="btn-open-shortcuts" title="Keyboard Shortcuts (Ctrl+/)" aria-label="Keyboard Shortcuts">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+              <line x1="12" y1="17" x2="12.01" y2="17"></line>
+            </svg>
+          </button>
+
+          <!-- Export / Import -->
+          <button class="icon-btn" id="btn-open-export" title="Export & Import Notes" aria-label="Export Import">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+          </button>
+        </div>
+      </header>
+
+      <!-- Search & New Note Action -->
+      <div class="sidebar-search-box">
+        <div class="search-input-wrapper">
+          <svg class="search-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input type="text" id="search-input" class="search-input" placeholder="Search notes by title or text..." autocomplete="off" />
+          <button id="search-clear-btn" class="search-clear-btn" title="Clear Search" aria-label="Clear Search">&times;</button>
+        </div>
+
+        <button id="btn-new-note" class="btn-new-note">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <line x1="12" y1="5" x2="12" y2="19"></line>
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+          </svg>
+          <span>Create New Note</span>
+        </button>
+      </div>
+
+      <!-- Tag Filter Bar -->
+      <div class="tag-filter-bar" id="tag-filter-bar" aria-label="Filter by Tag">
+        <button class="tag-chip active" data-tag="ALL">
+          <span>All Notes</span>
+          <span class="tag-count" id="tag-count-all">0</span>
+        </button>
+        <!-- Dynamic Tag Chips injected via JS -->
+      </div>
+
+      <!-- Notes List -->
+      <div class="notes-list-container" id="notes-list" role="list">
+        <!-- Injected note cards -->
+      </div>
+
+      <!-- Sidebar Footer -->
+      <footer class="sidebar-footer">
+        <span id="notes-counter">0 notes</span>
+        <span id="storage-status">100% Local Storage</span>
+      </footer>
+    </aside>
+
+    <!-- Mobile Floating Action Button -->
+    <button class="mobile-fab" id="mobile-fab-new" title="Create New Note" aria-label="New Note">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+        <line x1="12" y1="5" x2="12" y2="19"></line>
+        <line x1="5" y1="12" x2="19" y2="12"></line>
+      </svg>
+    </button>
+
+    <!-- ==========================================
+         MAIN WORKSPACE (EDITOR + PREVIEW)
+         ========================================== -->
+    <main class="workspace" id="workspace">
+      <!-- Workspace Navigation Bar -->
+      <header class="workspace-header">
+        <div class="header-left">
+          <!-- Back button on Mobile -->
+          <button class="btn-back-mobile" id="btn-back-mobile" title="Back to Notes List" aria-label="Back to Notes">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+            <span>Notes</span>
+          </button>
+
+          <!-- Note Title Input -->
+          <input type="text" id="note-title-input" class="note-title-input" placeholder="Note Title..." aria-label="Note Title" />
+        </div>
+
+        <!-- Center: Mobile Mode Switcher (Edit vs Preview) -->
+        <div class="header-center">
+          <div class="view-mode-segmented" id="view-mode-segmented">
+            <button class="segment-btn active" id="btn-seg-edit" data-mode="edit">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+              <span>Edit</span>
+            </button>
+            <button class="segment-btn" id="btn-seg-preview" data-mode="preview">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+              <span>Preview</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="header-right">
+          <!-- Debounced Save Indicator -->
+          <div class="save-status-badge" id="save-status-badge">
+            <span class="status-dot" id="status-dot"></span>
+            <span id="save-status-text">Saved</span>
+          </div>
+
+          <!-- Pin Toggle Button -->
+          <button class="icon-btn" id="btn-toggle-pin" title="Pin Note to Top" aria-label="Pin Note">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2v10l3 3H9l3-3V2z"></path>
+              <line x1="12" y1="15" x2="12" y2="22"></line>
+            </svg>
+          </button>
+
+          <!-- Zen Mode Toggle -->
+          <button class="icon-btn" id="btn-toggle-zen" title="Zen / Distraction-Free Mode (Alt+Z)" aria-label="Zen Mode">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"></path>
+            </svg>
+          </button>
+
+          <!-- Download Markdown -->
+          <button class="icon-btn" id="btn-download-md" title="Download Note (.md)" aria-label="Download Markdown">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+          </button>
+
+          <!-- Delete Note -->
+          <button class="icon-btn" id="btn-delete-note" title="Delete Note" aria-label="Delete Note">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="3 6 5 6 21 6"></polyline>
+              <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+            </svg>
+          </button>
+        </div>
+      </header>
+
+      <!-- Note Tags Bar -->
+      <div class="note-tag-bar">
+        <div class="tag-list-chips" id="note-tags-chips">
+          <!-- Tag chips of active note -->
+        </div>
+        <form class="add-tag-form" id="add-tag-form" onsubmit="return false;">
+          <input type="text" id="add-tag-input" class="add-tag-input" placeholder="+ Add tag..." autocomplete="off" />
+          <button type="submit" class="btn-add-tag" title="Add Tag">+</button>
+        </form>
+      </div>
+
+      <!-- Quick Markdown Action Toolbar -->
+      <div class="markdown-toolbar" id="markdown-toolbar">
+        <div class="toolbar-group">
+          <button class="tool-btn" data-action="h1" title="Heading 1 (#)"><b>H1</b></button>
+          <button class="tool-btn" data-action="h2" title="Heading 2 (##)"><b>H2</b></button>
+          <button class="tool-btn" data-action="h3" title="Heading 3 (###)"><b>H3</b></button>
+        </div>
+
+        <div class="toolbar-separator"></div>
+
+        <div class="toolbar-group">
+          <button class="tool-btn" data-action="bold" title="Bold (Ctrl+B)"><b>B</b></button>
+          <button class="tool-btn" data-action="italic" title="Italic (Ctrl+I)"><i>I</i></button>
+          <button class="tool-btn" data-action="strike" title="Strikethrough (~~text~~)"><s>S</s></button>
+          <button class="tool-btn" data-action="highlight" title="Highlight (==text==)"><span style="background:#f59e0b;color:#000;padding:0 2px;border-radius:2px;">H</span></button>
+        </div>
+
+        <div class="toolbar-separator"></div>
+
+        <div class="toolbar-group">
+          <button class="tool-btn" data-action="code-inline" title="Inline Code (`code`)">&lt;/&gt;</button>
+          <button class="tool-btn" data-action="code-block" title="Code Block (```)">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+          </button>
+          <button class="tool-btn" data-action="quote" title="Quote (>)">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"></path></svg>
+          </button>
+          <button class="tool-btn" data-action="callout" title="Alert Callout (> [!NOTE])">💡 Callout</button>
+        </div>
+
+        <div class="toolbar-separator"></div>
+
+        <div class="toolbar-group">
+          <button class="tool-btn" data-action="ul" title="Bullet List (- item)">• List</button>
+          <button class="tool-btn" data-action="ol" title="Numbered List (1. item)">1. List</button>
+          <button class="tool-btn" data-action="task" title="Task / Checkbox List (- [ ] item)">☑ Task</button>
+          <button class="tool-btn" data-action="table" title="Insert Table">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="3" y1="15" x2="21" y2="15"></line><line x1="12" y1="3" x2="12" y2="21"></line></svg>
+          </button>
+          <button class="tool-btn" data-action="link" title="Link [text](url) (Ctrl+K)">🔗 Link</button>
+          <button class="tool-btn" data-action="hr" title="Horizontal Rule (---)">— Line</button>
+        </div>
+      </div>
+
+      <!-- Split View Container: Editor (Left) & Preview (Right) -->
+      <div class="split-view-container mobile-mode-edit" id="split-view-container">
+        <!-- Editor Pane -->
+        <div class="editor-pane" id="editor-pane">
+          <textarea id="markdown-editor" class="markdown-editor markdown-textarea" placeholder="Start typing your markdown notes here... Use # for headings, **bold**, - [ ] tasks, ```code..."></textarea>
+        </div>
+
+        <!-- Rendered Preview Pane -->
+        <div class="preview-pane" id="preview-pane">
+          <div class="preview-content" id="preview-content">
+            <!-- Rendered HTML injected here -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Subtle Footer / Statistics Bar -->
+      <footer class="workspace-footer">
+        <div class="stats-group">
+          <span class="stat-item"><span class="stat-val" id="stat-words">0</span> words</span>
+          <span class="stat-item"><span class="stat-val" id="stat-chars">0</span> chars</span>
+          <span class="stat-item"><span class="stat-val" id="stat-read-time">0</span> min read</span>
+        </div>
+
+        <div class="footer-actions">
+          <span id="note-last-edited" style="font-size: 11px;">Edited just now</span>
+        </div>
+      </footer>
+    </main>
+
+    <!-- Floating Zen Mode Exit Pill -->
+    <button class="zen-exit-pill" id="btn-exit-zen" title="Exit Zen Mode (Esc)">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      <span>Exit Zen Mode (Esc)</span>
+    </button>
+  </div>
+
+  <!-- ==========================================
+       MODAL DIALOGS
+       ========================================== -->
+
+  <!-- Keyboard Shortcuts Modal -->
+  <div class="modal-backdrop" id="modal-shortcuts">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3 class="modal-title">⚡ Keyboard Shortcuts</h3>
+        <button class="icon-btn modal-close-btn" data-close="modal-shortcuts">&times;</button>
+      </div>
+      <div class="modal-body">
+        <table class="shortcuts-table">
+          <tbody>
+            <tr><td><kbd class="md-kbd">Ctrl</kbd> + <kbd class="md-kbd">N</kbd></td><td>Create New Note</td></tr>
+            <tr><td><kbd class="md-kbd">Ctrl</kbd> + <kbd class="md-kbd">S</kbd></td><td>Save Note Immediately</td></tr>
+            <tr><td><kbd class="md-kbd">Ctrl</kbd> + <kbd class="md-kbd">B</kbd></td><td>Toggle Bold Text</td></tr>
+            <tr><td><kbd class="md-kbd">Ctrl</kbd> + <kbd class="md-kbd">I</kbd></td><td>Toggle Italic Text</td></tr>
+            <tr><td><kbd class="md-kbd">Ctrl</kbd> + <kbd class="md-kbd">K</kbd></td><td>Insert Link</td></tr>
+            <tr><td><kbd class="md-kbd">Alt</kbd> + <kbd class="md-kbd">Z</kbd></td><td>Toggle Zen / Distraction-Free Mode</td></tr>
+            <tr><td><kbd class="md-kbd">Ctrl</kbd> + <kbd class="md-kbd">F</kbd></td><td>Focus Search Bar</td></tr>
+            <tr><td><kbd class="md-kbd">Tab</kbd></td><td>Insert 2 Spaces Indent</td></tr>
+            <tr><td><kbd class="md-kbd">Esc</kbd></td><td>Exit Zen Mode / Back to Notes List</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="modal-footer">
+        <button class="btn-primary modal-close-btn" data-close="modal-shortcuts">Got it</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Export & Import Modal -->
+  <div class="modal-backdrop" id="modal-export">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3 class="modal-title">📦 Export & Import Notes</h3>
+        <button class="icon-btn modal-close-btn" data-close="modal-export">&times;</button>
+      </div>
+      <div class="modal-body" style="display: flex; flex-direction: column; gap: 14px;">
+        <p style="font-size: 13.5px; color: var(--text-secondary);">Export your active note or backup all your notes locally.</p>
+        
+        <div style="display: flex; flex-direction: column; gap: 8px;">
+          <button class="btn-secondary" id="btn-export-active-md" style="justify-content: flex-start;">
+            📄 Download Active Note as Markdown (.md)
+          </button>
+          <button class="btn-secondary" id="btn-export-active-html" style="justify-content: flex-start;">
+            🌐 Download Active Note as Rendered HTML (.html)
+          </button>
+          <button class="btn-secondary" id="btn-copy-raw-md" style="justify-content: flex-start;">
+            📋 Copy Raw Markdown to Clipboard
+          </button>
+          <button class="btn-secondary" id="btn-backup-all-json" style="justify-content: flex-start;">
+            💾 Backup All Notes to JSON
+          </button>
+        </div>
+
+        <hr class="md-hr" style="margin: 8px 0;" />
+
+        <div>
+          <label style="font-weight: 600; font-size: 13px; display: block; margin-bottom: 6px;">📥 Restore Notes from JSON File</label>
+          <input type="file" id="import-json-input" accept=".json" style="font-size: 12px; color: var(--text-secondary);" />
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn-secondary modal-close-btn" data-close="modal-export">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Center -->
+  <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+  <!-- Scripts -->
+  <script src="parser.js"></script>
+  <script src="storage.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
