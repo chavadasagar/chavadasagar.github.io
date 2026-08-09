@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fast Client-Side File Converter & Text Utilities | 100% In-Browser CSV, JSON & Text Suite</title>
+  <meta name="description" content="Free, secure, 100% client-side file converter and text tool. Convert CSV to JSON, JSON to CSV, handle nested keys, preview interactive tables, transform text cases, and clean data with zero server uploads.">
+  <meta name="keywords" content="CSV to JSON, JSON to CSV, File Converter, Text Case Converter, Client-Side Converter, In-Browser Converter, Privacy-First JSON Formatter">
+  <meta name="author" content="Sagar Chavada">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+  
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Core Styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Accessibility Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Ambient Background Effect -->
+  <div class="ambient-glow" aria-hidden="true"></div>
+
+  <!-- Site Header -->
+  <header class="site-header" role="banner">
+    <div class="header-container">
+      <div class="logo-group">
+        <div class="logo-icon-wrapper" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="16 18 22 12 16 6"></polyline>
+            <polyline points="8 6 2 12 8 18"></polyline>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <h1 class="logo-title">DataFlex Studio</h1>
+          <span class="logo-badge">In-Browser File & Text Engine</span>
+        </div>
+      </div>
+
+      <!-- Mode Switcher Nav -->
+      <nav class="tool-switcher-nav" role="tablist" aria-label="Tool Modes">
+        <button class="tool-tab-btn active" data-mode="csv-to-json" role="tab" aria-selected="true" id="tab-csv-json">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+          CSV &rarr; JSON
+        </button>
+        <button class="tool-tab-btn" data-mode="json-to-csv" role="tab" aria-selected="false" id="tab-json-csv">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 17l6-6-6-6M12 19h8"></path></svg>
+          JSON &rarr; CSV
+        </button>
+        <button class="tool-tab-btn" data-mode="text-tools" role="tab" aria-selected="false" id="tab-text-tools">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+          Text & Code Tools
+        </button>
+      </nav>
+
+      <!-- Header Action Controls -->
+      <div class="header-actions">
+        <div class="privacy-badge" title="No data ever leaves your device. Everything runs in-browser.">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+          <span>100% Client-Side</span>
+        </div>
+        
+        <button class="btn-icon" id="historyDrawerBtn" title="Recent Conversions History" aria-label="Open Conversion History">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+        </button>
+
+        <button class="btn-icon" id="themeToggleBtn" title="Toggle Dark/Light Mode" aria-label="Toggle Theme">
+          <!-- Populated dynamically via JS -->
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Application Area -->
+  <main class="app-main" id="main-content">
+
+    <!-- Validation & Alert Banner -->
+    <div id="alertBanner" class="alert-banner error" style="display: none;" role="alert">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+      <span id="alertMessage" style="flex: 1;"></span>
+      <button class="alert-close" id="alertCloseBtn" aria-label="Close Alert">&times;</button>
+    </div>
+
+    <!-- CSV Options Bar -->
+    <section class="options-bar" id="csvOptionsBar" aria-label="CSV Conversion Options">
+      <div class="option-group">
+        <label class="option-label" for="csvDelimiterSelect">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"></path></svg>
+          CSV Delimiter
+        </label>
+        <select class="form-select" id="csvDelimiterSelect">
+          <option value="auto">Auto-Detect Delimiter</option>
+          <option value=",">Comma (,)</option>
+          <option value=";">Semicolon (;)</option>
+          <option value="&#9;">Tab (\t)</option>
+          <option value="|">Pipe (|)</option>
+        </select>
+      </div>
+
+      <div class="option-group" style="justify-content: center;">
+        <label class="checkbox-option">
+          <input type="checkbox" id="csvHeaderCheck" checked>
+          <span>First row contains Column Headers</span>
+        </label>
+      </div>
+
+      <div class="option-group" style="justify-content: center;">
+        <label class="checkbox-option" title="Automatically parses numbers, booleans, and nulls">
+          <input type="checkbox" id="csvTypesCheck" checked>
+          <span>Infer Data Types (Numbers, Booleans)</span>
+        </label>
+      </div>
+
+      <div class="option-group" style="justify-content: center;">
+        <label class="checkbox-option" title="Converts dot notation (user.name) and array notation (tags[0]) into nested objects">
+          <input type="checkbox" id="csvUnflattenCheck" checked>
+          <span>Expand Nested Keys (<code>user.name</code> &rarr; Object)</span>
+        </label>
+      </div>
+    </section>
+
+    <!-- JSON Options Bar -->
+    <section class="options-bar" id="jsonOptionsBar" style="display: none;" aria-label="JSON Conversion Options">
+      <div class="option-group">
+        <label class="option-label" for="jsonDelimiterSelect">Output Delimiter</label>
+        <select class="form-select" id="jsonDelimiterSelect">
+          <option value=",">Comma (,)</option>
+          <option value=";">Semicolon (;)</option>
+          <option value="&#9;">Tab (\t)</option>
+          <option value="|">Pipe (|)</option>
+        </select>
+      </div>
+
+      <div class="option-group" style="justify-content: center;">
+        <label class="checkbox-option" title="Flattens deeply nested JSON objects into dot notation columns">
+          <input type="checkbox" id="jsonFlattenCheck" checked>
+          <span>Flatten Nested Objects (<code>address.city</code>)</span>
+        </label>
+      </div>
+
+      <div class="option-group">
+        <label class="option-label" for="jsonQuoteSelect">Quoting Rule</label>
+        <select class="form-select" id="jsonQuoteSelect">
+          <option value="auto">Auto (When quotes/delimiters present)</option>
+          <option value="always">Always Quote All Fields</option>
+          <option value="minimal">Minimal</option>
+        </select>
+      </div>
+    </section>
+
+    <!-- Workbench Grid (Input - Actions - Output) -->
+    <div class="workbench-grid" id="converterWorkbench">
+
+      <!-- LEFT: Input Card -->
+      <section class="panel-card" aria-label="Input Panel">
+        <header class="panel-header">
+          <div class="panel-title-group">
+            <span class="panel-title" id="inputTitle">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+              CSV Source Data
+            </span>
+            <span class="panel-stats-pill" id="inputStatsBadge">0 lines</span>
+          </div>
+
+          <div class="panel-actions">
+            <button class="btn btn-sm btn-secondary" id="pasteBtn" title="Paste from clipboard">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+              Paste
+            </button>
+            <button class="btn btn-sm btn-secondary" id="uploadBtn" title="Upload CSV or JSON file">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>
+              Upload
+            </button>
+            <input type="file" id="fileInput" accept=".csv,.json,.tsv,.txt" style="display: none;" aria-label="Upload File">
+            <button class="btn btn-sm btn-outline-danger" id="clearInputBtn" title="Clear all input text">Clear</button>
+          </div>
+        </header>
+
+        <!-- Drop Zone & Textarea -->
+        <div class="editor-container" id="inputDropZone">
+          <div class="drop-overlay" aria-hidden="true">
+            <svg class="drop-overlay-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>
+            <span style="font-weight: 700; font-size: 1.125rem;">Drop your file here to load</span>
+          </div>
+          <textarea class="code-textarea" id="inputText" spellcheck="false" aria-label="Input Editor" placeholder="Type or paste your data here..."></textarea>
+        </div>
+
+        <!-- Input Toolbar: Sample Loader -->
+        <footer class="input-toolbar">
+          <div class="sample-select-wrapper">
+            <label for="sampleSelect" style="font-size: 0.75rem; color: var(--text-muted); font-weight: 600;">Sample Templates:</label>
+            <select class="form-select" id="sampleSelect">
+              <option value="">-- Load Sample Data --</option>
+            </select>
+          </div>
+          <span style="font-size: 0.75rem; color: var(--text-muted);">Drag & drop files supported</span>
+        </footer>
+      </section>
+
+      <!-- MIDDLE: Convert Actions Bridge -->
+      <div class="workbench-middle-bridge">
+        <button class="convert-main-btn" id="convertBtn" title="Execute Conversion (Ctrl+Enter)">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+          <span>Convert Now</span>
+        </button>
+
+        <button class="swap-mode-btn" id="swapModeBtn" title="Swap Conversion Mode & Direction">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 16V4m0 0L3 8m4-4l4 4M17 8v12m0 0l4-4m-4 4l-4-4"></path></svg>
+          <span>Swap Direction</span>
+        </button>
+      </div>
+
+      <!-- RIGHT: Output Card -->
+      <section class="panel-card" aria-label="Output Panel">
+        <header class="panel-header">
+          <div class="panel-title-group">
+            <span class="panel-title" id="outputTitle">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Converted JSON
+            </span>
+            <span class="panel-stats-pill" id="outputStatsBadge">0 lines</span>
+          </div>
+
+          <div class="panel-actions">
+            <!-- View Tabs: Code vs Table -->
+            <div class="tool-switcher-nav" style="padding: 2px;">
+              <button class="tool-tab-btn active" id="viewCodeTabBtn" style="padding: 0.25rem 0.6rem; min-height: 28px; font-size: 0.75rem;">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                Code
+              </button>
+              <button class="tool-tab-btn" id="viewTableTabBtn" style="padding: 0.25rem 0.6rem; min-height: 28px; font-size: 0.75rem;">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+                Table View
+              </button>
+            </div>
+
+            <button class="btn btn-sm btn-secondary" id="wrapLinesBtn" title="Toggle Word Wrap">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              Wrap
+            </button>
+            <button class="btn btn-sm btn-secondary" id="copyOutputBtn" title="Copy to clipboard">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+              Copy
+            </button>
+            <button class="btn btn-sm btn-primary" id="downloadOutputBtn" title="Download converted file">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              Download
+            </button>
+          </div>
+        </header>
+
+        <!-- Output Views Container -->
+        <div class="output-view-container">
+          
+          <!-- Empty State -->
+          <div class="empty-output-state" id="emptyOutputState">
+            <svg class="empty-state-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="12" y1="18" x2="12" y2="12"></line>
+              <line x1="9" y1="15" x2="15" y2="15"></line>
+            </svg>
+            <p style="font-weight: 600; color: var(--text-primary);">No converted output yet</p>
+            <p style="font-size: 0.8125rem;">Paste data on the left and click <strong>Convert Now</strong> or press <kbd>Ctrl+Enter</kbd></p>
+          </div>
+
+          <!-- Code Viewer Wrapper with Line Numbers -->
+          <div class="code-viewer-wrapper" id="outputCodeWrapper" style="display: none;">
+            <div class="code-line-numbers" id="codeLineNumbers" aria-hidden="true"></div>
+            <pre class="code-content-block" id="codeContent" tabindex="0" aria-label="Converted Output Content"></pre>
+          </div>
+
+          <!-- Interactive Table View -->
+          <div class="table-view-wrapper" id="tableViewWrapper" style="display: none;">
+            <div class="table-toolbar">
+              <input type="text" class="form-input table-search-input" id="tableSearchInput" placeholder="🔍 Search records in table...">
+              <span style="font-size: 0.75rem; color: var(--text-muted);">Click header column to sort</span>
+            </div>
+            
+            <div class="table-scroll-container">
+              <table class="data-table">
+                <thead id="tableHead"></thead>
+                <tbody id="tableBody"></tbody>
+              </table>
+            </div>
+
+            <div class="table-pagination">
+              <span id="tablePageInfo">Showing records</span>
+              <div style="display: flex; gap: 0.35rem;">
+                <button class="btn btn-sm btn-secondary" id="prevPageBtn" disabled>&larr; Prev</button>
+                <button class="btn btn-sm btn-secondary" id="nextPageBtn">Next &rarr;</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Text & Code Utility Toolbox (Visible in 'text-tools' mode) -->
+    <section class="text-tools-container" id="textToolsSection" style="display: none; margin-top: 1.5rem;" aria-label="Text Transformation Toolbox">
+      
+      <!-- Text Statistics Panel -->
+      <div class="stats-grid">
+        <div class="stat-item">
+          <span class="stat-label">Characters</span>
+          <span class="stat-value" id="statChars">0</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-label">Words</span>
+          <span class="stat-value" id="statWords">0</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-label">Lines</span>
+          <span class="stat-value" id="statLines">0</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-label">UTF-8 Size</span>
+          <span class="stat-value" id="statBytes">0 KB</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-label">Reading Time</span>
+          <span class="stat-value" id="statReadingTime">0 sec</span>
+        </div>
+      </div>
+
+      <!-- Categories of Tools -->
+      <div class="tool-category-grid">
+        
+        <!-- Case Converters -->
+        <div class="tool-category-card">
+          <h3 class="tool-category-title">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7V4h16v3M9 20h6M12 4v16"></path></svg>
+            Case Transformations
+          </h3>
+          <div class="tool-btn-grid">
+            <button class="tool-action-btn" data-text-action="uppercase">UPPERCASE</button>
+            <button class="tool-action-btn" data-text-action="lowercase">lowercase</button>
+            <button class="tool-action-btn" data-text-action="titlecase">Title Case</button>
+            <button class="tool-action-btn" data-text-action="sentencecase">Sentence case</button>
+            <button class="tool-action-btn" data-text-action="camelcase">camelCase</button>
+            <button class="tool-action-btn" data-text-action="pascalcase">PascalCase</button>
+            <button class="tool-action-btn" data-text-action="snakecase">snake_case</button>
+            <button class="tool-action-btn" data-text-action="kebabcase">kebab-case</button>
+            <button class="tool-action-btn" data-text-action="constantcase">CONSTANT_CASE</button>
+          </div>
+        </div>
+
+        <!-- Line Cleaners & Sorting -->
+        <div class="tool-category-card">
+          <h3 class="tool-category-title">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+            Line Manipulation & Cleaning
+          </h3>
+          <div class="tool-btn-grid">
+            <button class="tool-action-btn" data-text-action="trim">Trim Line Whitespace</button>
+            <button class="tool-action-btn" data-text-action="remove-empty">Remove Blank Lines</button>
+            <button class="tool-action-btn" data-text-action="remove-duplicates">Remove Duplicate Lines</button>
+            <button class="tool-action-btn" data-text-action="sort-az">Sort Lines (A-Z)</button>
+            <button class="tool-action-btn" data-text-action="sort-za">Sort Lines (Z-A)</button>
+            <button class="tool-action-btn" data-text-action="reverse-lines">Reverse Lines</button>
+            <button class="tool-action-btn" data-text-action="add-numbers">Add Line Numbers</button>
+            <button class="tool-action-btn" data-text-action="strip-html">Strip HTML Tags</button>
+          </div>
+        </div>
+
+        <!-- Encoders & Decoders -->
+        <div class="tool-category-card">
+          <h3 class="tool-category-title">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+            Encoding & Decoding
+          </h3>
+          <div class="tool-btn-grid">
+            <button class="tool-action-btn" data-text-action="url-encode">URL Encode</button>
+            <button class="tool-action-btn" data-text-action="url-decode">URL Decode</button>
+            <button class="tool-action-btn" data-text-action="base64-encode">Base64 Encode</button>
+            <button class="tool-action-btn" data-text-action="base64-decode">Base64 Decode</button>
+          </div>
+        </div>
+
+        <!-- JSON Tools -->
+        <div class="tool-category-card">
+          <h3 class="tool-category-title">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 17l6-6-6-6M12 19h8"></path></svg>
+            JSON Formatter & Key Sorter
+          </h3>
+          <div class="tool-btn-grid">
+            <button class="tool-action-btn" data-text-action="json-format">Prettify JSON (2 spaces)</button>
+            <button class="tool-action-btn" data-text-action="json-minify">Minify JSON</button>
+            <button class="tool-action-btn" data-text-action="json-sort">Sort JSON Keys</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Recent Conversions Drawer -->
+  <div class="drawer-backdrop" id="historyDrawer" role="dialog" aria-modal="true" aria-label="Conversion History">
+    <div class="drawer">
+      <header class="drawer-header">
+        <h2 class="drawer-title">Recent Conversions</h2>
+        <button class="btn-icon" id="historyCloseBtn" aria-label="Close History Drawer">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </header>
+
+      <div class="drawer-body" id="historyList">
+        <!-- Rendered dynamically -->
+      </div>
+
+      <footer style="padding: 1rem 1.25rem; border-top: 1px solid var(--border-color); display: flex; justify-content: space-between; align-items: center;">
+        <button class="btn btn-sm btn-outline-danger" id="clearHistoryBtn">Clear History</button>
+        <span style="font-size: 0.75rem; color: var(--text-muted);">Stored locally in browser</span>
+      </footer>
+    </div>
+  </div>
+
+  <!-- Toast Container -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <!-- Site Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-content">
+      <div>
+        <strong>DataFlex Studio</strong> &bull; Zero Server Processing &bull; 100% Privacy Guaranteed
+      </div>
+      <div class="footer-shortcuts">
+        <span class="kbd-shortcut"><kbd>Ctrl</kbd> + <kbd>Enter</kbd> to Convert</span>
+        <span class="kbd-shortcut"><kbd>Esc</kbd> to Close Drawers</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="converter.js"></script>
+  <script src="sample-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

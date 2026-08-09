@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>OptiPic Studio - Mobile-Friendly Image Compressor & Resizer</title>
+  <meta name="description" content="100% private, client-side image compressor and resizer. Batch process, convert between WebP, JPEG, PNG, and preview with an interactive before/after slider. No server uploads.">
+  <meta name="keywords" content="image compressor, resize image, reduce image size, webp converter, batch image compression, client-side compressor">
+  <meta name="theme-color" content="#0f172a">
+
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- JSZip for Batch Download -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js" integrity="sha512-XMVd28F1oH/O71fKEHd4RE79197TZzhfgnkgDRh36XXmV7MS8ZVWlxDYCm350G5updDxQ7oU362qZschItAtMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header / Navigation Bar -->
+  <header class="app-header">
+    <div class="header-container">
+      <div class="brand">
+        <div class="brand-logo" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="18" height="18" rx="4" ry="4"></rect>
+            <circle cx="8.5" cy="8.5" r="1.5"></circle>
+            <polyline points="21 15 16 10 5 21"></polyline>
+            <path d="M14 14l3-3 4 4" stroke-dasharray="1 1"></path>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">OptiPic <span class="brand-badge">Studio</span></span>
+          <span class="brand-tagline">Client-Side Image Compressor & Resizer</span>
+        </div>
+      </div>
+
+      <div class="header-badges-and-actions">
+        <div class="privacy-pill" title="All processing happens right inside your browser using HTML5 Canvas. Zero data is sent to any server.">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+          </svg>
+          <span>100% Private & Client-Side</span>
+        </div>
+
+        <button id="historyBtn" class="icon-btn" aria-label="View Compression History" title="Compression History">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"></circle>
+            <polyline points="12 6 12 12 16 14"></polyline>
+          </svg>
+          <span class="btn-text-desktop">History</span>
+          <span id="historyCountBadge" class="count-badge hidden">0</span>
+        </button>
+
+        <button id="themeToggleBtn" class="icon-btn" aria-label="Toggle Color Theme" title="Toggle Light / Dark Mode">
+          <svg class="sun-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Application Container -->
+  <main class="app-main" id="mainContent">
+
+    <!-- Upload Section (Visible when no images or added) -->
+    <section class="upload-section" id="uploadSection" aria-labelledby="uploadHeading">
+      <h1 id="uploadHeading" class="sr-only">Upload and Compress Images</h1>
+      
+      <div class="drop-zone" id="dropZone" tabindex="0" role="region" aria-label="Image drop zone and upload area">
+        <div class="drop-zone-glow" aria-hidden="true"></div>
+        <div class="drop-zone-content">
+          <div class="upload-icon-wrapper" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="44" height="44" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"></path>
+              <path d="M12 12v9"></path>
+              <path d="m16 16-4-4-4 4"></path>
+            </svg>
+          </div>
+
+          <h2 class="drop-zone-title">Drag & drop your images here</h2>
+          <p class="drop-zone-subtitle">or choose an option below to get started</p>
+
+          <div class="upload-actions">
+            <!-- Hidden inputs -->
+            <input type="file" id="fileInput" accept="image/jpeg,image/png,image/webp,image/gif,image/bmp,image/svg+xml,image/avif" multiple class="sr-only">
+            <input type="file" id="cameraInput" accept="image/*" capture="environment" class="sr-only">
+
+            <button type="button" id="browseBtn" class="btn btn-primary btn-lg">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                <polyline points="21 15 16 10 5 21"></polyline>
+              </svg>
+              <span>Browse Images</span>
+            </button>
+
+            <button type="button" id="cameraBtn" class="btn btn-secondary btn-lg" title="Take a photo directly with camera">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+                <circle cx="12" cy="13" r="4"></circle>
+              </svg>
+              <span>Camera</span>
+            </button>
+
+            <button type="button" id="sampleBtn" class="btn btn-ghost" title="Load sample image to test features">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+              </svg>
+              <span>Try Sample</span>
+            </button>
+          </div>
+
+          <div class="drop-zone-footer">
+            <span class="pill-badge">Supports JPG, PNG, WebP, GIF, BMP, AVIF</span>
+            <span class="pill-badge pill-shortcut"><kbd>Ctrl</kbd> + <kbd>V</kbd> to Paste</span>
+            <span class="pill-badge">Batch Uploads Ready</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Global Progress Bar for Async Compression -->
+    <div id="globalProgressContainer" class="global-progress-bar-container hidden" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+      <div class="progress-info">
+        <span id="progressStatusText">Compressing images...</span>
+        <span id="progressPercentageText">0%</span>
+      </div>
+      <div class="progress-track">
+        <div id="progressBarFill" class="progress-fill" style="width: 0%;"></div>
+      </div>
+    </div>
+
+    <!-- Active Workspace Area (Hidden by default, shown when images are loaded) -->
+    <div id="workspaceSection" class="workspace-section hidden">
+      
+      <!-- Mode & Batch Switcher Bar -->
+      <div class="workspace-header">
+        <div class="view-mode-tabs" role="tablist" aria-label="Editor View Modes">
+          <button id="tabSingle" class="tab-btn active" role="tab" aria-selected="true" aria-controls="singleViewPanel">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+              <circle cx="9" cy="9" r="2"></circle>
+              <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"></path>
+            </svg>
+            <span>Single Inspector</span>
+          </button>
+          <button id="tabBatch" class="tab-btn" role="tab" aria-selected="false" aria-controls="batchViewPanel">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2" y="7" width="16" height="15" rx="2"></rect>
+              <path d="m22 17-3-3V5a2 2 0 0 0-2-2H7"></path>
+            </svg>
+            <span>Batch Queue (<span id="batchCountNum">0</span>)</span>
+          </button>
+        </div>
+
+        <div class="workspace-quick-actions">
+          <button id="addMoreFilesBtn" class="btn btn-secondary btn-sm" title="Add more images to process">
+            <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+            <span>Add More</span>
+          </button>
+          <button id="resetWorkspaceBtn" class="btn btn-ghost btn-sm" title="Clear all loaded images">
+            <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="3 6 5 6 21 6"></polyline>
+              <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+            </svg>
+            <span>Clear All</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- SINGLE IMAGE VIEW PANEL -->
+      <div id="singleViewPanel" class="view-panel" role="tabpanel" aria-labelledby="tabSingle">
+        <div class="single-layout">
+          
+          <!-- Visual Preview Column -->
+          <div class="preview-column">
+            
+            <!-- Comparison Container Card -->
+            <div class="card preview-card">
+              <div class="preview-toolbar">
+                <div class="preview-modes">
+                  <button id="btnSliderMode" class="segmented-btn active" title="Interactive Split Slider Comparison">
+                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <line x1="12" y1="2" x2="12" y2="22"></line>
+                      <rect x="2" y="6" width="20" height="12" rx="2"></rect>
+                    </svg>
+                    <span>Split Slider</span>
+                  </button>
+                  <button id="btnSideBySideMode" class="segmented-btn" title="Side-by-Side Comparison">
+                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <rect x="2" y="4" width="9" height="16" rx="2"></rect>
+                      <rect x="13" y="4" width="9" height="16" rx="2"></rect>
+                    </svg>
+                    <span>Side-by-Side</span>
+                  </button>
+                </div>
+
+                <div class="preview-zoom-controls">
+                  <button id="zoomOutBtn" class="icon-btn-sm" title="Zoom Out" aria-label="Zoom Out">
+                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="11" cy="11" r="8"></circle>
+                      <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                      <line x1="8" y1="11" x2="14" y2="11"></line>
+                    </svg>
+                  </button>
+                  <span id="zoomLevelText" class="zoom-text">100%</span>
+                  <button id="zoomInBtn" class="icon-btn-sm" title="Zoom In" aria-label="Zoom In">
+                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="11" cy="11" r="8"></circle>
+                      <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                      <line x1="11" y1="8" x2="11" y2="14"></line>
+                      <line x1="8" y1="11" x2="14" y2="11"></line>
+                    </svg>
+                  </button>
+                  <button id="zoomResetBtn" class="icon-btn-sm" title="Reset Zoom" aria-label="Fit to Viewport">
+                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="4 14 10 14 10 20"></polyline>
+                      <polyline points="20 10 14 10 14 4"></polyline>
+                      <line x1="14" y1="10" x2="21" y2="3"></line>
+                      <line x1="3" y1="21" x2="10" y2="14"></line>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+              <!-- SLIDER COMPARISON VIEWPORT -->
+              <div id="sliderViewport" class="slider-viewport checkerboard-bg" tabIndex="0" role="region" aria-label="Before and after image comparison slider">
+                <div class="slider-canvas-wrapper" id="sliderCanvasWrapper">
+                  <!-- Compressed / After (Bottom Layer) -->
+                  <img id="previewAfterImg" class="preview-img after-img" alt="Compressed image preview" draggable="false">
+
+                  <!-- Original / Before (Top Clipped Layer) -->
+                  <div id="beforeClipLayer" class="before-clip-layer">
+                    <img id="previewBeforeImg" class="preview-img before-img" alt="Original image preview" draggable="false">
+                  </div>
+
+                  <!-- Draggable Divider Bar -->
+                  <div id="sliderHandle" class="slider-handle" style="left: 50%;">
+                    <div class="slider-handle-line"></div>
+                    <div class="slider-handle-button" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                        <path d="M8 7l-5 5 5 5V7zm8 0v10l5-5-5-5z"></path>
+                      </svg>
+                    </div>
+                  </div>
+
+                  <!-- Floating Tags -->
+                  <div class="badge-tag original-tag">Original</div>
+                  <div class="badge-tag compressed-tag">Compressed</div>
+                </div>
+              </div>
+
+              <!-- SIDE BY SIDE VIEWPORT (Alternate) -->
+              <div id="sideBySideViewport" class="side-by-side-viewport checkerboard-bg hidden">
+                <div class="sbs-card">
+                  <div class="sbs-label">
+                    <span>Original</span>
+                    <span id="sbsOriginalSizeTag" class="size-tag">-</span>
+                  </div>
+                  <div class="sbs-img-wrapper">
+                    <img id="sbsBeforeImg" class="sbs-img" alt="Original image">
+                  </div>
+                </div>
+                <div class="sbs-card">
+                  <div class="sbs-label">
+                    <span>Compressed</span>
+                    <span id="sbsCompressedSizeTag" class="size-tag savings-pill">-</span>
+                  </div>
+                  <div class="sbs-img-wrapper">
+                    <img id="sbsAfterImg" class="sbs-img" alt="Compressed image">
+                  </div>
+                </div>
+              </div>
+
+              <!-- Comparison Metrics Bar -->
+              <div class="metrics-banner" id="singleMetricsBanner">
+                <div class="metric-item">
+                  <span class="metric-title">Original Size</span>
+                  <span id="metricOriginalSize" class="metric-value">--</span>
+                  <span id="metricOriginalDim" class="metric-sub">0 × 0 px</span>
+                </div>
+                <div class="metric-arrow" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </div>
+                <div class="metric-item">
+                  <span class="metric-title">Compressed Size</span>
+                  <span id="metricCompressedSize" class="metric-value highlight">--</span>
+                  <span id="metricCompressedDim" class="metric-sub">0 × 0 px</span>
+                </div>
+                <div class="metric-item metric-savings">
+                  <span class="metric-title">Space Saved</span>
+                  <div id="metricSavingsBadge" class="savings-badge">0%</div>
+                  <span id="metricSavingsBytes" class="metric-sub">0 KB saved</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Single Image Navigation (when batch loaded) -->
+            <div id="singleBatchNavigator" class="batch-navigator hidden">
+              <button id="prevImageBtn" class="btn btn-secondary btn-sm" aria-label="Previous Image">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                <span>Previous</span>
+              </button>
+              <span id="currentImageIndexText" class="batch-index-indicator">Image 1 of 1</span>
+              <button id="nextImageBtn" class="btn btn-secondary btn-sm" aria-label="Next Image">
+                <span>Next</span>
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Controls Settings Column -->
+          <div class="controls-column">
+            
+            <!-- Quick Presets -->
+            <div class="card control-card">
+              <div class="card-header">
+                <div class="card-title">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                  </svg>
+                  <span>Quick Presets</span>
+                </div>
+              </div>
+              <div class="preset-chips">
+                <button class="chip-btn" data-preset="web-optimized">🌐 Web Optimized (80% WebP)</button>
+                <button class="chip-btn" data-preset="social-insta">📸 Instagram (1080×1080)</button>
+                <button class="chip-btn" data-preset="email">✉️ Email Friendly (800px)</button>
+                <button class="chip-btn" data-preset="max-shrink">🗜️ Max Compression (50%)</button>
+                <button class="chip-btn" data-preset="hd-screen">🖥️ Full HD (1920×1080)</button>
+              </div>
+            </div>
+
+            <!-- Format & Quality Settings -->
+            <div class="card control-card">
+              <div class="card-header">
+                <div class="card-title">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="12" r="3"></circle>
+                    <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                  </svg>
+                  <span>Format & Compression</span>
+                </div>
+              </div>
+
+              <!-- Output Format -->
+              <div class="form-group">
+                <label for="formatSelect" class="form-label">Output Format</label>
+                <div class="custom-select-wrapper">
+                  <select id="formatSelect" class="form-control">
+                    <option value="auto">Keep Original Format</option>
+                    <option value="image/webp" selected>WebP (Modern, Smallest size)</option>
+                    <option value="image/jpeg">JPEG / JPG (Universal)</option>
+                    <option value="image/png">PNG (Lossless / Crisp text)</option>
+                  </select>
+                </div>
+                <p id="formatHint" class="form-hint">WebP delivers ~30-50% smaller sizes than JPEG with identical visual quality.</p>
+              </div>
+
+              <!-- Transparency Background (For PNG to JPEG) -->
+              <div id="bgFillGroup" class="form-group hidden">
+                <label for="bgColorPicker" class="form-label">Background Color (for transparency)</label>
+                <div class="color-picker-row">
+                  <input type="color" id="bgColorPicker" value="#ffffff" class="color-input" title="Choose background color">
+                  <span class="color-val-text" id="bgColorHex">#FFFFFF</span>
+                  <div class="color-presets">
+                    <button type="button" class="color-swatch-btn" data-color="#ffffff" style="background:#ffffff;" title="White"></button>
+                    <button type="button" class="color-swatch-btn" data-color="#000000" style="background:#000000;" title="Black"></button>
+                    <button type="button" class="color-swatch-btn" data-color="#f8fafc" style="background:#f8fafc;" title="Off-White"></button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Quality Slider (JPEG & WebP) -->
+              <div id="qualityControlGroup" class="form-group">
+                <div class="label-with-value">
+                  <label for="qualitySlider" class="form-label">Quality Level</label>
+                  <div class="quality-display">
+                    <input type="number" id="qualityNumInput" min="1" max="100" value="80" class="num-input-inline" aria-label="Quality percentage">
+                    <span class="unit">%</span>
+                  </div>
+                </div>
+
+                <div class="range-slider-wrapper">
+                  <input type="range" id="qualitySlider" min="1" max="100" value="80" class="range-slider" aria-label="Compression quality slider">
+                  <div class="range-ticks">
+                    <span>10% (Low)</span>
+                    <span>50%</span>
+                    <span>80% (Sweet Spot)</span>
+                    <span>100% (High)</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Target File Size Option (Optional Smart Feature) -->
+              <div class="form-group">
+                <div class="checkbox-row">
+                  <input type="checkbox" id="targetSizeToggle" class="custom-checkbox">
+                  <label for="targetSizeToggle" class="checkbox-label">Target Max File Size (Auto-calculate)</label>
+                </div>
+                <div id="targetSizeInputRow" class="input-inline-group hidden mt-2">
+                  <input type="number" id="targetSizeValue" min="10" max="50000" value="300" class="form-control" placeholder="300">
+                  <select id="targetSizeUnit" class="form-control select-compact">
+                    <option value="KB" selected>KB</option>
+                    <option value="MB">MB</option>
+                  </select>
+                  <button type="button" id="applyTargetSizeBtn" class="btn btn-secondary btn-sm">Match</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Resize Settings -->
+            <div class="card control-card">
+              <div class="card-header">
+                <div class="card-title">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <polyline points="9 21 3 21 3 15"></polyline>
+                    <line x1="21" y1="3" x2="14" y2="10"></line>
+                    <line x1="3" y1="21" x2="10" y2="14"></line>
+                  </svg>
+                  <span>Resize Dimensions</span>
+                </div>
+              </div>
+
+              <!-- Resize Mode Tabs -->
+              <div class="resize-mode-switcher">
+                <button type="button" id="resizeModePx" class="segmented-btn active">By Pixels (W × H)</button>
+                <button type="button" id="resizeModePercent" class="segmented-btn">By Percentage (%)</button>
+              </div>
+
+              <!-- Dimensions (Pixel Mode) -->
+              <div id="resizePxContainer" class="dimensions-box">
+                <div class="dimension-inputs-row">
+                  <div class="dim-field">
+                    <label for="resizeWidth" class="field-label">Width (px)</label>
+                    <input type="number" id="resizeWidth" min="1" max="15000" class="form-control" placeholder="Width">
+                  </div>
+
+                  <!-- Aspect Ratio Lock Button -->
+                  <div class="lock-aspect-wrapper">
+                    <button type="button" id="aspectRatioLockBtn" class="lock-btn active" title="Aspect Ratio Locked (Click to unlock)" aria-label="Toggle Aspect Ratio Lock">
+                      <svg class="lock-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                        <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                      </svg>
+                      <svg class="unlock-icon hidden" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                        <path d="M7 11V7a5 5 0 0 1 9.9-1"></path>
+                      </svg>
+                    </button>
+                  </div>
+
+                  <div class="dim-field">
+                    <label for="resizeHeight" class="field-label">Height (px)</label>
+                    <input type="number" id="resizeHeight" min="1" max="15000" class="form-control" placeholder="Height">
+                  </div>
+                </div>
+
+                <!-- Dimension Presets -->
+                <div class="dimension-presets-row">
+                  <span class="sub-label">Presets:</span>
+                  <button type="button" class="dim-preset-chip" data-w="original" data-h="original">Original</button>
+                  <button type="button" class="dim-preset-chip" data-w="1920" data-h="1080">1080p</button>
+                  <button type="button" class="dim-preset-chip" data-w="1280" data-h="720">720p</button>
+                  <button type="button" class="dim-preset-chip" data-w="1080" data-h="1080">1:1 Square</button>
+                  <button type="button" class="dim-preset-chip" data-w="800" data-h="600">800×600</button>
+                </div>
+              </div>
+
+              <!-- Percentage Mode Slider -->
+              <div id="resizePercentContainer" class="form-group hidden">
+                <div class="label-with-value">
+                  <label for="scaleSlider" class="form-label">Scale Factor</label>
+                  <div class="quality-display">
+                    <input type="number" id="scaleNumInput" min="10" max="200" value="100" class="num-input-inline" aria-label="Scale percentage">
+                    <span class="unit">%</span>
+                  </div>
+                </div>
+                <div class="range-slider-wrapper">
+                  <input type="range" id="scaleSlider" min="10" max="200" value="100" class="range-slider" aria-label="Resize scale percentage">
+                  <div class="range-ticks">
+                    <span>25%</span>
+                    <span>50%</span>
+                    <span>75%</span>
+                    <span>100% (Original)</span>
+                    <span>150%</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Do not enlarge checkbox -->
+              <div class="checkbox-row mt-2">
+                <input type="checkbox" id="dontEnlargeCheck" class="custom-checkbox" checked>
+                <label for="dontEnlargeCheck" class="checkbox-label">Prevent enlarging beyond original resolution</label>
+              </div>
+            </div>
+
+            <!-- Download & Action Buttons -->
+            <div class="card action-card">
+              <button type="button" id="downloadSingleBtn" class="btn btn-primary btn-xl btn-download">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                <div class="btn-download-text">
+                  <span class="main-label">Download Compressed Image</span>
+                  <span id="downloadBtnSubtext" class="sub-label">Ready • WebP</span>
+                </div>
+              </button>
+
+              <div class="secondary-actions-grid">
+                <button type="button" id="copyClipboardBtn" class="btn btn-secondary">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                  <span>Copy Image</span>
+                </button>
+                <button type="button" id="revertImageBtn" class="btn btn-ghost">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
+                    <path d="M3 3v5h5"></path>
+                  </svg>
+                  <span>Reset Settings</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- BATCH QUEUE VIEW PANEL -->
+      <div id="batchViewPanel" class="view-panel hidden" role="tabpanel" aria-labelledby="tabBatch">
+        
+        <!-- Batch Global Controls Card -->
+        <div class="card batch-controls-card">
+          <div class="batch-controls-top">
+            <div class="batch-title-group">
+              <h3 class="batch-title">Global Batch Settings</h3>
+              <p class="batch-subtitle">Apply these settings to all queued images or customize each individually below.</p>
+            </div>
+            <div class="batch-actions-primary">
+              <button type="button" id="processAllBatchBtn" class="btn btn-secondary btn-md">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                </svg>
+                <span>Re-Process All</span>
+              </button>
+              <button type="button" id="downloadAllZipBtn" class="btn btn-primary btn-md">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                <span>Download All as ZIP</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="batch-controls-grid">
+            <div class="batch-field">
+              <label for="batchGlobalFormat" class="field-label">Batch Format</label>
+              <select id="batchGlobalFormat" class="form-control">
+                <option value="auto">Keep Original</option>
+                <option value="image/webp" selected>WebP (Smallest)</option>
+                <option value="image/jpeg">JPEG</option>
+                <option value="image/png">PNG</option>
+              </select>
+            </div>
+
+            <div class="batch-field">
+              <div class="label-with-value">
+                <label for="batchGlobalQuality" class="field-label">Batch Quality</label>
+                <span id="batchQualityValueText" class="chip-val">80%</span>
+              </div>
+              <input type="range" id="batchGlobalQuality" min="1" max="100" value="80" class="range-slider">
+            </div>
+
+            <div class="batch-field">
+              <label for="batchGlobalResize" class="field-label">Max Width / Scale</label>
+              <select id="batchGlobalResize" class="form-control">
+                <option value="100" selected>Original Dimensions (100%)</option>
+                <option value="75">Scale 75%</option>
+                <option value="50">Scale 50%</option>
+                <option value="max-1920">Fit within 1920px (Full HD)</option>
+                <option value="max-1280">Fit within 1280px (HD)</option>
+                <option value="max-800">Fit within 800px (Email/Web)</option>
+              </select>
+            </div>
+
+            <div class="batch-field batch-apply-btn-wrapper">
+              <button type="button" id="applyGlobalToAllBtn" class="btn btn-secondary w-100">
+                <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Apply to All Items</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Total Batch Savings Bar -->
+          <div class="batch-summary-stats" id="batchSummaryStats">
+            <div class="stat-pill">Total: <strong id="batchTotalCount">0</strong> images</div>
+            <div class="stat-pill">Original: <strong id="batchTotalOriginalSize">0 MB</strong></div>
+            <div class="stat-pill">Compressed: <strong id="batchTotalCompressedSize">0 MB</strong></div>
+            <div class="stat-pill stat-saved">Saved: <strong id="batchTotalSavedPercent">0%</strong> (<span id="batchTotalSavedBytes">0 MB</span>)</div>
+          </div>
+        </div>
+
+        <!-- Batch Items Grid -->
+        <div class="batch-items-container" id="batchItemsContainer" role="list" aria-label="Queued images list">
+          <!-- Dynamically populated batch cards -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Feature Highlights / Why OptiPic -->
+    <section class="features-section" id="featuresSection">
+      <div class="features-header">
+        <h2 class="section-title">Engineered for Speed, Privacy & Precision</h2>
+        <p class="section-subtitle">Process hundreds of photos right in your browser with zero network latency</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+              <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+            </svg>
+          </div>
+          <h3 class="feature-name">Zero Server Uploads</h3>
+          <p class="feature-desc">Your photos never touch a cloud server. 100% processed securely in browser memory via HTML5 Canvas API.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+            </svg>
+          </div>
+          <h3 class="feature-name">Instant Live Comparison</h3>
+          <p class="feature-desc">Inspect image artifacts in real time with our interactive split slider and side-by-side zoom visualizer.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+              <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+              <line x1="12" y1="22.08" x2="12" y2="12"></line>
+            </svg>
+          </div>
+          <h3 class="feature-name">Bulk ZIP Processing</h3>
+          <p class="feature-desc">Queue dozens of images at once, apply uniform compression rules, and download everything in one organized ZIP.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+              <line x1="12" y1="18" x2="12.01" y2="18"></line>
+            </svg>
+          </div>
+          <h3 class="feature-name">Mobile & Touch First</h3>
+          <p class="feature-desc">Direct camera capture, touch gestures for slider comparison, and comfortable touch targets tailored for all screens.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- History Drawer / Modal -->
+  <div id="historyDrawer" class="history-drawer-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="historyDrawerTitle">
+    <div class="history-drawer-panel">
+      <div class="drawer-header">
+        <div class="drawer-title-group">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"></circle>
+            <polyline points="12 6 12 12 16 14"></polyline>
+          </svg>
+          <h3 id="historyDrawerTitle" class="drawer-title">Compression History</h3>
+        </div>
+        <button id="closeHistoryBtn" class="icon-btn-sm" aria-label="Close History Panel">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+
+      <div class="drawer-body">
+        <!-- History Total Stats -->
+        <div class="history-stats-banner">
+          <div class="hstat-item">
+            <span class="hstat-val" id="histTotalFiles">0</span>
+            <span class="hstat-lbl">Files Compressed</span>
+          </div>
+          <div class="hstat-item">
+            <span class="hstat-val" id="histTotalSaved">0 MB</span>
+            <span class="hstat-lbl">Total Data Saved</span>
+          </div>
+        </div>
+
+        <div class="history-toolbar">
+          <div class="search-input-wrapper">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input type="text" id="historySearchInput" placeholder="Filter by file name..." class="search-input" aria-label="Filter history list">
+          </div>
+          <div class="history-actions-row">
+            <button id="exportHistoryCsvBtn" class="btn btn-ghost btn-sm" title="Export history to CSV file">Export CSV</button>
+            <button id="clearHistoryBtn" class="btn btn-ghost btn-sm text-danger" title="Clear all compression history">Clear All</button>
+          </div>
+        </div>
+
+        <!-- History Items List -->
+        <div id="historyListContainer" class="history-list" role="list">
+          <!-- Populated dynamically -->
+        </div>
+
+        <!-- Empty state -->
+        <div id="historyEmptyState" class="empty-state">
+          <div class="empty-icon" aria-hidden="true">📜</div>
+          <p class="empty-title">No history yet</p>
+          <p class="empty-desc">Your recent compression metadata will appear here (safe & private, images are never stored in localStorage).</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div id="toastContainer" class="toast-container" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- Hidden Canvas for Image Processing -->
+  <canvas id="processingCanvas" class="sr-only" aria-hidden="true"></canvas>
+
+  <!-- Footer -->
+  <footer class="app-footer">
+    <div class="footer-container">
+      <p class="footer-copy">
+        <strong>OptiPic Studio</strong> — 100% Client-Side Image Optimization • Fast, Secure & Private.
+      </p>
+      <div class="footer-links">
+        <a href="#uploadSection" class="footer-link">Back to Top</a>
+        <button id="footerHistoryLink" class="footer-link btn-link">View History</button>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

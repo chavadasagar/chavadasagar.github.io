@@ -3,272 +3,382 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Chavada Sagar | Project Showcase</title>
+<title>Chavada Sagar | Project Index</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
   :root{
-    --bg:#0f1115;
-    --bg2:#161922;
-    --card:#1b1f2a;
-    --card-hover:#232838;
-    --text:#e8eaf0;
-    --muted:#8b93a7;
-    --accent:#6c8cff;
-    --accent2:#ff6c9d;
-    --border:#2a2f3d;
-    --shadow: 0 8px 24px rgba(0,0,0,.35);
+    --bg:#0a0d13;
+    --bg2:#0d1119;
+    --panel:#11151f;
+    --panel-hover:#161c29;
+    --text:#e4e9f2;
+    --muted:#727d92;
+    --muted-dim:#4b5468;
+    --border:#212838;
+    --border-soft:#1a2030;
+    --accent:#59e0c9;
+    --accent-dim:#2f6e64;
+    --shadow: 0 16px 40px rgba(0,0,0,.45);
+
+    --c-system:#7c9bff;
+    --c-tools:#f5b04d;
+    --c-demo:#f56c8c;
+    --c-learning:#59e0c9;
+    --c-portfolio:#b98cf2;
+    --c-default:#8b93a7;
   }
   [data-theme="light"]{
-    --bg:#f4f6fb;
+    --bg:#f3f5fa;
     --bg2:#ffffff;
-    --card:#ffffff;
-    --card-hover:#eef1fb;
-    --text:#1a1d29;
-    --muted:#5b6172;
+    --panel:#ffffff;
+    --panel-hover:#f0f3fb;
+    --text:#161a24;
+    --muted:#5c6478;
+    --muted-dim:#98a0b3;
     --border:#e2e6f0;
-    --shadow: 0 8px 20px rgba(30,40,80,.08);
+    --border-soft:#eceef5;
+    --accent:#0f9d86;
+    --accent-dim:#bfece3;
+    --shadow: 0 12px 28px rgba(30,40,80,.10);
   }
+
   *{box-sizing:border-box;}
+  ::selection{ background:var(--accent); color:#04110d; }
+
   body{
     margin:0;
-    font-family:'Segoe UI', system-ui, -apple-system, Roboto, sans-serif;
-    background:radial-gradient(circle at 20% 0%, var(--bg2), var(--bg) 60%);
+    font-family:'Inter', system-ui, -apple-system, Roboto, sans-serif;
+    background:
+      radial-gradient(circle at 15% -10%, color-mix(in srgb, var(--accent) 10%, transparent), transparent 45%),
+      var(--bg);
+    background-attachment:fixed;
     color:var(--text);
     min-height:100vh;
     transition:background .3s ease, color .3s ease;
   }
-  header{
-    padding:48px 24px 20px;
-    text-align:center;
-    position:relative;
+  code, .mono{ font-family:'JetBrains Mono', ui-monospace, Menlo, monospace; }
+
+  a{ color:inherit; }
+  :focus-visible{
+    outline:2px solid var(--accent);
+    outline-offset:2px;
+    border-radius:6px;
   }
-  header .badge{
-    display:inline-block;
-    padding:4px 14px;
+
+  /* ---------- terminal chrome header ---------- */
+  .window{
+    max-width:1000px;
+    margin:40px auto 0;
+    padding:0 20px;
+  }
+  .titlebar{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    background:var(--panel);
     border:1px solid var(--border);
-    border-radius:999px;
-    font-size:12px;
-    letter-spacing:1px;
-    color:var(--muted);
-    margin-bottom:14px;
-    text-transform:uppercase;
+    border-bottom:none;
+    border-radius:12px 12px 0 0;
+    padding:11px 16px;
   }
+  .dot{ width:11px; height:11px; border-radius:50%; }
+  .dot.red{ background:#f56c6c; }
+  .dot.yellow{ background:#f5c04d; }
+  .dot.green{ background:#59e084; }
+  .titlebar .path{
+    margin-left:8px;
+    font-size:12.5px;
+    color:var(--muted);
+    letter-spacing:.2px;
+  }
+
+  header{
+    background:var(--bg2);
+    border:1px solid var(--border);
+    border-radius:0 0 12px 12px;
+    padding:34px 28px 30px;
+  }
+  .prompt-line{
+    font-size:13px;
+    color:var(--muted-dim);
+    margin-bottom:14px;
+    display:flex;
+    gap:8px;
+  }
+  .prompt-line .sym{ color:var(--accent); }
+
   h1.title{
     margin:0;
-    font-size:clamp(28px,5vw,44px);
+    font-family:'JetBrains Mono', monospace;
+    font-size:clamp(24px,4.4vw,38px);
     font-weight:800;
-    letter-spacing:-1px;
-    background:linear-gradient(90deg,var(--accent),var(--accent2));
-    -webkit-background-clip:text;
-    background-clip:text;
-    color:transparent;
+    letter-spacing:-.5px;
+    line-height:1.15;
   }
+  h1.title .rem{ color:var(--muted-dim); font-weight:500; }
+  h1.title .accent{ color:var(--accent); }
+
   .subtitle{
     color:var(--muted);
-    margin-top:8px;
-    font-size:15px;
+    margin-top:12px;
+    font-size:14.5px;
+    display:flex;
+    align-items:center;
+    gap:8px;
   }
+  .subtitle .cursor{
+    display:inline-block;
+    width:8px; height:16px;
+    background:var(--accent);
+    animation:blink 1.1s steps(1) infinite;
+    vertical-align:-3px;
+  }
+  @keyframes blink{ 50%{ opacity:0; } }
+
   .theme-toggle{
     position:absolute;
-    top:24px;
-    right:24px;
-    background:var(--card);
+    top:0; right:0;
+    background:transparent;
     border:1px solid var(--border);
-    color:var(--text);
-    padding:8px 14px;
-    border-radius:999px;
+    color:var(--muted);
+    padding:7px 13px;
+    border-radius:8px;
     cursor:pointer;
-    font-size:13px;
-    transition:.2s;
+    font-family:'JetBrains Mono', monospace;
+    font-size:12px;
+    transition:.18s;
   }
-  .theme-toggle:hover{ background:var(--card-hover); }
+  .titlebar{ position:relative; }
+  .theme-toggle{ position:static; margin-left:auto; }
+  .theme-toggle:hover{ color:var(--text); border-color:var(--accent); }
 
+  /* ---------- controls ---------- */
   .controls{
-    max-width:900px;
-    margin:28px auto 8px;
+    max-width:1000px;
+    margin:26px auto 0;
     padding:0 20px;
-    display:flex;
-    gap:12px;
-    flex-wrap:wrap;
-    justify-content:center;
   }
   .search-wrap{
-    flex:1 1 320px;
-    position:relative;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    background:var(--panel);
+    border:1px solid var(--border);
+    border-radius:10px;
+    padding:13px 16px;
+    transition:.18s;
+  }
+  .search-wrap:focus-within{
+    border-color:var(--accent);
+    box-shadow:0 0 0 3px color-mix(in srgb, var(--accent) 16%, transparent);
+  }
+  .search-wrap .sym{
+    color:var(--accent);
+    font-family:'JetBrains Mono', monospace;
+    font-size:14px;
   }
   .search-wrap input{
-    width:100%;
-    padding:14px 18px 14px 42px;
-    border-radius:14px;
-    border:1px solid var(--border);
-    background:var(--card);
-    color:var(--text);
-    font-size:15px;
+    flex:1;
+    border:none;
     outline:none;
-    transition:.2s;
+    background:transparent;
+    color:var(--text);
+    font-family:'JetBrains Mono', monospace;
+    font-size:14px;
   }
-  .search-wrap input:focus{
-    border-color:var(--accent);
-    box-shadow:0 0 0 3px rgba(108,140,255,.15);
-  }
-  .search-wrap::before{
-    content:"🔍";
-    position:absolute;
-    left:14px;
-    top:50%;
-    transform:translateY(-50%);
-    font-size:15px;
-    opacity:.6;
-  }
+  .search-wrap input::placeholder{ color:var(--muted-dim); }
 
   .filters{
-    max-width:1100px;
-    margin:18px auto 0;
+    max-width:1000px;
+    margin:16px auto 0;
     padding:0 20px;
     display:flex;
     gap:8px;
     flex-wrap:wrap;
-    justify-content:center;
   }
   .chip{
-    padding:7px 16px;
-    border-radius:999px;
+    display:flex;
+    align-items:center;
+    gap:7px;
+    padding:7px 14px;
+    border-radius:8px;
     border:1px solid var(--border);
-    background:var(--card);
+    background:var(--panel);
     color:var(--muted);
-    font-size:13px;
+    font-family:'JetBrains Mono', monospace;
+    font-size:12.5px;
     cursor:pointer;
     user-select:none;
-    transition:.2s;
+    transition:.16s;
     white-space:nowrap;
   }
-  .chip:hover{ color:var(--text); border-color:var(--accent);}
+  .chip .swatch{
+    width:7px; height:7px; border-radius:2px;
+    background:var(--muted-dim);
+  }
+  .chip:hover{ color:var(--text); border-color:var(--border-soft); background:var(--panel-hover); }
   .chip.active{
-    background:linear-gradient(90deg,var(--accent),var(--accent2));
-    color:#fff;
-    border-color:transparent;
-    font-weight:600;
+    color:var(--text);
+    border-color:var(--accent);
+    background:color-mix(in srgb, var(--accent) 10%, var(--panel));
   }
 
   .stats{
-    text-align:center;
-    color:var(--muted);
-    font-size:13px;
-    margin:18px 0 6px;
+    max-width:1000px;
+    margin:16px auto 0;
+    padding:0 20px;
+    color:var(--muted-dim);
+    font-family:'JetBrains Mono', monospace;
+    font-size:12px;
   }
 
+  /* ---------- grid ---------- */
   .grid{
-    max-width:1200px;
-    margin:0 auto;
-    padding:16px 20px 80px;
+    max-width:1000px;
+    margin:14px auto 0;
+    padding:16px 20px 90px;
     display:grid;
-    grid-template-columns:repeat(auto-fill,minmax(260px,1fr));
-    gap:16px;
+    grid-template-columns:repeat(auto-fill,minmax(280px,1fr));
+    gap:12px;
   }
 
   .card{
-    background:var(--card);
+    background:var(--panel);
     border:1px solid var(--border);
-    border-radius:16px;
-    padding:20px;
+    border-radius:10px;
+    padding:16px 18px;
     text-decoration:none;
     color:var(--text);
     display:flex;
     flex-direction:column;
-    gap:10px;
+    gap:9px;
     position:relative;
     overflow:hidden;
-    transition:transform .18s ease, box-shadow .18s ease, border-color .18s ease, background .18s ease;
+    transition:transform .16s ease, box-shadow .16s ease, border-color .16s ease, background .16s ease;
     opacity:0;
-    animation:fadeUp .45s ease forwards;
+    animation:fadeUp .4s ease forwards;
   }
   .card::before{
     content:"";
     position:absolute;
-    inset:0;
-    background:linear-gradient(135deg, rgba(108,140,255,.08), rgba(255,108,157,.06));
-    opacity:0;
-    transition:opacity .25s ease;
+    left:0; top:0; bottom:0;
+    width:3px;
+    background:var(--row-color, var(--c-default));
+    opacity:.9;
   }
   .card:hover{
-    transform:translateY(-6px);
+    transform:translateY(-3px);
     box-shadow:var(--shadow);
-    border-color:var(--accent);
-    background:var(--card-hover);
+    border-color:var(--row-color, var(--accent));
+    background:var(--panel-hover);
   }
-  .card:hover::before{ opacity:1; }
-  .card .icon{
-    font-size:26px;
-    line-height:1;
+  .card .top-row{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:10px;
   }
-  .card .name{
+  .card .badge{
+    font-family:'JetBrains Mono', monospace;
+    font-size:10.5px;
     font-weight:700;
-    font-size:15.5px;
-    z-index:1;
-  }
-  .card .tag{
-    font-size:11px;
-    color:var(--muted);
-    text-transform:uppercase;
-    letter-spacing:.5px;
-    z-index:1;
+    letter-spacing:.6px;
+    padding:3px 7px;
+    border-radius:5px;
+    color:var(--row-color, var(--c-default));
+    background:color-mix(in srgb, var(--row-color, var(--c-default)) 16%, transparent);
+    white-space:nowrap;
   }
   .card .arrow{
-    position:absolute;
-    right:18px;
-    bottom:16px;
+    color:var(--muted-dim);
+    font-family:'JetBrains Mono', monospace;
+    font-size:13px;
     opacity:0;
-    transform:translateX(-6px);
-    transition:.2s;
-    color:var(--accent);
-    z-index:1;
+    transform:translateX(-4px);
+    transition:.16s;
   }
-  .card:hover .arrow{ opacity:1; transform:translateX(0); }
+  .card:hover .arrow{ opacity:1; transform:translateX(0); color:var(--row-color, var(--accent)); }
+
+  .card .name{
+    font-weight:700;
+    font-size:14.5px;
+    line-height:1.35;
+  }
+  .card .path{
+    font-family:'JetBrains Mono', monospace;
+    font-size:11px;
+    color:var(--muted-dim);
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+  }
 
   @keyframes fadeUp{
-    from{ opacity:0; transform:translateY(14px); }
+    from{ opacity:0; transform:translateY(10px); }
     to{ opacity:1; transform:translateY(0); }
+  }
+  @media (prefers-reduced-motion: reduce){
+    .card{ animation:none; opacity:1; }
+    .subtitle .cursor{ animation:none; }
   }
 
   .empty{
     text-align:center;
     color:var(--muted);
+    font-family:'JetBrains Mono', monospace;
+    font-size:13.5px;
     padding:60px 20px;
     display:none;
   }
   .empty.show{ display:block; }
+  .empty .cursor2{
+    display:inline-block; width:7px; height:14px;
+    background:var(--accent); vertical-align:-2px;
+    animation:blink 1.1s steps(1) infinite;
+  }
 
   footer{
-    text-align:center;
-    color:var(--muted);
-    font-size:12.5px;
-    padding:24px;
-    border-top:1px solid var(--border);
+    max-width:1000px;
+    margin:0 auto;
+    padding:20px 20px 40px;
+    color:var(--muted-dim);
+    font-family:'JetBrains Mono', monospace;
+    font-size:12px;
+    border-top:1px solid var(--border-soft);
   }
 </style>
 </head>
 <body>
 
-<header>
-  <button class="theme-toggle" id="themeToggle">🌙 Dark</button>
-  <div class="badge">Chavada Sagar</div>
-  <h1 class="title">Project Playground</h1>
-  <div class="subtitle">.NET Backend Developer · Vanilla JS / HTML / CSS Builds · <span id="totalCount">0</span> mini projects & systems</div>
-</header>
+<div class="window">
+  <div class="titlebar">
+    <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+    <span class="path mono">sagar@portfolio: ~/projects</span>
+    <button class="theme-toggle mono" id="themeToggle">theme: dark</button>
+  </div>
+  <header>
+    <div class="prompt-line mono"><span class="sym">$</span> ls -la ./projects</div>
+    <h1 class="title"><span class="rem">//</span> <span class="accent">Project</span> Index</h1>
+    <div class="subtitle">Chavada Sagar · .NET Backend Developer · <span id="totalCount">0</span> vanilla builds, zero frameworks<span class="cursor"></span></div>
+  </header>
+</div>
 
 <div class="controls">
   <div class="search-wrap">
-    <input type="text" id="searchInput" placeholder="Search projects... (e.g. hospital, todo, resume)">
+    <span class="sym">$</span>
+    <input type="text" id="searchInput" placeholder="grep -i 'hospital' ./projects">
   </div>
 </div>
 
 <div class="filters" id="filters"></div>
-
-<div class="stats" id="stats"></div>
+<div class="stats mono" id="stats"></div>
 
 <div class="grid" id="grid"></div>
-<div class="empty" id="emptyState">😕 No matching project found. Try a different keyword.</div>
+<div class="empty" id="emptyState">grep: no matches found — try another query<span class="cursor2"></span></div>
 
-<footer>Built with vanilla HTML · CSS · JS — no framework, just discipline. 🚀</footer>
+<footer>root@sagar-portfolio:~$ echo "built without a framework, on purpose"</footer>
 
 <script>
   // =====================================================================
@@ -320,47 +430,58 @@
     { name:"Banana Prompt Builder", href:"Banana Prompt Builder/index.html" },
     { name:"Seat Booking & Billing System", href:"Seat Booking & Billing System/index.html" },
     { name:"Resume", href:"resume/index.html" },
-	{ name:"e-commerce", href:"e-commerce/index.html" },
-{ name:"Text To QR Code", href:"TextToQR/index.html" },
-{ name:"Resumebuilder", href:"Resumebuilder/index.html" },
-{ name:"ExpenseTracker", href:"ExpenseTracker/index.html" },
-{ name:"Unit Converter", href:"Unit Converter/index.html" },
-{ name:"Pomodoro Timer", href:"Pomodoro Timer/index.html" },
-{ name:"Note-Taking", href:"Note-Taking/index.html" },
-{ name:"Habit Tracker with Streak Counter", href:"Habit Tracker with Streak Counter/index.html" },
-{ name:"DevDocs", href:"TutorialStudio/index.html" }
+    { name:"e-commerce", href:"e-commerce/index.html" },
+    { name:"Text To QR Code", href:"TextToQR/index.html" },
+    { name:"Resumebuilder", href:"Resumebuilder/index.html" },
+    { name:"ExpenseTracker", href:"ExpenseTracker/index.html" },
+    { name:"Unit Converter", href:"Unit Converter/index.html" },
+    { name:"Pomodoro Timer", href:"Pomodoro Timer/index.html" },
+    { name:"Note-Taking", href:"Note-Taking/index.html" },
+    { name:"Habit Tracker with Streak Counter", href:"Habit Tracker with Streak Counter/index.html" },
+    { name:"DevDocs", href:"TutorialStudio/index.html" },
+    { name:"Barcode  - Label Generator", href:"Barcode  - Label Generator/index.html" },
+    { name:"Image Compressor", href:"Image Compressor/index.html" },
+    { name:"File Converter", href:"File Converter/index.html" }
 
     // 👉 Example: naya project add karna ho to bas yeh copy-paste karke edit karo:
     // { name:"Your New Project Name", href:"your-folder/index.html" },
   ];
 
-  // Keyword → {category, icon} rules. Order matters: pehla match jeetta hai.
+  // Keyword → {category, abbr} rules. Order matters: pehla match jeetta hai.
   // Naya keyword pattern add karna ho to bas is array me ek line add karo.
   const KEYWORD_RULES = [
-    { keywords:["resume", "portfolio"], cat:"Portfolio", icon:"📄" },
-    { keywords:["hospital"], cat:"System", icon:"🏥" },
-    { keywords:["hotel"], cat:"System", icon:"🏨" },
-    { keywords:["restaurant"], cat:"System", icon:"🍽️" },
-    { keywords:["jewel"], cat:"System", icon:"💎" },
-    { keywords:["library"], cat:"System", icon:"📚" },
-    { keywords:["appointment", "scheduler", "subscription", "booking", "seat"], cat:"System", icon:"📅" },
-    { keywords:["hrm", "hr outreach", "hr email"], cat:"System", icon:"🧑‍💼" },
-    { keywords:["queue", "project system"], cat:"System", icon:"🗂️" },
-    { keywords:["dsa", "question"], cat:"Learning", icon:"🧠" },
-    { keywords:["password"], cat:"Tools", icon:"🔐" },
-    { keywords:["ip info", "coordinate", "guid", "file info", "md reader", "number to word", "postman", "prompt builder", "template"], cat:"Tools", icon:"🧰" },
-    { keywords:["todo"], cat:"Demo", icon:"✅" },
-    { keywords:["joke"], cat:"Demo", icon:"😂" },
-    { keywords:["image"], cat:"Demo", icon:"🖼️" },
-    { keywords:["grid", "datatable"], cat:"Demo", icon:"📊" },
-    { keywords:["validation", "toastr", "notify"], cat:"Demo", icon:"⚠️" },
-    { keywords:["guess the number"], cat:"Demo", icon:"🎯" },
-    { keywords:["string repeated", "repeated value"], cat:"Demo", icon:"🔤" }
+    { keywords:["resume", "portfolio"], cat:"Portfolio", abbr:"POR" },
+    { keywords:["hospital"], cat:"System", abbr:"SYS" },
+    { keywords:["hotel"], cat:"System", abbr:"SYS" },
+    { keywords:["restaurant"], cat:"System", abbr:"SYS" },
+    { keywords:["jewel"], cat:"System", abbr:"SYS" },
+    { keywords:["library"], cat:"System", abbr:"SYS" },
+    { keywords:["appointment", "scheduler", "subscription", "booking", "seat"], cat:"System", abbr:"SYS" },
+    { keywords:["hrm", "hr outreach", "hr email"], cat:"System", abbr:"SYS" },
+    { keywords:["queue", "project system"], cat:"System", abbr:"SYS" },
+    { keywords:["dsa", "question"], cat:"Learning", abbr:"LRN" },
+    { keywords:["password"], cat:"Tools", abbr:"TUL" },
+    { keywords:["ip info", "coordinate", "guid", "file info", "md reader", "number to word", "postman", "prompt builder", "template", "converter", "compressor", "barcode"], cat:"Tools", abbr:"TUL" },
+    { keywords:["todo", "tracker", "timer", "note-taking"], cat:"Demo", abbr:"DEM" },
+    { keywords:["joke"], cat:"Demo", abbr:"DEM" },
+    { keywords:["image"], cat:"Demo", abbr:"DEM" },
+    { keywords:["grid", "datatable"], cat:"Demo", abbr:"DEM" },
+    { keywords:["validation", "toastr", "notify"], cat:"Demo", abbr:"DEM" },
+    { keywords:["guess the number"], cat:"Demo", abbr:"DEM" },
+    { keywords:["string repeated", "repeated value"], cat:"Demo", abbr:"DEM" }
   ];
 
-  const DEFAULT_RULE = { cat:"Demo", icon:"⚙️" };
+  const DEFAULT_RULE = { cat:"Demo", abbr:"DEM" };
 
-  // Auto-detect karta hai category/icon, agar project me manually nahi diya
+  const CAT_COLOR_VAR = {
+    "System":"--c-system",
+    "Tools":"--c-tools",
+    "Demo":"--c-demo",
+    "Learning":"--c-learning",
+    "Portfolio":"--c-portfolio"
+  };
+
+  // Auto-detect karta hai category/abbr, agar project me manually nahi diya
   function autoDetect(name){
     const lower = name.toLowerCase();
     for (const rule of KEYWORD_RULES){
@@ -369,12 +490,13 @@
     return DEFAULT_RULE;
   }
 
-  // Har project ko normalize karo: agar cat/icon manually diya hai to wahi use hoga,
+  // Har project ko normalize karo: agar cat/abbr manually diya hai to wahi use hoga,
   // warna auto-detect se fill ho jayega.
   projects.forEach(p => {
     const detected = autoDetect(p.name);
     p.cat = p.cat || detected.cat;
-    p.icon = p.icon || detected.icon;
+    p.abbr = p.abbr || detected.abbr;
+    p.colorVar = CAT_COLOR_VAR[p.cat] || "--c-default";
   });
 
   const grid = document.getElementById('grid');
@@ -395,8 +517,19 @@
     categories.forEach(cat => {
       const chip = document.createElement('div');
       chip.className = "chip" + (cat === activeCat ? " active" : "");
-      chip.textContent = cat;
-      chip.onclick = () => { activeCat = cat; renderChips(); renderGrid(); };
+      chip.tabIndex = 0;
+      chip.setAttribute('role', 'button');
+      chip.setAttribute('aria-pressed', cat === activeCat ? 'true' : 'false');
+
+      const swatch = document.createElement('span');
+      swatch.className = "swatch";
+      if (cat !== "All") swatch.style.background = `var(${CAT_COLOR_VAR[cat] || '--c-default'})`;
+      chip.appendChild(swatch);
+      chip.appendChild(document.createTextNode(cat));
+
+      const activate = () => { activeCat = cat; renderChips(); renderGrid(); };
+      chip.onclick = activate;
+      chip.onkeydown = (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); activate(); } };
       filtersEl.appendChild(chip);
     });
   }
@@ -414,18 +547,21 @@
       const a = document.createElement('a');
       a.className = "card";
       a.href = p.href;
-      a.style.animationDelay = (i * 0.02) + "s";
+      a.style.setProperty('--row-color', `var(${p.colorVar})`);
+      a.style.animationDelay = (i * 0.015) + "s";
       a.innerHTML = `
-        <div class="icon">${p.icon}</div>
+        <div class="top-row">
+          <span class="badge">${p.abbr}</span>
+          <span class="arrow">→ open</span>
+        </div>
         <div class="name">${p.name}</div>
-        <div class="tag">${p.cat}</div>
-        <div class="arrow">→</div>
+        <div class="path mono">./${p.href}</div>
       `;
       grid.appendChild(a);
     });
 
     emptyState.classList.toggle('show', filtered.length === 0);
-    statsEl.textContent = `Showing ${filtered.length} of ${projects.length} projects`;
+    statsEl.textContent = `${filtered.length} of ${projects.length} matched · category: ${activeCat.toLowerCase()}`;
   }
 
   searchInput.addEventListener('input', (e) => {
@@ -433,13 +569,22 @@
     renderGrid();
   });
 
-  // Theme toggle (in-memory only, no localStorage per artifact constraints)
+  // Theme toggle — persisted via localStorage since this page is a real
+  // deployed static site, not a sandboxed artifact.
   const themeToggle = document.getElementById('themeToggle');
-  let isLight = false;
+  function applyTheme(light){
+    document.documentElement.setAttribute('data-theme', light ? 'light' : 'dark');
+    themeToggle.textContent = light ? 'theme: light' : 'theme: dark';
+  }
+  let savedTheme = null;
+  try { savedTheme = localStorage.getItem('spx-theme'); } catch(e) {}
+  const prefersLight = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
+  let isLight = savedTheme ? savedTheme === 'light' : prefersLight;
+  applyTheme(isLight);
   themeToggle.addEventListener('click', () => {
     isLight = !isLight;
-    document.documentElement.setAttribute('data-theme', isLight ? 'light' : 'dark');
-    themeToggle.textContent = isLight ? '☀️ Light' : '🌙 Dark';
+    applyTheme(isLight);
+    try { localStorage.setItem('spx-theme', isLight ? 'light' : 'dark'); } catch(e) {}
   });
 
   renderChips();

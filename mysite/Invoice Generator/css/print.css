@@ -1,0 +1,181 @@
+/* ==========================================================================
+   Modern Invoice Generator - Dedicated Print & PDF Export Stylesheet
+   Engineered for clean A4 PDF export without browser headers/footers/URLs
+   ========================================================================== */
+
+/* Zero margin on @page suppresses browser-generated header (date, title) and footer (URL, page number) */
+@page {
+  size: A4 portrait;
+  margin: 0 !important;
+}
+
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 0 !important;
+  }
+
+  /* Hide all interactive app elements, navigation, forms, toolbars, modals, scrollbars */
+  html, body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    font-size: 10.5pt !important;
+    line-height: 1.35 !important;
+    width: 100% !important;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: visible !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    color-adjust: exact !important;
+  }
+
+  .app-header,
+  .bottom-nav,
+  .desktop-view-tabs,
+  .editor-section,
+  .preview-toolbar,
+  .modal-overlay,
+  .toast-container,
+  .btn,
+  .history-container,
+  .settings-container,
+  #tab-editor,
+  #tab-history,
+  #tab-settings,
+  .no-print {
+    display: none !important;
+  }
+
+  /* Reset layout constraints */
+  .app-container,
+  .main-layout,
+  .split-layout,
+  .tab-view,
+  .preview-container,
+  .preview-scale-wrapper {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+    position: static !important;
+    overflow: visible !important;
+  }
+
+  #tab-preview {
+    display: block !important;
+  }
+
+  /* Invoice Print Canvas Sheet with clean inner padding */
+  .invoice-sheet {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-height: auto !important;
+    margin: 0 auto !important;
+    padding: 12mm 15mm !important;
+    box-sizing: border-box !important;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    background: #ffffff !important;
+    color: #1e293b !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    color-adjust: exact !important;
+  }
+
+  /* Typography & Contrast Adjustments */
+  h1, h2, h3, h4, h5, h6,
+  .inv-client-name {
+    color: #0f172a;
+  }
+
+  .inv-company-name {
+    color: #0f172a;
+  }
+
+  .inv-title {
+    color: var(--primary);
+  }
+
+  /* Table formatting & page break rules */
+  .inv-table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    page-break-inside: auto;
+  }
+
+  .inv-table tr {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+
+  .inv-table th {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  .inv-table td {
+    padding: 8px 10px !important;
+    font-size: 9.5pt !important;
+  }
+
+  /* Section page break rules */
+  .inv-header {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+    margin-bottom: 1.5rem !important;
+  }
+
+  .inv-bill-to-section {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+    margin-bottom: 1.5rem !important;
+    padding: 10px 14px !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  .inv-bottom-section {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+    margin-top: 1.25rem !important;
+  }
+
+  .inv-footer {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+    margin-top: 2rem !important;
+    padding-top: 1rem !important;
+  }
+
+  /* Force exact background colors on template themes */
+  .template-corporate .inv-header {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    background: linear-gradient(135deg, #0f172a, #1e293b) !important;
+    color: #ffffff !important;
+  }
+  .template-corporate .inv-company-name {
+    color: #ffffff !important;
+  }
+  .template-corporate .inv-company-details {
+    color: #cbd5e1 !important;
+  }
+  .template-corporate .inv-meta-table td:first-child {
+    color: #94a3b8 !important;
+  }
+  .template-corporate .inv-meta-table td:last-child {
+    color: #ffffff !important;
+  }
+  .template-creative .grand-total-row,
+  .status-pill {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+}

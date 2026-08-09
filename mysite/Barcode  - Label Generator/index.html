@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="description" content="Free Mobile-Friendly Thermal Barcode & Product Label Generator. Generate CODE128, EAN-13, custom sizes, batch SKUs, and pixel-perfect thermal printer labels.">
+  <title>Barcode & Label Generator | Thermal Printer Ready</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%236366F1'><path d='M3 5v14M8 5v14M12 5v14M17 5v14M21 5v14M7 5v4M16 5v8'/></svg>">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/print.css" media="print">
+</head>
+<body>
+
+  <div class="app-container">
+    <!-- Header -->
+    <header class="app-header">
+      <div class="brand-wrapper">
+        <div class="brand-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 5v14M8 5v14M12 5v14M17 5v14M21 5v14M7 5v4M16 5v8" />
+          </svg>
+        </div>
+        <div class="brand-title">
+          LabelCraft <span class="badge-tag">PRO</span>
+        </div>
+      </div>
+
+      <div class="header-actions">
+        <button id="btn-print-guide" class="icon-btn" title="Thermal Print Guide">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="12" y1="16" x2="12" y2="12"></line>
+            <line x1="12" y1="8" x2="12.01" y2="8"></line>
+          </svg>
+        </button>
+        <button id="btn-toggle-theme" class="icon-btn" title="Toggle Theme">
+          <svg id="theme-icon-sun" class="hidden" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg id="theme-icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+        <button id="btn-save-as-template" class="btn btn-secondary btn-sm" title="Save current layout as a custom template">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path>
+            <polyline points="17 21 17 13 7 13 7 21"></polyline>
+            <polyline points="7 3 7 8 15 8"></polyline>
+          </svg>
+          <span>Save Preset</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Navigation Tabs -->
+    <div class="nav-tabs-container">
+      <div class="nav-tabs">
+        <button class="tab-btn active" data-tab="single">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+            <line x1="3" y1="9" x2="21" y2="9"></line>
+            <line x1="9" y1="21" x2="9" y2="9"></line>
+          </svg>
+          <span>Single Label</span>
+        </button>
+        <button class="tab-btn" data-tab="batch">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+          </svg>
+          <span>Batch Mode</span>
+        </button>
+        <button class="tab-btn" data-tab="templates">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+            <polyline points="2 17 12 22 22 17"></polyline>
+            <polyline points="2 12 12 17 22 12"></polyline>
+          </svg>
+          <span>Templates</span>
+        </button>
+        <button class="tab-btn" data-tab="history">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"></circle>
+            <polyline points="12 6 12 12 16 14"></polyline>
+          </svg>
+          <span>History & Backup</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+
+      <!-- TAB 1: SINGLE LABEL GENERATOR -->
+      <section id="tab-content-single" class="tab-view active">
+        <div class="workspace-grid">
+          
+          <!-- Left Controls Column -->
+          <div class="glass-panel">
+            <div class="panel-header">
+              <div>
+                <h2 class="panel-title">Label Content & Sizing</h2>
+                <div class="panel-subtitle">Customize product info, barcode format and layout</div>
+              </div>
+            </div>
+
+            <!-- Size Preset Selector -->
+            <div class="form-group">
+              <label class="form-label" for="preset-select">Label Dimensions (Thermal Roll Presets)</label>
+              <select id="preset-select" class="form-select">
+                <!-- Dynamically populated from presets.js -->
+              </select>
+            </div>
+
+            <!-- Custom mm dimensions (shown when custom preset is picked) -->
+            <div id="custom-size-row" class="form-row hidden" style="margin-bottom: 1rem;">
+              <div>
+                <label class="form-label" for="custom-width">Width (mm)</label>
+                <input type="number" id="custom-width" class="form-input" value="50" min="15" max="300" step="1">
+              </div>
+              <div>
+                <label class="form-label" for="custom-height">Height (mm)</label>
+                <input type="number" id="custom-height" class="form-input" value="25" min="10" max="300" step="1">
+              </div>
+            </div>
+
+            <!-- Product Title -->
+            <div class="form-group">
+              <label class="form-label" for="product-name">Product Name / Title</label>
+              <input type="text" id="product-name" class="form-input" placeholder="e.g., Organic Cotton T-Shirt" value="Wireless Bluetooth Earbuds">
+            </div>
+
+            <!-- SKU / Barcode Value & Format -->
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="barcode-format">Format</label>
+                <select id="barcode-format" class="form-select">
+                  <option value="CODE128" selected>CODE128 (Alphanumeric)</option>
+                  <option value="EAN13">EAN-13 (13 Digits)</option>
+                  <option value="CODE39">CODE39 (Standard)</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <label class="form-label" for="barcode-value">SKU / Code</label>
+                  <button id="btn-random-sku" type="button" style="font-size:0.7rem; color:var(--accent-cyan); text-decoration:underline;">Generate</button>
+                </div>
+                <input type="text" id="barcode-value" class="form-input" placeholder="e.g., SKU-89410" value="SKU-98421">
+              </div>
+            </div>
+
+            <!-- Price and Currency -->
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="currency-symbol">Currency</label>
+                <select id="currency-symbol" class="form-select">
+                  <option value="$" selected>$ (USD)</option>
+                  <option value="₹">₹ (INR)</option>
+                  <option value="€">€ (EUR)</option>
+                  <option value="£">£ (GBP)</option>
+                  <option value="¥">¥ (JPY/CNY)</option>
+                  <option value="AED">AED</option>
+                  <option value="">None</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="product-price">Price</label>
+                <input type="text" id="product-price" class="form-input" placeholder="29.99" value="29.99">
+              </div>
+            </div>
+
+            <!-- Header Store & Extra Subtitle -->
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="store-name">Header / Store Name</label>
+                <input type="text" id="store-name" class="form-input" placeholder="e.g. APPAREL CO" value="TECH HUB">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="extra-text">Attributes / Tag</label>
+                <input type="text" id="extra-text" class="form-input" placeholder="e.g. Color: Black" value="Color: Midnight Blue">
+              </div>
+            </div>
+
+            <!-- Optional MRP Discount -->
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="product-mrp">Original / MRP (Optional)</label>
+                <input type="text" id="product-mrp" class="form-input" placeholder="e.g. 49.99" value="">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="print-quantity">Copies to Print</label>
+                <input type="number" id="print-quantity" class="form-input" min="1" max="1000" value="1">
+              </div>
+            </div>
+
+            <!-- Advanced Design & Visibility Accordion -->
+            <div class="accordion" id="adv-accordion">
+              <div class="accordion-header" id="adv-accordion-toggle">
+                <span>Advanced Label Styling & Font Sizes</span>
+                <span class="accordion-icon">▼</span>
+              </div>
+              <div class="accordion-body">
+                <div class="toggle-group">
+                  <span class="toggle-label">Show Store / Brand Header</span>
+                  <label class="toggle-switch">
+                    <input type="checkbox" id="toggle-show-store" checked>
+                    <span class="toggle-slider"></span>
+                  </label>
+                </div>
+                <div class="toggle-group">
+                  <span class="toggle-label">Show Product Title</span>
+                  <label class="toggle-switch">
+                    <input type="checkbox" id="toggle-show-title" checked>
+                    <span class="toggle-slider"></span>
+                  </label>
+                </div>
+                <div class="toggle-group">
+                  <span class="toggle-label">Show Price</span>
+                  <label class="toggle-switch">
+                    <input type="checkbox" id="toggle-show-price" checked>
+                    <span class="toggle-slider"></span>
+                  </label>
+                </div>
+                <div class="toggle-group">
+                  <span class="toggle-label">Show Human-Readable Code under Barcode</span>
+                  <label class="toggle-switch">
+                    <input type="checkbox" id="toggle-show-barcode-text" checked>
+                    <span class="toggle-slider"></span>
+                  </label>
+                </div>
+                <div class="toggle-group">
+                  <span class="toggle-label">Show Attributes / Extra Subtitle</span>
+                  <label class="toggle-switch">
+                    <input type="checkbox" id="toggle-show-extra" checked>
+                    <span class="toggle-slider"></span>
+                  </label>
+                </div>
+
+                <div class="form-row" style="margin-top: 0.75rem;">
+                  <div class="form-group">
+                    <label class="form-label" for="border-style-select">Label Border</label>
+                    <select id="border-style-select" class="form-select">
+                      <option value="none">None (Clean Roll)</option>
+                      <option value="solid">Solid Border</option>
+                      <option value="dashed">Dashed (Cut Guidelines)</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="barcode-height-range">Barcode Height (px)</label>
+                    <input type="range" id="barcode-height-range" min="20" max="140" value="38" style="width: 100%; margin-top: 0.5rem;">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right Column: Interactive Live Preview Viewport -->
+          <div class="preview-sticky-panel">
+            <div class="glass-panel">
+              <div class="panel-header">
+                <div class="panel-title">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                    <circle cx="12" cy="12" r="3"></circle>
+                  </svg>
+                  <span>Live Label Preview</span>
+                </div>
+                <div class="flex-center gap-2">
+                  <button id="btn-download-svg" class="btn btn-secondary btn-sm" title="Download Vector SVG">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                      <polyline points="7 10 12 15 17 10"></polyline>
+                      <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    <span>SVG</span>
+                  </button>
+                  <button id="btn-download-png" class="btn btn-secondary btn-sm" title="Download High-Res PNG">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                      <polyline points="7 10 12 15 17 10"></polyline>
+                      <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    <span>PNG</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Preview Stage -->
+              <div class="preview-stage-container" id="preview-container-box">
+                <div class="preview-size-badge" id="preview-dimension-badge">50 × 25 mm</div>
+                
+                <div class="preview-toolbar">
+                  <button id="btn-zoom-out" class="icon-btn" style="width: 28px; height: 28px;" title="Zoom Out">-</button>
+                  <span id="zoom-level-text" style="font-size: 0.75rem; font-weight: 700; min-width: 38px; text-align: center; color: var(--text-primary);">150%</span>
+                  <button id="btn-zoom-in" class="icon-btn" style="width: 28px; height: 28px;" title="Zoom In">+</button>
+                  <button id="btn-zoom-reset" class="icon-btn" style="width: 28px; height: 28px; font-size: 0.7rem;" title="Reset Zoom">Fit</button>
+                </div>
+
+                <div class="label-viewport-wrapper" id="label-viewport-wrapper">
+                  <!-- The dynamic label card -->
+                  <div class="label-card-preview" id="live-label-card" style="width: 280px; height: 140px; padding: 8px;">
+                    <!-- Injected via JavaScript -->
+                  </div>
+                </div>
+              </div>
+
+              <div style="margin-top: 1rem; display: flex; align-items: center; justify-content: space-between;">
+                <div style="font-size: 0.8rem; color: var(--text-secondary);">
+                  💡 High-DPI Vector Crisp Thermal Scan Output
+                </div>
+                <button id="btn-single-print" class="btn btn-primary">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 6 2 18 2 18 9"></polyline>
+                    <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+                    <rect x="6" y="14" width="12" height="8"></rect>
+                  </svg>
+                  <span>Print Label Now</span>
+                </button>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- TAB 2: BATCH GENERATOR -->
+      <section id="tab-content-batch" class="tab-view hidden">
+        <div class="glass-panel">
+          <div class="panel-header">
+            <div>
+              <h2 class="panel-title">Batch Multi-Label Generator</h2>
+              <div class="panel-subtitle">Paste multiple SKUs, CSV data, or generate auto-sequential barcodes</div>
+            </div>
+            <div class="flex-center gap-2">
+              <button id="btn-load-sample-batch" class="btn btn-secondary btn-sm">Load Sample Data</button>
+              <button id="btn-open-sequence-modal" class="btn btn-secondary btn-sm">+ Auto Sequence</button>
+            </div>
+          </div>
+
+          <!-- Batch Input Area -->
+          <div class="form-group">
+            <div style="display: flex; justify-content: space-between; margin-bottom: 0.35rem;">
+              <label class="form-label" for="batch-raw-text">Paste SKUs or CSV (SKU, Product Name, Price, Quantity)</label>
+              <span style="font-size: 0.75rem; color: var(--text-muted);">One item per line</span>
+            </div>
+            <textarea id="batch-raw-text" class="form-textarea" placeholder="SKU-1001, Wireless Mouse, 19.99, 2&#10;SKU-1002, Mechanical Keyboard, 69.99, 1&#10;SKU-1003, USB-C Hub 7-in-1, 34.50, 3&#10;SKU-1004, HD Webcam 1080p, 49.00, 1"></textarea>
+          </div>
+
+          <div style="display: flex; gap: 0.75rem; margin-bottom: 1.25rem; flex-wrap: wrap;">
+            <button id="btn-process-batch-text" class="btn btn-primary btn-sm">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Parse & Add to List</span>
+            </button>
+            
+            <label class="btn btn-secondary btn-sm" style="cursor: pointer;">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="17 8 12 3 7 8"></polyline>
+                <line x1="12" y1="3" x2="12" y2="15"></line>
+              </svg>
+              <span>Import CSV File</span>
+              <input type="file" id="batch-csv-file" accept=".csv, .txt, .tsv" class="hidden">
+            </label>
+
+            <button id="btn-clear-batch-table" class="btn btn-danger btn-sm">Clear List</button>
+          </div>
+
+          <!-- Batch Stats Bar -->
+          <div class="batch-stats-bar">
+            <div class="stat-item">
+              <span class="stat-label">Unique SKUs</span>
+              <span class="stat-value" id="batch-stat-skus">0</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-label">Total Label Copies</span>
+              <span class="stat-value" id="batch-stat-total-labels">0</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-label">Active Size</span>
+              <span class="stat-value" id="batch-stat-preset" style="font-size: 0.95rem;">50×25mm</span>
+            </div>
+            <div>
+              <button id="btn-batch-print" class="btn btn-primary">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="6 9 6 2 18 2 18 9"></polyline>
+                  <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+                  <rect x="6" y="14" width="12" height="8"></rect>
+                </svg>
+                <span>Print All Labels</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Parsed Items Table -->
+          <div class="batch-table-container">
+            <table class="batch-table">
+              <thead>
+                <tr>
+                  <th style="width: 40px;">#</th>
+                  <th>SKU / Code</th>
+                  <th>Product Name</th>
+                  <th>Price</th>
+                  <th style="width: 120px;">Qty Copies</th>
+                  <th style="width: 60px; text-align: center;">Action</th>
+                </tr>
+              </thead>
+              <tbody id="batch-items-tbody">
+                <!-- Injected via JavaScript -->
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Multi-label Preview Grid -->
+          <div style="margin-top: 1.5rem;">
+            <h3 style="font-size: 0.95rem; font-weight: 700; margin-bottom: 0.75rem; color: var(--text-secondary);">Batch Label Grid Preview</h3>
+            <div id="batch-preview-grid" style="display: flex; flex-wrap: wrap; gap: 12px; max-height: 420px; overflow-y: auto; padding: 12px; background: rgba(0,0,0,0.2); border-radius: var(--radius-md); border: 1px solid var(--border-color);">
+              <!-- Rendered preview mini-cards -->
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- TAB 3: TEMPLATES & PRESETS -->
+      <section id="tab-content-templates" class="tab-view hidden">
+        <div class="glass-panel">
+          <div class="panel-header">
+            <div>
+              <h2 class="panel-title">Label Template Presets</h2>
+              <div class="panel-subtitle">Pick from popular industry presets or load your saved templates</div>
+            </div>
+          </div>
+
+          <h3 style="font-size: 0.85rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase; margin-bottom: 0.75rem; letter-spacing: 0.5px;">Standard Templates</h3>
+          <div class="template-grid" id="builtin-templates-grid">
+            <!-- Rendered from templates.js -->
+          </div>
+
+          <div style="margin-top: 2rem;">
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.75rem;">
+              <h3 style="font-size: 0.85rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px;">Your Custom Templates</h3>
+              <button id="btn-save-current-as-custom" class="btn btn-secondary btn-sm">+ Save Current Design</button>
+            </div>
+            <div class="template-grid" id="custom-templates-grid">
+              <!-- Rendered from localStorage -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TAB 4: HISTORY & BACKUP -->
+      <section id="tab-content-history" class="tab-view hidden">
+        <div class="glass-panel">
+          <div class="panel-header">
+            <div>
+              <h2 class="panel-title">Recent Print Batches & Settings</h2>
+              <div class="panel-subtitle">Reload previously printed batches or backup your templates</div>
+            </div>
+            <div class="flex-center gap-2">
+              <button id="btn-export-backup" class="btn btn-secondary btn-sm">Export Data JSON</button>
+              <label class="btn btn-secondary btn-sm" style="cursor: pointer;">
+                <span>Import JSON</span>
+                <input type="file" id="btn-import-backup-file" accept=".json" class="hidden">
+              </label>
+            </div>
+          </div>
+
+          <div id="recent-batches-list" style="display: flex; flex-direction: column; gap: 0.75rem;">
+            <!-- Rendered from StorageManager.getRecentBatches() -->
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Sticky Mobile Bottom Bar -->
+    <div class="mobile-bottom-bar">
+      <div class="mobile-bottom-content">
+        <div style="display: flex; flex-direction: column;">
+          <span style="font-size: 0.7rem; color: var(--text-muted); font-weight: 700; text-transform: uppercase;">Ready to Print</span>
+          <span id="mobile-summary-text" style="font-size: 0.9rem; font-weight: 800; color: var(--accent-cyan);">1 Label (50×25mm)</span>
+        </div>
+
+        <div class="flex-center gap-2">
+          <button id="btn-mobile-preview-toggle" class="btn btn-secondary btn-sm">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+              <circle cx="12" cy="12" r="3"></circle>
+            </svg>
+            <span>Preview</span>
+          </button>
+          <button id="btn-mobile-print-action" class="btn btn-primary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 6 2 18 2 18 9"></polyline>
+              <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+              <rect x="6" y="14" width="12" height="8"></rect>
+            </svg>
+            <span>Print</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- MODAL: AUTO SEQUENCE GENERATOR -->
+  <div class="modal-overlay" id="modal-sequence">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 class="modal-title">Generate Sequential Barcodes</h3>
+        <button class="icon-btn btn-modal-close" data-close="modal-sequence">&times;</button>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label" for="seq-prefix">SKU Prefix</label>
+          <input type="text" id="seq-prefix" class="form-input" value="PROD-">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="seq-start">Start Number</label>
+          <input type="number" id="seq-start" class="form-input" value="1001" min="1">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label" for="seq-count">Total Labels</label>
+          <input type="number" id="seq-count" class="form-input" value="20" min="1" max="250">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="seq-pad">Zero Padding</label>
+          <input type="number" id="seq-pad" class="form-input" value="4" min="0" max="10">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label" for="seq-name">Default Product Name</label>
+          <input type="text" id="seq-name" class="form-input" value="Inventory Item">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="seq-price">Default Price</label>
+          <input type="text" id="seq-price" class="form-input" value="19.99">
+        </div>
+      </div>
+      <div style="margin-top: 1rem; display: flex; justify-content: flex-end; gap: 0.5rem;">
+        <button class="btn btn-secondary btn-modal-close" data-close="modal-sequence">Cancel</button>
+        <button id="btn-submit-sequence" class="btn btn-primary">Generate & Insert</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: SAVE CUSTOM TEMPLATE -->
+  <div class="modal-overlay" id="modal-save-template">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 class="modal-title">Save Custom Template</h3>
+        <button class="icon-btn btn-modal-close" data-close="modal-save-template">&times;</button>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="custom-template-name">Template Name</label>
+        <input type="text" id="custom-template-name" class="form-input" placeholder="e.g. My Apparel Tag 50x30">
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="custom-template-desc">Description (Optional)</label>
+        <input type="text" id="custom-template-desc" class="form-input" placeholder="e.g. Special size tag for warehouse">
+      </div>
+      <div style="margin-top: 1rem; display: flex; justify-content: flex-end; gap: 0.5rem;">
+        <button class="btn btn-secondary btn-modal-close" data-close="modal-save-template">Cancel</button>
+        <button id="btn-confirm-save-template" class="btn btn-primary">Save Template</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: THERMAL PRINTER SETUP GUIDE -->
+  <div class="modal-overlay" id="modal-print-guide">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 class="modal-title">Thermal Printer Setup Guide</h3>
+        <button class="icon-btn btn-modal-close" data-close="modal-print-guide">&times;</button>
+      </div>
+      <div style="font-size: 0.85rem; line-height: 1.6; color: var(--text-secondary);">
+        <p style="margin-bottom: 0.75rem; color: var(--text-primary); font-weight: 600;">
+          Follow these 4 settings in your browser's Print Dialog (Ctrl+P / Cmd+P) for 100% sharp, zero-margin labels:
+        </p>
+        <ol style="padding-left: 1.25rem; display: flex; flex-direction: column; gap: 0.6rem; margin-bottom: 1rem;">
+          <li><strong>Destination:</strong> Select your thermal printer (e.g. Zebra, Rollo, Munbyn, Brother, Phomemo).</li>
+          <li><strong>Paper Size:</strong> Choose the paper dimension matching your roll (e.g. 50×25mm or 2"×1").</li>
+          <li><strong>Margins:</strong> Set to <span style="color: var(--accent-cyan); font-weight: 700;">"None"</span> or <span style="color: var(--accent-cyan); font-weight: 700;">"Custom (0mm)"</span> to prevent extra blank labels.</li>
+          <li><strong>Scale:</strong> Set to <span style="color: var(--accent-cyan); font-weight: 700;">100% (Default)</span> or "Fit to printable area".</li>
+          <li><strong>Options:</strong> Enable <span style="color: var(--accent-cyan); font-weight: 700;">"Background Graphics"</span>.</li>
+        </ol>
+        <div style="background: rgba(99, 102, 241, 0.1); border-left: 3px solid var(--accent-primary); padding: 0.6rem 0.75rem; border-radius: 4px; font-size: 0.8rem;">
+          📱 <strong>Mobile Note:</strong> You can draft SKUs, preview layouts, and generate batches on mobile. For physical thermal roll printing, connect via Bluetooth/AirPrint or open on your desktop thermal workstation.
+        </div>
+      </div>
+      <div style="margin-top: 1.25rem; display: flex; justify-content: flex-end;">
+        <button class="btn btn-primary btn-modal-close" data-close="modal-print-guide">Got It</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- HIDDEN PRINT STAGE (Populated dynamically on window.print()) -->
+  <div id="print-stage" class="print-stage"></div>
+
+  <!-- Dynamic Style Element for @page size -->
+  <style id="dynamic-page-print-style"></style>
+
+  <!-- Scripts -->
+  <script src="js/barcode.js"></script>
+  <script src="js/presets.js"></script>
+  <script src="js/templates.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/batch.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
