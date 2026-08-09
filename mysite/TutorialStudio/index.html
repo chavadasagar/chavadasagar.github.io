@@ -1,272 +1,144 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TutorialStudio - Modern Interactive Developer Learning Hub</title>
-  <meta name="description" content="Master 38+ programming languages and technologies with over 3,500+ interactive tutorials, live code sandboxes, cheatsheets, and guided roadmaps.">
+  <meta name="description" content="DevDocs — A digital card catalog for code knowledge across 38 programming subjects and 3,569 indexed topics.">
+  <title>DevDocs — Digital Card Catalog for Code</title>
 
-  <!-- Stylesheets -->
-  <link rel="stylesheet" href="assets/css/main.css">
+  <!-- Google Fonts: Newsreader (Display Serif), Inter (Clean Humanist Sans), JetBrains Mono (Code/Call Numbers) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Reading Progress Bar (Fixed at top of viewport) -->
+  <div id="readingProgress" class="reading-progress-bar" aria-hidden="true"></div>
 
-  <!-- Site Navigation Header -->
-  <header class="site-header">
-    <div class="header-container">
-      <a href="index.html" class="brand-logo">
-        <span class="brand-badge">⚡</span>
-        <span class="brand-text">Tutorial<span>Studio</span></span>
-      </a>
+  <!-- App Shell Container -->
+  <div id="app" class="app-root">
 
-      <nav>
-        <ul class="nav-links">
-          <li><a href="index.html" class="nav-link active">Home</a></li>
-          <li><a href="subjects.html" class="nav-link">All Subjects</a></li>
-          <li><a href="tutorial.html#subject=html&topic=html_default" class="nav-link">Tutorials</a></li>
-          <li><a href="playground.html" class="nav-link">Live Sandbox</a></li>
-          <li><a href="cheatsheets.html" class="nav-link">Cheatsheets</a></li>
-        </ul>
-      </nav>
+    <!-- Slim 56px Library Top Header -->
+    <header class="catalog-header" id="topHeader">
+      <div class="header-left">
+        <!-- Sidebar collapse toggle -->
+        <button id="sidebarToggleBtn" class="catalog-btn-icon" title="Toggle catalog drawer (Ctrl+B)" aria-label="Toggle Catalog Sidebar">
+          <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
 
-      <div class="header-actions">
-        <button class="search-trigger-btn" id="btnOpenSearch" title="Search all topics (Ctrl+K)">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <!-- Site Title & Tagline -->
+        <a href="#/" class="catalog-brand" id="brandLogo">
+          <span class="catalog-title">DevDocs</span>
+          <span class="catalog-tagline">Card Catalog for Code</span>
+        </a>
+      </div>
+
+      <!-- Center-Right Library Card-Lookup Box -->
+      <div class="header-center">
+        <div class="search-box-wrapper">
+          <svg class="search-box-icon" viewBox="0 0 24 24" width="15" height="15" stroke="currentColor" stroke-width="2" fill="none">
             <circle cx="11" cy="11" r="8"></circle>
             <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
           </svg>
-          <span>Quick Search...</span>
-          <kbd class="search-kbd">Ctrl K</kbd>
+          <input type="text" id="catalogSearchInput" class="catalog-search-input" placeholder="Search 3,569 topics..." autocomplete="off" spellcheck="false" aria-label="Search catalog">
+          <span class="search-kbd-hint"><kbd>/</kbd></span>
+
+          <!-- Search Dropdown Palette -->
+          <div id="searchDropdown" class="search-dropdown hidden" role="listbox"></div>
+        </div>
+      </div>
+
+      <!-- Header Right Controls -->
+      <div class="header-right">
+        <!-- Last Opened Topic Shortcut -->
+        <button id="resumeTopicBtn" class="resume-pill hidden" title="Resume last consulted card">
+          <span class="resume-dot"></span>
+          <span class="resume-label">Resume</span>
         </button>
 
-        <button class="icon-btn theme-toggle-btn" title="Toggle Theme">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <!-- Dark / Light Theme Toggle -->
+        <button id="themeToggleBtn" class="catalog-btn-icon" title="Toggle Light/Dark Theme" aria-label="Toggle Theme">
+          <svg class="theme-icon sun-icon" viewBox="0 0 24 24" width="17" height="17" stroke="currentColor" stroke-width="2" fill="none">
             <circle cx="12" cy="12" r="5"></circle>
             <line x1="12" y1="1" x2="12" y2="3"></line>
             <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="theme-icon moon-icon" viewBox="0 0 24 24" width="17" height="17" stroke="currentColor" stroke-width="2" fill="none">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
           </svg>
         </button>
       </div>
+    </header>
+
+    <!-- Main Workspace Layout -->
+    <div class="workspace-body">
+      
+      <!-- Backdrop for Mobile Drawer -->
+      <div id="sidebarBackdrop" class="drawer-backdrop"></div>
+
+      <!-- 280px Persistent Collapsible Sidebar -->
+      <aside class="catalog-sidebar" id="appSidebar" aria-label="Catalog Navigation">
+        
+        <!-- Sidebar Top Tools -->
+        <div class="sidebar-top-bar">
+          <div class="sidebar-filter-box">
+            <input type="text" id="sidebarFilterInput" class="sidebar-filter-input" placeholder="Filter card index..." autocomplete="off">
+            <button id="sidebarFilterClear" class="filter-clear-btn hidden" title="Clear filter">✕</button>
+          </div>
+          <button id="sidebarCollapseToggle" class="sidebar-rail-btn" title="Collapse sidebar to rail">
+            <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none">
+              <polyline points="11 17 6 12 11 7"></polyline>
+              <polyline points="18 17 13 12 18 7"></polyline>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Sidebar Navigation Tree -->
+        <nav class="sidebar-tree" id="sidebarNav">
+          <div class="catalog-loading-placeholder">
+            <div class="skeleton-line" style="width: 70%;"></div>
+            <div class="skeleton-line" style="width: 50%;"></div>
+            <div class="skeleton-line" style="width: 80%;"></div>
+          </div>
+        </nav>
+
+        <!-- Sidebar Footer Catalog Meta -->
+        <div class="sidebar-bottom-bar">
+          <span class="catalog-meta-callout">CATALOG INDEX: 3,569 CARDS</span>
+        </div>
+      </aside>
+
+      <!-- Main Reading Area (Centered, max-width 680px body) -->
+      <main class="catalog-main" id="mainContent">
+        <div id="viewContainer" class="view-mount">
+          <!-- Views rendered dynamically -->
+        </div>
+      </main>
+
     </div>
-  </header>
 
-  <!-- Hero Section -->
-  <section class="hero-section">
-    <div class="hero-glow"></div>
-    <div class="container hero-content">
-      <div class="badge badge-primary hero-pill search-pill-btn">
-        <span>✨ 38 Technologies • 3,500+ Tutorials • Free Forever</span>
-      </div>
+    <!-- Toast Notification (Library Stamp / Copied Confirmation) -->
+    <div id="toastNotification" class="stamp-toast hidden" role="status" aria-live="polite"></div>
 
-      <h1 class="hero-title">
-        The Modern Platform to <span class="gradient-text">Learn & Master</span> Modern Development
-      </h1>
+  </div>
 
-      <p class="hero-subtitle">
-        Accelerate your coding journey with interactive tutorials, live executable sandboxes, cheatsheets, and industry-tailored learning paths.
-      </p>
+  <!-- Direct Data Scripts (Zero web server required, instant file:/// execution) -->
+  <script src="data/summary_report.js"></script>
+  <script src="data/w3schools_master_index.js"></script>
 
-      <div class="hero-actions">
-        <a href="tutorial.html#subject=html&topic=html_default" class="btn btn-primary btn-lg">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
-          Start Learning Free
-        </a>
-        <a href="playground.html" class="btn btn-secondary btn-lg">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
-          Open Code Sandbox
-        </a>
-      </div>
-
-      <!-- Quick Stats Bar -->
-      <div class="stats-strip">
-        <div class="stat-item">
-          <div class="stat-num" id="statCategories">6<span>+</span></div>
-          <div class="stat-label">Specialized Categories</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-num" id="statSubjects">38<span>+</span></div>
-          <div class="stat-label">Coding Subjects</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-num" id="statTopics">3,560<span>+</span></div>
-          <div class="stat-label">In-depth Lessons</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-num" id="statExamples">5,420<span>+</span></div>
-          <div class="stat-label">Runnable Code Snippets</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Main Content Container -->
-  <main class="container" style="padding-top: 1rem; padding-bottom: 5rem;">
-
-    <!-- Resume Learning Banner (Dynamic) -->
-    <div id="continueLearningWrap"></div>
-
-    <!-- Category Hub Section -->
-    <section style="margin-bottom: 4rem;">
-      <div class="section-header">
-        <div class="section-title-wrap">
-          <h2>Browse by Category</h2>
-          <p>Structured curriculum curated for every branch of software engineering</p>
-        </div>
-      </div>
-
-      <div class="categories-grid" id="categoriesGrid">
-        <!-- Rendered via JS -->
-      </div>
-    </section>
-
-    <!-- Subjects Explorer with Category Filter Tabs -->
-    <section style="margin-bottom: 5rem;">
-      <div class="section-header">
-        <div class="section-title-wrap">
-          <h2>Explore All 38 Subjects</h2>
-          <p>Pick a technology to start reading topics and testing code examples</p>
-        </div>
-
-        <div class="category-tabs">
-          <button class="category-tab active" data-filter="all">All (38)</button>
-          <button class="category-tab" data-filter="HTML & CSS">HTML & CSS</button>
-          <button class="category-tab" data-filter="JavaScript & Frontend">Frontend & JS</button>
-          <button class="category-tab" data-filter="Backend & Programming">Backend & Languages</button>
-          <button class="category-tab" data-filter="Data Science & AI">Data Science & AI</button>
-          <button class="category-tab" data-filter="Databases">Databases</button>
-          <button class="category-tab" data-filter="Web Tools & Security">Tools & Security</button>
-        </div>
-      </div>
-
-      <div class="subjects-grid" id="subjectsGrid">
-        <!-- Rendered via JS -->
-      </div>
-    </section>
-
-    <!-- Learning Roadmaps / Career Paths -->
-    <section class="roadmaps-section">
-      <div class="section-header">
-        <div class="section-title-wrap">
-          <h2>Guided Learning Roadmaps</h2>
-          <p>Step-by-step career pathways from beginner to advanced professional</p>
-        </div>
-      </div>
-
-      <div class="roadmaps-grid">
-        <div class="roadmap-card">
-          <span class="badge badge-primary" style="width: fit-content; margin-bottom: 0.75rem;">Frontend Engineer</span>
-          <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Modern Web Developer Path</h3>
-          <p style="font-size: 0.875rem; color: var(--text-secondary); margin-bottom: 1.25rem;">
-            Master user interfaces, responsive design, state management, and modern component frameworks.
-          </p>
-          <div style="display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 1.5rem;">
-            <div class="roadmap-step"><span class="step-num">1</span> HTML5 & Modern Semantic Web</div>
-            <div class="roadmap-step"><span class="step-num">2</span> CSS3 Flexbox, Grid & Responsive Design</div>
-            <div class="roadmap-step"><span class="step-num">3</span> JavaScript (ES6+), DOM & Async Programming</div>
-            <div class="roadmap-step"><span class="step-num">4</span> React / Vue & TypeScript Essentials</div>
-          </div>
-          <a href="tutorial.html#subject=html&topic=html_default" class="btn btn-secondary btn-sm" style="margin-top: auto;">
-            Start Frontend Track &rarr;
-          </a>
-        </div>
-
-        <div class="roadmap-card">
-          <span class="badge badge-success" style="width: fit-content; margin-bottom: 0.75rem;">Backend & Systems</span>
-          <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Server-Side & API Engineering</h3>
-          <p style="font-size: 0.875rem; color: var(--text-secondary); margin-bottom: 1.25rem;">
-            Build high-performance REST & GraphQL APIs, database schemas, microservices, and secure servers.
-          </p>
-          <div style="display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 1.5rem;">
-            <div class="roadmap-step"><span class="step-num">1</span> Python, Node.js or Java Fundamentals</div>
-            <div class="roadmap-step"><span class="step-num">2</span> SQL & Relational Databases (PostgreSQL, MySQL)</div>
-            <div class="roadmap-step"><span class="step-num">3</span> NoSQL Databases (MongoDB) & Caching</div>
-            <div class="roadmap-step"><span class="step-num">4</span> Cyber Security, Auth & Git Workflow</div>
-          </div>
-          <a href="tutorial.html#subject=python&topic=python_intro" class="btn btn-secondary btn-sm" style="margin-top: auto;">
-            Start Backend Track &rarr;
-          </a>
-        </div>
-
-        <div class="roadmap-card">
-          <span class="badge badge-cyan" style="width: fit-content; margin-bottom: 0.75rem;">Data & AI Specialist</span>
-          <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Data Science & Artificial Intelligence</h3>
-          <p style="font-size: 0.875rem; color: var(--text-secondary); margin-bottom: 1.25rem;">
-            From exploratory data analysis and vector math to machine learning models and AI applications.
-          </p>
-          <div style="display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 1.5rem;">
-            <div class="roadmap-step"><span class="step-num">1</span> Python for Data Science</div>
-            <div class="roadmap-step"><span class="step-num">2</span> NumPy Arrays & Pandas DataFrames</div>
-            <div class="roadmap-step"><span class="step-num">3</span> Matplotlib & SciPy Visualizations</div>
-            <div class="roadmap-step"><span class="step-num">4</span> Machine Learning & Generative AI Models</div>
-          </div>
-          <a href="tutorial.html#subject=python&topic=python_intro" class="btn btn-secondary btn-sm" style="margin-top: auto;">
-            Start AI Track &rarr;
-          </a>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- Site Footer -->
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <div class="brand-logo">
-            <span class="brand-badge">⚡</span>
-            <span class="brand-text">Tutorial<span>Studio</span></span>
-          </div>
-          <p>
-            An open developer educational platform featuring 38 programming languages, 3,500+ tutorials, interactive sandboxes, and developer reference tools.
-          </p>
-        </div>
-
-        <div class="footer-col">
-          <h4>Frontend</h4>
-          <ul class="footer-links">
-            <li><a href="tutorial.html#subject=html&topic=html_default">HTML5 Tutorial</a></li>
-            <li><a href="tutorial.html#subject=css&topic=css_intro">CSS3 Tutorial</a></li>
-            <li><a href="tutorial.html#subject=javascript&topic=js_intro">JavaScript Tutorial</a></li>
-            <li><a href="tutorial.html#subject=react&topic=react_intro">React Tutorial</a></li>
-            <li><a href="tutorial.html#subject=vue&topic=vue_intro">Vue.js Tutorial</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h4>Backend & Data</h4>
-          <ul class="footer-links">
-            <li><a href="tutorial.html#subject=python&topic=python_intro">Python Tutorial</a></li>
-            <li><a href="tutorial.html#subject=sql&topic=sql_intro">SQL Tutorial</a></li>
-            <li><a href="tutorial.html#subject=node_js&topic=nodejs_intro">Node.js Tutorial</a></li>
-            <li><a href="tutorial.html#subject=java&topic=java_intro">Java Tutorial</a></li>
-            <li><a href="tutorial.html#subject=ai&topic=ai_intro">AI & ML Tutorial</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h4>Tools & Sandbox</h4>
-          <ul class="footer-links">
-            <li><a href="playground.html">Live Code Sandbox</a></li>
-            <li><a href="cheatsheets.html">Developer Cheatsheets</a></li>
-            <li><a href="subjects.html">All 38 Subjects Directory</a></li>
-            <li><a href="tutorial.html#subject=git&topic=git_intro">Git Version Control</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <span>© 2026 TutorialStudio. Built with high performance & interactive learning tools.</span>
-        <span>Keyboard Shortcut: Press <kbd class="search-kbd">Ctrl+K</kbd> to search anytime</span>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Scripts -->
-  <script src="assets/data/catalog.js"></script>
-  <script src="assets/js/theme.js"></script>
-  <script src="assets/js/storage.js"></script>
-  <script src="assets/js/search.js"></script>
-  <script src="assets/js/app.js"></script>
+  <!-- Application Engine -->
+  <script src="app.js"></script>
 </body>
 </html>

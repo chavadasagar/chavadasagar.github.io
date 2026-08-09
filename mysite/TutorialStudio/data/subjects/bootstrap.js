@@ -1,0 +1,6508 @@
+﻿window.DEVDOCS_SUBJECTS = window.DEVDOCS_SUBJECTS || {};
+window.DEVDOCS_SUBJECTS['bootstrap'] = [
+    {
+        "url": "https://www.w3schools.com/bootstrap/bootstrap_ver.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "bootstrap_bootstrap_ver",
+        "code_examples": [],
+        "category": "HTML & CSS",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\nny:-->\n\n ny:-->\n\nny:-->\n\n Bootstrap Versions\n Bootstrap is the world's most famous free CSS framework.\nYou can choose between the following versions:\n\n B3\n Learn Bootstrap 3 »\n\n Bootstrap 3 is the most stable version of Bootstrap, and it is still supported by the team for critical bugfixes and documentation changes.\n\n B4\n Learn Bootstrap 4 »\n\n Bootstrap 4 is a newer version of Bootstrap; with new components, faster stylesheet and more responsiveness. However, Internet Explorer 9 and down is not supported.\n\n B5\n Learn Bootstrap 5 »\n\n Bootstrap 5 is the newest version of Bootstrap; with a smooth overhaul. However, Internet Explorer 11 and down is not supported, and jQuery is replaced with vanilla JavaScript.\n\n ★\n\n +1\n\n Sign in to track progress",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:05:39Z",
+        "subject": "Bootstrap",
+        "title": "Bootstrap Versions"
+    },
+    {
+        "url": "https://www.w3schools.com/bootstrap5/bootstrap_get_started.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "bootstrap_bootstrap_get_started",
+        "code_examples": [
+            {
+                "code": "<div class=\"container-fluid p-5 bg-primary text-white text-center\">\n\n <h1>My First Bootstrap Page</h1>\n  <p>Resize this responsive page to \n see the effect!</p> \n</div>\n\n<div class=\"container mt-5\">\n  <div \n class=\"row\">\n    <div class=\"col-sm-4\">\n\n <h3>Column 1</h3>\n      <p>Lorem ipsum dolor sit \n amet, consectetur adipisicing elit...</p>\n\n <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>\n\n </div>\n    <div class=\"col-sm-4\">\n\n <h3>Column 2</h3>\n      <p>Lorem ipsum dolor sit \n amet, consectetur adipisicing elit...</p>\n\n <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>\n\n </div>\n    <div class=\"col-sm-4\">\n\n <h3>Column 3</h3> \n      <p>Lorem ipsum dolor sit \n amet, consectetur adipisicing elit...</p>\n\n <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>\n\n </div>\n  </div>\n</div>",
+                "language": "bootstrap",
+                "heading": "Bootstrap 5 Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_default&stacked=h"
+            },
+            {
+                "code": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n\n <title>Bootstrap 5 Example</title>\n    <meta charset=\"utf-8\"> \n  </head>\n</html>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <title>Bootstrap \n Example</title>\n  <meta charset=\"utf-8\">\n  <meta \n name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <link \n href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css\" \n rel=\"stylesheet\">\n  <script \n src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js\"></script>\n\n </head>\n<body>\n\n<div class=\"container\">\n  <h1>My First \n Bootstrap Page</h1>\n  <p>This part is inside a .container class.</p>\n\n  <p>The .container class provides a responsive fixed width \n container.</p> \n</div>\n\n</body>\n</html>",
+                "language": "bootstrap",
+                "heading": "Container Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_gs_container&stacked=h"
+            }
+        ],
+        "category": "HTML & CSS",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "BS5 HOME\nBS5 Get Started\nBS5 Containers\nBS5 Grid Basic\nBS5 Typography\nBS5 Colors\n\nText Colors\nBackground Colors\n\nBS5 Tables\nBS5 Images\nBS5 Jumbotron\nBS5 Alerts\nBS5 Buttons\nBS5 Button Groups\nBS5 Badges\nBS5 Progress Bars\nBS5 Spinners\nBS5 Pagination\nBS5 List Groups\nBS5 Cards\nBS5 Dropdowns\nBS5 Collapse\nBS5 Navs\nBS5 Navbar\nBS5 Carousel\nBS5 Modal\nBS5 Tooltip\nBS5 Popover\nBS5 Toast\nBS5 Scrollspy\nBS5 Offcanvas\nBS5 Utilities\nBS5 Dark Mode\nBS5 Flex",
+                "heading": "Bootstrap 5 Tutorial"
+            },
+            {
+                "content": "BS5 Forms\nBS5 Select Menus\nBS5 Checks and Radios\nBS5 Range\nBS5 Input Groups\nBS5 Floating Labels\nBS5 Form Validation\nBS5 Inputs\nBS5 Input Groups\nBS5 Custom Forms\n-->",
+                "heading": "Bootstrap 5 Forms"
+            },
+            {
+                "content": "BS5 Grid System\nBS5 Stacked/Horizontal\nBS5 Grid XSmall\nBS5 Grid Small\nBS5 Grid Medium\nBS5 Grid Large\nBS5 Grid XLarge\nBS5 Grid XXL\nBS5 Grid Examples",
+                "heading": "Bootstrap 5 Grid"
+            },
+            {
+                "content": "BS5 Certificate",
+                "heading": "Bootstrap 5 Cert"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Editor\nBS5 Exercises\nBS5 Quiz\nBS5 Syllabus\nBS5 Study Plan\nBS5 Interview Prep\n\nBS5 Utilities\nBS5 Flex\nBS5 Icons\nBS5 Media Objects\nBS5 Filters",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Exercises\nBS5 Quiz",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "All Classes\nJS Alert\nJS Button\nJS Carousel\nJS Collapse\nJS Dropdown\nJS Modal\nJS Popover\nJS Scrollspy\nJS Tab\nJS Toasts\nJS Tooltip\n\n-->\n\nny:-->\n\n ny:-->\n\nny:-->\n\nBootstrap 5 Get Started\n\n ❮ Previous\n Next ❯",
+                "heading": "Bootstrap 5 Ref"
+            },
+            {
+                "content": "Bootstrap is a free front-end framework for faster and easier web development\n\n Bootstrap includes HTML and CSS based design templates for typography, forms, buttons, tables, navigation, modals, image carousels and many other, as well as optional JavaScript plugins\n\n Bootstrap also gives you the ability to easily create responsive designs\n\nWhat is Responsive Web Design?\n\nResponsive web design is about creating web sites which automatically adjust \nthemselves to look good on all devices, from small phones to large desktops.\n\nBootstrap 5 Example\n\n <div class=\"container-fluid p-5 bg-primary text-white text-center\">\n\n <h1>My First Bootstrap Page</h1>\n  <p>Resize this responsive page to \n see the effect!</p> \n</div>\n\n<div class=\"container mt-5\">\n  <div \n class=\"row\">\n    <div class=\"col-sm-4\">\n\n <h3>Column 1</h3>\n      <p>Lorem ipsum dolor sit \n amet, consectetur adipisicing elit...</p>\n\n <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>\n\n </div>\n    <div class=\"col-sm-4\">\n\n <h3>Column 2</h3>\n      <p>Lorem ipsum dolor sit \n amet, consectetur adipisicing elit...</p>\n\n <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>\n\n </div>\n    <div class=\"col-sm-4\">\n\n <h3>Column 3</h3> \n      <p>Lorem ipsum dolor sit \n amet, consectetur adipisicing elit...</p>\n\n <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>\n\n </div>\n  </div>\n</div>\n\nTry it Yourself »",
+                "heading": "What is Bootstrap?"
+            },
+            {
+                "content": "Bootstrap 5 (released 2021) is the newest version of Bootstrap \n(released 2013); with new components, faster stylesheet and more responsiveness.\n\nBootstrap 5 supports the latest, stable releases of all major browsers and \nplatforms. However, Internet Explorer 11 and down is not supported.\n\nThe main differences between Bootstrap 5 and Bootstrap 3 & 4, is that \nBootstrap 5 has switched to vanilla JavaScript instead of jQuery.\n\nNote: Bootstrap 3 and Bootstrap 4 is still supported by the team for critical bugfixes and documentation changes, \nand it is perfectly safe to continue to use them. However, new features will NOT be added to \nthem.",
+                "heading": "Bootstrap Versions"
+            },
+            {
+                "content": "Advantages of Bootstrap:\n\n Easy to use: Anybody with just basic knowledge of HTML and CSS can start using Bootstrap\n\n Responsive features: Bootstrap's responsive CSS adjusts to phones, tablets, and desktops\n\n Mobile-first approach: In Bootstrap, mobile-first styles are part of the core framework\n\n Browser compatibility: Bootstrap 5 is compatible with all modern browsers (Chrome, Firefox, Edge, Safari, and Opera).\n Note that if you need support for IE11 and down, you must use \n either BS4 or BS3.",
+                "heading": "Why Use Bootstrap?"
+            },
+            {
+                "content": "There are two ways to start using Bootstrap 5 on your own web site.\n\nYou can:\n\n Include Bootstrap 5 from a CDN\n\n Download Bootstrap 5 from getbootstrap.com",
+                "heading": "Where to Get Bootstrap 5?"
+            },
+            {
+                "content": "If you don't want to download and host Bootstrap 5 yourself, you can include it from a CDN (Content Delivery Network). \n\njsDelivr provides CDN support for Bootstrap's CSS and JavaScript:\n\nMaxCDN:\n\n <!-- Latest compiled and minified CSS -->\n<link \n href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css\" \n rel=\"stylesheet\">\n\n<!-- Latest compiled JavaScript -->\n<script \n src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js\"></script>\n\nOne advantage of using the Bootstrap 5 CDN:\n\nMany users already have downloaded \nBootstrap 5 from jsDelivr when visiting \nanother site. As a result, it will be loaded from cache when they visit your site, which leads to faster loading time. \nAlso, most CDN's will make sure that once a user requests a file from it, it will be served \nfrom the server closest to them, which also leads to faster loading time.\n\nJavaScript?\nBootstrap 5 uses JavaScript for different \ncomponents (like modals, tooltips, popovers etc). However, if you just use the \nCSS part of Bootstrap, you don't need them.",
+                "heading": "Bootstrap 5 CDN"
+            },
+            {
+                "content": "If you want to download and host Bootstrap 5 yourself, go to\nhttps://getbootstrap.com/, \nand follow the instructions there.",
+                "heading": "Downloading Bootstrap 5"
+            },
+            {
+                "content": "1. Add the HTML5 doctype\n\nBootstrap 5 uses HTML elements and CSS properties that require\nthe HTML5 doctype.\n\nAlways include the HTML5 doctype at the beginning of \nthe page, along with the lang attribute and the correct title and character set:\n\n<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n\n <title>Bootstrap 5 Example</title>\n    <meta charset=\"utf-8\"> \n  </head>\n</html>\n\n2. Bootstrap 5 is mobile-first\n\nBootstrap 5 is designed to be responsive to mobile devices. Mobile-first styles are \npart of the core framework.\n\nTo ensure proper rendering and touch zooming, add the following <meta> tag inside the \n<head> element:\n\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n\nThe width=device-width part sets the width of the page to follow the screen-width \nof the device (which will vary depending on the device).\n\nThe initial-scale=1 part sets the initial zoom level when the page is first loaded \nby the browser.\n\n3. Containers\n\nBootstrap 5 also requires a containing element to wrap site contents. \n\nThere are two container classes to choose from:\n\n The .container class provides a responsive fixed width container\n\n The .container-fluid class provides a full width container, spanning the entire width of the viewport\n\n .container\n\n .container-fluid",
+                "heading": "Create Your First Web Page With Bootstrap 5"
+            },
+            {
+                "content": "The following example shows the code for a basic Bootstrap 5 page (with a responsive fixed width container):\n\nContainer Example\n\n <!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <title>Bootstrap \n Example</title>\n  <meta charset=\"utf-8\">\n  <meta \n name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <link \n href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css\" \n rel=\"stylesheet\">\n  <script \n src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js\"></script>\n\n </head>\n<body>\n\n<div class=\"container\">\n  <h1>My First \n Bootstrap Page</h1>\n  <p>This part is inside a .container class.</p>\n\n  <p>The .container class provides a responsive fixed width \n container.</p> \n</div>\n\n</body>\n</html>\n\nTry it Yourself »\n\nThe following example shows the code for a basic Bootstrap 5 page (with a full width container):\n\nContainer Fluid Example\n\n <!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <title>Bootstrap \n Example</title>\n  <meta charset=\"utf-8\">\n  <meta \n name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <link \n href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css\" \n rel=\"stylesheet\">\n  <script \n src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js\"></script>\n\n </head>\n<body>\n\n<div class=\"container-fluid\">\n  <h1>My First \n Bootstrap Page</h1>\n  <p>This part is inside a .container-fluid \n class.</p>\n  <p>The .container-fluid class provides a full width \n container, spanning the entire width of the viewport.</p> \n</div>\n\n</body>\n</html>\n\nTry it Yourself »\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Two Basic Bootstrap 5 Pages"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:05:43Z",
+        "subject": "Bootstrap",
+        "title": "Bootstrap 5 Get Started"
+    },
+    {
+        "url": "https://www.w3schools.com/bootstrap5/bootstrap_containers.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "bootstrap_bootstrap_containers",
+        "code_examples": [
+            {
+                "code": "<div class=\"container\">\n  <h1>My First Bootstrap Page</h1>\n  <p>This is some text.</p> \n</div>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_gs_container&stacked=h"
+            }
+        ],
+        "category": "HTML & CSS",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "BS5 HOME\nBS5 Get Started\nBS5 Containers\nBS5 Grid Basic\nBS5 Typography\nBS5 Colors\n\nText Colors\nBackground Colors\n\nBS5 Tables\nBS5 Images\nBS5 Jumbotron\nBS5 Alerts\nBS5 Buttons\nBS5 Button Groups\nBS5 Badges\nBS5 Progress Bars\nBS5 Spinners\nBS5 Pagination\nBS5 List Groups\nBS5 Cards\nBS5 Dropdowns\nBS5 Collapse\nBS5 Navs\nBS5 Navbar\nBS5 Carousel\nBS5 Modal\nBS5 Tooltip\nBS5 Popover\nBS5 Toast\nBS5 Scrollspy\nBS5 Offcanvas\nBS5 Utilities\nBS5 Dark Mode\nBS5 Flex",
+                "heading": "Bootstrap 5 Tutorial"
+            },
+            {
+                "content": "BS5 Forms\nBS5 Select Menus\nBS5 Checks and Radios\nBS5 Range\nBS5 Input Groups\nBS5 Floating Labels\nBS5 Form Validation\nBS5 Inputs\nBS5 Input Groups\nBS5 Custom Forms\n-->",
+                "heading": "Bootstrap 5 Forms"
+            },
+            {
+                "content": "BS5 Grid System\nBS5 Stacked/Horizontal\nBS5 Grid XSmall\nBS5 Grid Small\nBS5 Grid Medium\nBS5 Grid Large\nBS5 Grid XLarge\nBS5 Grid XXL\nBS5 Grid Examples",
+                "heading": "Bootstrap 5 Grid"
+            },
+            {
+                "content": "BS5 Certificate",
+                "heading": "Bootstrap 5 Cert"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Editor\nBS5 Exercises\nBS5 Quiz\nBS5 Syllabus\nBS5 Study Plan\nBS5 Interview Prep\n\nBS5 Utilities\nBS5 Flex\nBS5 Icons\nBS5 Media Objects\nBS5 Filters",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Exercises\nBS5 Quiz",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "All Classes\nJS Alert\nJS Button\nJS Carousel\nJS Collapse\nJS Dropdown\nJS Modal\nJS Popover\nJS Scrollspy\nJS Tab\nJS Toasts\nJS Tooltip\n\n-->\n\nny:-->\n\n ny:-->\n\nny:-->\n\nBootstrap 5 Containers\n\n ❮ Previous\n Next ❯",
+                "heading": "Bootstrap 5 Ref"
+            },
+            {
+                "content": "You learned from the previous chapter that Bootstrap requires a containing \nelement to wrap site contents.\n\nContainers are used to pad the content inside \nof them, and there are two container classes available:\n\n The .container class provides a responsive fixed width container\n\n The .container-fluid class provides a full width container, spanning the entire width of the viewport\n\n .container\n\n .container-fluid",
+                "heading": "Bootstrap 5 Containers"
+            },
+            {
+                "content": "Use the .container class to create a responsive, fixed-width container.\n\nNote that its width (max-width) will change on different screen sizes:\n\n Extra small\n\n <576px\n\n Small\n\n ≥576px\n\n Medium\n\n ≥768px\n\n Large\n\n ≥992px\n\n Extra Large\n\n ≥1200px\n\n XXL\n\n ≥1400px\n\n max-width\n 100%\n 540px\n 720px\n 960px\n 1140px\n 1320px\n\nOpen the example below and resize the browser window to see that the container width will change at different breakpoints:\n\nExample\n\n <div class=\"container\">\n  <h1>My First Bootstrap Page</h1>\n  <p>This is some text.</p> \n</div>\n\nTry it Yourself »\n\nThe XXL breakpoint (≥1400px) is new in Bootstrap 5, while the largest breakpoint in Bootstrap 4 is Extra large (≥1200px).",
+                "heading": "Fixed Container"
+            },
+            {
+                "content": "Use the .container-fluid class to create a full width container, that will always span the entire width of the screen (width is always 100%):\n\nExample\n\n <div class=\"container-fluid\">\n  <h1>My First Bootstrap Page</h1>\n  <p>This is some text.</p> \n</div>\n\nTry it Yourself »",
+                "heading": "Fluid Container"
+            },
+            {
+                "content": "By default, containers have left and right padding, with no top or bottom padding. Therefore, we often use spacing utilities, such as extra padding and margins to make them look even better. For example, \n.pt-5 means \"add a large top padding\":\n\nExample\n\n <div class=\"container pt-5\"></div>\n\nTry it Yourself »\n\nYou will learn much more about spacing utilities, in our BS5 Utilities Chapter.\n\n-->",
+                "heading": "Container Padding"
+            },
+            {
+                "content": "Other utilities, such as borders and colors, are also often used together with containers:\n\nExample\n\n <div class=\"container p-5 my-5 border\"></div>\n\n<div class=\"container \n p-5 my-5 bg-dark \n text-white\"></div>\n\n<div class=\"container p-5 my-5 bg-primary \n text-white\"></div>\n\nTry it Yourself »\n\nYou will learn much more about colors and border utilities in a later chapter.",
+                "heading": "Container Border and Color"
+            },
+            {
+                "content": "You can also use the .container-sm|md|lg|xl classes to determine when the container should be responsive.\n\nThe max-width of the container will change on different screen sizes/viewports:\n\n Class\n\n Extra small\n\n <576px\n\n Small\n\n ≥576px\n\n Medium\n\n ≥768px\n\n Large\n\n ≥992px\n\n Extra large\n\n ≥1200px\n\n XXL\n\n ≥1400px\n\n .container-sm\n 100%\n 540px\n 720px\n 960px\n 1140px\n 1320px\n\n .container-md\n 100%\n 100%\n 720px\n 960px\n 1140px\n 1320px\n\n .container-lg\n 100%\n 100%\n 100%\n 960px\n 1140px\n 1320px\n\n .container-xl\n 100%\n 100%\n 100%\n 100%\n 1140px\n 1320px\n\n .container-xxl\n 100%\n 100%\n 100%\n 100%\n 100%\n 1320px\n\nExample\n\n <div class=\"container-sm\">.container-sm</div>\n<div \n class=\"container-md\">.container-md</div>\n<div \n class=\"container-lg\">.container-lg</div>\n<div \n class=\"container-xl\">.container-xl</div>\n<div \n class=\"container-xxl\">.container-xxl</div>\n\nTry it Yourself »",
+                "heading": "Responsive Containers"
+            },
+            {
+                "content": "W3.CSS is an excellent alternative to Bootstrap.\n\nW3.CSS is smaller, faster, and easier to use.\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Did You Know?"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:05:43Z",
+        "subject": "Bootstrap",
+        "title": "Bootstrap 5 Containers"
+    },
+    {
+        "url": "https://www.w3schools.com/bootstrap5/bootstrap_grid_basic.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "bootstrap_bootstrap_grid_basic",
+        "code_examples": [
+            {
+                "code": "<!-- Control the column width, and how they should appear on different \n devices -->\n<div class=\"row\">\n  <div class=\"col-*-*\"></div>\n\n <div class=\"col-*-*\"></div>\n</div>\n<div class=\"row\">\n  <div class=\"col-*-*\"></div>\n  <div class=\"col-*-*\"></div>\n  <div class=\"col-*-*\"></div>\n</div>\n\n<!-- Or let Bootstrap automatically handle the layout -->\n<div class=\"row\">\n  <div class=\"col\"></div>\n  <div class=\"col\"></div>\n  <div class=\"col\"></div>\n</div>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<div class=\"row\">\n  <div class=\"col\">.col</div>\n  <div class=\"col\">.col</div>\n  <div class=\"col\">.col</div>\n</div>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_grid_ex&stacked=h"
+            },
+            {
+                "code": "<div class=\"row\">\n  <div class=\"col-sm-3\">.col-sm-3</div>\n  <div class=\"col-sm-3\">.col-sm-3</div>\n  <div class=\"col-sm-3\">.col-sm-3</div>\n\n <div class=\"col-sm-3\">.col-sm-3</div>\n</div>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_grid_ex1&stacked=h"
+            },
+            {
+                "code": "<div class=\"row\">\n  <div class=\"col-sm-4\">.col-sm-4</div>\n  <div class=\"col-sm-8\">.col-sm-8</div>\n</div>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_grid_ex2&stacked=h"
+            }
+        ],
+        "category": "HTML & CSS",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "BS5 HOME\nBS5 Get Started\nBS5 Containers\nBS5 Grid Basic\nBS5 Typography\nBS5 Colors\n\nText Colors\nBackground Colors\n\nBS5 Tables\nBS5 Images\nBS5 Jumbotron\nBS5 Alerts\nBS5 Buttons\nBS5 Button Groups\nBS5 Badges\nBS5 Progress Bars\nBS5 Spinners\nBS5 Pagination\nBS5 List Groups\nBS5 Cards\nBS5 Dropdowns\nBS5 Collapse\nBS5 Navs\nBS5 Navbar\nBS5 Carousel\nBS5 Modal\nBS5 Tooltip\nBS5 Popover\nBS5 Toast\nBS5 Scrollspy\nBS5 Offcanvas\nBS5 Utilities\nBS5 Dark Mode\nBS5 Flex",
+                "heading": "Bootstrap 5 Tutorial"
+            },
+            {
+                "content": "BS5 Forms\nBS5 Select Menus\nBS5 Checks and Radios\nBS5 Range\nBS5 Input Groups\nBS5 Floating Labels\nBS5 Form Validation\nBS5 Inputs\nBS5 Input Groups\nBS5 Custom Forms\n-->",
+                "heading": "Bootstrap 5 Forms"
+            },
+            {
+                "content": "BS5 Grid System\nBS5 Stacked/Horizontal\nBS5 Grid XSmall\nBS5 Grid Small\nBS5 Grid Medium\nBS5 Grid Large\nBS5 Grid XLarge\nBS5 Grid XXL\nBS5 Grid Examples",
+                "heading": "Bootstrap 5 Grid"
+            },
+            {
+                "content": "BS5 Certificate",
+                "heading": "Bootstrap 5 Cert"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Editor\nBS5 Exercises\nBS5 Quiz\nBS5 Syllabus\nBS5 Study Plan\nBS5 Interview Prep\n\nBS5 Utilities\nBS5 Flex\nBS5 Icons\nBS5 Media Objects\nBS5 Filters",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Exercises\nBS5 Quiz",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "All Classes\nJS Alert\nJS Button\nJS Carousel\nJS Collapse\nJS Dropdown\nJS Modal\nJS Popover\nJS Scrollspy\nJS Tab\nJS Toasts\nJS Tooltip\n\n-->\n\nny:-->\n\n ny:-->\n\nny:-->\n\nBootstrap 5 Grids\n\n❮ Previous\nNext ❯",
+                "heading": "Bootstrap 5 Ref"
+            },
+            {
+                "content": "Bootstrap's grid system is built with flexbox and allows up to 12 columns across the page.\n\nIf you do not want to use all 12 columns individually, you can group the \ncolumns together to create wider columns:\n\n span 1\n span 1 \n span 1\n span 1\n span 1 \n span 1\n span 1\n span 1 \n span 1\n span 1\n span 1 \n span 1\n\n  span 4\n  span 4 \n  span 4\n\n span 4\n span 8 \n\n span 6\n span 6 \n\n span 12\n\nThe grid system is responsive, and the columns will re-arrange automatically depending on the screen size.\n\nMake sure that the sum adds up to 12 or fewer (it is not required that you \nuse all 12 available columns).",
+                "heading": "Bootstrap 5 Grid System"
+            },
+            {
+                "content": "The Bootstrap 5 grid system has six classes:\n\n .col- (extra small devices - screen width less than 576px)\n\n .col-sm- (small devices - screen width equal to or greater than 576px)\n\n .col-md- (medium devices - screen width equal to or greater than 768px)\n\n .col-lg- (large devices - screen width equal to or greater than 992px)\n\n .col-xl- (xlarge devices - screen width equal to or greater than 1200px)\n\n .col-xxl- (xxlarge devices - screen width equal to or greater than 1400px)\n\nThe classes above can be combined to create more dynamic and flexible layouts.\n\nTip: Each class scales up, so if you want to set the same widths for \nsm and md, you only need to specify sm.",
+                "heading": "Grid Classes"
+            },
+            {
+                "content": "The following is a basic structure of a Bootstrap 5 grid:\n\n <!-- Control the column width, and how they should appear on different \n devices -->\n<div class=\"row\">\n  <div class=\"col-*-*\"></div>\n\n <div class=\"col-*-*\"></div>\n</div>\n<div class=\"row\">\n  <div class=\"col-*-*\"></div>\n  <div class=\"col-*-*\"></div>\n  <div class=\"col-*-*\"></div>\n</div>\n\n<!-- Or let Bootstrap automatically handle the layout -->\n<div class=\"row\">\n  <div class=\"col\"></div>\n  <div class=\"col\"></div>\n  <div class=\"col\"></div>\n</div>\n\nFirst example: create a row (<div \nclass=\"row\">). Then, add the desired number of columns (tags with appropriate \n.col-*-* classes). The first star (*) \nrepresents the responsiveness: sm, md, lg, xl or xxl, while the second star \nrepresents a number, which should add up to 12 for each row.\n\nSecond example: instead of adding a number to each col, let bootstrap handle \nthe layout, to create equal width columns: two \"col\" elements = 50% width to \neach col, while three cols = 33.33% width to each col. Four cols = 25% width, etc. You \ncan also use .col-sm|md|lg|xl|xxl to make the columns responsive.\n\nBelow we have collected some examples of basic Bootstrap 5 grid layouts.",
+                "heading": "Basic Structure of a Bootstrap 5 Grid"
+            },
+            {
+                "content": ".col\n\n .col\n\n .col\n\nThe following example shows how to create three equal-width columns, on all \ndevices and screen widths:\n\nExample\n\n <div class=\"row\">\n  <div class=\"col\">.col</div>\n  <div class=\"col\">.col</div>\n  <div class=\"col\">.col</div>\n</div>\n\nTry it Yourself »",
+                "heading": "Three Equal Columns"
+            },
+            {
+                "content": ".col-sm-3\n\n .col-sm-3\n\n .col-sm-3\n\n .col-sm-3\n\nThe following example shows how to create four equal-width columns starting at tablets and scaling to \nextra large desktops. On mobile phones or screens that are less than 576px wide, the columns will automatically stack \non top of each other:\n\nExample\n\n <div class=\"row\">\n  <div class=\"col-sm-3\">.col-sm-3</div>\n  <div class=\"col-sm-3\">.col-sm-3</div>\n  <div class=\"col-sm-3\">.col-sm-3</div>\n\n <div class=\"col-sm-3\">.col-sm-3</div>\n</div>\n\nTry it Yourself »",
+                "heading": "Responsive Columns"
+            },
+            {
+                "content": ".col-sm-4\n\n .col-sm-8\n\nThe following example shows how to get two various-width columns starting at \ntablets and scaling to large extra desktops:\n\nExample\n\n <div class=\"row\">\n  <div class=\"col-sm-4\">.col-sm-4</div>\n  <div class=\"col-sm-8\">.col-sm-8</div>\n</div>\n\nTry it Yourself »\n\nTip: You will learn more about the grid system later in this tutorial.",
+                "heading": "Two Unequal Responsive Columns"
+            },
+            {
+                "content": "W3.CSS is an excellent alternative to Bootstrap.\n\nW3.CSS is smaller, faster, and easier to use.\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Did You Know?"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:05:43Z",
+        "subject": "Bootstrap",
+        "title": "Bootstrap 5 Grids"
+    },
+    {
+        "url": "https://www.w3schools.com/bootstrap5/bootstrap_typography.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "bootstrap_bootstrap_typography",
+        "code_examples": [
+            {
+                "code": "<p class=\"h1\">h1 Bootstrap heading</p>\n<p class=\"h2\">h2 Bootstrap \n heading</p>\n<p class=\"h3\">h3 Bootstrap heading</p>\n<p class=\"h4\">h4 \n Bootstrap heading</p>\n<p class=\"h5\">h5 Bootstrap heading</p>\n<p \n class=\"h6\">h6 Bootstrap heading</p>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_txt_hn&stacked=h"
+            }
+        ],
+        "category": "HTML & CSS",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "BS5 HOME\nBS5 Get Started\nBS5 Containers\nBS5 Grid Basic\nBS5 Typography\nBS5 Colors\n\nText Colors\nBackground Colors\n\nBS5 Tables\nBS5 Images\nBS5 Jumbotron\nBS5 Alerts\nBS5 Buttons\nBS5 Button Groups\nBS5 Badges\nBS5 Progress Bars\nBS5 Spinners\nBS5 Pagination\nBS5 List Groups\nBS5 Cards\nBS5 Dropdowns\nBS5 Collapse\nBS5 Navs\nBS5 Navbar\nBS5 Carousel\nBS5 Modal\nBS5 Tooltip\nBS5 Popover\nBS5 Toast\nBS5 Scrollspy\nBS5 Offcanvas\nBS5 Utilities\nBS5 Dark Mode\nBS5 Flex",
+                "heading": "Bootstrap 5 Tutorial"
+            },
+            {
+                "content": "BS5 Forms\nBS5 Select Menus\nBS5 Checks and Radios\nBS5 Range\nBS5 Input Groups\nBS5 Floating Labels\nBS5 Form Validation\nBS5 Inputs\nBS5 Input Groups\nBS5 Custom Forms\n-->",
+                "heading": "Bootstrap 5 Forms"
+            },
+            {
+                "content": "BS5 Grid System\nBS5 Stacked/Horizontal\nBS5 Grid XSmall\nBS5 Grid Small\nBS5 Grid Medium\nBS5 Grid Large\nBS5 Grid XLarge\nBS5 Grid XXL\nBS5 Grid Examples",
+                "heading": "Bootstrap 5 Grid"
+            },
+            {
+                "content": "BS5 Certificate",
+                "heading": "Bootstrap 5 Cert"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Editor\nBS5 Exercises\nBS5 Quiz\nBS5 Syllabus\nBS5 Study Plan\nBS5 Interview Prep\n\nBS5 Utilities\nBS5 Flex\nBS5 Icons\nBS5 Media Objects\nBS5 Filters",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Exercises\nBS5 Quiz",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "All Classes\nJS Alert\nJS Button\nJS Carousel\nJS Collapse\nJS Dropdown\nJS Modal\nJS Popover\nJS Scrollspy\nJS Tab\nJS Toasts\nJS Tooltip\n\n-->\n\nny:-->\n\n ny:-->\n\nny:-->\n\nBootstrap 5 Text/Typography\n\n❮ Previous\nNext ❯",
+                "heading": "Bootstrap 5 Ref"
+            },
+            {
+                "content": "Bootstrap 5 uses a default \nfont-size of 1rem (16px by default), and its \nline-height is 1.5.\n\nIn addition, all <p> elements have \nmargin-top: 0 and margin-bottom: 1rem (16px by default).",
+                "heading": "Bootstrap 5 Default Settings"
+            },
+            {
+                "content": "Bootstrap 5 styles HTML headings (<h1> to\n<h6>)  with a bolder font-weight and \na responsive font-size.\n\nExample\n\nTry it Yourself »\n\nYou can also use .h1 to .h6 classes on other elements to make them behave as headings if you want:\n\nExample\n\n <p class=\"h1\">h1 Bootstrap heading</p>\n<p class=\"h2\">h2 Bootstrap \n heading</p>\n<p class=\"h3\">h3 Bootstrap heading</p>\n<p class=\"h4\">h4 \n Bootstrap heading</p>\n<p class=\"h5\">h5 Bootstrap heading</p>\n<p \n class=\"h6\">h6 Bootstrap heading</p>\n\nTry it Yourself »",
+                "heading": "<h1> - <h6>"
+            },
+            {
+                "content": "Display headings are used to stand out more than normal headings (larger \nfont-size and lighter font-weight), and there \nare six classes to choose from: .display-1 to .display-6:\n\n Example\n\n Display 1\n Display 2\n Display 3\n Display 4\n Display 5\n Display 6\n\nTry it Yourself »",
+                "heading": "Display Headings"
+            },
+            {
+                "content": "In Bootstrap 5 the HTML <small> element \n(and the .small class) is used to create a smaller, secondary text in any heading:\n\n Example\n\nTry it Yourself »",
+                "heading": "<small>"
+            },
+            {
+                "content": "Bootstrap 5 will style <mark> and .mark \nwith a yellow background color and some padding:\n\n Example\n\n Use the mark element to highlight text.\n\nTry it Yourself »",
+                "heading": "<mark>"
+            },
+            {
+                "content": "Bootstrap 5 will style the HTML <abbr> element \nwith a dotted border bottom and a cursor with question mark on hover:\n\nExample\n\nThe WHO was founded in 1948.\n\nTry it Yourself »",
+                "heading": "<abbr>"
+            },
+            {
+                "content": "Add the .blockquote class to a <blockquote> \nwhen quoting blocks of content from another source. And when naming a source, like \"from WWF's website\", use the .blockquote-footer class:\n\nExample\n\nTry it Yourself »",
+                "heading": "<blockquote>"
+            },
+            {
+                "content": "Bootstrap 5 will style the HTML <dl> element in the following way:\n\nExample\n\nTry it Yourself »",
+                "heading": "<dl>"
+            },
+            {
+                "content": "Bootstrap 5 will style the HTML <code> element in the following way:\n\nExample\n\nTry it Yourself »",
+                "heading": "<code>"
+            },
+            {
+                "content": "Bootstrap 5 will style the HTML <kbd> element in the following way:\n\nExample\n\nTry it Yourself »",
+                "heading": "<kbd>"
+            },
+            {
+                "content": "Bootstrap 5 will style the HTML <pre> element in the following way:\n\nExample\n\nTry it Yourself »",
+                "heading": "<pre>"
+            },
+            {
+                "content": "The Bootstrap 5 classes below can be added to style HTML elements further:\n\n Class\n Description\n Example\n\n .lead\n Makes a paragraph stand out\n Try it\n\n .text-start\n Indicates left-aligned text\n Try it\n\n .text-break\n Prevents long text from breaking layout\n Try it\n\n .text-center\n Indicates center-aligned text\n Try it\n\n .text-decoration-none\n Removes the underline from a link\n Try it\n\n .text-end\n Indicates right-aligned text\n Try it\n\n .text-nowrap\n Indicates no wrap text\n Try it\n\n .text-lowercase\n Indicates lowercased text\n Try it\n\n .text-uppercase\n Indicates uppercased text\n Try it\n\n .text-capitalize\n Indicates capitalized text\n Try it\n\n .initialism\n Displays the text inside an <abbr> element in a slightly smaller font size\n Try it\n\n .list-unstyled\n Removes the default list-style and left margin on list items (works on both <ul> and <ol>). This class only applies to immediate children list items (to remove the default list-style from any nested lists, apply this class to any nested lists as well)\n Try it\n\n .list-inline\n Places all list items on a single line (used together with \n .list-inline-item on each <li> elements)\n Try it\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "More Typography Classes"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:05:43Z",
+        "subject": "Bootstrap",
+        "title": "Display 6"
+    },
+    {
+        "url": "https://www.w3schools.com/bootstrap5/bootstrap_colors.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "bootstrap_bootstrap_colors",
+        "code_examples": [
+            {
+                "code": "Example\n\nThis text is muted.\n\nThis text is important.\n\nThis text indicates success.\n\nThis text represents some information.\n\nThis text represents a warning.\n\nThis text represents danger.\n\nSecondary text.\n\nDark grey text.\n\nBody text.\n\nLight grey text.\n\nTry it Yourself »\n\nYou can also add 50% opacity for black or white text with the .text-black-50 or .text-white-50 classes:\n\nExample\n\n Black text with 50% opacity on white background\n\n White text with 50% opacity on black background\n\nTry it Yourself »\n\nAdvertisement\n -->\n\nBackground Colors\n\nThe classes for background colors are: .bg-primary, \n.bg-success, .bg-info, .bg-warning, .bg-danger, .bg-secondary, .bg-dark and .bg-light.\n\nExample",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_txt_colors&stacked=h"
+            },
+            {
+                "code": "Example\n\nThis text is important.\n\nThis text indicates success.\n\nThis text represents some information.\n\nThis text represents a warning.\n\nThis text represents danger.\n\nSecondary background color.\n\nDark grey background color.\n\nLight grey background color.\n\nTry it Yourself »\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_txt_bgcolors2&stacked=h"
+            }
+        ],
+        "category": "HTML & CSS",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "BS5 HOME\nBS5 Get Started\nBS5 Containers\nBS5 Grid Basic\nBS5 Typography\nBS5 Colors\n\nText Colors\nBackground Colors\n\nBS5 Tables\nBS5 Images\nBS5 Jumbotron\nBS5 Alerts\nBS5 Buttons\nBS5 Button Groups\nBS5 Badges\nBS5 Progress Bars\nBS5 Spinners\nBS5 Pagination\nBS5 List Groups\nBS5 Cards\nBS5 Dropdowns\nBS5 Collapse\nBS5 Navs\nBS5 Navbar\nBS5 Carousel\nBS5 Modal\nBS5 Tooltip\nBS5 Popover\nBS5 Toast\nBS5 Scrollspy\nBS5 Offcanvas\nBS5 Utilities\nBS5 Dark Mode\nBS5 Flex",
+                "heading": "Bootstrap 5 Tutorial"
+            },
+            {
+                "content": "BS5 Forms\nBS5 Select Menus\nBS5 Checks and Radios\nBS5 Range\nBS5 Input Groups\nBS5 Floating Labels\nBS5 Form Validation\nBS5 Inputs\nBS5 Input Groups\nBS5 Custom Forms\n-->",
+                "heading": "Bootstrap 5 Forms"
+            },
+            {
+                "content": "BS5 Grid System\nBS5 Stacked/Horizontal\nBS5 Grid XSmall\nBS5 Grid Small\nBS5 Grid Medium\nBS5 Grid Large\nBS5 Grid XLarge\nBS5 Grid XXL\nBS5 Grid Examples",
+                "heading": "Bootstrap 5 Grid"
+            },
+            {
+                "content": "BS5 Certificate",
+                "heading": "Bootstrap 5 Cert"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Editor\nBS5 Exercises\nBS5 Quiz\nBS5 Syllabus\nBS5 Study Plan\nBS5 Interview Prep\n\nBS5 Utilities\nBS5 Flex\nBS5 Icons\nBS5 Media Objects\nBS5 Filters",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Exercises\nBS5 Quiz",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "All Classes\nJS Alert\nJS Button\nJS Carousel\nJS Collapse\nJS Dropdown\nJS Modal\nJS Popover\nJS Scrollspy\nJS Tab\nJS Toasts\nJS Tooltip\n\n-->\n\nny:-->\n\n ny:-->\n\nny:-->\n\nBootstrap 5 Colors\n\n❮ Previous\nNext ❯",
+                "heading": "Bootstrap 5 Ref"
+            },
+            {
+                "content": "Bootstrap 5 has some contextual classes that can be used to provide \"meaning through colors\".\n\nThe classes for text colors are: .text-muted, \n.text-primary, .text-success, .text-info,\n.text-warning, .text-danger, .text-secondary, .text-white,\n.text-dark, .text-body (default body color/often black) and .text-light:\n\nExample\n\nThis text is muted.\n\nThis text is important.\n\nThis text indicates success.\n\nThis text represents some information.\n\nThis text represents a warning.\n\nThis text represents danger.\n\nSecondary text.\n\nDark grey text.\n\nBody text.\n\nLight grey text.\n\nTry it Yourself »\n\nYou can also add 50% opacity for black or white text with the .text-black-50 or .text-white-50 classes:\n\nExample\n\n Black text with 50% opacity on white background\n\n White text with 50% opacity on black background\n\nTry it Yourself »",
+                "heading": "Text Colors"
+            },
+            {
+                "content": "The classes for background colors are: .bg-primary, \n.bg-success, .bg-info, .bg-warning, .bg-danger, .bg-secondary, .bg-dark and .bg-light.\n\nExample\n\nTry it Yourself »\n\nThe .bg-color classes above does not work well with text, or atleast then you \nhave to specify a proper .text-color class to get the right text color for each \nbackground.\n\nHowever, you can use the \n.text-bg-color classes and Bootstrap will automatically handle the appropriate \ntext color for each background color:\n\nExample\n\nThis text is important.\n\nThis text indicates success.\n\nThis text represents some information.\n\nThis text represents a warning.\n\nThis text represents danger.\n\nSecondary background color.\n\nDark grey background color.\n\nLight grey background color.\n\nTry it Yourself »\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Background Colors"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:05:43Z",
+        "subject": "Bootstrap",
+        "title": "Bootstrap 5 Colors"
+    },
+    {
+        "url": "https://www.w3schools.com/bootstrap5/bootstrap_colors_bg.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "bootstrap_bootstrap_colors_bg",
+        "code_examples": [
+            {
+                "code": "Example",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\nThis text is important.\n\nThis text indicates success.\n\nThis text represents some information.\n\nThis text represents a warning.\n\nThis text represents danger.\n\nSecondary background color.\n\nDark grey background color.\n\nLight grey background color.\n\nTry it Yourself »\n\nAdvertisement\n -->\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_txt_bgcolors2&stacked=h"
+            }
+        ],
+        "category": "HTML & CSS",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "BS5 HOME\nBS5 Get Started\nBS5 Containers\nBS5 Grid Basic\nBS5 Typography\nBS5 Colors\n\nText Colors\nBackground Colors\n\nBS5 Tables\nBS5 Images\nBS5 Jumbotron\nBS5 Alerts\nBS5 Buttons\nBS5 Button Groups\nBS5 Badges\nBS5 Progress Bars\nBS5 Spinners\nBS5 Pagination\nBS5 List Groups\nBS5 Cards\nBS5 Dropdowns\nBS5 Collapse\nBS5 Navs\nBS5 Navbar\nBS5 Carousel\nBS5 Modal\nBS5 Tooltip\nBS5 Popover\nBS5 Toast\nBS5 Scrollspy\nBS5 Offcanvas\nBS5 Utilities\nBS5 Dark Mode\nBS5 Flex",
+                "heading": "Bootstrap 5 Tutorial"
+            },
+            {
+                "content": "BS5 Forms\nBS5 Select Menus\nBS5 Checks and Radios\nBS5 Range\nBS5 Input Groups\nBS5 Floating Labels\nBS5 Form Validation\nBS5 Inputs\nBS5 Input Groups\nBS5 Custom Forms\n-->",
+                "heading": "Bootstrap 5 Forms"
+            },
+            {
+                "content": "BS5 Grid System\nBS5 Stacked/Horizontal\nBS5 Grid XSmall\nBS5 Grid Small\nBS5 Grid Medium\nBS5 Grid Large\nBS5 Grid XLarge\nBS5 Grid XXL\nBS5 Grid Examples",
+                "heading": "Bootstrap 5 Grid"
+            },
+            {
+                "content": "BS5 Certificate",
+                "heading": "Bootstrap 5 Cert"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Editor\nBS5 Exercises\nBS5 Quiz\nBS5 Syllabus\nBS5 Study Plan\nBS5 Interview Prep\n\nBS5 Utilities\nBS5 Flex\nBS5 Icons\nBS5 Media Objects\nBS5 Filters",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Exercises\nBS5 Quiz",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "All Classes\nJS Alert\nJS Button\nJS Carousel\nJS Collapse\nJS Dropdown\nJS Modal\nJS Popover\nJS Scrollspy\nJS Tab\nJS Toasts\nJS Tooltip\n\n-->\n\nny:-->\n\n ny:-->\n\nny:-->\n\nBootstrap 5 Background Colors\n\n❮ Previous\nNext ❯",
+                "heading": "Bootstrap 5 Ref"
+            },
+            {
+                "content": "The classes for background colors are: .bg-primary, \n.bg-success, .bg-info, .bg-warning, .bg-danger, .bg-secondary, .bg-dark and .bg-light.\n\nExample\n\nTry it Yourself »\n\nThe .bg-color classes above does not work well with text, or atleast then you \nhave to specify a proper .text-color class to get the right text color for each \nbackground.\n\nHowever, you can use the \n.text-bg-color classes and Bootstrap will automatically handle the appropriate \ntext color for each background color:\n\nExample\n\nThis text is important.\n\nThis text indicates success.\n\nThis text represents some information.\n\nThis text represents a warning.\n\nThis text represents danger.\n\nSecondary background color.\n\nDark grey background color.\n\nLight grey background color.\n\nTry it Yourself »",
+                "heading": "Background Colors"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:05:43Z",
+        "subject": "Bootstrap",
+        "title": "Bootstrap 5 Background Colors"
+    },
+    {
+        "url": "https://www.w3schools.com/bootstrap5/bootstrap_tables.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "bootstrap_bootstrap_tables",
+        "code_examples": [
+            {
+                "code": "Example\n\nTry it Yourself »\n\nStriped Rows\nThe .table-striped class adds zebra-stripes to a table:\n\nExample\n\nTry it Yourself »\n\nBordered Table\nThe .table-bordered class adds borders on all sides of the table and cells:\n\nExample\n\nTry it Yourself »\n\nAdvertisement\n -->\n\nHover Rows\nThe .table-hover class adds a hover effect (grey background color) on table rows:\n\nExample\n\nTry it Yourself »\n\nBlack/Dark Table\nThe .table-dark class adds a black background to the table:\n\nExample\n\nTry it Yourself »\n\nDark Striped Table\nCombine .table-dark and .table-striped to create a dark, striped table:\n\nExample\n\nTry it Yourself »\n\nHoverable Dark Table\nThe .table-hover class adds a hover effect (grey background color) on table rows:\n\nExample\n\nTry it Yourself »\n\nBorderless Table\nThe .table-borderless class removes borders from the table:\n\nExample\n\nTry it Yourself »\n\nContextual Classes\nContextual classes can be used to color the whole table (<table>),  \nthe table rows (<tr>) or table cells (<td>).\n\nExample\n\n Default\n Defaultson\n def@somemail.com\n\n Primary\n Joe\n joe@example.com\n\n Success\n Doe\n john@example.com\n\n Danger\n Moe\n mary@example.com\n\n Info\n Dooley\n july@example.com\n\n Warning\n Refs\n bo@example.com\n\n Active\n Activeson\n act@example.com\n\n Secondary\n Secondson\n sec@example.com\n\n Light\n Angie\n angie@example.com\n\n Dark\n Bo\n bo@example.com",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_table_basic&stacked=h"
+            },
+            {
+                "code": "<div class=\"table-responsive\">\n  <table class=\"table\">\n    ...\n  </table>\n</div>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_table_head&stacked=h"
+            }
+        ],
+        "category": "HTML & CSS",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "BS5 HOME\nBS5 Get Started\nBS5 Containers\nBS5 Grid Basic\nBS5 Typography\nBS5 Colors\n\nText Colors\nBackground Colors\n\nBS5 Tables\nBS5 Images\nBS5 Jumbotron\nBS5 Alerts\nBS5 Buttons\nBS5 Button Groups\nBS5 Badges\nBS5 Progress Bars\nBS5 Spinners\nBS5 Pagination\nBS5 List Groups\nBS5 Cards\nBS5 Dropdowns\nBS5 Collapse\nBS5 Navs\nBS5 Navbar\nBS5 Carousel\nBS5 Modal\nBS5 Tooltip\nBS5 Popover\nBS5 Toast\nBS5 Scrollspy\nBS5 Offcanvas\nBS5 Utilities\nBS5 Dark Mode\nBS5 Flex",
+                "heading": "Bootstrap 5 Tutorial"
+            },
+            {
+                "content": "BS5 Forms\nBS5 Select Menus\nBS5 Checks and Radios\nBS5 Range\nBS5 Input Groups\nBS5 Floating Labels\nBS5 Form Validation\nBS5 Inputs\nBS5 Input Groups\nBS5 Custom Forms\n-->",
+                "heading": "Bootstrap 5 Forms"
+            },
+            {
+                "content": "BS5 Grid System\nBS5 Stacked/Horizontal\nBS5 Grid XSmall\nBS5 Grid Small\nBS5 Grid Medium\nBS5 Grid Large\nBS5 Grid XLarge\nBS5 Grid XXL\nBS5 Grid Examples",
+                "heading": "Bootstrap 5 Grid"
+            },
+            {
+                "content": "BS5 Certificate",
+                "heading": "Bootstrap 5 Cert"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Editor\nBS5 Exercises\nBS5 Quiz\nBS5 Syllabus\nBS5 Study Plan\nBS5 Interview Prep\n\nBS5 Utilities\nBS5 Flex\nBS5 Icons\nBS5 Media Objects\nBS5 Filters",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Exercises\nBS5 Quiz",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "All Classes\nJS Alert\nJS Button\nJS Carousel\nJS Collapse\nJS Dropdown\nJS Modal\nJS Popover\nJS Scrollspy\nJS Tab\nJS Toasts\nJS Tooltip\n\n-->\n\nny:-->\n\n ny:-->\n\nny:-->\n\nBootstrap 5 Tables\n\n ❮ Previous\n Next ❯",
+                "heading": "Bootstrap 5 Ref"
+            },
+            {
+                "content": "A basic Bootstrap 5 table has a light padding and horizontal dividers.\n\nThe .table class adds basic styling to a table:\n\nExample\n\nTry it Yourself »",
+                "heading": "Basic Table"
+            },
+            {
+                "content": "The .table-striped class adds zebra-stripes to a table:\n\nExample\n\nTry it Yourself »",
+                "heading": "Striped Rows"
+            },
+            {
+                "content": "The .table-bordered class adds borders on all sides of the table and cells:\n\nExample\n\nTry it Yourself »",
+                "heading": "Bordered Table"
+            },
+            {
+                "content": "The .table-hover class adds a hover effect (grey background color) on table rows:\n\nExample\n\nTry it Yourself »",
+                "heading": "Hover Rows"
+            },
+            {
+                "content": "The .table-dark class adds a black background to the table:\n\nExample\n\nTry it Yourself »",
+                "heading": "Black/Dark Table"
+            },
+            {
+                "content": "Combine .table-dark and .table-striped to create a dark, striped table:\n\nExample\n\nTry it Yourself »",
+                "heading": "Dark Striped Table"
+            },
+            {
+                "content": "The .table-hover class adds a hover effect (grey background color) on table rows:\n\nExample\n\nTry it Yourself »",
+                "heading": "Hoverable Dark Table"
+            },
+            {
+                "content": "The .table-borderless class removes borders from the table:\n\nExample\n\nTry it Yourself »",
+                "heading": "Borderless Table"
+            },
+            {
+                "content": "Contextual classes can be used to color the whole table (<table>),  \nthe table rows (<tr>) or table cells (<td>).\n\nExample\n\n Default\n Defaultson\n def@somemail.com\n\n Primary\n Joe\n joe@example.com\n\n Success\n Doe\n john@example.com\n\n Danger\n Moe\n mary@example.com\n\n Info\n Dooley\n july@example.com\n\n Warning\n Refs\n bo@example.com\n\n Active\n Activeson\n act@example.com\n\n Secondary\n Secondson\n sec@example.com\n\n Light\n Angie\n angie@example.com\n\n Dark\n Bo\n bo@example.com\n\nTry it Yourself »\n\nThe contextual classes that can be used are:\n\n Class\n Description\n\n .table-primary\n Blue: Indicates an important action\n\n .table-success\n Green: Indicates a successful or positive action\n\n .table-danger\n Red: Indicates a dangerous or potentially negative action\n\n .table-info\n Light blue: Indicates a neutral informative change or action\n\n .table-warning\n Orange: Indicates a warning that might need attention\n\n .table-active\n Grey: Applies the hover color to the table row or table cell\n\n .table-secondary\n Grey: Indicates a slightly less important action\n\n .table-light\n Light grey table or table row background\n\n .table-dark\n Dark grey table or table row background",
+                "heading": "Contextual Classes"
+            },
+            {
+                "content": "You can also use any of the contextual classes to only add a background color to the table header:\n\nExample\n\nTry it Yourself »",
+                "heading": "Table Head Colors"
+            },
+            {
+                "content": "The .table-sm class makes the table smaller by cutting cell padding in half:\n\nExample\n\nTry it Yourself »",
+                "heading": "Small table"
+            },
+            {
+                "content": "The .table-responsive class adds a scrollbar \nto the table when needed (when it is too big horizontally):\n\nExample\n\n <div class=\"table-responsive\">\n  <table class=\"table\">\n    ...\n  </table>\n</div> \n\nTry it Yourself »\n\nYou can also decide when the table should get a scrollbar, depending on the screen width:\n\n Class\n Screen width\n\n .table-responsive-sm\n < 576px\n\n .table-responsive-md\n < 768px\n\n .table-responsive-lg\n < 992px\n\n .table-responsive-xl\n < 1200px\n\n .table-responsive-xxl\n < 1400px\n\nExample\n\n <div class=\"table-responsive-sm\">\n  <table class=\"table\">\n    ...\n  </table>\n</div> \n\nTry it Yourself »",
+                "heading": "Responsive Tables"
+            },
+            {
+                "content": "W3.CSS is an excellent alternative to Bootstrap.\n\nW3.CSS is smaller, faster, and easier to use.\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Did You Know?"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:05:44Z",
+        "subject": "Bootstrap",
+        "title": "Bootstrap 5 Tables"
+    },
+    {
+        "url": "https://www.w3schools.com/bootstrap5/bootstrap_images.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "bootstrap_bootstrap_images",
+        "code_examples": [
+            {
+                "code": "<img src=\"cinqueterre.jpg\" class=\"rounded\" alt=\"Cinque Terre\">",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_img_rounded&stacked=h"
+            }
+        ],
+        "category": "HTML & CSS",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "BS5 HOME\nBS5 Get Started\nBS5 Containers\nBS5 Grid Basic\nBS5 Typography\nBS5 Colors\n\nText Colors\nBackground Colors\n\nBS5 Tables\nBS5 Images\nBS5 Jumbotron\nBS5 Alerts\nBS5 Buttons\nBS5 Button Groups\nBS5 Badges\nBS5 Progress Bars\nBS5 Spinners\nBS5 Pagination\nBS5 List Groups\nBS5 Cards\nBS5 Dropdowns\nBS5 Collapse\nBS5 Navs\nBS5 Navbar\nBS5 Carousel\nBS5 Modal\nBS5 Tooltip\nBS5 Popover\nBS5 Toast\nBS5 Scrollspy\nBS5 Offcanvas\nBS5 Utilities\nBS5 Dark Mode\nBS5 Flex",
+                "heading": "Bootstrap 5 Tutorial"
+            },
+            {
+                "content": "BS5 Forms\nBS5 Select Menus\nBS5 Checks and Radios\nBS5 Range\nBS5 Input Groups\nBS5 Floating Labels\nBS5 Form Validation\nBS5 Inputs\nBS5 Input Groups\nBS5 Custom Forms\n-->",
+                "heading": "Bootstrap 5 Forms"
+            },
+            {
+                "content": "BS5 Grid System\nBS5 Stacked/Horizontal\nBS5 Grid XSmall\nBS5 Grid Small\nBS5 Grid Medium\nBS5 Grid Large\nBS5 Grid XLarge\nBS5 Grid XXL\nBS5 Grid Examples",
+                "heading": "Bootstrap 5 Grid"
+            },
+            {
+                "content": "BS5 Certificate",
+                "heading": "Bootstrap 5 Cert"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Editor\nBS5 Exercises\nBS5 Quiz\nBS5 Syllabus\nBS5 Study Plan\nBS5 Interview Prep\n\nBS5 Utilities\nBS5 Flex\nBS5 Icons\nBS5 Media Objects\nBS5 Filters",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Exercises\nBS5 Quiz",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "All Classes\nJS Alert\nJS Button\nJS Carousel\nJS Collapse\nJS Dropdown\nJS Modal\nJS Popover\nJS Scrollspy\nJS Tab\nJS Toasts\nJS Tooltip\n\n-->\n\nny:-->\n\n ny:-->\n\nny:-->\n\nBootstrap 5 Images\n\n❮ Previous\nNext ❯",
+                "heading": "Bootstrap 5 Ref"
+            },
+            {
+                "content": "Rounded Corners:\n\nCircle:\n\nThumbnail:",
+                "heading": "Image Shapes"
+            },
+            {
+                "content": "The .rounded class adds rounded corners to an image:\n\n Example\n\n <img src=\"cinqueterre.jpg\" class=\"rounded\" alt=\"Cinque Terre\">\n\nTry it Yourself »",
+                "heading": "Rounded Corners"
+            },
+            {
+                "content": "The .rounded-circle class shapes the image to a circle:\n\n Example\n\n <img src=\"cinqueterre.jpg\" class=\"rounded-circle\" alt=\"Cinque Terre\">\n\nTry it Yourself »",
+                "heading": "Circle"
+            },
+            {
+                "content": "The .img-thumbnail class shapes the image to a thumbnail \n(bordered):\n\n Example\n\n <img src=\"cinqueterre.jpg\" class=\"img-thumbnail\" alt=\"Cinque Terre\">\n\nTry it Yourself »",
+                "heading": "Thumbnail"
+            },
+            {
+                "content": "Float an image to the left with the .float-start class or to the right with .float-end:\n\n Example\n\n <img src=\"paris.jpg\" class=\"float-start\"> \n<img src=\"paris.jpg\" \n class=\"float-end\"> \n\nTry it Yourself »",
+                "heading": "Aligning Images"
+            },
+            {
+                "content": "Center an image by adding the utility classes .mx-auto (margin:auto) and .d-block (display:block) to the image:\n\n Example\n\n <img src=\"paris.jpg\" class=\"mx-auto d-block\">\n\nTry it Yourself »",
+                "heading": "Centered Image"
+            },
+            {
+                "content": "Images come in all sizes. So do screens. Responsive images automatically \nadjust to fit the size of the screen. \n\nCreate responsive images by adding an .img-fluid class \nto the <img> tag. The image will then scale nicely to the parent element.\n\nThe .img-fluid class applies max-width: 100%; and \nheight: auto; to the image:\n\nExample\n\n<img class=\"img-fluid\" src=\"ny.jpg\" alt=\"New York\"> \n\nTry it Yourself »",
+                "heading": "Responsive Images"
+            },
+            {
+                "content": "W3.CSS is an excellent alternative to Bootstrap.\n\nW3.CSS is smaller, faster, and easier to use.\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Did You Know?"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:05:44Z",
+        "subject": "Bootstrap",
+        "title": "Bootstrap 5 Images"
+    },
+    {
+        "url": "https://www.w3schools.com/bootstrap5/bootstrap_jumbotron.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "bootstrap_bootstrap_jumbotron",
+        "code_examples": [
+            {
+                "code": "<div class=\"mt-4 p-5 bg-primary text-white rounded\">\n  <h1>Jumbotron \n Example</h1> \n  <p>Lorem ipsum...</p> \n</div>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_jumbotron&stacked=h"
+            }
+        ],
+        "category": "HTML & CSS",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "BS5 HOME\nBS5 Get Started\nBS5 Containers\nBS5 Grid Basic\nBS5 Typography\nBS5 Colors\n\nText Colors\nBackground Colors\n\nBS5 Tables\nBS5 Images\nBS5 Jumbotron\nBS5 Alerts\nBS5 Buttons\nBS5 Button Groups\nBS5 Badges\nBS5 Progress Bars\nBS5 Spinners\nBS5 Pagination\nBS5 List Groups\nBS5 Cards\nBS5 Dropdowns\nBS5 Collapse\nBS5 Navs\nBS5 Navbar\nBS5 Carousel\nBS5 Modal\nBS5 Tooltip\nBS5 Popover\nBS5 Toast\nBS5 Scrollspy\nBS5 Offcanvas\nBS5 Utilities\nBS5 Dark Mode\nBS5 Flex",
+                "heading": "Bootstrap 5 Tutorial"
+            },
+            {
+                "content": "BS5 Forms\nBS5 Select Menus\nBS5 Checks and Radios\nBS5 Range\nBS5 Input Groups\nBS5 Floating Labels\nBS5 Form Validation\nBS5 Inputs\nBS5 Input Groups\nBS5 Custom Forms\n-->",
+                "heading": "Bootstrap 5 Forms"
+            },
+            {
+                "content": "BS5 Grid System\nBS5 Stacked/Horizontal\nBS5 Grid XSmall\nBS5 Grid Small\nBS5 Grid Medium\nBS5 Grid Large\nBS5 Grid XLarge\nBS5 Grid XXL\nBS5 Grid Examples",
+                "heading": "Bootstrap 5 Grid"
+            },
+            {
+                "content": "BS5 Certificate",
+                "heading": "Bootstrap 5 Cert"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Editor\nBS5 Exercises\nBS5 Quiz\nBS5 Syllabus\nBS5 Study Plan\nBS5 Interview Prep\n\nBS5 Utilities\nBS5 Flex\nBS5 Icons\nBS5 Media Objects\nBS5 Filters",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Exercises\nBS5 Quiz",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "All Classes\nJS Alert\nJS Button\nJS Carousel\nJS Collapse\nJS Dropdown\nJS Modal\nJS Popover\nJS Scrollspy\nJS Tab\nJS Toasts\nJS Tooltip\n\n-->\n\nny:-->\n\n ny:-->\n\nny:-->\n\n Bootstrap 5 Jumbotron\n\n❮ Previous\nNext ❯",
+                "heading": "Bootstrap 5 Ref"
+            },
+            {
+                "content": "A jumbotron was introduced in Bootstrap 3 as a big padded box for calling extra attention to some special content or information.\n\nJumbotrons are no longer supported in Bootstrap 5. However, you can use a \n<div> element and add special helper classes together with a color \nclass to achieve the same effect:\n\nJumbotron Example \nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat..\n\nExample\n\n <div class=\"mt-4 p-5 bg-primary text-white rounded\">\n  <h1>Jumbotron \n Example</h1> \n  <p>Lorem ipsum...</p> \n</div>\n\nTry it Yourself »",
+                "heading": "Bootstrap 5 Jumbotron"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:05:44Z",
+        "subject": "Bootstrap",
+        "title": "Jumbotron Example"
+    },
+    {
+        "url": "https://www.w3schools.com/bootstrap5/bootstrap_alerts.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "bootstrap_bootstrap_alerts",
+        "code_examples": [
+            {
+                "code": "<div class=\"alert alert-success\">\n  <strong>Success!</strong> Indicates a successful or positive action.\n</div>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_alerts&stacked=h"
+            }
+        ],
+        "category": "HTML & CSS",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "BS5 HOME\nBS5 Get Started\nBS5 Containers\nBS5 Grid Basic\nBS5 Typography\nBS5 Colors\n\nText Colors\nBackground Colors\n\nBS5 Tables\nBS5 Images\nBS5 Jumbotron\nBS5 Alerts\nBS5 Buttons\nBS5 Button Groups\nBS5 Badges\nBS5 Progress Bars\nBS5 Spinners\nBS5 Pagination\nBS5 List Groups\nBS5 Cards\nBS5 Dropdowns\nBS5 Collapse\nBS5 Navs\nBS5 Navbar\nBS5 Carousel\nBS5 Modal\nBS5 Tooltip\nBS5 Popover\nBS5 Toast\nBS5 Scrollspy\nBS5 Offcanvas\nBS5 Utilities\nBS5 Dark Mode\nBS5 Flex",
+                "heading": "Bootstrap 5 Tutorial"
+            },
+            {
+                "content": "BS5 Forms\nBS5 Select Menus\nBS5 Checks and Radios\nBS5 Range\nBS5 Input Groups\nBS5 Floating Labels\nBS5 Form Validation\nBS5 Inputs\nBS5 Input Groups\nBS5 Custom Forms\n-->",
+                "heading": "Bootstrap 5 Forms"
+            },
+            {
+                "content": "BS5 Grid System\nBS5 Stacked/Horizontal\nBS5 Grid XSmall\nBS5 Grid Small\nBS5 Grid Medium\nBS5 Grid Large\nBS5 Grid XLarge\nBS5 Grid XXL\nBS5 Grid Examples",
+                "heading": "Bootstrap 5 Grid"
+            },
+            {
+                "content": "BS5 Certificate",
+                "heading": "Bootstrap 5 Cert"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Editor\nBS5 Exercises\nBS5 Quiz\nBS5 Syllabus\nBS5 Study Plan\nBS5 Interview Prep\n\nBS5 Utilities\nBS5 Flex\nBS5 Icons\nBS5 Media Objects\nBS5 Filters",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Exercises\nBS5 Quiz",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "All Classes\nJS Alert\nJS Button\nJS Carousel\nJS Collapse\nJS Dropdown\nJS Modal\nJS Popover\nJS Scrollspy\nJS Tab\nJS Toasts\nJS Tooltip\n\n-->\n\nny:-->\n\n ny:-->\n\nny:-->\n\n Bootstrap 5 Alerts\n\n❮ Previous\nNext ❯",
+                "heading": "Bootstrap 5 Ref"
+            },
+            {
+                "content": "Bootstrap 5 provides an easy way to create predefined alert messages:\n\nAlerts are created with the .alert class, followed by one of the \ncontextual classes .alert-success, .alert-info, .alert-warning, \n.alert-danger, .alert-primary, .alert-secondary, .alert-light or .alert-dark:\n\nExample\n\n <div class=\"alert alert-success\">\n  <strong>Success!</strong> Indicates a successful or positive action.\n</div>\n\nTry it Yourself »",
+                "heading": "Alerts"
+            },
+            {
+                "content": "Add the .alert-link class to any links inside the alert box to create \"matching colored links\":\n\nExample\n\n <div class=\"alert alert-success\">\n  <strong>Success!</strong> You should <a href=\"#\" class=\"alert-link\">read this message</a>.\n</div>\n\nTry it Yourself »",
+                "heading": "Alert Links"
+            },
+            {
+                "content": "Success! This alert box could indicate a successful or positive action.\n\nTo close the alert message, add a .alert-dismissible \nclass to the alert container. Then add class=\"btn-close\" and data-bs-dismiss=\"alert\" \nto a link or a button element (when you click on this the alert box will \ndisappear).\n\nExample\n\n <div class=\"alert alert-success alert-dismissible\">\n  <button \n type=\"button\" class=\"btn-close\" data-bs-dismiss=\"alert\"></button>\n\n <strong>Success!</strong> This alert box could indicate a successful or \n positive action.\n</div>\n\nTry it Yourself »",
+                "heading": "Closing Alerts"
+            },
+            {
+                "content": "The .fade and .show classes adds a fading effect when \nclosing the alert message:\n\nExample\n\n <div class=\"alert alert-danger \n alert-dismissible fade show\">\n\nTry it Yourself »\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Animated Alerts"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:05:44Z",
+        "subject": "Bootstrap",
+        "title": "Bootstrap 5 Alerts"
+    },
+    {
+        "url": "https://www.w3schools.com/bootstrap5/bootstrap_buttons.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "bootstrap_bootstrap_buttons",
+        "code_examples": [
+            {
+                "code": "<button type=\"button\" class=\"btn\">Basic</button>\n<button type=\"button\" class=\"btn btn-primary\">Primary</button>\n<button type=\"button\" class=\"btn btn-secondary\">Secondary</button>\n<button type=\"button\" class=\"btn btn-success\">Success</button>\n<button type=\"button\" class=\"btn btn-info\">Info</button>\n<button type=\"button\" class=\"btn btn-warning\">Warning</button>\n<button type=\"button\" class=\"btn btn-danger\">Danger</button>\n\n <button type=\"button\" class=\"btn btn-dark\">Dark</button>\n<button \n type=\"button\" class=\"btn btn-light\">Light</button>\n<button type=\"button\" class=\"btn btn-link\">Link</button>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_button_styles&stacked=h"
+            }
+        ],
+        "category": "HTML & CSS",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "BS5 HOME\nBS5 Get Started\nBS5 Containers\nBS5 Grid Basic\nBS5 Typography\nBS5 Colors\n\nText Colors\nBackground Colors\n\nBS5 Tables\nBS5 Images\nBS5 Jumbotron\nBS5 Alerts\nBS5 Buttons\nBS5 Button Groups\nBS5 Badges\nBS5 Progress Bars\nBS5 Spinners\nBS5 Pagination\nBS5 List Groups\nBS5 Cards\nBS5 Dropdowns\nBS5 Collapse\nBS5 Navs\nBS5 Navbar\nBS5 Carousel\nBS5 Modal\nBS5 Tooltip\nBS5 Popover\nBS5 Toast\nBS5 Scrollspy\nBS5 Offcanvas\nBS5 Utilities\nBS5 Dark Mode\nBS5 Flex",
+                "heading": "Bootstrap 5 Tutorial"
+            },
+            {
+                "content": "BS5 Forms\nBS5 Select Menus\nBS5 Checks and Radios\nBS5 Range\nBS5 Input Groups\nBS5 Floating Labels\nBS5 Form Validation\nBS5 Inputs\nBS5 Input Groups\nBS5 Custom Forms\n-->",
+                "heading": "Bootstrap 5 Forms"
+            },
+            {
+                "content": "BS5 Grid System\nBS5 Stacked/Horizontal\nBS5 Grid XSmall\nBS5 Grid Small\nBS5 Grid Medium\nBS5 Grid Large\nBS5 Grid XLarge\nBS5 Grid XXL\nBS5 Grid Examples",
+                "heading": "Bootstrap 5 Grid"
+            },
+            {
+                "content": "BS5 Certificate",
+                "heading": "Bootstrap 5 Cert"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Editor\nBS5 Exercises\nBS5 Quiz\nBS5 Syllabus\nBS5 Study Plan\nBS5 Interview Prep\n\nBS5 Utilities\nBS5 Flex\nBS5 Icons\nBS5 Media Objects\nBS5 Filters",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Exercises\nBS5 Quiz",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "All Classes\nJS Alert\nJS Button\nJS Carousel\nJS Collapse\nJS Dropdown\nJS Modal\nJS Popover\nJS Scrollspy\nJS Tab\nJS Toasts\nJS Tooltip\n\n-->\n\nny:-->\n\n ny:-->\n\nny:-->\n\nBootstrap 5 Buttons\n\n❮ Previous\nNext ❯",
+                "heading": "Bootstrap 5 Ref"
+            },
+            {
+                "content": "Bootstrap 5 provides different styles of buttons:\n\nBasic\nPrimary\nSecondary\nSuccess\nInfo\nWarning\nDanger\nDark\nLight\nLink\n\n Example\n\n <button type=\"button\" class=\"btn\">Basic</button>\n<button type=\"button\" class=\"btn btn-primary\">Primary</button>\n<button type=\"button\" class=\"btn btn-secondary\">Secondary</button>\n<button type=\"button\" class=\"btn btn-success\">Success</button>\n<button type=\"button\" class=\"btn btn-info\">Info</button>\n<button type=\"button\" class=\"btn btn-warning\">Warning</button>\n<button type=\"button\" class=\"btn btn-danger\">Danger</button>\n\n <button type=\"button\" class=\"btn btn-dark\">Dark</button>\n<button \n type=\"button\" class=\"btn btn-light\">Light</button>\n<button type=\"button\" class=\"btn btn-link\">Link</button>\n\nTry it Yourself »\n\nThe button classes can be used on <a>, <button>, or \n<input> elements:\n\n Example\n\n <a href=\"#\" class=\"btn btn-success\">Link Button</a>\n<button type=\"button\" \n class=\"btn btn-success\">Button</button>\n<input type=\"button\" class=\"btn \n btn-success\" value=\"Input Button\">\n<input type=\"submit\" class=\"btn \n btn-success\" value=\"Submit Button\">\n<input type=\"reset\" class=\"btn \n btn-success\" value=\"Reset Button\">\n\nTry it Yourself »\n\nWhy do we put a # in the href attribute of the link?\n\nSince \nwe do not have any page to link it to, and we do not want to get a \"404\" \nmessage, we put # as the link. In real life it should of course been a real URL to the \"Search\" page.",
+                "heading": "Button Styles"
+            },
+            {
+                "content": "Bootstrap 5 also provides eight outline/bordered buttons.\n\nMove the \nmouse over them to see an additional \"hover\" effect:\n\nPrimary\nSecondary\nSuccess\nInfo\nWarning\nDanger\nDark\nLight\n\n Example\n\n <button type=\"button\" class=\"btn btn-outline-primary\">Primary</button>\n\n <button type=\"button\" class=\"btn btn-outline-secondary\">Secondary</button>\n\n <button type=\"button\" class=\"btn btn-outline-success\">Success</button>\n\n <button type=\"button\" class=\"btn btn-outline-info\">Info</button>\n<button \n type=\"button\" class=\"btn btn-outline-warning\">Warning</button>\n<button \n type=\"button\" class=\"btn btn-outline-danger\">Danger</button>\n\n <button type=\"button\" class=\"btn btn-outline-dark\">Dark</button>\n<button \n type=\"button\" class=\"btn btn-outline-light text-dark\">Light</button>\n\nTry it Yourself »",
+                "heading": "Button Outline"
+            },
+            {
+                "content": "Use the .btn-lg class for large buttons or .btn-sm class for small buttons:\n\nLarge\nDefault\nSmall\n\n Example\n\n <button type=\"button\" class=\"btn btn-primary btn-lg\">Large</button>\n<button type=\"button\" class=\"btn btn-primary\">Default</button>\n<button type=\"button\" class=\"btn btn-primary btn-sm\">Small</button>\n\nTry it Yourself »",
+                "heading": "Button Sizes"
+            },
+            {
+                "content": "A block level button spans the full width of its parent element.\n\nIn Bootstrap 5, you can create a full-width button by placing it inside a container with the .d-grid class.\n\nThe .d-grid class creates a grid container that allows the button to stretch across the entire width.\n\n Full-Width Button\n\n Example\n\n <div class=\"d-grid\">\n\n   <button type=\"button\" class=\"btn btn-primary\">Full-Width Button</button>\n\n </div>\n\n Try it Yourself »\n\nIf you have many block-level buttons, you can control the space between them with the .gap-* class:\n\n Full-Width Button\n Full-Width Button\n Full-Width Button\n\n Example\n\n <div class=\"d-grid gap-3\">\n  <button type=\"button\" class=\"btn btn-primary\">Full-Width Button</button>\n  <button type=\"button\" class=\"btn btn-primary\">Full-Width Button</button>\n  <button type=\"button\" class=\"btn btn-primary\">Full-Width Button</button>\n</div>\n\nTry it Yourself »",
+                "heading": "Block Level Buttons"
+            },
+            {
+                "content": "A button can be set to an active (appear pressed) or a disabled (unclickable) state:\n\nActive Primary\nDisabled Primary\n\nThe class .active makes a button appear \npressed, and the disabled attribute \nmakes a button unclickable. Note that <a> elements do not support the disabled \nattribute and must therefore use the .disabled class to make it visually appear \ndisabled.\n\n Example\n\n <button type=\"button\" class=\"btn btn-primary active\">Active Primary</button>\n\n <button type=\"button\" class=\"btn btn-primary\" disabled>Disabled Primary</button>\n<a href=\"#\" class=\"btn btn-primary \n disabled\">Disabled Link</a>\n\nTry it Yourself »",
+                "heading": "Active/Disabled Buttons"
+            },
+            {
+                "content": "You can also add \"spinners\" to a button, which you will learn more about in our BS5 Spinners Tutorial:\n\n Loading..\n\n Loading..\n\n Loading..\n\n Example\n\n <button class=\"btn btn-primary\">\n  <span class=\"spinner-border \n spinner-border-sm\"></span>\n</button>\n\n<button class=\"btn \n btn-primary\">\n  <span class=\"spinner-border \n spinner-border-sm\"></span>\n  Loading..\n</button>\n\n<button \n class=\"btn btn-primary\" disabled>\n  <span class=\"spinner-border \n spinner-border-sm\"></span>\n  Loading..\n</button>\n\n<button class=\"btn btn-primary\" disabled>\n  <span \n class=\"spinner-grow spinner-grow-sm\"></span>\n  Loading..\n\n </button>\n\nTry it Yourself »\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Spinner Buttons"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:05:44Z",
+        "subject": "Bootstrap",
+        "title": "Bootstrap 5 Buttons"
+    },
+    {
+        "url": "https://www.w3schools.com/bootstrap5/bootstrap_button_groups.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "bootstrap_bootstrap_button_groups",
+        "code_examples": [
+            {
+                "code": "<div class=\"btn-group\">\n\n   <button type=\"button\" class=\"btn btn-primary\">Apple</button>\n\n   <button type=\"button\" class=\"btn btn-primary\">Samsung</button>\n\n   <button type=\"button\" class=\"btn btn-primary\">Sony</button>\n\n </div>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_button_group&stacked=h"
+            },
+            {
+                "code": "<div class=\"btn-group-vertical\">\n  <button type=\"button\" class=\"btn \n btn-primary\">Apple</button>\n  <button type=\"button\" class=\"btn btn-primary\">Samsung</button>\n\n <div class=\"btn-group\">\n    <button type=\"button\" class=\"btn \n btn-primary dropdown-toggle\" data-toggle=\"dropdown\">\n\n Sony\n    </button>\n    <div \n class=\"dropdown-menu\">\n      <a \n class=\"dropdown-item\" href=\"#\">Tablet</a>\n      <a \n class=\"dropdown-item\" href=\"#\">Smartphone</a>\n    </div>\n\n </div>\n</div>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_button_group_v_dropdown&stacked=h"
+            },
+            {
+                "code": "<div class=\"btn-group\">\n  <button type=\"button\" class=\"btn \n btn-primary\">Apple</button>\n  <button type=\"button\" class=\"btn \n btn-primary\">Samsung</button>\n  <div class=\"btn-group\">\n\n <button type=\"button\" class=\"btn btn-primary dropdown-toggle\" \n data-bs-toggle=\"dropdown\">Sony</button>\n    <div \n class=\"dropdown-menu\">\n      <a \n class=\"dropdown-item\" href=\"#\">Tablet</a>\n\n <a class=\"dropdown-item\" href=\"#\">Smartphone</a>\n\n </div>\n  </div>\n</div>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_button_group_dropdown&stacked=h"
+            }
+        ],
+        "category": "HTML & CSS",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "BS5 HOME\nBS5 Get Started\nBS5 Containers\nBS5 Grid Basic\nBS5 Typography\nBS5 Colors\n\nText Colors\nBackground Colors\n\nBS5 Tables\nBS5 Images\nBS5 Jumbotron\nBS5 Alerts\nBS5 Buttons\nBS5 Button Groups\nBS5 Badges\nBS5 Progress Bars\nBS5 Spinners\nBS5 Pagination\nBS5 List Groups\nBS5 Cards\nBS5 Dropdowns\nBS5 Collapse\nBS5 Navs\nBS5 Navbar\nBS5 Carousel\nBS5 Modal\nBS5 Tooltip\nBS5 Popover\nBS5 Toast\nBS5 Scrollspy\nBS5 Offcanvas\nBS5 Utilities\nBS5 Dark Mode\nBS5 Flex",
+                "heading": "Bootstrap 5 Tutorial"
+            },
+            {
+                "content": "BS5 Forms\nBS5 Select Menus\nBS5 Checks and Radios\nBS5 Range\nBS5 Input Groups\nBS5 Floating Labels\nBS5 Form Validation\nBS5 Inputs\nBS5 Input Groups\nBS5 Custom Forms\n-->",
+                "heading": "Bootstrap 5 Forms"
+            },
+            {
+                "content": "BS5 Grid System\nBS5 Stacked/Horizontal\nBS5 Grid XSmall\nBS5 Grid Small\nBS5 Grid Medium\nBS5 Grid Large\nBS5 Grid XLarge\nBS5 Grid XXL\nBS5 Grid Examples",
+                "heading": "Bootstrap 5 Grid"
+            },
+            {
+                "content": "BS5 Certificate",
+                "heading": "Bootstrap 5 Cert"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Editor\nBS5 Exercises\nBS5 Quiz\nBS5 Syllabus\nBS5 Study Plan\nBS5 Interview Prep\n\nBS5 Utilities\nBS5 Flex\nBS5 Icons\nBS5 Media Objects\nBS5 Filters",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Exercises\nBS5 Quiz",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "All Classes\nJS Alert\nJS Button\nJS Carousel\nJS Collapse\nJS Dropdown\nJS Modal\nJS Popover\nJS Scrollspy\nJS Tab\nJS Toasts\nJS Tooltip\n\n-->\n\nny:-->\n\n ny:-->\n\nny:-->\n\nBootstrap 5 Button Groups\n\n❮ Previous\nNext ❯",
+                "heading": "Bootstrap 5 Ref"
+            },
+            {
+                "content": "Bootstrap 5 allows you to group a series of buttons together (on a single line) in a button group:\n\n Apple\n Samsung\n Sony\n\nUse a <div> element with class .btn-group to create a button group:\n\n Example\n\n <div class=\"btn-group\">\n\n   <button type=\"button\" class=\"btn btn-primary\">Apple</button>\n\n   <button type=\"button\" class=\"btn btn-primary\">Samsung</button>\n\n   <button type=\"button\" class=\"btn btn-primary\">Sony</button>\n\n </div>\n\nTry it Yourself »\n\nTip: Instead of applying button sizes to every button in a \ngroup, use class .btn-group-lg for a large button group or the .btn-group-sm for a small button group:\n\n Large Buttons:\n\n Apple\n Samsung\n Sony\n\n Default Buttons:\n\n Apple\n Samsung\n Sony\n\n Small Buttons:\n\n Apple\n Samsung\n Sony\n\n Example\n\n <div class=\"btn-group btn-group-lg\">\n\n   <button type=\"button\" class=\"btn btn-primary\">Apple</button>\n\n   <button type=\"button\" class=\"btn btn-primary\">Samsung</button>\n\n   <button type=\"button\" class=\"btn btn-primary\">Sony</button>\n\n </div>\n\nTry it Yourself »",
+                "heading": "Button Groups"
+            },
+            {
+                "content": "Bootstrap 5 also supports vertical button groups:\n\n Apple\n Samsung\n Sony\n\nUse the class .btn-group-vertical to create a vertical button group:\n\n Example\n\n <div class=\"btn-group-vertical\">\n\n   <button type=\"button\" class=\"btn btn-primary\">Apple</button>\n\n   <button type=\"button\" class=\"btn btn-primary\">Samsung</button>\n\n   <button type=\"button\" class=\"btn btn-primary\">Sony</button>\n\n </div>\n\nTry it Yourself »",
+                "heading": "Vertical Button Groups"
+            },
+            {
+                "content": "Example\n\n <div class=\"btn-group\">\n  <button type=\"button\" class=\"btn btn-primary\">Sony</button>\n\n <button type=\"button\" class=\"btn btn-primary dropdown-toggle \n dropdown-toggle-split\" \n data-toggle=\"dropdown\">\n    <span class=\"caret\"></span>\n\n </button>\n  <div class=\"dropdown-menu\">\n    <a \n class=\"dropdown-item\" href=\"#\">Tablet</a>\n    <a \n class=\"dropdown-item\" href=\"#\">Smartphone</a>\n  </div>\n</div>\n\nTry it Yourself »",
+                "heading": "Split Button Dropdowns"
+            },
+            {
+                "content": "Apple\n Samsung\n\n Sony\n\n Tablet\n Smartphone\n\n Example\n\n <div class=\"btn-group-vertical\">\n  <button type=\"button\" class=\"btn \n btn-primary\">Apple</button>\n  <button type=\"button\" class=\"btn btn-primary\">Samsung</button>\n\n <div class=\"btn-group\">\n    <button type=\"button\" class=\"btn \n btn-primary dropdown-toggle\" data-toggle=\"dropdown\">\n\n Sony\n    </button>\n    <div \n class=\"dropdown-menu\">\n      <a \n class=\"dropdown-item\" href=\"#\">Tablet</a>\n      <a \n class=\"dropdown-item\" href=\"#\">Smartphone</a>\n    </div>\n\n </div>\n</div>\n\nTry it Yourself »\n\n-->",
+                "heading": "Vertical Button Group w/ Dropdown"
+            },
+            {
+                "content": "Button groups are \"inline\" by default, which makes them appear side by side when you have multiple groups:\n\n Apple\n Samsung\n Sony\n\n BMW\n Mercedes\n Volvo\n\n Example\n\n <div class=\"btn-group\">\n  <button type=\"button\" class=\"btn btn-primary\">Apple</button>\n\n <button type=\"button\" class=\"btn btn-primary\">Samsung</button>\n\n <button type=\"button\" class=\"btn btn-primary\">Sony</button>\n</div>\n\n <div class=\"btn-group\">\n  <button type=\"button\" class=\"btn btn-primary\">BMW</button>\n\n <button type=\"button\" class=\"btn btn-primary\">Mercedes</button>\n\n <button type=\"button\" class=\"btn btn-primary\">Volvo</button>\n</div>\n\nTry it Yourself »",
+                "heading": "Button Groups Side by Side"
+            },
+            {
+                "content": "Apple\n Samsung\n\n Sony\n\n Tablet\n\n Smartphone\n\n Nest button groups to create dropdown menus (you will learn more about \ndropdowns in a later chapter):\n\n Example\n\n <div class=\"btn-group\">\n  <button type=\"button\" class=\"btn \n btn-primary\">Apple</button>\n  <button type=\"button\" class=\"btn \n btn-primary\">Samsung</button>\n  <div class=\"btn-group\">\n\n <button type=\"button\" class=\"btn btn-primary dropdown-toggle\" \n data-bs-toggle=\"dropdown\">Sony</button>\n    <div \n class=\"dropdown-menu\">\n      <a \n class=\"dropdown-item\" href=\"#\">Tablet</a>\n\n <a class=\"dropdown-item\" href=\"#\">Smartphone</a>\n\n </div>\n  </div>\n</div>\n\nTry it Yourself »\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Nesting Button Groups & Dropdown Menus"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:05:45Z",
+        "subject": "Bootstrap",
+        "title": "Bootstrap 5 Button Groups"
+    },
+    {
+        "url": "https://www.w3schools.com/bootstrap5/bootstrap_badges.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "bootstrap_bootstrap_badges",
+        "code_examples": [
+            {
+                "code": "<h1>Example heading <span class=\"badge bg-secondary\">New</span></h1>\n\n <h2>Example heading <span class=\"badge bg-secondary\">New</span></h2>\n\n <h3>Example heading <span class=\"badge bg-secondary\">New</span></h3>\n\n <h4>Example heading <span class=\"badge bg-secondary\">New</span></h4>\n\n <h5>Example heading <span class=\"badge bg-secondary\">New</span></h5>\n\n <h6>Example heading <span class=\"badge bg-secondary\">New</span></h6>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_badges&stacked=h"
+            }
+        ],
+        "category": "HTML & CSS",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "BS5 HOME\nBS5 Get Started\nBS5 Containers\nBS5 Grid Basic\nBS5 Typography\nBS5 Colors\n\nText Colors\nBackground Colors\n\nBS5 Tables\nBS5 Images\nBS5 Jumbotron\nBS5 Alerts\nBS5 Buttons\nBS5 Button Groups\nBS5 Badges\nBS5 Progress Bars\nBS5 Spinners\nBS5 Pagination\nBS5 List Groups\nBS5 Cards\nBS5 Dropdowns\nBS5 Collapse\nBS5 Navs\nBS5 Navbar\nBS5 Carousel\nBS5 Modal\nBS5 Tooltip\nBS5 Popover\nBS5 Toast\nBS5 Scrollspy\nBS5 Offcanvas\nBS5 Utilities\nBS5 Dark Mode\nBS5 Flex",
+                "heading": "Bootstrap 5 Tutorial"
+            },
+            {
+                "content": "BS5 Forms\nBS5 Select Menus\nBS5 Checks and Radios\nBS5 Range\nBS5 Input Groups\nBS5 Floating Labels\nBS5 Form Validation\nBS5 Inputs\nBS5 Input Groups\nBS5 Custom Forms\n-->",
+                "heading": "Bootstrap 5 Forms"
+            },
+            {
+                "content": "BS5 Grid System\nBS5 Stacked/Horizontal\nBS5 Grid XSmall\nBS5 Grid Small\nBS5 Grid Medium\nBS5 Grid Large\nBS5 Grid XLarge\nBS5 Grid XXL\nBS5 Grid Examples",
+                "heading": "Bootstrap 5 Grid"
+            },
+            {
+                "content": "BS5 Certificate",
+                "heading": "Bootstrap 5 Cert"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Editor\nBS5 Exercises\nBS5 Quiz\nBS5 Syllabus\nBS5 Study Plan\nBS5 Interview Prep\n\nBS5 Utilities\nBS5 Flex\nBS5 Icons\nBS5 Media Objects\nBS5 Filters",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Exercises\nBS5 Quiz",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "All Classes\nJS Alert\nJS Button\nJS Carousel\nJS Collapse\nJS Dropdown\nJS Modal\nJS Popover\nJS Scrollspy\nJS Tab\nJS Toasts\nJS Tooltip\n\n-->\n\nny:-->\n\n ny:-->\n\nny:-->\n\nBootstrap 5 Badges\n\n❮ Previous\nNext ❯",
+                "heading": "Bootstrap 5 Ref"
+            },
+            {
+                "content": "Badges are used to add additional information to any content:\n\nExample heading New",
+                "heading": "Badges"
+            },
+            {
+                "content": "Example heading New\nExample heading New\nExample heading New\nExample heading New\nUse the .badge class together with a \ncontextual class (like .bg-secondary) within <span> \nelements to create rectangular badges. Note that badges scale to match the size of the \nparent element (if any):\n\nExample\n\n <h1>Example heading <span class=\"badge bg-secondary\">New</span></h1>\n\n <h2>Example heading <span class=\"badge bg-secondary\">New</span></h2>\n\n <h3>Example heading <span class=\"badge bg-secondary\">New</span></h3>\n\n <h4>Example heading <span class=\"badge bg-secondary\">New</span></h4>\n\n <h5>Example heading <span class=\"badge bg-secondary\">New</span></h5>\n\n <h6>Example heading <span class=\"badge bg-secondary\">New</span></h6>\n\nTry it Yourself »",
+                "heading": "Example heading New"
+            },
+            {
+                "content": "Primary\nSecondary\nSuccess\nDanger\nWarning\nInfo\nLight\nDark\n\nUse any of the contextual classes (.bg-*) to change the color of a badge:\n\nExample\n\n <span class=\"badge bg-primary\">Primary</span>\n<span class=\"badge \n bg-secondary\">Secondary</span>\n<span class=\"badge \n bg-success\">Success</span>\n<span class=\"badge \n bg-danger\">Danger</span>\n<span class=\"badge \n bg-warning\">Warning</span>\n<span class=\"badge bg-info\">Info</span>\n\n <span class=\"badge bg-light\">Light</span>\n<span class=\"badge \n bg-dark\">Dark</span>\n\nTry it Yourself »",
+                "heading": "Contextual Badges"
+            },
+            {
+                "content": "Primary\nSecondary\nSuccess\nDanger\nWarning\nInfo\nLight\nDark\n\nUse the .rounded-pill class to make the badges more round:\n\nExample\n\n <span class=\"badge rounded-pill \n bg-primary\">Primary</span>\n<span \n class=\"badge rounded-pill bg-secondary\">Secondary</span>\n<span \n class=\"badge rounded-pill bg-success\">Success</span>\n<span class=\"badge \n rounded-pill bg-danger\">Danger</span>\n<span class=\"badge \n rounded-pill \n bg-warning\">Warning</span>\n<span class=\"badge rounded-pill \n bg-info\">Info</span>\n<span class=\"badge rounded-pill \n bg-light\">Light</span>\n<span class=\"badge rounded-pill \n bg-dark\">Dark</span>\n\nTry it Yourself »",
+                "heading": "Pill Badges"
+            },
+            {
+                "content": "An example of using a badge inside a button:\n\n Messages 4\n\nExample\n\n <button type=\"button\" class=\"btn btn-primary\">\n  Messages <span \n class=\"badge bg-danger\">4</span>\n</button>\n\nTry it Yourself »",
+                "heading": "Badge inside an Element"
+            },
+            {
+                "content": "W3.CSS is an excellent alternative to Bootstrap.\n\nW3.CSS is smaller, faster, and easier to use.\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Did You Know?"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:05:45Z",
+        "subject": "Bootstrap",
+        "title": "Example heading New"
+    },
+    {
+        "url": "https://www.w3schools.com/bootstrap5/bootstrap_progressbars.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "bootstrap_bootstrap_progressbars",
+        "code_examples": [
+            {
+                "code": "<div class=\"progress\">\n  <div class=\"progress-bar\" style=\"width:70%\"></div>\n</div>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_progressbar1&stacked=h"
+            },
+            {
+                "code": "<div class=\"progress\" style=\"height:20px\">\n  <div class=\"progress-bar\" style=\"width:40%;\"></div>\n</div>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_progressbar7&stacked=h"
+            },
+            {
+                "code": "<div class=\"progress\">\n  <div class=\"progress-bar\" style=\"width:70%\">70%</div>\n</div>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_progressbar2&stacked=h"
+            },
+            {
+                "code": "<!-- Blue -->\n<div class=\"progress\">\n  <div class=\"progress-bar\" \n style=\"width:10%\"></div>\n</div>\n\n<!-- Green -->\n<div \n class=\"progress\">\n  <div \n class=\"progress-bar bg-success\" style=\"width:20%\"></div>\n</div>\n\n<!-- \n Turquoise -->\n<div class=\"progress\">\n\n <div class=\"progress-bar bg-info\" style=\"width:30%\"></div>\n</div>\n\n <!-- Orange -->\n<div class=\"progress\">\n   <div class=\"progress-bar bg-warning\" \n style=\"width:40%\"></div>\n</div>\n\n<!-- Red -->\n<div \n class=\"progress\">\n  <div class=\"progress-bar bg-danger\" \n style=\"width:50%\"></div>\n</div>\n\n<!-- White -->\n<div \n class=\"progress border\">\n  <div \n class=\"progress-bar bg-white\" style=\"width:60%\"></div>\n</div>\n\n<!-- \n Grey -->\n<div class=\"progress\">\n  <div class=\"progress-bar bg-secondary\" \n style=\"width:70%\"></div>\n</div>\n\n<!-- Light Grey -->\n<div \n class=\"progress border\">\n  <div class=\"progress-bar bg-light\" \n style=\"width:80%\"></div>\n</div>\n\n<!-- \n Dark Grey -->\n<div class=\"progress\">\n\n <div class=\"progress-bar bg-dark\" style=\"width:90%\"></div>\n</div>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_progressbar3&stacked=h"
+            },
+            {
+                "code": "<div class=\"progress\">\n  <div class=\"progress-bar \n progress-bar-striped\" style=\"width:40%\"></div>\n</div>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_progressbar4&stacked=h"
+            },
+            {
+                "code": "<div class=\"progress-bar progress-bar-striped progress-bar-animated\" \n style=\"width:40%\"></div>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_progressbar5&stacked=h"
+            },
+            {
+                "code": "<div class=\"progress\">\n  <div class=\"progress-bar bg-success\" \n style=\"width:40%\">\n    Free Space\n  </div>\n\n <div class=\"progress-bar bg-warning\" style=\"width:10%\">\n\n Warning\n  </div>\n  <div class=\"progress-bar bg-danger\" \n style=\"width:20%\">\n    Danger\n  </div>\n</div>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_progressbar6&stacked=h"
+            }
+        ],
+        "category": "HTML & CSS",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "BS5 HOME\nBS5 Get Started\nBS5 Containers\nBS5 Grid Basic\nBS5 Typography\nBS5 Colors\n\nText Colors\nBackground Colors\n\nBS5 Tables\nBS5 Images\nBS5 Jumbotron\nBS5 Alerts\nBS5 Buttons\nBS5 Button Groups\nBS5 Badges\nBS5 Progress Bars\nBS5 Spinners\nBS5 Pagination\nBS5 List Groups\nBS5 Cards\nBS5 Dropdowns\nBS5 Collapse\nBS5 Navs\nBS5 Navbar\nBS5 Carousel\nBS5 Modal\nBS5 Tooltip\nBS5 Popover\nBS5 Toast\nBS5 Scrollspy\nBS5 Offcanvas\nBS5 Utilities\nBS5 Dark Mode\nBS5 Flex",
+                "heading": "Bootstrap 5 Tutorial"
+            },
+            {
+                "content": "BS5 Forms\nBS5 Select Menus\nBS5 Checks and Radios\nBS5 Range\nBS5 Input Groups\nBS5 Floating Labels\nBS5 Form Validation\nBS5 Inputs\nBS5 Input Groups\nBS5 Custom Forms\n-->",
+                "heading": "Bootstrap 5 Forms"
+            },
+            {
+                "content": "BS5 Grid System\nBS5 Stacked/Horizontal\nBS5 Grid XSmall\nBS5 Grid Small\nBS5 Grid Medium\nBS5 Grid Large\nBS5 Grid XLarge\nBS5 Grid XXL\nBS5 Grid Examples",
+                "heading": "Bootstrap 5 Grid"
+            },
+            {
+                "content": "BS5 Certificate",
+                "heading": "Bootstrap 5 Cert"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Editor\nBS5 Exercises\nBS5 Quiz\nBS5 Syllabus\nBS5 Study Plan\nBS5 Interview Prep\n\nBS5 Utilities\nBS5 Flex\nBS5 Icons\nBS5 Media Objects\nBS5 Filters",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Exercises\nBS5 Quiz",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "All Classes\nJS Alert\nJS Button\nJS Carousel\nJS Collapse\nJS Dropdown\nJS Modal\nJS Popover\nJS Scrollspy\nJS Tab\nJS Toasts\nJS Tooltip\n\n-->\n\nny:-->\n\n ny:-->\n\nny:-->\n\nBootstrap 5 Progress Bars\n\n ❮ Previous\n Next ❯",
+                "heading": "Bootstrap 5 Ref"
+            },
+            {
+                "content": "A progress bar can be used to show how far a user is in a\nprocess.\n\nTo create a default progress bar, add a .progress class to a \ncontainer element \nand add the .progress-bar class to its child element. Use the CSS width property to set the width of the progress bar:\n\nExample\n\n <div class=\"progress\">\n  <div class=\"progress-bar\" style=\"width:70%\"></div>\n</div>\n\nTry it Yourself »",
+                "heading": "Basic Progress Bar"
+            },
+            {
+                "content": "The height of the progress bar is 1rem (usually 16px) by default. Use the CSS height \nproperty to change it:\n\nExample\n\n <div class=\"progress\" style=\"height:20px\">\n  <div class=\"progress-bar\" style=\"width:40%;\"></div>\n</div>\n\nTry it Yourself »",
+                "heading": "Progress Bar Height"
+            },
+            {
+                "content": "Add text inside the progress bar to show the visible percentage:\n\n 70%\n\nExample\n\n <div class=\"progress\">\n  <div class=\"progress-bar\" style=\"width:70%\">70%</div>\n</div>\n\nTry it Yourself »",
+                "heading": "Progress Bar Labels"
+            },
+            {
+                "content": "By default, the progress bar is blue (primary). Use any of the contextual background classes to change its color:\n\nExample\n\n <!-- Blue -->\n<div class=\"progress\">\n  <div class=\"progress-bar\" \n style=\"width:10%\"></div>\n</div>\n\n<!-- Green -->\n<div \n class=\"progress\">\n  <div \n class=\"progress-bar bg-success\" style=\"width:20%\"></div>\n</div>\n\n<!-- \n Turquoise -->\n<div class=\"progress\">\n\n <div class=\"progress-bar bg-info\" style=\"width:30%\"></div>\n</div>\n\n <!-- Orange -->\n<div class=\"progress\">\n   <div class=\"progress-bar bg-warning\" \n style=\"width:40%\"></div>\n</div>\n\n<!-- Red -->\n<div \n class=\"progress\">\n  <div class=\"progress-bar bg-danger\" \n style=\"width:50%\"></div>\n</div>\n\n<!-- White -->\n<div \n class=\"progress border\">\n  <div \n class=\"progress-bar bg-white\" style=\"width:60%\"></div>\n</div>\n\n<!-- \n Grey -->\n<div class=\"progress\">\n  <div class=\"progress-bar bg-secondary\" \n style=\"width:70%\"></div>\n</div>\n\n<!-- Light Grey -->\n<div \n class=\"progress border\">\n  <div class=\"progress-bar bg-light\" \n style=\"width:80%\"></div>\n</div>\n\n<!-- \n Dark Grey -->\n<div class=\"progress\">\n\n <div class=\"progress-bar bg-dark\" style=\"width:90%\"></div>\n</div>\n\nTry it Yourself »",
+                "heading": "Colored Progress Bars"
+            },
+            {
+                "content": "Use the .progress-bar-striped class to add stripes to the progress bars:\n\nExample\n\n <div class=\"progress\">\n  <div class=\"progress-bar \n progress-bar-striped\" style=\"width:40%\"></div>\n</div>\n\nTry it Yourself »",
+                "heading": "Striped Progress Bars"
+            },
+            {
+                "content": "Add the .progress-bar-animated class to animate the progress bar:\n\nExample\n\n <div class=\"progress-bar progress-bar-striped progress-bar-animated\" \n style=\"width:40%\"></div>\n\nTry it Yourself »",
+                "heading": "Animated Progress Bar"
+            },
+            {
+                "content": "Progress bars can also be stacked:\n\n Free Space\n\n Warning\n\n Danger\n\nExample\n\n <div class=\"progress\">\n  <div class=\"progress-bar bg-success\" \n style=\"width:40%\">\n    Free Space\n  </div>\n\n <div class=\"progress-bar bg-warning\" style=\"width:10%\">\n\n Warning\n  </div>\n  <div class=\"progress-bar bg-danger\" \n style=\"width:20%\">\n    Danger\n  </div>\n</div>\n\nTry it Yourself »\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Multiple Progress Bars"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:05:45Z",
+        "subject": "Bootstrap",
+        "title": "Bootstrap 5 Progress Bars"
+    },
+    {
+        "url": "https://www.w3schools.com/bootstrap5/bootstrap_spinners.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "bootstrap_bootstrap_spinners",
+        "code_examples": [
+            {
+                "code": "<div class=\"spinner-border\"></div>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_spinners&stacked=h"
+            },
+            {
+                "code": "<div class=\"spinner-border text-muted\"></div>\n<div class=\"spinner-border \n text-primary\"></div>\n<div class=\"spinner-border text-success\"></div>\n\n <div class=\"spinner-border text-info\"></div>\n<div class=\"spinner-border \n text-warning\"></div>\n<div class=\"spinner-border text-danger\"></div>\n<div \n class=\"spinner-border text-secondary\"></div>\n<div class=\"spinner-border \n text-dark\"></div>\n<div class=\"spinner-border text-light\"></div>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_spinners_colors&stacked=h"
+            },
+            {
+                "code": "<div class=\"spinner-grow text-muted\"></div>\n<div class=\"spinner-grow text-primary\"></div>\n<div class=\"spinner-grow text-success\"></div>\n\n <div class=\"spinner-grow text-info\"></div>\n<div class=\"spinner-grow text-warning\"></div>\n<div class=\"spinner-grow text-danger\"></div>\n<div \n class=\"spinner-grow text-secondary\"></div>\n<div class=\"spinner-grow text-dark\"></div>\n<div class=\"spinner-grow text-light\"></div>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_spinners_grow&stacked=h"
+            },
+            {
+                "code": "<div class=\"spinner-border \n spinner-border-sm\"></div>\n<div class=\"spinner-grow \n spinner-grow-sm\"></div>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_spinners_size&stacked=h"
+            }
+        ],
+        "category": "HTML & CSS",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "BS5 HOME\nBS5 Get Started\nBS5 Containers\nBS5 Grid Basic\nBS5 Typography\nBS5 Colors\n\nText Colors\nBackground Colors\n\nBS5 Tables\nBS5 Images\nBS5 Jumbotron\nBS5 Alerts\nBS5 Buttons\nBS5 Button Groups\nBS5 Badges\nBS5 Progress Bars\nBS5 Spinners\nBS5 Pagination\nBS5 List Groups\nBS5 Cards\nBS5 Dropdowns\nBS5 Collapse\nBS5 Navs\nBS5 Navbar\nBS5 Carousel\nBS5 Modal\nBS5 Tooltip\nBS5 Popover\nBS5 Toast\nBS5 Scrollspy\nBS5 Offcanvas\nBS5 Utilities\nBS5 Dark Mode\nBS5 Flex",
+                "heading": "Bootstrap 5 Tutorial"
+            },
+            {
+                "content": "BS5 Forms\nBS5 Select Menus\nBS5 Checks and Radios\nBS5 Range\nBS5 Input Groups\nBS5 Floating Labels\nBS5 Form Validation\nBS5 Inputs\nBS5 Input Groups\nBS5 Custom Forms\n-->",
+                "heading": "Bootstrap 5 Forms"
+            },
+            {
+                "content": "BS5 Grid System\nBS5 Stacked/Horizontal\nBS5 Grid XSmall\nBS5 Grid Small\nBS5 Grid Medium\nBS5 Grid Large\nBS5 Grid XLarge\nBS5 Grid XXL\nBS5 Grid Examples",
+                "heading": "Bootstrap 5 Grid"
+            },
+            {
+                "content": "BS5 Certificate",
+                "heading": "Bootstrap 5 Cert"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Editor\nBS5 Exercises\nBS5 Quiz\nBS5 Syllabus\nBS5 Study Plan\nBS5 Interview Prep\n\nBS5 Utilities\nBS5 Flex\nBS5 Icons\nBS5 Media Objects\nBS5 Filters",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Exercises\nBS5 Quiz",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "All Classes\nJS Alert\nJS Button\nJS Carousel\nJS Collapse\nJS Dropdown\nJS Modal\nJS Popover\nJS Scrollspy\nJS Tab\nJS Toasts\nJS Tooltip\n\n-->\n\nny:-->\n\n ny:-->\n\nny:-->\n\nBootstrap 5 Spinners\n\n ❮ Previous\n Next ❯",
+                "heading": "Bootstrap 5 Ref"
+            },
+            {
+                "content": "To create a spinner/loader, use the .spinner-border class:\n\nLoading..\n\n Example\n\n <div class=\"spinner-border\"></div>\n\nTry it Yourself »",
+                "heading": "Spinners"
+            },
+            {
+                "content": "Use any text color utilites to add a color to the spinner:\n\n Loading..\n\n Loading..\n\n Loading..\n\n Loading..\n\n Loading..\n\n Loading..\n\n Loading..\n\n Loading..\n\n Loading..\n\n Example\n\n <div class=\"spinner-border text-muted\"></div>\n<div class=\"spinner-border \n text-primary\"></div>\n<div class=\"spinner-border text-success\"></div>\n\n <div class=\"spinner-border text-info\"></div>\n<div class=\"spinner-border \n text-warning\"></div>\n<div class=\"spinner-border text-danger\"></div>\n<div \n class=\"spinner-border text-secondary\"></div>\n<div class=\"spinner-border \n text-dark\"></div>\n<div class=\"spinner-border text-light\"></div>\n\nTry it Yourself »",
+                "heading": "Colored Spinners"
+            },
+            {
+                "content": "Use the .spinner-grow class if you want the spinner/loader to grow instead of \"spin\":\n\n Loading..\n\n Loading..\n\n Loading..\n\n Loading..\n\n Loading..\n\n Loading..\n\n Loading..\n\n Loading..\n\n Loading..\n\n Example\n\n <div class=\"spinner-grow text-muted\"></div>\n<div class=\"spinner-grow text-primary\"></div>\n<div class=\"spinner-grow text-success\"></div>\n\n <div class=\"spinner-grow text-info\"></div>\n<div class=\"spinner-grow text-warning\"></div>\n<div class=\"spinner-grow text-danger\"></div>\n<div \n class=\"spinner-grow text-secondary\"></div>\n<div class=\"spinner-grow text-dark\"></div>\n<div class=\"spinner-grow text-light\"></div>\n\nTry it Yourself »",
+                "heading": "Growing Spinners"
+            },
+            {
+                "content": "Use .spinner-border-sm or .spinner-grow-sm to create a smaller spinner:\n\n Loading..\n\n Loading..\n\n Example\n\n <div class=\"spinner-border \n spinner-border-sm\"></div>\n<div class=\"spinner-grow \n spinner-grow-sm\"></div>\n\nTry it Yourself »",
+                "heading": "Spinner Size"
+            },
+            {
+                "content": "You can also add spinners to a button, with or without text:\n\n Loading..\n\n Loading..\n\n Loading..\n\n Example\n\n <button class=\"btn btn-primary\">\n  <span class=\"spinner-border \n spinner-border-sm\"></span>\n</button>\n\n<button class=\"btn \n btn-primary\">\n  <span class=\"spinner-border \n spinner-border-sm\"></span>\n  Loading..\n</button>\n\n<button \n class=\"btn btn-primary\" disabled>\n  <span class=\"spinner-border \n spinner-border-sm\"></span>\n  Loading..\n</button>\n\n<button class=\"btn btn-primary\" disabled>\n  <span \n class=\"spinner-grow spinner-grow-sm\"></span>\n  Loading..\n\n </button>\n\nTry it Yourself »\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Spinner Buttons"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:05:45Z",
+        "subject": "Bootstrap",
+        "title": "Bootstrap 5 Spinners"
+    },
+    {
+        "url": "https://www.w3schools.com/bootstrap5/bootstrap_pagination.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "bootstrap_bootstrap_pagination",
+        "code_examples": [
+            {
+                "code": "<ul class=\"pagination\">\n  <li class=\"page-item\"><a class=\"page-link\" \n href=\"#\">Previous</a></li>\n  <li class=\"page-item\"><a \n class=\"page-link\" href=\"#\">1</a></li>\n  <li class=\"page-item\"><a \n class=\"page-link\" href=\"#\">2</a></li>\n  <li class=\"page-item\"><a \n class=\"page-link\" href=\"#\">3</a></li>\n  <li class=\"page-item\"><a \n class=\"page-link\" href=\"#\">Next</a></li>\n</ul>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_pagination&stacked=h"
+            }
+        ],
+        "category": "HTML & CSS",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "BS5 HOME\nBS5 Get Started\nBS5 Containers\nBS5 Grid Basic\nBS5 Typography\nBS5 Colors\n\nText Colors\nBackground Colors\n\nBS5 Tables\nBS5 Images\nBS5 Jumbotron\nBS5 Alerts\nBS5 Buttons\nBS5 Button Groups\nBS5 Badges\nBS5 Progress Bars\nBS5 Spinners\nBS5 Pagination\nBS5 List Groups\nBS5 Cards\nBS5 Dropdowns\nBS5 Collapse\nBS5 Navs\nBS5 Navbar\nBS5 Carousel\nBS5 Modal\nBS5 Tooltip\nBS5 Popover\nBS5 Toast\nBS5 Scrollspy\nBS5 Offcanvas\nBS5 Utilities\nBS5 Dark Mode\nBS5 Flex",
+                "heading": "Bootstrap 5 Tutorial"
+            },
+            {
+                "content": "BS5 Forms\nBS5 Select Menus\nBS5 Checks and Radios\nBS5 Range\nBS5 Input Groups\nBS5 Floating Labels\nBS5 Form Validation\nBS5 Inputs\nBS5 Input Groups\nBS5 Custom Forms\n-->",
+                "heading": "Bootstrap 5 Forms"
+            },
+            {
+                "content": "BS5 Grid System\nBS5 Stacked/Horizontal\nBS5 Grid XSmall\nBS5 Grid Small\nBS5 Grid Medium\nBS5 Grid Large\nBS5 Grid XLarge\nBS5 Grid XXL\nBS5 Grid Examples",
+                "heading": "Bootstrap 5 Grid"
+            },
+            {
+                "content": "BS5 Certificate",
+                "heading": "Bootstrap 5 Cert"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Editor\nBS5 Exercises\nBS5 Quiz\nBS5 Syllabus\nBS5 Study Plan\nBS5 Interview Prep\n\nBS5 Utilities\nBS5 Flex\nBS5 Icons\nBS5 Media Objects\nBS5 Filters",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Exercises\nBS5 Quiz",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "All Classes\nJS Alert\nJS Button\nJS Carousel\nJS Collapse\nJS Dropdown\nJS Modal\nJS Popover\nJS Scrollspy\nJS Tab\nJS Toasts\nJS Tooltip\n\n-->\n\nny:-->\n\n ny:-->\n\nny:-->\n\nBootstrap 5 Pagination\n\n ❮ Previous\n Next ❯",
+                "heading": "Bootstrap 5 Ref"
+            },
+            {
+                "content": "If you have a web site with lots of pages, you may wish to add some sort of pagination to each page.\n\n Previous\n\n 1\n\n 2\n\n 3\n\n Next\n\nTo create a basic pagination, add the .pagination class to an <ul> element. \nThen add the .page-item to each <li> element and a .page-link class to each link \ninside <li>:\n\n Example\n\n <ul class=\"pagination\">\n  <li class=\"page-item\"><a class=\"page-link\" \n href=\"#\">Previous</a></li>\n  <li class=\"page-item\"><a \n class=\"page-link\" href=\"#\">1</a></li>\n  <li class=\"page-item\"><a \n class=\"page-link\" href=\"#\">2</a></li>\n  <li class=\"page-item\"><a \n class=\"page-link\" href=\"#\">3</a></li>\n  <li class=\"page-item\"><a \n class=\"page-link\" href=\"#\">Next</a></li>\n</ul>\n\nTry it Yourself »",
+                "heading": "Basic Pagination"
+            },
+            {
+                "content": "The .active class is used to \"highlight\" the current page:\n\n Previous\n\n 1\n\n 2\n\n 3\n\n Next\n\n Example\n\n <ul class=\"pagination\">\n  <li class=\"page-item\"><a class=\"page-link\" \n href=\"#\">Previous</a></li>\n  <li class=\"page-item\"><a \n class=\"page-link\" href=\"#\">1</a></li>\n  <li class=\"page-item \n active\"><a \n class=\"page-link\" href=\"#\">2</a></li>\n  <li class=\"page-item\"><a \n class=\"page-link\" href=\"#\">3</a></li>\n  <li class=\"page-item\"><a \n class=\"page-link\" href=\"#\">Next</a></li>\n</ul>\n\nTry it Yourself »",
+                "heading": "Active State"
+            },
+            {
+                "content": "The .disabled class is used for un-clickable links:\n\n Previous\n\n 1\n\n 2\n\n 3\n\n Next\n\n Example\n\n <ul class=\"pagination\">\n  <li class=\"page-item \n disabled\"><a class=\"page-link\" href=\"#\">Previous</a></li>\n  <li class=\"page-item\"><a \n class=\"page-link\" href=\"#\">1</a></li>\n  <li class=\"page-item\"><a \n class=\"page-link\" href=\"#\">2</a></li>\n  <li class=\"page-item\"><a \n class=\"page-link\" href=\"#\">3</a></li>\n  <li class=\"page-item\"><a \n class=\"page-link\" href=\"#\">Next</a></li>\n</ul>\n\nTry it Yourself »",
+                "heading": "Disabled State"
+            },
+            {
+                "content": "Pagination blocks can also be sized to a larger or a smaller size:\n\n Previous\n\n 1\n\n 2\n\n 3\n\n Next\n\n Previous\n\n 1\n\n 2\n\n 3\n\n Next\n\nAdd class .pagination-lg for larger blocks or .pagination-sm for smaller blocks:\n\n Example\n\n <ul class=\"pagination \n pagination-lg\">\n  <li class=\"page-item\"><a class=\"page-link\" \n href=\"#\">Previous</a></li>\n  <li class=\"page-item\"><a \n class=\"page-link\" href=\"#\">1</a></li>\n  <li class=\"page-item\"><a \n class=\"page-link\" href=\"#\">2</a></li>\n  <li class=\"page-item\"><a \n class=\"page-link\" href=\"#\">3</a></li>\n  <li class=\"page-item\"><a \n class=\"page-link\" href=\"#\">Next</a></li>\n</ul>\n\n<ul class=\"pagination pagination-sm\">\n  <li class=\"page-item\"><a class=\"page-link\" \n href=\"#\">Previous</a></li>\n  <li class=\"page-item\"><a \n class=\"page-link\" href=\"#\">1</a></li>\n  <li class=\"page-item\"><a \n class=\"page-link\" href=\"#\">2</a></li>\n  <li class=\"page-item\"><a \n class=\"page-link\" href=\"#\">3</a></li>\n  <li class=\"page-item\"><a \n class=\"page-link\" href=\"#\">Next</a></li>\n</ul>\n\nTry it Yourself »",
+                "heading": "Pagination Sizing"
+            },
+            {
+                "content": "Use utility classes to change the alignment of the pagination:\n\n Previous\n\n 1\n\n 2\n\n 3\n\n Next\n\n Previous\n\n 1\n\n 2\n\n 3\n\n Next\n\n Previous\n\n 1\n\n 2\n\n 3\n\n Next\n\n Example\n\n <!-- Default (left-aligned) -->\n<ul class=\"pagination\" style=\"margin:20px \n 0\">\n  <li class=\"page-item\">...</li>\n</ul>\n\n<!-- \n Center-aligned -->\n<ul class=\"pagination justify-content-center\" \n style=\"margin:20px 0\">\n  <li class=\"page-item\">...</li>\n</ul>\n\n<!-- Right-aligned -->\n<ul \n class=\"pagination justify-content-end\" style=\"margin:20px 0\">\n  <li \n class=\"page-item\">...</li>\n</ul>\n\nTry it Yourself »",
+                "heading": "Pagination Alignment"
+            },
+            {
+                "content": "Another form for pagination, is breadcrumbs:\n\n Photos\n\n Summer 2017\n\n Italy\n\n Rome\n\nThe .breadcrumb and .breadcrumb-item \nclasses indicates the current page's location within a \nnavigational hierarchy:\n\n Example\n\n <ul class=\"breadcrumb\">\n  <li class=\"breadcrumb-item\"><a \n href=\"#\">Photos</a></li>\n  <li \n class=\"breadcrumb-item\"><a href=\"#\">Summer 2017</a></li>\n  <li \n class=\"breadcrumb-item\"><a href=\"#\">Italy</a></li>\n  <li class=\"breadcrumb-item \n active\">Rome</li>\n</ul>\n\nTry it Yourself »\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Breadcrumbs"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:05:45Z",
+        "subject": "Bootstrap",
+        "title": "Bootstrap 5 Pagination"
+    },
+    {
+        "url": "https://www.w3schools.com/bootstrap5/bootstrap_list_groups.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "bootstrap_bootstrap_list_groups",
+        "code_examples": [
+            {
+                "code": "<ul class=\"list-group\">\n  <li class=\"list-group-item\">First item</li>\n  <li class=\"list-group-item\">Second item</li>\n  <li class=\"list-group-item\">Third item</li>\n</ul>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_list_group&stacked=h"
+            }
+        ],
+        "category": "HTML & CSS",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "BS5 HOME\nBS5 Get Started\nBS5 Containers\nBS5 Grid Basic\nBS5 Typography\nBS5 Colors\n\nText Colors\nBackground Colors\n\nBS5 Tables\nBS5 Images\nBS5 Jumbotron\nBS5 Alerts\nBS5 Buttons\nBS5 Button Groups\nBS5 Badges\nBS5 Progress Bars\nBS5 Spinners\nBS5 Pagination\nBS5 List Groups\nBS5 Cards\nBS5 Dropdowns\nBS5 Collapse\nBS5 Navs\nBS5 Navbar\nBS5 Carousel\nBS5 Modal\nBS5 Tooltip\nBS5 Popover\nBS5 Toast\nBS5 Scrollspy\nBS5 Offcanvas\nBS5 Utilities\nBS5 Dark Mode\nBS5 Flex",
+                "heading": "Bootstrap 5 Tutorial"
+            },
+            {
+                "content": "BS5 Forms\nBS5 Select Menus\nBS5 Checks and Radios\nBS5 Range\nBS5 Input Groups\nBS5 Floating Labels\nBS5 Form Validation\nBS5 Inputs\nBS5 Input Groups\nBS5 Custom Forms\n-->",
+                "heading": "Bootstrap 5 Forms"
+            },
+            {
+                "content": "BS5 Grid System\nBS5 Stacked/Horizontal\nBS5 Grid XSmall\nBS5 Grid Small\nBS5 Grid Medium\nBS5 Grid Large\nBS5 Grid XLarge\nBS5 Grid XXL\nBS5 Grid Examples",
+                "heading": "Bootstrap 5 Grid"
+            },
+            {
+                "content": "BS5 Certificate",
+                "heading": "Bootstrap 5 Cert"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Editor\nBS5 Exercises\nBS5 Quiz\nBS5 Syllabus\nBS5 Study Plan\nBS5 Interview Prep\n\nBS5 Utilities\nBS5 Flex\nBS5 Icons\nBS5 Media Objects\nBS5 Filters",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Exercises\nBS5 Quiz",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "All Classes\nJS Alert\nJS Button\nJS Carousel\nJS Collapse\nJS Dropdown\nJS Modal\nJS Popover\nJS Scrollspy\nJS Tab\nJS Toasts\nJS Tooltip\n\n-->\n\nny:-->\n\n ny:-->\n\nny:-->\n\nBootstrap 5 List Groups\n\n ❮ Previous\n Next ❯",
+                "heading": "Bootstrap 5 Ref"
+            },
+            {
+                "content": "The most basic list group is an unordered list with list items:\n\n First item\n\n Second item\n\n Third item\n\nTo create a basic list group, use an <ul> element with class .list-group, and\n<li> elements with class .list-group-item:\n\n Example\n\n <ul class=\"list-group\">\n  <li class=\"list-group-item\">First item</li>\n  <li class=\"list-group-item\">Second item</li>\n  <li class=\"list-group-item\">Third item</li>\n</ul>\n\nTry it Yourself »",
+                "heading": "Basic List Groups"
+            },
+            {
+                "content": "Active item\n\n Second item\n\n Third item\n\nUse the .active class to highlight the current item:\n\n Example\n\n <ul class=\"list-group\">\n  <li class=\"list-group-item \n active\">Active item</li>\n  <li class=\"list-group-item\">Second item</li>\n  <li class=\"list-group-item\">Third item</li>\n</ul>\n\nTry it Yourself »",
+                "heading": "Active State"
+            },
+            {
+                "content": "First item\n Second item\n Third item\n\nTo create a list group with linked items, use <div> instead of <ul> \nand <a> instead of <li>.\nOptionally, add the .list-group-item-action class if you want a grey background color on \nhover:\n\n Example\n\n <div class=\"list-group\">\n  <a href=\"#\" \n class=\"list-group-item list-group-item-action\">First item</a>\n  <a \n href=\"#\" class=\"list-group-item list-group-item-action\">Second item</a>\n\n <a href=\"#\" class=\"list-group-item list-group-item-action\">Third item</a>\n\n </div>\n\nTry it Yourself »",
+                "heading": "List Group With Linked Items"
+            },
+            {
+                "content": "The .disabled class adds a lighter text color to the disabled item. And when used on links, it will remove the hover effect:\n\n Disabled item\n Disabled item\n Third item\n\n Example\n\n <div class=\"list-group\">\n  <a href=\"#\" class=\"list-group-item disabled\">Disabled item</a>\n  <a href=\"#\" \n class=\"list-group-item disabled\">Disabled item</a>\n\n <a href=\"#\" class=\"list-group-item\">Third item</a>\n\n </div>\n\nTry it Yourself »",
+                "heading": "Disabled Item"
+            },
+            {
+                "content": "Use the .list-group-flush class to remove some borders and rounded corners:\n\n First item\n\n Second item\n\n Third item\n\n Fourth item\n\n Example\n\n <ul class=\"list-group \n list-group-flush\">\n  <li class=\"list-group-item\">First item</li>\n  <li class=\"list-group-item\">Second item</li>\n  <li class=\"list-group-item\">Third item</li>\n\n <li class=\"list-group-item\">Fourth item</li>\n</ul>\n\nTry it Yourself »",
+                "heading": "Flush / Remove Borders"
+            },
+            {
+                "content": "Use the .list-group-numbered class to create \nlist items with numbers in front of them:\n\n First item\n\n Second item\n\n Third item\n\n Example\n\n <ol class=\"list-group list-group-numbered\">\n  <li \n class=\"list-group-item\">First item</li>\n  <li \n class=\"list-group-item\">Second item</li>\n  <li \n class=\"list-group-item\">Third item</li>\n</ol>\n\nTry it Yourself »",
+                "heading": "Numbered List Groups"
+            },
+            {
+                "content": "If you want the list items to display horizontally instead of vertically (side by side instead of on top of each other), add the .list-group-horizontal class to .list-group:\n\n First item\n\n Second item\n\n Third item\n\n Fourth item\n\n Example\n\n <ul class=\"list-group \n list-group-horizontal\">\n  <li class=\"list-group-item\">First item</li>\n  <li class=\"list-group-item\">Second item</li>\n  <li class=\"list-group-item\">Third item</li>\n\n <li class=\"list-group-item\">Fourth item</li>\n</ul>\n\nTry it Yourself »",
+                "heading": "Horizontal List Groups"
+            },
+            {
+                "content": "Contextual classes can be used to add color to the list items:\n\n Success item\n\n Secondary item\n\n Info item\n\n Warning item\n\n Danger item\n\n Primary item\n\n Dark item\n\n Light item\n\nThe classes for coloring list-items are: \n.list-group-item-success, list-group-item-secondary, list-group-item-info, \nlist-group-item-warning, .list-group-item-danger, .list-group-item-primary, list-group-item-dark and list-group-item-light,:\n\n Example\n\n <ul class=\"list-group\">\n  <li class=\"list-group-item \n list-group-item-success\">Success item</li>\n  <li \n class=\"list-group-item list-group-item-secondary\">Secondary item</li>\n\n <li class=\"list-group-item list-group-item-info\">Info item</li>\n  <li \n class=\"list-group-item list-group-item-warning\">Warning item</li>\n\n <li class=\"list-group-item list-group-item-danger\">Danger item</li>\n\n <li class=\"list-group-item list-group-item-primary\">Primary item</li>\n\n <li class=\"list-group-item list-group-item-dark\">Dark item</li>\n  <li \n class=\"list-group-item list-group-item-light\">Light item</li>\n</ul>\n\nTry it Yourself »",
+                "heading": "Contextual Classes"
+            },
+            {
+                "content": "Action item\n Success item\n Secondary item\n Info item\n Warning item\n Danger item\n Primary item\n Dark item\n Light item\n\n Example\n\n <div class=\"list-group\">\n  <a href=\"#\" class=\"list-group-item \n list-group-item-action\">Action item</a>\n  <a href=\"#\" \n class=\"list-group-item list-group-item-action list-group-item-success\">Success item</a>\n  <a \n href=\"#\" class=\"list-group-item list-group-item-action list-group-item-secondary\">Secondary item</a>\n\n <a href=\"#\" class=\"list-group-item list-group-item-action list-group-item-info\">Info item</a>\n\n <a href=\"#\" class=\"list-group-item list-group-item-action list-group-item-warning\">Warning item</a>\n\n <a href=\"#\" class=\"list-group-item list-group-item-action list-group-item-danger\">Danger item</a>\n\n <a href=\"#\" class=\"list-group-item list-group-item-action list-group-item-primary\">Primary item</a>\n\n <a href=\"#\" class=\"list-group-item list-group-item-action list-group-item-dark\">Dark item</a>\n\n <a href=\"#\" class=\"list-group-item list-group-item-action list-group-item-light\">Light item</a>\n\n </div>\n\nTry it Yourself »",
+                "heading": "Link items with Contextual Classes"
+            },
+            {
+                "content": "Combine .badge classes with utility/helper classes to add badges inside the list group:\n\n Inbox\n 12\n\n Ads\n 50\n\n Junk\n 99\n\n Example\n\n <ul class=\"list-group\">\n  <li class=\"list-group-item d-flex \n justify-content-between align-items-center\">\n    Inbox\n\n <span class=\"badge bg-primary rounded-pill\">12</span>\n  </li>\n\n <li class=\"list-group-item d-flex justify-content-between align-items-center\">\n\n Ads\n    <span class=\"badge bg-primary \n rounded-pill\">50</span>\n  </li>\n  <li class=\"list-group-item \n d-flex justify-content-between align-items-center\">\n    Junk\n\n <span class=\"badge bg-primary rounded-pill\">99</span>\n  </li>\n</ul>\n\nTry it Yourself »\n\nTip: Read more about Bootstrap 5 Utility/Helper classes in our BS5 Utilities Chapter.\n\n-->\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "List Group with Badges"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:05:45Z",
+        "subject": "Bootstrap",
+        "title": "Bootstrap 5 List Groups"
+    },
+    {
+        "url": "https://www.w3schools.com/bootstrap5/bootstrap_cards.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "bootstrap_bootstrap_cards",
+        "code_examples": [
+            {
+                "code": "<div class=\"card\">\n  <div class=\"card-body\">Basic \n card</div>\n</div>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_card&stacked=h"
+            },
+            {
+                "code": "<div class=\"card\">\n  <div class=\"card-header\">Header</div>\n\n <div class=\"card-body\">Content</div> \n  <div \n class=\"card-footer\">Footer</div>\n</div>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_card_header&stacked=h"
+            },
+            {
+                "code": "<div class=\"card\">\n  <div class=\"card-body\">\n\n <h4 class=\"card-title\">Card title</h4>\n    <p \n class=\"card-text\">Some example text. Some example text.</p>\n\n <a href=\"#\" class=\"card-link\">Card link</a>\n    <a href=\"#\" \n class=\"card-link\">Another link</a>\n  </div>\n</div>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_card_title&stacked=h"
+            },
+            {
+                "code": "<div class=\"card\" style=\"width:400px\">\n  <img class=\"card-img-top\" src=\"img_avatar1.png\" \n alt=\"Card image\">\n  <div class=\"card-body\">\n    <h4 \n class=\"card-title\">John Doe</h4>\n    <p \n class=\"card-text\">Some example text.</p>\n    <a href=\"#\" \n class=\"btn btn-primary\">See Profile</a>\n  </div>\n</div>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_card_image&stacked=h"
+            },
+            {
+                "code": "<div class=\"card\" style=\"width:500px\">\n  <img class=\"card-img-top\" src=\"img_avatar1.png\" \n alt=\"Card image\">\n  <div class=\"card-img-overlay\">\n    <h4 \n class=\"card-title\">John Doe</h4>\n    <p \n class=\"card-text\">Some example text.</p>\n    <a href=\"#\" \n class=\"btn btn-primary\">See Profile</a>\n  </div>\n</div>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_card_image_overlay&stacked=h"
+            }
+        ],
+        "category": "HTML & CSS",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "BS5 HOME\nBS5 Get Started\nBS5 Containers\nBS5 Grid Basic\nBS5 Typography\nBS5 Colors\n\nText Colors\nBackground Colors\n\nBS5 Tables\nBS5 Images\nBS5 Jumbotron\nBS5 Alerts\nBS5 Buttons\nBS5 Button Groups\nBS5 Badges\nBS5 Progress Bars\nBS5 Spinners\nBS5 Pagination\nBS5 List Groups\nBS5 Cards\nBS5 Dropdowns\nBS5 Collapse\nBS5 Navs\nBS5 Navbar\nBS5 Carousel\nBS5 Modal\nBS5 Tooltip\nBS5 Popover\nBS5 Toast\nBS5 Scrollspy\nBS5 Offcanvas\nBS5 Utilities\nBS5 Dark Mode\nBS5 Flex",
+                "heading": "Bootstrap 5 Tutorial"
+            },
+            {
+                "content": "BS5 Forms\nBS5 Select Menus\nBS5 Checks and Radios\nBS5 Range\nBS5 Input Groups\nBS5 Floating Labels\nBS5 Form Validation\nBS5 Inputs\nBS5 Input Groups\nBS5 Custom Forms\n-->",
+                "heading": "Bootstrap 5 Forms"
+            },
+            {
+                "content": "BS5 Grid System\nBS5 Stacked/Horizontal\nBS5 Grid XSmall\nBS5 Grid Small\nBS5 Grid Medium\nBS5 Grid Large\nBS5 Grid XLarge\nBS5 Grid XXL\nBS5 Grid Examples",
+                "heading": "Bootstrap 5 Grid"
+            },
+            {
+                "content": "BS5 Certificate",
+                "heading": "Bootstrap 5 Cert"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Editor\nBS5 Exercises\nBS5 Quiz\nBS5 Syllabus\nBS5 Study Plan\nBS5 Interview Prep\n\nBS5 Utilities\nBS5 Flex\nBS5 Icons\nBS5 Media Objects\nBS5 Filters",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Exercises\nBS5 Quiz",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "All Classes\nJS Alert\nJS Button\nJS Carousel\nJS Collapse\nJS Dropdown\nJS Modal\nJS Popover\nJS Scrollspy\nJS Tab\nJS Toasts\nJS Tooltip\n\n-->\n\nny:-->\n\n ny:-->\n\nny:-->\n\nBootstrap 5 Cards\n\n ❮ Previous\n Next ❯",
+                "heading": "Bootstrap 5 Ref"
+            },
+            {
+                "content": "A card in Bootstrap 5 is a bordered box with some padding around its content. It includes options for headers, footers, content, colors, etc.\n\n John Doe\n Some example text some example text. John Doe is an architect and engineer\n\n See Profile",
+                "heading": "Cards"
+            },
+            {
+                "content": "A basic card is created with the .card class, and content inside the \ncard has a .card-body class:\n\nBasic card\n\nExample\n\n <div class=\"card\">\n  <div class=\"card-body\">Basic \n card</div>\n</div>\n\nTry it Yourself »",
+                "heading": "Basic Card"
+            },
+            {
+                "content": "Header\n\n Content\n\n Footer\n\nThe .card-header class adds a heading to the card and the .card-footer class adds a footer to the card:\n\nExample\n\n <div class=\"card\">\n  <div class=\"card-header\">Header</div>\n\n <div class=\"card-body\">Content</div> \n  <div \n class=\"card-footer\">Footer</div>\n</div>\n\nTry it Yourself »",
+                "heading": "Header and Footer"
+            },
+            {
+                "content": "To add a background color to the card, use contextual classes (.bg-primary, \n.bg-success, .bg-info, .bg-warning, .bg-danger, .bg-secondary, .bg-dark and .bg-light.\n\nExample\n\nBasic card\n\nPrimary card\n\nSuccess card\n\nInfo card\n\nWarning card\n\nDanger card\n\nSecondary card\n\nDark card\n\nLight card\n\nTry it Yourself »",
+                "heading": "Contextual Cards"
+            },
+            {
+                "content": "Card title\n Some example text. Some example text.\n\n Card link\n Another link\n\nUse .card-title to add card titles to any \nheading element. \nThe .card-text class is used to remove bottom margins for a <p> element if it is \nthe last child (or the only one) inside .card-body. The .card-link class adds a blue \ncolor to any link, and a hover effect.\n\nExample\n\n <div class=\"card\">\n  <div class=\"card-body\">\n\n <h4 class=\"card-title\">Card title</h4>\n    <p \n class=\"card-text\">Some example text. Some example text.</p>\n\n <a href=\"#\" class=\"card-link\">Card link</a>\n    <a href=\"#\" \n class=\"card-link\">Another link</a>\n  </div>\n</div>\n\nTry it Yourself »",
+                "heading": "Titles, text, and links"
+            },
+            {
+                "content": "John Doe\n Some example text some example text. John Doe is an architect and engineer\n\n See Profile\n\n Jane Doe\n Some example text some example text. Jane Doe is an architect and engineer\n\n See Profile\n\nAdd .card-img-top or .card-img-bottom to an \n<img> to place the image at the top or at the bottom inside the card. Note \nthat we have added the image outside of the .card-body to span the entire width:\n\nExample\n\n <div class=\"card\" style=\"width:400px\">\n  <img class=\"card-img-top\" src=\"img_avatar1.png\" \n alt=\"Card image\">\n  <div class=\"card-body\">\n    <h4 \n class=\"card-title\">John Doe</h4>\n    <p \n class=\"card-text\">Some example text.</p>\n    <a href=\"#\" \n class=\"btn btn-primary\">See Profile</a>\n  </div>\n</div>\n\nTry it Yourself »",
+                "heading": "Card Images"
+            },
+            {
+                "content": "John Doe\n Some example text some example text. Some example text some example text. Some example text some example text. Some example text some example text.\n\n See Profile\n\nTurn an image into a card background and use .card-img-overlay \nto add text on top of the image:\n\nExample\n\n <div class=\"card\" style=\"width:500px\">\n  <img class=\"card-img-top\" src=\"img_avatar1.png\" \n alt=\"Card image\">\n  <div class=\"card-img-overlay\">\n    <h4 \n class=\"card-title\">John Doe</h4>\n    <p \n class=\"card-text\">Some example text.</p>\n    <a href=\"#\" \n class=\"btn btn-primary\">See Profile</a>\n  </div>\n</div>\n\nTry it Yourself »",
+                "heading": "Card Image Overlays"
+            },
+            {
+                "content": "W3.CSS is an excellent alternative to Bootstrap.\n\nW3.CSS is smaller, faster, and easier to use.\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Did You Know?"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:05:46Z",
+        "subject": "Bootstrap",
+        "title": "Bootstrap 5 Cards"
+    },
+    {
+        "url": "https://www.w3schools.com/bootstrap5/bootstrap_dropdowns.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "bootstrap_bootstrap_dropdowns",
+        "code_examples": [
+            {
+                "code": "<div class=\"dropdown\">\n  <button type=\"button\" class=\"btn btn-primary \n dropdown-toggle\" data-bs-toggle=\"dropdown\">\n    Dropdown button\n\n </button>\n  <ul class=\"dropdown-menu\">\n\n <li><a \n class=\"dropdown-item\" href=\"#\">Link 1</a></li>\n\n <li><a \n class=\"dropdown-item\" href=\"#\">Link 2</a></li>\n\n <li><a \n class=\"dropdown-item\" href=\"#\">Link 3</a></li>\n  </ul>\n</div>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_dropdown-menu&stacked=h"
+            },
+            {
+                "code": "<li><hr class=\"dropdown-divider\"></hr></li>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_dropdown-divider&stacked=h"
+            },
+            {
+                "code": "<li><h5 class=\"dropdown-header\">Dropdown header 1</h5></li>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_dropdown-header&stacked=h"
+            },
+            {
+                "code": "<li><a class=\"dropdown-item\" href=\"#\">Normal</a></li>\n<li><a \n class=\"dropdown-item active\" href=\"#\">Active</a></li>\n<li><a \n class=\"dropdown-item disabled\" href=\"#\">Disabled</a></li>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_dropdown-active&stacked=h"
+            },
+            {
+                "code": "<div class=\"dropdown dropend\">",
+                "language": "bootstrap",
+                "heading": "Dropright",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_dropdown-right&stacked=h"
+            },
+            {
+                "code": "<div class=\"dropdown dropstart\">",
+                "language": "bootstrap",
+                "heading": "Dropleft",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_dropdown-left&stacked=h"
+            },
+            {
+                "code": "<div class=\"dropdown-menu dropdown-menu-end\">",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_dropdown-menu-right&stacked=h"
+            },
+            {
+                "code": "<div class=\"dropup\">",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_dropdown-menu-dropup&stacked=h"
+            },
+            {
+                "code": "<ul class=\"dropdown-menu\">\n  <li><a class=\"dropdown-item\" \n href=\"#\">Link 1</a></li>\n  <li><a class=\"dropdown-item\" href=\"#\">Link \n 2</a></li>\n  <li><a class=\"dropdown-item\" href=\"#\">Link 3</a></li>\n\n <li><a class=\"dropdown-item-text\" href=\"#\">Text Link</a></li>\n\n <li><span class=\"dropdown-item-text\">Just Text</span></li>\n</ul>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_dropdown-text&stacked=h"
+            },
+            {
+                "code": "<div class=\"btn-group\">\n  <button type=\"button\" class=\"btn \n btn-primary\">Apple</button>\n  <button type=\"button\" class=\"btn \n btn-primary\">Samsung</button>\n  <div class=\"btn-group\">\n\n <button type=\"button\" class=\"btn btn-primary dropdown-toggle\" \n data-bs-toggle=\"dropdown\">Sony</button>\n    <ul \n class=\"dropdown-menu\">\n      <li><a \n class=\"dropdown-item\" href=\"#\">Tablet</a></li>\n\n <li><a class=\"dropdown-item\" href=\"#\">Smartphone</a></li>\n\n </ul>\n  </div>\n</div>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_button_group_dropdown&stacked=h"
+            },
+            {
+                "code": "<div class=\"btn-group\">\n  <button type=\"button\" class=\"btn btn-primary\">Primary</button>\n\n <button type=\"button\" class=\"btn btn-primary dropdown-toggle \n dropdown-toggle-split\" \n data-toggle=\"dropdown\">\n\n </button>\n  <div class=\"dropdown-menu\">\n    <a \n class=\"dropdown-item\" href=\"#\">Link 1</a>\n    <a \n class=\"dropdown-item\" href=\"#\">Link 2</a>\n  </div>\n</div>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_dropdown-split&stacked=h"
+            },
+            {
+                "code": "<div class=\"btn-group-vertical\">\n  <button type=\"button\" class=\"btn \n btn-primary\">Apple</button>\n  <button type=\"button\" class=\"btn \n btn-primary\">Samsung</button>\n  <div class=\"btn-group\">\n\n <button type=\"button\" class=\"btn btn-primary dropdown-toggle\" \n data-bs-toggle=\"dropdown\">Sony</button>\n    <ul \n class=\"dropdown-menu\">\n      <li><a \n class=\"dropdown-item\" href=\"#\">Tablet</a></li>\n\n <li><a class=\"dropdown-item\" href=\"#\">Smartphone</a></li>\n\n </ul>\n  </div>\n</div>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_button_group_v_dropdown&stacked=h"
+            }
+        ],
+        "category": "HTML & CSS",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "BS5 HOME\nBS5 Get Started\nBS5 Containers\nBS5 Grid Basic\nBS5 Typography\nBS5 Colors\n\nText Colors\nBackground Colors\n\nBS5 Tables\nBS5 Images\nBS5 Jumbotron\nBS5 Alerts\nBS5 Buttons\nBS5 Button Groups\nBS5 Badges\nBS5 Progress Bars\nBS5 Spinners\nBS5 Pagination\nBS5 List Groups\nBS5 Cards\nBS5 Dropdowns\nBS5 Collapse\nBS5 Navs\nBS5 Navbar\nBS5 Carousel\nBS5 Modal\nBS5 Tooltip\nBS5 Popover\nBS5 Toast\nBS5 Scrollspy\nBS5 Offcanvas\nBS5 Utilities\nBS5 Dark Mode\nBS5 Flex",
+                "heading": "Bootstrap 5 Tutorial"
+            },
+            {
+                "content": "BS5 Forms\nBS5 Select Menus\nBS5 Checks and Radios\nBS5 Range\nBS5 Input Groups\nBS5 Floating Labels\nBS5 Form Validation\nBS5 Inputs\nBS5 Input Groups\nBS5 Custom Forms\n-->",
+                "heading": "Bootstrap 5 Forms"
+            },
+            {
+                "content": "BS5 Grid System\nBS5 Stacked/Horizontal\nBS5 Grid XSmall\nBS5 Grid Small\nBS5 Grid Medium\nBS5 Grid Large\nBS5 Grid XLarge\nBS5 Grid XXL\nBS5 Grid Examples",
+                "heading": "Bootstrap 5 Grid"
+            },
+            {
+                "content": "BS5 Certificate",
+                "heading": "Bootstrap 5 Cert"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Editor\nBS5 Exercises\nBS5 Quiz\nBS5 Syllabus\nBS5 Study Plan\nBS5 Interview Prep\n\nBS5 Utilities\nBS5 Flex\nBS5 Icons\nBS5 Media Objects\nBS5 Filters",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Exercises\nBS5 Quiz",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "All Classes\nJS Alert\nJS Button\nJS Carousel\nJS Collapse\nJS Dropdown\nJS Modal\nJS Popover\nJS Scrollspy\nJS Tab\nJS Toasts\nJS Tooltip\n\n-->\n\nny:-->\n\n ny:-->\n\nny:-->\n\nBootstrap 5 Dropdowns\n\n ❮ Previous\n Next ❯",
+                "heading": "Bootstrap 5 Ref"
+            },
+            {
+                "content": "A dropdown menu is a toggleable menu that allows the user to choose one value \nfrom a predefined list:\n\n Dropdown button\n\n Link 1\n\n Link 2\n\n Link 3\n\n Example\n\n <div class=\"dropdown\">\n  <button type=\"button\" class=\"btn btn-primary \n dropdown-toggle\" data-bs-toggle=\"dropdown\">\n    Dropdown button\n\n </button>\n  <ul class=\"dropdown-menu\">\n\n <li><a \n class=\"dropdown-item\" href=\"#\">Link 1</a></li>\n\n <li><a \n class=\"dropdown-item\" href=\"#\">Link 2</a></li>\n\n <li><a \n class=\"dropdown-item\" href=\"#\">Link 3</a></li>\n  </ul>\n</div>\n\nTry it Yourself »\n\nExample Explained\nThe .dropdown class indicates a dropdown menu.\n\nTo open the dropdown menu, use a button or a link with a class of .dropdown-toggle and \nthe \ndata-bs-toggle=\"dropdown\" attribute.\n\nAdd the .dropdown-menu class to a container \nelement, like <div> \nor <ul>, to actually build the dropdown menu. Then add the \n.dropdown-item class to each element (links or \nbuttons) inside the dropdown menu.",
+                "heading": "Basic Dropdown"
+            },
+            {
+                "content": "Dropdown button\n\n Link 1\n Link 2\n Link 3\n\n Another link\n\nThe .dropdown-divider class is used to separate links inside the dropdown menu with a thin horizontal border:\n\nExample\n\n <li><hr class=\"dropdown-divider\"></hr></li>\n\nTry it Yourself »",
+                "heading": "Dropdown Divider"
+            },
+            {
+                "content": "Dropdown button\n\n Dropdown header 1\n Link 1\n Link 2\n Link 3\n Dropdown header 2\n Another link\n\nThe .dropdown-header class is used to add headers inside the dropdown menu:\n\n Example\n\n <li><h5 class=\"dropdown-header\">Dropdown header 1</h5></li>\n\nTry it Yourself »",
+                "heading": "Dropdown Header"
+            },
+            {
+                "content": "Dropdown button\n\n Normal\n Active\n Disabled\n\nHighlight a specific dropdown item with the .active class (adds a blue background color).\n\nTo disable an item in the dropdown menu, use the .disabled class (gets a light-grey text color and a \"no-parking-sign\" icon on hover):\n\nExample\n\n <li><a class=\"dropdown-item\" href=\"#\">Normal</a></li>\n<li><a \n class=\"dropdown-item active\" href=\"#\">Active</a></li>\n<li><a \n class=\"dropdown-item disabled\" href=\"#\">Disabled</a></li>\n\nTry it Yourself »",
+                "heading": "Disable and Active items"
+            },
+            {
+                "content": "Dropend\n\n Link 1\n Link 2\n Link 3\n\n Dropstart\n\n Link 1\n Link 2\n Link 3\n\nYou can also create a \"dropend\" or \"dropstart\" menu, by adding the \n.dropend or .dropstart class to the dropdown element. Note that the caret/arrow is added automatically:\n\n Dropright\n\n <div class=\"dropdown dropend\">\n\nTry it Yourself »\n\n Dropleft\n\n <div class=\"dropdown dropstart\">\n\nTry it Yourself »",
+                "heading": "Dropdown Position"
+            },
+            {
+                "content": "Wide dropdown button to demonstrate this example\n\n Link 1\n Link 2\n Link 3\n\nTo right-align the dropdown menu, add the .dropdown-menu-end class to the element \nwith .dropdown-menu:\n\n Example\n\n <div class=\"dropdown-menu dropdown-menu-end\">\n\nTry it Yourself »",
+                "heading": "Dropdown Menu Right"
+            },
+            {
+                "content": "Dropdown button\n\n Link 1\n Link 2\n Link 3\n\nIf you want the dropdown menu to expand upwards instead of downwards, change \nthe <div> element with class=\"dropdown\" to \"dropup\":\n\n Example\n\n <div class=\"dropup\">\n\nTry it Yourself »",
+                "heading": "Dropup"
+            },
+            {
+                "content": "Dropdown button\n\n Link 1\n Link 2\n Text Link\n Just Text\n\nThe .dropdown-item-text class is used to add plain text to \na dropdown item, or used on links for default link styling.\n\n Example\n\n <ul class=\"dropdown-menu\">\n  <li><a class=\"dropdown-item\" \n href=\"#\">Link 1</a></li>\n  <li><a class=\"dropdown-item\" href=\"#\">Link \n 2</a></li>\n  <li><a class=\"dropdown-item\" href=\"#\">Link 3</a></li>\n\n <li><a class=\"dropdown-item-text\" href=\"#\">Text Link</a></li>\n\n <li><span class=\"dropdown-item-text\">Just Text</span></li>\n</ul>\n\nTry it Yourself »",
+                "heading": "Dropdown Text"
+            },
+            {
+                "content": "Apple\n Samsung\n\n Sony\n\n Tablet\n Smartphone\n\n Example\n\n <div class=\"btn-group\">\n  <button type=\"button\" class=\"btn \n btn-primary\">Apple</button>\n  <button type=\"button\" class=\"btn \n btn-primary\">Samsung</button>\n  <div class=\"btn-group\">\n\n <button type=\"button\" class=\"btn btn-primary dropdown-toggle\" \n data-bs-toggle=\"dropdown\">Sony</button>\n    <ul \n class=\"dropdown-menu\">\n      <li><a \n class=\"dropdown-item\" href=\"#\">Tablet</a></li>\n\n <li><a class=\"dropdown-item\" href=\"#\">Smartphone</a></li>\n\n </ul>\n  </div>\n</div>\n\nTry it Yourself »\n\n<!--",
+                "heading": "Grouped Buttons with a Dropdown"
+            },
+            {
+                "content": "Primary\n\n Link 1\n Link 2\n\n Secondary\n\n Link 1\n Link 2\n\n Success\n\n Link 1\n Link 2\n\n Info\n\n Link 1\n Link 2\n\n Warning\n\n Link 1\n Link 2\n\n Danger\n\n Link 1\n Link 2\n\n Example\n\n <div class=\"btn-group\">\n  <button type=\"button\" class=\"btn btn-primary\">Primary</button>\n\n <button type=\"button\" class=\"btn btn-primary dropdown-toggle \n dropdown-toggle-split\" \n data-toggle=\"dropdown\">\n\n </button>\n  <div class=\"dropdown-menu\">\n    <a \n class=\"dropdown-item\" href=\"#\">Link 1</a>\n    <a \n class=\"dropdown-item\" href=\"#\">Link 2</a>\n  </div>\n</div>\n\nTry it Yourself »\n\n-->",
+                "heading": "Split Button Dropdowns"
+            },
+            {
+                "content": "Apple\n Samsung\n\n Sony\n\n Tablet\n Smartphone\n\n Example\n\n <div class=\"btn-group-vertical\">\n  <button type=\"button\" class=\"btn \n btn-primary\">Apple</button>\n  <button type=\"button\" class=\"btn \n btn-primary\">Samsung</button>\n  <div class=\"btn-group\">\n\n <button type=\"button\" class=\"btn btn-primary dropdown-toggle\" \n data-bs-toggle=\"dropdown\">Sony</button>\n    <ul \n class=\"dropdown-menu\">\n      <li><a \n class=\"dropdown-item\" href=\"#\">Tablet</a></li>\n\n <li><a class=\"dropdown-item\" href=\"#\">Smartphone</a></li>\n\n </ul>\n  </div>\n</div>\n\nTry it Yourself »\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Vertical Button Group w/ Dropdown"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:05:46Z",
+        "subject": "Bootstrap",
+        "title": "Bootstrap 5 Dropdowns"
+    },
+    {
+        "url": "https://www.w3schools.com/bootstrap5/bootstrap_collapse.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "bootstrap_bootstrap_collapse",
+        "code_examples": [
+            {
+                "code": "<button data-bs-toggle=\"collapse\" data-bs-target=\"#demo\">Collapsible</button>\n\n<div id=\"demo\" class=\"collapse\">\nLorem ipsum dolor text....\n</div>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_collapsible&stacked=h"
+            },
+            {
+                "code": "<div id=\"accordion\">\n\n  <div class=\"card\">\n    <div \n class=\"card-header\">\n      <a class=\"btn\" \n data-bs-toggle=\"collapse\" href=\"#collapseOne\">\n        Collapsible \n Group Item #1\n      </a>\n\n </div>\n    <div id=\"collapseOne\" class=\"collapse show\" \n data-bs-parent=\"#accordion\">\n\n <div class=\"card-body\">\n        Lorem \n ipsum..\n      </div>\n    </div>\n\n </div>\n\n  <div class=\"card\">\n    <div \n class=\"card-header\">\n      <a class=\"collapsed \n btn\" \n data-bs-toggle=\"collapse\" href=\"#collapseTwo\">\n        Collapsible \n Group Item #2\n      </a>\n\n </div>\n    <div id=\"collapseTwo\" class=\"collapse\" \n data-bs-parent=\"#accordion\">\n\n <div class=\"card-body\">\n        Lorem \n ipsum..\n      </div>\n    </div>\n\n </div>\n\n  <div class=\"card\">\n    <div \n class=\"card-header\">\n      <a class=\"collapsed \n btn\" \n data-bs-toggle=\"collapse\" href=\"#collapseThree\">\n        Collapsible \n Group Item #3\n      </a>\n\n </div>\n    <div id=\"collapseThree\" class=\"collapse\" \n data-bs-parent=\"#accordion\">\n\n <div class=\"card-body\">\n        Lorem \n ipsum..\n      </div>\n    </div>\n\n </div>\n\n</div>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_collapsible_accordion&stacked=h"
+            }
+        ],
+        "category": "HTML & CSS",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "BS5 HOME\nBS5 Get Started\nBS5 Containers\nBS5 Grid Basic\nBS5 Typography\nBS5 Colors\n\nText Colors\nBackground Colors\n\nBS5 Tables\nBS5 Images\nBS5 Jumbotron\nBS5 Alerts\nBS5 Buttons\nBS5 Button Groups\nBS5 Badges\nBS5 Progress Bars\nBS5 Spinners\nBS5 Pagination\nBS5 List Groups\nBS5 Cards\nBS5 Dropdowns\nBS5 Collapse\nBS5 Navs\nBS5 Navbar\nBS5 Carousel\nBS5 Modal\nBS5 Tooltip\nBS5 Popover\nBS5 Toast\nBS5 Scrollspy\nBS5 Offcanvas\nBS5 Utilities\nBS5 Dark Mode\nBS5 Flex",
+                "heading": "Bootstrap 5 Tutorial"
+            },
+            {
+                "content": "BS5 Forms\nBS5 Select Menus\nBS5 Checks and Radios\nBS5 Range\nBS5 Input Groups\nBS5 Floating Labels\nBS5 Form Validation\nBS5 Inputs\nBS5 Input Groups\nBS5 Custom Forms\n-->",
+                "heading": "Bootstrap 5 Forms"
+            },
+            {
+                "content": "BS5 Grid System\nBS5 Stacked/Horizontal\nBS5 Grid XSmall\nBS5 Grid Small\nBS5 Grid Medium\nBS5 Grid Large\nBS5 Grid XLarge\nBS5 Grid XXL\nBS5 Grid Examples",
+                "heading": "Bootstrap 5 Grid"
+            },
+            {
+                "content": "BS5 Certificate",
+                "heading": "Bootstrap 5 Cert"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Editor\nBS5 Exercises\nBS5 Quiz\nBS5 Syllabus\nBS5 Study Plan\nBS5 Interview Prep\n\nBS5 Utilities\nBS5 Flex\nBS5 Icons\nBS5 Media Objects\nBS5 Filters",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Exercises\nBS5 Quiz",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "All Classes\nJS Alert\nJS Button\nJS Carousel\nJS Collapse\nJS Dropdown\nJS Modal\nJS Popover\nJS Scrollspy\nJS Tab\nJS Toasts\nJS Tooltip\n\n-->\n\nny:-->\n\n ny:-->\n\nny:-->\n\nBootstrap 5 Collapse\n\n ❮ Previous\n Next ❯",
+                "heading": "Bootstrap 5 Ref"
+            },
+            {
+                "content": "Collapsibles are useful when you want to hide and show large amount of content:\n\n Click Me\n\n Lorem ipsum dolor sit amet, consectetur adipisicing elit,\n sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\n quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n\n Example\n\n <button data-bs-toggle=\"collapse\" data-bs-target=\"#demo\">Collapsible</button>\n\n<div id=\"demo\" class=\"collapse\">\nLorem ipsum dolor text....\n</div>\n\nTry it Yourself »\n\nExample Explained\nThe .collapse class indicates a collapsible element (a <div> in our example); \nthis is the content that will be shown or hidden with a click of a button.\n\nTo control (show/hide) the collapsible content, add the data-bs-toggle=\"collapse\" attribute to an <a> or a <button> element. \nThen add the data-bs-target=\"#id\" attribute to \nconnect the button with the collapsible content (<div id=\"demo\">).\n\nNote: For <a> \nelements, you can use the href attribute instead of the data-bs-target \nattribute:\n\n Example\n\n <a href=\"#demo\" data-bs-toggle=\"collapse\">Collapsible</a>\n\n<div id=\"demo\" class=\"collapse\">\nLorem ipsum dolor text....\n</div>\n\nTry it Yourself »\n\nBy default, the collapsible content is hidden. However, you can add the .show class to show the content by default:\n\n Example\n\n <div id=\"demo\" class=\"collapse show\">\nLorem ipsum dolor text....\n</div>\n\nTry it Yourself »",
+                "heading": "Basic Collapsible"
+            },
+            {
+                "content": "Collapsible Group Item #1\n\n Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n\n Collapsible Group Item #2\n\n Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n\n Collapsible Group Item #3\n\n Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n\nThe following example shows a simple accordion by extending the card component.\n\nNote: Use the data-bs-parent attribute to make \nsure that all collapsible elements under the specified parent will be closed when one of the collapsible item is shown.\n\n Example\n\n <div id=\"accordion\">\n\n  <div class=\"card\">\n    <div \n class=\"card-header\">\n      <a class=\"btn\" \n data-bs-toggle=\"collapse\" href=\"#collapseOne\">\n        Collapsible \n Group Item #1\n      </a>\n\n </div>\n    <div id=\"collapseOne\" class=\"collapse show\" \n data-bs-parent=\"#accordion\">\n\n <div class=\"card-body\">\n        Lorem \n ipsum..\n      </div>\n    </div>\n\n </div>\n\n  <div class=\"card\">\n    <div \n class=\"card-header\">\n      <a class=\"collapsed \n btn\" \n data-bs-toggle=\"collapse\" href=\"#collapseTwo\">\n        Collapsible \n Group Item #2\n      </a>\n\n </div>\n    <div id=\"collapseTwo\" class=\"collapse\" \n data-bs-parent=\"#accordion\">\n\n <div class=\"card-body\">\n        Lorem \n ipsum..\n      </div>\n    </div>\n\n </div>\n\n  <div class=\"card\">\n    <div \n class=\"card-header\">\n      <a class=\"collapsed \n btn\" \n data-bs-toggle=\"collapse\" href=\"#collapseThree\">\n        Collapsible \n Group Item #3\n      </a>\n\n </div>\n    <div id=\"collapseThree\" class=\"collapse\" \n data-bs-parent=\"#accordion\">\n\n <div class=\"card-body\">\n        Lorem \n ipsum..\n      </div>\n    </div>\n\n </div>\n\n</div>\n\nTry it Yourself »\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Accordion"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:05:47Z",
+        "subject": "Bootstrap",
+        "title": "Bootstrap 5 Collapse"
+    },
+    {
+        "url": "https://www.w3schools.com/bootstrap5/bootstrap_navs.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "bootstrap_bootstrap_navs",
+        "code_examples": [
+            {
+                "code": "<ul class=\"nav\">\n  <li class=\"nav-item\">\n\n <a class=\"nav-link\" href=\"#\">Link</a>\n  </li>\n  <li class=\"nav-item\">\n\n <a class=\"nav-link\" href=\"#\">Link</a>\n  </li>\n  <li class=\"nav-item\">\n\n <a class=\"nav-link\" href=\"#\">Link</a>\n  </li>\n  <li class=\"nav-item\">\n\n <a class=\"nav-link disabled\" href=\"#\">Disabled</a>\n  </li>\n</ul>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_nav&stacked=h"
+            },
+            {
+                "code": "<!-- Nav tabs -->\n<ul class=\"nav nav-tabs\">\n  <li class=\"nav-item\">\n\n <a class=\"nav-link active\" data-bs-toggle=\"tab\" href=\"#home\">Home</a>\n\n </li>\n  <li class=\"nav-item\">\n    <a class=\"nav-link\" \n data-bs-toggle=\"tab\" href=\"#menu1\">Menu 1</a>\n  </li>\n  <li \n class=\"nav-item\">\n    <a class=\"nav-link\" data-bs-toggle=\"tab\" \n href=\"#menu2\">Menu 2</a>\n  </li>\n</ul>\n\n <!-- Tab panes -->\n<div class=\"tab-content\">\n  <div \n class=\"tab-pane container active\" id=\"home\">...</div>\n  <div class=\"tab-pane \n container fade\" \n id=\"menu1\">...</div>\n  <div class=\"tab-pane \n container fade\" id=\"menu2\">...</div>\n\n </div>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_nav_tabs_toggleable&stacked=h"
+            },
+            {
+                "code": "<!-- Nav pills -->\n<ul class=\"nav nav-pills\">\n  <li class=\"nav-item\">\n\n <a class=\"nav-link active\" data-bs-toggle=\"pill\" href=\"#home\">Home</a>\n\n </li>\n  <li class=\"nav-item\">\n    <a class=\"nav-link\" \n data-bs-toggle=\"pill\" href=\"#menu1\">Menu 1</a>\n  </li>\n  <li \n class=\"nav-item\">\n    <a class=\"nav-link\" data-bs-toggle=\"pill\" href=\"#menu2\">Menu 2</a>\n  </li>\n</ul>\n\n <!-- Tab panes -->\n<div class=\"tab-content\">\n  <div \n class=\"tab-pane container active\" id=\"home\">...</div>\n  <div class=\"tab-pane \n container fade\" \n id=\"menu1\">...</div>\n  <div class=\"tab-pane \n container fade\" id=\"menu2\">...</div>\n\n </div>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_nav_pills_toggleable&stacked=h"
+            }
+        ],
+        "category": "HTML & CSS",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "BS5 HOME\nBS5 Get Started\nBS5 Containers\nBS5 Grid Basic\nBS5 Typography\nBS5 Colors\n\nText Colors\nBackground Colors\n\nBS5 Tables\nBS5 Images\nBS5 Jumbotron\nBS5 Alerts\nBS5 Buttons\nBS5 Button Groups\nBS5 Badges\nBS5 Progress Bars\nBS5 Spinners\nBS5 Pagination\nBS5 List Groups\nBS5 Cards\nBS5 Dropdowns\nBS5 Collapse\nBS5 Navs\nBS5 Navbar\nBS5 Carousel\nBS5 Modal\nBS5 Tooltip\nBS5 Popover\nBS5 Toast\nBS5 Scrollspy\nBS5 Offcanvas\nBS5 Utilities\nBS5 Dark Mode\nBS5 Flex",
+                "heading": "Bootstrap 5 Tutorial"
+            },
+            {
+                "content": "BS5 Forms\nBS5 Select Menus\nBS5 Checks and Radios\nBS5 Range\nBS5 Input Groups\nBS5 Floating Labels\nBS5 Form Validation\nBS5 Inputs\nBS5 Input Groups\nBS5 Custom Forms\n-->",
+                "heading": "Bootstrap 5 Forms"
+            },
+            {
+                "content": "BS5 Grid System\nBS5 Stacked/Horizontal\nBS5 Grid XSmall\nBS5 Grid Small\nBS5 Grid Medium\nBS5 Grid Large\nBS5 Grid XLarge\nBS5 Grid XXL\nBS5 Grid Examples",
+                "heading": "Bootstrap 5 Grid"
+            },
+            {
+                "content": "BS5 Certificate",
+                "heading": "Bootstrap 5 Cert"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Editor\nBS5 Exercises\nBS5 Quiz\nBS5 Syllabus\nBS5 Study Plan\nBS5 Interview Prep\n\nBS5 Utilities\nBS5 Flex\nBS5 Icons\nBS5 Media Objects\nBS5 Filters",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Exercises\nBS5 Quiz",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "All Classes\nJS Alert\nJS Button\nJS Carousel\nJS Collapse\nJS Dropdown\nJS Modal\nJS Popover\nJS Scrollspy\nJS Tab\nJS Toasts\nJS Tooltip\n\n-->\n\nny:-->\n\n ny:-->\n\nny:-->\n\nBootstrap 5 Navs\n\n ❮ Previous\n Next ❯",
+                "heading": "Bootstrap 5 Ref"
+            },
+            {
+                "content": "Link\n Link\n Link\n Disabled\n\nIf you want to create a simple horizontal menu, add the \n.nav class to a <ul> element, followed by .nav-item\nfor each <li> and add the .nav-link class to \ntheir links:\n\nExample\n\n <ul class=\"nav\">\n  <li class=\"nav-item\">\n\n <a class=\"nav-link\" href=\"#\">Link</a>\n  </li>\n  <li class=\"nav-item\">\n\n <a class=\"nav-link\" href=\"#\">Link</a>\n  </li>\n  <li class=\"nav-item\">\n\n <a class=\"nav-link\" href=\"#\">Link</a>\n  </li>\n  <li class=\"nav-item\">\n\n <a class=\"nav-link disabled\" href=\"#\">Disabled</a>\n  </li>\n</ul>\n\nTry it Yourself »",
+                "heading": "Nav Menus"
+            },
+            {
+                "content": "Link\n Link\n Link\n Disabled\n\n Link\n Link\n Link\n Disabled\n\nAdd the .justify-content-center class to center the nav, and the .justify-content-end class to right-align the nav.\n\nExample\n\n <!-- Centered nav -->\n<ul class=\"nav justify-content-center\">\n\n<!-- Right-aligned nav -->\n<ul class=\"nav justify-content-end\">\n\nTry it Yourself »",
+                "heading": "Aligned Nav"
+            },
+            {
+                "content": "Link\n Link\n Link\n Disabled\n\nAdd the .flex-column class to create a vertical nav:\n\nExample\n\n <ul class=\"nav \n flex-column\">\n\nTry it Yourself »",
+                "heading": "Vertical Nav"
+            },
+            {
+                "content": "Active\n Link\n Link\n Disabled\n\nTurn the nav menu into navigation tabs with the .nav-tabs class. Add the .active class to the active/current link. If you want the tabs to be togglable, see the last example on this page.\n\nExample\n\n <ul class=\"nav nav-tabs\">\n  <li class=\"nav-item\">\n\n <a class=\"nav-link active\" href=\"#\">Active</a>\n  </li>\n  <li \n class=\"nav-item\">\n    <a class=\"nav-link\" href=\"#\">Link</a>\n\n </li>\n  <li class=\"nav-item\">\n    <a class=\"nav-link\" \n href=\"#\">Link</a>\n  </li>\n  <li class=\"nav-item\">\n\n <a class=\"nav-link disabled\" href=\"#\">Disabled</a>\n  </li>\n</ul>\n\nTry it Yourself »",
+                "heading": "Tabs"
+            },
+            {
+                "content": "Active\n Link\n Link\n Disabled\n\nTurn the nav menu into navigation pills with the .nav-pills class. If you want the pills to be togglable, see the last example on this page.\n\nExample\n\n <ul class=\"nav nav-pills\">\n  <li class=\"nav-item\">\n\n <a class=\"nav-link active\" href=\"#\">Active</a>\n  </li>\n  <li \n class=\"nav-item\">\n    <a class=\"nav-link\" href=\"#\">Link</a>\n\n </li>\n  <li class=\"nav-item\">\n    <a class=\"nav-link\" \n href=\"#\">Link</a>\n  </li>\n  <li class=\"nav-item\">\n\n <a class=\"nav-link disabled\" href=\"#\">Disabled</a>\n  </li>\n</ul>\n\nTry it Yourself »",
+                "heading": "Pills"
+            },
+            {
+                "content": "Justify the tabs/pills with the .nav-justified class (equal width):\n\n Active\n\n Link\n\n Link\n\n Disabled\n\n Active\n\n Link\n\n Link\n\n Disabled\n\nExample\n\n <ul class=\"nav nav-pills \n nav-justified\">..</ul>\n<ul class=\"nav nav-tabs nav-justified\">..</ul>\n\nTry it Yourself »",
+                "heading": "Justified Tabs/pills"
+            },
+            {
+                "content": "Active\n\nDropdown\n\nLink 1\nLink 2\nLink 3\n\nLink\n\nDisabled\n\nExample\n\n <ul class=\"nav nav-pills\">\n  <li class=\"nav-item\">\n\n <a class=\"nav-link active\" href=\"#\">Active</a>\n  </li>\n  <li \n class=\"nav-item dropdown\">\n    <a class=\"nav-link \n dropdown-toggle\" data-bs-toggle=\"dropdown\" href=\"#\">Dropdown</a>\n\n <ul class=\"dropdown-menu\">\n      <li><a \n class=\"dropdown-item\" href=\"#\">Link 1</a></li>\n\n <li><a class=\"dropdown-item\" href=\"#\">Link 2</a></li>\n\n <li><a class=\"dropdown-item\" href=\"#\">Link 3</a></li>\n\n </ul>\n  </li>\n  <li class=\"nav-item\">\n    <a \n class=\"nav-link\" href=\"#\">Link</a>\n  </li>\n  <li \n class=\"nav-item\">\n    <a class=\"nav-link disabled\" \n href=\"#\">Disabled</a>\n  </li>\n</ul>\n\nTry it Yourself »",
+                "heading": "Pills with Dropdown"
+            },
+            {
+                "content": "Active\n\nDropdown\n\nLink 1\nLink 2\nLink 3\n\nLink\n\nDisabled\n\nExample\n\n <ul class=\"nav nav-tabs\">\n  <li class=\"nav-item\">\n\n <a class=\"nav-link active\" href=\"#\">Active</a>\n  </li>\n  <li \n class=\"nav-item dropdown\">\n    <a class=\"nav-link \n dropdown-toggle\" data-bs-toggle=\"dropdown\" href=\"#\">Dropdown</a>\n\n <ul class=\"dropdown-menu\">\n      <li><a \n class=\"dropdown-item\" href=\"#\">Link 1</a></li>\n\n <li><a class=\"dropdown-item\" href=\"#\">Link 2</a></li>\n\n <li><a class=\"dropdown-item\" href=\"#\">Link 3</a></li>\n\n </ul>\n  </li>\n  <li class=\"nav-item\">\n    <a \n class=\"nav-link\" href=\"#\">Link</a>\n  </li>\n  <li \n class=\"nav-item\">\n    <a class=\"nav-link disabled\" \n href=\"#\">Disabled</a>\n  </li>\n</ul>\n\nTry it Yourself »",
+                "heading": "Tabs with Dropdown"
+            },
+            {
+                "content": "Home\n\n Menu 1\n\n Menu 2\n\n HOME\n Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\n\n Menu 1\n Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n\n Menu 2\n Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.\n\n To make the tabs toggleable, add the data-toggle=\"tab\" attribute to each link. \nThen add a .tab-pane class with a unique ID for every tab and wrap them inside a \n<div> element with class .tab-content.\n\nIf you want the tabs to fade in and out when clicking on them, add the \n.fade class to .tab-pane:\n\n Example\n\n <!-- Nav tabs -->\n<ul class=\"nav nav-tabs\">\n  <li class=\"nav-item\">\n\n <a class=\"nav-link active\" data-bs-toggle=\"tab\" href=\"#home\">Home</a>\n\n </li>\n  <li class=\"nav-item\">\n    <a class=\"nav-link\" \n data-bs-toggle=\"tab\" href=\"#menu1\">Menu 1</a>\n  </li>\n  <li \n class=\"nav-item\">\n    <a class=\"nav-link\" data-bs-toggle=\"tab\" \n href=\"#menu2\">Menu 2</a>\n  </li>\n</ul>\n\n <!-- Tab panes -->\n<div class=\"tab-content\">\n  <div \n class=\"tab-pane container active\" id=\"home\">...</div>\n  <div class=\"tab-pane \n container fade\" \n id=\"menu1\">...</div>\n  <div class=\"tab-pane \n container fade\" id=\"menu2\">...</div>\n\n </div>\n\nTry it Yourself »",
+                "heading": "Toggleable / Dynamic Tabs"
+            },
+            {
+                "content": "Home\n\n Menu 1\n\n Menu 2\n\n HOME\n Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\n\n Menu 1\n Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n\n Menu 2\n Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.\n\nThe same code applies to pills; only change the data-toggle \nattribute to data-toggle=\"pill\":\n\n Example\n\n <!-- Nav pills -->\n<ul class=\"nav nav-pills\">\n  <li class=\"nav-item\">\n\n <a class=\"nav-link active\" data-bs-toggle=\"pill\" href=\"#home\">Home</a>\n\n </li>\n  <li class=\"nav-item\">\n    <a class=\"nav-link\" \n data-bs-toggle=\"pill\" href=\"#menu1\">Menu 1</a>\n  </li>\n  <li \n class=\"nav-item\">\n    <a class=\"nav-link\" data-bs-toggle=\"pill\" href=\"#menu2\">Menu 2</a>\n  </li>\n</ul>\n\n <!-- Tab panes -->\n<div class=\"tab-content\">\n  <div \n class=\"tab-pane container active\" id=\"home\">...</div>\n  <div class=\"tab-pane \n container fade\" \n id=\"menu1\">...</div>\n  <div class=\"tab-pane \n container fade\" id=\"menu2\">...</div>\n\n </div>\n\nTry it Yourself »\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Toggleable / Dynamic Pills"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:05:47Z",
+        "subject": "Bootstrap",
+        "title": "Bootstrap 5 Navs"
+    },
+    {
+        "url": "https://www.w3schools.com/bootstrap5/bootstrap_navbar.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "bootstrap_bootstrap_navbar",
+        "code_examples": [
+            {
+                "code": "<!-- A grey horizontal navbar that becomes \n vertical on small screens -->\n<nav class=\"navbar navbar-expand-sm \n bg-light\">\n\n  <div class=\"container-fluid\">\n    <!-- Links -->\n    <ul class=\"navbar-nav\">\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" href=\"#\">Link \n 1</a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" href=\"#\">Link \n 2</a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" href=\"#\">Link \n 3</a>\n      </li>\n    </ul>\n\n </div>\n\n</nav>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_navbar&stacked=h"
+            },
+            {
+                "code": "<nav class=\"navbar navbar-expand-sm bg-dark navbar-dark\">\n  <div \n class=\"container-fluid\">\n    <a class=\"navbar-brand\" \n href=\"#\">Logo</a>\n    <button class=\"navbar-toggler\" \n type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#collapsibleNavbar\">\n\n <span class=\"navbar-toggler-icon\"></span>\n    </button>\n\n <div class=\"collapse navbar-collapse\" id=\"collapsibleNavbar\">\n\n <ul class=\"navbar-nav\">\n        <li \n class=\"nav-item\">\n          <a \n class=\"nav-link\" href=\"#\">Link</a>\n\n </li>\n        <li class=\"nav-item\">\n\n <a class=\"nav-link\" href=\"#\">Link</a>\n\n </li>\n        <li class=\"nav-item\">\n\n <a class=\"nav-link\" href=\"#\">Link</a>\n\n </li> \n      </ul>\n    </div>\n\n </div>\n</nav>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_navbar_collapse"
+            },
+            {
+                "code": "<li class=\"nav-item dropdown\">\n  <a class=\"nav-link dropdown-toggle\" \n href=\"#\" role=\"button\" data-bs-toggle=\"dropdown\">Dropdown</a>\n  <ul \n class=\"dropdown-menu\">\n    <li><a class=\"dropdown-item\" \n href=\"#\">Link</a></li>\n    <li><a class=\"dropdown-item\" \n href=\"#\">Another link</a></li>\n    <li><a \n class=\"dropdown-item\" href=\"#\">A third link</a></li>\n  </ul>\n</li>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_navbar_dropdown&stacked=h"
+            },
+            {
+                "code": "<nav class=\"navbar navbar-expand-sm navbar-dark bg-dark\">\n  <div \n class=\"container-fluid\">\n    <a class=\"navbar-brand\" \n href=\"javascript:void(0)\">Logo</a>\n    <button \n class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" \n data-bs-target=\"#mynavbar\">\n      <span \n class=\"navbar-toggler-icon\"></span>\n    </button>\n\n <div class=\"collapse navbar-collapse\" id=\"mynavbar\">\n\n <ul class=\"navbar-nav me-auto\">\n\n <li class=\"nav-item\">\n\n <a class=\"nav-link\" href=\"javascript:void(0)\">Link</a>\n\n </li>\n        <li class=\"nav-item\">\n\n <a class=\"nav-link\" href=\"javascript:void(0)\">Link</a>\n\n </li>\n        <li class=\"nav-item\">\n\n <a class=\"nav-link\" href=\"javascript:void(0)\">Link</a>\n\n </li>\n      </ul>\n\n <form class=\"d-flex\">\n        <input \n class=\"form-control me-2\" type=\"text\" placeholder=\"Search\">\n\n <button class=\"btn btn-primary\" type=\"button\">Search</button>\n\n </form>\n    </div>\n  </div>\n</nav>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_navbar_form&stacked=h"
+            }
+        ],
+        "category": "HTML & CSS",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "BS5 HOME\nBS5 Get Started\nBS5 Containers\nBS5 Grid Basic\nBS5 Typography\nBS5 Colors\n\nText Colors\nBackground Colors\n\nBS5 Tables\nBS5 Images\nBS5 Jumbotron\nBS5 Alerts\nBS5 Buttons\nBS5 Button Groups\nBS5 Badges\nBS5 Progress Bars\nBS5 Spinners\nBS5 Pagination\nBS5 List Groups\nBS5 Cards\nBS5 Dropdowns\nBS5 Collapse\nBS5 Navs\nBS5 Navbar\nBS5 Carousel\nBS5 Modal\nBS5 Tooltip\nBS5 Popover\nBS5 Toast\nBS5 Scrollspy\nBS5 Offcanvas\nBS5 Utilities\nBS5 Dark Mode\nBS5 Flex",
+                "heading": "Bootstrap 5 Tutorial"
+            },
+            {
+                "content": "BS5 Forms\nBS5 Select Menus\nBS5 Checks and Radios\nBS5 Range\nBS5 Input Groups\nBS5 Floating Labels\nBS5 Form Validation\nBS5 Inputs\nBS5 Input Groups\nBS5 Custom Forms\n-->",
+                "heading": "Bootstrap 5 Forms"
+            },
+            {
+                "content": "BS5 Grid System\nBS5 Stacked/Horizontal\nBS5 Grid XSmall\nBS5 Grid Small\nBS5 Grid Medium\nBS5 Grid Large\nBS5 Grid XLarge\nBS5 Grid XXL\nBS5 Grid Examples",
+                "heading": "Bootstrap 5 Grid"
+            },
+            {
+                "content": "BS5 Certificate",
+                "heading": "Bootstrap 5 Cert"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Editor\nBS5 Exercises\nBS5 Quiz\nBS5 Syllabus\nBS5 Study Plan\nBS5 Interview Prep\n\nBS5 Utilities\nBS5 Flex\nBS5 Icons\nBS5 Media Objects\nBS5 Filters",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Exercises\nBS5 Quiz",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "All Classes\nJS Alert\nJS Button\nJS Carousel\nJS Collapse\nJS Dropdown\nJS Modal\nJS Popover\nJS Scrollspy\nJS Tab\nJS Toasts\nJS Tooltip\n\n-->\n\nny:-->\n\n ny:-->\n\nny:-->\n\nBootstrap 5 Navbars\n\n ❮ Previous\n Next ❯",
+                "heading": "Bootstrap 5 Ref"
+            },
+            {
+                "content": "A navigation bar is a navigation header that is placed at the top of the \npage:\n\n Logo\n\n Link\n\n Link\n\n Link\n\n Search",
+                "heading": "Navigation Bars"
+            },
+            {
+                "content": "With Bootstrap, a navigation bar can extend or collapse, depending on the \nscreen size.\n\nA standard navigation bar is created with the .navbar \nclass, followed by a responsive collapsing class: .navbar-expand-xxl|xl|lg|md|sm \n(stacks the navbar vertically on xxlarge, extra large, large, medium or small screens). \n\nTo add links inside the navbar, use either an <ul> element \n(or a <div>) with class=\"navbar-nav\". \nThen add <li> elements with a .nav-item class\nfollowed by an <a> element with a .nav-link class:\n\n Link 1\n\n Link 2\n\n Link 3\n\nExample\n\n <!-- A grey horizontal navbar that becomes \n vertical on small screens -->\n<nav class=\"navbar navbar-expand-sm \n bg-light\">\n\n  <div class=\"container-fluid\">\n    <!-- Links -->\n    <ul class=\"navbar-nav\">\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" href=\"#\">Link \n 1</a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" href=\"#\">Link \n 2</a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" href=\"#\">Link \n 3</a>\n      </li>\n    </ul>\n\n </div>\n\n</nav>\n\nTry it Yourself »",
+                "heading": "Basic Navbar"
+            },
+            {
+                "content": "Remove the .navbar-expand-* class to create a navigation bar \nthat will always be vertical:\n\n Link 1\n\n Link 2\n\n Link 3\n\nExample\n\n <!-- A grey \n vertical navbar -->\n<nav class=\"navbar \n bg-light\">\n  ...\n</nav>\n\nTry it Yourself »",
+                "heading": "Vertical Navbar"
+            },
+            {
+                "content": "Add the .justify-content-center class to \ncenter the navigation bar:\n\n Link 1\n\n Link 2\n\n Link 3\n\nExample\n\n <nav class=\"navbar navbar-expand-sm \n bg-light justify-content-center\">\n  ...\n</nav>\n\nTry it Yourself »",
+                "heading": "Centered Navbar"
+            },
+            {
+                "content": "Active\n\n Link\n\n Link\n\n Disabled\n\n Active\n\n Link\n\n Link\n\n Disabled\n\n Active\n\n Link\n\n Link\n\n Disabled\n\nUse any of the .bg-color classes to change the background color of the navbar (.bg-primary, \n.bg-success, .bg-info, .bg-warning, .bg-danger, .bg-secondary, .bg-dark and .bg-light)\n\nTip: Add a white text color to all links in the navbar with the .navbar-dark class, or use the .navbar-light class to add a \nblack text color.\n\nExample\n\n <!-- Grey with black text -->\n<nav class=\"navbar navbar-expand-sm bg-light navbar-light\">\n\n <div class=\"container-fluid\">\n    <ul class=\"navbar-nav\">\n\n <li class=\"nav-item\">\n        <a class=\"nav-link \n active\" \n href=\"#\">Active</a>\n      </li>\n     <li \n class=\"nav-item\">\n        <a class=\"nav-link\" href=\"#\">Link</a>\n\n </li>\n      <li class=\"nav-item\">\n\n <a class=\"nav-link\" href=\"#\">Link</a>\n      </li>\n\n <li class=\"nav-item\">\n        <a class=\"nav-link \n disabled\" href=\"#\">Disabled</a>\n      </li>\n    </ul>\n\n </div>\n\n </nav>\n\n<!-- Black background with white text -->\n<nav class=\"navbar navbar-expand-sm bg-dark navbar-dark\">...</nav>\n\n<!-- Blue \n background with white text -->\n<nav class=\"navbar navbar-expand-sm \n bg-primary navbar-dark\">...</nav>\n\nTry it Yourself »\n\nActive/disabled state: Add the .active class to an \n<a> element to highlight the current link, or the .disabled class to indicate that the link is un-clickable.",
+                "heading": "Colored Navbar"
+            },
+            {
+                "content": "The .navbar-brand class is used to highlight the brand/logo/project name of your page:\n\n Logo\n\nExample\n\n <nav class=\"navbar navbar-expand-sm bg-dark navbar-dark\">\n  <div \n class=\"container-fluid\">\n    <a class=\"navbar-brand\" \n href=\"#\">Logo</a>\n  </div>\n</nav>\n\nTry it Yourself »\n\nWhen using the .navbar-brand class with images, Bootstrap \n5 will automatically style the image to fit the navbar vertically.\n\nExample\n\n <nav class=\"navbar navbar-expand-sm bg-dark navbar-dark\">\n  <div \n class=\"container-fluid\">\n    <a class=\"navbar-brand\" \n href=\"#\">\n      <img src=\"logo.png\" \n alt=\"Avatar Logo\" style=\"width:40px;\" class=\"rounded-pill\">  \n    </a>\n  </div>\n</nav>\n\nTry it Yourself »",
+                "heading": "Brand / Logo"
+            },
+            {
+                "content": "Navbar text\n\nUse the .navbar-text class to vertical align any elements inside the navbar that are not links (ensures proper padding \nand text color).\n\nExample\n\n <nav class=\"navbar navbar-expand-sm bg-dark navbar-dark\">\n  <div \n class=\"container-fluid\">\n    <span \n class=\"navbar-text\">Navbar text</span>\n  </div>\n</nav>\n\nTry it Yourself »\n\n Logo\n\n Link\n\n Link\n\n Link\n\nVery often, especially on small screens, you want to hide the navigation \nlinks and replace them with a button that should reveal them when clicked on.\n\nTo create a collapsible navigation bar, use a button with class=\"navbar-toggler\", \ndata-bs-toggle=\"collapse\" and data-bs-target=\"#thetarget\". Then wrap the \nnavbar content (links, etc) inside a <div> element with class=\"collapse navbar-collapse\", \nfollowed by an id that matches the data-bs-target of the button: \"thetarget\".\n\nExample\n\n <nav class=\"navbar navbar-expand-sm bg-dark navbar-dark\">\n  <div \n class=\"container-fluid\">\n    <a class=\"navbar-brand\" \n href=\"#\">Logo</a>\n    <button class=\"navbar-toggler\" \n type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#collapsibleNavbar\">\n\n <span class=\"navbar-toggler-icon\"></span>\n    </button>\n\n <div class=\"collapse navbar-collapse\" id=\"collapsibleNavbar\">\n\n <ul class=\"navbar-nav\">\n        <li \n class=\"nav-item\">\n          <a \n class=\"nav-link\" href=\"#\">Link</a>\n\n </li>\n        <li class=\"nav-item\">\n\n <a class=\"nav-link\" href=\"#\">Link</a>\n\n </li>\n        <li class=\"nav-item\">\n\n <a class=\"nav-link\" href=\"#\">Link</a>\n\n </li> \n      </ul>\n    </div>\n\n </div>\n</nav>\n\nTry it Yourself »\n\nTip: You can also remove the .navbar-expand-md class to ALWAYS hide navbar links and display the toggler button.",
+                "heading": "Navbar Text"
+            },
+            {
+                "content": "Logo\n\n Link\n\n Link\n\n Link\n\n Dropdown\n\n Link\n\n Another link\n\n A third link\n\nNavbars can also hold dropdown menus:\n\nExample\n\n <li class=\"nav-item dropdown\">\n  <a class=\"nav-link dropdown-toggle\" \n href=\"#\" role=\"button\" data-bs-toggle=\"dropdown\">Dropdown</a>\n  <ul \n class=\"dropdown-menu\">\n    <li><a class=\"dropdown-item\" \n href=\"#\">Link</a></li>\n    <li><a class=\"dropdown-item\" \n href=\"#\">Another link</a></li>\n    <li><a \n class=\"dropdown-item\" href=\"#\">A third link</a></li>\n  </ul>\n</li>\n\nTry it Yourself »",
+                "heading": "Navbar With Dropdown"
+            },
+            {
+                "content": "Logo\n\n Link\n\n Link\n\n Link\n\n Search\n\nYou can also include forms inside the navigation bar:\n\nExample\n\n <nav class=\"navbar navbar-expand-sm navbar-dark bg-dark\">\n  <div \n class=\"container-fluid\">\n    <a class=\"navbar-brand\" \n href=\"javascript:void(0)\">Logo</a>\n    <button \n class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" \n data-bs-target=\"#mynavbar\">\n      <span \n class=\"navbar-toggler-icon\"></span>\n    </button>\n\n <div class=\"collapse navbar-collapse\" id=\"mynavbar\">\n\n <ul class=\"navbar-nav me-auto\">\n\n <li class=\"nav-item\">\n\n <a class=\"nav-link\" href=\"javascript:void(0)\">Link</a>\n\n </li>\n        <li class=\"nav-item\">\n\n <a class=\"nav-link\" href=\"javascript:void(0)\">Link</a>\n\n </li>\n        <li class=\"nav-item\">\n\n <a class=\"nav-link\" href=\"javascript:void(0)\">Link</a>\n\n </li>\n      </ul>\n\n <form class=\"d-flex\">\n        <input \n class=\"form-control me-2\" type=\"text\" placeholder=\"Search\">\n\n <button class=\"btn btn-primary\" type=\"button\">Search</button>\n\n </form>\n    </div>\n  </div>\n</nav>\n\nTry it Yourself »",
+                "heading": "Navbar Forms and Buttons"
+            },
+            {
+                "content": "The navigation bar can also be fixed at the top or at the bottom of the page.\n\nA fixed navigation bar stays visible in a fixed position (top or bottom) \nindependent of the page scroll.\n\nThe .fixed-top class makes the navigation bar fixed at \nthe top:\n\nExample\n\n <nav class=\"navbar navbar-expand-sm bg-dark navbar-dark fixed-top\">\n\n ...\n</nav>\n\nTry it Yourself »\n\nUse the .fixed-bottom class to make the navbar stay at \nthe bottom of the page:\n\nExample\n\n <nav class=\"navbar navbar-expand-sm bg-dark navbar-dark fixed-bottom\">\n\n ...\n</nav>\n\nTry it Yourself »\n\nUse the .sticky-top class to make the navbar fixed/stay at \nthe top of the page when you scroll past it. Note:\nThis class does not work in IE11 and earlier (will treat it as position:relative).\n\nExample\n\n <nav class=\"navbar navbar-expand-sm bg-dark navbar-dark sticky-top\">\n\n ...\n</nav>\n\nTry it Yourself »\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Fixed Navigation Bar"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:05:47Z",
+        "subject": "Bootstrap",
+        "title": "Bootstrap 5 Navbars"
+    },
+    {
+        "url": "https://www.w3schools.com/bootstrap5/bootstrap_carousel.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "bootstrap_bootstrap_carousel",
+        "code_examples": [
+            {
+                "code": "<!-- Carousel -->\n<div id=\"demo\" class=\"carousel slide\" \n data-bs-ride=\"carousel\">\n\n  <!-- Indicators/dots -->\n  <div \n class=\"carousel-indicators\">\n    <button type=\"button\" \n data-bs-target=\"#demo\" data-bs-slide-to=\"0\" class=\"active\"></button>\n\n <button type=\"button\" data-bs-target=\"#demo\" data-bs-slide-to=\"1\"></button>\n\n <button type=\"button\" data-bs-target=\"#demo\" data-bs-slide-to=\"2\"></button>\n\n </div>\n\n  <!-- The slideshow/carousel -->\n  <div \n class=\"carousel-inner\">\n    <div class=\"carousel-item \n active\">\n      <img src=\"la.jpg\" alt=\"Los Angeles\" \n class=\"d-block w-100\">\n    </div>\n    <div \n class=\"carousel-item\">\n      <img \n src=\"chicago.jpg\" alt=\"Chicago\" class=\"d-block w-100\">\n\n </div>\n    <div class=\"carousel-item\">\n\n <img src=\"ny.jpg\" alt=\"New York\" class=\"d-block w-100\">\n\n </div>\n  </div>\n\n  <!-- Left and right controls/icons -->\n\n <button class=\"carousel-control-prev\" type=\"button\" data-bs-target=\"#demo\" \n data-bs-slide=\"prev\">\n    <span \n class=\"carousel-control-prev-icon\"></span>\n  </button>\n\n <button class=\"carousel-control-next\" type=\"button\" data-bs-target=\"#demo\" \n data-bs-slide=\"next\">\n    <span \n class=\"carousel-control-next-icon\"></span>\n  </button>\n</div>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_carousel"
+            },
+            {
+                "code": "<div class=\"carousel-item\">\n  <img src=\"la.jpg\" alt=\"Los Angeles\">\n\n <div class=\"carousel-caption\">\n    <h3>Los \n Angeles</h3>\n\n <p>We had such a great time in LA!</p>\n  </div>\n</div>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_carousel2"
+            }
+        ],
+        "category": "HTML & CSS",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "BS5 HOME\nBS5 Get Started\nBS5 Containers\nBS5 Grid Basic\nBS5 Typography\nBS5 Colors\n\nText Colors\nBackground Colors\n\nBS5 Tables\nBS5 Images\nBS5 Jumbotron\nBS5 Alerts\nBS5 Buttons\nBS5 Button Groups\nBS5 Badges\nBS5 Progress Bars\nBS5 Spinners\nBS5 Pagination\nBS5 List Groups\nBS5 Cards\nBS5 Dropdowns\nBS5 Collapse\nBS5 Navs\nBS5 Navbar\nBS5 Carousel\nBS5 Modal\nBS5 Tooltip\nBS5 Popover\nBS5 Toast\nBS5 Scrollspy\nBS5 Offcanvas\nBS5 Utilities\nBS5 Dark Mode\nBS5 Flex",
+                "heading": "Bootstrap 5 Tutorial"
+            },
+            {
+                "content": "BS5 Forms\nBS5 Select Menus\nBS5 Checks and Radios\nBS5 Range\nBS5 Input Groups\nBS5 Floating Labels\nBS5 Form Validation\nBS5 Inputs\nBS5 Input Groups\nBS5 Custom Forms\n-->",
+                "heading": "Bootstrap 5 Forms"
+            },
+            {
+                "content": "BS5 Grid System\nBS5 Stacked/Horizontal\nBS5 Grid XSmall\nBS5 Grid Small\nBS5 Grid Medium\nBS5 Grid Large\nBS5 Grid XLarge\nBS5 Grid XXL\nBS5 Grid Examples",
+                "heading": "Bootstrap 5 Grid"
+            },
+            {
+                "content": "BS5 Certificate",
+                "heading": "Bootstrap 5 Cert"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Editor\nBS5 Exercises\nBS5 Quiz\nBS5 Syllabus\nBS5 Study Plan\nBS5 Interview Prep\n\nBS5 Utilities\nBS5 Flex\nBS5 Icons\nBS5 Media Objects\nBS5 Filters",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Exercises\nBS5 Quiz",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "All Classes\nJS Alert\nJS Button\nJS Carousel\nJS Collapse\nJS Dropdown\nJS Modal\nJS Popover\nJS Scrollspy\nJS Tab\nJS Toasts\nJS Tooltip\n\n-->\n\nny:-->\n\n ny:-->\n\nny:-->\n\nBootstrap 5 Carousel\n\n ❮ Previous\n Next ❯",
+                "heading": "Bootstrap 5 Ref"
+            },
+            {
+                "content": "The Carousel is a slideshow for cycling through elements:",
+                "heading": "Carousel / Slideshow"
+            },
+            {
+                "content": "The following example shows how to create a basic carousel with indicators and controls:\n\n Example\n\n <!-- Carousel -->\n<div id=\"demo\" class=\"carousel slide\" \n data-bs-ride=\"carousel\">\n\n  <!-- Indicators/dots -->\n  <div \n class=\"carousel-indicators\">\n    <button type=\"button\" \n data-bs-target=\"#demo\" data-bs-slide-to=\"0\" class=\"active\"></button>\n\n <button type=\"button\" data-bs-target=\"#demo\" data-bs-slide-to=\"1\"></button>\n\n <button type=\"button\" data-bs-target=\"#demo\" data-bs-slide-to=\"2\"></button>\n\n </div>\n\n  <!-- The slideshow/carousel -->\n  <div \n class=\"carousel-inner\">\n    <div class=\"carousel-item \n active\">\n      <img src=\"la.jpg\" alt=\"Los Angeles\" \n class=\"d-block w-100\">\n    </div>\n    <div \n class=\"carousel-item\">\n      <img \n src=\"chicago.jpg\" alt=\"Chicago\" class=\"d-block w-100\">\n\n </div>\n    <div class=\"carousel-item\">\n\n <img src=\"ny.jpg\" alt=\"New York\" class=\"d-block w-100\">\n\n </div>\n  </div>\n\n  <!-- Left and right controls/icons -->\n\n <button class=\"carousel-control-prev\" type=\"button\" data-bs-target=\"#demo\" \n data-bs-slide=\"prev\">\n    <span \n class=\"carousel-control-prev-icon\"></span>\n  </button>\n\n <button class=\"carousel-control-next\" type=\"button\" data-bs-target=\"#demo\" \n data-bs-slide=\"next\">\n    <span \n class=\"carousel-control-next-icon\"></span>\n  </button>\n</div>\n\nTry it Yourself »\n\nExample explained\nA description of what each class from the example above do:\n\n Class\n Description\n\n .carousel\n Creates a carousel\n\n .carousel-indicators\n Adds indicators for the carousel. These are the little dots at the bottom of each slide (which indicates how many slides there are in the carousel, and which slide the user are currently viewing)\n\n .carousel-inner\n Adds slides to the carousel\n\n .carousel-item\n Specifies the content of each slide\n\n .carousel-control-prev\n Adds a left (previous) button to the carousel, which allows the user to go back between the slides\n\n .carousel-control-next\n Adds a right (next) button to the carousel, which allows the user to go forward between the slides\n\n .carousel-control-prev-icon\n Used together with .carousel-control-prev to create a \"previous\" button\n\n .carousel-control-next-icon\n Used together with .carousel-control-next to create a \"next\" button\n\n .slide\n Adds a CSS transition and animation effect when sliding from one item to the next. Remove this class if you do not want this effect",
+                "heading": "How To Create a Carousel"
+            },
+            {
+                "content": "Los Angeles\n We had such a great time in LA!\n\n Chicago\n Thank you, Chicago!\n\n New York\n We love the Big Apple!\n\nAdd elements inside <div class=\"carousel-caption\"> within each <div \nclass=\"carousel-item\"> to create a caption for each slide:\n\n Example\n\n <div class=\"carousel-item\">\n  <img src=\"la.jpg\" alt=\"Los Angeles\">\n\n <div class=\"carousel-caption\">\n    <h3>Los \n Angeles</h3>\n\n <p>We had such a great time in LA!</p>\n  </div>\n</div>\n\nTry it Yourself »\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Add Captions to Slides"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:05:47Z",
+        "subject": "Bootstrap",
+        "title": "Bootstrap 5 Carousel"
+    },
+    {
+        "url": "https://www.w3schools.com/bootstrap5/bootstrap_modal.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "bootstrap_bootstrap_modal",
+        "code_examples": [
+            {
+                "code": "<!-- Button to Open the Modal -->\n<button type=\"button\" class=\"btn btn-primary\" \n data-bs-toggle=\"modal\" data-bs-target=\"#myModal\">\n  Open modal\n</button>\n\n<!-- The Modal -->\n<div class=\"modal\" id=\"myModal\">\n  <div class=\"modal-dialog\">\n\n <div class=\"modal-content\">\n\n      <!-- Modal \n Header -->\n      <div class=\"modal-header\">\n\n <h4 class=\"modal-title\">Modal Heading</h4>\n\n <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"modal\"></button>\n\n </div>\n\n      <!-- Modal body -->\n\n <div class=\"modal-body\">\n        Modal \n body..\n      </div>\n\n <!-- Modal footer -->\n      <div \n class=\"modal-footer\">\n        <button \n type=\"button\" class=\"btn btn-danger\" data-bs-dismiss=\"modal\">Close</button>\n\n </div>\n\n    </div>\n  </div>\n</div>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_modal&stacked=h"
+            }
+        ],
+        "category": "HTML & CSS",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "BS5 HOME\nBS5 Get Started\nBS5 Containers\nBS5 Grid Basic\nBS5 Typography\nBS5 Colors\n\nText Colors\nBackground Colors\n\nBS5 Tables\nBS5 Images\nBS5 Jumbotron\nBS5 Alerts\nBS5 Buttons\nBS5 Button Groups\nBS5 Badges\nBS5 Progress Bars\nBS5 Spinners\nBS5 Pagination\nBS5 List Groups\nBS5 Cards\nBS5 Dropdowns\nBS5 Collapse\nBS5 Navs\nBS5 Navbar\nBS5 Carousel\nBS5 Modal\nBS5 Tooltip\nBS5 Popover\nBS5 Toast\nBS5 Scrollspy\nBS5 Offcanvas\nBS5 Utilities\nBS5 Dark Mode\nBS5 Flex",
+                "heading": "Bootstrap 5 Tutorial"
+            },
+            {
+                "content": "BS5 Forms\nBS5 Select Menus\nBS5 Checks and Radios\nBS5 Range\nBS5 Input Groups\nBS5 Floating Labels\nBS5 Form Validation\nBS5 Inputs\nBS5 Input Groups\nBS5 Custom Forms\n-->",
+                "heading": "Bootstrap 5 Forms"
+            },
+            {
+                "content": "BS5 Grid System\nBS5 Stacked/Horizontal\nBS5 Grid XSmall\nBS5 Grid Small\nBS5 Grid Medium\nBS5 Grid Large\nBS5 Grid XLarge\nBS5 Grid XXL\nBS5 Grid Examples",
+                "heading": "Bootstrap 5 Grid"
+            },
+            {
+                "content": "BS5 Certificate",
+                "heading": "Bootstrap 5 Cert"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Editor\nBS5 Exercises\nBS5 Quiz\nBS5 Syllabus\nBS5 Study Plan\nBS5 Interview Prep\n\nBS5 Utilities\nBS5 Flex\nBS5 Icons\nBS5 Media Objects\nBS5 Filters",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Exercises\nBS5 Quiz",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "All Classes\nJS Alert\nJS Button\nJS Carousel\nJS Collapse\nJS Dropdown\nJS Modal\nJS Popover\nJS Scrollspy\nJS Tab\nJS Toasts\nJS Tooltip\n\n-->\n\nny:-->\n\n ny:-->\n\nny:-->\n\nBootstrap 5 Modal\n\n ❮ Previous\n Next ❯",
+                "heading": "Bootstrap 5 Ref"
+            },
+            {
+                "content": "The Modal component is a dialog box/popup window that is displayed on top of the current \npage:\n\n Open modal\n\n Modal Heading\n\n Modal body..\n\n Close",
+                "heading": "Modals"
+            },
+            {
+                "content": "The following example shows how to create a basic modal:\n\n Example\n\n <!-- Button to Open the Modal -->\n<button type=\"button\" class=\"btn btn-primary\" \n data-bs-toggle=\"modal\" data-bs-target=\"#myModal\">\n  Open modal\n</button>\n\n<!-- The Modal -->\n<div class=\"modal\" id=\"myModal\">\n  <div class=\"modal-dialog\">\n\n <div class=\"modal-content\">\n\n      <!-- Modal \n Header -->\n      <div class=\"modal-header\">\n\n <h4 class=\"modal-title\">Modal Heading</h4>\n\n <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"modal\"></button>\n\n </div>\n\n      <!-- Modal body -->\n\n <div class=\"modal-body\">\n        Modal \n body..\n      </div>\n\n <!-- Modal footer -->\n      <div \n class=\"modal-footer\">\n        <button \n type=\"button\" class=\"btn btn-danger\" data-bs-dismiss=\"modal\">Close</button>\n\n </div>\n\n    </div>\n  </div>\n</div>\n\nTry it Yourself »",
+                "heading": "How To Create a Modal"
+            },
+            {
+                "content": "Use the .fade class to add a fading effect when opening and closing the modal:\n\n Example\n\n <!-- Fading modal -->\n<div class=\"modal fade\"></div>\n\n<!-- \n Modal without animation -->\n<div class=\"modal\"></div>\n\nTry it Yourself »",
+                "heading": "Add animation"
+            },
+            {
+                "content": "Change the size of the modal by adding the .modal-sm \nclass for \nsmall modals (max-width 300px), .modal-lg class for large modals  \n(max-width 800px), or .modal-xl for extra large modals  \n(max-width 1140px). Default is 500px max-width.\n\nAdd the size class to the <div> element with class .modal-dialog:\n\nSmall Modal\n\n <div class=\"modal-dialog modal-sm\">\n\nTry it Yourself »\n\nLarge Modal\n\n <div class=\"modal-dialog modal-lg\">\n\nTry it Yourself »\n\nExtra Large Modal\n\n <div class=\"modal-dialog modal-xl\">\n\nTry it Yourself »\n\n By default, modals are \"medium\" in size (500px \n max-width).",
+                "heading": "Modal Size"
+            },
+            {
+                "content": "If you want the modal to span the whole width and height of the page, use the \n.modal-fullscreen class:\n\nExample\n\n <div class=\"modal-dialog modal-fullscreen\">\n\nTry it Yourself »",
+                "heading": "Fullscreen Modals"
+            },
+            {
+                "content": "You can also control when the modal should be in fullscreen, with the .modal-fullscreen-*-* classes:\n\n Class\n Description\n Example\n\n .modal-fullscreen-sm-down\n Fullscreen below 576px\n Try it\n\n .modal-fullscreen-md-down\n Fullscreen below 768px\n Try it\n\n .modal-fullscreen-lg-down\n Fullscreen below 992px\n Try it\n\n .modal-fullscreen-xl-down\n Fullscreen below 1200px\n Try it\n\n .modal-fullscreen-xxl-down\n Fullscreen below 1400px\n Try it",
+                "heading": "Responsive Fullscreen Modals"
+            },
+            {
+                "content": "Center the modal vertically and horizontally within the page, with the .modal-dialog-centered \nclass:\n\nExample\n\n <div class=\"modal-dialog modal-dialog-centered\">\n\nTry it Yourself »",
+                "heading": "Centered Modal"
+            },
+            {
+                "content": "When you have a lot of content inside the modal, a scrollbar is added to the page. See the examples below to understand it:\n\nExample\n\n <div class=\"modal-dialog\">\n\nTry it Yourself »\n\nHowever, it is possible to only scroll inside the modal, instead of the page itself, by adding .modal-dialog-scrollable to .modal-dialog:\n\nExample\n\n <div class=\"modal-dialog modal-dialog-scrollable\">\n\nTry it Yourself »\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Scrolling Modal"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:05:47Z",
+        "subject": "Bootstrap",
+        "title": "Bootstrap 5 Modal"
+    },
+    {
+        "url": "https://www.w3schools.com/bootstrap5/bootstrap_tooltip.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "bootstrap_bootstrap_tooltip",
+        "code_examples": [
+            {
+                "code": "<button type=\"button\" class=\"btn btn-primary\" data-bs-toggle=\"tooltip\" \n title=\"Hooray!\">Hover over me!</button>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<script>\nvar tooltipTriggerList = \n [].slice.call(document.querySelectorAll('[data-bs-toggle=\"tooltip\"]'))\nvar \n tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {\n\n return new bootstrap.Tooltip(tooltipTriggerEl)\n})\n</script>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_tooltip&stacked=h"
+            }
+        ],
+        "category": "HTML & CSS",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "BS5 HOME\nBS5 Get Started\nBS5 Containers\nBS5 Grid Basic\nBS5 Typography\nBS5 Colors\n\nText Colors\nBackground Colors\n\nBS5 Tables\nBS5 Images\nBS5 Jumbotron\nBS5 Alerts\nBS5 Buttons\nBS5 Button Groups\nBS5 Badges\nBS5 Progress Bars\nBS5 Spinners\nBS5 Pagination\nBS5 List Groups\nBS5 Cards\nBS5 Dropdowns\nBS5 Collapse\nBS5 Navs\nBS5 Navbar\nBS5 Carousel\nBS5 Modal\nBS5 Tooltip\nBS5 Popover\nBS5 Toast\nBS5 Scrollspy\nBS5 Offcanvas\nBS5 Utilities\nBS5 Dark Mode\nBS5 Flex",
+                "heading": "Bootstrap 5 Tutorial"
+            },
+            {
+                "content": "BS5 Forms\nBS5 Select Menus\nBS5 Checks and Radios\nBS5 Range\nBS5 Input Groups\nBS5 Floating Labels\nBS5 Form Validation\nBS5 Inputs\nBS5 Input Groups\nBS5 Custom Forms\n-->",
+                "heading": "Bootstrap 5 Forms"
+            },
+            {
+                "content": "BS5 Grid System\nBS5 Stacked/Horizontal\nBS5 Grid XSmall\nBS5 Grid Small\nBS5 Grid Medium\nBS5 Grid Large\nBS5 Grid XLarge\nBS5 Grid XXL\nBS5 Grid Examples",
+                "heading": "Bootstrap 5 Grid"
+            },
+            {
+                "content": "BS5 Certificate",
+                "heading": "Bootstrap 5 Cert"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Editor\nBS5 Exercises\nBS5 Quiz\nBS5 Syllabus\nBS5 Study Plan\nBS5 Interview Prep\n\nBS5 Utilities\nBS5 Flex\nBS5 Icons\nBS5 Media Objects\nBS5 Filters",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Exercises\nBS5 Quiz",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "All Classes\nJS Alert\nJS Button\nJS Carousel\nJS Collapse\nJS Dropdown\nJS Modal\nJS Popover\nJS Scrollspy\nJS Tab\nJS Toasts\nJS Tooltip\n\n-->\n\nny:-->\n\n ny:-->\n\nny:-->\n\nBootstrap 5 Tooltip\n\n ❮ Previous\n Next ❯",
+                "heading": "Bootstrap 5 Ref"
+            },
+            {
+                "content": "The Tooltip component is small pop-up box that appears when the user moves the \nmouse pointer over an element:\n\n Hover over me!",
+                "heading": "Tooltips"
+            },
+            {
+                "content": "To create a tooltip, add the data-bs-toggle=\"tooltip\" \nattribute to an element. \n\nUse the title attribute to specify the text that should be \ndisplayed inside the tooltip:\n\n <button type=\"button\" class=\"btn btn-primary\" data-bs-toggle=\"tooltip\" \n title=\"Hooray!\">Hover over me!</button>\n\nNote: Tooltips must be initialized with JavaScript to work.\n\nThe following code will enable all tooltips in the document:\n\n Example\n\n <script>\nvar tooltipTriggerList = \n [].slice.call(document.querySelectorAll('[data-bs-toggle=\"tooltip\"]'))\nvar \n tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {\n\n return new bootstrap.Tooltip(tooltipTriggerEl)\n})\n</script>\n\nTry it Yourself »",
+                "heading": "How To Create a Tooltip"
+            },
+            {
+                "content": "By default, the tooltip will appear on top of the element.\n\nUse the data-bs-placement attribute to set the position of the \ntooltip on top, bottom, left or the right side of the element:\n\n Example\n\n <a href=\"#\" data-bs-toggle=\"tooltip\" data-bs-placement=\"top\" title=\"Hooray!\">Hover</a>\n<a href=\"#\" data-bs-toggle=\"tooltip\" data-bs-placement=\"bottom\" title=\"Hooray!\">Hover</a>\n<a href=\"#\" data-bs-toggle=\"tooltip\" data-bs-placement=\"left\" title=\"Hooray!\">Hover</a>\n<a href=\"#\" data-bs-toggle=\"tooltip\" data-bs-placement=\"right\" title=\"Hooray!\">Hover</a>\n\nTry it Yourself »",
+                "heading": "Positioning Tooltips"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:05:47Z",
+        "subject": "Bootstrap",
+        "title": "Bootstrap 5 Tooltip"
+    },
+    {
+        "url": "https://www.w3schools.com/bootstrap5/bootstrap_popover.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "bootstrap_bootstrap_popover",
+        "code_examples": [
+            {
+                "code": "<button type=\"button\" class=\"btn btn-primary\" data-bs-toggle=\"popover\" \n title=\"Popover Header\" data-bs-content=\"Some content inside the \n popover\">Toggle popover</button>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<script>\nvar popoverTriggerList = \n [].slice.call(document.querySelectorAll('[data-bs-toggle=\"popover\"]'))\nvar \n popoverList = popoverTriggerList.map(function (popoverTriggerEl) {\n\n return new bootstrap.Popover(popoverTriggerEl)\n})\n</script>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_popover&stacked=h"
+            }
+        ],
+        "category": "HTML & CSS",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "BS5 HOME\nBS5 Get Started\nBS5 Containers\nBS5 Grid Basic\nBS5 Typography\nBS5 Colors\n\nText Colors\nBackground Colors\n\nBS5 Tables\nBS5 Images\nBS5 Jumbotron\nBS5 Alerts\nBS5 Buttons\nBS5 Button Groups\nBS5 Badges\nBS5 Progress Bars\nBS5 Spinners\nBS5 Pagination\nBS5 List Groups\nBS5 Cards\nBS5 Dropdowns\nBS5 Collapse\nBS5 Navs\nBS5 Navbar\nBS5 Carousel\nBS5 Modal\nBS5 Tooltip\nBS5 Popover\nBS5 Toast\nBS5 Scrollspy\nBS5 Offcanvas\nBS5 Utilities\nBS5 Dark Mode\nBS5 Flex",
+                "heading": "Bootstrap 5 Tutorial"
+            },
+            {
+                "content": "BS5 Forms\nBS5 Select Menus\nBS5 Checks and Radios\nBS5 Range\nBS5 Input Groups\nBS5 Floating Labels\nBS5 Form Validation\nBS5 Inputs\nBS5 Input Groups\nBS5 Custom Forms\n-->",
+                "heading": "Bootstrap 5 Forms"
+            },
+            {
+                "content": "BS5 Grid System\nBS5 Stacked/Horizontal\nBS5 Grid XSmall\nBS5 Grid Small\nBS5 Grid Medium\nBS5 Grid Large\nBS5 Grid XLarge\nBS5 Grid XXL\nBS5 Grid Examples",
+                "heading": "Bootstrap 5 Grid"
+            },
+            {
+                "content": "BS5 Certificate",
+                "heading": "Bootstrap 5 Cert"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Editor\nBS5 Exercises\nBS5 Quiz\nBS5 Syllabus\nBS5 Study Plan\nBS5 Interview Prep\n\nBS5 Utilities\nBS5 Flex\nBS5 Icons\nBS5 Media Objects\nBS5 Filters",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Exercises\nBS5 Quiz",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "All Classes\nJS Alert\nJS Button\nJS Carousel\nJS Collapse\nJS Dropdown\nJS Modal\nJS Popover\nJS Scrollspy\nJS Tab\nJS Toasts\nJS Tooltip\n\n-->\n\nny:-->\n\n ny:-->\n\nny:-->\n\nBootstrap 5 Popover\n\n ❮ Previous\n Next ❯",
+                "heading": "Bootstrap 5 Ref"
+            },
+            {
+                "content": "The Popover component is similar to tooltips; it is a pop-up box that appears when the user clicks on an element. The difference is that the popover can contain much more content.\n\nToggle popover",
+                "heading": "Popovers"
+            },
+            {
+                "content": "To create a popover, add the data-bs-toggle=\"popover\" \nattribute to an element.\n\nUse the title attribute to specify the header text of the popover, and use the data-bs-content attribute to specify the \ntext that should be displayed inside the popover's body:\n\n <button type=\"button\" class=\"btn btn-primary\" data-bs-toggle=\"popover\" \n title=\"Popover Header\" data-bs-content=\"Some content inside the \n popover\">Toggle popover</button>\n\nNote: Popovers must be initialized with JavaScript to work.\n\nThe following code will enable all popovers in the document:\n\n Example\n\n <script>\nvar popoverTriggerList = \n [].slice.call(document.querySelectorAll('[data-bs-toggle=\"popover\"]'))\nvar \n popoverList = popoverTriggerList.map(function (popoverTriggerEl) {\n\n return new bootstrap.Popover(popoverTriggerEl)\n})\n</script>\n\nTry it Yourself »",
+                "heading": "How To Create a Popover"
+            },
+            {
+                "content": "By default, the popover will appear on the right side of the element.\n\nUse the data-bs-placement attribute to set the position of the \npopover on top, bottom, left or the right side of the element:\n\n Example\n\n <a href=\"#\" title=\"Header\" data-bs-toggle=\"popover\" data-bs-placement=\"top\" data-content=\"Content\">Top</a>\n<a href=\"#\" title=\"Header\" data-bs-toggle=\"popover\" data-bs-placement=\"bottom\" data-content=\"Content\">Bottom</a>\n<a href=\"#\" title=\"Header\" data-bs-toggle=\"popover\" data-bs-placement=\"left\" data-content=\"Content\">Left</a>\n<a href=\"#\" title=\"Header\" data-bs-toggle=\"popover\" data-bs-placement=\"right\" data-content=\"Content\">Right</a>\n\nTry it Yourself »\n\n Note: The placement attributes do not work as you expect \n if it is not enough room for them. For example: if you use the top placement \n at the top of a page (where it is no room for it), it will instead display the \n popover below the element or to the right (wherever it is room for it).",
+                "heading": "Positioning Popovers"
+            },
+            {
+                "content": "By default, the popover is closed when you click on the element \nagain. However, you can use the data-bs-trigger=\"focus\" attribute which will close \nthe popover when clicking outside the element:\n\n Example\n\n <a href=\"#\" title=\"Dismissible popover\" data-bs-toggle=\"popover\" \n data-bs-trigger=\"focus\" data-bs-content=\"Click anywhere in the document to \n close this popover\">Click me</a>\n\nTry it Yourself »",
+                "heading": "Closing Popovers"
+            },
+            {
+                "content": "Tip: If you want the popover to be displayed when you move \nthe mouse pointer over the element, use the data-bs-trigger attribute with a value of \n\"hover\":\n\n Example\n\n <a href=\"#\" title=\"Header\" data-bs-toggle=\"popover\" data-bs-trigger=\"hover\" \n data-bs-content=\"Popover text\">Hover over me</a>\n\nTry it Yourself »\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Hoverable Popover"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:05:48Z",
+        "subject": "Bootstrap",
+        "title": "Bootstrap 5 Popover"
+    },
+    {
+        "url": "https://www.w3schools.com/bootstrap5/bootstrap_toast.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "bootstrap_bootstrap_toast",
+        "code_examples": [
+            {
+                "code": "<div class=\"toast show\">\n  <div class=\"toast-header\">\n    Toast Header\n\n <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"toast\"></button>\n  </div>\n\n <div class=\"toast-body\">\n    Some text inside the toast body\n  </div>\n\n </div>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_toast_close&stacked=h"
+            }
+        ],
+        "category": "HTML & CSS",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "BS5 HOME\nBS5 Get Started\nBS5 Containers\nBS5 Grid Basic\nBS5 Typography\nBS5 Colors\n\nText Colors\nBackground Colors\n\nBS5 Tables\nBS5 Images\nBS5 Jumbotron\nBS5 Alerts\nBS5 Buttons\nBS5 Button Groups\nBS5 Badges\nBS5 Progress Bars\nBS5 Spinners\nBS5 Pagination\nBS5 List Groups\nBS5 Cards\nBS5 Dropdowns\nBS5 Collapse\nBS5 Navs\nBS5 Navbar\nBS5 Carousel\nBS5 Modal\nBS5 Tooltip\nBS5 Popover\nBS5 Toast\nBS5 Scrollspy\nBS5 Offcanvas\nBS5 Utilities\nBS5 Dark Mode\nBS5 Flex",
+                "heading": "Bootstrap 5 Tutorial"
+            },
+            {
+                "content": "BS5 Forms\nBS5 Select Menus\nBS5 Checks and Radios\nBS5 Range\nBS5 Input Groups\nBS5 Floating Labels\nBS5 Form Validation\nBS5 Inputs\nBS5 Input Groups\nBS5 Custom Forms\n-->",
+                "heading": "Bootstrap 5 Forms"
+            },
+            {
+                "content": "BS5 Grid System\nBS5 Stacked/Horizontal\nBS5 Grid XSmall\nBS5 Grid Small\nBS5 Grid Medium\nBS5 Grid Large\nBS5 Grid XLarge\nBS5 Grid XXL\nBS5 Grid Examples",
+                "heading": "Bootstrap 5 Grid"
+            },
+            {
+                "content": "BS5 Certificate",
+                "heading": "Bootstrap 5 Cert"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Editor\nBS5 Exercises\nBS5 Quiz\nBS5 Syllabus\nBS5 Study Plan\nBS5 Interview Prep\n\nBS5 Utilities\nBS5 Flex\nBS5 Icons\nBS5 Media Objects\nBS5 Filters",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Exercises\nBS5 Quiz",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "All Classes\nJS Alert\nJS Button\nJS Carousel\nJS Collapse\nJS Dropdown\nJS Modal\nJS Popover\nJS Scrollspy\nJS Tab\nJS Toasts\nJS Tooltip\n\n-->\n\nny:-->\n\n ny:-->\n\nny:-->\n\nBootstrap 5 Toasts\n\n ❮ Previous\n Next ❯",
+                "heading": "Bootstrap 5 Ref"
+            },
+            {
+                "content": "The toast component is like an alert box that is only shown for a couple of seconds when something happens (i.e. when the user clicks on a button, submits a form, etc.).\n\n Toast Header\n 5 mins ago\n\n Some text inside the toast body",
+                "heading": "Toasts"
+            },
+            {
+                "content": "To create a toast, use the .toast class, and add a .toast-header and a \n.toast-body inside of it.\n\nNote: Toasts are hidden by default. Use the .show class \nif you want to display it. To close it, use a \n<button> element and add data-bs-dismiss=\"toast\":\n\n <div class=\"toast show\">\n  <div class=\"toast-header\">\n    Toast Header\n\n <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"toast\"></button>\n  </div>\n\n <div class=\"toast-body\">\n    Some text inside the toast body\n  </div>\n\n </div>\n\nTry it Yourself »",
+                "heading": "How To Create a Toast"
+            },
+            {
+                "content": "To show a toast with a click of a button, you must initialize it with JavaScript: select the \nspecified element and call the toast() method.\n\nThe following code will show all \"toasts\" in the document when you click on a \nbutton:\n\n Example\n\n <script>\ndocument.getElementById(\"toastbtn\").onclick = \n function() {\n  var toastElList = \n [].slice.call(document.querySelectorAll('.toast'))\n  var toastList = \n toastElList.map(function(toastEl) {\n    return new \n bootstrap.Toast(toastEl)\n  })\n  toastList.forEach(toast => \n toast.show()) \n}\n</script>\n\nTry it Yourself »",
+                "heading": "Open a Toast"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:05:48Z",
+        "subject": "Bootstrap",
+        "title": "Bootstrap 5 Toasts"
+    },
+    {
+        "url": "https://www.w3schools.com/bootstrap5/bootstrap_scrollspy.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "bootstrap_bootstrap_scrollspy",
+        "code_examples": [
+            {
+                "code": "<!-- The scrollable area -->\n<body data-bs-spy=\"scroll\" data-bs-target=\".navbar\" data-bs-offset=\"50\">\n\n<!-- The navbar - The <a> elements are used to jump to a section in the scrollable area -->\n<nav \n class=\"navbar navbar-expand-sm bg-dark navbar-dark fixed-top\">\n...\n  <ul class=\"navbar-nav\">\n    <li><a href=\"#section1\">Section 1</a></li>\n    ...\n</nav>\n\n<!-- Section 1 -->\n<div id=\"section1\">\n  <h1>Section 1</h1>\n  <p>Try to scroll this page and look at the navigation bar while scrolling!</p>\n</div>\n...\n\n </body>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_scrollspy&stacked=h"
+            }
+        ],
+        "category": "HTML & CSS",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "BS5 HOME\nBS5 Get Started\nBS5 Containers\nBS5 Grid Basic\nBS5 Typography\nBS5 Colors\n\nText Colors\nBackground Colors\n\nBS5 Tables\nBS5 Images\nBS5 Jumbotron\nBS5 Alerts\nBS5 Buttons\nBS5 Button Groups\nBS5 Badges\nBS5 Progress Bars\nBS5 Spinners\nBS5 Pagination\nBS5 List Groups\nBS5 Cards\nBS5 Dropdowns\nBS5 Collapse\nBS5 Navs\nBS5 Navbar\nBS5 Carousel\nBS5 Modal\nBS5 Tooltip\nBS5 Popover\nBS5 Toast\nBS5 Scrollspy\nBS5 Offcanvas\nBS5 Utilities\nBS5 Dark Mode\nBS5 Flex",
+                "heading": "Bootstrap 5 Tutorial"
+            },
+            {
+                "content": "BS5 Forms\nBS5 Select Menus\nBS5 Checks and Radios\nBS5 Range\nBS5 Input Groups\nBS5 Floating Labels\nBS5 Form Validation\nBS5 Inputs\nBS5 Input Groups\nBS5 Custom Forms\n-->",
+                "heading": "Bootstrap 5 Forms"
+            },
+            {
+                "content": "BS5 Grid System\nBS5 Stacked/Horizontal\nBS5 Grid XSmall\nBS5 Grid Small\nBS5 Grid Medium\nBS5 Grid Large\nBS5 Grid XLarge\nBS5 Grid XXL\nBS5 Grid Examples",
+                "heading": "Bootstrap 5 Grid"
+            },
+            {
+                "content": "BS5 Certificate",
+                "heading": "Bootstrap 5 Cert"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Editor\nBS5 Exercises\nBS5 Quiz\nBS5 Syllabus\nBS5 Study Plan\nBS5 Interview Prep\n\nBS5 Utilities\nBS5 Flex\nBS5 Icons\nBS5 Media Objects\nBS5 Filters",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Exercises\nBS5 Quiz",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "All Classes\nJS Alert\nJS Button\nJS Carousel\nJS Collapse\nJS Dropdown\nJS Modal\nJS Popover\nJS Scrollspy\nJS Tab\nJS Toasts\nJS Tooltip\n\n-->\n\nny:-->\n\n ny:-->\n\nny:-->\n\nBootstrap 5 Scrollspy\n\n ❮ Previous\n Next ❯",
+                "heading": "Bootstrap 5 Ref"
+            },
+            {
+                "content": "Scrollspy is used to automatically update links in a navigation \nlist based on scroll position.",
+                "heading": "Scrollspy"
+            },
+            {
+                "content": "The following example shows how to create a scrollspy:\n\n Example\n\n <!-- The scrollable area -->\n<body data-bs-spy=\"scroll\" data-bs-target=\".navbar\" data-bs-offset=\"50\">\n\n<!-- The navbar - The <a> elements are used to jump to a section in the scrollable area -->\n<nav \n class=\"navbar navbar-expand-sm bg-dark navbar-dark fixed-top\">\n...\n  <ul class=\"navbar-nav\">\n    <li><a href=\"#section1\">Section 1</a></li>\n    ...\n</nav>\n\n<!-- Section 1 -->\n<div id=\"section1\">\n  <h1>Section 1</h1>\n  <p>Try to scroll this page and look at the navigation bar while scrolling!</p>\n</div>\n...\n\n </body>\n\nTry it Yourself »\n\nExample Explained\n\nAdd data-bs-spy=\"scroll\" to the element that should be used as the scrollable \narea (often this is the <body> element).\n\nThen add the data-bs-target attribute with a value of the id or the class name \nof the navigation bar (.navbar). This is to make sure that the navbar \nis connected with the scrollable area.\n\nNote that scrollable elements must match the ID of the links inside the navbar's \nlist items \n(<div id=\"section1\"> matches <a href=\"#section1\">).\n\nThe optional data-bs-offset attribute specifies the number of pixels to offset \nfrom top when calculating the position of scroll. This is useful when you feel \nthat the links inside the navbar changes the active state too soon or too early \nwhen jumping to the scrollable elements. Default is 10 pixels.\n\n Requires relative positioning: The element with \ndata-bs-spy=\"scroll\" \nrequires the CSS position property, with a value of \"relative\" \nto work properly.",
+                "heading": "How To Create a Scrollspy"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:05:48Z",
+        "subject": "Bootstrap",
+        "title": "Bootstrap 5 Scrollspy"
+    },
+    {
+        "url": "https://www.w3schools.com/bootstrap5/bootstrap_offcanvas.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "bootstrap_bootstrap_offcanvas",
+        "code_examples": [
+            {
+                "code": "<!-- Offcanvas Sidebar -->\n<div class=\"offcanvas offcanvas-start\" \n id=\"demo\">\n  <div \n class=\"offcanvas-header\">\n    <h1 \n class=\"offcanvas-title\">Heading</h1>\n    <button \n type=\"button\" class=\"btn-close text-reset\" \n data-bs-dismiss=\"offcanvas\"></button>\n  </div>\n  <div \n class=\"offcanvas-body\">\n    <p>Some text lorem ipsum.</p>\n\n <p>Some text lorem ipsum.</p>\n    <button class=\"btn \n btn-secondary\" type=\"button\">A Button</button>\n  </div>\n</div>\n\n<!-- Button to open the offcanvas sidebar -->\n<button class=\"btn \n btn-primary\" type=\"button\" data-bs-toggle=\"offcanvas\" data-bs-target=\"#demo\">\n  Open Offcanvas Sidebar\n</button>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_offcanvas&stacked=h"
+            },
+            {
+                "code": "<div class=\"offcanvas offcanvas-top\" \n id=\"demo\">",
+                "language": "bootstrap",
+                "heading": "Top Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<div class=\"offcanvas offcanvas-bottom\" \n id=\"demo\">",
+                "language": "bootstrap",
+                "heading": "Bottom Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<div class=\"offcanvas offcanvas-start offcanvas-lg\" id=\"demo\">",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_offcanvas_responsive&stacked=h"
+            }
+        ],
+        "category": "HTML & CSS",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "BS5 HOME\nBS5 Get Started\nBS5 Containers\nBS5 Grid Basic\nBS5 Typography\nBS5 Colors\n\nText Colors\nBackground Colors\n\nBS5 Tables\nBS5 Images\nBS5 Jumbotron\nBS5 Alerts\nBS5 Buttons\nBS5 Button Groups\nBS5 Badges\nBS5 Progress Bars\nBS5 Spinners\nBS5 Pagination\nBS5 List Groups\nBS5 Cards\nBS5 Dropdowns\nBS5 Collapse\nBS5 Navs\nBS5 Navbar\nBS5 Carousel\nBS5 Modal\nBS5 Tooltip\nBS5 Popover\nBS5 Toast\nBS5 Scrollspy\nBS5 Offcanvas\nBS5 Utilities\nBS5 Dark Mode\nBS5 Flex",
+                "heading": "Bootstrap 5 Tutorial"
+            },
+            {
+                "content": "BS5 Forms\nBS5 Select Menus\nBS5 Checks and Radios\nBS5 Range\nBS5 Input Groups\nBS5 Floating Labels\nBS5 Form Validation\nBS5 Inputs\nBS5 Input Groups\nBS5 Custom Forms\n-->",
+                "heading": "Bootstrap 5 Forms"
+            },
+            {
+                "content": "BS5 Grid System\nBS5 Stacked/Horizontal\nBS5 Grid XSmall\nBS5 Grid Small\nBS5 Grid Medium\nBS5 Grid Large\nBS5 Grid XLarge\nBS5 Grid XXL\nBS5 Grid Examples",
+                "heading": "Bootstrap 5 Grid"
+            },
+            {
+                "content": "BS5 Certificate",
+                "heading": "Bootstrap 5 Cert"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Editor\nBS5 Exercises\nBS5 Quiz\nBS5 Syllabus\nBS5 Study Plan\nBS5 Interview Prep\n\nBS5 Utilities\nBS5 Flex\nBS5 Icons\nBS5 Media Objects\nBS5 Filters",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Exercises\nBS5 Quiz",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "All Classes\nJS Alert\nJS Button\nJS Carousel\nJS Collapse\nJS Dropdown\nJS Modal\nJS Popover\nJS Scrollspy\nJS Tab\nJS Toasts\nJS Tooltip\n\n-->\n\nny:-->\n\n ny:-->\n\nny:-->\n\nBootstrap 5 Offcanvas\n\n ❮ Previous\n Next ❯",
+                "heading": "Bootstrap 5 Ref"
+            },
+            {
+                "content": "Offcanvas is similar to modals (hidden by default and shown when activated), except that is often used as a sidebar navigation menu.\n\n Heading\n\n Some text lorem ipsum.\n\n Some text lorem ipsum.\n\n A Button\n\n Open Offcanvas Sidebar",
+                "heading": "Offcanvas"
+            },
+            {
+                "content": "The following example shows how to create an offcanvas sidebar:\n\n Example\n\n <!-- Offcanvas Sidebar -->\n<div class=\"offcanvas offcanvas-start\" \n id=\"demo\">\n  <div \n class=\"offcanvas-header\">\n    <h1 \n class=\"offcanvas-title\">Heading</h1>\n    <button \n type=\"button\" class=\"btn-close text-reset\" \n data-bs-dismiss=\"offcanvas\"></button>\n  </div>\n  <div \n class=\"offcanvas-body\">\n    <p>Some text lorem ipsum.</p>\n\n <p>Some text lorem ipsum.</p>\n    <button class=\"btn \n btn-secondary\" type=\"button\">A Button</button>\n  </div>\n</div>\n\n<!-- Button to open the offcanvas sidebar -->\n<button class=\"btn \n btn-primary\" type=\"button\" data-bs-toggle=\"offcanvas\" data-bs-target=\"#demo\">\n  Open Offcanvas Sidebar\n</button>\n\nTry it Yourself »\n\nExample Explained\n\nThe .offcanvas class creates the offcanvas sidebar.\n\nThe .offcanvas-start class positions the offcanvas, and makes it 400px wide. \nSee examples below for more positioning classes.\n\nThe .offcanvas-title class ensures proper margins and line-height.\n\nThen, add your content inside the .offcanvas-body class.\n\nTo open the offcanvas sidebar, you must use a <button> or an <a> element that points to the id of the .offcanvas container (#demo in our example).\n\nTo open the offcanvas sidebar with an <a> element, you can point to #demo with the href attribute, instead of data-bs-target attribute.",
+                "heading": "How To Create an Offcanvas Sidebar"
+            },
+            {
+                "content": "Use the .offcanvas-start|end|top|bottom to position the offcanvas to the left, right, top or bottom:\n\n Right Example\n\n <div class=\"offcanvas offcanvas-end\" \n id=\"demo\">\n\n Heading\n\n Some text lorem ipsum.\n\n Some text lorem ipsum.\n\n A Button\n\n Toggle Right Offcanvas\n\nTry it Yourself »\n\n Top Example\n\n <div class=\"offcanvas offcanvas-top\" \n id=\"demo\">\n\n Heading\n\n Some text lorem ipsum.\n\n Some text lorem ipsum.\n\n A Button\n\n Toggle Top Offcanvas\n\nTry it Yourself »\n\n Bottom Example\n\n <div class=\"offcanvas offcanvas-bottom\" \n id=\"demo\">\n\n Heading\n\n Some text lorem ipsum.\n\n Some text lorem ipsum.\n\n A Button\n\n Toggle Bottom Offcanvas\n\nTry it Yourself »",
+                "heading": "Offcanvas Position"
+            },
+            {
+                "content": "You can also control when you want to hide or show the offcanvas menu on different screen widths, with the .offcanvas-sm|md|lg|xl|xxl classes:\n\n Example\n\n <div class=\"offcanvas offcanvas-start offcanvas-lg\" id=\"demo\">\n\nTry it Yourself »",
+                "heading": "Responsive OffCanvas Menu"
+            },
+            {
+                "content": "Use the .text-bg-dark class to create a dark \noffcanvas menu.\n\nTip: We have also added the .btn-close-white class to \n.btn-close, to create a white close button that looks nice with the dark \nbackground:\n\n Example\n\n <div class=\"offcanvas offcanvas-end\" \n id=\"demo\">\n<button type=\"button\" class=\"btn-close \n btn-close-white\" data-bs-dismiss=\"offcanvas\"></button>\n\n Heading\n\n Some text lorem ipsum.\n\n Some text lorem ipsum.\n\n A Button\n\n Toggle Dark Offcanvas\n\nTry it Yourself »\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Dark OffCanvas Menu"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:05:49Z",
+        "subject": "Bootstrap",
+        "title": "Heading"
+    },
+    {
+        "url": "https://www.w3schools.com/bootstrap5/bootstrap_utilities.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "bootstrap_bootstrap_utilities",
+        "code_examples": [
+            {
+                "code": "<span class=\"border\"></span>\n<span class=\"border border-0\"></span>\n\n <span class=\"border border-top-0\"></span>\n<span class=\"border \n border-end-0\"></span>\n<span class=\"border border-bottom-0\"></span>\n\n <span class=\"border border-start-0\"></span>\n<br>\n\n<span \n class=\"border-top\"></span>\n<span class=\"border-end\"></span>\n<span \n class=\"border-bottom\"></span>\n<span class=\"border-start\"></span>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_util_borders&stacked=h"
+            },
+            {
+                "code": "Example\n\nFloat right on small screens or wider\n\nFloat right on medium screens or wider\n\nFloat right on large screens or wider\n\nFloat right on extra large screens or wider\n\nFloat right on XXL screens or wider\n\nFloat none",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\nCentered",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\nWidth 25%\n\nWidth 50%\n\nWidth 75%\n\nWidth 100%\n\nAuto Width\n\nMax Width 100%",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\nHeight 25%\n\nHeight 50%\n\nHeight 75%\n\nHeight 100%\n\nAuto Height\n\nMax Height 100%",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\n I only have a top padding (1.5rem)\n\n I have a padding on all sides (3rem)\n\n I have a margin on all sides (3rem) and a bottom \n padding (3rem)",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\nNo shadow\n\nSmall shadow\n\nDefault shadow\n\nLarge shadow",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<span class=\"align-baseline\">baseline</span>\n<span \n class=\"align-top\">top</span>\n<span class=\"align-middle\">middle</span>\n\n <span class=\"align-bottom\">bottom</span>\n<span \n class=\"align-text-top\">text-top</span>\n<span \n class=\"align-text-bottom\">text-bottom</span>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_util_align&stacked=h"
+            },
+            {
+                "code": "Example",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<span class=\"visually-hidden\">I will be hidden on all screens except for screen \n readers.</span>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_util_sr&stacked=h"
+            },
+            {
+                "code": "<span class=\"d-block bg-success\">d-block</span>\n<span class=\"d-sm-block \n bg-success\">d-sm-block</span>\n<span class=\"d-md-block bg-success\">d-md-block</span>\n\n <span class=\"d-lg-block bg-success\">d-lg-block</span>\n<span \n class=\"d-xl-block bg-success\">d-xl-block</span>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_txt_bgcolors2&stacked=h"
+            }
+        ],
+        "category": "HTML & CSS",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "BS5 HOME\nBS5 Get Started\nBS5 Containers\nBS5 Grid Basic\nBS5 Typography\nBS5 Colors\n\nText Colors\nBackground Colors\n\nBS5 Tables\nBS5 Images\nBS5 Jumbotron\nBS5 Alerts\nBS5 Buttons\nBS5 Button Groups\nBS5 Badges\nBS5 Progress Bars\nBS5 Spinners\nBS5 Pagination\nBS5 List Groups\nBS5 Cards\nBS5 Dropdowns\nBS5 Collapse\nBS5 Navs\nBS5 Navbar\nBS5 Carousel\nBS5 Modal\nBS5 Tooltip\nBS5 Popover\nBS5 Toast\nBS5 Scrollspy\nBS5 Offcanvas\nBS5 Utilities\nBS5 Dark Mode\nBS5 Flex",
+                "heading": "Bootstrap 5 Tutorial"
+            },
+            {
+                "content": "BS5 Forms\nBS5 Select Menus\nBS5 Checks and Radios\nBS5 Range\nBS5 Input Groups\nBS5 Floating Labels\nBS5 Form Validation\nBS5 Inputs\nBS5 Input Groups\nBS5 Custom Forms\n-->",
+                "heading": "Bootstrap 5 Forms"
+            },
+            {
+                "content": "BS5 Grid System\nBS5 Stacked/Horizontal\nBS5 Grid XSmall\nBS5 Grid Small\nBS5 Grid Medium\nBS5 Grid Large\nBS5 Grid XLarge\nBS5 Grid XXL\nBS5 Grid Examples",
+                "heading": "Bootstrap 5 Grid"
+            },
+            {
+                "content": "BS5 Certificate",
+                "heading": "Bootstrap 5 Cert"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Editor\nBS5 Exercises\nBS5 Quiz\nBS5 Syllabus\nBS5 Study Plan\nBS5 Interview Prep\n\nBS5 Utilities\nBS5 Flex\nBS5 Icons\nBS5 Media Objects\nBS5 Filters",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Exercises\nBS5 Quiz",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "All Classes\nJS Alert\nJS Button\nJS Carousel\nJS Collapse\nJS Dropdown\nJS Modal\nJS Popover\nJS Scrollspy\nJS Tab\nJS Toasts\nJS Tooltip\n\n-->\n\nny:-->\n\n ny:-->\n\nny:-->\n\nBootstrap 5 Utilities\n\n ❮ Previous\n Next ❯",
+                "heading": "Bootstrap 5 Ref"
+            },
+            {
+                "content": "Bootstrap 5 has a lot of utility/helper classes to quickly style elements without using any CSS code.",
+                "heading": "Utilities / Helper Classes"
+            },
+            {
+                "content": "Use the border classes to add or remove borders from an element:\n\nExample\n\n <span class=\"border\"></span>\n<span class=\"border border-0\"></span>\n\n <span class=\"border border-top-0\"></span>\n<span class=\"border \n border-end-0\"></span>\n<span class=\"border border-bottom-0\"></span>\n\n <span class=\"border border-start-0\"></span>\n<br>\n\n<span \n class=\"border-top\"></span>\n<span class=\"border-end\"></span>\n<span \n class=\"border-bottom\"></span>\n<span class=\"border-start\"></span>\n\nTry it Yourself »",
+                "heading": "Borders"
+            },
+            {
+                "content": "Use .border-1 to .border-5 to change the width of the border:\n\nExample\n\n <span class=\"border border-1\"></span>\n<span class=\"border \n border-2\"></span>\n<span class=\"border border-3\"></span>\n<span \n class=\"border border-4\"></span>\n<span class=\"border border-5\"></span>\n\nTry it Yourself »",
+                "heading": "Border Width"
+            },
+            {
+                "content": "Add a color to the border with any of the contextual border color classes:\n\nExample\n\n <span class=\"border border-primary\"></span>\n<span class=\"border \n border-secondary\"></span>\n<span class=\"border border-success\"></span>\n\n <span class=\"border border-danger\"></span>\n<span class=\"border \n border-warning\"></span>\n<span class=\"border border-info\"></span>\n\n <span class=\"border border-light\"></span>\n<span class=\"border \n border-dark\"></span>\n<span class=\"border border-white\"></span>\n\nTry it Yourself »",
+                "heading": "Border Color"
+            },
+            {
+                "content": "Add rounded corners to an element with the rounded classes:\n\nExample\n\n <span class=\"rounded\"></span>\n<span class=\"rounded-top\"></span>\n\n <span class=\"rounded-end\"></span>\n<span class=\"rounded-bottom\"></span>\n\n <span class=\"rounded-start\"></span>\n<span \n class=\"rounded-circle\"></span>\n<span class=\"rounded-pill\" \n style=\"width:130px\"></span>\n<span class=\"rounded-0\"></span>\n<span \n class=\"rounded-1\"></span>\n<span class=\"rounded-2\"></span>\n<span \n class=\"rounded-3\"></span>\n<span class=\"rounded-4\"></span>\n<span \n class=\"rounded-5\"></span>\n\nTry it Yourself »",
+                "heading": "Border Radius"
+            },
+            {
+                "content": "Float an element to the right with the .float-end class or to the left with .float-start, and clear floats with the .clearfix class:\n\nExample\n\nFloat left\nFloat right\n\n <div class=\"clearfix\">\n\n <span class=\"float-start\">Float left</span>\n  <span \n class=\"float-end\">Float right</span>\n</div>\n\nTry it Yourself »",
+                "heading": "Float and Clearfix"
+            },
+            {
+                "content": "Float an element to the left or to the right depending on screen width, with the responsive float classes (.float-*-start|end - where * is sm (>=576px), md (>=768px), lg (>=992px), xl (>=1200px) or xxl (>=1400px)):\n\n Example\n\nFloat right on small screens or wider\n\nFloat right on medium screens or wider\n\nFloat right on large screens or wider\n\nFloat right on extra large screens or wider\n\nFloat right on XXL screens or wider\n\nFloat none\n\n <div class=\"float-sm-end\">Float right on small screens or wider</div><br>\n\n <div class=\"float-md-end\">Float right on medium screens or wider</div><br>\n\n <div class=\"float-lg-end\">Float right on large screens or wider</div><br>\n\n <div class=\"float-xl-end\">Float right on extra large screens or \n wider</div><br>\n<div class=\"float-xxl-end\">Float right on \n XXL screens or \n wider</div><br>\n<div class=\"float-none\">Float none</div>\n\nTry it Yourself »",
+                "heading": "Responsive Floats"
+            },
+            {
+                "content": "Center an element with the .mx-auto class (adds margin-left and margin-right: auto):\n\nExample\n\nCentered\n\n <div class=\"mx-auto \n bg-warning\" style=\"width:150px\">Centered</div>\n\nTry it Yourself »",
+                "heading": "Center Align"
+            },
+            {
+                "content": "Set the width of an element with the w-* classes (.w-25, .w-50, .w-75, .w-100, .w-auto, \nand .mw-100):\n\nExample\n\nWidth 25%\n\nWidth 50%\n\nWidth 75%\n\nWidth 100%\n\nAuto Width\n\nMax Width 100%\n\n <div class=\"w-25 bg-warning\">Width 25%</div>\n<div class=\"w-50 bg-warning\">Width \n 50%</div>\n<div class=\"w-75 bg-warning\">Width 75%</div>\n<div \n class=\"w-100 bg-warning\">Width 100%</div>\n<div \n class=\"w-auto bg-warning\">Auto Width</div>\n<div class=\"mw-100 bg-warning\">Max Width 100%</div>\n\nTry it Yourself »",
+                "heading": "Width"
+            },
+            {
+                "content": "Set the height of an element with the h-* classes (.h-25, .h-50, .h-75, .h-100, .h-auto, \nand .mh-100):\n\nExample\n\nHeight 25%\n\nHeight 50%\n\nHeight 75%\n\nHeight 100%\n\nAuto Height\n\nMax Height 100%\n\n <div style=\"height:200px;background-color:#ddd\">\n\n <div class=\"h-25 bg-warning\">Height 25%</div>\n  <div class=\"h-50 bg-warning\">Height \n 50%</div>\n  <div class=\"h-75 bg-warning\">Height 75%</div>\n  <div \n class=\"h-100 bg-warning\">Height 100%</div>\n\n <div class=\"h-auto bg-warning\">Auto Height</div>\n  <div class=\"mh-100 bg-warning\" \n style=\"height:500px\">Max Height 100%</div>\n</div>\n\nTry it Yourself »",
+                "heading": "Height"
+            },
+            {
+                "content": "Bootstrap 5 has a wide range of responsive margin and padding utility classes. \nThey work for all breakpoints: xs (<=576px), sm (>=576px), md (>=768px), lg (>=992px), xl (>=1200px) or xxl (>=1400px)):\n\nThe classes are used in the format: {property}{sides}-{size} for xs and {property}{sides}-{breakpoint}-{size} for sm, md, lg, xl and xxl.\n\nWhere property is one of:\n\n m - sets margin\n\n p - sets padding\n\nWhere sides is one of:\n\n t - sets margin-top or padding-top\n\n b - sets margin-bottom or padding-bottom\n\n s - sets margin-left or padding-left\n\n e - sets margin-right or padding-right\n\n x - sets both padding-left and padding-right or margin-left and margin-right\n\n y - sets both padding-top and padding-bottom or margin-top and margin-bottom\n\n blank - sets a margin or padding on all 4 sides of the element\n\nWhere size is one of:\n\n 0 - sets margin or padding to 0\n\n 1 - sets margin or padding to .25rem\n\n 2 - sets margin or padding to .5rem\n\n 3 - sets margin or padding to 1rem\n\n 4 - sets margin or padding to 1.5rem\n\n 5 - sets margin or padding to 3rem\n\n auto - sets margin to auto\n\nExample\n\n I only have a top padding (1.5rem)\n\n I have a padding on all sides (3rem)\n\n I have a margin on all sides (3rem) and a bottom \n padding (3rem)\n\n <div class=\"pt-4 bg-warning\">I only have a top padding (1.5rem)</div>\n<div class=\"p-5 bg-success\">I have a padding on all sides \n (3rem)</div>\n<div class=\"m-5 pb-5 bg-info\">I have a margin on \n all sides (3rem) and a bottom padding (3rem)</div>\n\nTry it Yourself »\n\nMore Spacing Examples\n\n .m-# / m-*-#\n margin on all sides\n\n Try it\n\n .mt-# / mt-*-#\n margin top\n\n Try it\n\n .mb-# / mb-*-#\n margin bottom\n\n Try it\n\n .ms-# / ms-*-#\n margin left\n\n Try it\n\n .me-# / me-*-#\n margin right\n\n Try it\n\n .mx-# / mx-*-#\n margin left and right\n\n Try it\n\n .my-# / my-*-#\n margin top and bottom\n\n Try it\n\n .p-# / p-*-#\n padding on all sides\n\n Try it\n\n .pt-# / pt-*-#\n padding top\n\n Try it\n\n .pb-# / pb-*-#\n padding bottom\n\n Try it\n\n .ps-# / ps-*-#\n padding left\n\n Try it\n\n .pe-# / pe-*-#\n padding right\n\n Try it\n\n .py-# / py-*-#\n padding top and bottom\n\n Try it\n\n .px-# / px-*-#\n padding left and right\n\n Try it\n\nYou can read more about rem and different size units in our CSS Units Reference.",
+                "heading": "Spacing"
+            },
+            {
+                "content": "Use the shadow- classes to add shadows to an element:\n\nExample\n\nNo shadow\n\nSmall shadow\n\nDefault shadow\n\nLarge shadow\n\n <div class=\"shadow-none p-4 mb-4 bg-light\">No shadow</div>\n<div \n class=\"shadow-sm p-4 mb-4 bg-white\">Small \n shadow</div>\n<div class=\"shadow p-4 mb-4 bg-white\">Default \n shadow</div>\n<div class=\"shadow-lg p-4 mb-4 bg-white\">Large \n shadow</div>\n\nTry it Yourself »",
+                "heading": "Shadows"
+            },
+            {
+                "content": "Use the align- classes to change the alignment of elements (only works on inline, inline-block, inline-table and table cell elements):\n\nExample\n\nbaseline\ntop\nmiddle\nbottom\ntext-top\ntext-bottom\n\n <span class=\"align-baseline\">baseline</span>\n<span \n class=\"align-top\">top</span>\n<span class=\"align-middle\">middle</span>\n\n <span class=\"align-bottom\">bottom</span>\n<span \n class=\"align-text-top\">text-top</span>\n<span \n class=\"align-text-bottom\">text-bottom</span>\n\nTry it Yourself »",
+                "heading": "Vertical Align"
+            },
+            {
+                "content": "Create responsive video or slideshows based on the width of the parent.\n\nAdd the .ratio class together with an aspect \nratio of your choice .ratio-* to a \nparent element, and add the embed (video or iframe) inside of it:\n\nExample\n\n <!-- Aspect ratio 1:1 -->\n<div class=\"ratio ratio-1x1\">\n\n <iframe src=\"https://www.youtube.com/embed/tgbNymZ7vqY\"></iframe>\n\n </div>\n\n<!-- Aspect ratio 4:3 -->\n<div class=\"ratio ratio-4x3\">\n\n <iframe src=\"https://www.youtube.com/embed/tgbNymZ7vqY\"></iframe>\n\n </div> \n\n<!-- Aspect ratio 16:9 -->\n<div class=\"ratio \n ratio-16x9\">\n  <iframe \n src=\"https://www.youtube.com/embed/tgbNymZ7vqY\"></iframe>\n</div>\n\n<!-- Aspect ratio 21:9 -->\n<div class=\"ratio ratio-21x9\">\n\n <iframe src=\"https://www.youtube.com/embed/tgbNymZ7vqY\"></iframe>\n\n </div>\n\nTry it Yourself »",
+                "heading": "Aspect Ratio"
+            },
+            {
+                "content": "Use the .visible or .invisible classes to control the visibility of elements. Note: These classes do not change the CSS display value. They only add visibility:visible or visibility:hidden:\n\nExample\n\nI am visible\n\nI am invisible\n\n <div class=\"visible\">I am visible</div>\n<div class=\"invisible\">I am \n invisible</div>\n\nTry it Yourself »",
+                "heading": "Visibility"
+            },
+            {
+                "content": "Use the .btn-close class to style a close \nicon. This is often used for alerts and modals.\n\nExample\n\n <button type=\"button\" class=\"btn-close\"></button>\n\nTry it Yourself »",
+                "heading": "Close icon"
+            },
+            {
+                "content": "Use the .visually-hidden class to hide an element on all devices, except screen readers:\n\nExample\n\n <span class=\"visually-hidden\">I will be hidden on all screens except for screen \n readers.</span>\n\nTry it Yourself »",
+                "heading": "Screenreaders"
+            },
+            {
+                "content": "As described in the Colors chapter, here is a list of all text and background color classes:\n\nThe classes for text colors are: .text-muted, \n.text-primary, .text-success, .text-info,\n.text-warning, .text-danger, .text-secondary, .text-white,\n.text-dark, .text-body (default body color/often black) and .text-light:\n\nExample\n\nThis text is muted.\n\nThis text is important.\n\nThis text indicates success.\n\nThis text represents some information.\n\nThis text represents a warning.\n\nThis text represents danger.\n\nSecondary text.\n\nDark grey text.\n\nBody text.\n\nLight grey text.\n\nTry it Yourself »\n\nContextual text classes can also be used on links:\n\nExample\n\nMuted link.\nPrimary link.\nSuccess link.\nInfo link.\nWarning link.\nDanger link.\nSecondary link.\nDark grey link.\nBody/black link.\nLight grey link.\n\nTry it Yourself »\n\nYou can also add 50% opacity for black or white text with the .text-black-50 or .text-white-50 classes:\n\nExample\n\n Black text with 50% opacity on white background\n\n White text with 50% opacity on black background\n\nTry it Yourself »",
+                "heading": "Colors"
+            },
+            {
+                "content": "The classes for background colors are: .bg-primary, \n.bg-success, .bg-info, .bg-warning, .bg-danger, .bg-secondary, .bg-dark and .bg-light.\n\nExample\n\nTry it Yourself »\n\nThe .bg-color classes above does not work well with text, or atleast then you \nhave to specify a proper .text-color class to get the right text color for each \nbackground.\n\nHowever, you can use the \n.text-bg-color classes and Bootstrap will automatically handle the appropriate \ntext color for each background color:\n\nExample\n\nThis text is important.\n\nThis text indicates success.\n\nThis text represents some information.\n\nThis text represents a warning.\n\nThis text represents danger.\n\nSecondary background color.\n\nDark grey background color.\n\nLight grey background color.\n\nTry it Yourself »",
+                "heading": "Background Colors"
+            },
+            {
+                "content": "As described in the Typography chapter, here is a list of all typography/text classes:\n\n Class\n Description\n Example\n\n .display-*\n Display headings are used to stand out more than normal headings (larger font-size and lighter font-weight), and there are four classes to choose from: .display-1, .display-2, .display-3, .display-4\n Try it\n\n .font-weight-bold\n Bold text\n Try it\n\n .font-weight-bolder\n Bolder bold text\n Try it\n\n .font-weight-normal\n Normal text\n Try it\n\n .font-weight-light\n Light weight text\n Try it\n\n .font-weight-lighter\n Lighter weight text\n Try it\n\n .font-italic\n Italic text\n Try it\n\n .lead\n Makes a paragraph stand out\n Try it\n\n .small\n Indicates smaller text (set to 85% of the size of the parent)\n Try it\n\n .text-break\n Prevents long text from breaking layout\n Try it\n\n .text-center\n Indicates center-aligned text\n Try it\n\n .text-decoration-none\n Removes the underline from a link\n Try it\n\n .text-left\n Indicates left-aligned text\n Try it\n\n .text-justify\n Indicates justified text\n Try it\n\n .text-monospace\n Monospaced text\n Try it\n\n .text-nowrap\n Indicates no wrap text\n Try it\n\n .text-lowercase\n Indicates lowercased text\n Try it\n\n .text-reset\n Resets the color of a text or a link (inherits the color from its parent)\n Try it\n\n .text-right\n Indicates right-aligned text\n Try it\n\n .text-uppercase\n Indicates uppercased text\n Try it\n\n .text-capitalize\n Indicates capitalized text\n Try it\n\n .initialism\n Displays the text inside an <abbr> element in a slightly smaller font size\n Try it\n\n .list-unstyled\n Removes the default list-style and left margin on list items (works on both <ul> and <ol>). This class only applies to immediate children list items (to remove the default list-style from any nested lists, apply this class to any nested lists as well)\n Try it\n\n .list-inline\n Places all list items on a single line (used together with \n .list-inline-item on each <li> elements)\n Try it\n\n .pre-scrollable\n Makes a <pre> element scrollable\n Try it",
+                "heading": "Typography/Text Classes"
+            },
+            {
+                "content": "To make an element into a block element, add the .d-block class. Use any of the d-*-block classes to control WHEN the element should be a block element on a specific screen width:\n\nExample\n\n d-block\n d-sm-block\n d-md-block\n d-lg-block\n d-xl-block\n\n Example\n\n <span class=\"d-block bg-success\">d-block</span>\n<span class=\"d-sm-block \n bg-success\">d-sm-block</span>\n<span class=\"d-md-block bg-success\">d-md-block</span>\n\n <span class=\"d-lg-block bg-success\">d-lg-block</span>\n<span \n class=\"d-xl-block bg-success\">d-xl-block</span>\n\nTry it Yourself »",
+                "heading": "Block Elements"
+            },
+            {
+                "content": "Other display classes are also available:\n d-none, d-inline, d-inline-block, d-table, d-table-cell, d-table-row, d-flex, d-inline-flex.\n\nNote: Use any of the d-sm|md|lg|xl-* classes to control WHEN the class should be active on a specific screen width.\n\n Class\n Description\n Example\n\n .d-none\n Hides an element\n Try it\n\n .d-*-none\n Hides an element on a specific screen size\n Try it\n\n .d-inline\n Makes an element inline\n Try it\n\n .d-*-inline\n Makes an element inline on a specific screen size\n Try it\n\n .d-inline-block\n Makes an element inline block\n Try it\n\n .d-*-inline-block\n Makes an element inline block on a specific screen size\n Try it\n\n .d-table\n Makes an element display as a table\n Try it\n\n .d-*-table\n Makes an element display as a table on a specific screen size\n Try it\n\n .d-table-cell\n Makes an element display as a table cell\n Try it\n\n .d-*-table-cell\n Makes an element display as a table cell on a specific screen size\n Try it\n\n .d-table-row\n Makes an element display as a table row\n Try it\n\n .d-*-table-row\n Makes an element display as a table row on a specific screen size\n Try it\n\n .d-flex\n Creates a flexbox container and transforms direct children into flex items\n Try it\n\n .d-*-flex\n Creates a flexbox container on a specific screen size\n Try it\n\n .d-inline-flex\n Creates an inline flexbox container\n Try it\n\n .d-*-inline-flex\n Creates an inline flexbox container on a specific screen size\n Try it",
+                "heading": "Other Display Classes"
+            },
+            {
+                "content": "Use .flex-* classes to control the layout with flexbox.\n\nRead more about Bootstrap 4 Flex, in our next chapter.\n\nExample\n\n Horizontal:\n\n Flex item 1\n\n Flex item 2\n\n Flex item 3\n\n Flex item 1\n\n Flex item 2\n\n Flex item 3\n\n Vertical:\n\n Flex item 1\n\n Flex item 2\n\n Flex item 3\n\n Flex item 1\n\n Flex item 2\n\n Flex item 3\n\n-->\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Flex"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:05:49Z",
+        "subject": "Bootstrap",
+        "title": "Bootstrap 5 Utilities"
+    },
+    {
+        "url": "https://www.w3schools.com/bootstrap5/bootstrap_dark_mode.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "bootstrap_bootstrap_dark_mode",
+        "code_examples": [
+            {
+                "code": "Default Example\n\n My Page\n Some lorem ipsum text.",
+                "language": "bootstrap",
+                "heading": "Default Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Dark Mode Example\n\n My Page\n Some lorem ipsum text.",
+                "language": "bootstrap",
+                "heading": "Dark Mode Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<table class=\"table\" data-bs-theme=\"dark\">",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_darkmode_table&stacked=h"
+            }
+        ],
+        "category": "HTML & CSS",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "BS5 HOME\nBS5 Get Started\nBS5 Containers\nBS5 Grid Basic\nBS5 Typography\nBS5 Colors\n\nText Colors\nBackground Colors\n\nBS5 Tables\nBS5 Images\nBS5 Jumbotron\nBS5 Alerts\nBS5 Buttons\nBS5 Button Groups\nBS5 Badges\nBS5 Progress Bars\nBS5 Spinners\nBS5 Pagination\nBS5 List Groups\nBS5 Cards\nBS5 Dropdowns\nBS5 Collapse\nBS5 Navs\nBS5 Navbar\nBS5 Carousel\nBS5 Modal\nBS5 Tooltip\nBS5 Popover\nBS5 Toast\nBS5 Scrollspy\nBS5 Offcanvas\nBS5 Utilities\nBS5 Dark Mode\nBS5 Flex",
+                "heading": "Bootstrap 5 Tutorial"
+            },
+            {
+                "content": "BS5 Forms\nBS5 Select Menus\nBS5 Checks and Radios\nBS5 Range\nBS5 Input Groups\nBS5 Floating Labels\nBS5 Form Validation\nBS5 Inputs\nBS5 Input Groups\nBS5 Custom Forms\n-->",
+                "heading": "Bootstrap 5 Forms"
+            },
+            {
+                "content": "BS5 Grid System\nBS5 Stacked/Horizontal\nBS5 Grid XSmall\nBS5 Grid Small\nBS5 Grid Medium\nBS5 Grid Large\nBS5 Grid XLarge\nBS5 Grid XXL\nBS5 Grid Examples",
+                "heading": "Bootstrap 5 Grid"
+            },
+            {
+                "content": "BS5 Certificate",
+                "heading": "Bootstrap 5 Cert"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Editor\nBS5 Exercises\nBS5 Quiz\nBS5 Syllabus\nBS5 Study Plan\nBS5 Interview Prep\n\nBS5 Utilities\nBS5 Flex\nBS5 Icons\nBS5 Media Objects\nBS5 Filters",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Exercises\nBS5 Quiz",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "All Classes\nJS Alert\nJS Button\nJS Carousel\nJS Collapse\nJS Dropdown\nJS Modal\nJS Popover\nJS Scrollspy\nJS Tab\nJS Toasts\nJS Tooltip\n\n-->\n\nny:-->\n\n ny:-->\n\nny:-->\n\nBootstrap 5 Dark Mode\n\n ❮ Previous\n Next ❯",
+                "heading": "Bootstrap 5 Ref"
+            },
+            {
+                "content": "By default, bootstrap pages have a white (light) background color.\n\nIf you want to change the whole page to a darker color, you can add data-bs-theme=\"dark\" to the \n<html> element:\n\n Default Example\n\n My Page\n Some lorem ipsum text.\n\nTry it Yourself »\n\n Dark Mode Example\n\n My Page\n Some lorem ipsum text.\n\nTry it Yourself »",
+                "heading": "Dark Mode"
+            },
+            {
+                "content": "If you don't want the whole page to have a darker color, but only specific components, you can add the data-bs-theme=\"dark\" attribute to the specified component.\n\nFor example, add dark mode to a table:\n\nExample\n\n Example\n\n <table class=\"table\" data-bs-theme=\"dark\">\n\nTry it Yourself »\n\nOr for example, add dark mode to a dropdown menu:\n\nExample\n\n Example\n\n <div class=\"dropdown\" data-bs-theme=\"dark\">\n\nTry it Yourself »",
+                "heading": "Dark Mode For Components"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:05:49Z",
+        "subject": "Bootstrap",
+        "title": "My Page"
+    },
+    {
+        "url": "https://www.w3schools.com/bootstrap5/bootstrap_flex.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "bootstrap_bootstrap_flex",
+        "code_examples": [
+            {
+                "code": "Example\n\n Flex item 1\n\n Flex item 2\n\n Flex item 3",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\n Flex item 1\n\n Flex item 2\n\n Flex item 3",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\n Flex item 1\n\n Flex item 2\n\n Flex item 3",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\n Flex item 1\n\n Flex item 2\n\n Flex item 3",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\n Flex item 1\n\n Flex item 2\n\n Flex item 3",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\n Flex item 1\n\n Flex item 2\n\n Flex item 3",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\n Flex item 1\n\n Flex item 2\n\n Flex item 3",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\n Flex item 1\n\n Flex item 2\n\n Flex item 3",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\n Flex item 1\n\n Flex item 2\n\n Flex item 3",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\n Flex item 1\n\n Flex item 2\n\n Flex item 3\n\n Flex item 4\n\n Flex item 5\n\n Flex item 6\n\n Flex item 7\n\n Flex item 8\n\n Flex item 9\n\n Flex item 10\n\n Flex item 11\n\n Flex item 12\n\n Flex item 13 \n\n Flex item 14\n\n Flex item 15\n\n Flex item 16\n\n Flex item 17\n\n Flex item 18\n\n Flex item 19\n\n Flex item 20\n\n Flex item 21\n\n Flex item 22\n\n Flex item 23\n\n Flex item 24\n\n Flex item 25",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\n Flex item 1\n\n Flex item 2\n\n Flex item 3\n\n Flex item 4\n\n Flex item 5\n\n Flex item 6\n\n Flex item 7\n\n Flex item 8\n\n Flex item 9\n\n Flex item 10\n\n Flex item 11\n\n Flex item 12\n\n Flex item 13 \n\n Flex item 14\n\n Flex item 15\n\n Flex item 16\n\n Flex item 17\n\n Flex item 18\n\n Flex item 19\n\n Flex item 20\n\n Flex item 21\n\n Flex item 22\n\n Flex item 23\n\n Flex item 24\n\n Flex item 25",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\n Flex item 1\n\n Flex item 2\n\n Flex item 3",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\n Flex item 1\n\n Flex item 2\n\n Flex item 3",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "HTML & CSS",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "BS5 HOME\nBS5 Get Started\nBS5 Containers\nBS5 Grid Basic\nBS5 Typography\nBS5 Colors\n\nText Colors\nBackground Colors\n\nBS5 Tables\nBS5 Images\nBS5 Jumbotron\nBS5 Alerts\nBS5 Buttons\nBS5 Button Groups\nBS5 Badges\nBS5 Progress Bars\nBS5 Spinners\nBS5 Pagination\nBS5 List Groups\nBS5 Cards\nBS5 Dropdowns\nBS5 Collapse\nBS5 Navs\nBS5 Navbar\nBS5 Carousel\nBS5 Modal\nBS5 Tooltip\nBS5 Popover\nBS5 Toast\nBS5 Scrollspy\nBS5 Offcanvas\nBS5 Utilities\nBS5 Dark Mode\nBS5 Flex",
+                "heading": "Bootstrap 5 Tutorial"
+            },
+            {
+                "content": "BS5 Forms\nBS5 Select Menus\nBS5 Checks and Radios\nBS5 Range\nBS5 Input Groups\nBS5 Floating Labels\nBS5 Form Validation\nBS5 Inputs\nBS5 Input Groups\nBS5 Custom Forms\n-->",
+                "heading": "Bootstrap 5 Forms"
+            },
+            {
+                "content": "BS5 Grid System\nBS5 Stacked/Horizontal\nBS5 Grid XSmall\nBS5 Grid Small\nBS5 Grid Medium\nBS5 Grid Large\nBS5 Grid XLarge\nBS5 Grid XXL\nBS5 Grid Examples",
+                "heading": "Bootstrap 5 Grid"
+            },
+            {
+                "content": "BS5 Certificate",
+                "heading": "Bootstrap 5 Cert"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Editor\nBS5 Exercises\nBS5 Quiz\nBS5 Syllabus\nBS5 Study Plan\nBS5 Interview Prep\n\nBS5 Utilities\nBS5 Flex\nBS5 Icons\nBS5 Media Objects\nBS5 Filters",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Exercises\nBS5 Quiz",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "All Classes\nJS Alert\nJS Button\nJS Carousel\nJS Collapse\nJS Dropdown\nJS Modal\nJS Popover\nJS Scrollspy\nJS Tab\nJS Toasts\nJS Tooltip\n\n-->\n\nny:-->\n\n ny:-->\n\nny:-->\n\nBootstrap 5 Flex\n\n ❮ Previous\n Next ❯",
+                "heading": "Bootstrap 5 Ref"
+            },
+            {
+                "content": "The biggest difference between Bootstrap 3 and Bootstrap 4 & 5 is that Bootstrap 5 now uses flexbox, instead of floats, to handle the layout.\n\nThe Flexible Box Layout Module, makes it easier to design flexible responsive layout structure without using float or positioning. If you are new to flex, you can read about it in our CSS Flexbox Tutorial.\n\nNote: Flexbox is not supported in IE9 and earlier versions.\n\nIf you require IE8-9 support, use Bootstrap 3. It is the most \nstable version of Bootstrap, and it is still supported by the team for critical bugfixes and documentation changes. However, no new features will be added to \nit.\n\nTo create a flexbox container and to transform direct children into flex items, use the d-flex class:\n\nExample\n\n Flex item 1\n\n Flex item 2\n\n Flex item 3\n\n Example\n\n <div class=\"d-flex p-3 bg-secondary text-white\">\n\n <div class=\"p-2 bg-info\">Flex item 1</div>\n  <div class=\"p-2 bg-warning\">Flex \n item 2</div>\n  <div class=\"p-2 bg-primary\">Flex item 3</div>\n</div>\n\nTry it Yourself »\n\nTo create an inline flexbox container, use the d-inline-flex class:\n\nExample\n\n Flex item 1\n\n Flex item 2\n\n Flex item 3\n\n Example\n\n <div class=\"d-inline-flex p-3 bg-secondary text-white\">\n\n <div class=\"p-2 bg-info\">Flex item 1</div>\n  <div class=\"p-2 bg-warning\">Flex \n item 2</div>\n  <div class=\"p-2 bg-primary\">Flex item 3</div>\n</div>\n\nTry it Yourself »",
+                "heading": "Flexbox"
+            },
+            {
+                "content": "Use .flex-row to display the flex items \nhorizontally (side by side). This is default.\n\nTip: Use .flex-row-reverse \nto right-align the horizontal direction:\n\nExample\n\n Flex item 1\n\n Flex item 2\n\n Flex item 3\n\n Flex item 1\n\n Flex item 2\n\n Flex item 3\n\n Example\n\n <div class=\"d-flex flex-row \n bg-secondary\">\n  <div class=\"p-2 bg-info\">Flex \n item 1</div>\n  <div class=\"p-2 bg-warning\">Flex item 2</div>\n\n <div class=\"p-2 bg-primary\">Flex item 3</div>\n</div>\n\n<div \n class=\"d-flex flex-row-reverse bg-secondary\">\n  <div class=\"p-2 bg-info\">Flex \n item 1</div>\n  <div class=\"p-2 bg-warning\">Flex item 2</div>\n\n <div class=\"p-2 bg-primary\">Flex item 3</div>\n</div>\n\nTry it Yourself »",
+                "heading": "Horizontal Direction"
+            },
+            {
+                "content": "Use .flex-column to display the flex items vertically (on top of each other), or .flex-column-reverse \nto reverse the vertical direction:\n\nExample\n\n Flex item 1\n\n Flex item 2\n\n Flex item 3\n\n Flex item 1\n\n Flex item 2\n\n Flex item 3\n\n Example\n\n <div class=\"d-flex flex-column\">\n  <div class=\"p-2 bg-info\">Flex \n item 1</div>\n  <div class=\"p-2 bg-warning\">Flex item 2</div>\n\n <div class=\"p-2 bg-primary\">Flex item 3</div>\n</div>\n\n<div \n class=\"d-flex flex-column-reverse\">\n  <div class=\"p-2 bg-info\">Flex \n item 1</div>\n  <div class=\"p-2 bg-warning\">Flex item 2</div>\n\n <div class=\"p-2 bg-primary\">Flex item 3</div>\n</div>\n\nTry it Yourself »",
+                "heading": "Vertical Direction"
+            },
+            {
+                "content": "Use the .justify-content-* classes to change the alignment of flex items. Valid classes are start (default), end, center, between or around:\n\nExample\n\n Flex item 1\n\n Flex item 2\n\n Flex item 3\n\n Flex item 1\n\n Flex item 2\n\n Flex item 3\n\n Flex item 1\n\n Flex item 2\n\n Flex item 3\n\n Flex item 1\n\n Flex item 2\n\n Flex item 3\n\n Flex item 1\n\n Flex item 2\n\n Flex item 3\n\n Example\n\n <div class=\"d-flex justify-content-start\">...</div>\n<div class=\"d-flex \n justify-content-end\">...</div>\n<div class=\"d-flex \n justify-content-center\">...</div>\n<div class=\"d-flex \n justify-content-between\">...</div>\n<div class=\"d-flex \n justify-content-around\">...</div>\n\nTry it Yourself »",
+                "heading": "Justify Content"
+            },
+            {
+                "content": "Use .flex-fill on flex items to force them into equal widths:\n\nExample\n\n Flex item 1\n\n Flex item 2\n\n Flex item 3\n\n Example\n\n <div class=\"d-flex\">\n  <div class=\"p-2 bg-info \n flex-fill\">Flex \n item 1</div>\n  <div class=\"p-2 bg-warning flex-fill\">Flex item 2</div>\n\n <div class=\"p-2 bg-primary flex-fill\">Flex item 3</div>\n</div>\n\nTry it Yourself »",
+                "heading": "Fill / Equal Widths"
+            },
+            {
+                "content": "Use .flex-grow-1 on a flex item to take up the rest of the space. In the example below, the first two flex items take up their necessary space, while the last item takes up the rest of the available space:\n\nExample\n\n Flex item 1\n\n Flex item 2\n\n Flex item 3\n\n Example\n\n <div class=\"d-flex\">\n  <div class=\"p-2 bg-info\">Flex \n item 1</div>\n  <div class=\"p-2 bg-warning\">Flex item 2</div>\n\n <div class=\"p-2 bg-primary flex-grow-1\">Flex item 3</div>\n</div>\n\nTry it Yourself »\n\nTip: Use .flex-shrink-1 on a flex item to make it shrink if necessary.",
+                "heading": "Grow"
+            },
+            {
+                "content": "Change the visual order of a specific flex item(s) with the .order classes. Valid classes are from 0 to 5, where the lowest number has highest priority (order-1 is shown before order-2, etc..):\n\nExample\n\n Flex item 1\n\n Flex item 2\n\n Flex item 3\n\n Example\n\n <div class=\"d-flex bg-secondary\">\n  <div class=\"p-2 bg-info \n order-3\">Flex \n item 1</div>\n  <div class=\"p-2 bg-warning order-2\">Flex item 2</div>\n\n <div class=\"p-2 bg-primary order-1\">Flex item 3</div>\n</div>\n\nTry it Yourself »",
+                "heading": "Order"
+            },
+            {
+                "content": "Easily add auto margins to flex items with .ms-auto (push items to the right), or by using .me-auto (push items to the left):\n\nExample\n\n Flex item 1\n\n Flex item 2\n\n Flex item 3\n\n Flex item 1\n\n Flex item 2\n\n Flex item 3\n\nExample\n\n <div class=\"d-flex \n bg-secondary\">\n  <div class=\"p-2 ms-auto bg-info\">Flex \n item 1</div>\n  <div class=\"p-2 bg-warning\">Flex item 2</div>\n\n <div class=\"p-2 bg-primary\">Flex item 3</div>\n</div>\n\n<div class=\"d-flex bg-secondary\">\n  <div \n class=\"p-2 bg-info\">Flex item 1</div>\n  <div class=\"p-2 bg-warning\">Flex \n item 2</div>\n  <div class=\"p-2 me-auto bg-primary\">Flex item \n 3</div>\n</div>\n\nTry it Yourself »",
+                "heading": "Auto Margins"
+            },
+            {
+                "content": "Control how flex items wrap in a flex container with .flex-nowrap (default), .flex-wrap or .flex-wrap-reverse.\n\nClick on the buttons below to see the difference between the three classes, \nby changing the wrapping of the flex items in the example box:\n\nflex-wrap\nflex-wrap-reverse\nflex-nowrap\n\nExample\n\n Flex item 1\n\n Flex item 2\n\n Flex item 3\n\n Flex item 4\n\n Flex item 5\n\n Flex item 6\n\n Flex item 7\n\n Flex item 8\n\n Flex item 9\n\n Flex item 10\n\n Flex item 11\n\n Flex item 12\n\n Flex item 13 \n\n Flex item 14\n\n Flex item 15\n\n Flex item 16\n\n Flex item 17\n\n Flex item 18\n\n Flex item 19\n\n Flex item 20\n\n Flex item 21\n\n Flex item 22\n\n Flex item 23\n\n Flex item 24\n\n Flex item 25\n\nExample\n\n <div class=\"d-flex flex-wrap\">..</div>\n\n<div class=\"d-flex \n flex-wrap-reverse\">..</div>\n\n<div class=\"d-flex \n flex-nowrap\">..</div>\n\nTry it Yourself »",
+                "heading": "Wrap"
+            },
+            {
+                "content": "Control the vertical alignment of gathered flex items with the .align-content-* \nclasses. Valid classes are .align-content-start (default), .align-content-end, .align-content-center, .align-content-between, .align-content-around and .align-content-stretch.\n\nNote: These classes have no effect on single rows of flex items.\n\nClick on the buttons below to see the difference between the five classes, \nby changing the vertical alignment of the flex items in the example box:\n\nalign-content-start\nalign-content-end\nalign-content-center\nalign-content-around\nalign-content-stretch\n\nExample\n\n Flex item 1\n\n Flex item 2\n\n Flex item 3\n\n Flex item 4\n\n Flex item 5\n\n Flex item 6\n\n Flex item 7\n\n Flex item 8\n\n Flex item 9\n\n Flex item 10\n\n Flex item 11\n\n Flex item 12\n\n Flex item 13 \n\n Flex item 14\n\n Flex item 15\n\n Flex item 16\n\n Flex item 17\n\n Flex item 18\n\n Flex item 19\n\n Flex item 20\n\n Flex item 21\n\n Flex item 22\n\n Flex item 23\n\n Flex item 24\n\n Flex item 25\n\nExample\n\n <div class=\"d-flex flex-wrap \n align-content-start\">..</div>\n\n<div class=\"d-flex \n flex-wrap align-content-end\">..</div>\n\n<div class=\"d-flex \n flex-wrap align-content-center\">..</div>\n\n<div class=\"d-flex \n flex-wrap align-content-around\">..</div>\n\n<div class=\"d-flex \n flex-wrap align-content-stretch\">..</div>\n\nTry it Yourself »",
+                "heading": "Align Content"
+            },
+            {
+                "content": "Control the vertical alignment of single rows of flex items with the .align-items-* \nclasses. Valid classes are .align-items-start, .align-items-end, .align-items-center, .align-items-baseline, and .align-items-stretch \n(default).\n\nClick on the buttons below to see the difference between the five classes:\n\nalign-items-start\nalign-items-end\nalign-items-center\nalign-items-baseline\nalign-items-stretch\n\nExample\n\n Flex item 1\n\n Flex item 2\n\n Flex item 3\n\nExample\n\n <div class=\"d-flex align-items-start\">..</div>\n\n<div class=\"d-flex \n align-items-end\">..</div>\n\n<div class=\"d-flex \n align-items-center\">..</div>\n\n<div class=\"d-flex align-items-baseline\">..</div>\n\n<div class=\"d-flex \n align-items-stretch\">..</div>\n\nTry it Yourself »",
+                "heading": "Align Items"
+            },
+            {
+                "content": "Control the vertical alignment of a specified flex item with the .align-self-* \nclasses. Valid classes are .align-self-start, .align-self-end, .align-self-center, .align-self-baseline, and .align-self-stretch \n(default).\n\nClick on the buttons below to see the difference between the five classes:\n\nalign-self-start\nalign-self-end\nalign-self-center\nalign-self-baseline\nalign-self-stretch\n\nExample\n\n Flex item 1\n\n Flex item 2\n\n Flex item 3\n\nExample\n\n <div class=\"d-flex bg-light\" style=\"height:150px\">\n  <div \n class=\"p-2 border\">Flex item 1</div>\n  <div class=\"p-2 border\n align-self-start\">Flex item 2</div>\n  <div \n class=\"p-2 border\">Flex item 3</div>\n</div>\n\nTry it Yourself »",
+                "heading": "Align Self"
+            },
+            {
+                "content": "All flex classes comes with additional responsive classes, which makes it easy to set a specific flex class on a specific screen size.\n\nThe * symbol can be replaced with sm, md, lg, xl or xxl, which represents small, medium, large, xlarge and xxlarge screens.\n\n Class\n Description\n Example\n\n Flex Container\n\n .d-*-flex\n Creates a flexbox container for different screens\n\n Try it\n\n .d-*-inline-flex\n Creates an inline flexbox container for different screens\n\n Try it\n\n Direction\n\n .flex-*-row\n Display flex items horizontally on different screens\n\n Try it\n\n .flex-*-row-reverse\n Display flex items horizontally, and right-aligned, on different screens\n\n Try it\n\n .flex-*-column\n Display flex items vertically on different screens\n\n Try it\n\n .flex-*-column-reverse\n Display flex items vertically, with reversed order, on different screens screens\n\n Try it\n\n Justified Content\n\n .justify-content-*-start\n Display flex items from the start (left-aligned) on different screens\n\n Try it\n\n .justify-content-*-end\n Display flex items at the end (right-aligned) on different screens\n\n Try it\n\n .justify-content-*-center\n Display flex items in the center of a flex container on different screens\n\n Try it\n\n .justify-content-*-between\n Display flex items in \"between\" on different screens\n\n Try it\n\n .justify-content-*-around\n Display flex items \"around\" on different screens\n\n Try it\n\n Fill / Equal Width\n\n .flex-*-fill\n Force flex items into equal widths on different screens\n\n Try it\n\n Grow\n\n .flex-*-grow-0\n Don't make the items grow on different screens\n\n .flex-*-grow-1\n Make items grow on different screens\n\n Shrink\n\n .flex-*-shrink-0\n Don't make the items shrink on diferent screens\n\n .flex-*-shrink-1\n Make items shrink on different screens\n\n Order\n\n .order-*-0-12\n Change the order from 0 to 5 on small screens\n\n Try it\n\n Wrap\n\n .flex-*-nowrap\n Don't wrap items on different screens\n\n Try it\n\n .flex-*-wrap\n Wrap items on different screens\n\n Try it\n\n .flex-*-wrap-reverse\n Reverse the wrapping of items on different screens\n\n Try it\n\n Align Content\n\n .align-content-*-start\n Align gathered items from the start on different screens\n\n Try it\n\n .align-content-*-end\n Align gathered items at the end on different screens\n\n Try it\n\n .align-content-*-center\n Align gathered items in the center on different screens\n\n Try it\n\n .align-content-*-around\n Align gathered items \"around\" on different screens\n\n Try it\n\n .align-content-*-stretch\n Stretch gathered items on different screens\n\n Try it\n\n Align Items\n\n .align-items-*-start\n Align single rows of items from the start on different screens\n\n Try it\n\n .align-items-*-end\n Align single rows of items at the end on different screens\n\n Try it\n\n .align-items-*-center\n Align single rows of items in the center on different screens\n\n Try it\n\n .align-items-*-baseline\n Align single rows of items on the baseline on different screens\n\n Try it\n\n .align-items-*-stretch\n Stretch single rows of items on different screens\n\n Try it\n\n Align Self\n\n .align-self-*-start\n Align a flex item from the start on different screens\n\n Try it\n\n .align-self-*-end\n Align a flex item at the end on different screens\n\n Try it\n\n .align-self-*-center\n Align a flex item in the center on different screens\n\n Try it\n\n .align-self-*-baseline\n Align a flex item on the baseline on different screens\n\n Try it\n\n .align-self-*-stretch\n Stretch a flex item on different screens\n\n Try it\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Responsive Flex Classes"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:05:49Z",
+        "subject": "Bootstrap",
+        "title": "Bootstrap 5 Flex"
+    },
+    {
+        "url": "https://www.w3schools.com/bootstrap5/bootstrap_forms.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "bootstrap_bootstrap_forms",
+        "code_examples": [
+            {
+                "code": "<form action=\"/action_page.php\">\n  <div class=\"mb-3 mt-3\">\n\n <label for=\"email\" class=\"form-label\">Email:</label>\n    <input type=\"email\" \n class=\"form-control\" id=\"email\" placeholder=\"Enter email\" name=\"email\">\n  </div>\n\n <div class=\"mb-3\">\n    <label for=\"pwd\" \n class=\"form-label\">Password:</label>\n\n <input type=\"password\" class=\"form-control\" id=\"pwd\" placeholder=\"Enter \n password\" name=\"pswd\">\n  </div>\n  <div class=\"form-check \n mb-3\">\n    <label class=\"form-check-label\">\n\n <input class=\"form-check-input\" type=\"checkbox\" name=\"remember\"> Remember me\n\n </label>\n  </div>\n  <button type=\"submit\" class=\"btn \n btn-primary\">Submit</button>\n</form>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_form&stacked=h"
+            },
+            {
+                "code": "<form>\n  <div class=\"row\">\n    <div class=\"col\">\n\n <input type=\"text\" class=\"form-control\" placeholder=\"Enter email\" \n name=\"email\">\n    </div>\n    <div \n class=\"col\">\n      <input type=\"password\" \n class=\"form-control\" placeholder=\"Enter password\" name=\"pswd\">\n\n </div>\n  </div>\n</form>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_form_grid&stacked=h"
+            }
+        ],
+        "category": "HTML & CSS",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "BS5 HOME\nBS5 Get Started\nBS5 Containers\nBS5 Grid Basic\nBS5 Typography\nBS5 Colors\n\nText Colors\nBackground Colors\n\nBS5 Tables\nBS5 Images\nBS5 Jumbotron\nBS5 Alerts\nBS5 Buttons\nBS5 Button Groups\nBS5 Badges\nBS5 Progress Bars\nBS5 Spinners\nBS5 Pagination\nBS5 List Groups\nBS5 Cards\nBS5 Dropdowns\nBS5 Collapse\nBS5 Navs\nBS5 Navbar\nBS5 Carousel\nBS5 Modal\nBS5 Tooltip\nBS5 Popover\nBS5 Toast\nBS5 Scrollspy\nBS5 Offcanvas\nBS5 Utilities\nBS5 Dark Mode\nBS5 Flex",
+                "heading": "Bootstrap 5 Tutorial"
+            },
+            {
+                "content": "BS5 Forms\nBS5 Select Menus\nBS5 Checks and Radios\nBS5 Range\nBS5 Input Groups\nBS5 Floating Labels\nBS5 Form Validation\nBS5 Inputs\nBS5 Input Groups\nBS5 Custom Forms\n-->",
+                "heading": "Bootstrap 5 Forms"
+            },
+            {
+                "content": "BS5 Grid System\nBS5 Stacked/Horizontal\nBS5 Grid XSmall\nBS5 Grid Small\nBS5 Grid Medium\nBS5 Grid Large\nBS5 Grid XLarge\nBS5 Grid XXL\nBS5 Grid Examples",
+                "heading": "Bootstrap 5 Grid"
+            },
+            {
+                "content": "BS5 Certificate",
+                "heading": "Bootstrap 5 Cert"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Editor\nBS5 Exercises\nBS5 Quiz\nBS5 Syllabus\nBS5 Study Plan\nBS5 Interview Prep\n\nBS5 Utilities\nBS5 Flex\nBS5 Icons\nBS5 Media Objects\nBS5 Filters",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Exercises\nBS5 Quiz",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "All Classes\nJS Alert\nJS Button\nJS Carousel\nJS Collapse\nJS Dropdown\nJS Modal\nJS Popover\nJS Scrollspy\nJS Tab\nJS Toasts\nJS Tooltip\n\n-->\n\nny:-->\n\n ny:-->\n\nny:-->\n\nBootstrap 5 Forms\n\n ❮ Previous\n Next ❯",
+                "heading": "Bootstrap 5 Ref"
+            },
+            {
+                "content": "All textual <input> and  <textarea> elements with class .form-control \nget proper form styling:\n\n Email:\n\n Must be a valid email address.\n-->\n\n Password:\n\n Remember me\n\n Submit\n\nExample\n\n <form action=\"/action_page.php\">\n  <div class=\"mb-3 mt-3\">\n\n <label for=\"email\" class=\"form-label\">Email:</label>\n    <input type=\"email\" \n class=\"form-control\" id=\"email\" placeholder=\"Enter email\" name=\"email\">\n  </div>\n\n <div class=\"mb-3\">\n    <label for=\"pwd\" \n class=\"form-label\">Password:</label>\n\n <input type=\"password\" class=\"form-control\" id=\"pwd\" placeholder=\"Enter \n password\" name=\"pswd\">\n  </div>\n  <div class=\"form-check \n mb-3\">\n    <label class=\"form-check-label\">\n\n <input class=\"form-check-input\" type=\"checkbox\" name=\"remember\"> Remember me\n\n </label>\n  </div>\n  <button type=\"submit\" class=\"btn \n btn-primary\">Submit</button>\n</form>\n\nTry it Yourself »\n\nAlso note that we add a .form-label class to each label element to ensure correct padding. \n\n Checkboxes have different markup. They are wrapped around a container \n element with .form-check, and labels have a class of .form-check-label, while \n checkboxes and radio buttons use .form-check-input.",
+                "heading": "Stacked Form"
+            },
+            {
+                "content": "Comments:\n\n Submit\n\nExample\n\n <label for=\"comment\">Comments:</label>\n<textarea class=\"form-control\" \n rows=\"5\" id=\"comment\" name=\"text\"></textarea>\n\nTry it Yourself »",
+                "heading": "Textarea"
+            },
+            {
+                "content": "If you want your form elements to appear side by side, use .row and .col:\n\nExample\n\n <form>\n  <div class=\"row\">\n    <div class=\"col\">\n\n <input type=\"text\" class=\"form-control\" placeholder=\"Enter email\" \n name=\"email\">\n    </div>\n    <div \n class=\"col\">\n      <input type=\"password\" \n class=\"form-control\" placeholder=\"Enter password\" name=\"pswd\">\n\n </div>\n  </div>\n</form>\n\nTry it Yourself »\n\nYou will learn much more about columns and rows in the Bootstrap Grids \nChapter.",
+                "heading": "Form Row/Grid (Inline Forms)"
+            },
+            {
+                "content": "You can change the size of .form-control inputs with .form-control-lg or .form-control-sm:\n\nExample\n\n <input type=\"text\" class=\"form-control form-control-lg\" placeholder=\"Large \n input\">\n<input type=\"text\" class=\"form-control\" placeholder=\"Normal input\">\n<input type=\"text\" class=\"form-control form-control-sm\" \n placeholder=\"Small input\">\n\nTry it Yourself »",
+                "heading": "Form Control Size"
+            },
+            {
+                "content": "Use the disabled and/or readonly attributes to disable the input field:\n\nExample\n\n <input type=\"text\" class=\"form-control\" placeholder=\"Normal input\">\n<input \n type=\"text\" class=\"form-control\" placeholder=\"Disabled input\" disabled>\n\n <input type=\"text\" class=\"form-control\" placeholder=\"Readonly input\" readonly>\n\nTry it Yourself »",
+                "heading": "Disabled and Readonly"
+            },
+            {
+                "content": "Use the .form-control-plaintext class to style an input field without borders, but keep proper marigins and padding:\n\nExample\n\n <input type=\"text\" class=\"form-control-plaintext\" placeholder=\"Plaintext \n input\">\n<input type=\"text\" class=\"form-control\" placeholder=\"Normal input\">\n\nTry it Yourself »",
+                "heading": "Plain text Inputs"
+            },
+            {
+                "content": "To style an input with type=\"color\" properly, use the .form-control-color class:\n\nExample\n\n <input type=\"color\" class=\"form-control form-control-color\" value=\"#CCCCCC\">\n\nTry it Yourself »\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Color Picker"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:05:49Z",
+        "subject": "Bootstrap",
+        "title": "Bootstrap 5 Forms"
+    },
+    {
+        "url": "https://www.w3schools.com/bootstrap5/bootstrap_form_select.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "bootstrap_bootstrap_form_select",
+        "code_examples": [
+            {
+                "code": "<select class=\"form-select\">\n  <option>1</option>\n\n   <option>2</option>\n  <option>3</option>\n  <option>4</option>\n</select>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_form_select&stacked=h"
+            }
+        ],
+        "category": "HTML & CSS",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "BS5 HOME\nBS5 Get Started\nBS5 Containers\nBS5 Grid Basic\nBS5 Typography\nBS5 Colors\n\nText Colors\nBackground Colors\n\nBS5 Tables\nBS5 Images\nBS5 Jumbotron\nBS5 Alerts\nBS5 Buttons\nBS5 Button Groups\nBS5 Badges\nBS5 Progress Bars\nBS5 Spinners\nBS5 Pagination\nBS5 List Groups\nBS5 Cards\nBS5 Dropdowns\nBS5 Collapse\nBS5 Navs\nBS5 Navbar\nBS5 Carousel\nBS5 Modal\nBS5 Tooltip\nBS5 Popover\nBS5 Toast\nBS5 Scrollspy\nBS5 Offcanvas\nBS5 Utilities\nBS5 Dark Mode\nBS5 Flex",
+                "heading": "Bootstrap 5 Tutorial"
+            },
+            {
+                "content": "BS5 Forms\nBS5 Select Menus\nBS5 Checks and Radios\nBS5 Range\nBS5 Input Groups\nBS5 Floating Labels\nBS5 Form Validation\nBS5 Inputs\nBS5 Input Groups\nBS5 Custom Forms\n-->",
+                "heading": "Bootstrap 5 Forms"
+            },
+            {
+                "content": "BS5 Grid System\nBS5 Stacked/Horizontal\nBS5 Grid XSmall\nBS5 Grid Small\nBS5 Grid Medium\nBS5 Grid Large\nBS5 Grid XLarge\nBS5 Grid XXL\nBS5 Grid Examples",
+                "heading": "Bootstrap 5 Grid"
+            },
+            {
+                "content": "BS5 Certificate",
+                "heading": "Bootstrap 5 Cert"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Editor\nBS5 Exercises\nBS5 Quiz\nBS5 Syllabus\nBS5 Study Plan\nBS5 Interview Prep\n\nBS5 Utilities\nBS5 Flex\nBS5 Icons\nBS5 Media Objects\nBS5 Filters",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Exercises\nBS5 Quiz",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "All Classes\nJS Alert\nJS Button\nJS Carousel\nJS Collapse\nJS Dropdown\nJS Modal\nJS Popover\nJS Scrollspy\nJS Tab\nJS Toasts\nJS Tooltip\n\n-->\n\nny:-->\n\n ny:-->\n\nny:-->\n\nBootstrap 5 Select\n\n ❮ Previous\n Next ❯",
+                "heading": "Bootstrap 5 Ref"
+            },
+            {
+                "content": "Select menu (select one):\n\n 1\n 2\n 3\n 4\n\n Multiple select menu (hold ctrl or shift (or drag with the mouse) to select more than one):\n\n 1\n 2\n 3\n 4\n 5\n\nSelect menus are used if you want to allow the user to pick from multiple options.\n\nTo style a select menu in Bootstrap 5, add the .form-select class to the \n<select> element:\n\nExample\n\n <select class=\"form-select\">\n  <option>1</option>\n\n   <option>2</option>\n  <option>3</option>\n  <option>4</option>\n</select>\n\nTry it Yourself »",
+                "heading": "Select Menu"
+            },
+            {
+                "content": "1\n 2\n 3\n 4\n\n 1\n 2\n 3\n 4\n\n 1\n 2\n 3\n 4\n\nUse the .form-select-lg or .form-select-sm class to change the size of the select menu:\n\nExample\n\n <select class=\"form-select \n form-select-lg\">\n<select class=\"form-select\">\n<select class=\"form-select \n form-select-sm\">\n\nTry it Yourself »",
+                "heading": "Select Menu Size"
+            },
+            {
+                "content": "1\n 2\n 3\n 4\n\nUse the disabled attribute to disable the select menu:\n\nExample\n\n <select class=\"form-select\" disabled>\n  <option>1</option>\n\n <option>2</option>\n  <option>3</option>\n  <option>4</option>\n\n </select>\n\nTry it Yourself »",
+                "heading": "Disabled Select Menu"
+            },
+            {
+                "content": "Bootstrap will also style data lists, which is a list of pre-defined options for an \n<input> element:\n\n Choose your browser from the list:\n\nExample\n\n <label for=\"browser\" class=\"form-label\">Choose your browser from the \n list:</label>\n<input class=\"form-control\" list=\"browsers\" name=\"browser\" \n id=\"browser\">\n<datalist id=\"browsers\">\n  <option value=\"Edge\">\n\n <option value=\"Firefox\">\n  <option value=\"Chrome\">\n  <option \n value=\"Opera\">\n  <option value=\"Safari\">\n</datalist>\n\nTry it Yourself »\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Data Lists"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:05:49Z",
+        "subject": "Bootstrap",
+        "title": "Bootstrap 5 Select"
+    },
+    {
+        "url": "https://www.w3schools.com/bootstrap5/bootstrap_form_check_radio.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "bootstrap_bootstrap_form_check_radio",
+        "code_examples": [
+            {
+                "code": "<div class=\"form-check\">\n\n   <input class=\"form-check-input\" type=\"checkbox\" id=\"check1\" name=\"option1\" \n value=\"something\" checked>\n  <label \n class=\"form-check-label\">Option 1</label>\n</div>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_form_checkbox&stacked=h"
+            },
+            {
+                "code": "<div class=\"form-check\">\n  <input type=\"radio\" \n class=\"form-check-input\" id=\"radio1\" name=\"optradio\" value=\"option1\" \n checked>Option 1\n  <label class=\"form-check-label\" \n for=\"radio1\"></label>\n</div>\n<div class=\"form-check\">\n\n <input type=\"radio\" class=\"form-check-input\" id=\"radio2\" name=\"optradio\" \n value=\"option2\">Option 2\n  <label class=\"form-check-label\" \n for=\"radio2\"></label>\n</div>\n<div \n class=\"form-check\">\n  <input type=\"radio\" class=\"form-check-input\" \n disabled>Option 3\n  <label class=\"form-check-label\"></label>\n</div>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_form_radio&stacked=h"
+            },
+            {
+                "code": "<div class=\"form-check form-switch\">\n  <input class=\"form-check-input\" \n type=\"checkbox\" id=\"mySwitch\" name=\"darkmode\" value=\"yes\" checked>\n\n <label class=\"form-check-label\" for=\"mySwitch\">Dark Mode</label>\n</div>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_form_toggle_switch&stacked=h"
+            }
+        ],
+        "category": "HTML & CSS",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "BS5 HOME\nBS5 Get Started\nBS5 Containers\nBS5 Grid Basic\nBS5 Typography\nBS5 Colors\n\nText Colors\nBackground Colors\n\nBS5 Tables\nBS5 Images\nBS5 Jumbotron\nBS5 Alerts\nBS5 Buttons\nBS5 Button Groups\nBS5 Badges\nBS5 Progress Bars\nBS5 Spinners\nBS5 Pagination\nBS5 List Groups\nBS5 Cards\nBS5 Dropdowns\nBS5 Collapse\nBS5 Navs\nBS5 Navbar\nBS5 Carousel\nBS5 Modal\nBS5 Tooltip\nBS5 Popover\nBS5 Toast\nBS5 Scrollspy\nBS5 Offcanvas\nBS5 Utilities\nBS5 Dark Mode\nBS5 Flex",
+                "heading": "Bootstrap 5 Tutorial"
+            },
+            {
+                "content": "BS5 Forms\nBS5 Select Menus\nBS5 Checks and Radios\nBS5 Range\nBS5 Input Groups\nBS5 Floating Labels\nBS5 Form Validation\nBS5 Inputs\nBS5 Input Groups\nBS5 Custom Forms\n-->",
+                "heading": "Bootstrap 5 Forms"
+            },
+            {
+                "content": "BS5 Grid System\nBS5 Stacked/Horizontal\nBS5 Grid XSmall\nBS5 Grid Small\nBS5 Grid Medium\nBS5 Grid Large\nBS5 Grid XLarge\nBS5 Grid XXL\nBS5 Grid Examples",
+                "heading": "Bootstrap 5 Grid"
+            },
+            {
+                "content": "BS5 Certificate",
+                "heading": "Bootstrap 5 Cert"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Editor\nBS5 Exercises\nBS5 Quiz\nBS5 Syllabus\nBS5 Study Plan\nBS5 Interview Prep\n\nBS5 Utilities\nBS5 Flex\nBS5 Icons\nBS5 Media Objects\nBS5 Filters",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Exercises\nBS5 Quiz",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "All Classes\nJS Alert\nJS Button\nJS Carousel\nJS Collapse\nJS Dropdown\nJS Modal\nJS Popover\nJS Scrollspy\nJS Tab\nJS Toasts\nJS Tooltip\n\n-->\n\nny:-->\n\n ny:-->\n\nny:-->\n\nBootstrap 5 Checkboxes and Radio buttons\n\n ❮ Previous\n Next ❯",
+                "heading": "Bootstrap 5 Ref"
+            },
+            {
+                "content": "Checkboxes are used if you want the user to select any number of options from a list of preset options.\n\n Option 1\n\n Option 2\n\n Disabled Option\n\nExample\n\n <div class=\"form-check\">\n\n   <input class=\"form-check-input\" type=\"checkbox\" id=\"check1\" name=\"option1\" \n value=\"something\" checked>\n  <label \n class=\"form-check-label\">Option 1</label>\n</div>\n\nTry it Yourself »\n\nExample Explained\nTo style checkboxes, use a wrapper element with class=\"form-check\" to ensure proper margins for labels and checkboxes.\n\nThen, add the .form-check-label class to label elements, and .form-check-input to style checkboxes properly inside the .form-check container.\n\nUse the checked attribute if you want the checkbox to be checked by default.",
+                "heading": "Checkboxes"
+            },
+            {
+                "content": "Radio buttons are used if you want to limit the user to just one selection from a list of preset options.\n\n Option 1\n\n Option 2\n\n Option 3\n\nExample\n\n <div class=\"form-check\">\n  <input type=\"radio\" \n class=\"form-check-input\" id=\"radio1\" name=\"optradio\" value=\"option1\" \n checked>Option 1\n  <label class=\"form-check-label\" \n for=\"radio1\"></label>\n</div>\n<div class=\"form-check\">\n\n <input type=\"radio\" class=\"form-check-input\" id=\"radio2\" name=\"optradio\" \n value=\"option2\">Option 2\n  <label class=\"form-check-label\" \n for=\"radio2\"></label>\n</div>\n<div \n class=\"form-check\">\n  <input type=\"radio\" class=\"form-check-input\" \n disabled>Option 3\n  <label class=\"form-check-label\"></label>\n</div>\n\nTry it Yourself »",
+                "heading": "Radio buttons"
+            },
+            {
+                "content": "If you want your checkbox to be styled as a toggle switch, use the .form-switch class together with the .form-check container:\n\n Dark Mode\n\nExample\n\n <div class=\"form-check form-switch\">\n  <input class=\"form-check-input\" \n type=\"checkbox\" id=\"mySwitch\" name=\"darkmode\" value=\"yes\" checked>\n\n <label class=\"form-check-label\" for=\"mySwitch\">Dark Mode</label>\n</div>\n\nTry it Yourself »\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Toggle Switches"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:05:49Z",
+        "subject": "Bootstrap",
+        "title": "Bootstrap 5 Checkboxes and Radio buttons"
+    },
+    {
+        "url": "https://www.w3schools.com/bootstrap5/bootstrap_form_range.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "bootstrap_bootstrap_form_range",
+        "code_examples": [
+            {
+                "code": "<label for=\"customRange\" class=\"form-label\">Custom range</label>\n<input \n type=\"range\" class=\"form-range\" id=\"customRange\">",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_form_range&stacked=h"
+            }
+        ],
+        "category": "HTML & CSS",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "BS5 HOME\nBS5 Get Started\nBS5 Containers\nBS5 Grid Basic\nBS5 Typography\nBS5 Colors\n\nText Colors\nBackground Colors\n\nBS5 Tables\nBS5 Images\nBS5 Jumbotron\nBS5 Alerts\nBS5 Buttons\nBS5 Button Groups\nBS5 Badges\nBS5 Progress Bars\nBS5 Spinners\nBS5 Pagination\nBS5 List Groups\nBS5 Cards\nBS5 Dropdowns\nBS5 Collapse\nBS5 Navs\nBS5 Navbar\nBS5 Carousel\nBS5 Modal\nBS5 Tooltip\nBS5 Popover\nBS5 Toast\nBS5 Scrollspy\nBS5 Offcanvas\nBS5 Utilities\nBS5 Dark Mode\nBS5 Flex",
+                "heading": "Bootstrap 5 Tutorial"
+            },
+            {
+                "content": "BS5 Forms\nBS5 Select Menus\nBS5 Checks and Radios\nBS5 Range\nBS5 Input Groups\nBS5 Floating Labels\nBS5 Form Validation\nBS5 Inputs\nBS5 Input Groups\nBS5 Custom Forms\n-->",
+                "heading": "Bootstrap 5 Forms"
+            },
+            {
+                "content": "BS5 Grid System\nBS5 Stacked/Horizontal\nBS5 Grid XSmall\nBS5 Grid Small\nBS5 Grid Medium\nBS5 Grid Large\nBS5 Grid XLarge\nBS5 Grid XXL\nBS5 Grid Examples",
+                "heading": "Bootstrap 5 Grid"
+            },
+            {
+                "content": "BS5 Certificate",
+                "heading": "Bootstrap 5 Cert"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Editor\nBS5 Exercises\nBS5 Quiz\nBS5 Syllabus\nBS5 Study Plan\nBS5 Interview Prep\n\nBS5 Utilities\nBS5 Flex\nBS5 Icons\nBS5 Media Objects\nBS5 Filters",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Exercises\nBS5 Quiz",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "All Classes\nJS Alert\nJS Button\nJS Carousel\nJS Collapse\nJS Dropdown\nJS Modal\nJS Popover\nJS Scrollspy\nJS Tab\nJS Toasts\nJS Tooltip\n\n-->\n\nny:-->\n\n ny:-->\n\nny:-->\n\nBootstrap 5 Range\n\n ❮ Previous\n Next ❯",
+                "heading": "Bootstrap 5 Ref"
+            },
+            {
+                "content": "To style a range menu, add the .form-range class to the input element with type=\"range\":\n\n Custom range\n\n Default range\n\nExample\n\n <label for=\"customRange\" class=\"form-label\">Custom range</label>\n<input \n type=\"range\" class=\"form-range\" id=\"customRange\">\n\nTry it Yourself »",
+                "heading": "Custom Range"
+            },
+            {
+                "content": "By default, the interval between the range numbers is 1. You can change it by using the step attribute:\n\nExample\n\n <input type=\"range\" class=\"form-range\" \n step=\"10\">\n\nTry it Yourself »",
+                "heading": "Steps"
+            },
+            {
+                "content": "By default, the minimum value is 0 and maximum value is 100. You can use \n the min and/or max \n attribute change it:\n\nExample\n\n <input \n type=\"range\" class=\"form-range\" min=\"0\" max=\"4\">\n\nTry it Yourself »",
+                "heading": "Min and Max"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:05:50Z",
+        "subject": "Bootstrap",
+        "title": "Bootstrap 5 Range"
+    },
+    {
+        "url": "https://www.w3schools.com/bootstrap5/bootstrap_form_input_group.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "bootstrap_bootstrap_form_input_group",
+        "code_examples": [
+            {
+                "code": "<form>\n  <div class=\"input-group\">\n    <span class=\"input-group-text\">@</span>\n    <input type=\"text\" class=\"form-control\" placeholder=\"Username\">\n\n </div>\n\n  <div class=\"input-group\">\n    <input type=\"text\" \n class=\"form-control\" placeholder=\"Your Email\">\n    <span class=\"input-group-text\">@example.com</span>\n  </div>\n</form>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_form_input_group&stacked=h"
+            }
+        ],
+        "category": "HTML & CSS",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "BS5 HOME\nBS5 Get Started\nBS5 Containers\nBS5 Grid Basic\nBS5 Typography\nBS5 Colors\n\nText Colors\nBackground Colors\n\nBS5 Tables\nBS5 Images\nBS5 Jumbotron\nBS5 Alerts\nBS5 Buttons\nBS5 Button Groups\nBS5 Badges\nBS5 Progress Bars\nBS5 Spinners\nBS5 Pagination\nBS5 List Groups\nBS5 Cards\nBS5 Dropdowns\nBS5 Collapse\nBS5 Navs\nBS5 Navbar\nBS5 Carousel\nBS5 Modal\nBS5 Tooltip\nBS5 Popover\nBS5 Toast\nBS5 Scrollspy\nBS5 Offcanvas\nBS5 Utilities\nBS5 Dark Mode\nBS5 Flex",
+                "heading": "Bootstrap 5 Tutorial"
+            },
+            {
+                "content": "BS5 Forms\nBS5 Select Menus\nBS5 Checks and Radios\nBS5 Range\nBS5 Input Groups\nBS5 Floating Labels\nBS5 Form Validation\nBS5 Inputs\nBS5 Input Groups\nBS5 Custom Forms\n-->",
+                "heading": "Bootstrap 5 Forms"
+            },
+            {
+                "content": "BS5 Grid System\nBS5 Stacked/Horizontal\nBS5 Grid XSmall\nBS5 Grid Small\nBS5 Grid Medium\nBS5 Grid Large\nBS5 Grid XLarge\nBS5 Grid XXL\nBS5 Grid Examples",
+                "heading": "Bootstrap 5 Grid"
+            },
+            {
+                "content": "BS5 Certificate",
+                "heading": "Bootstrap 5 Cert"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Editor\nBS5 Exercises\nBS5 Quiz\nBS5 Syllabus\nBS5 Study Plan\nBS5 Interview Prep\n\nBS5 Utilities\nBS5 Flex\nBS5 Icons\nBS5 Media Objects\nBS5 Filters",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Exercises\nBS5 Quiz",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "All Classes\nJS Alert\nJS Button\nJS Carousel\nJS Collapse\nJS Dropdown\nJS Modal\nJS Popover\nJS Scrollspy\nJS Tab\nJS Toasts\nJS Tooltip\n\n-->\n\nny:-->\n\n ny:-->\n\nny:-->\n\nBootstrap 5 Input Groups\n\n ❮ Previous\n Next ❯",
+                "heading": "Bootstrap 5 Ref"
+            },
+            {
+                "content": "The .input-group class is a container to enhance an input by adding an icon, text or a button in front or behind the input field as a \"help text\".\n\nTo style the specified help text, use the .input-group-text class:\n\n @\n\n @example.com\n\nExample\n\n <form>\n  <div class=\"input-group\">\n    <span class=\"input-group-text\">@</span>\n    <input type=\"text\" class=\"form-control\" placeholder=\"Username\">\n\n </div>\n\n  <div class=\"input-group\">\n    <input type=\"text\" \n class=\"form-control\" placeholder=\"Your Email\">\n    <span class=\"input-group-text\">@example.com</span>\n  </div>\n</form>\n\nTry it Yourself »",
+                "heading": "Input Groups"
+            },
+            {
+                "content": "Use the .input-group-sm class for small input groups and .input-group-lg for large inputs groups:\n\n Small\n\n Default\n\n Large\n\nExample\n\n <div class=\"input-group mb-3 input-group-sm\">\n   <span class=\"input-group-text\">Small</span>\n  <input type=\"text\" class=\"form-control\">\n</div>\n\n<div class=\"input-group mb-3\">\n\n   <span \n class=\"input-group-text\">Default</span>\n  <input \n type=\"text\" class=\"form-control\">\n</div>\n\n<div \n class=\"input-group mb-3 input-group-lg\">\n  <span \n class=\"input-group-text\">Large</span>\n  <input type=\"text\" class=\"form-control\">\n</div>\n\nTry it Yourself »",
+                "heading": "Input Group Size"
+            },
+            {
+                "content": "Add multiple inputs or addons:\n\n Person\n\n One\n Two\n Three\n\nExample\n\n <!-- Multiple inputs -->\n<div class=\"input-group mb-3\">\n  <span \n class=\"input-group-text\">Person</span>\n  <input type=\"text\" class=\"form-control\" placeholder=\"First Name\">\n  <input type=\"text\" class=\"form-control\" placeholder=\"Last Name\">\n</div>\n\n<!-- Multiple addons / help text -->\n<div class=\"input-group mb-3\">\n  <span \n class=\"input-group-text\">One</span>\n  <span \n class=\"input-group-text\">Two</span>\n  <span \n class=\"input-group-text\">Three</span>\n  <input type=\"text\" class=\"form-control\">\n</div>\n\nTry it Yourself »",
+                "heading": "Multiple Inputs and Helpers"
+            },
+            {
+                "content": "You can also use checkboxes or radio buttons instead of text:\n\nExample\n\n <div class=\"input-group mb-3\">\n\n <div class=\"input-group-text\">\n    <input \n type=\"checkbox\"> \n  </div>\n  <input type=\"text\" class=\"form-control\" placeholder=\"Some text\">\n</div>\n\n<div class=\"input-group mb-3\">\n  <div class=\"input-group-text\">\n    <input \n type=\"radio\"> \n  </div>\n  <input \n type=\"text\" class=\"form-control\" placeholder=\"Some text\">\n</div>\n\nTry it Yourself »",
+                "heading": "Input Group with Checkboxes and Radios"
+            },
+            {
+                "content": "Basic Button \n\n Go \n\n OK \n Cancel \n\nExample\n\n <div class=\"input-group mb-3\">\n  <button class=\"btn btn-outline-primary\" type=\"button\">Basic Button</button> \n  <input type=\"text\" class=\"form-control\" \n placeholder=\"Some text\">\n</div>\n\n<div class=\"input-group mb-3\">\n\n <input type=\"text\" class=\"form-control\" placeholder=\"Search\">\n  <button class=\"btn btn-success\" \n type=\"submit\">Go</button> \n</div>\n\n<div \n class=\"input-group mb-3\">\n  <input type=\"text\" class=\"form-control\" \n placeholder=\"Something clever..\">\n  <button class=\"btn btn-primary\" type=\"button\">OK</button> \n  <button class=\"btn btn-danger\" type=\"button\">Cancel</button> \n\n </div>\n\nTry it Yourself »",
+                "heading": "Input Group Buttons"
+            },
+            {
+                "content": "Add a dropdown button in the input group. Note that you don't need the .dropdown wrapper, as you normally would.\n\n Dropdown button\n\n Link 1\n\n Link 2\n\n Link 3\n\nExample\n\n <div class=\"input-group mt-3 mb-3\">\n  <button type=\"button\" class=\"btn \n btn-primary dropdown-toggle\" data-bs-toggle=\"dropdown\">\n\n Dropdown button\n  </button>\n  <ul class=\"dropdown-menu\">\n\n <li><a class=\"dropdown-item\" href=\"#\">Link 1</a></li>\n\n <li><a class=\"dropdown-item\" href=\"#\">Link 2</a></li>\n\n <li><a class=\"dropdown-item\" href=\"#\">Link 3</a></li>\n  </ul>\n\n <input type=\"text\" class=\"form-control\" placeholder=\"Username\">\n</div>\n\nTry it Yourself »\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Input Group with Dropdown Button"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:05:50Z",
+        "subject": "Bootstrap",
+        "title": "Bootstrap 5 Input Groups"
+    },
+    {
+        "url": "https://www.w3schools.com/bootstrap5/bootstrap_form_floating_labels.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "bootstrap_bootstrap_form_floating_labels",
+        "code_examples": [
+            {
+                "code": "<div class=\"form-floating mb-3 mt-3\">\n  <input type=\"text\" \n class=\"form-control\" id=\"email\" placeholder=\"Enter email\" name=\"email\">\n\n <label for=\"email\">Email</label>\n</div>\n\n<div class=\"form-floating \n mt-3 mb-3\">\n  <input type=\"text\" class=\"form-control\" id=\"pwd\" \n placeholder=\"Enter password\" name=\"pswd\">\n  <label \n for=\"pwd\">Password</label>\n</div>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_form_floating_labels&stacked=h"
+            },
+            {
+                "code": "<div class=\"form-floating\">\n  <textarea class=\"form-control\" \n id=\"comment\" name=\"text\" placeholder=\"Comment goes here\"></textarea>\n\n <label for=\"comment\">Comments</label>\n</div>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_form_floating_labels_textarea&stacked=h"
+            }
+        ],
+        "category": "HTML & CSS",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "BS5 HOME\nBS5 Get Started\nBS5 Containers\nBS5 Grid Basic\nBS5 Typography\nBS5 Colors\n\nText Colors\nBackground Colors\n\nBS5 Tables\nBS5 Images\nBS5 Jumbotron\nBS5 Alerts\nBS5 Buttons\nBS5 Button Groups\nBS5 Badges\nBS5 Progress Bars\nBS5 Spinners\nBS5 Pagination\nBS5 List Groups\nBS5 Cards\nBS5 Dropdowns\nBS5 Collapse\nBS5 Navs\nBS5 Navbar\nBS5 Carousel\nBS5 Modal\nBS5 Tooltip\nBS5 Popover\nBS5 Toast\nBS5 Scrollspy\nBS5 Offcanvas\nBS5 Utilities\nBS5 Dark Mode\nBS5 Flex",
+                "heading": "Bootstrap 5 Tutorial"
+            },
+            {
+                "content": "BS5 Forms\nBS5 Select Menus\nBS5 Checks and Radios\nBS5 Range\nBS5 Input Groups\nBS5 Floating Labels\nBS5 Form Validation\nBS5 Inputs\nBS5 Input Groups\nBS5 Custom Forms\n-->",
+                "heading": "Bootstrap 5 Forms"
+            },
+            {
+                "content": "BS5 Grid System\nBS5 Stacked/Horizontal\nBS5 Grid XSmall\nBS5 Grid Small\nBS5 Grid Medium\nBS5 Grid Large\nBS5 Grid XLarge\nBS5 Grid XXL\nBS5 Grid Examples",
+                "heading": "Bootstrap 5 Grid"
+            },
+            {
+                "content": "BS5 Certificate",
+                "heading": "Bootstrap 5 Cert"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Editor\nBS5 Exercises\nBS5 Quiz\nBS5 Syllabus\nBS5 Study Plan\nBS5 Interview Prep\n\nBS5 Utilities\nBS5 Flex\nBS5 Icons\nBS5 Media Objects\nBS5 Filters",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Exercises\nBS5 Quiz",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "All Classes\nJS Alert\nJS Button\nJS Carousel\nJS Collapse\nJS Dropdown\nJS Modal\nJS Popover\nJS Scrollspy\nJS Tab\nJS Toasts\nJS Tooltip\n\n-->\n\nny:-->\n\n ny:-->\n\nny:-->\n\nBootstrap 5 Form Floating Labels\n\n ❮ Previous\n Next ❯",
+                "heading": "Bootstrap 5 Ref"
+            },
+            {
+                "content": "By default, when using labels, they normally appear on top of the input field:\n\n Email Label\n\nWith floating labels, you can insert the label inside the input field, and make them float/animate when you click on the input field:\n\n Email\n\n Password\n\nExample\n\n <div class=\"form-floating mb-3 mt-3\">\n  <input type=\"text\" \n class=\"form-control\" id=\"email\" placeholder=\"Enter email\" name=\"email\">\n\n <label for=\"email\">Email</label>\n</div>\n\n<div class=\"form-floating \n mt-3 mb-3\">\n  <input type=\"text\" class=\"form-control\" id=\"pwd\" \n placeholder=\"Enter password\" name=\"pswd\">\n  <label \n for=\"pwd\">Password</label>\n</div>\n\nTry it Yourself »\n\nNotes on floating labels: The \n <label> elements must come after the <input> element, and the placeholder attribute \n is required for each \n <input> element (even though it is not shown).",
+                "heading": "Floating Labels / Animated Labels"
+            },
+            {
+                "content": "It also works for textareas:\n\n Comments\n\nExample\n\n <div class=\"form-floating\">\n  <textarea class=\"form-control\" \n id=\"comment\" name=\"text\" placeholder=\"Comment goes here\"></textarea>\n\n <label for=\"comment\">Comments</label>\n</div>\n\nTry it Yourself »",
+                "heading": "Textarea"
+            },
+            {
+                "content": "You can also use \"floating-labels\" on select menus. However, they will not float/get animated. The label will always appear in the top left corner, inside the select menu:\n\n 1\n 2\n 3\n 4\n\n Select list (select one):\n\nExample\n\n <div class=\"form-floating\">\n  <select class=\"form-select\" id=\"sel1\" \n name=\"sellist\">\n    <option>1</option>\n\n <option>2</option>\n    <option>3</option>\n\n <option>4</option>\n  </select>\n  <label for=\"sel1\" \n class=\"form-label\">Select list (select one):</label>\n</div>\n\nTry it Yourself »\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Select Menus"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:05:51Z",
+        "subject": "Bootstrap",
+        "title": "Bootstrap 5 Form Floating Labels"
+    },
+    {
+        "url": "https://www.w3schools.com/bootstrap5/bootstrap_form_validation.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "bootstrap_bootstrap_form_validation",
+        "code_examples": [
+            {
+                "code": "<form action=\"/action_page.php\" class=\"was-validated\">\n  <div \n class=\"mb-3 mt-3\">\n    <label for=\"uname\" \n class=\"form-label\">Username:</label>\n    <input type=\"text\" \n class=\"form-control\" id=\"uname\" placeholder=\"Enter username\" name=\"uname\" \n required>\n    <div class=\"valid-feedback\">Valid.</div>\n\n <div class=\"invalid-feedback\">Please fill out this field.</div>\n\n </div>\n  <div class=\"mb-3\">\n    <label for=\"pwd\" \n class=\"form-label\">Password:</label>\n    <input \n type=\"password\" class=\"form-control\" id=\"pwd\" placeholder=\"Enter password\" \n name=\"pswd\" required>\n    <div \n class=\"valid-feedback\">Valid.</div>\n    <div \n class=\"invalid-feedback\">Please fill out this field.</div>\n  </div>\n\n <div class=\"form-check mb-3\">\n    <input \n class=\"form-check-input\" type=\"checkbox\" id=\"myCheck\" name=\"remember\" \n required>\n    <label class=\"form-check-label\" \n for=\"myCheck\">I agree on blabla.</label>\n    <div \n class=\"valid-feedback\">Valid.</div>\n    <div \n class=\"invalid-feedback\">Check this checkbox to continue.</div>\n\n </div>\n  <button type=\"submit\" class=\"btn btn-primary\">Submit</button>\n\n </form>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_form_validation&stacked=h"
+            }
+        ],
+        "category": "HTML & CSS",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "BS5 HOME\nBS5 Get Started\nBS5 Containers\nBS5 Grid Basic\nBS5 Typography\nBS5 Colors\n\nText Colors\nBackground Colors\n\nBS5 Tables\nBS5 Images\nBS5 Jumbotron\nBS5 Alerts\nBS5 Buttons\nBS5 Button Groups\nBS5 Badges\nBS5 Progress Bars\nBS5 Spinners\nBS5 Pagination\nBS5 List Groups\nBS5 Cards\nBS5 Dropdowns\nBS5 Collapse\nBS5 Navs\nBS5 Navbar\nBS5 Carousel\nBS5 Modal\nBS5 Tooltip\nBS5 Popover\nBS5 Toast\nBS5 Scrollspy\nBS5 Offcanvas\nBS5 Utilities\nBS5 Dark Mode\nBS5 Flex",
+                "heading": "Bootstrap 5 Tutorial"
+            },
+            {
+                "content": "BS5 Forms\nBS5 Select Menus\nBS5 Checks and Radios\nBS5 Range\nBS5 Input Groups\nBS5 Floating Labels\nBS5 Form Validation\nBS5 Inputs\nBS5 Input Groups\nBS5 Custom Forms\n-->",
+                "heading": "Bootstrap 5 Forms"
+            },
+            {
+                "content": "BS5 Grid System\nBS5 Stacked/Horizontal\nBS5 Grid XSmall\nBS5 Grid Small\nBS5 Grid Medium\nBS5 Grid Large\nBS5 Grid XLarge\nBS5 Grid XXL\nBS5 Grid Examples",
+                "heading": "Bootstrap 5 Grid"
+            },
+            {
+                "content": "BS5 Certificate",
+                "heading": "Bootstrap 5 Cert"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Editor\nBS5 Exercises\nBS5 Quiz\nBS5 Syllabus\nBS5 Study Plan\nBS5 Interview Prep\n\nBS5 Utilities\nBS5 Flex\nBS5 Icons\nBS5 Media Objects\nBS5 Filters",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Exercises\nBS5 Quiz",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "All Classes\nJS Alert\nJS Button\nJS Carousel\nJS Collapse\nJS Dropdown\nJS Modal\nJS Popover\nJS Scrollspy\nJS Tab\nJS Toasts\nJS Tooltip\n\n-->\n\nny:-->\n\n ny:-->\n\nny:-->\n\nBootstrap 5 Form Validation\n\n ❮ Previous\n Next ❯",
+                "heading": "Bootstrap 5 Ref"
+            },
+            {
+                "content": "Username:\n\n Valid.\n\n Please fill out this field.\n\n Password:\n\n Valid.\n\n Please fill out this field.\n\n I agree on blabla.\n\n Valid.\n\n Check this checkbox to continue.\n\nYou can use different validation classes to provide valuable feedback to \nusers. Add either .was-validated or .needs-validation to the <form> element, \ndepending on whether you want to provide validation feedback before or after \nsubmitting the form. The input fields will have a green (valid) or red (invalid) \nborder to indicate what's missing in the form. You can also add a \n.valid-feedback or .invalid-feedback message to tell the user explicitly what's \nmissing, or needs to be done before submitting the form.\n\nExample\nIn this example, we use .was-validated to indicate what's missing before submitting the form:\n\n <form action=\"/action_page.php\" class=\"was-validated\">\n  <div \n class=\"mb-3 mt-3\">\n    <label for=\"uname\" \n class=\"form-label\">Username:</label>\n    <input type=\"text\" \n class=\"form-control\" id=\"uname\" placeholder=\"Enter username\" name=\"uname\" \n required>\n    <div class=\"valid-feedback\">Valid.</div>\n\n <div class=\"invalid-feedback\">Please fill out this field.</div>\n\n </div>\n  <div class=\"mb-3\">\n    <label for=\"pwd\" \n class=\"form-label\">Password:</label>\n    <input \n type=\"password\" class=\"form-control\" id=\"pwd\" placeholder=\"Enter password\" \n name=\"pswd\" required>\n    <div \n class=\"valid-feedback\">Valid.</div>\n    <div \n class=\"invalid-feedback\">Please fill out this field.</div>\n  </div>\n\n <div class=\"form-check mb-3\">\n    <input \n class=\"form-check-input\" type=\"checkbox\" id=\"myCheck\" name=\"remember\" \n required>\n    <label class=\"form-check-label\" \n for=\"myCheck\">I agree on blabla.</label>\n    <div \n class=\"valid-feedback\">Valid.</div>\n    <div \n class=\"invalid-feedback\">Check this checkbox to continue.</div>\n\n </div>\n  <button type=\"submit\" class=\"btn btn-primary\">Submit</button>\n\n </form>\n\nTry it Yourself »",
+                "heading": "Form Validation"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:05:51Z",
+        "subject": "Bootstrap",
+        "title": "Bootstrap 5 Form Validation"
+    },
+    {
+        "url": "https://www.w3schools.com/bootstrap5/bootstrap_grid_system.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "bootstrap_bootstrap_grid_system",
+        "code_examples": [
+            {
+                "code": "<!-- Control the column width, and how they should appear on different \n devices -->\n<div class=\"row\">\n  <div class=\"col-*-*\"></div>\n\n <div class=\"col-*-*\"></div>\n</div>\n<div class=\"row\">\n  <div class=\"col-*-*\"></div>\n  <div class=\"col-*-*\"></div>\n  <div class=\"col-*-*\"></div>\n</div>\n\n<!-- Or let Bootstrap automatically handle the layout -->\n<div class=\"row\">\n  <div class=\"col\"></div>\n  <div class=\"col\"></div>\n  <div class=\"col\"></div>\n</div>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_grid_ex_structure&stacked=h"
+            }
+        ],
+        "category": "HTML & CSS",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "BS5 HOME\nBS5 Get Started\nBS5 Containers\nBS5 Grid Basic\nBS5 Typography\nBS5 Colors\n\nText Colors\nBackground Colors\n\nBS5 Tables\nBS5 Images\nBS5 Jumbotron\nBS5 Alerts\nBS5 Buttons\nBS5 Button Groups\nBS5 Badges\nBS5 Progress Bars\nBS5 Spinners\nBS5 Pagination\nBS5 List Groups\nBS5 Cards\nBS5 Dropdowns\nBS5 Collapse\nBS5 Navs\nBS5 Navbar\nBS5 Carousel\nBS5 Modal\nBS5 Tooltip\nBS5 Popover\nBS5 Toast\nBS5 Scrollspy\nBS5 Offcanvas\nBS5 Utilities\nBS5 Dark Mode\nBS5 Flex",
+                "heading": "Bootstrap 5 Tutorial"
+            },
+            {
+                "content": "BS5 Forms\nBS5 Select Menus\nBS5 Checks and Radios\nBS5 Range\nBS5 Input Groups\nBS5 Floating Labels\nBS5 Form Validation\nBS5 Inputs\nBS5 Input Groups\nBS5 Custom Forms\n-->",
+                "heading": "Bootstrap 5 Forms"
+            },
+            {
+                "content": "BS5 Grid System\nBS5 Stacked/Horizontal\nBS5 Grid XSmall\nBS5 Grid Small\nBS5 Grid Medium\nBS5 Grid Large\nBS5 Grid XLarge\nBS5 Grid XXL\nBS5 Grid Examples",
+                "heading": "Bootstrap 5 Grid"
+            },
+            {
+                "content": "BS5 Certificate",
+                "heading": "Bootstrap 5 Cert"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Editor\nBS5 Exercises\nBS5 Quiz\nBS5 Syllabus\nBS5 Study Plan\nBS5 Interview Prep\n\nBS5 Utilities\nBS5 Flex\nBS5 Icons\nBS5 Media Objects\nBS5 Filters",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Exercises\nBS5 Quiz",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "All Classes\nJS Alert\nJS Button\nJS Carousel\nJS Collapse\nJS Dropdown\nJS Modal\nJS Popover\nJS Scrollspy\nJS Tab\nJS Toasts\nJS Tooltip\n\n-->\n\nny:-->\n\n ny:-->\n\nny:-->\n\nBootstrap 5 Grid System\n\n❮ Previous\nNext ❯",
+                "heading": "Bootstrap 5 Ref"
+            },
+            {
+                "content": "Bootstrap's grid system is built with flexbox and allows up to 12 columns across the page.\n\nIf you do not want to use all 12 columns individually, you can group the \ncolumns together to create wider columns:\n\n span 1\n span 1 \n span 1\n span 1\n span 1 \n span 1\n span 1\n span 1 \n span 1\n span 1\n span 1 \n span 1\n\n  span 4\n  span 4 \n  span 4\n\n span 4\n span 8 \n\n span 6\n span 6 \n\n span 12\n\nThe grid system is responsive, and the columns will re-arrange automatically depending on the screen size.\n\nMake sure that the sum adds up to 12 or fewer (it is not required that you \nuse all 12 available columns).",
+                "heading": "The Grid System"
+            },
+            {
+                "content": "The Bootstrap 5 grid system has six classes:\n\n .col- (extra small devices - screen width less than 576px)\n\n .col-sm- (small devices - screen width equal to or greater than 576px)\n\n .col-md- (medium devices - screen width equal to or greater than 768px)\n\n .col-lg- (large devices - screen width equal to or greater than 992px)\n\n .col-xl- (xlarge devices - screen width equal to or greater than 1200px)\n\n .col-xxl- (xxlarge devices - screen width equal to or greater than 1400px)\n\nThe classes above can be combined to create more dynamic and flexible layouts.\n\nTip: Each class scales up, so if you want to set the same widths for \nsm and md, you only need to specify sm.",
+                "heading": "Grid Classes"
+            },
+            {
+                "content": "The following is a basic structure of a Bootstrap 5 grid:\n\n <!-- Control the column width, and how they should appear on different \n devices -->\n<div class=\"row\">\n  <div class=\"col-*-*\"></div>\n\n <div class=\"col-*-*\"></div>\n</div>\n<div class=\"row\">\n  <div class=\"col-*-*\"></div>\n  <div class=\"col-*-*\"></div>\n  <div class=\"col-*-*\"></div>\n</div>\n\n<!-- Or let Bootstrap automatically handle the layout -->\n<div class=\"row\">\n  <div class=\"col\"></div>\n  <div class=\"col\"></div>\n  <div class=\"col\"></div>\n</div>\n\nTry it Yourself »\n\nFirst example: create a row (<div \nclass=\"row\">). Then, add the desired number of columns (tags with appropriate \n.col-*-* classes). The first star (*) \nrepresents the responsiveness: sm, md, lg, xl or xxl, while the second star \nrepresents a number, which should add up to 12 for each row.\n\nSecond example: instead of adding a number to each col, let bootstrap handle \nthe layout, to create equal width columns: two \"col\" elements = 50% width to \neach col, while three cols = 33.33% width to each col. Four cols = 25% width, etc. You \ncan also use .col-sm|md|lg|xl|xxl to make the columns responsive.",
+                "heading": "Basic Structure of a Bootstrap 5 Grid"
+            },
+            {
+                "content": "The following table summarizes how the Bootstrap 5 grid system works across \ndifferent screen sizes:\n\n Extra small (<576px)\n Small (>=576px)\n Medium (>=768px)\n Large (>=992px)\n Extra Large (>=1200px)\n XXL (>=1400px)\n\n Class prefix\n .col-\n .col-sm-\n .col-md-\n .col-lg-\n .col-xl-\n .col-xxl-\n\n Grid behaviour\n Horizontal at all times\n Collapsed to start, horizontal above breakpoints\n Collapsed to start, horizontal above breakpoints\n Collapsed to start, horizontal above breakpoints \n Collapsed to start, horizontal above breakpoints \n Collapsed to start, horizontal above breakpoints \n\n Container width\n None (auto)\n 540px\n 720px\n 960px\n 1140px\n 1320px\n\n Suitable for\n Portrait phones\n Landscape phones\n Tablets\n Laptops\n Laptops and Desktops \n Laptops and Desktops \n\n # of columns\n 12\n 12\n 12\n 12 \n 12 \n 12 \n\n Gutter width\n 1.5rem (.75rem on each side of a column)\n 1.5rem (.75rem on each side of a column)\n 1.5rem (.75rem on each side of a column)\n 1.5rem (.75rem on each side of a column)\n 1.5rem (.75rem on each side of a column)\n 1.5rem (.75rem on each side of a column)\n\n Nestable\n Yes\n Yes\n Yes\n Yes\n Yes\n Yes\n\n Offsets\n Yes\n Yes\n Yes\n Yes\n Yes\n Yes\n\n Column ordering\n Yes\n Yes\n Yes\n Yes\n Yes\n Yes",
+                "heading": "Grid Options"
+            },
+            {
+                "content": "The next chapters shows examples of grid systems for different devices and screen widths:\n\n Stacked-to-horizontal\n\n Extra Small Layout\n\n Small devices\n\n Medium devices\n\n Large devices\n\n Extra large devices\n\n XXLarge devices\n\n More grid examples\n\n -->\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Examples"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:05:51Z",
+        "subject": "Bootstrap",
+        "title": "Bootstrap 5 Grid System"
+    },
+    {
+        "url": "https://www.w3schools.com/bootstrap5/bootstrap_grid_stacked_to_hor.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "bootstrap_bootstrap_grid_stacked_to_hor",
+        "code_examples": [
+            {
+                "code": "<div class=\"container-fluid\">\n  <div class=\"row\">\n\n     <div class=\"col-sm-6 bg-primary\">\n      <p>Lorem ipsum...</p>\n    </div>\n\n     <div class=\"col-sm-6 bg-dark\">\n      <p>Sed ut perspiciatis...</p>\n    </div>\n  </div>\n\n </div>",
+                "language": "bootstrap",
+                "heading": "Example: Stacked-to-horizontal",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_grid_stacked_to_hor&stacked=h"
+            }
+        ],
+        "category": "HTML & CSS",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "BS5 HOME\nBS5 Get Started\nBS5 Containers\nBS5 Grid Basic\nBS5 Typography\nBS5 Colors\n\nText Colors\nBackground Colors\n\nBS5 Tables\nBS5 Images\nBS5 Jumbotron\nBS5 Alerts\nBS5 Buttons\nBS5 Button Groups\nBS5 Badges\nBS5 Progress Bars\nBS5 Spinners\nBS5 Pagination\nBS5 List Groups\nBS5 Cards\nBS5 Dropdowns\nBS5 Collapse\nBS5 Navs\nBS5 Navbar\nBS5 Carousel\nBS5 Modal\nBS5 Tooltip\nBS5 Popover\nBS5 Toast\nBS5 Scrollspy\nBS5 Offcanvas\nBS5 Utilities\nBS5 Dark Mode\nBS5 Flex",
+                "heading": "Bootstrap 5 Tutorial"
+            },
+            {
+                "content": "BS5 Forms\nBS5 Select Menus\nBS5 Checks and Radios\nBS5 Range\nBS5 Input Groups\nBS5 Floating Labels\nBS5 Form Validation\nBS5 Inputs\nBS5 Input Groups\nBS5 Custom Forms\n-->",
+                "heading": "Bootstrap 5 Forms"
+            },
+            {
+                "content": "BS5 Grid System\nBS5 Stacked/Horizontal\nBS5 Grid XSmall\nBS5 Grid Small\nBS5 Grid Medium\nBS5 Grid Large\nBS5 Grid XLarge\nBS5 Grid XXL\nBS5 Grid Examples",
+                "heading": "Bootstrap 5 Grid"
+            },
+            {
+                "content": "BS5 Certificate",
+                "heading": "Bootstrap 5 Cert"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Editor\nBS5 Exercises\nBS5 Quiz\nBS5 Syllabus\nBS5 Study Plan\nBS5 Interview Prep\n\nBS5 Utilities\nBS5 Flex\nBS5 Icons\nBS5 Media Objects\nBS5 Filters",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Exercises\nBS5 Quiz",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "All Classes\nJS Alert\nJS Button\nJS Carousel\nJS Collapse\nJS Dropdown\nJS Modal\nJS Popover\nJS Scrollspy\nJS Tab\nJS Toasts\nJS Tooltip\n\n-->\n\nny:-->\n\n ny:-->\n\nny:-->\n\nBootstrap 5 Grid Stacked to horizontal\n\n❮ Previous\nNext ❯",
+                "heading": "Bootstrap 5 Ref"
+            },
+            {
+                "content": "Let's create a basic grid system that starts out stacked on extra small devices, before becoming horizontal on \nlarger devices.\n\nThe following example shows a simple \"stacked-to-horizontal\" two-column layout, meaning it will result in a 50%/50% split on all screens, except for extra small screens, which it will automatically stack (100%):\n\n col-sm-6\n\n col-sm-6\n\nExample: Stacked-to-horizontal\n\n <div class=\"container-fluid\">\n  <div class=\"row\">\n\n     <div class=\"col-sm-6 bg-primary\">\n      <p>Lorem ipsum...</p>\n    </div>\n\n     <div class=\"col-sm-6 bg-dark\">\n      <p>Sed ut perspiciatis...</p>\n    </div>\n  </div>\n\n </div>\n\nTry it Yourself »\n\n Tip: The numbers in the .col-sm-* classes indicates how many columns the \ndiv should \nspan (out of 12). So, .col-sm-1 spans 1 column, .col-sm-4 spans 4 columns, \n.col-sm-6 spans 6 columns, etc.\n\nNote: \n Make sure that the sum adds up to 12 or fewer (it is not required that you use \n all 12 available columns):\n\nTip: You can turn any full-width layout \ninto a fixed-width responsive layout, by changing \nthe .container-fluid class to .container:\n\nExample: Responsive Container\n\n <div class=\"container\">\n  <div class=\"row\">\n\n     <div class=\"col-sm-6\">\n      <p>Lorem ipsum...</p>\n    </div>\n\n     <div class=\"col-sm-6\">\n      <p>Sed ut perspiciatis...</p>\n    </div>\n  </div>\n</div>\n\nTry it Yourself »",
+                "heading": "Grid Example: Stacked-to-horizontal"
+            },
+            {
+                "content": "In Bootstrap 5, there is an easy way to create equal width columns for all devices: just remove the number from .col-size-* and only use the .col-size class on a specified number of \ncol elements. Bootstrap will recognize how many columns there \nare, and each column will get the same width. The size classes \n(sm, md, etc.) determines when the columns should be responsive:\n\n <!-- Two columns: 50% width on all screens, except for extra small (100% \n width) -->\n<div class=\"row\">\n  <div class=\"col-sm\">1 of \n 2</div>\n\n<div class=\"col-sm\">2 of 2</div>\n</div>\n\n<!-- Four \n columns: 25% width on all screens, except for extra small (100% width)-->\n<div class=\"row\">\n  <div class=\"col-sm\">1 of 4</div>\n\n<div class=\"col-sm\">2 of 4</div>\n  <div class=\"col-sm\">3 \n of 4</div>\n  <div class=\"col-sm\">4 of 4</div>\n\n </div>\n\n 1 of 2\n\n 2 of 2\n\n 1 of 4\n\n 2 of 4\n\n 3 of 4\n\n 4 of 4\n\nTry it Yourself »\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Auto Layout Columns"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:05:51Z",
+        "subject": "Bootstrap",
+        "title": "Bootstrap 5 Grid Stacked to horizontal"
+    },
+    {
+        "url": "https://www.w3schools.com/bootstrap5/bootstrap_grid_xsmall.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "bootstrap_bootstrap_grid_xsmall",
+        "code_examples": [
+            {
+                "code": "<div class=\"col-3\">....</div>\n\n<div class=\"col-9\">....</div>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<div class=\"container-fluid\">\n  <div class=\"row\">\n\n     <div class=\"col-3 bg-primary\">\n      <p>Lorem ipsum...</p>\n    </div>\n\n     <div class=\"col-9 bg-dark\">\n      <p>Sed ut perspiciatis...</p>\n    </div>\n  </div>\n\n </div>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_grid_xs&stacked=h"
+            },
+            {
+                "code": "<!-- 33.3%/66.6% split -->\n<div class=\"container-fluid\">\n  <div class=\"row\">\n\n     <div class=\"col-4 bg-primary\">\n      <p>Lorem ipsum...</p>\n    </div>\n\n     <div class=\"col-8 bg-dark\">\n      <p>Sed ut perspiciatis...</p>\n    </div>\n  </div>\n\n </div>\n\n<!-- 50%/50% split -->\n<div class=\"container-fluid\">\n  <div class=\"row\">\n\n     <div class=\"col-6 bg-primary\">\n      <p>Lorem ipsum...</p>\n    </div>\n\n     <div class=\"col-6 bg-dark\">\n      <p>Sed ut perspiciatis...</p>\n    </div>\n  </div>\n\n </div>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_grid_xs2&stacked=h"
+            }
+        ],
+        "category": "HTML & CSS",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "BS5 HOME\nBS5 Get Started\nBS5 Containers\nBS5 Grid Basic\nBS5 Typography\nBS5 Colors\n\nText Colors\nBackground Colors\n\nBS5 Tables\nBS5 Images\nBS5 Jumbotron\nBS5 Alerts\nBS5 Buttons\nBS5 Button Groups\nBS5 Badges\nBS5 Progress Bars\nBS5 Spinners\nBS5 Pagination\nBS5 List Groups\nBS5 Cards\nBS5 Dropdowns\nBS5 Collapse\nBS5 Navs\nBS5 Navbar\nBS5 Carousel\nBS5 Modal\nBS5 Tooltip\nBS5 Popover\nBS5 Toast\nBS5 Scrollspy\nBS5 Offcanvas\nBS5 Utilities\nBS5 Dark Mode\nBS5 Flex",
+                "heading": "Bootstrap 5 Tutorial"
+            },
+            {
+                "content": "BS5 Forms\nBS5 Select Menus\nBS5 Checks and Radios\nBS5 Range\nBS5 Input Groups\nBS5 Floating Labels\nBS5 Form Validation\nBS5 Inputs\nBS5 Input Groups\nBS5 Custom Forms\n-->",
+                "heading": "Bootstrap 5 Forms"
+            },
+            {
+                "content": "BS5 Grid System\nBS5 Stacked/Horizontal\nBS5 Grid XSmall\nBS5 Grid Small\nBS5 Grid Medium\nBS5 Grid Large\nBS5 Grid XLarge\nBS5 Grid XXL\nBS5 Grid Examples",
+                "heading": "Bootstrap 5 Grid"
+            },
+            {
+                "content": "BS5 Certificate",
+                "heading": "Bootstrap 5 Cert"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Editor\nBS5 Exercises\nBS5 Quiz\nBS5 Syllabus\nBS5 Study Plan\nBS5 Interview Prep\n\nBS5 Utilities\nBS5 Flex\nBS5 Icons\nBS5 Media Objects\nBS5 Filters",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Exercises\nBS5 Quiz",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "All Classes\nJS Alert\nJS Button\nJS Carousel\nJS Collapse\nJS Dropdown\nJS Modal\nJS Popover\nJS Scrollspy\nJS Tab\nJS Toasts\nJS Tooltip\n\n-->\n\nny:-->\n\n ny:-->\n\nny:-->\n\nBootstrap 5 Grid Extra Small\n\n❮ Previous\nNext ❯",
+                "heading": "Bootstrap 5 Ref"
+            },
+            {
+                "content": "XSmall\n Small\n Medium\n Large\n Extra Large\n XXL\n\n Class prefix\n .col-\n .col-sm-\n .col-md-\n .col-lg-\n .col-xl-\n .col-xxl-\n\n Screen width\n <576px\n >=576px\n >=768px\n >=992px\n >=1200px\n >=1400px\n\nAssume we have a simple layout with two columns. We want the columns to \nsplit 25%/75% for ALL devices.\n\nWe will add the following classes to our two columns:\n\n<div class=\"col-3\">....</div>\n\n<div class=\"col-9\">....</div>\n\nThe following example will result in a 25%/75% split on all devices (extra \nsmall, small, medium, large, xlarge and xxlarge).\n\n col-3\n\n col-9\n\n Example\n\n <div class=\"container-fluid\">\n  <div class=\"row\">\n\n     <div class=\"col-3 bg-primary\">\n      <p>Lorem ipsum...</p>\n    </div>\n\n     <div class=\"col-9 bg-dark\">\n      <p>Sed ut perspiciatis...</p>\n    </div>\n  </div>\n\n </div>\n\nTry it Yourself »\n\n Note: Make sure that the sum adds up to 12 or fewer (it is \n not required that you use all 12 available columns):\n\nFor a 33.3%/66.6% split, you would use .col-4 and .col-8 (and for a 50%/50% split, you would use .col-6 and .col-6):\n\n col-4\n\n col-8\n\n col-6\n\n col-6\n\n Example\n\n <!-- 33.3%/66.6% split -->\n<div class=\"container-fluid\">\n  <div class=\"row\">\n\n     <div class=\"col-4 bg-primary\">\n      <p>Lorem ipsum...</p>\n    </div>\n\n     <div class=\"col-8 bg-dark\">\n      <p>Sed ut perspiciatis...</p>\n    </div>\n  </div>\n\n </div>\n\n<!-- 50%/50% split -->\n<div class=\"container-fluid\">\n  <div class=\"row\">\n\n     <div class=\"col-6 bg-primary\">\n      <p>Lorem ipsum...</p>\n    </div>\n\n     <div class=\"col-6 bg-dark\">\n      <p>Sed ut perspiciatis...</p>\n    </div>\n  </div>\n\n </div>\n\nTry it Yourself »",
+                "heading": "Extra Small Grid Example"
+            },
+            {
+                "content": "In Bootstrap 5, there is an easy way to create equal width columns for all devices: just remove the number from .col-* and only use the .col class on a specified number of \ncol elements. Bootstrap will recognize how many columns there are, and each column will get the same width:\n\n <!-- Two columns: 50% width-->\n<div class=\"row\">\n  <div class=\"col\">1 of \n 2</div>\n\n<div class=\"col\">2 of 2</div>\n</div>\n\n<!-- Four \n columns: 25% width-->\n<div class=\"row\">\n  <div class=\"col\">1 of 4</div>\n\n<div class=\"col\">2 of 4</div>\n  <div class=\"col\">3 \n of 4</div>\n  <div class=\"col\">4 of 4</div>\n\n </div>\n\n 1 of 2\n\n 2 of 2\n\n 1 of 4\n\n 2 of 4\n\n 3 of 4\n\n 4 of 4\n\nTry it Yourself »\n\nThe next chapter shows how to add a different split percent for small devices.\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Auto Layout Columns"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:05:52Z",
+        "subject": "Bootstrap",
+        "title": "Bootstrap 5 Grid Extra Small"
+    },
+    {
+        "url": "https://www.w3schools.com/bootstrap5/bootstrap_grid_small.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "bootstrap_bootstrap_grid_small",
+        "code_examples": [
+            {
+                "code": "<div class=\"col-sm-3\">....</div>\n\n<div class=\"col-sm-9\">....</div>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<div class=\"container-fluid\">\n  <div class=\"row\">\n\n     <div class=\"col-sm-3 bg-primary\">\n      <p>Lorem ipsum...</p>\n    </div>\n\n     <div class=\"col-sm-9 bg-dark\">\n      <p>Sed ut perspiciatis...</p>\n    </div>\n  </div>\n\n </div>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_grid_small&stacked=h"
+            },
+            {
+                "code": "<!-- 33.3/66.6% split: -->\n<div class=\"container-fluid\">\n  <div class=\"row\">\n\n     <div class=\"col-sm-4 bg-primary\">\n      <p>Lorem ipsum...</p>\n    </div>\n\n     <div class=\"col-sm-8 bg-dark\">\n      <p>Sed ut perspiciatis...</p>\n    </div>\n  </div>\n\n </div>\n\n<!-- 50%/50% split: -->\n<div class=\"container-fluid\">\n  <div class=\"row\">\n\n     <div class=\"col-sm-6 bg-primary\">\n      <p>Lorem ipsum...</p>\n    </div>\n\n     <div class=\"col-sm-6 bg-dark\">\n      <p>Sed ut perspiciatis...</p>\n    </div>\n  </div>\n\n </div>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_grid_small2&stacked=h"
+            }
+        ],
+        "category": "HTML & CSS",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "BS5 HOME\nBS5 Get Started\nBS5 Containers\nBS5 Grid Basic\nBS5 Typography\nBS5 Colors\n\nText Colors\nBackground Colors\n\nBS5 Tables\nBS5 Images\nBS5 Jumbotron\nBS5 Alerts\nBS5 Buttons\nBS5 Button Groups\nBS5 Badges\nBS5 Progress Bars\nBS5 Spinners\nBS5 Pagination\nBS5 List Groups\nBS5 Cards\nBS5 Dropdowns\nBS5 Collapse\nBS5 Navs\nBS5 Navbar\nBS5 Carousel\nBS5 Modal\nBS5 Tooltip\nBS5 Popover\nBS5 Toast\nBS5 Scrollspy\nBS5 Offcanvas\nBS5 Utilities\nBS5 Dark Mode\nBS5 Flex",
+                "heading": "Bootstrap 5 Tutorial"
+            },
+            {
+                "content": "BS5 Forms\nBS5 Select Menus\nBS5 Checks and Radios\nBS5 Range\nBS5 Input Groups\nBS5 Floating Labels\nBS5 Form Validation\nBS5 Inputs\nBS5 Input Groups\nBS5 Custom Forms\n-->",
+                "heading": "Bootstrap 5 Forms"
+            },
+            {
+                "content": "BS5 Grid System\nBS5 Stacked/Horizontal\nBS5 Grid XSmall\nBS5 Grid Small\nBS5 Grid Medium\nBS5 Grid Large\nBS5 Grid XLarge\nBS5 Grid XXL\nBS5 Grid Examples",
+                "heading": "Bootstrap 5 Grid"
+            },
+            {
+                "content": "BS5 Certificate",
+                "heading": "Bootstrap 5 Cert"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Editor\nBS5 Exercises\nBS5 Quiz\nBS5 Syllabus\nBS5 Study Plan\nBS5 Interview Prep\n\nBS5 Utilities\nBS5 Flex\nBS5 Icons\nBS5 Media Objects\nBS5 Filters",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Exercises\nBS5 Quiz",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "All Classes\nJS Alert\nJS Button\nJS Carousel\nJS Collapse\nJS Dropdown\nJS Modal\nJS Popover\nJS Scrollspy\nJS Tab\nJS Toasts\nJS Tooltip\n\n-->\n\nny:-->\n\n ny:-->\n\nny:-->\n\nBootstrap 5 Grid Small\n\n❮ Previous\nNext ❯",
+                "heading": "Bootstrap 5 Ref"
+            },
+            {
+                "content": "XSmall\n Small\n Medium\n Large\n Extra Large\n XXL\n\n Class prefix\n .col-\n .col-sm-\n .col-md-\n .col-lg-\n .col-xl-\n .col-xxl-\n\n Screen width\n <576px\n >=576px\n >=768px\n >=992px\n >=1200px\n >=1400px\n\nAssume we have a simple layout with two columns. We want the columns to be \nsplit 25%/75% for small devices.\n\nSmall devices are defined as having a screen width from \n576 pixels to 767 pixels.\n\nFor small devices we will use the .col-sm-* classes.\n\nWe will add the following classes to our two columns:\n\n<div class=\"col-sm-3\">....</div>\n\n<div class=\"col-sm-9\">....</div>\n\nThe following example will result in a 25%/75% split on small (and medium, large, xlarge and xxlarge) devices. On extra small devices, it will automatically stack (100%):\n\n .col-sm-3\n\n .col-sm-9\n\n Example\n\n <div class=\"container-fluid\">\n  <div class=\"row\">\n\n     <div class=\"col-sm-3 bg-primary\">\n      <p>Lorem ipsum...</p>\n    </div>\n\n     <div class=\"col-sm-9 bg-dark\">\n      <p>Sed ut perspiciatis...</p>\n    </div>\n  </div>\n\n </div>\n\nTry it Yourself »\n\n Note: Make sure that the sum adds up to 12 or fewer (it is \n not required that you use all 12 available columns):\n\nFor a 33.3%/66.6% split, you would use .col-sm-4 and .col-sm-8 (and for a 50%/50% split, you would use .col-sm-6 and .col-sm-6):\n\n .col-sm-4\n\n .col-sm-8\n\n .col-sm-6\n\n .col-sm-6\n\n Example\n\n <!-- 33.3/66.6% split: -->\n<div class=\"container-fluid\">\n  <div class=\"row\">\n\n     <div class=\"col-sm-4 bg-primary\">\n      <p>Lorem ipsum...</p>\n    </div>\n\n     <div class=\"col-sm-8 bg-dark\">\n      <p>Sed ut perspiciatis...</p>\n    </div>\n  </div>\n\n </div>\n\n<!-- 50%/50% split: -->\n<div class=\"container-fluid\">\n  <div class=\"row\">\n\n     <div class=\"col-sm-6 bg-primary\">\n      <p>Lorem ipsum...</p>\n    </div>\n\n     <div class=\"col-sm-6 bg-dark\">\n      <p>Sed ut perspiciatis...</p>\n    </div>\n  </div>\n\n </div>\n\nTry it Yourself »",
+                "heading": "Small Grid Example"
+            },
+            {
+                "content": "In Bootstrap 5, there is an easy way to create equal width columns for all devices: just remove the number from .col-sm-* and only use the .col-sm class on a specified number of \ncol elements. Bootstrap will recognize how many columns there \nare, and each column will get the same width.\n\nIf the screen size is less than 576px, the columns will \nstack horizontally:\n\n <!-- Two columns: 50% width on all screens, except for extra small (100% \n width) -->\n<div class=\"row\">\n  <div class=\"col-sm\">1 of \n 2</div>\n\n<div class=\"col-sm\">2 of 2</div>\n</div>\n\n<!-- Four \n columns: 25% width on all screens, except for extra small (100% width)-->\n<div class=\"row\">\n  <div class=\"col-sm\">1 of 4</div>\n\n<div class=\"col-sm\">2 of 4</div>\n  <div class=\"col-sm\">3 \n of 4</div>\n  <div class=\"col-sm\">4 of 4</div>\n\n </div>\n\n 1 of 2\n\n 2 of 2\n\n 1 of 4\n\n 2 of 4\n\n 3 of 4\n\n 4 of 4\n\nTry it Yourself »\n\nThe next chapter shows how to add a different split percent for medium devices.\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Auto Layout Columns"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:05:52Z",
+        "subject": "Bootstrap",
+        "title": "Bootstrap 5 Grid Small"
+    },
+    {
+        "url": "https://www.w3schools.com/bootstrap5/bootstrap_grid_medium.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "bootstrap_bootstrap_grid_medium",
+        "code_examples": [
+            {
+                "code": "<div class=\"col-sm-3\">....</div>\n\n<div class=\"col-sm-9\">....</div>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<div class=\"col-sm-3 col-md-6\">....</div>\n\n<div class=\"col-sm-9 col-md-6\">....</div>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<div class=\"container-fluid\">\n  <div class=\"row\">\n\n     <div class=\"col-sm-3 col-md-6\">\n      <p>Lorem ipsum...</p>\n    </div>\n\n     <div class=\"col-sm-9 col-md-6\">\n      <p>Sed ut perspiciatis...</p>\n    </div>\n  </div>\n\n </div>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_grid_medium&stacked=h"
+            }
+        ],
+        "category": "HTML & CSS",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "BS5 HOME\nBS5 Get Started\nBS5 Containers\nBS5 Grid Basic\nBS5 Typography\nBS5 Colors\n\nText Colors\nBackground Colors\n\nBS5 Tables\nBS5 Images\nBS5 Jumbotron\nBS5 Alerts\nBS5 Buttons\nBS5 Button Groups\nBS5 Badges\nBS5 Progress Bars\nBS5 Spinners\nBS5 Pagination\nBS5 List Groups\nBS5 Cards\nBS5 Dropdowns\nBS5 Collapse\nBS5 Navs\nBS5 Navbar\nBS5 Carousel\nBS5 Modal\nBS5 Tooltip\nBS5 Popover\nBS5 Toast\nBS5 Scrollspy\nBS5 Offcanvas\nBS5 Utilities\nBS5 Dark Mode\nBS5 Flex",
+                "heading": "Bootstrap 5 Tutorial"
+            },
+            {
+                "content": "BS5 Forms\nBS5 Select Menus\nBS5 Checks and Radios\nBS5 Range\nBS5 Input Groups\nBS5 Floating Labels\nBS5 Form Validation\nBS5 Inputs\nBS5 Input Groups\nBS5 Custom Forms\n-->",
+                "heading": "Bootstrap 5 Forms"
+            },
+            {
+                "content": "BS5 Grid System\nBS5 Stacked/Horizontal\nBS5 Grid XSmall\nBS5 Grid Small\nBS5 Grid Medium\nBS5 Grid Large\nBS5 Grid XLarge\nBS5 Grid XXL\nBS5 Grid Examples",
+                "heading": "Bootstrap 5 Grid"
+            },
+            {
+                "content": "BS5 Certificate",
+                "heading": "Bootstrap 5 Cert"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Editor\nBS5 Exercises\nBS5 Quiz\nBS5 Syllabus\nBS5 Study Plan\nBS5 Interview Prep\n\nBS5 Utilities\nBS5 Flex\nBS5 Icons\nBS5 Media Objects\nBS5 Filters",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Exercises\nBS5 Quiz",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "All Classes\nJS Alert\nJS Button\nJS Carousel\nJS Collapse\nJS Dropdown\nJS Modal\nJS Popover\nJS Scrollspy\nJS Tab\nJS Toasts\nJS Tooltip\n\n-->\n\nny:-->\n\n ny:-->\n\nny:-->\n\nBootstrap 5 Grid Medium \n\n❮ Previous\nNext ❯",
+                "heading": "Bootstrap 5 Ref"
+            },
+            {
+                "content": "XSmall\n Small\n Medium\n Large\n Extra Large\n XXL\n\n Class prefix\n .col-\n .col-sm-\n .col-md-\n .col-lg-\n .col-xl-\n .col-xxl-\n\n Screen width\n <576px\n >=576px\n >=768px\n >=992px\n >=1200px\n >=1400px\n\nIn the previous chapter, we presented a grid example with classes for small \ndevices. We used two divs (columns) and we gave them a 25%/75% split:\n\n<div class=\"col-sm-3\">....</div>\n\n<div class=\"col-sm-9\">....</div>\n\nBut on medium devices the design may be better as a 50%/50% split.\n\nMedium devices are defined as having a screen width \nfrom 768 pixels to 991 pixels.\n\nFor medium devices we will use the .col-md-* classes:\n\n <div class=\"col-sm-3 col-md-6\">....</div>\n\n<div class=\"col-sm-9 col-md-6\">....</div>\n\nNow Bootstrap is going to say \"at the small size, look at classes with \n-sm- in them and use those. At the medium size, look at classes with \n-md- in them and use those\".\n\nThe following example will result in a 25%/75% split on small devices and a \n50%/50% split on medium (and large, xlarge and xxlarge) devices. On extra small devices, it will \nautomatically stack (100%):\n\n.col-sm-3 .col-md-6\n\n.col-sm-9 .col-md-6\n\nExample\n\n <div class=\"container-fluid\">\n  <div class=\"row\">\n\n     <div class=\"col-sm-3 col-md-6\">\n      <p>Lorem ipsum...</p>\n    </div>\n\n     <div class=\"col-sm-9 col-md-6\">\n      <p>Sed ut perspiciatis...</p>\n    </div>\n  </div>\n\n </div>\n\nTry it Yourself »\n\n Note: Make sure that the sum adds up to 12 or fewer (it is \n not required that you use all 12 available columns):",
+                "heading": "Medium Grid Example"
+            },
+            {
+                "content": "In the example below, we only specify the .col-md-6 class (without .col-sm-*). This means that medium, large, \nextra large and XXL devices will split 50%/50% - because the class scales up. However, \nfor small and extra small devices, it will stack vertically (100% width):\n\nExample\n\n <div class=\"row\">\n  <div class=\"col-md-6\">\n    <p>Lorem ipsum...</p>\n  </div>\n\n   <div class=\"col-md-6\">\n\n     <p>Sed ut perspiciatis...</p>\n  </div>\n</div>\n\nTry it Yourself »",
+                "heading": "Using Only Medium"
+            },
+            {
+                "content": "In Bootstrap 5, there is an easy way to create equal width columns for all devices: just remove the number from .col-md-* and only use the .col-md class on a specified number of \ncol elements. Bootstrap will recognize how many columns there \nare, and each column will get the same width.\n\nIf the screen size is less than 768px, the columns will \nstack horizontally:\n\n <!-- Two columns: 50% width on medium and up-->\n<div class=\"row\">\n  <div class=\"col-md\">1 of \n 2</div>\n\n<div class=\"col-md\">2 of 2</div>\n</div>\n\n<!-- Four \n columns: 25% width on medium and up -->\n<div class=\"row\">\n  <div class=\"col-md\">1 of 4</div>\n\n<div class=\"col-md\">2 of 4</div>\n  <div class=\"col-md\">3 \n of 4</div>\n  <div class=\"col-md\">4 of 4</div>\n\n </div>\n\n 1 of 2\n\n 2 of 2\n\n 1 of 4\n\n 2 of 4\n\n 3 of 4\n\n 4 of 4\n\nTry it Yourself »\n\nThe next chapter shows how to add a different split percent for large devices.\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Auto Layout Columns"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:05:53Z",
+        "subject": "Bootstrap",
+        "title": "Bootstrap 5 Grid Medium"
+    },
+    {
+        "url": "https://www.w3schools.com/bootstrap5/bootstrap_grid_large.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "bootstrap_bootstrap_grid_large",
+        "code_examples": [
+            {
+                "code": "<div class=\"col-sm-3 col-md-6\">....</div>\n\n<div class=\"col-sm-9 col-md-6\">....</div>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<div class=\"col-sm-3 col-md-6 col-lg-4\">....</div>\n\n<div class=\"col-sm-9 col-md-6 col-lg-8\">....</div>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<div class=\"container-fluid\">\n  <div class=\"row\">\n\n     <div class=\"col-sm-3 col-md-6 col-lg-4\">\n      <p>Lorem ipsum...</p>\n    </div>\n\n     <div class=\"col-sm-9 col-md-6 col-lg-8\">\n      <p>Sed ut perspiciatis...</p>\n    </div>\n  </div>\n\n </div>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_grid_large&stacked=h"
+            }
+        ],
+        "category": "HTML & CSS",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "BS5 HOME\nBS5 Get Started\nBS5 Containers\nBS5 Grid Basic\nBS5 Typography\nBS5 Colors\n\nText Colors\nBackground Colors\n\nBS5 Tables\nBS5 Images\nBS5 Jumbotron\nBS5 Alerts\nBS5 Buttons\nBS5 Button Groups\nBS5 Badges\nBS5 Progress Bars\nBS5 Spinners\nBS5 Pagination\nBS5 List Groups\nBS5 Cards\nBS5 Dropdowns\nBS5 Collapse\nBS5 Navs\nBS5 Navbar\nBS5 Carousel\nBS5 Modal\nBS5 Tooltip\nBS5 Popover\nBS5 Toast\nBS5 Scrollspy\nBS5 Offcanvas\nBS5 Utilities\nBS5 Dark Mode\nBS5 Flex",
+                "heading": "Bootstrap 5 Tutorial"
+            },
+            {
+                "content": "BS5 Forms\nBS5 Select Menus\nBS5 Checks and Radios\nBS5 Range\nBS5 Input Groups\nBS5 Floating Labels\nBS5 Form Validation\nBS5 Inputs\nBS5 Input Groups\nBS5 Custom Forms\n-->",
+                "heading": "Bootstrap 5 Forms"
+            },
+            {
+                "content": "BS5 Grid System\nBS5 Stacked/Horizontal\nBS5 Grid XSmall\nBS5 Grid Small\nBS5 Grid Medium\nBS5 Grid Large\nBS5 Grid XLarge\nBS5 Grid XXL\nBS5 Grid Examples",
+                "heading": "Bootstrap 5 Grid"
+            },
+            {
+                "content": "BS5 Certificate",
+                "heading": "Bootstrap 5 Cert"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Editor\nBS5 Exercises\nBS5 Quiz\nBS5 Syllabus\nBS5 Study Plan\nBS5 Interview Prep\n\nBS5 Utilities\nBS5 Flex\nBS5 Icons\nBS5 Media Objects\nBS5 Filters",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Exercises\nBS5 Quiz",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "All Classes\nJS Alert\nJS Button\nJS Carousel\nJS Collapse\nJS Dropdown\nJS Modal\nJS Popover\nJS Scrollspy\nJS Tab\nJS Toasts\nJS Tooltip\n\n-->\n\nny:-->\n\n ny:-->\n\nny:-->\n\nBootstrap 5 Grid Large\n\n❮ Previous\nNext ❯",
+                "heading": "Bootstrap 5 Ref"
+            },
+            {
+                "content": "XSmall\n Small\n Medium\n Large\n Extra Large\n XXL\n\n Class prefix\n .col-\n .col-sm-\n .col-md-\n .col-lg-\n .col-xl-\n .col-xxl-\n\n Screen width\n <576px\n >=576px\n >=768px\n >=992px\n >=1200px\n >=1400px\n\nIn the previous chapter, we presented a grid example with classes for small \nand medium devices. We used two divs (columns) and we gave them \na \n25%/75% split on small devices, and a 50%/50% split on medium devices:\n\n<div class=\"col-sm-3 col-md-6\">....</div>\n\n<div class=\"col-sm-9 col-md-6\">....</div>\n\nBut on large devices the design may be better as a 33%/66% split.\n\nLarge devices are defined as having a screen width from \n992 pixels to 1199 pixels.\n\nFor large devices we will use the .col-lg-* classes:\n\n <div class=\"col-sm-3 col-md-6 col-lg-4\">....</div>\n\n<div class=\"col-sm-9 col-md-6 col-lg-8\">....</div>\n\nNow Bootstrap is going to say \"at the small size, look at classes with \n-sm- in them and use those. At the medium size, look at classes with \n-md- in them and use those. At the large size, look at classes with the word \n-lg- \nin them and use those.\n\nThe following example will result in a 25%/75% split on small devices, a \n50%/50% split on medium devices, and a 33%/66% split on large, xlarge and xxlarge \ndevices. On extra small devices, it will automatically stack (100%):\n\n.col-sm-3 .col-md-6 .col-lg-4\n\n.col-sm-9 .col-md-6 .col-lg-8\n\n Example\n\n <div class=\"container-fluid\">\n  <div class=\"row\">\n\n     <div class=\"col-sm-3 col-md-6 col-lg-4\">\n      <p>Lorem ipsum...</p>\n    </div>\n\n     <div class=\"col-sm-9 col-md-6 col-lg-8\">\n      <p>Sed ut perspiciatis...</p>\n    </div>\n  </div>\n\n </div>\n\nTry it Yourself »\n\n Note: Make sure that the sum adds up to 12 or fewer (it is \n not required that you use all 12 available columns):",
+                "heading": "Large Grid Example"
+            },
+            {
+                "content": "In the example below, we only specify the .col-lg-6 class (without .col-md-* and/or .col-sm-*). This means that large, xlarge and xxlarge devices will split 50%/50%. However, \nfor medium, small AND extra small devices, it will stack vertically (100% width):\n\n Example\n\n <div class=\"container-fluid\">\n  <div class=\"row\">\n\n     <div class=\"col-lg-6\">\n      <p>Lorem ipsum...</p>\n    </div>\n\n     <div class=\"col-lg-6\">\n      <p>Sed ut perspiciatis...</p>\n    </div>\n  </div>\n\n </div>\n\nTry it Yourself »",
+                "heading": "Using Only Large"
+            },
+            {
+                "content": "In Bootstrap 5, there is an easy way to create equal width columns for all devices: just remove the number from .col-lg-* and only use the .col-lg class on a specified number of \ncol elements. Bootstrap will recognize how many columns there \nare, and each column will get the same width.\n\nIf the screen size is less than 992px, the columns will \nstack horizontally:\n\n <!-- Two columns: 50% width on large and up-->\n<div class=\"row\">\n  <div class=\"col-lg\">1 of \n 2</div>\n\n<div class=\"col-lg\">2 of 2</div>\n</div>\n\n<!-- Four \n columns: 25% width on large and up -->\n<div class=\"row\">\n  <div class=\"col-lg\">1 of 4</div>\n\n<div class=\"col-lg\">2 of 4</div>\n  <div class=\"col-lg\">3 \n of 4</div>\n  <div class=\"col-lg\">4 of 4</div>\n\n </div>\n\n 1 of 2\n\n 2 of 2\n\n 1 of 4\n\n 2 of 4\n\n 3 of 4\n\n 4 of 4\n\nTry it Yourself »\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Auto Layout Columns"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:05:53Z",
+        "subject": "Bootstrap",
+        "title": "Bootstrap 5 Grid Large"
+    },
+    {
+        "url": "https://www.w3schools.com/bootstrap5/bootstrap_grid_xlarge.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "bootstrap_bootstrap_grid_xlarge",
+        "code_examples": [
+            {
+                "code": "<div class=\"col-sm-3 col-md-6 col-lg-4\">....</div>\n\n<div class=\"col-sm-9 col-md-6 col-lg-8\">....</div>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<div class=\"col-sm-3 col-md-6 col-lg-4 col-xl-2\">....</div>\n\n<div class=\"col-sm-9 col-md-6 col-lg-8 col-xl-10\">....</div>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<div class=\"container-fluid\">\n  <div class=\"row\">\n\n     <div class=\"col-sm-3 col-md-6 col-lg-4 \n col-xl-2\">\n      <p>Lorem ipsum...</p>\n    </div>\n\n     <div class=\"col-sm-9 col-md-6 col-lg-8 \n col-xl-10\">\n      <p>Sed ut perspiciatis...</p>\n    </div>\n  </div>\n\n </div>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_grid_xlarge&stacked=h"
+            }
+        ],
+        "category": "HTML & CSS",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "BS5 HOME\nBS5 Get Started\nBS5 Containers\nBS5 Grid Basic\nBS5 Typography\nBS5 Colors\n\nText Colors\nBackground Colors\n\nBS5 Tables\nBS5 Images\nBS5 Jumbotron\nBS5 Alerts\nBS5 Buttons\nBS5 Button Groups\nBS5 Badges\nBS5 Progress Bars\nBS5 Spinners\nBS5 Pagination\nBS5 List Groups\nBS5 Cards\nBS5 Dropdowns\nBS5 Collapse\nBS5 Navs\nBS5 Navbar\nBS5 Carousel\nBS5 Modal\nBS5 Tooltip\nBS5 Popover\nBS5 Toast\nBS5 Scrollspy\nBS5 Offcanvas\nBS5 Utilities\nBS5 Dark Mode\nBS5 Flex",
+                "heading": "Bootstrap 5 Tutorial"
+            },
+            {
+                "content": "BS5 Forms\nBS5 Select Menus\nBS5 Checks and Radios\nBS5 Range\nBS5 Input Groups\nBS5 Floating Labels\nBS5 Form Validation\nBS5 Inputs\nBS5 Input Groups\nBS5 Custom Forms\n-->",
+                "heading": "Bootstrap 5 Forms"
+            },
+            {
+                "content": "BS5 Grid System\nBS5 Stacked/Horizontal\nBS5 Grid XSmall\nBS5 Grid Small\nBS5 Grid Medium\nBS5 Grid Large\nBS5 Grid XLarge\nBS5 Grid XXL\nBS5 Grid Examples",
+                "heading": "Bootstrap 5 Grid"
+            },
+            {
+                "content": "BS5 Certificate",
+                "heading": "Bootstrap 5 Cert"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Editor\nBS5 Exercises\nBS5 Quiz\nBS5 Syllabus\nBS5 Study Plan\nBS5 Interview Prep\n\nBS5 Utilities\nBS5 Flex\nBS5 Icons\nBS5 Media Objects\nBS5 Filters",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Exercises\nBS5 Quiz",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "All Classes\nJS Alert\nJS Button\nJS Carousel\nJS Collapse\nJS Dropdown\nJS Modal\nJS Popover\nJS Scrollspy\nJS Tab\nJS Toasts\nJS Tooltip\n\n-->\n\nny:-->\n\n ny:-->\n\nny:-->\n\nBootstrap 5 Grid Extra Large\n\n❮ Previous\nNext ❯",
+                "heading": "Bootstrap 5 Ref"
+            },
+            {
+                "content": "XSmall\n Small\n Medium\n Large\n Extra Large\n XXL\n\n Class prefix\n .col-\n .col-sm-\n .col-md-\n .col-lg-\n .col-xl-\n .col-xxl-\n\n Screen width\n <576px\n >=576px\n >=768px\n >=992px\n >=1200px\n >=1400px\n\nIn the previous chapter, we presented a grid example with classes for small, medium \nand large devices. We used two divs (columns) and we gave them \na \n25%/75% split on small devices, and a 50%/50% split on medium devices and a \n33%/66% split on large devices:\n\n <div class=\"col-sm-3 col-md-6 col-lg-4\">....</div>\n\n<div class=\"col-sm-9 col-md-6 col-lg-8\">....</div>\n\nBut on xlarge devices the design may be better as a 20%/80% split.\n\nExtra large devices are defined as having a screen width from\n1200 pixels and above.\n\nFor xlarge devices we will use the .col-xl-* classes:\n\n <div class=\"col-sm-3 col-md-6 col-lg-4 col-xl-2\">....</div>\n\n<div class=\"col-sm-9 col-md-6 col-lg-8 col-xl-10\">....</div>\n\nThe following example will result in a 25%/75% split on small devices, a \n50%/50% split on medium devices, a 33%/66% split on large devices and a 20%/80% \nsplit on xlarge and xxlarge \ndevices. On extra small devices, it will automatically stack (100%):\n\ncol-sm-3 col-md-6 col-lg-4 col-xl-2\n\ncol-sm-9 col-md-6 col-lg-8 col-xl-10\n\n Example\n\n <div class=\"container-fluid\">\n  <div class=\"row\">\n\n     <div class=\"col-sm-3 col-md-6 col-lg-4 \n col-xl-2\">\n      <p>Lorem ipsum...</p>\n    </div>\n\n     <div class=\"col-sm-9 col-md-6 col-lg-8 \n col-xl-10\">\n      <p>Sed ut perspiciatis...</p>\n    </div>\n  </div>\n\n </div>\n\nTry it Yourself »\n\n Note: Make sure that the sum always adds up to 12.",
+                "heading": "Extra Large Grid Example"
+            },
+            {
+                "content": "In the example below, we only specify the .col-xl-6 class (without .col-lg-*, .col-md-* and/or .col-sm-*). \nThis means that xlarge and xxlarge devices will split 50%/50%. However, \nfor large, medium, small AND extra small devices, it will stack vertically (100% width):\n\n Example\n\n <div class=\"container-fluid\">\n  <div class=\"row\">\n\n     <div class=\"col-xl-6\">\n      <p>Lorem ipsum...</p>\n    </div>\n\n     <div class=\"col-xl-6\">\n      <p>Sed ut perspiciatis...</p>\n    </div>\n  </div>\n\n </div>\n\nTry it Yourself »",
+                "heading": "Using Only XLarge"
+            },
+            {
+                "content": "In Bootstrap 5, there is an easy way to create equal width columns for all devices: just remove the number from .col-xl-* and only use the .col-xl class on a specified number of \ncol elements. Bootstrap will recognize how many columns there \nare, and each column will get the same width.\n\nIf the screen size is less than 1200px, the columns will \nstack horizontally:\n\n <!-- Two columns: 50% width on xlarge and up-->\n<div class=\"row\">\n  <div class=\"col-xl\">1 of \n 2</div>\n\n<div class=\"col-xl\">2 of 2</div>\n</div>\n\n<!-- Four \n columns: 25% width on xlarge and up -->\n<div class=\"row\">\n  <div class=\"col-xl\">1 of 4</div>\n\n<div class=\"col-xl\">2 of 4</div>\n  <div class=\"col-xl\">3 \n of 4</div>\n  <div class=\"col-xl\">4 of 4</div>\n\n </div>\n\n 1 of 2\n\n 2 of 2\n\n 1 of 4\n\n 2 of 4\n\n 3 of 4\n\n 4 of 4\n\nTry it Yourself »\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Auto Layout Columns"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:05:53Z",
+        "subject": "Bootstrap",
+        "title": "Bootstrap 5 Grid Extra Large"
+    },
+    {
+        "url": "https://www.w3schools.com/bootstrap5/bootstrap_grid_xxl.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "bootstrap_bootstrap_grid_xxl",
+        "code_examples": [
+            {
+                "code": "<div class=\"container-fluid\">\n  <div class=\"row\">\n\n     <div class=\"col-md-6 col-xxl-3\">\n      <p>Lorem ipsum...</p>\n    </div>\n\n     <div class=\"col-md-6 col-xxl-9\">\n      <p>Sed ut perspiciatis...</p>\n    </div>\n  </div>\n\n </div>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_grid_xxl&stacked=h"
+            }
+        ],
+        "category": "HTML & CSS",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "BS5 HOME\nBS5 Get Started\nBS5 Containers\nBS5 Grid Basic\nBS5 Typography\nBS5 Colors\n\nText Colors\nBackground Colors\n\nBS5 Tables\nBS5 Images\nBS5 Jumbotron\nBS5 Alerts\nBS5 Buttons\nBS5 Button Groups\nBS5 Badges\nBS5 Progress Bars\nBS5 Spinners\nBS5 Pagination\nBS5 List Groups\nBS5 Cards\nBS5 Dropdowns\nBS5 Collapse\nBS5 Navs\nBS5 Navbar\nBS5 Carousel\nBS5 Modal\nBS5 Tooltip\nBS5 Popover\nBS5 Toast\nBS5 Scrollspy\nBS5 Offcanvas\nBS5 Utilities\nBS5 Dark Mode\nBS5 Flex",
+                "heading": "Bootstrap 5 Tutorial"
+            },
+            {
+                "content": "BS5 Forms\nBS5 Select Menus\nBS5 Checks and Radios\nBS5 Range\nBS5 Input Groups\nBS5 Floating Labels\nBS5 Form Validation\nBS5 Inputs\nBS5 Input Groups\nBS5 Custom Forms\n-->",
+                "heading": "Bootstrap 5 Forms"
+            },
+            {
+                "content": "BS5 Grid System\nBS5 Stacked/Horizontal\nBS5 Grid XSmall\nBS5 Grid Small\nBS5 Grid Medium\nBS5 Grid Large\nBS5 Grid XLarge\nBS5 Grid XXL\nBS5 Grid Examples",
+                "heading": "Bootstrap 5 Grid"
+            },
+            {
+                "content": "BS5 Certificate",
+                "heading": "Bootstrap 5 Cert"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Editor\nBS5 Exercises\nBS5 Quiz\nBS5 Syllabus\nBS5 Study Plan\nBS5 Interview Prep\n\nBS5 Utilities\nBS5 Flex\nBS5 Icons\nBS5 Media Objects\nBS5 Filters",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Exercises\nBS5 Quiz",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "All Classes\nJS Alert\nJS Button\nJS Carousel\nJS Collapse\nJS Dropdown\nJS Modal\nJS Popover\nJS Scrollspy\nJS Tab\nJS Toasts\nJS Tooltip\n\n-->\n\nny:-->\n\n ny:-->\n\nny:-->\n\nBootstrap 5 Grid XXL\n\n❮ Previous\nNext ❯",
+                "heading": "Bootstrap 5 Ref"
+            },
+            {
+                "content": "XSmall\n Small\n Medium\n Large\n Extra Large\n XXL\n\n Class prefix\n .col-\n .col-sm-\n .col-md-\n .col-lg-\n .col-xl-\n .col-xxl-\n\n Screen width\n <576px\n >=576px\n >=768px\n >=992px\n >=1200px\n >=1400px\n\nXXL devices are defined as having a screen width from\n1400 pixels and above.\n\nThe following example will result in a 50%/50% split on medium, large and \nextra large devices, and a 25%/75% \nsplit on XXL \ndevices. On small and extra small devices, it will automatically stack (100%):\n\ncol-md-6 col-xxl-3\n\ncol-md-6 col-xxl-9\n\n Example\n\n <div class=\"container-fluid\">\n  <div class=\"row\">\n\n     <div class=\"col-md-6 col-xxl-3\">\n      <p>Lorem ipsum...</p>\n    </div>\n\n     <div class=\"col-md-6 col-xxl-9\">\n      <p>Sed ut perspiciatis...</p>\n    </div>\n  </div>\n\n </div>\n\nTry it Yourself »\n\n Note: Make sure that the sum always adds up to 12.",
+                "heading": "XXL Grid Example"
+            },
+            {
+                "content": "In the example below, we only specify the .col-xxl-6 class (without .col-md-*, and/or .col-sm-*). \nThis means that xxlarge devices will split 50%/50%. However, \nfor extra large, large, medium, small AND extra small devices, it will stack vertically (100% width):\n\n Example\n\n <div class=\"container-fluid\">\n  <div class=\"row\">\n\n     <div class=\"col-xxl-6\">\n      <p>Lorem ipsum...</p>\n    </div>\n\n     <div class=\"col-xxl-6\">\n      <p>Sed ut perspiciatis...</p>\n    </div>\n  </div>\n\n </div>\n\nTry it Yourself »",
+                "heading": "Using Only XXL"
+            },
+            {
+                "content": "In Bootstrap 5, there is an easy way to create equal width columns for all devices: just remove the number from .col-xxl-* and only use the .col-xxl class on a specified number of \ncol elements. Bootstrap will recognize how many columns there \nare, and each column will get the same width.\n\nIf the screen size is less than 1400px, the columns will \nstack horizontally:\n\n <!-- Two columns: 50% width on xxl and up-->\n<div class=\"row\">\n  <div class=\"col-xxl\">1 of \n 2</div>\n\n<div class=\"col-xxl\">2 of 2</div>\n</div>\n\n<!-- Four \n columns: 25% width on xxl and up -->\n<div class=\"row\">\n  <div class=\"col-xxl\">1 of 4</div>\n\n<div class=\"col-xxl\">2 of 4</div>\n  <div class=\"col-xxl\">3 \n of 4</div>\n  <div class=\"col-xxl\">4 of 4</div>\n\n </div>\n\n 1 of 2\n\n 2 of 2\n\n 1 of 4\n\n 2 of 4\n\n 3 of 4\n\n 4 of 4\n\nTry it Yourself »\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Auto Layout Columns"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:05:53Z",
+        "subject": "Bootstrap",
+        "title": "Bootstrap 5 Grid XXL"
+    },
+    {
+        "url": "https://www.w3schools.com/bootstrap5/bootstrap_grid_examples.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "bootstrap_bootstrap_grid_examples",
+        "code_examples": [
+            {
+                "code": "<div class=\"row\">\n\n   <div class=\"col\">col</div>\n\n   <div class=\"col\">col</div>\n  <div \n class=\"col\">col</div>\n</div>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_grid_examples1&stacked=h"
+            },
+            {
+                "code": "<div class=\"row\">\n\n   <div class=\"col-4\">col-4</div>\n\n   <div class=\"col-4\">col-4</div>\n  <div \n class=\"col-4\">col-4</div>\n</div>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_grid_examples2&stacked=h"
+            },
+            {
+                "code": "<div class=\"row\">\n\n   <div class=\"col-3\">col-3</div>\n\n   <div class=\"col-6\">col-6</div>\n  <div \n class=\"col-3\">col-3</div>\n</div>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_grid_examples3&stacked=h"
+            },
+            {
+                "code": "<div class=\"row\">\n\n   <div class=\"col\">col</div>\n\n   <div class=\"col-6\">col-6</div>\n  <div \n class=\"col\">col</div>\n</div>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_grid_examples4&stacked=h"
+            },
+            {
+                "code": "<!-- Two equal columns -->\n<div class=\"row\">\n\n   <div class=\"col\">1 of 2</div>\n\n   <div class=\"col\">2 of 2</div>\n</div>\n\n<!-- Four equal columns -->\n<div class=\"row\">\n\n   <div class=\"col\">1 of 4</div>\n\n   <div class=\"col\">2 of 4</div>\n  <div class=\"col\">3 \n of 4</div>\n\n   <div class=\"col\">4 of 4</div>\n</div>\n\n<!-- Six equal columns -->\n<div class=\"row\">\n\n   <div class=\"col\">1 of 6</div>\n\n   <div class=\"col\">2 of 6</div>\n  <div class=\"col\">3 \n of 6</div>\n\n   <div class=\"col\">4 of 6</div>  \n  <div class=\"col\">5 \n of 6</div>\n\n   <div class=\"col\">6 of 6</div>\n</div>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_grid_examples5&stacked=h"
+            },
+            {
+                "code": "<div class=\"row row-cols-1\">\n\n   <div class=\"col\">1 of 2</div>\n\n   <div class=\"col\">2 of 2</div>\n</div>\n\n<div class=\"row row-cols-2\">\n\n   <div class=\"col\">1 of 4</div>\n\n   <div class=\"col\">2 of 4</div>\n  <div class=\"col\">3 \n of 4</div>\n\n   <div class=\"col\">4 of 4</div>\n</div>\n\n<div class=\"row row-cols-3\">\n\n   <div class=\"col\">1 of 6</div>\n\n   <div class=\"col\">2 of 6</div>\n  <div class=\"col\">3 \n of 6</div>\n\n   <div class=\"col\">4 of 6</div>  \n  <div class=\"col\">5 \n of 6</div>\n\n   <div class=\"col\">6 of 6</div>\n</div>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_row-cols2&stacked=h"
+            },
+            {
+                "code": "<!-- Two Unequal \n Columns -->\n<div class=\"row\">\n\n   <div class=\"col-8\">1 of 2</div>\n\n   <div class=\"col-4\">2 of 2</div>\n</div>\n\n<!-- Four Unequal Columns -->\n<div class=\"row\">\n\n   <div class=\"col-2\">1 of 4</div>\n\n   <div class=\"col-2\">2 of 4</div>\n  <div class=\"col-2\">3 \n of 4</div>\n\n   <div class=\"col-6\">4 of 4</div>\n</div>\n\n<!-- Setting two column widths -->\n<div class=\"row\">\n\n   <div class=\"col-4\">1 of 4</div>\n\n   <div class=\"col-6\">2 of 4</div>\n  <div class=\"col\">3 \n of 4</div>\n\n   <div class=\"col\">4 of 4</div>\n</div>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_grid_examples6&stacked=h"
+            },
+            {
+                "code": "<div class=\"row\">\n  <div class=\"col\">Lorem ipsum...</div>\n\n <div class=\"col\">col</div>\n  <div class=\"col\">col</div>\n</div>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_grid_examples8&stacked=h"
+            },
+            {
+                "code": "<div class=\"row\">\n  <div class=\"col-8\">\n    .col-8\n    <div class=\"row\">\n      <div class=\"col-6\">.col-6</div>\n      <div class=\"col-6\">.col-6</div>\n    </div>\n  </div>\n  <div class=\"col-4\">.col-4</div>\n</div>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_grid_examples9&stacked=h"
+            },
+            {
+                "code": "<div class=\"row\">\n  <div class=\"col-sm-9\">col-sm-9</div>\n\n <div class=\"col-sm-3\">col-sm-3</div>\n</div>\n<div class=\"row\">\n  <div \n class=\"col-sm\">col-sm</div>\n  <div class=\"col-sm\">col-sm</div>\n\n <div class=\"col-sm\">col-sm</div>\n</div>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_grid_examples10&stacked=h"
+            },
+            {
+                "code": "<!-- 50%/50% split on extra small devices and 75%/25% split on larger devices \n -->\n<div class=\"row\">\n  <div class=\"col-6 \n col-sm-9\">col-6 col-sm-9</div>\n  <div class=\"col-6 \n col-sm-3\">col-6 col-sm-3</div>\n</div>\n\n<!-- 58%/42% split \n on extra small, small and medium devices and 66.3%/33.3% split on large and \n xlarge devices -->\n<div class=\"row\">\n  <div class=\"col-7 col-lg-8\">col-7 \n col-lg-8</div>\n  <div class=\"col-5 col-lg-4\">col-5 \n col-lg-4</div>\n</div>\n\n<!-- 25%/75% split on small devices, a 50%/50% split \n on medium devices, and a 33%/66% split on large and xlarge devices. On extra \n small devices, it will automatically stack (100%) -->\n<div \n class=\"row\">\n  <div class=\"col-sm-3 col-md-6 col-lg-4\">col-sm-3 \n col-md-6 col-lg-4</div>\n  <div class=\"col-sm-9 col-md-6 \n col-lg-8\">col-sm-9 col-md-6 col-lg-8</div>\n</div>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_grid_examples11&stacked=h"
+            },
+            {
+                "code": "<div class=\"row g-0\">",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_grid_nogutters&stacked=h"
+            }
+        ],
+        "category": "HTML & CSS",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "BS5 HOME\nBS5 Get Started\nBS5 Containers\nBS5 Grid Basic\nBS5 Typography\nBS5 Colors\n\nText Colors\nBackground Colors\n\nBS5 Tables\nBS5 Images\nBS5 Jumbotron\nBS5 Alerts\nBS5 Buttons\nBS5 Button Groups\nBS5 Badges\nBS5 Progress Bars\nBS5 Spinners\nBS5 Pagination\nBS5 List Groups\nBS5 Cards\nBS5 Dropdowns\nBS5 Collapse\nBS5 Navs\nBS5 Navbar\nBS5 Carousel\nBS5 Modal\nBS5 Tooltip\nBS5 Popover\nBS5 Toast\nBS5 Scrollspy\nBS5 Offcanvas\nBS5 Utilities\nBS5 Dark Mode\nBS5 Flex",
+                "heading": "Bootstrap 5 Tutorial"
+            },
+            {
+                "content": "BS5 Forms\nBS5 Select Menus\nBS5 Checks and Radios\nBS5 Range\nBS5 Input Groups\nBS5 Floating Labels\nBS5 Form Validation\nBS5 Inputs\nBS5 Input Groups\nBS5 Custom Forms\n-->",
+                "heading": "Bootstrap 5 Forms"
+            },
+            {
+                "content": "BS5 Grid System\nBS5 Stacked/Horizontal\nBS5 Grid XSmall\nBS5 Grid Small\nBS5 Grid Medium\nBS5 Grid Large\nBS5 Grid XLarge\nBS5 Grid XXL\nBS5 Grid Examples",
+                "heading": "Bootstrap 5 Grid"
+            },
+            {
+                "content": "BS5 Certificate",
+                "heading": "Bootstrap 5 Cert"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Editor\nBS5 Exercises\nBS5 Quiz\nBS5 Syllabus\nBS5 Study Plan\nBS5 Interview Prep\n\nBS5 Utilities\nBS5 Flex\nBS5 Icons\nBS5 Media Objects\nBS5 Filters",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Exercises\nBS5 Quiz",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "All Classes\nJS Alert\nJS Button\nJS Carousel\nJS Collapse\nJS Dropdown\nJS Modal\nJS Popover\nJS Scrollspy\nJS Tab\nJS Toasts\nJS Tooltip\n\n-->\n\nny:-->\n\n ny:-->\n\nny:-->\n\nBootstrap 5 Grid Examples\n\n❮ Previous\n Next ❯\n\nBelow we have collected some examples of Bootstrap 5 grid layouts.",
+                "heading": "Bootstrap 5 Ref"
+            },
+            {
+                "content": "Use the .col class on a specified number of elements and Bootstrap will recognize how many elements there are (and create equal-width columns). In the example below, we use three col elements, which gets a width of 33.33% each.\n\n col\n\n col\n\n col\n\n Example\n\n <div class=\"row\">\n\n   <div class=\"col\">col</div>\n\n   <div class=\"col\">col</div>\n  <div \n class=\"col\">col</div>\n</div>\n\nTry it Yourself »",
+                "heading": "Three Equal Columns"
+            },
+            {
+                "content": "You can also use numbers to control the column width. Just make sure that the sum adds up to 12 \nor fewer (it is not required that you use all 12 available columns):\n\n col-4\n\n col-4\n\n col-4\n\n Example\n\n <div class=\"row\">\n\n   <div class=\"col-4\">col-4</div>\n\n   <div class=\"col-4\">col-4</div>\n  <div \n class=\"col-4\">col-4</div>\n</div>\n\nTry it Yourself »",
+                "heading": "Three Equal Columns Using Numbers"
+            },
+            {
+                "content": "To create unequal columns, you have to use numbers. The following example will create a 25%/50%/25% split:\n\n col-3\n\n col-6\n\n col-3\n\n Example\n\n <div class=\"row\">\n\n   <div class=\"col-3\">col-3</div>\n\n   <div class=\"col-6\">col-6</div>\n  <div \n class=\"col-3\">col-3</div>\n</div>\n\nTry it Yourself »",
+                "heading": "Three Unequal columns"
+            },
+            {
+                "content": "However, it is enough to only set the width of one column, and have the sibling columns automatically resize around it. The following example will create a 25%/50%/25% split:\n\n col\n\n col-6\n\n col\n\n Example\n\n <div class=\"row\">\n\n   <div class=\"col\">col</div>\n\n   <div class=\"col-6\">col-6</div>\n  <div \n class=\"col\">col</div>\n</div>\n\nTry it Yourself »",
+                "heading": "Setting One Column Width"
+            },
+            {
+                "content": "1 of 2\n\n 2 of 2\n\n 1 of 4\n\n 2 of 4\n\n 3 of 4\n\n 4 of 4\n\n 1 of 6\n\n 2 of 6\n\n 3 of 6\n\n 4 of 6\n\n 5 of 6\n\n 6 of 6\n\n Example\n\n <!-- Two equal columns -->\n<div class=\"row\">\n\n   <div class=\"col\">1 of 2</div>\n\n   <div class=\"col\">2 of 2</div>\n</div>\n\n<!-- Four equal columns -->\n<div class=\"row\">\n\n   <div class=\"col\">1 of 4</div>\n\n   <div class=\"col\">2 of 4</div>\n  <div class=\"col\">3 \n of 4</div>\n\n   <div class=\"col\">4 of 4</div>\n</div>\n\n<!-- Six equal columns -->\n<div class=\"row\">\n\n   <div class=\"col\">1 of 6</div>\n\n   <div class=\"col\">2 of 6</div>\n  <div class=\"col\">3 \n of 6</div>\n\n   <div class=\"col\">4 of 6</div>  \n  <div class=\"col\">5 \n of 6</div>\n\n   <div class=\"col\">6 of 6</div>\n</div>\n\nTry it Yourself »",
+                "heading": "More Equal Columns"
+            },
+            {
+                "content": "You can also control how many columns that should appear next to each other (regardless of how many cols), with the .row-cols-* classes:\n\n 1 of 2\n\n 2 of 2\n\n 1 of 4\n\n 2 of 4\n\n 3 of 4\n\n 4 of 4\n\n 1 of 6\n\n 2 of 6\n\n 3 of 6\n\n 4 of 6\n\n 5 of 6\n\n 6 of 6\n\n Example\n\n <div class=\"row row-cols-1\">\n\n   <div class=\"col\">1 of 2</div>\n\n   <div class=\"col\">2 of 2</div>\n</div>\n\n<div class=\"row row-cols-2\">\n\n   <div class=\"col\">1 of 4</div>\n\n   <div class=\"col\">2 of 4</div>\n  <div class=\"col\">3 \n of 4</div>\n\n   <div class=\"col\">4 of 4</div>\n</div>\n\n<div class=\"row row-cols-3\">\n\n   <div class=\"col\">1 of 6</div>\n\n   <div class=\"col\">2 of 6</div>\n  <div class=\"col\">3 \n of 6</div>\n\n   <div class=\"col\">4 of 6</div>  \n  <div class=\"col\">5 \n of 6</div>\n\n   <div class=\"col\">6 of 6</div>\n</div>\n\nTry it Yourself »",
+                "heading": "Row Cols"
+            },
+            {
+                "content": "1 of 2\n\n 2 of 2\n\n 1 of 4\n\n 2 of 4\n\n 3 of 4\n\n 4 of 4\n\n 1 of 4\n\n 2 of 4\n\n 3 of 4\n\n 4 of 4\n\n Example\n\n <!-- Two Unequal \n Columns -->\n<div class=\"row\">\n\n   <div class=\"col-8\">1 of 2</div>\n\n   <div class=\"col-4\">2 of 2</div>\n</div>\n\n<!-- Four Unequal Columns -->\n<div class=\"row\">\n\n   <div class=\"col-2\">1 of 4</div>\n\n   <div class=\"col-2\">2 of 4</div>\n  <div class=\"col-2\">3 \n of 4</div>\n\n   <div class=\"col-6\">4 of 4</div>\n</div>\n\n<!-- Setting two column widths -->\n<div class=\"row\">\n\n   <div class=\"col-4\">1 of 4</div>\n\n   <div class=\"col-6\">2 of 4</div>\n  <div class=\"col\">3 \n of 4</div>\n\n   <div class=\"col\">4 of 4</div>\n</div>\n\nTry it Yourself »",
+                "heading": "More Unequal Columns"
+            },
+            {
+                "content": "If one of the column is taller than the other (due to text or CSS height), the rest will follow:\n\n Lorem ipsum dolor sit amet, cibo sensibus interesset no sit. Et dolor possim volutpat qui. No malis tollit iriure eam, et vel tale zril blandit, rebum vidisse nostrum qui eu. No nostrud dolorem legendos mea, ea eum mucius oporteat platonem.Eam an case scribentur, ei clita causae cum, alia debet eu vel.\n\n col\n\n col\n\nExample\n\n <div class=\"row\">\n  <div class=\"col\">Lorem ipsum...</div>\n\n <div class=\"col\">col</div>\n  <div class=\"col\">col</div>\n</div>\n\nTry it Yourself »",
+                "heading": "Equal Height"
+            },
+            {
+                "content": "col-8\n\n col-6\n\n col-6\n\n col-4\n\nThe following example shows how to create a two column layout, with another \ntwo columns inside one of the columns:\n\nExample\n\n <div class=\"row\">\n  <div class=\"col-8\">\n    .col-8\n    <div class=\"row\">\n      <div class=\"col-6\">.col-6</div>\n      <div class=\"col-6\">.col-6</div>\n    </div>\n  </div>\n  <div class=\"col-4\">.col-4</div>\n</div>\n\nTry it Yourself »",
+                "heading": "Nested Columns"
+            },
+            {
+                "content": "The Bootstrap 5 grid system has five classes:\n\n .col- (extra small devices - screen width less than 576px)\n\n .col-sm- (small devices - screen width equal to or greater than 576px)\n\n .col-md- (medium devices - screen width equal to or greater than 768px)\n\n .col-lg- (large devices - screen width equal to or greater than 992px)\n\n .col-xl- (xlarge devices - screen width equal to or greater than 1200px)\n\n .col-xxl- (xxl devices - screen width equal to or greater than 1400px)\n\nThe classes above can be combined to create more dynamic and flexible layouts.\n\nTip: Each class scales up, so if you wish to set the same widths for \nsm and md, you only need to specify sm.",
+                "heading": "Responsive Classes"
+            },
+            {
+                "content": "col-sm-9\n\n col-sm-3\n\n col-sm\n\n col-sm\n\n col-sm\n\nThe following example shows how to create a column layout that starts out stacked on extra small devices, before becoming horizontal on larger devices (sm, md, lg and xl):\n\nExample\n\n <div class=\"row\">\n  <div class=\"col-sm-9\">col-sm-9</div>\n\n <div class=\"col-sm-3\">col-sm-3</div>\n</div>\n<div class=\"row\">\n  <div \n class=\"col-sm\">col-sm</div>\n  <div class=\"col-sm\">col-sm</div>\n\n <div class=\"col-sm\">col-sm</div>\n</div>\n\nTry it Yourself »",
+                "heading": "Stacked to Horizontal"
+            },
+            {
+                "content": "col-6 col-sm-9\n\ncol-6 col-sm-3\n\ncol-7 col-lg-8\n\ncol-5 col-lg-4\n\ncol-sm-3 col-md-6 col-lg-4\n\ncol-sm-9 col-md-6 col-lg-8\n\n Example\n\n <!-- 50%/50% split on extra small devices and 75%/25% split on larger devices \n -->\n<div class=\"row\">\n  <div class=\"col-6 \n col-sm-9\">col-6 col-sm-9</div>\n  <div class=\"col-6 \n col-sm-3\">col-6 col-sm-3</div>\n</div>\n\n<!-- 58%/42% split \n on extra small, small and medium devices and 66.3%/33.3% split on large and \n xlarge devices -->\n<div class=\"row\">\n  <div class=\"col-7 col-lg-8\">col-7 \n col-lg-8</div>\n  <div class=\"col-5 col-lg-4\">col-5 \n col-lg-4</div>\n</div>\n\n<!-- 25%/75% split on small devices, a 50%/50% split \n on medium devices, and a 33%/66% split on large and xlarge devices. On extra \n small devices, it will automatically stack (100%) -->\n<div \n class=\"row\">\n  <div class=\"col-sm-3 col-md-6 col-lg-4\">col-sm-3 \n col-md-6 col-lg-4</div>\n  <div class=\"col-sm-9 col-md-6 \n col-lg-8\">col-sm-9 col-md-6 col-lg-8</div>\n</div>\n\nTry it Yourself »",
+                "heading": "Mix and Match"
+            },
+            {
+                "content": "To change the gutters (extra space) between columns, use any of the .g-1|2|3|4|5 classes \n (.g-4 is default). \n\nTo remove the gutter completely, use .g-0:\n\n Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\n\n Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n\n Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.\n\n Example\n\n <div class=\"row g-0\">\n\nTry it Yourself »\n\n❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "No Gutters"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:05:53Z",
+        "subject": "Bootstrap",
+        "title": "Bootstrap 5 Grid Examples"
+    },
+    {
+        "url": "https://www.w3schools.com/bootstrap5/bootstrap_exam.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "bootstrap_bootstrap_exam",
+        "code_examples": [],
+        "category": "HTML & CSS",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "BS5 HOME\nBS5 Get Started\nBS5 Containers\nBS5 Grid Basic\nBS5 Typography\nBS5 Colors\n\nText Colors\nBackground Colors\n\nBS5 Tables\nBS5 Images\nBS5 Jumbotron\nBS5 Alerts\nBS5 Buttons\nBS5 Button Groups\nBS5 Badges\nBS5 Progress Bars\nBS5 Spinners\nBS5 Pagination\nBS5 List Groups\nBS5 Cards\nBS5 Dropdowns\nBS5 Collapse\nBS5 Navs\nBS5 Navbar\nBS5 Carousel\nBS5 Modal\nBS5 Tooltip\nBS5 Popover\nBS5 Toast\nBS5 Scrollspy\nBS5 Offcanvas\nBS5 Utilities\nBS5 Dark Mode\nBS5 Flex",
+                "heading": "Bootstrap 5 Tutorial"
+            },
+            {
+                "content": "BS5 Forms\nBS5 Select Menus\nBS5 Checks and Radios\nBS5 Range\nBS5 Input Groups\nBS5 Floating Labels\nBS5 Form Validation\nBS5 Inputs\nBS5 Input Groups\nBS5 Custom Forms\n-->",
+                "heading": "Bootstrap 5 Forms"
+            },
+            {
+                "content": "BS5 Grid System\nBS5 Stacked/Horizontal\nBS5 Grid XSmall\nBS5 Grid Small\nBS5 Grid Medium\nBS5 Grid Large\nBS5 Grid XLarge\nBS5 Grid XXL\nBS5 Grid Examples",
+                "heading": "Bootstrap 5 Grid"
+            },
+            {
+                "content": "BS5 Certificate",
+                "heading": "Bootstrap 5 Cert"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Editor\nBS5 Exercises\nBS5 Quiz\nBS5 Syllabus\nBS5 Study Plan\nBS5 Interview Prep\n\nBS5 Utilities\nBS5 Flex\nBS5 Icons\nBS5 Media Objects\nBS5 Filters",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Exercises\nBS5 Quiz",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "All Classes\nJS Alert\nJS Button\nJS Carousel\nJS Collapse\nJS Dropdown\nJS Modal\nJS Popover\nJS Scrollspy\nJS Tab\nJS Toasts\nJS Tooltip\n\n-->\n\nny:-->\n\n ny:-->\n\nny:-->\n\nW3Schools Bootstrap 5 Certificate\n\n ❮ Previous\n Next ❯\n\n HTML Certification",
+                "heading": "Bootstrap 5 Ref"
+            },
+            {
+                "content": "Prepare online at your own pace, take the exam when you are ready, and add a verified credential to your CV, LinkedIn profile, and portfolio.\n\n Designed for students, developers, and professionals who want a practical way to document their knowledge.\n\n Get Your HTML Certificate »\n\n Online exam. No expiration. Shareable verification link.\n\n w\n 3\n s\n c\n h\n o\n o\n l\n s\n\n C\n E\n R\n T\n I\n F\n I\n E\n D\n\n .\n\n 2\n 0\n 2\n 6",
+                "heading": "Get Certified in HTML"
+            },
+            {
+                "content": "Any student or professional working in digital fields can benefit from documenting their skills with a certificate.\n\n Certifications help demonstrate knowledge to current or future employers, clients, and collaborators in an increasingly competitive market.",
+                "heading": "Why Get Certified?"
+            },
+            {
+                "content": "W3Schools has more than two decades of experience teaching coding online.\n\n Our certificates provide a practical and professional way to show your skills in a format that is easy to verify and share.",
+                "heading": "Trusted Learning Platform"
+            },
+            {
+                "content": "The price is a small fraction of the cost of traditional education.\n\n You can prepare on your own schedule and take the exam when you are ready.",
+                "heading": "Affordable and Flexible"
+            },
+            {
+                "content": "Each certificate includes a unique verification link that can be shared with employers, clients, and your network.\n\n Download your certificate to showcase it, and validate it using the unique link or QR code.\n\n See how it looks in this example.",
+                "heading": "Get Your Certificate and Share It"
+            },
+            {
+                "content": "Fee\n\n 95 USD\n\n Achievable certification levels\n\n Intermediate (40%)\nAdvanced (75%)\nProfessional (90%)\n\n Number of questions\n\n Adaptive, 60 on average\n\n Requirement to pass\n\n Minimum 40% - Intermediate level\n\n Time limit\n\n 60 minutes\n\n Number of attempts\n\n 3\n\n Exam deadline\n\n None\n\n Certification expiration\n\n None\n\n Format\n\n Online, multiple choice\n\n Register Now »\n\n Have any questions? Send us an e-mail: sales@w3schools.com",
+                "heading": "Exam Overview"
+            },
+            {
+                "content": "Getting a certificate shows your commitment to improving your skills.\n\n You can add the certificate to your CV, resume, LinkedIn profile, and other professional platforms.\n\n It can help support career growth by making it easier to show your knowledge when applying for jobs, freelance work, or larger projects.",
+                "heading": "Advance Faster in Your Career"
+            },
+            {
+                "content": "Get Certified",
+                "heading": "Document Your Knowledge Today!"
+            },
+            {
+                "content": "01\n\n Study HTML for free at W3Schools.com\n\n 02\n\n Learn at your own speed and focus on the topics you need most\n\n 03\n\n Practice with quizzes and exercises\n\n 04\n\n Apply by paying the exam fee\n\n 05\n\n Take the exam online at any time and from any location",
+                "heading": "How It Works"
+            },
+            {
+                "content": "Getting a certificate shows initiative, helps you build credibility, and gives you a professional way to present your HTML knowledge.\n\n Get Your HTML Certificate »",
+                "heading": "Document Your Skills"
+            },
+            {
+                "content": "Are you an educator, manager, or business owner looking for courses or certifications for a group?\n\n We work with schools, companies, and organizations around the world.\n\n Send us an e-mail: sales@w3schools.com\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Looking to Add Multiple Users?"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:05:54Z",
+        "subject": "Bootstrap",
+        "title": "W3Schools Bootstrap 5 Certificate"
+    },
+    {
+        "url": "https://www.w3schools.com/bootstrap5/bootstrap_templates.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "bootstrap_bootstrap_templates",
+        "code_examples": [],
+        "category": "HTML & CSS",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "BS5 HOME\nBS5 Get Started\nBS5 Containers\nBS5 Grid Basic\nBS5 Typography\nBS5 Colors\n\nText Colors\nBackground Colors\n\nBS5 Tables\nBS5 Images\nBS5 Jumbotron\nBS5 Alerts\nBS5 Buttons\nBS5 Button Groups\nBS5 Badges\nBS5 Progress Bars\nBS5 Spinners\nBS5 Pagination\nBS5 List Groups\nBS5 Cards\nBS5 Dropdowns\nBS5 Collapse\nBS5 Navs\nBS5 Navbar\nBS5 Carousel\nBS5 Modal\nBS5 Tooltip\nBS5 Popover\nBS5 Toast\nBS5 Scrollspy\nBS5 Offcanvas\nBS5 Utilities\nBS5 Dark Mode\nBS5 Flex",
+                "heading": "Bootstrap 5 Tutorial"
+            },
+            {
+                "content": "BS5 Forms\nBS5 Select Menus\nBS5 Checks and Radios\nBS5 Range\nBS5 Input Groups\nBS5 Floating Labels\nBS5 Form Validation\nBS5 Inputs\nBS5 Input Groups\nBS5 Custom Forms\n-->",
+                "heading": "Bootstrap 5 Forms"
+            },
+            {
+                "content": "BS5 Grid System\nBS5 Stacked/Horizontal\nBS5 Grid XSmall\nBS5 Grid Small\nBS5 Grid Medium\nBS5 Grid Large\nBS5 Grid XLarge\nBS5 Grid XXL\nBS5 Grid Examples",
+                "heading": "Bootstrap 5 Grid"
+            },
+            {
+                "content": "BS5 Certificate",
+                "heading": "Bootstrap 5 Cert"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Editor\nBS5 Exercises\nBS5 Quiz\nBS5 Syllabus\nBS5 Study Plan\nBS5 Interview Prep\n\nBS5 Utilities\nBS5 Flex\nBS5 Icons\nBS5 Media Objects\nBS5 Filters",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Exercises\nBS5 Quiz",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "All Classes\nJS Alert\nJS Button\nJS Carousel\nJS Collapse\nJS Dropdown\nJS Modal\nJS Popover\nJS Scrollspy\nJS Tab\nJS Toasts\nJS Tooltip\n\n-->\n\nny:-->\n\n ny:-->\n\nny:-->\n\nBootstrap 5 Templates\n\n ❮ Previous\nNext ❯",
+                "heading": "Bootstrap 5 Ref"
+            },
+            {
+                "content": "We have created a responsive starter template with Bootstrap 5.\n\nYou are free to modify, save, share, and use it in your projects:\n\n Demo\n\n Try it Yourself\n\n Tip: Ever heard about W3Schools Spaces? Here you can create your own Bootstrap website from scratch or use a template, and host it.\n\n Get started for free ❯\n * no credit card required\n\n ❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Bootstrap 5 Basic Template"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:05:54Z",
+        "subject": "Bootstrap",
+        "title": "Bootstrap 5 Templates"
+    },
+    {
+        "url": "https://www.w3schools.com/bootstrap5/bootstrap_editor.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "bootstrap_bootstrap_editor",
+        "code_examples": [],
+        "category": "HTML & CSS",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "BS5 HOME\nBS5 Get Started\nBS5 Containers\nBS5 Grid Basic\nBS5 Typography\nBS5 Colors\n\nText Colors\nBackground Colors\n\nBS5 Tables\nBS5 Images\nBS5 Jumbotron\nBS5 Alerts\nBS5 Buttons\nBS5 Button Groups\nBS5 Badges\nBS5 Progress Bars\nBS5 Spinners\nBS5 Pagination\nBS5 List Groups\nBS5 Cards\nBS5 Dropdowns\nBS5 Collapse\nBS5 Navs\nBS5 Navbar\nBS5 Carousel\nBS5 Modal\nBS5 Tooltip\nBS5 Popover\nBS5 Toast\nBS5 Scrollspy\nBS5 Offcanvas\nBS5 Utilities\nBS5 Dark Mode\nBS5 Flex",
+                "heading": "Bootstrap 5 Tutorial"
+            },
+            {
+                "content": "BS5 Forms\nBS5 Select Menus\nBS5 Checks and Radios\nBS5 Range\nBS5 Input Groups\nBS5 Floating Labels\nBS5 Form Validation\nBS5 Inputs\nBS5 Input Groups\nBS5 Custom Forms\n-->",
+                "heading": "Bootstrap 5 Forms"
+            },
+            {
+                "content": "BS5 Grid System\nBS5 Stacked/Horizontal\nBS5 Grid XSmall\nBS5 Grid Small\nBS5 Grid Medium\nBS5 Grid Large\nBS5 Grid XLarge\nBS5 Grid XXL\nBS5 Grid Examples",
+                "heading": "Bootstrap 5 Grid"
+            },
+            {
+                "content": "BS5 Certificate",
+                "heading": "Bootstrap 5 Cert"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Editor\nBS5 Exercises\nBS5 Quiz\nBS5 Syllabus\nBS5 Study Plan\nBS5 Interview Prep\n\nBS5 Utilities\nBS5 Flex\nBS5 Icons\nBS5 Media Objects\nBS5 Filters",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Exercises\nBS5 Quiz",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "All Classes\nJS Alert\nJS Button\nJS Carousel\nJS Collapse\nJS Dropdown\nJS Modal\nJS Popover\nJS Scrollspy\nJS Tab\nJS Toasts\nJS Tooltip\n\n-->\n\nny:-->\n\n ny:-->\n\nny:-->\n\nBootstrap 5 Editor\n\n❮ Previous\nNext ❯",
+                "heading": "Bootstrap 5 Ref"
+            },
+            {
+                "content": "With our online Bootstrap editor, you can edit Bootstrap code and view the result in your browser.\n\n<div class=\"bg-light p-5 text-center\">\n <h2>My First Bootstrap Page</h2>\n <p>Some Bootstrap buttons:</p>\n <button class=\"btn btn-primary\">Primary</button>\n <button class=\"btn btn-success\">Success</button>\n</div>",
+                "heading": "Online Bootstrap 5 Editor"
+            },
+            {
+                "content": "Some Bootstrap buttons:\n\n Primary\n Success\n\n Try it Yourself »\n\nClick on the \"Try it Yourself\" button to see how it works.",
+                "heading": "My First Bootstrap Page"
+            },
+            {
+                "content": "If you want to save your Bootstrap code, along with HTML, CSS, and JavaScript, and create your own website, W3Schools Spaces gives you an easy place to write, run, manage, and publish code online.\n\n If you don't know Bootstrap, we suggest that you read our Bootstrap Tutorial from scratch.\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Build and Publish Bootstrap Projects"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:05:54Z",
+        "subject": "Bootstrap",
+        "title": "Bootstrap 5 Editor"
+    },
+    {
+        "url": "https://www.w3schools.com/bootstrap5/bootstrap_exercises.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "bootstrap_bootstrap_exercises",
+        "code_examples": [],
+        "category": "HTML & CSS",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "BS5 HOME\nBS5 Get Started\nBS5 Containers\nBS5 Grid Basic\nBS5 Typography\nBS5 Colors\n\nText Colors\nBackground Colors\n\nBS5 Tables\nBS5 Images\nBS5 Jumbotron\nBS5 Alerts\nBS5 Buttons\nBS5 Button Groups\nBS5 Badges\nBS5 Progress Bars\nBS5 Spinners\nBS5 Pagination\nBS5 List Groups\nBS5 Cards\nBS5 Dropdowns\nBS5 Collapse\nBS5 Navs\nBS5 Navbar\nBS5 Carousel\nBS5 Modal\nBS5 Tooltip\nBS5 Popover\nBS5 Toast\nBS5 Scrollspy\nBS5 Offcanvas\nBS5 Utilities\nBS5 Dark Mode\nBS5 Flex",
+                "heading": "Bootstrap 5 Tutorial"
+            },
+            {
+                "content": "BS5 Forms\nBS5 Select Menus\nBS5 Checks and Radios\nBS5 Range\nBS5 Input Groups\nBS5 Floating Labels\nBS5 Form Validation\nBS5 Inputs\nBS5 Input Groups\nBS5 Custom Forms\n-->",
+                "heading": "Bootstrap 5 Forms"
+            },
+            {
+                "content": "BS5 Grid System\nBS5 Stacked/Horizontal\nBS5 Grid XSmall\nBS5 Grid Small\nBS5 Grid Medium\nBS5 Grid Large\nBS5 Grid XLarge\nBS5 Grid XXL\nBS5 Grid Examples",
+                "heading": "Bootstrap 5 Grid"
+            },
+            {
+                "content": "BS5 Certificate",
+                "heading": "Bootstrap 5 Cert"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Editor\nBS5 Exercises\nBS5 Quiz\nBS5 Syllabus\nBS5 Study Plan\nBS5 Interview Prep\n\nBS5 Utilities\nBS5 Flex\nBS5 Icons\nBS5 Media Objects\nBS5 Filters",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Exercises\nBS5 Quiz",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "All Classes\nJS Alert\nJS Button\nJS Carousel\nJS Collapse\nJS Dropdown\nJS Modal\nJS Popover\nJS Scrollspy\nJS Tab\nJS Toasts\nJS Tooltip\n\n-->\n\nny:-->\n\n ny:-->\n\nny:-->\n\nBootstrap 5 Exercises\n\n❮ Previous\nNext ❯\n\nYou can test your Bootstrap 5 skills with W3Schools' Exercises.",
+                "heading": "Bootstrap 5 Ref"
+            },
+            {
+                "content": "You will get 1 point for each correct answer. Your score and total score will always be displayed.",
+                "heading": "Count Your Score"
+            },
+            {
+                "content": "Good luck!\n\n Start Bootstrap 5 Exercises ❯\n\n If you don't know Bootstrap 5, we suggest that you read our Bootstrap 5 Tutorial from scratch.\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Start Bootstrap 5 Exercises"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:05:54Z",
+        "subject": "Bootstrap",
+        "title": "Bootstrap 5 Exercises"
+    },
+    {
+        "url": "https://www.w3schools.com/bootstrap5/bootstrap_quiz.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "bootstrap_bootstrap_quiz",
+        "code_examples": [],
+        "category": "HTML & CSS",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "BS5 HOME\nBS5 Get Started\nBS5 Containers\nBS5 Grid Basic\nBS5 Typography\nBS5 Colors\n\nText Colors\nBackground Colors\n\nBS5 Tables\nBS5 Images\nBS5 Jumbotron\nBS5 Alerts\nBS5 Buttons\nBS5 Button Groups\nBS5 Badges\nBS5 Progress Bars\nBS5 Spinners\nBS5 Pagination\nBS5 List Groups\nBS5 Cards\nBS5 Dropdowns\nBS5 Collapse\nBS5 Navs\nBS5 Navbar\nBS5 Carousel\nBS5 Modal\nBS5 Tooltip\nBS5 Popover\nBS5 Toast\nBS5 Scrollspy\nBS5 Offcanvas\nBS5 Utilities\nBS5 Dark Mode\nBS5 Flex",
+                "heading": "Bootstrap 5 Tutorial"
+            },
+            {
+                "content": "BS5 Forms\nBS5 Select Menus\nBS5 Checks and Radios\nBS5 Range\nBS5 Input Groups\nBS5 Floating Labels\nBS5 Form Validation\nBS5 Inputs\nBS5 Input Groups\nBS5 Custom Forms\n-->",
+                "heading": "Bootstrap 5 Forms"
+            },
+            {
+                "content": "BS5 Grid System\nBS5 Stacked/Horizontal\nBS5 Grid XSmall\nBS5 Grid Small\nBS5 Grid Medium\nBS5 Grid Large\nBS5 Grid XLarge\nBS5 Grid XXL\nBS5 Grid Examples",
+                "heading": "Bootstrap 5 Grid"
+            },
+            {
+                "content": "BS5 Certificate",
+                "heading": "Bootstrap 5 Cert"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Editor\nBS5 Exercises\nBS5 Quiz\nBS5 Syllabus\nBS5 Study Plan\nBS5 Interview Prep\n\nBS5 Utilities\nBS5 Flex\nBS5 Icons\nBS5 Media Objects\nBS5 Filters",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Exercises\nBS5 Quiz",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "All Classes\nJS Alert\nJS Button\nJS Carousel\nJS Collapse\nJS Dropdown\nJS Modal\nJS Popover\nJS Scrollspy\nJS Tab\nJS Toasts\nJS Tooltip\n\n-->\n\nny:-->\n\n ny:-->\n\nny:-->\n\nBootstrap 5 Quiz\n\n❮ Previous\nNext ❯\n\nYou can test your Bootstrap 5 skills with W3Schools' Quiz.",
+                "heading": "Bootstrap 5 Ref"
+            },
+            {
+                "content": "The test contains 25 questions and there is no time limit.\n\nThe test is not official, it's just a nice way to see how much you know, or don't know, about Bootstrap 5.",
+                "heading": "The Test"
+            },
+            {
+                "content": "You will get 1 point for each correct answer. At the end of the Quiz,\nyour total score will be displayed. Maximum score is 25 points.",
+                "heading": "Count Your Score"
+            },
+            {
+                "content": "Good luck!\n\nStart the Bootstrap Quiz 5 ❯\n\n If you don't know Bootstrap 5, we suggest that you read our Bootstrap 5 Tutorial from scratch.",
+                "heading": "Start the Quiz"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:05:54Z",
+        "subject": "Bootstrap",
+        "title": "Bootstrap 5 Quiz"
+    },
+    {
+        "url": "https://www.w3schools.com/bootstrap5/bootstrap_syllabus.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "bootstrap_bootstrap_syllabus",
+        "code_examples": [
+            {
+                "code": "<div class=\"container\">\n  <h1>My First Bootstrap Page</h1>\n  <p>This is some text.</p> \n</div>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_gs_container&stacked=h"
+            }
+        ],
+        "category": "HTML & CSS",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "BS5 HOME\nBS5 Get Started\nBS5 Containers\nBS5 Grid Basic\nBS5 Typography\nBS5 Colors\n\nText Colors\nBackground Colors\n\nBS5 Tables\nBS5 Images\nBS5 Jumbotron\nBS5 Alerts\nBS5 Buttons\nBS5 Button Groups\nBS5 Badges\nBS5 Progress Bars\nBS5 Spinners\nBS5 Pagination\nBS5 List Groups\nBS5 Cards\nBS5 Dropdowns\nBS5 Collapse\nBS5 Navs\nBS5 Navbar\nBS5 Carousel\nBS5 Modal\nBS5 Tooltip\nBS5 Popover\nBS5 Toast\nBS5 Scrollspy\nBS5 Offcanvas\nBS5 Utilities\nBS5 Dark Mode\nBS5 Flex",
+                "heading": "Bootstrap 5 Tutorial"
+            },
+            {
+                "content": "BS5 Forms\nBS5 Select Menus\nBS5 Checks and Radios\nBS5 Range\nBS5 Input Groups\nBS5 Floating Labels\nBS5 Form Validation\nBS5 Inputs\nBS5 Input Groups\nBS5 Custom Forms\n-->",
+                "heading": "Bootstrap 5 Forms"
+            },
+            {
+                "content": "BS5 Grid System\nBS5 Stacked/Horizontal\nBS5 Grid XSmall\nBS5 Grid Small\nBS5 Grid Medium\nBS5 Grid Large\nBS5 Grid XLarge\nBS5 Grid XXL\nBS5 Grid Examples",
+                "heading": "Bootstrap 5 Grid"
+            },
+            {
+                "content": "BS5 Certificate",
+                "heading": "Bootstrap 5 Cert"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Editor\nBS5 Exercises\nBS5 Quiz\nBS5 Syllabus\nBS5 Study Plan\nBS5 Interview Prep\n\nBS5 Utilities\nBS5 Flex\nBS5 Icons\nBS5 Media Objects\nBS5 Filters",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Exercises\nBS5 Quiz",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "All Classes\nJS Alert\nJS Button\nJS Carousel\nJS Collapse\nJS Dropdown\nJS Modal\nJS Popover\nJS Scrollspy\nJS Tab\nJS Toasts\nJS Tooltip\n\n-->\n\nny:-->\n\n ny:-->\n\nny:-->\n\nBootstrap 5 Syllabus\n\n ❮ Previous\n Next ❯",
+                "heading": "Bootstrap 5 Ref"
+            },
+            {
+                "content": "The W3Schools Bootstrap 5 Tutorial is comprehensive and beginner-friendly.\n\nIt will give you a fundamental knowledge of Bootstrap 5.\n\nIt is designed for beginners and requires only basic HTML and CSS knowledge.\n\nThe content has been carefully made to be bite-sized, simple, and easy to understand.\n\nThe content has been proven by millions of users over the years. It is updated and improved frequently.\n\nThe syllabus outline and its sequence are structured so you can learn Bootstrap 5 step by step, from the introduction to creating responsive websites.\n\nGet Started With Bootstrap 5 »",
+                "heading": "Introduction"
+            },
+            {
+                "content": "Understand the basic structure of Bootstrap 5 framework.\n\n Create responsive layouts using Bootstrap's grid system.\n\n Style elements using Bootstrap's utility classes.\n\n Implement and customize Bootstrap components.\n\n Create responsive navigation bars and menus.\n\n Build forms with Bootstrap's form components.\n\n Add interactive components like modals and tooltips.\n\n Use Bootstrap's flexbox utilities.\n\n Create accessible and mobile-friendly websites.\n\nNote: Are you a teacher teaching Bootstrap? W3Schools Academy is a toolbox of features that can help you teach. It offers classroom features such as pre-built study plans, classroom administration and much more. Read more about Academy here.",
+                "heading": "Learning Outcomes"
+            },
+            {
+                "content": "Web Development:\n Bootstrap is essential for creating modern, responsive websites.\n\n Front-end Development:\n Bootstrap is fundamental to understanding responsive design and component-based development.\n\n UI/UX Design:\n Bootstrap provides a comprehensive design system for creating consistent user interfaces.\n\n Mobile-First Development:\n Bootstrap's responsive design system is perfect for creating mobile-friendly websites.\n\n Web Design:\n Bootstrap supports rapid prototyping and design implementation.\n\n STEM Projects:\n Building responsive websites with Bootstrap teaches modern web development concepts.\n\n Digital Marketing:\n Bootstrap helps create professional landing pages and marketing websites.\n\nGet Started",
+                "heading": "Which Subjects Are Bootstrap 5 Relevant For?"
+            },
+            {
+                "content": "In this tutorial we offer different activities for you to learn Bootstrap 5 for free:\n\n Lessons\n\n Exercises\n\n Quizzes",
+                "heading": "Activities"
+            },
+            {
+                "content": "You can also create an account to track your progress.\n\nAs a signed-in user, you get access to features such as:\n\n Learning paths\n\n Sandbox and lab environments\n\n Achievements\n\n And much more!\n\nSign Up",
+                "heading": "Sign in to Track Progress"
+            },
+            {
+                "content": "BS5 HOME\n\n BS5 Get Started\n\n BS5 Containers\n\n BS5 Grid Basic\n\n BS5 Typography\n\n BS5 Colors\n\n Text Colors\n\n Background Colors\n\n BS5 Tables\n\n BS5 Images\n\n BS5 Jumbotron\n\n BS5 Alerts\n\n BS5 Buttons\n\n BS5 Button Groups\n\n BS5 Badges\n\n BS5 Progress Bars\n\n BS5 Spinners\n\n BS5 Pagination\n\n BS5 List Groups\n\n BS5 Cards\n\n BS5 Dropdowns\n\n BS5 Collapse\n\n BS5 Navs\n\n BS5 Navbar\n\n BS5 Carousel\n\n BS5 Modal\n\n BS5 Tooltip\n\n BS5 Popover\n\n BS5 Toast\n\n BS5 Scrollspy\n\n BS5 Offcanvas\n\n BS5 Utilities\n\n BS5 Dark Mode\n\n BS5 Flex\n\n BS5 Forms\n\n BS5 Select Menus\n\n BS5 Checks and Radios\n\n BS5 Range\n\n BS5 Input Groups\n\n BS5 Floating Labels\n\n BS5 Form Validation\n\n BS5 Grid System\n\n BS5 Stacked/Horizontal\n\n BS5 Grid XSmall\n\n BS5 Grid Small\n\n BS5 Grid Medium\n\n BS5 Grid Large\n\n BS5 Grid XLarge\n\n BS5 Grid XXL\n\n BS5 Grid Examples\n\nGet Started",
+                "heading": "Overview of the Modules"
+            },
+            {
+                "content": "Bootstrap 5, like any framework, is best learned through hands-on practice.\n\nTry this example using our editor:\n\nExample\n\n <div class=\"container\">\n  <h1>My First Bootstrap Page</h1>\n  <p>This is some text.</p> \n</div>\n\nTry it Yourself »\n\nIf you want to explore more and host your project, we have a feature called Spaces \nthat allows you to build, test and deploy static websites.\n\nHere you get a secure sandbox environment called Spaces, where you can practice coding and test projects in real-time.\n\nSpaces allow you to test, build, and deploy code. This includes a W3Schools subdomain, hosting, and secure SSL certificates.\n\nSpaces require no installation and run directly in the browser.\n\nFeatures include:\n\n Collaboration\n\n File navigator\n\n Terminal & log\n\n Package manager\n\n Database\n\n Environment manager\n\n Analytics\n\nCreate a Spaces Account",
+                "heading": "Sandbox and Lab Environment"
+            },
+            {
+                "content": "W3Schools offers an end-of-pathway certification program.\n\nHere you can take exams to get certified.\n\nThe Bootstrap 5 exam is a test that summarizes the W3Schools Bootstrap 5 syllabus.\n\nAfter passing the exam you get the \"Certified Bootstrap 5 Developer\" Certification.\n\nThere are two different types of certifications:\n\nNon-adaptive\n\nAdaptive\n\nThe non-adaptive is pass or no pass.\n\nThe adaptive certification is adaptive and graded; students will get a grade from intermediate, advanced to professional.\n\nBuy Certificate »",
+                "heading": "Bootstrap 5 Certification"
+            },
+            {
+                "content": "Are you interested in learning how you can use W3Schools Academy to Teach \nBootstrap 5? \n\nWatch a demo of W3Schools Academy. You'll see how it works, and discover how it can make teaching programming easier and more engaging.\n\nWatch Demo »\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Are You a Teacher?"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:05:55Z",
+        "subject": "Bootstrap",
+        "title": "Bootstrap 5 Syllabus"
+    },
+    {
+        "url": "https://www.w3schools.com/bootstrap5/bootstrap_study_plan.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "bootstrap_bootstrap_study_plan",
+        "code_examples": [],
+        "category": "HTML & CSS",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "BS5 HOME\nBS5 Get Started\nBS5 Containers\nBS5 Grid Basic\nBS5 Typography\nBS5 Colors\n\nText Colors\nBackground Colors\n\nBS5 Tables\nBS5 Images\nBS5 Jumbotron\nBS5 Alerts\nBS5 Buttons\nBS5 Button Groups\nBS5 Badges\nBS5 Progress Bars\nBS5 Spinners\nBS5 Pagination\nBS5 List Groups\nBS5 Cards\nBS5 Dropdowns\nBS5 Collapse\nBS5 Navs\nBS5 Navbar\nBS5 Carousel\nBS5 Modal\nBS5 Tooltip\nBS5 Popover\nBS5 Toast\nBS5 Scrollspy\nBS5 Offcanvas\nBS5 Utilities\nBS5 Dark Mode\nBS5 Flex",
+                "heading": "Bootstrap 5 Tutorial"
+            },
+            {
+                "content": "BS5 Forms\nBS5 Select Menus\nBS5 Checks and Radios\nBS5 Range\nBS5 Input Groups\nBS5 Floating Labels\nBS5 Form Validation\nBS5 Inputs\nBS5 Input Groups\nBS5 Custom Forms\n-->",
+                "heading": "Bootstrap 5 Forms"
+            },
+            {
+                "content": "BS5 Grid System\nBS5 Stacked/Horizontal\nBS5 Grid XSmall\nBS5 Grid Small\nBS5 Grid Medium\nBS5 Grid Large\nBS5 Grid XLarge\nBS5 Grid XXL\nBS5 Grid Examples",
+                "heading": "Bootstrap 5 Grid"
+            },
+            {
+                "content": "BS5 Certificate",
+                "heading": "Bootstrap 5 Cert"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Editor\nBS5 Exercises\nBS5 Quiz\nBS5 Syllabus\nBS5 Study Plan\nBS5 Interview Prep\n\nBS5 Utilities\nBS5 Flex\nBS5 Icons\nBS5 Media Objects\nBS5 Filters",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Exercises\nBS5 Quiz",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "All Classes\nJS Alert\nJS Button\nJS Carousel\nJS Collapse\nJS Dropdown\nJS Modal\nJS Popover\nJS Scrollspy\nJS Tab\nJS Toasts\nJS Tooltip\n\n-->\n\nny:-->\n\n ny:-->\n\nny:-->\n\nBootstrap 5 Study Plan\n\n❮ Previous\nNext ❯",
+                "heading": "Bootstrap 5 Ref"
+            },
+            {
+                "content": "The Bootstrap 5 study plan helps you teach your students Bootstrap 5 step-by-step.\n\nCreating a study plan for Bootstrap 5 is easy.\n\nYou can use a pre-built study plan or customize it.\n\nStudents have different skill levels. The study plans can be customized to ensure that everyone is challenged.\n\nSave time with pre-built teacher materials and study plans. Easily organize your class with a timeline from the introduction of Bootstrap 5 to the final exam.",
+                "heading": "Introduction"
+            },
+            {
+                "content": "This study plan is a feature of W3Schools Academy.\n\nW3Schools Academy is a platform that has everything you need to teach coding, all in one place.\n\nIt offers you as a teacher a toolbox of features that helps you succeed with teaching in your classroom.\n\nYou need to have an active subscription to access the study plan feature.\n\n Full Access ($49.99 / year per student)\n\n Calculate your price and order here.\n\nLearn More »\n\nAcademy also offer other features such as:\n\n Managing your classroom\n\n Tracking of student progress and reports\n\n Labs, assignments, and code challenges (prebuilt challenges or create your own ones)\n\n Auto-grading\n\n Teaching materials\n\n Certification exams\n\nGet a free demo »",
+                "heading": "W3Schools Academy"
+            },
+            {
+                "content": "W3Schools has everything you need to teach Bootstrap 5.\n\nThe Bootstrap 5 training materials is available for you to include and use in your study plan:\n\n W3Schools Bootstrap 5 Tutorial\n\n Bootstrap 5 Exercises\n\n Bootstrap 5 Quiz\n\n Bootstrap 5 Challenges (Coding challenges)\n\n Bootstrap 5 Certification Exam (End of Pathway Exam)",
+                "heading": "Teacher Materials"
+            },
+            {
+                "content": "With the Bootstrap 5 Syllabus, your students will start with the basics, like styling web pages, using the grid system, and creating responsive layouts, and move to more advanced topics, like building complete website structures and customizing components. Each chapter includes examples, try-it-yourself sections, exercises, and quizzes to make learning easy, interactive, and fun.\n\nRead more about Bootstrap 5 Syllabus.",
+                "heading": "Bootstrap 5 Syllabus"
+            },
+            {
+                "content": "The study plan features are made to help teachers and students. They make learning easy, flexible, and fun. These features work for different types of classes, learning styles and student level.\n\n Learning Paths\n\n You can add ready-made learning paths.\n\n The learning paths are by default ordered by our recommended order.\n\n You can change the order.\n\n You can add custom activities with text, links, or multi-media files.\n\n Drag and drop or click to make changes to the path.\n\n Interactive Content\n\n Tutorials\n\n Try-its (test code snippets)\n\n Exercises\n\n Quiz\n\n Challenges\n\n Labs\n\n Timeline and Pace\n\n You can set a timeline of your study plan (e.g., 4-week, 8-week, 12-week, 24-week plans).\n\n You can decide the learning pace for your class.\n\n Different study plans can be assigned to different students in the same class.\n\n The flexibility can help to make sure that everyone is challenged.\n\n Track Student Progress\n\n There are tools to track student progress.\n\n The analytic tools include: chapter progress, exercises results, quiz results, exam results, and much more.\n\n The challenges can be auto-graded or manually graded. The results are available to you as a teacher.\n\n End of Pathway Exam\n\n The Bootstrap 5 study plan aligns with the Bootstrap 5 Certification Exam.\n\n The exam can be taken at the end of the study plan, at your selected date.\n\n The exam summarizes the Bootstrap 5 Tutorial.\n\n You get reports of the students' results.\n\n Accessibility\n\n Study plans and learning materials are accessible on desktops, tablets, and smartphones.\n\n This ensures students can learn anytime, anywhere.\n\nLearn More »",
+                "heading": "Study Plan Overview"
+            },
+            {
+                "content": "You choose the timeline and pace of your study plans.\n\nSchools have different preferences.\n\nSome would like more intensive pace, e.g. 3 weeks, others 12 or more weeks.\n\nIt is completely up to you.\n\nFor example, this is how a 3-week Bootstrap 5 study plan could look like:\n\n Week 1: Introduction, Layout Basics\n\n Week 2: Content, Components, Plugins, Utilities & Dark Mode\n\n Week 3: Flex, Forms, Grids, Bootstrap 5 Certification Exam\n\nImage of Sample Bootstrap 5 study plan:",
+                "heading": "Sample Study Plan"
+            },
+            {
+                "content": "Start with Bootstrap 5 Study Plans today.\n\nGet Started »",
+                "heading": "Ready to get started?"
+            },
+            {
+                "content": "Are you interested in learning how you can use W3Schools Academy to Teach Bootstrap 5 programming? \n\nWatch a demo of W3Schools Academy. You'll see how it works, and discover how it can make teaching programming easier and more engaging.\n\nWatch Demo »\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Are You a Teacher?"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:05:55Z",
+        "subject": "Bootstrap",
+        "title": "Bootstrap 5 Study Plan"
+    },
+    {
+        "url": "https://www.w3schools.com/bootstrap5/bootstrap_interview_prep.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "bootstrap_bootstrap_interview_prep",
+        "code_examples": [
+            {
+                "code": "<head>\n\n <title>Simple Greeting Page</title>\n\n <style>\n\n   body {\n\n     font-family: Arial, sans-serif;\n\n     background-color: #f0f0f0;\n\n     color: #333;\n\n     padding: 20px;\n\n   }\n\n </style>\n\n </head>\n\n <body>\n\n <h1>Hello, welcome to our website!</h1>\n\n </body>\n\n </html>",
+                "language": "bootstrap",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "HTML & CSS",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "BS5 HOME\nBS5 Get Started\nBS5 Containers\nBS5 Grid Basic\nBS5 Typography\nBS5 Colors\n\nText Colors\nBackground Colors\n\nBS5 Tables\nBS5 Images\nBS5 Jumbotron\nBS5 Alerts\nBS5 Buttons\nBS5 Button Groups\nBS5 Badges\nBS5 Progress Bars\nBS5 Spinners\nBS5 Pagination\nBS5 List Groups\nBS5 Cards\nBS5 Dropdowns\nBS5 Collapse\nBS5 Navs\nBS5 Navbar\nBS5 Carousel\nBS5 Modal\nBS5 Tooltip\nBS5 Popover\nBS5 Toast\nBS5 Scrollspy\nBS5 Offcanvas\nBS5 Utilities\nBS5 Dark Mode\nBS5 Flex",
+                "heading": "Bootstrap 5 Tutorial"
+            },
+            {
+                "content": "BS5 Forms\nBS5 Select Menus\nBS5 Checks and Radios\nBS5 Range\nBS5 Input Groups\nBS5 Floating Labels\nBS5 Form Validation\nBS5 Inputs\nBS5 Input Groups\nBS5 Custom Forms\n-->",
+                "heading": "Bootstrap 5 Forms"
+            },
+            {
+                "content": "BS5 Grid System\nBS5 Stacked/Horizontal\nBS5 Grid XSmall\nBS5 Grid Small\nBS5 Grid Medium\nBS5 Grid Large\nBS5 Grid XLarge\nBS5 Grid XXL\nBS5 Grid Examples",
+                "heading": "Bootstrap 5 Grid"
+            },
+            {
+                "content": "BS5 Certificate",
+                "heading": "Bootstrap 5 Cert"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Editor\nBS5 Exercises\nBS5 Quiz\nBS5 Syllabus\nBS5 Study Plan\nBS5 Interview Prep\n\nBS5 Utilities\nBS5 Flex\nBS5 Icons\nBS5 Media Objects\nBS5 Filters",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "BS5 Basic Template\nBS5 Exercises\nBS5 Quiz",
+                "heading": "Bootstrap 5 Other"
+            },
+            {
+                "content": "All Classes\nJS Alert\nJS Button\nJS Carousel\nJS Collapse\nJS Dropdown\nJS Modal\nJS Popover\nJS Scrollspy\nJS Tab\nJS Toasts\nJS Tooltip\n\n-->\n\nny:-->\n\n ny:-->\n\nny:-->\n\n Bootstrap Interview Preparation\n\n ❮ Previous\n Next ❯\n\nTry W3Schools' comprehensive Front-End interview preparation feature. \n\nA tool that will help you get ready for your next interview.\n\nW3Schools interview preparation is an interactive feature powered by AI, where you can select the role of the interviewer, ask questions, and receive guidance.\n\nAfter the interview training you will get an evaluation of your performance that you can use to improve yourself.\n\nGet Started",
+                "heading": "Bootstrap 5 Ref"
+            },
+            {
+                "content": "If you are going to a Front-End interview, there are a few things you can expect:\n\nCoding Questions:\n\nYou will be asked coding questions, and you possibly also get a task to solve.\n\nExamples of technical questions:\n\n Tell me about your experience as a Front-End developer.\n\n Tell me about a personal project where you worked on implementing the user interface for a website.\n\nExamples of a task:\n\nCreate a webpage that shows a greeting message to the user. \n\n Use HTML and CSS to structure and style it. You can add a JavaScript function to change the message based on the time of the day.\n\n <head>\n\n <title>Simple Greeting Page</title>\n\n <style>\n\n   body {\n\n     font-family: Arial, sans-serif;\n\n     background-color: #f0f0f0;\n\n     color: #333;\n\n     padding: 20px;\n\n   }\n\n </style>\n\n </head>\n\n <body>\n\n <h1>Hello, welcome to our website!</h1>\n\n </body>\n\n </html>\n\n Practice Here »\n\nIf you don't know how to solve the task or answer the question, do not panic. It happens to everyone, even pro Front-End developers.\n\nShowcase your skills and projects:\n\nThey would like to see projects to understand your work better.\n\nYou can include current projects in your portfolio even if they are unfinished.\n\nExamples of projects to have in your portfolio:\n\n To-do list app\n\n Blog template\n\n Weather dashboard\n\n E-commerce product page\n\n Interactive game or application",
+                "heading": "What to expect in a Front-End interview"
+            },
+            {
+                "content": "Before you go to an interview, you should check out the company.\n\nIt will give you a better understanding of their values and what they do.\n\nCheck out:\n\n Their webpage\n\n Their social media platforms\n\n Articles and reviews\n\nMake sure you understand the job description:\n\nRead the description and take notes if you need help understanding something. You can call them before the interview and ask about the things you don't understand.\n\nYou can also ask a friend or a community member to help you.\n\nThere is a big community of Front-End developers on social media.\n\nReflect on why you are the right fit for this role:\n\nCompanies hire people they believe will be the right fit.\n\nThink about what value you can add to the role and the team.\n\nWrite them down.\n\nIt will help you discuss how you are the right candidate for the role.\n\nWe have created an interview tool to help you prepare:\n\nTry it out",
+                "heading": "What to do before the interview"
+            },
+            {
+                "content": "Front-End development is an exciting career that allows you to create dynamic and responsive websites and apps. It's a good choice if you're interested in good user engagement and experience.\n\nTypical Languages Used in Front-End Development:\n\n HTML\n\n CSS\n\n JavaScript\n\n React.js\n\n Bootstrap\n\n and other CSS frameworks",
+                "heading": "What is Front-End Development?"
+            },
+            {
+                "content": "The demand for Front-End developers is high.\n\nYou can expect:\n\n Competitive salary\n\n Possibility of working remotely\n\n Opportunity to grow as the industry innovates and adopts new technologies.\n\nThe Average Salary is $112,328 in the US.\n\nTypical Job Titles for a Front-End Developer:\n\n Front-End developer\n\n Web Developer\n\n UI/UX Designer\n\n Web App Developer\n\n and many more.\n\nTry W3Schools Pathfinder Jobs, where companies post in-demand job roles such as Front-End development, web development, Java development, and more.\n\nOur best tip: Prepare yourself so you can go in with confidence and enjoy the process!\n\nTry W3Schools interview preparation here: Interview Preperation\n\nBest of luck!\n\n❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Career Outlook"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:05:56Z",
+        "subject": "Bootstrap",
+        "title": "Bootstrap Interview Preparation"
+    },
+    {
+        "url": "https://www.w3schools.com/bootstrap/default.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "bootstrap_default",
+        "code_examples": [
+            {
+                "code": "<div class=\"jumbotron text-center\">\n  <h1>My First Bootstrap Page</h1>\n  <p>Resize this responsive page to see the effect!</p> \n</div>\n\n<div class=\"container\">\n  <div class=\"row\">\n\n     <div class=\"col-sm-4\">\n      <h3>Column 1</h3>\n      <p>Lorem ipsum \n dolor..</p>\n    </div>\n    <div class=\"col-sm-4\">\n      <h3>Column 2</h3>\n      <p>Lorem ipsum \n dolor..</p>\n    </div>\n    <div class=\"col-sm-4\">\n      <h3>Column 3</h3> \n      <p>Lorem ipsum \n dolor..</p>\n    </div>\n  </div>\n</div>",
+                "language": "bootstrap",
+                "heading": "Bootstrap Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=trybs_default&stacked=h"
+            }
+        ],
+        "category": "HTML & CSS",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "BS HOME\nBS Get Started\nBS Grid Basic\nBS Typography\nBS Tables\nBS Images\nBS Jumbotron\nBS Wells\nBS Alerts\nBS Buttons\nBS Button Groups\nBS Glyphicons\nBS Badges/Labels\nBS Progress Bars\nBS Pagination\nBS Pager\nBS List Groups\nBS Panels\nBS Dropdowns\nBS Collapse\nBS Tabs/Pills\nBS Navbar\nBS Forms\nBS Inputs\nBS Inputs 2\nBS Input Sizing\nBS Media Objects\nBS Carousel\nBS Modal\nBS Tooltip\nBS Popover\nBS Scrollspy\nBS Affix\nBS Filters",
+                "heading": "Bootstrap 3 Tutorial"
+            },
+            {
+                "content": "BS Grid System\nBS Stacked/Horizontal\nBS Grid Small\nBS Grid Medium\nBS Grid Large\nBS Grid Examples",
+                "heading": "Bootstrap Grids"
+            },
+            {
+                "content": "BS Templates\nBS Theme \"Simply Me\"\nBS Theme \"Company\"\nBS Theme \"Band\"",
+                "heading": "Bootstrap Themes"
+            },
+            {
+                "content": "BS3 Certificate",
+                "heading": "Bootstrap 3 Cert"
+            },
+            {
+                "content": "BS Examples\nBS Editor\nBS Quiz\nBS Exercises\nBS Interview Prep",
+                "heading": "Bootstrap Examples"
+            },
+            {
+                "content": "CSS All Classes\nCSS Typography\nCSS Buttons\nCSS Forms\nCSS Helpers\nCSS Images\nCSS Tables\nCSS Dropdowns\nCSS Navs\nGlyphicons",
+                "heading": "Bootstrap CSS Ref"
+            },
+            {
+                "content": "JS Affix\nJS Alert\nJS Button\nJS Carousel\nJS Collapse\nJS Dropdown\nJS Modal\nJS Popover\nJS Scrollspy\nJS Tab\nJS Tooltip\n\nny:-->\n\n ny:-->\n\nny:-->\n\nBootstrap 3 Tutorial\n\n❮ Home\nNext ❯",
+                "heading": "Bootstrap JS Ref"
+            },
+            {
+                "content": "Bootstrap is the most popular HTML, CSS, and JavaScript framework for developing responsive, mobile-first websites.\n\n Bootstrap is completely free to download and use!\n\n Learn Bootstrap now ❯\n\n Become Bootstrap Certified\n Get certified with our Bootstrap exam, includes a professionally curated study kit to guide you from beginner to exam-ready.\n\nGet Certified ❯\n\n CERTIFICATE OF COMPLETION\n This certifies that\n Your Name\n has passed the W3Schools Bootstrap Certification exam and is hereby declared a\n\n Certified Bootstrap Developer\n The candidate has passed the exam at the Professional level.\n Verify at\n verify.w3schools.com\n Stale Refsnes\n for w3schools.com",
+                "heading": "Learn Bootstrap 3"
+            },
+            {
+                "content": "This Bootstrap tutorial contains hundreds of Bootstrap examples.\n\nWith our online editor, you can edit the code, and click on a button to view the result.\n\nBootstrap Example\n\n <div class=\"jumbotron text-center\">\n  <h1>My First Bootstrap Page</h1>\n  <p>Resize this responsive page to see the effect!</p> \n</div>\n\n<div class=\"container\">\n  <div class=\"row\">\n\n     <div class=\"col-sm-4\">\n      <h3>Column 1</h3>\n      <p>Lorem ipsum \n dolor..</p>\n    </div>\n    <div class=\"col-sm-4\">\n      <h3>Column 2</h3>\n      <p>Lorem ipsum \n dolor..</p>\n    </div>\n    <div class=\"col-sm-4\">\n      <h3>Column 3</h3> \n      <p>Lorem ipsum \n dolor..</p>\n    </div>\n  </div>\n</div>\n\nTry it Yourself »\n\n Click on the \"Try it Yourself\" button to see how it works.",
+                "heading": "Try it Yourself Examples"
+            },
+            {
+                "content": "Add the correct class name to transform the list below into a pagination menu.\n\n<ul class=\"\">\n <li><a href=\"#\">1</a></li>\n <li><a href=\"#\">2</a></li>\n <li><a href=\"#\">3</a></li>\n <li><a href=\"#\">4</a></li>\n <li><a href=\"#\">5</a></li>\n</ul>\n\nSubmit Answer »\nStart the Exercise",
+                "heading": "Exercise:"
+            },
+            {
+                "content": "Test your Bootstrap skills at W3Schools!\n\nStart Bootstrap Quiz!",
+                "heading": "Bootstrap Quiz Test"
+            },
+            {
+                "content": "Create a W3Schools account and get access to more features and learning materials:\n\n View your completed tutorials, exercises, and quizzes\n\n Keep an eye on your progress and daily streaks\n\n Jump back in right where you left off\n-->\n Join the leaderboard and compete with others\n\n Get access to more challenges and tests\n-->\n Get your own avatar and unlock new skins\n\n Create your own personal website\n\n Sign Up »\n\nNote\nThis is an optional feature. You can study at W3Schools without creating an account.",
+                "heading": "Track Your Progress"
+            },
+            {
+                "content": "At W3Schools you will find a complete Bootstrap reference of all CSS classes, \nComponents, and JavaScript plugins - all with \"Try it Yourself\" examples:\n\nComplete List of All Bootstrap ClassesPopular\n\nBootstrap CSS Text/Typography\nBootstrap CSS Buttons\nBootstrap CSS Forms\nBootstrap CSS Helpers\nBootstrap CSS Images\nBootstrap CSS Tables\n\nBootstrap Components Dropdowns\nBootstrap Components Navs\nBootstrap Components Glyphicons\n\nBootstrap JS Affix\nBootstrap JS Alert\nBootstrap JS Button\nBootstrap JS Carousel\nBootstrap JS Collapse\nBootstrap JS Dropdown\nBootstrap JS Modal\nBootstrap JS Popover\nBootstrap JS Scrollspy\nBootstrap JS Tab\nBootstrap JS Tooltip",
+                "heading": "Bootstrap References"
+            },
+            {
+                "content": "We have made some Bootstrap Templates you can play around with. They are completely free to use:\n\nBrowse Themes\n\nBrowse Basic Templates",
+                "heading": "Bootstrap Themes / Templates"
+            },
+            {
+                "content": "This tutorial follows Bootstrap 3, which was released in 2013. However, we also cover newer versions; Bootstrap 4 (released 2018) and Bootstrap 5 (released 2021).\n\nBootstrap 5 is the newest version of Bootstrap; \nwith new components, faster stylesheets, more responsiveness etc. It supports the latest, stable releases of all major browsers and \nplatforms. However, Internet Explorer 11 and down is not supported.\n\nThe main differences between Bootstrap 5 and Bootstrap 3 & 4, is that \nBootstrap 5 has switched to JavaScript instead of jQuery.\n\nNote: Bootstrap 3 and Bootstrap 4 is still supported by the team for critical bugfixes and documentation changes, \nand it is perfectly safe to continue to use them. However, new features will NOT be added to \nthem.",
+                "heading": "Bootstrap 5 vs. Bootstrap 3 & 4"
+            },
+            {
+                "content": "W3.CSS is an excellent alternative to Bootstrap.\n\nW3.CSS is smaller, faster, and easier to use.\n\n❮ Home\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Did You Know?"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:05:56Z",
+        "subject": "Bootstrap",
+        "title": "Bootstrap 3 Tutorial"
+    },
+    {
+        "url": "https://www.w3schools.com/bootstrap/bootstrap_ref_all_classes.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "bootstrap_bootstrap_ref_all_classes",
+        "code_examples": [],
+        "category": "HTML & CSS",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "BS HOME\nBS Get Started\nBS Grid Basic\nBS Typography\nBS Tables\nBS Images\nBS Jumbotron\nBS Wells\nBS Alerts\nBS Buttons\nBS Button Groups\nBS Glyphicons\nBS Badges/Labels\nBS Progress Bars\nBS Pagination\nBS Pager\nBS List Groups\nBS Panels\nBS Dropdowns\nBS Collapse\nBS Tabs/Pills\nBS Navbar\nBS Forms\nBS Inputs\nBS Inputs 2\nBS Input Sizing\nBS Media Objects\nBS Carousel\nBS Modal\nBS Tooltip\nBS Popover\nBS Scrollspy\nBS Affix\nBS Filters",
+                "heading": "Bootstrap 3 Tutorial"
+            },
+            {
+                "content": "BS Grid System\nBS Stacked/Horizontal\nBS Grid Small\nBS Grid Medium\nBS Grid Large\nBS Grid Examples",
+                "heading": "Bootstrap Grids"
+            },
+            {
+                "content": "BS Templates\nBS Theme \"Simply Me\"\nBS Theme \"Company\"\nBS Theme \"Band\"",
+                "heading": "Bootstrap Themes"
+            },
+            {
+                "content": "BS3 Certificate",
+                "heading": "Bootstrap 3 Cert"
+            },
+            {
+                "content": "BS Examples\nBS Editor\nBS Quiz\nBS Exercises\nBS Interview Prep",
+                "heading": "Bootstrap Examples"
+            },
+            {
+                "content": "CSS All Classes\nCSS Typography\nCSS Buttons\nCSS Forms\nCSS Helpers\nCSS Images\nCSS Tables\nCSS Dropdowns\nCSS Navs\nGlyphicons",
+                "heading": "Bootstrap CSS Ref"
+            },
+            {
+                "content": "JS Affix\nJS Alert\nJS Button\nJS Carousel\nJS Collapse\nJS Dropdown\nJS Modal\nJS Popover\nJS Scrollspy\nJS Tab\nJS Tooltip\n\nny:-->\n\n ny:-->\n\nny:-->\n\nBootstrap Classes Reference\n\n ❮ Previous\nNext ❯",
+                "heading": "Bootstrap JS Ref"
+            },
+            {
+                "content": "Complete list of all Bootstrap classes with description and examples:\n\n Class \n Description\n Example\n Category \n\n .active\n Adds a grey background color to the table row (<tr> or table cell (<td>) (same color used on hover)\n\n Try it\n\n Tables\n\n .active\n Adds a gray background color to the active link in a default \n navbar. Adds a black background and a white color to the current link inside an inverted navbar.\n\n Try it\n\n Navbar\n\n .active\n Adds a blue background color to the active list item in a list group\n\n Try it\n\n List Groups\n\n .active\n Adds a blue background color to simulate a \"pressed\" button\n\n Try it\n\n Buttons\n\n .active\n Animates a striped progress bar\n\n Try it\n\n Progress Bars\n\n .active\n Adds a blue background color to the active dropdown item in a dropdown\n\n Try it\n\n Dropdowns\n\n .active\n Adds a blue background color to the active pagination link (to highlight the current page)\n\n Try it\n\n Pagination\n\n .affix\n The Affix plugin allows an element to become affixed (locked/sticky) to an area on the page. It toggles position:fixed on and off\n\n Try it\n\n Affix\n\n .alert\n Creates an alert message box\n\n Try it\n\n Alerts\n\n .alert-danger\n Red alert box. Indicates a dangerous or potentially negative action\n\n Try it\n\n Alerts\n\n .alert-dismissible\n Together with the .close class, this class is used to \n close the alert\n\n Try it\n\n Alerts\n\n .alert-info\n Light-blue alert box. Indicates some information\n\n Try it\n\n Alerts\n\n .alert-link\n Used on links inside alerts to add matching colored links\n\n Try it\n\n Alerts\n\n .alert-success\n Green alert box. Indicates a successful or positive action\n\n Try it\n\n Alerts\n\n .alert-warning\n Yellow alert box. Indicates caution should be taken with this action\n\n Try it\n\n Alerts\n\n .badge\n Creates a circular badge (grey circle - often used as a numerical indicator)\n\n Try it\n\n Badges\n\n .bg-danger\n Adds a red background color to an element. Represents danger or a negative action\n\n Try it\n\n Helpers\n\n .bg-info\n Adds a light-blue background color to an element. Represents some information\n\n Try it\n\n Helpers\n\n .bg-primary\n Adds a blue background color to an element. Represents something important\n\n Try it\n\n Helpers\n\n .bg-success\n Adds a green background color to an element. Indicates success or a positive action\n\n Try it\n\n Helpers\n\n .bg-warning\n Adds a yellow background color to an element. Represents a warning or a negative action\n\n Try it\n\n Helpers\n\n .breadcrumb\n A pagination. Indicates the current page's location within a navigational hierarchy\n\n Try it\n\n Pagination\n\n .btn\n Creates a basic button (gray background and rounded corners)\n\n Try it\n\n Buttons\n\n .btn-block\n Creates a block level button that spans the entire width of the parent element\n\n Try it\n\n Buttons\n\n .btn-danger\n Red button. Indicates danger or a negative action\n\n Try it\n\n Buttons\n\n .btn-default\n Default button. White background and grey border\n\n Try it\n\n Buttons\n\n .btn-group\n Groups buttons together on a single line\n\n Try it\n\n Button Groups\n\n .btn-group-justified\n Makes a group of buttons span the entire width of the screen\n\n Try it\n\n Button Groups\n\n .btn-group-lg\n Large button group (makes all buttons in a button group larger - increased font-size and padding)\n\n Try it\n\n Button Groups\n\n .btn-group-sm\n Small button group (makes all buttons in a button group smaller)\n\n Try it\n\n Button Groups\n\n .btn-group-xs\n Extra small button group (makes all buttons in a button group extra small)\n\n Try it\n\n Button Groups\n\n .btn-group-vertical\n Makes a button group appear vertically stacked\n\n Try it\n\n Button Groups\n\n .btn-info\n Light-blue button. Represents information\n\n Try it\n\n Buttons\n\n .btn-link\n Makes a button look like a link (get button behavior)\n\n Try it\n\n Buttons\n\n .btn-lg\n Large button\n\n Try it\n\n Buttons\n\n .btn-primary\n Blue button.\n\n Try it\n\n Buttons\n\n .btn-sm\n Small button \n\n Try it\n\n Buttons\n\n .btn-success\n Green button. Indicates success or a positive action\n\n Try it\n\n Buttons\n\n .btn-warning\n Yellow button. Represents warning or a negative action\n\n Try it\n\n Buttons\n\n .btn-xs\n Extra small button\n\n Try it\n\n Buttons\n\n .caption\n Adds a caption text inside a .thumbnail\n\n Try it\n\n Images\n\n .caret\n Creates a caret arrow icon , which indicates that the button is a dropdown\n\n Try it\n\n Dropdowns\n\n .carousel\n Creates a carousel (slideshow)\n\n Try it\n\n Carousel\n\n .carousel-caption\n Creates a caption text for each slide in the carousel\n\n Try it\n\n Carousel\n\n .carousel-control\n Container for next and previous links\n\n Try it\n\n Carousel\n\n .carousel-indicators\n Adds little dots/indicators at the bottom of each slide (which indicates how many slides there is in the carousel, and which slide the user are currently viewing)\n\n Try it\n\n Carousel\n\n .carousel-inner\n Container for slide items\n\n Try it\n\n Carousel\n\n .center-block\n Centers any element (Sets an element to display:block with margin-right:auto and margin-left:auto)\n\n Try it\n\n Helpers\n\n .checkbox\n Container for checkboxes\n\n Try it\n\n Inputs\n\n .checkbox-inline\n Makes multiple checkboxes appear on the same line\n\n Try it\n\n Inputs\n\n .clearfix\n Clears floats\n\n Try it\n\n Helpers\n\n .close\n Indicates a close icon\n\n Try it\n\n Helpers\n\n .col-*-*\n Responsive grid (span 1-12 column). Extra small devices Phones (< 768px), Small devices Tablets (≥768px), Medium devices Desktops (≥992px), Large devices Desktops (≥1200px). Column values can be 1-12.\n\n Try it\n\n Grid\n\n .col-*-offset-*\n Move columns to the right. These classes increase the left margin of a column by * columns\n\n Try it\n\n Grid\n\n .col-*-pull-*\n Changes the order of the grid columns\n\n Try it\n\n Grid\n\n .col-*-push-*\n Changes the order of the grid columns\n\n Try it\n\n Grid\n\n .collapse\n Indicates collapsible content - which can be hidden or shown on demand\n\n Try it\n\n Collapse\n\n .collapse in\n Show the collapsible content by default\n\n Try it\n\n Collapse\n\n .container\n Fixed width container with widths determined by screen sites. Equal margin on the left and right.\n\n Try it\n\n Containers\n\n .container-fluid\n A container that spans the full width of the screen\n\n Try it\n\n Containers\n\n .control-label\n Allows a label to be used for form validation\n\n Try it\n\n Forms\n\n .danger\n Adds a red background to the table row (<tr> or table cell (<td>). Indicates a dangerous or potentially negative action\n\n Try it\n\n Tables\n\n .disabled\n Disables a button (adds opacity and a \"no-parking-sign\" icon on hover)\n\n Try it\n\n Buttons\n\n .disabled\n Disables a dropdown item (adds a grey text color and a \"no-parking-sign\" icon on hover)\n\n Try it\n\n Dropdowns\n\n .disabled\n Disables a pagination link (cannot be clicked - adds a grey text color and a \"no-parking-sign\" icon on hover)\n\n Try it\n\n Pagination\n\n .disabled\n Disables a list item in a list group (cannot be clicked - adds a grey background color and a \"no-parking-sign\" icon on hover)\n\n Try it\n\n List Groups\n\n .divider\n Used to separate links in the dropdown menu with a thin horizontal border\n\n Try it\n\n Dropdowns\n\n .dl-horizontal\n Lines up the terms <dt> and descriptions <dd> in <dl> elements side-by-side. Starts off like default \n <dl>s, but when the browser window expands, it will line up side-by-side\n\n Try it\n\n Typography\n\n .dropdown\n Creates a toggleable menu that allows the user to choose one value from a predefined list\n\n Try it\n\n Dropdowns\n\n .dropdown-header\n Used to add headers inside the dropdown menu\n\n Try it\n\n Dropdowns\n\n .dropdown-menu\n Adds the default styles for the dropdown menu container\n Try it\n\n Dropdowns\n\n .dropdown-menu-right\n Right-aligns a dropdown menu\n Try it\n\n Dropdowns\n\n .dropdown-toggle\n Used on the button that should hide and show (toggle) the dropdown menu\n\n Try it\n\n Dropdowns\n\n .dropup\n Indicates a dropup menu (upwards instead of downwards)\n\n Try it\n\n Dropdowns\n\n .embed-responsive\n Container for embedded content. Makes videos or slideshows scale properly on any device\n\n Try it\n\n Images\n\n .embed-responsive-16by9\n Container for embedded content. Creates an 16:9 aspect ratio embedded content\n\n Try it\n\n Images\n\n .embed-responsive-4by3\n Container for embedded content. Creates an 4:3 aspect ratio embedded content\n\n Try it\n\n Images\n\n .embed-responsive-item\n Used inside .embed-responsive. Scales the video nicely to the parent element\n\n Try it\n\n Images\n\n .fade\n Adds a fading effect when closing an alert box\n\n Try it\n\n Alerts\n\n .form-control\n Used on input, textarea, and select elements to span the entire width of the page and make them responsive\n\n Try it\n\n Forms\n\n .form-control-feedback\n Form validation class\n\n Try it\n\n Inputs 2\n\n .form-control-static\n Adds plain text next to a form label within a horizontal form\n\n Try it\n\n Inputs 2\n\n .form-group\n Container for form input and label\n\n Try it\n\n Forms\n\n .form-inline\n Makes a <form> left-aligned with inline-block controls (This only \n applies to forms within viewports that are at least 768px wide)\n Try it\n Forms\n\n .form-horizontal\n Aligns labels and groups of form controls in a horizontal layout\n Try it\n Forms\n\n .glyphicon\n Creates an icon. Bootstrap provides 260 free glyphicons from the Glyphicons Halflings set\n\n Try it\n\n Glyphicons\n\n .has-danger\n Adds a red color to the label and a red border to the input, as well as an error icon inside the input (used together with .has-feedback)\n\n Try it\n\n Forms\n\n .has-feedback\n Adds feedback icons for inputs (checkmark, warning and error signs)\n\n Try it\n\n Forms\n\n .has-success\n Adds a green color to the label and a green border to the input, as well as a checkmark icon inside the input (used together with .has-feedback)\n\n Try it\n\n Forms\n\n .has-warning\n Adds a yellow/orange color to the label and a yellow/orange border to the input, as well as a checkmark icon inside the input (used together with .has-feedback)\n\n Try it\n\n Forms\n\n .help-block\n A block of help text that breaks onto a new line and may extend beyond one line.\n\n Try it\n\n Input Sizing\n\n .hidden\n Forces an element to be hidden (display:none)\n\n Try it\n\n Helpers\n\n .hidden-*\n Hides content depending on screen size\n\n Try it\n\n Helpers\n\n .hide\n Deprecated. Use .hidden instead\n\n Try it\n\n Helpers\n\n .h1 - .h6\n Makes an element look like a heading of the chosen class (h1-h6)\n\n Try it\n\n Typography\n\n .icon-bar\n Used in the navbar to create a hamburger menu (three horizontal bars)\n\n Try it\n\n Navbar\n\n .icon-next\n Unicode icon (arrow pointing right), used in carousels. This is often replaced with a glyphicon\n\n Try it\n\n Carousel\n\n .icon-prev\n Unicode icon (arrow pointing left), used in carousels. This is often replaced with a glyphicon\n\n Try it\n\n Carousel\n\n .img-circle\n Shapes an image to a circle (not supported in IE8 and earlier)\n\n Try it\n\n Images\n\n .img-responsive\n Makes an image responsive\n\n Try it\n\n Images\n\n .img-rounded\n Adds rounded corners to an image\n\n Try it\n\n Images\n\n .img-thumbnail\n Shapes an image to a thumbnail (borders)\n\n Try it\n\n Images\n\n .in\n Fades in tabs\n\n Try it\n\n Tabs\n\n .info\n Adds a light-blue background to the table row (<tr> or table cell (<td>). Indicates a neutral informative change or action\n\n Try it\n\n Tables\n\n .initialism\n Displays the text inside an <abbr> element in a slightly smaller font size\n\n Try it\n\n Typography\n\n .input-group\n Container to enhance an input by adding an icon, text or a button in front or behind it as a \"help text\"\n\n Try it\n\n Inputs\n\n .input-group-lg\n Large input group\n\n Try it\n\n Inputs\n\n .input-group-sm\n Small input group\n\n Try it\n\n Inputs\n\n .input-group-addon\n Together with the .input-group class, this class makes it possible to add an icon or help text next to the input field\n\n Try it\n\n Inputs\n\n .input-group-btn\n Together with the .input-group class, this class attaches a button next to an input. Often used as a search bar\n\n Try it\n\n Inputs\n\n .input-lg\n Large input field\n\n Try it\n\n Input Sizing\n\n .input-sm\n Small input field\n\n Try it\n\n Input Sizing\n\n .invisible\n Makes an element invisible (visibility:hidden). Note: Even though the element is invisible, it will take up space on the page\n\n Try it\n\n Helpers\n\n .item\n Class added to each carousel item. May be text or images\n\n Try it\n\n Carousel\n\n .jumbotron\n Creates a padded grey box with rounded corners that enlarges the font sizes of the text inside it. Creates a big box for calling extra attention to some special content or information\n\n Try it\n\n Jumbotron\n\n .label\n Adds a grey rounded box to an element. Provides additional information about something (e.g. \"New\")\n\n Try it\n\n Labels\n\n .label-danger\n Red label\n\n Try it\n\n Labels\n\n .label-info\n Light-blue label\n\n Try it\n\n Labels\n\n .label-success\n Green label\n\n Try it\n\n Labels\n\n .label-warning\n Yellow label\n\n Try it\n\n Labels\n\n .lead\n Increase the font size and line height of a paragraph\n\n Try it\n\n Typography\n\n .left\n Used to identify the left carousel control\n\n Try it\n\n Carousel\n\n .list-group\n Creates a bordered list group for <li> elements\n\n Try it\n\n List Group\n\n .list-group-item\n Added to each <li> element in the list group\n\n Try it\n\n List Group\n\n .list-group-item-heading\n Creates a list group heading (used on other elements besides <li>)\n\n Try it\n\n List Group\n\n .list-group-item-text\n Used for item text inside the list group (used on other elements besides \n <li>)\n\n Try it\n\n List Group\n\n .list-group-item-danger\n Red background color for a list item in a list group\n\n Try it\n\n List Group\n\n .list-group-item-info\n Light-blue background color for a list item in a list group\n\n Try it\n\n List Group\n\n .list-group-item-success\n Green background color for a list item in a list group\n\n Try it\n\n List Group\n\n .list-group-item-warning\n Yellow background color for a list item in a list group\n\n Try it\n\n List Group\n\n .list-inline\n Places all list items on a single line (horizontal menu)\n\n Try it\n\n Tabs\n\n .list-unstyled\n Removes all default list-style (bullets, left margin, etc.) styling from a \n <ul> or <ol> list\n\n Try it\n\n Typography\n\n .mark\n Highlights text: Highlighted text\n\n Try it\n\n Typography\n\n .media\n Aligns media objects (like images or videos - often used for comments in a blog post etc)\n\n Try it\n\n Media Objects\n\n .media-body\n Text that should appear next to a media object\n\n Try it\n\n Media Objects\n\n .media-heading\n Creates a heading inside the media object\n\n Try it\n\n Media Objects\n\n .media-list\n Nested media lists\n\n Try it\n\n Media Objects\n\n .media-object\n Indicates a media object (image or video)\n\n Try it\n\n Media Objects\n\n .modal\n Identifies the content as a modal and brings focus to it\n\n Try it\n\n Modals\n\n .modal-body\n Defines the style for the body of the modal. Add any HTML markup here (p, img, etc)\n\n Try it\n\n Modals\n\n .modal-content\n Styles the modal (border, background-color, etc). Inside this, add the modal's header, body and footer, if needed\n\n Try it\n\n Modals\n\n .modal-dialog\n Sets the proper width and margin of the modal\n\n Try it\n\n Modals\n\n .modal-footer\n The footer of the modal (often contains an action button and a close button)\n\n Try it\n\n Modals\n\n .modal-header\n The header of the modal (often contains a title and a close button)\n\n Try it\n\n Modals\n\n .modal-lg\n Large modal (wider than default)\n\n Try it\n\n Modals\n\n .modal-open\n Used on the <body> element to prevent page scrolling (overflow:hidden)\n\n Try it\n\n Modals\n\n .modal-sm\n Small modal (less width)\n\n Try it\n\n Modals\n\n .modal-title\n The title of the modal\n\n Try it\n\n Modals\n\n .nav nav-tabs\n Indicates a tabbed menu\n\n Try it\n\n Tabs\n\n .nav nav-pills\n Indicates a pill menu\n\n Try it\n\n Tabs\n\n .nav .navbar-nav\n Used on a <ul> container that contains the list items with links inside a navigation bar\n\n Try it\n\n Navbar\n\n .nav-justified\n Centers tabs/pills. Note that on screens smaller than 768px the items are stacked (content will remain centered)\n\n Try it\n\n Tabs\n\n .nav-stacked\n Vertically stack tabs or pills\n\n Try it\n\n Tabs\n\n .nav-tabs\n Creates a tabbed menu\n\n Try it\n\n Tabs\n\n .navbar\n Creates a navigation bar\n\n Try it\n\n Navbar\n\n .navbar-brand\n Added to a link or a header element inside the navbar to represent a logo or a header\n\n Try it\n\n Navbar\n\n .navbar-btn\n Vertically aligns a button inside a navbar\n\n Try it\n\n Navbar\n\n .navbar-collapse\n Collapses the navbar (hidden and replaced with a menu/hamburger icon on mobile phones and small tablets)\n\n Try it\n\n Navbar\n\n .navbar-default\n Creates a default navigation bar (light-grey background color)\n\n Try it\n\n Navbar\n\n .navbar-fixed-bottom\n Makes the navbar stay at the bottom of the screen (sticky/fixed)\n\n Try it\n\n Navbar\n\n .navbar-fixed-top\n Makes the navbar stay at the top of the screen (sticky/fixed)\n\n Try it\n\n Navbar\n\n .navbar-form\n Added to form elements inside the navbar to vertically center them (proper padding)\n\n Try it\n\n Navbar\n\n .navbar-header\n Added to a container element that contains the link/element that represent a logo or a header\n\n Try it\n\n Navbar\n\n .navbar-inverse\n Creates a black navigation bar (instead of light-grey)\n\n Try it\n\n Navbar\n\n .navbar-left\n Aligns nav links, forms, buttons, or text, in the navbar to the left\n\n Try it\n\n Navbar\n\n .navbar-link\n Styles an element to look like a link inside the navbar (anchors get proper padding and an underline on hover, while other elements like p or span gets a default hover effect - white color in an inversed navbar and a black color in a default navbar)\n\n Try it\n\n Navbar\n\n .navbar-nav\n Used on a <ul> container that contains the list items with links inside a navigation bar\n\n Try it\n\n Navbar\n\n .navbar-right\n Aligns nav links, forms, buttons, or text in the navbar to the right.\n\n Try it\n\n Navbar\n\n .navbar-static-top\n Removes left, top and right borders (rounded corners) from the navbar (default navbar has a gray border and a 4px border-radius by default)\n\n Try it\n\n Navbar\n\n .navbar-text\n Vertical align any elements inside the navbar that are not links (ensures proper padding)\n\n Try it\n\n Navbar\n\n .navbar-toggle\n Styles the button that should open the navbar on small screens. Often used together with three .icon-bar classes to indicate a toggleable menu icon (hamburger/bars)\n\n Try it\n\n Navbar\n\n .next\n Used in the carousel control to identity the next control\n\n Try it\n\n Carousel\n\n .next\n Used to align pager buttons to the right side of the page (next button)\n\n Try it\n\n Pager\n\n .page-header\n Adds a horizontal line under the heading (+ adds some extra space around the element)\n\n Try it\n\n Page Header\n\n .pager\n Creates previous/next buttons (used on <ul> elements)\n\n Try it\n\n Pager\n\n .pagination\n Creates a pagination (Useful when you have a web site with lots of pages. Used on <ul> elements)\n\n Try it\n\n Pagination\n\n .pagination-lg\n Large pagination (each pagination link gets a font-size of 18px. Default is 14px)\n\n Try it\n\n Pagination\n\n .pagination-sm\n Small pagination (each pagination link gets a font-size of 12px. Default is 14px)\n\n Try it\n\n Pagination\n\n .panel\n Creates a bordered box with some padding around its content\n\n Try it\n\n Panels\n\n .panel-body\n Container for content inside the panel\n\n Try it\n\n Panels\n\n .panel-collapse\n Collapsible panel (toggle between hiding and showing panel(s))\n\n Try it\n\n Collapse\n\n .panel-danger\n Red panel. Indicates danger\n\n Try it\n\n Panels\n\n .panel-info\n Light-blue panel. Indicates information\n\n Try it\n\n Panels\n\n .panel-success\n Green panel. Indicates success\n\n Try it\n\n Panels\n\n .panel-warning\n Yellow panel. Indicates warning\n\n Try it\n\n Panels\n\n .panel-footer\n Creates a panel footer (light background color)\n\n Try it\n\n Panels\n\n .panel-group\n Used to group many panels together. This removes the bottom margin below each panel\n\n Try it\n\n Panels\n\n .panel-heading\n Creates a panel header (light background color)\n\n Try it\n\n Panels\n\n .panel-title\n Used inside a .panel-heading to adjust the styling of the text (removes margins and adds a font-size of 16px)\n\n Try it\n\n Panels\n\n .popover\n Popup-box that appears when the user clicks on an element\n\n Try it\n\n Popover\n\n .pre-scrollable\n Makes a <pre> element scrollable (max-height of 350px and provide a y-axis scrollbar)\n\n Try it\n\n Helpers\n\n .prev\n Used in carousels to indicate a \"previous\" link\n\n Try it\n\n Carousel\n\n .previous\n Used to align pager buttons to the left side of the page (previous button)\n\n Try it\n\n Pager\n\n .progress\n Container for progress bars\n\n Try it\n\n Progress Bars\n\n .progress-bar\n Creates a progress bar\n\n Try it\n\n Progress Bars\n\n .progress-bar-danger\n Red progress bar. Indicates danger\n\n Try it\n\n Progress Bars\n\n .progress-bar-info\n Light-blue progress bar. Indicates information\n\n Try it\n\n Progress Bars\n\n .progress-bar-striped\n Creates a striped progress bar\n\n Try it\n\n Progress Bars\n\n .progress-bar-success\n Green progress bar. Indicates success\n\n Try it\n\n Progress Bars\n\n .progress-bar-warning\n Yellow progress bar. Indicates warning\n\n Try it\n\n Progress Bars\n\n .pull-left\n Float an element to the left\n\n Try it\n\n Helpers\n\n .pull-right\n Float an element to the right\n\n Try it\n\n Helpers\n\n .right\n Used to identify the right carousel control\n\n Try it\n\n Carousel\n\n .row\n Container for responsive columns\n\n Try it\n\n Grid\n\n .row-no-gutters\n Removes the gutters from a row and its columns\n\n Try it\n\n Grid\n\n .show\n Shows an element (display:block)\n\n Try it\n\n Helpers\n\n .small\n Creates a lighter, secondary text in any heading\n\n Try it\n\n Typography\n\n .sr-only\n Hides an element on all devices except for screen readers\n\n Try it\n\n Helpers\n\n .sr-only-focusable\n Hides an element on all devices except for screen readers\n\n Try it\n\n Helpers\n\n .success\n Adds a green background color to a table row (<tr> or table cell (<td>). Indicates success or a positive action\n\n Try it\n\n Tables\n\n .tab-content\n Used together with .tab-pane to creates toggleable/dynamic tabs/pills\n\n Try it\n\n Tabs\n\n .tab-pane\n Used together with .tab-content to creates toggleable/dynamic tabs/pills\n\n Try it\n\n Tabs\n\n .table\n Adds basic styling to a table (padding, bottom borders, etc)\n\n Try it\n\n Tables\n\n .table-bordered\n Adds borders on all sides of the table and cells\n\n Try it\n\n Tables\n\n .table-condensed\n Makes a table more compact by cutting cell padding in half\n\n Try it\n\n Tables\n\n .table-hover\n Creates a hoverable table (adds a grey background color on table rows on hover)\n\n Try it\n\n Tables\n\n .table-responsive\n Makes a table responsive (adds a horizontal scrollbar when needed)\n\n Try it\n\n Tables\n\n .text-capitalize\n Indicates capitalized text\n\n Try it\n\n Typography\n\n .text-center\n Center-aligns text\n\n Try it\n\n Typography\n\n .text-danger\n Red text color. Indicates danger\n\n Try it\n\n Typography\n\n .text-hide\n Hides text (helps replace an element's text content with a background image)\n\n Try it\n\n Typography\n\n .text-info\n Light-blue text color. Indicates information\n\n Try it\n\n Typography\n\n .text-justify\n Indicates justified text\n\n Try it\n\n Typography\n\n .text-left\n Aligns the text to the left\n\n Try it\n\n Typography\n\n .text-lowercase\n Changes text to lowercase\n\n Try it\n\n Typography\n\n .text-muted\n Grey text color\n\n Try it\n\n Typography\n\n .text-nowrap\n Prevents the text from wrapping\n\n Try it\n\n Typography\n\n .text-primary\n Blue text color\n\n Try it\n\n Typography\n\n .text-right\n Aligns text to the right\n\n Try it\n\n Typography\n\n .text-success\n Green text color. Indicates success\n\n Try it\n\n Typography\n\n .text-uppercase\n Makes text uppercase\n\n Try it\n\n Typography\n\n .text-warning\n Yellow/orange text color. Indicates warning\n\n Try it\n\n Typography\n\n .thumbnail\n Adds a border around an element (often images or videos) to make it look like a thumbnail\n\n Try it\n\n Images\n\n .tooltip\n Popup-box that appears when the user moves the mouse pointer over an element\n\n Try it\n\n Tooltip\n\n .visible-*\n Deprecated as of v3.2.0. Used to show and/or hide content by device. Note: Use .hidden-* instead\n\n Try it\n\n Helpers\n\n .visible-print-block\n Displays the element (display:block) in print (pre)view\n\n Helpers\n\n .visible-print-inline\n Displays the element (display:inline) in print (pre)view\n\n Helpers\n\n .visible-print-inline-block\n Displays the element (display:inline-block) in print (pre)view\n\n Helpers\n\n .hidden-print\n Hides the element (display:none) in print (pre)view\n\n Helpers\n\n .warning\n Adds a yellow background color to the table row (<tr> or table cell (<td>). Indicates a warning\n\n Try it\n\n Tables\n\n .well\n Adds a rounded border around an element with a gray background color and some padding\n\n Try it\n\n Wells\n\n .well-lg\n Large well (more padding)\n\n Try it\n\n Wells\n\n .well-sm\n Small well (less padding)\n\n Try it\n\n Wells\n\nThe table above shows all available Bootstrap 3 classes.\n\nTip: To see the full list of all Bootstrap 4 classes, go to our All Bootstrap 4 CSS Classes Reference.",
+                "heading": "Complete List of All Bootstrap Classes"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:05:56Z",
+        "subject": "Bootstrap",
+        "title": "Bootstrap Classes Reference"
+    },
+    {
+        "url": "https://www.w3schools.com/bootstrap/bootstrap_examples.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "bootstrap_bootstrap_examples",
+        "code_examples": [],
+        "category": "HTML & CSS",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "BS HOME\nBS Get Started\nBS Grid Basic\nBS Typography\nBS Tables\nBS Images\nBS Jumbotron\nBS Wells\nBS Alerts\nBS Buttons\nBS Button Groups\nBS Glyphicons\nBS Badges/Labels\nBS Progress Bars\nBS Pagination\nBS Pager\nBS List Groups\nBS Panels\nBS Dropdowns\nBS Collapse\nBS Tabs/Pills\nBS Navbar\nBS Forms\nBS Inputs\nBS Inputs 2\nBS Input Sizing\nBS Media Objects\nBS Carousel\nBS Modal\nBS Tooltip\nBS Popover\nBS Scrollspy\nBS Affix\nBS Filters",
+                "heading": "Bootstrap 3 Tutorial"
+            },
+            {
+                "content": "BS Grid System\nBS Stacked/Horizontal\nBS Grid Small\nBS Grid Medium\nBS Grid Large\nBS Grid Examples",
+                "heading": "Bootstrap Grids"
+            },
+            {
+                "content": "BS Templates\nBS Theme \"Simply Me\"\nBS Theme \"Company\"\nBS Theme \"Band\"",
+                "heading": "Bootstrap Themes"
+            },
+            {
+                "content": "BS3 Certificate",
+                "heading": "Bootstrap 3 Cert"
+            },
+            {
+                "content": "BS Examples\nBS Editor\nBS Quiz\nBS Exercises\nBS Interview Prep",
+                "heading": "Bootstrap Examples"
+            },
+            {
+                "content": "CSS All Classes\nCSS Typography\nCSS Buttons\nCSS Forms\nCSS Helpers\nCSS Images\nCSS Tables\nCSS Dropdowns\nCSS Navs\nGlyphicons",
+                "heading": "Bootstrap CSS Ref"
+            },
+            {
+                "content": "JS Affix\nJS Alert\nJS Button\nJS Carousel\nJS Collapse\nJS Dropdown\nJS Modal\nJS Popover\nJS Scrollspy\nJS Tab\nJS Tooltip\n\nny:-->\n\n ny:-->\n\nny:-->\n\nBootstrap Examples\n\n ❮ Previous\nNext ❯",
+                "heading": "Bootstrap JS Ref"
+            },
+            {
+                "content": "Container\nFluid container\n\nExamples explained",
+                "heading": "Bootstrap Get Started"
+            },
+            {
+                "content": "Three equal columns\nTwo unequal columns\n\nExamples explained",
+                "heading": "Bootstrap Grid Basic"
+            },
+            {
+                "content": "Headings <h1> to <h6>\nThe <small> element\nThe <mark> element\nThe <abbr> element\nThe <blockquote> element\nReversed blockquote\nThe <dl> element\nThe <code> element\nThe <kbd> element\nThe <pre> element\nContextual text colors\nContextual background colors\n\nExamples explained",
+                "heading": "Bootstrap Typography"
+            },
+            {
+                "content": "Basic table\nStriped rows\nBordered table\nHover rows\nCondensed table\nContextual classes\nResponsive tables\n\nExamples explained",
+                "heading": "Bootstrap Tables"
+            },
+            {
+                "content": "Rounded image\nCircle image\nThumbnail image\nResponsive images\nImage gallery\nResponsive embeds\n\nExamples explained",
+                "heading": "Bootstrap Images"
+            },
+            {
+                "content": "Jumbotron inside container\nJumbotron outside container\nCreating a page header\n\nExamples explained",
+                "heading": "Bootstrap Jumbotron"
+            },
+            {
+                "content": "Basic well\nWell size\n\nExamples explained",
+                "heading": "Bootstrap Wells"
+            },
+            {
+                "content": "Alerts\nClosing alerts\nAnimated alerts\n\nExamples explained",
+                "heading": "Bootstrap Alerts"
+            },
+            {
+                "content": "Button styles\nButton tags\nButton sizes\nBlock level buttons\nActive/disabled buttons\n\nExamples explained",
+                "heading": "Bootstrap Buttons"
+            },
+            {
+                "content": "Button group\nButton group sizes\nVertical button group\nJustified button group\nJustified button group 2\nNesting button groups and dropdown menus\nSplit buttons\n\nExamples explained",
+                "heading": "Bootstrap Button Groups"
+            },
+            {
+                "content": "Glyphicons\n\nExamples explained",
+                "heading": "Bootstrap Glyphicons"
+            },
+            {
+                "content": "Badges\nBadge inside a button\nLabels\nContextual labels\n\nExamples explained",
+                "heading": "Bootstrap Badges and Labels"
+            },
+            {
+                "content": "Progress bar\nProgress bar with label\nColored progress bar\nStriped progress bar\nAnimated progress bar\nStacked progress bar\n\nExamples explained",
+                "heading": "Bootstrap Progress Bars"
+            },
+            {
+                "content": "Pagination\nActive pagination link\nDisabled pagination link\nPagination sizing\nBreadcrumbs\n\nExamples explained",
+                "heading": "Bootstrap Pagination"
+            },
+            {
+                "content": "Pager\nAlign buttons\n\nExamples explained",
+                "heading": "Bootstrap Pager"
+            },
+            {
+                "content": "List group\nList group with badges\nList group with links\nActive list item\nDisabled list item\nContextual classes\nCustom content\n\nExamples explained",
+                "heading": "Bootstrap List Groups"
+            },
+            {
+                "content": "Panels\nPanel heading\nPanel footer\nPanel group\nContextual panel classes\n\nExamples explained",
+                "heading": "Bootstrap Panels"
+            },
+            {
+                "content": "Dropdown\nDropdown divider\nDropdown header\nDisabled dropdown item\nRight-aligned dropdown menu\nDropup\nDropdown accessibility\n\nExamples explained",
+                "heading": "Bootstrap Dropdowns"
+            },
+            {
+                "content": "Collapsible button\nCollapsible link\nCollapsible \"in\" (show by default)\nCollapsible panel\nCollapsible list group\nAccordion\n\nExamples explained",
+                "heading": "Bootstrap Collapsible"
+            },
+            {
+                "content": "Inline list\nTabs\nTabs with dropdown menu\nPills\nVertical pills\nVertical pills in a row\nPills with dropdown menu\nCentered tabs and pills\nToggleable/dynamic tabs\nToggleable/dynamic pills\n\nExamples explained",
+                "heading": "Bootstrap Tabs and Pills"
+            },
+            {
+                "content": "Navbar\nInverted navbar\nFixed top navbar\nFixed bottom navbar\nNavbar with dropdown\nRight-aligned navbar\nCollapsible navbar\n\nExamples explained",
+                "heading": "Bootstrap Navbar"
+            },
+            {
+                "content": "Vertical form\nInline form\nInline form without labels\nHorizontal form\n\nExamples explained",
+                "heading": "Bootstrap Forms"
+            },
+            {
+                "content": "Input\nTextarea\nCheckbox\nInline checkbox\nRadio buttons\nInline radio buttons\nSelect menu\n\nExamples explained",
+                "heading": "Bootstrap Inputs"
+            },
+            {
+                "content": "Static control\nControl states\nInline form: control states\n\nExamples explained",
+                "heading": "Bootstrap Inputs 2"
+            },
+            {
+                "content": "Input sizing\nInput sizing horizontal label\nInput width (columns)\nInput help text\n\nExamples explained",
+                "heading": "Bootstrap Input Sizing"
+            },
+            {
+                "content": "Left and right-aligned media object\nTop, middle and bottom-aligned media object\nNested media object\nNested media object II\n\nExamples explained",
+                "heading": "Bootstrap Media Objects"
+            },
+            {
+                "content": "Carousel\nCaption slides\n\nExamples explained",
+                "heading": "Bootstrap Carousel"
+            },
+            {
+                "content": "Modal\nSmall modal\nLarge modal\n\nExamples explained",
+                "heading": "Bootstrap Modal"
+            },
+            {
+                "content": "Tooltip\nPositioning tooltips\n\nExamples explained",
+                "heading": "Bootstrap Tooltip"
+            },
+            {
+                "content": "Popover\nPositioning popovers\nDismissable popover\nHoverable popover\n\nExamples explained",
+                "heading": "Bootstrap Popover"
+            },
+            {
+                "content": "Horizontal scrollspy\nVertical scrollspy\n\nExamples explained",
+                "heading": "Bootstrap Scrollspy"
+            },
+            {
+                "content": "Horizontal affix\nVertical affix\nScrollspy and affix (horizontal)\nScrollspy and affix (vertical)\n\nExamples explained",
+                "heading": "Bootstrap Affix"
+            },
+            {
+                "content": "Filter table\nFilter list\nFilter dropdown\nFilter anything\n\nExamples explained",
+                "heading": "Bootstrap Filters"
+            },
+            {
+                "content": "Stacked to horizontal grid\nStacked to horizontal grid with fluid container\n\nExamples explained",
+                "heading": "Bootstrap Grid: Stacked to Horizontal"
+            },
+            {
+                "content": "Small grid\nSmall grid\n\nExamples explained",
+                "heading": "Bootstrap Grid: Small Devices"
+            },
+            {
+                "content": "Medium grid\nMedium grid 2\n\nExamples explained",
+                "heading": "Bootstrap Grid: Medium Devices"
+            },
+            {
+                "content": "Medium grid\nMedium grid 2\n\nExamples explained",
+                "heading": "Bootstrap Grid: Large Devices"
+            },
+            {
+                "content": "Three equal columns\nThree unequal columns\nTwo unequal columns\nTwo columns with two nested columns\nMixed columns: mobile and desktop\nMixed columns: mobile, tablet and desktop\nClear floats\nOffsetting columns\nPush and Pull - Change column order\n\nExamples explained\n\n ❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Bootstrap Grid Examples"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:05:57Z",
+        "subject": "Bootstrap",
+        "title": "Bootstrap Examples"
+    }
+];

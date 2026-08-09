@@ -1,0 +1,5374 @@
+﻿window.DEVDOCS_SUBJECTS = window.DEVDOCS_SUBJECTS || {};
+window.DEVDOCS_SUBJECTS['xml'] = [
+    {
+        "url": "https://www.w3schools.com/xml/default.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "xml_default",
+        "code_examples": [
+            {
+                "code": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n\n<note>\n  <to>Tove</to>\n\n  <from>Jani</from>\n\n  <heading>Reminder</heading>\n\n  <body>Don't forget me this weekend!</body>\n\n</note>",
+                "language": "xml",
+                "heading": "XML Example 1",
+                "tryit_url": null
+            },
+            {
+                "code": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<breakfast_menu>\n\n<food>\n    <name>Belgian Waffles</name>\n\n<price>$5.95</price>\n    <description>\n   Two of our famous \nBelgian Waffles with plenty of real maple syrup\n   </description>\n\n<calories>650</calories>\n</food>\n<food>\n\n<name>Strawberry Belgian Waffles</name>\n\n<price>$7.95</price>\n    <description>\n    Light Belgian \nwaffles covered with strawberries and whipped cream\n    </description>\n\n<calories>900</calories>\n</food>\n<food>\n\n<name>Berry-Berry Belgian Waffles</name>\n\n<price>$8.95</price>\n    <description>\n    Belgian \nwaffles covered with assorted fresh berries and whipped \ncream\n    </description>\n    <calories>900</calories>\n\n</food>\n<food>\n    <name>French Toast</name>\n\n<price>$4.50</price>\n    <description>\n    Thick slices made \nfrom our homemade sourdough bread\n    </description>\n\n<calories>600</calories>\n</food>\n<food>\n    <name>Homestyle \nBreakfast</name>\n    <price>$6.95</price>\n\n<description>\n    Two eggs, bacon or sausage, toast, and our ever-popular hash \nbrowns\n    </description>\n    <calories>950</calories>\n\n</food>\n</breakfast_menu>",
+                "language": "xml",
+                "heading": "XML Example 2",
+                "tryit_url": null
+            }
+        ],
+        "category": "Web Tools & Security",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "\";\n var x = xmlDoc.getElementsByTagName(\"note\");\n for (i = 0; i To: \" +\n x[i].getElementsByTagName(\"to\")[0].childNodes[0].nodeValue +\n \"\nFrom: \" +\n x[i].getElementsByTagName(\"from\")[0].childNodes[0].nodeValue +\n \"\nHeading: \" +\n x[i].getElementsByTagName(\"heading\")[0].childNodes[0].nodeValue +\n \"\nBody: \" +\n x[i].getElementsByTagName(\"body\")[0].childNodes[0].nodeValue +\n \"\n\";\n }\n document.getElementById('id01').style.display = 'block'\n document.getElementById(\"demo\").innerHTML = table;\n document.getElementById(\"demo\").style.visibility=\"visible\";\n}\n\n Tutorials\n\n References\n\n Exercises\n\n Certificates\n\n Menu\n\n Search field\n\n ×\n\n See More\n\n Sign In\n\n Sign Up\n\n -->\n user-anonymous -->\n\n -->\n\n -->\n\n ★\n +1\n\n -->\n\n My W3Schools\n\n -->\n user-authenticated -->\n\n Get Certified\n\n Upgrade\n\n Academy\n\n Spaces\n\n Practice\n\n user-anonymous - action-btn -->\n\n Get Certified\n\n Upgrade\n\n Academy\n\n Spaces\n\n Practice\n\n user-authenticated - action-btn -->\n\n \n\n My W3Schools\n\n Tutorials\n\n References\n\n Exercises\n\n Certificates\n\n Spaces\n\n Get Certified\n\n Plus\n\n Practice\n\n Academy\n\n All our Services\n\n Logout\n\n \n\n \n\n \n\n \n\n ×\n\n ×\n\n Tutorials\n\n Tutorials\n Learn web development, programming, data science, and more.",
+                "heading": "Note"
+            },
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "XML HOME\nXML Introduction\nXML How to use\nXML Tree\nXML Syntax\nXML Elements\nXML Attributes\nXML Namespaces\nXML Display\nXML HttpRequest\nXML Parser\nXML DOM\nXML XPath\nXML XSLT\nXML XQuery\nXML XLink\nXML Validator\nXML DTD\nXML Schema\nXML Server",
+                "heading": "XML Tutorial"
+            },
+            {
+                "content": "AJAX Introduction\nAJAX XMLHttp\nAJAX Request\nAJAX Response\nAJAX XML File\nAJAX PHP\nAJAX ASP\nAJAX Database\nAJAX Applications\nAJAX Examples",
+                "heading": "XML AJAX"
+            },
+            {
+                "content": "DOM Introduction\nDOM Nodes\nDOM Accessing\nDOM Node Info\nDOM Node List\nDOM Traversing\nDOM Navigating\nDOM Get Values\nDOM Change Nodes\nDOM Remove Nodes\nDOM Replace Nodes\nDOM Create Nodes\nDOM Add Nodes\nDOM Clone Nodes\nDOM Examples",
+                "heading": "XML DOM"
+            },
+            {
+                "content": "XPath Introduction\nXPath Nodes\nXPath Syntax\nXPath Axes\nXPath Operators\nXPath Examples",
+                "heading": "XPath Tutorial"
+            },
+            {
+                "content": "XSLT Introduction\nXSL Languages\nXSLT Transform\nXSLT <template>\nXSLT <value-of>\nXSLT <for-each>\nXSLT <sort>\nXSLT <if>\nXSLT <choose>\nXSLT Apply\nXSLT on the Client\nXSLT on the Server\nXSLT Edit XML\nXSLT Examples",
+                "heading": "XSLT Tutorial"
+            },
+            {
+                "content": "XQuery Introduction\nXQuery Example\nXQuery FLWOR\nXQuery HTML\nXQuery Terms\nXQuery Syntax\nXQuery Add\nXQuery Select\nXQuery Functions",
+                "heading": "XQuery Tutorial"
+            },
+            {
+                "content": "DTD Introduction\nDTD Building Blocks\nDTD Elements\nDTD Attributes\nDTD Elements vs Attr\nDTD Entities\nDTD Examples",
+                "heading": "XML DTD"
+            },
+            {
+                "content": "XSD Introduction\nXSD How To\nXSD <schema>\nXSD Elements\nXSD Attributes\nXSD Restrictions\nXSD Complex Elements\nXSD Empty\nXSD Elements-only\nXSD Text-only\nXSD Mixed\nXSD Indicators\nXSD <any>\nXSD <anyAttribute>\nXSD Substitution\nXSD Example",
+                "heading": "XSD Schema"
+            },
+            {
+                "content": "XSD String\nXSD Date/Time\nXSD Numeric\nXSD Misc\nXSD Reference",
+                "heading": "XSD Data Types"
+            },
+            {
+                "content": "XML Services\nXML WSDL\nXML SOAP\nXML RDF\nXML RSS",
+                "heading": "Web Services"
+            },
+            {
+                "content": "XML Certificate",
+                "heading": "XML Cert"
+            },
+            {
+                "content": "XML Examples\nXML Quiz\nXML Syllabus\nXML Study Plan",
+                "heading": "XML Examples"
+            },
+            {
+                "content": "XML stands for eXtensible Markup Language.\n\n XML was designed to store and transport data.\n\n XML was designed to be both human- and machine-readable.\n\n Learn XML now ❯\n\n Become XML Certified\n Get certified with our XML exam, includes a professionally curated study kit to guide you from beginner to exam-ready.\n\nGet Certified ❯\n\n CERTIFICATE OF COMPLETION\n This certifies that\n Your Name\n has passed the W3Schools XML Certification exam and is hereby declared a\n\n Certified XML Developer\n The candidate has passed the exam at the Professional level.\n Verify at\n verify.w3schools.com\n Stale Refsnes\n for w3schools.com\n\nXML Example 1\n\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n\n<note>\n  <to>Tove</to>\n\n  <from>Jani</from>\n\n  <heading>Reminder</heading>\n\n  <body>Don't forget me this weekend!</body>\n\n</note>\n\nDisplay the XML File »\nDisplay the XML File as a Note »\n\n ×\n\nXML Example 2\n\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<breakfast_menu>\n\n<food>\n    <name>Belgian Waffles</name>\n\n<price>$5.95</price>\n    <description>\n   Two of our famous \nBelgian Waffles with plenty of real maple syrup\n   </description>\n\n<calories>650</calories>\n</food>\n<food>\n\n<name>Strawberry Belgian Waffles</name>\n\n<price>$7.95</price>\n    <description>\n    Light Belgian \nwaffles covered with strawberries and whipped cream\n    </description>\n\n<calories>900</calories>\n</food>\n<food>\n\n<name>Berry-Berry Belgian Waffles</name>\n\n<price>$8.95</price>\n    <description>\n    Belgian \nwaffles covered with assorted fresh berries and whipped \ncream\n    </description>\n    <calories>900</calories>\n\n</food>\n<food>\n    <name>French Toast</name>\n\n<price>$4.50</price>\n    <description>\n    Thick slices made \nfrom our homemade sourdough bread\n    </description>\n\n<calories>600</calories>\n</food>\n<food>\n    <name>Homestyle \nBreakfast</name>\n    <price>$6.95</price>\n\n<description>\n    Two eggs, bacon or sausage, toast, and our ever-popular hash \nbrowns\n    </description>\n    <calories>950</calories>\n\n</food>\n</breakfast_menu>\n\nDisplay the XML File »\nDisplay with XSLT »\n\n ×\n Header",
+                "heading": "Learn XML"
+            },
+            {
+                "content": "XML plays an important role in many different IT systems.\n\nXML is often used for distributing data over the Internet.\n\nIt is important (for all types of software developers!) to have a good understanding of XML.",
+                "heading": "Why Study XML?"
+            },
+            {
+                "content": "This tutorial will give you a solid understanding of:\n\nWhat is XML?\n\nHow does XML work?\n\nHow can I use XML?\n\nWhat can I use XML for?",
+                "heading": "What You Will Learn"
+            },
+            {
+                "content": "This tutorial will also dig deep into the following important XML standards:\n\n XML AJAX\n\n XML DOM\n\n XML XPath\n\n XML XSLT\n\n XML XQuery\n\n XML DTD\n\n XML Schema\n\n XML Services\n\nWe recommend reading this tutorial, in the sequence listed in the left menu.",
+                "heading": "Important XML Standards"
+            },
+            {
+                "content": "Examples are better than 1000 words. Examples are often easier to understand \nthan text explanations.\n\nThis tutorial supplements all explanations with clarifying \"Try it Yourself\" examples.\n\n XML Examples\n\n AJAX Examples\n\n DOM Examples\n\n XPath Examples\n\n XSLT Examples",
+                "heading": "Learn by Examples"
+            },
+            {
+                "content": "Test your XML skills at W3Schools!\n\nStart the XML Quiz!",
+                "heading": "XML Quiz Test"
+            },
+            {
+                "content": "Create a W3Schools account and get access to more features and learning materials:\n\n View your completed tutorials, exercises, and quizzes\n\n Keep an eye on your progress and daily streaks\n\n Jump back in right where you left off\n-->\n Join the leaderboard and compete with others\n\n Get access to more challenges and tests\n-->\n Get your own avatar and unlock new skins\n\n Create your own personal website\n\n Sign Up »\n\nNote\nThis is an optional feature. You can study at W3Schools without creating an account.\n\n Course Certification",
+                "heading": "Track Your Progress"
+            },
+            {
+                "content": "Complete the W3Schools coding course, strengthen your knowledge, and earn a certificate you can add to your CV, portfolio, and LinkedIn profile.\n\n Get Certified Today\n\n W3Schools Certificate\n\n Coding\n\n Learn it. Practice it. Prove it.\n\n w\n 3\n s\n c\n h\n o\n o\n l\n s\n\n C\n E\n R\n T\n I\n F\n I\n E\n D\n\n .\n\n 2\n 0\n 2\n 6\n\n❮ Home\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Get Certified in coding"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:18:35Z",
+        "subject": "XML",
+        "title": "XML Tutorial"
+    },
+    {
+        "url": "https://www.w3schools.com/xml/xml_whatis.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "xml_xml_whatis",
+        "code_examples": [
+            {
+                "code": "<note>\n\n<to>Tove</to>\n\n<from>Jani</from>\n\n<heading>Reminder</heading>\n\n<body>Don't forget me this weekend!</body>\n\n</note>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<note>\n\n <date>2015-09-01</date>\n  <hour>08:30</hour>\n  <to>Tove</to>\n\n<from>Jani</from>\n\n<body>Don't forget me this weekend!</body>\n\n</note>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Web Tools & Security",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "XML HOME\nXML Introduction\nXML How to use\nXML Tree\nXML Syntax\nXML Elements\nXML Attributes\nXML Namespaces\nXML Display\nXML HttpRequest\nXML Parser\nXML DOM\nXML XPath\nXML XSLT\nXML XQuery\nXML XLink\nXML Validator\nXML DTD\nXML Schema\nXML Server",
+                "heading": "XML Tutorial"
+            },
+            {
+                "content": "AJAX Introduction\nAJAX XMLHttp\nAJAX Request\nAJAX Response\nAJAX XML File\nAJAX PHP\nAJAX ASP\nAJAX Database\nAJAX Applications\nAJAX Examples",
+                "heading": "XML AJAX"
+            },
+            {
+                "content": "DOM Introduction\nDOM Nodes\nDOM Accessing\nDOM Node Info\nDOM Node List\nDOM Traversing\nDOM Navigating\nDOM Get Values\nDOM Change Nodes\nDOM Remove Nodes\nDOM Replace Nodes\nDOM Create Nodes\nDOM Add Nodes\nDOM Clone Nodes\nDOM Examples",
+                "heading": "XML DOM"
+            },
+            {
+                "content": "XPath Introduction\nXPath Nodes\nXPath Syntax\nXPath Axes\nXPath Operators\nXPath Examples",
+                "heading": "XPath Tutorial"
+            },
+            {
+                "content": "XSLT Introduction\nXSL Languages\nXSLT Transform\nXSLT <template>\nXSLT <value-of>\nXSLT <for-each>\nXSLT <sort>\nXSLT <if>\nXSLT <choose>\nXSLT Apply\nXSLT on the Client\nXSLT on the Server\nXSLT Edit XML\nXSLT Examples",
+                "heading": "XSLT Tutorial"
+            },
+            {
+                "content": "XQuery Introduction\nXQuery Example\nXQuery FLWOR\nXQuery HTML\nXQuery Terms\nXQuery Syntax\nXQuery Add\nXQuery Select\nXQuery Functions",
+                "heading": "XQuery Tutorial"
+            },
+            {
+                "content": "DTD Introduction\nDTD Building Blocks\nDTD Elements\nDTD Attributes\nDTD Elements vs Attr\nDTD Entities\nDTD Examples",
+                "heading": "XML DTD"
+            },
+            {
+                "content": "XSD Introduction\nXSD How To\nXSD <schema>\nXSD Elements\nXSD Attributes\nXSD Restrictions\nXSD Complex Elements\nXSD Empty\nXSD Elements-only\nXSD Text-only\nXSD Mixed\nXSD Indicators\nXSD <any>\nXSD <anyAttribute>\nXSD Substitution\nXSD Example",
+                "heading": "XSD Schema"
+            },
+            {
+                "content": "XSD String\nXSD Date/Time\nXSD Numeric\nXSD Misc\nXSD Reference",
+                "heading": "XSD Data Types"
+            },
+            {
+                "content": "XML Services\nXML WSDL\nXML SOAP\nXML RDF\nXML RSS",
+                "heading": "Web Services"
+            },
+            {
+                "content": "XML Certificate",
+                "heading": "XML Cert"
+            },
+            {
+                "content": "XML Examples\nXML Quiz\nXML Syllabus\nXML Study Plan",
+                "heading": "XML Examples"
+            },
+            {
+                "content": "XML stands for eXtensible Markup Language\n\n XML is a markup language much like HTML\n\n XML was designed to store and transport data\n\n XML was designed to be self-descriptive\n\n XML is a W3C Recommendation",
+                "heading": "What is XML?"
+            },
+            {
+                "content": "Maybe it is a little hard to understand, but XML does not DO anything.\n\nThis note is a note to Tove from Jani, stored as XML:\n\n<note>\n\n<to>Tove</to>\n\n<from>Jani</from>\n\n<heading>Reminder</heading>\n\n<body>Don't forget me this weekend!</body>\n\n</note>\n\nThe XML above is quite self-descriptive:\n\n It has sender information\n\n It has receiver information\n\n It has a heading\n\n It has a message body\n\nBut still, the XML above does not DO anything. XML is just information wrapped in tags.\n\nSomeone must write a piece of software to send, receive, store, or display it:",
+                "heading": "XML Does Not DO Anything"
+            },
+            {
+                "content": "To: Tove\n\nFrom: Jani\n\nReminder\nDon't forget me this weekend!",
+                "heading": "Note"
+            },
+            {
+                "content": "XML and HTML were designed with different goals:\n\n XML was designed to carry data - with focus on what data is\n\n HTML was designed to display data - with focus on how data looks\n\n XML tags are not predefined like HTML tags are",
+                "heading": "The Difference Between XML and HTML"
+            },
+            {
+                "content": "The XML language has no predefined tags.\n\nThe tags in the example above (like <to> and <from>) are not defined in any XML standard. These tags are \"invented\" by the author of the XML document.\n\nHTML works with predefined tags like <p>, <h1>, <table>, etc.\n\nWith XML, the author must define both the tags and the document structure.",
+                "heading": "XML Does Not Use Predefined Tags"
+            },
+            {
+                "content": "Most XML applications will work as expected even if new data is added (or \nremoved).\n\nImagine an application designed to display the original version of note.xml \n(<to> <from> <heading> <body>).\n\nThen imagine a newer version of note.xml with added <date> and <hour> \nelements, and a removed <heading>.\n\nThe way XML is constructed, older version of the application can still work:\n\n<note>\n\n <date>2015-09-01</date>\n  <hour>08:30</hour>\n  <to>Tove</to>\n\n<from>Jani</from>\n\n<body>Don't forget me this weekend!</body>\n\n</note>\n\nOld Version",
+                "heading": "XML is Extensible"
+            },
+            {
+                "content": "To: Tove\n\nFrom: Jani\n\nReminder\nDon't forget me this weekend!\n\nNew Version",
+                "heading": "Note"
+            },
+            {
+                "content": "To: Tove\n\nFrom: Jani\n\nDate: 2015-09-01 08:30\n\nDon't forget me this weekend!",
+                "heading": "Note"
+            },
+            {
+                "content": "XML simplifies data sharing\n\n XML simplifies data transport\n\n XML simplifies platform changes\n\n XML simplifies data availability\n\nMany computer systems contain data in incompatible formats. Exchanging data \nbetween incompatible systems (or upgraded systems) is a time-consuming task \nfor web developers. Large amounts of data must be converted, and incompatible data is \noften lost.\n\nXML stores data in plain text format. This provides a software- and\nhardware-independent way of storing, transporting, and sharing data.\n\nXML also makes it easier to expand or upgrade to new operating systems, new \napplications, or new browsers, without losing data.\n\nWith XML, data can be available to all kinds of \"reading\nmachines\" like people, computers, voice machines, news feeds, etc.",
+                "heading": "XML Simplifies Things"
+            },
+            {
+                "content": "XML became a W3C Recommendation as early as in February 1998.\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "XML is a W3C Recommendation"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:18:37Z",
+        "subject": "XML",
+        "title": "Introduction to XML"
+    },
+    {
+        "url": "https://www.w3schools.com/xml/xml_usedfor.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "xml_xml_usedfor",
+        "code_examples": [
+            {
+                "code": "Books.xml\n\n <?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<bookstore>\n\n  <book \n category=\"cooking\">\n    <title lang=\"en\">Everyday \n Italian</title>\n    <author>Giada De Laurentiis</author>\n\n <year>2005</year>\n    <price>30.00</price>\n  </book>\n\n  <book category=\"children\">\n    <title lang=\"en\">Harry \n Potter</title>\n    <author>J K. Rowling</author>\n\n <year>2005</year>\n    <price>29.99</price>\n  </book>\n\n  <book category=\"web\">\n    <title lang=\"en\">XQuery \n Kick Start</title>\n    <author>James McGovern</author>\n\n <author>Per Bothner</author>\n    <author>Kurt Cagle</author>\n\n <author>James Linn</author>\n    <author>Vaidyanathan \n Nagarajan</author>\n    <year>2003</year>\n\n <price>49.99</price>\n  </book>\n\n  <book category=\"web\" \n cover=\"paperback\">\n    <title lang=\"en\">Learning XML</title>\n\n <author>Erik T. Ray</author>\n    <year>2003</year>\n\n <price>39.95</price>\n  </book>\n\n</bookstore>",
+                "language": "xml",
+                "heading": "Books.xml",
+                "tryit_url": null
+            },
+            {
+                "code": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n\n<nitf>\n\n<head>\n\n<title>Colombia Earthquake</title>\n\n</head>\n\n<body>\n\n<headline>\n\n <hl1>143 Dead in Colombia Earthquake</hl1>\n\n</headline>\n\n<byline>\n\n <bytag>By Jared Kotler, Associated Press Writer</bytag>\n\n</byline>\n\n<dateline>\n\n <location>Bogota, Colombia</location>\n\n <date>Monday January 25 1999 7:28 ET</date>\n\n</dateline>\n\n</body>\n\n</nitf>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n\n<current_observation>\n\n<credit>NOAA's National Weather Service</credit>\n\n<credit_URL>http://weather.gov/</credit_URL>\n\n<image>\n\n<url>http://weather.gov/images/xml_logo.gif</url>\n\n<title>NOAA's National Weather Service</title>\n\n<link>http://weather.gov</link>\n\n</image>\n\n<location>New York/John F. Kennedy Intl Airport, NY</location>\n\n<station_id>KJFK</station_id>\n\n<latitude>40.66</latitude>\n\n<longitude>-73.78</longitude>\n\n<observation_time_rfc822>Mon, 11 Feb 2008 06:51:00 -0500 EST\n\n</observation_time_rfc822>\n\n<weather>A Few Clouds</weather>\n\n<temp_f>11</temp_f>\n\n<temp_c>-12</temp_c>\n\n<relative_humidity>36</relative_humidity>\n\n<wind_dir>West</wind_dir>\n\n<wind_degrees>280</wind_degrees>\n\n<wind_mph>18.4</wind_mph>\n\n<wind_gust_mph>29</wind_gust_mph>\n\n<pressure_mb>1023.6</pressure_mb>\n\n<pressure_in>30.23</pressure_in>\n\n<dewpoint_f>-11</dewpoint_f>\n\n<dewpoint_c>-24</dewpoint_c>\n\n<windchill_f>-7</windchill_f>\n\n<windchill_c>-22</windchill_c>\n\n<visibility_mi>10.00</visibility_mi>\n\n<icon_url_base>http://weather.gov/weather/images/fcicons/</icon_url_base>\n\n<icon_url_name>nfew.jpg</icon_url_name>\n\n<disclaimer_url>http://weather.gov/disclaimer.html</disclaimer_url>\n\n<copyright_url>http://weather.gov/disclaimer.html</copyright_url>\n\n</current_observation>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Web Tools & Security",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "XML HOME\nXML Introduction\nXML How to use\nXML Tree\nXML Syntax\nXML Elements\nXML Attributes\nXML Namespaces\nXML Display\nXML HttpRequest\nXML Parser\nXML DOM\nXML XPath\nXML XSLT\nXML XQuery\nXML XLink\nXML Validator\nXML DTD\nXML Schema\nXML Server",
+                "heading": "XML Tutorial"
+            },
+            {
+                "content": "AJAX Introduction\nAJAX XMLHttp\nAJAX Request\nAJAX Response\nAJAX XML File\nAJAX PHP\nAJAX ASP\nAJAX Database\nAJAX Applications\nAJAX Examples",
+                "heading": "XML AJAX"
+            },
+            {
+                "content": "DOM Introduction\nDOM Nodes\nDOM Accessing\nDOM Node Info\nDOM Node List\nDOM Traversing\nDOM Navigating\nDOM Get Values\nDOM Change Nodes\nDOM Remove Nodes\nDOM Replace Nodes\nDOM Create Nodes\nDOM Add Nodes\nDOM Clone Nodes\nDOM Examples",
+                "heading": "XML DOM"
+            },
+            {
+                "content": "XPath Introduction\nXPath Nodes\nXPath Syntax\nXPath Axes\nXPath Operators\nXPath Examples",
+                "heading": "XPath Tutorial"
+            },
+            {
+                "content": "XSLT Introduction\nXSL Languages\nXSLT Transform\nXSLT <template>\nXSLT <value-of>\nXSLT <for-each>\nXSLT <sort>\nXSLT <if>\nXSLT <choose>\nXSLT Apply\nXSLT on the Client\nXSLT on the Server\nXSLT Edit XML\nXSLT Examples",
+                "heading": "XSLT Tutorial"
+            },
+            {
+                "content": "XQuery Introduction\nXQuery Example\nXQuery FLWOR\nXQuery HTML\nXQuery Terms\nXQuery Syntax\nXQuery Add\nXQuery Select\nXQuery Functions",
+                "heading": "XQuery Tutorial"
+            },
+            {
+                "content": "DTD Introduction\nDTD Building Blocks\nDTD Elements\nDTD Attributes\nDTD Elements vs Attr\nDTD Entities\nDTD Examples",
+                "heading": "XML DTD"
+            },
+            {
+                "content": "XSD Introduction\nXSD How To\nXSD <schema>\nXSD Elements\nXSD Attributes\nXSD Restrictions\nXSD Complex Elements\nXSD Empty\nXSD Elements-only\nXSD Text-only\nXSD Mixed\nXSD Indicators\nXSD <any>\nXSD <anyAttribute>\nXSD Substitution\nXSD Example",
+                "heading": "XSD Schema"
+            },
+            {
+                "content": "XSD String\nXSD Date/Time\nXSD Numeric\nXSD Misc\nXSD Reference",
+                "heading": "XSD Data Types"
+            },
+            {
+                "content": "XML Services\nXML WSDL\nXML SOAP\nXML RDF\nXML RSS",
+                "heading": "Web Services"
+            },
+            {
+                "content": "XML Certificate",
+                "heading": "XML Cert"
+            },
+            {
+                "content": "XML Examples\nXML Quiz\nXML Syllabus\nXML Study Plan",
+                "heading": "XML Examples"
+            },
+            {
+                "content": "XML does not carry any information about how to be displayed.\n\nThe same XML data can be used in many different presentation scenarios.\n\nBecause of this, with XML, there is a full separation between data and \npresentation.",
+                "heading": "XML Separates Data from Presentation"
+            },
+            {
+                "content": "In many HTML applications, XML is used to \nstore or transport data, while HTML is used to format and display the \nsame data.",
+                "heading": "XML is Often a Complement to HTML"
+            },
+            {
+                "content": "When displaying data in HTML, you should not have to edit the HTML file when the data changes.\n\nWith XML, the data can be stored in separate XML files.\n\nWith a few lines of JavaScript code, you can read an XML file and update \nthe data content of any HTML page. \n\nDisplay Books.xml »\n\nBooks.xml\n\n <?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<bookstore>\n\n  <book \n category=\"cooking\">\n    <title lang=\"en\">Everyday \n Italian</title>\n    <author>Giada De Laurentiis</author>\n\n <year>2005</year>\n    <price>30.00</price>\n  </book>\n\n  <book category=\"children\">\n    <title lang=\"en\">Harry \n Potter</title>\n    <author>J K. Rowling</author>\n\n <year>2005</year>\n    <price>29.99</price>\n  </book>\n\n  <book category=\"web\">\n    <title lang=\"en\">XQuery \n Kick Start</title>\n    <author>James McGovern</author>\n\n <author>Per Bothner</author>\n    <author>Kurt Cagle</author>\n\n <author>James Linn</author>\n    <author>Vaidyanathan \n Nagarajan</author>\n    <year>2003</year>\n\n <price>49.99</price>\n  </book>\n\n  <book category=\"web\" \n cover=\"paperback\">\n    <title lang=\"en\">Learning XML</title>\n\n <author>Erik T. Ray</author>\n    <year>2003</year>\n\n <price>39.95</price>\n  </book>\n\n</bookstore>\n\nYou will learn a lot more about using XML and JavaScript in the DOM section of this tutorial.",
+                "heading": "XML Separates Data from HTML"
+            },
+            {
+                "content": "Thousands of XML formats exist, in many different industries, to describe day-to-day data transactions:\n\nStocks and Shares\n\nFinancial transactions\n\nMedical data\n\nMathematical data\n\nScientific measurements\n\nNews information\n\nWeather services",
+                "heading": "Transaction Data"
+            },
+            {
+                "content": "XMLNews is a specification for exchanging news and other information.\n\nUsing a standard makes it easier for both news producers and news consumers to produce, receive, and archive any kind of news information across different hardware, software, and programming languages.\n\nAn example XMLNews document:\n\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n\n<nitf>\n\n<head>\n\n<title>Colombia Earthquake</title>\n\n</head>\n\n<body>\n\n<headline>\n\n <hl1>143 Dead in Colombia Earthquake</hl1>\n\n</headline>\n\n<byline>\n\n <bytag>By Jared Kotler, Associated Press Writer</bytag>\n\n</byline>\n\n<dateline>\n\n <location>Bogota, Colombia</location>\n\n <date>Monday January 25 1999 7:28 ET</date>\n\n</dateline>\n\n</body>\n\n</nitf>",
+                "heading": "Example: XML News"
+            },
+            {
+                "content": "An XML national weather service from NOAA (National Oceanic and Atmospheric Administration):\n\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n\n<current_observation>\n\n<credit>NOAA's National Weather Service</credit>\n\n<credit_URL>http://weather.gov/</credit_URL>\n\n<image>\n\n<url>http://weather.gov/images/xml_logo.gif</url>\n\n<title>NOAA's National Weather Service</title>\n\n<link>http://weather.gov</link>\n\n</image>\n\n<location>New York/John F. Kennedy Intl Airport, NY</location>\n\n<station_id>KJFK</station_id>\n\n<latitude>40.66</latitude>\n\n<longitude>-73.78</longitude>\n\n<observation_time_rfc822>Mon, 11 Feb 2008 06:51:00 -0500 EST\n\n</observation_time_rfc822>\n\n<weather>A Few Clouds</weather>\n\n<temp_f>11</temp_f>\n\n<temp_c>-12</temp_c>\n\n<relative_humidity>36</relative_humidity>\n\n<wind_dir>West</wind_dir>\n\n<wind_degrees>280</wind_degrees>\n\n<wind_mph>18.4</wind_mph>\n\n<wind_gust_mph>29</wind_gust_mph>\n\n<pressure_mb>1023.6</pressure_mb>\n\n<pressure_in>30.23</pressure_in>\n\n<dewpoint_f>-11</dewpoint_f>\n\n<dewpoint_c>-24</dewpoint_c>\n\n<windchill_f>-7</windchill_f>\n\n<windchill_c>-22</windchill_c>\n\n<visibility_mi>10.00</visibility_mi>\n\n<icon_url_base>http://weather.gov/weather/images/fcicons/</icon_url_base>\n\n<icon_url_name>nfew.jpg</icon_url_name>\n\n<disclaimer_url>http://weather.gov/disclaimer.html</disclaimer_url>\n\n<copyright_url>http://weather.gov/disclaimer.html</copyright_url>\n\n</current_observation>\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Example: XML Weather Service"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:18:37Z",
+        "subject": "XML",
+        "title": "How Can XML be Used?"
+    },
+    {
+        "url": "https://www.w3schools.com/xml/xml_tree.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "xml_xml_tree",
+        "code_examples": [
+            {
+                "code": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<bookstore>\n\n<book category=\"cooking\">\n\n <title lang=\"en\">Everyday Italian</title>\n\n <author>Giada De Laurentiis</author>\n\n <year>2005</year>\n\n <price>30.00</price>\n\n</book>\n\n<book category=\"children\">\n\n <title lang=\"en\">Harry Potter</title>\n\n <author>J K. Rowling</author>\n\n <year>2005</year>\n\n <price>29.99</price>\n\n</book>\n\n<book category=\"web\">\n\n <title lang=\"en\">Learning XML</title>\n\n <author>Erik T. Ray</author>\n\n <year>2003</year>\n\n <price>39.95</price>\n\n</book>\n\n</bookstore>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<root>\n\n <child>\n\n <subchild>.....</subchild>\n\n </child>\n\n</root>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<bookstore>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<book category=\"cooking\">",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<title lang=\"en\">Everyday Italian</title>\n\n<author>Giada De Laurentiis</author>\n\n<year>2005</year>\n\n<price>30.00</price>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "</book>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Web Tools & Security",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "XML HOME\nXML Introduction\nXML How to use\nXML Tree\nXML Syntax\nXML Elements\nXML Attributes\nXML Namespaces\nXML Display\nXML HttpRequest\nXML Parser\nXML DOM\nXML XPath\nXML XSLT\nXML XQuery\nXML XLink\nXML Validator\nXML DTD\nXML Schema\nXML Server",
+                "heading": "XML Tutorial"
+            },
+            {
+                "content": "AJAX Introduction\nAJAX XMLHttp\nAJAX Request\nAJAX Response\nAJAX XML File\nAJAX PHP\nAJAX ASP\nAJAX Database\nAJAX Applications\nAJAX Examples",
+                "heading": "XML AJAX"
+            },
+            {
+                "content": "DOM Introduction\nDOM Nodes\nDOM Accessing\nDOM Node Info\nDOM Node List\nDOM Traversing\nDOM Navigating\nDOM Get Values\nDOM Change Nodes\nDOM Remove Nodes\nDOM Replace Nodes\nDOM Create Nodes\nDOM Add Nodes\nDOM Clone Nodes\nDOM Examples",
+                "heading": "XML DOM"
+            },
+            {
+                "content": "XPath Introduction\nXPath Nodes\nXPath Syntax\nXPath Axes\nXPath Operators\nXPath Examples",
+                "heading": "XPath Tutorial"
+            },
+            {
+                "content": "XSLT Introduction\nXSL Languages\nXSLT Transform\nXSLT <template>\nXSLT <value-of>\nXSLT <for-each>\nXSLT <sort>\nXSLT <if>\nXSLT <choose>\nXSLT Apply\nXSLT on the Client\nXSLT on the Server\nXSLT Edit XML\nXSLT Examples",
+                "heading": "XSLT Tutorial"
+            },
+            {
+                "content": "XQuery Introduction\nXQuery Example\nXQuery FLWOR\nXQuery HTML\nXQuery Terms\nXQuery Syntax\nXQuery Add\nXQuery Select\nXQuery Functions",
+                "heading": "XQuery Tutorial"
+            },
+            {
+                "content": "DTD Introduction\nDTD Building Blocks\nDTD Elements\nDTD Attributes\nDTD Elements vs Attr\nDTD Entities\nDTD Examples",
+                "heading": "XML DTD"
+            },
+            {
+                "content": "XSD Introduction\nXSD How To\nXSD <schema>\nXSD Elements\nXSD Attributes\nXSD Restrictions\nXSD Complex Elements\nXSD Empty\nXSD Elements-only\nXSD Text-only\nXSD Mixed\nXSD Indicators\nXSD <any>\nXSD <anyAttribute>\nXSD Substitution\nXSD Example",
+                "heading": "XSD Schema"
+            },
+            {
+                "content": "XSD String\nXSD Date/Time\nXSD Numeric\nXSD Misc\nXSD Reference",
+                "heading": "XSD Data Types"
+            },
+            {
+                "content": "XML Services\nXML WSDL\nXML SOAP\nXML RDF\nXML RSS",
+                "heading": "Web Services"
+            },
+            {
+                "content": "XML Certificate",
+                "heading": "XML Cert"
+            },
+            {
+                "content": "XML Examples\nXML Quiz\nXML Syllabus\nXML Study Plan",
+                "heading": "XML Examples"
+            },
+            {
+                "content": "The image above represents books in this XML:\n\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<bookstore>\n\n<book category=\"cooking\">\n\n <title lang=\"en\">Everyday Italian</title>\n\n <author>Giada De Laurentiis</author>\n\n <year>2005</year>\n\n <price>30.00</price>\n\n</book>\n\n<book category=\"children\">\n\n <title lang=\"en\">Harry Potter</title>\n\n <author>J K. Rowling</author>\n\n <year>2005</year>\n\n <price>29.99</price>\n\n</book>\n\n<book category=\"web\">\n\n <title lang=\"en\">Learning XML</title>\n\n <author>Erik T. Ray</author>\n\n <year>2003</year>\n\n <price>39.95</price>\n\n</book>\n\n</bookstore>",
+                "heading": "An Example XML Document"
+            },
+            {
+                "content": "XML documents are formed as element trees.\n\nAn XML tree starts at a root element and branches from the \nroot to child elements.\n\nAll elements can have sub elements (child elements):\n\n<root>\n\n <child>\n\n <subchild>.....</subchild>\n\n </child>\n\n</root>\n\nThe terms parent, child, and sibling are used to describe the relationships between \nelements.\n\nParents have children. Children have parents. Siblings are children on the same level (brothers \nand sisters).\n\nAll elements can have text content (Harry Potter) and attributes (category=\"cooking\").",
+                "heading": "XML Tree Structure"
+            },
+            {
+                "content": "XML uses a much self-describing syntax.\n\nA prolog defines the XML version and the character encoding:\n\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n\nThe next line is the root element of the document:\n\n<bookstore> \n\nThe next line starts a <book> element:\n\n<book category=\"cooking\"> \n\nThe <book> elements have 4 child elements: <title>, <author>, <year>, <price>.\n\n<title lang=\"en\">Everyday Italian</title>\n\n<author>Giada De Laurentiis</author>\n\n<year>2005</year>\n\n<price>30.00</price>\n\nThe next line ends the book element:\n\n</book>\n\nYou can assume, from this example, that the XML document contains information \nabout books in a bookstore.\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Self-Describing Syntax"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:18:38Z",
+        "subject": "XML",
+        "title": "XML Tree"
+    },
+    {
+        "url": "https://www.w3schools.com/xml/xml_syntax.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "xml_xml_syntax",
+        "code_examples": [
+            {
+                "code": "<root>\n\n   <child>\n\n     <subchild>.....</subchild>\n\n   </child>\n\n </root>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n\n <note>\n\n   <to>Tove</to>\n\n   <from>Jani</from>\n\n   <heading>Reminder</heading>\n\n   <body>Don't forget me this weekend!</body>\n\n </note>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<p>This is a paragraph.</p>\n\n <br />",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<message>This is correct</message>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<b><i>This text is bold and italic</b></i>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<b><i>This text is bold and italic</i></b>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<note date=\"12/11/2007\">\n\n   <to>Tove</to>\n\n   <from>Jani</from>\n\n </note>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<message>salary < 1000</message>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<message>salary &lt; 1000</message>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<!-- This is a comment -->",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<!-- This is an invalid -- comment -->",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Web Tools & Security",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "XML HOME\nXML Introduction\nXML How to use\nXML Tree\nXML Syntax\nXML Elements\nXML Attributes\nXML Namespaces\nXML Display\nXML HttpRequest\nXML Parser\nXML DOM\nXML XPath\nXML XSLT\nXML XQuery\nXML XLink\nXML Validator\nXML DTD\nXML Schema\nXML Server",
+                "heading": "XML Tutorial"
+            },
+            {
+                "content": "AJAX Introduction\nAJAX XMLHttp\nAJAX Request\nAJAX Response\nAJAX XML File\nAJAX PHP\nAJAX ASP\nAJAX Database\nAJAX Applications\nAJAX Examples",
+                "heading": "XML AJAX"
+            },
+            {
+                "content": "DOM Introduction\nDOM Nodes\nDOM Accessing\nDOM Node Info\nDOM Node List\nDOM Traversing\nDOM Navigating\nDOM Get Values\nDOM Change Nodes\nDOM Remove Nodes\nDOM Replace Nodes\nDOM Create Nodes\nDOM Add Nodes\nDOM Clone Nodes\nDOM Examples",
+                "heading": "XML DOM"
+            },
+            {
+                "content": "XPath Introduction\nXPath Nodes\nXPath Syntax\nXPath Axes\nXPath Operators\nXPath Examples",
+                "heading": "XPath Tutorial"
+            },
+            {
+                "content": "XSLT Introduction\nXSL Languages\nXSLT Transform\nXSLT <template>\nXSLT <value-of>\nXSLT <for-each>\nXSLT <sort>\nXSLT <if>\nXSLT <choose>\nXSLT Apply\nXSLT on the Client\nXSLT on the Server\nXSLT Edit XML\nXSLT Examples",
+                "heading": "XSLT Tutorial"
+            },
+            {
+                "content": "XQuery Introduction\nXQuery Example\nXQuery FLWOR\nXQuery HTML\nXQuery Terms\nXQuery Syntax\nXQuery Add\nXQuery Select\nXQuery Functions",
+                "heading": "XQuery Tutorial"
+            },
+            {
+                "content": "DTD Introduction\nDTD Building Blocks\nDTD Elements\nDTD Attributes\nDTD Elements vs Attr\nDTD Entities\nDTD Examples",
+                "heading": "XML DTD"
+            },
+            {
+                "content": "XSD Introduction\nXSD How To\nXSD <schema>\nXSD Elements\nXSD Attributes\nXSD Restrictions\nXSD Complex Elements\nXSD Empty\nXSD Elements-only\nXSD Text-only\nXSD Mixed\nXSD Indicators\nXSD <any>\nXSD <anyAttribute>\nXSD Substitution\nXSD Example",
+                "heading": "XSD Schema"
+            },
+            {
+                "content": "XSD String\nXSD Date/Time\nXSD Numeric\nXSD Misc\nXSD Reference",
+                "heading": "XSD Data Types"
+            },
+            {
+                "content": "XML Services\nXML WSDL\nXML SOAP\nXML RDF\nXML RSS",
+                "heading": "Web Services"
+            },
+            {
+                "content": "XML Certificate",
+                "heading": "XML Cert"
+            },
+            {
+                "content": "XML Examples\nXML Quiz\nXML Syllabus\nXML Study Plan",
+                "heading": "XML Examples"
+            },
+            {
+                "content": "XML documents must contain one root element that is the \nparent \nof all other elements:\n\n <root>\n\n   <child>\n\n     <subchild>.....</subchild>\n\n   </child>\n\n </root>\n\nIn this example <note> is the root element:\n\n <?xml version=\"1.0\" encoding=\"UTF-8\"?>\n\n <note>\n\n   <to>Tove</to>\n\n   <from>Jani</from>\n\n   <heading>Reminder</heading>\n\n   <body>Don't forget me this weekend!</body>\n\n </note>",
+                "heading": "XML Documents Must Have a Root Element"
+            },
+            {
+                "content": "This line is called the XML prolog:\n\n <?xml version=\"1.0\" encoding=\"UTF-8\"?>\n\nThe XML prolog is optional. If it exists, it must come first in the document. \n\nXML documents can contain international characters, like Norwegian øæå or \nFrench êèé.\n\nTo avoid errors, you should specify the encoding used, or save your XML files \nas UTF-8.\n\nUTF-8 is the default character encoding for XML documents.\n\nCharacter encoding can be studied in our \nCharacter Set Tutorial.\n\nUTF-8 is also the default encoding for HTML5, CSS, JavaScript, PHP, and SQL.",
+                "heading": "The XML Prolog"
+            },
+            {
+                "content": "In XML, it is illegal to omit the closing tag. All elements must have \na closing tag:\n\n <p>This is a paragraph.</p>\n\n <br />\n\nNote: The XML prolog does not have a closing tag!\nThis is not an error. The prolog is not a part of the XML document.",
+                "heading": "All XML Elements Must Have a Closing Tag"
+            },
+            {
+                "content": "XML tags are case sensitive. The tag <Letter> is different from the tag \n<letter>.\n\nOpening and closing tags must be written with the same case:\n\n <message>This is correct</message>\n\n\"Opening and closing tags\" are often referred to as \"Start and end tags\". Use \nwhatever you prefer. It is exactly the same thing.",
+                "heading": "XML Tags are Case Sensitive"
+            },
+            {
+                "content": "In HTML, you might see improperly nested elements:\n\n <b><i>This text is bold and italic</b></i>\n\nIn XML, all elements must be properly nested within each other:\n\n <b><i>This text is bold and italic</i></b>\n\nIn the example above, \"Properly nested\" simply means that since the <i> \nelement is opened inside the <b> element, it must be closed inside the <b> \nelement.",
+                "heading": "XML Elements Must be Properly Nested"
+            },
+            {
+                "content": "XML elements can have attributes in name/value pairs just like in HTML.\n\nIn XML, the attribute values must always be quoted:\n\n <note date=\"12/11/2007\">\n\n   <to>Tove</to>\n\n   <from>Jani</from>\n\n </note>",
+                "heading": "XML Attribute Values Must Always be Quoted"
+            },
+            {
+                "content": "Some characters have a special meaning in XML.\n\nIf you place a character like \"<\" inside an XML element, it will generate an \nerror because the parser interprets it as the start of a new element.\n\nThis will generate an XML error:\n\n <message>salary < 1000</message>\n\nTo avoid this error, replace the \"<\" character with an entity reference:\n\n <message>salary &lt; 1000</message>\n\nThere are 5 pre-defined entity references in XML:\n\n&lt;\n<\nless than\n\n&gt;\n>\ngreater than\n\n&amp;\n&\nampersand \n\n&apos;\n'\napostrophe\n\n&quot;\n\"\nquotation mark\n\nOnly < and & are strictly illegal in XML, but it is a good habit to replace > \nwith &gt; as well.",
+                "heading": "Entity References"
+            },
+            {
+                "content": "The syntax for writing comments in XML is similar to that of HTML:\n\n <!-- This is a comment -->\n\nTwo dashes in the middle of a comment are not allowed:\n\n <!-- This is an invalid -- comment -->",
+                "heading": "Comments in XML"
+            },
+            {
+                "content": "XML does not truncate multiple white-spaces (HTML truncates multiple \nwhite-spaces to one single white-space):\n\nXML:\n\nHello           Tove\n\nHTML:\n\nHello Tove",
+                "heading": "White-space is Preserved in XML"
+            },
+            {
+                "content": "Windows applications store a new line as: carriage return and line feed \n(CR+LF).\n\nUnix and Mac OSX use LF.\n\nOld Mac systems use CR.\n\nXML stores a new line as LF.",
+                "heading": "XML Stores New Line as LF"
+            },
+            {
+                "content": "XML documents that conform to the syntax rules above are said to be \"Well \nFormed\" XML documents.\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Well Formed XML"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:18:38Z",
+        "subject": "XML",
+        "title": "XML Syntax Rules"
+    },
+    {
+        "url": "https://www.w3schools.com/xml/xml_elements.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "xml_xml_elements",
+        "code_examples": [
+            {
+                "code": "<price>29.99</price>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<bookstore>\n\n  <book category=\"children\">\n\n    <title>Harry Potter</title>\n\n    <author>J K. Rowling</author>\n\n    <year>2005</year>\n\n    <price>29.99</price>\n\n  </book>\n\n  <book category=\"web\">\n\n    <title>Learning XML</title>\n\n    <author>Erik T. Ray</author>\n\n    <year>2003</year>\n\n    <price>39.95</price>\n\n  </book>\n\n</bookstore>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<element></element>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<element />",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<note>\n\n<to>Tove</to>\n\n<from>Jani</from>\n\n<body>Don't forget me this weekend!</body>\n\n</note>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<note>\n\n<date>2008-01-10</date>\n\n<to>Tove</to>\n\n<from>Jani</from>\n\n<heading>Reminder</heading>\n\n<body>Don't forget me this weekend!</body>\n\n</note>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Web Tools & Security",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "XML HOME\nXML Introduction\nXML How to use\nXML Tree\nXML Syntax\nXML Elements\nXML Attributes\nXML Namespaces\nXML Display\nXML HttpRequest\nXML Parser\nXML DOM\nXML XPath\nXML XSLT\nXML XQuery\nXML XLink\nXML Validator\nXML DTD\nXML Schema\nXML Server",
+                "heading": "XML Tutorial"
+            },
+            {
+                "content": "AJAX Introduction\nAJAX XMLHttp\nAJAX Request\nAJAX Response\nAJAX XML File\nAJAX PHP\nAJAX ASP\nAJAX Database\nAJAX Applications\nAJAX Examples",
+                "heading": "XML AJAX"
+            },
+            {
+                "content": "DOM Introduction\nDOM Nodes\nDOM Accessing\nDOM Node Info\nDOM Node List\nDOM Traversing\nDOM Navigating\nDOM Get Values\nDOM Change Nodes\nDOM Remove Nodes\nDOM Replace Nodes\nDOM Create Nodes\nDOM Add Nodes\nDOM Clone Nodes\nDOM Examples",
+                "heading": "XML DOM"
+            },
+            {
+                "content": "XPath Introduction\nXPath Nodes\nXPath Syntax\nXPath Axes\nXPath Operators\nXPath Examples",
+                "heading": "XPath Tutorial"
+            },
+            {
+                "content": "XSLT Introduction\nXSL Languages\nXSLT Transform\nXSLT <template>\nXSLT <value-of>\nXSLT <for-each>\nXSLT <sort>\nXSLT <if>\nXSLT <choose>\nXSLT Apply\nXSLT on the Client\nXSLT on the Server\nXSLT Edit XML\nXSLT Examples",
+                "heading": "XSLT Tutorial"
+            },
+            {
+                "content": "XQuery Introduction\nXQuery Example\nXQuery FLWOR\nXQuery HTML\nXQuery Terms\nXQuery Syntax\nXQuery Add\nXQuery Select\nXQuery Functions",
+                "heading": "XQuery Tutorial"
+            },
+            {
+                "content": "DTD Introduction\nDTD Building Blocks\nDTD Elements\nDTD Attributes\nDTD Elements vs Attr\nDTD Entities\nDTD Examples",
+                "heading": "XML DTD"
+            },
+            {
+                "content": "XSD Introduction\nXSD How To\nXSD <schema>\nXSD Elements\nXSD Attributes\nXSD Restrictions\nXSD Complex Elements\nXSD Empty\nXSD Elements-only\nXSD Text-only\nXSD Mixed\nXSD Indicators\nXSD <any>\nXSD <anyAttribute>\nXSD Substitution\nXSD Example",
+                "heading": "XSD Schema"
+            },
+            {
+                "content": "XSD String\nXSD Date/Time\nXSD Numeric\nXSD Misc\nXSD Reference",
+                "heading": "XSD Data Types"
+            },
+            {
+                "content": "XML Services\nXML WSDL\nXML SOAP\nXML RDF\nXML RSS",
+                "heading": "Web Services"
+            },
+            {
+                "content": "XML Certificate",
+                "heading": "XML Cert"
+            },
+            {
+                "content": "XML Examples\nXML Quiz\nXML Syllabus\nXML Study Plan",
+                "heading": "XML Examples"
+            },
+            {
+                "content": "An XML element is everything from (including) the element's start tag to \n(including) the element's end tag.\n\n<price>29.99</price>\n\nAn element can contain:\n\n text\n\n attributes\n\n other elements\n\n or a mix of the above\n\n<bookstore>\n\n  <book category=\"children\">\n\n    <title>Harry Potter</title>\n\n    <author>J K. Rowling</author>\n\n    <year>2005</year>\n\n    <price>29.99</price>\n\n  </book>\n\n  <book category=\"web\">\n\n    <title>Learning XML</title>\n\n    <author>Erik T. Ray</author>\n\n    <year>2003</year>\n\n    <price>39.95</price>\n\n  </book>\n\n</bookstore>\n\nIn the example above:\n\n<title>, <author>, <year>, and <price> have text \ncontent because they contain text (like 29.99).\n\n<bookstore> and <book> have element contents, \nbecause they contain elements.\n\n<book> has an attribute \n(category=\"children\").",
+                "heading": "What is an XML Element?"
+            },
+            {
+                "content": "An element with no content is said to be empty.\n\nIn XML, you can indicate an empty element like this:\n\n<element></element>\n\nYou can also use a so called self-closing tag:\n\n<element />\n\nThe two forms produce identical results in XML software (Readers, Parsers, \nBrowsers).\n\nEmpty elements can have attributes.",
+                "heading": "Empty XML Elements"
+            },
+            {
+                "content": "XML elements must follow these naming rules:\n\n Element names are case-sensitive\n\n Element names must start with a letter or underscore\n\n Element names cannot start with the letters xml (or XML, or Xml, etc)\n\n Element names can contain letters, digits, hyphens, underscores, and periods\n\n Element names cannot contain spaces\n\nAny name can be used, no words are reserved (except xml).",
+                "heading": "XML Naming Rules"
+            },
+            {
+                "content": "Create descriptive names, like this: \n<person>, <firstname>, <lastname>.\n\nCreate short and simple names, like this: <book_title> not like this: \n<the_title_of_the_book>.\n\nAvoid \"-\". If you name something \"first-name\", some software may \nthink you want to subtract \"name\" from \"first\".\n\nAvoid \".\". If you name something \"first.name\", some software may \nthink that \"name\" is a property of the object \"first\".\n\nAvoid \":\". Colons are reserved for \nnamespaces (more later).\n\nNon-English letters like éòá are perfectly legal in XML, but watch out for \nproblems if your software doesn't support them!",
+                "heading": "Best Naming Practices"
+            },
+            {
+                "content": "Some commonly \nused naming conventions for XML elements:\n\n Style\n Example\n Description\n\n Lower case\n <firstname>\n All letters lower case\n\n Upper case\n <FIRSTNAME>\n All letters upper case\n\n Snake case\n <first_name>\n Underscore separates words (commonly used in SQL databases)\n\n Pascal case\n <FirstName>\n Uppercase first letter in each word (commonly used by C programmers)\n\n Camel case\n <firstName>\n Uppercase first letter in each word except the first (commonly used in \n JavaScript)\n\nTip! Choose your naming style, and be consistent about it!\n\nXML documents often have a corresponding database. A common practice is to use \nthe naming rules of the database for the XML elements.",
+                "heading": "Naming Conventions"
+            },
+            {
+                "content": "XML elements can be extended to carry more information.\n\nLook at the following XML example:\n\n<note>\n\n<to>Tove</to>\n\n<from>Jani</from>\n\n<body>Don't forget me this weekend!</body>\n\n</note>\n\nLet's imagine that we created an application that extracted the <to>, <from>, \nand <body> elements from the XML document to produce this output:\n\nMESSAGE\nTo: Tove\n\nFrom: Jani\n\nDon't forget me this weekend!\n\nImagine that the author of the XML document added some extra information to it:\n\n<note>\n\n<date>2008-01-10</date>\n\n<to>Tove</to>\n\n<from>Jani</from>\n\n<heading>Reminder</heading>\n\n<body>Don't forget me this weekend!</body>\n\n</note>\n\nShould the application break or crash?\n\nNo. The application should still be able to find the <to>, <from>, and <body> \nelements in the XML document and produce the same output.\n\nThis is one of the beauties of XML. It can be extended without breaking \napplications.\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "XML Elements are Extensible"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:18:38Z",
+        "subject": "XML",
+        "title": "XML Elements"
+    },
+    {
+        "url": "https://www.w3schools.com/xml/xml_attributes.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "xml_xml_attributes",
+        "code_examples": [
+            {
+                "code": "<person gender=\"female\">",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<person gender='female'>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<gangster name='George \"Shotgun\" Ziegler'>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<gangster name=\"George &quot;Shotgun&quot; Ziegler\">",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<person gender=\"female\">\n\n <firstname>Anna</firstname>\n\n <lastname>Smith</lastname>\n\n</person>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<person>\n\n <gender>female</gender>\n\n <firstname>Anna</firstname>\n\n <lastname>Smith</lastname>\n\n</person>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<note date=\"2008-01-10\">\n\n<to>Tove</to>\n\n<from>Jani</from>\n\n</note>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<note>\n\n<date>2008-01-10</date>\n\n<to>Tove</to>\n\n<from>Jani</from>\n\n</note>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<note>\n\n<date>\n\n <year>2008</year>\n\n <month>01</month>\n\n <day>10</day>\n\n</date>\n\n<to>Tove</to>\n\n<from>Jani</from>\n\n</note>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<note day=\"10\" month=\"01\" year=\"2008\"\n\nto=\"Tove\" from=\"Jani\" heading=\"Reminder\"\n\nbody=\"Don't forget me this weekend!\">\n\n</note>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<messages>\n\n <note id=\"501\">\n\n <to>Tove</to>\n\n <from>Jani</from>\n\n <heading>Reminder</heading>\n\n <body>Don't forget me this weekend!</body>\n\n </note>\n\n <note id=\"502\">\n\n <to>Jani</to>\n\n <from>Tove</from>\n\n <heading>Re: Reminder</heading>\n\n <body>I will not</body>\n\n </note>\n\n</messages>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Web Tools & Security",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "XML HOME\nXML Introduction\nXML How to use\nXML Tree\nXML Syntax\nXML Elements\nXML Attributes\nXML Namespaces\nXML Display\nXML HttpRequest\nXML Parser\nXML DOM\nXML XPath\nXML XSLT\nXML XQuery\nXML XLink\nXML Validator\nXML DTD\nXML Schema\nXML Server",
+                "heading": "XML Tutorial"
+            },
+            {
+                "content": "AJAX Introduction\nAJAX XMLHttp\nAJAX Request\nAJAX Response\nAJAX XML File\nAJAX PHP\nAJAX ASP\nAJAX Database\nAJAX Applications\nAJAX Examples",
+                "heading": "XML AJAX"
+            },
+            {
+                "content": "DOM Introduction\nDOM Nodes\nDOM Accessing\nDOM Node Info\nDOM Node List\nDOM Traversing\nDOM Navigating\nDOM Get Values\nDOM Change Nodes\nDOM Remove Nodes\nDOM Replace Nodes\nDOM Create Nodes\nDOM Add Nodes\nDOM Clone Nodes\nDOM Examples",
+                "heading": "XML DOM"
+            },
+            {
+                "content": "XPath Introduction\nXPath Nodes\nXPath Syntax\nXPath Axes\nXPath Operators\nXPath Examples",
+                "heading": "XPath Tutorial"
+            },
+            {
+                "content": "XSLT Introduction\nXSL Languages\nXSLT Transform\nXSLT <template>\nXSLT <value-of>\nXSLT <for-each>\nXSLT <sort>\nXSLT <if>\nXSLT <choose>\nXSLT Apply\nXSLT on the Client\nXSLT on the Server\nXSLT Edit XML\nXSLT Examples",
+                "heading": "XSLT Tutorial"
+            },
+            {
+                "content": "XQuery Introduction\nXQuery Example\nXQuery FLWOR\nXQuery HTML\nXQuery Terms\nXQuery Syntax\nXQuery Add\nXQuery Select\nXQuery Functions",
+                "heading": "XQuery Tutorial"
+            },
+            {
+                "content": "DTD Introduction\nDTD Building Blocks\nDTD Elements\nDTD Attributes\nDTD Elements vs Attr\nDTD Entities\nDTD Examples",
+                "heading": "XML DTD"
+            },
+            {
+                "content": "XSD Introduction\nXSD How To\nXSD <schema>\nXSD Elements\nXSD Attributes\nXSD Restrictions\nXSD Complex Elements\nXSD Empty\nXSD Elements-only\nXSD Text-only\nXSD Mixed\nXSD Indicators\nXSD <any>\nXSD <anyAttribute>\nXSD Substitution\nXSD Example",
+                "heading": "XSD Schema"
+            },
+            {
+                "content": "XSD String\nXSD Date/Time\nXSD Numeric\nXSD Misc\nXSD Reference",
+                "heading": "XSD Data Types"
+            },
+            {
+                "content": "XML Services\nXML WSDL\nXML SOAP\nXML RDF\nXML RSS",
+                "heading": "Web Services"
+            },
+            {
+                "content": "XML Certificate",
+                "heading": "XML Cert"
+            },
+            {
+                "content": "XML Examples\nXML Quiz\nXML Syllabus\nXML Study Plan",
+                "heading": "XML Examples"
+            },
+            {
+                "content": "Attribute values must always be quoted. Either single or double quotes can be used.\n\nFor a person's \ngender, the <person> \nelement can be written like this:\n\n<person gender=\"female\">\n\nor like this:\n\n<person gender='female'>\n\nIf the attribute value itself contains double quotes you can use single quotes, like in this example:\n\n<gangster name='George \"Shotgun\" Ziegler'>\n\nor you can use character entities:\n\n<gangster name=\"George &quot;Shotgun&quot; Ziegler\">",
+                "heading": "XML Attributes Must be Quoted"
+            },
+            {
+                "content": "Take a look at these two examples:\n\n<person gender=\"female\">\n\n <firstname>Anna</firstname>\n\n <lastname>Smith</lastname>\n\n</person>\n\n<person>\n\n <gender>female</gender>\n\n <firstname>Anna</firstname>\n\n <lastname>Smith</lastname>\n\n</person>\n\nIn the first example, gender is an attribute. In the last example, gender is an element.\nBoth examples provide the same information.\n\nThere are no rules about when to use attributes or when to use elements in XML.",
+                "heading": "XML Elements vs. Attributes"
+            },
+            {
+                "content": "The following three XML documents contain exactly the same information:\n\nA date attribute is used in the first example:\n\n<note date=\"2008-01-10\">\n\n<to>Tove</to>\n\n<from>Jani</from>\n\n</note>\n\nA <date> element is used in the second example:\n\n<note>\n\n<date>2008-01-10</date>\n\n<to>Tove</to>\n\n<from>Jani</from>\n\n</note>\n\nAn expanded <date> element is used in the third example: (THIS IS MY FAVORITE):\n\n<note>\n\n<date>\n\n <year>2008</year>\n\n <month>01</month>\n\n <day>10</day>\n\n</date>\n\n<to>Tove</to>\n\n<from>Jani</from>\n\n</note>",
+                "heading": "My Favorite Way"
+            },
+            {
+                "content": "Some things to consider when using attributes are:\n\n attributes cannot contain multiple values (elements can)\n\n attributes cannot contain tree structures (elements can)\n\n attributes are not easily expandable (for future changes)\n\nDon't end up like this:\n\n<note day=\"10\" month=\"01\" year=\"2008\"\n\nto=\"Tove\" from=\"Jani\" heading=\"Reminder\"\n\nbody=\"Don't forget me this weekend!\">\n\n</note>",
+                "heading": "Avoid XML Attributes?"
+            },
+            {
+                "content": "Sometimes ID references are assigned to elements. These IDs can be used to identify XML elements in much the same way as the \nid attribute in HTML. This example demonstrates this:\n\n<messages>\n\n <note id=\"501\">\n\n <to>Tove</to>\n\n <from>Jani</from>\n\n <heading>Reminder</heading>\n\n <body>Don't forget me this weekend!</body>\n\n </note>\n\n <note id=\"502\">\n\n <to>Jani</to>\n\n <from>Tove</from>\n\n <heading>Re: Reminder</heading>\n\n <body>I will not</body>\n\n </note>\n\n</messages>\n\nThe id attributes above are for identifying the different notes. It is not a part of the note itself.\n\nWhat I'm trying to say here is that metadata (data about data) should be stored as attributes, and the data itself should be stored as elements.\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "XML Attributes for Metadata"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:18:38Z",
+        "subject": "XML",
+        "title": "XML Attributes"
+    },
+    {
+        "url": "https://www.w3schools.com/xml/xml_namespaces.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "xml_xml_namespaces",
+        "code_examples": [
+            {
+                "code": "<table>\n\n <tr>\n\n <td>Apples</td>\n\n <td>Bananas</td>\n\n </tr>\n\n</table>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<table>\n\n <name>African Coffee Table</name>\n\n <width>80</width>\n\n <length>120</length>\n\n</table>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<h:table>\n\n <h:tr>\n\n <h:td>Apples</h:td>\n\n <h:td>Bananas</h:td>\n\n </h:tr>\n\n</h:table>\n\n<f:table>\n\n  <f:name>African Coffee Table</f:name>\n\n  <f:width>80</f:width>\n\n  <f:length>120</f:length>\n\n</f:table>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<root>\n\n<h:table xmlns:h=\"http://www.w3.org/TR/html4/\">\n\n  <h:tr>\n\n    <h:td>Apples</h:td>\n\n    <h:td>Bananas</h:td>\n\n  </h:tr>\n\n</h:table>\n\n<f:table xmlns:f=\"https://www.w3schools.com/furniture\">\n\n  <f:name>African Coffee Table</f:name>\n\n  <f:width>80</f:width>\n\n  <f:length>120</f:length>\n\n</f:table>\n\n</root>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<root xmlns:h=\"http://www.w3.org/TR/html4/\"\n\nxmlns:f=\"https://www.w3schools.com/furniture\">\n\n<h:table>\n\n  <h:tr>\n\n    <h:td>Apples</h:td>\n\n    <h:td>Bananas</h:td>\n\n  </h:tr>\n\n</h:table>\n\n<f:table>\n\n  <f:name>African Coffee Table</f:name>\n\n  <f:width>80</f:width>\n\n  <f:length>120</f:length>\n\n</f:table>\n\n</root>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "xmlns=\"namespaceURI\"",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<table xmlns=\"http://www.w3.org/TR/html4/\">\n\n<tr>\n\n<td>Apples</td>\n\n<td>Bananas</td>\n\n</tr>\n\n</table>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<table xmlns=\"https://www.w3schools.com/furniture\">\n\n<name>African Coffee Table</name>\n\n<width>80</width>\n\n<length>120</length>\n\n</table>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n\n<xsl:stylesheet version=\"1.0\"\nxmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\">\n\n<xsl:template match=\"/\">\n\n<html>\n\n<body>\n\n  <h2>My CD Collection</h2>\n\n  <table border=\"1\">\n\n    <tr>\n\n      <th style=\"text-align:left\">Title</th>\n\n      <th style=\"text-align:left\">Artist</th>\n\n    </tr>\n\n    <xsl:for-each select=\"catalog/cd\">\n\n    <tr>\n\n      <td><xsl:value-of select=\"title\"/></td>\n\n      <td><xsl:value-of select=\"artist\"/></td>\n\n    </tr>\n\n    </xsl:for-each>\n\n  </table>\n\n</body>\n\n</html>\n\n</xsl:template>\n\n</xsl:stylesheet>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Web Tools & Security",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "XML HOME\nXML Introduction\nXML How to use\nXML Tree\nXML Syntax\nXML Elements\nXML Attributes\nXML Namespaces\nXML Display\nXML HttpRequest\nXML Parser\nXML DOM\nXML XPath\nXML XSLT\nXML XQuery\nXML XLink\nXML Validator\nXML DTD\nXML Schema\nXML Server",
+                "heading": "XML Tutorial"
+            },
+            {
+                "content": "AJAX Introduction\nAJAX XMLHttp\nAJAX Request\nAJAX Response\nAJAX XML File\nAJAX PHP\nAJAX ASP\nAJAX Database\nAJAX Applications\nAJAX Examples",
+                "heading": "XML AJAX"
+            },
+            {
+                "content": "DOM Introduction\nDOM Nodes\nDOM Accessing\nDOM Node Info\nDOM Node List\nDOM Traversing\nDOM Navigating\nDOM Get Values\nDOM Change Nodes\nDOM Remove Nodes\nDOM Replace Nodes\nDOM Create Nodes\nDOM Add Nodes\nDOM Clone Nodes\nDOM Examples",
+                "heading": "XML DOM"
+            },
+            {
+                "content": "XPath Introduction\nXPath Nodes\nXPath Syntax\nXPath Axes\nXPath Operators\nXPath Examples",
+                "heading": "XPath Tutorial"
+            },
+            {
+                "content": "XSLT Introduction\nXSL Languages\nXSLT Transform\nXSLT <template>\nXSLT <value-of>\nXSLT <for-each>\nXSLT <sort>\nXSLT <if>\nXSLT <choose>\nXSLT Apply\nXSLT on the Client\nXSLT on the Server\nXSLT Edit XML\nXSLT Examples",
+                "heading": "XSLT Tutorial"
+            },
+            {
+                "content": "XQuery Introduction\nXQuery Example\nXQuery FLWOR\nXQuery HTML\nXQuery Terms\nXQuery Syntax\nXQuery Add\nXQuery Select\nXQuery Functions",
+                "heading": "XQuery Tutorial"
+            },
+            {
+                "content": "DTD Introduction\nDTD Building Blocks\nDTD Elements\nDTD Attributes\nDTD Elements vs Attr\nDTD Entities\nDTD Examples",
+                "heading": "XML DTD"
+            },
+            {
+                "content": "XSD Introduction\nXSD How To\nXSD <schema>\nXSD Elements\nXSD Attributes\nXSD Restrictions\nXSD Complex Elements\nXSD Empty\nXSD Elements-only\nXSD Text-only\nXSD Mixed\nXSD Indicators\nXSD <any>\nXSD <anyAttribute>\nXSD Substitution\nXSD Example",
+                "heading": "XSD Schema"
+            },
+            {
+                "content": "XSD String\nXSD Date/Time\nXSD Numeric\nXSD Misc\nXSD Reference",
+                "heading": "XSD Data Types"
+            },
+            {
+                "content": "XML Services\nXML WSDL\nXML SOAP\nXML RDF\nXML RSS",
+                "heading": "Web Services"
+            },
+            {
+                "content": "XML Certificate",
+                "heading": "XML Cert"
+            },
+            {
+                "content": "XML Examples\nXML Quiz\nXML Syllabus\nXML Study Plan",
+                "heading": "XML Examples"
+            },
+            {
+                "content": "In XML, element names are defined by the developer. This often results in a conflict when trying to mix XML documents from different XML applications.\n\nThis XML carries HTML table information:\n\n<table>\n\n <tr>\n\n <td>Apples</td>\n\n <td>Bananas</td>\n\n </tr>\n\n</table>\n\nThis XML carries information about a table (a piece of furniture):\n\n<table>\n\n <name>African Coffee Table</name>\n\n <width>80</width>\n\n <length>120</length>\n\n</table>\n\nIf these XML fragments were added together, there would be a name conflict. Both contain a <table> element, but the elements have different content and meaning.\n\nA user or an XML application will not know how to handle these differences.",
+                "heading": "Name Conflicts"
+            },
+            {
+                "content": "Name conflicts in XML can easily be avoided using a name prefix.\n\nThis XML carries information about an HTML table, and a piece of furniture:\n\n<h:table>\n\n <h:tr>\n\n <h:td>Apples</h:td>\n\n <h:td>Bananas</h:td>\n\n </h:tr>\n\n</h:table>\n\n<f:table>\n\n  <f:name>African Coffee Table</f:name>\n\n  <f:width>80</f:width>\n\n  <f:length>120</f:length>\n\n</f:table>\n\nIn the example above, there will be no conflict because the two <table> elements have different names.",
+                "heading": "Solving the Name Conflict Using a Prefix"
+            },
+            {
+                "content": "When using prefixes in XML, a namespace for the prefix must be defined.\n\nThe namespace can be defined by an xmlns attribute in the start tag of an element.\n\nThe namespace declaration has the following syntax. xmlns:prefix=\"URI\".\n\n<root>\n\n<h:table xmlns:h=\"http://www.w3.org/TR/html4/\">\n\n  <h:tr>\n\n    <h:td>Apples</h:td>\n\n    <h:td>Bananas</h:td>\n\n  </h:tr>\n\n</h:table>\n\n<f:table xmlns:f=\"https://www.w3schools.com/furniture\">\n\n  <f:name>African Coffee Table</f:name>\n\n  <f:width>80</f:width>\n\n  <f:length>120</f:length>\n\n</f:table>\n\n</root>\n\nIn the example above:\n\nThe xmlns attribute in the first <table> element gives the h: prefix a qualified namespace.\n\nThe xmlns attribute in the second <table> element gives the f: prefix a qualified namespace.\n\nWhen a namespace is defined for an element, all child elements with the same prefix are associated with the same namespace.\n\nNamespaces can also be declared in the XML root element:\n\n<root xmlns:h=\"http://www.w3.org/TR/html4/\"\n\nxmlns:f=\"https://www.w3schools.com/furniture\">\n\n<h:table>\n\n  <h:tr>\n\n    <h:td>Apples</h:td>\n\n    <h:td>Bananas</h:td>\n\n  </h:tr>\n\n</h:table>\n\n<f:table>\n\n  <f:name>African Coffee Table</f:name>\n\n  <f:width>80</f:width>\n\n  <f:length>120</f:length>\n\n</f:table>\n\n</root>\n\nNote: The namespace URI is not used by the parser to look up information.\n\nThe purpose of using an URI is to give the namespace a unique name.\n\nHowever, companies often use the namespace as a pointer to a\nweb page containing namespace information.",
+                "heading": "XML Namespaces - The xmlns Attribute"
+            },
+            {
+                "content": "A Uniform Resource Identifier (URI) is a string of characters which identifies an Internet Resource.\n\nThe most common URI is the Uniform Resource Locator (URL) which identifies an Internet domain address. Another, not so common type of URI is the Uniform Resource Name (URN).",
+                "heading": "Uniform Resource Identifier (URI)"
+            },
+            {
+                "content": "Defining a default namespace for an element saves us from using prefixes in all the child elements. It has the following syntax:\n\nxmlns=\"namespaceURI\"\n\nThis XML carries HTML table information:\n\n<table xmlns=\"http://www.w3.org/TR/html4/\">\n\n<tr>\n\n<td>Apples</td>\n\n<td>Bananas</td>\n\n</tr>\n\n</table>\n\nThis XML carries information about a piece of furniture:\n\n<table xmlns=\"https://www.w3schools.com/furniture\">\n\n<name>African Coffee Table</name>\n\n<width>80</width>\n\n<length>120</length>\n\n</table>",
+                "heading": "Default Namespaces"
+            },
+            {
+                "content": "XSLT is a language that can be used to transform XML documents into other formats.\n\nThe XML document below, is a document used to transform XML into HTML.\n\nThe namespace \"http://www.w3.org/1999/XSL/Transform\" identifies XSLT \nelements inside an HTML document:\n\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n\n<xsl:stylesheet version=\"1.0\"\nxmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\">\n\n<xsl:template match=\"/\">\n\n<html>\n\n<body>\n\n  <h2>My CD Collection</h2>\n\n  <table border=\"1\">\n\n    <tr>\n\n      <th style=\"text-align:left\">Title</th>\n\n      <th style=\"text-align:left\">Artist</th>\n\n    </tr>\n\n    <xsl:for-each select=\"catalog/cd\">\n\n    <tr>\n\n      <td><xsl:value-of select=\"title\"/></td>\n\n      <td><xsl:value-of select=\"artist\"/></td>\n\n    </tr>\n\n    </xsl:for-each>\n\n  </table>\n\n</body>\n\n</html>\n\n</xsl:template>\n\n</xsl:stylesheet>\n\nIf you want to learn more about XSLT, please read our\nXSLT Tutorial.\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Namespaces in Real Use"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:18:38Z",
+        "subject": "XML",
+        "title": "XML Namespaces"
+    },
+    {
+        "url": "https://www.w3schools.com/xml/xml_display.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "xml_xml_display",
+        "code_examples": [],
+        "category": "Web Tools & Security",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "XML HOME\nXML Introduction\nXML How to use\nXML Tree\nXML Syntax\nXML Elements\nXML Attributes\nXML Namespaces\nXML Display\nXML HttpRequest\nXML Parser\nXML DOM\nXML XPath\nXML XSLT\nXML XQuery\nXML XLink\nXML Validator\nXML DTD\nXML Schema\nXML Server",
+                "heading": "XML Tutorial"
+            },
+            {
+                "content": "AJAX Introduction\nAJAX XMLHttp\nAJAX Request\nAJAX Response\nAJAX XML File\nAJAX PHP\nAJAX ASP\nAJAX Database\nAJAX Applications\nAJAX Examples",
+                "heading": "XML AJAX"
+            },
+            {
+                "content": "DOM Introduction\nDOM Nodes\nDOM Accessing\nDOM Node Info\nDOM Node List\nDOM Traversing\nDOM Navigating\nDOM Get Values\nDOM Change Nodes\nDOM Remove Nodes\nDOM Replace Nodes\nDOM Create Nodes\nDOM Add Nodes\nDOM Clone Nodes\nDOM Examples",
+                "heading": "XML DOM"
+            },
+            {
+                "content": "XPath Introduction\nXPath Nodes\nXPath Syntax\nXPath Axes\nXPath Operators\nXPath Examples",
+                "heading": "XPath Tutorial"
+            },
+            {
+                "content": "XSLT Introduction\nXSL Languages\nXSLT Transform\nXSLT <template>\nXSLT <value-of>\nXSLT <for-each>\nXSLT <sort>\nXSLT <if>\nXSLT <choose>\nXSLT Apply\nXSLT on the Client\nXSLT on the Server\nXSLT Edit XML\nXSLT Examples",
+                "heading": "XSLT Tutorial"
+            },
+            {
+                "content": "XQuery Introduction\nXQuery Example\nXQuery FLWOR\nXQuery HTML\nXQuery Terms\nXQuery Syntax\nXQuery Add\nXQuery Select\nXQuery Functions",
+                "heading": "XQuery Tutorial"
+            },
+            {
+                "content": "DTD Introduction\nDTD Building Blocks\nDTD Elements\nDTD Attributes\nDTD Elements vs Attr\nDTD Entities\nDTD Examples",
+                "heading": "XML DTD"
+            },
+            {
+                "content": "XSD Introduction\nXSD How To\nXSD <schema>\nXSD Elements\nXSD Attributes\nXSD Restrictions\nXSD Complex Elements\nXSD Empty\nXSD Elements-only\nXSD Text-only\nXSD Mixed\nXSD Indicators\nXSD <any>\nXSD <anyAttribute>\nXSD Substitution\nXSD Example",
+                "heading": "XSD Schema"
+            },
+            {
+                "content": "XSD String\nXSD Date/Time\nXSD Numeric\nXSD Misc\nXSD Reference",
+                "heading": "XSD Data Types"
+            },
+            {
+                "content": "XML Services\nXML WSDL\nXML SOAP\nXML RDF\nXML RSS",
+                "heading": "Web Services"
+            },
+            {
+                "content": "XML Certificate",
+                "heading": "XML Cert"
+            },
+            {
+                "content": "XML Examples\nXML Quiz\nXML Syllabus\nXML Study Plan",
+                "heading": "XML Examples"
+            },
+            {
+                "content": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n\n- <note>\n\n  <to>Tove</to>\n\n  <from>Jani</from>\n\n  <heading>Reminder</heading>\n\n  <body>Don't forget me this weekend!</body>\n\n</note>\n\nLook at the XML file above in your browser: note.xml\n\nMost browsers will display an XML document with color-coded elements.\n\nOften a plus (+) or minus sign (-) to the left\nof the elements can be clicked to expand or collapse the element structure.\n\nTo view raw XML source, try to select \"View Page Source\" or \"View Source\" from the browser menu.\n\nNote: In Safari 5 (and earlier), only the element text will be displayed. To view the raw XML, you must right click the page and select \"View Source\".",
+                "heading": "Viewing XML Files"
+            },
+            {
+                "content": "If an erroneous XML file is opened, some browsers will report the error, and some will display it, or display it incorrectly.\n\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n\n- <note>\n\n  <to>Tove</to>\n\n  <From>Jani</from>\n\n  <heading>Reminder</heading>\n\n  <body>Don't forget me this weekend!</body>\n\n</note>\n\nTry to open the following XML file: note_error.xml",
+                "heading": "Viewing an Invalid XML File"
+            },
+            {
+                "content": "Viewing some XML documents will help you get the XML feeling:\n\nAn XML breakfast menu\n\nThis is a breakfast food menu from a restaurant, stored as XML.\n\nAn XML CD catalog\n\nThis is a CD collection, stored as XML.\n\nAn XML plant catalog\n\nThis is a plant catalog from a plant shop, stored as XML.",
+                "heading": "Other XML Examples"
+            },
+            {
+                "content": "XML documents do not carry information about how to display the data.\n\nSince XML tags are \"invented\" by the author of the XML document, browsers do not know if a tag like <table> describes an HTML table or a dining table.\n\nWithout any information about how to display the data, the browsers can just display the XML document as it is.\n\nTip: If you want to style an XML document, use\nXSLT.\n\n❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Why Does XML Display Like This?"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:18:38Z",
+        "subject": "XML",
+        "title": "Displaying XML"
+    },
+    {
+        "url": "https://www.w3schools.com/xml/xml_http.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "xml_xml_http",
+        "code_examples": [
+            {
+                "code": "var xhttp = new XMLHttpRequest();\nxhttp.onreadystatechange = function() {\n\n    if (this.readyState == 4 && this.status == 200) {\n\n        // Typical action to be performed when the document is ready:\n\n document.getElementById(\"demo\").innerHTML = xhttp.responseText;\n\n    }\n};\n\nxhttp.open(\"GET\", \"filename\", true);\n\nxhttp.send();",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=tryxml_httprequest"
+            },
+            {
+                "code": "xhttp.onreadystatechange = function()",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "if (this.readyState == 4 && this.status == 200)",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "document.getElementById(\"demo\").innerHTML = xhttp.responseText;",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Web Tools & Security",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "XML HOME\nXML Introduction\nXML How to use\nXML Tree\nXML Syntax\nXML Elements\nXML Attributes\nXML Namespaces\nXML Display\nXML HttpRequest\nXML Parser\nXML DOM\nXML XPath\nXML XSLT\nXML XQuery\nXML XLink\nXML Validator\nXML DTD\nXML Schema\nXML Server",
+                "heading": "XML Tutorial"
+            },
+            {
+                "content": "AJAX Introduction\nAJAX XMLHttp\nAJAX Request\nAJAX Response\nAJAX XML File\nAJAX PHP\nAJAX ASP\nAJAX Database\nAJAX Applications\nAJAX Examples",
+                "heading": "XML AJAX"
+            },
+            {
+                "content": "DOM Introduction\nDOM Nodes\nDOM Accessing\nDOM Node Info\nDOM Node List\nDOM Traversing\nDOM Navigating\nDOM Get Values\nDOM Change Nodes\nDOM Remove Nodes\nDOM Replace Nodes\nDOM Create Nodes\nDOM Add Nodes\nDOM Clone Nodes\nDOM Examples",
+                "heading": "XML DOM"
+            },
+            {
+                "content": "XPath Introduction\nXPath Nodes\nXPath Syntax\nXPath Axes\nXPath Operators\nXPath Examples",
+                "heading": "XPath Tutorial"
+            },
+            {
+                "content": "XSLT Introduction\nXSL Languages\nXSLT Transform\nXSLT <template>\nXSLT <value-of>\nXSLT <for-each>\nXSLT <sort>\nXSLT <if>\nXSLT <choose>\nXSLT Apply\nXSLT on the Client\nXSLT on the Server\nXSLT Edit XML\nXSLT Examples",
+                "heading": "XSLT Tutorial"
+            },
+            {
+                "content": "XQuery Introduction\nXQuery Example\nXQuery FLWOR\nXQuery HTML\nXQuery Terms\nXQuery Syntax\nXQuery Add\nXQuery Select\nXQuery Functions",
+                "heading": "XQuery Tutorial"
+            },
+            {
+                "content": "DTD Introduction\nDTD Building Blocks\nDTD Elements\nDTD Attributes\nDTD Elements vs Attr\nDTD Entities\nDTD Examples",
+                "heading": "XML DTD"
+            },
+            {
+                "content": "XSD Introduction\nXSD How To\nXSD <schema>\nXSD Elements\nXSD Attributes\nXSD Restrictions\nXSD Complex Elements\nXSD Empty\nXSD Elements-only\nXSD Text-only\nXSD Mixed\nXSD Indicators\nXSD <any>\nXSD <anyAttribute>\nXSD Substitution\nXSD Example",
+                "heading": "XSD Schema"
+            },
+            {
+                "content": "XSD String\nXSD Date/Time\nXSD Numeric\nXSD Misc\nXSD Reference",
+                "heading": "XSD Data Types"
+            },
+            {
+                "content": "XML Services\nXML WSDL\nXML SOAP\nXML RDF\nXML RSS",
+                "heading": "Web Services"
+            },
+            {
+                "content": "XML Certificate",
+                "heading": "XML Cert"
+            },
+            {
+                "content": "XML Examples\nXML Quiz\nXML Syllabus\nXML Study Plan",
+                "heading": "XML Examples"
+            },
+            {
+                "content": "The XMLHttpRequest object can be used to request data from a web server.\n\nThe XMLHttpRequest object is a developers dream, because you can:\n\n Update a web page without reloading the page\n\n Request data from a server - after the page has loaded \n\n Receive data from a server  - after the page has loaded\n\n Send data to a server - in the background",
+                "heading": "The XMLHttpRequest Object"
+            },
+            {
+                "content": "When you type a character in the input field below, an XMLHttpRequest is sent to the server,\nand some name suggestions are returned \n(from the server):\n\nExample\n\nStart typing a name in the input field below:\n\nName: \n  Suggestions: \n\nThe example above is explained in the AJAX chapters of this tutorial.",
+                "heading": "XMLHttpRequest Example"
+            },
+            {
+                "content": "A common JavaScript syntax for using the XMLHttpRequest object looks much like this:\n\nExample\n\nvar xhttp = new XMLHttpRequest();\nxhttp.onreadystatechange = function() {\n\n    if (this.readyState == 4 && this.status == 200) {\n\n        // Typical action to be performed when the document is ready:\n\n document.getElementById(\"demo\").innerHTML = xhttp.responseText;\n\n    }\n};\n\nxhttp.open(\"GET\", \"filename\", true);\n\nxhttp.send();\n\nTry it Yourself »",
+                "heading": "Sending an XMLHttpRequest"
+            },
+            {
+                "content": "The first line in the example above creates an XMLHttpRequest \nobject:\n\n var xhttp = new XMLHttpRequest();\n\nThe onreadystatechange property specifies a function to be executed \nevery time the status of the XMLHttpRequest object changes:\n\n xhttp.onreadystatechange = function()\n\nWhen readyState property is 4 and the status \nproperty is 200, the response is ready:\n\nif (this.readyState == 4 && this.status == 200)\n\nThe responseText property returns the server response as a \ntext string.\n\nThe text string can be used to update a web page:\n\n document.getElementById(\"demo\").innerHTML = xhttp.responseText;\n\nYou will learn a lot more about the XMLHttpRequest object in the AJAX chapters of this tutorial.\n\n ❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Example Explained"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:18:38Z",
+        "subject": "XML",
+        "title": "XML HttpRequest"
+    },
+    {
+        "url": "https://www.w3schools.com/xml/xml_parser.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "xml_xml_parser",
+        "code_examples": [
+            {
+                "code": "<html>\n\n<body>\n\n<p id=\"demo\"></p>\n\n<script>\n\nvar text, parser, xmlDoc;\n\ntext = \"<bookstore><book>\" +\n\n\"<title>Everyday Italian</title>\" +\n\n\"<author>Giada De Laurentiis</author>\" +\n\n\"<year>2005</year>\" +\n\n\"</book></bookstore>\";\n\nparser = new DOMParser();\n\nxmlDoc = parser.parseFromString(text,\"text/xml\");\n\ndocument.getElementById(\"demo\").innerHTML =\n\nxmlDoc.getElementsByTagName(\"title\")[0].childNodes[0].nodeValue;\n\n</script>\n\n</body>\n</html>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=try_dom_loadxmltext"
+            },
+            {
+                "code": "parser = new DOMParser();",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "xmlDoc = parser.parseFromString(text,\"text/xml\");",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "xmlDoc = xmlhttp.responseXML;\n\n txt = \"\";\n\nx = xmlDoc.getElementsByTagName(\"ARTIST\");\n\nfor (i = 0; i < x.length; i++) {\n\n    txt += x[i].childNodes[0].nodeValue + \"<br>\";\n\n }\n\ndocument.getElementById(\"demo\").innerHTML = txt;",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=try_dom_xmlhttprequest_responsexml"
+            }
+        ],
+        "category": "Web Tools & Security",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "XML HOME\nXML Introduction\nXML How to use\nXML Tree\nXML Syntax\nXML Elements\nXML Attributes\nXML Namespaces\nXML Display\nXML HttpRequest\nXML Parser\nXML DOM\nXML XPath\nXML XSLT\nXML XQuery\nXML XLink\nXML Validator\nXML DTD\nXML Schema\nXML Server",
+                "heading": "XML Tutorial"
+            },
+            {
+                "content": "AJAX Introduction\nAJAX XMLHttp\nAJAX Request\nAJAX Response\nAJAX XML File\nAJAX PHP\nAJAX ASP\nAJAX Database\nAJAX Applications\nAJAX Examples",
+                "heading": "XML AJAX"
+            },
+            {
+                "content": "DOM Introduction\nDOM Nodes\nDOM Accessing\nDOM Node Info\nDOM Node List\nDOM Traversing\nDOM Navigating\nDOM Get Values\nDOM Change Nodes\nDOM Remove Nodes\nDOM Replace Nodes\nDOM Create Nodes\nDOM Add Nodes\nDOM Clone Nodes\nDOM Examples",
+                "heading": "XML DOM"
+            },
+            {
+                "content": "XPath Introduction\nXPath Nodes\nXPath Syntax\nXPath Axes\nXPath Operators\nXPath Examples",
+                "heading": "XPath Tutorial"
+            },
+            {
+                "content": "XSLT Introduction\nXSL Languages\nXSLT Transform\nXSLT <template>\nXSLT <value-of>\nXSLT <for-each>\nXSLT <sort>\nXSLT <if>\nXSLT <choose>\nXSLT Apply\nXSLT on the Client\nXSLT on the Server\nXSLT Edit XML\nXSLT Examples",
+                "heading": "XSLT Tutorial"
+            },
+            {
+                "content": "XQuery Introduction\nXQuery Example\nXQuery FLWOR\nXQuery HTML\nXQuery Terms\nXQuery Syntax\nXQuery Add\nXQuery Select\nXQuery Functions",
+                "heading": "XQuery Tutorial"
+            },
+            {
+                "content": "DTD Introduction\nDTD Building Blocks\nDTD Elements\nDTD Attributes\nDTD Elements vs Attr\nDTD Entities\nDTD Examples",
+                "heading": "XML DTD"
+            },
+            {
+                "content": "XSD Introduction\nXSD How To\nXSD <schema>\nXSD Elements\nXSD Attributes\nXSD Restrictions\nXSD Complex Elements\nXSD Empty\nXSD Elements-only\nXSD Text-only\nXSD Mixed\nXSD Indicators\nXSD <any>\nXSD <anyAttribute>\nXSD Substitution\nXSD Example",
+                "heading": "XSD Schema"
+            },
+            {
+                "content": "XSD String\nXSD Date/Time\nXSD Numeric\nXSD Misc\nXSD Reference",
+                "heading": "XSD Data Types"
+            },
+            {
+                "content": "XML Services\nXML WSDL\nXML SOAP\nXML RDF\nXML RSS",
+                "heading": "Web Services"
+            },
+            {
+                "content": "XML Certificate",
+                "heading": "XML Cert"
+            },
+            {
+                "content": "XML Examples\nXML Quiz\nXML Syllabus\nXML Study Plan",
+                "heading": "XML Examples"
+            },
+            {
+                "content": "The XML DOM (Document Object Model) defines the properties and methods for accessing \nand editing XML.\n\nHowever, before an XML document can be accessed, it must be \nloaded into an XML DOM object.\n\nAll modern browsers have a built-in XML parser that can convert text into an XML DOM object.",
+                "heading": "XML Parser"
+            },
+            {
+                "content": "This example parses a text string into an XML DOM object, and \nextracts the info from it with JavaScript:\n\nExample\n\n<html>\n\n<body>\n\n<p id=\"demo\"></p>\n\n<script>\n\nvar text, parser, xmlDoc;\n\ntext = \"<bookstore><book>\" +\n\n\"<title>Everyday Italian</title>\" +\n\n\"<author>Giada De Laurentiis</author>\" +\n\n\"<year>2005</year>\" +\n\n\"</book></bookstore>\";\n\nparser = new DOMParser();\n\nxmlDoc = parser.parseFromString(text,\"text/xml\");\n\ndocument.getElementById(\"demo\").innerHTML =\n\nxmlDoc.getElementsByTagName(\"title\")[0].childNodes[0].nodeValue;\n\n</script>\n\n</body>\n</html>\n\n Try it Yourself »",
+                "heading": "Parsing a Text String"
+            },
+            {
+                "content": "A text string is defined:\n\ntext = \"<bookstore><book>\" +\n\n\"<title>Everyday Italian</title>\" +\n\n\"<author>Giada De Laurentiis</author>\" +\n\n\"<year>2005</year>\" +\n\n\"</book></bookstore>\";\n\nAn XML DOM parser is created:\n\nparser = new DOMParser();\n\nThe parser creates a new XML DOM object using the text string:\n\nxmlDoc = parser.parseFromString(text,\"text/xml\");",
+                "heading": "Example Explained"
+            },
+            {
+                "content": "The XMLHttpRequest Object has a built in XML Parser.\n\nThe responseText property returns the response as a string.\n\nThe responseXML property returns the response as an XML DOM object.\n\nIf you want to use the response as an XML DOM object, you can use the responseXML \nproperty.\n\nExample\nRequest the file cd_catalog.xml and \nuse the response as an XML DOM object:\n\nxmlDoc = xmlhttp.responseXML;\n\n txt = \"\";\n\nx = xmlDoc.getElementsByTagName(\"ARTIST\");\n\nfor (i = 0; i < x.length; i++) {\n\n    txt += x[i].childNodes[0].nodeValue + \"<br>\";\n\n }\n\ndocument.getElementById(\"demo\").innerHTML = txt;\n\nTry it Yourself »\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "The XMLHttpRequest Object"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:18:39Z",
+        "subject": "XML",
+        "title": "XML Parser"
+    },
+    {
+        "url": "https://www.w3schools.com/xml/xml_dom.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "xml_xml_dom",
+        "code_examples": [
+            {
+                "code": "<h1 id=\"demo\">This is a Heading</h1>\n\n <button type=\"button\"\nonclick=\"document.getElementById('demo').innerHTML = \n 'Hello World!'\">Click Me!\n</button>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=tryxml_change_html"
+            },
+            {
+                "code": "Example\n\ntxt = xmlDoc.getElementsByTagName(\"title\")[0].childNodes[0].nodeValue;",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<html>\n<body>\n\n<p id=\"demo\"></p>\n\n<script>\nvar text, parser, \n xmlDoc;\n\ntext = \"<bookstore><book>\" +\n\"<title>Everyday \n Italian</title>\" +\n\"<author>Giada De Laurentiis</author>\" +\n\n \"<year>2005</year>\" +\n\"</book></bookstore>\";\n\nparser = new DOMParser();\n\n xmlDoc = parser.parseFromString(text,\"text/xml\");\n\n document.getElementById(\"demo\").innerHTML =\nxmlDoc.getElementsByTagName(\"title\")[0].childNodes[0].nodeValue;\n\n </script>\n\n</body>\n</html>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": "https://www.w3schools.com/tryit.asp?filename=try_dom_loadxmltext"
+            }
+        ],
+        "category": "Web Tools & Security",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "XML HOME\nXML Introduction\nXML How to use\nXML Tree\nXML Syntax\nXML Elements\nXML Attributes\nXML Namespaces\nXML Display\nXML HttpRequest\nXML Parser\nXML DOM\nXML XPath\nXML XSLT\nXML XQuery\nXML XLink\nXML Validator\nXML DTD\nXML Schema\nXML Server",
+                "heading": "XML Tutorial"
+            },
+            {
+                "content": "AJAX Introduction\nAJAX XMLHttp\nAJAX Request\nAJAX Response\nAJAX XML File\nAJAX PHP\nAJAX ASP\nAJAX Database\nAJAX Applications\nAJAX Examples",
+                "heading": "XML AJAX"
+            },
+            {
+                "content": "DOM Introduction\nDOM Nodes\nDOM Accessing\nDOM Node Info\nDOM Node List\nDOM Traversing\nDOM Navigating\nDOM Get Values\nDOM Change Nodes\nDOM Remove Nodes\nDOM Replace Nodes\nDOM Create Nodes\nDOM Add Nodes\nDOM Clone Nodes\nDOM Examples",
+                "heading": "XML DOM"
+            },
+            {
+                "content": "XPath Introduction\nXPath Nodes\nXPath Syntax\nXPath Axes\nXPath Operators\nXPath Examples",
+                "heading": "XPath Tutorial"
+            },
+            {
+                "content": "XSLT Introduction\nXSL Languages\nXSLT Transform\nXSLT <template>\nXSLT <value-of>\nXSLT <for-each>\nXSLT <sort>\nXSLT <if>\nXSLT <choose>\nXSLT Apply\nXSLT on the Client\nXSLT on the Server\nXSLT Edit XML\nXSLT Examples",
+                "heading": "XSLT Tutorial"
+            },
+            {
+                "content": "XQuery Introduction\nXQuery Example\nXQuery FLWOR\nXQuery HTML\nXQuery Terms\nXQuery Syntax\nXQuery Add\nXQuery Select\nXQuery Functions",
+                "heading": "XQuery Tutorial"
+            },
+            {
+                "content": "DTD Introduction\nDTD Building Blocks\nDTD Elements\nDTD Attributes\nDTD Elements vs Attr\nDTD Entities\nDTD Examples",
+                "heading": "XML DTD"
+            },
+            {
+                "content": "XSD Introduction\nXSD How To\nXSD <schema>\nXSD Elements\nXSD Attributes\nXSD Restrictions\nXSD Complex Elements\nXSD Empty\nXSD Elements-only\nXSD Text-only\nXSD Mixed\nXSD Indicators\nXSD <any>\nXSD <anyAttribute>\nXSD Substitution\nXSD Example",
+                "heading": "XSD Schema"
+            },
+            {
+                "content": "XSD String\nXSD Date/Time\nXSD Numeric\nXSD Misc\nXSD Reference",
+                "heading": "XSD Data Types"
+            },
+            {
+                "content": "XML Services\nXML WSDL\nXML SOAP\nXML RDF\nXML RSS",
+                "heading": "Web Services"
+            },
+            {
+                "content": "XML Certificate",
+                "heading": "XML Cert"
+            },
+            {
+                "content": "XML Examples\nXML Quiz\nXML Syllabus\nXML Study Plan",
+                "heading": "XML Examples"
+            },
+            {
+                "content": "The Document Object Model (DOM) defines a standard for accessing and manipulating documents:\n\n\"The W3C Document Object Model (DOM) is a platform and language-neutral interface that allows programs and scripts to dynamically access and update the \ncontent, structure, and style of a document.\"\n\nThe HTML DOM defines a standard way for accessing and manipulating HTML documents. \nIt presents an HTML document as a tree-structure.\n\nThe XML DOM defines a standard way for accessing and manipulating XML documents. \nIt presents an XML document as a tree-structure.\n\n Understanding the DOM is a must for anyone working with HTML or XML.",
+                "heading": "What is the DOM?"
+            },
+            {
+                "content": "All HTML elements can be accessed through the HTML DOM.\n\nThis example changes the value of an HTML element with id=\"demo\":\n\nExample\n\n<h1 id=\"demo\">This is a Heading</h1>\n\n <button type=\"button\"\nonclick=\"document.getElementById('demo').innerHTML = \n 'Hello World!'\">Click Me!\n</button>\n\nTry it Yourself »\n\nYou can learn a lot more about the HTML DOM in our \nJavaScript tutorial.",
+                "heading": "The HTML DOM"
+            },
+            {
+                "content": "All XML elements can be accessed through the XML DOM.\n\nBooks.xml\n\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n\n<bookstore>\n\n  <book category=\"cooking\">\n\n    <title lang=\"en\">Everyday \nItalian</title>\n    <author>Giada De Laurentiis</author>\n\n<year>2005</year>\n    <price>30.00</price>\n  </book>\n\n  <book category=\"children\">\n    <title lang=\"en\">Harry \nPotter</title>\n    <author>J K. Rowling</author>\n\n<year>2005</year>\n    <price>29.99</price>\n  </book>\n\n</bookstore>\n\nThis code retrieves the text value of the first <title> element in an \nXML document:\n\nExample\n\ntxt = xmlDoc.getElementsByTagName(\"title\")[0].childNodes[0].nodeValue;\n\nThe XML DOM is a standard for how to get, change, add, and delete XML elements.\n\nThis example loads a text string into an XML DOM object, and \nextracts the info from it with JavaScript:\n\nExample\n\n <html>\n<body>\n\n<p id=\"demo\"></p>\n\n<script>\nvar text, parser, \n xmlDoc;\n\ntext = \"<bookstore><book>\" +\n\"<title>Everyday \n Italian</title>\" +\n\"<author>Giada De Laurentiis</author>\" +\n\n \"<year>2005</year>\" +\n\"</book></bookstore>\";\n\nparser = new DOMParser();\n\n xmlDoc = parser.parseFromString(text,\"text/xml\");\n\n document.getElementById(\"demo\").innerHTML =\nxmlDoc.getElementsByTagName(\"title\")[0].childNodes[0].nodeValue;\n\n </script>\n\n</body>\n</html>\n\n Try it Yourself »\n\nYou will learn a lot more about the XML DOM in our XML DOM Tutorial.\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "The XML DOM"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:18:39Z",
+        "subject": "XML",
+        "title": "XML DOM"
+    },
+    {
+        "url": "https://www.w3schools.com/xml/xml_xpath.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "xml_xml_xpath",
+        "code_examples": [
+            {
+                "code": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n\n<bookstore>\n\n<book category=\"cooking\">\n\n<title lang=\"en\">Everyday Italian</title>\n\n<author>Giada De Laurentiis</author>\n\n<year>2005</year>\n\n<price>30.00</price>\n\n</book>\n\n<book category=\"children\">\n\n<title lang=\"en\">Harry Potter</title>\n\n<author>J K. Rowling</author>\n\n<year>2005</year>\n\n<price>29.99</price>\n\n</book>\n\n<book category=\"web\">\n\n<title lang=\"en\">XQuery Kick Start</title>\n\n<author>James McGovern</author>\n\n<author>Per Bothner</author>\n\n<author>Kurt Cagle</author>\n\n<author>James Linn</author>\n\n<author>Vaidyanathan Nagarajan</author>\n\n<year>2003</year>\n\n<price>49.99</price>\n\n</book>\n\n<book category=\"web\">\n\n<title lang=\"en\">Learning XML</title>\n\n<author>Erik T. Ray</author>\n\n<year>2003</year>\n\n<price>39.95</price>\n\n</book>\n\n</bookstore>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Web Tools & Security",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "XML HOME\nXML Introduction\nXML How to use\nXML Tree\nXML Syntax\nXML Elements\nXML Attributes\nXML Namespaces\nXML Display\nXML HttpRequest\nXML Parser\nXML DOM\nXML XPath\nXML XSLT\nXML XQuery\nXML XLink\nXML Validator\nXML DTD\nXML Schema\nXML Server",
+                "heading": "XML Tutorial"
+            },
+            {
+                "content": "AJAX Introduction\nAJAX XMLHttp\nAJAX Request\nAJAX Response\nAJAX XML File\nAJAX PHP\nAJAX ASP\nAJAX Database\nAJAX Applications\nAJAX Examples",
+                "heading": "XML AJAX"
+            },
+            {
+                "content": "DOM Introduction\nDOM Nodes\nDOM Accessing\nDOM Node Info\nDOM Node List\nDOM Traversing\nDOM Navigating\nDOM Get Values\nDOM Change Nodes\nDOM Remove Nodes\nDOM Replace Nodes\nDOM Create Nodes\nDOM Add Nodes\nDOM Clone Nodes\nDOM Examples",
+                "heading": "XML DOM"
+            },
+            {
+                "content": "XPath Introduction\nXPath Nodes\nXPath Syntax\nXPath Axes\nXPath Operators\nXPath Examples",
+                "heading": "XPath Tutorial"
+            },
+            {
+                "content": "XSLT Introduction\nXSL Languages\nXSLT Transform\nXSLT <template>\nXSLT <value-of>\nXSLT <for-each>\nXSLT <sort>\nXSLT <if>\nXSLT <choose>\nXSLT Apply\nXSLT on the Client\nXSLT on the Server\nXSLT Edit XML\nXSLT Examples",
+                "heading": "XSLT Tutorial"
+            },
+            {
+                "content": "XQuery Introduction\nXQuery Example\nXQuery FLWOR\nXQuery HTML\nXQuery Terms\nXQuery Syntax\nXQuery Add\nXQuery Select\nXQuery Functions",
+                "heading": "XQuery Tutorial"
+            },
+            {
+                "content": "DTD Introduction\nDTD Building Blocks\nDTD Elements\nDTD Attributes\nDTD Elements vs Attr\nDTD Entities\nDTD Examples",
+                "heading": "XML DTD"
+            },
+            {
+                "content": "XSD Introduction\nXSD How To\nXSD <schema>\nXSD Elements\nXSD Attributes\nXSD Restrictions\nXSD Complex Elements\nXSD Empty\nXSD Elements-only\nXSD Text-only\nXSD Mixed\nXSD Indicators\nXSD <any>\nXSD <anyAttribute>\nXSD Substitution\nXSD Example",
+                "heading": "XSD Schema"
+            },
+            {
+                "content": "XSD String\nXSD Date/Time\nXSD Numeric\nXSD Misc\nXSD Reference",
+                "heading": "XSD Data Types"
+            },
+            {
+                "content": "XML Services\nXML WSDL\nXML SOAP\nXML RDF\nXML RSS",
+                "heading": "Web Services"
+            },
+            {
+                "content": "XML Certificate",
+                "heading": "XML Cert"
+            },
+            {
+                "content": "XML Examples\nXML Quiz\nXML Syllabus\nXML Study Plan",
+                "heading": "XML Examples"
+            },
+            {
+                "content": "XPath is a major element in the XSLT standard.\n\nXPath can be used to navigate through elements and attributes in an XML document.\n\n XPath is a syntax for defining parts of an XML document\n\n XPath uses path expressions to navigate in XML documents\n\n XPath contains a library of standard functions\n\n XPath is a major element in XSLT and in XQuery\n\n XPath is a W3C recommendation",
+                "heading": "What is XPath?"
+            },
+            {
+                "content": "XPath uses path expressions to select nodes or node-sets in an XML document. These path \nexpressions look very much like the expressions you see when you work with a traditional computer file system.\n\nXPath expressions can be used in JavaScript, Java, XML Schema, PHP, Python, \nC and C++, and lots of other languages.",
+                "heading": "XPath Path Expressions"
+            },
+            {
+                "content": "XPath is a major element in the XSLT standard.\n\nWith XPath knowledge you will be able to take great advantage of XSL.",
+                "heading": "XPath is Used in XSLT"
+            },
+            {
+                "content": "We will use the following XML document:\n\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n\n<bookstore>\n\n<book category=\"cooking\">\n\n<title lang=\"en\">Everyday Italian</title>\n\n<author>Giada De Laurentiis</author>\n\n<year>2005</year>\n\n<price>30.00</price>\n\n</book>\n\n<book category=\"children\">\n\n<title lang=\"en\">Harry Potter</title>\n\n<author>J K. Rowling</author>\n\n<year>2005</year>\n\n<price>29.99</price>\n\n</book>\n\n<book category=\"web\">\n\n<title lang=\"en\">XQuery Kick Start</title>\n\n<author>James McGovern</author>\n\n<author>Per Bothner</author>\n\n<author>Kurt Cagle</author>\n\n<author>James Linn</author>\n\n<author>Vaidyanathan Nagarajan</author>\n\n<year>2003</year>\n\n<price>49.99</price>\n\n</book>\n\n<book category=\"web\">\n\n<title lang=\"en\">Learning XML</title>\n\n<author>Erik T. Ray</author>\n\n<year>2003</year>\n\n<price>39.95</price>\n\n</book>\n\n</bookstore>\n\nIn the table below we have listed some XPath expressions and the result of the expressions:\n\n XPath Expression\n Result\n\n /bookstore/book[1] \n Selects the first book element that is the child of the bookstore element\n\n /bookstore/book[last()]\n Selects the last book element that is the child of the bookstore element\n\n /bookstore/book[last()-1]\n Selects the last but one book element that is the child of the bookstore element\n\n /bookstore/book[position()<3]\n Selects the first two book elements that are children of the bookstore element\n\n //title[@lang]\n Selects all the title elements that have an attribute named lang\n\n //title[@lang='en']\n Selects all the title elements that have a \"lang\" attribute with a value of \"en\"\n\n /bookstore/book[price>35.00]\n Selects all the book elements of the bookstore element that have a price element with a value greater than 35.00\n\n /bookstore/book[price>35.00]/title\n Selects all the title elements of the book elements of the bookstore element that have a price element with a value greater than 35.00",
+                "heading": "XPath Example"
+            },
+            {
+                "content": "You will learn a lot more about XPath in our XPath Tutorial.\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "XPath Tutorial"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:18:40Z",
+        "subject": "XML",
+        "title": "XML and XPath"
+    },
+    {
+        "url": "https://www.w3schools.com/xml/xml_xslt.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "xml_xml_xslt",
+        "code_examples": [
+            {
+                "code": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<breakfast_menu>\n\n<food>\n\n<name>Belgian Waffles</name>\n<price>$5.95</price>\n<description>Two of \nour famous Belgian Waffles with plenty of real maple syrup</description>\n\n<calories>650</calories>\n</food>\n\n<food>\n<name>Strawberry \nBelgian Waffles</name>\n<price>$7.95</price>\n<description>Light Belgian \nwaffles covered with strawberries and whipped cream</description>\n\n<calories>900</calories>\n</food>\n\n<food>\n<name>Berry-Berry \nBelgian Waffles</name>\n<price>$8.95</price>\n<description>Light Belgian \nwaffles covered with an assortment of fresh berries and whipped \ncream</description>\n<calories>900</calories>\n</food>\n\n<food>\n\n<name>French Toast</name>\n<price>$4.50</price>\n<description>Thick \nslices made from our homemade sourdough bread</description>\n\n<calories>600</calories>\n</food>\n\n<food>\n<name>Homestyle \nBreakfast</name>\n<price>$6.95</price>\n<description>Two eggs, bacon or \nsausage, toast, and our ever-popular hash browns</description>\n\n<calories>950</calories>\n</food>\n\n</breakfast_menu>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<html xsl:version=\"1.0\" \nxmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\">\n<body \nstyle=\"font-family:Arial;font-size:12pt;background-color:#EEEEEE\">\n<xsl:for-each \nselect=\"breakfast_menu/food\">\n  <div \nstyle=\"background-color:teal;color:white;padding:4px\">\n\n<span style=\"font-weight:bold\"><xsl:value-of select=\"name\"/> - </span>\n\n<xsl:value-of select=\"price\"/>\n    </div>\n  <div \nstyle=\"margin-left:20px;margin-bottom:1em;font-size:10pt\">\n\n<p>\n    <xsl:value-of select=\"description\"/>\n\n<span style=\"font-style:italic\"> (<xsl:value-of select=\"calories\"/> calories \nper serving)</span>\n    </p>\n  </div>\n</xsl:for-each>\n\n</body>\n</html>",
+                "language": "xml",
+                "heading": "Example XSLT Stylesheet:",
+                "tryit_url": null
+            }
+        ],
+        "category": "Web Tools & Security",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "XML HOME\nXML Introduction\nXML How to use\nXML Tree\nXML Syntax\nXML Elements\nXML Attributes\nXML Namespaces\nXML Display\nXML HttpRequest\nXML Parser\nXML DOM\nXML XPath\nXML XSLT\nXML XQuery\nXML XLink\nXML Validator\nXML DTD\nXML Schema\nXML Server",
+                "heading": "XML Tutorial"
+            },
+            {
+                "content": "AJAX Introduction\nAJAX XMLHttp\nAJAX Request\nAJAX Response\nAJAX XML File\nAJAX PHP\nAJAX ASP\nAJAX Database\nAJAX Applications\nAJAX Examples",
+                "heading": "XML AJAX"
+            },
+            {
+                "content": "DOM Introduction\nDOM Nodes\nDOM Accessing\nDOM Node Info\nDOM Node List\nDOM Traversing\nDOM Navigating\nDOM Get Values\nDOM Change Nodes\nDOM Remove Nodes\nDOM Replace Nodes\nDOM Create Nodes\nDOM Add Nodes\nDOM Clone Nodes\nDOM Examples",
+                "heading": "XML DOM"
+            },
+            {
+                "content": "XPath Introduction\nXPath Nodes\nXPath Syntax\nXPath Axes\nXPath Operators\nXPath Examples",
+                "heading": "XPath Tutorial"
+            },
+            {
+                "content": "XSLT Introduction\nXSL Languages\nXSLT Transform\nXSLT <template>\nXSLT <value-of>\nXSLT <for-each>\nXSLT <sort>\nXSLT <if>\nXSLT <choose>\nXSLT Apply\nXSLT on the Client\nXSLT on the Server\nXSLT Edit XML\nXSLT Examples",
+                "heading": "XSLT Tutorial"
+            },
+            {
+                "content": "XQuery Introduction\nXQuery Example\nXQuery FLWOR\nXQuery HTML\nXQuery Terms\nXQuery Syntax\nXQuery Add\nXQuery Select\nXQuery Functions",
+                "heading": "XQuery Tutorial"
+            },
+            {
+                "content": "DTD Introduction\nDTD Building Blocks\nDTD Elements\nDTD Attributes\nDTD Elements vs Attr\nDTD Entities\nDTD Examples",
+                "heading": "XML DTD"
+            },
+            {
+                "content": "XSD Introduction\nXSD How To\nXSD <schema>\nXSD Elements\nXSD Attributes\nXSD Restrictions\nXSD Complex Elements\nXSD Empty\nXSD Elements-only\nXSD Text-only\nXSD Mixed\nXSD Indicators\nXSD <any>\nXSD <anyAttribute>\nXSD Substitution\nXSD Example",
+                "heading": "XSD Schema"
+            },
+            {
+                "content": "XSD String\nXSD Date/Time\nXSD Numeric\nXSD Misc\nXSD Reference",
+                "heading": "XSD Data Types"
+            },
+            {
+                "content": "XML Services\nXML WSDL\nXML SOAP\nXML RDF\nXML RSS",
+                "heading": "Web Services"
+            },
+            {
+                "content": "XML Certificate",
+                "heading": "XML Cert"
+            },
+            {
+                "content": "XML Examples\nXML Quiz\nXML Syllabus\nXML Study Plan",
+                "heading": "XML Examples"
+            },
+            {
+                "content": "XSLT (eXtensible Stylesheet Language Transformations) is the recommended style sheet language \nfor XML.\n\nXSLT is far more sophisticated than CSS. With XSLT you can add/remove \nelements and attributes to or from the output file. You can also rearrange and \nsort elements, perform tests and make decisions about which elements to hide and \ndisplay, and a lot more.\n\nXSLT uses XPath to find information in an XML document.",
+                "heading": "Displaying XML with XSLT"
+            },
+            {
+                "content": "We will use the following XML document:\n\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<breakfast_menu>\n\n<food>\n\n<name>Belgian Waffles</name>\n<price>$5.95</price>\n<description>Two of \nour famous Belgian Waffles with plenty of real maple syrup</description>\n\n<calories>650</calories>\n</food>\n\n<food>\n<name>Strawberry \nBelgian Waffles</name>\n<price>$7.95</price>\n<description>Light Belgian \nwaffles covered with strawberries and whipped cream</description>\n\n<calories>900</calories>\n</food>\n\n<food>\n<name>Berry-Berry \nBelgian Waffles</name>\n<price>$8.95</price>\n<description>Light Belgian \nwaffles covered with an assortment of fresh berries and whipped \ncream</description>\n<calories>900</calories>\n</food>\n\n<food>\n\n<name>French Toast</name>\n<price>$4.50</price>\n<description>Thick \nslices made from our homemade sourdough bread</description>\n\n<calories>600</calories>\n</food>\n\n<food>\n<name>Homestyle \nBreakfast</name>\n<price>$6.95</price>\n<description>Two eggs, bacon or \nsausage, toast, and our ever-popular hash browns</description>\n\n<calories>950</calories>\n</food>\n\n</breakfast_menu>",
+                "heading": "XSLT Example"
+            },
+            {
+                "content": "If you want to learn more about XSLT, go to our XSLT Tutorial.\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "XSLT Tutorial"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:18:40Z",
+        "subject": "XML",
+        "title": "XML and XSLT"
+    },
+    {
+        "url": "https://www.w3schools.com/xml/xml_xquery.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "xml_xml_xquery",
+        "code_examples": [
+            {
+                "code": "for $x in doc(\"books.xml\")/bookstore/book\n\nwhere $x/price>30\n\norder by $x/title\n\nreturn $x/title",
+                "language": "xml",
+                "heading": "XQuery Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Web Tools & Security",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "XML HOME\nXML Introduction\nXML How to use\nXML Tree\nXML Syntax\nXML Elements\nXML Attributes\nXML Namespaces\nXML Display\nXML HttpRequest\nXML Parser\nXML DOM\nXML XPath\nXML XSLT\nXML XQuery\nXML XLink\nXML Validator\nXML DTD\nXML Schema\nXML Server",
+                "heading": "XML Tutorial"
+            },
+            {
+                "content": "AJAX Introduction\nAJAX XMLHttp\nAJAX Request\nAJAX Response\nAJAX XML File\nAJAX PHP\nAJAX ASP\nAJAX Database\nAJAX Applications\nAJAX Examples",
+                "heading": "XML AJAX"
+            },
+            {
+                "content": "DOM Introduction\nDOM Nodes\nDOM Accessing\nDOM Node Info\nDOM Node List\nDOM Traversing\nDOM Navigating\nDOM Get Values\nDOM Change Nodes\nDOM Remove Nodes\nDOM Replace Nodes\nDOM Create Nodes\nDOM Add Nodes\nDOM Clone Nodes\nDOM Examples",
+                "heading": "XML DOM"
+            },
+            {
+                "content": "XPath Introduction\nXPath Nodes\nXPath Syntax\nXPath Axes\nXPath Operators\nXPath Examples",
+                "heading": "XPath Tutorial"
+            },
+            {
+                "content": "XSLT Introduction\nXSL Languages\nXSLT Transform\nXSLT <template>\nXSLT <value-of>\nXSLT <for-each>\nXSLT <sort>\nXSLT <if>\nXSLT <choose>\nXSLT Apply\nXSLT on the Client\nXSLT on the Server\nXSLT Edit XML\nXSLT Examples",
+                "heading": "XSLT Tutorial"
+            },
+            {
+                "content": "XQuery Introduction\nXQuery Example\nXQuery FLWOR\nXQuery HTML\nXQuery Terms\nXQuery Syntax\nXQuery Add\nXQuery Select\nXQuery Functions",
+                "heading": "XQuery Tutorial"
+            },
+            {
+                "content": "DTD Introduction\nDTD Building Blocks\nDTD Elements\nDTD Attributes\nDTD Elements vs Attr\nDTD Entities\nDTD Examples",
+                "heading": "XML DTD"
+            },
+            {
+                "content": "XSD Introduction\nXSD How To\nXSD <schema>\nXSD Elements\nXSD Attributes\nXSD Restrictions\nXSD Complex Elements\nXSD Empty\nXSD Elements-only\nXSD Text-only\nXSD Mixed\nXSD Indicators\nXSD <any>\nXSD <anyAttribute>\nXSD Substitution\nXSD Example",
+                "heading": "XSD Schema"
+            },
+            {
+                "content": "XSD String\nXSD Date/Time\nXSD Numeric\nXSD Misc\nXSD Reference",
+                "heading": "XSD Data Types"
+            },
+            {
+                "content": "XML Services\nXML WSDL\nXML SOAP\nXML RDF\nXML RSS",
+                "heading": "Web Services"
+            },
+            {
+                "content": "XML Certificate",
+                "heading": "XML Cert"
+            },
+            {
+                "content": "XML Examples\nXML Quiz\nXML Syllabus\nXML Study Plan",
+                "heading": "XML Examples"
+            },
+            {
+                "content": "XQuery is to XML what SQL is to databases.\n\nXQuery was designed to query XML data.\n\nXQuery Example\n\nfor $x in doc(\"books.xml\")/bookstore/book\n\nwhere $x/price>30\n\norder by $x/title\n\nreturn $x/title",
+                "heading": "What is XQuery?"
+            },
+            {
+                "content": "XQuery is the language for querying XML data\n\n XQuery for XML is like SQL for databases\n\n XQuery is built on XPath expressions\n\n XQuery is supported by all major databases\n\n XQuery is a W3C Recommendation",
+                "heading": "What is XQuery?"
+            },
+            {
+                "content": "XQuery is a language for finding and extracting elements and attributes from XML \ndocuments.\n\nHere is an example of what XQuery could solve:\n\n\"Select all CD records with a price less than $10 from the CD collection \nstored in cd_catalog.xml\"",
+                "heading": "XQuery is About Querying XML"
+            },
+            {
+                "content": "XQuery 1.0 and XPath 2.0 share the same data model and support the same functions \nand operators. If you have already studied XPath you will have no problems with \nunderstanding XQuery.",
+                "heading": "XQuery and XPath"
+            },
+            {
+                "content": "XQuery can be used to:\n\n Extract information to use in a Web Service\n\n Generate summary reports\n\n Transform XML data to XHTML\n\n Search Web documents for relevant information",
+                "heading": "XQuery - Examples of Use"
+            },
+            {
+                "content": "XQuery is compatible with several W3C standards, such as XML, Namespaces, \nXSLT, XPath, and XML Schema.\n\nXQuery 1.0 became a W3C Recommendation in 2007.",
+                "heading": "XQuery is a W3C Recommendation"
+            },
+            {
+                "content": "You will learn a lot more about XQuery in our XQuery Tutorial.\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "XQuery Tutorial"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:18:40Z",
+        "subject": "XML",
+        "title": "XML and XQuery"
+    },
+    {
+        "url": "https://www.w3schools.com/xml/xml_xlink.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "xml_xml_xlink",
+        "code_examples": [
+            {
+                "code": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n\n<homepages xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n\n <homepage xlink:type=\"simple\"\n xlink:href=\"https://www.w3schools.com\">Visit W3Schools</homepage>\n\n <homepage xlink:type=\"simple\"\n xlink:href=\"http://www.w3.org\">Visit W3C</homepage>\n</homepages>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n\n<bookstore xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n\n<book title=\"Harry Potter\">\n\n <description\n\n xlink:type=\"simple\"\n\n xlink:href=\"/images/HPotter.gif\"\n\n xlink:show=\"new\">\n\n As his fifth year at Hogwarts School of Witchcraft and\n\n Wizardry approaches, 15-year-old Harry Potter is.......\n\n </description>\n\n</book>\n\n<book title=\"XQuery Kick Start\">\n\n <description\n\n xlink:type=\"simple\"\n\n xlink:href=\"/images/XQuery.gif\"\n\n xlink:show=\"new\">\n\n XQuery Kick Start delivers a concise introduction\n\n to the XQuery standard.......\n\n </description>\n\n</book>\n\n</bookstore>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n\n<dogbreeds>\n\n<dog breed=\"Rottweiler\" id=\"Rottweiler\">\n\n <picture url=\"https://dog.com/rottweiler.gif\" />\n\n <history>The Rottweiler's ancestors were probably Roman\n\n drover dogs.....</history>\n\n <temperament>Confident, bold, alert and imposing, the Rottweiler\n\n is a popular choice for its ability to protect....</temperament>\n\n</dog>\n\n<dog breed=\"FCRetriever\" id=\"FCRetriever\">\n\n <picture url=\"https://dog.com/fcretriever.gif\" />\n\n <history>One of the earliest uses of retrieving dogs was to\n\n help fishermen retrieve fish from the water....</history>\n\n <temperament>The flat-coated retriever is a sweet, exuberant,\n\n lively dog that loves to play and retrieve....</temperament>\n\n</dog>\n\n</dogbreeds>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n\n<mydogs xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n\n<mydog>\n\n <description>\n\n Anton is my favorite dog. He has won a lot of.....\n\n </description>\n\n<fact xlink:type=\"simple\" xlink:href=\"https://dog.com/dogbreeds.xml#Rottweiler\">\n  Fact about Rottweiler \n  </fact>\n\n</mydog>\n\n<mydog>\n\n <description>\n\n Pluto is the sweetest dog on earth......\n\n </description>\n\n<fact xlink:type=\"simple\" xlink:href=\"https://dog.com/dogbreeds.xml#FCRetriever\">\n  Fact about flat-coated Retriever \n  </fact>\n\n</mydog>\n\n</mydogs>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Web Tools & Security",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "XML HOME\nXML Introduction\nXML How to use\nXML Tree\nXML Syntax\nXML Elements\nXML Attributes\nXML Namespaces\nXML Display\nXML HttpRequest\nXML Parser\nXML DOM\nXML XPath\nXML XSLT\nXML XQuery\nXML XLink\nXML Validator\nXML DTD\nXML Schema\nXML Server",
+                "heading": "XML Tutorial"
+            },
+            {
+                "content": "AJAX Introduction\nAJAX XMLHttp\nAJAX Request\nAJAX Response\nAJAX XML File\nAJAX PHP\nAJAX ASP\nAJAX Database\nAJAX Applications\nAJAX Examples",
+                "heading": "XML AJAX"
+            },
+            {
+                "content": "DOM Introduction\nDOM Nodes\nDOM Accessing\nDOM Node Info\nDOM Node List\nDOM Traversing\nDOM Navigating\nDOM Get Values\nDOM Change Nodes\nDOM Remove Nodes\nDOM Replace Nodes\nDOM Create Nodes\nDOM Add Nodes\nDOM Clone Nodes\nDOM Examples",
+                "heading": "XML DOM"
+            },
+            {
+                "content": "XPath Introduction\nXPath Nodes\nXPath Syntax\nXPath Axes\nXPath Operators\nXPath Examples",
+                "heading": "XPath Tutorial"
+            },
+            {
+                "content": "XSLT Introduction\nXSL Languages\nXSLT Transform\nXSLT <template>\nXSLT <value-of>\nXSLT <for-each>\nXSLT <sort>\nXSLT <if>\nXSLT <choose>\nXSLT Apply\nXSLT on the Client\nXSLT on the Server\nXSLT Edit XML\nXSLT Examples",
+                "heading": "XSLT Tutorial"
+            },
+            {
+                "content": "XQuery Introduction\nXQuery Example\nXQuery FLWOR\nXQuery HTML\nXQuery Terms\nXQuery Syntax\nXQuery Add\nXQuery Select\nXQuery Functions",
+                "heading": "XQuery Tutorial"
+            },
+            {
+                "content": "DTD Introduction\nDTD Building Blocks\nDTD Elements\nDTD Attributes\nDTD Elements vs Attr\nDTD Entities\nDTD Examples",
+                "heading": "XML DTD"
+            },
+            {
+                "content": "XSD Introduction\nXSD How To\nXSD <schema>\nXSD Elements\nXSD Attributes\nXSD Restrictions\nXSD Complex Elements\nXSD Empty\nXSD Elements-only\nXSD Text-only\nXSD Mixed\nXSD Indicators\nXSD <any>\nXSD <anyAttribute>\nXSD Substitution\nXSD Example",
+                "heading": "XSD Schema"
+            },
+            {
+                "content": "XSD String\nXSD Date/Time\nXSD Numeric\nXSD Misc\nXSD Reference",
+                "heading": "XSD Data Types"
+            },
+            {
+                "content": "XML Services\nXML WSDL\nXML SOAP\nXML RDF\nXML RSS",
+                "heading": "Web Services"
+            },
+            {
+                "content": "XML Certificate",
+                "heading": "XML Cert"
+            },
+            {
+                "content": "XML Examples\nXML Quiz\nXML Syllabus\nXML Study Plan",
+                "heading": "XML Examples"
+            },
+            {
+                "content": "There is no browser support for XLink in XML documents.\n\nHowever, all major \nbrowsers support XLinks in SVG.",
+                "heading": "XLink Browser Support"
+            },
+            {
+                "content": "In HTML, the <a> element \ndefines a hyperlink. However, this is not how it works in XML. In XML documents, you can use \nwhatever element names you want - therefore it is impossible for browsers to predict \nwhat link elements will be called in XML documents.\n\nBelow is a simple example of how to use XLink to create links in an XML document:\n\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n\n<homepages xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n\n <homepage xlink:type=\"simple\"\n xlink:href=\"https://www.w3schools.com\">Visit W3Schools</homepage>\n\n <homepage xlink:type=\"simple\"\n xlink:href=\"http://www.w3.org\">Visit W3C</homepage>\n</homepages>\n\nTo get access to the XLink features we must declare the XLink namespace. The XLink namespace is: \"http://www.w3.org/1999/xlink\".\n\nThe xlink:type and the xlink:href attributes in the <homepage> elements come from the \nXLink namespace.\n\nThe xlink:type=\"simple\" creates a simple \"HTML-like\" link (means \"click here \nto go there\").\n\nThe xlink:href attribute specifies the URL to link to.",
+                "heading": "XLink Syntax"
+            },
+            {
+                "content": "The following XML document contains XLink features:\n\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n\n<bookstore xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n\n<book title=\"Harry Potter\">\n\n <description\n\n xlink:type=\"simple\"\n\n xlink:href=\"/images/HPotter.gif\"\n\n xlink:show=\"new\">\n\n As his fifth year at Hogwarts School of Witchcraft and\n\n Wizardry approaches, 15-year-old Harry Potter is.......\n\n </description>\n\n</book>\n\n<book title=\"XQuery Kick Start\">\n\n <description\n\n xlink:type=\"simple\"\n\n xlink:href=\"/images/XQuery.gif\"\n\n xlink:show=\"new\">\n\n XQuery Kick Start delivers a concise introduction\n\n to the XQuery standard.......\n\n </description>\n\n</book>\n\n</bookstore>\n\nExample explained:\n\n The XLink namespace is declared at the top of the \ndocument (xmlns:xlink=\"http://www.w3.org/1999/xlink\")\n\n The xlink:type=\"simple\" creates a simple \"HTML-like\" link\n\n The xlink:href attribute specifies the URL to link to (in this case - an image)\n\n The xlink:show=\"new\" specifies that the link should open in a new window",
+                "heading": "XLink Example"
+            },
+            {
+                "content": "In the example above we have demonstrated simple XLinks. XLink is getting \nmore \ninteresting when accessing remote locations as resources, instead of \nstandalone pages.\n\nIf we set the value of the xlink:show \nattribute to \"embed\", the linked resource should be processed inline \nwithin the page. When you consider that this could be \nanother XML document you could, for example, build a hierarchy of XML documents.\n\nYou can also specify WHEN the resource should appear, with \nthe xlink:actuate attribute.",
+                "heading": "XLink - Going Further"
+            },
+            {
+                "content": "Attribute\n Value\n Description\n\n xlink:actuate\n onLoad\n\n onRequest\n\n other\n\n none\n Defines when the linked resource is read and shown:\n\n onLoad - the resource should be loaded and shown when the document loads\n\n onRequest - the resource is not read or shown before the link is clicked\n\n xlink:href\n URL\n Specifies the URL to link to\n\n xlink:show\n embed\n\n new\n\n replace\n\n other\n\n none\n Specifies where to open the link. Default is \"replace\"\n\n xlink:type\n simple\n\n extended\n\n locator\n\n arc\n\n resource\n\n title\n\n none\n Specifies the type of link",
+                "heading": "XLink Attribute Reference"
+            },
+            {
+                "content": "XPointer allows links to point to specific parts of an XML document\n\n XPointer uses XPath expressions to navigate in the XML document\n\n XPointer is a W3C Recommendation",
+                "heading": "XPointer"
+            },
+            {
+                "content": "There is no browser support for XPointer. But XPointer is used in other \nXML languages.",
+                "heading": "XPointer Browser Support"
+            },
+            {
+                "content": "In this example, we will use XPointer in conjunction with XLink to point to a specific part of another document.\n\nWe will start by looking at the target XML document (the document we are \nlinking to):\n\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n\n<dogbreeds>\n\n<dog breed=\"Rottweiler\" id=\"Rottweiler\">\n\n <picture url=\"https://dog.com/rottweiler.gif\" />\n\n <history>The Rottweiler's ancestors were probably Roman\n\n drover dogs.....</history>\n\n <temperament>Confident, bold, alert and imposing, the Rottweiler\n\n is a popular choice for its ability to protect....</temperament>\n\n</dog>\n\n<dog breed=\"FCRetriever\" id=\"FCRetriever\">\n\n <picture url=\"https://dog.com/fcretriever.gif\" />\n\n <history>One of the earliest uses of retrieving dogs was to\n\n help fishermen retrieve fish from the water....</history>\n\n <temperament>The flat-coated retriever is a sweet, exuberant,\n\n lively dog that loves to play and retrieve....</temperament>\n\n</dog>\n\n</dogbreeds>\n\nNote that the XML document above uses id attributes on each element!\n\nSo, instead of linking to the entire document (as with XLink), XPointer allows you to link to specific parts of the document. To link to a specific part of a \npage, add a number sign (#) and an XPointer expression after the URL in the xlink:href \nattribute, like this: xlink:href=\"https://dog.com/dogbreeds.xml#xpointer(id('Rottweiler'))\". The expression refers to the element in the target document, with the id value of \"Rottweiler\".\n\nXPointer also allows a shorthand method for linking to an element with an id. You can use the \nvalue of the id directly, like this: xlink:href=\"https://dog.com/dogbreeds.xml#Rottweiler\".\n\nThe following XML document contains links to more information of the dog breed for each of \nmy dogs:\n\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n\n<mydogs xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n\n<mydog>\n\n <description>\n\n Anton is my favorite dog. He has won a lot of.....\n\n </description>\n\n<fact xlink:type=\"simple\" xlink:href=\"https://dog.com/dogbreeds.xml#Rottweiler\">\n  Fact about Rottweiler \n  </fact>\n\n</mydog>\n\n<mydog>\n\n <description>\n\n Pluto is the sweetest dog on earth......\n\n </description>\n\n<fact xlink:type=\"simple\" xlink:href=\"https://dog.com/dogbreeds.xml#FCRetriever\">\n  Fact about flat-coated Retriever \n  </fact>\n\n</mydog>\n\n</mydogs>\n\n ❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "XPointer Example"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:18:40Z",
+        "subject": "XML",
+        "title": "XML, XLink and XPointer"
+    },
+    {
+        "url": "https://www.w3schools.com/xml/xml_validator.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "xml_xml_validator",
+        "code_examples": [
+            {
+                "code": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n\n<note>\n\n<to>Tove</to>\n\n<from>Jani</from>\n\n<heading>Reminder</heading>\n\n<body>Don't forget me this weekend!</body>\n\n</note>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Web Tools & Security",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "XML HOME\nXML Introduction\nXML How to use\nXML Tree\nXML Syntax\nXML Elements\nXML Attributes\nXML Namespaces\nXML Display\nXML HttpRequest\nXML Parser\nXML DOM\nXML XPath\nXML XSLT\nXML XQuery\nXML XLink\nXML Validator\nXML DTD\nXML Schema\nXML Server",
+                "heading": "XML Tutorial"
+            },
+            {
+                "content": "AJAX Introduction\nAJAX XMLHttp\nAJAX Request\nAJAX Response\nAJAX XML File\nAJAX PHP\nAJAX ASP\nAJAX Database\nAJAX Applications\nAJAX Examples",
+                "heading": "XML AJAX"
+            },
+            {
+                "content": "DOM Introduction\nDOM Nodes\nDOM Accessing\nDOM Node Info\nDOM Node List\nDOM Traversing\nDOM Navigating\nDOM Get Values\nDOM Change Nodes\nDOM Remove Nodes\nDOM Replace Nodes\nDOM Create Nodes\nDOM Add Nodes\nDOM Clone Nodes\nDOM Examples",
+                "heading": "XML DOM"
+            },
+            {
+                "content": "XPath Introduction\nXPath Nodes\nXPath Syntax\nXPath Axes\nXPath Operators\nXPath Examples",
+                "heading": "XPath Tutorial"
+            },
+            {
+                "content": "XSLT Introduction\nXSL Languages\nXSLT Transform\nXSLT <template>\nXSLT <value-of>\nXSLT <for-each>\nXSLT <sort>\nXSLT <if>\nXSLT <choose>\nXSLT Apply\nXSLT on the Client\nXSLT on the Server\nXSLT Edit XML\nXSLT Examples",
+                "heading": "XSLT Tutorial"
+            },
+            {
+                "content": "XQuery Introduction\nXQuery Example\nXQuery FLWOR\nXQuery HTML\nXQuery Terms\nXQuery Syntax\nXQuery Add\nXQuery Select\nXQuery Functions",
+                "heading": "XQuery Tutorial"
+            },
+            {
+                "content": "DTD Introduction\nDTD Building Blocks\nDTD Elements\nDTD Attributes\nDTD Elements vs Attr\nDTD Entities\nDTD Examples",
+                "heading": "XML DTD"
+            },
+            {
+                "content": "XSD Introduction\nXSD How To\nXSD <schema>\nXSD Elements\nXSD Attributes\nXSD Restrictions\nXSD Complex Elements\nXSD Empty\nXSD Elements-only\nXSD Text-only\nXSD Mixed\nXSD Indicators\nXSD <any>\nXSD <anyAttribute>\nXSD Substitution\nXSD Example",
+                "heading": "XSD Schema"
+            },
+            {
+                "content": "XSD String\nXSD Date/Time\nXSD Numeric\nXSD Misc\nXSD Reference",
+                "heading": "XSD Data Types"
+            },
+            {
+                "content": "XML Services\nXML WSDL\nXML SOAP\nXML RDF\nXML RSS",
+                "heading": "Web Services"
+            },
+            {
+                "content": "XML Certificate",
+                "heading": "XML Cert"
+            },
+            {
+                "content": "XML Examples\nXML Quiz\nXML Syllabus\nXML Study Plan",
+                "heading": "XML Examples"
+            },
+            {
+                "content": "An XML document with correct syntax is called \"Well Formed\".\n\nThe syntax rules were described in the previous chapters:\n\n XML documents must have a root element\n\n XML elements must have a closing tag\n\n XML tags are case sensitive\n\n XML elements must be properly nested\n\n XML attribute values must be quoted\n\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n\n<note>\n\n<to>Tove</to>\n\n<from>Jani</from>\n\n<heading>Reminder</heading>\n\n<body>Don't forget me this weekend!</body>\n\n</note>",
+                "heading": "Well Formed XML Documents"
+            },
+            {
+                "content": "Errors in XML documents will stop your XML applications.\n\nThe W3C XML specification states that a program should stop processing an XML document if it finds an error.\nThe reason is that XML software should be small, fast, and compatible.\n\nHTML browsers are allowed to display HTML documents with errors (like missing end tags). \n\nWith XML, errors are not allowed.",
+                "heading": "XML Errors Will Stop You"
+            },
+            {
+                "content": "To help you syntax-check your XML, we have created an XML validator.\n\nTry to syntax-check correct XML : \n\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<note>\n<to>Tove</to>\n<from>Jani</from> \n<heading>Reminder</heading>\n<body>Don't forget me this weekend!</body>\n</note>\n\nTry to syntax-check incorrect XML : \n\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<note>\n<to>Tove</to>\n<from>Jani</from> \n<heading>Reminder</pheading>\n<body>Don't forget me this weekend!</body>\n</note>\n\nTry to syntax-check your own XML : \n\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>",
+                "heading": "Syntax-Check Your XML"
+            },
+            {
+                "content": "A \"well formed\" XML document is not the same as a \"valid\" XML document.\n\nA \"valid\" XML document must be well formed. In addition, it must conform to a \ndocument type definition.\n\nThere are two different document type definitions that can be used with XML:\n\n DTD - The original Document Type Definition\n\n XML Schema - An XML-based alternative to DTD\n\nA document type definition defines the rules and the legal elements and attributes \nfor an XML document.\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Valid XML Documents"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:18:40Z",
+        "subject": "XML",
+        "title": "XML Validator"
+    },
+    {
+        "url": "https://www.w3schools.com/xml/xml_dtd.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "xml_xml_dtd",
+        "code_examples": [
+            {
+                "code": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n\n<!DOCTYPE note SYSTEM \"Note.dtd\">\n\n<note>\n\n<to>Tove</to>\n\n<from>Jani</from>\n\n<heading>Reminder</heading>\n\n<body>Don't forget me this weekend!</body>\n\n</note>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Note.dtd:\n\n<!DOCTYPE note\n\n[\n\n <!ELEMENT note (to,from,heading,body)>\n\n <!ELEMENT to (#PCDATA)>\n\n <!ELEMENT from (#PCDATA)>\n\n <!ELEMENT heading (#PCDATA)>\n\n <!ELEMENT body (#PCDATA)>\n\n]>",
+                "language": "xml",
+                "heading": "Note.dtd:",
+                "tryit_url": null
+            },
+            {
+                "code": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n\n<!DOCTYPE note [\n<!ENTITY nbsp \n\"&#xA0;\"> \n<!ENTITY writer \"Writer: Donald Duck.\">\n\n<!ENTITY copyright \"Copyright: W3Schools.\">\n]>\n\n<note>\n<to>Tove</to>\n<from>Jani</from>\n\n<heading>Reminder</heading>\n<body>Don't forget me this weekend!</body>\n\n<footer>&writer;&nbsp;&copyright;</footer>\n\n</note>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Web Tools & Security",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "XML HOME\nXML Introduction\nXML How to use\nXML Tree\nXML Syntax\nXML Elements\nXML Attributes\nXML Namespaces\nXML Display\nXML HttpRequest\nXML Parser\nXML DOM\nXML XPath\nXML XSLT\nXML XQuery\nXML XLink\nXML Validator\nXML DTD\nXML Schema\nXML Server",
+                "heading": "XML Tutorial"
+            },
+            {
+                "content": "AJAX Introduction\nAJAX XMLHttp\nAJAX Request\nAJAX Response\nAJAX XML File\nAJAX PHP\nAJAX ASP\nAJAX Database\nAJAX Applications\nAJAX Examples",
+                "heading": "XML AJAX"
+            },
+            {
+                "content": "DOM Introduction\nDOM Nodes\nDOM Accessing\nDOM Node Info\nDOM Node List\nDOM Traversing\nDOM Navigating\nDOM Get Values\nDOM Change Nodes\nDOM Remove Nodes\nDOM Replace Nodes\nDOM Create Nodes\nDOM Add Nodes\nDOM Clone Nodes\nDOM Examples",
+                "heading": "XML DOM"
+            },
+            {
+                "content": "XPath Introduction\nXPath Nodes\nXPath Syntax\nXPath Axes\nXPath Operators\nXPath Examples",
+                "heading": "XPath Tutorial"
+            },
+            {
+                "content": "XSLT Introduction\nXSL Languages\nXSLT Transform\nXSLT <template>\nXSLT <value-of>\nXSLT <for-each>\nXSLT <sort>\nXSLT <if>\nXSLT <choose>\nXSLT Apply\nXSLT on the Client\nXSLT on the Server\nXSLT Edit XML\nXSLT Examples",
+                "heading": "XSLT Tutorial"
+            },
+            {
+                "content": "XQuery Introduction\nXQuery Example\nXQuery FLWOR\nXQuery HTML\nXQuery Terms\nXQuery Syntax\nXQuery Add\nXQuery Select\nXQuery Functions",
+                "heading": "XQuery Tutorial"
+            },
+            {
+                "content": "DTD Introduction\nDTD Building Blocks\nDTD Elements\nDTD Attributes\nDTD Elements vs Attr\nDTD Entities\nDTD Examples",
+                "heading": "XML DTD"
+            },
+            {
+                "content": "XSD Introduction\nXSD How To\nXSD <schema>\nXSD Elements\nXSD Attributes\nXSD Restrictions\nXSD Complex Elements\nXSD Empty\nXSD Elements-only\nXSD Text-only\nXSD Mixed\nXSD Indicators\nXSD <any>\nXSD <anyAttribute>\nXSD Substitution\nXSD Example",
+                "heading": "XSD Schema"
+            },
+            {
+                "content": "XSD String\nXSD Date/Time\nXSD Numeric\nXSD Misc\nXSD Reference",
+                "heading": "XSD Data Types"
+            },
+            {
+                "content": "XML Services\nXML WSDL\nXML SOAP\nXML RDF\nXML RSS",
+                "heading": "Web Services"
+            },
+            {
+                "content": "XML Certificate",
+                "heading": "XML Cert"
+            },
+            {
+                "content": "XML Examples\nXML Quiz\nXML Syllabus\nXML Study Plan",
+                "heading": "XML Examples"
+            },
+            {
+                "content": "DTD stands for Document Type Definition.\n\nA DTD defines the structure and the legal elements and attributes of an XML document.",
+                "heading": "What is a DTD?"
+            },
+            {
+                "content": "A \"Valid\" XML document is \"Well Formed\", as well as it conforms to the rules of a \nDTD:\n\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n\n<!DOCTYPE note SYSTEM \"Note.dtd\">\n\n<note>\n\n<to>Tove</to>\n\n<from>Jani</from>\n\n<heading>Reminder</heading>\n\n<body>Don't forget me this weekend!</body>\n\n</note>\n\nThe DOCTYPE declaration above contains a reference to a DTD file. The content of the \nDTD file is shown and explained below.",
+                "heading": "Valid XML Documents"
+            },
+            {
+                "content": "The purpose of a DTD is to define the structure and the legal elements and \nattributes of an XML document:\n\nNote.dtd:\n\n<!DOCTYPE note\n\n[\n\n <!ELEMENT note (to,from,heading,body)>\n\n <!ELEMENT to (#PCDATA)>\n\n <!ELEMENT from (#PCDATA)>\n\n <!ELEMENT heading (#PCDATA)>\n\n <!ELEMENT body (#PCDATA)>\n\n]>\n\nThe DTD above is interpreted like this:\n\n !DOCTYPE note -  Defines that the root element of the document is note\n\n !ELEMENT note - Defines that the note element must contain the elements: \"to, from, heading, body\"\n\n !ELEMENT to - Defines the to element to be of type \"#PCDATA\"\n\n !ELEMENT from - Defines the from element to be of type \"#PCDATA\"\n\n !ELEMENT heading  - Defines the heading element to be of type \"#PCDATA\"\n\n !ELEMENT body - Defines the body element to be of type \"#PCDATA\"\n\nTip: #PCDATA means parseable character data.",
+                "heading": "XML DTD"
+            },
+            {
+                "content": "A DOCTYPE declaration can also be used to define special characters or strings, used in the document:\n\nExample\n\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n\n<!DOCTYPE note [\n<!ENTITY nbsp \n\"&#xA0;\"> \n<!ENTITY writer \"Writer: Donald Duck.\">\n\n<!ENTITY copyright \"Copyright: W3Schools.\">\n]>\n\n<note>\n<to>Tove</to>\n<from>Jani</from>\n\n<heading>Reminder</heading>\n<body>Don't forget me this weekend!</body>\n\n<footer>&writer;&nbsp;&copyright;</footer>\n\n</note>\n\nTry it Yourself »\n\nTip: An entity has three parts: it starts with an ampersand (&), \nthen comes the entity name, and it ends with a semicolon (;).",
+                "heading": "Using DTD for Entity Declaration"
+            },
+            {
+                "content": "With a DTD, independent groups of people can agree to use a standard DTD for \ninterchanging data.\n\nWith a DTD, you can verify that the data you receive from the outside world is valid.\n\nYou can also use a DTD to verify your own data.\n\nIf you want to study DTD, please read our DTD Tutorial.",
+                "heading": "When to Use a DTD?"
+            },
+            {
+                "content": "XML does not require a DTD.\n\nWhen you are experimenting with XML, or when you are working with small XML \nfiles, creating DTDs may be a waste of time.\n\nIf you develop applications, \nwait until the specification is stable before you add a DTD. \nOtherwise, your software might stop working because of validation errors.\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "When NOT to Use a DTD?"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:18:40Z",
+        "subject": "XML",
+        "title": "XML DTD"
+    },
+    {
+        "url": "https://www.w3schools.com/xml/xml_schema.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "xml_xml_schema",
+        "code_examples": [
+            {
+                "code": "<xs:element name=\"note\">\n\n<xs:complexType>\n\n  <xs:sequence>\n\n    <xs:element name=\"to\" type=\"xs:string\"/>\n\n    <xs:element name=\"from\" type=\"xs:string\"/>\n\n    <xs:element name=\"heading\" type=\"xs:string\"/>\n\n    <xs:element name=\"body\" type=\"xs:string\"/>\n\n  </xs:sequence>\n\n</xs:complexType>\n\n</xs:element>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Web Tools & Security",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "XML HOME\nXML Introduction\nXML How to use\nXML Tree\nXML Syntax\nXML Elements\nXML Attributes\nXML Namespaces\nXML Display\nXML HttpRequest\nXML Parser\nXML DOM\nXML XPath\nXML XSLT\nXML XQuery\nXML XLink\nXML Validator\nXML DTD\nXML Schema\nXML Server",
+                "heading": "XML Tutorial"
+            },
+            {
+                "content": "AJAX Introduction\nAJAX XMLHttp\nAJAX Request\nAJAX Response\nAJAX XML File\nAJAX PHP\nAJAX ASP\nAJAX Database\nAJAX Applications\nAJAX Examples",
+                "heading": "XML AJAX"
+            },
+            {
+                "content": "DOM Introduction\nDOM Nodes\nDOM Accessing\nDOM Node Info\nDOM Node List\nDOM Traversing\nDOM Navigating\nDOM Get Values\nDOM Change Nodes\nDOM Remove Nodes\nDOM Replace Nodes\nDOM Create Nodes\nDOM Add Nodes\nDOM Clone Nodes\nDOM Examples",
+                "heading": "XML DOM"
+            },
+            {
+                "content": "XPath Introduction\nXPath Nodes\nXPath Syntax\nXPath Axes\nXPath Operators\nXPath Examples",
+                "heading": "XPath Tutorial"
+            },
+            {
+                "content": "XSLT Introduction\nXSL Languages\nXSLT Transform\nXSLT <template>\nXSLT <value-of>\nXSLT <for-each>\nXSLT <sort>\nXSLT <if>\nXSLT <choose>\nXSLT Apply\nXSLT on the Client\nXSLT on the Server\nXSLT Edit XML\nXSLT Examples",
+                "heading": "XSLT Tutorial"
+            },
+            {
+                "content": "XQuery Introduction\nXQuery Example\nXQuery FLWOR\nXQuery HTML\nXQuery Terms\nXQuery Syntax\nXQuery Add\nXQuery Select\nXQuery Functions",
+                "heading": "XQuery Tutorial"
+            },
+            {
+                "content": "DTD Introduction\nDTD Building Blocks\nDTD Elements\nDTD Attributes\nDTD Elements vs Attr\nDTD Entities\nDTD Examples",
+                "heading": "XML DTD"
+            },
+            {
+                "content": "XSD Introduction\nXSD How To\nXSD <schema>\nXSD Elements\nXSD Attributes\nXSD Restrictions\nXSD Complex Elements\nXSD Empty\nXSD Elements-only\nXSD Text-only\nXSD Mixed\nXSD Indicators\nXSD <any>\nXSD <anyAttribute>\nXSD Substitution\nXSD Example",
+                "heading": "XSD Schema"
+            },
+            {
+                "content": "XSD String\nXSD Date/Time\nXSD Numeric\nXSD Misc\nXSD Reference",
+                "heading": "XSD Data Types"
+            },
+            {
+                "content": "XML Services\nXML WSDL\nXML SOAP\nXML RDF\nXML RSS",
+                "heading": "Web Services"
+            },
+            {
+                "content": "XML Certificate",
+                "heading": "XML Cert"
+            },
+            {
+                "content": "XML Examples\nXML Quiz\nXML Syllabus\nXML Study Plan",
+                "heading": "XML Examples"
+            },
+            {
+                "content": "XML Schema is an XML-based alternative to DTD:\n\n<xs:element name=\"note\">\n\n<xs:complexType>\n\n  <xs:sequence>\n\n    <xs:element name=\"to\" type=\"xs:string\"/>\n\n    <xs:element name=\"from\" type=\"xs:string\"/>\n\n    <xs:element name=\"heading\" type=\"xs:string\"/>\n\n    <xs:element name=\"body\" type=\"xs:string\"/>\n\n  </xs:sequence>\n\n</xs:complexType>\n\n</xs:element>\n\nThe Schema above is interpreted like this:\n\n <xs:element name=\"note\"> defines the element called \"note\"\n\n <xs:complexType> the \"note\" element is a complex type\n\n <xs:sequence> the complex type is a sequence of elements\n\n <xs:element name=\"to\" type=\"xs:string\"> the element \"to\" is of type string (text)\n\n <xs:element name=\"from\" type=\"xs:string\"> the element \"from\" is of type string\n\n <xs:element name=\"heading\" type=\"xs:string\"> the element \"heading\" is of type string\n\n <xs:element name=\"body\" type=\"xs:string\"> the element \"body\" is of type string",
+                "heading": "XML Schema"
+            },
+            {
+                "content": "XML Schemas are written in XML\n\n XML Schemas are extensible to additions\n\n XML Schemas support data types\n\n XML Schemas support namespaces",
+                "heading": "XML Schemas are More Powerful than DTD"
+            },
+            {
+                "content": "With XML Schema, your XML files can carry a description of its own format.\n\nWith XML Schema, independent groups of people can agree on a standard for interchanging data.\n\nWith XML Schema, you can verify data.",
+                "heading": "Why Use an XML Schema?"
+            },
+            {
+                "content": "One of the greatest strengths of XML Schemas is the support for data types:\n\n It is easier to describe document content\n\n It is easier to define restrictions on data\n\n It is easier to validate the correctness of data\n\n It is easier to convert data between different data types",
+                "heading": "XML Schemas Support Data Types"
+            },
+            {
+                "content": "Another great strength about XML Schemas is that they are written in XML:\n\n You don't have to learn a new language\n\n You can use your XML editor to edit your Schema files\n\n You can use your XML parser to parse your Schema files\n\n You can manipulate your Schemas with the XML DOM\n\n You can transform your Schemas with XSLT\n\nIf you want to study XML Schema, please read our\nXML Schema Tutorial.\n\n❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "XML Schemas use XML Syntax"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:18:40Z",
+        "subject": "XML",
+        "title": "XML Schema"
+    },
+    {
+        "url": "https://www.w3schools.com/xml/xml_server.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "xml_xml_server",
+        "code_examples": [
+            {
+                "code": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n\n<note>\n\n <from>Jani</from>\n\n <to>Tove</to>\n\n <message>Remember me this weekend</message>\n\n</note>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<?php\n\nheader(\"Content-type: text/xml\");\n\necho \"<?xml version='1.0' encoding='UTF-8'?>\";\n\necho \"<note>\";\n\necho \"<from>Jani</from>\";\n\necho \"<to>Tove</to>\";\n\necho \"<message>Remember me this weekend</message>\";\n\necho \"</note>\";\n\n?>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<%\n\nresponse.ContentType=\"text/xml\"\n\nresponse.Write(\"<?xml version='1.0' encoding='UTF-8'?>\")\n\nresponse.Write(\"<note>\")\n\nresponse.Write(\"<from>Jani</from>\")\n\nresponse.Write(\"<to>Tove</to>\")\n\nresponse.Write(\"<message>Remember me this weekend</message>\")\n\nresponse.Write(\"</note>\")\n\n%>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<%\n\nresponse.ContentType = \"text/xml\"\n\nset conn=Server.CreateObject(\"ADODB.Connection\")\n\nconn.provider=\"Microsoft.Jet.OLEDB.4.0;\"\n\nconn.open server.mappath(\"/datafolder/database.mdb\")\n\nsql=\"select fname,lname from tblGuestBook\"\n\nset rs=Conn.Execute(sql)\n\nresponse.write(\"<?xml version='1.0' encoding='UTF-8'?>\")\n\nresponse.write(\"<guestbook>\")\n\nwhile (not rs.EOF)\n\n response.write(\"<guest>\")\n\n response.write(\"<fname>\" & rs(\"fname\") & \"</fname>\")\n\n response.write(\"<lname>\" & rs(\"lname\") & \"</lname>\")\n\n response.write(\"</guest>\")\n\n rs.MoveNext()\n\nwend\n\nrs.close()\n\nconn.close()\n\nresponse.write(\"</guestbook>\")\n\n%>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<%\n\n'Load XML\n\nset xml = Server.CreateObject(\"Microsoft.XMLDOM\")\n\nxml.async = false\n\nxml.load(Server.MapPath(\"simple.xml\"))\n\n'Load XSL\n\nset xsl = Server.CreateObject(\"Microsoft.XMLDOM\")\n\nxsl.async = false\n\nxsl.load(Server.MapPath(\"simple.xsl\"))\n\n'Transform file\n\nResponse.Write(xml.transformNode(xsl))\n\n%>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Web Tools & Security",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "XML HOME\nXML Introduction\nXML How to use\nXML Tree\nXML Syntax\nXML Elements\nXML Attributes\nXML Namespaces\nXML Display\nXML HttpRequest\nXML Parser\nXML DOM\nXML XPath\nXML XSLT\nXML XQuery\nXML XLink\nXML Validator\nXML DTD\nXML Schema\nXML Server",
+                "heading": "XML Tutorial"
+            },
+            {
+                "content": "AJAX Introduction\nAJAX XMLHttp\nAJAX Request\nAJAX Response\nAJAX XML File\nAJAX PHP\nAJAX ASP\nAJAX Database\nAJAX Applications\nAJAX Examples",
+                "heading": "XML AJAX"
+            },
+            {
+                "content": "DOM Introduction\nDOM Nodes\nDOM Accessing\nDOM Node Info\nDOM Node List\nDOM Traversing\nDOM Navigating\nDOM Get Values\nDOM Change Nodes\nDOM Remove Nodes\nDOM Replace Nodes\nDOM Create Nodes\nDOM Add Nodes\nDOM Clone Nodes\nDOM Examples",
+                "heading": "XML DOM"
+            },
+            {
+                "content": "XPath Introduction\nXPath Nodes\nXPath Syntax\nXPath Axes\nXPath Operators\nXPath Examples",
+                "heading": "XPath Tutorial"
+            },
+            {
+                "content": "XSLT Introduction\nXSL Languages\nXSLT Transform\nXSLT <template>\nXSLT <value-of>\nXSLT <for-each>\nXSLT <sort>\nXSLT <if>\nXSLT <choose>\nXSLT Apply\nXSLT on the Client\nXSLT on the Server\nXSLT Edit XML\nXSLT Examples",
+                "heading": "XSLT Tutorial"
+            },
+            {
+                "content": "XQuery Introduction\nXQuery Example\nXQuery FLWOR\nXQuery HTML\nXQuery Terms\nXQuery Syntax\nXQuery Add\nXQuery Select\nXQuery Functions",
+                "heading": "XQuery Tutorial"
+            },
+            {
+                "content": "DTD Introduction\nDTD Building Blocks\nDTD Elements\nDTD Attributes\nDTD Elements vs Attr\nDTD Entities\nDTD Examples",
+                "heading": "XML DTD"
+            },
+            {
+                "content": "XSD Introduction\nXSD How To\nXSD <schema>\nXSD Elements\nXSD Attributes\nXSD Restrictions\nXSD Complex Elements\nXSD Empty\nXSD Elements-only\nXSD Text-only\nXSD Mixed\nXSD Indicators\nXSD <any>\nXSD <anyAttribute>\nXSD Substitution\nXSD Example",
+                "heading": "XSD Schema"
+            },
+            {
+                "content": "XSD String\nXSD Date/Time\nXSD Numeric\nXSD Misc\nXSD Reference",
+                "heading": "XSD Data Types"
+            },
+            {
+                "content": "XML Services\nXML WSDL\nXML SOAP\nXML RDF\nXML RSS",
+                "heading": "Web Services"
+            },
+            {
+                "content": "XML Certificate",
+                "heading": "XML Cert"
+            },
+            {
+                "content": "XML Examples\nXML Quiz\nXML Syllabus\nXML Study Plan",
+                "heading": "XML Examples"
+            },
+            {
+                "content": "XML files can be stored on an Internet server exactly the same way as HTML files.\n\nStart Windows Notepad and write the following lines:\n\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n\n<note>\n\n <from>Jani</from>\n\n <to>Tove</to>\n\n <message>Remember me this weekend</message>\n\n</note>\n\nSave the file on your web server with a proper name like \"note.xml\".",
+                "heading": "Storing XML Files on the Server"
+            },
+            {
+                "content": "XML can be generated on a server without any installed XML software.\n\nTo generate an XML response from the server using PHP, use following code:\n\n<?php\n\nheader(\"Content-type: text/xml\");\n\necho \"<?xml version='1.0' encoding='UTF-8'?>\";\n\necho \"<note>\";\n\necho \"<from>Jani</from>\";\n\necho \"<to>Tove</to>\";\n\necho \"<message>Remember me this weekend</message>\";\n\necho \"</note>\";\n\n?>\n\nNote that the content type of the response header must be set to \"text/xml\".\n\nSee how the PHP file will be returned from the server.\n\nIf you want to study PHP, you will find our PHP tutorial on our homepage.",
+                "heading": "Generating XML with PHP"
+            },
+            {
+                "content": "To generate an XML response from the server - simply write the following code and save it as an ASP file on the web server:\n\n<%\n\nresponse.ContentType=\"text/xml\"\n\nresponse.Write(\"<?xml version='1.0' encoding='UTF-8'?>\")\n\nresponse.Write(\"<note>\")\n\nresponse.Write(\"<from>Jani</from>\")\n\nresponse.Write(\"<to>Tove</to>\")\n\nresponse.Write(\"<message>Remember me this weekend</message>\")\n\nresponse.Write(\"</note>\")\n\n%>\n\nNote that the content type of the response must be set to \"text/xml\".\n\nSee how the ASP file will be returned from the server.\n\nIf you want to study ASP, you will find our ASP tutorial on our homepage.",
+                "heading": "Generating XML with ASP"
+            },
+            {
+                "content": "XML can be generated from a database without any installed XML software.\n\nTo generate an XML database response from the server, simply write the following code and save it as an ASP file on the web server:\n\n<%\n\nresponse.ContentType = \"text/xml\"\n\nset conn=Server.CreateObject(\"ADODB.Connection\")\n\nconn.provider=\"Microsoft.Jet.OLEDB.4.0;\"\n\nconn.open server.mappath(\"/datafolder/database.mdb\")\n\nsql=\"select fname,lname from tblGuestBook\"\n\nset rs=Conn.Execute(sql)\n\nresponse.write(\"<?xml version='1.0' encoding='UTF-8'?>\")\n\nresponse.write(\"<guestbook>\")\n\nwhile (not rs.EOF)\n\n response.write(\"<guest>\")\n\n response.write(\"<fname>\" & rs(\"fname\") & \"</fname>\")\n\n response.write(\"<lname>\" & rs(\"lname\") & \"</lname>\")\n\n response.write(\"</guest>\")\n\n rs.MoveNext()\n\nwend\n\nrs.close()\n\nconn.close()\n\nresponse.write(\"</guestbook>\")\n\n%>\n\nSee the real life database output from the ASP file above.\n\nThe example above uses ASP with ADO.\n\nIf you want to study ASP and ADO, you will find the tutorials on our homepage.",
+                "heading": "Generating XML From a Database"
+            },
+            {
+                "content": "This ASP transforms an XML file to XHTML on the server:\n\n<%\n\n'Load XML\n\nset xml = Server.CreateObject(\"Microsoft.XMLDOM\")\n\nxml.async = false\n\nxml.load(Server.MapPath(\"simple.xml\"))\n\n'Load XSL\n\nset xsl = Server.CreateObject(\"Microsoft.XMLDOM\")\n\nxsl.async = false\n\nxsl.load(Server.MapPath(\"simple.xsl\"))\n\n'Transform file\n\nResponse.Write(xml.transformNode(xsl))\n\n%>\n\nExample explained\n\n The first block of code creates an instance of the Microsoft XML parser (XMLDOM), and loads the XML file into memory.\n\n The second block of code creates another instance of the parser and loads the XSL file into memory.\n\n The last line of code transforms the XML document using the XSL document, and sends the result as XHTML to your browser. Nice!\n\nSee how it works.\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Transforming XML with XSLT on the Server"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:18:41Z",
+        "subject": "XML",
+        "title": "XML on the Server"
+    },
+    {
+        "url": "https://www.w3schools.com/xml/xml_dtd_intro.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "xml_xml_dtd_intro",
+        "code_examples": [
+            {
+                "code": "<?xml version=\"1.0\"?>\n\n<!DOCTYPE note [\n\n <!ELEMENT note (to,from,heading,body)>\n\n <!ELEMENT to (#PCDATA)>\n\n <!ELEMENT from (#PCDATA)>\n\n <!ELEMENT heading (#PCDATA)>\n\n <!ELEMENT body (#PCDATA)>\n\n]>\n\n<note>\n\n <to>Tove</to>\n\n <from>Jani</from>\n\n <heading>Reminder</heading>\n\n <body>Don't forget me this weekend</body>\n\n</note>",
+                "language": "xml",
+                "heading": "XML document with an internal DTD",
+                "tryit_url": null
+            }
+        ],
+        "category": "Web Tools & Security",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "XML HOME\nXML Introduction\nXML How to use\nXML Tree\nXML Syntax\nXML Elements\nXML Attributes\nXML Namespaces\nXML Display\nXML HttpRequest\nXML Parser\nXML DOM\nXML XPath\nXML XSLT\nXML XQuery\nXML XLink\nXML Validator\nXML DTD\nXML Schema\nXML Server",
+                "heading": "XML Tutorial"
+            },
+            {
+                "content": "AJAX Introduction\nAJAX XMLHttp\nAJAX Request\nAJAX Response\nAJAX XML File\nAJAX PHP\nAJAX ASP\nAJAX Database\nAJAX Applications\nAJAX Examples",
+                "heading": "XML AJAX"
+            },
+            {
+                "content": "DOM Introduction\nDOM Nodes\nDOM Accessing\nDOM Node Info\nDOM Node List\nDOM Traversing\nDOM Navigating\nDOM Get Values\nDOM Change Nodes\nDOM Remove Nodes\nDOM Replace Nodes\nDOM Create Nodes\nDOM Add Nodes\nDOM Clone Nodes\nDOM Examples",
+                "heading": "XML DOM"
+            },
+            {
+                "content": "XPath Introduction\nXPath Nodes\nXPath Syntax\nXPath Axes\nXPath Operators\nXPath Examples",
+                "heading": "XPath Tutorial"
+            },
+            {
+                "content": "XSLT Introduction\nXSL Languages\nXSLT Transform\nXSLT <template>\nXSLT <value-of>\nXSLT <for-each>\nXSLT <sort>\nXSLT <if>\nXSLT <choose>\nXSLT Apply\nXSLT on the Client\nXSLT on the Server\nXSLT Edit XML\nXSLT Examples",
+                "heading": "XSLT Tutorial"
+            },
+            {
+                "content": "XQuery Introduction\nXQuery Example\nXQuery FLWOR\nXQuery HTML\nXQuery Terms\nXQuery Syntax\nXQuery Add\nXQuery Select\nXQuery Functions",
+                "heading": "XQuery Tutorial"
+            },
+            {
+                "content": "DTD Introduction\nDTD Building Blocks\nDTD Elements\nDTD Attributes\nDTD Elements vs Attr\nDTD Entities\nDTD Examples",
+                "heading": "XML DTD"
+            },
+            {
+                "content": "XSD Introduction\nXSD How To\nXSD <schema>\nXSD Elements\nXSD Attributes\nXSD Restrictions\nXSD Complex Elements\nXSD Empty\nXSD Elements-only\nXSD Text-only\nXSD Mixed\nXSD Indicators\nXSD <any>\nXSD <anyAttribute>\nXSD Substitution\nXSD Example",
+                "heading": "XSD Schema"
+            },
+            {
+                "content": "XSD String\nXSD Date/Time\nXSD Numeric\nXSD Misc\nXSD Reference",
+                "heading": "XSD Data Types"
+            },
+            {
+                "content": "XML Services\nXML WSDL\nXML SOAP\nXML RDF\nXML RSS",
+                "heading": "Web Services"
+            },
+            {
+                "content": "XML Certificate",
+                "heading": "XML Cert"
+            },
+            {
+                "content": "XML Examples\nXML Quiz\nXML Syllabus\nXML Study Plan",
+                "heading": "XML Examples"
+            },
+            {
+                "content": "A DTD is a Document Type Definition.\n\nA DTD defines the structure and the legal elements and attributes of an XML document.",
+                "heading": "What is a DTD?"
+            },
+            {
+                "content": "With a DTD, independent groups of people can agree on a standard DTD for interchanging data.\n\nAn application can use a DTD to verify that XML data is valid.",
+                "heading": "Why Use a DTD?"
+            },
+            {
+                "content": "If the DTD is declared inside the XML file, it must be wrapped inside the <!DOCTYPE> definition:\n\nXML document with an internal DTD\n\n<?xml version=\"1.0\"?>\n\n<!DOCTYPE note [\n\n <!ELEMENT note (to,from,heading,body)>\n\n <!ELEMENT to (#PCDATA)>\n\n <!ELEMENT from (#PCDATA)>\n\n <!ELEMENT heading (#PCDATA)>\n\n <!ELEMENT body (#PCDATA)>\n\n]>\n\n<note>\n\n <to>Tove</to>\n\n <from>Jani</from>\n\n <heading>Reminder</heading>\n\n <body>Don't forget me this weekend</body>\n\n</note>\n\nView XML file »\nIn the XML file, select \"view source\" to view the DTD.\n\nThe DTD above is interpreted like this:\n\n !DOCTYPE note defines that the root element of this document is note\n\n !ELEMENT note defines that the note element must contain four elements: \"to,from,heading,body\"\n\n !ELEMENT to defines the to element to be of type \"#PCDATA\"\n\n !ELEMENT from defines the from element to be of type \"#PCDATA\"\n\n !ELEMENT heading defines the heading element to be of type \"#PCDATA\"\n\n !ELEMENT body defines the body element to be of type \"#PCDATA\"",
+                "heading": "An Internal DTD Declaration"
+            },
+            {
+                "content": "If the DTD is declared in an external file, the <!DOCTYPE> definition must \ncontain a reference to the DTD file:\n\nXML document with a reference to an external DTD\n\n<?xml version=\"1.0\"?>\n\n<!DOCTYPE note SYSTEM \"note.dtd\">\n\n<note>\n\n<to>Tove</to>\n\n<from>Jani</from>\n\n<heading>Reminder</heading>\n\n<body>Don't forget me this weekend!</body>\n\n</note>\n\nView XML file »\n\nAnd here is the file \"note.dtd\", which contains the DTD:\n\n<!ELEMENT note (to,from,heading,body)>\n\n<!ELEMENT to (#PCDATA)>\n\n<!ELEMENT from (#PCDATA)>\n\n<!ELEMENT heading (#PCDATA)>\n\n<!ELEMENT body (#PCDATA)>\n\n ❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "An External DTD Declaration"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:18:41Z",
+        "subject": "XML",
+        "title": "DTD Tutorial"
+    },
+    {
+        "url": "https://www.w3schools.com/xml/xml_dtd_building.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "xml_xml_dtd_building",
+        "code_examples": [
+            {
+                "code": "<body>some text</body>\n\n<message>some text</message>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<img src=\"computer.gif\" />",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Web Tools & Security",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "XML HOME\nXML Introduction\nXML How to use\nXML Tree\nXML Syntax\nXML Elements\nXML Attributes\nXML Namespaces\nXML Display\nXML HttpRequest\nXML Parser\nXML DOM\nXML XPath\nXML XSLT\nXML XQuery\nXML XLink\nXML Validator\nXML DTD\nXML Schema\nXML Server",
+                "heading": "XML Tutorial"
+            },
+            {
+                "content": "AJAX Introduction\nAJAX XMLHttp\nAJAX Request\nAJAX Response\nAJAX XML File\nAJAX PHP\nAJAX ASP\nAJAX Database\nAJAX Applications\nAJAX Examples",
+                "heading": "XML AJAX"
+            },
+            {
+                "content": "DOM Introduction\nDOM Nodes\nDOM Accessing\nDOM Node Info\nDOM Node List\nDOM Traversing\nDOM Navigating\nDOM Get Values\nDOM Change Nodes\nDOM Remove Nodes\nDOM Replace Nodes\nDOM Create Nodes\nDOM Add Nodes\nDOM Clone Nodes\nDOM Examples",
+                "heading": "XML DOM"
+            },
+            {
+                "content": "XPath Introduction\nXPath Nodes\nXPath Syntax\nXPath Axes\nXPath Operators\nXPath Examples",
+                "heading": "XPath Tutorial"
+            },
+            {
+                "content": "XSLT Introduction\nXSL Languages\nXSLT Transform\nXSLT <template>\nXSLT <value-of>\nXSLT <for-each>\nXSLT <sort>\nXSLT <if>\nXSLT <choose>\nXSLT Apply\nXSLT on the Client\nXSLT on the Server\nXSLT Edit XML\nXSLT Examples",
+                "heading": "XSLT Tutorial"
+            },
+            {
+                "content": "XQuery Introduction\nXQuery Example\nXQuery FLWOR\nXQuery HTML\nXQuery Terms\nXQuery Syntax\nXQuery Add\nXQuery Select\nXQuery Functions",
+                "heading": "XQuery Tutorial"
+            },
+            {
+                "content": "DTD Introduction\nDTD Building Blocks\nDTD Elements\nDTD Attributes\nDTD Elements vs Attr\nDTD Entities\nDTD Examples",
+                "heading": "XML DTD"
+            },
+            {
+                "content": "XSD Introduction\nXSD How To\nXSD <schema>\nXSD Elements\nXSD Attributes\nXSD Restrictions\nXSD Complex Elements\nXSD Empty\nXSD Elements-only\nXSD Text-only\nXSD Mixed\nXSD Indicators\nXSD <any>\nXSD <anyAttribute>\nXSD Substitution\nXSD Example",
+                "heading": "XSD Schema"
+            },
+            {
+                "content": "XSD String\nXSD Date/Time\nXSD Numeric\nXSD Misc\nXSD Reference",
+                "heading": "XSD Data Types"
+            },
+            {
+                "content": "XML Services\nXML WSDL\nXML SOAP\nXML RDF\nXML RSS",
+                "heading": "Web Services"
+            },
+            {
+                "content": "XML Certificate",
+                "heading": "XML Cert"
+            },
+            {
+                "content": "XML Examples\nXML Quiz\nXML Syllabus\nXML Study Plan",
+                "heading": "XML Examples"
+            },
+            {
+                "content": "Seen from a DTD point of view, all XML documents are made up by the following building blocks:\n\n Elements\n\n Attributes\n\n Entities\n\n PCDATA\n\n CDATA",
+                "heading": "The Building Blocks of XML Documents"
+            },
+            {
+                "content": "Elements are the main building blocks of both XML and HTML documents.\n\nExamples of HTML elements are \"body\" and \"table\". Examples of XML elements could be\n\"note\" and \"message\". Elements can contain text, other elements, or be empty. Examples of empty HTML elements are \"hr\", \"br\" and\n\"img\".\n\nExamples:\n\n<body>some text</body>\n\n<message>some text</message>",
+                "heading": "Elements"
+            },
+            {
+                "content": "Attributes provide extra information about elements.\n\nAttributes are always placed inside the opening tag of an element. Attributes\nalways come in name/value pairs. The following \"img\" element has additional information about a source file:\n\n<img src=\"computer.gif\" />\n\nThe name of the element is \"img\". The name of the attribute is\n\"src\". The value of the attribute is \"computer.gif\".\nSince the element itself is empty it is closed by a \" /\".",
+                "heading": "Attributes"
+            },
+            {
+                "content": "Some characters have a special meaning in XML, like the less than sign (<) \nthat defines the start of an XML tag.\n\nMost of you know the HTML entity: \"&nbsp;\". This \"no-breaking-space\" entity is used in HTML to insert an extra space in a document.\nEntities are expanded when a document is parsed by an XML parser.\n\nThe following entities are predefined in XML:\n\n Entity References\n Character\n\n &lt;\n <\n\n &gt;\n >\n\n &amp;\n &\n\n &quot;\n \"\n\n &apos;\n '",
+                "heading": "Entities"
+            },
+            {
+                "content": "PCDATA means parsed character data.\n\nThink of character data as the text found between the start tag and the end tag of an XML element.\n\nPCDATA is text that WILL be parsed by a parser. The text will be examined by the parser for entities and markup.\n\nTags inside the text will be treated as markup and entities will be expanded.\n\nHowever, parsed character data should not contain any &, <, or > characters; \nthese need to be represented by the &amp; &lt; and &gt; entities, respectively.",
+                "heading": "PCDATA"
+            },
+            {
+                "content": "CDATA means character data.\n\nCDATA is text that will NOT be parsed by a parser.\nTags inside the text will NOT be treated as markup and entities will not be expanded.\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "CDATA"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:18:41Z",
+        "subject": "XML",
+        "title": "DTD - XML Building Blocks"
+    },
+    {
+        "url": "https://www.w3schools.com/xml/xml_dtd_elements.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "xml_xml_dtd_elements",
+        "code_examples": [
+            {
+                "code": "<!ELEMENT element-name category>\nor\n<!ELEMENT element-name (element-content)>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<!ELEMENT element-name EMPTY>\n\nExample:\n\n<!ELEMENT br EMPTY>\n\nXML example:\n\n<br />",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<!ELEMENT element-name (#PCDATA)>\n\nExample:\n\n<!ELEMENT from (#PCDATA)>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<!ELEMENT element-name ANY>\n\nExample:\n\n<!ELEMENT note ANY>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<!ELEMENT element-name (child1)>\n\nor\n\n<!ELEMENT element-name (child1,child2,...)>\n\nExample:\n\n<!ELEMENT note (to,from,heading,body)>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<!ELEMENT note (to,from,heading,body)>\n\n<!ELEMENT to (#PCDATA)>\n\n<!ELEMENT from (#PCDATA)>\n\n<!ELEMENT heading (#PCDATA)>\n\n<!ELEMENT body (#PCDATA)>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<!ELEMENT element-name (child-name)>\n\nExample:\n\n<!ELEMENT note (message)>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<!ELEMENT element-name (child-name+)>\n\nExample:\n\n<!ELEMENT note (message+)>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<!ELEMENT element-name (child-name*)>\n\nExample:\n\n<!ELEMENT note (message*)>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<!ELEMENT element-name (child-name?)>\n\nExample:\n\n<!ELEMENT note (message?)>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<!ELEMENT note (to,from,header,(message|body))>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<!ELEMENT note (#PCDATA|to|from|header|message)*>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Web Tools & Security",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "XML HOME\nXML Introduction\nXML How to use\nXML Tree\nXML Syntax\nXML Elements\nXML Attributes\nXML Namespaces\nXML Display\nXML HttpRequest\nXML Parser\nXML DOM\nXML XPath\nXML XSLT\nXML XQuery\nXML XLink\nXML Validator\nXML DTD\nXML Schema\nXML Server",
+                "heading": "XML Tutorial"
+            },
+            {
+                "content": "AJAX Introduction\nAJAX XMLHttp\nAJAX Request\nAJAX Response\nAJAX XML File\nAJAX PHP\nAJAX ASP\nAJAX Database\nAJAX Applications\nAJAX Examples",
+                "heading": "XML AJAX"
+            },
+            {
+                "content": "DOM Introduction\nDOM Nodes\nDOM Accessing\nDOM Node Info\nDOM Node List\nDOM Traversing\nDOM Navigating\nDOM Get Values\nDOM Change Nodes\nDOM Remove Nodes\nDOM Replace Nodes\nDOM Create Nodes\nDOM Add Nodes\nDOM Clone Nodes\nDOM Examples",
+                "heading": "XML DOM"
+            },
+            {
+                "content": "XPath Introduction\nXPath Nodes\nXPath Syntax\nXPath Axes\nXPath Operators\nXPath Examples",
+                "heading": "XPath Tutorial"
+            },
+            {
+                "content": "XSLT Introduction\nXSL Languages\nXSLT Transform\nXSLT <template>\nXSLT <value-of>\nXSLT <for-each>\nXSLT <sort>\nXSLT <if>\nXSLT <choose>\nXSLT Apply\nXSLT on the Client\nXSLT on the Server\nXSLT Edit XML\nXSLT Examples",
+                "heading": "XSLT Tutorial"
+            },
+            {
+                "content": "XQuery Introduction\nXQuery Example\nXQuery FLWOR\nXQuery HTML\nXQuery Terms\nXQuery Syntax\nXQuery Add\nXQuery Select\nXQuery Functions",
+                "heading": "XQuery Tutorial"
+            },
+            {
+                "content": "DTD Introduction\nDTD Building Blocks\nDTD Elements\nDTD Attributes\nDTD Elements vs Attr\nDTD Entities\nDTD Examples",
+                "heading": "XML DTD"
+            },
+            {
+                "content": "XSD Introduction\nXSD How To\nXSD <schema>\nXSD Elements\nXSD Attributes\nXSD Restrictions\nXSD Complex Elements\nXSD Empty\nXSD Elements-only\nXSD Text-only\nXSD Mixed\nXSD Indicators\nXSD <any>\nXSD <anyAttribute>\nXSD Substitution\nXSD Example",
+                "heading": "XSD Schema"
+            },
+            {
+                "content": "XSD String\nXSD Date/Time\nXSD Numeric\nXSD Misc\nXSD Reference",
+                "heading": "XSD Data Types"
+            },
+            {
+                "content": "XML Services\nXML WSDL\nXML SOAP\nXML RDF\nXML RSS",
+                "heading": "Web Services"
+            },
+            {
+                "content": "XML Certificate",
+                "heading": "XML Cert"
+            },
+            {
+                "content": "XML Examples\nXML Quiz\nXML Syllabus\nXML Study Plan",
+                "heading": "XML Examples"
+            },
+            {
+                "content": "In a DTD, XML elements are declared with the following syntax:\n\n<!ELEMENT element-name category>\nor\n<!ELEMENT element-name (element-content)>",
+                "heading": "Declaring Elements"
+            },
+            {
+                "content": "Empty elements are declared with the category keyword EMPTY:\n\n<!ELEMENT element-name EMPTY>\n\nExample:\n\n<!ELEMENT br EMPTY>\n\nXML example:\n\n<br />",
+                "heading": "Empty Elements"
+            },
+            {
+                "content": "Elements with only parsed character data are declared with #PCDATA inside parentheses:\n\n<!ELEMENT element-name (#PCDATA)>\n\nExample:\n\n<!ELEMENT from (#PCDATA)>",
+                "heading": "Elements with Parsed Character Data"
+            },
+            {
+                "content": "Elements declared with the category keyword ANY, can contain any combination of parsable data:\n\n<!ELEMENT element-name ANY>\n\nExample:\n\n<!ELEMENT note ANY>",
+                "heading": "Elements with any Contents"
+            },
+            {
+                "content": "Elements with one or more children are declared with the name of the children elements inside parentheses:\n\n<!ELEMENT element-name (child1)>\n\nor\n\n<!ELEMENT element-name (child1,child2,...)>\n\nExample:\n\n<!ELEMENT note (to,from,heading,body)>\n\nWhen children are declared in a sequence separated by commas, the children must appear in the same sequence in the document.\nIn a full declaration, the children must also be declared, and the children can also have children.\nThe full declaration of the \"note\" element is:\n\n<!ELEMENT note (to,from,heading,body)>\n\n<!ELEMENT to (#PCDATA)>\n\n<!ELEMENT from (#PCDATA)>\n\n<!ELEMENT heading (#PCDATA)>\n\n<!ELEMENT body (#PCDATA)>",
+                "heading": "Elements with Children (sequences)"
+            },
+            {
+                "content": "<!ELEMENT element-name (child-name)>\n\nExample:\n\n<!ELEMENT note (message)>\n\nThe example above declares that the child element \"message\" must occur once, and only once inside the \"note\" element.",
+                "heading": "Declaring Only One Occurrence of an Element"
+            },
+            {
+                "content": "<!ELEMENT element-name (child-name+)>\n\nExample:\n\n<!ELEMENT note (message+)>\n\nThe + sign in the example above declares that the child element \"message\" must occur\none or more times inside the \"note\" element.",
+                "heading": "Declaring Minimum One Occurrence of an Element"
+            },
+            {
+                "content": "<!ELEMENT element-name (child-name*)>\n\nExample:\n\n<!ELEMENT note (message*)>\n\nThe * sign in the example above declares that the child element \"message\" can occur zero or more times inside the \"note\" element.",
+                "heading": "Declaring Zero or More Occurrences of an Element"
+            },
+            {
+                "content": "<!ELEMENT element-name (child-name?)>\n\nExample:\n\n<!ELEMENT note (message?)>\n\nThe ? sign in the example above declares that the child element \"message\" can occur zero or one time inside the \"note\" element.",
+                "heading": "Declaring Zero or One Occurrences of an Element"
+            },
+            {
+                "content": "<!ELEMENT note (to,from,header,(message|body))>\n\nThe example above declares that the \"note\" element must contain a \"to\" element, a \"from\"\nelement, a \"header\" element, and either a \"message\" or a \"body\" element.",
+                "heading": "Declaring either/or Content"
+            },
+            {
+                "content": "<!ELEMENT note (#PCDATA|to|from|header|message)*>\n\nThe example above declares that the \"note\" element can contain zero or more occurrences of parsed character data, \"to\", \"from\", \"header\", or \"message\" elements.\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Declaring Mixed Content"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:18:41Z",
+        "subject": "XML",
+        "title": "DTD - Elements"
+    },
+    {
+        "url": "https://www.w3schools.com/xml/xml_dtd_attributes.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "xml_xml_dtd_attributes",
+        "code_examples": [
+            {
+                "code": "<!ATTLIST element-name attribute-name attribute-type attribute-value>\n\nDTD example:\n\n<!ATTLIST payment type CDATA \"check\">\n\nXML example:\n\n<payment type=\"check\" />",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "DTD:\n\n<!ELEMENT square EMPTY>\n\n<!ATTLIST square width CDATA \"0\">\n\nValid XML:\n\n<square width=\"100\" />",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<!ATTLIST element-name attribute-name attribute-type #REQUIRED>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "DTD:\n\n<!ATTLIST person number CDATA #REQUIRED>\n\nValid XML:\n\n<person number=\"5677\" />\n\nInvalid XML:\n\n<person />",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<!ATTLIST element-name attribute-name attribute-type #IMPLIED>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "DTD:\n\n<!ATTLIST contact fax CDATA #IMPLIED>\n\nValid XML:\n\n<contact fax=\"555-667788\" />\n\nValid XML:\n\n<contact />",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<!ATTLIST element-name attribute-name attribute-type #FIXED \"value\">",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "DTD:\n\n<!ATTLIST sender company CDATA #FIXED \"Microsoft\">\n\nValid XML:\n\n<sender company=\"Microsoft\" />\n\nInvalid XML:\n\n<sender company=\"W3Schools\" />",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<!ATTLIST element-name attribute-name (en1|en2|..) default-value>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "DTD:\n\n<!ATTLIST payment type (check|cash) \"cash\">\n\nXML example:\n\n<payment type=\"check\" />\n\nor\n\n<payment type=\"cash\" />",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Web Tools & Security",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "XML HOME\nXML Introduction\nXML How to use\nXML Tree\nXML Syntax\nXML Elements\nXML Attributes\nXML Namespaces\nXML Display\nXML HttpRequest\nXML Parser\nXML DOM\nXML XPath\nXML XSLT\nXML XQuery\nXML XLink\nXML Validator\nXML DTD\nXML Schema\nXML Server",
+                "heading": "XML Tutorial"
+            },
+            {
+                "content": "AJAX Introduction\nAJAX XMLHttp\nAJAX Request\nAJAX Response\nAJAX XML File\nAJAX PHP\nAJAX ASP\nAJAX Database\nAJAX Applications\nAJAX Examples",
+                "heading": "XML AJAX"
+            },
+            {
+                "content": "DOM Introduction\nDOM Nodes\nDOM Accessing\nDOM Node Info\nDOM Node List\nDOM Traversing\nDOM Navigating\nDOM Get Values\nDOM Change Nodes\nDOM Remove Nodes\nDOM Replace Nodes\nDOM Create Nodes\nDOM Add Nodes\nDOM Clone Nodes\nDOM Examples",
+                "heading": "XML DOM"
+            },
+            {
+                "content": "XPath Introduction\nXPath Nodes\nXPath Syntax\nXPath Axes\nXPath Operators\nXPath Examples",
+                "heading": "XPath Tutorial"
+            },
+            {
+                "content": "XSLT Introduction\nXSL Languages\nXSLT Transform\nXSLT <template>\nXSLT <value-of>\nXSLT <for-each>\nXSLT <sort>\nXSLT <if>\nXSLT <choose>\nXSLT Apply\nXSLT on the Client\nXSLT on the Server\nXSLT Edit XML\nXSLT Examples",
+                "heading": "XSLT Tutorial"
+            },
+            {
+                "content": "XQuery Introduction\nXQuery Example\nXQuery FLWOR\nXQuery HTML\nXQuery Terms\nXQuery Syntax\nXQuery Add\nXQuery Select\nXQuery Functions",
+                "heading": "XQuery Tutorial"
+            },
+            {
+                "content": "DTD Introduction\nDTD Building Blocks\nDTD Elements\nDTD Attributes\nDTD Elements vs Attr\nDTD Entities\nDTD Examples",
+                "heading": "XML DTD"
+            },
+            {
+                "content": "XSD Introduction\nXSD How To\nXSD <schema>\nXSD Elements\nXSD Attributes\nXSD Restrictions\nXSD Complex Elements\nXSD Empty\nXSD Elements-only\nXSD Text-only\nXSD Mixed\nXSD Indicators\nXSD <any>\nXSD <anyAttribute>\nXSD Substitution\nXSD Example",
+                "heading": "XSD Schema"
+            },
+            {
+                "content": "XSD String\nXSD Date/Time\nXSD Numeric\nXSD Misc\nXSD Reference",
+                "heading": "XSD Data Types"
+            },
+            {
+                "content": "XML Services\nXML WSDL\nXML SOAP\nXML RDF\nXML RSS",
+                "heading": "Web Services"
+            },
+            {
+                "content": "XML Certificate",
+                "heading": "XML Cert"
+            },
+            {
+                "content": "XML Examples\nXML Quiz\nXML Syllabus\nXML Study Plan",
+                "heading": "XML Examples"
+            },
+            {
+                "content": "An attribute declaration has the following syntax:\n\n<!ATTLIST element-name attribute-name attribute-type attribute-value>\n\nDTD example:\n\n<!ATTLIST payment type CDATA \"check\">\n\nXML example:\n\n<payment type=\"check\" />\n\nThe attribute-type can be one of the following:\n\nType\nDescription\n\nCDATA\nThe value is character data\n\n(en1|en2|..)\nThe value must be one from an enumerated list\n\nID\nThe value is a unique id \n\nIDREF\nThe value is the id of another element\n\nIDREFS\nThe value is a list of other ids\n\nNMTOKEN\nThe value is a valid XML name\n\nNMTOKENS\nThe value is a list of valid XML names\n\nENTITY\nThe value is an entity \n\nENTITIES\nThe value is a list of entities\n\nNOTATION\nThe value is a name of a notation\n\nxml:\nThe value is a predefined xml value\n\nThe attribute-value can be one of the following:\n\nValue\nExplanation\n\nvalue\nThe default value of the attribute\n\n#REQUIRED\nThe attribute is required\n\n#IMPLIED\nThe attribute is optional\n\n#FIXED value\nThe attribute value is fixed",
+                "heading": "Declaring Attributes"
+            },
+            {
+                "content": "DTD:\n\n<!ELEMENT square EMPTY>\n\n<!ATTLIST square width CDATA \"0\">\n\nValid XML:\n\n<square width=\"100\" />\n\nIn the example above, the \"square\" element is defined to be an empty element with\na \"width\" attribute of  type CDATA. If no width is specified, it has a default\nvalue of 0.",
+                "heading": "A Default Attribute Value"
+            },
+            {
+                "content": "Syntax\n\n<!ATTLIST element-name attribute-name attribute-type #REQUIRED>\n\nExample\n\nDTD:\n\n<!ATTLIST person number CDATA #REQUIRED>\n\nValid XML:\n\n<person number=\"5677\" />\n\nInvalid XML:\n\n<person />\n\nUse the #REQUIRED keyword if you don't have an option for a default value, but still want to force the attribute to be present.",
+                "heading": "#REQUIRED"
+            },
+            {
+                "content": "Syntax\n\n<!ATTLIST element-name attribute-name attribute-type #IMPLIED>\n\nExample\n\nDTD:\n\n<!ATTLIST contact fax CDATA #IMPLIED>\n\nValid XML:\n\n<contact fax=\"555-667788\" />\n\nValid XML:\n\n<contact />\n\nUse the #IMPLIED keyword if you don't want to force the author to include an attribute, and you don't have an option for a default value.",
+                "heading": "#IMPLIED"
+            },
+            {
+                "content": "Syntax\n\n<!ATTLIST element-name attribute-name attribute-type #FIXED \"value\">\n\nExample\n\nDTD:\n\n<!ATTLIST sender company CDATA #FIXED \"Microsoft\">\n\nValid XML:\n\n<sender company=\"Microsoft\" />\n\nInvalid XML:\n\n<sender company=\"W3Schools\" />\n\nUse the #FIXED keyword when you want an attribute to have a fixed value\nwithout allowing the author to change it. If an author includes another value,\nthe XML parser will return an error.",
+                "heading": "#FIXED"
+            },
+            {
+                "content": "Syntax\n\n<!ATTLIST element-name attribute-name (en1|en2|..) default-value>\n\nExample\n\nDTD:\n\n<!ATTLIST payment type (check|cash) \"cash\">\n\nXML example:\n\n<payment type=\"check\" />\n\nor\n\n<payment type=\"cash\" />\n\nUse enumerated attribute values when you want the attribute value to be one of a fixed set of legal values.\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Enumerated Attribute Values"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:18:41Z",
+        "subject": "XML",
+        "title": "DTD - Attributes"
+    },
+    {
+        "url": "https://www.w3schools.com/xml/xml_dtd_el_vs_attr.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "xml_xml_dtd_el_vs_attr",
+        "code_examples": [
+            {
+                "code": "<person sex=\"female\">\n\n<firstname>Anna</firstname>\n\n<lastname>Smith</lastname>\n\n</person>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<person>\n\n<sex>female</sex>\n\n<firstname>Anna</firstname>\n\n<lastname>Smith</lastname>\n\n</person>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<note date=\"12/11/2002\">\n\n<to>Tove</to>\n\n<from>Jani</from>\n\n<heading>Reminder</heading>\n\n<body>Don't forget me this weekend!</body>\n\n</note>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<note>\n\n<date>12/11/2002</date>\n\n<to>Tove</to>\n\n<from>Jani</from>\n\n<heading>Reminder</heading>\n\n<body>Don't forget me this weekend!</body>\n\n</note>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<note>\n\n<date>\n\n <day>12</day>\n\n <month>11</month>\n\n <year>2002</year>\n\n</date>\n\n<to>Tove</to>\n\n<from>Jani</from>\n\n<heading>Reminder</heading>\n\n<body>Don't forget me this weekend!</body>\n\n</note>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<note day=\"12\" month=\"11\" year=\"2002\"\n\nto=\"Tove\" from=\"Jani\" heading=\"Reminder\"\n\nbody=\"Don't forget me this weekend!\">\n\n</note>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<messages>\n\n <note id=\"p501\">\n\n <to>Tove</to>\n\n <from>Jani</from>\n\n <heading>Reminder</heading>\n\n <body>Don't forget me this weekend!</body>\n\n </note>\n\n <note id=\"p502\">\n\n <to>Jani</to>\n\n <from>Tove</from>\n\n <heading>Re: Reminder</heading>\n\n <body>I will not!</body>\n\n </note>\n\n</messages>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Web Tools & Security",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "XML HOME\nXML Introduction\nXML How to use\nXML Tree\nXML Syntax\nXML Elements\nXML Attributes\nXML Namespaces\nXML Display\nXML HttpRequest\nXML Parser\nXML DOM\nXML XPath\nXML XSLT\nXML XQuery\nXML XLink\nXML Validator\nXML DTD\nXML Schema\nXML Server",
+                "heading": "XML Tutorial"
+            },
+            {
+                "content": "AJAX Introduction\nAJAX XMLHttp\nAJAX Request\nAJAX Response\nAJAX XML File\nAJAX PHP\nAJAX ASP\nAJAX Database\nAJAX Applications\nAJAX Examples",
+                "heading": "XML AJAX"
+            },
+            {
+                "content": "DOM Introduction\nDOM Nodes\nDOM Accessing\nDOM Node Info\nDOM Node List\nDOM Traversing\nDOM Navigating\nDOM Get Values\nDOM Change Nodes\nDOM Remove Nodes\nDOM Replace Nodes\nDOM Create Nodes\nDOM Add Nodes\nDOM Clone Nodes\nDOM Examples",
+                "heading": "XML DOM"
+            },
+            {
+                "content": "XPath Introduction\nXPath Nodes\nXPath Syntax\nXPath Axes\nXPath Operators\nXPath Examples",
+                "heading": "XPath Tutorial"
+            },
+            {
+                "content": "XSLT Introduction\nXSL Languages\nXSLT Transform\nXSLT <template>\nXSLT <value-of>\nXSLT <for-each>\nXSLT <sort>\nXSLT <if>\nXSLT <choose>\nXSLT Apply\nXSLT on the Client\nXSLT on the Server\nXSLT Edit XML\nXSLT Examples",
+                "heading": "XSLT Tutorial"
+            },
+            {
+                "content": "XQuery Introduction\nXQuery Example\nXQuery FLWOR\nXQuery HTML\nXQuery Terms\nXQuery Syntax\nXQuery Add\nXQuery Select\nXQuery Functions",
+                "heading": "XQuery Tutorial"
+            },
+            {
+                "content": "DTD Introduction\nDTD Building Blocks\nDTD Elements\nDTD Attributes\nDTD Elements vs Attr\nDTD Entities\nDTD Examples",
+                "heading": "XML DTD"
+            },
+            {
+                "content": "XSD Introduction\nXSD How To\nXSD <schema>\nXSD Elements\nXSD Attributes\nXSD Restrictions\nXSD Complex Elements\nXSD Empty\nXSD Elements-only\nXSD Text-only\nXSD Mixed\nXSD Indicators\nXSD <any>\nXSD <anyAttribute>\nXSD Substitution\nXSD Example",
+                "heading": "XSD Schema"
+            },
+            {
+                "content": "XSD String\nXSD Date/Time\nXSD Numeric\nXSD Misc\nXSD Reference",
+                "heading": "XSD Data Types"
+            },
+            {
+                "content": "XML Services\nXML WSDL\nXML SOAP\nXML RDF\nXML RSS",
+                "heading": "Web Services"
+            },
+            {
+                "content": "XML Certificate",
+                "heading": "XML Cert"
+            },
+            {
+                "content": "XML Examples\nXML Quiz\nXML Syllabus\nXML Study Plan",
+                "heading": "XML Examples"
+            },
+            {
+                "content": "Data can be stored in child elements or in attributes.\n\nTake a look at these examples:\n\n<person sex=\"female\">\n\n<firstname>Anna</firstname>\n\n<lastname>Smith</lastname>\n\n</person>\n\n<person>\n\n<sex>female</sex>\n\n<firstname>Anna</firstname>\n\n<lastname>Smith</lastname>\n\n</person>\n\nIn the first example sex is an attribute. In the last, sex is a child element. Both examples provide the same information.\n\nThere are no rules about when to use attributes, and when to use child elements. My experience is that attributes are handy in HTML, but in XML you should try to avoid them. Use child elements if the information feels like data.",
+                "heading": "Use of Elements vs. Attributes"
+            },
+            {
+                "content": "I like to store data in child elements.\n\nThe following three XML documents contain exactly the same information:\n\nA date attribute is used in the first example:\n\n<note date=\"12/11/2002\">\n\n<to>Tove</to>\n\n<from>Jani</from>\n\n<heading>Reminder</heading>\n\n<body>Don't forget me this weekend!</body>\n\n</note>\n\nA date element is used in the second example:\n\n<note>\n\n<date>12/11/2002</date>\n\n<to>Tove</to>\n\n<from>Jani</from>\n\n<heading>Reminder</heading>\n\n<body>Don't forget me this weekend!</body>\n\n</note>\n\nAn expanded date element is used in the third: (THIS IS MY FAVORITE):\n\n<note>\n\n<date>\n\n <day>12</day>\n\n <month>11</month>\n\n <year>2002</year>\n\n</date>\n\n<to>Tove</to>\n\n<from>Jani</from>\n\n<heading>Reminder</heading>\n\n<body>Don't forget me this weekend!</body>\n\n</note>",
+                "heading": "My Favorite Way"
+            },
+            {
+                "content": "Should you avoid using attributes?\n\nSome of the problems with attributes are:\n\n attributes cannot contain multiple values (child elements can)\n\n attributes are not easily expandable (for future changes)\n\n attributes cannot describe structures (child elements can)\n\n attributes are more difficult to manipulate by program code\n\n attribute values are not easy to test against a DTD\n\nIf you use attributes as containers for data, you end up with documents that are difficult to read and maintain. Try to use elements to\ndescribe data. Use attributes only to provide information that is not relevant to the data.\n\nDon't end up like this (this is not how XML should be used):\n\n<note day=\"12\" month=\"11\" year=\"2002\"\n\nto=\"Tove\" from=\"Jani\" heading=\"Reminder\"\n\nbody=\"Don't forget me this weekend!\">\n\n</note>",
+                "heading": "Avoid using attributes?"
+            },
+            {
+                "content": "Rules always have exceptions.\n\nMy rule about attributes has one exception:\n\nSometimes I assign ID references to elements. These ID references can be used to access XML elements in much the same way as the NAME or\nID attributes in HTML. This example demonstrates this:\n\n<messages>\n\n <note id=\"p501\">\n\n <to>Tove</to>\n\n <from>Jani</from>\n\n <heading>Reminder</heading>\n\n <body>Don't forget me this weekend!</body>\n\n </note>\n\n <note id=\"p502\">\n\n <to>Jani</to>\n\n <from>Tove</from>\n\n <heading>Re: Reminder</heading>\n\n <body>I will not!</body>\n\n </note>\n\n</messages>\n\nThe ID in these examples is just a counter, or a unique identifier, to identify the different notes in the XML file, and not a part of the note data.\n\nWhat I am trying to say here is that metadata (data about data) should be stored as attributes, and that data itself should be stored as elements.\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "An Exception to my Attribute Rule"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:18:41Z",
+        "subject": "XML",
+        "title": "XML Elements vs. Attributes"
+    },
+    {
+        "url": "https://www.w3schools.com/xml/xml_dtd_entities.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "xml_xml_dtd_entities",
+        "code_examples": [
+            {
+                "code": "<!ENTITY entity-name \"entity-value\">",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "DTD Example:\n\n<!ENTITY writer \"Donald Duck.\">\n\n<!ENTITY copyright \"Copyright W3Schools.\">\n\nXML example:\n\n<author>&writer;&copyright;</author>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<!ENTITY entity-name SYSTEM \"URI/URL\">",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "DTD Example:\n\n<!ENTITY writer SYSTEM \"https://www.w3schools.com/entities.dtd\">\n\n<!ENTITY copyright SYSTEM \"https://www.w3schools.com/entities.dtd\">\n\nXML example:\n\n<author>&writer;&copyright;</author>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Web Tools & Security",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "XML HOME\nXML Introduction\nXML How to use\nXML Tree\nXML Syntax\nXML Elements\nXML Attributes\nXML Namespaces\nXML Display\nXML HttpRequest\nXML Parser\nXML DOM\nXML XPath\nXML XSLT\nXML XQuery\nXML XLink\nXML Validator\nXML DTD\nXML Schema\nXML Server",
+                "heading": "XML Tutorial"
+            },
+            {
+                "content": "AJAX Introduction\nAJAX XMLHttp\nAJAX Request\nAJAX Response\nAJAX XML File\nAJAX PHP\nAJAX ASP\nAJAX Database\nAJAX Applications\nAJAX Examples",
+                "heading": "XML AJAX"
+            },
+            {
+                "content": "DOM Introduction\nDOM Nodes\nDOM Accessing\nDOM Node Info\nDOM Node List\nDOM Traversing\nDOM Navigating\nDOM Get Values\nDOM Change Nodes\nDOM Remove Nodes\nDOM Replace Nodes\nDOM Create Nodes\nDOM Add Nodes\nDOM Clone Nodes\nDOM Examples",
+                "heading": "XML DOM"
+            },
+            {
+                "content": "XPath Introduction\nXPath Nodes\nXPath Syntax\nXPath Axes\nXPath Operators\nXPath Examples",
+                "heading": "XPath Tutorial"
+            },
+            {
+                "content": "XSLT Introduction\nXSL Languages\nXSLT Transform\nXSLT <template>\nXSLT <value-of>\nXSLT <for-each>\nXSLT <sort>\nXSLT <if>\nXSLT <choose>\nXSLT Apply\nXSLT on the Client\nXSLT on the Server\nXSLT Edit XML\nXSLT Examples",
+                "heading": "XSLT Tutorial"
+            },
+            {
+                "content": "XQuery Introduction\nXQuery Example\nXQuery FLWOR\nXQuery HTML\nXQuery Terms\nXQuery Syntax\nXQuery Add\nXQuery Select\nXQuery Functions",
+                "heading": "XQuery Tutorial"
+            },
+            {
+                "content": "DTD Introduction\nDTD Building Blocks\nDTD Elements\nDTD Attributes\nDTD Elements vs Attr\nDTD Entities\nDTD Examples",
+                "heading": "XML DTD"
+            },
+            {
+                "content": "XSD Introduction\nXSD How To\nXSD <schema>\nXSD Elements\nXSD Attributes\nXSD Restrictions\nXSD Complex Elements\nXSD Empty\nXSD Elements-only\nXSD Text-only\nXSD Mixed\nXSD Indicators\nXSD <any>\nXSD <anyAttribute>\nXSD Substitution\nXSD Example",
+                "heading": "XSD Schema"
+            },
+            {
+                "content": "XSD String\nXSD Date/Time\nXSD Numeric\nXSD Misc\nXSD Reference",
+                "heading": "XSD Data Types"
+            },
+            {
+                "content": "XML Services\nXML WSDL\nXML SOAP\nXML RDF\nXML RSS",
+                "heading": "Web Services"
+            },
+            {
+                "content": "XML Certificate",
+                "heading": "XML Cert"
+            },
+            {
+                "content": "XML Examples\nXML Quiz\nXML Syllabus\nXML Study Plan",
+                "heading": "XML Examples"
+            },
+            {
+                "content": "Syntax\n\n<!ENTITY entity-name \"entity-value\">\n\nExample\n\nDTD Example:\n\n<!ENTITY writer \"Donald Duck.\">\n\n<!ENTITY copyright \"Copyright W3Schools.\">\n\nXML example:\n\n<author>&writer;&copyright;</author>\n\nNote: An entity has three parts: an ampersand (&), an entity name, and a semicolon (;).",
+                "heading": "An Internal Entity Declaration"
+            },
+            {
+                "content": "Syntax\n\n<!ENTITY entity-name SYSTEM \"URI/URL\">\n\nExample\n\nDTD Example:\n\n<!ENTITY writer SYSTEM \"https://www.w3schools.com/entities.dtd\">\n\n<!ENTITY copyright SYSTEM \"https://www.w3schools.com/entities.dtd\">\n\nXML example:\n\n<author>&writer;&copyright;</author>",
+                "heading": "An External Entity Declaration"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:18:42Z",
+        "subject": "XML",
+        "title": "DTD - Entities"
+    },
+    {
+        "url": "https://www.w3schools.com/xml/xml_dtd_examples.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "xml_xml_dtd_examples",
+        "code_examples": [
+            {
+                "code": "<!DOCTYPE TVSCHEDULE [\n\n<!ELEMENT TVSCHEDULE (CHANNEL+)>\n\n<!ELEMENT CHANNEL (BANNER,DAY+)>\n\n<!ELEMENT BANNER (#PCDATA)>\n\n<!ELEMENT DAY (DATE,(HOLIDAY|PROGRAMSLOT)+)>\n\n<!ELEMENT HOLIDAY (#PCDATA)>\n\n<!ELEMENT DATE (#PCDATA)>\n\n<!ELEMENT PROGRAMSLOT (TIME,TITLE,DESCRIPTION?)>\n\n<!ELEMENT TIME (#PCDATA)>\n\n<!ELEMENT TITLE (#PCDATA)> \n\n<!ELEMENT DESCRIPTION (#PCDATA)>\n\n<!ATTLIST TVSCHEDULE NAME CDATA #REQUIRED>\n\n<!ATTLIST CHANNEL CHAN CDATA #REQUIRED>\n\n<!ATTLIST PROGRAMSLOT VTR CDATA #IMPLIED>\n\n<!ATTLIST TITLE RATING CDATA #IMPLIED>\n\n<!ATTLIST TITLE LANGUAGE CDATA #IMPLIED>\n\n]>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<!DOCTYPE NEWSPAPER [\n\n<!ELEMENT NEWSPAPER (ARTICLE+)>\n\n<!ELEMENT ARTICLE (HEADLINE,BYLINE,LEAD,BODY,NOTES)>\n\n<!ELEMENT HEADLINE (#PCDATA)>\n\n<!ELEMENT BYLINE (#PCDATA)>\n\n<!ELEMENT LEAD (#PCDATA)>\n\n<!ELEMENT BODY (#PCDATA)>\n\n<!ELEMENT NOTES (#PCDATA)>\n\n<!ATTLIST ARTICLE AUTHOR CDATA #REQUIRED>\n\n<!ATTLIST ARTICLE EDITOR CDATA #IMPLIED>\n\n<!ATTLIST ARTICLE DATE CDATA #IMPLIED>\n\n<!ATTLIST ARTICLE EDITION CDATA #IMPLIED>\n\n<!ENTITY NEWSPAPER \"Vervet Logic Times\">\n\n<!ENTITY PUBLISHER \"Vervet Logic Press\">\n\n<!ENTITY COPYRIGHT \"Copyright 1998 Vervet Logic Press\">\n\n]>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<!DOCTYPE CATALOG [\n\n<!ENTITY AUTHOR \"John Doe\">\n\n<!ENTITY COMPANY \"JD Power Tools, Inc.\">\n\n<!ENTITY EMAIL \"jd@jd-tools.com\">\n\n<!ELEMENT CATALOG (PRODUCT+)>\n\n<!ELEMENT PRODUCT\n\n(SPECIFICATIONS+,OPTIONS?,PRICE+,NOTES?)>\n\n<!ATTLIST PRODUCT\n\nNAME CDATA #IMPLIED\n\nCATEGORY (HandTool|Table|Shop-Professional) \"HandTool\"\n\nPARTNUM CDATA #IMPLIED\n\nPLANT (Pittsburgh|Milwaukee|Chicago) \"Chicago\"\n\nINVENTORY (InStock|Backordered|Discontinued) \"InStock\">\n\n<!ELEMENT SPECIFICATIONS (#PCDATA)>\n\n<!ATTLIST SPECIFICATIONS\n\nWEIGHT CDATA #IMPLIED\n\nPOWER CDATA #IMPLIED>\n\n<!ELEMENT OPTIONS (#PCDATA)>\n\n<!ATTLIST OPTIONS\n\nFINISH (Metal|Polished|Matte) \"Matte\"\n\nADAPTER (Included|Optional|NotApplicable) \"Included\"\n\nCASE (HardShell|Soft|NotApplicable) \"HardShell\">\n\n<!ELEMENT PRICE (#PCDATA)>\n\n<!ATTLIST PRICE\n\nMSRP CDATA #IMPLIED\n\nWHOLESALE CDATA #IMPLIED\n\nSTREET CDATA #IMPLIED\n\nSHIPPING CDATA #IMPLIED>\n\n<!ELEMENT NOTES (#PCDATA)>\n\n]>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Web Tools & Security",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "XML HOME\nXML Introduction\nXML How to use\nXML Tree\nXML Syntax\nXML Elements\nXML Attributes\nXML Namespaces\nXML Display\nXML HttpRequest\nXML Parser\nXML DOM\nXML XPath\nXML XSLT\nXML XQuery\nXML XLink\nXML Validator\nXML DTD\nXML Schema\nXML Server",
+                "heading": "XML Tutorial"
+            },
+            {
+                "content": "AJAX Introduction\nAJAX XMLHttp\nAJAX Request\nAJAX Response\nAJAX XML File\nAJAX PHP\nAJAX ASP\nAJAX Database\nAJAX Applications\nAJAX Examples",
+                "heading": "XML AJAX"
+            },
+            {
+                "content": "DOM Introduction\nDOM Nodes\nDOM Accessing\nDOM Node Info\nDOM Node List\nDOM Traversing\nDOM Navigating\nDOM Get Values\nDOM Change Nodes\nDOM Remove Nodes\nDOM Replace Nodes\nDOM Create Nodes\nDOM Add Nodes\nDOM Clone Nodes\nDOM Examples",
+                "heading": "XML DOM"
+            },
+            {
+                "content": "XPath Introduction\nXPath Nodes\nXPath Syntax\nXPath Axes\nXPath Operators\nXPath Examples",
+                "heading": "XPath Tutorial"
+            },
+            {
+                "content": "XSLT Introduction\nXSL Languages\nXSLT Transform\nXSLT <template>\nXSLT <value-of>\nXSLT <for-each>\nXSLT <sort>\nXSLT <if>\nXSLT <choose>\nXSLT Apply\nXSLT on the Client\nXSLT on the Server\nXSLT Edit XML\nXSLT Examples",
+                "heading": "XSLT Tutorial"
+            },
+            {
+                "content": "XQuery Introduction\nXQuery Example\nXQuery FLWOR\nXQuery HTML\nXQuery Terms\nXQuery Syntax\nXQuery Add\nXQuery Select\nXQuery Functions",
+                "heading": "XQuery Tutorial"
+            },
+            {
+                "content": "DTD Introduction\nDTD Building Blocks\nDTD Elements\nDTD Attributes\nDTD Elements vs Attr\nDTD Entities\nDTD Examples",
+                "heading": "XML DTD"
+            },
+            {
+                "content": "XSD Introduction\nXSD How To\nXSD <schema>\nXSD Elements\nXSD Attributes\nXSD Restrictions\nXSD Complex Elements\nXSD Empty\nXSD Elements-only\nXSD Text-only\nXSD Mixed\nXSD Indicators\nXSD <any>\nXSD <anyAttribute>\nXSD Substitution\nXSD Example",
+                "heading": "XSD Schema"
+            },
+            {
+                "content": "XSD String\nXSD Date/Time\nXSD Numeric\nXSD Misc\nXSD Reference",
+                "heading": "XSD Data Types"
+            },
+            {
+                "content": "XML Services\nXML WSDL\nXML SOAP\nXML RDF\nXML RSS",
+                "heading": "Web Services"
+            },
+            {
+                "content": "XML Certificate",
+                "heading": "XML Cert"
+            },
+            {
+                "content": "XML Examples\nXML Quiz\nXML Syllabus\nXML Study Plan",
+                "heading": "XML Examples"
+            },
+            {
+                "content": "<!DOCTYPE TVSCHEDULE [\n\n<!ELEMENT TVSCHEDULE (CHANNEL+)>\n\n<!ELEMENT CHANNEL (BANNER,DAY+)>\n\n<!ELEMENT BANNER (#PCDATA)>\n\n<!ELEMENT DAY (DATE,(HOLIDAY|PROGRAMSLOT)+)>\n\n<!ELEMENT HOLIDAY (#PCDATA)>\n\n<!ELEMENT DATE (#PCDATA)>\n\n<!ELEMENT PROGRAMSLOT (TIME,TITLE,DESCRIPTION?)>\n\n<!ELEMENT TIME (#PCDATA)>\n\n<!ELEMENT TITLE (#PCDATA)> \n\n<!ELEMENT DESCRIPTION (#PCDATA)>\n\n<!ATTLIST TVSCHEDULE NAME CDATA #REQUIRED>\n\n<!ATTLIST CHANNEL CHAN CDATA #REQUIRED>\n\n<!ATTLIST PROGRAMSLOT VTR CDATA #IMPLIED>\n\n<!ATTLIST TITLE RATING CDATA #IMPLIED>\n\n<!ATTLIST TITLE LANGUAGE CDATA #IMPLIED>\n\n]>",
+                "heading": "TV Schedule DTD"
+            },
+            {
+                "content": "<!DOCTYPE NEWSPAPER [\n\n<!ELEMENT NEWSPAPER (ARTICLE+)>\n\n<!ELEMENT ARTICLE (HEADLINE,BYLINE,LEAD,BODY,NOTES)>\n\n<!ELEMENT HEADLINE (#PCDATA)>\n\n<!ELEMENT BYLINE (#PCDATA)>\n\n<!ELEMENT LEAD (#PCDATA)>\n\n<!ELEMENT BODY (#PCDATA)>\n\n<!ELEMENT NOTES (#PCDATA)>\n\n<!ATTLIST ARTICLE AUTHOR CDATA #REQUIRED>\n\n<!ATTLIST ARTICLE EDITOR CDATA #IMPLIED>\n\n<!ATTLIST ARTICLE DATE CDATA #IMPLIED>\n\n<!ATTLIST ARTICLE EDITION CDATA #IMPLIED>\n\n<!ENTITY NEWSPAPER \"Vervet Logic Times\">\n\n<!ENTITY PUBLISHER \"Vervet Logic Press\">\n\n<!ENTITY COPYRIGHT \"Copyright 1998 Vervet Logic Press\">\n\n]>",
+                "heading": "Newspaper Article DTD"
+            },
+            {
+                "content": "<!DOCTYPE CATALOG [\n\n<!ENTITY AUTHOR \"John Doe\">\n\n<!ENTITY COMPANY \"JD Power Tools, Inc.\">\n\n<!ENTITY EMAIL \"jd@jd-tools.com\">\n\n<!ELEMENT CATALOG (PRODUCT+)>\n\n<!ELEMENT PRODUCT\n\n(SPECIFICATIONS+,OPTIONS?,PRICE+,NOTES?)>\n\n<!ATTLIST PRODUCT\n\nNAME CDATA #IMPLIED\n\nCATEGORY (HandTool|Table|Shop-Professional) \"HandTool\"\n\nPARTNUM CDATA #IMPLIED\n\nPLANT (Pittsburgh|Milwaukee|Chicago) \"Chicago\"\n\nINVENTORY (InStock|Backordered|Discontinued) \"InStock\">\n\n<!ELEMENT SPECIFICATIONS (#PCDATA)>\n\n<!ATTLIST SPECIFICATIONS\n\nWEIGHT CDATA #IMPLIED\n\nPOWER CDATA #IMPLIED>\n\n<!ELEMENT OPTIONS (#PCDATA)>\n\n<!ATTLIST OPTIONS\n\nFINISH (Metal|Polished|Matte) \"Matte\"\n\nADAPTER (Included|Optional|NotApplicable) \"Included\"\n\nCASE (HardShell|Soft|NotApplicable) \"HardShell\">\n\n<!ELEMENT PRICE (#PCDATA)>\n\n<!ATTLIST PRICE\n\nMSRP CDATA #IMPLIED\n\nWHOLESALE CDATA #IMPLIED\n\nSTREET CDATA #IMPLIED\n\nSHIPPING CDATA #IMPLIED>\n\n<!ELEMENT NOTES (#PCDATA)>\n\n]>\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Product Catalog DTD"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:18:42Z",
+        "subject": "XML",
+        "title": "DTD Examples"
+    },
+    {
+        "url": "https://www.w3schools.com/xml/xml_services.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "xml_xml_services",
+        "code_examples": [
+            {
+                "code": "<%@ WebService Language=\"VBScript\" Class=\"TempConvert\" %>\n\nImports System\n\nImports System.Web.Services\n\nPublic Class TempConvert :Inherits WebService\n\n<WebMethod()> Public Function FahrenheitToCelsius(ByVal Fahrenheit As String) As String\n\n dim fahr\n\n fahr=trim(replace(Fahrenheit,\",\",\".\"))\n\n if fahr=\"\" or IsNumeric(fahr)=false then return \"Error\"\n\n return ((((fahr) - 32) / 9) * 5)\n\nend function\n\n<WebMethod()> Public Function CelsiusToFahrenheit(ByVal Celsius As String) As String\n\n dim cel\n\n cel=trim(replace(Celsius,\",\",\".\"))\n\n if cel=\"\" or IsNumeric(cel)=false then return \"Error\"\n\n return ((((cel) * 9) / 5) + 32)\n\nend function\n\nend class",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<%@ WebService Language=\"VBScript\" Class=\"TempConvert\" %>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Imports System\n\nImports System.Web.Services",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Public Class TempConvert :Inherits WebService",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<WebMethod()> Public Function FahrenheitToCelsius(ByVal Fahrenheit As String) As String\n\n dim fahr\n\n fahr=trim(replace(Fahrenheit,\",\",\".\"))\n\n if fahr=\"\" or IsNumeric(fahr)=false then return \"Error\"\n\n return ((((fahr) - 32) / 9) * 5)\n\nend function\n\n<WebMethod()> Public Function CelsiusToFahrenheit(ByVal Celsius As String) As String\n\n dim cel\n\n cel=trim(replace(Celsius,\",\",\".\"))\n\n if cel=\"\" or IsNumeric(cel)=false then return \"Error\"\n\n return ((((cel) * 9) / 5) + 32)\n\nend function",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "end class",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<form\naction='tempconvert.asmx/FahrenheitToCelsius'\n\nmethod=\"post\" target=\"_blank\">\n\n<table>\n\n <tr>\n\n <td>Fahrenheit to Celsius:</td>\n\n <td>\n\n    <input class=\"frmInput\" type=\"text\"\n size=\"30\" name=\"Fahrenheit\">\n\n    </td>\n\n </tr>\n\n <tr>\n\n <td></td>\n\n <td align=\"right\">\n\n     <input type=\"submit\"\n value=\"Submit\" class=\"button\">\n\n     </td>\n\n </tr>\n\n</table>\n\n</form>\n\n<form\naction='tempconvert.asmx/CelsiusToFahrenheit'\n\nmethod=\"post\" target=\"_blank\">\n\n<table>\n\n <tr>\n\n <td>Celsius to Fahrenheit:</td>\n\n <td>\n\n    <input class=\"frmInput\" type=\"text\"\n size=\"30\" name=\"Celsius\">\n\n    </td>\n\n </tr>\n\n <tr>\n\n <td></td>\n\n <td align=\"right\">\n\n    <input type=\"submit\"\n value=\"Submit\" class=\"button\">\n\n    </td>\n\n </tr>\n\n</table>\n\n</form>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Web Tools & Security",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "XML HOME\nXML Introduction\nXML How to use\nXML Tree\nXML Syntax\nXML Elements\nXML Attributes\nXML Namespaces\nXML Display\nXML HttpRequest\nXML Parser\nXML DOM\nXML XPath\nXML XSLT\nXML XQuery\nXML XLink\nXML Validator\nXML DTD\nXML Schema\nXML Server",
+                "heading": "XML Tutorial"
+            },
+            {
+                "content": "AJAX Introduction\nAJAX XMLHttp\nAJAX Request\nAJAX Response\nAJAX XML File\nAJAX PHP\nAJAX ASP\nAJAX Database\nAJAX Applications\nAJAX Examples",
+                "heading": "XML AJAX"
+            },
+            {
+                "content": "DOM Introduction\nDOM Nodes\nDOM Accessing\nDOM Node Info\nDOM Node List\nDOM Traversing\nDOM Navigating\nDOM Get Values\nDOM Change Nodes\nDOM Remove Nodes\nDOM Replace Nodes\nDOM Create Nodes\nDOM Add Nodes\nDOM Clone Nodes\nDOM Examples",
+                "heading": "XML DOM"
+            },
+            {
+                "content": "XPath Introduction\nXPath Nodes\nXPath Syntax\nXPath Axes\nXPath Operators\nXPath Examples",
+                "heading": "XPath Tutorial"
+            },
+            {
+                "content": "XSLT Introduction\nXSL Languages\nXSLT Transform\nXSLT <template>\nXSLT <value-of>\nXSLT <for-each>\nXSLT <sort>\nXSLT <if>\nXSLT <choose>\nXSLT Apply\nXSLT on the Client\nXSLT on the Server\nXSLT Edit XML\nXSLT Examples",
+                "heading": "XSLT Tutorial"
+            },
+            {
+                "content": "XQuery Introduction\nXQuery Example\nXQuery FLWOR\nXQuery HTML\nXQuery Terms\nXQuery Syntax\nXQuery Add\nXQuery Select\nXQuery Functions",
+                "heading": "XQuery Tutorial"
+            },
+            {
+                "content": "DTD Introduction\nDTD Building Blocks\nDTD Elements\nDTD Attributes\nDTD Elements vs Attr\nDTD Entities\nDTD Examples",
+                "heading": "XML DTD"
+            },
+            {
+                "content": "XSD Introduction\nXSD How To\nXSD <schema>\nXSD Elements\nXSD Attributes\nXSD Restrictions\nXSD Complex Elements\nXSD Empty\nXSD Elements-only\nXSD Text-only\nXSD Mixed\nXSD Indicators\nXSD <any>\nXSD <anyAttribute>\nXSD Substitution\nXSD Example",
+                "heading": "XSD Schema"
+            },
+            {
+                "content": "XSD String\nXSD Date/Time\nXSD Numeric\nXSD Misc\nXSD Reference",
+                "heading": "XSD Data Types"
+            },
+            {
+                "content": "XML Services\nXML WSDL\nXML SOAP\nXML RDF\nXML RSS",
+                "heading": "Web Services"
+            },
+            {
+                "content": "XML Certificate",
+                "heading": "XML Cert"
+            },
+            {
+                "content": "XML Examples\nXML Quiz\nXML Syllabus\nXML Study Plan",
+                "heading": "XML Examples"
+            },
+            {
+                "content": "WSDL stands for Web Services Description Language\n\n WSDL is an XML-based language for describing Web services.\n\n WSDL is a W3C recommendation",
+                "heading": "WSDL"
+            },
+            {
+                "content": "SOAP stands for Simple Object Access Protocol\n\n SOAP is an XML based protocol for accessing Web Services.\n\n SOAP is based on XML\n\n SOAP is a W3C recommendation",
+                "heading": "SOAP"
+            },
+            {
+                "content": "RDF stands for Resource Description Framework\n\n RDF is a framework for describing resources on the web\n\n RDF is written in XML\n\n RDF is a W3C Recommendation",
+                "heading": "RDF"
+            },
+            {
+                "content": "RSS stands for Really Simple Syndication\n\n RSS allows you to syndicate your site content\n\n RSS defines an easy way to share and view headlines and content\n\n RSS files can be automatically updated\n\n RSS allows personalized views for different sites\n\n RSS is written in XML",
+                "heading": "RSS"
+            },
+            {
+                "content": "Before you study web services you should have a basic understanding of XML and XML Namespaces.\n\nIf you want to study these subjects first, please read our XML Tutorial.",
+                "heading": "What You Should Already Know"
+            },
+            {
+                "content": "Web services are application components\n\n Web services communicate using open protocols\n\n Web services are self-contained and self-describing\n\n Web services can be discovered using UDDI\n\n Web services can be used by other applications\n\n HTTP and XML is the basis for Web services",
+                "heading": "Web Services"
+            },
+            {
+                "content": "When all major platforms could access the Web using Web browsers, different \nplatforms couldn't interact. For these platforms to work together, Web-applications \nwere developed. \n\nWeb-applications are simply applications that run on the web. These are built \naround the Web browser standards and can be used by any browser on any \nplatform.",
+                "heading": "Interoperability has Highest Priority"
+            },
+            {
+                "content": "By using Web services, your application can publish its function or message to \nthe rest of the world.\n\nWeb services use XML to code and to decode data, and SOAP to transport it \n(using open protocols).\n\nWith Web services, your accounting department's Win 2k server's billing system \ncan connect with your IT supplier's UNIX server.",
+                "heading": "Web Services take Web-applications to the Next Level"
+            },
+            {
+                "content": "Reusable application-components.\n\nThere are things applications need very often. \nSo why make these over and over again? \n\nWeb services can offer application-components like: currency conversion, \nweather reports, or even language translation as services. \n\nConnect existing software.\n\nWeb services can help to solve the interoperability problem \nby giving different applications a way to link their data. \n\nWith Web services you can exchange data between different applications and \ndifferent platforms.\n\nAny application can have a Web Service component.\n\nWeb Services can be created regardless of programming language.",
+                "heading": "Web Services have Two Types of Uses"
+            },
+            {
+                "content": "In the following example we will use ASP.NET to create a simple Web Service \nthat converts the temperature from Fahrenheit to Celsius, and vice versa:\n\n<%@ WebService Language=\"VBScript\" Class=\"TempConvert\" %>\n\nImports System\n\nImports System.Web.Services\n\nPublic Class TempConvert :Inherits WebService\n\n<WebMethod()> Public Function FahrenheitToCelsius(ByVal Fahrenheit As String) As String\n\n dim fahr\n\n fahr=trim(replace(Fahrenheit,\",\",\".\"))\n\n if fahr=\"\" or IsNumeric(fahr)=false then return \"Error\"\n\n return ((((fahr) - 32) / 9) * 5)\n\nend function\n\n<WebMethod()> Public Function CelsiusToFahrenheit(ByVal Celsius As String) As String\n\n dim cel\n\n cel=trim(replace(Celsius,\",\",\".\"))\n\n if cel=\"\" or IsNumeric(cel)=false then return \"Error\"\n\n return ((((cel) * 9) / 5) + 32)\n\nend function\n\nend class\n\nThis document is saved as an .asmx file. This is the ASP.NET file extension for XML Web Services.",
+                "heading": "A Web Service Example"
+            },
+            {
+                "content": "Note: To run this example, you will need a .NET server.\n\nThe first line in the example states that this is a Web Service, written in VBScript, and has the class name \"TempConvert\":\n\n<%@ WebService Language=\"VBScript\" Class=\"TempConvert\" %>\n\nThe next lines import the namespace \"System.Web.Services\" from the .NET framework:\n\nImports System\n\nImports System.Web.Services\n\nThe next line defines that the \"TempConvert\" class is a WebService class type:\n\nPublic Class TempConvert :Inherits WebService\n\nThe next steps are basic VB programming. This application has two functions. One to convert from Fahrenheit to Celsius, and one to convert from Celsius to Fahrenheit.\n\nThe only difference from a normal application is that this function is defined as a \"WebMethod()\". \n\nUse \"WebMethod()\" to convert the functions in your application into web services:\n\n<WebMethod()> Public Function FahrenheitToCelsius(ByVal Fahrenheit As String) As String\n\n dim fahr\n\n fahr=trim(replace(Fahrenheit,\",\",\".\"))\n\n if fahr=\"\" or IsNumeric(fahr)=false then return \"Error\"\n\n return ((((fahr) - 32) / 9) * 5)\n\nend function\n\n<WebMethod()> Public Function CelsiusToFahrenheit(ByVal Celsius As String) As String\n\n dim cel\n\n cel=trim(replace(Celsius,\",\",\".\"))\n\n if cel=\"\" or IsNumeric(cel)=false then return \"Error\"\n\n return ((((cel) * 9) / 5) + 32)\n\nend function\n\nThen, end the class:\n\nend class\n\nPublish the .asmx file on a server with .NET support, and you will have your first working Web Service.",
+                "heading": "Example Explained"
+            },
+            {
+                "content": "Using a form and the HTTP POST method, you can put the web service on your site, like this:\n\n Fahrenheit to Celsius:\n\n Celsius to Fahrenheit:",
+                "heading": "Put the Web Service on Your Web Site"
+            },
+            {
+                "content": "Here is the code to add the Web Service to a web page:\n\n<form\naction='tempconvert.asmx/FahrenheitToCelsius'\n\nmethod=\"post\" target=\"_blank\">\n\n<table>\n\n <tr>\n\n <td>Fahrenheit to Celsius:</td>\n\n <td>\n\n    <input class=\"frmInput\" type=\"text\"\n size=\"30\" name=\"Fahrenheit\">\n\n    </td>\n\n </tr>\n\n <tr>\n\n <td></td>\n\n <td align=\"right\">\n\n     <input type=\"submit\"\n value=\"Submit\" class=\"button\">\n\n     </td>\n\n </tr>\n\n</table>\n\n</form>\n\n<form\naction='tempconvert.asmx/CelsiusToFahrenheit'\n\nmethod=\"post\" target=\"_blank\">\n\n<table>\n\n <tr>\n\n <td>Celsius to Fahrenheit:</td>\n\n <td>\n\n    <input class=\"frmInput\" type=\"text\"\n size=\"30\" name=\"Celsius\">\n\n    </td>\n\n </tr>\n\n <tr>\n\n <td></td>\n\n <td align=\"right\">\n\n    <input type=\"submit\"\n value=\"Submit\" class=\"button\">\n\n    </td>\n\n </tr>\n\n</table>\n\n</form>\n\nSubstitute the \"tempconvert.asmx\" with the address \nof your web service like:\n\nhttp://www.example.com/xml/tempconvert.asmx\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "How To Do It"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:18:42Z",
+        "subject": "XML",
+        "title": "XML Web Services"
+    },
+    {
+        "url": "https://www.w3schools.com/xml/xml_wsdl.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "xml_xml_wsdl",
+        "code_examples": [
+            {
+                "code": "<definitions>\n\n<types>\n\n data type definitions........\n\n</types>\n\n<message>\n\n definition of the data being communicated....\n\n</message>\n\n<portType>\n\n set of operations......\n\n</portType>\n\n<binding>\n\n protocol and data format specification....\n\n</binding>\n\n</definitions>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<message name=\"getTermRequest\">\n\n <part name=\"term\" type=\"xs:string\"/>\n\n</message>\n\n<message name=\"getTermResponse\">\n\n <part name=\"value\" type=\"xs:string\"/>\n\n</message>\n\n<portType name=\"glossaryTerms\">\n\n <operation name=\"getTerm\">\n\n <input message=\"getTermRequest\"/>\n\n <output message=\"getTermResponse\"/>\n\n </operation>\n\n</portType>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<message name=\"newTermValues\">\n\n <part name=\"term\" type=\"xs:string\"/>\n\n <part name=\"value\" type=\"xs:string\"/>\n\n</message>\n\n<portType name=\"glossaryTerms\">\n\n <operation name=\"setTerm\">\n\n <input name=\"newTerm\" message=\"newTermValues\"/>\n\n </operation>\n\n</portType >",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<message name=\"getTermRequest\">\n\n <part name=\"term\" type=\"xs:string\"/>\n\n</message>\n\n<message name=\"getTermResponse\">\n\n <part name=\"value\" type=\"xs:string\"/>\n\n</message>\n\n<portType name=\"glossaryTerms\">\n\n <operation name=\"getTerm\">\n\n <input message=\"getTermRequest\"/>\n\n <output message=\"getTermResponse\"/>\n\n </operation>\n\n</portType>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<message name=\"getTermRequest\">\n\n <part name=\"term\" type=\"xs:string\"/>\n\n</message>\n\n<message name=\"getTermResponse\">\n\n <part name=\"value\" type=\"xs:string\"/>\n\n</message>\n\n<portType name=\"glossaryTerms\">\n\n <operation name=\"getTerm\">\n\n <input message=\"getTermRequest\"/>\n\n <output message=\"getTermResponse\"/>\n\n </operation>\n\n </portType>\n\n<binding type=\"glossaryTerms\" name=\"b1\">\n\n   <soap:binding style=\"document\"\n\n   transport=\"http://schemas.xmlsoap.org/soap/http\" />\n\n    <operation>\n\n      <soap:operation\n soapAction=\"http://example.com/getTerm\"/>\n\n      <input><soap:body use=\"literal\"/></input>\n\n      <output><soap:body use=\"literal\"/></output>\n\n </operation>\n\n</binding>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Web Tools & Security",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "XML HOME\nXML Introduction\nXML How to use\nXML Tree\nXML Syntax\nXML Elements\nXML Attributes\nXML Namespaces\nXML Display\nXML HttpRequest\nXML Parser\nXML DOM\nXML XPath\nXML XSLT\nXML XQuery\nXML XLink\nXML Validator\nXML DTD\nXML Schema\nXML Server",
+                "heading": "XML Tutorial"
+            },
+            {
+                "content": "AJAX Introduction\nAJAX XMLHttp\nAJAX Request\nAJAX Response\nAJAX XML File\nAJAX PHP\nAJAX ASP\nAJAX Database\nAJAX Applications\nAJAX Examples",
+                "heading": "XML AJAX"
+            },
+            {
+                "content": "DOM Introduction\nDOM Nodes\nDOM Accessing\nDOM Node Info\nDOM Node List\nDOM Traversing\nDOM Navigating\nDOM Get Values\nDOM Change Nodes\nDOM Remove Nodes\nDOM Replace Nodes\nDOM Create Nodes\nDOM Add Nodes\nDOM Clone Nodes\nDOM Examples",
+                "heading": "XML DOM"
+            },
+            {
+                "content": "XPath Introduction\nXPath Nodes\nXPath Syntax\nXPath Axes\nXPath Operators\nXPath Examples",
+                "heading": "XPath Tutorial"
+            },
+            {
+                "content": "XSLT Introduction\nXSL Languages\nXSLT Transform\nXSLT <template>\nXSLT <value-of>\nXSLT <for-each>\nXSLT <sort>\nXSLT <if>\nXSLT <choose>\nXSLT Apply\nXSLT on the Client\nXSLT on the Server\nXSLT Edit XML\nXSLT Examples",
+                "heading": "XSLT Tutorial"
+            },
+            {
+                "content": "XQuery Introduction\nXQuery Example\nXQuery FLWOR\nXQuery HTML\nXQuery Terms\nXQuery Syntax\nXQuery Add\nXQuery Select\nXQuery Functions",
+                "heading": "XQuery Tutorial"
+            },
+            {
+                "content": "DTD Introduction\nDTD Building Blocks\nDTD Elements\nDTD Attributes\nDTD Elements vs Attr\nDTD Entities\nDTD Examples",
+                "heading": "XML DTD"
+            },
+            {
+                "content": "XSD Introduction\nXSD How To\nXSD <schema>\nXSD Elements\nXSD Attributes\nXSD Restrictions\nXSD Complex Elements\nXSD Empty\nXSD Elements-only\nXSD Text-only\nXSD Mixed\nXSD Indicators\nXSD <any>\nXSD <anyAttribute>\nXSD Substitution\nXSD Example",
+                "heading": "XSD Schema"
+            },
+            {
+                "content": "XSD String\nXSD Date/Time\nXSD Numeric\nXSD Misc\nXSD Reference",
+                "heading": "XSD Data Types"
+            },
+            {
+                "content": "XML Services\nXML WSDL\nXML SOAP\nXML RDF\nXML RSS",
+                "heading": "Web Services"
+            },
+            {
+                "content": "XML Certificate",
+                "heading": "XML Cert"
+            },
+            {
+                "content": "XML Examples\nXML Quiz\nXML Syllabus\nXML Study Plan",
+                "heading": "XML Examples"
+            },
+            {
+                "content": "An WSDL document describes a web service. It specifies the location \nof the service, and \nthe methods of the service, using these major elements:\n\n Element\n Description\n\n <types>\n Defines the (XML Schema) data types used by the web service\n\n <message>\n Defines the data elements for each operation\n\n <portType>\n\n Describes \n the operations that can be performed and the messages involved.\n\n <binding>\n Defines the protocol and data format for each port type\n\nThe main structure of a WSDL document looks like this:\n\n<definitions>\n\n<types>\n\n data type definitions........\n\n</types>\n\n<message>\n\n definition of the data being communicated....\n\n</message>\n\n<portType>\n\n set of operations......\n\n</portType>\n\n<binding>\n\n protocol and data format specification....\n\n</binding>\n\n</definitions>",
+                "heading": "WSDL Documents"
+            },
+            {
+                "content": "This is a simplified fraction of a WSDL document:\n\n<message name=\"getTermRequest\">\n\n <part name=\"term\" type=\"xs:string\"/>\n\n</message>\n\n<message name=\"getTermResponse\">\n\n <part name=\"value\" type=\"xs:string\"/>\n\n</message>\n\n<portType name=\"glossaryTerms\">\n\n <operation name=\"getTerm\">\n\n <input message=\"getTermRequest\"/>\n\n <output message=\"getTermResponse\"/>\n\n </operation>\n\n</portType>\n\nIn this example the <portType> element defines \"glossaryTerms\" \nas the name of a port, and \"getTerm\" as the name of an operation.\n\nThe \"getTerm\" operation has an input message called \"getTermRequest\" \nand an output message called \"getTermResponse\".\n\nThe <message> elements define the parts of each message and \nthe associated data types.",
+                "heading": "WSDL Example"
+            },
+            {
+                "content": "The <portType> element defines a web service, the operations that can be performed, and the messages that are involved.\n\nThe request-response type is the most common operation type, but WSDL defines four types:\n\n Type\n Definition\n\n One-way\n The operation can receive a message but will not return a \n response\n\n Request-response\n The operation can receive a request and will return a \n response\n\n Solicit-response\n The operation can send a request and will wait for a \n response\n\n Notification\n The operation can send a message but will not wait for a \n response",
+                "heading": "The <portType> Element"
+            },
+            {
+                "content": "A one-way operation example:\n\n<message name=\"newTermValues\">\n\n <part name=\"term\" type=\"xs:string\"/>\n\n <part name=\"value\" type=\"xs:string\"/>\n\n</message>\n\n<portType name=\"glossaryTerms\">\n\n <operation name=\"setTerm\">\n\n <input name=\"newTerm\" message=\"newTermValues\"/>\n\n </operation>\n\n</portType >\n\nIn the example above, the portType \"glossaryTerms\" defines a one-way operation called \"setTerm\". \n\nThe \"setTerm\" operation allows input of new glossary terms messages using a \"newTermValues\" \nmessage with the input parameters \"term\" and \"value\". However, no output is \ndefined for the operation.",
+                "heading": "WSDL One-Way Operation"
+            },
+            {
+                "content": "A request-response operation example:\n\n<message name=\"getTermRequest\">\n\n <part name=\"term\" type=\"xs:string\"/>\n\n</message>\n\n<message name=\"getTermResponse\">\n\n <part name=\"value\" type=\"xs:string\"/>\n\n</message>\n\n<portType name=\"glossaryTerms\">\n\n <operation name=\"getTerm\">\n\n <input message=\"getTermRequest\"/>\n\n <output message=\"getTermResponse\"/>\n\n </operation>\n\n</portType>\n\nIn the example above, the portType \"glossaryTerms\" defines a request-response operation called \"getTerm\".\n\nThe \"getTerm\" operation requires an input message called \"getTermRequest\" \nwith a parameter called \"term\", and will return an output message called \"getTermResponse\" \nwith a parameter called \"value\".",
+                "heading": "WSDL Request-Response Operation"
+            },
+            {
+                "content": "WSDL bindings defines the message format and protocol details for a web service.\n\nA request-response operation example:\n\n<message name=\"getTermRequest\">\n\n <part name=\"term\" type=\"xs:string\"/>\n\n</message>\n\n<message name=\"getTermResponse\">\n\n <part name=\"value\" type=\"xs:string\"/>\n\n</message>\n\n<portType name=\"glossaryTerms\">\n\n <operation name=\"getTerm\">\n\n <input message=\"getTermRequest\"/>\n\n <output message=\"getTermResponse\"/>\n\n </operation>\n\n </portType>\n\n<binding type=\"glossaryTerms\" name=\"b1\">\n\n   <soap:binding style=\"document\"\n\n   transport=\"http://schemas.xmlsoap.org/soap/http\" />\n\n    <operation>\n\n      <soap:operation\n soapAction=\"http://example.com/getTerm\"/>\n\n      <input><soap:body use=\"literal\"/></input>\n\n      <output><soap:body use=\"literal\"/></output>\n\n </operation>\n\n</binding>\n\nThe binding element has two attributes - name and type.\n\nThe name attribute (you can use any name you want) defines the name of the \nbinding, and the type attribute points to the port for the binding, in this case the \"glossaryTerms\" port.\n\nThe soap:binding element has two attributes - style and transport.\n\nThe style attribute can be \"rpc\" or \"document\". In this case we use document. The transport attribute defines the SOAP protocol to use.\nIn this case we use HTTP.\n\nThe operation element defines each operation that the portType exposes.\n\nFor each operation the corresponding SOAP action has to be defined. You must \nalso specify how the input and output are encoded. In this case we use \"literal\".\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "WSDL Binding to SOAP"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:18:43Z",
+        "subject": "XML",
+        "title": "XML WSDL"
+    },
+    {
+        "url": "https://www.w3schools.com/xml/xml_soap.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "xml_xml_soap",
+        "code_examples": [
+            {
+                "code": "<?xml version=\"1.0\"?>\n\n<soap:Envelope\n\nxmlns:soap=\"http://www.w3.org/2003/05/soap-envelope\"\n\nsoap:encodingStyle=\"http://www.w3.org/2003/05/soap-encoding\">\n\n<soap:Header>\n\n ...\n\n</soap:Header>\n\n<soap:Body>\n\n ...\n\n <soap:Fault>\n\n ...\n\n </soap:Fault>\n\n</soap:Body>\n\n</soap:Envelope>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<?xml version=\"1.0\"?>\n\n<soap:Envelope\n\nxmlns:soap=\"http://www.w3.org/2003/05/soap-envelope\"\n\nsoap:encodingStyle=\"http://www.w3.org/2003/05/soap-encoding\">\n\n ...\n\n Message information goes here\n\n ...\n\n</soap:Envelope>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "soap:encodingStyle=\"URI\"",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<?xml version=\"1.0\"?>\n\n<soap:Envelope\n\nxmlns:soap=\"http://www.w3.org/2003/05/soap-envelope\"\n\nsoap:encodingStyle=\"http://www.w3.org/2003/05/soap-encoding\">\n\n ...\n\n Message information goes here\n\n ...\n\n</soap:Envelope>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<?xml version=\"1.0\"?>\n\n<soap:Envelope\n\nxmlns:soap=\"http://www.w3.org/2003/05/soap-envelope\"\n\nsoap:encodingStyle=\"http://www.w3.org/2003/05/soap-encoding\">\n\n<soap:Header>\n\n<m:Trans xmlns:m=\"https://www.w3schools.com/transaction/\"\n\nsoap:mustUnderstand=\"1\">234\n\n</m:Trans>\n\n</soap:Header>\n...\n\n...\n\n</soap:Envelope>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "soap:mustUnderstand=\"0|1\"",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<?xml version=\"1.0\"?>\n\n<soap:Envelope\n\nxmlns:soap=\"http://www.w3.org/2003/05/soap-envelope\"\n\nsoap:encodingStyle=\"http://www.w3.org/2003/05/soap-encoding\">\n\n<soap:Header>\n\n<m:Trans xmlns:m=\"https://www.w3schools.com/transaction/\"\n\nsoap:mustUnderstand=\"1\">234\n\n</m:Trans>\n\n</soap:Header>\n\n...\n\n...\n\n</soap:Envelope>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "soap:actor=\"URI\"",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<?xml version=\"1.0\"?>\n\n<soap:Envelope\n\nxmlns:soap=\"http://www.w3.org/2003/05/soap-envelope\"\n\nsoap:encodingStyle=\"http://www.w3.org/2003/05/soap-encoding\">\n\n<soap:Header>\n\n<m:Trans xmlns:m=\"https://www.w3schools.com/transaction/\"\n\nsoap:actor=\"https://www.w3schools.com/code/\">234\n\n</m:Trans>\n\n</soap:Header>\n...\n\n...\n</soap:Envelope>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "soap:encodingStyle=\"URI\"",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<?xml version=\"1.0\"?>\n\n<soap:Envelope\n\nxmlns:soap=\"http://www.w3.org/2003/05/soap-envelope\"\n\nsoap:encodingStyle=\"http://www.w3.org/2003/05/soap-encoding\">\n\n<soap:Body>\n\n <m:GetPrice xmlns:m=\"https://www.w3schools.com/prices\">\n\n <m:Item>Apples</m:Item>\n\n </m:GetPrice>\n\n</soap:Body>\n\n</soap:Envelope>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<?xml version=\"1.0\"?>\n\n<soap:Envelope\n\nxmlns:soap=\"http://www.w3.org/2003/05/soap-envelope\"\n\nsoap:encodingStyle=\"http://www.w3.org/2003/05/soap-encoding\">\n\n<soap:Body>\n\n <m:GetPriceResponse xmlns:m=\"https://www.w3schools.com/prices\">\n\n <m:Price>1.90</m:Price>\n\n </m:GetPriceResponse>\n\n</soap:Body>\n\n</soap:Envelope>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "POST /item HTTP/1.1\n\nHost: 189.123.255.239\n\nContent-Type: text/plain\n\nContent-Length: 200",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "200 OK\n\nContent-Type: text/plain\n\nContent-Length: 200",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "400 Bad Request\n\nContent-Length: 0",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Content-Type: MIMEType; charset=character-encoding",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "POST /item HTTP/1.1\n\nContent-Type: application/soap+xml; charset=utf-8",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Content-Length: bytes",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "POST /item HTTP/1.1\n\nContent-Type: application/soap+xml; charset=utf-8\n\nContent-Length: 250",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "POST /InStock HTTP/1.1\n\nHost: www.example.org\n\nContent-Type: application/soap+xml; charset=utf-8\n\nContent-Length: nnn\n\n<?xml version=\"1.0\"?>\n\n<soap:Envelope\n\nxmlns:soap=\"http://www.w3.org/2003/05/soap-envelope\"\n\nsoap:encodingStyle=\"http://www.w3.org/2003/05/soap-encoding\">\n\n <soap:Body xmlns:m=\"http://www.example.org/stock\">\n\n  <m:GetStockPrice>\n\n <m:StockName>IBM</m:StockName>\n\n  </m:GetStockPrice>\n\n </soap:Body>\n\n</soap:Envelope>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "HTTP/1.1 200 OK\n\nContent-Type: application/soap+xml; charset=utf-8\n\nContent-Length: nnn\n\n<?xml version=\"1.0\"?>\n\n<soap:Envelope\n\nxmlns:soap=\"http://www.w3.org/2003/05/soap-envelope\"\n\nsoap:encodingStyle=\"http://www.w3.org/2003/05/soap-encoding\">\n\n <soap:Body xmlns:m=\"http://www.example.org/stock\">\n\n <m:GetStockPriceResponse>\n\n <m:Price>34.5</m:Price>\n\n </m:GetStockPriceResponse>\n\n </soap:Body>\n\n</soap:Envelope>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Web Tools & Security",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "XML HOME\nXML Introduction\nXML How to use\nXML Tree\nXML Syntax\nXML Elements\nXML Attributes\nXML Namespaces\nXML Display\nXML HttpRequest\nXML Parser\nXML DOM\nXML XPath\nXML XSLT\nXML XQuery\nXML XLink\nXML Validator\nXML DTD\nXML Schema\nXML Server",
+                "heading": "XML Tutorial"
+            },
+            {
+                "content": "AJAX Introduction\nAJAX XMLHttp\nAJAX Request\nAJAX Response\nAJAX XML File\nAJAX PHP\nAJAX ASP\nAJAX Database\nAJAX Applications\nAJAX Examples",
+                "heading": "XML AJAX"
+            },
+            {
+                "content": "DOM Introduction\nDOM Nodes\nDOM Accessing\nDOM Node Info\nDOM Node List\nDOM Traversing\nDOM Navigating\nDOM Get Values\nDOM Change Nodes\nDOM Remove Nodes\nDOM Replace Nodes\nDOM Create Nodes\nDOM Add Nodes\nDOM Clone Nodes\nDOM Examples",
+                "heading": "XML DOM"
+            },
+            {
+                "content": "XPath Introduction\nXPath Nodes\nXPath Syntax\nXPath Axes\nXPath Operators\nXPath Examples",
+                "heading": "XPath Tutorial"
+            },
+            {
+                "content": "XSLT Introduction\nXSL Languages\nXSLT Transform\nXSLT <template>\nXSLT <value-of>\nXSLT <for-each>\nXSLT <sort>\nXSLT <if>\nXSLT <choose>\nXSLT Apply\nXSLT on the Client\nXSLT on the Server\nXSLT Edit XML\nXSLT Examples",
+                "heading": "XSLT Tutorial"
+            },
+            {
+                "content": "XQuery Introduction\nXQuery Example\nXQuery FLWOR\nXQuery HTML\nXQuery Terms\nXQuery Syntax\nXQuery Add\nXQuery Select\nXQuery Functions",
+                "heading": "XQuery Tutorial"
+            },
+            {
+                "content": "DTD Introduction\nDTD Building Blocks\nDTD Elements\nDTD Attributes\nDTD Elements vs Attr\nDTD Entities\nDTD Examples",
+                "heading": "XML DTD"
+            },
+            {
+                "content": "XSD Introduction\nXSD How To\nXSD <schema>\nXSD Elements\nXSD Attributes\nXSD Restrictions\nXSD Complex Elements\nXSD Empty\nXSD Elements-only\nXSD Text-only\nXSD Mixed\nXSD Indicators\nXSD <any>\nXSD <anyAttribute>\nXSD Substitution\nXSD Example",
+                "heading": "XSD Schema"
+            },
+            {
+                "content": "XSD String\nXSD Date/Time\nXSD Numeric\nXSD Misc\nXSD Reference",
+                "heading": "XSD Data Types"
+            },
+            {
+                "content": "XML Services\nXML WSDL\nXML SOAP\nXML RDF\nXML RSS",
+                "heading": "Web Services"
+            },
+            {
+                "content": "XML Certificate",
+                "heading": "XML Cert"
+            },
+            {
+                "content": "XML Examples\nXML Quiz\nXML Syllabus\nXML Study Plan",
+                "heading": "XML Examples"
+            },
+            {
+                "content": "It is important for web applications to be able to communicate over the Internet.\n\nThe best way to communicate between applications is over HTTP,\nbecause HTTP is supported by all Internet browsers and\nservers. SOAP was created to accomplish this.\n\nSOAP provides a way to communicate between applications running on different\noperating systems, with different technologies and programming\nlanguages.",
+                "heading": "Why SOAP?"
+            },
+            {
+                "content": "A SOAP message is an ordinary XML document containing the following elements:\n\n An Envelope element that identifies the XML document as a SOAP message\n\n A Header element that contains header information\n\n A Body element that contains call and response information\n\n A Fault element containing errors and status information\n\nAll the elements above are declared in the default namespace for the SOAP envelope:\n\nhttp://www.w3.org/2003/05/soap-envelope\n\nand the default namespace for SOAP encoding and data types is:\n\nhttp://www.w3.org/2003/05/soap-encoding",
+                "heading": "SOAP Building Blocks"
+            },
+            {
+                "content": "Here are some important syntax rules:\n\n A SOAP message MUST be encoded using XML\n\n A SOAP message MUST use the SOAP Envelope namespace\n\n A SOAP message must NOT contain a DTD reference\n\n A SOAP message must NOT contain XML Processing Instructions",
+                "heading": "Syntax Rules"
+            },
+            {
+                "content": "<?xml version=\"1.0\"?>\n\n<soap:Envelope\n\nxmlns:soap=\"http://www.w3.org/2003/05/soap-envelope\"\n\nsoap:encodingStyle=\"http://www.w3.org/2003/05/soap-encoding\">\n\n<soap:Header>\n\n ...\n\n</soap:Header>\n\n<soap:Body>\n\n ...\n\n <soap:Fault>\n\n ...\n\n </soap:Fault>\n\n</soap:Body>\n\n</soap:Envelope>",
+                "heading": "Skeleton SOAP Message"
+            },
+            {
+                "content": "The required SOAP Envelope element is the root element of a SOAP message. This element defines the XML document as a SOAP message.\n\nExample\n\n<?xml version=\"1.0\"?>\n\n<soap:Envelope\n\nxmlns:soap=\"http://www.w3.org/2003/05/soap-envelope\"\n\nsoap:encodingStyle=\"http://www.w3.org/2003/05/soap-encoding\">\n\n ...\n\n Message information goes here\n\n ...\n\n</soap:Envelope>",
+                "heading": "The SOAP Envelope Element"
+            },
+            {
+                "content": "Notice the xmlns:soap namespace in the example above. It should always have the value of: \"http://www.w3.org/2003/05/soap-envelope\".\n\nThe namespace defines the Envelope as a SOAP Envelope.\n\nIf a different namespace is used, the application generates an error and discards the message.",
+                "heading": "The xmlns:soap Namespace"
+            },
+            {
+                "content": "The encodingStyle attribute is used to define the data types used in the \ndocument. This attribute may appear on any SOAP element, and applies to the element's contents and all child elements.\n\nA SOAP message has no default encoding.\n\nSyntax\n\nsoap:encodingStyle=\"URI\"\n\nExample\n\n<?xml version=\"1.0\"?>\n\n<soap:Envelope\n\nxmlns:soap=\"http://www.w3.org/2003/05/soap-envelope\"\n\nsoap:encodingStyle=\"http://www.w3.org/2003/05/soap-encoding\">\n\n ...\n\n Message information goes here\n\n ...\n\n</soap:Envelope>",
+                "heading": "The encodingStyle Attribute"
+            },
+            {
+                "content": "The optional SOAP Header element contains application-specific information (like authentication, payment, etc) about the SOAP message.\n\nIf the Header element is present, it must be the first child element of the Envelope element.\n\nNote: All immediate child elements of the Header element must be namespace-qualified.\n\n<?xml version=\"1.0\"?>\n\n<soap:Envelope\n\nxmlns:soap=\"http://www.w3.org/2003/05/soap-envelope\"\n\nsoap:encodingStyle=\"http://www.w3.org/2003/05/soap-encoding\">\n\n<soap:Header>\n\n<m:Trans xmlns:m=\"https://www.w3schools.com/transaction/\"\n\nsoap:mustUnderstand=\"1\">234\n\n</m:Trans>\n\n</soap:Header>\n...\n\n...\n\n</soap:Envelope>\n\nThe example above contains a header with a \"Trans\" element, a \"mustUnderstand\" \nattribute with a value of 1, and a value of 234.\n\nSOAP defines three attributes in the default namespace. These attributes are: mustUnderstand, \nactor, and encodingStyle.\n\nThe attributes defined in the SOAP Header defines how a recipient should process the SOAP message.",
+                "heading": "The SOAP Header Element"
+            },
+            {
+                "content": "The SOAP mustUnderstand attribute can be used to indicate whether a header entry is mandatory or optional for the recipient to process.\n\nIf you add mustUnderstand=\"1\" to a child element of the Header element it indicates that the receiver processing the Header must recognize the element. If \nthe receiver does not recognize the element it will fail when processing the Header.\n\nSyntax\n\nsoap:mustUnderstand=\"0|1\"\n\nExample\n\n<?xml version=\"1.0\"?>\n\n<soap:Envelope\n\nxmlns:soap=\"http://www.w3.org/2003/05/soap-envelope\"\n\nsoap:encodingStyle=\"http://www.w3.org/2003/05/soap-encoding\">\n\n<soap:Header>\n\n<m:Trans xmlns:m=\"https://www.w3schools.com/transaction/\"\n\nsoap:mustUnderstand=\"1\">234\n\n</m:Trans>\n\n</soap:Header>\n\n...\n\n...\n\n</soap:Envelope>",
+                "heading": "The mustUnderstand Attribute"
+            },
+            {
+                "content": "A SOAP message may travel from a sender to a receiver by passing different \nendpoints along the message path. However, not all parts of a SOAP message may be intended for the ultimate \nendpoint, instead, it may be intended for one or more of the endpoints on the message path.\n\nThe SOAP actor attribute is used to address the Header element to a specific endpoint.\n\nSyntax\n\nsoap:actor=\"URI\"\n\nExample\n\n<?xml version=\"1.0\"?>\n\n<soap:Envelope\n\nxmlns:soap=\"http://www.w3.org/2003/05/soap-envelope\"\n\nsoap:encodingStyle=\"http://www.w3.org/2003/05/soap-encoding\">\n\n<soap:Header>\n\n<m:Trans xmlns:m=\"https://www.w3schools.com/transaction/\"\n\nsoap:actor=\"https://www.w3schools.com/code/\">234\n\n</m:Trans>\n\n</soap:Header>\n...\n\n...\n</soap:Envelope>",
+                "heading": "The actor Attribute"
+            },
+            {
+                "content": "The encodingStyle attribute is used to define the data types used in the \ndocument. This attribute may appear on any SOAP element, and it will apply to that \nelement's contents and all child elements.\n\nA SOAP message has no default encoding.\n\nSyntax\n\nsoap:encodingStyle=\"URI\"",
+                "heading": "The encodingStyle Attribute"
+            },
+            {
+                "content": "The required SOAP Body element contains the actual SOAP message intended for the ultimate endpoint of the message. \n\nImmediate child elements of the SOAP Body element may be namespace-qualified.\n\nExample\n\n<?xml version=\"1.0\"?>\n\n<soap:Envelope\n\nxmlns:soap=\"http://www.w3.org/2003/05/soap-envelope\"\n\nsoap:encodingStyle=\"http://www.w3.org/2003/05/soap-encoding\">\n\n<soap:Body>\n\n <m:GetPrice xmlns:m=\"https://www.w3schools.com/prices\">\n\n <m:Item>Apples</m:Item>\n\n </m:GetPrice>\n\n</soap:Body>\n\n</soap:Envelope>\n\nThe example above requests the price of apples. Note that the m:GetPrice and \nthe Item elements above are application-specific elements. They are not a part of the SOAP namespace. \n\nA SOAP response could look something like this:\n\n<?xml version=\"1.0\"?>\n\n<soap:Envelope\n\nxmlns:soap=\"http://www.w3.org/2003/05/soap-envelope\"\n\nsoap:encodingStyle=\"http://www.w3.org/2003/05/soap-encoding\">\n\n<soap:Body>\n\n <m:GetPriceResponse xmlns:m=\"https://www.w3schools.com/prices\">\n\n <m:Price>1.90</m:Price>\n\n </m:GetPriceResponse>\n\n</soap:Body>\n\n</soap:Envelope>",
+                "heading": "The SOAP Body Element"
+            },
+            {
+                "content": "The optional SOAP Fault element is used to indicate error \nmessages.\n\nThe SOAP Fault element holds errors and \nstatus information for a SOAP message.\n\nIf a Fault element is present, it must appear as a child element\nof the Body element. A Fault element can only appear once in a SOAP message.\n\nThe SOAP Fault element has the following sub elements:\n\nSub Element\nDescription\n\n<faultcode>\nA code for identifying the fault\n\n<faultstring>\nA human readable explanation of the fault\n\n<faultactor>\nInformation about who caused the fault to happen\n\n<detail>\n\nHolds application specific error information related to the \nBody element\n\nSOAP Fault Codes\n\nThe faultcode values defined below must be used in the faultcode element when \ndescribing faults:\n\nError\nDescription\n\nVersionMismatch\nFound an invalid namespace for the SOAP Envelope element\n\nMustUnderstand\nAn immediate child element of the Header element, with the mustUnderstand attribute set to \"1\", was\n not understood\n\nClient\nThe message was incorrectly formed or contained incorrect information\n\nServer\nThere was a problem with the server so the message could not proceed",
+                "heading": "The SOAP Fault Element"
+            },
+            {
+                "content": "HTTP communicates over TCP/IP. An HTTP client connects to an HTTP server using TCP. After establishing a connection, the client can send an HTTP request message to the server:\n\nPOST /item HTTP/1.1\n\nHost: 189.123.255.239\n\nContent-Type: text/plain\n\nContent-Length: 200\n\nThe server then processes the request and sends an HTTP response back to the client. The response contains a status code that indicates the status of the request:\n\n200 OK\n\nContent-Type: text/plain\n\nContent-Length: 200\n\nIn the example above, the server returned a status code of 200. This is the standard success code for HTTP.\n\nIf the server could not decode the request, it could have returned something like this:\n\n400 Bad Request\n\nContent-Length: 0",
+                "heading": "The HTTP Protocol"
+            },
+            {
+                "content": "The SOAP specification defines the structure of the SOAP messages, not how \nthey are exchanged. This gap is filled by what is called \"SOAP Bindings\". SOAP \nbindings are mechanisms which allow SOAP messages to be effectively exchanged \nusing a transport protocol.\n\nMost SOAP implementations provide bindings for common transport protocols, \nsuch as HTTP or SMTP.\n\nHTTP is synchronous and widely used. A SOAP HTTP request specifies at least two HTTP headers: Content-Type and Content-Length.\n\nSMTP is asynchronous and is used in last resort or particular cases.\n\nJava implementations of SOAP usually provide a specific binding for the JMS \n(Java Messaging System) protocol.",
+                "heading": "SOAP Binding"
+            },
+            {
+                "content": "The Content-Type header for a SOAP request and response defines the MIME type for the message and the \ncharacter encoding (optional) used for the XML body of the request or response.\n\nSyntax\n\nContent-Type: MIMEType; charset=character-encoding\n\nExample\n\nPOST /item HTTP/1.1\n\nContent-Type: application/soap+xml; charset=utf-8",
+                "heading": "Content-Type"
+            },
+            {
+                "content": "The Content-Length header for a SOAP request and response specifies the number of bytes in the body of the request or response.\n\nSyntax\n\nContent-Length: bytes\n\nExample\n\nPOST /item HTTP/1.1\n\nContent-Type: application/soap+xml; charset=utf-8\n\nContent-Length: 250",
+                "heading": "Content-Length"
+            },
+            {
+                "content": "In the example below, a GetStockPrice request is sent to a server. The request has a StockName parameter,\nand a Price parameter that will be returned in the response. The namespace for the function is defined in \"http://www.example.org/stock\".\n\nA SOAP request:\n\nPOST /InStock HTTP/1.1\n\nHost: www.example.org\n\nContent-Type: application/soap+xml; charset=utf-8\n\nContent-Length: nnn\n\n<?xml version=\"1.0\"?>\n\n<soap:Envelope\n\nxmlns:soap=\"http://www.w3.org/2003/05/soap-envelope\"\n\nsoap:encodingStyle=\"http://www.w3.org/2003/05/soap-encoding\">\n\n <soap:Body xmlns:m=\"http://www.example.org/stock\">\n\n  <m:GetStockPrice>\n\n <m:StockName>IBM</m:StockName>\n\n  </m:GetStockPrice>\n\n </soap:Body>\n\n</soap:Envelope>\n\nThe SOAP response:\n\nHTTP/1.1 200 OK\n\nContent-Type: application/soap+xml; charset=utf-8\n\nContent-Length: nnn\n\n<?xml version=\"1.0\"?>\n\n<soap:Envelope\n\nxmlns:soap=\"http://www.w3.org/2003/05/soap-envelope\"\n\nsoap:encodingStyle=\"http://www.w3.org/2003/05/soap-encoding\">\n\n <soap:Body xmlns:m=\"http://www.example.org/stock\">\n\n <m:GetStockPriceResponse>\n\n <m:Price>34.5</m:Price>\n\n </m:GetStockPriceResponse>\n\n </soap:Body>\n\n</soap:Envelope>\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "A SOAP Example"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:18:43Z",
+        "subject": "XML",
+        "title": "XML Soap"
+    },
+    {
+        "url": "https://www.w3schools.com/xml/xml_rdf.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "xml_xml_rdf",
+        "code_examples": [
+            {
+                "code": "RDF Document Example\n\n<?xml version=\"1.0\"?>\n\n<rdf:RDF\n\nxmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n\nxmlns:si=\"https://www.w3schools.com/rdf/\">\n\n <rdf:Description rdf:about=\"https://www.w3schools.com\">\n\n <si:title>W3Schools</si:title>\n\n <si:author>Jan Egil Refsnes</si:author>\n\n </rdf:Description>\n\n</rdf:RDF>",
+                "language": "xml",
+                "heading": "RDF Document Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<?xml version=\"1.0\"?>\n\n<RDF>\n\n <Description about=\"https://www.w3schools.com/rdf\">\n\n <author>Jan Egil Refsnes</author>\n\n <homepage>https://www.w3schools.com</homepage>\n\n </Description>\n\n</RDF>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<?xml version=\"1.0\"?>\n\n<rdf:RDF\n\nxmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n\nxmlns:cd=\"http://www.recshop.fake/cd#\">\n\n<rdf:Description\n\n rdf:about=\"http://www.recshop.fake/cd/Empire Burlesque\">\n\n <cd:artist>Bob Dylan</cd:artist>\n\n <cd:country>USA</cd:country>\n\n <cd:company>Columbia</cd:company>\n\n <cd:price>10.90</cd:price>\n\n <cd:year>1985</cd:year>\n\n</rdf:Description>\n\n<rdf:Description\n\n rdf:about=\"http://www.recshop.fake/cd/Hide your heart\">\n\n <cd:artist>Bonnie Tyler</cd:artist>\n\n <cd:country>UK</cd:country>\n\n <cd:company>CBS Records</cd:company>\n\n <cd:price>9.90</cd:price>\n\n <cd:year>1988</cd:year>\n\n</rdf:Description>\n\n.\n\n.\n\n.\n\n</rdf:RDF>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<?xml version=\"1.0\"?>\n\n<rdf:RDF\n\nxmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n\nxmlns:si=\"https://www.w3schools.com/rdf/\">\n\n <rdf:Description rdf:about=\"https://www.w3schools.com\">\n\n <si:title>W3Schools.com</si:title>\n\n <si:author>Jan Egil Refsnes</si:author>\n\n </rdf:Description>\n\n</rdf:RDF>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<?xml version=\"1.0\"?>\n\n<rdf:RDF\n\nxmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\">\n\n...Description goes here...\n\n</rdf:RDF>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<?xml version=\"1.0\"?>\n\n<rdf:RDF\n\nxmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n\nxmlns:cd=\"http://www.recshop.fake/cd#\">\n\n<rdf:Description\n\n rdf:about=\"http://www.recshop.fake/cd/Empire Burlesque\">\n\n <cd:artist>Bob Dylan</cd:artist>\n\n <cd:country>USA</cd:country>\n\n <cd:company>Columbia</cd:company>\n\n <cd:price>10.90</cd:price>\n\n <cd:year>1985</cd:year>\n\n</rdf:Description>\n\n</rdf:RDF>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<?xml version=\"1.0\"?>\n\n<rdf:RDF\n\nxmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n\nxmlns:cd=\"http://www.recshop.fake/cd#\">\n\n<rdf:Description\n\n rdf:about=\"http://www.recshop.fake/cd/Empire Burlesque\"\n\n cd:artist=\"Bob Dylan\" cd:country=\"USA\"\n\n cd:company=\"Columbia\" cd:price=\"10.90\"\n\n cd:year=\"1985\" />\n\n</rdf:RDF>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<?xml version=\"1.0\"?>\n\n<rdf:RDF\n\nxmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n\nxmlns:cd=\"http://www.recshop.fake/cd#\">\n\n<rdf:Description\n\n rdf:about=\"http://www.recshop.fake/cd/Empire Burlesque\">\n\n <cd:artist rdf:resource=\"http://www.recshop.fake/cd/dylan\" />\n\n ...\n\n ...\n\n</rdf:Description>\n\n</rdf:RDF>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<?xml version=\"1.0\"?>\n\n<rdf:RDF\n\nxmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n\nxmlns:cd=\"http://www.recshop.fake/cd#\">\n\n<rdf:Description\n\n rdf:about=\"http://www.recshop.fake/cd/Beatles\">\n\n <cd:artist>\n\n <rdf:Bag>\n\n <rdf:li>John</rdf:li>\n\n <rdf:li>Paul</rdf:li>\n\n <rdf:li>George</rdf:li>\n\n <rdf:li>Ringo</rdf:li>\n\n </rdf:Bag>\n\n </cd:artist>\n\n</rdf:Description>\n\n</rdf:RDF>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<?xml version=\"1.0\"?>\n\n<rdf:RDF\n\nxmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n\nxmlns:cd=\"http://www.recshop.fake/cd#\">\n\n<rdf:Description\n\n rdf:about=\"http://www.recshop.fake/cd/Beatles\">\n\n <cd:artist>\n\n <rdf:Seq>\n\n <rdf:li>George</rdf:li>\n\n <rdf:li>John</rdf:li>\n\n <rdf:li>Paul</rdf:li>\n\n <rdf:li>Ringo</rdf:li>\n\n </rdf:Seq>\n\n </cd:artist>\n\n</rdf:Description>\n\n</rdf:RDF>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<?xml version=\"1.0\"?>\n\n<rdf:RDF\n\nxmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n\nxmlns:cd=\"http://www.recshop.fake/cd#\">\n\n<rdf:Description\n\n rdf:about=\"http://www.recshop.fake/cd/Beatles\">\n\n <cd:format>\n\n <rdf:Alt>\n\n <rdf:li>CD</rdf:li>\n\n <rdf:li>Record</rdf:li>\n\n <rdf:li>Tape</rdf:li>\n\n </rdf:Alt>\n\n </cd:format>\n\n</rdf:Description>\n\n</rdf:RDF>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<?xml version=\"1.0\"?>\n\n<rdf:RDF\n\nxmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n\nxmlns:cd=\"http://recshop.fake/cd#\">\n\n<rdf:Description\n\nrdf:about=\"http://recshop.fake/cd/Beatles\">\n\n<cd:artist rdf:parseType=\"Collection\">\n\n<rdf:Description rdf:about=\"http://recshop.fake/cd/Beatles/George\"/>\n\n<rdf:Description rdf:about=\"http://recshop.fake/cd/Beatles/John\"/>\n\n<rdf:Description rdf:about=\"http://recshop.fake/cd/Beatles/Paul\"/>\n\n<rdf:Description rdf:about=\"http://recshop.fake/cd/Beatles/Ringo\"/>\n\n</cd:artist>\n\n</rdf:Description>\n\n</rdf:RDF>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<?xml version=\"1.0\"?>\n\n<rdf:RDF\n\nxmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n\nxmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\"\n\nxml:base=\"http://www.animals.fake/animals#\">\n\n<rdf:Description rdf:ID=\"animal\">\n\n <rdf:type\n rdf:resource=\"http://www.w3.org/2000/01/rdf-schema#Class\"/>\n\n</rdf:Description>\n\n<rdf:Description rdf:ID=\"horse\">\n\n <rdf:type\n rdf:resource=\"http://www.w3.org/2000/01/rdf-schema#Class\"/>\n\n <rdfs:subClassOf rdf:resource=\"#animal\"/>\n\n</rdf:Description>\n\n</rdf:RDF>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<?xml version=\"1.0\"?>\n\n<rdf:RDF\n\nxmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n\nxmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\"\n\nxml:base=\"http://www.animals.fake/animals#\">\n\n<rdfs:Class rdf:ID=\"animal\" />\n\n<rdfs:Class rdf:ID=\"horse\">\n\n <rdfs:subClassOf rdf:resource=\"#animal\"/>\n\n</rdfs:Class>\n\n</rdf:RDF>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<?xml version=\"1.0\"?>\n\n<rdf:RDF\n\nxmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n\nxmlns:dc= \"http://purl.org/dc/elements/1.1/\">\n\n<rdf:Description rdf:about=\"https://www.w3schools.com\">\n\n <dc:description>W3Schools - Free tutorials</dc:description>\n\n <dc:publisher>Refsnes Data as</dc:publisher>\n\n <dc:date>2008-09-01</dc:date>\n\n <dc:type>Web Development</dc:type>\n\n <dc:format>text/html</dc:format>\n\n <dc:language>en</dc:language>\n\n</rdf:Description>\n\n</rdf:RDF>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Web Tools & Security",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "XML HOME\nXML Introduction\nXML How to use\nXML Tree\nXML Syntax\nXML Elements\nXML Attributes\nXML Namespaces\nXML Display\nXML HttpRequest\nXML Parser\nXML DOM\nXML XPath\nXML XSLT\nXML XQuery\nXML XLink\nXML Validator\nXML DTD\nXML Schema\nXML Server",
+                "heading": "XML Tutorial"
+            },
+            {
+                "content": "AJAX Introduction\nAJAX XMLHttp\nAJAX Request\nAJAX Response\nAJAX XML File\nAJAX PHP\nAJAX ASP\nAJAX Database\nAJAX Applications\nAJAX Examples",
+                "heading": "XML AJAX"
+            },
+            {
+                "content": "DOM Introduction\nDOM Nodes\nDOM Accessing\nDOM Node Info\nDOM Node List\nDOM Traversing\nDOM Navigating\nDOM Get Values\nDOM Change Nodes\nDOM Remove Nodes\nDOM Replace Nodes\nDOM Create Nodes\nDOM Add Nodes\nDOM Clone Nodes\nDOM Examples",
+                "heading": "XML DOM"
+            },
+            {
+                "content": "XPath Introduction\nXPath Nodes\nXPath Syntax\nXPath Axes\nXPath Operators\nXPath Examples",
+                "heading": "XPath Tutorial"
+            },
+            {
+                "content": "XSLT Introduction\nXSL Languages\nXSLT Transform\nXSLT <template>\nXSLT <value-of>\nXSLT <for-each>\nXSLT <sort>\nXSLT <if>\nXSLT <choose>\nXSLT Apply\nXSLT on the Client\nXSLT on the Server\nXSLT Edit XML\nXSLT Examples",
+                "heading": "XSLT Tutorial"
+            },
+            {
+                "content": "XQuery Introduction\nXQuery Example\nXQuery FLWOR\nXQuery HTML\nXQuery Terms\nXQuery Syntax\nXQuery Add\nXQuery Select\nXQuery Functions",
+                "heading": "XQuery Tutorial"
+            },
+            {
+                "content": "DTD Introduction\nDTD Building Blocks\nDTD Elements\nDTD Attributes\nDTD Elements vs Attr\nDTD Entities\nDTD Examples",
+                "heading": "XML DTD"
+            },
+            {
+                "content": "XSD Introduction\nXSD How To\nXSD <schema>\nXSD Elements\nXSD Attributes\nXSD Restrictions\nXSD Complex Elements\nXSD Empty\nXSD Elements-only\nXSD Text-only\nXSD Mixed\nXSD Indicators\nXSD <any>\nXSD <anyAttribute>\nXSD Substitution\nXSD Example",
+                "heading": "XSD Schema"
+            },
+            {
+                "content": "XSD String\nXSD Date/Time\nXSD Numeric\nXSD Misc\nXSD Reference",
+                "heading": "XSD Data Types"
+            },
+            {
+                "content": "XML Services\nXML WSDL\nXML SOAP\nXML RDF\nXML RSS",
+                "heading": "Web Services"
+            },
+            {
+                "content": "XML Certificate",
+                "heading": "XML Cert"
+            },
+            {
+                "content": "XML Examples\nXML Quiz\nXML Syllabus\nXML Study Plan",
+                "heading": "XML Examples"
+            },
+            {
+                "content": "RDF stands for Resource Description Framework\n\n RDF is a framework for describing resources on the web\n\n RDF is designed to be read and understood by computers\n\n RDF is not designed for being displayed to people\n\n RDF is written in XML\n\n RDF is a part of the W3C's Semantic Web Activity\n\n RDF is a W3C Recommendation from 10. February 2004",
+                "heading": "What is RDF?"
+            },
+            {
+                "content": "Describing properties for shopping items, such as price and availability\n\n Describing time schedules for web events\n\n Describing information about web pages (content, author, created and modified date)\n\n Describing content and rating for web pictures\n\n Describing content for search engines\n\n Describing electronic libraries",
+                "heading": "RDF - Examples of Use"
+            },
+            {
+                "content": "RDF was designed to provide a common way to describe information so it can be \nread and understood by computer applications.\n\nRDF descriptions are not designed to be displayed on the web.",
+                "heading": "RDF is Designed to be Read by Computers"
+            },
+            {
+                "content": "RDF documents are written in XML. The \nXML language used by RDF is called RDF/XML. \n\nBy using XML, RDF information can easily be exchanged between different types \nof computers using different types of operating systems and application \nlanguages.",
+                "heading": "RDF is Written in XML"
+            },
+            {
+                "content": "The RDF language is a part of the \nW3C's Semantic Web Activity. W3C's \"Semantic Web Vision\" is a future where:\n\n Web information has exact meaning \n\n Web information can be understood and processed by computers \n\n Computers can integrate information from the web \n\nRDF uses Web identifiers (URIs) to identify resources.\n\nRDF describes resources with properties and property values.",
+                "heading": "RDF and \"The Semantic Web\""
+            },
+            {
+                "content": "RDF identifies things using Web identifiers (URIs), and describes resources with properties and property values.\n\nExplanation of Resource, Property, and Property value:\n\n A Resource is anything that can have a URI, such as \"https://www.w3schools.com/rdf\"\n\n A Property is a Resource that has a name, such as \"author\" or \"homepage\"\n\n A Property value is the value of a Property, such as \"Jan Egil Refsnes\" or \"https://www.w3schools.com\" (note that a property value can be another resource)\n\nThe following RDF document could describe the resource \"https://www.w3schools.com/rdf\":\n\n<?xml version=\"1.0\"?>\n\n<RDF>\n\n <Description about=\"https://www.w3schools.com/rdf\">\n\n <author>Jan Egil Refsnes</author>\n\n <homepage>https://www.w3schools.com</homepage>\n\n </Description>\n\n</RDF>\n\nThe example above is simplified. Namespaces are omitted.",
+                "heading": "RDF Resource, Property, and Property Value"
+            },
+            {
+                "content": "The combination of a Resource, a Property, and a Property value forms a Statement (known as the subject, predicate and object of a Statement).\n\nLet's look at some example statements to get a better understanding:\n\nStatement: \"The author of https://www.w3schools.com/rdf is Jan Egil Refsnes\".\n\n The subject of the statement above is: https://www.w3schools.com/rdf\n\n The predicate is: author\n\n The object is: Jan Egil Refsnes\n\nStatement: \"The homepage of https://www.w3schools.com/rdf is https://www.w3schools.com\".\n\n The subject of the statement above is: https://www.w3schools.com/rdf\n\n The predicate is: homepage\n\n The object is: https://www.w3schools.com",
+                "heading": "RDF Statements"
+            },
+            {
+                "content": "Here are two records from a CD-list:\n\n Title\n Artist\n Country\n Company\n Price\n Year\n\n Empire Burlesque\n Bob Dylan\n USA\n Columbia\n 10.90\n 1985\n\n Hide your heart\n Bonnie Tyler\n UK\n CBS Records\n 9.90\n 1988\n\nBelow is a few lines from an RDF document:\n\n<?xml version=\"1.0\"?>\n\n<rdf:RDF\n\nxmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n\nxmlns:cd=\"http://www.recshop.fake/cd#\">\n\n<rdf:Description\n\n rdf:about=\"http://www.recshop.fake/cd/Empire Burlesque\">\n\n <cd:artist>Bob Dylan</cd:artist>\n\n <cd:country>USA</cd:country>\n\n <cd:company>Columbia</cd:company>\n\n <cd:price>10.90</cd:price>\n\n <cd:year>1985</cd:year>\n\n</rdf:Description>\n\n<rdf:Description\n\n rdf:about=\"http://www.recshop.fake/cd/Hide your heart\">\n\n <cd:artist>Bonnie Tyler</cd:artist>\n\n <cd:country>UK</cd:country>\n\n <cd:company>CBS Records</cd:company>\n\n <cd:price>9.90</cd:price>\n\n <cd:year>1988</cd:year>\n\n</rdf:Description>\n\n.\n\n.\n\n.\n\n</rdf:RDF>\n\nThe first line of the RDF document is the XML declaration. The XML declaration is followed by the root element of RDF documents: <rdf:RDF>.\n\nThe xmlns:rdf namespace, specifies that elements with the rdf prefix are from the namespace \"http://www.w3.org/1999/02/22-rdf-syntax-ns#\".\n\nThe xmlns:cd namespace, specifies that elements with the cd prefix are from the namespace \"http://www.recshop.fake/cd#\".\n\nThe <rdf:Description> element contains the description of the resource identified by the rdf:about attribute.\n\nThe elements: <cd:artist>, <cd:country>, <cd:company>, etc. are properties of the resource.",
+                "heading": "RDF Example"
+            },
+            {
+                "content": "W3C's RDF Validation Service is useful when learning RDF. Here you can experiment with RDF files.\n\nThe online RDF Validator parses your RDF document, checks your syntax, and generates tabular and graphical views of your RDF document.\n\nCopy and paste the example below into W3C's RDF validator:\n\n<?xml version=\"1.0\"?>\n\n<rdf:RDF\n\nxmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n\nxmlns:si=\"https://www.w3schools.com/rdf/\">\n\n <rdf:Description rdf:about=\"https://www.w3schools.com\">\n\n <si:title>W3Schools.com</si:title>\n\n <si:author>Jan Egil Refsnes</si:author>\n\n </rdf:Description>\n\n</rdf:RDF>\n\nWhen you parse the example above, \nthe result will look something like this.",
+                "heading": "RDF Online Validator"
+            },
+            {
+                "content": "The main elements of RDF are the root element, <RDF>, and the <Description> element, which identifies a resource.",
+                "heading": "RDF Elements"
+            },
+            {
+                "content": "<rdf:RDF> is the root element of an RDF document. It defines the XML document to be an RDF document. It also contains a reference to the RDF namespace:\n\n<?xml version=\"1.0\"?>\n\n<rdf:RDF\n\nxmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\">\n\n...Description goes here...\n\n</rdf:RDF>",
+                "heading": "The <rdf:RDF> Element"
+            },
+            {
+                "content": "The <rdf:Description> element identifies a resource with the about attribute.\n\nThe <rdf:Description> element contains elements that describe the resource:\n\n<?xml version=\"1.0\"?>\n\n<rdf:RDF\n\nxmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n\nxmlns:cd=\"http://www.recshop.fake/cd#\">\n\n<rdf:Description\n\n rdf:about=\"http://www.recshop.fake/cd/Empire Burlesque\">\n\n <cd:artist>Bob Dylan</cd:artist>\n\n <cd:country>USA</cd:country>\n\n <cd:company>Columbia</cd:company>\n\n <cd:price>10.90</cd:price>\n\n <cd:year>1985</cd:year>\n\n</rdf:Description>\n\n</rdf:RDF>\n\nThe elements, artist, country, company, price, and year, are defined in the http://www.recshop.fake/cd# \nnamespace. This namespace is outside RDF (and not a part of RDF). RDF defines only the \nframework. The elements, artist, country, company, price, and year, must be defined by someone else (company, \norganization, person, etc).",
+                "heading": "The <rdf:Description> Element"
+            },
+            {
+                "content": "The property elements can also be defined as attributes (instead of elements):\n\n<?xml version=\"1.0\"?>\n\n<rdf:RDF\n\nxmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n\nxmlns:cd=\"http://www.recshop.fake/cd#\">\n\n<rdf:Description\n\n rdf:about=\"http://www.recshop.fake/cd/Empire Burlesque\"\n\n cd:artist=\"Bob Dylan\" cd:country=\"USA\"\n\n cd:company=\"Columbia\" cd:price=\"10.90\"\n\n cd:year=\"1985\" />\n\n</rdf:RDF>",
+                "heading": "Properties as Attributes"
+            },
+            {
+                "content": "The property elements can also be defined as resources:\n\n<?xml version=\"1.0\"?>\n\n<rdf:RDF\n\nxmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n\nxmlns:cd=\"http://www.recshop.fake/cd#\">\n\n<rdf:Description\n\n rdf:about=\"http://www.recshop.fake/cd/Empire Burlesque\">\n\n <cd:artist rdf:resource=\"http://www.recshop.fake/cd/dylan\" />\n\n ...\n\n ...\n\n</rdf:Description>\n\n</rdf:RDF>\n\nIn the example above, the property artist does not have a value, but a reference to a resource containing information about the artist.",
+                "heading": "Properties as Resources"
+            },
+            {
+                "content": "RDF containers are used to describe group of things.\n\nThe following RDF elements are used to describe groups: <Bag>, <Seq>, and <Alt>.",
+                "heading": "RDF Containers"
+            },
+            {
+                "content": "The <rdf:Bag> element is used to describe a list of values that do \nnot have to be in a specific order.\n\nThe <rdf:Bag> element may contain duplicate values.\n\nExample\n\n<?xml version=\"1.0\"?>\n\n<rdf:RDF\n\nxmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n\nxmlns:cd=\"http://www.recshop.fake/cd#\">\n\n<rdf:Description\n\n rdf:about=\"http://www.recshop.fake/cd/Beatles\">\n\n <cd:artist>\n\n <rdf:Bag>\n\n <rdf:li>John</rdf:li>\n\n <rdf:li>Paul</rdf:li>\n\n <rdf:li>George</rdf:li>\n\n <rdf:li>Ringo</rdf:li>\n\n </rdf:Bag>\n\n </cd:artist>\n\n</rdf:Description>\n\n</rdf:RDF>",
+                "heading": "The <rdf:Bag> Element"
+            },
+            {
+                "content": "The <rdf:Seq> element is used to describe an ordered list of values (For example, in alphabetical order).\n\nThe <rdf:Seq> element may contain duplicate values.\n\nExample\n\n<?xml version=\"1.0\"?>\n\n<rdf:RDF\n\nxmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n\nxmlns:cd=\"http://www.recshop.fake/cd#\">\n\n<rdf:Description\n\n rdf:about=\"http://www.recshop.fake/cd/Beatles\">\n\n <cd:artist>\n\n <rdf:Seq>\n\n <rdf:li>George</rdf:li>\n\n <rdf:li>John</rdf:li>\n\n <rdf:li>Paul</rdf:li>\n\n <rdf:li>Ringo</rdf:li>\n\n </rdf:Seq>\n\n </cd:artist>\n\n</rdf:Description>\n\n</rdf:RDF>",
+                "heading": "The <rdf:Seq> Element"
+            },
+            {
+                "content": "The <rdf:Alt> element is used to describe a list of alternative values (the user can select only one of the values).\n\nExample\n\n<?xml version=\"1.0\"?>\n\n<rdf:RDF\n\nxmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n\nxmlns:cd=\"http://www.recshop.fake/cd#\">\n\n<rdf:Description\n\n rdf:about=\"http://www.recshop.fake/cd/Beatles\">\n\n <cd:format>\n\n <rdf:Alt>\n\n <rdf:li>CD</rdf:li>\n\n <rdf:li>Record</rdf:li>\n\n <rdf:li>Tape</rdf:li>\n\n </rdf:Alt>\n\n </cd:format>\n\n</rdf:Description>\n\n</rdf:RDF>",
+                "heading": "The <rdf:Alt> Element"
+            },
+            {
+                "content": "In the examples above we have talked about \"list of values\" when describing \nthe container elements. In RDF these \"list of values\" are called members.\n\nSo, we have the following:\n\n A container is a resource that contains things\n\n The contained things are called members (not list of values)",
+                "heading": "RDF Terms"
+            },
+            {
+                "content": "RDF collections describe groups that can ONLY contain the specified members.",
+                "heading": "RDF Collections"
+            },
+            {
+                "content": "As seen in the previous chapter, a container says that the containing resources are members - it does not say \nthat other members are not allowed.\n\nRDF collections are used to describe groups that can ONLY contain the specified members.\n\nA collection is described by the attribute rdf:parseType=\"Collection\".\n\nExample\n\n<?xml version=\"1.0\"?>\n\n<rdf:RDF\n\nxmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n\nxmlns:cd=\"http://recshop.fake/cd#\">\n\n<rdf:Description\n\nrdf:about=\"http://recshop.fake/cd/Beatles\">\n\n<cd:artist rdf:parseType=\"Collection\">\n\n<rdf:Description rdf:about=\"http://recshop.fake/cd/Beatles/George\"/>\n\n<rdf:Description rdf:about=\"http://recshop.fake/cd/Beatles/John\"/>\n\n<rdf:Description rdf:about=\"http://recshop.fake/cd/Beatles/Paul\"/>\n\n<rdf:Description rdf:about=\"http://recshop.fake/cd/Beatles/Ringo\"/>\n\n</cd:artist>\n\n</rdf:Description>\n\n</rdf:RDF>",
+                "heading": "The rdf:parseType=\"Collection\" Attribute"
+            },
+            {
+                "content": "RDF Schema (RDFS) is an extension to RDF.\n\nRDF describes resources with classes, properties, and values.\n\nIn addition, RDF also needs a way to define application-specific classes and properties. Application-specific classes and properties must be defined using extensions to RDF.\n\nOne such extension is RDF Schema.",
+                "heading": "RDF Schema and Application Classes"
+            },
+            {
+                "content": "RDF Schema does not provide actual application-specific classes and properties.\n\nInstead RDF Schema provides the framework to describe application-specific classes and properties.\n\nClasses in RDF Schema are much like classes in object oriented programming languages. This allows resources to be defined as instances of classes, and subclasses of classes.",
+                "heading": "RDF Schema (RDFS)"
+            },
+            {
+                "content": "The following example demonstrates some of the RDFS facilities:\n\n<?xml version=\"1.0\"?>\n\n<rdf:RDF\n\nxmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n\nxmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\"\n\nxml:base=\"http://www.animals.fake/animals#\">\n\n<rdf:Description rdf:ID=\"animal\">\n\n <rdf:type\n rdf:resource=\"http://www.w3.org/2000/01/rdf-schema#Class\"/>\n\n</rdf:Description>\n\n<rdf:Description rdf:ID=\"horse\">\n\n <rdf:type\n rdf:resource=\"http://www.w3.org/2000/01/rdf-schema#Class\"/>\n\n <rdfs:subClassOf rdf:resource=\"#animal\"/>\n\n</rdf:Description>\n\n</rdf:RDF>\n\nIn the example above, the resource \"horse\" is a subclass of the class \"animal\".",
+                "heading": "RDFS Example"
+            },
+            {
+                "content": "Since an RDFS class is an RDF resource we can abbreviate the example above by \nusing rdfs:Class instead of rdf:Description, and drop the rdf:type information:\n\n<?xml version=\"1.0\"?>\n\n<rdf:RDF\n\nxmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n\nxmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\"\n\nxml:base=\"http://www.animals.fake/animals#\">\n\n<rdfs:Class rdf:ID=\"animal\" />\n\n<rdfs:Class rdf:ID=\"horse\">\n\n <rdfs:subClassOf rdf:resource=\"#animal\"/>\n\n</rdfs:Class>\n\n</rdf:RDF>\n\nThat's it!",
+                "heading": "Example Abbreviated"
+            },
+            {
+                "content": "The Dublin Core Metadata Initiative (DCMI) has created some \npredefined properties for describing documents.\n\nRDF is metadata (data about data). RDF is used to describe information resources.\n\nThe Dublin Core is a set of predefined properties for describing documents.\n\nThe first Dublin Core properties were defined at the Metadata Workshop \nin Dublin, Ohio in 1995 and is currently maintained by the\nDublin Core Metadata Initiative.\n\n Property\n Definition\n\n Contributor\n An entity responsible for making contributions to the content of the \n resource\n\n Coverage\n The extent or scope of the content of the resource\n\n Creator\n An entity primarily responsible for making the content of the resource\n\n Format\n The physical or digital manifestation of the resource\n\n Date\n A date of an event in the lifecycle of the resource\n\n Description\n An account of the content of the resource\n\n Identifier\n An unambiguous reference to the resource within a given context\n\n Language\n A language of the intellectual content of the resource\n\n Publisher\n An entity responsible for making the resource available\n\n Relation\n A reference to a related resource\n\n Rights\n Information about rights held in and over the resource\n\n Source\n A Reference to a resource from which the present resource is derived\n\n Subject\n A topic of the content of the resource\n\n Title\n A name given to the resource\n\n Type\n The nature or genre of the content of the resource\n\nA quick look at the table above indicates that RDF is ideal for representing Dublin Core information.",
+                "heading": "The Dublin Core"
+            },
+            {
+                "content": "The following example demonstrates the use of some of the Dublin Core \nproperties in an RDF document:\n\n<?xml version=\"1.0\"?>\n\n<rdf:RDF\n\nxmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n\nxmlns:dc= \"http://purl.org/dc/elements/1.1/\">\n\n<rdf:Description rdf:about=\"https://www.w3schools.com\">\n\n <dc:description>W3Schools - Free tutorials</dc:description>\n\n <dc:publisher>Refsnes Data as</dc:publisher>\n\n <dc:date>2008-09-01</dc:date>\n\n <dc:type>Web Development</dc:type>\n\n <dc:format>text/html</dc:format>\n\n <dc:language>en</dc:language>\n\n</rdf:Description>\n\n</rdf:RDF>",
+                "heading": "RDF Example"
+            },
+            {
+                "content": "The RDF namespace (xmlns:rdf) is:\nhttp://www.w3.org/1999/02/22-rdf-syntax-ns#\n\nThe RDFS namespace (xmlns:rdfs ) is:\nhttp://www.w3.org/2000/01/rdf-schema#\n\nThe recommended file extension for RDF files is .rdf. However, the \nextension .xml is \noften used to provide compatibility with old xml parsers.\n\nThe MIME type should be \"application/rdf+xml\".",
+                "heading": "RDF Reference"
+            },
+            {
+                "content": "Element\n Class of\n Subclass of\n\n rdfs:Class\n All classes\n\n rdfs:Datatype\n Data types\n Class\n\n rdfs:Resource\n All resources\n Class\n\n rdfs:Container\n Containers\n Resource\n\n rdfs:Literal\n Literal values (text and numbers)\n Resource\n\n rdf:List\n Lists\n Resource\n\n rdf:Property\n Properties\n Resource\n\n rdf:Statement\n Statements\n Resource\n\n rdf:Alt\n Containers of alternatives\n Container\n\n rdf:Bag\n Unordered containers\n Container\n\n rdf:Seq\n Ordered containers\n Container\n\n rdfs:ContainerMembershipProperty\n Container membership properties\n Property\n\n rdf:XMLLiteral\n XML literal values\n Literal",
+                "heading": "RDFS / RDF Classes"
+            },
+            {
+                "content": "Element\n Domain\n Range\n Description\n\n rdfs:domain\n Property\n Class\n The domain of the resource\n\n rdfs:range\n Property\n Class\n The range of the resource\n\n rdfs:subPropertyOf\n Property\n Property\n The property is a sub property of a property\n\n rdfs:subClassOf\n Class\n Class\n The resource is a subclass of a class\n\n rdfs:comment\n Resource\n Literal\n The human readable description of the resource\n\n rdfs:label\n Resource\n Literal\n The human readable label (name)  of the resource\n\n rdfs:isDefinedBy\n Resource\n Resource\n The definition of the resource\n\n rdfs:seeAlso\n Resource\n Resource\n The additional information about the resource\n\n rdfs:member\n Resource\n Resource\n The member of the resource\n\n rdf:first\n List\n Resource\n\n rdf:rest\n List\n List\n\n rdf:subject\n Statement\n Resource\n The subject of the resource in an RDF Statement\n\n rdf:predicate\n Statement\n Resource\n The predicate of the resource in an RDF Statement\n\n rdf:object\n Statement \n Resource\n The object of the resource in an RDF Statement\n\n rdf:value\n Resource\n Resource\n The property used for values\n\n rdf:type\n Resource\n Class\n The resource is an instance of a class",
+                "heading": "RDFS / RDF Properties"
+            },
+            {
+                "content": "Attribute\n Description\n\n rdf:about\n Defines the resource being described\n\n rdf:Description\n Container for the description of a resource\n\n rdf:resource\n Defines a resource to identify a property\n\n rdf:datatype\n Defines the data type of an element\n\n rdf:ID\n Defines the ID of an element\n\n rdf:li\n Defines a list\n\n rdf:_n\n Defines a node\n\n rdf:nodeID\n Defines the ID of an element node\n\n rdf:parseType\n Defines how an element should be parsed\n\n rdf:RDF\n The root of an RDF document\n\n xml:base\n Defines the XML base\n\n xml:lang\n Defines the language of the element content\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "RDF Attributes"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:18:43Z",
+        "subject": "XML",
+        "title": "XML RDF"
+    },
+    {
+        "url": "https://www.w3schools.com/xml/xml_rss.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "xml_xml_rss",
+        "code_examples": [
+            {
+                "code": "RSS Document Example\n\n<?xml version=\"1.0\" encoding=\"UTF-8\" ?>\n\n<rss version=\"2.0\">\n\n<channel>\n\n <title>W3Schools Home Page</title>\n\n <link>https://www.w3schools.com</link>\n\n <description>Free web building tutorials</description>\n\n <item>\n\n <title>RSS Tutorial</title>\n\n <link>https://www.w3schools.com/xml/xml_rss.asp</link>\n\n <description>New RSS tutorial on W3Schools</description>\n\n </item>\n\n <item>\n\n <title>XML Tutorial</title>\n\n <link>https://www.w3schools.com/xml</link>\n\n <description>New XML tutorial on W3Schools</description>\n\n </item>\n\n</channel>\n\n</rss>",
+                "language": "xml",
+                "heading": "RSS Document Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<?xml version=\"1.0\" encoding=\"UTF-8\" ?>\n\n<rss version=\"2.0\">\n\n<channel>\n\n <title>W3Schools Home Page</title>\n\n <link>https://www.w3schools.com</link>\n\n <description>Free web building tutorials</description>\n\n <item>\n\n <title>RSS Tutorial</title>\n\n <link>https://www.w3schools.com/xml/xml_rss.asp</link>\n\n <description>New RSS tutorial on W3Schools</description>\n\n </item>\n\n <item>\n\n <title>XML Tutorial</title>\n\n <link>https://www.w3schools.com/xml</link>\n\n <description>New XML tutorial on W3Schools</description>\n\n </item>\n\n</channel>\n\n</rss>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<!-- This is an RSS comment -->",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<?xml version=\"1.0\" encoding=\"UTF-8\" ?>\n\n<rss version=\"2.0\">\n\n<channel>\n\n <title>W3Schools Home Page</title>\n\n <link>https://www.w3schools.com</link>\n\n <description>Free web building tutorials</description>\n\n <item>\n\n <title>RSS Tutorial</title>\n\n <link>https://www.w3schools.com/xml/xml_rss.asp</link>\n\n <description>New RSS tutorial on W3Schools</description>\n\n </item>\n\n</channel>\n\n</rss>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<category>Web development</category>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<copyright>2006 Refsnes Data as. All rights reserved.</copyright>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<image>\n\n <url>https://www.w3schools.com/images/logo.gif</url>\n\n <title>W3Schools.com</title>\n\n <link>https://www.w3schools.com</link>\n\n</image>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<language>en-us</language>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<?xml version=\"1.0\" encoding=\"UTF-8\" ?>\n\n<rss version=\"2.0\">\n\n<channel>\n\n <title>W3Schools Home Page</title>\n\n <link>https://www.w3schools.com</link>\n\n <description>Free web building tutorials</description>\n\n <item>\n\n <title>RSS Tutorial</title>\n\n <link>https://www.w3schools.com/xml/xml_rss.asp</link>\n\n <description>New RSS tutorial on W3Schools</description>\n\n </item>\n\n</channel>\n\n</rss>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<author>hege@refsnesdata.no</author>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<comments>https://www.w3schools.com/comments</comments>",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "<enclosure url=\"https://www.w3schools.com/xml/rss.mp3\"\n\nlength=\"5000\" type=\"audio/mpeg\" />",
+                "language": "xml",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Web Tools & Security",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "XML HOME\nXML Introduction\nXML How to use\nXML Tree\nXML Syntax\nXML Elements\nXML Attributes\nXML Namespaces\nXML Display\nXML HttpRequest\nXML Parser\nXML DOM\nXML XPath\nXML XSLT\nXML XQuery\nXML XLink\nXML Validator\nXML DTD\nXML Schema\nXML Server",
+                "heading": "XML Tutorial"
+            },
+            {
+                "content": "AJAX Introduction\nAJAX XMLHttp\nAJAX Request\nAJAX Response\nAJAX XML File\nAJAX PHP\nAJAX ASP\nAJAX Database\nAJAX Applications\nAJAX Examples",
+                "heading": "XML AJAX"
+            },
+            {
+                "content": "DOM Introduction\nDOM Nodes\nDOM Accessing\nDOM Node Info\nDOM Node List\nDOM Traversing\nDOM Navigating\nDOM Get Values\nDOM Change Nodes\nDOM Remove Nodes\nDOM Replace Nodes\nDOM Create Nodes\nDOM Add Nodes\nDOM Clone Nodes\nDOM Examples",
+                "heading": "XML DOM"
+            },
+            {
+                "content": "XPath Introduction\nXPath Nodes\nXPath Syntax\nXPath Axes\nXPath Operators\nXPath Examples",
+                "heading": "XPath Tutorial"
+            },
+            {
+                "content": "XSLT Introduction\nXSL Languages\nXSLT Transform\nXSLT <template>\nXSLT <value-of>\nXSLT <for-each>\nXSLT <sort>\nXSLT <if>\nXSLT <choose>\nXSLT Apply\nXSLT on the Client\nXSLT on the Server\nXSLT Edit XML\nXSLT Examples",
+                "heading": "XSLT Tutorial"
+            },
+            {
+                "content": "XQuery Introduction\nXQuery Example\nXQuery FLWOR\nXQuery HTML\nXQuery Terms\nXQuery Syntax\nXQuery Add\nXQuery Select\nXQuery Functions",
+                "heading": "XQuery Tutorial"
+            },
+            {
+                "content": "DTD Introduction\nDTD Building Blocks\nDTD Elements\nDTD Attributes\nDTD Elements vs Attr\nDTD Entities\nDTD Examples",
+                "heading": "XML DTD"
+            },
+            {
+                "content": "XSD Introduction\nXSD How To\nXSD <schema>\nXSD Elements\nXSD Attributes\nXSD Restrictions\nXSD Complex Elements\nXSD Empty\nXSD Elements-only\nXSD Text-only\nXSD Mixed\nXSD Indicators\nXSD <any>\nXSD <anyAttribute>\nXSD Substitution\nXSD Example",
+                "heading": "XSD Schema"
+            },
+            {
+                "content": "XSD String\nXSD Date/Time\nXSD Numeric\nXSD Misc\nXSD Reference",
+                "heading": "XSD Data Types"
+            },
+            {
+                "content": "XML Services\nXML WSDL\nXML SOAP\nXML RDF\nXML RSS",
+                "heading": "Web Services"
+            },
+            {
+                "content": "XML Certificate",
+                "heading": "XML Cert"
+            },
+            {
+                "content": "XML Examples\nXML Quiz\nXML Syllabus\nXML Study Plan",
+                "heading": "XML Examples"
+            },
+            {
+                "content": "RSS stands for Really Simple Syndication\n\n RSS allows you to syndicate your site content\n\n RSS defines an easy way to share and view headlines and content\n\n RSS files can be automatically updated\n\n RSS allows personalized views for different sites\n\n RSS is written in XML",
+                "heading": "What is RSS?"
+            },
+            {
+                "content": "RSS was designed to show selected data.\n\nWithout RSS, users will have to check your site daily for new \nupdates. This may be too time-consuming for many users. With an RSS feed (RSS is \noften called a News feed or RSS feed) they can \ncheck your site faster using an RSS aggregator (a site or program that \ngathers and sorts out RSS feeds).\n\nSince RSS data is small and fast-loading, it can easily be used \nwith services like cell phones or PDA's. \n\nWeb-rings with similar information can easily share data on their web sites to make \nthem better and more useful.",
+                "heading": "Why use RSS?"
+            },
+            {
+                "content": "Webmasters who seldom update their web sites do not need RSS!\n\nRSS is useful for web sites that are updated frequently, \nlike:\n\n News sites - Lists news with title, date and descriptions\n\n Companies - Lists news and new products\n\n Calendars - Lists upcoming events and important days\n\n Site changes - Lists changed pages or new pages",
+                "heading": "Who Should use RSS?"
+            },
+            {
+                "content": "Here are some benefits of using RSS:\n\nChoose your news\n\nWith RSS you can choose to view the news you want, the news that interest you and are relevant to your work.\n\nRemove unwanted information\n\nWith RSS you can (finally) separate wanted information from unwanted information (spam)!\n\nIncrease your site traffic\n\nWith RSS you can create your own news channel, and publish it to the Internet!",
+                "heading": "Benefits of RSS"
+            },
+            {
+                "content": "1997 - Dave Winer at UserLand develops scriptingNews. RSS was born\n\n 1999 - Netscape develops RSS 0.90 (which supported scriptingNews)\n\n 1999 - Dave Winer develops scriptingNews 2.0b1 (which included RSS 0.90 features)\n\n 1999 - Netscape develops RSS 0.91 (which included most features from scriptingNews 2.0b1)\n\n 1999 - UserLand gets rid of scriptingNews and uses only RSS 0.91\n\n 1999 - Netscape stops their RSS development\n\n 2000 - UserLand releases the official RSS 0.91 specification\n\n 2000 - O'Reilly develops RSS 1.0. This format uses RDF and namespaces.\n\n 2000 - Dave Winer at UserLand develops RSS 0.92\n\n 2002 - Dave Winer develops RSS 2.0 after leaving UserLand\n\n 2003 - The official RSS 2.0 specification is released\n\nRSS 1.0 is the only version that was developed using the W3C RDF (Resource Description Framework) standard.\n\nThe idea behind RDF was to help create a Semantic Web. However, this does not matter too much for ordinary users,\nbut by using web standards it will be easier for persons and applications to exchange data.",
+                "heading": "The History of RSS"
+            },
+            {
+                "content": "RSS 0.91 and RSS 2.0 are easier to understand than RSS 1.0. Our tutorial is based on RSS 2.0.\n\nThe syntax rules of RSS 2.0 are very simple and very strict.",
+                "heading": "What RSS Version Should I Use?"
+            },
+            {
+                "content": "There is no official standard for RSS.\n\n About 50 % of all RSS feeds use RSS 0.91\n\n About 25 % use RSS 1.0\n\n The last 25 % is split between RSS 0.9x versions and RSS 2.0",
+                "heading": "Is RSS a Web Standard?"
+            },
+            {
+                "content": "RSS is used to share content between websites.\n\nWith RSS, you register your content with companies called aggregators.\n\nSo, to be a part of it: First, create an RSS document and save it with an .xml extension. Then, upload the file to your \nwebsite. Next, register with an RSS aggregator. Each day the aggregator searches the registered websites for RSS documents, verifies the link, and displays \ninformation about the feed so clients can link to documents that interests them.\n\nTip: Read our RSS Publishing chapter to view free RSS aggregation services.",
+                "heading": "How RSS Works"
+            },
+            {
+                "content": "RSS documents use a self-describing and simple syntax.\n\nHere is a simple RSS document:\n\n<?xml version=\"1.0\" encoding=\"UTF-8\" ?>\n\n<rss version=\"2.0\">\n\n<channel>\n\n <title>W3Schools Home Page</title>\n\n <link>https://www.w3schools.com</link>\n\n <description>Free web building tutorials</description>\n\n <item>\n\n <title>RSS Tutorial</title>\n\n <link>https://www.w3schools.com/xml/xml_rss.asp</link>\n\n <description>New RSS tutorial on W3Schools</description>\n\n </item>\n\n <item>\n\n <title>XML Tutorial</title>\n\n <link>https://www.w3schools.com/xml</link>\n\n <description>New XML tutorial on W3Schools</description>\n\n </item>\n\n</channel>\n\n</rss>\n\nThe first line in the document - the XML declaration - defines\nthe XML version and the character encoding used in the document. In this case the document conforms to the 1.0 specification\nof XML and uses the UTF-8 character set.\n\nThe next line is the RSS declaration which identifies that this is an RSS document (in this case, RSS version 2.0).\n\nThe next line contains the <channel> element. This element is used to describe the RSS feed.\n\nThe <channel> element has three required child elements:\n\n <title> - Defines the title of the channel (e.g. W3Schools Home Page)\n\n <link> - Defines the hyperlink to the channel (e.g. https://www.w3schools.com)\n\n <description> - Describes the channel (e.g. Free web building tutorials)\n\nEach <channel> element can have one or more <item> elements.\n\nEach <item> element defines an article or \"story\" in the RSS feed.\n\nThe <item> element has three required child elements:\n\n <title> - Defines the title of the item (e.g. RSS Tutorial)\n\n <link> - Defines the hyperlink to the item (e.g. https://www.w3schools.com/xml/xml_rss.asp)\n\n <description> - Describes the item (e.g. New RSS tutorial on W3Schools)\n\nFinally, the two last lines close the <channel> and <rss> elements.",
+                "heading": "RSS Example"
+            },
+            {
+                "content": "The syntax for writing comments in RSS is similar to that of HTML:\n\n<!-- This is an RSS comment -->",
+                "heading": "Comments in RSS"
+            },
+            {
+                "content": "Because RSS is XML, keep in mind that:\n\n All elements must have a closing tag\n\n Elements are case sensitive\n\n Elements must be properly nested\n\n Attribute values must always be quoted",
+                "heading": "RSS is Written in XML"
+            },
+            {
+                "content": "The RSS <channel> element describes the RSS feed.\n\nLook at the following RSS document:\n\n<?xml version=\"1.0\" encoding=\"UTF-8\" ?>\n\n<rss version=\"2.0\">\n\n<channel>\n\n <title>W3Schools Home Page</title>\n\n <link>https://www.w3schools.com</link>\n\n <description>Free web building tutorials</description>\n\n <item>\n\n <title>RSS Tutorial</title>\n\n <link>https://www.w3schools.com/xml/xml_rss.asp</link>\n\n <description>New RSS tutorial on W3Schools</description>\n\n </item>\n\n</channel>\n\n</rss>\n\nAs mentioned before, the <channel> element describes the RSS feed, and has three required child elements:\n\n <title> - Defines the title of the channel (e.g. W3Schools Home Page)\n\n <link> - Defines the hyperlink to the channel (e.g. https://www.w3schools.com)\n\n <description> - Describes the channel (e.g. Free web building tutorials)\n\nThe <channel> element usually contains one or more <item> elements. Each <item> element defines an article \nor \"story\" in the RSS feed.\n\nFurthermore, there are several optional child elements of <channel>. We will explain the most important ones below.",
+                "heading": "The RSS <channel> Element"
+            },
+            {
+                "content": "The <category> child element is used to specify a category for your feed.\n\nThe <category> element makes it possible for RSS aggregators to group sites based on category.\n\nThe category for the RSS document above could be:\n\n<category>Web development</category>",
+                "heading": "The <category> Element"
+            },
+            {
+                "content": "The <copyright> child element notifies about copyrighted material.\n\nThe copyright for the RSS document above could be:\n\n<copyright>2006 Refsnes Data as. All rights reserved.</copyright>",
+                "heading": "The <copyright> Element"
+            },
+            {
+                "content": "The <image> child element allows an image to be displayed when aggregators present a feed.\n\nThe <image> element has three required child elements:\n\n <url> - Defines the URL to the image\n\n <title> - Defines the text to display if the image could not be shown\n\n <link> - Defines the hyperlink to the website that offers the channel\n\nThe image for the RSS document above could be:\n\n<image>\n\n <url>https://www.w3schools.com/images/logo.gif</url>\n\n <title>W3Schools.com</title>\n\n <link>https://www.w3schools.com</link>\n\n</image>",
+                "heading": "The <image> Element"
+            },
+            {
+                "content": "The <language> child element is used to specify the language used to write your document.\n\nThe <language> element makes it possible for RSS aggregators to group sites based on language.\n\nThe language for the RSS document above could be:\n\n<language>en-us</language>",
+                "heading": "The <language> Element"
+            },
+            {
+                "content": "Each <item> element defines an article or \"story\" in \nan RSS feed.\n\nLook at the following RSS document:\n\n<?xml version=\"1.0\" encoding=\"UTF-8\" ?>\n\n<rss version=\"2.0\">\n\n<channel>\n\n <title>W3Schools Home Page</title>\n\n <link>https://www.w3schools.com</link>\n\n <description>Free web building tutorials</description>\n\n <item>\n\n <title>RSS Tutorial</title>\n\n <link>https://www.w3schools.com/xml/xml_rss.asp</link>\n\n <description>New RSS tutorial on W3Schools</description>\n\n </item>\n\n</channel>\n\n</rss>\n\nAs mentioned before, each <item> element defines an article or \"story\" in the RSS feed.\n\nThe <item> element has three required child elements:\n\n <title> - Defines the title of the item (e.g. RSS Tutorial)\n\n <link> - Defines the hyperlink to the item (e.g. https://www.w3schools.com/xml/xml_rss.asp)\n\n <description> - Describes the item (e.g. New RSS tutorial on W3Schools)\n\nFurthermore, there are several optional child elements of <item>. We will explain the most important ones below.",
+                "heading": "The <item> Element"
+            },
+            {
+                "content": "The <author> child element is used to specify the e-mail address of the author of an item.\n\nNote: To prevent spam e-mails, some developers do not include the <author> element.\n\nThe author of the item in the RSS document above could be:\n\n<author>hege@refsnesdata.no</author>",
+                "heading": "The <author> Element"
+            },
+            {
+                "content": "The <comments> child element allows an item to link to comments about that item.\n\nA comment of the item in the RSS document above could be:\n\n<comments>https://www.w3schools.com/comments</comments>",
+                "heading": "The <comments> Element"
+            },
+            {
+                "content": "The <enclosure> child element allows a media-file to be included with an item.\n\nThe <enclosure> element has three required attributes:\n\n url - Defines the URL to the media file\n\n length - Defines the length (in bytes) of the media file\n\n type - Defines the type of media file\n\nA media-file included in the item in the RSS document above could be:\n\n<enclosure url=\"https://www.w3schools.com/xml/rss.mp3\"\n\nlength=\"5000\" type=\"audio/mpeg\" />",
+                "heading": "The <enclosure> Element"
+            },
+            {
+                "content": "Having an RSS document is not useful if other people cannot \nreach it. \n\nNow it's time to get your RSS file up on the web. Here are the steps:\n\n1. Name your RSS file. Notice that the file must have an .xml extension.\n\n2. Validate your RSS file\n\n3. Upload the RSS file to your web directory on your web server.\n\n4. Copy the little orange or\n button to your web directory.\n\n5. Put the little orange \"RSS\" or \"XML\" button on the page where you will \noffer RSS to the world (e.g. on your home page). Then add a link to the button \nthat links to the RSS file. The code will look something like this:\n\n<a href=\"https://www.w3schools.com/xml/myfirstrss.xml\">\n\n<img src=\"https://www.w3schools.com/xml/pic_rss.gif\" width=\"36\" height=\"14\">\n\n</a>.\n\n6. Submit your RSS feed to the RSS Feed Directories (you can Google or Yahoo \nfor \"RSS Feed Directories\"). Note! The URL to \nyour feed is not your home page, it is the URL to your feed, like \n\"https://www.w3schools.com/xml/myfirstrss.xml\".\n\n7. Register your feed with the major search engines:\n\n Google -\n\n http://www.google.com/submityourcontent/website-owner\n\n8. Update your feed - After registering your RSS feed, you must make sure that you update your content frequently \nand that your RSS feed is constantly available.",
+                "heading": "Get Your RSS Feed Up On The Web"
+            },
+            {
+                "content": "The best way to ensure your RSS feed works \nthe way you want, is to manage it yourself.\n\nHowever, this can be very time consuming, \nespecially for pages with lot of updates.\n\nAn alternative is to use a third-party automated RSS.",
+                "heading": "Can I Manage my RSS Feed Myself?"
+            },
+            {
+                "content": "For users who only need an RSS feed for their personal website, some of the most popular blog (Web Log) managers \nthat offer built-in RSS services are:\n\n Wordpress\n\n Blogger\n\n Radio",
+                "heading": "Automated RSS"
+            },
+            {
+                "content": "An RSS Reader is used to read RSS Feeds!\n\nRSS readers are available for many different devices and OS.\n\nThere are a lot of different RSS readers. Some work as web services, and some are limited to windows (or Mac, PDA or UNIX):\n\n QuiteRSS - An open-source, cross-platform RSS/Atom news \n feed reader\n\n FeedReader - A \n simple, straightforward feed reader that easily handles large number of feeds\n\nTip: Most browsers have a built-in RSS Reader. If you go to a web site that offers RSS feeds, you will see \nan RSS icon\n in the address bar, \nor toolbar. Click on the icon to view a list of the different feeds. Choose the feed you want to read.",
+                "heading": "RSS Readers"
+            },
+            {
+                "content": "Click on the little or \n button next to the RSS feed you \nwant to read. Copy The URL you get in the browser window and paste it in your RSS reader.",
+                "heading": "I have an RSS Reader. Now what?"
+            },
+            {
+                "content": "The <channel> Element\nThe links in the \"Element\" column point to more information about each \nspecific element.\n\nElement\nDescription\n\n<category>\nOptional. Defines one or more categories for the feed\n\n<cloud>\nOptional. Register processes to be notified immediately of \nupdates of the feed\n\n<copyright>\nOptional. Notifies about copyrighted material\n\n<description>\nRequired. Describes the channel\n\n<docs>\nOptional. Specifies a URL to the documentation of the format \nused in the feed\n\n<generator>\nOptional. Specifies the program used to generate the feed\n\n<image>\nOptional. Allows an image to be displayed when aggregators \npresent a feed\n\n<language>\nOptional. Specifies the language the feed is written in\n\n<lastBuildDate>\nOptional. Defines the last-modified date of the content of the feed\n\n<link>\nRequired. Defines the hyperlink to the channel\n\n<managingEditor>\nOptional. Defines the e-mail address to the editor of the \ncontent of the feed\n\n<pubDate>\nOptional. Defines the last publication date for the content of the \nfeed\n\n<rating>\nOptional. The PICS rating of the feed\n\n<skipDays>\nOptional. Specifies the days where aggregators should skip updating the feed\n\n<skipHours>\nOptional. Specifies the hours where aggregators should skip updating the feed\n\n<textInput>\nOptional. Specifies a text input field that should be displayed \nwith the feed\n\n<title>\nRequired. Defines the title of the channel\n\n<ttl>\nOptional. Specifies the number of minutes the feed can stay cached \nbefore refreshing it from the source\n\n<webMaster>\nOptional. Defines the e-mail address to the webmaster of the \nfeed\n\nThe <item> Element\n\nElement\nDescription\n\n<author>\nOptional. Specifies the e-mail address to the author of the \nitem\n\n<category>\nOptional. Defines one or more categories the item belongs to\n\n<comments>\nOptional. Allows an item to link to comments about that item\n\n<description>\nRequired. Describes the item\n\n<enclosure>\nOptional. Allows a media file to be included with the item\n\n<guid>\nOptional. Defines a unique identifier for the item\n\n<link>\nRequired. Defines the hyperlink to the item\n\n<pubDate>\nOptional. Defines the last-publication date for the item\n\n<source>\nOptional. Specifies a third-party source for the item\n\n<title>\nRequired. Defines the title of the item\n\n❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "RSS Reference"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:18:43Z",
+        "subject": "XML",
+        "title": "XML RSS"
+    },
+    {
+        "url": "https://www.w3schools.com/xml/xml_exam.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "xml_xml_exam",
+        "code_examples": [],
+        "category": "Web Tools & Security",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "XML HOME\nXML Introduction\nXML How to use\nXML Tree\nXML Syntax\nXML Elements\nXML Attributes\nXML Namespaces\nXML Display\nXML HttpRequest\nXML Parser\nXML DOM\nXML XPath\nXML XSLT\nXML XQuery\nXML XLink\nXML Validator\nXML DTD\nXML Schema\nXML Server",
+                "heading": "XML Tutorial"
+            },
+            {
+                "content": "AJAX Introduction\nAJAX XMLHttp\nAJAX Request\nAJAX Response\nAJAX XML File\nAJAX PHP\nAJAX ASP\nAJAX Database\nAJAX Applications\nAJAX Examples",
+                "heading": "XML AJAX"
+            },
+            {
+                "content": "DOM Introduction\nDOM Nodes\nDOM Accessing\nDOM Node Info\nDOM Node List\nDOM Traversing\nDOM Navigating\nDOM Get Values\nDOM Change Nodes\nDOM Remove Nodes\nDOM Replace Nodes\nDOM Create Nodes\nDOM Add Nodes\nDOM Clone Nodes\nDOM Examples",
+                "heading": "XML DOM"
+            },
+            {
+                "content": "XPath Introduction\nXPath Nodes\nXPath Syntax\nXPath Axes\nXPath Operators\nXPath Examples",
+                "heading": "XPath Tutorial"
+            },
+            {
+                "content": "XSLT Introduction\nXSL Languages\nXSLT Transform\nXSLT <template>\nXSLT <value-of>\nXSLT <for-each>\nXSLT <sort>\nXSLT <if>\nXSLT <choose>\nXSLT Apply\nXSLT on the Client\nXSLT on the Server\nXSLT Edit XML\nXSLT Examples",
+                "heading": "XSLT Tutorial"
+            },
+            {
+                "content": "XQuery Introduction\nXQuery Example\nXQuery FLWOR\nXQuery HTML\nXQuery Terms\nXQuery Syntax\nXQuery Add\nXQuery Select\nXQuery Functions",
+                "heading": "XQuery Tutorial"
+            },
+            {
+                "content": "DTD Introduction\nDTD Building Blocks\nDTD Elements\nDTD Attributes\nDTD Elements vs Attr\nDTD Entities\nDTD Examples",
+                "heading": "XML DTD"
+            },
+            {
+                "content": "XSD Introduction\nXSD How To\nXSD <schema>\nXSD Elements\nXSD Attributes\nXSD Restrictions\nXSD Complex Elements\nXSD Empty\nXSD Elements-only\nXSD Text-only\nXSD Mixed\nXSD Indicators\nXSD <any>\nXSD <anyAttribute>\nXSD Substitution\nXSD Example",
+                "heading": "XSD Schema"
+            },
+            {
+                "content": "XSD String\nXSD Date/Time\nXSD Numeric\nXSD Misc\nXSD Reference",
+                "heading": "XSD Data Types"
+            },
+            {
+                "content": "XML Services\nXML WSDL\nXML SOAP\nXML RDF\nXML RSS",
+                "heading": "Web Services"
+            },
+            {
+                "content": "XML Certificate",
+                "heading": "XML Cert"
+            },
+            {
+                "content": "XML Examples\nXML Quiz\nXML Syllabus\nXML Study Plan",
+                "heading": "XML Examples"
+            },
+            {
+                "content": "Prepare online at your own pace, take the exam when you are ready, and add a verified credential to your CV, LinkedIn profile, and portfolio.\n\n Designed for students, developers, and professionals who want a practical way to document their knowledge.\n\n Get Your HTML Certificate »\n\n Online exam. No expiration. Shareable verification link.\n\n w\n 3\n s\n c\n h\n o\n o\n l\n s\n\n C\n E\n R\n T\n I\n F\n I\n E\n D\n\n .\n\n 2\n 0\n 2\n 6",
+                "heading": "Get Certified in HTML"
+            },
+            {
+                "content": "Any student or professional working in digital fields can benefit from documenting their skills with a certificate.\n\n Certifications help demonstrate knowledge to current or future employers, clients, and collaborators in an increasingly competitive market.",
+                "heading": "Why Get Certified?"
+            },
+            {
+                "content": "W3Schools has more than two decades of experience teaching coding online.\n\n Our certificates provide a practical and professional way to show your skills in a format that is easy to verify and share.",
+                "heading": "Trusted Learning Platform"
+            },
+            {
+                "content": "The price is a small fraction of the cost of traditional education.\n\n You can prepare on your own schedule and take the exam when you are ready.",
+                "heading": "Affordable and Flexible"
+            },
+            {
+                "content": "Each certificate includes a unique verification link that can be shared with employers, clients, and your network.\n\n Download your certificate to showcase it, and validate it using the unique link or QR code.\n\n See how it looks in this example.",
+                "heading": "Get Your Certificate and Share It"
+            },
+            {
+                "content": "Fee\n\n 95 USD\n\n Achievable certification levels\n\n Intermediate (40%)\nAdvanced (75%)\nProfessional (90%)\n\n Number of questions\n\n Adaptive, 60 on average\n\n Requirement to pass\n\n Minimum 40% - Intermediate level\n\n Time limit\n\n 60 minutes\n\n Number of attempts\n\n 3\n\n Exam deadline\n\n None\n\n Certification expiration\n\n None\n\n Format\n\n Online, multiple choice\n\n Register Now »\n\n Have any questions? Send us an e-mail: sales@w3schools.com",
+                "heading": "Exam Overview"
+            },
+            {
+                "content": "Getting a certificate shows your commitment to improving your skills.\n\n You can add the certificate to your CV, resume, LinkedIn profile, and other professional platforms.\n\n It can help support career growth by making it easier to show your knowledge when applying for jobs, freelance work, or larger projects.",
+                "heading": "Advance Faster in Your Career"
+            },
+            {
+                "content": "Get Certified",
+                "heading": "Document Your Knowledge Today!"
+            },
+            {
+                "content": "01\n\n Study HTML for free at W3Schools.com\n\n 02\n\n Learn at your own speed and focus on the topics you need most\n\n 03\n\n Practice with quizzes and exercises\n\n 04\n\n Apply by paying the exam fee\n\n 05\n\n Take the exam online at any time and from any location",
+                "heading": "How It Works"
+            },
+            {
+                "content": "Getting a certificate shows initiative, helps you build credibility, and gives you a professional way to present your HTML knowledge.\n\n Get Your HTML Certificate »",
+                "heading": "Document Your Skills"
+            },
+            {
+                "content": "Are you an educator, manager, or business owner looking for courses or certifications for a group?\n\n We work with schools, companies, and organizations around the world.\n\n Send us an e-mail: sales@w3schools.com\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Looking to Add Multiple Users?"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:18:43Z",
+        "subject": "XML",
+        "title": "W3Schools XML Certificate"
+    },
+    {
+        "url": "https://www.w3schools.com/xml/xml_examples.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "xml_xml_examples",
+        "code_examples": [],
+        "category": "Web Tools & Security",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "XML HOME\nXML Introduction\nXML How to use\nXML Tree\nXML Syntax\nXML Elements\nXML Attributes\nXML Namespaces\nXML Display\nXML HttpRequest\nXML Parser\nXML DOM\nXML XPath\nXML XSLT\nXML XQuery\nXML XLink\nXML Validator\nXML DTD\nXML Schema\nXML Server",
+                "heading": "XML Tutorial"
+            },
+            {
+                "content": "AJAX Introduction\nAJAX XMLHttp\nAJAX Request\nAJAX Response\nAJAX XML File\nAJAX PHP\nAJAX ASP\nAJAX Database\nAJAX Applications\nAJAX Examples",
+                "heading": "XML AJAX"
+            },
+            {
+                "content": "DOM Introduction\nDOM Nodes\nDOM Accessing\nDOM Node Info\nDOM Node List\nDOM Traversing\nDOM Navigating\nDOM Get Values\nDOM Change Nodes\nDOM Remove Nodes\nDOM Replace Nodes\nDOM Create Nodes\nDOM Add Nodes\nDOM Clone Nodes\nDOM Examples",
+                "heading": "XML DOM"
+            },
+            {
+                "content": "XPath Introduction\nXPath Nodes\nXPath Syntax\nXPath Axes\nXPath Operators\nXPath Examples",
+                "heading": "XPath Tutorial"
+            },
+            {
+                "content": "XSLT Introduction\nXSL Languages\nXSLT Transform\nXSLT <template>\nXSLT <value-of>\nXSLT <for-each>\nXSLT <sort>\nXSLT <if>\nXSLT <choose>\nXSLT Apply\nXSLT on the Client\nXSLT on the Server\nXSLT Edit XML\nXSLT Examples",
+                "heading": "XSLT Tutorial"
+            },
+            {
+                "content": "XQuery Introduction\nXQuery Example\nXQuery FLWOR\nXQuery HTML\nXQuery Terms\nXQuery Syntax\nXQuery Add\nXQuery Select\nXQuery Functions",
+                "heading": "XQuery Tutorial"
+            },
+            {
+                "content": "DTD Introduction\nDTD Building Blocks\nDTD Elements\nDTD Attributes\nDTD Elements vs Attr\nDTD Entities\nDTD Examples",
+                "heading": "XML DTD"
+            },
+            {
+                "content": "XSD Introduction\nXSD How To\nXSD <schema>\nXSD Elements\nXSD Attributes\nXSD Restrictions\nXSD Complex Elements\nXSD Empty\nXSD Elements-only\nXSD Text-only\nXSD Mixed\nXSD Indicators\nXSD <any>\nXSD <anyAttribute>\nXSD Substitution\nXSD Example",
+                "heading": "XSD Schema"
+            },
+            {
+                "content": "XSD String\nXSD Date/Time\nXSD Numeric\nXSD Misc\nXSD Reference",
+                "heading": "XSD Data Types"
+            },
+            {
+                "content": "XML Services\nXML WSDL\nXML SOAP\nXML RDF\nXML RSS",
+                "heading": "Web Services"
+            },
+            {
+                "content": "XML Certificate",
+                "heading": "XML Cert"
+            },
+            {
+                "content": "XML Examples\nXML Quiz\nXML Syllabus\nXML Study Plan",
+                "heading": "XML Examples"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:18:43Z",
+        "subject": "XML",
+        "title": "XML Examples"
+    },
+    {
+        "url": "https://www.w3schools.com/xml/xml_quiz.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "xml_xml_quiz",
+        "code_examples": [],
+        "category": "Web Tools & Security",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "XML HOME\nXML Introduction\nXML How to use\nXML Tree\nXML Syntax\nXML Elements\nXML Attributes\nXML Namespaces\nXML Display\nXML HttpRequest\nXML Parser\nXML DOM\nXML XPath\nXML XSLT\nXML XQuery\nXML XLink\nXML Validator\nXML DTD\nXML Schema\nXML Server",
+                "heading": "XML Tutorial"
+            },
+            {
+                "content": "AJAX Introduction\nAJAX XMLHttp\nAJAX Request\nAJAX Response\nAJAX XML File\nAJAX PHP\nAJAX ASP\nAJAX Database\nAJAX Applications\nAJAX Examples",
+                "heading": "XML AJAX"
+            },
+            {
+                "content": "DOM Introduction\nDOM Nodes\nDOM Accessing\nDOM Node Info\nDOM Node List\nDOM Traversing\nDOM Navigating\nDOM Get Values\nDOM Change Nodes\nDOM Remove Nodes\nDOM Replace Nodes\nDOM Create Nodes\nDOM Add Nodes\nDOM Clone Nodes\nDOM Examples",
+                "heading": "XML DOM"
+            },
+            {
+                "content": "XPath Introduction\nXPath Nodes\nXPath Syntax\nXPath Axes\nXPath Operators\nXPath Examples",
+                "heading": "XPath Tutorial"
+            },
+            {
+                "content": "XSLT Introduction\nXSL Languages\nXSLT Transform\nXSLT <template>\nXSLT <value-of>\nXSLT <for-each>\nXSLT <sort>\nXSLT <if>\nXSLT <choose>\nXSLT Apply\nXSLT on the Client\nXSLT on the Server\nXSLT Edit XML\nXSLT Examples",
+                "heading": "XSLT Tutorial"
+            },
+            {
+                "content": "XQuery Introduction\nXQuery Example\nXQuery FLWOR\nXQuery HTML\nXQuery Terms\nXQuery Syntax\nXQuery Add\nXQuery Select\nXQuery Functions",
+                "heading": "XQuery Tutorial"
+            },
+            {
+                "content": "DTD Introduction\nDTD Building Blocks\nDTD Elements\nDTD Attributes\nDTD Elements vs Attr\nDTD Entities\nDTD Examples",
+                "heading": "XML DTD"
+            },
+            {
+                "content": "XSD Introduction\nXSD How To\nXSD <schema>\nXSD Elements\nXSD Attributes\nXSD Restrictions\nXSD Complex Elements\nXSD Empty\nXSD Elements-only\nXSD Text-only\nXSD Mixed\nXSD Indicators\nXSD <any>\nXSD <anyAttribute>\nXSD Substitution\nXSD Example",
+                "heading": "XSD Schema"
+            },
+            {
+                "content": "XSD String\nXSD Date/Time\nXSD Numeric\nXSD Misc\nXSD Reference",
+                "heading": "XSD Data Types"
+            },
+            {
+                "content": "XML Services\nXML WSDL\nXML SOAP\nXML RDF\nXML RSS",
+                "heading": "Web Services"
+            },
+            {
+                "content": "XML Certificate",
+                "heading": "XML Cert"
+            },
+            {
+                "content": "XML Examples\nXML Quiz\nXML Syllabus\nXML Study Plan",
+                "heading": "XML Examples"
+            },
+            {
+                "content": "The test contains 25 questions and there is no time limit.\n\nThe test is not official, it's just a nice way to see how much you know, or don't know, about XML.",
+                "heading": "The Test"
+            },
+            {
+                "content": "You will get 1 point for each correct answer. At the end of the Quiz,\nyour total score will be displayed. Maximum score is 25 points.",
+                "heading": "Count Your Score"
+            },
+            {
+                "content": "Good luck!\n\nStart the XML Quiz ❯\n\n Course Certification",
+                "heading": "Start the Quiz"
+            },
+            {
+                "content": "Complete the W3Schools coding course, strengthen your knowledge, and earn a certificate you can add to your CV, portfolio, and LinkedIn profile.\n\n Get Certified Today\n\n W3Schools Certificate\n\n Coding\n\n Learn it. Practice it. Prove it.\n\n w\n 3\n s\n c\n h\n o\n o\n l\n s\n\n C\n E\n R\n T\n I\n F\n I\n E\n D\n\n .\n\n 2\n 0\n 2\n 6",
+                "heading": "Get Certified in coding"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:18:44Z",
+        "subject": "XML",
+        "title": "XML Quiz"
+    },
+    {
+        "url": "https://www.w3schools.com/xml/xml_syllabus.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "xml_xml_syllabus",
+        "code_examples": [
+            {
+                "code": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n\n<note>\n  <to>Tove</to>\n\n  <from>Jani</from>\n\n  <heading>Reminder</heading>\n\n  <body>Don't forget me this weekend!</body>\n\n</note>",
+                "language": "xml",
+                "heading": "XML Example 1",
+                "tryit_url": null
+            }
+        ],
+        "category": "Web Tools & Security",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "XML HOME\nXML Introduction\nXML How to use\nXML Tree\nXML Syntax\nXML Elements\nXML Attributes\nXML Namespaces\nXML Display\nXML HttpRequest\nXML Parser\nXML DOM\nXML XPath\nXML XSLT\nXML XQuery\nXML XLink\nXML Validator\nXML DTD\nXML Schema\nXML Server",
+                "heading": "XML Tutorial"
+            },
+            {
+                "content": "AJAX Introduction\nAJAX XMLHttp\nAJAX Request\nAJAX Response\nAJAX XML File\nAJAX PHP\nAJAX ASP\nAJAX Database\nAJAX Applications\nAJAX Examples",
+                "heading": "XML AJAX"
+            },
+            {
+                "content": "DOM Introduction\nDOM Nodes\nDOM Accessing\nDOM Node Info\nDOM Node List\nDOM Traversing\nDOM Navigating\nDOM Get Values\nDOM Change Nodes\nDOM Remove Nodes\nDOM Replace Nodes\nDOM Create Nodes\nDOM Add Nodes\nDOM Clone Nodes\nDOM Examples",
+                "heading": "XML DOM"
+            },
+            {
+                "content": "XPath Introduction\nXPath Nodes\nXPath Syntax\nXPath Axes\nXPath Operators\nXPath Examples",
+                "heading": "XPath Tutorial"
+            },
+            {
+                "content": "XSLT Introduction\nXSL Languages\nXSLT Transform\nXSLT <template>\nXSLT <value-of>\nXSLT <for-each>\nXSLT <sort>\nXSLT <if>\nXSLT <choose>\nXSLT Apply\nXSLT on the Client\nXSLT on the Server\nXSLT Edit XML\nXSLT Examples",
+                "heading": "XSLT Tutorial"
+            },
+            {
+                "content": "XQuery Introduction\nXQuery Example\nXQuery FLWOR\nXQuery HTML\nXQuery Terms\nXQuery Syntax\nXQuery Add\nXQuery Select\nXQuery Functions",
+                "heading": "XQuery Tutorial"
+            },
+            {
+                "content": "DTD Introduction\nDTD Building Blocks\nDTD Elements\nDTD Attributes\nDTD Elements vs Attr\nDTD Entities\nDTD Examples",
+                "heading": "XML DTD"
+            },
+            {
+                "content": "XSD Introduction\nXSD How To\nXSD <schema>\nXSD Elements\nXSD Attributes\nXSD Restrictions\nXSD Complex Elements\nXSD Empty\nXSD Elements-only\nXSD Text-only\nXSD Mixed\nXSD Indicators\nXSD <any>\nXSD <anyAttribute>\nXSD Substitution\nXSD Example",
+                "heading": "XSD Schema"
+            },
+            {
+                "content": "XSD String\nXSD Date/Time\nXSD Numeric\nXSD Misc\nXSD Reference",
+                "heading": "XSD Data Types"
+            },
+            {
+                "content": "XML Services\nXML WSDL\nXML SOAP\nXML RDF\nXML RSS",
+                "heading": "Web Services"
+            },
+            {
+                "content": "XML Certificate",
+                "heading": "XML Cert"
+            },
+            {
+                "content": "XML Examples\nXML Quiz\nXML Syllabus\nXML Study Plan",
+                "heading": "XML Examples"
+            },
+            {
+                "content": "The W3Schools XML Tutorial is comprehensive and beginner-friendly.\n\nIt will give you a fundamental knowledge of XML.\n\nIt is designed for beginners and requires no prior experience with markup languages.\n\nThe content has been carefully made to be bite-sized, simple, and easy to understand.\n\nThe content has been proven by millions of users over the years. It is updated and improved frequently.\n\nThe syllabus outline and its sequence are structured so you can learn XML step by step, from the introduction to creating structured data.\n\nGet Started With XML »",
+                "heading": "Introduction"
+            },
+            {
+                "content": "Learn what XML is and how it works\n\n Create basic XML documents with elements and attributes\n\n Display XML data on web pages\n\n Use XML with AJAX for dynamic web content\n\n Work with XML DOM to access and change XML\n\n Use XPath to find information in XML documents\n\n Transform XML into other formats using XSLT\n\n Validate XML using DTD and XML Schema\n\n Store and share data using XML\n\nNote: Are you a teacher teaching XML? W3Schools Academy is a toolbox of features that can help you teach. It offers classroom features such as pre-built study plans, classroom administration and much more. Read more about Academy here.",
+                "heading": "Learning Outcomes"
+            },
+            {
+                "content": "Data Exchange:\n XML is essential for structured data exchange between systems.\n\n Web Services:\n XML is fundamental for SOAP web services and APIs.\n\n Configuration:\n XML is widely used for application configuration files.\n\n Data Storage:\n XML provides a format for storing structured data.\n\n Document Management:\n XML supports document structures and metadata.\n\n System Integration:\n XML enables communication between different systems.\n\n Enterprise Applications:\n XML is used in many enterprise-level applications.\n\nGet Started",
+                "heading": "Which Subjects Are XML Relevant For?"
+            },
+            {
+                "content": "In this tutorial we offer different activities for you to learn XML for free:\n\n Lessons\n\n Quizzes",
+                "heading": "Activities"
+            },
+            {
+                "content": "You can also create an account to track your progress.\n\nAs a signed-in user, you get access to features such as:\n\n Learning paths\n\n Sandbox and lab environments\n\n Achievements\n\n And much more!\n\nSign Up",
+                "heading": "Sign in to Track Progress"
+            },
+            {
+                "content": "XML HOME\n\n XML Introduction\n\n XML How to use\n\n XML Tree\n\n XML Syntax\n\n XML Elements\n\n XML Attributes\n\n XML Namespaces\n\n XML Display\n\n XML HttpRequest\n\n XML Parser\n\n XML DOM\n\n XML XPath\n\n XML XSLT\n\n XML XQuery\n\n XML XLink\n\n XML Validator\n\n XML DTD\n\n XML Schema\n\n XML Server\n\n XML Examples\n\n XML Quiz\n\n AJAX Introduction\n\n AJAX XMLHttp\n\n AJAX Request\n\n AJAX Response\n\n AJAX XML File\n\n AJAX PHP\n\n AJAX ASP\n\n AJAX Database\n\n AJAX Applications\n\n DOM Introduction\n\n DOM Nodes\n\n DOM Accessing\n\n DOM Node Info\n\n DOM Node List\n\n DOM Traversing\n\n DOM Navigating\n\n DOM Get Values\n\n DOM Change Nodes\n\n DOM Remove Nodes\n\n DOM Replace Nodes\n\n DOM Create Nodes\n\n DOM Add Nodes\n\n DOM Clone Nodes\n\n XPath Introduction\n\n XPath Nodes\n\n XPath Syntax\n\n XPath Axes\n\n XPath Operators\n\n XSLT Introduction\n\n XSL Languages\n\n XSLT Transform\n\n XSLT <template>\n\n XSLT <value-of>\n\n XSLT <for-each>\n\n XSLT <sort>\n\n XSLT <if>\n\n XSLT <choose>\n\n XSLT Apply\n\n XSLT on the Client\n\n XSLT on the Server\n\n XSLT Edit XML\n\n XQuery Introduction\n\n XQuery Example\n\n XQuery FLWOR\n\n XQuery HTML\n\n XQuery Terms\n\n XQuery Syntax\n\n XQuery Add\n\n XQuery Select\n\n DTD Introduction\n\n DTD Building Blocks\n\n DTD Elements\n\n DTD Attributes\n\n DTD Elements vs Attr\n\n DTD Entities\n\n XSD Introduction\n\n XSD How To\n\n XSD <schema>\n\n XSD Elements\n\n XSD Attributes\n\n XSD Restrictions\n\n XSD Complex Elements\n\n XSD Empty\n\n XSD Elements-only\n\n XSD Text-only\n\n XSD Mixed\n\n XSD Indicators\n\n XSD <any>\n\n XSD <anyAttribute>\n\n XSD Substitution\n\n XSD String\n\n XSD Date/Time\n\n XSD Numeric\n\n XSD Misc\n\n XML Services\n\n XML WSDL\n\n XML SOAP\n\n XML RDF\n\n DOM Node Types\n\n DOM Node\n\n DOM NodeList\n\n DOM NamedNodeMap\n\n DOM Document\n\n DOM Element\n\n DOM Attribute\n\n DOM Text\n\n DOM CDATA\n\n DOM Comment\n\n DOM XMLHttpRequest\n\n DOM Parser\n\n XSLT Elements\n\n XSLT/XPath Functions\n\nGet Started",
+                "heading": "Overview of the Modules"
+            },
+            {
+                "content": "XML, like any markup language, is best learned through hands-on practice.\n\nTry this example using our editor:\n\nXML Example 1\n\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n\n<note>\n  <to>Tove</to>\n\n  <from>Jani</from>\n\n  <heading>Reminder</heading>\n\n  <body>Don't forget me this weekend!</body>\n\n</note>\n\nDisplay the XML File »\nDisplay the XML File as a Note »\n\n ×\n\nIf you want to explore more and host your project, we have a feature called Spaces \nthat allows you to build, test and validate XML documents.\n\nHere you get a secure sandbox environment called Spaces, where you can practice XML and test documents in real-time.\n\nSpaces allow you to test, validate, and transform XML. This includes a W3Schools subdomain, hosting, and secure SSL certificates.\n\nSpaces require no installation and run directly in the browser.\n\nFeatures include:\n\n Collaboration\n\n File navigator\n\n Terminal & log\n\n Package manager\n\n Database\n\n Environment manager\n\n Analytics\n\nCreate a Spaces Account",
+                "heading": "Sandbox and Lab Environment"
+            },
+            {
+                "content": "W3Schools offers an end-of-pathway certification program.\n\nHere you can take exams to get certified.\n\nThe XML exam is a test that summarizes the W3Schools XML syllabus.\n\nAfter passing the exam you get the \"Certified XML Developer\" Certification.\n\nThere are two different types of certifications:\n\nNon-adaptive\n\nAdaptive\n\nThe non-adaptive is pass or no pass.\n\nThe adaptive certification is adaptive and graded; students will get a grade from intermediate, advanced to professional.\n\nBuy Certificate »",
+                "heading": "XML Certification"
+            },
+            {
+                "content": "Are you interested in learning how you can use W3Schools Academy to Teach \nXML? \n\nWatch a demo of W3Schools Academy. You'll see how it works, and discover how it can make teaching programming easier and more engaging.\n\nWatch Demo »\n\n ×\n Header\n\nfunction loadXMLDoc() {\n var xmlhttp = new XMLHttpRequest();\n xmlhttp.onreadystatechange = function() {\n if (this.readyState == 4 && this.status == 200) {\n myFunction(this);\n }\n };\n xmlhttp.open(\"GET\", \"note.xml\", true);\n xmlhttp.send();\n}\nfunction myFunction(xml) {\n var i;\n var xmlDoc = xml.responseXML;\n var table=\"",
+                "heading": "Are You a Teacher?"
+            },
+            {
+                "content": "\";\n var x = xmlDoc.getElementsByTagName(\"note\");\n for (i = 0; i To: \" +\n x[i].getElementsByTagName(\"to\")[0].childNodes[0].nodeValue +\n \"\nFrom: \" +\n x[i].getElementsByTagName(\"from\")[0].childNodes[0].nodeValue +\n \"\nHeading: \" +\n x[i].getElementsByTagName(\"heading\")[0].childNodes[0].nodeValue +\n \"\nBody: \" +\n x[i].getElementsByTagName(\"body\")[0].childNodes[0].nodeValue +\n \"\n\";\n }\n document.getElementById('id01').style.display = 'block'\n document.getElementById(\"demo\").innerHTML = table;\n document.getElementById(\"demo\").style.visibility=\"visible\";\n}\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Note"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:18:44Z",
+        "subject": "XML",
+        "title": "XML Syllabus"
+    },
+    {
+        "url": "https://www.w3schools.com/xml/xml_study_plan.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "xml_xml_study_plan",
+        "code_examples": [],
+        "category": "Web Tools & Security",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "XML HOME\nXML Introduction\nXML How to use\nXML Tree\nXML Syntax\nXML Elements\nXML Attributes\nXML Namespaces\nXML Display\nXML HttpRequest\nXML Parser\nXML DOM\nXML XPath\nXML XSLT\nXML XQuery\nXML XLink\nXML Validator\nXML DTD\nXML Schema\nXML Server",
+                "heading": "XML Tutorial"
+            },
+            {
+                "content": "AJAX Introduction\nAJAX XMLHttp\nAJAX Request\nAJAX Response\nAJAX XML File\nAJAX PHP\nAJAX ASP\nAJAX Database\nAJAX Applications\nAJAX Examples",
+                "heading": "XML AJAX"
+            },
+            {
+                "content": "DOM Introduction\nDOM Nodes\nDOM Accessing\nDOM Node Info\nDOM Node List\nDOM Traversing\nDOM Navigating\nDOM Get Values\nDOM Change Nodes\nDOM Remove Nodes\nDOM Replace Nodes\nDOM Create Nodes\nDOM Add Nodes\nDOM Clone Nodes\nDOM Examples",
+                "heading": "XML DOM"
+            },
+            {
+                "content": "XPath Introduction\nXPath Nodes\nXPath Syntax\nXPath Axes\nXPath Operators\nXPath Examples",
+                "heading": "XPath Tutorial"
+            },
+            {
+                "content": "XSLT Introduction\nXSL Languages\nXSLT Transform\nXSLT <template>\nXSLT <value-of>\nXSLT <for-each>\nXSLT <sort>\nXSLT <if>\nXSLT <choose>\nXSLT Apply\nXSLT on the Client\nXSLT on the Server\nXSLT Edit XML\nXSLT Examples",
+                "heading": "XSLT Tutorial"
+            },
+            {
+                "content": "XQuery Introduction\nXQuery Example\nXQuery FLWOR\nXQuery HTML\nXQuery Terms\nXQuery Syntax\nXQuery Add\nXQuery Select\nXQuery Functions",
+                "heading": "XQuery Tutorial"
+            },
+            {
+                "content": "DTD Introduction\nDTD Building Blocks\nDTD Elements\nDTD Attributes\nDTD Elements vs Attr\nDTD Entities\nDTD Examples",
+                "heading": "XML DTD"
+            },
+            {
+                "content": "XSD Introduction\nXSD How To\nXSD <schema>\nXSD Elements\nXSD Attributes\nXSD Restrictions\nXSD Complex Elements\nXSD Empty\nXSD Elements-only\nXSD Text-only\nXSD Mixed\nXSD Indicators\nXSD <any>\nXSD <anyAttribute>\nXSD Substitution\nXSD Example",
+                "heading": "XSD Schema"
+            },
+            {
+                "content": "XSD String\nXSD Date/Time\nXSD Numeric\nXSD Misc\nXSD Reference",
+                "heading": "XSD Data Types"
+            },
+            {
+                "content": "XML Services\nXML WSDL\nXML SOAP\nXML RDF\nXML RSS",
+                "heading": "Web Services"
+            },
+            {
+                "content": "XML Certificate",
+                "heading": "XML Cert"
+            },
+            {
+                "content": "XML Examples\nXML Quiz\nXML Syllabus\nXML Study Plan",
+                "heading": "XML Examples"
+            },
+            {
+                "content": "The XML study plan helps you teach your students XML step-by-step.\n\nCreating a study plan for XML is easy.\n\nYou can use a pre-built study plan or customize it.\n\nStudents have different skill levels. The study plans can be customized to ensure that everyone is challenged.\n\nSave time with pre-built teacher materials and study plans. Easily organize your class with a timeline from the introduction of XML to the final exam.",
+                "heading": "Introduction"
+            },
+            {
+                "content": "This study plan is a feature of W3Schools Academy.\n\nW3Schools Academy is a platform that has everything you need to teach coding, all in one place.\n\nIt offers you as a teacher a toolbox of features that helps you succeed with teaching in your classroom.\n\nYou need to have an active subscription to access the study plan feature.\n\n Full Access ($49.99 / year per student)\n\n Calculate your price and order here.\n\nLearn More »\n\nAcademy also offer other features such as:\n\n Managing your classroom\n\n Tracking of student progress and reports\n\n Labs, assignments, and code challenges (prebuilt challenges or create your own ones)\n\n Auto-grading\n\n Teaching materials\n\n Certification exams\n\nGet a free demo »",
+                "heading": "W3Schools Academy"
+            },
+            {
+                "content": "W3Schools has everything you need to teach XML.\n\nThe XML training materials is available for you to include and use in your study plan:\n\n W3Schools XML Tutorial\n\n XML Quiz\n\n XML Challenges (Coding challenges)\n\n XML Certification Exam (End of Pathway Exam)",
+                "heading": "Teacher Materials"
+            },
+            {
+                "content": "With the XML Syllabus, your students will start with the basics, like understanding XML syntax, structure, and elements, and move to more advanced topics, like working with XML parsers, using XPath, and defining XML schemas. Each chapter includes examples, try-it-yourself sections, exercises, and quizzes to make learning easy, interactive, and fun.\n\nRead more about XML Syllabus.",
+                "heading": "XML Syllabus"
+            },
+            {
+                "content": "The study plan features are made to help teachers and students. They make learning easy, flexible, and fun. These features work for different types of classes, learning styles and student level.\n\n Learning Paths\n\n You can add ready-made learning paths.\n\n The learning paths are by default ordered by our recommended order.\n\n You can change the order.\n\n You can add custom activities with text, links, or multi-media files.\n\n Drag and drop or click to make changes to the path.\n\n Interactive Content\n\n Tutorials\n\n Try-its (test code snippets)\n\n Exercises\n\n Quiz\n\n Challenges\n\n Labs\n\n Timeline and Pace\n\n You can set a timeline of your study plan (e.g., 4-week, 8-week, 12-week, 24-week plans).\n\n You can decide the learning pace for your class.\n\n Different study plans can be assigned to different students in the same class.\n\n The flexibility can help to make sure that everyone is challenged.\n\n Track Student Progress\n\n There are tools to track student progress.\n\n The analytic tools include: chapter progress, exercises results, quiz results, exam results, and much more.\n\n The challenges can be auto-graded or manually graded. The results are available to you as a teacher.\n\n End of Pathway Exam\n\n The XML study plan aligns with the XML Certification Exam.\n\n The exam can be taken at the end of the study plan, at your selected date.\n\n The exam summarizes the XML Tutorial.\n\n You get reports of the students' results.\n\n Accessibility\n\n Study plans and learning materials are accessible on desktops, tablets, and smartphones.\n\n This ensures students can learn anytime, anywhere.\n\nLearn More »",
+                "heading": "Study Plan Overview"
+            },
+            {
+                "content": "You choose the timeline and pace of your study plans.\n\nSchools have different preferences.\n\nSome would like more intensive pace, e.g. 5 weeks, others 12 or more weeks.\n\nIt is completely up to you.\n\nFor example, this is how a 3-week XML study plan could look like:\n\n Week 1: Introduction, Basic use, AJAX\n\n Week 2: DOM, XPath, XSLT, XQuery, DTD, XSD Schema\n\n Week 3: XSD Complex, XSD Data Types, Web Services, XML Certification Exam\n\nImage of Sample XML study plan:",
+                "heading": "Sample Study Plan"
+            },
+            {
+                "content": "Start with XML Study Plans today.\n\nGet Started »",
+                "heading": "Ready to get started?"
+            },
+            {
+                "content": "Are you interested in learning how you can use W3Schools Academy to Teach XML programming? \n\nWatch a demo of W3Schools Academy. You'll see how it works, and discover how it can make teaching programming easier and more engaging.\n\nWatch Demo »\n\n❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Are You a Teacher?"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:18:45Z",
+        "subject": "XML",
+        "title": "XML Study Plan"
+    }
+];

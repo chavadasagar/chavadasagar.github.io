@@ -1,0 +1,7191 @@
+﻿window.DEVDOCS_SUBJECTS = window.DEVDOCS_SUBJECTS || {};
+window.DEVDOCS_SUBJECTS['mysql'] = [
+    {
+        "url": "https://www.w3schools.com/mysql/default.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "mysql_default",
+        "code_examples": [
+            {
+                "code": "SELECT * FROM Customers;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MySQL HOME\nMySQL Intro\nMySQL RDBMS",
+                "heading": "MySQL Tutorial"
+            },
+            {
+                "content": "MySQL SQL\nMySQL SELECT\nMySQL SELECT DISTINCT\nMySQL WHERE\nMySQL ORDER BY\nMySQL AND\nMySQL OR\nMySQL NOT\nMySQL INSERT INTO\nMySQL NULL Values\nMySQL UPDATE\nMySQL DELETE\nMySQL LIMIT\nMySQL Aggregate Functions\nMySQL MIN()\nMySQL MAX()\nMySQL COUNT()\nMySQL SUM()\nMySQL AVG()\nMySQL LIKE\nMySQL Wildcards\nMySQL IN\nMySQL BETWEEN\nMySQL Aliases\nMySQL Joins\nMySQL INNER JOIN\nMySQL LEFT JOIN\nMySQL RIGHT JOIN\nMySQL CROSS JOIN\nMySQL Self Join\nMySQL UNION\nMySQL UNION ALL\nMySQL GROUP BY\nMySQL HAVING\nMySQL EXISTS\nMySQL ANY\nMySQL ALL\nMySQL INSERT SELECT\nMySQL CASE\nMySQL Null Functions\nMySQL Stored Procedures\nMySQL Comments\nMySQL Operators",
+                "heading": "MySQL SQL"
+            },
+            {
+                "content": "MySQL Install (Windows)\nMySQL Install (Linux)-->\nMySQL Create DB\nMySQL Drop DB\nMySQL Create Table\nMySQL Drop Table\nMySQL Alter Table\nMySQL Constraints\nMySQL Not Null\nMySQL Unique\nMySQL Primary Key\nMySQL Foreign Key\nMySQL Check\nMySQL Default\nMySQL Create Index\nMySQL Auto Increment\nMySQL Dates\nMySQL Views\nMySQL Injection\nMySQL Prepared Statements",
+                "heading": "MySQL Database"
+            },
+            {
+                "content": "MySQL Certificate",
+                "heading": "MySQL Cert"
+            },
+            {
+                "content": "MySQL Data Types\nMySQL Functions\n\n String Functions\n ASCII\n CHAR_LENGTH\n CHARACTER_LENGTH\n CONCAT\n CONCAT_WS\n FIELD\n FIND_IN_SET\n FORMAT\n INSERT\n INSTR\n LCASE\n LEFT\n LENGTH\n LOCATE\n LOWER\n LPAD\n LTRIM\n MID\n POSITION\n REPEAT\n REPLACE\n REVERSE\n RIGHT\n RPAD\n RTRIM\n SPACE\n STRCMP\n SUBSTR\n SUBSTRING\n SUBSTRING_INDEX\n TRIM\n UCASE\n UPPER\n\n Numeric Functions\n ABS\n ACOS\n ASIN\n ATAN\n ATAN2\n AVG\n CEIL\n CEILING\n COS\n COT\n COUNT\n DEGREES\n DIV\n EXP\n FLOOR\n GREATEST\n LEAST\n LN\n LOG\n LOG10\n LOG2\n MAX\n MIN\n MOD\n PI\n POW\n POWER\n RADIANS\n RAND\n ROUND\n SIGN\n SIN\n SQRT\n SUM\n TAN\n TRUNCATE\n\n Date Functions\n ADDDATE\n ADDTIME\n CURDATE\n CURRENT_DATE\n CURRENT_TIME\n CURRENT_TIMESTAMP\n CURTIME\n DATE\n DATEDIFF\n DATE_ADD\n DATE_FORMAT\n DATE_SUB\n DAY\n DAYNAME\n DAYOFMONTH\n DAYOFWEEK\n DAYOFYEAR\n EXTRACT\n FROM_DAYS\n HOUR\n LAST_DAY\n LOCALTIME\n LOCALTIMESTAMP\n MAKEDATE\n MAKETIME\n MICROSECOND\n MINUTE\n MONTH\n MONTHNAME\n NOW\n PERIOD_ADD\n PERIOD_DIFF\n QUARTER\n SECOND\n SEC_TO_TIME\n STR_TO_DATE\n SUBDATE\n SUBTIME\n SYSDATE\n TIME\n TIME_FORMAT\n TIME_TO_SEC\n TIMEDIFF\n TIMESTAMP\n TO_DAYS\n WEEK\n WEEKDAY\n WEEKOFYEAR\n YEAR\n YEARWEEK\n\n Advanced Functions\n BIN\n BINARY\n CASE\n CAST\n COALESCE\n CONNECTION_ID\n CONV\n CONVERT\n CURRENT_USER\n DATABASE\n IF\n IFNULL\n ISNULL\n LAST_INSERT_ID\n NULLIF\n SESSION_USER\n SYSTEM_USER\n USER\n VERSION",
+                "heading": "MySQL References"
+            },
+            {
+                "content": "MySQL Examples\nMySQL Editor\nMySQL Quiz\nMySQL Exercises\nMySQL Syllabus\nMySQL Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\nMySQL Tutorial\n\n❮ Home\nNext ❯",
+                "heading": "MySQL Examples"
+            },
+            {
+                "content": "MySQL is a widely used relational database management system (RDBMS).\n\n MySQL is free and open-source.\n\n MySQL is known for being fast, reliable, scalable, and easy to use, and is ideal for both small and large applications.\n\n Learn MySQL now ❯\n\n Become MySQL Certified\n Get certified with our MySQL exam, includes a professionally curated study kit to guide you from beginner to exam-ready.\n\nGet Certified ❯\n\n CERTIFICATE OF COMPLETION\n This certifies that\n Your Name\n has passed the W3Schools MySQL Certification exam and is hereby declared a\n\n Certified MySQL Developer\n The candidate has passed the exam at the Professional level.\n Verify at\n verify.w3schools.com\n Stale Refsnes\n for w3schools.com",
+                "heading": "Learn MySQL"
+            },
+            {
+                "content": "With our online MySQL editor, you can edit the SQL statements, and click on a button to view the result.\n\nExample\n\nSELECT * FROM Customers;\n\nTry it Yourself »\n\nClick on the \"Try it Yourself\" button to see how it works.",
+                "heading": "Examples in Each Chapter"
+            },
+            {
+                "content": "Many chapters in this tutorial end with an exercise where you can check your level of knowledge.\n\nSee all MySQL Exercises",
+                "heading": "MySQL Exercises"
+            },
+            {
+                "content": "Learn by examples! This tutorial supplements all explanations with clarifying examples.\n\nSee All SQL Examples",
+                "heading": "MySQL Examples"
+            },
+            {
+                "content": "Test your MySQL skills at W3Schools!\n\nStart MySQL Quiz!",
+                "heading": "MySQL Quiz Test"
+            },
+            {
+                "content": "Create a W3Schools account and get access to more features and learning materials:\n\n View your completed tutorials, exercises, and quizzes\n\n Keep an eye on your progress and daily streaks\n\n Jump back in right where you left off\n-->\n Join the leaderboard and compete with others\n\n Get access to more challenges and tests\n-->\n Get your own avatar and unlock new skins\n\n Create your own personal website\n\n Sign Up »\n\nNote\nThis is an optional feature. You can study at W3Schools without creating an account.",
+                "heading": "Track Your Progress"
+            },
+            {
+                "content": "At W3Schools you will find a complete reference of MySQL data types and functions:\n\nMySQL Data Types\n\nMySQL Functions\n\n❮ Home\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "MySQL References"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:29Z",
+        "subject": "MySQL",
+        "title": "MySQL Tutorial"
+    },
+    {
+        "url": "https://www.w3schools.com/mysql/mysql_intro.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "mysql_mysql_intro",
+        "code_examples": [],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MySQL HOME\nMySQL Intro\nMySQL RDBMS",
+                "heading": "MySQL Tutorial"
+            },
+            {
+                "content": "MySQL SQL\nMySQL SELECT\nMySQL SELECT DISTINCT\nMySQL WHERE\nMySQL ORDER BY\nMySQL AND\nMySQL OR\nMySQL NOT\nMySQL INSERT INTO\nMySQL NULL Values\nMySQL UPDATE\nMySQL DELETE\nMySQL LIMIT\nMySQL Aggregate Functions\nMySQL MIN()\nMySQL MAX()\nMySQL COUNT()\nMySQL SUM()\nMySQL AVG()\nMySQL LIKE\nMySQL Wildcards\nMySQL IN\nMySQL BETWEEN\nMySQL Aliases\nMySQL Joins\nMySQL INNER JOIN\nMySQL LEFT JOIN\nMySQL RIGHT JOIN\nMySQL CROSS JOIN\nMySQL Self Join\nMySQL UNION\nMySQL UNION ALL\nMySQL GROUP BY\nMySQL HAVING\nMySQL EXISTS\nMySQL ANY\nMySQL ALL\nMySQL INSERT SELECT\nMySQL CASE\nMySQL Null Functions\nMySQL Stored Procedures\nMySQL Comments\nMySQL Operators",
+                "heading": "MySQL SQL"
+            },
+            {
+                "content": "MySQL Install (Windows)\nMySQL Install (Linux)-->\nMySQL Create DB\nMySQL Drop DB\nMySQL Create Table\nMySQL Drop Table\nMySQL Alter Table\nMySQL Constraints\nMySQL Not Null\nMySQL Unique\nMySQL Primary Key\nMySQL Foreign Key\nMySQL Check\nMySQL Default\nMySQL Create Index\nMySQL Auto Increment\nMySQL Dates\nMySQL Views\nMySQL Injection\nMySQL Prepared Statements",
+                "heading": "MySQL Database"
+            },
+            {
+                "content": "MySQL Certificate",
+                "heading": "MySQL Cert"
+            },
+            {
+                "content": "MySQL Data Types\nMySQL Functions\n\n String Functions\n ASCII\n CHAR_LENGTH\n CHARACTER_LENGTH\n CONCAT\n CONCAT_WS\n FIELD\n FIND_IN_SET\n FORMAT\n INSERT\n INSTR\n LCASE\n LEFT\n LENGTH\n LOCATE\n LOWER\n LPAD\n LTRIM\n MID\n POSITION\n REPEAT\n REPLACE\n REVERSE\n RIGHT\n RPAD\n RTRIM\n SPACE\n STRCMP\n SUBSTR\n SUBSTRING\n SUBSTRING_INDEX\n TRIM\n UCASE\n UPPER\n\n Numeric Functions\n ABS\n ACOS\n ASIN\n ATAN\n ATAN2\n AVG\n CEIL\n CEILING\n COS\n COT\n COUNT\n DEGREES\n DIV\n EXP\n FLOOR\n GREATEST\n LEAST\n LN\n LOG\n LOG10\n LOG2\n MAX\n MIN\n MOD\n PI\n POW\n POWER\n RADIANS\n RAND\n ROUND\n SIGN\n SIN\n SQRT\n SUM\n TAN\n TRUNCATE\n\n Date Functions\n ADDDATE\n ADDTIME\n CURDATE\n CURRENT_DATE\n CURRENT_TIME\n CURRENT_TIMESTAMP\n CURTIME\n DATE\n DATEDIFF\n DATE_ADD\n DATE_FORMAT\n DATE_SUB\n DAY\n DAYNAME\n DAYOFMONTH\n DAYOFWEEK\n DAYOFYEAR\n EXTRACT\n FROM_DAYS\n HOUR\n LAST_DAY\n LOCALTIME\n LOCALTIMESTAMP\n MAKEDATE\n MAKETIME\n MICROSECOND\n MINUTE\n MONTH\n MONTHNAME\n NOW\n PERIOD_ADD\n PERIOD_DIFF\n QUARTER\n SECOND\n SEC_TO_TIME\n STR_TO_DATE\n SUBDATE\n SUBTIME\n SYSDATE\n TIME\n TIME_FORMAT\n TIME_TO_SEC\n TIMEDIFF\n TIMESTAMP\n TO_DAYS\n WEEK\n WEEKDAY\n WEEKOFYEAR\n YEAR\n YEARWEEK\n\n Advanced Functions\n BIN\n BINARY\n CASE\n CAST\n COALESCE\n CONNECTION_ID\n CONV\n CONVERT\n CURRENT_USER\n DATABASE\n IF\n IFNULL\n ISNULL\n LAST_INSERT_ID\n NULLIF\n SESSION_USER\n SYSTEM_USER\n USER\n VERSION",
+                "heading": "MySQL References"
+            },
+            {
+                "content": "MySQL Examples\nMySQL Editor\nMySQL Quiz\nMySQL Exercises\nMySQL Syllabus\nMySQL Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\nIntroduction to MySQL\n\n❮ Previous\n Next ❯",
+                "heading": "MySQL Examples"
+            },
+            {
+                "content": "MySQL is a very popular open-source relational database management system (RDBMS).\n\n MySQL is open-source\n\n MySQL is free\n\n MySQL is ideal for both small and large applications\n\n MySQL is very fast, reliable, scalable, and easy to use\n\n MySQL is cross-platform\n\n MySQL is compliant with the ANSI SQL standard\n\n MySQL was first released in 1995\n\n MySQL is developed, distributed, and supported by Oracle Corporation\n\n MySQL is named after co-founder Ulf Michael \"Monty\" Widenius's daughter: My",
+                "heading": "What is MySQL?"
+            },
+            {
+                "content": "Huge websites like Facebook, Twitter, Airbnb, Booking.com, Uber, GitHub, YouTube, etc.\n\n Content Management Systems like WordPress, Drupal, Joomla!, Contao, etc.\n\n A very large number of web developers around the world",
+                "heading": "Who Uses MySQL?"
+            },
+            {
+                "content": "To build a web site that shows data from a database, you will need:\n\n An RDBMS database program (like MySQL)\n\n A server-side scripting language, like PHP\n\n To use SQL to get the data you want\n\n To use HTML / CSS to style the page",
+                "heading": "Show Data On Your Web Site"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:31Z",
+        "subject": "MySQL",
+        "title": "Introduction to MySQL"
+    },
+    {
+        "url": "https://www.w3schools.com/mysql/mysql_rdbms.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "mysql_mysql_rdbms",
+        "code_examples": [],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MySQL HOME\nMySQL Intro\nMySQL RDBMS",
+                "heading": "MySQL Tutorial"
+            },
+            {
+                "content": "MySQL SQL\nMySQL SELECT\nMySQL SELECT DISTINCT\nMySQL WHERE\nMySQL ORDER BY\nMySQL AND\nMySQL OR\nMySQL NOT\nMySQL INSERT INTO\nMySQL NULL Values\nMySQL UPDATE\nMySQL DELETE\nMySQL LIMIT\nMySQL Aggregate Functions\nMySQL MIN()\nMySQL MAX()\nMySQL COUNT()\nMySQL SUM()\nMySQL AVG()\nMySQL LIKE\nMySQL Wildcards\nMySQL IN\nMySQL BETWEEN\nMySQL Aliases\nMySQL Joins\nMySQL INNER JOIN\nMySQL LEFT JOIN\nMySQL RIGHT JOIN\nMySQL CROSS JOIN\nMySQL Self Join\nMySQL UNION\nMySQL UNION ALL\nMySQL GROUP BY\nMySQL HAVING\nMySQL EXISTS\nMySQL ANY\nMySQL ALL\nMySQL INSERT SELECT\nMySQL CASE\nMySQL Null Functions\nMySQL Stored Procedures\nMySQL Comments\nMySQL Operators",
+                "heading": "MySQL SQL"
+            },
+            {
+                "content": "MySQL Install (Windows)\nMySQL Install (Linux)-->\nMySQL Create DB\nMySQL Drop DB\nMySQL Create Table\nMySQL Drop Table\nMySQL Alter Table\nMySQL Constraints\nMySQL Not Null\nMySQL Unique\nMySQL Primary Key\nMySQL Foreign Key\nMySQL Check\nMySQL Default\nMySQL Create Index\nMySQL Auto Increment\nMySQL Dates\nMySQL Views\nMySQL Injection\nMySQL Prepared Statements",
+                "heading": "MySQL Database"
+            },
+            {
+                "content": "MySQL Certificate",
+                "heading": "MySQL Cert"
+            },
+            {
+                "content": "MySQL Data Types\nMySQL Functions\n\n String Functions\n ASCII\n CHAR_LENGTH\n CHARACTER_LENGTH\n CONCAT\n CONCAT_WS\n FIELD\n FIND_IN_SET\n FORMAT\n INSERT\n INSTR\n LCASE\n LEFT\n LENGTH\n LOCATE\n LOWER\n LPAD\n LTRIM\n MID\n POSITION\n REPEAT\n REPLACE\n REVERSE\n RIGHT\n RPAD\n RTRIM\n SPACE\n STRCMP\n SUBSTR\n SUBSTRING\n SUBSTRING_INDEX\n TRIM\n UCASE\n UPPER\n\n Numeric Functions\n ABS\n ACOS\n ASIN\n ATAN\n ATAN2\n AVG\n CEIL\n CEILING\n COS\n COT\n COUNT\n DEGREES\n DIV\n EXP\n FLOOR\n GREATEST\n LEAST\n LN\n LOG\n LOG10\n LOG2\n MAX\n MIN\n MOD\n PI\n POW\n POWER\n RADIANS\n RAND\n ROUND\n SIGN\n SIN\n SQRT\n SUM\n TAN\n TRUNCATE\n\n Date Functions\n ADDDATE\n ADDTIME\n CURDATE\n CURRENT_DATE\n CURRENT_TIME\n CURRENT_TIMESTAMP\n CURTIME\n DATE\n DATEDIFF\n DATE_ADD\n DATE_FORMAT\n DATE_SUB\n DAY\n DAYNAME\n DAYOFMONTH\n DAYOFWEEK\n DAYOFYEAR\n EXTRACT\n FROM_DAYS\n HOUR\n LAST_DAY\n LOCALTIME\n LOCALTIMESTAMP\n MAKEDATE\n MAKETIME\n MICROSECOND\n MINUTE\n MONTH\n MONTHNAME\n NOW\n PERIOD_ADD\n PERIOD_DIFF\n QUARTER\n SECOND\n SEC_TO_TIME\n STR_TO_DATE\n SUBDATE\n SUBTIME\n SYSDATE\n TIME\n TIME_FORMAT\n TIME_TO_SEC\n TIMEDIFF\n TIMESTAMP\n TO_DAYS\n WEEK\n WEEKDAY\n WEEKOFYEAR\n YEAR\n YEARWEEK\n\n Advanced Functions\n BIN\n BINARY\n CASE\n CAST\n COALESCE\n CONNECTION_ID\n CONV\n CONVERT\n CURRENT_USER\n DATABASE\n IF\n IFNULL\n ISNULL\n LAST_INSERT_ID\n NULLIF\n SESSION_USER\n SYSTEM_USER\n USER\n VERSION",
+                "heading": "MySQL References"
+            },
+            {
+                "content": "MySQL Examples\nMySQL Editor\nMySQL Quiz\nMySQL Exercises\nMySQL Syllabus\nMySQL Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\nMySQL RDBMS\n\n ❮ Previous\n Next ❯",
+                "heading": "MySQL Examples"
+            },
+            {
+                "content": "RDBMS stands for Relational Database Management System.\n\nRDBMS is a program used to maintain a relational database.\n\nRDBMS is the basis for all modern database systems such as MySQL, Microsoft SQL Server, Oracle, and Microsoft Access.\n\nThe data in RDBMS is stored in database objects called tables. A table is a \ncollection of related data entries and it consists of columns and rows.",
+                "heading": "What is RDBMS?"
+            },
+            {
+                "content": "A table is a collection of related data entries, and it consists of columns and rows.\n\nA column (or field) is a vertical entity in a table, and holds a set of data \nvalues of a particular type.\n\nA row (or record) is a horizontal entity in a table, and holds each \nindividual entry in a table.\n\nLook at a selection from the Northwind \"Customers\" table:\n\n CustomerID\n CustomerName\n ContactName\n Address\n City\n PostalCode\n Country\n\n 1\n Alfreds Futterkiste\n Maria Anders\n Obere Str. 57\n Berlin\n 12209\n Germany\n\n 2\n Ana Trujillo Emparedados y helados\n Ana Trujillo\n Avda. de la Constitución 2222\n México D.F.\n 05021\n Mexico\n\n 3\n Antonio Moreno Taquería\n Antonio Moreno\n Mataderos 2312\n México D.F.\n 05023\n Mexico\n\n 4\n Around the Horn\n Thomas Hardy\n 120 Hanover Sq.\n London\n WA1 1DP\n UK\n\n 5\n Berglunds snabbköp\n Christina Berglund\n Berguvsvägen 8\n Luleå\n S-958 22\n Sweden\n\nThe columns in the \"Customers\" table above are: CustomerID, CustomerName, ContactName, Address, \nCity, PostalCode and Country. The table has 5 records (rows).",
+                "heading": "What is a Database Table?"
+            },
+            {
+                "content": "A relational database defines database relationships in the form of tables. \nThe tables are linked to each other - based on data common to each.\n\nLook at a selection of the following three tables: \"Customers\", \"Orders\", and \"Shippers\" from the Northwind \ndatabase:\n\nCustomers Table\n\n CustomerID\n CustomerName\n ContactName\n Address\n City\n PostalCode\n Country\n\n 1\n\n Alfreds Futterkiste\n Maria Anders\n Obere Str. 57\n Berlin\n 12209\n Germany\n\n 2\n Ana Trujillo Emparedados y helados\n Ana Trujillo\n Avda. de la Constitución 2222\n México D.F.\n 05021\n Mexico\n\n 3\n Antonio Moreno Taquería\n Antonio Moreno\n Mataderos 2312\n México D.F.\n 05023\n Mexico\n\n 4\n\n Around the Horn\n Thomas Hardy\n 120 Hanover Sq.\n London\n WA1 1DP\n UK\n\nThe relationship between the \"Customers\" table and the \"Orders\" table is the \nCustomerID column:\n\nOrders Table\n\n OrderID\n CustomerID\n EmployeeID\n OrderDate\n ShipperID\n\n 10308\n 2\n 7\n 1996-09-18\n 3\n\n 10355\n\n 4\n 6\n 1996-11-15\n 1\n\n 10365\n 3\n 3\n 1996-11-27\n 2\n\n 10383\n 4\n 8\n 1996-12-16\n 3\n\nThe relationship between the \"Orders\" table and the \"Shippers\" table is the \nShipperID column:\n\nShippers Table\n\n ShipperID\n ShipperName\n Phone\n\n 1\n Speedy Express\n (503) 555-9831\n\n 2\n United Package\n (503) 555-3199\n\n 3\n Federal Shipping\n (503) 555-9931\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "What is a Relational Database?"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:31Z",
+        "subject": "MySQL",
+        "title": "MySQL RDBMS"
+    },
+    {
+        "url": "https://www.w3schools.com/mysql/mysql_sql.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "mysql_mysql_sql",
+        "code_examples": [
+            {
+                "code": "SELECT * FROM Customers;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MySQL HOME\nMySQL Intro\nMySQL RDBMS",
+                "heading": "MySQL Tutorial"
+            },
+            {
+                "content": "MySQL SQL\nMySQL SELECT\nMySQL SELECT DISTINCT\nMySQL WHERE\nMySQL ORDER BY\nMySQL AND\nMySQL OR\nMySQL NOT\nMySQL INSERT INTO\nMySQL NULL Values\nMySQL UPDATE\nMySQL DELETE\nMySQL LIMIT\nMySQL Aggregate Functions\nMySQL MIN()\nMySQL MAX()\nMySQL COUNT()\nMySQL SUM()\nMySQL AVG()\nMySQL LIKE\nMySQL Wildcards\nMySQL IN\nMySQL BETWEEN\nMySQL Aliases\nMySQL Joins\nMySQL INNER JOIN\nMySQL LEFT JOIN\nMySQL RIGHT JOIN\nMySQL CROSS JOIN\nMySQL Self Join\nMySQL UNION\nMySQL UNION ALL\nMySQL GROUP BY\nMySQL HAVING\nMySQL EXISTS\nMySQL ANY\nMySQL ALL\nMySQL INSERT SELECT\nMySQL CASE\nMySQL Null Functions\nMySQL Stored Procedures\nMySQL Comments\nMySQL Operators",
+                "heading": "MySQL SQL"
+            },
+            {
+                "content": "MySQL Install (Windows)\nMySQL Install (Linux)-->\nMySQL Create DB\nMySQL Drop DB\nMySQL Create Table\nMySQL Drop Table\nMySQL Alter Table\nMySQL Constraints\nMySQL Not Null\nMySQL Unique\nMySQL Primary Key\nMySQL Foreign Key\nMySQL Check\nMySQL Default\nMySQL Create Index\nMySQL Auto Increment\nMySQL Dates\nMySQL Views\nMySQL Injection\nMySQL Prepared Statements",
+                "heading": "MySQL Database"
+            },
+            {
+                "content": "MySQL Certificate",
+                "heading": "MySQL Cert"
+            },
+            {
+                "content": "MySQL Data Types\nMySQL Functions\n\n String Functions\n ASCII\n CHAR_LENGTH\n CHARACTER_LENGTH\n CONCAT\n CONCAT_WS\n FIELD\n FIND_IN_SET\n FORMAT\n INSERT\n INSTR\n LCASE\n LEFT\n LENGTH\n LOCATE\n LOWER\n LPAD\n LTRIM\n MID\n POSITION\n REPEAT\n REPLACE\n REVERSE\n RIGHT\n RPAD\n RTRIM\n SPACE\n STRCMP\n SUBSTR\n SUBSTRING\n SUBSTRING_INDEX\n TRIM\n UCASE\n UPPER\n\n Numeric Functions\n ABS\n ACOS\n ASIN\n ATAN\n ATAN2\n AVG\n CEIL\n CEILING\n COS\n COT\n COUNT\n DEGREES\n DIV\n EXP\n FLOOR\n GREATEST\n LEAST\n LN\n LOG\n LOG10\n LOG2\n MAX\n MIN\n MOD\n PI\n POW\n POWER\n RADIANS\n RAND\n ROUND\n SIGN\n SIN\n SQRT\n SUM\n TAN\n TRUNCATE\n\n Date Functions\n ADDDATE\n ADDTIME\n CURDATE\n CURRENT_DATE\n CURRENT_TIME\n CURRENT_TIMESTAMP\n CURTIME\n DATE\n DATEDIFF\n DATE_ADD\n DATE_FORMAT\n DATE_SUB\n DAY\n DAYNAME\n DAYOFMONTH\n DAYOFWEEK\n DAYOFYEAR\n EXTRACT\n FROM_DAYS\n HOUR\n LAST_DAY\n LOCALTIME\n LOCALTIMESTAMP\n MAKEDATE\n MAKETIME\n MICROSECOND\n MINUTE\n MONTH\n MONTHNAME\n NOW\n PERIOD_ADD\n PERIOD_DIFF\n QUARTER\n SECOND\n SEC_TO_TIME\n STR_TO_DATE\n SUBDATE\n SUBTIME\n SYSDATE\n TIME\n TIME_FORMAT\n TIME_TO_SEC\n TIMEDIFF\n TIMESTAMP\n TO_DAYS\n WEEK\n WEEKDAY\n WEEKOFYEAR\n YEAR\n YEARWEEK\n\n Advanced Functions\n BIN\n BINARY\n CASE\n CAST\n COALESCE\n CONNECTION_ID\n CONV\n CONVERT\n CURRENT_USER\n DATABASE\n IF\n IFNULL\n ISNULL\n LAST_INSERT_ID\n NULLIF\n SESSION_USER\n SYSTEM_USER\n USER\n VERSION",
+                "heading": "MySQL References"
+            },
+            {
+                "content": "MySQL Examples\nMySQL Editor\nMySQL Quiz\nMySQL Exercises\nMySQL Syllabus\nMySQL Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\nMySQL SQL\n\n ❮ Previous\nNext ❯",
+                "heading": "MySQL Examples"
+            },
+            {
+                "content": "SQL is the standard language for dealing with Relational Databases.\n\nSQL is used to insert, search, update, and delete database records.",
+                "heading": "What is SQL?"
+            },
+            {
+                "content": "The following SQL statement selects all the records from the \"Customers\" table:\n\nExample\n\n SELECT * FROM Customers;\n\n Try it Yourself »",
+                "heading": "How to Use SQL"
+            },
+            {
+                "content": "SQL keywords are NOT case sensitive: select is the same as \n SELECT\n\nIn this tutorial we will write all SQL keywords in upper-case.",
+                "heading": "Keep in Mind That..."
+            },
+            {
+                "content": "Some database systems require a semicolon at the end of each SQL statement.\n\nSemicolon is the standard way to separate each SQL statement in database \nsystems that allow more than one SQL statement to be executed in the same call \nto the server.\n\nIn this tutorial, we will use semicolon at the end of each SQL statement.",
+                "heading": "Semicolon after SQL Statements?"
+            },
+            {
+                "content": "SELECT - extracts data from a database\n\n UPDATE - updates data in a database\n\n DELETE - deletes data from a database\n\n INSERT INTO - inserts new data into a database\n\n CREATE DATABASE - creates a new database\n\n ALTER DATABASE - modifies a database\n\n CREATE TABLE - creates a new table\n\n ALTER TABLE - modifies a table\n\n DROP TABLE - deletes a table\n\n CREATE INDEX - creates an index (search key)\n\n DROP INDEX - deletes an index",
+                "heading": "The Most Important SQL Commands"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:31Z",
+        "subject": "MySQL",
+        "title": "MySQL SQL"
+    },
+    {
+        "url": "https://www.w3schools.com/mysql/mysql_select.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "mysql_mysql_select",
+        "code_examples": [
+            {
+                "code": "SELECT CustomerName, City, Country FROM Customers;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "SELECT * FROM table_name;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "SELECT * FROM Customers;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MySQL HOME\nMySQL Intro\nMySQL RDBMS",
+                "heading": "MySQL Tutorial"
+            },
+            {
+                "content": "MySQL SQL\nMySQL SELECT\nMySQL SELECT DISTINCT\nMySQL WHERE\nMySQL ORDER BY\nMySQL AND\nMySQL OR\nMySQL NOT\nMySQL INSERT INTO\nMySQL NULL Values\nMySQL UPDATE\nMySQL DELETE\nMySQL LIMIT\nMySQL Aggregate Functions\nMySQL MIN()\nMySQL MAX()\nMySQL COUNT()\nMySQL SUM()\nMySQL AVG()\nMySQL LIKE\nMySQL Wildcards\nMySQL IN\nMySQL BETWEEN\nMySQL Aliases\nMySQL Joins\nMySQL INNER JOIN\nMySQL LEFT JOIN\nMySQL RIGHT JOIN\nMySQL CROSS JOIN\nMySQL Self Join\nMySQL UNION\nMySQL UNION ALL\nMySQL GROUP BY\nMySQL HAVING\nMySQL EXISTS\nMySQL ANY\nMySQL ALL\nMySQL INSERT SELECT\nMySQL CASE\nMySQL Null Functions\nMySQL Stored Procedures\nMySQL Comments\nMySQL Operators",
+                "heading": "MySQL SQL"
+            },
+            {
+                "content": "MySQL Install (Windows)\nMySQL Install (Linux)-->\nMySQL Create DB\nMySQL Drop DB\nMySQL Create Table\nMySQL Drop Table\nMySQL Alter Table\nMySQL Constraints\nMySQL Not Null\nMySQL Unique\nMySQL Primary Key\nMySQL Foreign Key\nMySQL Check\nMySQL Default\nMySQL Create Index\nMySQL Auto Increment\nMySQL Dates\nMySQL Views\nMySQL Injection\nMySQL Prepared Statements",
+                "heading": "MySQL Database"
+            },
+            {
+                "content": "MySQL Certificate",
+                "heading": "MySQL Cert"
+            },
+            {
+                "content": "MySQL Data Types\nMySQL Functions\n\n String Functions\n ASCII\n CHAR_LENGTH\n CHARACTER_LENGTH\n CONCAT\n CONCAT_WS\n FIELD\n FIND_IN_SET\n FORMAT\n INSERT\n INSTR\n LCASE\n LEFT\n LENGTH\n LOCATE\n LOWER\n LPAD\n LTRIM\n MID\n POSITION\n REPEAT\n REPLACE\n REVERSE\n RIGHT\n RPAD\n RTRIM\n SPACE\n STRCMP\n SUBSTR\n SUBSTRING\n SUBSTRING_INDEX\n TRIM\n UCASE\n UPPER\n\n Numeric Functions\n ABS\n ACOS\n ASIN\n ATAN\n ATAN2\n AVG\n CEIL\n CEILING\n COS\n COT\n COUNT\n DEGREES\n DIV\n EXP\n FLOOR\n GREATEST\n LEAST\n LN\n LOG\n LOG10\n LOG2\n MAX\n MIN\n MOD\n PI\n POW\n POWER\n RADIANS\n RAND\n ROUND\n SIGN\n SIN\n SQRT\n SUM\n TAN\n TRUNCATE\n\n Date Functions\n ADDDATE\n ADDTIME\n CURDATE\n CURRENT_DATE\n CURRENT_TIME\n CURRENT_TIMESTAMP\n CURTIME\n DATE\n DATEDIFF\n DATE_ADD\n DATE_FORMAT\n DATE_SUB\n DAY\n DAYNAME\n DAYOFMONTH\n DAYOFWEEK\n DAYOFYEAR\n EXTRACT\n FROM_DAYS\n HOUR\n LAST_DAY\n LOCALTIME\n LOCALTIMESTAMP\n MAKEDATE\n MAKETIME\n MICROSECOND\n MINUTE\n MONTH\n MONTHNAME\n NOW\n PERIOD_ADD\n PERIOD_DIFF\n QUARTER\n SECOND\n SEC_TO_TIME\n STR_TO_DATE\n SUBDATE\n SUBTIME\n SYSDATE\n TIME\n TIME_FORMAT\n TIME_TO_SEC\n TIMEDIFF\n TIMESTAMP\n TO_DAYS\n WEEK\n WEEKDAY\n WEEKOFYEAR\n YEAR\n YEARWEEK\n\n Advanced Functions\n BIN\n BINARY\n CASE\n CAST\n COALESCE\n CONNECTION_ID\n CONV\n CONVERT\n CURRENT_USER\n DATABASE\n IF\n IFNULL\n ISNULL\n LAST_INSERT_ID\n NULLIF\n SESSION_USER\n SYSTEM_USER\n USER\n VERSION",
+                "heading": "MySQL References"
+            },
+            {
+                "content": "MySQL Examples\nMySQL Editor\nMySQL Quiz\nMySQL Exercises\nMySQL Syllabus\nMySQL Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\nMySQL SELECT Statement\n\n❮ Previous\n Next ❯",
+                "heading": "MySQL Examples"
+            },
+            {
+                "content": "The SELECT statement is used to select data from a database.\n\nThe data returned is stored in a result table, called the result-set.\n\nThe following SQL selects the \"CustomerName\", \"City\", and \"Country\" columns from the \"Customers\" table:\n\nExample\n\n SELECT CustomerName, City, Country FROM Customers;\n\n Try it Yourself »",
+                "heading": "The MySQL SELECT Statement"
+            },
+            {
+                "content": "SELECT column1, column2, ...\n\nFROM table_name;\n\nHere, column1, column2, ... are the column names in the table you want to select data from.\n\nThe table_name represents the name of the table you want to select data from.\n\n To select all columns, without specifying every column name, use the following syntax:\n\nSELECT * FROM table_name;",
+                "heading": "SELECT Syntax"
+            },
+            {
+                "content": "In this tutorial we will use the well-known Northwind sample database.\n\nBelow is a selection from the \"Customers\" table in the Northwind sample database:\n\n CustomerID\n CustomerName\n ContactName\n Address\n City\n PostalCode\n Country\n\n 1\n Alfreds Futterkiste\n Maria Anders\n Obere Str. 57\n Berlin\n 12209\n Germany\n\n 2\n Ana Trujillo Emparedados y helados\n Ana Trujillo\n Avda. de la Constitución 2222\n México D.F.\n 05021\n Mexico\n\n 3\n Antonio Moreno Taquería\n Antonio Moreno\n Mataderos 2312\n México D.F.\n 05023\n Mexico\n\n 4\n Around the Horn\n Thomas Hardy\n 120 Hanover Sq.\n London\n WA1 1DP\n UK\n\n 5\n Berglunds snabbköp\n Christina Berglund\n Berguvsvägen 8\n Luleå\n S-958 22\n Sweden",
+                "heading": "Demo Database"
+            },
+            {
+                "content": "To select ALL columns, without specifying every column name, use the\nSELECT * syntax:\n\nThe following SQL selects ALL the columns from the \"Customers\" table:\n\nExample\n\n SELECT * FROM Customers;\n\n Try it Yourself »\n\n❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "SELECT ALL Columns"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:32Z",
+        "subject": "MySQL",
+        "title": "MySQL SELECT Statement"
+    },
+    {
+        "url": "https://www.w3schools.com/mysql/mysql_select_distinct.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "mysql_mysql_select_distinct",
+        "code_examples": [
+            {
+                "code": "SELECT DISTINCT Country FROM Customers;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "SELECT Country FROM Customers;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MySQL HOME\nMySQL Intro\nMySQL RDBMS",
+                "heading": "MySQL Tutorial"
+            },
+            {
+                "content": "MySQL SQL\nMySQL SELECT\nMySQL SELECT DISTINCT\nMySQL WHERE\nMySQL ORDER BY\nMySQL AND\nMySQL OR\nMySQL NOT\nMySQL INSERT INTO\nMySQL NULL Values\nMySQL UPDATE\nMySQL DELETE\nMySQL LIMIT\nMySQL Aggregate Functions\nMySQL MIN()\nMySQL MAX()\nMySQL COUNT()\nMySQL SUM()\nMySQL AVG()\nMySQL LIKE\nMySQL Wildcards\nMySQL IN\nMySQL BETWEEN\nMySQL Aliases\nMySQL Joins\nMySQL INNER JOIN\nMySQL LEFT JOIN\nMySQL RIGHT JOIN\nMySQL CROSS JOIN\nMySQL Self Join\nMySQL UNION\nMySQL UNION ALL\nMySQL GROUP BY\nMySQL HAVING\nMySQL EXISTS\nMySQL ANY\nMySQL ALL\nMySQL INSERT SELECT\nMySQL CASE\nMySQL Null Functions\nMySQL Stored Procedures\nMySQL Comments\nMySQL Operators",
+                "heading": "MySQL SQL"
+            },
+            {
+                "content": "MySQL Install (Windows)\nMySQL Install (Linux)-->\nMySQL Create DB\nMySQL Drop DB\nMySQL Create Table\nMySQL Drop Table\nMySQL Alter Table\nMySQL Constraints\nMySQL Not Null\nMySQL Unique\nMySQL Primary Key\nMySQL Foreign Key\nMySQL Check\nMySQL Default\nMySQL Create Index\nMySQL Auto Increment\nMySQL Dates\nMySQL Views\nMySQL Injection\nMySQL Prepared Statements",
+                "heading": "MySQL Database"
+            },
+            {
+                "content": "MySQL Certificate",
+                "heading": "MySQL Cert"
+            },
+            {
+                "content": "MySQL Data Types\nMySQL Functions\n\n String Functions\n ASCII\n CHAR_LENGTH\n CHARACTER_LENGTH\n CONCAT\n CONCAT_WS\n FIELD\n FIND_IN_SET\n FORMAT\n INSERT\n INSTR\n LCASE\n LEFT\n LENGTH\n LOCATE\n LOWER\n LPAD\n LTRIM\n MID\n POSITION\n REPEAT\n REPLACE\n REVERSE\n RIGHT\n RPAD\n RTRIM\n SPACE\n STRCMP\n SUBSTR\n SUBSTRING\n SUBSTRING_INDEX\n TRIM\n UCASE\n UPPER\n\n Numeric Functions\n ABS\n ACOS\n ASIN\n ATAN\n ATAN2\n AVG\n CEIL\n CEILING\n COS\n COT\n COUNT\n DEGREES\n DIV\n EXP\n FLOOR\n GREATEST\n LEAST\n LN\n LOG\n LOG10\n LOG2\n MAX\n MIN\n MOD\n PI\n POW\n POWER\n RADIANS\n RAND\n ROUND\n SIGN\n SIN\n SQRT\n SUM\n TAN\n TRUNCATE\n\n Date Functions\n ADDDATE\n ADDTIME\n CURDATE\n CURRENT_DATE\n CURRENT_TIME\n CURRENT_TIMESTAMP\n CURTIME\n DATE\n DATEDIFF\n DATE_ADD\n DATE_FORMAT\n DATE_SUB\n DAY\n DAYNAME\n DAYOFMONTH\n DAYOFWEEK\n DAYOFYEAR\n EXTRACT\n FROM_DAYS\n HOUR\n LAST_DAY\n LOCALTIME\n LOCALTIMESTAMP\n MAKEDATE\n MAKETIME\n MICROSECOND\n MINUTE\n MONTH\n MONTHNAME\n NOW\n PERIOD_ADD\n PERIOD_DIFF\n QUARTER\n SECOND\n SEC_TO_TIME\n STR_TO_DATE\n SUBDATE\n SUBTIME\n SYSDATE\n TIME\n TIME_FORMAT\n TIME_TO_SEC\n TIMEDIFF\n TIMESTAMP\n TO_DAYS\n WEEK\n WEEKDAY\n WEEKOFYEAR\n YEAR\n YEARWEEK\n\n Advanced Functions\n BIN\n BINARY\n CASE\n CAST\n COALESCE\n CONNECTION_ID\n CONV\n CONVERT\n CURRENT_USER\n DATABASE\n IF\n IFNULL\n ISNULL\n LAST_INSERT_ID\n NULLIF\n SESSION_USER\n SYSTEM_USER\n USER\n VERSION",
+                "heading": "MySQL References"
+            },
+            {
+                "content": "MySQL Examples\nMySQL Editor\nMySQL Quiz\nMySQL Exercises\nMySQL Syllabus\nMySQL Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\nMySQL SELECT DISTINCT Statement\n\n ❮ Previous\n Next ❯",
+                "heading": "MySQL Examples"
+            },
+            {
+                "content": "The SELECT DISTINCT statement is used to return only distinct (unique) values.\n\nIn a table, a column may contain several duplicate values - and sometimes you want to list \nonly the \nunique values.\n\nThe following SQL selects all the distinct (unique) country values from the \"Customers\" table:\n\nExample\n\nSELECT DISTINCT Country FROM Customers;\n\nTry it Yourself »",
+                "heading": "The MySQL SELECT DISTINCT Statement"
+            },
+            {
+                "content": "SELECT DISTINCT column1, column2, ...\n\n FROM table_name;",
+                "heading": "SELECT DISTINCT Syntax"
+            },
+            {
+                "content": "Below is a selection from the \"Customers\" table in the Northwind sample database:\n\n CustomerID\n CustomerName\n ContactName\n Address\n City\n PostalCode\n Country\n\n 1\n Alfreds Futterkiste\n Maria Anders\n Obere Str. 57\n Berlin\n 12209\n Germany\n\n 2\n Ana Trujillo Emparedados y helados\n Ana Trujillo\n Avda. de la Constitución 2222\n México D.F.\n 05021\n Mexico\n\n 3\n Antonio Moreno Taquería\n Antonio Moreno\n Mataderos 2312\n México D.F.\n 05023\n Mexico\n\n 4\n Around the Horn\n Thomas Hardy\n 120 Hanover Sq.\n London\n WA1 1DP\n UK\n\n 5\n Berglunds snabbköp\n Christina Berglund\n Berguvsvägen 8\n Luleå\n S-958 22\n Sweden",
+                "heading": "Demo Database"
+            },
+            {
+                "content": "If you omit the DISTINCT keyword, the SQL statement returns \nall the \"Country\" values from all the records of the \"Customers\" table:\n\nExample\n\nSELECT Country FROM Customers;\n\nTry it Yourself »",
+                "heading": "SELECT Example Without DISTINCT"
+            },
+            {
+                "content": "By using the COUNT() function with the DISTINCT keyword, we can count the number of unique \nvalues.\n\nThe following SQL counts the number of unique \ncountries in the \"Customers\" table:\n\nExample\n\n SELECT COUNT(DISTINCT Country) FROM Customers;\n\nTry it Yourself »\n\nYou will learn more about the COUNT() function later in this tutorial.\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Count Distinct Values"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:32Z",
+        "subject": "MySQL",
+        "title": "MySQL SELECT DISTINCT Statement"
+    },
+    {
+        "url": "https://www.w3schools.com/mysql/mysql_where.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "mysql_mysql_where",
+        "code_examples": [
+            {
+                "code": "SELECT * FROM Customers\n\nWHERE Country = 'Mexico';",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "SELECT * FROM Customers\n\n WHERE CustomerID = 1;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MySQL HOME\nMySQL Intro\nMySQL RDBMS",
+                "heading": "MySQL Tutorial"
+            },
+            {
+                "content": "MySQL SQL\nMySQL SELECT\nMySQL SELECT DISTINCT\nMySQL WHERE\nMySQL ORDER BY\nMySQL AND\nMySQL OR\nMySQL NOT\nMySQL INSERT INTO\nMySQL NULL Values\nMySQL UPDATE\nMySQL DELETE\nMySQL LIMIT\nMySQL Aggregate Functions\nMySQL MIN()\nMySQL MAX()\nMySQL COUNT()\nMySQL SUM()\nMySQL AVG()\nMySQL LIKE\nMySQL Wildcards\nMySQL IN\nMySQL BETWEEN\nMySQL Aliases\nMySQL Joins\nMySQL INNER JOIN\nMySQL LEFT JOIN\nMySQL RIGHT JOIN\nMySQL CROSS JOIN\nMySQL Self Join\nMySQL UNION\nMySQL UNION ALL\nMySQL GROUP BY\nMySQL HAVING\nMySQL EXISTS\nMySQL ANY\nMySQL ALL\nMySQL INSERT SELECT\nMySQL CASE\nMySQL Null Functions\nMySQL Stored Procedures\nMySQL Comments\nMySQL Operators",
+                "heading": "MySQL SQL"
+            },
+            {
+                "content": "MySQL Install (Windows)\nMySQL Install (Linux)-->\nMySQL Create DB\nMySQL Drop DB\nMySQL Create Table\nMySQL Drop Table\nMySQL Alter Table\nMySQL Constraints\nMySQL Not Null\nMySQL Unique\nMySQL Primary Key\nMySQL Foreign Key\nMySQL Check\nMySQL Default\nMySQL Create Index\nMySQL Auto Increment\nMySQL Dates\nMySQL Views\nMySQL Injection\nMySQL Prepared Statements",
+                "heading": "MySQL Database"
+            },
+            {
+                "content": "MySQL Certificate",
+                "heading": "MySQL Cert"
+            },
+            {
+                "content": "MySQL Data Types\nMySQL Functions\n\n String Functions\n ASCII\n CHAR_LENGTH\n CHARACTER_LENGTH\n CONCAT\n CONCAT_WS\n FIELD\n FIND_IN_SET\n FORMAT\n INSERT\n INSTR\n LCASE\n LEFT\n LENGTH\n LOCATE\n LOWER\n LPAD\n LTRIM\n MID\n POSITION\n REPEAT\n REPLACE\n REVERSE\n RIGHT\n RPAD\n RTRIM\n SPACE\n STRCMP\n SUBSTR\n SUBSTRING\n SUBSTRING_INDEX\n TRIM\n UCASE\n UPPER\n\n Numeric Functions\n ABS\n ACOS\n ASIN\n ATAN\n ATAN2\n AVG\n CEIL\n CEILING\n COS\n COT\n COUNT\n DEGREES\n DIV\n EXP\n FLOOR\n GREATEST\n LEAST\n LN\n LOG\n LOG10\n LOG2\n MAX\n MIN\n MOD\n PI\n POW\n POWER\n RADIANS\n RAND\n ROUND\n SIGN\n SIN\n SQRT\n SUM\n TAN\n TRUNCATE\n\n Date Functions\n ADDDATE\n ADDTIME\n CURDATE\n CURRENT_DATE\n CURRENT_TIME\n CURRENT_TIMESTAMP\n CURTIME\n DATE\n DATEDIFF\n DATE_ADD\n DATE_FORMAT\n DATE_SUB\n DAY\n DAYNAME\n DAYOFMONTH\n DAYOFWEEK\n DAYOFYEAR\n EXTRACT\n FROM_DAYS\n HOUR\n LAST_DAY\n LOCALTIME\n LOCALTIMESTAMP\n MAKEDATE\n MAKETIME\n MICROSECOND\n MINUTE\n MONTH\n MONTHNAME\n NOW\n PERIOD_ADD\n PERIOD_DIFF\n QUARTER\n SECOND\n SEC_TO_TIME\n STR_TO_DATE\n SUBDATE\n SUBTIME\n SYSDATE\n TIME\n TIME_FORMAT\n TIME_TO_SEC\n TIMEDIFF\n TIMESTAMP\n TO_DAYS\n WEEK\n WEEKDAY\n WEEKOFYEAR\n YEAR\n YEARWEEK\n\n Advanced Functions\n BIN\n BINARY\n CASE\n CAST\n COALESCE\n CONNECTION_ID\n CONV\n CONVERT\n CURRENT_USER\n DATABASE\n IF\n IFNULL\n ISNULL\n LAST_INSERT_ID\n NULLIF\n SESSION_USER\n SYSTEM_USER\n USER\n VERSION",
+                "heading": "MySQL References"
+            },
+            {
+                "content": "MySQL Examples\nMySQL Editor\nMySQL Quiz\nMySQL Exercises\nMySQL Syllabus\nMySQL Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\nMySQL WHERE Clause\n\n ❮ Previous\n Next ❯",
+                "heading": "MySQL Examples"
+            },
+            {
+                "content": "The WHERE clause is used to filter records.\n\nThe WHERE clause is used to extract only those records that fulfill a specific \ncondition.\n\nThe following SQL selects all customers from \n\"Mexico\":\n\nExample\n\nSELECT * FROM Customers\n\nWHERE Country = 'Mexico';\n\nTry it Yourself »",
+                "heading": "The MySQL WHERE Clause"
+            },
+            {
+                "content": "SELECT column1, column2, ...\n\nFROM table_name\n\nWHERE condition;\n\nNote: The WHERE clause is not only used in \nSELECT statements, it is also used in UPDATE,\nDELETE, etc.",
+                "heading": "WHERE Syntax"
+            },
+            {
+                "content": "Below is a selection from the \"Customers\" table in the Northwind sample database:\n\n CustomerID\n CustomerName\n ContactName\n Address\n City\n PostalCode\n Country\n\n 1\n\n Alfreds Futterkiste\n Maria Anders\n Obere Str. 57\n Berlin\n 12209\n Germany\n\n 2\n Ana Trujillo Emparedados y helados\n Ana Trujillo\n Avda. de la Constitución 2222\n México D.F.\n 05021\n Mexico\n\n 3\n Antonio Moreno Taquería\n Antonio Moreno\n Mataderos 2312\n México D.F.\n 05023\n Mexico\n\n 4\n\n Around the Horn\n Thomas Hardy\n 120 Hanover Sq.\n London\n WA1 1DP\n UK\n\n 5\n Berglunds snabbköp\n Christina Berglund\n Berguvsvägen 8\n Luleå\n S-958 22\n Sweden",
+                "heading": "Demo Database"
+            },
+            {
+                "content": "SQL requires single quotes around text values (most database systems will \nalso allow double quotes).\n\nHowever, numeric fields should not be enclosed in quotes:\n\nExample\n\n SELECT * FROM Customers\n\n WHERE CustomerID = 1;\n\n Try it Yourself »",
+                "heading": "Text Fields vs. Numeric Fields"
+            },
+            {
+                "content": "You can use other operators than the \n= operator to filter the search.\n\nExample\nSelect all customers with a CustomerID greater than 80:\n\n SELECT * FROM Customers\n\n WHERE CustomerID > 80;\n\n Try it Yourself »\n\nThe following operators can be used in the WHERE clause:\n\n Operator\n Description\n Example\n\n =\n Equal\n Try it\n\n >\n Greater than\n Try it\n\n <\n Less than\n Try it\n\n >=\n Greater than or equal\n Try it\n\n <=\n Less than or equal\n Try it\n\n <>\n Not equal. Note: In some versions of SQL this operator may be written as !=\n Try it\n\n BETWEEN\n Between a certain range\n Try it\n\n LIKE\n Search for a pattern\n Try it\n\n IN\n To specify multiple possible values for a column\n Try it\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Operators in The WHERE Clause"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:32Z",
+        "subject": "MySQL",
+        "title": "MySQL WHERE Clause"
+    },
+    {
+        "url": "https://www.w3schools.com/mysql/mysql_orderby.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "mysql_mysql_orderby",
+        "code_examples": [
+            {
+                "code": "SELECT * FROM Products\n\n ORDER BY Price;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "SELECT * FROM Products\n\n ORDER BY Price DESC;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MySQL HOME\nMySQL Intro\nMySQL RDBMS",
+                "heading": "MySQL Tutorial"
+            },
+            {
+                "content": "MySQL SQL\nMySQL SELECT\nMySQL SELECT DISTINCT\nMySQL WHERE\nMySQL ORDER BY\nMySQL AND\nMySQL OR\nMySQL NOT\nMySQL INSERT INTO\nMySQL NULL Values\nMySQL UPDATE\nMySQL DELETE\nMySQL LIMIT\nMySQL Aggregate Functions\nMySQL MIN()\nMySQL MAX()\nMySQL COUNT()\nMySQL SUM()\nMySQL AVG()\nMySQL LIKE\nMySQL Wildcards\nMySQL IN\nMySQL BETWEEN\nMySQL Aliases\nMySQL Joins\nMySQL INNER JOIN\nMySQL LEFT JOIN\nMySQL RIGHT JOIN\nMySQL CROSS JOIN\nMySQL Self Join\nMySQL UNION\nMySQL UNION ALL\nMySQL GROUP BY\nMySQL HAVING\nMySQL EXISTS\nMySQL ANY\nMySQL ALL\nMySQL INSERT SELECT\nMySQL CASE\nMySQL Null Functions\nMySQL Stored Procedures\nMySQL Comments\nMySQL Operators",
+                "heading": "MySQL SQL"
+            },
+            {
+                "content": "MySQL Install (Windows)\nMySQL Install (Linux)-->\nMySQL Create DB\nMySQL Drop DB\nMySQL Create Table\nMySQL Drop Table\nMySQL Alter Table\nMySQL Constraints\nMySQL Not Null\nMySQL Unique\nMySQL Primary Key\nMySQL Foreign Key\nMySQL Check\nMySQL Default\nMySQL Create Index\nMySQL Auto Increment\nMySQL Dates\nMySQL Views\nMySQL Injection\nMySQL Prepared Statements",
+                "heading": "MySQL Database"
+            },
+            {
+                "content": "MySQL Certificate",
+                "heading": "MySQL Cert"
+            },
+            {
+                "content": "MySQL Data Types\nMySQL Functions\n\n String Functions\n ASCII\n CHAR_LENGTH\n CHARACTER_LENGTH\n CONCAT\n CONCAT_WS\n FIELD\n FIND_IN_SET\n FORMAT\n INSERT\n INSTR\n LCASE\n LEFT\n LENGTH\n LOCATE\n LOWER\n LPAD\n LTRIM\n MID\n POSITION\n REPEAT\n REPLACE\n REVERSE\n RIGHT\n RPAD\n RTRIM\n SPACE\n STRCMP\n SUBSTR\n SUBSTRING\n SUBSTRING_INDEX\n TRIM\n UCASE\n UPPER\n\n Numeric Functions\n ABS\n ACOS\n ASIN\n ATAN\n ATAN2\n AVG\n CEIL\n CEILING\n COS\n COT\n COUNT\n DEGREES\n DIV\n EXP\n FLOOR\n GREATEST\n LEAST\n LN\n LOG\n LOG10\n LOG2\n MAX\n MIN\n MOD\n PI\n POW\n POWER\n RADIANS\n RAND\n ROUND\n SIGN\n SIN\n SQRT\n SUM\n TAN\n TRUNCATE\n\n Date Functions\n ADDDATE\n ADDTIME\n CURDATE\n CURRENT_DATE\n CURRENT_TIME\n CURRENT_TIMESTAMP\n CURTIME\n DATE\n DATEDIFF\n DATE_ADD\n DATE_FORMAT\n DATE_SUB\n DAY\n DAYNAME\n DAYOFMONTH\n DAYOFWEEK\n DAYOFYEAR\n EXTRACT\n FROM_DAYS\n HOUR\n LAST_DAY\n LOCALTIME\n LOCALTIMESTAMP\n MAKEDATE\n MAKETIME\n MICROSECOND\n MINUTE\n MONTH\n MONTHNAME\n NOW\n PERIOD_ADD\n PERIOD_DIFF\n QUARTER\n SECOND\n SEC_TO_TIME\n STR_TO_DATE\n SUBDATE\n SUBTIME\n SYSDATE\n TIME\n TIME_FORMAT\n TIME_TO_SEC\n TIMEDIFF\n TIMESTAMP\n TO_DAYS\n WEEK\n WEEKDAY\n WEEKOFYEAR\n YEAR\n YEARWEEK\n\n Advanced Functions\n BIN\n BINARY\n CASE\n CAST\n COALESCE\n CONNECTION_ID\n CONV\n CONVERT\n CURRENT_USER\n DATABASE\n IF\n IFNULL\n ISNULL\n LAST_INSERT_ID\n NULLIF\n SESSION_USER\n SYSTEM_USER\n USER\n VERSION",
+                "heading": "MySQL References"
+            },
+            {
+                "content": "MySQL Examples\nMySQL Editor\nMySQL Quiz\nMySQL Exercises\nMySQL Syllabus\nMySQL Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\nMySQL ORDER BY Keyword\n\n ❮ Previous\n Next ❯",
+                "heading": "MySQL Examples"
+            },
+            {
+                "content": "The ORDER BY keyword is used to sort the result-set in ascending or \ndescending order.\n\nThe ORDER BY keyword sorts the records in ascending order \n(ASC) by default.\n\nExample\nSort the products from lowest to highest price:\n\n SELECT * FROM Products\n\n ORDER BY Price;\n\n Try it Yourself »",
+                "heading": "The MySQL ORDER BY Keyword"
+            },
+            {
+                "content": "SELECT column1, column2, ...\n\nFROM table_name\n\nORDER BY column1, column2, ... ASC|DESC;",
+                "heading": "ORDER BY Syntax"
+            },
+            {
+                "content": "Below is a selection from the \"Products\" table in the Northwind sample database:\n\n ProductID\n ProductName\n SupplierID\n CategoryID\n Unit\n Price\n\n 1\n Chais\n 1\n 1\n 10 boxes x 20 bags\n 18.00\n\n 2\n Chang\n 1\n 1\n 24 - 12 oz bottles\n 19.00\n\n 3\n Aniseed Syrup\n 1\n 2\n 12 - 550 ml bottles\n 10.00\n\n 4\n Chef Anton's Cajun Seasoning\n 2\n 2\n 48 - 6 oz jars\n 22.00\n\n 5\n Chef Anton's Gumbo Mix\n 2\n 2\n 36 boxes\n 21.35",
+                "heading": "Demo Database"
+            },
+            {
+                "content": "To sort the records in descending order, use the DESC keyword.\n\nExample\nSort the products from highest to lowest price:\n\n SELECT * FROM Products\n\n ORDER BY Price DESC;\n\n Try it Yourself »",
+                "heading": "ORDER BY DESC"
+            },
+            {
+                "content": "Below is a selection from the \"Customers\" table in the Northwind sample database:\n\n CustomerID\n CustomerName\n ContactName\n Address\n City\n PostalCode\n Country\n\n 1\n\n Alfreds Futterkiste\n Maria Anders\n Obere Str. 57\n Berlin\n 12209\n Germany\n\n 2\n Ana Trujillo Emparedados y helados\n Ana Trujillo\n Avda. de la Constitución 2222\n México D.F.\n 05021\n Mexico\n\n 3\n Antonio Moreno Taquería\n Antonio Moreno\n Mataderos 2312\n México D.F.\n 05023\n Mexico\n\n 4\n\n Around the Horn\n Thomas Hardy\n 120 Hanover Sq.\n London\n WA1 1DP\n UK\n\n 5\n Berglunds snabbköp\n Christina Berglund\n Berguvsvägen 8\n Luleå\n S-958 22\n Sweden",
+                "heading": "Demo Database"
+            },
+            {
+                "content": "The following SQL selects all customers from the \"Customers\" table, \nsorted by the \"Country\" column:\n\nExample\n\n SELECT * FROM Customers\n\n ORDER BY Country;\n\n Try it Yourself »",
+                "heading": "ORDER BY Example"
+            },
+            {
+                "content": "The following SQL selects all customers from the \"Customers\" table, \nand sorts it descending by the \"Country\" column:\n\nExample\n\n SELECT * FROM Customers\n\n ORDER BY Country DESC;\n\n Try it Yourself »",
+                "heading": "ORDER BY DESC Example"
+            },
+            {
+                "content": "The following SQL selects all customers from the \"Customers\" table, \nsorted by the \"Country\" and the \"CustomerName\" column. This means that it sorts \nit first \nby Country, and if some records have the same Country, it sorts them by \nCustomerName:\n\nExample\n\n SELECT * FROM Customers\n\n ORDER BY Country, CustomerName;\n\n Try it Yourself »",
+                "heading": "ORDER BY Several Columns"
+            },
+            {
+                "content": "The following SQL selects all customers from the \"Customers\" table, \nand sorts it ascending by the \"Country\" and descending by the \"CustomerName\" column:\n\nExample\n\n SELECT * FROM Customers\n\n ORDER BY Country ASC, CustomerName DESC;\n\n Try it Yourself »\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Combine ASC and DESC"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:32Z",
+        "subject": "MySQL",
+        "title": "MySQL ORDER BY Keyword"
+    },
+    {
+        "url": "https://www.w3schools.com/mysql/mysql_and.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "mysql_mysql_and",
+        "code_examples": [
+            {
+                "code": "SELECT * FROM Customers\n\n WHERE Country = 'UK'\n AND City = 'London';",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "SELECT * FROM Customers\n\n WHERE Country = 'Germany'\n AND (City = 'Berlin' OR City = 'Stuttgart');",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MySQL HOME\nMySQL Intro\nMySQL RDBMS",
+                "heading": "MySQL Tutorial"
+            },
+            {
+                "content": "MySQL SQL\nMySQL SELECT\nMySQL SELECT DISTINCT\nMySQL WHERE\nMySQL ORDER BY\nMySQL AND\nMySQL OR\nMySQL NOT\nMySQL INSERT INTO\nMySQL NULL Values\nMySQL UPDATE\nMySQL DELETE\nMySQL LIMIT\nMySQL Aggregate Functions\nMySQL MIN()\nMySQL MAX()\nMySQL COUNT()\nMySQL SUM()\nMySQL AVG()\nMySQL LIKE\nMySQL Wildcards\nMySQL IN\nMySQL BETWEEN\nMySQL Aliases\nMySQL Joins\nMySQL INNER JOIN\nMySQL LEFT JOIN\nMySQL RIGHT JOIN\nMySQL CROSS JOIN\nMySQL Self Join\nMySQL UNION\nMySQL UNION ALL\nMySQL GROUP BY\nMySQL HAVING\nMySQL EXISTS\nMySQL ANY\nMySQL ALL\nMySQL INSERT SELECT\nMySQL CASE\nMySQL Null Functions\nMySQL Stored Procedures\nMySQL Comments\nMySQL Operators",
+                "heading": "MySQL SQL"
+            },
+            {
+                "content": "MySQL Install (Windows)\nMySQL Install (Linux)-->\nMySQL Create DB\nMySQL Drop DB\nMySQL Create Table\nMySQL Drop Table\nMySQL Alter Table\nMySQL Constraints\nMySQL Not Null\nMySQL Unique\nMySQL Primary Key\nMySQL Foreign Key\nMySQL Check\nMySQL Default\nMySQL Create Index\nMySQL Auto Increment\nMySQL Dates\nMySQL Views\nMySQL Injection\nMySQL Prepared Statements",
+                "heading": "MySQL Database"
+            },
+            {
+                "content": "MySQL Certificate",
+                "heading": "MySQL Cert"
+            },
+            {
+                "content": "MySQL Data Types\nMySQL Functions\n\n String Functions\n ASCII\n CHAR_LENGTH\n CHARACTER_LENGTH\n CONCAT\n CONCAT_WS\n FIELD\n FIND_IN_SET\n FORMAT\n INSERT\n INSTR\n LCASE\n LEFT\n LENGTH\n LOCATE\n LOWER\n LPAD\n LTRIM\n MID\n POSITION\n REPEAT\n REPLACE\n REVERSE\n RIGHT\n RPAD\n RTRIM\n SPACE\n STRCMP\n SUBSTR\n SUBSTRING\n SUBSTRING_INDEX\n TRIM\n UCASE\n UPPER\n\n Numeric Functions\n ABS\n ACOS\n ASIN\n ATAN\n ATAN2\n AVG\n CEIL\n CEILING\n COS\n COT\n COUNT\n DEGREES\n DIV\n EXP\n FLOOR\n GREATEST\n LEAST\n LN\n LOG\n LOG10\n LOG2\n MAX\n MIN\n MOD\n PI\n POW\n POWER\n RADIANS\n RAND\n ROUND\n SIGN\n SIN\n SQRT\n SUM\n TAN\n TRUNCATE\n\n Date Functions\n ADDDATE\n ADDTIME\n CURDATE\n CURRENT_DATE\n CURRENT_TIME\n CURRENT_TIMESTAMP\n CURTIME\n DATE\n DATEDIFF\n DATE_ADD\n DATE_FORMAT\n DATE_SUB\n DAY\n DAYNAME\n DAYOFMONTH\n DAYOFWEEK\n DAYOFYEAR\n EXTRACT\n FROM_DAYS\n HOUR\n LAST_DAY\n LOCALTIME\n LOCALTIMESTAMP\n MAKEDATE\n MAKETIME\n MICROSECOND\n MINUTE\n MONTH\n MONTHNAME\n NOW\n PERIOD_ADD\n PERIOD_DIFF\n QUARTER\n SECOND\n SEC_TO_TIME\n STR_TO_DATE\n SUBDATE\n SUBTIME\n SYSDATE\n TIME\n TIME_FORMAT\n TIME_TO_SEC\n TIMEDIFF\n TIMESTAMP\n TO_DAYS\n WEEK\n WEEKDAY\n WEEKOFYEAR\n YEAR\n YEARWEEK\n\n Advanced Functions\n BIN\n BINARY\n CASE\n CAST\n COALESCE\n CONNECTION_ID\n CONV\n CONVERT\n CURRENT_USER\n DATABASE\n IF\n IFNULL\n ISNULL\n LAST_INSERT_ID\n NULLIF\n SESSION_USER\n SYSTEM_USER\n USER\n VERSION",
+                "heading": "MySQL References"
+            },
+            {
+                "content": "MySQL Examples\nMySQL Editor\nMySQL Quiz\nMySQL Exercises\nMySQL Syllabus\nMySQL Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\nMySQL AND Operator\n\n❮ Previous\n Next ❯",
+                "heading": "MySQL Examples"
+            },
+            {
+                "content": "The WHERE clause can contain one or many \nAND operators.\n\nThe AND operator is used to filter records \nbased on more than one condition.\n\nNote: The AND operator displays a record if all the conditions are TRUE.\n\nThe following SQL selects all customers where country is \"UK\" AND city is \"London\":\n\nExample\n\n SELECT * FROM Customers\n\n WHERE Country = 'UK'\n AND City = 'London';\n\nTry it Yourself »",
+                "heading": "The MySQL AND Operator"
+            },
+            {
+                "content": "SELECT column1, column2, ...\n\nFROM table_name\n\nWHERE condition1 AND condition2 AND condition3 ...;",
+                "heading": "AND Syntax"
+            },
+            {
+                "content": "Below is a selection from the \"Customers\" table in the Northwind sample database:\n\n CustomerID\n CustomerName\n ContactName\n Address\n City\n PostalCode\n Country\n\n 1\n\n Alfreds Futterkiste\n Maria Anders\n Obere Str. 57\n Berlin\n 12209\n Germany\n\n 2\n Ana Trujillo Emparedados y helados\n Ana Trujillo\n Avda. de la Constitución 2222\n México D.F.\n 05021\n Mexico\n\n 3\n Antonio Moreno Taquería\n Antonio Moreno\n Mataderos 2312\n México D.F.\n 05023\n Mexico\n\n 4\n\n Around the Horn\n Thomas Hardy\n 120 Hanover Sq.\n London\n WA1 1DP\n UK\n\n 5\n Berglunds snabbköp\n Christina Berglund\n Berguvsvägen 8\n Luleå\n S-958 22\n Sweden",
+                "heading": "Demo Database"
+            },
+            {
+                "content": "The AND operator displays a record if \nall the conditions are TRUE.\n\nThe OR operator displays a record if any of the conditions are TRUE.",
+                "heading": "AND vs. OR"
+            },
+            {
+                "content": "You can also combine the AND and \nOR operators.\n\nThe following SQL selects all customers where country is \"Germany\" AND city must be \"Berlin\" \nOR \"Stuttgart\" (use parenthesis to form complex expressions):\n\nExample\n\n SELECT * FROM Customers\n\n WHERE Country = 'Germany'\n AND (City = 'Berlin' OR City = 'Stuttgart');\n\nTry it Yourself »\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Combining AND and OR"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:32Z",
+        "subject": "MySQL",
+        "title": "MySQL AND Operator"
+    },
+    {
+        "url": "https://www.w3schools.com/mysql/mysql_or.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "mysql_mysql_or",
+        "code_examples": [
+            {
+                "code": "SELECT * FROM Customers\n\n WHERE City = 'Berlin'\n OR City = 'Stuttgart';",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "SELECT * FROM Customers\n\n WHERE Country = 'Germany'\n AND (City = 'Berlin' OR City = 'Stuttgart');",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MySQL HOME\nMySQL Intro\nMySQL RDBMS",
+                "heading": "MySQL Tutorial"
+            },
+            {
+                "content": "MySQL SQL\nMySQL SELECT\nMySQL SELECT DISTINCT\nMySQL WHERE\nMySQL ORDER BY\nMySQL AND\nMySQL OR\nMySQL NOT\nMySQL INSERT INTO\nMySQL NULL Values\nMySQL UPDATE\nMySQL DELETE\nMySQL LIMIT\nMySQL Aggregate Functions\nMySQL MIN()\nMySQL MAX()\nMySQL COUNT()\nMySQL SUM()\nMySQL AVG()\nMySQL LIKE\nMySQL Wildcards\nMySQL IN\nMySQL BETWEEN\nMySQL Aliases\nMySQL Joins\nMySQL INNER JOIN\nMySQL LEFT JOIN\nMySQL RIGHT JOIN\nMySQL CROSS JOIN\nMySQL Self Join\nMySQL UNION\nMySQL UNION ALL\nMySQL GROUP BY\nMySQL HAVING\nMySQL EXISTS\nMySQL ANY\nMySQL ALL\nMySQL INSERT SELECT\nMySQL CASE\nMySQL Null Functions\nMySQL Stored Procedures\nMySQL Comments\nMySQL Operators",
+                "heading": "MySQL SQL"
+            },
+            {
+                "content": "MySQL Install (Windows)\nMySQL Install (Linux)-->\nMySQL Create DB\nMySQL Drop DB\nMySQL Create Table\nMySQL Drop Table\nMySQL Alter Table\nMySQL Constraints\nMySQL Not Null\nMySQL Unique\nMySQL Primary Key\nMySQL Foreign Key\nMySQL Check\nMySQL Default\nMySQL Create Index\nMySQL Auto Increment\nMySQL Dates\nMySQL Views\nMySQL Injection\nMySQL Prepared Statements",
+                "heading": "MySQL Database"
+            },
+            {
+                "content": "MySQL Certificate",
+                "heading": "MySQL Cert"
+            },
+            {
+                "content": "MySQL Data Types\nMySQL Functions\n\n String Functions\n ASCII\n CHAR_LENGTH\n CHARACTER_LENGTH\n CONCAT\n CONCAT_WS\n FIELD\n FIND_IN_SET\n FORMAT\n INSERT\n INSTR\n LCASE\n LEFT\n LENGTH\n LOCATE\n LOWER\n LPAD\n LTRIM\n MID\n POSITION\n REPEAT\n REPLACE\n REVERSE\n RIGHT\n RPAD\n RTRIM\n SPACE\n STRCMP\n SUBSTR\n SUBSTRING\n SUBSTRING_INDEX\n TRIM\n UCASE\n UPPER\n\n Numeric Functions\n ABS\n ACOS\n ASIN\n ATAN\n ATAN2\n AVG\n CEIL\n CEILING\n COS\n COT\n COUNT\n DEGREES\n DIV\n EXP\n FLOOR\n GREATEST\n LEAST\n LN\n LOG\n LOG10\n LOG2\n MAX\n MIN\n MOD\n PI\n POW\n POWER\n RADIANS\n RAND\n ROUND\n SIGN\n SIN\n SQRT\n SUM\n TAN\n TRUNCATE\n\n Date Functions\n ADDDATE\n ADDTIME\n CURDATE\n CURRENT_DATE\n CURRENT_TIME\n CURRENT_TIMESTAMP\n CURTIME\n DATE\n DATEDIFF\n DATE_ADD\n DATE_FORMAT\n DATE_SUB\n DAY\n DAYNAME\n DAYOFMONTH\n DAYOFWEEK\n DAYOFYEAR\n EXTRACT\n FROM_DAYS\n HOUR\n LAST_DAY\n LOCALTIME\n LOCALTIMESTAMP\n MAKEDATE\n MAKETIME\n MICROSECOND\n MINUTE\n MONTH\n MONTHNAME\n NOW\n PERIOD_ADD\n PERIOD_DIFF\n QUARTER\n SECOND\n SEC_TO_TIME\n STR_TO_DATE\n SUBDATE\n SUBTIME\n SYSDATE\n TIME\n TIME_FORMAT\n TIME_TO_SEC\n TIMEDIFF\n TIMESTAMP\n TO_DAYS\n WEEK\n WEEKDAY\n WEEKOFYEAR\n YEAR\n YEARWEEK\n\n Advanced Functions\n BIN\n BINARY\n CASE\n CAST\n COALESCE\n CONNECTION_ID\n CONV\n CONVERT\n CURRENT_USER\n DATABASE\n IF\n IFNULL\n ISNULL\n LAST_INSERT_ID\n NULLIF\n SESSION_USER\n SYSTEM_USER\n USER\n VERSION",
+                "heading": "MySQL References"
+            },
+            {
+                "content": "MySQL Examples\nMySQL Editor\nMySQL Quiz\nMySQL Exercises\nMySQL Syllabus\nMySQL Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\nMySQL OR Operator\n\n ❮ Previous\n Next ❯",
+                "heading": "MySQL Examples"
+            },
+            {
+                "content": "The WHERE clause can contain one or more OR operators.\n\nThe OR operator is used to filter records based on more than one condition.\n\nNote: The OR operator displays a record if any of the conditions are TRUE.\n\nThe following SQL selects all customers where city is \"Berlin\" OR \"Stuttgart\":\n\nExample\n\n SELECT * FROM Customers\n\n WHERE City = 'Berlin'\n OR City = 'Stuttgart';\n\nTry it Yourself »\n\nThe following SQL selects all customers where country is \"Germany\" OR \"Spain\":\n\nExample\n\n SELECT * FROM Customers\n\n WHERE Country = 'Germany'\n OR Country = 'Spain';\n\nTry it Yourself »",
+                "heading": "The MySQL OR Operator"
+            },
+            {
+                "content": "SELECT column1, column2, ...\n\nFROM table_name\n\nWHERE condition1 OR condition2 OR condition3 ...;",
+                "heading": "OR Syntax"
+            },
+            {
+                "content": "Below is a selection from the \"Customers\" table in the Northwind sample database:\n\n CustomerID\n CustomerName\n ContactName\n Address\n City\n PostalCode\n Country\n\n 1\n\n Alfreds Futterkiste\n Maria Anders\n Obere Str. 57\n Berlin\n 12209\n Germany\n\n 2\n Ana Trujillo Emparedados y helados\n Ana Trujillo\n Avda. de la Constitución 2222\n México D.F.\n 05021\n Mexico\n\n 3\n Antonio Moreno Taquería\n Antonio Moreno\n Mataderos 2312\n México D.F.\n 05023\n Mexico\n\n 4\n\n Around the Horn\n Thomas Hardy\n 120 Hanover Sq.\n London\n WA1 1DP\n UK\n\n 5\n Berglunds snabbköp\n Christina Berglund\n Berguvsvägen 8\n Luleå\n S-958 22\n Sweden",
+                "heading": "Demo Database"
+            },
+            {
+                "content": "The AND operator displays a record if \nall the conditions are TRUE.\n\nThe OR operator displays a record if any of the conditions are TRUE.",
+                "heading": "AND vs. OR"
+            },
+            {
+                "content": "You can also combine the AND and \nOR operators.\n\nThe following SQL selects all customers where country is \"Germany\" AND city must be \"Berlin\" \nOR \"Stuttgart\" (use parenthesis to form complex expressions):\n\nExample\n\n SELECT * FROM Customers\n\n WHERE Country = 'Germany'\n AND (City = 'Berlin' OR City = 'Stuttgart');\n\nTry it Yourself »\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Combining AND and OR"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:32Z",
+        "subject": "MySQL",
+        "title": "MySQL OR Operator"
+    },
+    {
+        "url": "https://www.w3schools.com/mysql/mysql_not.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "mysql_mysql_not",
+        "code_examples": [
+            {
+                "code": "SELECT * FROM Customers\n\nWHERE NOT Country = 'Germany';",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "SELECT * FROM Customers\n\n WHERE Country = 'Germany'\n AND (City = 'Berlin' OR City = 'Stuttgart');",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MySQL HOME\nMySQL Intro\nMySQL RDBMS",
+                "heading": "MySQL Tutorial"
+            },
+            {
+                "content": "MySQL SQL\nMySQL SELECT\nMySQL SELECT DISTINCT\nMySQL WHERE\nMySQL ORDER BY\nMySQL AND\nMySQL OR\nMySQL NOT\nMySQL INSERT INTO\nMySQL NULL Values\nMySQL UPDATE\nMySQL DELETE\nMySQL LIMIT\nMySQL Aggregate Functions\nMySQL MIN()\nMySQL MAX()\nMySQL COUNT()\nMySQL SUM()\nMySQL AVG()\nMySQL LIKE\nMySQL Wildcards\nMySQL IN\nMySQL BETWEEN\nMySQL Aliases\nMySQL Joins\nMySQL INNER JOIN\nMySQL LEFT JOIN\nMySQL RIGHT JOIN\nMySQL CROSS JOIN\nMySQL Self Join\nMySQL UNION\nMySQL UNION ALL\nMySQL GROUP BY\nMySQL HAVING\nMySQL EXISTS\nMySQL ANY\nMySQL ALL\nMySQL INSERT SELECT\nMySQL CASE\nMySQL Null Functions\nMySQL Stored Procedures\nMySQL Comments\nMySQL Operators",
+                "heading": "MySQL SQL"
+            },
+            {
+                "content": "MySQL Install (Windows)\nMySQL Install (Linux)-->\nMySQL Create DB\nMySQL Drop DB\nMySQL Create Table\nMySQL Drop Table\nMySQL Alter Table\nMySQL Constraints\nMySQL Not Null\nMySQL Unique\nMySQL Primary Key\nMySQL Foreign Key\nMySQL Check\nMySQL Default\nMySQL Create Index\nMySQL Auto Increment\nMySQL Dates\nMySQL Views\nMySQL Injection\nMySQL Prepared Statements",
+                "heading": "MySQL Database"
+            },
+            {
+                "content": "MySQL Certificate",
+                "heading": "MySQL Cert"
+            },
+            {
+                "content": "MySQL Data Types\nMySQL Functions\n\n String Functions\n ASCII\n CHAR_LENGTH\n CHARACTER_LENGTH\n CONCAT\n CONCAT_WS\n FIELD\n FIND_IN_SET\n FORMAT\n INSERT\n INSTR\n LCASE\n LEFT\n LENGTH\n LOCATE\n LOWER\n LPAD\n LTRIM\n MID\n POSITION\n REPEAT\n REPLACE\n REVERSE\n RIGHT\n RPAD\n RTRIM\n SPACE\n STRCMP\n SUBSTR\n SUBSTRING\n SUBSTRING_INDEX\n TRIM\n UCASE\n UPPER\n\n Numeric Functions\n ABS\n ACOS\n ASIN\n ATAN\n ATAN2\n AVG\n CEIL\n CEILING\n COS\n COT\n COUNT\n DEGREES\n DIV\n EXP\n FLOOR\n GREATEST\n LEAST\n LN\n LOG\n LOG10\n LOG2\n MAX\n MIN\n MOD\n PI\n POW\n POWER\n RADIANS\n RAND\n ROUND\n SIGN\n SIN\n SQRT\n SUM\n TAN\n TRUNCATE\n\n Date Functions\n ADDDATE\n ADDTIME\n CURDATE\n CURRENT_DATE\n CURRENT_TIME\n CURRENT_TIMESTAMP\n CURTIME\n DATE\n DATEDIFF\n DATE_ADD\n DATE_FORMAT\n DATE_SUB\n DAY\n DAYNAME\n DAYOFMONTH\n DAYOFWEEK\n DAYOFYEAR\n EXTRACT\n FROM_DAYS\n HOUR\n LAST_DAY\n LOCALTIME\n LOCALTIMESTAMP\n MAKEDATE\n MAKETIME\n MICROSECOND\n MINUTE\n MONTH\n MONTHNAME\n NOW\n PERIOD_ADD\n PERIOD_DIFF\n QUARTER\n SECOND\n SEC_TO_TIME\n STR_TO_DATE\n SUBDATE\n SUBTIME\n SYSDATE\n TIME\n TIME_FORMAT\n TIME_TO_SEC\n TIMEDIFF\n TIMESTAMP\n TO_DAYS\n WEEK\n WEEKDAY\n WEEKOFYEAR\n YEAR\n YEARWEEK\n\n Advanced Functions\n BIN\n BINARY\n CASE\n CAST\n COALESCE\n CONNECTION_ID\n CONV\n CONVERT\n CURRENT_USER\n DATABASE\n IF\n IFNULL\n ISNULL\n LAST_INSERT_ID\n NULLIF\n SESSION_USER\n SYSTEM_USER\n USER\n VERSION",
+                "heading": "MySQL References"
+            },
+            {
+                "content": "MySQL Examples\nMySQL Editor\nMySQL Quiz\nMySQL Exercises\nMySQL Syllabus\nMySQL Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\nMySQL NOT Operator\n\n ❮ Previous\n Next ❯",
+                "heading": "MySQL Examples"
+            },
+            {
+                "content": "The NOT operator is used in the WHERE \nclause to return all records that DO NOT match the specified criteria. It reverses the result of a condition from true to false and vice-versa. \n\nThe following SQL selects all customers that are NOT \nfrom Germany:\n\nExample\n\nSELECT * FROM Customers\n\nWHERE NOT Country = 'Germany';\n\nTry it Yourself »\n\nIn the example above, the NOT operator is used in combination with the\n= operator.\n\nThe NOT operator is also used in combination with other operators to exclude data, such as:\n\n NOT LIKE\n\n NOT BETWEEN\n\n NOT IN\n\n IS NOT NULL\n\n NOT EXISTS",
+                "heading": "The MySQL NOT Operator"
+            },
+            {
+                "content": "SELECT column1, column2, ...\n\nFROM table_name\n\nWHERE NOT condition;",
+                "heading": "NOT Syntax"
+            },
+            {
+                "content": "Below is a selection from the \"Customers\" table in the Northwind sample database:\n\n CustomerID\n CustomerName\n ContactName\n Address\n City\n PostalCode\n Country\n\n 1\n\n Alfreds Futterkiste\n Maria Anders\n Obere Str. 57\n Berlin\n 12209\n Germany\n\n 2\n Ana Trujillo Emparedados y helados\n Ana Trujillo\n Avda. de la Constitución 2222\n México D.F.\n 05021\n Mexico\n\n 3\n Antonio Moreno Taquería\n Antonio Moreno\n Mataderos 2312\n México D.F.\n 05023\n Mexico\n\n 4\n\n Around the Horn\n Thomas Hardy\n 120 Hanover Sq.\n London\n WA1 1DP\n UK\n\n 5\n Berglunds snabbköp\n Christina Berglund\n Berguvsvägen 8\n Luleå\n S-958 22\n Sweden",
+                "heading": "Demo Database"
+            },
+            {
+                "content": "You can also combine the AND, \nOR and NOT operators.\n\nThe following SQL selects all customers where country is \"Germany\" AND city must be \"Berlin\" \nOR \"Stuttgart\" (use parenthesis to form complex expressions):\n\nExample\n\n SELECT * FROM Customers\n\n WHERE Country = 'Germany'\n AND (City = 'Berlin' OR City = 'Stuttgart');\n\nTry it Yourself »\n\nThe following SQL selects all customers where country is \nNOT \"Germany\" and NOT \"USA\":\n\nExample\n\n SELECT * FROM Customers\n\n WHERE NOT Country = 'Germany'\n AND NOT Country = 'USA';\n\nTry it Yourself »",
+                "heading": "Combining AND, OR and NOT"
+            },
+            {
+                "content": "The NOT LIKE operator is used in the WHERE clause to exclude rows that match a specified character pattern.\n\nThere are two wildcards often used in conjunction with the NOT LIKE operator:\n\n A percent sign % - represents zero, one, or multiple characters\n\n A underscore sign _ - represents a single character\n\nThe following SQL selects all customers that do NOT start with the letter \"A\":\n\nExample\nSelect customers that does not start with the letter 'A':\n\n SELECT * FROM Customers\n\n WHERE CustomerName NOT LIKE 'A%';\n\nTry it Yourself »",
+                "heading": "The NOT LIKE Operator"
+            },
+            {
+                "content": "The NOT BETWEEN operator is used in the WHERE clause to select rows where a value falls outside a specified inclusive range.\n\nThe NOT BETWEEN operator can be used with numeric, text, or date values.\n\nThe following SQL selects all customers with a CustomerID NOT between 10 and \n60:\n\nExample\nSelect customers with a customerID not between 10 and 60:\n\n SELECT * FROM Customers\n\n WHERE CustomerID NOT BETWEEN 10 AND 60;\n\nTry it Yourself »",
+                "heading": "The NOT BETWEEN Operator"
+            },
+            {
+                "content": "The NOT IN operator is used in the WHERE\nclause to exclude rows that match any value in a specified list or a subquery result set.\n\nThe following SQL selects all customers with Country NOT IN \"Paris\" or \"London\":\n\nExample\nSelect customers that are not from Paris or London:\n\n SELECT * FROM Customers\n\n WHERE City NOT IN ('Paris', 'London');\n\nTry it Yourself »",
+                "heading": "The NOT IN Operator"
+            },
+            {
+                "content": "In SQL, the \"NOT Greater Than\" condition is most often expressed with the standard greater than or equal to (>=) operator.\n\nThe following SQL selects all customers with a CustomerID not greater than 50:\n\nExample\nSelect customers with a CustomerId not greater than 50:\n\n SELECT * FROM Customers\n\n WHERE NOT CustomerID > 50;\n\nTry it Yourself »",
+                "heading": "NOT Greater Than"
+            },
+            {
+                "content": "In SQL, the \"NOT Less Than\" condition is most often expressed with the standard less than or equal to (<=) operator.\n\nThe following SQL selects all customers with a CustomerID not less than 50:\n\nExample\nSelect customers with a CustomerID not less than 50:\n\n SELECT * FROM Customers\n\n WHERE NOT CustomerId < 50;\n\nTry it Yourself »\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "NOT Less Than"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:33Z",
+        "subject": "MySQL",
+        "title": "MySQL NOT Operator"
+    },
+    {
+        "url": "https://www.w3schools.com/mysql/mysql_insert.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "mysql_mysql_insert",
+        "code_examples": [
+            {
+                "code": "INSERT INTO table_name (column1, column2, column3, ...)\n\nVALUES (value1, value2, value3, ...);",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "INSERT INTO table_name\n\nVALUES (value1, value2, value3, ...);",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\nINSERT INTO Customers\nVALUES ('Cardinal', 'Tom B. Erichsen', 'Skagen 21', 'Stavanger', '4006', 'Norway');",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\nINSERT INTO Customers (CustomerName, City, Country)\n\nVALUES ('Cardinal', 'Stavanger', 'Norway');",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\nINSERT INTO Customers (CustomerName, City, Country)\n\nVALUES ('Cardinal', 'Stavanger', 'Norway');",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\nINSERT INTO Customers (CustomerName, ContactName, Address, City, PostalCode, Country)\n\nVALUES\n\n('Cardinal', 'Tom B. Erichsen', 'Skagen 21', 'Stavanger', '4006', 'Norway'),\n\n('Greasy Burger', 'Per Olsen', 'Gateveien 15', 'Sandnes', '4306', 'Norway'),\n\n('Tasty Tee', 'Finn Egan', 'Streetroad 19B', 'Liverpool', 'L1 0AA', 'UK');",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MySQL HOME\nMySQL Intro\nMySQL RDBMS",
+                "heading": "MySQL Tutorial"
+            },
+            {
+                "content": "MySQL SQL\nMySQL SELECT\nMySQL SELECT DISTINCT\nMySQL WHERE\nMySQL ORDER BY\nMySQL AND\nMySQL OR\nMySQL NOT\nMySQL INSERT INTO\nMySQL NULL Values\nMySQL UPDATE\nMySQL DELETE\nMySQL LIMIT\nMySQL Aggregate Functions\nMySQL MIN()\nMySQL MAX()\nMySQL COUNT()\nMySQL SUM()\nMySQL AVG()\nMySQL LIKE\nMySQL Wildcards\nMySQL IN\nMySQL BETWEEN\nMySQL Aliases\nMySQL Joins\nMySQL INNER JOIN\nMySQL LEFT JOIN\nMySQL RIGHT JOIN\nMySQL CROSS JOIN\nMySQL Self Join\nMySQL UNION\nMySQL UNION ALL\nMySQL GROUP BY\nMySQL HAVING\nMySQL EXISTS\nMySQL ANY\nMySQL ALL\nMySQL INSERT SELECT\nMySQL CASE\nMySQL Null Functions\nMySQL Stored Procedures\nMySQL Comments\nMySQL Operators",
+                "heading": "MySQL SQL"
+            },
+            {
+                "content": "MySQL Install (Windows)\nMySQL Install (Linux)-->\nMySQL Create DB\nMySQL Drop DB\nMySQL Create Table\nMySQL Drop Table\nMySQL Alter Table\nMySQL Constraints\nMySQL Not Null\nMySQL Unique\nMySQL Primary Key\nMySQL Foreign Key\nMySQL Check\nMySQL Default\nMySQL Create Index\nMySQL Auto Increment\nMySQL Dates\nMySQL Views\nMySQL Injection\nMySQL Prepared Statements",
+                "heading": "MySQL Database"
+            },
+            {
+                "content": "MySQL Certificate",
+                "heading": "MySQL Cert"
+            },
+            {
+                "content": "MySQL Data Types\nMySQL Functions\n\n String Functions\n ASCII\n CHAR_LENGTH\n CHARACTER_LENGTH\n CONCAT\n CONCAT_WS\n FIELD\n FIND_IN_SET\n FORMAT\n INSERT\n INSTR\n LCASE\n LEFT\n LENGTH\n LOCATE\n LOWER\n LPAD\n LTRIM\n MID\n POSITION\n REPEAT\n REPLACE\n REVERSE\n RIGHT\n RPAD\n RTRIM\n SPACE\n STRCMP\n SUBSTR\n SUBSTRING\n SUBSTRING_INDEX\n TRIM\n UCASE\n UPPER\n\n Numeric Functions\n ABS\n ACOS\n ASIN\n ATAN\n ATAN2\n AVG\n CEIL\n CEILING\n COS\n COT\n COUNT\n DEGREES\n DIV\n EXP\n FLOOR\n GREATEST\n LEAST\n LN\n LOG\n LOG10\n LOG2\n MAX\n MIN\n MOD\n PI\n POW\n POWER\n RADIANS\n RAND\n ROUND\n SIGN\n SIN\n SQRT\n SUM\n TAN\n TRUNCATE\n\n Date Functions\n ADDDATE\n ADDTIME\n CURDATE\n CURRENT_DATE\n CURRENT_TIME\n CURRENT_TIMESTAMP\n CURTIME\n DATE\n DATEDIFF\n DATE_ADD\n DATE_FORMAT\n DATE_SUB\n DAY\n DAYNAME\n DAYOFMONTH\n DAYOFWEEK\n DAYOFYEAR\n EXTRACT\n FROM_DAYS\n HOUR\n LAST_DAY\n LOCALTIME\n LOCALTIMESTAMP\n MAKEDATE\n MAKETIME\n MICROSECOND\n MINUTE\n MONTH\n MONTHNAME\n NOW\n PERIOD_ADD\n PERIOD_DIFF\n QUARTER\n SECOND\n SEC_TO_TIME\n STR_TO_DATE\n SUBDATE\n SUBTIME\n SYSDATE\n TIME\n TIME_FORMAT\n TIME_TO_SEC\n TIMEDIFF\n TIMESTAMP\n TO_DAYS\n WEEK\n WEEKDAY\n WEEKOFYEAR\n YEAR\n YEARWEEK\n\n Advanced Functions\n BIN\n BINARY\n CASE\n CAST\n COALESCE\n CONNECTION_ID\n CONV\n CONVERT\n CURRENT_USER\n DATABASE\n IF\n IFNULL\n ISNULL\n LAST_INSERT_ID\n NULLIF\n SESSION_USER\n SYSTEM_USER\n USER\n VERSION",
+                "heading": "MySQL References"
+            },
+            {
+                "content": "MySQL Examples\nMySQL Editor\nMySQL Quiz\nMySQL Exercises\nMySQL Syllabus\nMySQL Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\nMySQL INSERT INTO Statement\n\n ❮ Previous\n Next ❯",
+                "heading": "MySQL Examples"
+            },
+            {
+                "content": "The INSERT INTO statement is used to insert new records in a table.\n\nIt is possible to write the INSERT INTO statement in two ways:\n\nSyntax 1\nSpecify both the column names and the values to be inserted:\n\nINSERT INTO table_name (column1, column2, column3, ...)\n\nVALUES (value1, value2, value3, ...);\n\nSyntax 2\nIf you insert values for ALL the columns of the table, you can omit the column names.\n\nHowever, the order of the values must be in the same order as the columns in the table:\n\nINSERT INTO table_name\n\nVALUES (value1, value2, value3, ...);",
+                "heading": "The MySQL INSERT INTO Statement"
+            },
+            {
+                "content": "Below is a selection from the \"Customers\" table in the Northwind \nsample database:\n\n CustomerID\n CustomerName\n ContactName\n Address\n City\n PostalCode\n Country\n\n 89\n White Clover Markets\n Karl Jablonski\n 305 - 14th Ave. S. Suite 3B\n Seattle\n 98128\n USA\n\n 90\n\n Wilman Kala\n Matti Karttunen\n Keskuskatu 45\n Helsinki\n 21240\n Finland\n\n 91\n\n Wolski\n Zbyszek\n ul. Filtrowa 68\n Walla\n 01-012\n Poland",
+                "heading": "Demo Database"
+            },
+            {
+                "content": "Here we insert values for ALL the columns of the table, so we omit the column names.\n\nThe following SQL inserts a new record in the \"Customers\" table:\n\nExample\n\nINSERT INTO Customers\nVALUES ('Cardinal', 'Tom B. Erichsen', 'Skagen 21', 'Stavanger', '4006', 'Norway');\n\nThe last record in the \"Customers\" table will now look like this:\n\n CustomerID\n CustomerName\n ContactName\n Address\n City\n PostalCode\n Country\n\n 92\n Cardinal\n Tom B. Erichsen\n Skagen 21\n Stavanger\n 4006\n Norway\n\nNotice that we did not insert any number into the CustomerID field!\n\nThe CustomerID column is an auto-increment field and will be \n automatically generated when a new record is inserted.",
+                "heading": "INSERT INTO Example"
+            },
+            {
+                "content": "Here we insert values only in some specific columns of the table.\n\nThe following SQL inserts a new record - but only inserts data in the \"CustomerName\",\n\"City\", and \"Country\" columns (CustomerID will be updated automatically):\n\nExample\n\nINSERT INTO Customers (CustomerName, City, Country)\n\nVALUES ('Cardinal', 'Stavanger', 'Norway');\n\nThe last record in the \"Customers\" table will now look like this:\n\n CustomerID\n CustomerName\n ContactName\n Address\n City\n PostalCode\n Country\n\n 92\n Cardinal\n null\n null\n Stavanger\n null\n Norway",
+                "heading": "Insert Data Only in Specific Columns"
+            },
+            {
+                "content": "It is also possible to only insert data in specific columns.\n\nThe following SQL statement will insert a new record, but only insert data in the \"CustomerName\", \n\"City\", and \"Country\" columns (CustomerID will \nbe updated automatically):\n\nExample\n\nINSERT INTO Customers (CustomerName, City, Country)\n\nVALUES ('Cardinal', 'Stavanger', 'Norway');\n\nThe selection from the \"Customers\" table will now look like this:\n\n CustomerID\n CustomerName\n ContactName\n Address\n City\n PostalCode\n Country\n\n 89\n White Clover Markets\n Karl Jablonski\n 305 - 14th Ave. S. Suite 3B\n Seattle\n 98128\n USA\n\n 90\n\n Wilman Kala\n Matti Karttunen\n Keskuskatu 45\n Helsinki\n 21240\n Finland\n\n 91\n\n Wolski\n Zbyszek\n ul. Filtrowa 68\n Walla\n 01-012\n Poland\n\n 92\n Cardinal\n null\n null\n Stavanger\n null\n Norway",
+                "heading": "Insert Data Only in Specified Columns"
+            },
+            {
+                "content": "To insert multiple rows of data, we use the same INSERT INTO statement, but with multiple values:\n\nThe following SQL inserts three new records in the \"Customers\" table:\n\nExample\n\nINSERT INTO Customers (CustomerName, ContactName, Address, City, PostalCode, Country)\n\nVALUES\n\n('Cardinal', 'Tom B. Erichsen', 'Skagen 21', 'Stavanger', '4006', 'Norway'),\n\n('Greasy Burger', 'Per Olsen', 'Gateveien 15', 'Sandnes', '4306', 'Norway'),\n\n('Tasty Tee', 'Finn Egan', 'Streetroad 19B', 'Liverpool', 'L1 0AA', 'UK');\n\nNote: Make sure you separate each set of values with a comma ,.\n\nThe last three records in the \"Customers\" table will now look like this:\n\n CustomerID\n CustomerName\n ContactName\n Address\n City\n PostalCode\n Country\n\n 92\n Cardinal\n Tom B. Erichsen\n Skagen 21\n Stavanger\n 4006\n Norway\n\n 93\n Greasy Burger\n Per Olsen\n Gateveien 15\n Sandnes\n 4306\n Norway\n\n 94\n Tasty Tee\n Finn Egan\n Streetroad 19B\n Liverpool\n L1 0AA\n UK\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Insert Multiple Rows"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:33Z",
+        "subject": "MySQL",
+        "title": "MySQL INSERT INTO Statement"
+    },
+    {
+        "url": "https://www.w3schools.com/mysql/mysql_null_values.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "mysql_mysql_null_values",
+        "code_examples": [
+            {
+                "code": "SELECT column_names\nFROM table_name\n\n WHERE column_name IS NULL;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "SELECT column_names\nFROM table_name\n\n WHERE column_name IS NOT NULL;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "SELECT CustomerName, ContactName, Address\nFROM Customers\nWHERE Address \n IS NULL;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MySQL HOME\nMySQL Intro\nMySQL RDBMS",
+                "heading": "MySQL Tutorial"
+            },
+            {
+                "content": "MySQL SQL\nMySQL SELECT\nMySQL SELECT DISTINCT\nMySQL WHERE\nMySQL ORDER BY\nMySQL AND\nMySQL OR\nMySQL NOT\nMySQL INSERT INTO\nMySQL NULL Values\nMySQL UPDATE\nMySQL DELETE\nMySQL LIMIT\nMySQL Aggregate Functions\nMySQL MIN()\nMySQL MAX()\nMySQL COUNT()\nMySQL SUM()\nMySQL AVG()\nMySQL LIKE\nMySQL Wildcards\nMySQL IN\nMySQL BETWEEN\nMySQL Aliases\nMySQL Joins\nMySQL INNER JOIN\nMySQL LEFT JOIN\nMySQL RIGHT JOIN\nMySQL CROSS JOIN\nMySQL Self Join\nMySQL UNION\nMySQL UNION ALL\nMySQL GROUP BY\nMySQL HAVING\nMySQL EXISTS\nMySQL ANY\nMySQL ALL\nMySQL INSERT SELECT\nMySQL CASE\nMySQL Null Functions\nMySQL Stored Procedures\nMySQL Comments\nMySQL Operators",
+                "heading": "MySQL SQL"
+            },
+            {
+                "content": "MySQL Install (Windows)\nMySQL Install (Linux)-->\nMySQL Create DB\nMySQL Drop DB\nMySQL Create Table\nMySQL Drop Table\nMySQL Alter Table\nMySQL Constraints\nMySQL Not Null\nMySQL Unique\nMySQL Primary Key\nMySQL Foreign Key\nMySQL Check\nMySQL Default\nMySQL Create Index\nMySQL Auto Increment\nMySQL Dates\nMySQL Views\nMySQL Injection\nMySQL Prepared Statements",
+                "heading": "MySQL Database"
+            },
+            {
+                "content": "MySQL Certificate",
+                "heading": "MySQL Cert"
+            },
+            {
+                "content": "MySQL Data Types\nMySQL Functions\n\n String Functions\n ASCII\n CHAR_LENGTH\n CHARACTER_LENGTH\n CONCAT\n CONCAT_WS\n FIELD\n FIND_IN_SET\n FORMAT\n INSERT\n INSTR\n LCASE\n LEFT\n LENGTH\n LOCATE\n LOWER\n LPAD\n LTRIM\n MID\n POSITION\n REPEAT\n REPLACE\n REVERSE\n RIGHT\n RPAD\n RTRIM\n SPACE\n STRCMP\n SUBSTR\n SUBSTRING\n SUBSTRING_INDEX\n TRIM\n UCASE\n UPPER\n\n Numeric Functions\n ABS\n ACOS\n ASIN\n ATAN\n ATAN2\n AVG\n CEIL\n CEILING\n COS\n COT\n COUNT\n DEGREES\n DIV\n EXP\n FLOOR\n GREATEST\n LEAST\n LN\n LOG\n LOG10\n LOG2\n MAX\n MIN\n MOD\n PI\n POW\n POWER\n RADIANS\n RAND\n ROUND\n SIGN\n SIN\n SQRT\n SUM\n TAN\n TRUNCATE\n\n Date Functions\n ADDDATE\n ADDTIME\n CURDATE\n CURRENT_DATE\n CURRENT_TIME\n CURRENT_TIMESTAMP\n CURTIME\n DATE\n DATEDIFF\n DATE_ADD\n DATE_FORMAT\n DATE_SUB\n DAY\n DAYNAME\n DAYOFMONTH\n DAYOFWEEK\n DAYOFYEAR\n EXTRACT\n FROM_DAYS\n HOUR\n LAST_DAY\n LOCALTIME\n LOCALTIMESTAMP\n MAKEDATE\n MAKETIME\n MICROSECOND\n MINUTE\n MONTH\n MONTHNAME\n NOW\n PERIOD_ADD\n PERIOD_DIFF\n QUARTER\n SECOND\n SEC_TO_TIME\n STR_TO_DATE\n SUBDATE\n SUBTIME\n SYSDATE\n TIME\n TIME_FORMAT\n TIME_TO_SEC\n TIMEDIFF\n TIMESTAMP\n TO_DAYS\n WEEK\n WEEKDAY\n WEEKOFYEAR\n YEAR\n YEARWEEK\n\n Advanced Functions\n BIN\n BINARY\n CASE\n CAST\n COALESCE\n CONNECTION_ID\n CONV\n CONVERT\n CURRENT_USER\n DATABASE\n IF\n IFNULL\n ISNULL\n LAST_INSERT_ID\n NULLIF\n SESSION_USER\n SYSTEM_USER\n USER\n VERSION",
+                "heading": "MySQL References"
+            },
+            {
+                "content": "MySQL Examples\nMySQL Editor\nMySQL Quiz\nMySQL Exercises\nMySQL Syllabus\nMySQL Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\nMySQL NULL Values\n\n ❮ Previous\n Next ❯",
+                "heading": "MySQL Examples"
+            },
+            {
+                "content": "If a field in a table is optional, it is possible to insert or update a record without adding any value to this field.\nThis way, the field will be saved with a NULL value.\n\nA NULL value represents an unknown, missing, or inapplicable data in a database field. It is not a value itself, but a placeholder to indicate the absence of data.\n\nNote: A NULL value is different from zero (0) or an empty string (''). A field with a NULL\nvalue is one that has been left blank upon record creation.",
+                "heading": "What is a NULL Value?"
+            },
+            {
+                "content": "It is not possible to test for NULL values with comparison operators, such as \n=, <, or <>.\n\nWe will have to use the IS NULL and \nIS NOT NULL operators instead.\n\nIS NULL Syntax\n\n SELECT column_names\nFROM table_name\n\n WHERE column_name IS NULL;\n\nIS NOT NULL Syntax\n\n SELECT column_names\nFROM table_name\n\n WHERE column_name IS NOT NULL;",
+                "heading": "How to Test for NULL Values?"
+            },
+            {
+                "content": "Below is a selection from the \"Customers\" table in the Northwind sample \ndatabase:\n\n CustomerID\n CustomerName\n ContactName\n Address\n City\n PostalCode\n Country\n\n 1\n\n Alfreds Futterkiste\n Maria Anders\n Obere Str. 57\n Berlin\n 12209\n Germany\n\n 2\n Ana Trujillo Emparedados y helados\n Ana Trujillo\n Avda. de la Constitución 2222\n México D.F.\n 05021\n Mexico\n\n 3\n Antonio Moreno Taquería\n Antonio Moreno\n Mataderos 2312\n México D.F.\n 05023\n Mexico\n\n 4\n\n Around the Horn\n Thomas Hardy\n 120 Hanover Sq.\n London\n WA1 1DP\n UK\n\n 5\n Berglunds snabbköp\n Christina Berglund\n Berguvsvägen 8\n Luleå\n S-958 22\n Sweden",
+                "heading": "Demo Database"
+            },
+            {
+                "content": "The IS NULL operator is used to test for empty values (NULL values).\n\nThe following SQL lists all customers with a NULL value in the \"Address\" field:\n\nExample\n\n SELECT CustomerName, ContactName, Address\nFROM Customers\nWHERE Address \n IS NULL;\n\n Try it Yourself »\n\n Tip: Always use IS NULL to look for NULL values.",
+                "heading": "The IS NULL Operator"
+            },
+            {
+                "content": "The IS NOT NULL operator is used to test for non-empty values (NOT NULL \nvalues).\n\nThe following SQL lists all customers with a value in the \"Address\" field:\n\nExample\n\n SELECT CustomerName, ContactName, Address\nFROM Customers\nWHERE Address \n IS NOT NULL;\n\n Try it Yourself »\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "The IS NOT NULL Operator"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:33Z",
+        "subject": "MySQL",
+        "title": "MySQL NULL Values"
+    },
+    {
+        "url": "https://www.w3schools.com/mysql/mysql_update.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "mysql_mysql_update",
+        "code_examples": [
+            {
+                "code": "UPDATE table_name\n\n SET column1 = value1, column2 = value2, ...\n\n WHERE condition;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\n UPDATE Customers\n\n SET ContactName = 'Alfred Schmidt', City = 'Frankfurt'\n\n WHERE CustomerID = 1;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\nUPDATE Customers\n\nSET PostalCode = 00000\n\nWHERE Country = 'Mexico';",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\nUPDATE Customers\n\nSET PostalCode = 00000;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MySQL HOME\nMySQL Intro\nMySQL RDBMS",
+                "heading": "MySQL Tutorial"
+            },
+            {
+                "content": "MySQL SQL\nMySQL SELECT\nMySQL SELECT DISTINCT\nMySQL WHERE\nMySQL ORDER BY\nMySQL AND\nMySQL OR\nMySQL NOT\nMySQL INSERT INTO\nMySQL NULL Values\nMySQL UPDATE\nMySQL DELETE\nMySQL LIMIT\nMySQL Aggregate Functions\nMySQL MIN()\nMySQL MAX()\nMySQL COUNT()\nMySQL SUM()\nMySQL AVG()\nMySQL LIKE\nMySQL Wildcards\nMySQL IN\nMySQL BETWEEN\nMySQL Aliases\nMySQL Joins\nMySQL INNER JOIN\nMySQL LEFT JOIN\nMySQL RIGHT JOIN\nMySQL CROSS JOIN\nMySQL Self Join\nMySQL UNION\nMySQL UNION ALL\nMySQL GROUP BY\nMySQL HAVING\nMySQL EXISTS\nMySQL ANY\nMySQL ALL\nMySQL INSERT SELECT\nMySQL CASE\nMySQL Null Functions\nMySQL Stored Procedures\nMySQL Comments\nMySQL Operators",
+                "heading": "MySQL SQL"
+            },
+            {
+                "content": "MySQL Install (Windows)\nMySQL Install (Linux)-->\nMySQL Create DB\nMySQL Drop DB\nMySQL Create Table\nMySQL Drop Table\nMySQL Alter Table\nMySQL Constraints\nMySQL Not Null\nMySQL Unique\nMySQL Primary Key\nMySQL Foreign Key\nMySQL Check\nMySQL Default\nMySQL Create Index\nMySQL Auto Increment\nMySQL Dates\nMySQL Views\nMySQL Injection\nMySQL Prepared Statements",
+                "heading": "MySQL Database"
+            },
+            {
+                "content": "MySQL Certificate",
+                "heading": "MySQL Cert"
+            },
+            {
+                "content": "MySQL Data Types\nMySQL Functions\n\n String Functions\n ASCII\n CHAR_LENGTH\n CHARACTER_LENGTH\n CONCAT\n CONCAT_WS\n FIELD\n FIND_IN_SET\n FORMAT\n INSERT\n INSTR\n LCASE\n LEFT\n LENGTH\n LOCATE\n LOWER\n LPAD\n LTRIM\n MID\n POSITION\n REPEAT\n REPLACE\n REVERSE\n RIGHT\n RPAD\n RTRIM\n SPACE\n STRCMP\n SUBSTR\n SUBSTRING\n SUBSTRING_INDEX\n TRIM\n UCASE\n UPPER\n\n Numeric Functions\n ABS\n ACOS\n ASIN\n ATAN\n ATAN2\n AVG\n CEIL\n CEILING\n COS\n COT\n COUNT\n DEGREES\n DIV\n EXP\n FLOOR\n GREATEST\n LEAST\n LN\n LOG\n LOG10\n LOG2\n MAX\n MIN\n MOD\n PI\n POW\n POWER\n RADIANS\n RAND\n ROUND\n SIGN\n SIN\n SQRT\n SUM\n TAN\n TRUNCATE\n\n Date Functions\n ADDDATE\n ADDTIME\n CURDATE\n CURRENT_DATE\n CURRENT_TIME\n CURRENT_TIMESTAMP\n CURTIME\n DATE\n DATEDIFF\n DATE_ADD\n DATE_FORMAT\n DATE_SUB\n DAY\n DAYNAME\n DAYOFMONTH\n DAYOFWEEK\n DAYOFYEAR\n EXTRACT\n FROM_DAYS\n HOUR\n LAST_DAY\n LOCALTIME\n LOCALTIMESTAMP\n MAKEDATE\n MAKETIME\n MICROSECOND\n MINUTE\n MONTH\n MONTHNAME\n NOW\n PERIOD_ADD\n PERIOD_DIFF\n QUARTER\n SECOND\n SEC_TO_TIME\n STR_TO_DATE\n SUBDATE\n SUBTIME\n SYSDATE\n TIME\n TIME_FORMAT\n TIME_TO_SEC\n TIMEDIFF\n TIMESTAMP\n TO_DAYS\n WEEK\n WEEKDAY\n WEEKOFYEAR\n YEAR\n YEARWEEK\n\n Advanced Functions\n BIN\n BINARY\n CASE\n CAST\n COALESCE\n CONNECTION_ID\n CONV\n CONVERT\n CURRENT_USER\n DATABASE\n IF\n IFNULL\n ISNULL\n LAST_INSERT_ID\n NULLIF\n SESSION_USER\n SYSTEM_USER\n USER\n VERSION",
+                "heading": "MySQL References"
+            },
+            {
+                "content": "MySQL Examples\nMySQL Editor\nMySQL Quiz\nMySQL Exercises\nMySQL Syllabus\nMySQL Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\nMySQL UPDATE Statement\n\n ❮ Previous\nNext ❯",
+                "heading": "MySQL Examples"
+            },
+            {
+                "content": "The UPDATE statement is used to update or modify \none or more records in a table.\n\nUPDATE Syntax\n\n UPDATE table_name\n\n SET column1 = value1, column2 = value2, ...\n\n WHERE condition;\n\nNote: Be careful when updating records in a table! Notice the \nWHERE clause in the UPDATE statement.\nThe WHERE clause specifies which record(s) that should be updated. If \nyou omit the WHERE clause, all records in the table will be updated!",
+                "heading": "The MySQL UPDATE Statement"
+            },
+            {
+                "content": "Below is a selection from the \"Customers\" table in the Northwind sample database:\n\n CustomerID\n CustomerName\n ContactName\n Address\n City\n PostalCode\n Country\n\n 1\n\n Alfreds Futterkiste\n Maria Anders\n Obere Str. 57\n Berlin\n 12209\n Germany\n\n 2\n Ana Trujillo Emparedados y helados\n Ana Trujillo\n Avda. de la Constitución 2222\n México D.F.\n 05021\n Mexico\n\n 3\n Antonio Moreno Taquería\n Antonio Moreno\n Mataderos 2312\n México D.F.\n 05023\n Mexico\n\n 4\n\n Around the Horn\n Thomas Hardy\n 120 Hanover Sq.\n London\n WA1 1DP\n UK",
+                "heading": "Demo Database"
+            },
+            {
+                "content": "The following SQL updates the record with CustomerID = 1, with a new contact person \nAND \na new city.\n\nExample\n\n UPDATE Customers\n\n SET ContactName = 'Alfred Schmidt', City = 'Frankfurt'\n\n WHERE CustomerID = 1;\n\nThe selection from the \"Customers\" table will now look like this:\n\n CustomerID\n CustomerName\n ContactName\n Address\n City\n PostalCode\n Country\n\n 1\n\n Alfreds Futterkiste\n Alfred Schmidt\n Obere Str. 57\n Frankfurt\n 12209\n Germany\n\n 2\n Ana Trujillo Emparedados y helados\n Ana Trujillo\n Avda. de la Constitución 2222\n México D.F.\n 05021\n Mexico\n\n 3\n Antonio Moreno Taquería\n Antonio Moreno\n Mataderos 2312\n México D.F.\n 05023\n Mexico\n\n 4\n\n Around the Horn\n Thomas Hardy\n 120 Hanover Sq.\n London\n WA1 1DP\n UK",
+                "heading": "UPDATE Table"
+            },
+            {
+                "content": "The WHERE clause determines which records \nthat will be updated.\n\nThe following SQL will \nupdate the PostalCode to 00000 for ALL records where country is \"Mexico\":\n\n Example\n\nUPDATE Customers\n\nSET PostalCode = 00000\n\nWHERE Country = 'Mexico';\n\nThe selection from the \"Customers\" table will now look like this:\n\n CustomerID\n CustomerName\n ContactName\n Address\n City\n PostalCode\n Country\n\n 1\n\n Alfreds Futterkiste\n Alfred Schmidt\n Obere Str. 57\n Frankfurt\n 12209\n Germany\n\n 2\n Ana Trujillo Emparedados y helados\n Ana Trujillo\n Avda. de la Constitución 2222\n México D.F.\n 00000\n Mexico\n\n 3\n Antonio Moreno Taquería\n Antonio Moreno\n Mataderos 2312\n México D.F.\n 00000\n Mexico\n\n 4\n\n Around the Horn\n Thomas Hardy\n 120 Hanover Sq.\n London\n WA1 1DP\n UK",
+                "heading": "UPDATE Multiple Records"
+            },
+            {
+                "content": "Be careful when updating records. If you omit the \nWHERE clause, ALL records will be updated!\n\nThe following SQL will update PostalCode to \"00000\" for ALL records:\n\nExample\n\nUPDATE Customers\n\nSET PostalCode = 00000;\n\nThe selection from the \"Customers\" table will now look like this:\n\n CustomerID\n CustomerName\n ContactName\n Address\n City\n PostalCode\n Country\n\n 1\n\n Alfreds Futterkiste\n Alfred Schmidt\n Obere Str. 57\n Frankfurt\n 00000\n Germany\n\n 2\n Ana Trujillo Emparedados y helados\n Ana Trujillo\n Avda. de la Constitución 2222\n México D.F.\n 00000\n Mexico\n\n 3\n Antonio Moreno Taquería\n Antonio Moreno\n Mataderos 2312\n México D.F.\n 00000\n Mexico\n\n 4\n\n Around the Horn\n Thomas Hardy\n 120 Hanover Sq.\n London\n 00000\n UK\n\n ❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Update Warning!"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:33Z",
+        "subject": "MySQL",
+        "title": "MySQL UPDATE Statement"
+    },
+    {
+        "url": "https://www.w3schools.com/mysql/mysql_delete.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "mysql_mysql_delete",
+        "code_examples": [
+            {
+                "code": "DELETE FROM table_name WHERE condition;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\n DELETE FROM Customers\n WHERE CustomerName='Alfreds Futterkiste';",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "DELETE FROM table_name;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\n DELETE FROM Customers;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "DROP TABLE table_name;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\nDROP TABLE Customers;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MySQL HOME\nMySQL Intro\nMySQL RDBMS",
+                "heading": "MySQL Tutorial"
+            },
+            {
+                "content": "MySQL SQL\nMySQL SELECT\nMySQL SELECT DISTINCT\nMySQL WHERE\nMySQL ORDER BY\nMySQL AND\nMySQL OR\nMySQL NOT\nMySQL INSERT INTO\nMySQL NULL Values\nMySQL UPDATE\nMySQL DELETE\nMySQL LIMIT\nMySQL Aggregate Functions\nMySQL MIN()\nMySQL MAX()\nMySQL COUNT()\nMySQL SUM()\nMySQL AVG()\nMySQL LIKE\nMySQL Wildcards\nMySQL IN\nMySQL BETWEEN\nMySQL Aliases\nMySQL Joins\nMySQL INNER JOIN\nMySQL LEFT JOIN\nMySQL RIGHT JOIN\nMySQL CROSS JOIN\nMySQL Self Join\nMySQL UNION\nMySQL UNION ALL\nMySQL GROUP BY\nMySQL HAVING\nMySQL EXISTS\nMySQL ANY\nMySQL ALL\nMySQL INSERT SELECT\nMySQL CASE\nMySQL Null Functions\nMySQL Stored Procedures\nMySQL Comments\nMySQL Operators",
+                "heading": "MySQL SQL"
+            },
+            {
+                "content": "MySQL Install (Windows)\nMySQL Install (Linux)-->\nMySQL Create DB\nMySQL Drop DB\nMySQL Create Table\nMySQL Drop Table\nMySQL Alter Table\nMySQL Constraints\nMySQL Not Null\nMySQL Unique\nMySQL Primary Key\nMySQL Foreign Key\nMySQL Check\nMySQL Default\nMySQL Create Index\nMySQL Auto Increment\nMySQL Dates\nMySQL Views\nMySQL Injection\nMySQL Prepared Statements",
+                "heading": "MySQL Database"
+            },
+            {
+                "content": "MySQL Certificate",
+                "heading": "MySQL Cert"
+            },
+            {
+                "content": "MySQL Data Types\nMySQL Functions\n\n String Functions\n ASCII\n CHAR_LENGTH\n CHARACTER_LENGTH\n CONCAT\n CONCAT_WS\n FIELD\n FIND_IN_SET\n FORMAT\n INSERT\n INSTR\n LCASE\n LEFT\n LENGTH\n LOCATE\n LOWER\n LPAD\n LTRIM\n MID\n POSITION\n REPEAT\n REPLACE\n REVERSE\n RIGHT\n RPAD\n RTRIM\n SPACE\n STRCMP\n SUBSTR\n SUBSTRING\n SUBSTRING_INDEX\n TRIM\n UCASE\n UPPER\n\n Numeric Functions\n ABS\n ACOS\n ASIN\n ATAN\n ATAN2\n AVG\n CEIL\n CEILING\n COS\n COT\n COUNT\n DEGREES\n DIV\n EXP\n FLOOR\n GREATEST\n LEAST\n LN\n LOG\n LOG10\n LOG2\n MAX\n MIN\n MOD\n PI\n POW\n POWER\n RADIANS\n RAND\n ROUND\n SIGN\n SIN\n SQRT\n SUM\n TAN\n TRUNCATE\n\n Date Functions\n ADDDATE\n ADDTIME\n CURDATE\n CURRENT_DATE\n CURRENT_TIME\n CURRENT_TIMESTAMP\n CURTIME\n DATE\n DATEDIFF\n DATE_ADD\n DATE_FORMAT\n DATE_SUB\n DAY\n DAYNAME\n DAYOFMONTH\n DAYOFWEEK\n DAYOFYEAR\n EXTRACT\n FROM_DAYS\n HOUR\n LAST_DAY\n LOCALTIME\n LOCALTIMESTAMP\n MAKEDATE\n MAKETIME\n MICROSECOND\n MINUTE\n MONTH\n MONTHNAME\n NOW\n PERIOD_ADD\n PERIOD_DIFF\n QUARTER\n SECOND\n SEC_TO_TIME\n STR_TO_DATE\n SUBDATE\n SUBTIME\n SYSDATE\n TIME\n TIME_FORMAT\n TIME_TO_SEC\n TIMEDIFF\n TIMESTAMP\n TO_DAYS\n WEEK\n WEEKDAY\n WEEKOFYEAR\n YEAR\n YEARWEEK\n\n Advanced Functions\n BIN\n BINARY\n CASE\n CAST\n COALESCE\n CONNECTION_ID\n CONV\n CONVERT\n CURRENT_USER\n DATABASE\n IF\n IFNULL\n ISNULL\n LAST_INSERT_ID\n NULLIF\n SESSION_USER\n SYSTEM_USER\n USER\n VERSION",
+                "heading": "MySQL References"
+            },
+            {
+                "content": "MySQL Examples\nMySQL Editor\nMySQL Quiz\nMySQL Exercises\nMySQL Syllabus\nMySQL Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\nMySQL DELETE Statement\n\n❮ Previous\n Next ❯",
+                "heading": "MySQL Examples"
+            },
+            {
+                "content": "The DELETE statement is used to delete existing records in a table.\n\nDELETE Syntax\n\n DELETE FROM table_name WHERE condition;\n\nNote: Be careful when deleting records in a table! Notice the \nWHERE clause in the \nDELETE statement.\nThe WHERE clause specifies which record(s) should be deleted. If \nyou omit the WHERE clause, all records in the table will be deleted!",
+                "heading": "The MySQL DELETE Statement"
+            },
+            {
+                "content": "Below is a selection from the \"Customers\" table in the Northwind sample \ndatabase:\n\n CustomerID\n CustomerName\n ContactName\n Address\n City\n PostalCode\n Country\n\n 1\n\n Alfreds Futterkiste\n Maria Anders\n Obere Str. 57\n Berlin\n 12209\n Germany\n\n 2\n Ana Trujillo Emparedados y helados\n Ana Trujillo\n Avda. de la Constitución 2222\n México D.F.\n 05021\n Mexico\n\n 3\n Antonio Moreno Taquería\n Antonio Moreno\n Mataderos 2312\n México D.F.\n 05023\n Mexico\n\n 4\n\n Around the Horn\n Thomas Hardy\n 120 Hanover Sq.\n London\n WA1 1DP\n UK\n\n 5\n Berglunds snabbköp\n Christina Berglund\n Berguvsvägen 8\n Luleå\n S-958 22\n Sweden",
+                "heading": "Demo Database"
+            },
+            {
+                "content": "The following SQL deletes the customer \"Alfreds Futterkiste\" from \nthe \"Customers\" table:\n\nExample\n\n DELETE FROM Customers\n WHERE CustomerName='Alfreds Futterkiste';\n\nThe \"Customers\" table will now look like this:\n\n CustomerID\n CustomerName\n ContactName\n Address\n City\n PostalCode\n Country\n\n 2\n Ana Trujillo Emparedados y helados\n Ana Trujillo\n Avda. de la Constitución 2222\n México D.F.\n 05021\n Mexico\n\n 3\n Antonio Moreno Taquería\n Antonio Moreno\n Mataderos 2312\n México D.F.\n 05023\n Mexico\n\n 4\n\n Around the Horn\n Thomas Hardy\n 120 Hanover Sq.\n London\n WA1 1DP\n UK\n\n 5\n Berglunds snabbköp\n Christina Berglund\n Berguvsvägen 8\n Luleå\n S-958 22\n Sweden",
+                "heading": "SQL DELETE Example"
+            },
+            {
+                "content": "It is possible to delete all records in a table, without deleting the table. \nThis means that the table structure, attributes, and indexes will be intact.\n\nDELETE FROM table_name;\n\nThe following SQL deletes ALL records in the \"Customers\" table, without \ndeleting the table:\n\nExample\n\n DELETE FROM Customers;",
+                "heading": "Delete All Records"
+            },
+            {
+                "content": "To delete the table completely, use the DROP TABLE statement:\n\nDROP TABLE table_name;\n\nThe following SQL drops the entire \"Customers\" table:\n\nExample\n\nDROP TABLE Customers;\n\n❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Delete a Table"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:33Z",
+        "subject": "MySQL",
+        "title": "MySQL DELETE Statement"
+    },
+    {
+        "url": "https://www.w3schools.com/mysql/mysql_limit.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "mysql_mysql_limit",
+        "code_examples": [
+            {
+                "code": "SELECT column_name(s)\n\nFROM table_name\nWHERE condition\n\nLIMIT number;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "SELECT * FROM Customers\nLIMIT 3;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MySQL HOME\nMySQL Intro\nMySQL RDBMS",
+                "heading": "MySQL Tutorial"
+            },
+            {
+                "content": "MySQL SQL\nMySQL SELECT\nMySQL SELECT DISTINCT\nMySQL WHERE\nMySQL ORDER BY\nMySQL AND\nMySQL OR\nMySQL NOT\nMySQL INSERT INTO\nMySQL NULL Values\nMySQL UPDATE\nMySQL DELETE\nMySQL LIMIT\nMySQL Aggregate Functions\nMySQL MIN()\nMySQL MAX()\nMySQL COUNT()\nMySQL SUM()\nMySQL AVG()\nMySQL LIKE\nMySQL Wildcards\nMySQL IN\nMySQL BETWEEN\nMySQL Aliases\nMySQL Joins\nMySQL INNER JOIN\nMySQL LEFT JOIN\nMySQL RIGHT JOIN\nMySQL CROSS JOIN\nMySQL Self Join\nMySQL UNION\nMySQL UNION ALL\nMySQL GROUP BY\nMySQL HAVING\nMySQL EXISTS\nMySQL ANY\nMySQL ALL\nMySQL INSERT SELECT\nMySQL CASE\nMySQL Null Functions\nMySQL Stored Procedures\nMySQL Comments\nMySQL Operators",
+                "heading": "MySQL SQL"
+            },
+            {
+                "content": "MySQL Install (Windows)\nMySQL Install (Linux)-->\nMySQL Create DB\nMySQL Drop DB\nMySQL Create Table\nMySQL Drop Table\nMySQL Alter Table\nMySQL Constraints\nMySQL Not Null\nMySQL Unique\nMySQL Primary Key\nMySQL Foreign Key\nMySQL Check\nMySQL Default\nMySQL Create Index\nMySQL Auto Increment\nMySQL Dates\nMySQL Views\nMySQL Injection\nMySQL Prepared Statements",
+                "heading": "MySQL Database"
+            },
+            {
+                "content": "MySQL Certificate",
+                "heading": "MySQL Cert"
+            },
+            {
+                "content": "MySQL Data Types\nMySQL Functions\n\n String Functions\n ASCII\n CHAR_LENGTH\n CHARACTER_LENGTH\n CONCAT\n CONCAT_WS\n FIELD\n FIND_IN_SET\n FORMAT\n INSERT\n INSTR\n LCASE\n LEFT\n LENGTH\n LOCATE\n LOWER\n LPAD\n LTRIM\n MID\n POSITION\n REPEAT\n REPLACE\n REVERSE\n RIGHT\n RPAD\n RTRIM\n SPACE\n STRCMP\n SUBSTR\n SUBSTRING\n SUBSTRING_INDEX\n TRIM\n UCASE\n UPPER\n\n Numeric Functions\n ABS\n ACOS\n ASIN\n ATAN\n ATAN2\n AVG\n CEIL\n CEILING\n COS\n COT\n COUNT\n DEGREES\n DIV\n EXP\n FLOOR\n GREATEST\n LEAST\n LN\n LOG\n LOG10\n LOG2\n MAX\n MIN\n MOD\n PI\n POW\n POWER\n RADIANS\n RAND\n ROUND\n SIGN\n SIN\n SQRT\n SUM\n TAN\n TRUNCATE\n\n Date Functions\n ADDDATE\n ADDTIME\n CURDATE\n CURRENT_DATE\n CURRENT_TIME\n CURRENT_TIMESTAMP\n CURTIME\n DATE\n DATEDIFF\n DATE_ADD\n DATE_FORMAT\n DATE_SUB\n DAY\n DAYNAME\n DAYOFMONTH\n DAYOFWEEK\n DAYOFYEAR\n EXTRACT\n FROM_DAYS\n HOUR\n LAST_DAY\n LOCALTIME\n LOCALTIMESTAMP\n MAKEDATE\n MAKETIME\n MICROSECOND\n MINUTE\n MONTH\n MONTHNAME\n NOW\n PERIOD_ADD\n PERIOD_DIFF\n QUARTER\n SECOND\n SEC_TO_TIME\n STR_TO_DATE\n SUBDATE\n SUBTIME\n SYSDATE\n TIME\n TIME_FORMAT\n TIME_TO_SEC\n TIMEDIFF\n TIMESTAMP\n TO_DAYS\n WEEK\n WEEKDAY\n WEEKOFYEAR\n YEAR\n YEARWEEK\n\n Advanced Functions\n BIN\n BINARY\n CASE\n CAST\n COALESCE\n CONNECTION_ID\n CONV\n CONVERT\n CURRENT_USER\n DATABASE\n IF\n IFNULL\n ISNULL\n LAST_INSERT_ID\n NULLIF\n SESSION_USER\n SYSTEM_USER\n USER\n VERSION",
+                "heading": "MySQL References"
+            },
+            {
+                "content": "MySQL Examples\nMySQL Editor\nMySQL Quiz\nMySQL Exercises\nMySQL Syllabus\nMySQL Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\nMySQL LIMIT Clause\n\n ❮ Previous\n Next ❯",
+                "heading": "MySQL Examples"
+            },
+            {
+                "content": "The LIMIT clause is used to limit the number of records to return.\n\nThe LIMIT clause is useful on large tables with thousands of \nrecords. Returning a large number of records can impact performance.\n\nLIMIT Syntax\n\nSELECT column_name(s)\n\nFROM table_name\nWHERE condition\n\nLIMIT number;",
+                "heading": "The MySQL LIMIT Clause"
+            },
+            {
+                "content": "Below is a selection from the \"Customers\" table in the Northwind sample database:\n\n CustomerID\n CustomerName\n ContactName\n Address\n City\n PostalCode\n Country\n\n 1\n\n Alfreds Futterkiste\n Maria Anders\n Obere Str. 57\n Berlin\n 12209\n Germany\n\n 2\n Ana Trujillo Emparedados y helados\n Ana Trujillo\n Avda. de la Constitución 2222\n México D.F.\n 05021\n Mexico\n\n 3\n Antonio Moreno Taquería\n Antonio Moreno\n Mataderos 2312\n México D.F.\n 05023\n Mexico\n\n 4\n\n Around the Horn\n Thomas Hardy\n 120 Hanover Sq.\n London\n WA1 1DP\n UK\n\n 5\n Berglunds snabbköp\n Christina Berglund\n Berguvsvägen 8\n Luleå\n S-958 22\n Sweden",
+                "heading": "Demo Database"
+            },
+            {
+                "content": "The following SQL selects the first three records from the \"Customers\" table:\n\nExample\n\n SELECT * FROM Customers\nLIMIT 3;\n\n Try it Yourself »\n\nWhat if we want to select records 4 - 6 (inclusive)?\n\nMySQL provides a way to handle this: by using OFFSET.\n\nThe following SQL says \"return only 3 records, start on record 4 (OFFSET \n3)\":\n\nExample\n\n SELECT * FROM Customers\nLIMIT 3 OFFSET 3;\n\n Try it Yourself »",
+                "heading": "MySQL LIMIT Examples"
+            },
+            {
+                "content": "The following SQL selects the first three records from the \"Customers\" table, \nwhere Country is \"Germany\":\n\nExample\n\n SELECT * FROM Customers\nWHERE Country='Germany'\nLIMIT 3;\n\n Try it Yourself »",
+                "heading": "LIMIT with a WHERE CLAUSE"
+            },
+            {
+                "content": "The following SQL sorts the customers by country before returning the first three records \nof the sorted result:\n\nExample\n\n SELECT * FROM Customers\nORDER BY Country\nLIMIT 3;\n\n Try it Yourself »\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "LIMIT with an ORDER BY CLAUSE"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:33Z",
+        "subject": "MySQL",
+        "title": "MySQL LIMIT Clause"
+    },
+    {
+        "url": "https://www.w3schools.com/mysql/mysql_aggregate_functions.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "mysql_mysql_aggregate_functions",
+        "code_examples": [],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MySQL HOME\nMySQL Intro\nMySQL RDBMS",
+                "heading": "MySQL Tutorial"
+            },
+            {
+                "content": "MySQL SQL\nMySQL SELECT\nMySQL SELECT DISTINCT\nMySQL WHERE\nMySQL ORDER BY\nMySQL AND\nMySQL OR\nMySQL NOT\nMySQL INSERT INTO\nMySQL NULL Values\nMySQL UPDATE\nMySQL DELETE\nMySQL LIMIT\nMySQL Aggregate Functions\nMySQL MIN()\nMySQL MAX()\nMySQL COUNT()\nMySQL SUM()\nMySQL AVG()\nMySQL LIKE\nMySQL Wildcards\nMySQL IN\nMySQL BETWEEN\nMySQL Aliases\nMySQL Joins\nMySQL INNER JOIN\nMySQL LEFT JOIN\nMySQL RIGHT JOIN\nMySQL CROSS JOIN\nMySQL Self Join\nMySQL UNION\nMySQL UNION ALL\nMySQL GROUP BY\nMySQL HAVING\nMySQL EXISTS\nMySQL ANY\nMySQL ALL\nMySQL INSERT SELECT\nMySQL CASE\nMySQL Null Functions\nMySQL Stored Procedures\nMySQL Comments\nMySQL Operators",
+                "heading": "MySQL SQL"
+            },
+            {
+                "content": "MySQL Install (Windows)\nMySQL Install (Linux)-->\nMySQL Create DB\nMySQL Drop DB\nMySQL Create Table\nMySQL Drop Table\nMySQL Alter Table\nMySQL Constraints\nMySQL Not Null\nMySQL Unique\nMySQL Primary Key\nMySQL Foreign Key\nMySQL Check\nMySQL Default\nMySQL Create Index\nMySQL Auto Increment\nMySQL Dates\nMySQL Views\nMySQL Injection\nMySQL Prepared Statements",
+                "heading": "MySQL Database"
+            },
+            {
+                "content": "MySQL Certificate",
+                "heading": "MySQL Cert"
+            },
+            {
+                "content": "MySQL Data Types\nMySQL Functions\n\n String Functions\n ASCII\n CHAR_LENGTH\n CHARACTER_LENGTH\n CONCAT\n CONCAT_WS\n FIELD\n FIND_IN_SET\n FORMAT\n INSERT\n INSTR\n LCASE\n LEFT\n LENGTH\n LOCATE\n LOWER\n LPAD\n LTRIM\n MID\n POSITION\n REPEAT\n REPLACE\n REVERSE\n RIGHT\n RPAD\n RTRIM\n SPACE\n STRCMP\n SUBSTR\n SUBSTRING\n SUBSTRING_INDEX\n TRIM\n UCASE\n UPPER\n\n Numeric Functions\n ABS\n ACOS\n ASIN\n ATAN\n ATAN2\n AVG\n CEIL\n CEILING\n COS\n COT\n COUNT\n DEGREES\n DIV\n EXP\n FLOOR\n GREATEST\n LEAST\n LN\n LOG\n LOG10\n LOG2\n MAX\n MIN\n MOD\n PI\n POW\n POWER\n RADIANS\n RAND\n ROUND\n SIGN\n SIN\n SQRT\n SUM\n TAN\n TRUNCATE\n\n Date Functions\n ADDDATE\n ADDTIME\n CURDATE\n CURRENT_DATE\n CURRENT_TIME\n CURRENT_TIMESTAMP\n CURTIME\n DATE\n DATEDIFF\n DATE_ADD\n DATE_FORMAT\n DATE_SUB\n DAY\n DAYNAME\n DAYOFMONTH\n DAYOFWEEK\n DAYOFYEAR\n EXTRACT\n FROM_DAYS\n HOUR\n LAST_DAY\n LOCALTIME\n LOCALTIMESTAMP\n MAKEDATE\n MAKETIME\n MICROSECOND\n MINUTE\n MONTH\n MONTHNAME\n NOW\n PERIOD_ADD\n PERIOD_DIFF\n QUARTER\n SECOND\n SEC_TO_TIME\n STR_TO_DATE\n SUBDATE\n SUBTIME\n SYSDATE\n TIME\n TIME_FORMAT\n TIME_TO_SEC\n TIMEDIFF\n TIMESTAMP\n TO_DAYS\n WEEK\n WEEKDAY\n WEEKOFYEAR\n YEAR\n YEARWEEK\n\n Advanced Functions\n BIN\n BINARY\n CASE\n CAST\n COALESCE\n CONNECTION_ID\n CONV\n CONVERT\n CURRENT_USER\n DATABASE\n IF\n IFNULL\n ISNULL\n LAST_INSERT_ID\n NULLIF\n SESSION_USER\n SYSTEM_USER\n USER\n VERSION",
+                "heading": "MySQL References"
+            },
+            {
+                "content": "MySQL Examples\nMySQL Editor\nMySQL Quiz\nMySQL Exercises\nMySQL Syllabus\nMySQL Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\nMySQL Aggregate Functions\n\n ❮ Previous\n Next ❯",
+                "heading": "MySQL Examples"
+            },
+            {
+                "content": "An aggregate function is a function that performs a calculation on a set of \nvalues, and returns a single value.\n\nAggregate functions are often used with the GROUP \nBY clause of the SELECT \nstatement. The GROUP BY clause splits the result-set into groups of values and \nthe aggregate function can be used to return a single value for each group.\n\nThe most commonly used SQL aggregate functions are:\n\n MIN() - returns the smallest value of a column\n\n MAX() - returns the largest value of a column\n\n COUNT() - returns the number of rows in a set\n\n SUM() - returns the sum of a numerical column\n\n AVG() - returns the average value of a numerical column\n\nAggregate functions ignore null values (except for COUNT(*)).\n\nWe will go through the aggregate functions above in the next chapters.",
+                "heading": "MySQL Aggregate Functions"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:33Z",
+        "subject": "MySQL",
+        "title": "MySQL Aggregate Functions"
+    },
+    {
+        "url": "https://www.w3schools.com/mysql/mysql_min_max.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "mysql_mysql_min_max",
+        "code_examples": [
+            {
+                "code": "SELECT MIN(column_name)\n\nFROM table_name\n\nWHERE condition;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "SELECT MIN(Price) AS SmallestPrice\nFROM Products;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MySQL HOME\nMySQL Intro\nMySQL RDBMS",
+                "heading": "MySQL Tutorial"
+            },
+            {
+                "content": "MySQL SQL\nMySQL SELECT\nMySQL SELECT DISTINCT\nMySQL WHERE\nMySQL ORDER BY\nMySQL AND\nMySQL OR\nMySQL NOT\nMySQL INSERT INTO\nMySQL NULL Values\nMySQL UPDATE\nMySQL DELETE\nMySQL LIMIT\nMySQL Aggregate Functions\nMySQL MIN()\nMySQL MAX()\nMySQL COUNT()\nMySQL SUM()\nMySQL AVG()\nMySQL LIKE\nMySQL Wildcards\nMySQL IN\nMySQL BETWEEN\nMySQL Aliases\nMySQL Joins\nMySQL INNER JOIN\nMySQL LEFT JOIN\nMySQL RIGHT JOIN\nMySQL CROSS JOIN\nMySQL Self Join\nMySQL UNION\nMySQL UNION ALL\nMySQL GROUP BY\nMySQL HAVING\nMySQL EXISTS\nMySQL ANY\nMySQL ALL\nMySQL INSERT SELECT\nMySQL CASE\nMySQL Null Functions\nMySQL Stored Procedures\nMySQL Comments\nMySQL Operators",
+                "heading": "MySQL SQL"
+            },
+            {
+                "content": "MySQL Install (Windows)\nMySQL Install (Linux)-->\nMySQL Create DB\nMySQL Drop DB\nMySQL Create Table\nMySQL Drop Table\nMySQL Alter Table\nMySQL Constraints\nMySQL Not Null\nMySQL Unique\nMySQL Primary Key\nMySQL Foreign Key\nMySQL Check\nMySQL Default\nMySQL Create Index\nMySQL Auto Increment\nMySQL Dates\nMySQL Views\nMySQL Injection\nMySQL Prepared Statements",
+                "heading": "MySQL Database"
+            },
+            {
+                "content": "MySQL Certificate",
+                "heading": "MySQL Cert"
+            },
+            {
+                "content": "MySQL Data Types\nMySQL Functions\n\n String Functions\n ASCII\n CHAR_LENGTH\n CHARACTER_LENGTH\n CONCAT\n CONCAT_WS\n FIELD\n FIND_IN_SET\n FORMAT\n INSERT\n INSTR\n LCASE\n LEFT\n LENGTH\n LOCATE\n LOWER\n LPAD\n LTRIM\n MID\n POSITION\n REPEAT\n REPLACE\n REVERSE\n RIGHT\n RPAD\n RTRIM\n SPACE\n STRCMP\n SUBSTR\n SUBSTRING\n SUBSTRING_INDEX\n TRIM\n UCASE\n UPPER\n\n Numeric Functions\n ABS\n ACOS\n ASIN\n ATAN\n ATAN2\n AVG\n CEIL\n CEILING\n COS\n COT\n COUNT\n DEGREES\n DIV\n EXP\n FLOOR\n GREATEST\n LEAST\n LN\n LOG\n LOG10\n LOG2\n MAX\n MIN\n MOD\n PI\n POW\n POWER\n RADIANS\n RAND\n ROUND\n SIGN\n SIN\n SQRT\n SUM\n TAN\n TRUNCATE\n\n Date Functions\n ADDDATE\n ADDTIME\n CURDATE\n CURRENT_DATE\n CURRENT_TIME\n CURRENT_TIMESTAMP\n CURTIME\n DATE\n DATEDIFF\n DATE_ADD\n DATE_FORMAT\n DATE_SUB\n DAY\n DAYNAME\n DAYOFMONTH\n DAYOFWEEK\n DAYOFYEAR\n EXTRACT\n FROM_DAYS\n HOUR\n LAST_DAY\n LOCALTIME\n LOCALTIMESTAMP\n MAKEDATE\n MAKETIME\n MICROSECOND\n MINUTE\n MONTH\n MONTHNAME\n NOW\n PERIOD_ADD\n PERIOD_DIFF\n QUARTER\n SECOND\n SEC_TO_TIME\n STR_TO_DATE\n SUBDATE\n SUBTIME\n SYSDATE\n TIME\n TIME_FORMAT\n TIME_TO_SEC\n TIMEDIFF\n TIMESTAMP\n TO_DAYS\n WEEK\n WEEKDAY\n WEEKOFYEAR\n YEAR\n YEARWEEK\n\n Advanced Functions\n BIN\n BINARY\n CASE\n CAST\n COALESCE\n CONNECTION_ID\n CONV\n CONVERT\n CURRENT_USER\n DATABASE\n IF\n IFNULL\n ISNULL\n LAST_INSERT_ID\n NULLIF\n SESSION_USER\n SYSTEM_USER\n USER\n VERSION",
+                "heading": "MySQL References"
+            },
+            {
+                "content": "MySQL Examples\nMySQL Editor\nMySQL Quiz\nMySQL Exercises\nMySQL Syllabus\nMySQL Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\nMySQL MIN() Function\n\n ❮ Previous\n Next ❯",
+                "heading": "MySQL Examples"
+            },
+            {
+                "content": "The MIN() function returns the smallest value of the selected column.\n\nThe MIN() function works with numeric, string, and date data types. \n\nMIN() Syntax\n\nSELECT MIN(column_name)\n\nFROM table_name\n\nWHERE condition;",
+                "heading": "MySQL MIN() Function"
+            },
+            {
+                "content": "Below is a selection from the \"Products\" table in the Northwind sample database:\n\n ProductID\n ProductName\n SupplierID\n CategoryID\n Unit\n Price\n\n 1\n Chais\n 1\n 1\n 10 boxes x 20 bags\n 18.00\n\n 2\n Chang\n 1\n 1\n 24 - 12 oz bottles\n 19.00\n\n 3\n Aniseed Syrup\n 1\n 2\n 12 - 550 ml bottles\n 10.00\n\n 4\n Chef Anton's Cajun Seasoning\n 2\n 2\n 48 - 6 oz jars\n 22.00\n\n 5\n Chef Anton's Gumbo Mix\n 2\n 2\n 36 boxes\n 21.35",
+                "heading": "Demo Database"
+            },
+            {
+                "content": "The following SQL returns the lowest price in the Price column, in the \n\"Products\" table:\n\nExample\n\nSELECT MIN(Price) AS SmallestPrice\nFROM Products;\n\nTry it Yourself »\n\nTip: When using MIN(), the returned column will not have a name. Use the AS keyword to give the column a descriptive name.",
+                "heading": "MIN() Example"
+            },
+            {
+                "content": "The following SQL returns the earliest BirthDate in the BirthDate column, in the \n\"Employees\" table:\n\nExample\n\n SELECT MIN(BirthDate) AS EarliestBirthdate\nFROM Employees;\n\nTry it Yourself »\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Use MIN() with Date Column"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:33Z",
+        "subject": "MySQL",
+        "title": "MySQL MIN() Function"
+    },
+    {
+        "url": "https://www.w3schools.com/mysql/mysql_max.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "mysql_mysql_max",
+        "code_examples": [
+            {
+                "code": "SELECT MAX(column_name)\n\nFROM table_name\n\nWHERE condition;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "SELECT MAX(Price) AS LargestPrice\nFROM Products;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MySQL HOME\nMySQL Intro\nMySQL RDBMS",
+                "heading": "MySQL Tutorial"
+            },
+            {
+                "content": "MySQL SQL\nMySQL SELECT\nMySQL SELECT DISTINCT\nMySQL WHERE\nMySQL ORDER BY\nMySQL AND\nMySQL OR\nMySQL NOT\nMySQL INSERT INTO\nMySQL NULL Values\nMySQL UPDATE\nMySQL DELETE\nMySQL LIMIT\nMySQL Aggregate Functions\nMySQL MIN()\nMySQL MAX()\nMySQL COUNT()\nMySQL SUM()\nMySQL AVG()\nMySQL LIKE\nMySQL Wildcards\nMySQL IN\nMySQL BETWEEN\nMySQL Aliases\nMySQL Joins\nMySQL INNER JOIN\nMySQL LEFT JOIN\nMySQL RIGHT JOIN\nMySQL CROSS JOIN\nMySQL Self Join\nMySQL UNION\nMySQL UNION ALL\nMySQL GROUP BY\nMySQL HAVING\nMySQL EXISTS\nMySQL ANY\nMySQL ALL\nMySQL INSERT SELECT\nMySQL CASE\nMySQL Null Functions\nMySQL Stored Procedures\nMySQL Comments\nMySQL Operators",
+                "heading": "MySQL SQL"
+            },
+            {
+                "content": "MySQL Install (Windows)\nMySQL Install (Linux)-->\nMySQL Create DB\nMySQL Drop DB\nMySQL Create Table\nMySQL Drop Table\nMySQL Alter Table\nMySQL Constraints\nMySQL Not Null\nMySQL Unique\nMySQL Primary Key\nMySQL Foreign Key\nMySQL Check\nMySQL Default\nMySQL Create Index\nMySQL Auto Increment\nMySQL Dates\nMySQL Views\nMySQL Injection\nMySQL Prepared Statements",
+                "heading": "MySQL Database"
+            },
+            {
+                "content": "MySQL Certificate",
+                "heading": "MySQL Cert"
+            },
+            {
+                "content": "MySQL Data Types\nMySQL Functions\n\n String Functions\n ASCII\n CHAR_LENGTH\n CHARACTER_LENGTH\n CONCAT\n CONCAT_WS\n FIELD\n FIND_IN_SET\n FORMAT\n INSERT\n INSTR\n LCASE\n LEFT\n LENGTH\n LOCATE\n LOWER\n LPAD\n LTRIM\n MID\n POSITION\n REPEAT\n REPLACE\n REVERSE\n RIGHT\n RPAD\n RTRIM\n SPACE\n STRCMP\n SUBSTR\n SUBSTRING\n SUBSTRING_INDEX\n TRIM\n UCASE\n UPPER\n\n Numeric Functions\n ABS\n ACOS\n ASIN\n ATAN\n ATAN2\n AVG\n CEIL\n CEILING\n COS\n COT\n COUNT\n DEGREES\n DIV\n EXP\n FLOOR\n GREATEST\n LEAST\n LN\n LOG\n LOG10\n LOG2\n MAX\n MIN\n MOD\n PI\n POW\n POWER\n RADIANS\n RAND\n ROUND\n SIGN\n SIN\n SQRT\n SUM\n TAN\n TRUNCATE\n\n Date Functions\n ADDDATE\n ADDTIME\n CURDATE\n CURRENT_DATE\n CURRENT_TIME\n CURRENT_TIMESTAMP\n CURTIME\n DATE\n DATEDIFF\n DATE_ADD\n DATE_FORMAT\n DATE_SUB\n DAY\n DAYNAME\n DAYOFMONTH\n DAYOFWEEK\n DAYOFYEAR\n EXTRACT\n FROM_DAYS\n HOUR\n LAST_DAY\n LOCALTIME\n LOCALTIMESTAMP\n MAKEDATE\n MAKETIME\n MICROSECOND\n MINUTE\n MONTH\n MONTHNAME\n NOW\n PERIOD_ADD\n PERIOD_DIFF\n QUARTER\n SECOND\n SEC_TO_TIME\n STR_TO_DATE\n SUBDATE\n SUBTIME\n SYSDATE\n TIME\n TIME_FORMAT\n TIME_TO_SEC\n TIMEDIFF\n TIMESTAMP\n TO_DAYS\n WEEK\n WEEKDAY\n WEEKOFYEAR\n YEAR\n YEARWEEK\n\n Advanced Functions\n BIN\n BINARY\n CASE\n CAST\n COALESCE\n CONNECTION_ID\n CONV\n CONVERT\n CURRENT_USER\n DATABASE\n IF\n IFNULL\n ISNULL\n LAST_INSERT_ID\n NULLIF\n SESSION_USER\n SYSTEM_USER\n USER\n VERSION",
+                "heading": "MySQL References"
+            },
+            {
+                "content": "MySQL Examples\nMySQL Editor\nMySQL Quiz\nMySQL Exercises\nMySQL Syllabus\nMySQL Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\nMySQL MAX() Function\n\n ❮ Previous\n Next ❯",
+                "heading": "MySQL Examples"
+            },
+            {
+                "content": "The MAX() function returns the largest value of the selected column.\n\nThe MAX() function works with numeric, string, and date data types. \n\nMAX() Syntax\n\nSELECT MAX(column_name)\n\nFROM table_name\n\nWHERE condition;",
+                "heading": "MySQL MAX() Function"
+            },
+            {
+                "content": "Below is a selection from the \"Products\" table in the Northwind sample database:\n\n ProductID\n ProductName\n SupplierID\n CategoryID\n Unit\n Price\n\n 1\n Chais\n 1\n 1\n 10 boxes x 20 bags\n 18.00\n\n 2\n Chang\n 1\n 1\n 24 - 12 oz bottles\n 19.00\n\n 3\n Aniseed Syrup\n 1\n 2\n 12 - 550 ml bottles\n 10.00\n\n 4\n Chef Anton's Cajun Seasoning\n 2\n 2\n 48 - 6 oz jars\n 22.00\n\n 5\n Chef Anton's Gumbo Mix\n 2\n 2\n 36 boxes\n 21.35",
+                "heading": "Demo Database"
+            },
+            {
+                "content": "The following SQL returns the highest price in the Price column, in the \n\"Products\" table:\n\nExample\n\nSELECT MAX(Price) AS LargestPrice\nFROM Products;\n\nTry it Yourself »",
+                "heading": "MAX() Example"
+            },
+            {
+                "content": "The following SQL returns the latest BirthDate in the BirthDate column, in the \n\"Employees\" table:\n\nExample\n\n SELECT MAX(BirthDate) AS LatestBirthdate\n\n FROM Employees;\n\nTry it Yourself »\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Use MAX() with Date Column"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:34Z",
+        "subject": "MySQL",
+        "title": "MySQL MAX() Function"
+    },
+    {
+        "url": "https://www.w3schools.com/mysql/mysql_count.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "mysql_mysql_count",
+        "code_examples": [
+            {
+                "code": "SELECT COUNT([DISTINCT] column_name | *)\n\nFROM table_name\n\nWHERE condition;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "SELECT COUNT(*)\nFROM Products;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MySQL HOME\nMySQL Intro\nMySQL RDBMS",
+                "heading": "MySQL Tutorial"
+            },
+            {
+                "content": "MySQL SQL\nMySQL SELECT\nMySQL SELECT DISTINCT\nMySQL WHERE\nMySQL ORDER BY\nMySQL AND\nMySQL OR\nMySQL NOT\nMySQL INSERT INTO\nMySQL NULL Values\nMySQL UPDATE\nMySQL DELETE\nMySQL LIMIT\nMySQL Aggregate Functions\nMySQL MIN()\nMySQL MAX()\nMySQL COUNT()\nMySQL SUM()\nMySQL AVG()\nMySQL LIKE\nMySQL Wildcards\nMySQL IN\nMySQL BETWEEN\nMySQL Aliases\nMySQL Joins\nMySQL INNER JOIN\nMySQL LEFT JOIN\nMySQL RIGHT JOIN\nMySQL CROSS JOIN\nMySQL Self Join\nMySQL UNION\nMySQL UNION ALL\nMySQL GROUP BY\nMySQL HAVING\nMySQL EXISTS\nMySQL ANY\nMySQL ALL\nMySQL INSERT SELECT\nMySQL CASE\nMySQL Null Functions\nMySQL Stored Procedures\nMySQL Comments\nMySQL Operators",
+                "heading": "MySQL SQL"
+            },
+            {
+                "content": "MySQL Install (Windows)\nMySQL Install (Linux)-->\nMySQL Create DB\nMySQL Drop DB\nMySQL Create Table\nMySQL Drop Table\nMySQL Alter Table\nMySQL Constraints\nMySQL Not Null\nMySQL Unique\nMySQL Primary Key\nMySQL Foreign Key\nMySQL Check\nMySQL Default\nMySQL Create Index\nMySQL Auto Increment\nMySQL Dates\nMySQL Views\nMySQL Injection\nMySQL Prepared Statements",
+                "heading": "MySQL Database"
+            },
+            {
+                "content": "MySQL Certificate",
+                "heading": "MySQL Cert"
+            },
+            {
+                "content": "MySQL Data Types\nMySQL Functions\n\n String Functions\n ASCII\n CHAR_LENGTH\n CHARACTER_LENGTH\n CONCAT\n CONCAT_WS\n FIELD\n FIND_IN_SET\n FORMAT\n INSERT\n INSTR\n LCASE\n LEFT\n LENGTH\n LOCATE\n LOWER\n LPAD\n LTRIM\n MID\n POSITION\n REPEAT\n REPLACE\n REVERSE\n RIGHT\n RPAD\n RTRIM\n SPACE\n STRCMP\n SUBSTR\n SUBSTRING\n SUBSTRING_INDEX\n TRIM\n UCASE\n UPPER\n\n Numeric Functions\n ABS\n ACOS\n ASIN\n ATAN\n ATAN2\n AVG\n CEIL\n CEILING\n COS\n COT\n COUNT\n DEGREES\n DIV\n EXP\n FLOOR\n GREATEST\n LEAST\n LN\n LOG\n LOG10\n LOG2\n MAX\n MIN\n MOD\n PI\n POW\n POWER\n RADIANS\n RAND\n ROUND\n SIGN\n SIN\n SQRT\n SUM\n TAN\n TRUNCATE\n\n Date Functions\n ADDDATE\n ADDTIME\n CURDATE\n CURRENT_DATE\n CURRENT_TIME\n CURRENT_TIMESTAMP\n CURTIME\n DATE\n DATEDIFF\n DATE_ADD\n DATE_FORMAT\n DATE_SUB\n DAY\n DAYNAME\n DAYOFMONTH\n DAYOFWEEK\n DAYOFYEAR\n EXTRACT\n FROM_DAYS\n HOUR\n LAST_DAY\n LOCALTIME\n LOCALTIMESTAMP\n MAKEDATE\n MAKETIME\n MICROSECOND\n MINUTE\n MONTH\n MONTHNAME\n NOW\n PERIOD_ADD\n PERIOD_DIFF\n QUARTER\n SECOND\n SEC_TO_TIME\n STR_TO_DATE\n SUBDATE\n SUBTIME\n SYSDATE\n TIME\n TIME_FORMAT\n TIME_TO_SEC\n TIMEDIFF\n TIMESTAMP\n TO_DAYS\n WEEK\n WEEKDAY\n WEEKOFYEAR\n YEAR\n YEARWEEK\n\n Advanced Functions\n BIN\n BINARY\n CASE\n CAST\n COALESCE\n CONNECTION_ID\n CONV\n CONVERT\n CURRENT_USER\n DATABASE\n IF\n IFNULL\n ISNULL\n LAST_INSERT_ID\n NULLIF\n SESSION_USER\n SYSTEM_USER\n USER\n VERSION",
+                "heading": "MySQL References"
+            },
+            {
+                "content": "MySQL Examples\nMySQL Editor\nMySQL Quiz\nMySQL Exercises\nMySQL Syllabus\nMySQL Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\nMySQL COUNT() Function\n\n ❮ Previous\n Next ❯",
+                "heading": "MySQL Examples"
+            },
+            {
+                "content": "The COUNT() function returns the number of rows that matches a specified criterion.\n\nCOUNT() Syntax\n\nSELECT COUNT([DISTINCT] column_name | *)\n\nFROM table_name\n\nWHERE condition;\n\nThe behavior of COUNT() depends on the argument used within the parentheses:\n\nCOUNT(*) - Counts the total number of rows in a table (including NULL values).\n\nCOUNT(columnname) - Counts all non-null values in the column.\n\nCOUNT(DISTINCT columnname) - Counts only the unique, non-null values in the column.",
+                "heading": "MySQL COUNT() Function"
+            },
+            {
+                "content": "Below is a selection from the \"Products\" table in the Northwind sample database:\n\n ProductID\n ProductName\n SupplierID\n CategoryID\n Unit\n Price\n\n 1\n Chais\n 1\n 1\n 10 boxes x 20 bags\n 18.00\n\n 2\n Chang\n 1\n 1\n 24 - 12 oz bottles\n 19.00\n\n 3\n Aniseed Syrup\n 1\n 2\n 12 - 550 ml bottles\n 10.00\n\n 4\n Chef Anton's Cajun Seasoning\n 2\n 2\n 48 - 6 oz jars\n 22.00\n\n 5\n Chef Anton's Gumbo Mix\n 2\n 2\n 36 boxes\n 21.35",
+                "heading": "Demo Database"
+            },
+            {
+                "content": "The following SQL uses COUNT(*), and counts the total number of rows in the \"Products\" table (will include NULL values):\n\nExample\n\n SELECT COUNT(*)\nFROM Products;\n\nTry it Yourself »",
+                "heading": "Using COUNT(*)"
+            },
+            {
+                "content": "The COUNT(column_name) counts all non-null values in the specified column.\n\nThe following SQL counts all non-null values of the \"ProductName\" column:\n\nExample\n\n SELECT COUNT(ProductID)\nFROM Products;\n\nTry it Yourself »",
+                "heading": "Using COUNT(column_name)"
+            },
+            {
+                "content": "You can ignore duplicates by using the DISTINCT keyword.\n\nThe COUNT(DISTINCT column_name) counts only the unique, non-null values in the column.\n\nIf DISTINCT is specified, rows with the same value for the specified column will be counted as one.\n\nThe following SQL counts the unique, non-null values of the \"Price\" column:\n\nExample\nHow many different prices are there in the \"Products\" table:\n\n SELECT COUNT(DISTINCT Price)\nFROM Products;\n\n Try it Yourself »",
+                "heading": "Using COUNT(DISTINCT column_name)"
+            },
+            {
+                "content": "You can add a WHERE clause to specify conditions:\n\nExample\nCount the number of products where Price is higher than 20:\n\n SELECT COUNT(ProductID)\nFROM Products\nWHERE Price > 20;\n\n Try it Yourself »\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Add a WHERE Clause"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:34Z",
+        "subject": "MySQL",
+        "title": "MySQL COUNT() Function"
+    },
+    {
+        "url": "https://www.w3schools.com/mysql/mysql_sum.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "mysql_mysql_sum",
+        "code_examples": [
+            {
+                "code": "SELECT SUM(column_name)\n\nFROM table_name\n\nWHERE condition;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "SELECT SUM(Quantity)\nFROM OrderDetails;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MySQL HOME\nMySQL Intro\nMySQL RDBMS",
+                "heading": "MySQL Tutorial"
+            },
+            {
+                "content": "MySQL SQL\nMySQL SELECT\nMySQL SELECT DISTINCT\nMySQL WHERE\nMySQL ORDER BY\nMySQL AND\nMySQL OR\nMySQL NOT\nMySQL INSERT INTO\nMySQL NULL Values\nMySQL UPDATE\nMySQL DELETE\nMySQL LIMIT\nMySQL Aggregate Functions\nMySQL MIN()\nMySQL MAX()\nMySQL COUNT()\nMySQL SUM()\nMySQL AVG()\nMySQL LIKE\nMySQL Wildcards\nMySQL IN\nMySQL BETWEEN\nMySQL Aliases\nMySQL Joins\nMySQL INNER JOIN\nMySQL LEFT JOIN\nMySQL RIGHT JOIN\nMySQL CROSS JOIN\nMySQL Self Join\nMySQL UNION\nMySQL UNION ALL\nMySQL GROUP BY\nMySQL HAVING\nMySQL EXISTS\nMySQL ANY\nMySQL ALL\nMySQL INSERT SELECT\nMySQL CASE\nMySQL Null Functions\nMySQL Stored Procedures\nMySQL Comments\nMySQL Operators",
+                "heading": "MySQL SQL"
+            },
+            {
+                "content": "MySQL Install (Windows)\nMySQL Install (Linux)-->\nMySQL Create DB\nMySQL Drop DB\nMySQL Create Table\nMySQL Drop Table\nMySQL Alter Table\nMySQL Constraints\nMySQL Not Null\nMySQL Unique\nMySQL Primary Key\nMySQL Foreign Key\nMySQL Check\nMySQL Default\nMySQL Create Index\nMySQL Auto Increment\nMySQL Dates\nMySQL Views\nMySQL Injection\nMySQL Prepared Statements",
+                "heading": "MySQL Database"
+            },
+            {
+                "content": "MySQL Certificate",
+                "heading": "MySQL Cert"
+            },
+            {
+                "content": "MySQL Data Types\nMySQL Functions\n\n String Functions\n ASCII\n CHAR_LENGTH\n CHARACTER_LENGTH\n CONCAT\n CONCAT_WS\n FIELD\n FIND_IN_SET\n FORMAT\n INSERT\n INSTR\n LCASE\n LEFT\n LENGTH\n LOCATE\n LOWER\n LPAD\n LTRIM\n MID\n POSITION\n REPEAT\n REPLACE\n REVERSE\n RIGHT\n RPAD\n RTRIM\n SPACE\n STRCMP\n SUBSTR\n SUBSTRING\n SUBSTRING_INDEX\n TRIM\n UCASE\n UPPER\n\n Numeric Functions\n ABS\n ACOS\n ASIN\n ATAN\n ATAN2\n AVG\n CEIL\n CEILING\n COS\n COT\n COUNT\n DEGREES\n DIV\n EXP\n FLOOR\n GREATEST\n LEAST\n LN\n LOG\n LOG10\n LOG2\n MAX\n MIN\n MOD\n PI\n POW\n POWER\n RADIANS\n RAND\n ROUND\n SIGN\n SIN\n SQRT\n SUM\n TAN\n TRUNCATE\n\n Date Functions\n ADDDATE\n ADDTIME\n CURDATE\n CURRENT_DATE\n CURRENT_TIME\n CURRENT_TIMESTAMP\n CURTIME\n DATE\n DATEDIFF\n DATE_ADD\n DATE_FORMAT\n DATE_SUB\n DAY\n DAYNAME\n DAYOFMONTH\n DAYOFWEEK\n DAYOFYEAR\n EXTRACT\n FROM_DAYS\n HOUR\n LAST_DAY\n LOCALTIME\n LOCALTIMESTAMP\n MAKEDATE\n MAKETIME\n MICROSECOND\n MINUTE\n MONTH\n MONTHNAME\n NOW\n PERIOD_ADD\n PERIOD_DIFF\n QUARTER\n SECOND\n SEC_TO_TIME\n STR_TO_DATE\n SUBDATE\n SUBTIME\n SYSDATE\n TIME\n TIME_FORMAT\n TIME_TO_SEC\n TIMEDIFF\n TIMESTAMP\n TO_DAYS\n WEEK\n WEEKDAY\n WEEKOFYEAR\n YEAR\n YEARWEEK\n\n Advanced Functions\n BIN\n BINARY\n CASE\n CAST\n COALESCE\n CONNECTION_ID\n CONV\n CONVERT\n CURRENT_USER\n DATABASE\n IF\n IFNULL\n ISNULL\n LAST_INSERT_ID\n NULLIF\n SESSION_USER\n SYSTEM_USER\n USER\n VERSION",
+                "heading": "MySQL References"
+            },
+            {
+                "content": "MySQL Examples\nMySQL Editor\nMySQL Quiz\nMySQL Exercises\nMySQL Syllabus\nMySQL Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\nMySQL SUM() Function\n\n ❮ Previous\n Next ❯",
+                "heading": "MySQL Examples"
+            },
+            {
+                "content": "The SUM() function is used to calculate the total sum of values within a numeric column.\n\nThe SUM() function ignores NULL values in the column.\n\nSUM() Syntax\n\nSELECT SUM(column_name)\n\nFROM table_name\n\nWHERE condition;",
+                "heading": "MySQL SUM() Function"
+            },
+            {
+                "content": "Below is a selection from the \"OrderDetails\" table in the Northwind \nsample database:\n\n OrderDetailID\n OrderID\n ProductID\n Quantity\n\n 1\n 10248\n 11\n 12\n\n 2\n 10248\n 42\n 10\n\n 3\n 10248\n 72\n 5\n\n 4\n 10249\n 14\n 9\n\n 5\n 10249\n 51\n 40",
+                "heading": "Demo Database"
+            },
+            {
+                "content": "The following SQL returns the sum of the Quantity field in the \"OrderDetails\" \ntable:\n\nExample\n\nSELECT SUM(Quantity)\nFROM OrderDetails;\n\nTry it Yourself »\n\nNote: NULL values are ignored.",
+                "heading": "SUM() Example"
+            },
+            {
+                "content": "You can add a WHERE clause to specify conditions.\n\nThe following SQL returns the sum of the Quantity field for the product with\nProductID = 11, in the \"OrderDetails\" table:\n\nExample\n\n SELECT SUM(Quantity)\nFROM OrderDetails\nWHERE ProductId = 11;\n\n Try it Yourself »\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Add a WHERE Clause"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:34Z",
+        "subject": "MySQL",
+        "title": "MySQL SUM() Function"
+    },
+    {
+        "url": "https://www.w3schools.com/mysql/mysql_avg.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "mysql_mysql_avg",
+        "code_examples": [
+            {
+                "code": "SELECT AVG(column_name)\n\nFROM table_name\n\nWHERE condition;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "SELECT AVG(Price)\nFROM Products;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MySQL HOME\nMySQL Intro\nMySQL RDBMS",
+                "heading": "MySQL Tutorial"
+            },
+            {
+                "content": "MySQL SQL\nMySQL SELECT\nMySQL SELECT DISTINCT\nMySQL WHERE\nMySQL ORDER BY\nMySQL AND\nMySQL OR\nMySQL NOT\nMySQL INSERT INTO\nMySQL NULL Values\nMySQL UPDATE\nMySQL DELETE\nMySQL LIMIT\nMySQL Aggregate Functions\nMySQL MIN()\nMySQL MAX()\nMySQL COUNT()\nMySQL SUM()\nMySQL AVG()\nMySQL LIKE\nMySQL Wildcards\nMySQL IN\nMySQL BETWEEN\nMySQL Aliases\nMySQL Joins\nMySQL INNER JOIN\nMySQL LEFT JOIN\nMySQL RIGHT JOIN\nMySQL CROSS JOIN\nMySQL Self Join\nMySQL UNION\nMySQL UNION ALL\nMySQL GROUP BY\nMySQL HAVING\nMySQL EXISTS\nMySQL ANY\nMySQL ALL\nMySQL INSERT SELECT\nMySQL CASE\nMySQL Null Functions\nMySQL Stored Procedures\nMySQL Comments\nMySQL Operators",
+                "heading": "MySQL SQL"
+            },
+            {
+                "content": "MySQL Install (Windows)\nMySQL Install (Linux)-->\nMySQL Create DB\nMySQL Drop DB\nMySQL Create Table\nMySQL Drop Table\nMySQL Alter Table\nMySQL Constraints\nMySQL Not Null\nMySQL Unique\nMySQL Primary Key\nMySQL Foreign Key\nMySQL Check\nMySQL Default\nMySQL Create Index\nMySQL Auto Increment\nMySQL Dates\nMySQL Views\nMySQL Injection\nMySQL Prepared Statements",
+                "heading": "MySQL Database"
+            },
+            {
+                "content": "MySQL Certificate",
+                "heading": "MySQL Cert"
+            },
+            {
+                "content": "MySQL Data Types\nMySQL Functions\n\n String Functions\n ASCII\n CHAR_LENGTH\n CHARACTER_LENGTH\n CONCAT\n CONCAT_WS\n FIELD\n FIND_IN_SET\n FORMAT\n INSERT\n INSTR\n LCASE\n LEFT\n LENGTH\n LOCATE\n LOWER\n LPAD\n LTRIM\n MID\n POSITION\n REPEAT\n REPLACE\n REVERSE\n RIGHT\n RPAD\n RTRIM\n SPACE\n STRCMP\n SUBSTR\n SUBSTRING\n SUBSTRING_INDEX\n TRIM\n UCASE\n UPPER\n\n Numeric Functions\n ABS\n ACOS\n ASIN\n ATAN\n ATAN2\n AVG\n CEIL\n CEILING\n COS\n COT\n COUNT\n DEGREES\n DIV\n EXP\n FLOOR\n GREATEST\n LEAST\n LN\n LOG\n LOG10\n LOG2\n MAX\n MIN\n MOD\n PI\n POW\n POWER\n RADIANS\n RAND\n ROUND\n SIGN\n SIN\n SQRT\n SUM\n TAN\n TRUNCATE\n\n Date Functions\n ADDDATE\n ADDTIME\n CURDATE\n CURRENT_DATE\n CURRENT_TIME\n CURRENT_TIMESTAMP\n CURTIME\n DATE\n DATEDIFF\n DATE_ADD\n DATE_FORMAT\n DATE_SUB\n DAY\n DAYNAME\n DAYOFMONTH\n DAYOFWEEK\n DAYOFYEAR\n EXTRACT\n FROM_DAYS\n HOUR\n LAST_DAY\n LOCALTIME\n LOCALTIMESTAMP\n MAKEDATE\n MAKETIME\n MICROSECOND\n MINUTE\n MONTH\n MONTHNAME\n NOW\n PERIOD_ADD\n PERIOD_DIFF\n QUARTER\n SECOND\n SEC_TO_TIME\n STR_TO_DATE\n SUBDATE\n SUBTIME\n SYSDATE\n TIME\n TIME_FORMAT\n TIME_TO_SEC\n TIMEDIFF\n TIMESTAMP\n TO_DAYS\n WEEK\n WEEKDAY\n WEEKOFYEAR\n YEAR\n YEARWEEK\n\n Advanced Functions\n BIN\n BINARY\n CASE\n CAST\n COALESCE\n CONNECTION_ID\n CONV\n CONVERT\n CURRENT_USER\n DATABASE\n IF\n IFNULL\n ISNULL\n LAST_INSERT_ID\n NULLIF\n SESSION_USER\n SYSTEM_USER\n USER\n VERSION",
+                "heading": "MySQL References"
+            },
+            {
+                "content": "MySQL Examples\nMySQL Editor\nMySQL Quiz\nMySQL Exercises\nMySQL Syllabus\nMySQL Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\nMySQL AVG() Function\n\n ❮ Previous\n Next ❯",
+                "heading": "MySQL Examples"
+            },
+            {
+                "content": "The AVG() function returns the average value of a numeric column.\n\nThe AVG() function ignores NULL values in the column.\n\nAVG() Syntax\n\nSELECT AVG(column_name)\n\nFROM table_name\n\nWHERE condition;",
+                "heading": "MySQL AVG() Function"
+            },
+            {
+                "content": "Below is a selection from the \"Products\" table in the Northwind sample database:\n\n ProductID\n ProductName\n SupplierID\n CategoryID\n Unit\n Price\n\n 1\n Chais\n 1\n 1\n 10 boxes x 20 bags\n 18.00\n\n 2\n Chang\n 1\n 1\n 24 - 12 oz bottles\n 19.00\n\n 3\n Aniseed Syrup\n 1\n 2\n 12 - 550 ml bottles\n 10.00\n\n 4\n Chef Anton's Cajun Seasoning\n 2\n 2\n 48 - 6 oz jars\n 22.00\n\n 5\n Chef Anton's Gumbo Mix\n 2\n 2\n 36 boxes\n 21.35",
+                "heading": "Demo Database"
+            },
+            {
+                "content": "The following SQL finds the average price of all products:\n\nExample\n\n SELECT AVG(Price)\nFROM Products;\n\nTry it Yourself »\n\nNote: NULL values are ignored.",
+                "heading": "AVG() Example"
+            },
+            {
+                "content": "You can add a WHERE clause to specify conditions:\n\nExample\nReturn the average price of products in category 1:\n\n SELECT AVG(Price)\nFROM Products\nWHERE CategoryID = 1;\n\n Try it Yourself »",
+                "heading": "Add a WHERE Clause"
+            },
+            {
+                "content": "To list all records with a higher price than average, we can use the\nAVG() function in a sub query:\n\nExample\nReturn all products with a higher price than the average price:\n\n SELECT * FROM Products\nWHERE price > \n (SELECT AVG(price) FROM Products);\n\n Try it Yourself »\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Higher Than Average"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:34Z",
+        "subject": "MySQL",
+        "title": "MySQL AVG() Function"
+    },
+    {
+        "url": "https://www.w3schools.com/mysql/mysql_like.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "mysql_mysql_like",
+        "code_examples": [
+            {
+                "code": "SELECT column1, column2, ...\n\nFROM table_name\n\nWHERE columnN LIKE pattern;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "SELECT * FROM Customers\n\n WHERE CustomerName LIKE 'a%';",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MySQL HOME\nMySQL Intro\nMySQL RDBMS",
+                "heading": "MySQL Tutorial"
+            },
+            {
+                "content": "MySQL SQL\nMySQL SELECT\nMySQL SELECT DISTINCT\nMySQL WHERE\nMySQL ORDER BY\nMySQL AND\nMySQL OR\nMySQL NOT\nMySQL INSERT INTO\nMySQL NULL Values\nMySQL UPDATE\nMySQL DELETE\nMySQL LIMIT\nMySQL Aggregate Functions\nMySQL MIN()\nMySQL MAX()\nMySQL COUNT()\nMySQL SUM()\nMySQL AVG()\nMySQL LIKE\nMySQL Wildcards\nMySQL IN\nMySQL BETWEEN\nMySQL Aliases\nMySQL Joins\nMySQL INNER JOIN\nMySQL LEFT JOIN\nMySQL RIGHT JOIN\nMySQL CROSS JOIN\nMySQL Self Join\nMySQL UNION\nMySQL UNION ALL\nMySQL GROUP BY\nMySQL HAVING\nMySQL EXISTS\nMySQL ANY\nMySQL ALL\nMySQL INSERT SELECT\nMySQL CASE\nMySQL Null Functions\nMySQL Stored Procedures\nMySQL Comments\nMySQL Operators",
+                "heading": "MySQL SQL"
+            },
+            {
+                "content": "MySQL Install (Windows)\nMySQL Install (Linux)-->\nMySQL Create DB\nMySQL Drop DB\nMySQL Create Table\nMySQL Drop Table\nMySQL Alter Table\nMySQL Constraints\nMySQL Not Null\nMySQL Unique\nMySQL Primary Key\nMySQL Foreign Key\nMySQL Check\nMySQL Default\nMySQL Create Index\nMySQL Auto Increment\nMySQL Dates\nMySQL Views\nMySQL Injection\nMySQL Prepared Statements",
+                "heading": "MySQL Database"
+            },
+            {
+                "content": "MySQL Certificate",
+                "heading": "MySQL Cert"
+            },
+            {
+                "content": "MySQL Data Types\nMySQL Functions\n\n String Functions\n ASCII\n CHAR_LENGTH\n CHARACTER_LENGTH\n CONCAT\n CONCAT_WS\n FIELD\n FIND_IN_SET\n FORMAT\n INSERT\n INSTR\n LCASE\n LEFT\n LENGTH\n LOCATE\n LOWER\n LPAD\n LTRIM\n MID\n POSITION\n REPEAT\n REPLACE\n REVERSE\n RIGHT\n RPAD\n RTRIM\n SPACE\n STRCMP\n SUBSTR\n SUBSTRING\n SUBSTRING_INDEX\n TRIM\n UCASE\n UPPER\n\n Numeric Functions\n ABS\n ACOS\n ASIN\n ATAN\n ATAN2\n AVG\n CEIL\n CEILING\n COS\n COT\n COUNT\n DEGREES\n DIV\n EXP\n FLOOR\n GREATEST\n LEAST\n LN\n LOG\n LOG10\n LOG2\n MAX\n MIN\n MOD\n PI\n POW\n POWER\n RADIANS\n RAND\n ROUND\n SIGN\n SIN\n SQRT\n SUM\n TAN\n TRUNCATE\n\n Date Functions\n ADDDATE\n ADDTIME\n CURDATE\n CURRENT_DATE\n CURRENT_TIME\n CURRENT_TIMESTAMP\n CURTIME\n DATE\n DATEDIFF\n DATE_ADD\n DATE_FORMAT\n DATE_SUB\n DAY\n DAYNAME\n DAYOFMONTH\n DAYOFWEEK\n DAYOFYEAR\n EXTRACT\n FROM_DAYS\n HOUR\n LAST_DAY\n LOCALTIME\n LOCALTIMESTAMP\n MAKEDATE\n MAKETIME\n MICROSECOND\n MINUTE\n MONTH\n MONTHNAME\n NOW\n PERIOD_ADD\n PERIOD_DIFF\n QUARTER\n SECOND\n SEC_TO_TIME\n STR_TO_DATE\n SUBDATE\n SUBTIME\n SYSDATE\n TIME\n TIME_FORMAT\n TIME_TO_SEC\n TIMEDIFF\n TIMESTAMP\n TO_DAYS\n WEEK\n WEEKDAY\n WEEKOFYEAR\n YEAR\n YEARWEEK\n\n Advanced Functions\n BIN\n BINARY\n CASE\n CAST\n COALESCE\n CONNECTION_ID\n CONV\n CONVERT\n CURRENT_USER\n DATABASE\n IF\n IFNULL\n ISNULL\n LAST_INSERT_ID\n NULLIF\n SESSION_USER\n SYSTEM_USER\n USER\n VERSION",
+                "heading": "MySQL References"
+            },
+            {
+                "content": "MySQL Examples\nMySQL Editor\nMySQL Quiz\nMySQL Exercises\nMySQL Syllabus\nMySQL Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\nMySQL LIKE Operator\n\n ❮ Previous\nNext ❯",
+                "heading": "MySQL Examples"
+            },
+            {
+                "content": "The LIKE operator is used in a \nWHERE clause to search for a specified pattern within a column's text \ndata.\n\nThere are two wildcards often used in conjunction with the \nLIKE operator:\n\n A percent sign % - represents zero, one, or multiple characters\n\n A underscore sign _ - represents a single character\n\nThe percent sign and the underscore can also be used in combinations!\n\nLIKE Syntax\n\nSELECT column1, column2, ...\n\nFROM table_name\n\nWHERE columnN LIKE pattern;\n\nTip: You can also combine any number of conditions using \nAND or OR operators.\n\nHere are some examples showing different LIKE operators with '%' and '_' wildcards:\n\n LIKE Operator\n Description\n\n WHERE CustomerName LIKE 'a%'\n Finds any values that start with \"a\"\n\n WHERE CustomerName LIKE '%a'\n Finds any values that end with \"a\"\n\n WHERE CustomerName LIKE '%or%'\n Finds any values that have \"or\" in any position\n\n WHERE CustomerName LIKE '_r%'\n Finds any values that have \"r\" in the second position\n\n WHERE CustomerName LIKE 'a_%'\n Finds any values that start with \"a\" and are at least 2 characters in length\n\n WHERE CustomerName LIKE 'a__%'\n Finds any values that start with \"a\" and are at least 3 characters in length\n\n WHERE ContactName LIKE 'a%o'\n Finds any values that start with \"a\" and ends with \"o\"",
+                "heading": "The MySQL LIKE Operator"
+            },
+            {
+                "content": "Below is a selection from the \"Customers\" table in the Northwind sample database:\n\n CustomerID\n CustomerName\n ContactName\n Address\n City\n PostalCode\n Country\n\n 1\n Alfreds Futterkiste\n Maria Anders\n Obere Str. 57\n Berlin\n 12209\n Germany\n\n 2\n Ana Trujillo Emparedados y helados\n Ana Trujillo\n Avda. de la Constitución 2222\n México D.F.\n 05021\n Mexico\n\n 3\n Antonio Moreno Taquería\n Antonio Moreno\n Mataderos 2312\n México D.F.\n 05023\n Mexico\n\n 4\n Around the Horn\n Thomas Hardy\n 120 Hanover Sq.\n London\n WA1 1DP\n UK\n\n 5\n Berglunds snabbköp\n Christina Berglund\n Berguvsvägen 8\n Luleå\n S-958 22\n Sweden",
+                "heading": "Demo Database"
+            },
+            {
+                "content": "The following SQL selects all customers with a CustomerName starting with \n\"a\":\n\nExample\n\n SELECT * FROM Customers\n\n WHERE CustomerName LIKE 'a%';\n\n Try it Yourself »\n\nThe following SQL selects all customers with a CustomerName ending with \"a\":\n\nExample\n\n SELECT * FROM Customers\n\n WHERE CustomerName LIKE '%a'; \n\n Try it Yourself »\n\nThe following SQL selects all customers with a CustomerName that \nhave \"or\" in any position:\n\nExample\n\n SELECT * FROM Customers\n\n WHERE CustomerName LIKE '%or%';\n\n Try it Yourself »\n\nThe following SQL selects all customers with a CustomerName that \nhave \"r\" in the second position:\n\nExample\n\n SELECT * FROM Customers\n\n WHERE CustomerName LIKE '_r%';\n\n Try it Yourself »\n\nThe following SQL selects all customers with a CustomerName that \nstarts with \"a\" and are at least 3 characters in length:\n\nExample\n\n SELECT * FROM Customers\n\n WHERE CustomerName LIKE 'a__%';\n\n Try it Yourself »\n\nThe following SQL selects all customers with a ContactName that \nstarts with \"a\" and ends with \"o\":\n\nExample\n\n SELECT * FROM Customers\n\n WHERE ContactName LIKE 'a%o';\n\n Try it Yourself »\n\nThe following SQL selects all customers with a CustomerName that \ndoes \nNOT start with \"a\":\n\nExample\n\n SELECT * FROM Customers\n\n WHERE CustomerName NOT LIKE 'a%';\n\n Try it Yourself »\n\n ❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "SQL LIKE Examples"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:34Z",
+        "subject": "MySQL",
+        "title": "MySQL LIKE Operator"
+    },
+    {
+        "url": "https://www.w3schools.com/mysql/mysql_wildcards.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "mysql_mysql_wildcards",
+        "code_examples": [
+            {
+                "code": "SELECT * FROM Customers\n\n WHERE City LIKE 'ber%';",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MySQL HOME\nMySQL Intro\nMySQL RDBMS",
+                "heading": "MySQL Tutorial"
+            },
+            {
+                "content": "MySQL SQL\nMySQL SELECT\nMySQL SELECT DISTINCT\nMySQL WHERE\nMySQL ORDER BY\nMySQL AND\nMySQL OR\nMySQL NOT\nMySQL INSERT INTO\nMySQL NULL Values\nMySQL UPDATE\nMySQL DELETE\nMySQL LIMIT\nMySQL Aggregate Functions\nMySQL MIN()\nMySQL MAX()\nMySQL COUNT()\nMySQL SUM()\nMySQL AVG()\nMySQL LIKE\nMySQL Wildcards\nMySQL IN\nMySQL BETWEEN\nMySQL Aliases\nMySQL Joins\nMySQL INNER JOIN\nMySQL LEFT JOIN\nMySQL RIGHT JOIN\nMySQL CROSS JOIN\nMySQL Self Join\nMySQL UNION\nMySQL UNION ALL\nMySQL GROUP BY\nMySQL HAVING\nMySQL EXISTS\nMySQL ANY\nMySQL ALL\nMySQL INSERT SELECT\nMySQL CASE\nMySQL Null Functions\nMySQL Stored Procedures\nMySQL Comments\nMySQL Operators",
+                "heading": "MySQL SQL"
+            },
+            {
+                "content": "MySQL Install (Windows)\nMySQL Install (Linux)-->\nMySQL Create DB\nMySQL Drop DB\nMySQL Create Table\nMySQL Drop Table\nMySQL Alter Table\nMySQL Constraints\nMySQL Not Null\nMySQL Unique\nMySQL Primary Key\nMySQL Foreign Key\nMySQL Check\nMySQL Default\nMySQL Create Index\nMySQL Auto Increment\nMySQL Dates\nMySQL Views\nMySQL Injection\nMySQL Prepared Statements",
+                "heading": "MySQL Database"
+            },
+            {
+                "content": "MySQL Certificate",
+                "heading": "MySQL Cert"
+            },
+            {
+                "content": "MySQL Data Types\nMySQL Functions\n\n String Functions\n ASCII\n CHAR_LENGTH\n CHARACTER_LENGTH\n CONCAT\n CONCAT_WS\n FIELD\n FIND_IN_SET\n FORMAT\n INSERT\n INSTR\n LCASE\n LEFT\n LENGTH\n LOCATE\n LOWER\n LPAD\n LTRIM\n MID\n POSITION\n REPEAT\n REPLACE\n REVERSE\n RIGHT\n RPAD\n RTRIM\n SPACE\n STRCMP\n SUBSTR\n SUBSTRING\n SUBSTRING_INDEX\n TRIM\n UCASE\n UPPER\n\n Numeric Functions\n ABS\n ACOS\n ASIN\n ATAN\n ATAN2\n AVG\n CEIL\n CEILING\n COS\n COT\n COUNT\n DEGREES\n DIV\n EXP\n FLOOR\n GREATEST\n LEAST\n LN\n LOG\n LOG10\n LOG2\n MAX\n MIN\n MOD\n PI\n POW\n POWER\n RADIANS\n RAND\n ROUND\n SIGN\n SIN\n SQRT\n SUM\n TAN\n TRUNCATE\n\n Date Functions\n ADDDATE\n ADDTIME\n CURDATE\n CURRENT_DATE\n CURRENT_TIME\n CURRENT_TIMESTAMP\n CURTIME\n DATE\n DATEDIFF\n DATE_ADD\n DATE_FORMAT\n DATE_SUB\n DAY\n DAYNAME\n DAYOFMONTH\n DAYOFWEEK\n DAYOFYEAR\n EXTRACT\n FROM_DAYS\n HOUR\n LAST_DAY\n LOCALTIME\n LOCALTIMESTAMP\n MAKEDATE\n MAKETIME\n MICROSECOND\n MINUTE\n MONTH\n MONTHNAME\n NOW\n PERIOD_ADD\n PERIOD_DIFF\n QUARTER\n SECOND\n SEC_TO_TIME\n STR_TO_DATE\n SUBDATE\n SUBTIME\n SYSDATE\n TIME\n TIME_FORMAT\n TIME_TO_SEC\n TIMEDIFF\n TIMESTAMP\n TO_DAYS\n WEEK\n WEEKDAY\n WEEKOFYEAR\n YEAR\n YEARWEEK\n\n Advanced Functions\n BIN\n BINARY\n CASE\n CAST\n COALESCE\n CONNECTION_ID\n CONV\n CONVERT\n CURRENT_USER\n DATABASE\n IF\n IFNULL\n ISNULL\n LAST_INSERT_ID\n NULLIF\n SESSION_USER\n SYSTEM_USER\n USER\n VERSION",
+                "heading": "MySQL References"
+            },
+            {
+                "content": "MySQL Examples\nMySQL Editor\nMySQL Quiz\nMySQL Exercises\nMySQL Syllabus\nMySQL Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\nMySQL Wildcards\n\n❮ Previous\nNext ❯",
+                "heading": "MySQL Examples"
+            },
+            {
+                "content": "A wildcard character is used to substitute one or more characters in a string.\n\nWildcard characters are used with the \nLIKE \noperator. The LIKE operator is used in a \nWHERE clause to search for a specified pattern in a column.\n\nMySQL Wildcard Characters\n\n Symbol\n Description\n Example\n\n %\n Represents zero, one, or multiple characters\n bl% finds bl, black, blue, and blob\n\n _\n Represents a single character\n h_t finds hot, hat, and hit\n\nThe wildcards can also be used in combinations!\n\nHere are some examples showing different LIKE operators with '%' and '_' wildcards:\n\n LIKE Operator\n Description\n\n WHERE CustomerName LIKE 'a%'\n Finds any values that starts with \"a\"\n\n WHERE CustomerName LIKE '%a'\n Finds any values that ends with \"a\"\n\n WHERE CustomerName LIKE '%or%'\n Finds any values that have \"or\" in any position\n\n WHERE CustomerName LIKE '_r%'\n Finds any values that have \"r\" in the second position\n\n WHERE CustomerName LIKE 'a_%_%'\n Finds any values that starts with \"a\" and are at least 3 characters in length\n\n WHERE ContactName LIKE 'a%o'\n Finds any values that starts with \"a\" and ends with \"o\"",
+                "heading": "MySQL Wildcard Characters"
+            },
+            {
+                "content": "Below is a selection from the \"Customers\" table in the Northwind sample database:\n\n CustomerID\n CustomerName\n ContactName\n Address\n City\n PostalCode\n Country\n\n 1\n Alfreds Futterkiste\n Maria Anders\n Obere Str. 57\n Berlin\n 12209\n Germany\n\n 2\n Ana Trujillo Emparedados y helados\n Ana Trujillo\n Avda. de la Constitución 2222\n México D.F.\n 05021\n Mexico\n\n 3\n Antonio Moreno Taquería\n Antonio Moreno\n Mataderos 2312\n México D.F.\n 05023\n Mexico\n\n 4\n Around the Horn\n Thomas Hardy\n 120 Hanover Sq.\n London\n WA1 1DP\n UK\n\n 5\n Berglunds snabbköp\n Christina Berglund\n Berguvsvägen 8\n Luleå\n S-958 22\n Sweden",
+                "heading": "Demo Database"
+            },
+            {
+                "content": "The % wildcard represents any number of characters, even zero characters.\n\nThe following SQL selects all customers with a City starting with \"ber\":\n\nExample\n\n SELECT * FROM Customers\n\n WHERE City LIKE 'ber%'; \n\n Try it Yourself »\n\nThe following SQL selects all customers with a City containing the \npattern \"es\": \n\n Example\n\n SELECT * FROM Customers\n\n WHERE City LIKE '%es%';\n\n Try it Yourself »",
+                "heading": "Using the % Wildcard"
+            },
+            {
+                "content": "The _ wildcard represents a single character.\n\nIt can be any character or number, but each _ represents one, and only one, character.\n\nThe following SQL selects all customers with a City starting with any character, followed by \"ondon\":\n\nExample\n\n SELECT * FROM Customers\n\n WHERE City LIKE '_ondon';\n\n Try it Yourself »\n\nThe following SQL selects all customers with a City starting with \n\"L\", followed by any character, followed by \"n\", followed by any character, followed by \"on\":\n\nExample\n\n SELECT * FROM Customers\n\n WHERE City LIKE 'L_n_on';\n\n Try it Yourself »\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Using the _ Wildcard"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:34Z",
+        "subject": "MySQL",
+        "title": "MySQL Wildcards"
+    },
+    {
+        "url": "https://www.w3schools.com/mysql/mysql_in.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "mysql_mysql_in",
+        "code_examples": [
+            {
+                "code": "SELECT column_name(s)\n\nFROM table_name\n\nWHERE column_name IN (value1, value2, ...);",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "SELECT * FROM Customers\n\n WHERE Country IN ('Germany', 'France', 'UK');",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MySQL HOME\nMySQL Intro\nMySQL RDBMS",
+                "heading": "MySQL Tutorial"
+            },
+            {
+                "content": "MySQL SQL\nMySQL SELECT\nMySQL SELECT DISTINCT\nMySQL WHERE\nMySQL ORDER BY\nMySQL AND\nMySQL OR\nMySQL NOT\nMySQL INSERT INTO\nMySQL NULL Values\nMySQL UPDATE\nMySQL DELETE\nMySQL LIMIT\nMySQL Aggregate Functions\nMySQL MIN()\nMySQL MAX()\nMySQL COUNT()\nMySQL SUM()\nMySQL AVG()\nMySQL LIKE\nMySQL Wildcards\nMySQL IN\nMySQL BETWEEN\nMySQL Aliases\nMySQL Joins\nMySQL INNER JOIN\nMySQL LEFT JOIN\nMySQL RIGHT JOIN\nMySQL CROSS JOIN\nMySQL Self Join\nMySQL UNION\nMySQL UNION ALL\nMySQL GROUP BY\nMySQL HAVING\nMySQL EXISTS\nMySQL ANY\nMySQL ALL\nMySQL INSERT SELECT\nMySQL CASE\nMySQL Null Functions\nMySQL Stored Procedures\nMySQL Comments\nMySQL Operators",
+                "heading": "MySQL SQL"
+            },
+            {
+                "content": "MySQL Install (Windows)\nMySQL Install (Linux)-->\nMySQL Create DB\nMySQL Drop DB\nMySQL Create Table\nMySQL Drop Table\nMySQL Alter Table\nMySQL Constraints\nMySQL Not Null\nMySQL Unique\nMySQL Primary Key\nMySQL Foreign Key\nMySQL Check\nMySQL Default\nMySQL Create Index\nMySQL Auto Increment\nMySQL Dates\nMySQL Views\nMySQL Injection\nMySQL Prepared Statements",
+                "heading": "MySQL Database"
+            },
+            {
+                "content": "MySQL Certificate",
+                "heading": "MySQL Cert"
+            },
+            {
+                "content": "MySQL Data Types\nMySQL Functions\n\n String Functions\n ASCII\n CHAR_LENGTH\n CHARACTER_LENGTH\n CONCAT\n CONCAT_WS\n FIELD\n FIND_IN_SET\n FORMAT\n INSERT\n INSTR\n LCASE\n LEFT\n LENGTH\n LOCATE\n LOWER\n LPAD\n LTRIM\n MID\n POSITION\n REPEAT\n REPLACE\n REVERSE\n RIGHT\n RPAD\n RTRIM\n SPACE\n STRCMP\n SUBSTR\n SUBSTRING\n SUBSTRING_INDEX\n TRIM\n UCASE\n UPPER\n\n Numeric Functions\n ABS\n ACOS\n ASIN\n ATAN\n ATAN2\n AVG\n CEIL\n CEILING\n COS\n COT\n COUNT\n DEGREES\n DIV\n EXP\n FLOOR\n GREATEST\n LEAST\n LN\n LOG\n LOG10\n LOG2\n MAX\n MIN\n MOD\n PI\n POW\n POWER\n RADIANS\n RAND\n ROUND\n SIGN\n SIN\n SQRT\n SUM\n TAN\n TRUNCATE\n\n Date Functions\n ADDDATE\n ADDTIME\n CURDATE\n CURRENT_DATE\n CURRENT_TIME\n CURRENT_TIMESTAMP\n CURTIME\n DATE\n DATEDIFF\n DATE_ADD\n DATE_FORMAT\n DATE_SUB\n DAY\n DAYNAME\n DAYOFMONTH\n DAYOFWEEK\n DAYOFYEAR\n EXTRACT\n FROM_DAYS\n HOUR\n LAST_DAY\n LOCALTIME\n LOCALTIMESTAMP\n MAKEDATE\n MAKETIME\n MICROSECOND\n MINUTE\n MONTH\n MONTHNAME\n NOW\n PERIOD_ADD\n PERIOD_DIFF\n QUARTER\n SECOND\n SEC_TO_TIME\n STR_TO_DATE\n SUBDATE\n SUBTIME\n SYSDATE\n TIME\n TIME_FORMAT\n TIME_TO_SEC\n TIMEDIFF\n TIMESTAMP\n TO_DAYS\n WEEK\n WEEKDAY\n WEEKOFYEAR\n YEAR\n YEARWEEK\n\n Advanced Functions\n BIN\n BINARY\n CASE\n CAST\n COALESCE\n CONNECTION_ID\n CONV\n CONVERT\n CURRENT_USER\n DATABASE\n IF\n IFNULL\n ISNULL\n LAST_INSERT_ID\n NULLIF\n SESSION_USER\n SYSTEM_USER\n USER\n VERSION",
+                "heading": "MySQL References"
+            },
+            {
+                "content": "MySQL Examples\nMySQL Editor\nMySQL Quiz\nMySQL Exercises\nMySQL Syllabus\nMySQL Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\nMySQL IN Operator\n\n❮ Previous\nNext ❯",
+                "heading": "MySQL Examples"
+            },
+            {
+                "content": "The IN operator is used in the WHERE clause to check if a specified column's value matches\nany value within a provided list.\n\nThe IN operator functions as a shorthand for multiple OR conditions, making queries shorter and more readable.\n\nIN Syntax\n\nSELECT column_name(s)\n\nFROM table_name\n\nWHERE column_name IN (value1, value2, ...);",
+                "heading": "The MySQL IN Operator"
+            },
+            {
+                "content": "Below is a selection from the \"Customers\" table in the Northwind sample database:\n\n CustomerID\n CustomerName\n ContactName\n Address\n City\n PostalCode\n Country\n\n 1\n Alfreds Futterkiste\n Maria Anders\n Obere Str. 57\n Berlin\n 12209\n Germany\n\n 2\n Ana Trujillo Emparedados y helados\n Ana Trujillo\n Avda. de la Constitución 2222\n México D.F.\n 05021\n Mexico\n\n 3\n Antonio Moreno Taquería\n Antonio Moreno\n Mataderos 2312\n México D.F.\n 05023\n Mexico\n\n 4\n Around the Horn\n Thomas Hardy\n 120 Hanover Sq.\n London\n WA1 1DP\n UK\n\n 5\n Berglunds snabbköp\n Christina Berglund\n Berguvsvägen 8\n Luleå\n S-958 22\n Sweden",
+                "heading": "Demo Database"
+            },
+            {
+                "content": "The following SQL uses the IN operator to select all customers from \nGermany, France, or UK:\n\nExample\n\n SELECT * FROM Customers\n\n WHERE Country IN ('Germany', 'France', 'UK');\n\nTry it Yourself »",
+                "heading": "IN Operator Example"
+            },
+            {
+                "content": "By using the NOT IN operator, you return all \nrecords that are NOT any of the values in the list.\n\nThe following SQL selects all customers that are NOT located in \"Germany\", \"France\" or \"UK\":\n\nExample\n\n SELECT * FROM Customers\n\n WHERE Country NOT IN ('Germany', 'France', 'UK');\n\nTry it Yourself »",
+                "heading": "The NOT IN Operator"
+            },
+            {
+                "content": "You can also use IN with a subquery in the WHERE clause.\n\nWith a subquery you can return all records from the main query that are present in the result of the subquery.\n\nThe following SQL returns all customers who also have an order in the \"Orders\" table:\n\nExample\n\nSELECT * FROM Customers\n\nWHERE CustomerID IN (SELECT CustomerID FROM Orders);\n\nTry it Yourself »",
+                "heading": "IN (SELECT)"
+            },
+            {
+                "content": "The result in the example above returned 89 records,\nthat means that there are 2 customers that haven't placed any orders.\n\nLet us check if that is correct, by using the NOT IN operator.\n\nThe following SQL returns all customers who do NOT have any orders in the \n\"Orders\" table:\n\nExample\n\nSELECT * FROM Customers\n\nWHERE CustomerID NOT IN (SELECT CustomerID FROM Orders);\n\nTry it Yourself »\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "NOT IN (SELECT)"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:35Z",
+        "subject": "MySQL",
+        "title": "MySQL IN Operator"
+    },
+    {
+        "url": "https://www.w3schools.com/mysql/mysql_between.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "mysql_mysql_between",
+        "code_examples": [
+            {
+                "code": "SELECT column_name(s)\n\nFROM table_name\n\nWHERE column_name BETWEEN value1 AND value2;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "SELECT * FROM Products\nWHERE Price BETWEEN 10 AND 20;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MySQL HOME\nMySQL Intro\nMySQL RDBMS",
+                "heading": "MySQL Tutorial"
+            },
+            {
+                "content": "MySQL SQL\nMySQL SELECT\nMySQL SELECT DISTINCT\nMySQL WHERE\nMySQL ORDER BY\nMySQL AND\nMySQL OR\nMySQL NOT\nMySQL INSERT INTO\nMySQL NULL Values\nMySQL UPDATE\nMySQL DELETE\nMySQL LIMIT\nMySQL Aggregate Functions\nMySQL MIN()\nMySQL MAX()\nMySQL COUNT()\nMySQL SUM()\nMySQL AVG()\nMySQL LIKE\nMySQL Wildcards\nMySQL IN\nMySQL BETWEEN\nMySQL Aliases\nMySQL Joins\nMySQL INNER JOIN\nMySQL LEFT JOIN\nMySQL RIGHT JOIN\nMySQL CROSS JOIN\nMySQL Self Join\nMySQL UNION\nMySQL UNION ALL\nMySQL GROUP BY\nMySQL HAVING\nMySQL EXISTS\nMySQL ANY\nMySQL ALL\nMySQL INSERT SELECT\nMySQL CASE\nMySQL Null Functions\nMySQL Stored Procedures\nMySQL Comments\nMySQL Operators",
+                "heading": "MySQL SQL"
+            },
+            {
+                "content": "MySQL Install (Windows)\nMySQL Install (Linux)-->\nMySQL Create DB\nMySQL Drop DB\nMySQL Create Table\nMySQL Drop Table\nMySQL Alter Table\nMySQL Constraints\nMySQL Not Null\nMySQL Unique\nMySQL Primary Key\nMySQL Foreign Key\nMySQL Check\nMySQL Default\nMySQL Create Index\nMySQL Auto Increment\nMySQL Dates\nMySQL Views\nMySQL Injection\nMySQL Prepared Statements",
+                "heading": "MySQL Database"
+            },
+            {
+                "content": "MySQL Certificate",
+                "heading": "MySQL Cert"
+            },
+            {
+                "content": "MySQL Data Types\nMySQL Functions\n\n String Functions\n ASCII\n CHAR_LENGTH\n CHARACTER_LENGTH\n CONCAT\n CONCAT_WS\n FIELD\n FIND_IN_SET\n FORMAT\n INSERT\n INSTR\n LCASE\n LEFT\n LENGTH\n LOCATE\n LOWER\n LPAD\n LTRIM\n MID\n POSITION\n REPEAT\n REPLACE\n REVERSE\n RIGHT\n RPAD\n RTRIM\n SPACE\n STRCMP\n SUBSTR\n SUBSTRING\n SUBSTRING_INDEX\n TRIM\n UCASE\n UPPER\n\n Numeric Functions\n ABS\n ACOS\n ASIN\n ATAN\n ATAN2\n AVG\n CEIL\n CEILING\n COS\n COT\n COUNT\n DEGREES\n DIV\n EXP\n FLOOR\n GREATEST\n LEAST\n LN\n LOG\n LOG10\n LOG2\n MAX\n MIN\n MOD\n PI\n POW\n POWER\n RADIANS\n RAND\n ROUND\n SIGN\n SIN\n SQRT\n SUM\n TAN\n TRUNCATE\n\n Date Functions\n ADDDATE\n ADDTIME\n CURDATE\n CURRENT_DATE\n CURRENT_TIME\n CURRENT_TIMESTAMP\n CURTIME\n DATE\n DATEDIFF\n DATE_ADD\n DATE_FORMAT\n DATE_SUB\n DAY\n DAYNAME\n DAYOFMONTH\n DAYOFWEEK\n DAYOFYEAR\n EXTRACT\n FROM_DAYS\n HOUR\n LAST_DAY\n LOCALTIME\n LOCALTIMESTAMP\n MAKEDATE\n MAKETIME\n MICROSECOND\n MINUTE\n MONTH\n MONTHNAME\n NOW\n PERIOD_ADD\n PERIOD_DIFF\n QUARTER\n SECOND\n SEC_TO_TIME\n STR_TO_DATE\n SUBDATE\n SUBTIME\n SYSDATE\n TIME\n TIME_FORMAT\n TIME_TO_SEC\n TIMEDIFF\n TIMESTAMP\n TO_DAYS\n WEEK\n WEEKDAY\n WEEKOFYEAR\n YEAR\n YEARWEEK\n\n Advanced Functions\n BIN\n BINARY\n CASE\n CAST\n COALESCE\n CONNECTION_ID\n CONV\n CONVERT\n CURRENT_USER\n DATABASE\n IF\n IFNULL\n ISNULL\n LAST_INSERT_ID\n NULLIF\n SESSION_USER\n SYSTEM_USER\n USER\n VERSION",
+                "heading": "MySQL References"
+            },
+            {
+                "content": "MySQL Examples\nMySQL Editor\nMySQL Quiz\nMySQL Exercises\nMySQL Syllabus\nMySQL Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\nMySQL BETWEEN Operator\n\n❮ Previous\nNext ❯",
+                "heading": "MySQL Examples"
+            },
+            {
+                "content": "The BETWEEN operator is used in the WHERE clause to select values within a specified range.\n\nThe range is inclusive - the beginning and end values of the range are included in the results.\n\nThe values can be numbers, text, or dates.\n\nBETWEEN Syntax\n\nSELECT column_name(s)\n\nFROM table_name\n\nWHERE column_name BETWEEN value1 AND value2;",
+                "heading": "The MySQL BETWEEN Operator"
+            },
+            {
+                "content": "Below is a selection from the \"Products\" table in the Northwind \nsample database:\n\n ProductID\n ProductName\n SupplierID\n CategoryID\n Unit\n Price\n\n 1\n Chais\n 1\n 1\n 10 boxes x 20 bags\n 18.00\n\n 2\n Chang\n 1\n 1\n 24 - 12 oz bottles\n 19.00\n\n 3\n Aniseed Syrup\n 1\n 2\n 12 - 550 ml bottles\n 10.00\n\n 4\n Chef Anton's Cajun Seasoning\n 1\n 2\n 48 - 6 oz jars\n 22.00\n\n 5\n Chef Anton's Gumbo Mix\n 1\n 2\n 36 boxes\n 21.35",
+                "heading": "Demo Database"
+            },
+            {
+                "content": "The following SQL selects all products with a price between 10 and 20:\n\nExample\n\n SELECT * FROM Products\nWHERE Price BETWEEN 10 AND 20;\n\nTry it Yourself »",
+                "heading": "BETWEEN Example"
+            },
+            {
+                "content": "The NOT BETWEEN operator is used in the WHERE clause to select values outside a specified range.\n\nThe following SQL returns all products with a price NOT between 10 and 20:\n\nExample\n\n SELECT * FROM Products\nWHERE Price NOT BETWEEN 10 AND 20;\n\nTry it Yourself »",
+                "heading": "NOT BETWEEN"
+            },
+            {
+                "content": "The following SQL returns all products with a price between 10 and \n20. In addition, the CategoryID must be either 1, 2 or 3:\n\nExample\n\n SELECT * FROM Products\nWHERE Price BETWEEN 10 AND 20\nAND CategoryID IN (1, 2, 3);\n\nTry it Yourself »",
+                "heading": "BETWEEN with IN Example"
+            },
+            {
+                "content": "The following SQL selects all products with a ProductName alphabetically \nbetween \"Carnarvon \nTigers\" and \"Mozzarella di Giovanni\":\n\nExample\n\n SELECT * FROM Products\nWHERE ProductName BETWEEN 'Carnarvon Tigers' AND 'Mozzarella \n di Giovanni'\nORDER BY ProductName;\n\nTry it Yourself »\n\nThe following SQL selects all products with a ProductName alphabetically \nbetween \"Carnarvon \nTigers\" and \"Chef Anton's Cajun Seasoning\":\n\nExample\n\n SELECT * FROM Products\nWHERE ProductName BETWEEN \"Carnarvon Tigers\" AND \n \"Chef Anton's Cajun Seasoning\"\nORDER BY ProductName;\n\nTry it Yourself »",
+                "heading": "BETWEEN Text Values Example"
+            },
+            {
+                "content": "The following SQL selects all products with a ProductName alphabetically not \nbetween \"Carnarvon \nTigers\" and \"Mozzarella di Giovanni\":\n\nExample\n\n SELECT * FROM Products\nWHERE ProductName NOT BETWEEN 'Carnarvon Tigers' AND 'Mozzarella \n di Giovanni'\nORDER BY ProductName;\n\nTry it Yourself »",
+                "heading": "NOT BETWEEN Text Values Example"
+            },
+            {
+                "content": "Below is a selection from the \"Orders\" table in the Northwind \nsample database:\n\n OrderID\n CustomerID\n EmployeeID\n OrderDate\n ShipperID\n\n 10248\n 90\n 5\n 1996-07-04\n 3\n\n 10249\n 81\n 6\n 1996-07-05\n 1\n\n 10250\n 34\n 4\n 1996-07-08\n 2\n\n 10251\n 84\n 3\n 1996-07-08\n 1\n\n 10252\n 76\n 4\n 1996-07-09\n 2",
+                "heading": "Sample Table"
+            },
+            {
+                "content": "The BETWEEN operator is useful for filtering records within a specific date or time period.\nEnsure the date format matches the database (e.g. 'YYYY-MM-DD').\n\nThe following SQL selects all orders placed in July, 1996:\n\nExample\n\nSELECT * FROM Orders\nWHERE OrderDate BETWEEN '1996-07-01' AND '1996-07-31';\n\nTry it Yourself »\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "BETWEEN Dates Example"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:35Z",
+        "subject": "MySQL",
+        "title": "MySQL BETWEEN Operator"
+    },
+    {
+        "url": "https://www.w3schools.com/mysql/mysql_alias.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "mysql_mysql_alias",
+        "code_examples": [
+            {
+                "code": "SELECT column_name AS alias_name\n\n FROM table_name;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "SELECT column_name(s)\n\n FROM table_name AS alias_name;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "SELECT CustomerID AS ID, CustomerName AS Customer\n\n FROM Customers;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MySQL HOME\nMySQL Intro\nMySQL RDBMS",
+                "heading": "MySQL Tutorial"
+            },
+            {
+                "content": "MySQL SQL\nMySQL SELECT\nMySQL SELECT DISTINCT\nMySQL WHERE\nMySQL ORDER BY\nMySQL AND\nMySQL OR\nMySQL NOT\nMySQL INSERT INTO\nMySQL NULL Values\nMySQL UPDATE\nMySQL DELETE\nMySQL LIMIT\nMySQL Aggregate Functions\nMySQL MIN()\nMySQL MAX()\nMySQL COUNT()\nMySQL SUM()\nMySQL AVG()\nMySQL LIKE\nMySQL Wildcards\nMySQL IN\nMySQL BETWEEN\nMySQL Aliases\nMySQL Joins\nMySQL INNER JOIN\nMySQL LEFT JOIN\nMySQL RIGHT JOIN\nMySQL CROSS JOIN\nMySQL Self Join\nMySQL UNION\nMySQL UNION ALL\nMySQL GROUP BY\nMySQL HAVING\nMySQL EXISTS\nMySQL ANY\nMySQL ALL\nMySQL INSERT SELECT\nMySQL CASE\nMySQL Null Functions\nMySQL Stored Procedures\nMySQL Comments\nMySQL Operators",
+                "heading": "MySQL SQL"
+            },
+            {
+                "content": "MySQL Install (Windows)\nMySQL Install (Linux)-->\nMySQL Create DB\nMySQL Drop DB\nMySQL Create Table\nMySQL Drop Table\nMySQL Alter Table\nMySQL Constraints\nMySQL Not Null\nMySQL Unique\nMySQL Primary Key\nMySQL Foreign Key\nMySQL Check\nMySQL Default\nMySQL Create Index\nMySQL Auto Increment\nMySQL Dates\nMySQL Views\nMySQL Injection\nMySQL Prepared Statements",
+                "heading": "MySQL Database"
+            },
+            {
+                "content": "MySQL Certificate",
+                "heading": "MySQL Cert"
+            },
+            {
+                "content": "MySQL Data Types\nMySQL Functions\n\n String Functions\n ASCII\n CHAR_LENGTH\n CHARACTER_LENGTH\n CONCAT\n CONCAT_WS\n FIELD\n FIND_IN_SET\n FORMAT\n INSERT\n INSTR\n LCASE\n LEFT\n LENGTH\n LOCATE\n LOWER\n LPAD\n LTRIM\n MID\n POSITION\n REPEAT\n REPLACE\n REVERSE\n RIGHT\n RPAD\n RTRIM\n SPACE\n STRCMP\n SUBSTR\n SUBSTRING\n SUBSTRING_INDEX\n TRIM\n UCASE\n UPPER\n\n Numeric Functions\n ABS\n ACOS\n ASIN\n ATAN\n ATAN2\n AVG\n CEIL\n CEILING\n COS\n COT\n COUNT\n DEGREES\n DIV\n EXP\n FLOOR\n GREATEST\n LEAST\n LN\n LOG\n LOG10\n LOG2\n MAX\n MIN\n MOD\n PI\n POW\n POWER\n RADIANS\n RAND\n ROUND\n SIGN\n SIN\n SQRT\n SUM\n TAN\n TRUNCATE\n\n Date Functions\n ADDDATE\n ADDTIME\n CURDATE\n CURRENT_DATE\n CURRENT_TIME\n CURRENT_TIMESTAMP\n CURTIME\n DATE\n DATEDIFF\n DATE_ADD\n DATE_FORMAT\n DATE_SUB\n DAY\n DAYNAME\n DAYOFMONTH\n DAYOFWEEK\n DAYOFYEAR\n EXTRACT\n FROM_DAYS\n HOUR\n LAST_DAY\n LOCALTIME\n LOCALTIMESTAMP\n MAKEDATE\n MAKETIME\n MICROSECOND\n MINUTE\n MONTH\n MONTHNAME\n NOW\n PERIOD_ADD\n PERIOD_DIFF\n QUARTER\n SECOND\n SEC_TO_TIME\n STR_TO_DATE\n SUBDATE\n SUBTIME\n SYSDATE\n TIME\n TIME_FORMAT\n TIME_TO_SEC\n TIMEDIFF\n TIMESTAMP\n TO_DAYS\n WEEK\n WEEKDAY\n WEEKOFYEAR\n YEAR\n YEARWEEK\n\n Advanced Functions\n BIN\n BINARY\n CASE\n CAST\n COALESCE\n CONNECTION_ID\n CONV\n CONVERT\n CURRENT_USER\n DATABASE\n IF\n IFNULL\n ISNULL\n LAST_INSERT_ID\n NULLIF\n SESSION_USER\n SYSTEM_USER\n USER\n VERSION",
+                "heading": "MySQL References"
+            },
+            {
+                "content": "MySQL Examples\nMySQL Editor\nMySQL Quiz\nMySQL Exercises\nMySQL Syllabus\nMySQL Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\nMySQL Aliases\n\n❮ Previous\nNext ❯",
+                "heading": "MySQL Examples"
+            },
+            {
+                "content": "An alias is created with the AS keyword, and \nis often used to make a column name more readable.\n\nAn alias only exists for the duration of that query.\n\nAlias for Column Syntax\n\n SELECT column_name AS alias_name\n\n FROM table_name;\n\nAlias for Table Syntax\n\n SELECT column_name(s)\n\n FROM table_name AS alias_name;",
+                "heading": "MySQL Aliases"
+            },
+            {
+                "content": "Below is a selection from the \"Customers\" table in the Northwind sample database:\n\n CustomerID\n CustomerName\n ContactName\n Address\n City\n PostalCode\n Country\n\n 1\n Alfreds Futterkiste\n Maria Anders\n Obere Str. 57\n Berlin\n 12209\n Germany\n\n 2\n Ana Trujillo Emparedados y helados\n Ana Trujillo\n Avda. de la Constitución 2222\n México D.F.\n 05021\n Mexico\n\n 3\n Antonio Moreno Taquería\n Antonio Moreno\n Mataderos 2312\n México D.F.\n 05023\n Mexico\n\n 4\n Around the Horn\n Thomas Hardy\n 120 Hanover Sq.\n London\n WA1 1DP\n UK\n\n 5\n Berglunds snabbköp\n Christina Berglund\n Berguvsvägen 8\n Luleå\n S-958 22\n Sweden",
+                "heading": "Demo Database"
+            },
+            {
+                "content": "The following SQL creates two aliases, one for the CustomerID \ncolumn and one for the CustomerName column:\n\nExample\n\n SELECT CustomerID AS ID, CustomerName AS Customer\n\n FROM Customers;\n\nTry it Yourself »",
+                "heading": "Alias for Columns"
+            },
+            {
+                "content": "If you want your alias to contain one or more spaces, like \"Contact Person\", \nsurround the aliasname with single or double quotes:\n\nExample\n\n SELECT CustomerName AS Customer, ContactName AS \"Contact Person\"\n\n FROM Customers;\n\nTry it Yourself »",
+                "heading": "Alias with Spaces"
+            },
+            {
+                "content": "The following SQL creates an alias named \"Address\" that combine four columns (Address, PostalCode, \nCity and Country):\n\nExample\n\n SELECT CustomerName, CONCAT_WS(', ', Address, PostalCode, City, Country) \n AS Address\n\n FROM Customers;\n\nTry it Yourself »",
+                "heading": "Concatenate Columns"
+            },
+            {
+                "content": "The following SQL selects all the orders from the customer with \nCustomerID=4 (Around the Horn). We use the \"Customers\" and \"Orders\" tables, and \ngive them the table aliases of \"c\" and \"o\" respectively (Here we use \naliases to make the SQL shorter):\n\nExample\n\n SELECT o.OrderID, o.OrderDate, c.CustomerName\nFROM Customers AS c, Orders AS o\nWHERE c.CustomerName='Around the Horn' AND c.CustomerID=o.CustomerID;\n\nTry it Yourself »\n\nThe following SQL is the same as above, but without aliases:\n\nExample\n\n SELECT Orders.OrderID, Orders.OrderDate, Customers.CustomerName\nFROM Customers, Orders\nWHERE Customers.CustomerName='Around the Horn' AND Customers.CustomerID=Orders.CustomerID;\n\nTry it Yourself »\n\nAliases are useful when:\n\n There are more than one table involved in a query\n\n Functions are used in the query\n\n Column names are long or not very readable\n\n Two or more columns are combined together\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Alias for Tables"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:35Z",
+        "subject": "MySQL",
+        "title": "MySQL Aliases"
+    },
+    {
+        "url": "https://www.w3schools.com/mysql/mysql_join.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "mysql_mysql_join",
+        "code_examples": [
+            {
+                "code": "SELECT Orders.OrderID, Customers.CustomerName, Orders.OrderDate\nFROM Orders\nINNER JOIN Customers ON Orders.CustomerID=Customers.CustomerID;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MySQL HOME\nMySQL Intro\nMySQL RDBMS",
+                "heading": "MySQL Tutorial"
+            },
+            {
+                "content": "MySQL SQL\nMySQL SELECT\nMySQL SELECT DISTINCT\nMySQL WHERE\nMySQL ORDER BY\nMySQL AND\nMySQL OR\nMySQL NOT\nMySQL INSERT INTO\nMySQL NULL Values\nMySQL UPDATE\nMySQL DELETE\nMySQL LIMIT\nMySQL Aggregate Functions\nMySQL MIN()\nMySQL MAX()\nMySQL COUNT()\nMySQL SUM()\nMySQL AVG()\nMySQL LIKE\nMySQL Wildcards\nMySQL IN\nMySQL BETWEEN\nMySQL Aliases\nMySQL Joins\nMySQL INNER JOIN\nMySQL LEFT JOIN\nMySQL RIGHT JOIN\nMySQL CROSS JOIN\nMySQL Self Join\nMySQL UNION\nMySQL UNION ALL\nMySQL GROUP BY\nMySQL HAVING\nMySQL EXISTS\nMySQL ANY\nMySQL ALL\nMySQL INSERT SELECT\nMySQL CASE\nMySQL Null Functions\nMySQL Stored Procedures\nMySQL Comments\nMySQL Operators",
+                "heading": "MySQL SQL"
+            },
+            {
+                "content": "MySQL Install (Windows)\nMySQL Install (Linux)-->\nMySQL Create DB\nMySQL Drop DB\nMySQL Create Table\nMySQL Drop Table\nMySQL Alter Table\nMySQL Constraints\nMySQL Not Null\nMySQL Unique\nMySQL Primary Key\nMySQL Foreign Key\nMySQL Check\nMySQL Default\nMySQL Create Index\nMySQL Auto Increment\nMySQL Dates\nMySQL Views\nMySQL Injection\nMySQL Prepared Statements",
+                "heading": "MySQL Database"
+            },
+            {
+                "content": "MySQL Certificate",
+                "heading": "MySQL Cert"
+            },
+            {
+                "content": "MySQL Data Types\nMySQL Functions\n\n String Functions\n ASCII\n CHAR_LENGTH\n CHARACTER_LENGTH\n CONCAT\n CONCAT_WS\n FIELD\n FIND_IN_SET\n FORMAT\n INSERT\n INSTR\n LCASE\n LEFT\n LENGTH\n LOCATE\n LOWER\n LPAD\n LTRIM\n MID\n POSITION\n REPEAT\n REPLACE\n REVERSE\n RIGHT\n RPAD\n RTRIM\n SPACE\n STRCMP\n SUBSTR\n SUBSTRING\n SUBSTRING_INDEX\n TRIM\n UCASE\n UPPER\n\n Numeric Functions\n ABS\n ACOS\n ASIN\n ATAN\n ATAN2\n AVG\n CEIL\n CEILING\n COS\n COT\n COUNT\n DEGREES\n DIV\n EXP\n FLOOR\n GREATEST\n LEAST\n LN\n LOG\n LOG10\n LOG2\n MAX\n MIN\n MOD\n PI\n POW\n POWER\n RADIANS\n RAND\n ROUND\n SIGN\n SIN\n SQRT\n SUM\n TAN\n TRUNCATE\n\n Date Functions\n ADDDATE\n ADDTIME\n CURDATE\n CURRENT_DATE\n CURRENT_TIME\n CURRENT_TIMESTAMP\n CURTIME\n DATE\n DATEDIFF\n DATE_ADD\n DATE_FORMAT\n DATE_SUB\n DAY\n DAYNAME\n DAYOFMONTH\n DAYOFWEEK\n DAYOFYEAR\n EXTRACT\n FROM_DAYS\n HOUR\n LAST_DAY\n LOCALTIME\n LOCALTIMESTAMP\n MAKEDATE\n MAKETIME\n MICROSECOND\n MINUTE\n MONTH\n MONTHNAME\n NOW\n PERIOD_ADD\n PERIOD_DIFF\n QUARTER\n SECOND\n SEC_TO_TIME\n STR_TO_DATE\n SUBDATE\n SUBTIME\n SYSDATE\n TIME\n TIME_FORMAT\n TIME_TO_SEC\n TIMEDIFF\n TIMESTAMP\n TO_DAYS\n WEEK\n WEEKDAY\n WEEKOFYEAR\n YEAR\n YEARWEEK\n\n Advanced Functions\n BIN\n BINARY\n CASE\n CAST\n COALESCE\n CONNECTION_ID\n CONV\n CONVERT\n CURRENT_USER\n DATABASE\n IF\n IFNULL\n ISNULL\n LAST_INSERT_ID\n NULLIF\n SESSION_USER\n SYSTEM_USER\n USER\n VERSION",
+                "heading": "MySQL References"
+            },
+            {
+                "content": "MySQL Examples\nMySQL Editor\nMySQL Quiz\nMySQL Exercises\nMySQL Syllabus\nMySQL Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\nMySQL Joins\n\n❮ Previous\nNext ❯",
+                "heading": "MySQL Examples"
+            },
+            {
+                "content": "The JOIN clause is used to combine rows from two or more tables, based on a related column between them.\n\nHere are the different types of JOINs in MySQL:\n\n INNER JOIN: Returns only rows that have matching values in both tables\n\n LEFT JOIN: Returns all rows from the left table, and only the matched rows from the right table\n\n RIGHT JOIN: Returns all rows from the right table, and only the matched rows from the left table\n\n CROSS JOIN: Returns the Cartesian product of two or more tables\n\nLook at an order in \"Orders\" table:\n\n OrderID\n CustomerID\n OrderDate\n\n 10308\n 2\n 1996-09-18\n\nThen, look at a customer in the \"Customers\" table:\n\n CustomerID\n CustomerName\n ContactName\n Country\n\n 2\n Ana Trujillo Emparedados y helados\n Ana Trujillo\n Mexico\n\nHere we see that the \"CustomerID\" column in the \"Orders\" table refers to the\n\"CustomerID\" in the \"Customers\" table. The relationship between the two tables above\nis the \"CustomerID\" column.\n\nThen, we can create the following SQL statement (that contains an \nINNER JOIN), \nthat selects records that have matching values in both tables:\n\nExample\n\n SELECT Orders.OrderID, Customers.CustomerName, Orders.OrderDate\nFROM Orders\nINNER JOIN Customers ON Orders.CustomerID=Customers.CustomerID;\n\n Try it Yourself »\n\nand it will produce something like this:\n\n OrderID\n CustomerName\n OrderDate\n\n 10308\n Ana Trujillo Emparedados y helados\n 1996-09-18\n\n 10365\n Antonio Moreno Taquería\n 1996-11-27\n\n 10383\n Around the Horn\n 1996-11-15\n\n 10355\n Around the Horn\n 1996-12-16\n\n 10278\n Berglunds snabbköp\n 1996-12-16",
+                "heading": "The MySQL JOIN Clause"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:35Z",
+        "subject": "MySQL",
+        "title": "MySQL Joins"
+    },
+    {
+        "url": "https://www.w3schools.com/mysql/mysql_join_inner.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "mysql_mysql_join_inner",
+        "code_examples": [
+            {
+                "code": "SELECT table1.column1, table1.column2, ..., table2.column1, ...\n\nFROM table1\n\nINNER JOIN table2\n ON table1.condition_column = table2.condition_column;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "SELECT \n Products.ProductID, Products.ProductName, Categories.CategoryName\nFROM Products\nINNER JOIN \n Categories ON Products.CategoryID = Categories.CategoryID;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MySQL HOME\nMySQL Intro\nMySQL RDBMS",
+                "heading": "MySQL Tutorial"
+            },
+            {
+                "content": "MySQL SQL\nMySQL SELECT\nMySQL SELECT DISTINCT\nMySQL WHERE\nMySQL ORDER BY\nMySQL AND\nMySQL OR\nMySQL NOT\nMySQL INSERT INTO\nMySQL NULL Values\nMySQL UPDATE\nMySQL DELETE\nMySQL LIMIT\nMySQL Aggregate Functions\nMySQL MIN()\nMySQL MAX()\nMySQL COUNT()\nMySQL SUM()\nMySQL AVG()\nMySQL LIKE\nMySQL Wildcards\nMySQL IN\nMySQL BETWEEN\nMySQL Aliases\nMySQL Joins\nMySQL INNER JOIN\nMySQL LEFT JOIN\nMySQL RIGHT JOIN\nMySQL CROSS JOIN\nMySQL Self Join\nMySQL UNION\nMySQL UNION ALL\nMySQL GROUP BY\nMySQL HAVING\nMySQL EXISTS\nMySQL ANY\nMySQL ALL\nMySQL INSERT SELECT\nMySQL CASE\nMySQL Null Functions\nMySQL Stored Procedures\nMySQL Comments\nMySQL Operators",
+                "heading": "MySQL SQL"
+            },
+            {
+                "content": "MySQL Install (Windows)\nMySQL Install (Linux)-->\nMySQL Create DB\nMySQL Drop DB\nMySQL Create Table\nMySQL Drop Table\nMySQL Alter Table\nMySQL Constraints\nMySQL Not Null\nMySQL Unique\nMySQL Primary Key\nMySQL Foreign Key\nMySQL Check\nMySQL Default\nMySQL Create Index\nMySQL Auto Increment\nMySQL Dates\nMySQL Views\nMySQL Injection\nMySQL Prepared Statements",
+                "heading": "MySQL Database"
+            },
+            {
+                "content": "MySQL Certificate",
+                "heading": "MySQL Cert"
+            },
+            {
+                "content": "MySQL Data Types\nMySQL Functions\n\n String Functions\n ASCII\n CHAR_LENGTH\n CHARACTER_LENGTH\n CONCAT\n CONCAT_WS\n FIELD\n FIND_IN_SET\n FORMAT\n INSERT\n INSTR\n LCASE\n LEFT\n LENGTH\n LOCATE\n LOWER\n LPAD\n LTRIM\n MID\n POSITION\n REPEAT\n REPLACE\n REVERSE\n RIGHT\n RPAD\n RTRIM\n SPACE\n STRCMP\n SUBSTR\n SUBSTRING\n SUBSTRING_INDEX\n TRIM\n UCASE\n UPPER\n\n Numeric Functions\n ABS\n ACOS\n ASIN\n ATAN\n ATAN2\n AVG\n CEIL\n CEILING\n COS\n COT\n COUNT\n DEGREES\n DIV\n EXP\n FLOOR\n GREATEST\n LEAST\n LN\n LOG\n LOG10\n LOG2\n MAX\n MIN\n MOD\n PI\n POW\n POWER\n RADIANS\n RAND\n ROUND\n SIGN\n SIN\n SQRT\n SUM\n TAN\n TRUNCATE\n\n Date Functions\n ADDDATE\n ADDTIME\n CURDATE\n CURRENT_DATE\n CURRENT_TIME\n CURRENT_TIMESTAMP\n CURTIME\n DATE\n DATEDIFF\n DATE_ADD\n DATE_FORMAT\n DATE_SUB\n DAY\n DAYNAME\n DAYOFMONTH\n DAYOFWEEK\n DAYOFYEAR\n EXTRACT\n FROM_DAYS\n HOUR\n LAST_DAY\n LOCALTIME\n LOCALTIMESTAMP\n MAKEDATE\n MAKETIME\n MICROSECOND\n MINUTE\n MONTH\n MONTHNAME\n NOW\n PERIOD_ADD\n PERIOD_DIFF\n QUARTER\n SECOND\n SEC_TO_TIME\n STR_TO_DATE\n SUBDATE\n SUBTIME\n SYSDATE\n TIME\n TIME_FORMAT\n TIME_TO_SEC\n TIMEDIFF\n TIMESTAMP\n TO_DAYS\n WEEK\n WEEKDAY\n WEEKOFYEAR\n YEAR\n YEARWEEK\n\n Advanced Functions\n BIN\n BINARY\n CASE\n CAST\n COALESCE\n CONNECTION_ID\n CONV\n CONVERT\n CURRENT_USER\n DATABASE\n IF\n IFNULL\n ISNULL\n LAST_INSERT_ID\n NULLIF\n SESSION_USER\n SYSTEM_USER\n USER\n VERSION",
+                "heading": "MySQL References"
+            },
+            {
+                "content": "MySQL Examples\nMySQL Editor\nMySQL Quiz\nMySQL Exercises\nMySQL Syllabus\nMySQL Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\nMySQL INNER JOIN\n\n❮ Previous\nNext ❯",
+                "heading": "MySQL Examples"
+            },
+            {
+                "content": "The INNER JOIN clause returns only rows that have matching values in both tables.\n\nINNER JOIN Syntax\n\nSELECT table1.column1, table1.column2, ..., table2.column1, ...\n\nFROM table1\n\nINNER JOIN table2\n ON table1.condition_column = table2.condition_column;\n\nNote: The syntax combines two tables based on a related column, \nand the ON keyword is used to specify the matching condition.",
+                "heading": "MySQL INNER JOIN"
+            },
+            {
+                "content": "Look at a product in the \"Products\" table:\n\nProductID\nProductName\nCategoryID\nPrice\n\n3\nAniseed Syrup\n2\n10.00\n\nAnd look at a row in the \"Categories\" table:\n\nCategoryID\nCategoryName\nDescription\n\n2\nCondiments\nSweet and savory sauces, relishes, spreads, and seasonings\n\nHere we see that the related column between the two tables above, is the \"CategoryID\" column.\n\nNow we create an INNER JOIN on the \"Products\" table and the \"Categories\" table, via the CategoryID field:\n\nExample\n\n SELECT \n Products.ProductID, Products.ProductName, Categories.CategoryName\nFROM Products\nINNER JOIN \n Categories ON Products.CategoryID = Categories.CategoryID;\n\n Try it Yourself »\n\nNote: INNER JOIN returns only rows with a match in both tables.\nThis means that if there is a product with no CategoryID, or with a CategoryID not present in the \n\"Categories\" table, that row will not be returned in the result.",
+                "heading": "MySQL INNER JOIN Example"
+            },
+            {
+                "content": "You can join more than two tables by adding multiple INNER JOIN clauses in your query.\n\nThe following SQL selects all orders with customer and shipper \ninformation:\n\nExample\n\n SELECT Orders.OrderID, Customers.CustomerName, Shippers.ShipperName\nFROM \n Orders\nINNER JOIN Customers ON Orders.CustomerID = Customers.CustomerID\n\n INNER JOIN Shippers ON Orders.ShipperID = Shippers.ShipperID;\n\n Try it Yourself »\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "JOIN Multiple Tables"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:35Z",
+        "subject": "MySQL",
+        "title": "MySQL INNER JOIN"
+    },
+    {
+        "url": "https://www.w3schools.com/mysql/mysql_join_left.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "mysql_mysql_join_left",
+        "code_examples": [
+            {
+                "code": "SELECT table1.column1, table1.column2, ..., table2.column1, ...\n\nFROM table1\n\n LEFT JOIN table2\n ON table1.condition_column = table2.condition_column;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "SELECT Customers.CustomerName, Orders.OrderID\n\n FROM Customers\n\n LEFT JOIN Orders\n ON Customers.CustomerID = Orders.CustomerID\n\n ORDER BY Customers.CustomerName;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MySQL HOME\nMySQL Intro\nMySQL RDBMS",
+                "heading": "MySQL Tutorial"
+            },
+            {
+                "content": "MySQL SQL\nMySQL SELECT\nMySQL SELECT DISTINCT\nMySQL WHERE\nMySQL ORDER BY\nMySQL AND\nMySQL OR\nMySQL NOT\nMySQL INSERT INTO\nMySQL NULL Values\nMySQL UPDATE\nMySQL DELETE\nMySQL LIMIT\nMySQL Aggregate Functions\nMySQL MIN()\nMySQL MAX()\nMySQL COUNT()\nMySQL SUM()\nMySQL AVG()\nMySQL LIKE\nMySQL Wildcards\nMySQL IN\nMySQL BETWEEN\nMySQL Aliases\nMySQL Joins\nMySQL INNER JOIN\nMySQL LEFT JOIN\nMySQL RIGHT JOIN\nMySQL CROSS JOIN\nMySQL Self Join\nMySQL UNION\nMySQL UNION ALL\nMySQL GROUP BY\nMySQL HAVING\nMySQL EXISTS\nMySQL ANY\nMySQL ALL\nMySQL INSERT SELECT\nMySQL CASE\nMySQL Null Functions\nMySQL Stored Procedures\nMySQL Comments\nMySQL Operators",
+                "heading": "MySQL SQL"
+            },
+            {
+                "content": "MySQL Install (Windows)\nMySQL Install (Linux)-->\nMySQL Create DB\nMySQL Drop DB\nMySQL Create Table\nMySQL Drop Table\nMySQL Alter Table\nMySQL Constraints\nMySQL Not Null\nMySQL Unique\nMySQL Primary Key\nMySQL Foreign Key\nMySQL Check\nMySQL Default\nMySQL Create Index\nMySQL Auto Increment\nMySQL Dates\nMySQL Views\nMySQL Injection\nMySQL Prepared Statements",
+                "heading": "MySQL Database"
+            },
+            {
+                "content": "MySQL Certificate",
+                "heading": "MySQL Cert"
+            },
+            {
+                "content": "MySQL Data Types\nMySQL Functions\n\n String Functions\n ASCII\n CHAR_LENGTH\n CHARACTER_LENGTH\n CONCAT\n CONCAT_WS\n FIELD\n FIND_IN_SET\n FORMAT\n INSERT\n INSTR\n LCASE\n LEFT\n LENGTH\n LOCATE\n LOWER\n LPAD\n LTRIM\n MID\n POSITION\n REPEAT\n REPLACE\n REVERSE\n RIGHT\n RPAD\n RTRIM\n SPACE\n STRCMP\n SUBSTR\n SUBSTRING\n SUBSTRING_INDEX\n TRIM\n UCASE\n UPPER\n\n Numeric Functions\n ABS\n ACOS\n ASIN\n ATAN\n ATAN2\n AVG\n CEIL\n CEILING\n COS\n COT\n COUNT\n DEGREES\n DIV\n EXP\n FLOOR\n GREATEST\n LEAST\n LN\n LOG\n LOG10\n LOG2\n MAX\n MIN\n MOD\n PI\n POW\n POWER\n RADIANS\n RAND\n ROUND\n SIGN\n SIN\n SQRT\n SUM\n TAN\n TRUNCATE\n\n Date Functions\n ADDDATE\n ADDTIME\n CURDATE\n CURRENT_DATE\n CURRENT_TIME\n CURRENT_TIMESTAMP\n CURTIME\n DATE\n DATEDIFF\n DATE_ADD\n DATE_FORMAT\n DATE_SUB\n DAY\n DAYNAME\n DAYOFMONTH\n DAYOFWEEK\n DAYOFYEAR\n EXTRACT\n FROM_DAYS\n HOUR\n LAST_DAY\n LOCALTIME\n LOCALTIMESTAMP\n MAKEDATE\n MAKETIME\n MICROSECOND\n MINUTE\n MONTH\n MONTHNAME\n NOW\n PERIOD_ADD\n PERIOD_DIFF\n QUARTER\n SECOND\n SEC_TO_TIME\n STR_TO_DATE\n SUBDATE\n SUBTIME\n SYSDATE\n TIME\n TIME_FORMAT\n TIME_TO_SEC\n TIMEDIFF\n TIMESTAMP\n TO_DAYS\n WEEK\n WEEKDAY\n WEEKOFYEAR\n YEAR\n YEARWEEK\n\n Advanced Functions\n BIN\n BINARY\n CASE\n CAST\n COALESCE\n CONNECTION_ID\n CONV\n CONVERT\n CURRENT_USER\n DATABASE\n IF\n IFNULL\n ISNULL\n LAST_INSERT_ID\n NULLIF\n SESSION_USER\n SYSTEM_USER\n USER\n VERSION",
+                "heading": "MySQL References"
+            },
+            {
+                "content": "MySQL Examples\nMySQL Editor\nMySQL Quiz\nMySQL Exercises\nMySQL Syllabus\nMySQL Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\nMySQL LEFT JOIN\n\n❮ Previous\nNext ❯",
+                "heading": "MySQL Examples"
+            },
+            {
+                "content": "The LEFT JOIN clause returns all rows from the left table \n(table1), and only the matched rows from the right table (table2).\n\nIf there is no match in the right table, the result for the columns from the right table will be NULL.\n\nLEFT JOIN Syntax\n\nSELECT table1.column1, table1.column2, ..., table2.column1, ...\n\nFROM table1\n\n LEFT JOIN table2\n ON table1.condition_column = table2.condition_column;\n\nNote: The syntax combines two tables based on a related column, \nand the ON keyword is used to specify the matching condition.",
+                "heading": "MySQL LEFT JOIN"
+            },
+            {
+                "content": "Below is a selection from the \"Customers\" table:\n\n CustomerID\n CustomerName\n ContactName\n Address\n City\n PostalCode\n Country\n\n 1\n\n Alfreds Futterkiste\n Maria Anders\n Obere Str. 57\n Berlin\n 12209\n Germany\n\n 2\n Ana Trujillo Emparedados y helados\n Ana Trujillo\n Avda. de la Constitución 2222\n México D.F.\n 05021\n Mexico\n\n 3\n Antonio Moreno Taquería\n Antonio Moreno\n Mataderos 2312\n México D.F.\n 05023\n Mexico\n\nAnd a selection from the \"Orders\" table:\n\n OrderID\n CustomerID\n EmployeeID\n OrderDate\n ShipperID\n\n 10308\n 2\n 7\n 1996-09-18\n 3\n\n 10309\n 37\n 3\n 1996-09-19\n 1\n\n 10310\n 77\n 8\n 1996-09-20\n 2\n\nHere we see that the related column between the two tables above, is the \"CustomerID\" column.",
+                "heading": "Demo Database"
+            },
+            {
+                "content": "The following SQL will select all customers, and any orders they might have:\n\nExample\n\n SELECT Customers.CustomerName, Orders.OrderID\n\n FROM Customers\n\n LEFT JOIN Orders\n ON Customers.CustomerID = Orders.CustomerID\n\n ORDER BY Customers.CustomerName;\n\nTry it Yourself »\n\nNote: The LEFT JOIN keyword returns all records from the \nleft table (Customers), even if there are no matches in the right table (Orders).\n\nTip: To find only the customers who have not placed any order, add a WHERE clause to filter for NULL values on the right table:\n\nExample\n\nSELECT Customers.CustomerName, Orders.OrderID\n\nFROM Customers\n\nLEFT JOIN Orders\n\nON Customers.CustomerID = Orders.CustomerID\n\nWHERE Orders.CustomerID IS NULL;\n\nTry it Yourself »\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "MySQL LEFT JOIN Examples"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:35Z",
+        "subject": "MySQL",
+        "title": "MySQL LEFT JOIN"
+    },
+    {
+        "url": "https://www.w3schools.com/mysql/mysql_join_right.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "mysql_mysql_join_right",
+        "code_examples": [
+            {
+                "code": "SELECT table1.column1, table1.column2, ..., table2.column1, ...\n\nFROM table1\n\n RIGHT JOIN table2\n ON table1.condition_column = table2.condition_column;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "SELECT Orders.OrderID, Employees.LastName, Employees.FirstName\nFROM Orders\nRIGHT JOIN Employees ON Orders.EmployeeID = Employees.EmployeeID\n\n ORDER BY Orders.OrderID;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MySQL HOME\nMySQL Intro\nMySQL RDBMS",
+                "heading": "MySQL Tutorial"
+            },
+            {
+                "content": "MySQL SQL\nMySQL SELECT\nMySQL SELECT DISTINCT\nMySQL WHERE\nMySQL ORDER BY\nMySQL AND\nMySQL OR\nMySQL NOT\nMySQL INSERT INTO\nMySQL NULL Values\nMySQL UPDATE\nMySQL DELETE\nMySQL LIMIT\nMySQL Aggregate Functions\nMySQL MIN()\nMySQL MAX()\nMySQL COUNT()\nMySQL SUM()\nMySQL AVG()\nMySQL LIKE\nMySQL Wildcards\nMySQL IN\nMySQL BETWEEN\nMySQL Aliases\nMySQL Joins\nMySQL INNER JOIN\nMySQL LEFT JOIN\nMySQL RIGHT JOIN\nMySQL CROSS JOIN\nMySQL Self Join\nMySQL UNION\nMySQL UNION ALL\nMySQL GROUP BY\nMySQL HAVING\nMySQL EXISTS\nMySQL ANY\nMySQL ALL\nMySQL INSERT SELECT\nMySQL CASE\nMySQL Null Functions\nMySQL Stored Procedures\nMySQL Comments\nMySQL Operators",
+                "heading": "MySQL SQL"
+            },
+            {
+                "content": "MySQL Install (Windows)\nMySQL Install (Linux)-->\nMySQL Create DB\nMySQL Drop DB\nMySQL Create Table\nMySQL Drop Table\nMySQL Alter Table\nMySQL Constraints\nMySQL Not Null\nMySQL Unique\nMySQL Primary Key\nMySQL Foreign Key\nMySQL Check\nMySQL Default\nMySQL Create Index\nMySQL Auto Increment\nMySQL Dates\nMySQL Views\nMySQL Injection\nMySQL Prepared Statements",
+                "heading": "MySQL Database"
+            },
+            {
+                "content": "MySQL Certificate",
+                "heading": "MySQL Cert"
+            },
+            {
+                "content": "MySQL Data Types\nMySQL Functions\n\n String Functions\n ASCII\n CHAR_LENGTH\n CHARACTER_LENGTH\n CONCAT\n CONCAT_WS\n FIELD\n FIND_IN_SET\n FORMAT\n INSERT\n INSTR\n LCASE\n LEFT\n LENGTH\n LOCATE\n LOWER\n LPAD\n LTRIM\n MID\n POSITION\n REPEAT\n REPLACE\n REVERSE\n RIGHT\n RPAD\n RTRIM\n SPACE\n STRCMP\n SUBSTR\n SUBSTRING\n SUBSTRING_INDEX\n TRIM\n UCASE\n UPPER\n\n Numeric Functions\n ABS\n ACOS\n ASIN\n ATAN\n ATAN2\n AVG\n CEIL\n CEILING\n COS\n COT\n COUNT\n DEGREES\n DIV\n EXP\n FLOOR\n GREATEST\n LEAST\n LN\n LOG\n LOG10\n LOG2\n MAX\n MIN\n MOD\n PI\n POW\n POWER\n RADIANS\n RAND\n ROUND\n SIGN\n SIN\n SQRT\n SUM\n TAN\n TRUNCATE\n\n Date Functions\n ADDDATE\n ADDTIME\n CURDATE\n CURRENT_DATE\n CURRENT_TIME\n CURRENT_TIMESTAMP\n CURTIME\n DATE\n DATEDIFF\n DATE_ADD\n DATE_FORMAT\n DATE_SUB\n DAY\n DAYNAME\n DAYOFMONTH\n DAYOFWEEK\n DAYOFYEAR\n EXTRACT\n FROM_DAYS\n HOUR\n LAST_DAY\n LOCALTIME\n LOCALTIMESTAMP\n MAKEDATE\n MAKETIME\n MICROSECOND\n MINUTE\n MONTH\n MONTHNAME\n NOW\n PERIOD_ADD\n PERIOD_DIFF\n QUARTER\n SECOND\n SEC_TO_TIME\n STR_TO_DATE\n SUBDATE\n SUBTIME\n SYSDATE\n TIME\n TIME_FORMAT\n TIME_TO_SEC\n TIMEDIFF\n TIMESTAMP\n TO_DAYS\n WEEK\n WEEKDAY\n WEEKOFYEAR\n YEAR\n YEARWEEK\n\n Advanced Functions\n BIN\n BINARY\n CASE\n CAST\n COALESCE\n CONNECTION_ID\n CONV\n CONVERT\n CURRENT_USER\n DATABASE\n IF\n IFNULL\n ISNULL\n LAST_INSERT_ID\n NULLIF\n SESSION_USER\n SYSTEM_USER\n USER\n VERSION",
+                "heading": "MySQL References"
+            },
+            {
+                "content": "MySQL Examples\nMySQL Editor\nMySQL Quiz\nMySQL Exercises\nMySQL Syllabus\nMySQL Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\nMySQL RIGHT JOIN\n\n❮ Previous\nNext ❯",
+                "heading": "MySQL Examples"
+            },
+            {
+                "content": "The RIGHT JOIN clause returns all rows from the right table (table2), and only the matched rows from the left table (table1).\n\nIf there is no match in the left table, the result for the columns from the left table will be NULL.\n\nRIGHT JOIN Syntax\n\nSELECT table1.column1, table1.column2, ..., table2.column1, ...\n\nFROM table1\n\n RIGHT JOIN table2\n ON table1.condition_column = table2.condition_column;\n\nNote: The syntax combines two tables based on a related column, \nand the ON keyword is used to specify the matching condition.",
+                "heading": "MySQL RIGHT JOIN"
+            },
+            {
+                "content": "In this tutorial we will use the well-known Northwind sample database.\n\nBelow is a selection from the \"Orders\" table:\n\n OrderID\n CustomerID\n EmployeeID\n OrderDate\n ShipperID\n\n 10308\n 2\n 7\n 1996-09-18\n 3\n\n 10309\n 37\n 3\n 1996-09-19\n 1\n\n 10310\n 77\n 8\n 1996-09-20\n 2\n\nAnd a selection from the \"Employees\" table:\n\n EmployeeID\n LastName\n FirstName\n BirthDate\n Photo\n\n 1\n Davolio\n Nancy\n 1968-12-08\n EmpID1.pic\n\n 2\n Fuller\n Andrew\n 1952-02-19\n EmpID2.pic\n\n 3\n Leverling\n Janet\n 1963-08-30\n EmpID3.pic\n\nHere we see that the related column between the two tables above, is the \"EmployeeID\" column.",
+                "heading": "Demo Database"
+            },
+            {
+                "content": "The following SQL will return all employees, and any orders they \nmight have placed:\n\nExample\n\n SELECT Orders.OrderID, Employees.LastName, Employees.FirstName\nFROM Orders\nRIGHT JOIN Employees ON Orders.EmployeeID = Employees.EmployeeID\n\n ORDER BY Orders.OrderID;\n\nTry it Yourself »\n\nNote: The RIGHT JOIN keyword returns all records from the \nright table (Employees), even if there are no matches in the left table \n(Orders).\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "MySQL RIGHT JOIN Example"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:36Z",
+        "subject": "MySQL",
+        "title": "MySQL RIGHT JOIN"
+    },
+    {
+        "url": "https://www.w3schools.com/mysql/mysql_join_cross.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "mysql_mysql_join_cross",
+        "code_examples": [
+            {
+                "code": "SELECT column_name(s)\n\n FROM table1\n\n CROSS JOIN table2;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "SELECT Customers.CustomerName, Orders.OrderID\n\nFROM Customers\n\nCROSS JOIN Orders;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MySQL HOME\nMySQL Intro\nMySQL RDBMS",
+                "heading": "MySQL Tutorial"
+            },
+            {
+                "content": "MySQL SQL\nMySQL SELECT\nMySQL SELECT DISTINCT\nMySQL WHERE\nMySQL ORDER BY\nMySQL AND\nMySQL OR\nMySQL NOT\nMySQL INSERT INTO\nMySQL NULL Values\nMySQL UPDATE\nMySQL DELETE\nMySQL LIMIT\nMySQL Aggregate Functions\nMySQL MIN()\nMySQL MAX()\nMySQL COUNT()\nMySQL SUM()\nMySQL AVG()\nMySQL LIKE\nMySQL Wildcards\nMySQL IN\nMySQL BETWEEN\nMySQL Aliases\nMySQL Joins\nMySQL INNER JOIN\nMySQL LEFT JOIN\nMySQL RIGHT JOIN\nMySQL CROSS JOIN\nMySQL Self Join\nMySQL UNION\nMySQL UNION ALL\nMySQL GROUP BY\nMySQL HAVING\nMySQL EXISTS\nMySQL ANY\nMySQL ALL\nMySQL INSERT SELECT\nMySQL CASE\nMySQL Null Functions\nMySQL Stored Procedures\nMySQL Comments\nMySQL Operators",
+                "heading": "MySQL SQL"
+            },
+            {
+                "content": "MySQL Install (Windows)\nMySQL Install (Linux)-->\nMySQL Create DB\nMySQL Drop DB\nMySQL Create Table\nMySQL Drop Table\nMySQL Alter Table\nMySQL Constraints\nMySQL Not Null\nMySQL Unique\nMySQL Primary Key\nMySQL Foreign Key\nMySQL Check\nMySQL Default\nMySQL Create Index\nMySQL Auto Increment\nMySQL Dates\nMySQL Views\nMySQL Injection\nMySQL Prepared Statements",
+                "heading": "MySQL Database"
+            },
+            {
+                "content": "MySQL Certificate",
+                "heading": "MySQL Cert"
+            },
+            {
+                "content": "MySQL Data Types\nMySQL Functions\n\n String Functions\n ASCII\n CHAR_LENGTH\n CHARACTER_LENGTH\n CONCAT\n CONCAT_WS\n FIELD\n FIND_IN_SET\n FORMAT\n INSERT\n INSTR\n LCASE\n LEFT\n LENGTH\n LOCATE\n LOWER\n LPAD\n LTRIM\n MID\n POSITION\n REPEAT\n REPLACE\n REVERSE\n RIGHT\n RPAD\n RTRIM\n SPACE\n STRCMP\n SUBSTR\n SUBSTRING\n SUBSTRING_INDEX\n TRIM\n UCASE\n UPPER\n\n Numeric Functions\n ABS\n ACOS\n ASIN\n ATAN\n ATAN2\n AVG\n CEIL\n CEILING\n COS\n COT\n COUNT\n DEGREES\n DIV\n EXP\n FLOOR\n GREATEST\n LEAST\n LN\n LOG\n LOG10\n LOG2\n MAX\n MIN\n MOD\n PI\n POW\n POWER\n RADIANS\n RAND\n ROUND\n SIGN\n SIN\n SQRT\n SUM\n TAN\n TRUNCATE\n\n Date Functions\n ADDDATE\n ADDTIME\n CURDATE\n CURRENT_DATE\n CURRENT_TIME\n CURRENT_TIMESTAMP\n CURTIME\n DATE\n DATEDIFF\n DATE_ADD\n DATE_FORMAT\n DATE_SUB\n DAY\n DAYNAME\n DAYOFMONTH\n DAYOFWEEK\n DAYOFYEAR\n EXTRACT\n FROM_DAYS\n HOUR\n LAST_DAY\n LOCALTIME\n LOCALTIMESTAMP\n MAKEDATE\n MAKETIME\n MICROSECOND\n MINUTE\n MONTH\n MONTHNAME\n NOW\n PERIOD_ADD\n PERIOD_DIFF\n QUARTER\n SECOND\n SEC_TO_TIME\n STR_TO_DATE\n SUBDATE\n SUBTIME\n SYSDATE\n TIME\n TIME_FORMAT\n TIME_TO_SEC\n TIMEDIFF\n TIMESTAMP\n TO_DAYS\n WEEK\n WEEKDAY\n WEEKOFYEAR\n YEAR\n YEARWEEK\n\n Advanced Functions\n BIN\n BINARY\n CASE\n CAST\n COALESCE\n CONNECTION_ID\n CONV\n CONVERT\n CURRENT_USER\n DATABASE\n IF\n IFNULL\n ISNULL\n LAST_INSERT_ID\n NULLIF\n SESSION_USER\n SYSTEM_USER\n USER\n VERSION",
+                "heading": "MySQL References"
+            },
+            {
+                "content": "MySQL Examples\nMySQL Editor\nMySQL Quiz\nMySQL Exercises\nMySQL Syllabus\nMySQL Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\nMySQL CROSS JOIN\n\n❮ Previous\n Next ❯",
+                "heading": "MySQL Examples"
+            },
+            {
+                "content": "The CROSS JOIN clause returns the Cartesian \nproduct of two or more \n tables (combines every row from the first table with every row from the second \ntable).\n\nNote: So, if the first table has 100 rows, and the second \ntable has 500 rows, the result set will be 100x500 rows. Be aware that\nCROSS JOIN can potentially return very large \nresult-sets!\n\nCROSS JOIN Syntax\n\n SELECT column_name(s)\n\n FROM table1\n\n CROSS JOIN table2;",
+                "heading": "MySQL CROSS JOIN"
+            },
+            {
+                "content": "Below is a selection from the \"Customers\" table:\n\n CustomerID\n CustomerName\n ContactName\n Address\n City\n PostalCode\n Country\n\n 1\n\n Alfreds Futterkiste\n Maria Anders\n Obere Str. 57\n Berlin\n 12209\n Germany\n\n 2\n Ana Trujillo Emparedados y helados\n Ana Trujillo\n Avda. de la Constitución 2222\n México D.F.\n 05021\n Mexico\n\n 3\n Antonio Moreno Taquería\n Antonio Moreno\n Mataderos 2312\n México D.F.\n 05023\n Mexico\n\nAnd a selection from the \"Orders\" table:\n\n OrderID\n CustomerID\n EmployeeID\n OrderDate\n ShipperID\n\n 10308\n 2\n 7\n 1996-09-18\n 3\n\n 10309\n 37\n 3\n 1996-09-19\n 1\n\n 10310\n 77\n 8\n 1996-09-20\n 2",
+                "heading": "Demo Database"
+            },
+            {
+                "content": "The following SQL returns the Cartesian \nproduct of \"Customers\" and \"Orders\":\n\nExample\n\nSELECT Customers.CustomerName, Orders.OrderID\n\nFROM Customers\n\nCROSS JOIN Orders;\n\nTry it Yourself »\n\nIf you add a WHERE clause (if table1 and \ntable2 has a relationship), the CROSS JOIN will \nproduce the same result as the INNER JOIN clause:\n\nExample\n\nSELECT Customers.CustomerName, Orders.OrderID\n\nFROM Customers\n\nCROSS JOIN Orders\nWHERE Customers.CustomerID=Orders.CustomerID;\n\nTry it Yourself »\n\n❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "MySQL CROSS JOIN Examples"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:36Z",
+        "subject": "MySQL",
+        "title": "MySQL CROSS JOIN"
+    },
+    {
+        "url": "https://www.w3schools.com/mysql/mysql_join_self.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "mysql_mysql_join_self",
+        "code_examples": [
+            {
+                "code": "SELECT column_name(s)\n\nFROM table1 T1, table1 T2\n\n WHERE condition;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "SELECT A.CustomerName AS CustomerName1, B.CustomerName AS CustomerName2, \n A.City\nFROM Customers A, Customers B\nWHERE A.CustomerID <> B.CustomerID\n\n AND A.City = B.City \nORDER BY A.City;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MySQL HOME\nMySQL Intro\nMySQL RDBMS",
+                "heading": "MySQL Tutorial"
+            },
+            {
+                "content": "MySQL SQL\nMySQL SELECT\nMySQL SELECT DISTINCT\nMySQL WHERE\nMySQL ORDER BY\nMySQL AND\nMySQL OR\nMySQL NOT\nMySQL INSERT INTO\nMySQL NULL Values\nMySQL UPDATE\nMySQL DELETE\nMySQL LIMIT\nMySQL Aggregate Functions\nMySQL MIN()\nMySQL MAX()\nMySQL COUNT()\nMySQL SUM()\nMySQL AVG()\nMySQL LIKE\nMySQL Wildcards\nMySQL IN\nMySQL BETWEEN\nMySQL Aliases\nMySQL Joins\nMySQL INNER JOIN\nMySQL LEFT JOIN\nMySQL RIGHT JOIN\nMySQL CROSS JOIN\nMySQL Self Join\nMySQL UNION\nMySQL UNION ALL\nMySQL GROUP BY\nMySQL HAVING\nMySQL EXISTS\nMySQL ANY\nMySQL ALL\nMySQL INSERT SELECT\nMySQL CASE\nMySQL Null Functions\nMySQL Stored Procedures\nMySQL Comments\nMySQL Operators",
+                "heading": "MySQL SQL"
+            },
+            {
+                "content": "MySQL Install (Windows)\nMySQL Install (Linux)-->\nMySQL Create DB\nMySQL Drop DB\nMySQL Create Table\nMySQL Drop Table\nMySQL Alter Table\nMySQL Constraints\nMySQL Not Null\nMySQL Unique\nMySQL Primary Key\nMySQL Foreign Key\nMySQL Check\nMySQL Default\nMySQL Create Index\nMySQL Auto Increment\nMySQL Dates\nMySQL Views\nMySQL Injection\nMySQL Prepared Statements",
+                "heading": "MySQL Database"
+            },
+            {
+                "content": "MySQL Certificate",
+                "heading": "MySQL Cert"
+            },
+            {
+                "content": "MySQL Data Types\nMySQL Functions\n\n String Functions\n ASCII\n CHAR_LENGTH\n CHARACTER_LENGTH\n CONCAT\n CONCAT_WS\n FIELD\n FIND_IN_SET\n FORMAT\n INSERT\n INSTR\n LCASE\n LEFT\n LENGTH\n LOCATE\n LOWER\n LPAD\n LTRIM\n MID\n POSITION\n REPEAT\n REPLACE\n REVERSE\n RIGHT\n RPAD\n RTRIM\n SPACE\n STRCMP\n SUBSTR\n SUBSTRING\n SUBSTRING_INDEX\n TRIM\n UCASE\n UPPER\n\n Numeric Functions\n ABS\n ACOS\n ASIN\n ATAN\n ATAN2\n AVG\n CEIL\n CEILING\n COS\n COT\n COUNT\n DEGREES\n DIV\n EXP\n FLOOR\n GREATEST\n LEAST\n LN\n LOG\n LOG10\n LOG2\n MAX\n MIN\n MOD\n PI\n POW\n POWER\n RADIANS\n RAND\n ROUND\n SIGN\n SIN\n SQRT\n SUM\n TAN\n TRUNCATE\n\n Date Functions\n ADDDATE\n ADDTIME\n CURDATE\n CURRENT_DATE\n CURRENT_TIME\n CURRENT_TIMESTAMP\n CURTIME\n DATE\n DATEDIFF\n DATE_ADD\n DATE_FORMAT\n DATE_SUB\n DAY\n DAYNAME\n DAYOFMONTH\n DAYOFWEEK\n DAYOFYEAR\n EXTRACT\n FROM_DAYS\n HOUR\n LAST_DAY\n LOCALTIME\n LOCALTIMESTAMP\n MAKEDATE\n MAKETIME\n MICROSECOND\n MINUTE\n MONTH\n MONTHNAME\n NOW\n PERIOD_ADD\n PERIOD_DIFF\n QUARTER\n SECOND\n SEC_TO_TIME\n STR_TO_DATE\n SUBDATE\n SUBTIME\n SYSDATE\n TIME\n TIME_FORMAT\n TIME_TO_SEC\n TIMEDIFF\n TIMESTAMP\n TO_DAYS\n WEEK\n WEEKDAY\n WEEKOFYEAR\n YEAR\n YEARWEEK\n\n Advanced Functions\n BIN\n BINARY\n CASE\n CAST\n COALESCE\n CONNECTION_ID\n CONV\n CONVERT\n CURRENT_USER\n DATABASE\n IF\n IFNULL\n ISNULL\n LAST_INSERT_ID\n NULLIF\n SESSION_USER\n SYSTEM_USER\n USER\n VERSION",
+                "heading": "MySQL References"
+            },
+            {
+                "content": "MySQL Examples\nMySQL Editor\nMySQL Quiz\nMySQL Exercises\nMySQL Syllabus\nMySQL Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\nMySQL Self Join\n\n ❮ Previous\n Next ❯",
+                "heading": "MySQL Examples"
+            },
+            {
+                "content": "A self join is a regular join, but the table is joined with itself.\n\nSelf Join Syntax\n\nSELECT column_name(s)\n\nFROM table1 T1, table1 T2\n\n WHERE condition;\n\nT1 and T2 are different table aliases for the same table.",
+                "heading": "MySQL Self Join"
+            },
+            {
+                "content": "Below is a selection from the \"Customers\" table:\n\n CustomerID\n CustomerName\n ContactName\n Address\n City\n PostalCode\n Country\n\n 1\n\n Alfreds Futterkiste\n Maria Anders\n Obere Str. 57\n Berlin\n 12209\n Germany\n\n 2\n Ana Trujillo Emparedados y helados\n Ana Trujillo\n Avda. de la Constitución 2222\n México D.F.\n 05021\n Mexico\n\n 3\n Antonio Moreno Taquería\n Antonio Moreno\n Mataderos 2312\n México D.F.\n 05023\n Mexico",
+                "heading": "Demo Database"
+            },
+            {
+                "content": "The following SQL matches customers that are from the same city:\n\nExample\n\n SELECT A.CustomerName AS CustomerName1, B.CustomerName AS CustomerName2, \n A.City\nFROM Customers A, Customers B\nWHERE A.CustomerID <> B.CustomerID\n\n AND A.City = B.City \nORDER BY A.City;\n\nTry it Yourself »\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "MySQL Self Join Example"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:36Z",
+        "subject": "MySQL",
+        "title": "MySQL Self Join"
+    },
+    {
+        "url": "https://www.w3schools.com/mysql/mysql_union.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "mysql_mysql_union",
+        "code_examples": [
+            {
+                "code": "SELECT column_name(s) FROM table1\n\n UNION\n\n SELECT column_name(s) FROM table2;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "SELECT City FROM Customers\nUNION\nSELECT City FROM Suppliers\nORDER BY City;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MySQL HOME\nMySQL Intro\nMySQL RDBMS",
+                "heading": "MySQL Tutorial"
+            },
+            {
+                "content": "MySQL SQL\nMySQL SELECT\nMySQL SELECT DISTINCT\nMySQL WHERE\nMySQL ORDER BY\nMySQL AND\nMySQL OR\nMySQL NOT\nMySQL INSERT INTO\nMySQL NULL Values\nMySQL UPDATE\nMySQL DELETE\nMySQL LIMIT\nMySQL Aggregate Functions\nMySQL MIN()\nMySQL MAX()\nMySQL COUNT()\nMySQL SUM()\nMySQL AVG()\nMySQL LIKE\nMySQL Wildcards\nMySQL IN\nMySQL BETWEEN\nMySQL Aliases\nMySQL Joins\nMySQL INNER JOIN\nMySQL LEFT JOIN\nMySQL RIGHT JOIN\nMySQL CROSS JOIN\nMySQL Self Join\nMySQL UNION\nMySQL UNION ALL\nMySQL GROUP BY\nMySQL HAVING\nMySQL EXISTS\nMySQL ANY\nMySQL ALL\nMySQL INSERT SELECT\nMySQL CASE\nMySQL Null Functions\nMySQL Stored Procedures\nMySQL Comments\nMySQL Operators",
+                "heading": "MySQL SQL"
+            },
+            {
+                "content": "MySQL Install (Windows)\nMySQL Install (Linux)-->\nMySQL Create DB\nMySQL Drop DB\nMySQL Create Table\nMySQL Drop Table\nMySQL Alter Table\nMySQL Constraints\nMySQL Not Null\nMySQL Unique\nMySQL Primary Key\nMySQL Foreign Key\nMySQL Check\nMySQL Default\nMySQL Create Index\nMySQL Auto Increment\nMySQL Dates\nMySQL Views\nMySQL Injection\nMySQL Prepared Statements",
+                "heading": "MySQL Database"
+            },
+            {
+                "content": "MySQL Certificate",
+                "heading": "MySQL Cert"
+            },
+            {
+                "content": "MySQL Data Types\nMySQL Functions\n\n String Functions\n ASCII\n CHAR_LENGTH\n CHARACTER_LENGTH\n CONCAT\n CONCAT_WS\n FIELD\n FIND_IN_SET\n FORMAT\n INSERT\n INSTR\n LCASE\n LEFT\n LENGTH\n LOCATE\n LOWER\n LPAD\n LTRIM\n MID\n POSITION\n REPEAT\n REPLACE\n REVERSE\n RIGHT\n RPAD\n RTRIM\n SPACE\n STRCMP\n SUBSTR\n SUBSTRING\n SUBSTRING_INDEX\n TRIM\n UCASE\n UPPER\n\n Numeric Functions\n ABS\n ACOS\n ASIN\n ATAN\n ATAN2\n AVG\n CEIL\n CEILING\n COS\n COT\n COUNT\n DEGREES\n DIV\n EXP\n FLOOR\n GREATEST\n LEAST\n LN\n LOG\n LOG10\n LOG2\n MAX\n MIN\n MOD\n PI\n POW\n POWER\n RADIANS\n RAND\n ROUND\n SIGN\n SIN\n SQRT\n SUM\n TAN\n TRUNCATE\n\n Date Functions\n ADDDATE\n ADDTIME\n CURDATE\n CURRENT_DATE\n CURRENT_TIME\n CURRENT_TIMESTAMP\n CURTIME\n DATE\n DATEDIFF\n DATE_ADD\n DATE_FORMAT\n DATE_SUB\n DAY\n DAYNAME\n DAYOFMONTH\n DAYOFWEEK\n DAYOFYEAR\n EXTRACT\n FROM_DAYS\n HOUR\n LAST_DAY\n LOCALTIME\n LOCALTIMESTAMP\n MAKEDATE\n MAKETIME\n MICROSECOND\n MINUTE\n MONTH\n MONTHNAME\n NOW\n PERIOD_ADD\n PERIOD_DIFF\n QUARTER\n SECOND\n SEC_TO_TIME\n STR_TO_DATE\n SUBDATE\n SUBTIME\n SYSDATE\n TIME\n TIME_FORMAT\n TIME_TO_SEC\n TIMEDIFF\n TIMESTAMP\n TO_DAYS\n WEEK\n WEEKDAY\n WEEKOFYEAR\n YEAR\n YEARWEEK\n\n Advanced Functions\n BIN\n BINARY\n CASE\n CAST\n COALESCE\n CONNECTION_ID\n CONV\n CONVERT\n CURRENT_USER\n DATABASE\n IF\n IFNULL\n ISNULL\n LAST_INSERT_ID\n NULLIF\n SESSION_USER\n SYSTEM_USER\n USER\n VERSION",
+                "heading": "MySQL References"
+            },
+            {
+                "content": "MySQL Examples\nMySQL Editor\nMySQL Quiz\nMySQL Exercises\nMySQL Syllabus\nMySQL Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\nMySQL UNION Operator\n\n ❮ Previous\n Next ❯",
+                "heading": "MySQL Examples"
+            },
+            {
+                "content": "The UNION operator is used to combine the result-set of two or more \nSELECT \nstatements.\n\nThe UNION operator automatically removes \nduplicate rows from the result set.\n\nRequirements for UNION: \n\n Every SELECT statement within\n UNION must have the same number \nof columns\n\n The columns must also have similar data types\n\n The columns in \n every SELECT statement must also be in the same order\n\nUNION Syntax\n\n SELECT column_name(s) FROM table1\n\n UNION\n\n SELECT column_name(s) FROM table2;\n\nNote: The column names in the result-set are usually equal to \nthe column names in the first SELECT statement.",
+                "heading": "The MySQL UNION Operator"
+            },
+            {
+                "content": "Below is a selection from the \"Customers\" table:\n\n CustomerID\n CustomerName\n ContactName\n Address\n City\n PostalCode\n Country\n\n 1\n\n Alfreds Futterkiste\n Maria Anders\n Obere Str. 57\n Berlin\n 12209\n Germany\n\n 2\n Ana Trujillo Emparedados y helados\n Ana Trujillo\n Avda. de la Constitución 2222\n México D.F.\n 05021\n Mexico\n\n 3\n Antonio Moreno Taquería\n Antonio Moreno\n Mataderos 2312\n México D.F.\n 05023\n Mexico\n\nAnd a selection from the \"Suppliers\" table:\n\n SupplierID\n SupplierName\n ContactName\n Address\n City\n PostalCode\n Country\n\n 1\n Exotic Liquid\n Charlotte Cooper\n 49 Gilbert St.\n London\n EC1 4SD\n UK\n\n 2\n New Orleans Cajun Delights\n Shelley Burke\n P.O. Box 78934\n New Orleans\n 70117\n USA\n\n 3\n Grandma Kelly's Homestead\n Regina Murphy\n 707 Oxford Rd.\n Ann Arbor\n 48104\n USA",
+                "heading": "Demo Database"
+            },
+            {
+                "content": "The following SQL returns the cities \n(only distinct values) from both the \"Customers\" and the \"Suppliers\" table:\n\nExample\n\n SELECT City FROM Customers\nUNION\nSELECT City FROM Suppliers\nORDER BY City;\n\n Try it Yourself »\n\nNote: If some customers or suppliers have the same city, each city will only be \nlisted once, because UNION selects only distinct values. Use \nUNION ALL to also select \nduplicate values!",
+                "heading": "MySQL UNION Example"
+            },
+            {
+                "content": "Here we add a WHERE clause to only return the unique German cities from both the \"Customers\" and the \"Suppliers\" table:\n\nExample\n\n SELECT City, Country FROM Customers\nWHERE Country='Germany'\nUNION\n\n SELECT City, Country FROM Suppliers\nWHERE Country='Germany'\nORDER BY City;\n\n Try it Yourself »",
+                "heading": "MySQL UNION With WHERE"
+            },
+            {
+                "content": "The following SQL lists all customers and suppliers:\n\nExample\n\n SELECT 'Customer' AS Type, ContactName, City, Country\nFROM Customers\n\n UNION\nSELECT 'Supplier', ContactName, City, Country\nFROM Suppliers;\n\n Try it Yourself »\n\nNotice the \"AS Type\" above - it is an alias. SQL \nAliases are used to give a table or a column a temporary name.\nSo, here we have created a \ntemporary column named \"Type\", that list whether the contact person is a \n\"Customer\" or a \"Supplier\".\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Another UNION Example"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:36Z",
+        "subject": "MySQL",
+        "title": "MySQL UNION Operator"
+    },
+    {
+        "url": "https://www.w3schools.com/mysql/mysql_union_all.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "mysql_mysql_union_all",
+        "code_examples": [
+            {
+                "code": "SELECT column_name(s) FROM table1\n\n UNION ALL\n\n SELECT column_name(s) FROM table2;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "SELECT City FROM Customers\nUNION ALL\nSELECT City FROM Suppliers\n\n ORDER BY City;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MySQL HOME\nMySQL Intro\nMySQL RDBMS",
+                "heading": "MySQL Tutorial"
+            },
+            {
+                "content": "MySQL SQL\nMySQL SELECT\nMySQL SELECT DISTINCT\nMySQL WHERE\nMySQL ORDER BY\nMySQL AND\nMySQL OR\nMySQL NOT\nMySQL INSERT INTO\nMySQL NULL Values\nMySQL UPDATE\nMySQL DELETE\nMySQL LIMIT\nMySQL Aggregate Functions\nMySQL MIN()\nMySQL MAX()\nMySQL COUNT()\nMySQL SUM()\nMySQL AVG()\nMySQL LIKE\nMySQL Wildcards\nMySQL IN\nMySQL BETWEEN\nMySQL Aliases\nMySQL Joins\nMySQL INNER JOIN\nMySQL LEFT JOIN\nMySQL RIGHT JOIN\nMySQL CROSS JOIN\nMySQL Self Join\nMySQL UNION\nMySQL UNION ALL\nMySQL GROUP BY\nMySQL HAVING\nMySQL EXISTS\nMySQL ANY\nMySQL ALL\nMySQL INSERT SELECT\nMySQL CASE\nMySQL Null Functions\nMySQL Stored Procedures\nMySQL Comments\nMySQL Operators",
+                "heading": "MySQL SQL"
+            },
+            {
+                "content": "MySQL Install (Windows)\nMySQL Install (Linux)-->\nMySQL Create DB\nMySQL Drop DB\nMySQL Create Table\nMySQL Drop Table\nMySQL Alter Table\nMySQL Constraints\nMySQL Not Null\nMySQL Unique\nMySQL Primary Key\nMySQL Foreign Key\nMySQL Check\nMySQL Default\nMySQL Create Index\nMySQL Auto Increment\nMySQL Dates\nMySQL Views\nMySQL Injection\nMySQL Prepared Statements",
+                "heading": "MySQL Database"
+            },
+            {
+                "content": "MySQL Certificate",
+                "heading": "MySQL Cert"
+            },
+            {
+                "content": "MySQL Data Types\nMySQL Functions\n\n String Functions\n ASCII\n CHAR_LENGTH\n CHARACTER_LENGTH\n CONCAT\n CONCAT_WS\n FIELD\n FIND_IN_SET\n FORMAT\n INSERT\n INSTR\n LCASE\n LEFT\n LENGTH\n LOCATE\n LOWER\n LPAD\n LTRIM\n MID\n POSITION\n REPEAT\n REPLACE\n REVERSE\n RIGHT\n RPAD\n RTRIM\n SPACE\n STRCMP\n SUBSTR\n SUBSTRING\n SUBSTRING_INDEX\n TRIM\n UCASE\n UPPER\n\n Numeric Functions\n ABS\n ACOS\n ASIN\n ATAN\n ATAN2\n AVG\n CEIL\n CEILING\n COS\n COT\n COUNT\n DEGREES\n DIV\n EXP\n FLOOR\n GREATEST\n LEAST\n LN\n LOG\n LOG10\n LOG2\n MAX\n MIN\n MOD\n PI\n POW\n POWER\n RADIANS\n RAND\n ROUND\n SIGN\n SIN\n SQRT\n SUM\n TAN\n TRUNCATE\n\n Date Functions\n ADDDATE\n ADDTIME\n CURDATE\n CURRENT_DATE\n CURRENT_TIME\n CURRENT_TIMESTAMP\n CURTIME\n DATE\n DATEDIFF\n DATE_ADD\n DATE_FORMAT\n DATE_SUB\n DAY\n DAYNAME\n DAYOFMONTH\n DAYOFWEEK\n DAYOFYEAR\n EXTRACT\n FROM_DAYS\n HOUR\n LAST_DAY\n LOCALTIME\n LOCALTIMESTAMP\n MAKEDATE\n MAKETIME\n MICROSECOND\n MINUTE\n MONTH\n MONTHNAME\n NOW\n PERIOD_ADD\n PERIOD_DIFF\n QUARTER\n SECOND\n SEC_TO_TIME\n STR_TO_DATE\n SUBDATE\n SUBTIME\n SYSDATE\n TIME\n TIME_FORMAT\n TIME_TO_SEC\n TIMEDIFF\n TIMESTAMP\n TO_DAYS\n WEEK\n WEEKDAY\n WEEKOFYEAR\n YEAR\n YEARWEEK\n\n Advanced Functions\n BIN\n BINARY\n CASE\n CAST\n COALESCE\n CONNECTION_ID\n CONV\n CONVERT\n CURRENT_USER\n DATABASE\n IF\n IFNULL\n ISNULL\n LAST_INSERT_ID\n NULLIF\n SESSION_USER\n SYSTEM_USER\n USER\n VERSION",
+                "heading": "MySQL References"
+            },
+            {
+                "content": "MySQL Examples\nMySQL Editor\nMySQL Quiz\nMySQL Exercises\nMySQL Syllabus\nMySQL Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\nMySQL UNION ALL Operator\n\n ❮ Previous\n Next ❯",
+                "heading": "MySQL Examples"
+            },
+            {
+                "content": "The UNION ALL operator is used to combine the result-set of two or more \nSELECT \nstatements.\n\nThe UNION ALL operator includes all rows \nfrom each statement, including any duplicates.\n\nRequirements for UNION ALL: \n\n Every SELECT statement within\n UNION must have the same number \nof columns\n\n The columns must also have similar data types\n\n The columns in \n every SELECT statement must also be in the same order\n\nUNION ALL Syntax\nWhile the UNION operator \nremoves duplicate values by default, the\nUNION ALL includes duplicate values:\n\n SELECT column_name(s) FROM table1\n\n UNION ALL\n\n SELECT column_name(s) FROM table2;\n\nNote: The column names in the result-set are usually equal to \nthe column names in the first SELECT statement.",
+                "heading": "The MySQL UNION ALL Operator"
+            },
+            {
+                "content": "Below is a selection from the \"Customers\" table:\n\n CustomerID\n CustomerName\n ContactName\n Address\n City\n PostalCode\n Country\n\n 1\n\n Alfreds Futterkiste\n Maria Anders\n Obere Str. 57\n Berlin\n 12209\n Germany\n\n 2\n Ana Trujillo Emparedados y helados\n Ana Trujillo\n Avda. de la Constitución 2222\n México D.F.\n 05021\n Mexico\n\n 3\n Antonio Moreno Taquería\n Antonio Moreno\n Mataderos 2312\n México D.F.\n 05023\n Mexico\n\nAnd a selection from the \"Suppliers\" table:\n\n SupplierID\n SupplierName\n ContactName\n Address\n City\n PostalCode\n Country\n\n 1\n Exotic Liquid\n Charlotte Cooper\n 49 Gilbert St.\n London\n EC1 4SD\n UK\n\n 2\n New Orleans Cajun Delights\n Shelley Burke\n P.O. Box 78934\n New Orleans\n 70117\n USA\n\n 3\n Grandma Kelly's Homestead\n Regina Murphy\n 707 Oxford Rd.\n Ann Arbor\n 48104\n USA",
+                "heading": "Demo Database"
+            },
+            {
+                "content": "The following SQL returns all the cities \n(duplicate values also) from both the \"Customers\" and the \"Suppliers\" table:\n\nExample\n\n SELECT City FROM Customers\nUNION ALL\nSELECT City FROM Suppliers\n\n ORDER BY City;\n\n Try it Yourself »",
+                "heading": "MySQL UNION ALL Example"
+            },
+            {
+                "content": "The following SQL returns all the German cities (duplicate values also) from \nboth the \"Customers\" and the \"Suppliers\" table:\n\nExample\n\n SELECT City, Country FROM Customers\nWHERE Country='Germany'\nUNION ALL\n\n SELECT City, Country FROM Suppliers\nWHERE Country='Germany'\nORDER BY City;\n\n Try it Yourself »\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "MySQL UNION ALL With WHERE"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:37Z",
+        "subject": "MySQL",
+        "title": "MySQL UNION ALL Operator"
+    },
+    {
+        "url": "https://www.w3schools.com/mysql/mysql_groupby.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "mysql_mysql_groupby",
+        "code_examples": [
+            {
+                "code": "SELECT column1, aggregate_function(column2), column3, ...\n\nFROM table_name\n\nWHERE condition\n\nGROUP BY column1, column3\n\nORDER BY column_name;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "SELECT Country, COUNT(CustomerID) AS \"Number of Customers\"\nFROM Customers\nGROUP BY Country;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MySQL HOME\nMySQL Intro\nMySQL RDBMS",
+                "heading": "MySQL Tutorial"
+            },
+            {
+                "content": "MySQL SQL\nMySQL SELECT\nMySQL SELECT DISTINCT\nMySQL WHERE\nMySQL ORDER BY\nMySQL AND\nMySQL OR\nMySQL NOT\nMySQL INSERT INTO\nMySQL NULL Values\nMySQL UPDATE\nMySQL DELETE\nMySQL LIMIT\nMySQL Aggregate Functions\nMySQL MIN()\nMySQL MAX()\nMySQL COUNT()\nMySQL SUM()\nMySQL AVG()\nMySQL LIKE\nMySQL Wildcards\nMySQL IN\nMySQL BETWEEN\nMySQL Aliases\nMySQL Joins\nMySQL INNER JOIN\nMySQL LEFT JOIN\nMySQL RIGHT JOIN\nMySQL CROSS JOIN\nMySQL Self Join\nMySQL UNION\nMySQL UNION ALL\nMySQL GROUP BY\nMySQL HAVING\nMySQL EXISTS\nMySQL ANY\nMySQL ALL\nMySQL INSERT SELECT\nMySQL CASE\nMySQL Null Functions\nMySQL Stored Procedures\nMySQL Comments\nMySQL Operators",
+                "heading": "MySQL SQL"
+            },
+            {
+                "content": "MySQL Install (Windows)\nMySQL Install (Linux)-->\nMySQL Create DB\nMySQL Drop DB\nMySQL Create Table\nMySQL Drop Table\nMySQL Alter Table\nMySQL Constraints\nMySQL Not Null\nMySQL Unique\nMySQL Primary Key\nMySQL Foreign Key\nMySQL Check\nMySQL Default\nMySQL Create Index\nMySQL Auto Increment\nMySQL Dates\nMySQL Views\nMySQL Injection\nMySQL Prepared Statements",
+                "heading": "MySQL Database"
+            },
+            {
+                "content": "MySQL Certificate",
+                "heading": "MySQL Cert"
+            },
+            {
+                "content": "MySQL Data Types\nMySQL Functions\n\n String Functions\n ASCII\n CHAR_LENGTH\n CHARACTER_LENGTH\n CONCAT\n CONCAT_WS\n FIELD\n FIND_IN_SET\n FORMAT\n INSERT\n INSTR\n LCASE\n LEFT\n LENGTH\n LOCATE\n LOWER\n LPAD\n LTRIM\n MID\n POSITION\n REPEAT\n REPLACE\n REVERSE\n RIGHT\n RPAD\n RTRIM\n SPACE\n STRCMP\n SUBSTR\n SUBSTRING\n SUBSTRING_INDEX\n TRIM\n UCASE\n UPPER\n\n Numeric Functions\n ABS\n ACOS\n ASIN\n ATAN\n ATAN2\n AVG\n CEIL\n CEILING\n COS\n COT\n COUNT\n DEGREES\n DIV\n EXP\n FLOOR\n GREATEST\n LEAST\n LN\n LOG\n LOG10\n LOG2\n MAX\n MIN\n MOD\n PI\n POW\n POWER\n RADIANS\n RAND\n ROUND\n SIGN\n SIN\n SQRT\n SUM\n TAN\n TRUNCATE\n\n Date Functions\n ADDDATE\n ADDTIME\n CURDATE\n CURRENT_DATE\n CURRENT_TIME\n CURRENT_TIMESTAMP\n CURTIME\n DATE\n DATEDIFF\n DATE_ADD\n DATE_FORMAT\n DATE_SUB\n DAY\n DAYNAME\n DAYOFMONTH\n DAYOFWEEK\n DAYOFYEAR\n EXTRACT\n FROM_DAYS\n HOUR\n LAST_DAY\n LOCALTIME\n LOCALTIMESTAMP\n MAKEDATE\n MAKETIME\n MICROSECOND\n MINUTE\n MONTH\n MONTHNAME\n NOW\n PERIOD_ADD\n PERIOD_DIFF\n QUARTER\n SECOND\n SEC_TO_TIME\n STR_TO_DATE\n SUBDATE\n SUBTIME\n SYSDATE\n TIME\n TIME_FORMAT\n TIME_TO_SEC\n TIMEDIFF\n TIMESTAMP\n TO_DAYS\n WEEK\n WEEKDAY\n WEEKOFYEAR\n YEAR\n YEARWEEK\n\n Advanced Functions\n BIN\n BINARY\n CASE\n CAST\n COALESCE\n CONNECTION_ID\n CONV\n CONVERT\n CURRENT_USER\n DATABASE\n IF\n IFNULL\n ISNULL\n LAST_INSERT_ID\n NULLIF\n SESSION_USER\n SYSTEM_USER\n USER\n VERSION",
+                "heading": "MySQL References"
+            },
+            {
+                "content": "MySQL Examples\nMySQL Editor\nMySQL Quiz\nMySQL Exercises\nMySQL Syllabus\nMySQL Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\nMySQL GROUP BY Statement\n\n ❮ Previous\n Next ❯",
+                "heading": "MySQL Examples"
+            },
+            {
+                "content": "The GROUP BY statement is used to group rows that have the same values into summary rows, like \"Find the number of customers in each country\".\n\nThe GROUP BY statement is almost always used in conjunction with aggregate functions, like COUNT(),\nMAX(), MIN(), SUM(), AVG(),\nto perform calculations on each group.\n\nGROUP BY Syntax\n\nSELECT column1, aggregate_function(column2), column3, ...\n\nFROM table_name\n\nWHERE condition\n\nGROUP BY column1, column3\n\nORDER BY column_name;",
+                "heading": "The MySQL GROUP BY Statement"
+            },
+            {
+                "content": "Below is a selection from the \"Customers\" table in the Northwind sample \ndatabase:\n\n CustomerID\n CustomerName\n ContactName\n Address\n City\n PostalCode\n Country\n\n 1\n\n Alfreds Futterkiste\n Maria Anders\n Obere Str. 57\n Berlin\n 12209\n Germany\n\n 2\n Ana Trujillo Emparedados y helados\n Ana Trujillo\n Avda. de la Constitución 2222\n México D.F.\n 05021\n Mexico\n\n 3\n Antonio Moreno Taquería\n Antonio Moreno\n Mataderos 2312\n México D.F.\n 05023\n Mexico\n\n 4\n\n Around the Horn\n Thomas Hardy\n 120 Hanover Sq.\n London\n WA1 1DP\n UK\n\n 5\n Berglunds snabbköp\n Christina Berglund\n Berguvsvägen 8\n Luleå\n S-958 22\n Sweden",
+                "heading": "Demo Database"
+            },
+            {
+                "content": "The following SQL returns the number of customers in each country:\n\nExample\n\n SELECT Country, COUNT(CustomerID) AS \"Number of Customers\"\nFROM Customers\nGROUP BY Country;\n\n Try it Yourself »\n\nThe following SQL returns the number of customers in each country, \nsorted from high to low:\n\nExample\n\n SELECT Country, COUNT(CustomerID) AS \"Number of Customers\"\nFROM Customers\nGROUP BY Country\n\n ORDER BY COUNT(CustomerID) DESC;\n\n Try it Yourself »",
+                "heading": "MySQL GROUP BY Examples"
+            },
+            {
+                "content": "Below is a selection from the \"Orders\" table in the Northwind sample database:\n\n OrderID\n CustomerID\n EmployeeID\n OrderDate\n ShipperID\n\n 10248\n 90\n 5\n 1996-07-04\n 3\n\n 10249\n 81\n 6\n 1996-07-05\n 1\n\n 10250\n 34\n 4\n 1996-07-08\n 2\n\nAnd a selection from the \"Shippers\" table:\n\n ShipperID\n ShipperName\n\n 1\n Speedy Express\n\n 2\n United Package\n\n 3\n Federal Shipping",
+                "heading": "Demo Database"
+            },
+            {
+                "content": "The following SQL statement lists the number of orders sent by each shipper:\n\nExample\n\n SELECT Shippers.ShipperName, COUNT(Orders.OrderID) AS \"Number of Orders\"\nFROM \n Orders\nLEFT JOIN Shippers ON Orders.ShipperID = Shippers.ShipperID\n\n GROUP BY ShipperName;\n\n Try it Yourself »\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "GROUP BY With JOIN Example"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:37Z",
+        "subject": "MySQL",
+        "title": "MySQL GROUP BY Statement"
+    },
+    {
+        "url": "https://www.w3schools.com/mysql/mysql_having.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "mysql_mysql_having",
+        "code_examples": [
+            {
+                "code": "SELECT column1, aggregate_function(column2), column3, ...\n\nFROM table_name\n\nWHERE condition\n\nGROUP BY column1, column3\n\nHAVING condition -- The condition on grouped data\n\nORDER BY column_name;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "SELECT Country, COUNT(CustomerID) AS \"Number of Customers\"\nFROM Customers\nGROUP BY Country\n\n HAVING COUNT(CustomerID) > 5;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MySQL HOME\nMySQL Intro\nMySQL RDBMS",
+                "heading": "MySQL Tutorial"
+            },
+            {
+                "content": "MySQL SQL\nMySQL SELECT\nMySQL SELECT DISTINCT\nMySQL WHERE\nMySQL ORDER BY\nMySQL AND\nMySQL OR\nMySQL NOT\nMySQL INSERT INTO\nMySQL NULL Values\nMySQL UPDATE\nMySQL DELETE\nMySQL LIMIT\nMySQL Aggregate Functions\nMySQL MIN()\nMySQL MAX()\nMySQL COUNT()\nMySQL SUM()\nMySQL AVG()\nMySQL LIKE\nMySQL Wildcards\nMySQL IN\nMySQL BETWEEN\nMySQL Aliases\nMySQL Joins\nMySQL INNER JOIN\nMySQL LEFT JOIN\nMySQL RIGHT JOIN\nMySQL CROSS JOIN\nMySQL Self Join\nMySQL UNION\nMySQL UNION ALL\nMySQL GROUP BY\nMySQL HAVING\nMySQL EXISTS\nMySQL ANY\nMySQL ALL\nMySQL INSERT SELECT\nMySQL CASE\nMySQL Null Functions\nMySQL Stored Procedures\nMySQL Comments\nMySQL Operators",
+                "heading": "MySQL SQL"
+            },
+            {
+                "content": "MySQL Install (Windows)\nMySQL Install (Linux)-->\nMySQL Create DB\nMySQL Drop DB\nMySQL Create Table\nMySQL Drop Table\nMySQL Alter Table\nMySQL Constraints\nMySQL Not Null\nMySQL Unique\nMySQL Primary Key\nMySQL Foreign Key\nMySQL Check\nMySQL Default\nMySQL Create Index\nMySQL Auto Increment\nMySQL Dates\nMySQL Views\nMySQL Injection\nMySQL Prepared Statements",
+                "heading": "MySQL Database"
+            },
+            {
+                "content": "MySQL Certificate",
+                "heading": "MySQL Cert"
+            },
+            {
+                "content": "MySQL Data Types\nMySQL Functions\n\n String Functions\n ASCII\n CHAR_LENGTH\n CHARACTER_LENGTH\n CONCAT\n CONCAT_WS\n FIELD\n FIND_IN_SET\n FORMAT\n INSERT\n INSTR\n LCASE\n LEFT\n LENGTH\n LOCATE\n LOWER\n LPAD\n LTRIM\n MID\n POSITION\n REPEAT\n REPLACE\n REVERSE\n RIGHT\n RPAD\n RTRIM\n SPACE\n STRCMP\n SUBSTR\n SUBSTRING\n SUBSTRING_INDEX\n TRIM\n UCASE\n UPPER\n\n Numeric Functions\n ABS\n ACOS\n ASIN\n ATAN\n ATAN2\n AVG\n CEIL\n CEILING\n COS\n COT\n COUNT\n DEGREES\n DIV\n EXP\n FLOOR\n GREATEST\n LEAST\n LN\n LOG\n LOG10\n LOG2\n MAX\n MIN\n MOD\n PI\n POW\n POWER\n RADIANS\n RAND\n ROUND\n SIGN\n SIN\n SQRT\n SUM\n TAN\n TRUNCATE\n\n Date Functions\n ADDDATE\n ADDTIME\n CURDATE\n CURRENT_DATE\n CURRENT_TIME\n CURRENT_TIMESTAMP\n CURTIME\n DATE\n DATEDIFF\n DATE_ADD\n DATE_FORMAT\n DATE_SUB\n DAY\n DAYNAME\n DAYOFMONTH\n DAYOFWEEK\n DAYOFYEAR\n EXTRACT\n FROM_DAYS\n HOUR\n LAST_DAY\n LOCALTIME\n LOCALTIMESTAMP\n MAKEDATE\n MAKETIME\n MICROSECOND\n MINUTE\n MONTH\n MONTHNAME\n NOW\n PERIOD_ADD\n PERIOD_DIFF\n QUARTER\n SECOND\n SEC_TO_TIME\n STR_TO_DATE\n SUBDATE\n SUBTIME\n SYSDATE\n TIME\n TIME_FORMAT\n TIME_TO_SEC\n TIMEDIFF\n TIMESTAMP\n TO_DAYS\n WEEK\n WEEKDAY\n WEEKOFYEAR\n YEAR\n YEARWEEK\n\n Advanced Functions\n BIN\n BINARY\n CASE\n CAST\n COALESCE\n CONNECTION_ID\n CONV\n CONVERT\n CURRENT_USER\n DATABASE\n IF\n IFNULL\n ISNULL\n LAST_INSERT_ID\n NULLIF\n SESSION_USER\n SYSTEM_USER\n USER\n VERSION",
+                "heading": "MySQL References"
+            },
+            {
+                "content": "MySQL Examples\nMySQL Editor\nMySQL Quiz\nMySQL Exercises\nMySQL Syllabus\nMySQL Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\nMySQL HAVING Clause\n\n ❮ Previous\n Next ❯",
+                "heading": "MySQL Examples"
+            },
+            {
+                "content": "The HAVING clause is used to filter the results of a GROUP BY query based on aggregate functions.\n\nUnlike the WHERE clause, which filters individual rows before grouping, \nthe HAVING\nclause\nfilters groups after the aggregation has been performed.\n\nHAVING Syntax\n\nSELECT column1, aggregate_function(column2), column3, ...\n\nFROM table_name\n\nWHERE condition\n\nGROUP BY column1, column3\n\nHAVING condition -- The condition on grouped data\n\nORDER BY column_name;",
+                "heading": "The MySQL HAVING Clause"
+            },
+            {
+                "content": "Below is a selection from the \"Customers\" table in the Northwind sample \ndatabase:\n\n CustomerID\n CustomerName\n ContactName\n Address\n City\n PostalCode\n Country\n\n 1\n\n Alfreds Futterkiste\n Maria Anders\n Obere Str. 57\n Berlin\n 12209\n Germany\n\n 2\n Ana Trujillo Emparedados y helados\n Ana Trujillo\n Avda. de la Constitución 2222\n México D.F.\n 05021\n Mexico\n\n 3\n Antonio Moreno Taquería\n Antonio Moreno\n Mataderos 2312\n México D.F.\n 05023\n Mexico\n\n 4\n\n Around the Horn\n Thomas Hardy\n 120 Hanover Sq.\n London\n WA1 1DP\n UK\n\n 5\n Berglunds snabbköp\n Christina Berglund\n Berguvsvägen 8\n Luleå\n S-958 22\n Sweden",
+                "heading": "Demo Database"
+            },
+            {
+                "content": "The following SQL returns the number of customers in each country - but only \ninclude countries with more than 5 customers:\n\nExample\n\n SELECT Country, COUNT(CustomerID) AS \"Number of Customers\"\nFROM Customers\nGROUP BY Country\n\n HAVING COUNT(CustomerID) > 5;\n\n Try it Yourself »\n\nThe following SQL returns the number of customers in each country, sorted \nfrom high to low (and only include countries with more than 5 customers):\n\nExample\n\n SELECT Country, COUNT(CustomerID) AS \"Number of Customers\"\nFROM Customers\nGROUP BY Country\nHAVING COUNT(CustomerID) \n > 5\n\n ORDER BY COUNT(CustomerID) DESC;\n\n Try it Yourself »",
+                "heading": "MySQL HAVING Examples"
+            },
+            {
+                "content": "Below is a selection from the \"Orders\" table in the Northwind sample database:\n\n OrderID\n CustomerID\n EmployeeID\n OrderDate\n ShipperID\n\n 10248\n 90\n 5\n 1996-07-04\n 3\n\n 10249\n 81\n 6\n 1996-07-05\n 1\n\n 10250\n 34\n 4\n 1996-07-08\n 2\n\nAnd a selection from the \"Employees\" table:\n\n EmployeeID\n LastName\n FirstName\n BirthDate\n Photo\n Notes\n\n 1\n Davolio\n Nancy\n 1968-12-08\n EmpID1.pic\n Education includes a BA....\n\n 2\n Fuller\n Andrew\n 1952-02-19\n EmpID2.pic\n Andrew received his BTS.... \n\n 3\n Leverling\n Janet\n 1963-08-30\n EmpID3.pic\n Janet has a BS degree....",
+                "heading": "Demo Database"
+            },
+            {
+                "content": "The following SQL returns the employees that have registered more \nthan 10 orders:\n\nExample\n\n SELECT Employees.LastName, COUNT(Orders.OrderID) AS NumberOfOrders\nFROM \n (Orders\nINNER JOIN Employees ON Orders.EmployeeID = Employees.EmployeeID)\n\n GROUP BY LastName\nHAVING COUNT(Orders.OrderID) > 10;\n\n Try it Yourself »\n\nThe following SQL returns if the employees \"Davolio\" or \"Fuller\" have \nregistered more than 25 orders:\n\nExample\n\n SELECT Employees.LastName, COUNT(Orders.OrderID) AS NumberOfOrders\nFROM Orders\n\n INNER JOIN Employees ON Orders.EmployeeID = Employees.EmployeeID\n\n WHERE LastName = 'Davolio' OR LastName = 'Fuller'\nGROUP BY LastName\nHAVING \n COUNT(Orders.OrderID) > 25;\n\n Try it Yourself »\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "More HAVING Examples"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:37Z",
+        "subject": "MySQL",
+        "title": "MySQL HAVING Clause"
+    },
+    {
+        "url": "https://www.w3schools.com/mysql/mysql_exists.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "mysql_mysql_exists",
+        "code_examples": [
+            {
+                "code": "SELECT column_name(s)\n\n FROM table_name\n\n WHERE \n EXISTS (subquery);",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "SELECT SupplierName FROM Suppliers\nWHERE EXISTS (\n  SELECT ProductName\n  FROM \n Products\n  WHERE Products.SupplierID = Suppliers.supplierID AND Price < 20\n);",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MySQL HOME\nMySQL Intro\nMySQL RDBMS",
+                "heading": "MySQL Tutorial"
+            },
+            {
+                "content": "MySQL SQL\nMySQL SELECT\nMySQL SELECT DISTINCT\nMySQL WHERE\nMySQL ORDER BY\nMySQL AND\nMySQL OR\nMySQL NOT\nMySQL INSERT INTO\nMySQL NULL Values\nMySQL UPDATE\nMySQL DELETE\nMySQL LIMIT\nMySQL Aggregate Functions\nMySQL MIN()\nMySQL MAX()\nMySQL COUNT()\nMySQL SUM()\nMySQL AVG()\nMySQL LIKE\nMySQL Wildcards\nMySQL IN\nMySQL BETWEEN\nMySQL Aliases\nMySQL Joins\nMySQL INNER JOIN\nMySQL LEFT JOIN\nMySQL RIGHT JOIN\nMySQL CROSS JOIN\nMySQL Self Join\nMySQL UNION\nMySQL UNION ALL\nMySQL GROUP BY\nMySQL HAVING\nMySQL EXISTS\nMySQL ANY\nMySQL ALL\nMySQL INSERT SELECT\nMySQL CASE\nMySQL Null Functions\nMySQL Stored Procedures\nMySQL Comments\nMySQL Operators",
+                "heading": "MySQL SQL"
+            },
+            {
+                "content": "MySQL Install (Windows)\nMySQL Install (Linux)-->\nMySQL Create DB\nMySQL Drop DB\nMySQL Create Table\nMySQL Drop Table\nMySQL Alter Table\nMySQL Constraints\nMySQL Not Null\nMySQL Unique\nMySQL Primary Key\nMySQL Foreign Key\nMySQL Check\nMySQL Default\nMySQL Create Index\nMySQL Auto Increment\nMySQL Dates\nMySQL Views\nMySQL Injection\nMySQL Prepared Statements",
+                "heading": "MySQL Database"
+            },
+            {
+                "content": "MySQL Certificate",
+                "heading": "MySQL Cert"
+            },
+            {
+                "content": "MySQL Data Types\nMySQL Functions\n\n String Functions\n ASCII\n CHAR_LENGTH\n CHARACTER_LENGTH\n CONCAT\n CONCAT_WS\n FIELD\n FIND_IN_SET\n FORMAT\n INSERT\n INSTR\n LCASE\n LEFT\n LENGTH\n LOCATE\n LOWER\n LPAD\n LTRIM\n MID\n POSITION\n REPEAT\n REPLACE\n REVERSE\n RIGHT\n RPAD\n RTRIM\n SPACE\n STRCMP\n SUBSTR\n SUBSTRING\n SUBSTRING_INDEX\n TRIM\n UCASE\n UPPER\n\n Numeric Functions\n ABS\n ACOS\n ASIN\n ATAN\n ATAN2\n AVG\n CEIL\n CEILING\n COS\n COT\n COUNT\n DEGREES\n DIV\n EXP\n FLOOR\n GREATEST\n LEAST\n LN\n LOG\n LOG10\n LOG2\n MAX\n MIN\n MOD\n PI\n POW\n POWER\n RADIANS\n RAND\n ROUND\n SIGN\n SIN\n SQRT\n SUM\n TAN\n TRUNCATE\n\n Date Functions\n ADDDATE\n ADDTIME\n CURDATE\n CURRENT_DATE\n CURRENT_TIME\n CURRENT_TIMESTAMP\n CURTIME\n DATE\n DATEDIFF\n DATE_ADD\n DATE_FORMAT\n DATE_SUB\n DAY\n DAYNAME\n DAYOFMONTH\n DAYOFWEEK\n DAYOFYEAR\n EXTRACT\n FROM_DAYS\n HOUR\n LAST_DAY\n LOCALTIME\n LOCALTIMESTAMP\n MAKEDATE\n MAKETIME\n MICROSECOND\n MINUTE\n MONTH\n MONTHNAME\n NOW\n PERIOD_ADD\n PERIOD_DIFF\n QUARTER\n SECOND\n SEC_TO_TIME\n STR_TO_DATE\n SUBDATE\n SUBTIME\n SYSDATE\n TIME\n TIME_FORMAT\n TIME_TO_SEC\n TIMEDIFF\n TIMESTAMP\n TO_DAYS\n WEEK\n WEEKDAY\n WEEKOFYEAR\n YEAR\n YEARWEEK\n\n Advanced Functions\n BIN\n BINARY\n CASE\n CAST\n COALESCE\n CONNECTION_ID\n CONV\n CONVERT\n CURRENT_USER\n DATABASE\n IF\n IFNULL\n ISNULL\n LAST_INSERT_ID\n NULLIF\n SESSION_USER\n SYSTEM_USER\n USER\n VERSION",
+                "heading": "MySQL References"
+            },
+            {
+                "content": "MySQL Examples\nMySQL Editor\nMySQL Quiz\nMySQL Exercises\nMySQL Syllabus\nMySQL Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\nMySQL EXISTS Operator\n\n ❮ Previous\n Next ❯",
+                "heading": "MySQL Examples"
+            },
+            {
+                "content": "The EXISTS operator is used in a WHERE clause\nto check whether a subquery returns any rows.\n\nThe EXISTS operator evaluates to TRUE if the subquery returns at least one row, and FALSE otherwise..\n\nEXISTS Syntax\n\n SELECT column_name(s)\n\n FROM table_name\n\n WHERE \n EXISTS (subquery);",
+                "heading": "The MySQL EXISTS Operator"
+            },
+            {
+                "content": "Below is a selection from the \"Products\" table in the Northwind sample database:\n\n ProductID\n ProductName\n SupplierID\n CategoryID\n Unit\n Price\n\n 1\n Chais\n 1\n 1\n 10 boxes x 20 bags\n 18.00\n\n 2\n Chang\n 1\n 1\n 24 - 12 oz bottles\n 19.00\n\n 3\n Aniseed Syrup\n 1\n 2\n 12 - 550 ml bottles\n 10.00\n\n 4\n Chef Anton's Cajun Seasoning\n 2\n 2\n 48 - 6 oz jars\n 22.00\n\n 5\n Chef Anton's Gumbo Mix\n 2\n 2\n 36 boxes\n 21.35\n\nAnd a selection from the \"Suppliers\" table:\n\n SupplierID\n SupplierName\n ContactName\n Address\n City\n PostalCode\n Country\n\n 1\n Exotic Liquid\n Charlotte Cooper\n 49 Gilbert St.\n London\n EC1 4SD\n UK\n\n 2\n New Orleans Cajun Delights\n Shelley Burke\n P.O. Box 78934\n New Orleans\n 70117\n USA\n\n 3\n Grandma Kelly's Homestead\n Regina Murphy\n 707 Oxford Rd.\n Ann Arbor\n 48104\n USA\n\n 4\n Tokyo Traders\n Yoshi Nagase\n 9-8 Sekimai Musashino-shi\n Tokyo\n 100\n Japan",
+                "heading": "Demo Database"
+            },
+            {
+                "content": "The following SQL checks if any suppliers has a product with a price lower \nthan 20. If the subquery evaluates to TRUE; list the suppliers with a product \nprice less than 20:\n\nExample\n\n SELECT SupplierName FROM Suppliers\nWHERE EXISTS (\n  SELECT ProductName\n  FROM \n Products\n  WHERE Products.SupplierID = Suppliers.supplierID AND Price < 20\n);\n\n Try it Yourself »\n\nThe following SQL checks if any suppliers has a product with a price equal to \n22.\nIf the subquery evaluates to TRUE; list the suppliers with a product price equal \nto 22:\n\nExample\n\n SELECT SupplierName FROM Suppliers\nWHERE EXISTS (\n  SELECT ProductName\n  FROM \n Products\n  WHERE Products.SupplierID = Suppliers.supplierID AND Price = 22\n);\n\n Try it Yourself »\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "MySQL EXISTS Examples"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:37Z",
+        "subject": "MySQL",
+        "title": "MySQL EXISTS Operator"
+    },
+    {
+        "url": "https://www.w3schools.com/mysql/mysql_any_all.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "mysql_mysql_any_all",
+        "code_examples": [
+            {
+                "code": "SELECT column_name(s)\n\n FROM table_name\n\n WHERE \n column_name operator ANY (subquery);",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "SELECT ProductName FROM Products\nWHERE ProductID = ANY (\n  SELECT ProductID\n  FROM OrderDetails\n  WHERE Quantity = 10\n);",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MySQL HOME\nMySQL Intro\nMySQL RDBMS",
+                "heading": "MySQL Tutorial"
+            },
+            {
+                "content": "MySQL SQL\nMySQL SELECT\nMySQL SELECT DISTINCT\nMySQL WHERE\nMySQL ORDER BY\nMySQL AND\nMySQL OR\nMySQL NOT\nMySQL INSERT INTO\nMySQL NULL Values\nMySQL UPDATE\nMySQL DELETE\nMySQL LIMIT\nMySQL Aggregate Functions\nMySQL MIN()\nMySQL MAX()\nMySQL COUNT()\nMySQL SUM()\nMySQL AVG()\nMySQL LIKE\nMySQL Wildcards\nMySQL IN\nMySQL BETWEEN\nMySQL Aliases\nMySQL Joins\nMySQL INNER JOIN\nMySQL LEFT JOIN\nMySQL RIGHT JOIN\nMySQL CROSS JOIN\nMySQL Self Join\nMySQL UNION\nMySQL UNION ALL\nMySQL GROUP BY\nMySQL HAVING\nMySQL EXISTS\nMySQL ANY\nMySQL ALL\nMySQL INSERT SELECT\nMySQL CASE\nMySQL Null Functions\nMySQL Stored Procedures\nMySQL Comments\nMySQL Operators",
+                "heading": "MySQL SQL"
+            },
+            {
+                "content": "MySQL Install (Windows)\nMySQL Install (Linux)-->\nMySQL Create DB\nMySQL Drop DB\nMySQL Create Table\nMySQL Drop Table\nMySQL Alter Table\nMySQL Constraints\nMySQL Not Null\nMySQL Unique\nMySQL Primary Key\nMySQL Foreign Key\nMySQL Check\nMySQL Default\nMySQL Create Index\nMySQL Auto Increment\nMySQL Dates\nMySQL Views\nMySQL Injection\nMySQL Prepared Statements",
+                "heading": "MySQL Database"
+            },
+            {
+                "content": "MySQL Certificate",
+                "heading": "MySQL Cert"
+            },
+            {
+                "content": "MySQL Data Types\nMySQL Functions\n\n String Functions\n ASCII\n CHAR_LENGTH\n CHARACTER_LENGTH\n CONCAT\n CONCAT_WS\n FIELD\n FIND_IN_SET\n FORMAT\n INSERT\n INSTR\n LCASE\n LEFT\n LENGTH\n LOCATE\n LOWER\n LPAD\n LTRIM\n MID\n POSITION\n REPEAT\n REPLACE\n REVERSE\n RIGHT\n RPAD\n RTRIM\n SPACE\n STRCMP\n SUBSTR\n SUBSTRING\n SUBSTRING_INDEX\n TRIM\n UCASE\n UPPER\n\n Numeric Functions\n ABS\n ACOS\n ASIN\n ATAN\n ATAN2\n AVG\n CEIL\n CEILING\n COS\n COT\n COUNT\n DEGREES\n DIV\n EXP\n FLOOR\n GREATEST\n LEAST\n LN\n LOG\n LOG10\n LOG2\n MAX\n MIN\n MOD\n PI\n POW\n POWER\n RADIANS\n RAND\n ROUND\n SIGN\n SIN\n SQRT\n SUM\n TAN\n TRUNCATE\n\n Date Functions\n ADDDATE\n ADDTIME\n CURDATE\n CURRENT_DATE\n CURRENT_TIME\n CURRENT_TIMESTAMP\n CURTIME\n DATE\n DATEDIFF\n DATE_ADD\n DATE_FORMAT\n DATE_SUB\n DAY\n DAYNAME\n DAYOFMONTH\n DAYOFWEEK\n DAYOFYEAR\n EXTRACT\n FROM_DAYS\n HOUR\n LAST_DAY\n LOCALTIME\n LOCALTIMESTAMP\n MAKEDATE\n MAKETIME\n MICROSECOND\n MINUTE\n MONTH\n MONTHNAME\n NOW\n PERIOD_ADD\n PERIOD_DIFF\n QUARTER\n SECOND\n SEC_TO_TIME\n STR_TO_DATE\n SUBDATE\n SUBTIME\n SYSDATE\n TIME\n TIME_FORMAT\n TIME_TO_SEC\n TIMEDIFF\n TIMESTAMP\n TO_DAYS\n WEEK\n WEEKDAY\n WEEKOFYEAR\n YEAR\n YEARWEEK\n\n Advanced Functions\n BIN\n BINARY\n CASE\n CAST\n COALESCE\n CONNECTION_ID\n CONV\n CONVERT\n CURRENT_USER\n DATABASE\n IF\n IFNULL\n ISNULL\n LAST_INSERT_ID\n NULLIF\n SESSION_USER\n SYSTEM_USER\n USER\n VERSION",
+                "heading": "MySQL References"
+            },
+            {
+                "content": "MySQL Examples\nMySQL Editor\nMySQL Quiz\nMySQL Exercises\nMySQL Syllabus\nMySQL Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\nMySQL ANY Operator\n\n ❮ Previous\n Next ❯",
+                "heading": "MySQL Examples"
+            },
+            {
+                "content": "The ANY operator is used to compare a value \nto every value returned by a subquery.\n\nThe ANY operator evaluates to TRUE if at \nleast one value in the subquery result-set meet the condition.\n\nANY Syntax\n\n SELECT column_name(s)\n\n FROM table_name\n\n WHERE \n column_name operator ANY (subquery);\n\n Note: The operator must be a standard comparison \noperator (=, <>, !=, >, >=, <, or <=).",
+                "heading": "The MySQL ANY Operator"
+            },
+            {
+                "content": "Below is a selection from the \"Products\" table in the Northwind sample database:\n\n ProductID\n ProductName\n Price\n\n 1\n Chais\n 18.00\n\n 2\n Chang\n 19.00\n\n 3\n Aniseed Syrup\n 10.00\n\n 4\n Chef Anton's Cajun Seasoning\n 22.00\n\nAnd a selection from the \"OrderDetails\" table:\n\n OrderDetailID\n ProductID\n Quantity\n\n 1\n 11\n 12\n\n 2\n 42\n 10\n\n 3\n 72\n 5\n\n 4\n 14\n 9",
+                "heading": "Demo Database"
+            },
+            {
+                "content": "The following SQL returns the ProductName if it \nfinds ANY records in the \"OrderDetails\" table that has Quantity equal to 10 (this will \nreturn TRUE because the Quantity column has some values of 10):\n\nExample\n\n SELECT ProductName FROM Products\nWHERE ProductID = ANY (\n  SELECT ProductID\n  FROM OrderDetails\n  WHERE Quantity = 10\n);\n\n Try it Yourself »\n\nThe following SQL returns the ProductName if it finds ANY records in the \n\"OrderDetails\" table that has Quantity larger than 99 (this will return TRUE \nbecause the Quantity column has some values larger than 99):\n\nExample\n\n SELECT ProductName FROM Products\nWHERE ProductID = ANY (\n  SELECT ProductID\n\n FROM OrderDetails\n  WHERE Quantity > 99\n);\n\n Try it Yourself »\n\nThe following SQL returns the ProductName if it finds ANY records in the \n\"OrderDetails\" table that has Quantity larger than 1000 (this will return FALSE \nbecause the Quantity column has no values larger than 1000):\n\nExample\n\n SELECT ProductName FROM Products\nWHERE ProductID = ANY (\n  SELECT ProductID\n\n FROM OrderDetails\n  WHERE Quantity > 1000\n);\n\n Try it Yourself »\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "MySQL ANY Examples"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:37Z",
+        "subject": "MySQL",
+        "title": "MySQL ANY Operator"
+    },
+    {
+        "url": "https://www.w3schools.com/mysql/mysql_all.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "mysql_mysql_all",
+        "code_examples": [
+            {
+                "code": "SELECT column_name(s)\n\n FROM table_name\n\n WHERE \n column_name operator ALL (subquery);",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "SELECT ProductName FROM Products\nWHERE ProductID = ALL (\n  SELECT ProductID\n  FROM OrderDetails\n  WHERE Quantity = 10\n);",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MySQL HOME\nMySQL Intro\nMySQL RDBMS",
+                "heading": "MySQL Tutorial"
+            },
+            {
+                "content": "MySQL SQL\nMySQL SELECT\nMySQL SELECT DISTINCT\nMySQL WHERE\nMySQL ORDER BY\nMySQL AND\nMySQL OR\nMySQL NOT\nMySQL INSERT INTO\nMySQL NULL Values\nMySQL UPDATE\nMySQL DELETE\nMySQL LIMIT\nMySQL Aggregate Functions\nMySQL MIN()\nMySQL MAX()\nMySQL COUNT()\nMySQL SUM()\nMySQL AVG()\nMySQL LIKE\nMySQL Wildcards\nMySQL IN\nMySQL BETWEEN\nMySQL Aliases\nMySQL Joins\nMySQL INNER JOIN\nMySQL LEFT JOIN\nMySQL RIGHT JOIN\nMySQL CROSS JOIN\nMySQL Self Join\nMySQL UNION\nMySQL UNION ALL\nMySQL GROUP BY\nMySQL HAVING\nMySQL EXISTS\nMySQL ANY\nMySQL ALL\nMySQL INSERT SELECT\nMySQL CASE\nMySQL Null Functions\nMySQL Stored Procedures\nMySQL Comments\nMySQL Operators",
+                "heading": "MySQL SQL"
+            },
+            {
+                "content": "MySQL Install (Windows)\nMySQL Install (Linux)-->\nMySQL Create DB\nMySQL Drop DB\nMySQL Create Table\nMySQL Drop Table\nMySQL Alter Table\nMySQL Constraints\nMySQL Not Null\nMySQL Unique\nMySQL Primary Key\nMySQL Foreign Key\nMySQL Check\nMySQL Default\nMySQL Create Index\nMySQL Auto Increment\nMySQL Dates\nMySQL Views\nMySQL Injection\nMySQL Prepared Statements",
+                "heading": "MySQL Database"
+            },
+            {
+                "content": "MySQL Certificate",
+                "heading": "MySQL Cert"
+            },
+            {
+                "content": "MySQL Data Types\nMySQL Functions\n\n String Functions\n ASCII\n CHAR_LENGTH\n CHARACTER_LENGTH\n CONCAT\n CONCAT_WS\n FIELD\n FIND_IN_SET\n FORMAT\n INSERT\n INSTR\n LCASE\n LEFT\n LENGTH\n LOCATE\n LOWER\n LPAD\n LTRIM\n MID\n POSITION\n REPEAT\n REPLACE\n REVERSE\n RIGHT\n RPAD\n RTRIM\n SPACE\n STRCMP\n SUBSTR\n SUBSTRING\n SUBSTRING_INDEX\n TRIM\n UCASE\n UPPER\n\n Numeric Functions\n ABS\n ACOS\n ASIN\n ATAN\n ATAN2\n AVG\n CEIL\n CEILING\n COS\n COT\n COUNT\n DEGREES\n DIV\n EXP\n FLOOR\n GREATEST\n LEAST\n LN\n LOG\n LOG10\n LOG2\n MAX\n MIN\n MOD\n PI\n POW\n POWER\n RADIANS\n RAND\n ROUND\n SIGN\n SIN\n SQRT\n SUM\n TAN\n TRUNCATE\n\n Date Functions\n ADDDATE\n ADDTIME\n CURDATE\n CURRENT_DATE\n CURRENT_TIME\n CURRENT_TIMESTAMP\n CURTIME\n DATE\n DATEDIFF\n DATE_ADD\n DATE_FORMAT\n DATE_SUB\n DAY\n DAYNAME\n DAYOFMONTH\n DAYOFWEEK\n DAYOFYEAR\n EXTRACT\n FROM_DAYS\n HOUR\n LAST_DAY\n LOCALTIME\n LOCALTIMESTAMP\n MAKEDATE\n MAKETIME\n MICROSECOND\n MINUTE\n MONTH\n MONTHNAME\n NOW\n PERIOD_ADD\n PERIOD_DIFF\n QUARTER\n SECOND\n SEC_TO_TIME\n STR_TO_DATE\n SUBDATE\n SUBTIME\n SYSDATE\n TIME\n TIME_FORMAT\n TIME_TO_SEC\n TIMEDIFF\n TIMESTAMP\n TO_DAYS\n WEEK\n WEEKDAY\n WEEKOFYEAR\n YEAR\n YEARWEEK\n\n Advanced Functions\n BIN\n BINARY\n CASE\n CAST\n COALESCE\n CONNECTION_ID\n CONV\n CONVERT\n CURRENT_USER\n DATABASE\n IF\n IFNULL\n ISNULL\n LAST_INSERT_ID\n NULLIF\n SESSION_USER\n SYSTEM_USER\n USER\n VERSION",
+                "heading": "MySQL References"
+            },
+            {
+                "content": "MySQL Examples\nMySQL Editor\nMySQL Quiz\nMySQL Exercises\nMySQL Syllabus\nMySQL Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\nMySQL ALL Operator\n\n ❮ Previous\n Next ❯",
+                "heading": "MySQL Examples"
+            },
+            {
+                "content": "The ALL operator is used to compare a value \nto every value returned by a subquery.\n\nThe ALL operator evaluates to TRUE if \nevery value in the subquery result-set meet the condition.\n\nThe ALL operator is typically used with\nWHERE and HAVING statements.\n\nALL Syntax\n\n SELECT column_name(s)\n\n FROM table_name\n\n WHERE \n column_name operator ALL (subquery);\n\n Note: The operator must be a standard comparison \noperator (=, <>, !=, >, >=, <, or <=).",
+                "heading": "The MySQL ALL Operator"
+            },
+            {
+                "content": "Below is a selection from the \"Products\" table in the Northwind sample database:\n\n ProductID\n ProductName\n Price\n\n 1\n Chais\n 18.00\n\n 2\n Chang\n 19.00\n\n 3\n Aniseed Syrup\n 10.00\n\n 4\n Chef Anton's Cajun Seasoning\n 22.00\n\nAnd a selection from the \"OrderDetails\" table:\n\n OrderDetailID\n ProductID\n Quantity\n\n 1\n 11\n 12\n\n 2\n 42\n 10\n\n 3\n 72\n 5\n\n 4\n 14\n 9",
+                "heading": "Demo Database"
+            },
+            {
+                "content": "The following SQL returns the ProductName if ALL the records in the \"OrderDetails\" table has Quantity equal to 10. This will of course return FALSE \nbecause the Quantity column has many different values (not only the value of 10):\n\nExample\n\n SELECT ProductName FROM Products\nWHERE ProductID = ALL (\n  SELECT ProductID\n  FROM OrderDetails\n  WHERE Quantity = 10\n);\n\n Try it Yourself »\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "MySQL ALL Example"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:37Z",
+        "subject": "MySQL",
+        "title": "MySQL ALL Operator"
+    },
+    {
+        "url": "https://www.w3schools.com/mysql/mysql_insert_into_select.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "mysql_mysql_insert_into_select",
+        "code_examples": [
+            {
+                "code": "INSERT INTO target_table\n\nSELECT * FROM source_table\n\nWHERE condition;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "INSERT INTO target_table (column1, column2, column3, ...)\n\nSELECT column1, column2, column3, ...\n\nFROM source_table\n\nWHERE condition;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\nCopy \"Suppliers\" into \"Customers\" (the columns that are not filled with data, will contain NULL):\n\n INSERT INTO Customers (CustomerName, \n City, Country)\n\n SELECT SupplierName, City, Country FROM Suppliers;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\nCopy \"Suppliers\" into \"Customers\" (copy all columns):\n\n INSERT INTO Customers\nSELECT * FROM Suppliers;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\nCopy only the German suppliers into \"Customers\":\n\n INSERT INTO Customers (CustomerName, \n City, Country)\n\n SELECT SupplierName, City, Country FROM Suppliers\nWHERE Country='Germany';",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MySQL HOME\nMySQL Intro\nMySQL RDBMS",
+                "heading": "MySQL Tutorial"
+            },
+            {
+                "content": "MySQL SQL\nMySQL SELECT\nMySQL SELECT DISTINCT\nMySQL WHERE\nMySQL ORDER BY\nMySQL AND\nMySQL OR\nMySQL NOT\nMySQL INSERT INTO\nMySQL NULL Values\nMySQL UPDATE\nMySQL DELETE\nMySQL LIMIT\nMySQL Aggregate Functions\nMySQL MIN()\nMySQL MAX()\nMySQL COUNT()\nMySQL SUM()\nMySQL AVG()\nMySQL LIKE\nMySQL Wildcards\nMySQL IN\nMySQL BETWEEN\nMySQL Aliases\nMySQL Joins\nMySQL INNER JOIN\nMySQL LEFT JOIN\nMySQL RIGHT JOIN\nMySQL CROSS JOIN\nMySQL Self Join\nMySQL UNION\nMySQL UNION ALL\nMySQL GROUP BY\nMySQL HAVING\nMySQL EXISTS\nMySQL ANY\nMySQL ALL\nMySQL INSERT SELECT\nMySQL CASE\nMySQL Null Functions\nMySQL Stored Procedures\nMySQL Comments\nMySQL Operators",
+                "heading": "MySQL SQL"
+            },
+            {
+                "content": "MySQL Install (Windows)\nMySQL Install (Linux)-->\nMySQL Create DB\nMySQL Drop DB\nMySQL Create Table\nMySQL Drop Table\nMySQL Alter Table\nMySQL Constraints\nMySQL Not Null\nMySQL Unique\nMySQL Primary Key\nMySQL Foreign Key\nMySQL Check\nMySQL Default\nMySQL Create Index\nMySQL Auto Increment\nMySQL Dates\nMySQL Views\nMySQL Injection\nMySQL Prepared Statements",
+                "heading": "MySQL Database"
+            },
+            {
+                "content": "MySQL Certificate",
+                "heading": "MySQL Cert"
+            },
+            {
+                "content": "MySQL Data Types\nMySQL Functions\n\n String Functions\n ASCII\n CHAR_LENGTH\n CHARACTER_LENGTH\n CONCAT\n CONCAT_WS\n FIELD\n FIND_IN_SET\n FORMAT\n INSERT\n INSTR\n LCASE\n LEFT\n LENGTH\n LOCATE\n LOWER\n LPAD\n LTRIM\n MID\n POSITION\n REPEAT\n REPLACE\n REVERSE\n RIGHT\n RPAD\n RTRIM\n SPACE\n STRCMP\n SUBSTR\n SUBSTRING\n SUBSTRING_INDEX\n TRIM\n UCASE\n UPPER\n\n Numeric Functions\n ABS\n ACOS\n ASIN\n ATAN\n ATAN2\n AVG\n CEIL\n CEILING\n COS\n COT\n COUNT\n DEGREES\n DIV\n EXP\n FLOOR\n GREATEST\n LEAST\n LN\n LOG\n LOG10\n LOG2\n MAX\n MIN\n MOD\n PI\n POW\n POWER\n RADIANS\n RAND\n ROUND\n SIGN\n SIN\n SQRT\n SUM\n TAN\n TRUNCATE\n\n Date Functions\n ADDDATE\n ADDTIME\n CURDATE\n CURRENT_DATE\n CURRENT_TIME\n CURRENT_TIMESTAMP\n CURTIME\n DATE\n DATEDIFF\n DATE_ADD\n DATE_FORMAT\n DATE_SUB\n DAY\n DAYNAME\n DAYOFMONTH\n DAYOFWEEK\n DAYOFYEAR\n EXTRACT\n FROM_DAYS\n HOUR\n LAST_DAY\n LOCALTIME\n LOCALTIMESTAMP\n MAKEDATE\n MAKETIME\n MICROSECOND\n MINUTE\n MONTH\n MONTHNAME\n NOW\n PERIOD_ADD\n PERIOD_DIFF\n QUARTER\n SECOND\n SEC_TO_TIME\n STR_TO_DATE\n SUBDATE\n SUBTIME\n SYSDATE\n TIME\n TIME_FORMAT\n TIME_TO_SEC\n TIMEDIFF\n TIMESTAMP\n TO_DAYS\n WEEK\n WEEKDAY\n WEEKOFYEAR\n YEAR\n YEARWEEK\n\n Advanced Functions\n BIN\n BINARY\n CASE\n CAST\n COALESCE\n CONNECTION_ID\n CONV\n CONVERT\n CURRENT_USER\n DATABASE\n IF\n IFNULL\n ISNULL\n LAST_INSERT_ID\n NULLIF\n SESSION_USER\n SYSTEM_USER\n USER\n VERSION",
+                "heading": "MySQL References"
+            },
+            {
+                "content": "MySQL Examples\nMySQL Editor\nMySQL Quiz\nMySQL Exercises\nMySQL Syllabus\nMySQL Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\nMySQL INSERT INTO SELECT Statement\n\n ❮ Previous\n Next ❯",
+                "heading": "MySQL Examples"
+            },
+            {
+                "content": "The INSERT INTO SELECT statement is used to copy data from \nan existing table and \ninsert it into another existing table.\n\nThe INSERT INTO SELECT statement requires that \nthe data types in source and target tables matches.\n\nNote: The existing records in the target table are unaffected.\n\nINSERT INTO SELECT Syntax\nCopy all columns from one table to another table:\n\nINSERT INTO target_table\n\nSELECT * FROM source_table\n\nWHERE condition;\n\nNote: If you omit the column names, the number and order of \ncolumns in the source and target tables must be exactly the same!\n\nCopy only some columns from one table to another table:\n\nINSERT INTO target_table (column1, column2, column3, ...)\n\nSELECT column1, column2, column3, ...\n\nFROM source_table\n\nWHERE condition;",
+                "heading": "The MySQL INSERT INTO SELECT Statement"
+            },
+            {
+                "content": "Below is a selection from the \"Customers\" table:\n\n CustomerID\n CustomerName\n ContactName\n Address\n City\n PostalCode\n Country\n\n 1\n\n Alfreds Futterkiste\n Maria Anders\n Obere Str. 57\n Berlin\n 12209\n Germany\n\n 2\n Ana Trujillo Emparedados y helados\n Ana Trujillo\n Avda. de la Constitución 2222\n México D.F.\n 05021\n Mexico\n\n 3\n Antonio Moreno Taquería\n Antonio Moreno\n Mataderos 2312\n México D.F.\n 05023\n Mexico\n\nAnd a selection from the \"Suppliers\" table:\n\n SupplierID\n SupplierName\n ContactName\n Address\n City\n Postal Code\n Country\n\n 1\n Exotic Liquid\n Charlotte Cooper\n 49 Gilbert St.\n Londona\n EC1 4SD\n UK\n\n 2\n New Orleans Cajun Delights\n Shelley Burke\n P.O. Box 78934\n New Orleans\n 70117\n USA\n\n 3\n Grandma Kelly's Homestead\n Regina Murphy\n 707 Oxford Rd.\n Ann Arbor\n 48104\n USA",
+                "heading": "Demo Database"
+            },
+            {
+                "content": "Example\nCopy \"Suppliers\" into \"Customers\" (the columns that are not filled with data, will contain NULL):\n\n INSERT INTO Customers (CustomerName, \n City, Country)\n\n SELECT SupplierName, City, Country FROM Suppliers;\n\nExample\nCopy \"Suppliers\" into \"Customers\" (copy all columns):\n\n INSERT INTO Customers\nSELECT * FROM Suppliers;\n\nExample\nCopy only the German suppliers into \"Customers\":\n\n INSERT INTO Customers (CustomerName, \n City, Country)\n\n SELECT SupplierName, City, Country FROM Suppliers\nWHERE Country='Germany';\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "MySQL INSERT INTO SELECT Examples"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:37Z",
+        "subject": "MySQL",
+        "title": "MySQL INSERT INTO SELECT Statement"
+    },
+    {
+        "url": "https://www.w3schools.com/mysql/mysql_case.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "mysql_mysql_case",
+        "code_examples": [
+            {
+                "code": "CASE\n    WHEN condition1 THEN result1\n\n WHEN condition2 THEN result2\n    WHEN \n conditionN THEN resultN\n    ELSE result\nEND;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "SELECT ProductName, Price,\n\n CASE\n\n   WHEN Price < 20 THEN 'Low Cost'\n\n   WHEN Price BETWEEN 20 AND 50 THEN 'Medium Cost'\n\n   ELSE 'High Cost'\n\n END AS PriceCategory\n\n FROM Products;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MySQL HOME\nMySQL Intro\nMySQL RDBMS",
+                "heading": "MySQL Tutorial"
+            },
+            {
+                "content": "MySQL SQL\nMySQL SELECT\nMySQL SELECT DISTINCT\nMySQL WHERE\nMySQL ORDER BY\nMySQL AND\nMySQL OR\nMySQL NOT\nMySQL INSERT INTO\nMySQL NULL Values\nMySQL UPDATE\nMySQL DELETE\nMySQL LIMIT\nMySQL Aggregate Functions\nMySQL MIN()\nMySQL MAX()\nMySQL COUNT()\nMySQL SUM()\nMySQL AVG()\nMySQL LIKE\nMySQL Wildcards\nMySQL IN\nMySQL BETWEEN\nMySQL Aliases\nMySQL Joins\nMySQL INNER JOIN\nMySQL LEFT JOIN\nMySQL RIGHT JOIN\nMySQL CROSS JOIN\nMySQL Self Join\nMySQL UNION\nMySQL UNION ALL\nMySQL GROUP BY\nMySQL HAVING\nMySQL EXISTS\nMySQL ANY\nMySQL ALL\nMySQL INSERT SELECT\nMySQL CASE\nMySQL Null Functions\nMySQL Stored Procedures\nMySQL Comments\nMySQL Operators",
+                "heading": "MySQL SQL"
+            },
+            {
+                "content": "MySQL Install (Windows)\nMySQL Install (Linux)-->\nMySQL Create DB\nMySQL Drop DB\nMySQL Create Table\nMySQL Drop Table\nMySQL Alter Table\nMySQL Constraints\nMySQL Not Null\nMySQL Unique\nMySQL Primary Key\nMySQL Foreign Key\nMySQL Check\nMySQL Default\nMySQL Create Index\nMySQL Auto Increment\nMySQL Dates\nMySQL Views\nMySQL Injection\nMySQL Prepared Statements",
+                "heading": "MySQL Database"
+            },
+            {
+                "content": "MySQL Certificate",
+                "heading": "MySQL Cert"
+            },
+            {
+                "content": "MySQL Data Types\nMySQL Functions\n\n String Functions\n ASCII\n CHAR_LENGTH\n CHARACTER_LENGTH\n CONCAT\n CONCAT_WS\n FIELD\n FIND_IN_SET\n FORMAT\n INSERT\n INSTR\n LCASE\n LEFT\n LENGTH\n LOCATE\n LOWER\n LPAD\n LTRIM\n MID\n POSITION\n REPEAT\n REPLACE\n REVERSE\n RIGHT\n RPAD\n RTRIM\n SPACE\n STRCMP\n SUBSTR\n SUBSTRING\n SUBSTRING_INDEX\n TRIM\n UCASE\n UPPER\n\n Numeric Functions\n ABS\n ACOS\n ASIN\n ATAN\n ATAN2\n AVG\n CEIL\n CEILING\n COS\n COT\n COUNT\n DEGREES\n DIV\n EXP\n FLOOR\n GREATEST\n LEAST\n LN\n LOG\n LOG10\n LOG2\n MAX\n MIN\n MOD\n PI\n POW\n POWER\n RADIANS\n RAND\n ROUND\n SIGN\n SIN\n SQRT\n SUM\n TAN\n TRUNCATE\n\n Date Functions\n ADDDATE\n ADDTIME\n CURDATE\n CURRENT_DATE\n CURRENT_TIME\n CURRENT_TIMESTAMP\n CURTIME\n DATE\n DATEDIFF\n DATE_ADD\n DATE_FORMAT\n DATE_SUB\n DAY\n DAYNAME\n DAYOFMONTH\n DAYOFWEEK\n DAYOFYEAR\n EXTRACT\n FROM_DAYS\n HOUR\n LAST_DAY\n LOCALTIME\n LOCALTIMESTAMP\n MAKEDATE\n MAKETIME\n MICROSECOND\n MINUTE\n MONTH\n MONTHNAME\n NOW\n PERIOD_ADD\n PERIOD_DIFF\n QUARTER\n SECOND\n SEC_TO_TIME\n STR_TO_DATE\n SUBDATE\n SUBTIME\n SYSDATE\n TIME\n TIME_FORMAT\n TIME_TO_SEC\n TIMEDIFF\n TIMESTAMP\n TO_DAYS\n WEEK\n WEEKDAY\n WEEKOFYEAR\n YEAR\n YEARWEEK\n\n Advanced Functions\n BIN\n BINARY\n CASE\n CAST\n COALESCE\n CONNECTION_ID\n CONV\n CONVERT\n CURRENT_USER\n DATABASE\n IF\n IFNULL\n ISNULL\n LAST_INSERT_ID\n NULLIF\n SESSION_USER\n SYSTEM_USER\n USER\n VERSION",
+                "heading": "MySQL References"
+            },
+            {
+                "content": "MySQL Examples\nMySQL Editor\nMySQL Quiz\nMySQL Exercises\nMySQL Syllabus\nMySQL Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\nMySQL CASE Statement\n\n ❮ Previous\n Next ❯",
+                "heading": "MySQL Examples"
+            },
+            {
+                "content": "The CASE statement is used to define \ndifferent results based on specified conditions in an SQL statement.\n\nThe CASE statement goes through the conditions and \nstops at the first match (like an if-then-else statement). So, once a condition is true, it will stop \nprocessing and return the result. If no conditions are true, it returns \nthe value in the ELSE clause. If there is no ELSE \nclause and no conditions are true, it returns NULL.",
+                "heading": "The MySQL CASE Statement"
+            },
+            {
+                "content": "CASE\n    WHEN condition1 THEN result1\n\n WHEN condition2 THEN result2\n    WHEN \n conditionN THEN resultN\n    ELSE result\nEND;",
+                "heading": "CASE Syntax"
+            },
+            {
+                "content": "Here we use the CASE estatement to \ncategorize data (Price) and we create a new column (PriceCategory) that shows in \nwhich price category each product is:\n\nExample\n\n SELECT ProductName, Price,\n\n CASE\n\n   WHEN Price < 20 THEN 'Low Cost'\n\n   WHEN Price BETWEEN 20 AND 50 THEN 'Medium Cost'\n\n   ELSE 'High Cost'\n\n END AS PriceCategory\n\n FROM Products;\n\nTry it Yourself »",
+                "heading": "MySQL CASE Example"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:37Z",
+        "subject": "MySQL",
+        "title": "MySQL CASE Statement"
+    },
+    {
+        "url": "https://www.w3schools.com/mysql/mysql_ifnull.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "mysql_mysql_ifnull",
+        "code_examples": [
+            {
+                "code": "SELECT ProductName, Price * (InStock + InOrder)\n\nFROM Products;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "SELECT ProductName, Price * (InStock + COALESCE(InOrder, 0))\n\nFROM Products;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "SELECT ProductName, Price * (InStock + IFNULL(InOrder, 0))\n\nFROM Products;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MySQL HOME\nMySQL Intro\nMySQL RDBMS",
+                "heading": "MySQL Tutorial"
+            },
+            {
+                "content": "MySQL SQL\nMySQL SELECT\nMySQL SELECT DISTINCT\nMySQL WHERE\nMySQL ORDER BY\nMySQL AND\nMySQL OR\nMySQL NOT\nMySQL INSERT INTO\nMySQL NULL Values\nMySQL UPDATE\nMySQL DELETE\nMySQL LIMIT\nMySQL Aggregate Functions\nMySQL MIN()\nMySQL MAX()\nMySQL COUNT()\nMySQL SUM()\nMySQL AVG()\nMySQL LIKE\nMySQL Wildcards\nMySQL IN\nMySQL BETWEEN\nMySQL Aliases\nMySQL Joins\nMySQL INNER JOIN\nMySQL LEFT JOIN\nMySQL RIGHT JOIN\nMySQL CROSS JOIN\nMySQL Self Join\nMySQL UNION\nMySQL UNION ALL\nMySQL GROUP BY\nMySQL HAVING\nMySQL EXISTS\nMySQL ANY\nMySQL ALL\nMySQL INSERT SELECT\nMySQL CASE\nMySQL Null Functions\nMySQL Stored Procedures\nMySQL Comments\nMySQL Operators",
+                "heading": "MySQL SQL"
+            },
+            {
+                "content": "MySQL Install (Windows)\nMySQL Install (Linux)-->\nMySQL Create DB\nMySQL Drop DB\nMySQL Create Table\nMySQL Drop Table\nMySQL Alter Table\nMySQL Constraints\nMySQL Not Null\nMySQL Unique\nMySQL Primary Key\nMySQL Foreign Key\nMySQL Check\nMySQL Default\nMySQL Create Index\nMySQL Auto Increment\nMySQL Dates\nMySQL Views\nMySQL Injection\nMySQL Prepared Statements",
+                "heading": "MySQL Database"
+            },
+            {
+                "content": "MySQL Certificate",
+                "heading": "MySQL Cert"
+            },
+            {
+                "content": "MySQL Data Types\nMySQL Functions\n\n String Functions\n ASCII\n CHAR_LENGTH\n CHARACTER_LENGTH\n CONCAT\n CONCAT_WS\n FIELD\n FIND_IN_SET\n FORMAT\n INSERT\n INSTR\n LCASE\n LEFT\n LENGTH\n LOCATE\n LOWER\n LPAD\n LTRIM\n MID\n POSITION\n REPEAT\n REPLACE\n REVERSE\n RIGHT\n RPAD\n RTRIM\n SPACE\n STRCMP\n SUBSTR\n SUBSTRING\n SUBSTRING_INDEX\n TRIM\n UCASE\n UPPER\n\n Numeric Functions\n ABS\n ACOS\n ASIN\n ATAN\n ATAN2\n AVG\n CEIL\n CEILING\n COS\n COT\n COUNT\n DEGREES\n DIV\n EXP\n FLOOR\n GREATEST\n LEAST\n LN\n LOG\n LOG10\n LOG2\n MAX\n MIN\n MOD\n PI\n POW\n POWER\n RADIANS\n RAND\n ROUND\n SIGN\n SIN\n SQRT\n SUM\n TAN\n TRUNCATE\n\n Date Functions\n ADDDATE\n ADDTIME\n CURDATE\n CURRENT_DATE\n CURRENT_TIME\n CURRENT_TIMESTAMP\n CURTIME\n DATE\n DATEDIFF\n DATE_ADD\n DATE_FORMAT\n DATE_SUB\n DAY\n DAYNAME\n DAYOFMONTH\n DAYOFWEEK\n DAYOFYEAR\n EXTRACT\n FROM_DAYS\n HOUR\n LAST_DAY\n LOCALTIME\n LOCALTIMESTAMP\n MAKEDATE\n MAKETIME\n MICROSECOND\n MINUTE\n MONTH\n MONTHNAME\n NOW\n PERIOD_ADD\n PERIOD_DIFF\n QUARTER\n SECOND\n SEC_TO_TIME\n STR_TO_DATE\n SUBDATE\n SUBTIME\n SYSDATE\n TIME\n TIME_FORMAT\n TIME_TO_SEC\n TIMEDIFF\n TIMESTAMP\n TO_DAYS\n WEEK\n WEEKDAY\n WEEKOFYEAR\n YEAR\n YEARWEEK\n\n Advanced Functions\n BIN\n BINARY\n CASE\n CAST\n COALESCE\n CONNECTION_ID\n CONV\n CONVERT\n CURRENT_USER\n DATABASE\n IF\n IFNULL\n ISNULL\n LAST_INSERT_ID\n NULLIF\n SESSION_USER\n SYSTEM_USER\n USER\n VERSION",
+                "heading": "MySQL References"
+            },
+            {
+                "content": "MySQL Examples\nMySQL Editor\nMySQL Quiz\nMySQL Exercises\nMySQL Syllabus\nMySQL Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\nMySQL NULL Functions\n\n ❮ Previous\n Next ❯",
+                "heading": "MySQL Examples"
+            },
+            {
+                "content": "Operations involving NULL values can sometimes lead to unexpected results.\n\nMySQL has two built-in functions to handle NULL values:\n\n COALESCE()\n\n IFNULL()\n\n A NULL value represents an unknown or missing data in a database field. It is not a value itself, but a placeholder to indicate the absence of data.",
+                "heading": "MySQL COALESCE() and IFNULL() Functions"
+            },
+            {
+                "content": "Assume we have the following \"Products\" table:\n\n PId\n ProductName\n Price\n InStock\n InOrder\n\n 1\n Jarlsberg\n 10.45\n 16\n 15\n\n 2\n Mascarpone\n 32.56\n 23\n null\n\n 3\n Gorgonzola\n 15.67\n 9\n 20\n\nThe \"InOrder\" column is optional, and may contain NULL values.\n\nNow look at the following SQL statement:\n\nSELECT ProductName, Price * (InStock + InOrder)\n\nFROM Products;\n\nNote: In the SQL above, if any of the \"InOrder\" values are NULL, the result will be NULL!",
+                "heading": "Demo Database"
+            },
+            {
+                "content": "The \nCOALESCE() function is the preferred standard for handling potential NULL values.\n\nThe COALESCE() function returns the first non-NULL value in a list \nof values.\n\nSyntax\n\nCOALESCE(val1, val2, ...., val_n)\n\nHere we use the \nCOALESCE() function to replace NULL \nvalues with 0:\n\nSELECT ProductName, Price * (InStock + COALESCE(InOrder, 0))\n\nFROM Products;",
+                "heading": "MySQL COALESCE() Function"
+            },
+            {
+                "content": "The IFNULL() \nfunction \nfunction replaces NULL with a specified value.\n\nSyntax\n\n IFNULL(expr, alt)\n\nHere we replace NULL values with 0:\n\nSELECT ProductName, Price * (InStock + IFNULL(InOrder, 0))\n\nFROM Products;\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "MySQL IFNULL() Function"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:38Z",
+        "subject": "MySQL",
+        "title": "MySQL NULL Functions"
+    },
+    {
+        "url": "https://www.w3schools.com/mysql/mysql_stored_procedures.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "mysql_mysql_stored_procedures",
+        "code_examples": [
+            {
+                "code": "DELIMITER //\n\nCREATE PROCEDURE procedure_name\n\n   @param1 datatype,\n\n   @param2 datatype\n\n BEGIN\n\n   -- SQL_statements to be executed\n\n   SELECT column1, column2\n\n   FROM table_name\n\n   WHERE columnN = @paramN;\n\nEND //\n\nDELIMITER;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "CALL procedure_name('value1', 'value2');",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "DROP PROCEDURE procedure_name;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "DROP PROCEDURE IF EXISTS procedure_name;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\n DELIMITER //\n\nCREATE PROCEDURE GetCustomersByCity\n  @City VARCHAR(50)\n\n BEGIN\n  SELECT * FROM Customers\n  WHERE City = @City;\nEND //\n\n DELIMITER;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\n CALL GetCustomersByCity('London');",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\n DELIMITER //\n\nCREATE PROCEDURE GetCustomersByCity\n  @City \n VARCHAR(50),\n  @PostalCode VARCHAR(10)\nBEGIN\n  SELECT * FROM \n Customers\n  WHERE City = @City AND PostalCode = @PostalCode;\nEND //\n\n DELIMITER;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\n CALL GetCustomersByCity('London', 'WA1 1DP');",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MySQL HOME\nMySQL Intro\nMySQL RDBMS",
+                "heading": "MySQL Tutorial"
+            },
+            {
+                "content": "MySQL SQL\nMySQL SELECT\nMySQL SELECT DISTINCT\nMySQL WHERE\nMySQL ORDER BY\nMySQL AND\nMySQL OR\nMySQL NOT\nMySQL INSERT INTO\nMySQL NULL Values\nMySQL UPDATE\nMySQL DELETE\nMySQL LIMIT\nMySQL Aggregate Functions\nMySQL MIN()\nMySQL MAX()\nMySQL COUNT()\nMySQL SUM()\nMySQL AVG()\nMySQL LIKE\nMySQL Wildcards\nMySQL IN\nMySQL BETWEEN\nMySQL Aliases\nMySQL Joins\nMySQL INNER JOIN\nMySQL LEFT JOIN\nMySQL RIGHT JOIN\nMySQL CROSS JOIN\nMySQL Self Join\nMySQL UNION\nMySQL UNION ALL\nMySQL GROUP BY\nMySQL HAVING\nMySQL EXISTS\nMySQL ANY\nMySQL ALL\nMySQL INSERT SELECT\nMySQL CASE\nMySQL Null Functions\nMySQL Stored Procedures\nMySQL Comments\nMySQL Operators",
+                "heading": "MySQL SQL"
+            },
+            {
+                "content": "MySQL Install (Windows)\nMySQL Install (Linux)-->\nMySQL Create DB\nMySQL Drop DB\nMySQL Create Table\nMySQL Drop Table\nMySQL Alter Table\nMySQL Constraints\nMySQL Not Null\nMySQL Unique\nMySQL Primary Key\nMySQL Foreign Key\nMySQL Check\nMySQL Default\nMySQL Create Index\nMySQL Auto Increment\nMySQL Dates\nMySQL Views\nMySQL Injection\nMySQL Prepared Statements",
+                "heading": "MySQL Database"
+            },
+            {
+                "content": "MySQL Certificate",
+                "heading": "MySQL Cert"
+            },
+            {
+                "content": "MySQL Data Types\nMySQL Functions\n\n String Functions\n ASCII\n CHAR_LENGTH\n CHARACTER_LENGTH\n CONCAT\n CONCAT_WS\n FIELD\n FIND_IN_SET\n FORMAT\n INSERT\n INSTR\n LCASE\n LEFT\n LENGTH\n LOCATE\n LOWER\n LPAD\n LTRIM\n MID\n POSITION\n REPEAT\n REPLACE\n REVERSE\n RIGHT\n RPAD\n RTRIM\n SPACE\n STRCMP\n SUBSTR\n SUBSTRING\n SUBSTRING_INDEX\n TRIM\n UCASE\n UPPER\n\n Numeric Functions\n ABS\n ACOS\n ASIN\n ATAN\n ATAN2\n AVG\n CEIL\n CEILING\n COS\n COT\n COUNT\n DEGREES\n DIV\n EXP\n FLOOR\n GREATEST\n LEAST\n LN\n LOG\n LOG10\n LOG2\n MAX\n MIN\n MOD\n PI\n POW\n POWER\n RADIANS\n RAND\n ROUND\n SIGN\n SIN\n SQRT\n SUM\n TAN\n TRUNCATE\n\n Date Functions\n ADDDATE\n ADDTIME\n CURDATE\n CURRENT_DATE\n CURRENT_TIME\n CURRENT_TIMESTAMP\n CURTIME\n DATE\n DATEDIFF\n DATE_ADD\n DATE_FORMAT\n DATE_SUB\n DAY\n DAYNAME\n DAYOFMONTH\n DAYOFWEEK\n DAYOFYEAR\n EXTRACT\n FROM_DAYS\n HOUR\n LAST_DAY\n LOCALTIME\n LOCALTIMESTAMP\n MAKEDATE\n MAKETIME\n MICROSECOND\n MINUTE\n MONTH\n MONTHNAME\n NOW\n PERIOD_ADD\n PERIOD_DIFF\n QUARTER\n SECOND\n SEC_TO_TIME\n STR_TO_DATE\n SUBDATE\n SUBTIME\n SYSDATE\n TIME\n TIME_FORMAT\n TIME_TO_SEC\n TIMEDIFF\n TIMESTAMP\n TO_DAYS\n WEEK\n WEEKDAY\n WEEKOFYEAR\n YEAR\n YEARWEEK\n\n Advanced Functions\n BIN\n BINARY\n CASE\n CAST\n COALESCE\n CONNECTION_ID\n CONV\n CONVERT\n CURRENT_USER\n DATABASE\n IF\n IFNULL\n ISNULL\n LAST_INSERT_ID\n NULLIF\n SESSION_USER\n SYSTEM_USER\n USER\n VERSION",
+                "heading": "MySQL References"
+            },
+            {
+                "content": "MySQL Examples\nMySQL Editor\nMySQL Quiz\nMySQL Exercises\nMySQL Syllabus\nMySQL Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\nMySQL Stored Procedures\n\n ❮ Previous\n Next ❯",
+                "heading": "MySQL Examples"
+            },
+            {
+                "content": "A stored procedure is a precompiled SQL code that can be saved and reused.\n\nIf you have an SQL query that you write over and over again, save it as a \nstored procedure, and then just call it to execute it.\n\nA stored procedure can also have parameters, so it can act based on the \nparameter value(s) that is passed.",
+                "heading": "What is a Stored Procedure?"
+            },
+            {
+                "content": "Stored procedures are widely used in database management, and have the \nfollowing benefits:\n\n Code Reusability - The same procedure can be called from various applications\n\n Improved Performance - Stored procedures are precompiled and runs faster\n\n Database Security - You can set users permission to run a specific procedure (limits direct access to tables)\n\n Easy Maintenance - When updating a procedure, it automatically updates all its use",
+                "heading": "Key Benefits of Stored Procedures"
+            },
+            {
+                "content": "DELIMITER //\n\nCREATE PROCEDURE procedure_name\n\n   @param1 datatype,\n\n   @param2 datatype\n\n BEGIN\n\n   -- SQL_statements to be executed\n\n   SELECT column1, column2\n\n   FROM table_name\n\n   WHERE columnN = @paramN;\n\nEND //\n\nDELIMITER;",
+                "heading": "Stored Procedure Syntax"
+            },
+            {
+                "content": "To run a stored procedure, use the CALL \nstatement:\n\n CALL procedure_name('value1', 'value2');",
+                "heading": "Execute a Stored Procedure"
+            },
+            {
+                "content": "To delete a stored procedure, use the DROP PROCEDURE statement:\n\n DROP PROCEDURE procedure_name;\n\nTip: To ensure that DROP PROCEDURE does not \nreturn an error, if the procedure is missing, add the IF EXISTS clause:\n\n DROP PROCEDURE IF EXISTS procedure_name;",
+                "heading": "Drop a Stored Procedure"
+            },
+            {
+                "content": "In this tutorial we will use the well-known Northwind sample database.\n\nBelow is a selection from the \"Customers\" table in the Northwind sample \ndatabase:\n\n CustomerID\n CustomerName\n ContactName\n Address\n City\n PostalCode\n Country\n\n 1\n Alfreds Futterkiste\n Maria Anders\n Obere Str. 57\n Berlin\n 12209\n Germany\n\n 2\n Ana Trujillo Emparedados y helados\n Ana Trujillo\n Avda. de la Constitución 2222\n México D.F.\n 05021\n Mexico\n\n 3\n Antonio Moreno Taquería\n Antonio Moreno\n Mataderos 2312\n México D.F.\n 05023\n Mexico\n\n 4\n Around the Horn\n Thomas Hardy\n 120 Hanover Sq.\n London\n WA1 1DP\n UK\n\n 5\n Berglunds snabbköp\n Christina Berglund\n Berguvsvägen 8\n Luleå\n S-958 22\n Sweden",
+                "heading": "Demo Database"
+            },
+            {
+                "content": "The following SQL creates a stored procedure named \"GetCustomersByCity\" that \ncan be used to select Customers from a particular City in the \"Customers\" table:\n\nExample\n\n DELIMITER //\n\nCREATE PROCEDURE GetCustomersByCity\n  @City VARCHAR(50)\n\n BEGIN\n  SELECT * FROM Customers\n  WHERE City = @City;\nEND //\n\n DELIMITER;\n\nHere we execute the stored procedure by passing a city ('London') as a \nparameter, and the stored procedure returns the relevant details from the \n\"Customers\" table:\n\nExample\n\n CALL GetCustomersByCity('London');",
+                "heading": "Stored Procedure Example"
+            },
+            {
+                "content": "Adding multiple parameters is easy. Just list each parameter and the data \ntype separated by a comma as shown below.\n\nThe following SQL creates a stored procedure that selects Customers from a \nparticular City with a particular PostalCode from the \"Customers\" table:\n\nExample\n\n DELIMITER //\n\nCREATE PROCEDURE GetCustomersByCity\n  @City \n VARCHAR(50),\n  @PostalCode VARCHAR(10)\nBEGIN\n  SELECT * FROM \n Customers\n  WHERE City = @City AND PostalCode = @PostalCode;\nEND //\n\n DELIMITER;\n\nExecute the stored procedure above as follows:\n\nExample\n\n CALL GetCustomersByCity('London', 'WA1 1DP');\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Stored Procedure With Multiple Parameters"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:38Z",
+        "subject": "MySQL",
+        "title": "MySQL Stored Procedures"
+    },
+    {
+        "url": "https://www.w3schools.com/mysql/mysql_comments.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "mysql_mysql_comments",
+        "code_examples": [
+            {
+                "code": "-- Selects all German customers\n\nSELECT * FROM Customers\nWHERE Country = 'Germany';",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MySQL HOME\nMySQL Intro\nMySQL RDBMS",
+                "heading": "MySQL Tutorial"
+            },
+            {
+                "content": "MySQL SQL\nMySQL SELECT\nMySQL SELECT DISTINCT\nMySQL WHERE\nMySQL ORDER BY\nMySQL AND\nMySQL OR\nMySQL NOT\nMySQL INSERT INTO\nMySQL NULL Values\nMySQL UPDATE\nMySQL DELETE\nMySQL LIMIT\nMySQL Aggregate Functions\nMySQL MIN()\nMySQL MAX()\nMySQL COUNT()\nMySQL SUM()\nMySQL AVG()\nMySQL LIKE\nMySQL Wildcards\nMySQL IN\nMySQL BETWEEN\nMySQL Aliases\nMySQL Joins\nMySQL INNER JOIN\nMySQL LEFT JOIN\nMySQL RIGHT JOIN\nMySQL CROSS JOIN\nMySQL Self Join\nMySQL UNION\nMySQL UNION ALL\nMySQL GROUP BY\nMySQL HAVING\nMySQL EXISTS\nMySQL ANY\nMySQL ALL\nMySQL INSERT SELECT\nMySQL CASE\nMySQL Null Functions\nMySQL Stored Procedures\nMySQL Comments\nMySQL Operators",
+                "heading": "MySQL SQL"
+            },
+            {
+                "content": "MySQL Install (Windows)\nMySQL Install (Linux)-->\nMySQL Create DB\nMySQL Drop DB\nMySQL Create Table\nMySQL Drop Table\nMySQL Alter Table\nMySQL Constraints\nMySQL Not Null\nMySQL Unique\nMySQL Primary Key\nMySQL Foreign Key\nMySQL Check\nMySQL Default\nMySQL Create Index\nMySQL Auto Increment\nMySQL Dates\nMySQL Views\nMySQL Injection\nMySQL Prepared Statements",
+                "heading": "MySQL Database"
+            },
+            {
+                "content": "MySQL Certificate",
+                "heading": "MySQL Cert"
+            },
+            {
+                "content": "MySQL Data Types\nMySQL Functions\n\n String Functions\n ASCII\n CHAR_LENGTH\n CHARACTER_LENGTH\n CONCAT\n CONCAT_WS\n FIELD\n FIND_IN_SET\n FORMAT\n INSERT\n INSTR\n LCASE\n LEFT\n LENGTH\n LOCATE\n LOWER\n LPAD\n LTRIM\n MID\n POSITION\n REPEAT\n REPLACE\n REVERSE\n RIGHT\n RPAD\n RTRIM\n SPACE\n STRCMP\n SUBSTR\n SUBSTRING\n SUBSTRING_INDEX\n TRIM\n UCASE\n UPPER\n\n Numeric Functions\n ABS\n ACOS\n ASIN\n ATAN\n ATAN2\n AVG\n CEIL\n CEILING\n COS\n COT\n COUNT\n DEGREES\n DIV\n EXP\n FLOOR\n GREATEST\n LEAST\n LN\n LOG\n LOG10\n LOG2\n MAX\n MIN\n MOD\n PI\n POW\n POWER\n RADIANS\n RAND\n ROUND\n SIGN\n SIN\n SQRT\n SUM\n TAN\n TRUNCATE\n\n Date Functions\n ADDDATE\n ADDTIME\n CURDATE\n CURRENT_DATE\n CURRENT_TIME\n CURRENT_TIMESTAMP\n CURTIME\n DATE\n DATEDIFF\n DATE_ADD\n DATE_FORMAT\n DATE_SUB\n DAY\n DAYNAME\n DAYOFMONTH\n DAYOFWEEK\n DAYOFYEAR\n EXTRACT\n FROM_DAYS\n HOUR\n LAST_DAY\n LOCALTIME\n LOCALTIMESTAMP\n MAKEDATE\n MAKETIME\n MICROSECOND\n MINUTE\n MONTH\n MONTHNAME\n NOW\n PERIOD_ADD\n PERIOD_DIFF\n QUARTER\n SECOND\n SEC_TO_TIME\n STR_TO_DATE\n SUBDATE\n SUBTIME\n SYSDATE\n TIME\n TIME_FORMAT\n TIME_TO_SEC\n TIMEDIFF\n TIMESTAMP\n TO_DAYS\n WEEK\n WEEKDAY\n WEEKOFYEAR\n YEAR\n YEARWEEK\n\n Advanced Functions\n BIN\n BINARY\n CASE\n CAST\n COALESCE\n CONNECTION_ID\n CONV\n CONVERT\n CURRENT_USER\n DATABASE\n IF\n IFNULL\n ISNULL\n LAST_INSERT_ID\n NULLIF\n SESSION_USER\n SYSTEM_USER\n USER\n VERSION",
+                "heading": "MySQL References"
+            },
+            {
+                "content": "MySQL Examples\nMySQL Editor\nMySQL Quiz\nMySQL Exercises\nMySQL Syllabus\nMySQL Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\nMySQL Comments\n\n ❮ Previous\n Next ❯",
+                "heading": "MySQL Examples"
+            },
+            {
+                "content": "Comments are used to explain SQL code, or to temporarily prevent execution of SQL code (for debugging).\n\nComments are ignored by the database engine.\n\nMySQL supports single-line comments --, and multi-line comments /* \n*/.\n\nNote: MySQL requires a space after the \nsecond dash in a single-line comment!",
+                "heading": "MySQL Comments"
+            },
+            {
+                "content": "Single-line comments start with -- and \ncontinue to the end of line.\n\nAny text after -- and to the end of the line will be ignored.\n\nThe following example uses a single-line comment as an explanation:\n\nExample\n\n-- Selects all German customers\n\nSELECT * FROM Customers\nWHERE Country = 'Germany';\n\n Try it Yourself »\n\nThe following example uses a single-line comment to comment away the end of a \nline:\n\nExample\n\nSELECT * FROM Customers -- WHERE City='Berlin';\n\n Try it Yourself »\n\nThe following example uses a single-line comment to temporarily prevent \nexecution of an SQL statement:\n\nExample\n\n-- SELECT * FROM Customers;\n\nSELECT * FROM Products;\n\n Try it Yourself »",
+                "heading": "MySQL Single-line Comments"
+            },
+            {
+                "content": "Multi-line comments start with /* and end with \n*/.\n\nAny text between /* and \n*/ will be ignored.\n\nThe following example uses a multi-line comment as an explanation:\n\nExample\n\n/* Selects all German customers\n\n from Berlin */\n\nSELECT * FROM Customers\nWHERE Country = 'Germany' AND City = 'Berlin';\n\n Try it Yourself »\n\nThe following example uses a multi-line comment to ignore many SQL \nstatements:\n\nExample\n\n/*SELECT * FROM Customers;\n\nSELECT * FROM Products;\n\nSELECT * FROM Orders;\n\nSELECT * FROM Categories;*/\n\nSELECT * FROM Suppliers;\n\n Try it Yourself »\n\nTo ignore just a part of an SQL code, you can also use multi-line comment:\n\nExample\n\nSELECT CustomerName, /*City,*/ Country FROM Customers;\n\n Try it Yourself »\n\nThe following example uses a multi-line comment to ignore part of an SQL \nstatement:\n\nExample\n\nSELECT * FROM Customers WHERE (CustomerName LIKE 'L%'\n\nOR CustomerName LIKE 'R%' /*OR CustomerName LIKE 'S%'\n\nOR CustomerName LIKE 'T%'*/ OR CustomerName LIKE 'W%')\n\nAND Country='USA'\n\nORDER BY CustomerName;\n\n Try it Yourself »\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "MySQL Multi-line Comments"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:39Z",
+        "subject": "MySQL",
+        "title": "MySQL Comments"
+    },
+    {
+        "url": "https://www.w3schools.com/mysql/mysql_operators.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "mysql_mysql_operators",
+        "code_examples": [],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MySQL HOME\nMySQL Intro\nMySQL RDBMS",
+                "heading": "MySQL Tutorial"
+            },
+            {
+                "content": "MySQL SQL\nMySQL SELECT\nMySQL SELECT DISTINCT\nMySQL WHERE\nMySQL ORDER BY\nMySQL AND\nMySQL OR\nMySQL NOT\nMySQL INSERT INTO\nMySQL NULL Values\nMySQL UPDATE\nMySQL DELETE\nMySQL LIMIT\nMySQL Aggregate Functions\nMySQL MIN()\nMySQL MAX()\nMySQL COUNT()\nMySQL SUM()\nMySQL AVG()\nMySQL LIKE\nMySQL Wildcards\nMySQL IN\nMySQL BETWEEN\nMySQL Aliases\nMySQL Joins\nMySQL INNER JOIN\nMySQL LEFT JOIN\nMySQL RIGHT JOIN\nMySQL CROSS JOIN\nMySQL Self Join\nMySQL UNION\nMySQL UNION ALL\nMySQL GROUP BY\nMySQL HAVING\nMySQL EXISTS\nMySQL ANY\nMySQL ALL\nMySQL INSERT SELECT\nMySQL CASE\nMySQL Null Functions\nMySQL Stored Procedures\nMySQL Comments\nMySQL Operators",
+                "heading": "MySQL SQL"
+            },
+            {
+                "content": "MySQL Install (Windows)\nMySQL Install (Linux)-->\nMySQL Create DB\nMySQL Drop DB\nMySQL Create Table\nMySQL Drop Table\nMySQL Alter Table\nMySQL Constraints\nMySQL Not Null\nMySQL Unique\nMySQL Primary Key\nMySQL Foreign Key\nMySQL Check\nMySQL Default\nMySQL Create Index\nMySQL Auto Increment\nMySQL Dates\nMySQL Views\nMySQL Injection\nMySQL Prepared Statements",
+                "heading": "MySQL Database"
+            },
+            {
+                "content": "MySQL Certificate",
+                "heading": "MySQL Cert"
+            },
+            {
+                "content": "MySQL Data Types\nMySQL Functions\n\n String Functions\n ASCII\n CHAR_LENGTH\n CHARACTER_LENGTH\n CONCAT\n CONCAT_WS\n FIELD\n FIND_IN_SET\n FORMAT\n INSERT\n INSTR\n LCASE\n LEFT\n LENGTH\n LOCATE\n LOWER\n LPAD\n LTRIM\n MID\n POSITION\n REPEAT\n REPLACE\n REVERSE\n RIGHT\n RPAD\n RTRIM\n SPACE\n STRCMP\n SUBSTR\n SUBSTRING\n SUBSTRING_INDEX\n TRIM\n UCASE\n UPPER\n\n Numeric Functions\n ABS\n ACOS\n ASIN\n ATAN\n ATAN2\n AVG\n CEIL\n CEILING\n COS\n COT\n COUNT\n DEGREES\n DIV\n EXP\n FLOOR\n GREATEST\n LEAST\n LN\n LOG\n LOG10\n LOG2\n MAX\n MIN\n MOD\n PI\n POW\n POWER\n RADIANS\n RAND\n ROUND\n SIGN\n SIN\n SQRT\n SUM\n TAN\n TRUNCATE\n\n Date Functions\n ADDDATE\n ADDTIME\n CURDATE\n CURRENT_DATE\n CURRENT_TIME\n CURRENT_TIMESTAMP\n CURTIME\n DATE\n DATEDIFF\n DATE_ADD\n DATE_FORMAT\n DATE_SUB\n DAY\n DAYNAME\n DAYOFMONTH\n DAYOFWEEK\n DAYOFYEAR\n EXTRACT\n FROM_DAYS\n HOUR\n LAST_DAY\n LOCALTIME\n LOCALTIMESTAMP\n MAKEDATE\n MAKETIME\n MICROSECOND\n MINUTE\n MONTH\n MONTHNAME\n NOW\n PERIOD_ADD\n PERIOD_DIFF\n QUARTER\n SECOND\n SEC_TO_TIME\n STR_TO_DATE\n SUBDATE\n SUBTIME\n SYSDATE\n TIME\n TIME_FORMAT\n TIME_TO_SEC\n TIMEDIFF\n TIMESTAMP\n TO_DAYS\n WEEK\n WEEKDAY\n WEEKOFYEAR\n YEAR\n YEARWEEK\n\n Advanced Functions\n BIN\n BINARY\n CASE\n CAST\n COALESCE\n CONNECTION_ID\n CONV\n CONVERT\n CURRENT_USER\n DATABASE\n IF\n IFNULL\n ISNULL\n LAST_INSERT_ID\n NULLIF\n SESSION_USER\n SYSTEM_USER\n USER\n VERSION",
+                "heading": "MySQL References"
+            },
+            {
+                "content": "MySQL Examples\nMySQL Editor\nMySQL Quiz\nMySQL Exercises\nMySQL Syllabus\nMySQL Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\nMySQL Operators\n\n ❮ Previous\n Next ❯",
+                "heading": "MySQL Examples"
+            },
+            {
+                "content": "MySQL operators are keywords and symbols used to perform operations with data values.\n\nMySQL operators are used in SQL statements like SELECT, \nWHERE, LIKE, etc.\n\nMySQL operators is categorized into the following types:\n\n Arithmetic operators\n\n Comparison operators\n\n Compound operators\n\n Bitwise operators\n\n Logical operators",
+                "heading": "MySQL Operators"
+            },
+            {
+                "content": "Operator\nDescription\nExample\n\n+\nAddition\nTry it\n\n-\nSubtraction\nTry it\n\n*\nMultiplication\nTry it\n\n/\nDivision\nTry it\n\n%\nModulus\nTry it",
+                "heading": "MySQL Arithmetic Operators"
+            },
+            {
+                "content": "Operator\nDescription\nExample\n\n=\nEqual to\nTry it\n\n>\nGreater than\nTry it\n\n<\nLess than\nTry it\n\n>=\nGreater than or equal to\nTry it\n\n<=\nLess than or equal to\nTry it\n\n<>\nNot equal to\nTry it",
+                "heading": "MySQL Comparison Operators"
+            },
+            {
+                "content": "Operator\nDescription\n\n+=\nAdd equals\n\n-=\nSubtract equals\n\n*=\nMultiply equals\n\n/=\nDivide equals\n\n%=\nModulo equals\n\n&=\nBitwise AND equals\n\n^-=\nBitwise exclusive equals\n\n|*=\nBitwise OR equals",
+                "heading": "MySQL Compound Operators"
+            },
+            {
+                "content": "Operator\nDescription\n\n&\nBitwise AND\n\n|\nBitwise OR\n\n^\nBitwise exclusive OR",
+                "heading": "MySQL Bitwise Operators"
+            },
+            {
+                "content": "Operator\nDescription\nExample\n\nALL\nTRUE if all of the subquery values meet the condition\nTry it\n\nAND\nTRUE if all the conditions separated by AND is TRUE\nTry it\n\nANY\nTRUE if any of the subquery values meet the condition\nTry it\n\nBETWEEN\nTRUE if the operand is within the range of comparisons\nTry it\n\nEXISTS\nTRUE if the subquery returns one or more records\nTry it\n\nIN\nTRUE if the operand is equal to one of a list of expressions\nTry it\n\nLIKE\nTRUE if the operand matches a pattern\nTry it\n\nNOT\nDisplays a record if the condition(s) is NOT TRUE\nTry it\n\nOR\nTRUE if any of the conditions separated by OR is TRUE\nTry it\n\nSOME\nTRUE if any of the subquery values meet the condition\nTry it\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "MySQL Logical Operators"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:39Z",
+        "subject": "MySQL",
+        "title": "MySQL Operators"
+    },
+    {
+        "url": "https://www.w3schools.com/mysql/mysql_install_windows.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "mysql_mysql_install_windows",
+        "code_examples": [],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MySQL HOME\nMySQL Intro\nMySQL RDBMS",
+                "heading": "MySQL Tutorial"
+            },
+            {
+                "content": "MySQL SQL\nMySQL SELECT\nMySQL SELECT DISTINCT\nMySQL WHERE\nMySQL ORDER BY\nMySQL AND\nMySQL OR\nMySQL NOT\nMySQL INSERT INTO\nMySQL NULL Values\nMySQL UPDATE\nMySQL DELETE\nMySQL LIMIT\nMySQL Aggregate Functions\nMySQL MIN()\nMySQL MAX()\nMySQL COUNT()\nMySQL SUM()\nMySQL AVG()\nMySQL LIKE\nMySQL Wildcards\nMySQL IN\nMySQL BETWEEN\nMySQL Aliases\nMySQL Joins\nMySQL INNER JOIN\nMySQL LEFT JOIN\nMySQL RIGHT JOIN\nMySQL CROSS JOIN\nMySQL Self Join\nMySQL UNION\nMySQL UNION ALL\nMySQL GROUP BY\nMySQL HAVING\nMySQL EXISTS\nMySQL ANY\nMySQL ALL\nMySQL INSERT SELECT\nMySQL CASE\nMySQL Null Functions\nMySQL Stored Procedures\nMySQL Comments\nMySQL Operators",
+                "heading": "MySQL SQL"
+            },
+            {
+                "content": "MySQL Install (Windows)\nMySQL Install (Linux)-->\nMySQL Create DB\nMySQL Drop DB\nMySQL Create Table\nMySQL Drop Table\nMySQL Alter Table\nMySQL Constraints\nMySQL Not Null\nMySQL Unique\nMySQL Primary Key\nMySQL Foreign Key\nMySQL Check\nMySQL Default\nMySQL Create Index\nMySQL Auto Increment\nMySQL Dates\nMySQL Views\nMySQL Injection\nMySQL Prepared Statements",
+                "heading": "MySQL Database"
+            },
+            {
+                "content": "MySQL Certificate",
+                "heading": "MySQL Cert"
+            },
+            {
+                "content": "MySQL Data Types\nMySQL Functions\n\n String Functions\n ASCII\n CHAR_LENGTH\n CHARACTER_LENGTH\n CONCAT\n CONCAT_WS\n FIELD\n FIND_IN_SET\n FORMAT\n INSERT\n INSTR\n LCASE\n LEFT\n LENGTH\n LOCATE\n LOWER\n LPAD\n LTRIM\n MID\n POSITION\n REPEAT\n REPLACE\n REVERSE\n RIGHT\n RPAD\n RTRIM\n SPACE\n STRCMP\n SUBSTR\n SUBSTRING\n SUBSTRING_INDEX\n TRIM\n UCASE\n UPPER\n\n Numeric Functions\n ABS\n ACOS\n ASIN\n ATAN\n ATAN2\n AVG\n CEIL\n CEILING\n COS\n COT\n COUNT\n DEGREES\n DIV\n EXP\n FLOOR\n GREATEST\n LEAST\n LN\n LOG\n LOG10\n LOG2\n MAX\n MIN\n MOD\n PI\n POW\n POWER\n RADIANS\n RAND\n ROUND\n SIGN\n SIN\n SQRT\n SUM\n TAN\n TRUNCATE\n\n Date Functions\n ADDDATE\n ADDTIME\n CURDATE\n CURRENT_DATE\n CURRENT_TIME\n CURRENT_TIMESTAMP\n CURTIME\n DATE\n DATEDIFF\n DATE_ADD\n DATE_FORMAT\n DATE_SUB\n DAY\n DAYNAME\n DAYOFMONTH\n DAYOFWEEK\n DAYOFYEAR\n EXTRACT\n FROM_DAYS\n HOUR\n LAST_DAY\n LOCALTIME\n LOCALTIMESTAMP\n MAKEDATE\n MAKETIME\n MICROSECOND\n MINUTE\n MONTH\n MONTHNAME\n NOW\n PERIOD_ADD\n PERIOD_DIFF\n QUARTER\n SECOND\n SEC_TO_TIME\n STR_TO_DATE\n SUBDATE\n SUBTIME\n SYSDATE\n TIME\n TIME_FORMAT\n TIME_TO_SEC\n TIMEDIFF\n TIMESTAMP\n TO_DAYS\n WEEK\n WEEKDAY\n WEEKOFYEAR\n YEAR\n YEARWEEK\n\n Advanced Functions\n BIN\n BINARY\n CASE\n CAST\n COALESCE\n CONNECTION_ID\n CONV\n CONVERT\n CURRENT_USER\n DATABASE\n IF\n IFNULL\n ISNULL\n LAST_INSERT_ID\n NULLIF\n SESSION_USER\n SYSTEM_USER\n USER\n VERSION",
+                "heading": "MySQL References"
+            },
+            {
+                "content": "MySQL Examples\nMySQL Editor\nMySQL Quiz\nMySQL Exercises\nMySQL Syllabus\nMySQL Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\nMySQL Installation on Windows\n\n ❮ Previous\n Next ❯\n\nHere we will show you step by step how to install MySQL on the Windows \nplatform using the MySQL Installer.",
+                "heading": "MySQL Examples"
+            },
+            {
+                "content": "The simplest and recommended method is to download MySQL Installer for \nWindows from\n\nhttps://dev.mysql.com/downloads/installer/ and execute it.\n\nSelect mysql-installer-web-community-8.0.23.msi if you have good internet \nconnection, otherwise choose mysql-installer-community-8.0.23.msi.",
+                "heading": "Download MySQL"
+            },
+            {
+                "content": "After downloading, unzip it, and double click the MSI installer .exe file.\n\nThen follow the steps below:\n\n1. \"Choosing a Setup Type\" screen: Choose \"Full\" setup type. This installs all \nMySQL products and features. Then click the \"Next\" button to continue.\n\n2. \"Check Requirements\" screen: The installer checks if your pc has \nthe requirements needed. If there is some failing requirements, click on each \nitem to try to resolve them by clicking on the Execute button that will install \nall requirements automatically. Click \"Next\".\n\n3. \"Installation\" screen: See what products that will be \ninstalled. Click \"Execute\" to download and install the Products. After \nfinishing the installation, click \"Next\".\n\n4. \"Product Configuration\" screen: See what products that will be configured. \nClick the \"MySQL Server 8.0.23\" option to configure the MySQL Server. \nClick the \"Next\" button. Choose the \"Standalone MySQL Server/Classic MySQL \nReplication\" option and click on the \"Next\" button. In page  \"Type and \nNetworking\" set Config Type to \"Development Computer\" and \"Connectivity\" to \n\"TCP/IP\" and \"Port\" to \"3006\". Then, click the \"Next\" button.\n\n5. \"Authentication Method\" screen: Choose \"Use Strong \nPassword Encryption for Authentication\". Click \"Next\".\n\n6. \"Accounts and Roles\" screen: Set a password for the root \naccount. Click \"Next\".\n\n7. \"Windows Service\" screen: Here, you configure the Windows \nService to start the server. Keep the default setup, then click \"Next\".\n\n8. \"Apply Configuration\" screen: Click the \"Execute\" button \nto apply the Server configuration. After finishing, click the \"Finish\" button.\n\n9. \"Product Configuration\" screen: See that the \nProduct Configuration is completed. Keep the default setting and click on the \n\"Next\" and \"Finish\" button to complete the MySQL package installation.\n\n10. In the next screen, you can choose to configure the Router. Click on \n\"Next\", \"Finish\" and then click the \"Next\" button.\n\n11. \"Connect To Server\" screen: Type in the root password \n(from step 6). Click the \"Check\" button to check if the connection is successful \nor not. Click on the \"Next\" button.\n\n12. \"Apply Configuration\" screen: Select the options and \nclick the \"Execute\" button. After finishing, click the \"Finish\" button.\n\n13. \"Installation Complete\" screen: The installation \nis complete. Click the \"Finish\" button.",
+                "heading": "Install MySQL"
+            },
+            {
+                "content": "Open the MySQL Command Line Client from cmd.\n\nYou should see a mysql> \nprompt. If you have set any password, write your password here.\n\nNow, you are \nconnected to the MySQL server, and you can execute all the SQL command at mysql> \nprompt as follows:\n\nFor example: Check the already created databases with show databases \ncommand: \n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Verify MySQL Installation"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:39Z",
+        "subject": "MySQL",
+        "title": "MySQL Installation on Windows"
+    },
+    {
+        "url": "https://www.w3schools.com/mysql/mysql_install_linux.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "mysql_mysql_install_linux",
+        "code_examples": [],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MySQL HOME\nMySQL Intro\nMySQL RDBMS",
+                "heading": "MySQL Tutorial"
+            },
+            {
+                "content": "MySQL SQL\nMySQL SELECT\nMySQL SELECT DISTINCT\nMySQL WHERE\nMySQL ORDER BY\nMySQL AND\nMySQL OR\nMySQL NOT\nMySQL INSERT INTO\nMySQL NULL Values\nMySQL UPDATE\nMySQL DELETE\nMySQL LIMIT\nMySQL Aggregate Functions\nMySQL MIN()\nMySQL MAX()\nMySQL COUNT()\nMySQL SUM()\nMySQL AVG()\nMySQL LIKE\nMySQL Wildcards\nMySQL IN\nMySQL BETWEEN\nMySQL Aliases\nMySQL Joins\nMySQL INNER JOIN\nMySQL LEFT JOIN\nMySQL RIGHT JOIN\nMySQL CROSS JOIN\nMySQL Self Join\nMySQL UNION\nMySQL UNION ALL\nMySQL GROUP BY\nMySQL HAVING\nMySQL EXISTS\nMySQL ANY\nMySQL ALL\nMySQL INSERT SELECT\nMySQL CASE\nMySQL Null Functions\nMySQL Stored Procedures\nMySQL Comments\nMySQL Operators",
+                "heading": "MySQL SQL"
+            },
+            {
+                "content": "MySQL Install (Windows)\nMySQL Install (Linux)-->\nMySQL Create DB\nMySQL Drop DB\nMySQL Create Table\nMySQL Drop Table\nMySQL Alter Table\nMySQL Constraints\nMySQL Not Null\nMySQL Unique\nMySQL Primary Key\nMySQL Foreign Key\nMySQL Check\nMySQL Default\nMySQL Create Index\nMySQL Auto Increment\nMySQL Dates\nMySQL Views\nMySQL Injection\nMySQL Prepared Statements",
+                "heading": "MySQL Database"
+            },
+            {
+                "content": "MySQL Certificate",
+                "heading": "MySQL Cert"
+            },
+            {
+                "content": "MySQL Data Types\nMySQL Functions\n\n String Functions\n ASCII\n CHAR_LENGTH\n CHARACTER_LENGTH\n CONCAT\n CONCAT_WS\n FIELD\n FIND_IN_SET\n FORMAT\n INSERT\n INSTR\n LCASE\n LEFT\n LENGTH\n LOCATE\n LOWER\n LPAD\n LTRIM\n MID\n POSITION\n REPEAT\n REPLACE\n REVERSE\n RIGHT\n RPAD\n RTRIM\n SPACE\n STRCMP\n SUBSTR\n SUBSTRING\n SUBSTRING_INDEX\n TRIM\n UCASE\n UPPER\n\n Numeric Functions\n ABS\n ACOS\n ASIN\n ATAN\n ATAN2\n AVG\n CEIL\n CEILING\n COS\n COT\n COUNT\n DEGREES\n DIV\n EXP\n FLOOR\n GREATEST\n LEAST\n LN\n LOG\n LOG10\n LOG2\n MAX\n MIN\n MOD\n PI\n POW\n POWER\n RADIANS\n RAND\n ROUND\n SIGN\n SIN\n SQRT\n SUM\n TAN\n TRUNCATE\n\n Date Functions\n ADDDATE\n ADDTIME\n CURDATE\n CURRENT_DATE\n CURRENT_TIME\n CURRENT_TIMESTAMP\n CURTIME\n DATE\n DATEDIFF\n DATE_ADD\n DATE_FORMAT\n DATE_SUB\n DAY\n DAYNAME\n DAYOFMONTH\n DAYOFWEEK\n DAYOFYEAR\n EXTRACT\n FROM_DAYS\n HOUR\n LAST_DAY\n LOCALTIME\n LOCALTIMESTAMP\n MAKEDATE\n MAKETIME\n MICROSECOND\n MINUTE\n MONTH\n MONTHNAME\n NOW\n PERIOD_ADD\n PERIOD_DIFF\n QUARTER\n SECOND\n SEC_TO_TIME\n STR_TO_DATE\n SUBDATE\n SUBTIME\n SYSDATE\n TIME\n TIME_FORMAT\n TIME_TO_SEC\n TIMEDIFF\n TIMESTAMP\n TO_DAYS\n WEEK\n WEEKDAY\n WEEKOFYEAR\n YEAR\n YEARWEEK\n\n Advanced Functions\n BIN\n BINARY\n CASE\n CAST\n COALESCE\n CONNECTION_ID\n CONV\n CONVERT\n CURRENT_USER\n DATABASE\n IF\n IFNULL\n ISNULL\n LAST_INSERT_ID\n NULLIF\n SESSION_USER\n SYSTEM_USER\n USER\n VERSION",
+                "heading": "MySQL References"
+            },
+            {
+                "content": "MySQL Examples\nMySQL Editor\nMySQL Quiz\nMySQL Exercises\nMySQL Syllabus\nMySQL Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\nMySQL Installation on Linux\n\n ❮ Previous\nNext ❯",
+                "heading": "MySQL Examples"
+            },
+            {
+                "content": "Go to the official website of MySQL and download the version number MySQL \nCommunity Server which is required for the platform you will run:\n\nMySQL Community Downloads",
+                "heading": "Download MySQL"
+            },
+            {
+                "content": "Linux supports a number of different solutions for installing MySQL.\n\nFor more information, see MYSQL.COM's documentation:\n\nInstalling MySQL on Linux.",
+                "heading": "Install MySQL on Linux"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:39Z",
+        "subject": "MySQL",
+        "title": "MySQL Installation on Linux"
+    },
+    {
+        "url": "https://www.w3schools.com/mysql/mysql_create_db.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "mysql_mysql_create_db",
+        "code_examples": [
+            {
+                "code": "CREATE DATABASE database_name;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\nCREATE DATABASE testDB;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "SHOW DATABASES;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MySQL HOME\nMySQL Intro\nMySQL RDBMS",
+                "heading": "MySQL Tutorial"
+            },
+            {
+                "content": "MySQL SQL\nMySQL SELECT\nMySQL SELECT DISTINCT\nMySQL WHERE\nMySQL ORDER BY\nMySQL AND\nMySQL OR\nMySQL NOT\nMySQL INSERT INTO\nMySQL NULL Values\nMySQL UPDATE\nMySQL DELETE\nMySQL LIMIT\nMySQL Aggregate Functions\nMySQL MIN()\nMySQL MAX()\nMySQL COUNT()\nMySQL SUM()\nMySQL AVG()\nMySQL LIKE\nMySQL Wildcards\nMySQL IN\nMySQL BETWEEN\nMySQL Aliases\nMySQL Joins\nMySQL INNER JOIN\nMySQL LEFT JOIN\nMySQL RIGHT JOIN\nMySQL CROSS JOIN\nMySQL Self Join\nMySQL UNION\nMySQL UNION ALL\nMySQL GROUP BY\nMySQL HAVING\nMySQL EXISTS\nMySQL ANY\nMySQL ALL\nMySQL INSERT SELECT\nMySQL CASE\nMySQL Null Functions\nMySQL Stored Procedures\nMySQL Comments\nMySQL Operators",
+                "heading": "MySQL SQL"
+            },
+            {
+                "content": "MySQL Install (Windows)\nMySQL Install (Linux)-->\nMySQL Create DB\nMySQL Drop DB\nMySQL Create Table\nMySQL Drop Table\nMySQL Alter Table\nMySQL Constraints\nMySQL Not Null\nMySQL Unique\nMySQL Primary Key\nMySQL Foreign Key\nMySQL Check\nMySQL Default\nMySQL Create Index\nMySQL Auto Increment\nMySQL Dates\nMySQL Views\nMySQL Injection\nMySQL Prepared Statements",
+                "heading": "MySQL Database"
+            },
+            {
+                "content": "MySQL Certificate",
+                "heading": "MySQL Cert"
+            },
+            {
+                "content": "MySQL Data Types\nMySQL Functions\n\n String Functions\n ASCII\n CHAR_LENGTH\n CHARACTER_LENGTH\n CONCAT\n CONCAT_WS\n FIELD\n FIND_IN_SET\n FORMAT\n INSERT\n INSTR\n LCASE\n LEFT\n LENGTH\n LOCATE\n LOWER\n LPAD\n LTRIM\n MID\n POSITION\n REPEAT\n REPLACE\n REVERSE\n RIGHT\n RPAD\n RTRIM\n SPACE\n STRCMP\n SUBSTR\n SUBSTRING\n SUBSTRING_INDEX\n TRIM\n UCASE\n UPPER\n\n Numeric Functions\n ABS\n ACOS\n ASIN\n ATAN\n ATAN2\n AVG\n CEIL\n CEILING\n COS\n COT\n COUNT\n DEGREES\n DIV\n EXP\n FLOOR\n GREATEST\n LEAST\n LN\n LOG\n LOG10\n LOG2\n MAX\n MIN\n MOD\n PI\n POW\n POWER\n RADIANS\n RAND\n ROUND\n SIGN\n SIN\n SQRT\n SUM\n TAN\n TRUNCATE\n\n Date Functions\n ADDDATE\n ADDTIME\n CURDATE\n CURRENT_DATE\n CURRENT_TIME\n CURRENT_TIMESTAMP\n CURTIME\n DATE\n DATEDIFF\n DATE_ADD\n DATE_FORMAT\n DATE_SUB\n DAY\n DAYNAME\n DAYOFMONTH\n DAYOFWEEK\n DAYOFYEAR\n EXTRACT\n FROM_DAYS\n HOUR\n LAST_DAY\n LOCALTIME\n LOCALTIMESTAMP\n MAKEDATE\n MAKETIME\n MICROSECOND\n MINUTE\n MONTH\n MONTHNAME\n NOW\n PERIOD_ADD\n PERIOD_DIFF\n QUARTER\n SECOND\n SEC_TO_TIME\n STR_TO_DATE\n SUBDATE\n SUBTIME\n SYSDATE\n TIME\n TIME_FORMAT\n TIME_TO_SEC\n TIMEDIFF\n TIMESTAMP\n TO_DAYS\n WEEK\n WEEKDAY\n WEEKOFYEAR\n YEAR\n YEARWEEK\n\n Advanced Functions\n BIN\n BINARY\n CASE\n CAST\n COALESCE\n CONNECTION_ID\n CONV\n CONVERT\n CURRENT_USER\n DATABASE\n IF\n IFNULL\n ISNULL\n LAST_INSERT_ID\n NULLIF\n SESSION_USER\n SYSTEM_USER\n USER\n VERSION",
+                "heading": "MySQL References"
+            },
+            {
+                "content": "MySQL Examples\nMySQL Editor\nMySQL Quiz\nMySQL Exercises\nMySQL Syllabus\nMySQL Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\nMySQL CREATE DATABASE Statement\n\n ❮ Previous\n Next ❯",
+                "heading": "MySQL Examples"
+            },
+            {
+                "content": "The CREATE DATABASE statement is used to create a new SQL database.\n\nTip: You need administrative privileges to create a new database. \n\nSyntax\n\nCREATE DATABASE database_name;",
+                "heading": "The MySQL CREATE DATABASE Statement"
+            },
+            {
+                "content": "The following SQL statement creates a database called \"testDB\":\n\nExample\n\nCREATE DATABASE testDB;",
+                "heading": "CREATE DATABASE Example"
+            },
+            {
+                "content": "Once a database is created, you can check it in the list of databases with the following SQL command:\n\nSyntax\n\nSHOW DATABASES;",
+                "heading": "Show Databases"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:39Z",
+        "subject": "MySQL",
+        "title": "MySQL CREATE DATABASE Statement"
+    },
+    {
+        "url": "https://www.w3schools.com/mysql/mysql_drop_db.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "mysql_mysql_drop_db",
+        "code_examples": [
+            {
+                "code": "DROP DATABASE databasename;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\n DROP DATABASE testDB;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MySQL HOME\nMySQL Intro\nMySQL RDBMS",
+                "heading": "MySQL Tutorial"
+            },
+            {
+                "content": "MySQL SQL\nMySQL SELECT\nMySQL SELECT DISTINCT\nMySQL WHERE\nMySQL ORDER BY\nMySQL AND\nMySQL OR\nMySQL NOT\nMySQL INSERT INTO\nMySQL NULL Values\nMySQL UPDATE\nMySQL DELETE\nMySQL LIMIT\nMySQL Aggregate Functions\nMySQL MIN()\nMySQL MAX()\nMySQL COUNT()\nMySQL SUM()\nMySQL AVG()\nMySQL LIKE\nMySQL Wildcards\nMySQL IN\nMySQL BETWEEN\nMySQL Aliases\nMySQL Joins\nMySQL INNER JOIN\nMySQL LEFT JOIN\nMySQL RIGHT JOIN\nMySQL CROSS JOIN\nMySQL Self Join\nMySQL UNION\nMySQL UNION ALL\nMySQL GROUP BY\nMySQL HAVING\nMySQL EXISTS\nMySQL ANY\nMySQL ALL\nMySQL INSERT SELECT\nMySQL CASE\nMySQL Null Functions\nMySQL Stored Procedures\nMySQL Comments\nMySQL Operators",
+                "heading": "MySQL SQL"
+            },
+            {
+                "content": "MySQL Install (Windows)\nMySQL Install (Linux)-->\nMySQL Create DB\nMySQL Drop DB\nMySQL Create Table\nMySQL Drop Table\nMySQL Alter Table\nMySQL Constraints\nMySQL Not Null\nMySQL Unique\nMySQL Primary Key\nMySQL Foreign Key\nMySQL Check\nMySQL Default\nMySQL Create Index\nMySQL Auto Increment\nMySQL Dates\nMySQL Views\nMySQL Injection\nMySQL Prepared Statements",
+                "heading": "MySQL Database"
+            },
+            {
+                "content": "MySQL Certificate",
+                "heading": "MySQL Cert"
+            },
+            {
+                "content": "MySQL Data Types\nMySQL Functions\n\n String Functions\n ASCII\n CHAR_LENGTH\n CHARACTER_LENGTH\n CONCAT\n CONCAT_WS\n FIELD\n FIND_IN_SET\n FORMAT\n INSERT\n INSTR\n LCASE\n LEFT\n LENGTH\n LOCATE\n LOWER\n LPAD\n LTRIM\n MID\n POSITION\n REPEAT\n REPLACE\n REVERSE\n RIGHT\n RPAD\n RTRIM\n SPACE\n STRCMP\n SUBSTR\n SUBSTRING\n SUBSTRING_INDEX\n TRIM\n UCASE\n UPPER\n\n Numeric Functions\n ABS\n ACOS\n ASIN\n ATAN\n ATAN2\n AVG\n CEIL\n CEILING\n COS\n COT\n COUNT\n DEGREES\n DIV\n EXP\n FLOOR\n GREATEST\n LEAST\n LN\n LOG\n LOG10\n LOG2\n MAX\n MIN\n MOD\n PI\n POW\n POWER\n RADIANS\n RAND\n ROUND\n SIGN\n SIN\n SQRT\n SUM\n TAN\n TRUNCATE\n\n Date Functions\n ADDDATE\n ADDTIME\n CURDATE\n CURRENT_DATE\n CURRENT_TIME\n CURRENT_TIMESTAMP\n CURTIME\n DATE\n DATEDIFF\n DATE_ADD\n DATE_FORMAT\n DATE_SUB\n DAY\n DAYNAME\n DAYOFMONTH\n DAYOFWEEK\n DAYOFYEAR\n EXTRACT\n FROM_DAYS\n HOUR\n LAST_DAY\n LOCALTIME\n LOCALTIMESTAMP\n MAKEDATE\n MAKETIME\n MICROSECOND\n MINUTE\n MONTH\n MONTHNAME\n NOW\n PERIOD_ADD\n PERIOD_DIFF\n QUARTER\n SECOND\n SEC_TO_TIME\n STR_TO_DATE\n SUBDATE\n SUBTIME\n SYSDATE\n TIME\n TIME_FORMAT\n TIME_TO_SEC\n TIMEDIFF\n TIMESTAMP\n TO_DAYS\n WEEK\n WEEKDAY\n WEEKOFYEAR\n YEAR\n YEARWEEK\n\n Advanced Functions\n BIN\n BINARY\n CASE\n CAST\n COALESCE\n CONNECTION_ID\n CONV\n CONVERT\n CURRENT_USER\n DATABASE\n IF\n IFNULL\n ISNULL\n LAST_INSERT_ID\n NULLIF\n SESSION_USER\n SYSTEM_USER\n USER\n VERSION",
+                "heading": "MySQL References"
+            },
+            {
+                "content": "MySQL Examples\nMySQL Editor\nMySQL Quiz\nMySQL Exercises\nMySQL Syllabus\nMySQL Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\nMySQL DROP DATABASE Statement\n\n ❮ Previous\n Next ❯",
+                "heading": "MySQL Examples"
+            },
+            {
+                "content": "The DROP DATABASE statement is used to permanently delete an existing SQL database.\n\nNote: Be careful before dropping a database! Dropping \na database deletes the database and all its content (tables, views, stored procedures, and data)!\n\nSyntax\n\n DROP DATABASE databasename;\n\nTip: You need administrative privileges to drop a database.",
+                "heading": "The MySQL DROP DATABASE Statement"
+            },
+            {
+                "content": "The following SQL statement drops the existing database \"testDB\":\n\nExample\n\n DROP DATABASE testDB;\n\nTip: Once a database is dropped, you can check that it is removed from the list of databases\nwith the: SHOW DATABASES; command.",
+                "heading": "DROP DATABASE Example"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:39Z",
+        "subject": "MySQL",
+        "title": "MySQL DROP DATABASE Statement"
+    },
+    {
+        "url": "https://www.w3schools.com/mysql/mysql_create_table.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "mysql_mysql_create_table",
+        "code_examples": [
+            {
+                "code": "CREATE TABLE table_name (\n\n     column1 datatype constraint,\n\n     column2 datatype constraint,\n\n     column3 datatype constraint,\n\n....\n\n);",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\nCREATE TABLE Persons\n(\n\n  PersonID int PRIMARY KEY,\n\n  LastName varchar(255) NOT NULL,\n\n  FirstName varchar(255),\n\n  Address varchar(255),\n\n  City varchar(255)\n\n);",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "CREATE TABLE new_table AS\nSELECT column1, column2,...\nFROM \n existing_table\nWHERE ....;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\nCREATE TABLE GermanCustomers AS\n\nSELECT * FROM Customers\nWHERE Country = 'Germany';",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MySQL HOME\nMySQL Intro\nMySQL RDBMS",
+                "heading": "MySQL Tutorial"
+            },
+            {
+                "content": "MySQL SQL\nMySQL SELECT\nMySQL SELECT DISTINCT\nMySQL WHERE\nMySQL ORDER BY\nMySQL AND\nMySQL OR\nMySQL NOT\nMySQL INSERT INTO\nMySQL NULL Values\nMySQL UPDATE\nMySQL DELETE\nMySQL LIMIT\nMySQL Aggregate Functions\nMySQL MIN()\nMySQL MAX()\nMySQL COUNT()\nMySQL SUM()\nMySQL AVG()\nMySQL LIKE\nMySQL Wildcards\nMySQL IN\nMySQL BETWEEN\nMySQL Aliases\nMySQL Joins\nMySQL INNER JOIN\nMySQL LEFT JOIN\nMySQL RIGHT JOIN\nMySQL CROSS JOIN\nMySQL Self Join\nMySQL UNION\nMySQL UNION ALL\nMySQL GROUP BY\nMySQL HAVING\nMySQL EXISTS\nMySQL ANY\nMySQL ALL\nMySQL INSERT SELECT\nMySQL CASE\nMySQL Null Functions\nMySQL Stored Procedures\nMySQL Comments\nMySQL Operators",
+                "heading": "MySQL SQL"
+            },
+            {
+                "content": "MySQL Install (Windows)\nMySQL Install (Linux)-->\nMySQL Create DB\nMySQL Drop DB\nMySQL Create Table\nMySQL Drop Table\nMySQL Alter Table\nMySQL Constraints\nMySQL Not Null\nMySQL Unique\nMySQL Primary Key\nMySQL Foreign Key\nMySQL Check\nMySQL Default\nMySQL Create Index\nMySQL Auto Increment\nMySQL Dates\nMySQL Views\nMySQL Injection\nMySQL Prepared Statements",
+                "heading": "MySQL Database"
+            },
+            {
+                "content": "MySQL Certificate",
+                "heading": "MySQL Cert"
+            },
+            {
+                "content": "MySQL Data Types\nMySQL Functions\n\n String Functions\n ASCII\n CHAR_LENGTH\n CHARACTER_LENGTH\n CONCAT\n CONCAT_WS\n FIELD\n FIND_IN_SET\n FORMAT\n INSERT\n INSTR\n LCASE\n LEFT\n LENGTH\n LOCATE\n LOWER\n LPAD\n LTRIM\n MID\n POSITION\n REPEAT\n REPLACE\n REVERSE\n RIGHT\n RPAD\n RTRIM\n SPACE\n STRCMP\n SUBSTR\n SUBSTRING\n SUBSTRING_INDEX\n TRIM\n UCASE\n UPPER\n\n Numeric Functions\n ABS\n ACOS\n ASIN\n ATAN\n ATAN2\n AVG\n CEIL\n CEILING\n COS\n COT\n COUNT\n DEGREES\n DIV\n EXP\n FLOOR\n GREATEST\n LEAST\n LN\n LOG\n LOG10\n LOG2\n MAX\n MIN\n MOD\n PI\n POW\n POWER\n RADIANS\n RAND\n ROUND\n SIGN\n SIN\n SQRT\n SUM\n TAN\n TRUNCATE\n\n Date Functions\n ADDDATE\n ADDTIME\n CURDATE\n CURRENT_DATE\n CURRENT_TIME\n CURRENT_TIMESTAMP\n CURTIME\n DATE\n DATEDIFF\n DATE_ADD\n DATE_FORMAT\n DATE_SUB\n DAY\n DAYNAME\n DAYOFMONTH\n DAYOFWEEK\n DAYOFYEAR\n EXTRACT\n FROM_DAYS\n HOUR\n LAST_DAY\n LOCALTIME\n LOCALTIMESTAMP\n MAKEDATE\n MAKETIME\n MICROSECOND\n MINUTE\n MONTH\n MONTHNAME\n NOW\n PERIOD_ADD\n PERIOD_DIFF\n QUARTER\n SECOND\n SEC_TO_TIME\n STR_TO_DATE\n SUBDATE\n SUBTIME\n SYSDATE\n TIME\n TIME_FORMAT\n TIME_TO_SEC\n TIMEDIFF\n TIMESTAMP\n TO_DAYS\n WEEK\n WEEKDAY\n WEEKOFYEAR\n YEAR\n YEARWEEK\n\n Advanced Functions\n BIN\n BINARY\n CASE\n CAST\n COALESCE\n CONNECTION_ID\n CONV\n CONVERT\n CURRENT_USER\n DATABASE\n IF\n IFNULL\n ISNULL\n LAST_INSERT_ID\n NULLIF\n SESSION_USER\n SYSTEM_USER\n USER\n VERSION",
+                "heading": "MySQL References"
+            },
+            {
+                "content": "MySQL Examples\nMySQL Editor\nMySQL Quiz\nMySQL Exercises\nMySQL Syllabus\nMySQL Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\nMySQL CREATE TABLE Statement\n\n ❮ Previous\n Next ❯",
+                "heading": "MySQL Examples"
+            },
+            {
+                "content": "The CREATE TABLE statement is used to create a new table in a database.\n\nSyntax\n\nCREATE TABLE table_name (\n\n     column1 datatype constraint,\n\n     column2 datatype constraint,\n\n     column3 datatype constraint,\n\n....\n\n);\n\nThe table_name parameter specifies the name of the new table.\n\nThe column1, column2, ... parameters specify the names of the columns \nwithin the table.\n\nThe datatype parameter specifies the data type of each column (e.g. varchar, int, date, etc.).\n\nThe constraint parameter is optional, and specifies rules for data \nintegrity (e.g. primary key, not null, etc.).\n\nTip: Learn more about constraints in our\nMySQL Constraints chapter.\n\nTip: For an overview of the available data types, \ngo to our complete Data Types Reference.",
+                "heading": "The MySQL CREATE TABLE Statement"
+            },
+            {
+                "content": "The following example creates a table named \"Persons\" with five columns:\n\nExample\n\nCREATE TABLE Persons\n(\n\n  PersonID int PRIMARY KEY,\n\n  LastName varchar(255) NOT NULL,\n\n  FirstName varchar(255),\n\n  Address varchar(255),\n\n  City varchar(255)\n\n);\n\nExample Explained:\n\n PersonID - This column is of type integer (int). This is also the \n PRIMARY KEY field, that uniquely identifies \n each row.\n\n LastName - This column is a variable-length character string with a maximum length \n of 255 characters (varchar(255)). NOT NULL specifies that this column cannot \n be empty.\n\n FirstName, Address, City - These columns are also variable-length character strings with a maximum length \n of 255 characters (varchar(255)). These columns allow NULL values by default.\n\nThe empty \"Persons\" table will now look like this:\n\n PersonID\n LastName\n FirstName\n Address\n City\n\nTip: The empty \"Persons\" table can now be filled with data with the \nMySQL INSERT INTO statement.",
+                "heading": "MySQL CREATE TABLE Example"
+            },
+            {
+                "content": "The CREATE TABLE statement can also be used \nto create a new table that copies some/all data from an existing table.\n\nIf you create a new table from an existing table, the new table will be \nfilled with the values from the existing table.\n\nSyntax\n\nCREATE TABLE new_table AS\nSELECT column1, column2,...\nFROM \n existing_table\nWHERE ....;\n\nThe following SQL creates a new table called \"GermanCustomers\" (which is \na copy of the \"Customers\" table): \n\nExample\n\nCREATE TABLE GermanCustomers AS\n\nSELECT * FROM Customers\nWHERE Country = 'Germany';\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Create New Table From Existing Table"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:39Z",
+        "subject": "MySQL",
+        "title": "MySQL CREATE TABLE Statement"
+    },
+    {
+        "url": "https://www.w3schools.com/mysql/mysql_drop_table.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "mysql_mysql_drop_table",
+        "code_examples": [
+            {
+                "code": "DROP TABLE table_name;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "DROP TABLE IF EXISTS table_name;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\nDROP TABLE IF EXISTS Shippers;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "TRUNCATE TABLE table_name;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MySQL HOME\nMySQL Intro\nMySQL RDBMS",
+                "heading": "MySQL Tutorial"
+            },
+            {
+                "content": "MySQL SQL\nMySQL SELECT\nMySQL SELECT DISTINCT\nMySQL WHERE\nMySQL ORDER BY\nMySQL AND\nMySQL OR\nMySQL NOT\nMySQL INSERT INTO\nMySQL NULL Values\nMySQL UPDATE\nMySQL DELETE\nMySQL LIMIT\nMySQL Aggregate Functions\nMySQL MIN()\nMySQL MAX()\nMySQL COUNT()\nMySQL SUM()\nMySQL AVG()\nMySQL LIKE\nMySQL Wildcards\nMySQL IN\nMySQL BETWEEN\nMySQL Aliases\nMySQL Joins\nMySQL INNER JOIN\nMySQL LEFT JOIN\nMySQL RIGHT JOIN\nMySQL CROSS JOIN\nMySQL Self Join\nMySQL UNION\nMySQL UNION ALL\nMySQL GROUP BY\nMySQL HAVING\nMySQL EXISTS\nMySQL ANY\nMySQL ALL\nMySQL INSERT SELECT\nMySQL CASE\nMySQL Null Functions\nMySQL Stored Procedures\nMySQL Comments\nMySQL Operators",
+                "heading": "MySQL SQL"
+            },
+            {
+                "content": "MySQL Install (Windows)\nMySQL Install (Linux)-->\nMySQL Create DB\nMySQL Drop DB\nMySQL Create Table\nMySQL Drop Table\nMySQL Alter Table\nMySQL Constraints\nMySQL Not Null\nMySQL Unique\nMySQL Primary Key\nMySQL Foreign Key\nMySQL Check\nMySQL Default\nMySQL Create Index\nMySQL Auto Increment\nMySQL Dates\nMySQL Views\nMySQL Injection\nMySQL Prepared Statements",
+                "heading": "MySQL Database"
+            },
+            {
+                "content": "MySQL Certificate",
+                "heading": "MySQL Cert"
+            },
+            {
+                "content": "MySQL Data Types\nMySQL Functions\n\n String Functions\n ASCII\n CHAR_LENGTH\n CHARACTER_LENGTH\n CONCAT\n CONCAT_WS\n FIELD\n FIND_IN_SET\n FORMAT\n INSERT\n INSTR\n LCASE\n LEFT\n LENGTH\n LOCATE\n LOWER\n LPAD\n LTRIM\n MID\n POSITION\n REPEAT\n REPLACE\n REVERSE\n RIGHT\n RPAD\n RTRIM\n SPACE\n STRCMP\n SUBSTR\n SUBSTRING\n SUBSTRING_INDEX\n TRIM\n UCASE\n UPPER\n\n Numeric Functions\n ABS\n ACOS\n ASIN\n ATAN\n ATAN2\n AVG\n CEIL\n CEILING\n COS\n COT\n COUNT\n DEGREES\n DIV\n EXP\n FLOOR\n GREATEST\n LEAST\n LN\n LOG\n LOG10\n LOG2\n MAX\n MIN\n MOD\n PI\n POW\n POWER\n RADIANS\n RAND\n ROUND\n SIGN\n SIN\n SQRT\n SUM\n TAN\n TRUNCATE\n\n Date Functions\n ADDDATE\n ADDTIME\n CURDATE\n CURRENT_DATE\n CURRENT_TIME\n CURRENT_TIMESTAMP\n CURTIME\n DATE\n DATEDIFF\n DATE_ADD\n DATE_FORMAT\n DATE_SUB\n DAY\n DAYNAME\n DAYOFMONTH\n DAYOFWEEK\n DAYOFYEAR\n EXTRACT\n FROM_DAYS\n HOUR\n LAST_DAY\n LOCALTIME\n LOCALTIMESTAMP\n MAKEDATE\n MAKETIME\n MICROSECOND\n MINUTE\n MONTH\n MONTHNAME\n NOW\n PERIOD_ADD\n PERIOD_DIFF\n QUARTER\n SECOND\n SEC_TO_TIME\n STR_TO_DATE\n SUBDATE\n SUBTIME\n SYSDATE\n TIME\n TIME_FORMAT\n TIME_TO_SEC\n TIMEDIFF\n TIMESTAMP\n TO_DAYS\n WEEK\n WEEKDAY\n WEEKOFYEAR\n YEAR\n YEARWEEK\n\n Advanced Functions\n BIN\n BINARY\n CASE\n CAST\n COALESCE\n CONNECTION_ID\n CONV\n CONVERT\n CURRENT_USER\n DATABASE\n IF\n IFNULL\n ISNULL\n LAST_INSERT_ID\n NULLIF\n SESSION_USER\n SYSTEM_USER\n USER\n VERSION",
+                "heading": "MySQL References"
+            },
+            {
+                "content": "MySQL Examples\nMySQL Editor\nMySQL Quiz\nMySQL Exercises\nMySQL Syllabus\nMySQL Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\nMySQL DROP TABLE Statement\n\n ❮ Previous\n Next ❯",
+                "heading": "MySQL Examples"
+            },
+            {
+                "content": "The DROP TABLE statement is used to permanently delete an existing table in a database.\n\nNote: Be careful before dropping a table! Dropping a table deletes the \nentire table and all its content!\n\nSyntax\n\n DROP TABLE table_name;\n\nTo prevent an error from occur (if the table does not exists), it is a good \npractice to add the IF EXISTS clause:\n\nDROP TABLE IF EXISTS table_name;\n\nNote: In most databases you cannot drop a table that is referenced by a \nforeign key constraint in another table. To \nsolve this, you must remove the foreign key constraint or drop the dependent table.",
+                "heading": "The MySQL DROP TABLE Statement"
+            },
+            {
+                "content": "The following SQL statement drops the \"Shippers\" table:\n\nExample\n\nDROP TABLE IF EXISTS Shippers;",
+                "heading": "MySQL DROP TABLE Example"
+            },
+            {
+                "content": "The TRUNCATE TABLE statement is used to delete \nall the records in a table, but it keeps the table structure, columns and constraints.\n\nSyntax\n\n TRUNCATE TABLE table_name;",
+                "heading": "MySQL TRUNCATE TABLE"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:40Z",
+        "subject": "MySQL",
+        "title": "MySQL DROP TABLE Statement"
+    },
+    {
+        "url": "https://www.w3schools.com/mysql/mysql_alter.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "mysql_mysql_alter",
+        "code_examples": [
+            {
+                "code": "ALTER TABLE table_name\n\nADD column_name datatype;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\nALTER TABLE Customers\nADD Email varchar(255);",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "ALTER TABLE table_name\n\nDROP COLUMN column_name;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\nALTER TABLE Customers\nDROP COLUMN Email;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "ALTER TABLE table_name\n\nRENAME COLUMN old_name to new_name;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "ALTER TABLE table_name\n\nMODIFY column_name new_datatype constraint;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\nALTER TABLE Customers\nMODIFY Email varchar(100) NOT NULL;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "ALTER TABLE table_name\n\nADD CONSTRAINT constraint_name constraint_definition;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\nALTER TABLE Members\nADD CONSTRAINT CHK_Age CHECK (Age >= 18);",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "ALTER TABLE table_name\n\nRENAME TO new_table_name;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\nALTER TABLE Customers\n\nRENAME TO Clients;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\nALTER TABLE Persons\n\nADD DateOfBirth date;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\nALTER TABLE Persons\n\nMODIFY COLUMN DateOfBirth year;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\nALTER TABLE Persons\n\nDROP COLUMN DateOfBirth;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MySQL HOME\nMySQL Intro\nMySQL RDBMS",
+                "heading": "MySQL Tutorial"
+            },
+            {
+                "content": "MySQL SQL\nMySQL SELECT\nMySQL SELECT DISTINCT\nMySQL WHERE\nMySQL ORDER BY\nMySQL AND\nMySQL OR\nMySQL NOT\nMySQL INSERT INTO\nMySQL NULL Values\nMySQL UPDATE\nMySQL DELETE\nMySQL LIMIT\nMySQL Aggregate Functions\nMySQL MIN()\nMySQL MAX()\nMySQL COUNT()\nMySQL SUM()\nMySQL AVG()\nMySQL LIKE\nMySQL Wildcards\nMySQL IN\nMySQL BETWEEN\nMySQL Aliases\nMySQL Joins\nMySQL INNER JOIN\nMySQL LEFT JOIN\nMySQL RIGHT JOIN\nMySQL CROSS JOIN\nMySQL Self Join\nMySQL UNION\nMySQL UNION ALL\nMySQL GROUP BY\nMySQL HAVING\nMySQL EXISTS\nMySQL ANY\nMySQL ALL\nMySQL INSERT SELECT\nMySQL CASE\nMySQL Null Functions\nMySQL Stored Procedures\nMySQL Comments\nMySQL Operators",
+                "heading": "MySQL SQL"
+            },
+            {
+                "content": "MySQL Install (Windows)\nMySQL Install (Linux)-->\nMySQL Create DB\nMySQL Drop DB\nMySQL Create Table\nMySQL Drop Table\nMySQL Alter Table\nMySQL Constraints\nMySQL Not Null\nMySQL Unique\nMySQL Primary Key\nMySQL Foreign Key\nMySQL Check\nMySQL Default\nMySQL Create Index\nMySQL Auto Increment\nMySQL Dates\nMySQL Views\nMySQL Injection\nMySQL Prepared Statements",
+                "heading": "MySQL Database"
+            },
+            {
+                "content": "MySQL Certificate",
+                "heading": "MySQL Cert"
+            },
+            {
+                "content": "MySQL Data Types\nMySQL Functions\n\n String Functions\n ASCII\n CHAR_LENGTH\n CHARACTER_LENGTH\n CONCAT\n CONCAT_WS\n FIELD\n FIND_IN_SET\n FORMAT\n INSERT\n INSTR\n LCASE\n LEFT\n LENGTH\n LOCATE\n LOWER\n LPAD\n LTRIM\n MID\n POSITION\n REPEAT\n REPLACE\n REVERSE\n RIGHT\n RPAD\n RTRIM\n SPACE\n STRCMP\n SUBSTR\n SUBSTRING\n SUBSTRING_INDEX\n TRIM\n UCASE\n UPPER\n\n Numeric Functions\n ABS\n ACOS\n ASIN\n ATAN\n ATAN2\n AVG\n CEIL\n CEILING\n COS\n COT\n COUNT\n DEGREES\n DIV\n EXP\n FLOOR\n GREATEST\n LEAST\n LN\n LOG\n LOG10\n LOG2\n MAX\n MIN\n MOD\n PI\n POW\n POWER\n RADIANS\n RAND\n ROUND\n SIGN\n SIN\n SQRT\n SUM\n TAN\n TRUNCATE\n\n Date Functions\n ADDDATE\n ADDTIME\n CURDATE\n CURRENT_DATE\n CURRENT_TIME\n CURRENT_TIMESTAMP\n CURTIME\n DATE\n DATEDIFF\n DATE_ADD\n DATE_FORMAT\n DATE_SUB\n DAY\n DAYNAME\n DAYOFMONTH\n DAYOFWEEK\n DAYOFYEAR\n EXTRACT\n FROM_DAYS\n HOUR\n LAST_DAY\n LOCALTIME\n LOCALTIMESTAMP\n MAKEDATE\n MAKETIME\n MICROSECOND\n MINUTE\n MONTH\n MONTHNAME\n NOW\n PERIOD_ADD\n PERIOD_DIFF\n QUARTER\n SECOND\n SEC_TO_TIME\n STR_TO_DATE\n SUBDATE\n SUBTIME\n SYSDATE\n TIME\n TIME_FORMAT\n TIME_TO_SEC\n TIMEDIFF\n TIMESTAMP\n TO_DAYS\n WEEK\n WEEKDAY\n WEEKOFYEAR\n YEAR\n YEARWEEK\n\n Advanced Functions\n BIN\n BINARY\n CASE\n CAST\n COALESCE\n CONNECTION_ID\n CONV\n CONVERT\n CURRENT_USER\n DATABASE\n IF\n IFNULL\n ISNULL\n LAST_INSERT_ID\n NULLIF\n SESSION_USER\n SYSTEM_USER\n USER\n VERSION",
+                "heading": "MySQL References"
+            },
+            {
+                "content": "MySQL Examples\nMySQL Editor\nMySQL Quiz\nMySQL Exercises\nMySQL Syllabus\nMySQL Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\nMySQL ALTER TABLE Statement\n\n ❮ Previous\n Next ❯",
+                "heading": "MySQL Examples"
+            },
+            {
+                "content": "The ALTER TABLE statement is used to add, delete, or modify columns in an existing table.\n\nThe ALTER TABLE statement is also used to add and drop various constraints on \nan existing table.\n\nCommon ALTER TABLE operations are:\n\n Add column - Adds a new column to a table\n\n Drop column - Deletes a column in a table\n\n Rename column - Renames a column\n\n Modify column - Changes the data type, size, or constraints of a column\n\n Add constraint - Adds a new constraint\n\n Rename table - Renames a table",
+                "heading": "MySQL ALTER TABLE Statement"
+            },
+            {
+                "content": "To add a column in a table, use the following syntax:\n\nSyntax\n\nALTER TABLE table_name\n\nADD column_name datatype;\n\nThe following SQL adds an \"Email\" column to the \"Customers\" table:\n\nExample\n\nALTER TABLE Customers\nADD Email varchar(255);",
+                "heading": "ALTER TABLE - ADD Column"
+            },
+            {
+                "content": "To delete a column in a table, use the following syntax:\n\nSyntax\n\nALTER TABLE table_name\n\nDROP COLUMN column_name;\n\nThe following SQL deletes the \"Email\" column from the \"Customers\" table:\n\nExample\n\nALTER TABLE Customers\nDROP COLUMN Email;",
+                "heading": "ALTER TABLE - DROP COLUMN"
+            },
+            {
+                "content": "To rename a column in a table, use the following syntax:\n\nSyntax\n\nALTER TABLE table_name\n\nRENAME COLUMN old_name to new_name;",
+                "heading": "ALTER TABLE - RENAME COLUMN"
+            },
+            {
+                "content": "To modify the data type, size or constraints of a column in a table, use the following syntax:\n\nSyntax\n\nALTER TABLE table_name\n\nMODIFY column_name new_datatype constraint;\n\nThe following SQL modifies the size of the \"Email\" column \nto varchar(100), and we also add a \nNOT NULL \nconstraint:\n\nExample\n\nALTER TABLE Customers\nMODIFY Email varchar(100) NOT NULL;",
+                "heading": "ALTER TABLE - MODIFY Datatype"
+            },
+            {
+                "content": "To add a constraint to an existing table, use the following syntax:\n\nSyntax\n\nALTER TABLE table_name\n\nADD CONSTRAINT constraint_name constraint_definition;\n\nThe following SQL adds a constraint named \"CHK_Age\" that is a \nCHECK constraint \nthat ensures that the \"Age\" column has a value of 18 and above:\n\nExample\n\nALTER TABLE Members\nADD CONSTRAINT CHK_Age CHECK (Age >= 18);",
+                "heading": "ALTER TABLE - ADD CONSTRAINT"
+            },
+            {
+                "content": "To rename a table, use the following syntax:\n\nSyntax\n\nALTER TABLE table_name\n\nRENAME TO new_table_name;\n\nThe following SQL renames the \"Customers\" table to \"Clients\":\n\nExample\n\nALTER TABLE Customers\n\nRENAME TO Clients;",
+                "heading": "ALTER TABLE - Rename table"
+            },
+            {
+                "content": "Assume we have a \"Persons\" table, that looks like this:\n\n ID\n LastName\n FirstName\n Address\n City\n\n 1\n Hansen\n Ola\n Timoteivn 10\n Sandnes\n\n 2\n Svendson\n Tove\n Borgvn 23\n Sandnes\n\n 3\n Pettersen\n Kari\n Storgt 20\n Stavanger\n\nNow we want to add a column named \"DateOfBirth\" in the \"Persons\" table.\n\nWe use the following SQL statement:\n\nExample\n\nALTER TABLE Persons\n\nADD DateOfBirth date;\n\nNotice that the new column, \"DateOfBirth\", is of type date and is going to hold a \ndate. The data type specifies what type of data the column can hold. For a \ncomplete \nreference of all the data types available in MySQL, \ngo to our Data Types reference.\n\nThe \"Persons\" table will now look like this:\n\n ID\n LastName\n FirstName\n Address\n City\n DateOfBirth\n\n 1\n Hansen\n Ola\n Timoteivn 10\n Sandnes\n\n 2\n Svendson\n Tove\n Borgvn 23\n Sandnes\n\n 3\n Pettersen\n Kari\n Storgt 20\n Stavanger",
+                "heading": "MySQL ALTER TABLE Example"
+            },
+            {
+                "content": "Now we want to change the data type of the column named \"DateOfBirth\" in the \"Persons\" table.\n\nWe use the following SQL statement:\n\nExample\n\nALTER TABLE Persons\n\nMODIFY COLUMN DateOfBirth year;\n\nNotice that the \"DateOfBirth\" column is now of type year and is going to hold a year in a two- or four-digit format.",
+                "heading": "Change Data Type Example"
+            },
+            {
+                "content": "Next, we want to delete the column named \"DateOfBirth\" in the \"Persons\" table.\n\nWe use the following SQL statement:\n\nExample\n\nALTER TABLE Persons\n\nDROP COLUMN DateOfBirth;\n\nThe \"Persons\" table will now look like this:\n\n ID\n LastName\n FirstName\n Address\n City\n\n 1\n Hansen\n Ola\n Timoteivn 10\n Sandnes\n\n 2\n Svendson\n Tove\n Borgvn 23\n Sandnes\n\n 3\n Pettersen\n Kari\n Storgt 20\n Stavanger\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "DROP COLUMN Example"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:40Z",
+        "subject": "MySQL",
+        "title": "MySQL ALTER TABLE Statement"
+    },
+    {
+        "url": "https://www.w3schools.com/mysql/mysql_constraints.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "mysql_mysql_constraints",
+        "code_examples": [],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MySQL HOME\nMySQL Intro\nMySQL RDBMS",
+                "heading": "MySQL Tutorial"
+            },
+            {
+                "content": "MySQL SQL\nMySQL SELECT\nMySQL SELECT DISTINCT\nMySQL WHERE\nMySQL ORDER BY\nMySQL AND\nMySQL OR\nMySQL NOT\nMySQL INSERT INTO\nMySQL NULL Values\nMySQL UPDATE\nMySQL DELETE\nMySQL LIMIT\nMySQL Aggregate Functions\nMySQL MIN()\nMySQL MAX()\nMySQL COUNT()\nMySQL SUM()\nMySQL AVG()\nMySQL LIKE\nMySQL Wildcards\nMySQL IN\nMySQL BETWEEN\nMySQL Aliases\nMySQL Joins\nMySQL INNER JOIN\nMySQL LEFT JOIN\nMySQL RIGHT JOIN\nMySQL CROSS JOIN\nMySQL Self Join\nMySQL UNION\nMySQL UNION ALL\nMySQL GROUP BY\nMySQL HAVING\nMySQL EXISTS\nMySQL ANY\nMySQL ALL\nMySQL INSERT SELECT\nMySQL CASE\nMySQL Null Functions\nMySQL Stored Procedures\nMySQL Comments\nMySQL Operators",
+                "heading": "MySQL SQL"
+            },
+            {
+                "content": "MySQL Install (Windows)\nMySQL Install (Linux)-->\nMySQL Create DB\nMySQL Drop DB\nMySQL Create Table\nMySQL Drop Table\nMySQL Alter Table\nMySQL Constraints\nMySQL Not Null\nMySQL Unique\nMySQL Primary Key\nMySQL Foreign Key\nMySQL Check\nMySQL Default\nMySQL Create Index\nMySQL Auto Increment\nMySQL Dates\nMySQL Views\nMySQL Injection\nMySQL Prepared Statements",
+                "heading": "MySQL Database"
+            },
+            {
+                "content": "MySQL Certificate",
+                "heading": "MySQL Cert"
+            },
+            {
+                "content": "MySQL Data Types\nMySQL Functions\n\n String Functions\n ASCII\n CHAR_LENGTH\n CHARACTER_LENGTH\n CONCAT\n CONCAT_WS\n FIELD\n FIND_IN_SET\n FORMAT\n INSERT\n INSTR\n LCASE\n LEFT\n LENGTH\n LOCATE\n LOWER\n LPAD\n LTRIM\n MID\n POSITION\n REPEAT\n REPLACE\n REVERSE\n RIGHT\n RPAD\n RTRIM\n SPACE\n STRCMP\n SUBSTR\n SUBSTRING\n SUBSTRING_INDEX\n TRIM\n UCASE\n UPPER\n\n Numeric Functions\n ABS\n ACOS\n ASIN\n ATAN\n ATAN2\n AVG\n CEIL\n CEILING\n COS\n COT\n COUNT\n DEGREES\n DIV\n EXP\n FLOOR\n GREATEST\n LEAST\n LN\n LOG\n LOG10\n LOG2\n MAX\n MIN\n MOD\n PI\n POW\n POWER\n RADIANS\n RAND\n ROUND\n SIGN\n SIN\n SQRT\n SUM\n TAN\n TRUNCATE\n\n Date Functions\n ADDDATE\n ADDTIME\n CURDATE\n CURRENT_DATE\n CURRENT_TIME\n CURRENT_TIMESTAMP\n CURTIME\n DATE\n DATEDIFF\n DATE_ADD\n DATE_FORMAT\n DATE_SUB\n DAY\n DAYNAME\n DAYOFMONTH\n DAYOFWEEK\n DAYOFYEAR\n EXTRACT\n FROM_DAYS\n HOUR\n LAST_DAY\n LOCALTIME\n LOCALTIMESTAMP\n MAKEDATE\n MAKETIME\n MICROSECOND\n MINUTE\n MONTH\n MONTHNAME\n NOW\n PERIOD_ADD\n PERIOD_DIFF\n QUARTER\n SECOND\n SEC_TO_TIME\n STR_TO_DATE\n SUBDATE\n SUBTIME\n SYSDATE\n TIME\n TIME_FORMAT\n TIME_TO_SEC\n TIMEDIFF\n TIMESTAMP\n TO_DAYS\n WEEK\n WEEKDAY\n WEEKOFYEAR\n YEAR\n YEARWEEK\n\n Advanced Functions\n BIN\n BINARY\n CASE\n CAST\n COALESCE\n CONNECTION_ID\n CONV\n CONVERT\n CURRENT_USER\n DATABASE\n IF\n IFNULL\n ISNULL\n LAST_INSERT_ID\n NULLIF\n SESSION_USER\n SYSTEM_USER\n USER\n VERSION",
+                "heading": "MySQL References"
+            },
+            {
+                "content": "MySQL Examples\nMySQL Editor\nMySQL Quiz\nMySQL Exercises\nMySQL Syllabus\nMySQL Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\nMySQL Constraints\n\n ❮ Previous\nNext ❯",
+                "heading": "MySQL Examples"
+            },
+            {
+                "content": "Constraints are rules for data in a table.\n\nConstraints are used to prevent insertion of invalid data in a table, and ensures the accuracy and reliability of \nthe data in the table. If there is any violation between the constraint and the data action, \nthe action is aborted.\n\nConstraints can be specified in two ways:\n\n When a table is created (through the \n CREATE TABLE statement)\n\n After a table is created (through the \n ALTER TABLE \n statement)",
+                "heading": "Create Constraints"
+            },
+            {
+                "content": "The following constraints are commonly used in MySQL:\n\n NOT NULL - Ensures that a column cannot have a NULL value\n\n UNIQUE - Ensures that all values in a column are \n unique\n\n PRIMARY KEY \n - Uniquely identifies each row in a table (a combination of a \n NOT NULL and UNIQUE)\n\n FOREIGN KEY \n - Establishes a link between data in two tables, and prevents action that will \n destroy the link between them\n\n CHECK - Ensures that \n the values in a column satisfies a specific condition\n\n DEFAULT - Sets a default value for a column \n if no value \n is specified\n\n CREATE INDEX \n - Creates indexes on columns to retrieve data from the database faster",
+                "heading": "MySQL Constraints"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:40Z",
+        "subject": "MySQL",
+        "title": "MySQL Constraints"
+    },
+    {
+        "url": "https://www.w3schools.com/mysql/mysql_notnull.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "mysql_mysql_notnull",
+        "code_examples": [
+            {
+                "code": "Example\n\n CREATE TABLE Persons (\n    ID int NOT NULL,\n\n LastName varchar(255) NOT NULL,\n    FirstName varchar(255) \n NOT NULL,\n    Age int\n);",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "ALTER TABLE Persons\n\nMODIFY Age int NOT NULL;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "ALTER TABLE Persons\n\nMODIFY Age int NULL;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MySQL HOME\nMySQL Intro\nMySQL RDBMS",
+                "heading": "MySQL Tutorial"
+            },
+            {
+                "content": "MySQL SQL\nMySQL SELECT\nMySQL SELECT DISTINCT\nMySQL WHERE\nMySQL ORDER BY\nMySQL AND\nMySQL OR\nMySQL NOT\nMySQL INSERT INTO\nMySQL NULL Values\nMySQL UPDATE\nMySQL DELETE\nMySQL LIMIT\nMySQL Aggregate Functions\nMySQL MIN()\nMySQL MAX()\nMySQL COUNT()\nMySQL SUM()\nMySQL AVG()\nMySQL LIKE\nMySQL Wildcards\nMySQL IN\nMySQL BETWEEN\nMySQL Aliases\nMySQL Joins\nMySQL INNER JOIN\nMySQL LEFT JOIN\nMySQL RIGHT JOIN\nMySQL CROSS JOIN\nMySQL Self Join\nMySQL UNION\nMySQL UNION ALL\nMySQL GROUP BY\nMySQL HAVING\nMySQL EXISTS\nMySQL ANY\nMySQL ALL\nMySQL INSERT SELECT\nMySQL CASE\nMySQL Null Functions\nMySQL Stored Procedures\nMySQL Comments\nMySQL Operators",
+                "heading": "MySQL SQL"
+            },
+            {
+                "content": "MySQL Install (Windows)\nMySQL Install (Linux)-->\nMySQL Create DB\nMySQL Drop DB\nMySQL Create Table\nMySQL Drop Table\nMySQL Alter Table\nMySQL Constraints\nMySQL Not Null\nMySQL Unique\nMySQL Primary Key\nMySQL Foreign Key\nMySQL Check\nMySQL Default\nMySQL Create Index\nMySQL Auto Increment\nMySQL Dates\nMySQL Views\nMySQL Injection\nMySQL Prepared Statements",
+                "heading": "MySQL Database"
+            },
+            {
+                "content": "MySQL Certificate",
+                "heading": "MySQL Cert"
+            },
+            {
+                "content": "MySQL Data Types\nMySQL Functions\n\n String Functions\n ASCII\n CHAR_LENGTH\n CHARACTER_LENGTH\n CONCAT\n CONCAT_WS\n FIELD\n FIND_IN_SET\n FORMAT\n INSERT\n INSTR\n LCASE\n LEFT\n LENGTH\n LOCATE\n LOWER\n LPAD\n LTRIM\n MID\n POSITION\n REPEAT\n REPLACE\n REVERSE\n RIGHT\n RPAD\n RTRIM\n SPACE\n STRCMP\n SUBSTR\n SUBSTRING\n SUBSTRING_INDEX\n TRIM\n UCASE\n UPPER\n\n Numeric Functions\n ABS\n ACOS\n ASIN\n ATAN\n ATAN2\n AVG\n CEIL\n CEILING\n COS\n COT\n COUNT\n DEGREES\n DIV\n EXP\n FLOOR\n GREATEST\n LEAST\n LN\n LOG\n LOG10\n LOG2\n MAX\n MIN\n MOD\n PI\n POW\n POWER\n RADIANS\n RAND\n ROUND\n SIGN\n SIN\n SQRT\n SUM\n TAN\n TRUNCATE\n\n Date Functions\n ADDDATE\n ADDTIME\n CURDATE\n CURRENT_DATE\n CURRENT_TIME\n CURRENT_TIMESTAMP\n CURTIME\n DATE\n DATEDIFF\n DATE_ADD\n DATE_FORMAT\n DATE_SUB\n DAY\n DAYNAME\n DAYOFMONTH\n DAYOFWEEK\n DAYOFYEAR\n EXTRACT\n FROM_DAYS\n HOUR\n LAST_DAY\n LOCALTIME\n LOCALTIMESTAMP\n MAKEDATE\n MAKETIME\n MICROSECOND\n MINUTE\n MONTH\n MONTHNAME\n NOW\n PERIOD_ADD\n PERIOD_DIFF\n QUARTER\n SECOND\n SEC_TO_TIME\n STR_TO_DATE\n SUBDATE\n SUBTIME\n SYSDATE\n TIME\n TIME_FORMAT\n TIME_TO_SEC\n TIMEDIFF\n TIMESTAMP\n TO_DAYS\n WEEK\n WEEKDAY\n WEEKOFYEAR\n YEAR\n YEARWEEK\n\n Advanced Functions\n BIN\n BINARY\n CASE\n CAST\n COALESCE\n CONNECTION_ID\n CONV\n CONVERT\n CURRENT_USER\n DATABASE\n IF\n IFNULL\n ISNULL\n LAST_INSERT_ID\n NULLIF\n SESSION_USER\n SYSTEM_USER\n USER\n VERSION",
+                "heading": "MySQL References"
+            },
+            {
+                "content": "MySQL Examples\nMySQL Editor\nMySQL Quiz\nMySQL Exercises\nMySQL Syllabus\nMySQL Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\nMySQL NOT NULL Constraint\n\n❮ Previous\nNext ❯",
+                "heading": "MySQL Examples"
+            },
+            {
+                "content": "The NOT NULL constraint enforces a column to NOT accept NULL values.\nThis enforces a field to always contain a value, which means that you cannot insert a new record,\nor update a record without adding a value to this field.\n\nBy default, a column can hold NULL values.",
+                "heading": "MySQL NOT NULL Constraint"
+            },
+            {
+                "content": "To define a NOT NULL constraint when \ncreating a table, add NOT NULL after the data type of the column name.\n\nThe following SQL creates a \"Persons\" table, and ensures that the \"ID\", \"LastName\", and \n\"FirstName\" columns \ncannot accept NULL values:\n\nExample\n\n CREATE TABLE Persons (\n    ID int NOT NULL,\n\n LastName varchar(255) NOT NULL,\n    FirstName varchar(255) \n NOT NULL,\n    Age int\n);",
+                "heading": "NOT NULL on CREATE TABLE"
+            },
+            {
+                "content": "To define a NOT NULL constraint on an \nexisting table, use ALTER TABLE \n and add NOT NULL after the data type of the column name.\n\nThe following SQL adds a NOT NULL constraint on the \"Age\" column, \nafter the \"Persons\" table is already created:\n\nALTER TABLE Persons\n\nMODIFY Age int NOT NULL;",
+                "heading": "NOT NULL on ALTER TABLE"
+            },
+            {
+                "content": "To remove a NOT NULL constraint from a \ncolumn (to let the column accept NULL values again), use the following syntax:\n\nALTER TABLE Persons\n\nMODIFY Age int NULL;",
+                "heading": "Remove a NOT NULL Constraint"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:40Z",
+        "subject": "MySQL",
+        "title": "MySQL NOT NULL Constraint"
+    },
+    {
+        "url": "https://www.w3schools.com/mysql/mysql_unique.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "mysql_mysql_unique",
+        "code_examples": [
+            {
+                "code": "CREATE TABLE Persons\n(\n\n    ID int NOT NULL,\n\nLastName varchar(255) NOT NULL,\n\nFirstName varchar(255),\n\nAge int,\n\nUNIQUE (ID)\n\n);",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "CREATE TABLE Persons\n(\n\n    ID int NOT NULL,\n\nLastName varchar(255) NOT NULL,\n\nFirstName varchar(255),\n\nAge int,\n\nCONSTRAINT UC_Person UNIQUE (ID,LastName)\n\n);",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "ALTER TABLE Persons\n\nADD UNIQUE (ID);",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "ALTER TABLE Persons\n\nADD CONSTRAINT UC_Person UNIQUE (ID,LastName);",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "ALTER TABLE Persons\n\nDROP INDEX UC_Person;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MySQL HOME\nMySQL Intro\nMySQL RDBMS",
+                "heading": "MySQL Tutorial"
+            },
+            {
+                "content": "MySQL SQL\nMySQL SELECT\nMySQL SELECT DISTINCT\nMySQL WHERE\nMySQL ORDER BY\nMySQL AND\nMySQL OR\nMySQL NOT\nMySQL INSERT INTO\nMySQL NULL Values\nMySQL UPDATE\nMySQL DELETE\nMySQL LIMIT\nMySQL Aggregate Functions\nMySQL MIN()\nMySQL MAX()\nMySQL COUNT()\nMySQL SUM()\nMySQL AVG()\nMySQL LIKE\nMySQL Wildcards\nMySQL IN\nMySQL BETWEEN\nMySQL Aliases\nMySQL Joins\nMySQL INNER JOIN\nMySQL LEFT JOIN\nMySQL RIGHT JOIN\nMySQL CROSS JOIN\nMySQL Self Join\nMySQL UNION\nMySQL UNION ALL\nMySQL GROUP BY\nMySQL HAVING\nMySQL EXISTS\nMySQL ANY\nMySQL ALL\nMySQL INSERT SELECT\nMySQL CASE\nMySQL Null Functions\nMySQL Stored Procedures\nMySQL Comments\nMySQL Operators",
+                "heading": "MySQL SQL"
+            },
+            {
+                "content": "MySQL Install (Windows)\nMySQL Install (Linux)-->\nMySQL Create DB\nMySQL Drop DB\nMySQL Create Table\nMySQL Drop Table\nMySQL Alter Table\nMySQL Constraints\nMySQL Not Null\nMySQL Unique\nMySQL Primary Key\nMySQL Foreign Key\nMySQL Check\nMySQL Default\nMySQL Create Index\nMySQL Auto Increment\nMySQL Dates\nMySQL Views\nMySQL Injection\nMySQL Prepared Statements",
+                "heading": "MySQL Database"
+            },
+            {
+                "content": "MySQL Certificate",
+                "heading": "MySQL Cert"
+            },
+            {
+                "content": "MySQL Data Types\nMySQL Functions\n\n String Functions\n ASCII\n CHAR_LENGTH\n CHARACTER_LENGTH\n CONCAT\n CONCAT_WS\n FIELD\n FIND_IN_SET\n FORMAT\n INSERT\n INSTR\n LCASE\n LEFT\n LENGTH\n LOCATE\n LOWER\n LPAD\n LTRIM\n MID\n POSITION\n REPEAT\n REPLACE\n REVERSE\n RIGHT\n RPAD\n RTRIM\n SPACE\n STRCMP\n SUBSTR\n SUBSTRING\n SUBSTRING_INDEX\n TRIM\n UCASE\n UPPER\n\n Numeric Functions\n ABS\n ACOS\n ASIN\n ATAN\n ATAN2\n AVG\n CEIL\n CEILING\n COS\n COT\n COUNT\n DEGREES\n DIV\n EXP\n FLOOR\n GREATEST\n LEAST\n LN\n LOG\n LOG10\n LOG2\n MAX\n MIN\n MOD\n PI\n POW\n POWER\n RADIANS\n RAND\n ROUND\n SIGN\n SIN\n SQRT\n SUM\n TAN\n TRUNCATE\n\n Date Functions\n ADDDATE\n ADDTIME\n CURDATE\n CURRENT_DATE\n CURRENT_TIME\n CURRENT_TIMESTAMP\n CURTIME\n DATE\n DATEDIFF\n DATE_ADD\n DATE_FORMAT\n DATE_SUB\n DAY\n DAYNAME\n DAYOFMONTH\n DAYOFWEEK\n DAYOFYEAR\n EXTRACT\n FROM_DAYS\n HOUR\n LAST_DAY\n LOCALTIME\n LOCALTIMESTAMP\n MAKEDATE\n MAKETIME\n MICROSECOND\n MINUTE\n MONTH\n MONTHNAME\n NOW\n PERIOD_ADD\n PERIOD_DIFF\n QUARTER\n SECOND\n SEC_TO_TIME\n STR_TO_DATE\n SUBDATE\n SUBTIME\n SYSDATE\n TIME\n TIME_FORMAT\n TIME_TO_SEC\n TIMEDIFF\n TIMESTAMP\n TO_DAYS\n WEEK\n WEEKDAY\n WEEKOFYEAR\n YEAR\n YEARWEEK\n\n Advanced Functions\n BIN\n BINARY\n CASE\n CAST\n COALESCE\n CONNECTION_ID\n CONV\n CONVERT\n CURRENT_USER\n DATABASE\n IF\n IFNULL\n ISNULL\n LAST_INSERT_ID\n NULLIF\n SESSION_USER\n SYSTEM_USER\n USER\n VERSION",
+                "heading": "MySQL References"
+            },
+            {
+                "content": "MySQL Examples\nMySQL Editor\nMySQL Quiz\nMySQL Exercises\nMySQL Syllabus\nMySQL Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\nMySQL UNIQUE Constraint\n\n❮ Previous\nNext ❯",
+                "heading": "MySQL Examples"
+            },
+            {
+                "content": "The UNIQUE constraint ensures that all values in a column are unique.\n\nBoth the UNIQUE and PRIMARY KEY constraints provide a guarantee for uniqueness for a column or set of columns. However, you can have many UNIQUE constraints per table, but only one \nPRIMARY KEY constraint per table.",
+                "heading": "MySQL UNIQUE Constraint"
+            },
+            {
+                "content": "The following SQL defines a UNIQUE constraint \nfor the \"ID\" column upon creation of the \"Persons\" table:\n\nCREATE TABLE Persons\n(\n\n    ID int NOT NULL,\n\nLastName varchar(255) NOT NULL,\n\nFirstName varchar(255),\n\nAge int,\n\nUNIQUE (ID)\n\n);\n\nNaming a Unique Constraint\n\nTo name a UNIQUE constraint, and to define a \nUNIQUE constraint on multiple columns, use the following SQL syntax:\n\nCREATE TABLE Persons\n(\n\n    ID int NOT NULL,\n\nLastName varchar(255) NOT NULL,\n\nFirstName varchar(255),\n\nAge int,\n\nCONSTRAINT UC_Person UNIQUE (ID,LastName)\n\n);",
+                "heading": "UNIQUE Constraint on CREATE TABLE"
+            },
+            {
+                "content": "To create a UNIQUE constraint on the \"ID\" column when the table is already created, use the following SQL \nsyntax:\n\nALTER TABLE Persons\n\nADD UNIQUE (ID);\n\nNaming a Unique Constraint\nTo name a UNIQUE constraint, and to define a \nUNIQUE constraint on multiple columns, use the following SQL syntax:\n\nALTER TABLE Persons\n\nADD CONSTRAINT UC_Person UNIQUE (ID,LastName);",
+                "heading": "UNIQUE Constraint on ALTER TABLE"
+            },
+            {
+                "content": "To drop a UNIQUE constraint, use the following SQL:\n\nALTER TABLE Persons\n\nDROP INDEX UC_Person;\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Drop a UNIQUE Constraint"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:40Z",
+        "subject": "MySQL",
+        "title": "MySQL UNIQUE Constraint"
+    },
+    {
+        "url": "https://www.w3schools.com/mysql/mysql_primarykey.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "mysql_mysql_primarykey",
+        "code_examples": [
+            {
+                "code": "CREATE TABLE Persons\n(\n\n    ID int PRIMARY KEY,\n\nLastName varchar(255) NOT NULL,\n\nFirstName varchar(255),\n\nAge int\n\n);",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "CREATE TABLE Persons\n(\n\n    ID int,\n\nLastName varchar(255),\n\nFirstName varchar(255),\n\nAge int,\n\n PRIMARY KEY (ID, LastName)\n\n);",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "CREATE TABLE Persons\n(\n\n    ID int,\n\nLastName varchar(255),\n\nFirstName varchar(255),\n\nAge int,\n\nCONSTRAINT PK_Person PRIMARY KEY (ID, LastName)\n\n);",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "ALTER TABLE Persons\n\nADD PRIMARY KEY (ID);",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "ALTER TABLE Persons\n\nADD CONSTRAINT PK_Person PRIMARY KEY (ID, LastName);",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "ALTER TABLE Persons\n\nDROP PRIMARY KEY;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MySQL HOME\nMySQL Intro\nMySQL RDBMS",
+                "heading": "MySQL Tutorial"
+            },
+            {
+                "content": "MySQL SQL\nMySQL SELECT\nMySQL SELECT DISTINCT\nMySQL WHERE\nMySQL ORDER BY\nMySQL AND\nMySQL OR\nMySQL NOT\nMySQL INSERT INTO\nMySQL NULL Values\nMySQL UPDATE\nMySQL DELETE\nMySQL LIMIT\nMySQL Aggregate Functions\nMySQL MIN()\nMySQL MAX()\nMySQL COUNT()\nMySQL SUM()\nMySQL AVG()\nMySQL LIKE\nMySQL Wildcards\nMySQL IN\nMySQL BETWEEN\nMySQL Aliases\nMySQL Joins\nMySQL INNER JOIN\nMySQL LEFT JOIN\nMySQL RIGHT JOIN\nMySQL CROSS JOIN\nMySQL Self Join\nMySQL UNION\nMySQL UNION ALL\nMySQL GROUP BY\nMySQL HAVING\nMySQL EXISTS\nMySQL ANY\nMySQL ALL\nMySQL INSERT SELECT\nMySQL CASE\nMySQL Null Functions\nMySQL Stored Procedures\nMySQL Comments\nMySQL Operators",
+                "heading": "MySQL SQL"
+            },
+            {
+                "content": "MySQL Install (Windows)\nMySQL Install (Linux)-->\nMySQL Create DB\nMySQL Drop DB\nMySQL Create Table\nMySQL Drop Table\nMySQL Alter Table\nMySQL Constraints\nMySQL Not Null\nMySQL Unique\nMySQL Primary Key\nMySQL Foreign Key\nMySQL Check\nMySQL Default\nMySQL Create Index\nMySQL Auto Increment\nMySQL Dates\nMySQL Views\nMySQL Injection\nMySQL Prepared Statements",
+                "heading": "MySQL Database"
+            },
+            {
+                "content": "MySQL Certificate",
+                "heading": "MySQL Cert"
+            },
+            {
+                "content": "MySQL Data Types\nMySQL Functions\n\n String Functions\n ASCII\n CHAR_LENGTH\n CHARACTER_LENGTH\n CONCAT\n CONCAT_WS\n FIELD\n FIND_IN_SET\n FORMAT\n INSERT\n INSTR\n LCASE\n LEFT\n LENGTH\n LOCATE\n LOWER\n LPAD\n LTRIM\n MID\n POSITION\n REPEAT\n REPLACE\n REVERSE\n RIGHT\n RPAD\n RTRIM\n SPACE\n STRCMP\n SUBSTR\n SUBSTRING\n SUBSTRING_INDEX\n TRIM\n UCASE\n UPPER\n\n Numeric Functions\n ABS\n ACOS\n ASIN\n ATAN\n ATAN2\n AVG\n CEIL\n CEILING\n COS\n COT\n COUNT\n DEGREES\n DIV\n EXP\n FLOOR\n GREATEST\n LEAST\n LN\n LOG\n LOG10\n LOG2\n MAX\n MIN\n MOD\n PI\n POW\n POWER\n RADIANS\n RAND\n ROUND\n SIGN\n SIN\n SQRT\n SUM\n TAN\n TRUNCATE\n\n Date Functions\n ADDDATE\n ADDTIME\n CURDATE\n CURRENT_DATE\n CURRENT_TIME\n CURRENT_TIMESTAMP\n CURTIME\n DATE\n DATEDIFF\n DATE_ADD\n DATE_FORMAT\n DATE_SUB\n DAY\n DAYNAME\n DAYOFMONTH\n DAYOFWEEK\n DAYOFYEAR\n EXTRACT\n FROM_DAYS\n HOUR\n LAST_DAY\n LOCALTIME\n LOCALTIMESTAMP\n MAKEDATE\n MAKETIME\n MICROSECOND\n MINUTE\n MONTH\n MONTHNAME\n NOW\n PERIOD_ADD\n PERIOD_DIFF\n QUARTER\n SECOND\n SEC_TO_TIME\n STR_TO_DATE\n SUBDATE\n SUBTIME\n SYSDATE\n TIME\n TIME_FORMAT\n TIME_TO_SEC\n TIMEDIFF\n TIMESTAMP\n TO_DAYS\n WEEK\n WEEKDAY\n WEEKOFYEAR\n YEAR\n YEARWEEK\n\n Advanced Functions\n BIN\n BINARY\n CASE\n CAST\n COALESCE\n CONNECTION_ID\n CONV\n CONVERT\n CURRENT_USER\n DATABASE\n IF\n IFNULL\n ISNULL\n LAST_INSERT_ID\n NULLIF\n SESSION_USER\n SYSTEM_USER\n USER\n VERSION",
+                "heading": "MySQL References"
+            },
+            {
+                "content": "MySQL Examples\nMySQL Editor\nMySQL Quiz\nMySQL Exercises\nMySQL Syllabus\nMySQL Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\nMySQL PRIMARY KEY Constraint\n\n❮ Previous\nNext ❯",
+                "heading": "MySQL Examples"
+            },
+            {
+                "content": "The PRIMARY KEY constraint uniquely identifies each record in a database table.\n\nA PRIMARY KEY constraint ensures unique values, and cannot contain NULL values \n(it is a combination of both a \nUNIQUE constraint and a\nNOT NULL constraint).\n\nA table can have only ONE PRIMARY KEY \nconstraint. The primary key can either be a single column, or a combination of columns.\n\nTip: The primary key is the target for \nFOREIGN KEY \nconstraints in other tables (which enforces referential integrity between data in two tables).",
+                "heading": "MySQL PRIMARY KEY Constraint"
+            },
+            {
+                "content": "The following SQL creates a PRIMARY KEY on the \"ID\" column \nupon creation of the \"Persons\" table:\n\nCREATE TABLE Persons\n(\n\n    ID int PRIMARY KEY,\n\nLastName varchar(255) NOT NULL,\n\nFirstName varchar(255),\n\nAge int\n\n);\n\nPRIMARY KEY on Multiple Columns\nTo define an un-named PRIMARY KEY constraint on multiple columns, use the following SQL syntax:\n\nCREATE TABLE Persons\n(\n\n    ID int,\n\nLastName varchar(255),\n\nFirstName varchar(255),\n\nAge int,\n\n PRIMARY KEY (ID, LastName)\n\n);\n\nNote: In the example above, the \nPRIMARY KEY value is made up of two columns (ID + LastName).\n\nTo define a named PRIMARY KEY constraint on multiple columns, use the following SQL syntax:\n\nCREATE TABLE Persons\n(\n\n    ID int,\n\nLastName varchar(255),\n\nFirstName varchar(255),\n\nAge int,\n\nCONSTRAINT PK_Person PRIMARY KEY (ID, LastName)\n\n);\n\nNote: In the example above, the \nPRIMARY KEY is named \"PK_Person\", and the value is made up of two columns (ID + LastName).",
+                "heading": "PRIMARY KEY on CREATE TABLE"
+            },
+            {
+                "content": "To create a PRIMARY KEY constraint on the \"ID\" column when the table already \nhas been created, use the following SQL:\n\nALTER TABLE Persons\n\nADD PRIMARY KEY (ID);\n\nPRIMARY KEY on Multiple Columns\nTo define a \nnamed \nPRIMARY KEY constraint on multiple columns, use the following SQL syntax:\n\nALTER TABLE Persons\n\nADD CONSTRAINT PK_Person PRIMARY KEY (ID, LastName);\n\nNote: When using ALTER TABLE to add a primary key, the primary key column(s) must\nhave been declared with NOT NULL upon creation of the table.",
+                "heading": "PRIMARY KEY on ALTER TABLE"
+            },
+            {
+                "content": "To drop a PRIMARY KEY constraint, use the following SQL:\n\nALTER TABLE Persons\n\nDROP PRIMARY KEY;\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Drop a PRIMARY KEY Constraint"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:40Z",
+        "subject": "MySQL",
+        "title": "MySQL PRIMARY KEY Constraint"
+    },
+    {
+        "url": "https://www.w3schools.com/mysql/mysql_foreignkey.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "mysql_mysql_foreignkey",
+        "code_examples": [
+            {
+                "code": "CREATE TABLE Orders\n(\n\nOrderID int PRIMARY KEY,\n\nOrderNumber int NOT NULL,\n\nPersonID int,\n\nCONSTRAINT fk_Person\n    FOREIGN KEY (PersonID)\n\nREFERENCES Persons(PersonID)\n\n);",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "ALTER TABLE Orders\n\nADD CONSTRAINT fk_Person\n\nFOREIGN KEY (PersonID)\nREFERENCES Persons(PersonID);",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "ALTER TABLE Orders\n\nDROP FOREIGN KEY fk_Person;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MySQL HOME\nMySQL Intro\nMySQL RDBMS",
+                "heading": "MySQL Tutorial"
+            },
+            {
+                "content": "MySQL SQL\nMySQL SELECT\nMySQL SELECT DISTINCT\nMySQL WHERE\nMySQL ORDER BY\nMySQL AND\nMySQL OR\nMySQL NOT\nMySQL INSERT INTO\nMySQL NULL Values\nMySQL UPDATE\nMySQL DELETE\nMySQL LIMIT\nMySQL Aggregate Functions\nMySQL MIN()\nMySQL MAX()\nMySQL COUNT()\nMySQL SUM()\nMySQL AVG()\nMySQL LIKE\nMySQL Wildcards\nMySQL IN\nMySQL BETWEEN\nMySQL Aliases\nMySQL Joins\nMySQL INNER JOIN\nMySQL LEFT JOIN\nMySQL RIGHT JOIN\nMySQL CROSS JOIN\nMySQL Self Join\nMySQL UNION\nMySQL UNION ALL\nMySQL GROUP BY\nMySQL HAVING\nMySQL EXISTS\nMySQL ANY\nMySQL ALL\nMySQL INSERT SELECT\nMySQL CASE\nMySQL Null Functions\nMySQL Stored Procedures\nMySQL Comments\nMySQL Operators",
+                "heading": "MySQL SQL"
+            },
+            {
+                "content": "MySQL Install (Windows)\nMySQL Install (Linux)-->\nMySQL Create DB\nMySQL Drop DB\nMySQL Create Table\nMySQL Drop Table\nMySQL Alter Table\nMySQL Constraints\nMySQL Not Null\nMySQL Unique\nMySQL Primary Key\nMySQL Foreign Key\nMySQL Check\nMySQL Default\nMySQL Create Index\nMySQL Auto Increment\nMySQL Dates\nMySQL Views\nMySQL Injection\nMySQL Prepared Statements",
+                "heading": "MySQL Database"
+            },
+            {
+                "content": "MySQL Certificate",
+                "heading": "MySQL Cert"
+            },
+            {
+                "content": "MySQL Data Types\nMySQL Functions\n\n String Functions\n ASCII\n CHAR_LENGTH\n CHARACTER_LENGTH\n CONCAT\n CONCAT_WS\n FIELD\n FIND_IN_SET\n FORMAT\n INSERT\n INSTR\n LCASE\n LEFT\n LENGTH\n LOCATE\n LOWER\n LPAD\n LTRIM\n MID\n POSITION\n REPEAT\n REPLACE\n REVERSE\n RIGHT\n RPAD\n RTRIM\n SPACE\n STRCMP\n SUBSTR\n SUBSTRING\n SUBSTRING_INDEX\n TRIM\n UCASE\n UPPER\n\n Numeric Functions\n ABS\n ACOS\n ASIN\n ATAN\n ATAN2\n AVG\n CEIL\n CEILING\n COS\n COT\n COUNT\n DEGREES\n DIV\n EXP\n FLOOR\n GREATEST\n LEAST\n LN\n LOG\n LOG10\n LOG2\n MAX\n MIN\n MOD\n PI\n POW\n POWER\n RADIANS\n RAND\n ROUND\n SIGN\n SIN\n SQRT\n SUM\n TAN\n TRUNCATE\n\n Date Functions\n ADDDATE\n ADDTIME\n CURDATE\n CURRENT_DATE\n CURRENT_TIME\n CURRENT_TIMESTAMP\n CURTIME\n DATE\n DATEDIFF\n DATE_ADD\n DATE_FORMAT\n DATE_SUB\n DAY\n DAYNAME\n DAYOFMONTH\n DAYOFWEEK\n DAYOFYEAR\n EXTRACT\n FROM_DAYS\n HOUR\n LAST_DAY\n LOCALTIME\n LOCALTIMESTAMP\n MAKEDATE\n MAKETIME\n MICROSECOND\n MINUTE\n MONTH\n MONTHNAME\n NOW\n PERIOD_ADD\n PERIOD_DIFF\n QUARTER\n SECOND\n SEC_TO_TIME\n STR_TO_DATE\n SUBDATE\n SUBTIME\n SYSDATE\n TIME\n TIME_FORMAT\n TIME_TO_SEC\n TIMEDIFF\n TIMESTAMP\n TO_DAYS\n WEEK\n WEEKDAY\n WEEKOFYEAR\n YEAR\n YEARWEEK\n\n Advanced Functions\n BIN\n BINARY\n CASE\n CAST\n COALESCE\n CONNECTION_ID\n CONV\n CONVERT\n CURRENT_USER\n DATABASE\n IF\n IFNULL\n ISNULL\n LAST_INSERT_ID\n NULLIF\n SESSION_USER\n SYSTEM_USER\n USER\n VERSION",
+                "heading": "MySQL References"
+            },
+            {
+                "content": "MySQL Examples\nMySQL Editor\nMySQL Quiz\nMySQL Exercises\nMySQL Syllabus\nMySQL Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\nMySQL FOREIGN KEY Constraint\n\n❮ Previous\nNext ❯",
+                "heading": "MySQL Examples"
+            },
+            {
+                "content": "The FOREIGN KEY constraint establishes a link between two \ntables, and prevents action that will destroy the link between them.\n\nA FOREIGN KEY is a column in a table that refers to \nthe PRIMARY KEY in another table.\n\nThe table with the foreign key column is called the child table, and the table \nwith the primary key column is called the referenced or parent table.\n\nThe FOREIGN KEY constraint prevents invalid data from being inserted into the foreign key column \n(in the child table),\nbecause the value has to exist in the parent table.\n\nThe FOREIGN KEY constraint also prevents you \nfrom deleting a record in the parent table, if related rows still exist in the \nchild table. \n\nAssume we have two tables:\n\nPersons Table\n\n PersonID\n LastName\n FirstName\n Age\n\n 1\n Hansen\n Ola\n 30\n\n 2\n Svendson\n Tove\n 23\n\nOrders Table\n\n OrderID\n OrderNumber\n PersonID\n\n 3\n 22456\n 2\n\n 4\n 24562\n 1\n\nHere we see that the \"PersonID\" column in the \"Orders\" table points to the \"PersonID\" column in the \"Persons\" table.\n\nThe \"PersonID\" column in the \"Persons\" table is the PRIMARY KEY in the \"Persons\" table.\n\nThe \"PersonID\" column in the \"Orders\" table is the \nFOREIGN KEY in the \"Orders\" table.",
+                "heading": "MySQL FOREIGN KEY Constraint"
+            },
+            {
+                "content": "The following SQL creates a FOREIGN KEY \nconstraint on the \"PersonID\" column upon creation of the \"Orders\" table:\n\nCREATE TABLE Orders\n(\n\nOrderID int PRIMARY KEY,\n\nOrderNumber int NOT NULL,\n\nPersonID int,\n\nCONSTRAINT fk_Person\n    FOREIGN KEY (PersonID)\n\nREFERENCES Persons(PersonID)\n\n);",
+                "heading": "FOREIGN KEY on CREATE TABLE"
+            },
+            {
+                "content": "To create a FOREIGN KEY constraint on the \"PersonID\" column \nafter the \"Orders\" table is created, use the following SQL:\n\nALTER TABLE Orders\n\nADD CONSTRAINT fk_Person\n\nFOREIGN KEY (PersonID)\nREFERENCES Persons(PersonID);",
+                "heading": "FOREIGN KEY on ALTER TABLE"
+            },
+            {
+                "content": "To drop a FOREIGN KEY constraint, use the following SQL:\n\nALTER TABLE Orders\n\nDROP FOREIGN KEY fk_Person;\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Drop a FOREIGN KEY Constraint"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:40Z",
+        "subject": "MySQL",
+        "title": "MySQL FOREIGN KEY Constraint"
+    },
+    {
+        "url": "https://www.w3schools.com/mysql/mysql_check.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "mysql_mysql_check",
+        "code_examples": [
+            {
+                "code": "CREATE TABLE Persons\n(\n\n    ID int PRIMARY KEY,\n\nLastName varchar(255) NOT NULL,\n\nFirstName varchar(255),\n\nAge int CHECK (Age >= 18)\n\n);",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "CREATE TABLE Persons\n(\n\n    ID int PRIMARY KEY,\n\nLastName varchar(255) NOT NULL,\n\nFirstName varchar(255),\n\nAge int,\n\nCity varchar(255),\n\nCONSTRAINT chk_PersonAge CHECK (Age >= 18 AND City = 'Sandnes')\n\n);",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "ALTER TABLE Persons\n\nADD CHECK (Age >= 18);",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "ALTER TABLE Persons\n\nADD CONSTRAINT chk_PersonAge CHECK (Age >= 18 AND City = 'Sandnes');",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "ALTER TABLE Persons\n\nDROP CHECK chk_PersonAge;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MySQL HOME\nMySQL Intro\nMySQL RDBMS",
+                "heading": "MySQL Tutorial"
+            },
+            {
+                "content": "MySQL SQL\nMySQL SELECT\nMySQL SELECT DISTINCT\nMySQL WHERE\nMySQL ORDER BY\nMySQL AND\nMySQL OR\nMySQL NOT\nMySQL INSERT INTO\nMySQL NULL Values\nMySQL UPDATE\nMySQL DELETE\nMySQL LIMIT\nMySQL Aggregate Functions\nMySQL MIN()\nMySQL MAX()\nMySQL COUNT()\nMySQL SUM()\nMySQL AVG()\nMySQL LIKE\nMySQL Wildcards\nMySQL IN\nMySQL BETWEEN\nMySQL Aliases\nMySQL Joins\nMySQL INNER JOIN\nMySQL LEFT JOIN\nMySQL RIGHT JOIN\nMySQL CROSS JOIN\nMySQL Self Join\nMySQL UNION\nMySQL UNION ALL\nMySQL GROUP BY\nMySQL HAVING\nMySQL EXISTS\nMySQL ANY\nMySQL ALL\nMySQL INSERT SELECT\nMySQL CASE\nMySQL Null Functions\nMySQL Stored Procedures\nMySQL Comments\nMySQL Operators",
+                "heading": "MySQL SQL"
+            },
+            {
+                "content": "MySQL Install (Windows)\nMySQL Install (Linux)-->\nMySQL Create DB\nMySQL Drop DB\nMySQL Create Table\nMySQL Drop Table\nMySQL Alter Table\nMySQL Constraints\nMySQL Not Null\nMySQL Unique\nMySQL Primary Key\nMySQL Foreign Key\nMySQL Check\nMySQL Default\nMySQL Create Index\nMySQL Auto Increment\nMySQL Dates\nMySQL Views\nMySQL Injection\nMySQL Prepared Statements",
+                "heading": "MySQL Database"
+            },
+            {
+                "content": "MySQL Certificate",
+                "heading": "MySQL Cert"
+            },
+            {
+                "content": "MySQL Data Types\nMySQL Functions\n\n String Functions\n ASCII\n CHAR_LENGTH\n CHARACTER_LENGTH\n CONCAT\n CONCAT_WS\n FIELD\n FIND_IN_SET\n FORMAT\n INSERT\n INSTR\n LCASE\n LEFT\n LENGTH\n LOCATE\n LOWER\n LPAD\n LTRIM\n MID\n POSITION\n REPEAT\n REPLACE\n REVERSE\n RIGHT\n RPAD\n RTRIM\n SPACE\n STRCMP\n SUBSTR\n SUBSTRING\n SUBSTRING_INDEX\n TRIM\n UCASE\n UPPER\n\n Numeric Functions\n ABS\n ACOS\n ASIN\n ATAN\n ATAN2\n AVG\n CEIL\n CEILING\n COS\n COT\n COUNT\n DEGREES\n DIV\n EXP\n FLOOR\n GREATEST\n LEAST\n LN\n LOG\n LOG10\n LOG2\n MAX\n MIN\n MOD\n PI\n POW\n POWER\n RADIANS\n RAND\n ROUND\n SIGN\n SIN\n SQRT\n SUM\n TAN\n TRUNCATE\n\n Date Functions\n ADDDATE\n ADDTIME\n CURDATE\n CURRENT_DATE\n CURRENT_TIME\n CURRENT_TIMESTAMP\n CURTIME\n DATE\n DATEDIFF\n DATE_ADD\n DATE_FORMAT\n DATE_SUB\n DAY\n DAYNAME\n DAYOFMONTH\n DAYOFWEEK\n DAYOFYEAR\n EXTRACT\n FROM_DAYS\n HOUR\n LAST_DAY\n LOCALTIME\n LOCALTIMESTAMP\n MAKEDATE\n MAKETIME\n MICROSECOND\n MINUTE\n MONTH\n MONTHNAME\n NOW\n PERIOD_ADD\n PERIOD_DIFF\n QUARTER\n SECOND\n SEC_TO_TIME\n STR_TO_DATE\n SUBDATE\n SUBTIME\n SYSDATE\n TIME\n TIME_FORMAT\n TIME_TO_SEC\n TIMEDIFF\n TIMESTAMP\n TO_DAYS\n WEEK\n WEEKDAY\n WEEKOFYEAR\n YEAR\n YEARWEEK\n\n Advanced Functions\n BIN\n BINARY\n CASE\n CAST\n COALESCE\n CONNECTION_ID\n CONV\n CONVERT\n CURRENT_USER\n DATABASE\n IF\n IFNULL\n ISNULL\n LAST_INSERT_ID\n NULLIF\n SESSION_USER\n SYSTEM_USER\n USER\n VERSION",
+                "heading": "MySQL References"
+            },
+            {
+                "content": "MySQL Examples\nMySQL Editor\nMySQL Quiz\nMySQL Exercises\nMySQL Syllabus\nMySQL Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\nMySQL CHECK Constraint\n\n❮ Previous\nNext ❯",
+                "heading": "MySQL Examples"
+            },
+            {
+                "content": "The CHECK constraint is used to ensure that \nthe values in a column satisfies a specific condition.\n\nThe CHECK constraint evaluates the data to \nTRUE or FALSE. If the data evaluates to TRUE, the operation is ok. If the data \nevaluates to FALSE, the entire INSERT or UPDATE operation is aborted, and an \nerror is raised.",
+                "heading": "MySQL CHECK Constraint"
+            },
+            {
+                "content": "The following SQL creates a CHECK constraint on the \"Age\" column \nupon creation of the \"Persons\" table.\n\nHere, the CHECK constraint ensures that the \n\"Age\" column must have a value of 18, or above:\n\nCREATE TABLE Persons\n(\n\n    ID int PRIMARY KEY,\n\nLastName varchar(255) NOT NULL,\n\nFirstName varchar(255),\n\nAge int CHECK (Age >= 18)\n\n);\n\nNaming a CHECK Constraint\nTo name a CHECK constraint, or to define a \nCHECK constraint on multiple columns, use the following SQL syntax:\n\nCREATE TABLE Persons\n(\n\n    ID int PRIMARY KEY,\n\nLastName varchar(255) NOT NULL,\n\nFirstName varchar(255),\n\nAge int,\n\nCity varchar(255),\n\nCONSTRAINT chk_PersonAge CHECK (Age >= 18 AND City = 'Sandnes')\n\n);",
+                "heading": "CHECK Constraint on CREATE TABLE"
+            },
+            {
+                "content": "To create a CHECK constraint on the \"Age\" column when the table is already created, use the following SQL:\n\nALTER TABLE Persons\n\nADD CHECK (Age >= 18);\n\nNaming a CHECK Constraint\n\nTo name a CHECK constraint, and to define a \nCHECK constraint on multiple columns, use the following SQL syntax:\n\nALTER TABLE Persons\n\nADD CONSTRAINT chk_PersonAge CHECK (Age >= 18 AND City = 'Sandnes');",
+                "heading": "CHECK Constraint on ALTER TABLE"
+            },
+            {
+                "content": "To drop a CHECK constraint, use the following SQL:\n\nALTER TABLE Persons\n\nDROP CHECK chk_PersonAge;\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Drop a CHECK Constraint"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:41Z",
+        "subject": "MySQL",
+        "title": "MySQL CHECK Constraint"
+    },
+    {
+        "url": "https://www.w3schools.com/mysql/mysql_default.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "mysql_mysql_default",
+        "code_examples": [
+            {
+                "code": "CREATE TABLE Persons\n(\n\n    ID int PRIMARY KEY,\n\nLastName varchar(255) NOT NULL,\n\nFirstName varchar(255),\n\nAge int,\n\nCity varchar(255) DEFAULT 'Sandnes'\n\n);",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "CREATE TABLE Orders\n(\n\n    ID int PRIMARY KEY,\n\nOrderNumber int NOT NULL,\n\nOrderDate date DEFAULT CURRENT_DATE()\n\n);",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "ALTER TABLE Persons\n\nALTER City SET DEFAULT 'Sandnes';",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "ALTER TABLE Persons\n\nALTER City DROP DEFAULT;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MySQL HOME\nMySQL Intro\nMySQL RDBMS",
+                "heading": "MySQL Tutorial"
+            },
+            {
+                "content": "MySQL SQL\nMySQL SELECT\nMySQL SELECT DISTINCT\nMySQL WHERE\nMySQL ORDER BY\nMySQL AND\nMySQL OR\nMySQL NOT\nMySQL INSERT INTO\nMySQL NULL Values\nMySQL UPDATE\nMySQL DELETE\nMySQL LIMIT\nMySQL Aggregate Functions\nMySQL MIN()\nMySQL MAX()\nMySQL COUNT()\nMySQL SUM()\nMySQL AVG()\nMySQL LIKE\nMySQL Wildcards\nMySQL IN\nMySQL BETWEEN\nMySQL Aliases\nMySQL Joins\nMySQL INNER JOIN\nMySQL LEFT JOIN\nMySQL RIGHT JOIN\nMySQL CROSS JOIN\nMySQL Self Join\nMySQL UNION\nMySQL UNION ALL\nMySQL GROUP BY\nMySQL HAVING\nMySQL EXISTS\nMySQL ANY\nMySQL ALL\nMySQL INSERT SELECT\nMySQL CASE\nMySQL Null Functions\nMySQL Stored Procedures\nMySQL Comments\nMySQL Operators",
+                "heading": "MySQL SQL"
+            },
+            {
+                "content": "MySQL Install (Windows)\nMySQL Install (Linux)-->\nMySQL Create DB\nMySQL Drop DB\nMySQL Create Table\nMySQL Drop Table\nMySQL Alter Table\nMySQL Constraints\nMySQL Not Null\nMySQL Unique\nMySQL Primary Key\nMySQL Foreign Key\nMySQL Check\nMySQL Default\nMySQL Create Index\nMySQL Auto Increment\nMySQL Dates\nMySQL Views\nMySQL Injection\nMySQL Prepared Statements",
+                "heading": "MySQL Database"
+            },
+            {
+                "content": "MySQL Certificate",
+                "heading": "MySQL Cert"
+            },
+            {
+                "content": "MySQL Data Types\nMySQL Functions\n\n String Functions\n ASCII\n CHAR_LENGTH\n CHARACTER_LENGTH\n CONCAT\n CONCAT_WS\n FIELD\n FIND_IN_SET\n FORMAT\n INSERT\n INSTR\n LCASE\n LEFT\n LENGTH\n LOCATE\n LOWER\n LPAD\n LTRIM\n MID\n POSITION\n REPEAT\n REPLACE\n REVERSE\n RIGHT\n RPAD\n RTRIM\n SPACE\n STRCMP\n SUBSTR\n SUBSTRING\n SUBSTRING_INDEX\n TRIM\n UCASE\n UPPER\n\n Numeric Functions\n ABS\n ACOS\n ASIN\n ATAN\n ATAN2\n AVG\n CEIL\n CEILING\n COS\n COT\n COUNT\n DEGREES\n DIV\n EXP\n FLOOR\n GREATEST\n LEAST\n LN\n LOG\n LOG10\n LOG2\n MAX\n MIN\n MOD\n PI\n POW\n POWER\n RADIANS\n RAND\n ROUND\n SIGN\n SIN\n SQRT\n SUM\n TAN\n TRUNCATE\n\n Date Functions\n ADDDATE\n ADDTIME\n CURDATE\n CURRENT_DATE\n CURRENT_TIME\n CURRENT_TIMESTAMP\n CURTIME\n DATE\n DATEDIFF\n DATE_ADD\n DATE_FORMAT\n DATE_SUB\n DAY\n DAYNAME\n DAYOFMONTH\n DAYOFWEEK\n DAYOFYEAR\n EXTRACT\n FROM_DAYS\n HOUR\n LAST_DAY\n LOCALTIME\n LOCALTIMESTAMP\n MAKEDATE\n MAKETIME\n MICROSECOND\n MINUTE\n MONTH\n MONTHNAME\n NOW\n PERIOD_ADD\n PERIOD_DIFF\n QUARTER\n SECOND\n SEC_TO_TIME\n STR_TO_DATE\n SUBDATE\n SUBTIME\n SYSDATE\n TIME\n TIME_FORMAT\n TIME_TO_SEC\n TIMEDIFF\n TIMESTAMP\n TO_DAYS\n WEEK\n WEEKDAY\n WEEKOFYEAR\n YEAR\n YEARWEEK\n\n Advanced Functions\n BIN\n BINARY\n CASE\n CAST\n COALESCE\n CONNECTION_ID\n CONV\n CONVERT\n CURRENT_USER\n DATABASE\n IF\n IFNULL\n ISNULL\n LAST_INSERT_ID\n NULLIF\n SESSION_USER\n SYSTEM_USER\n USER\n VERSION",
+                "heading": "MySQL References"
+            },
+            {
+                "content": "MySQL Examples\nMySQL Editor\nMySQL Quiz\nMySQL Exercises\nMySQL Syllabus\nMySQL Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\nMySQL DEFAULT Constraint\n\n❮ Previous\nNext ❯",
+                "heading": "MySQL Examples"
+            },
+            {
+                "content": "The DEFAULT constraint is used to \nautomatically insert a default value for a column, \nif no value is specified.\n\nThe default value will be added to all new records (if no other value is specified).",
+                "heading": "MySQL DEFAULT Constraint"
+            },
+            {
+                "content": "The following SQL sets a DEFAULT value for the \"City\" column \nupon creation of the \"Persons\" table:\n\nCREATE TABLE Persons\n(\n\n    ID int PRIMARY KEY,\n\nLastName varchar(255) NOT NULL,\n\nFirstName varchar(255),\n\nAge int,\n\nCity varchar(255) DEFAULT 'Sandnes'\n\n);\n\nThe DEFAULT constraint can also be used to insert system values, by using functions like \nCURRENT_DATE() to insert the current date:\n\nCREATE TABLE Orders\n(\n\n    ID int PRIMARY KEY,\n\nOrderNumber int NOT NULL,\n\nOrderDate date DEFAULT CURRENT_DATE()\n\n);",
+                "heading": "DEFAULT Constraint on CREATE TABLE"
+            },
+            {
+                "content": "To define a DEFAULT constraint on the \"City\" column when the table is already created, use the following SQL:\n\nALTER TABLE Persons\n\nALTER City SET DEFAULT 'Sandnes';",
+                "heading": "DEFAULT Constraint on ALTER TABLE"
+            },
+            {
+                "content": "To drop a DEFAULT constraint, use the following SQL:\n\nALTER TABLE Persons\n\nALTER City DROP DEFAULT;",
+                "heading": "DROP a DEFAULT Constraint"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:41Z",
+        "subject": "MySQL",
+        "title": "MySQL DEFAULT Constraint"
+    },
+    {
+        "url": "https://www.w3schools.com/mysql/mysql_autoincrement.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "mysql_mysql_autoincrement",
+        "code_examples": [
+            {
+                "code": "CREATE TABLE Persons\n(\n\n Personid int AUTO_INCREMENT PRIMARY KEY,\n\nLastName varchar(255) NOT NULL,\n\nFirstName varchar(255),\n\n     Age int\n\n);",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "ALTER TABLE Persons AUTO_INCREMENT = 100;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "INSERT INTO Persons (FirstName, LastName)\n\nVALUES ('Lars', 'Monsen');",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MySQL HOME\nMySQL Intro\nMySQL RDBMS",
+                "heading": "MySQL Tutorial"
+            },
+            {
+                "content": "MySQL SQL\nMySQL SELECT\nMySQL SELECT DISTINCT\nMySQL WHERE\nMySQL ORDER BY\nMySQL AND\nMySQL OR\nMySQL NOT\nMySQL INSERT INTO\nMySQL NULL Values\nMySQL UPDATE\nMySQL DELETE\nMySQL LIMIT\nMySQL Aggregate Functions\nMySQL MIN()\nMySQL MAX()\nMySQL COUNT()\nMySQL SUM()\nMySQL AVG()\nMySQL LIKE\nMySQL Wildcards\nMySQL IN\nMySQL BETWEEN\nMySQL Aliases\nMySQL Joins\nMySQL INNER JOIN\nMySQL LEFT JOIN\nMySQL RIGHT JOIN\nMySQL CROSS JOIN\nMySQL Self Join\nMySQL UNION\nMySQL UNION ALL\nMySQL GROUP BY\nMySQL HAVING\nMySQL EXISTS\nMySQL ANY\nMySQL ALL\nMySQL INSERT SELECT\nMySQL CASE\nMySQL Null Functions\nMySQL Stored Procedures\nMySQL Comments\nMySQL Operators",
+                "heading": "MySQL SQL"
+            },
+            {
+                "content": "MySQL Install (Windows)\nMySQL Install (Linux)-->\nMySQL Create DB\nMySQL Drop DB\nMySQL Create Table\nMySQL Drop Table\nMySQL Alter Table\nMySQL Constraints\nMySQL Not Null\nMySQL Unique\nMySQL Primary Key\nMySQL Foreign Key\nMySQL Check\nMySQL Default\nMySQL Create Index\nMySQL Auto Increment\nMySQL Dates\nMySQL Views\nMySQL Injection\nMySQL Prepared Statements",
+                "heading": "MySQL Database"
+            },
+            {
+                "content": "MySQL Certificate",
+                "heading": "MySQL Cert"
+            },
+            {
+                "content": "MySQL Data Types\nMySQL Functions\n\n String Functions\n ASCII\n CHAR_LENGTH\n CHARACTER_LENGTH\n CONCAT\n CONCAT_WS\n FIELD\n FIND_IN_SET\n FORMAT\n INSERT\n INSTR\n LCASE\n LEFT\n LENGTH\n LOCATE\n LOWER\n LPAD\n LTRIM\n MID\n POSITION\n REPEAT\n REPLACE\n REVERSE\n RIGHT\n RPAD\n RTRIM\n SPACE\n STRCMP\n SUBSTR\n SUBSTRING\n SUBSTRING_INDEX\n TRIM\n UCASE\n UPPER\n\n Numeric Functions\n ABS\n ACOS\n ASIN\n ATAN\n ATAN2\n AVG\n CEIL\n CEILING\n COS\n COT\n COUNT\n DEGREES\n DIV\n EXP\n FLOOR\n GREATEST\n LEAST\n LN\n LOG\n LOG10\n LOG2\n MAX\n MIN\n MOD\n PI\n POW\n POWER\n RADIANS\n RAND\n ROUND\n SIGN\n SIN\n SQRT\n SUM\n TAN\n TRUNCATE\n\n Date Functions\n ADDDATE\n ADDTIME\n CURDATE\n CURRENT_DATE\n CURRENT_TIME\n CURRENT_TIMESTAMP\n CURTIME\n DATE\n DATEDIFF\n DATE_ADD\n DATE_FORMAT\n DATE_SUB\n DAY\n DAYNAME\n DAYOFMONTH\n DAYOFWEEK\n DAYOFYEAR\n EXTRACT\n FROM_DAYS\n HOUR\n LAST_DAY\n LOCALTIME\n LOCALTIMESTAMP\n MAKEDATE\n MAKETIME\n MICROSECOND\n MINUTE\n MONTH\n MONTHNAME\n NOW\n PERIOD_ADD\n PERIOD_DIFF\n QUARTER\n SECOND\n SEC_TO_TIME\n STR_TO_DATE\n SUBDATE\n SUBTIME\n SYSDATE\n TIME\n TIME_FORMAT\n TIME_TO_SEC\n TIMEDIFF\n TIMESTAMP\n TO_DAYS\n WEEK\n WEEKDAY\n WEEKOFYEAR\n YEAR\n YEARWEEK\n\n Advanced Functions\n BIN\n BINARY\n CASE\n CAST\n COALESCE\n CONNECTION_ID\n CONV\n CONVERT\n CURRENT_USER\n DATABASE\n IF\n IFNULL\n ISNULL\n LAST_INSERT_ID\n NULLIF\n SESSION_USER\n SYSTEM_USER\n USER\n VERSION",
+                "heading": "MySQL References"
+            },
+            {
+                "content": "MySQL Examples\nMySQL Editor\nMySQL Quiz\nMySQL Exercises\nMySQL Syllabus\nMySQL Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\nMySQL AUTO INCREMENT Field\n\n ❮ Previous\n Next ❯",
+                "heading": "MySQL Examples"
+            },
+            {
+                "content": "An auto-increment field is a numeric column that automatically generates a \nunique number, when a new record is inserted into a table.\n\nThe auto-increment field is typically the \nPRIMARY KEY field that we want to \nautomatically be assigned a unique number, every time a new record is inserted.",
+                "heading": "MySQL AUTO INCREMENT Field"
+            },
+            {
+                "content": "MySQL uses the AUTO_INCREMENT keyword to perform an auto-increment feature.\n\nThe following SQL defines the \"Personid\" column to be an auto-increment primary key field in the \"Persons\" table:\n\nCREATE TABLE Persons\n(\n\n Personid int AUTO_INCREMENT PRIMARY KEY,\n\nLastName varchar(255) NOT NULL,\n\nFirstName varchar(255),\n\n     Age int\n\n);\n\nThe default starting value for AUTO_INCREMENT is 1, and it will increment by 1 for each new record.\n\nTo let AUTO_INCREMENT start with another value, use the following SQL statement:\n\nALTER TABLE Persons AUTO_INCREMENT = 100;\n\nWhen we insert a new record into the \"Persons\" table, we will NOT have to specify a value for the \"Personid\"\ncolumn (a unique value will be added automatically):\n\nINSERT INTO Persons (FirstName, LastName)\n\nVALUES ('Lars', 'Monsen');\n\nThe SQL above inserts a new record into the \"Persons\" table, and the \n\"Personid\" column will automatically be assigned the next unique \nnumber.",
+                "heading": "MySQL AUTO_INCREMENT Keyword"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:41Z",
+        "subject": "MySQL",
+        "title": "MySQL AUTO INCREMENT Field"
+    },
+    {
+        "url": "https://www.w3schools.com/mysql/mysql_dates.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "mysql_mysql_dates",
+        "code_examples": [],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MySQL HOME\nMySQL Intro\nMySQL RDBMS",
+                "heading": "MySQL Tutorial"
+            },
+            {
+                "content": "MySQL SQL\nMySQL SELECT\nMySQL SELECT DISTINCT\nMySQL WHERE\nMySQL ORDER BY\nMySQL AND\nMySQL OR\nMySQL NOT\nMySQL INSERT INTO\nMySQL NULL Values\nMySQL UPDATE\nMySQL DELETE\nMySQL LIMIT\nMySQL Aggregate Functions\nMySQL MIN()\nMySQL MAX()\nMySQL COUNT()\nMySQL SUM()\nMySQL AVG()\nMySQL LIKE\nMySQL Wildcards\nMySQL IN\nMySQL BETWEEN\nMySQL Aliases\nMySQL Joins\nMySQL INNER JOIN\nMySQL LEFT JOIN\nMySQL RIGHT JOIN\nMySQL CROSS JOIN\nMySQL Self Join\nMySQL UNION\nMySQL UNION ALL\nMySQL GROUP BY\nMySQL HAVING\nMySQL EXISTS\nMySQL ANY\nMySQL ALL\nMySQL INSERT SELECT\nMySQL CASE\nMySQL Null Functions\nMySQL Stored Procedures\nMySQL Comments\nMySQL Operators",
+                "heading": "MySQL SQL"
+            },
+            {
+                "content": "MySQL Install (Windows)\nMySQL Install (Linux)-->\nMySQL Create DB\nMySQL Drop DB\nMySQL Create Table\nMySQL Drop Table\nMySQL Alter Table\nMySQL Constraints\nMySQL Not Null\nMySQL Unique\nMySQL Primary Key\nMySQL Foreign Key\nMySQL Check\nMySQL Default\nMySQL Create Index\nMySQL Auto Increment\nMySQL Dates\nMySQL Views\nMySQL Injection\nMySQL Prepared Statements",
+                "heading": "MySQL Database"
+            },
+            {
+                "content": "MySQL Certificate",
+                "heading": "MySQL Cert"
+            },
+            {
+                "content": "MySQL Data Types\nMySQL Functions\n\n String Functions\n ASCII\n CHAR_LENGTH\n CHARACTER_LENGTH\n CONCAT\n CONCAT_WS\n FIELD\n FIND_IN_SET\n FORMAT\n INSERT\n INSTR\n LCASE\n LEFT\n LENGTH\n LOCATE\n LOWER\n LPAD\n LTRIM\n MID\n POSITION\n REPEAT\n REPLACE\n REVERSE\n RIGHT\n RPAD\n RTRIM\n SPACE\n STRCMP\n SUBSTR\n SUBSTRING\n SUBSTRING_INDEX\n TRIM\n UCASE\n UPPER\n\n Numeric Functions\n ABS\n ACOS\n ASIN\n ATAN\n ATAN2\n AVG\n CEIL\n CEILING\n COS\n COT\n COUNT\n DEGREES\n DIV\n EXP\n FLOOR\n GREATEST\n LEAST\n LN\n LOG\n LOG10\n LOG2\n MAX\n MIN\n MOD\n PI\n POW\n POWER\n RADIANS\n RAND\n ROUND\n SIGN\n SIN\n SQRT\n SUM\n TAN\n TRUNCATE\n\n Date Functions\n ADDDATE\n ADDTIME\n CURDATE\n CURRENT_DATE\n CURRENT_TIME\n CURRENT_TIMESTAMP\n CURTIME\n DATE\n DATEDIFF\n DATE_ADD\n DATE_FORMAT\n DATE_SUB\n DAY\n DAYNAME\n DAYOFMONTH\n DAYOFWEEK\n DAYOFYEAR\n EXTRACT\n FROM_DAYS\n HOUR\n LAST_DAY\n LOCALTIME\n LOCALTIMESTAMP\n MAKEDATE\n MAKETIME\n MICROSECOND\n MINUTE\n MONTH\n MONTHNAME\n NOW\n PERIOD_ADD\n PERIOD_DIFF\n QUARTER\n SECOND\n SEC_TO_TIME\n STR_TO_DATE\n SUBDATE\n SUBTIME\n SYSDATE\n TIME\n TIME_FORMAT\n TIME_TO_SEC\n TIMEDIFF\n TIMESTAMP\n TO_DAYS\n WEEK\n WEEKDAY\n WEEKOFYEAR\n YEAR\n YEARWEEK\n\n Advanced Functions\n BIN\n BINARY\n CASE\n CAST\n COALESCE\n CONNECTION_ID\n CONV\n CONVERT\n CURRENT_USER\n DATABASE\n IF\n IFNULL\n ISNULL\n LAST_INSERT_ID\n NULLIF\n SESSION_USER\n SYSTEM_USER\n USER\n VERSION",
+                "heading": "MySQL References"
+            },
+            {
+                "content": "MySQL Examples\nMySQL Editor\nMySQL Quiz\nMySQL Exercises\nMySQL Syllabus\nMySQL Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\nMySQL Working With Dates\n\n ❮ Previous\n Next ❯",
+                "heading": "MySQL Examples"
+            },
+            {
+                "content": "The most difficult part when working with dates in databases, is to be sure that the format of the date you are trying to insert/select,\nmatches the format of the date column in the database.",
+                "heading": "MySQL Dates"
+            },
+            {
+                "content": "MySQL has the following data types for storing a date or a date/time value in the database:\n\n DATE - format YYYY-MM-DD\n\n DATETIME - format: YYYY-MM-DD HH:MI:SS\n\n TIMESTAMP - format: YYYY-MM-DD HH:MI:SS\n\n TIME - format: HH:MI:SS\n\n YEAR - format YYYY or YY\n\nNote: The date datatype are defined for a column upon creation of a \nnew table in your database.",
+                "heading": "MySQL Date Data Types"
+            },
+            {
+                "content": "Look at the following table:\n\nOrders Table\n\nOrderId\nProductName\nOrderDate\n\n1\nGeitost\n2025-11-11\n\n2\nCamembert Pierrot\n2025-11-09\n\n3\nMozzarella di Giovanni\n2025-11-11\n\n4\nMascarpone Fabioli\n2025-10-29\n\nNow we want to select the records with an OrderDate of \"2025-11-11\" from the table above.\n\nWe use the following SELECT statement:\n\nSELECT * FROM Orders WHERE OrderDate='2025-11-11'\n\nThe result-set will look like this:\n\nOrderId\nProductName\nOrderDate\n\n1\nGeitost\n2025-11-11\n\n3\nMozzarella di Giovanni\n2025-11-11\n\nNote: Two dates can easily be compared if there is no time component involved!\n\nNow, assume that the \"Orders\" table looks like this (notice the \nadded time-component in the \"OrderDate\" column):\n\nOrderId\nProductName\nOrderDate\n\n1\nGeitost\n2025-11-11 13:23:44\n\n2\nCamembert Pierrot\n2025-11-09 15:45:21\n\n3\nMozzarella di Giovanni\n2025-11-11 11:12:01\n\n4\nMascarpone Fabioli\n2025-10-29 14:56:59\n\nIf we use the same SELECT statement as above:\n\nSELECT * FROM Orders WHERE OrderDate='2025-11-11'\n\nwe will get no result! This is because the query is looking only for dates with no time portion.\n\nTip: To keep your queries simple and easy to maintain, do not use time-components in your dates, unless you have to!",
+                "heading": "MySQL Working with Dates"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:41Z",
+        "subject": "MySQL",
+        "title": "MySQL Working With Dates"
+    },
+    {
+        "url": "https://www.w3schools.com/mysql/mysql_view.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "mysql_mysql_view",
+        "code_examples": [
+            {
+                "code": "CREATE VIEW view_name AS\n\nSELECT column1, column2, ...\n\nFROM table_name\n\nWHERE condition;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\nCREATE VIEW brazil_customers_view AS\n\nSELECT CustomerName, ContactName\n\nFROM Customers\n\nWHERE Country = 'Brazil';",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\nSELECT * FROM brazil_customers_view;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\nCREATE VIEW products_above_average_price AS\n\nSELECT ProductName, Price\n\nFROM Products\n\nWHERE Price > (SELECT AVG(Price) FROM Products);",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\nSELECT * FROM products_above_average_price;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "CREATE OR REPLACE VIEW view_name AS\n\nSELECT column1, column2, ...\n\nFROM table_name\n\nWHERE condition;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\nCREATE OR REPLACE VIEW brazil_customers_view AS\n\nSELECT CustomerName, ContactName, City\n\nFROM Customers\n\nWHERE Country = 'Brazil';",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "DROP VIEW view_name;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\nDROP VIEW brazil_customers_view;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MySQL HOME\nMySQL Intro\nMySQL RDBMS",
+                "heading": "MySQL Tutorial"
+            },
+            {
+                "content": "MySQL SQL\nMySQL SELECT\nMySQL SELECT DISTINCT\nMySQL WHERE\nMySQL ORDER BY\nMySQL AND\nMySQL OR\nMySQL NOT\nMySQL INSERT INTO\nMySQL NULL Values\nMySQL UPDATE\nMySQL DELETE\nMySQL LIMIT\nMySQL Aggregate Functions\nMySQL MIN()\nMySQL MAX()\nMySQL COUNT()\nMySQL SUM()\nMySQL AVG()\nMySQL LIKE\nMySQL Wildcards\nMySQL IN\nMySQL BETWEEN\nMySQL Aliases\nMySQL Joins\nMySQL INNER JOIN\nMySQL LEFT JOIN\nMySQL RIGHT JOIN\nMySQL CROSS JOIN\nMySQL Self Join\nMySQL UNION\nMySQL UNION ALL\nMySQL GROUP BY\nMySQL HAVING\nMySQL EXISTS\nMySQL ANY\nMySQL ALL\nMySQL INSERT SELECT\nMySQL CASE\nMySQL Null Functions\nMySQL Stored Procedures\nMySQL Comments\nMySQL Operators",
+                "heading": "MySQL SQL"
+            },
+            {
+                "content": "MySQL Install (Windows)\nMySQL Install (Linux)-->\nMySQL Create DB\nMySQL Drop DB\nMySQL Create Table\nMySQL Drop Table\nMySQL Alter Table\nMySQL Constraints\nMySQL Not Null\nMySQL Unique\nMySQL Primary Key\nMySQL Foreign Key\nMySQL Check\nMySQL Default\nMySQL Create Index\nMySQL Auto Increment\nMySQL Dates\nMySQL Views\nMySQL Injection\nMySQL Prepared Statements",
+                "heading": "MySQL Database"
+            },
+            {
+                "content": "MySQL Certificate",
+                "heading": "MySQL Cert"
+            },
+            {
+                "content": "MySQL Data Types\nMySQL Functions\n\n String Functions\n ASCII\n CHAR_LENGTH\n CHARACTER_LENGTH\n CONCAT\n CONCAT_WS\n FIELD\n FIND_IN_SET\n FORMAT\n INSERT\n INSTR\n LCASE\n LEFT\n LENGTH\n LOCATE\n LOWER\n LPAD\n LTRIM\n MID\n POSITION\n REPEAT\n REPLACE\n REVERSE\n RIGHT\n RPAD\n RTRIM\n SPACE\n STRCMP\n SUBSTR\n SUBSTRING\n SUBSTRING_INDEX\n TRIM\n UCASE\n UPPER\n\n Numeric Functions\n ABS\n ACOS\n ASIN\n ATAN\n ATAN2\n AVG\n CEIL\n CEILING\n COS\n COT\n COUNT\n DEGREES\n DIV\n EXP\n FLOOR\n GREATEST\n LEAST\n LN\n LOG\n LOG10\n LOG2\n MAX\n MIN\n MOD\n PI\n POW\n POWER\n RADIANS\n RAND\n ROUND\n SIGN\n SIN\n SQRT\n SUM\n TAN\n TRUNCATE\n\n Date Functions\n ADDDATE\n ADDTIME\n CURDATE\n CURRENT_DATE\n CURRENT_TIME\n CURRENT_TIMESTAMP\n CURTIME\n DATE\n DATEDIFF\n DATE_ADD\n DATE_FORMAT\n DATE_SUB\n DAY\n DAYNAME\n DAYOFMONTH\n DAYOFWEEK\n DAYOFYEAR\n EXTRACT\n FROM_DAYS\n HOUR\n LAST_DAY\n LOCALTIME\n LOCALTIMESTAMP\n MAKEDATE\n MAKETIME\n MICROSECOND\n MINUTE\n MONTH\n MONTHNAME\n NOW\n PERIOD_ADD\n PERIOD_DIFF\n QUARTER\n SECOND\n SEC_TO_TIME\n STR_TO_DATE\n SUBDATE\n SUBTIME\n SYSDATE\n TIME\n TIME_FORMAT\n TIME_TO_SEC\n TIMEDIFF\n TIMESTAMP\n TO_DAYS\n WEEK\n WEEKDAY\n WEEKOFYEAR\n YEAR\n YEARWEEK\n\n Advanced Functions\n BIN\n BINARY\n CASE\n CAST\n COALESCE\n CONNECTION_ID\n CONV\n CONVERT\n CURRENT_USER\n DATABASE\n IF\n IFNULL\n ISNULL\n LAST_INSERT_ID\n NULLIF\n SESSION_USER\n SYSTEM_USER\n USER\n VERSION",
+                "heading": "MySQL References"
+            },
+            {
+                "content": "MySQL Examples\nMySQL Editor\nMySQL Quiz\nMySQL Exercises\nMySQL Syllabus\nMySQL Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\nMySQL Views\n\n ❮ Previous\n Next ❯",
+                "heading": "MySQL Examples"
+            },
+            {
+                "content": "An SQL view is a virtual table based on the result-set of an SQL statement. An SQL view contains rows and columns, just like a real table. The fields in \nthe view are fields from one or more real tables in the database.\n\nYou can add SQL statements and functions to a view and present the data as if \nit were coming from one single table.\n\nA view is created with the CREATE VIEW statement.\n\nCREATE VIEW Syntax\n\nCREATE VIEW view_name AS\n\nSELECT column1, column2, ...\n\nFROM table_name\n\nWHERE condition;\n\nNote: A view always shows real-time data! The database engine only \nstores the view's definition (the SELECT statement), not a copy of the data.",
+                "heading": "MySQL CREATE VIEW Statement"
+            },
+            {
+                "content": "The following SQL creates a view named \"brazil_customers_view\", that shows all customers from Brazil:\n\nExample\n\nCREATE VIEW brazil_customers_view AS\n\nSELECT CustomerName, ContactName\n\nFROM Customers\n\nWHERE Country = 'Brazil';\n\nTo query the view above, use the following SQL syntax:\n\nExample\n\nSELECT * FROM brazil_customers_view;\n\nThe following SQL creates a view named \"products_above_average_price\", that selects \nall products in the \"Products\" table with a Price higher than the average price:\n\nExample\n\nCREATE VIEW products_above_average_price AS\n\nSELECT ProductName, Price\n\nFROM Products\n\nWHERE Price > (SELECT AVG(Price) FROM Products);\n\nTo query the view above, use the following SQL syntax:\n\nExample\n\nSELECT * FROM products_above_average_price;",
+                "heading": "CREATE VIEW Examples"
+            },
+            {
+                "content": "In MySQL, a view can be updated with the CREATE OR REPLACE \nVIEW statement.\n\nCREATE OR REPLACE VIEW Syntax\n\nCREATE OR REPLACE VIEW view_name AS\n\nSELECT column1, column2, ...\n\nFROM table_name\n\nWHERE condition;\n\nThe following SQL adds the \"City\" column to the \"brazil_customers_view\" view:\n\nExample\n\nCREATE OR REPLACE VIEW brazil_customers_view AS\n\nSELECT CustomerName, ContactName, City\n\nFROM Customers\n\nWHERE Country = 'Brazil';",
+                "heading": "CREATE OR REPLACE VIEW Statement"
+            },
+            {
+                "content": "A view is deleted with the DROP VIEW statement.\n\nDROP VIEW Syntax\n\nDROP VIEW view_name;\n\nThe following SQL drops the \"brazil_customers_view\" view:\n\nExample\n\nDROP VIEW brazil_customers_view;\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "DROP VIEW Statement"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:41Z",
+        "subject": "MySQL",
+        "title": "MySQL Views"
+    },
+    {
+        "url": "https://www.w3schools.com/mysql/mysql_injection.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "mysql_mysql_injection",
+        "code_examples": [
+            {
+                "code": "Example\n\n txtUserId = getRequestString(\"UserId\");\ntxtSQL = \"SELECT *\nFROM Users WHERE UserId = \" + txtUserId;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "SELECT * FROM Users WHERE UserId = 105 OR 1=1;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\nuName = getRequestString(\"username\");\nuPass = getRequestString(\"userpassword\");\n\nsql = 'SELECT * FROM Users WHERE Name =\"' + uName + '\" AND Pass =\"' + uPass + \n '\"'",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Result\n\nSELECT * FROM Users WHERE Name =\"John Doe\" AND Pass =\"myPass\"",
+                "language": "mysql",
+                "heading": "Result",
+                "tryit_url": null
+            },
+            {
+                "code": "Result\n\nSELECT * FROM Users WHERE Name =\"\" or \"\"=\"\" AND Pass =\"\" or \"\"=\"\"",
+                "language": "mysql",
+                "heading": "Result",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\nSELECT * FROM Users; DROP TABLE Suppliers;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\ntxtUserId = getRequestString(\"UserId\");\ntxtSQL = \"SELECT *\nFROM Users WHERE UserId = \" + txtUserId;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Result\n\nSELECT * FROM Users WHERE \nUserId = 105; DROP TABLE Suppliers;",
+                "language": "mysql",
+                "heading": "Result",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MySQL HOME\nMySQL Intro\nMySQL RDBMS",
+                "heading": "MySQL Tutorial"
+            },
+            {
+                "content": "MySQL SQL\nMySQL SELECT\nMySQL SELECT DISTINCT\nMySQL WHERE\nMySQL ORDER BY\nMySQL AND\nMySQL OR\nMySQL NOT\nMySQL INSERT INTO\nMySQL NULL Values\nMySQL UPDATE\nMySQL DELETE\nMySQL LIMIT\nMySQL Aggregate Functions\nMySQL MIN()\nMySQL MAX()\nMySQL COUNT()\nMySQL SUM()\nMySQL AVG()\nMySQL LIKE\nMySQL Wildcards\nMySQL IN\nMySQL BETWEEN\nMySQL Aliases\nMySQL Joins\nMySQL INNER JOIN\nMySQL LEFT JOIN\nMySQL RIGHT JOIN\nMySQL CROSS JOIN\nMySQL Self Join\nMySQL UNION\nMySQL UNION ALL\nMySQL GROUP BY\nMySQL HAVING\nMySQL EXISTS\nMySQL ANY\nMySQL ALL\nMySQL INSERT SELECT\nMySQL CASE\nMySQL Null Functions\nMySQL Stored Procedures\nMySQL Comments\nMySQL Operators",
+                "heading": "MySQL SQL"
+            },
+            {
+                "content": "MySQL Install (Windows)\nMySQL Install (Linux)-->\nMySQL Create DB\nMySQL Drop DB\nMySQL Create Table\nMySQL Drop Table\nMySQL Alter Table\nMySQL Constraints\nMySQL Not Null\nMySQL Unique\nMySQL Primary Key\nMySQL Foreign Key\nMySQL Check\nMySQL Default\nMySQL Create Index\nMySQL Auto Increment\nMySQL Dates\nMySQL Views\nMySQL Injection\nMySQL Prepared Statements",
+                "heading": "MySQL Database"
+            },
+            {
+                "content": "MySQL Certificate",
+                "heading": "MySQL Cert"
+            },
+            {
+                "content": "MySQL Data Types\nMySQL Functions\n\n String Functions\n ASCII\n CHAR_LENGTH\n CHARACTER_LENGTH\n CONCAT\n CONCAT_WS\n FIELD\n FIND_IN_SET\n FORMAT\n INSERT\n INSTR\n LCASE\n LEFT\n LENGTH\n LOCATE\n LOWER\n LPAD\n LTRIM\n MID\n POSITION\n REPEAT\n REPLACE\n REVERSE\n RIGHT\n RPAD\n RTRIM\n SPACE\n STRCMP\n SUBSTR\n SUBSTRING\n SUBSTRING_INDEX\n TRIM\n UCASE\n UPPER\n\n Numeric Functions\n ABS\n ACOS\n ASIN\n ATAN\n ATAN2\n AVG\n CEIL\n CEILING\n COS\n COT\n COUNT\n DEGREES\n DIV\n EXP\n FLOOR\n GREATEST\n LEAST\n LN\n LOG\n LOG10\n LOG2\n MAX\n MIN\n MOD\n PI\n POW\n POWER\n RADIANS\n RAND\n ROUND\n SIGN\n SIN\n SQRT\n SUM\n TAN\n TRUNCATE\n\n Date Functions\n ADDDATE\n ADDTIME\n CURDATE\n CURRENT_DATE\n CURRENT_TIME\n CURRENT_TIMESTAMP\n CURTIME\n DATE\n DATEDIFF\n DATE_ADD\n DATE_FORMAT\n DATE_SUB\n DAY\n DAYNAME\n DAYOFMONTH\n DAYOFWEEK\n DAYOFYEAR\n EXTRACT\n FROM_DAYS\n HOUR\n LAST_DAY\n LOCALTIME\n LOCALTIMESTAMP\n MAKEDATE\n MAKETIME\n MICROSECOND\n MINUTE\n MONTH\n MONTHNAME\n NOW\n PERIOD_ADD\n PERIOD_DIFF\n QUARTER\n SECOND\n SEC_TO_TIME\n STR_TO_DATE\n SUBDATE\n SUBTIME\n SYSDATE\n TIME\n TIME_FORMAT\n TIME_TO_SEC\n TIMEDIFF\n TIMESTAMP\n TO_DAYS\n WEEK\n WEEKDAY\n WEEKOFYEAR\n YEAR\n YEARWEEK\n\n Advanced Functions\n BIN\n BINARY\n CASE\n CAST\n COALESCE\n CONNECTION_ID\n CONV\n CONVERT\n CURRENT_USER\n DATABASE\n IF\n IFNULL\n ISNULL\n LAST_INSERT_ID\n NULLIF\n SESSION_USER\n SYSTEM_USER\n USER\n VERSION",
+                "heading": "MySQL References"
+            },
+            {
+                "content": "MySQL Examples\nMySQL Editor\nMySQL Quiz\nMySQL Exercises\nMySQL Syllabus\nMySQL Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\nMySQL - SQL Injection\n\n ❮ Previous\n Next ❯",
+                "heading": "MySQL Examples"
+            },
+            {
+                "content": "SQL injection is a code injection technique that can destroy your database. SQL injections \nare a common web hacking technique.\n\nSQL injections are when attackers insert malicious SQL code into user-input fields, and this way can read, modify, or delete sensitive data in \na database.\n\nSQL injections usually occur when you ask a user for input, like \nusername/userid, and instead of giving a name/id, the attacker inserts an SQL \ncommand \nthat executes something in your database.\n\nLook at the following example which creates a \nSELECT statement by adding a variable \n(txtUserId) to a select string. The variable is fetched from user input \n(getRequestString):\n\nExample\n\n txtUserId = getRequestString(\"UserId\");\ntxtSQL = \"SELECT *\nFROM Users WHERE UserId = \" + txtUserId;\n\nThe rest of this chapter describes the potential dangers of using user input in SQL statements.\n\nThe next chapter show the most effective methods to prevent SQL \ninjections, by using Prepared Statements.",
+                "heading": "SQL Injection"
+            },
+            {
+                "content": "Look at the example above again. The original purpose of the SQL code was to select a \nuser with a given user id.\n\nIf there is nothing to prevent a user from entering \"wrong\" input, the user \ncan enter some \"smart\" input like this:\n\nUserId: \n\nThen, the SQL statement will look like this:\n\nSELECT * FROM Users WHERE UserId = 105 OR 1=1;\n\nThe SQL above is valid and will return ALL rows from the \"Users\" table, since \nOR 1=1 is always TRUE.\n\nDoes the example above look dangerous? What if the \"Users\" table contains names and passwords?\n\nA hacker might get access to all the user names and passwords in a database, by \nsimply inserting \n105 OR 1=1 into the input field.",
+                "heading": "SQL Injection Based on 1=1 is Always True"
+            },
+            {
+                "content": "Here is an example of a user login on a web site:\n\nUsername:\n\nPassword:\n\nExample\n\nuName = getRequestString(\"username\");\nuPass = getRequestString(\"userpassword\");\n\nsql = 'SELECT * FROM Users WHERE Name =\"' + uName + '\" AND Pass =\"' + uPass + \n '\"'\n\nResult\n\nSELECT * FROM Users WHERE Name =\"John Doe\" AND Pass =\"myPass\"\n\nA hacker might get access to user names and passwords in a database by \nsimply inserting \" OR \"\"=\" into the user name or password text box:\n\nUser Name:\n\nPassword:\n\nThe SQL statement will now look like this:\n\nResult\n\nSELECT * FROM Users WHERE Name =\"\" or \"\"=\"\" AND Pass =\"\" or \"\"=\"\"\n\nThe SQL above is valid and will return ALL rows from the \"Users\" table, \nsince OR \"\"=\"\" is always TRUE.",
+                "heading": "SQL Injection Based on OR \"\"=\"\" is Always True"
+            },
+            {
+                "content": "Batched SQL statements is a group of two or more SQL statements, separated by semicolons.\n\nThe SQL statement below will return all rows from the \"Users\" table, then delete the \n\"Suppliers\" table.\n\nExample\n\nSELECT * FROM Users; DROP TABLE Suppliers;\n\nLook at the following example: \n\nExample\n\ntxtUserId = getRequestString(\"UserId\");\ntxtSQL = \"SELECT *\nFROM Users WHERE UserId = \" + txtUserId;\n\nAnd the following input:\n\nUser id: \n\nThe valid SQL statement would look like this:\n\nResult\n\nSELECT * FROM Users WHERE \nUserId = 105; DROP TABLE Suppliers;\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "SQL Injection From Batched SQL Statements"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:41Z",
+        "subject": "MySQL",
+        "title": "MySQL - SQL Injection"
+    },
+    {
+        "url": "https://www.w3schools.com/mysql/mysql_prepared_statements.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "mysql_mysql_prepared_statements",
+        "code_examples": [
+            {
+                "code": "<?php\n$servername = \"localhost\";\n$username = \"username\";\n$password = \"password\";\n$dbname = \"myDB\";\n\n// Create connection\n$conn = new mysqli($servername, $username, $password, $dbname);\n\n// Check connection\nif ($conn->connect_error) {\n  die(\"Connection failed: \" . $conn->connect_error);\n\n }\n\n// SQL query template\n$sql = \"INSERT INTO MyGuests (firstname, lastname, email) VALUES (?, ?, ?)\";\n\n// Prepare the SQL query template\nif($stmt = $conn->prepare($sql)) {\n\n   // Bind parameters\n  $stmt->bind_param(\"sss\", $firstname, $lastname, $email);\n\n  // \n Set parameters and execute\n  $firstname = \"John\";\n  $lastname = \"Doe\";\n  $email = \"john@example.com\";\n  $stmt->execute();\n\n  $firstname = \"Mary\";\n  $lastname = \"Moe\";\n  $email = \"mary@example.com\";\n  $stmt->execute();\n\n  $firstname = \"Julie\";\n  $lastname = \"Dooley\";\n  $email = \"julie@example.com\";\n\n $stmt->execute();\n  echo \"New records created successfully\";\n\n } else {\n  echo \"Error: \" . $sql . \"<br>\" . $conn->error;\n}\n\n$stmt->close();\n\n $conn->close();\n?>",
+                "language": "mysql",
+                "heading": "Example - MySQL with Prepared Statements",
+                "tryit_url": null
+            },
+            {
+                "code": "$stmt->bind_param(\"sss\", $firstname, $lastname, $email);",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MySQL HOME\nMySQL Intro\nMySQL RDBMS",
+                "heading": "MySQL Tutorial"
+            },
+            {
+                "content": "MySQL SQL\nMySQL SELECT\nMySQL SELECT DISTINCT\nMySQL WHERE\nMySQL ORDER BY\nMySQL AND\nMySQL OR\nMySQL NOT\nMySQL INSERT INTO\nMySQL NULL Values\nMySQL UPDATE\nMySQL DELETE\nMySQL LIMIT\nMySQL Aggregate Functions\nMySQL MIN()\nMySQL MAX()\nMySQL COUNT()\nMySQL SUM()\nMySQL AVG()\nMySQL LIKE\nMySQL Wildcards\nMySQL IN\nMySQL BETWEEN\nMySQL Aliases\nMySQL Joins\nMySQL INNER JOIN\nMySQL LEFT JOIN\nMySQL RIGHT JOIN\nMySQL CROSS JOIN\nMySQL Self Join\nMySQL UNION\nMySQL UNION ALL\nMySQL GROUP BY\nMySQL HAVING\nMySQL EXISTS\nMySQL ANY\nMySQL ALL\nMySQL INSERT SELECT\nMySQL CASE\nMySQL Null Functions\nMySQL Stored Procedures\nMySQL Comments\nMySQL Operators",
+                "heading": "MySQL SQL"
+            },
+            {
+                "content": "MySQL Install (Windows)\nMySQL Install (Linux)-->\nMySQL Create DB\nMySQL Drop DB\nMySQL Create Table\nMySQL Drop Table\nMySQL Alter Table\nMySQL Constraints\nMySQL Not Null\nMySQL Unique\nMySQL Primary Key\nMySQL Foreign Key\nMySQL Check\nMySQL Default\nMySQL Create Index\nMySQL Auto Increment\nMySQL Dates\nMySQL Views\nMySQL Injection\nMySQL Prepared Statements",
+                "heading": "MySQL Database"
+            },
+            {
+                "content": "MySQL Certificate",
+                "heading": "MySQL Cert"
+            },
+            {
+                "content": "MySQL Data Types\nMySQL Functions\n\n String Functions\n ASCII\n CHAR_LENGTH\n CHARACTER_LENGTH\n CONCAT\n CONCAT_WS\n FIELD\n FIND_IN_SET\n FORMAT\n INSERT\n INSTR\n LCASE\n LEFT\n LENGTH\n LOCATE\n LOWER\n LPAD\n LTRIM\n MID\n POSITION\n REPEAT\n REPLACE\n REVERSE\n RIGHT\n RPAD\n RTRIM\n SPACE\n STRCMP\n SUBSTR\n SUBSTRING\n SUBSTRING_INDEX\n TRIM\n UCASE\n UPPER\n\n Numeric Functions\n ABS\n ACOS\n ASIN\n ATAN\n ATAN2\n AVG\n CEIL\n CEILING\n COS\n COT\n COUNT\n DEGREES\n DIV\n EXP\n FLOOR\n GREATEST\n LEAST\n LN\n LOG\n LOG10\n LOG2\n MAX\n MIN\n MOD\n PI\n POW\n POWER\n RADIANS\n RAND\n ROUND\n SIGN\n SIN\n SQRT\n SUM\n TAN\n TRUNCATE\n\n Date Functions\n ADDDATE\n ADDTIME\n CURDATE\n CURRENT_DATE\n CURRENT_TIME\n CURRENT_TIMESTAMP\n CURTIME\n DATE\n DATEDIFF\n DATE_ADD\n DATE_FORMAT\n DATE_SUB\n DAY\n DAYNAME\n DAYOFMONTH\n DAYOFWEEK\n DAYOFYEAR\n EXTRACT\n FROM_DAYS\n HOUR\n LAST_DAY\n LOCALTIME\n LOCALTIMESTAMP\n MAKEDATE\n MAKETIME\n MICROSECOND\n MINUTE\n MONTH\n MONTHNAME\n NOW\n PERIOD_ADD\n PERIOD_DIFF\n QUARTER\n SECOND\n SEC_TO_TIME\n STR_TO_DATE\n SUBDATE\n SUBTIME\n SYSDATE\n TIME\n TIME_FORMAT\n TIME_TO_SEC\n TIMEDIFF\n TIMESTAMP\n TO_DAYS\n WEEK\n WEEKDAY\n WEEKOFYEAR\n YEAR\n YEARWEEK\n\n Advanced Functions\n BIN\n BINARY\n CASE\n CAST\n COALESCE\n CONNECTION_ID\n CONV\n CONVERT\n CURRENT_USER\n DATABASE\n IF\n IFNULL\n ISNULL\n LAST_INSERT_ID\n NULLIF\n SESSION_USER\n SYSTEM_USER\n USER\n VERSION",
+                "heading": "MySQL References"
+            },
+            {
+                "content": "MySQL Examples\nMySQL Editor\nMySQL Quiz\nMySQL Exercises\nMySQL Syllabus\nMySQL Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\nMySQL - Prepared Statements\n\n ❮ Previous\n Next ❯",
+                "heading": "MySQL Examples"
+            },
+            {
+                "content": "Prepared statements is used to protect a web site from SQL injections.\n\nPrepared statements seperates the query structure (the SQL) from the actual \ndata (user input).\n\nPrepared statements basically work like this:\n\n Prepare: An SQL query template with placeholders is sent to the \n server. The data values are not sent. Example: INSERT INTO MyGuests VALUES(?, ?, ?). \n Then, the server parses, compiles, and optimizes the SQL query template, without executing it\n\n Execute: At a later time, the application binds the values to the parameters, and the database executes the \n query. The application may execute the query as many times as it wants with different values\n\nPrepared statements have four main advantages:\n\n Reduced parsing time - as the preparation on the query is done only once (although the statement is executed multiple times)\n\n Minimize bandwidth - Bound parameters minimize bandwidth to the server as you need send only the parameters each time, and not the whole query\n\n Security - Prepared statements are very useful against \n SQL injections, because parameter values, which are transmitted later using a \n different protocol, need not be correctly escaped. If the original statement \n template is not derived from external input, SQL injection cannot occur\n\n Cleaner code - by seperating data from SQL commands",
+                "heading": "MySQL - Prepared Statements"
+            },
+            {
+                "content": "The following example is taken from PHP MySQL Prepared Statements, \nand uses prepared statements in MySQL:\n\nExample - MySQL with Prepared Statements\n\n<?php\n$servername = \"localhost\";\n$username = \"username\";\n$password = \"password\";\n$dbname = \"myDB\";\n\n// Create connection\n$conn = new mysqli($servername, $username, $password, $dbname);\n\n// Check connection\nif ($conn->connect_error) {\n  die(\"Connection failed: \" . $conn->connect_error);\n\n }\n\n// SQL query template\n$sql = \"INSERT INTO MyGuests (firstname, lastname, email) VALUES (?, ?, ?)\";\n\n// Prepare the SQL query template\nif($stmt = $conn->prepare($sql)) {\n\n   // Bind parameters\n  $stmt->bind_param(\"sss\", $firstname, $lastname, $email);\n\n  // \n Set parameters and execute\n  $firstname = \"John\";\n  $lastname = \"Doe\";\n  $email = \"john@example.com\";\n  $stmt->execute();\n\n  $firstname = \"Mary\";\n  $lastname = \"Moe\";\n  $email = \"mary@example.com\";\n  $stmt->execute();\n\n  $firstname = \"Julie\";\n  $lastname = \"Dooley\";\n  $email = \"julie@example.com\";\n\n $stmt->execute();\n  echo \"New records created successfully\";\n\n } else {\n  echo \"Error: \" . $sql . \"<br>\" . $conn->error;\n}\n\n$stmt->close();\n\n $conn->close();\n?>\n\nCode Explanation\nIn the SQL, the question marks (?) are placeholders for firstname,\nlastname, and email values: \n\n \"INSERT INTO MyGuests (firstname, lastname, email) VALUES (?, ?, ?)\"\n\nNow, look at the \nbind_param() function. This function bind variables to the placeholders \nin the SQL query. The placeholders (?) will be replaced by the actual values \nheld in the variables at the time of execution. The \"sss\" argument lists the\ntype of data each parameter is. The s \ncharacter tells mysql that the parameter is a string. We must define one of these for \nEACH parameter. By telling mysql what type of data to expect, we minimize the \nrisk of SQL injections:\n\n $stmt->bind_param(\"sss\", $firstname, $lastname, $email);\n\nThe type argument can be one of four types:\n\n i - integer (whole number)\n\n d - double (floating point number)\n\n s - string (text)\n\n b - binary (image, PDF, etc.)\n\nNote: If we want to insert data from external sources \n(like user input), it is very important that the data is sanitized and validated.",
+                "heading": "Prepared Statements in MySQL"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:41Z",
+        "subject": "MySQL",
+        "title": "MySQL - Prepared Statements"
+    },
+    {
+        "url": "https://www.w3schools.com/mysql/mysql_exam.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "mysql_mysql_exam",
+        "code_examples": [],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MySQL HOME\nMySQL Intro\nMySQL RDBMS",
+                "heading": "MySQL Tutorial"
+            },
+            {
+                "content": "MySQL SQL\nMySQL SELECT\nMySQL SELECT DISTINCT\nMySQL WHERE\nMySQL ORDER BY\nMySQL AND\nMySQL OR\nMySQL NOT\nMySQL INSERT INTO\nMySQL NULL Values\nMySQL UPDATE\nMySQL DELETE\nMySQL LIMIT\nMySQL Aggregate Functions\nMySQL MIN()\nMySQL MAX()\nMySQL COUNT()\nMySQL SUM()\nMySQL AVG()\nMySQL LIKE\nMySQL Wildcards\nMySQL IN\nMySQL BETWEEN\nMySQL Aliases\nMySQL Joins\nMySQL INNER JOIN\nMySQL LEFT JOIN\nMySQL RIGHT JOIN\nMySQL CROSS JOIN\nMySQL Self Join\nMySQL UNION\nMySQL UNION ALL\nMySQL GROUP BY\nMySQL HAVING\nMySQL EXISTS\nMySQL ANY\nMySQL ALL\nMySQL INSERT SELECT\nMySQL CASE\nMySQL Null Functions\nMySQL Stored Procedures\nMySQL Comments\nMySQL Operators",
+                "heading": "MySQL SQL"
+            },
+            {
+                "content": "MySQL Install (Windows)\nMySQL Install (Linux)-->\nMySQL Create DB\nMySQL Drop DB\nMySQL Create Table\nMySQL Drop Table\nMySQL Alter Table\nMySQL Constraints\nMySQL Not Null\nMySQL Unique\nMySQL Primary Key\nMySQL Foreign Key\nMySQL Check\nMySQL Default\nMySQL Create Index\nMySQL Auto Increment\nMySQL Dates\nMySQL Views\nMySQL Injection\nMySQL Prepared Statements",
+                "heading": "MySQL Database"
+            },
+            {
+                "content": "MySQL Certificate",
+                "heading": "MySQL Cert"
+            },
+            {
+                "content": "MySQL Data Types\nMySQL Functions\n\n String Functions\n ASCII\n CHAR_LENGTH\n CHARACTER_LENGTH\n CONCAT\n CONCAT_WS\n FIELD\n FIND_IN_SET\n FORMAT\n INSERT\n INSTR\n LCASE\n LEFT\n LENGTH\n LOCATE\n LOWER\n LPAD\n LTRIM\n MID\n POSITION\n REPEAT\n REPLACE\n REVERSE\n RIGHT\n RPAD\n RTRIM\n SPACE\n STRCMP\n SUBSTR\n SUBSTRING\n SUBSTRING_INDEX\n TRIM\n UCASE\n UPPER\n\n Numeric Functions\n ABS\n ACOS\n ASIN\n ATAN\n ATAN2\n AVG\n CEIL\n CEILING\n COS\n COT\n COUNT\n DEGREES\n DIV\n EXP\n FLOOR\n GREATEST\n LEAST\n LN\n LOG\n LOG10\n LOG2\n MAX\n MIN\n MOD\n PI\n POW\n POWER\n RADIANS\n RAND\n ROUND\n SIGN\n SIN\n SQRT\n SUM\n TAN\n TRUNCATE\n\n Date Functions\n ADDDATE\n ADDTIME\n CURDATE\n CURRENT_DATE\n CURRENT_TIME\n CURRENT_TIMESTAMP\n CURTIME\n DATE\n DATEDIFF\n DATE_ADD\n DATE_FORMAT\n DATE_SUB\n DAY\n DAYNAME\n DAYOFMONTH\n DAYOFWEEK\n DAYOFYEAR\n EXTRACT\n FROM_DAYS\n HOUR\n LAST_DAY\n LOCALTIME\n LOCALTIMESTAMP\n MAKEDATE\n MAKETIME\n MICROSECOND\n MINUTE\n MONTH\n MONTHNAME\n NOW\n PERIOD_ADD\n PERIOD_DIFF\n QUARTER\n SECOND\n SEC_TO_TIME\n STR_TO_DATE\n SUBDATE\n SUBTIME\n SYSDATE\n TIME\n TIME_FORMAT\n TIME_TO_SEC\n TIMEDIFF\n TIMESTAMP\n TO_DAYS\n WEEK\n WEEKDAY\n WEEKOFYEAR\n YEAR\n YEARWEEK\n\n Advanced Functions\n BIN\n BINARY\n CASE\n CAST\n COALESCE\n CONNECTION_ID\n CONV\n CONVERT\n CURRENT_USER\n DATABASE\n IF\n IFNULL\n ISNULL\n LAST_INSERT_ID\n NULLIF\n SESSION_USER\n SYSTEM_USER\n USER\n VERSION",
+                "heading": "MySQL References"
+            },
+            {
+                "content": "MySQL Examples\nMySQL Editor\nMySQL Quiz\nMySQL Exercises\nMySQL Syllabus\nMySQL Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\nW3Schools MySQL Certificate\n\n ❮ Previous\n Next ❯\n\n HTML Certification",
+                "heading": "MySQL Examples"
+            },
+            {
+                "content": "Prepare online at your own pace, take the exam when you are ready, and add a verified credential to your CV, LinkedIn profile, and portfolio.\n\n Designed for students, developers, and professionals who want a practical way to document their knowledge.\n\n Get Your HTML Certificate »\n\n Online exam. No expiration. Shareable verification link.\n\n w\n 3\n s\n c\n h\n o\n o\n l\n s\n\n C\n E\n R\n T\n I\n F\n I\n E\n D\n\n .\n\n 2\n 0\n 2\n 6",
+                "heading": "Get Certified in HTML"
+            },
+            {
+                "content": "Any student or professional working in digital fields can benefit from documenting their skills with a certificate.\n\n Certifications help demonstrate knowledge to current or future employers, clients, and collaborators in an increasingly competitive market.",
+                "heading": "Why Get Certified?"
+            },
+            {
+                "content": "W3Schools has more than two decades of experience teaching coding online.\n\n Our certificates provide a practical and professional way to show your skills in a format that is easy to verify and share.",
+                "heading": "Trusted Learning Platform"
+            },
+            {
+                "content": "The price is a small fraction of the cost of traditional education.\n\n You can prepare on your own schedule and take the exam when you are ready.",
+                "heading": "Affordable and Flexible"
+            },
+            {
+                "content": "Each certificate includes a unique verification link that can be shared with employers, clients, and your network.\n\n Download your certificate to showcase it, and validate it using the unique link or QR code.\n\n See how it looks in this example.",
+                "heading": "Get Your Certificate and Share It"
+            },
+            {
+                "content": "Fee\n\n 95 USD\n\n Achievable certification levels\n\n Intermediate (40%)\nAdvanced (75%)\nProfessional (90%)\n\n Number of questions\n\n Adaptive, 60 on average\n\n Requirement to pass\n\n Minimum 40% - Intermediate level\n\n Time limit\n\n 60 minutes\n\n Number of attempts\n\n 3\n\n Exam deadline\n\n None\n\n Certification expiration\n\n None\n\n Format\n\n Online, multiple choice\n\n Register Now »\n\n Have any questions? Send us an e-mail: sales@w3schools.com",
+                "heading": "Exam Overview"
+            },
+            {
+                "content": "Getting a certificate shows your commitment to improving your skills.\n\n You can add the certificate to your CV, resume, LinkedIn profile, and other professional platforms.\n\n It can help support career growth by making it easier to show your knowledge when applying for jobs, freelance work, or larger projects.",
+                "heading": "Advance Faster in Your Career"
+            },
+            {
+                "content": "Get Certified",
+                "heading": "Document Your Knowledge Today!"
+            },
+            {
+                "content": "01\n\n Study HTML for free at W3Schools.com\n\n 02\n\n Learn at your own speed and focus on the topics you need most\n\n 03\n\n Practice with quizzes and exercises\n\n 04\n\n Apply by paying the exam fee\n\n 05\n\n Take the exam online at any time and from any location",
+                "heading": "How It Works"
+            },
+            {
+                "content": "Getting a certificate shows initiative, helps you build credibility, and gives you a professional way to present your HTML knowledge.\n\n Get Your HTML Certificate »",
+                "heading": "Document Your Skills"
+            },
+            {
+                "content": "Are you an educator, manager, or business owner looking for courses or certifications for a group?\n\n We work with schools, companies, and organizations around the world.\n\n Send us an e-mail: sales@w3schools.com\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Looking to Add Multiple Users?"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:43Z",
+        "subject": "MySQL",
+        "title": "W3Schools MySQL Certificate"
+    },
+    {
+        "url": "https://www.w3schools.com/mysql/mysql_datatypes.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "mysql_mysql_datatypes",
+        "code_examples": [],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MySQL HOME\nMySQL Intro\nMySQL RDBMS",
+                "heading": "MySQL Tutorial"
+            },
+            {
+                "content": "MySQL SQL\nMySQL SELECT\nMySQL SELECT DISTINCT\nMySQL WHERE\nMySQL ORDER BY\nMySQL AND\nMySQL OR\nMySQL NOT\nMySQL INSERT INTO\nMySQL NULL Values\nMySQL UPDATE\nMySQL DELETE\nMySQL LIMIT\nMySQL Aggregate Functions\nMySQL MIN()\nMySQL MAX()\nMySQL COUNT()\nMySQL SUM()\nMySQL AVG()\nMySQL LIKE\nMySQL Wildcards\nMySQL IN\nMySQL BETWEEN\nMySQL Aliases\nMySQL Joins\nMySQL INNER JOIN\nMySQL LEFT JOIN\nMySQL RIGHT JOIN\nMySQL CROSS JOIN\nMySQL Self Join\nMySQL UNION\nMySQL UNION ALL\nMySQL GROUP BY\nMySQL HAVING\nMySQL EXISTS\nMySQL ANY\nMySQL ALL\nMySQL INSERT SELECT\nMySQL CASE\nMySQL Null Functions\nMySQL Stored Procedures\nMySQL Comments\nMySQL Operators",
+                "heading": "MySQL SQL"
+            },
+            {
+                "content": "MySQL Install (Windows)\nMySQL Install (Linux)-->\nMySQL Create DB\nMySQL Drop DB\nMySQL Create Table\nMySQL Drop Table\nMySQL Alter Table\nMySQL Constraints\nMySQL Not Null\nMySQL Unique\nMySQL Primary Key\nMySQL Foreign Key\nMySQL Check\nMySQL Default\nMySQL Create Index\nMySQL Auto Increment\nMySQL Dates\nMySQL Views\nMySQL Injection\nMySQL Prepared Statements",
+                "heading": "MySQL Database"
+            },
+            {
+                "content": "MySQL Certificate",
+                "heading": "MySQL Cert"
+            },
+            {
+                "content": "MySQL Data Types\nMySQL Functions\n\n String Functions\n ASCII\n CHAR_LENGTH\n CHARACTER_LENGTH\n CONCAT\n CONCAT_WS\n FIELD\n FIND_IN_SET\n FORMAT\n INSERT\n INSTR\n LCASE\n LEFT\n LENGTH\n LOCATE\n LOWER\n LPAD\n LTRIM\n MID\n POSITION\n REPEAT\n REPLACE\n REVERSE\n RIGHT\n RPAD\n RTRIM\n SPACE\n STRCMP\n SUBSTR\n SUBSTRING\n SUBSTRING_INDEX\n TRIM\n UCASE\n UPPER\n\n Numeric Functions\n ABS\n ACOS\n ASIN\n ATAN\n ATAN2\n AVG\n CEIL\n CEILING\n COS\n COT\n COUNT\n DEGREES\n DIV\n EXP\n FLOOR\n GREATEST\n LEAST\n LN\n LOG\n LOG10\n LOG2\n MAX\n MIN\n MOD\n PI\n POW\n POWER\n RADIANS\n RAND\n ROUND\n SIGN\n SIN\n SQRT\n SUM\n TAN\n TRUNCATE\n\n Date Functions\n ADDDATE\n ADDTIME\n CURDATE\n CURRENT_DATE\n CURRENT_TIME\n CURRENT_TIMESTAMP\n CURTIME\n DATE\n DATEDIFF\n DATE_ADD\n DATE_FORMAT\n DATE_SUB\n DAY\n DAYNAME\n DAYOFMONTH\n DAYOFWEEK\n DAYOFYEAR\n EXTRACT\n FROM_DAYS\n HOUR\n LAST_DAY\n LOCALTIME\n LOCALTIMESTAMP\n MAKEDATE\n MAKETIME\n MICROSECOND\n MINUTE\n MONTH\n MONTHNAME\n NOW\n PERIOD_ADD\n PERIOD_DIFF\n QUARTER\n SECOND\n SEC_TO_TIME\n STR_TO_DATE\n SUBDATE\n SUBTIME\n SYSDATE\n TIME\n TIME_FORMAT\n TIME_TO_SEC\n TIMEDIFF\n TIMESTAMP\n TO_DAYS\n WEEK\n WEEKDAY\n WEEKOFYEAR\n YEAR\n YEARWEEK\n\n Advanced Functions\n BIN\n BINARY\n CASE\n CAST\n COALESCE\n CONNECTION_ID\n CONV\n CONVERT\n CURRENT_USER\n DATABASE\n IF\n IFNULL\n ISNULL\n LAST_INSERT_ID\n NULLIF\n SESSION_USER\n SYSTEM_USER\n USER\n VERSION",
+                "heading": "MySQL References"
+            },
+            {
+                "content": "MySQL Examples\nMySQL Editor\nMySQL Quiz\nMySQL Exercises\nMySQL Syllabus\nMySQL Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\n MySQL Data Types\n\n ❮ Previous\n Next ❯",
+                "heading": "MySQL Examples"
+            },
+            {
+                "content": "The data type of a column defines what value the column can hold: integer, character, money, date and time, binary, and so on.\n\nEach column in a database table is required to have a name and a data type.\n\nAn SQL developer must decide what type of data that will be stored inside each column when creating a table. The data type is a \nguideline for SQL to understand what type of data is expected inside of each column, and it also identifies how SQL will interact with the stored data.\n\nIn MySQL there are three main data types: String, Numeric, and Date and Time.\n\nString Data Types\n\n Data type\n Description\n\n CHAR(size)\n A fixed-length string (can contain letters, numbers, and special characters). \n size specifies the column length in characters, \n from 0 to 255. Default size is 1\n\n VARCHAR(size)\n A variable-length string (can contain letters, numbers, and special \n characters). size specifies the maximum column \n length in characters, from 0 to 65535\n\n BINARY(size)\n Similar to CHAR(), but stores binary byte strings. size \n specifies the column length in bytes. Default size is 1\n\n VARBINARY(size)\n Similar to VARCHAR(), but stores binary byte strings. size specifies the maximum column length in bytes.\n\n BLOB(size)\n A BLOB column with a maximum length of 65535 bytes\n\n TINYBLOB\n A BLOB column with a maximum length of 255 bytes\n\n MEDIUMBLOB\n A BLOB column with a maximum length of 16777215 bytes\n\n LONGBLOB\n A BLOB column with a maximum length of 4294967295 or 4GB bytes\n\n TEXT(size)\n Holds a string with a maximum length of 65535 bytes\n\n TINYTEXT\n A TEXT column with a maximum length of 255 characters\n\n MEDIUMTEXT\n A TEXT column with a maximum length of 16777215 characters\n\n LONGTEXT\n A TEXT column with a maximum length of 4294967295 or 4GB bytes\n\n ENUM(val1, val2, val3, ...)\n A string object that can have only one value, chosen from the list of possible values \n (val1, val2, val3,..). You can list up to 65535 values. If a value is \n inserted that is not in the list, a blank value will be inserted\n\n SET(val1, val2, val3, ...)\n A string object that can have zero or more values, chosen from the list of \n possible values (val1, val2, val3,..). You can list up to 64 values",
+                "heading": "MySQL Data Types (Version 8.4)"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:43Z",
+        "subject": "MySQL",
+        "title": "MySQL Data Types"
+    },
+    {
+        "url": "https://www.w3schools.com/mysql/mysql_ref_functions.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "mysql_mysql_ref_functions",
+        "code_examples": [],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MySQL HOME\nMySQL Intro\nMySQL RDBMS",
+                "heading": "MySQL Tutorial"
+            },
+            {
+                "content": "MySQL SQL\nMySQL SELECT\nMySQL SELECT DISTINCT\nMySQL WHERE\nMySQL ORDER BY\nMySQL AND\nMySQL OR\nMySQL NOT\nMySQL INSERT INTO\nMySQL NULL Values\nMySQL UPDATE\nMySQL DELETE\nMySQL LIMIT\nMySQL Aggregate Functions\nMySQL MIN()\nMySQL MAX()\nMySQL COUNT()\nMySQL SUM()\nMySQL AVG()\nMySQL LIKE\nMySQL Wildcards\nMySQL IN\nMySQL BETWEEN\nMySQL Aliases\nMySQL Joins\nMySQL INNER JOIN\nMySQL LEFT JOIN\nMySQL RIGHT JOIN\nMySQL CROSS JOIN\nMySQL Self Join\nMySQL UNION\nMySQL UNION ALL\nMySQL GROUP BY\nMySQL HAVING\nMySQL EXISTS\nMySQL ANY\nMySQL ALL\nMySQL INSERT SELECT\nMySQL CASE\nMySQL Null Functions\nMySQL Stored Procedures\nMySQL Comments\nMySQL Operators",
+                "heading": "MySQL SQL"
+            },
+            {
+                "content": "MySQL Install (Windows)\nMySQL Install (Linux)-->\nMySQL Create DB\nMySQL Drop DB\nMySQL Create Table\nMySQL Drop Table\nMySQL Alter Table\nMySQL Constraints\nMySQL Not Null\nMySQL Unique\nMySQL Primary Key\nMySQL Foreign Key\nMySQL Check\nMySQL Default\nMySQL Create Index\nMySQL Auto Increment\nMySQL Dates\nMySQL Views\nMySQL Injection\nMySQL Prepared Statements",
+                "heading": "MySQL Database"
+            },
+            {
+                "content": "MySQL Certificate",
+                "heading": "MySQL Cert"
+            },
+            {
+                "content": "MySQL Data Types\nMySQL Functions\n\n String Functions\n ASCII\n CHAR_LENGTH\n CHARACTER_LENGTH\n CONCAT\n CONCAT_WS\n FIELD\n FIND_IN_SET\n FORMAT\n INSERT\n INSTR\n LCASE\n LEFT\n LENGTH\n LOCATE\n LOWER\n LPAD\n LTRIM\n MID\n POSITION\n REPEAT\n REPLACE\n REVERSE\n RIGHT\n RPAD\n RTRIM\n SPACE\n STRCMP\n SUBSTR\n SUBSTRING\n SUBSTRING_INDEX\n TRIM\n UCASE\n UPPER\n\n Numeric Functions\n ABS\n ACOS\n ASIN\n ATAN\n ATAN2\n AVG\n CEIL\n CEILING\n COS\n COT\n COUNT\n DEGREES\n DIV\n EXP\n FLOOR\n GREATEST\n LEAST\n LN\n LOG\n LOG10\n LOG2\n MAX\n MIN\n MOD\n PI\n POW\n POWER\n RADIANS\n RAND\n ROUND\n SIGN\n SIN\n SQRT\n SUM\n TAN\n TRUNCATE\n\n Date Functions\n ADDDATE\n ADDTIME\n CURDATE\n CURRENT_DATE\n CURRENT_TIME\n CURRENT_TIMESTAMP\n CURTIME\n DATE\n DATEDIFF\n DATE_ADD\n DATE_FORMAT\n DATE_SUB\n DAY\n DAYNAME\n DAYOFMONTH\n DAYOFWEEK\n DAYOFYEAR\n EXTRACT\n FROM_DAYS\n HOUR\n LAST_DAY\n LOCALTIME\n LOCALTIMESTAMP\n MAKEDATE\n MAKETIME\n MICROSECOND\n MINUTE\n MONTH\n MONTHNAME\n NOW\n PERIOD_ADD\n PERIOD_DIFF\n QUARTER\n SECOND\n SEC_TO_TIME\n STR_TO_DATE\n SUBDATE\n SUBTIME\n SYSDATE\n TIME\n TIME_FORMAT\n TIME_TO_SEC\n TIMEDIFF\n TIMESTAMP\n TO_DAYS\n WEEK\n WEEKDAY\n WEEKOFYEAR\n YEAR\n YEARWEEK\n\n Advanced Functions\n BIN\n BINARY\n CASE\n CAST\n COALESCE\n CONNECTION_ID\n CONV\n CONVERT\n CURRENT_USER\n DATABASE\n IF\n IFNULL\n ISNULL\n LAST_INSERT_ID\n NULLIF\n SESSION_USER\n SYSTEM_USER\n USER\n VERSION",
+                "heading": "MySQL References"
+            },
+            {
+                "content": "MySQL Examples\nMySQL Editor\nMySQL Quiz\nMySQL Exercises\nMySQL Syllabus\nMySQL Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\nMySQL Functions\n\n ❮ Previous\n Next ❯\n\nMySQL has many built-in functions.\n\nThis reference contains string, numeric, date, and some advanced functions \nin MySQL.",
+                "heading": "MySQL Examples"
+            },
+            {
+                "content": "Function\nDescription\n\nASCII\nReturns the ASCII value for the specific character\n\nCHAR_LENGTH\nReturns the length of a string (in characters)\n\nCHARACTER_LENGTH\nReturns the length of a string (in characters)\n\nCONCAT\nAdds two or more expressions together\n\nCONCAT_WS\nAdds two or more expressions together with a separator\n\nFIELD\nReturns the index position of a value in a list of values\n\nFIND_IN_SET\nReturns the position of a string within a list of strings\n\nFORMAT\nFormats a number to a format like \"#,###,###.##\", rounded to a \nspecified number \nof decimal places\n\nINSERT\nInserts a string within a string at the specified position and for a certain \nnumber of characters\n\nINSTR\nReturns the position of the first occurrence of a string in another string\n\nLCASE\nConverts a string to lower-case\n\nLEFT\nExtracts a number of characters from a string (starting from left)\n\nLENGTH\nReturns the length of a string (in bytes)\n\nLOCATE\nReturns the position of the first occurrence of a substring in a string\n\nLOWER\nConverts a string to lower-case\n\nLPAD\nLeft-pads a string with another string, to a certain length\n\nLTRIM\nRemoves leading spaces from a string\n\nMID\nExtracts a substring from a string (starting at any position)\n\nPOSITION\nReturns the position of the first occurrence of a substring in a string\n\nREPEAT\nRepeats a string as many times as specified\n\nREPLACE\nReplaces all occurrences of a substring within a string, with a new \nsubstring\n\nREVERSE\nReverses a string and returns the result\n\nRIGHT\nExtracts a number of characters from a string (starting from right)\n\nRPAD\nRight-pads a string with another string, to a certain length\n\nRTRIM\nRemoves trailing spaces from a string\n\nSPACE\nReturns a string of the specified number of space characters\n\nSTRCMP\nCompares two strings\n\nSUBSTR\nExtracts a substring from a string (starting at any position)\n\nSUBSTRING\nExtracts a substring from a string (starting at any position)\n\nSUBSTRING_INDEX\nReturns a substring of a string before a specified number of \ndelimiter occurs\n\nTRIM\nRemoves leading and trailing spaces from a string\n\nUCASE\nConverts a string to upper-case\n\nUPPER\nConverts a string to upper-case",
+                "heading": "MySQL String Functions"
+            },
+            {
+                "content": "Function\nDescription\n\nABS\nReturns the absolute value of a number\n\nACOS\nReturns the arc cosine of a number\n\nASIN\nReturns the arc sine of a number\n\nATAN\nReturns the arc tangent of one or two numbers\n\nATAN2\nReturns the arc tangent of two numbers\n\nAVG\nReturns the average value of an expression\n\nCEIL\nReturns the smallest integer value that is >= to a number\n\nCEILING\nReturns the smallest integer value that is >= to a number\n\nCOS\nReturns the cosine of a number\n\nCOT\nReturns the cotangent of a number\n\nCOUNT\nReturns the number of records returned by a select query\n\nDEGREES\nConverts a value in radians to degrees\n\nDIV\nUsed for integer division\n\nEXP\nReturns e raised to the power of a specified number\n\nFLOOR\nReturns the largest integer value that is <= to a number\n\nGREATEST\nReturns the greatest value of the list of arguments\n\nLEAST\nReturns the smallest value of the list of arguments\n\nLN\nReturns the natural logarithm of a number\n\nLOG\nReturns the natural logarithm of a number, or the logarithm of a number to a \nspecified base\n\nLOG10\nReturns the natural logarithm of a number to base 10\n\nLOG2\nReturns the natural logarithm of a number to base 2\n\nMAX\nReturns the maximum value in a set of values\n\nMIN\nReturns the minimum value in a set of values\n\nMOD\nReturns the remainder of a number divided by another number\n\nPI\nReturns the value of PI\n\nPOW\nReturns the value of a number raised to the power of another number\n\nPOWER\nReturns the value of a number raised to the power of another number\n\nRADIANS\nConverts a degree value into radians\n\nRAND\nReturns a random number\n\nROUND\nRounds a number to a specified number of decimal places\n\nSIGN\nReturns the sign of a number\n\nSIN\nReturns the sine of a number\n\nSQRT\nReturns the square root of a number\n\nSUM\nCalculates the sum of a set of values\n\nTAN\nReturns the tangent of a number\n\nTRUNCATE\nTruncates a number to the specified number of decimal places",
+                "heading": "MySQL Numeric Functions"
+            },
+            {
+                "content": "Function\nDescription\n\nADDDATE\nAdds a time/date interval to a date and then returns the date\n\nADDTIME\nAdds a time interval to a time/datetime and then returns the time/datetime\n\nCURDATE\nReturns the current date\n\nCURRENT_DATE\nReturns the current date\n\nCURRENT_TIME\nReturns the current time\n\nCURRENT_TIMESTAMP\nReturns the current date and time\n\nCURTIME\nReturns the current time\n\nDATE\nExtracts the date part from a datetime expression\n\nDATEDIFF\nReturns the number of days between two date values\n\nDATE_ADD\nAdds a time/date interval to a date and then returns the date\n\nDATE_FORMAT\nFormats a date\n\nDATE_SUB\nSubtracts a time/date interval from a date and then returns the date\n\nDAY\nReturns the day of the month for a given date\n\nDAYNAME\nReturns the weekday name for a given date\n\nDAYOFMONTH\nReturns the day of the month for a given date\n\nDAYOFWEEK\nReturns the weekday index for a given date\n\nDAYOFYEAR\nReturns the day of the year for a given date\n\nEXTRACT\nExtracts a part from a given date\n\nFROM_DAYS\nReturns a date from a numeric datevalue\n\nHOUR\nReturns the hour part for a given date\n\nLAST_DAY\nExtracts the last day of the month for a given date\n\nLOCALTIME\nReturns the current date and time\n\nLOCALTIMESTAMP\nReturns the current date and time\n\nMAKEDATE\nCreates and returns a date based on a year and a number of days value\n\nMAKETIME\nCreates and returns a time based on an hour, minute, and second value\n\nMICROSECOND\nReturns the microsecond part of a time/datetime\n\nMINUTE\nReturns the minute part of a time/datetime\n\nMONTH\nReturns the month part for a given date\n\nMONTHNAME\nReturns the name of the month for a given date\n\nNOW\nReturns the current date and time\n\nPERIOD_ADD\nAdds a specified number of months to a period\n\nPERIOD_DIFF\nReturns the difference between two periods\n\nQUARTER\nReturns the quarter of the year for a given date value\n\nSECOND\nReturns the seconds part of a time/datetime\n\nSEC_TO_TIME\nReturns a time value based on the specified seconds\n\nSTR_TO_DATE\nReturns a date based on a string and a format\n\nSUBDATE\nSubtracts a time/date interval from a date and then returns the date\n\nSUBTIME\nSubtracts a time interval from a datetime and then returns the time/datetime\n\nSYSDATE\nReturns the current date and time\n\nTIME\nExtracts the time part from a given time/datetime\n\nTIME_FORMAT\nFormats a time by a specified format\n\nTIME_TO_SEC\nConverts a time value into seconds\n\nTIMEDIFF\nReturns the difference between two time/datetime expressions\n\nTIMESTAMP\nReturns a datetime value based on a date or datetime value\n\nTO_DAYS\nReturns the number of days between a date and date \"0000-00-00\"\n\nWEEK\nReturns the week number for a given date\n\nWEEKDAY\nReturns the weekday number for a given date\n\nWEEKOFYEAR\nReturns the week number for a given date\n\nYEAR\nReturns the year part for a given date\n\nYEARWEEK\nReturns the year and week number for a given date",
+                "heading": "MySQL Date Functions"
+            },
+            {
+                "content": "Function\nDescription\n\nBIN\nReturns a binary representation of a number\n\nBINARY\nConverts a value to a binary string\n\nCASE\nGoes through conditions and return a value when the first condition is \nmet\n\nCAST\nConverts a value (of any type) into a specified datatype\n\nCOALESCE\nReturns the first non-null value in a list\n\nCONNECTION_ID\nReturns the unique connection ID for the current connection\n\nCONV\nConverts a number from one numeric base system to another\n\nCONVERT\nConverts a value into the specified datatype or character set\n\nCURRENT_USER\nReturns the user name and host name for the MySQL account that the server \nused to authenticate the current client\n\nDATABASE\nReturns the name of the current database\n\nIF\nReturns a value if a condition is TRUE, or another value if a condition is FALSE\n\nIFNULL\nReturn a specified value if the expression is NULL, otherwise return the \nexpression\n\nISNULL\nReturns 1 or 0 depending on whether an expression is NULL\n\nLAST_INSERT_ID\nReturns the AUTO_INCREMENT id of the last row that has been inserted or \nupdated in a table\n\nNULLIF\nCompares two expressions and returns NULL if they are equal. Otherwise, the \nfirst expression is returned\n\nSESSION_USER\nReturns the current MySQL user name and host name\n\nSYSTEM_USER\nReturns the current MySQL user name and host name\n\nUSER\nReturns the current MySQL user name and host name\n\nVERSION\nReturns the current version of the MySQL database\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "MySQL Advanced Functions"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:43Z",
+        "subject": "MySQL",
+        "title": "MySQL Functions"
+    },
+    {
+        "url": "https://www.w3schools.com/mysql/mysql_examples.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "mysql_mysql_examples",
+        "code_examples": [],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MySQL HOME\nMySQL Intro\nMySQL RDBMS",
+                "heading": "MySQL Tutorial"
+            },
+            {
+                "content": "MySQL SQL\nMySQL SELECT\nMySQL SELECT DISTINCT\nMySQL WHERE\nMySQL ORDER BY\nMySQL AND\nMySQL OR\nMySQL NOT\nMySQL INSERT INTO\nMySQL NULL Values\nMySQL UPDATE\nMySQL DELETE\nMySQL LIMIT\nMySQL Aggregate Functions\nMySQL MIN()\nMySQL MAX()\nMySQL COUNT()\nMySQL SUM()\nMySQL AVG()\nMySQL LIKE\nMySQL Wildcards\nMySQL IN\nMySQL BETWEEN\nMySQL Aliases\nMySQL Joins\nMySQL INNER JOIN\nMySQL LEFT JOIN\nMySQL RIGHT JOIN\nMySQL CROSS JOIN\nMySQL Self Join\nMySQL UNION\nMySQL UNION ALL\nMySQL GROUP BY\nMySQL HAVING\nMySQL EXISTS\nMySQL ANY\nMySQL ALL\nMySQL INSERT SELECT\nMySQL CASE\nMySQL Null Functions\nMySQL Stored Procedures\nMySQL Comments\nMySQL Operators",
+                "heading": "MySQL SQL"
+            },
+            {
+                "content": "MySQL Install (Windows)\nMySQL Install (Linux)-->\nMySQL Create DB\nMySQL Drop DB\nMySQL Create Table\nMySQL Drop Table\nMySQL Alter Table\nMySQL Constraints\nMySQL Not Null\nMySQL Unique\nMySQL Primary Key\nMySQL Foreign Key\nMySQL Check\nMySQL Default\nMySQL Create Index\nMySQL Auto Increment\nMySQL Dates\nMySQL Views\nMySQL Injection\nMySQL Prepared Statements",
+                "heading": "MySQL Database"
+            },
+            {
+                "content": "MySQL Certificate",
+                "heading": "MySQL Cert"
+            },
+            {
+                "content": "MySQL Data Types\nMySQL Functions\n\n String Functions\n ASCII\n CHAR_LENGTH\n CHARACTER_LENGTH\n CONCAT\n CONCAT_WS\n FIELD\n FIND_IN_SET\n FORMAT\n INSERT\n INSTR\n LCASE\n LEFT\n LENGTH\n LOCATE\n LOWER\n LPAD\n LTRIM\n MID\n POSITION\n REPEAT\n REPLACE\n REVERSE\n RIGHT\n RPAD\n RTRIM\n SPACE\n STRCMP\n SUBSTR\n SUBSTRING\n SUBSTRING_INDEX\n TRIM\n UCASE\n UPPER\n\n Numeric Functions\n ABS\n ACOS\n ASIN\n ATAN\n ATAN2\n AVG\n CEIL\n CEILING\n COS\n COT\n COUNT\n DEGREES\n DIV\n EXP\n FLOOR\n GREATEST\n LEAST\n LN\n LOG\n LOG10\n LOG2\n MAX\n MIN\n MOD\n PI\n POW\n POWER\n RADIANS\n RAND\n ROUND\n SIGN\n SIN\n SQRT\n SUM\n TAN\n TRUNCATE\n\n Date Functions\n ADDDATE\n ADDTIME\n CURDATE\n CURRENT_DATE\n CURRENT_TIME\n CURRENT_TIMESTAMP\n CURTIME\n DATE\n DATEDIFF\n DATE_ADD\n DATE_FORMAT\n DATE_SUB\n DAY\n DAYNAME\n DAYOFMONTH\n DAYOFWEEK\n DAYOFYEAR\n EXTRACT\n FROM_DAYS\n HOUR\n LAST_DAY\n LOCALTIME\n LOCALTIMESTAMP\n MAKEDATE\n MAKETIME\n MICROSECOND\n MINUTE\n MONTH\n MONTHNAME\n NOW\n PERIOD_ADD\n PERIOD_DIFF\n QUARTER\n SECOND\n SEC_TO_TIME\n STR_TO_DATE\n SUBDATE\n SUBTIME\n SYSDATE\n TIME\n TIME_FORMAT\n TIME_TO_SEC\n TIMEDIFF\n TIMESTAMP\n TO_DAYS\n WEEK\n WEEKDAY\n WEEKOFYEAR\n YEAR\n YEARWEEK\n\n Advanced Functions\n BIN\n BINARY\n CASE\n CAST\n COALESCE\n CONNECTION_ID\n CONV\n CONVERT\n CURRENT_USER\n DATABASE\n IF\n IFNULL\n ISNULL\n LAST_INSERT_ID\n NULLIF\n SESSION_USER\n SYSTEM_USER\n USER\n VERSION",
+                "heading": "MySQL References"
+            },
+            {
+                "content": "MySQL Examples\nMySQL Editor\nMySQL Quiz\nMySQL Exercises\nMySQL Syllabus\nMySQL Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\nMySQL Examples\n\n ❮ Previous\nNext ❯",
+                "heading": "MySQL Examples"
+            },
+            {
+                "content": "SELECT Column\nSELECT *\nSELECT DISTINCT\nSELECT COUNT(DISTINCT column_name)\n\nExamples Explained",
+                "heading": "MySQL SELECT"
+            },
+            {
+                "content": "WHERE Clause\nText Fields vs. Numeric Fields\n\nExamples Explained",
+                "heading": "MySQL WHERE"
+            },
+            {
+                "content": "AND\nOR\nAnother OR\nNOT\nCombining AND and OR\nCombining AND and NOT\n\nExamples Explained",
+                "heading": "MySQL AND, OR and NOT"
+            },
+            {
+                "content": "ORDER BY\nORDER BY DESC\nORDER BY Several Columns\nORDER BY Several Columns + ASC and DESC\n\nExamples Explained",
+                "heading": "MySQL ORDER BY"
+            },
+            {
+                "content": "IS NULL Operator\nIS NOT NULL Operator\n\nExamples Explained",
+                "heading": "MySQL NULL Values"
+            },
+            {
+                "content": "LIMIT\nLIMIT with WHERE\n\nExamples Explained",
+                "heading": "MySQL LIMIT"
+            },
+            {
+                "content": "MIN()\nMAX()\n\nExamples Explained",
+                "heading": "MySQL MIN() and MAX()"
+            },
+            {
+                "content": "COUNT()\nAVG()\nSUM()\n\nExamples Explained",
+                "heading": "MySQL COUNT(), AVG() and SUM()"
+            },
+            {
+                "content": "Select all table rows starting with \"a\"\nSelect all table rows ending with \"a\"\nSelect all table rows that have \"or\" in any position\nSelect all table rows that have \"r\" in the second position\nSelect all table rows that starts with \"a\" and ends with \"o\"\nSelect all table rows that starts with \"a\" and are at least 3 characters in length\nSelect all table rows that does NOT start with \"a\"\n\nExamples Explained",
+                "heading": "MySQL LIKE"
+            },
+            {
+                "content": "The % Wildcard\nThe _ Wildcard\n\nExamples Explained",
+                "heading": "MySQL Wildcards"
+            },
+            {
+                "content": "IN\nNOT IN\nIN with SELECT\n\nExamples Explained",
+                "heading": "MySQL IN"
+            },
+            {
+                "content": "BETWEEN\nNOT BETWEEN\nBETWEEN with IN\nBETWEEN Text Values\nNOT BETWEEN Text Values\nBETWEEN Date Values\n\nExamples Explained",
+                "heading": "MySQL BETWEEN"
+            },
+            {
+                "content": "Alias for Columns\nTwo Aliases\nAn Alias that contains multiple columns\nAlias for Tables\n\nExamples Explained",
+                "heading": "MySQL Aliases"
+            },
+            {
+                "content": "INNER JOIN - Join two tables\nINNER JOIN - Join three tables\nLEFT JOIN\nRIGHT JOIN\nCROSS JOIN\nSelf Join\n\nExamples Explained",
+                "heading": "MySQL Joins"
+            },
+            {
+                "content": "UNION\nUNION ALL\nUNION with WHERE\nUNION ALL with WHERE\n\nExamples Explained",
+                "heading": "MySQL UNION"
+            },
+            {
+                "content": "GROUP BY\nGROUP BY and ORDER BY\nGROUP BY with JOIN\n\nExamples Explained",
+                "heading": "MySQL GROUP BY"
+            },
+            {
+                "content": "HAVING and GROUP BY\nHAVING and ORDER BY\nHAVING and WHERE\n\nExamples Explained",
+                "heading": "MySQL HAVING"
+            },
+            {
+                "content": "EXISTS - Price less than 20\nEXISTS - Price equals 20\n\nExample Explained",
+                "heading": "MySQL EXISTS"
+            },
+            {
+                "content": "ANY - Example 1\nANY - Example 2\nANY - Example 3\nALL - Example 1\nALL - Example 2\n\nExamples Explained",
+                "heading": "MySQL ANY and ALL"
+            },
+            {
+                "content": "CASE 1\nCASE 2\n\nExamples Explained",
+                "heading": "MySQL CASE"
+            },
+            {
+                "content": "Single line Comment\nSingle line comment at the end of a line\nSingle line comments to ignore statement\nMulti line comment\nMulti line comment to ignore many statement\n\nExamples Explained",
+                "heading": "MySQL Comments"
+            },
+            {
+                "content": "MySQL Database tutorials can be found here:\n\nMySQL Create DB\nMySQL Drop DB\nMySQL Create Table\nMySQL Drop Table\nMySQL Alter Table\nMySQL Constraints\nMySQL Not Null\nMySQL Unique\nMySQL Primary Key\nMySQL Foreign Key\nMySQL Check\nMySQL Default\nMySQL Create Index\nMySQL Auto Increment\nMySQL Dates\nMySQL Views\n\n ❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "MySQL Database"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:43Z",
+        "subject": "MySQL",
+        "title": "MySQL Examples"
+    },
+    {
+        "url": "https://www.w3schools.com/mysql/mysql_editor.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "mysql_mysql_editor",
+        "code_examples": [],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MySQL HOME\nMySQL Intro\nMySQL RDBMS",
+                "heading": "MySQL Tutorial"
+            },
+            {
+                "content": "MySQL SQL\nMySQL SELECT\nMySQL SELECT DISTINCT\nMySQL WHERE\nMySQL ORDER BY\nMySQL AND\nMySQL OR\nMySQL NOT\nMySQL INSERT INTO\nMySQL NULL Values\nMySQL UPDATE\nMySQL DELETE\nMySQL LIMIT\nMySQL Aggregate Functions\nMySQL MIN()\nMySQL MAX()\nMySQL COUNT()\nMySQL SUM()\nMySQL AVG()\nMySQL LIKE\nMySQL Wildcards\nMySQL IN\nMySQL BETWEEN\nMySQL Aliases\nMySQL Joins\nMySQL INNER JOIN\nMySQL LEFT JOIN\nMySQL RIGHT JOIN\nMySQL CROSS JOIN\nMySQL Self Join\nMySQL UNION\nMySQL UNION ALL\nMySQL GROUP BY\nMySQL HAVING\nMySQL EXISTS\nMySQL ANY\nMySQL ALL\nMySQL INSERT SELECT\nMySQL CASE\nMySQL Null Functions\nMySQL Stored Procedures\nMySQL Comments\nMySQL Operators",
+                "heading": "MySQL SQL"
+            },
+            {
+                "content": "MySQL Install (Windows)\nMySQL Install (Linux)-->\nMySQL Create DB\nMySQL Drop DB\nMySQL Create Table\nMySQL Drop Table\nMySQL Alter Table\nMySQL Constraints\nMySQL Not Null\nMySQL Unique\nMySQL Primary Key\nMySQL Foreign Key\nMySQL Check\nMySQL Default\nMySQL Create Index\nMySQL Auto Increment\nMySQL Dates\nMySQL Views\nMySQL Injection\nMySQL Prepared Statements",
+                "heading": "MySQL Database"
+            },
+            {
+                "content": "MySQL Certificate",
+                "heading": "MySQL Cert"
+            },
+            {
+                "content": "MySQL Data Types\nMySQL Functions\n\n String Functions\n ASCII\n CHAR_LENGTH\n CHARACTER_LENGTH\n CONCAT\n CONCAT_WS\n FIELD\n FIND_IN_SET\n FORMAT\n INSERT\n INSTR\n LCASE\n LEFT\n LENGTH\n LOCATE\n LOWER\n LPAD\n LTRIM\n MID\n POSITION\n REPEAT\n REPLACE\n REVERSE\n RIGHT\n RPAD\n RTRIM\n SPACE\n STRCMP\n SUBSTR\n SUBSTRING\n SUBSTRING_INDEX\n TRIM\n UCASE\n UPPER\n\n Numeric Functions\n ABS\n ACOS\n ASIN\n ATAN\n ATAN2\n AVG\n CEIL\n CEILING\n COS\n COT\n COUNT\n DEGREES\n DIV\n EXP\n FLOOR\n GREATEST\n LEAST\n LN\n LOG\n LOG10\n LOG2\n MAX\n MIN\n MOD\n PI\n POW\n POWER\n RADIANS\n RAND\n ROUND\n SIGN\n SIN\n SQRT\n SUM\n TAN\n TRUNCATE\n\n Date Functions\n ADDDATE\n ADDTIME\n CURDATE\n CURRENT_DATE\n CURRENT_TIME\n CURRENT_TIMESTAMP\n CURTIME\n DATE\n DATEDIFF\n DATE_ADD\n DATE_FORMAT\n DATE_SUB\n DAY\n DAYNAME\n DAYOFMONTH\n DAYOFWEEK\n DAYOFYEAR\n EXTRACT\n FROM_DAYS\n HOUR\n LAST_DAY\n LOCALTIME\n LOCALTIMESTAMP\n MAKEDATE\n MAKETIME\n MICROSECOND\n MINUTE\n MONTH\n MONTHNAME\n NOW\n PERIOD_ADD\n PERIOD_DIFF\n QUARTER\n SECOND\n SEC_TO_TIME\n STR_TO_DATE\n SUBDATE\n SUBTIME\n SYSDATE\n TIME\n TIME_FORMAT\n TIME_TO_SEC\n TIMEDIFF\n TIMESTAMP\n TO_DAYS\n WEEK\n WEEKDAY\n WEEKOFYEAR\n YEAR\n YEARWEEK\n\n Advanced Functions\n BIN\n BINARY\n CASE\n CAST\n COALESCE\n CONNECTION_ID\n CONV\n CONVERT\n CURRENT_USER\n DATABASE\n IF\n IFNULL\n ISNULL\n LAST_INSERT_ID\n NULLIF\n SESSION_USER\n SYSTEM_USER\n USER\n VERSION",
+                "heading": "MySQL References"
+            },
+            {
+                "content": "MySQL Examples\nMySQL Editor\nMySQL Quiz\nMySQL Exercises\nMySQL Syllabus\nMySQL Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\nMySQL Online Editor\n\n❮ Previous\nNext ❯",
+                "heading": "MySQL Examples"
+            },
+            {
+                "content": "With our online MySQL editor, you can edit SQL statements and view the result in your browser.\n\nSELECT * FROM Customers;\n\nID\nCompany\nContact\nCountry\n\n1\nAlfreds Futterkiste\nMaria Anders\nGermany\n\n2\nCentro comercial Moctezuma\nFrancisco Chang\nMexico\n\n3\nErnst Handel\nRoland Mendel\nAustria\n\nTry it Yourself »\n\nClick on the \"Try it Yourself\" button to see how it works.",
+                "heading": "MySQL Editor"
+            },
+            {
+                "content": "If you want to create your own website or web applications with a SQL database, W3Schools Spaces gives you an easy place to write, run, manage, and publish code online.\n\nIf you don't know MySQL, we suggest that you read our MySQL Tutorial from scratch.\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Build and Publish MySQL Projects"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:43Z",
+        "subject": "MySQL",
+        "title": "MySQL Online Editor"
+    },
+    {
+        "url": "https://www.w3schools.com/mysql/mysql_quiz.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "mysql_mysql_quiz",
+        "code_examples": [],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MySQL HOME\nMySQL Intro\nMySQL RDBMS",
+                "heading": "MySQL Tutorial"
+            },
+            {
+                "content": "MySQL SQL\nMySQL SELECT\nMySQL SELECT DISTINCT\nMySQL WHERE\nMySQL ORDER BY\nMySQL AND\nMySQL OR\nMySQL NOT\nMySQL INSERT INTO\nMySQL NULL Values\nMySQL UPDATE\nMySQL DELETE\nMySQL LIMIT\nMySQL Aggregate Functions\nMySQL MIN()\nMySQL MAX()\nMySQL COUNT()\nMySQL SUM()\nMySQL AVG()\nMySQL LIKE\nMySQL Wildcards\nMySQL IN\nMySQL BETWEEN\nMySQL Aliases\nMySQL Joins\nMySQL INNER JOIN\nMySQL LEFT JOIN\nMySQL RIGHT JOIN\nMySQL CROSS JOIN\nMySQL Self Join\nMySQL UNION\nMySQL UNION ALL\nMySQL GROUP BY\nMySQL HAVING\nMySQL EXISTS\nMySQL ANY\nMySQL ALL\nMySQL INSERT SELECT\nMySQL CASE\nMySQL Null Functions\nMySQL Stored Procedures\nMySQL Comments\nMySQL Operators",
+                "heading": "MySQL SQL"
+            },
+            {
+                "content": "MySQL Install (Windows)\nMySQL Install (Linux)-->\nMySQL Create DB\nMySQL Drop DB\nMySQL Create Table\nMySQL Drop Table\nMySQL Alter Table\nMySQL Constraints\nMySQL Not Null\nMySQL Unique\nMySQL Primary Key\nMySQL Foreign Key\nMySQL Check\nMySQL Default\nMySQL Create Index\nMySQL Auto Increment\nMySQL Dates\nMySQL Views\nMySQL Injection\nMySQL Prepared Statements",
+                "heading": "MySQL Database"
+            },
+            {
+                "content": "MySQL Certificate",
+                "heading": "MySQL Cert"
+            },
+            {
+                "content": "MySQL Data Types\nMySQL Functions\n\n String Functions\n ASCII\n CHAR_LENGTH\n CHARACTER_LENGTH\n CONCAT\n CONCAT_WS\n FIELD\n FIND_IN_SET\n FORMAT\n INSERT\n INSTR\n LCASE\n LEFT\n LENGTH\n LOCATE\n LOWER\n LPAD\n LTRIM\n MID\n POSITION\n REPEAT\n REPLACE\n REVERSE\n RIGHT\n RPAD\n RTRIM\n SPACE\n STRCMP\n SUBSTR\n SUBSTRING\n SUBSTRING_INDEX\n TRIM\n UCASE\n UPPER\n\n Numeric Functions\n ABS\n ACOS\n ASIN\n ATAN\n ATAN2\n AVG\n CEIL\n CEILING\n COS\n COT\n COUNT\n DEGREES\n DIV\n EXP\n FLOOR\n GREATEST\n LEAST\n LN\n LOG\n LOG10\n LOG2\n MAX\n MIN\n MOD\n PI\n POW\n POWER\n RADIANS\n RAND\n ROUND\n SIGN\n SIN\n SQRT\n SUM\n TAN\n TRUNCATE\n\n Date Functions\n ADDDATE\n ADDTIME\n CURDATE\n CURRENT_DATE\n CURRENT_TIME\n CURRENT_TIMESTAMP\n CURTIME\n DATE\n DATEDIFF\n DATE_ADD\n DATE_FORMAT\n DATE_SUB\n DAY\n DAYNAME\n DAYOFMONTH\n DAYOFWEEK\n DAYOFYEAR\n EXTRACT\n FROM_DAYS\n HOUR\n LAST_DAY\n LOCALTIME\n LOCALTIMESTAMP\n MAKEDATE\n MAKETIME\n MICROSECOND\n MINUTE\n MONTH\n MONTHNAME\n NOW\n PERIOD_ADD\n PERIOD_DIFF\n QUARTER\n SECOND\n SEC_TO_TIME\n STR_TO_DATE\n SUBDATE\n SUBTIME\n SYSDATE\n TIME\n TIME_FORMAT\n TIME_TO_SEC\n TIMEDIFF\n TIMESTAMP\n TO_DAYS\n WEEK\n WEEKDAY\n WEEKOFYEAR\n YEAR\n YEARWEEK\n\n Advanced Functions\n BIN\n BINARY\n CASE\n CAST\n COALESCE\n CONNECTION_ID\n CONV\n CONVERT\n CURRENT_USER\n DATABASE\n IF\n IFNULL\n ISNULL\n LAST_INSERT_ID\n NULLIF\n SESSION_USER\n SYSTEM_USER\n USER\n VERSION",
+                "heading": "MySQL References"
+            },
+            {
+                "content": "MySQL Examples\nMySQL Editor\nMySQL Quiz\nMySQL Exercises\nMySQL Syllabus\nMySQL Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\nMySQL Quiz\n\n❮ Previous\nNext ❯\n\nYou can test your MySQL skills with W3Schools' Quiz.",
+                "heading": "MySQL Examples"
+            },
+            {
+                "content": "The test contains 25 questions and there is no time limit.\n\nThe test is not official, it's just a nice way to see how much you know, or don't know, about \nMySQL and SQL.",
+                "heading": "The Test"
+            },
+            {
+                "content": "You will get 1 point for each correct answer. At the end of the Quiz, your total score will be displayed. Maximum score is 25 points.",
+                "heading": "Count Your Score"
+            },
+            {
+                "content": "Good luck!\n\nStart the MySQL Quiz ❯\n\n If you don't know MySQL, we suggest that you read our MySQL Tutorial from scratch.",
+                "heading": "Start the Quiz"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:43Z",
+        "subject": "MySQL",
+        "title": "MySQL Quiz"
+    },
+    {
+        "url": "https://www.w3schools.com/mysql/mysql_exercises.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "mysql_mysql_exercises",
+        "code_examples": [],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MySQL HOME\nMySQL Intro\nMySQL RDBMS",
+                "heading": "MySQL Tutorial"
+            },
+            {
+                "content": "MySQL SQL\nMySQL SELECT\nMySQL SELECT DISTINCT\nMySQL WHERE\nMySQL ORDER BY\nMySQL AND\nMySQL OR\nMySQL NOT\nMySQL INSERT INTO\nMySQL NULL Values\nMySQL UPDATE\nMySQL DELETE\nMySQL LIMIT\nMySQL Aggregate Functions\nMySQL MIN()\nMySQL MAX()\nMySQL COUNT()\nMySQL SUM()\nMySQL AVG()\nMySQL LIKE\nMySQL Wildcards\nMySQL IN\nMySQL BETWEEN\nMySQL Aliases\nMySQL Joins\nMySQL INNER JOIN\nMySQL LEFT JOIN\nMySQL RIGHT JOIN\nMySQL CROSS JOIN\nMySQL Self Join\nMySQL UNION\nMySQL UNION ALL\nMySQL GROUP BY\nMySQL HAVING\nMySQL EXISTS\nMySQL ANY\nMySQL ALL\nMySQL INSERT SELECT\nMySQL CASE\nMySQL Null Functions\nMySQL Stored Procedures\nMySQL Comments\nMySQL Operators",
+                "heading": "MySQL SQL"
+            },
+            {
+                "content": "MySQL Install (Windows)\nMySQL Install (Linux)-->\nMySQL Create DB\nMySQL Drop DB\nMySQL Create Table\nMySQL Drop Table\nMySQL Alter Table\nMySQL Constraints\nMySQL Not Null\nMySQL Unique\nMySQL Primary Key\nMySQL Foreign Key\nMySQL Check\nMySQL Default\nMySQL Create Index\nMySQL Auto Increment\nMySQL Dates\nMySQL Views\nMySQL Injection\nMySQL Prepared Statements",
+                "heading": "MySQL Database"
+            },
+            {
+                "content": "MySQL Certificate",
+                "heading": "MySQL Cert"
+            },
+            {
+                "content": "MySQL Data Types\nMySQL Functions\n\n String Functions\n ASCII\n CHAR_LENGTH\n CHARACTER_LENGTH\n CONCAT\n CONCAT_WS\n FIELD\n FIND_IN_SET\n FORMAT\n INSERT\n INSTR\n LCASE\n LEFT\n LENGTH\n LOCATE\n LOWER\n LPAD\n LTRIM\n MID\n POSITION\n REPEAT\n REPLACE\n REVERSE\n RIGHT\n RPAD\n RTRIM\n SPACE\n STRCMP\n SUBSTR\n SUBSTRING\n SUBSTRING_INDEX\n TRIM\n UCASE\n UPPER\n\n Numeric Functions\n ABS\n ACOS\n ASIN\n ATAN\n ATAN2\n AVG\n CEIL\n CEILING\n COS\n COT\n COUNT\n DEGREES\n DIV\n EXP\n FLOOR\n GREATEST\n LEAST\n LN\n LOG\n LOG10\n LOG2\n MAX\n MIN\n MOD\n PI\n POW\n POWER\n RADIANS\n RAND\n ROUND\n SIGN\n SIN\n SQRT\n SUM\n TAN\n TRUNCATE\n\n Date Functions\n ADDDATE\n ADDTIME\n CURDATE\n CURRENT_DATE\n CURRENT_TIME\n CURRENT_TIMESTAMP\n CURTIME\n DATE\n DATEDIFF\n DATE_ADD\n DATE_FORMAT\n DATE_SUB\n DAY\n DAYNAME\n DAYOFMONTH\n DAYOFWEEK\n DAYOFYEAR\n EXTRACT\n FROM_DAYS\n HOUR\n LAST_DAY\n LOCALTIME\n LOCALTIMESTAMP\n MAKEDATE\n MAKETIME\n MICROSECOND\n MINUTE\n MONTH\n MONTHNAME\n NOW\n PERIOD_ADD\n PERIOD_DIFF\n QUARTER\n SECOND\n SEC_TO_TIME\n STR_TO_DATE\n SUBDATE\n SUBTIME\n SYSDATE\n TIME\n TIME_FORMAT\n TIME_TO_SEC\n TIMEDIFF\n TIMESTAMP\n TO_DAYS\n WEEK\n WEEKDAY\n WEEKOFYEAR\n YEAR\n YEARWEEK\n\n Advanced Functions\n BIN\n BINARY\n CASE\n CAST\n COALESCE\n CONNECTION_ID\n CONV\n CONVERT\n CURRENT_USER\n DATABASE\n IF\n IFNULL\n ISNULL\n LAST_INSERT_ID\n NULLIF\n SESSION_USER\n SYSTEM_USER\n USER\n VERSION",
+                "heading": "MySQL References"
+            },
+            {
+                "content": "MySQL Examples\nMySQL Editor\nMySQL Quiz\nMySQL Exercises\nMySQL Syllabus\nMySQL Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\nMySQL Exercises\n\n ❮ Previous\n Next ❯\n\nTest your MySQL skills with exercises from all categories:",
+                "heading": "MySQL Examples"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "Intro3 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "RDBMS3 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "About SQL Statements3 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "SELECT4 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "WHERE3 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "AND OR NOT4 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "ORDER BY3 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "INSERT3 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "NULL values3 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "UPDATE3 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "DELETE3 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "LIMIT3 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "MIN MAX3 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "COUNT AVG SUM3 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "LIKE5 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "Wildcards3 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "IN3 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "BETWEEN3 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "Alias3 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "JOIN3 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "INNER JOIN3 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "LEFT JOIN3 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "RIGHT JOIN3 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "CROSS JOIN3 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "UNION3 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "GROUP BY3 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "HAVING3 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "EXISTS3 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "ANY, ALL5 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "INSERT INTO SELECT4 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "CASE3 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "IFNULL() and COALESCE()3 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "Comments5 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "Operators7 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "CREATE DATABASE5 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "DROP DATABASE5 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "CREATE TABLE4 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "DROP TABLE7 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "ALTER TABLE6 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "Constraints5 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "NOT NULL4 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "UNIQUE4 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "PRIMARY KEY4 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "FOREIGN KEY5 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "CHECK4 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "DEFAULT4 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "CREATE INDEX5 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "AUTO_INCREMENT4 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "Dates3 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "Views5 exercises"
+            },
+            {
+                "content": "If you haven't already, sign up to become a W3Schooler, and get points for every exercise you complete.\n\nAs a logged-in W3Schools user you will have access to many features like having your own web page,\ntrack your learning progress,\nreceive personal guided paths, and\nmore.",
+                "heading": "Log in to track your progress"
+            },
+            {
+                "content": "The exercises are a mix of \"multiple choice\" and \"fill in the blanks\" questions.\n\nThere are between 3 and 9 questions in each category.\n\nThe answer can be found in the corresponding tutorial chapter.\n\nIf you're stuck, or answer wrong, you can try again or hit the \"Show Answer\" button to see the correct answer.\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "The Exercise"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:44Z",
+        "subject": "MySQL",
+        "title": "MySQL Exercises"
+    },
+    {
+        "url": "https://www.w3schools.com/mysql/mysql_syllabus.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "mysql_mysql_syllabus",
+        "code_examples": [
+            {
+                "code": "SELECT * FROM Customers;",
+                "language": "mysql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MySQL HOME\nMySQL Intro\nMySQL RDBMS",
+                "heading": "MySQL Tutorial"
+            },
+            {
+                "content": "MySQL SQL\nMySQL SELECT\nMySQL SELECT DISTINCT\nMySQL WHERE\nMySQL ORDER BY\nMySQL AND\nMySQL OR\nMySQL NOT\nMySQL INSERT INTO\nMySQL NULL Values\nMySQL UPDATE\nMySQL DELETE\nMySQL LIMIT\nMySQL Aggregate Functions\nMySQL MIN()\nMySQL MAX()\nMySQL COUNT()\nMySQL SUM()\nMySQL AVG()\nMySQL LIKE\nMySQL Wildcards\nMySQL IN\nMySQL BETWEEN\nMySQL Aliases\nMySQL Joins\nMySQL INNER JOIN\nMySQL LEFT JOIN\nMySQL RIGHT JOIN\nMySQL CROSS JOIN\nMySQL Self Join\nMySQL UNION\nMySQL UNION ALL\nMySQL GROUP BY\nMySQL HAVING\nMySQL EXISTS\nMySQL ANY\nMySQL ALL\nMySQL INSERT SELECT\nMySQL CASE\nMySQL Null Functions\nMySQL Stored Procedures\nMySQL Comments\nMySQL Operators",
+                "heading": "MySQL SQL"
+            },
+            {
+                "content": "MySQL Install (Windows)\nMySQL Install (Linux)-->\nMySQL Create DB\nMySQL Drop DB\nMySQL Create Table\nMySQL Drop Table\nMySQL Alter Table\nMySQL Constraints\nMySQL Not Null\nMySQL Unique\nMySQL Primary Key\nMySQL Foreign Key\nMySQL Check\nMySQL Default\nMySQL Create Index\nMySQL Auto Increment\nMySQL Dates\nMySQL Views\nMySQL Injection\nMySQL Prepared Statements",
+                "heading": "MySQL Database"
+            },
+            {
+                "content": "MySQL Certificate",
+                "heading": "MySQL Cert"
+            },
+            {
+                "content": "MySQL Data Types\nMySQL Functions\n\n String Functions\n ASCII\n CHAR_LENGTH\n CHARACTER_LENGTH\n CONCAT\n CONCAT_WS\n FIELD\n FIND_IN_SET\n FORMAT\n INSERT\n INSTR\n LCASE\n LEFT\n LENGTH\n LOCATE\n LOWER\n LPAD\n LTRIM\n MID\n POSITION\n REPEAT\n REPLACE\n REVERSE\n RIGHT\n RPAD\n RTRIM\n SPACE\n STRCMP\n SUBSTR\n SUBSTRING\n SUBSTRING_INDEX\n TRIM\n UCASE\n UPPER\n\n Numeric Functions\n ABS\n ACOS\n ASIN\n ATAN\n ATAN2\n AVG\n CEIL\n CEILING\n COS\n COT\n COUNT\n DEGREES\n DIV\n EXP\n FLOOR\n GREATEST\n LEAST\n LN\n LOG\n LOG10\n LOG2\n MAX\n MIN\n MOD\n PI\n POW\n POWER\n RADIANS\n RAND\n ROUND\n SIGN\n SIN\n SQRT\n SUM\n TAN\n TRUNCATE\n\n Date Functions\n ADDDATE\n ADDTIME\n CURDATE\n CURRENT_DATE\n CURRENT_TIME\n CURRENT_TIMESTAMP\n CURTIME\n DATE\n DATEDIFF\n DATE_ADD\n DATE_FORMAT\n DATE_SUB\n DAY\n DAYNAME\n DAYOFMONTH\n DAYOFWEEK\n DAYOFYEAR\n EXTRACT\n FROM_DAYS\n HOUR\n LAST_DAY\n LOCALTIME\n LOCALTIMESTAMP\n MAKEDATE\n MAKETIME\n MICROSECOND\n MINUTE\n MONTH\n MONTHNAME\n NOW\n PERIOD_ADD\n PERIOD_DIFF\n QUARTER\n SECOND\n SEC_TO_TIME\n STR_TO_DATE\n SUBDATE\n SUBTIME\n SYSDATE\n TIME\n TIME_FORMAT\n TIME_TO_SEC\n TIMEDIFF\n TIMESTAMP\n TO_DAYS\n WEEK\n WEEKDAY\n WEEKOFYEAR\n YEAR\n YEARWEEK\n\n Advanced Functions\n BIN\n BINARY\n CASE\n CAST\n COALESCE\n CONNECTION_ID\n CONV\n CONVERT\n CURRENT_USER\n DATABASE\n IF\n IFNULL\n ISNULL\n LAST_INSERT_ID\n NULLIF\n SESSION_USER\n SYSTEM_USER\n USER\n VERSION",
+                "heading": "MySQL References"
+            },
+            {
+                "content": "MySQL Examples\nMySQL Editor\nMySQL Quiz\nMySQL Exercises\nMySQL Syllabus\nMySQL Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\nMySQL Syllabus\n\n❮ Previous\nNext ❯",
+                "heading": "MySQL Examples"
+            },
+            {
+                "content": "The W3Schools MySQL Tutorial is comprehensive and beginner-friendly.\n\nIt will give you a fundamental knowledge of MySQL database management.\n\nIt is designed for beginners and requires basic SQL knowledge.\n\nThe content has been carefully made to be bite-sized, simple, and easy to understand.\n\nThe content has been proven by millions of users over the years. It is updated and improved frequently.\n\nThe syllabus outline and its sequence are structured so you can learn MySQL step by step, from basic queries to advanced database management.\n\nGet Started With MySQL »",
+                "heading": "Introduction"
+            },
+            {
+                "content": "Understand basic SQL syntax and how to write queries.\n\n Learn database operations like SELECT, INSERT, UPDATE, and DELETE.\n\n Work with database and table structures using CREATE, DROP, and ALTER.\n\n Understand advanced SQL operations like JOINs, UNION, and GROUP BY.\n\n Handle NULL values and learn about constraints.\n\n Use SQL functions for strings, numbers, and dates.\n\n Create and manage indexes and views.\n\n Work with advanced SQL features like wildcards and aliases.\n\nNote: Are you a teacher teaching MySQL? W3Schools Academy is a toolbox of features that can help you teach. It offers classroom features such as pre-built study plans, classroom administration and much more. Read more about Academy here.",
+                "heading": "Learning Outcomes"
+            },
+            {
+                "content": "Database Management:\n MySQL can be used for managing relational databases.\n\n Web Development:\n MySQL is widely used in web applications.\n\n Data Analysis:\n MySQL supports complex data analysis.\n\n Application Development:\n MySQL integrates with various programming languages.\n\n Business Intelligence:\n MySQL handles business data efficiently.\n\n Data Warehousing:\n MySQL supports large-scale data storage.\n\n Enterprise Systems:\n MySQL powers enterprise applications.\n\nGet Started",
+                "heading": "Which Subjects Are MySQL Relevant For?"
+            },
+            {
+                "content": "In this tutorial we offer different activities for you to learn MySQL for free:\n\n Lessons\n\n Exercises\n\n Quizzes",
+                "heading": "Activities"
+            },
+            {
+                "content": "You can also create an account to track your progress.\n\nAs a signed-in user, you get access to features such as:\n\n Learning paths\n\n Sandbox and lab environments\n\n Achievements\n\n And much more!\n\nSign Up",
+                "heading": "Sign in to Track Progress"
+            },
+            {
+                "content": "MySQL, like any database system, is best learned through hands-on practice.\n\nTry this example using our editor:\n\nExample\n\nSELECT * FROM Customers;\n\nTry it Yourself »\n\nIf you want to explore more and host your project, we have a feature called Spaces \nthat allows you to build, test and run websites.\n\nHere you get a secure sandbox environment called Spaces. That includes a W3Schools subdomain, hosting, and secure SSL certificates.\n\nMySQL is not hosted on W3Schools Spaces; you need to set it up on a platform like PlanetScale or a hosting provider and connect your application to it.\n\nSpaces require no installation and run directly in the browser.\n\nFeatures include:\n\n Collaboration\n\n File navigator\n\n Terminal & log\n\n Package manager\n\n Database\n\n Environment manager\n\n Analytics\n\nCreate a Spaces Account",
+                "heading": "Sandbox and Lab Environment"
+            },
+            {
+                "content": "W3Schools offers an end-of-pathway certification program.\n\nHere you can take exams to get certified.\n\nThe MySQL exam is a test that summarizes the W3Schools MySQL syllabus.\n\nAfter passing the exam you get the \"Certified MySQL Developer\" Certification.\n\nThe certification exam is adaptive and graded; students will get a grade from intermediate, advanced to professional.\n\nBuy Certificate »",
+                "heading": "MySQL Certification"
+            },
+            {
+                "content": "Are you interested in learning how you can use W3Schools Academy to Teach \nMySQL? \n\nWatch a demo of W3Schools Academy. You'll see how it works, and discover how it can make teaching programming easier and more engaging.\n\nWatch Demo »\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Are You a Teacher?"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:44Z",
+        "subject": "MySQL",
+        "title": "MySQL Syllabus"
+    },
+    {
+        "url": "https://www.w3schools.com/mysql/mysql_study_plan.asp",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id": "mysql_mysql_study_plan",
+        "code_examples": [],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->\n\n×-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MySQL HOME\nMySQL Intro\nMySQL RDBMS",
+                "heading": "MySQL Tutorial"
+            },
+            {
+                "content": "MySQL SQL\nMySQL SELECT\nMySQL SELECT DISTINCT\nMySQL WHERE\nMySQL ORDER BY\nMySQL AND\nMySQL OR\nMySQL NOT\nMySQL INSERT INTO\nMySQL NULL Values\nMySQL UPDATE\nMySQL DELETE\nMySQL LIMIT\nMySQL Aggregate Functions\nMySQL MIN()\nMySQL MAX()\nMySQL COUNT()\nMySQL SUM()\nMySQL AVG()\nMySQL LIKE\nMySQL Wildcards\nMySQL IN\nMySQL BETWEEN\nMySQL Aliases\nMySQL Joins\nMySQL INNER JOIN\nMySQL LEFT JOIN\nMySQL RIGHT JOIN\nMySQL CROSS JOIN\nMySQL Self Join\nMySQL UNION\nMySQL UNION ALL\nMySQL GROUP BY\nMySQL HAVING\nMySQL EXISTS\nMySQL ANY\nMySQL ALL\nMySQL INSERT SELECT\nMySQL CASE\nMySQL Null Functions\nMySQL Stored Procedures\nMySQL Comments\nMySQL Operators",
+                "heading": "MySQL SQL"
+            },
+            {
+                "content": "MySQL Install (Windows)\nMySQL Install (Linux)-->\nMySQL Create DB\nMySQL Drop DB\nMySQL Create Table\nMySQL Drop Table\nMySQL Alter Table\nMySQL Constraints\nMySQL Not Null\nMySQL Unique\nMySQL Primary Key\nMySQL Foreign Key\nMySQL Check\nMySQL Default\nMySQL Create Index\nMySQL Auto Increment\nMySQL Dates\nMySQL Views\nMySQL Injection\nMySQL Prepared Statements",
+                "heading": "MySQL Database"
+            },
+            {
+                "content": "MySQL Certificate",
+                "heading": "MySQL Cert"
+            },
+            {
+                "content": "MySQL Data Types\nMySQL Functions\n\n String Functions\n ASCII\n CHAR_LENGTH\n CHARACTER_LENGTH\n CONCAT\n CONCAT_WS\n FIELD\n FIND_IN_SET\n FORMAT\n INSERT\n INSTR\n LCASE\n LEFT\n LENGTH\n LOCATE\n LOWER\n LPAD\n LTRIM\n MID\n POSITION\n REPEAT\n REPLACE\n REVERSE\n RIGHT\n RPAD\n RTRIM\n SPACE\n STRCMP\n SUBSTR\n SUBSTRING\n SUBSTRING_INDEX\n TRIM\n UCASE\n UPPER\n\n Numeric Functions\n ABS\n ACOS\n ASIN\n ATAN\n ATAN2\n AVG\n CEIL\n CEILING\n COS\n COT\n COUNT\n DEGREES\n DIV\n EXP\n FLOOR\n GREATEST\n LEAST\n LN\n LOG\n LOG10\n LOG2\n MAX\n MIN\n MOD\n PI\n POW\n POWER\n RADIANS\n RAND\n ROUND\n SIGN\n SIN\n SQRT\n SUM\n TAN\n TRUNCATE\n\n Date Functions\n ADDDATE\n ADDTIME\n CURDATE\n CURRENT_DATE\n CURRENT_TIME\n CURRENT_TIMESTAMP\n CURTIME\n DATE\n DATEDIFF\n DATE_ADD\n DATE_FORMAT\n DATE_SUB\n DAY\n DAYNAME\n DAYOFMONTH\n DAYOFWEEK\n DAYOFYEAR\n EXTRACT\n FROM_DAYS\n HOUR\n LAST_DAY\n LOCALTIME\n LOCALTIMESTAMP\n MAKEDATE\n MAKETIME\n MICROSECOND\n MINUTE\n MONTH\n MONTHNAME\n NOW\n PERIOD_ADD\n PERIOD_DIFF\n QUARTER\n SECOND\n SEC_TO_TIME\n STR_TO_DATE\n SUBDATE\n SUBTIME\n SYSDATE\n TIME\n TIME_FORMAT\n TIME_TO_SEC\n TIMEDIFF\n TIMESTAMP\n TO_DAYS\n WEEK\n WEEKDAY\n WEEKOFYEAR\n YEAR\n YEARWEEK\n\n Advanced Functions\n BIN\n BINARY\n CASE\n CAST\n COALESCE\n CONNECTION_ID\n CONV\n CONVERT\n CURRENT_USER\n DATABASE\n IF\n IFNULL\n ISNULL\n LAST_INSERT_ID\n NULLIF\n SESSION_USER\n SYSTEM_USER\n USER\n VERSION",
+                "heading": "MySQL References"
+            },
+            {
+                "content": "MySQL Examples\nMySQL Editor\nMySQL Quiz\nMySQL Exercises\nMySQL Syllabus\nMySQL Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\nMySQL Study Plan\n\n❮ Previous\nNext ❯",
+                "heading": "MySQL Examples"
+            },
+            {
+                "content": "The MySQL study plan helps you teach your students MySQL step-by-step.\n\nCreating a study plan for MySQL is easy.\n\nYou can use a pre-built study plan or customize it.\n\nStudents have different skill levels. The study plans can be customized to ensure that everyone is challenged.\n\nSave time with pre-built teacher materials and study plans. Easily organize your class with a timeline from the introduction of MySQL to the final exam.",
+                "heading": "Introduction"
+            },
+            {
+                "content": "This study plan is a feature of W3Schools Academy.\n\nW3Schools Academy is a platform that has everything you need to teach coding, all in one place.\n\nIt offers you as a teacher a toolbox of features that helps you succeed with teaching in your classroom.\n\nYou need to have an active subscription to access the study plan feature.\n\n Full Access ($49.99 / year per student)\n\n Calculate your price and order here.\n\nLearn More »\n\nAcademy also offer other features such as:\n\n Managing your classroom\n\n Tracking of student progress and reports\n\n Labs, assignments, and code challenges (prebuilt challenges or create your own ones)\n\n Auto-grading\n\n Teaching materials\n\n Certification exams\n\nGet a free demo »",
+                "heading": "W3Schools Academy"
+            },
+            {
+                "content": "W3Schools has everything you need to teach MySQL.\n\nThe MySQL training materials is available for you to include and use in your study plan:\n\n W3Schools MySQL Tutorial\n\n MySQL Exercises\n\n MySQL Quiz\n\n MySQL Challenges (Coding challenges)\n\n MySQL Certification Exam (End of Pathway Exam)",
+                "heading": "Teacher Materials"
+            },
+            {
+                "content": "With the MySQL Syllabus, your students will start with the basics, like understanding databases and writing simple SQL queries, and move to more advanced topics, like joining tables, managing data, and creating complex queries. Each chapter includes simple examples, try-it-yourself sections, exercises, and quizzes to make learning easy, interactive, and fun.\n\nRead more about MySQL Syllabus.",
+                "heading": "MySQL Syllabus"
+            },
+            {
+                "content": "The study plan features are made to help teachers and students. They make learning easy, flexible, and fun. These features work for different types of classes, learning styles and student level.\n\n Learning Paths\n\n You can add ready-made learning paths.\n\n The learning paths are by default ordered by our recommended order.\n\n You can change the order.\n\n You can add custom activities with text, links, or multi-media files.\n\n Drag and drop or click to make changes to the path.\n\n Interactive Content\n\n Tutorials\n\n Try-its (test code snippets)\n\n Exercises\n\n Quiz\n\n Challenges\n\n Labs\n\n Timeline and Pace\n\n You can set a timeline of your study plan (e.g., 4-week, 8-week, 12-week, 24-week plans).\n\n You can decide the learning pace for your class.\n\n Different study plans can be assigned to different students in the same class.\n\n The flexibility can help to make sure that everyone is challenged.\n\n Track Student Progress\n\n There are tools to track student progress.\n\n The analytic tools include: chapter progress, exercises results, quiz results, exam results, and much more.\n\n The challenges can be auto-graded or manually graded. The results are available to you as a teacher.\n\n End of Pathway Exam\n\n The MySQL study plan aligns with the MySQL Certification Exam.\n\n The exam can be taken at the end of the study plan, at your selected date.\n\n The exam summarizes the MySQL Tutorial.\n\n You get reports of the students' results.\n\n Accessibility\n\n Study plans and learning materials are accessible on desktops, tablets, and smartphones.\n\n This ensures students can learn anytime, anywhere.\n\nLearn More »",
+                "heading": "Study Plan Overview"
+            },
+            {
+                "content": "You choose the timeline and pace of your study plans.\n\nSchools have different preferences.\n\nSome would like more intensive pace, e.g. 3 weeks, others 12 or more weeks.\n\nIt is completely up to you.\n\nFor example, this is how a 3-week MySQL study plan could look like:\n\n Week 1: MySQL and RDBMS fundamentals, Query basics\n\n Week 2: Data manipulations, Query techniques, Advanced queries\n\n Week 3: Database management, MySQL Certification Exam\n\nImage of Sample MySQL study plan:",
+                "heading": "Sample Study Plan"
+            },
+            {
+                "content": "Start with MySQL Study Plans today.\n\nGet Started »",
+                "heading": "Ready to get started?"
+            },
+            {
+                "content": "Are you interested in learning how you can use W3Schools Academy to Teach MySQL programming? \n\nWatch a demo of W3Schools Academy. You'll see how it works, and discover how it can make teaching programming easier and more engaging.\n\nWatch Demo »\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Are You a Teacher?"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:45Z",
+        "subject": "MySQL",
+        "title": "MySQL Study Plan"
+    }
+];
