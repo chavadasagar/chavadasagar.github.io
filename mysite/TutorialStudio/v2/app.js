@@ -55,7 +55,7 @@
   // 2. Data Cleaning & Noise Stripping Engine
   // ---------------------------------------------------------------------------
   const BoilerplateCleaner = {
-    boilerplateHeadings: /^(w3schools|select another|all our services|track your progress|get certified|become certified|contact sales|remove ads|video:|learning by|create a w3schools account|built for organizations|set up a semester|results you can measure|simple pricing|not sure yet\?|what our customers say|frequently asked questions|ready to train|about us|about w3schools|chatgpt|you can help|add a link to us|time's up!|spaces in your|ready to build|choose your plan|meet kai|practice any language|start with templates|see what's possible|what developers say|you're never alone|css cert|css examples|css references|css sass|css basic|css advanced|css flexbox|css grid|css responsive|react tutorial|react hooks|react cert|built-in compone|react elements|popular libraries|react exercises|html basic|html advanced|html media|html graphics|html examples|html references|js tutorial|js objects|js functions|js classes|js async|js html dom|js browser bom|js web apis|js ajax|js json|js vs jquery|js graphics|js examples|js references|python tutorial|python methods|python classes|python modules|python file handling|python database|python machine learning|python examples|python reference)/i,
+    boilerplateHeadings: /^(w3schools|select another|all our services|track your progress|get certified|become certified|contact sales|remove ads|video:|learning by|create a w3schools account|built for organizations|set up a semester|results you can measure|simple pricing|not sure yet\?|what our customers say|frequently asked questions|ready to train|about us|about w3schools|chatgpt|you can help|add a link to us|time's up!|spaces in your|ready to build|choose your plan|meet kai|practice any language|start with templates|see what's possible|what developers say|you're never alone|css cert|css examples|css references|css sass|css basic|css advanced|css flexbox|css grid|css responsive|react tutorial|react hooks|react cert|built-in compone|react elements|popular libraries|react exercises|html basic|html advanced|html media|html graphics|html examples|html references|html forms|html apis|html cert|js tutorial|js objects|js functions|js classes|js async|js html dom|js browser bom|js web apis|js ajax|js json|js vs jquery|js graphics|js examples|js references|python tutorial|python methods|python classes|python modules|python file handling|python database|python machine learning|python examples|python reference)/i,
     
     certAndQuizWords: /\b(cert|certificate|quiz|exercises|exam|diploma|syllabus|bootcamp|interview prep|challenges|practice problems)\b/i,
 
@@ -296,8 +296,16 @@
   }
 
   // ---------------------------------------------------------------------------
-  // 5. Code Card & Key-Value Pattern Detection
+  // 5. Intelligent Content, Code & Key-Value Parsing
   // ---------------------------------------------------------------------------
+  function cleanCodeIndentation(codeStr) {
+    if (!codeStr) return '';
+    const lines = codeStr.split('\n');
+    while (lines.length > 0 && !lines[0].trim()) lines.shift();
+    while (lines.length > 0 && !lines[lines.length - 1].trim()) lines.pop();
+    return lines.join('\n');
+  }
+
   function renderCodeCard(rawCode, language, labelPrefix) {
     const lang = language || 'code';
     const highlighted = SyntaxHighlighter.highlight(rawCode, lang);
@@ -343,89 +351,133 @@
     return false;
   }
 
-  function isCodeBlock(str) {
+  function isCodeStartLine(str) {
     if (!str) return false;
     const s = str.trim();
-    
-    // CSS selector + rule block
-    if (/^[a-zA-Z0-9_\-\.#:,\s]+\s*\{\s*[\s\S]*?\}/.test(s)) return true;
-    if (/^\{\s*[\s\S]*?\}/.test(s)) return true;
-    if (/[a-zA-Z\-]+\s*:\s*[^;]+;/.test(s) && s.includes('{')) return true;
-
-    // HTML / XML tags
-    if (/^<!DOCTYPE\s+html/i.test(s)) return true;
-    if (/^<[a-zA-Z0-9\-]+(\s+[^>]*)*>[\s\S]*<\/[a-zA-Z0-9\-]+>$/i.test(s)) return true;
-    if (/^<link\s+|^<script\s+|^<style\s+|^<meta\s+|^<div\s+|^<p\s+|^<span\s+/i.test(s)) return true;
-
-    // Color functions: hsl(0, 100%, 50%), rgba(...)
-    if (/^(hsla?|rgba?)\(\s*\d+[\s\S]*\)$/i.test(s)) return true;
-    if (/^(hsla?|rgba?)\([^\)]+\)(\s*(hsla?|rgba?)\([^\)]+\))+/i.test(s)) return true;
-
-    // Programming statements
-    if (/^(const|let|var|function|def|class|import|from|export|return|if|for|while|SELECT|INSERT|UPDATE|DELETE|CREATE|ALTER|#include|package|func)\s+/i.test(s)) {
-      return true;
-    }
-    if (/console\.log\(|document\.get|window\.add|System\.out\.println|printf\(|cout\s*<<|echo\s+|print\(/i.test(s)) {
-      return true;
-    }
-
-    // Multi-line code block: has indentation and symbols like ; or { or ()
-    const lines = s.split('\n');
-    if (lines.length >= 3) {
-      const codeLikeLines = lines.filter(l => /[;{}()<>=+\-*\/\[\]]/.test(l) || /^\s{2,}/.test(l)).length;
-      if (codeLikeLines / lines.length >= 0.7 && !/[A-Z][a-z]+ [a-z]+ [a-z]+ [a-z]+\./.test(s)) {
-        return true;
-      }
-    }
-
+    if (/^<!DOCTYPE/i.test(s)) return true;
+    if (/^<(html|head|title|body|div|p|span|script|style|link|meta|table|tr|td|th|ul|ol|li|form|input|button|svg|canvas|section|article|header|footer|nav|aside|main|h[1-6]|pre|code)[\s>]/i.test(s)) return true;
+    if (/^[a-zA-Z0-9_\-\.#:,\s]+\s*\{\s*$/.test(s)) return true;
+    if (/^(body|html|h[1-6]|p|div|\.[a-zA-Z0-9_\-]+|#[a-zA-Z0-9_\-]+)\s*\{/.test(s)) return true;
+    if (/^(const|let|var|function|def|class|import|from|export|#include|package)\s+/i.test(s)) return true;
+    if (/^(hsla?|rgba?)\([^\)]+\)/i.test(s)) return true;
     return false;
   }
 
-  function isShortCodeSnippet(str) {
-    if (!str) return false;
-    const s = str.trim();
-    if (/^(hsla?|rgba?)\(.*\)$/i.test(s)) return true;
-    if (/^[a-zA-Z0-9_\-\.#:,\s]+\s*\{[\s\S]*\}$/.test(s)) return true;
-    if (/^[a-zA-Z\-]+:\s*[^;]+;$/.test(s)) return true;
-    if (/^<[^>]+>$/.test(s)) return true;
-    return isCodeBlock(s);
+  function formatInlineProse(text) {
+    if (!text) return '';
+    let escaped = SyntaxHighlighter.escapeHtml(text);
+    
+    // Automatically turn inline HTML tags into clean <code> tags
+    escaped = escaped.replace(/(&lt;!?[a-zA-Z0-9\-]+(\s+[^&<>]*)?&gt;)/g, '<code class="inline-code">$1</code>');
+
+    return escaped;
   }
 
   function formatSectionContent(rawContent, subjectSlug) {
     if (!rawContent) return '';
-    
+
     let text = BoilerplateCleaner.cleanText(rawContent);
     if (!text) return '';
 
-    const rawBlocks = text.split(/\r?\n\s*\r?\n/).map(b => b.trim()).filter(Boolean);
-    if (rawBlocks.length === 0) return '';
+    text = text.replace(/Try it Yourself[^\n]*/gi, '');
 
-    const outputElements = [];
+    const output = [];
+    const lines = text.split('\n');
     let i = 0;
 
-    while (i < rawBlocks.length) {
-      const block = rawBlocks[i];
+    while (i < lines.length) {
+      const line = lines[i].trim();
 
-      // 1. Note / Tip / Warning callout
-      if (/^(Note|Important|Tip|Warning):\s*/i.test(block)) {
-        const match = block.match(/^(Note|Important|Tip|Warning)/i);
-        const title = match ? match[0] : 'Note';
-        const body = block.replace(/^(Note|Important|Tip|Warning):\s*/i, '');
-        outputElements.push(`
-          <div class="librarian-note">
-            <strong>${SyntaxHighlighter.escapeHtml(title)}</strong>
-            <div>${SyntaxHighlighter.escapeHtml(body)}</div>
-          </div>
-        `);
+      if (!line) {
         i++;
         continue;
       }
 
-      // 2. Key-Value sequence (e.g. HUE / 0 / SATURATION / 100% / LIGHTNESS / 50% / ALPHA / 0.5)
-      if (isPotentialKey(block) && i + 1 < rawBlocks.length && isPotentialValue(rawBlocks[i + 1])) {
+      // 1. Check for "Example" header
+      if (/^Example(\s*[:\-]|\s+Explained)?$/i.test(line)) {
+        if (/Explained/i.test(line)) {
+          output.push(`<h4 class="section-subheading">Example Explained</h4>`);
+          i++;
+          continue;
+        }
+
+        i++;
+        const codeLines = [];
+        while (i < lines.length) {
+          const cl = lines[i];
+          const trimmedCl = cl.trim();
+
+          if (/^Example Explained/i.test(trimmedCl)) break;
+          if (/^Try it Yourself/i.test(trimmedCl)) {
+            i++;
+            continue;
+          }
+          if (/^(Note|Important|Tip|Warning):/i.test(trimmedCl)) break;
+
+          // End code block if we hit a full English sentence after standard tags
+          if (/^The\s+[a-zA-Z<].*\b(defines|is|specifies|contains|tells|describes|represents)\b/i.test(trimmedCl) && codeLines.length >= 3) {
+            break;
+          }
+
+          codeLines.push(cl);
+          i++;
+        }
+
+        const cleanCode = cleanCodeIndentation(codeLines.join('\n'));
+        if (cleanCode) {
+          output.push(renderCodeCard(cleanCode, subjectSlug, 'EXAMPLE'));
+        }
+        continue;
+      }
+
+      // 2. Check for Note / Tip / Warning
+      if (/^(Note|Important|Tip|Warning):\s*/i.test(line)) {
+        const match = line.match(/^(Note|Important|Tip|Warning)/i);
+        const title = match ? match[0] : 'Note';
+        let body = line.replace(/^(Note|Important|Tip|Warning):\s*/i, '');
+        i++;
+        while (i < lines.length && lines[i].trim() && !/^(Note|Important|Tip|Warning|Example):/i.test(lines[i].trim()) && !isCodeStartLine(lines[i].trim())) {
+          body += ' ' + lines[i].trim();
+          i++;
+        }
+        output.push(`
+          <div class="librarian-note">
+            <strong>${SyntaxHighlighter.escapeHtml(title)}</strong>
+            <div>${formatInlineProse(body)}</div>
+          </div>
+        `);
+        continue;
+      }
+
+      // 3. Standalone Code Block (starts with <!DOCTYPE, <html, body {, function, etc.)
+      if (isCodeStartLine(line)) {
+        const codeLines = [];
+        while (i < lines.length) {
+          const cl = lines[i];
+          const trimmedCl = cl.trim();
+          if (/^(Note|Important|Tip|Warning|Example):/i.test(trimmedCl)) break;
+          if (/^The\s+[a-zA-Z<].*\b(defines|is|specifies|contains|tells|describes|represents)\b/i.test(trimmedCl) && codeLines.length >= 3) break;
+          
+          codeLines.push(cl);
+          i++;
+          if (/^<\/(html|svg|xml)>$/i.test(trimmedCl) || (trimmedCl === '}' && codeLines.length >= 3)) {
+            if (i < lines.length && !isCodeStartLine(lines[i].trim()) && !lines[i].trim().startsWith('<')) {
+              break;
+            }
+          }
+        }
+        const cleanCode = cleanCodeIndentation(codeLines.join('\n'));
+        if (cleanCode) {
+          output.push(renderCodeCard(cleanCode, subjectSlug));
+        }
+        continue;
+      }
+
+      // 4. Key-Value sequence (e.g. HSL, RGB slider tags)
+      if (isPotentialKey(line) && i + 1 < lines.length && isPotentialValue(lines[i + 1].trim())) {
         const pairs = [];
-        while (i < rawBlocks.length - 1 && isPotentialKey(rawBlocks[i]) && isPotentialValue(rawBlocks[i + 1])) {
-          pairs.push({ key: rawBlocks[i], val: rawBlocks[i + 1] });
+        while (i < lines.length - 1 && isPotentialKey(lines[i].trim()) && isPotentialValue(lines[i + 1].trim())) {
+          pairs.push({ key: lines[i].trim(), val: lines[i + 1].trim() });
           i += 2;
         }
         if (pairs.length > 0) {
@@ -435,7 +487,7 @@
               <span class="kv-val">${SyntaxHighlighter.escapeHtml(p.val)}</span>
             </div>
           `).join('');
-          outputElements.push(`
+          output.push(`
             <div class="key-value-card">
               ${rowsHtml}
             </div>
@@ -444,51 +496,29 @@
         }
       }
 
-      // 3. "Example" header followed by code lines
-      if (/^Example(\s*[:\-]|\s+Explained)?$/i.test(block)) {
-        i++;
-        const codeLines = [];
-        while (i < rawBlocks.length && (isCodeBlock(rawBlocks[i]) || isShortCodeSnippet(rawBlocks[i]))) {
-          codeLines.push(rawBlocks[i]);
-          i++;
-        }
-        if (codeLines.length > 0) {
-          const combinedCode = codeLines.join('\n\n');
-          outputElements.push(renderCodeCard(combinedCode, subjectSlug, 'EXAMPLE'));
-        }
-        continue;
-      }
-
-      // 4. Standalone code block
-      if (isCodeBlock(block)) {
-        const codeBlocks = [block];
-        i++;
-        while (i < rawBlocks.length && isCodeBlock(rawBlocks[i]) && !/^Example/i.test(rawBlocks[i])) {
-          codeBlocks.push(rawBlocks[i]);
-          i++;
-        }
-        const combinedCode = codeBlocks.join('\n\n');
-        outputElements.push(renderCodeCard(combinedCode, subjectSlug));
-        continue;
-      }
-
-      // 5. Lists (bulleted or numbered)
-      const lines = block.split('\n').map(l => l.trim()).filter(Boolean);
-      if (lines.length >= 2 && lines.every(l => /^[-•*]|\d+\.\s+/.test(l))) {
-        const isNum = /^\d+\.\s+/.test(lines[0]);
-        const listItems = lines.map(l => `<li>${SyntaxHighlighter.escapeHtml(l.replace(/^[-•*]|\d+\.\s+/, '').trim())}</li>`).join('');
-        outputElements.push(isNum ? `<ol>${listItems}</ol>` : `<ul>${listItems}</ul>`);
-        i++;
-        continue;
-      }
-
-      // 6. Regular prose paragraph (Safe HTML escaping preserves tags like <Fragment> without DOM stripping)
-      const escapedParagraph = SyntaxHighlighter.escapeHtml(block).replace(/\n/g, '<br>');
-      outputElements.push(`<p>${escapedParagraph}</p>`);
+      // 5. Normal coherent prose paragraph
+      let paraLines = [line];
       i++;
+      while (i < lines.length) {
+        const nextLine = lines[i].trim();
+        if (!nextLine) {
+          i++;
+          break;
+        }
+        if (/^(Note|Important|Tip|Warning|Example):/i.test(nextLine) || isCodeStartLine(nextLine) || isPotentialKey(nextLine)) {
+          break;
+        }
+        paraLines.push(nextLine);
+        i++;
+      }
+
+      const fullPara = paraLines.join(' ').replace(/\s+/g, ' ').trim();
+      if (fullPara) {
+        output.push(`<p>${formatInlineProse(fullPara)}</p>`);
+      }
     }
 
-    return outputElements.join('');
+    return output.join('');
   }
 
   // ---------------------------------------------------------------------------
@@ -583,7 +613,6 @@
       state.subjectsCache.set(subjectSlug, data);
       return data;
     } catch (scriptErr) {
-      // Fallback to fetch for web server environment with .json files
       try {
         const res = await fetch(`data/subjects/${subjectSlug}.json`);
         if (!res.ok) throw new Error(`Subject data for "${subjectSlug}" not found (${res.status})`);
@@ -654,7 +683,6 @@
   function renderHomeView() {
     document.title = 'DevDocs — Digital Card Catalog for Code Knowledge';
 
-    // Build 6 Drawer Cards
     let drawerCardsHtml = '';
     let drawerIndex = 1;
 
@@ -673,7 +701,6 @@
       `;
     });
 
-    // Build 38 Subject Pill Buttons
     const allSubjects = [];
     state.categoriesMap.forEach((subjectsMap) => {
       subjectsMap.forEach((topics, subjectName) => {
@@ -786,22 +813,15 @@
 
     document.title = `${subjectName} Index — DevDocs`;
 
-    // Sanity check for unique titles
-    let prevTitle = null;
     const topicCardsHtml = topics.map((t, idx) => {
       const displayTitle = t.title || t.topic_id;
-      if (prevTitle && prevTitle === displayTitle) {
-        console.warn(`[DevDocs Warning] Duplicate consecutive topic title detected: "${displayTitle}" in subject ${subjectName}`);
-      }
-      prevTitle = displayTitle;
-
       return `
         <div class="drawer-card" style="min-height: auto; padding: 14px 18px;" onclick="window.location.hash = '#/topic/${subjectSlug}/${t.topic_id}'">
           <div class="drawer-card-top">
             <span class="drawer-card-index">#${idx + 1}</span>
             <span style="font-family: var(--font-mono); font-size: 11px; color: var(--accent); font-weight: 600;">${SyntaxHighlighter.escapeHtml(t.topic_id)}</span>
           </div>
-          <h3 style="font-family: var(--font-display); font-size: 18px; font-weight: 600; color: var(--ink); margin: 6px 0; overflow-wrap: break-word;">${SyntaxHighlighter.escapeHtml(displayTitle)}</h3>
+          <h3 style="font-family: var(--font-display); font-size: 18px; font-weight: 600; color: var(--ink); margin: 6px 0;">${SyntaxHighlighter.escapeHtml(displayTitle)}</h3>
           <span class="drawer-card-count" style="font-size: 11px;">${t.sections_count} SECTIONS</span>
         </div>
       `;
@@ -927,7 +947,7 @@
             notesHtml += `
               <div class="librarian-note">
                 <strong>Librarian Note</strong>
-                <div>${SyntaxHighlighter.escapeHtml(cleanNote)}</div>
+                <div>${formatInlineProse(cleanNote)}</div>
               </div>
             `;
           }
@@ -986,7 +1006,7 @@
           ${topic.summary ? `
             <div class="librarian-note" style="margin-bottom: 32px;">
               <strong>Overview</strong>
-              <div>${SyntaxHighlighter.escapeHtml(topic.summary)}</div>
+              <div>${formatInlineProse(topic.summary)}</div>
             </div>
           ` : ''}
 
@@ -1019,7 +1039,7 @@
   }
 
   // ---------------------------------------------------------------------------
-  // 9. Sidebar Tree Building & Accordion
+  // 9. Clean Sidebar Tree Building (Crisp & Legible)
   // ---------------------------------------------------------------------------
   function renderSidebarNav() {
     let treeHtml = '';
@@ -1044,18 +1064,11 @@
 
         if (filteredTopics.length > 0) {
           catHasMatches = true;
-          let prevTitle = null;
           const topicLinksHtml = filteredTopics.map(t => {
             const displayTitle = t.title || t.topic_id;
-            if (prevTitle && prevTitle === displayTitle) {
-              console.warn(`[DevDocs Warning] Duplicate consecutive sidebar link: "${displayTitle}" in ${subjectName}`);
-            }
-            prevTitle = displayTitle;
-
             return `
-              <a href="#/topic/${subjectSlug}/${t.topic_id}" class="catalog-topic-row" data-topic-id="${t.topic_id}" data-subject="${subjectSlug}">
-                <span>${SyntaxHighlighter.escapeHtml(displayTitle)}</span>
-                <span class="topic-row-chip">${SyntaxHighlighter.escapeHtml(t.topic_id)}</span>
+              <a href="#/topic/${subjectSlug}/${t.topic_id}" class="catalog-topic-row" data-topic-id="${t.topic_id}" data-subject="${subjectSlug}" title="${SyntaxHighlighter.escapeHtml(displayTitle)} (${SyntaxHighlighter.escapeHtml(t.topic_id)})">
+                ${SyntaxHighlighter.escapeHtml(displayTitle)}
               </a>
             `;
           }).join('');
@@ -1300,7 +1313,6 @@
 
     dom.mainContent.addEventListener('scroll', updateReadingProgress, { passive: true });
 
-    // Quick focus shortcut
     document.addEventListener('keydown', (e) => {
       if (e.key === '/' && document.activeElement !== dom.searchInput) {
         e.preventDefault();
@@ -1311,7 +1323,6 @@
       }
     });
 
-    // Sidebar Filter
     dom.sidebarFilterInput.addEventListener('input', (e) => {
       state.sidebarFilterQuery = e.target.value;
       if (state.sidebarFilterQuery) {

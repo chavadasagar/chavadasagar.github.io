@@ -1,6 +1,6 @@
 /* ==========================================================================
    DevDocs — Digital Card Catalog for Code Knowledge
-   Design System & Theme Tokens
+   Design System & Theme Tokens (Clean, Polished & Beautiful Typography)
    ========================================================================== */
 
 /* --------------------------------------------------------------------------
@@ -16,8 +16,8 @@
   --header-height: 56px;
   --sidebar-width: 280px;
   --sidebar-rail-width: 56px;
-  --reading-max-width: 680px;
-  --code-max-width: 760px;
+  --reading-max-width: 700px;
+  --code-max-width: 740px;
   --home-max-width: 1040px;
 
   /* Transitions */
@@ -25,13 +25,13 @@
   --ease-hover: 150ms ease-out;
 }
 
-/* Light Theme (Default: Cool Bone-White Paper & Library Card White) */
+/* Light Theme (Default: Cool Bone-White Paper & Clean Library Card White) */
 [data-theme="light"] {
-  --bg: #F1F0EC;
+  --bg: #F5F4F0;
   --bg-card: #FFFFFF;
-  --bg-subtle: #E8E6E0;
+  --bg-subtle: #EAE8E2;
   --ink: #1C2230;
-  --ink-soft: #5B6472;
+  --ink-soft: #555F6E;
   --accent: #C6542F;          /* Muted brick/stamp-red */
   --accent-tint: rgba(198, 84, 47, 0.08);
   --accent-2: #2E6E62;        /* Deep teal */
@@ -44,7 +44,7 @@
   --shadow-dropdown: 0 8px 24px rgba(28, 34, 48, 0.12);
 }
 
-/* Dark Theme (Quiet Desaturated Navy/Charcoal Inversion) */
+/* Dark Theme (Quiet Charcoal Navy Inversion) */
 [data-theme="dark"] {
   --bg: #14161A;
   --bg-card: #1C1F26;
@@ -64,7 +64,7 @@
 }
 
 /* --------------------------------------------------------------------------
-   2. Reset & Base Typography (No truncation, natural wrap at any width)
+   2. Reset & Clean Typography
    -------------------------------------------------------------------------- */
 *, *::before, *::after {
   box-sizing: border-box;
@@ -81,8 +81,6 @@ html, body {
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow-wrap: break-word;
-  word-break: break-word;
 }
 
 a {
@@ -288,9 +286,6 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   font-size: 14px;
   font-weight: 500;
   color: var(--ink);
-  overflow-wrap: break-word;
-  word-break: break-word;
-  white-space: normal;
   flex: 1;
 }
 
@@ -384,7 +379,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 }
 
 /* --------------------------------------------------------------------------
-   4. Main Workspace & Sidebar Layout
+   4. Clean Sidebar Navigation (Crisp & Legible)
    -------------------------------------------------------------------------- */
 .workspace-body {
   display: flex;
@@ -431,12 +426,13 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 
 .sidebar-filter-input {
   width: 100%;
-  padding: 5px 22px 5px 6px;
+  padding: 5px 22px 5px 8px;
   font-family: var(--font-body);
   font-size: 13px;
   color: var(--ink);
   border: 1px solid var(--line);
   background-color: var(--bg);
+  border-radius: 3px;
 }
 
 .sidebar-filter-input:focus {
@@ -445,7 +441,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 
 .filter-clear-btn {
   position: absolute;
-  right: 4px;
+  right: 6px;
   font-size: 11px;
   color: var(--ink-soft);
   padding: 2px 4px;
@@ -496,7 +492,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 
 /* Category > Subject > Topic Hierarchy */
 .catalog-nav-category {
-  margin-bottom: 12px;
+  margin-bottom: 14px;
 }
 
 .catalog-nav-cat-label {
@@ -518,15 +514,13 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 6px 14px;
+  padding: 7px 14px;
   font-family: var(--font-display);
   font-size: 15px;
   font-weight: 600;
   color: var(--ink);
   text-align: left;
   transition: background-color var(--ease-hover), color var(--ease-hover);
-  overflow-wrap: break-word;
-  word-break: break-word;
 }
 
 .catalog-nav-subject-btn:hover {
@@ -550,11 +544,11 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 
 .catalog-nav-topics {
   display: none;
-  padding-left: 8px;
+  padding-left: 4px;
   border-left: 1.5px solid var(--line);
   margin-left: 14px;
   margin-top: 2px;
-  margin-bottom: 4px;
+  margin-bottom: 6px;
 }
 
 .catalog-nav-subject.open .catalog-nav-topics {
@@ -562,51 +556,33 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   flex-direction: column;
 }
 
+/* Topic Link Row (Clean, Single Line with Ellipsis if needed) */
 .catalog-topic-row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 8px;
+  display: block;
   padding: 6px 10px;
   font-size: 13.5px;
+  font-weight: 450;
   color: var(--ink-soft);
   line-height: 1.4;
   transition: color var(--ease-hover), background-color var(--ease-hover);
-  border-left: 3px solid transparent;
-  overflow-wrap: break-word;
-  word-break: break-word;
-  white-space: normal;
+  border-left: 2.5px solid transparent;
+  text-decoration: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-radius: 0 3px 3px 0;
 }
 
 .catalog-topic-row:hover {
   color: var(--ink);
-  background-color: var(--bg);
+  background-color: var(--bg-subtle);
 }
 
 .catalog-topic-row.active {
   color: var(--accent);
   font-weight: 600;
   background-color: var(--accent-tint);
-  border-left: 3px solid var(--accent);
-}
-
-.catalog-topic-row span:first-child {
-  flex: 1;
-}
-
-.topic-row-chip {
-  font-family: var(--font-mono);
-  font-size: 10px;
-  color: var(--ink-soft);
-  letter-spacing: 0.02em;
-  opacity: 0.7;
-  flex-shrink: 0;
-}
-
-.catalog-topic-row.active .topic-row-chip {
-  color: var(--accent);
-  opacity: 1;
-  font-weight: 600;
+  border-left: 2.5px solid var(--accent);
 }
 
 /* Sidebar Bottom Callout */
@@ -636,7 +612,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   min-width: 0;
   overflow-y: auto;
   height: calc(100vh - var(--header-height));
-  padding: 40px 24px 80px;
+  padding: 40px 32px 80px;
   display: flex;
   justify-content: center;
 }
@@ -690,8 +666,6 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   font-weight: 600;
   letter-spacing: -0.01em;
   color: var(--ink);
-  overflow-wrap: break-word;
-  word-break: break-word;
 }
 
 .home-section-meta {
@@ -734,8 +708,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   box-shadow: var(--shadow-card);
   transition: transform var(--ease-hover), box-shadow var(--ease-hover), border-color var(--ease-hover);
   cursor: pointer;
-  overflow-wrap: break-word;
-  word-break: break-word;
+  border-radius: 3px;
 }
 
 .drawer-card:hover {
@@ -766,8 +739,6 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   line-height: 1.25;
   color: var(--ink);
   letter-spacing: -0.01em;
-  overflow-wrap: break-word;
-  word-break: break-word;
 }
 
 .drawer-card-count {
@@ -801,8 +772,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   box-shadow: var(--shadow-card);
   transition: all var(--ease-hover);
   cursor: pointer;
-  overflow-wrap: break-word;
-  word-break: break-word;
+  border-radius: 2px;
 }
 
 .subject-pill-btn:hover {
@@ -863,8 +833,8 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   align-items: flex-start;
   justify-content: space-between;
   gap: 16px;
-  margin-bottom: 32px;
-  padding-bottom: 24px;
+  margin-bottom: 28px;
+  padding-bottom: 20px;
   border-bottom: 1px solid var(--line);
   position: relative;
   flex-wrap: wrap;
@@ -879,8 +849,6 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   color: var(--ink);
   flex: 1;
   min-width: 200px;
-  overflow-wrap: break-word;
-  word-break: break-word;
 }
 
 /* Signature Rotated -3deg Call Number Stamp Chip */
@@ -903,15 +871,13 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   transition: transform var(--ease-hover);
   flex-shrink: 0;
   margin-top: 4px;
-  max-width: 100%;
-  overflow-wrap: break-word;
 }
 
 .call-number-stamp:hover {
   transform: rotate(0deg) scale(1.04);
 }
 
-/* Vertical Reading Sections (680px max width, 40px spacing, --line dividers) */
+/* Vertical Reading Sections */
 .topic-sections-flow {
   display: flex;
   flex-direction: column;
@@ -919,16 +885,16 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 }
 
 .topic-section-item {
-  padding-bottom: 40px;
-  margin-bottom: 40px;
+  padding-bottom: 36px;
+  margin-bottom: 36px;
   border-bottom: 1px solid var(--line);
   width: 100%;
 }
 
 .topic-section-item:last-child {
   border-bottom: none;
-  padding-bottom: 20px;
-  margin-bottom: 20px;
+  padding-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .section-h3 {
@@ -939,25 +905,27 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   color: var(--ink);
   margin-bottom: 16px;
   letter-spacing: -0.01em;
-  overflow-wrap: break-word;
-  word-break: break-word;
+}
+
+.section-subheading {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--ink);
+  margin: 24px 0 12px;
 }
 
 .section-body {
   font-family: var(--font-body);
-  font-size: 17px;
-  line-height: 1.65;
+  font-size: 16.5px;
+  line-height: 1.7;
   color: var(--ink);
   max-width: var(--reading-max-width);
   width: 100%;
-  overflow-wrap: break-word;
-  word-break: break-word;
 }
 
 .section-body p {
   margin-bottom: 16px;
-  overflow-wrap: break-word;
-  word-break: break-word;
 }
 
 .section-body p:last-child {
@@ -965,38 +933,39 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 }
 
 .section-body ul, .section-body ol {
-  margin-bottom: 16px;
+  margin-bottom: 18px;
   padding-left: 24px;
 }
 
 .section-body li {
-  margin-bottom: 6px;
-  overflow-wrap: break-word;
-  word-break: break-word;
+  margin-bottom: 8px;
+  line-height: 1.65;
 }
 
-.section-body code {
+/* Inline Code Badges */
+.inline-code {
   font-family: var(--font-mono);
-  font-size: 14px;
+  font-size: 13.5px;
   background-color: var(--bg-subtle);
-  color: var(--ink);
+  color: var(--accent);
   padding: 2px 6px;
-  border-radius: 2px;
+  border-radius: 3px;
+  border: 1px solid var(--line);
+  font-weight: 500;
 }
 
 /* Callout / Librarian Note */
 .librarian-note {
   margin: 24px 0;
-  padding: 14px 18px;
+  padding: 16px 20px;
   background-color: var(--bg-card);
   border-left: 3px solid var(--accent-2);
   border-top: 1px solid var(--line);
   border-right: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
   font-size: 15px;
-  line-height: 1.6;
-  overflow-wrap: break-word;
-  word-break: break-word;
+  line-height: 1.65;
+  border-radius: 0 4px 4px 0;
 }
 
 .librarian-note strong {
@@ -1004,13 +973,13 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   font-size: 11px;
   text-transform: uppercase;
   color: var(--accent-2);
-  letter-spacing: 0.04em;
+  letter-spacing: 0.05em;
   display: block;
-  margin-bottom: 4px;
+  margin-bottom: 6px;
 }
 
 /* --------------------------------------------------------------------------
-   8. Key-Value Catalog Cards (For HSL, HSLA, RGB, parameters, properties)
+   8. Key-Value Catalog Cards (For HSL, HSLA, RGB, parameters)
    -------------------------------------------------------------------------- */
 .key-value-card {
   display: grid;
@@ -1020,7 +989,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   border: 1px solid var(--line);
   padding: 16px 18px;
   margin: 20px 0;
-  border-radius: 3px;
+  border-radius: 4px;
   box-shadow: var(--shadow-card);
   width: 100%;
 }
@@ -1042,15 +1011,13 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 
 .kv-val {
   font-family: var(--font-mono);
-  font-size: 15px;
+  font-size: 14.5px;
   font-weight: 600;
   color: var(--ink);
-  overflow-wrap: break-word;
-  word-break: break-word;
 }
 
 /* --------------------------------------------------------------------------
-   9. Code Block (Breaks out to 760px, Dark Ink-Navy, JetBrains Mono)
+   9. Code Block (Dark Ink-Navy, JetBrains Mono, Clean Tokens)
    -------------------------------------------------------------------------- */
 .code-card-breakout {
   max-width: var(--code-max-width);
@@ -1063,6 +1030,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   border: 1px solid #2B313D;
   border-radius: 4px;
   overflow: hidden;
+  box-shadow: var(--shadow-card);
 }
 
 .code-card-header {
@@ -1110,23 +1078,33 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 
 .code-content-pre {
   margin: 0;
-  padding: 16px 20px;
+  padding: 18px 20px;
   overflow-x: auto;
   font-family: var(--font-mono);
-  font-size: 14px;
+  font-size: 13.5px;
   line-height: 1.6;
   color: var(--code-text);
+  background-color: var(--code-bg);
 }
 
-/* Code Syntax Tokens */
-.token-keyword { color: #D46845; font-weight: 600; }
-.token-string { color: #8DC49B; }
-.token-function { color: #73B1D6; }
-.token-comment { color: #647082; font-style: italic; }
-.token-number { color: #E5A87B; }
-.token-tag { color: #E06C75; font-weight: 600; }
-.token-attr { color: #56B6C2; }
-.token-builtin { color: #E5C07B; }
+.code-content-pre code {
+  font-family: inherit;
+  font-size: inherit;
+  background: transparent !important;
+  color: inherit;
+  padding: 0;
+  border: none;
+}
+
+/* Syntax Token Colors */
+.token-keyword { color: #E5855E; font-weight: 600; background: transparent !important; }
+.token-string { color: #8DC49B; background: transparent !important; }
+.token-function { color: #73B1D6; background: transparent !important; }
+.token-comment { color: #647082; font-style: italic; background: transparent !important; }
+.token-number { color: #E5A87B; background: transparent !important; }
+.token-tag { color: #E06C75; font-weight: 600; background: transparent !important; }
+.token-attr { color: #56B6C2; background: transparent !important; }
+.token-builtin { color: #E5C07B; background: transparent !important; }
 
 /* --------------------------------------------------------------------------
    10. Neighbor Prev / Next Navigation Cards
@@ -1158,8 +1136,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   box-shadow: var(--shadow-card);
   transition: transform var(--ease-hover), box-shadow var(--ease-hover), border-color var(--ease-hover);
   cursor: pointer;
-  overflow-wrap: break-word;
-  word-break: break-word;
+  border-radius: 3px;
 }
 
 .neighbor-card:hover {
@@ -1208,8 +1185,6 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   font-weight: 600;
   color: var(--ink);
   line-height: 1.3;
-  overflow-wrap: break-word;
-  word-break: break-word;
 }
 
 /* --------------------------------------------------------------------------
@@ -1224,6 +1199,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   text-align: center;
   box-shadow: var(--shadow-card);
   width: 100%;
+  border-radius: 4px;
 }
 
 .catalog-message-stamp {
@@ -1244,8 +1220,6 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   font-weight: 600;
   color: var(--ink);
   margin-bottom: 8px;
-  overflow-wrap: break-word;
-  word-break: break-word;
 }
 
 .catalog-message-desc {
@@ -1272,7 +1246,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 }
 
 /* --------------------------------------------------------------------------
-   12. Mobile Drawer Backdrop & Responsive Breakpoints (320px, 768px, 1024px, 1440px)
+   12. Mobile Drawer Backdrop & Responsive Breakpoints
    -------------------------------------------------------------------------- */
 .drawer-backdrop {
   position: fixed;
