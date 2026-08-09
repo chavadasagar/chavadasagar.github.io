@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Habit Flow - Mobile Habit Tracker with Streak Counter</title>
+    <meta name="description" content="A sleek, mobile-first habit tracker with GitHub-style contribution graphs, streak calculation, milestone celebrations, and reminders.">
+    <meta name="theme-color" content="#0b0f19">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+
+    <!-- SVG Definitions for Gradients & Icons -->
+    <svg style="display: none;">
+        <defs>
+            <linearGradient id="summaryGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#6366f1" />
+                <stop offset="50%" stop-color="#a855f7" />
+                <stop offset="100%" stop-color="#ec4899" />
+            </linearGradient>
+        </defs>
+    </svg>
+
+    <div class="app-container">
+        <!-- App Header -->
+        <header class="app-header">
+            <div class="brand-section">
+                <div class="brand-logo-badge">🔥</div>
+                <div class="brand-title-group">
+                    <h1>HabitFlow</h1>
+                    <p id="header-today-text">Build habits, ignite streaks</p>
+                </div>
+            </div>
+            <div class="header-actions">
+                <button id="btn-toggle-sound" class="icon-btn" title="Toggle Sound FX" aria-label="Toggle Sound">
+                    <svg id="sound-icon-on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                        <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                        <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                    </svg>
+                </button>
+                <button id="btn-toggle-theme" class="icon-btn" title="Toggle Theme" aria-label="Toggle Theme">
+                    <svg id="theme-icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+                <button id="btn-open-settings" class="icon-btn" title="Settings & Backup" aria-label="Settings">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="3"></circle>
+                        <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                    </svg>
+                </button>
+            </div>
+        </header>
+
+        <!-- Today's Summary Widget -->
+        <section class="summary-card" id="summary-section">
+            <div class="summary-content">
+                <div class="summary-text">
+                    <div class="summary-date" id="summary-date-display">TODAY, AUG 8</div>
+                    <h2 class="summary-title" id="summary-headline">3 of 4 Completed</h2>
+                    <p class="summary-quote" id="summary-quote-text">"We are what we repeatedly do. Excellence, then, is not an act, but a habit."</p>
+                </div>
+                <div class="summary-ring-container">
+                    <svg class="summary-ring-svg" viewBox="0 0 72 72">
+                        <circle class="summary-ring-bg" cx="36" cy="36" r="32" />
+                        <circle class="summary-ring-fill" id="summary-ring-circle" cx="36" cy="36" r="32" />
+                    </svg>
+                    <div class="summary-ring-text">
+                        <span class="summary-ring-pct" id="summary-ring-percentage">75%</span>
+                        <span class="summary-ring-label">Done</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Filter Toolbar & View Mode Switcher -->
+        <section class="toolbar-section">
+            <div class="toolbar-top">
+                <div class="tabs-group" role="tablist">
+                    <button class="tab-btn active" id="tab-active-habits" role="tab" data-filter="active">Active (<span id="count-active">0</span>)</button>
+                    <button class="tab-btn" id="tab-archived-habits" role="tab" data-filter="archived">Archived (<span id="count-archived">0</span>)</button>
+                </div>
+
+                <div class="grid-view-switcher" title="Toggle contribution grid view duration">
+                    <button class="grid-view-btn active" data-days="30" id="btn-view-30">30 Days</button>
+                    <button class="grid-view-btn" data-days="90" id="btn-view-90">90 Days</button>
+                </div>
+            </div>
+
+            <!-- Category Filter Chips -->
+            <div class="category-filter-scroll" id="category-chips-bar">
+                <button class="chip-btn active" data-category="all">⚡ All Habits</button>
+                <button class="chip-btn" data-category="Health">💧 Health</button>
+                <button class="chip-btn" data-category="Fitness">🏃 Fitness</button>
+                <button class="chip-btn" data-category="Learning">📚 Learning</button>
+                <button class="chip-btn" data-category="Mindfulness">🧘 Mindfulness</button>
+                <button class="chip-btn" data-category="General">✨ Other</button>
+            </div>
+        </section>
+
+        <!-- Habits List Grid Container -->
+        <main class="habits-grid" id="habits-container" role="feed">
+            <!-- Habit cards dynamically injected here -->
+        </main>
+    </div>
+
+    <!-- Floating Action Button for Adding New Habit -->
+    <button class="fab-btn" id="fab-add-habit" title="Add New Habit" aria-label="Add Habit">
+        <span>+</span>
+    </button>
+
+    <!-- ==========================================================================
+       Modals
+       ========================================================================== -->
+
+    <!-- Add / Edit Habit Modal -->
+    <div class="modal-backdrop" id="modal-habit-form" role="dialog" aria-modal="true" aria-labelledby="modal-form-title">
+        <div class="modal-dialog">
+            <div class="modal-header">
+                <h3 class="modal-title" id="modal-form-title">Create New Habit</h3>
+                <button class="modal-close-btn" id="btn-close-form" aria-label="Close modal">&times;</button>
+            </div>
+            <form id="habit-edit-form">
+                <input type="hidden" id="form-habit-id" value="">
+
+                <!-- Habit Name & Emoji -->
+                <div class="form-group">
+                    <label class="form-label" for="form-habit-name">Habit Name</label>
+                    <div style="display: flex; gap: 8px;">
+                        <button type="button" id="form-emoji-trigger" class="icon-btn" style="font-size: 1.4rem; width: 48px; height: 48px; flex-shrink: 0;" title="Pick Emoji">💧</button>
+                        <input type="text" id="form-habit-name" class="form-input" placeholder="e.g. Drink 2L Water" required maxlength="40">
+                    </div>
+                </div>
+
+                <!-- Emoji Picker Container (Collapsible) -->
+                <div class="form-group" id="emoji-picker-wrapper" style="display: none;">
+                    <label class="form-label">Select Icon / Emoji</label>
+                    <div class="emoji-picker-container" id="emoji-picker-list">
+                        <!-- Populated dynamically with popular habit emojis -->
+                    </div>
+                </div>
+
+                <!-- Category -->
+                <div class="form-group">
+                    <label class="form-label" for="form-habit-category">Category</label>
+                    <select id="form-habit-category" class="form-select">
+                        <option value="Health">💧 Health & Hydration</option>
+                        <option value="Fitness">⚡ Fitness & Exercise</option>
+                        <option value="Learning">📚 Learning & Reading</option>
+                        <option value="Mindfulness">🧘 Mindfulness & Meditation</option>
+                        <option value="Productivity">🚀 Productivity & Work</option>
+                        <option value="General">✨ Lifestyle / General</option>
+                    </select>
+                </div>
+
+                <!-- Color Palette -->
+                <div class="form-group">
+                    <label class="form-label">Habit Theme Color</label>
+                    <div class="color-picker-grid" id="color-picker-list">
+                        <!-- Populated by JS -->
+                    </div>
+                </div>
+
+                <!-- Frequency Mode -->
+                <div class="form-group">
+                    <label class="form-label">Frequency</label>
+                    <div style="display: flex; gap: 12px; margin-bottom: 8px;">
+                        <label style="display: flex; align-items: center; gap: 6px; font-size: 0.9rem; cursor: pointer;">
+                            <input type="radio" name="frequencyType" value="daily" checked id="freq-daily"> Every Day
+                        </label>
+                        <label style="display: flex; align-items: center; gap: 6px; font-size: 0.9rem; cursor: pointer;">
+                            <input type="radio" name="frequencyType" value="weekdays" id="freq-weekdays"> Specific Days
+                        </label>
+                    </div>
+
+                    <!-- Weekdays Selector -->
+                    <div class="weekday-selector" id="weekday-selector-group" style="display: none;">
+                        <button type="button" class="weekday-btn" data-day="1">M</button>
+                        <button type="button" class="weekday-btn" data-day="2">T</button>
+                        <button type="button" class="weekday-btn" data-day="3">W</button>
+                        <button type="button" class="weekday-btn" data-day="4">T</button>
+                        <button type="button" class="weekday-btn" data-day="5">F</button>
+                        <button type="button" class="weekday-btn" data-day="6">S</button>
+                        <button type="button" class="weekday-btn" data-day="0">S</button>
+                    </div>
+                </div>
+
+                <!-- Reminder Time -->
+                <div class="form-group">
+                    <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 6px;">
+                        <label class="form-label" for="form-reminder-time" style="margin-bottom: 0;">Daily Reminder Time</label>
+                        <label style="display: flex; align-items: center; gap: 6px; font-size: 0.8rem; cursor: pointer; color: var(--text-secondary);">
+                            <input type="checkbox" id="form-reminder-enable"> Enable Notification
+                        </label>
+                    </div>
+                    <input type="time" id="form-reminder-time" class="form-input" value="08:00">
+                </div>
+
+                <div style="display: flex; gap: 10px; margin-top: 24px;">
+                    <button type="button" class="btn btn-secondary" id="btn-cancel-form" style="flex: 1;">Cancel</button>
+                    <button type="submit" class="btn btn-primary" id="btn-save-habit" style="flex: 2;">Save Habit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Milestone Celebration Modal -->
+    <div class="modal-backdrop" id="modal-milestone" role="dialog" aria-modal="true">
+        <div class="modal-dialog milestone-dialog">
+            <div class="milestone-trophy-glow" id="milestone-icon-display">🔥</div>
+            <div class="milestone-streak-count" id="milestone-count-display">7</div>
+            <h3 class="milestone-title" id="milestone-title-display">Week Warrior!</h3>
+            <p class="milestone-message" id="milestone-message-display">7 consecutive days! You built unstoppable momentum.</p>
+            <button class="btn btn-primary" id="btn-close-milestone" style="width: 100%; padding: 12px;">Keep The Streak Burning! 🔥</button>
+        </div>
+    </div>
+
+    <!-- Habit Stats / Details Modal -->
+    <div class="modal-backdrop" id="modal-habit-stats" role="dialog" aria-modal="true">
+        <div class="modal-dialog">
+            <div class="modal-header">
+                <div style="display: flex; align-items: center; gap: 10px;">
+                    <span id="stats-modal-emoji" style="font-size: 1.8rem;">💧</span>
+                    <div>
+                        <h3 class="modal-title" id="stats-modal-name">Habit Details</h3>
+                        <p id="stats-modal-category" style="font-size: 0.78rem; color: var(--text-muted);">Category</p>
+                    </div>
+                </div>
+                <button class="modal-close-btn" id="btn-close-stats">&times;</button>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 20px;">
+                <div style="background: var(--bg-surface); padding: 14px; border-radius: var(--radius-md); text-align: center;">
+                    <div style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;">Current Streak</div>
+                    <div id="stats-modal-current-streak" style="font-family: var(--font-heading); font-size: 1.6rem; font-weight: 800; color: #ff7a00;">🔥 0</div>
+                </div>
+                <div style="background: var(--bg-surface); padding: 14px; border-radius: var(--radius-md); text-align: center;">
+                    <div style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;">Longest Streak</div>
+                    <div id="stats-modal-longest-streak" style="font-family: var(--font-heading); font-size: 1.6rem; font-weight: 800; color: #38bdf8;">🏆 0</div>
+                </div>
+                <div style="background: var(--bg-surface); padding: 14px; border-radius: var(--radius-md); text-align: center;">
+                    <div style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;">Weekly Rate</div>
+                    <div id="stats-modal-weekly-rate" style="font-family: var(--font-heading); font-size: 1.6rem; font-weight: 800; color: #10b981;">0%</div>
+                </div>
+                <div style="background: var(--bg-surface); padding: 14px; border-radius: var(--radius-md); text-align: center;">
+                    <div style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;">Monthly Rate</div>
+                    <div id="stats-modal-monthly-rate" style="font-family: var(--font-heading); font-size: 1.6rem; font-weight: 800; color: #a855f7;">0%</div>
+                </div>
+            </div>
+
+            <div style="background: var(--bg-surface); padding: 14px; border-radius: var(--radius-md); margin-bottom: 20px; font-size: 0.88rem; color: var(--text-secondary);">
+                <div style="display: flex; justify-content: space-between; margin-bottom: 6px;">
+                    <span>Schedule:</span>
+                    <strong id="stats-modal-frequency" style="color: var(--text-highlight);">Daily</strong>
+                </div>
+                <div style="display: flex; justify-content: space-between; margin-bottom: 6px;">
+                    <span>Total Check-ins:</span>
+                    <strong id="stats-modal-total-checks" style="color: var(--text-highlight);">0 times</strong>
+                </div>
+                <div style="display: flex; justify-content: space-between;">
+                    <span>Reminder:</span>
+                    <strong id="stats-modal-reminder" style="color: var(--text-highlight);">None</strong>
+                </div>
+            </div>
+
+            <div style="display: flex; gap: 8px;">
+                <button class="btn btn-secondary" id="btn-stats-edit" style="flex: 1;">✏️ Edit</button>
+                <button class="btn btn-secondary" id="btn-stats-archive" style="flex: 1;">📦 Archive</button>
+                <button class="btn btn-danger" id="btn-stats-delete" style="flex: 1;">🗑️ Delete</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Delete Confirmation Modal -->
+    <div class="modal-backdrop" id="modal-confirm-delete" role="dialog" aria-modal="true">
+        <div class="modal-dialog" style="max-width: 380px; text-align: center;">
+            <div style="font-size: 2.5rem; margin-bottom: 12px;">🗑️</div>
+            <h3 class="modal-title" style="margin-bottom: 8px;">Delete Habit?</h3>
+            <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 20px;">Are you sure you want to delete <strong id="delete-habit-name" style="color: var(--text-highlight);"></strong>? All streak and check-in history will be permanently deleted.</p>
+            <div style="display: flex; gap: 10px;">
+                <button class="btn btn-secondary" id="btn-cancel-delete" style="flex: 1;">Cancel</button>
+                <button class="btn btn-danger" id="btn-confirm-delete" style="flex: 1;">Delete</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Settings & Backup Modal -->
+    <div class="modal-backdrop" id="modal-settings" role="dialog" aria-modal="true">
+        <div class="modal-dialog">
+            <div class="modal-header">
+                <h3 class="modal-title">Settings & Backup</h3>
+                <button class="modal-close-btn" id="btn-close-settings">&times;</button>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">App Notifications</label>
+                <button class="btn btn-secondary" id="btn-request-notification-perm" style="width: 100%; justify-content: space-between;">
+                    <span>🔔 Enable Push Reminders</span>
+                    <span id="notification-perm-badge" style="font-size: 0.75rem; padding: 2px 8px; border-radius: 4px; background: var(--bg-surface-elevated);">Check</span>
+                </button>
+            </div>
+
+            <div class="form-group" style="margin-top: 20px;">
+                <label class="form-label">Data Backup & Restore</label>
+                <p style="font-size: 0.8rem; color: var(--text-secondary); margin-bottom: 10px;">Export your complete habits and streaks as JSON, or restore from a previous backup file.</p>
+                <div style="display: flex; gap: 10px;">
+                    <button class="btn btn-primary" id="btn-export-backup" style="flex: 1;">📥 Export JSON</button>
+                    <button class="btn btn-secondary" id="btn-import-trigger" style="flex: 1;">📤 Import JSON</button>
+                    <input type="file" id="file-import-input" accept=".json" style="display: none;">
+                </div>
+            </div>
+
+            <div class="form-group" style="margin-top: 24px; padding-top: 16px; border-top: 1px solid var(--border-color);">
+                <label class="form-label" style="color: #f87171;">Danger Zone</label>
+                <button class="btn btn-danger" id="btn-reset-data" style="width: 100%;">⚠️ Reset All Data to Default Demo</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tooltip Element -->
+    <div class="grid-tooltip" id="app-grid-tooltip"></div>
+
+    <!-- Toast Alerts Container -->
+    <div class="toast-container" id="toast-container"></div>
+
+    <!-- JavaScript Modules -->
+    <script src="js/storage.js"></script>
+    <script src="js/habitModel.js"></script>
+    <script src="js/audio.js"></script>
+    <script src="js/confetti.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All 38 Programming Subjects - TutorialStudio</title>
+  <meta name="description" content="Browse complete catalog of 38 software engineering and programming subjects across Frontend, Backend, AI, Data Science, Databases, and Tools.">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+  <!-- Site Navigation Header -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="index.html" class="brand-logo">
+        <span class="brand-badge">⚡</span>
+        <span class="brand-text">Tutorial<span>Studio</span></span>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="subjects.html" class="nav-link active">All Subjects</a></li>
+          <li><a href="tutorial.html#subject=html&topic=html_default" class="nav-link">Tutorials</a></li>
+          <li><a href="playground.html" class="nav-link">Live Sandbox</a></li>
+          <li><a href="cheatsheets.html" class="nav-link">Cheatsheets</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="search-trigger-btn" title="Search all topics (Ctrl+K)">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <span>Quick Search...</span>
+          <kbd class="search-kbd">Ctrl K</kbd>
+        </button>
+
+        <button class="icon-btn theme-toggle-btn" title="Toggle Theme">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <div style="padding: 3.5rem 0 2rem; background: var(--gradient-glow); text-align: center; border-bottom: 1px solid var(--border-subtle);">
+    <div class="container" style="max-width: 800px;">
+      <span class="badge badge-primary" style="margin-bottom: 0.75rem;">Subject Catalog</span>
+      <h1 style="font-size: 2.75rem; font-weight: 800; letter-spacing: -0.03em; margin-bottom: 0.75rem;">
+        Complete Curriculum of <span class="gradient-text">38 Subjects</span>
+      </h1>
+      <p style="color: var(--text-secondary); font-size: 1.1rem;">
+        Explore over 3,500+ topics covering every major programming language, frontend library, backend framework, and data science tool.
+      </p>
+    </div>
+  </div>
+
+  <!-- Main Directory Container -->
+  <main class="container" style="padding-top: 2.5rem; padding-bottom: 5rem;">
+
+    <div class="section-header">
+      <div class="category-tabs" id="subjectFilterTabs">
+        <button class="category-tab active" data-filter="all">All Subjects (38)</button>
+        <button class="category-tab" data-filter="HTML & CSS">HTML & CSS</button>
+        <button class="category-tab" data-filter="JavaScript & Frontend">JavaScript & Frontend</button>
+        <button class="category-tab" data-filter="Backend & Programming">Backend & Programming</button>
+        <button class="category-tab" data-filter="Data Science & AI">Data Science & AI</button>
+        <button class="category-tab" data-filter="Databases">Databases</button>
+        <button class="category-tab" data-filter="Web Tools & Security">Tools & Security</button>
+      </div>
+
+      <div style="min-width: 250px;">
+        <input type="text" id="subjectSearchInput" placeholder="Filter subjects by name..." style="width: 100%; padding: 0.55rem 1rem; border-radius: var(--radius-full); background: var(--bg-input); border: 1px solid var(--border-subtle); color: var(--text-primary); font-family: inherit; font-size: 0.9rem; outline: none;">
+      </div>
+    </div>
+
+    <!-- Subjects Grid -->
+    <div class="subjects-grid" id="allSubjectsGrid">
+      <!-- Rendered via JS -->
+    </div>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <span>© 2026 TutorialStudio. Built with high performance & interactive learning tools.</span>
+        <span>Keyboard Shortcut: Press <kbd class="search-kbd">Ctrl+K</kbd> to search anytime</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/data/catalog.js"></script>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/storage.js"></script>
+  <script src="assets/js/search.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const catalog = window.TUTORIAL_CATALOG;
+      const grid = document.getElementById('allSubjectsGrid');
+      const tabs = document.querySelectorAll('#subjectFilterTabs .category-tab');
+      const searchInput = document.getElementById('subjectSearchInput');
+
+      let currentFilter = 'all';
+      let searchQuery = '';
+
+      function render() {
+        if (!catalog || !catalog.subjects || !grid) return;
+
+        const filtered = catalog.subjects.filter(s => {
+          const matchCat = currentFilter === 'all' || s.category.toLowerCase().replace(/[^a-z0-9]/g, '') === currentFilter.toLowerCase().replace(/[^a-z0-9]/g, '');
+          const matchQuery = !searchQuery || s.name.toLowerCase().includes(searchQuery) || s.category.toLowerCase().includes(searchQuery);
+          return matchCat && matchQuery;
+        });
+
+        if (filtered.length === 0) {
+          grid.innerHTML = `<div style="grid-column: 1/-1; text-align: center; padding: 4rem 1rem; color: var(--text-muted);">No subjects matching your criteria.</div>`;
+          return;
+        }
+
+        grid.innerHTML = filtered.map(sub => {
+          const progress = window.TutorialStorage ? window.TutorialStorage.getSubjectProgress(sub.slug, sub.topics_count) : 0;
+          const firstTopicId = sub.first_topic_id || (sub.topics && sub.topics[0] ? sub.topics[0].topic_id : '');
+          const link = `tutorial.html#subject=${sub.slug}&topic=${firstTopicId}`;
+
+          return `
+            <a href="${link}" class="subject-card">
+              <div>
+                <div class="sub-top">
+                  <div>
+                    <h4 class="sub-name">${sub.name}</h4>
+                    <div class="sub-cat">${sub.category}</div>
+                  </div>
+                  <span class="badge ${progress === 100 ? 'badge-success' : 'badge-primary'}">${progress}%</span>
+                </div>
+                <div class="sub-progress-bar">
+                  <div class="sub-progress-fill" style="width: ${progress}%"></div>
+                </div>
+              </div>
+              <div class="sub-meta">
+                <span>${sub.topics_count} Topics • ${sub.examples_count || 0} Code Examples</span>
+                <span class="sub-link-arrow">Start &rarr;</span>
+              </div>
+            </a>
+          `;
+        }).join('');
+      }
+
+      tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          tabs.forEach(t => t.classList.remove('active'));
+          tab.classList.add('active');
+          currentFilter = tab.getAttribute('data-filter') || 'all';
+          render();
+        });
+      });
+
+      if (searchInput) {
+        searchInput.addEventListener('input', (e) => {
+          searchQuery = e.target.value.toLowerCase().trim();
+          render();
+        });
+      }
+
+      render();
+    });
+  </script>
+</body>
+</html>

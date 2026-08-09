@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tutorial Reader - TutorialStudio</title>
+  <meta name="description" content="Read interactive coding tutorials, run code examples live in sandbox, track your learning progress, and bookmark lessons.">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/tutorial.css">
+</head>
+<body>
+
+  <!-- Site Navigation Header -->
+  <header class="site-header">
+    <div class="header-container">
+      <div style="display: flex; align-items: center; gap: 1rem;">
+        <button class="icon-btn mobile-menu-btn" id="btnToggleSidebar" title="Toggle Topics Menu">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+
+        <a href="index.html" class="brand-logo">
+          <span class="brand-badge">⚡</span>
+          <span class="brand-text">Tutorial<span>Studio</span></span>
+        </a>
+      </div>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="subjects.html" class="nav-link">All Subjects</a></li>
+          <li><a href="tutorial.html" class="nav-link active">Tutorials</a></li>
+          <li><a href="playground.html" class="nav-link">Live Sandbox</a></li>
+          <li><a href="cheatsheets.html" class="nav-link">Cheatsheets</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="search-trigger-btn" title="Search all topics (Ctrl+K)">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <span>Search...</span>
+          <kbd class="search-kbd">Ctrl K</kbd>
+        </button>
+
+        <button class="icon-btn" id="btnBookmarkTopic" title="Bookmark Tutorial">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+          </svg>
+        </button>
+
+        <button class="icon-btn theme-toggle-btn" title="Toggle Theme">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Tutorial Split Layout -->
+  <div class="tutorial-layout">
+
+    <!-- Left Topic Sidebar -->
+    <aside class="tutorial-sidebar">
+      <div class="sidebar-header">
+        <div class="sidebar-subject-badge">
+          <span class="badge badge-primary" id="sidebarCatBadge">Category</span>
+        </div>
+        <div class="sidebar-subject-title">
+          <span id="sidebarSubjectTitle">HTML</span>
+          <button class="sidebar-subject-selector-btn" id="btnChangeSubject" title="Switch to another subject">
+            Switch &#9662;
+          </button>
+        </div>
+        <div class="sidebar-progress-wrap">
+          <div class="sidebar-progress-label">
+            <span>Course Progress</span>
+            <span id="sidebarProgressLabel">0% Completed</span>
+          </div>
+          <div class="sidebar-progress-track">
+            <div class="sidebar-progress-bar" id="sidebarProgressBar"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sidebar-search-box">
+        <input type="text" id="sidebarSearchInput" placeholder="Filter subject topics...">
+      </div>
+
+      <ul class="sidebar-topics-list" id="sidebarTopicsList">
+        <!-- Rendered via JS -->
+      </ul>
+    </aside>
+
+    <!-- Main Tutorial Reader -->
+    <main class="tutorial-main">
+      <div class="tutorial-breadcrumb" id="tutorialBreadcrumb">
+        <!-- Rendered via JS -->
+      </div>
+
+      <div class="tutorial-title-header">
+        <h1 class="tutorial-title" id="tutorialTitle">Loading Tutorial...</h1>
+      </div>
+
+      <!-- Tutorial Body -->
+      <article class="tutorial-body" id="tutorialBody">
+        <div style="text-align: center; padding: 4rem 1rem; color: var(--text-muted);">
+          <p>Loading tutorial content...</p>
+        </div>
+      </article>
+
+      <!-- Pagination & Action Footer -->
+      <div class="tutorial-footer-nav" id="tutorialFooterNav">
+        <!-- Rendered via JS -->
+      </div>
+    </main>
+
+    <!-- Right In-Page Table of Contents -->
+    <aside class="tutorial-toc-sidebar">
+      <div class="toc-title">On This Page</div>
+      <ul class="toc-list" id="tocList">
+        <!-- Rendered via JS -->
+      </ul>
+    </aside>
+
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/data/catalog.js"></script>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/storage.js"></script>
+  <script src="assets/js/search.js"></script>
+  <script src="assets/js/tutorial.js"></script>
+</body>
+</html>

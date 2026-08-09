@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Live Code Sandbox - TutorialStudio</title>
+  <meta name="description" content="Interactive browser code playground for HTML5, CSS3, and modern JavaScript. Edit code live and see instant results.">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/playground.css">
+</head>
+<body>
+
+  <!-- Site Navigation Header -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="index.html" class="brand-logo">
+        <span class="brand-badge">⚡</span>
+        <span class="brand-text">Tutorial<span>Studio</span></span>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="subjects.html" class="nav-link">All Subjects</a></li>
+          <li><a href="tutorial.html#subject=html&topic=html_default" class="nav-link">Tutorials</a></li>
+          <li><a href="playground.html" class="nav-link active">Live Sandbox</a></li>
+          <li><a href="cheatsheets.html" class="nav-link">Cheatsheets</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="search-trigger-btn" title="Search all topics (Ctrl+K)">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <span>Search...</span>
+          <kbd class="search-kbd">Ctrl K</kbd>
+        </button>
+
+        <button class="icon-btn theme-toggle-btn" title="Toggle Theme">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Playground Page Layout -->
+  <div class="playground-page-layout">
+
+    <!-- Playground Toolbar -->
+    <div class="playground-toolbar">
+      <div class="playground-title-group">
+        <span class="badge badge-primary">Interactive Sandbox</span>
+        <span class="playground-title">Live Code Editor & Runner</span>
+      </div>
+
+      <div class="playground-controls">
+        <label for="templateSelect" style="font-size: 0.8rem; color: var(--text-muted);">Template:</label>
+        <select id="templateSelect" class="template-select">
+          <option value="starter">Interactive Starter</option>
+          <option value="flexbox">CSS Flexbox Layout</option>
+          <option value="canvas">Matrix Canvas Animation</option>
+        </select>
+
+        <button class="btn btn-primary btn-sm" id="btnRunCode">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+          Run Code
+        </button>
+      </div>
+    </div>
+
+    <!-- Split View (Editor & Live Preview) -->
+    <div class="playground-split-view">
+
+      <!-- Code Editor Column -->
+      <div class="editor-pane-wrap">
+        <div class="editor-tabs-bar">
+          <div class="editor-tab-btns">
+            <button class="editor-tab active" data-tab="html">
+              <span>HTML</span>
+            </button>
+            <button class="editor-tab" data-tab="css">
+              <span>CSS</span>
+            </button>
+            <button class="editor-tab" data-tab="js">
+              <span>JavaScript</span>
+            </button>
+          </div>
+          <span style="font-size: 0.75rem; color: var(--text-muted);">Auto-executes on typing</span>
+        </div>
+
+        <!-- HTML Pane -->
+        <div class="code-pane active" id="htmlPane">
+          <textarea class="code-textarea" id="htmlEditor" placeholder="<!-- Enter HTML here -->" spellcheck="false"></textarea>
+        </div>
+
+        <!-- CSS Pane -->
+        <div class="code-pane" id="cssPane">
+          <textarea class="code-textarea" id="cssEditor" placeholder="/* Enter CSS styles here */" spellcheck="false"></textarea>
+        </div>
+
+        <!-- JS Pane -->
+        <div class="code-pane" id="jsPane">
+          <textarea class="code-textarea" id="jsEditor" placeholder="// Enter JavaScript code here" spellcheck="false"></textarea>
+        </div>
+      </div>
+
+      <!-- Preview Output Column -->
+      <div class="preview-pane-wrap">
+        <div class="preview-header-bar">
+          <span>Live Browser Output</span>
+          <span class="badge badge-success">Sandboxed</span>
+        </div>
+
+        <iframe id="previewFrame" class="preview-frame" sandbox="allow-scripts allow-modals"></iframe>
+
+        <!-- Console Log Drawer -->
+        <div class="console-drawer">
+          <div class="console-header">
+            <span>Console Output</span>
+            <button id="btnClearConsole" style="background: none; border: none; color: var(--text-muted); cursor: pointer; font-size: 0.75rem;">
+              Clear Console
+            </button>
+          </div>
+          <ul class="console-logs" id="consoleLogs">
+            <li class="console-log-item" style="color: var(--text-muted);">Console initialized. Logs will appear here.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/data/catalog.js"></script>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/storage.js"></script>
+  <script src="assets/js/search.js"></script>
+  <script src="assets/js/playground.js"></script>
+</body>
+</html>

@@ -1,0 +1,1723 @@
+﻿window.DEVDOCS_SUBJECTS = window.DEVDOCS_SUBJECTS || {};
+window.DEVDOCS_SUBJECTS['matplotlib'] = [
+    {
+        "url":  "https://www.w3schools.com/python/matplotlib_intro.asp",
+        "summary":  "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id":  "matplotlib_matplotlib_intro",
+        "code_examples":  [
+
+                          ],
+        "category":  "Data Science \u0026 AI",
+        "notes_and_tips":  [
+
+                           ],
+        "sections":  [
+                         {
+                             "content":  "×\n\n ← All Topics",
+                             "heading":  "W3SCHOOLS TUTORIALS:"
+                         },
+                         {
+                             "content":  "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                             "heading":  "W3SCHOOLS REFERENCES:"
+                         },
+                         {
+                             "content":  "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                             "heading":  "Select another topic:"
+                         },
+                         {
+                             "content":  "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                             "heading":  "W3SCHOOLS CERTIFICATES:"
+                         },
+                         {
+                             "content":  "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To\u0027s\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n--\u003e\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n--\u003e\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n \u0026#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML \u0026 CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n--\u003e\n\n×--\u003e",
+                             "heading":  "All Our Services"
+                         },
+                         {
+                             "content":  "Python HOME\nPython Intro\nPython Get Started\nPython Syntax\n\nSyntax\nStatements\nCode Challenge\n\nPython Output\n\nPrint Text\nPrint Numbers\nCode Challenge\n\nPython Comments\n\nComments\nCode Challenge\n\nPython Variables\n\n Python Variables\n Variable Names\n Assign Multiple Values\n Output Variables\n Global Variables\n Variable Exercises\n Code Challenge\n\nPython Data Types\n\n Data Types\n Code Challenge\n\n Python bytes\n Python bytearray\n Python memoryview\n\n--\u003e\nPython Numbers\n\n Numbers\n Code Challenge\n\nPython Primitive Types--\u003e\nPython Casting\n\n Casting\n Code Challenge\n\nPython Strings\n\n Python Strings\n Slicing Strings\n Modify Strings\n Concatenate Strings\n Format Strings\n Escape Characters\n String Methods\n String Exercises\n Code Challenge\n\nPython Booleans\n\n Booleans\n Code Challenge\n\nPython Operators\n\n Python Operators\n Arithmetic Operators\n Assignment Operators\n Ternary Operator \n Comparison Operators\n Logical Operators\n Identity Operators\n Membership Operators\n Bitwise Operators\n Operator Precedence\n Code Challenge\n\nPython Lists\n\n Python Lists\n Access List Items\n Change List Items\n Add List Items\n Remove List Items\n Loop Lists\n List Comprehension\n Sort Lists\n Copy Lists\n Join Lists\n List Methods\n List Exercises\n Code Challenge\n\nPython Tuples\n\n Python Tuples\n Access Tuples\n Update Tuples\n Unpack Tuples\n Loop Tuples\n Join Tuples\n Tuple Methods\n Tuple Exercises\n Code Challenge\n\nPython Sets\n\n Python Sets\n Access Set Items\n Add Set Items\n Remove Set Items\n Loop Sets\n Join Sets\n Frozenset\n Set Methods\n Set Exercises\n Code Challenge\n\nPython Dictionaries\n\n Python Dictionaries\n Access Items\n Change Items\n Add Items\n Remove Items\n Loop Dictionaries\n Copy Dictionaries\n Nested Dictionaries\n Dictionary Methods\n Dictionary Exercises\n Code Challenge\n\nPython If...Else\n\n Python If\n Python Elif\n Python Else\n Shorthand If\n Logical Operators\n Nested If\n Pass Statement\n Code Challenge\n\nPython Match\n\n Match\n Code Challenge\n\nPython While Loops\n\n While Loops\n Code Challenge\n\nPython For Loops\n\n For Loops\n Code Challenge\n\nPython Data Processing--\u003e\nPython Functions\n\n Python Functions\n Python Arguments\n Python *args / **kwargs\n Python Scope\n Python Decorators\n Python Lambda\n Python Recursion\n Python Generators\n Code Challenge\n\nPython Range\n\n Range\n Code Challenge\n\nPython Arrays\n\n Arrays\n Code Challenge\n\nPython Iterators\n\n Iterators\n Code Challenge\n\nPython Modules\n\n Modules\n Code Challenge\n\nPython Dates\n\n Dates\n Code Challenge\n\nPython Math\n\n Math\n Code Challenge\n\nPython JSON\n\n JSON\n Code Challenge\n\nPython RegEx\n\n RegEx\n Code Challenge\n\nPython PIP\nPython Try...Except\n\n Try...Except\n Code Challenge\n\nPython String Formatting\n\n String Formatting\n Code Challenge\n\nPython None\n\n None\n Code Challenge\n\nPython User Input\n\nPython VirtualEnv",
+                             "heading":  "Python Tutorial"
+                         },
+                         {
+                             "content":  "Python OOP\nPython Classes/Objects\n\n Classes/Objects\n Code Challenge\n\nPython __init__ Method\n\n __init__ Method\n Code Challenge\n\nPython self Parameter\n\n self Parameter\n Code Challenge\n\nPython Class Properties\n\n Class Properties\n Code Challenge\n\nPython Class Methods\n\n Class Methods\n Code Challenge\n\nPython Inheritance\n\n Inheritance\n Code Challenge\n\nPython Polymorphism\n\n Polymorphism\n Code Challenge\n\nPython Encapsulation\n\n Encapsulation\n Code Challenge\n\nPython Inner Classes",
+                             "heading":  "Python Classes"
+                         },
+                         {
+                             "content":  "Python File Handling\nPython Read Files\nPython Write/Create Files\nPython Delete Files",
+                             "heading":  "File Handling"
+                         },
+                         {
+                             "content":  "NumPy Tutorial\nPandas Tutorial\nSciPy Tutorial\nDjango Tutorial\n\n\u003c!--",
+                             "heading":  "Python Modules"
+                         },
+                         {
+                             "content":  "NumPy Intro\nNumPy Getting Started\nNumPy Creating Arrays\nNumPy Array Indexing\nNumPy Array Slicing\nNumPy Data Types\nNumPy Copy vs View\nNumPy Array Shape\nNumPy Array Reshape\nNumPy Array Iterating\nNumPy Array Join\nNumPy Array Split\nNumPy Array Search\nNumPy Array Sort\nNumPy Array Filter\nNumPy Random\n\n Random Intro\n Data Distribution\n Random Permutation\n Seaborn Module\n Normal Distribution\n Binomial Distribution\n Poisson Distribution\n Uniform Distribution\n Logistic Distribution\n Multinomial Distribution\n Exponential Distribution\n Chi Square Distribution\n Rayleigh Distribution\n Pareto Distribution\n Zipf Distribution\n\nNumPy ufunc\n\n ufunc Intro\n ufunc Create Function\n ufunc Simple Arithmetic\n ufunc Rounding Decimals\n ufunc Logs\n ufunc Summations\n ufunc Products\n ufunc Differences\n ufunc Finding LCM\n ufunc Finding GCD\n ufunc Trigonometric\n ufunc Hyperbolic\n ufunc Set Operations\n\n--\u003e\n\u003c!--",
+                             "heading":  "Python NumPy"
+                         },
+                         {
+                             "content":  "Pandas Tutorial\nPandas Getting Started\nPandas Series\nPandas DataFrames\nPandas Read CSV\nPandas Read JSON\nPandas Analyzing Data\nPandas Cleaning Data\n\n Pandas Cleaning Data\n Cleaning Empty Cells\n Cleaning Wrong Format\n Cleaning Wrong Data\n Removing Duplicates\n\nPandas Correlations\nPandas Plotting\n\n--\u003e",
+                             "heading":  "Python Pandas"
+                         },
+                         {
+                             "content":  "Matplotlib Intro\nMatplotlib Get Started\nMatplotlib Pyplot\nMatplotlib Plotting\nMatplotlib Markers\nMatplotlib Line\nMatplotlib Labels\nMatplotlib Grid\nMatplotlib Subplot\nMatplotlib Scatter\nMatplotlib Bars\nMatplotlib Histograms\nMatplotlib Pie Charts\n\n\u003c!--",
+                             "heading":  "Python Matplotlib"
+                         },
+                         {
+                             "content":  "SciPy Intro\nSciPy Getting Started\nSciPy Constants\nSciPy Optimizers\nSciPy Sparse Data\nSciPy Graphs\nSciPy Spatial Data\nSciPy Matlab Arrays\nSciPy Interpolation\nSciPy Significance Tests\n\n--\u003e",
+                             "heading":  "Python SciPy"
+                         },
+                         {
+                             "content":  "Getting Started\nMean Median Mode\nStandard Deviation\nPercentile\nData Distribution\nNormal Data Distribution\nScatter Plot\nLinear Regression\nPolynomial Regression\nMultiple Regression\nScale\nTrain/Test\nDecision Tree\n\nConfusion Matrix\nHierarchical Clustering\nLogistic Regression\nGrid Search\nCategorical Data\nK-means\nBootstrap Aggregation\nCross Validation\nAUC - ROC Curve\nK-nearest neighbors",
+                             "heading":  "Machine Learning"
+                         },
+                         {
+                             "content":  "Python DSA\nLists and Arrays\nStacks\nQueues\nLinked Lists\nHash Tables\nTrees\nBinary Trees\nBinary Search Trees\nAVL Trees\nGraphs\nLinear Search\nBinary Search\nBubble Sort\nSelection Sort\nInsertion Sort\nQuick Sort\nCounting Sort\nRadix Sort\nMerge Sort",
+                             "heading":  "Python DSA"
+                         },
+                         {
+                             "content":  "MySQL Get Started\nMySQL Create Database\nMySQL Create Table\nMySQL Insert\nMySQL Select\nMySQL Where\nMySQL Order By\nMySQL Delete\nMySQL Drop Table\nMySQL Update\nMySQL Limit\nMySQL Join",
+                             "heading":  "Python MySQL"
+                         },
+                         {
+                             "content":  "MongoDB Get Started\nMongoDB Create DB\nMongoDB Collection\nMongoDB Insert\nMongoDB Find\nMongoDB Query\nMongoDB Sort\nMongoDB Delete\nMongoDB Drop Collection\nMongoDB Update\nMongoDB Limit\nPython Classes\nPython as Aspect Oriented\nPython File Handling\nPython Database\nPython Web Applications\nPython Workflows\nPython Maths \u0026 Science\nPython Regular Expressions\nPython Unit Testing\n--\u003e",
+                             "heading":  "Python MongoDB"
+                         },
+                         {
+                             "content":  "Python Certificate",
+                             "heading":  "Python Cert"
+                         },
+                         {
+                             "content":  "Python Overview\nPython Built-in Functions\nPython String Methods\nPython List Methods\nPython Dictionary Methods\nPython Tuple Methods\nPython Set Methods\nPython File Methods\nPython Keywords\nPython Exceptions\nPython Glossary",
+                             "heading":  "Python Reference"
+                         },
+                         {
+                             "content":  "Built-in Modules\nRandom Module\nRequests Module\nStatistics Module\nMath Module\ncMath Module",
+                             "heading":  "Module Reference"
+                         },
+                         {
+                             "content":  "Remove List Duplicates\nReverse a String\nAdd Two Numbers",
+                             "heading":  "Python How To"
+                         },
+                         {
+                             "content":  "Python Examples\nPython Compiler\nPython Exercises\nPython Quiz\nPython Challenges\nPython Practice Problems\nPython Server\nPython Syllabus\nPython Study Plan\nPython Interview Q\u0026A\nPython Bootcamp\nPython Training\n\nny:--\u003e\n\n ny:--\u003e\n\nny:--\u003e\n\nMatplotlib Tutorial\n\n❮ Previous\nNext ❯",
+                             "heading":  "Python Examples"
+                         },
+                         {
+                             "content":  "Matplotlib is a low level graph plotting library in python that serves as a visualization utility.\n\nMatplotlib was created by John D. Hunter.\n\nMatplotlib is open source and we can use it freely.\n\nMatplotlib is mostly written in python, a few segments are written in C, Objective-C and Javascript for Platform compatibility.",
+                             "heading":  "What is Matplotlib?"
+                         },
+                         {
+                             "content":  "The source code for Matplotlib is located at this github repository https://github.com/matplotlib/matplotlib",
+                             "heading":  "Where is the Matplotlib Codebase?"
+                         },
+                         {
+                             "content":  "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                             "heading":  "Contact Sales"
+                         }
+                     ],
+        "extracted_at":  "2026-08-09T11:16:28Z",
+        "subject":  "Matplotlib",
+        "title":  "Matplotlib Tutorial"
+    },
+    {
+        "url":  "https://www.w3schools.com/python/matplotlib_getting_started.asp",
+        "summary":  "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id":  "matplotlib_matplotlib_getting_started",
+        "code_examples":  [
+                              {
+                                  "code":  "C:\\Users\\Your Name\u003epip install matplotlib",
+                                  "language":  "matplotlib",
+                                  "heading":  "Example",
+                                  "tryit_url":  null
+                              },
+                              {
+                                  "code":  "import matplotlib",
+                                  "language":  "matplotlib",
+                                  "heading":  "Example",
+                                  "tryit_url":  null
+                              },
+                              {
+                                  "code":  "import matplotlib\n\nprint(matplotlib.__version__)",
+                                  "language":  "matplotlib",
+                                  "heading":  "Example",
+                                  "tryit_url":  null
+                              }
+                          ],
+        "category":  "Data Science \u0026 AI",
+        "notes_and_tips":  [
+
+                           ],
+        "sections":  [
+                         {
+                             "content":  "×\n\n ← All Topics",
+                             "heading":  "W3SCHOOLS TUTORIALS:"
+                         },
+                         {
+                             "content":  "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                             "heading":  "W3SCHOOLS REFERENCES:"
+                         },
+                         {
+                             "content":  "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                             "heading":  "Select another topic:"
+                         },
+                         {
+                             "content":  "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                             "heading":  "W3SCHOOLS CERTIFICATES:"
+                         },
+                         {
+                             "content":  "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To\u0027s\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n--\u003e\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n--\u003e\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n \u0026#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML \u0026 CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n--\u003e\n\n×--\u003e",
+                             "heading":  "All Our Services"
+                         },
+                         {
+                             "content":  "Python HOME\nPython Intro\nPython Get Started\nPython Syntax\n\nSyntax\nStatements\nCode Challenge\n\nPython Output\n\nPrint Text\nPrint Numbers\nCode Challenge\n\nPython Comments\n\nComments\nCode Challenge\n\nPython Variables\n\n Python Variables\n Variable Names\n Assign Multiple Values\n Output Variables\n Global Variables\n Variable Exercises\n Code Challenge\n\nPython Data Types\n\n Data Types\n Code Challenge\n\n Python bytes\n Python bytearray\n Python memoryview\n\n--\u003e\nPython Numbers\n\n Numbers\n Code Challenge\n\nPython Primitive Types--\u003e\nPython Casting\n\n Casting\n Code Challenge\n\nPython Strings\n\n Python Strings\n Slicing Strings\n Modify Strings\n Concatenate Strings\n Format Strings\n Escape Characters\n String Methods\n String Exercises\n Code Challenge\n\nPython Booleans\n\n Booleans\n Code Challenge\n\nPython Operators\n\n Python Operators\n Arithmetic Operators\n Assignment Operators\n Ternary Operator \n Comparison Operators\n Logical Operators\n Identity Operators\n Membership Operators\n Bitwise Operators\n Operator Precedence\n Code Challenge\n\nPython Lists\n\n Python Lists\n Access List Items\n Change List Items\n Add List Items\n Remove List Items\n Loop Lists\n List Comprehension\n Sort Lists\n Copy Lists\n Join Lists\n List Methods\n List Exercises\n Code Challenge\n\nPython Tuples\n\n Python Tuples\n Access Tuples\n Update Tuples\n Unpack Tuples\n Loop Tuples\n Join Tuples\n Tuple Methods\n Tuple Exercises\n Code Challenge\n\nPython Sets\n\n Python Sets\n Access Set Items\n Add Set Items\n Remove Set Items\n Loop Sets\n Join Sets\n Frozenset\n Set Methods\n Set Exercises\n Code Challenge\n\nPython Dictionaries\n\n Python Dictionaries\n Access Items\n Change Items\n Add Items\n Remove Items\n Loop Dictionaries\n Copy Dictionaries\n Nested Dictionaries\n Dictionary Methods\n Dictionary Exercises\n Code Challenge\n\nPython If...Else\n\n Python If\n Python Elif\n Python Else\n Shorthand If\n Logical Operators\n Nested If\n Pass Statement\n Code Challenge\n\nPython Match\n\n Match\n Code Challenge\n\nPython While Loops\n\n While Loops\n Code Challenge\n\nPython For Loops\n\n For Loops\n Code Challenge\n\nPython Data Processing--\u003e\nPython Functions\n\n Python Functions\n Python Arguments\n Python *args / **kwargs\n Python Scope\n Python Decorators\n Python Lambda\n Python Recursion\n Python Generators\n Code Challenge\n\nPython Range\n\n Range\n Code Challenge\n\nPython Arrays\n\n Arrays\n Code Challenge\n\nPython Iterators\n\n Iterators\n Code Challenge\n\nPython Modules\n\n Modules\n Code Challenge\n\nPython Dates\n\n Dates\n Code Challenge\n\nPython Math\n\n Math\n Code Challenge\n\nPython JSON\n\n JSON\n Code Challenge\n\nPython RegEx\n\n RegEx\n Code Challenge\n\nPython PIP\nPython Try...Except\n\n Try...Except\n Code Challenge\n\nPython String Formatting\n\n String Formatting\n Code Challenge\n\nPython None\n\n None\n Code Challenge\n\nPython User Input\n\nPython VirtualEnv",
+                             "heading":  "Python Tutorial"
+                         },
+                         {
+                             "content":  "Python OOP\nPython Classes/Objects\n\n Classes/Objects\n Code Challenge\n\nPython __init__ Method\n\n __init__ Method\n Code Challenge\n\nPython self Parameter\n\n self Parameter\n Code Challenge\n\nPython Class Properties\n\n Class Properties\n Code Challenge\n\nPython Class Methods\n\n Class Methods\n Code Challenge\n\nPython Inheritance\n\n Inheritance\n Code Challenge\n\nPython Polymorphism\n\n Polymorphism\n Code Challenge\n\nPython Encapsulation\n\n Encapsulation\n Code Challenge\n\nPython Inner Classes",
+                             "heading":  "Python Classes"
+                         },
+                         {
+                             "content":  "Python File Handling\nPython Read Files\nPython Write/Create Files\nPython Delete Files",
+                             "heading":  "File Handling"
+                         },
+                         {
+                             "content":  "NumPy Tutorial\nPandas Tutorial\nSciPy Tutorial\nDjango Tutorial\n\n\u003c!--",
+                             "heading":  "Python Modules"
+                         },
+                         {
+                             "content":  "NumPy Intro\nNumPy Getting Started\nNumPy Creating Arrays\nNumPy Array Indexing\nNumPy Array Slicing\nNumPy Data Types\nNumPy Copy vs View\nNumPy Array Shape\nNumPy Array Reshape\nNumPy Array Iterating\nNumPy Array Join\nNumPy Array Split\nNumPy Array Search\nNumPy Array Sort\nNumPy Array Filter\nNumPy Random\n\n Random Intro\n Data Distribution\n Random Permutation\n Seaborn Module\n Normal Distribution\n Binomial Distribution\n Poisson Distribution\n Uniform Distribution\n Logistic Distribution\n Multinomial Distribution\n Exponential Distribution\n Chi Square Distribution\n Rayleigh Distribution\n Pareto Distribution\n Zipf Distribution\n\nNumPy ufunc\n\n ufunc Intro\n ufunc Create Function\n ufunc Simple Arithmetic\n ufunc Rounding Decimals\n ufunc Logs\n ufunc Summations\n ufunc Products\n ufunc Differences\n ufunc Finding LCM\n ufunc Finding GCD\n ufunc Trigonometric\n ufunc Hyperbolic\n ufunc Set Operations\n\n--\u003e\n\u003c!--",
+                             "heading":  "Python NumPy"
+                         },
+                         {
+                             "content":  "Pandas Tutorial\nPandas Getting Started\nPandas Series\nPandas DataFrames\nPandas Read CSV\nPandas Read JSON\nPandas Analyzing Data\nPandas Cleaning Data\n\n Pandas Cleaning Data\n Cleaning Empty Cells\n Cleaning Wrong Format\n Cleaning Wrong Data\n Removing Duplicates\n\nPandas Correlations\nPandas Plotting\n\n--\u003e",
+                             "heading":  "Python Pandas"
+                         },
+                         {
+                             "content":  "Matplotlib Intro\nMatplotlib Get Started\nMatplotlib Pyplot\nMatplotlib Plotting\nMatplotlib Markers\nMatplotlib Line\nMatplotlib Labels\nMatplotlib Grid\nMatplotlib Subplot\nMatplotlib Scatter\nMatplotlib Bars\nMatplotlib Histograms\nMatplotlib Pie Charts\n\n\u003c!--",
+                             "heading":  "Python Matplotlib"
+                         },
+                         {
+                             "content":  "SciPy Intro\nSciPy Getting Started\nSciPy Constants\nSciPy Optimizers\nSciPy Sparse Data\nSciPy Graphs\nSciPy Spatial Data\nSciPy Matlab Arrays\nSciPy Interpolation\nSciPy Significance Tests\n\n--\u003e",
+                             "heading":  "Python SciPy"
+                         },
+                         {
+                             "content":  "Getting Started\nMean Median Mode\nStandard Deviation\nPercentile\nData Distribution\nNormal Data Distribution\nScatter Plot\nLinear Regression\nPolynomial Regression\nMultiple Regression\nScale\nTrain/Test\nDecision Tree\n\nConfusion Matrix\nHierarchical Clustering\nLogistic Regression\nGrid Search\nCategorical Data\nK-means\nBootstrap Aggregation\nCross Validation\nAUC - ROC Curve\nK-nearest neighbors",
+                             "heading":  "Machine Learning"
+                         },
+                         {
+                             "content":  "Python DSA\nLists and Arrays\nStacks\nQueues\nLinked Lists\nHash Tables\nTrees\nBinary Trees\nBinary Search Trees\nAVL Trees\nGraphs\nLinear Search\nBinary Search\nBubble Sort\nSelection Sort\nInsertion Sort\nQuick Sort\nCounting Sort\nRadix Sort\nMerge Sort",
+                             "heading":  "Python DSA"
+                         },
+                         {
+                             "content":  "MySQL Get Started\nMySQL Create Database\nMySQL Create Table\nMySQL Insert\nMySQL Select\nMySQL Where\nMySQL Order By\nMySQL Delete\nMySQL Drop Table\nMySQL Update\nMySQL Limit\nMySQL Join",
+                             "heading":  "Python MySQL"
+                         },
+                         {
+                             "content":  "MongoDB Get Started\nMongoDB Create DB\nMongoDB Collection\nMongoDB Insert\nMongoDB Find\nMongoDB Query\nMongoDB Sort\nMongoDB Delete\nMongoDB Drop Collection\nMongoDB Update\nMongoDB Limit\nPython Classes\nPython as Aspect Oriented\nPython File Handling\nPython Database\nPython Web Applications\nPython Workflows\nPython Maths \u0026 Science\nPython Regular Expressions\nPython Unit Testing\n--\u003e",
+                             "heading":  "Python MongoDB"
+                         },
+                         {
+                             "content":  "Python Certificate",
+                             "heading":  "Python Cert"
+                         },
+                         {
+                             "content":  "Python Overview\nPython Built-in Functions\nPython String Methods\nPython List Methods\nPython Dictionary Methods\nPython Tuple Methods\nPython Set Methods\nPython File Methods\nPython Keywords\nPython Exceptions\nPython Glossary",
+                             "heading":  "Python Reference"
+                         },
+                         {
+                             "content":  "Built-in Modules\nRandom Module\nRequests Module\nStatistics Module\nMath Module\ncMath Module",
+                             "heading":  "Module Reference"
+                         },
+                         {
+                             "content":  "Remove List Duplicates\nReverse a String\nAdd Two Numbers",
+                             "heading":  "Python How To"
+                         },
+                         {
+                             "content":  "Python Examples\nPython Compiler\nPython Exercises\nPython Quiz\nPython Challenges\nPython Practice Problems\nPython Server\nPython Syllabus\nPython Study Plan\nPython Interview Q\u0026A\nPython Bootcamp\nPython Training\n\nny:--\u003e\n\n ny:--\u003e\n\nny:--\u003e\n\nMatplotlib Getting Started\n\n❮ Previous\nNext ❯",
+                             "heading":  "Python Examples"
+                         },
+                         {
+                             "content":  "If you have Python and PIP already installed on a system, then installation of \nMatplotlib is very easy.\n\nInstall it using this command:\n\nC:\\Users\\Your Name\u003epip install matplotlib\n\nIf this command fails, then use a python distribution that already has Matplotlib installed,  like Anaconda, Spyder etc.",
+                             "heading":  "Installation of Matplotlib"
+                         },
+                         {
+                             "content":  "Once Matplotlib is installed, import it in your applications by adding the\nimport module statement:\n\nimport matplotlib\n\nNow Matplotlib is imported and ready to use:",
+                             "heading":  "Import Matplotlib"
+                         },
+                         {
+                             "content":  "The version string is stored under __version__ \nattribute.\n\nExample\n\n import matplotlib\n\nprint(matplotlib.__version__)\n\nTry it Yourself »\n\n Note: two underscore characters are used in __version__.",
+                             "heading":  "Checking Matplotlib Version"
+                         },
+                         {
+                             "content":  "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                             "heading":  "Contact Sales"
+                         }
+                     ],
+        "extracted_at":  "2026-08-09T11:16:28Z",
+        "subject":  "Matplotlib",
+        "title":  "Matplotlib Getting Started"
+    },
+    {
+        "url":  "https://www.w3schools.com/python/matplotlib_pyplot.asp",
+        "summary":  "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id":  "matplotlib_matplotlib_pyplot",
+        "code_examples":  [
+                              {
+                                  "code":  "import matplotlib.pyplot as plt",
+                                  "language":  "matplotlib",
+                                  "heading":  "Example",
+                                  "tryit_url":  null
+                              },
+                              {
+                                  "code":  "import matplotlib.pyplot as plt\n\nimport numpy as np\n\n xpoints = np.array([0, 6])\nypoints = np.array([0, 250])\n\nplt.plot(xpoints, \n ypoints)\n\nplt.show()",
+                                  "language":  "matplotlib",
+                                  "heading":  "Example",
+                                  "tryit_url":  null
+                              }
+                          ],
+        "category":  "Data Science \u0026 AI",
+        "notes_and_tips":  [
+
+                           ],
+        "sections":  [
+                         {
+                             "content":  "×\n\n ← All Topics",
+                             "heading":  "W3SCHOOLS TUTORIALS:"
+                         },
+                         {
+                             "content":  "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                             "heading":  "W3SCHOOLS REFERENCES:"
+                         },
+                         {
+                             "content":  "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                             "heading":  "Select another topic:"
+                         },
+                         {
+                             "content":  "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                             "heading":  "W3SCHOOLS CERTIFICATES:"
+                         },
+                         {
+                             "content":  "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To\u0027s\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n--\u003e\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n--\u003e\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n \u0026#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML \u0026 CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n--\u003e\n\n×--\u003e",
+                             "heading":  "All Our Services"
+                         },
+                         {
+                             "content":  "Python HOME\nPython Intro\nPython Get Started\nPython Syntax\n\nSyntax\nStatements\nCode Challenge\n\nPython Output\n\nPrint Text\nPrint Numbers\nCode Challenge\n\nPython Comments\n\nComments\nCode Challenge\n\nPython Variables\n\n Python Variables\n Variable Names\n Assign Multiple Values\n Output Variables\n Global Variables\n Variable Exercises\n Code Challenge\n\nPython Data Types\n\n Data Types\n Code Challenge\n\n Python bytes\n Python bytearray\n Python memoryview\n\n--\u003e\nPython Numbers\n\n Numbers\n Code Challenge\n\nPython Primitive Types--\u003e\nPython Casting\n\n Casting\n Code Challenge\n\nPython Strings\n\n Python Strings\n Slicing Strings\n Modify Strings\n Concatenate Strings\n Format Strings\n Escape Characters\n String Methods\n String Exercises\n Code Challenge\n\nPython Booleans\n\n Booleans\n Code Challenge\n\nPython Operators\n\n Python Operators\n Arithmetic Operators\n Assignment Operators\n Ternary Operator \n Comparison Operators\n Logical Operators\n Identity Operators\n Membership Operators\n Bitwise Operators\n Operator Precedence\n Code Challenge\n\nPython Lists\n\n Python Lists\n Access List Items\n Change List Items\n Add List Items\n Remove List Items\n Loop Lists\n List Comprehension\n Sort Lists\n Copy Lists\n Join Lists\n List Methods\n List Exercises\n Code Challenge\n\nPython Tuples\n\n Python Tuples\n Access Tuples\n Update Tuples\n Unpack Tuples\n Loop Tuples\n Join Tuples\n Tuple Methods\n Tuple Exercises\n Code Challenge\n\nPython Sets\n\n Python Sets\n Access Set Items\n Add Set Items\n Remove Set Items\n Loop Sets\n Join Sets\n Frozenset\n Set Methods\n Set Exercises\n Code Challenge\n\nPython Dictionaries\n\n Python Dictionaries\n Access Items\n Change Items\n Add Items\n Remove Items\n Loop Dictionaries\n Copy Dictionaries\n Nested Dictionaries\n Dictionary Methods\n Dictionary Exercises\n Code Challenge\n\nPython If...Else\n\n Python If\n Python Elif\n Python Else\n Shorthand If\n Logical Operators\n Nested If\n Pass Statement\n Code Challenge\n\nPython Match\n\n Match\n Code Challenge\n\nPython While Loops\n\n While Loops\n Code Challenge\n\nPython For Loops\n\n For Loops\n Code Challenge\n\nPython Data Processing--\u003e\nPython Functions\n\n Python Functions\n Python Arguments\n Python *args / **kwargs\n Python Scope\n Python Decorators\n Python Lambda\n Python Recursion\n Python Generators\n Code Challenge\n\nPython Range\n\n Range\n Code Challenge\n\nPython Arrays\n\n Arrays\n Code Challenge\n\nPython Iterators\n\n Iterators\n Code Challenge\n\nPython Modules\n\n Modules\n Code Challenge\n\nPython Dates\n\n Dates\n Code Challenge\n\nPython Math\n\n Math\n Code Challenge\n\nPython JSON\n\n JSON\n Code Challenge\n\nPython RegEx\n\n RegEx\n Code Challenge\n\nPython PIP\nPython Try...Except\n\n Try...Except\n Code Challenge\n\nPython String Formatting\n\n String Formatting\n Code Challenge\n\nPython None\n\n None\n Code Challenge\n\nPython User Input\n\nPython VirtualEnv",
+                             "heading":  "Python Tutorial"
+                         },
+                         {
+                             "content":  "Python OOP\nPython Classes/Objects\n\n Classes/Objects\n Code Challenge\n\nPython __init__ Method\n\n __init__ Method\n Code Challenge\n\nPython self Parameter\n\n self Parameter\n Code Challenge\n\nPython Class Properties\n\n Class Properties\n Code Challenge\n\nPython Class Methods\n\n Class Methods\n Code Challenge\n\nPython Inheritance\n\n Inheritance\n Code Challenge\n\nPython Polymorphism\n\n Polymorphism\n Code Challenge\n\nPython Encapsulation\n\n Encapsulation\n Code Challenge\n\nPython Inner Classes",
+                             "heading":  "Python Classes"
+                         },
+                         {
+                             "content":  "Python File Handling\nPython Read Files\nPython Write/Create Files\nPython Delete Files",
+                             "heading":  "File Handling"
+                         },
+                         {
+                             "content":  "NumPy Tutorial\nPandas Tutorial\nSciPy Tutorial\nDjango Tutorial\n\n\u003c!--",
+                             "heading":  "Python Modules"
+                         },
+                         {
+                             "content":  "NumPy Intro\nNumPy Getting Started\nNumPy Creating Arrays\nNumPy Array Indexing\nNumPy Array Slicing\nNumPy Data Types\nNumPy Copy vs View\nNumPy Array Shape\nNumPy Array Reshape\nNumPy Array Iterating\nNumPy Array Join\nNumPy Array Split\nNumPy Array Search\nNumPy Array Sort\nNumPy Array Filter\nNumPy Random\n\n Random Intro\n Data Distribution\n Random Permutation\n Seaborn Module\n Normal Distribution\n Binomial Distribution\n Poisson Distribution\n Uniform Distribution\n Logistic Distribution\n Multinomial Distribution\n Exponential Distribution\n Chi Square Distribution\n Rayleigh Distribution\n Pareto Distribution\n Zipf Distribution\n\nNumPy ufunc\n\n ufunc Intro\n ufunc Create Function\n ufunc Simple Arithmetic\n ufunc Rounding Decimals\n ufunc Logs\n ufunc Summations\n ufunc Products\n ufunc Differences\n ufunc Finding LCM\n ufunc Finding GCD\n ufunc Trigonometric\n ufunc Hyperbolic\n ufunc Set Operations\n\n--\u003e\n\u003c!--",
+                             "heading":  "Python NumPy"
+                         },
+                         {
+                             "content":  "Pandas Tutorial\nPandas Getting Started\nPandas Series\nPandas DataFrames\nPandas Read CSV\nPandas Read JSON\nPandas Analyzing Data\nPandas Cleaning Data\n\n Pandas Cleaning Data\n Cleaning Empty Cells\n Cleaning Wrong Format\n Cleaning Wrong Data\n Removing Duplicates\n\nPandas Correlations\nPandas Plotting\n\n--\u003e",
+                             "heading":  "Python Pandas"
+                         },
+                         {
+                             "content":  "Matplotlib Intro\nMatplotlib Get Started\nMatplotlib Pyplot\nMatplotlib Plotting\nMatplotlib Markers\nMatplotlib Line\nMatplotlib Labels\nMatplotlib Grid\nMatplotlib Subplot\nMatplotlib Scatter\nMatplotlib Bars\nMatplotlib Histograms\nMatplotlib Pie Charts\n\n\u003c!--",
+                             "heading":  "Python Matplotlib"
+                         },
+                         {
+                             "content":  "SciPy Intro\nSciPy Getting Started\nSciPy Constants\nSciPy Optimizers\nSciPy Sparse Data\nSciPy Graphs\nSciPy Spatial Data\nSciPy Matlab Arrays\nSciPy Interpolation\nSciPy Significance Tests\n\n--\u003e",
+                             "heading":  "Python SciPy"
+                         },
+                         {
+                             "content":  "Getting Started\nMean Median Mode\nStandard Deviation\nPercentile\nData Distribution\nNormal Data Distribution\nScatter Plot\nLinear Regression\nPolynomial Regression\nMultiple Regression\nScale\nTrain/Test\nDecision Tree\n\nConfusion Matrix\nHierarchical Clustering\nLogistic Regression\nGrid Search\nCategorical Data\nK-means\nBootstrap Aggregation\nCross Validation\nAUC - ROC Curve\nK-nearest neighbors",
+                             "heading":  "Machine Learning"
+                         },
+                         {
+                             "content":  "Python DSA\nLists and Arrays\nStacks\nQueues\nLinked Lists\nHash Tables\nTrees\nBinary Trees\nBinary Search Trees\nAVL Trees\nGraphs\nLinear Search\nBinary Search\nBubble Sort\nSelection Sort\nInsertion Sort\nQuick Sort\nCounting Sort\nRadix Sort\nMerge Sort",
+                             "heading":  "Python DSA"
+                         },
+                         {
+                             "content":  "MySQL Get Started\nMySQL Create Database\nMySQL Create Table\nMySQL Insert\nMySQL Select\nMySQL Where\nMySQL Order By\nMySQL Delete\nMySQL Drop Table\nMySQL Update\nMySQL Limit\nMySQL Join",
+                             "heading":  "Python MySQL"
+                         },
+                         {
+                             "content":  "MongoDB Get Started\nMongoDB Create DB\nMongoDB Collection\nMongoDB Insert\nMongoDB Find\nMongoDB Query\nMongoDB Sort\nMongoDB Delete\nMongoDB Drop Collection\nMongoDB Update\nMongoDB Limit\nPython Classes\nPython as Aspect Oriented\nPython File Handling\nPython Database\nPython Web Applications\nPython Workflows\nPython Maths \u0026 Science\nPython Regular Expressions\nPython Unit Testing\n--\u003e",
+                             "heading":  "Python MongoDB"
+                         },
+                         {
+                             "content":  "Python Certificate",
+                             "heading":  "Python Cert"
+                         },
+                         {
+                             "content":  "Python Overview\nPython Built-in Functions\nPython String Methods\nPython List Methods\nPython Dictionary Methods\nPython Tuple Methods\nPython Set Methods\nPython File Methods\nPython Keywords\nPython Exceptions\nPython Glossary",
+                             "heading":  "Python Reference"
+                         },
+                         {
+                             "content":  "Built-in Modules\nRandom Module\nRequests Module\nStatistics Module\nMath Module\ncMath Module",
+                             "heading":  "Module Reference"
+                         },
+                         {
+                             "content":  "Remove List Duplicates\nReverse a String\nAdd Two Numbers",
+                             "heading":  "Python How To"
+                         },
+                         {
+                             "content":  "Python Examples\nPython Compiler\nPython Exercises\nPython Quiz\nPython Challenges\nPython Practice Problems\nPython Server\nPython Syllabus\nPython Study Plan\nPython Interview Q\u0026A\nPython Bootcamp\nPython Training\n\nny:--\u003e\n\n ny:--\u003e\n\nny:--\u003e\n\nMatplotlib Pyplot\n\n❮ Previous\nNext ❯",
+                             "heading":  "Python Examples"
+                         },
+                         {
+                             "content":  "Most of the Matplotlib utilities lies under the pyplot submodule,\nand are usually imported under the plt alias:\n\nimport matplotlib.pyplot as plt\n\nNow the Pyplot package can be referred to as plt.\n\nExample\n Draw a line in a diagram from position (0,0) to position (6,250):\n\nimport matplotlib.pyplot as plt\n\nimport numpy as np\n\n xpoints = np.array([0, 6])\nypoints = np.array([0, 250])\n\nplt.plot(xpoints, \n ypoints)\n\nplt.show()\n\nResult:\n\nTry it Yourself »\n\n You will learn more about drawing (plotting) in the next chapters.",
+                             "heading":  "Pyplot"
+                         },
+                         {
+                             "content":  "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                             "heading":  "Contact Sales"
+                         }
+                     ],
+        "extracted_at":  "2026-08-09T11:16:28Z",
+        "subject":  "Matplotlib",
+        "title":  "Matplotlib Pyplot"
+    },
+    {
+        "url":  "https://www.w3schools.com/python/matplotlib_plotting.asp",
+        "summary":  "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id":  "matplotlib_matplotlib_plotting",
+        "code_examples":  [
+                              {
+                                  "code":  "import matplotlib.pyplot as plt\n\nimport numpy as np\n\nxpoints = np.array([1, 8])\n\nypoints = np.array([3, 10])\n\nplt.plot(xpoints, ypoints)\n\nplt.show()",
+                                  "language":  "matplotlib",
+                                  "heading":  "Example",
+                                  "tryit_url":  null
+                              }
+                          ],
+        "category":  "Data Science \u0026 AI",
+        "notes_and_tips":  [
+
+                           ],
+        "sections":  [
+                         {
+                             "content":  "×\n\n ← All Topics",
+                             "heading":  "W3SCHOOLS TUTORIALS:"
+                         },
+                         {
+                             "content":  "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                             "heading":  "W3SCHOOLS REFERENCES:"
+                         },
+                         {
+                             "content":  "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                             "heading":  "Select another topic:"
+                         },
+                         {
+                             "content":  "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                             "heading":  "W3SCHOOLS CERTIFICATES:"
+                         },
+                         {
+                             "content":  "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To\u0027s\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n--\u003e\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n--\u003e\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n \u0026#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML \u0026 CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n--\u003e\n\n×--\u003e",
+                             "heading":  "All Our Services"
+                         },
+                         {
+                             "content":  "Python HOME\nPython Intro\nPython Get Started\nPython Syntax\n\nSyntax\nStatements\nCode Challenge\n\nPython Output\n\nPrint Text\nPrint Numbers\nCode Challenge\n\nPython Comments\n\nComments\nCode Challenge\n\nPython Variables\n\n Python Variables\n Variable Names\n Assign Multiple Values\n Output Variables\n Global Variables\n Variable Exercises\n Code Challenge\n\nPython Data Types\n\n Data Types\n Code Challenge\n\n Python bytes\n Python bytearray\n Python memoryview\n\n--\u003e\nPython Numbers\n\n Numbers\n Code Challenge\n\nPython Primitive Types--\u003e\nPython Casting\n\n Casting\n Code Challenge\n\nPython Strings\n\n Python Strings\n Slicing Strings\n Modify Strings\n Concatenate Strings\n Format Strings\n Escape Characters\n String Methods\n String Exercises\n Code Challenge\n\nPython Booleans\n\n Booleans\n Code Challenge\n\nPython Operators\n\n Python Operators\n Arithmetic Operators\n Assignment Operators\n Ternary Operator \n Comparison Operators\n Logical Operators\n Identity Operators\n Membership Operators\n Bitwise Operators\n Operator Precedence\n Code Challenge\n\nPython Lists\n\n Python Lists\n Access List Items\n Change List Items\n Add List Items\n Remove List Items\n Loop Lists\n List Comprehension\n Sort Lists\n Copy Lists\n Join Lists\n List Methods\n List Exercises\n Code Challenge\n\nPython Tuples\n\n Python Tuples\n Access Tuples\n Update Tuples\n Unpack Tuples\n Loop Tuples\n Join Tuples\n Tuple Methods\n Tuple Exercises\n Code Challenge\n\nPython Sets\n\n Python Sets\n Access Set Items\n Add Set Items\n Remove Set Items\n Loop Sets\n Join Sets\n Frozenset\n Set Methods\n Set Exercises\n Code Challenge\n\nPython Dictionaries\n\n Python Dictionaries\n Access Items\n Change Items\n Add Items\n Remove Items\n Loop Dictionaries\n Copy Dictionaries\n Nested Dictionaries\n Dictionary Methods\n Dictionary Exercises\n Code Challenge\n\nPython If...Else\n\n Python If\n Python Elif\n Python Else\n Shorthand If\n Logical Operators\n Nested If\n Pass Statement\n Code Challenge\n\nPython Match\n\n Match\n Code Challenge\n\nPython While Loops\n\n While Loops\n Code Challenge\n\nPython For Loops\n\n For Loops\n Code Challenge\n\nPython Data Processing--\u003e\nPython Functions\n\n Python Functions\n Python Arguments\n Python *args / **kwargs\n Python Scope\n Python Decorators\n Python Lambda\n Python Recursion\n Python Generators\n Code Challenge\n\nPython Range\n\n Range\n Code Challenge\n\nPython Arrays\n\n Arrays\n Code Challenge\n\nPython Iterators\n\n Iterators\n Code Challenge\n\nPython Modules\n\n Modules\n Code Challenge\n\nPython Dates\n\n Dates\n Code Challenge\n\nPython Math\n\n Math\n Code Challenge\n\nPython JSON\n\n JSON\n Code Challenge\n\nPython RegEx\n\n RegEx\n Code Challenge\n\nPython PIP\nPython Try...Except\n\n Try...Except\n Code Challenge\n\nPython String Formatting\n\n String Formatting\n Code Challenge\n\nPython None\n\n None\n Code Challenge\n\nPython User Input\n\nPython VirtualEnv",
+                             "heading":  "Python Tutorial"
+                         },
+                         {
+                             "content":  "Python OOP\nPython Classes/Objects\n\n Classes/Objects\n Code Challenge\n\nPython __init__ Method\n\n __init__ Method\n Code Challenge\n\nPython self Parameter\n\n self Parameter\n Code Challenge\n\nPython Class Properties\n\n Class Properties\n Code Challenge\n\nPython Class Methods\n\n Class Methods\n Code Challenge\n\nPython Inheritance\n\n Inheritance\n Code Challenge\n\nPython Polymorphism\n\n Polymorphism\n Code Challenge\n\nPython Encapsulation\n\n Encapsulation\n Code Challenge\n\nPython Inner Classes",
+                             "heading":  "Python Classes"
+                         },
+                         {
+                             "content":  "Python File Handling\nPython Read Files\nPython Write/Create Files\nPython Delete Files",
+                             "heading":  "File Handling"
+                         },
+                         {
+                             "content":  "NumPy Tutorial\nPandas Tutorial\nSciPy Tutorial\nDjango Tutorial\n\n\u003c!--",
+                             "heading":  "Python Modules"
+                         },
+                         {
+                             "content":  "NumPy Intro\nNumPy Getting Started\nNumPy Creating Arrays\nNumPy Array Indexing\nNumPy Array Slicing\nNumPy Data Types\nNumPy Copy vs View\nNumPy Array Shape\nNumPy Array Reshape\nNumPy Array Iterating\nNumPy Array Join\nNumPy Array Split\nNumPy Array Search\nNumPy Array Sort\nNumPy Array Filter\nNumPy Random\n\n Random Intro\n Data Distribution\n Random Permutation\n Seaborn Module\n Normal Distribution\n Binomial Distribution\n Poisson Distribution\n Uniform Distribution\n Logistic Distribution\n Multinomial Distribution\n Exponential Distribution\n Chi Square Distribution\n Rayleigh Distribution\n Pareto Distribution\n Zipf Distribution\n\nNumPy ufunc\n\n ufunc Intro\n ufunc Create Function\n ufunc Simple Arithmetic\n ufunc Rounding Decimals\n ufunc Logs\n ufunc Summations\n ufunc Products\n ufunc Differences\n ufunc Finding LCM\n ufunc Finding GCD\n ufunc Trigonometric\n ufunc Hyperbolic\n ufunc Set Operations\n\n--\u003e\n\u003c!--",
+                             "heading":  "Python NumPy"
+                         },
+                         {
+                             "content":  "Pandas Tutorial\nPandas Getting Started\nPandas Series\nPandas DataFrames\nPandas Read CSV\nPandas Read JSON\nPandas Analyzing Data\nPandas Cleaning Data\n\n Pandas Cleaning Data\n Cleaning Empty Cells\n Cleaning Wrong Format\n Cleaning Wrong Data\n Removing Duplicates\n\nPandas Correlations\nPandas Plotting\n\n--\u003e",
+                             "heading":  "Python Pandas"
+                         },
+                         {
+                             "content":  "Matplotlib Intro\nMatplotlib Get Started\nMatplotlib Pyplot\nMatplotlib Plotting\nMatplotlib Markers\nMatplotlib Line\nMatplotlib Labels\nMatplotlib Grid\nMatplotlib Subplot\nMatplotlib Scatter\nMatplotlib Bars\nMatplotlib Histograms\nMatplotlib Pie Charts\n\n\u003c!--",
+                             "heading":  "Python Matplotlib"
+                         },
+                         {
+                             "content":  "SciPy Intro\nSciPy Getting Started\nSciPy Constants\nSciPy Optimizers\nSciPy Sparse Data\nSciPy Graphs\nSciPy Spatial Data\nSciPy Matlab Arrays\nSciPy Interpolation\nSciPy Significance Tests\n\n--\u003e",
+                             "heading":  "Python SciPy"
+                         },
+                         {
+                             "content":  "Getting Started\nMean Median Mode\nStandard Deviation\nPercentile\nData Distribution\nNormal Data Distribution\nScatter Plot\nLinear Regression\nPolynomial Regression\nMultiple Regression\nScale\nTrain/Test\nDecision Tree\n\nConfusion Matrix\nHierarchical Clustering\nLogistic Regression\nGrid Search\nCategorical Data\nK-means\nBootstrap Aggregation\nCross Validation\nAUC - ROC Curve\nK-nearest neighbors",
+                             "heading":  "Machine Learning"
+                         },
+                         {
+                             "content":  "Python DSA\nLists and Arrays\nStacks\nQueues\nLinked Lists\nHash Tables\nTrees\nBinary Trees\nBinary Search Trees\nAVL Trees\nGraphs\nLinear Search\nBinary Search\nBubble Sort\nSelection Sort\nInsertion Sort\nQuick Sort\nCounting Sort\nRadix Sort\nMerge Sort",
+                             "heading":  "Python DSA"
+                         },
+                         {
+                             "content":  "MySQL Get Started\nMySQL Create Database\nMySQL Create Table\nMySQL Insert\nMySQL Select\nMySQL Where\nMySQL Order By\nMySQL Delete\nMySQL Drop Table\nMySQL Update\nMySQL Limit\nMySQL Join",
+                             "heading":  "Python MySQL"
+                         },
+                         {
+                             "content":  "MongoDB Get Started\nMongoDB Create DB\nMongoDB Collection\nMongoDB Insert\nMongoDB Find\nMongoDB Query\nMongoDB Sort\nMongoDB Delete\nMongoDB Drop Collection\nMongoDB Update\nMongoDB Limit\nPython Classes\nPython as Aspect Oriented\nPython File Handling\nPython Database\nPython Web Applications\nPython Workflows\nPython Maths \u0026 Science\nPython Regular Expressions\nPython Unit Testing\n--\u003e",
+                             "heading":  "Python MongoDB"
+                         },
+                         {
+                             "content":  "Python Certificate",
+                             "heading":  "Python Cert"
+                         },
+                         {
+                             "content":  "Python Overview\nPython Built-in Functions\nPython String Methods\nPython List Methods\nPython Dictionary Methods\nPython Tuple Methods\nPython Set Methods\nPython File Methods\nPython Keywords\nPython Exceptions\nPython Glossary",
+                             "heading":  "Python Reference"
+                         },
+                         {
+                             "content":  "Built-in Modules\nRandom Module\nRequests Module\nStatistics Module\nMath Module\ncMath Module",
+                             "heading":  "Module Reference"
+                         },
+                         {
+                             "content":  "Remove List Duplicates\nReverse a String\nAdd Two Numbers",
+                             "heading":  "Python How To"
+                         },
+                         {
+                             "content":  "Python Examples\nPython Compiler\nPython Exercises\nPython Quiz\nPython Challenges\nPython Practice Problems\nPython Server\nPython Syllabus\nPython Study Plan\nPython Interview Q\u0026A\nPython Bootcamp\nPython Training\n\nny:--\u003e\n\n ny:--\u003e\n\nny:--\u003e\n\nMatplotlib Plotting\n\n❮ Previous\n Next ❯",
+                             "heading":  "Python Examples"
+                         },
+                         {
+                             "content":  "The plot() function is used to draw points (markers) in a diagram.\n\nBy default, the plot() function draws a line from point to point.\n\nThe function takes parameters for specifying points in the diagram.\n\nParameter 1 is an array containing the points on the x-axis.\n\nParameter 2 is an array containing the points on the y-axis.\n\nIf we need to plot a line from (1, 3) to (8, 10), we have to pass two arrays [1, 8] and [3, 10] to the plot function.\n\nExample\n Draw a line in a diagram from position (1, 3) to position (8, 10):\n\nimport matplotlib.pyplot as plt\n\nimport numpy as np\n\nxpoints = np.array([1, 8])\n\nypoints = np.array([3, 10])\n\nplt.plot(xpoints, ypoints)\n\nplt.show()\n\nResult:\n\nTry it Yourself »\n\n The x-axis is the horizontal axis.\n\n The y-axis is the vertical axis.",
+                             "heading":  "Plotting x and y points"
+                         },
+                         {
+                             "content":  "To plot only the markers, you can use shortcut string notation parameter \u0027o\u0027, which means \u0027rings\u0027.\n\nExample\n Draw two points in the diagram, one at position (1, 3) and one in position (8, 10):\n\nimport matplotlib.pyplot as plt\n\nimport numpy as np\n\nxpoints = np.array([1, 8])\n\nypoints = np.array([3, 10])\n\nplt.plot(xpoints, ypoints, \u0027o\u0027)\n\nplt.show()\n\nResult:\n\nTry it Yourself »\n\n You will learn more about markers in the next chapter.",
+                             "heading":  "Plotting Without Line"
+                         },
+                         {
+                             "content":  "You can plot as many points as you like, just make sure you have the same number of points in both axis.\n\nExample\n Draw a line in a diagram from position (1, 3) to (2, 8) then to (6, 1) and finally to position (8, 10):\n\nimport matplotlib.pyplot as plt\n\nimport numpy as np\n\nxpoints = np.array([1, 2, 6, 8])\n\nypoints = np.array([3, 8, 1, 10])\n\nplt.plot(xpoints, ypoints)\n\nplt.show()\n\nResult:\n\nTry it Yourself »",
+                             "heading":  "Multiple Points"
+                         },
+                         {
+                             "content":  "If we do not specify the points on the x-axis, they will get the default values 0, 1, 2, 3 etc., depending on the length of the y-points.\n\nSo, if we take the same example as above, and leave out the x-points, the diagram will look like this:\n\nExample\n Plotting without x-points:\n\nimport matplotlib.pyplot as plt\n\nimport numpy as np\n\n ypoints = np.array([3, 8, 1, 10, 5, 7])\n\nplt.plot(ypoints)\n\nplt.show()\n\nResult:\n\nTry it Yourself »\n\n The x-points in the example above are [0, 1, 2, 3, 4, 5].\n\n❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                             "heading":  "Default X-Points"
+                         },
+                         {
+                             "content":  "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                             "heading":  "Contact Sales"
+                         }
+                     ],
+        "extracted_at":  "2026-08-09T11:16:28Z",
+        "subject":  "Matplotlib",
+        "title":  "Matplotlib Plotting"
+    },
+    {
+        "url":  "https://www.w3schools.com/python/matplotlib_markers.asp",
+        "summary":  "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id":  "matplotlib_matplotlib_markers",
+        "code_examples":  [
+                              {
+                                  "code":  "import matplotlib.pyplot as plt\n\nimport numpy as np\n\nypoints = np.array([3, 8, 1, 10])\n\nplt.plot(ypoints, marker = \u0027o\u0027)\n\nplt.show()",
+                                  "language":  "matplotlib",
+                                  "heading":  "Example",
+                                  "tryit_url":  null
+                              }
+                          ],
+        "category":  "Data Science \u0026 AI",
+        "notes_and_tips":  [
+
+                           ],
+        "sections":  [
+                         {
+                             "content":  "×\n\n ← All Topics",
+                             "heading":  "W3SCHOOLS TUTORIALS:"
+                         },
+                         {
+                             "content":  "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                             "heading":  "W3SCHOOLS REFERENCES:"
+                         },
+                         {
+                             "content":  "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                             "heading":  "Select another topic:"
+                         },
+                         {
+                             "content":  "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                             "heading":  "W3SCHOOLS CERTIFICATES:"
+                         },
+                         {
+                             "content":  "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To\u0027s\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n--\u003e\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n--\u003e\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n \u0026#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML \u0026 CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n--\u003e\n\n×--\u003e",
+                             "heading":  "All Our Services"
+                         },
+                         {
+                             "content":  "Python HOME\nPython Intro\nPython Get Started\nPython Syntax\n\nSyntax\nStatements\nCode Challenge\n\nPython Output\n\nPrint Text\nPrint Numbers\nCode Challenge\n\nPython Comments\n\nComments\nCode Challenge\n\nPython Variables\n\n Python Variables\n Variable Names\n Assign Multiple Values\n Output Variables\n Global Variables\n Variable Exercises\n Code Challenge\n\nPython Data Types\n\n Data Types\n Code Challenge\n\n Python bytes\n Python bytearray\n Python memoryview\n\n--\u003e\nPython Numbers\n\n Numbers\n Code Challenge\n\nPython Primitive Types--\u003e\nPython Casting\n\n Casting\n Code Challenge\n\nPython Strings\n\n Python Strings\n Slicing Strings\n Modify Strings\n Concatenate Strings\n Format Strings\n Escape Characters\n String Methods\n String Exercises\n Code Challenge\n\nPython Booleans\n\n Booleans\n Code Challenge\n\nPython Operators\n\n Python Operators\n Arithmetic Operators\n Assignment Operators\n Ternary Operator \n Comparison Operators\n Logical Operators\n Identity Operators\n Membership Operators\n Bitwise Operators\n Operator Precedence\n Code Challenge\n\nPython Lists\n\n Python Lists\n Access List Items\n Change List Items\n Add List Items\n Remove List Items\n Loop Lists\n List Comprehension\n Sort Lists\n Copy Lists\n Join Lists\n List Methods\n List Exercises\n Code Challenge\n\nPython Tuples\n\n Python Tuples\n Access Tuples\n Update Tuples\n Unpack Tuples\n Loop Tuples\n Join Tuples\n Tuple Methods\n Tuple Exercises\n Code Challenge\n\nPython Sets\n\n Python Sets\n Access Set Items\n Add Set Items\n Remove Set Items\n Loop Sets\n Join Sets\n Frozenset\n Set Methods\n Set Exercises\n Code Challenge\n\nPython Dictionaries\n\n Python Dictionaries\n Access Items\n Change Items\n Add Items\n Remove Items\n Loop Dictionaries\n Copy Dictionaries\n Nested Dictionaries\n Dictionary Methods\n Dictionary Exercises\n Code Challenge\n\nPython If...Else\n\n Python If\n Python Elif\n Python Else\n Shorthand If\n Logical Operators\n Nested If\n Pass Statement\n Code Challenge\n\nPython Match\n\n Match\n Code Challenge\n\nPython While Loops\n\n While Loops\n Code Challenge\n\nPython For Loops\n\n For Loops\n Code Challenge\n\nPython Data Processing--\u003e\nPython Functions\n\n Python Functions\n Python Arguments\n Python *args / **kwargs\n Python Scope\n Python Decorators\n Python Lambda\n Python Recursion\n Python Generators\n Code Challenge\n\nPython Range\n\n Range\n Code Challenge\n\nPython Arrays\n\n Arrays\n Code Challenge\n\nPython Iterators\n\n Iterators\n Code Challenge\n\nPython Modules\n\n Modules\n Code Challenge\n\nPython Dates\n\n Dates\n Code Challenge\n\nPython Math\n\n Math\n Code Challenge\n\nPython JSON\n\n JSON\n Code Challenge\n\nPython RegEx\n\n RegEx\n Code Challenge\n\nPython PIP\nPython Try...Except\n\n Try...Except\n Code Challenge\n\nPython String Formatting\n\n String Formatting\n Code Challenge\n\nPython None\n\n None\n Code Challenge\n\nPython User Input\n\nPython VirtualEnv",
+                             "heading":  "Python Tutorial"
+                         },
+                         {
+                             "content":  "Python OOP\nPython Classes/Objects\n\n Classes/Objects\n Code Challenge\n\nPython __init__ Method\n\n __init__ Method\n Code Challenge\n\nPython self Parameter\n\n self Parameter\n Code Challenge\n\nPython Class Properties\n\n Class Properties\n Code Challenge\n\nPython Class Methods\n\n Class Methods\n Code Challenge\n\nPython Inheritance\n\n Inheritance\n Code Challenge\n\nPython Polymorphism\n\n Polymorphism\n Code Challenge\n\nPython Encapsulation\n\n Encapsulation\n Code Challenge\n\nPython Inner Classes",
+                             "heading":  "Python Classes"
+                         },
+                         {
+                             "content":  "Python File Handling\nPython Read Files\nPython Write/Create Files\nPython Delete Files",
+                             "heading":  "File Handling"
+                         },
+                         {
+                             "content":  "NumPy Tutorial\nPandas Tutorial\nSciPy Tutorial\nDjango Tutorial\n\n\u003c!--",
+                             "heading":  "Python Modules"
+                         },
+                         {
+                             "content":  "NumPy Intro\nNumPy Getting Started\nNumPy Creating Arrays\nNumPy Array Indexing\nNumPy Array Slicing\nNumPy Data Types\nNumPy Copy vs View\nNumPy Array Shape\nNumPy Array Reshape\nNumPy Array Iterating\nNumPy Array Join\nNumPy Array Split\nNumPy Array Search\nNumPy Array Sort\nNumPy Array Filter\nNumPy Random\n\n Random Intro\n Data Distribution\n Random Permutation\n Seaborn Module\n Normal Distribution\n Binomial Distribution\n Poisson Distribution\n Uniform Distribution\n Logistic Distribution\n Multinomial Distribution\n Exponential Distribution\n Chi Square Distribution\n Rayleigh Distribution\n Pareto Distribution\n Zipf Distribution\n\nNumPy ufunc\n\n ufunc Intro\n ufunc Create Function\n ufunc Simple Arithmetic\n ufunc Rounding Decimals\n ufunc Logs\n ufunc Summations\n ufunc Products\n ufunc Differences\n ufunc Finding LCM\n ufunc Finding GCD\n ufunc Trigonometric\n ufunc Hyperbolic\n ufunc Set Operations\n\n--\u003e\n\u003c!--",
+                             "heading":  "Python NumPy"
+                         },
+                         {
+                             "content":  "Pandas Tutorial\nPandas Getting Started\nPandas Series\nPandas DataFrames\nPandas Read CSV\nPandas Read JSON\nPandas Analyzing Data\nPandas Cleaning Data\n\n Pandas Cleaning Data\n Cleaning Empty Cells\n Cleaning Wrong Format\n Cleaning Wrong Data\n Removing Duplicates\n\nPandas Correlations\nPandas Plotting\n\n--\u003e",
+                             "heading":  "Python Pandas"
+                         },
+                         {
+                             "content":  "Matplotlib Intro\nMatplotlib Get Started\nMatplotlib Pyplot\nMatplotlib Plotting\nMatplotlib Markers\nMatplotlib Line\nMatplotlib Labels\nMatplotlib Grid\nMatplotlib Subplot\nMatplotlib Scatter\nMatplotlib Bars\nMatplotlib Histograms\nMatplotlib Pie Charts\n\n\u003c!--",
+                             "heading":  "Python Matplotlib"
+                         },
+                         {
+                             "content":  "SciPy Intro\nSciPy Getting Started\nSciPy Constants\nSciPy Optimizers\nSciPy Sparse Data\nSciPy Graphs\nSciPy Spatial Data\nSciPy Matlab Arrays\nSciPy Interpolation\nSciPy Significance Tests\n\n--\u003e",
+                             "heading":  "Python SciPy"
+                         },
+                         {
+                             "content":  "Getting Started\nMean Median Mode\nStandard Deviation\nPercentile\nData Distribution\nNormal Data Distribution\nScatter Plot\nLinear Regression\nPolynomial Regression\nMultiple Regression\nScale\nTrain/Test\nDecision Tree\n\nConfusion Matrix\nHierarchical Clustering\nLogistic Regression\nGrid Search\nCategorical Data\nK-means\nBootstrap Aggregation\nCross Validation\nAUC - ROC Curve\nK-nearest neighbors",
+                             "heading":  "Machine Learning"
+                         },
+                         {
+                             "content":  "Python DSA\nLists and Arrays\nStacks\nQueues\nLinked Lists\nHash Tables\nTrees\nBinary Trees\nBinary Search Trees\nAVL Trees\nGraphs\nLinear Search\nBinary Search\nBubble Sort\nSelection Sort\nInsertion Sort\nQuick Sort\nCounting Sort\nRadix Sort\nMerge Sort",
+                             "heading":  "Python DSA"
+                         },
+                         {
+                             "content":  "MySQL Get Started\nMySQL Create Database\nMySQL Create Table\nMySQL Insert\nMySQL Select\nMySQL Where\nMySQL Order By\nMySQL Delete\nMySQL Drop Table\nMySQL Update\nMySQL Limit\nMySQL Join",
+                             "heading":  "Python MySQL"
+                         },
+                         {
+                             "content":  "MongoDB Get Started\nMongoDB Create DB\nMongoDB Collection\nMongoDB Insert\nMongoDB Find\nMongoDB Query\nMongoDB Sort\nMongoDB Delete\nMongoDB Drop Collection\nMongoDB Update\nMongoDB Limit\nPython Classes\nPython as Aspect Oriented\nPython File Handling\nPython Database\nPython Web Applications\nPython Workflows\nPython Maths \u0026 Science\nPython Regular Expressions\nPython Unit Testing\n--\u003e",
+                             "heading":  "Python MongoDB"
+                         },
+                         {
+                             "content":  "Python Certificate",
+                             "heading":  "Python Cert"
+                         },
+                         {
+                             "content":  "Python Overview\nPython Built-in Functions\nPython String Methods\nPython List Methods\nPython Dictionary Methods\nPython Tuple Methods\nPython Set Methods\nPython File Methods\nPython Keywords\nPython Exceptions\nPython Glossary",
+                             "heading":  "Python Reference"
+                         },
+                         {
+                             "content":  "Built-in Modules\nRandom Module\nRequests Module\nStatistics Module\nMath Module\ncMath Module",
+                             "heading":  "Module Reference"
+                         },
+                         {
+                             "content":  "Remove List Duplicates\nReverse a String\nAdd Two Numbers",
+                             "heading":  "Python How To"
+                         },
+                         {
+                             "content":  "Python Examples\nPython Compiler\nPython Exercises\nPython Quiz\nPython Challenges\nPython Practice Problems\nPython Server\nPython Syllabus\nPython Study Plan\nPython Interview Q\u0026A\nPython Bootcamp\nPython Training\n\nny:--\u003e\n\n ny:--\u003e\n\nny:--\u003e\n\nMatplotlib Markers\n\n ❮ Previous\nNext ❯",
+                             "heading":  "Python Examples"
+                         },
+                         {
+                             "content":  "You can use the keyword argument marker to \nemphasize each point with a specified marker:\n\nExample\nMark each point with a circle:\n\nimport matplotlib.pyplot as plt\n\nimport numpy as np\n\nypoints = np.array([3, 8, 1, 10])\n\nplt.plot(ypoints, marker = \u0027o\u0027)\n\nplt.show()\n\nResult:\n\nTry it Yourself »\n\nExample\nMark each point with a star:\n\n...\n\nplt.plot(ypoints, marker = \u0027*\u0027)\n\n...\n\nResult:\n\nTry it Yourself »",
+                             "heading":  "Markers"
+                         },
+                         {
+                             "content":  "You can choose any of these markers:\n\nMarker\nDescription\n\n\u0027o\u0027\nCircle\nTry it »\n\n\u0027*\u0027\nStar\nTry it »\n\n\u0027.\u0027\nPoint\nTry it »\n\n\u0027,\u0027\nPixel\nTry it »\n\n\u0027x\u0027\nX\nTry it »\n\n\u0027X\u0027\nX (filled)\nTry it »\n\n\u0027+\u0027\nPlus\nTry it »\n\n\u0027P\u0027\nPlus (filled)\nTry it »\n\n\u0027s\u0027\nSquare\nTry it »\n\n\u0027D\u0027\nDiamond\nTry it »\n\n\u0027d\u0027\nDiamond (thin)\nTry it »\n\n\u0027p\u0027\nPentagon\nTry it »\n\n\u0027H\u0027\nHexagon\nTry it »\n\n\u0027h\u0027\nHexagon\nTry it »\n\n\u0027v\u0027\nTriangle Down\nTry it »\n\n\u0027^\u0027\nTriangle Up\nTry it »\n\n\u0027\u003c\u0027\nTriangle Left\nTry it »\n\n\u0027\u003e\u0027\nTriangle Right\nTry it »\n\n\u00271\u0027\nTri Down\nTry it »\n\n\u00272\u0027\nTri Up\nTry it »\n\n\u00273\u0027\nTri Left\nTry it »\n\n\u00274\u0027\nTri Right\nTry it »\n\n\u0027|\u0027\nVline\nTry it »\n\n\u0027_\u0027\nHline\nTry it »",
+                             "heading":  "Marker Reference"
+                         },
+                         {
+                             "content":  "You can also use the shortcut string notation parameter to specify the marker.\n\nThis parameter is also called fmt, and is written with this syntax:\n\nmarker|line|color\n\nExample\nMark each point with a circle:\n\nimport matplotlib.pyplot as plt\n\nimport numpy as np\n\nypoints = np.array([3, 8, 1, 10])\n\nplt.plot(ypoints, \u0027o:r\u0027)\n\nplt.show()\n\nResult:\n\nTry it Yourself »\n\nThe marker value can be anything from the Marker Reference above.\n\nThe line value can be one of the following:",
+                             "heading":  "Format Strings fmt"
+                         },
+                         {
+                             "content":  "Line Syntax\nDescription\n\n\u0027-\u0027\nSolid line\nTry it »\n\n\u0027:\u0027\nDotted line\nTry it »\n\n\u0027--\u0027\nDashed line\nTry it »\n\n\u0027-.\u0027\nDashed/dotted line\nTry it »\n\n Note: If you leave out the line value in the fmt parameter, no line will be plotted.\n\nThe short color value can be one of the following:",
+                             "heading":  "Line Reference"
+                         },
+                         {
+                             "content":  "Color Syntax\nDescription\n\n\u0027r\u0027\nRed\nTry it »\n\n\u0027g\u0027\nGreen\nTry it »\n\n\u0027b\u0027\nBlue\nTry it »\n\n\u0027c\u0027\nCyan\nTry it »\n\n\u0027m\u0027\nMagenta\nTry it »\n\n\u0027y\u0027\nYellow\nTry it »\n\n\u0027k\u0027\nBlack\nTry it »\n\n\u0027w\u0027\nWhite\nTry it »",
+                             "heading":  "Color Reference"
+                         },
+                         {
+                             "content":  "You can use the keyword argument markersize or the \nshorter version, ms to set the size of the markers:\n\nExample\nSet the size of the markers to 20:\n\nimport matplotlib.pyplot as plt\n\nimport numpy as np\n\nypoints = np.array([3, 8, 1, 10])\n\nplt.plot(ypoints, marker = \u0027o\u0027, ms = 20)\n\nplt.show()\n\nResult:\n\nTry it Yourself »",
+                             "heading":  "Marker Size"
+                         },
+                         {
+                             "content":  "You can use the keyword argument markeredgecolor or \nthe shorter mec to set the color of the \nedge of the markers:\n\nExample\nSet the EDGE color to red:\n\nimport matplotlib.pyplot as plt\n\nimport numpy as np\n\nypoints = np.array([3, 8, 1, 10])\n\nplt.plot(ypoints, marker = \u0027o\u0027, ms = 20, mec = \u0027r\u0027)\n\nplt.show()\n\nResult:\n\nTry it Yourself »\n\nYou can use the keyword argument markerfacecolor or \nthe shorter mfc to set the color inside the edge of the markers:\n\nExample\nSet the FACE color to red:\n\nimport matplotlib.pyplot as plt\n\nimport numpy as np\n\nypoints = np.array([3, 8, 1, 10])\n\nplt.plot(ypoints, marker = \u0027o\u0027, ms = 20, mfc = \u0027r\u0027)\n\nplt.show()\n\nResult:\n\nTry it Yourself »\n\nUse both the mec and mfc arguments to color the entire marker:\n\nExample\nSet the color of both the edge and the face to red:\n\nimport matplotlib.pyplot as plt\n\nimport numpy as np\n\nypoints = np.array([3, 8, 1, 10])\n\nplt.plot(ypoints, marker = \u0027o\u0027, ms = 20, mec = \u0027r\u0027, mfc = \u0027r\u0027)\n\nplt.show()\n\nResult:\n\nTry it Yourself »\n\nYou can also use Hexadecimal color values:\n\nExample\nMark each point with a beautiful green color:\n\n...\n\nplt.plot(ypoints, marker = \u0027o\u0027, ms = 20, mec = \u0027#4CAF50\u0027, mfc = \u0027#4CAF50\u0027)\n\n...\n\nResult:\n\nTry it Yourself »\n\nOr any of the 140 supported color names.\n\nExample\nMark each point with the color named \"hotpink\":\n\n...\n\nplt.plot(ypoints, marker = \u0027o\u0027, ms = 20, mec = \u0027hotpink\u0027, mfc = \u0027hotpink\u0027)\n\n...\n\nResult:\n\nTry it Yourself »\n\n ❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                             "heading":  "Marker Color"
+                         },
+                         {
+                             "content":  "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                             "heading":  "Contact Sales"
+                         }
+                     ],
+        "extracted_at":  "2026-08-09T11:16:28Z",
+        "subject":  "Matplotlib",
+        "title":  "Matplotlib Markers"
+    },
+    {
+        "url":  "https://www.w3schools.com/python/matplotlib_line.asp",
+        "summary":  "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id":  "matplotlib_matplotlib_line",
+        "code_examples":  [
+                              {
+                                  "code":  "import matplotlib.pyplot as plt\n\nimport numpy as np\n\nypoints = np.array([3, 8, 1, 10])\n\nplt.plot(ypoints, linestyle = \u0027dotted\u0027)\n\nplt.show()",
+                                  "language":  "matplotlib",
+                                  "heading":  "Example",
+                                  "tryit_url":  null
+                              }
+                          ],
+        "category":  "Data Science \u0026 AI",
+        "notes_and_tips":  [
+
+                           ],
+        "sections":  [
+                         {
+                             "content":  "×\n\n ← All Topics",
+                             "heading":  "W3SCHOOLS TUTORIALS:"
+                         },
+                         {
+                             "content":  "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                             "heading":  "W3SCHOOLS REFERENCES:"
+                         },
+                         {
+                             "content":  "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                             "heading":  "Select another topic:"
+                         },
+                         {
+                             "content":  "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                             "heading":  "W3SCHOOLS CERTIFICATES:"
+                         },
+                         {
+                             "content":  "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To\u0027s\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n--\u003e\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n--\u003e\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n \u0026#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML \u0026 CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n--\u003e\n\n×--\u003e",
+                             "heading":  "All Our Services"
+                         },
+                         {
+                             "content":  "Python HOME\nPython Intro\nPython Get Started\nPython Syntax\n\nSyntax\nStatements\nCode Challenge\n\nPython Output\n\nPrint Text\nPrint Numbers\nCode Challenge\n\nPython Comments\n\nComments\nCode Challenge\n\nPython Variables\n\n Python Variables\n Variable Names\n Assign Multiple Values\n Output Variables\n Global Variables\n Variable Exercises\n Code Challenge\n\nPython Data Types\n\n Data Types\n Code Challenge\n\n Python bytes\n Python bytearray\n Python memoryview\n\n--\u003e\nPython Numbers\n\n Numbers\n Code Challenge\n\nPython Primitive Types--\u003e\nPython Casting\n\n Casting\n Code Challenge\n\nPython Strings\n\n Python Strings\n Slicing Strings\n Modify Strings\n Concatenate Strings\n Format Strings\n Escape Characters\n String Methods\n String Exercises\n Code Challenge\n\nPython Booleans\n\n Booleans\n Code Challenge\n\nPython Operators\n\n Python Operators\n Arithmetic Operators\n Assignment Operators\n Ternary Operator \n Comparison Operators\n Logical Operators\n Identity Operators\n Membership Operators\n Bitwise Operators\n Operator Precedence\n Code Challenge\n\nPython Lists\n\n Python Lists\n Access List Items\n Change List Items\n Add List Items\n Remove List Items\n Loop Lists\n List Comprehension\n Sort Lists\n Copy Lists\n Join Lists\n List Methods\n List Exercises\n Code Challenge\n\nPython Tuples\n\n Python Tuples\n Access Tuples\n Update Tuples\n Unpack Tuples\n Loop Tuples\n Join Tuples\n Tuple Methods\n Tuple Exercises\n Code Challenge\n\nPython Sets\n\n Python Sets\n Access Set Items\n Add Set Items\n Remove Set Items\n Loop Sets\n Join Sets\n Frozenset\n Set Methods\n Set Exercises\n Code Challenge\n\nPython Dictionaries\n\n Python Dictionaries\n Access Items\n Change Items\n Add Items\n Remove Items\n Loop Dictionaries\n Copy Dictionaries\n Nested Dictionaries\n Dictionary Methods\n Dictionary Exercises\n Code Challenge\n\nPython If...Else\n\n Python If\n Python Elif\n Python Else\n Shorthand If\n Logical Operators\n Nested If\n Pass Statement\n Code Challenge\n\nPython Match\n\n Match\n Code Challenge\n\nPython While Loops\n\n While Loops\n Code Challenge\n\nPython For Loops\n\n For Loops\n Code Challenge\n\nPython Data Processing--\u003e\nPython Functions\n\n Python Functions\n Python Arguments\n Python *args / **kwargs\n Python Scope\n Python Decorators\n Python Lambda\n Python Recursion\n Python Generators\n Code Challenge\n\nPython Range\n\n Range\n Code Challenge\n\nPython Arrays\n\n Arrays\n Code Challenge\n\nPython Iterators\n\n Iterators\n Code Challenge\n\nPython Modules\n\n Modules\n Code Challenge\n\nPython Dates\n\n Dates\n Code Challenge\n\nPython Math\n\n Math\n Code Challenge\n\nPython JSON\n\n JSON\n Code Challenge\n\nPython RegEx\n\n RegEx\n Code Challenge\n\nPython PIP\nPython Try...Except\n\n Try...Except\n Code Challenge\n\nPython String Formatting\n\n String Formatting\n Code Challenge\n\nPython None\n\n None\n Code Challenge\n\nPython User Input\n\nPython VirtualEnv",
+                             "heading":  "Python Tutorial"
+                         },
+                         {
+                             "content":  "Python OOP\nPython Classes/Objects\n\n Classes/Objects\n Code Challenge\n\nPython __init__ Method\n\n __init__ Method\n Code Challenge\n\nPython self Parameter\n\n self Parameter\n Code Challenge\n\nPython Class Properties\n\n Class Properties\n Code Challenge\n\nPython Class Methods\n\n Class Methods\n Code Challenge\n\nPython Inheritance\n\n Inheritance\n Code Challenge\n\nPython Polymorphism\n\n Polymorphism\n Code Challenge\n\nPython Encapsulation\n\n Encapsulation\n Code Challenge\n\nPython Inner Classes",
+                             "heading":  "Python Classes"
+                         },
+                         {
+                             "content":  "Python File Handling\nPython Read Files\nPython Write/Create Files\nPython Delete Files",
+                             "heading":  "File Handling"
+                         },
+                         {
+                             "content":  "NumPy Tutorial\nPandas Tutorial\nSciPy Tutorial\nDjango Tutorial\n\n\u003c!--",
+                             "heading":  "Python Modules"
+                         },
+                         {
+                             "content":  "NumPy Intro\nNumPy Getting Started\nNumPy Creating Arrays\nNumPy Array Indexing\nNumPy Array Slicing\nNumPy Data Types\nNumPy Copy vs View\nNumPy Array Shape\nNumPy Array Reshape\nNumPy Array Iterating\nNumPy Array Join\nNumPy Array Split\nNumPy Array Search\nNumPy Array Sort\nNumPy Array Filter\nNumPy Random\n\n Random Intro\n Data Distribution\n Random Permutation\n Seaborn Module\n Normal Distribution\n Binomial Distribution\n Poisson Distribution\n Uniform Distribution\n Logistic Distribution\n Multinomial Distribution\n Exponential Distribution\n Chi Square Distribution\n Rayleigh Distribution\n Pareto Distribution\n Zipf Distribution\n\nNumPy ufunc\n\n ufunc Intro\n ufunc Create Function\n ufunc Simple Arithmetic\n ufunc Rounding Decimals\n ufunc Logs\n ufunc Summations\n ufunc Products\n ufunc Differences\n ufunc Finding LCM\n ufunc Finding GCD\n ufunc Trigonometric\n ufunc Hyperbolic\n ufunc Set Operations\n\n--\u003e\n\u003c!--",
+                             "heading":  "Python NumPy"
+                         },
+                         {
+                             "content":  "Pandas Tutorial\nPandas Getting Started\nPandas Series\nPandas DataFrames\nPandas Read CSV\nPandas Read JSON\nPandas Analyzing Data\nPandas Cleaning Data\n\n Pandas Cleaning Data\n Cleaning Empty Cells\n Cleaning Wrong Format\n Cleaning Wrong Data\n Removing Duplicates\n\nPandas Correlations\nPandas Plotting\n\n--\u003e",
+                             "heading":  "Python Pandas"
+                         },
+                         {
+                             "content":  "Matplotlib Intro\nMatplotlib Get Started\nMatplotlib Pyplot\nMatplotlib Plotting\nMatplotlib Markers\nMatplotlib Line\nMatplotlib Labels\nMatplotlib Grid\nMatplotlib Subplot\nMatplotlib Scatter\nMatplotlib Bars\nMatplotlib Histograms\nMatplotlib Pie Charts\n\n\u003c!--",
+                             "heading":  "Python Matplotlib"
+                         },
+                         {
+                             "content":  "SciPy Intro\nSciPy Getting Started\nSciPy Constants\nSciPy Optimizers\nSciPy Sparse Data\nSciPy Graphs\nSciPy Spatial Data\nSciPy Matlab Arrays\nSciPy Interpolation\nSciPy Significance Tests\n\n--\u003e",
+                             "heading":  "Python SciPy"
+                         },
+                         {
+                             "content":  "Getting Started\nMean Median Mode\nStandard Deviation\nPercentile\nData Distribution\nNormal Data Distribution\nScatter Plot\nLinear Regression\nPolynomial Regression\nMultiple Regression\nScale\nTrain/Test\nDecision Tree\n\nConfusion Matrix\nHierarchical Clustering\nLogistic Regression\nGrid Search\nCategorical Data\nK-means\nBootstrap Aggregation\nCross Validation\nAUC - ROC Curve\nK-nearest neighbors",
+                             "heading":  "Machine Learning"
+                         },
+                         {
+                             "content":  "Python DSA\nLists and Arrays\nStacks\nQueues\nLinked Lists\nHash Tables\nTrees\nBinary Trees\nBinary Search Trees\nAVL Trees\nGraphs\nLinear Search\nBinary Search\nBubble Sort\nSelection Sort\nInsertion Sort\nQuick Sort\nCounting Sort\nRadix Sort\nMerge Sort",
+                             "heading":  "Python DSA"
+                         },
+                         {
+                             "content":  "MySQL Get Started\nMySQL Create Database\nMySQL Create Table\nMySQL Insert\nMySQL Select\nMySQL Where\nMySQL Order By\nMySQL Delete\nMySQL Drop Table\nMySQL Update\nMySQL Limit\nMySQL Join",
+                             "heading":  "Python MySQL"
+                         },
+                         {
+                             "content":  "MongoDB Get Started\nMongoDB Create DB\nMongoDB Collection\nMongoDB Insert\nMongoDB Find\nMongoDB Query\nMongoDB Sort\nMongoDB Delete\nMongoDB Drop Collection\nMongoDB Update\nMongoDB Limit\nPython Classes\nPython as Aspect Oriented\nPython File Handling\nPython Database\nPython Web Applications\nPython Workflows\nPython Maths \u0026 Science\nPython Regular Expressions\nPython Unit Testing\n--\u003e",
+                             "heading":  "Python MongoDB"
+                         },
+                         {
+                             "content":  "Python Certificate",
+                             "heading":  "Python Cert"
+                         },
+                         {
+                             "content":  "Python Overview\nPython Built-in Functions\nPython String Methods\nPython List Methods\nPython Dictionary Methods\nPython Tuple Methods\nPython Set Methods\nPython File Methods\nPython Keywords\nPython Exceptions\nPython Glossary",
+                             "heading":  "Python Reference"
+                         },
+                         {
+                             "content":  "Built-in Modules\nRandom Module\nRequests Module\nStatistics Module\nMath Module\ncMath Module",
+                             "heading":  "Module Reference"
+                         },
+                         {
+                             "content":  "Remove List Duplicates\nReverse a String\nAdd Two Numbers",
+                             "heading":  "Python How To"
+                         },
+                         {
+                             "content":  "Python Examples\nPython Compiler\nPython Exercises\nPython Quiz\nPython Challenges\nPython Practice Problems\nPython Server\nPython Syllabus\nPython Study Plan\nPython Interview Q\u0026A\nPython Bootcamp\nPython Training\n\nny:--\u003e\n\n ny:--\u003e\n\nny:--\u003e\n\nMatplotlib Line\n\n❮ Previous\n Next ❯",
+                             "heading":  "Python Examples"
+                         },
+                         {
+                             "content":  "You can use the keyword argument linestyle, or shorter ls, to \nchange the style of the plotted line:\n\nExample\nUse a dotted line:\n\nimport matplotlib.pyplot as plt\n\nimport numpy as np\n\nypoints = np.array([3, 8, 1, 10])\n\nplt.plot(ypoints, linestyle = \u0027dotted\u0027)\n\nplt.show()\n\nResult:\n\nTry it Yourself »\n\nExample\nUse a dashed line:\n\nplt.plot(ypoints, linestyle = \u0027dashed\u0027)\n\nResult:\n\nTry it Yourself »",
+                             "heading":  "Linestyle"
+                         },
+                         {
+                             "content":  "The line style can be written in a shorter syntax:\n\nlinestyle can be written as ls.\n\ndotted can be written as :.\n\ndashed can be written as --.\n\nExample\nShorter syntax:\n\nplt.plot(ypoints, ls = \u0027:\u0027)\n\nResult:\n\nTry it Yourself »",
+                             "heading":  "Shorter Syntax"
+                         },
+                         {
+                             "content":  "You can choose any of these styles:\n\nStyle\nOr\n\n\u0027solid\u0027 (default)\n\u0027-\u0027\nTry it »\n\n\u0027dotted\u0027\n\u0027:\u0027\nTry it »\n\n\u0027dashed\u0027\n\u0027--\u0027\nTry it »\n\n\u0027dashdot\u0027\n\u0027-.\u0027\nTry it »\n\n\u0027None\u0027\n\u0027\u0027 or \u0027 \u0027\nTry it »",
+                             "heading":  "Line Styles"
+                         },
+                         {
+                             "content":  "You can use the keyword argument color or \nthe shorter c to set the color of the line:\n\nExample\nSet the line color to red:\n\nimport matplotlib.pyplot as plt\n\nimport numpy as np\n\nypoints = np.array([3, 8, 1, 10])\n\nplt.plot(ypoints, color = \u0027r\u0027)\n\nplt.show()\n\nResult:\n\nTry it Yourself »\n\nYou can also use Hexadecimal color values:\n\nExample\nPlot with a beautiful green line:\n\n...\n\nplt.plot(ypoints, c = \u0027#4CAF50\u0027)\n\n...\n\nResult:\n\nTry it Yourself »\n\nOr any of the 140 supported color names.\n\nExample\nPlot with the color named \"hotpink\":\n\n...\n\nplt.plot(ypoints, c = \u0027hotpink\u0027)\n\n...\n\nResult:\n\nTry it Yourself »",
+                             "heading":  "Line Color"
+                         },
+                         {
+                             "content":  "You can use the keyword argument linewidth or \nthe shorter lw to change the width of the line.\n\nThe value is a floating number, in points:\n\nExample\nPlot with a 20.5pt wide line:\n\nimport matplotlib.pyplot as plt\n\nimport numpy as np\n\nypoints = np.array([3, 8, 1, 10])\n\nplt.plot(ypoints, linewidth = \u002720.5\u0027)\n\nplt.show()\n\nResult:\n\nTry it Yourself »",
+                             "heading":  "Line Width"
+                         },
+                         {
+                             "content":  "You can plot as many lines as you like by simply adding more plt.plot() functions:\n\nExample\nDraw two lines by specifying a plt.plot() function for each line:\n\nimport matplotlib.pyplot as plt\n\nimport numpy as np\n\ny1 = np.array([3, 8, 1, 10])\n\ny2 = np.array([6, 2, 7, 11])\n\nplt.plot(y1)\n\nplt.plot(y2)\n\nplt.show()\n\nResult:\n\nTry it Yourself »\n\nYou can also plot many lines by adding the points for the x- and y-axis for each line in the same plt.plot() function.\n\n(In the examples above we only specified the points on the y-axis, meaning that the points on the x-axis got the the default values (0, 1, 2, 3).)\n\nThe x- and y- values come in pairs:\n\nExample\nDraw two lines by specifiyng the x- and y-point values for both lines:\n\nimport matplotlib.pyplot as plt\n\nimport numpy as np\n\nx1 = np.array([0, 1, 2, 3])\n\ny1 = np.array([3, 8, 1, 10])\n\nx2 = np.array([0, 1, 2, 3])\n\ny2 = np.array([6, 2, 7, 11])\n\nplt.plot(x1, y1, x2, y2)\n\nplt.show()\n\nResult:\n\nTry it Yourself »\n\n❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                             "heading":  "Multiple Lines"
+                         },
+                         {
+                             "content":  "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                             "heading":  "Contact Sales"
+                         }
+                     ],
+        "extracted_at":  "2026-08-09T11:16:29Z",
+        "subject":  "Matplotlib",
+        "title":  "Matplotlib Line"
+    },
+    {
+        "url":  "https://www.w3schools.com/python/matplotlib_labels.asp",
+        "summary":  "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id":  "matplotlib_matplotlib_labels",
+        "code_examples":  [
+                              {
+                                  "code":  "import numpy as np\nimport matplotlib.pyplot as plt\n\nx = np.array([80, \n 85, 90, 95, 100, 105, 110, 115, 120, 125])\ny = np.array([240, 250, 260, \n 270, 280, 290, 300, 310, 320, 330])\n\nplt.plot(x, y)\n\nplt.xlabel(\"Average \n Pulse\")\nplt.ylabel(\"Calorie Burnage\")\n\nplt.show()",
+                                  "language":  "matplotlib",
+                                  "heading":  "Example",
+                                  "tryit_url":  null
+                              }
+                          ],
+        "category":  "Data Science \u0026 AI",
+        "notes_and_tips":  [
+
+                           ],
+        "sections":  [
+                         {
+                             "content":  "×\n\n ← All Topics",
+                             "heading":  "W3SCHOOLS TUTORIALS:"
+                         },
+                         {
+                             "content":  "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                             "heading":  "W3SCHOOLS REFERENCES:"
+                         },
+                         {
+                             "content":  "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                             "heading":  "Select another topic:"
+                         },
+                         {
+                             "content":  "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                             "heading":  "W3SCHOOLS CERTIFICATES:"
+                         },
+                         {
+                             "content":  "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To\u0027s\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n--\u003e\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n--\u003e\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n \u0026#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML \u0026 CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n--\u003e\n\n×--\u003e",
+                             "heading":  "All Our Services"
+                         },
+                         {
+                             "content":  "Python HOME\nPython Intro\nPython Get Started\nPython Syntax\n\nSyntax\nStatements\nCode Challenge\n\nPython Output\n\nPrint Text\nPrint Numbers\nCode Challenge\n\nPython Comments\n\nComments\nCode Challenge\n\nPython Variables\n\n Python Variables\n Variable Names\n Assign Multiple Values\n Output Variables\n Global Variables\n Variable Exercises\n Code Challenge\n\nPython Data Types\n\n Data Types\n Code Challenge\n\n Python bytes\n Python bytearray\n Python memoryview\n\n--\u003e\nPython Numbers\n\n Numbers\n Code Challenge\n\nPython Primitive Types--\u003e\nPython Casting\n\n Casting\n Code Challenge\n\nPython Strings\n\n Python Strings\n Slicing Strings\n Modify Strings\n Concatenate Strings\n Format Strings\n Escape Characters\n String Methods\n String Exercises\n Code Challenge\n\nPython Booleans\n\n Booleans\n Code Challenge\n\nPython Operators\n\n Python Operators\n Arithmetic Operators\n Assignment Operators\n Ternary Operator \n Comparison Operators\n Logical Operators\n Identity Operators\n Membership Operators\n Bitwise Operators\n Operator Precedence\n Code Challenge\n\nPython Lists\n\n Python Lists\n Access List Items\n Change List Items\n Add List Items\n Remove List Items\n Loop Lists\n List Comprehension\n Sort Lists\n Copy Lists\n Join Lists\n List Methods\n List Exercises\n Code Challenge\n\nPython Tuples\n\n Python Tuples\n Access Tuples\n Update Tuples\n Unpack Tuples\n Loop Tuples\n Join Tuples\n Tuple Methods\n Tuple Exercises\n Code Challenge\n\nPython Sets\n\n Python Sets\n Access Set Items\n Add Set Items\n Remove Set Items\n Loop Sets\n Join Sets\n Frozenset\n Set Methods\n Set Exercises\n Code Challenge\n\nPython Dictionaries\n\n Python Dictionaries\n Access Items\n Change Items\n Add Items\n Remove Items\n Loop Dictionaries\n Copy Dictionaries\n Nested Dictionaries\n Dictionary Methods\n Dictionary Exercises\n Code Challenge\n\nPython If...Else\n\n Python If\n Python Elif\n Python Else\n Shorthand If\n Logical Operators\n Nested If\n Pass Statement\n Code Challenge\n\nPython Match\n\n Match\n Code Challenge\n\nPython While Loops\n\n While Loops\n Code Challenge\n\nPython For Loops\n\n For Loops\n Code Challenge\n\nPython Data Processing--\u003e\nPython Functions\n\n Python Functions\n Python Arguments\n Python *args / **kwargs\n Python Scope\n Python Decorators\n Python Lambda\n Python Recursion\n Python Generators\n Code Challenge\n\nPython Range\n\n Range\n Code Challenge\n\nPython Arrays\n\n Arrays\n Code Challenge\n\nPython Iterators\n\n Iterators\n Code Challenge\n\nPython Modules\n\n Modules\n Code Challenge\n\nPython Dates\n\n Dates\n Code Challenge\n\nPython Math\n\n Math\n Code Challenge\n\nPython JSON\n\n JSON\n Code Challenge\n\nPython RegEx\n\n RegEx\n Code Challenge\n\nPython PIP\nPython Try...Except\n\n Try...Except\n Code Challenge\n\nPython String Formatting\n\n String Formatting\n Code Challenge\n\nPython None\n\n None\n Code Challenge\n\nPython User Input\n\nPython VirtualEnv",
+                             "heading":  "Python Tutorial"
+                         },
+                         {
+                             "content":  "Python OOP\nPython Classes/Objects\n\n Classes/Objects\n Code Challenge\n\nPython __init__ Method\n\n __init__ Method\n Code Challenge\n\nPython self Parameter\n\n self Parameter\n Code Challenge\n\nPython Class Properties\n\n Class Properties\n Code Challenge\n\nPython Class Methods\n\n Class Methods\n Code Challenge\n\nPython Inheritance\n\n Inheritance\n Code Challenge\n\nPython Polymorphism\n\n Polymorphism\n Code Challenge\n\nPython Encapsulation\n\n Encapsulation\n Code Challenge\n\nPython Inner Classes",
+                             "heading":  "Python Classes"
+                         },
+                         {
+                             "content":  "Python File Handling\nPython Read Files\nPython Write/Create Files\nPython Delete Files",
+                             "heading":  "File Handling"
+                         },
+                         {
+                             "content":  "NumPy Tutorial\nPandas Tutorial\nSciPy Tutorial\nDjango Tutorial\n\n\u003c!--",
+                             "heading":  "Python Modules"
+                         },
+                         {
+                             "content":  "NumPy Intro\nNumPy Getting Started\nNumPy Creating Arrays\nNumPy Array Indexing\nNumPy Array Slicing\nNumPy Data Types\nNumPy Copy vs View\nNumPy Array Shape\nNumPy Array Reshape\nNumPy Array Iterating\nNumPy Array Join\nNumPy Array Split\nNumPy Array Search\nNumPy Array Sort\nNumPy Array Filter\nNumPy Random\n\n Random Intro\n Data Distribution\n Random Permutation\n Seaborn Module\n Normal Distribution\n Binomial Distribution\n Poisson Distribution\n Uniform Distribution\n Logistic Distribution\n Multinomial Distribution\n Exponential Distribution\n Chi Square Distribution\n Rayleigh Distribution\n Pareto Distribution\n Zipf Distribution\n\nNumPy ufunc\n\n ufunc Intro\n ufunc Create Function\n ufunc Simple Arithmetic\n ufunc Rounding Decimals\n ufunc Logs\n ufunc Summations\n ufunc Products\n ufunc Differences\n ufunc Finding LCM\n ufunc Finding GCD\n ufunc Trigonometric\n ufunc Hyperbolic\n ufunc Set Operations\n\n--\u003e\n\u003c!--",
+                             "heading":  "Python NumPy"
+                         },
+                         {
+                             "content":  "Pandas Tutorial\nPandas Getting Started\nPandas Series\nPandas DataFrames\nPandas Read CSV\nPandas Read JSON\nPandas Analyzing Data\nPandas Cleaning Data\n\n Pandas Cleaning Data\n Cleaning Empty Cells\n Cleaning Wrong Format\n Cleaning Wrong Data\n Removing Duplicates\n\nPandas Correlations\nPandas Plotting\n\n--\u003e",
+                             "heading":  "Python Pandas"
+                         },
+                         {
+                             "content":  "Matplotlib Intro\nMatplotlib Get Started\nMatplotlib Pyplot\nMatplotlib Plotting\nMatplotlib Markers\nMatplotlib Line\nMatplotlib Labels\nMatplotlib Grid\nMatplotlib Subplot\nMatplotlib Scatter\nMatplotlib Bars\nMatplotlib Histograms\nMatplotlib Pie Charts\n\n\u003c!--",
+                             "heading":  "Python Matplotlib"
+                         },
+                         {
+                             "content":  "SciPy Intro\nSciPy Getting Started\nSciPy Constants\nSciPy Optimizers\nSciPy Sparse Data\nSciPy Graphs\nSciPy Spatial Data\nSciPy Matlab Arrays\nSciPy Interpolation\nSciPy Significance Tests\n\n--\u003e",
+                             "heading":  "Python SciPy"
+                         },
+                         {
+                             "content":  "Getting Started\nMean Median Mode\nStandard Deviation\nPercentile\nData Distribution\nNormal Data Distribution\nScatter Plot\nLinear Regression\nPolynomial Regression\nMultiple Regression\nScale\nTrain/Test\nDecision Tree\n\nConfusion Matrix\nHierarchical Clustering\nLogistic Regression\nGrid Search\nCategorical Data\nK-means\nBootstrap Aggregation\nCross Validation\nAUC - ROC Curve\nK-nearest neighbors",
+                             "heading":  "Machine Learning"
+                         },
+                         {
+                             "content":  "Python DSA\nLists and Arrays\nStacks\nQueues\nLinked Lists\nHash Tables\nTrees\nBinary Trees\nBinary Search Trees\nAVL Trees\nGraphs\nLinear Search\nBinary Search\nBubble Sort\nSelection Sort\nInsertion Sort\nQuick Sort\nCounting Sort\nRadix Sort\nMerge Sort",
+                             "heading":  "Python DSA"
+                         },
+                         {
+                             "content":  "MySQL Get Started\nMySQL Create Database\nMySQL Create Table\nMySQL Insert\nMySQL Select\nMySQL Where\nMySQL Order By\nMySQL Delete\nMySQL Drop Table\nMySQL Update\nMySQL Limit\nMySQL Join",
+                             "heading":  "Python MySQL"
+                         },
+                         {
+                             "content":  "MongoDB Get Started\nMongoDB Create DB\nMongoDB Collection\nMongoDB Insert\nMongoDB Find\nMongoDB Query\nMongoDB Sort\nMongoDB Delete\nMongoDB Drop Collection\nMongoDB Update\nMongoDB Limit\nPython Classes\nPython as Aspect Oriented\nPython File Handling\nPython Database\nPython Web Applications\nPython Workflows\nPython Maths \u0026 Science\nPython Regular Expressions\nPython Unit Testing\n--\u003e",
+                             "heading":  "Python MongoDB"
+                         },
+                         {
+                             "content":  "Python Certificate",
+                             "heading":  "Python Cert"
+                         },
+                         {
+                             "content":  "Python Overview\nPython Built-in Functions\nPython String Methods\nPython List Methods\nPython Dictionary Methods\nPython Tuple Methods\nPython Set Methods\nPython File Methods\nPython Keywords\nPython Exceptions\nPython Glossary",
+                             "heading":  "Python Reference"
+                         },
+                         {
+                             "content":  "Built-in Modules\nRandom Module\nRequests Module\nStatistics Module\nMath Module\ncMath Module",
+                             "heading":  "Module Reference"
+                         },
+                         {
+                             "content":  "Remove List Duplicates\nReverse a String\nAdd Two Numbers",
+                             "heading":  "Python How To"
+                         },
+                         {
+                             "content":  "Python Examples\nPython Compiler\nPython Exercises\nPython Quiz\nPython Challenges\nPython Practice Problems\nPython Server\nPython Syllabus\nPython Study Plan\nPython Interview Q\u0026A\nPython Bootcamp\nPython Training\n\nny:--\u003e\n\n ny:--\u003e\n\nny:--\u003e\n\nMatplotlib Labels and Title\n\n ❮ Previous\n Next ❯",
+                             "heading":  "Python Examples"
+                         },
+                         {
+                             "content":  "With Pyplot, you can use the xlabel() and \nylabel() functions to set a label for the x- and y-axis.\n\nExample\n Add labels to the x- and y-axis:\n\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nx = np.array([80, \n 85, 90, 95, 100, 105, 110, 115, 120, 125])\ny = np.array([240, 250, 260, \n 270, 280, 290, 300, 310, 320, 330])\n\nplt.plot(x, y)\n\nplt.xlabel(\"Average \n Pulse\")\nplt.ylabel(\"Calorie Burnage\")\n\nplt.show()\n\nResult:\n\nTry it Yourself »",
+                             "heading":  "Create Labels for a Plot"
+                         },
+                         {
+                             "content":  "With Pyplot, you can use the title() function to set a title for the plot.\n\nExample\n Add a plot title and labels for the x- and y-axis:\n\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nx = np.array([80, \n 85, 90, 95, 100, 105, 110, 115, 120, 125])\ny = np.array([240, 250, 260, \n 270, 280, 290, 300, 310, 320, 330])\n\nplt.plot(x, y)\n\nplt.title(\"Sports Watch Data\")\nplt.xlabel(\"Average \n Pulse\")\nplt.ylabel(\"Calorie Burnage\")\n\nplt.show()\n\nResult:\n\nTry it Yourself »",
+                             "heading":  "Create a Title for a Plot"
+                         },
+                         {
+                             "content":  "You can use the fontdict parameter in\nxlabel(), ylabel(), \nand title() to set font properties for the \ntitle and labels.\n\nExample\n Set font properties for the title and labels:\n\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nx = np.array([80, \n 85, 90, 95, 100, 105, 110, 115, 120, 125])\ny = np.array([240, 250, 260, \n 270, 280, 290, 300, 310, 320, 330])\n\nfont1 = {\u0027family\u0027:\u0027serif\u0027,\u0027color\u0027:\u0027blue\u0027,\u0027size\u0027:20}\n\n font2 = {\u0027family\u0027:\u0027serif\u0027,\u0027color\u0027:\u0027darkred\u0027,\u0027size\u0027:15}\n\nplt.title(\"Sports \n Watch Data\", fontdict = font1)\nplt.xlabel(\"Average Pulse\", fontdict = \n font2)\nplt.ylabel(\"Calorie Burnage\", fontdict = font2)\n\nplt.plot(x, \n y)\nplt.show()\n\nResult:\n\nTry it Yourself »",
+                             "heading":  "Set Font Properties for Title and Labels"
+                         },
+                         {
+                             "content":  "You can use the loc parameter in\ntitle() to position the title.\n\nLegal values are: \u0027left\u0027, \u0027right\u0027, and \u0027center\u0027. Default value is \u0027center\u0027.\n\nExample\n Position the title to the left:\n\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nx = np.array([80, \n 85, 90, 95, 100, 105, 110, 115, 120, 125])\ny = np.array([240, 250, 260, \n 270, 280, 290, 300, 310, 320, 330])\n\nplt.title(\"Sports Watch Data\", loc = \u0027left\u0027)\nplt.xlabel(\"Average \n Pulse\")\nplt.ylabel(\"Calorie Burnage\")\n\nplt.plot(x, \n y)\nplt.show()\n\nResult:\n\nTry it Yourself »\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                             "heading":  "Position the Title"
+                         },
+                         {
+                             "content":  "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                             "heading":  "Contact Sales"
+                         }
+                     ],
+        "extracted_at":  "2026-08-09T11:16:29Z",
+        "subject":  "Matplotlib",
+        "title":  "Matplotlib Labels and Title"
+    },
+    {
+        "url":  "https://www.w3schools.com/python/matplotlib_grid.asp",
+        "summary":  "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id":  "matplotlib_matplotlib_grid",
+        "code_examples":  [
+                              {
+                                  "code":  "import numpy as np\nimport matplotlib.pyplot as plt\n\nx = np.array([80, \n 85, 90, 95, 100, 105, 110, 115, 120, 125])\ny = np.array([240, 250, 260, \n 270, 280, 290, 300, 310, 320, 330])\n\nplt.title(\"Sports Watch Data\")\n\n plt.xlabel(\"Average Pulse\")\nplt.ylabel(\"Calorie Burnage\")\n\nplt.plot(x, \n y)\n\nplt.grid()\n\nplt.show()",
+                                  "language":  "matplotlib",
+                                  "heading":  "Example",
+                                  "tryit_url":  null
+                              }
+                          ],
+        "category":  "Data Science \u0026 AI",
+        "notes_and_tips":  [
+
+                           ],
+        "sections":  [
+                         {
+                             "content":  "×\n\n ← All Topics",
+                             "heading":  "W3SCHOOLS TUTORIALS:"
+                         },
+                         {
+                             "content":  "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                             "heading":  "W3SCHOOLS REFERENCES:"
+                         },
+                         {
+                             "content":  "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                             "heading":  "Select another topic:"
+                         },
+                         {
+                             "content":  "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                             "heading":  "W3SCHOOLS CERTIFICATES:"
+                         },
+                         {
+                             "content":  "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To\u0027s\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n--\u003e\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n--\u003e\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n \u0026#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML \u0026 CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n--\u003e\n\n×--\u003e",
+                             "heading":  "All Our Services"
+                         },
+                         {
+                             "content":  "Python HOME\nPython Intro\nPython Get Started\nPython Syntax\n\nSyntax\nStatements\nCode Challenge\n\nPython Output\n\nPrint Text\nPrint Numbers\nCode Challenge\n\nPython Comments\n\nComments\nCode Challenge\n\nPython Variables\n\n Python Variables\n Variable Names\n Assign Multiple Values\n Output Variables\n Global Variables\n Variable Exercises\n Code Challenge\n\nPython Data Types\n\n Data Types\n Code Challenge\n\n Python bytes\n Python bytearray\n Python memoryview\n\n--\u003e\nPython Numbers\n\n Numbers\n Code Challenge\n\nPython Primitive Types--\u003e\nPython Casting\n\n Casting\n Code Challenge\n\nPython Strings\n\n Python Strings\n Slicing Strings\n Modify Strings\n Concatenate Strings\n Format Strings\n Escape Characters\n String Methods\n String Exercises\n Code Challenge\n\nPython Booleans\n\n Booleans\n Code Challenge\n\nPython Operators\n\n Python Operators\n Arithmetic Operators\n Assignment Operators\n Ternary Operator \n Comparison Operators\n Logical Operators\n Identity Operators\n Membership Operators\n Bitwise Operators\n Operator Precedence\n Code Challenge\n\nPython Lists\n\n Python Lists\n Access List Items\n Change List Items\n Add List Items\n Remove List Items\n Loop Lists\n List Comprehension\n Sort Lists\n Copy Lists\n Join Lists\n List Methods\n List Exercises\n Code Challenge\n\nPython Tuples\n\n Python Tuples\n Access Tuples\n Update Tuples\n Unpack Tuples\n Loop Tuples\n Join Tuples\n Tuple Methods\n Tuple Exercises\n Code Challenge\n\nPython Sets\n\n Python Sets\n Access Set Items\n Add Set Items\n Remove Set Items\n Loop Sets\n Join Sets\n Frozenset\n Set Methods\n Set Exercises\n Code Challenge\n\nPython Dictionaries\n\n Python Dictionaries\n Access Items\n Change Items\n Add Items\n Remove Items\n Loop Dictionaries\n Copy Dictionaries\n Nested Dictionaries\n Dictionary Methods\n Dictionary Exercises\n Code Challenge\n\nPython If...Else\n\n Python If\n Python Elif\n Python Else\n Shorthand If\n Logical Operators\n Nested If\n Pass Statement\n Code Challenge\n\nPython Match\n\n Match\n Code Challenge\n\nPython While Loops\n\n While Loops\n Code Challenge\n\nPython For Loops\n\n For Loops\n Code Challenge\n\nPython Data Processing--\u003e\nPython Functions\n\n Python Functions\n Python Arguments\n Python *args / **kwargs\n Python Scope\n Python Decorators\n Python Lambda\n Python Recursion\n Python Generators\n Code Challenge\n\nPython Range\n\n Range\n Code Challenge\n\nPython Arrays\n\n Arrays\n Code Challenge\n\nPython Iterators\n\n Iterators\n Code Challenge\n\nPython Modules\n\n Modules\n Code Challenge\n\nPython Dates\n\n Dates\n Code Challenge\n\nPython Math\n\n Math\n Code Challenge\n\nPython JSON\n\n JSON\n Code Challenge\n\nPython RegEx\n\n RegEx\n Code Challenge\n\nPython PIP\nPython Try...Except\n\n Try...Except\n Code Challenge\n\nPython String Formatting\n\n String Formatting\n Code Challenge\n\nPython None\n\n None\n Code Challenge\n\nPython User Input\n\nPython VirtualEnv",
+                             "heading":  "Python Tutorial"
+                         },
+                         {
+                             "content":  "Python OOP\nPython Classes/Objects\n\n Classes/Objects\n Code Challenge\n\nPython __init__ Method\n\n __init__ Method\n Code Challenge\n\nPython self Parameter\n\n self Parameter\n Code Challenge\n\nPython Class Properties\n\n Class Properties\n Code Challenge\n\nPython Class Methods\n\n Class Methods\n Code Challenge\n\nPython Inheritance\n\n Inheritance\n Code Challenge\n\nPython Polymorphism\n\n Polymorphism\n Code Challenge\n\nPython Encapsulation\n\n Encapsulation\n Code Challenge\n\nPython Inner Classes",
+                             "heading":  "Python Classes"
+                         },
+                         {
+                             "content":  "Python File Handling\nPython Read Files\nPython Write/Create Files\nPython Delete Files",
+                             "heading":  "File Handling"
+                         },
+                         {
+                             "content":  "NumPy Tutorial\nPandas Tutorial\nSciPy Tutorial\nDjango Tutorial\n\n\u003c!--",
+                             "heading":  "Python Modules"
+                         },
+                         {
+                             "content":  "NumPy Intro\nNumPy Getting Started\nNumPy Creating Arrays\nNumPy Array Indexing\nNumPy Array Slicing\nNumPy Data Types\nNumPy Copy vs View\nNumPy Array Shape\nNumPy Array Reshape\nNumPy Array Iterating\nNumPy Array Join\nNumPy Array Split\nNumPy Array Search\nNumPy Array Sort\nNumPy Array Filter\nNumPy Random\n\n Random Intro\n Data Distribution\n Random Permutation\n Seaborn Module\n Normal Distribution\n Binomial Distribution\n Poisson Distribution\n Uniform Distribution\n Logistic Distribution\n Multinomial Distribution\n Exponential Distribution\n Chi Square Distribution\n Rayleigh Distribution\n Pareto Distribution\n Zipf Distribution\n\nNumPy ufunc\n\n ufunc Intro\n ufunc Create Function\n ufunc Simple Arithmetic\n ufunc Rounding Decimals\n ufunc Logs\n ufunc Summations\n ufunc Products\n ufunc Differences\n ufunc Finding LCM\n ufunc Finding GCD\n ufunc Trigonometric\n ufunc Hyperbolic\n ufunc Set Operations\n\n--\u003e\n\u003c!--",
+                             "heading":  "Python NumPy"
+                         },
+                         {
+                             "content":  "Pandas Tutorial\nPandas Getting Started\nPandas Series\nPandas DataFrames\nPandas Read CSV\nPandas Read JSON\nPandas Analyzing Data\nPandas Cleaning Data\n\n Pandas Cleaning Data\n Cleaning Empty Cells\n Cleaning Wrong Format\n Cleaning Wrong Data\n Removing Duplicates\n\nPandas Correlations\nPandas Plotting\n\n--\u003e",
+                             "heading":  "Python Pandas"
+                         },
+                         {
+                             "content":  "Matplotlib Intro\nMatplotlib Get Started\nMatplotlib Pyplot\nMatplotlib Plotting\nMatplotlib Markers\nMatplotlib Line\nMatplotlib Labels\nMatplotlib Grid\nMatplotlib Subplot\nMatplotlib Scatter\nMatplotlib Bars\nMatplotlib Histograms\nMatplotlib Pie Charts\n\n\u003c!--",
+                             "heading":  "Python Matplotlib"
+                         },
+                         {
+                             "content":  "SciPy Intro\nSciPy Getting Started\nSciPy Constants\nSciPy Optimizers\nSciPy Sparse Data\nSciPy Graphs\nSciPy Spatial Data\nSciPy Matlab Arrays\nSciPy Interpolation\nSciPy Significance Tests\n\n--\u003e",
+                             "heading":  "Python SciPy"
+                         },
+                         {
+                             "content":  "Getting Started\nMean Median Mode\nStandard Deviation\nPercentile\nData Distribution\nNormal Data Distribution\nScatter Plot\nLinear Regression\nPolynomial Regression\nMultiple Regression\nScale\nTrain/Test\nDecision Tree\n\nConfusion Matrix\nHierarchical Clustering\nLogistic Regression\nGrid Search\nCategorical Data\nK-means\nBootstrap Aggregation\nCross Validation\nAUC - ROC Curve\nK-nearest neighbors",
+                             "heading":  "Machine Learning"
+                         },
+                         {
+                             "content":  "Python DSA\nLists and Arrays\nStacks\nQueues\nLinked Lists\nHash Tables\nTrees\nBinary Trees\nBinary Search Trees\nAVL Trees\nGraphs\nLinear Search\nBinary Search\nBubble Sort\nSelection Sort\nInsertion Sort\nQuick Sort\nCounting Sort\nRadix Sort\nMerge Sort",
+                             "heading":  "Python DSA"
+                         },
+                         {
+                             "content":  "MySQL Get Started\nMySQL Create Database\nMySQL Create Table\nMySQL Insert\nMySQL Select\nMySQL Where\nMySQL Order By\nMySQL Delete\nMySQL Drop Table\nMySQL Update\nMySQL Limit\nMySQL Join",
+                             "heading":  "Python MySQL"
+                         },
+                         {
+                             "content":  "MongoDB Get Started\nMongoDB Create DB\nMongoDB Collection\nMongoDB Insert\nMongoDB Find\nMongoDB Query\nMongoDB Sort\nMongoDB Delete\nMongoDB Drop Collection\nMongoDB Update\nMongoDB Limit\nPython Classes\nPython as Aspect Oriented\nPython File Handling\nPython Database\nPython Web Applications\nPython Workflows\nPython Maths \u0026 Science\nPython Regular Expressions\nPython Unit Testing\n--\u003e",
+                             "heading":  "Python MongoDB"
+                         },
+                         {
+                             "content":  "Python Certificate",
+                             "heading":  "Python Cert"
+                         },
+                         {
+                             "content":  "Python Overview\nPython Built-in Functions\nPython String Methods\nPython List Methods\nPython Dictionary Methods\nPython Tuple Methods\nPython Set Methods\nPython File Methods\nPython Keywords\nPython Exceptions\nPython Glossary",
+                             "heading":  "Python Reference"
+                         },
+                         {
+                             "content":  "Built-in Modules\nRandom Module\nRequests Module\nStatistics Module\nMath Module\ncMath Module",
+                             "heading":  "Module Reference"
+                         },
+                         {
+                             "content":  "Remove List Duplicates\nReverse a String\nAdd Two Numbers",
+                             "heading":  "Python How To"
+                         },
+                         {
+                             "content":  "Python Examples\nPython Compiler\nPython Exercises\nPython Quiz\nPython Challenges\nPython Practice Problems\nPython Server\nPython Syllabus\nPython Study Plan\nPython Interview Q\u0026A\nPython Bootcamp\nPython Training\n\nny:--\u003e\n\n ny:--\u003e\n\nny:--\u003e\n\nMatplotlib Adding Grid Lines\n\n ❮ Previous\n Next ❯",
+                             "heading":  "Python Examples"
+                         },
+                         {
+                             "content":  "With Pyplot, you can use the grid() function to add grid lines to the plot.\n\nExample\n Add grid lines to the plot:\n\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nx = np.array([80, \n 85, 90, 95, 100, 105, 110, 115, 120, 125])\ny = np.array([240, 250, 260, \n 270, 280, 290, 300, 310, 320, 330])\n\nplt.title(\"Sports Watch Data\")\n\n plt.xlabel(\"Average Pulse\")\nplt.ylabel(\"Calorie Burnage\")\n\nplt.plot(x, \n y)\n\nplt.grid()\n\nplt.show() \n\nResult:\n\nTry it Yourself »",
+                             "heading":  "Add Grid Lines to a Plot"
+                         },
+                         {
+                             "content":  "You can use the axis parameter in\nthe grid() function to specify which grid lines \nto display.\n\nLegal values are: \u0027x\u0027, \u0027y\u0027, and \u0027both\u0027. Default value is \u0027both\u0027.\n\nExample\n Display only grid lines for the x-axis:\n\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nx = np.array([80, \n 85, 90, 95, 100, 105, 110, 115, 120, 125])\ny = np.array([240, 250, 260, \n 270, 280, 290, 300, 310, 320, 330])\n\nplt.title(\"Sports Watch Data\")\n\n plt.xlabel(\"Average Pulse\")\nplt.ylabel(\"Calorie Burnage\")\n\nplt.plot(x, \n y)\n\nplt.grid(axis = \u0027x\u0027)\n\nplt.show() \n\nResult:\n\nTry it Yourself »\n\nExample\n Display only grid lines for the y-axis:\n\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nx = np.array([80, \n 85, 90, 95, 100, 105, 110, 115, 120, 125])\ny = np.array([240, 250, 260, \n 270, 280, 290, 300, 310, 320, 330])\n\nplt.title(\"Sports Watch Data\")\n\n plt.xlabel(\"Average Pulse\")\nplt.ylabel(\"Calorie Burnage\")\n\nplt.plot(x, \n y)\n\nplt.grid(axis = \u0027y\u0027)\n\nplt.show() \n\nResult:\n\nTry it Yourself »",
+                             "heading":  "Specify Which Grid Lines to Display"
+                         },
+                         {
+                             "content":  "You can also set the line properties of the grid, like this: grid(color = \u0027color\u0027, \nlinestyle = \u0027linestyle\u0027, linewidth = number).\n\nExample\n Set the line properties of the grid:\n\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nx = np.array([80, \n 85, 90, 95, 100, 105, 110, 115, 120, 125])\ny = np.array([240, 250, 260, \n 270, 280, 290, 300, 310, 320, 330])\n\nplt.title(\"Sports Watch Data\")\nplt.xlabel(\"Average \n Pulse\")\nplt.ylabel(\"Calorie Burnage\")\n\nplt.plot(x, \n y)\n\nplt.grid(color = \u0027green\u0027, linestyle = \u0027--\u0027, linewidth = 0.5)\n\nplt.show()\n\nResult:\n\nTry it Yourself »\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                             "heading":  "Set Line Properties for the Grid"
+                         },
+                         {
+                             "content":  "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                             "heading":  "Contact Sales"
+                         }
+                     ],
+        "extracted_at":  "2026-08-09T11:16:29Z",
+        "subject":  "Matplotlib",
+        "title":  "Matplotlib Adding Grid Lines"
+    },
+    {
+        "url":  "https://www.w3schools.com/python/matplotlib_subplot.asp",
+        "summary":  "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id":  "matplotlib_matplotlib_subplot",
+        "code_examples":  [
+                              {
+                                  "code":  "import matplotlib.pyplot as plt\nimport numpy as np\n\n#plot 1:\nx = \n np.array([0, 1, 2, 3])\ny = np.array([3, 8, 1, 10])\n\nplt.subplot(1, 2, 1)\n\n plt.plot(x,y)\n\n#plot 2:\nx = np.array([0, 1, 2, 3])\ny = np.array([10, 20, 30, \n 40])\n\nplt.subplot(1, 2, 2)\nplt.plot(x,y)\n\nplt.show()",
+                                  "language":  "matplotlib",
+                                  "heading":  "Example",
+                                  "tryit_url":  null
+                              }
+                          ],
+        "category":  "Data Science \u0026 AI",
+        "notes_and_tips":  [
+
+                           ],
+        "sections":  [
+                         {
+                             "content":  "×\n\n ← All Topics",
+                             "heading":  "W3SCHOOLS TUTORIALS:"
+                         },
+                         {
+                             "content":  "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                             "heading":  "W3SCHOOLS REFERENCES:"
+                         },
+                         {
+                             "content":  "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                             "heading":  "Select another topic:"
+                         },
+                         {
+                             "content":  "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                             "heading":  "W3SCHOOLS CERTIFICATES:"
+                         },
+                         {
+                             "content":  "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To\u0027s\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n--\u003e\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n--\u003e\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n \u0026#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML \u0026 CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n--\u003e\n\n×--\u003e",
+                             "heading":  "All Our Services"
+                         },
+                         {
+                             "content":  "Python HOME\nPython Intro\nPython Get Started\nPython Syntax\n\nSyntax\nStatements\nCode Challenge\n\nPython Output\n\nPrint Text\nPrint Numbers\nCode Challenge\n\nPython Comments\n\nComments\nCode Challenge\n\nPython Variables\n\n Python Variables\n Variable Names\n Assign Multiple Values\n Output Variables\n Global Variables\n Variable Exercises\n Code Challenge\n\nPython Data Types\n\n Data Types\n Code Challenge\n\n Python bytes\n Python bytearray\n Python memoryview\n\n--\u003e\nPython Numbers\n\n Numbers\n Code Challenge\n\nPython Primitive Types--\u003e\nPython Casting\n\n Casting\n Code Challenge\n\nPython Strings\n\n Python Strings\n Slicing Strings\n Modify Strings\n Concatenate Strings\n Format Strings\n Escape Characters\n String Methods\n String Exercises\n Code Challenge\n\nPython Booleans\n\n Booleans\n Code Challenge\n\nPython Operators\n\n Python Operators\n Arithmetic Operators\n Assignment Operators\n Ternary Operator \n Comparison Operators\n Logical Operators\n Identity Operators\n Membership Operators\n Bitwise Operators\n Operator Precedence\n Code Challenge\n\nPython Lists\n\n Python Lists\n Access List Items\n Change List Items\n Add List Items\n Remove List Items\n Loop Lists\n List Comprehension\n Sort Lists\n Copy Lists\n Join Lists\n List Methods\n List Exercises\n Code Challenge\n\nPython Tuples\n\n Python Tuples\n Access Tuples\n Update Tuples\n Unpack Tuples\n Loop Tuples\n Join Tuples\n Tuple Methods\n Tuple Exercises\n Code Challenge\n\nPython Sets\n\n Python Sets\n Access Set Items\n Add Set Items\n Remove Set Items\n Loop Sets\n Join Sets\n Frozenset\n Set Methods\n Set Exercises\n Code Challenge\n\nPython Dictionaries\n\n Python Dictionaries\n Access Items\n Change Items\n Add Items\n Remove Items\n Loop Dictionaries\n Copy Dictionaries\n Nested Dictionaries\n Dictionary Methods\n Dictionary Exercises\n Code Challenge\n\nPython If...Else\n\n Python If\n Python Elif\n Python Else\n Shorthand If\n Logical Operators\n Nested If\n Pass Statement\n Code Challenge\n\nPython Match\n\n Match\n Code Challenge\n\nPython While Loops\n\n While Loops\n Code Challenge\n\nPython For Loops\n\n For Loops\n Code Challenge\n\nPython Data Processing--\u003e\nPython Functions\n\n Python Functions\n Python Arguments\n Python *args / **kwargs\n Python Scope\n Python Decorators\n Python Lambda\n Python Recursion\n Python Generators\n Code Challenge\n\nPython Range\n\n Range\n Code Challenge\n\nPython Arrays\n\n Arrays\n Code Challenge\n\nPython Iterators\n\n Iterators\n Code Challenge\n\nPython Modules\n\n Modules\n Code Challenge\n\nPython Dates\n\n Dates\n Code Challenge\n\nPython Math\n\n Math\n Code Challenge\n\nPython JSON\n\n JSON\n Code Challenge\n\nPython RegEx\n\n RegEx\n Code Challenge\n\nPython PIP\nPython Try...Except\n\n Try...Except\n Code Challenge\n\nPython String Formatting\n\n String Formatting\n Code Challenge\n\nPython None\n\n None\n Code Challenge\n\nPython User Input\n\nPython VirtualEnv",
+                             "heading":  "Python Tutorial"
+                         },
+                         {
+                             "content":  "Python OOP\nPython Classes/Objects\n\n Classes/Objects\n Code Challenge\n\nPython __init__ Method\n\n __init__ Method\n Code Challenge\n\nPython self Parameter\n\n self Parameter\n Code Challenge\n\nPython Class Properties\n\n Class Properties\n Code Challenge\n\nPython Class Methods\n\n Class Methods\n Code Challenge\n\nPython Inheritance\n\n Inheritance\n Code Challenge\n\nPython Polymorphism\n\n Polymorphism\n Code Challenge\n\nPython Encapsulation\n\n Encapsulation\n Code Challenge\n\nPython Inner Classes",
+                             "heading":  "Python Classes"
+                         },
+                         {
+                             "content":  "Python File Handling\nPython Read Files\nPython Write/Create Files\nPython Delete Files",
+                             "heading":  "File Handling"
+                         },
+                         {
+                             "content":  "NumPy Tutorial\nPandas Tutorial\nSciPy Tutorial\nDjango Tutorial\n\n\u003c!--",
+                             "heading":  "Python Modules"
+                         },
+                         {
+                             "content":  "NumPy Intro\nNumPy Getting Started\nNumPy Creating Arrays\nNumPy Array Indexing\nNumPy Array Slicing\nNumPy Data Types\nNumPy Copy vs View\nNumPy Array Shape\nNumPy Array Reshape\nNumPy Array Iterating\nNumPy Array Join\nNumPy Array Split\nNumPy Array Search\nNumPy Array Sort\nNumPy Array Filter\nNumPy Random\n\n Random Intro\n Data Distribution\n Random Permutation\n Seaborn Module\n Normal Distribution\n Binomial Distribution\n Poisson Distribution\n Uniform Distribution\n Logistic Distribution\n Multinomial Distribution\n Exponential Distribution\n Chi Square Distribution\n Rayleigh Distribution\n Pareto Distribution\n Zipf Distribution\n\nNumPy ufunc\n\n ufunc Intro\n ufunc Create Function\n ufunc Simple Arithmetic\n ufunc Rounding Decimals\n ufunc Logs\n ufunc Summations\n ufunc Products\n ufunc Differences\n ufunc Finding LCM\n ufunc Finding GCD\n ufunc Trigonometric\n ufunc Hyperbolic\n ufunc Set Operations\n\n--\u003e\n\u003c!--",
+                             "heading":  "Python NumPy"
+                         },
+                         {
+                             "content":  "Pandas Tutorial\nPandas Getting Started\nPandas Series\nPandas DataFrames\nPandas Read CSV\nPandas Read JSON\nPandas Analyzing Data\nPandas Cleaning Data\n\n Pandas Cleaning Data\n Cleaning Empty Cells\n Cleaning Wrong Format\n Cleaning Wrong Data\n Removing Duplicates\n\nPandas Correlations\nPandas Plotting\n\n--\u003e",
+                             "heading":  "Python Pandas"
+                         },
+                         {
+                             "content":  "Matplotlib Intro\nMatplotlib Get Started\nMatplotlib Pyplot\nMatplotlib Plotting\nMatplotlib Markers\nMatplotlib Line\nMatplotlib Labels\nMatplotlib Grid\nMatplotlib Subplot\nMatplotlib Scatter\nMatplotlib Bars\nMatplotlib Histograms\nMatplotlib Pie Charts\n\n\u003c!--",
+                             "heading":  "Python Matplotlib"
+                         },
+                         {
+                             "content":  "SciPy Intro\nSciPy Getting Started\nSciPy Constants\nSciPy Optimizers\nSciPy Sparse Data\nSciPy Graphs\nSciPy Spatial Data\nSciPy Matlab Arrays\nSciPy Interpolation\nSciPy Significance Tests\n\n--\u003e",
+                             "heading":  "Python SciPy"
+                         },
+                         {
+                             "content":  "Getting Started\nMean Median Mode\nStandard Deviation\nPercentile\nData Distribution\nNormal Data Distribution\nScatter Plot\nLinear Regression\nPolynomial Regression\nMultiple Regression\nScale\nTrain/Test\nDecision Tree\n\nConfusion Matrix\nHierarchical Clustering\nLogistic Regression\nGrid Search\nCategorical Data\nK-means\nBootstrap Aggregation\nCross Validation\nAUC - ROC Curve\nK-nearest neighbors",
+                             "heading":  "Machine Learning"
+                         },
+                         {
+                             "content":  "Python DSA\nLists and Arrays\nStacks\nQueues\nLinked Lists\nHash Tables\nTrees\nBinary Trees\nBinary Search Trees\nAVL Trees\nGraphs\nLinear Search\nBinary Search\nBubble Sort\nSelection Sort\nInsertion Sort\nQuick Sort\nCounting Sort\nRadix Sort\nMerge Sort",
+                             "heading":  "Python DSA"
+                         },
+                         {
+                             "content":  "MySQL Get Started\nMySQL Create Database\nMySQL Create Table\nMySQL Insert\nMySQL Select\nMySQL Where\nMySQL Order By\nMySQL Delete\nMySQL Drop Table\nMySQL Update\nMySQL Limit\nMySQL Join",
+                             "heading":  "Python MySQL"
+                         },
+                         {
+                             "content":  "MongoDB Get Started\nMongoDB Create DB\nMongoDB Collection\nMongoDB Insert\nMongoDB Find\nMongoDB Query\nMongoDB Sort\nMongoDB Delete\nMongoDB Drop Collection\nMongoDB Update\nMongoDB Limit\nPython Classes\nPython as Aspect Oriented\nPython File Handling\nPython Database\nPython Web Applications\nPython Workflows\nPython Maths \u0026 Science\nPython Regular Expressions\nPython Unit Testing\n--\u003e",
+                             "heading":  "Python MongoDB"
+                         },
+                         {
+                             "content":  "Python Certificate",
+                             "heading":  "Python Cert"
+                         },
+                         {
+                             "content":  "Python Overview\nPython Built-in Functions\nPython String Methods\nPython List Methods\nPython Dictionary Methods\nPython Tuple Methods\nPython Set Methods\nPython File Methods\nPython Keywords\nPython Exceptions\nPython Glossary",
+                             "heading":  "Python Reference"
+                         },
+                         {
+                             "content":  "Built-in Modules\nRandom Module\nRequests Module\nStatistics Module\nMath Module\ncMath Module",
+                             "heading":  "Module Reference"
+                         },
+                         {
+                             "content":  "Remove List Duplicates\nReverse a String\nAdd Two Numbers",
+                             "heading":  "Python How To"
+                         },
+                         {
+                             "content":  "Python Examples\nPython Compiler\nPython Exercises\nPython Quiz\nPython Challenges\nPython Practice Problems\nPython Server\nPython Syllabus\nPython Study Plan\nPython Interview Q\u0026A\nPython Bootcamp\nPython Training\n\nny:--\u003e\n\n ny:--\u003e\n\nny:--\u003e\n\nMatplotlib Subplot\n\n ❮ Previous\nNext ❯",
+                             "heading":  "Python Examples"
+                         },
+                         {
+                             "content":  "With the subplot() function you can draw multiple plots in one figure:\n\nExample\nDraw 2 plots:\n\n import matplotlib.pyplot as plt\nimport numpy as np\n\n#plot 1:\nx = \n np.array([0, 1, 2, 3])\ny = np.array([3, 8, 1, 10])\n\nplt.subplot(1, 2, 1)\n\n plt.plot(x,y)\n\n#plot 2:\nx = np.array([0, 1, 2, 3])\ny = np.array([10, 20, 30, \n 40])\n\nplt.subplot(1, 2, 2)\nplt.plot(x,y)\n\nplt.show()\n\nResult:\n\nTry it Yourself »",
+                             "heading":  "Display Multiple Plots"
+                         },
+                         {
+                             "content":  "The subplot() function takes three arguments that describes the layout of the figure.\n\nThe layout is organized in rows and columns, which are represented by the first\nand second argument.\n\nThe third argument represents the index of the current plot.\n\nplt.subplot(1, 2, 1)\n\n#the figure has 1 row, 2 columns, and this plot is the first plot.\n\nplt.subplot(1, 2, 2)\n\n#the figure has 1 row, 2 columns, and this plot is the second plot.\n\nSo, if we want a figure with 2 rows an 1 column (meaning that the two plots will be displayed on top of each other instead of side-by-side),\nwe can write the syntax like this:\n\nExample\nDraw 2 plots on top of each other:\n\n import matplotlib.pyplot as plt\nimport numpy as np\n\n#plot 1:\nx = \n np.array([0, 1, 2, 3])\ny = np.array([3, 8, 1, 10])\n\nplt.subplot(2, 1, 1)\n\n plt.plot(x,y)\n\n#plot 2:\nx = np.array([0, 1, 2, 3])\ny = np.array([10, 20, 30, \n 40])\n\nplt.subplot(2, 1, 2)\nplt.plot(x,y)\n\nplt.show()\n\nResult:\n\nTry it Yourself »\n\nYou can draw as many plots you like on one figure, just descibe the number of rows, columns, and the index of the plot.\n\nExample\nDraw 6 plots:\n\n import matplotlib.pyplot as plt\nimport numpy as np\n\nx = np.array([0, \n 1, 2, 3])\ny = np.array([3, 8, 1, 10])\n\nplt.subplot(2, 3, 1)\n\n plt.plot(x,y)\n\nx = np.array([0, 1, 2, 3])\ny = np.array([10, 20, 30, \n 40])\n\nplt.subplot(2, 3, 2)\nplt.plot(x,y)\n\nx = np.array([0, 1, \n 2, 3])\ny = np.array([3, 8, 1, 10])\n\nplt.subplot(2, 3, 3)\nplt.plot(x,y)\n\nx = np.array([0, 1, 2, 3])\ny = np.array([10, 20, 30, 40])\n\n plt.subplot(2, 3, 4)\nplt.plot(x,y)\n\nx = np.array([0, 1, 2, 3])\ny = \n np.array([3, 8, 1, 10])\n\nplt.subplot(2, 3, 5)\nplt.plot(x,y)\n\nx \n = np.array([0, 1, 2, 3])\ny = np.array([10, 20, 30, 40])\n\nplt.subplot(2, \n 3, 6)\nplt.plot(x,y)\n\nplt.show()\n\nResult:\n\nTry it Yourself »",
+                             "heading":  "The subplot() Function"
+                         },
+                         {
+                             "content":  "You can add a title to each plot with the title() function:\n\nExample\n2 plots, with titles:\n\n import matplotlib.pyplot as plt\nimport numpy as np\n\n#plot 1:\nx = \n np.array([0, 1, 2, 3])\ny = np.array([3, 8, 1, 10])\n\nplt.subplot(1, 2, 1)\n\n plt.plot(x,y)\nplt.title(\"SALES\")\n\n#plot 2:\nx = np.array([0, 1, 2, 3])\ny = np.array([10, 20, 30, \n 40])\n\nplt.subplot(1, 2, 2)\nplt.plot(x,y)\nplt.title(\"INCOME\")\n\nplt.show()\n\nResult:\n\nTry it Yourself »",
+                             "heading":  "Title"
+                         },
+                         {
+                             "content":  "You can add a title to the entire figure with the suptitle() function:\n\nExample\nAdd a title for the entire figure:\n\n import matplotlib.pyplot as plt\nimport numpy as np\n\n#plot 1:\nx = \n np.array([0, 1, 2, 3])\ny = np.array([3, 8, 1, 10])\n\nplt.subplot(1, 2, 1)\n\n plt.plot(x,y)\nplt.title(\"SALES\")\n\n#plot 2:\nx = np.array([0, 1, 2, 3])\ny = np.array([10, 20, 30, \n 40])\n\nplt.subplot(1, 2, 2)\nplt.plot(x,y)\nplt.title(\"INCOME\")\n\nplt.suptitle(\"MY SHOP\")\nplt.show()\n\nResult:\n\nTry it Yourself »\n\n ❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                             "heading":  "Super Title"
+                         },
+                         {
+                             "content":  "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                             "heading":  "Contact Sales"
+                         }
+                     ],
+        "extracted_at":  "2026-08-09T11:16:29Z",
+        "subject":  "Matplotlib",
+        "title":  "Matplotlib Subplot"
+    },
+    {
+        "url":  "https://www.w3schools.com/python/matplotlib_scatter.asp",
+        "summary":  "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id":  "matplotlib_matplotlib_scatter",
+        "code_examples":  [
+                              {
+                                  "code":  "import matplotlib.pyplot as plt\nimport numpy as np\n\nx = np.array([5,7,8,7,2,17,2,9,4,11,12,9,6])\ny = np.array([99,86,87,88,111,86,103,87,94,78,77,85,86])\n\nplt.scatter(x, y)\nplt.show()",
+                                  "language":  "matplotlib",
+                                  "heading":  "Example",
+                                  "tryit_url":  null
+                              }
+                          ],
+        "category":  "Data Science \u0026 AI",
+        "notes_and_tips":  [
+
+                           ],
+        "sections":  [
+                         {
+                             "content":  "×\n\n ← All Topics",
+                             "heading":  "W3SCHOOLS TUTORIALS:"
+                         },
+                         {
+                             "content":  "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                             "heading":  "W3SCHOOLS REFERENCES:"
+                         },
+                         {
+                             "content":  "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                             "heading":  "Select another topic:"
+                         },
+                         {
+                             "content":  "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                             "heading":  "W3SCHOOLS CERTIFICATES:"
+                         },
+                         {
+                             "content":  "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To\u0027s\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n--\u003e\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n--\u003e\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n \u0026#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML \u0026 CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n--\u003e\n\n×--\u003e",
+                             "heading":  "All Our Services"
+                         },
+                         {
+                             "content":  "Python HOME\nPython Intro\nPython Get Started\nPython Syntax\n\nSyntax\nStatements\nCode Challenge\n\nPython Output\n\nPrint Text\nPrint Numbers\nCode Challenge\n\nPython Comments\n\nComments\nCode Challenge\n\nPython Variables\n\n Python Variables\n Variable Names\n Assign Multiple Values\n Output Variables\n Global Variables\n Variable Exercises\n Code Challenge\n\nPython Data Types\n\n Data Types\n Code Challenge\n\n Python bytes\n Python bytearray\n Python memoryview\n\n--\u003e\nPython Numbers\n\n Numbers\n Code Challenge\n\nPython Primitive Types--\u003e\nPython Casting\n\n Casting\n Code Challenge\n\nPython Strings\n\n Python Strings\n Slicing Strings\n Modify Strings\n Concatenate Strings\n Format Strings\n Escape Characters\n String Methods\n String Exercises\n Code Challenge\n\nPython Booleans\n\n Booleans\n Code Challenge\n\nPython Operators\n\n Python Operators\n Arithmetic Operators\n Assignment Operators\n Ternary Operator \n Comparison Operators\n Logical Operators\n Identity Operators\n Membership Operators\n Bitwise Operators\n Operator Precedence\n Code Challenge\n\nPython Lists\n\n Python Lists\n Access List Items\n Change List Items\n Add List Items\n Remove List Items\n Loop Lists\n List Comprehension\n Sort Lists\n Copy Lists\n Join Lists\n List Methods\n List Exercises\n Code Challenge\n\nPython Tuples\n\n Python Tuples\n Access Tuples\n Update Tuples\n Unpack Tuples\n Loop Tuples\n Join Tuples\n Tuple Methods\n Tuple Exercises\n Code Challenge\n\nPython Sets\n\n Python Sets\n Access Set Items\n Add Set Items\n Remove Set Items\n Loop Sets\n Join Sets\n Frozenset\n Set Methods\n Set Exercises\n Code Challenge\n\nPython Dictionaries\n\n Python Dictionaries\n Access Items\n Change Items\n Add Items\n Remove Items\n Loop Dictionaries\n Copy Dictionaries\n Nested Dictionaries\n Dictionary Methods\n Dictionary Exercises\n Code Challenge\n\nPython If...Else\n\n Python If\n Python Elif\n Python Else\n Shorthand If\n Logical Operators\n Nested If\n Pass Statement\n Code Challenge\n\nPython Match\n\n Match\n Code Challenge\n\nPython While Loops\n\n While Loops\n Code Challenge\n\nPython For Loops\n\n For Loops\n Code Challenge\n\nPython Data Processing--\u003e\nPython Functions\n\n Python Functions\n Python Arguments\n Python *args / **kwargs\n Python Scope\n Python Decorators\n Python Lambda\n Python Recursion\n Python Generators\n Code Challenge\n\nPython Range\n\n Range\n Code Challenge\n\nPython Arrays\n\n Arrays\n Code Challenge\n\nPython Iterators\n\n Iterators\n Code Challenge\n\nPython Modules\n\n Modules\n Code Challenge\n\nPython Dates\n\n Dates\n Code Challenge\n\nPython Math\n\n Math\n Code Challenge\n\nPython JSON\n\n JSON\n Code Challenge\n\nPython RegEx\n\n RegEx\n Code Challenge\n\nPython PIP\nPython Try...Except\n\n Try...Except\n Code Challenge\n\nPython String Formatting\n\n String Formatting\n Code Challenge\n\nPython None\n\n None\n Code Challenge\n\nPython User Input\n\nPython VirtualEnv",
+                             "heading":  "Python Tutorial"
+                         },
+                         {
+                             "content":  "Python OOP\nPython Classes/Objects\n\n Classes/Objects\n Code Challenge\n\nPython __init__ Method\n\n __init__ Method\n Code Challenge\n\nPython self Parameter\n\n self Parameter\n Code Challenge\n\nPython Class Properties\n\n Class Properties\n Code Challenge\n\nPython Class Methods\n\n Class Methods\n Code Challenge\n\nPython Inheritance\n\n Inheritance\n Code Challenge\n\nPython Polymorphism\n\n Polymorphism\n Code Challenge\n\nPython Encapsulation\n\n Encapsulation\n Code Challenge\n\nPython Inner Classes",
+                             "heading":  "Python Classes"
+                         },
+                         {
+                             "content":  "Python File Handling\nPython Read Files\nPython Write/Create Files\nPython Delete Files",
+                             "heading":  "File Handling"
+                         },
+                         {
+                             "content":  "NumPy Tutorial\nPandas Tutorial\nSciPy Tutorial\nDjango Tutorial\n\n\u003c!--",
+                             "heading":  "Python Modules"
+                         },
+                         {
+                             "content":  "NumPy Intro\nNumPy Getting Started\nNumPy Creating Arrays\nNumPy Array Indexing\nNumPy Array Slicing\nNumPy Data Types\nNumPy Copy vs View\nNumPy Array Shape\nNumPy Array Reshape\nNumPy Array Iterating\nNumPy Array Join\nNumPy Array Split\nNumPy Array Search\nNumPy Array Sort\nNumPy Array Filter\nNumPy Random\n\n Random Intro\n Data Distribution\n Random Permutation\n Seaborn Module\n Normal Distribution\n Binomial Distribution\n Poisson Distribution\n Uniform Distribution\n Logistic Distribution\n Multinomial Distribution\n Exponential Distribution\n Chi Square Distribution\n Rayleigh Distribution\n Pareto Distribution\n Zipf Distribution\n\nNumPy ufunc\n\n ufunc Intro\n ufunc Create Function\n ufunc Simple Arithmetic\n ufunc Rounding Decimals\n ufunc Logs\n ufunc Summations\n ufunc Products\n ufunc Differences\n ufunc Finding LCM\n ufunc Finding GCD\n ufunc Trigonometric\n ufunc Hyperbolic\n ufunc Set Operations\n\n--\u003e\n\u003c!--",
+                             "heading":  "Python NumPy"
+                         },
+                         {
+                             "content":  "Pandas Tutorial\nPandas Getting Started\nPandas Series\nPandas DataFrames\nPandas Read CSV\nPandas Read JSON\nPandas Analyzing Data\nPandas Cleaning Data\n\n Pandas Cleaning Data\n Cleaning Empty Cells\n Cleaning Wrong Format\n Cleaning Wrong Data\n Removing Duplicates\n\nPandas Correlations\nPandas Plotting\n\n--\u003e",
+                             "heading":  "Python Pandas"
+                         },
+                         {
+                             "content":  "Matplotlib Intro\nMatplotlib Get Started\nMatplotlib Pyplot\nMatplotlib Plotting\nMatplotlib Markers\nMatplotlib Line\nMatplotlib Labels\nMatplotlib Grid\nMatplotlib Subplot\nMatplotlib Scatter\nMatplotlib Bars\nMatplotlib Histograms\nMatplotlib Pie Charts\n\n\u003c!--",
+                             "heading":  "Python Matplotlib"
+                         },
+                         {
+                             "content":  "SciPy Intro\nSciPy Getting Started\nSciPy Constants\nSciPy Optimizers\nSciPy Sparse Data\nSciPy Graphs\nSciPy Spatial Data\nSciPy Matlab Arrays\nSciPy Interpolation\nSciPy Significance Tests\n\n--\u003e",
+                             "heading":  "Python SciPy"
+                         },
+                         {
+                             "content":  "Getting Started\nMean Median Mode\nStandard Deviation\nPercentile\nData Distribution\nNormal Data Distribution\nScatter Plot\nLinear Regression\nPolynomial Regression\nMultiple Regression\nScale\nTrain/Test\nDecision Tree\n\nConfusion Matrix\nHierarchical Clustering\nLogistic Regression\nGrid Search\nCategorical Data\nK-means\nBootstrap Aggregation\nCross Validation\nAUC - ROC Curve\nK-nearest neighbors",
+                             "heading":  "Machine Learning"
+                         },
+                         {
+                             "content":  "Python DSA\nLists and Arrays\nStacks\nQueues\nLinked Lists\nHash Tables\nTrees\nBinary Trees\nBinary Search Trees\nAVL Trees\nGraphs\nLinear Search\nBinary Search\nBubble Sort\nSelection Sort\nInsertion Sort\nQuick Sort\nCounting Sort\nRadix Sort\nMerge Sort",
+                             "heading":  "Python DSA"
+                         },
+                         {
+                             "content":  "MySQL Get Started\nMySQL Create Database\nMySQL Create Table\nMySQL Insert\nMySQL Select\nMySQL Where\nMySQL Order By\nMySQL Delete\nMySQL Drop Table\nMySQL Update\nMySQL Limit\nMySQL Join",
+                             "heading":  "Python MySQL"
+                         },
+                         {
+                             "content":  "MongoDB Get Started\nMongoDB Create DB\nMongoDB Collection\nMongoDB Insert\nMongoDB Find\nMongoDB Query\nMongoDB Sort\nMongoDB Delete\nMongoDB Drop Collection\nMongoDB Update\nMongoDB Limit\nPython Classes\nPython as Aspect Oriented\nPython File Handling\nPython Database\nPython Web Applications\nPython Workflows\nPython Maths \u0026 Science\nPython Regular Expressions\nPython Unit Testing\n--\u003e",
+                             "heading":  "Python MongoDB"
+                         },
+                         {
+                             "content":  "Python Certificate",
+                             "heading":  "Python Cert"
+                         },
+                         {
+                             "content":  "Python Overview\nPython Built-in Functions\nPython String Methods\nPython List Methods\nPython Dictionary Methods\nPython Tuple Methods\nPython Set Methods\nPython File Methods\nPython Keywords\nPython Exceptions\nPython Glossary",
+                             "heading":  "Python Reference"
+                         },
+                         {
+                             "content":  "Built-in Modules\nRandom Module\nRequests Module\nStatistics Module\nMath Module\ncMath Module",
+                             "heading":  "Module Reference"
+                         },
+                         {
+                             "content":  "Remove List Duplicates\nReverse a String\nAdd Two Numbers",
+                             "heading":  "Python How To"
+                         },
+                         {
+                             "content":  "Python Examples\nPython Compiler\nPython Exercises\nPython Quiz\nPython Challenges\nPython Practice Problems\nPython Server\nPython Syllabus\nPython Study Plan\nPython Interview Q\u0026A\nPython Bootcamp\nPython Training\n\nny:--\u003e\n\n ny:--\u003e\n\nny:--\u003e\n\nMatplotlib Scatter\n\n❮ Previous\nNext ❯",
+                             "heading":  "Python Examples"
+                         },
+                         {
+                             "content":  "With Pyplot, you can use the scatter() function \nto draw a scatter plot.\n\nThe scatter() function plots one dot for \neach observation. It needs two arrays of the same length, one for the values of \nthe x-axis, and one for values on the y-axis:\n\nExample\nA simple scatter plot:\n\n import matplotlib.pyplot as plt\nimport numpy as np\n\nx = np.array([5,7,8,7,2,17,2,9,4,11,12,9,6])\ny = np.array([99,86,87,88,111,86,103,87,94,78,77,85,86])\n\nplt.scatter(x, y)\nplt.show()\n\nResult:\n\nTry it Yourself »\n\nThe observation in the example above is the result of 13 cars passing by.\n\nThe X-axis shows how old the car is.\n\nThe Y-axis shows the speed of the car when it passes.\n\nAre there any relationships between the observations?\n\nIt seems that the newer the car, the faster it drives, but that could be a coincidence, after all we only registered 13 cars.",
+                             "heading":  "Creating Scatter Plots"
+                         },
+                         {
+                             "content":  "In the example above, there seems to be a relationship between speed and age,\nbut what if we plot the observations from another day as well?\nWill the scatter plot tell us something else?\n\nExample\nDraw two plots on the same figure:\n\n import matplotlib.pyplot as plt\nimport numpy as np\n\n#day one, the age \n and speed of 13 cars:\nx = np.array([5,7,8,7,2,17,2,9,4,11,12,9,6])\n\n y = np.array([99,86,87,88,111,86,103,87,94,78,77,85,86])\nplt.scatter(x, \n y)\n\n#day two, the age and speed of 15 cars:\nx = np.array([2,2,8,1,15,8,12,9,7,3,11,4,7,14,12])\ny = np.array([100,105,84,105,90,99,90,95,94,100,79,112,91,80,85])\n\n plt.scatter(x, y)\n\nplt.show()\n\nResult:\n\nTry it Yourself »\n\n Note: The two plots are plotted with two different colors, by default blue and orange, you will learn how to change colors later in this chapter.\n\nBy comparing the two plots, I think it is safe to say that they both gives us the same conclusion: the newer the car, the faster it drives.",
+                             "heading":  "Compare Plots"
+                         },
+                         {
+                             "content":  "You can set your own color for each scatter plot with the\ncolor or the c \nargument:\n\nExample\nSet your own color of the markers:\n\n import matplotlib.pyplot as plt\nimport numpy as np\n\nx = np.array([5,7,8,7,2,17,2,9,4,11,12,9,6])\n\n y = np.array([99,86,87,88,111,86,103,87,94,78,77,85,86])\nplt.scatter(x, \n y, color = \u0027hotpink\u0027)\n\nx = np.array([2,2,8,1,15,8,12,9,7,3,11,4,7,14,12])\ny = np.array([100,105,84,105,90,99,90,95,94,100,79,112,91,80,85])\n\n plt.scatter(x, y, color = \u0027#88c999\u0027)\n\nplt.show()\n\nResult:\n\nTry it Yourself »",
+                             "heading":  "Colors"
+                         },
+                         {
+                             "content":  "You can even set a specific color for each dot by using an array of colors as value for the\nc argument:\n\n Note: You cannot use the color argument for this, only the c argument.\n\nExample\nSet your own color of the markers:\n\n import matplotlib.pyplot as plt\nimport numpy as np\n\nx = np.array([5,7,8,7,2,17,2,9,4,11,12,9,6])\n\n y = np.array([99,86,87,88,111,86,103,87,94,78,77,85,86])\ncolors = np.array([\"red\",\"green\",\"blue\",\"yellow\",\"pink\",\"black\",\"orange\",\"purple\",\"beige\",\"brown\",\"gray\",\"cyan\",\"magenta\"])\n\nplt.scatter(x, y, c=colors)\n\nplt.show()\n\nResult:\n\nTry it Yourself »",
+                             "heading":  "Color Each Dot"
+                         },
+                         {
+                             "content":  "The Matplotlib module has a number of available colormaps.\n\nA colormap is like a list of colors, where each color has a value that ranges \nfrom 0 to 100.\n\nHere is an example of a colormap:\n\nThis colormap is called \u0027viridis\u0027 and as you can see it ranges from 0, which \nis a purple color, up to 100, which is a yellow color.\n\nHow to Use the ColorMap\nYou can specify the colormap with the keyword argument\ncmap with the value of the colormap, in this \ncase \u0027viridis\u0027 which is one of the \nbuilt-in colormaps available in Matplotlib.\n\nIn addition you have to create an array with values (from 0 to 100), one value for each point in the scatter plot:\n\nExample\nCreate a color array, and specify a colormap in the scatter plot:\n\n import matplotlib.pyplot as plt\nimport numpy as np\n\nx = np.array([5,7,8,7,2,17,2,9,4,11,12,9,6])\n\n y = np.array([99,86,87,88,111,86,103,87,94,78,77,85,86])\ncolors = np.array([0, \n 10, 20, 30, 40, 45, 50, 55, 60, 70, 80, 90, 100])\n\nplt.scatter(x, y, c=colors, cmap=\u0027viridis\u0027)\n\nplt.show()\n\nResult:\n\nTry it Yourself »\n\nYou can include the colormap in the drawing by including the plt.colorbar() statement:\n\nExample\nInclude the actual colormap:\n\n import matplotlib.pyplot as plt\nimport numpy as np\n\nx = np.array([5,7,8,7,2,17,2,9,4,11,12,9,6])\n\n y = np.array([99,86,87,88,111,86,103,87,94,78,77,85,86])\ncolors = np.array([0, \n 10, 20, 30, 40, 45, 50, 55, 60, 70, 80, 90, 100])\n\nplt.scatter(x, y, c=colors, cmap=\u0027viridis\u0027)\n\nplt.colorbar()\n\nplt.show()\n\nResult:\n\nTry it Yourself »\n\nAvailable ColorMaps\n\nYou can choose any of the built-in colormaps:\n\nName\n\nReverse\n\nAccent\nTry it »\n\nAccent_r\nTry it »\n\nBlues\nTry it »\n\nBlues_r\nTry it »\n\nBrBG\nTry it »\n\nBrBG_r\nTry it »\n\nBuGn\nTry it »\n\nBuGn_r\nTry it »\n\nBuPu\nTry it »\n\nBuPu_r\nTry it »\n\nCMRmap\nTry it »\n\nCMRmap_r\nTry it »\n\nDark2\nTry it »\n\nDark2_r\nTry it »\n\nGnBu\nTry it »\n\nGnBu_r\nTry it »\n\nGreens\nTry it »\n\nGreens_r\nTry it »\n\nGreys\nTry it »\n\nGreys_r\nTry it »\n\nOrRd\nTry it »\n\nOrRd_r\nTry it »\n\nOranges\nTry it »\n\nOranges_r\nTry it »\n\nPRGn\nTry it »\n\nPRGn_r\nTry it »\n\nPaired\nTry it »\n\nPaired_r\nTry it »\n\nPastel1\nTry it »\n\nPastel1_r\nTry it »\n\nPastel2\nTry it »\n\nPastel2_r\nTry it »\n\nPiYG\nTry it »\n\nPiYG_r\nTry it »\n\nPuBu\nTry it »\n\nPuBu_r\nTry it »\n\nPuBuGn\nTry it »\n\nPuBuGn_r\nTry it »\n\nPuOr\nTry it »\n\nPuOr_r\nTry it »\n\nPuRd\nTry it »\n\nPuRd_r\nTry it »\n\nPurples\nTry it »\n\nPurples_r\nTry it »\n\nRdBu\nTry it »\n\nRdBu_r\nTry it »\n\nRdGy\nTry it »\n\nRdGy_r\nTry it »\n\nRdPu\nTry it »\n\nRdPu_r\nTry it »\n\nRdYlBu\nTry it »\n\nRdYlBu_r\nTry it »\n\nRdYlGn\nTry it »\n\nRdYlGn_r\nTry it »\n\nReds\nTry it »\n\nReds_r\nTry it »\n\nSet1\nTry it »\n\nSet1_r\nTry it »\n\nSet2\nTry it »\n\nSet2_r\nTry it »\n\nSet3\nTry it »\n\nSet3_r\nTry it »\n\nSpectral\nTry it »\n\nSpectral_r\nTry it »\n\nWistia\nTry it »\n\nWistia_r\nTry it »\n\nYlGn\nTry it »\n\nYlGn_r\nTry it »\n\nYlGnBu\nTry it »\n\nYlGnBu_r\nTry it »\n\nYlOrBr\nTry it »\n\nYlOrBr_r\nTry it »\n\nYlOrRd\nTry it »\n\nYlOrRd_r\nTry it »\n\nafmhot\nTry it »\n\nafmhot_r\nTry it »\n\nautumn\nTry it »\n\nautumn_r\nTry it »\n\nbinary\nTry it »\n\nbinary_r\nTry it »\n\nbone\nTry it »\n\nbone_r\nTry it »\n\nbrg\nTry it »\n\nbrg_r\nTry it »\n\nbwr\nTry it »\n\nbwr_r\nTry it »\n\ncividis\nTry it »\n\ncividis_r\nTry it »\n\ncool\nTry it »\n\ncool_r\nTry it »\n\ncoolwarm\nTry it »\n\ncoolwarm_r\nTry it »\n\ncopper\nTry it »\n\ncopper_r\nTry it »\n\ncubehelix\nTry it »\n\ncubehelix_r\nTry it »\n\nflag\nTry it »\n\nflag_r\nTry it »\n\ngist_earth\nTry it »\n\ngist_earth_r\nTry it »\n\ngist_gray\nTry it »\n\ngist_gray_r\nTry it »\n\ngist_heat\nTry it »\n\ngist_heat_r\nTry it »\n\ngist_ncar\nTry it »\n\ngist_ncar_r\nTry it »\n\ngist_rainbow\nTry it »\n\ngist_rainbow_r\nTry it »\n\ngist_stern\nTry it »\n\ngist_stern_r\nTry it »\n\ngist_yarg\nTry it »\n\ngist_yarg_r\nTry it »\n\ngnuplot\nTry it »\n\ngnuplot_r\nTry it »\n\ngnuplot2\nTry it »\n\ngnuplot2_r\nTry it »\n\ngray\nTry it »\n\ngray_r\nTry it »\n\nhot\nTry it »\n\nhot_r\nTry it »\n\nhsv\nTry it »\n\nhsv_r\nTry it »\n\ninferno\nTry it »\n\ninferno_r\nTry it »\n\njet\nTry it »\n\njet_r\nTry it »\n\nmagma\nTry it »\n\nmagma_r\nTry it »\n\nnipy_spectral\nTry it »\n\nnipy_spectral_r\nTry it »\n\nocean\nTry it »\n\nocean_r\nTry it »\n\npink\nTry it »\n\npink_r\nTry it »\n\nplasma\nTry it »\n\nplasma_r\nTry it »\n\nprism\nTry it »\n\nprism_r\nTry it »\n\nrainbow\nTry it »\n\nrainbow_r\nTry it »\n\nseismic\nTry it »\n\nseismic_r\nTry it »\n\nspring\nTry it »\n\nspring_r\nTry it »\n\nsummer\nTry it »\n\nsummer_r\nTry it »\n\ntab10\nTry it »\n\ntab10_r\nTry it »\n\ntab20\nTry it »\n\ntab20_r\nTry it »\n\ntab20b\nTry it »\n\ntab20b_r\nTry it »\n\ntab20c\nTry it »\n\ntab20c_r\nTry it »\n\nterrain\nTry it »\n\nterrain_r\nTry it »\n\ntwilight\nTry it »\n\ntwilight_r\nTry it »\n\ntwilight_shifted\nTry it »\n\ntwilight_shifted_r\nTry it »\n\nviridis\nTry it »\n\nviridis_r\nTry it »\n\nwinter\nTry it »\n\nwinter_r\nTry it »",
+                             "heading":  "ColorMap"
+                         },
+                         {
+                             "content":  "You can change the size of the dots with the \ns argument.\n\nJust like colors, make sure the array for sizes has the same length as the arrays for the x- and y-axis:\n\nExample\nSet your own size for the markers:\n\n import matplotlib.pyplot as plt\nimport numpy as np\n\nx = np.array([5,7,8,7,2,17,2,9,4,11,12,9,6])\n\n y = np.array([99,86,87,88,111,86,103,87,94,78,77,85,86])\nsizes = \n np.array([20,50,100,200,500,1000,60,90,10,300,600,800,75])\n\nplt.scatter(x, \n y, s=sizes)\n\nplt.show()\n\nResult:\n\nTry it Yourself »",
+                             "heading":  "Size"
+                         },
+                         {
+                             "content":  "You can adjust the transparency of the dots with the \nalpha argument.\n\nJust like colors, make sure the array for sizes has the same length as the arrays for the x- and y-axis:\n\nExample\nSet your own size for the markers:\n\n import matplotlib.pyplot as plt\nimport numpy as np\n\nx = np.array([5,7,8,7,2,17,2,9,4,11,12,9,6])\n\n y = np.array([99,86,87,88,111,86,103,87,94,78,77,85,86])\nsizes = \n np.array([20,50,100,200,500,1000,60,90,10,300,600,800,75])\n\nplt.scatter(x, \n y, s=sizes, alpha=0.5)\n\nplt.show()\n\nResult:\n\nTry it Yourself »",
+                             "heading":  "Alpha"
+                         },
+                         {
+                             "content":  "You can combine a colormap with different sizes of the dots. This is best visualized if the dots are transparent:\n\nExample\nCreate random arrays with 100 values for x-points, y-points, colors and \nsizes:\n\n import matplotlib.pyplot as plt\nimport numpy as np\n\nx = \n np.random.randint(100, size=(100))\ny = np.random.randint(100, size=(100))\n\n colors = np.random.randint(100, size=(100))\nsizes = 10 * np.random.randint(100, \n size=(100))\n\nplt.scatter(x, y, c=colors, s=sizes, alpha=0.5, cmap=\u0027nipy_spectral\u0027)\n\nplt.colorbar()\n\nplt.show()\n\nResult:\n\nTry it Yourself »\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                             "heading":  "Combine Color Size and Alpha"
+                         },
+                         {
+                             "content":  "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                             "heading":  "Contact Sales"
+                         }
+                     ],
+        "extracted_at":  "2026-08-09T11:16:29Z",
+        "subject":  "Matplotlib",
+        "title":  "Matplotlib Scatter"
+    },
+    {
+        "url":  "https://www.w3schools.com/python/matplotlib_bars.asp",
+        "summary":  "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id":  "matplotlib_matplotlib_bars",
+        "code_examples":  [
+                              {
+                                  "code":  "import matplotlib.pyplot as plt\nimport numpy as np\n\nx = np.array([\"A\", \n \"B\", \"C\", \"D\"])\ny = np.array([3, 8, 1, 10])\n\nplt.bar(x,y)\nplt.show()",
+                                  "language":  "matplotlib",
+                                  "heading":  "Example",
+                                  "tryit_url":  null
+                              }
+                          ],
+        "category":  "Data Science \u0026 AI",
+        "notes_and_tips":  [
+
+                           ],
+        "sections":  [
+                         {
+                             "content":  "×\n\n ← All Topics",
+                             "heading":  "W3SCHOOLS TUTORIALS:"
+                         },
+                         {
+                             "content":  "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                             "heading":  "W3SCHOOLS REFERENCES:"
+                         },
+                         {
+                             "content":  "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                             "heading":  "Select another topic:"
+                         },
+                         {
+                             "content":  "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                             "heading":  "W3SCHOOLS CERTIFICATES:"
+                         },
+                         {
+                             "content":  "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To\u0027s\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n--\u003e\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n--\u003e\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n \u0026#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML \u0026 CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n--\u003e\n\n×--\u003e",
+                             "heading":  "All Our Services"
+                         },
+                         {
+                             "content":  "Python HOME\nPython Intro\nPython Get Started\nPython Syntax\n\nSyntax\nStatements\nCode Challenge\n\nPython Output\n\nPrint Text\nPrint Numbers\nCode Challenge\n\nPython Comments\n\nComments\nCode Challenge\n\nPython Variables\n\n Python Variables\n Variable Names\n Assign Multiple Values\n Output Variables\n Global Variables\n Variable Exercises\n Code Challenge\n\nPython Data Types\n\n Data Types\n Code Challenge\n\n Python bytes\n Python bytearray\n Python memoryview\n\n--\u003e\nPython Numbers\n\n Numbers\n Code Challenge\n\nPython Primitive Types--\u003e\nPython Casting\n\n Casting\n Code Challenge\n\nPython Strings\n\n Python Strings\n Slicing Strings\n Modify Strings\n Concatenate Strings\n Format Strings\n Escape Characters\n String Methods\n String Exercises\n Code Challenge\n\nPython Booleans\n\n Booleans\n Code Challenge\n\nPython Operators\n\n Python Operators\n Arithmetic Operators\n Assignment Operators\n Ternary Operator \n Comparison Operators\n Logical Operators\n Identity Operators\n Membership Operators\n Bitwise Operators\n Operator Precedence\n Code Challenge\n\nPython Lists\n\n Python Lists\n Access List Items\n Change List Items\n Add List Items\n Remove List Items\n Loop Lists\n List Comprehension\n Sort Lists\n Copy Lists\n Join Lists\n List Methods\n List Exercises\n Code Challenge\n\nPython Tuples\n\n Python Tuples\n Access Tuples\n Update Tuples\n Unpack Tuples\n Loop Tuples\n Join Tuples\n Tuple Methods\n Tuple Exercises\n Code Challenge\n\nPython Sets\n\n Python Sets\n Access Set Items\n Add Set Items\n Remove Set Items\n Loop Sets\n Join Sets\n Frozenset\n Set Methods\n Set Exercises\n Code Challenge\n\nPython Dictionaries\n\n Python Dictionaries\n Access Items\n Change Items\n Add Items\n Remove Items\n Loop Dictionaries\n Copy Dictionaries\n Nested Dictionaries\n Dictionary Methods\n Dictionary Exercises\n Code Challenge\n\nPython If...Else\n\n Python If\n Python Elif\n Python Else\n Shorthand If\n Logical Operators\n Nested If\n Pass Statement\n Code Challenge\n\nPython Match\n\n Match\n Code Challenge\n\nPython While Loops\n\n While Loops\n Code Challenge\n\nPython For Loops\n\n For Loops\n Code Challenge\n\nPython Data Processing--\u003e\nPython Functions\n\n Python Functions\n Python Arguments\n Python *args / **kwargs\n Python Scope\n Python Decorators\n Python Lambda\n Python Recursion\n Python Generators\n Code Challenge\n\nPython Range\n\n Range\n Code Challenge\n\nPython Arrays\n\n Arrays\n Code Challenge\n\nPython Iterators\n\n Iterators\n Code Challenge\n\nPython Modules\n\n Modules\n Code Challenge\n\nPython Dates\n\n Dates\n Code Challenge\n\nPython Math\n\n Math\n Code Challenge\n\nPython JSON\n\n JSON\n Code Challenge\n\nPython RegEx\n\n RegEx\n Code Challenge\n\nPython PIP\nPython Try...Except\n\n Try...Except\n Code Challenge\n\nPython String Formatting\n\n String Formatting\n Code Challenge\n\nPython None\n\n None\n Code Challenge\n\nPython User Input\n\nPython VirtualEnv",
+                             "heading":  "Python Tutorial"
+                         },
+                         {
+                             "content":  "Python OOP\nPython Classes/Objects\n\n Classes/Objects\n Code Challenge\n\nPython __init__ Method\n\n __init__ Method\n Code Challenge\n\nPython self Parameter\n\n self Parameter\n Code Challenge\n\nPython Class Properties\n\n Class Properties\n Code Challenge\n\nPython Class Methods\n\n Class Methods\n Code Challenge\n\nPython Inheritance\n\n Inheritance\n Code Challenge\n\nPython Polymorphism\n\n Polymorphism\n Code Challenge\n\nPython Encapsulation\n\n Encapsulation\n Code Challenge\n\nPython Inner Classes",
+                             "heading":  "Python Classes"
+                         },
+                         {
+                             "content":  "Python File Handling\nPython Read Files\nPython Write/Create Files\nPython Delete Files",
+                             "heading":  "File Handling"
+                         },
+                         {
+                             "content":  "NumPy Tutorial\nPandas Tutorial\nSciPy Tutorial\nDjango Tutorial\n\n\u003c!--",
+                             "heading":  "Python Modules"
+                         },
+                         {
+                             "content":  "NumPy Intro\nNumPy Getting Started\nNumPy Creating Arrays\nNumPy Array Indexing\nNumPy Array Slicing\nNumPy Data Types\nNumPy Copy vs View\nNumPy Array Shape\nNumPy Array Reshape\nNumPy Array Iterating\nNumPy Array Join\nNumPy Array Split\nNumPy Array Search\nNumPy Array Sort\nNumPy Array Filter\nNumPy Random\n\n Random Intro\n Data Distribution\n Random Permutation\n Seaborn Module\n Normal Distribution\n Binomial Distribution\n Poisson Distribution\n Uniform Distribution\n Logistic Distribution\n Multinomial Distribution\n Exponential Distribution\n Chi Square Distribution\n Rayleigh Distribution\n Pareto Distribution\n Zipf Distribution\n\nNumPy ufunc\n\n ufunc Intro\n ufunc Create Function\n ufunc Simple Arithmetic\n ufunc Rounding Decimals\n ufunc Logs\n ufunc Summations\n ufunc Products\n ufunc Differences\n ufunc Finding LCM\n ufunc Finding GCD\n ufunc Trigonometric\n ufunc Hyperbolic\n ufunc Set Operations\n\n--\u003e\n\u003c!--",
+                             "heading":  "Python NumPy"
+                         },
+                         {
+                             "content":  "Pandas Tutorial\nPandas Getting Started\nPandas Series\nPandas DataFrames\nPandas Read CSV\nPandas Read JSON\nPandas Analyzing Data\nPandas Cleaning Data\n\n Pandas Cleaning Data\n Cleaning Empty Cells\n Cleaning Wrong Format\n Cleaning Wrong Data\n Removing Duplicates\n\nPandas Correlations\nPandas Plotting\n\n--\u003e",
+                             "heading":  "Python Pandas"
+                         },
+                         {
+                             "content":  "Matplotlib Intro\nMatplotlib Get Started\nMatplotlib Pyplot\nMatplotlib Plotting\nMatplotlib Markers\nMatplotlib Line\nMatplotlib Labels\nMatplotlib Grid\nMatplotlib Subplot\nMatplotlib Scatter\nMatplotlib Bars\nMatplotlib Histograms\nMatplotlib Pie Charts\n\n\u003c!--",
+                             "heading":  "Python Matplotlib"
+                         },
+                         {
+                             "content":  "SciPy Intro\nSciPy Getting Started\nSciPy Constants\nSciPy Optimizers\nSciPy Sparse Data\nSciPy Graphs\nSciPy Spatial Data\nSciPy Matlab Arrays\nSciPy Interpolation\nSciPy Significance Tests\n\n--\u003e",
+                             "heading":  "Python SciPy"
+                         },
+                         {
+                             "content":  "Getting Started\nMean Median Mode\nStandard Deviation\nPercentile\nData Distribution\nNormal Data Distribution\nScatter Plot\nLinear Regression\nPolynomial Regression\nMultiple Regression\nScale\nTrain/Test\nDecision Tree\n\nConfusion Matrix\nHierarchical Clustering\nLogistic Regression\nGrid Search\nCategorical Data\nK-means\nBootstrap Aggregation\nCross Validation\nAUC - ROC Curve\nK-nearest neighbors",
+                             "heading":  "Machine Learning"
+                         },
+                         {
+                             "content":  "Python DSA\nLists and Arrays\nStacks\nQueues\nLinked Lists\nHash Tables\nTrees\nBinary Trees\nBinary Search Trees\nAVL Trees\nGraphs\nLinear Search\nBinary Search\nBubble Sort\nSelection Sort\nInsertion Sort\nQuick Sort\nCounting Sort\nRadix Sort\nMerge Sort",
+                             "heading":  "Python DSA"
+                         },
+                         {
+                             "content":  "MySQL Get Started\nMySQL Create Database\nMySQL Create Table\nMySQL Insert\nMySQL Select\nMySQL Where\nMySQL Order By\nMySQL Delete\nMySQL Drop Table\nMySQL Update\nMySQL Limit\nMySQL Join",
+                             "heading":  "Python MySQL"
+                         },
+                         {
+                             "content":  "MongoDB Get Started\nMongoDB Create DB\nMongoDB Collection\nMongoDB Insert\nMongoDB Find\nMongoDB Query\nMongoDB Sort\nMongoDB Delete\nMongoDB Drop Collection\nMongoDB Update\nMongoDB Limit\nPython Classes\nPython as Aspect Oriented\nPython File Handling\nPython Database\nPython Web Applications\nPython Workflows\nPython Maths \u0026 Science\nPython Regular Expressions\nPython Unit Testing\n--\u003e",
+                             "heading":  "Python MongoDB"
+                         },
+                         {
+                             "content":  "Python Certificate",
+                             "heading":  "Python Cert"
+                         },
+                         {
+                             "content":  "Python Overview\nPython Built-in Functions\nPython String Methods\nPython List Methods\nPython Dictionary Methods\nPython Tuple Methods\nPython Set Methods\nPython File Methods\nPython Keywords\nPython Exceptions\nPython Glossary",
+                             "heading":  "Python Reference"
+                         },
+                         {
+                             "content":  "Built-in Modules\nRandom Module\nRequests Module\nStatistics Module\nMath Module\ncMath Module",
+                             "heading":  "Module Reference"
+                         },
+                         {
+                             "content":  "Remove List Duplicates\nReverse a String\nAdd Two Numbers",
+                             "heading":  "Python How To"
+                         },
+                         {
+                             "content":  "Python Examples\nPython Compiler\nPython Exercises\nPython Quiz\nPython Challenges\nPython Practice Problems\nPython Server\nPython Syllabus\nPython Study Plan\nPython Interview Q\u0026A\nPython Bootcamp\nPython Training\n\nny:--\u003e\n\n ny:--\u003e\n\nny:--\u003e\n\nMatplotlib Bars\n\n❮ Previous\nNext ❯",
+                             "heading":  "Python Examples"
+                         },
+                         {
+                             "content":  "With Pyplot, you can use the bar() function \nto draw bar graphs:\n\nExample\nDraw 4 bars:\n\n import matplotlib.pyplot as plt\nimport numpy as np\n\nx = np.array([\"A\", \n \"B\", \"C\", \"D\"])\ny = np.array([3, 8, 1, 10])\n\nplt.bar(x,y)\nplt.show()\n\nResult:\n\nTry it Yourself »\n\nThe bar() function takes arguments that describes the \nlayout of the bars.\n\nThe categories and their values represented by the first\nand second argument as arrays.\n\nExample\n\nx = [\"APPLES\", \"BANANAS\"]\n\ny = [400, 350]\n\nplt.bar(x, y)\n\nTry it Yourself »",
+                             "heading":  "Creating Bars"
+                         },
+                         {
+                             "content":  "If you want the bars to be displayed horizontally instead of vertically,\nuse the barh() function:\n\nExample\nDraw 4 horizontal bars:\n\n import matplotlib.pyplot as plt\nimport numpy as np\n\nx = np.array([\"A\", \n \"B\", \"C\", \"D\"])\ny = np.array([3, 8, 1, 10])\n\nplt.barh(x, y)\nplt.show()\n\nResult:\n\nTry it Yourself »",
+                             "heading":  "Horizontal Bars"
+                         },
+                         {
+                             "content":  "The bar() and barh() take the keyword argument\ncolor to set the color of the bars:\n\nExample\nDraw 4 red bars:\n\n import matplotlib.pyplot as plt\nimport numpy as np\n\nx = np.array([\"A\", \n \"B\", \"C\", \"D\"])\ny = np.array([3, 8, 1, 10])\n\nplt.bar(x, y, color = \"red\")\nplt.show()\n\nResult:\n\nTry it Yourself »\n\nColor Names\n\nYou can use any of the 140 supported color names.\n\nExample\nDraw 4 \"hot pink\" bars:\n\n import matplotlib.pyplot as plt\nimport numpy as np\n\nx = np.array([\"A\", \n \"B\", \"C\", \"D\"])\ny = np.array([3, 8, 1, 10])\n\nplt.bar(x, y, color = \"hotpink\")\nplt.show()\n\nResult:\n\nTry it Yourself »\n\nColor Hex\n\nOr you can use Hexadecimal color values:\n\nExample\nDraw 4 bars with a beautiful green color:\n\n import matplotlib.pyplot as plt\nimport numpy as np\n\nx = np.array([\"A\", \n \"B\", \"C\", \"D\"])\ny = np.array([3, 8, 1, 10])\n\nplt.bar(x, y, color = \"#4CAF50\")\nplt.show()\n\nResult:\n\nTry it Yourself »",
+                             "heading":  "Bar Color"
+                         },
+                         {
+                             "content":  "The bar() takes the keyword argument\nwidth to set the width of the bars:\n\nExample\nDraw 4 very thin bars:\n\n import matplotlib.pyplot as plt\nimport numpy as np\n\nx = np.array([\"A\", \n \"B\", \"C\", \"D\"])\ny = np.array([3, 8, 1, 10])\n\nplt.bar(x, y, width = 0.1)\nplt.show()\n\nResult:\n\nTry it Yourself »\n\nThe default width value is 0.8\n\n Note: For horizontal bars, use height instead of width.",
+                             "heading":  "Bar Width"
+                         },
+                         {
+                             "content":  "The barh() takes the keyword argument\nheight to set the height of the bars:\n\nExample\nDraw 4 very thin bars:\n\n import matplotlib.pyplot as plt\nimport numpy as np\n\nx = np.array([\"A\", \n \"B\", \"C\", \"D\"])\ny = np.array([3, 8, 1, 10])\n\nplt.barh(x, y, height = 0.1)\nplt.show()\n\nResult:\n\nTry it Yourself »\n\nThe default height value is 0.8\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                             "heading":  "Bar Height"
+                         },
+                         {
+                             "content":  "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                             "heading":  "Contact Sales"
+                         }
+                     ],
+        "extracted_at":  "2026-08-09T11:16:29Z",
+        "subject":  "Matplotlib",
+        "title":  "Matplotlib Bars"
+    },
+    {
+        "url":  "https://www.w3schools.com/python/matplotlib_histograms.asp",
+        "summary":  "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id":  "matplotlib_matplotlib_histograms",
+        "code_examples":  [
+                              {
+                                  "code":  "import numpy as np\n\nx = \n np.random.normal(170, 10, 250)\n\nprint(x)",
+                                  "language":  "matplotlib",
+                                  "heading":  "Example",
+                                  "tryit_url":  null
+                              }
+                          ],
+        "category":  "Data Science \u0026 AI",
+        "notes_and_tips":  [
+
+                           ],
+        "sections":  [
+                         {
+                             "content":  "×\n\n ← All Topics",
+                             "heading":  "W3SCHOOLS TUTORIALS:"
+                         },
+                         {
+                             "content":  "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                             "heading":  "W3SCHOOLS REFERENCES:"
+                         },
+                         {
+                             "content":  "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                             "heading":  "Select another topic:"
+                         },
+                         {
+                             "content":  "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                             "heading":  "W3SCHOOLS CERTIFICATES:"
+                         },
+                         {
+                             "content":  "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To\u0027s\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n--\u003e\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n--\u003e\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n \u0026#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML \u0026 CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n--\u003e\n\n×--\u003e",
+                             "heading":  "All Our Services"
+                         },
+                         {
+                             "content":  "Python HOME\nPython Intro\nPython Get Started\nPython Syntax\n\nSyntax\nStatements\nCode Challenge\n\nPython Output\n\nPrint Text\nPrint Numbers\nCode Challenge\n\nPython Comments\n\nComments\nCode Challenge\n\nPython Variables\n\n Python Variables\n Variable Names\n Assign Multiple Values\n Output Variables\n Global Variables\n Variable Exercises\n Code Challenge\n\nPython Data Types\n\n Data Types\n Code Challenge\n\n Python bytes\n Python bytearray\n Python memoryview\n\n--\u003e\nPython Numbers\n\n Numbers\n Code Challenge\n\nPython Primitive Types--\u003e\nPython Casting\n\n Casting\n Code Challenge\n\nPython Strings\n\n Python Strings\n Slicing Strings\n Modify Strings\n Concatenate Strings\n Format Strings\n Escape Characters\n String Methods\n String Exercises\n Code Challenge\n\nPython Booleans\n\n Booleans\n Code Challenge\n\nPython Operators\n\n Python Operators\n Arithmetic Operators\n Assignment Operators\n Ternary Operator \n Comparison Operators\n Logical Operators\n Identity Operators\n Membership Operators\n Bitwise Operators\n Operator Precedence\n Code Challenge\n\nPython Lists\n\n Python Lists\n Access List Items\n Change List Items\n Add List Items\n Remove List Items\n Loop Lists\n List Comprehension\n Sort Lists\n Copy Lists\n Join Lists\n List Methods\n List Exercises\n Code Challenge\n\nPython Tuples\n\n Python Tuples\n Access Tuples\n Update Tuples\n Unpack Tuples\n Loop Tuples\n Join Tuples\n Tuple Methods\n Tuple Exercises\n Code Challenge\n\nPython Sets\n\n Python Sets\n Access Set Items\n Add Set Items\n Remove Set Items\n Loop Sets\n Join Sets\n Frozenset\n Set Methods\n Set Exercises\n Code Challenge\n\nPython Dictionaries\n\n Python Dictionaries\n Access Items\n Change Items\n Add Items\n Remove Items\n Loop Dictionaries\n Copy Dictionaries\n Nested Dictionaries\n Dictionary Methods\n Dictionary Exercises\n Code Challenge\n\nPython If...Else\n\n Python If\n Python Elif\n Python Else\n Shorthand If\n Logical Operators\n Nested If\n Pass Statement\n Code Challenge\n\nPython Match\n\n Match\n Code Challenge\n\nPython While Loops\n\n While Loops\n Code Challenge\n\nPython For Loops\n\n For Loops\n Code Challenge\n\nPython Data Processing--\u003e\nPython Functions\n\n Python Functions\n Python Arguments\n Python *args / **kwargs\n Python Scope\n Python Decorators\n Python Lambda\n Python Recursion\n Python Generators\n Code Challenge\n\nPython Range\n\n Range\n Code Challenge\n\nPython Arrays\n\n Arrays\n Code Challenge\n\nPython Iterators\n\n Iterators\n Code Challenge\n\nPython Modules\n\n Modules\n Code Challenge\n\nPython Dates\n\n Dates\n Code Challenge\n\nPython Math\n\n Math\n Code Challenge\n\nPython JSON\n\n JSON\n Code Challenge\n\nPython RegEx\n\n RegEx\n Code Challenge\n\nPython PIP\nPython Try...Except\n\n Try...Except\n Code Challenge\n\nPython String Formatting\n\n String Formatting\n Code Challenge\n\nPython None\n\n None\n Code Challenge\n\nPython User Input\n\nPython VirtualEnv",
+                             "heading":  "Python Tutorial"
+                         },
+                         {
+                             "content":  "Python OOP\nPython Classes/Objects\n\n Classes/Objects\n Code Challenge\n\nPython __init__ Method\n\n __init__ Method\n Code Challenge\n\nPython self Parameter\n\n self Parameter\n Code Challenge\n\nPython Class Properties\n\n Class Properties\n Code Challenge\n\nPython Class Methods\n\n Class Methods\n Code Challenge\n\nPython Inheritance\n\n Inheritance\n Code Challenge\n\nPython Polymorphism\n\n Polymorphism\n Code Challenge\n\nPython Encapsulation\n\n Encapsulation\n Code Challenge\n\nPython Inner Classes",
+                             "heading":  "Python Classes"
+                         },
+                         {
+                             "content":  "Python File Handling\nPython Read Files\nPython Write/Create Files\nPython Delete Files",
+                             "heading":  "File Handling"
+                         },
+                         {
+                             "content":  "NumPy Tutorial\nPandas Tutorial\nSciPy Tutorial\nDjango Tutorial\n\n\u003c!--",
+                             "heading":  "Python Modules"
+                         },
+                         {
+                             "content":  "NumPy Intro\nNumPy Getting Started\nNumPy Creating Arrays\nNumPy Array Indexing\nNumPy Array Slicing\nNumPy Data Types\nNumPy Copy vs View\nNumPy Array Shape\nNumPy Array Reshape\nNumPy Array Iterating\nNumPy Array Join\nNumPy Array Split\nNumPy Array Search\nNumPy Array Sort\nNumPy Array Filter\nNumPy Random\n\n Random Intro\n Data Distribution\n Random Permutation\n Seaborn Module\n Normal Distribution\n Binomial Distribution\n Poisson Distribution\n Uniform Distribution\n Logistic Distribution\n Multinomial Distribution\n Exponential Distribution\n Chi Square Distribution\n Rayleigh Distribution\n Pareto Distribution\n Zipf Distribution\n\nNumPy ufunc\n\n ufunc Intro\n ufunc Create Function\n ufunc Simple Arithmetic\n ufunc Rounding Decimals\n ufunc Logs\n ufunc Summations\n ufunc Products\n ufunc Differences\n ufunc Finding LCM\n ufunc Finding GCD\n ufunc Trigonometric\n ufunc Hyperbolic\n ufunc Set Operations\n\n--\u003e\n\u003c!--",
+                             "heading":  "Python NumPy"
+                         },
+                         {
+                             "content":  "Pandas Tutorial\nPandas Getting Started\nPandas Series\nPandas DataFrames\nPandas Read CSV\nPandas Read JSON\nPandas Analyzing Data\nPandas Cleaning Data\n\n Pandas Cleaning Data\n Cleaning Empty Cells\n Cleaning Wrong Format\n Cleaning Wrong Data\n Removing Duplicates\n\nPandas Correlations\nPandas Plotting\n\n--\u003e",
+                             "heading":  "Python Pandas"
+                         },
+                         {
+                             "content":  "Matplotlib Intro\nMatplotlib Get Started\nMatplotlib Pyplot\nMatplotlib Plotting\nMatplotlib Markers\nMatplotlib Line\nMatplotlib Labels\nMatplotlib Grid\nMatplotlib Subplot\nMatplotlib Scatter\nMatplotlib Bars\nMatplotlib Histograms\nMatplotlib Pie Charts\n\n\u003c!--",
+                             "heading":  "Python Matplotlib"
+                         },
+                         {
+                             "content":  "SciPy Intro\nSciPy Getting Started\nSciPy Constants\nSciPy Optimizers\nSciPy Sparse Data\nSciPy Graphs\nSciPy Spatial Data\nSciPy Matlab Arrays\nSciPy Interpolation\nSciPy Significance Tests\n\n--\u003e",
+                             "heading":  "Python SciPy"
+                         },
+                         {
+                             "content":  "Getting Started\nMean Median Mode\nStandard Deviation\nPercentile\nData Distribution\nNormal Data Distribution\nScatter Plot\nLinear Regression\nPolynomial Regression\nMultiple Regression\nScale\nTrain/Test\nDecision Tree\n\nConfusion Matrix\nHierarchical Clustering\nLogistic Regression\nGrid Search\nCategorical Data\nK-means\nBootstrap Aggregation\nCross Validation\nAUC - ROC Curve\nK-nearest neighbors",
+                             "heading":  "Machine Learning"
+                         },
+                         {
+                             "content":  "Python DSA\nLists and Arrays\nStacks\nQueues\nLinked Lists\nHash Tables\nTrees\nBinary Trees\nBinary Search Trees\nAVL Trees\nGraphs\nLinear Search\nBinary Search\nBubble Sort\nSelection Sort\nInsertion Sort\nQuick Sort\nCounting Sort\nRadix Sort\nMerge Sort",
+                             "heading":  "Python DSA"
+                         },
+                         {
+                             "content":  "MySQL Get Started\nMySQL Create Database\nMySQL Create Table\nMySQL Insert\nMySQL Select\nMySQL Where\nMySQL Order By\nMySQL Delete\nMySQL Drop Table\nMySQL Update\nMySQL Limit\nMySQL Join",
+                             "heading":  "Python MySQL"
+                         },
+                         {
+                             "content":  "MongoDB Get Started\nMongoDB Create DB\nMongoDB Collection\nMongoDB Insert\nMongoDB Find\nMongoDB Query\nMongoDB Sort\nMongoDB Delete\nMongoDB Drop Collection\nMongoDB Update\nMongoDB Limit\nPython Classes\nPython as Aspect Oriented\nPython File Handling\nPython Database\nPython Web Applications\nPython Workflows\nPython Maths \u0026 Science\nPython Regular Expressions\nPython Unit Testing\n--\u003e",
+                             "heading":  "Python MongoDB"
+                         },
+                         {
+                             "content":  "Python Certificate",
+                             "heading":  "Python Cert"
+                         },
+                         {
+                             "content":  "Python Overview\nPython Built-in Functions\nPython String Methods\nPython List Methods\nPython Dictionary Methods\nPython Tuple Methods\nPython Set Methods\nPython File Methods\nPython Keywords\nPython Exceptions\nPython Glossary",
+                             "heading":  "Python Reference"
+                         },
+                         {
+                             "content":  "Built-in Modules\nRandom Module\nRequests Module\nStatistics Module\nMath Module\ncMath Module",
+                             "heading":  "Module Reference"
+                         },
+                         {
+                             "content":  "Remove List Duplicates\nReverse a String\nAdd Two Numbers",
+                             "heading":  "Python How To"
+                         },
+                         {
+                             "content":  "Python Examples\nPython Compiler\nPython Exercises\nPython Quiz\nPython Challenges\nPython Practice Problems\nPython Server\nPython Syllabus\nPython Study Plan\nPython Interview Q\u0026A\nPython Bootcamp\nPython Training\n\nny:--\u003e\n\n ny:--\u003e\n\nny:--\u003e\n\nMatplotlib Histograms\n\n❮ Previous\nNext ❯",
+                             "heading":  "Python Examples"
+                         },
+                         {
+                             "content":  "A histogram is a graph showing frequency distributions.\n\nIt is a graph showing the number of observations within each given interval.\n\nExample: Say you ask for the height of 250 people, you \nmight end up with a histogram like this:\n\nYou can read from the histogram that there are approximately:\n\n2 people from 140 to 145cm\n5 people from 145 to 150cm\n15 people from \n151 to 156cm\n31 people from 157 to 162cm\n46 people from 163 to 168cm\n53 \npeople from 168 to 173cm\n45 people from 173 to 178cm\n28 people from 179 to \n184cm\n21 people from 185 to 190cm\n4 people from 190 to 195cm",
+                             "heading":  "Histogram"
+                         },
+                         {
+                             "content":  "In Matplotlib, we use the hist() function to \ncreate histograms.\n\nThe hist() function will use an array of \nnumbers to create a histogram, the array is sent into the function as an \nargument.\n\nFor simplicity we use NumPy to randomly generate an array with 250 values, \nwhere the values will concentrate around 170, and the standard deviation is 10. \nLearn more about Normal Data \nDistribution in our Machine Learning \nTutorial.\n\nExample\nA Normal Data Distribution by NumPy:\n\n import numpy as np\n\nx = \n np.random.normal(170, 10, 250)\n\nprint(x)\n\nResult:\nThis will generate a random result, and could look like this:\n\n [167.62255766 175.32495609 152.84661337 165.50264047 163.17457988\n 162.29867872 172.83638413 168.67303667 164.57361342 180.81120541\n 170.57782187 167.53075749 176.15356275 176.95378312 158.4125473\n 187.8842668 159.03730075 166.69284332 160.73882029 152.22378865\n 164.01255164 163.95288674 176.58146832 173.19849526 169.40206527\n 166.88861903 149.90348576 148.39039643 177.90349066 166.72462233\n 177.44776004 170.93335636 173.26312881 174.76534435 162.28791953\n 166.77301551 160.53785202 170.67972019 159.11594186 165.36992993\n 178.38979253 171.52158489 173.32636678 159.63894401 151.95735707\n 175.71274153 165.00458544 164.80607211 177.50988211 149.28106703\n 179.43586267 181.98365273 170.98196794 179.1093176 176.91855744\n 168.32092784 162.33939782 165.18364866 160.52300507 174.14316386\n 163.01947601 172.01767945 173.33491959 169.75842718 198.04834503\n 192.82490521 164.54557943 206.36247244 165.47748898 195.26377975\n 164.37569092 156.15175531 162.15564208 179.34100362 167.22138242\n 147.23667125 162.86940215 167.84986671 172.99302505 166.77279814\n 196.6137667 159.79012341 166.5840824 170.68645637 165.62204521\n 174.5559345 165.0079216 187.92545129 166.86186393 179.78383824\n 161.0973573 167.44890343 157.38075812 151.35412246 171.3107829\n 162.57149341 182.49985133 163.24700057 168.72639903 169.05309467\n 167.19232875 161.06405208 176.87667712 165.48750185 179.68799986\n 158.7913483 170.22465411 182.66432721 173.5675715 176.85646836\n 157.31299754 174.88959677 183.78323508 174.36814558 182.55474697\n 180.03359793 180.53094948 161.09560099 172.29179934 161.22665588\n 171.88382477 159.04626132 169.43886536 163.75793589 157.73710983\n 174.68921523 176.19843414 167.39315397 181.17128255 174.2674597\n 186.05053154 177.06516302 171.78523683 166.14875436 163.31607668\n 174.01429569 194.98819875 169.75129209 164.25748789 180.25773528\n 170.44784934 157.81966006 171.33315907 174.71390637 160.55423274\n 163.92896899 177.29159542 168.30674234 165.42853878 176.46256226\n 162.61719142 166.60810831 165.83648812 184.83238352 188.99833856\n 161.3054697 175.30396693 175.28109026 171.54765201 162.08762813\n 164.53011089 189.86213299 170.83784593 163.25869004 198.68079225\n 166.95154328 152.03381334 152.25444225 149.75522816 161.79200594\n 162.13535052 183.37298831 165.40405341 155.59224806 172.68678385\n 179.35359654 174.19668349 163.46176882 168.26621173 162.97527574\n 192.80170974 151.29673582 178.65251432 163.17266558 165.11172588\n 183.11107905 169.69556831 166.35149789 178.74419135 166.28562032\n 169.96465166 178.24368042 175.3035525 170.16496554 158.80682882\n 187.10006553 178.90542991 171.65790645 183.19289193 168.17446717\n 155.84544031 177.96091745 186.28887898 187.89867406 163.26716924\n 169.71242393 152.9410412 158.68101969 171.12655559 178.1482624\n 187.45272185 173.02872935 163.8047623 169.95676819 179.36887054\n 157.01955088 185.58143864 170.19037101 157.221245 168.90639755\n 178.7045601 168.64074373 172.37416382 165.61890535 163.40873027\n 168.98683006 149.48186389 172.20815568 172.82947206 173.71584064\n 189.42642762 172.79575803 177.00005573 169.24498561 171.55576698\n 161.36400372 176.47928342 163.02642822 165.09656415 186.70951892\n 153.27990317 165.59289527 180.34566865 189.19506385 183.10723435\n 173.48070474 170.28701875 157.24642079 157.9096498 176.4248199 ]\n\nTry it Yourself »\n\nThe hist() function will read the array and produce a histogram:\n\nExample\nA simple histogram:\n\n import matplotlib.pyplot as plt\nimport numpy as np\n\nx = \n np.random.normal(170, 10, 250)\n\nplt.hist(x)\nplt.show() \n\nResult:\n\nTry it Yourself »",
+                             "heading":  "Create Histogram"
+                         },
+                         {
+                             "content":  "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                             "heading":  "Contact Sales"
+                         }
+                     ],
+        "extracted_at":  "2026-08-09T11:16:30Z",
+        "subject":  "Matplotlib",
+        "title":  "Matplotlib Histograms"
+    },
+    {
+        "url":  "https://www.w3schools.com/python/matplotlib_pie_charts.asp",
+        "summary":  "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.",
+        "topic_id":  "matplotlib_matplotlib_pie_charts",
+        "code_examples":  [
+                              {
+                                  "code":  "import matplotlib.pyplot as plt\nimport numpy as np\n\ny = np.array([35, \n 25, 25, 15])\n\nplt.pie(y)\nplt.show()",
+                                  "language":  "matplotlib",
+                                  "heading":  "Example",
+                                  "tryit_url":  null
+                              }
+                          ],
+        "category":  "Data Science \u0026 AI",
+        "notes_and_tips":  [
+
+                           ],
+        "sections":  [
+                         {
+                             "content":  "×\n\n ← All Topics",
+                             "heading":  "W3SCHOOLS TUTORIALS:"
+                         },
+                         {
+                             "content":  "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                             "heading":  "W3SCHOOLS REFERENCES:"
+                         },
+                         {
+                             "content":  "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                             "heading":  "Select another topic:"
+                         },
+                         {
+                             "content":  "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                             "heading":  "W3SCHOOLS CERTIFICATES:"
+                         },
+                         {
+                             "content":  "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To\u0027s\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n--\u003e\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n--\u003e\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n \u0026#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮     \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA\n TYPESCRIPT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R\n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n INTRO TO HTML \u0026 CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n--\u003e\n\n×--\u003e",
+                             "heading":  "All Our Services"
+                         },
+                         {
+                             "content":  "Python HOME\nPython Intro\nPython Get Started\nPython Syntax\n\nSyntax\nStatements\nCode Challenge\n\nPython Output\n\nPrint Text\nPrint Numbers\nCode Challenge\n\nPython Comments\n\nComments\nCode Challenge\n\nPython Variables\n\n Python Variables\n Variable Names\n Assign Multiple Values\n Output Variables\n Global Variables\n Variable Exercises\n Code Challenge\n\nPython Data Types\n\n Data Types\n Code Challenge\n\n Python bytes\n Python bytearray\n Python memoryview\n\n--\u003e\nPython Numbers\n\n Numbers\n Code Challenge\n\nPython Primitive Types--\u003e\nPython Casting\n\n Casting\n Code Challenge\n\nPython Strings\n\n Python Strings\n Slicing Strings\n Modify Strings\n Concatenate Strings\n Format Strings\n Escape Characters\n String Methods\n String Exercises\n Code Challenge\n\nPython Booleans\n\n Booleans\n Code Challenge\n\nPython Operators\n\n Python Operators\n Arithmetic Operators\n Assignment Operators\n Ternary Operator \n Comparison Operators\n Logical Operators\n Identity Operators\n Membership Operators\n Bitwise Operators\n Operator Precedence\n Code Challenge\n\nPython Lists\n\n Python Lists\n Access List Items\n Change List Items\n Add List Items\n Remove List Items\n Loop Lists\n List Comprehension\n Sort Lists\n Copy Lists\n Join Lists\n List Methods\n List Exercises\n Code Challenge\n\nPython Tuples\n\n Python Tuples\n Access Tuples\n Update Tuples\n Unpack Tuples\n Loop Tuples\n Join Tuples\n Tuple Methods\n Tuple Exercises\n Code Challenge\n\nPython Sets\n\n Python Sets\n Access Set Items\n Add Set Items\n Remove Set Items\n Loop Sets\n Join Sets\n Frozenset\n Set Methods\n Set Exercises\n Code Challenge\n\nPython Dictionaries\n\n Python Dictionaries\n Access Items\n Change Items\n Add Items\n Remove Items\n Loop Dictionaries\n Copy Dictionaries\n Nested Dictionaries\n Dictionary Methods\n Dictionary Exercises\n Code Challenge\n\nPython If...Else\n\n Python If\n Python Elif\n Python Else\n Shorthand If\n Logical Operators\n Nested If\n Pass Statement\n Code Challenge\n\nPython Match\n\n Match\n Code Challenge\n\nPython While Loops\n\n While Loops\n Code Challenge\n\nPython For Loops\n\n For Loops\n Code Challenge\n\nPython Data Processing--\u003e\nPython Functions\n\n Python Functions\n Python Arguments\n Python *args / **kwargs\n Python Scope\n Python Decorators\n Python Lambda\n Python Recursion\n Python Generators\n Code Challenge\n\nPython Range\n\n Range\n Code Challenge\n\nPython Arrays\n\n Arrays\n Code Challenge\n\nPython Iterators\n\n Iterators\n Code Challenge\n\nPython Modules\n\n Modules\n Code Challenge\n\nPython Dates\n\n Dates\n Code Challenge\n\nPython Math\n\n Math\n Code Challenge\n\nPython JSON\n\n JSON\n Code Challenge\n\nPython RegEx\n\n RegEx\n Code Challenge\n\nPython PIP\nPython Try...Except\n\n Try...Except\n Code Challenge\n\nPython String Formatting\n\n String Formatting\n Code Challenge\n\nPython None\n\n None\n Code Challenge\n\nPython User Input\n\nPython VirtualEnv",
+                             "heading":  "Python Tutorial"
+                         },
+                         {
+                             "content":  "Python OOP\nPython Classes/Objects\n\n Classes/Objects\n Code Challenge\n\nPython __init__ Method\n\n __init__ Method\n Code Challenge\n\nPython self Parameter\n\n self Parameter\n Code Challenge\n\nPython Class Properties\n\n Class Properties\n Code Challenge\n\nPython Class Methods\n\n Class Methods\n Code Challenge\n\nPython Inheritance\n\n Inheritance\n Code Challenge\n\nPython Polymorphism\n\n Polymorphism\n Code Challenge\n\nPython Encapsulation\n\n Encapsulation\n Code Challenge\n\nPython Inner Classes",
+                             "heading":  "Python Classes"
+                         },
+                         {
+                             "content":  "Python File Handling\nPython Read Files\nPython Write/Create Files\nPython Delete Files",
+                             "heading":  "File Handling"
+                         },
+                         {
+                             "content":  "NumPy Tutorial\nPandas Tutorial\nSciPy Tutorial\nDjango Tutorial\n\n\u003c!--",
+                             "heading":  "Python Modules"
+                         },
+                         {
+                             "content":  "NumPy Intro\nNumPy Getting Started\nNumPy Creating Arrays\nNumPy Array Indexing\nNumPy Array Slicing\nNumPy Data Types\nNumPy Copy vs View\nNumPy Array Shape\nNumPy Array Reshape\nNumPy Array Iterating\nNumPy Array Join\nNumPy Array Split\nNumPy Array Search\nNumPy Array Sort\nNumPy Array Filter\nNumPy Random\n\n Random Intro\n Data Distribution\n Random Permutation\n Seaborn Module\n Normal Distribution\n Binomial Distribution\n Poisson Distribution\n Uniform Distribution\n Logistic Distribution\n Multinomial Distribution\n Exponential Distribution\n Chi Square Distribution\n Rayleigh Distribution\n Pareto Distribution\n Zipf Distribution\n\nNumPy ufunc\n\n ufunc Intro\n ufunc Create Function\n ufunc Simple Arithmetic\n ufunc Rounding Decimals\n ufunc Logs\n ufunc Summations\n ufunc Products\n ufunc Differences\n ufunc Finding LCM\n ufunc Finding GCD\n ufunc Trigonometric\n ufunc Hyperbolic\n ufunc Set Operations\n\n--\u003e\n\u003c!--",
+                             "heading":  "Python NumPy"
+                         },
+                         {
+                             "content":  "Pandas Tutorial\nPandas Getting Started\nPandas Series\nPandas DataFrames\nPandas Read CSV\nPandas Read JSON\nPandas Analyzing Data\nPandas Cleaning Data\n\n Pandas Cleaning Data\n Cleaning Empty Cells\n Cleaning Wrong Format\n Cleaning Wrong Data\n Removing Duplicates\n\nPandas Correlations\nPandas Plotting\n\n--\u003e",
+                             "heading":  "Python Pandas"
+                         },
+                         {
+                             "content":  "Matplotlib Intro\nMatplotlib Get Started\nMatplotlib Pyplot\nMatplotlib Plotting\nMatplotlib Markers\nMatplotlib Line\nMatplotlib Labels\nMatplotlib Grid\nMatplotlib Subplot\nMatplotlib Scatter\nMatplotlib Bars\nMatplotlib Histograms\nMatplotlib Pie Charts\n\n\u003c!--",
+                             "heading":  "Python Matplotlib"
+                         },
+                         {
+                             "content":  "SciPy Intro\nSciPy Getting Started\nSciPy Constants\nSciPy Optimizers\nSciPy Sparse Data\nSciPy Graphs\nSciPy Spatial Data\nSciPy Matlab Arrays\nSciPy Interpolation\nSciPy Significance Tests\n\n--\u003e",
+                             "heading":  "Python SciPy"
+                         },
+                         {
+                             "content":  "Getting Started\nMean Median Mode\nStandard Deviation\nPercentile\nData Distribution\nNormal Data Distribution\nScatter Plot\nLinear Regression\nPolynomial Regression\nMultiple Regression\nScale\nTrain/Test\nDecision Tree\n\nConfusion Matrix\nHierarchical Clustering\nLogistic Regression\nGrid Search\nCategorical Data\nK-means\nBootstrap Aggregation\nCross Validation\nAUC - ROC Curve\nK-nearest neighbors",
+                             "heading":  "Machine Learning"
+                         },
+                         {
+                             "content":  "Python DSA\nLists and Arrays\nStacks\nQueues\nLinked Lists\nHash Tables\nTrees\nBinary Trees\nBinary Search Trees\nAVL Trees\nGraphs\nLinear Search\nBinary Search\nBubble Sort\nSelection Sort\nInsertion Sort\nQuick Sort\nCounting Sort\nRadix Sort\nMerge Sort",
+                             "heading":  "Python DSA"
+                         },
+                         {
+                             "content":  "MySQL Get Started\nMySQL Create Database\nMySQL Create Table\nMySQL Insert\nMySQL Select\nMySQL Where\nMySQL Order By\nMySQL Delete\nMySQL Drop Table\nMySQL Update\nMySQL Limit\nMySQL Join",
+                             "heading":  "Python MySQL"
+                         },
+                         {
+                             "content":  "MongoDB Get Started\nMongoDB Create DB\nMongoDB Collection\nMongoDB Insert\nMongoDB Find\nMongoDB Query\nMongoDB Sort\nMongoDB Delete\nMongoDB Drop Collection\nMongoDB Update\nMongoDB Limit\nPython Classes\nPython as Aspect Oriented\nPython File Handling\nPython Database\nPython Web Applications\nPython Workflows\nPython Maths \u0026 Science\nPython Regular Expressions\nPython Unit Testing\n--\u003e",
+                             "heading":  "Python MongoDB"
+                         },
+                         {
+                             "content":  "Python Certificate",
+                             "heading":  "Python Cert"
+                         },
+                         {
+                             "content":  "Python Overview\nPython Built-in Functions\nPython String Methods\nPython List Methods\nPython Dictionary Methods\nPython Tuple Methods\nPython Set Methods\nPython File Methods\nPython Keywords\nPython Exceptions\nPython Glossary",
+                             "heading":  "Python Reference"
+                         },
+                         {
+                             "content":  "Built-in Modules\nRandom Module\nRequests Module\nStatistics Module\nMath Module\ncMath Module",
+                             "heading":  "Module Reference"
+                         },
+                         {
+                             "content":  "Remove List Duplicates\nReverse a String\nAdd Two Numbers",
+                             "heading":  "Python How To"
+                         },
+                         {
+                             "content":  "Python Examples\nPython Compiler\nPython Exercises\nPython Quiz\nPython Challenges\nPython Practice Problems\nPython Server\nPython Syllabus\nPython Study Plan\nPython Interview Q\u0026A\nPython Bootcamp\nPython Training\n\nny:--\u003e\n\n ny:--\u003e\n\nny:--\u003e\n\nMatplotlib Pie Charts\n\n❮ Previous\nNext ❯",
+                             "heading":  "Python Examples"
+                         },
+                         {
+                             "content":  "With Pyplot, you can use the pie() function \nto draw pie charts:\n\nExample\nA simple pie chart:\n\n import matplotlib.pyplot as plt\nimport numpy as np\n\ny = np.array([35, \n 25, 25, 15])\n\nplt.pie(y)\nplt.show() \n\nResult:\n\nTry it Yourself »\n\nAs you can see the pie chart draws one piece (called a wedge) for each value \nin the array (in this case [35, 25, 25, 15]).\n\nBy default the plotting of the first wedge starts from the x-axis and moves counterclockwise:\n\n Note: The size of each wedge is determined by comparing the value with all the other values, by using this formula:\n\n The value divided by the sum of all values: x/sum(x)",
+                             "heading":  "Creating Pie Charts"
+                         },
+                         {
+                             "content":  "Add labels to the pie chart with the labels parameter.\n\nThe labels parameter must be an array with one label for each wedge:\n\nExample\nA simple pie chart:\n\n import matplotlib.pyplot as plt\nimport numpy as np\n\ny = np.array([35, \n 25, 25, 15])\nmylabels = [\"Apples\", \"Bananas\", \"Cherries\", \"Dates\"]\n\nplt.pie(y, \n labels = mylabels)\nplt.show() \n\nResult:\n\nTry it Yourself »",
+                             "heading":  "Labels"
+                         },
+                         {
+                             "content":  "As mentioned the default start angle is at the x-axis, but you can change the start angle by specifying a\nstartangle parameter.\n\nThe startangle parameter is defined with an angle in degrees, default angle is 0:\n\nExample\nStart the first wedge at 90 degrees:\n\n import matplotlib.pyplot as plt\nimport numpy as np\n\ny = np.array([35, \n 25, 25, 15])\nmylabels = [\"Apples\", \"Bananas\", \"Cherries\", \"Dates\"]\n\nplt.pie(y, \n labels = mylabels, startangle = 90)\nplt.show() \n\nResult:\n\nTry it Yourself »",
+                             "heading":  "Start Angle"
+                         },
+                         {
+                             "content":  "Maybe you want one of the wedges to stand out? The \nexplode parameter allows you to do that.\n\nThe explode parameter, if specified, and not None,\nmust be an array with one value for each wedge.\n\nEach value represents how far from the center each wedge is displayed:\n\nExample\nPull the \"Apples\" wedge 0.2 from the center of the pie:\n\n import matplotlib.pyplot as plt\nimport numpy as np\n\ny = np.array([35, \n 25, 25, 15])\nmylabels = [\"Apples\", \"Bananas\", \"Cherries\", \"Dates\"]\n\n myexplode = [0.2, 0, 0, 0]\n\nplt.pie(y, \n labels = mylabels, explode = myexplode)\nplt.show() \n\nResult:\n\nTry it Yourself »",
+                             "heading":  "Explode"
+                         },
+                         {
+                             "content":  "Add a shadow to the pie chart by setting the\nshadows parameter to True:\n\nExample\nAdd a shadow:\n\n import matplotlib.pyplot as plt\nimport numpy as np\n\ny = np.array([35, \n 25, 25, 15])\nmylabels = [\"Apples\", \"Bananas\", \"Cherries\", \"Dates\"]\n\n myexplode = [0.2, 0, 0, 0]\n\nplt.pie(y, \n labels = mylabels, explode = myexplode, shadow = True)\nplt.show() \n\nResult:\n\nTry it Yourself »",
+                             "heading":  "Shadow"
+                         },
+                         {
+                             "content":  "You can set the color of each wedge with the colors parameter.\n\nThe colors parameter, if specified, \nmust be an array with one value for each wedge:\n\nExample\nSpecify a new color for each wedge:\n\n import matplotlib.pyplot as plt\nimport numpy as np\n\ny = np.array([35, \n 25, 25, 15])\nmylabels = [\"Apples\", \"Bananas\", \"Cherries\", \"Dates\"]\n\n mycolors = [\"black\", \"hotpink\", \"b\", \"#4CAF50\"]\n\nplt.pie(y, labels = \n mylabels, colors = mycolors)\nplt.show() \n\nResult:\n\nTry it Yourself »\n\nYou can use Hexadecimal color values, any of the 140 supported color names, \nor one of these shortcuts:\n\n\u0027r\u0027 - Red\n\n\u0027g\u0027 - Green\n\n\u0027b\u0027 - Blue\n\n\u0027c\u0027 - Cyan\n\n\u0027m\u0027 - Magenta\n\n\u0027y\u0027 - Yellow\n\n\u0027k\u0027 - Black\n\n\u0027w\u0027 - White",
+                             "heading":  "Colors"
+                         },
+                         {
+                             "content":  "To add a list of explanation for each wedge, use the legend() function:\n\nExample\nAdd a legend:\n\n import matplotlib.pyplot as plt\nimport numpy as np\n\ny = np.array([35, \n 25, 25, 15])\nmylabels = [\"Apples\", \"Bananas\", \"Cherries\", \"Dates\"]\n\nplt.pie(y, labels = mylabels)\nplt.legend()\nplt.show() \n\nResult:\n\nTry it Yourself »\n\nLegend With Header\n\nTo add a header to the legend, add the title parameter to the legend\nfunction.\n\nExample\nAdd a legend with a header:\n\n import matplotlib.pyplot as plt\nimport numpy as np\n\ny = np.array([35, \n 25, 25, 15])\nmylabels = [\"Apples\", \"Bananas\", \"Cherries\", \"Dates\"]\n\nplt.pie(y, labels = mylabels)\nplt.legend(title = \"Four Fruits:\")\nplt.show() \n\nResult:\n\nTry it Yourself »\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                             "heading":  "Legend"
+                         },
+                         {
+                             "content":  "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                             "heading":  "Contact Sales"
+                         }
+                     ],
+        "extracted_at":  "2026-08-09T11:16:30Z",
+        "subject":  "Matplotlib",
+        "title":  "Matplotlib Pie Charts"
+    }
+]
+;
