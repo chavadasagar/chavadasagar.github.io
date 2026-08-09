@@ -351,6 +351,33 @@
     return false;
   }
 
+  function isTableHeaderPair(h1, h2) {
+    if (!h1 || !h2) return false;
+    const str1 = h1.trim().toLowerCase();
+    const str2 = h2.trim().toLowerCase();
+    
+    if (str1 === 'year' && str2 === 'version') return true;
+    if (str1 === 'tag' && str2 === 'description') return true;
+    if ((str1 === 'property' || str1 === 'attribute' || str1 === 'parameter' || str1 === 'method' || str1 === 'event' || str1 === 'syntax') && (str2 === 'description' || str2 === 'value' || str2 === 'type')) return true;
+    if (str1 === 'element' && (str2 === 'description' || str2 === 'type')) return true;
+
+    return false;
+  }
+
+  function isProseLine(str) {
+    if (!str) return false;
+    const s = str.trim();
+    if (/^(However|Note|Important|Tip|Warning|In the example|As you can see|The|This|These|That|You|When|If|Remember|Because|Notice|Output|Result|Click|Press|Here|To|For|Since|Some|All|Every|Each|An|A)\b/i.test(s)) {
+      if (/[.!?,:]$/.test(s) || (s.includes(' ') && !/[<>{};=+\-*\/]/.test(s))) {
+        return true;
+      }
+    }
+    if (/^[A-Z][a-z]+ [a-z]+ [a-z]+/.test(s) && !s.includes('{') && !s.includes('}') && !s.startsWith('<') && !s.includes(';')) {
+      return true;
+    }
+    return false;
+  }
+
   function isCodeStartLine(str) {
     if (!str) return false;
     const s = str.trim();
@@ -379,8 +406,6 @@
     let text = BoilerplateCleaner.cleanText(rawContent);
     if (!text) return '';
 
-    text = text.replace(/Try it Yourself[^\n]*/gi, '');
-
     const output = [];
     const lines = text.split('\n');
     let i = 0;
@@ -389,6 +414,12 @@
       const line = lines[i].trim();
 
       if (!line) {
+        i++;
+        continue;
+      }
+
+      // Skip 'Try it Yourself' lines
+      if (/^Try it Yourself/i.test(line)) {
         i++;
         continue;
       }
@@ -407,20 +438,30 @@
           const cl = lines[i];
           const trimmedCl = cl.trim();
 
-          if (/^Example Explained/i.test(trimmedCl)) break;
-          if (/^Try it Yourself/i.test(trimmedCl)) {
+          if (!trimmedCl) {
+            // Keep at most one blank line in code
+            if (codeLines.length > 0 && codeLines[codeLines.length - 1] !== '') {
+              codeLines.push('');
+            }
             i++;
             continue;
           }
-          if (/^(Note|Important|Tip|Warning):/i.test(trimmedCl)) break;
 
-          // End code block if we hit a full English sentence after standard tags
-          if (/^The\s+[a-zA-Z<].*\b(defines|is|specifies|contains|tells|describes|represents)\b/i.test(trimmedCl) && codeLines.length >= 3) {
-            break;
+          if (/^Try it Yourself/i.test(trimmedCl)) {
+            i++;
+            break; // Stop collecting code on Try it Yourself!
           }
+          if (/^Example Explained/i.test(trimmedCl)) break;
+          if (/^(Note|Important|Tip|Warning):/i.test(trimmedCl)) break;
+          if (isProseLine(trimmedCl) && codeLines.length >= 1) break;
 
           codeLines.push(cl);
           i++;
+
+          // Check if HTML document completed (e.g. </html> or </svg>)
+          if (/^<\/(html|svg|xml)>$/i.test(trimmedCl)) {
+            break;
+          }
         }
 
         const cleanCode = cleanCodeIndentation(codeLines.join('\n'));
@@ -455,13 +496,34 @@
         while (i < lines.length) {
           const cl = lines[i];
           const trimmedCl = cl.trim();
+
+          if (!trimmedCl) {
+            if (codeLines.length > 0 && codeLines[codeLines.length - 1] !== '') {
+              codeLines.push('');
+            }
+            i++;
+            continue;
+          }
+
+          if (/^Try it Yourself/i.test(trimmedCl)) {
+            i++;
+            break;
+          }
           if (/^(Note|Important|Tip|Warning|Example):/i.test(trimmedCl)) break;
-          if (/^The\s+[a-zA-Z<].*\b(defines|is|specifies|contains|tells|describes|represents)\b/i.test(trimmedCl) && codeLines.length >= 3) break;
+          if (/^Start\s+tag$/i.test(trimmedCl)) break;
+          if (isTableHeaderPair(trimmedCl, (lines[i + 1] || '').trim())) break;
+          if (isProseLine(trimmedCl) && codeLines.length >= 1) break;
           
           codeLines.push(cl);
           i++;
-          if (/^<\/(html|svg|xml)>$/i.test(trimmedCl) || (trimmedCl === '}' && codeLines.length >= 3)) {
-            if (i < lines.length && !isCodeStartLine(lines[i].trim()) && !lines[i].trim().startsWith('<')) {
+
+          if (/^<\/(html|svg|xml|body)>$/i.test(trimmedCl) || (trimmedCl === '}' && codeLines.length >= 3)) {
+            break;
+          }
+          // If we had a complete inline tag (e.g. <h1>...</h1> or <p>...</p>) and next line is not code
+          if (/^<[a-zA-Z0-9\-]+>.*<\/[a-zA-Z0-9\-]+>$/.test(trimmedCl) && i < lines.length) {
+            const nextTrimmed = (lines[i] || '').trim();
+            if (nextTrimmed && !isCodeStartLine(nextTrimmed) && !nextTrimmed.startsWith('<')) {
               break;
             }
           }
@@ -473,7 +535,102 @@
         continue;
       }
 
-      // 4. Key-Value sequence (e.g. HSL, RGB slider tags)
+      // 4. Check for 3-Column Table (e.g. Start tag / Element content / End tag)
+      if (/^Start\s+tag$/i.test(line)) {
+        const tableLines = [];
+        let j = i;
+        while (j < lines.length) {
+          const l = lines[j].trim();
+          if (/^(Note|Important|Tip|Warning|Example):/i.test(l)) break;
+          if (l) tableLines.push(l);
+          j++;
+          if (tableLines.length >= 6 && tableLines.length % 3 === 0 && j < lines.length && /^(Note|Important|Tip|Warning|Example):/i.test(lines[j].trim())) {
+            break;
+          }
+        }
+
+        if (tableLines.length >= 6 && /^Start\s+tag$/i.test(tableLines[0]) && /^Element\s+content$/i.test(tableLines[1]) && /^End\s+tag$/i.test(tableLines[2])) {
+          const headers = [tableLines[0], tableLines[1], tableLines[2]];
+          const rows = [];
+          for (let k = 3; k + 2 < tableLines.length; k += 3) {
+            rows.push([tableLines[k], tableLines[k + 1], tableLines[k + 2]]);
+          }
+
+          if (rows.length > 0) {
+            const tableHtml = `
+              <div class="catalog-table-wrap">
+                <table class="catalog-data-table">
+                  <thead>
+                    <tr>${headers.map(h => `<th>${h}</th>`).join('')}</tr>
+                  </thead>
+                  <tbody>
+                    ${rows.map(r => `
+                      <tr>
+                        <td>${formatInlineProse(r[0])}</td>
+                        <td>${formatInlineProse(r[1])}</td>
+                        <td>${formatInlineProse(r[2])}</td>
+                      </tr>
+                    `).join('')}
+                  </tbody>
+                </table>
+              </div>
+            `;
+            output.push(tableHtml);
+            i = j;
+            continue;
+          }
+        }
+      }
+
+      // 5. Check for 2-Column Table (e.g. Year / Version, Tag / Description, Property / Description)
+      const nextNonEmpty = lines.slice(i + 1).map(l => l.trim()).filter(Boolean)[0] || '';
+      if (isTableHeaderPair(line, nextNonEmpty)) {
+        const tableLines = [];
+        let j = i;
+        while (j < lines.length) {
+          const l = lines[j].trim();
+          if (/^(Note|Important|Tip|Warning|Example):/i.test(l)) break;
+          if (l) tableLines.push(l);
+          j++;
+          if (tableLines.length >= 4 && tableLines.length % 2 === 0 && j < lines.length && /^(Note|Important|Tip|Warning|Example):/i.test(lines[j].trim())) {
+            break;
+          }
+        }
+
+        if (tableLines.length >= 4 && isTableHeaderPair(tableLines[0], tableLines[1])) {
+          const h1 = tableLines[0];
+          const h2 = tableLines[1];
+          const rows = [];
+          for (let k = 2; k + 1 < tableLines.length; k += 2) {
+            rows.push([tableLines[k], tableLines[k + 1]]);
+          }
+
+          if (rows.length > 0) {
+            const tableHtml = `
+              <div class="catalog-table-wrap">
+                <table class="catalog-data-table">
+                  <thead>
+                    <tr><th>${SyntaxHighlighter.escapeHtml(h1)}</th><th>${SyntaxHighlighter.escapeHtml(h2)}</th></tr>
+                  </thead>
+                  <tbody>
+                    ${rows.map(r => `
+                      <tr>
+                        <td style="font-weight: 600;">${formatInlineProse(r[0])}</td>
+                        <td>${formatInlineProse(r[1])}</td>
+                      </tr>
+                    `).join('')}
+                  </tbody>
+                </table>
+              </div>
+            `;
+            output.push(tableHtml);
+            i = j;
+            continue;
+          }
+        }
+      }
+
+      // 6. Key-Value sequence (e.g. HSL, RGB slider tags)
       if (isPotentialKey(line) && i + 1 < lines.length && isPotentialValue(lines[i + 1].trim())) {
         const pairs = [];
         while (i < lines.length - 1 && isPotentialKey(lines[i].trim()) && isPotentialValue(lines[i + 1].trim())) {
@@ -496,7 +653,7 @@
         }
       }
 
-      // 5. Normal coherent prose paragraph
+      // 7. Normal coherent prose paragraph
       let paraLines = [line];
       i++;
       while (i < lines.length) {
@@ -505,7 +662,7 @@
           i++;
           break;
         }
-        if (/^(Note|Important|Tip|Warning|Example):/i.test(nextLine) || isCodeStartLine(nextLine) || isPotentialKey(nextLine)) {
+        if (/^(Note|Important|Tip|Warning|Example):/i.test(nextLine) || isCodeStartLine(nextLine) || isPotentialKey(nextLine) || /^Try it Yourself/i.test(nextLine) || /^Start\s+tag$/i.test(nextLine)) {
           break;
         }
         paraLines.push(nextLine);
