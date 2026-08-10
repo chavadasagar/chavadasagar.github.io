@@ -1,0 +1,13 @@
+# Robots.txt for Vyunix Technologies & Tools Hub
+# Website: https://vyunixtech.in/
+
+User-agent: *
+Allow: /
+
+# Disallow internal config directories
+Disallow: /.git/
+Disallow: /.vscode/
+Disallow: /.playwright-mcp/
+
+# XML Sitemap Location
+Sitemap: https://vyunixtech.in/sitemap.xml
