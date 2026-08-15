@@ -1,0 +1,2360 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+  <title>Master Interview Questions | .NET, C#, SQL &amp; ASP.NET Core</title>
+  <meta name="description" content="Technical interview questions and answers for C#, ASP.NET Core, EF Core, LINQ, and SQL with mobile-friendly and full-screen focus reader mode.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <style>
+    /* ==========================================================================
+       CSS VARIABLES & THEMES
+       ========================================================================== */
+    :root {
+      --font-main: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-mono: 'JetBrains Mono', Consolas, Monaco, monospace;
+
+      /* Dark Theme (Default) */
+      --bg-app: #090d16;
+      --bg-header: rgba(12, 18, 30, 0.92);
+      --bg-surface: #0f172a;
+      --bg-card: #131c31;
+      --bg-card-header: rgba(26, 38, 66, 0.6);
+      --bg-card-hover: #18233c;
+      --bg-input: #0b1120;
+      --bg-code: #070a12;
+      
+      --border-subtle: rgba(255, 255, 255, 0.08);
+      --border-strong: rgba(255, 255, 255, 0.16);
+      
+      --text-primary: #f8fafc;
+      --text-secondary: #94a3b8;
+      --text-muted: #64748b;
+      
+      --accent: #6366f1;
+      --accent-hover: #4f46e5;
+      --accent-soft: rgba(99, 102, 241, 0.15);
+      
+      --cyan: #06b6d4;
+      --cyan-soft: rgba(6, 182, 212, 0.15);
+      --emerald: #10b981;
+      --emerald-soft: rgba(16, 185, 129, 0.15);
+      --amber: #f59e0b;
+      --amber-soft: rgba(245, 158, 11, 0.15);
+      
+      --radius-sm: 8px;
+      --radius-md: 12px;
+      --radius-lg: 16px;
+      --radius-full: 9999px;
+      
+      --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.3);
+      --shadow-md: 0 8px 20px -4px rgba(0, 0, 0, 0.4);
+      --shadow-lg: 0 20px 40px -8px rgba(0, 0, 0, 0.6);
+      
+      --base-font-size: 15.5px;
+      --line-height: 1.65;
+    }
+
+    [data-theme="light"] {
+      --bg-app: #f4f6fb;
+      --bg-header: rgba(255, 255, 255, 0.94);
+      --bg-surface: #ffffff;
+      --bg-card: #ffffff;
+      --bg-card-header: #f8fafc;
+      --bg-card-hover: #f1f5f9;
+      --bg-input: #f1f5f9;
+      --bg-code: #f8fafc;
+      
+      --border-subtle: #e2e8f0;
+      --border-strong: #cbd5e1;
+      
+      --text-primary: #0f172a;
+      --text-secondary: #475569;
+      --text-muted: #64748b;
+      
+      --accent: #4f46e5;
+      --accent-hover: #4338ca;
+      --accent-soft: rgba(79, 70, 229, 0.1);
+      
+      --cyan: #0891b2;
+      --cyan-soft: rgba(8, 145, 178, 0.1);
+      --emerald: #059669;
+      --emerald-soft: rgba(5, 150, 105, 0.1);
+      --amber: #d97706;
+      --amber-soft: rgba(217, 119, 6, 0.1);
+      
+      --shadow-sm: 0 2px 6px rgba(15, 23, 42, 0.04);
+      --shadow-md: 0 8px 20px -4px rgba(15, 23, 42, 0.08);
+      --shadow-lg: 0 20px 40px -8px rgba(15, 23, 42, 0.12);
+    }
+
+    body.font-sm { --base-font-size: 14px; --line-height: 1.55; }
+    body.font-md { --base-font-size: 15.5px; --line-height: 1.65; }
+    body.font-lg { --base-font-size: 17.5px; --line-height: 1.75; }
+
+    /* ==========================================================================
+       RESET & ROOT STYLES (100% FLUID & NO HORIZONTAL OVERFLOW)
+       ========================================================================== */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    html, body {
+      width: 100%;
+      max-width: 100%;
+      overflow-x: hidden;
+    }
+
+    html {
+      font-size: var(--base-font-size);
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--font-main);
+      background-color: var(--bg-app);
+      color: var(--text-primary);
+      line-height: var(--line-height);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      transition: background-color 0.2s ease, color 0.2s ease;
+    }
+
+    /* Prevent body scroll when fullscreen modal is open */
+    body.fullscreen-locked {
+      overflow: hidden !important;
+    }
+
+    /* ==========================================================================
+       STICKY HEADER
+       ========================================================================== */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--bg-header);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border-subtle);
+      width: 100%;
+    }
+
+    .header-content {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 10px 14px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+    }
+
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      min-width: 0;
+    }
+
+    .btn-back {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      border-radius: var(--radius-sm);
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-secondary);
+      cursor: pointer;
+      text-decoration: none;
+      flex-shrink: 0;
+      transition: all 0.2s ease;
+    }
+
+    .btn-back:hover {
+      color: var(--text-primary);
+      border-color: var(--accent);
+    }
+
+    .header-title-box {
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+    }
+
+    .header-title {
+      font-size: 0.98rem;
+      font-weight: 800;
+      color: var(--text-primary);
+      letter-spacing: -0.02em;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .header-badge {
+      font-size: 0.65rem;
+      font-weight: 700;
+      padding: 1px 6px;
+      border-radius: var(--radius-full);
+      background: var(--accent-soft);
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      flex-shrink: 0;
+    }
+
+    .header-right {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex-shrink: 0;
+    }
+
+    .header-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      height: 36px;
+      padding: 0 10px;
+      border-radius: var(--radius-sm);
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-secondary);
+      font-size: 0.8rem;
+      font-weight: 600;
+      font-family: inherit;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .header-btn:hover {
+      color: var(--text-primary);
+      border-color: var(--border-strong);
+    }
+
+    .header-btn.icon-only {
+      width: 36px;
+      padding: 0;
+    }
+
+    /* Top Reading Progress Bar */
+    .progress-bar-line {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: rgba(255, 255, 255, 0.06);
+    }
+
+    .progress-bar-inner {
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, #6366f1, #06b6d4);
+      transition: width 0.3s ease;
+    }
+
+    /* ==========================================================================
+       MAIN WRAPPER
+       ========================================================================== */
+    main {
+      width: 100%;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 14px 12px 80px;
+      flex: 1;
+    }
+
+    /* ==========================================================================
+       HERO & STATS CARD
+       ========================================================================== */
+    .hero-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 16px 14px;
+      margin-bottom: 14px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .hero-top-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+
+    .hero-heading {
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: var(--text-primary);
+      letter-spacing: -0.02em;
+      line-height: 1.3;
+    }
+
+    .hero-subtext {
+      font-size: 0.82rem;
+      color: var(--text-secondary);
+      margin-top: 3px;
+    }
+
+    .stats-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 6px;
+      margin-top: 10px;
+      padding-top: 10px;
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    .stat-pill {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-sm);
+      padding: 8px 6px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2px;
+    }
+
+    .stat-pill-label {
+      font-size: 0.7rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+    }
+
+    .stat-pill-val {
+      font-size: 0.95rem;
+      font-weight: 800;
+      color: var(--text-primary);
+    }
+
+    /* ==========================================================================
+       CONTROLS: SEARCH, MODES & CATEGORIES
+       ========================================================================== */
+    .controls-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 12px;
+      margin-bottom: 14px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    /* Search Box */
+    .search-wrap {
+      position: relative;
+      margin-bottom: 10px;
+      width: 100%;
+    }
+
+    .search-icon-svg {
+      position: absolute;
+      left: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-muted);
+      pointer-events: none;
+      width: 16px;
+      height: 16px;
+    }
+
+    .search-input {
+      width: 100%;
+      height: 42px;
+      padding: 0 40px 0 38px;
+      background: var(--bg-input);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      color: var(--text-primary);
+      font-family: inherit;
+      font-size: 0.92rem;
+      outline: none;
+      transition: all 0.2s ease;
+    }
+
+    .search-input:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2);
+    }
+
+    .search-clear-btn {
+      position: absolute;
+      right: 8px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: none;
+      border: none;
+      color: var(--text-muted);
+      cursor: pointer;
+      padding: 6px;
+      display: none;
+    }
+
+    .search-clear-btn.active {
+      display: block;
+    }
+
+    /* Study Mode Switcher */
+    .mode-tabs-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 4px;
+      background: var(--bg-input);
+      padding: 3px;
+      border-radius: var(--radius-md);
+      margin-bottom: 10px;
+      width: 100%;
+    }
+
+    .mode-tab-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+      padding: 8px 4px;
+      border-radius: var(--radius-sm);
+      border: none;
+      background: transparent;
+      color: var(--text-secondary);
+      font-size: 0.78rem;
+      font-weight: 700;
+      font-family: inherit;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      white-space: nowrap;
+    }
+
+    .mode-tab-btn.active {
+      background: var(--bg-card);
+      color: var(--accent);
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--border-subtle);
+    }
+
+    /* Horizontal Filter Chips */
+    .filter-chips-scroll {
+      display: flex;
+      gap: 6px;
+      overflow-x: auto;
+      padding-bottom: 2px;
+      scrollbar-width: none;
+      -webkit-overflow-scrolling: touch;
+      width: 100%;
+    }
+
+    .filter-chips-scroll::-webkit-scrollbar {
+      display: none;
+    }
+
+    .chip-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 6px 12px;
+      border-radius: var(--radius-full);
+      background: var(--bg-input);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-secondary);
+      font-size: 0.76rem;
+      font-weight: 600;
+      cursor: pointer;
+      white-space: nowrap;
+      flex-shrink: 0;
+      transition: all 0.2s ease;
+    }
+
+    .chip-btn.active {
+      background: var(--accent);
+      color: #ffffff;
+      border-color: var(--accent);
+    }
+
+    /* Sub Toolbar: Results & Expand */
+    .subhead-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      margin-bottom: 12px;
+      padding: 0 2px;
+    }
+
+    .found-label {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+
+    .toggle-all-group {
+      display: flex;
+      gap: 6px;
+    }
+
+    .mini-btn {
+      font-size: 0.74rem;
+      padding: 5px 9px;
+      border-radius: var(--radius-sm);
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-secondary);
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .mini-btn:hover {
+      color: var(--text-primary);
+      border-color: var(--accent);
+    }
+
+    /* ==========================================================================
+       Q&A CARDS (FLUID, WRAPPING & RESPONSIVE)
+       ========================================================================== */
+    .cards-container {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      width: 100%;
+    }
+
+    .qa-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-sm);
+      overflow: hidden;
+      transition: border-color 0.2s ease;
+      width: 100%;
+    }
+
+    .qa-card.is-done {
+      border-left: 4px solid var(--emerald);
+    }
+
+    .qa-card.is-starred {
+      border-top-color: var(--amber);
+    }
+
+    /* Card Header (Tap to toggle) */
+    .qa-header {
+      padding: 14px;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      cursor: pointer;
+      user-select: none;
+      background: var(--bg-card-header);
+      width: 100%;
+    }
+
+    .qa-index-pill {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 32px;
+      height: 32px;
+      padding: 0 4px;
+      border-radius: var(--radius-sm);
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-weight: 800;
+      font-size: 0.78rem;
+      font-family: var(--font-mono);
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    .qa-text-col {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .qa-meta {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin-bottom: 4px;
+      flex-wrap: wrap;
+    }
+
+    .qa-cat-title {
+      font-size: 0.68rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--cyan);
+    }
+
+    .qa-done-badge {
+      font-size: 0.65rem;
+      font-weight: 700;
+      padding: 1px 6px;
+      border-radius: var(--radius-full);
+      background: var(--emerald-soft);
+      color: var(--emerald);
+    }
+
+    .qa-question-heading {
+      font-size: 1rem;
+      font-weight: 700;
+      line-height: 1.45;
+      color: var(--text-primary);
+      letter-spacing: -0.01em;
+      word-break: break-word;
+      overflow-wrap: break-word;
+    }
+
+    .qa-header-actions {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .qa-card-fullscreen-btn {
+      width: 28px;
+      height: 28px;
+      border-radius: var(--radius-sm);
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .qa-card-fullscreen-btn:hover {
+      color: var(--accent);
+      border-color: var(--accent);
+    }
+
+    .qa-chevron-box {
+      width: 24px;
+      height: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-muted);
+      transition: transform 0.2s ease;
+      flex-shrink: 0;
+    }
+
+    .qa-card.open .qa-chevron-box {
+      transform: rotate(180deg);
+      color: var(--accent);
+    }
+
+    /* Flashcard Reveal Bar */
+    .flashcard-bar {
+      display: none;
+      padding: 14px;
+      background: var(--bg-surface);
+      border-top: 1px solid var(--border-subtle);
+      text-align: center;
+      width: 100%;
+    }
+
+    body.mode-flashcard .qa-card:not(.open) .flashcard-bar {
+      display: block;
+    }
+
+    .btn-reveal-flashcard {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 16px;
+      border-radius: var(--radius-md);
+      background: var(--accent-soft);
+      border: 1px solid var(--accent);
+      color: var(--accent);
+      font-weight: 700;
+      font-size: 0.85rem;
+      font-family: inherit;
+      cursor: pointer;
+    }
+
+    /* Card Answer Body */
+    .qa-body {
+      display: none;
+      padding: 0 14px 14px 14px;
+      border-top: 1px solid var(--border-subtle);
+      background: var(--bg-card);
+      width: 100%;
+    }
+
+    .qa-card.open .qa-body {
+      display: block;
+      padding-top: 14px;
+    }
+
+    .qa-answer-text {
+      color: var(--text-secondary);
+      font-size: 0.92rem;
+      line-height: 1.68;
+      white-space: pre-line;
+      word-break: break-word;
+      overflow-wrap: break-word;
+    }
+
+    /* SQL Terminal Container (Zero horizontal breakout) */
+    .code-terminal-box {
+      margin: 10px 0;
+      background: var(--bg-code);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      width: 100%;
+      max-width: 100%;
+      overflow: hidden;
+    }
+
+    .code-terminal-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 6px 10px;
+      background: rgba(255, 255, 255, 0.03);
+      border-bottom: 1px solid var(--border-subtle);
+      width: 100%;
+    }
+
+    .code-lang-tag {
+      font-size: 0.7rem;
+      font-family: var(--font-mono);
+      font-weight: 700;
+      color: var(--text-muted);
+    }
+
+    .code-copy-action {
+      background: none;
+      border: 1px solid var(--border-subtle);
+      color: var(--text-muted);
+      padding: 3px 8px;
+      border-radius: 4px;
+      font-size: 0.72rem;
+      font-family: inherit;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .code-copy-action:hover {
+      color: var(--text-primary);
+      border-color: var(--accent);
+    }
+
+    .code-pre-block {
+      padding: 10px 12px;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      font-family: var(--font-mono);
+      font-size: 0.82rem;
+      line-height: 1.55;
+      color: #e2e8f0;
+      white-space: pre;
+      max-width: 100%;
+    }
+
+    [data-theme="light"] .code-pre-block {
+      color: #1e293b;
+    }
+
+    /* Card Action Grid (2x2 on Mobile, No overflow) */
+    .card-actions-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 6px;
+      margin-top: 14px;
+      padding-top: 12px;
+      border-top: 1px dashed var(--border-subtle);
+      width: 100%;
+    }
+
+    @media (max-width: 600px) {
+      .card-actions-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+      .card-actions-grid .btn-action-pill.focus-pill {
+        grid-column: span 2;
+      }
+    }
+
+    .btn-action-pill {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      padding: 7px 8px;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border-subtle);
+      background: var(--bg-surface);
+      color: var(--text-secondary);
+      font-size: 0.78rem;
+      font-weight: 600;
+      font-family: inherit;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      min-width: 0;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .btn-action-pill:hover {
+      color: var(--text-primary);
+      border-color: var(--border-strong);
+    }
+
+    .btn-action-pill.active-done {
+      background: var(--emerald-soft);
+      color: var(--emerald);
+      border-color: rgba(16, 185, 129, 0.4);
+    }
+
+    .btn-action-pill.active-star {
+      background: var(--amber-soft);
+      color: var(--amber);
+      border-color: rgba(245, 158, 11, 0.4);
+    }
+
+    .btn-action-pill.active-audio {
+      background: var(--accent-soft);
+      color: var(--accent);
+      border-color: var(--accent);
+    }
+
+    .btn-action-pill.focus-pill {
+      color: var(--cyan);
+      border-color: rgba(6, 182, 212, 0.3);
+      background: var(--cyan-soft);
+    }
+
+    /* Highlight Search */
+    mark.query-highlight {
+      background: rgba(6, 182, 212, 0.35);
+      color: inherit;
+      padding: 1px 2px;
+      border-radius: 2px;
+    }
+
+    [data-theme="light"] mark.query-highlight {
+      background: #fef08a;
+      color: #0f172a;
+    }
+
+    /* ==========================================================================
+       COMPACT INDEX GRID
+       ========================================================================== */
+    .compact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 8px;
+      width: 100%;
+    }
+
+    .compact-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 10px 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+      text-decoration: none;
+      color: var(--text-primary);
+      width: 100%;
+      min-width: 0;
+    }
+
+    .compact-card:hover {
+      border-color: var(--accent);
+      background: var(--bg-card-hover);
+    }
+
+    .compact-num-pill {
+      font-family: var(--font-mono);
+      font-weight: 800;
+      font-size: 0.74rem;
+      color: var(--accent);
+      background: var(--accent-soft);
+      padding: 3px 6px;
+      border-radius: var(--radius-sm);
+      flex-shrink: 0;
+    }
+
+    .compact-q-title {
+      font-size: 0.84rem;
+      font-weight: 600;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      flex: 1;
+      min-width: 0;
+    }
+
+    /* ==========================================================================
+       PURE FULLSCREEN MODE (PERFECTLY CENTERED QUESTION & ANSWER)
+       ========================================================================== */
+    .fullscreen-modal-backdrop {
+      position: fixed;
+      inset: 0;
+      width: 100vw;
+      height: 100vh;
+      background: var(--bg-app);
+      z-index: 500;
+      display: none;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .fullscreen-modal-backdrop.active {
+      display: flex;
+    }
+
+    .fs-minimal-header {
+      padding: 16px 20px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      background: transparent;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 520;
+      pointer-events: none;
+    }
+
+    .btn-fs-exit {
+      pointer-events: auto;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 18px;
+      border-radius: var(--radius-full);
+      background: var(--bg-surface);
+      border: 1px solid var(--border-strong);
+      color: var(--text-primary);
+      font-size: 0.85rem;
+      font-weight: 700;
+      font-family: inherit;
+      cursor: pointer;
+      box-shadow: var(--shadow-sm);
+      transition: all 0.2s ease;
+    }
+
+    .btn-fs-exit:hover {
+      background: var(--accent);
+      color: #ffffff;
+      border-color: var(--accent);
+      transform: translateY(-1px);
+    }
+
+    .fs-scroll-area {
+      flex: 1;
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+      padding: 70px 20px 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+
+    .fs-pure-content {
+      max-width: 720px;
+      width: 100%;
+      margin: auto 0;
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 32px 26px;
+      box-shadow: var(--shadow-lg);
+      text-align: left;
+    }
+
+    @media (max-width: 600px) {
+      .fs-scroll-area {
+        padding: 65px 14px 28px;
+      }
+      .fs-pure-content {
+        padding: 24px 18px;
+      }
+    }
+
+    .fs-pure-question {
+      font-size: clamp(1.2rem, 3.8vw, 1.55rem);
+      font-weight: 800;
+      color: var(--text-primary);
+      line-height: 1.4;
+      margin-bottom: 20px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--border-subtle);
+      letter-spacing: -0.02em;
+      word-break: break-word;
+      overflow-wrap: break-word;
+    }
+
+    .fs-pure-answer {
+      color: var(--text-secondary);
+      font-size: clamp(0.98rem, 2.8vw, 1.12rem);
+      line-height: 1.82;
+      white-space: pre-line;
+      word-break: break-word;
+      overflow-wrap: break-word;
+    }
+
+    /* ==========================================================================
+       DRAWER & TOAST
+       ========================================================================== */
+    .drawer-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 600;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.25s ease;
+    }
+
+    .drawer-overlay.open {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .drawer-panel {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 85%;
+      max-width: 340px;
+      background: var(--bg-surface);
+      border-left: 1px solid var(--border-subtle);
+      z-index: 601;
+      display: flex;
+      flex-direction: column;
+      transform: translateX(100%);
+      transition: transform 0.25s ease;
+    }
+
+    .drawer-panel.open {
+      transform: translateX(0);
+    }
+
+    .drawer-top {
+      padding: 14px 16px;
+      border-bottom: 1px solid var(--border-subtle);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .drawer-items-list {
+      flex: 1;
+      overflow-y: auto;
+      padding: 10px 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .drawer-link-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 9px 10px;
+      border-radius: var(--radius-sm);
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 0.82rem;
+      font-weight: 600;
+      min-width: 0;
+    }
+
+    .drawer-link-item.done {
+      border-left: 3px solid var(--emerald);
+    }
+
+    .drawer-link-item span.title {
+      flex: 1;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      min-width: 0;
+    }
+
+    /* Floating Scroll to Top */
+    .btn-fab-scroll {
+      position: fixed;
+      bottom: 18px;
+      right: 18px;
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-strong);
+      color: var(--text-primary);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      box-shadow: var(--shadow-md);
+      z-index: 90;
+    }
+
+    .btn-fab-scroll.visible {
+      display: flex;
+    }
+
+    /* Toast Notification */
+    .toast-box {
+      position: fixed;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%) translateY(80px);
+      background: #0f172a;
+      color: #ffffff;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      padding: 8px 18px;
+      border-radius: var(--radius-full);
+      font-size: 0.82rem;
+      font-weight: 600;
+      box-shadow: var(--shadow-md);
+      z-index: 1000;
+      opacity: 0;
+      pointer-events: none;
+      transition: all 0.25s ease;
+      white-space: nowrap;
+    }
+
+    .toast-box.show {
+      transform: translateX(-50%) translateY(0);
+      opacity: 1;
+    }
+
+    .empty-state {
+      display: none;
+      text-align: center;
+      padding: 40px 14px;
+      background: var(--bg-surface);
+      border-radius: var(--radius-lg);
+      border: 1px dashed var(--border-strong);
+      margin-top: 14px;
+      color: var(--text-secondary);
+    }
+
+    .empty-state.visible {
+      display: block;
+    }
+  </style>
+</head>
+<body class="font-md mode-card">
+
+  <!-- Header -->
+  <header>
+    <div class="header-content">
+      <div class="header-left">
+        <a href="../index.html" class="btn-back" title="Back to All Projects" aria-label="Back">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="19" y1="12" x2="5" y2="12"></line>
+            <polyline points="12 19 5 12 12 5"></polyline>
+          </svg>
+        </a>
+        <div class="header-title-box">
+          <div class="header-title">
+            <span>Interview Q&amp;A</span>
+            <span class="header-badge">.NET &amp; SQL</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="header-right">
+        <button id="btnOpenIndex" class="header-btn" title="Question Index" aria-label="Table of Contents">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="8" y1="6" x2="21" y2="6"></line>
+            <line x1="8" y1="12" x2="21" y2="12"></line>
+            <line x1="8" y1="18" x2="21" y2="18"></line>
+            <line x1="3" y1="6" x2="3.01" y2="6"></line>
+            <line x1="3" y1="12" x2="3.01" y2="12"></line>
+            <line x1="3" y1="18" x2="3.01" y2="18"></line>
+          </svg>
+          <span style="font-size:0.78rem;">Index</span>
+        </button>
+
+        <button id="btnTextSize" class="header-btn icon-only" title="Adjust Text Size" aria-label="Text Size">
+          <span style="font-weight:700; font-size:0.85rem;">Aa</span>
+        </button>
+
+        <button id="btnThemeToggle" class="header-btn icon-only" title="Toggle Theme" aria-label="Switch Theme">
+          <span id="themeEmoji">🌙</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Active Reading Progress Bar -->
+    <div class="progress-bar-line">
+      <div id="readingProgressFill" class="progress-bar-inner"></div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Summary -->
+    <section class="hero-card">
+      <div class="hero-top-row">
+        <div>
+          <h1 class="hero-heading">Technical Interview Questions</h1>
+          <p class="hero-subtext">C#, ASP.NET Core, EF Core, LINQ &amp; SQL Queries.</p>
+        </div>
+      </div>
+
+      <div class="stats-row">
+        <div class="stat-pill">
+          <span class="stat-pill-label">Total</span>
+          <span class="stat-pill-val">47</span>
+        </div>
+        <div class="stat-pill">
+          <span class="stat-pill-label">Learned</span>
+          <span class="stat-pill-val" id="countLearned" style="color:var(--emerald);">0</span>
+        </div>
+        <div class="stat-pill">
+          <span class="stat-pill-label">Starred</span>
+          <span class="stat-pill-val" id="countStarred" style="color:var(--amber);">0</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Controls Box -->
+    <section class="controls-card">
+      <!-- Search Input -->
+      <div class="search-wrap">
+        <svg class="search-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input type="text" id="filterSearchInput" class="search-input" placeholder="Search questions, keywords, SQL..." autocomplete="off" spellcheck="false">
+        <button id="btnClearSearch" class="search-clear-btn" aria-label="Clear">✕</button>
+      </div>
+
+      <!-- Mode Selector -->
+      <div class="mode-tabs-grid" id="modeSelectorGroup">
+        <button class="mode-tab-btn active" data-mode="card">📖 Study</button>
+        <button class="mode-tab-btn" data-mode="flashcard">⚡ Quiz</button>
+        <button class="mode-tab-btn" data-mode="compact">📋 Index</button>
+      </div>
+
+      <!-- Category Filter Chips (Horizontal Scrollable) -->
+      <div class="filter-chips-scroll" id="catChipsGroup">
+        <div class="chip-btn active" data-cat="all">All (47)</div>
+        <div class="chip-btn" data-cat="csharp">C# &amp; Async</div>
+        <div class="chip-btn" data-cat="aspnet">ASP.NET Core</div>
+        <div class="chip-btn" data-cat="efcore">EF Core &amp; LINQ</div>
+        <div class="chip-btn" data-cat="sql">SQL Queries</div>
+        <div class="chip-btn" data-cat="unread">Unread</div>
+        <div class="chip-btn" data-cat="starred">★ Starred</div>
+      </div>
+    </section>
+
+    <!-- Subhead Info -->
+    <div class="subhead-bar">
+      <span class="found-label" id="resultsCountText">Showing all 47 questions</span>
+      <div class="toggle-all-group" id="batchActionControls">
+        <button id="btnExpandAll" class="mini-btn">Expand All</button>
+        <button id="btnCollapseAll" class="mini-btn">Collapse All</button>
+      </div>
+    </div>
+
+    <!-- Cards Stream Container -->
+    <div class="cards-container" id="cardsStream"></div>
+
+    <!-- Empty State -->
+    <div id="emptyResultsBox" class="empty-state">
+      <div style="font-size:2rem; margin-bottom:6px;">🔍</div>
+      <div style="font-weight:700; color:var(--text-primary); margin-bottom:4px;">No matching questions found</div>
+      <div style="font-size:0.85rem;">Try a different search keyword or category tab.</div>
+    </div>
+  </main>
+
+  <!-- ==========================================================================
+       PURE FULLSCREEN MODE OVERLAY (ONLY QUESTION, ANSWER & EXIT OPTION)
+       ========================================================================== -->
+  <div id="fsModalOverlay" class="fullscreen-modal-backdrop">
+    <!-- Exit Header -->
+    <div class="fs-minimal-header">
+      <button id="btnFsClose" class="btn-fs-exit" aria-label="Exit Full Screen">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+        <span>Exit Full Screen</span>
+      </button>
+    </div>
+
+    <!-- Pure Question & Answer Content -->
+    <div class="fs-scroll-area">
+      <div class="fs-pure-content">
+        <h1 class="fs-pure-question" id="fsQuestionTitle">Question</h1>
+        <div class="fs-pure-answer" id="fsAnswerContent">Answer</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Slide-Over Table of Contents Drawer -->
+  <div id="drawerBackdropOverlay" class="drawer-overlay"></div>
+  <aside id="tocDrawerPanel" class="drawer-panel">
+    <div class="drawer-top">
+      <span style="font-weight:800; font-size:1rem; color:var(--text-primary);">Questions Index (47)</span>
+      <button id="btnCloseDrawer" style="background:none; border:none; color:var(--text-muted); cursor:pointer; font-size:1.2rem; padding:4px;">✕</button>
+    </div>
+    <div class="drawer-items-list" id="drawerLinksList"></div>
+  </aside>
+
+  <!-- Scroll to Top Button -->
+  <button id="fabScrollTop" class="btn-fab-scroll" title="Scroll to Top" aria-label="Scroll Top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- Toast Notification Feedback -->
+  <div id="actionToast" class="toast-box">Copied to clipboard</div>
+
+  <!-- Complete Application Script -->
+  <script>
+    // ==========================================================================
+    // EXACT DATASET (100% UNTOUCHED ORIGINAL CONTENT)
+    // ==========================================================================
+    const interviewData = [
+      {
+        id: 1,
+        cat: "csharp",
+        catTitle: "C# Fundamentals",
+        question: "What is the difference between ref and out?",
+        answer: "ref requires the variable to be initialized before passing it to the method, whereas out does not. With ref, the method can read and modify the existing value; with out, the method must assign a value before returning."
+      },
+      {
+        id: 2,
+        cat: "csharp",
+        catTitle: "C# Asynchronous",
+        question: "What is async/await?",
+        answer: "Async and await are keywords in C# used to write asynchronous code. The async keyword marks a method that contains asynchronous operations, and await is used to pause execution until a Task completes — without blocking the thread. This is especially useful for I/O-bound work like calling an API or querying a database, since the thread is freed up during the wait instead of sitting idle. It helps improve application responsiveness and scalability."
+      },
+      {
+        id: 3,
+        cat: "csharp",
+        catTitle: "C# Concurrency",
+        question: "Explain parallel programming.",
+        answer: "Parallel programming is the process of dividing a program into independent tasks that execute simultaneously on multiple processors or cores to improve performance and reduce execution time."
+      },
+      {
+        id: 4,
+        cat: "csharp",
+        catTitle: "C# Concurrency",
+        question: "What is a thread?",
+        answer: "A thread is the smallest unit of execution inside a process. Multiple threads can run within a process and share the process's resources, allowing tasks to execute concurrently."
+      },
+      {
+        id: 5,
+        cat: "efcore",
+        catTitle: "LINQ & Collections",
+        question: "What is the difference between IEnumerable and IQueryable?",
+        answer: "IEnumerable is used mainly for in-memory collection processing, where LINQ operations are executed in the application. IQueryable is designed for querying external data sources such as databases. It builds an expression tree, which allows the provider like Entity Framework to translate the query into SQL and execute filtering on the database side."
+      },
+      {
+        id: 6,
+        cat: "aspnet",
+        catTitle: "Security & Auth",
+        question: "What is the difference between Authentication and Authorization?",
+        answer: "Authentication is the process of verifying a user's identity, while Authorization is the process of determining what an authenticated user is allowed to access or perform. Authentication answers 'Who are you?', and Authorization answers 'What are you allowed to do?'"
+      },
+      {
+        id: 7,
+        cat: "aspnet",
+        catTitle: "Security & Auth",
+        question: "What is JWT and how does it work?",
+        answer: "JWT stands for JSON Web Token. It is a compact, signed token commonly used for authentication and authorization. After successful login, the server generates a JWT and sends it to the client. The client sends the token with subsequent API requests, usually using the Bearer scheme. The server validates the token's signature and claims before allowing access."
+      },
+      {
+        id: 8,
+        cat: "aspnet",
+        catTitle: "ASP.NET Core Pipeline",
+        question: "What is Middleware?",
+        answer: "Middleware is a component in the ASP.NET Core request pipeline that has access to every incoming HTTP request and outgoing response. Each middleware can process the request, modify it, call the next middleware in the pipeline, or short-circuit the pipeline and return a response immediately without passing it further."
+      },
+      {
+        id: 9,
+        cat: "csharp",
+        catTitle: "C# OOP",
+        question: "What is an Interface?",
+        answer: "An interface is a contract that defines what a class must do, but not how it should do it.\nAn interface is a contract in C# that defines a set of members that implementing classes must provide. It focuses on what an object can do rather than how it does it, which helps achieve abstraction and loose coupling."
+      },
+      {
+        id: 10,
+        cat: "aspnet",
+        catTitle: "Dependency Injection",
+        question: "What are the scopes in Dependency Injection? (Transient, Scoped, Singleton)",
+        answer: "In .NET Dependency Injection, Transient creates a new instance every time the service is requested, Scoped creates one instance per HTTP request, and Singleton creates one instance that is reused throughout the application's lifetime. We choose the lifetime based on the state and resource requirements of the service."
+      },
+      {
+        id: 11,
+        cat: "aspnet",
+        catTitle: "API Architecture",
+        question: "What is Rate Limiting?",
+        answer: "Rate limiting is a mechanism that controls the number of requests a client can make to an API within a given time period. It helps prevent abuse, protect server resources, ensure fair usage, and improve API reliability. When the limit is exceeded, the API typically returns HTTP 429 Too Many Requests."
+      },
+      {
+        id: 12,
+        cat: "sql",
+        catTitle: "SQL Query",
+        question: "Write a query to select the second-highest salary from an Employee table.",
+        answer: `SELECT Salary
+FROM (
+SELECT Salary,
+DENSE_RANK() OVER (ORDER BY Salary DESC) AS SalaryRank
+FROM Employee
+) AS E
+WHERE SalaryRank = 2;`,
+        isCode: true
+      },
+      {
+        id: 13,
+        cat: "sql",
+        catTitle: "Database Fundamentals",
+        question: "What is the ACID principle?",
+        answer: "ACID stands for Atomicity, Consistency, Isolation, and Durability. These properties ensure that database transactions are reliable. Atomicity means all or nothing, Consistency keeps the database valid, Isolation handles concurrent transactions safely, and Durability ensures committed changes are not lost."
+      },
+      {
+        id: 14,
+        cat: "sql",
+        catTitle: "SQL Query",
+        question: "Write a query to select duplicate rows.",
+        answer: `Find Duplicates:
+SELECT Email, COUNT(*) AS DuplicateCount
+FROM Employee
+GROUP BY Email
+HAVING COUNT(*) > 1;
+
+Find Duplicate With Details:
+SELECT *
+FROM Employee
+WHERE Email IN (
+SELECT Email
+FROM Employee
+GROUP BY Email
+HAVING COUNT(*) > 1
+);`,
+        isCode: true
+      },
+      {
+        id: 15,
+        cat: "sql",
+        catTitle: "SQL Query",
+        question: "Write a query to get the highest salary from each department.",
+        answer: `Department wise highest salary
+SELECT DepartmentId, MAX(Salary) AS HighestSalary
+FROM Employee
+GROUP BY DepartmentId;
+
+Highest salary with employee details:
+SELECT DepartmentId, EmployeeName, Salary
+FROM (
+SELECT DepartmentId,
+EmployeeName,
+Salary,
+DENSE_RANK() OVER (
+PARTITION BY DepartmentId
+ORDER BY Salary DESC
+) AS SalaryRank
+FROM Employee
+) AS E
+WHERE SalaryRank = 1;`,
+        isCode: true
+      },
+      {
+        id: 16,
+        cat: "sql",
+        catTitle: "Database Performance",
+        question: "What is Indexing?",
+        answer: "Indexing is a technique used to improve database query performance. An index creates a separate data structure that allows the database to locate matching records more efficiently instead of scanning the entire table. However, indexes consume storage and can slow down insert, update, and delete operations because the indexes also need to be maintained."
+      },
+      {
+        id: 17,
+        cat: "aspnet",
+        catTitle: "REST & Web API",
+        question: "What is REST, and how is it implemented in ASP.NET Web API?",
+        answer: "REST is an architectural style for building stateless, resource-oriented APIs using standard HTTP methods. In ASP.NET Core Web API, we implement REST using controllers, routing, HTTP method attributes like [HttpGet], [HttpPost], [HttpPut], and [HttpDelete], along with HTTP status codes and JSON responses."
+      },
+      {
+        id: 18,
+        cat: "aspnet",
+        catTitle: "API Security",
+        question: "How do you secure a Web API? (JWT, OAuth, API Keys, etc.)",
+        answer: "To secure an ASP.NET Core Web API, I would first enforce HTTPS. Then I would implement authentication using JWT or an identity provider, and authorization using roles or policies. For delegated access, I would use OAuth 2.0. For simpler service-to-service scenarios, API keys can be used. I would also add input validation, rate limiting, secure secret management, proper CORS configuration, and logging/monitoring."
+      },
+      {
+        id: 19,
+        cat: "aspnet",
+        catTitle: "ASP.NET Core MVC",
+        question: "What is the difference between IActionResult and ActionResult<T> in .NET Core?",
+        answer: "IActionResult is a general return type for controller actions and can represent any HTTP response. ActionResult<T> is a generic version that indicates the expected successful response type while still allowing HTTP results such as NotFound() or BadRequest(). For REST APIs where the success response has a known model, I generally prefer ActionResult<T> because it makes the API contract clearer."
+      },
+      {
+        id: 20,
+        cat: "aspnet",
+        catTitle: "API Architecture",
+        question: "How do you implement versioning in Web API?",
+        answer: "API versioning is used to support multiple versions of an API without breaking existing clients. Common approaches are URL-based versioning, query-string versioning, and header-based versioning. In ASP.NET Core, I can configure API versioning and map controllers or endpoints to specific versions. For most public APIs, I prefer URL versioning because it's simple and easy for clients to understand."
+      },
+      {
+        id: 21,
+        cat: "aspnet",
+        catTitle: "ASP.NET Core Pipeline",
+        question: "What’s the difference between Middleware and Filters in ASP.NET Core?",
+        answer: "Middleware operates at the application-wide HTTP request pipeline level, whereas filters operate within the MVC/Web API pipeline and are mainly used around controller actions. Middleware is suitable for cross-cutting concerns such as logging, exception handling, authentication, CORS, and rate limiting, while filters are useful when the behavior needs to be specific to controllers or actions."
+      },
+      {
+        id: 22,
+        cat: "efcore",
+        catTitle: "Entity Framework Core",
+        question: "What is the difference between Code First, Database First, and Model First approaches?",
+        answer: "In Code First, we define our entities in code and use Entity Framework migrations to create and evolve the database. In Database First, the database already exists and we generate the entity models and DbContext from the schema. Model First starts with a visual entity model and generates the database from that model; this approach is mainly associated with older Entity Framework designer workflows and is not the typical approach in EF Core."
+      },
+      {
+        id: 23,
+        cat: "efcore",
+        catTitle: "Entity Framework Core",
+        question: "Explain Eager Loading vs Lazy Loading vs Explicit Loading.",
+        answer: "Eager loading loads related entities along with the main entity using Include(). Lazy loading loads related data automatically when the navigation property is accessed. Explicit loading doesn't load related data automatically; we explicitly request it using the EF Core change tracker APIs. I generally prefer eager loading when I know the related data is required, and explicit loading when I need more control. I use lazy loading carefully because it can cause N+1 query problems."
+      },
+      {
+        id: 24,
+        cat: "efcore",
+        catTitle: "Entity Framework Core",
+        question: "What’s the difference between DbContext and ObjectContext?",
+        answer: "DbContext is a simplified, higher-level API provided by Entity Framework for working with entities, while ObjectContext is the older, lower-level API. DbContext provides a cleaner programming model through DbSet<T> and is the preferred approach for modern applications. In EF Core, we work with DbContext; ObjectContext isn't the standard API."
+      },
+      {
+        id: 25,
+        cat: "efcore",
+        catTitle: "Entity Framework Core",
+        question: "How do you handle transactions in EF Core?",
+        answer: "In EF Core, a single SaveChanges() is normally handled transactionally by EF Core. When multiple database operations or multiple SaveChanges() calls must succeed or fail together, I use an explicit transaction with BeginTransactionAsync(), then commit on success and rollback on exception."
+      },
+      {
+        id: 26,
+        cat: "efcore",
+        catTitle: "Entity Framework Core",
+        question: "What are migrations in EF Core and how do you use them?",
+        answer: "EF Core migrations are used to keep the database schema in sync with the application's entity model. When I change an entity, I create a migration using dotnet ef migrations add, review and commit that migration, and then apply it to the database using dotnet ef database update. This allows schema changes to be tracked and applied incrementally."
+      },
+      {
+        id: 27,
+        cat: "efcore",
+        catTitle: "LINQ & Collections",
+        question: "What is the difference between IEnumerable, IQueryable, and List<T>?",
+        answer: "IEnumerable<T> is mainly used for iterating and filtering data in memory. IQueryable<T> is designed for query providers like EF Core, allowing filtering, sorting and other operations to be translated and executed by the database. List<T> is a concrete in-memory collection that contains the actual data and supports operations like Add, Remove and indexing. In EF Core, I generally keep the query as IQueryable until I've applied the required filters, projection and pagination, and then materialize it using ToListAsync()."
+      },
+      {
+        id: 28,
+        cat: "efcore",
+        catTitle: "LINQ Execution",
+        question: "Explain deferred execution vs immediate execution in LINQ.",
+        answer: "Deferred execution means a LINQ query is not executed when it is defined; it executes when the result is enumerated or materialized. Operators like Where, Select, and OrderBy generally use deferred execution. Immediate execution occurs when we call methods such as ToList(), ToArray(), Count(), or First(), which cause the query to execute and produce a result."
+      },
+      {
+        id: 29,
+        cat: "efcore",
+        catTitle: "LINQ Operators",
+        question: "How do joins work in LINQ? (Inner, Left, Group Joins)",
+        answer: "In LINQ, an inner join returns only records where both sides match. A left join returns all records from the left sequence and matching records from the right, with null when there's no match. A group join returns each left-side element along with a collection of matching right-side elements. In LINQ, left joins are commonly implemented using GroupJoin, SelectMany, and DefaultIfEmpty()."
+      },
+      {
+        id: 30,
+        cat: "efcore",
+        catTitle: "LINQ Optimization",
+        question: "How can you optimize LINQ queries for performance?",
+        answer: "For LINQ performance, I try to execute as much work as possible in the database. I filter with Where, project only required columns with Select, avoid premature ToList(), use pagination, avoid unnecessary Include() and N+1 queries, and use AsNoTracking() for read-only queries. I also inspect the SQL generated by EF Core and make sure the database has appropriate indexes.\nAsNoTracking() tells EF Core not to track the returned entities. It's useful for read-only queries because it avoids unnecessary change-tracking overhead."
+      },
+      {
+        id: 31,
+        cat: "efcore",
+        catTitle: "LINQ Operators",
+        question: "Give an example of using SelectMany and explain when it is useful.",
+        answer: "SelectMany() is used to flatten nested collections into a single collection. For example, if each department has a collection of employees and I need all employees from all departments in one sequence, I can use departments.SelectMany(d => d.Employees). It's especially useful when working with one-to-many relationships such as Departments-Employees, Orders-OrderItems, or Courses-Students."
+      },
+      {
+        id: 32,
+        cat: "aspnet",
+        catTitle: ".NET Architecture",
+        question: "What are the main differences between .NET Framework and .NET Core?",
+        answer: ".NET Framework is the older, primarily Windows-based platform, whereas .NET Core was introduced as a cross-platform, open-source and modular platform with strong support for modern web, cloud and containerized applications. From .NET 5 onwards, Microsoft unified the platform under the name .NET, so today we generally use modern .NET rather than calling it .NET Core."
+      },
+      {
+        id: 33,
+        cat: "aspnet",
+        catTitle: "Dependency Injection",
+        question: "Explain Dependency Injection in .NET Core.",
+        answer: "Dependency Injection is a design pattern used to reduce tight coupling between classes. Instead of a class creating its dependencies using new, the dependencies are provided from outside, usually through constructor injection. In .NET Core, the built-in DI container manages the creation and lifetime of these dependencies"
+      },
+      {
+        id: 34,
+        cat: "aspnet",
+        catTitle: "Background Processing",
+        question: "What is the role of IHostedService in .NET Core?",
+        answer: "IHostedService is useful when we need a background process that should run independently of incoming HTTP requests, such as processing messages from a queue, sending emails, or performing periodic cleanup. The service is registered with the DI container using AddHostedService, and .NET manages its lifecycle."
+      },
+      {
+        id: 35,
+        cat: "aspnet",
+        catTitle: "Web Server & Hosting",
+        question: "What is Kestrel and how does it work in ASP.NET Core?",
+        answer: "IHostedService is used for running background tasks within the lifetime of a .NET application. It provides StartAsync and StopAsync methods, so we can start background work when the application starts and gracefully stop it when the application shuts down. For continuous background processing, we can use the BackgroundService base class."
+      },
+      {
+        id: 36,
+        cat: "aspnet",
+        catTitle: "Configuration & Options",
+        question: "How do you manage configuration in .NET Core? (appsettings.json, environment variables)",
+        answer: "In .NET Core, configuration is managed through the built-in configuration system. We commonly use appsettings.json for general application settings and environment-specific files for different environments. For deployment-specific values, especially secrets, we can use environment variables or a secret manager. For strongly typed configuration, I prefer the Options Pattern using IOptions<T>."
+      },
+      {
+        id: 37,
+        cat: "aspnet",
+        catTitle: "Minimal APIs",
+        question: "What are Minimal APIs introduced in .NET 6?",
+        answer: "Minimal APIs were introduced in .NET 6 to simplify building HTTP APIs by reducing the boilerplate code required by traditional controller-based APIs. Instead of creating controllers and action methods, we can define endpoints directly using methods like MapGet, MapPost, MapPut, and MapDelete. They are especially useful for small APIs, microservices, and simple services, while controller-based APIs can be preferable for larger and more complex applications"
+      },
+      {
+        id: 38,
+        cat: "aspnet",
+        catTitle: "ASP.NET Core Pipeline",
+        question: "How does the middleware pipeline work in .NET Core?",
+        answer: "The ASP.NET Core middleware pipeline is a sequence of middleware components through which every HTTP request passes. Each middleware can process the request, call the next middleware using next(), and then process the response when control comes back. Middleware can also short-circuit the pipeline by not calling the next component. The order of middleware is important because each component executes according to its position in the pipeline"
+      },
+      {
+        id: 39,
+        cat: "aspnet",
+        catTitle: "Dependency Injection",
+        question: "What is the difference between Transient, Scoped, and Singleton lifetimes?",
+        answer: "Transient creates a new instance every time the service is requested. Scoped creates one instance per HTTP request, so all consumers within the same request can share that instance. Singleton creates one instance for the entire application lifetime and is shared across requests. In ASP.NET Core, DbContext is typically registered as Scoped"
+      },
+      {
+        id: 40,
+        cat: "aspnet",
+        catTitle: "Logging & Diagnostics",
+        question: "How do you handle logging in .NET Core?",
+        answer: "In .NET Core, I use the built-in ILogger<T> abstraction for logging. I inject ILogger<T> into services or controllers and use appropriate log levels such as Information, Warning, Error, and Critical. For exceptions, I log the exception along with useful contextual information. The logging configuration can be managed through appsettings.json, and in production logs can be sent to providers such as Application Insights, Serilog, or other centralized logging systems."
+      },
+      {
+        id: 41,
+        cat: "aspnet",
+        catTitle: ".NET Platform",
+        question: "What is .NET Core, and how does it differ from .NET Framework?",
+        answer: ".NET Core is Microsoft's cross-platform and open-source development platform, designed to build modern applications such as Web APIs, web applications, and microservices. Compared to the older .NET Framework, .NET Core is cross-platform, modular, lightweight, and well suited for cloud and containerized applications. Starting with .NET 5, Microsoft unified the platform under the name '.NET', so today we generally use modern .NET instead of calling it .NET Core."
+      },
+      {
+        id: 42,
+        cat: "aspnet",
+        catTitle: "Application Startup",
+        question: "What is the role of the Startup.cs file in an ASP.NET Core application?",
+        answer: "Startup.cs was used in older ASP.NET Core applications to configure services and the HTTP request pipeline. ConfigureServices() was used for registering services such as controllers, DbContext and application dependencies, while Configure() was used to configure middleware such as authentication, authorization and routing. In ASP.NET Core 6 and later, the minimal hosting model moved this configuration into Program.cs, so a separate Startup.cs is generally no longer required."
+      },
+      {
+        id: 43,
+        cat: "aspnet",
+        catTitle: "ASP.NET Core Pipeline",
+        question: "What are middleware components, and how do they work in the ASP.NET Core request pipeline?",
+        answer: "Middleware components are building blocks of the ASP.NET Core request pipeline. Each middleware can process the incoming request, call the next middleware using next(), and then process the outgoing response. A middleware can also short-circuit the pipeline by not calling the next component. The order of middleware is important because it determines how requests and responses are processed."
+      },
+      {
+        id: 44,
+        cat: "aspnet",
+        catTitle: "Dependency Injection",
+        question: "How do you configure Dependency Injection in .NET Core?",
+        answer: "In .NET Core, we configure Dependency Injection using the built-in DI container. First, we register the interface and its implementation in Program.cs using AddTransient, AddScoped, or AddSingleton. Then we inject the required dependency, usually through the constructor. This avoids manually creating dependencies with new and makes the application loosely coupled and easier to test."
+      },
+      {
+        id: 45,
+        cat: "aspnet",
+        catTitle: "Configuration",
+        question: "What is the difference between IConfiguration and IOptions in .NET Core?",
+        answer: "IConfiguration provides direct access to configuration values using key-value paths, such as EmailSettings:Host. IOptions<T> provides strongly typed access to a configuration section through a class. I prefer IOptions<T> when a configuration section is used repeatedly because it provides better type safety, readability, and maintainability. For simple or dynamic configuration access, IConfiguration can be more convenient."
+      },
+      {
+        id: 46,
+        cat: "aspnet",
+        catTitle: "Configuration",
+        question: "How does the appsettings.json file work in .NET Core?",
+        answer: "appsettings.json is used to store application configuration such as connection strings, logging settings, and custom application settings. ASP.NET Core loads this file into its configuration system during application startup. We can access the values through IConfiguration or bind configuration sections to strongly typed classes using the Options Pattern. We can also have environment-specific files like appsettings.Development.json and appsettings.Production.json, and environment variables can override these values"
+      },
+      {
+        id: 47,
+        cat: "aspnet",
+        catTitle: "Application Startup",
+        question: "What is the significance of the Program.cs file in .NET Core applications?",
+        answer: "Program.cs is the entry point of a .NET application. In modern ASP.NET Core applications, it is responsible for configuring services and dependency injection, loading application configuration, setting up the middleware and routing pipeline, and finally starting the application. In .NET 6 and later, the responsibilities that were traditionally handled by Startup.cs are mostly handled directly in Program.cs."
+      }
+    ];
+
+    // ==========================================================================
+    // STATE & CONTROLS
+    // ==========================================================================
+    let activeMode = 'card'; // 'card' | 'flashcard' | 'compact'
+    let activeCat = 'all';
+    let filterQuery = '';
+    let readQuestionsSet = new Set();
+    let starredQuestionsSet = new Set();
+    let openCardsSet = new Set();
+    let playingAudioId = null;
+
+    // Default: expand all in Study Mode
+    interviewData.forEach(item => openCardsSet.add(item.id));
+
+    // Elements
+    const cardsStream = document.getElementById('cardsStream');
+    const filterSearchInput = document.getElementById('filterSearchInput');
+    const btnClearSearch = document.getElementById('btnClearSearch');
+    const modeSelectorGroup = document.getElementById('modeSelectorGroup');
+    const catChipsGroup = document.getElementById('catChipsGroup');
+    const resultsCountText = document.getElementById('resultsCountText');
+    const batchActionControls = document.getElementById('batchActionControls');
+    const btnExpandAll = document.getElementById('btnExpandAll');
+    const btnCollapseAll = document.getElementById('btnCollapseAll');
+    const emptyResultsBox = document.getElementById('emptyResultsBox');
+
+    // Stats & Progress
+    const countLearned = document.getElementById('countLearned');
+    const countStarred = document.getElementById('countStarred');
+    const readingProgressFill = document.getElementById('readingProgressFill');
+
+    // Header & Drawer
+    const btnThemeToggle = document.getElementById('btnThemeToggle');
+    const themeEmoji = document.getElementById('themeEmoji');
+    const btnTextSize = document.getElementById('btnTextSize');
+    const btnOpenIndex = document.getElementById('btnOpenIndex');
+    const btnCloseDrawer = document.getElementById('btnCloseDrawer');
+    const drawerBackdropOverlay = document.getElementById('drawerBackdropOverlay');
+    const tocDrawerPanel = document.getElementById('tocDrawerPanel');
+    const drawerLinksList = document.getElementById('drawerLinksList');
+    const fabScrollTop = document.getElementById('fabScrollTop');
+    const actionToast = document.getElementById('actionToast');
+
+    // Pure Fullscreen Elements
+    const fsModalOverlay = document.getElementById('fsModalOverlay');
+    const btnFsClose = document.getElementById('btnFsClose');
+    const fsQuestionTitle = document.getElementById('fsQuestionTitle');
+    const fsAnswerContent = document.getElementById('fsAnswerContent');
+
+    // ==========================================================================
+    // PERSISTENCE
+    // ==========================================================================
+    function loadSavedState() {
+      try {
+        const savedRead = localStorage.getItem('net_qa_read_ids');
+        if (savedRead) readQuestionsSet = new Set(JSON.parse(savedRead));
+
+        const savedStars = localStorage.getItem('net_qa_star_ids');
+        if (savedStars) starredQuestionsSet = new Set(JSON.parse(savedStars));
+
+        const savedTheme = localStorage.getItem('net_qa_theme');
+        if (savedTheme) applyThemeMode(savedTheme);
+
+        const savedFont = localStorage.getItem('net_qa_font_size');
+        if (savedFont) {
+          document.body.classList.remove('font-sm', 'font-md', 'font-lg');
+          document.body.classList.add(savedFont);
+        }
+      } catch (e) {
+        console.warn('Storage disabled', e);
+      }
+    }
+
+    function saveState() {
+      try {
+        localStorage.setItem('net_qa_read_ids', JSON.stringify([...readQuestionsSet]));
+        localStorage.setItem('net_qa_star_ids', JSON.stringify([...starredQuestionsSet]));
+      } catch (e) {}
+    }
+
+    // ==========================================================================
+    // THEME & FONT SCALING
+    // ==========================================================================
+    function applyThemeMode(theme) {
+      document.documentElement.setAttribute('data-theme', theme);
+      themeEmoji.textContent = (theme === 'light') ? '☀️' : '🌙';
+      try { localStorage.setItem('net_qa_theme', theme); } catch(e){}
+    }
+
+    btnThemeToggle.addEventListener('click', () => {
+      const current = document.documentElement.getAttribute('data-theme') || 'dark';
+      applyThemeMode(current === 'dark' ? 'light' : 'dark');
+    });
+
+    const fontScales = ['font-sm', 'font-md', 'font-lg'];
+    btnTextSize.addEventListener('click', () => {
+      let idx = fontScales.findIndex(cls => document.body.classList.contains(cls));
+      if (idx === -1) idx = 1;
+      const nextIdx = (idx + 1) % fontScales.length;
+      document.body.classList.remove('font-sm', 'font-md', 'font-lg');
+      document.body.classList.add(fontScales[nextIdx]);
+      try { localStorage.setItem('net_qa_font_size', fontScales[nextIdx]); } catch(e){}
+      showToast(`Font: ${['Small', 'Medium', 'Large'][nextIdx]}`);
+    });
+
+    // ==========================================================================
+    // TOAST NOTIFIER
+    // ==========================================================================
+    let toastTimer;
+    function showToast(msg) {
+      actionToast.textContent = msg;
+      actionToast.classList.add('show');
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => {
+        actionToast.classList.remove('show');
+      }, 2000);
+    }
+
+    // ==========================================================================
+    // SEARCH & HIGHLIGHT
+    // ==========================================================================
+    function escapeReg(str) {
+      return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    }
+
+    function escapeHTML(str) {
+      return str
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#039;');
+    }
+
+    function highlightText(text, query) {
+      if (!query || !query.trim()) return escapeHTML(text);
+      const safeQuery = escapeReg(query.trim());
+      const regex = new RegExp(`(${safeQuery})`, 'gi');
+      return escapeHTML(text).replace(regex, '<mark class="query-highlight">$1</mark>');
+    }
+
+    // ==========================================================================
+    // STATS & PROGRESS
+    // ==========================================================================
+    function updateProgressStats() {
+      const total = interviewData.length;
+      const done = readQuestionsSet.size;
+      const starred = starredQuestionsSet.size;
+      
+      countLearned.textContent = done;
+      countStarred.textContent = starred;
+
+      const pct = Math.round((done / total) * 100) || 0;
+      readingProgressFill.style.width = `${pct}%`;
+    }
+
+    // ==========================================================================
+    // TABLE OF CONTENTS DRAWER
+    // ==========================================================================
+    function populateDrawer() {
+      drawerLinksList.innerHTML = '';
+      interviewData.forEach((item, idx) => {
+        const isDone = readQuestionsSet.has(item.id);
+        const a = document.createElement('a');
+        a.className = `drawer-link-item ${isDone ? 'done' : ''}`;
+        a.href = `#card-${item.id}`;
+        a.innerHTML = `
+          <span style="font-family:var(--font-mono); font-size:0.72rem; color:var(--accent); font-weight:800;">#${item.id < 10 ? '0' + item.id : item.id}</span>
+          <span class="title">${escapeHTML(item.question)}</span>
+          ${isDone ? '<span style="color:var(--emerald); font-size:0.75rem; font-weight:700;">✓</span>' : ''}
+        `;
+        a.addEventListener('click', (e) => {
+          e.preventDefault();
+          closeDrawer();
+          openCardsSet.add(item.id);
+          renderQuestionsList();
+          setTimeout(() => {
+            const cardEl = document.getElementById(`card-${item.id}`);
+            if (cardEl) cardEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          }, 80);
+        });
+        drawerLinksList.appendChild(a);
+      });
+    }
+
+    function openDrawer() {
+      populateDrawer();
+      drawerBackdropOverlay.classList.add('open');
+      tocDrawerPanel.classList.add('open');
+    }
+
+    function closeDrawer() {
+      drawerBackdropOverlay.classList.remove('open');
+      tocDrawerPanel.classList.remove('open');
+    }
+
+    btnOpenIndex.addEventListener('click', openDrawer);
+    btnCloseDrawer.addEventListener('click', closeDrawer);
+    drawerBackdropOverlay.addEventListener('click', closeDrawer);
+
+    // ==========================================================================
+    // AUDIO READER (WEB SPEECH API)
+    // ==========================================================================
+    function toggleAudio(id) {
+      if (!('speechSynthesis' in window)) {
+        showToast('Speech synthesis not available');
+        return;
+      }
+
+      if (window.speechSynthesis.speaking) {
+        window.speechSynthesis.cancel();
+        if (playingAudioId === id) {
+          playingAudioId = null;
+          updateAudioButtons();
+          return;
+        }
+      }
+
+      const item = interviewData.find(q => q.id === id);
+      if (!item) return;
+
+      const utterance = new SpeechSynthesisUtterance(`Question: ${item.question}. Answer: ${item.answer}`);
+      utterance.rate = 1.0;
+
+      playingAudioId = id;
+      updateAudioButtons();
+
+      utterance.onend = () => {
+        playingAudioId = null;
+        updateAudioButtons();
+      };
+      utterance.onerror = () => {
+        playingAudioId = null;
+        updateAudioButtons();
+      };
+
+      window.speechSynthesis.speak(utterance);
+    }
+
+    function updateAudioButtons() {
+      document.querySelectorAll('[data-action="listen"]').forEach(btn => {
+        const id = parseInt(btn.getAttribute('data-id'));
+        if (id === playingAudioId) {
+          btn.classList.add('active-audio');
+          btn.innerHTML = `<span>⏹</span><span>Stop</span>`;
+        } else {
+          btn.classList.remove('active-audio');
+          btn.innerHTML = `<span>🔊</span><span>Listen</span>`;
+        }
+      });
+    }
+
+    // ==========================================================================
+    // PURE FULLSCREEN CONTROLLER (ONLY QUESTION, ANSWER & EXIT)
+    // ==========================================================================
+    function openPureFullscreen(id) {
+      const item = interviewData.find(q => q.id === id);
+      if (!item) return;
+
+      fsQuestionTitle.textContent = item.question;
+
+      if (item.isCode) {
+        fsAnswerContent.innerHTML = `<pre class="code-pre-block" style="font-size:1.02rem; line-height:1.65; padding:16px; border-radius:12px; background:var(--bg-code); border:1px solid var(--border-subtle);"><code>${escapeHTML(item.answer)}</code></pre>`;
+      } else {
+        fsAnswerContent.textContent = item.answer;
+      }
+
+      fsModalOverlay.classList.add('active');
+      document.body.classList.add('fullscreen-locked');
+      document.querySelector('.fs-scroll-area').scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function closePureFullscreen() {
+      fsModalOverlay.classList.remove('active');
+      document.body.classList.remove('fullscreen-locked');
+    }
+
+    btnFsClose.addEventListener('click', closePureFullscreen);
+
+    // ==========================================================================
+    // RENDER FUNCTIONS
+    // ==========================================================================
+    function getFilteredQuestions() {
+      const q = filterQuery.trim().toLowerCase();
+
+      return interviewData.filter(item => {
+        // Tab Filter
+        if (activeCat === 'unread' && readQuestionsSet.has(item.id)) return false;
+        if (activeCat === 'starred' && !starredQuestionsSet.has(item.id)) return false;
+        if (activeCat !== 'all' && activeCat !== 'unread' && activeCat !== 'starred' && item.cat !== activeCat) {
+          return false;
+        }
+
+        // Search Filter
+        if (q) {
+          const matchQ = item.question.toLowerCase().includes(q);
+          const matchA = item.answer.toLowerCase().includes(q);
+          const matchCat = item.catTitle.toLowerCase().includes(q);
+          const matchId = item.id.toString() === q || `q${item.id}` === q;
+          if (!matchQ && !matchA && !matchCat && !matchId) return false;
+        }
+
+        return true;
+      });
+    }
+
+    function renderQuestionsList() {
+      const filtered = getFilteredQuestions();
+      resultsCountText.textContent = `Showing ${filtered.length} of ${interviewData.length} questions`;
+      emptyResultsBox.classList.toggle('visible', filtered.length === 0);
+
+      batchActionControls.style.display = (activeMode === 'compact') ? 'none' : 'flex';
+      cardsStream.innerHTML = '';
+
+      if (activeMode === 'compact') {
+        renderCompactGrid(filtered);
+      } else {
+        renderCardStream(filtered);
+      }
+
+      updateProgressStats();
+      updateAudioButtons();
+    }
+
+    function renderCompactGrid(filteredList) {
+      const grid = document.createElement('div');
+      grid.className = 'compact-grid';
+
+      filteredList.forEach(item => {
+        const isDone = readQuestionsSet.has(item.id);
+        const card = document.createElement('div');
+        card.className = 'compact-card';
+        if (isDone) card.style.borderLeft = '3px solid var(--emerald)';
+
+        card.innerHTML = `
+          <div class="compact-num-pill">#${item.id < 10 ? '0' + item.id : item.id}</div>
+          <div class="compact-q-title">${highlightText(item.question, filterQuery)}</div>
+          <span style="color:var(--text-muted); font-size:0.8rem;" title="View Full Screen">⛶</span>
+        `;
+
+        card.addEventListener('click', () => {
+          openPureFullscreen(item.id);
+        });
+
+        grid.appendChild(card);
+      });
+
+      cardsStream.appendChild(grid);
+    }
+
+    function renderCardStream(filteredList) {
+      filteredList.forEach(item => {
+        const isDone = readQuestionsSet.has(item.id);
+        const isStarred = starredQuestionsSet.has(item.id);
+        const isOpen = openCardsSet.has(item.id);
+
+        const card = document.createElement('article');
+        card.className = `qa-card ${isOpen ? 'open' : ''} ${isDone ? 'is-done' : ''} ${isStarred ? 'is-starred' : ''}`;
+        card.id = `card-${item.id}`;
+
+        const questionHTML = highlightText(item.question, filterQuery);
+
+        let answerContentHTML = '';
+        if (item.isCode) {
+          const codeHTML = highlightText(item.answer, filterQuery);
+          answerContentHTML = `
+            <div class="code-terminal-box">
+              <div class="code-terminal-bar">
+                <span class="code-lang-tag">SQL QUERY</span>
+                <button class="code-copy-action" data-action="copy-code" data-id="${item.id}">
+                  📋 Copy Code
+                </button>
+              </div>
+              <pre class="code-pre-block"><code>${codeHTML}</code></pre>
+            </div>
+          `;
+        } else {
+          const textHTML = highlightText(item.answer, filterQuery);
+          answerContentHTML = `<div class="qa-answer-text">${textHTML}</div>`;
+        }
+
+        card.innerHTML = `
+          <!-- Header (Tap to toggle) -->
+          <div class="qa-header" data-action="toggle-card" data-id="${item.id}">
+            <div class="qa-index-pill">#${item.id < 10 ? '0' + item.id : item.id}</div>
+            <div class="qa-text-col">
+              <div class="qa-meta">
+                <span class="qa-cat-title">${item.catTitle}</span>
+                ${isDone ? '<span class="qa-done-badge">✓ Learned</span>' : ''}
+              </div>
+              <h2 class="qa-question-heading">${questionHTML}</h2>
+            </div>
+            <div class="qa-header-actions">
+              <button class="qa-card-fullscreen-btn" data-action="open-focus" data-id="${item.id}" title="View in Full Screen">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <polyline points="9 21 3 21 3 15"></polyline>
+                  <line x1="21" y1="3" x2="14" y2="10"></line>
+                  <line x1="3" y1="21" x2="10" y2="14"></line>
+                </svg>
+              </button>
+              <div class="qa-chevron-box">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <!-- Flashcard Reveal Button -->
+          <div class="flashcard-bar">
+            <button class="btn-reveal-flashcard" data-action="reveal-flashcard" data-id="${item.id}">
+              💡 Tap to Reveal Answer
+            </button>
+          </div>
+
+          <!-- Answer Body -->
+          <div class="qa-body">
+            ${answerContentHTML}
+
+            <!-- 2x2 Clean Action Grid on Mobile with Focus button -->
+            <div class="card-actions-grid">
+              <button class="btn-action-pill ${isDone ? 'active-done' : ''}" data-action="toggle-done" data-id="${item.id}">
+                <span>${isDone ? '✓' : '○'}</span>
+                <span>${isDone ? 'Learned' : 'Learn'}</span>
+              </button>
+
+              <button class="btn-action-pill ${isStarred ? 'active-star' : ''}" data-action="toggle-star" data-id="${item.id}">
+                <span>${isStarred ? '★' : '☆'}</span>
+                <span>${isStarred ? 'Starred' : 'Star'}</span>
+              </button>
+
+              <button class="btn-action-pill" data-action="listen" data-id="${item.id}">
+                <span>🔊</span>
+                <span>Listen</span>
+              </button>
+
+              <button class="btn-action-pill" data-action="copy-qa" data-id="${item.id}">
+                <span>📋</span>
+                <span>Copy Q&amp;A</span>
+              </button>
+
+              <button class="btn-action-pill focus-pill" data-action="open-focus" data-id="${item.id}">
+                <span>⛶</span>
+                <span>Full Screen</span>
+              </button>
+            </div>
+          </div>
+        `;
+
+        cardsStream.appendChild(card);
+      });
+    }
+
+    // ==========================================================================
+    // INTERACTION HANDLING
+    // ==========================================================================
+    cardsStream.addEventListener('click', (e) => {
+      const trigger = e.target.closest('[data-action]');
+      if (!trigger) return;
+
+      const action = trigger.getAttribute('data-action');
+      const id = parseInt(trigger.getAttribute('data-id'));
+
+      if (action === 'open-focus') {
+        openPureFullscreen(id);
+        return;
+      }
+
+      if (action === 'reveal-flashcard' || action === 'toggle-card') {
+        if (openCardsSet.has(id)) {
+          openCardsSet.delete(id);
+        } else {
+          openCardsSet.add(id);
+        }
+        renderQuestionsList();
+        return;
+      }
+
+      if (action === 'toggle-done') {
+        if (readQuestionsSet.has(id)) {
+          readQuestionsSet.delete(id);
+          showToast('Marked as unlearned');
+        } else {
+          readQuestionsSet.add(id);
+          showToast('Marked as learned! 🎯');
+        }
+        saveState();
+        renderQuestionsList();
+        return;
+      }
+
+      if (action === 'toggle-star') {
+        if (starredQuestionsSet.has(id)) {
+          starredQuestionsSet.delete(id);
+          showToast('Removed from starred');
+        } else {
+          starredQuestionsSet.add(id);
+          showToast('Starred! ★');
+        }
+        saveState();
+        renderQuestionsList();
+        return;
+      }
+
+      if (action === 'listen') {
+        toggleAudio(id);
+        return;
+      }
+
+      if (action === 'copy-code') {
+        const item = interviewData.find(q => q.id === id);
+        if (item) {
+          navigator.clipboard.writeText(item.answer).then(() => {
+            showToast('SQL Code copied!');
+          });
+        }
+        return;
+      }
+
+      if (action === 'copy-qa') {
+        const item = interviewData.find(q => q.id === id);
+        if (item) {
+          const fullText = `Q: ${item.question}\n\nA: ${item.answer}`;
+          navigator.clipboard.writeText(fullText).then(() => {
+            showToast('Question & Answer copied!');
+          });
+        }
+        return;
+      }
+    });
+
+    // ==========================================================================
+    // MODES & CATEGORY FILTER EVENTS
+    // ==========================================================================
+    function setReadingMode(mode) {
+      activeMode = mode;
+      document.body.classList.remove('mode-card', 'mode-flashcard', 'mode-compact');
+      document.body.classList.add(`mode-${mode}`);
+
+      document.querySelectorAll('#modeSelectorGroup .mode-tab-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.getAttribute('data-mode') === mode);
+      });
+
+      if (mode === 'flashcard') {
+        openCardsSet.clear();
+      } else if (mode === 'card') {
+        interviewData.forEach(item => openCardsSet.add(item.id));
+      }
+      renderQuestionsList();
+    }
+
+    modeSelectorGroup.addEventListener('click', (e) => {
+      const btn = e.target.closest('.mode-tab-btn');
+      if (!btn) return;
+      setReadingMode(btn.getAttribute('data-mode'));
+    });
+
+    catChipsGroup.addEventListener('click', (e) => {
+      const chip = e.target.closest('.chip-btn');
+      if (!chip) return;
+
+      document.querySelectorAll('#catChipsGroup .chip-btn').forEach(c => c.classList.remove('active'));
+      chip.classList.add('active');
+
+      activeCat = chip.getAttribute('data-cat');
+      renderQuestionsList();
+    });
+
+    // Search Box Handling
+    filterSearchInput.addEventListener('input', (e) => {
+      filterQuery = e.target.value;
+      btnClearSearch.classList.toggle('active', filterQuery.length > 0);
+      renderQuestionsList();
+    });
+
+    btnClearSearch.addEventListener('click', () => {
+      filterSearchInput.value = '';
+      filterQuery = '';
+      btnClearSearch.classList.remove('active');
+      filterSearchInput.focus();
+      renderQuestionsList();
+    });
+
+    // Expand & Collapse
+    btnExpandAll.addEventListener('click', () => {
+      interviewData.forEach(item => openCardsSet.add(item.id));
+      renderQuestionsList();
+      showToast('All expanded');
+    });
+
+    btnCollapseAll.addEventListener('click', () => {
+      openCardsSet.clear();
+      renderQuestionsList();
+      showToast('All collapsed');
+    });
+
+    // Scroll to Top FAB
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 280) {
+        fabScrollTop.classList.add('visible');
+      } else {
+        fabScrollTop.classList.remove('visible');
+      }
+    });
+
+    fabScrollTop.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Keyboard Shortcuts (Escape to exit fullscreen, '/' to search)
+    document.addEventListener('keydown', (e) => {
+      if (fsModalOverlay.classList.contains('active')) {
+        if (e.key === 'Escape') {
+          e.preventDefault();
+          closePureFullscreen();
+        }
+        return;
+      }
+
+      if (e.key === '/' && document.activeElement !== filterSearchInput) {
+        e.preventDefault();
+        filterSearchInput.focus();
+      } else if (e.key === 'Escape' && document.activeElement === filterSearchInput) {
+        filterSearchInput.blur();
+      }
+    });
+
+    // Init
+    loadSavedState();
+    renderQuestionsList();
+  </script>
+</body>
+</html>
