@@ -1,0 +1,2088 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Sagar Chavda — HR Outreach Generator</title>
+<style>
+  :root {
+    --navy: #0b1622;
+    --navy-2: #0f1e2e;
+    --panel: #12233696;
+    --teal: #2de2c4;
+    --teal-dim: #1ba38b;
+    --text: #e8f1f2;
+    --muted: #8fa3ad;
+    --border: #1e3446;
+    --mono: 'JetBrains Mono', 'Consolas', monospace;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background: radial-gradient(circle at 20% -10%, #133248 0%, var(--navy) 55%);
+    color: var(--text);
+    min-height: 100vh;
+    padding: 32px 16px 64px;
+  }
+  .wrap { max-width: 980px; margin: 0 auto; }
+
+  header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 28px;
+  }
+  .mark {
+    width: 44px; height: 44px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, var(--teal), var(--teal-dim));
+    display: flex; align-items: center; justify-content: center;
+    font-family: var(--mono);
+    font-weight: 700;
+    color: var(--navy);
+    font-size: 18px;
+    flex-shrink: 0;
+  }
+  header h1 { font-size: 19px; margin: 0; letter-spacing: 0.2px; }
+  header p { margin: 2px 0 0; color: var(--muted); font-size: 13px; }
+
+  .tabs {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--border);
+  }
+  .tab {
+    padding: 10px 18px;
+    background: none;
+    border: none;
+    color: var(--muted);
+    font-size: 14px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    font-family: var(--mono);
+  }
+  .tab.active {
+    color: var(--teal);
+    border-bottom: 2px solid var(--teal);
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 340px 1fr;
+    gap: 20px;
+  }
+  @media (max-width: 780px) {
+    .grid { grid-template-columns: 1fr; }
+  }
+
+  .card {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 20px;
+    backdrop-filter: blur(6px);
+  }
+  .card h2 {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: var(--teal);
+    margin: 0 0 16px;
+    font-family: var(--mono);
+  }
+  label {
+    display: block;
+    font-size: 12.5px;
+    color: var(--muted);
+    margin-bottom: 6px;
+    margin-top: 14px;
+  }
+  label:first-of-type { margin-top: 0; }
+  input, select {
+    width: 100%;
+    padding: 10px 12px;
+    background: #0a1520;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    color: var(--text);
+    font-size: 14px;
+    outline: none;
+  }
+  input:focus, select:focus { border-color: var(--teal); }
+  input::placeholder { color: #4a6272; }
+
+  .hint {
+    font-size: 11px;
+    color: #5c7484;
+    margin-top: 5px;
+  }
+
+  .preview-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .copy-btn {
+    background: var(--teal);
+    color: var(--navy);
+    border: none;
+    padding: 9px 16px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 13px;
+    cursor: pointer;
+    font-family: var(--mono);
+    transition: transform 0.1s ease;
+  }
+  .copy-btn:active { transform: scale(0.96); }
+  .copy-btn.copied { background: #7dffc0; }
+
+  .subject-line {
+    font-family: var(--mono);
+    font-size: 13px;
+    color: var(--teal);
+    background: #0a1520;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 10px 85px 10px 12px;
+    margin-bottom: 14px;
+    word-break: break-word;
+    position: relative;
+  }
+  .subject-line span { color: var(--muted); display: block; font-size: 10px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px; }
+
+  .copy-sub-btn {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--muted);
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 11px;
+    cursor: pointer;
+    font-family: var(--mono);
+    transition: all 0.2s ease;
+  }
+  .copy-sub-btn:hover {
+    border-color: var(--teal);
+    color: var(--teal);
+    background: #0d2534;
+  }
+  .copy-sub-btn:active {
+    transform: translateY(-50%) scale(0.95);
+  }
+  .copy-sub-btn.copied {
+    background: var(--teal);
+    border-color: var(--teal);
+    color: var(--navy);
+  }
+
+  .send-btn {
+    background: var(--teal-dim);
+    color: var(--text);
+    border: 1px solid var(--border);
+    padding: 9px 16px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 13px;
+    cursor: pointer;
+    font-family: var(--mono);
+    transition: all 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    text-decoration: none;
+  }
+  .send-btn:hover {
+    background: var(--teal);
+    color: var(--navy);
+  }
+  .send-btn:active { transform: scale(0.96); }
+  .send-btn.disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+    pointer-events: none;
+    background: #0a1520;
+    color: var(--muted);
+    border-color: var(--border);
+  }
+  .btn-gmail {
+    background: #ea4335;
+    color: #fff;
+    border: none;
+  }
+  .btn-gmail:hover {
+    background: #d13022;
+    color: #fff;
+  }
+
+  .body-preview {
+    background: #0a1520;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 18px;
+    font-size: 14px;
+    line-height: 1.7;
+    white-space: pre-wrap;
+    color: #d7e4e7;
+    min-height: 300px;
+  }
+  .missing { color: #ff9d7a; font-weight: 600; }
+
+  /* Records View Styles */
+  .records-container {
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .records-container.active {
+    display: flex;
+  }
+  
+  .records-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .records-actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .records-search {
+    background: #0a1520;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 10px 14px;
+    color: var(--text);
+    font-size: 14px;
+    width: 250px;
+    outline: none;
+  }
+  .records-search:focus {
+    border-color: var(--teal);
+  }
+
+  .table-wrap {
+    overflow-x: auto;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: var(--panel);
+    backdrop-filter: blur(6px);
+  }
+  table.records-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    text-align: left;
+  }
+  table.records-table th {
+    background: #0f1e2e;
+    color: var(--teal);
+    padding: 12px 16px;
+    font-family: var(--mono);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    border-bottom: 1px solid var(--border);
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.15s ease;
+  }
+  table.records-table th:hover:not(:last-child) {
+    background: #15293d;
+  }
+  table.records-table td {
+    padding: 12px 16px;
+    border-bottom: 1px solid #1e344650;
+    color: #d7e4e7;
+    max-width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  table.records-table tr:last-child td {
+    border-bottom: none;
+  }
+  table.records-table tr {
+    transition: background 0.15s ease;
+  }
+  table.records-table tr:hover {
+    background: #12283d80;
+  }
+  
+  .badge {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 10.5px;
+    font-weight: 600;
+    font-family: var(--mono);
+  }
+  .badge.status-send {
+    background: #11382b;
+    color: #4ef0b9;
+    border: 1px solid #1b533e;
+  }
+  .badge.status-not-shortlist {
+    background: #472121;
+    color: #ff8c8c;
+    border: 1px solid #663232;
+  }
+  .badge.status-other {
+    background: #252e3b;
+    color: #b0c4de;
+    border: 1px solid var(--border);
+  }
+
+  .action-btn {
+    background: #1b2f3f;
+    border: 1px solid var(--border);
+    color: var(--text);
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 11.5px;
+    font-family: var(--mono);
+    transition: all 0.15s ease;
+  }
+  .action-btn:hover {
+    color: var(--navy);
+    background: var(--teal);
+    border-color: var(--teal);
+  }
+  .action-btn.delete {
+    background: #2b171c;
+    border-color: #55222b;
+    color: #ff8c8c;
+  }
+  .action-btn.delete:hover {
+    color: white;
+    background: #ea4335;
+    border-color: #ea4335;
+  }
+
+  /* Modal Styles */
+  .modal-overlay {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(5, 11, 18, 0.85);
+    backdrop-filter: blur(8px);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    padding: 16px;
+  }
+  .modal-overlay.active {
+    display: flex;
+  }
+  .modal {
+    background: var(--navy-2);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    overflow: hidden;
+    animation: modalFadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  @keyframes modalFadeIn {
+    from { opacity: 0; transform: scale(0.95) translateY(10px); }
+    to { opacity: 1; transform: scale(1) translateY(0); }
+  }
+  .modal-header {
+    padding: 16px 20px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .modal-header h3 {
+    margin: 0;
+    font-size: 16px;
+    color: var(--teal);
+    font-family: var(--mono);
+  }
+  .close-modal {
+    background: none;
+    border: none;
+    color: var(--muted);
+    font-size: 24px;
+    cursor: pointer;
+    line-height: 1;
+  }
+  .close-modal:hover {
+    color: var(--text);
+  }
+  .modal-body {
+    padding: 20px;
+  }
+  .modal-footer {
+    padding: 14px 20px;
+    border-top: 1px solid var(--border);
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+  .btn-secondary {
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--text);
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: var(--mono);
+    font-size: 13px;
+    outline: none;
+  }
+  .btn-secondary:hover {
+    border-color: var(--muted);
+  }
+  .btn-primary {
+    background: var(--teal);
+    color: var(--navy);
+    border: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: var(--mono);
+    font-size: 13px;
+    outline: none;
+  }
+  .btn-primary:hover {
+    background: #7dffc0;
+  }
+  .import-textarea {
+    width: 100%;
+    height: 180px;
+    background: #0a1520;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    color: var(--text);
+    font-family: var(--mono);
+    font-size: 12px;
+    padding: 12px;
+    resize: vertical;
+    outline: none;
+    margin-top: 12px;
+  }
+  .import-textarea:focus {
+    border-color: var(--teal);
+  }
+
+  /* Wizard Modal Specific Styles */
+  .wizard-progress {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding-bottom: 14px;
+    border-bottom: 1px dashed var(--border);
+  }
+  .wizard-step-pill {
+    flex: 1;
+    text-align: center;
+    padding: 8px 4px;
+    font-size: 11px;
+    font-family: var(--mono);
+    color: var(--muted);
+    background: #0a1520;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    margin: 0 3px;
+    transition: all 0.2s ease;
+  }
+  .wizard-step-pill.active {
+    color: var(--navy);
+    background: var(--teal);
+    border-color: var(--teal);
+    font-weight: 700;
+  }
+  .wizard-step-pill.completed {
+    color: var(--teal);
+    background: #0d2733;
+    border-color: var(--teal-dim);
+  }
+  .wizard-preview-box {
+    background: #0a1520;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 16px;
+    margin-bottom: 20px;
+    max-height: 230px;
+    overflow-y: auto;
+    font-family: var(--mono);
+    font-size: 13px;
+    color: var(--text);
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+  .wizard-preview-label {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--muted);
+    margin-bottom: 8px;
+  }
+  .wizard-action-btn {
+    width: 100%;
+    padding: 14px;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: var(--mono);
+    border-radius: 10px;
+    border: none;
+    background: linear-gradient(135deg, var(--teal), var(--teal-dim));
+    color: var(--navy);
+    cursor: pointer;
+    transition: transform 0.1s ease, filter 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    box-shadow: 0 4px 15px rgba(45, 226, 196, 0.25);
+  }
+  .wizard-action-btn:hover {
+    filter: brightness(1.15);
+  }
+  .wizard-action-btn:active {
+    transform: scale(0.98);
+  }
+
+  /* Toast Notification */
+  .toast {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    background: var(--navy-2);
+    border-left: 4px solid var(--teal);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    border-right: 1px solid var(--border);
+    padding: 12px 20px;
+    border-radius: 0 8px 8px 0;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    z-index: 2000;
+    font-size: 13px;
+    color: var(--text);
+    transform: translateY(150%);
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .toast.active {
+    transform: translateY(0);
+  }
+
+  /* Pagination Styles */
+  .pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 16px;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .pagination-info {
+    font-size: 13px;
+    color: var(--muted);
+  }
+  .pagination-controls {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+  }
+  .page-btn {
+    background: #1b2f3f;
+    border: 1px solid var(--border);
+    color: var(--text);
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 12.5px;
+    font-family: var(--mono);
+    cursor: pointer;
+    transition: all 0.15s ease;
+    min-width: 32px;
+    text-align: center;
+    outline: none;
+  }
+  .page-btn:hover:not(.disabled) {
+    color: var(--navy);
+    background: var(--teal);
+    border-color: var(--teal);
+  }
+  .page-btn.active {
+    background: var(--teal-dim);
+    color: var(--text);
+    border-color: var(--teal-dim);
+    pointer-events: none;
+  }
+  .page-btn.disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+  .page-size-selector {
+    background: #0a1520;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    color: var(--text);
+    font-size: 13px;
+    padding: 4px 8px;
+    outline: none;
+    cursor: pointer;
+  }
+  .page-size-selector:focus {
+    border-color: var(--teal);
+  }
+
+  /* Mobile Responsive Optimizations */
+  @media (max-width: 768px) {
+    body {
+      padding: 16px 10px 40px;
+    }
+    header {
+      margin-bottom: 20px;
+      gap: 10px;
+    }
+    header h1 {
+      font-size: 17px;
+    }
+    header p {
+      font-size: 12px;
+    }
+    .tabs {
+      overflow-x: auto;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+      padding-bottom: 4px;
+    }
+    .tab {
+      padding: 10px 14px;
+      font-size: 13px;
+      flex-shrink: 0;
+    }
+    input, select {
+      font-size: 16px; /* Prevents auto-zoom on iOS */
+      padding: 12px 12px;
+      min-height: 44px;
+    }
+    .preview-head {
+      flex-direction: column;
+      align-items: stretch;
+    }
+    .preview-head > div {
+      width: 100%;
+      display: grid !important;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px !important;
+    }
+    .preview-head button {
+      width: 100%;
+      text-align: center;
+      justify-content: center;
+    }
+    .subject-line {
+      padding: 10px 12px 48px 12px;
+    }
+    .copy-sub-btn {
+      top: auto;
+      bottom: 8px;
+      right: 12px;
+      transform: none;
+      width: calc(100% - 24px);
+      text-align: center;
+    }
+    .copy-sub-btn:active {
+      transform: scale(0.98);
+    }
+    .body-preview {
+      padding: 14px;
+      font-size: 13.5px;
+      min-height: 220px;
+    }
+    /* Records section mobile styling */
+    .records-header {
+      flex-direction: column;
+      align-items: stretch;
+    }
+    .records-actions {
+      flex-direction: column;
+      width: 100%;
+    }
+    .records-search {
+      width: 100% !important;
+      font-size: 16px;
+      min-height: 44px;
+    }
+    .records-actions .copy-btn {
+      width: 100%;
+      text-align: center;
+    }
+    .records-actions select {
+      width: 100% !important;
+    }
+    table.records-table th, table.records-table td {
+      padding: 10px 12px;
+    }
+    /* Modal mobile styling */
+    .modal-overlay {
+      padding: 10px;
+      align-items: flex-end;
+    }
+    .modal {
+      border-radius: 16px 16px 12px 12px;
+      max-height: 90vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .modal-body {
+      overflow-y: auto;
+      padding: 16px 14px;
+    }
+    .wizard-progress {
+      gap: 4px;
+    }
+    .wizard-step-pill {
+      font-size: 10px;
+      padding: 6px 2px;
+      margin: 0;
+    }
+    .wizard-preview-box {
+      max-height: 180px;
+      padding: 12px;
+      font-size: 12.5px;
+    }
+    .wizard-action-btn {
+      min-height: 48px;
+      font-size: 14px;
+    }
+    /* Toast mobile */
+    .toast {
+      left: 12px;
+      right: 12px;
+      bottom: 16px;
+      border-radius: 8px;
+      justify-content: center;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .preview-head > div {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  footer {
+    text-align: center;
+    color: var(--muted);
+    font-size: 12px;
+    margin-top: 28px;
+    font-family: var(--mono);
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="mark">SC</div>
+    <div>
+      <h1>HR Outreach Generator</h1>
+      <p>Fill placeholders once → get ready-to-send Initial + Follow-up emails</p>
+    </div>
+  </header>
+
+  <div class="tabs">
+    <button class="tab active" data-tab="initial">Initial Email</button>
+    <button class="tab" data-tab="followup">Follow-up Email</button>
+    <button class="tab" data-tab="records">Outreach Logs</button>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <h2>Placeholders</h2>
+
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+        <label style="margin: 0;">Recipient Email</label>
+        <button type="button" class="action-btn" id="pasteEmailBtn" onclick="pasteEmailFromClipboard()" style="font-size: 11px; padding: 4px 10px; color: var(--teal); border-color: var(--teal-dim); display: inline-flex; align-items: center; gap: 4px; background: #0d2534;" title="Paste Email from Clipboard">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
+            <rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect>
+          </svg>
+          Paste Email
+        </button>
+      </div>
+      <input id="email" placeholder="e.g. hr@zycus.com" oninput="handleEmailInput()" onpaste="handleEmailPasteEvent(event)">
+      <div class="hint" style="margin-bottom: 12px;">Type/paste to auto-extract company & send directly</div>
+
+      <label>Company Name *</label>
+      <input id="company" placeholder="e.g. Zycus" oninput="render()">
+
+      <label>Job Title *</label>
+      <input id="jobtitle" placeholder="e.g. .NET Developer" value=".NET Developer" oninput="render()">
+
+      <label>Hiring Manager / Team Name</label>
+      <input id="hrname" placeholder="e.g. Riya (leave blank if unknown)" oninput="render()">
+      <div class="hint">Blank → "Hiring Team" use hoga</div>
+
+      <label>Days Since Initial Email (for follow-up)</label>
+      <input id="days" type="number" value="4" min="1" oninput="render()">
+
+      <label>Phone No.</label>
+      <input id="phone" placeholder="e.g. +91 82001 23173" oninput="render()">
+
+      <label>Comment</label>
+      <input id="comment" placeholder="e.g. he is find 5 year exp" oninput="render()">
+
+      <label>Status</label>
+      <select id="status" onchange="render()">
+        <option value="Email send">Email send</option>
+        <option value="Not Shortlist">Not Shortlist</option>
+        <option value="Shortlisted">Shortlisted</option>
+        <option value="Applied">Applied</option>
+        <option value="Follow-up sent">Follow-up sent</option>
+        <option value="No response">No response</option>
+      </select>
+
+      <label>Gmail Status</label>
+      <select id="gmailStatus" onchange="render()">
+        <option value="Not send">Not send</option>
+        <option value="Email send">Email send</option>
+      </select>
+
+      <button class="send-btn disabled" id="sidebarWizardBtn" onclick="openCopyWizard()" style="width: 100%; margin-top: 20px; background: linear-gradient(135deg, var(--teal), var(--teal-dim)); color: var(--navy); border: none; font-weight: 700; box-shadow: 0 4px 12px rgba(45, 226, 196, 0.2);">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display: inline-block; vertical-align: middle; margin-right: 6px;">
+          <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+        </svg>
+        <span>⚡ Step-by-Step Copy Modal</span>
+      </button>
+
+      <button class="send-btn disabled btn-gmail" id="sidebarGmailBtn" onclick="sendViaGmail()" style="width: 100%; margin-top: 10px;">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style="display: inline-block; vertical-align: middle; margin-right: 6px;">
+          <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+        </svg>
+        <span>Send via Gmail</span>
+      </button>
+      
+      <button class="send-btn disabled" id="sidebarCopySheetBtn" onclick="copySheetInfo()" style="width: 100%; margin-top: 10px; background: #1b2f3f; color: var(--text); border-color: var(--border);">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: inline-block; vertical-align: middle; margin-right: 6px;">
+          <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+          <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+        </svg>
+        <span>Copy for Sheets</span>
+      </button>
+
+      <button class="send-btn disabled" id="sidebarSaveBtn" onclick="saveCurrentRecordFromForm()" style="width: 100%; margin-top: 10px; background: #0f2e2d; color: var(--teal); border-color: var(--teal-dim);">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: inline-block; vertical-align: middle; margin-right: 6px;">
+          <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path>
+          <polyline points="17 21 17 13 7 13 7 21"></polyline>
+          <polyline points="7 3 7 8 15 8"></polyline>
+        </svg>
+        <span>Save Record</span>
+      </button>
+    </div>
+
+    <div class="card">
+      <div class="preview-head">
+        <h2 id="previewTitle" style="margin:0;">Preview — Initial Email</h2>
+        <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+          <button class="send-btn disabled" id="headerWizardBtn" onclick="openCopyWizard()" style="background: linear-gradient(135deg, var(--teal), var(--teal-dim)); color: var(--navy); border: none; font-weight: 700;">⚡ Step Copy</button>
+          <button class="copy-btn" id="copyBtn" onclick="copyEmail()">Copy Body</button>
+          <button class="send-btn disabled btn-gmail" id="headerGmailBtn" onclick="sendViaGmail()">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" style="display: inline-block; vertical-align: middle; margin-right: 4px;">
+              <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+            </svg>
+            Send via Gmail
+          </button>
+          <button class="send-btn disabled" id="headerCopySheetBtn" onclick="copySheetInfo()" style="background: #1b2f3f; color: var(--text); border-color: var(--border);">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: inline-block; vertical-align: middle; margin-right: 4px;">
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+            </svg>
+            Copy Log
+          </button>
+        </div>
+      </div>
+
+      <div class="subject-line">
+        <span>Subject</span>
+        <span id="subjectOut"></span>
+        <button class="copy-sub-btn" id="copySubBtn" onclick="copySubject()">Copy</button>
+      </div>
+
+      <div class="body-preview" id="bodyOut"></div>
+    </div>
+  </div>
+
+  <!-- Outreach Logs Container -->
+  <div class="records-container">
+    <div class="card">
+      <div class="records-header">
+        <h2 style="margin: 0;">Outreach Database</h2>
+        <div class="records-actions">
+          <input type="text" class="records-search" id="recordsSearch" placeholder="Search by Company or Email..." oninput="currentPage = 1; renderRecordsTable()">
+          
+          <select class="records-search" id="filterStatus" onchange="currentPage = 1; renderRecordsTable()" style="width: 150px; cursor: pointer;">
+            <option value="">All Statuses</option>
+            <option value="Email send">Email send</option>
+            <option value="Not Shortlist">Not Shortlist</option>
+            <option value="Shortlisted">Shortlisted</option>
+            <option value="Applied">Applied</option>
+            <option value="Follow-up sent">Follow-up sent</option>
+            <option value="No response">No response</option>
+          </select>
+          
+          <select class="records-search" id="filterGmailStatus" onchange="currentPage = 1; renderRecordsTable()" style="width: 160px; cursor: pointer;">
+            <option value="">All Gmail Status</option>
+            <option value="Email send">Email send</option>
+            <option value="Not send">Not send</option>
+          </select>
+
+          <button class="copy-btn" onclick="openImportModal()">Import from Excel</button>
+          <button class="copy-btn" onclick="copyAllToExcel()" style="background: #1b2f3f; color: var(--text); border-color: var(--border);">Copy All for Excel</button>
+          <button class="copy-btn" onclick="clearAllRecords()" style="background: #ea4335; color: white;">Clear All</button>
+        </div>
+      </div>
+      
+      <div style="margin-top: 14px; font-size: 13px; color: var(--muted); display: flex; gap: 16px;" id="recordsStats"></div>
+      
+      <div class="table-wrap" style="margin-top: 18px;">
+        <table class="records-table">
+          <thead>
+            <tr>
+              <th style="width: 80px;" onclick="handleSort('sNo')">S.No <span id="sort-icon-sNo" style="font-size: 10px;"></span></th>
+              <th onclick="handleSort('company')">Company Name <span id="sort-icon-company" style="font-size: 10px;"></span></th>
+              <th onclick="handleSort('email')">Career/Apply Email <span id="sort-icon-email" style="font-size: 10px;"></span></th>
+              <th onclick="handleSort('phone')">Phone No. <span id="sort-icon-phone" style="font-size: 10px;"></span></th>
+              <th onclick="handleSort('comment')">Comment <span id="sort-icon-comment" style="font-size: 10px;"></span></th>
+              <th style="width: 150px;" onclick="handleSort('status')">Status <span id="sort-icon-status" style="font-size: 10px;"></span></th>
+              <th style="width: 150px;" onclick="handleSort('gmailStatus')">Gmail Status <span id="sort-icon-gmailStatus" style="font-size: 10px;"></span></th>
+              <th style="width: 140px; text-align: center; cursor: default;">Actions</th>
+            </tr>
+          </thead>
+          <tbody id="recordsTbody"></tbody>
+        </table>
+      </div>
+      <!-- Pagination Controls -->
+      <div class="pagination" id="recordsPagination"></div>
+    </div>
+  </div>
+
+  <!-- Import Modal -->
+  <div class="modal-overlay" id="importModal">
+    <div class="modal">
+      <div class="modal-header">
+        <h3>Import from Excel / Google Sheets</h3>
+        <button class="close-modal" onclick="closeImportModal()">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p style="margin-top: 0; font-size: 13px; color: var(--muted); line-height: 1.5;">
+          Copy your spreadsheet rows and paste them here. The columns should be tab-separated in this order:<br>
+          <code style="color: var(--teal); font-family: var(--mono); display: block; margin: 6px 0; background: #0a1520; padding: 6px 8px; border-radius: 4px; font-size: 11px;">
+            S.No &nbsp;&nbsp;&nbsp;&nbsp; Company Name &nbsp;&nbsp;&nbsp;&nbsp; Career/Apply Email &nbsp;&nbsp;&nbsp;&nbsp; Phone No. &nbsp;&nbsp;&nbsp;&nbsp; Comment &nbsp;&nbsp;&nbsp;&nbsp; Status &nbsp;&nbsp;&nbsp;&nbsp; Gmail Status
+          </code>
+          Any emails that already exist in your outreach logs will be automatically skipped to prevent duplicates.
+        </p>
+        <textarea class="import-textarea" id="importTextarea" placeholder="Paste tab-separated rows here...&#10;e.g.&#10;486	Moontechnolabs	mansi@moontechnolabs.com		he is find 5 year exp	Not Shortlist	&#10;487	seefattechnologies	hr.seefattechnologies@gmail.com			Email send	Email send"></textarea>
+      </div>
+      <div class="modal-footer">
+        <button class="btn-secondary" onclick="closeImportModal()">Cancel</button>
+        <button class="btn-primary" onclick="submitImport()">Import Data</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Step-by-Step Copy Modal -->
+  <div class="modal-overlay" id="quickCopyModal">
+    <div class="modal" style="max-width: 560px;">
+      <div class="modal-header">
+        <h3 id="wizardModalTitle">⚡ Step 1: Copy Recipient Email</h3>
+        <button class="close-modal" onclick="closeCopyWizard()">&times;</button>
+      </div>
+      <div class="modal-body">
+        <!-- Step Progress Indicators -->
+        <div class="wizard-progress">
+          <div class="wizard-step-pill active" id="wizStepPill1">1. Email</div>
+          <div class="wizard-step-pill" id="wizStepPill2">2. Subject</div>
+          <div class="wizard-step-pill" id="wizStepPill3">3. Body</div>
+          <div class="wizard-step-pill" id="wizStepPill4">4. Email</div>
+        </div>
+
+        <div class="wizard-preview-label" id="wizardPreviewLabel">Recipient Email Address</div>
+        <div class="wizard-preview-box" id="wizardPreviewContent"></div>
+
+        <button class="wizard-action-btn" id="wizardActionBtn" onclick="handleWizardAction()">
+          <span id="wizardActionText">Copy Email & Next ➔</span>
+        </button>
+      </div>
+      <div class="modal-footer" style="justify-content: space-between;">
+        <button class="btn-secondary" id="wizardPrevBtn" onclick="prevWizardStep()" style="display: none;">&larr; Back</button>
+        <button class="btn-secondary" onclick="closeCopyWizard()">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--teal);"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+    <span id="toastText">Message goes here</span>
+  </div>
+
+  <footer>Sagar P. Chavda &nbsp;·&nbsp; .NET Developer &nbsp;·&nbsp; sagarchavada80@gmail.com &nbsp;·&nbsp; +91 8200123173</footer>
+</div>
+
+<script>
+let activeTab = 'initial';
+let lastExtractedCompany = '';
+let records = [];
+let currentPage = 1;
+let pageSize = 20;
+let sortColumn = 'sNo';
+let sortDirection = 'asc';
+
+// Load records from localStorage on startup
+try {
+  const stored = localStorage.getItem('hr_outreach_records');
+  if (stored) {
+    records = JSON.parse(stored);
+  }
+} catch (e) {
+  console.error("Failed to load records from localStorage:", e);
+}
+
+// Tab toggles
+document.querySelectorAll('.tab').forEach(t => {
+  t.addEventListener('click', () => {
+    document.querySelectorAll('.tab').forEach(x => x.classList.remove('active'));
+    t.classList.add('active');
+    activeTab = t.dataset.tab;
+    
+    const grid = document.querySelector('.grid');
+    const recordsContainer = document.querySelector('.records-container');
+    
+    if (activeTab === 'records') {
+      grid.style.display = 'none';
+      recordsContainer.classList.add('active');
+      renderRecordsTable();
+    } else {
+      grid.style.display = 'grid';
+      recordsContainer.classList.remove('active');
+      document.getElementById('previewTitle').textContent =
+        activeTab === 'initial' ? 'Preview — Initial Email' : 'Preview — Follow-up Email';
+      render();
+    }
+  });
+});
+
+function handleEmailInput() {
+  const email = document.getElementById('email').value.trim();
+  const companyInput = document.getElementById('company');
+  const currentCompany = companyInput.value.trim();
+  
+  const sidebarGmailBtn = document.getElementById('sidebarGmailBtn');
+  const headerGmailBtn = document.getElementById('headerGmailBtn');
+  const sidebarCopySheetBtn = document.getElementById('sidebarCopySheetBtn');
+  const headerCopySheetBtn = document.getElementById('headerCopySheetBtn');
+  const sidebarSaveBtn = document.getElementById('sidebarSaveBtn');
+  const sidebarWizardBtn = document.getElementById('sidebarWizardBtn');
+  const headerWizardBtn = document.getElementById('headerWizardBtn');
+  
+  if (email) {
+    const extracted = extractCompanyName(email);
+    if (extracted) {
+      if (currentCompany === '' || currentCompany === lastExtractedCompany || currentCompany === '[Company Name]' || currentCompany === 'Gmail' || currentCompany === 'Outlook') {
+        companyInput.value = extracted;
+        lastExtractedCompany = extracted;
+      }
+    } else {
+      if (currentCompany === lastExtractedCompany || currentCompany === 'Gmail' || currentCompany === 'Outlook') {
+        companyInput.value = '';
+        lastExtractedCompany = '';
+      }
+    }
+    sidebarGmailBtn.classList.remove('disabled');
+    headerGmailBtn.classList.remove('disabled');
+    sidebarCopySheetBtn.classList.remove('disabled');
+    headerCopySheetBtn.classList.remove('disabled');
+    sidebarSaveBtn.classList.remove('disabled');
+    if (sidebarWizardBtn) sidebarWizardBtn.classList.remove('disabled');
+    if (headerWizardBtn) headerWizardBtn.classList.remove('disabled');
+  } else {
+    sidebarGmailBtn.classList.add('disabled');
+    headerGmailBtn.classList.add('disabled');
+    sidebarCopySheetBtn.classList.add('disabled');
+    headerCopySheetBtn.classList.add('disabled');
+    sidebarSaveBtn.classList.add('disabled');
+    if (sidebarWizardBtn) sidebarWizardBtn.classList.add('disabled');
+    if (headerWizardBtn) headerWizardBtn.classList.add('disabled');
+  }
+  render();
+}
+
+async function pasteEmailFromClipboard() {
+  try {
+    if (!navigator.clipboard || !navigator.clipboard.readText) {
+      showToast("Clipboard access not supported. Use Ctrl+V.");
+      return;
+    }
+    const text = await navigator.clipboard.readText();
+    if (!text || !text.trim()) {
+      showToast("Clipboard is empty!");
+      return;
+    }
+    const emailMatch = text.trim().match(/[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/);
+    if (emailMatch) {
+      const email = emailMatch[0];
+      document.getElementById('email').value = email;
+      handleEmailInput();
+      showToast(`Pasted Email: ${email}`);
+    } else {
+      showToast("Only valid Email can be pasted! Clipboard content is not an email.");
+    }
+  } catch (err) {
+    console.error("Clipboard paste error:", err);
+    showToast("Clipboard access denied. Please use Ctrl+V.");
+  }
+}
+
+function handleEmailPasteEvent(e) {
+  const clipboardData = e.clipboardData || window.clipboardData;
+  if (!clipboardData) return;
+  const text = clipboardData.getData('text');
+  if (!text) return;
+  
+  const emailMatch = text.trim().match(/[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/);
+  if (emailMatch) {
+    e.preventDefault();
+    const email = emailMatch[0];
+    document.getElementById('email').value = email;
+    handleEmailInput();
+    showToast(`Pasted Email: ${email}`);
+  } else {
+    e.preventDefault();
+    showToast("Only valid Email can be pasted! Other text is not allowed.");
+  }
+}
+
+function extractCompanyName(email) {
+  if (!email) return '';
+  const parts = email.split('@');
+  if (parts.length < 2) return '';
+  
+  const localPart = parts[0];
+  const domain = parts[1];
+  const domainParts = domain.split('.');
+  if (domainParts.length < 1) return '';
+  
+  const publicWebmails = [
+    'gmail', 'outlook', 'hotmail', 'yahoo', 'ymail', 'rediffmail', 
+    'icloud', 'protonmail', 'zoho', 'aol', 'live', 'gmx', 'mail', 
+    'fastmail', 'proton', 'msn', 'inbox'
+  ];
+  const ignorePrefixes = [
+    'careers', 'jobs', 'recruitment', 'hr', 'hiring', 'talent', 
+    'people', 'workat', 'employment', 'apply', 'contact', 'info',
+    'admin', 'support', 'team', 'office'
+  ];
+  
+  let name = domainParts[0];
+  if (domainParts.length > 2 && ignorePrefixes.includes(name.toLowerCase())) {
+    name = domainParts[1];
+  }
+  
+  // Skip public webmails like gmail.com, outlook.com, yahoo.com
+  if (publicWebmails.includes(name.toLowerCase())) {
+    // Try to extract potential company name from handle/username if present (e.g. hr.zycus, careers_infosys)
+    const localTokens = localPart.split(/[._-]/).filter(token => {
+      const lower = token.toLowerCase();
+      return !ignorePrefixes.includes(lower) && !publicWebmails.includes(lower) && !/^\d+$/.test(lower) && lower.length > 2;
+    });
+    
+    if (localTokens.length > 0) {
+      return localTokens
+        .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+        .join(' ');
+    }
+    return '';
+  }
+  
+  return name
+    .split(/[-_]/)
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(' ');
+}
+
+// LocalStorage helpers
+function saveToLocalStorage() {
+  try {
+    localStorage.setItem('hr_outreach_records', JSON.stringify(records));
+  } catch (e) {
+    console.error("Failed to save records to localStorage:", e);
+  }
+}
+
+// Save/Update a record in database
+function saveRecord(company, email, phone, comment, status, gmailStatus) {
+  if (!email) return;
+  
+  company = company.trim();
+  email = email.trim();
+  phone = phone.trim();
+  comment = comment.trim();
+  status = status.trim() || 'Email send';
+  gmailStatus = gmailStatus.trim() || 'Not send';
+  
+  const existingIndex = records.findIndex(r => r.email.toLowerCase() === email.toLowerCase());
+  
+  if (existingIndex !== -1) {
+    // Preserves existing S.No
+    records[existingIndex] = {
+      ...records[existingIndex],
+      company: company || records[existingIndex].company,
+      phone: phone || records[existingIndex].phone,
+      comment: comment || records[existingIndex].comment,
+      status: status,
+      gmailStatus: gmailStatus
+    };
+    showToast(`Updated record for ${company || email}`);
+  } else {
+    // Generate next S.No
+    let nextSNo = 1;
+    if (records.length > 0) {
+      const maxSNo = Math.max(...records.map(r => parseInt(r.sNo) || 0));
+      nextSNo = maxSNo + 1;
+    }
+    
+    records.push({
+      sNo: nextSNo,
+      company: company || '[Company Name]',
+      email: email,
+      phone: phone,
+      comment: comment,
+      status: status,
+      gmailStatus: gmailStatus
+    });
+    showToast(`Saved new record for ${company || email}`);
+  }
+  saveToLocalStorage();
+}
+
+function saveCurrentRecordFromForm() {
+  const email = document.getElementById('email').value.trim();
+  if (!email) {
+    showToast("Email is required to save a record.");
+    return;
+  }
+  const company = document.getElementById('company').value.trim() || '[Company Name]';
+  const phone = document.getElementById('phone').value.trim();
+  const comment = document.getElementById('comment').value.trim();
+  const status = document.getElementById('status').value;
+  const gmailStatus = document.getElementById('gmailStatus').value;
+  
+  saveRecord(company, email, phone, comment, status, gmailStatus);
+}
+
+function sendViaGmail() {
+  const email = document.getElementById('email').value.trim();
+  if (!email) return;
+  
+  // Set Gmail status to sent
+  document.getElementById('gmailStatus').value = "Email send";
+  
+  // Auto save record
+  saveCurrentRecordFromForm();
+  
+  const { subject, body } = activeTab === 'initial' ? buildInitial() : buildFollowup();
+  const formattedBody = body.replace(/\r?\n/g, '\r\n');
+  const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(email)}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(formattedBody)}`;
+  window.open(gmailUrl, '_blank');
+}
+
+function copySheetInfo() {
+  const email = document.getElementById('email').value.trim();
+  if (!email) return;
+  
+  const company = document.getElementById('company').value.trim() || '[Company Name]';
+  const phone = document.getElementById('phone').value.trim();
+  const comment = document.getElementById('comment').value.trim();
+  const status = document.getElementById('status').value;
+  const gmailStatus = document.getElementById('gmailStatus').value;
+  
+  // Find current S.No to write to clipboard
+  const existingRecord = records.find(r => r.email.toLowerCase() === email.toLowerCase());
+  const sNo = existingRecord ? existingRecord.sNo : (records.length > 0 ? Math.max(...records.map(r => parseInt(r.sNo) || 0)) + 1 : 1);
+  
+  const textToCopy = `${sNo}\t${company}\t${email}\t${phone}\t${comment}\t${status}\t${gmailStatus}`;
+  
+  navigator.clipboard.writeText(textToCopy).then(() => {
+    showToast("Copied single row for Excel!");
+    
+    // Auto save record
+    saveRecord(company, email, phone, comment, status, gmailStatus);
+    
+    const sidebarBtn = document.getElementById('sidebarCopySheetBtn');
+    const headerBtn = document.getElementById('headerCopySheetBtn');
+    
+    const prevSidebarText = sidebarBtn.innerHTML;
+    const prevHeaderText = headerBtn.innerHTML;
+    
+    sidebarBtn.innerHTML = 'Copied ✓';
+    headerBtn.innerHTML = 'Copied ✓';
+    
+    sidebarBtn.classList.add('copied');
+    headerBtn.classList.add('copied');
+    
+    setTimeout(() => {
+      sidebarBtn.innerHTML = prevSidebarText;
+      headerBtn.innerHTML = prevHeaderText;
+      sidebarBtn.classList.remove('copied');
+      headerBtn.classList.remove('copied');
+    }, 1800);
+  });
+}
+
+function val(id, fallback) {
+  const v = document.getElementById(id).value.trim();
+  return v.length ? v : fallback;
+}
+
+function buildInitial() {
+  const rawCompany = document.getElementById('company').value.trim();
+  const jobtitle = val('jobtitle', '.NET Developer');
+  const hr = val('hrname', 'Hiring Team');
+
+  const hasCompany = rawCompany.length > 0 && rawCompany !== '[Company Name]';
+  const subject = hasCompany
+    ? `${jobtitle} (4 Yrs Exp) — Immediate Joiner | Application for ${rawCompany}`
+    : `${jobtitle} (4 Yrs Exp) — Immediate Joiner | Job Application`;
+
+  const companySnippet = hasCompany ? ` at ${rawCompany}` : '';
+
+  const body =
+`Hi ${hr},
+
+I'm Sagar Chavda, a .NET Developer with 4 years of experience building scalable backend systems using ASP.NET Core, Web API, SQL Server, and PostgreSQL. I came across the ${jobtitle} opening${companySnippet} and wanted to share my profile — I'm an immediate joiner.
+
+A quick snapshot of my experience:
+- Designed and developed REST APIs and role-based access control (RBAC) systems for multi-tenant applications
+- Worked extensively with Clean Architecture, CQRS, and Dapper/EF Core for high-performance data access
+- Built and maintained production systems at Casepoint Pvt. Ltd. (eDiscovery platform), along with prior experience at Metizsoft Solutions and Shine Infosoft
+
+I'd love the opportunity to discuss how I can contribute to your team. My resume is attached below for your review, and I'm available for a call at your convenience.
+
+Portfolio: https://chavadasagar.github.io/mysite/portfolio
+
+Thanks & Regards,
+Sagar P. Chavda
+.NET Developer
+📞 +91 8200123173
+📧 sagarchavada80@gmail.com
+🔗 LinkedIn: https://linkedin.com/in/sagarchavada
+
+(Resume attached as PDF)`;
+
+  return { subject, body };
+}
+
+function buildFollowup() {
+  const rawCompany = document.getElementById('company').value.trim();
+  const jobtitle = val('jobtitle', '.NET Developer');
+  const hr = val('hrname', 'Hiring Team');
+  const days = val('days', '4');
+
+  const hasCompany = rawCompany.length > 0 && rawCompany !== '[Company Name]';
+  const subject = hasCompany
+    ? `Following up — ${jobtitle} Application at ${rawCompany}`
+    : `Following up — ${jobtitle} Application`;
+
+  const companySnippet = hasCompany ? ` at ${rawCompany}` : '';
+
+  const body =
+`Hi ${hr},
+
+I hope you're doing well. I wanted to briefly follow up on my application for the ${jobtitle} role${companySnippet}, which I sent about ${days} days ago.
+
+I understand hiring timelines can be busy, so just wanted to re-share my profile in case it got buried:
+
+- 4 years of experience in ASP.NET Core, Web API, SQL Server, and PostgreSQL
+- Hands-on with Clean Architecture, CQRS, RBAC systems, and multi-tenant applications
+- Immediate joiner, available to start right away
+
+I'm still very interested in this opportunity and would welcome a chance to speak further. Happy to resend my resume if needed.
+
+Portfolio: https://chavadasagar.github.io/mysite/portfolio
+
+Thanks & Regards,
+Sagar P. Chavda
+.NET Developer
+📞 +91 8200123173
+📧 sagarchavada80@gmail.com
+🔗 LinkedIn: https://linkedin.com/in/sagarchavada`;
+
+  return { subject, body };
+}
+
+function render() {
+  const { subject, body } = activeTab === 'initial' ? buildInitial() : buildFollowup();
+  document.getElementById('subjectOut').textContent = subject;
+  document.getElementById('bodyOut').textContent = body;
+  
+  const copyBtn = document.getElementById('copyBtn');
+  copyBtn.classList.remove('copied');
+  copyBtn.textContent = 'Copy Body';
+
+  const copySubBtn = document.getElementById('copySubBtn');
+  if (copySubBtn) {
+    copySubBtn.classList.remove('copied');
+    copySubBtn.textContent = 'Copy';
+  }
+
+  const email = document.getElementById('email').value.trim();
+  const sidebarGmailBtn = document.getElementById('sidebarGmailBtn');
+  const headerGmailBtn = document.getElementById('headerGmailBtn');
+  const sidebarCopySheetBtn = document.getElementById('sidebarCopySheetBtn');
+  const headerCopySheetBtn = document.getElementById('headerCopySheetBtn');
+  const sidebarSaveBtn = document.getElementById('sidebarSaveBtn');
+  const sidebarWizardBtn = document.getElementById('sidebarWizardBtn');
+  const headerWizardBtn = document.getElementById('headerWizardBtn');
+  
+  if (email) {
+    sidebarGmailBtn.classList.remove('disabled');
+    headerGmailBtn.classList.remove('disabled');
+    sidebarCopySheetBtn.classList.remove('disabled');
+    headerCopySheetBtn.classList.remove('disabled');
+    sidebarSaveBtn.classList.remove('disabled');
+    if (sidebarWizardBtn) sidebarWizardBtn.classList.remove('disabled');
+    if (headerWizardBtn) headerWizardBtn.classList.remove('disabled');
+  } else {
+    sidebarGmailBtn.classList.add('disabled');
+    headerGmailBtn.classList.add('disabled');
+    sidebarCopySheetBtn.classList.add('disabled');
+    headerCopySheetBtn.classList.add('disabled');
+    sidebarSaveBtn.classList.add('disabled');
+    if (sidebarWizardBtn) sidebarWizardBtn.classList.add('disabled');
+    if (headerWizardBtn) headerWizardBtn.classList.add('disabled');
+  }
+}
+
+function copyEmail() {
+  const body = document.getElementById('bodyOut').textContent;
+  navigator.clipboard.writeText(body).then(() => {
+    const btn = document.getElementById('copyBtn');
+    btn.textContent = 'Copied ✓';
+    btn.classList.add('copied');
+    setTimeout(() => { btn.textContent = 'Copy Body'; btn.classList.remove('copied'); }, 1800);
+  });
+}
+
+function copySubject() {
+  const subject = document.getElementById('subjectOut').textContent;
+  navigator.clipboard.writeText(subject).then(() => {
+    const btn = document.getElementById('copySubBtn');
+    btn.textContent = 'Copied ✓';
+    btn.classList.add('copied');
+    setTimeout(() => { btn.textContent = 'Copy'; btn.classList.remove('copied'); }, 1800);
+  });
+}
+
+// Toast notification helper
+let toastTimeout;
+function showToast(message) {
+  const toast = document.getElementById('toast');
+  const toastText = document.getElementById('toastText');
+  toastText.textContent = message;
+  toast.classList.add('active');
+  
+  clearTimeout(toastTimeout);
+  toastTimeout = setTimeout(() => {
+    toast.classList.remove('active');
+  }, 3000);
+}
+
+// Outreach Database functions
+function renderRecordsTable() {
+  const tbody = document.getElementById('recordsTbody');
+  const searchQuery = document.getElementById('recordsSearch').value.toLowerCase().trim();
+  const statusFilter = document.getElementById('filterStatus').value;
+  const gmailFilter = document.getElementById('filterGmailStatus').value;
+  tbody.innerHTML = '';
+  
+  // Make sure current active sort is applied
+  applyActiveSort();
+  
+  const filtered = records.filter(r => {
+    const matchesSearch = 
+      r.company.toLowerCase().includes(searchQuery) ||
+      r.email.toLowerCase().includes(searchQuery) ||
+      (r.phone && r.phone.toLowerCase().includes(searchQuery)) ||
+      (r.comment && r.comment.toLowerCase().includes(searchQuery)) ||
+      (r.status && r.status.toLowerCase().includes(searchQuery));
+      
+    const matchesStatus = !statusFilter || r.status === statusFilter;
+    const matchesGmail = !gmailFilter || r.gmailStatus === gmailFilter;
+    
+    return matchesSearch && matchesStatus && matchesGmail;
+  });
+  
+  const total = records.length;
+  const sent = records.filter(r => r.gmailStatus === 'Email send' || r.status === 'Email send').length;
+  document.getElementById('recordsStats').innerHTML = `
+    <span><strong>Total Records:</strong> ${total}</span>
+    <span><strong>Emails Sent:</strong> ${sent}</span>
+    <span><strong>Filtered:</strong> ${filtered.length}</span>
+  `;
+  
+  if (filtered.length === 0) {
+    tbody.innerHTML = `
+      <tr>
+        <td colspan="8" style="text-align: center; color: var(--muted); padding: 30px; font-family: var(--mono);">
+          No records found. Click "Import from Excel" or save a record to add.
+        </td>
+      </tr>
+    `;
+    document.getElementById('recordsPagination').innerHTML = '';
+    return;
+  }
+  
+  // Calculate total pages
+  const totalPages = Math.ceil(filtered.length / pageSize);
+  if (currentPage > totalPages) currentPage = totalPages;
+  if (currentPage < 1) currentPage = 1;
+  
+  // Slice records for current page
+  const startIdx = (currentPage - 1) * pageSize;
+  const endIdx = startIdx + pageSize;
+  const pageRecords = filtered.slice(startIdx, endIdx);
+  
+  pageRecords.forEach(r => {
+    const tr = document.createElement('tr');
+    tr.onclick = (e) => {
+      if (e.target.closest('.action-btn') || e.target.closest('a')) return;
+      loadRecordIntoForm(r);
+    };
+    
+    let statusClass = 'status-other';
+    const st = r.status ? r.status.toLowerCase() : '';
+    if (st.includes('send') || st.includes('applied') || st.includes('shortlisted')) statusClass = 'status-send';
+    else if (st.includes('not shortlist')) statusClass = 'status-not-shortlist';
+    
+    let gmailClass = r.gmailStatus === 'Email send' ? 'status-send' : 'status-other';
+    
+    tr.innerHTML = `
+      <td style="font-family: var(--mono); font-weight: bold; color: var(--teal);">${r.sNo}</td>
+      <td style="font-weight: 500;" title="${r.company}">${r.company}</td>
+      <td title="${r.email}"><a href="mailto:${r.email}" style="color: var(--teal); text-decoration: none;" onclick="event.stopPropagation();">${r.email}</a></td>
+      <td title="${r.phone || ''}">${r.phone || '<span style="color: #4a6272;">—</span>'}</td>
+      <td title="${r.comment || ''}" style="max-width: 200px;">${r.comment || '<span style="color: #4a6272;">—</span>'}</td>
+      <td><span class="badge ${statusClass}">${r.status}</span></td>
+      <td><span class="badge ${gmailClass}">${r.gmailStatus}</span></td>
+      <td style="text-align: center;">
+        <button class="action-btn" title="Load into Generator" onclick="event.stopPropagation(); loadRecordByEmail('${r.email}')">
+          Load
+        </button>
+        <button class="action-btn delete" title="Delete record" onclick="event.stopPropagation(); deleteRecord('${r.email}')">
+          Delete
+        </button>
+      </td>
+    `;
+    tbody.appendChild(tr);
+  });
+  
+  // Render pagination controls
+  renderPaginationControls(filtered.length);
+  // Update sorting indicators
+  updateSortIcons();
+}
+
+function applyActiveSort() {
+  records.sort((a, b) => {
+    let valA = a[sortColumn];
+    let valB = b[sortColumn];
+    
+    if (valA === undefined || valA === null) valA = '';
+    if (valB === undefined || valB === null) valB = '';
+    
+    if (sortColumn === 'sNo') {
+      const numA = parseInt(valA) || 0;
+      const numB = parseInt(valB) || 0;
+      return sortDirection === 'asc' ? numA - numB : numB - numA;
+    }
+    
+    valA = valA.toString().toLowerCase();
+    valB = valB.toString().toLowerCase();
+    
+    if (valA < valB) return sortDirection === 'asc' ? -1 : 1;
+    if (valA > valB) return sortDirection === 'asc' ? 1 : -1;
+    return 0;
+  });
+}
+
+function handleSort(column) {
+  if (sortColumn === column) {
+    sortDirection = sortDirection === 'asc' ? 'desc' : 'asc';
+  } else {
+    sortColumn = column;
+    sortDirection = 'asc';
+  }
+  applyActiveSort();
+  currentPage = 1; // Reset to page 1 on sort change
+  renderRecordsTable();
+}
+
+function updateSortIcons() {
+  const columns = ['sNo', 'company', 'email', 'phone', 'comment', 'status', 'gmailStatus'];
+  columns.forEach(col => {
+    const el = document.getElementById(`sort-icon-${col}`);
+    if (el) {
+      if (sortColumn === col) {
+        el.innerHTML = sortDirection === 'asc' ? ' &uarr;' : ' &darr;';
+        el.style.opacity = '1';
+        el.style.color = 'var(--teal)';
+      } else {
+        el.innerHTML = ' &updownarrow;';
+        el.style.opacity = '0.25';
+        el.style.color = 'var(--muted)';
+      }
+    }
+  });
+}
+
+function renderPaginationControls(totalItems) {
+  const container = document.getElementById('recordsPagination');
+  container.innerHTML = '';
+  
+  if (totalItems === 0) {
+    return;
+  }
+  
+  const totalPages = Math.ceil(totalItems / pageSize);
+  if (currentPage > totalPages) currentPage = totalPages;
+  if (currentPage < 1) currentPage = 1;
+  
+  // Info text
+  const startItem = (currentPage - 1) * pageSize + 1;
+  const endItem = Math.min(currentPage * pageSize, totalItems);
+  
+  const infoDiv = document.createElement('div');
+  infoDiv.className = 'pagination-info';
+  infoDiv.innerHTML = `Showing <strong>${startItem}</strong> to <strong>${endItem}</strong> of <strong>${totalItems}</strong> records`;
+  container.appendChild(infoDiv);
+  
+  // Page size dropdown
+  const sizeSelectorWrap = document.createElement('div');
+  sizeSelectorWrap.style.display = 'flex';
+  sizeSelectorWrap.style.alignItems = 'center';
+  sizeSelectorWrap.style.gap = '8px';
+  sizeSelectorWrap.className = 'pagination-info';
+  sizeSelectorWrap.innerHTML = `
+    <span>Show</span>
+    <select class="page-size-selector" id="pageSizeSelect" onchange="changePageSize(this.value)">
+      <option value="10" ${pageSize === 10 ? 'selected' : ''}>10</option>
+      <option value="20" ${pageSize === 20 ? 'selected' : ''}>20</option>
+      <option value="50" ${pageSize === 50 ? 'selected' : ''}>50</option>
+      <option value="100" ${pageSize === 100 ? 'selected' : ''}>100</option>
+    </select>
+    <span>rows</span>
+  `;
+  container.appendChild(sizeSelectorWrap);
+  
+  // Controls
+  const controlsDiv = document.createElement('div');
+  controlsDiv.className = 'pagination-controls';
+  
+  // First & Prev buttons
+  const firstBtn = document.createElement('button');
+  firstBtn.className = `page-btn ${currentPage === 1 ? 'disabled' : ''}`;
+  firstBtn.innerHTML = '&laquo;';
+  firstBtn.title = 'First Page';
+  firstBtn.onclick = () => { currentPage = 1; renderRecordsTable(); };
+  controlsDiv.appendChild(firstBtn);
+  
+  const prevBtn = document.createElement('button');
+  prevBtn.className = `page-btn ${currentPage === 1 ? 'disabled' : ''}`;
+  prevBtn.innerHTML = '&lsaquo;';
+  prevBtn.title = 'Previous Page';
+  prevBtn.onclick = () => { if (currentPage > 1) { currentPage--; renderRecordsTable(); } };
+  controlsDiv.appendChild(prevBtn);
+  
+  // Page numbers
+  let startPage = Math.max(1, currentPage - 2);
+  let endPage = Math.min(totalPages, currentPage + 2);
+  
+  if (startPage > 1) {
+    const pBtn = document.createElement('button');
+    pBtn.className = 'page-btn';
+    pBtn.textContent = '1';
+    pBtn.onclick = () => { currentPage = 1; renderRecordsTable(); };
+    controlsDiv.appendChild(pBtn);
+    
+    if (startPage > 2) {
+      const ellipsis = document.createElement('span');
+      ellipsis.textContent = '...';
+      ellipsis.style.color = 'var(--muted)';
+      ellipsis.style.padding = '0 4px';
+      controlsDiv.appendChild(ellipsis);
+    }
+  }
+  
+  for (let p = startPage; p <= endPage; p++) {
+    const pBtn = document.createElement('button');
+    pBtn.className = `page-btn ${currentPage === p ? 'active' : ''}`;
+    pBtn.textContent = p;
+    pBtn.onclick = () => { currentPage = p; renderRecordsTable(); };
+    controlsDiv.appendChild(pBtn);
+  }
+  
+  if (endPage < totalPages) {
+    if (endPage < totalPages - 1) {
+      const ellipsis = document.createElement('span');
+      ellipsis.textContent = '...';
+      ellipsis.style.color = 'var(--muted)';
+      ellipsis.style.padding = '0 4px';
+      controlsDiv.appendChild(ellipsis);
+    }
+    
+    const pBtn = document.createElement('button');
+    pBtn.className = 'page-btn';
+    pBtn.textContent = totalPages;
+    pBtn.onclick = () => { currentPage = totalPages; renderRecordsTable(); };
+    controlsDiv.appendChild(pBtn);
+  }
+  
+  // Next & Last buttons
+  const nextBtn = document.createElement('button');
+  nextBtn.className = `page-btn ${currentPage === totalPages ? 'disabled' : ''}`;
+  nextBtn.innerHTML = '&rsaquo;';
+  nextBtn.title = 'Next Page';
+  nextBtn.onclick = () => { if (currentPage < totalPages) { currentPage++; renderRecordsTable(); } };
+  controlsDiv.appendChild(nextBtn);
+  
+  const lastBtn = document.createElement('button');
+  lastBtn.className = `page-btn ${currentPage === totalPages ? 'disabled' : ''}`;
+  lastBtn.innerHTML = '&raquo;';
+  lastBtn.title = 'Last Page';
+  lastBtn.onclick = () => { currentPage = totalPages; renderRecordsTable(); };
+  controlsDiv.appendChild(lastBtn);
+  
+  container.appendChild(controlsDiv);
+}
+
+function changePageSize(size) {
+  pageSize = parseInt(size) || 20;
+  currentPage = 1;
+  renderRecordsTable();
+}
+
+function loadRecordByEmail(email) {
+  const r = records.find(rec => rec.email.toLowerCase() === email.toLowerCase());
+  if (r) {
+    loadRecordIntoForm(r);
+  }
+}
+
+function loadRecordIntoForm(r) {
+  document.getElementById('email').value = r.email;
+  document.getElementById('company').value = r.company === '[Company Name]' ? '' : r.company;
+  document.getElementById('phone').value = r.phone || '';
+  document.getElementById('comment').value = r.comment || '';
+  document.getElementById('status').value = r.status || 'Email send';
+  document.getElementById('gmailStatus').value = r.gmailStatus || 'Not send';
+  
+  handleEmailInput();
+  
+  document.querySelectorAll('.tab').forEach(x => x.classList.remove('active'));
+  const initialTabBtn = document.querySelector('.tab[data-tab="initial"]');
+  initialTabBtn.classList.add('active');
+  activeTab = 'initial';
+  
+  const grid = document.querySelector('.grid');
+  const recordsContainer = document.querySelector('.records-container');
+  grid.style.display = 'grid';
+  recordsContainer.classList.remove('active');
+  document.getElementById('previewTitle').textContent = 'Preview — Initial Email';
+  
+  render();
+  showToast(`Loaded ${r.company} into generator!`);
+}
+
+function deleteRecord(email) {
+  if (confirm("Are you sure you want to delete this record?")) {
+    records = records.filter(r => r.email.toLowerCase() !== email.toLowerCase());
+    saveToLocalStorage();
+    renderRecordsTable();
+    showToast("Record deleted.");
+  }
+}
+
+function clearAllRecords() {
+  if (confirm("WARNING: Are you sure you want to delete ALL outreach records? This cannot be undone.")) {
+    records = [];
+    saveToLocalStorage();
+    renderRecordsTable();
+    showToast("All records cleared.");
+  }
+}
+
+function copyAllToExcel() {
+  if (records.length === 0) {
+    showToast("No records to copy!");
+    return;
+  }
+  
+  const lines = records.map(r => 
+    `${r.sNo}\t${r.company}\t${r.email}\t${r.phone || ''}\t${r.comment || ''}\t${r.status || ''}\t${r.gmailStatus || ''}`
+  );
+  
+  const textToCopy = lines.join('\n');
+  
+  navigator.clipboard.writeText(textToCopy).then(() => {
+    showToast("All records copied for Excel!");
+  }).catch(err => {
+    console.error("Failed to copy records: ", err);
+    showToast("Error: Failed to copy to clipboard.");
+  });
+}
+
+function openImportModal() {
+  document.getElementById('importTextarea').value = '';
+  document.getElementById('importModal').classList.add('active');
+}
+
+document.getElementById('importModal').addEventListener('click', (e) => {
+  if (e.target === document.getElementById('importModal')) {
+    closeImportModal();
+  }
+});
+
+document.getElementById('quickCopyModal').addEventListener('click', (e) => {
+  if (e.target === document.getElementById('quickCopyModal')) {
+    closeCopyWizard();
+  }
+});
+
+// Step-by-step Copy Wizard Logic
+let currentWizardStep = 1;
+
+function openCopyWizard() {
+  const email = document.getElementById('email').value.trim();
+  if (!email) {
+    showToast("Please enter/paste a Recipient Email first!");
+    return;
+  }
+  
+  renderWizardStep(1);
+  document.getElementById('quickCopyModal').classList.add('active');
+}
+
+function closeCopyWizard() {
+  document.getElementById('quickCopyModal').classList.remove('active');
+}
+
+function renderWizardStep(step) {
+  currentWizardStep = step;
+  const email = document.getElementById('email').value.trim();
+  const { subject, body } = activeTab === 'initial' ? buildInitial() : buildFollowup();
+  
+  // Update step pills
+  for (let i = 1; i <= 4; i++) {
+    const pill = document.getElementById(`wizStepPill${i}`);
+    if (pill) {
+      pill.classList.remove('active', 'completed');
+      if (i < step) {
+        pill.classList.add('completed');
+      } else if (i === step) {
+        pill.classList.add('active');
+      }
+    }
+  }
+  
+  // Update back button
+  const prevBtn = document.getElementById('wizardPrevBtn');
+  if (prevBtn) {
+    prevBtn.style.display = step > 1 ? 'inline-block' : 'none';
+  }
+  
+  const title = document.getElementById('wizardModalTitle');
+  const label = document.getElementById('wizardPreviewLabel');
+  const content = document.getElementById('wizardPreviewContent');
+  const actionText = document.getElementById('wizardActionText');
+  
+  if (step === 1) {
+    title.textContent = '⚡ Step 1: Copy Recipient Email';
+    label.textContent = 'Recipient Email Address';
+    content.textContent = email;
+    actionText.textContent = 'Copy Email & Next ➔';
+  } else if (step === 2) {
+    title.textContent = '⚡ Step 2: Copy Subject Line';
+    label.textContent = 'Email Subject';
+    content.textContent = subject;
+    actionText.textContent = 'Copy Subject & Next ➔';
+  } else if (step === 3) {
+    title.textContent = '⚡ Step 3: Copy Email Body';
+    label.textContent = 'Email Body Content';
+    content.textContent = body;
+    actionText.textContent = 'Copy Body & Next ➔';
+  } else if (step === 4) {
+    title.textContent = '⚡ Step 4: Copy Recipient Email (Finish)';
+    label.textContent = 'Recipient Email Address';
+    content.textContent = email;
+    actionText.textContent = 'Copy Email & Finish ✓';
+  }
+}
+
+function handleWizardAction() {
+  const email = document.getElementById('email').value.trim();
+  const { subject, body } = activeTab === 'initial' ? buildInitial() : buildFollowup();
+  
+  if (currentWizardStep === 1) {
+    navigator.clipboard.writeText(email).then(() => {
+      showToast("1/4: Email copied! Moving to Subject...");
+      renderWizardStep(2);
+    });
+  } else if (currentWizardStep === 2) {
+    navigator.clipboard.writeText(subject).then(() => {
+      showToast("2/4: Subject copied! Moving to Body...");
+      renderWizardStep(3);
+    });
+  } else if (currentWizardStep === 3) {
+    navigator.clipboard.writeText(body).then(() => {
+      showToast("3/4: Body copied! Moving to final Email copy...");
+      renderWizardStep(4);
+    });
+  } else if (currentWizardStep === 4) {
+    navigator.clipboard.writeText(email).then(() => {
+      showToast("4/4: Email copied! Process completed ✓");
+      closeCopyWizard();
+    });
+  }
+}
+
+function prevWizardStep() {
+  if (currentWizardStep > 1) {
+    renderWizardStep(currentWizardStep - 1);
+  }
+}
+
+function closeImportModal() {
+  document.getElementById('importModal').classList.remove('active');
+}
+
+function submitImport() {
+  const text = document.getElementById('importTextarea').value;
+  importFromTSV(text);
+  closeImportModal();
+}
+
+function importFromTSV(text) {
+  if (!text || !text.trim()) {
+    showToast("Error: Please paste some data to import.");
+    return;
+  }
+  
+  const lines = text.split(/\r?\n/);
+  let importedCount = 0;
+  let skippedCount = 0;
+  
+  let nextSNo = 1;
+  if (records.length > 0) {
+    nextSNo = Math.max(...records.map(r => parseInt(r.sNo) || 0)) + 1;
+  }
+  
+  for (let line of lines) {
+    if (!line.trim()) continue;
+    
+    // Try tab split first
+    let cols = line.split('\t');
+    if (cols.length < 3) {
+      // Try space split (2 or more spaces)
+      cols = line.split(/ {2,}/);
+    }
+    if (cols.length < 3) {
+      // Try comma split
+      cols = line.split(',');
+    }
+    
+    if (cols.length < 2) {
+      continue; 
+    }
+    
+    // Find the column containing '@'
+    const emailIdx = cols.findIndex(c => c && c.includes('@'));
+    if (emailIdx === -1) {
+      continue; // Skip lines without email (headers or empty lines)
+    }
+    
+    let email = cols[emailIdx].trim();
+    let company = '';
+    let sNoStr = '';
+    
+    if (emailIdx > 0) {
+      company = cols[emailIdx - 1].trim();
+    }
+    if (emailIdx > 1) {
+      sNoStr = cols[emailIdx - 2].trim();
+    }
+    
+    let phone = cols[emailIdx + 1] ? cols[emailIdx + 1].trim() : '';
+    let comment = cols[emailIdx + 2] ? cols[emailIdx + 2].trim() : '';
+    let status = cols[emailIdx + 3] ? cols[emailIdx + 3].trim() : 'Email send';
+    let gmailStatus = cols[emailIdx + 4] ? cols[emailIdx + 4].trim() : 'Not send';
+    
+    const exists = records.some(r => r.email.toLowerCase() === email.toLowerCase());
+    if (exists) {
+      skippedCount++;
+      continue;
+    }
+    
+    let finalSNo = parseInt(sNoStr);
+    if (isNaN(finalSNo)) {
+      finalSNo = nextSNo++;
+    } else {
+      if (finalSNo >= nextSNo) {
+        nextSNo = finalSNo + 1;
+      }
+    }
+    
+    records.push({
+      sNo: finalSNo,
+      company: company || '[Company Name]',
+      email: email,
+      phone: phone,
+      comment: comment,
+      status: status || 'Email send',
+      gmailStatus: gmailStatus || 'Not send'
+    });
+    
+    importedCount++;
+  }
+  
+  if (importedCount > 0) {
+    applyActiveSort();
+    saveToLocalStorage();
+    renderRecordsTable();
+    showToast(`Imported ${importedCount} records. Skipped ${skippedCount} duplicates.`);
+  } else {
+    showToast(`No new records imported. Skipped ${skippedCount} duplicates.`);
+  }
+}
+
+render();
+</script>
+</body>
+</html>
