@@ -917,7 +917,7 @@
     }
 
     /* ==========================================================================
-       PURE FULLSCREEN MODE (PERFECTLY CENTERED QUESTION & ANSWER)
+       IMMERSIVE FULLSCREEN PHOTO/SLIDE VIEWER WITH SWIPE GESTURES
        ========================================================================== */
     .fullscreen-modal-backdrop {
       position: fixed;
@@ -929,37 +929,128 @@
       display: none;
       flex-direction: column;
       overflow: hidden;
+      user-select: none;
+      -webkit-user-select: none;
     }
 
     .fullscreen-modal-backdrop.active {
       display: flex;
     }
 
-    .fs-minimal-header {
-      padding: 16px 20px;
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      background: transparent;
+    /* Top Progress Bar */
+    .fs-progress-bar-wrap {
       position: absolute;
       top: 0;
       left: 0;
       right: 0;
-      z-index: 520;
-      pointer-events: none;
+      height: 3px;
+      background: rgba(255, 255, 255, 0.08);
+      z-index: 530;
     }
 
-    .btn-fs-exit {
-      pointer-events: auto;
-      display: inline-flex;
+    .fs-progress-bar-fill {
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, var(--accent), var(--cyan));
+      transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    /* Top Navigation Header */
+    .fs-header-bar {
+      padding: 12px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: var(--bg-header);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border-subtle);
+      z-index: 520;
+      flex-shrink: 0;
+      gap: 12px;
+    }
+
+    .fs-header-meta {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      min-width: 0;
+    }
+
+    .fs-category-pill {
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 4px 12px;
+      border-radius: var(--radius-full);
+      background: var(--accent-soft);
+      color: var(--accent);
+      border: 1px solid rgba(99, 102, 241, 0.25);
+      white-space: nowrap;
+    }
+
+    .fs-counter-pill {
+      font-size: 0.84rem;
+      font-weight: 700;
+      color: var(--text-secondary);
+      white-space: nowrap;
+    }
+
+    .fs-header-tools {
+      display: flex;
       align-items: center;
       gap: 8px;
-      padding: 8px 18px;
+      flex-shrink: 0;
+    }
+
+    .btn-fs-tool {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 7px 12px;
       border-radius: var(--radius-full);
       background: var(--bg-surface);
       border: 1px solid var(--border-strong);
       color: var(--text-primary);
-      font-size: 0.85rem;
+      font-size: 0.82rem;
+      font-weight: 600;
+      font-family: inherit;
+      cursor: pointer;
+      box-shadow: var(--shadow-sm);
+      transition: all 0.2s ease;
+    }
+
+    .btn-fs-tool:hover {
+      background: var(--bg-card-hover);
+      border-color: var(--accent);
+      transform: translateY(-1px);
+    }
+
+    .btn-fs-tool.active-star {
+      background: var(--amber-soft);
+      color: var(--amber);
+      border-color: var(--amber);
+    }
+
+    .btn-fs-tool.active-audio {
+      background: var(--cyan-soft);
+      color: var(--cyan);
+      border-color: var(--cyan);
+      animation: pulseGlow 1.5s infinite;
+    }
+
+    .btn-fs-exit {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 7px 14px;
+      border-radius: var(--radius-full);
+      background: var(--bg-surface);
+      border: 1px solid var(--border-strong);
+      color: var(--text-primary);
+      font-size: 0.82rem;
       font-weight: 700;
       font-family: inherit;
       cursor: pointer;
@@ -968,65 +1059,376 @@
     }
 
     .btn-fs-exit:hover {
+      background: #ef4444;
+      color: #ffffff;
+      border-color: #ef4444;
+      transform: translateY(-1px);
+    }
+
+    /* Stage Area (Full Viewport Coverage) */
+    .fs-stage-area {
+      flex: 1;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 16px 24px;
+      width: 100%;
+      touch-action: pan-y;
+    }
+
+    /* Floating Desktop Side Arrows */
+    .fs-side-nav-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 48px;
+      height: 48px;
+      border-radius: var(--radius-full);
+      background: var(--bg-surface);
+      border: 1px solid var(--border-strong);
+      color: var(--text-primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      z-index: 510;
+      box-shadow: var(--shadow-md);
+      transition: all 0.2s ease;
+      opacity: 0.85;
+    }
+
+    .fs-side-nav-btn:hover:not(:disabled) {
+      opacity: 1;
+      background: var(--accent);
+      color: #ffffff;
+      border-color: var(--accent);
+      transform: translateY(-50%) scale(1.08);
+    }
+
+    .fs-side-nav-btn:disabled {
+      opacity: 0.2;
+      cursor: not-allowed;
+      pointer-events: none;
+    }
+
+    .fs-side-prev {
+      left: 20px;
+    }
+
+    .fs-side-next {
+      right: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .fs-side-nav-btn {
+        display: none;
+      }
+    }
+
+    /* Swipeable Card & Container (Fills Full Screen) */
+    .fs-card-wrapper {
+      width: 100%;
+      max-width: 1100px;
+      height: 100%;
+      max-height: 100%;
+      display: flex;
+      align-items: stretch;
+      justify-content: center;
+      position: relative;
+    }
+
+    .fs-pure-content {
+      width: 100%;
+      height: 100%;
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-lg);
+      padding: clamp(22px, 3.8vw, 40px);
+      display: flex;
+      flex-direction: column;
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+      user-select: text;
+      -webkit-user-select: text;
+      cursor: grab;
+      position: relative;
+      transition: transform 0.25s cubic-bezier(0.2, 0.8, 0.2, 1), opacity 0.25s ease;
+      will-change: transform, opacity;
+    }
+
+    .fs-pure-content:active {
+      cursor: grabbing;
+    }
+
+    /* Card Top Bar inside slide */
+    .fs-card-top-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 18px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid var(--border-subtle);
+      flex-shrink: 0;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .fs-card-left-badge {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .fs-card-q-number {
+      font-family: var(--font-mono);
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--cyan);
+      background: var(--cyan-soft);
+      padding: 3px 10px;
+      border-radius: var(--radius-full);
+    }
+
+    .fs-mark-done-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 12px;
+      border-radius: var(--radius-full);
+      background: var(--bg-surface);
+      border: 1px solid var(--border-strong);
+      color: var(--text-secondary);
+      font-size: 0.8rem;
+      font-weight: 600;
+      font-family: inherit;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .fs-mark-done-btn:hover {
+      border-color: var(--emerald);
+      color: var(--emerald);
+    }
+
+    .fs-mark-done-btn.active-done {
+      background: var(--emerald-soft);
+      color: var(--emerald);
+      border-color: var(--emerald);
+    }
+
+    /* Question Title */
+    .fs-pure-question {
+      font-size: clamp(1.25rem, 3.2vw, 1.85rem);
+      font-weight: 800;
+      color: var(--text-primary);
+      line-height: 1.4;
+      margin-bottom: 20px;
+      letter-spacing: -0.02em;
+      word-break: break-word;
+      overflow-wrap: break-word;
+      flex-shrink: 0;
+    }
+
+    /* Answer Area */
+    .fs-pure-answer {
+      flex: 1;
+      color: var(--text-secondary);
+      font-size: clamp(1.02rem, 2.2vw, 1.22rem);
+      line-height: 1.85;
+      white-space: pre-line;
+      word-break: break-word;
+      overflow-wrap: break-word;
+    }
+
+    .fs-pure-answer code {
+      font-family: var(--font-mono);
+      background: var(--bg-code);
+      padding: 2px 6px;
+      border-radius: 6px;
+      color: var(--cyan);
+      font-size: 0.95em;
+    }
+
+    .fs-code-box {
+      margin-top: 12px;
+      border-radius: var(--radius-md);
+      background: var(--bg-code);
+      border: 1px solid var(--border-subtle);
+      overflow: hidden;
+    }
+
+    .fs-code-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px 14px;
+      background: var(--bg-surface);
+      border-bottom: 1px solid var(--border-subtle);
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--text-muted);
+    }
+
+    .fs-copy-code-btn {
+      background: transparent;
+      border: none;
+      color: var(--accent);
+      font-size: 0.8rem;
+      font-weight: 700;
+      font-family: inherit;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 3px 8px;
+      border-radius: 6px;
+    }
+
+    .fs-copy-code-btn:hover {
+      background: var(--accent-soft);
+    }
+
+    .fs-code-box pre {
+      margin: 0;
+      padding: 16px;
+      font-family: var(--font-mono);
+      font-size: clamp(0.92rem, 2vw, 1.05rem);
+      line-height: 1.7;
+      overflow-x: auto;
+      color: var(--text-primary);
+      white-space: pre-wrap;
+    }
+
+    /* Bottom Control Bar (Like Carousel / Photo Navigation) */
+    .fs-bottom-bar {
+      padding: 12px 20px;
+      background: var(--bg-header);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-top: 1px solid var(--border-subtle);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 520;
+      flex-shrink: 0;
+      gap: 12px;
+    }
+
+    .btn-fs-nav {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 9px 18px;
+      border-radius: var(--radius-full);
+      background: var(--bg-surface);
+      border: 1px solid var(--border-strong);
+      color: var(--text-primary);
+      font-size: 0.86rem;
+      font-weight: 700;
+      font-family: inherit;
+      cursor: pointer;
+      box-shadow: var(--shadow-sm);
+      transition: all 0.2s ease;
+      min-width: 100px;
+      justify-content: center;
+    }
+
+    .btn-fs-nav:hover:not(:disabled) {
       background: var(--accent);
       color: #ffffff;
       border-color: var(--accent);
       transform: translateY(-1px);
     }
 
-    .fs-scroll-area {
-      flex: 1;
-      overflow-y: auto;
-      -webkit-overflow-scrolling: touch;
-      padding: 70px 20px 40px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
+    .btn-fs-nav:disabled {
+      opacity: 0.3;
+      cursor: not-allowed;
+      pointer-events: none;
     }
 
-    .fs-pure-content {
-      max-width: 720px;
-      width: 100%;
-      margin: auto 0;
-      background: var(--bg-card);
-      border: 1px solid var(--border-subtle);
-      border-radius: var(--radius-lg);
-      padding: 32px 26px;
-      box-shadow: var(--shadow-lg);
-      text-align: left;
+    .fs-bottom-indicator {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2px;
+      text-align: center;
+    }
+
+    .fs-nav-counter-text {
+      font-weight: 800;
+      font-size: 0.92rem;
+      color: var(--text-primary);
+      letter-spacing: 0.02em;
+    }
+
+    .fs-swipe-hint {
+      font-size: 0.72rem;
+      font-weight: 600;
+      color: var(--text-muted);
+    }
+
+    /* Swipe Animations */
+    @keyframes fsSlideInFromRight {
+      0% {
+        opacity: 0;
+        transform: translateX(45px) scale(0.98);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(0) scale(1);
+      }
+    }
+
+    @keyframes fsSlideInFromLeft {
+      0% {
+        opacity: 0;
+        transform: translateX(-45px) scale(0.98);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(0) scale(1);
+      }
+    }
+
+    .fs-slide-in-right {
+      animation: fsSlideInFromRight 0.28s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+
+    .fs-slide-in-left {
+      animation: fsSlideInFromLeft 0.28s cubic-bezier(0.16, 1, 0.3, 1) forwards;
     }
 
     @media (max-width: 600px) {
-      .fs-scroll-area {
-        padding: 65px 14px 28px;
+      .fs-header-bar {
+        padding: 10px 14px;
+      }
+      .fs-stage-area {
+        padding: 8px 10px;
       }
       .fs-pure-content {
-        padding: 24px 18px;
+        padding: 18px 16px;
+        border-radius: var(--radius-md);
       }
-    }
-
-    .fs-pure-question {
-      font-size: clamp(1.2rem, 3.8vw, 1.55rem);
-      font-weight: 800;
-      color: var(--text-primary);
-      line-height: 1.4;
-      margin-bottom: 20px;
-      padding-bottom: 16px;
-      border-bottom: 1px solid var(--border-subtle);
-      letter-spacing: -0.02em;
-      word-break: break-word;
-      overflow-wrap: break-word;
-    }
-
-    .fs-pure-answer {
-      color: var(--text-secondary);
-      font-size: clamp(0.98rem, 2.8vw, 1.12rem);
-      line-height: 1.82;
-      white-space: pre-line;
-      word-break: break-word;
-      overflow-wrap: break-word;
+      .fs-btn-label-desktop {
+        display: none;
+      }
+      .btn-fs-tool {
+        padding: 6px 10px;
+      }
+      .btn-fs-exit {
+        padding: 6px 12px;
+      }
+      .btn-fs-nav {
+        padding: 8px 12px;
+        min-width: 75px;
+        font-size: 0.8rem;
+      }
+      .fs-bottom-bar {
+        padding: 8px 12px;
+      }
     }
 
     /* ==========================================================================
@@ -1304,27 +1706,107 @@
   </main>
 
   <!-- ==========================================================================
-       PURE FULLSCREEN MODE OVERLAY (ONLY QUESTION, ANSWER & EXIT OPTION)
+       IMMERSIVE FULLSCREEN PHOTO/SLIDE VIEWER (SWIPE GESTURES & FULL SCREEN COVERAGE)
        ========================================================================== -->
   <div id="fsModalOverlay" class="fullscreen-modal-backdrop">
-    <!-- Exit Header -->
-    <div class="fs-minimal-header">
-      <button id="btnFsClose" class="btn-fs-exit" aria-label="Exit Full Screen">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-          <line x1="18" y1="6" x2="6" y2="18"></line>
-          <line x1="6" y1="6" x2="18" y2="18"></line>
-        </svg>
-        <span>Exit Full Screen</span>
-      </button>
+    <!-- Top Progress Bar -->
+    <div class="fs-progress-bar-wrap">
+      <div id="fsProgressBar" class="fs-progress-bar-fill"></div>
     </div>
 
-    <!-- Pure Question & Answer Content -->
-    <div class="fs-scroll-area">
-      <div class="fs-pure-content">
-        <h1 class="fs-pure-question" id="fsQuestionTitle">Question</h1>
-        <div class="fs-pure-answer" id="fsAnswerContent">Answer</div>
+    <!-- Header Navigation & Action Tools -->
+    <header class="fs-header-bar">
+      <div class="fs-header-meta">
+        <span id="fsCategoryBadge" class="fs-category-pill">C# Fundamentals</span>
+        <span id="fsIndexBadge" class="fs-counter-pill">Question 01 of 47</span>
+      </div>
+
+      <div class="fs-header-tools">
+        <button id="btnFsStar" class="btn-fs-tool" title="Bookmark Question (S)" aria-label="Star Question">
+          <span class="fs-star-icon">☆</span>
+          <span class="fs-btn-label-desktop">Star</span>
+        </button>
+
+        <button id="btnFsListen" class="btn-fs-tool" title="Read Aloud" aria-label="Listen Question">
+          <span>🔊</span>
+          <span class="fs-btn-label-desktop">Listen</span>
+        </button>
+
+        <button id="btnFsCopy" class="btn-fs-tool" title="Copy Question & Answer" aria-label="Copy Q&A">
+          <span>📋</span>
+          <span class="fs-btn-label-desktop">Copy</span>
+        </button>
+
+        <button id="btnFsClose" class="btn-fs-exit" title="Exit Full Screen (Esc)" aria-label="Exit Full Screen">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+          <span>Exit</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Stage Area (Maximized Screen Coverage & Touch Swiping) -->
+    <div class="fs-stage-area" id="fsStageArea">
+      <!-- Floating Side Arrows on Desktop -->
+      <button id="btnFsSidePrev" class="fs-side-nav-btn fs-side-prev" title="Previous Question (← Arrow)" aria-label="Previous">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+      </button>
+
+      <button id="btnFsSideNext" class="fs-side-nav-btn fs-side-next" title="Next Question (→ Arrow)" aria-label="Next">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="9 18 15 12 9 6"></polyline>
+        </svg>
+      </button>
+
+      <!-- Central Swipeable Card Container -->
+      <div class="fs-card-wrapper">
+        <div class="fs-pure-content" id="fsCardContent">
+          <!-- Card Top Bar -->
+          <div class="fs-card-top-row">
+            <div class="fs-card-left-badge">
+              <span id="fsCardNumPill" class="fs-card-q-number">#01</span>
+              <span id="fsCardCatTitle" style="font-size:0.85rem; font-weight:700; color:var(--text-secondary);">C# Fundamentals</span>
+            </div>
+            <button id="btnFsMarkLearned" class="fs-mark-done-btn" title="Toggle Learned Status (M)">
+              <span id="fsMarkDoneIcon">○</span>
+              <span id="fsMarkDoneText">Mark Learned</span>
+            </button>
+          </div>
+
+          <!-- Question Title -->
+          <h1 class="fs-pure-question" id="fsQuestionTitle">Question</h1>
+
+          <!-- Answer Body -->
+          <div class="fs-pure-answer" id="fsAnswerContent">Answer</div>
+        </div>
       </div>
     </div>
+
+    <!-- Bottom Navigation Bar (Carousel / Photo Controls) -->
+    <footer class="fs-bottom-bar">
+      <button id="btnFsPrev" class="btn-fs-nav btn-fs-prev" aria-label="Previous Question">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+        <span>Prev</span>
+      </button>
+
+      <div class="fs-bottom-indicator">
+        <span id="fsNavCounter" class="fs-nav-counter-text">1 / 47</span>
+        <span class="fs-swipe-hint">👈 Swipe or use Arrow keys 👉</span>
+      </div>
+
+      <button id="btnFsNext" class="btn-fs-nav btn-fs-next" aria-label="Next Question">
+        <span>Next</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="9 18 15 12 9 6"></polyline>
+        </svg>
+      </button>
+    </footer>
   </div>
 
   <!-- Slide-Over Table of Contents Drawer -->
@@ -1767,11 +2249,31 @@ WHERE SalaryRank = 1;`,
     const fabScrollTop = document.getElementById('fabScrollTop');
     const actionToast = document.getElementById('actionToast');
 
-    // Pure Fullscreen Elements
+    // Pure Fullscreen & Carousel Elements
+    let fsQuestionsList = [];
+    let fsCurrentIndex = 0;
     const fsModalOverlay = document.getElementById('fsModalOverlay');
+    const fsProgressBar = document.getElementById('fsProgressBar');
+    const fsCategoryBadge = document.getElementById('fsCategoryBadge');
+    const fsIndexBadge = document.getElementById('fsIndexBadge');
+    const btnFsStar = document.getElementById('btnFsStar');
+    const btnFsListen = document.getElementById('btnFsListen');
+    const btnFsCopy = document.getElementById('btnFsCopy');
     const btnFsClose = document.getElementById('btnFsClose');
+    const fsStageArea = document.getElementById('fsStageArea');
+    const fsCardContent = document.getElementById('fsCardContent');
+    const fsCardNumPill = document.getElementById('fsCardNumPill');
+    const fsCardCatTitle = document.getElementById('fsCardCatTitle');
+    const btnFsMarkLearned = document.getElementById('btnFsMarkLearned');
+    const fsMarkDoneIcon = document.getElementById('fsMarkDoneIcon');
+    const fsMarkDoneText = document.getElementById('fsMarkDoneText');
     const fsQuestionTitle = document.getElementById('fsQuestionTitle');
     const fsAnswerContent = document.getElementById('fsAnswerContent');
+    const btnFsSidePrev = document.getElementById('btnFsSidePrev');
+    const btnFsSideNext = document.getElementById('btnFsSideNext');
+    const btnFsPrev = document.getElementById('btnFsPrev');
+    const btnFsNext = document.getElementById('btnFsNext');
+    const fsNavCounter = document.getElementById('fsNavCounter');
 
     // ==========================================================================
     // PERSISTENCE
@@ -1974,34 +2476,297 @@ WHERE SalaryRank = 1;`,
           btn.innerHTML = `<span>🔊</span><span>Listen</span>`;
         }
       });
+      updateFsAudioState();
+    }
+
+    function updateFsAudioState() {
+      if (!fsQuestionsList || !fsQuestionsList[fsCurrentIndex] || !btnFsListen) return;
+      const currentId = fsQuestionsList[fsCurrentIndex].id;
+      const isSpeaking = (playingAudioId === currentId);
+      btnFsListen.classList.toggle('active-audio', isSpeaking);
+      const iconSpan = btnFsListen.querySelector('span:first-child');
+      if (iconSpan) iconSpan.textContent = isSpeaking ? '⏹' : '🔊';
+      const label = btnFsListen.querySelector('.fs-btn-label-desktop');
+      if (label) label.textContent = isSpeaking ? 'Stop' : 'Listen';
     }
 
     // ==========================================================================
-    // PURE FULLSCREEN CONTROLLER (ONLY QUESTION, ANSWER & EXIT)
+    // IMMERSIVE FULLSCREEN PHOTO-CAROUSEL & SWIPE CONTROLLER
     // ==========================================================================
     function openPureFullscreen(id) {
-      const item = interviewData.find(q => q.id === id);
-      if (!item) return;
+      const activeList = getFilteredQuestions();
+      fsQuestionsList = (activeList && activeList.length > 0) ? activeList : [...interviewData];
 
-      fsQuestionTitle.textContent = item.question;
-
-      if (item.isCode) {
-        fsAnswerContent.innerHTML = `<pre class="code-pre-block" style="font-size:1.02rem; line-height:1.65; padding:16px; border-radius:12px; background:var(--bg-code); border:1px solid var(--border-subtle);"><code>${escapeHTML(item.answer)}</code></pre>`;
-      } else {
-        fsAnswerContent.textContent = item.answer;
-      }
+      const foundIdx = fsQuestionsList.findIndex(q => q.id === id);
+      fsCurrentIndex = foundIdx !== -1 ? foundIdx : 0;
 
       fsModalOverlay.classList.add('active');
       document.body.classList.add('fullscreen-locked');
-      document.querySelector('.fs-scroll-area').scrollTo({ top: 0, behavior: 'smooth' });
+
+      renderFsSlide(fsCurrentIndex, 'none');
     }
 
     function closePureFullscreen() {
+      if (window.speechSynthesis && window.speechSynthesis.speaking) {
+        window.speechSynthesis.cancel();
+        playingAudioId = null;
+        updateAudioButtons();
+      }
       fsModalOverlay.classList.remove('active');
       document.body.classList.remove('fullscreen-locked');
     }
 
+    function renderFsSlide(index, animationDirection = 'none') {
+      if (!fsQuestionsList || fsQuestionsList.length === 0) return;
+      if (index < 0) index = 0;
+      if (index >= fsQuestionsList.length) index = fsQuestionsList.length - 1;
+      fsCurrentIndex = index;
+
+      const item = fsQuestionsList[index];
+      const isDone = readQuestionsSet.has(item.id);
+      const isStarred = starredQuestionsSet.has(item.id);
+      const total = fsQuestionsList.length;
+
+      // Header & Index Pills
+      fsCategoryBadge.textContent = item.catTitle;
+      fsIndexBadge.textContent = `Question ${index + 1} of ${total}`;
+      fsNavCounter.textContent = `${index + 1} / ${total}`;
+
+      // Progress Bar
+      const progressPercent = ((index + 1) / total) * 100;
+      fsProgressBar.style.width = `${progressPercent}%`;
+
+      // Card Meta
+      fsCardNumPill.textContent = `#${item.id < 10 ? '0' + item.id : item.id}`;
+      fsCardCatTitle.textContent = item.catTitle;
+
+      // Card Learned Status Button
+      if (isDone) {
+        btnFsMarkLearned.classList.add('active-done');
+        fsMarkDoneIcon.textContent = '✓';
+        fsMarkDoneText.textContent = 'Learned';
+      } else {
+        btnFsMarkLearned.classList.remove('active-done');
+        fsMarkDoneIcon.textContent = '○';
+        fsMarkDoneText.textContent = 'Mark Learned';
+      }
+
+      // Question Title
+      fsQuestionTitle.textContent = item.question;
+
+      // Answer Content
+      if (item.isCode) {
+        fsAnswerContent.innerHTML = `
+          <div class="fs-code-box">
+            <div class="fs-code-header">
+              <span>SQL QUERY</span>
+              <button class="fs-copy-code-btn" id="btnFsCopyInlineCode">
+                📋 Copy Code
+              </button>
+            </div>
+            <pre><code>${escapeHTML(item.answer)}</code></pre>
+          </div>
+        `;
+        const btnInlineCopy = document.getElementById('btnFsCopyInlineCode');
+        if (btnInlineCopy) {
+          btnInlineCopy.addEventListener('click', () => {
+            navigator.clipboard.writeText(item.answer).then(() => {
+              showToast('SQL Code copied to clipboard! 📋');
+            });
+          });
+        }
+      } else {
+        fsAnswerContent.textContent = item.answer;
+      }
+
+      // Star & Audio State
+      btnFsStar.classList.toggle('active-star', isStarred);
+      const starIcon = btnFsStar.querySelector('.fs-star-icon');
+      if (starIcon) starIcon.textContent = isStarred ? '★' : '☆';
+
+      updateFsAudioState();
+
+      // Prev / Next button disable states
+      btnFsPrev.disabled = (index === 0);
+      btnFsSidePrev.disabled = (index === 0);
+      btnFsNext.disabled = (index === total - 1);
+      btnFsSideNext.disabled = (index === total - 1);
+
+      // Reset scroll position on active card
+      fsCardContent.scrollTop = 0;
+
+      // Slide Animation
+      fsCardContent.classList.remove('fs-slide-in-right', 'fs-slide-in-left');
+      fsCardContent.style.transform = 'none';
+      fsCardContent.style.opacity = '1';
+      fsCardContent.style.transition = 'none';
+
+      if (animationDirection === 'next') {
+        void fsCardContent.offsetWidth; // Reflow
+        fsCardContent.classList.add('fs-slide-in-right');
+      } else if (animationDirection === 'prev') {
+        void fsCardContent.offsetWidth; // Reflow
+        fsCardContent.classList.add('fs-slide-in-left');
+      }
+    }
+
+    function goToNextFullscreenQuestion() {
+      if (fsCurrentIndex < fsQuestionsList.length - 1) {
+        renderFsSlide(fsCurrentIndex + 1, 'next');
+      } else {
+        showToast('You are on the last question 🎉');
+      }
+    }
+
+    function goToPrevFullscreenQuestion() {
+      if (fsCurrentIndex > 0) {
+        renderFsSlide(fsCurrentIndex - 1, 'prev');
+      } else {
+        showToast('You are on the first question');
+      }
+    }
+
+    // Touch & Pointer Drag Swiping (Photo Gallery Style Physics)
+    let isFsDragging = false;
+    let fsStartX = 0;
+    let fsStartY = 0;
+    let fsTranslateX = 0;
+    let fsSwipeStartTime = 0;
+
+    function handleFsSwipeStart(e) {
+      if (e.target.closest('button') || e.target.closest('pre') || e.target.closest('code')) return;
+      isFsDragging = true;
+      fsStartX = e.type.includes('touch') ? e.touches[0].clientX : e.clientX;
+      fsStartY = e.type.includes('touch') ? e.touches[0].clientY : e.clientY;
+      fsSwipeStartTime = Date.now();
+      fsTranslateX = 0;
+      fsCardContent.style.transition = 'none';
+    }
+
+    function handleFsSwipeMove(e) {
+      if (!isFsDragging) return;
+      const currentX = e.type.includes('touch') ? e.touches[0].clientX : e.clientX;
+      const currentY = e.type.includes('touch') ? e.touches[0].clientY : e.clientY;
+      const diffX = currentX - fsStartX;
+      const diffY = currentY - fsStartY;
+
+      if (Math.abs(diffX) > Math.abs(diffY)) {
+        if (e.cancelable && e.type.includes('touch')) {
+          e.preventDefault();
+        }
+
+        let damping = 1;
+        if ((fsCurrentIndex === 0 && diffX > 0) || (fsCurrentIndex === fsQuestionsList.length - 1 && diffX < 0)) {
+          damping = 0.35; // End-of-list rubber-band resistance
+        }
+
+        fsTranslateX = diffX * damping;
+        const rotateDeg = fsTranslateX * 0.025;
+        const opacity = Math.max(0.65, 1 - Math.abs(fsTranslateX) / 750);
+
+        fsCardContent.style.transform = `translateX(${fsTranslateX}px) rotate(${rotateDeg}deg)`;
+        fsCardContent.style.opacity = opacity;
+      }
+    }
+
+    function handleFsSwipeEnd(e) {
+      if (!isFsDragging) return;
+      isFsDragging = false;
+      const deltaTime = Date.now() - fsSwipeStartTime;
+      const velocity = Math.abs(fsTranslateX) / (deltaTime || 1);
+
+      const isSwipeLeft = fsTranslateX < -60 || (fsTranslateX < -30 && velocity > 0.35);
+      const isSwipeRight = fsTranslateX > 60 || (fsTranslateX > 30 && velocity > 0.35);
+
+      if (isSwipeLeft && fsCurrentIndex < fsQuestionsList.length - 1) {
+        fsCardContent.style.transition = 'transform 0.16s ease, opacity 0.16s ease';
+        fsCardContent.style.transform = 'translateX(-100px)';
+        fsCardContent.style.opacity = '0';
+        setTimeout(() => {
+          goToNextFullscreenQuestion();
+        }, 130);
+      } else if (isSwipeRight && fsCurrentIndex > 0) {
+        fsCardContent.style.transition = 'transform 0.16s ease, opacity 0.16s ease';
+        fsCardContent.style.transform = 'translateX(100px)';
+        fsCardContent.style.opacity = '0';
+        setTimeout(() => {
+          goToPrevFullscreenQuestion();
+        }, 130);
+      } else {
+        fsCardContent.style.transition = 'transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.25s ease';
+        fsCardContent.style.transform = 'translateX(0) rotate(0deg)';
+        fsCardContent.style.opacity = '1';
+      }
+    }
+
+    // Attach touch & mouse drag listeners
+    fsCardContent.addEventListener('touchstart', handleFsSwipeStart, { passive: true });
+    fsCardContent.addEventListener('touchmove', handleFsSwipeMove, { passive: false });
+    fsCardContent.addEventListener('touchend', handleFsSwipeEnd);
+    fsCardContent.addEventListener('touchcancel', handleFsSwipeEnd);
+
+    fsCardContent.addEventListener('mousedown', handleFsSwipeStart);
+    window.addEventListener('mousemove', handleFsSwipeMove);
+    window.addEventListener('mouseup', handleFsSwipeEnd);
+
+    // Fullscreen action buttons
     btnFsClose.addEventListener('click', closePureFullscreen);
+    btnFsPrev.addEventListener('click', goToPrevFullscreenQuestion);
+    btnFsNext.addEventListener('click', goToNextFullscreenQuestion);
+    btnFsSidePrev.addEventListener('click', goToPrevFullscreenQuestion);
+    btnFsSideNext.addEventListener('click', goToNextFullscreenQuestion);
+
+    // Star in fullscreen
+    btnFsStar.addEventListener('click', () => {
+      const item = fsQuestionsList[fsCurrentIndex];
+      if (!item) return;
+      if (starredQuestionsSet.has(item.id)) {
+        starredQuestionsSet.delete(item.id);
+        showToast('Removed from starred');
+      } else {
+        starredQuestionsSet.add(item.id);
+        showToast('Starred! ★');
+      }
+      saveState();
+      updateProgressStats();
+      renderQuestionsList();
+      renderFsSlide(fsCurrentIndex, 'none');
+    });
+
+    // Mark Learned in fullscreen
+    btnFsMarkLearned.addEventListener('click', () => {
+      const item = fsQuestionsList[fsCurrentIndex];
+      if (!item) return;
+      if (readQuestionsSet.has(item.id)) {
+        readQuestionsSet.delete(item.id);
+        showToast('Marked as unlearned');
+      } else {
+        readQuestionsSet.add(item.id);
+        showToast('Marked as learned! 🎯');
+      }
+      saveState();
+      updateProgressStats();
+      renderQuestionsList();
+      renderFsSlide(fsCurrentIndex, 'none');
+    });
+
+    // Listen audio in fullscreen
+    btnFsListen.addEventListener('click', () => {
+      const item = fsQuestionsList[fsCurrentIndex];
+      if (!item) return;
+      toggleAudio(item.id);
+      setTimeout(updateFsAudioState, 50);
+    });
+
+    // Copy Q&A in fullscreen
+    btnFsCopy.addEventListener('click', () => {
+      const item = fsQuestionsList[fsCurrentIndex];
+      if (!item) return;
+      const fullText = `Q: ${item.question}\n\nA: ${item.answer}`;
+      navigator.clipboard.writeText(fullText).then(() => {
+        showToast('Question & Answer copied! 📋');
+      });
+    });
 
     // ==========================================================================
     // RENDER FUNCTIONS
@@ -2334,12 +3099,24 @@ WHERE SalaryRank = 1;`,
       window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 
-    // Keyboard Shortcuts (Escape to exit fullscreen, '/' to search)
+    // Keyboard Shortcuts (Escape to exit fullscreen, Arrows/Page to swipe questions, '/' to search)
     document.addEventListener('keydown', (e) => {
       if (fsModalOverlay.classList.contains('active')) {
         if (e.key === 'Escape') {
           e.preventDefault();
           closePureFullscreen();
+        } else if (e.key === 'ArrowRight' || e.key === 'PageDown') {
+          e.preventDefault();
+          goToNextFullscreenQuestion();
+        } else if (e.key === 'ArrowLeft' || e.key === 'PageUp') {
+          e.preventDefault();
+          goToPrevFullscreenQuestion();
+        } else if (e.key.toLowerCase() === 's' && document.activeElement.tagName !== 'INPUT' && document.activeElement.tagName !== 'TEXTAREA') {
+          e.preventDefault();
+          btnFsStar.click();
+        } else if (e.key.toLowerCase() === 'm' && document.activeElement.tagName !== 'INPUT' && document.activeElement.tagName !== 'TEXTAREA') {
+          e.preventDefault();
+          btnFsMarkLearned.click();
         }
         return;
       }
