@@ -1,6 +1,8 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en" data-theme="dark">
 <head>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%20fill%3D%22none%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%233B82F6%22%2F%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%2306B6D4%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2216%22%20fill%3D%22%23091424%22%2F%3E%3Crect%20x%3D%222%22%20y%3D%222%22%20width%3D%2260%22%20height%3D%2260%22%20rx%3D%2214%22%20stroke%3D%22url(%23g)%22%20stroke-width%3D%222%22%20stroke-opacity%3D%220.6%22%2F%3E%3Crect%20x%3D%2216%22%20y%3D%2212%22%20width%3D%2232%22%20height%3D%2240%22%20rx%3D%224%22%20stroke%3D%22url(%23g)%22%20stroke-width%3D%222.5%22%20fill%3D%22%230d2138%22%2F%3E%3Ccircle%20cx%3D%2224%22%20cy%3D%2222%22%20r%3D%224%22%20fill%3D%22%233B82F6%22%2F%3E%3Cpath%20d%3D%22M32%2020h10M32%2025h7M22%2034h20M22%2040h20M22%2046h14%22%20stroke%3D%22%2306B6D4%22%20stroke-width%3D%222.5%22%20stroke-linecap%3D%22round%22%2F%3E%3C%2Fsvg%3E">
+  <link rel="shortcut icon" href="favicon.svg">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
   <title>ATS Resume Builder | Free, Semantic & High-Scoring Resume Maker</title>
@@ -22,11 +24,12 @@
     
     <!-- 1. TOP NAVIGATION BAR -->
     <header class="app-header">
-      
-      <!-- Left Group: Brand + Resume Switcher -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%20fill%3D%22none%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%233B82F6%22%2F%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%2306B6D4%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2216%22%20fill%3D%22%23091424%22%2F%3E%3Crect%20x%3D%222%22%20y%3D%222%22%20width%3D%2260%22%20height%3D%2260%22%20rx%3D%2214%22%20stroke%3D%22url(%23g)%22%20stroke-width%3D%222%22%20stroke-opacity%3D%220.6%22%2F%3E%3Crect%20x%3D%2216%22%20y%3D%2212%22%20width%3D%2232%22%20height%3D%2240%22%20rx%3D%224%22%20stroke%3D%22url(%23g)%22%20stroke-width%3D%222.5%22%20fill%3D%22%230d2138%22%2F%3E%3Ccircle%20cx%3D%2224%22%20cy%3D%2222%22%20r%3D%224%22%20fill%3D%22%233B82F6%22%2F%3E%3Cpath%20d%3D%22M32%2020h10M32%2025h7M22%2034h20M22%2040h20M22%2046h14%22%20stroke%3D%22%2306B6D4%22%20stroke-width%3D%222.5%22%20stroke-linecap%3D%22round%22%2F%3E%3C%2Fsvg%3E">
+  <link rel="shortcut icon" href="favicon.svg">
+  <!-- Left Group: Brand + Resume Switcher -->
       <div class="header-left-group">
         <div class="brand-wrapper">
-          <div class="brand-icon" title="100% ATS Compatible">✓</div>
+          <div class="brand-icon" title="100% ATS Compatible">âœ“</div>
           <h1 class="brand-title">
             <span>ATS Resume Builder</span>
             <span class="ats-pill">100% ATS Safe</span>
@@ -39,12 +42,12 @@
         <div class="resume-manager-cluster">
           <div class="resume-select-wrapper" title="Switch active resume profile">
             <select id="resume-select" class="resume-select" aria-label="Select Resume Profile"></select>
-            <span class="select-arrow">▼</span>
+            <span class="select-arrow">â–¼</span>
           </div>
           <div class="icon-actions-group">
             <button id="btn-new-resume" class="btn-icon-sm" title="New Resume Profile" aria-label="New Resume">+</button>
-            <button id="btn-duplicate-resume" class="btn-icon-sm" title="Duplicate Current Resume" aria-label="Duplicate Resume">⎘</button>
-            <button id="btn-delete-resume" class="btn-icon-sm btn-icon-danger" title="Delete Current Resume" aria-label="Delete Resume">🗑</button>
+            <button id="btn-duplicate-resume" class="btn-icon-sm" title="Duplicate Current Resume" aria-label="Duplicate Resume">âŽ˜</button>
+            <button id="btn-delete-resume" class="btn-icon-sm btn-icon-danger" title="Delete Current Resume" aria-label="Delete Resume">ðŸ—‘</button>
           </div>
         </div>
       </div>
@@ -78,42 +81,42 @@
         
         <!-- Primary Action: Solid Download PDF -->
         <button id="btn-export-pdf" class="btn btn-primary" title="Export Resume to Clean PDF">
-          <span>📥</span>
+          <span>ðŸ“¥</span>
           <span class="btn-text">Download PDF</span>
         </button>
 
         <!-- Secondary Actions: Overflow Dropdown Menu -->
         <div class="overflow-dropdown-wrapper" id="tools-dropdown-wrapper">
           <button id="btn-tools-menu" class="btn btn-ghost dropdown-trigger" aria-haspopup="true" aria-expanded="false" title="More Resume Tools">
-            <span>⚙️</span>
+            <span>âš™ï¸</span>
             <span class="btn-text">More Tools</span>
-            <span class="dropdown-chevron">▼</span>
+            <span class="dropdown-chevron">â–¼</span>
           </button>
           
           <div class="overflow-menu-dropdown" id="tools-dropdown-menu" role="menu">
             <button type="button" class="dropdown-item" id="menu-item-sample" role="menuitem">
-              <span class="item-icon">✨</span>
+              <span class="item-icon">âœ¨</span>
               <div class="item-text">
                 <strong>Load Sample Data</strong>
                 <span>Populate full Senior Engineer profile</span>
               </div>
             </button>
             <button type="button" class="dropdown-item" id="menu-item-plain-text" role="menuitem">
-              <span class="item-icon">📋</span>
+              <span class="item-icon">ðŸ“‹</span>
               <div class="item-text">
                 <strong>ATS Plain Text</strong>
                 <span>Copy formatted text for job portal boxes</span>
               </div>
             </button>
             <button type="button" class="dropdown-item" id="menu-item-backup" role="menuitem">
-              <span class="item-icon">💾</span>
+              <span class="item-icon">ðŸ’¾</span>
               <div class="item-text">
                 <strong>Backup & Restore</strong>
                 <span>Export or import JSON resume file</span>
               </div>
             </button>
             <button type="button" class="dropdown-item" id="menu-item-print" role="menuitem">
-              <span class="item-icon">🖨️</span>
+              <span class="item-icon">ðŸ–¨ï¸</span>
               <div class="item-text">
                 <strong>Browser Print</strong>
                 <span>Print directly via browser dialog</span>
@@ -121,7 +124,7 @@
             </button>
             <div class="dropdown-divider"></div>
             <button type="button" class="dropdown-item danger-item" id="menu-item-clear" role="menuitem">
-              <span class="item-icon">🗑️</span>
+              <span class="item-icon">ðŸ—‘ï¸</span>
               <div class="item-text">
                 <strong>Reset All Form Data</strong>
                 <span>Clear current resume fields</span>
@@ -131,7 +134,7 @@
         </div>
 
         <!-- Theme Switcher -->
-        <button id="btn-theme-toggle" class="btn btn-icon" title="Toggle Dark/Light Mode" aria-label="Toggle Theme">🌙</button>
+        <button id="btn-theme-toggle" class="btn btn-icon" title="Toggle Dark/Light Mode" aria-label="Toggle Theme">ðŸŒ™</button>
 
       </div>
     </header>
@@ -139,10 +142,10 @@
     <!-- 2. MOBILE VIEW SWITCHER TABS (Only visible on small mobile screens) -->
     <nav class="mobile-view-tabs" id="mobile-tabs-bar" aria-label="Mobile View Selector">
       <button id="tab-btn-edit" class="tab-btn active" data-tab="edit">
-        <span>✏️</span> Edit Form
+        <span>âœï¸</span> Edit Form
       </button>
       <button id="tab-btn-preview" class="tab-btn" data-tab="preview">
-        <span>👁️</span> Live Preview
+        <span>ðŸ‘ï¸</span> Live Preview
       </button>
     </nav>
 
@@ -156,7 +159,7 @@
         <div class="form-progress-card">
           <div class="progress-header">
             <div class="progress-title-wrap">
-              <span class="progress-icon">⚡</span>
+              <span class="progress-icon">âš¡</span>
               <span class="progress-title">Resume Strength</span>
             </div>
             <span class="progress-percent-badge" id="resume-progress-percent">85% Complete</span>
@@ -178,7 +181,7 @@
 
           <div class="toolbar-group">
             <button id="btn-manage-sections" class="btn btn-xs" title="Reorder sections in resume">
-              <span>↕️</span> Reorder Sections
+              <span>â†•ï¸</span> Reorder Sections
             </button>
             <button id="btn-toggle-all-accordions" class="btn btn-xs" title="Expand or Collapse all sections">
               Collapse All
@@ -189,12 +192,14 @@
         <!-- ACCORDION 1: Personal Information -->
         <article class="form-section-card" id="card-sec-personal">
           <header class="section-header" data-toggle="card-sec-personal">
-            <div class="section-title-wrapper">
-              <span class="section-icon">👤</span>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%20fill%3D%22none%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%233B82F6%22%2F%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%2306B6D4%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2216%22%20fill%3D%22%23091424%22%2F%3E%3Crect%20x%3D%222%22%20y%3D%222%22%20width%3D%2260%22%20height%3D%2260%22%20rx%3D%2214%22%20stroke%3D%22url(%23g)%22%20stroke-width%3D%222%22%20stroke-opacity%3D%220.6%22%2F%3E%3Crect%20x%3D%2216%22%20y%3D%2212%22%20width%3D%2232%22%20height%3D%2240%22%20rx%3D%224%22%20stroke%3D%22url(%23g)%22%20stroke-width%3D%222.5%22%20fill%3D%22%230d2138%22%2F%3E%3Ccircle%20cx%3D%2224%22%20cy%3D%2222%22%20r%3D%224%22%20fill%3D%22%233B82F6%22%2F%3E%3Cpath%20d%3D%22M32%2020h10M32%2025h7M22%2034h20M22%2040h20M22%2046h14%22%20stroke%3D%22%2306B6D4%22%20stroke-width%3D%222.5%22%20stroke-linecap%3D%22round%22%2F%3E%3C%2Fsvg%3E">
+  <link rel="shortcut icon" href="favicon.svg">
+  <div class="section-title-wrapper">
+              <span class="section-icon">ðŸ‘¤</span>
               <h2 class="section-title">Personal Information</h2>
-              <span class="section-count-badge badge-success" id="count-personal">✓</span>
+              <span class="section-count-badge badge-success" id="count-personal">âœ“</span>
             </div>
-            <span class="accordion-chevron">▼</span>
+            <span class="accordion-chevron">â–¼</span>
           </header>
           <div class="section-body">
             <div class="form-grid-2">
@@ -233,24 +238,26 @@
         <!-- ACCORDION 2: Professional Summary -->
         <article class="form-section-card" id="card-sec-summary">
           <header class="section-header" data-toggle="card-sec-summary">
-            <div class="section-title-wrapper">
-              <span class="section-icon">📝</span>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%20fill%3D%22none%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%233B82F6%22%2F%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%2306B6D4%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2216%22%20fill%3D%22%23091424%22%2F%3E%3Crect%20x%3D%222%22%20y%3D%222%22%20width%3D%2260%22%20height%3D%2260%22%20rx%3D%2214%22%20stroke%3D%22url(%23g)%22%20stroke-width%3D%222%22%20stroke-opacity%3D%220.6%22%2F%3E%3Crect%20x%3D%2216%22%20y%3D%2212%22%20width%3D%2232%22%20height%3D%2240%22%20rx%3D%224%22%20stroke%3D%22url(%23g)%22%20stroke-width%3D%222.5%22%20fill%3D%22%230d2138%22%2F%3E%3Ccircle%20cx%3D%2224%22%20cy%3D%2222%22%20r%3D%224%22%20fill%3D%22%233B82F6%22%2F%3E%3Cpath%20d%3D%22M32%2020h10M32%2025h7M22%2034h20M22%2040h20M22%2046h14%22%20stroke%3D%22%2306B6D4%22%20stroke-width%3D%222.5%22%20stroke-linecap%3D%22round%22%2F%3E%3C%2Fsvg%3E">
+  <link rel="shortcut icon" href="favicon.svg">
+  <div class="section-title-wrapper">
+              <span class="section-icon">ðŸ“</span>
               <h2 class="section-title">Professional Summary</h2>
-              <span class="section-count-badge badge-success" id="count-summary">✓</span>
+              <span class="section-count-badge badge-success" id="count-summary">âœ“</span>
             </div>
-            <span class="accordion-chevron">▼</span>
+            <span class="accordion-chevron">â–¼</span>
           </header>
           <div class="section-body">
             <div class="form-group">
               <div class="form-label">
-                <span>Summary (300–500 characters recommended)</span>
+                <span>Summary (300â€“500 characters recommended)</span>
                 <span id="summary-char-counter" class="char-counter">0 / 500 chars</span>
               </div>
               <textarea id="inp-summary" class="form-textarea" rows="4" placeholder="Briefly highlight your years of experience, core technical specialties, top accomplishments, and value you bring to the role..."></textarea>
             </div>
             <div class="field-tip-box">
-              <span>💡</span>
-              <div><strong>ATS Tip:</strong> Include your target job title and 3–5 core industry keywords in the first 2 sentences.</div>
+              <span>ðŸ’¡</span>
+              <div><strong>ATS Tip:</strong> Include your target job title and 3â€“5 core industry keywords in the first 2 sentences.</div>
             </div>
           </div>
         </article>
@@ -258,12 +265,14 @@
         <!-- ACCORDION 3: Work Experience -->
         <article class="form-section-card" id="card-sec-experience">
           <header class="section-header" data-toggle="card-sec-experience">
-            <div class="section-title-wrapper">
-              <span class="section-icon">💼</span>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%20fill%3D%22none%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%233B82F6%22%2F%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%2306B6D4%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2216%22%20fill%3D%22%23091424%22%2F%3E%3Crect%20x%3D%222%22%20y%3D%222%22%20width%3D%2260%22%20height%3D%2260%22%20rx%3D%2214%22%20stroke%3D%22url(%23g)%22%20stroke-width%3D%222%22%20stroke-opacity%3D%220.6%22%2F%3E%3Crect%20x%3D%2216%22%20y%3D%2212%22%20width%3D%2232%22%20height%3D%2240%22%20rx%3D%224%22%20stroke%3D%22url(%23g)%22%20stroke-width%3D%222.5%22%20fill%3D%22%230d2138%22%2F%3E%3Ccircle%20cx%3D%2224%22%20cy%3D%2222%22%20r%3D%224%22%20fill%3D%22%233B82F6%22%2F%3E%3Cpath%20d%3D%22M32%2020h10M32%2025h7M22%2034h20M22%2040h20M22%2046h14%22%20stroke%3D%22%2306B6D4%22%20stroke-width%3D%222.5%22%20stroke-linecap%3D%22round%22%2F%3E%3C%2Fsvg%3E">
+  <link rel="shortcut icon" href="favicon.svg">
+  <div class="section-title-wrapper">
+              <span class="section-icon">ðŸ’¼</span>
               <h2 class="section-title">Work Experience</h2>
               <span class="section-count-badge" id="count-experience">0</span>
             </div>
-            <span class="accordion-chevron">▼</span>
+            <span class="accordion-chevron">â–¼</span>
           </header>
           <div class="section-body">
             <!-- Action Verbs Helper Chips -->
@@ -290,12 +299,14 @@
         <!-- ACCORDION 4: Education -->
         <article class="form-section-card" id="card-sec-education">
           <header class="section-header" data-toggle="card-sec-education">
-            <div class="section-title-wrapper">
-              <span class="section-icon">🎓</span>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%20fill%3D%22none%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%233B82F6%22%2F%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%2306B6D4%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2216%22%20fill%3D%22%23091424%22%2F%3E%3Crect%20x%3D%222%22%20y%3D%222%22%20width%3D%2260%22%20height%3D%2260%22%20rx%3D%2214%22%20stroke%3D%22url(%23g)%22%20stroke-width%3D%222%22%20stroke-opacity%3D%220.6%22%2F%3E%3Crect%20x%3D%2216%22%20y%3D%2212%22%20width%3D%2232%22%20height%3D%2240%22%20rx%3D%224%22%20stroke%3D%22url(%23g)%22%20stroke-width%3D%222.5%22%20fill%3D%22%230d2138%22%2F%3E%3Ccircle%20cx%3D%2224%22%20cy%3D%2222%22%20r%3D%224%22%20fill%3D%22%233B82F6%22%2F%3E%3Cpath%20d%3D%22M32%2020h10M32%2025h7M22%2034h20M22%2040h20M22%2046h14%22%20stroke%3D%22%2306B6D4%22%20stroke-width%3D%222.5%22%20stroke-linecap%3D%22round%22%2F%3E%3C%2Fsvg%3E">
+  <link rel="shortcut icon" href="favicon.svg">
+  <div class="section-title-wrapper">
+              <span class="section-icon">ðŸŽ“</span>
               <h2 class="section-title">Education</h2>
               <span class="section-count-badge" id="count-education">0</span>
             </div>
-            <span class="accordion-chevron">▼</span>
+            <span class="accordion-chevron">â–¼</span>
           </header>
           <div class="section-body">
             <div id="education-list" class="resume-entries-group"></div>
@@ -308,12 +319,14 @@
         <!-- ACCORDION 5: Technical & Professional Skills -->
         <article class="form-section-card" id="card-sec-skills">
           <header class="section-header" data-toggle="card-sec-skills">
-            <div class="section-title-wrapper">
-              <span class="section-icon">⚡</span>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%20fill%3D%22none%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%233B82F6%22%2F%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%2306B6D4%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2216%22%20fill%3D%22%23091424%22%2F%3E%3Crect%20x%3D%222%22%20y%3D%222%22%20width%3D%2260%22%20height%3D%2260%22%20rx%3D%2214%22%20stroke%3D%22url(%23g)%22%20stroke-width%3D%222%22%20stroke-opacity%3D%220.6%22%2F%3E%3Crect%20x%3D%2216%22%20y%3D%2212%22%20width%3D%2232%22%20height%3D%2240%22%20rx%3D%224%22%20stroke%3D%22url(%23g)%22%20stroke-width%3D%222.5%22%20fill%3D%22%230d2138%22%2F%3E%3Ccircle%20cx%3D%2224%22%20cy%3D%2222%22%20r%3D%224%22%20fill%3D%22%233B82F6%22%2F%3E%3Cpath%20d%3D%22M32%2020h10M32%2025h7M22%2034h20M22%2040h20M22%2046h14%22%20stroke%3D%22%2306B6D4%22%20stroke-width%3D%222.5%22%20stroke-linecap%3D%22round%22%2F%3E%3C%2Fsvg%3E">
+  <link rel="shortcut icon" href="favicon.svg">
+  <div class="section-title-wrapper">
+              <span class="section-icon">âš¡</span>
               <h2 class="section-title">Skills & Competencies</h2>
               <span class="section-count-badge" id="count-skills">0</span>
             </div>
-            <span class="accordion-chevron">▼</span>
+            <span class="accordion-chevron">â–¼</span>
           </header>
           <div class="section-body">
             <div class="skills-input-wrapper">
@@ -362,12 +375,14 @@
         <!-- ACCORDION 6: Projects -->
         <article class="form-section-card" id="card-sec-projects">
           <header class="section-header" data-toggle="card-sec-projects">
-            <div class="section-title-wrapper">
-              <span class="section-icon">🚀</span>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%20fill%3D%22none%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%233B82F6%22%2F%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%2306B6D4%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2216%22%20fill%3D%22%23091424%22%2F%3E%3Crect%20x%3D%222%22%20y%3D%222%22%20width%3D%2260%22%20height%3D%2260%22%20rx%3D%2214%22%20stroke%3D%22url(%23g)%22%20stroke-width%3D%222%22%20stroke-opacity%3D%220.6%22%2F%3E%3Crect%20x%3D%2216%22%20y%3D%2212%22%20width%3D%2232%22%20height%3D%2240%22%20rx%3D%224%22%20stroke%3D%22url(%23g)%22%20stroke-width%3D%222.5%22%20fill%3D%22%230d2138%22%2F%3E%3Ccircle%20cx%3D%2224%22%20cy%3D%2222%22%20r%3D%224%22%20fill%3D%22%233B82F6%22%2F%3E%3Cpath%20d%3D%22M32%2020h10M32%2025h7M22%2034h20M22%2040h20M22%2046h14%22%20stroke%3D%22%2306B6D4%22%20stroke-width%3D%222.5%22%20stroke-linecap%3D%22round%22%2F%3E%3C%2Fsvg%3E">
+  <link rel="shortcut icon" href="favicon.svg">
+  <div class="section-title-wrapper">
+              <span class="section-icon">ðŸš€</span>
               <h2 class="section-title">Key Projects</h2>
               <span class="section-count-badge" id="count-projects">0</span>
             </div>
-            <span class="accordion-chevron">▼</span>
+            <span class="accordion-chevron">â–¼</span>
           </header>
           <div class="section-body">
             <div id="projects-list" class="resume-entries-group"></div>
@@ -380,12 +395,14 @@
         <!-- ACCORDION 7: Certifications -->
         <article class="form-section-card" id="card-sec-certifications">
           <header class="section-header" data-toggle="card-sec-certifications">
-            <div class="section-title-wrapper">
-              <span class="section-icon">📜</span>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%20fill%3D%22none%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%233B82F6%22%2F%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%2306B6D4%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2216%22%20fill%3D%22%23091424%22%2F%3E%3Crect%20x%3D%222%22%20y%3D%222%22%20width%3D%2260%22%20height%3D%2260%22%20rx%3D%2214%22%20stroke%3D%22url(%23g)%22%20stroke-width%3D%222%22%20stroke-opacity%3D%220.6%22%2F%3E%3Crect%20x%3D%2216%22%20y%3D%2212%22%20width%3D%2232%22%20height%3D%2240%22%20rx%3D%224%22%20stroke%3D%22url(%23g)%22%20stroke-width%3D%222.5%22%20fill%3D%22%230d2138%22%2F%3E%3Ccircle%20cx%3D%2224%22%20cy%3D%2222%22%20r%3D%224%22%20fill%3D%22%233B82F6%22%2F%3E%3Cpath%20d%3D%22M32%2020h10M32%2025h7M22%2034h20M22%2040h20M22%2046h14%22%20stroke%3D%22%2306B6D4%22%20stroke-width%3D%222.5%22%20stroke-linecap%3D%22round%22%2F%3E%3C%2Fsvg%3E">
+  <link rel="shortcut icon" href="favicon.svg">
+  <div class="section-title-wrapper">
+              <span class="section-icon">ðŸ“œ</span>
               <h2 class="section-title">Certifications & Licenses</h2>
               <span class="section-count-badge" id="count-certifications">0</span>
             </div>
-            <span class="accordion-chevron">▼</span>
+            <span class="accordion-chevron">â–¼</span>
           </header>
           <div class="section-body">
             <div id="certifications-list" class="resume-entries-group"></div>
@@ -398,12 +415,14 @@
         <!-- ACCORDION 8: Languages -->
         <article class="form-section-card" id="card-sec-languages">
           <header class="section-header" data-toggle="card-sec-languages">
-            <div class="section-title-wrapper">
-              <span class="section-icon">🌐</span>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%20fill%3D%22none%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%233B82F6%22%2F%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%2306B6D4%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2216%22%20fill%3D%22%23091424%22%2F%3E%3Crect%20x%3D%222%22%20y%3D%222%22%20width%3D%2260%22%20height%3D%2260%22%20rx%3D%2214%22%20stroke%3D%22url(%23g)%22%20stroke-width%3D%222%22%20stroke-opacity%3D%220.6%22%2F%3E%3Crect%20x%3D%2216%22%20y%3D%2212%22%20width%3D%2232%22%20height%3D%2240%22%20rx%3D%224%22%20stroke%3D%22url(%23g)%22%20stroke-width%3D%222.5%22%20fill%3D%22%230d2138%22%2F%3E%3Ccircle%20cx%3D%2224%22%20cy%3D%2222%22%20r%3D%224%22%20fill%3D%22%233B82F6%22%2F%3E%3Cpath%20d%3D%22M32%2020h10M32%2025h7M22%2034h20M22%2040h20M22%2046h14%22%20stroke%3D%22%2306B6D4%22%20stroke-width%3D%222.5%22%20stroke-linecap%3D%22round%22%2F%3E%3C%2Fsvg%3E">
+  <link rel="shortcut icon" href="favicon.svg">
+  <div class="section-title-wrapper">
+              <span class="section-icon">ðŸŒ</span>
               <h2 class="section-title">Languages</h2>
               <span class="section-count-badge" id="count-languages">0</span>
             </div>
-            <span class="accordion-chevron">▼</span>
+            <span class="accordion-chevron">â–¼</span>
           </header>
           <div class="section-body">
             <div id="languages-list" class="resume-entries-group"></div>
@@ -482,7 +501,7 @@
             </button>
             <div class="wizard-step-line"></div>
             <button type="button" class="wizard-step-btn" data-step="7">
-              <span class="step-circle">🎉</span>
+              <span class="step-circle">ðŸŽ‰</span>
               <span class="step-name">Finish</span>
             </button>
           </div>
@@ -501,18 +520,18 @@
         <!-- Wizard Navigation Action Bar (Clean 2-Group Design) -->
         <div class="wizard-bottom-bar">
           <button type="button" id="btn-wizard-prev" class="btn btn-ghost" disabled>
-            <span>←</span> Previous
+            <span>â†</span> Previous
           </button>
 
           <div class="wizard-bottom-actions">
             <button type="button" id="btn-wizard-preview-bottom" class="btn btn-ghost" title="Quick Preview">
-              <span>👁️</span> Quick Preview
+              <span>ðŸ‘ï¸</span> Quick Preview
             </button>
             <button type="button" id="btn-wizard-skip" class="btn btn-ghost">
               Skip
             </button>
             <button type="button" id="btn-wizard-next" class="btn btn-primary wizard-next-btn btn-glow">
-              <span id="wizard-next-text">Save & Next →</span>
+              <span id="wizard-next-text">Save & Next â†’</span>
             </button>
           </div>
         </div>
@@ -554,12 +573,12 @@
 
             <!-- Smart 1-Click Auto-Fit Button -->
             <button type="button" id="btn-auto-fit-page" class="btn-auto-fit" title="1-Click Auto-Fit: Automatically optimizes font size, spacing, and margins so your resume fits into exactly 1 page">
-              <span>⚡</span> Auto-Fit 1 Page
+              <span>âš¡</span> Auto-Fit 1 Page
             </button>
 
             <!-- Page Fit Status Badge -->
             <div id="page-fit-indicator" class="page-indicator-badge fit-pass" title="Live Page Count Status">
-              <span id="page-fit-text">📄 1 Page (100% Fit)</span>
+              <span id="page-fit-text">ðŸ“„ 1 Page (100% Fit)</span>
             </div>
 
           </div>
@@ -570,9 +589,9 @@
             <!-- Page Setup (Margins, Size, Spacing & Color) Popover Dropdown -->
             <div class="page-setup-wrapper" id="page-setup-wrapper">
               <button type="button" id="btn-page-setup" class="btn-page-setup" title="Fine-tune font size, line spacing, margins, and accent color">
-                <span>📐</span>
+                <span>ðŸ“</span>
                 <span>Page Setup</span>
-                <span class="dropdown-chevron">▼</span>
+                <span class="dropdown-chevron">â–¼</span>
               </button>
               
               <div class="page-setup-popover" id="page-setup-popover" role="dialog" aria-label="Page Setup Options">
@@ -652,10 +671,12 @@
     <div class="modal-backdrop" id="modal-ats-score" role="dialog" aria-modal="true" aria-labelledby="ats-modal-title">
       <div class="modal-dialog">
         <header class="modal-header">
-          <h3 class="modal-title" id="ats-modal-title">
-            <span>📊</span> ATS Optimization Inspector
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%20fill%3D%22none%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%233B82F6%22%2F%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%2306B6D4%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2216%22%20fill%3D%22%23091424%22%2F%3E%3Crect%20x%3D%222%22%20y%3D%222%22%20width%3D%2260%22%20height%3D%2260%22%20rx%3D%2214%22%20stroke%3D%22url(%23g)%22%20stroke-width%3D%222%22%20stroke-opacity%3D%220.6%22%2F%3E%3Crect%20x%3D%2216%22%20y%3D%2212%22%20width%3D%2232%22%20height%3D%2240%22%20rx%3D%224%22%20stroke%3D%22url(%23g)%22%20stroke-width%3D%222.5%22%20fill%3D%22%230d2138%22%2F%3E%3Ccircle%20cx%3D%2224%22%20cy%3D%2222%22%20r%3D%224%22%20fill%3D%22%233B82F6%22%2F%3E%3Cpath%20d%3D%22M32%2020h10M32%2025h7M22%2034h20M22%2040h20M22%2046h14%22%20stroke%3D%22%2306B6D4%22%20stroke-width%3D%222.5%22%20stroke-linecap%3D%22round%22%2F%3E%3C%2Fsvg%3E">
+  <link rel="shortcut icon" href="favicon.svg">
+  <h3 class="modal-title" id="ats-modal-title">
+            <span>ðŸ“Š</span> ATS Optimization Inspector
           </h3>
-          <button class="modal-close-btn" data-close-modal="modal-ats-score" aria-label="Close">✕</button>
+          <button class="modal-close-btn" data-close-modal="modal-ats-score" aria-label="Close">âœ•</button>
         </header>
         <div class="modal-body">
           
@@ -687,10 +708,12 @@
     <div class="modal-backdrop" id="modal-manage-sections" role="dialog" aria-modal="true">
       <div class="modal-dialog">
         <header class="modal-header">
-          <h3 class="modal-title">
-            <span>↕️</span> Manage Section Order & Visibility
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%20fill%3D%22none%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%233B82F6%22%2F%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%2306B6D4%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2216%22%20fill%3D%22%23091424%22%2F%3E%3Crect%20x%3D%222%22%20y%3D%222%22%20width%3D%2260%22%20height%3D%2260%22%20rx%3D%2214%22%20stroke%3D%22url(%23g)%22%20stroke-width%3D%222%22%20stroke-opacity%3D%220.6%22%2F%3E%3Crect%20x%3D%2216%22%20y%3D%2212%22%20width%3D%2232%22%20height%3D%2240%22%20rx%3D%224%22%20stroke%3D%22url(%23g)%22%20stroke-width%3D%222.5%22%20fill%3D%22%230d2138%22%2F%3E%3Ccircle%20cx%3D%2224%22%20cy%3D%2222%22%20r%3D%224%22%20fill%3D%22%233B82F6%22%2F%3E%3Cpath%20d%3D%22M32%2020h10M32%2025h7M22%2034h20M22%2040h20M22%2046h14%22%20stroke%3D%22%2306B6D4%22%20stroke-width%3D%222.5%22%20stroke-linecap%3D%22round%22%2F%3E%3C%2Fsvg%3E">
+  <link rel="shortcut icon" href="favicon.svg">
+  <h3 class="modal-title">
+            <span>â†•ï¸</span> Manage Section Order & Visibility
           </h3>
-          <button class="modal-close-btn" data-close-modal="modal-manage-sections" aria-label="Close">✕</button>
+          <button class="modal-close-btn" data-close-modal="modal-manage-sections" aria-label="Close">âœ•</button>
         </header>
         <div class="modal-body">
           <p style="font-size: 0.84rem; color: var(--text-secondary);">
@@ -708,10 +731,12 @@
     <div class="modal-backdrop" id="modal-plain-text" role="dialog" aria-modal="true">
       <div class="modal-dialog" style="max-width: 680px;">
         <header class="modal-header">
-          <h3 class="modal-title">
-            <span>📋</span> ATS Plain Text Output
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%20fill%3D%22none%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%233B82F6%22%2F%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%2306B6D4%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2216%22%20fill%3D%22%23091424%22%2F%3E%3Crect%20x%3D%222%22%20y%3D%222%22%20width%3D%2260%22%20height%3D%2260%22%20rx%3D%2214%22%20stroke%3D%22url(%23g)%22%20stroke-width%3D%222%22%20stroke-opacity%3D%220.6%22%2F%3E%3Crect%20x%3D%2216%22%20y%3D%2212%22%20width%3D%2232%22%20height%3D%2240%22%20rx%3D%224%22%20stroke%3D%22url(%23g)%22%20stroke-width%3D%222.5%22%20fill%3D%22%230d2138%22%2F%3E%3Ccircle%20cx%3D%2224%22%20cy%3D%2222%22%20r%3D%224%22%20fill%3D%22%233B82F6%22%2F%3E%3Cpath%20d%3D%22M32%2020h10M32%2025h7M22%2034h20M22%2040h20M22%2046h14%22%20stroke%3D%22%2306B6D4%22%20stroke-width%3D%222.5%22%20stroke-linecap%3D%22round%22%2F%3E%3C%2Fsvg%3E">
+  <link rel="shortcut icon" href="favicon.svg">
+  <h3 class="modal-title">
+            <span>ðŸ“‹</span> ATS Plain Text Output
           </h3>
-          <button class="modal-close-btn" data-close-modal="modal-plain-text" aria-label="Close">✕</button>
+          <button class="modal-close-btn" data-close-modal="modal-plain-text" aria-label="Close">âœ•</button>
         </header>
         <div class="modal-body">
           <p style="font-size: 0.84rem; color: var(--text-secondary);">
@@ -721,7 +746,7 @@
         </div>
         <footer class="modal-footer">
           <button type="button" id="btn-copy-plain-text" class="btn btn-primary">
-            <span>📋</span> Copy to Clipboard
+            <span>ðŸ“‹</span> Copy to Clipboard
           </button>
           <button type="button" class="btn btn-ghost" data-close-modal="modal-plain-text">Close</button>
         </footer>
@@ -732,10 +757,12 @@
     <div class="modal-backdrop" id="modal-json" role="dialog" aria-modal="true">
       <div class="modal-dialog">
         <header class="modal-header">
-          <h3 class="modal-title">
-            <span>💾</span> Backup & Restore Resume Data
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%20fill%3D%22none%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%233B82F6%22%2F%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%2306B6D4%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2216%22%20fill%3D%22%23091424%22%2F%3E%3Crect%20x%3D%222%22%20y%3D%222%22%20width%3D%2260%22%20height%3D%2260%22%20rx%3D%2214%22%20stroke%3D%22url(%23g)%22%20stroke-width%3D%222%22%20stroke-opacity%3D%220.6%22%2F%3E%3Crect%20x%3D%2216%22%20y%3D%2212%22%20width%3D%2232%22%20height%3D%2240%22%20rx%3D%224%22%20stroke%3D%22url(%23g)%22%20stroke-width%3D%222.5%22%20fill%3D%22%230d2138%22%2F%3E%3Ccircle%20cx%3D%2224%22%20cy%3D%2222%22%20r%3D%224%22%20fill%3D%22%233B82F6%22%2F%3E%3Cpath%20d%3D%22M32%2020h10M32%2025h7M22%2034h20M22%2040h20M22%2046h14%22%20stroke%3D%22%2306B6D4%22%20stroke-width%3D%222.5%22%20stroke-linecap%3D%22round%22%2F%3E%3C%2Fsvg%3E">
+  <link rel="shortcut icon" href="favicon.svg">
+  <h3 class="modal-title">
+            <span>ðŸ’¾</span> Backup & Restore Resume Data
           </h3>
-          <button class="modal-close-btn" data-close-modal="modal-json" aria-label="Close">✕</button>
+          <button class="modal-close-btn" data-close-modal="modal-json" aria-label="Close">âœ•</button>
         </header>
         <div class="modal-body">
           <div class="form-group">
@@ -764,8 +791,10 @@
     <div class="modal-backdrop" id="modal-confirm" role="dialog" aria-modal="true">
       <div class="modal-dialog" style="max-width: 440px;">
         <header class="modal-header">
-          <h3 class="modal-title" id="modal-confirm-title">Confirm Action</h3>
-          <button class="modal-close-btn" data-close-modal="modal-confirm" aria-label="Close">✕</button>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%20fill%3D%22none%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%233B82F6%22%2F%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%2306B6D4%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2216%22%20fill%3D%22%23091424%22%2F%3E%3Crect%20x%3D%222%22%20y%3D%222%22%20width%3D%2260%22%20height%3D%2260%22%20rx%3D%2214%22%20stroke%3D%22url(%23g)%22%20stroke-width%3D%222%22%20stroke-opacity%3D%220.6%22%2F%3E%3Crect%20x%3D%2216%22%20y%3D%2212%22%20width%3D%2232%22%20height%3D%2240%22%20rx%3D%224%22%20stroke%3D%22url(%23g)%22%20stroke-width%3D%222.5%22%20fill%3D%22%230d2138%22%2F%3E%3Ccircle%20cx%3D%2224%22%20cy%3D%2222%22%20r%3D%224%22%20fill%3D%22%233B82F6%22%2F%3E%3Cpath%20d%3D%22M32%2020h10M32%2025h7M22%2034h20M22%2040h20M22%2046h14%22%20stroke%3D%22%2306B6D4%22%20stroke-width%3D%222.5%22%20stroke-linecap%3D%22round%22%2F%3E%3C%2Fsvg%3E">
+  <link rel="shortcut icon" href="favicon.svg">
+  <h3 class="modal-title" id="modal-confirm-title">Confirm Action</h3>
+          <button class="modal-close-btn" data-close-modal="modal-confirm" aria-label="Close">âœ•</button>
         </header>
         <div class="modal-body">
           <p id="modal-confirm-message" style="font-size: 0.9rem; color: var(--text-secondary);">Are you sure you want to proceed?</p>
@@ -781,16 +810,18 @@
     <div class="modal-backdrop" id="modal-quick-preview" role="dialog" aria-modal="true" aria-labelledby="quick-preview-title">
       <div class="modal-dialog quick-preview-dialog">
         <header class="modal-header quick-preview-header">
-          <div class="quick-preview-header-left">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%20fill%3D%22none%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%233B82F6%22%2F%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%2306B6D4%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2216%22%20fill%3D%22%23091424%22%2F%3E%3Crect%20x%3D%222%22%20y%3D%222%22%20width%3D%2260%22%20height%3D%2260%22%20rx%3D%2214%22%20stroke%3D%22url(%23g)%22%20stroke-width%3D%222%22%20stroke-opacity%3D%220.6%22%2F%3E%3Crect%20x%3D%2216%22%20y%3D%2212%22%20width%3D%2232%22%20height%3D%2240%22%20rx%3D%224%22%20stroke%3D%22url(%23g)%22%20stroke-width%3D%222.5%22%20fill%3D%22%230d2138%22%2F%3E%3Ccircle%20cx%3D%2224%22%20cy%3D%2222%22%20r%3D%224%22%20fill%3D%22%233B82F6%22%2F%3E%3Cpath%20d%3D%22M32%2020h10M32%2025h7M22%2034h20M22%2040h20M22%2046h14%22%20stroke%3D%22%2306B6D4%22%20stroke-width%3D%222.5%22%20stroke-linecap%3D%22round%22%2F%3E%3C%2Fsvg%3E">
+  <link rel="shortcut icon" href="favicon.svg">
+  <div class="quick-preview-header-left">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: #38bdf8;"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
             <h3 class="modal-title" id="quick-preview-title">Quick Resume Preview</h3>
             <span class="ats-pill">1-Page ATS Safe</span>
           </div>
           <div class="quick-preview-header-right">
             <button type="button" id="btn-quick-preview-pdf" class="btn btn-primary btn-sm">
-              <span>📥</span> Download PDF
+              <span>ðŸ“¥</span> Download PDF
             </button>
-            <button class="modal-close-btn" data-close-modal="modal-quick-preview" aria-label="Close">✕</button>
+            <button class="modal-close-btn" data-close-modal="modal-quick-preview" aria-label="Close">âœ•</button>
           </div>
         </header>
         <div class="modal-body quick-preview-body" id="quick-preview-scroll-body">
@@ -800,7 +831,7 @@
         </div>
         <footer class="modal-footer quick-preview-footer">
           <button type="button" class="btn btn-ghost" data-close-modal="modal-quick-preview">Back to Wizard</button>
-          <button type="button" id="btn-quick-preview-editor" class="btn btn-ghost">Open in Full Editor ⚡</button>
+          <button type="button" id="btn-quick-preview-editor" class="btn btn-ghost">Open in Full Editor âš¡</button>
         </footer>
       </div>
     </div>

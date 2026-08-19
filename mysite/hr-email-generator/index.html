@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>Sagar Chavda — HR Outreach Generator</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Sagar Chavda — HR Outreach Generator</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%20fill%3D%22none%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%232DE2C4%22%2F%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%231BA38B%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2216%22%20fill%3D%22%230B1622%22%2F%3E%3Crect%20x%3D%222%22%20y%3D%222%22%20width%3D%2260%22%20height%3D%2260%22%20rx%3D%2214%22%20stroke%3D%22url(%23g)%22%20stroke-width%3D%222%22%20stroke-opacity%3D%220.6%22%2F%3E%3Cpath%20d%3D%22M15%2022C15%2020.8954%2015.8954%2020%2017%2020H47C48.1046%2020%2049%2020.8954%2049%2022V42C49%2043.1046%2048.1046%2044%2047%2044H17C15.8954%2044%2015%2043.1046%2015%2042V22Z%22%20stroke%3D%22url(%23g)%22%20stroke-width%3D%222.5%22%20fill%3D%22%230d2435%22%2F%3E%3Cpath%20d%3D%22M15%2022L32%2034L49%2022%22%20stroke%3D%22url(%23g)%22%20stroke-width%3D%222.5%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%2F%3E%3Cpolygon%20points%3D%2235%2024%2028%2034%2033%2034%2029%2042%2039%2032%2034%2032%22%20fill%3D%22%232de2c4%22%2F%3E%3C%2Fsvg%3E">
+  <link rel="shortcut icon" href="favicon.svg">
 <style>
   :root {
     --navy: #0b1622;
@@ -651,6 +653,119 @@
     border-color: var(--teal);
   }
 
+  /* Comment Generator Styles */
+  .comment-styles-bar {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 14px;
+    flex-wrap: wrap;
+  }
+  .comment-style-chip {
+    padding: 7px 13px;
+    background: #0a1520;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    color: var(--muted);
+    font-size: 12px;
+    font-family: var(--mono);
+    cursor: pointer;
+    transition: all 0.15s ease;
+    outline: none;
+  }
+  .comment-style-chip:hover {
+    border-color: var(--teal);
+    color: var(--text);
+    background: #0e202f;
+  }
+  .comment-style-chip.active {
+    background: var(--teal-dim);
+    color: #fff;
+    border-color: var(--teal);
+    font-weight: 600;
+  }
+  
+  .comment-templates-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+    margin-top: 14px;
+  }
+  .comment-card {
+    background: #0a1520;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: border-color 0.2s ease, transform 0.15s ease;
+  }
+  .comment-card:hover {
+    border-color: var(--teal-dim);
+    transform: translateY(-2px);
+  }
+  .comment-card-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #1e344680;
+  }
+  .comment-card-title {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--teal);
+    font-family: var(--mono);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .comment-card-text {
+    font-family: var(--mono);
+    font-size: 12px;
+    color: #d7e4e7;
+    white-space: pre-wrap;
+    word-break: break-word;
+    line-height: 1.55;
+    margin-bottom: 12px;
+    background: #071018;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #152737;
+    min-height: 75px;
+  }
+  .comment-card-copy-btn {
+    width: 100%;
+    padding: 8px 12px;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: var(--mono);
+    background: #152d3d;
+    color: var(--teal);
+    border: 1px solid var(--teal-dim);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+  }
+  .comment-card-copy-btn:hover {
+    background: var(--teal);
+    color: var(--navy);
+  }
+  .comment-card-copy-btn.copied {
+    background: #7dffc0;
+    color: var(--navy);
+    border-color: #7dffc0;
+  }
+  .comment-badge-info {
+    font-size: 11px;
+    color: var(--muted);
+    font-family: var(--mono);
+  }
+
   /* Mobile Responsive Optimizations */
   @media (max-width: 768px) {
     body {
@@ -676,6 +791,18 @@
       padding: 10px 14px;
       font-size: 13px;
       flex-shrink: 0;
+    }
+    .comment-styles-bar {
+      overflow-x: auto;
+      white-space: nowrap;
+      padding-bottom: 4px;
+      -webkit-overflow-scrolling: touch;
+    }
+    .comment-style-chip {
+      flex-shrink: 0;
+    }
+    .comment-templates-grid {
+      grid-template-columns: 1fr;
     }
     input, select {
       font-size: 16px; /* Prevents auto-zoom on iOS */
@@ -801,16 +928,19 @@
 <div class="wrap">
 
   <header>
-    <div class="mark">SC</div>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%20fill%3D%22none%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%232DE2C4%22%2F%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%231BA38B%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2216%22%20fill%3D%22%230B1622%22%2F%3E%3Crect%20x%3D%222%22%20y%3D%222%22%20width%3D%2260%22%20height%3D%2260%22%20rx%3D%2214%22%20stroke%3D%22url(%23g)%22%20stroke-width%3D%222%22%20stroke-opacity%3D%220.6%22%2F%3E%3Cpath%20d%3D%22M15%2022C15%2020.8954%2015.8954%2020%2017%2020H47C48.1046%2020%2049%2020.8954%2049%2022V42C49%2043.1046%2048.1046%2044%2047%2044H17C15.8954%2044%2015%2043.1046%2015%2042V22Z%22%20stroke%3D%22url(%23g)%22%20stroke-width%3D%222.5%22%20fill%3D%22%230d2435%22%2F%3E%3Cpath%20d%3D%22M15%2022L32%2034L49%2022%22%20stroke%3D%22url(%23g)%22%20stroke-width%3D%222.5%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%2F%3E%3Cpolygon%20points%3D%2235%2024%2028%2034%2033%2034%2029%2042%2039%2032%2034%2032%22%20fill%3D%22%232de2c4%22%2F%3E%3C%2Fsvg%3E">
+  <link rel="shortcut icon" href="favicon.svg">
+  <div class="mark">SC</div>
     <div>
       <h1>HR Outreach Generator</h1>
-      <p>Fill placeholders once → get ready-to-send Initial + Follow-up emails</p>
+      <p>Fill placeholders once â†’ get ready-to-send Initial + Follow-up emails</p>
     </div>
   </header>
 
   <div class="tabs">
     <button class="tab active" data-tab="initial">Initial Email</button>
     <button class="tab" data-tab="followup">Follow-up Email</button>
+    <button class="tab" data-tab="comment">Job Post Comment</button>
     <button class="tab" data-tab="records">Outreach Logs</button>
   </div>
 
@@ -839,13 +969,13 @@
 
       <label>Hiring Manager / Team Name</label>
       <input id="hrname" placeholder="e.g. Riya (leave blank if unknown)" oninput="render()">
-      <div class="hint">Blank → "Hiring Team" use hoga</div>
+      <div class="hint">Blank â†’ "Hiring Team" use hoga</div>
 
       <label>Days Since Initial Email (for follow-up)</label>
       <input id="days" type="number" value="4" min="1" oninput="render()">
 
       <label>Phone No.</label>
-      <input id="phone" placeholder="e.g. +91 82001 23173" oninput="render()">
+      <input id="phone" placeholder="e.g. +91 82001 23173" value="+91 8200123173" oninput="render()">
 
       <label>Comment</label>
       <input id="comment" placeholder="e.g. he is find 5 year exp" oninput="render()">
@@ -870,7 +1000,7 @@
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display: inline-block; vertical-align: middle; margin-right: 6px;">
           <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
         </svg>
-        <span>⚡ Step-by-Step Copy Modal</span>
+        <span>âš¡ Step-by-Step Copy Modal</span>
       </button>
 
       <button class="send-btn disabled btn-gmail" id="sidebarGmailBtn" onclick="sendViaGmail()" style="width: 100%; margin-top: 10px;">
@@ -896,13 +1026,20 @@
         </svg>
         <span>Save Record</span>
       </button>
+
+      <button class="send-btn" id="sidebarQuickCommentBtn" onclick="quickCopyPostComment()" style="width: 100%; margin-top: 10px; background: #0c2738; color: var(--teal); border-color: var(--teal-dim);">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: inline-block; vertical-align: middle; margin-right: 6px;">
+          <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+        </svg>
+        <span>ðŸ’¬ Copy Job Post Comment</span>
+      </button>
     </div>
 
     <div class="card">
       <div class="preview-head">
-        <h2 id="previewTitle" style="margin:0;">Preview — Initial Email</h2>
-        <div style="display: flex; gap: 8px; flex-wrap: wrap;">
-          <button class="send-btn disabled" id="headerWizardBtn" onclick="openCopyWizard()" style="background: linear-gradient(135deg, var(--teal), var(--teal-dim)); color: var(--navy); border: none; font-weight: 700;">⚡ Step Copy</button>
+        <h2 id="previewTitle" style="margin:0;">Preview â€” Initial Email</h2>
+        <div style="display: flex; gap: 8px; flex-wrap: wrap;" id="emailActionButtons">
+          <button class="send-btn disabled" id="headerWizardBtn" onclick="openCopyWizard()" style="background: linear-gradient(135deg, var(--teal), var(--teal-dim)); color: var(--navy); border: none; font-weight: 700;">âš¡ Step Copy</button>
           <button class="copy-btn" id="copyBtn" onclick="copyEmail()">Copy Body</button>
           <button class="send-btn disabled btn-gmail" id="headerGmailBtn" onclick="sendViaGmail()">
             <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" style="display: inline-block; vertical-align: middle; margin-right: 4px;">
@@ -918,15 +1055,90 @@
             Copy Log
           </button>
         </div>
+
+        <div style="display: none; gap: 8px; flex-wrap: wrap;" id="commentActionButtons">
+          <button class="copy-btn" id="copyCommentMainBtn" onclick="copyActiveComment()">ðŸ“‹ Copy Selected Comment</button>
+          <button class="send-btn" onclick="quickCopyMinimalComment()" style="background: #0f2e2d; color: var(--teal); border-color: var(--teal-dim);">âš¡ Copy Minimal</button>
+        </div>
       </div>
 
-      <div class="subject-line">
-        <span>Subject</span>
+      <!-- Comment Style Selector (Visible in Comment Tab) -->
+      <div class="comment-styles-bar" id="commentStylesBar" style="display: none;">
+        <button type="button" class="comment-style-chip active" data-style="minimal" onclick="selectCommentStyle('minimal')">1. Minimal (Interested + Contact)</button>
+        <button type="button" class="comment-style-chip" data-style="professional" onclick="selectCommentStyle('professional')">2. Professional (.NET + Exp)</button>
+        <button type="button" class="comment-style-chip" data-style="pitch" onclick="selectCommentStyle('pitch')">3. Tech Pitch (Skills + Portfolio)</button>
+        <button type="button" class="comment-style-chip" data-style="singleline" onclick="selectCommentStyle('singleline')">4. Single-Line Compact</button>
+        <button type="button" class="comment-style-chip" data-style="custom" onclick="selectCommentStyle('custom')">5. Custom Note</button>
+      </div>
+
+      <div class="subject-line" id="subjectLineContainer">
+        <span id="subjectLabel">Subject</span>
         <span id="subjectOut"></span>
         <button class="copy-sub-btn" id="copySubBtn" onclick="copySubject()">Copy</button>
       </div>
 
       <div class="body-preview" id="bodyOut"></div>
+
+      <!-- Ready Comment Variations Grid (Visible only in Comment Tab) -->
+      <div id="commentTemplatesSection" style="display: none; margin-top: 24px;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+          <h3 style="font-size: 13px; text-transform: uppercase; letter-spacing: 1px; color: var(--teal); margin: 0; font-family: var(--mono);">âš¡ Ready-to-Use Comment Variations</h3>
+          <span style="font-size: 11px; color: var(--muted); font-family: var(--mono);">Click any button to copy instantly</span>
+        </div>
+        <div class="comment-templates-grid">
+          <!-- Card 1: Minimal -->
+          <div class="comment-card">
+            <div class="comment-card-head">
+              <span class="comment-card-title">1. Minimal / Direct</span>
+              <span class="comment-badge-info">3 lines</span>
+            </div>
+            <div class="comment-card-text" id="cardMinimalText"></div>
+            <button class="comment-card-copy-btn" id="copyCardMinimalBtn" onclick="copyTemplateComment('minimal', this)">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+              Copy Minimal
+            </button>
+          </div>
+
+          <!-- Card 2: Professional -->
+          <div class="comment-card">
+            <div class="comment-card-head">
+              <span class="comment-card-title">2. Professional</span>
+              <span class="comment-badge-info">Role + Contact</span>
+            </div>
+            <div class="comment-card-text" id="cardProfText"></div>
+            <button class="comment-card-copy-btn" id="copyCardProfBtn" onclick="copyTemplateComment('professional', this)">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+              Copy Professional
+            </button>
+          </div>
+
+          <!-- Card 3: Tech Pitch -->
+          <div class="comment-card">
+            <div class="comment-card-head">
+              <span class="comment-card-title">3. Tech Pitch</span>
+              <span class="comment-badge-info">Skills + Portfolio</span>
+            </div>
+            <div class="comment-card-text" id="cardPitchText"></div>
+            <button class="comment-card-copy-btn" id="copyCardPitchBtn" onclick="copyTemplateComment('pitch', this)">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+              Copy Tech Pitch
+            </button>
+          </div>
+
+          <!-- Card 4: Single-Line -->
+          <div class="comment-card">
+            <div class="comment-card-head">
+              <span class="comment-card-title">4. Single-Line</span>
+              <span class="comment-badge-info">Compact</span>
+            </div>
+            <div class="comment-card-text" id="cardSingleLineText"></div>
+            <button class="comment-card-copy-btn" id="copyCardSingleBtn" onclick="copyTemplateComment('singleline', this)">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+              Copy Single-Line
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -1012,7 +1224,7 @@
   <div class="modal-overlay" id="quickCopyModal">
     <div class="modal" style="max-width: 560px;">
       <div class="modal-header">
-        <h3 id="wizardModalTitle">⚡ Step 1: Copy Recipient Email</h3>
+        <h3 id="wizardModalTitle">âš¡ Step 1: Copy Recipient Email</h3>
         <button class="close-modal" onclick="closeCopyWizard()">&times;</button>
       </div>
       <div class="modal-body">
@@ -1028,7 +1240,7 @@
         <div class="wizard-preview-box" id="wizardPreviewContent"></div>
 
         <button class="wizard-action-btn" id="wizardActionBtn" onclick="handleWizardAction()">
-          <span id="wizardActionText">Copy Email & Next ➔</span>
+          <span id="wizardActionText">Copy Email & Next âž”</span>
         </button>
       </div>
       <div class="modal-footer" style="justify-content: space-between;">
@@ -1044,11 +1256,12 @@
     <span id="toastText">Message goes here</span>
   </div>
 
-  <footer>Sagar P. Chavda &nbsp;·&nbsp; .NET Developer &nbsp;·&nbsp; sagarchavada80@gmail.com &nbsp;·&nbsp; +91 8200123173</footer>
+  <footer>Sagar P. Chavda &nbsp;Â·&nbsp; .NET Developer &nbsp;Â·&nbsp; sagarchavada80@gmail.com &nbsp;Â·&nbsp; +91 8200123173</footer>
 </div>
 
 <script>
 let activeTab = 'initial';
+let activeCommentStyle = 'minimal';
 let lastExtractedCompany = '';
 let records = [];
 let currentPage = 1;
@@ -1083,8 +1296,13 @@ document.querySelectorAll('.tab').forEach(t => {
     } else {
       grid.style.display = 'grid';
       recordsContainer.classList.remove('active');
-      document.getElementById('previewTitle').textContent =
-        activeTab === 'initial' ? 'Preview — Initial Email' : 'Preview — Follow-up Email';
+      if (activeTab === 'initial') {
+        document.getElementById('previewTitle').textContent = 'Preview â€” Initial Email';
+      } else if (activeTab === 'followup') {
+        document.getElementById('previewTitle').textContent = 'Preview â€” Follow-up Email';
+      } else if (activeTab === 'comment') {
+        document.getElementById('previewTitle').textContent = 'Preview â€” Job Post Comment';
+      }
       render();
     }
   });
@@ -1342,8 +1560,8 @@ function copySheetInfo() {
     const prevSidebarText = sidebarBtn.innerHTML;
     const prevHeaderText = headerBtn.innerHTML;
     
-    sidebarBtn.innerHTML = 'Copied ✓';
-    headerBtn.innerHTML = 'Copied ✓';
+    sidebarBtn.innerHTML = 'Copied âœ“';
+    headerBtn.innerHTML = 'Copied âœ“';
     
     sidebarBtn.classList.add('copied');
     headerBtn.classList.add('copied');
@@ -1369,15 +1587,15 @@ function buildInitial() {
 
   const hasCompany = rawCompany.length > 0 && rawCompany !== '[Company Name]';
   const subject = hasCompany
-    ? `${jobtitle} (4 Yrs Exp) — Immediate Joiner | Application for ${rawCompany}`
-    : `${jobtitle} (4 Yrs Exp) — Immediate Joiner | Job Application`;
+    ? `${jobtitle} (4 Yrs Exp) â€” Immediate Joiner | Application for ${rawCompany}`
+    : `${jobtitle} (4 Yrs Exp) â€” Immediate Joiner | Job Application`;
 
   const companySnippet = hasCompany ? ` at ${rawCompany}` : '';
 
   const body =
 `Hi ${hr},
 
-I'm Sagar Chavda, a .NET Developer with 4 years of experience building scalable backend systems using ASP.NET Core, Web API, SQL Server, and PostgreSQL. I came across the ${jobtitle} opening${companySnippet} and wanted to share my profile — I'm an immediate joiner.
+I'm Sagar Chavda, a .NET Developer with 4 years of experience building scalable backend systems using ASP.NET Core, Web API, SQL Server, and PostgreSQL. I came across the ${jobtitle} opening${companySnippet} and wanted to share my profile â€” I'm an immediate joiner.
 
 A quick snapshot of my experience:
 - Designed and developed REST APIs and role-based access control (RBAC) systems for multi-tenant applications
@@ -1391,9 +1609,9 @@ Portfolio: https://chavadasagar.github.io/mysite/portfolio
 Thanks & Regards,
 Sagar P. Chavda
 .NET Developer
-📞 +91 8200123173
-📧 sagarchavada80@gmail.com
-🔗 LinkedIn: https://linkedin.com/in/sagarchavada
+ðŸ“ž +91 8200123173
+ðŸ“§ sagarchavada80@gmail.com
+ðŸ”— LinkedIn: https://linkedin.com/in/sagarchavada
 
 (Resume attached as PDF)`;
 
@@ -1408,8 +1626,8 @@ function buildFollowup() {
 
   const hasCompany = rawCompany.length > 0 && rawCompany !== '[Company Name]';
   const subject = hasCompany
-    ? `Following up — ${jobtitle} Application at ${rawCompany}`
-    : `Following up — ${jobtitle} Application`;
+    ? `Following up â€” ${jobtitle} Application at ${rawCompany}`
+    : `Following up â€” ${jobtitle} Application`;
 
   const companySnippet = hasCompany ? ` at ${rawCompany}` : '';
 
@@ -1431,28 +1649,143 @@ Portfolio: https://chavadasagar.github.io/mysite/portfolio
 Thanks & Regards,
 Sagar P. Chavda
 .NET Developer
-📞 +91 8200123173
-📧 sagarchavada80@gmail.com
-🔗 LinkedIn: https://linkedin.com/in/sagarchavada`;
+ðŸ“ž +91 8200123173
+ðŸ“§ sagarchavada80@gmail.com
+ðŸ”— LinkedIn: https://linkedin.com/in/sagarchavada`;
 
   return { subject, body };
 }
 
-function render() {
-  const { subject, body } = activeTab === 'initial' ? buildInitial() : buildFollowup();
-  document.getElementById('subjectOut').textContent = subject;
-  document.getElementById('bodyOut').textContent = body;
+function getCleanPhone() {
+  const p = document.getElementById('phone').value.trim();
+  if (p) return p;
+  return '+91 8200123173';
+}
+
+function buildCommentTemplates() {
+  const jobtitle = val('jobtitle', '.NET Developer');
+  const rawCompany = document.getElementById('company').value.trim();
+  const hasCompany = rawCompany.length > 0 && rawCompany !== '[Company Name]';
+  const company = hasCompany ? rawCompany : '';
   
-  const copyBtn = document.getElementById('copyBtn');
-  copyBtn.classList.remove('copied');
-  copyBtn.textContent = 'Copy Body';
+  const phone = getCleanPhone();
+  const plainPhone = phone.replace(/[^0-9+]/g, '') || '8200123173';
+  const myEmail = 'sagarchavada80@gmail.com';
+  const portfolio = 'https://chavadasagar.github.io/mysite/portfolio';
+  const exp = '4 Years';
+  const notice = 'Immediate Joiner';
+  const skills = 'ASP.NET Core, Web API, SQL Server, PostgreSQL & Clean Architecture';
+  const customComment = document.getElementById('comment').value.trim();
+  
+  // 1. Minimal / Direct (Exact requested format)
+  const minimal = `Interested\n${plainPhone}\n${myEmail}`;
+  
+  // 2. Professional
+  const compSnippet = company ? ` for ${company}` : '';
+  const professional = `Interested in the ${jobtitle} role${compSnippet}!\nExperience: ${exp} (${notice})\nðŸ“§ ${myEmail}\nðŸ“ž ${phone}\nðŸŒ Portfolio: ${portfolio}`;
+  
+  // 3. Technical Pitch
+  const pitch = `Hi, I'm interested in the ${jobtitle} opening${company ? ` at ${company}` : ''}. I have ${exp} of experience building scalable backend systems using ${skills}. Available as an ${notice}.\n\nðŸ“§ Email: ${myEmail}\nðŸ“ž Phone: ${phone}\nðŸ”— Portfolio: ${portfolio}`;
+  
+  // 4. Single-Line Compact
+  const singleline = `Interested | ${jobtitle} (${exp} Exp, ${notice}) | ${myEmail} | ${plainPhone}`;
+  
+  // 5. Custom Note (uses the Comment field from placeholders if filled)
+  const custom = customComment 
+    ? `Interested in the ${jobtitle} role (${notice}).\nNote: ${customComment}\n\nContact: ${plainPhone} | ${myEmail}\nPortfolio: ${portfolio}`
+    : `Interested in the ${jobtitle} role (${exp} Exp, ${notice}).\nðŸ“§ ${myEmail} | ðŸ“ž ${plainPhone}\nðŸŒ Portfolio: ${portfolio}`;
+    
+  return { minimal, professional, pitch, singleline, custom };
+}
 
-  const copySubBtn = document.getElementById('copySubBtn');
-  if (copySubBtn) {
-    copySubBtn.classList.remove('copied');
-    copySubBtn.textContent = 'Copy';
-  }
+function selectCommentStyle(style) {
+  activeCommentStyle = style;
+  document.querySelectorAll('.comment-style-chip').forEach(chip => {
+    if (chip.dataset.style === style) {
+      chip.classList.add('active');
+    } else {
+      chip.classList.remove('active');
+    }
+  });
+  render();
+}
 
+function copyActiveComment() {
+  const templates = buildCommentTemplates();
+  const text = templates[activeCommentStyle] || templates.minimal;
+  navigator.clipboard.writeText(text).then(() => {
+    const btn = document.getElementById('copyCommentMainBtn');
+    if (btn) {
+      btn.textContent = 'Copied âœ“';
+      btn.classList.add('copied');
+      setTimeout(() => {
+        btn.textContent = 'ðŸ“‹ Copy Selected Comment';
+        btn.classList.remove('copied');
+      }, 1800);
+    }
+    const subBtn = document.getElementById('copySubBtn');
+    if (subBtn && activeTab === 'comment') {
+      subBtn.textContent = 'Copied âœ“';
+      subBtn.classList.add('copied');
+      setTimeout(() => {
+        subBtn.textContent = 'Copy';
+        subBtn.classList.remove('copied');
+      }, 1800);
+    }
+    showToast("Copied Comment to Clipboard!");
+  }).catch(err => {
+    console.error(err);
+    showToast("Failed to copy comment.");
+  });
+}
+
+function quickCopyPostComment() {
+  const templates = buildCommentTemplates();
+  const text = templates.minimal; // Minimal Interested + Phone + Email
+  navigator.clipboard.writeText(text).then(() => {
+    const btn = document.getElementById('sidebarQuickCommentBtn');
+    if (btn) {
+      const origHTML = btn.innerHTML;
+      btn.innerHTML = '<span>Copied Comment âœ“</span>';
+      btn.style.background = '#1b533e';
+      setTimeout(() => {
+        btn.innerHTML = origHTML;
+        btn.style.background = '#0c2738';
+      }, 1800);
+    }
+    showToast("Copied Interested Comment (Phone + Email)!");
+  });
+}
+
+function quickCopyMinimalComment() {
+  const templates = buildCommentTemplates();
+  navigator.clipboard.writeText(templates.minimal).then(() => {
+    showToast("Copied Minimal Comment!");
+  });
+}
+
+function copyTemplateComment(style, btnEl) {
+  const templates = buildCommentTemplates();
+  const text = templates[style] || templates.minimal;
+  navigator.clipboard.writeText(text).then(() => {
+    if (btnEl) {
+      const originalHTML = btnEl.innerHTML;
+      btnEl.innerHTML = 'Copied âœ“';
+      btnEl.classList.add('copied');
+      setTimeout(() => {
+        btnEl.innerHTML = originalHTML;
+        btnEl.classList.remove('copied');
+      }, 1800);
+    }
+    const styleLabel = style === 'minimal' ? 'Minimal' : style === 'professional' ? 'Professional' : style === 'pitch' ? 'Tech Pitch' : 'Single-Line';
+    showToast(`Copied ${styleLabel} Comment!`);
+  }).catch(err => {
+    console.error(err);
+    showToast("Failed to copy.");
+  });
+}
+
+function render() {
   const email = document.getElementById('email').value.trim();
   const sidebarGmailBtn = document.getElementById('sidebarGmailBtn');
   const headerGmailBtn = document.getElementById('headerGmailBtn');
@@ -1479,23 +1812,113 @@ function render() {
     if (sidebarWizardBtn) sidebarWizardBtn.classList.add('disabled');
     if (headerWizardBtn) headerWizardBtn.classList.add('disabled');
   }
+
+  const commentStylesBar = document.getElementById('commentStylesBar');
+  const commentActionButtons = document.getElementById('commentActionButtons');
+  const emailActionButtons = document.getElementById('emailActionButtons');
+  const commentTemplatesSection = document.getElementById('commentTemplatesSection');
+  const subjectLabel = document.getElementById('subjectLabel');
+  const copySubBtn = document.getElementById('copySubBtn');
+
+  if (activeTab === 'comment') {
+    if (commentStylesBar) commentStylesBar.style.display = 'flex';
+    if (commentActionButtons) commentActionButtons.style.display = 'flex';
+    if (emailActionButtons) emailActionButtons.style.display = 'none';
+    if (commentTemplatesSection) commentTemplatesSection.style.display = 'block';
+    
+    if (subjectLabel) subjectLabel.textContent = 'Format';
+    
+    const templates = buildCommentTemplates();
+    
+    let styleName = '1. Minimal (Interested + Phone + Email)';
+    let bodyText = templates.minimal;
+    
+    if (activeCommentStyle === 'minimal') {
+      styleName = '1. Minimal (Interested + Phone + Email)';
+      bodyText = templates.minimal;
+    } else if (activeCommentStyle === 'professional') {
+      styleName = '2. Professional (.NET Developer + Exp + Contact)';
+      bodyText = templates.professional;
+    } else if (activeCommentStyle === 'pitch') {
+      styleName = '3. Tech Pitch (Skills + Experience + Portfolio)';
+      bodyText = templates.pitch;
+    } else if (activeCommentStyle === 'singleline') {
+      styleName = '4. Single-Line Compact';
+      bodyText = templates.singleline;
+    } else if (activeCommentStyle === 'custom') {
+      styleName = '5. Custom Note';
+      bodyText = templates.custom;
+    }
+    
+    document.getElementById('subjectOut').textContent = styleName;
+    document.getElementById('bodyOut').textContent = bodyText;
+    
+    if (copySubBtn) {
+      copySubBtn.textContent = 'Copy';
+      copySubBtn.classList.remove('copied');
+    }
+    
+    // Update the 4 template preview cards
+    const cardMin = document.getElementById('cardMinimalText');
+    const cardProf = document.getElementById('cardProfText');
+    const cardPitch = document.getElementById('cardPitchText');
+    const cardSingle = document.getElementById('cardSingleLineText');
+    
+    if (cardMin) cardMin.textContent = templates.minimal;
+    if (cardProf) cardProf.textContent = templates.professional;
+    if (cardPitch) cardPitch.textContent = templates.pitch;
+    if (cardSingle) cardSingle.textContent = templates.singleline;
+
+    const copyBtn = document.getElementById('copyCommentMainBtn');
+    if (copyBtn) {
+      copyBtn.classList.remove('copied');
+      copyBtn.textContent = 'ðŸ“‹ Copy Selected Comment';
+    }
+  } else {
+    // Email tabs (initial / followup)
+    if (commentStylesBar) commentStylesBar.style.display = 'none';
+    if (commentActionButtons) commentActionButtons.style.display = 'none';
+    if (emailActionButtons) emailActionButtons.style.display = 'flex';
+    if (commentTemplatesSection) commentTemplatesSection.style.display = 'none';
+    
+    if (subjectLabel) subjectLabel.textContent = 'Subject';
+    
+    const { subject, body } = activeTab === 'initial' ? buildInitial() : buildFollowup();
+    document.getElementById('subjectOut').textContent = subject;
+    document.getElementById('bodyOut').textContent = body;
+    
+    const copyBtn = document.getElementById('copyBtn');
+    if (copyBtn) {
+      copyBtn.classList.remove('copied');
+      copyBtn.textContent = 'Copy Body';
+    }
+
+    if (copySubBtn) {
+      copySubBtn.classList.remove('copied');
+      copySubBtn.textContent = 'Copy';
+    }
+  }
 }
 
 function copyEmail() {
   const body = document.getElementById('bodyOut').textContent;
   navigator.clipboard.writeText(body).then(() => {
     const btn = document.getElementById('copyBtn');
-    btn.textContent = 'Copied ✓';
+    btn.textContent = 'Copied âœ“';
     btn.classList.add('copied');
     setTimeout(() => { btn.textContent = 'Copy Body'; btn.classList.remove('copied'); }, 1800);
   });
 }
 
 function copySubject() {
+  if (activeTab === 'comment') {
+    copyActiveComment();
+    return;
+  }
   const subject = document.getElementById('subjectOut').textContent;
   navigator.clipboard.writeText(subject).then(() => {
     const btn = document.getElementById('copySubBtn');
-    btn.textContent = 'Copied ✓';
+    btn.textContent = 'Copied âœ“';
     btn.classList.add('copied');
     setTimeout(() => { btn.textContent = 'Copy'; btn.classList.remove('copied'); }, 1800);
   });
@@ -1588,8 +2011,8 @@ function renderRecordsTable() {
       <td style="font-family: var(--mono); font-weight: bold; color: var(--teal);">${r.sNo}</td>
       <td style="font-weight: 500;" title="${r.company}">${r.company}</td>
       <td title="${r.email}"><a href="mailto:${r.email}" style="color: var(--teal); text-decoration: none;" onclick="event.stopPropagation();">${r.email}</a></td>
-      <td title="${r.phone || ''}">${r.phone || '<span style="color: #4a6272;">—</span>'}</td>
-      <td title="${r.comment || ''}" style="max-width: 200px;">${r.comment || '<span style="color: #4a6272;">—</span>'}</td>
+      <td title="${r.phone || ''}">${r.phone || '<span style="color: #4a6272;">â€”</span>'}</td>
+      <td title="${r.comment || ''}" style="max-width: 200px;">${r.comment || '<span style="color: #4a6272;">â€”</span>'}</td>
       <td><span class="badge ${statusClass}">${r.status}</span></td>
       <td><span class="badge ${gmailClass}">${r.gmailStatus}</span></td>
       <td style="text-align: center;">
@@ -1815,7 +2238,7 @@ function loadRecordIntoForm(r) {
   const recordsContainer = document.querySelector('.records-container');
   grid.style.display = 'grid';
   recordsContainer.classList.remove('active');
-  document.getElementById('previewTitle').textContent = 'Preview — Initial Email';
+  document.getElementById('previewTitle').textContent = 'Preview â€” Initial Email';
   
   render();
   showToast(`Loaded ${r.company} into generator!`);
@@ -1924,25 +2347,25 @@ function renderWizardStep(step) {
   const actionText = document.getElementById('wizardActionText');
   
   if (step === 1) {
-    title.textContent = '⚡ Step 1: Copy Recipient Email';
+    title.textContent = 'âš¡ Step 1: Copy Recipient Email';
     label.textContent = 'Recipient Email Address';
     content.textContent = email;
-    actionText.textContent = 'Copy Email & Next ➔';
+    actionText.textContent = 'Copy Email & Next âž”';
   } else if (step === 2) {
-    title.textContent = '⚡ Step 2: Copy Subject Line';
+    title.textContent = 'âš¡ Step 2: Copy Subject Line';
     label.textContent = 'Email Subject';
     content.textContent = subject;
-    actionText.textContent = 'Copy Subject & Next ➔';
+    actionText.textContent = 'Copy Subject & Next âž”';
   } else if (step === 3) {
-    title.textContent = '⚡ Step 3: Copy Email Body';
+    title.textContent = 'âš¡ Step 3: Copy Email Body';
     label.textContent = 'Email Body Content';
     content.textContent = body;
-    actionText.textContent = 'Copy Body & Next ➔';
+    actionText.textContent = 'Copy Body & Next âž”';
   } else if (step === 4) {
-    title.textContent = '⚡ Step 4: Copy Recipient Email (Finish)';
+    title.textContent = 'âš¡ Step 4: Copy Recipient Email (Finish)';
     label.textContent = 'Recipient Email Address';
     content.textContent = email;
-    actionText.textContent = 'Copy Email & Finish ✓';
+    actionText.textContent = 'Copy Email & Finish âœ“';
   }
 }
 
@@ -1967,7 +2390,7 @@ function handleWizardAction() {
     });
   } else if (currentWizardStep === 4) {
     navigator.clipboard.writeText(email).then(() => {
-      showToast("4/4: Email copied! Process completed ✓");
+      showToast("4/4: Email copied! Process completed âœ“");
       closeCopyWizard();
     });
   }

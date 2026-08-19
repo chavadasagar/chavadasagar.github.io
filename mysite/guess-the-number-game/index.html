@@ -1,6 +1,8 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%20fill%3D%22none%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%237C3AED%22%2F%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23EC4899%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2216%22%20fill%3D%22%2314081c%22%2F%3E%3Crect%20x%3D%222%22%20y%3D%222%22%20width%3D%2260%22%20height%3D%2260%22%20rx%3D%2214%22%20stroke%3D%22url(%23g)%22%20stroke-width%3D%222%22%20stroke-opacity%3D%220.6%22%2F%3E%3Ccircle%20cx%3D%2232%22%20cy%3D%2232%22%20r%3D%2218%22%20stroke%3D%22url(%23g)%22%20stroke-width%3D%222.5%22%20fill%3D%22%23250d32%22%2F%3E%3Ctext%20x%3D%2225%22%20y%3D%2240%22%20font-family%3D%22sans-serif%22%20font-weight%3D%22bold%22%20font-size%3D%2222%22%20fill%3D%22%23EC4899%22%3E%3F%3C%2Ftext%3E%3C%2Fsvg%3E">
+  <link rel="shortcut icon" href="favicon.svg">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Guess The Number - Modern Mobile Web Game</title>
@@ -407,7 +409,7 @@
   <div class="game-card" id="gameCard">
     <!-- Header -->
     <div class="header">
-      <span class="badge">🎯 Number Challenge</span>
+      <span class="badge">ðŸŽ¯ Number Challenge</span>
       <h1>Guess The Number</h1>
       <p>I'm thinking of a number between 1 and 100.</p>
     </div>
@@ -428,7 +430,7 @@
     <div id="activeGameArea" style="display: flex; flex-direction: column; gap: 16px;">
       <!-- Feedback display -->
       <div class="feedback-box" id="feedbackBox">
-        <div class="feedback-icon" id="feedbackIcon">🔮</div>
+        <div class="feedback-icon" id="feedbackIcon">ðŸ”®</div>
         <div class="feedback-text" id="feedbackText">Take your first guess!</div>
         <div class="range-indicator" id="rangeIndicator">Possible Range: 1 - 100</div>
       </div>
@@ -449,18 +451,18 @@
           />
         </div>
         <button type="submit" class="btn-submit" id="submitBtn">
-          <span>Submit Guess</span> 🚀
+          <span>Submit Guess</span> ðŸš€
         </button>
       </form>
     </div>
 
     <!-- Victory Overlay (Shown on Win) -->
     <div class="win-overlay" id="winOverlay">
-      <div style="font-size: 4rem;">🏆</div>
+      <div style="font-size: 4rem;">ðŸ†</div>
       <div class="win-title">YOU WON!</div>
       <div class="win-stats" id="winMessage">You guessed the secret number in 5 attempts!</div>
       <button type="button" class="btn-submit" onclick="resetGame()" style="width: 100%;">
-        Play Again 🔄
+        Play Again ðŸ”„
       </button>
     </div>
 
@@ -474,7 +476,7 @@
 
     <!-- Reset Button -->
     <button type="button" class="btn-restart" onclick="resetGame()" id="restartBtn">
-      Reset Game 🔄
+      Reset Game ðŸ”„
     </button>
   </div>
 
@@ -517,7 +519,7 @@
 
       // Reset UI elements
       attemptsCountEl.textContent = '0';
-      feedbackIcon.textContent = '🔮';
+      feedbackIcon.textContent = 'ðŸ”®';
       feedbackText.textContent = 'Take your first guess!';
       rangeIndicator.textContent = `Possible Range: ${minRange} - ${maxRange}`;
       guessInput.value = '';
@@ -563,7 +565,7 @@
       // Validation
       if (isNaN(userVal) || userVal < 1 || userVal > 100) {
         triggerShake();
-        feedbackIcon.textContent = '⚠️';
+        feedbackIcon.textContent = 'âš ï¸';
         feedbackText.textContent = 'Please enter a number between 1 & 100!';
         return;
       }
@@ -575,21 +577,21 @@
       if (userVal < secretNumber) {
         // Too Low
         minRange = Math.max(minRange, userVal + 1);
-        feedbackIcon.textContent = '📈';
+        feedbackIcon.textContent = 'ðŸ“ˆ';
         feedbackText.textContent = `${userVal} is Too Small! Go Higher!`;
-        addHistoryChip(userVal, 'too-low', '📈 Small');
+        addHistoryChip(userVal, 'too-low', 'ðŸ“ˆ Small');
         triggerShake();
       } else if (userVal > secretNumber) {
         // Too High
         maxRange = Math.min(maxRange, userVal - 1);
-        feedbackIcon.textContent = '📉';
+        feedbackIcon.textContent = 'ðŸ“‰';
         feedbackText.textContent = `${userVal} is Too Big! Go Lower!`;
-        addHistoryChip(userVal, 'too-high', '📉 Big');
+        addHistoryChip(userVal, 'too-high', 'ðŸ“‰ Big');
         triggerShake();
       } else {
         // Correct Answer!
         isGameOver = true;
-        addHistoryChip(userVal, 'win', '🎉 Correct');
+        addHistoryChip(userVal, 'win', 'ðŸŽ‰ Correct');
         handleWin();
         return;
       }
@@ -617,7 +619,7 @@
       winOverlay.style.display = 'flex';
       
       if (isNewRecord) {
-        winMessage.innerHTML = `🎉 <b>NEW RECORD!</b> You solved it in only <b>${attempts}</b> attempt${attempts > 1 ? 's' : ''}!`;
+        winMessage.innerHTML = `ðŸŽ‰ <b>NEW RECORD!</b> You solved it in only <b>${attempts}</b> attempt${attempts > 1 ? 's' : ''}!`;
       } else {
         winMessage.innerHTML = `You solved it in <b>${attempts}</b> attempt${attempts > 1 ? 's' : ''}!`;
       }
