@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%20fill%3D%22none%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%233B82F6%22%2F%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%238B5CF6%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2216%22%20fill%3D%22%230b1022%22%2F%3E%3Crect%20x%3D%222%22%20y%3D%222%22%20width%3D%2260%22%20height%3D%2260%22%20rx%3D%2214%22%20stroke%3D%22url(%23g)%22%20stroke-width%3D%222%22%20stroke-opacity%3D%220.6%22%2F%3E%3Ctext%20x%3D%2214%22%20y%3D%2232%22%20font-family%3D%22monospace%22%20font-size%3D%2216%22%20font-weight%3D%22bold%22%20fill%3D%22%233B82F6%22%3E123%3C%2Ftext%3E%3Cpath%20d%3D%22M24%2040h16m-4-3l4%203-4%203%22%20stroke%3D%22%23ffffff%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%2F%3E%3Ctext%20x%3D%2236%22%20y%3D%2232%22%20font-family%3D%22monospace%22%20font-size%3D%2214%22%20font-weight%3D%22bold%22%20fill%3D%22%238B5CF6%22%3EABC%3C%2Ftext%3E%3C%2Fsvg%3E">
+  <link rel="shortcut icon" href="favicon.svg">
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number to Words Converter | Indian & International Systems</title>
+    <meta name="description" content="Free online tool to convert numbers into words in both Indian (Lakhs, Crores) and International (Millions, Billions) formats, with currency, decimal, and audio support.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+
+    <div class="app-container">
+
+        <!-- App Header -->
+        <header class="app-header">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%20fill%3D%22none%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%233B82F6%22%2F%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%238B5CF6%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2216%22%20fill%3D%22%230b1022%22%2F%3E%3Crect%20x%3D%222%22%20y%3D%222%22%20width%3D%2260%22%20height%3D%2260%22%20rx%3D%2214%22%20stroke%3D%22url(%23g)%22%20stroke-width%3D%222%22%20stroke-opacity%3D%220.6%22%2F%3E%3Ctext%20x%3D%2214%22%20y%3D%2232%22%20font-family%3D%22monospace%22%20font-size%3D%2216%22%20font-weight%3D%22bold%22%20fill%3D%22%233B82F6%22%3E123%3C%2Ftext%3E%3Cpath%20d%3D%22M24%2040h16m-4-3l4%203-4%203%22%20stroke%3D%22%23ffffff%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%2F%3E%3Ctext%20x%3D%2236%22%20y%3D%2232%22%20font-family%3D%22monospace%22%20font-size%3D%2214%22%20font-weight%3D%22bold%22%20fill%3D%22%238B5CF6%22%3EABC%3C%2Ftext%3E%3C%2Fsvg%3E">
+  <link rel="shortcut icon" href="favicon.svg">
+  <div class="brand">
+                <div class="brand-icon">
+                    <i data-lucide="binary"></i>
+                </div>
+                <h1 class="brand-title">NumWords Pro</h1>
+            </div>
+
+            <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+                <i data-lucide="sun" id="themeIcon"></i>
+                <span id="themeText">Light Mode</span>
+            </button>
+        </header>
+
+        <!-- Main Card -->
+        <main class="glass-card">
+
+            <!-- Controls Panel -->
+            <div class="controls-grid">
+                <div class="control-group">
+                    <label for="systemSelect" class="control-label">Numbering System</label>
+                    <select id="systemSelect" class="select-field">
+                        <option value="indian" selected>Indian (Lakhs, Crores)</option>
+                        <option value="international">International (Millions, Billions)</option>
+                    </select>
+                </div>
+
+                <div class="control-group">
+                    <label for="currencySelect" class="control-label">Currency Format</label>
+                    <select id="currencySelect" class="select-field">
+                        <option value="none" selected>None (Numbers Only)</option>
+                        <option value="INR">INR (Rupees & Paise)</option>
+                        <option value="USD">USD (Dollars & Cents)</option>
+                        <option value="EUR">EUR (Euros & Cents)</option>
+                        <option value="GBP">GBP (Pounds & Pence)</option>
+                    </select>
+                </div>
+
+                <div class="control-group">
+                    <label for="casingSelect" class="control-label">Letter Casing</label>
+                    <select id="casingSelect" class="select-field">
+                        <option value="title" selected>Title Case</option>
+                        <option value="sentence">Sentence Case</option>
+                        <option value="upper">UPPERCASE</option>
+                        <option value="lower">lowercase</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Number Input Box -->
+            <div class="main-input-wrapper">
+                <input type="text" id="numberInput" class="main-input" placeholder="Type or paste any number..." autocomplete="off">
+                <button id="clearInput" class="clear-btn" title="Clear text">&times;</button>
+            </div>
+
+            <!-- Presets -->
+            <div class="presets-bar">
+                <button class="preset-chip" data-value="1000">1,000</button>
+                <button class="preset-chip" data-value="10000">10,000</button>
+                <button class="preset-chip" data-value="100000">1 Lakh / 100k</button>
+                <button class="preset-chip" data-value="1000000">10 Lakhs / 1 Million</button>
+                <button class="preset-chip" data-value="10000000">1 Crore / 10 Million</button>
+                <button class="preset-chip" data-value="1000000000">1 Arab / 1 Billion</button>
+            </div>
+
+            <!-- Additional Toggles -->
+            <div class="toggles-row">
+                <label class="checkbox-label">
+                    <input type="checkbox" id="chequeToggle">
+                    <span>Append "Only" (Cheque Format)</span>
+                </label>
+            </div>
+
+            <!-- Output Result Card -->
+            <div class="result-card">
+                <div class="result-header">
+                    <div class="result-badge">
+                        <i data-lucide="sparkles"></i>
+                        <span id="systemBadge">Indian System</span>
+                    </div>
+
+                    <div class="action-buttons">
+                        <button id="speakBtn" class="icon-action-btn" title="Listen Audio">
+                            <i data-lucide="volume-2"></i>
+                        </button>
+                        <button id="copyBtn" class="icon-action-btn" title="Copy to Clipboard">
+                            <i data-lucide="copy"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div id="resultWords" class="result-words">Zero</div>
+                <div id="formattedDigit" class="result-digit-formatted">Formatted: 0</div>
+            </div>
+
+        </main>
+
+        <!-- Toast -->
+        <div id="toast" class="toast-notification">
+            <i data-lucide="check-circle-2"></i>
+            <span id="toastMsg">Copied to clipboard!</span>
+        </div>
+
+        <footer class="app-footer">
+            <p>Designed with precision • Supports up to 21 digits</p>
+        </footer>
+
+    </div>
+
+    <!-- Script Imports -->
+    <script src="assets/js/modules/numtoword.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happyhome Enterprise | Hardware & Sanitaryware Room Visualizer</title>
+  <meta name="description" content="Happyhome Enterprise - Interactive hardware, sanitaryware & room visualizer shop in Sanskar Mandal, Bhavnagar. Design your bathroom, calculate live quotes & order online.">
+  <meta name="keywords" content="Hardware Shop Bhavnagar, Sanitaryware Bhavnagar, Bathroom Visualizer, Happyhome Enterprise, Pipes Fittings Bhavnagar">
+  <meta name="robots" content="index, follow">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="blueprint-bg">
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <span class="hours-badge"><span class="status-dot"></span> Open Today: 9:00 AM – 6:00 PM</span>
+      <span class="contact-top">📍 Plot 2218 A1, Sanskar Mandal, Bhavnagar | 📞 +91 94262 12345</span>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="#" class="logo">
+        <span class="logo-bold">HAPPYHOME</span>
+        <span class="logo-sub">ENTERPRISE · BHAVNAGAR</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="#visualizer" class="nav-link highlight-link">✨ 3D Room Visualizer</a>
+        <a href="#categories" class="nav-link">Categories</a>
+        <a href="#featured" class="nav-link">Products</a>
+        <a href="#quote" class="btn btn-accent nav-btn">Get Instant Quote →</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section with Industrial Blueprint Cyber Vibe -->
+  <section class="hero">
+    <div class="hero-grid-lines"></div>
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="badge-tag">EST. 2017 · BHAVNAGAR · ★ 4.8 (108 REVIEWS)</div>
+        <h1 class="hero-title">HARDWARE & SANITARYWARE<br><span class="highlight">BUILT TO LAST</span></h1>
+        <p class="hero-desc">Bhavnagar's premier destination for certified sanitaryware, CPVC plumbing pipes, brass fittings, and architectural hardware.</p>
+        
+        <div class="hero-actions">
+          <a href="#visualizer" class="btn btn-accent btn-lg glow-btn">Launch 3D Room Visualizer 🎨</a>
+          <a href="#quote" class="btn btn-outline btn-lg">Request Package Quote →</a>
+        </div>
+      </div>
+
+      <div class="hero-stats-panel">
+        <div class="blueprint-card">
+          <div class="bp-header">
+            <span class="bp-title">TECHNICAL SPECIFICATIONS</span>
+            <span class="bp-code">SYS-2026-BHV</span>
+          </div>
+          <div class="bp-body">
+            <div class="stat-line"><span>Experience</span> <strong>8+ Years in Bhavnagar</strong></div>
+            <div class="stat-line"><span>Showroom Items</span> <strong>1,500+ In Stock</strong></div>
+            <div class="stat-line"><span>Brands</span> <strong>Jaquar, Astral, Cera, Godrej</strong></div>
+            <div class="stat-line"><span>Delivery</span> <strong>Same-Day Bhavnagar Delivery</strong></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OUT-OF-THE-BOX INNOVATION: INTERACTIVE ROOM & FIXTURE VISUALIZER -->
+  <section class="section visualizer-section" id="visualizer">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-label text-accent">INTERACTIVE DESIGN STUDIO</span>
+        <h2 class="section-title">BATHROOM ROOM & FIXTURE VISUALIZER</h2>
+        <p class="section-subtitle">Select a finish theme, tap fixtures to customize, and calculate live package pricing for your house project!</p>
+      </div>
+
+      <div class="visualizer-container">
+        <!-- Control Sidebar -->
+        <div class="viz-sidebar">
+          <h3 class="viz-sidebar-title">1. Select Room Finish Theme</h3>
+          <div class="theme-selector">
+            <button class="theme-btn active" data-theme="matte-black">
+              <span class="theme-swatch" style="background: #1e1e24; border: 1px solid #444;"></span>
+              Modern Matte Black
+            </button>
+            <button class="theme-btn" data-theme="industrial-brass">
+              <span class="theme-swatch" style="background: #c58e47;"></span>
+              Industrial Antique Brass
+            </button>
+            <button class="theme-btn" data-theme="royal-chrome">
+              <span class="theme-swatch" style="background: #e2e8f0; border: 1px solid #94a3b8;"></span>
+              Royal Chrome Mirror
+            </button>
+          </div>
+
+          <h3 class="viz-sidebar-title margin-top">2. Customize Package Fixtures</h3>
+          <div class="fixture-options">
+            <label class="fixture-checkbox">
+              <input type="checkbox" id="fixCloset" checked data-price="8500" data-name="Wall Hung Closet">
+              <span class="checkmark"></span>
+              Wall Hung Closet (₹ 8,500)
+            </label>
+            <label class="fixture-checkbox">
+              <input type="checkbox" id="fixMixer" checked data-price="3800" data-name="Single Lever Mixer Tap">
+              <span class="checkmark"></span>
+              Single Lever Basin Mixer (₹ 3,800)
+            </label>
+            <label class="fixture-checkbox">
+              <input type="checkbox" id="fixShower" checked data-price="4200" data-name="Rainfall Overhead Shower">
+              <span class="checkmark"></span>
+              Rainfall Overhead Shower (₹ 4,200)
+            </label>
+            <label class="fixture-checkbox">
+              <input type="checkbox" id="fixPipes" checked data-price="2500" data-name="Complete CPVC Fitting Pack">
+              <span class="checkmark"></span>
+              CPVC Plumbing Pack (₹ 2,500)
+            </label>
+          </div>
+
+          <div class="viz-calculator">
+            <div class="calc-row">
+              <span>Selected Fixtures:</span>
+              <strong id="selectedCount">4 Items</strong>
+            </div>
+            <div class="calc-row total-row">
+              <span>Estimated Package Cost:</span>
+              <strong id="packageTotal" class="text-accent">₹ 19,000</strong>
+            </div>
+            <button class="btn btn-accent btn-block btn-lg" id="vizQuoteBtn">Get This Package Quote →</button>
+          </div>
+        </div>
+
+        <!-- 3D Room Preview Canvas -->
+        <div class="viz-preview-canvas" id="vizCanvas" data-current-theme="matte-black">
+          <div class="room-backdrop">
+            <div class="wall-grid"></div>
+            
+            <!-- Interactive Hotspot Pins -->
+            <div class="hotspot-pin pin-shower" data-fixture="Rainfall Overhead Shower">
+              <span class="pin-pulse"></span>
+              <span class="pin-label">Shower Fixture</span>
+            </div>
+            <div class="hotspot-pin pin-mixer" data-fixture="Single Lever Basin Mixer">
+              <span class="pin-pulse"></span>
+              <span class="pin-label">Basin Tap</span>
+            </div>
+            <div class="hotspot-pin pin-closet" data-fixture="Wall Hung Closet">
+              <span class="pin-pulse"></span>
+              <span class="pin-label">Wall Hung Closet</span>
+            </div>
+          </div>
+
+          <div class="viz-status-bar">
+            <span id="vizStatusText">🎨 Current Style: <strong>Modern Matte Black</strong> · Jaquar & Cera Certified</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Categories -->
+  <section class="section categories-section" id="categories">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">SHOWROOM CATALOGUE</span>
+        <h2 class="section-title">PRODUCT CATEGORIES</h2>
+      </div>
+
+      <div class="grid grid-3">
+        <div class="category-card" data-category="Sanitaryware">
+          <div class="cat-icon">🚿</div>
+          <h3 class="cat-title">Sanitaryware</h3>
+          <p class="cat-desc">Wash basins, modern closets, faucets, showers, and designer vanity units.</p>
+          <span class="cat-tag">PIPES & FITTINGS</span>
+        </div>
+
+        <div class="category-card" data-category="Hardware">
+          <div class="cat-icon">🗝️</div>
+          <h3 class="cat-title">Architectural Hardware</h3>
+          <p class="cat-desc">Door locks, SS handles, brass hinges, cabinet fittings & security locks.</p>
+          <span class="cat-tag">HARDWARE</span>
+        </div>
+
+        <div class="category-card" data-category="Plumbing">
+          <div class="cat-icon">🚰</div>
+          <h3 class="cat-title">Pipes & Fittings</h3>
+          <p class="cat-desc">CPVC, UPVC, Agri pipes, brass valves, and high-pressure plumbing systems.</p>
+          <span class="cat-tag">PIPES</span>
+        </div>
+
+        <div class="category-card" data-category="Paints">
+          <div class="cat-icon">🎨</div>
+          <h3 class="cat-title">Paints & Waterproofing</h3>
+          <p class="cat-desc">Interior/exterior emulsions, primers, Dr. Fixit waterproofing solutions.</p>
+          <span class="cat-tag">PAINTS</span>
+        </div>
+
+        <div class="category-card" data-category="Electricals">
+          <div class="cat-icon">⚡</div>
+          <h3 class="cat-title">Modular Electricals</h3>
+          <p class="cat-desc">Switches, copper wiring, MCBs, LED lighting panels, and conduits.</p>
+          <span class="cat-tag">ELECTRICALS</span>
+        </div>
+
+        <div class="category-card" data-category="Tiles">
+          <div class="cat-icon">🧱</div>
+          <h3 class="cat-title">Bathroom Tiles</h3>
+          <p class="cat-desc">Anti-skid floor tiles, 3D wall tiles, and ceramic border tiles.</p>
+          <span class="cat-tag">TILES</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Products -->
+  <section class="section products-section" id="featured">
+    <div class="container">
+      <div class="section-header align-between">
+        <div>
+          <span class="section-label">SHOWROOM SELECTION</span>
+          <h2 class="section-title">FEATURED PRODUCTS</h2>
+        </div>
+        <div class="filter-tabs">
+          <button class="tab-btn active" data-filter="all">All Items</button>
+          <button class="tab-btn" data-filter="sanitary">Sanitary</button>
+          <button class="tab-btn" data-filter="hardware">Hardware</button>
+          <button class="tab-btn" data-filter="plumbing">Plumbing</button>
+        </div>
+      </div>
+
+      <div class="grid grid-4" id="productGrid">
+        <!-- Product 1 -->
+        <div class="product-card" data-type="sanitary">
+          <div class="product-img">
+            <span class="stock-badge">IN STOCK</span>
+            <div class="img-icon">🚽</div>
+          </div>
+          <div class="product-body">
+            <span class="product-brand">JAQUAR / CERA</span>
+            <h3 class="product-name">Wall Hung One Piece Closet</h3>
+            <p class="product-price">₹ 4,500 – ₹ 12,000</p>
+            <button class="btn btn-quote-item" data-item="Wall Hung One Piece Closet">Get Quote</button>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card" data-type="sanitary">
+          <div class="product-img">
+            <span class="stock-badge">IN STOCK</span>
+            <div class="img-icon">🚰</div>
+          </div>
+          <div class="product-body">
+            <span class="product-brand">KOHLER / HINDWARE</span>
+            <h3 class="product-name">Single Lever Basin Mixer Tap</h3>
+            <p class="product-price">₹ 1,800 – ₹ 5,200</p>
+            <button class="btn btn-quote-item" data-item="Single Lever Basin Mixer Tap">Get Quote</button>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card" data-type="plumbing">
+          <div class="product-img">
+            <span class="stock-badge">IN STOCK</span>
+            <div class="img-icon">⚙️</div>
+          </div>
+          <div class="product-body">
+            <span class="product-brand">ASTRAL / ASHIRVAD</span>
+            <h3 class="product-name">CPVC Heavy Duty Pipe (1 Inch)</h3>
+            <p class="product-price">₹ 320 – ₹ 850 / length</p>
+            <button class="btn btn-quote-item" data-item="CPVC Heavy Duty Pipe">Get Quote</button>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-card" data-type="hardware">
+          <div class="product-img">
+            <span class="stock-badge">IN STOCK</span>
+            <div class="img-icon">🔐</div>
+          </div>
+          <div class="product-body">
+            <span class="product-brand">GODREJ / DORMA</span>
+            <h3 class="product-name">Stainless Steel Main Door Lock</h3>
+            <p class="product-price">₹ 1,250 – ₹ 3,800</p>
+            <button class="btn btn-quote-item" data-item="SS Main Door Lock">Get Quote</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quotation Request Form -->
+  <section class="section quote-section" id="quote">
+    <div class="container">
+      <div class="quote-wrapper">
+        <div class="quote-info">
+          <span class="section-label text-accent">BUSINESS QUOTATION</span>
+          <h2 class="quote-title">REQUEST A PRODUCT QUOTE</h2>
+          <p class="quote-desc">Need bulk hardware or sanitaryware for your house construction or renovation project? Fill out this quick form or connect directly via WhatsApp.</p>
+
+          <div class="contact-details">
+            <div class="c-item">
+              <span class="c-icon">📍</span>
+              <div>
+                <strong>Shop Address</strong>
+                <p>Plot 2218 A1, Sanskar Mandal, Talaja Road, Bhavnagar, Gujarat</p>
+              </div>
+            </div>
+            <div class="c-item">
+              <span class="c-icon">📞</span>
+              <div>
+                <strong>Phone Inquiry</strong>
+                <p>+91 94262 12345 / +91 0278 251234</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form class="quote-form" id="quoteForm">
+          <div class="form-group">
+            <label for="name">Your Name / Business Name *</label>
+            <input type="text" id="name" required placeholder="e.g. Ramesh Patel">
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone / Mobile Number *</label>
+            <input type="tel" id="phone" required placeholder="e.g. 9876543210" pattern="[0-9]{10}">
+          </div>
+
+          <div class="form-group">
+            <label for="product">Product Needed *</label>
+            <select id="product" required>
+              <option value="">Select Category / Item</option>
+              <option value="Sanitaryware & Closets">Sanitaryware & Closets</option>
+              <option value="Taps & Faucets">Taps & Faucets</option>
+              <option value="Pipes & CPVC Fittings">Pipes & CPVC Fittings</option>
+              <option value="Door Locks & Handles">Door Locks & Handles</option>
+              <option value="Paints & Waterproofing">Paints & Waterproofing</option>
+              <option value="Custom Visualizer Package">Custom 3D Visualizer Package</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message / Quantity Details</label>
+            <textarea id="message" rows="3" placeholder="Specify sizes, quantity, or specific brand requirement..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-accent btn-block btn-lg">Submit Quote Request via WhatsApp →</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div>
+        <div class="logo">
+          <span class="logo-bold">HAPPYHOME</span>
+          <span class="logo-sub">ENTERPRISE</span>
+        </div>
+        <p class="footer-copy">Hardware & Sanitaryware You Can Trust. Plot 2218 A1, Sanskar Mandal, Talaja Road, Bhavnagar.</p>
+      </div>
+
+      <div class="footer-actions">
+        <a href="https://wa.me/919426212345?text=Hello%20Happyhome%20Enterprise,%20I%20want%20to%20inquire%20about%20hardware%20products." target="_blank" class="btn btn-whatsapp">
+          💬 Chat on WhatsApp
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      <p>&copy; 2026 Happyhome Enterprise. All rights reserved. Developed by VyunixTech.</p>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

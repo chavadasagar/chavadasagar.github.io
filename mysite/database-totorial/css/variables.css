@@ -1,0 +1,89 @@
+/* CSS Design Tokens - Database Design Masterclass */
+:root {
+  /* Color Palette - Dark Theme Default */
+  --bg-main: #090c15;
+  --bg-surface: #101623;
+  --bg-surface-hover: #161e30;
+  --bg-card: #121927;
+  --bg-card-hover: #182236;
+  --bg-panel: #141c2d;
+  --bg-input: #161e2f;
+  
+  --border-color: #1e293b;
+  --border-subtle: #172033;
+  --border-focus: #00f0ff;
+
+  --text-main: #f1f5f9;
+  --text-muted: #94a3b8;
+  --text-dim: #64748b;
+  --text-white: #ffffff;
+
+  /* Accent Colors */
+  --accent-cyan: #00f0ff;
+  --accent-teal: #2de2c4;
+  --accent-purple: #a855f7;
+  --accent-blue: #3b82f6;
+  --accent-emerald: #10b981;
+  --accent-amber: #f59e0b;
+  --accent-rose: #f43f5e;
+
+  /* Badges */
+  --badge-pk-bg: rgba(244, 63, 94, 0.15);
+  --badge-pk-text: #fecdd3;
+  --badge-pk-border: rgba(244, 63, 94, 0.4);
+
+  --badge-fk-bg: rgba(59, 130, 246, 0.15);
+  --badge-fk-text: #bfdbfe;
+  --badge-fk-border: rgba(59, 130, 246, 0.4);
+
+  --badge-uq-bg: rgba(245, 158, 11, 0.15);
+  --badge-uq-text: #fef08a;
+  --badge-uq-border: rgba(245, 158, 11, 0.4);
+
+  --badge-idx-bg: rgba(16, 185, 129, 0.15);
+  --badge-idx-text: #a7f3d0;
+  --badge-idx-border: rgba(16, 185, 129, 0.4);
+
+  /* Shadows & Radius */
+  --shadow-sm: 0 4px 12px rgba(0,0,0,0.3);
+  --shadow-md: 0 10px 25px rgba(0,0,0,0.45);
+  --shadow-lg: 0 20px 40px rgba(0,0,0,0.6);
+  --shadow-glow: 0 0 25px rgba(0, 240, 255, 0.25);
+
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+
+  /* Typography */
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+/* Light Mode Overrides */
+[data-theme="light"] {
+  --bg-main: #f8fafc;
+  --bg-surface: #ffffff;
+  --bg-surface-hover: #f1f5f9;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f1f5f9;
+  --bg-panel: #f8fafc;
+  --bg-input: #f1f5f9;
+
+  --border-color: #e2e8f0;
+  --border-subtle: #cbd5e1;
+  --border-focus: #0284c7;
+
+  --text-main: #0f172a;
+  --text-muted: #475569;
+  --text-dim: #64748b;
+  --text-white: #0f172a;
+
+  --accent-cyan: #0284c7;
+  --accent-teal: #0d9488;
+  --accent-purple: #7e22ce;
+
+  --shadow-sm: 0 2px 8px rgba(0,0,0,0.06);
+  --shadow-md: 0 6px 16px rgba(0,0,0,0.08);
+  --shadow-lg: 0 12px 32px rgba(0,0,0,0.12);
+  --shadow-glow: 0 0 20px rgba(2, 132, 199, 0.15);
+}

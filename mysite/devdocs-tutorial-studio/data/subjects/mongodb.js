@@ -1,0 +1,2235 @@
+﻿window.DEVDOCS_SUBJECTS = window.DEVDOCS_SUBJECTS || {};
+window.DEVDOCS_SUBJECTS['mongodb'] = [
+    {
+        "url": "https://www.w3schools.com/mongodb/index.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "mongodb_index",
+        "code_examples": [
+            {
+                "code": "Example Document\n{\n title: \"Post Title 1\",\n body: \"Body of post.\",\n category: \"News\",\n likes: 1,\n tags: [\"news\", \"events\"],\n date: Date()\n}\n\nLearning by Examples\n\nOur \"Show MongoDB\" tool makes it easy to demonstrate MongoDB. It shows both the code and the result.\n\nExample\nFind all documents that have a category of \"news\".\n\ndb.posts.find( {category: \"News\"} )\n\nTry it Yourself »\n\nAdvertisement\n -->\n\nLearning by Exercises\n\nMongoDB Exercises\n\nExercise:\nWhat type of database is MongoDB?\n\nMongoDB is a database.\n\nSubmit Answer »\nStart the Exercise\n\nTrack Your Progress\n\n Create a W3Schools account and get access to more features and learning materials:\n\n View your completed tutorials, exercises, and quizzes\n\n Keep an eye on your progress and daily streaks\n\n Jump back in right where you left off\n-->\n Join the leaderboard and compete with others\n\n Get access to more challenges and tests\n-->\n Get your own avatar and unlock new skins\n\n Create your own personal website\n\n Sign Up »",
+                "language": "mongodb",
+                "heading": "Example Document",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MongoDB HOME\nMongoDB Get Started\nMongoDB Query API\nMongoDB Create DB\nMongoDB Collection\nMongoDB Insert\nMongoDB Find\nMongoDB Update\nMongoDB Delete\nMongoDB Query Operators\nMongoDB Update Operators\nMongoDB Aggregations\n\n MongoDB Aggregations\n $group\n $limit\n $project\n $sort\n $match\n $addFields\n $count\n $lookup\n $out\n\nMongoDB Indexing/Search\nMongoDB Validation\nMongoDB Data API\nMongoDB Drivers\nMongoDB Node.js Driver\nMongoDB Charts",
+                "heading": "MongoDB Tutorial"
+            },
+            {
+                "content": "MongoDB Certificate",
+                "heading": "MongoDB Cert"
+            },
+            {
+                "content": "MongoDB Exercises\nMongoDB Syllabus\nMongoDB Study Plan\nMongoDB Quiz --> \n\nny:-->\n\n ny:-->\n\nny:-->\n\nMongoDB Tutorial\n\n❮ Home\nNext ❯",
+                "heading": "MongoDB Exercises"
+            },
+            {
+                "content": "MongoDB is a document database. It stores data in a type of JSON format called BSON.\n\n If you are unfamiliar with JSON, check out our JSON tutorial.\n\n A record in MongoDB is a document, which is a data structure composed of key value pairs similar to the structure of JSON objects.\n\n Learn MongoDB now ❯\n\n Become MongoDB Certified\n Get certified with our MongoDB exam, includes a professionally curated study kit to guide you from beginner to exam-ready.\n\nGet Certified ❯\n\n CERTIFICATE OF COMPLETION\n This certifies that\n Your Name\n has passed the W3Schools MongoDB Certification exam and is hereby declared a\n\n Certified MongoDB Developer\n The candidate has passed the exam at the Professional level.\n Verify at\n verify.w3schools.com\n Stale Refsnes\n for w3schools.com",
+                "heading": "Learn MongoDB"
+            },
+            {
+                "content": "Records in a MongoDB database are called documents, and the field values may include numbers, strings, booleans, arrays, or even nested documents.\n\nExample Document\n{\n title: \"Post Title 1\",\n body: \"Body of post.\",\n category: \"News\",\n likes: 1,\n tags: [\"news\", \"events\"],\n date: Date()\n}",
+                "heading": "A MongoDB Document"
+            },
+            {
+                "content": "Our \"Show MongoDB\" tool makes it easy to demonstrate MongoDB. It shows both the code and the result.\n\nExample\nFind all documents that have a category of \"news\".\n\ndb.posts.find( {category: \"News\"} )\n\nTry it Yourself »",
+                "heading": "Learning by Examples"
+            },
+            {
+                "content": "What type of database is MongoDB?\n\nMongoDB is a database.\n\nSubmit Answer »\nStart the Exercise",
+                "heading": "Exercise:"
+            },
+            {
+                "content": "Create a W3Schools account and get access to more features and learning materials:\n\n View your completed tutorials, exercises, and quizzes\n\n Keep an eye on your progress and daily streaks\n\n Jump back in right where you left off\n-->\n Join the leaderboard and compete with others\n\n Get access to more challenges and tests\n-->\n Get your own avatar and unlock new skins\n\n Create your own personal website\n\n Sign Up »\n\nNote\nThis is an optional feature. You can study at W3Schools without creating an account.\n\n❮ Home\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Track Your Progress"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:18:05Z",
+        "subject": "MongoDB",
+        "title": "MongoDB Tutorial"
+    },
+    {
+        "url": "https://www.w3schools.com/mongodb/mongodb_get_started.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "mongodb_mongodb_get_started",
+        "code_examples": [
+            {
+                "code": "mongosh --version",
+                "language": "mongodb",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "mongosh \"mongodb+srv://cluster0.ex4ht.mongodb.net/myFirstDatabase\" --apiVersion 1 --username YOUR_USER_NAME",
+                "language": "mongodb",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MongoDB HOME\nMongoDB Get Started\nMongoDB Query API\nMongoDB Create DB\nMongoDB Collection\nMongoDB Insert\nMongoDB Find\nMongoDB Update\nMongoDB Delete\nMongoDB Query Operators\nMongoDB Update Operators\nMongoDB Aggregations\n\n MongoDB Aggregations\n $group\n $limit\n $project\n $sort\n $match\n $addFields\n $count\n $lookup\n $out\n\nMongoDB Indexing/Search\nMongoDB Validation\nMongoDB Data API\nMongoDB Drivers\nMongoDB Node.js Driver\nMongoDB Charts",
+                "heading": "MongoDB Tutorial"
+            },
+            {
+                "content": "MongoDB Certificate",
+                "heading": "MongoDB Cert"
+            },
+            {
+                "content": "MongoDB Exercises\nMongoDB Syllabus\nMongoDB Study Plan\nMongoDB Quiz --> \n\nny:-->\n\n ny:-->\n\nny:-->\n\nMongoDB Getting Started\n\n❮ Previous\nNext ❯",
+                "heading": "MongoDB Exercises"
+            },
+            {
+                "content": "MongoDB is a document database and can be installed locally or hosted in the cloud.",
+                "heading": "MongoDB"
+            },
+            {
+                "content": "SQL databases are considered relational databases.\nThey store related data in separate tables.\nWhen data is needed, it is queried from multiple tables to join the data back together.\n\nMongoDB is a document database which is often referred to as a non-relational database.\nThis does not mean that relational data cannot be stored in document databases.\nIt means that relational data is stored differently.\nA better way to refer to it is as a non-tabular database.\n\nMongoDB stores data in flexible documents.\nInstead of having multiple tables you can simply keep all of your related data together.\nThis makes reading your data very fast.\n\nYou can still have multiple groups of data too. In MongoDB, instead of tables these are called collections.",
+                "heading": "SQL vs Document Databases"
+            },
+            {
+                "content": "MongoDB can be installed locally, which will allow you to host your own MongoDB server on your hardware.\nThis requires you to manage your server, upgrades, and any other maintenance.\n\nYou can download and use the MongoDB open source\nCommunity Server\non your hardware for free.\n\nHowever, for this course we are going to use MongoDB Atlas, a cloud database platform.\nThis is much easier than hosting your own local database.\n\nTo be able to experiment with the code examples, you will need access to a MongoDB database.\n\nSign up for a free\nMongoDB Atlas\naccount to get started.",
+                "heading": "Local vs Cloud Database"
+            },
+            {
+                "content": "After you have created your account, set up a free \"Shared Cluster\" then choose your preferred cloud provider and region.\n\nBy default, MongoDB Atlas is completely locked down and has no external access.\n\nYou will need to set up a user and add your IP address to the list of allowed IP addresses.\n\nUnder \"Database Access\", create a new user and keep track of the username and password.\n\nNext, under \"Network Access\", add your current IP address to allow access from your computer.",
+                "heading": "Creating a Cluster"
+            },
+            {
+                "content": "There are many ways to connect to your MongoDB database.\n\nWe will start by using the MongoDB Shell, mongosh.\n\nUse the\nofficial instructions\nto install mongosh on your operating system.\n\nTo verify that it has been installed properly, open your terminal and type:\n\nmongosh --version\n\nYou should see that the latest version is installed.\n\nThe version used in this tutorial is v1.3.1.",
+                "heading": "Install MongoDB Shell (mongosh)"
+            },
+            {
+                "content": "To connect to your database, you will need your database specific connection string.\n\nIn the MongoDB Atlas dashboard, under \"Databases\", click the \"Connect\" button for your Cluster.\n\nNext, choose \"Connect with the MongoDB Shell\".\n\nCopy your connection string.\n\nExample\nYour connection string should look similar to this:\n\nmongosh \"mongodb+srv://cluster0.ex4ht.mongodb.net/myFirstDatabase\" --apiVersion 1 --username YOUR_USER_NAME\n\nTry it Yourself »\n\nPaste your connection string into your terminal and press enter.\n\nYou will be prompted to enter your database user password that you created earlier.\n\nYou are now connected to the database!",
+                "heading": "Connect to the database"
+            },
+            {
+                "content": "In the following sections we will use 'mongosh' to create, read, update, and delete (CRUD) items in your database.\n\nAfter getting the basics down, we will move on to using MongoDB with other backend technologies like Node.js.\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "What Next?"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:18:08Z",
+        "subject": "MongoDB",
+        "title": "MongoDB Getting Started"
+    },
+    {
+        "url": "https://www.w3schools.com/mongodb/mongodb_query_api.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "mongodb_mongodb_query_api",
+        "code_examples": [],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MongoDB HOME\nMongoDB Get Started\nMongoDB Query API\nMongoDB Create DB\nMongoDB Collection\nMongoDB Insert\nMongoDB Find\nMongoDB Update\nMongoDB Delete\nMongoDB Query Operators\nMongoDB Update Operators\nMongoDB Aggregations\n\n MongoDB Aggregations\n $group\n $limit\n $project\n $sort\n $match\n $addFields\n $count\n $lookup\n $out\n\nMongoDB Indexing/Search\nMongoDB Validation\nMongoDB Data API\nMongoDB Drivers\nMongoDB Node.js Driver\nMongoDB Charts",
+                "heading": "MongoDB Tutorial"
+            },
+            {
+                "content": "MongoDB Certificate",
+                "heading": "MongoDB Cert"
+            },
+            {
+                "content": "MongoDB Exercises\nMongoDB Syllabus\nMongoDB Study Plan\nMongoDB Quiz --> \n\nny:-->\n\n ny:-->\n\nny:-->\n\nMongoDB Query API\n\n❮ Previous\nNext ❯",
+                "heading": "MongoDB Exercises"
+            },
+            {
+                "content": "The\nMongoDB Query API\nis the way you will interact with your data.\n\nThe MongoDB Query API can be used in two ways:\n\nCRUD Operations\n\nAggregation Pipelines",
+                "heading": "MongoDB Query API"
+            },
+            {
+                "content": "You can use the MongoDB Query API to perform:\n\nAdhoc queries with mongosh, Compass, VS Code, or a MongoDB driver for the programming language you use.\n\nData transformations using aggregation pipelines.\n\nDocument join support to combine data from different collections.\n\nGraph and geospatial queries.\n\nFull-text search.\n\nIndexing to improve MongoDB query performance.\n\nTime series analysis.\n\nLet's get started!",
+                "heading": "MongoDB Query API Uses"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:18:08Z",
+        "subject": "MongoDB",
+        "title": "MongoDB Query API"
+    },
+    {
+        "url": "https://www.w3schools.com/mongodb/mongodb_mongosh_create_database.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "mongodb_mongodb_mongosh_create_database",
+        "code_examples": [
+            {
+                "code": "use blog",
+                "language": "mongodb",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MongoDB HOME\nMongoDB Get Started\nMongoDB Query API\nMongoDB Create DB\nMongoDB Collection\nMongoDB Insert\nMongoDB Find\nMongoDB Update\nMongoDB Delete\nMongoDB Query Operators\nMongoDB Update Operators\nMongoDB Aggregations\n\n MongoDB Aggregations\n $group\n $limit\n $project\n $sort\n $match\n $addFields\n $count\n $lookup\n $out\n\nMongoDB Indexing/Search\nMongoDB Validation\nMongoDB Data API\nMongoDB Drivers\nMongoDB Node.js Driver\nMongoDB Charts",
+                "heading": "MongoDB Tutorial"
+            },
+            {
+                "content": "MongoDB Certificate",
+                "heading": "MongoDB Cert"
+            },
+            {
+                "content": "MongoDB Exercises\nMongoDB Syllabus\nMongoDB Study Plan\nMongoDB Quiz --> \n\nny:-->\n\n ny:-->\n\nny:-->\n\nMongoDB mongosh Create Database\n\n❮ Previous\nNext ❯",
+                "heading": "MongoDB Exercises"
+            },
+            {
+                "content": "After connecting to your database using mongosh,\nyou can see which database you are using by typing db in your terminal.\n\nIf you have used the connection string provided from the MongoDB Atlas dashboard,\nyou should be connected to the myFirstDatabase database.",
+                "heading": "Create Database using mongosh"
+            },
+            {
+                "content": "To see all available databases, in your terminal type show dbs.\n\nNotice that myFirstDatabase is not listed.\nThis is because the database is empty.\nAn empty database is essentially non-existant.",
+                "heading": "Show all databases"
+            },
+            {
+                "content": "You can change or create a new database by typing use then the name of the database.\n\nExample\nCreate a new database called \"blog\":\n\nuse blog\n\nTry it Yourself »\n\nWe are now in the blog database.\n\nRemember: In MongoDB, a database is not actually created until it gets content!",
+                "heading": "Change or Create a Database"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:18:08Z",
+        "subject": "MongoDB",
+        "title": "MongoDB mongosh Create Database"
+    },
+    {
+        "url": "https://www.w3schools.com/mongodb/mongodb_mongosh_create_collection.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "mongodb_mongodb_mongosh_create_collection",
+        "code_examples": [
+            {
+                "code": "db.createCollection(\"posts\")",
+                "language": "mongodb",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MongoDB HOME\nMongoDB Get Started\nMongoDB Query API\nMongoDB Create DB\nMongoDB Collection\nMongoDB Insert\nMongoDB Find\nMongoDB Update\nMongoDB Delete\nMongoDB Query Operators\nMongoDB Update Operators\nMongoDB Aggregations\n\n MongoDB Aggregations\n $group\n $limit\n $project\n $sort\n $match\n $addFields\n $count\n $lookup\n $out\n\nMongoDB Indexing/Search\nMongoDB Validation\nMongoDB Data API\nMongoDB Drivers\nMongoDB Node.js Driver\nMongoDB Charts",
+                "heading": "MongoDB Tutorial"
+            },
+            {
+                "content": "MongoDB Certificate",
+                "heading": "MongoDB Cert"
+            },
+            {
+                "content": "MongoDB Exercises\nMongoDB Syllabus\nMongoDB Study Plan\nMongoDB Quiz --> \n\nny:-->\n\n ny:-->\n\nny:-->\n\nMongoDB mongosh Create Collection\n\n❮ Previous\nNext ❯",
+                "heading": "MongoDB Exercises"
+            },
+            {
+                "content": "There are 2 ways to create a collection.\n\nMethod 1\n\nYou can create a collection using the createCollection() database method.\n\nExample\n\ndb.createCollection(\"posts\")\n\nTry it Yourself »\n\nMethod 2\n\nYou can also create a collection during the insert process.\n\nExample\nWe are here assuming object is a valid JavaScript object containing post data:\n\ndb.posts.insertOne(object)\n\nTry it Yourself »\n\nThis will create the \"posts\" collection if it does not already exist.\n\nRemember: In MongoDB, a collection is not actually created until it gets content!",
+                "heading": "Create Collection using mongosh"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:18:08Z",
+        "subject": "MongoDB",
+        "title": "MongoDB mongosh Create Collection"
+    },
+    {
+        "url": "https://www.w3schools.com/mongodb/mongodb_mongosh_insert.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "mongodb_mongodb_mongosh_insert",
+        "code_examples": [
+            {
+                "code": "Example\ndb.posts.insertOne({\n title: \"Post Title 1\",\n body: \"Body of post.\",\n category: \"News\",\n likes: 1,\n tags: [\"news\", \"events\"],\n date: Date()\n})\n\nTry it Yourself »\n\nNote: If you try to insert documents into a collection that does not exist,\nMongoDB will create the collection automatically.\n\ninsertMany()\n\nTo insert multiple documents at once, use the insertMany() method.\n\nThis method inserts an array of objects into the database.\n\nExample\ndb.posts.insertMany([ \n {\n title: \"Post Title 2\",\n body: \"Body of post.\",\n category: \"Event\",\n likes: 2,\n tags: [\"news\", \"events\"],\n date: Date()\n },\n {\n title: \"Post Title 3\",\n body: \"Body of post.\",\n category: \"Technology\",\n likes: 3,\n tags: [\"news\", \"events\"],\n date: Date()\n },\n {\n title: \"Post Title 4\",\n body: \"Body of post.\",\n category: \"Event\",\n likes: 4,\n tags: [\"news\", \"events\"],\n date: Date()\n }\n])\n\nTry it Yourself »\n\nAdvertisement\n -->\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress",
+                "language": "mongodb",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MongoDB HOME\nMongoDB Get Started\nMongoDB Query API\nMongoDB Create DB\nMongoDB Collection\nMongoDB Insert\nMongoDB Find\nMongoDB Update\nMongoDB Delete\nMongoDB Query Operators\nMongoDB Update Operators\nMongoDB Aggregations\n\n MongoDB Aggregations\n $group\n $limit\n $project\n $sort\n $match\n $addFields\n $count\n $lookup\n $out\n\nMongoDB Indexing/Search\nMongoDB Validation\nMongoDB Data API\nMongoDB Drivers\nMongoDB Node.js Driver\nMongoDB Charts",
+                "heading": "MongoDB Tutorial"
+            },
+            {
+                "content": "MongoDB Certificate",
+                "heading": "MongoDB Cert"
+            },
+            {
+                "content": "MongoDB Exercises\nMongoDB Syllabus\nMongoDB Study Plan\nMongoDB Quiz --> \n\nny:-->\n\n ny:-->\n\nny:-->\n\nMongoDB mongosh Insert\n\n❮ Previous\nNext ❯",
+                "heading": "MongoDB Exercises"
+            },
+            {
+                "content": "There are 2 methods to insert documents into a MongoDB database.\n\ninsertOne()\n\nTo insert a single document, use the insertOne() method.\n\nThis method inserts a single object into the database.\n\nNote: When typing in the shell, after opening an object with curly braces \"{\" \nyou can press enter to start a new line in the editor without executing the command. \nThe command will execute when you press enter after closing the braces.\n\nExample\ndb.posts.insertOne({\n title: \"Post Title 1\",\n body: \"Body of post.\",\n category: \"News\",\n likes: 1,\n tags: [\"news\", \"events\"],\n date: Date()\n})\n\nTry it Yourself »\n\nNote: If you try to insert documents into a collection that does not exist,\nMongoDB will create the collection automatically.\n\ninsertMany()\n\nTo insert multiple documents at once, use the insertMany() method.\n\nThis method inserts an array of objects into the database.\n\nExample\ndb.posts.insertMany([ \n {\n title: \"Post Title 2\",\n body: \"Body of post.\",\n category: \"Event\",\n likes: 2,\n tags: [\"news\", \"events\"],\n date: Date()\n },\n {\n title: \"Post Title 3\",\n body: \"Body of post.\",\n category: \"Technology\",\n likes: 3,\n tags: [\"news\", \"events\"],\n date: Date()\n },\n {\n title: \"Post Title 4\",\n body: \"Body of post.\",\n category: \"Event\",\n likes: 4,\n tags: [\"news\", \"events\"],\n date: Date()\n }\n])\n\nTry it Yourself »",
+                "heading": "Insert Documents"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:18:08Z",
+        "subject": "MongoDB",
+        "title": "MongoDB mongosh Insert"
+    },
+    {
+        "url": "https://www.w3schools.com/mongodb/mongodb_mongosh_find.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "mongodb_mongodb_mongosh_find",
+        "code_examples": [
+            {
+                "code": "Example\ndb.posts.find()\n\nTry it Yourself »\n\nfindOne()\n\nTo select only one document, we can use the findOne() method.\n\nThis method accepts a query object. If left empty, it will return the first document it finds.\n\nNote: This method only returns the first match it finds.\n\nExample\ndb.posts.findOne()\n\nTry it Yourself »\n\nQuerying Data\n\nTo query, or filter, data we can include a query in our find()\n or findOne() methods.\n\nExample\ndb.posts.find( {category: \"News\"} )\n\nTry it Yourself »\n\nAdvertisement\n -->\n\nProjection\n\nBoth find methods accept a second parameter called projection.\n\nThis parameter is an object that describes which fields to include in the results.\n\nNote: This parameter is optional. If omitted, all fields will be included in the results.\n\nExample\nThis example will only display the title\n and date fields in the results.\n\ndb.posts.find({}, {title: 1, date: 1})\n\nTry it Yourself »\n\nNotice that the _id field is also included. This field is always included unless specifically excluded.\n\nWe use a 1 to include a field and 0 to exclude a field.\n\nExample\nThis time, let's exclude the _id field.\n\ndb.posts.find({}, {_id: 0, title: 1, date: 1})\n\nTry it Yourself »\n\nNote: You cannot use both 0 and 1 in the same object.\nThe only exception is the _id field. \nYou should either specify the fields you would like to include or the fields you would like to exclude.\n\nLet's exclude the date category field. All other fields will be included in the results.\n\nExample\ndb.posts.find({}, {category: 0})\n\nTry it Yourself »\n\nWe will get an error if we try to specify both 0 and 1 in the same object.\n\nExample\ndb.posts.find({}, {title: 1, date: 0})\n\nTry it Yourself »\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress",
+                "language": "mongodb",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MongoDB HOME\nMongoDB Get Started\nMongoDB Query API\nMongoDB Create DB\nMongoDB Collection\nMongoDB Insert\nMongoDB Find\nMongoDB Update\nMongoDB Delete\nMongoDB Query Operators\nMongoDB Update Operators\nMongoDB Aggregations\n\n MongoDB Aggregations\n $group\n $limit\n $project\n $sort\n $match\n $addFields\n $count\n $lookup\n $out\n\nMongoDB Indexing/Search\nMongoDB Validation\nMongoDB Data API\nMongoDB Drivers\nMongoDB Node.js Driver\nMongoDB Charts",
+                "heading": "MongoDB Tutorial"
+            },
+            {
+                "content": "MongoDB Certificate",
+                "heading": "MongoDB Cert"
+            },
+            {
+                "content": "MongoDB Exercises\nMongoDB Syllabus\nMongoDB Study Plan\nMongoDB Quiz --> \n\nny:-->\n\n ny:-->\n\nny:-->\n\nMongoDB mongosh Find\n\n❮ Previous\nNext ❯",
+                "heading": "MongoDB Exercises"
+            },
+            {
+                "content": "There are 2 methods to find and select data from a MongoDB collection, find()\n and findOne().\n\nfind()\n\nTo select data from a collection in MongoDB, we can use the find() method.\n\nThis method accepts a query object. If left empty, all documents will be returned.\n\nExample\ndb.posts.find()\n\nTry it Yourself »\n\nfindOne()\n\nTo select only one document, we can use the findOne() method.\n\nThis method accepts a query object. If left empty, it will return the first document it finds.\n\nNote: This method only returns the first match it finds.\n\nExample\ndb.posts.findOne()\n\nTry it Yourself »",
+                "heading": "Find Data"
+            },
+            {
+                "content": "To query, or filter, data we can include a query in our find()\n or findOne() methods.\n\nExample\ndb.posts.find( {category: \"News\"} )\n\nTry it Yourself »",
+                "heading": "Querying Data"
+            },
+            {
+                "content": "Both find methods accept a second parameter called projection.\n\nThis parameter is an object that describes which fields to include in the results.\n\nNote: This parameter is optional. If omitted, all fields will be included in the results.\n\nExample\nThis example will only display the title\n and date fields in the results.\n\ndb.posts.find({}, {title: 1, date: 1})\n\nTry it Yourself »\n\nNotice that the _id field is also included. This field is always included unless specifically excluded.\n\nWe use a 1 to include a field and 0 to exclude a field.\n\nExample\nThis time, let's exclude the _id field.\n\ndb.posts.find({}, {_id: 0, title: 1, date: 1})\n\nTry it Yourself »\n\nNote: You cannot use both 0 and 1 in the same object.\nThe only exception is the _id field. \nYou should either specify the fields you would like to include or the fields you would like to exclude.\n\nLet's exclude the date category field. All other fields will be included in the results.\n\nExample\ndb.posts.find({}, {category: 0})\n\nTry it Yourself »\n\nWe will get an error if we try to specify both 0 and 1 in the same object.\n\nExample\ndb.posts.find({}, {title: 1, date: 0})\n\nTry it Yourself »\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Projection"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:18:09Z",
+        "subject": "MongoDB",
+        "title": "MongoDB mongosh Find"
+    },
+    {
+        "url": "https://www.w3schools.com/mongodb/mongodb_mongosh_update.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "mongodb_mongodb_mongosh_update",
+        "code_examples": [
+            {
+                "code": "Example\ndb.posts.find( { title: \"Post Title 1\" } ) \n\nTry it Yourself »\n\nNow let's update the \"likes\" on this post to 2. To do this, we need to use the\n$set operator.\n\nExample\ndb.posts.updateOne( { title: \"Post Title 1\" }, { $set: { likes: 2 } } ) \n\nTry it Yourself »\n\nCheck the document again and you'll see that the \"like\" have been updated.\n\nExample\ndb.posts.find( { title: \"Post Title 1\" } ) \n\nTry it Yourself »\n\nInsert if not found\n\nIf you would like to insert the document if it is not found, you can use the upsert option.\n\nExample\nUpdate the document, but if not found insert it:\n\ndb.posts.updateOne( \n { title: \"Post Title 5\" }, \n {\n $set: \n {\n title: \"Post Title 5\",\n body: \"Body of post.\",\n category: \"Event\",\n likes: 5,\n tags: [\"news\", \"events\"],\n date: Date()\n }\n }, \n { upsert: true }\n)\n\nTry it Yourself »\n\nAdvertisement\n -->\n\nupdateMany()\n\nThe updateMany() method will update all documents that match the provided query.\n\nExample\nUpdate likes on all documents by 1. For this we will use the $inc (increment) operator:\n\ndb.posts.updateMany({}, { $inc: { likes: 1 } })\n\nTry it Yourself »\n\nNow check the likes in all of the documents and you will see that they have all been incremented by 1.\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress",
+                "language": "mongodb",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MongoDB HOME\nMongoDB Get Started\nMongoDB Query API\nMongoDB Create DB\nMongoDB Collection\nMongoDB Insert\nMongoDB Find\nMongoDB Update\nMongoDB Delete\nMongoDB Query Operators\nMongoDB Update Operators\nMongoDB Aggregations\n\n MongoDB Aggregations\n $group\n $limit\n $project\n $sort\n $match\n $addFields\n $count\n $lookup\n $out\n\nMongoDB Indexing/Search\nMongoDB Validation\nMongoDB Data API\nMongoDB Drivers\nMongoDB Node.js Driver\nMongoDB Charts",
+                "heading": "MongoDB Tutorial"
+            },
+            {
+                "content": "MongoDB Certificate",
+                "heading": "MongoDB Cert"
+            },
+            {
+                "content": "MongoDB Exercises\nMongoDB Syllabus\nMongoDB Study Plan\nMongoDB Quiz --> \n\nny:-->\n\n ny:-->\n\nny:-->\n\nMongoDB mongosh Update\n\n❮ Previous\nNext ❯",
+                "heading": "MongoDB Exercises"
+            },
+            {
+                "content": "To update an existing document we can use the \nupdateOne() or updateMany() methods.\n\nThe first parameter is a query object to define which document or documents should be updated.\n\nThe second parameter is an object defining the updated data.",
+                "heading": "Update Document"
+            },
+            {
+                "content": "The updateOne() method will update the first document that is found matching the provided query.\n\nLet's see what the \"like\" count for the post with the title of \"Post Title 1\":\n\nExample\ndb.posts.find( { title: \"Post Title 1\" } ) \n\nTry it Yourself »\n\nNow let's update the \"likes\" on this post to 2. To do this, we need to use the\n$set operator.\n\nExample\ndb.posts.updateOne( { title: \"Post Title 1\" }, { $set: { likes: 2 } } ) \n\nTry it Yourself »\n\nCheck the document again and you'll see that the \"like\" have been updated.\n\nExample\ndb.posts.find( { title: \"Post Title 1\" } ) \n\nTry it Yourself »",
+                "heading": "updateOne()"
+            },
+            {
+                "content": "If you would like to insert the document if it is not found, you can use the upsert option.\n\nExample\nUpdate the document, but if not found insert it:\n\ndb.posts.updateOne( \n { title: \"Post Title 5\" }, \n {\n $set: \n {\n title: \"Post Title 5\",\n body: \"Body of post.\",\n category: \"Event\",\n likes: 5,\n tags: [\"news\", \"events\"],\n date: Date()\n }\n }, \n { upsert: true }\n)\n\nTry it Yourself »",
+                "heading": "Insert if not found"
+            },
+            {
+                "content": "The updateMany() method will update all documents that match the provided query.\n\nExample\nUpdate likes on all documents by 1. For this we will use the $inc (increment) operator:\n\ndb.posts.updateMany({}, { $inc: { likes: 1 } })\n\nTry it Yourself »\n\nNow check the likes in all of the documents and you will see that they have all been incremented by 1.\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "updateMany()"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:18:10Z",
+        "subject": "MongoDB",
+        "title": "MongoDB mongosh Update"
+    },
+    {
+        "url": "https://www.w3schools.com/mongodb/mongodb_mongosh_delete.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "mongodb_mongodb_mongosh_delete",
+        "code_examples": [
+            {
+                "code": "Example\ndb.posts.deleteOne({ title: \"Post Title 5\" })\n\nTry it Yourself »\n\ndeleteMany()\n\nThe deleteMany() method will delete all documents that match the query provided.\n\nExample\ndb.posts.deleteMany({ category: \"Technology\" })\n\nTry it Yourself »\n\nAdvertisement\n -->\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress",
+                "language": "mongodb",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MongoDB HOME\nMongoDB Get Started\nMongoDB Query API\nMongoDB Create DB\nMongoDB Collection\nMongoDB Insert\nMongoDB Find\nMongoDB Update\nMongoDB Delete\nMongoDB Query Operators\nMongoDB Update Operators\nMongoDB Aggregations\n\n MongoDB Aggregations\n $group\n $limit\n $project\n $sort\n $match\n $addFields\n $count\n $lookup\n $out\n\nMongoDB Indexing/Search\nMongoDB Validation\nMongoDB Data API\nMongoDB Drivers\nMongoDB Node.js Driver\nMongoDB Charts",
+                "heading": "MongoDB Tutorial"
+            },
+            {
+                "content": "MongoDB Certificate",
+                "heading": "MongoDB Cert"
+            },
+            {
+                "content": "MongoDB Exercises\nMongoDB Syllabus\nMongoDB Study Plan\nMongoDB Quiz --> \n\nny:-->\n\n ny:-->\n\nny:-->\n\nMongoDB mongosh Delete\n\n❮ Previous\nNext ❯",
+                "heading": "MongoDB Exercises"
+            },
+            {
+                "content": "We can delete documents by using the methods deleteOne()\n or deleteMany().\n\nThese methods accept a query object. The matching documents will be deleted.",
+                "heading": "Delete Documents"
+            },
+            {
+                "content": "The deleteOne() method will delete the first document that matches the query provided.\n\nExample\ndb.posts.deleteOne({ title: \"Post Title 5\" })\n\nTry it Yourself »",
+                "heading": "deleteOne()"
+            },
+            {
+                "content": "The deleteMany() method will delete all documents that match the query provided.\n\nExample\ndb.posts.deleteMany({ category: \"Technology\" })\n\nTry it Yourself »",
+                "heading": "deleteMany()"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:18:10Z",
+        "subject": "MongoDB",
+        "title": "MongoDB mongosh Delete"
+    },
+    {
+        "url": "https://www.w3schools.com/mongodb/mongodb_query_operators.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "mongodb_mongodb_query_operators",
+        "code_examples": [],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MongoDB HOME\nMongoDB Get Started\nMongoDB Query API\nMongoDB Create DB\nMongoDB Collection\nMongoDB Insert\nMongoDB Find\nMongoDB Update\nMongoDB Delete\nMongoDB Query Operators\nMongoDB Update Operators\nMongoDB Aggregations\n\n MongoDB Aggregations\n $group\n $limit\n $project\n $sort\n $match\n $addFields\n $count\n $lookup\n $out\n\nMongoDB Indexing/Search\nMongoDB Validation\nMongoDB Data API\nMongoDB Drivers\nMongoDB Node.js Driver\nMongoDB Charts",
+                "heading": "MongoDB Tutorial"
+            },
+            {
+                "content": "MongoDB Certificate",
+                "heading": "MongoDB Cert"
+            },
+            {
+                "content": "MongoDB Exercises\nMongoDB Syllabus\nMongoDB Study Plan\nMongoDB Quiz --> \n\nny:-->\n\n ny:-->\n\nny:-->\n\nMongoDB Query Operators\n\n❮ Previous\nNext ❯",
+                "heading": "MongoDB Exercises"
+            },
+            {
+                "content": "There are many query operators that can be used to compare and reference document fields.\n\nComparison\n\nThe following operators can be used in queries to compare values:\n\n$eq: Values are equal\n\n$ne: Values are not equal\n\n$gt: Value is greater than another value\n\n$gte: Value is greater than or equal to another value\n\n$lt: Value is less than another value\n\n$lte: Value is less than or equal to another value\n\n$in: Value is matched within an array\n\nLogical\n\nThe following operators can logically compare multiple queries. \n\n$and: Returns documents where both queries match\n\n$or: Returns documents where either query matches\n\n$nor: Returns documents where both queries fail to match\n\n$not: Returns documents where the query does not match\n\nEvaluation\n\nThe following operators assist in evaluating documents.\n\n$regex: Allows the use of regular expressions when evaluating field values\n\n$text: Performs a text search\n\n$where: Uses a JavaScript expression to match documents",
+                "heading": "MongoDB Query Operators"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:18:10Z",
+        "subject": "MongoDB",
+        "title": "MongoDB Query Operators"
+    },
+    {
+        "url": "https://www.w3schools.com/mongodb/mongodb_update_operators.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "mongodb_mongodb_update_operators",
+        "code_examples": [],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MongoDB HOME\nMongoDB Get Started\nMongoDB Query API\nMongoDB Create DB\nMongoDB Collection\nMongoDB Insert\nMongoDB Find\nMongoDB Update\nMongoDB Delete\nMongoDB Query Operators\nMongoDB Update Operators\nMongoDB Aggregations\n\n MongoDB Aggregations\n $group\n $limit\n $project\n $sort\n $match\n $addFields\n $count\n $lookup\n $out\n\nMongoDB Indexing/Search\nMongoDB Validation\nMongoDB Data API\nMongoDB Drivers\nMongoDB Node.js Driver\nMongoDB Charts",
+                "heading": "MongoDB Tutorial"
+            },
+            {
+                "content": "MongoDB Certificate",
+                "heading": "MongoDB Cert"
+            },
+            {
+                "content": "MongoDB Exercises\nMongoDB Syllabus\nMongoDB Study Plan\nMongoDB Quiz --> \n\nny:-->\n\n ny:-->\n\nny:-->\n\nMongoDB Update Operators\n\n❮ Previous\nNext ❯",
+                "heading": "MongoDB Exercises"
+            },
+            {
+                "content": "There are many update operators that can be used during document updates.\n\nFields\n\nThe following operators can be used to update fields:\n\n$currentDate: Sets the field value to the current date\n\n$inc: Increments the field value\n\n$rename: Renames the field\n\n$set: Sets the value of a field\n\n$unset: Removes the field from the document\n\nArray\n\nThe following operators assist with updating arrays.\n\n$addToSet: Adds distinct elements to an array\n\n$pop: Removes the first or last element of an array\n\n$pull: Removes all elements from an array that match the query\n\n$push: Adds an element to an array",
+                "heading": "MongoDB Update Operators"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:18:10Z",
+        "subject": "MongoDB",
+        "title": "MongoDB Update Operators"
+    },
+    {
+        "url": "https://www.w3schools.com/mongodb/mongodb_aggregations_intro.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "mongodb_mongodb_aggregations_intro",
+        "code_examples": [
+            {
+                "code": "Example\ndb.posts.aggregate([\n // Stage 1: Only find documents that have more than 1 like\n {\n $match: { likes: { $gt: 1 } }\n },\n // Stage 2: Group documents by category and sum each categories likes\n {\n $group: { _id: \"$category\", totalLikes: { $sum: \"$likes\" } }\n }\n])\n\nTry it Yourself »\n\nSample Data\n\nTo demonstrate the use of stages in a aggregation pipeline, we will load sample data into our database.\n\nFrom the MongoDB Atlas dashboard, go to Databases.\nClick the ellipsis and select \"Load Sample Dataset\".\nThis will load several sample datasets into your database.\n\nIn the next sections we will explore several aggregation pipeline stages in more detail using this sample data.\n\nAdvertisement\n -->\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress",
+                "language": "mongodb",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MongoDB HOME\nMongoDB Get Started\nMongoDB Query API\nMongoDB Create DB\nMongoDB Collection\nMongoDB Insert\nMongoDB Find\nMongoDB Update\nMongoDB Delete\nMongoDB Query Operators\nMongoDB Update Operators\nMongoDB Aggregations\n\n MongoDB Aggregations\n $group\n $limit\n $project\n $sort\n $match\n $addFields\n $count\n $lookup\n $out\n\nMongoDB Indexing/Search\nMongoDB Validation\nMongoDB Data API\nMongoDB Drivers\nMongoDB Node.js Driver\nMongoDB Charts",
+                "heading": "MongoDB Tutorial"
+            },
+            {
+                "content": "MongoDB Certificate",
+                "heading": "MongoDB Cert"
+            },
+            {
+                "content": "MongoDB Exercises\nMongoDB Syllabus\nMongoDB Study Plan\nMongoDB Quiz --> \n\nny:-->\n\n ny:-->\n\nny:-->\n\nMongoDB Aggregation Pipelines\n\n❮ Previous\nNext ❯",
+                "heading": "MongoDB Exercises"
+            },
+            {
+                "content": "Aggregation operations allow you to group, sort, perform calculations, analyze data, and much more.\n\nAggregation pipelines can have one or more \"stages\".\nThe order of these stages are important. Each stage acts upon the results of the previous stage.\n\nExample\ndb.posts.aggregate([\n // Stage 1: Only find documents that have more than 1 like\n {\n $match: { likes: { $gt: 1 } }\n },\n // Stage 2: Group documents by category and sum each categories likes\n {\n $group: { _id: \"$category\", totalLikes: { $sum: \"$likes\" } }\n }\n])\n\nTry it Yourself »",
+                "heading": "Aggregation Pipelines"
+            },
+            {
+                "content": "To demonstrate the use of stages in a aggregation pipeline, we will load sample data into our database.\n\nFrom the MongoDB Atlas dashboard, go to Databases.\nClick the ellipsis and select \"Load Sample Dataset\".\nThis will load several sample datasets into your database.\n\nIn the next sections we will explore several aggregation pipeline stages in more detail using this sample data.",
+                "heading": "Sample Data"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:18:10Z",
+        "subject": "MongoDB",
+        "title": "MongoDB Aggregation Pipelines"
+    },
+    {
+        "url": "https://www.w3schools.com/mongodb/mongodb_aggregations_group.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "mongodb_mongodb_aggregations_group",
+        "code_examples": [
+            {
+                "code": "Example\nIn this example, we are using the \"sample_airbnb\" database loaded from our sample data in the\nIntro to Aggregations section.\n\ndb.listingsAndReviews.aggregate(\n [ { $group : { _id : \"$property_type\" } } ]\n)\n\nTry it Yourself »\n\nThis will return the distinct values from the property_type field.\n\nAdvertisement\n -->\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress",
+                "language": "mongodb",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MongoDB HOME\nMongoDB Get Started\nMongoDB Query API\nMongoDB Create DB\nMongoDB Collection\nMongoDB Insert\nMongoDB Find\nMongoDB Update\nMongoDB Delete\nMongoDB Query Operators\nMongoDB Update Operators\nMongoDB Aggregations\n\n MongoDB Aggregations\n $group\n $limit\n $project\n $sort\n $match\n $addFields\n $count\n $lookup\n $out\n\nMongoDB Indexing/Search\nMongoDB Validation\nMongoDB Data API\nMongoDB Drivers\nMongoDB Node.js Driver\nMongoDB Charts",
+                "heading": "MongoDB Tutorial"
+            },
+            {
+                "content": "MongoDB Certificate",
+                "heading": "MongoDB Cert"
+            },
+            {
+                "content": "MongoDB Exercises\nMongoDB Syllabus\nMongoDB Study Plan\nMongoDB Quiz --> \n\nny:-->\n\n ny:-->\n\nny:-->\n\nMongoDB Aggregation $group\n\n❮ Previous\nNext ❯",
+                "heading": "MongoDB Exercises"
+            },
+            {
+                "content": "This aggregation stage groups documents by the unique _id expression provided.\n\nDon't confuse this _id expression with the \n_id ObjectId provided to each document.\n\nExample\nIn this example, we are using the \"sample_airbnb\" database loaded from our sample data in the\nIntro to Aggregations section.\n\ndb.listingsAndReviews.aggregate(\n [ { $group : { _id : \"$property_type\" } } ]\n)\n\nTry it Yourself »\n\nThis will return the distinct values from the property_type field.",
+                "heading": "Aggregation $group"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:18:10Z",
+        "subject": "MongoDB",
+        "title": "MongoDB Aggregation $group"
+    },
+    {
+        "url": "https://www.w3schools.com/mongodb/mongodb_aggregations_limit.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "mongodb_mongodb_aggregations_limit",
+        "code_examples": [
+            {
+                "code": "Example\nIn this example, we are using the \"sample_mflix\" database loaded from our sample data in the\nIntro to Aggregations section.\n\ndb.movies.aggregate([ { $limit: 1 } ])\n\nTry it Yourself »\n\nThis will return the 1 movie from the collection.\n\nAdvertisement\n -->\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress",
+                "language": "mongodb",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MongoDB HOME\nMongoDB Get Started\nMongoDB Query API\nMongoDB Create DB\nMongoDB Collection\nMongoDB Insert\nMongoDB Find\nMongoDB Update\nMongoDB Delete\nMongoDB Query Operators\nMongoDB Update Operators\nMongoDB Aggregations\n\n MongoDB Aggregations\n $group\n $limit\n $project\n $sort\n $match\n $addFields\n $count\n $lookup\n $out\n\nMongoDB Indexing/Search\nMongoDB Validation\nMongoDB Data API\nMongoDB Drivers\nMongoDB Node.js Driver\nMongoDB Charts",
+                "heading": "MongoDB Tutorial"
+            },
+            {
+                "content": "MongoDB Certificate",
+                "heading": "MongoDB Cert"
+            },
+            {
+                "content": "MongoDB Exercises\nMongoDB Syllabus\nMongoDB Study Plan\nMongoDB Quiz --> \n\nny:-->\n\n ny:-->\n\nny:-->\n\nMongoDB Aggregation $limit\n\n❮ Previous\nNext ❯",
+                "heading": "MongoDB Exercises"
+            },
+            {
+                "content": "This aggregation stage limits the number of documents passed to the next stage.\n\nExample\nIn this example, we are using the \"sample_mflix\" database loaded from our sample data in the\nIntro to Aggregations section.\n\ndb.movies.aggregate([ { $limit: 1 } ])\n\nTry it Yourself »\n\nThis will return the 1 movie from the collection.",
+                "heading": "Aggregation $limit"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:18:10Z",
+        "subject": "MongoDB",
+        "title": "MongoDB Aggregation $limit"
+    },
+    {
+        "url": "https://www.w3schools.com/mongodb/mongodb_aggregations_project.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "mongodb_mongodb_aggregations_project",
+        "code_examples": [
+            {
+                "code": "Example\nIn this example, we are using the \"sample_restaurants\" database loaded from our sample data in the\nIntro to Aggregations section.\n\ndb.restaurants.aggregate([\n {\n $project: {\n \"name\": 1,\n \"cuisine\": 1,\n \"address\": 1\n }\n },\n {\n $limit: 5\n }\n])\n\nTry it Yourself »\n\nThis will return the documents but only include the specified fields.\n\nNotice that the _id field is also included. This field is always included unless specifically excluded.\n\nWe use a 1 to include a field and 0 to exclude a field.\n\nNote: You cannot use both 0 and 1 in the same object. The only exception is the _id field.\nYou should either specify the fields you would like to include or the fields you would like to exclude.\n\nAdvertisement\n -->\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress",
+                "language": "mongodb",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MongoDB HOME\nMongoDB Get Started\nMongoDB Query API\nMongoDB Create DB\nMongoDB Collection\nMongoDB Insert\nMongoDB Find\nMongoDB Update\nMongoDB Delete\nMongoDB Query Operators\nMongoDB Update Operators\nMongoDB Aggregations\n\n MongoDB Aggregations\n $group\n $limit\n $project\n $sort\n $match\n $addFields\n $count\n $lookup\n $out\n\nMongoDB Indexing/Search\nMongoDB Validation\nMongoDB Data API\nMongoDB Drivers\nMongoDB Node.js Driver\nMongoDB Charts",
+                "heading": "MongoDB Tutorial"
+            },
+            {
+                "content": "MongoDB Certificate",
+                "heading": "MongoDB Cert"
+            },
+            {
+                "content": "MongoDB Exercises\nMongoDB Syllabus\nMongoDB Study Plan\nMongoDB Quiz --> \n\nny:-->\n\n ny:-->\n\nny:-->\n\nMongoDB Aggregation $project\n\n❮ Previous\nNext ❯",
+                "heading": "MongoDB Exercises"
+            },
+            {
+                "content": "This aggregation stage passes only the specified fields along to the next aggregation stage.\n\nThis is the same projection that is used with the find() method.\n\nExample\nIn this example, we are using the \"sample_restaurants\" database loaded from our sample data in the\nIntro to Aggregations section.\n\ndb.restaurants.aggregate([\n {\n $project: {\n \"name\": 1,\n \"cuisine\": 1,\n \"address\": 1\n }\n },\n {\n $limit: 5\n }\n])\n\nTry it Yourself »\n\nThis will return the documents but only include the specified fields.\n\nNotice that the _id field is also included. This field is always included unless specifically excluded.\n\nWe use a 1 to include a field and 0 to exclude a field.\n\nNote: You cannot use both 0 and 1 in the same object. The only exception is the _id field.\nYou should either specify the fields you would like to include or the fields you would like to exclude.",
+                "heading": "Aggregation $project"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:18:11Z",
+        "subject": "MongoDB",
+        "title": "MongoDB Aggregation $project"
+    },
+    {
+        "url": "https://www.w3schools.com/mongodb/mongodb_aggregations_sort.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "mongodb_mongodb_aggregations_sort",
+        "code_examples": [
+            {
+                "code": "Example\nIn this example, we are using the \"sample_airbnb\" database loaded from our sample data in the\nIntro to Aggregations section.\n\ndb.listingsAndReviews.aggregate([ \n { \n $sort: { \"accommodates\": -1 } \n },\n {\n $project: {\n \"name\": 1,\n \"accommodates\": 1\n }\n },\n {\n $limit: 5\n }\n])\n\nTry it Yourself »\n\nThis will return the documents sorted in descending order by the accommodates field.\n\nThe sort order can be chosen by using 1\n or -1.\n 1 is ascending and -1 is descending.\n\nAdvertisement\n -->\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress",
+                "language": "mongodb",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MongoDB HOME\nMongoDB Get Started\nMongoDB Query API\nMongoDB Create DB\nMongoDB Collection\nMongoDB Insert\nMongoDB Find\nMongoDB Update\nMongoDB Delete\nMongoDB Query Operators\nMongoDB Update Operators\nMongoDB Aggregations\n\n MongoDB Aggregations\n $group\n $limit\n $project\n $sort\n $match\n $addFields\n $count\n $lookup\n $out\n\nMongoDB Indexing/Search\nMongoDB Validation\nMongoDB Data API\nMongoDB Drivers\nMongoDB Node.js Driver\nMongoDB Charts",
+                "heading": "MongoDB Tutorial"
+            },
+            {
+                "content": "MongoDB Certificate",
+                "heading": "MongoDB Cert"
+            },
+            {
+                "content": "MongoDB Exercises\nMongoDB Syllabus\nMongoDB Study Plan\nMongoDB Quiz --> \n\nny:-->\n\n ny:-->\n\nny:-->\n\nMongoDB Aggregation $sort\n\n❮ Previous\nNext ❯",
+                "heading": "MongoDB Exercises"
+            },
+            {
+                "content": "This aggregation stage groups sorts all documents in the specified sort order.\n\nRemember that the order of your stages matters. Each stage only acts upon the documents that previous stages provide.\n\nExample\nIn this example, we are using the \"sample_airbnb\" database loaded from our sample data in the\nIntro to Aggregations section.\n\ndb.listingsAndReviews.aggregate([ \n { \n $sort: { \"accommodates\": -1 } \n },\n {\n $project: {\n \"name\": 1,\n \"accommodates\": 1\n }\n },\n {\n $limit: 5\n }\n])\n\nTry it Yourself »\n\nThis will return the documents sorted in descending order by the accommodates field.\n\nThe sort order can be chosen by using 1\n or -1.\n 1 is ascending and -1 is descending.",
+                "heading": "Aggregation $sort"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:18:12Z",
+        "subject": "MongoDB",
+        "title": "MongoDB Aggregation $sort"
+    },
+    {
+        "url": "https://www.w3schools.com/mongodb/mongodb_aggregations_match.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "mongodb_mongodb_aggregations_match",
+        "code_examples": [
+            {
+                "code": "Example\nIn this example, we are using the \"sample_airbnb\" database loaded from our sample data in the \nIntro to Aggregations section.\n\ndb.listingsAndReviews.aggregate([ \n { $match : { property_type : \"House\" } },\n { $limit: 2 },\n { $project: {\n \"name\": 1,\n \"bedrooms\": 1,\n \"price\": 1\n }}\n])\n\nTry it Yourself »\n\nThis will only return documents that have the property_type of \"House\".\n\nAdvertisement\n -->\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress",
+                "language": "mongodb",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MongoDB HOME\nMongoDB Get Started\nMongoDB Query API\nMongoDB Create DB\nMongoDB Collection\nMongoDB Insert\nMongoDB Find\nMongoDB Update\nMongoDB Delete\nMongoDB Query Operators\nMongoDB Update Operators\nMongoDB Aggregations\n\n MongoDB Aggregations\n $group\n $limit\n $project\n $sort\n $match\n $addFields\n $count\n $lookup\n $out\n\nMongoDB Indexing/Search\nMongoDB Validation\nMongoDB Data API\nMongoDB Drivers\nMongoDB Node.js Driver\nMongoDB Charts",
+                "heading": "MongoDB Tutorial"
+            },
+            {
+                "content": "MongoDB Certificate",
+                "heading": "MongoDB Cert"
+            },
+            {
+                "content": "MongoDB Exercises\nMongoDB Syllabus\nMongoDB Study Plan\nMongoDB Quiz --> \n\nny:-->\n\n ny:-->\n\nny:-->\n\nMongoDB Aggregation $match\n\n❮ Previous\nNext ❯",
+                "heading": "MongoDB Exercises"
+            },
+            {
+                "content": "This aggregation stage behaves like a find. It will filter documents that match the query provided.\n\nUsing $match early in the pipeline can improve performance since it limits the number of documents the next stages must process. \n\nExample\nIn this example, we are using the \"sample_airbnb\" database loaded from our sample data in the \nIntro to Aggregations section.\n\ndb.listingsAndReviews.aggregate([ \n { $match : { property_type : \"House\" } },\n { $limit: 2 },\n { $project: {\n \"name\": 1,\n \"bedrooms\": 1,\n \"price\": 1\n }}\n])\n\nTry it Yourself »\n\nThis will only return documents that have the property_type of \"House\".",
+                "heading": "Aggregation $match"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:18:12Z",
+        "subject": "MongoDB",
+        "title": "MongoDB Aggregation $match"
+    },
+    {
+        "url": "https://www.w3schools.com/mongodb/mongodb_aggregations_addFields.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "mongodb_mongodb_aggregations_add_ields",
+        "code_examples": [
+            {
+                "code": "Example\nIn this example, we are using the \"sample_restaurants\" database loaded from our sample data in the\nIntro to Aggregations section.\n\ndb.restaurants.aggregate([\n {\n $addFields: {\n avgGrade: { $avg: \"$grades.score\" }\n }\n },\n {\n $project: {\n \"name\": 1,\n \"avgGrade\": 1\n }\n },\n {\n $limit: 5\n }\n])\n\nTry it Yourself »\n\nThis will return the documents along with a new field,\navgGrade,\nwhich will contain the average of each restaurants grades.score.\n\nAdvertisement\n -->\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress",
+                "language": "mongodb",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MongoDB HOME\nMongoDB Get Started\nMongoDB Query API\nMongoDB Create DB\nMongoDB Collection\nMongoDB Insert\nMongoDB Find\nMongoDB Update\nMongoDB Delete\nMongoDB Query Operators\nMongoDB Update Operators\nMongoDB Aggregations\n\n MongoDB Aggregations\n $group\n $limit\n $project\n $sort\n $match\n $addFields\n $count\n $lookup\n $out\n\nMongoDB Indexing/Search\nMongoDB Validation\nMongoDB Data API\nMongoDB Drivers\nMongoDB Node.js Driver\nMongoDB Charts",
+                "heading": "MongoDB Tutorial"
+            },
+            {
+                "content": "MongoDB Certificate",
+                "heading": "MongoDB Cert"
+            },
+            {
+                "content": "MongoDB Exercises\nMongoDB Syllabus\nMongoDB Study Plan\nMongoDB Quiz --> \n\nny:-->\n\n ny:-->\n\nny:-->\n\nMongoDB Aggregation $addFields\n\n❮ Previous\nNext ❯",
+                "heading": "MongoDB Exercises"
+            },
+            {
+                "content": "This aggregation stage adds new fields to documents.\n\nExample\nIn this example, we are using the \"sample_restaurants\" database loaded from our sample data in the\nIntro to Aggregations section.\n\ndb.restaurants.aggregate([\n {\n $addFields: {\n avgGrade: { $avg: \"$grades.score\" }\n }\n },\n {\n $project: {\n \"name\": 1,\n \"avgGrade\": 1\n }\n },\n {\n $limit: 5\n }\n])\n\nTry it Yourself »\n\nThis will return the documents along with a new field,\navgGrade,\nwhich will contain the average of each restaurants grades.score.",
+                "heading": "Aggregation $addFields"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:18:12Z",
+        "subject": "MongoDB",
+        "title": "MongoDB Aggregation $addFields"
+    },
+    {
+        "url": "https://www.w3schools.com/mongodb/mongodb_aggregations_count.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "mongodb_mongodb_aggregations_count",
+        "code_examples": [
+            {
+                "code": "Example\nIn this example, we are using the \"sample_restaurants\" database loaded from our sample data in the\nIntro to Aggregations section.\n\ndb.restaurants.aggregate([\n {\n $match: { \"cuisine\": \"Chinese\" }\n },\n {\n $count: \"totalChinese\"\n }\n])\n\nTry it Yourself »\n\nThis will return the number of documents at the $count stage as a field called \"totalChinese\".\n\nAdvertisement\n -->\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress",
+                "language": "mongodb",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MongoDB HOME\nMongoDB Get Started\nMongoDB Query API\nMongoDB Create DB\nMongoDB Collection\nMongoDB Insert\nMongoDB Find\nMongoDB Update\nMongoDB Delete\nMongoDB Query Operators\nMongoDB Update Operators\nMongoDB Aggregations\n\n MongoDB Aggregations\n $group\n $limit\n $project\n $sort\n $match\n $addFields\n $count\n $lookup\n $out\n\nMongoDB Indexing/Search\nMongoDB Validation\nMongoDB Data API\nMongoDB Drivers\nMongoDB Node.js Driver\nMongoDB Charts",
+                "heading": "MongoDB Tutorial"
+            },
+            {
+                "content": "MongoDB Certificate",
+                "heading": "MongoDB Cert"
+            },
+            {
+                "content": "MongoDB Exercises\nMongoDB Syllabus\nMongoDB Study Plan\nMongoDB Quiz --> \n\nny:-->\n\n ny:-->\n\nny:-->\n\nMongoDB Aggregation $count\n\n❮ Previous\nNext ❯",
+                "heading": "MongoDB Exercises"
+            },
+            {
+                "content": "This aggregation stage counts the total amount of documents passed from the previous stage.\n\nExample\nIn this example, we are using the \"sample_restaurants\" database loaded from our sample data in the\nIntro to Aggregations section.\n\ndb.restaurants.aggregate([\n {\n $match: { \"cuisine\": \"Chinese\" }\n },\n {\n $count: \"totalChinese\"\n }\n])\n\nTry it Yourself »\n\nThis will return the number of documents at the $count stage as a field called \"totalChinese\".",
+                "heading": "Aggregation $count"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:18:12Z",
+        "subject": "MongoDB",
+        "title": "MongoDB Aggregation $count"
+    },
+    {
+        "url": "https://www.w3schools.com/mongodb/mongodb_aggregations_lookup.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "mongodb_mongodb_aggregations_lookup",
+        "code_examples": [
+            {
+                "code": "Example\nIn this example, we are using the \"sample_mflix\" database loaded from our sample data in the\nIntro to Aggregations section.\n\ndb.comments.aggregate([\n {\n $lookup: {\n from: \"movies\",\n localField: \"movie_id\",\n foreignField: \"_id\",\n as: \"movie_details\",\n },\n },\n {\n $limit: 1\n }\n])\n\nTry it Yourself »\n\nThis will return the movie data along with each comment.\n\nAdvertisement\n -->\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress",
+                "language": "mongodb",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MongoDB HOME\nMongoDB Get Started\nMongoDB Query API\nMongoDB Create DB\nMongoDB Collection\nMongoDB Insert\nMongoDB Find\nMongoDB Update\nMongoDB Delete\nMongoDB Query Operators\nMongoDB Update Operators\nMongoDB Aggregations\n\n MongoDB Aggregations\n $group\n $limit\n $project\n $sort\n $match\n $addFields\n $count\n $lookup\n $out\n\nMongoDB Indexing/Search\nMongoDB Validation\nMongoDB Data API\nMongoDB Drivers\nMongoDB Node.js Driver\nMongoDB Charts",
+                "heading": "MongoDB Tutorial"
+            },
+            {
+                "content": "MongoDB Certificate",
+                "heading": "MongoDB Cert"
+            },
+            {
+                "content": "MongoDB Exercises\nMongoDB Syllabus\nMongoDB Study Plan\nMongoDB Quiz --> \n\nny:-->\n\n ny:-->\n\nny:-->\n\nMongoDB Aggregation $lookup\n\n❮ Previous\nNext ❯",
+                "heading": "MongoDB Exercises"
+            },
+            {
+                "content": "This aggregation stage performs a left outer join to a collection in the same database.\n\nThere are four required fields:\n\nfrom: The collection to use for lookup in the same database\n\nlocalField: The field in the primary collection that can be used as a unique identifier in the from collection.\n\nforeignField: The field in the from collection that can be used as a unique identifier in the primary collection.\n\nas: The name of the new field that will contain the matching documents from the from collection.\n\nExample\nIn this example, we are using the \"sample_mflix\" database loaded from our sample data in the\nIntro to Aggregations section.\n\ndb.comments.aggregate([\n {\n $lookup: {\n from: \"movies\",\n localField: \"movie_id\",\n foreignField: \"_id\",\n as: \"movie_details\",\n },\n },\n {\n $limit: 1\n }\n])\n\nTry it Yourself »\n\nThis will return the movie data along with each comment.",
+                "heading": "Aggregation $lookup"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:18:12Z",
+        "subject": "MongoDB",
+        "title": "MongoDB Aggregation $lookup"
+    },
+    {
+        "url": "https://www.w3schools.com/mongodb/mongodb_aggregations_out.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "mongodb_mongodb_aggregations_out",
+        "code_examples": [
+            {
+                "code": "Example\nIn this example, we are using the \"sample_airbnb\" database loaded from our sample data in the\nIntro to Aggregations section.\n\ndb.listingsAndReviews.aggregate([\n {\n $group: {\n _id: \"$property_type\",\n properties: {\n $push: {\n name: \"$name\",\n accommodates: \"$accommodates\",\n price: \"$price\",\n },\n },\n },\n },\n { $out: \"properties_by_type\" },\n])\n\nTry it Yourself »\n\nThe first stage will group properties by the\nproperty_type and include the name,\naccommodates, and price fields for each.\nThe $out stage will create a new collection called\nproperties_by_type in the current database and write the resulting documents into that collection.\n\nAdvertisement\n -->\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress",
+                "language": "mongodb",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MongoDB HOME\nMongoDB Get Started\nMongoDB Query API\nMongoDB Create DB\nMongoDB Collection\nMongoDB Insert\nMongoDB Find\nMongoDB Update\nMongoDB Delete\nMongoDB Query Operators\nMongoDB Update Operators\nMongoDB Aggregations\n\n MongoDB Aggregations\n $group\n $limit\n $project\n $sort\n $match\n $addFields\n $count\n $lookup\n $out\n\nMongoDB Indexing/Search\nMongoDB Validation\nMongoDB Data API\nMongoDB Drivers\nMongoDB Node.js Driver\nMongoDB Charts",
+                "heading": "MongoDB Tutorial"
+            },
+            {
+                "content": "MongoDB Certificate",
+                "heading": "MongoDB Cert"
+            },
+            {
+                "content": "MongoDB Exercises\nMongoDB Syllabus\nMongoDB Study Plan\nMongoDB Quiz --> \n\nny:-->\n\n ny:-->\n\nny:-->\n\nMongoDB Aggregation $out\n\n❮ Previous\nNext ❯",
+                "heading": "MongoDB Exercises"
+            },
+            {
+                "content": "This aggregation stage writes the returned documents from the aggregation pipeline to a collection.\n\nThe $out stage must be the last stage of the aggregation pipeline.\n\nExample\nIn this example, we are using the \"sample_airbnb\" database loaded from our sample data in the\nIntro to Aggregations section.\n\ndb.listingsAndReviews.aggregate([\n {\n $group: {\n _id: \"$property_type\",\n properties: {\n $push: {\n name: \"$name\",\n accommodates: \"$accommodates\",\n price: \"$price\",\n },\n },\n },\n },\n { $out: \"properties_by_type\" },\n])\n\nTry it Yourself »\n\nThe first stage will group properties by the\nproperty_type and include the name,\naccommodates, and price fields for each.\nThe $out stage will create a new collection called\nproperties_by_type in the current database and write the resulting documents into that collection.",
+                "heading": "Aggregation $out"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:18:12Z",
+        "subject": "MongoDB",
+        "title": "MongoDB Aggregation $out"
+    },
+    {
+        "url": "https://www.w3schools.com/mongodb/mongodb_indexing_search.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "mongodb_mongodb_indexing_search",
+        "code_examples": [
+            {
+                "code": "Example\ndb.movies.aggregate([\n {\n $search: {\n index: \"default\", // optional unless you named your index something other than \"default\"\n text: {\n query: \"star wars\",\n path: \"title\"\n },\n },\n },\n {\n $project: {\n title: 1,\n year: 1,\n }\n }\n])\nTry it Yourself »\n\nThe first stage of this aggregation pipeline will return all documents in the\nmovies collection that contain the word \"star\" or \"wars\" in the \ntitle field.\n\nThe second stage will project the title and year fields from each document.\n\nAdvertisement\n -->\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress",
+                "language": "mongodb",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MongoDB HOME\nMongoDB Get Started\nMongoDB Query API\nMongoDB Create DB\nMongoDB Collection\nMongoDB Insert\nMongoDB Find\nMongoDB Update\nMongoDB Delete\nMongoDB Query Operators\nMongoDB Update Operators\nMongoDB Aggregations\n\n MongoDB Aggregations\n $group\n $limit\n $project\n $sort\n $match\n $addFields\n $count\n $lookup\n $out\n\nMongoDB Indexing/Search\nMongoDB Validation\nMongoDB Data API\nMongoDB Drivers\nMongoDB Node.js Driver\nMongoDB Charts",
+                "heading": "MongoDB Tutorial"
+            },
+            {
+                "content": "MongoDB Certificate",
+                "heading": "MongoDB Cert"
+            },
+            {
+                "content": "MongoDB Exercises\nMongoDB Syllabus\nMongoDB Study Plan\nMongoDB Quiz --> \n\nny:-->\n\n ny:-->\n\nny:-->\n\nIndexing & Search\n\n❮ Previous\nNext ❯",
+                "heading": "MongoDB Exercises"
+            },
+            {
+                "content": "MongoDB Atlas comes with a full-text search engine that can be used to search for documents in a collection.\n\nAtlas Search is powered by Apache Lucene.",
+                "heading": "Indexing & Search"
+            },
+            {
+                "content": "We'll use the Atlas dashboard to create an index on the \"sample_mflix\" database \nfrom the sample data that we loaded in the\nIntro to Aggregations section.\n\nFrom the Atlas dashboard, click on your Cluster name then the Search tab.\n\nClick on the Create Search Index button.\n\nUse the Visual Editor and click Next.\n\nName your index, choose the Database and Collection you want to index and click Next.\n\n If you name your index \"default\" you will not have to specify the index name in the\n $search pipeline stage.\n\n Choose the sample_mflix database and the movies collection.\n\nClick Create Search Index and wait for the index to complete.",
+                "heading": "Creating an Index"
+            },
+            {
+                "content": "To use our search index, we will use the $search operator in our aggregation pipeline.\n\nExample\ndb.movies.aggregate([\n {\n $search: {\n index: \"default\", // optional unless you named your index something other than \"default\"\n text: {\n query: \"star wars\",\n path: \"title\"\n },\n },\n },\n {\n $project: {\n title: 1,\n year: 1,\n }\n }\n])\nTry it Yourself »\n\nThe first stage of this aggregation pipeline will return all documents in the\nmovies collection that contain the word \"star\" or \"wars\" in the \ntitle field.\n\nThe second stage will project the title and year fields from each document.",
+                "heading": "Running a Query"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:18:12Z",
+        "subject": "MongoDB",
+        "title": "Indexing & Search"
+    },
+    {
+        "url": "https://www.w3schools.com/mongodb/mongodb_schema_validation.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "mongodb_mongodb_schema_validation",
+        "code_examples": [
+            {
+                "code": "Example\ndb.createCollection(\"posts\", {\n validator: {\n $jsonSchema: {\n bsonType: \"object\",\n required: [ \"title\", \"body\" ],\n properties: {\n title: {\n bsonType: \"string\",\n description: \"Title of post - Required.\"\n },\n body: {\n bsonType: \"string\",\n description: \"Body of post - Required.\"\n },\n category: {\n bsonType: \"string\",\n description: \"Category of post - Optional.\"\n },\n likes: {\n bsonType: \"int\",\n description: \"Post like count. Must be an integer - Optional.\"\n },\n tags: {\n bsonType: [\"string\"],\n description: \"Must be an array of strings - Optional.\"\n },\n date: {\n bsonType: \"date\",\n description: \"Must be a date - Optional.\"\n }\n }\n }\n }\n})\n\nTry it Yourself »\n\nThis will create the posts collection in the current database and specify the JSON Schema validation requirements for the collection.\n\nAdvertisement\n -->\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress",
+                "language": "mongodb",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MongoDB HOME\nMongoDB Get Started\nMongoDB Query API\nMongoDB Create DB\nMongoDB Collection\nMongoDB Insert\nMongoDB Find\nMongoDB Update\nMongoDB Delete\nMongoDB Query Operators\nMongoDB Update Operators\nMongoDB Aggregations\n\n MongoDB Aggregations\n $group\n $limit\n $project\n $sort\n $match\n $addFields\n $count\n $lookup\n $out\n\nMongoDB Indexing/Search\nMongoDB Validation\nMongoDB Data API\nMongoDB Drivers\nMongoDB Node.js Driver\nMongoDB Charts",
+                "heading": "MongoDB Tutorial"
+            },
+            {
+                "content": "MongoDB Certificate",
+                "heading": "MongoDB Cert"
+            },
+            {
+                "content": "MongoDB Exercises\nMongoDB Syllabus\nMongoDB Study Plan\nMongoDB Quiz --> \n\nny:-->\n\n ny:-->\n\nny:-->\n\nMongoDB Schema Validation\n\n❮ Previous\nNext ❯",
+                "heading": "MongoDB Exercises"
+            },
+            {
+                "content": "By default MongoDB has a flexible schema. This means that there is no strict schema validation set up initially.\n\nSchema validation rules can be created in order to ensure that all documents \nin a collection share a similar structure.",
+                "heading": "Schema Validation"
+            },
+            {
+                "content": "MongoDB supports JSON Schema validation. The $jsonSchema\noperator allows us to define our document structure.\n\nExample\ndb.createCollection(\"posts\", {\n validator: {\n $jsonSchema: {\n bsonType: \"object\",\n required: [ \"title\", \"body\" ],\n properties: {\n title: {\n bsonType: \"string\",\n description: \"Title of post - Required.\"\n },\n body: {\n bsonType: \"string\",\n description: \"Body of post - Required.\"\n },\n category: {\n bsonType: \"string\",\n description: \"Category of post - Optional.\"\n },\n likes: {\n bsonType: \"int\",\n description: \"Post like count. Must be an integer - Optional.\"\n },\n tags: {\n bsonType: [\"string\"],\n description: \"Must be an array of strings - Optional.\"\n },\n date: {\n bsonType: \"date\",\n description: \"Must be a date - Optional.\"\n }\n }\n }\n }\n})\n\nTry it Yourself »\n\nThis will create the posts collection in the current database and specify the JSON Schema validation requirements for the collection.",
+                "heading": "Schema Validation"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:18:13Z",
+        "subject": "MongoDB",
+        "title": "MongoDB Schema Validation"
+    },
+    {
+        "url": "https://www.w3schools.com/mongodb/mongodb_data_api.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "mongodb_mongodb_data_api",
+        "code_examples": [
+            {
+                "code": "Example\ncurl --location --request POST 'https://data.mongodb-api.com/app/<DATA API APP ID>/endpoint/data/v1/action/findOne' \\\n--header 'Content-Type: application/json' \\\n--header 'Access-Control-Request-Headers: *' \\\n--header 'api-key: <DATA API KEY>' \\\n--data-raw '{\n \"dataSource\":\"<CLUSTER NAME>\",\n \"database\":\"sample_mflix\",\n \"collection\":\"movies\",\n \"projection\": {\"title\": 1}\n}'\n\nTry it Yourself »\n\nAdvertisement\n -->\n\nData API Endpoints\n\nIn the previous example, we used the findOne endpoint in our URL.\n\nThere are several endpoints available for use with the Data API.\n\nAll endpoints start with the Base URL:\nhttps://data.mongodb-api.com/app/<Data API App ID>/endpoint/data/v1/action/\n\nFind a Single Document\n\nEndpoint\n\nPOST Base_URL/findOne\n\nThe findOne endpoint is used to find a single document in a collection.\n\nRequest Body\n\nExample\n{\n \"dataSource\": \"<data source name>\",\n \"database\": \"<database name>\",\n \"collection\": \"<collection name>\",\n \"filter\": <query filter>,\n \"projection\": <projection>\n}\n\nFind Multiple Documents\n\nEndpoint\n\nPOST Base_URL/find\n\nThe find endpoint is used to find multiple documents in a collection.\n\nRequest Body\n\nExample\n{\n \"dataSource\": \"<data source name>\",\n \"database\": \"<database name>\",\n \"collection\": \"<collection name>\",\n \"filter\": <query filter>,\n \"projection\": <projection>,\n \"sort\": <sort expression>,\n \"limit\": <number>,\n \"skip\": <number>\n}\n\nInsert a Single Document\n\nEndpoint\n\nPOST Base_URL/insertOne\n\nThe insertOne endpoint is used to insert a single document into a collection.\n\nRequest Body\n\nExample\n{\n \"dataSource\": \"<data source name>\",\n \"database\": \"<database name>\",\n \"collection\": \"<collection name>\",\n \"document\": <document>\n}\n\nInsert Multiple Documents\n\nEndpoint\n\nPOST Base_URL/insertMany\n\nThe insertMany endpoint is used to insert multiple documents into a collection.\n\nRequest Body\n\nExample\n{\n \"dataSource\": \"<data source name>\",\n \"database\": \"<database name>\",\n \"collection\": \"<collection name>\",\n \"documents\": [<document>, <document>, ...]\n}\n\nUpdate a Single Document\n\nEndpoint\n\nPOST Base_URL/updateOne\n\nRequest Body\n\nExample\n{\n \"dataSource\": \"<data source name>\",\n \"database\": \"<database name>\",\n \"collection\": \"<collection name>\",\n \"filter\": <query filter>,\n \"update\": <update expression>,\n \"upsert\": true|false\n}\n\nUpdate Multiple Documents\n\nEndpoint\n\nPOST Base_URL/updateMany\n\nRequest Body\n\nExample\n{\n \"dataSource\": \"<data source name>\",\n \"database\": \"<database name>\",\n \"collection\": \"<collection name>\",\n \"filter\": <query filter>,\n \"update\": <update expression>,\n \"upsert\": true|false\n}\n\nDelete a Single Document\n\nEndpoint\n\nPOST Base_URL/deleteOne\n\nRequest Body\n\nExample\n{\n \"dataSource\": \"<data source name>\",\n \"database\": \"<database name>\",\n \"collection\": \"<collection name>\",\n \"filter\": <query filter>\n}\n\nDelete Multiple Documents\n\nEndpoint\n\nPOST Base_URL/deleteMany\n\nRequest Body\n\nExample\n{\n \"dataSource\": \"<data source name>\",\n \"database\": \"<database name>\",\n \"collection\": \"<collection name>\",\n \"filter\": <query filter>\n}\n\nAggregate Documents\n\nEndpoint\n\nPOST Base_URL/aggregate\n\nRequest Body\n\nExample\n{\n \"dataSource\": \"<data source name>\",\n \"database\": \"<database name>\",\n \"collection\": \"<collection name>\",\n \"pipeline\": [<pipeline expression>, ...]\n}\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress",
+                "language": "mongodb",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MongoDB HOME\nMongoDB Get Started\nMongoDB Query API\nMongoDB Create DB\nMongoDB Collection\nMongoDB Insert\nMongoDB Find\nMongoDB Update\nMongoDB Delete\nMongoDB Query Operators\nMongoDB Update Operators\nMongoDB Aggregations\n\n MongoDB Aggregations\n $group\n $limit\n $project\n $sort\n $match\n $addFields\n $count\n $lookup\n $out\n\nMongoDB Indexing/Search\nMongoDB Validation\nMongoDB Data API\nMongoDB Drivers\nMongoDB Node.js Driver\nMongoDB Charts",
+                "heading": "MongoDB Tutorial"
+            },
+            {
+                "content": "MongoDB Certificate",
+                "heading": "MongoDB Cert"
+            },
+            {
+                "content": "MongoDB Exercises\nMongoDB Syllabus\nMongoDB Study Plan\nMongoDB Quiz --> \n\nny:-->\n\n ny:-->\n\nny:-->\n\nMongoDB Data API\n\n❮ Previous\nNext ❯",
+                "heading": "MongoDB Exercises"
+            },
+            {
+                "content": "The MongoDB Data API can be used to query and update data in a MongoDB database without the need for language specific drivers.\n\nLanguage drivers should be used when possible,\nbut the MongoDB Data API comes in handy when drivers are not available or drivers are overkill for the application.",
+                "heading": "MongoDB Data API"
+            },
+            {
+                "content": "The MongoDB Data API is a pre-configured set of HTTPS endpoints that can be used to read and write data to a MongoDB Atlas database.\n\nWith the MongoDB Data API, you can create, read, update, delete, or aggregate documents in a MongoDB Atlas database.",
+                "heading": "Read & Write with the MongoDB Data API"
+            },
+            {
+                "content": "In order to use the Data API, you must first enable the functionality from the Atlas UI.\n\nFrom the MongoDB Atlas dashboard, navigate to Data API in the left menu.\n\nSelect the data source(s) you would like to enable the API on and click Enable the Data API.",
+                "heading": "Cluster Configuration"
+            },
+            {
+                "content": "By default, no access is granted. Select the access level you'd like to grant the Data API. The choices are: No Access, Read Only, Read and Write, or Custom Access.",
+                "heading": "Access Level"
+            },
+            {
+                "content": "In order to authenticate with the Data API, you must first create a Data API key.\n\nClick Create API Key, enter a name for the key, then click Generate API Key.\n\nBe sure to copy the API key and save it somewhere safe. You will not get another chance to see this key again.",
+                "heading": "Data API Key"
+            },
+            {
+                "content": "We can now use the Data API to send a request to the database.\n\nIn the next example, we'll use curl to find the first document in the \nmovies collection of our sample_mflix database.\nWe loaded this sample data in the\nIntro to Aggregations section.\n\nTo run this example, you'll need your App Id, API Key, and Cluster name. \n\nYou can find your App Id in the URL Endpoint field of the Data API page in the MongoDB Atlas UI.\n\nExample\ncurl --location --request POST 'https://data.mongodb-api.com/app/<DATA API APP ID>/endpoint/data/v1/action/findOne' \\\n--header 'Content-Type: application/json' \\\n--header 'Access-Control-Request-Headers: *' \\\n--header 'api-key: <DATA API KEY>' \\\n--data-raw '{\n \"dataSource\":\"<CLUSTER NAME>\",\n \"database\":\"sample_mflix\",\n \"collection\":\"movies\",\n \"projection\": {\"title\": 1}\n}'\n\nTry it Yourself »",
+                "heading": "Sending a Data API Request"
+            },
+            {
+                "content": "In the previous example, we used the findOne endpoint in our URL.\n\nThere are several endpoints available for use with the Data API.\n\nAll endpoints start with the Base URL:\nhttps://data.mongodb-api.com/app/<Data API App ID>/endpoint/data/v1/action/",
+                "heading": "Data API Endpoints"
+            },
+            {
+                "content": "Endpoint\n\nPOST Base_URL/findOne\n\nThe findOne endpoint is used to find a single document in a collection.\n\nRequest Body\n\nExample\n{\n \"dataSource\": \"<data source name>\",\n \"database\": \"<database name>\",\n \"collection\": \"<collection name>\",\n \"filter\": <query filter>,\n \"projection\": <projection>\n}",
+                "heading": "Find a Single Document"
+            },
+            {
+                "content": "Endpoint\n\nPOST Base_URL/find\n\nThe find endpoint is used to find multiple documents in a collection.\n\nRequest Body\n\nExample\n{\n \"dataSource\": \"<data source name>\",\n \"database\": \"<database name>\",\n \"collection\": \"<collection name>\",\n \"filter\": <query filter>,\n \"projection\": <projection>,\n \"sort\": <sort expression>,\n \"limit\": <number>,\n \"skip\": <number>\n}",
+                "heading": "Find Multiple Documents"
+            },
+            {
+                "content": "Endpoint\n\nPOST Base_URL/insertOne\n\nThe insertOne endpoint is used to insert a single document into a collection.\n\nRequest Body\n\nExample\n{\n \"dataSource\": \"<data source name>\",\n \"database\": \"<database name>\",\n \"collection\": \"<collection name>\",\n \"document\": <document>\n}",
+                "heading": "Insert a Single Document"
+            },
+            {
+                "content": "Endpoint\n\nPOST Base_URL/insertMany\n\nThe insertMany endpoint is used to insert multiple documents into a collection.\n\nRequest Body\n\nExample\n{\n \"dataSource\": \"<data source name>\",\n \"database\": \"<database name>\",\n \"collection\": \"<collection name>\",\n \"documents\": [<document>, <document>, ...]\n}",
+                "heading": "Insert Multiple Documents"
+            },
+            {
+                "content": "Endpoint\n\nPOST Base_URL/updateOne\n\nRequest Body\n\nExample\n{\n \"dataSource\": \"<data source name>\",\n \"database\": \"<database name>\",\n \"collection\": \"<collection name>\",\n \"filter\": <query filter>,\n \"update\": <update expression>,\n \"upsert\": true|false\n}",
+                "heading": "Update a Single Document"
+            },
+            {
+                "content": "Endpoint\n\nPOST Base_URL/updateMany\n\nRequest Body\n\nExample\n{\n \"dataSource\": \"<data source name>\",\n \"database\": \"<database name>\",\n \"collection\": \"<collection name>\",\n \"filter\": <query filter>,\n \"update\": <update expression>,\n \"upsert\": true|false\n}",
+                "heading": "Update Multiple Documents"
+            },
+            {
+                "content": "Endpoint\n\nPOST Base_URL/deleteOne\n\nRequest Body\n\nExample\n{\n \"dataSource\": \"<data source name>\",\n \"database\": \"<database name>\",\n \"collection\": \"<collection name>\",\n \"filter\": <query filter>\n}",
+                "heading": "Delete a Single Document"
+            },
+            {
+                "content": "Endpoint\n\nPOST Base_URL/deleteMany\n\nRequest Body\n\nExample\n{\n \"dataSource\": \"<data source name>\",\n \"database\": \"<database name>\",\n \"collection\": \"<collection name>\",\n \"filter\": <query filter>\n}",
+                "heading": "Delete Multiple Documents"
+            },
+            {
+                "content": "Endpoint\n\nPOST Base_URL/aggregate\n\nRequest Body\n\nExample\n{\n \"dataSource\": \"<data source name>\",\n \"database\": \"<database name>\",\n \"collection\": \"<collection name>\",\n \"pipeline\": [<pipeline expression>, ...]\n}\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Aggregate Documents"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:18:13Z",
+        "subject": "MongoDB",
+        "title": "MongoDB Data API"
+    },
+    {
+        "url": "https://www.w3schools.com/mongodb/mongodb_drivers.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "mongodb_mongodb_drivers",
+        "code_examples": [],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MongoDB HOME\nMongoDB Get Started\nMongoDB Query API\nMongoDB Create DB\nMongoDB Collection\nMongoDB Insert\nMongoDB Find\nMongoDB Update\nMongoDB Delete\nMongoDB Query Operators\nMongoDB Update Operators\nMongoDB Aggregations\n\n MongoDB Aggregations\n $group\n $limit\n $project\n $sort\n $match\n $addFields\n $count\n $lookup\n $out\n\nMongoDB Indexing/Search\nMongoDB Validation\nMongoDB Data API\nMongoDB Drivers\nMongoDB Node.js Driver\nMongoDB Charts",
+                "heading": "MongoDB Tutorial"
+            },
+            {
+                "content": "MongoDB Certificate",
+                "heading": "MongoDB Cert"
+            },
+            {
+                "content": "MongoDB Exercises\nMongoDB Syllabus\nMongoDB Study Plan\nMongoDB Quiz --> \n\nny:-->\n\n ny:-->\n\nny:-->\n\nMongoDB Drivers\n\n❮ Previous\nNext ❯",
+                "heading": "MongoDB Exercises"
+            },
+            {
+                "content": "The MongoDB Shell (mongosh) is great, but generally you will need to use MongoDB in your application.\nTo do this, MongoDB has many language drivers.\n\nThe language drivers allow you to interact with your MongoDB database using the methods you've learned \nso far in `mongosh` but directly in your application.\n\nThese are the current officially supported drivers:\n\nC\n\nC++\n\nC#\n\nGo\n\nJava\n\nNode.js\n\nPHP\n\nPython\n\nRuby\n\nRust\n\nScala\n\nSwift\n\nThere are other \n\ncommunity supported libraries as well.\n\nLet's see how to use the drivers using \nNode.js next.",
+                "heading": "MongoDB Drivers"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:18:13Z",
+        "subject": "MongoDB",
+        "title": "MongoDB Drivers"
+    },
+    {
+        "url": "https://www.w3schools.com/mongodb/mongodb_nodejs_connect_database.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "mongodb_mongodb_nodejs_connect_database",
+        "code_examples": [
+            {
+                "code": "npm install mongodb",
+                "language": "mongodb",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "index.js\n\nconst { MongoClient } = require('mongodb');\n\nConnection String\n\nIn order to connect to our MongoDB Atlas database, we'll need to get our connection string from the Atlas dashboard.\n\nGo to Database then click the CONNECT button on your Cluster.\n\nChoose Connect your application then copy your connection string.\n\nExample:\nmongodb+srv://<username>:<password>@<cluster.string>.mongodb.net/myFirstDatabase?retryWrites=true&w=majority\n\nYou will need to replace the <username>, <password>,\nand <cluster.string> with your MongoDB Atlas username, password, and cluster string.\n\nAdvertisement\n -->\n\nConnecting to MongoDB\n\nLet's add to our index.js file.\n\nindex.js\n\nconst { MongoClient } = require('mongodb');\n\nconst uri = \"<Your Connection String>\";\nconst client = new MongoClient(uri);\n\nasync function run() {\n try {\n await client.connect();\n const db = client.db('sample_mflix');\n const collection = db.collection('movies');\n\n // Find the first document in the collection\n const first = await collection.findOne();\n console.log(first);\n } finally {\n // Close the database connection when finished or an error occurs\n await client.close();\n }\n}\nrun().catch(console.error);\n\nTry it Yourself »\n\nRun this file in your terminal.\n\nnode index.js",
+                "language": "mongodb",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MongoDB HOME\nMongoDB Get Started\nMongoDB Query API\nMongoDB Create DB\nMongoDB Collection\nMongoDB Insert\nMongoDB Find\nMongoDB Update\nMongoDB Delete\nMongoDB Query Operators\nMongoDB Update Operators\nMongoDB Aggregations\n\n MongoDB Aggregations\n $group\n $limit\n $project\n $sort\n $match\n $addFields\n $count\n $lookup\n $out\n\nMongoDB Indexing/Search\nMongoDB Validation\nMongoDB Data API\nMongoDB Drivers\nMongoDB Node.js Driver\nMongoDB Charts",
+                "heading": "MongoDB Tutorial"
+            },
+            {
+                "content": "MongoDB Certificate",
+                "heading": "MongoDB Cert"
+            },
+            {
+                "content": "MongoDB Exercises\nMongoDB Syllabus\nMongoDB Study Plan\nMongoDB Quiz --> \n\nny:-->\n\n ny:-->\n\nny:-->\n\nMongoDB Node.js Database Interaction\n\n❮ Previous\nNext ❯",
+                "heading": "MongoDB Exercises"
+            },
+            {
+                "content": "For this tutorial, we will use a MongoDB Atlas database.\nIf you don't already have a MongoDB Atlas account,\nyou can create one for free at\nMongoDB Atlas.\n\nWe will also use the \"sample_mflix\" database loaded from our sample data in the\nIntro to Aggregations section.",
+                "heading": "Node.js Database Interaction"
+            },
+            {
+                "content": "To use MongoDB with Node.js, you will need to install the mongodb package in your Node.js project.\n\nUse the following command in your terminal to install the mongodb package:\n\nnpm install mongodb\n\nWe can now use this package to connect to a MongoDB database.\n\nCreate an index.js file in your project directory.\n\nindex.js\n\nconst { MongoClient } = require('mongodb');",
+                "heading": "MongoDB Node.js Driver Installation"
+            },
+            {
+                "content": "In order to connect to our MongoDB Atlas database, we'll need to get our connection string from the Atlas dashboard.\n\nGo to Database then click the CONNECT button on your Cluster.\n\nChoose Connect your application then copy your connection string.\n\nExample:\nmongodb+srv://<username>:<password>@<cluster.string>.mongodb.net/myFirstDatabase?retryWrites=true&w=majority\n\nYou will need to replace the <username>, <password>,\nand <cluster.string> with your MongoDB Atlas username, password, and cluster string.",
+                "heading": "Connection String"
+            },
+            {
+                "content": "Let's add to our index.js file.\n\nindex.js\n\nconst { MongoClient } = require('mongodb');\n\nconst uri = \"<Your Connection String>\";\nconst client = new MongoClient(uri);\n\nasync function run() {\n try {\n await client.connect();\n const db = client.db('sample_mflix');\n const collection = db.collection('movies');\n\n // Find the first document in the collection\n const first = await collection.findOne();\n console.log(first);\n } finally {\n // Close the database connection when finished or an error occurs\n await client.close();\n }\n}\nrun().catch(console.error);\n\nTry it Yourself »\n\nRun this file in your terminal.\n\nnode index.js\n\nYou should see the first document logged to the console.",
+                "heading": "Connecting to MongoDB"
+            },
+            {
+                "content": "Just as we did using mongosh,\nwe can use the MongoDB Node.js language driver to create, read, update, delete, and aggregate documents in the database.\n\nExpanding on the previous example, we can replace the collection.findOne()\nwith find(), insertOne(),\ninsertMany(), updateOne(),\nupdateMany(), deleteOne(),\ndeleteMany(), or aggregate().\n\nGive some of those a try.\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "CRUD & Document Aggregation"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:18:13Z",
+        "subject": "MongoDB",
+        "title": "MongoDB Node.js Database Interaction"
+    },
+    {
+        "url": "https://www.w3schools.com/mongodb/mongodb_charts.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "mongodb_mongodb_charts",
+        "code_examples": [],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MongoDB HOME\nMongoDB Get Started\nMongoDB Query API\nMongoDB Create DB\nMongoDB Collection\nMongoDB Insert\nMongoDB Find\nMongoDB Update\nMongoDB Delete\nMongoDB Query Operators\nMongoDB Update Operators\nMongoDB Aggregations\n\n MongoDB Aggregations\n $group\n $limit\n $project\n $sort\n $match\n $addFields\n $count\n $lookup\n $out\n\nMongoDB Indexing/Search\nMongoDB Validation\nMongoDB Data API\nMongoDB Drivers\nMongoDB Node.js Driver\nMongoDB Charts",
+                "heading": "MongoDB Tutorial"
+            },
+            {
+                "content": "MongoDB Certificate",
+                "heading": "MongoDB Cert"
+            },
+            {
+                "content": "MongoDB Exercises\nMongoDB Syllabus\nMongoDB Study Plan\nMongoDB Quiz --> \n\nny:-->\n\n ny:-->\n\nny:-->\n\nMongoDB Charts\n\n❮ Home\n Next ❯",
+                "heading": "MongoDB Exercises"
+            },
+            {
+                "content": "MongoDB Charts lets you visualize your data in a simple, intuitive way.",
+                "heading": "MongoDB Charts"
+            },
+            {
+                "content": "From the MongoDB Atlas dashboard, go to the Charts tab.\n\nIf you've never used Charts before, click the Activate Now button. This will take about 1 minute to complete.\n\nYou'll see a new dashboard. Click the dashboard name to open it.",
+                "heading": "MongoDB Charts Setup"
+            },
+            {
+                "content": "Create a new chart by clicking the Add Chart button.\n\nVisually creating a chart is intuitive. Select the data sources that you want to use.",
+                "heading": "Creating a Chart"
+            },
+            {
+                "content": "In this example, we are using the \"sample_mflix\" database loaded from our sample data in the\nIntro to Aggregations section.\n\nUnder Data Source, select the Movies collection.\n\nLet's visualize how many movies were released in each year.\n\nDrag the Year field to the Y Axis field and set the Bin Size to 1.\n\nDrag the _id field to the X Axis field and make sure COUNT is selected for the Aggregate.\n\nYou should now see a bar chart with the number of movies released in each year.",
+                "heading": "Example:"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:18:14Z",
+        "subject": "MongoDB",
+        "title": "MongoDB Charts"
+    },
+    {
+        "url": "https://www.w3schools.com/mongodb/mongodb_exam.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "mongodb_mongodb_exam",
+        "code_examples": [],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MongoDB HOME\nMongoDB Get Started\nMongoDB Query API\nMongoDB Create DB\nMongoDB Collection\nMongoDB Insert\nMongoDB Find\nMongoDB Update\nMongoDB Delete\nMongoDB Query Operators\nMongoDB Update Operators\nMongoDB Aggregations\n\n MongoDB Aggregations\n $group\n $limit\n $project\n $sort\n $match\n $addFields\n $count\n $lookup\n $out\n\nMongoDB Indexing/Search\nMongoDB Validation\nMongoDB Data API\nMongoDB Drivers\nMongoDB Node.js Driver\nMongoDB Charts",
+                "heading": "MongoDB Tutorial"
+            },
+            {
+                "content": "MongoDB Certificate",
+                "heading": "MongoDB Cert"
+            },
+            {
+                "content": "MongoDB Exercises\nMongoDB Syllabus\nMongoDB Study Plan\nMongoDB Quiz --> \n\nny:-->\n\n ny:-->\n\nny:-->\n\nW3Schools MongoDB Certificate\n\n ❮ Previous\n Next ❯\n\n HTML Certification",
+                "heading": "MongoDB Exercises"
+            },
+            {
+                "content": "Prepare online at your own pace, take the exam when you are ready, and add a verified credential to your CV, LinkedIn profile, and portfolio.\n\n Designed for students, developers, and professionals who want a practical way to document their knowledge.\n\n Get Your HTML Certificate »\n\n Online exam. No expiration. Shareable verification link.\n\n w\n 3\n s\n c\n h\n o\n o\n l\n s\n\n C\n E\n R\n T\n I\n F\n I\n E\n D\n\n .\n\n 2\n 0\n 2\n 6",
+                "heading": "Get Certified in HTML"
+            },
+            {
+                "content": "Any student or professional working in digital fields can benefit from documenting their skills with a certificate.\n\n Certifications help demonstrate knowledge to current or future employers, clients, and collaborators in an increasingly competitive market.",
+                "heading": "Why Get Certified?"
+            },
+            {
+                "content": "W3Schools has more than two decades of experience teaching coding online.\n\n Our certificates provide a practical and professional way to show your skills in a format that is easy to verify and share.",
+                "heading": "Trusted Learning Platform"
+            },
+            {
+                "content": "The price is a small fraction of the cost of traditional education.\n\n You can prepare on your own schedule and take the exam when you are ready.",
+                "heading": "Affordable and Flexible"
+            },
+            {
+                "content": "Each certificate includes a unique verification link that can be shared with employers, clients, and your network.\n\n Download your certificate to showcase it, and validate it using the unique link or QR code.\n\n See how it looks in this example.",
+                "heading": "Get Your Certificate and Share It"
+            },
+            {
+                "content": "Fee\n\n 95 USD\n\n Achievable certification levels\n\n Intermediate (40%)\nAdvanced (75%)\nProfessional (90%)\n\n Number of questions\n\n Adaptive, 60 on average\n\n Requirement to pass\n\n Minimum 40% - Intermediate level\n\n Time limit\n\n 60 minutes\n\n Number of attempts\n\n 3\n\n Exam deadline\n\n None\n\n Certification expiration\n\n None\n\n Format\n\n Online, multiple choice\n\n Register Now »\n\n Have any questions? Send us an e-mail: sales@w3schools.com",
+                "heading": "Exam Overview"
+            },
+            {
+                "content": "Getting a certificate shows your commitment to improving your skills.\n\n You can add the certificate to your CV, resume, LinkedIn profile, and other professional platforms.\n\n It can help support career growth by making it easier to show your knowledge when applying for jobs, freelance work, or larger projects.",
+                "heading": "Advance Faster in Your Career"
+            },
+            {
+                "content": "Get Certified",
+                "heading": "Document Your Knowledge Today!"
+            },
+            {
+                "content": "01\n\n Study HTML for free at W3Schools.com\n\n 02\n\n Learn at your own speed and focus on the topics you need most\n\n 03\n\n Practice with quizzes and exercises\n\n 04\n\n Apply by paying the exam fee\n\n 05\n\n Take the exam online at any time and from any location",
+                "heading": "How It Works"
+            },
+            {
+                "content": "Getting a certificate shows initiative, helps you build credibility, and gives you a professional way to present your HTML knowledge.\n\n Get Your HTML Certificate »",
+                "heading": "Document Your Skills"
+            },
+            {
+                "content": "Are you an educator, manager, or business owner looking for courses or certifications for a group?\n\n We work with schools, companies, and organizations around the world.\n\n Send us an e-mail: sales@w3schools.com\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Looking to Add Multiple Users?"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:18:14Z",
+        "subject": "MongoDB",
+        "title": "W3Schools MongoDB Certificate"
+    },
+    {
+        "url": "https://www.w3schools.com/mongodb/mongodb_exercises.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "mongodb_mongodb_exercises",
+        "code_examples": [],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MongoDB HOME\nMongoDB Get Started\nMongoDB Query API\nMongoDB Create DB\nMongoDB Collection\nMongoDB Insert\nMongoDB Find\nMongoDB Update\nMongoDB Delete\nMongoDB Query Operators\nMongoDB Update Operators\nMongoDB Aggregations\n\n MongoDB Aggregations\n $group\n $limit\n $project\n $sort\n $match\n $addFields\n $count\n $lookup\n $out\n\nMongoDB Indexing/Search\nMongoDB Validation\nMongoDB Data API\nMongoDB Drivers\nMongoDB Node.js Driver\nMongoDB Charts",
+                "heading": "MongoDB Tutorial"
+            },
+            {
+                "content": "MongoDB Certificate",
+                "heading": "MongoDB Cert"
+            },
+            {
+                "content": "MongoDB Exercises\nMongoDB Syllabus\nMongoDB Study Plan\nMongoDB Quiz --> \n\nny:-->\n\n ny:-->\n\nny:-->\n\n MongoDB Exercises\n\n ❮ Previous\nNext ❯\n\nYou can test your MongoDB skills with W3Schools' Exercises.",
+                "heading": "MongoDB Exercises"
+            },
+            {
+                "content": "You will get 1 point for\neach correct answer. Your score and total score will always be displayed.",
+                "heading": "Count Your Score"
+            },
+            {
+                "content": "Good luck!\n\n Start MongoDB Exercises ❯\n\n If you don't know MongoDB, we suggest that you read our MongoDB Tutorial from scratch.\n\n Course Certification",
+                "heading": "Start Mongodb Exercises"
+            },
+            {
+                "content": "Complete the W3Schools coding course, strengthen your knowledge, and earn a certificate you can add to your CV, portfolio, and LinkedIn profile.\n\n Get Certified Today\n\n W3Schools Certificate\n\n Coding\n\n Learn it. Practice it. Prove it.\n\n w\n 3\n s\n c\n h\n o\n o\n l\n s\n\n C\n E\n R\n T\n I\n F\n I\n E\n D\n\n .\n\n 2\n 0\n 2\n 6\n\n-->\n\n ❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Get Certified in coding"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:18:14Z",
+        "subject": "MongoDB",
+        "title": "MongoDB Exercises"
+    },
+    {
+        "url": "https://www.w3schools.com/mongodb/mongodb_syllabus.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "mongodb_mongodb_syllabus",
+        "code_examples": [
+            {
+                "code": "Example\nFind all documents that have a category of \"news\".\n\ndb.posts.find( {category: \"News\"} )\n\nTry it Yourself »\n\nIf you want to explore more and host your project, we have a feature called Spaces\n\nHere you get a secure sandbox environment called Spaces, where you can practice coding and test projects in real-time.\n\nThis includes a W3Schools subdomain, hosting, and secure SSL certificates.\n\nMongoDB is not hosted on W3Schools Spaces; you need to set it up elsewhere, like MongoDB Atlas, and connect your application to it.\n\nSpaces require no installation and run directly in the browser.\n\nFeatures include:\n\n Collaboration\n\n File navigator\n\n Terminal & log\n\n Package manager\n\n Database\n\n Environment manager\n\n Analytics\n\nCreate a Spaces Account\n\nMongoDB Certification\nW3Schools offers an end-of-pathway certification program.\n\nHere you can take exams to get certified.\n\nThe MongoDB exam is a test that summarizes the W3Schools MongoDB syllabus.\n\nAfter passing the exam you get the \"Certified MongoDB Developer\" Certification.\n\nThe certification exam is adaptive and graded; students will get a grade from intermediate, advanced to professional.\n\nBuy Certificate »\n\nAre You a Teacher?\nAre you interested in learning how you can use W3Schools Academy to Teach \nMongoDB? \n\nWatch a demo of W3Schools Academy. You'll see how it works, and discover how it can make teaching programming easier and more engaging.\n\nWatch Demo »\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress",
+                "language": "mongodb",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MongoDB HOME\nMongoDB Get Started\nMongoDB Query API\nMongoDB Create DB\nMongoDB Collection\nMongoDB Insert\nMongoDB Find\nMongoDB Update\nMongoDB Delete\nMongoDB Query Operators\nMongoDB Update Operators\nMongoDB Aggregations\n\n MongoDB Aggregations\n $group\n $limit\n $project\n $sort\n $match\n $addFields\n $count\n $lookup\n $out\n\nMongoDB Indexing/Search\nMongoDB Validation\nMongoDB Data API\nMongoDB Drivers\nMongoDB Node.js Driver\nMongoDB Charts",
+                "heading": "MongoDB Tutorial"
+            },
+            {
+                "content": "MongoDB Certificate",
+                "heading": "MongoDB Cert"
+            },
+            {
+                "content": "MongoDB Exercises\nMongoDB Syllabus\nMongoDB Study Plan\nMongoDB Quiz --> \n\nny:-->\n\n ny:-->\n\nny:-->\n\n MongoDB Syllabus\n\n❮ Previous\nNext ❯",
+                "heading": "MongoDB Exercises"
+            },
+            {
+                "content": "The W3Schools MongoDB Tutorial is comprehensive and beginner-friendly.\n\nIt will give you a fundamental knowledge of MongoDB database management.\n\nIt is designed for beginners and requires no prior database experience.\n\nThe content has been carefully made to be bite-sized, simple, and easy to understand.\n\nThe content has been proven by millions of users over the years. It is updated and improved frequently.\n\nThe syllabus outline and its sequence are structured so you can learn MongoDB step by step, from the introduction to advanced database operations.\n\nGet Started With MongoDB »",
+                "heading": "Introduction"
+            },
+            {
+                "content": "Understand the basic concepts of NoSQL databases.\n\n Create and manage MongoDB databases and collections.\n\n Work with MongoDB documents and BSON format.\n\n Perform CRUD operations in MongoDB.\n\n Use MongoDB query operators and aggregation.\n\nNote: Are you a teacher teaching MongoDB? W3Schools Academy is a toolbox of features that can help you teach. It offers classroom features such as pre-built study plans, classroom administration and much more. Read more about Academy here.",
+                "heading": "Learning Outcomes"
+            },
+            {
+                "content": "NoSQL Databases:\n MongoDB is a leading NoSQL database solution.\n\n Web Development:\n MongoDB is popular in modern web applications.\n\n Big Data:\n MongoDB handles large-scale data efficiently.\n\n Real-time Analytics:\n MongoDB supports real-time data analysis.\n\n Cloud Applications:\n MongoDB works well with cloud platforms.\n\n Content Management:\n MongoDB is ideal for content-driven applications.\n\n IoT Applications:\n MongoDB handles IoT data effectively.\n\nGet Started",
+                "heading": "Which Subjects Are MongoDB Relevant For?"
+            },
+            {
+                "content": "In this tutorial we offer different activities for you to learn MongoDB for free:\n\n Lessons\n\n Exercises",
+                "heading": "Activities"
+            },
+            {
+                "content": "You can also create an account to track your progress.\n\nAs a signed-in user, you get access to features such as:\n\n Learning paths\n\n Sandbox and lab environments\n\n Achievements\n\n And much more!\n\nSign Up",
+                "heading": "Sign in to Track Progress"
+            },
+            {
+                "content": "MongoDB HOME\n\n MongoDB Get Started\n\n MongoDB Query API\n\n MongoDB Create DB\n\n MongoDB Collection\n\n MongoDB Insert\n\n MongoDB Find\n\n MongoDB Update\n\n MongoDB Delete\n\n MongoDB Query Operators\n\n MongoDB Update Operators\n\n MongoDB Aggregations\n\n $group\n\n $limit\n\n $project\n\n $sort\n\n $match\n\n $addFields\n\n $count\n\n $lookup\n\n $out\n\n MongoDB Indexing/Search\n\n MongoDB Validation\n\n MongoDB Data API\n\n MongoDB Drivers\n\n MongoDB Node.js Driver\n\n MongoDB Charts\n\nGet Started",
+                "heading": "Overview of the Modules"
+            },
+            {
+                "content": "MongoDB, like any database system, is best learned through hands-on practice.\n\nTry this example using our editor:\n\nExample\nFind all documents that have a category of \"news\".\n\ndb.posts.find( {category: \"News\"} )\n\nTry it Yourself »\n\nIf you want to explore more and host your project, we have a feature called Spaces\n\nHere you get a secure sandbox environment called Spaces, where you can practice coding and test projects in real-time.\n\nThis includes a W3Schools subdomain, hosting, and secure SSL certificates.\n\nMongoDB is not hosted on W3Schools Spaces; you need to set it up elsewhere, like MongoDB Atlas, and connect your application to it.\n\nSpaces require no installation and run directly in the browser.\n\nFeatures include:\n\n Collaboration\n\n File navigator\n\n Terminal & log\n\n Package manager\n\n Database\n\n Environment manager\n\n Analytics\n\nCreate a Spaces Account",
+                "heading": "Sandbox and Lab Environment"
+            },
+            {
+                "content": "W3Schools offers an end-of-pathway certification program.\n\nHere you can take exams to get certified.\n\nThe MongoDB exam is a test that summarizes the W3Schools MongoDB syllabus.\n\nAfter passing the exam you get the \"Certified MongoDB Developer\" Certification.\n\nThe certification exam is adaptive and graded; students will get a grade from intermediate, advanced to professional.\n\nBuy Certificate »",
+                "heading": "MongoDB Certification"
+            },
+            {
+                "content": "Are you interested in learning how you can use W3Schools Academy to Teach \nMongoDB? \n\nWatch a demo of W3Schools Academy. You'll see how it works, and discover how it can make teaching programming easier and more engaging.\n\nWatch Demo »\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Are You a Teacher?"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:18:14Z",
+        "subject": "MongoDB",
+        "title": "MongoDB Syllabus"
+    },
+    {
+        "url": "https://www.w3schools.com/mongodb/mongodb_study_plan.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "mongodb_mongodb_study_plan",
+        "code_examples": [],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "MongoDB HOME\nMongoDB Get Started\nMongoDB Query API\nMongoDB Create DB\nMongoDB Collection\nMongoDB Insert\nMongoDB Find\nMongoDB Update\nMongoDB Delete\nMongoDB Query Operators\nMongoDB Update Operators\nMongoDB Aggregations\n\n MongoDB Aggregations\n $group\n $limit\n $project\n $sort\n $match\n $addFields\n $count\n $lookup\n $out\n\nMongoDB Indexing/Search\nMongoDB Validation\nMongoDB Data API\nMongoDB Drivers\nMongoDB Node.js Driver\nMongoDB Charts",
+                "heading": "MongoDB Tutorial"
+            },
+            {
+                "content": "MongoDB Certificate",
+                "heading": "MongoDB Cert"
+            },
+            {
+                "content": "MongoDB Exercises\nMongoDB Syllabus\nMongoDB Study Plan\nMongoDB Quiz --> \n\nny:-->\n\n ny:-->\n\nny:-->\n\n MongoDB Study Plan\n\n❮ Previous\nNext ❯",
+                "heading": "MongoDB Exercises"
+            },
+            {
+                "content": "The MongoDB study plan helps you teach your students MongoDB step-by-step.\n\nCreating a study plan for MongoDB is easy.\n\nYou can use a pre-built study plan or customize it.\n\nStudents have different skill levels. The study plans can be customized to ensure that everyone is challenged.\n\nSave time with pre-built teacher materials and study plans. Easily organize your class with a timeline from the introduction of MongoDB to the final exam.",
+                "heading": "Introduction"
+            },
+            {
+                "content": "This study plan is a feature of W3Schools Academy.\n\nW3Schools Academy is a platform that has everything you need to teach coding, all in one place.\n\nIt offers you as a teacher a toolbox of features that helps you succeed with teaching in your classroom.\n\nYou need to have an active subscription to access the study plan feature.\n\n Full Access ($49.99 / year per student)\n\n Calculate your price and order here.\n\nLearn More »\n\nAcademy also offer other features such as:\n\n Managing your classroom\n\n Tracking of student progress and reports\n\n Labs, assignments, and code challenges (prebuilt challenges or create your own ones)\n\n Auto-grading\n\n Teaching materials\n\n Certification exams\n\nGet a free demo »",
+                "heading": "W3Schools Academy"
+            },
+            {
+                "content": "W3Schools has everything you need to teach MongoDB.\n\nThe MongoDB training materials is available for you to include and use in your study plan:\n\n W3Schools MongoDB Tutorial\n\n MongoDB Exercises\n\n MongoDB Challenges (Coding challenges)\n\n MongoDB Certification Exam (End of Pathway Exam)",
+                "heading": "Teacher Materials"
+            },
+            {
+                "content": "With the MongoDB Syllabus, your students will start with the basics, like understanding NoSQL databases and creating collections, and move to more advanced topics, like querying documents, using operators, and managing data. Each chapter includes simple examples, try-it-yourself sections, exercises, and quizzes to make learning easy, interactive, and fun.\n\nRead more about MongoDB Syllabus.",
+                "heading": "MongoDB Syllabus"
+            },
+            {
+                "content": "The study plan features are made to help teachers and students. They make learning easy, flexible, and fun. These features work for different types of classes, learning styles and student level.\n\n Learning Paths\n\n You can add ready-made learning paths.\n\n The learning paths are by default ordered by our recommended order.\n\n You can change the order.\n\n You can add custom activities with text, links, or multi-media files.\n\n Drag and drop or click to make changes to the path.\n\n Interactive Content\n\n Tutorials\n\n Try-its (test code snippets)\n\n Exercises\n\n Quiz\n\n Challenges\n\n Labs\n\n Timeline and Pace\n\n You can set a timeline of your study plan (e.g., 4-week, 8-week, 12-week, 24-week plans).\n\n You can decide the learning pace for your class.\n\n Different study plans can be assigned to different students in the same class.\n\n The flexibility can help to make sure that everyone is challenged.\n\n Track Student Progress\n\n There are tools to track student progress.\n\n The analytic tools include: chapter progress, exercises results, quiz results, exam results, and much more.\n\n The challenges can be auto-graded or manually graded. The results are available to you as a teacher.\n\n End of Pathway Exam\n\n The MongoDB study plan aligns with the MongoDB Certification Exam.\n\n The exam can be taken at the end of the study plan, at your selected date.\n\n The exam summarizes the MongoDB Tutorial.\n\n You get reports of the students' results.\n\n Accessibility\n\n Study plans and learning materials are accessible on desktops, tablets, and smartphones.\n\n This ensures students can learn anytime, anywhere.\n\nLearn More »",
+                "heading": "Study Plan Overview"
+            },
+            {
+                "content": "You choose the timeline and pace of your study plans.\n\nSchools have different preferences.\n\nSome would like more intensive pace, e.g. 3 weeks, others 12 or more weeks.\n\nIt is completely up to you.\n\nFor example, this is how a 3-week MongoDB study plan could look like:\n\n Week 1: Basic Database Management, Crud Operations, Query and Update\n\n Week 2: Data Aggregation, Sorting and Counting, Fields and Linking, Data Output, Indexing and Validation\n\n Week 3: Data and Drivers, Node.js and Charts, MongoDB Certification Exam\n\nImage of Sample MongoDB study plan:",
+                "heading": "Sample Study Plan"
+            },
+            {
+                "content": "Start with MongoDB Study Plans today.\n\nGet Started »",
+                "heading": "Ready to get started?"
+            },
+            {
+                "content": "Are you interested in learning how you can use W3Schools Academy to Teach MongoDB programming? \n\nWatch a demo of W3Schools Academy. You'll see how it works, and discover how it can make teaching programming easier and more engaging.\n\nWatch Demo »\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Are You a Teacher?"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:18:15Z",
+        "subject": "MongoDB",
+        "title": "MongoDB Study Plan"
+    }
+];

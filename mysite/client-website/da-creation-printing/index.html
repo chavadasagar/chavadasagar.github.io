@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>D A CREATION | Interactive Live Print Cost Estimator & Press in Bhavnagar</title>
+  <meta name="description" content="D A CREATION - High-quality graphic design, logo design, flex printing & interactive live print cost estimator studio in Bhavnagar. Get instant price estimates online.">
+  <meta name="keywords" content="DA Creation Bhavnagar, Live Print Estimator, Flex Print Bhavnagar, Logo Design Bhavnagar, Visiting Cards Bhavnagar">
+  <meta name="robots" content="index, follow">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Announcement -->
+  <div class="top-announcement">
+    <div class="container top-announcement-content">
+      <span>⚡ IDEAS WORTH PRINTING · INSTANT CALCULATOR & EXPRESS DELIVERY</span>
+      <span>📍 Bhavnagar, Gujarat | 📞 +91 98980 54321</span>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="#" class="brand-logo">
+        <span class="logo-main">D A CREATION</span>
+        <span class="logo-sub">GRAPHIC DESIGN & PRINTING</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="#estimator" class="nav-link highlight-link">⚡ Live Cost Estimator</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#process" class="nav-link">Process</a>
+        <a href="#quote" class="btn btn-yellow nav-btn">Get a Quote →</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-container">
+      <div class="hero-content">
+        <span class="hero-tag">STUDIO & PRESS · BHAVNAGAR</span>
+        <h1 class="hero-title">Design.<br>Print.<br><span class="text-yellow">Deliver.</span></h1>
+        <div class="yellow-bar"></div>
+        <p class="hero-subtitle">Logos · Brochures · Flex Banners · Visiting Cards · Commercial Packaging</p>
+        <div class="hero-actions">
+          <a href="#estimator" class="btn btn-yellow btn-lg glow-btn">Calculate Print Cost Live 🧮</a>
+          <a href="#quote" class="btn btn-outline-yellow btn-lg">Request Custom Quote</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OUT-OF-THE-BOX INNOVATION: LIVE PRINT INSTANT COST ESTIMATOR -->
+  <section class="section estimator-section" id="estimator">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-label text-yellow">REAL-TIME PRINT CALCULATOR</span>
+        <h2 class="section-title text-white">LIVE PRINT INSTANT COST ESTIMATOR</h2>
+        <p class="text-muted">Select paper GSM, finish, and slide quantity to get an instant cost calculation!</p>
+      </div>
+
+      <div class="estimator-card">
+        <div class="grid grid-2 estimator-grid">
+          <div class="est-controls">
+            <div class="form-group">
+              <label for="estProduct">1. Print Product Type</label>
+              <select id="estProduct">
+                <option value="cards" data-unit="cards" data-base="1.5">Business Visiting Cards (Standard Size)</option>
+                <option value="flex" data-unit="sq.ft" data-base="15">Outdoor Star Flex Banner (per sq.ft)</option>
+                <option value="brochure" data-unit="brochures" data-base="12">Tri-Fold Product Brochure</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="estPaper">2. Paper Weight & Finish</label>
+              <select id="estPaper">
+                <option value="1.0" data-label="300 GSM Matte Finish">300 GSM Matte Lamination</option>
+                <option value="1.35" data-label="350 GSM Velvet Touch + Spot UV">350 GSM Velvet Touch + Spot UV (Premium)</option>
+                <option value="1.5" data-label="Metallic Gold Foil Emboss">Metallic Gold Foil Emboss</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="estQty">3. Quantity: <span id="qtyValDisplay" class="text-yellow">1,000 Units</span></label>
+              <input type="range" id="estQty" min="100" max="10000" step="100" value="1000">
+            </div>
+          </div>
+
+          <div class="est-preview-box">
+            <div class="est-receipt">
+              <span class="receipt-tag">ESTIMATED PRICE BREAKDOWN</span>
+              <div class="receipt-line"><span>Product:</span> <strong id="recProduct">Business Visiting Cards</strong></div>
+              <div class="receipt-line"><span>Finish:</span> <strong id="recPaper">300 GSM Matte Lamination</strong></div>
+              <div class="receipt-line"><span>Quantity:</span> <strong id="recQty">1,000 Units</strong></div>
+              
+              <div class="receipt-total-bar">
+                <span>ESTIMATED TOTAL:</span>
+                <span class="total-price" id="estTotalPrice">₹ 1,500</span>
+              </div>
+              <button class="btn btn-yellow btn-block btn-lg" id="exportEstBtn">Export Spec Sheet to WhatsApp →</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services (2x3 Grid) -->
+  <section class="section services-section" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">STUDIO OFFERINGS</span>
+        <h2 class="section-title">PRINT & DESIGN SERVICES</h2>
+      </div>
+
+      <div class="grid grid-3">
+        <div class="service-card">
+          <div class="card-num">01</div>
+          <h3 class="card-title">Logo & Brand Identity</h3>
+          <p class="card-desc">Custom logo design, brand guidelines, color palettes, and stationery branding.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="card-num">02</div>
+          <h3 class="card-title">Brochure & Catalog</h3>
+          <p class="card-desc">Bi-fold, tri-fold, multi-page product catalogs and company profiles.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="card-num">03</div>
+          <h3 class="card-title">Flex & Vinyl Banner</h3>
+          <p class="card-desc">High-resolution HD flex printing, star flex, glow signboards, and vinyl hoardings.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quote Request Form -->
+  <section class="section quote-section" id="quote">
+    <div class="container">
+      <div class="quote-card">
+        <div class="section-header">
+          <span class="section-label text-yellow">INSTANT ESTIMATE</span>
+          <h2 class="section-title text-white">REQUEST A PRINT QUOTE</h2>
+        </div>
+
+        <form class="quote-form" id="printQuoteForm">
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="name">Your Name / Company Name *</label>
+              <input type="text" id="name" required placeholder="e.g. Vikram Shah">
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone / WhatsApp Number *</label>
+              <input type="tel" id="phone" required placeholder="e.g. 9898054321" pattern="[0-9]{10}">
+            </div>
+
+            <div class="form-group">
+              <label for="service">Service Needed *</label>
+              <select id="service" required>
+                <option value="">Select Service...</option>
+                <option value="Logo & Brand Design">Logo & Brand Design</option>
+                <option value="Brochure & Catalog Printing">Brochure & Catalog Printing</option>
+                <option value="Flex & Banner Printing">Flex & Banner Printing</option>
+                <option value="Visiting Cards">Visiting Cards</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="quantity">Quantity / Size Specs *</label>
+              <input type="text" id="quantity" required placeholder="e.g. 1000 Cards, 300 GSM">
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-yellow btn-block btn-lg">Submit Quote Request via WhatsApp →</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div>
+        <div class="logo-main">D A CREATION</div>
+        <p class="footer-copy">Graphic Design & Printing Services in Bhavnagar, Gujarat.</p>
+      </div>
+    </div>
+    <div class="footer-bottom container text-center">
+      <p>&copy; 2026 D A CREATION. All rights reserved. Developed by VyunixTech.</p>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,4253 @@
+﻿window.DEVDOCS_SUBJECTS = window.DEVDOCS_SUBJECTS || {};
+window.DEVDOCS_SUBJECTS['postgresql'] = [
+    {
+        "url": "https://www.w3schools.com/postgresql/index.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "postgresql_index",
+        "code_examples": [
+            {
+                "code": "SELECT * FROM cars\n\n ORDER BY year;",
+                "language": "postgresql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "PostgreSQL Home\nPostgreSQL Intro\nPostgreSQL Install\nPostgreSQL Get Started\nPostgreSQL pgAdmin 4",
+                "heading": "PostgreSQL Tutorial"
+            },
+            {
+                "content": "PostgreSQL CREATE TABLE\nPostgreSQL INSERT INTO\nPostgreSQL Fetch Data\nPostgreSQL ADD COLUMN\nPostgreSQL UPDATE\nPostgreSQL ALTER COLUMN\nPostgreSQL DROP COLUMN\nPostgreSQL DELETE\nPostgreSQL DROP TABLE\n\nCreate Demo Database",
+                "heading": "Database"
+            },
+            {
+                "content": "PostgreSQL Operators\nPostgreSQL SELECT\nPostgreSQL SELECT DISTINCT\nPostgreSQL WHERE\nPostgreSQL ORDER BY\nPostgreSQL LIMIT\nPostgreSQL MIN and MAX\nPostgreSQL COUNT\nPostgreSQL SUM\nPostgreSQL AVG\nPostgreSQL LIKE\nPostgreSQL IN\nPostgreSQL BETWEEN\nPostgreSQL AS\nPostgreSQL Joins\nPostgreSQL INNER JOIN\nPostgreSQL LEFT JOIN\nPostgreSQL RIGHT JOIN\nPostgreSQL FULL JOIN\nPostgreSQL CROSS JOIN\nPostgreSQL UNION\nPostgreSQL GROUP BY\nPostgreSQL HAVING\nPostgreSQL EXISTS\nPostgreSQL ANY\nPostgreSQL ALL\nPostgreSQL CASE",
+                "heading": "PostgreSQL Syntax"
+            },
+            {
+                "content": "PostgreSQL Certificate",
+                "heading": "PostgreSQL Cert"
+            },
+            {
+                "content": "PostgreSQL is an advanced, free, and open-source relational database system.\n\n PostgreSQL supports both relational (SQL) and non-relational (JSON) queries.\n\n PostgreSQL is free and open-source.\n\n Learn PostgreSQL now ❯\n\n Become PostgreSQL Certified\n Get certified with our PostgreSQL exam, includes a professionally curated study kit to guide you from beginner to exam-ready.\n\nGet Certified ❯\n\n CERTIFICATE OF COMPLETION\n This certifies that\n Your Name\n has passed the W3Schools PostgreSQL Certification exam and is hereby declared a\n\n Certified PostgreSQL Developer\n The candidate has passed the exam at the Professional level.\n Verify at\n verify.w3schools.com\n Stale Refsnes\n for w3schools.com",
+                "heading": "Learn PostgreSQL"
+            },
+            {
+                "content": "In this tutorial you get a step by step guide on how to install and create a PostgreSQL database.\nYou will learn how to create a project where you can create, read, update, and delete data.\n\nYou will learn how to query, filter, and sort data from the database.",
+                "heading": "Learning by Doing"
+            },
+            {
+                "content": "In the tutorial we will use examples to show what SQL statements returns from the database:\n\n Example\n Sort the table by year:\n\n SELECT * FROM cars\n\n ORDER BY year;\n\n Run Example »",
+                "heading": "Examples in Each Chapter"
+            },
+            {
+                "content": "Many chapters in this tutorial end with an exercise where you can check your level of knowledge.\n\nSee all PostgreSQL Exercises",
+                "heading": "Learning by Exercises"
+            },
+            {
+                "content": "Learn by taking a quiz! The quiz will give you a signal of how much you know about PostgreSQL.\n\nStart PostgreSQL Quiz",
+                "heading": "PostgreSQL Quiz"
+            },
+            {
+                "content": "Create a W3Schools account and get access to more features and learning materials:\n\n View your completed tutorials, exercises, and quizzes\n\n Keep an eye on your progress and daily streaks\n\n Jump back in right where you left off\n-->\n Join the leaderboard and compete with others\n\n Get access to more challenges and tests\n-->\n Get your own avatar and unlock new skins\n\n Create your own personal website\n\n Sign Up »\n\nNote\nThis is an optional feature. You can study at W3Schools without creating an account.\n\n❮ Home\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Track Your Progress"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:48Z",
+        "subject": "PostgreSQL",
+        "title": "PostgreSQL Tutorial"
+    },
+    {
+        "url": "https://www.w3schools.com/postgresql/postgresql_intro.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "postgresql_postgresql_intro",
+        "code_examples": [],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "PostgreSQL Home\nPostgreSQL Intro\nPostgreSQL Install\nPostgreSQL Get Started\nPostgreSQL pgAdmin 4",
+                "heading": "PostgreSQL Tutorial"
+            },
+            {
+                "content": "PostgreSQL CREATE TABLE\nPostgreSQL INSERT INTO\nPostgreSQL Fetch Data\nPostgreSQL ADD COLUMN\nPostgreSQL UPDATE\nPostgreSQL ALTER COLUMN\nPostgreSQL DROP COLUMN\nPostgreSQL DELETE\nPostgreSQL DROP TABLE\n\nCreate Demo Database",
+                "heading": "Database"
+            },
+            {
+                "content": "PostgreSQL Operators\nPostgreSQL SELECT\nPostgreSQL SELECT DISTINCT\nPostgreSQL WHERE\nPostgreSQL ORDER BY\nPostgreSQL LIMIT\nPostgreSQL MIN and MAX\nPostgreSQL COUNT\nPostgreSQL SUM\nPostgreSQL AVG\nPostgreSQL LIKE\nPostgreSQL IN\nPostgreSQL BETWEEN\nPostgreSQL AS\nPostgreSQL Joins\nPostgreSQL INNER JOIN\nPostgreSQL LEFT JOIN\nPostgreSQL RIGHT JOIN\nPostgreSQL FULL JOIN\nPostgreSQL CROSS JOIN\nPostgreSQL UNION\nPostgreSQL GROUP BY\nPostgreSQL HAVING\nPostgreSQL EXISTS\nPostgreSQL ANY\nPostgreSQL ALL\nPostgreSQL CASE",
+                "heading": "PostgreSQL Syntax"
+            },
+            {
+                "content": "PostgreSQL Certificate",
+                "heading": "PostgreSQL Cert"
+            },
+            {
+                "content": "PostgreSQL is a free open-source database system that supports both relational (SQL) and non-relational (JSON) \nqueries.\n\nPostgreSQL is a back-end database for dynamic websites and web applications.\n\nPostgreSQL supports the most important programming languages:\n\nPython\n\nJava\n\nC/C++\n\nC#\n\nNode.js\n\nGo\n\nRuby\n\nPerl\n\nTcl\n\nPostgreSQL supports basically all features that other database management systems support.",
+                "heading": "What is PostgreSQL?"
+            },
+            {
+                "content": "PostgreSQL was invented at the Berkeley Computer Science Department, University of California.\n\nIt started as a project in 1986 with the goal of creating a database system with the minimal features needed to support multiple data types.\n\nIn the beginning, PostgreSQL ran on UNIX platforms, but now it can run on various platforms, including Windows and MacOS.",
+                "heading": "PostgreSQL History"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:51Z",
+        "subject": "PostgreSQL",
+        "title": "PostgreSQL Introduction"
+    },
+    {
+        "url": "https://www.w3schools.com/postgresql/postgresql_install.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "postgresql_postgresql_install",
+        "code_examples": [],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "PostgreSQL Home\nPostgreSQL Intro\nPostgreSQL Install\nPostgreSQL Get Started\nPostgreSQL pgAdmin 4",
+                "heading": "PostgreSQL Tutorial"
+            },
+            {
+                "content": "PostgreSQL CREATE TABLE\nPostgreSQL INSERT INTO\nPostgreSQL Fetch Data\nPostgreSQL ADD COLUMN\nPostgreSQL UPDATE\nPostgreSQL ALTER COLUMN\nPostgreSQL DROP COLUMN\nPostgreSQL DELETE\nPostgreSQL DROP TABLE\n\nCreate Demo Database",
+                "heading": "Database"
+            },
+            {
+                "content": "PostgreSQL Operators\nPostgreSQL SELECT\nPostgreSQL SELECT DISTINCT\nPostgreSQL WHERE\nPostgreSQL ORDER BY\nPostgreSQL LIMIT\nPostgreSQL MIN and MAX\nPostgreSQL COUNT\nPostgreSQL SUM\nPostgreSQL AVG\nPostgreSQL LIKE\nPostgreSQL IN\nPostgreSQL BETWEEN\nPostgreSQL AS\nPostgreSQL Joins\nPostgreSQL INNER JOIN\nPostgreSQL LEFT JOIN\nPostgreSQL RIGHT JOIN\nPostgreSQL FULL JOIN\nPostgreSQL CROSS JOIN\nPostgreSQL UNION\nPostgreSQL GROUP BY\nPostgreSQL HAVING\nPostgreSQL EXISTS\nPostgreSQL ANY\nPostgreSQL ALL\nPostgreSQL CASE",
+                "heading": "PostgreSQL Syntax"
+            },
+            {
+                "content": "PostgreSQL Certificate",
+                "heading": "PostgreSQL Cert"
+            },
+            {
+                "content": "To install PostgreSQL locally on your computer, visit the\n\ninstaller by EDB, and download the newest version compatible with your operating system.\n\nI will choose the newest Windows version:",
+                "heading": "Download PostgreSQL"
+            },
+            {
+                "content": "When the downloading is complete, double click the downloaded file and start the installation:",
+                "heading": "Start the Install"
+            },
+            {
+                "content": "You can specify the location of PostgreSQL, I will go with the default choice:",
+                "heading": "Specify Directory"
+            },
+            {
+                "content": "To use PostgreSQL, you will need to install the PostgreSQL Server. In this tutorial we will also use the \npgAdmin 4 component, and the Command Line Tools:",
+                "heading": "Select Components"
+            },
+            {
+                "content": "You can also choose where to store the database data, I will go with the default choice:",
+                "heading": "Storage Directory"
+            },
+            {
+                "content": "You will have to select a password to get access to the database.\nSince this is a local database, with no incoming connection, I will choose the password 12345678:",
+                "heading": "Select Password"
+            },
+            {
+                "content": "You can set the port the server should listen on, I will go with the default choice:",
+                "heading": "Select Port"
+            },
+            {
+                "content": "Select the geographically location of the database server:",
+                "heading": "Select Locale"
+            },
+            {
+                "content": "If everything looks OK, click 'Next' to continue:",
+                "heading": "Final Check"
+            },
+            {
+                "content": "Click 'Next' to start the installation:",
+                "heading": "Start Installation:"
+            },
+            {
+                "content": "This can take a while, please wait.",
+                "heading": "Installing"
+            },
+            {
+                "content": "Now you have installed PostgreSQL on your computer, and in the next chapter you will start using it!\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Complete!"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:51Z",
+        "subject": "PostgreSQL",
+        "title": "Install Introduction"
+    },
+    {
+        "url": "https://www.w3schools.com/postgresql/postgresql_getstarted.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "postgresql_postgresql_getstarted",
+        "code_examples": [
+            {
+                "code": "SELECT version();\n\nTo insert SQL statements in the SQL Shell command, just write them after the\npostgres=# command like this: \n\nPress [Enter] and the result should look like this:\n\nRemember the Semicolon\n\nNote: Always end SQL statements with a semicolon\n;\n\nSQL Shell waits for the semicolon and executes all lines as one SQL statement.\n\nA multiple lines SQL statement is not executed before we include a semicolon \nat the end.\n\nExample\nSame statement, but in two lines:\n\nNow we are ready to create tables and fill them with data, but first we want to take a look at \nan application called pgAdmin 4.\n\nLearn more about pgAdmin 4 in the next \nchapter.\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress",
+                "language": "postgresql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "PostgreSQL Home\nPostgreSQL Intro\nPostgreSQL Install\nPostgreSQL Get Started\nPostgreSQL pgAdmin 4",
+                "heading": "PostgreSQL Tutorial"
+            },
+            {
+                "content": "PostgreSQL CREATE TABLE\nPostgreSQL INSERT INTO\nPostgreSQL Fetch Data\nPostgreSQL ADD COLUMN\nPostgreSQL UPDATE\nPostgreSQL ALTER COLUMN\nPostgreSQL DROP COLUMN\nPostgreSQL DELETE\nPostgreSQL DROP TABLE\n\nCreate Demo Database",
+                "heading": "Database"
+            },
+            {
+                "content": "PostgreSQL Operators\nPostgreSQL SELECT\nPostgreSQL SELECT DISTINCT\nPostgreSQL WHERE\nPostgreSQL ORDER BY\nPostgreSQL LIMIT\nPostgreSQL MIN and MAX\nPostgreSQL COUNT\nPostgreSQL SUM\nPostgreSQL AVG\nPostgreSQL LIKE\nPostgreSQL IN\nPostgreSQL BETWEEN\nPostgreSQL AS\nPostgreSQL Joins\nPostgreSQL INNER JOIN\nPostgreSQL LEFT JOIN\nPostgreSQL RIGHT JOIN\nPostgreSQL FULL JOIN\nPostgreSQL CROSS JOIN\nPostgreSQL UNION\nPostgreSQL GROUP BY\nPostgreSQL HAVING\nPostgreSQL EXISTS\nPostgreSQL ANY\nPostgreSQL ALL\nPostgreSQL CASE",
+                "heading": "PostgreSQL Syntax"
+            },
+            {
+                "content": "PostgreSQL Certificate",
+                "heading": "PostgreSQL Cert"
+            },
+            {
+                "content": "If you have followed the steps from the Install PostgreSQL page,\nyou now have a PostgreSQL database on you computer.\n\nThere are several ways to connect to the database, we will look at two ways in this tutorial:\n\nSQL Shell (psql)\n\npgAdmin 4\n\nBoth of them comes with the installation of PostgreSQL",
+                "heading": "Connect to the Database"
+            },
+            {
+                "content": "SQL Shell (psql) is a terminal based program where you can write and execute SQL syntax in the command-line terminal.\n\nOpen SQL Shell (psql)\n\nYou will find the SQL Shell (psql) tool in the start menu under PostgreSQL:\n\nTip: If you cannot find it, try searching for \"SQL Shell\" on your computer.\n\nOnce the program is open, you should see a window like the one below.\n\nInsert the name of the server.\n\nThe suggested choice is [localhost], which is correct, press [Enter] to accept:",
+                "heading": "SQL Shell (psql)"
+            },
+            {
+                "content": "The suggested database is [postgres], which is correct, press [Enter] to accept:",
+                "heading": "Database"
+            },
+            {
+                "content": "The suggested port is [5432], which is correct, at least in my case, press [Enter] to accept:",
+                "heading": "Port"
+            },
+            {
+                "content": "The suggested username is [postgres], which is correct, at least for me, press [Enter] to accept:",
+                "heading": "Username"
+            },
+            {
+                "content": "Enter the password you chose when you installed the PostgreSQL database, my password is 12345678:",
+                "heading": "Password"
+            },
+            {
+                "content": "The result might look like an error, but if it shows\npsql (15.2) or any other version, and in the end \nyou see the postgres=# command (and maybe a warning in between), then you have \nsuccessfully\nconnected to the database!",
+                "heading": "Result"
+            },
+            {
+                "content": "Once you have connected to the database, you can start executing SQL statements.\n\nOur database is empty, so we cannot query any tables yet, but we can check the version with this SQL statement:\n\nSELECT version();\n\nTo insert SQL statements in the SQL Shell command, just write them after the\npostgres=# command like this: \n\nPress [Enter] and the result should look like this:",
+                "heading": "Execute SQL Statements"
+            },
+            {
+                "content": "Note: Always end SQL statements with a semicolon\n;\n\nSQL Shell waits for the semicolon and executes all lines as one SQL statement.\n\nA multiple lines SQL statement is not executed before we include a semicolon \nat the end.\n\nExample\nSame statement, but in two lines:\n\nNow we are ready to create tables and fill them with data, but first we want to take a look at \nan application called pgAdmin 4.\n\nLearn more about pgAdmin 4 in the next \nchapter.\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Remember the Semicolon"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:51Z",
+        "subject": "PostgreSQL",
+        "title": "PostgreSQL Get Started"
+    },
+    {
+        "url": "https://www.w3schools.com/postgresql/postgresql_pgadmin4.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "postgresql_postgresql_pgadmin4",
+        "code_examples": [
+            {
+                "code": "SELECT version();\n\nTo insert SQL statements in the Query Tool, just write in the input box like this:\n\nAdvertisement\n -->\n\nExecute SQL Statements\nTo execute a SQL statement, click the \"Play\" button above the input box:\n\nResult\nThe SQL statement is executed, and you can see the result in the \"Data Output\" area: \n\nNow we have learned two ways of connection to a database and execute SQL statements on it:\n\nSQL Shell (psql)\n\npgAdmin 4\n\nIn the next chapters we will use the SQL Shell application to create tables and insert data into the database.\n\nIf you want to use the pgAdmin interface instead, you can run all the SQL statements there, you should get the same result.\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress",
+                "language": "postgresql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "PostgreSQL Home\nPostgreSQL Intro\nPostgreSQL Install\nPostgreSQL Get Started\nPostgreSQL pgAdmin 4",
+                "heading": "PostgreSQL Tutorial"
+            },
+            {
+                "content": "PostgreSQL CREATE TABLE\nPostgreSQL INSERT INTO\nPostgreSQL Fetch Data\nPostgreSQL ADD COLUMN\nPostgreSQL UPDATE\nPostgreSQL ALTER COLUMN\nPostgreSQL DROP COLUMN\nPostgreSQL DELETE\nPostgreSQL DROP TABLE\n\nCreate Demo Database",
+                "heading": "Database"
+            },
+            {
+                "content": "PostgreSQL Operators\nPostgreSQL SELECT\nPostgreSQL SELECT DISTINCT\nPostgreSQL WHERE\nPostgreSQL ORDER BY\nPostgreSQL LIMIT\nPostgreSQL MIN and MAX\nPostgreSQL COUNT\nPostgreSQL SUM\nPostgreSQL AVG\nPostgreSQL LIKE\nPostgreSQL IN\nPostgreSQL BETWEEN\nPostgreSQL AS\nPostgreSQL Joins\nPostgreSQL INNER JOIN\nPostgreSQL LEFT JOIN\nPostgreSQL RIGHT JOIN\nPostgreSQL FULL JOIN\nPostgreSQL CROSS JOIN\nPostgreSQL UNION\nPostgreSQL GROUP BY\nPostgreSQL HAVING\nPostgreSQL EXISTS\nPostgreSQL ANY\nPostgreSQL ALL\nPostgreSQL CASE",
+                "heading": "PostgreSQL Syntax"
+            },
+            {
+                "content": "PostgreSQL Certificate",
+                "heading": "PostgreSQL Cert"
+            },
+            {
+                "content": "In the previous chapter we learned how to connect to the database using the SQL Shell (psql) application,\nwhich is a command-based application that allows us to interact with the PostgreSQL database.\n\nThere is another application that comes built-in with the PostgreSQL installation, the pgAdmin 4\napplication, which also offers to interact with the database, but in a more user-friendly way.\n\nLet us take a look and see how it works.",
+                "heading": "Connect to the Database"
+            },
+            {
+                "content": "You will find the pgAdmin4 application in the start menu under PostgreSQL:\n\nTip: If you cannot find it, try searching for \"pgAdmin4\" on your computer.\n\nOnce the program has started, you should see a window like the one below,\nchoose a master password, Since this is a local database that will run only on my \ncomputer,\nI will once again choose the password 12345678:",
+                "heading": "Start pgAdmin4"
+            },
+            {
+                "content": "Once you are inside the program, try to perform a simple SQL query.\n\nTo do that we have to navigate to the database.\n\nStart by opening the [Servers] option in the menu on the left:",
+                "heading": "pgAdmin4"
+            },
+            {
+                "content": "Now you need to enter the password that you created when you installed PostgreSQL,\nmy password is 12345678:",
+                "heading": "Connect to Server"
+            },
+            {
+                "content": "Click on the [Database] option on in the menu on the left:",
+                "heading": "Find Database"
+            },
+            {
+                "content": "You should find a database named\npostgres, right-click it choose the \"Query Tool\":",
+                "heading": "Open Query Tool"
+            },
+            {
+                "content": "In the Query Tool we can start executing SQL statements.",
+                "heading": "Query Tool"
+            },
+            {
+                "content": "Our database is empty, so we cannot query any tables yet,\nbut we can check the version with this SQL statement:\n\nSELECT version();\n\nTo insert SQL statements in the Query Tool, just write in the input box like this:",
+                "heading": "Write SQL Statements"
+            },
+            {
+                "content": "To execute a SQL statement, click the \"Play\" button above the input box:",
+                "heading": "Execute SQL Statements"
+            },
+            {
+                "content": "The SQL statement is executed, and you can see the result in the \"Data Output\" area: \n\nNow we have learned two ways of connection to a database and execute SQL statements on it:\n\nSQL Shell (psql)\n\npgAdmin 4\n\nIn the next chapters we will use the SQL Shell application to create tables and insert data into the database.\n\nIf you want to use the pgAdmin interface instead, you can run all the SQL statements there, you should get the same result.\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Result"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:51Z",
+        "subject": "PostgreSQL",
+        "title": "PostgreSQL - pgAdmin4"
+    },
+    {
+        "url": "https://www.w3schools.com/postgresql/postgresql_create_table.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "postgresql_postgresql_create_table",
+        "code_examples": [
+            {
+                "code": "CREATE TABLE cars (\n\n   brand \n VARCHAR(255),\n\n   model \n VARCHAR(255),\n  year INT\n\n );",
+                "language": "postgresql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "postgres=#\n\n postgres(#\n\n postgres(#\n\n postgres(#\n\n postgres(#",
+                "language": "postgresql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "CREATE TABLE",
+                "language": "postgresql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "SELECT * FROM cars;",
+                "language": "postgresql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "brand | model | year\n\n-------+-------+------\n\n(0 rows)",
+                "language": "postgresql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "PostgreSQL Home\nPostgreSQL Intro\nPostgreSQL Install\nPostgreSQL Get Started\nPostgreSQL pgAdmin 4",
+                "heading": "PostgreSQL Tutorial"
+            },
+            {
+                "content": "PostgreSQL CREATE TABLE\nPostgreSQL INSERT INTO\nPostgreSQL Fetch Data\nPostgreSQL ADD COLUMN\nPostgreSQL UPDATE\nPostgreSQL ALTER COLUMN\nPostgreSQL DROP COLUMN\nPostgreSQL DELETE\nPostgreSQL DROP TABLE\n\nCreate Demo Database",
+                "heading": "Database"
+            },
+            {
+                "content": "PostgreSQL Operators\nPostgreSQL SELECT\nPostgreSQL SELECT DISTINCT\nPostgreSQL WHERE\nPostgreSQL ORDER BY\nPostgreSQL LIMIT\nPostgreSQL MIN and MAX\nPostgreSQL COUNT\nPostgreSQL SUM\nPostgreSQL AVG\nPostgreSQL LIKE\nPostgreSQL IN\nPostgreSQL BETWEEN\nPostgreSQL AS\nPostgreSQL Joins\nPostgreSQL INNER JOIN\nPostgreSQL LEFT JOIN\nPostgreSQL RIGHT JOIN\nPostgreSQL FULL JOIN\nPostgreSQL CROSS JOIN\nPostgreSQL UNION\nPostgreSQL GROUP BY\nPostgreSQL HAVING\nPostgreSQL EXISTS\nPostgreSQL ANY\nPostgreSQL ALL\nPostgreSQL CASE",
+                "heading": "PostgreSQL Syntax"
+            },
+            {
+                "content": "PostgreSQL Certificate",
+                "heading": "PostgreSQL Cert"
+            },
+            {
+                "content": "To create a new database table using the SQL Shell, make sure you are connected to the database.\nIf not, follow the steps in the Get Started chapter of this tutorial.\n\nOnce you are connected, you are ready to write SQL statements!",
+                "heading": "Connect to the Database"
+            },
+            {
+                "content": "The following SQL statement will create a table named \ncars\nin your PostgreSQL database:\n\n CREATE TABLE cars (\n\n   brand \n VARCHAR(255),\n\n   model \n VARCHAR(255),\n  year INT\n\n );\n\n postgres=#\n\n postgres(#\n\n postgres(#\n\n postgres(#\n\n postgres(#\n\n CREATE TABLE cars (\n\n   brand \n VARCHAR(255),\n\n   model \n VARCHAR(255),\n  year INT\n\n );\n\n-->\nWhen you execute the above statement, an empty table named cars will be created, and the SQL Shell\napplication will return the following:\n\n CREATE TABLE\n\nIn the SQL Shell application on your computer the operation above might look like this:",
+                "heading": "Create Table"
+            },
+            {
+                "content": "The above SQL statement created an empty table with three fields:\nbrand,\nmodel, and\nyear.\n\nWhen creating fields in a table we have to specify the data type of each field.\n\nFor brand and model\nwe are expecting string values, and string values are specified with the\nVARCHAR keyword.\n\nWe also have to specify the number of characters allowed in a string field,\nand since we do not know exactly, we just set it to 255.\n\nFor year we are expecting integer values (numbers without decimals),\nand integer values are specified with the INT keyword.\n\nYou will learn more about different data types later in the \nPostgreSQL data types chapter.\n-->",
+                "heading": "SQL Statement Explained"
+            },
+            {
+                "content": "You can \"display\" the empty table you just created with another SQL statement:\n\n SELECT * FROM cars;\n\nWhich will give you this result:\n\n brand | model | year\n\n-------+-------+------\n\n(0 rows)\n\nIn the SQL Shell application on your computer the operation above might look like this:\n\nIn the next chapters we will learn how to insert data into a table, and also more on how to retrieve data from a table.\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Display Table"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:51Z",
+        "subject": "PostgreSQL",
+        "title": "PostgreSQL Create Table"
+    },
+    {
+        "url": "https://www.w3schools.com/postgresql/postgresql_insert_into.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "postgresql_postgresql_insert_into",
+        "code_examples": [
+            {
+                "code": "INSERT INTO cars (brand, model, year)\n\nVALUES ('Ford', 'Mustang', 1964);",
+                "language": "postgresql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "INSERT 0 1",
+                "language": "postgresql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "SELECT * FROM cars;",
+                "language": "postgresql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "brand |  model  | year\n\n-------+---------+------\n Ford  | Mustang | 1964\n\n(1 row)",
+                "language": "postgresql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "INSERT INTO cars (brand, model, year)\n\nVALUES\n\n  ('Volvo', 'p1800', 1968),\n\n  ('BMW', 'M1', 1978),\n\n  ('Toyota', 'Celica', 1975);",
+                "language": "postgresql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "INSERT 0 3",
+                "language": "postgresql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "SELECT * FROM cars;",
+                "language": "postgresql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "PostgreSQL Home\nPostgreSQL Intro\nPostgreSQL Install\nPostgreSQL Get Started\nPostgreSQL pgAdmin 4",
+                "heading": "PostgreSQL Tutorial"
+            },
+            {
+                "content": "PostgreSQL CREATE TABLE\nPostgreSQL INSERT INTO\nPostgreSQL Fetch Data\nPostgreSQL ADD COLUMN\nPostgreSQL UPDATE\nPostgreSQL ALTER COLUMN\nPostgreSQL DROP COLUMN\nPostgreSQL DELETE\nPostgreSQL DROP TABLE\n\nCreate Demo Database",
+                "heading": "Database"
+            },
+            {
+                "content": "PostgreSQL Operators\nPostgreSQL SELECT\nPostgreSQL SELECT DISTINCT\nPostgreSQL WHERE\nPostgreSQL ORDER BY\nPostgreSQL LIMIT\nPostgreSQL MIN and MAX\nPostgreSQL COUNT\nPostgreSQL SUM\nPostgreSQL AVG\nPostgreSQL LIKE\nPostgreSQL IN\nPostgreSQL BETWEEN\nPostgreSQL AS\nPostgreSQL Joins\nPostgreSQL INNER JOIN\nPostgreSQL LEFT JOIN\nPostgreSQL RIGHT JOIN\nPostgreSQL FULL JOIN\nPostgreSQL CROSS JOIN\nPostgreSQL UNION\nPostgreSQL GROUP BY\nPostgreSQL HAVING\nPostgreSQL EXISTS\nPostgreSQL ANY\nPostgreSQL ALL\nPostgreSQL CASE",
+                "heading": "PostgreSQL Syntax"
+            },
+            {
+                "content": "PostgreSQL Certificate",
+                "heading": "PostgreSQL Cert"
+            },
+            {
+                "content": "To insert data into a table in PostgreSQL, we use the\nINSERT INTO statement.\n\nThe following SQL statement will insert one row of data into the\ncars table you created in\n the previous chapter.\n\nINSERT INTO cars (brand, model, year)\n\nVALUES ('Ford', 'Mustang', 1964);\n\nThe SQL Shell application will return the following:\n\nINSERT 0 1\n\nWhich means that 1 row was inserted.\n\nDon't think about the 0, for now, just accept that it represents \nsomething else and will always be 0.",
+                "heading": "Insert Into"
+            },
+            {
+                "content": "As you can see in the SQL statement above, string values must be written with \napostrophes.\n\nNumeric values can be written without apostrophes, but you can include them if you want.",
+                "heading": "SQL Statement Explained"
+            },
+            {
+                "content": "To check the result we can display the table with this SQL statement:\n\n SELECT * FROM cars;\n\nWhich will return this result:\n\n brand |  model  | year\n\n-------+---------+------\n Ford  | Mustang | 1964\n\n(1 row)",
+                "heading": "Display Table"
+            },
+            {
+                "content": "To insert multiple rows of data, we use the same INSERT INTO statement,\nbut with multiple values:\n\nINSERT INTO cars (brand, model, year)\n\nVALUES\n\n  ('Volvo', 'p1800', 1968),\n\n  ('BMW', 'M1', 1978),\n\n  ('Toyota', 'Celica', 1975);\n\nThe SQL Shell application will return the following:\n\nINSERT 0 3\n\nWhich means 3 rows were successfully inserted.",
+                "heading": "Insert Multiple Rows"
+            },
+            {
+                "content": "To check the result we can display the table with this SQL statement:\n\nExample\n\n SELECT * FROM cars;\n\n Run Example »\n\nClick the \"Run Example\" button to see the result of the select statement.\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Display Table"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:51Z",
+        "subject": "PostgreSQL",
+        "title": "PostgreSQL Insert Data"
+    },
+    {
+        "url": "https://www.w3schools.com/postgresql/postgresql_fetch_data.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "postgresql_postgresql_fetch_data",
+        "code_examples": [
+            {
+                "code": "SELECT brand, year FROM cars;",
+                "language": "postgresql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "PostgreSQL Home\nPostgreSQL Intro\nPostgreSQL Install\nPostgreSQL Get Started\nPostgreSQL pgAdmin 4",
+                "heading": "PostgreSQL Tutorial"
+            },
+            {
+                "content": "PostgreSQL CREATE TABLE\nPostgreSQL INSERT INTO\nPostgreSQL Fetch Data\nPostgreSQL ADD COLUMN\nPostgreSQL UPDATE\nPostgreSQL ALTER COLUMN\nPostgreSQL DROP COLUMN\nPostgreSQL DELETE\nPostgreSQL DROP TABLE\n\nCreate Demo Database",
+                "heading": "Database"
+            },
+            {
+                "content": "PostgreSQL Operators\nPostgreSQL SELECT\nPostgreSQL SELECT DISTINCT\nPostgreSQL WHERE\nPostgreSQL ORDER BY\nPostgreSQL LIMIT\nPostgreSQL MIN and MAX\nPostgreSQL COUNT\nPostgreSQL SUM\nPostgreSQL AVG\nPostgreSQL LIKE\nPostgreSQL IN\nPostgreSQL BETWEEN\nPostgreSQL AS\nPostgreSQL Joins\nPostgreSQL INNER JOIN\nPostgreSQL LEFT JOIN\nPostgreSQL RIGHT JOIN\nPostgreSQL FULL JOIN\nPostgreSQL CROSS JOIN\nPostgreSQL UNION\nPostgreSQL GROUP BY\nPostgreSQL HAVING\nPostgreSQL EXISTS\nPostgreSQL ANY\nPostgreSQL ALL\nPostgreSQL CASE",
+                "heading": "PostgreSQL Syntax"
+            },
+            {
+                "content": "PostgreSQL Certificate",
+                "heading": "PostgreSQL Cert"
+            },
+            {
+                "content": "To retrieve data from a data base, we use the\nSELECT statement.",
+                "heading": "Select Data"
+            },
+            {
+                "content": "By specifying the column names, we can choose which columns to select:\n\n Example\n\n SELECT brand, year FROM cars;\n\n Run Example »",
+                "heading": "Specify Columns"
+            },
+            {
+                "content": "Specify a * instead of the column names to select all columns:\n\n Example\n\n SELECT * FROM cars;\n\n Run Example »",
+                "heading": "Return ALL Columns"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:51Z",
+        "subject": "PostgreSQL",
+        "title": "PostgreSQL Select Data"
+    },
+    {
+        "url": "https://www.w3schools.com/postgresql/postgresql_add_column.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "postgresql_postgresql_add_column",
+        "code_examples": [
+            {
+                "code": "Example\n Add a column named color:\n\n ALTER TABLE cars\n\n ADD color VARCHAR(255);",
+                "language": "postgresql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Result\n\nALTER TABLE",
+                "language": "postgresql",
+                "heading": "Result",
+                "tryit_url": null
+            },
+            {
+                "code": "SELECT * FROM cars;",
+                "language": "postgresql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "PostgreSQL Home\nPostgreSQL Intro\nPostgreSQL Install\nPostgreSQL Get Started\nPostgreSQL pgAdmin 4",
+                "heading": "PostgreSQL Tutorial"
+            },
+            {
+                "content": "PostgreSQL CREATE TABLE\nPostgreSQL INSERT INTO\nPostgreSQL Fetch Data\nPostgreSQL ADD COLUMN\nPostgreSQL UPDATE\nPostgreSQL ALTER COLUMN\nPostgreSQL DROP COLUMN\nPostgreSQL DELETE\nPostgreSQL DROP TABLE\n\nCreate Demo Database",
+                "heading": "Database"
+            },
+            {
+                "content": "PostgreSQL Operators\nPostgreSQL SELECT\nPostgreSQL SELECT DISTINCT\nPostgreSQL WHERE\nPostgreSQL ORDER BY\nPostgreSQL LIMIT\nPostgreSQL MIN and MAX\nPostgreSQL COUNT\nPostgreSQL SUM\nPostgreSQL AVG\nPostgreSQL LIKE\nPostgreSQL IN\nPostgreSQL BETWEEN\nPostgreSQL AS\nPostgreSQL Joins\nPostgreSQL INNER JOIN\nPostgreSQL LEFT JOIN\nPostgreSQL RIGHT JOIN\nPostgreSQL FULL JOIN\nPostgreSQL CROSS JOIN\nPostgreSQL UNION\nPostgreSQL GROUP BY\nPostgreSQL HAVING\nPostgreSQL EXISTS\nPostgreSQL ANY\nPostgreSQL ALL\nPostgreSQL CASE",
+                "heading": "PostgreSQL Syntax"
+            },
+            {
+                "content": "PostgreSQL Certificate",
+                "heading": "PostgreSQL Cert"
+            },
+            {
+                "content": "To add a column to an existing table, we have to use the ALTER TABLE statement.\n\nThe ALTER TABLE statement is used to add, delete, or modify columns in an existing table.\n\nThe ALTER TABLE statement is also used to add and drop various constraints on an existing table.",
+                "heading": "The ALTER TABLE Statement"
+            },
+            {
+                "content": "We want to add a column named color to our cars table.\n\nWhen adding columns we must also specify the data type of the column. Our color\ncolumn will be a string, and we specify string types with the VARCHAR\nkeyword. we also want to restrict the number of characters to 255:\n\n Example\n Add a column named color:\n\n ALTER TABLE cars\n\n ADD color VARCHAR(255);\n\n Result\n\nALTER TABLE",
+                "heading": "ADD COLUMN"
+            },
+            {
+                "content": "To check the result we can display the table with this SQL statement:\n\nExample\n\n SELECT * FROM cars;\n\n Run Example »\n\nAs you can see, the cars table now has a \ncolor column.\n\nThe new column is empty, you will learn how to fill it with values in the\nnext chapter.",
+                "heading": "Display Table"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:52Z",
+        "subject": "PostgreSQL",
+        "title": "PostgreSQL ADD COLUMN"
+    },
+    {
+        "url": "https://www.w3schools.com/postgresql/postgresql_update.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "postgresql_postgresql_update",
+        "code_examples": [
+            {
+                "code": "Example\n Set the color of the Volvo to 'red':\n\n UPDATE cars\n\n SET color = 'red'\n\n WHERE brand = 'Volvo';",
+                "language": "postgresql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Result\n\nUPDATE 1",
+                "language": "postgresql",
+                "heading": "Result",
+                "tryit_url": null
+            },
+            {
+                "code": "SELECT * FROM cars;",
+                "language": "postgresql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "SELECT * FROM cars;",
+                "language": "postgresql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Result\n\nUPDATE 1",
+                "language": "postgresql",
+                "heading": "Result",
+                "tryit_url": null
+            },
+            {
+                "code": "SELECT * FROM cars;",
+                "language": "postgresql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "PostgreSQL Home\nPostgreSQL Intro\nPostgreSQL Install\nPostgreSQL Get Started\nPostgreSQL pgAdmin 4",
+                "heading": "PostgreSQL Tutorial"
+            },
+            {
+                "content": "PostgreSQL CREATE TABLE\nPostgreSQL INSERT INTO\nPostgreSQL Fetch Data\nPostgreSQL ADD COLUMN\nPostgreSQL UPDATE\nPostgreSQL ALTER COLUMN\nPostgreSQL DROP COLUMN\nPostgreSQL DELETE\nPostgreSQL DROP TABLE\n\nCreate Demo Database",
+                "heading": "Database"
+            },
+            {
+                "content": "PostgreSQL Operators\nPostgreSQL SELECT\nPostgreSQL SELECT DISTINCT\nPostgreSQL WHERE\nPostgreSQL ORDER BY\nPostgreSQL LIMIT\nPostgreSQL MIN and MAX\nPostgreSQL COUNT\nPostgreSQL SUM\nPostgreSQL AVG\nPostgreSQL LIKE\nPostgreSQL IN\nPostgreSQL BETWEEN\nPostgreSQL AS\nPostgreSQL Joins\nPostgreSQL INNER JOIN\nPostgreSQL LEFT JOIN\nPostgreSQL RIGHT JOIN\nPostgreSQL FULL JOIN\nPostgreSQL CROSS JOIN\nPostgreSQL UNION\nPostgreSQL GROUP BY\nPostgreSQL HAVING\nPostgreSQL EXISTS\nPostgreSQL ANY\nPostgreSQL ALL\nPostgreSQL CASE",
+                "heading": "PostgreSQL Syntax"
+            },
+            {
+                "content": "PostgreSQL Certificate",
+                "heading": "PostgreSQL Cert"
+            },
+            {
+                "content": "The UPDATE statement is used to modify the value(s) in existing records in a table.\n\n Example\n Set the color of the Volvo to 'red':\n\n UPDATE cars\n\n SET color = 'red'\n\n WHERE brand = 'Volvo';\n\n Result\n\nUPDATE 1\n\nWhich means that 1 row was affected by the UPDATE statement.\n\nNote: Be careful with the WHERE clause,\nin the example above ALL rows where brand = 'Volvo' gets updated.",
+                "heading": "The UPDATE Statement"
+            },
+            {
+                "content": "To check the result we can display the table with this SQL statement:\n\n Example\n\n SELECT * FROM cars;\n\n Run Example »",
+                "heading": "Display Table"
+            },
+            {
+                "content": "Be careful when updating records. If you omit the WHERE clause,\nALL records will be updated!\n\n Example\n Without the WHERE clause, ALL records will be updated:\n\n UPDATE cars\n\n SET color = 'red';\n\n Result\n\nUPDATE 4\n\nWhich means that all 4 row was affected by the UPDATE statement.",
+                "heading": "Warning! Remember WHERE"
+            },
+            {
+                "content": "To check the result we can display the table with this SQL statement:\n\n Example\n\n SELECT * FROM cars;\n\n Run Example »",
+                "heading": "Display Table"
+            },
+            {
+                "content": "To update more than one column, separate the name/value pairs with a comma ,:\n\n Example\n Update color and year for the Toyota:\n\n UPDATE cars\n\n SET color = 'white', year = 1970\n\n WHERE brand = 'Toyota';\n\n Result\n\nUPDATE 1\n\nWhich means that 1 row was affected by the UPDATE statement.",
+                "heading": "Update Multiple Columns"
+            },
+            {
+                "content": "To check the result we can display the table with this SQL statement:\n\n Example\n\n SELECT * FROM cars;\n\n Run Example »\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Display Table"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:52Z",
+        "subject": "PostgreSQL",
+        "title": "PostgreSQL UPDATE"
+    },
+    {
+        "url": "https://www.w3schools.com/postgresql/postgresql_alter_column.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "postgresql_postgresql_alter_column",
+        "code_examples": [
+            {
+                "code": "Example\n Change the year column from\n INT to VARCHAR(4):\n\n ALTER TABLE cars\n\n ALTER COLUMN \n year TYPE VARCHAR(4);",
+                "language": "postgresql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Result\n\nALTER TABLE",
+                "language": "postgresql",
+                "heading": "Result",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n Change the color column from\n VARCHAR(255) to VARCHAR(30):\n\n ALTER TABLE cars\n\n ALTER COLUMN color TYPE VARCHAR(30);",
+                "language": "postgresql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Result\n\nALTER TABLE",
+                "language": "postgresql",
+                "heading": "Result",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "PostgreSQL Home\nPostgreSQL Intro\nPostgreSQL Install\nPostgreSQL Get Started\nPostgreSQL pgAdmin 4",
+                "heading": "PostgreSQL Tutorial"
+            },
+            {
+                "content": "PostgreSQL CREATE TABLE\nPostgreSQL INSERT INTO\nPostgreSQL Fetch Data\nPostgreSQL ADD COLUMN\nPostgreSQL UPDATE\nPostgreSQL ALTER COLUMN\nPostgreSQL DROP COLUMN\nPostgreSQL DELETE\nPostgreSQL DROP TABLE\n\nCreate Demo Database",
+                "heading": "Database"
+            },
+            {
+                "content": "PostgreSQL Operators\nPostgreSQL SELECT\nPostgreSQL SELECT DISTINCT\nPostgreSQL WHERE\nPostgreSQL ORDER BY\nPostgreSQL LIMIT\nPostgreSQL MIN and MAX\nPostgreSQL COUNT\nPostgreSQL SUM\nPostgreSQL AVG\nPostgreSQL LIKE\nPostgreSQL IN\nPostgreSQL BETWEEN\nPostgreSQL AS\nPostgreSQL Joins\nPostgreSQL INNER JOIN\nPostgreSQL LEFT JOIN\nPostgreSQL RIGHT JOIN\nPostgreSQL FULL JOIN\nPostgreSQL CROSS JOIN\nPostgreSQL UNION\nPostgreSQL GROUP BY\nPostgreSQL HAVING\nPostgreSQL EXISTS\nPostgreSQL ANY\nPostgreSQL ALL\nPostgreSQL CASE",
+                "heading": "PostgreSQL Syntax"
+            },
+            {
+                "content": "PostgreSQL Certificate",
+                "heading": "PostgreSQL Cert"
+            },
+            {
+                "content": "To change the data type, or the size of a table column we have to use the ALTER TABLE statement.\n\nThe ALTER TABLE statement is used to add, delete,\nor modify columns in an existing table.\n\nThe ALTER TABLE statement is also used to add and drop various constraints on an existing table.",
+                "heading": "The ALTER TABLE Statement"
+            },
+            {
+                "content": "We want to change the data type of the year column of the\ncars table from INT\nto VARCHAR(4).\n\nTo modify a column, use the ALTER COLUMN\nstatement and the TYPE keyword followed by the \nnew data type:\n\n Example\n Change the year column from\n INT to VARCHAR(4):\n\n ALTER TABLE cars\n\n ALTER COLUMN \n year TYPE VARCHAR(4);\n\n Result\n\nALTER TABLE\n\nNote: Some data types cannot be converted if the column has value.\nE.g. numbers can always be converted to text, but text cannot always be \nconverted to numbers.",
+                "heading": "ALTER COLUMN"
+            },
+            {
+                "content": "We also want to change the maximum number of characters allowed in the\ncolor column of the\ncars table.\n\nUse the same syntax as above, use the ALTER COLUMN\nstatement and the TYPE keyword followed by the \nnew data type:\n\n Example\n Change the color column from\n VARCHAR(255) to VARCHAR(30):\n\n ALTER TABLE cars\n\n ALTER COLUMN color TYPE VARCHAR(30);\n\n Result\n\nALTER TABLE",
+                "heading": "Change Maximum Allowed Characters"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:52Z",
+        "subject": "PostgreSQL",
+        "title": "PostgreSQL ALTER COLUMN"
+    },
+    {
+        "url": "https://www.w3schools.com/postgresql/postgresql_drop_column.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "postgresql_postgresql_drop_column",
+        "code_examples": [
+            {
+                "code": "Example\n Remove the color column:\n\n ALTER TABLE cars\n\n DROP COLUMN color;",
+                "language": "postgresql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Result\n\nALTER TABLE",
+                "language": "postgresql",
+                "heading": "Result",
+                "tryit_url": null
+            },
+            {
+                "code": "SELECT * FROM cars;",
+                "language": "postgresql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "PostgreSQL Home\nPostgreSQL Intro\nPostgreSQL Install\nPostgreSQL Get Started\nPostgreSQL pgAdmin 4",
+                "heading": "PostgreSQL Tutorial"
+            },
+            {
+                "content": "PostgreSQL CREATE TABLE\nPostgreSQL INSERT INTO\nPostgreSQL Fetch Data\nPostgreSQL ADD COLUMN\nPostgreSQL UPDATE\nPostgreSQL ALTER COLUMN\nPostgreSQL DROP COLUMN\nPostgreSQL DELETE\nPostgreSQL DROP TABLE\n\nCreate Demo Database",
+                "heading": "Database"
+            },
+            {
+                "content": "PostgreSQL Operators\nPostgreSQL SELECT\nPostgreSQL SELECT DISTINCT\nPostgreSQL WHERE\nPostgreSQL ORDER BY\nPostgreSQL LIMIT\nPostgreSQL MIN and MAX\nPostgreSQL COUNT\nPostgreSQL SUM\nPostgreSQL AVG\nPostgreSQL LIKE\nPostgreSQL IN\nPostgreSQL BETWEEN\nPostgreSQL AS\nPostgreSQL Joins\nPostgreSQL INNER JOIN\nPostgreSQL LEFT JOIN\nPostgreSQL RIGHT JOIN\nPostgreSQL FULL JOIN\nPostgreSQL CROSS JOIN\nPostgreSQL UNION\nPostgreSQL GROUP BY\nPostgreSQL HAVING\nPostgreSQL EXISTS\nPostgreSQL ANY\nPostgreSQL ALL\nPostgreSQL CASE",
+                "heading": "PostgreSQL Syntax"
+            },
+            {
+                "content": "PostgreSQL Certificate",
+                "heading": "PostgreSQL Cert"
+            },
+            {
+                "content": "To remove a column from a table, we have to use the ALTER TABLE statement.\n\nThe ALTER TABLE statement is used to add, delete, or modify columns in an existing table.\n\nThe ALTER TABLE statement is also used to add and drop various constraints on an existing table.",
+                "heading": "The ALTER TABLE Statement"
+            },
+            {
+                "content": "We want to remove the column named color from the\ncars table.\n\nTo remove a column, use the DROP COLUMN\nstatement:\n\n Example\n Remove the color column:\n\n ALTER TABLE cars\n\n DROP COLUMN color;\n\n Result\n\nALTER TABLE",
+                "heading": "DROP COLUMN"
+            },
+            {
+                "content": "To check the result we can display the table with this SQL statement:\n\n Example\n\n SELECT * FROM cars;\n\n Run Example »\n\nAs you can see in the result, the color column has been removed from the\ncars table.",
+                "heading": "Display Table"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:52Z",
+        "subject": "PostgreSQL",
+        "title": "PostgreSQL DROP COLUMN"
+    },
+    {
+        "url": "https://www.w3schools.com/postgresql/postgresql_delete.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "postgresql_postgresql_delete",
+        "code_examples": [
+            {
+                "code": "Example\n Delete all records where brand is 'Volvo':\n\n DELETE FROM cars\n\n WHERE brand = 'Volvo';",
+                "language": "postgresql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Result\n\nDELETE 1",
+                "language": "postgresql",
+                "heading": "Result",
+                "tryit_url": null
+            },
+            {
+                "code": "SELECT * FROM cars;",
+                "language": "postgresql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Result\n\nDELETE 3",
+                "language": "postgresql",
+                "heading": "Result",
+                "tryit_url": null
+            },
+            {
+                "code": "SELECT * FROM cars;",
+                "language": "postgresql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Result\n\nTRUNCATE TABLE",
+                "language": "postgresql",
+                "heading": "Result",
+                "tryit_url": null
+            },
+            {
+                "code": "SELECT * FROM cars;",
+                "language": "postgresql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "PostgreSQL Home\nPostgreSQL Intro\nPostgreSQL Install\nPostgreSQL Get Started\nPostgreSQL pgAdmin 4",
+                "heading": "PostgreSQL Tutorial"
+            },
+            {
+                "content": "PostgreSQL CREATE TABLE\nPostgreSQL INSERT INTO\nPostgreSQL Fetch Data\nPostgreSQL ADD COLUMN\nPostgreSQL UPDATE\nPostgreSQL ALTER COLUMN\nPostgreSQL DROP COLUMN\nPostgreSQL DELETE\nPostgreSQL DROP TABLE\n\nCreate Demo Database",
+                "heading": "Database"
+            },
+            {
+                "content": "PostgreSQL Operators\nPostgreSQL SELECT\nPostgreSQL SELECT DISTINCT\nPostgreSQL WHERE\nPostgreSQL ORDER BY\nPostgreSQL LIMIT\nPostgreSQL MIN and MAX\nPostgreSQL COUNT\nPostgreSQL SUM\nPostgreSQL AVG\nPostgreSQL LIKE\nPostgreSQL IN\nPostgreSQL BETWEEN\nPostgreSQL AS\nPostgreSQL Joins\nPostgreSQL INNER JOIN\nPostgreSQL LEFT JOIN\nPostgreSQL RIGHT JOIN\nPostgreSQL FULL JOIN\nPostgreSQL CROSS JOIN\nPostgreSQL UNION\nPostgreSQL GROUP BY\nPostgreSQL HAVING\nPostgreSQL EXISTS\nPostgreSQL ANY\nPostgreSQL ALL\nPostgreSQL CASE",
+                "heading": "PostgreSQL Syntax"
+            },
+            {
+                "content": "PostgreSQL Certificate",
+                "heading": "PostgreSQL Cert"
+            },
+            {
+                "content": "The DELETE statement is used to delete existing records in a table.\n\nNote: Be careful when deleting records in a table!\nNotice the WHERE clause in the\nDELETE statement.\nThe WHERE clause specifies which record(s) should be deleted.\n\nIf you omit the WHERE clause,\n\nall records in the table will be deleted!.\n\nTo delete the record(s) where brand is 'Volvo', use this statement:\n\n Example\n Delete all records where brand is 'Volvo':\n\n DELETE FROM cars\n\n WHERE brand = 'Volvo';\n\n Result\n\nDELETE 1\n\nWhich means that 1 row was deleted.",
+                "heading": "The DELETE Statement"
+            },
+            {
+                "content": "To check the result we can display the table with this SQL statement:\n\n Example\n\n SELECT * FROM cars;\n\n Run Example »",
+                "heading": "Display Table"
+            },
+            {
+                "content": "It is possible to delete all rows in a table without deleting the table.\nThis means that the table structure, attributes, and indexes will be intact.\n\nThe following SQL statement deletes all rows in the cars\ntable, without deleting the table:\n\n Example\n Delete all records in the cars table:\n\n DELETE FROM cars;\n\n Result\n\nDELETE 3\n\nWhich means that all 3 rows were deleted.",
+                "heading": "Delete All Records"
+            },
+            {
+                "content": "To check the result we can display the table with this SQL statement:\n\n Example\n\n SELECT * FROM cars;\n\n Run Example »",
+                "heading": "Display Table"
+            },
+            {
+                "content": "Because we omit the WHERE clause in the \nDELETE statement above, all records will be deleted from the \ncars table.\n\nThe same would have been achieved by using the\nTRUNCATE TABLE statement:\n\n Example\n Delete all records in the cars table:\n\n TRUNCATE TABLE cars;\n\n Result\n\nTRUNCATE TABLE",
+                "heading": "TRUNCATE TABLE"
+            },
+            {
+                "content": "To check the result we can display the table with this SQL statement:\n\n Example\n\n SELECT * FROM cars;\n\n Run Example »\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Display Table"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:52Z",
+        "subject": "PostgreSQL",
+        "title": "PostgreSQL DELETE"
+    },
+    {
+        "url": "https://www.w3schools.com/postgresql/postgresql_drop_table.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "postgresql_postgresql_drop_table",
+        "code_examples": [
+            {
+                "code": "Example\n Delete the cars table:\n\n DROP TABLE cars;",
+                "language": "postgresql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Result\n\nDROP TABLE",
+                "language": "postgresql",
+                "heading": "Result",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\n SELECT * FROM cars;",
+                "language": "postgresql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Result\n\n ERROR: relation \"cars\" does not exist\nLINE 1: SELECT * FROM cars;\n\n ^",
+                "language": "postgresql",
+                "heading": "Result",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "PostgreSQL Home\nPostgreSQL Intro\nPostgreSQL Install\nPostgreSQL Get Started\nPostgreSQL pgAdmin 4",
+                "heading": "PostgreSQL Tutorial"
+            },
+            {
+                "content": "PostgreSQL CREATE TABLE\nPostgreSQL INSERT INTO\nPostgreSQL Fetch Data\nPostgreSQL ADD COLUMN\nPostgreSQL UPDATE\nPostgreSQL ALTER COLUMN\nPostgreSQL DROP COLUMN\nPostgreSQL DELETE\nPostgreSQL DROP TABLE\n\nCreate Demo Database",
+                "heading": "Database"
+            },
+            {
+                "content": "PostgreSQL Operators\nPostgreSQL SELECT\nPostgreSQL SELECT DISTINCT\nPostgreSQL WHERE\nPostgreSQL ORDER BY\nPostgreSQL LIMIT\nPostgreSQL MIN and MAX\nPostgreSQL COUNT\nPostgreSQL SUM\nPostgreSQL AVG\nPostgreSQL LIKE\nPostgreSQL IN\nPostgreSQL BETWEEN\nPostgreSQL AS\nPostgreSQL Joins\nPostgreSQL INNER JOIN\nPostgreSQL LEFT JOIN\nPostgreSQL RIGHT JOIN\nPostgreSQL FULL JOIN\nPostgreSQL CROSS JOIN\nPostgreSQL UNION\nPostgreSQL GROUP BY\nPostgreSQL HAVING\nPostgreSQL EXISTS\nPostgreSQL ANY\nPostgreSQL ALL\nPostgreSQL CASE",
+                "heading": "PostgreSQL Syntax"
+            },
+            {
+                "content": "PostgreSQL Certificate",
+                "heading": "PostgreSQL Cert"
+            },
+            {
+                "content": "The DROP TABLE statement is used to drop an existing table in a database.\n\nNote: Be careful before dropping a table.\nDeleting a table will result in loss of all information stored in the table!\n\nThe following SQL statement drops the existing table cars:\n\n Example\n Delete the cars table:\n\n DROP TABLE cars;\n\n Result\n\nDROP TABLE",
+                "heading": "The DROP TABLE Statement"
+            },
+            {
+                "content": "To check the result we can display the table with this SQL statement:\n\n Example\n\n SELECT * FROM cars;\n\nWhich will result in an error, because the cars \ntable no longer exists:\n\n Result\n\n ERROR: relation \"cars\" does not exist\nLINE 1: SELECT * FROM cars;\n\n ^",
+                "heading": "Display Table"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:52Z",
+        "subject": "PostgreSQL",
+        "title": "PostgreSQL DROP TABLE"
+    },
+    {
+        "url": "https://www.w3schools.com/postgresql/postgresql_create_demodatabase.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "postgresql_postgresql_create_demodatabase",
+        "code_examples": [
+            {
+                "code": "CREATE TABLE categories\n\nCREATE TABLE categories (\n  category_id SERIAL NOT NULL PRIMARY KEY,\n  category_name VARCHAR(255),\n  description VARCHAR(255)\n);",
+                "language": "postgresql",
+                "heading": "CREATE TABLE categories",
+                "tryit_url": null
+            },
+            {
+                "code": "Result\n\n CREATE TABLE",
+                "language": "postgresql",
+                "heading": "Result",
+                "tryit_url": null
+            },
+            {
+                "code": "INSERT INTO categories\n\nINSERT INTO categories (category_name, description)\nVALUES\n  ('Beverages', 'Soft drinks, coffees, teas, beers, and ales'),\n  ('Condiments', 'Sweet and savory sauces, relishes, spreads, and seasonings'),\n  ('Confections', 'Desserts, candies, and sweet breads'),\n  ('Dairy Products', 'Cheeses'),\n  ('Grains/Cereals', 'Breads, crackers, pasta, and cereal'),\n  ('Meat/Poultry', 'Prepared meats'),\n  ('Produce', 'Dried fruit and bean curd'),\n\n ('Seafood', 'Seaweed and fish');",
+                "language": "postgresql",
+                "heading": "INSERT INTO categories",
+                "tryit_url": null
+            },
+            {
+                "code": "Result\n\n INSERT 0 8",
+                "language": "postgresql",
+                "heading": "Result",
+                "tryit_url": null
+            },
+            {
+                "code": "CREATE TABLE customers\n\n CREATE TABLE customers (\n  customer_id SERIAL NOT \n NULL PRIMARY KEY,\n  customer_name VARCHAR(255),\n\n contact_name VARCHAR(255),\n  address VARCHAR(255),\n\n city VARCHAR(255),\n  postal_code VARCHAR(255),\n  country \n VARCHAR(255)\n);",
+                "language": "postgresql",
+                "heading": "CREATE TABLE customers",
+                "tryit_url": null
+            },
+            {
+                "code": "Result\n\n CREATE TABLE",
+                "language": "postgresql",
+                "heading": "Result",
+                "tryit_url": null
+            },
+            {
+                "code": "INSERT INTO customers\n\n INSERT INTO customers (customer_name, contact_name, address, city, postal_code, country)\n\n VALUES\n  ('Alfreds Futterkiste', 'Maria Anders', 'Obere Str. \n 57', 'Berlin', '12209', 'Germany'),\n  ('Ana Trujillo Emparedados \n y helados', 'Ana Trujillo', 'Avda. de la Constitucion 2222', 'Mexico \n D.F.', '05021', 'Mexico'),\n  ('Antonio Moreno Taquera', 'Antonio \n Moreno', 'Mataderos 2312', 'Mexico D.F.', '05023', 'Mexico'),\n\n ('Around the Horn', 'Thomas Hardy', '120 Hanover Sq.', 'London', 'WA1 \n 1DP', 'UK'),\n  ('Berglunds snabbkoep', 'Christina Berglund', 'Berguvsvegen \n 8', 'Lulea', 'S-958 22', 'Sweden'),\n  ('Blauer See Delikatessen', \n 'Hanna Moos', 'Forsterstr. 57', 'Mannheim', '68306', 'Germany'),\n\n ('Blondel pere et fils', 'Frederique Citeaux', '24, place Kleber', \n 'Strasbourg', '67000', 'France'),\n  ('Bolido Comidas preparadas', \n 'Martin Sommer', 'C/ Araquil, 67', 'Madrid', '28023', 'Spain'),\n\n ('Bon app', 'Laurence Lebihans', '12, rue des Bouchers', 'Marseille', \n '13008', 'France'),\n  ('Bottom-Dollar Marketse', 'Elizabeth \n Lincoln', '23 Tsawassen Blvd.', 'Tsawassen', 'T2F 8M4', 'Canada'),\n\n ('Bs Beverages', 'Victoria Ashworth', 'Fauntleroy Circus', 'London', \n 'EC2 5NT', 'UK'),\n  ('Cactus Comidas para llevar', 'Patricio \n Simpson', 'Cerrito 333', 'Buenos Aires', '1010', 'Argentina'),\n\n ('Centro comercial Moctezuma', 'Francisco Chang', 'Sierras de Granada \n 9993', 'Mexico D.F.', '05022', 'Mexico'),\n  ('Chop-suey \n Chinese', 'Yang Wang', 'Hauptstr. 29', 'Bern', '3012', 'Switzerland'),\n\n ('Comercio Mineiro', 'Pedro Afonso', 'Av. dos Lusiadas, 23', 'Sao \n Paulo', '05432-043', 'Brazil'),\n  ('Consolidated Holdings', \n 'Elizabeth Brown', 'Berkeley Gardens 12 Brewery ', 'London', 'WX1 6LT', \n 'UK'),\n  ('Drachenblut Delikatessend', 'Sven Ottlieb', 'Walserweg \n 21', 'Aachen', '52066', 'Germany'),\n  ('Du monde entier', \n 'Janine Labrune', '67, rue des Cinquante Otages', 'Nantes', '44000', \n 'France'),\n  ('Eastern Connection', 'Ann Devon', '35 King \n George', 'London', 'WX3 6FW', 'UK'),\n  ('Ernst Handel', 'Roland \n Mendel', 'Kirchgasse 6', 'Graz', '8010', 'Austria'),\n  ('Familia \n Arquibaldo', 'Aria Cruz', 'Rua Oros, 92', 'Sao Paulo', '05442-030', \n 'Brazil'),\n  ('FISSA Fabrica Inter. Salchichas S.A.', 'Diego \n Roel', 'C/ Moralzarzal, 86', 'Madrid', '28034', 'Spain'),\n  ('Folies \n gourmandes', 'Martine Rance', '184, chaussee de Tournai', 'Lille', \n '59000', 'France'),\n  ('Folk och fe HB', 'Maria Larsson', 'Akergatan \n 24', 'Brecke', 'S-844 67', 'Sweden'),\n  ('Frankenversand', \n 'Peter Franken', 'Berliner Platz 43', 'Munchen', '80805', 'Germany'),\n\n ('France restauration', 'Carine Schmitt', '54, rue Royale', 'Nantes', \n '44000', 'France'),\n  ('Franchi S.p.A.', 'Paolo Accorti', 'Via \n Monte Bianco 34', 'Torino', '10100', 'Italy'),\n  ('Furia \n Bacalhau e Frutos do Mar', 'Lino Rodriguez ', 'Jardim das rosas n. 32', \n 'Lisboa', '1675', 'Portugal'),\n  ('Galeria del gastronomo', \n 'Eduardo Saavedra', 'Rambla de Cataluna, 23', 'Barcelona', '08022', \n 'Spain'),\n  ('Godos Cocina Tipica', 'Jose Pedro Freyre', 'C/ \n Romero, 33', 'Sevilla', '41101', 'Spain'),\n  ('Gourmet \n Lanchonetes', 'Andre Fonseca', 'Av. Brasil, 442', 'Campinas', \n '04876-786', 'Brazil'),\n  ('Great Lakes Food Market', 'Howard \n Snyder', '2732 Baker Blvd.', 'Eugene', '97403', 'USA'),\n\n ('GROSELLA-Restaurante', 'Manuel Pereira', '5th Ave. Los Palos Grandes', \n 'Caracas', '1081', 'Venezuela'),\n  ('Hanari Carnes', 'Mario \n Pontes', 'Rua do Paco, 67', 'Rio de Janeiro', '05454-876', 'Brazil'),\n\n ('HILARION-Abastos', 'Carlos Hernandez', 'Carrera 22 con Ave. Carlos \n Soublette #8-35', 'San Cristobal', '5022', 'Venezuela'),\n\n ('Hungry Coyote Import Store', 'Yoshi Latimer', 'City Center Plaza 516 \n Main St.', 'Elgin', '97827', 'USA'),\n  ('Hungry Owl All-Night \n Grocers', 'Patricia McKenna', '8 Johnstown Road', 'Cork', '', \n 'Ireland'),\n  ('Island Trading', 'Helen Bennett', 'Garden House \n Crowther Way', 'Cowes', 'PO31 7PJ', 'UK'),\n  ('Koniglich Essen', \n 'Philip Cramer', 'Maubelstr. 90', 'Brandenburg', '14776', 'Germany'),\n\n ('La corne d abondance', 'Daniel Tonini', '67, avenue de l Europe', \n 'Versailles', '78000', 'France'),\n  ('La maison d Asie', \n 'Annette Roulet', '1 rue Alsace-Lorraine', 'Toulouse', '31000', \n 'France'),\n  ('Laughing Bacchus Wine Cellars', 'Yoshi Tannamuri', \n '1900 Oak St.', 'Vancouver', 'V3F 2K1', 'Canada'),\n  ('Lazy K \n Kountry Store', 'John Steel', '12 Orchestra Terrace', 'Walla Walla', \n '99362', 'USA'),\n  ('Lehmanns Marktstand', 'Renate Messner', 'Magazinweg \n 7', 'Frankfurt a.M. ', '60528', 'Germany'),\n  ('Lets Stop N \n Shop', 'Jaime Yorres', '87 Polk St. Suite 5', 'San Francisco', '94117', \n 'USA'),\n  ('LILA-Supermercado', 'Carlos Gonzalez', 'Carrera 52 \n con Ave. Bolivar #65-98 Llano Largo', 'Barquisimeto', '3508', \n 'Venezuela'),\n  ('LINO-Delicateses', 'Felipe Izquierdo', 'Ave. 5 \n de Mayo Porlamar', 'I. de Margarita', '4980', 'Venezuela'),\n\n ('Lonesome Pine Restaurant', 'Fran Wilson', '89 Chiaroscuro Rd.', \n 'Portland', '97219', 'USA'),\n  ('Magazzini Alimentari Riuniti', \n 'Giovanni Rovelli', 'Via Ludovico il Moro 22', 'Bergamo', '24100', \n 'Italy'),\n  ('Maison Dewey', 'Catherine Dewey', 'Rue Joseph-Bens \n 532', 'Bruxelles', 'B-1180', 'Belgium'),\n  ('Mere Paillarde', \n 'Jean Fresniere', '43 rue St. Laurent', 'Montreal', 'H1J 1C3', \n 'Canada'),\n  ('Morgenstern Gesundkost', 'Alexander Feuer', 'Heerstr. \n 22', 'Leipzig', '04179', 'Germany'),\n  ('North/South', 'Simon \n Crowther', 'South House 300 Queensbridge', 'London', 'SW7 1RZ', 'UK'),\n\n ('Oceano Atlantico Ltda.', 'Yvonne Moncada', 'Ing. Gustavo Moncada 8585 \n Piso 20-A', 'Buenos Aires', '1010', 'Argentina'),\n  ('Old World \n Delicatessen', 'Rene Phillips', '2743 Bering St.', 'Anchorage', '99508', \n 'USA'),\n  ('Ottilies Keseladen', 'Henriette Pfalzheim', 'Mehrheimerstr. \n 369', 'Koln', '50739', 'Germany'),\n  ('Paris specialites', \n 'Marie Bertrand', '265, boulevard Charonne', 'Paris', '75012', \n 'France'),\n  ('Pericles Comidas clasicas', 'Guillermo \n Fernandez', 'Calle Dr. Jorge Cash 321', 'Mexico D.F.', '05033', \n 'Mexico'),\n  ('Piccolo und mehr', 'Georg Pipps', 'Geislweg 14', \n 'Salzburg', '5020', 'Austria'),\n  ('Princesa Isabel Vinhoss', \n 'Isabel de Castro', 'Estrada da saude n. 58', 'Lisboa', '1756', \n 'Portugal'),\n  ('Que Delicia', 'Bernardo Batista', 'Rua da \n Panificadora, 12', 'Rio de Janeiro', '02389-673', 'Brazil'),\n\n ('Queen Cozinha', 'Lucia Carvalho', 'Alameda dos Canarios, 891', 'Sao \n Paulo', '05487-020', 'Brazil'),\n  ('QUICK-Stop', 'Horst Kloss', \n 'Taucherstrasse 10', 'Cunewalde', '01307', 'Germany'),\n\n ('Rancho grande', 'Sergio Gutiarrez', 'Av. del Libertador 900', 'Buenos \n Aires', '1010', 'Argentina'),\n  ('Rattlesnake Canyon Grocery', \n 'Paula Wilson', '2817 Milton Dr.', 'Albuquerque', '87110', 'USA'),\n\n ('Reggiani Caseifici', 'Maurizio Moroni', 'Strada Provinciale 124', \n 'Reggio Emilia', '42100', 'Italy'),\n  ('Ricardo Adocicados', 'Janete \n Limeira', 'Av. Copacabana, 267', 'Rio de Janeiro', '02389-890', \n 'Brazil'),\n  ('Richter Supermarkt', 'Michael Holz', 'Grenzacherweg \n 237', 'Genève', '1203', 'Switzerland'),\n  ('Romero y tomillo', \n 'Alejandra Camino', 'Gran Via, 1', 'Madrid', '28001', 'Spain'),\n\n ('Santa Gourmet', 'Jonas Bergulfsen', 'Erling Skakkes gate 78', 'Stavern', \n '4110', 'Norway'),\n  ('Save-a-lot Markets', 'Jose Pavarotti', \n '187 Suffolk Ln.', 'Boise', '83720', 'USA'),\n  ('Seven Seas \n Imports', 'Hari Kumar', '90 Wadhurst Rd.', 'London', 'OX15 4NB', 'UK'),\n\n ('Simons bistro', 'Jytte Petersen', 'Vinbeltet 34', 'Kobenhavn', '1734', \n 'Denmark'),\n  ('Specialites du monde', 'Dominique Perrier', '25, \n rue Lauriston', 'Paris', '75016', 'France'),\n  ('Split Rail Beer \n & Ale', 'Art Braunschweiger', 'P.O. Box 555', 'Lander', '82520', 'USA'),\n\n ('Supremes delices', 'Pascale Cartrain', 'Boulevard Tirou, 255', \n 'Charleroi', 'B-6000', 'Belgium'),\n  ('The Big Cheese', 'Liz \n Nixon', '89 Jefferson Way Suite 2', 'Portland', '97201', 'USA'),\n\n ('The Cracker Box', 'Liu Wong', '55 Grizzly Peak Rd.', 'Butte', '59801', \n 'USA'),\n  ('Toms Spezialiteten', 'Karin Josephs', 'Luisenstr. \n 48', 'Manster', '44087', 'Germany'),\n  ('Tortuga Restaurante', \n 'Miguel Angel Paolino', 'Avda. Azteca 123', 'Mexico D.F.', '05033', \n 'Mexico'),\n  ('Tradicao Hipermercados', 'Anabela Domingues', \n 'Av. Ines de Castro, 414', 'Sao Paulo', '05634-030', 'Brazil'),\n\n ('Trails Head Gourmet Provisioners', 'Helvetius Nagy', '722 DaVinci \n Blvd.', 'Kirkland', '98034', 'USA'),\n  ('Vaffeljernet', 'Palle \n Ibsen', 'Smagsloget 45', 'Arhus', '8200', 'Denmark'),\n  ('Victuailles \n en stock', 'Mary Saveley', '2, rue du Commerce', 'Lyon', '69004', \n 'France'),\n  ('Vins et alcools Chevalier', 'Paul Henriot', '59 \n rue de l Abbaye', 'Reims', '51100', 'France'),\n  ('Die Wandernde \n Kuh', 'Rita Moller', 'Adenauerallee 900', 'Stuttgart', '70563', \n 'Germany'),\n  ('Wartian Herkku', 'Pirkko Koskitalo', 'Torikatu \n 38', 'Oulu', '90110', 'Finland'),\n  ('Wellington Importadora', \n 'Paula Parente', 'Rua do Mercado, 12', 'Resende', '08737-363', \n 'Brazil'),\n  ('White Clover Markets', 'Karl Jablonski', '305 - \n 14th Ave. S. Suite 3B', 'Seattle', '98128', 'USA'),\n  ('Wilman \n Kala', 'Matti Karttunen', 'Keskuskatu 45', 'Helsinki', '21240', \n 'Finland'),\n  ('Wolski', 'Zbyszek', 'ul. Filtrowa 68', 'Walla', \n '01-012', 'Poland');",
+                "language": "postgresql",
+                "heading": "INSERT INTO customers",
+                "tryit_url": null
+            },
+            {
+                "code": "Result\n\n INSERT 0 91",
+                "language": "postgresql",
+                "heading": "Result",
+                "tryit_url": null
+            },
+            {
+                "code": "CREATE TABLE products\n\n CREATE TABLE products (\n  product_id SERIAL NOT NULL PRIMARY \n KEY,\n  product_name VARCHAR(255),\n\n category_id INT,\n  unit VARCHAR(255),\n  price \n DECIMAL(10, 2)\n);",
+                "language": "postgresql",
+                "heading": "CREATE TABLE products",
+                "tryit_url": null
+            },
+            {
+                "code": "Result\n\n CREATE TABLE",
+                "language": "postgresql",
+                "heading": "Result",
+                "tryit_url": null
+            },
+            {
+                "code": "INSERT INTO products\n\n INSERT INTO products (product_id, product_name, category_id, \n unit, price)\nVALUES\n  (1, 'Chais', 1, '10 boxes x 20 bags', 18),\n\n (2, 'Chang', 1, '24 - 12 oz bottles', 19),\n  (3, 'Aniseed Syrup', \n 2, '12 - 550 ml bottles', 10),\n  (4, 'Chef Antons Cajun Seasoning', \n 2, '48 - 6 oz jars', 22),\n  (5, 'Chef Antons Gumbo Mix', 2, '36 \n boxes', 21.35),\n  (6, 'Grandmas Boysenberry Spread', 2, '12 - 8 oz \n jars', 25),\n  (7, 'Uncle Bobs Organic Dried Pears', 7, '12 - 1 lb \n pkgs.', 30),\n  (8, 'Northwoods Cranberry Sauce', 2, '12 - 12 oz \n jars', 40),\n  (9, 'Mishi Kobe Niku', 6, '18 - 500 g pkgs.', 97),\n\n (10, 'Ikura', 8, '12 - 200 ml jars', 31),\n  (11, 'Queso Cabrales', \n 4, '1 kg pkg.', 21),\n  (12, 'Queso Manchego La Pastora', 4, '10 - \n 500 g pkgs.', 38),\n  (13, 'Konbu', 8, '2 kg box', 6),\n  (14, \n 'Tofu', 7, '40 - 100 g pkgs.', 23.25),\n  (15, 'Genen Shouyu', 2, \n '24 - 250 ml bottles', 15.5),\n  (16, 'Pavlova', 3, '32 - 500 g \n boxes', 17.45),\n  (17, 'Alice Mutton', 6, '20 - 1 kg tins', 39),\n\n (18, 'Carnarvon Tigers', 8, '16 kg pkg.', 62.5),\n  (19, 'Teatime \n Chocolate Biscuits', 3, '10 boxes x 12 pieces', 9.2),\n  (20, 'Sir \n Rodneys Marmalade', 3, '30 gift boxes', 81),\n  (21, 'Sir Rodneys \n Scones', 3, '24 pkgs. x 4 pieces', 10),\n  (22, 'Gustafs Kneckebrod', \n 5, '24 - 500 g pkgs.', 21),\n  (23, 'Tunnbrod', 5, '12 - 250 g \n pkgs.', 9),\n  (24, 'Guarani Fantastica', 1, '12 - 355 ml cans', \n 4.5),\n  (25, 'NuNuCa Nui-Nougat-Creme', 3, '20 - 450 g glasses', \n 14),\n  (26, 'Gumber Gummiberchen', 3, '100 - 250 g bags', 31.23),\n\n (27, 'Schoggi Schokolade', 3, '100 - 100 g pieces', 43.9),\n  (28, 'Rassle \n Sauerkraut', 7, '25 - 825 g cans', 45.6),\n  (29, 'Thoringer \n Rostbratwurst', 6, '50 bags x 30 sausgs.', 123.79),\n  (30, 'Nord-Ost \n Matjeshering', 8, '10 - 200 g glasses', 25.89),\n  (31, 'Gorgonzola \n Telino', 4, '12 - 100 g pkgs', 12.5),\n  (32, 'Mascarpone Fabioli', \n 4, '24 - 200 g pkgs.', 32),\n  (33, 'Geitost', 4, '500 g', 2.5),\n\n (34, 'Sasquatch Ale', 1, '24 - 12 oz bottles', 14),\n  (35, 'Steeleye \n Stout', 1, '24 - 12 oz bottles', 18),\n  (36, 'Inlagd Sill', 8, \n '24 - 250 g jars', 19),\n  (37, 'Gravad lax', 8, '12 - 500 g pkgs.', \n 26),\n  (38, 'Cote de Blaye', 1, '12 - 75 cl bottles', 263.5),\n\n (39, 'Chartreuse verte', 1, '750 cc per bottle', 18),\n  (40, \n 'Boston Crab Meat', 8, '24 - 4 oz tins', 18.4),\n  (41, 'Jacks New \n England Clam Chowder', 8, '12 - 12 oz cans', 9.65),\n  (42, \n 'Singaporean Hokkien Fried Mee', 5, '32 - 1 kg pkgs.', 14),\n  (43, \n 'Ipoh Coffee', 1, '16 - 500 g tins', 46),\n  (44, 'Gula Malacca', \n 2, '20 - 2 kg bags', 19.45),\n  (45, 'Rogede sild', 8, '1k \n pkg.', 9.5),\n  (46, 'Spegesild', 8, '4 - 450 g glasses', 12),\n\n (47, 'Zaanse koeken', 3, '10 - 4 oz boxes', 9.5),\n  (48, 'Chocolade', \n 3, '10 pkgs.', 12.75),\n  (49, 'Maxilaku', 3, '24 - 50 g pkgs.', \n 20),\n  (50, 'Valkoinen suklaa', 3, '12 - 100 g bars', 16.25),\n\n (51, 'Manjimup Dried Apples', 7, '50 - 300 g pkgs.', 53),\n  (52, \n 'Filo Mix', 5, '16 - 2 kg boxes', 7),\n  (53, 'Perth Pasties', \n 6, '48 pieces', 32.8),\n  (54, 'Tourtiare', 6, '16 pies', 7.45),\n\n (55, 'Pate chinois', 6, '24 boxes x 2 pies', 24),\n  (56, 'Gnocchi \n di nonna Alice', 5, '24 - 250 g pkgs.', 38),\n  (57, 'Ravioli \n Angelo', 5, '24 - 250 g pkgs.', 19.5),\n  (58, 'Escargots de \n Bourgogne', 8, '24 pieces', 13.25),\n  (59, 'Raclette Courdavault', \n 4, '5 kg pkg.', 55),\n  (60, 'Camembert Pierrot', 4, '15 - 300 g \n rounds', 34),\n  (61, 'Sirop d arable', 2, '24 - 500 ml bottles', \n 28.5),\n  (62, 'Tarte au sucre', 3, '48 pies', 49.3),\n  (63, \n 'Vegie-spread', 2, '15 - 625 g jars', 43.9),\n  (64, 'Wimmers gute \n Semmelknadel', 5, '20 bags x 4 pieces', 33.25),\n  (65, 'Louisiana \n Fiery Hot Pepper Sauce', 2, '32 - 8 oz bottles', 21.05),\n  (66, \n 'Louisiana Hot Spiced Okra', 2, '24 - 8 oz jars', 17),\n  (67, \n 'Laughing Lumberjack Lager', 1, '24 - 12 oz bottles', 14),\n  (68, \n 'Scottish Longbreads', 3, '10 boxes x 8 pieces', 12.5),\n  (69, 'Gudbrandsdalsost', \n 4, '10 kg pkg.', 36),\n  (70, 'Outback Lager', 1, '24 - 355 ml \n bottles', 15),\n  (71, 'Flotemysost', 4, '10 - 500 g pkgs.', 21.5),\n\n (72, 'Mozzarella di Giovanni', 4, '24 - 200 g pkgs.', 34.8),\n  (73, \n 'Red Kaviar', 8, '24 - 150 g jars', 15),\n  (74, 'Longlife Tofu', \n 7, '5 kg pkg.', 10),\n  (75, 'Rhenbreu Klosterbier', 1, '24 - 0.5 l \n bottles', 7.75),\n  (76, 'Lakkalikeeri', 1, '500 ml ', 18),\n  (77, \n 'Original Frankfurter grune Soae', 2, '12 boxes', 13);",
+                "language": "postgresql",
+                "heading": "INSERT INTO products",
+                "tryit_url": null
+            },
+            {
+                "code": "Result\n\n INSERT 0 77",
+                "language": "postgresql",
+                "heading": "Result",
+                "tryit_url": null
+            },
+            {
+                "code": "CREATE TABLE orders\n\n CREATE TABLE orders (\n  order_id SERIAL NOT NULL PRIMARY KEY,\n\n customer_id INT,\n  order_date DATE\n\n );",
+                "language": "postgresql",
+                "heading": "CREATE TABLE orders",
+                "tryit_url": null
+            },
+            {
+                "code": "Result\n\n CREATE TABLE",
+                "language": "postgresql",
+                "heading": "Result",
+                "tryit_url": null
+            },
+            {
+                "code": "INSERT INTO orders\n\n INSERT INTO orders (order_id, customer_id, order_date)\n\n VALUES\n  (10248, 90, '2021-07-04'), \n  (10249, 81, \n '2021-07-05'), \n  (10250, 34, '2021-07-08'), \n  (10251, 84, \n '2021-07-08'), \n  (10252, 76, '2021-07-09'), \n  (10253, 34, \n '2021-07-10'), \n  (10254, 14, '2021-07-11'), \n  (10255, 68, \n '2021-07-12'), \n  (10256, 88, '2021-07-15'), \n  (10257, 35, \n '2021-07-16'), \n  (10258, 20, '2021-07-17'), \n  (10259, 13, \n '2021-07-18'), \n  (10260, 55, '2021-07-19'), \n  (10261, 61, \n '2021-07-19'), \n  (10262, 65, '2021-07-22'), \n  (10263, 20, \n '2021-07-23'), \n  (10264, 24, '2021-07-24'), \n  (10265, 7, \n '2021-07-25'), \n  (10266, 87, '2021-07-26'), \n  (10267, 25, \n '2021-07-29'), \n  (10268, 33, '2021-07-30'), \n  (10269, 89, \n '2021-07-31'), \n  (10270, 87, '2021-08-01'), \n  (10271, 75, \n '2021-08-01'), \n  (10272, 65, '2021-08-02'), \n  (10273, 63, \n '2021-08-05'), \n  (10274, 85, '2021-08-06'), \n  (10275, 49, \n '2021-08-07'), \n  (10276, 80, '2021-08-08'), \n  (10277, 52, \n '2021-08-09'), \n  (10278, 5, '2021-08-12'), \n  (10279, 44, \n '2021-08-13'), \n  (10280, 5, '2021-08-14'), \n  (10281, 69, \n '2021-08-14'), \n  (10282, 69, '2021-08-15'), \n  (10283, 46, \n '2021-08-16'), \n  (10284, 44, '2021-08-19'), \n  (10285, 63, \n '2021-08-20'), \n  (10286, 63, '2021-08-21'), \n  (10287, 67, \n '2021-08-22'), \n  (10288, 66, '2021-08-23'), \n  (10289, 11, \n '2021-08-26'), \n  (10290, 15, '2021-08-27'), \n  (10291, 61, \n '2021-08-27'), \n  (10292, 81, '2021-08-28'), \n  (10293, 80, \n '2021-08-29'), \n  (10294, 65, '2021-08-30'), \n  (10295, 85, \n '2021-09-02'), \n  (10296, 46, '2021-09-03'), \n  (10297, 7, \n '2021-09-04'), \n  (10298, 37, '2021-09-05'), \n  (10299, 67, \n '2021-09-06'), \n  (10300, 49, '2021-09-09'), \n  (10301, 86, \n '2021-09-09'), \n  (10302, 76, '2021-09-10'), \n  (10303, 30, \n '2021-09-11'), \n  (10304, 80, '2021-09-12'), \n  (10305, 55, \n '2021-09-13'), \n  (10306, 69, '2021-09-16'), \n  (10307, 48, \n '2021-09-17'), \n  (10308, 2, '2021-09-18'), \n  (10309, 37, \n '2021-09-19'), \n  (10310, 77, '2021-09-20'), \n  (10311, 18, \n '2021-09-20'), \n  (10312, 86, '2021-09-23'), \n  (10313, 63, \n '2021-09-24'), \n  (10314, 65, '2021-09-25'), \n  (10315, 38, \n '2021-09-26'), \n  (10316, 65, '2021-09-27'), \n  (10317, 48, \n '2021-09-30'), \n  (10318, 38, '2021-10-01'), \n  (10319, 80, \n '2021-10-02'), \n  (10320, 87, '2021-10-03'), \n  (10321, 38, \n '2021-10-03'), \n  (10322, 58, '2021-10-04'), \n  (10323, 39, \n '2021-10-07'), \n  (10324, 71, '2021-10-08'), \n  (10325, 39, \n '2021-10-09'), \n  (10326, 8, '2021-10-10'), \n  (10327, 24, \n '2021-10-11'), \n  (10328, 28, '2021-10-14'), \n  (10329, 75, \n '2021-10-15'), \n  (10330, 46, '2021-10-16'), \n  (10331, 9, \n '2021-10-16'), \n  (10332, 51, '2021-10-17'), \n  (10333, 87, \n '2021-10-18'), \n  (10334, 84, '2021-10-21'), \n  (10335, 37, \n '2021-10-22'), \n  (10336, 60, '2021-10-23'), \n  (10337, 25, \n '2021-10-24'), \n  (10338, 55, '2021-10-25'), \n  (10339, 51, \n '2021-10-28'), \n  (10340, 9, '2021-10-29'), \n  (10341, 73, \n '2021-10-29'), \n  (10342, 25, '2021-10-30'), \n  (10343, 44, \n '2021-10-31'), \n  (10344, 89, '2021-11-01'), \n  (10345, 63, \n '2021-11-04'), \n  (10346, 65, '2021-11-05'), \n  (10347, 21, \n '2021-11-06'), \n  (10348, 86, '2021-11-07'), \n  (10349, 75, \n '2021-11-08'), \n  (10350, 41, '2021-11-11'), \n  (10351, 20, \n '2021-11-11'), \n  (10352, 28, '2021-11-12'), \n  (10353, 59, \n '2021-11-13'), \n  (10354, 58, '2021-11-14'), \n  (10355, 4, \n '2021-11-15'), \n  (10356, 86, '2021-11-18'), \n  (10357, 46, \n '2021-11-19'), \n  (10358, 41, '2021-11-20'), \n  (10359, 72, \n '2021-11-21'), \n  (10360, 7, '2021-11-22'), \n  (10361, 63, \n '2021-11-22'), \n  (10362, 9, '2021-11-25'), \n  (10363, 17, \n '2021-11-26'), \n  (10364, 19, '2021-11-26'), \n  (10365, 3, \n '2021-11-27'), \n  (10366, 29, '2021-11-28'), \n  (10367, 83, \n '2021-11-28'), \n  (10368, 20, '2021-11-29'), \n  (10369, 75, \n '2021-12-02'), \n  (10370, 14, '2021-12-03'), \n  (10371, 41, \n '2021-12-03'), \n  (10372, 62, '2021-12-04'), \n  (10373, 37, \n '2021-12-05'), \n  (10374, 91, '2021-12-05'), \n  (10375, 36, \n '2021-12-06'), \n  (10376, 51, '2021-12-09'), \n  (10377, 72, \n '2021-12-09'), \n  (10378, 24, '2021-12-10'), \n  (10379, 61, \n '2021-12-11'), \n  (10380, 37, '2021-12-12'), \n  (10381, 46, \n '2021-12-12'), \n  (10382, 20, '2021-12-13'), \n  (10383, 4, \n '2021-12-16'), \n  (10384, 5, '2021-12-16'), \n  (10385, 75, \n '2021-12-17'), \n  (10386, 21, '2021-12-18'), \n  (10387, 70, \n '2021-12-18'), \n  (10388, 72, '2021-12-19'), \n  (10389, 10, \n '2021-12-20'), \n  (10390, 20, '2021-12-23'), \n  (10391, 17, \n '2021-12-23'), \n  (10392, 59, '2021-12-24'), \n  (10393, 71, \n '2021-12-25'), \n  (10394, 36, '2021-12-25'), \n  (10395, 35, \n '2021-12-26'), \n  (10396, 25, '2021-12-27'), \n  (10397, 60, \n '2021-12-27'), \n  (10398, 71, '2021-12-30'), \n  (10399, 83, \n '2021-12-31'), \n  (10400, 19, '2022-01-01'), \n  (10401, 65, \n '2022-01-01'), \n  (10402, 20, '2022-01-02'), \n  (10403, 20, \n '2022-01-03'), \n  (10404, 49, '2022-01-03'), \n  (10405, 47, \n '2022-01-06'), \n  (10406, 62, '2022-01-07'), \n  (10407, 56, \n '2022-01-07'), \n  (10408, 23, '2022-01-08'), \n  (10409, 54, \n '2022-01-09'), \n  (10410, 10, '2022-01-10'), \n  (10411, 10, \n '2022-01-10'), \n  (10412, 87, '2022-01-13'), \n  (10413, 41, \n '2022-01-14'), \n  (10414, 21, '2022-01-14'), \n  (10415, 36, \n '2022-01-15'), \n  (10416, 87, '2022-01-16'), \n  (10417, 73, \n '2022-01-16'), \n  (10418, 63, '2022-01-17'), \n  (10419, 68, \n '2022-01-20'), \n  (10420, 88, '2022-01-21'), \n  (10421, 61, \n '2022-01-21'), \n  (10422, 27, '2022-01-22'), \n  (10423, 31, \n '2022-01-23'), \n  (10424, 51, '2022-01-23'), \n  (10425, 41, \n '2022-01-24'), \n  (10426, 29, '2022-01-27'), \n  (10427, 59, \n '2022-01-27'), \n  (10428, 66, '2022-01-28'), \n  (10429, 37, \n '2022-01-29'), \n  (10430, 20, '2022-01-30'), \n  (10431, 10, \n '2022-01-30'), \n  (10432, 75, '2022-01-31'), \n  (10433, 60, \n '2022-02-03'), \n  (10434, 24, '2022-02-03'), \n  (10435, 16, \n '2022-02-04'), \n  (10436, 7, '2022-02-05'), \n  (10437, 87, \n '2022-02-05'), \n  (10438, 79, '2022-02-06'), \n  (10439, 51, \n '2022-02-07'), \n  (10440, 71, '2022-02-10'), \n  (10441, 55, \n '2022-02-10'), \n  (10442, 20, '2022-02-11'), \n  (10443, 66, \n '2022-02-12'), \n  (10444, 5, '2022-02-12'), \n  (10445, 5, \n '2022-02-13'), \n  (10446, 79, '2022-02-14'), \n  (10447, 67, \n '2022-02-14'), \n  (10448, 64, '2022-02-17'), \n  (10449, 7, \n '2022-02-18'), \n  (10450, 84, '2022-02-19'), \n  (10451, 63, \n '2022-02-19'), \n  (10452, 71, '2022-02-20'), \n  (10453, 4, \n '2022-02-21'), \n  (10454, 41, '2022-02-21'), \n  (10455, 87, \n '2022-02-24'), \n  (10456, 39, '2022-02-25'), \n  (10457, 39, \n '2022-02-25'), \n  (10458, 76, '2022-02-26'), \n  (10459, 84, \n '2022-02-27'), \n  (10460, 24, '2022-02-28'), \n  (10461, 46, \n '2022-02-28'), \n  (10462, 16, '2022-03-03'), \n  (10463, 76, \n '2022-03-04'), \n  (10464, 28, '2022-03-04'), \n  (10465, 83, \n '2022-03-05'), \n  (10466, 15, '2022-03-06'), \n  (10467, 49, \n '2022-03-06'), \n  (10468, 39, '2022-03-07'), \n  (10469, 89, \n '2022-03-10'), \n  (10470, 9, '2022-03-11'), \n  (10471, 11, \n '2022-03-11'), \n  (10472, 72, '2022-03-12'), \n  (10473, 38, \n '2022-03-13'), \n  (10474, 58, '2022-03-13'), \n  (10475, 76, \n '2022-03-14'), \n  (10476, 35, '2022-03-17'), \n  (10477, 60, \n '2022-03-17'), \n  (10478, 84, '2022-03-18'), \n  (10479, 65, \n '2022-03-19'), \n  (10480, 23, '2022-03-20'), \n  (10481, 67, \n '2022-03-20'), \n  (10482, 43, '2022-03-21'), \n  (10483, 89, \n '2022-03-24'), \n  (10484, 11, '2022-03-24'), \n  (10485, 47, \n '2022-03-25'), \n  (10486, 35, '2022-03-26'), \n  (10487, 62, \n '2022-03-26'), \n  (10488, 25, '2022-03-27'), \n  (10489, 59, \n '2022-03-28'), \n  (10490, 35, '2022-03-31'), \n  (10491, 28, \n '2022-03-31'), \n  (10492, 10, '2022-04-01'), \n  (10493, 41, \n '2022-04-02'), \n  (10494, 15, '2022-04-02'), \n  (10495, 42, \n '2022-04-03'), \n  (10496, 81, '2022-04-04'), \n  (10497, 44, \n '2022-04-04'), \n  (10498, 35, '2022-04-07'), \n  (10499, 46, \n '2022-04-08'), \n  (10500, 41, '2022-04-09'), \n  (10501, 6, \n '2022-04-09'), \n  (10502, 58, '2022-04-10'), \n  (10503, 37, \n '2022-04-11'), \n  (10504, 89, '2022-04-11'), \n  (10505, 51, \n '2022-04-14'), \n  (10506, 39, '2022-04-15'), \n  (10507, 3, \n '2022-04-15'), \n  (10508, 56, '2022-04-16'), \n  (10509, 6, \n '2022-04-17'), \n  (10510, 71, '2022-04-18'), \n  (10511, 9, \n '2022-04-18'), \n  (10512, 21, '2022-04-21'), \n  (10513, 86, \n '2022-04-22'), \n  (10514, 20, '2022-04-22'), \n  (10515, 63, \n '2022-04-23'), \n  (10516, 37, '2022-04-24'), \n  (10517, 53, \n '2022-04-24'), \n  (10518, 80, '2022-04-25'), \n  (10519, 14, \n '2022-04-28'), \n  (10520, 70, '2022-04-29'), \n  (10521, 12, \n '2022-04-29'), \n  (10522, 44, '2022-04-30'), \n  (10523, 72, \n '2022-05-01'), \n  (10524, 5, '2022-05-01'), \n  (10525, 9, \n '2022-05-02'), \n  (10526, 87, '2022-05-05'), \n  (10527, 63, \n '2022-05-05'), \n  (10528, 32, '2022-05-06'), \n  (10529, 50, \n '2022-05-07'), \n  (10530, 59, '2022-05-08'), \n  (10531, 54, \n '2022-05-08'), \n  (10532, 19, '2022-05-09'), \n  (10533, 24, \n '2022-05-12'), \n  (10534, 44, '2022-05-12'), \n  (10535, 3, \n '2022-05-13'), \n  (10536, 44, '2022-05-14'), \n  (10537, 68, \n '2022-05-14'), \n  (10538, 11, '2022-05-15'), \n  (10539, 11, \n '2022-05-16'), \n  (10540, 63, '2022-05-19'), \n  (10541, 34, \n '2022-05-19'), \n  (10542, 39, '2022-05-20'), \n  (10543, 46, \n '2022-05-21'), \n  (10544, 48, '2022-05-21'), \n  (10545, 43, \n '2022-05-22'), \n  (10546, 84, '2022-05-23'), \n  (10547, 72, \n '2022-05-23'), \n  (10548, 79, '2022-05-26'), \n  (10549, 63, \n '2022-05-27'), \n  (10550, 30, '2022-05-28'), \n  (10551, 28, \n '2022-05-28'), \n  (10552, 35, '2022-05-29'), \n  (10553, 87, \n '2022-05-30'), \n  (10554, 56, '2022-05-30'), \n  (10555, 71, \n '2022-06-02'), \n  (10556, 73, '2022-06-03'), \n  (10557, 44, \n '2022-06-03'), \n  (10558, 4, '2022-06-04'), \n  (10559, 7, \n '2022-06-05'), \n  (10560, 25, '2022-06-06'), \n  (10561, 24, \n '2022-06-06'), \n  (10562, 66, '2022-06-09'), \n  (10563, 67, \n '2022-06-10'), \n  (10564, 65, '2022-06-10'), \n  (10565, 51, \n '2022-06-11'), \n  (10566, 7, '2022-06-12'), \n  (10567, 37, \n '2022-06-12'), \n  (10568, 29, '2022-06-13'), \n  (10569, 65, \n '2022-06-16'), \n  (10570, 51, '2022-06-17'), \n  (10571, 20, \n '2022-06-17'), \n  (10572, 5, '2022-06-18'), \n  (10573, 3, \n '2022-06-19'), \n  (10574, 82, '2022-06-19'), \n  (10575, 52, \n '2022-06-20'), \n  (10576, 80, '2022-06-23'), \n  (10577, 82, \n '2022-06-23'), \n  (10578, 11, '2022-06-24'), \n  (10579, 45, \n '2022-06-25'), \n  (10580, 56, '2022-06-26'), \n  (10581, 21, \n '2022-06-26'), \n  (10582, 6, '2022-06-27'), \n  (10583, 87, \n '2022-06-30'), \n  (10584, 7, '2022-06-30'), \n  (10585, 88, \n '2022-07-01'), \n  (10586, 66, '2022-07-02'), \n  (10587, 61, \n '2022-07-02'), \n  (10588, 63, '2022-07-03'), \n  (10589, 32, \n '2022-07-04'), \n  (10590, 51, '2022-07-07'), \n  (10591, 83, \n '2022-07-07'), \n  (10592, 44, '2022-07-08'), \n  (10593, 44, \n '2022-07-09'), \n  (10594, 55, '2022-07-09'), \n  (10595, 20, \n '2022-07-10'), \n  (10596, 89, '2022-07-11'), \n  (10597, 59, \n '2022-07-11'), \n  (10598, 65, '2022-07-14'), \n  (10599, 11, \n '2022-07-15'), \n  (10600, 36, '2022-07-16'), \n  (10601, 35, \n '2022-07-16'), \n  (10602, 83, '2022-07-17'), \n  (10603, 71, \n '2022-07-18'), \n  (10604, 28, '2022-07-18'), \n  (10605, 51, \n '2022-07-21'), \n  (10606, 81, '2022-07-22'), \n  (10607, 71, \n '2022-07-22'), \n  (10608, 79, '2022-07-23'), \n  (10609, 18, \n '2022-07-24'), \n  (10610, 41, '2022-07-25'), \n  (10611, 91, \n '2022-07-25'), \n  (10612, 71, '2022-07-28'), \n  (10613, 35, \n '2022-07-29'), \n  (10614, 6, '2022-07-29'), \n  (10615, 90, \n '2022-07-30'), \n  (10616, 32, '2022-07-31'), \n  (10617, 32, \n '2022-07-31'), \n  (10618, 51, '2022-08-01'), \n  (10619, 51, \n '2022-08-04'), \n  (10620, 42, '2022-08-05'), \n  (10621, 38, \n '2022-08-05'), \n  (10622, 67, '2022-08-06'), \n  (10623, 25, \n '2022-08-07'), \n  (10624, 78, '2022-08-07'), \n  (10625, 2, \n '2022-08-08'), \n  (10626, 5, '2022-08-11'), \n  (10627, 71, \n '2022-08-11'), \n  (10628, 7, '2022-08-12'), \n  (10629, 30, \n '2022-08-12'), \n  (10630, 39, '2022-08-13'), \n  (10631, 41, \n '2022-08-14'), \n  (10632, 86, '2022-08-14'), \n  (10633, 20, \n '2022-08-15'), \n  (10634, 23, '2022-08-15'), \n  (10635, 49, \n '2022-08-18'), \n  (10636, 87, '2022-08-19'), \n  (10637, 62, \n '2022-08-19'), \n  (10638, 47, '2022-08-20'), \n  (10639, 70, \n '2022-08-20'), \n  (10640, 86, '2022-08-21'), \n  (10641, 35, \n '2022-08-22'), \n  (10642, 73, '2022-08-22'), \n  (10643, 1, \n '2022-08-25'), \n  (10644, 88, '2022-08-25'), \n  (10645, 34, \n '2022-08-26'), \n  (10646, 37, '2022-08-27'), \n  (10647, 61, \n '2022-08-27'), \n  (10648, 67, '2022-08-28'), \n  (10649, 50, \n '2022-08-28'), \n  (10650, 21, '2022-08-29'), \n  (10651, 86, \n '2022-09-01'), \n  (10652, 31, '2022-09-01'), \n  (10653, 25, \n '2022-09-02'), \n  (10654, 5, '2022-09-02'), \n  (10655, 66, \n '2022-09-03'), \n  (10656, 32, '2022-09-04'), \n  (10657, 71, \n '2022-09-04'), \n  (10658, 63, '2022-09-05'), \n  (10659, 62, \n '2022-09-05'), \n  (10660, 36, '2022-09-08'), \n  (10661, 37, \n '2022-09-09'), \n  (10662, 48, '2022-09-09'), \n  (10663, 9, \n '2022-09-10'), \n  (10664, 28, '2022-09-10'), \n  (10665, 48, \n '2022-09-11'), \n  (10666, 68, '2022-09-12'), \n  (10667, 20, \n '2022-09-12'), \n  (10668, 86, '2022-09-15'), \n  (10669, 73, \n '2022-09-15'), \n  (10670, 25, '2022-09-16'), \n  (10671, 26, \n '2022-09-17'), \n  (10672, 5, '2022-09-17'), \n  (10673, 90, \n '2022-09-18'), \n  (10674, 38, '2022-09-18'), \n  (10675, 25, \n '2022-09-19'), \n  (10676, 80, '2022-09-22'), \n  (10677, 3, \n '2022-09-22'), \n  (10678, 71, '2022-09-23'), \n  (10679, 7, \n '2022-09-23'), \n  (10680, 55, '2022-09-24'), \n  (10681, 32, \n '2022-09-25'), \n  (10682, 3, '2022-09-25'), \n  (10683, 18, \n '2022-09-26'), \n  (10684, 56, '2022-09-26'), \n  (10685, 31, \n '2022-09-29'), \n  (10686, 59, '2022-09-30'), \n  (10687, 37, \n '2022-09-30'), \n  (10688, 83, '2022-10-01'), \n  (10689, 5, \n '2022-10-01'), \n  (10690, 34, '2022-10-02'), \n  (10691, 63, \n '2022-10-03'), \n  (10692, 1, '2022-10-03'), \n  (10693, 89, \n '2022-10-06'), \n  (10694, 63, '2022-10-06'), \n  (10695, 90, \n '2022-10-07'), \n  (10696, 89, '2022-10-08'), \n  (10697, 47, \n '2022-10-08'), \n  (10698, 20, '2022-10-09'), \n  (10699, 52, \n '2022-10-09'), \n  (10700, 71, '2022-10-10'), \n  (10701, 37, \n '2022-10-13'), \n  (10702, 1, '2022-10-13'), \n  (10703, 24, \n '2022-10-14'), \n  (10704, 62, '2022-10-14'), \n  (10705, 35, \n '2022-10-15'), \n  (10706, 55, '2022-10-16'), \n  (10707, 4, \n '2022-10-16'), \n  (10708, 77, '2022-10-17'), \n  (10709, 31, \n '2022-10-17'), \n  (10710, 27, '2022-10-20'), \n  (10711, 71, \n '2022-10-21'), \n  (10712, 37, '2022-10-21'), \n  (10713, 71, \n '2022-10-22'), \n  (10714, 71, '2022-10-22'), \n  (10715, 9, \n '2022-10-23'), \n  (10716, 64, '2022-10-24'), \n  (10717, 25, \n '2022-10-24'), \n  (10718, 39, '2022-10-27'), \n  (10719, 45, \n '2022-10-27'), \n  (10720, 61, '2022-10-28'), \n  (10721, 63, \n '2022-10-29'), \n  (10722, 71, '2022-10-29'), \n  (10723, 89, \n '2022-10-30'), \n  (10724, 51, '2022-10-30'), \n  (10725, 21, \n '2022-10-31'), \n  (10726, 19, '2022-11-03'), \n  (10727, 66, \n '2022-11-03'), \n  (10728, 62, '2022-11-04'), \n  (10729, 47, \n '2022-11-04'), \n  (10730, 9, '2022-11-05'), \n  (10731, 14, \n '2022-11-06'), \n  (10732, 9, '2022-11-06'), \n  (10733, 5, \n '2022-11-07'), \n  (10734, 31, '2022-11-07'), \n  (10735, 45, \n '2022-11-10'), \n  (10736, 37, '2022-11-11'), \n  (10737, 85, \n '2022-11-11'), \n  (10738, 74, '2022-11-12'), \n  (10739, 85, \n '2022-11-12'), \n  (10740, 89, '2022-11-13'), \n  (10741, 4, \n '2022-11-14'), \n  (10742, 10, '2022-11-14'), \n  (10743, 4, \n '2022-11-17'), \n  (10744, 83, '2022-11-17'), \n  (10745, 63, \n '2022-11-18'), \n  (10746, 14, '2022-11-19'), \n  (10747, 59, \n '2022-11-19'), \n  (10748, 71, '2022-11-20'), \n  (10749, 38, \n '2022-11-20'), \n  (10750, 87, '2022-11-21'), \n  (10751, 68, \n '2022-11-24'), \n  (10752, 53, '2022-11-24'), \n  (10753, 27, \n '2022-11-25'), \n  (10754, 49, '2022-11-25'), \n  (10755, 9, \n '2022-11-26'), \n  (10756, 75, '2022-11-27'), \n  (10757, 71, \n '2022-11-27'), \n  (10758, 68, '2022-11-28'), \n  (10759, 2, \n '2022-11-28'), \n  (10760, 50, '2022-12-01'), \n  (10761, 65, \n '2022-12-02'), \n  (10762, 24, '2022-12-02'), \n  (10763, 23, \n '2022-12-03'), \n  (10764, 20, '2022-12-03'), \n  (10765, 63, \n '2022-12-04'), \n  (10766, 56, '2022-12-05'), \n  (10767, 76, \n '2022-12-05'), \n  (10768, 4, '2022-12-08'), \n  (10769, 83, \n '2022-12-08'), \n  (10770, 34, '2022-12-09'), \n  (10771, 20, \n '2022-12-10'), \n  (10772, 44, '2022-12-10'), \n  (10773, 20, \n '2022-12-11'), \n  (10774, 24, '2022-12-11'), \n  (10775, 78, \n '2022-12-12'), \n  (10776, 20, '2022-12-15'), \n  (10777, 31, \n '2022-12-15'), \n  (10778, 5, '2022-12-16'), \n  (10779, 52, \n '2022-12-16'), \n  (10780, 46, '2022-12-16'), \n  (10781, 87, \n '2022-12-17'), \n  (10782, 12, '2022-12-17'), \n  (10783, 34, \n '2022-12-18'), \n  (10784, 49, '2022-12-18'), \n  (10785, 33, \n '2022-12-18'), \n  (10786, 62, '2022-12-19'), \n  (10787, 41, \n '2022-12-19'), \n  (10788, 63, '2022-12-22'), \n  (10789, 23, \n '2022-12-22'), \n  (10790, 31, '2022-12-22'), \n  (10791, 25, \n '2022-12-23'), \n  (10792, 91, '2022-12-23'), \n  (10793, 4, \n '2022-12-24'), \n  (10794, 61, '2022-12-24'), \n  (10795, 20, \n '2022-12-24'), \n  (10796, 35, '2022-12-25'), \n  (10797, 17, \n '2022-12-25'), \n  (10798, 38, '2022-12-26'), \n  (10799, 39, \n '2022-12-26'), \n  (10800, 72, '2022-12-26'), \n  (10801, 8, \n '2022-12-29'), \n  (10802, 73, '2022-12-29'), \n  (10803, 88, \n '2022-12-30'), \n  (10804, 72, '2022-12-30'), \n  (10805, 77, \n '2022-12-30'), \n  (10806, 84, '2022-12-31'), \n  (10807, 27, \n '2022-12-31'), \n  (10808, 60, '2023-01-01'), \n  (10809, 88, \n '2023-01-01'), \n  (10810, 42, '2023-01-01'), \n  (10811, 47, \n '2023-01-02'), \n  (10812, 66, '2023-01-02'), \n  (10813, 67, \n '2023-01-05'), \n  (10814, 84, '2023-01-05'), \n  (10815, 71, \n '2023-01-05'), \n  (10816, 32, '2023-01-06'), \n  (10817, 39, \n '2023-01-06'), \n  (10818, 49, '2023-01-07'), \n  (10819, 12, \n '2023-01-07'), \n  (10820, 65, '2023-01-07'), \n  (10821, 75, \n '2023-01-08'), \n  (10822, 82, '2023-01-08'), \n  (10823, 46, \n '2023-01-09'), \n  (10824, 24, '2023-01-09'), \n  (10825, 17, \n '2023-01-09'), \n  (10826, 7, '2023-01-12'), \n  (10827, 9, \n '2023-01-12'), \n  (10828, 64, '2023-01-13'), \n  (10829, 38, \n '2023-01-13'), \n  (10830, 81, '2023-01-13'), \n  (10831, 70, \n '2023-01-14'), \n  (10832, 41, '2023-01-14'), \n  (10833, 56, \n '2023-01-15'), \n  (10834, 81, '2023-01-15'), \n  (10835, 1, \n '2023-01-15'), \n  (10836, 20, '2023-01-16'), \n  (10837, 5, \n '2023-01-16'), \n  (10838, 47, '2023-01-19'), \n  (10839, 81, \n '2023-01-19'), \n  (10840, 47, '2023-01-19'), \n  (10841, 76, \n '2023-01-20'), \n  (10842, 80, '2023-01-20'), \n  (10843, 84, \n '2023-01-21'), \n  (10844, 59, '2023-01-21'), \n  (10845, 63, \n '2023-01-21'), \n  (10846, 76, '2023-01-22'), \n  (10847, 71, \n '2023-01-22'), \n  (10848, 16, '2023-01-23'), \n  (10849, 39, \n '2023-01-23'), \n  (10850, 84, '2023-01-23'), \n  (10851, 67, \n '2023-01-26'), \n  (10852, 65, '2023-01-26'), \n  (10853, 6, \n '2023-01-27'), \n  (10854, 20, '2023-01-27'), \n  (10855, 55, \n '2023-01-27'), \n  (10856, 3, '2023-01-28'), \n  (10857, 5, \n '2023-01-28'), \n  (10858, 40, '2023-01-29'), \n  (10859, 25, \n '2023-01-29'), \n  (10860, 26, '2023-01-29'), \n  (10861, 89, \n '2023-01-30'), \n  (10862, 44, '2023-01-30'), \n  (10863, 35, \n '2023-02-02'), \n  (10864, 4, '2023-02-02'), \n  (10865, 63, \n '2023-02-02'), \n  (10866, 5, '2023-02-03'), \n  (10867, 48, \n '2023-02-03'), \n  (10868, 62, '2023-02-04'), \n  (10869, 72, \n '2023-02-04'), \n  (10870, 91, '2023-02-04'), \n  (10871, 9, \n '2023-02-05'), \n  (10872, 30, '2023-02-05'), \n  (10873, 90, \n '2023-02-06'), \n  (10874, 30, '2023-02-06'), \n  (10875, 5, \n '2023-02-06'), \n  (10876, 9, '2023-02-09'), \n  (10877, 67, \n '2023-02-09'), \n  (10878, 63, '2023-02-10'), \n  (10879, 90, \n '2023-02-10'), \n  (10880, 24, '2023-02-10'), \n  (10881, 12, \n '2023-02-11'), \n  (10882, 71, '2023-02-11'), \n  (10883, 48, \n '2023-02-12'), \n  (10884, 45, '2023-02-12'), \n  (10885, 76, \n '2023-02-12'), \n  (10886, 34, '2023-02-13'), \n  (10887, 29, \n '2023-02-13'), \n  (10888, 30, '2023-02-16'), \n  (10889, 65, \n '2023-02-16'), \n  (10890, 18, '2023-02-16'), \n  (10891, 44, \n '2023-02-17'), \n  (10892, 50, '2023-02-17'), \n  (10893, 39, \n '2023-02-18'), \n  (10894, 71, '2023-02-18'), \n  (10895, 20, \n '2023-02-18'), \n  (10896, 50, '2023-02-19'), \n  (10897, 37, \n '2023-02-19'), \n  (10898, 54, '2023-02-20'), \n  (10899, 46, \n '2023-02-20'), \n  (10900, 88, '2023-02-20'), \n  (10901, 35, \n '2023-02-23'), \n  (10902, 24, '2023-02-23'), \n  (10903, 34, \n '2023-02-24'), \n  (10904, 89, '2023-02-24'), \n  (10905, 88, \n '2023-02-24'), \n  (10906, 91, '2023-02-25'), \n  (10907, 74, \n '2023-02-25'), \n  (10908, 66, '2023-02-26'), \n  (10909, 70, \n '2023-02-26'), \n  (10910, 90, '2023-02-26'), \n  (10911, 30, \n '2023-02-26'), \n  (10912, 37, '2023-02-26'), \n  (10913, 62, \n '2023-02-26'), \n  (10914, 62, '2023-02-27'), \n  (10915, 80, \n '2023-02-27'), \n  (10916, 64, '2023-02-27'), \n  (10917, 69, \n '2023-03-02'), \n  (10918, 10, '2023-03-02'), \n  (10919, 47, \n '2023-03-02'), \n  (10920, 4, '2023-03-03'), \n  (10921, 83, \n '2023-03-03'), \n  (10922, 34, '2023-03-03'), \n  (10923, 41, \n '2023-03-03'), \n  (10924, 5, '2023-03-04'), \n  (10925, 34, \n '2023-03-04'), \n  (10926, 2, '2023-03-04'), \n  (10927, 40, \n '2023-03-05'), \n  (10928, 29, '2023-03-05'), \n  (10929, 25, \n '2023-03-05'), \n  (10930, 76, '2023-03-06'), \n  (10931, 68, \n '2023-03-06'), \n  (10932, 9, '2023-03-06'), \n  (10933, 38, \n '2023-03-06'), \n  (10934, 44, '2023-03-09'), \n  (10935, 88, \n '2023-03-09'), \n  (10936, 32, '2023-03-09'), \n  (10937, 12, \n '2023-03-10'), \n  (10938, 63, '2023-03-10'), \n  (10939, 49, \n '2023-03-10'), \n  (10940, 9, '2023-03-11'), \n  (10941, 71, \n '2023-03-11'), \n  (10942, 66, '2023-03-11'), \n  (10943, 11, \n '2023-03-11'), \n  (10944, 10, '2023-03-12'), \n  (10945, 52, \n '2023-03-12'), \n  (10946, 83, '2023-03-12'), \n  (10947, 11, \n '2023-03-13'), \n  (10948, 30, '2023-03-13'), \n  (10949, 10, \n '2023-03-13'), \n  (10950, 49, '2023-03-16'), \n  (10951, 68, \n '2023-03-16'), \n  (10952, 1, '2023-03-16'), \n  (10953, 4, \n '2023-03-16'), \n  (10954, 47, '2023-03-17'), \n  (10955, 24, \n '2023-03-17'), \n  (10956, 6, '2023-03-17'), \n  (10957, 35, \n '2023-03-18'), \n  (10958, 54, '2023-03-18'), \n  (10959, 31, \n '2023-03-18'), \n  (10960, 35, '2023-03-19'), \n  (10961, 62, \n '2023-03-19'), \n  (10962, 63, '2023-03-19'), \n  (10963, 28, \n '2023-03-19'), \n  (10964, 74, '2023-03-20'), \n  (10965, 55, \n '2023-03-20'), \n  (10966, 14, '2023-03-20'), \n  (10967, 79, \n '2023-03-23'), \n  (10968, 20, '2023-03-23'), \n  (10969, 15, \n '2023-03-23'), \n  (10970, 8, '2023-03-24'), \n  (10971, 26, \n '2023-03-24'), \n  (10972, 40, '2023-03-24'), \n  (10973, 40, \n '2023-03-24'), \n  (10974, 75, '2023-03-25'), \n  (10975, 10, \n '2023-03-25'), \n  (10976, 35, '2023-03-25'), \n  (10977, 24, \n '2023-03-26'), \n  (10978, 50, '2023-03-26'), \n  (10979, 20, \n '2023-03-26'), \n  (10980, 24, '2023-03-27'), \n  (10981, 34, \n '2023-03-27'), \n  (10982, 10, '2023-03-27'), \n  (10983, 71, \n '2023-03-27'), \n  (10984, 71, '2023-03-30'), \n  (10985, 37, \n '2023-03-30'), \n  (10986, 54, '2023-03-30'), \n  (10987, 19, \n '2023-03-31'), \n  (10988, 65, '2023-03-31'), \n  (10989, 61, \n '2023-03-31'), \n  (10990, 20, '2023-04-01'), \n  (10991, 63, \n '2023-04-01'), \n  (10992, 77, '2023-04-01'), \n  (10993, 24, \n '2023-04-01'), \n  (10994, 83, '2023-04-02'), \n  (10995, 58, \n '2023-04-02'), \n  (10996, 63, '2023-04-02'), \n  (10997, 46, \n '2023-04-03'), \n  (10998, 91, '2023-04-03'), \n  (10999, 56, \n '2023-04-03'), \n  (11000, 65, '2023-04-06'), \n  (11001, 24, \n '2023-04-06'), \n  (11002, 71, '2023-04-06'), \n  (11003, 78, \n '2023-04-06'), \n  (11004, 50, '2023-04-07'), \n  (11005, 90, \n '2023-04-07'), \n  (11006, 32, '2023-04-07'), \n  (11007, 60, \n '2023-04-08'), \n  (11008, 20, '2023-04-08'), \n  (11009, 30, \n '2023-04-08'), \n  (11010, 66, '2023-04-09'), \n  (11011, 1, \n '2023-04-09'), \n  (11012, 25, '2023-04-09'), \n  (11013, 69, \n '2023-04-09'), \n  (11014, 47, '2023-04-10'), \n  (11015, 70, \n '2023-04-10'), \n  (11016, 4, '2023-04-10'), \n  (11017, 20, \n '2023-04-13'), \n  (11018, 48, '2023-04-13'), \n  (11019, 64, \n '2023-04-13'), \n  (11020, 56, '2023-04-14'), \n  (11021, 63, \n '2023-04-14'), \n  (11022, 34, '2023-04-14'), \n  (11023, 11, \n '2023-04-14'), \n  (11024, 19, '2023-04-15'), \n  (11025, 87, \n '2023-04-15'), \n  (11026, 27, '2023-04-15'), \n  (11027, 10, \n '2023-04-16'), \n  (11028, 39, '2023-04-16'), \n  (11029, 14, \n '2023-04-16'), \n  (11030, 71, '2023-04-17'), \n  (11031, 71, \n '2023-04-17'), \n  (11032, 89, '2023-04-17'), \n  (11033, 68, \n '2023-04-17'), \n  (11034, 55, '2023-04-20'), \n  (11035, 76, \n '2023-04-20'), \n  (11036, 17, '2023-04-20'), \n  (11037, 30, \n '2023-04-21'), \n  (11038, 76, '2023-04-21'), \n  (11039, 47, \n '2023-04-21'), \n  (11040, 32, '2023-04-22'), \n  (11041, 14, \n '2023-04-22'), \n  (11042, 15, '2023-04-22'), \n  (11043, 74, \n '2023-04-22'), \n  (11044, 91, '2023-04-23'), \n  (11045, 10, \n '2023-04-23'), \n  (11046, 86, '2023-04-23'), \n  (11047, 19, \n '2023-04-24'), \n  (11048, 10, '2023-04-24'), \n  (11049, 31, \n '2023-04-24'), \n  (11050, 24, '2023-04-27'), \n  (11051, 41, \n '2023-04-27'), \n  (11052, 34, '2023-04-27'), \n  (11053, 59, \n '2023-04-27'), \n  (11054, 12, '2023-04-28'), \n  (11055, 35, \n '2023-04-28'), \n  (11056, 19, '2023-04-28'), \n  (11057, 53, \n '2023-04-29'), \n  (11058, 6, '2023-04-29'), \n  (11059, 67, \n '2023-04-29'), \n  (11060, 27, '2023-04-30'), \n  (11061, 32, \n '2023-04-30'), \n  (11062, 66, '2023-04-30'), \n  (11063, 37, \n '2023-04-30'), \n  (11064, 71, '2023-05-01'), \n  (11065, 46, \n '2023-05-01'), \n  (11066, 89, '2023-05-01'), \n  (11067, 17, \n '2023-05-04'), \n  (11068, 62, '2023-05-04'), \n  (11069, 80, \n '2023-05-04'), \n  (11070, 44, '2023-05-05'), \n  (11071, 46, \n '2023-05-05'), \n  (11072, 20, '2023-05-05'), \n  (11073, 58, \n '2023-05-05'), \n  (11074, 73, '2023-05-06'), \n  (11075, 68, \n '2023-05-06'), \n  (11076, 9, '2023-05-06'), \n  (11077, 65, \n '2023-05-06');",
+                "language": "postgresql",
+                "heading": "INSERT INTO orders",
+                "tryit_url": null
+            },
+            {
+                "code": "Result\n\n INSERT 0 830",
+                "language": "postgresql",
+                "heading": "Result",
+                "tryit_url": null
+            },
+            {
+                "code": "CREATE TABLE order_details\n\n CREATE TABLE order_details (\n  order_detail_id SERIAL NOT NULL \n PRIMARY KEY,\n  order_id INT,\n  product_id INT,\n\n quantity INT\n);",
+                "language": "postgresql",
+                "heading": "CREATE TABLE order_details",
+                "tryit_url": null
+            },
+            {
+                "code": "Result\n\n CREATE TABLE",
+                "language": "postgresql",
+                "heading": "Result",
+                "tryit_url": null
+            },
+            {
+                "code": "INSERT INTO order_details\n\n INSERT INTO order_details (order_id, product_id, quantity)\nVALUES\n\n (10248, 11, 12),\n  (10248, 42, 10),\n  (10248, 72, 5),\n  (10249, 14, \n 9),\n  (10249, 51, 40),\n  (10250, 41, 10),\n  (10250, 51, 35),\n\n (10250, 65, 15),\n  (10251, 22, 6),\n  (10251, 57, 15),\n  (10251, 65, \n 20),\n  (10252, 20, 40),\n  (10252, 33, 25),\n  (10252, 60, 40),\n\n (10253, 31, 20),\n  (10253, 39, 42),\n  (10253, 49, 40),\n  (10254, 24, \n 15),\n  (10254, 55, 21),\n  (10254, 74, 21),\n  (10255, 2, 20),\n\n (10255, 16, 35),\n  (10255, 36, 25),\n  (10255, 59, 30),\n  (10256, 53, \n 15),\n  (10256, 77, 12),\n  (10257, 27, 25),\n  (10257, 39, 6),\n\n (10257, 77, 15),\n  (10258, 2, 50),\n  (10258, 5, 65),\n  (10258, 32, \n 6),\n  (10259, 21, 10),\n  (10259, 37, 1),\n  (10260, 41, 16),\n\n (10260, 57, 50),\n  (10260, 62, 15),\n  (10260, 70, 21),\n  (10261, 21, \n 20),\n  (10261, 35, 20),\n  (10262, 5, 12),\n  (10262, 7, 15),\n\n (10262, 56, 2),\n  (10263, 16, 60),\n  (10263, 24, 28),\n  (10263, 30, \n 60),\n  (10263, 74, 36),\n  (10264, 2, 35),\n  (10264, 41, 25),\n\n (10265, 17, 30),\n  (10265, 70, 20),\n  (10266, 12, 12),\n  (10267, 40, \n 50),\n  (10267, 59, 70),\n  (10267, 76, 15),\n  (10268, 29, 10),\n\n (10268, 72, 4),\n  (10269, 33, 60),\n  (10269, 72, 20),\n  (10270, 36, \n 30),\n  (10270, 43, 25),\n  (10271, 33, 24),\n  (10272, 20, 6),\n\n (10272, 31, 40),\n  (10272, 72, 24),\n  (10273, 10, 24),\n  (10273, 31, \n 15),\n  (10273, 33, 20),\n  (10273, 40, 60),\n  (10273, 76, 33),\n\n (10274, 71, 20),\n  (10274, 72, 7),\n  (10275, 24, 12),\n  (10275, 59, \n 6),\n  (10276, 10, 15),\n  (10276, 13, 10),\n  (10277, 28, 20),\n\n (10277, 62, 12),\n  (10278, 44, 16),\n  (10278, 59, 15),\n  (10278, 63, \n 8),\n  (10278, 73, 25),\n  (10279, 17, 15),\n  (10280, 24, 12),\n\n (10280, 55, 20),\n  (10280, 75, 30),\n  (10281, 19, 1),\n  (10281, 24, \n 6),\n  (10281, 35, 4),\n  (10282, 30, 6),\n  (10282, 57, 2),\n  (10283, \n 15, 20),\n  (10283, 19, 18),\n  (10283, 60, 35),\n  (10283, 72, 3),\n\n (10284, 27, 15),\n  (10284, 44, 21),\n  (10284, 60, 20),\n  (10284, 67, \n 5),\n  (10285, 1, 45),\n  (10285, 40, 40),\n  (10285, 53, 36),\n\n (10286, 35, 100),\n  (10286, 62, 40),\n  (10287, 16, 40),\n  (10287, 34, \n 20),\n  (10287, 46, 15),\n  (10288, 54, 10),\n  (10288, 68, 3),\n\n (10289, 3, 30),\n  (10289, 64, 9),\n  (10290, 5, 20),\n  (10290, 29, \n 15),\n  (10290, 49, 15),\n  (10290, 77, 10),\n  (10291, 13, 20),\n\n (10291, 44, 24),\n  (10291, 51, 2),\n  (10292, 20, 20),\n  (10293, 18, \n 12),\n  (10293, 24, 10),\n  (10293, 63, 5),\n  (10293, 75, 6),\n\n (10294, 1, 18),\n  (10294, 17, 15),\n  (10294, 43, 15),\n  (10294, 60, \n 21),\n  (10294, 75, 6),\n  (10295, 56, 4),\n  (10296, 11, 12),\n\n (10296, 16, 30),\n  (10296, 69, 15),\n  (10297, 39, 60),\n  (10297, 72, \n 20),\n  (10298, 2, 40),\n  (10298, 36, 40),\n  (10298, 59, 30),\n\n (10298, 62, 15),\n  (10299, 19, 15),\n  (10299, 70, 20),\n  (10300, 66, \n 30),\n  (10300, 68, 20),\n  (10301, 40, 10),\n  (10301, 56, 20),\n\n (10302, 17, 40),\n  (10302, 28, 28),\n  (10302, 43, 12),\n  (10303, 40, \n 40),\n  (10303, 65, 30),\n  (10303, 68, 15),\n  (10304, 49, 30),\n\n (10304, 59, 10),\n  (10304, 71, 2),\n  (10305, 18, 25),\n  (10305, 29, \n 25),\n  (10305, 39, 30),\n  (10306, 30, 10),\n  (10306, 53, 10),\n\n (10306, 54, 5),\n  (10307, 62, 10),\n  (10307, 68, 3),\n  (10308, 69, \n 1),\n  (10308, 70, 5),\n  (10309, 4, 20),\n  (10309, 6, 30),\n  (10309, \n 42, 2),\n  (10309, 43, 20),\n  (10309, 71, 3),\n  (10310, 16, 10),\n\n (10310, 62, 5),\n  (10311, 42, 6),\n  (10311, 69, 7),\n  (10312, 28, 4),\n\n (10312, 43, 24),\n  (10312, 53, 20),\n  (10312, 75, 10),\n  (10313, 36, \n 12),\n  (10314, 32, 40),\n  (10314, 58, 30),\n  (10314, 62, 25),\n\n (10315, 34, 14),\n  (10315, 70, 30),\n  (10316, 41, 10),\n  (10316, 62, \n 70),\n  (10317, 1, 20),\n  (10318, 41, 20),\n  (10318, 76, 6),\n\n (10319, 17, 8),\n  (10319, 28, 14),\n  (10319, 76, 30),\n  (10320, 71, \n 30),\n  (10321, 35, 10),\n  (10322, 52, 20),\n  (10323, 15, 5),\n\n (10323, 25, 4),\n  (10323, 39, 4),\n  (10324, 16, 21),\n  (10324, 35, \n 70),\n  (10324, 46, 30),\n  (10324, 59, 40),\n  (10324, 63, 80),\n\n (10325, 6, 6),\n  (10325, 13, 12),\n  (10325, 14, 9),\n  (10325, 31, 4),\n\n (10325, 72, 40),\n  (10326, 4, 24),\n  (10326, 57, 16),\n  (10326, 75, \n 50),\n  (10327, 2, 25),\n  (10327, 11, 50),\n  (10327, 30, 35),\n\n (10327, 58, 30),\n  (10328, 59, 9),\n  (10328, 65, 40),\n  (10328, 68, \n 10),\n  (10329, 19, 10),\n  (10329, 30, 8),\n  (10329, 38, 20),\n\n (10329, 56, 12),\n  (10330, 26, 50),\n  (10330, 72, 25),\n  (10331, 54, \n 15),\n  (10332, 18, 40),\n  (10332, 42, 10),\n  (10332, 47, 16),\n\n (10333, 14, 10),\n  (10333, 21, 10),\n  (10333, 71, 40),\n  (10334, 52, \n 8),\n  (10334, 68, 10),\n  (10335, 2, 7),\n  (10335, 31, 25),\n  (10335, \n 32, 6),\n  (10335, 51, 48),\n  (10336, 4, 18),\n  (10337, 23, 40),\n\n (10337, 26, 24),\n  (10337, 36, 20),\n  (10337, 37, 28),\n  (10337, 72, \n 25),\n  (10338, 17, 20),\n  (10338, 30, 15),\n  (10339, 4, 10),\n\n (10339, 17, 70),\n  (10339, 62, 28),\n  (10340, 18, 20),\n  (10340, 41, \n 12),\n  (10340, 43, 40),\n  (10341, 33, 8),\n  (10341, 59, 9),\n\n (10342, 2, 24),\n  (10342, 31, 56),\n  (10342, 36, 40),\n  (10342, 55, \n 40),\n  (10343, 64, 50),\n  (10343, 68, 4),\n  (10343, 76, 15),\n\n (10344, 4, 35),\n  (10344, 8, 70),\n  (10345, 8, 70),\n  (10345, 19, \n 80),\n  (10345, 42, 9),\n  (10346, 17, 36),\n  (10346, 56, 20),\n\n (10347, 25, 10),\n  (10347, 39, 50),\n  (10347, 40, 4),\n  (10347, 75, \n 6),\n  (10348, 1, 15),\n  (10348, 23, 25),\n  (10349, 54, 24),\n\n (10350, 50, 15),\n  (10350, 69, 18),\n  (10351, 38, 20),\n  (10351, 41, \n 13),\n  (10351, 44, 77),\n  (10351, 65, 10),\n  (10352, 24, 10),\n\n (10352, 54, 20),\n  (10353, 11, 12),\n  (10353, 38, 50),\n  (10354, 1, \n 12),\n  (10354, 29, 4),\n  (10355, 24, 25),\n  (10355, 57, 25),\n\n (10356, 31, 30),\n  (10356, 55, 12),\n  (10356, 69, 20),\n  (10357, 10, \n 30),\n  (10357, 26, 16),\n  (10357, 60, 8),\n  (10358, 24, 10),\n\n (10358, 34, 10),\n  (10358, 36, 20),\n  (10359, 16, 56),\n  (10359, 31, \n 70),\n  (10359, 60, 80),\n  (10360, 28, 30),\n  (10360, 29, 35),\n\n (10360, 38, 10),\n  (10360, 49, 35),\n  (10360, 54, 28),\n  (10361, 39, \n 54),\n  (10361, 60, 55),\n  (10362, 25, 50),\n  (10362, 51, 20),\n\n (10362, 54, 24),\n  (10363, 31, 20),\n  (10363, 75, 12),\n  (10363, 76, \n 12),\n  (10364, 69, 30),\n  (10364, 71, 5),\n  (10365, 11, 24),\n\n (10366, 65, 5),\n  (10366, 77, 5),\n  (10367, 34, 36),\n  (10367, 54, \n 18),\n  (10367, 65, 15),\n  (10367, 77, 7),\n  (10368, 21, 5),\n\n (10368, 28, 13),\n  (10368, 57, 25),\n  (10368, 64, 35),\n  (10369, 29, \n 20),\n  (10369, 56, 18),\n  (10370, 1, 15),\n  (10370, 64, 30),\n\n (10370, 74, 20),\n  (10371, 36, 6),\n  (10372, 20, 12),\n  (10372, 38, \n 40),\n  (10372, 60, 70),\n  (10372, 72, 42),\n  (10373, 58, 80),\n\n (10373, 71, 50),\n  (10374, 31, 30),\n  (10374, 58, 15),\n  (10375, 14, \n 15),\n  (10375, 54, 10),\n  (10376, 31, 42),\n  (10377, 28, 20),\n\n (10377, 39, 20),\n  (10378, 71, 6),\n  (10379, 41, 8),\n  (10379, 63, \n 16),\n  (10379, 65, 20),\n  (10380, 30, 18),\n  (10380, 53, 20),\n\n (10380, 60, 6),\n  (10380, 70, 30),\n  (10381, 74, 14),\n  (10382, 5, \n 32),\n  (10382, 18, 9),\n  (10382, 29, 14),\n  (10382, 33, 60),\n\n (10382, 74, 50),\n  (10383, 13, 20),\n  (10383, 50, 15),\n  (10383, 56, \n 20),\n  (10384, 20, 28),\n  (10384, 60, 15),\n  (10385, 7, 10),\n\n (10385, 60, 20),\n  (10385, 68, 8),\n  (10386, 24, 15),\n  (10386, 34, \n 10),\n  (10387, 24, 15),\n  (10387, 28, 6),\n  (10387, 59, 12),\n\n (10387, 71, 15),\n  (10388, 45, 15),\n  (10388, 52, 20),\n  (10388, 53, \n 40),\n  (10389, 10, 16),\n  (10389, 55, 15),\n  (10389, 62, 20),\n\n (10389, 70, 30),\n  (10390, 31, 60),\n  (10390, 35, 40),\n  (10390, 46, \n 45),\n  (10390, 72, 24),\n  (10391, 13, 18),\n  (10392, 69, 50),\n\n (10393, 2, 25),\n  (10393, 14, 42),\n  (10393, 25, 7),\n  (10393, 26, \n 70),\n  (10393, 31, 32),\n  (10394, 13, 10),\n  (10394, 62, 10),\n\n (10395, 46, 28),\n  (10395, 53, 70),\n  (10395, 69, 8),\n  (10396, 23, \n 40),\n  (10396, 71, 60),\n  (10396, 72, 21),\n  (10397, 21, 10),\n\n (10397, 51, 18),\n  (10398, 35, 30),\n  (10398, 55, 120),\n  (10399, 68, \n 60),\n  (10399, 71, 30),\n  (10399, 76, 35),\n  (10399, 77, 14),\n\n (10400, 29, 21),\n  (10400, 35, 35),\n  (10400, 49, 30),\n  (10401, 30, \n 18),\n  (10401, 56, 70),\n  (10401, 65, 20),\n  (10401, 71, 60),\n\n (10402, 23, 60),\n  (10402, 63, 65),\n  (10403, 16, 21),\n  (10403, 48, \n 70),\n  (10404, 26, 30),\n  (10404, 42, 40),\n  (10404, 49, 30),\n\n (10405, 3, 50),\n  (10406, 1, 10),\n  (10406, 21, 30),\n  (10406, 28, \n 42),\n  (10406, 36, 5),\n  (10406, 40, 2),\n  (10407, 11, 30),\n\n (10407, 69, 15),\n  (10407, 71, 15),\n  (10408, 37, 10),\n  (10408, 54, \n 6),\n  (10408, 62, 35),\n  (10409, 14, 12),\n  (10409, 21, 12),\n\n (10410, 33, 49),\n  (10410, 59, 16),\n  (10411, 41, 25),\n  (10411, 44, \n 40),\n  (10411, 59, 9),\n  (10412, 14, 20),\n  (10413, 1, 24),\n\n (10413, 62, 40),\n  (10413, 76, 14),\n  (10414, 19, 18),\n  (10414, 33, \n 50),\n  (10415, 17, 2),\n  (10415, 33, 20),\n  (10416, 19, 20),\n\n (10416, 53, 10),\n  (10416, 57, 20),\n  (10417, 38, 50),\n  (10417, 46, \n 2),\n  (10417, 68, 36),\n  (10417, 77, 35),\n  (10418, 2, 60),\n\n (10418, 47, 55),\n  (10418, 61, 16),\n  (10418, 74, 15),\n  (10419, 60, \n 60),\n  (10419, 69, 20),\n  (10420, 9, 20),\n  (10420, 13, 2),\n\n (10420, 70, 8),\n  (10420, 73, 20),\n  (10421, 19, 4),\n  (10421, 26, \n 30),\n  (10421, 53, 15),\n  (10421, 77, 10),\n  (10422, 26, 2),\n\n (10423, 31, 14),\n  (10423, 59, 20),\n  (10424, 35, 60),\n  (10424, 38, \n 49),\n  (10424, 68, 30),\n  (10425, 55, 10),\n  (10425, 76, 20),\n\n (10426, 56, 5),\n  (10426, 64, 7),\n  (10427, 14, 35),\n  (10428, 46, \n 20),\n  (10429, 50, 40),\n  (10429, 63, 35),\n  (10430, 17, 45),\n\n (10430, 21, 50),\n  (10430, 56, 30),\n  (10430, 59, 70),\n  (10431, 17, \n 50),\n  (10431, 40, 50),\n  (10431, 47, 30),\n  (10432, 26, 10),\n\n (10432, 54, 40),\n  (10433, 56, 28),\n  (10434, 11, 6),\n  (10434, 76, \n 18),\n  (10435, 2, 10),\n  (10435, 22, 12),\n  (10435, 72, 10),\n\n (10436, 46, 5),\n  (10436, 56, 40),\n  (10436, 64, 30),\n  (10436, 75, \n 24),\n  (10437, 53, 15),\n  (10438, 19, 15),\n  (10438, 34, 20),\n\n (10438, 57, 15),\n  (10439, 12, 15),\n  (10439, 16, 16),\n  (10439, 64, \n 6),\n  (10439, 74, 30),\n  (10440, 2, 45),\n  (10440, 16, 49),\n\n (10440, 29, 24),\n  (10440, 61, 90),\n  (10441, 27, 50),\n  (10442, 11, \n 30),\n  (10442, 54, 80),\n  (10442, 66, 60),\n  (10443, 11, 6),\n\n (10443, 28, 12),\n  (10444, 17, 10),\n  (10444, 26, 15),\n  (10444, 35, \n 8),\n  (10444, 41, 30),\n  (10445, 39, 6),\n  (10445, 54, 15),\n\n (10446, 19, 12),\n  (10446, 24, 20),\n  (10446, 31, 3),\n  (10446, 52, \n 15),\n  (10447, 19, 40),\n  (10447, 65, 35),\n  (10447, 71, 2),\n\n (10448, 26, 6),\n  (10448, 40, 20),\n  (10449, 10, 14),\n  (10449, 52, \n 20),\n  (10449, 62, 35),\n  (10450, 10, 20),\n  (10450, 54, 6),\n\n (10451, 55, 120),\n  (10451, 64, 35),\n  (10451, 65, 28),\n  (10451, 77, \n 55),\n  (10452, 28, 15),\n  (10452, 44, 100),\n  (10453, 48, 15),\n\n (10453, 70, 25),\n  (10454, 16, 20),\n  (10454, 33, 20),\n  (10454, 46, \n 10),\n  (10455, 39, 20),\n  (10455, 53, 50),\n  (10455, 61, 25),\n\n (10455, 71, 30),\n  (10456, 21, 40),\n  (10456, 49, 21),\n\n  (10457, 59, \n 36),\n  (10458, 26, 30),\n  (10458, 28, 30),\n  (10458, 43, 20),\n\n (10458, 56, 15),\n  (10458, 71, 50),\n  (10459, 7, 16),\n  (10459, 46, \n 20),\n  (10459, 72, 40),\n  (10460, 68, 21),\n  (10460, 75, 4),\n\n (10461, 21, 40),\n  (10461, 30, 28),\n  (10461, 55, 60),\n  (10462, 13, \n 1),\n  (10462, 23, 21),\n  (10463, 19, 21),\n  (10463, 42, 50),\n\n (10464, 4, 16),\n  (10464, 43, 3),\n  (10464, 56, 30),\n  (10464, 60, \n 20),\n  (10465, 24, 25),\n  (10465, 29, 18),\n  (10465, 40, 20),\n\n (10465, 45, 30),\n  (10465, 50, 25),\n  (10466, 11, 10),\n  (10466, 46, \n 5),\n  (10467, 24, 28),\n  (10467, 25, 12),\n  (10468, 30, 8),\n\n (10468, 43, 15),\n  (10469, 2, 40),\n  (10469, 16, 35),\n  (10469, 44, \n 2),\n  (10470, 18, 30),\n  (10470, 23, 15),\n  (10470, 64, 8),\n\n (10471, 7, 30),\n  (10471, 56, 20),\n  (10472, 24, 80),\n  (10472, 51, \n 18),\n  (10473, 33, 12),\n  (10473, 71, 12),\n  (10474, 14, 12),\n\n (10474, 28, 18),\n  (10474, 40, 21),\n  (10474, 75, 10),\n  (10475, 31, \n 35),\n  (10475, 66, 60),\n  (10475, 76, 42),\n  (10476, 55, 2),\n\n (10476, 70, 12),\n  (10477, 1, 15),\n  (10477, 21, 21),\n  (10477, 39, \n 20),\n  (10478, 10, 20),\n  (10479, 38, 30),\n  (10479, 53, 28),\n\n (10479, 59, 60),\n  (10479, 64, 30),\n  (10480, 47, 30),\n  (10480, 59, \n 12),\n  (10481, 49, 24),\n  (10481, 60, 40),\n  (10482, 40, 10),\n\n (10483, 34, 35),\n  (10483, 77, 30),\n  (10484, 21, 14),\n  (10484, 40, \n 10),\n  (10484, 51, 3),\n  (10485, 2, 20),\n  (10485, 3, 20),\n  (10485, \n 55, 30),\n  (10485, 70, 60),\n  (10486, 11, 5),\n  (10486, 51, 25),\n\n (10486, 74, 16),\n  (10487, 19, 5),\n  (10487, 26, 30),\n  (10487, 54, \n 24),\n  (10488, 59, 30),\n  (10488, 73, 20),\n  (10489, 11, 15),\n\n (10489, 16, 18),\n  (10490, 59, 60),\n  (10490, 68, 30),\n  (10490, 75, \n 36),\n  (10491, 44, 15),\n  (10491, 77, 7),\n  (10492, 25, 60),\n\n (10492, 42, 20),\n  (10493, 65, 15),\n  (10493, 66, 10),\n  (10493, 69, \n 10),\n  (10494, 56, 30),\n  (10495, 23, 10),\n  (10495, 41, 20),\n\n (10495, 77, 5),\n  (10496, 31, 20),\n  (10497, 56, 14),\n  (10497, 72, \n 25),\n  (10497, 77, 25),\n  (10498, 24, 14),\n  (10498, 40, 5),\n\n (10498, 42, 30),\n  (10499, 28, 20),\n  (10499, 49, 25),\n  (10500, 15, \n 12),\n  (10500, 28, 8),\n  (10501, 54, 20),\n  (10502, 45, 21),\n\n (10502, 53, 6),\n  (10502, 67, 30),\n  (10503, 14, 70),\n  (10503, 65, \n 20),\n  (10504, 2, 12),\n  (10504, 21, 12),\n  (10504, 53, 10),\n\n (10504, 61, 25),\n  (10505, 62, 3),\n  (10506, 25, 18),\n  (10506, 70, \n 14),\n  (10507, 43, 15),\n  (10507, 48, 15),\n  (10508, 13, 10),\n\n (10508, 39, 10),\n  (10509, 28, 3),\n  (10510, 29, 36),\n  (10510, 75, \n 36),\n  (10511, 4, 50),\n  (10511, 7, 50),\n  (10511, 8, 10),\n  (10512, \n 24, 10),\n  (10512, 46, 9),\n  (10512, 47, 6),\n  (10512, 60, 12),\n\n (10513, 21, 40),\n  (10513, 32, 50),\n  (10513, 61, 15),\n  (10514, 20, \n 39),\n  (10514, 28, 35),\n  (10514, 56, 70),\n  (10514, 65, 39),\n\n (10514, 75, 50),\n  (10515, 9, 16),\n  (10515, 16, 50),\n  (10515, 27, \n 120),\n  (10515, 33, 16),\n  (10515, 60, 84),\n  (10516, 18, 25),\n\n (10516, 41, 80),\n  (10516, 42, 20),\n  (10517, 52, 6),\n  (10517, 59, \n 4),\n  (10517, 70, 6),\n  (10518, 24, 5),\n  (10518, 38, 15),\n  (10518, \n 44, 9),\n  (10519, 10, 16),\n  (10519, 56, 40),\n  (10519, 60, 10),\n\n (10520, 24, 8),\n  (10520, 53, 5),\n  (10521, 35, 3),\n  (10521, 41, \n 10),\n  (10521, 68, 6),\n  (10522, 1, 40),\n  (10522, 8, 24),\n  (10522, \n 30, 20),\n  (10522, 40, 25),\n  (10523, 17, 25),\n  (10523, 20, 15),\n\n (10523, 37, 18),\n  (10523, 41, 6),\n  (10524, 10, 2),\n  (10524, 30, \n 10),\n  (10524, 43, 60),\n  (10524, 54, 15),\n  (10525, 36, 30),\n\n (10525, 40, 15),\n  (10526, 1, 8),\n  (10526, 13, 10),\n  (10526, 56, \n 30),\n  (10527, 4, 50),\n  (10527, 36, 30),\n  (10528, 11, 3),\n\n (10528, 33, 8),\n  (10528, 72, 9),\n  (10529, 55, 14),\n  (10529, 68, \n 20),\n  (10529, 69, 10),\n  (10530, 17, 40),\n  (10530, 43, 25),\n\n (10530, 61, 20),\n  (10530, 76, 50),\n  (10531, 59, 2),\n  (10532, 30, \n 15),\n  (10532, 66, 24),\n  (10533, 4, 50),\n  (10533, 72, 24),\n\n (10533, 73, 24),\n  (10534, 30, 10),\n  (10534, 40, 10),\n  (10534, 54, \n 10),\n  (10535, 11, 50),\n  (10535, 40, 10),\n  (10535, 57, 5),\n\n (10535, 59, 15),\n  (10536, 12, 15),\n  (10536, 31, 20),\n  (10536, 33, \n 30),\n  (10536, 60, 35),\n  (10537, 31, 30),\n  (10537, 51, 6),\n\n (10537, 58, 20),\n  (10537, 72, 21),\n  (10537, 73, 9),\n  (10538, 70, \n 7),\n  (10538, 72, 1),\n  (10539, 13, 8),\n  (10539, 21, 15),\n  (10539, \n 33, 15),\n  (10539, 49, 6),\n  (10540, 3, 60),\n  (10540, 26, 40),\n\n (10540, 38, 30),\n  (10540, 68, 35),\n  (10541, 24, 35),\n  (10541, 38, \n 4),\n  (10541, 65, 36),\n  (10541, 71, 9),\n  (10542, 11, 15),\n\n (10542, 54, 24),\n  (10543, 12, 30),\n  (10543, 23, 70),\n  (10544, 28, \n 7),\n  (10544, 67, 7),\n  (10545, 11, 10),\n  (10546, 7, 10),\n  (10546, \n 35, 30),\n  (10546, 62, 40),\n  (10547, 32, 24),\n  (10547, 36, 60),\n\n (10548, 34, 10),\n  (10548, 41, 14),\n  (10549, 31, 55),\n  (10549, 45, \n 100),\n  (10549, 51, 48),\n  (10550, 17, 8),\n  (10550, 19, 10),\n\n (10550, 21, 6),\n  (10550, 61, 10),\n  (10551, 16, 40),\n  (10551, 35, \n 20),\n  (10551, 44, 40),\n  (10552, 69, 18),\n  (10552, 75, 30),\n\n (10553, 11, 15),\n  (10553, 16, 14),\n  (10553, 22, 24),\n  (10553, 31, \n 30),\n  (10553, 35, 6),\n  (10554, 16, 30),\n  (10554, 23, 20),\n\n (10554, 62, 20),\n  (10554, 77, 10),\n  (10555, 14, 30),\n  (10555, 19, \n 35),\n  (10555, 24, 18),\n  (10555, 51, 20),\n  (10555, 56, 40),\n\n (10556, 72, 24),\n  (10557, 64, 30),\n  (10557, 75, 20),\n  (10558, 47, \n 25),\n  (10558, 51, 20),\n  (10558, 52, 30),\n  (10558, 53, 18),\n\n (10558, 73, 3),\n  (10559, 41, 12),\n  (10559, 55, 18),\n  (10560, 30, \n 20),\n  (10560, 62, 15),\n  (10561, 44, 10),\n  (10561, 51, 50),\n\n (10562, 33, 20),\n  (10562, 62, 10),\n  (10563, 36, 25),\n  (10563, 52, \n 70),\n  (10564, 17, 16),\n  (10564, 31, 6),\n  (10564, 55, 25),\n\n (10565, 24, 25),\n  (10565, 64, 18),\n  (10566, 11, 35),\n  (10566, 18, \n 18),\n  (10566, 76, 10),\n  (10567, 31, 60),\n  (10567, 51, 3),\n\n (10567, 59, 40),\n  (10568, 10, 5),\n  (10569, 31, 35),\n  (10569, 76, \n 30),\n  (10570, 11, 15),\n  (10570, 56, 60),\n  (10571, 14, 11),\n\n (10571, 42, 28),\n  (10572, 16, 12),\n  (10572, 32, 10),\n  (10572, 40, \n 50),\n  (10572, 75, 15),\n  (10573, 17, 18),\n  (10573, 34, 40),\n\n (10573, 53, 25),\n  (10574, 33, 14),\n  (10574, 40, 2),\n  (10574, 62, \n 10),\n  (10574, 64, 6),\n  (10575, 59, 12),\n  (10575, 63, 6),\n\n (10575, 72, 30),\n  (10575, 76, 10),\n  (10576, 1, 10),\n  (10576, 31, \n 20),\n  (10576, 44, 21),\n  (10577, 39, 10),\n  (10577, 75, 20),\n\n (10577, 77, 18),\n  (10578, 35, 20),\n  (10578, 57, 6),\n  (10579, 15, \n 10),\n  (10579, 75, 21),\n  (10580, 14, 15),\n  (10580, 41, 9),\n\n (10580, 65, 30),\n  (10581, 75, 50),\n  (10582, 57, 4),\n  (10582, 76, \n 14),\n  (10583, 29, 10),\n  (10583, 60, 24),\n  (10583, 69, 10),\n\n (10584, 31, 50),\n  (10585, 47, 15),\n  (10586, 52, 4),\n  (10587, 26, \n 6),\n  (10587, 35, 20),\n  (10587, 77, 20),\n  (10588, 18, 40),\n\n (10588, 42, 100),\n  (10589, 35, 4),\n  (10590, 1, 20),\n  (10590, 77, \n 60),\n  (10591, 3, 14),\n  (10591, 7, 10),\n  (10591, 54, 50),\n\n (10592, 15, 25),\n  (10592, 26, 5),\n  (10593, 20, 21),\n  (10593, 69, \n 20),\n  (10593, 76, 4),\n  (10594, 52, 24),\n  (10594, 58, 30),\n\n (10595, 35, 30),\n  (10595, 61, 120),\n  (10595, 69, 65),\n  (10596, 56, \n 5),\n  (10596, 63, 24),\n  (10596, 75, 30),\n  (10597, 24, 35),\n\n (10597, 57, 20),\n  (10597, 65, 12),\n  (10598, 27, 50),\n  (10598, 71, \n 9),\n  (10599, 62, 10),\n  (10600, 54, 4),\n  (10600, 73, 30),\n\n (10601, 13, 60),\n  (10601, 59, 35),\n  (10602, 77, 5),\n  (10603, 22, \n 48),\n  (10603, 49, 25),\n  (10604, 48, 6),\n  (10604, 76, 10),\n\n (10605, 16, 30),\n  (10605, 59, 20),\n  (10605, 60, 70),\n  (10605, 71, \n 15),\n  (10606, 4, 20),\n  (10606, 55, 20),\n  (10606, 62, 10),\n\n (10607, 7, 45),\n  (10607, 17, 100),\n  (10607, 33, 14),\n  (10607, 40, \n 42),\n  (10607, 72, 12),\n  (10608, 56, 28),\n  (10609, 1, 3),\n\n (10609, 10, 10),\n  (10609, 21, 6),\n  (10610, 36, 21),\n  (10611, 1, \n 6),\n  (10611, 2, 10),\n  (10611, 60, 15),\n  (10612, 10, 70),\n\n (10612, 36, 55),\n  (10612, 49, 18),\n  (10612, 60, 40),\n  (10612, 76, \n 80),\n  (10613, 13, 8),\n  (10613, 75, 40),\n  (10614, 11, 14),\n\n (10614, 21, 8),\n  (10614, 39, 5),\n  (10615, 55, 5),\n  (10616, 38, \n 15),\n  (10616, 56, 14),\n  (10616, 70, 15),\n  (10616, 71, 15),\n\n (10617, 59, 30),\n  (10618, 6, 70),\n  (10618, 56, 20),\n  (10618, 68, \n 15),\n  (10619, 21, 42),\n  (10619, 22, 40),\n  (10620, 24, 5),\n\n (10620, 52, 5),\n  (10621, 19, 5),\n  (10621, 23, 10),\n  (10621, 70, \n 20),\n  (10621, 71, 15),\n  (10622, 2, 20),\n  (10622, 68, 18),\n\n (10623, 14, 21),\n  (10623, 19, 15),\n  (10623, 21, 25),\n  (10623, 24, \n 3),\n  (10623, 35, 30),\n  (10624, 28, 10),\n  (10624, 29, 6),\n\n (10624, 44, 10),\n  (10625, 14, 3),\n  (10625, 42, 5),\n  (10625, 60, \n 10),\n  (10626, 53, 12),\n  (10626, 60, 20),\n  (10626, 71, 20),\n\n (10627, 62, 15),\n  (10627, 73, 35),\n  (10628, 1, 25),\n  (10629, 29, \n 20),\n  (10629, 64, 9),\n  (10630, 55, 12),\n  (10630, 76, 35),\n\n (10631, 75, 8),\n  (10632, 2, 30),\n  (10632, 33, 20),\n  (10633, 12, \n 36),\n  (10633, 13, 13),\n  (10633, 26, 35),\n  (10633, 62, 80),\n\n (10634, 7, 35),\n  (10634, 18, 50),\n  (10634, 51, 15),\n  (10634, 75, \n 2),\n  (10635, 4, 10),\n  (10635, 5, 15),\n  (10635, 22, 40),\n  (10636, \n 4, 25),\n  (10636, 58, 6),\n  (10637, 11, 10),\n  (10637, 50, 25),\n\n (10637, 56, 60),\n  (10638, 45, 20),\n  (10638, 65, 21),\n  (10638, 72, \n 60),\n  (10639, 18, 8),\n  (10640, 69, 20),\n  (10640, 70, 15),\n\n (10641, 2, 50),\n  (10641, 40, 60),\n  (10642, 21, 30),\n  (10642, 61, \n 20),\n  (10643, 28, 15),\n  (10643, 39, 21),\n  (10643, 46, 2),\n\n (10644, 18, 4),\n  (10644, 43, 20),\n  (10644, 46, 21),\n  (10645, 18, \n 20),\n  (10645, 36, 15),\n  (10646, 1, 15),\n  (10646, 10, 18),\n\n (10646, 71, 30),\n  (10646, 77, 35),\n  (10647, 19, 30),\n  (10647, 39, \n 20),\n  (10648, 22, 15),\n  (10648, 24, 15),\n  (10649, 28, 20),\n\n (10649, 72, 15),\n  (10650, 30, 30),\n  (10650, 53, 25),\n  (10650, 54, \n 30),\n  (10651, 19, 12),\n  (10651, 22, 20),\n  (10652, 30, 2),\n\n (10652, 42, 20),\n  (10653, 16, 30),\n  (10653, 60, 20),\n  (10654, 4, \n 12),\n  (10654, 39, 20),\n  (10654, 54, 6),\n  (10655, 41, 20),\n\n (10656, 14, 3),\n  (10656, 44, 28),\n  (10656, 47, 6),\n  (10657, 15, \n 50),\n  (10657, 41, 24),\n  (10657, 46, 45),\n  (10657, 47, 10),\n\n (10657, 56, 45),\n  (10657, 60, 30),\n  (10658, 21, 60),\n  (10658, 40, \n 70),\n  (10658, 60, 55),\n  (10658, 77, 70),\n  (10659, 31, 20),\n\n (10659, 40, 24),\n  (10659, 70, 40),\n  (10660, 20, 21),\n  (10661, 39, \n 3),\n  (10661, 58, 49),\n  (10662, 68, 10),\n  (10663, 40, 30),\n\n (10663, 42, 30),\n  (10663, 51, 20),\n  (10664, 10, 24),\n  (10664, 56, \n 12),\n  (10664, 65, 15),\n  (10665, 51, 20),\n  (10665, 59, 1),\n\n (10665, 76, 10),\n  (10666, 29, 36),\n  (10666, 65, 10),\n  (10667, 69, \n 45),\n  (10667, 71, 14),\n  (10668, 31, 8),\n  (10668, 55, 4),\n\n (10668, 64, 15),\n  (10669, 36, 30),\n  (10670, 23, 32),\n  (10670, 46, \n 60),\n  (10670, 67, 25),\n  (10670, 73, 50),\n  (10670, 75, 25),\n\n (10671, 16, 10),\n  (10671, 62, 10),\n  (10671, 65, 12),\n  (10672, 38, \n 15),\n  (10672, 71, 12),\n  (10673, 16, 3),\n  (10673, 42, 6),\n\n (10673, 43, 6),\n  (10674, 23, 5),\n  (10675, 14, 30),\n  (10675, 53, \n 10),\n  (10675, 58, 30),\n  (10676, 10, 2),\n  (10676, 19, 7),\n\n (10676, 44, 21),\n  (10677, 26, 30),\n  (10677, 33, 8),\n  (10678, 12, \n 100),\n  (10678, 33, 30),\n  (10678, 41, 120),\n  (10678, 54, 30),\n\n (10679, 59, 12),\n  (10680, 16, 50),\n  (10680, 31, 20),\n  (10680, 42, \n 40),\n  (10681, 19, 30),\n  (10681, 21, 12),\n  (10681, 64, 28),\n\n (10682, 33, 30),\n  (10682, 66, 4),\n  (10682, 75, 30),\n  (10683, 52, \n 9),\n  (10684, 40, 20),\n  (10684, 47, 40),\n  (10684, 60, 30),\n\n (10685, 10, 20),\n  (10685, 41, 4),\n  (10685, 47, 15),\n  (10686, 17, \n 30),\n  (10686, 26, 15),\n  (10687, 9, 50),\n  (10687, 29, 10),\n\n (10687, 36, 6),\n  (10688, 10, 18),\n  (10688, 28, 60),\n  (10688, 34, \n 14),\n  (10689, 1, 35),\n  (10690, 56, 20),\n  (10690, 77, 30),\n\n (10691, 1, 30),\n  (10691, 29, 40),\n  (10691, 43, 40),\n  (10691, 44, \n 24),\n  (10691, 62, 48),\n  (10692, 63, 20),\n  (10693, 9, 6),\n\n (10693, 54, 60),\n  (10693, 69, 30),\n  (10693, 73, 15),\n  (10694, 7, \n 90),\n  (10694, 59, 25),\n  (10694, 70, 50),\n  (10695, 8, 10),\n\n (10695, 12, 4),\n  (10695, 24, 20),\n  (10696, 17, 20),\n  (10696, 46, \n 18),\n  (10697, 19, 7),\n  (10697, 35, 9),\n  (10697, 58, 30),\n\n (10697, 70, 30),\n  (10698, 11, 15),\n  (10698, 17, 8),\n  (10698, 29, \n 12),\n  (10698, 65, 65),\n  (10698, 70, 8),\n  (10699, 47, 12),\n\n (10700, 1, 5),\n  (10700, 34, 12),\n  (10700, 68, 40),\n  (10700, 71, \n 60),\n  (10701, 59, 42),\n  (10701, 71, 20),\n  (10701, 76, 35),\n\n (10702, 3, 6),\n  (10702, 76, 15),\n  (10703, 2, 5),\n  (10703, 59, 35),\n\n (10703, 73, 35),\n  (10704, 4, 6),\n  (10704, 24, 35),\n  (10704, 48, \n 24),\n  (10705, 31, 20),\n  (10705, 32, 4),\n  (10706, 16, 20),\n\n (10706, 43, 24),\n  (10706, 59, 8),\n  (10707, 55, 21),\n  (10707, 57, \n 40),\n  (10707, 70, 28),\n  (10708, 5, 4),\n  (10708, 36, 5),\n  (10709, \n 8, 40),\n  (10709, 51, 28),\n  (10709, 60, 10),\n  (10710, 19, 5),\n\n (10710, 47, 5),\n  (10711, 19, 12),\n  (10711, 41, 42),\n  (10711, 53, \n 120),\n  (10712, 53, 3),\n  (10712, 56, 30),\n  (10713, 10, 18),\n\n (10713, 26, 30),\n  (10713, 45, 110),\n  (10713, 46, 24),\n  (10714, 2, \n 30),\n  (10714, 17, 27),\n  (10714, 47, 50),\n  (10714, 56, 18),\n\n (10714, 58, 12),\n  (10715, 10, 21),\n  (10715, 71, 30),\n  (10716, 21, \n 5),\n  (10716, 51, 7),\n  (10716, 61, 10),\n  (10717, 21, 32),\n\n (10717, 54, 15),\n  (10717, 69, 25),\n  (10718, 12, 36),\n  (10718, 16, \n 20),\n  (10718, 36, 40),\n  (10718, 62, 20),\n  (10719, 18, 12),\n\n (10719, 30, 3),\n  (10719, 54, 40),\n  (10720, 35, 21),\n  (10720, 71, \n 8),\n  (10721, 44, 50),\n  (10722, 2, 3),\n  (10722, 31, 50),\n  (10722, \n 68, 45),\n  (10722, 75, 42),\n  (10723, 26, 15),\n  (10724, 10, 16),\n\n (10724, 61, 5),\n  (10725, 41, 12),\n  (10725, 52, 4),\n  (10725, 55, \n 6),\n  (10726, 4, 25),\n  (10726, 11, 5),\n  (10727, 17, 20),\n  (10727, \n 56, 10),\n  (10727, 59, 10),\n  (10728, 30, 15),\n  (10728, 40, 6),\n\n (10728, 55, 12),\n  (10728, 60, 15),\n  (10729, 1, 50),\n  (10729, 21, \n 30),\n  (10729, 50, 40),\n  (10730, 16, 15),\n  (10730, 31, 3),\n\n (10730, 65, 10),\n  (10731, 21, 40),\n  (10731, 51, 30),\n  (10732, 76, \n 20),\n  (10733, 14, 16),\n  (10733, 28, 20),\n  (10733, 52, 25),\n\n (10734, 6, 30),\n  (10734, 30, 15),\n  (10734, 76, 20),\n  (10735, 61, \n 20),\n  (10735, 77, 2),\n  (10736, 65, 40),\n  (10736, 75, 20),\n\n (10737, 13, 4),\n  (10737, 41, 12),\n  (10738, 16, 3),\n  (10739, 36, \n 6),\n  (10739, 52, 18),\n  (10740, 28, 5),\n  (10740, 35, 35),\n\n (10740, 45, 40),\n  (10740, 56, 14),\n  (10741, 2, 15),\n  (10742, 3, \n 20),\n  (10742, 60, 50),\n  (10742, 72, 35),\n  (10743, 46, 28),\n\n (10744, 40, 50),\n  (10745, 18, 24),\n  (10745, 44, 16),\n  (10745, 59, \n 45),\n  (10745, 72, 7),\n  (10746, 13, 6),\n  (10746, 42, 28),\n\n (10746, 62, 9),\n  (10746, 69, 40),\n  (10747, 31, 8),\n  (10747, 41, \n 35),\n  (10747, 63, 9),\n  (10747, 69, 30),\n  (10748, 23, 44),\n\n (10748, 40, 40),\n  (10748, 56, 28),\n  (10749, 56, 15),\n  (10749, 59, \n 6),\n  (10749, 76, 10),\n  (10750, 14, 5),\n  (10750, 45, 40),\n\n (10750, 59, 25),\n  (10751, 26, 12),\n  (10751, 30, 30),\n  (10751, 50, \n 20),\n  (10751, 73, 15),\n  (10752, 1, 8),\n  (10752, 69, 3),\n  (10753, \n 45, 4),\n  (10753, 74, 5),\n  (10754, 40, 3),\n  (10755, 47, 30),\n\n (10755, 56, 30),\n  (10755, 57, 14),\n  (10755, 69, 25),\n  (10756, 18, \n 21),\n  (10756, 36, 20),\n  (10756, 68, 6),\n  (10756, 69, 20),\n\n (10757, 34, 30),\n  (10757, 59, 7),\n  (10757, 62, 30),\n  (10757, 64, \n 24),\n  (10758, 26, 20),\n  (10758, 52, 60),\n  (10758, 70, 40),\n\n (10759, 32, 10),\n  (10760, 25, 12),\n  (10760, 27, 40),\n  (10760, 43, \n 30),\n  (10761, 25, 35),\n  (10761, 75, 18),\n  (10762, 39, 16),\n\n (10762, 47, 30),\n  (10762, 51, 28),\n  (10762, 56, 60),\n  (10763, 21, \n 40),\n  (10763, 22, 6),\n  (10763, 24, 20),\n  (10764, 3, 20),\n\n (10764, 39, 130),\n  (10765, 65, 80),\n  (10766, 2, 40),\n  (10766, 7, \n 35),\n  (10766, 68, 40),\n  (10767, 42, 2),\n  (10768, 22, 4),\n\n (10768, 31, 50),\n  (10768, 60, 15),\n  (10768, 71, 12),\n  (10769, 41, \n 30),\n  (10769, 52, 15),\n  (10769, 61, 20),\n  (10769, 62, 15),\n\n (10770, 11, 15),\n  (10771, 71, 16),\n  (10772, 29, 18),\n  (10772, 59, \n 25),\n  (10773, 17, 33),\n  (10773, 31, 70),\n  (10773, 75, 7),\n\n (10774, 31, 2),\n  (10774, 66, 50),\n  (10775, 10, 6),\n  (10775, 67, \n 3),\n  (10776, 31, 16),\n  (10776, 42, 12),\n  (10776, 45, 27),\n\n (10776, 51, 120),\n  (10777, 42, 20),\n  (10778, 41, 10),\n  (10779, 16, \n 20),\n  (10779, 62, 20),\n  (10780, 70, 35),\n  (10780, 77, 15),\n\n (10781, 54, 3),\n  (10781, 56, 20),\n  (10781, 74, 35),\n  (10782, 31, \n 1),\n  (10783, 31, 10),\n  (10783, 38, 5),\n  (10784, 36, 30),\n\n (10784, 39, 2),\n  (10784, 72, 30),\n  (10785, 10, 10),\n  (10785, 75, \n 10),\n  (10786, 8, 30),\n  (10786, 30, 15),\n  (10786, 75, 42),\n\n (10787, 2, 15),\n  (10787, 29, 20),\n  (10788, 19, 50),\n  (10788, 75, \n 40),\n  (10789, 18, 30),\n  (10789, 35, 15),\n  (10789, 63, 30),\n\n (10789, 68, 18),\n  (10790, 7, 3),\n  (10790, 56, 20),\n  (10791, 29, \n 14),\n  (10791, 41, 20),\n  (10792, 2, 10),\n  (10792, 54, 3),\n\n (10792, 68, 15),\n  (10793, 41, 14),\n  (10793, 52, 8),\n  (10794, 14, \n 15),\n  (10794, 54, 6),\n  (10795, 16, 65),\n  (10795, 17, 35),\n\n (10796, 26, 21),\n  (10796, 44, 10),\n  (10796, 64, 35),\n  (10796, 69, \n 24),\n  (10797, 11, 20),\n  (10798, 62, 2),\n  (10798, 72, 10),\n\n (10799, 13, 20),\n  (10799, 24, 20),\n  (10799, 59, 25),\n  (10800, 11, \n 50),\n  (10800, 51, 10),\n  (10800, 54, 7),\n  (10801, 17, 40),\n\n (10801, 29, 20),\n  (10802, 30, 25),\n  (10802, 51, 30),\n  (10802, 55, \n 60),\n  (10802, 62, 5),\n  (10803, 19, 24),\n  (10803, 25, 15),\n\n (10803, 59, 15),\n  (10804, 10, 36),\n  (10804, 28, 24),\n  (10804, 49, \n 4),\n  (10805, 34, 10),\n  (10805, 38, 10),\n  (10806, 2, 20),\n\n (10806, 65, 2),\n  (10806, 74, 15),\n  (10807, 40, 1),\n  (10808, 56, \n 20),\n  (10808, 76, 50),\n  (10809, 52, 20),\n  (10810, 13, 7),\n\n (10810, 25, 5),\n  (10810, 70, 5),\n  (10811, 19, 15),\n  (10811, 23, \n 18),\n  (10811, 40, 30),\n  (10812, 31, 16),\n  (10812, 72, 40),\n\n (10812, 77, 20),\n  (10813, 2, 12),\n  (10813, 46, 35),\n  (10814, 41, \n 20),\n  (10814, 43, 20),\n  (10814, 48, 8),\n  (10814, 61, 30),\n\n (10815, 33, 16),\n  (10816, 38, 30),\n  (10816, 62, 20),\n  (10817, 26, \n 40),\n  (10817, 38, 30),\n  (10817, 40, 60),\n  (10817, 62, 25),\n\n (10818, 32, 20),\n  (10818, 41, 20),\n  (10819, 43, 7),\n  (10819, 75, \n 20),\n  (10820, 56, 30),\n  (10821, 35, 20),\n  (10821, 51, 6),\n\n (10822, 62, 3),\n  (10822, 70, 6),\n  (10823, 11, 20),\n  (10823, 57, \n 15),\n  (10823, 59, 40),\n  (10823, 77, 15),\n  (10824, 41, 12),\n\n (10824, 70, 9),\n  (10825, 26, 12),\n  (10825, 53, 20),\n  (10826, 31, \n 35),\n  (10826, 57, 15),\n  (10827, 10, 15),\n  (10827, 39, 21),\n\n (10828, 20, 5),\n  (10828, 38, 2),\n  (10829, 2, 10),\n  (10829, 8, 20),\n\n (10829, 13, 10),\n  (10829, 60, 21),\n  (10830, 6, 6),\n  (10830, 39, \n 28),\n  (10830, 60, 30),\n  (10830, 68, 24),\n  (10831, 19, 2),\n\n (10831, 35, 8),\n  (10831, 38, 8),\n  (10831, 43, 9),\n  (10832, 13, 3),\n\n (10832, 25, 10),\n  (10832, 44, 16),\n  (10832, 64, 3),\n  (10833, 7, \n 20),\n  (10833, 31, 9),\n  (10833, 53, 9),\n  (10834, 29, 8),\n  (10834, \n 30, 20),\n  (10835, 59, 15),\n  (10835, 77, 2),\n  (10836, 22, 52),\n\n (10836, 35, 6),\n  (10836, 57, 24),\n  (10836, 60, 60),\n  (10836, 64, \n 30),\n  (10837, 13, 6),\n  (10837, 40, 25),\n  (10837, 47, 40),\n\n (10837, 76, 21),\n  (10838, 1, 4),\n  (10838, 18, 25),\n  (10838, 36, \n 50),\n  (10839, 58, 30),\n  (10839, 72, 15),\n  (10840, 25, 6),\n\n (10840, 39, 10),\n  (10841, 10, 16),\n  (10841, 56, 30),\n  (10841, 59, \n 50),\n  (10841, 77, 15),\n  (10842, 11, 15),\n  (10842, 43, 5),\n\n (10842, 68, 20),\n  (10842, 70, 12),\n  (10843, 51, 4),\n  (10844, 22, \n 35),\n  (10845, 23, 70),\n  (10845, 35, 25),\n  (10845, 42, 42),\n\n (10845, 58, 60),\n  (10845, 64, 48),\n  (10846, 4, 21),\n  (10846, 70, \n 30),\n  (10846, 74, 20),\n  (10847, 1, 80),\n  (10847, 19, 12),\n\n (10847, 37, 60),\n  (10847, 45, 36),\n  (10847, 60, 45),\n  (10847, 71, \n 55),\n  (10848, 5, 30),\n  (10848, 9, 3),\n  (10849, 3, 49),\n  (10849, \n 26, 18),\n  (10850, 25, 20),\n  (10850, 33, 4),\n  (10850, 70, 30),\n\n (10851, 2, 5),\n  (10851, 25, 10),\n  (10851, 57, 10),\n  (10851, 59, \n 42),\n  (10852, 2, 15),\n  (10852, 17, 6),\n  (10852, 62, 50),\n\n (10853, 18, 10),\n  (10854, 10, 100),\n  (10854, 13, 65),\n  (10855, 16, \n 50),\n  (10855, 31, 14),\n  (10855, 56, 24),\n  (10855, 65, 15),\n\n (10856, 2, 20),\n  (10856, 42, 20),\n  (10857, 3, 30),\n  (10857, 26, \n 35),\n  (10857, 29, 10),\n  (10858, 7, 5),\n  (10858, 27, 10),\n\n (10858, 70, 4),\n  (10859, 24, 40),\n  (10859, 54, 35),\n  (10859, 64, \n 30),\n  (10860, 51, 3),\n  (10860, 76, 20),\n  (10861, 17, 42),\n\n (10861, 18, 20),\n  (10861, 21, 40),\n  (10861, 33, 35),\n  (10861, 62, \n 3),\n  (10862, 11, 25),\n  (10862, 52, 8),\n  (10863, 1, 20),\n  (10863, \n 58, 12),\n  (10864, 35, 4),\n  (10864, 67, 15),\n  (10865, 38, 60),\n\n (10865, 39, 80),\n  (10866, 2, 21),\n  (10866, 24, 6),\n  (10866, 30, \n 40),\n  (10867, 53, 3),\n  (10868, 26, 20),\n  (10868, 35, 30),\n\n (10868, 49, 42),\n  (10869, 1, 40),\n  (10869, 11, 10),\n  (10869, 23, \n 50),\n  (10869, 68, 20),\n  (10870, 35, 3),\n  (10870, 51, 2),\n\n (10871, 6, 50),\n  (10871, 16, 12),\n  (10871, 17, 16),\n  (10872, 55, \n 10),\n  (10872, 62, 20),\n  (10872, 64, 15),\n  (10872, 65, 21),\n\n (10873, 21, 20),\n  (10873, 28, 3),\n  (10874, 10, 10),\n  (10875, 19, \n 25),\n  (10875, 47, 21),\n  (10875, 49, 15),\n  (10876, 46, 21),\n\n (10876, 64, 20),\n  (10877, 16, 30),\n  (10877, 18, 25),\n  (10878, 20, \n 20),\n  (10879, 40, 12),\n  (10879, 65, 10),\n  (10879, 76, 10),\n\n (10880, 23, 30),\n  (10880, 61, 30),\n  (10880, 70, 50),\n  (10881, 73, \n 10),\n  (10882, 42, 25),\n  (10882, 49, 20),\n  (10882, 54, 32),\n\n (10883, 24, 8),\n  (10884, 21, 40),\n  (10884, 56, 21),\n  (10884, 65, \n 12),\n  (10885, 2, 20),\n  (10885, 24, 12),\n  (10885, 70, 30),\n\n (10885, 77, 25),\n  (10886, 10, 70),\n  (10886, 31, 35),\n  (10886, 77, \n 40),\n  (10887, 25, 5),\n  (10888, 2, 20),\n  (10888, 68, 18),\n\n (10889, 11, 40),\n  (10889, 38, 40),\n  (10890, 17, 15),\n  (10890, 34, \n 10),\n  (10890, 41, 14),\n  (10891, 30, 15),\n  (10892, 59, 40),\n\n (10893, 8, 30),\n  (10893, 24, 10),\n  (10893, 29, 24),\n  (10893, 30, \n 35),\n  (10893, 36, 20),\n  (10894, 13, 28),\n  (10894, 69, 50),\n\n (10894, 75, 120),\n  (10895, 24, 110),\n  (10895, 39, 45),\n  (10895, \n 40, 91),\n  (10895, 60, 100),\n  (10896, 45, 15),\n  (10896, 56, 16),\n\n (10897, 29, 80),\n  (10897, 30, 36),\n  (10898, 13, 5),\n  (10899, 39, \n 8),\n  (10900, 70, 3),\n  (10901, 41, 30),\n  (10901, 71, 30),\n\n (10902, 55, 30),\n  (10902, 62, 6),\n  (10903, 13, 40),\n  (10903, 65, \n 21),\n  (10903, 68, 20),\n  (10904, 58, 15),\n  (10904, 62, 35),\n\n (10905, 1, 20),\n  (10906, 61, 15),\n  (10907, 75, 14),\n  (10908, 7, \n 20),\n  (10908, 52, 14),\n  (10909, 7, 12),\n  (10909, 16, 15),\n\n (10909, 41, 5),\n  (10910, 19, 12),\n  (10910, 49, 10),\n  (10910, 61, \n 5),\n  (10911, 1, 10),\n  (10911, 17, 12),\n  (10911, 67, 15),\n\n (10912, 11, 40),\n  (10912, 29, 60),\n  (10913, 4, 30),\n  (10913, 33, \n 40),\n  (10913, 58, 15),\n  (10914, 71, 25),\n  (10915, 17, 10),\n\n (10915, 33, 30),\n  (10915, 54, 10),\n  (10916, 16, 6),\n  (10916, 32, \n 6),\n  (10916, 57, 20),\n  (10917, 30, 1),\n  (10917, 60, 10),\n\n (10918, 1, 60),\n  (10918, 60, 25),\n  (10919, 16, 24),\n  (10919, 25, \n 24),\n  (10919, 40, 20),\n  (10920, 50, 24),\n  (10921, 35, 10),\n\n (10921, 63, 40),\n  (10922, 17, 15),\n  (10922, 24, 35),\n  (10923, 42, \n 10),\n  (10923, 43, 10),\n  (10923, 67, 24),\n  (10924, 10, 20),\n\n (10924, 28, 30),\n  (10924, 75, 6),\n  (10925, 36, 25),\n  (10925, 52, \n 12),\n  (10926, 11, 2),\n  (10926, 13, 10),\n  (10926, 19, 7),\n\n (10926, 72, 10),\n  (10927, 20, 5),\n  (10927, 52, 5),\n  (10927, 76, \n 20),\n  (10928, 47, 5),\n  (10928, 76, 5),\n  (10929, 21, 60),\n\n (10929, 75, 49),\n  (10929, 77, 15),\n  (10930, 21, 36),\n  (10930, 27, \n 25),\n  (10930, 55, 25),\n  (10930, 58, 30),\n  (10931, 13, 42),\n\n (10931, 57, 30),\n  (10932, 16, 30),\n  (10932, 62, 14),\n  (10932, 72, \n 16),\n  (10932, 75, 20),\n  (10933, 53, 2),\n  (10933, 61, 30),\n\n (10934, 6, 20),\n  (10935, 1, 21),\n  (10935, 18, 4),\n  (10935, 23, 8),\n\n (10936, 36, 30),\n  (10937, 28, 8),\n  (10937, 34, 20),\n  (10938, 13, \n 20),\n  (10938, 43, 24),\n  (10938, 60, 49),\n  (10938, 71, 35),\n\n (10939, 2, 10),\n  (10939, 67, 40),\n  (10940, 7, 8),\n  (10940, 13, \n 20),\n  (10941, 31, 44),\n  (10941, 62, 30),\n  (10941, 68, 80),\n\n (10941, 72, 50),\n  (10942, 49, 28),\n  (10943, 13, 15),\n  (10943, 22, \n 21),\n  (10943, 46, 15),\n  (10944, 11, 5),\n  (10944, 44, 18),\n\n (10944, 56, 18),\n  (10945, 13, 20),\n  (10945, 31, 10),\n  (10946, 10, \n 25),\n  (10946, 24, 25),\n  (10946, 77, 40),\n  (10947, 59, 4),\n\n (10948, 50, 9),\n  (10948, 51, 40),\n  (10948, 55, 4),\n  (10949, 6, \n 12),\n  (10949, 10, 30),\n  (10949, 17, 6),\n  (10949, 62, 60),\n\n (10950, 4, 5),\n  (10951, 33, 15),\n  (10951, 41, 6),\n  (10951, 75, \n 50),\n  (10952, 6, 16),\n  (10952, 28, 2),\n  (10953, 20, 50),\n\n (10953, 31, 50),\n  (10954, 16, 28),\n  (10954, 31, 25),\n  (10954, 45, \n 30),\n  (10954, 60, 24),\n  (10955, 75, 12),\n  (10956, 21, 12),\n\n (10956, 47, 14),\n  (10956, 51, 8),\n  (10957, 30, 30),\n  (10957, 35, \n 40),\n  (10957, 64, 8),\n  (10958, 5, 20),\n  (10958, 7, 6),\n  (10958, \n 72, 5),\n  (10959, 75, 20),\n  (10960, 24, 10),\n  (10960, 41, 24),\n\n (10961, 52, 6),\n  (10961, 76, 60),\n  (10962, 7, 45),\n  (10962, 13, \n 77),\n  (10962, 53, 20),\n  (10962, 69, 9),\n  (10962, 76, 44),\n\n (10963, 60, 2),\n  (10964, 18, 6),\n  (10964, 38, 5),\n  (10964, 69, \n 10),\n  (10965, 51, 16),\n  (10966, 37, 8),\n  (10966, 56, 12),\n\n (10966, 62, 12),\n  (10967, 19, 12),\n  (10967, 49, 40),\n  (10968, 12, \n 30),\n  (10968, 24, 30),\n  (10968, 64, 4),\n  (10969, 46, 9),\n\n (10970, 52, 40),\n  (10971, 29, 14),\n  (10972, 17, 6),\n  (10972, 33, \n 7),\n  (10973, 26, 5),\n  (10973, 41, 6),\n  (10973, 75, 10),\n  (10974, \n 63, 10),\n  (10975, 8, 16),\n  (10975, 75, 10),\n  (10976, 28, 20),\n\n (10977, 39, 30),\n  (10977, 47, 30),\n  (10977, 51, 10),\n  (10977, 63, \n 20),\n  (10978, 8, 20),\n  (10978, 21, 40),\n  (10978, 40, 10),\n\n (10978, 44, 6),\n  (10979, 7, 18),\n  (10979, 12, 20),\n  (10979, 24, \n 80),\n  (10979, 27, 30),\n  (10979, 31, 24),\n  (10979, 63, 35),\n\n (10980, 75, 40),\n  (10981, 38, 60),\n  (10982, 7, 20),\n  (10982, 43, \n 9),\n  (10983, 13, 84),\n  (10983, 57, 15),\n  (10984, 16, 55),\n\n (10984, 24, 20),\n  (10984, 36, 40),\n  (10985, 16, 36),\n  (10985, 18, \n 8),\n  (10985, 32, 35),\n  (10986, 11, 30),\n  (10986, 20, 15),\n\n (10986, 76, 10),\n  (10986, 77, 15),\n  (10987, 7, 60),\n  (10987, 43, \n 6),\n  (10987, 72, 20),\n  (10988, 7, 60),\n  (10988, 62, 40),\n\n (10989, 6, 40),\n  (10989, 11, 15),\n  (10989, 41, 4),\n  (10990, 21, \n 65),\n  (10990, 34, 60),\n  (10990, 55, 65),\n  (10990, 61, 66),\n\n (10991, 2, 50),\n  (10991, 70, 20),\n  (10991, 76, 90),\n  (10992, 72, \n 2),\n  (10993, 29, 50),\n  (10993, 41, 35),\n  (10994, 59, 18),\n\n (10995, 51, 20),\n  (10995, 60, 4),\n  (10996, 42, 40),\n  (10997, 32, \n 50),\n  (10997, 46, 20),\n  (10997, 52, 20),\n  (10998, 24, 12),\n\n (10998, 61, 7),\n  (10998, 74, 20),\n  (10998, 75, 30),\n  (10999, 41, \n 20),\n  (10999, 51, 15),\n  (10999, 77, 21),\n  (11000, 4, 25),\n\n (11000, 24, 30),\n  (11000, 77, 30),\n  (11001, 7, 60),\n  (11001, 22, \n 25),\n  (11001, 46, 25),\n  (11001, 55, 6),\n  (11002, 13, 56),\n\n (11002, 35, 15),\n  (11002, 42, 24),\n  (11002, 55, 40),\n  (11003, 1, \n 4),\n  (11003, 40, 10),\n  (11003, 52, 10),\n  (11004, 26, 6),\n\n (11004, 76, 6),\n  (11005, 1, 2),\n  (11005, 59, 10),\n  (11006, 1, 8),\n\n (11006, 29, 2),\n  (11007, 8, 30),\n  (11007, 29, 10),\n  (11007, 42, \n 14),\n  (11008, 28, 70),\n  (11008, 34, 90),\n  (11008, 71, 21),\n\n (11009, 24, 12),\n  (11009, 36, 18),\n  (11009, 60, 9),\n  (11010, 7, \n 20),\n  (11010, 24, 10),\n  (11011, 58, 40),\n  (11011, 71, 20),\n\n (11012, 19, 50),\n  (11012, 60, 36),\n  (11012, 71, 60),\n  (11013, 23, \n 10),\n  (11013, 42, 4),\n  (11013, 45, 20),\n  (11013, 68, 2),\n\n (11014, 41, 28),\n  (11015, 30, 15),\n  (11015, 77, 18),\n  (11016, 31, \n 15),\n  (11016, 36, 16),\n  (11017, 3, 25),\n  (11017, 59, 110),\n\n (11017, 70, 30),\n  (11018, 12, 20),\n  (11018, 18, 10),\n  (11018, 56, \n 5),\n  (11019, 46, 3),\n  (11019, 49, 2),\n  (11020, 10, 24),\n  (11021, \n 2, 11),\n  (11021, 20, 15),\n  (11021, 26, 63),\n  (11021, 51, 44),\n\n (11021, 72, 35),\n  (11022, 19, 35),\n  (11022, 69, 30),\n  (11023, 7, \n 4),\n  (11023, 43, 30),\n  (11024, 26, 12),\n  (11024, 33, 30),\n\n (11024, 65, 21),\n  (11024, 71, 50),\n  (11025, 1, 10),\n  (11025, 13, \n 20),\n  (11026, 18, 8),\n  (11026, 51, 10),\n  (11027, 24, 30),\n\n (11027, 62, 21),\n  (11028, 55, 35),\n  (11028, 59, 24),\n  (11029, 56, \n 20),\n  (11029, 63, 12),\n  (11030, 2, 100),\n  (11030, 5, 70),\n\n (11030, 29, 60),\n  (11030, 59, 100),\n  (11031, 1, 45),\n  (11031, 13, \n 80),\n  (11031, 24, 21),\n  (11031, 64, 20),\n  (11031, 71, 16),\n\n (11032, 36, 35),\n  (11032, 38, 25),\n  (11032, 59, 30),\n  (11033, 53, \n 70),\n  (11033, 69, 36),\n  (11034, 21, 15),\n  (11034, 44, 12),\n\n (11034, 61, 6),\n  (11035, 1, 10),\n  (11035, 35, 60),\n  (11035, 42, \n 30),\n  (11035, 54, 10),\n  (11036, 13, 7),\n  (11036, 59, 30),\n\n (11037, 70, 4),\n  (11038, 40, 5),\n  (11038, 52, 2),\n  (11038, 71, \n 30),\n  (11039, 28, 20),\n  (11039, 35, 24),\n  (11039, 49, 60),\n\n (11039, 57, 28),\n  (11040, 21, 20),\n  (11041, 2, 30),\n  (11041, 63, \n 30),\n  (11042, 44, 15),\n  (11042, 61, 4),\n  (11043, 11, 10),\n\n (11044, 62, 12),\n  (11045, 33, 15),\n  (11045, 51, 24),\n  (11046, 12, \n 20),\n  (11046, 32, 15),\n  (11046, 35, 18),\n  (11047, 1, 25),\n\n (11047, 5, 30),\n  (11048, 68, 42),\n  (11049, 2, 10),\n  (11049, 12, \n 4),\n  (11050, 76, 50),\n  (11051, 24, 10),\n  (11052, 43, 30),\n\n (11052, 61, 10),\n  (11053, 18, 35),\n  (11053, 32, 20),\n  (11053, 64, \n 25),\n  (11054, 33, 10),\n  (11054, 67, 20),\n  (11055, 24, 15),\n\n (11055, 25, 15),\n  (11055, 51, 20),\n  (11055, 57, 20),\n  (11056, 7, \n 40),\n  (11056, 55, 35),\n  (11056, 60, 50),\n  (11057, 70, 3),\n\n (11058, 21, 3),\n  (11058, 60, 21),\n  (11058, 61, 4),\n  (11059, 13, \n 30),\n  (11059, 17, 12),\n  (11059, 60, 35),\n  (11060, 60, 4),\n\n (11060, 77, 10),\n  (11061, 60, 15),\n  (11062, 53, 10),\n  (11062, 70, \n 12),\n  (11063, 34, 30),\n  (11063, 40, 40),\n  (11063, 41, 30),\n\n (11064, 17, 77),\n  (11064, 41, 12),\n  (11064, 53, 25),\n  (11064, 55, \n 4),\n  (11064, 68, 55),\n  (11065, 30, 4),\n  (11065, 54, 20),\n\n (11066, 16, 3),\n  (11066, 19, 42),\n  (11066, 34, 35),\n  (11067, 41, \n 9),\n  (11068, 28, 8),\n  (11068, 43, 36),\n  (11068, 77, 28),\n\n (11069, 39, 20),\n  (11070, 1, 40),\n  (11070, 2, 20),\n  (11070, 16, \n 30),\n  (11070, 31, 20),\n  (11071, 7, 15),\n  (11071, 13, 10),\n\n (11072, 2, 8),\n  (11072, 41, 40),\n  (11072, 50, 22),\n  (11072, 64, \n 130),\n  (11073, 11, 10),\n  (11073, 24, 20),\n  (11074, 16, 14),\n\n (11075, 2, 10),\n  (11075, 46, 30),\n  (11075, 76, 2),\n  (11076, 6, \n 20),\n  (11076, 14, 20),\n  (11076, 19, 10),\n  (11077, 2, 24),\n\n (11077, 3, 4),\n  (11077, 4, 1),\n  (11077, 6, 1),\n  (11077, 7, 1),\n\n (11077, 8, 2),\n  (11077, 10, 1),\n  (11077, 12, 2),\n  (11077, 13, 4),\n\n (11077, 14, 1),\n  (11077, 16, 2),\n  (11077, 20, 1),\n  (11077, 23, 2),\n\n (11077, 32, 1),\n  (11077, 39, 2),\n  (11077, 41, 3),\n  (11077, 46, 3),\n\n (11077, 52, 2),\n  (11077, 55, 2),\n  (11077, 60, 2),\n  (11077, 64, 2),\n\n (11077, 66, 1),\n  (11077, 73, 2),\n  (11077, 75, 4),\n  (11077, 77, 2);",
+                "language": "postgresql",
+                "heading": "INSERT INTO order_details",
+                "tryit_url": null
+            },
+            {
+                "code": "Result\n\n INSERT 0 2155",
+                "language": "postgresql",
+                "heading": "Result",
+                "tryit_url": null
+            },
+            {
+                "code": "CREATE TABLE testproducts\n\n CREATE TABLE testproducts (\n  testproduct_id SERIAL NOT NULL \n PRIMARY KEY,\n  product_name VARCHAR(255),\n  category_id \n INT\n);",
+                "language": "postgresql",
+                "heading": "CREATE TABLE testproducts",
+                "tryit_url": null
+            },
+            {
+                "code": "Result\n\n CREATE TABLE",
+                "language": "postgresql",
+                "heading": "Result",
+                "tryit_url": null
+            },
+            {
+                "code": "INSERT INTO testproducts\n\nINSERT INTO testproducts (product_name, category_id)\nVALUES\n\n  ('Johns Fruit Cake', 3),\n\n  ('Marys Healthy Mix', 9),\n\n  ('Peters Scary Stuff', 10),\n\n  ('Jims Secret Recipe', 11),\n\n  ('Elisabeths Best Apples', 12),\n\n  ('Janes Favorite Cheese', 4),\n\n  ('Billys Home Made Pizza', 13),\n\n  ('Ellas Special Salmon', 8),\n\n  ('Roberts Rich Spaghetti', 5),\n\n  ('Mias Popular Ice', 14);",
+                "language": "postgresql",
+                "heading": "INSERT INTO testproducts",
+                "tryit_url": null
+            },
+            {
+                "code": "Result\n\n INSERT 0 10",
+                "language": "postgresql",
+                "heading": "Result",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "PostgreSQL Home\nPostgreSQL Intro\nPostgreSQL Install\nPostgreSQL Get Started\nPostgreSQL pgAdmin 4",
+                "heading": "PostgreSQL Tutorial"
+            },
+            {
+                "content": "PostgreSQL CREATE TABLE\nPostgreSQL INSERT INTO\nPostgreSQL Fetch Data\nPostgreSQL ADD COLUMN\nPostgreSQL UPDATE\nPostgreSQL ALTER COLUMN\nPostgreSQL DROP COLUMN\nPostgreSQL DELETE\nPostgreSQL DROP TABLE\n\nCreate Demo Database",
+                "heading": "Database"
+            },
+            {
+                "content": "PostgreSQL Operators\nPostgreSQL SELECT\nPostgreSQL SELECT DISTINCT\nPostgreSQL WHERE\nPostgreSQL ORDER BY\nPostgreSQL LIMIT\nPostgreSQL MIN and MAX\nPostgreSQL COUNT\nPostgreSQL SUM\nPostgreSQL AVG\nPostgreSQL LIKE\nPostgreSQL IN\nPostgreSQL BETWEEN\nPostgreSQL AS\nPostgreSQL Joins\nPostgreSQL INNER JOIN\nPostgreSQL LEFT JOIN\nPostgreSQL RIGHT JOIN\nPostgreSQL FULL JOIN\nPostgreSQL CROSS JOIN\nPostgreSQL UNION\nPostgreSQL GROUP BY\nPostgreSQL HAVING\nPostgreSQL EXISTS\nPostgreSQL ANY\nPostgreSQL ALL\nPostgreSQL CASE",
+                "heading": "PostgreSQL Syntax"
+            },
+            {
+                "content": "PostgreSQL Certificate",
+                "heading": "PostgreSQL Cert"
+            },
+            {
+                "content": "Up until now in this tutorial we have worked with a very small and simple\ntable in our PostgreSQL database.\n\nNow we want to create more tables with more content to be able to demonstrate\nmore database features.\n\nWe will create these 6 tables in our PostgreSQL database:\n\ncategories\n\ncustomers\n\nproducts\n\norders\n\norder_details\n\ntestproducts\n\nBelow we have listed all the SQL statements you need to create those tables, with content.\n\nYou are not required to create the tables on your own system to continue with this tutorial,\nbut you might better understand how PostgreSQL and SQL statements work.\n\nMake sure you are connected to the database.\nIf not, follow the steps in the SQL Shell chapter of this tutorial.\n\nOnce you are connected, you are ready to write SQL statements!",
+                "heading": "Demo Database"
+            },
+            {
+                "content": "The following SQL statement will create a table named \ncategories:\n\nCREATE TABLE categories\n\nCREATE TABLE categories (\n  category_id SERIAL NOT NULL PRIMARY KEY,\n  category_name VARCHAR(255),\n  description VARCHAR(255)\n);\n\nResult\n\n CREATE TABLE\n\nThe following SQL statement will fill the \ncategories table with content:\n\nINSERT INTO categories\n\nINSERT INTO categories (category_name, description)\nVALUES\n  ('Beverages', 'Soft drinks, coffees, teas, beers, and ales'),\n  ('Condiments', 'Sweet and savory sauces, relishes, spreads, and seasonings'),\n  ('Confections', 'Desserts, candies, and sweet breads'),\n  ('Dairy Products', 'Cheeses'),\n  ('Grains/Cereals', 'Breads, crackers, pasta, and cereal'),\n  ('Meat/Poultry', 'Prepared meats'),\n  ('Produce', 'Dried fruit and bean curd'),\n\n ('Seafood', 'Seaweed and fish');\n\nResult\n\n INSERT 0 8\n\nThe result can also be seen here:\n\nDemo Database - categories",
+                "heading": "CATEGORIES"
+            },
+            {
+                "content": "The following SQL statement will create a table named \ncustomers:\n\nCREATE TABLE customers\n\n CREATE TABLE customers (\n  customer_id SERIAL NOT \n NULL PRIMARY KEY,\n  customer_name VARCHAR(255),\n\n contact_name VARCHAR(255),\n  address VARCHAR(255),\n\n city VARCHAR(255),\n  postal_code VARCHAR(255),\n  country \n VARCHAR(255)\n);\n\nResult\n\n CREATE TABLE\n\nThe following SQL statement will fill the \ncustomers table with content:\n\nINSERT INTO customers\n\n INSERT INTO customers (customer_name, contact_name, address, city, postal_code, country)\n\n VALUES\n  ('Alfreds Futterkiste', 'Maria Anders', 'Obere Str. \n 57', 'Berlin', '12209', 'Germany'),\n  ('Ana Trujillo Emparedados \n y helados', 'Ana Trujillo', 'Avda. de la Constitucion 2222', 'Mexico \n D.F.', '05021', 'Mexico'),\n  ('Antonio Moreno Taquera', 'Antonio \n Moreno', 'Mataderos 2312', 'Mexico D.F.', '05023', 'Mexico'),\n\n ('Around the Horn', 'Thomas Hardy', '120 Hanover Sq.', 'London', 'WA1 \n 1DP', 'UK'),\n  ('Berglunds snabbkoep', 'Christina Berglund', 'Berguvsvegen \n 8', 'Lulea', 'S-958 22', 'Sweden'),\n  ('Blauer See Delikatessen', \n 'Hanna Moos', 'Forsterstr. 57', 'Mannheim', '68306', 'Germany'),\n\n ('Blondel pere et fils', 'Frederique Citeaux', '24, place Kleber', \n 'Strasbourg', '67000', 'France'),\n  ('Bolido Comidas preparadas', \n 'Martin Sommer', 'C/ Araquil, 67', 'Madrid', '28023', 'Spain'),\n\n ('Bon app', 'Laurence Lebihans', '12, rue des Bouchers', 'Marseille', \n '13008', 'France'),\n  ('Bottom-Dollar Marketse', 'Elizabeth \n Lincoln', '23 Tsawassen Blvd.', 'Tsawassen', 'T2F 8M4', 'Canada'),\n\n ('Bs Beverages', 'Victoria Ashworth', 'Fauntleroy Circus', 'London', \n 'EC2 5NT', 'UK'),\n  ('Cactus Comidas para llevar', 'Patricio \n Simpson', 'Cerrito 333', 'Buenos Aires', '1010', 'Argentina'),\n\n ('Centro comercial Moctezuma', 'Francisco Chang', 'Sierras de Granada \n 9993', 'Mexico D.F.', '05022', 'Mexico'),\n  ('Chop-suey \n Chinese', 'Yang Wang', 'Hauptstr. 29', 'Bern', '3012', 'Switzerland'),\n\n ('Comercio Mineiro', 'Pedro Afonso', 'Av. dos Lusiadas, 23', 'Sao \n Paulo', '05432-043', 'Brazil'),\n  ('Consolidated Holdings', \n 'Elizabeth Brown', 'Berkeley Gardens 12 Brewery ', 'London', 'WX1 6LT', \n 'UK'),\n  ('Drachenblut Delikatessend', 'Sven Ottlieb', 'Walserweg \n 21', 'Aachen', '52066', 'Germany'),\n  ('Du monde entier', \n 'Janine Labrune', '67, rue des Cinquante Otages', 'Nantes', '44000', \n 'France'),\n  ('Eastern Connection', 'Ann Devon', '35 King \n George', 'London', 'WX3 6FW', 'UK'),\n  ('Ernst Handel', 'Roland \n Mendel', 'Kirchgasse 6', 'Graz', '8010', 'Austria'),\n  ('Familia \n Arquibaldo', 'Aria Cruz', 'Rua Oros, 92', 'Sao Paulo', '05442-030', \n 'Brazil'),\n  ('FISSA Fabrica Inter. Salchichas S.A.', 'Diego \n Roel', 'C/ Moralzarzal, 86', 'Madrid', '28034', 'Spain'),\n  ('Folies \n gourmandes', 'Martine Rance', '184, chaussee de Tournai', 'Lille', \n '59000', 'France'),\n  ('Folk och fe HB', 'Maria Larsson', 'Akergatan \n 24', 'Brecke', 'S-844 67', 'Sweden'),\n  ('Frankenversand', \n 'Peter Franken', 'Berliner Platz 43', 'Munchen', '80805', 'Germany'),\n\n ('France restauration', 'Carine Schmitt', '54, rue Royale', 'Nantes', \n '44000', 'France'),\n  ('Franchi S.p.A.', 'Paolo Accorti', 'Via \n Monte Bianco 34', 'Torino', '10100', 'Italy'),\n  ('Furia \n Bacalhau e Frutos do Mar', 'Lino Rodriguez ', 'Jardim das rosas n. 32', \n 'Lisboa', '1675', 'Portugal'),\n  ('Galeria del gastronomo', \n 'Eduardo Saavedra', 'Rambla de Cataluna, 23', 'Barcelona', '08022', \n 'Spain'),\n  ('Godos Cocina Tipica', 'Jose Pedro Freyre', 'C/ \n Romero, 33', 'Sevilla', '41101', 'Spain'),\n  ('Gourmet \n Lanchonetes', 'Andre Fonseca', 'Av. Brasil, 442', 'Campinas', \n '04876-786', 'Brazil'),\n  ('Great Lakes Food Market', 'Howard \n Snyder', '2732 Baker Blvd.', 'Eugene', '97403', 'USA'),\n\n ('GROSELLA-Restaurante', 'Manuel Pereira', '5th Ave. Los Palos Grandes', \n 'Caracas', '1081', 'Venezuela'),\n  ('Hanari Carnes', 'Mario \n Pontes', 'Rua do Paco, 67', 'Rio de Janeiro', '05454-876', 'Brazil'),\n\n ('HILARION-Abastos', 'Carlos Hernandez', 'Carrera 22 con Ave. Carlos \n Soublette #8-35', 'San Cristobal', '5022', 'Venezuela'),\n\n ('Hungry Coyote Import Store', 'Yoshi Latimer', 'City Center Plaza 516 \n Main St.', 'Elgin', '97827', 'USA'),\n  ('Hungry Owl All-Night \n Grocers', 'Patricia McKenna', '8 Johnstown Road', 'Cork', '', \n 'Ireland'),\n  ('Island Trading', 'Helen Bennett', 'Garden House \n Crowther Way', 'Cowes', 'PO31 7PJ', 'UK'),\n  ('Koniglich Essen', \n 'Philip Cramer', 'Maubelstr. 90', 'Brandenburg', '14776', 'Germany'),\n\n ('La corne d abondance', 'Daniel Tonini', '67, avenue de l Europe', \n 'Versailles', '78000', 'France'),\n  ('La maison d Asie', \n 'Annette Roulet', '1 rue Alsace-Lorraine', 'Toulouse', '31000', \n 'France'),\n  ('Laughing Bacchus Wine Cellars', 'Yoshi Tannamuri', \n '1900 Oak St.', 'Vancouver', 'V3F 2K1', 'Canada'),\n  ('Lazy K \n Kountry Store', 'John Steel', '12 Orchestra Terrace', 'Walla Walla', \n '99362', 'USA'),\n  ('Lehmanns Marktstand', 'Renate Messner', 'Magazinweg \n 7', 'Frankfurt a.M. ', '60528', 'Germany'),\n  ('Lets Stop N \n Shop', 'Jaime Yorres', '87 Polk St. Suite 5', 'San Francisco', '94117', \n 'USA'),\n  ('LILA-Supermercado', 'Carlos Gonzalez', 'Carrera 52 \n con Ave. Bolivar #65-98 Llano Largo', 'Barquisimeto', '3508', \n 'Venezuela'),\n  ('LINO-Delicateses', 'Felipe Izquierdo', 'Ave. 5 \n de Mayo Porlamar', 'I. de Margarita', '4980', 'Venezuela'),\n\n ('Lonesome Pine Restaurant', 'Fran Wilson', '89 Chiaroscuro Rd.', \n 'Portland', '97219', 'USA'),\n  ('Magazzini Alimentari Riuniti', \n 'Giovanni Rovelli', 'Via Ludovico il Moro 22', 'Bergamo', '24100', \n 'Italy'),\n  ('Maison Dewey', 'Catherine Dewey', 'Rue Joseph-Bens \n 532', 'Bruxelles', 'B-1180', 'Belgium'),\n  ('Mere Paillarde', \n 'Jean Fresniere', '43 rue St. Laurent', 'Montreal', 'H1J 1C3', \n 'Canada'),\n  ('Morgenstern Gesundkost', 'Alexander Feuer', 'Heerstr. \n 22', 'Leipzig', '04179', 'Germany'),\n  ('North/South', 'Simon \n Crowther', 'South House 300 Queensbridge', 'London', 'SW7 1RZ', 'UK'),\n\n ('Oceano Atlantico Ltda.', 'Yvonne Moncada', 'Ing. Gustavo Moncada 8585 \n Piso 20-A', 'Buenos Aires', '1010', 'Argentina'),\n  ('Old World \n Delicatessen', 'Rene Phillips', '2743 Bering St.', 'Anchorage', '99508', \n 'USA'),\n  ('Ottilies Keseladen', 'Henriette Pfalzheim', 'Mehrheimerstr. \n 369', 'Koln', '50739', 'Germany'),\n  ('Paris specialites', \n 'Marie Bertrand', '265, boulevard Charonne', 'Paris', '75012', \n 'France'),\n  ('Pericles Comidas clasicas', 'Guillermo \n Fernandez', 'Calle Dr. Jorge Cash 321', 'Mexico D.F.', '05033', \n 'Mexico'),\n  ('Piccolo und mehr', 'Georg Pipps', 'Geislweg 14', \n 'Salzburg', '5020', 'Austria'),\n  ('Princesa Isabel Vinhoss', \n 'Isabel de Castro', 'Estrada da saude n. 58', 'Lisboa', '1756', \n 'Portugal'),\n  ('Que Delicia', 'Bernardo Batista', 'Rua da \n Panificadora, 12', 'Rio de Janeiro', '02389-673', 'Brazil'),\n\n ('Queen Cozinha', 'Lucia Carvalho', 'Alameda dos Canarios, 891', 'Sao \n Paulo', '05487-020', 'Brazil'),\n  ('QUICK-Stop', 'Horst Kloss', \n 'Taucherstrasse 10', 'Cunewalde', '01307', 'Germany'),\n\n ('Rancho grande', 'Sergio Gutiarrez', 'Av. del Libertador 900', 'Buenos \n Aires', '1010', 'Argentina'),\n  ('Rattlesnake Canyon Grocery', \n 'Paula Wilson', '2817 Milton Dr.', 'Albuquerque', '87110', 'USA'),\n\n ('Reggiani Caseifici', 'Maurizio Moroni', 'Strada Provinciale 124', \n 'Reggio Emilia', '42100', 'Italy'),\n  ('Ricardo Adocicados', 'Janete \n Limeira', 'Av. Copacabana, 267', 'Rio de Janeiro', '02389-890', \n 'Brazil'),\n  ('Richter Supermarkt', 'Michael Holz', 'Grenzacherweg \n 237', 'Genève', '1203', 'Switzerland'),\n  ('Romero y tomillo', \n 'Alejandra Camino', 'Gran Via, 1', 'Madrid', '28001', 'Spain'),\n\n ('Santa Gourmet', 'Jonas Bergulfsen', 'Erling Skakkes gate 78', 'Stavern', \n '4110', 'Norway'),\n  ('Save-a-lot Markets', 'Jose Pavarotti', \n '187 Suffolk Ln.', 'Boise', '83720', 'USA'),\n  ('Seven Seas \n Imports', 'Hari Kumar', '90 Wadhurst Rd.', 'London', 'OX15 4NB', 'UK'),\n\n ('Simons bistro', 'Jytte Petersen', 'Vinbeltet 34', 'Kobenhavn', '1734', \n 'Denmark'),\n  ('Specialites du monde', 'Dominique Perrier', '25, \n rue Lauriston', 'Paris', '75016', 'France'),\n  ('Split Rail Beer \n & Ale', 'Art Braunschweiger', 'P.O. Box 555', 'Lander', '82520', 'USA'),\n\n ('Supremes delices', 'Pascale Cartrain', 'Boulevard Tirou, 255', \n 'Charleroi', 'B-6000', 'Belgium'),\n  ('The Big Cheese', 'Liz \n Nixon', '89 Jefferson Way Suite 2', 'Portland', '97201', 'USA'),\n\n ('The Cracker Box', 'Liu Wong', '55 Grizzly Peak Rd.', 'Butte', '59801', \n 'USA'),\n  ('Toms Spezialiteten', 'Karin Josephs', 'Luisenstr. \n 48', 'Manster', '44087', 'Germany'),\n  ('Tortuga Restaurante', \n 'Miguel Angel Paolino', 'Avda. Azteca 123', 'Mexico D.F.', '05033', \n 'Mexico'),\n  ('Tradicao Hipermercados', 'Anabela Domingues', \n 'Av. Ines de Castro, 414', 'Sao Paulo', '05634-030', 'Brazil'),\n\n ('Trails Head Gourmet Provisioners', 'Helvetius Nagy', '722 DaVinci \n Blvd.', 'Kirkland', '98034', 'USA'),\n  ('Vaffeljernet', 'Palle \n Ibsen', 'Smagsloget 45', 'Arhus', '8200', 'Denmark'),\n  ('Victuailles \n en stock', 'Mary Saveley', '2, rue du Commerce', 'Lyon', '69004', \n 'France'),\n  ('Vins et alcools Chevalier', 'Paul Henriot', '59 \n rue de l Abbaye', 'Reims', '51100', 'France'),\n  ('Die Wandernde \n Kuh', 'Rita Moller', 'Adenauerallee 900', 'Stuttgart', '70563', \n 'Germany'),\n  ('Wartian Herkku', 'Pirkko Koskitalo', 'Torikatu \n 38', 'Oulu', '90110', 'Finland'),\n  ('Wellington Importadora', \n 'Paula Parente', 'Rua do Mercado, 12', 'Resende', '08737-363', \n 'Brazil'),\n  ('White Clover Markets', 'Karl Jablonski', '305 - \n 14th Ave. S. Suite 3B', 'Seattle', '98128', 'USA'),\n  ('Wilman \n Kala', 'Matti Karttunen', 'Keskuskatu 45', 'Helsinki', '21240', \n 'Finland'),\n  ('Wolski', 'Zbyszek', 'ul. Filtrowa 68', 'Walla', \n '01-012', 'Poland');\n\nResult\n\n INSERT 0 91\n\nThe result can also be seen here:\n\nDemo Database - customers",
+                "heading": "CUSTOMERS"
+            },
+            {
+                "content": "The following SQL statement will create a table named \nproducts:\n\nCREATE TABLE products\n\n CREATE TABLE products (\n  product_id SERIAL NOT NULL PRIMARY \n KEY,\n  product_name VARCHAR(255),\n\n category_id INT,\n  unit VARCHAR(255),\n  price \n DECIMAL(10, 2)\n);\n\nResult\n\n CREATE TABLE\n\nThe following SQL statement will fill the \nproducts table with content:\n\nINSERT INTO products\n\n INSERT INTO products (product_id, product_name, category_id, \n unit, price)\nVALUES\n  (1, 'Chais', 1, '10 boxes x 20 bags', 18),\n\n (2, 'Chang', 1, '24 - 12 oz bottles', 19),\n  (3, 'Aniseed Syrup', \n 2, '12 - 550 ml bottles', 10),\n  (4, 'Chef Antons Cajun Seasoning', \n 2, '48 - 6 oz jars', 22),\n  (5, 'Chef Antons Gumbo Mix', 2, '36 \n boxes', 21.35),\n  (6, 'Grandmas Boysenberry Spread', 2, '12 - 8 oz \n jars', 25),\n  (7, 'Uncle Bobs Organic Dried Pears', 7, '12 - 1 lb \n pkgs.', 30),\n  (8, 'Northwoods Cranberry Sauce', 2, '12 - 12 oz \n jars', 40),\n  (9, 'Mishi Kobe Niku', 6, '18 - 500 g pkgs.', 97),\n\n (10, 'Ikura', 8, '12 - 200 ml jars', 31),\n  (11, 'Queso Cabrales', \n 4, '1 kg pkg.', 21),\n  (12, 'Queso Manchego La Pastora', 4, '10 - \n 500 g pkgs.', 38),\n  (13, 'Konbu', 8, '2 kg box', 6),\n  (14, \n 'Tofu', 7, '40 - 100 g pkgs.', 23.25),\n  (15, 'Genen Shouyu', 2, \n '24 - 250 ml bottles', 15.5),\n  (16, 'Pavlova', 3, '32 - 500 g \n boxes', 17.45),\n  (17, 'Alice Mutton', 6, '20 - 1 kg tins', 39),\n\n (18, 'Carnarvon Tigers', 8, '16 kg pkg.', 62.5),\n  (19, 'Teatime \n Chocolate Biscuits', 3, '10 boxes x 12 pieces', 9.2),\n  (20, 'Sir \n Rodneys Marmalade', 3, '30 gift boxes', 81),\n  (21, 'Sir Rodneys \n Scones', 3, '24 pkgs. x 4 pieces', 10),\n  (22, 'Gustafs Kneckebrod', \n 5, '24 - 500 g pkgs.', 21),\n  (23, 'Tunnbrod', 5, '12 - 250 g \n pkgs.', 9),\n  (24, 'Guarani Fantastica', 1, '12 - 355 ml cans', \n 4.5),\n  (25, 'NuNuCa Nui-Nougat-Creme', 3, '20 - 450 g glasses', \n 14),\n  (26, 'Gumber Gummiberchen', 3, '100 - 250 g bags', 31.23),\n\n (27, 'Schoggi Schokolade', 3, '100 - 100 g pieces', 43.9),\n  (28, 'Rassle \n Sauerkraut', 7, '25 - 825 g cans', 45.6),\n  (29, 'Thoringer \n Rostbratwurst', 6, '50 bags x 30 sausgs.', 123.79),\n  (30, 'Nord-Ost \n Matjeshering', 8, '10 - 200 g glasses', 25.89),\n  (31, 'Gorgonzola \n Telino', 4, '12 - 100 g pkgs', 12.5),\n  (32, 'Mascarpone Fabioli', \n 4, '24 - 200 g pkgs.', 32),\n  (33, 'Geitost', 4, '500 g', 2.5),\n\n (34, 'Sasquatch Ale', 1, '24 - 12 oz bottles', 14),\n  (35, 'Steeleye \n Stout', 1, '24 - 12 oz bottles', 18),\n  (36, 'Inlagd Sill', 8, \n '24 - 250 g jars', 19),\n  (37, 'Gravad lax', 8, '12 - 500 g pkgs.', \n 26),\n  (38, 'Cote de Blaye', 1, '12 - 75 cl bottles', 263.5),\n\n (39, 'Chartreuse verte', 1, '750 cc per bottle', 18),\n  (40, \n 'Boston Crab Meat', 8, '24 - 4 oz tins', 18.4),\n  (41, 'Jacks New \n England Clam Chowder', 8, '12 - 12 oz cans', 9.65),\n  (42, \n 'Singaporean Hokkien Fried Mee', 5, '32 - 1 kg pkgs.', 14),\n  (43, \n 'Ipoh Coffee', 1, '16 - 500 g tins', 46),\n  (44, 'Gula Malacca', \n 2, '20 - 2 kg bags', 19.45),\n  (45, 'Rogede sild', 8, '1k \n pkg.', 9.5),\n  (46, 'Spegesild', 8, '4 - 450 g glasses', 12),\n\n (47, 'Zaanse koeken', 3, '10 - 4 oz boxes', 9.5),\n  (48, 'Chocolade', \n 3, '10 pkgs.', 12.75),\n  (49, 'Maxilaku', 3, '24 - 50 g pkgs.', \n 20),\n  (50, 'Valkoinen suklaa', 3, '12 - 100 g bars', 16.25),\n\n (51, 'Manjimup Dried Apples', 7, '50 - 300 g pkgs.', 53),\n  (52, \n 'Filo Mix', 5, '16 - 2 kg boxes', 7),\n  (53, 'Perth Pasties', \n 6, '48 pieces', 32.8),\n  (54, 'Tourtiare', 6, '16 pies', 7.45),\n\n (55, 'Pate chinois', 6, '24 boxes x 2 pies', 24),\n  (56, 'Gnocchi \n di nonna Alice', 5, '24 - 250 g pkgs.', 38),\n  (57, 'Ravioli \n Angelo', 5, '24 - 250 g pkgs.', 19.5),\n  (58, 'Escargots de \n Bourgogne', 8, '24 pieces', 13.25),\n  (59, 'Raclette Courdavault', \n 4, '5 kg pkg.', 55),\n  (60, 'Camembert Pierrot', 4, '15 - 300 g \n rounds', 34),\n  (61, 'Sirop d arable', 2, '24 - 500 ml bottles', \n 28.5),\n  (62, 'Tarte au sucre', 3, '48 pies', 49.3),\n  (63, \n 'Vegie-spread', 2, '15 - 625 g jars', 43.9),\n  (64, 'Wimmers gute \n Semmelknadel', 5, '20 bags x 4 pieces', 33.25),\n  (65, 'Louisiana \n Fiery Hot Pepper Sauce', 2, '32 - 8 oz bottles', 21.05),\n  (66, \n 'Louisiana Hot Spiced Okra', 2, '24 - 8 oz jars', 17),\n  (67, \n 'Laughing Lumberjack Lager', 1, '24 - 12 oz bottles', 14),\n  (68, \n 'Scottish Longbreads', 3, '10 boxes x 8 pieces', 12.5),\n  (69, 'Gudbrandsdalsost', \n 4, '10 kg pkg.', 36),\n  (70, 'Outback Lager', 1, '24 - 355 ml \n bottles', 15),\n  (71, 'Flotemysost', 4, '10 - 500 g pkgs.', 21.5),\n\n (72, 'Mozzarella di Giovanni', 4, '24 - 200 g pkgs.', 34.8),\n  (73, \n 'Red Kaviar', 8, '24 - 150 g jars', 15),\n  (74, 'Longlife Tofu', \n 7, '5 kg pkg.', 10),\n  (75, 'Rhenbreu Klosterbier', 1, '24 - 0.5 l \n bottles', 7.75),\n  (76, 'Lakkalikeeri', 1, '500 ml ', 18),\n  (77, \n 'Original Frankfurter grune Soae', 2, '12 boxes', 13);\n\nResult\n\n INSERT 0 77\n\nThe result can also be seen here:\n\nDemo Database - products",
+                "heading": "PRODUCTS"
+            },
+            {
+                "content": "The following SQL statement will create a table named \norders:\n\nCREATE TABLE orders\n\n CREATE TABLE orders (\n  order_id SERIAL NOT NULL PRIMARY KEY,\n\n customer_id INT,\n  order_date DATE\n\n );\n\nResult\n\n CREATE TABLE\n\nThe following SQL statement will fill the \norders table with content:\n\nINSERT INTO orders\n\n INSERT INTO orders (order_id, customer_id, order_date)\n\n VALUES\n  (10248, 90, '2021-07-04'), \n  (10249, 81, \n '2021-07-05'), \n  (10250, 34, '2021-07-08'), \n  (10251, 84, \n '2021-07-08'), \n  (10252, 76, '2021-07-09'), \n  (10253, 34, \n '2021-07-10'), \n  (10254, 14, '2021-07-11'), \n  (10255, 68, \n '2021-07-12'), \n  (10256, 88, '2021-07-15'), \n  (10257, 35, \n '2021-07-16'), \n  (10258, 20, '2021-07-17'), \n  (10259, 13, \n '2021-07-18'), \n  (10260, 55, '2021-07-19'), \n  (10261, 61, \n '2021-07-19'), \n  (10262, 65, '2021-07-22'), \n  (10263, 20, \n '2021-07-23'), \n  (10264, 24, '2021-07-24'), \n  (10265, 7, \n '2021-07-25'), \n  (10266, 87, '2021-07-26'), \n  (10267, 25, \n '2021-07-29'), \n  (10268, 33, '2021-07-30'), \n  (10269, 89, \n '2021-07-31'), \n  (10270, 87, '2021-08-01'), \n  (10271, 75, \n '2021-08-01'), \n  (10272, 65, '2021-08-02'), \n  (10273, 63, \n '2021-08-05'), \n  (10274, 85, '2021-08-06'), \n  (10275, 49, \n '2021-08-07'), \n  (10276, 80, '2021-08-08'), \n  (10277, 52, \n '2021-08-09'), \n  (10278, 5, '2021-08-12'), \n  (10279, 44, \n '2021-08-13'), \n  (10280, 5, '2021-08-14'), \n  (10281, 69, \n '2021-08-14'), \n  (10282, 69, '2021-08-15'), \n  (10283, 46, \n '2021-08-16'), \n  (10284, 44, '2021-08-19'), \n  (10285, 63, \n '2021-08-20'), \n  (10286, 63, '2021-08-21'), \n  (10287, 67, \n '2021-08-22'), \n  (10288, 66, '2021-08-23'), \n  (10289, 11, \n '2021-08-26'), \n  (10290, 15, '2021-08-27'), \n  (10291, 61, \n '2021-08-27'), \n  (10292, 81, '2021-08-28'), \n  (10293, 80, \n '2021-08-29'), \n  (10294, 65, '2021-08-30'), \n  (10295, 85, \n '2021-09-02'), \n  (10296, 46, '2021-09-03'), \n  (10297, 7, \n '2021-09-04'), \n  (10298, 37, '2021-09-05'), \n  (10299, 67, \n '2021-09-06'), \n  (10300, 49, '2021-09-09'), \n  (10301, 86, \n '2021-09-09'), \n  (10302, 76, '2021-09-10'), \n  (10303, 30, \n '2021-09-11'), \n  (10304, 80, '2021-09-12'), \n  (10305, 55, \n '2021-09-13'), \n  (10306, 69, '2021-09-16'), \n  (10307, 48, \n '2021-09-17'), \n  (10308, 2, '2021-09-18'), \n  (10309, 37, \n '2021-09-19'), \n  (10310, 77, '2021-09-20'), \n  (10311, 18, \n '2021-09-20'), \n  (10312, 86, '2021-09-23'), \n  (10313, 63, \n '2021-09-24'), \n  (10314, 65, '2021-09-25'), \n  (10315, 38, \n '2021-09-26'), \n  (10316, 65, '2021-09-27'), \n  (10317, 48, \n '2021-09-30'), \n  (10318, 38, '2021-10-01'), \n  (10319, 80, \n '2021-10-02'), \n  (10320, 87, '2021-10-03'), \n  (10321, 38, \n '2021-10-03'), \n  (10322, 58, '2021-10-04'), \n  (10323, 39, \n '2021-10-07'), \n  (10324, 71, '2021-10-08'), \n  (10325, 39, \n '2021-10-09'), \n  (10326, 8, '2021-10-10'), \n  (10327, 24, \n '2021-10-11'), \n  (10328, 28, '2021-10-14'), \n  (10329, 75, \n '2021-10-15'), \n  (10330, 46, '2021-10-16'), \n  (10331, 9, \n '2021-10-16'), \n  (10332, 51, '2021-10-17'), \n  (10333, 87, \n '2021-10-18'), \n  (10334, 84, '2021-10-21'), \n  (10335, 37, \n '2021-10-22'), \n  (10336, 60, '2021-10-23'), \n  (10337, 25, \n '2021-10-24'), \n  (10338, 55, '2021-10-25'), \n  (10339, 51, \n '2021-10-28'), \n  (10340, 9, '2021-10-29'), \n  (10341, 73, \n '2021-10-29'), \n  (10342, 25, '2021-10-30'), \n  (10343, 44, \n '2021-10-31'), \n  (10344, 89, '2021-11-01'), \n  (10345, 63, \n '2021-11-04'), \n  (10346, 65, '2021-11-05'), \n  (10347, 21, \n '2021-11-06'), \n  (10348, 86, '2021-11-07'), \n  (10349, 75, \n '2021-11-08'), \n  (10350, 41, '2021-11-11'), \n  (10351, 20, \n '2021-11-11'), \n  (10352, 28, '2021-11-12'), \n  (10353, 59, \n '2021-11-13'), \n  (10354, 58, '2021-11-14'), \n  (10355, 4, \n '2021-11-15'), \n  (10356, 86, '2021-11-18'), \n  (10357, 46, \n '2021-11-19'), \n  (10358, 41, '2021-11-20'), \n  (10359, 72, \n '2021-11-21'), \n  (10360, 7, '2021-11-22'), \n  (10361, 63, \n '2021-11-22'), \n  (10362, 9, '2021-11-25'), \n  (10363, 17, \n '2021-11-26'), \n  (10364, 19, '2021-11-26'), \n  (10365, 3, \n '2021-11-27'), \n  (10366, 29, '2021-11-28'), \n  (10367, 83, \n '2021-11-28'), \n  (10368, 20, '2021-11-29'), \n  (10369, 75, \n '2021-12-02'), \n  (10370, 14, '2021-12-03'), \n  (10371, 41, \n '2021-12-03'), \n  (10372, 62, '2021-12-04'), \n  (10373, 37, \n '2021-12-05'), \n  (10374, 91, '2021-12-05'), \n  (10375, 36, \n '2021-12-06'), \n  (10376, 51, '2021-12-09'), \n  (10377, 72, \n '2021-12-09'), \n  (10378, 24, '2021-12-10'), \n  (10379, 61, \n '2021-12-11'), \n  (10380, 37, '2021-12-12'), \n  (10381, 46, \n '2021-12-12'), \n  (10382, 20, '2021-12-13'), \n  (10383, 4, \n '2021-12-16'), \n  (10384, 5, '2021-12-16'), \n  (10385, 75, \n '2021-12-17'), \n  (10386, 21, '2021-12-18'), \n  (10387, 70, \n '2021-12-18'), \n  (10388, 72, '2021-12-19'), \n  (10389, 10, \n '2021-12-20'), \n  (10390, 20, '2021-12-23'), \n  (10391, 17, \n '2021-12-23'), \n  (10392, 59, '2021-12-24'), \n  (10393, 71, \n '2021-12-25'), \n  (10394, 36, '2021-12-25'), \n  (10395, 35, \n '2021-12-26'), \n  (10396, 25, '2021-12-27'), \n  (10397, 60, \n '2021-12-27'), \n  (10398, 71, '2021-12-30'), \n  (10399, 83, \n '2021-12-31'), \n  (10400, 19, '2022-01-01'), \n  (10401, 65, \n '2022-01-01'), \n  (10402, 20, '2022-01-02'), \n  (10403, 20, \n '2022-01-03'), \n  (10404, 49, '2022-01-03'), \n  (10405, 47, \n '2022-01-06'), \n  (10406, 62, '2022-01-07'), \n  (10407, 56, \n '2022-01-07'), \n  (10408, 23, '2022-01-08'), \n  (10409, 54, \n '2022-01-09'), \n  (10410, 10, '2022-01-10'), \n  (10411, 10, \n '2022-01-10'), \n  (10412, 87, '2022-01-13'), \n  (10413, 41, \n '2022-01-14'), \n  (10414, 21, '2022-01-14'), \n  (10415, 36, \n '2022-01-15'), \n  (10416, 87, '2022-01-16'), \n  (10417, 73, \n '2022-01-16'), \n  (10418, 63, '2022-01-17'), \n  (10419, 68, \n '2022-01-20'), \n  (10420, 88, '2022-01-21'), \n  (10421, 61, \n '2022-01-21'), \n  (10422, 27, '2022-01-22'), \n  (10423, 31, \n '2022-01-23'), \n  (10424, 51, '2022-01-23'), \n  (10425, 41, \n '2022-01-24'), \n  (10426, 29, '2022-01-27'), \n  (10427, 59, \n '2022-01-27'), \n  (10428, 66, '2022-01-28'), \n  (10429, 37, \n '2022-01-29'), \n  (10430, 20, '2022-01-30'), \n  (10431, 10, \n '2022-01-30'), \n  (10432, 75, '2022-01-31'), \n  (10433, 60, \n '2022-02-03'), \n  (10434, 24, '2022-02-03'), \n  (10435, 16, \n '2022-02-04'), \n  (10436, 7, '2022-02-05'), \n  (10437, 87, \n '2022-02-05'), \n  (10438, 79, '2022-02-06'), \n  (10439, 51, \n '2022-02-07'), \n  (10440, 71, '2022-02-10'), \n  (10441, 55, \n '2022-02-10'), \n  (10442, 20, '2022-02-11'), \n  (10443, 66, \n '2022-02-12'), \n  (10444, 5, '2022-02-12'), \n  (10445, 5, \n '2022-02-13'), \n  (10446, 79, '2022-02-14'), \n  (10447, 67, \n '2022-02-14'), \n  (10448, 64, '2022-02-17'), \n  (10449, 7, \n '2022-02-18'), \n  (10450, 84, '2022-02-19'), \n  (10451, 63, \n '2022-02-19'), \n  (10452, 71, '2022-02-20'), \n  (10453, 4, \n '2022-02-21'), \n  (10454, 41, '2022-02-21'), \n  (10455, 87, \n '2022-02-24'), \n  (10456, 39, '2022-02-25'), \n  (10457, 39, \n '2022-02-25'), \n  (10458, 76, '2022-02-26'), \n  (10459, 84, \n '2022-02-27'), \n  (10460, 24, '2022-02-28'), \n  (10461, 46, \n '2022-02-28'), \n  (10462, 16, '2022-03-03'), \n  (10463, 76, \n '2022-03-04'), \n  (10464, 28, '2022-03-04'), \n  (10465, 83, \n '2022-03-05'), \n  (10466, 15, '2022-03-06'), \n  (10467, 49, \n '2022-03-06'), \n  (10468, 39, '2022-03-07'), \n  (10469, 89, \n '2022-03-10'), \n  (10470, 9, '2022-03-11'), \n  (10471, 11, \n '2022-03-11'), \n  (10472, 72, '2022-03-12'), \n  (10473, 38, \n '2022-03-13'), \n  (10474, 58, '2022-03-13'), \n  (10475, 76, \n '2022-03-14'), \n  (10476, 35, '2022-03-17'), \n  (10477, 60, \n '2022-03-17'), \n  (10478, 84, '2022-03-18'), \n  (10479, 65, \n '2022-03-19'), \n  (10480, 23, '2022-03-20'), \n  (10481, 67, \n '2022-03-20'), \n  (10482, 43, '2022-03-21'), \n  (10483, 89, \n '2022-03-24'), \n  (10484, 11, '2022-03-24'), \n  (10485, 47, \n '2022-03-25'), \n  (10486, 35, '2022-03-26'), \n  (10487, 62, \n '2022-03-26'), \n  (10488, 25, '2022-03-27'), \n  (10489, 59, \n '2022-03-28'), \n  (10490, 35, '2022-03-31'), \n  (10491, 28, \n '2022-03-31'), \n  (10492, 10, '2022-04-01'), \n  (10493, 41, \n '2022-04-02'), \n  (10494, 15, '2022-04-02'), \n  (10495, 42, \n '2022-04-03'), \n  (10496, 81, '2022-04-04'), \n  (10497, 44, \n '2022-04-04'), \n  (10498, 35, '2022-04-07'), \n  (10499, 46, \n '2022-04-08'), \n  (10500, 41, '2022-04-09'), \n  (10501, 6, \n '2022-04-09'), \n  (10502, 58, '2022-04-10'), \n  (10503, 37, \n '2022-04-11'), \n  (10504, 89, '2022-04-11'), \n  (10505, 51, \n '2022-04-14'), \n  (10506, 39, '2022-04-15'), \n  (10507, 3, \n '2022-04-15'), \n  (10508, 56, '2022-04-16'), \n  (10509, 6, \n '2022-04-17'), \n  (10510, 71, '2022-04-18'), \n  (10511, 9, \n '2022-04-18'), \n  (10512, 21, '2022-04-21'), \n  (10513, 86, \n '2022-04-22'), \n  (10514, 20, '2022-04-22'), \n  (10515, 63, \n '2022-04-23'), \n  (10516, 37, '2022-04-24'), \n  (10517, 53, \n '2022-04-24'), \n  (10518, 80, '2022-04-25'), \n  (10519, 14, \n '2022-04-28'), \n  (10520, 70, '2022-04-29'), \n  (10521, 12, \n '2022-04-29'), \n  (10522, 44, '2022-04-30'), \n  (10523, 72, \n '2022-05-01'), \n  (10524, 5, '2022-05-01'), \n  (10525, 9, \n '2022-05-02'), \n  (10526, 87, '2022-05-05'), \n  (10527, 63, \n '2022-05-05'), \n  (10528, 32, '2022-05-06'), \n  (10529, 50, \n '2022-05-07'), \n  (10530, 59, '2022-05-08'), \n  (10531, 54, \n '2022-05-08'), \n  (10532, 19, '2022-05-09'), \n  (10533, 24, \n '2022-05-12'), \n  (10534, 44, '2022-05-12'), \n  (10535, 3, \n '2022-05-13'), \n  (10536, 44, '2022-05-14'), \n  (10537, 68, \n '2022-05-14'), \n  (10538, 11, '2022-05-15'), \n  (10539, 11, \n '2022-05-16'), \n  (10540, 63, '2022-05-19'), \n  (10541, 34, \n '2022-05-19'), \n  (10542, 39, '2022-05-20'), \n  (10543, 46, \n '2022-05-21'), \n  (10544, 48, '2022-05-21'), \n  (10545, 43, \n '2022-05-22'), \n  (10546, 84, '2022-05-23'), \n  (10547, 72, \n '2022-05-23'), \n  (10548, 79, '2022-05-26'), \n  (10549, 63, \n '2022-05-27'), \n  (10550, 30, '2022-05-28'), \n  (10551, 28, \n '2022-05-28'), \n  (10552, 35, '2022-05-29'), \n  (10553, 87, \n '2022-05-30'), \n  (10554, 56, '2022-05-30'), \n  (10555, 71, \n '2022-06-02'), \n  (10556, 73, '2022-06-03'), \n  (10557, 44, \n '2022-06-03'), \n  (10558, 4, '2022-06-04'), \n  (10559, 7, \n '2022-06-05'), \n  (10560, 25, '2022-06-06'), \n  (10561, 24, \n '2022-06-06'), \n  (10562, 66, '2022-06-09'), \n  (10563, 67, \n '2022-06-10'), \n  (10564, 65, '2022-06-10'), \n  (10565, 51, \n '2022-06-11'), \n  (10566, 7, '2022-06-12'), \n  (10567, 37, \n '2022-06-12'), \n  (10568, 29, '2022-06-13'), \n  (10569, 65, \n '2022-06-16'), \n  (10570, 51, '2022-06-17'), \n  (10571, 20, \n '2022-06-17'), \n  (10572, 5, '2022-06-18'), \n  (10573, 3, \n '2022-06-19'), \n  (10574, 82, '2022-06-19'), \n  (10575, 52, \n '2022-06-20'), \n  (10576, 80, '2022-06-23'), \n  (10577, 82, \n '2022-06-23'), \n  (10578, 11, '2022-06-24'), \n  (10579, 45, \n '2022-06-25'), \n  (10580, 56, '2022-06-26'), \n  (10581, 21, \n '2022-06-26'), \n  (10582, 6, '2022-06-27'), \n  (10583, 87, \n '2022-06-30'), \n  (10584, 7, '2022-06-30'), \n  (10585, 88, \n '2022-07-01'), \n  (10586, 66, '2022-07-02'), \n  (10587, 61, \n '2022-07-02'), \n  (10588, 63, '2022-07-03'), \n  (10589, 32, \n '2022-07-04'), \n  (10590, 51, '2022-07-07'), \n  (10591, 83, \n '2022-07-07'), \n  (10592, 44, '2022-07-08'), \n  (10593, 44, \n '2022-07-09'), \n  (10594, 55, '2022-07-09'), \n  (10595, 20, \n '2022-07-10'), \n  (10596, 89, '2022-07-11'), \n  (10597, 59, \n '2022-07-11'), \n  (10598, 65, '2022-07-14'), \n  (10599, 11, \n '2022-07-15'), \n  (10600, 36, '2022-07-16'), \n  (10601, 35, \n '2022-07-16'), \n  (10602, 83, '2022-07-17'), \n  (10603, 71, \n '2022-07-18'), \n  (10604, 28, '2022-07-18'), \n  (10605, 51, \n '2022-07-21'), \n  (10606, 81, '2022-07-22'), \n  (10607, 71, \n '2022-07-22'), \n  (10608, 79, '2022-07-23'), \n  (10609, 18, \n '2022-07-24'), \n  (10610, 41, '2022-07-25'), \n  (10611, 91, \n '2022-07-25'), \n  (10612, 71, '2022-07-28'), \n  (10613, 35, \n '2022-07-29'), \n  (10614, 6, '2022-07-29'), \n  (10615, 90, \n '2022-07-30'), \n  (10616, 32, '2022-07-31'), \n  (10617, 32, \n '2022-07-31'), \n  (10618, 51, '2022-08-01'), \n  (10619, 51, \n '2022-08-04'), \n  (10620, 42, '2022-08-05'), \n  (10621, 38, \n '2022-08-05'), \n  (10622, 67, '2022-08-06'), \n  (10623, 25, \n '2022-08-07'), \n  (10624, 78, '2022-08-07'), \n  (10625, 2, \n '2022-08-08'), \n  (10626, 5, '2022-08-11'), \n  (10627, 71, \n '2022-08-11'), \n  (10628, 7, '2022-08-12'), \n  (10629, 30, \n '2022-08-12'), \n  (10630, 39, '2022-08-13'), \n  (10631, 41, \n '2022-08-14'), \n  (10632, 86, '2022-08-14'), \n  (10633, 20, \n '2022-08-15'), \n  (10634, 23, '2022-08-15'), \n  (10635, 49, \n '2022-08-18'), \n  (10636, 87, '2022-08-19'), \n  (10637, 62, \n '2022-08-19'), \n  (10638, 47, '2022-08-20'), \n  (10639, 70, \n '2022-08-20'), \n  (10640, 86, '2022-08-21'), \n  (10641, 35, \n '2022-08-22'), \n  (10642, 73, '2022-08-22'), \n  (10643, 1, \n '2022-08-25'), \n  (10644, 88, '2022-08-25'), \n  (10645, 34, \n '2022-08-26'), \n  (10646, 37, '2022-08-27'), \n  (10647, 61, \n '2022-08-27'), \n  (10648, 67, '2022-08-28'), \n  (10649, 50, \n '2022-08-28'), \n  (10650, 21, '2022-08-29'), \n  (10651, 86, \n '2022-09-01'), \n  (10652, 31, '2022-09-01'), \n  (10653, 25, \n '2022-09-02'), \n  (10654, 5, '2022-09-02'), \n  (10655, 66, \n '2022-09-03'), \n  (10656, 32, '2022-09-04'), \n  (10657, 71, \n '2022-09-04'), \n  (10658, 63, '2022-09-05'), \n  (10659, 62, \n '2022-09-05'), \n  (10660, 36, '2022-09-08'), \n  (10661, 37, \n '2022-09-09'), \n  (10662, 48, '2022-09-09'), \n  (10663, 9, \n '2022-09-10'), \n  (10664, 28, '2022-09-10'), \n  (10665, 48, \n '2022-09-11'), \n  (10666, 68, '2022-09-12'), \n  (10667, 20, \n '2022-09-12'), \n  (10668, 86, '2022-09-15'), \n  (10669, 73, \n '2022-09-15'), \n  (10670, 25, '2022-09-16'), \n  (10671, 26, \n '2022-09-17'), \n  (10672, 5, '2022-09-17'), \n  (10673, 90, \n '2022-09-18'), \n  (10674, 38, '2022-09-18'), \n  (10675, 25, \n '2022-09-19'), \n  (10676, 80, '2022-09-22'), \n  (10677, 3, \n '2022-09-22'), \n  (10678, 71, '2022-09-23'), \n  (10679, 7, \n '2022-09-23'), \n  (10680, 55, '2022-09-24'), \n  (10681, 32, \n '2022-09-25'), \n  (10682, 3, '2022-09-25'), \n  (10683, 18, \n '2022-09-26'), \n  (10684, 56, '2022-09-26'), \n  (10685, 31, \n '2022-09-29'), \n  (10686, 59, '2022-09-30'), \n  (10687, 37, \n '2022-09-30'), \n  (10688, 83, '2022-10-01'), \n  (10689, 5, \n '2022-10-01'), \n  (10690, 34, '2022-10-02'), \n  (10691, 63, \n '2022-10-03'), \n  (10692, 1, '2022-10-03'), \n  (10693, 89, \n '2022-10-06'), \n  (10694, 63, '2022-10-06'), \n  (10695, 90, \n '2022-10-07'), \n  (10696, 89, '2022-10-08'), \n  (10697, 47, \n '2022-10-08'), \n  (10698, 20, '2022-10-09'), \n  (10699, 52, \n '2022-10-09'), \n  (10700, 71, '2022-10-10'), \n  (10701, 37, \n '2022-10-13'), \n  (10702, 1, '2022-10-13'), \n  (10703, 24, \n '2022-10-14'), \n  (10704, 62, '2022-10-14'), \n  (10705, 35, \n '2022-10-15'), \n  (10706, 55, '2022-10-16'), \n  (10707, 4, \n '2022-10-16'), \n  (10708, 77, '2022-10-17'), \n  (10709, 31, \n '2022-10-17'), \n  (10710, 27, '2022-10-20'), \n  (10711, 71, \n '2022-10-21'), \n  (10712, 37, '2022-10-21'), \n  (10713, 71, \n '2022-10-22'), \n  (10714, 71, '2022-10-22'), \n  (10715, 9, \n '2022-10-23'), \n  (10716, 64, '2022-10-24'), \n  (10717, 25, \n '2022-10-24'), \n  (10718, 39, '2022-10-27'), \n  (10719, 45, \n '2022-10-27'), \n  (10720, 61, '2022-10-28'), \n  (10721, 63, \n '2022-10-29'), \n  (10722, 71, '2022-10-29'), \n  (10723, 89, \n '2022-10-30'), \n  (10724, 51, '2022-10-30'), \n  (10725, 21, \n '2022-10-31'), \n  (10726, 19, '2022-11-03'), \n  (10727, 66, \n '2022-11-03'), \n  (10728, 62, '2022-11-04'), \n  (10729, 47, \n '2022-11-04'), \n  (10730, 9, '2022-11-05'), \n  (10731, 14, \n '2022-11-06'), \n  (10732, 9, '2022-11-06'), \n  (10733, 5, \n '2022-11-07'), \n  (10734, 31, '2022-11-07'), \n  (10735, 45, \n '2022-11-10'), \n  (10736, 37, '2022-11-11'), \n  (10737, 85, \n '2022-11-11'), \n  (10738, 74, '2022-11-12'), \n  (10739, 85, \n '2022-11-12'), \n  (10740, 89, '2022-11-13'), \n  (10741, 4, \n '2022-11-14'), \n  (10742, 10, '2022-11-14'), \n  (10743, 4, \n '2022-11-17'), \n  (10744, 83, '2022-11-17'), \n  (10745, 63, \n '2022-11-18'), \n  (10746, 14, '2022-11-19'), \n  (10747, 59, \n '2022-11-19'), \n  (10748, 71, '2022-11-20'), \n  (10749, 38, \n '2022-11-20'), \n  (10750, 87, '2022-11-21'), \n  (10751, 68, \n '2022-11-24'), \n  (10752, 53, '2022-11-24'), \n  (10753, 27, \n '2022-11-25'), \n  (10754, 49, '2022-11-25'), \n  (10755, 9, \n '2022-11-26'), \n  (10756, 75, '2022-11-27'), \n  (10757, 71, \n '2022-11-27'), \n  (10758, 68, '2022-11-28'), \n  (10759, 2, \n '2022-11-28'), \n  (10760, 50, '2022-12-01'), \n  (10761, 65, \n '2022-12-02'), \n  (10762, 24, '2022-12-02'), \n  (10763, 23, \n '2022-12-03'), \n  (10764, 20, '2022-12-03'), \n  (10765, 63, \n '2022-12-04'), \n  (10766, 56, '2022-12-05'), \n  (10767, 76, \n '2022-12-05'), \n  (10768, 4, '2022-12-08'), \n  (10769, 83, \n '2022-12-08'), \n  (10770, 34, '2022-12-09'), \n  (10771, 20, \n '2022-12-10'), \n  (10772, 44, '2022-12-10'), \n  (10773, 20, \n '2022-12-11'), \n  (10774, 24, '2022-12-11'), \n  (10775, 78, \n '2022-12-12'), \n  (10776, 20, '2022-12-15'), \n  (10777, 31, \n '2022-12-15'), \n  (10778, 5, '2022-12-16'), \n  (10779, 52, \n '2022-12-16'), \n  (10780, 46, '2022-12-16'), \n  (10781, 87, \n '2022-12-17'), \n  (10782, 12, '2022-12-17'), \n  (10783, 34, \n '2022-12-18'), \n  (10784, 49, '2022-12-18'), \n  (10785, 33, \n '2022-12-18'), \n  (10786, 62, '2022-12-19'), \n  (10787, 41, \n '2022-12-19'), \n  (10788, 63, '2022-12-22'), \n  (10789, 23, \n '2022-12-22'), \n  (10790, 31, '2022-12-22'), \n  (10791, 25, \n '2022-12-23'), \n  (10792, 91, '2022-12-23'), \n  (10793, 4, \n '2022-12-24'), \n  (10794, 61, '2022-12-24'), \n  (10795, 20, \n '2022-12-24'), \n  (10796, 35, '2022-12-25'), \n  (10797, 17, \n '2022-12-25'), \n  (10798, 38, '2022-12-26'), \n  (10799, 39, \n '2022-12-26'), \n  (10800, 72, '2022-12-26'), \n  (10801, 8, \n '2022-12-29'), \n  (10802, 73, '2022-12-29'), \n  (10803, 88, \n '2022-12-30'), \n  (10804, 72, '2022-12-30'), \n  (10805, 77, \n '2022-12-30'), \n  (10806, 84, '2022-12-31'), \n  (10807, 27, \n '2022-12-31'), \n  (10808, 60, '2023-01-01'), \n  (10809, 88, \n '2023-01-01'), \n  (10810, 42, '2023-01-01'), \n  (10811, 47, \n '2023-01-02'), \n  (10812, 66, '2023-01-02'), \n  (10813, 67, \n '2023-01-05'), \n  (10814, 84, '2023-01-05'), \n  (10815, 71, \n '2023-01-05'), \n  (10816, 32, '2023-01-06'), \n  (10817, 39, \n '2023-01-06'), \n  (10818, 49, '2023-01-07'), \n  (10819, 12, \n '2023-01-07'), \n  (10820, 65, '2023-01-07'), \n  (10821, 75, \n '2023-01-08'), \n  (10822, 82, '2023-01-08'), \n  (10823, 46, \n '2023-01-09'), \n  (10824, 24, '2023-01-09'), \n  (10825, 17, \n '2023-01-09'), \n  (10826, 7, '2023-01-12'), \n  (10827, 9, \n '2023-01-12'), \n  (10828, 64, '2023-01-13'), \n  (10829, 38, \n '2023-01-13'), \n  (10830, 81, '2023-01-13'), \n  (10831, 70, \n '2023-01-14'), \n  (10832, 41, '2023-01-14'), \n  (10833, 56, \n '2023-01-15'), \n  (10834, 81, '2023-01-15'), \n  (10835, 1, \n '2023-01-15'), \n  (10836, 20, '2023-01-16'), \n  (10837, 5, \n '2023-01-16'), \n  (10838, 47, '2023-01-19'), \n  (10839, 81, \n '2023-01-19'), \n  (10840, 47, '2023-01-19'), \n  (10841, 76, \n '2023-01-20'), \n  (10842, 80, '2023-01-20'), \n  (10843, 84, \n '2023-01-21'), \n  (10844, 59, '2023-01-21'), \n  (10845, 63, \n '2023-01-21'), \n  (10846, 76, '2023-01-22'), \n  (10847, 71, \n '2023-01-22'), \n  (10848, 16, '2023-01-23'), \n  (10849, 39, \n '2023-01-23'), \n  (10850, 84, '2023-01-23'), \n  (10851, 67, \n '2023-01-26'), \n  (10852, 65, '2023-01-26'), \n  (10853, 6, \n '2023-01-27'), \n  (10854, 20, '2023-01-27'), \n  (10855, 55, \n '2023-01-27'), \n  (10856, 3, '2023-01-28'), \n  (10857, 5, \n '2023-01-28'), \n  (10858, 40, '2023-01-29'), \n  (10859, 25, \n '2023-01-29'), \n  (10860, 26, '2023-01-29'), \n  (10861, 89, \n '2023-01-30'), \n  (10862, 44, '2023-01-30'), \n  (10863, 35, \n '2023-02-02'), \n  (10864, 4, '2023-02-02'), \n  (10865, 63, \n '2023-02-02'), \n  (10866, 5, '2023-02-03'), \n  (10867, 48, \n '2023-02-03'), \n  (10868, 62, '2023-02-04'), \n  (10869, 72, \n '2023-02-04'), \n  (10870, 91, '2023-02-04'), \n  (10871, 9, \n '2023-02-05'), \n  (10872, 30, '2023-02-05'), \n  (10873, 90, \n '2023-02-06'), \n  (10874, 30, '2023-02-06'), \n  (10875, 5, \n '2023-02-06'), \n  (10876, 9, '2023-02-09'), \n  (10877, 67, \n '2023-02-09'), \n  (10878, 63, '2023-02-10'), \n  (10879, 90, \n '2023-02-10'), \n  (10880, 24, '2023-02-10'), \n  (10881, 12, \n '2023-02-11'), \n  (10882, 71, '2023-02-11'), \n  (10883, 48, \n '2023-02-12'), \n  (10884, 45, '2023-02-12'), \n  (10885, 76, \n '2023-02-12'), \n  (10886, 34, '2023-02-13'), \n  (10887, 29, \n '2023-02-13'), \n  (10888, 30, '2023-02-16'), \n  (10889, 65, \n '2023-02-16'), \n  (10890, 18, '2023-02-16'), \n  (10891, 44, \n '2023-02-17'), \n  (10892, 50, '2023-02-17'), \n  (10893, 39, \n '2023-02-18'), \n  (10894, 71, '2023-02-18'), \n  (10895, 20, \n '2023-02-18'), \n  (10896, 50, '2023-02-19'), \n  (10897, 37, \n '2023-02-19'), \n  (10898, 54, '2023-02-20'), \n  (10899, 46, \n '2023-02-20'), \n  (10900, 88, '2023-02-20'), \n  (10901, 35, \n '2023-02-23'), \n  (10902, 24, '2023-02-23'), \n  (10903, 34, \n '2023-02-24'), \n  (10904, 89, '2023-02-24'), \n  (10905, 88, \n '2023-02-24'), \n  (10906, 91, '2023-02-25'), \n  (10907, 74, \n '2023-02-25'), \n  (10908, 66, '2023-02-26'), \n  (10909, 70, \n '2023-02-26'), \n  (10910, 90, '2023-02-26'), \n  (10911, 30, \n '2023-02-26'), \n  (10912, 37, '2023-02-26'), \n  (10913, 62, \n '2023-02-26'), \n  (10914, 62, '2023-02-27'), \n  (10915, 80, \n '2023-02-27'), \n  (10916, 64, '2023-02-27'), \n  (10917, 69, \n '2023-03-02'), \n  (10918, 10, '2023-03-02'), \n  (10919, 47, \n '2023-03-02'), \n  (10920, 4, '2023-03-03'), \n  (10921, 83, \n '2023-03-03'), \n  (10922, 34, '2023-03-03'), \n  (10923, 41, \n '2023-03-03'), \n  (10924, 5, '2023-03-04'), \n  (10925, 34, \n '2023-03-04'), \n  (10926, 2, '2023-03-04'), \n  (10927, 40, \n '2023-03-05'), \n  (10928, 29, '2023-03-05'), \n  (10929, 25, \n '2023-03-05'), \n  (10930, 76, '2023-03-06'), \n  (10931, 68, \n '2023-03-06'), \n  (10932, 9, '2023-03-06'), \n  (10933, 38, \n '2023-03-06'), \n  (10934, 44, '2023-03-09'), \n  (10935, 88, \n '2023-03-09'), \n  (10936, 32, '2023-03-09'), \n  (10937, 12, \n '2023-03-10'), \n  (10938, 63, '2023-03-10'), \n  (10939, 49, \n '2023-03-10'), \n  (10940, 9, '2023-03-11'), \n  (10941, 71, \n '2023-03-11'), \n  (10942, 66, '2023-03-11'), \n  (10943, 11, \n '2023-03-11'), \n  (10944, 10, '2023-03-12'), \n  (10945, 52, \n '2023-03-12'), \n  (10946, 83, '2023-03-12'), \n  (10947, 11, \n '2023-03-13'), \n  (10948, 30, '2023-03-13'), \n  (10949, 10, \n '2023-03-13'), \n  (10950, 49, '2023-03-16'), \n  (10951, 68, \n '2023-03-16'), \n  (10952, 1, '2023-03-16'), \n  (10953, 4, \n '2023-03-16'), \n  (10954, 47, '2023-03-17'), \n  (10955, 24, \n '2023-03-17'), \n  (10956, 6, '2023-03-17'), \n  (10957, 35, \n '2023-03-18'), \n  (10958, 54, '2023-03-18'), \n  (10959, 31, \n '2023-03-18'), \n  (10960, 35, '2023-03-19'), \n  (10961, 62, \n '2023-03-19'), \n  (10962, 63, '2023-03-19'), \n  (10963, 28, \n '2023-03-19'), \n  (10964, 74, '2023-03-20'), \n  (10965, 55, \n '2023-03-20'), \n  (10966, 14, '2023-03-20'), \n  (10967, 79, \n '2023-03-23'), \n  (10968, 20, '2023-03-23'), \n  (10969, 15, \n '2023-03-23'), \n  (10970, 8, '2023-03-24'), \n  (10971, 26, \n '2023-03-24'), \n  (10972, 40, '2023-03-24'), \n  (10973, 40, \n '2023-03-24'), \n  (10974, 75, '2023-03-25'), \n  (10975, 10, \n '2023-03-25'), \n  (10976, 35, '2023-03-25'), \n  (10977, 24, \n '2023-03-26'), \n  (10978, 50, '2023-03-26'), \n  (10979, 20, \n '2023-03-26'), \n  (10980, 24, '2023-03-27'), \n  (10981, 34, \n '2023-03-27'), \n  (10982, 10, '2023-03-27'), \n  (10983, 71, \n '2023-03-27'), \n  (10984, 71, '2023-03-30'), \n  (10985, 37, \n '2023-03-30'), \n  (10986, 54, '2023-03-30'), \n  (10987, 19, \n '2023-03-31'), \n  (10988, 65, '2023-03-31'), \n  (10989, 61, \n '2023-03-31'), \n  (10990, 20, '2023-04-01'), \n  (10991, 63, \n '2023-04-01'), \n  (10992, 77, '2023-04-01'), \n  (10993, 24, \n '2023-04-01'), \n  (10994, 83, '2023-04-02'), \n  (10995, 58, \n '2023-04-02'), \n  (10996, 63, '2023-04-02'), \n  (10997, 46, \n '2023-04-03'), \n  (10998, 91, '2023-04-03'), \n  (10999, 56, \n '2023-04-03'), \n  (11000, 65, '2023-04-06'), \n  (11001, 24, \n '2023-04-06'), \n  (11002, 71, '2023-04-06'), \n  (11003, 78, \n '2023-04-06'), \n  (11004, 50, '2023-04-07'), \n  (11005, 90, \n '2023-04-07'), \n  (11006, 32, '2023-04-07'), \n  (11007, 60, \n '2023-04-08'), \n  (11008, 20, '2023-04-08'), \n  (11009, 30, \n '2023-04-08'), \n  (11010, 66, '2023-04-09'), \n  (11011, 1, \n '2023-04-09'), \n  (11012, 25, '2023-04-09'), \n  (11013, 69, \n '2023-04-09'), \n  (11014, 47, '2023-04-10'), \n  (11015, 70, \n '2023-04-10'), \n  (11016, 4, '2023-04-10'), \n  (11017, 20, \n '2023-04-13'), \n  (11018, 48, '2023-04-13'), \n  (11019, 64, \n '2023-04-13'), \n  (11020, 56, '2023-04-14'), \n  (11021, 63, \n '2023-04-14'), \n  (11022, 34, '2023-04-14'), \n  (11023, 11, \n '2023-04-14'), \n  (11024, 19, '2023-04-15'), \n  (11025, 87, \n '2023-04-15'), \n  (11026, 27, '2023-04-15'), \n  (11027, 10, \n '2023-04-16'), \n  (11028, 39, '2023-04-16'), \n  (11029, 14, \n '2023-04-16'), \n  (11030, 71, '2023-04-17'), \n  (11031, 71, \n '2023-04-17'), \n  (11032, 89, '2023-04-17'), \n  (11033, 68, \n '2023-04-17'), \n  (11034, 55, '2023-04-20'), \n  (11035, 76, \n '2023-04-20'), \n  (11036, 17, '2023-04-20'), \n  (11037, 30, \n '2023-04-21'), \n  (11038, 76, '2023-04-21'), \n  (11039, 47, \n '2023-04-21'), \n  (11040, 32, '2023-04-22'), \n  (11041, 14, \n '2023-04-22'), \n  (11042, 15, '2023-04-22'), \n  (11043, 74, \n '2023-04-22'), \n  (11044, 91, '2023-04-23'), \n  (11045, 10, \n '2023-04-23'), \n  (11046, 86, '2023-04-23'), \n  (11047, 19, \n '2023-04-24'), \n  (11048, 10, '2023-04-24'), \n  (11049, 31, \n '2023-04-24'), \n  (11050, 24, '2023-04-27'), \n  (11051, 41, \n '2023-04-27'), \n  (11052, 34, '2023-04-27'), \n  (11053, 59, \n '2023-04-27'), \n  (11054, 12, '2023-04-28'), \n  (11055, 35, \n '2023-04-28'), \n  (11056, 19, '2023-04-28'), \n  (11057, 53, \n '2023-04-29'), \n  (11058, 6, '2023-04-29'), \n  (11059, 67, \n '2023-04-29'), \n  (11060, 27, '2023-04-30'), \n  (11061, 32, \n '2023-04-30'), \n  (11062, 66, '2023-04-30'), \n  (11063, 37, \n '2023-04-30'), \n  (11064, 71, '2023-05-01'), \n  (11065, 46, \n '2023-05-01'), \n  (11066, 89, '2023-05-01'), \n  (11067, 17, \n '2023-05-04'), \n  (11068, 62, '2023-05-04'), \n  (11069, 80, \n '2023-05-04'), \n  (11070, 44, '2023-05-05'), \n  (11071, 46, \n '2023-05-05'), \n  (11072, 20, '2023-05-05'), \n  (11073, 58, \n '2023-05-05'), \n  (11074, 73, '2023-05-06'), \n  (11075, 68, \n '2023-05-06'), \n  (11076, 9, '2023-05-06'), \n  (11077, 65, \n '2023-05-06');\n\nResult\n\n INSERT 0 830\n\nThe result can also be seen here:\n\nDemo Database - orders",
+                "heading": "ORDERS"
+            },
+            {
+                "content": "The following SQL statement will create a table named \norder_details:\n\nCREATE TABLE order_details\n\n CREATE TABLE order_details (\n  order_detail_id SERIAL NOT NULL \n PRIMARY KEY,\n  order_id INT,\n  product_id INT,\n\n quantity INT\n);\n\nResult\n\n CREATE TABLE\n\nThe following SQL statement will fill the \norder_details table with content:\n\nINSERT INTO order_details\n\n INSERT INTO order_details (order_id, product_id, quantity)\nVALUES\n\n (10248, 11, 12),\n  (10248, 42, 10),\n  (10248, 72, 5),\n  (10249, 14, \n 9),\n  (10249, 51, 40),\n  (10250, 41, 10),\n  (10250, 51, 35),\n\n (10250, 65, 15),\n  (10251, 22, 6),\n  (10251, 57, 15),\n  (10251, 65, \n 20),\n  (10252, 20, 40),\n  (10252, 33, 25),\n  (10252, 60, 40),\n\n (10253, 31, 20),\n  (10253, 39, 42),\n  (10253, 49, 40),\n  (10254, 24, \n 15),\n  (10254, 55, 21),\n  (10254, 74, 21),\n  (10255, 2, 20),\n\n (10255, 16, 35),\n  (10255, 36, 25),\n  (10255, 59, 30),\n  (10256, 53, \n 15),\n  (10256, 77, 12),\n  (10257, 27, 25),\n  (10257, 39, 6),\n\n (10257, 77, 15),\n  (10258, 2, 50),\n  (10258, 5, 65),\n  (10258, 32, \n 6),\n  (10259, 21, 10),\n  (10259, 37, 1),\n  (10260, 41, 16),\n\n (10260, 57, 50),\n  (10260, 62, 15),\n  (10260, 70, 21),\n  (10261, 21, \n 20),\n  (10261, 35, 20),\n  (10262, 5, 12),\n  (10262, 7, 15),\n\n (10262, 56, 2),\n  (10263, 16, 60),\n  (10263, 24, 28),\n  (10263, 30, \n 60),\n  (10263, 74, 36),\n  (10264, 2, 35),\n  (10264, 41, 25),\n\n (10265, 17, 30),\n  (10265, 70, 20),\n  (10266, 12, 12),\n  (10267, 40, \n 50),\n  (10267, 59, 70),\n  (10267, 76, 15),\n  (10268, 29, 10),\n\n (10268, 72, 4),\n  (10269, 33, 60),\n  (10269, 72, 20),\n  (10270, 36, \n 30),\n  (10270, 43, 25),\n  (10271, 33, 24),\n  (10272, 20, 6),\n\n (10272, 31, 40),\n  (10272, 72, 24),\n  (10273, 10, 24),\n  (10273, 31, \n 15),\n  (10273, 33, 20),\n  (10273, 40, 60),\n  (10273, 76, 33),\n\n (10274, 71, 20),\n  (10274, 72, 7),\n  (10275, 24, 12),\n  (10275, 59, \n 6),\n  (10276, 10, 15),\n  (10276, 13, 10),\n  (10277, 28, 20),\n\n (10277, 62, 12),\n  (10278, 44, 16),\n  (10278, 59, 15),\n  (10278, 63, \n 8),\n  (10278, 73, 25),\n  (10279, 17, 15),\n  (10280, 24, 12),\n\n (10280, 55, 20),\n  (10280, 75, 30),\n  (10281, 19, 1),\n  (10281, 24, \n 6),\n  (10281, 35, 4),\n  (10282, 30, 6),\n  (10282, 57, 2),\n  (10283, \n 15, 20),\n  (10283, 19, 18),\n  (10283, 60, 35),\n  (10283, 72, 3),\n\n (10284, 27, 15),\n  (10284, 44, 21),\n  (10284, 60, 20),\n  (10284, 67, \n 5),\n  (10285, 1, 45),\n  (10285, 40, 40),\n  (10285, 53, 36),\n\n (10286, 35, 100),\n  (10286, 62, 40),\n  (10287, 16, 40),\n  (10287, 34, \n 20),\n  (10287, 46, 15),\n  (10288, 54, 10),\n  (10288, 68, 3),\n\n (10289, 3, 30),\n  (10289, 64, 9),\n  (10290, 5, 20),\n  (10290, 29, \n 15),\n  (10290, 49, 15),\n  (10290, 77, 10),\n  (10291, 13, 20),\n\n (10291, 44, 24),\n  (10291, 51, 2),\n  (10292, 20, 20),\n  (10293, 18, \n 12),\n  (10293, 24, 10),\n  (10293, 63, 5),\n  (10293, 75, 6),\n\n (10294, 1, 18),\n  (10294, 17, 15),\n  (10294, 43, 15),\n  (10294, 60, \n 21),\n  (10294, 75, 6),\n  (10295, 56, 4),\n  (10296, 11, 12),\n\n (10296, 16, 30),\n  (10296, 69, 15),\n  (10297, 39, 60),\n  (10297, 72, \n 20),\n  (10298, 2, 40),\n  (10298, 36, 40),\n  (10298, 59, 30),\n\n (10298, 62, 15),\n  (10299, 19, 15),\n  (10299, 70, 20),\n  (10300, 66, \n 30),\n  (10300, 68, 20),\n  (10301, 40, 10),\n  (10301, 56, 20),\n\n (10302, 17, 40),\n  (10302, 28, 28),\n  (10302, 43, 12),\n  (10303, 40, \n 40),\n  (10303, 65, 30),\n  (10303, 68, 15),\n  (10304, 49, 30),\n\n (10304, 59, 10),\n  (10304, 71, 2),\n  (10305, 18, 25),\n  (10305, 29, \n 25),\n  (10305, 39, 30),\n  (10306, 30, 10),\n  (10306, 53, 10),\n\n (10306, 54, 5),\n  (10307, 62, 10),\n  (10307, 68, 3),\n  (10308, 69, \n 1),\n  (10308, 70, 5),\n  (10309, 4, 20),\n  (10309, 6, 30),\n  (10309, \n 42, 2),\n  (10309, 43, 20),\n  (10309, 71, 3),\n  (10310, 16, 10),\n\n (10310, 62, 5),\n  (10311, 42, 6),\n  (10311, 69, 7),\n  (10312, 28, 4),\n\n (10312, 43, 24),\n  (10312, 53, 20),\n  (10312, 75, 10),\n  (10313, 36, \n 12),\n  (10314, 32, 40),\n  (10314, 58, 30),\n  (10314, 62, 25),\n\n (10315, 34, 14),\n  (10315, 70, 30),\n  (10316, 41, 10),\n  (10316, 62, \n 70),\n  (10317, 1, 20),\n  (10318, 41, 20),\n  (10318, 76, 6),\n\n (10319, 17, 8),\n  (10319, 28, 14),\n  (10319, 76, 30),\n  (10320, 71, \n 30),\n  (10321, 35, 10),\n  (10322, 52, 20),\n  (10323, 15, 5),\n\n (10323, 25, 4),\n  (10323, 39, 4),\n  (10324, 16, 21),\n  (10324, 35, \n 70),\n  (10324, 46, 30),\n  (10324, 59, 40),\n  (10324, 63, 80),\n\n (10325, 6, 6),\n  (10325, 13, 12),\n  (10325, 14, 9),\n  (10325, 31, 4),\n\n (10325, 72, 40),\n  (10326, 4, 24),\n  (10326, 57, 16),\n  (10326, 75, \n 50),\n  (10327, 2, 25),\n  (10327, 11, 50),\n  (10327, 30, 35),\n\n (10327, 58, 30),\n  (10328, 59, 9),\n  (10328, 65, 40),\n  (10328, 68, \n 10),\n  (10329, 19, 10),\n  (10329, 30, 8),\n  (10329, 38, 20),\n\n (10329, 56, 12),\n  (10330, 26, 50),\n  (10330, 72, 25),\n  (10331, 54, \n 15),\n  (10332, 18, 40),\n  (10332, 42, 10),\n  (10332, 47, 16),\n\n (10333, 14, 10),\n  (10333, 21, 10),\n  (10333, 71, 40),\n  (10334, 52, \n 8),\n  (10334, 68, 10),\n  (10335, 2, 7),\n  (10335, 31, 25),\n  (10335, \n 32, 6),\n  (10335, 51, 48),\n  (10336, 4, 18),\n  (10337, 23, 40),\n\n (10337, 26, 24),\n  (10337, 36, 20),\n  (10337, 37, 28),\n  (10337, 72, \n 25),\n  (10338, 17, 20),\n  (10338, 30, 15),\n  (10339, 4, 10),\n\n (10339, 17, 70),\n  (10339, 62, 28),\n  (10340, 18, 20),\n  (10340, 41, \n 12),\n  (10340, 43, 40),\n  (10341, 33, 8),\n  (10341, 59, 9),\n\n (10342, 2, 24),\n  (10342, 31, 56),\n  (10342, 36, 40),\n  (10342, 55, \n 40),\n  (10343, 64, 50),\n  (10343, 68, 4),\n  (10343, 76, 15),\n\n (10344, 4, 35),\n  (10344, 8, 70),\n  (10345, 8, 70),\n  (10345, 19, \n 80),\n  (10345, 42, 9),\n  (10346, 17, 36),\n  (10346, 56, 20),\n\n (10347, 25, 10),\n  (10347, 39, 50),\n  (10347, 40, 4),\n  (10347, 75, \n 6),\n  (10348, 1, 15),\n  (10348, 23, 25),\n  (10349, 54, 24),\n\n (10350, 50, 15),\n  (10350, 69, 18),\n  (10351, 38, 20),\n  (10351, 41, \n 13),\n  (10351, 44, 77),\n  (10351, 65, 10),\n  (10352, 24, 10),\n\n (10352, 54, 20),\n  (10353, 11, 12),\n  (10353, 38, 50),\n  (10354, 1, \n 12),\n  (10354, 29, 4),\n  (10355, 24, 25),\n  (10355, 57, 25),\n\n (10356, 31, 30),\n  (10356, 55, 12),\n  (10356, 69, 20),\n  (10357, 10, \n 30),\n  (10357, 26, 16),\n  (10357, 60, 8),\n  (10358, 24, 10),\n\n (10358, 34, 10),\n  (10358, 36, 20),\n  (10359, 16, 56),\n  (10359, 31, \n 70),\n  (10359, 60, 80),\n  (10360, 28, 30),\n  (10360, 29, 35),\n\n (10360, 38, 10),\n  (10360, 49, 35),\n  (10360, 54, 28),\n  (10361, 39, \n 54),\n  (10361, 60, 55),\n  (10362, 25, 50),\n  (10362, 51, 20),\n\n (10362, 54, 24),\n  (10363, 31, 20),\n  (10363, 75, 12),\n  (10363, 76, \n 12),\n  (10364, 69, 30),\n  (10364, 71, 5),\n  (10365, 11, 24),\n\n (10366, 65, 5),\n  (10366, 77, 5),\n  (10367, 34, 36),\n  (10367, 54, \n 18),\n  (10367, 65, 15),\n  (10367, 77, 7),\n  (10368, 21, 5),\n\n (10368, 28, 13),\n  (10368, 57, 25),\n  (10368, 64, 35),\n  (10369, 29, \n 20),\n  (10369, 56, 18),\n  (10370, 1, 15),\n  (10370, 64, 30),\n\n (10370, 74, 20),\n  (10371, 36, 6),\n  (10372, 20, 12),\n  (10372, 38, \n 40),\n  (10372, 60, 70),\n  (10372, 72, 42),\n  (10373, 58, 80),\n\n (10373, 71, 50),\n  (10374, 31, 30),\n  (10374, 58, 15),\n  (10375, 14, \n 15),\n  (10375, 54, 10),\n  (10376, 31, 42),\n  (10377, 28, 20),\n\n (10377, 39, 20),\n  (10378, 71, 6),\n  (10379, 41, 8),\n  (10379, 63, \n 16),\n  (10379, 65, 20),\n  (10380, 30, 18),\n  (10380, 53, 20),\n\n (10380, 60, 6),\n  (10380, 70, 30),\n  (10381, 74, 14),\n  (10382, 5, \n 32),\n  (10382, 18, 9),\n  (10382, 29, 14),\n  (10382, 33, 60),\n\n (10382, 74, 50),\n  (10383, 13, 20),\n  (10383, 50, 15),\n  (10383, 56, \n 20),\n  (10384, 20, 28),\n  (10384, 60, 15),\n  (10385, 7, 10),\n\n (10385, 60, 20),\n  (10385, 68, 8),\n  (10386, 24, 15),\n  (10386, 34, \n 10),\n  (10387, 24, 15),\n  (10387, 28, 6),\n  (10387, 59, 12),\n\n (10387, 71, 15),\n  (10388, 45, 15),\n  (10388, 52, 20),\n  (10388, 53, \n 40),\n  (10389, 10, 16),\n  (10389, 55, 15),\n  (10389, 62, 20),\n\n (10389, 70, 30),\n  (10390, 31, 60),\n  (10390, 35, 40),\n  (10390, 46, \n 45),\n  (10390, 72, 24),\n  (10391, 13, 18),\n  (10392, 69, 50),\n\n (10393, 2, 25),\n  (10393, 14, 42),\n  (10393, 25, 7),\n  (10393, 26, \n 70),\n  (10393, 31, 32),\n  (10394, 13, 10),\n  (10394, 62, 10),\n\n (10395, 46, 28),\n  (10395, 53, 70),\n  (10395, 69, 8),\n  (10396, 23, \n 40),\n  (10396, 71, 60),\n  (10396, 72, 21),\n  (10397, 21, 10),\n\n (10397, 51, 18),\n  (10398, 35, 30),\n  (10398, 55, 120),\n  (10399, 68, \n 60),\n  (10399, 71, 30),\n  (10399, 76, 35),\n  (10399, 77, 14),\n\n (10400, 29, 21),\n  (10400, 35, 35),\n  (10400, 49, 30),\n  (10401, 30, \n 18),\n  (10401, 56, 70),\n  (10401, 65, 20),\n  (10401, 71, 60),\n\n (10402, 23, 60),\n  (10402, 63, 65),\n  (10403, 16, 21),\n  (10403, 48, \n 70),\n  (10404, 26, 30),\n  (10404, 42, 40),\n  (10404, 49, 30),\n\n (10405, 3, 50),\n  (10406, 1, 10),\n  (10406, 21, 30),\n  (10406, 28, \n 42),\n  (10406, 36, 5),\n  (10406, 40, 2),\n  (10407, 11, 30),\n\n (10407, 69, 15),\n  (10407, 71, 15),\n  (10408, 37, 10),\n  (10408, 54, \n 6),\n  (10408, 62, 35),\n  (10409, 14, 12),\n  (10409, 21, 12),\n\n (10410, 33, 49),\n  (10410, 59, 16),\n  (10411, 41, 25),\n  (10411, 44, \n 40),\n  (10411, 59, 9),\n  (10412, 14, 20),\n  (10413, 1, 24),\n\n (10413, 62, 40),\n  (10413, 76, 14),\n  (10414, 19, 18),\n  (10414, 33, \n 50),\n  (10415, 17, 2),\n  (10415, 33, 20),\n  (10416, 19, 20),\n\n (10416, 53, 10),\n  (10416, 57, 20),\n  (10417, 38, 50),\n  (10417, 46, \n 2),\n  (10417, 68, 36),\n  (10417, 77, 35),\n  (10418, 2, 60),\n\n (10418, 47, 55),\n  (10418, 61, 16),\n  (10418, 74, 15),\n  (10419, 60, \n 60),\n  (10419, 69, 20),\n  (10420, 9, 20),\n  (10420, 13, 2),\n\n (10420, 70, 8),\n  (10420, 73, 20),\n  (10421, 19, 4),\n  (10421, 26, \n 30),\n  (10421, 53, 15),\n  (10421, 77, 10),\n  (10422, 26, 2),\n\n (10423, 31, 14),\n  (10423, 59, 20),\n  (10424, 35, 60),\n  (10424, 38, \n 49),\n  (10424, 68, 30),\n  (10425, 55, 10),\n  (10425, 76, 20),\n\n (10426, 56, 5),\n  (10426, 64, 7),\n  (10427, 14, 35),\n  (10428, 46, \n 20),\n  (10429, 50, 40),\n  (10429, 63, 35),\n  (10430, 17, 45),\n\n (10430, 21, 50),\n  (10430, 56, 30),\n  (10430, 59, 70),\n  (10431, 17, \n 50),\n  (10431, 40, 50),\n  (10431, 47, 30),\n  (10432, 26, 10),\n\n (10432, 54, 40),\n  (10433, 56, 28),\n  (10434, 11, 6),\n  (10434, 76, \n 18),\n  (10435, 2, 10),\n  (10435, 22, 12),\n  (10435, 72, 10),\n\n (10436, 46, 5),\n  (10436, 56, 40),\n  (10436, 64, 30),\n  (10436, 75, \n 24),\n  (10437, 53, 15),\n  (10438, 19, 15),\n  (10438, 34, 20),\n\n (10438, 57, 15),\n  (10439, 12, 15),\n  (10439, 16, 16),\n  (10439, 64, \n 6),\n  (10439, 74, 30),\n  (10440, 2, 45),\n  (10440, 16, 49),\n\n (10440, 29, 24),\n  (10440, 61, 90),\n  (10441, 27, 50),\n  (10442, 11, \n 30),\n  (10442, 54, 80),\n  (10442, 66, 60),\n  (10443, 11, 6),\n\n (10443, 28, 12),\n  (10444, 17, 10),\n  (10444, 26, 15),\n  (10444, 35, \n 8),\n  (10444, 41, 30),\n  (10445, 39, 6),\n  (10445, 54, 15),\n\n (10446, 19, 12),\n  (10446, 24, 20),\n  (10446, 31, 3),\n  (10446, 52, \n 15),\n  (10447, 19, 40),\n  (10447, 65, 35),\n  (10447, 71, 2),\n\n (10448, 26, 6),\n  (10448, 40, 20),\n  (10449, 10, 14),\n  (10449, 52, \n 20),\n  (10449, 62, 35),\n  (10450, 10, 20),\n  (10450, 54, 6),\n\n (10451, 55, 120),\n  (10451, 64, 35),\n  (10451, 65, 28),\n  (10451, 77, \n 55),\n  (10452, 28, 15),\n  (10452, 44, 100),\n  (10453, 48, 15),\n\n (10453, 70, 25),\n  (10454, 16, 20),\n  (10454, 33, 20),\n  (10454, 46, \n 10),\n  (10455, 39, 20),\n  (10455, 53, 50),\n  (10455, 61, 25),\n\n (10455, 71, 30),\n  (10456, 21, 40),\n  (10456, 49, 21),\n\n  (10457, 59, \n 36),\n  (10458, 26, 30),\n  (10458, 28, 30),\n  (10458, 43, 20),\n\n (10458, 56, 15),\n  (10458, 71, 50),\n  (10459, 7, 16),\n  (10459, 46, \n 20),\n  (10459, 72, 40),\n  (10460, 68, 21),\n  (10460, 75, 4),\n\n (10461, 21, 40),\n  (10461, 30, 28),\n  (10461, 55, 60),\n  (10462, 13, \n 1),\n  (10462, 23, 21),\n  (10463, 19, 21),\n  (10463, 42, 50),\n\n (10464, 4, 16),\n  (10464, 43, 3),\n  (10464, 56, 30),\n  (10464, 60, \n 20),\n  (10465, 24, 25),\n  (10465, 29, 18),\n  (10465, 40, 20),\n\n (10465, 45, 30),\n  (10465, 50, 25),\n  (10466, 11, 10),\n  (10466, 46, \n 5),\n  (10467, 24, 28),\n  (10467, 25, 12),\n  (10468, 30, 8),\n\n (10468, 43, 15),\n  (10469, 2, 40),\n  (10469, 16, 35),\n  (10469, 44, \n 2),\n  (10470, 18, 30),\n  (10470, 23, 15),\n  (10470, 64, 8),\n\n (10471, 7, 30),\n  (10471, 56, 20),\n  (10472, 24, 80),\n  (10472, 51, \n 18),\n  (10473, 33, 12),\n  (10473, 71, 12),\n  (10474, 14, 12),\n\n (10474, 28, 18),\n  (10474, 40, 21),\n  (10474, 75, 10),\n  (10475, 31, \n 35),\n  (10475, 66, 60),\n  (10475, 76, 42),\n  (10476, 55, 2),\n\n (10476, 70, 12),\n  (10477, 1, 15),\n  (10477, 21, 21),\n  (10477, 39, \n 20),\n  (10478, 10, 20),\n  (10479, 38, 30),\n  (10479, 53, 28),\n\n (10479, 59, 60),\n  (10479, 64, 30),\n  (10480, 47, 30),\n  (10480, 59, \n 12),\n  (10481, 49, 24),\n  (10481, 60, 40),\n  (10482, 40, 10),\n\n (10483, 34, 35),\n  (10483, 77, 30),\n  (10484, 21, 14),\n  (10484, 40, \n 10),\n  (10484, 51, 3),\n  (10485, 2, 20),\n  (10485, 3, 20),\n  (10485, \n 55, 30),\n  (10485, 70, 60),\n  (10486, 11, 5),\n  (10486, 51, 25),\n\n (10486, 74, 16),\n  (10487, 19, 5),\n  (10487, 26, 30),\n  (10487, 54, \n 24),\n  (10488, 59, 30),\n  (10488, 73, 20),\n  (10489, 11, 15),\n\n (10489, 16, 18),\n  (10490, 59, 60),\n  (10490, 68, 30),\n  (10490, 75, \n 36),\n  (10491, 44, 15),\n  (10491, 77, 7),\n  (10492, 25, 60),\n\n (10492, 42, 20),\n  (10493, 65, 15),\n  (10493, 66, 10),\n  (10493, 69, \n 10),\n  (10494, 56, 30),\n  (10495, 23, 10),\n  (10495, 41, 20),\n\n (10495, 77, 5),\n  (10496, 31, 20),\n  (10497, 56, 14),\n  (10497, 72, \n 25),\n  (10497, 77, 25),\n  (10498, 24, 14),\n  (10498, 40, 5),\n\n (10498, 42, 30),\n  (10499, 28, 20),\n  (10499, 49, 25),\n  (10500, 15, \n 12),\n  (10500, 28, 8),\n  (10501, 54, 20),\n  (10502, 45, 21),\n\n (10502, 53, 6),\n  (10502, 67, 30),\n  (10503, 14, 70),\n  (10503, 65, \n 20),\n  (10504, 2, 12),\n  (10504, 21, 12),\n  (10504, 53, 10),\n\n (10504, 61, 25),\n  (10505, 62, 3),\n  (10506, 25, 18),\n  (10506, 70, \n 14),\n  (10507, 43, 15),\n  (10507, 48, 15),\n  (10508, 13, 10),\n\n (10508, 39, 10),\n  (10509, 28, 3),\n  (10510, 29, 36),\n  (10510, 75, \n 36),\n  (10511, 4, 50),\n  (10511, 7, 50),\n  (10511, 8, 10),\n  (10512, \n 24, 10),\n  (10512, 46, 9),\n  (10512, 47, 6),\n  (10512, 60, 12),\n\n (10513, 21, 40),\n  (10513, 32, 50),\n  (10513, 61, 15),\n  (10514, 20, \n 39),\n  (10514, 28, 35),\n  (10514, 56, 70),\n  (10514, 65, 39),\n\n (10514, 75, 50),\n  (10515, 9, 16),\n  (10515, 16, 50),\n  (10515, 27, \n 120),\n  (10515, 33, 16),\n  (10515, 60, 84),\n  (10516, 18, 25),\n\n (10516, 41, 80),\n  (10516, 42, 20),\n  (10517, 52, 6),\n  (10517, 59, \n 4),\n  (10517, 70, 6),\n  (10518, 24, 5),\n  (10518, 38, 15),\n  (10518, \n 44, 9),\n  (10519, 10, 16),\n  (10519, 56, 40),\n  (10519, 60, 10),\n\n (10520, 24, 8),\n  (10520, 53, 5),\n  (10521, 35, 3),\n  (10521, 41, \n 10),\n  (10521, 68, 6),\n  (10522, 1, 40),\n  (10522, 8, 24),\n  (10522, \n 30, 20),\n  (10522, 40, 25),\n  (10523, 17, 25),\n  (10523, 20, 15),\n\n (10523, 37, 18),\n  (10523, 41, 6),\n  (10524, 10, 2),\n  (10524, 30, \n 10),\n  (10524, 43, 60),\n  (10524, 54, 15),\n  (10525, 36, 30),\n\n (10525, 40, 15),\n  (10526, 1, 8),\n  (10526, 13, 10),\n  (10526, 56, \n 30),\n  (10527, 4, 50),\n  (10527, 36, 30),\n  (10528, 11, 3),\n\n (10528, 33, 8),\n  (10528, 72, 9),\n  (10529, 55, 14),\n  (10529, 68, \n 20),\n  (10529, 69, 10),\n  (10530, 17, 40),\n  (10530, 43, 25),\n\n (10530, 61, 20),\n  (10530, 76, 50),\n  (10531, 59, 2),\n  (10532, 30, \n 15),\n  (10532, 66, 24),\n  (10533, 4, 50),\n  (10533, 72, 24),\n\n (10533, 73, 24),\n  (10534, 30, 10),\n  (10534, 40, 10),\n  (10534, 54, \n 10),\n  (10535, 11, 50),\n  (10535, 40, 10),\n  (10535, 57, 5),\n\n (10535, 59, 15),\n  (10536, 12, 15),\n  (10536, 31, 20),\n  (10536, 33, \n 30),\n  (10536, 60, 35),\n  (10537, 31, 30),\n  (10537, 51, 6),\n\n (10537, 58, 20),\n  (10537, 72, 21),\n  (10537, 73, 9),\n  (10538, 70, \n 7),\n  (10538, 72, 1),\n  (10539, 13, 8),\n  (10539, 21, 15),\n  (10539, \n 33, 15),\n  (10539, 49, 6),\n  (10540, 3, 60),\n  (10540, 26, 40),\n\n (10540, 38, 30),\n  (10540, 68, 35),\n  (10541, 24, 35),\n  (10541, 38, \n 4),\n  (10541, 65, 36),\n  (10541, 71, 9),\n  (10542, 11, 15),\n\n (10542, 54, 24),\n  (10543, 12, 30),\n  (10543, 23, 70),\n  (10544, 28, \n 7),\n  (10544, 67, 7),\n  (10545, 11, 10),\n  (10546, 7, 10),\n  (10546, \n 35, 30),\n  (10546, 62, 40),\n  (10547, 32, 24),\n  (10547, 36, 60),\n\n (10548, 34, 10),\n  (10548, 41, 14),\n  (10549, 31, 55),\n  (10549, 45, \n 100),\n  (10549, 51, 48),\n  (10550, 17, 8),\n  (10550, 19, 10),\n\n (10550, 21, 6),\n  (10550, 61, 10),\n  (10551, 16, 40),\n  (10551, 35, \n 20),\n  (10551, 44, 40),\n  (10552, 69, 18),\n  (10552, 75, 30),\n\n (10553, 11, 15),\n  (10553, 16, 14),\n  (10553, 22, 24),\n  (10553, 31, \n 30),\n  (10553, 35, 6),\n  (10554, 16, 30),\n  (10554, 23, 20),\n\n (10554, 62, 20),\n  (10554, 77, 10),\n  (10555, 14, 30),\n  (10555, 19, \n 35),\n  (10555, 24, 18),\n  (10555, 51, 20),\n  (10555, 56, 40),\n\n (10556, 72, 24),\n  (10557, 64, 30),\n  (10557, 75, 20),\n  (10558, 47, \n 25),\n  (10558, 51, 20),\n  (10558, 52, 30),\n  (10558, 53, 18),\n\n (10558, 73, 3),\n  (10559, 41, 12),\n  (10559, 55, 18),\n  (10560, 30, \n 20),\n  (10560, 62, 15),\n  (10561, 44, 10),\n  (10561, 51, 50),\n\n (10562, 33, 20),\n  (10562, 62, 10),\n  (10563, 36, 25),\n  (10563, 52, \n 70),\n  (10564, 17, 16),\n  (10564, 31, 6),\n  (10564, 55, 25),\n\n (10565, 24, 25),\n  (10565, 64, 18),\n  (10566, 11, 35),\n  (10566, 18, \n 18),\n  (10566, 76, 10),\n  (10567, 31, 60),\n  (10567, 51, 3),\n\n (10567, 59, 40),\n  (10568, 10, 5),\n  (10569, 31, 35),\n  (10569, 76, \n 30),\n  (10570, 11, 15),\n  (10570, 56, 60),\n  (10571, 14, 11),\n\n (10571, 42, 28),\n  (10572, 16, 12),\n  (10572, 32, 10),\n  (10572, 40, \n 50),\n  (10572, 75, 15),\n  (10573, 17, 18),\n  (10573, 34, 40),\n\n (10573, 53, 25),\n  (10574, 33, 14),\n  (10574, 40, 2),\n  (10574, 62, \n 10),\n  (10574, 64, 6),\n  (10575, 59, 12),\n  (10575, 63, 6),\n\n (10575, 72, 30),\n  (10575, 76, 10),\n  (10576, 1, 10),\n  (10576, 31, \n 20),\n  (10576, 44, 21),\n  (10577, 39, 10),\n  (10577, 75, 20),\n\n (10577, 77, 18),\n  (10578, 35, 20),\n  (10578, 57, 6),\n  (10579, 15, \n 10),\n  (10579, 75, 21),\n  (10580, 14, 15),\n  (10580, 41, 9),\n\n (10580, 65, 30),\n  (10581, 75, 50),\n  (10582, 57, 4),\n  (10582, 76, \n 14),\n  (10583, 29, 10),\n  (10583, 60, 24),\n  (10583, 69, 10),\n\n (10584, 31, 50),\n  (10585, 47, 15),\n  (10586, 52, 4),\n  (10587, 26, \n 6),\n  (10587, 35, 20),\n  (10587, 77, 20),\n  (10588, 18, 40),\n\n (10588, 42, 100),\n  (10589, 35, 4),\n  (10590, 1, 20),\n  (10590, 77, \n 60),\n  (10591, 3, 14),\n  (10591, 7, 10),\n  (10591, 54, 50),\n\n (10592, 15, 25),\n  (10592, 26, 5),\n  (10593, 20, 21),\n  (10593, 69, \n 20),\n  (10593, 76, 4),\n  (10594, 52, 24),\n  (10594, 58, 30),\n\n (10595, 35, 30),\n  (10595, 61, 120),\n  (10595, 69, 65),\n  (10596, 56, \n 5),\n  (10596, 63, 24),\n  (10596, 75, 30),\n  (10597, 24, 35),\n\n (10597, 57, 20),\n  (10597, 65, 12),\n  (10598, 27, 50),\n  (10598, 71, \n 9),\n  (10599, 62, 10),\n  (10600, 54, 4),\n  (10600, 73, 30),\n\n (10601, 13, 60),\n  (10601, 59, 35),\n  (10602, 77, 5),\n  (10603, 22, \n 48),\n  (10603, 49, 25),\n  (10604, 48, 6),\n  (10604, 76, 10),\n\n (10605, 16, 30),\n  (10605, 59, 20),\n  (10605, 60, 70),\n  (10605, 71, \n 15),\n  (10606, 4, 20),\n  (10606, 55, 20),\n  (10606, 62, 10),\n\n (10607, 7, 45),\n  (10607, 17, 100),\n  (10607, 33, 14),\n  (10607, 40, \n 42),\n  (10607, 72, 12),\n  (10608, 56, 28),\n  (10609, 1, 3),\n\n (10609, 10, 10),\n  (10609, 21, 6),\n  (10610, 36, 21),\n  (10611, 1, \n 6),\n  (10611, 2, 10),\n  (10611, 60, 15),\n  (10612, 10, 70),\n\n (10612, 36, 55),\n  (10612, 49, 18),\n  (10612, 60, 40),\n  (10612, 76, \n 80),\n  (10613, 13, 8),\n  (10613, 75, 40),\n  (10614, 11, 14),\n\n (10614, 21, 8),\n  (10614, 39, 5),\n  (10615, 55, 5),\n  (10616, 38, \n 15),\n  (10616, 56, 14),\n  (10616, 70, 15),\n  (10616, 71, 15),\n\n (10617, 59, 30),\n  (10618, 6, 70),\n  (10618, 56, 20),\n  (10618, 68, \n 15),\n  (10619, 21, 42),\n  (10619, 22, 40),\n  (10620, 24, 5),\n\n (10620, 52, 5),\n  (10621, 19, 5),\n  (10621, 23, 10),\n  (10621, 70, \n 20),\n  (10621, 71, 15),\n  (10622, 2, 20),\n  (10622, 68, 18),\n\n (10623, 14, 21),\n  (10623, 19, 15),\n  (10623, 21, 25),\n  (10623, 24, \n 3),\n  (10623, 35, 30),\n  (10624, 28, 10),\n  (10624, 29, 6),\n\n (10624, 44, 10),\n  (10625, 14, 3),\n  (10625, 42, 5),\n  (10625, 60, \n 10),\n  (10626, 53, 12),\n  (10626, 60, 20),\n  (10626, 71, 20),\n\n (10627, 62, 15),\n  (10627, 73, 35),\n  (10628, 1, 25),\n  (10629, 29, \n 20),\n  (10629, 64, 9),\n  (10630, 55, 12),\n  (10630, 76, 35),\n\n (10631, 75, 8),\n  (10632, 2, 30),\n  (10632, 33, 20),\n  (10633, 12, \n 36),\n  (10633, 13, 13),\n  (10633, 26, 35),\n  (10633, 62, 80),\n\n (10634, 7, 35),\n  (10634, 18, 50),\n  (10634, 51, 15),\n  (10634, 75, \n 2),\n  (10635, 4, 10),\n  (10635, 5, 15),\n  (10635, 22, 40),\n  (10636, \n 4, 25),\n  (10636, 58, 6),\n  (10637, 11, 10),\n  (10637, 50, 25),\n\n (10637, 56, 60),\n  (10638, 45, 20),\n  (10638, 65, 21),\n  (10638, 72, \n 60),\n  (10639, 18, 8),\n  (10640, 69, 20),\n  (10640, 70, 15),\n\n (10641, 2, 50),\n  (10641, 40, 60),\n  (10642, 21, 30),\n  (10642, 61, \n 20),\n  (10643, 28, 15),\n  (10643, 39, 21),\n  (10643, 46, 2),\n\n (10644, 18, 4),\n  (10644, 43, 20),\n  (10644, 46, 21),\n  (10645, 18, \n 20),\n  (10645, 36, 15),\n  (10646, 1, 15),\n  (10646, 10, 18),\n\n (10646, 71, 30),\n  (10646, 77, 35),\n  (10647, 19, 30),\n  (10647, 39, \n 20),\n  (10648, 22, 15),\n  (10648, 24, 15),\n  (10649, 28, 20),\n\n (10649, 72, 15),\n  (10650, 30, 30),\n  (10650, 53, 25),\n  (10650, 54, \n 30),\n  (10651, 19, 12),\n  (10651, 22, 20),\n  (10652, 30, 2),\n\n (10652, 42, 20),\n  (10653, 16, 30),\n  (10653, 60, 20),\n  (10654, 4, \n 12),\n  (10654, 39, 20),\n  (10654, 54, 6),\n  (10655, 41, 20),\n\n (10656, 14, 3),\n  (10656, 44, 28),\n  (10656, 47, 6),\n  (10657, 15, \n 50),\n  (10657, 41, 24),\n  (10657, 46, 45),\n  (10657, 47, 10),\n\n (10657, 56, 45),\n  (10657, 60, 30),\n  (10658, 21, 60),\n  (10658, 40, \n 70),\n  (10658, 60, 55),\n  (10658, 77, 70),\n  (10659, 31, 20),\n\n (10659, 40, 24),\n  (10659, 70, 40),\n  (10660, 20, 21),\n  (10661, 39, \n 3),\n  (10661, 58, 49),\n  (10662, 68, 10),\n  (10663, 40, 30),\n\n (10663, 42, 30),\n  (10663, 51, 20),\n  (10664, 10, 24),\n  (10664, 56, \n 12),\n  (10664, 65, 15),\n  (10665, 51, 20),\n  (10665, 59, 1),\n\n (10665, 76, 10),\n  (10666, 29, 36),\n  (10666, 65, 10),\n  (10667, 69, \n 45),\n  (10667, 71, 14),\n  (10668, 31, 8),\n  (10668, 55, 4),\n\n (10668, 64, 15),\n  (10669, 36, 30),\n  (10670, 23, 32),\n  (10670, 46, \n 60),\n  (10670, 67, 25),\n  (10670, 73, 50),\n  (10670, 75, 25),\n\n (10671, 16, 10),\n  (10671, 62, 10),\n  (10671, 65, 12),\n  (10672, 38, \n 15),\n  (10672, 71, 12),\n  (10673, 16, 3),\n  (10673, 42, 6),\n\n (10673, 43, 6),\n  (10674, 23, 5),\n  (10675, 14, 30),\n  (10675, 53, \n 10),\n  (10675, 58, 30),\n  (10676, 10, 2),\n  (10676, 19, 7),\n\n (10676, 44, 21),\n  (10677, 26, 30),\n  (10677, 33, 8),\n  (10678, 12, \n 100),\n  (10678, 33, 30),\n  (10678, 41, 120),\n  (10678, 54, 30),\n\n (10679, 59, 12),\n  (10680, 16, 50),\n  (10680, 31, 20),\n  (10680, 42, \n 40),\n  (10681, 19, 30),\n  (10681, 21, 12),\n  (10681, 64, 28),\n\n (10682, 33, 30),\n  (10682, 66, 4),\n  (10682, 75, 30),\n  (10683, 52, \n 9),\n  (10684, 40, 20),\n  (10684, 47, 40),\n  (10684, 60, 30),\n\n (10685, 10, 20),\n  (10685, 41, 4),\n  (10685, 47, 15),\n  (10686, 17, \n 30),\n  (10686, 26, 15),\n  (10687, 9, 50),\n  (10687, 29, 10),\n\n (10687, 36, 6),\n  (10688, 10, 18),\n  (10688, 28, 60),\n  (10688, 34, \n 14),\n  (10689, 1, 35),\n  (10690, 56, 20),\n  (10690, 77, 30),\n\n (10691, 1, 30),\n  (10691, 29, 40),\n  (10691, 43, 40),\n  (10691, 44, \n 24),\n  (10691, 62, 48),\n  (10692, 63, 20),\n  (10693, 9, 6),\n\n (10693, 54, 60),\n  (10693, 69, 30),\n  (10693, 73, 15),\n  (10694, 7, \n 90),\n  (10694, 59, 25),\n  (10694, 70, 50),\n  (10695, 8, 10),\n\n (10695, 12, 4),\n  (10695, 24, 20),\n  (10696, 17, 20),\n  (10696, 46, \n 18),\n  (10697, 19, 7),\n  (10697, 35, 9),\n  (10697, 58, 30),\n\n (10697, 70, 30),\n  (10698, 11, 15),\n  (10698, 17, 8),\n  (10698, 29, \n 12),\n  (10698, 65, 65),\n  (10698, 70, 8),\n  (10699, 47, 12),\n\n (10700, 1, 5),\n  (10700, 34, 12),\n  (10700, 68, 40),\n  (10700, 71, \n 60),\n  (10701, 59, 42),\n  (10701, 71, 20),\n  (10701, 76, 35),\n\n (10702, 3, 6),\n  (10702, 76, 15),\n  (10703, 2, 5),\n  (10703, 59, 35),\n\n (10703, 73, 35),\n  (10704, 4, 6),\n  (10704, 24, 35),\n  (10704, 48, \n 24),\n  (10705, 31, 20),\n  (10705, 32, 4),\n  (10706, 16, 20),\n\n (10706, 43, 24),\n  (10706, 59, 8),\n  (10707, 55, 21),\n  (10707, 57, \n 40),\n  (10707, 70, 28),\n  (10708, 5, 4),\n  (10708, 36, 5),\n  (10709, \n 8, 40),\n  (10709, 51, 28),\n  (10709, 60, 10),\n  (10710, 19, 5),\n\n (10710, 47, 5),\n  (10711, 19, 12),\n  (10711, 41, 42),\n  (10711, 53, \n 120),\n  (10712, 53, 3),\n  (10712, 56, 30),\n  (10713, 10, 18),\n\n (10713, 26, 30),\n  (10713, 45, 110),\n  (10713, 46, 24),\n  (10714, 2, \n 30),\n  (10714, 17, 27),\n  (10714, 47, 50),\n  (10714, 56, 18),\n\n (10714, 58, 12),\n  (10715, 10, 21),\n  (10715, 71, 30),\n  (10716, 21, \n 5),\n  (10716, 51, 7),\n  (10716, 61, 10),\n  (10717, 21, 32),\n\n (10717, 54, 15),\n  (10717, 69, 25),\n  (10718, 12, 36),\n  (10718, 16, \n 20),\n  (10718, 36, 40),\n  (10718, 62, 20),\n  (10719, 18, 12),\n\n (10719, 30, 3),\n  (10719, 54, 40),\n  (10720, 35, 21),\n  (10720, 71, \n 8),\n  (10721, 44, 50),\n  (10722, 2, 3),\n  (10722, 31, 50),\n  (10722, \n 68, 45),\n  (10722, 75, 42),\n  (10723, 26, 15),\n  (10724, 10, 16),\n\n (10724, 61, 5),\n  (10725, 41, 12),\n  (10725, 52, 4),\n  (10725, 55, \n 6),\n  (10726, 4, 25),\n  (10726, 11, 5),\n  (10727, 17, 20),\n  (10727, \n 56, 10),\n  (10727, 59, 10),\n  (10728, 30, 15),\n  (10728, 40, 6),\n\n (10728, 55, 12),\n  (10728, 60, 15),\n  (10729, 1, 50),\n  (10729, 21, \n 30),\n  (10729, 50, 40),\n  (10730, 16, 15),\n  (10730, 31, 3),\n\n (10730, 65, 10),\n  (10731, 21, 40),\n  (10731, 51, 30),\n  (10732, 76, \n 20),\n  (10733, 14, 16),\n  (10733, 28, 20),\n  (10733, 52, 25),\n\n (10734, 6, 30),\n  (10734, 30, 15),\n  (10734, 76, 20),\n  (10735, 61, \n 20),\n  (10735, 77, 2),\n  (10736, 65, 40),\n  (10736, 75, 20),\n\n (10737, 13, 4),\n  (10737, 41, 12),\n  (10738, 16, 3),\n  (10739, 36, \n 6),\n  (10739, 52, 18),\n  (10740, 28, 5),\n  (10740, 35, 35),\n\n (10740, 45, 40),\n  (10740, 56, 14),\n  (10741, 2, 15),\n  (10742, 3, \n 20),\n  (10742, 60, 50),\n  (10742, 72, 35),\n  (10743, 46, 28),\n\n (10744, 40, 50),\n  (10745, 18, 24),\n  (10745, 44, 16),\n  (10745, 59, \n 45),\n  (10745, 72, 7),\n  (10746, 13, 6),\n  (10746, 42, 28),\n\n (10746, 62, 9),\n  (10746, 69, 40),\n  (10747, 31, 8),\n  (10747, 41, \n 35),\n  (10747, 63, 9),\n  (10747, 69, 30),\n  (10748, 23, 44),\n\n (10748, 40, 40),\n  (10748, 56, 28),\n  (10749, 56, 15),\n  (10749, 59, \n 6),\n  (10749, 76, 10),\n  (10750, 14, 5),\n  (10750, 45, 40),\n\n (10750, 59, 25),\n  (10751, 26, 12),\n  (10751, 30, 30),\n  (10751, 50, \n 20),\n  (10751, 73, 15),\n  (10752, 1, 8),\n  (10752, 69, 3),\n  (10753, \n 45, 4),\n  (10753, 74, 5),\n  (10754, 40, 3),\n  (10755, 47, 30),\n\n (10755, 56, 30),\n  (10755, 57, 14),\n  (10755, 69, 25),\n  (10756, 18, \n 21),\n  (10756, 36, 20),\n  (10756, 68, 6),\n  (10756, 69, 20),\n\n (10757, 34, 30),\n  (10757, 59, 7),\n  (10757, 62, 30),\n  (10757, 64, \n 24),\n  (10758, 26, 20),\n  (10758, 52, 60),\n  (10758, 70, 40),\n\n (10759, 32, 10),\n  (10760, 25, 12),\n  (10760, 27, 40),\n  (10760, 43, \n 30),\n  (10761, 25, 35),\n  (10761, 75, 18),\n  (10762, 39, 16),\n\n (10762, 47, 30),\n  (10762, 51, 28),\n  (10762, 56, 60),\n  (10763, 21, \n 40),\n  (10763, 22, 6),\n  (10763, 24, 20),\n  (10764, 3, 20),\n\n (10764, 39, 130),\n  (10765, 65, 80),\n  (10766, 2, 40),\n  (10766, 7, \n 35),\n  (10766, 68, 40),\n  (10767, 42, 2),\n  (10768, 22, 4),\n\n (10768, 31, 50),\n  (10768, 60, 15),\n  (10768, 71, 12),\n  (10769, 41, \n 30),\n  (10769, 52, 15),\n  (10769, 61, 20),\n  (10769, 62, 15),\n\n (10770, 11, 15),\n  (10771, 71, 16),\n  (10772, 29, 18),\n  (10772, 59, \n 25),\n  (10773, 17, 33),\n  (10773, 31, 70),\n  (10773, 75, 7),\n\n (10774, 31, 2),\n  (10774, 66, 50),\n  (10775, 10, 6),\n  (10775, 67, \n 3),\n  (10776, 31, 16),\n  (10776, 42, 12),\n  (10776, 45, 27),\n\n (10776, 51, 120),\n  (10777, 42, 20),\n  (10778, 41, 10),\n  (10779, 16, \n 20),\n  (10779, 62, 20),\n  (10780, 70, 35),\n  (10780, 77, 15),\n\n (10781, 54, 3),\n  (10781, 56, 20),\n  (10781, 74, 35),\n  (10782, 31, \n 1),\n  (10783, 31, 10),\n  (10783, 38, 5),\n  (10784, 36, 30),\n\n (10784, 39, 2),\n  (10784, 72, 30),\n  (10785, 10, 10),\n  (10785, 75, \n 10),\n  (10786, 8, 30),\n  (10786, 30, 15),\n  (10786, 75, 42),\n\n (10787, 2, 15),\n  (10787, 29, 20),\n  (10788, 19, 50),\n  (10788, 75, \n 40),\n  (10789, 18, 30),\n  (10789, 35, 15),\n  (10789, 63, 30),\n\n (10789, 68, 18),\n  (10790, 7, 3),\n  (10790, 56, 20),\n  (10791, 29, \n 14),\n  (10791, 41, 20),\n  (10792, 2, 10),\n  (10792, 54, 3),\n\n (10792, 68, 15),\n  (10793, 41, 14),\n  (10793, 52, 8),\n  (10794, 14, \n 15),\n  (10794, 54, 6),\n  (10795, 16, 65),\n  (10795, 17, 35),\n\n (10796, 26, 21),\n  (10796, 44, 10),\n  (10796, 64, 35),\n  (10796, 69, \n 24),\n  (10797, 11, 20),\n  (10798, 62, 2),\n  (10798, 72, 10),\n\n (10799, 13, 20),\n  (10799, 24, 20),\n  (10799, 59, 25),\n  (10800, 11, \n 50),\n  (10800, 51, 10),\n  (10800, 54, 7),\n  (10801, 17, 40),\n\n (10801, 29, 20),\n  (10802, 30, 25),\n  (10802, 51, 30),\n  (10802, 55, \n 60),\n  (10802, 62, 5),\n  (10803, 19, 24),\n  (10803, 25, 15),\n\n (10803, 59, 15),\n  (10804, 10, 36),\n  (10804, 28, 24),\n  (10804, 49, \n 4),\n  (10805, 34, 10),\n  (10805, 38, 10),\n  (10806, 2, 20),\n\n (10806, 65, 2),\n  (10806, 74, 15),\n  (10807, 40, 1),\n  (10808, 56, \n 20),\n  (10808, 76, 50),\n  (10809, 52, 20),\n  (10810, 13, 7),\n\n (10810, 25, 5),\n  (10810, 70, 5),\n  (10811, 19, 15),\n  (10811, 23, \n 18),\n  (10811, 40, 30),\n  (10812, 31, 16),\n  (10812, 72, 40),\n\n (10812, 77, 20),\n  (10813, 2, 12),\n  (10813, 46, 35),\n  (10814, 41, \n 20),\n  (10814, 43, 20),\n  (10814, 48, 8),\n  (10814, 61, 30),\n\n (10815, 33, 16),\n  (10816, 38, 30),\n  (10816, 62, 20),\n  (10817, 26, \n 40),\n  (10817, 38, 30),\n  (10817, 40, 60),\n  (10817, 62, 25),\n\n (10818, 32, 20),\n  (10818, 41, 20),\n  (10819, 43, 7),\n  (10819, 75, \n 20),\n  (10820, 56, 30),\n  (10821, 35, 20),\n  (10821, 51, 6),\n\n (10822, 62, 3),\n  (10822, 70, 6),\n  (10823, 11, 20),\n  (10823, 57, \n 15),\n  (10823, 59, 40),\n  (10823, 77, 15),\n  (10824, 41, 12),\n\n (10824, 70, 9),\n  (10825, 26, 12),\n  (10825, 53, 20),\n  (10826, 31, \n 35),\n  (10826, 57, 15),\n  (10827, 10, 15),\n  (10827, 39, 21),\n\n (10828, 20, 5),\n  (10828, 38, 2),\n  (10829, 2, 10),\n  (10829, 8, 20),\n\n (10829, 13, 10),\n  (10829, 60, 21),\n  (10830, 6, 6),\n  (10830, 39, \n 28),\n  (10830, 60, 30),\n  (10830, 68, 24),\n  (10831, 19, 2),\n\n (10831, 35, 8),\n  (10831, 38, 8),\n  (10831, 43, 9),\n  (10832, 13, 3),\n\n (10832, 25, 10),\n  (10832, 44, 16),\n  (10832, 64, 3),\n  (10833, 7, \n 20),\n  (10833, 31, 9),\n  (10833, 53, 9),\n  (10834, 29, 8),\n  (10834, \n 30, 20),\n  (10835, 59, 15),\n  (10835, 77, 2),\n  (10836, 22, 52),\n\n (10836, 35, 6),\n  (10836, 57, 24),\n  (10836, 60, 60),\n  (10836, 64, \n 30),\n  (10837, 13, 6),\n  (10837, 40, 25),\n  (10837, 47, 40),\n\n (10837, 76, 21),\n  (10838, 1, 4),\n  (10838, 18, 25),\n  (10838, 36, \n 50),\n  (10839, 58, 30),\n  (10839, 72, 15),\n  (10840, 25, 6),\n\n (10840, 39, 10),\n  (10841, 10, 16),\n  (10841, 56, 30),\n  (10841, 59, \n 50),\n  (10841, 77, 15),\n  (10842, 11, 15),\n  (10842, 43, 5),\n\n (10842, 68, 20),\n  (10842, 70, 12),\n  (10843, 51, 4),\n  (10844, 22, \n 35),\n  (10845, 23, 70),\n  (10845, 35, 25),\n  (10845, 42, 42),\n\n (10845, 58, 60),\n  (10845, 64, 48),\n  (10846, 4, 21),\n  (10846, 70, \n 30),\n  (10846, 74, 20),\n  (10847, 1, 80),\n  (10847, 19, 12),\n\n (10847, 37, 60),\n  (10847, 45, 36),\n  (10847, 60, 45),\n  (10847, 71, \n 55),\n  (10848, 5, 30),\n  (10848, 9, 3),\n  (10849, 3, 49),\n  (10849, \n 26, 18),\n  (10850, 25, 20),\n  (10850, 33, 4),\n  (10850, 70, 30),\n\n (10851, 2, 5),\n  (10851, 25, 10),\n  (10851, 57, 10),\n  (10851, 59, \n 42),\n  (10852, 2, 15),\n  (10852, 17, 6),\n  (10852, 62, 50),\n\n (10853, 18, 10),\n  (10854, 10, 100),\n  (10854, 13, 65),\n  (10855, 16, \n 50),\n  (10855, 31, 14),\n  (10855, 56, 24),\n  (10855, 65, 15),\n\n (10856, 2, 20),\n  (10856, 42, 20),\n  (10857, 3, 30),\n  (10857, 26, \n 35),\n  (10857, 29, 10),\n  (10858, 7, 5),\n  (10858, 27, 10),\n\n (10858, 70, 4),\n  (10859, 24, 40),\n  (10859, 54, 35),\n  (10859, 64, \n 30),\n  (10860, 51, 3),\n  (10860, 76, 20),\n  (10861, 17, 42),\n\n (10861, 18, 20),\n  (10861, 21, 40),\n  (10861, 33, 35),\n  (10861, 62, \n 3),\n  (10862, 11, 25),\n  (10862, 52, 8),\n  (10863, 1, 20),\n  (10863, \n 58, 12),\n  (10864, 35, 4),\n  (10864, 67, 15),\n  (10865, 38, 60),\n\n (10865, 39, 80),\n  (10866, 2, 21),\n  (10866, 24, 6),\n  (10866, 30, \n 40),\n  (10867, 53, 3),\n  (10868, 26, 20),\n  (10868, 35, 30),\n\n (10868, 49, 42),\n  (10869, 1, 40),\n  (10869, 11, 10),\n  (10869, 23, \n 50),\n  (10869, 68, 20),\n  (10870, 35, 3),\n  (10870, 51, 2),\n\n (10871, 6, 50),\n  (10871, 16, 12),\n  (10871, 17, 16),\n  (10872, 55, \n 10),\n  (10872, 62, 20),\n  (10872, 64, 15),\n  (10872, 65, 21),\n\n (10873, 21, 20),\n  (10873, 28, 3),\n  (10874, 10, 10),\n  (10875, 19, \n 25),\n  (10875, 47, 21),\n  (10875, 49, 15),\n  (10876, 46, 21),\n\n (10876, 64, 20),\n  (10877, 16, 30),\n  (10877, 18, 25),\n  (10878, 20, \n 20),\n  (10879, 40, 12),\n  (10879, 65, 10),\n  (10879, 76, 10),\n\n (10880, 23, 30),\n  (10880, 61, 30),\n  (10880, 70, 50),\n  (10881, 73, \n 10),\n  (10882, 42, 25),\n  (10882, 49, 20),\n  (10882, 54, 32),\n\n (10883, 24, 8),\n  (10884, 21, 40),\n  (10884, 56, 21),\n  (10884, 65, \n 12),\n  (10885, 2, 20),\n  (10885, 24, 12),\n  (10885, 70, 30),\n\n (10885, 77, 25),\n  (10886, 10, 70),\n  (10886, 31, 35),\n  (10886, 77, \n 40),\n  (10887, 25, 5),\n  (10888, 2, 20),\n  (10888, 68, 18),\n\n (10889, 11, 40),\n  (10889, 38, 40),\n  (10890, 17, 15),\n  (10890, 34, \n 10),\n  (10890, 41, 14),\n  (10891, 30, 15),\n  (10892, 59, 40),\n\n (10893, 8, 30),\n  (10893, 24, 10),\n  (10893, 29, 24),\n  (10893, 30, \n 35),\n  (10893, 36, 20),\n  (10894, 13, 28),\n  (10894, 69, 50),\n\n (10894, 75, 120),\n  (10895, 24, 110),\n  (10895, 39, 45),\n  (10895, \n 40, 91),\n  (10895, 60, 100),\n  (10896, 45, 15),\n  (10896, 56, 16),\n\n (10897, 29, 80),\n  (10897, 30, 36),\n  (10898, 13, 5),\n  (10899, 39, \n 8),\n  (10900, 70, 3),\n  (10901, 41, 30),\n  (10901, 71, 30),\n\n (10902, 55, 30),\n  (10902, 62, 6),\n  (10903, 13, 40),\n  (10903, 65, \n 21),\n  (10903, 68, 20),\n  (10904, 58, 15),\n  (10904, 62, 35),\n\n (10905, 1, 20),\n  (10906, 61, 15),\n  (10907, 75, 14),\n  (10908, 7, \n 20),\n  (10908, 52, 14),\n  (10909, 7, 12),\n  (10909, 16, 15),\n\n (10909, 41, 5),\n  (10910, 19, 12),\n  (10910, 49, 10),\n  (10910, 61, \n 5),\n  (10911, 1, 10),\n  (10911, 17, 12),\n  (10911, 67, 15),\n\n (10912, 11, 40),\n  (10912, 29, 60),\n  (10913, 4, 30),\n  (10913, 33, \n 40),\n  (10913, 58, 15),\n  (10914, 71, 25),\n  (10915, 17, 10),\n\n (10915, 33, 30),\n  (10915, 54, 10),\n  (10916, 16, 6),\n  (10916, 32, \n 6),\n  (10916, 57, 20),\n  (10917, 30, 1),\n  (10917, 60, 10),\n\n (10918, 1, 60),\n  (10918, 60, 25),\n  (10919, 16, 24),\n  (10919, 25, \n 24),\n  (10919, 40, 20),\n  (10920, 50, 24),\n  (10921, 35, 10),\n\n (10921, 63, 40),\n  (10922, 17, 15),\n  (10922, 24, 35),\n  (10923, 42, \n 10),\n  (10923, 43, 10),\n  (10923, 67, 24),\n  (10924, 10, 20),\n\n (10924, 28, 30),\n  (10924, 75, 6),\n  (10925, 36, 25),\n  (10925, 52, \n 12),\n  (10926, 11, 2),\n  (10926, 13, 10),\n  (10926, 19, 7),\n\n (10926, 72, 10),\n  (10927, 20, 5),\n  (10927, 52, 5),\n  (10927, 76, \n 20),\n  (10928, 47, 5),\n  (10928, 76, 5),\n  (10929, 21, 60),\n\n (10929, 75, 49),\n  (10929, 77, 15),\n  (10930, 21, 36),\n  (10930, 27, \n 25),\n  (10930, 55, 25),\n  (10930, 58, 30),\n  (10931, 13, 42),\n\n (10931, 57, 30),\n  (10932, 16, 30),\n  (10932, 62, 14),\n  (10932, 72, \n 16),\n  (10932, 75, 20),\n  (10933, 53, 2),\n  (10933, 61, 30),\n\n (10934, 6, 20),\n  (10935, 1, 21),\n  (10935, 18, 4),\n  (10935, 23, 8),\n\n (10936, 36, 30),\n  (10937, 28, 8),\n  (10937, 34, 20),\n  (10938, 13, \n 20),\n  (10938, 43, 24),\n  (10938, 60, 49),\n  (10938, 71, 35),\n\n (10939, 2, 10),\n  (10939, 67, 40),\n  (10940, 7, 8),\n  (10940, 13, \n 20),\n  (10941, 31, 44),\n  (10941, 62, 30),\n  (10941, 68, 80),\n\n (10941, 72, 50),\n  (10942, 49, 28),\n  (10943, 13, 15),\n  (10943, 22, \n 21),\n  (10943, 46, 15),\n  (10944, 11, 5),\n  (10944, 44, 18),\n\n (10944, 56, 18),\n  (10945, 13, 20),\n  (10945, 31, 10),\n  (10946, 10, \n 25),\n  (10946, 24, 25),\n  (10946, 77, 40),\n  (10947, 59, 4),\n\n (10948, 50, 9),\n  (10948, 51, 40),\n  (10948, 55, 4),\n  (10949, 6, \n 12),\n  (10949, 10, 30),\n  (10949, 17, 6),\n  (10949, 62, 60),\n\n (10950, 4, 5),\n  (10951, 33, 15),\n  (10951, 41, 6),\n  (10951, 75, \n 50),\n  (10952, 6, 16),\n  (10952, 28, 2),\n  (10953, 20, 50),\n\n (10953, 31, 50),\n  (10954, 16, 28),\n  (10954, 31, 25),\n  (10954, 45, \n 30),\n  (10954, 60, 24),\n  (10955, 75, 12),\n  (10956, 21, 12),\n\n (10956, 47, 14),\n  (10956, 51, 8),\n  (10957, 30, 30),\n  (10957, 35, \n 40),\n  (10957, 64, 8),\n  (10958, 5, 20),\n  (10958, 7, 6),\n  (10958, \n 72, 5),\n  (10959, 75, 20),\n  (10960, 24, 10),\n  (10960, 41, 24),\n\n (10961, 52, 6),\n  (10961, 76, 60),\n  (10962, 7, 45),\n  (10962, 13, \n 77),\n  (10962, 53, 20),\n  (10962, 69, 9),\n  (10962, 76, 44),\n\n (10963, 60, 2),\n  (10964, 18, 6),\n  (10964, 38, 5),\n  (10964, 69, \n 10),\n  (10965, 51, 16),\n  (10966, 37, 8),\n  (10966, 56, 12),\n\n (10966, 62, 12),\n  (10967, 19, 12),\n  (10967, 49, 40),\n  (10968, 12, \n 30),\n  (10968, 24, 30),\n  (10968, 64, 4),\n  (10969, 46, 9),\n\n (10970, 52, 40),\n  (10971, 29, 14),\n  (10972, 17, 6),\n  (10972, 33, \n 7),\n  (10973, 26, 5),\n  (10973, 41, 6),\n  (10973, 75, 10),\n  (10974, \n 63, 10),\n  (10975, 8, 16),\n  (10975, 75, 10),\n  (10976, 28, 20),\n\n (10977, 39, 30),\n  (10977, 47, 30),\n  (10977, 51, 10),\n  (10977, 63, \n 20),\n  (10978, 8, 20),\n  (10978, 21, 40),\n  (10978, 40, 10),\n\n (10978, 44, 6),\n  (10979, 7, 18),\n  (10979, 12, 20),\n  (10979, 24, \n 80),\n  (10979, 27, 30),\n  (10979, 31, 24),\n  (10979, 63, 35),\n\n (10980, 75, 40),\n  (10981, 38, 60),\n  (10982, 7, 20),\n  (10982, 43, \n 9),\n  (10983, 13, 84),\n  (10983, 57, 15),\n  (10984, 16, 55),\n\n (10984, 24, 20),\n  (10984, 36, 40),\n  (10985, 16, 36),\n  (10985, 18, \n 8),\n  (10985, 32, 35),\n  (10986, 11, 30),\n  (10986, 20, 15),\n\n (10986, 76, 10),\n  (10986, 77, 15),\n  (10987, 7, 60),\n  (10987, 43, \n 6),\n  (10987, 72, 20),\n  (10988, 7, 60),\n  (10988, 62, 40),\n\n (10989, 6, 40),\n  (10989, 11, 15),\n  (10989, 41, 4),\n  (10990, 21, \n 65),\n  (10990, 34, 60),\n  (10990, 55, 65),\n  (10990, 61, 66),\n\n (10991, 2, 50),\n  (10991, 70, 20),\n  (10991, 76, 90),\n  (10992, 72, \n 2),\n  (10993, 29, 50),\n  (10993, 41, 35),\n  (10994, 59, 18),\n\n (10995, 51, 20),\n  (10995, 60, 4),\n  (10996, 42, 40),\n  (10997, 32, \n 50),\n  (10997, 46, 20),\n  (10997, 52, 20),\n  (10998, 24, 12),\n\n (10998, 61, 7),\n  (10998, 74, 20),\n  (10998, 75, 30),\n  (10999, 41, \n 20),\n  (10999, 51, 15),\n  (10999, 77, 21),\n  (11000, 4, 25),\n\n (11000, 24, 30),\n  (11000, 77, 30),\n  (11001, 7, 60),\n  (11001, 22, \n 25),\n  (11001, 46, 25),\n  (11001, 55, 6),\n  (11002, 13, 56),\n\n (11002, 35, 15),\n  (11002, 42, 24),\n  (11002, 55, 40),\n  (11003, 1, \n 4),\n  (11003, 40, 10),\n  (11003, 52, 10),\n  (11004, 26, 6),\n\n (11004, 76, 6),\n  (11005, 1, 2),\n  (11005, 59, 10),\n  (11006, 1, 8),\n\n (11006, 29, 2),\n  (11007, 8, 30),\n  (11007, 29, 10),\n  (11007, 42, \n 14),\n  (11008, 28, 70),\n  (11008, 34, 90),\n  (11008, 71, 21),\n\n (11009, 24, 12),\n  (11009, 36, 18),\n  (11009, 60, 9),\n  (11010, 7, \n 20),\n  (11010, 24, 10),\n  (11011, 58, 40),\n  (11011, 71, 20),\n\n (11012, 19, 50),\n  (11012, 60, 36),\n  (11012, 71, 60),\n  (11013, 23, \n 10),\n  (11013, 42, 4),\n  (11013, 45, 20),\n  (11013, 68, 2),\n\n (11014, 41, 28),\n  (11015, 30, 15),\n  (11015, 77, 18),\n  (11016, 31, \n 15),\n  (11016, 36, 16),\n  (11017, 3, 25),\n  (11017, 59, 110),\n\n (11017, 70, 30),\n  (11018, 12, 20),\n  (11018, 18, 10),\n  (11018, 56, \n 5),\n  (11019, 46, 3),\n  (11019, 49, 2),\n  (11020, 10, 24),\n  (11021, \n 2, 11),\n  (11021, 20, 15),\n  (11021, 26, 63),\n  (11021, 51, 44),\n\n (11021, 72, 35),\n  (11022, 19, 35),\n  (11022, 69, 30),\n  (11023, 7, \n 4),\n  (11023, 43, 30),\n  (11024, 26, 12),\n  (11024, 33, 30),\n\n (11024, 65, 21),\n  (11024, 71, 50),\n  (11025, 1, 10),\n  (11025, 13, \n 20),\n  (11026, 18, 8),\n  (11026, 51, 10),\n  (11027, 24, 30),\n\n (11027, 62, 21),\n  (11028, 55, 35),\n  (11028, 59, 24),\n  (11029, 56, \n 20),\n  (11029, 63, 12),\n  (11030, 2, 100),\n  (11030, 5, 70),\n\n (11030, 29, 60),\n  (11030, 59, 100),\n  (11031, 1, 45),\n  (11031, 13, \n 80),\n  (11031, 24, 21),\n  (11031, 64, 20),\n  (11031, 71, 16),\n\n (11032, 36, 35),\n  (11032, 38, 25),\n  (11032, 59, 30),\n  (11033, 53, \n 70),\n  (11033, 69, 36),\n  (11034, 21, 15),\n  (11034, 44, 12),\n\n (11034, 61, 6),\n  (11035, 1, 10),\n  (11035, 35, 60),\n  (11035, 42, \n 30),\n  (11035, 54, 10),\n  (11036, 13, 7),\n  (11036, 59, 30),\n\n (11037, 70, 4),\n  (11038, 40, 5),\n  (11038, 52, 2),\n  (11038, 71, \n 30),\n  (11039, 28, 20),\n  (11039, 35, 24),\n  (11039, 49, 60),\n\n (11039, 57, 28),\n  (11040, 21, 20),\n  (11041, 2, 30),\n  (11041, 63, \n 30),\n  (11042, 44, 15),\n  (11042, 61, 4),\n  (11043, 11, 10),\n\n (11044, 62, 12),\n  (11045, 33, 15),\n  (11045, 51, 24),\n  (11046, 12, \n 20),\n  (11046, 32, 15),\n  (11046, 35, 18),\n  (11047, 1, 25),\n\n (11047, 5, 30),\n  (11048, 68, 42),\n  (11049, 2, 10),\n  (11049, 12, \n 4),\n  (11050, 76, 50),\n  (11051, 24, 10),\n  (11052, 43, 30),\n\n (11052, 61, 10),\n  (11053, 18, 35),\n  (11053, 32, 20),\n  (11053, 64, \n 25),\n  (11054, 33, 10),\n  (11054, 67, 20),\n  (11055, 24, 15),\n\n (11055, 25, 15),\n  (11055, 51, 20),\n  (11055, 57, 20),\n  (11056, 7, \n 40),\n  (11056, 55, 35),\n  (11056, 60, 50),\n  (11057, 70, 3),\n\n (11058, 21, 3),\n  (11058, 60, 21),\n  (11058, 61, 4),\n  (11059, 13, \n 30),\n  (11059, 17, 12),\n  (11059, 60, 35),\n  (11060, 60, 4),\n\n (11060, 77, 10),\n  (11061, 60, 15),\n  (11062, 53, 10),\n  (11062, 70, \n 12),\n  (11063, 34, 30),\n  (11063, 40, 40),\n  (11063, 41, 30),\n\n (11064, 17, 77),\n  (11064, 41, 12),\n  (11064, 53, 25),\n  (11064, 55, \n 4),\n  (11064, 68, 55),\n  (11065, 30, 4),\n  (11065, 54, 20),\n\n (11066, 16, 3),\n  (11066, 19, 42),\n  (11066, 34, 35),\n  (11067, 41, \n 9),\n  (11068, 28, 8),\n  (11068, 43, 36),\n  (11068, 77, 28),\n\n (11069, 39, 20),\n  (11070, 1, 40),\n  (11070, 2, 20),\n  (11070, 16, \n 30),\n  (11070, 31, 20),\n  (11071, 7, 15),\n  (11071, 13, 10),\n\n (11072, 2, 8),\n  (11072, 41, 40),\n  (11072, 50, 22),\n  (11072, 64, \n 130),\n  (11073, 11, 10),\n  (11073, 24, 20),\n  (11074, 16, 14),\n\n (11075, 2, 10),\n  (11075, 46, 30),\n  (11075, 76, 2),\n  (11076, 6, \n 20),\n  (11076, 14, 20),\n  (11076, 19, 10),\n  (11077, 2, 24),\n\n (11077, 3, 4),\n  (11077, 4, 1),\n  (11077, 6, 1),\n  (11077, 7, 1),\n\n (11077, 8, 2),\n  (11077, 10, 1),\n  (11077, 12, 2),\n  (11077, 13, 4),\n\n (11077, 14, 1),\n  (11077, 16, 2),\n  (11077, 20, 1),\n  (11077, 23, 2),\n\n (11077, 32, 1),\n  (11077, 39, 2),\n  (11077, 41, 3),\n  (11077, 46, 3),\n\n (11077, 52, 2),\n  (11077, 55, 2),\n  (11077, 60, 2),\n  (11077, 64, 2),\n\n (11077, 66, 1),\n  (11077, 73, 2),\n  (11077, 75, 4),\n  (11077, 77, 2);\n\nResult\n\n INSERT 0 2155\n\nThe result can also be seen here:\n\nDemo Database - order_details",
+                "heading": "ORDER_DETAILS"
+            },
+            {
+                "content": "We will also add a table called testproducts for demonstration purposes later in the tutorial.\n\nThe following SQL statement will create a table named \ntestproducts:\n\nCREATE TABLE testproducts\n\n CREATE TABLE testproducts (\n  testproduct_id SERIAL NOT NULL \n PRIMARY KEY,\n  product_name VARCHAR(255),\n  category_id \n INT\n);\n\nResult\n\n CREATE TABLE\n\nWe will fill the table with 10 dummy products:\n\nINSERT INTO testproducts\n\nINSERT INTO testproducts (product_name, category_id)\nVALUES\n\n  ('Johns Fruit Cake', 3),\n\n  ('Marys Healthy Mix', 9),\n\n  ('Peters Scary Stuff', 10),\n\n  ('Jims Secret Recipe', 11),\n\n  ('Elisabeths Best Apples', 12),\n\n  ('Janes Favorite Cheese', 4),\n\n  ('Billys Home Made Pizza', 13),\n\n  ('Ellas Special Salmon', 8),\n\n  ('Roberts Rich Spaghetti', 5),\n\n  ('Mias Popular Ice', 14);\n\nResult\n\n INSERT 0 10\n\nThe result can also be seen here:\n\nDemo Database - testproducts\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "TESTPRODUCTS"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:53Z",
+        "subject": "PostgreSQL",
+        "title": "Create Demo Database"
+    },
+    {
+        "url": "https://www.w3schools.com/postgresql/postgresql_operators.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "postgresql_postgresql_operators",
+        "code_examples": [
+            {
+                "code": "SELECT * FROM cars\n\n WHERE brand = 'Volvo';",
+                "language": "postgresql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "PostgreSQL Home\nPostgreSQL Intro\nPostgreSQL Install\nPostgreSQL Get Started\nPostgreSQL pgAdmin 4",
+                "heading": "PostgreSQL Tutorial"
+            },
+            {
+                "content": "PostgreSQL CREATE TABLE\nPostgreSQL INSERT INTO\nPostgreSQL Fetch Data\nPostgreSQL ADD COLUMN\nPostgreSQL UPDATE\nPostgreSQL ALTER COLUMN\nPostgreSQL DROP COLUMN\nPostgreSQL DELETE\nPostgreSQL DROP TABLE\n\nCreate Demo Database",
+                "heading": "Database"
+            },
+            {
+                "content": "PostgreSQL Operators\nPostgreSQL SELECT\nPostgreSQL SELECT DISTINCT\nPostgreSQL WHERE\nPostgreSQL ORDER BY\nPostgreSQL LIMIT\nPostgreSQL MIN and MAX\nPostgreSQL COUNT\nPostgreSQL SUM\nPostgreSQL AVG\nPostgreSQL LIKE\nPostgreSQL IN\nPostgreSQL BETWEEN\nPostgreSQL AS\nPostgreSQL Joins\nPostgreSQL INNER JOIN\nPostgreSQL LEFT JOIN\nPostgreSQL RIGHT JOIN\nPostgreSQL FULL JOIN\nPostgreSQL CROSS JOIN\nPostgreSQL UNION\nPostgreSQL GROUP BY\nPostgreSQL HAVING\nPostgreSQL EXISTS\nPostgreSQL ANY\nPostgreSQL ALL\nPostgreSQL CASE",
+                "heading": "PostgreSQL Syntax"
+            },
+            {
+                "content": "PostgreSQL Certificate",
+                "heading": "PostgreSQL Cert"
+            },
+            {
+                "content": "We can operate with different operators in the WHERE clause:\n\n=Equal to\n\n<Less than\n\n>Greater than\n\n<=Less than or equal to\n\n>=Greater than or equal to\n\n<>Not equal to\n\n!=Not equal to\n\nLIKECheck if a value matches a pattern (case sensitive)\n\nILIKECheck if a value matches a pattern (case \n insensitive)\n\nANDLogical AND\n\nORLogical OR\n\nINCheck if a value matches any value within a provided list\n\nBETWEENCheck if a value is within a specified range\n\nIS NULLCheck if a value is NULL\n\nNOTMakes a negative result e.g. \n NOT LIKE, NOT IN, \n NOT BETWEEN",
+                "heading": "Operators in the WHERE clause"
+            },
+            {
+                "content": "The = operator is used when you want to return all records where a\ncolumn is equal to a specified value:\n\n Example\n Return all records where the brand is 'Volvo':\n\n SELECT * FROM cars\n\n WHERE brand = 'Volvo';\n\n Run Example »",
+                "heading": "Equal To"
+            },
+            {
+                "content": "The < operator is used when you want to return all records where a\ncolumn is less than a specified value.\n\n Example\n Return all records where the year is less than 1975:\n\n SELECT * FROM cars\n\n WHERE year < 1975;\n\n Run Example »",
+                "heading": "Less Than"
+            },
+            {
+                "content": "The > operator is used when you want to return all records where a\ncolumns is greater than a specified value.\n\n Example\n Return all records where the year is greater than 1975:\n\n SELECT * FROM cars\n\n WHERE year > 1975;\n\n Run Example »",
+                "heading": "Greater Than"
+            },
+            {
+                "content": "The <= operator is used when you want to return all records where a\ncolumn is less than, or equal to, a specified value.\n\n Example\n Return all records where the year is less than or equal to 1975:\n\n SELECT * FROM cars\n\n WHERE year <= 1975;\n\n Run Example »",
+                "heading": "Less Than or Equal To"
+            },
+            {
+                "content": "The >= operator is used when you want to return all records where a\ncolumns is greater than, or equal to, a specified value.\n\n Example\n Return all records where the year is greater than or equal 1975:\n\n SELECT * FROM cars\n\n WHERE year >= 1975;\n\n Run Example »",
+                "heading": "Greater Than or Equal to"
+            },
+            {
+                "content": "The <> operator is used when you want to return all records where a\ncolumn is NOT equal to a specified value:\n\n Example\n Return all records where the brand is NOT 'Volvo':\n\n SELECT * FROM cars\n\n WHERE brand <> 'Volvo';\n\n Run Example »\n\nYou will get the same result with the != operator:\n\n Example\n Return all records where the brand is NOT 'Volvo':\n\n SELECT * FROM cars\n\n WHERE brand != 'Volvo';\n\n Run Example »",
+                "heading": "Not Equal To"
+            },
+            {
+                "content": "The LIKE operator is used when you want to return all records where a\ncolumn is equal to a specified pattern.\n\nThe pattern can be an absolute value like 'Volvo', or with a wildcard that has a special meaning.\n\nThere are two wildcards often used in conjunction with the LIKE operator:\n\nThe percent sign %, represents zero, one, or multiple characters.\n\nThe underscore sign _, represents one single character.\n\n Example\n Return all records where the model STARTS with a capital 'M':\n\n SELECT * FROM cars\n\n WHERE model LIKE 'M%';\n\n Run Example »\n\nThe LIKE operator is case sensitive.",
+                "heading": "LIKE"
+            },
+            {
+                "content": "Same as the LIKE operator, but\nILIKE is case insensitive.\n\n Example\n Return all records where the model start with a 'm':\n\n SELECT * FROM cars\n\n WHERE model ILIKE 'm%';\n\n Run Example »",
+                "heading": "ILIKE"
+            },
+            {
+                "content": "The logical AND operator is used when you want to\ncheck more that one condition:\n\n Example\n Return all records where the brand is 'Volvo' and the year is 1968:\n\n SELECT * FROM cars\n\n WHERE brand = 'Volvo' AND year = 1968;\n\n Run Example »",
+                "heading": "AND"
+            },
+            {
+                "content": "The logical OR operator is used when you can accept that only one of many\nconditions is true:\n\n Example\n Return all records where the brand is 'Volvo' OR the year is 1975:\n\n SELECT * FROM cars\n\n WHERE brand = 'Volvo' OR year = 1975;\n\n Run Example »",
+                "heading": "OR"
+            },
+            {
+                "content": "The IN operator is used when a column's value matches any of the values in a list:\n\n Example\n Return all records where the brand is present in this list: ('Volvo', 'Mercedes', 'Ford'):\n\n SELECT * FROM cars\n\n WHERE brand IN ('Volvo', 'Mercedes', 'Ford');\n\n Run Example »",
+                "heading": "IN"
+            },
+            {
+                "content": "The BETWEEN operator is used to check if a column's value\nis between a specified range of values:\n\n Example\n Return all records where the year is between 1970 and 1980:\n\n SELECT * FROM cars\n\n WHERE year BETWEEN 1970 AND 1980;\n\n Run Example »\n\nThe BETWEEN operator includes the\nfrom and\nto values, meaning that in the above example,\nthe result would include cars made in 1970 and 1980 as well.",
+                "heading": "BETWEEN"
+            },
+            {
+                "content": "The IS NULL operator is used to check if a column's value\nis NULL:\n\n Example\n Return all records where the model is NULL:\n\n SELECT * FROM cars\n\n WHERE model IS NULL;\n\n Run Example »",
+                "heading": "IS NULL"
+            },
+            {
+                "content": "The NOT operator can be used together with \nLIKE, ILIKE, \nIN, BETWEEN, and \nNULL operators to reverse the truth of the operator.\n\n Example: NOT LIKE\n Return all records where the brand does NOT start with a capital 'B' (case sensitive):\n\n SELECT * FROM cars\n\n WHERE brand \n NOT LIKE 'B%';\n\n Run Example »\n\n Example: NOT ILIKE\n Return all records where the brand does NOT start with a 'b' (case \n insensitive):\n\n SELECT * FROM cars\n\n WHERE brand \n NOT ILIKE 'b%';\n\n Run Example »\n\n Example: NOT IN\n Return all records where the brand is NOT present in this list: ('Volvo', 'Mercedes', 'Ford'):\n\n SELECT * FROM cars\n\n WHERE brand NOT IN ('Volvo', 'Mercedes', 'Ford');\n\n Run Example »\n\n Example: NOT BETWEEN\n Return all records where the year is NOT between 1970 and 1980:\n\n SELECT * FROM cars\n\n WHERE year NOT BETWEEN 1970 AND 1980;\n\n Run Example »\n\nThe NOT BETWEEN operator excludes the\nfrom and\nto values, meaning that in the above example,\nthe result would not include cars made in 1970 and 1980.\n\n Example: IS NOT NULL\n Return all records where the model is NOT null:\n\n SELECT * FROM cars\n\n WHERE model IS NOT NULL;\n\n Run Example »\n\nThe cars table has no columns with NULL values,\nso the example above will return all 4 rows.\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "NOT"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:54Z",
+        "subject": "PostgreSQL",
+        "title": "PostgreSQL Operators"
+    },
+    {
+        "url": "https://www.w3schools.com/postgresql/postgresql_select.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "postgresql_postgresql_select",
+        "code_examples": [
+            {
+                "code": "SELECT \n customer_name, country FROM customers;",
+                "language": "postgresql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "PostgreSQL Home\nPostgreSQL Intro\nPostgreSQL Install\nPostgreSQL Get Started\nPostgreSQL pgAdmin 4",
+                "heading": "PostgreSQL Tutorial"
+            },
+            {
+                "content": "PostgreSQL CREATE TABLE\nPostgreSQL INSERT INTO\nPostgreSQL Fetch Data\nPostgreSQL ADD COLUMN\nPostgreSQL UPDATE\nPostgreSQL ALTER COLUMN\nPostgreSQL DROP COLUMN\nPostgreSQL DELETE\nPostgreSQL DROP TABLE\n\nCreate Demo Database",
+                "heading": "Database"
+            },
+            {
+                "content": "PostgreSQL Operators\nPostgreSQL SELECT\nPostgreSQL SELECT DISTINCT\nPostgreSQL WHERE\nPostgreSQL ORDER BY\nPostgreSQL LIMIT\nPostgreSQL MIN and MAX\nPostgreSQL COUNT\nPostgreSQL SUM\nPostgreSQL AVG\nPostgreSQL LIKE\nPostgreSQL IN\nPostgreSQL BETWEEN\nPostgreSQL AS\nPostgreSQL Joins\nPostgreSQL INNER JOIN\nPostgreSQL LEFT JOIN\nPostgreSQL RIGHT JOIN\nPostgreSQL FULL JOIN\nPostgreSQL CROSS JOIN\nPostgreSQL UNION\nPostgreSQL GROUP BY\nPostgreSQL HAVING\nPostgreSQL EXISTS\nPostgreSQL ANY\nPostgreSQL ALL\nPostgreSQL CASE",
+                "heading": "PostgreSQL Syntax"
+            },
+            {
+                "content": "PostgreSQL Certificate",
+                "heading": "PostgreSQL Cert"
+            },
+            {
+                "content": "To retrieve data from a database, we use the\nSELECT statement.",
+                "heading": "Select Data"
+            },
+            {
+                "content": "By specifying the column names, we can choose which columns to select:\n\n Example\n\n SELECT \n customer_name, country FROM customers;\n\n Run Example »",
+                "heading": "Specify Columns"
+            },
+            {
+                "content": "Specify a * instead of the column names to select all columns:\n\n Example\n\n SELECT * FROM customers;\n\n Run Example »",
+                "heading": "Return ALL Columns"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:54Z",
+        "subject": "PostgreSQL",
+        "title": "PostgreSQL Select Data"
+    },
+    {
+        "url": "https://www.w3schools.com/postgresql/postgresql_select_distinct.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "postgresql_postgresql_select_distinct",
+        "code_examples": [
+            {
+                "code": "SELECT DISTINCT country FROM customers;",
+                "language": "postgresql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "PostgreSQL Home\nPostgreSQL Intro\nPostgreSQL Install\nPostgreSQL Get Started\nPostgreSQL pgAdmin 4",
+                "heading": "PostgreSQL Tutorial"
+            },
+            {
+                "content": "PostgreSQL CREATE TABLE\nPostgreSQL INSERT INTO\nPostgreSQL Fetch Data\nPostgreSQL ADD COLUMN\nPostgreSQL UPDATE\nPostgreSQL ALTER COLUMN\nPostgreSQL DROP COLUMN\nPostgreSQL DELETE\nPostgreSQL DROP TABLE\n\nCreate Demo Database",
+                "heading": "Database"
+            },
+            {
+                "content": "PostgreSQL Operators\nPostgreSQL SELECT\nPostgreSQL SELECT DISTINCT\nPostgreSQL WHERE\nPostgreSQL ORDER BY\nPostgreSQL LIMIT\nPostgreSQL MIN and MAX\nPostgreSQL COUNT\nPostgreSQL SUM\nPostgreSQL AVG\nPostgreSQL LIKE\nPostgreSQL IN\nPostgreSQL BETWEEN\nPostgreSQL AS\nPostgreSQL Joins\nPostgreSQL INNER JOIN\nPostgreSQL LEFT JOIN\nPostgreSQL RIGHT JOIN\nPostgreSQL FULL JOIN\nPostgreSQL CROSS JOIN\nPostgreSQL UNION\nPostgreSQL GROUP BY\nPostgreSQL HAVING\nPostgreSQL EXISTS\nPostgreSQL ANY\nPostgreSQL ALL\nPostgreSQL CASE",
+                "heading": "PostgreSQL Syntax"
+            },
+            {
+                "content": "PostgreSQL Certificate",
+                "heading": "PostgreSQL Cert"
+            },
+            {
+                "content": "The SELECT DISTINCT\nstatement is used to return only distinct (different) values.\n\nInside a table, a column often contains many duplicate values\nand sometimes you only want to list the different (distinct) values.\n\n Example\n Select only the DISTINCT values from the country\n column in the customers table:\n\n SELECT DISTINCT country FROM customers;\n\n Run Example »\n\nEven though the customers table has 91 records, it only has 21 different countries, and that is what you get as a\nresult when executing the SELECT DISTINCT \nstatement above",
+                "heading": "The SELECT DISTINCT Statement"
+            },
+            {
+                "content": "We can also use the DISTINCT keyword in combination with the \nCOUNT statement, which in the example below will return the number of\ndifferent countries there are in the customers table.\n\n Example\n Return the number of different countries there are in the customers table:\n\n SELECT COUNT(DISTINCT country) FROM customers;\n\n Run Example »",
+                "heading": "SELECT COUNT(DISTINCT)"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:54Z",
+        "subject": "PostgreSQL",
+        "title": "PostgreSQL SELECT DISTINCT"
+    },
+    {
+        "url": "https://www.w3schools.com/postgresql/postgresql_where.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "postgresql_postgresql_where",
+        "code_examples": [
+            {
+                "code": "SELECT * FROM customers\n\n WHERE \n city = 'London';",
+                "language": "postgresql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "PostgreSQL Home\nPostgreSQL Intro\nPostgreSQL Install\nPostgreSQL Get Started\nPostgreSQL pgAdmin 4",
+                "heading": "PostgreSQL Tutorial"
+            },
+            {
+                "content": "PostgreSQL CREATE TABLE\nPostgreSQL INSERT INTO\nPostgreSQL Fetch Data\nPostgreSQL ADD COLUMN\nPostgreSQL UPDATE\nPostgreSQL ALTER COLUMN\nPostgreSQL DROP COLUMN\nPostgreSQL DELETE\nPostgreSQL DROP TABLE\n\nCreate Demo Database",
+                "heading": "Database"
+            },
+            {
+                "content": "PostgreSQL Operators\nPostgreSQL SELECT\nPostgreSQL SELECT DISTINCT\nPostgreSQL WHERE\nPostgreSQL ORDER BY\nPostgreSQL LIMIT\nPostgreSQL MIN and MAX\nPostgreSQL COUNT\nPostgreSQL SUM\nPostgreSQL AVG\nPostgreSQL LIKE\nPostgreSQL IN\nPostgreSQL BETWEEN\nPostgreSQL AS\nPostgreSQL Joins\nPostgreSQL INNER JOIN\nPostgreSQL LEFT JOIN\nPostgreSQL RIGHT JOIN\nPostgreSQL FULL JOIN\nPostgreSQL CROSS JOIN\nPostgreSQL UNION\nPostgreSQL GROUP BY\nPostgreSQL HAVING\nPostgreSQL EXISTS\nPostgreSQL ANY\nPostgreSQL ALL\nPostgreSQL CASE",
+                "heading": "PostgreSQL Syntax"
+            },
+            {
+                "content": "PostgreSQL Certificate",
+                "heading": "PostgreSQL Cert"
+            },
+            {
+                "content": "The WHERE clause is used to filter records.\n\nIt is used to extract only those records that fulfill a specified condition.\n\nIf we want to return only the records where city is \nLondon,\nwe can specify that in the WHERE clause:\n\n Example\n\n SELECT * FROM customers\n\n WHERE \n city = 'London';\n\n Run Example »",
+                "heading": "Filter Records"
+            },
+            {
+                "content": "PostgreSQL requires quotes around text values.\n\nHowever, numeric fields should not be enclosed in quotes:\n\n Example\n\n SELECT * FROM customers\n\n WHERE \n customer_id = 19;\n\n Run Example »\n\nQuotes around numeric fields will not fail, but it is good practice to always write numeric values without quotes.",
+                "heading": "Text Fields vs. Numeric Fields"
+            },
+            {
+                "content": "Use the > operator to return all records where\ncustomer_id is greater than 80:\n\n Example\n\n SELECT * FROM customers\n\n WHERE \n customer_id > 80;\n\n Run Example »\n\nQuotes around numeric fields will not fail, but it is good practice to always write numeric values without quotes.\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Greater than"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:54Z",
+        "subject": "PostgreSQL",
+        "title": "PostgreSQL WHERE - Filter Data"
+    },
+    {
+        "url": "https://www.w3schools.com/postgresql/postgresql_orderby.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "postgresql_postgresql_orderby",
+        "code_examples": [
+            {
+                "code": "SELECT * FROM products\n\n ORDER BY price;",
+                "language": "postgresql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "PostgreSQL Home\nPostgreSQL Intro\nPostgreSQL Install\nPostgreSQL Get Started\nPostgreSQL pgAdmin 4",
+                "heading": "PostgreSQL Tutorial"
+            },
+            {
+                "content": "PostgreSQL CREATE TABLE\nPostgreSQL INSERT INTO\nPostgreSQL Fetch Data\nPostgreSQL ADD COLUMN\nPostgreSQL UPDATE\nPostgreSQL ALTER COLUMN\nPostgreSQL DROP COLUMN\nPostgreSQL DELETE\nPostgreSQL DROP TABLE\n\nCreate Demo Database",
+                "heading": "Database"
+            },
+            {
+                "content": "PostgreSQL Operators\nPostgreSQL SELECT\nPostgreSQL SELECT DISTINCT\nPostgreSQL WHERE\nPostgreSQL ORDER BY\nPostgreSQL LIMIT\nPostgreSQL MIN and MAX\nPostgreSQL COUNT\nPostgreSQL SUM\nPostgreSQL AVG\nPostgreSQL LIKE\nPostgreSQL IN\nPostgreSQL BETWEEN\nPostgreSQL AS\nPostgreSQL Joins\nPostgreSQL INNER JOIN\nPostgreSQL LEFT JOIN\nPostgreSQL RIGHT JOIN\nPostgreSQL FULL JOIN\nPostgreSQL CROSS JOIN\nPostgreSQL UNION\nPostgreSQL GROUP BY\nPostgreSQL HAVING\nPostgreSQL EXISTS\nPostgreSQL ANY\nPostgreSQL ALL\nPostgreSQL CASE",
+                "heading": "PostgreSQL Syntax"
+            },
+            {
+                "content": "PostgreSQL Certificate",
+                "heading": "PostgreSQL Cert"
+            },
+            {
+                "content": "The ORDER BY keyword is used to sort the result in ascending or descending order.\n\nThe ORDER BY keyword sorts the records in ascending order by default.\nTo sort the records in descending order, use the DESC keyword.\n\n Example\n Sort the table by price:\n\n SELECT * FROM products\n\n ORDER BY price;\n\n Run Example »",
+                "heading": "Sort Data"
+            },
+            {
+                "content": "The ORDER BY keyword sorts the records in ascending order by default.\nTo sort the records in descending order, use the DESC keyword.\n\n Example\n Sort the table by price, in descending order:\n\n SELECT * FROM products\n\n ORDER BY price DESC;\n\n Run Example »",
+                "heading": "DESC"
+            },
+            {
+                "content": "For string values the ORDER BY keyword will order alphabetically:\n\n Example\n Sort the table by product name:\n\n SELECT * FROM products\n\n ORDER BY product_name;\n\n Run Example »",
+                "heading": "Sort Alphabetically"
+            },
+            {
+                "content": "To sort the table reverse alphabetically, use the DESC keyword:\n\n Example\n Sort the table by product name, in descending order:\n\n SELECT * FROM products\n\n ORDER BY product_name DESC;\n\n Run Example »\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Alphabetically DESC"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:54Z",
+        "subject": "PostgreSQL",
+        "title": "PostgreSQL ORDER BY"
+    },
+    {
+        "url": "https://www.w3schools.com/postgresql/postgresql_limit.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "postgresql_postgresql_limit",
+        "code_examples": [
+            {
+                "code": "SELECT * FROM customers\n\n LIMIT 20;",
+                "language": "postgresql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "PostgreSQL Home\nPostgreSQL Intro\nPostgreSQL Install\nPostgreSQL Get Started\nPostgreSQL pgAdmin 4",
+                "heading": "PostgreSQL Tutorial"
+            },
+            {
+                "content": "PostgreSQL CREATE TABLE\nPostgreSQL INSERT INTO\nPostgreSQL Fetch Data\nPostgreSQL ADD COLUMN\nPostgreSQL UPDATE\nPostgreSQL ALTER COLUMN\nPostgreSQL DROP COLUMN\nPostgreSQL DELETE\nPostgreSQL DROP TABLE\n\nCreate Demo Database",
+                "heading": "Database"
+            },
+            {
+                "content": "PostgreSQL Operators\nPostgreSQL SELECT\nPostgreSQL SELECT DISTINCT\nPostgreSQL WHERE\nPostgreSQL ORDER BY\nPostgreSQL LIMIT\nPostgreSQL MIN and MAX\nPostgreSQL COUNT\nPostgreSQL SUM\nPostgreSQL AVG\nPostgreSQL LIKE\nPostgreSQL IN\nPostgreSQL BETWEEN\nPostgreSQL AS\nPostgreSQL Joins\nPostgreSQL INNER JOIN\nPostgreSQL LEFT JOIN\nPostgreSQL RIGHT JOIN\nPostgreSQL FULL JOIN\nPostgreSQL CROSS JOIN\nPostgreSQL UNION\nPostgreSQL GROUP BY\nPostgreSQL HAVING\nPostgreSQL EXISTS\nPostgreSQL ANY\nPostgreSQL ALL\nPostgreSQL CASE",
+                "heading": "PostgreSQL Syntax"
+            },
+            {
+                "content": "PostgreSQL Certificate",
+                "heading": "PostgreSQL Cert"
+            },
+            {
+                "content": "The LIMIT\nclause is used to limit the maximum number of records to return.\n\n Example\n Return only the 20 first records from the customers table:\n\n SELECT * FROM customers\n\n LIMIT 20;\n\n Run Example »",
+                "heading": "The LIMIT Clause"
+            },
+            {
+                "content": "The OFFSET\nclause is used to specify where to start selecting the records to return.\n\nIf you want to return 20 records, but start at number 40, you can use both\nLIMIT and OFFSET.\n\nNote: The first record is number \n0, so when you specify\nOFFSET 40 it means starting at record number 41.\n\n Example\n Return 20 records, starting from the 41th record:\n\n SELECT * FROM customers\n\n LIMIT 20 OFFSET 40;\n\n Run Example »",
+                "heading": "The OFFSET Clause"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:54Z",
+        "subject": "PostgreSQL",
+        "title": "PostgreSQL LIMIT"
+    },
+    {
+        "url": "https://www.w3schools.com/postgresql/postgresql_min_max.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "postgresql_postgresql_min_max",
+        "code_examples": [
+            {
+                "code": "SELECT MIN(price)\n\n FROM products;",
+                "language": "postgresql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "PostgreSQL Home\nPostgreSQL Intro\nPostgreSQL Install\nPostgreSQL Get Started\nPostgreSQL pgAdmin 4",
+                "heading": "PostgreSQL Tutorial"
+            },
+            {
+                "content": "PostgreSQL CREATE TABLE\nPostgreSQL INSERT INTO\nPostgreSQL Fetch Data\nPostgreSQL ADD COLUMN\nPostgreSQL UPDATE\nPostgreSQL ALTER COLUMN\nPostgreSQL DROP COLUMN\nPostgreSQL DELETE\nPostgreSQL DROP TABLE\n\nCreate Demo Database",
+                "heading": "Database"
+            },
+            {
+                "content": "PostgreSQL Operators\nPostgreSQL SELECT\nPostgreSQL SELECT DISTINCT\nPostgreSQL WHERE\nPostgreSQL ORDER BY\nPostgreSQL LIMIT\nPostgreSQL MIN and MAX\nPostgreSQL COUNT\nPostgreSQL SUM\nPostgreSQL AVG\nPostgreSQL LIKE\nPostgreSQL IN\nPostgreSQL BETWEEN\nPostgreSQL AS\nPostgreSQL Joins\nPostgreSQL INNER JOIN\nPostgreSQL LEFT JOIN\nPostgreSQL RIGHT JOIN\nPostgreSQL FULL JOIN\nPostgreSQL CROSS JOIN\nPostgreSQL UNION\nPostgreSQL GROUP BY\nPostgreSQL HAVING\nPostgreSQL EXISTS\nPostgreSQL ANY\nPostgreSQL ALL\nPostgreSQL CASE",
+                "heading": "PostgreSQL Syntax"
+            },
+            {
+                "content": "PostgreSQL Certificate",
+                "heading": "PostgreSQL Cert"
+            },
+            {
+                "content": "The MIN()\nfunction returns the smallest value of the selected column.\n\n Example\n Return the lowest price in the products table:\n\n SELECT MIN(price)\n\n FROM products;\n\n Run Example »",
+                "heading": "MIN"
+            },
+            {
+                "content": "The MAX()\nfunction returns the largest value of the selected column.\n\n Example\n Return the highest price in the products table:\n\n SELECT MAX(price)\n\n FROM products;\n\n Run Example »",
+                "heading": "MAX"
+            },
+            {
+                "content": "When you use MIN() or MAX(),\nthe returned column will be named\nmin or max by default.\nTo give the column a new name, use the AS keyword.\n\n Example\n Return the lowest price, and name the column lowest_price:\n\n SELECT MIN(price) AS lowest_price\n\n FROM products;\n\n Run Example »",
+                "heading": "Set Column Name"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:55Z",
+        "subject": "PostgreSQL",
+        "title": "PostgreSQL MIN and MAX Functions"
+    },
+    {
+        "url": "https://www.w3schools.com/postgresql/postgresql_count.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "postgresql_postgresql_count",
+        "code_examples": [
+            {
+                "code": "SELECT COUNT(customer_id)\n\n FROM customers;",
+                "language": "postgresql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "PostgreSQL Home\nPostgreSQL Intro\nPostgreSQL Install\nPostgreSQL Get Started\nPostgreSQL pgAdmin 4",
+                "heading": "PostgreSQL Tutorial"
+            },
+            {
+                "content": "PostgreSQL CREATE TABLE\nPostgreSQL INSERT INTO\nPostgreSQL Fetch Data\nPostgreSQL ADD COLUMN\nPostgreSQL UPDATE\nPostgreSQL ALTER COLUMN\nPostgreSQL DROP COLUMN\nPostgreSQL DELETE\nPostgreSQL DROP TABLE\n\nCreate Demo Database",
+                "heading": "Database"
+            },
+            {
+                "content": "PostgreSQL Operators\nPostgreSQL SELECT\nPostgreSQL SELECT DISTINCT\nPostgreSQL WHERE\nPostgreSQL ORDER BY\nPostgreSQL LIMIT\nPostgreSQL MIN and MAX\nPostgreSQL COUNT\nPostgreSQL SUM\nPostgreSQL AVG\nPostgreSQL LIKE\nPostgreSQL IN\nPostgreSQL BETWEEN\nPostgreSQL AS\nPostgreSQL Joins\nPostgreSQL INNER JOIN\nPostgreSQL LEFT JOIN\nPostgreSQL RIGHT JOIN\nPostgreSQL FULL JOIN\nPostgreSQL CROSS JOIN\nPostgreSQL UNION\nPostgreSQL GROUP BY\nPostgreSQL HAVING\nPostgreSQL EXISTS\nPostgreSQL ANY\nPostgreSQL ALL\nPostgreSQL CASE",
+                "heading": "PostgreSQL Syntax"
+            },
+            {
+                "content": "PostgreSQL Certificate",
+                "heading": "PostgreSQL Cert"
+            },
+            {
+                "content": "The COUNT()\nfunction returns the number of rows that matches a specified criterion.\n\nIf the specified criterion is a column name,\nthe COUNT() function returns the number of rows with that name.\n\n Example\n Return the number of customers from the customers table:\n\n SELECT COUNT(customer_id)\n\n FROM customers;\n\n Run Example »\n\nNote: NULL values are not counted.\n\nBy specifying a WHERE clause, you can e.g. return the number of customers\nthat comes from London:\n\n Example\n Return the number of customers from London:\n\n SELECT COUNT(customer_id)\n\n FROM customers\n\n WHERE city = 'London';\n\n Run Example »",
+                "heading": "COUNT"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:56Z",
+        "subject": "PostgreSQL",
+        "title": "PostgreSQL COUNT Function"
+    },
+    {
+        "url": "https://www.w3schools.com/postgresql/postgresql_sum.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "postgresql_postgresql_sum",
+        "code_examples": [
+            {
+                "code": "SELECT SUM(quantity)\n\n FROM order_details;",
+                "language": "postgresql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "PostgreSQL Home\nPostgreSQL Intro\nPostgreSQL Install\nPostgreSQL Get Started\nPostgreSQL pgAdmin 4",
+                "heading": "PostgreSQL Tutorial"
+            },
+            {
+                "content": "PostgreSQL CREATE TABLE\nPostgreSQL INSERT INTO\nPostgreSQL Fetch Data\nPostgreSQL ADD COLUMN\nPostgreSQL UPDATE\nPostgreSQL ALTER COLUMN\nPostgreSQL DROP COLUMN\nPostgreSQL DELETE\nPostgreSQL DROP TABLE\n\nCreate Demo Database",
+                "heading": "Database"
+            },
+            {
+                "content": "PostgreSQL Operators\nPostgreSQL SELECT\nPostgreSQL SELECT DISTINCT\nPostgreSQL WHERE\nPostgreSQL ORDER BY\nPostgreSQL LIMIT\nPostgreSQL MIN and MAX\nPostgreSQL COUNT\nPostgreSQL SUM\nPostgreSQL AVG\nPostgreSQL LIKE\nPostgreSQL IN\nPostgreSQL BETWEEN\nPostgreSQL AS\nPostgreSQL Joins\nPostgreSQL INNER JOIN\nPostgreSQL LEFT JOIN\nPostgreSQL RIGHT JOIN\nPostgreSQL FULL JOIN\nPostgreSQL CROSS JOIN\nPostgreSQL UNION\nPostgreSQL GROUP BY\nPostgreSQL HAVING\nPostgreSQL EXISTS\nPostgreSQL ANY\nPostgreSQL ALL\nPostgreSQL CASE",
+                "heading": "PostgreSQL Syntax"
+            },
+            {
+                "content": "PostgreSQL Certificate",
+                "heading": "PostgreSQL Cert"
+            },
+            {
+                "content": "The SUM()\nfunction returns the total sum of a numeric column. \n\nThe following SQL statement finds the sum of the\nquantity fields in the\norder_details table:\n\n Example\n Return the total amount of ordered items:\n\n SELECT SUM(quantity)\n\n FROM order_details;\n\n Run Example »\n\nNote: NULL values are ignored.",
+                "heading": "SUM"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:56Z",
+        "subject": "PostgreSQL",
+        "title": "PostgreSQL SUM Function"
+    },
+    {
+        "url": "https://www.w3schools.com/postgresql/postgresql_avg.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "postgresql_postgresql_avg",
+        "code_examples": [
+            {
+                "code": "SELECT AVG(price)\n\n FROM products;",
+                "language": "postgresql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "PostgreSQL Home\nPostgreSQL Intro\nPostgreSQL Install\nPostgreSQL Get Started\nPostgreSQL pgAdmin 4",
+                "heading": "PostgreSQL Tutorial"
+            },
+            {
+                "content": "PostgreSQL CREATE TABLE\nPostgreSQL INSERT INTO\nPostgreSQL Fetch Data\nPostgreSQL ADD COLUMN\nPostgreSQL UPDATE\nPostgreSQL ALTER COLUMN\nPostgreSQL DROP COLUMN\nPostgreSQL DELETE\nPostgreSQL DROP TABLE\n\nCreate Demo Database",
+                "heading": "Database"
+            },
+            {
+                "content": "PostgreSQL Operators\nPostgreSQL SELECT\nPostgreSQL SELECT DISTINCT\nPostgreSQL WHERE\nPostgreSQL ORDER BY\nPostgreSQL LIMIT\nPostgreSQL MIN and MAX\nPostgreSQL COUNT\nPostgreSQL SUM\nPostgreSQL AVG\nPostgreSQL LIKE\nPostgreSQL IN\nPostgreSQL BETWEEN\nPostgreSQL AS\nPostgreSQL Joins\nPostgreSQL INNER JOIN\nPostgreSQL LEFT JOIN\nPostgreSQL RIGHT JOIN\nPostgreSQL FULL JOIN\nPostgreSQL CROSS JOIN\nPostgreSQL UNION\nPostgreSQL GROUP BY\nPostgreSQL HAVING\nPostgreSQL EXISTS\nPostgreSQL ANY\nPostgreSQL ALL\nPostgreSQL CASE",
+                "heading": "PostgreSQL Syntax"
+            },
+            {
+                "content": "PostgreSQL Certificate",
+                "heading": "PostgreSQL Cert"
+            },
+            {
+                "content": "The AVG()\nfunction returns the average value of a numeric column.\n\n Example\n Return the average price of all the products in the products table:\n\n SELECT AVG(price)\n\n FROM products;\n\n Run Example »\n\nNote: NULL values are ignored.",
+                "heading": "AVG"
+            },
+            {
+                "content": "The above example returned the average price of all products, the result was\n28.8663636363636364.\n\nWe can use the ::NUMERIC operator to round the average price to a number with 2 decimals:\n\n Example\n Return the average price of all the products, rounded to 2 decimals:\n\n SELECT AVG(price)::NUMERIC(10,2)\n\n FROM products;\n\n Run Example »",
+                "heading": "With 2 Decimals"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:56Z",
+        "subject": "PostgreSQL",
+        "title": "PostgreSQL AVG Function"
+    },
+    {
+        "url": "https://www.w3schools.com/postgresql/postgresql_like.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "postgresql_postgresql_like",
+        "code_examples": [
+            {
+                "code": "SELECT * FROM customers\n\n WHERE customer_name LIKE 'A%';",
+                "language": "postgresql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "PostgreSQL Home\nPostgreSQL Intro\nPostgreSQL Install\nPostgreSQL Get Started\nPostgreSQL pgAdmin 4",
+                "heading": "PostgreSQL Tutorial"
+            },
+            {
+                "content": "PostgreSQL CREATE TABLE\nPostgreSQL INSERT INTO\nPostgreSQL Fetch Data\nPostgreSQL ADD COLUMN\nPostgreSQL UPDATE\nPostgreSQL ALTER COLUMN\nPostgreSQL DROP COLUMN\nPostgreSQL DELETE\nPostgreSQL DROP TABLE\n\nCreate Demo Database",
+                "heading": "Database"
+            },
+            {
+                "content": "PostgreSQL Operators\nPostgreSQL SELECT\nPostgreSQL SELECT DISTINCT\nPostgreSQL WHERE\nPostgreSQL ORDER BY\nPostgreSQL LIMIT\nPostgreSQL MIN and MAX\nPostgreSQL COUNT\nPostgreSQL SUM\nPostgreSQL AVG\nPostgreSQL LIKE\nPostgreSQL IN\nPostgreSQL BETWEEN\nPostgreSQL AS\nPostgreSQL Joins\nPostgreSQL INNER JOIN\nPostgreSQL LEFT JOIN\nPostgreSQL RIGHT JOIN\nPostgreSQL FULL JOIN\nPostgreSQL CROSS JOIN\nPostgreSQL UNION\nPostgreSQL GROUP BY\nPostgreSQL HAVING\nPostgreSQL EXISTS\nPostgreSQL ANY\nPostgreSQL ALL\nPostgreSQL CASE",
+                "heading": "PostgreSQL Syntax"
+            },
+            {
+                "content": "PostgreSQL Certificate",
+                "heading": "PostgreSQL Cert"
+            },
+            {
+                "content": "The LIKE\noperator is used in a WHERE clause to search for a specified pattern in a column.\n\nThere are two wildcards often used in conjunction with the LIKE operator:\n\n% The percent sign represents zero, one, or multiple characters\n\n_ The underscore sign represents one, single character",
+                "heading": "LIKE"
+            },
+            {
+                "content": "To return records that starts with a specific letter or phrase, add the % at the end of the letter or phrase.\n\n Example\n Return all customers with a name that starts with the letter 'A':\n\n SELECT * FROM customers\n\n WHERE customer_name LIKE 'A%';\n\n Run Example »",
+                "heading": "Starts with"
+            },
+            {
+                "content": "To return records that contains a specific letter or phrase, add the % both before and after the letter or phrase.\n\n Example\n Return all customers with a name that contains the letter 'A':\n\n SELECT * FROM customers\n\n WHERE customer_name LIKE '%A%';\n\n Run Example »",
+                "heading": "Contains"
+            },
+            {
+                "content": "Note: The LIKE operator is case sensitive,\nif you want to do a case insensitive search, use the ILIKE operator instead.\n\n Example\n Return all customers with a name that contains the letter 'A' or 'a':\n\n SELECT * FROM customers\n\n WHERE customer_name ILIKE '%A%';\n\n Run Example »",
+                "heading": "ILIKE"
+            },
+            {
+                "content": "To return records that ends with a specific letter or phrase,\nadd the % before the letter or phrase.\n\n Example\n Return all customers with a name that ends with the phrase 'en':\n\n SELECT * FROM customers\n\n WHERE customer_name LIKE '%en';\n\n Run Example »",
+                "heading": "Ends with"
+            },
+            {
+                "content": "The _ wildcard represents a single character.\n\nIt can be any character or number, but each _ represents one, and only one, character.\n\n Example\n Return all customers from a city that starts with 'L' followed by one wildcard character, then 'nd' and then two wildcard characters:\n\n SELECT * FROM customers\n\n WHERE city LIKE 'L_nd__';\n\n Run Example »\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "The Underscore _ Wildcard"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:56Z",
+        "subject": "PostgreSQL",
+        "title": "PostgreSQL LIKE Operator"
+    },
+    {
+        "url": "https://www.w3schools.com/postgresql/postgresql_in.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "postgresql_postgresql_in",
+        "code_examples": [
+            {
+                "code": "SELECT * FROM customers\n\n WHERE country IN ('Germany', 'France', 'UK');",
+                "language": "postgresql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "PostgreSQL Home\nPostgreSQL Intro\nPostgreSQL Install\nPostgreSQL Get Started\nPostgreSQL pgAdmin 4",
+                "heading": "PostgreSQL Tutorial"
+            },
+            {
+                "content": "PostgreSQL CREATE TABLE\nPostgreSQL INSERT INTO\nPostgreSQL Fetch Data\nPostgreSQL ADD COLUMN\nPostgreSQL UPDATE\nPostgreSQL ALTER COLUMN\nPostgreSQL DROP COLUMN\nPostgreSQL DELETE\nPostgreSQL DROP TABLE\n\nCreate Demo Database",
+                "heading": "Database"
+            },
+            {
+                "content": "PostgreSQL Operators\nPostgreSQL SELECT\nPostgreSQL SELECT DISTINCT\nPostgreSQL WHERE\nPostgreSQL ORDER BY\nPostgreSQL LIMIT\nPostgreSQL MIN and MAX\nPostgreSQL COUNT\nPostgreSQL SUM\nPostgreSQL AVG\nPostgreSQL LIKE\nPostgreSQL IN\nPostgreSQL BETWEEN\nPostgreSQL AS\nPostgreSQL Joins\nPostgreSQL INNER JOIN\nPostgreSQL LEFT JOIN\nPostgreSQL RIGHT JOIN\nPostgreSQL FULL JOIN\nPostgreSQL CROSS JOIN\nPostgreSQL UNION\nPostgreSQL GROUP BY\nPostgreSQL HAVING\nPostgreSQL EXISTS\nPostgreSQL ANY\nPostgreSQL ALL\nPostgreSQL CASE",
+                "heading": "PostgreSQL Syntax"
+            },
+            {
+                "content": "PostgreSQL Certificate",
+                "heading": "PostgreSQL Cert"
+            },
+            {
+                "content": "The IN\noperator allows you to specify a list of possible values in the WHERE clause.\n\nThe IN\noperator is a shorthand for multiple OR conditions.\n\n Example\n Return all customers from 'Germany', France' or 'UK':\n\n SELECT * FROM customers\n\n WHERE country IN ('Germany', 'France', 'UK');\n\n Run Example »",
+                "heading": "IN"
+            },
+            {
+                "content": "By using the NOT keyword in front of the IN\noperator, you return all records that are NOT any of the values in the list.\n\n Example\n Return all customers that are NOT from 'Germany', France' or 'UK':\n\n SELECT * FROM customers\n\n WHERE country NOT IN ('Germany', 'France', 'UK');\n\n Run Example »",
+                "heading": "NOT IN"
+            },
+            {
+                "content": "You can also use a SELECT statement inside the parenthesis to return all records\nthat are in the result of the SELECT statement.\n\n Example\n Return all customers that have an order in the orders table:\n\n SELECT * FROM customers\n\n WHERE customer_id IN (SELECT customer_id FROM orders);\n\n Run Example »",
+                "heading": "IN (SELECT)"
+            },
+            {
+                "content": "The result in the example above returned 89 records, that means that there are 2 customers that \nhaven't placed any orders.\n\nLet us check if that is correct, by using the NOT IN operator.\n\n Example\n Return all customers that have NOT placed any orders in the orders table:\n\n SELECT * FROM customers\n\n WHERE customer_id NOT IN (SELECT customer_id FROM orders);\n\n Run Example »\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "NOT IN (SELECT)"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:56Z",
+        "subject": "PostgreSQL",
+        "title": "PostgreSQL IN Operator"
+    },
+    {
+        "url": "https://www.w3schools.com/postgresql/postgresql_between.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "postgresql_postgresql_between",
+        "code_examples": [
+            {
+                "code": "SELECT * FROM Products\n\n WHERE Price BETWEEN 10 AND 15;",
+                "language": "postgresql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "PostgreSQL Home\nPostgreSQL Intro\nPostgreSQL Install\nPostgreSQL Get Started\nPostgreSQL pgAdmin 4",
+                "heading": "PostgreSQL Tutorial"
+            },
+            {
+                "content": "PostgreSQL CREATE TABLE\nPostgreSQL INSERT INTO\nPostgreSQL Fetch Data\nPostgreSQL ADD COLUMN\nPostgreSQL UPDATE\nPostgreSQL ALTER COLUMN\nPostgreSQL DROP COLUMN\nPostgreSQL DELETE\nPostgreSQL DROP TABLE\n\nCreate Demo Database",
+                "heading": "Database"
+            },
+            {
+                "content": "PostgreSQL Operators\nPostgreSQL SELECT\nPostgreSQL SELECT DISTINCT\nPostgreSQL WHERE\nPostgreSQL ORDER BY\nPostgreSQL LIMIT\nPostgreSQL MIN and MAX\nPostgreSQL COUNT\nPostgreSQL SUM\nPostgreSQL AVG\nPostgreSQL LIKE\nPostgreSQL IN\nPostgreSQL BETWEEN\nPostgreSQL AS\nPostgreSQL Joins\nPostgreSQL INNER JOIN\nPostgreSQL LEFT JOIN\nPostgreSQL RIGHT JOIN\nPostgreSQL FULL JOIN\nPostgreSQL CROSS JOIN\nPostgreSQL UNION\nPostgreSQL GROUP BY\nPostgreSQL HAVING\nPostgreSQL EXISTS\nPostgreSQL ANY\nPostgreSQL ALL\nPostgreSQL CASE",
+                "heading": "PostgreSQL Syntax"
+            },
+            {
+                "content": "PostgreSQL Certificate",
+                "heading": "PostgreSQL Cert"
+            },
+            {
+                "content": "The BETWEEN\noperator selects values within a given range. The values can be numbers, text, or dates.\n\nThe BETWEEN\noperator is inclusive: begin and end values are included.\n\n Example\n Select all products with a price between 10 and 15:\n\n SELECT * FROM Products\n\n WHERE Price BETWEEN 10 AND 15;\n\n Run Example »",
+                "heading": "BETWEEN"
+            },
+            {
+                "content": "The BETWEEN\noperator can also be used on text values.\n\nThe result returns all records that are alphabetically between the specified values.\n\n Example\n Select all products between 'Pavlova' and 'Tofu':\n\n SELECT * FROM Products\n\n WHERE product_name BETWEEN 'Pavlova' AND 'Tofu';\n\n Run Example »\n\nIf we add an ORDER BY\nclause to the example above, it will be a bit easier to read:\n\n Example\n Same example as above, but we sort it by product_name:\n\n SELECT * FROM Products\n\n WHERE product_name BETWEEN 'Pavlova' AND 'Tofu'\n\n ORDER BY product_name;\n\n Run Example »",
+                "heading": "BETWEEN Text Values"
+            },
+            {
+                "content": "The BETWEEN\noperator can also be used on date values.\n\n Example\n Select all orders between 12. of April 2023 and 5. of May 2023:\n\n SELECT * FROM orders\n\n WHERE order_date BETWEEN '2023-04-12' AND '2023-05-05';\n\n Run Example »\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "BETWEEN Date Values"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:56Z",
+        "subject": "PostgreSQL",
+        "title": "PostgreSQL BETWEEN Operator"
+    },
+    {
+        "url": "https://www.w3schools.com/postgresql/postgresql_as.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "postgresql_postgresql_as",
+        "code_examples": [
+            {
+                "code": "SELECT customer_id AS id\n\n FROM customers;",
+                "language": "postgresql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "PostgreSQL Home\nPostgreSQL Intro\nPostgreSQL Install\nPostgreSQL Get Started\nPostgreSQL pgAdmin 4",
+                "heading": "PostgreSQL Tutorial"
+            },
+            {
+                "content": "PostgreSQL CREATE TABLE\nPostgreSQL INSERT INTO\nPostgreSQL Fetch Data\nPostgreSQL ADD COLUMN\nPostgreSQL UPDATE\nPostgreSQL ALTER COLUMN\nPostgreSQL DROP COLUMN\nPostgreSQL DELETE\nPostgreSQL DROP TABLE\n\nCreate Demo Database",
+                "heading": "Database"
+            },
+            {
+                "content": "PostgreSQL Operators\nPostgreSQL SELECT\nPostgreSQL SELECT DISTINCT\nPostgreSQL WHERE\nPostgreSQL ORDER BY\nPostgreSQL LIMIT\nPostgreSQL MIN and MAX\nPostgreSQL COUNT\nPostgreSQL SUM\nPostgreSQL AVG\nPostgreSQL LIKE\nPostgreSQL IN\nPostgreSQL BETWEEN\nPostgreSQL AS\nPostgreSQL Joins\nPostgreSQL INNER JOIN\nPostgreSQL LEFT JOIN\nPostgreSQL RIGHT JOIN\nPostgreSQL FULL JOIN\nPostgreSQL CROSS JOIN\nPostgreSQL UNION\nPostgreSQL GROUP BY\nPostgreSQL HAVING\nPostgreSQL EXISTS\nPostgreSQL ANY\nPostgreSQL ALL\nPostgreSQL CASE",
+                "heading": "PostgreSQL Syntax"
+            },
+            {
+                "content": "PostgreSQL Certificate",
+                "heading": "PostgreSQL Cert"
+            },
+            {
+                "content": "SQL aliases are used to give a table, or a column in a table, a temporary name.\n\nAliases are often used to make column names more readable.\n\nAn alias only exists for the duration of that query.\n\nAn alias is created with the AS keyword.\n\n Example\n Using aliases for columns:\n\n SELECT customer_id AS id\n\n FROM customers;\n\n Run Example »",
+                "heading": "Aliases"
+            },
+            {
+                "content": "Actually, you can skip the AS\nkeyword and get the same result:\n\n Example\n Same result without AS:\n\n SELECT customer_id id\n\n FROM customers;\n\n Run Example »",
+                "heading": "AS is Optional"
+            },
+            {
+                "content": "The AS\nkeyword is often used when two or more fields are concatenated into one.\n\nTo concatenate two fields use ||.\n\n Example\n Concatenate two fields and call them product:\n\n SELECT product_name \n || unit AS product\n\n FROM products;\n\n Run Example »\n\nNote: In the result of the example above we are missing a space between\nproduct_name and unit. To add a space when concatenating, use || ' ' ||.\n\n Example\n Concatenate, with space:\n\n SELECT product_name || ' ' || unit AS product\n\n FROM products;\n\n Run Example »",
+                "heading": "Concatenate Columns"
+            },
+            {
+                "content": "If you want your alias to contain one or more spaces, like \"My Great Products\", surround your alias with double quotes.\n\n Example\n Surround your alias with double quotes:\n\n SELECT product_name AS \"My Great Products\"\n\n FROM products;\n\n Run Example »\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Using Aliases With a Space Character"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:56Z",
+        "subject": "PostgreSQL",
+        "title": "PostgreSQL AS"
+    },
+    {
+        "url": "https://www.w3schools.com/postgresql/postgresql_joins.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "postgresql_postgresql_joins",
+        "code_examples": [
+            {
+                "code": "product_id |  product_name  | category_id\n\n ------------+----------------+-------------\n\n 33 | Geitost        \n |           4\n\n 34 | Sasquatch \n Ale  |           1\n\n 35 | Steeleye \n Stout |           1\n\n 36 | Inlagd \n Sill    |           \n 8",
+                "language": "postgresql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "category_id | category_name\n-------------+----------------\n\n 1 | Beverages\n\n 2 | Condiments\n\n 3 | Confections\n\n 4 | Dairy Products",
+                "language": "postgresql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "SELECT product_id, product_name, category_name\n\n FROM products\n\n INNER JOIN categories ON products.category_id = categories.category_id;",
+                "language": "postgresql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "PostgreSQL Home\nPostgreSQL Intro\nPostgreSQL Install\nPostgreSQL Get Started\nPostgreSQL pgAdmin 4",
+                "heading": "PostgreSQL Tutorial"
+            },
+            {
+                "content": "PostgreSQL CREATE TABLE\nPostgreSQL INSERT INTO\nPostgreSQL Fetch Data\nPostgreSQL ADD COLUMN\nPostgreSQL UPDATE\nPostgreSQL ALTER COLUMN\nPostgreSQL DROP COLUMN\nPostgreSQL DELETE\nPostgreSQL DROP TABLE\n\nCreate Demo Database",
+                "heading": "Database"
+            },
+            {
+                "content": "PostgreSQL Operators\nPostgreSQL SELECT\nPostgreSQL SELECT DISTINCT\nPostgreSQL WHERE\nPostgreSQL ORDER BY\nPostgreSQL LIMIT\nPostgreSQL MIN and MAX\nPostgreSQL COUNT\nPostgreSQL SUM\nPostgreSQL AVG\nPostgreSQL LIKE\nPostgreSQL IN\nPostgreSQL BETWEEN\nPostgreSQL AS\nPostgreSQL Joins\nPostgreSQL INNER JOIN\nPostgreSQL LEFT JOIN\nPostgreSQL RIGHT JOIN\nPostgreSQL FULL JOIN\nPostgreSQL CROSS JOIN\nPostgreSQL UNION\nPostgreSQL GROUP BY\nPostgreSQL HAVING\nPostgreSQL EXISTS\nPostgreSQL ANY\nPostgreSQL ALL\nPostgreSQL CASE",
+                "heading": "PostgreSQL Syntax"
+            },
+            {
+                "content": "PostgreSQL Certificate",
+                "heading": "PostgreSQL Cert"
+            },
+            {
+                "content": "A JOIN clause is used to combine rows from two or \nmore tables, based on a related column between them.\n\nLet's look at a selection from the products table:\n\n  product_id |  product_name  | category_id\n\n ------------+----------------+-------------\n\n 33 | Geitost        \n |           4\n\n 34 | Sasquatch \n Ale  |           1\n\n 35 | Steeleye \n Stout |           1\n\n 36 | Inlagd \n Sill    |           \n 8\n\nThen, look at a selection from the categories table:\n\n  category_id | category_name\n-------------+----------------\n\n 1 | Beverages\n\n 2 | Condiments\n\n 3 | Confections\n\n 4 | Dairy Products\n\nNotice that the category_id column in the\nproducts table refers to the\ncategory_id in the\ncategories table.\nThe relationship between the two tables above is the category_id column.\n\nThen, we can create the following SQL statement (with a JOIN),\nthat selects records that have matching values in both tables:\n\n Example\n Join products to \n categories using the category_id column:\n\n SELECT product_id, product_name, category_name\n\n FROM products\n\n INNER JOIN categories ON products.category_id = categories.category_id;\n\n Run Example »\n\nIf we pull out the same selection from products table above, we get this result:\n\n Result\n\n  product_id \n |  product_name  | category_name\n\n ------------+----------------+----------------\n\n 33 | Geitost        | Dairy Products\n\n 34 | Sasquatch Ale  | Beverages\n\n 35 | Steeleye Stout | Beverages\n\n 36 | Inlagd Sill    | Seafood",
+                "heading": "JOIN"
+            },
+            {
+                "content": "Here are the different types of the Joins in PostgreSQL:\n\nINNER JOIN: Returns records that have matching values in both tables\n\nLEFT JOIN: Returns all records from the left table, and the matched records from the right table\n\nRIGHT JOIN: Returns all records from the right table, and the matched records from the left table\n\nFULL JOIN: Returns all records when there is a match in either left or right table\n\n CROSS JOIN: Returns the Cartesian product \n of two or more \n tables (combines every row from the first table with every row from the second \n table)\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Different Types of Joins"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:56Z",
+        "subject": "PostgreSQL",
+        "title": "PostgreSQL JOINS"
+    },
+    {
+        "url": "https://www.w3schools.com/postgresql/postgresql_inner_join.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "postgresql_postgresql_inner_join",
+        "code_examples": [
+            {
+                "code": "testproduct_id |      product_name      \n | category_id\n----------------+------------------------+-------------\n\n 1 | Johns Fruit Cake       |           \n 3\n\n 2 | Marys Healthy Mix      |           \n 9\n\n 3 | Peters Scary Stuff     |          \n 10\n\n 4 | Jims Secret Recipe     |          \n 11\n\n 5 | Elisabeths Best Apples |          \n 12\n\n 6 | Janes Favorite Cheese  |           \n 4\n\n 7 | Billys Home Made Pizza |          \n 13\n\n 8 | Ellas Special Salmon   |           \n 8\n\n 9 | Roberts Rich Spaghetti |           \n 5\n            10 | \n Mias Popular Ice        |          \n 14\n(10 rows)",
+                "language": "postgresql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "category_id | category_name  |                       \n description\n\n -------------+----------------+------------------------------------------------------------\n\n 1 | Beverages      | Soft drinks, coffees, teas, \n beers, and ales\n\n 2 | Condiments     | Sweet and savory sauces, relishes, \n spreads, and seasonings\n\n 3 | Confections    | Desserts, candies, and sweet breads\n\n 4 | Dairy Products | Cheeses\n\n 5 | Grains/Cereals | Breads, crackers, pasta, and cereal\n\n 6 | Meat/Poultry   | Prepared meats\n\n 7 | Produce        | Dried fruit and bean \n curd\n           8 | \n Seafood        | Seaweed and fish\n(8 \n rows)",
+                "language": "postgresql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "SELECT \n testproduct_id, product_name, category_name\n\n FROM testproducts\n\n INNER JOIN categories ON \n testproducts.category_id = categories.category_id;",
+                "language": "postgresql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "PostgreSQL Home\nPostgreSQL Intro\nPostgreSQL Install\nPostgreSQL Get Started\nPostgreSQL pgAdmin 4",
+                "heading": "PostgreSQL Tutorial"
+            },
+            {
+                "content": "PostgreSQL CREATE TABLE\nPostgreSQL INSERT INTO\nPostgreSQL Fetch Data\nPostgreSQL ADD COLUMN\nPostgreSQL UPDATE\nPostgreSQL ALTER COLUMN\nPostgreSQL DROP COLUMN\nPostgreSQL DELETE\nPostgreSQL DROP TABLE\n\nCreate Demo Database",
+                "heading": "Database"
+            },
+            {
+                "content": "PostgreSQL Operators\nPostgreSQL SELECT\nPostgreSQL SELECT DISTINCT\nPostgreSQL WHERE\nPostgreSQL ORDER BY\nPostgreSQL LIMIT\nPostgreSQL MIN and MAX\nPostgreSQL COUNT\nPostgreSQL SUM\nPostgreSQL AVG\nPostgreSQL LIKE\nPostgreSQL IN\nPostgreSQL BETWEEN\nPostgreSQL AS\nPostgreSQL Joins\nPostgreSQL INNER JOIN\nPostgreSQL LEFT JOIN\nPostgreSQL RIGHT JOIN\nPostgreSQL FULL JOIN\nPostgreSQL CROSS JOIN\nPostgreSQL UNION\nPostgreSQL GROUP BY\nPostgreSQL HAVING\nPostgreSQL EXISTS\nPostgreSQL ANY\nPostgreSQL ALL\nPostgreSQL CASE",
+                "heading": "PostgreSQL Syntax"
+            },
+            {
+                "content": "PostgreSQL Certificate",
+                "heading": "PostgreSQL Cert"
+            },
+            {
+                "content": "The INNER JOIN keyword selects records that have matching values in both tables.\n\nLet's look at an example using our dummy testproducts table:\n\n  testproduct_id |      product_name      \n | category_id\n----------------+------------------------+-------------\n\n 1 | Johns Fruit Cake       |           \n 3\n\n 2 | Marys Healthy Mix      |           \n 9\n\n 3 | Peters Scary Stuff     |          \n 10\n\n 4 | Jims Secret Recipe     |          \n 11\n\n 5 | Elisabeths Best Apples |          \n 12\n\n 6 | Janes Favorite Cheese  |           \n 4\n\n 7 | Billys Home Made Pizza |          \n 13\n\n 8 | Ellas Special Salmon   |           \n 8\n\n 9 | Roberts Rich Spaghetti |           \n 5\n            10 | \n Mias Popular Ice        |          \n 14\n(10 rows)\n\nWe will try to join the testproducts table \nwith the categories table:\n\n  category_id | category_name  |                       \n description\n\n -------------+----------------+------------------------------------------------------------\n\n 1 | Beverages      | Soft drinks, coffees, teas, \n beers, and ales\n\n 2 | Condiments     | Sweet and savory sauces, relishes, \n spreads, and seasonings\n\n 3 | Confections    | Desserts, candies, and sweet breads\n\n 4 | Dairy Products | Cheeses\n\n 5 | Grains/Cereals | Breads, crackers, pasta, and cereal\n\n 6 | Meat/Poultry   | Prepared meats\n\n 7 | Produce        | Dried fruit and bean \n curd\n           8 | \n Seafood        | Seaweed and fish\n(8 \n rows)\n\nNotice that many of the products in testproducts have a\ncategory_id that does not match any of the \ncategories in the categories table.\n\nBy using INNER JOIN we will not get the \nrecords where there is not a match, we will only get the records that matches\nboth tables:\n\n Example\n Join testproducts to \n categories using the category_id column:\n\n SELECT \n testproduct_id, product_name, category_name\n\n FROM testproducts\n\n INNER JOIN categories ON \n testproducts.category_id = categories.category_id;\n\n Run Example »\n\n Result\n Only the records with a match in BOTH tables are returned:\n\n  testproduct_id |      product_name      \n | category_name\n\n ----------------+------------------------+----------------\n\n 1 | Johns Fruit Cake       | Confections\n\n 6 | Janes Favorite Cheese  | Dairy Products\n\n 8 | Ellas Special Salmon   | Seafood\n\n 9 | Roberts Rich Spaghetti | Grains/Cereals\n(4 rows)\n\nNote: JOIN and INNER JOIN\nwill give the same result.\n\n INNER is the default join type for \nJOIN, so when you write\nJOIN the parser actually writes\nINNER JOIN.",
+                "heading": "INNER JOIN"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:58Z",
+        "subject": "PostgreSQL",
+        "title": "PostgreSQL INNER JOIN"
+    },
+    {
+        "url": "https://www.w3schools.com/postgresql/postgresql_left_join.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "postgresql_postgresql_left_join",
+        "code_examples": [
+            {
+                "code": "testproduct_id |      product_name      \n | category_id\n----------------+------------------------+-------------\n\n 1 | Johns Fruit Cake       |           \n 3\n\n 2 | Marys Healthy Mix      |           \n 9\n\n 3 | Peters Scary Stuff     |          \n 10\n\n 4 | Jims Secret Recipe     |          \n 11\n\n 5 | Elisabeths Best Apples |          \n 12\n\n 6 | Janes Favorite Cheese  |           \n 4\n\n 7 | Billys Home Made Pizza |          \n 13\n\n 8 | Ellas Special Salmon   |           \n 8\n\n 9 | Roberts Rich Spaghetti |           \n 5\n            10 | \n Mias Popular Ice        |          \n 14\n(10 rows)",
+                "language": "postgresql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "category_id | category_name  |                       \n description\n\n -------------+----------------+------------------------------------------------------------\n\n 1 | Beverages      | Soft drinks, coffees, teas, \n beers, and ales\n\n 2 | Condiments     | Sweet and savory sauces, relishes, \n spreads, and seasonings\n\n 3 | Confections    | Desserts, candies, and sweet breads\n\n 4 | Dairy Products | Cheeses\n\n 5 | Grains/Cereals | Breads, crackers, pasta, and cereal\n\n 6 | Meat/Poultry   | Prepared meats\n\n 7 | Produce        | Dried fruit and bean \n curd\n           8 | \n Seafood        | Seaweed and fish\n(8 \n rows)",
+                "language": "postgresql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "SELECT \n testproduct_id, product_name, category_name\n\n FROM testproducts\n\n LEFT JOIN categories ON testproducts.category_id = categories.category_id;",
+                "language": "postgresql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "PostgreSQL Home\nPostgreSQL Intro\nPostgreSQL Install\nPostgreSQL Get Started\nPostgreSQL pgAdmin 4",
+                "heading": "PostgreSQL Tutorial"
+            },
+            {
+                "content": "PostgreSQL CREATE TABLE\nPostgreSQL INSERT INTO\nPostgreSQL Fetch Data\nPostgreSQL ADD COLUMN\nPostgreSQL UPDATE\nPostgreSQL ALTER COLUMN\nPostgreSQL DROP COLUMN\nPostgreSQL DELETE\nPostgreSQL DROP TABLE\n\nCreate Demo Database",
+                "heading": "Database"
+            },
+            {
+                "content": "PostgreSQL Operators\nPostgreSQL SELECT\nPostgreSQL SELECT DISTINCT\nPostgreSQL WHERE\nPostgreSQL ORDER BY\nPostgreSQL LIMIT\nPostgreSQL MIN and MAX\nPostgreSQL COUNT\nPostgreSQL SUM\nPostgreSQL AVG\nPostgreSQL LIKE\nPostgreSQL IN\nPostgreSQL BETWEEN\nPostgreSQL AS\nPostgreSQL Joins\nPostgreSQL INNER JOIN\nPostgreSQL LEFT JOIN\nPostgreSQL RIGHT JOIN\nPostgreSQL FULL JOIN\nPostgreSQL CROSS JOIN\nPostgreSQL UNION\nPostgreSQL GROUP BY\nPostgreSQL HAVING\nPostgreSQL EXISTS\nPostgreSQL ANY\nPostgreSQL ALL\nPostgreSQL CASE",
+                "heading": "PostgreSQL Syntax"
+            },
+            {
+                "content": "PostgreSQL Certificate",
+                "heading": "PostgreSQL Cert"
+            },
+            {
+                "content": "The LEFT JOIN keyword selects ALL records from the \"left\" table,\nand the matching records from the \"right\" table.\nThe result is 0 records from the right side if there is no match.\n\nLet's look at an example using our dummy testproducts table:\n\n  testproduct_id |      product_name      \n | category_id\n----------------+------------------------+-------------\n\n 1 | Johns Fruit Cake       |           \n 3\n\n 2 | Marys Healthy Mix      |           \n 9\n\n 3 | Peters Scary Stuff     |          \n 10\n\n 4 | Jims Secret Recipe     |          \n 11\n\n 5 | Elisabeths Best Apples |          \n 12\n\n 6 | Janes Favorite Cheese  |           \n 4\n\n 7 | Billys Home Made Pizza |          \n 13\n\n 8 | Ellas Special Salmon   |           \n 8\n\n 9 | Roberts Rich Spaghetti |           \n 5\n            10 | \n Mias Popular Ice        |          \n 14\n(10 rows)\n\nWe will try to join the testproducts table \nwith the categories table:\n\n  category_id | category_name  |                       \n description\n\n -------------+----------------+------------------------------------------------------------\n\n 1 | Beverages      | Soft drinks, coffees, teas, \n beers, and ales\n\n 2 | Condiments     | Sweet and savory sauces, relishes, \n spreads, and seasonings\n\n 3 | Confections    | Desserts, candies, and sweet breads\n\n 4 | Dairy Products | Cheeses\n\n 5 | Grains/Cereals | Breads, crackers, pasta, and cereal\n\n 6 | Meat/Poultry   | Prepared meats\n\n 7 | Produce        | Dried fruit and bean \n curd\n           8 | \n Seafood        | Seaweed and fish\n(8 \n rows)\n\nNote: Many of the products in testproducts have a\ncategory_id that does not match any of the \ncategories in the categories table.\n\nBy using LEFT JOIN we will get all \nrecords from testpoducts, even the ones with no \nmatch in the categories table:\n\n Example\n Join testproducts to \n categories using the category_id column:\n\n SELECT \n testproduct_id, product_name, category_name\n\n FROM testproducts\n\n LEFT JOIN categories ON testproducts.category_id = categories.category_id;\n\n Run Example »\n\n Result\n All records from testproducts, and only the matched records from\n categories:\n\n  testproduct_id |      product_name      \n | category_name\n\n ----------------+------------------------+----------------\n\n 1 | Johns Fruit Cake       | Confections\n\n 2 | Marys Healthy Mix      |\n\n 3 | Peters Scary Stuff     |\n\n 4 | Jims Secret Recipe     |\n\n 5 | Elisabeths Best Apples |\n\n 6 | Janes Favorite Cheese  | Dairy Products\n\n 7 | Billys Home Made Pizza |\n\n 8 | Ellas Special Salmon   | Seafood\n\n 9 | Roberts Rich Spaghetti | Grains/Cereals\n\n 10 | Mias Popular Ice       |\n(10 rows)\n\nNote: LEFT JOIN and \nLEFT OUTER JOIN\nwill give the same result.\n\n OUTER is the default join type for \nLEFT JOIN, so when you write\nLEFT JOIN the parser actually writes\nLEFT OUTER JOIN.",
+                "heading": "LEFT JOIN"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:58Z",
+        "subject": "PostgreSQL",
+        "title": "PostgreSQL LEFT JOIN"
+    },
+    {
+        "url": "https://www.w3schools.com/postgresql/postgresql_right_join.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "postgresql_postgresql_right_join",
+        "code_examples": [
+            {
+                "code": "testproduct_id |      product_name      \n | category_id\n----------------+------------------------+-------------\n\n 1 | Johns Fruit Cake       |           \n 3\n\n 2 | Marys Healthy Mix      |           \n 9\n\n 3 | Peters Scary Stuff     |          \n 10\n\n 4 | Jims Secret Recipe     |          \n 11\n\n 5 | Elisabeths Best Apples |          \n 12\n\n 6 | Janes Favorite Cheese  |           \n 4\n\n 7 | Billys Home Made Pizza |          \n 13\n\n 8 | Ellas Special Salmon   |           \n 8\n\n 9 | Roberts Rich Spaghetti |           \n 5\n             10 | Mias Popular Ice       |          \n 14\n(10 rows)",
+                "language": "postgresql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "category_id | category_name  |                       \n description\n\n -------------+----------------+------------------------------------------------------------\n\n 1 | Beverages      | Soft drinks, coffees, teas, \n beers, and ales\n\n 2 | Condiments     | Sweet and savory sauces, relishes, \n spreads, and seasonings\n\n 3 | Confections    | Desserts, candies, and sweet breads\n\n 4 | Dairy Products | Cheeses\n\n 5 | Grains/Cereals | Breads, crackers, pasta, and cereal\n\n 6 | Meat/Poultry   | Prepared meats\n\n 7 | Produce        | Dried fruit and bean \n curd\n           8 | \n Seafood        | Seaweed and fish\n(8 \n rows)",
+                "language": "postgresql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "SELECT \n testproduct_id, product_name, category_name\n\n FROM testproducts\n\n RIGHT JOIN categories ON testproducts.category_id = categories.category_id;",
+                "language": "postgresql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "PostgreSQL Home\nPostgreSQL Intro\nPostgreSQL Install\nPostgreSQL Get Started\nPostgreSQL pgAdmin 4",
+                "heading": "PostgreSQL Tutorial"
+            },
+            {
+                "content": "PostgreSQL CREATE TABLE\nPostgreSQL INSERT INTO\nPostgreSQL Fetch Data\nPostgreSQL ADD COLUMN\nPostgreSQL UPDATE\nPostgreSQL ALTER COLUMN\nPostgreSQL DROP COLUMN\nPostgreSQL DELETE\nPostgreSQL DROP TABLE\n\nCreate Demo Database",
+                "heading": "Database"
+            },
+            {
+                "content": "PostgreSQL Operators\nPostgreSQL SELECT\nPostgreSQL SELECT DISTINCT\nPostgreSQL WHERE\nPostgreSQL ORDER BY\nPostgreSQL LIMIT\nPostgreSQL MIN and MAX\nPostgreSQL COUNT\nPostgreSQL SUM\nPostgreSQL AVG\nPostgreSQL LIKE\nPostgreSQL IN\nPostgreSQL BETWEEN\nPostgreSQL AS\nPostgreSQL Joins\nPostgreSQL INNER JOIN\nPostgreSQL LEFT JOIN\nPostgreSQL RIGHT JOIN\nPostgreSQL FULL JOIN\nPostgreSQL CROSS JOIN\nPostgreSQL UNION\nPostgreSQL GROUP BY\nPostgreSQL HAVING\nPostgreSQL EXISTS\nPostgreSQL ANY\nPostgreSQL ALL\nPostgreSQL CASE",
+                "heading": "PostgreSQL Syntax"
+            },
+            {
+                "content": "PostgreSQL Certificate",
+                "heading": "PostgreSQL Cert"
+            },
+            {
+                "content": "The RIGHT JOIN keyword selects ALL records from the \"right\" table,\nand the matching records from the \"left\" table.\nThe result is 0 records from the left side if there is no match.\n\nLet's look at an example using our dummy testproducts table:\n\n  testproduct_id |      product_name      \n | category_id\n----------------+------------------------+-------------\n\n 1 | Johns Fruit Cake       |           \n 3\n\n 2 | Marys Healthy Mix      |           \n 9\n\n 3 | Peters Scary Stuff     |          \n 10\n\n 4 | Jims Secret Recipe     |          \n 11\n\n 5 | Elisabeths Best Apples |          \n 12\n\n 6 | Janes Favorite Cheese  |           \n 4\n\n 7 | Billys Home Made Pizza |          \n 13\n\n 8 | Ellas Special Salmon   |           \n 8\n\n 9 | Roberts Rich Spaghetti |           \n 5\n             10 | Mias Popular Ice       |          \n 14\n(10 rows)\n\nWe will try to join the testproducts table \nwith the categories table:\n\n  category_id | category_name  |                       \n description\n\n -------------+----------------+------------------------------------------------------------\n\n 1 | Beverages      | Soft drinks, coffees, teas, \n beers, and ales\n\n 2 | Condiments     | Sweet and savory sauces, relishes, \n spreads, and seasonings\n\n 3 | Confections    | Desserts, candies, and sweet breads\n\n 4 | Dairy Products | Cheeses\n\n 5 | Grains/Cereals | Breads, crackers, pasta, and cereal\n\n 6 | Meat/Poultry   | Prepared meats\n\n 7 | Produce        | Dried fruit and bean \n curd\n           8 | \n Seafood        | Seaweed and fish\n(8 \n rows)\n\nNote: Many of the products in testproducts have a\ncategory_id that does not match any of the \ncategories in the categories table.\n\nBy using RIGHT JOIN we will get all \nrecords from categories, even the ones with no \nmatch in the testproducts table:\n\n Example\n Join testproducts to \n categories using the category_id column:\n\n SELECT \n testproduct_id, product_name, category_name\n\n FROM testproducts\n\n RIGHT JOIN categories ON testproducts.category_id = categories.category_id;\n\n Run Example »\n\n Result\n All records from categories, and only the matched records from\n testproducts:\n\n  testproduct_id |      product_name      \n | category_name\n\n ----------------+------------------------+----------------\n\n 1 | Johns Fruit Cake       | Confections\n\n 6 | Janes Favorite Cheese  | Dairy Products\n\n 8 | Ellas Special Salmon   | Seafood\n\n 9 | Roberts Rich Spaghetti | Grains/Cereals\n\n |                        \n | Condiments\n\n |                        \n | Meat/Poultry\n\n |                        \n | Beverages\n\n |                        \n | Produce\n(8 rows)\n\nNote: RIGHT JOIN and \nRIGHT OUTER JOIN\nwill give the same result.\n\n OUTER is the default join type for \nRIGHT JOIN, so when you write\nRIGHT JOIN the parser actually writes\nRIGHT OUTER JOIN.",
+                "heading": "RIGHT JOIN"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:58Z",
+        "subject": "PostgreSQL",
+        "title": "PostgreSQL RIGHT JOIN"
+    },
+    {
+        "url": "https://www.w3schools.com/postgresql/postgresql_full_join.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "postgresql_postgresql_full_join",
+        "code_examples": [
+            {
+                "code": "testproduct_id |      product_name      \n | category_id\n----------------+------------------------+-------------\n\n 1 | Johns Fruit Cake       |           \n 3\n\n 2 | Marys Healthy Mix      |           \n 9\n\n 3 | Peters Scary Stuff     |          \n 10\n\n 4 | Jims Secret Recipe     |          \n 11\n\n 5 | Elisabeths Best Apples |          \n 12\n\n 6 | Janes Favorite Cheese  |           \n 4\n\n 7 | Billys Home Made Pizza |          \n 13\n\n 8 | Ellas Special Salmon   |           \n 8\n\n 9 | Roberts Rich Spaghetti |           \n 5\n             10 | Mias Popular Ice       |          \n 14\n(10 rows)",
+                "language": "postgresql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "category_id | category_name  |                       \n description\n\n -------------+----------------+------------------------------------------------------------\n\n 1 | Beverages      | Soft drinks, coffees, teas, \n beers, and ales\n\n 2 | Condiments     | Sweet and savory sauces, relishes, \n spreads, and seasonings\n\n 3 | Confections    | Desserts, candies, and sweet breads\n\n 4 | Dairy Products | Cheeses\n\n 5 | Grains/Cereals | Breads, crackers, pasta, and cereal\n\n 6 | Meat/Poultry   | Prepared meats\n\n 7 | Produce        | Dried fruit and bean \n curd\n           8 | \n Seafood        | Seaweed and fish\n(8 \n rows)",
+                "language": "postgresql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "SELECT \n testproduct_id, product_name, category_name\n\n FROM testproducts\n\n FULL JOIN categories ON testproducts.category_id = categories.category_id;",
+                "language": "postgresql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "PostgreSQL Home\nPostgreSQL Intro\nPostgreSQL Install\nPostgreSQL Get Started\nPostgreSQL pgAdmin 4",
+                "heading": "PostgreSQL Tutorial"
+            },
+            {
+                "content": "PostgreSQL CREATE TABLE\nPostgreSQL INSERT INTO\nPostgreSQL Fetch Data\nPostgreSQL ADD COLUMN\nPostgreSQL UPDATE\nPostgreSQL ALTER COLUMN\nPostgreSQL DROP COLUMN\nPostgreSQL DELETE\nPostgreSQL DROP TABLE\n\nCreate Demo Database",
+                "heading": "Database"
+            },
+            {
+                "content": "PostgreSQL Operators\nPostgreSQL SELECT\nPostgreSQL SELECT DISTINCT\nPostgreSQL WHERE\nPostgreSQL ORDER BY\nPostgreSQL LIMIT\nPostgreSQL MIN and MAX\nPostgreSQL COUNT\nPostgreSQL SUM\nPostgreSQL AVG\nPostgreSQL LIKE\nPostgreSQL IN\nPostgreSQL BETWEEN\nPostgreSQL AS\nPostgreSQL Joins\nPostgreSQL INNER JOIN\nPostgreSQL LEFT JOIN\nPostgreSQL RIGHT JOIN\nPostgreSQL FULL JOIN\nPostgreSQL CROSS JOIN\nPostgreSQL UNION\nPostgreSQL GROUP BY\nPostgreSQL HAVING\nPostgreSQL EXISTS\nPostgreSQL ANY\nPostgreSQL ALL\nPostgreSQL CASE",
+                "heading": "PostgreSQL Syntax"
+            },
+            {
+                "content": "PostgreSQL Certificate",
+                "heading": "PostgreSQL Cert"
+            },
+            {
+                "content": "The FULL JOIN keyword selects ALL records from \nboth tables, even if there is not a match. For rows with a match the values from \nboth tables are available, if there is not a match the empty fields will get the \nvalue NULL.\n\nLet's look at an example using our dummy testproducts table:\n\n  testproduct_id |      product_name      \n | category_id\n----------------+------------------------+-------------\n\n 1 | Johns Fruit Cake       |           \n 3\n\n 2 | Marys Healthy Mix      |           \n 9\n\n 3 | Peters Scary Stuff     |          \n 10\n\n 4 | Jims Secret Recipe     |          \n 11\n\n 5 | Elisabeths Best Apples |          \n 12\n\n 6 | Janes Favorite Cheese  |           \n 4\n\n 7 | Billys Home Made Pizza |          \n 13\n\n 8 | Ellas Special Salmon   |           \n 8\n\n 9 | Roberts Rich Spaghetti |           \n 5\n             10 | Mias Popular Ice       |          \n 14\n(10 rows)\n\nWe will try to join the testproducts table \nwith the categories table:\n\n  category_id | category_name  |                       \n description\n\n -------------+----------------+------------------------------------------------------------\n\n 1 | Beverages      | Soft drinks, coffees, teas, \n beers, and ales\n\n 2 | Condiments     | Sweet and savory sauces, relishes, \n spreads, and seasonings\n\n 3 | Confections    | Desserts, candies, and sweet breads\n\n 4 | Dairy Products | Cheeses\n\n 5 | Grains/Cereals | Breads, crackers, pasta, and cereal\n\n 6 | Meat/Poultry   | Prepared meats\n\n 7 | Produce        | Dried fruit and bean \n curd\n           8 | \n Seafood        | Seaweed and fish\n(8 \n rows)\n\nNote: Many of the products in testproducts have a\ncategory_id that does not match any of the \ncategories in the categories table.\n\nBy using FULL JOIN we will get all \nrecords from both the categories table and the\ntestproducts table:\n\n Example\n Join testproducts to \n categories using the category_id column:\n\n SELECT \n testproduct_id, product_name, category_name\n\n FROM testproducts\n\n FULL JOIN categories ON testproducts.category_id = categories.category_id;\n\n Run Example »\n\n Result\n All records from both tables are returned.\n\n Rows with no match will get a NULL value \n in fields from the opposite table:\n\n  testproduct_id |      product_name       \n | category_name\n\n ----------------+-------------------------+----------------\n\n 1 | Johns Fruit Cake        | Confections\n\n 2 | Marys Healthy Mix       |\n\n 3 | Peters Scary Stuff      |\n\n 4 | Jims Secret Recipe      |\n\n 5 | Elisabeths Best Apples  |\n\n 6 | Janes Favorite Cheese   | Dairy Products\n\n 7 | Billys Home Made Pizza  |\n\n 8 | Ellas Special Salmon    | Seafood\n\n 9 | Roberts Rich Spaghetti  | Grains/Cereals\n\n 10 | Mias Popular Ice        |\n\n |                         \n | Condiments\n\n |                         \n | Meat/Poultry\n\n |                         \n | Beverages\n\n |                         \n | Produce\n(14 rows)\n\nNote: FULL JOIN and \nFULL OUTER JOIN\nwill give the same result.\n\n OUTER is the default join type for \nFULL JOIN, so when you write\nFULL JOIN the parser actually writes\n FULL OUTER JOIN.",
+                "heading": "FULL JOIN"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:58Z",
+        "subject": "PostgreSQL",
+        "title": "PostgreSQL FULL JOIN"
+    },
+    {
+        "url": "https://www.w3schools.com/postgresql/postgresql_cross_join.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "postgresql_postgresql_cross_join",
+        "code_examples": [
+            {
+                "code": "testproduct_id |      product_name      \n | category_id\n----------------+------------------------+-------------\n\n 1 | Johns Fruit Cake       |           \n 3\n\n 2 | Marys Healthy Mix      |           \n 9\n\n 3 | Peters Scary Stuff     |          \n 10\n\n 4 | Jims Secret Recipe     |          \n 11\n\n 5 | Elisabeths Best Apples |          \n 12\n\n 6 | Janes Favorite Cheese  |           \n 4\n\n 7 | Billys Home Made Pizza |          \n 13\n\n 8 | Ellas Special Salmon   |           \n 8\n\n 9 | Roberts Rich Spaghetti |           \n 5\n             10 | Mias Popular Ice       |          \n 14\n(10 rows)",
+                "language": "postgresql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "category_id | category_name  |                       \n description\n\n -------------+----------------+------------------------------------------------------------\n\n 1 | Beverages      | Soft drinks, coffees, teas, \n beers, and ales\n\n 2 | Condiments     | Sweet and savory sauces, relishes, \n spreads, and seasonings\n\n 3 | Confections    | Desserts, candies, and sweet breads\n\n 4 | Dairy Products | Cheeses\n\n 5 | Grains/Cereals | Breads, crackers, pasta, and cereal\n\n 6 | Meat/Poultry   | Prepared meats\n\n 7 | Produce        | Dried fruit and bean \n curd\n           8 | \n Seafood        | Seaweed and fish\n(8 \n rows)",
+                "language": "postgresql",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "SELECT \n testproduct_id, product_name, category_name\n\n FROM testproducts\n\n CROSS JOIN categories;",
+                "language": "postgresql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "PostgreSQL Home\nPostgreSQL Intro\nPostgreSQL Install\nPostgreSQL Get Started\nPostgreSQL pgAdmin 4",
+                "heading": "PostgreSQL Tutorial"
+            },
+            {
+                "content": "PostgreSQL CREATE TABLE\nPostgreSQL INSERT INTO\nPostgreSQL Fetch Data\nPostgreSQL ADD COLUMN\nPostgreSQL UPDATE\nPostgreSQL ALTER COLUMN\nPostgreSQL DROP COLUMN\nPostgreSQL DELETE\nPostgreSQL DROP TABLE\n\nCreate Demo Database",
+                "heading": "Database"
+            },
+            {
+                "content": "PostgreSQL Operators\nPostgreSQL SELECT\nPostgreSQL SELECT DISTINCT\nPostgreSQL WHERE\nPostgreSQL ORDER BY\nPostgreSQL LIMIT\nPostgreSQL MIN and MAX\nPostgreSQL COUNT\nPostgreSQL SUM\nPostgreSQL AVG\nPostgreSQL LIKE\nPostgreSQL IN\nPostgreSQL BETWEEN\nPostgreSQL AS\nPostgreSQL Joins\nPostgreSQL INNER JOIN\nPostgreSQL LEFT JOIN\nPostgreSQL RIGHT JOIN\nPostgreSQL FULL JOIN\nPostgreSQL CROSS JOIN\nPostgreSQL UNION\nPostgreSQL GROUP BY\nPostgreSQL HAVING\nPostgreSQL EXISTS\nPostgreSQL ANY\nPostgreSQL ALL\nPostgreSQL CASE",
+                "heading": "PostgreSQL Syntax"
+            },
+            {
+                "content": "PostgreSQL Certificate",
+                "heading": "PostgreSQL Cert"
+            },
+            {
+                "content": "The CROSS JOIN keyword returns the Cartesian \nproduct of two or more \n tables (combines every row from the first table with every row from the second \ntable).\n\nNote: So, if the first table has 100 rows, and the second \ntable has 500 rows, the result set will be 100x500 rows. Be aware that\nCROSS JOIN can potentially return very large \nresult-sets!\n\nLet's look at an example using our dummy testproducts table:\n\n  testproduct_id |      product_name      \n | category_id\n----------------+------------------------+-------------\n\n 1 | Johns Fruit Cake       |           \n 3\n\n 2 | Marys Healthy Mix      |           \n 9\n\n 3 | Peters Scary Stuff     |          \n 10\n\n 4 | Jims Secret Recipe     |          \n 11\n\n 5 | Elisabeths Best Apples |          \n 12\n\n 6 | Janes Favorite Cheese  |           \n 4\n\n 7 | Billys Home Made Pizza |          \n 13\n\n 8 | Ellas Special Salmon   |           \n 8\n\n 9 | Roberts Rich Spaghetti |           \n 5\n             10 | Mias Popular Ice       |          \n 14\n(10 rows)\n\nWe will try to join the testproducts table \nwith the categories table:\n\n  category_id | category_name  |                       \n description\n\n -------------+----------------+------------------------------------------------------------\n\n 1 | Beverages      | Soft drinks, coffees, teas, \n beers, and ales\n\n 2 | Condiments     | Sweet and savory sauces, relishes, \n spreads, and seasonings\n\n 3 | Confections    | Desserts, candies, and sweet breads\n\n 4 | Dairy Products | Cheeses\n\n 5 | Grains/Cereals | Breads, crackers, pasta, and cereal\n\n 6 | Meat/Poultry   | Prepared meats\n\n 7 | Produce        | Dried fruit and bean \n curd\n           8 | \n Seafood        | Seaweed and fish\n(8 \n rows)\n\nNote: The CROSS JOIN method will \nreturn ALL categories for EACH\ntestproduct, meaning that it will return 80 \nrows (10 * 8).\n\n Example\n Join testproducts to \n categories using the CROSS JOIN \n keyword:\n\n SELECT \n testproduct_id, product_name, category_name\n\n FROM testproducts\n\n CROSS JOIN categories;\n\n Run Example »\n\n Result\n All categories for each\n testproduct will be returned:\n\n  testproduct_id \n |      product_name      | \n category_name\n----------------+------------------------+----------------\n\n 1 | Johns Fruit Cake       | Beverages\n\n 1 | Johns Fruit Cake       | Condiments\n\n 1 | Johns Fruit Cake       | Confections\n\n 1 | Johns Fruit Cake       | Dairy Products\n\n 1 | Johns Fruit Cake       | Grains/Cereals\n\n 1 | Johns Fruit Cake       | Meat/Poultry\n\n 1 | Johns Fruit Cake       | Produce\n\n 1 | Johns Fruit Cake       | Seafood\n\n 2 | Marys Healthy Mix      | Beverages\n\n 2 | Marys Healthy Mix      | Condiments\n\n 2 | Marys Healthy Mix      | Confections\n\n 2 | Marys Healthy Mix      | Dairy Products\n\n 2 | Marys Healthy Mix      | Grains/Cereals\n\n 2 | Marys Healthy Mix      | Meat/Poultry\n\n 2 | Marys Healthy Mix      | Produce\n\n 2 | Marys Healthy Mix      | Seafood\n\n 3 | Peters Scary Stuff     | Beverages\n\n 3 | Peters Scary Stuff     | Condiments\n\n 3 | Peters Scary Stuff     | Confections\n\n 3 | Peters Scary Stuff     | Dairy Products\n\n 3 | Peters Scary Stuff     | Grains/Cereals\n\n 3 | Peters Scary Stuff     | Meat/Poultry\n\n 3 | Peters Scary Stuff     | Produce\n\n 3 | Peters Scary Stuff     | Seafood\n\n 4 | Jims Secret Recipe     | Beverages\n\n 4 | Jims Secret Recipe     | Condiments\n\n 4 | Jims Secret Recipe     | Confections\n\n 4 | Jims Secret Recipe     | Dairy Products\n\n 4 | Jims Secret Recipe     | Grains/Cereals\n\n 4 | Jims Secret Recipe     | Meat/Poultry\n\n 4 | Jims Secret Recipe     | Produce\n\n 4 | Jims Secret Recipe     | Seafood\n\n 5 | Elisabeths Best Apples | Beverages\n\n 5 | Elisabeths Best Apples | Condiments\n\n 5 | Elisabeths Best Apples | Confections\n\n 5 | Elisabeths Best Apples | Dairy Products\n\n 5 | Elisabeths Best Apples | Grains/Cereals\n\n 5 | Elisabeths Best Apples | Meat/Poultry\n\n 5 | Elisabeths Best Apples | Produce\n\n 5 | Elisabeths Best Apples | Seafood\n\n 6 | Janes Favorite Cheese  | Beverages\n\n 6 | Janes Favorite Cheese  | Condiments\n\n 6 | Janes Favorite Cheese  | Confections\n\n 6 | Janes Favorite Cheese  | Dairy Products\n\n 6 | Janes Favorite Cheese  | Grains/Cereals\n\n 6 | Janes Favorite Cheese  | Meat/Poultry\n\n 6 | Janes Favorite Cheese  | Produce\n\n 6 | Janes Favorite Cheese  | Seafood\n\n 7 | Billys Home Made Pizza | Beverages\n\n 7 | Billys Home Made Pizza | Condiments\n\n 7 | Billys Home Made Pizza | Confections\n\n 7 | Billys Home Made Pizza | Dairy Products\n\n 7 | Billys Home Made Pizza | Grains/Cereals\n\n 7 | Billys Home Made Pizza | Meat/Poultry\n\n 7 | Billys Home Made Pizza | Produce\n\n 7 | Billys Home Made Pizza | Seafood\n\n 8 | Ellas Special Salmon   | Beverages\n\n 8 | Ellas Special Salmon   | Condiments\n\n 8 | Ellas Special Salmon   | Confections\n\n 8 | Ellas Special Salmon   | Dairy Products\n\n 8 | Ellas Special Salmon   | Grains/Cereals\n\n 8 | Ellas Special Salmon   | Meat/Poultry\n\n 8 | Ellas Special Salmon   | Produce\n\n 8 | Ellas Special Salmon   | Seafood\n\n 9 | Roberts Rich Spaghetti | Beverages\n\n 9 | Roberts Rich Spaghetti | Condiments\n\n 9 | Roberts Rich Spaghetti | Confections\n\n 9 | Roberts Rich Spaghetti | Dairy Products\n\n 9 | Roberts Rich Spaghetti | Grains/Cereals\n\n 9 | Roberts Rich Spaghetti | Meat/Poultry\n\n 9 | Roberts Rich Spaghetti | Produce\n\n 9 | Roberts Rich Spaghetti | Seafood\n\n 10 | Mias Popular Ice       | Beverages\n\n 10 | Mias Popular Ice       | Condiments\n\n 10 | Mias Popular Ice       | Confections\n\n 10 | Mias Popular Ice       | Dairy Products\n\n 10 | Mias Popular Ice       | Grains/Cereals\n\n 10 | Mias Popular Ice       | Meat/Poultry\n\n 10 | Mias Popular Ice       | Produce\n\n 10 | Mias Popular Ice       | Seafood\n(80 \n rows)",
+                "heading": "CROSS JOIN"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:58Z",
+        "subject": "PostgreSQL",
+        "title": "PostgreSQL CROSS JOIN"
+    },
+    {
+        "url": "https://www.w3schools.com/postgresql/postgresql_union.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "postgresql_postgresql_union",
+        "code_examples": [
+            {
+                "code": "SELECT \n product_id, product_name\nFROM products\nUNION\nSELECT \n testproduct_id, product_name\nFROM testproducts\nORDER BY product_id;",
+                "language": "postgresql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "PostgreSQL Home\nPostgreSQL Intro\nPostgreSQL Install\nPostgreSQL Get Started\nPostgreSQL pgAdmin 4",
+                "heading": "PostgreSQL Tutorial"
+            },
+            {
+                "content": "PostgreSQL CREATE TABLE\nPostgreSQL INSERT INTO\nPostgreSQL Fetch Data\nPostgreSQL ADD COLUMN\nPostgreSQL UPDATE\nPostgreSQL ALTER COLUMN\nPostgreSQL DROP COLUMN\nPostgreSQL DELETE\nPostgreSQL DROP TABLE\n\nCreate Demo Database",
+                "heading": "Database"
+            },
+            {
+                "content": "PostgreSQL Operators\nPostgreSQL SELECT\nPostgreSQL SELECT DISTINCT\nPostgreSQL WHERE\nPostgreSQL ORDER BY\nPostgreSQL LIMIT\nPostgreSQL MIN and MAX\nPostgreSQL COUNT\nPostgreSQL SUM\nPostgreSQL AVG\nPostgreSQL LIKE\nPostgreSQL IN\nPostgreSQL BETWEEN\nPostgreSQL AS\nPostgreSQL Joins\nPostgreSQL INNER JOIN\nPostgreSQL LEFT JOIN\nPostgreSQL RIGHT JOIN\nPostgreSQL FULL JOIN\nPostgreSQL CROSS JOIN\nPostgreSQL UNION\nPostgreSQL GROUP BY\nPostgreSQL HAVING\nPostgreSQL EXISTS\nPostgreSQL ANY\nPostgreSQL ALL\nPostgreSQL CASE",
+                "heading": "PostgreSQL Syntax"
+            },
+            {
+                "content": "PostgreSQL Certificate",
+                "heading": "PostgreSQL Cert"
+            },
+            {
+                "content": "The UNION operator is used to combine the result-set of two or more queries.\n\nThe queries in the union must follow these rules:\n\n They must have the same number of columns\n\n The columns must have the same data types\n\n The columns must be in the same order\n\n Example\n Combine products and\n\n testproducts using the UNION operator:\n\n SELECT \n product_id, product_name\nFROM products\nUNION\nSELECT \n testproduct_id, product_name\nFROM testproducts\nORDER BY product_id;\n\n Run Example »",
+                "heading": "UNION"
+            },
+            {
+                "content": "With the UNION operator,\nif some rows in the two queries returns the exact same result, only one row will be listed,\nbecause UNION selects only distinct values.\n\nUse UNION ALL to return duplicate values.\nLet's make some changes to the queries, so that we have duplicate values in the \nresult:\n\n Example - UNION\n\n SELECT \n product_id\nFROM products\nUNION\nSELECT \n testproduct_id\nFROM testproducts\nORDER BY product_id;\n\n Run Example »\n\n Example - UNION ALL\n\n SELECT \n product_id\nFROM products\nUNION ALL\nSELECT \n testproduct_id\nFROM testproducts\nORDER BY product_id;\n\n Run Example »",
+                "heading": "UNION vs UNION ALL"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:58Z",
+        "subject": "PostgreSQL",
+        "title": "PostgreSQL UNION Operator"
+    },
+    {
+        "url": "https://www.w3schools.com/postgresql/postgresql_groupby.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "postgresql_postgresql_groupby",
+        "code_examples": [
+            {
+                "code": "SELECT COUNT(customer_id), country\n\n FROM customers\n\n GROUP BY country;",
+                "language": "postgresql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "PostgreSQL Home\nPostgreSQL Intro\nPostgreSQL Install\nPostgreSQL Get Started\nPostgreSQL pgAdmin 4",
+                "heading": "PostgreSQL Tutorial"
+            },
+            {
+                "content": "PostgreSQL CREATE TABLE\nPostgreSQL INSERT INTO\nPostgreSQL Fetch Data\nPostgreSQL ADD COLUMN\nPostgreSQL UPDATE\nPostgreSQL ALTER COLUMN\nPostgreSQL DROP COLUMN\nPostgreSQL DELETE\nPostgreSQL DROP TABLE\n\nCreate Demo Database",
+                "heading": "Database"
+            },
+            {
+                "content": "PostgreSQL Operators\nPostgreSQL SELECT\nPostgreSQL SELECT DISTINCT\nPostgreSQL WHERE\nPostgreSQL ORDER BY\nPostgreSQL LIMIT\nPostgreSQL MIN and MAX\nPostgreSQL COUNT\nPostgreSQL SUM\nPostgreSQL AVG\nPostgreSQL LIKE\nPostgreSQL IN\nPostgreSQL BETWEEN\nPostgreSQL AS\nPostgreSQL Joins\nPostgreSQL INNER JOIN\nPostgreSQL LEFT JOIN\nPostgreSQL RIGHT JOIN\nPostgreSQL FULL JOIN\nPostgreSQL CROSS JOIN\nPostgreSQL UNION\nPostgreSQL GROUP BY\nPostgreSQL HAVING\nPostgreSQL EXISTS\nPostgreSQL ANY\nPostgreSQL ALL\nPostgreSQL CASE",
+                "heading": "PostgreSQL Syntax"
+            },
+            {
+                "content": "PostgreSQL Certificate",
+                "heading": "PostgreSQL Cert"
+            },
+            {
+                "content": "The GROUP BY clause groups rows that have the same values into summary rows,\nlike \"find the number of customers in each country\".\n\nThe GROUP BY clause is often used with aggregate functions like \nCOUNT(),\nMAX(),\nMIN(),\nSUM(),\nAVG() to group the result-set by one or more columns.\n\n Example\n Lists the number of customers in each country:\n\n SELECT COUNT(customer_id), country\n\n FROM customers\n\n GROUP BY country;\n\n Run Example »",
+                "heading": "GROUP BY"
+            },
+            {
+                "content": "The following SQL statement lists the number of orders made by each customer:\n\n Example\n\nSELECT customers.customer_name, COUNT(orders.order_id)\n\nFROM orders\n\nLEFT JOIN customers ON orders.customer_id = customers.customer_id\n\nGROUP BY customer_name; \n\n Run Example »",
+                "heading": "GROUP BY With JOIN"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:59Z",
+        "subject": "PostgreSQL",
+        "title": "PostgreSQL GROUP BY Clause"
+    },
+    {
+        "url": "https://www.w3schools.com/postgresql/postgresql_having.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "postgresql_postgresql_having",
+        "code_examples": [
+            {
+                "code": "SELECT COUNT(customer_id), country\n\n FROM customers\n\n GROUP BY country\n\n HAVING COUNT(customer_id) > 5;",
+                "language": "postgresql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "PostgreSQL Home\nPostgreSQL Intro\nPostgreSQL Install\nPostgreSQL Get Started\nPostgreSQL pgAdmin 4",
+                "heading": "PostgreSQL Tutorial"
+            },
+            {
+                "content": "PostgreSQL CREATE TABLE\nPostgreSQL INSERT INTO\nPostgreSQL Fetch Data\nPostgreSQL ADD COLUMN\nPostgreSQL UPDATE\nPostgreSQL ALTER COLUMN\nPostgreSQL DROP COLUMN\nPostgreSQL DELETE\nPostgreSQL DROP TABLE\n\nCreate Demo Database",
+                "heading": "Database"
+            },
+            {
+                "content": "PostgreSQL Operators\nPostgreSQL SELECT\nPostgreSQL SELECT DISTINCT\nPostgreSQL WHERE\nPostgreSQL ORDER BY\nPostgreSQL LIMIT\nPostgreSQL MIN and MAX\nPostgreSQL COUNT\nPostgreSQL SUM\nPostgreSQL AVG\nPostgreSQL LIKE\nPostgreSQL IN\nPostgreSQL BETWEEN\nPostgreSQL AS\nPostgreSQL Joins\nPostgreSQL INNER JOIN\nPostgreSQL LEFT JOIN\nPostgreSQL RIGHT JOIN\nPostgreSQL FULL JOIN\nPostgreSQL CROSS JOIN\nPostgreSQL UNION\nPostgreSQL GROUP BY\nPostgreSQL HAVING\nPostgreSQL EXISTS\nPostgreSQL ANY\nPostgreSQL ALL\nPostgreSQL CASE",
+                "heading": "PostgreSQL Syntax"
+            },
+            {
+                "content": "PostgreSQL Certificate",
+                "heading": "PostgreSQL Cert"
+            },
+            {
+                "content": "The HAVING clause was added to SQL because the\nWHERE clause cannot be used with aggregate functions.\n\nAggregate functions are often used with GROUP BY clauses,\nand by adding HAVING we can write condition like we do with\nWHERE clauses.\n\n Example\n List only countries that are represented more than 5 times:\n\n SELECT COUNT(customer_id), country\n\n FROM customers\n\n GROUP BY country\n\n HAVING COUNT(customer_id) > 5;\n\n Run Example »",
+                "heading": "HAVING"
+            },
+            {
+                "content": "The following SQL statement lists only orders with a total price of 400$ or more:\n\n Example\n\nSELECT order_id, SUM(order_details.quantity * products.price)\n\nFROM order_details\n\nLEFT JOIN products on products.product_id = order_details.product_id\n\nGROUP BY order_id\n\nHAVING SUM(order_details.quantity * products.price) > 400.00;\n\n Run Example »\n\nLists customers that have ordered for 1000$ or more:\n\n Example\n\nSELECT customers.customer_name,\n\nSUM(order_details.quantity * products.price)\n\nFROM order_details\n\nINNER JOIN products ON order_details.product_id = products.product_id\n\nINNER JOIN orders ON order_details.order_id = orders.order_id\n\nINNER JOIN customers ON orders.customer_id = customers.customer_id\n\nGROUP BY customers.customer_id, customers.customer_name\n\nHAVING SUM(order_details.quantity * products.price) >= 1000;\n\n Run Example »",
+                "heading": "More HAVING Examples"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:17:59Z",
+        "subject": "PostgreSQL",
+        "title": "PostgreSQL HAVING Clause"
+    },
+    {
+        "url": "https://www.w3schools.com/postgresql/postgresql_exists.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "postgresql_postgresql_exists",
+        "code_examples": [
+            {
+                "code": "SELECT customers.customer_name\n\nFROM customers\n\nWHERE EXISTS (\n\nSELECT order_id\n\nFROM orders\n  WHERE customer_id = customers.customer_id\n);",
+                "language": "postgresql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "PostgreSQL Home\nPostgreSQL Intro\nPostgreSQL Install\nPostgreSQL Get Started\nPostgreSQL pgAdmin 4",
+                "heading": "PostgreSQL Tutorial"
+            },
+            {
+                "content": "PostgreSQL CREATE TABLE\nPostgreSQL INSERT INTO\nPostgreSQL Fetch Data\nPostgreSQL ADD COLUMN\nPostgreSQL UPDATE\nPostgreSQL ALTER COLUMN\nPostgreSQL DROP COLUMN\nPostgreSQL DELETE\nPostgreSQL DROP TABLE\n\nCreate Demo Database",
+                "heading": "Database"
+            },
+            {
+                "content": "PostgreSQL Operators\nPostgreSQL SELECT\nPostgreSQL SELECT DISTINCT\nPostgreSQL WHERE\nPostgreSQL ORDER BY\nPostgreSQL LIMIT\nPostgreSQL MIN and MAX\nPostgreSQL COUNT\nPostgreSQL SUM\nPostgreSQL AVG\nPostgreSQL LIKE\nPostgreSQL IN\nPostgreSQL BETWEEN\nPostgreSQL AS\nPostgreSQL Joins\nPostgreSQL INNER JOIN\nPostgreSQL LEFT JOIN\nPostgreSQL RIGHT JOIN\nPostgreSQL FULL JOIN\nPostgreSQL CROSS JOIN\nPostgreSQL UNION\nPostgreSQL GROUP BY\nPostgreSQL HAVING\nPostgreSQL EXISTS\nPostgreSQL ANY\nPostgreSQL ALL\nPostgreSQL CASE",
+                "heading": "PostgreSQL Syntax"
+            },
+            {
+                "content": "PostgreSQL Certificate",
+                "heading": "PostgreSQL Cert"
+            },
+            {
+                "content": "The EXISTS operator is used to test for the existence of any record in a \nsub query.\n\nThe EXISTS operator returns TRUE if the sub \nquery returns one or more records.\n\n Example\n Return all customers that is represented in the orders table:\n\nSELECT customers.customer_name\n\nFROM customers\n\nWHERE EXISTS (\n\nSELECT order_id\n\nFROM orders\n  WHERE customer_id = customers.customer_id\n);\n\n Run Example »\n\nThe result in example above showed that 89 customers had at least one order in the \norders table.",
+                "heading": "EXISTS"
+            },
+            {
+                "content": "To check which customers that do not have any orders, we can use the\nNOT operator together with the EXISTS \noperator :\n\n Example\n Return all customers that is NOT represented in the orders table:\n\nSELECT customers.customer_name\n\nFROM customers\n\nWHERE NOT EXISTS (\n\nSELECT order_id\n\nFROM orders\n  WHERE customer_id = customers.customer_id\n);\n\n Run Example »",
+                "heading": "NOT EXISTS"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:18:00Z",
+        "subject": "PostgreSQL",
+        "title": "PostgreSQL EXISTS Operator"
+    },
+    {
+        "url": "https://www.w3schools.com/postgresql/postgresql_any.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "postgresql_postgresql_any",
+        "code_examples": [
+            {
+                "code": "SELECT product_name\nFROM products\nWHERE product_id = ANY (\n  SELECT \n product_id\n  FROM order_details\n  WHERE quantity > 120\n\n);",
+                "language": "postgresql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "PostgreSQL Home\nPostgreSQL Intro\nPostgreSQL Install\nPostgreSQL Get Started\nPostgreSQL pgAdmin 4",
+                "heading": "PostgreSQL Tutorial"
+            },
+            {
+                "content": "PostgreSQL CREATE TABLE\nPostgreSQL INSERT INTO\nPostgreSQL Fetch Data\nPostgreSQL ADD COLUMN\nPostgreSQL UPDATE\nPostgreSQL ALTER COLUMN\nPostgreSQL DROP COLUMN\nPostgreSQL DELETE\nPostgreSQL DROP TABLE\n\nCreate Demo Database",
+                "heading": "Database"
+            },
+            {
+                "content": "PostgreSQL Operators\nPostgreSQL SELECT\nPostgreSQL SELECT DISTINCT\nPostgreSQL WHERE\nPostgreSQL ORDER BY\nPostgreSQL LIMIT\nPostgreSQL MIN and MAX\nPostgreSQL COUNT\nPostgreSQL SUM\nPostgreSQL AVG\nPostgreSQL LIKE\nPostgreSQL IN\nPostgreSQL BETWEEN\nPostgreSQL AS\nPostgreSQL Joins\nPostgreSQL INNER JOIN\nPostgreSQL LEFT JOIN\nPostgreSQL RIGHT JOIN\nPostgreSQL FULL JOIN\nPostgreSQL CROSS JOIN\nPostgreSQL UNION\nPostgreSQL GROUP BY\nPostgreSQL HAVING\nPostgreSQL EXISTS\nPostgreSQL ANY\nPostgreSQL ALL\nPostgreSQL CASE",
+                "heading": "PostgreSQL Syntax"
+            },
+            {
+                "content": "PostgreSQL Certificate",
+                "heading": "PostgreSQL Cert"
+            },
+            {
+                "content": "The ANY operator\nallows you to perform a comparison between a single column value and a range of other values.\n\nThe ANY operator:\n\n returns a Boolean value as a result\n\n returns TRUE if ANY of the sub query values meet the condition\n\nANY\nmeans that the condition will be true if the operation is true for any of the values in the range.\n\n Example\n List products that have ANY records in the order_details table with a quantity \n larger than 120:\n\nSELECT product_name\nFROM products\nWHERE product_id = ANY (\n  SELECT \n product_id\n  FROM order_details\n  WHERE quantity > 120\n\n);\n\n Run Example »",
+                "heading": "ANY"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:18:00Z",
+        "subject": "PostgreSQL",
+        "title": "PostgreSQL ANY Operator"
+    },
+    {
+        "url": "https://www.w3schools.com/postgresql/postgresql_all.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "postgresql_postgresql_all",
+        "code_examples": [
+            {
+                "code": "SELECT product_name\nFROM products\nWHERE product_id = ALL (\n  SELECT \n product_id\n  FROM order_details\n  WHERE quantity > 10\n\n);",
+                "language": "postgresql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "PostgreSQL Home\nPostgreSQL Intro\nPostgreSQL Install\nPostgreSQL Get Started\nPostgreSQL pgAdmin 4",
+                "heading": "PostgreSQL Tutorial"
+            },
+            {
+                "content": "PostgreSQL CREATE TABLE\nPostgreSQL INSERT INTO\nPostgreSQL Fetch Data\nPostgreSQL ADD COLUMN\nPostgreSQL UPDATE\nPostgreSQL ALTER COLUMN\nPostgreSQL DROP COLUMN\nPostgreSQL DELETE\nPostgreSQL DROP TABLE\n\nCreate Demo Database",
+                "heading": "Database"
+            },
+            {
+                "content": "PostgreSQL Operators\nPostgreSQL SELECT\nPostgreSQL SELECT DISTINCT\nPostgreSQL WHERE\nPostgreSQL ORDER BY\nPostgreSQL LIMIT\nPostgreSQL MIN and MAX\nPostgreSQL COUNT\nPostgreSQL SUM\nPostgreSQL AVG\nPostgreSQL LIKE\nPostgreSQL IN\nPostgreSQL BETWEEN\nPostgreSQL AS\nPostgreSQL Joins\nPostgreSQL INNER JOIN\nPostgreSQL LEFT JOIN\nPostgreSQL RIGHT JOIN\nPostgreSQL FULL JOIN\nPostgreSQL CROSS JOIN\nPostgreSQL UNION\nPostgreSQL GROUP BY\nPostgreSQL HAVING\nPostgreSQL EXISTS\nPostgreSQL ANY\nPostgreSQL ALL\nPostgreSQL CASE",
+                "heading": "PostgreSQL Syntax"
+            },
+            {
+                "content": "PostgreSQL Certificate",
+                "heading": "PostgreSQL Cert"
+            },
+            {
+                "content": "The ALL operator:\n\n returns a Boolean value as a result\n\n returns TRUE if ALL of the sub query values meet the condition\n\n is used with SELECT, WHERE and HAVING statements\n\nALL\nmeans that the condition will be true only if the operation is true for all values in the range.\n\n Example\n List the products if ALL the records in the order_details with quantity larger than 10.\n\n Note: This will of course return FALSE because the quantity column has many different values (not only the value of 10):\n\nSELECT product_name\nFROM products\nWHERE product_id = ALL (\n  SELECT \n product_id\n  FROM order_details\n  WHERE quantity > 10\n\n);\n\n Run Example »",
+                "heading": "ALL"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:18:00Z",
+        "subject": "PostgreSQL",
+        "title": "PostgreSQL ALL Operator"
+    },
+    {
+        "url": "https://www.w3schools.com/postgresql/postgresql_case.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "postgresql_postgresql_case",
+        "code_examples": [
+            {
+                "code": "SELECT product_name,\n\nCASE\n\n WHEN price < 10 THEN 'Low price product'\n  WHEN price > 50 THEN 'High \n price product'\nELSE\n  'Normal product'\nEND\nFROM \n products;",
+                "language": "postgresql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "PostgreSQL Home\nPostgreSQL Intro\nPostgreSQL Install\nPostgreSQL Get Started\nPostgreSQL pgAdmin 4",
+                "heading": "PostgreSQL Tutorial"
+            },
+            {
+                "content": "PostgreSQL CREATE TABLE\nPostgreSQL INSERT INTO\nPostgreSQL Fetch Data\nPostgreSQL ADD COLUMN\nPostgreSQL UPDATE\nPostgreSQL ALTER COLUMN\nPostgreSQL DROP COLUMN\nPostgreSQL DELETE\nPostgreSQL DROP TABLE\n\nCreate Demo Database",
+                "heading": "Database"
+            },
+            {
+                "content": "PostgreSQL Operators\nPostgreSQL SELECT\nPostgreSQL SELECT DISTINCT\nPostgreSQL WHERE\nPostgreSQL ORDER BY\nPostgreSQL LIMIT\nPostgreSQL MIN and MAX\nPostgreSQL COUNT\nPostgreSQL SUM\nPostgreSQL AVG\nPostgreSQL LIKE\nPostgreSQL IN\nPostgreSQL BETWEEN\nPostgreSQL AS\nPostgreSQL Joins\nPostgreSQL INNER JOIN\nPostgreSQL LEFT JOIN\nPostgreSQL RIGHT JOIN\nPostgreSQL FULL JOIN\nPostgreSQL CROSS JOIN\nPostgreSQL UNION\nPostgreSQL GROUP BY\nPostgreSQL HAVING\nPostgreSQL EXISTS\nPostgreSQL ANY\nPostgreSQL ALL\nPostgreSQL CASE",
+                "heading": "PostgreSQL Syntax"
+            },
+            {
+                "content": "PostgreSQL Certificate",
+                "heading": "PostgreSQL Cert"
+            },
+            {
+                "content": "The CASE\nexpression goes through conditions and returns a value when the first condition is met\n(like an if-then-else statement).\n\nOnce a condition is true, it will stop reading and return the result.\nIf no conditions are true, it returns the value in the ELSE clause.\n\nIf there is no ELSE part and no conditions are true, it returns NULL.\n\n Example\n Return specific values if the price meets a specific condition:\n\nSELECT product_name,\n\nCASE\n\n WHEN price < 10 THEN 'Low price product'\n  WHEN price > 50 THEN 'High \n price product'\nELSE\n  'Normal product'\nEND\nFROM \n products;\n\n Run Example »",
+                "heading": "CASE"
+            },
+            {
+                "content": "When a column name is not specified for the \"case\" field,\nthe parser uses case as the column name.\n\nTo specify a column name, add an alias after the END keyword.\n\n Example\n Same example, but with an alias for the case column::\n\nSELECT product_name,\n\nCASE\n\n WHEN price < 10 THEN 'Low price product'\n  WHEN price > 50 THEN 'High \n price product'\nELSE\n  'Normal product'\nEND AS \"price category\"\nFROM \n products;\n\n Run Example »\n\nYou can read more about aliases in our PostgreSQL AS chapter.",
+                "heading": "With an Alias"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:18:00Z",
+        "subject": "PostgreSQL",
+        "title": "PostgreSQL CASE Expression"
+    },
+    {
+        "url": "https://www.w3schools.com/postgresql/postgresql_exam.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "postgresql_postgresql_exam",
+        "code_examples": [],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "PostgreSQL Home\nPostgreSQL Intro\nPostgreSQL Install\nPostgreSQL Get Started\nPostgreSQL pgAdmin 4",
+                "heading": "PostgreSQL Tutorial"
+            },
+            {
+                "content": "PostgreSQL CREATE TABLE\nPostgreSQL INSERT INTO\nPostgreSQL Fetch Data\nPostgreSQL ADD COLUMN\nPostgreSQL UPDATE\nPostgreSQL ALTER COLUMN\nPostgreSQL DROP COLUMN\nPostgreSQL DELETE\nPostgreSQL DROP TABLE\n\nCreate Demo Database",
+                "heading": "Database"
+            },
+            {
+                "content": "PostgreSQL Operators\nPostgreSQL SELECT\nPostgreSQL SELECT DISTINCT\nPostgreSQL WHERE\nPostgreSQL ORDER BY\nPostgreSQL LIMIT\nPostgreSQL MIN and MAX\nPostgreSQL COUNT\nPostgreSQL SUM\nPostgreSQL AVG\nPostgreSQL LIKE\nPostgreSQL IN\nPostgreSQL BETWEEN\nPostgreSQL AS\nPostgreSQL Joins\nPostgreSQL INNER JOIN\nPostgreSQL LEFT JOIN\nPostgreSQL RIGHT JOIN\nPostgreSQL FULL JOIN\nPostgreSQL CROSS JOIN\nPostgreSQL UNION\nPostgreSQL GROUP BY\nPostgreSQL HAVING\nPostgreSQL EXISTS\nPostgreSQL ANY\nPostgreSQL ALL\nPostgreSQL CASE",
+                "heading": "PostgreSQL Syntax"
+            },
+            {
+                "content": "PostgreSQL Certificate",
+                "heading": "PostgreSQL Cert"
+            },
+            {
+                "content": "Prepare online at your own pace, take the exam when you are ready, and add a verified credential to your CV, LinkedIn profile, and portfolio.\n\n Designed for students, developers, and professionals who want a practical way to document their knowledge.\n\n Get Your HTML Certificate »\n\n Online exam. No expiration. Shareable verification link.\n\n w\n 3\n s\n c\n h\n o\n o\n l\n s\n\n C\n E\n R\n T\n I\n F\n I\n E\n D\n\n .\n\n 2\n 0\n 2\n 6",
+                "heading": "Get Certified in HTML"
+            },
+            {
+                "content": "Any student or professional working in digital fields can benefit from documenting their skills with a certificate.\n\n Certifications help demonstrate knowledge to current or future employers, clients, and collaborators in an increasingly competitive market.",
+                "heading": "Why Get Certified?"
+            },
+            {
+                "content": "W3Schools has more than two decades of experience teaching coding online.\n\n Our certificates provide a practical and professional way to show your skills in a format that is easy to verify and share.",
+                "heading": "Trusted Learning Platform"
+            },
+            {
+                "content": "The price is a small fraction of the cost of traditional education.\n\n You can prepare on your own schedule and take the exam when you are ready.",
+                "heading": "Affordable and Flexible"
+            },
+            {
+                "content": "Each certificate includes a unique verification link that can be shared with employers, clients, and your network.\n\n Download your certificate to showcase it, and validate it using the unique link or QR code.\n\n See how it looks in this example.",
+                "heading": "Get Your Certificate and Share It"
+            },
+            {
+                "content": "Fee\n\n 95 USD\n\n Achievable certification levels\n\n Intermediate (40%)\nAdvanced (75%)\nProfessional (90%)\n\n Number of questions\n\n Adaptive, 60 on average\n\n Requirement to pass\n\n Minimum 40% - Intermediate level\n\n Time limit\n\n 60 minutes\n\n Number of attempts\n\n 3\n\n Exam deadline\n\n None\n\n Certification expiration\n\n None\n\n Format\n\n Online, multiple choice\n\n Register Now »\n\n Have any questions? Send us an e-mail: sales@w3schools.com",
+                "heading": "Exam Overview"
+            },
+            {
+                "content": "Getting a certificate shows your commitment to improving your skills.\n\n You can add the certificate to your CV, resume, LinkedIn profile, and other professional platforms.\n\n It can help support career growth by making it easier to show your knowledge when applying for jobs, freelance work, or larger projects.",
+                "heading": "Advance Faster in Your Career"
+            },
+            {
+                "content": "Get Certified",
+                "heading": "Document Your Knowledge Today!"
+            },
+            {
+                "content": "01\n\n Study HTML for free at W3Schools.com\n\n 02\n\n Learn at your own speed and focus on the topics you need most\n\n 03\n\n Practice with quizzes and exercises\n\n 04\n\n Apply by paying the exam fee\n\n 05\n\n Take the exam online at any time and from any location",
+                "heading": "How It Works"
+            },
+            {
+                "content": "Getting a certificate shows initiative, helps you build credibility, and gives you a professional way to present your HTML knowledge.\n\n Get Your HTML Certificate »",
+                "heading": "Document Your Skills"
+            },
+            {
+                "content": "Are you an educator, manager, or business owner looking for courses or certifications for a group?\n\n We work with schools, companies, and organizations around the world.\n\n Send us an e-mail: sales@w3schools.com\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Looking to Add Multiple Users?"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:18:00Z",
+        "subject": "PostgreSQL",
+        "title": "W3Schools PostgreSQL Certificate"
+    },
+    {
+        "url": "https://www.w3schools.com/postgresql/postgresql_exercises.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "postgresql_postgresql_exercises",
+        "code_examples": [],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "PostgreSQL Home\nPostgreSQL Intro\nPostgreSQL Install\nPostgreSQL Get Started\nPostgreSQL pgAdmin 4",
+                "heading": "PostgreSQL Tutorial"
+            },
+            {
+                "content": "PostgreSQL CREATE TABLE\nPostgreSQL INSERT INTO\nPostgreSQL Fetch Data\nPostgreSQL ADD COLUMN\nPostgreSQL UPDATE\nPostgreSQL ALTER COLUMN\nPostgreSQL DROP COLUMN\nPostgreSQL DELETE\nPostgreSQL DROP TABLE\n\nCreate Demo Database",
+                "heading": "Database"
+            },
+            {
+                "content": "PostgreSQL Operators\nPostgreSQL SELECT\nPostgreSQL SELECT DISTINCT\nPostgreSQL WHERE\nPostgreSQL ORDER BY\nPostgreSQL LIMIT\nPostgreSQL MIN and MAX\nPostgreSQL COUNT\nPostgreSQL SUM\nPostgreSQL AVG\nPostgreSQL LIKE\nPostgreSQL IN\nPostgreSQL BETWEEN\nPostgreSQL AS\nPostgreSQL Joins\nPostgreSQL INNER JOIN\nPostgreSQL LEFT JOIN\nPostgreSQL RIGHT JOIN\nPostgreSQL FULL JOIN\nPostgreSQL CROSS JOIN\nPostgreSQL UNION\nPostgreSQL GROUP BY\nPostgreSQL HAVING\nPostgreSQL EXISTS\nPostgreSQL ANY\nPostgreSQL ALL\nPostgreSQL CASE",
+                "heading": "PostgreSQL Syntax"
+            },
+            {
+                "content": "PostgreSQL Certificate",
+                "heading": "PostgreSQL Cert"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "Create table4 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "Insert Data3 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "Select Data3 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "Add Column3 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "Update Data3 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "ALTER COLUMN3 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "DROP COLUMN3 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "DELETE4 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "DROP TABLE3 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "OPERATORS9 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "SELECT3 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "SELECT DISTINCT3 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "WHERE3 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "ORDER BY3 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "LIMIT3 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "MIN and MAX3 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "COUNT3 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "SUM3 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "AVG3 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "LIKE4 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "IN3 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "BETWEEN3 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "AS3 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "Joins3 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "INNER JOIN3 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "LEFT JOIN4 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "RIGHT JOIN3 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "FULL JOIN3 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "CROSS JOIN3 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "UNION4 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "GROUP BY3 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "HAVING3 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "EXISTS3 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "ANY3 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "ALL3 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "CASE3 exercises"
+            },
+            {
+                "content": "If you haven't already, sign up to become a W3Schooler, and get points for every exercise you complete.\n\nAs a logged on W3Schools user you will have access to many features like having your own web page,\ntrack your learning progress,\nreceive personal guided paths, and\nmore.",
+                "heading": "Log in to track your progress"
+            },
+            {
+                "content": "The exercises are a mix of \"multiple choice\" and \"fill in the blanks\" questions. \nThere are between 3 and 9 questions in each category.\nThe answer can be found in the corresponding tutorial chapter. If you're stuck, \nor answer wrong, you can try again or hit the \"Show Answer\" button to see the correct answer.\n\n If you don't know PostgreSQL, we suggest that you read our PostgreSQL Tutorial from scratch.\n\n ❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "The Exercise"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:18:00Z",
+        "subject": "PostgreSQL",
+        "title": "PostgreSQL Exercises"
+    },
+    {
+        "url": "https://www.w3schools.com/postgresql/postgresql_quiz.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "postgresql_postgresql_quiz",
+        "code_examples": [],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "PostgreSQL Home\nPostgreSQL Intro\nPostgreSQL Install\nPostgreSQL Get Started\nPostgreSQL pgAdmin 4",
+                "heading": "PostgreSQL Tutorial"
+            },
+            {
+                "content": "PostgreSQL CREATE TABLE\nPostgreSQL INSERT INTO\nPostgreSQL Fetch Data\nPostgreSQL ADD COLUMN\nPostgreSQL UPDATE\nPostgreSQL ALTER COLUMN\nPostgreSQL DROP COLUMN\nPostgreSQL DELETE\nPostgreSQL DROP TABLE\n\nCreate Demo Database",
+                "heading": "Database"
+            },
+            {
+                "content": "PostgreSQL Operators\nPostgreSQL SELECT\nPostgreSQL SELECT DISTINCT\nPostgreSQL WHERE\nPostgreSQL ORDER BY\nPostgreSQL LIMIT\nPostgreSQL MIN and MAX\nPostgreSQL COUNT\nPostgreSQL SUM\nPostgreSQL AVG\nPostgreSQL LIKE\nPostgreSQL IN\nPostgreSQL BETWEEN\nPostgreSQL AS\nPostgreSQL Joins\nPostgreSQL INNER JOIN\nPostgreSQL LEFT JOIN\nPostgreSQL RIGHT JOIN\nPostgreSQL FULL JOIN\nPostgreSQL CROSS JOIN\nPostgreSQL UNION\nPostgreSQL GROUP BY\nPostgreSQL HAVING\nPostgreSQL EXISTS\nPostgreSQL ANY\nPostgreSQL ALL\nPostgreSQL CASE",
+                "heading": "PostgreSQL Syntax"
+            },
+            {
+                "content": "PostgreSQL Certificate",
+                "heading": "PostgreSQL Cert"
+            },
+            {
+                "content": "The test contains 25 questions and there is no time limit.\n\nThe test is not official, it's just a nice way to see how much you know about \nPostgreSQL.",
+                "heading": "The Test"
+            },
+            {
+                "content": "You will get 1 point for each correct answer. At the end of the Quiz,\nyour total score will be displayed. Maximum score is 25 points.",
+                "heading": "Count Your Score"
+            },
+            {
+                "content": "Good luck!\n\nStart the PostgreSQL Quiz ❯\n\n If you do not know PostgreSQL, we suggest that you read our PostgreSQL utorial from scratch.",
+                "heading": "Start the Quiz"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:18:01Z",
+        "subject": "PostgreSQL",
+        "title": "PostgreSQL Quiz"
+    },
+    {
+        "url": "https://www.w3schools.com/postgresql/postgresql_syllabus.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "postgresql_postgresql_syllabus",
+        "code_examples": [
+            {
+                "code": "SELECT * FROM cars\n\n ORDER BY year;",
+                "language": "postgresql",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "PostgreSQL Home\nPostgreSQL Intro\nPostgreSQL Install\nPostgreSQL Get Started\nPostgreSQL pgAdmin 4",
+                "heading": "PostgreSQL Tutorial"
+            },
+            {
+                "content": "PostgreSQL CREATE TABLE\nPostgreSQL INSERT INTO\nPostgreSQL Fetch Data\nPostgreSQL ADD COLUMN\nPostgreSQL UPDATE\nPostgreSQL ALTER COLUMN\nPostgreSQL DROP COLUMN\nPostgreSQL DELETE\nPostgreSQL DROP TABLE\n\nCreate Demo Database",
+                "heading": "Database"
+            },
+            {
+                "content": "PostgreSQL Operators\nPostgreSQL SELECT\nPostgreSQL SELECT DISTINCT\nPostgreSQL WHERE\nPostgreSQL ORDER BY\nPostgreSQL LIMIT\nPostgreSQL MIN and MAX\nPostgreSQL COUNT\nPostgreSQL SUM\nPostgreSQL AVG\nPostgreSQL LIKE\nPostgreSQL IN\nPostgreSQL BETWEEN\nPostgreSQL AS\nPostgreSQL Joins\nPostgreSQL INNER JOIN\nPostgreSQL LEFT JOIN\nPostgreSQL RIGHT JOIN\nPostgreSQL FULL JOIN\nPostgreSQL CROSS JOIN\nPostgreSQL UNION\nPostgreSQL GROUP BY\nPostgreSQL HAVING\nPostgreSQL EXISTS\nPostgreSQL ANY\nPostgreSQL ALL\nPostgreSQL CASE",
+                "heading": "PostgreSQL Syntax"
+            },
+            {
+                "content": "PostgreSQL Certificate",
+                "heading": "PostgreSQL Cert"
+            },
+            {
+                "content": "The W3Schools PostgreSQL Tutorial is comprehensive and beginner-friendly.\n\nIt will give you a fundamental knowledge of PostgreSQL database management.\n\nIt is designed for beginners and requires only basic SQL knowledge.\n\nThe content has been carefully made to be bite-sized, simple, and easy to understand.\n\nThe content has been proven by millions of users over the years. It is updated and improved frequently.\n\nThe syllabus outline and its sequence are structured so you can learn PostgreSQL step by step, from the introduction to advanced database management.\n\nGet Started With PostgreSQL »",
+                "heading": "Introduction"
+            },
+            {
+                "content": "Understand the basic concepts of PostgreSQL databases.\n\n Create and manage PostgreSQL databases and tables.\n\n Write and optimize SQL queries for PostgreSQL.\n\n Work with PostgreSQL data types and functions.\n\n Implement database constraints and relationships.\n\n Handle database administration tasks.\n\nNote: Are you a teacher teaching PostgreSQL? W3Schools Academy is a toolbox of features that can help you teach. It offers classroom features such as pre-built study plans, classroom administration and much more. Read more about Academy here.",
+                "heading": "Learning Outcomes"
+            },
+            {
+                "content": "Database Management:\n PostgreSQL can be usedfor managing relational databases.\n\n Web Development:\n PostgreSQL is widely used in web applications.\n\n Data Analysis:\n PostgreSQL supports data analysis tasks.\n\n Enterprise Applications:\n PostgreSQL is suitable for large-scale enterprise systems.\n\n GIS Applications:\n PostgreSQL has strong support for geographic data.\n\n Data Warehousing:\n PostgreSQL handles large data warehouses efficiently.\n\n Application Development:\n PostgreSQL integrates well with various programming languages.\n\nGet Started",
+                "heading": "Which Subjects Are PostgreSQL Relevant For?"
+            },
+            {
+                "content": "In this tutorial we offer different activities for you to learn PostgreSQL for free:\n\n Lessons\n\n Exercises\n\n Quizzes",
+                "heading": "Activities"
+            },
+            {
+                "content": "You can also create an account to track your progress.\n\nAs a signed-in user, you get access to features such as:\n\n Learning paths\n\n Sandbox and lab environments\n\n Achievements\n\n And much more!\n\nSign Up",
+                "heading": "Sign in to Track Progress"
+            },
+            {
+                "content": "PostgreSQL Home\n\n PostgreSQL Intro\n\n PostgreSQL Install\n\n PostgreSQL Get Started\n\n PostgreSQL pgAdmin 4\n\n PostgreSQL CREATE TABLE\n\n PostgreSQL INSERT INTO\n\n PostgreSQL Fetch Data\n\n PostgreSQL ADD COLUMN\n\n PostgreSQL UPDATE\n\n PostgreSQL ALTER COLUMN\n\n PostgreSQL DROP COLUMN\n\n PostgreSQL DELETE\n\n PostgreSQL DROP TABLE\n\n Create Demo Database\n\n PostgreSQL Operators\n\n PostgreSQL SELECT\n\n PostgreSQL SELECT DISTINCT\n\n PostgreSQL WHERE\n\n PostgreSQL ORDER BY\n\n PostgreSQL LIMIT\n\n PostgreSQL MIN and MAX\n\n PostgreSQL COUNT\n\n PostgreSQL SUM\n\n PostgreSQL AVG\n\n PostgreSQL LIKE\n\n PostgreSQL IN\n\n PostgreSQL BETWEEN\n\n PostgreSQL AS\n\n PostgreSQL Joins\n\n PostgreSQL INNER JOIN\n\n PostgreSQL LEFT JOIN\n\n PostgreSQL RIGHT JOIN\n\n PostgreSQL FULL JOIN\n\n PostgreSQL CROSS JOIN\n\n PostgreSQL UNION\n\n PostgreSQL GROUP BY\n\n PostgreSQL HAVING\n\n PostgreSQL EXISTS\n\n PostgreSQL ANY\n\n PostgreSQL ALL\n\n PostgreSQL CASE\n\nGet Started",
+                "heading": "Overview of the Modules"
+            },
+            {
+                "content": "PostgreSQL, like any database system, is best learned through hands-on practice.\n\nTry this example using our editor:\n\n Example\n Sort the table by year:\n\n SELECT * FROM cars\n\n ORDER BY year;\n\n Run Example »\n\nIf you want to explore more and host your project, we have a feature called Spaces \nthat allows you to build, test and run websites.\n\nHere you get a secure sandbox environment called Spaces, where you can practice coding and test projects in real-time.\n\nThis includes a W3Schools subdomain, hosting, and secure SSL certificates.\n\nPostgreSQL is not hosted on W3Schools Spaces; you need to set it up on a platform like Supabase or Heroku and connect your application to it.\n\nSpaces require no installation and run directly in the browser.\n\nFeatures include:\n\n Collaboration\n\n File navigator\n\n Terminal & log\n\n Package manager\n\n Database\n\n Environment manager\n\n Analytics\n\nCreate a Spaces Account",
+                "heading": "Sandbox and Lab Environment"
+            },
+            {
+                "content": "W3Schools offers an end-of-pathway certification program.\n\nHere you can take exams to get certified.\n\nThe PostgreSQL exam is a test that summarizes the W3Schools PostgreSQL syllabus.\n\nAfter passing the exam you get the \"Certified PostgreSQL Developer\" Certification.\n\nThe certification exam is adaptive and graded; students will get a grade from intermediate, advanced to professional.\n\nBuy Certificate »",
+                "heading": "PostgreSQL Certification"
+            },
+            {
+                "content": "Are you interested in learning how you can use W3Schools Academy to Teach \nPostgreSQL? \n\nWatch a demo of W3Schools Academy. You'll see how it works, and discover how it can make teaching programming easier and more engaging.\n\nWatch Demo »\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Are You a Teacher?"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:18:01Z",
+        "subject": "PostgreSQL",
+        "title": "PostgreSQL Syllabus"
+    },
+    {
+        "url": "https://www.w3schools.com/postgresql/postgresql_study_plan.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "postgresql_postgresql_study_plan",
+        "code_examples": [],
+        "category": "Databases",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "PostgreSQL Home\nPostgreSQL Intro\nPostgreSQL Install\nPostgreSQL Get Started\nPostgreSQL pgAdmin 4",
+                "heading": "PostgreSQL Tutorial"
+            },
+            {
+                "content": "PostgreSQL CREATE TABLE\nPostgreSQL INSERT INTO\nPostgreSQL Fetch Data\nPostgreSQL ADD COLUMN\nPostgreSQL UPDATE\nPostgreSQL ALTER COLUMN\nPostgreSQL DROP COLUMN\nPostgreSQL DELETE\nPostgreSQL DROP TABLE\n\nCreate Demo Database",
+                "heading": "Database"
+            },
+            {
+                "content": "PostgreSQL Operators\nPostgreSQL SELECT\nPostgreSQL SELECT DISTINCT\nPostgreSQL WHERE\nPostgreSQL ORDER BY\nPostgreSQL LIMIT\nPostgreSQL MIN and MAX\nPostgreSQL COUNT\nPostgreSQL SUM\nPostgreSQL AVG\nPostgreSQL LIKE\nPostgreSQL IN\nPostgreSQL BETWEEN\nPostgreSQL AS\nPostgreSQL Joins\nPostgreSQL INNER JOIN\nPostgreSQL LEFT JOIN\nPostgreSQL RIGHT JOIN\nPostgreSQL FULL JOIN\nPostgreSQL CROSS JOIN\nPostgreSQL UNION\nPostgreSQL GROUP BY\nPostgreSQL HAVING\nPostgreSQL EXISTS\nPostgreSQL ANY\nPostgreSQL ALL\nPostgreSQL CASE",
+                "heading": "PostgreSQL Syntax"
+            },
+            {
+                "content": "PostgreSQL Certificate",
+                "heading": "PostgreSQL Cert"
+            },
+            {
+                "content": "The PostgreSQL study plan helps you teach your students PostgreSQL step-by-step.\n\nCreating a study plan for PostgreSQL is easy.\n\nYou can use a pre-built study plan or customize it.\n\nStudents have different skill levels. The study plans can be customized to ensure that everyone is challenged.\n\nSave time with pre-built teacher materials and study plans. Easily organize your class with a timeline from the introduction of PostgreSQL to the final exam.",
+                "heading": "Introduction"
+            },
+            {
+                "content": "This study plan is a feature of W3Schools Academy.\n\nW3Schools Academy is a platform that has everything you need to teach coding, all in one place.\n\nIt offers you as a teacher a toolbox of features that helps you succeed with teaching in your classroom.\n\nYou need to have an active subscription to access the study plan feature.\n\n Full Access ($49.99 / year per student)\n\n Calculate your price and order here.\n\nLearn More »\n\nAcademy also offer other features such as:\n\n Managing your classroom\n\n Tracking of student progress and reports\n\n Labs, assignments, and code challenges (prebuilt challenges or create your own ones)\n\n Auto-grading\n\n Teaching materials\n\n Certification exams\n\nGet a free demo »",
+                "heading": "W3Schools Academy"
+            },
+            {
+                "content": "W3Schools has everything you need to teach PostgreSQL.\n\nThe PostgreSQL training materials is available for you to include and use in your study plan:\n\n W3Schools PostgreSQL Tutorial\n\n PostgreSQL Exercises\n\n PostgreSQL Quiz\n\n PostgreSQL Challenges (Coding challenges)\n\n PostgreSQL Certification Exam (End of Pathway Exam)",
+                "heading": "Teacher Materials"
+            },
+            {
+                "content": "With the PostgreSQL Syllabus, your students will start with the basics, like understanding databases and writing simple SQL queries, and move to more advanced topics, like working with joins, managing data, and using functions. Each chapter includes simple examples, try-it-yourself sections, exercises, and quizzes to make learning easy, interactive, and fun.\n\nRead more about PostgreSQL Syllabus.",
+                "heading": "PostgreSQL Syllabus"
+            },
+            {
+                "content": "The study plan features are made to help teachers and students. They make learning easy, flexible, and fun. These features work for different types of classes, learning styles and student level.\n\n Learning Paths\n\n You can add ready-made learning paths.\n\n The learning paths are by default ordered by our recommended order.\n\n You can change the order.\n\n You can add custom activities with text, links, or multi-media files.\n\n Drag and drop or click to make changes to the path.\n\n Interactive Content\n\n Tutorials\n\n Try-its (test code snippets)\n\n Exercises\n\n Quiz\n\n Challenges\n\n Labs\n\n Timeline and Pace\n\n You can set a timeline of your study plan (e.g., 4-week, 8-week, 12-week, 24-week plans).\n\n You can decide the learning pace for your class.\n\n Different study plans can be assigned to different students in the same class.\n\n The flexibility can help to make sure that everyone is challenged.\n\n Track Student Progress\n\n There are tools to track student progress.\n\n The analytic tools include: chapter progress, exercises results, quiz results, exam results, and much more.\n\n The challenges can be auto-graded or manually graded. The results are available to you as a teacher.\n\n End of Pathway Exam\n\n The PostgreSQL study plan aligns with the PostgreSQL Certification Exam.\n\n The exam can be taken at the end of the study plan, at your selected date.\n\n The exam summarizes the PostgreSQL Tutorial.\n\n You get reports of the students' results.\n\n Accessibility\n\n Study plans and learning materials are accessible on desktops, tablets, and smartphones.\n\n This ensures students can learn anytime, anywhere.\n\nLearn More »",
+                "heading": "Study Plan Overview"
+            },
+            {
+                "content": "You choose the timeline and pace of your study plans.\n\nSchools have different preferences.\n\nSome would like more intensive pace, e.g. 3 weeks, others 12 or more weeks.\n\nIt is completely up to you.\n\nFor example, this is how a 3-week PostgreSQL study plan could look like:\n\n Week 1: Basic Database Management\n\n Week 2: Database operations\n\n Week 3: Querying data, PostgreSQL Certification Exam\n\nImage of Sample PostgreSQL study plan:",
+                "heading": "Sample Study Plan"
+            },
+            {
+                "content": "Start with PostgreSQL Study Plans today.\n\nGet Started »",
+                "heading": "Ready to get started?"
+            },
+            {
+                "content": "Are you interested in learning how you can use W3Schools Academy to Teach PostgreSQL programming? \n\nWatch a demo of W3Schools Academy. You'll see how it works, and discover how it can make teaching programming easier and more engaging.\n\nWatch Demo »\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Are You a Teacher?"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:18:02Z",
+        "subject": "PostgreSQL",
+        "title": "PostgreSQL Study Plan"
+    }
+];

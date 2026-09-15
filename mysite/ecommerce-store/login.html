@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%20fill%3D%22none%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%232563EB%22%2F%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%2310B981%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2216%22%20fill%3D%22%2308131d%22%2F%3E%3Crect%20x%3D%222%22%20y%3D%222%22%20width%3D%2260%22%20height%3D%2260%22%20rx%3D%2214%22%20stroke%3D%22url(%23g)%22%20stroke-width%3D%222%22%20stroke-opacity%3D%220.6%22%2F%3E%3Cpath%20d%3D%22M14%2016h6l5%2022h22l4-16H22%22%20stroke%3D%22url(%23g)%22%20stroke-width%3D%222.5%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20fill%3D%22%230f253a%22%2F%3E%3Ccircle%20cx%3D%2227%22%20cy%3D%2246%22%20r%3D%223.5%22%20fill%3D%22%2310B981%22%2F%3E%3Ccircle%20cx%3D%2243%22%20cy%3D%2246%22%20r%3D%223.5%22%20fill%3D%22%2310B981%22%2F%3E%3C%2Fsvg%3E">
+  <link rel="shortcut icon" href="favicon.svg">
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - ShopEase</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+    <!-- Header Injector Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <main class="container" style="max-width: 440px; display: flex; align-items: center; justify-content: center; min-height: calc(100vh - 250px);">
+        <div class="card" style="width: 100%; margin: 20px 0;">
+            <div class="text-center mb-5">
+                <h1 style="margin-bottom: 8px;">Welcome Back</h1>
+                <p class="text-muted" style="font-size: 14px;">Sign in to your ShopEase account</p>
+            </div>
+
+            <form id="login-form">
+                <div class="form-group">
+                    <label class="form-label" for="login-email">Email Address</label>
+                    <input type="email" id="login-email" class="form-control" placeholder="name@domain.com" required>
+                </div>
+                
+                <div class="form-group">
+                    <div class="flex-between mb-1">
+                        <label class="form-label" for="login-password" style="margin: 0;">Password</label>
+                    </div>
+                    <input type="password" id="login-password" class="form-control" placeholder="••••••••" required>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-full mb-4" id="login-submit-btn">
+                    Sign In
+                </button>
+            </form>
+
+            <div class="text-center" style="font-size: 14px; margin-bottom: 24px;">
+                <span class="text-muted">New to ShopEase?</span> 
+                <a href="register.html" class="btn-link" style="font-weight: 600;">Create an account</a>
+            </div>
+
+            <!-- Testing helper shortcuts -->
+            <!-- Hinglish comment: Testing asan karne ke liye humne login page me shortcuts diye hain. -->
+            <div style="border-top: 1px dashed var(--border); padding-top: 16px;">
+                <p class="text-muted text-center mb-3" style="font-size: 12px; font-weight: 600;">TESTING QUICK LOGINS</p>
+                <div class="flex-column gap-2">
+                    <button type="button" class="btn btn-outline btn-sm btn-full" id="autofill-customer">
+                        👤 Customer Account (Rahul)
+                    </button>
+                    <button type="button" class="btn btn-outline btn-sm btn-full" id="autofill-seller">
+                        💼 Seller Hub (TechCorp)
+                    </button>
+                    <button type="button" class="btn btn-outline btn-sm btn-full" id="autofill-admin">
+                        ⚙️ System Admin
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Scripts -->
+    <script src="js/db.js"></script>
+    <script src="js/seed.js"></script>
+    <script src="js/ui-helpers.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Check if already logged in, redirect
+            if (Auth.isLoggedIn()) {
+                const user = Auth.getCurrentUser();
+                redirectUser(user.user_type);
+            }
+
+            const loginForm = document.getElementById('login-form');
+            const emailInput = document.getElementById('login-email');
+            const passwordInput = document.getElementById('login-password');
+
+            // Form Submit handler
+            loginForm.onsubmit = (e) => {
+                e.preventDefault();
+                
+                const email = emailInput.value;
+                const password = passwordInput.value;
+
+                const result = Auth.login(email, password);
+                if (result.success) {
+                    UI.showToast('Login successful! Welcome back.', 'success');
+                    setTimeout(() => {
+                        redirectUser(result.user.user_type);
+                    }, 1000);
+                } else {
+                    UI.showToast(result.message, 'danger');
+                }
+            };
+
+            // Helper Autofill Button Click Handlers
+            document.getElementById('autofill-customer').onclick = () => {
+                emailInput.value = 'customer@ecom.com';
+                passwordInput.value = 'password123';
+                UI.showToast('Autofilled Customer credentials', 'info');
+            };
+
+            document.getElementById('autofill-seller').onclick = () => {
+                emailInput.value = 'seller@ecom.com';
+                passwordInput.value = 'password123';
+                UI.showToast('Autofilled Seller credentials', 'info');
+            };
+
+            document.getElementById('autofill-admin').onclick = () => {
+                emailInput.value = 'admin@ecom.com';
+                passwordInput.value = 'password123';
+                UI.showToast('Autofilled Admin credentials', 'info');
+            };
+
+            // Redirect dispatcher
+            function redirectUser(userType) {
+                const urlParams = new URLSearchParams(window.location.search);
+                const redirectPath = urlParams.get('redirect');
+                
+                if (redirectPath) {
+                    window.location.href = decodeURIComponent(redirectPath);
+                    return;
+                }
+
+                if (userType === 'ADMIN') {
+                    window.location.href = 'admin-dashboard.html';
+                } else if (userType === 'SELLER') {
+                    window.location.href = 'seller-dashboard.html';
+                } else {
+                    window.location.href = 'index.html';
+                }
+            }
+        });
+    </script>
+</body>
+</html>

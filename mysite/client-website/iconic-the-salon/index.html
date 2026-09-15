@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iconic the salon | Interactive Bridal Beauty Planner & Salon in Bhavnagar</title>
+  <meta name="description" content="iconic the salon - ThreeBestRated #1 Beauty Parlour & Interactive Bridal Planner Studio in Kaliyabid, Bhavnagar. Plan your 30-day pre-bridal skincare & HD makeup.">
+  <meta name="keywords" content="Iconic The Salon Bhavnagar, Bridal Planner Bhavnagar, Bridal Makeup Bhavnagar, ThreeBestRated Salon Bhavnagar">
+  <meta name="robots" content="index, follow">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Nunito+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-announcement">
+    <div class="container top-announcement-content">
+      <span>👑 Voted #1 Salon in Bhavnagar on ThreeBestRated.in</span>
+      <span>📍 Kaliyabid Area, Bhavnagar | 📞 +91 97245 67890</span>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="#" class="brand-logo text-center">
+        <span class="logo-main">iconic</span>
+        <span class="logo-sub">THE SALON & BRIDAL STUDIO</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="#bridal-planner" class="nav-link highlight-link">👑 Bridal Beauty Planner</a>
+        <a href="#packages" class="nav-link">Packages</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#book" class="btn btn-berry nav-btn">Book Consultation</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section with Petal Glow -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="petal-canvas" id="petalCanvas"></div>
+    <div class="container hero-container text-center">
+      <span class="hero-badge">THREEBESTRATED #1 BRIDAL STUDIO</span>
+      <h1 class="hero-title">Your Most Beautiful Day<br><em>Deserves the Best.</em></h1>
+      <div class="rose-divider-center"></div>
+      <p class="hero-desc">Bhavnagar's premier destination for HD Bridal Makeup, Hair Extensions, Skin Pre-Bridal Care, and Luxury Makeovers.</p>
+      <div class="hero-actions">
+        <a href="#bridal-planner" class="btn btn-berry btn-lg glow-btn">Launch Bridal Beauty Planner 📅</a>
+        <a href="#packages" class="btn btn-outline-rose btn-lg">View Packages</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- OUT-OF-THE-BOX INNOVATION: INTERACTIVE BRIDAL BEAUTY TIMELINE PLANNER -->
+  <section class="section planner-section" id="bridal-planner">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-label text-berry">FOR THE BRIDE-TO-BE</span>
+        <h2 class="section-title">INTERACTIVE BRIDAL BEAUTY TIMELINE</h2>
+        <p class="section-subtitle">Enter your wedding date below to auto-calculate your 30-day pre-bridal skincare & makeup ritual schedule!</p>
+      </div>
+
+      <div class="planner-card">
+        <div class="planner-input-bar">
+          <label for="weddingDateInput">Select Your Wedding Date:</label>
+          <input type="date" id="weddingDateInput">
+          <button class="btn btn-berry" id="generateTimelineBtn">Generate My Bridal Schedule ✨</button>
+        </div>
+
+        <div class="timeline-results" id="timelineResults" style="display:none;">
+          <div class="timeline-header text-center">
+            <h3 class="timeline-main-title">YOUR CUSTOMIZED PRE-BRIDAL CALENDAR</h3>
+            <p id="countdownBadge" class="countdown-badge">⏳ 45 Days Remaining until your big day!</p>
+          </div>
+
+          <div class="grid grid-3 timeline-grid">
+            <!-- 30 Days Out -->
+            <div class="timeline-step-card">
+              <div class="step-tag">30 DAYS BEFORE WEDDING</div>
+              <h4 class="step-name">Phase 1: Deep Skin Detox</h4>
+              <ul class="step-tasks">
+                <li>✓ 1st Hydra Facial & Body Scrub</li>
+                <li>✓ Hair Damage Repair & Protein Spa</li>
+                <li>✓ Consultation for Hair Extensions</li>
+              </ul>
+            </div>
+
+            <!-- 15 Days Out -->
+            <div class="timeline-step-card highlight-step">
+              <div class="step-tag">15 DAYS BEFORE WEDDING</div>
+              <h4 class="step-name">Phase 2: Radiant Glow</h4>
+              <ul class="step-tasks">
+                <li>✓ 2nd Vitamin C Brightening Facial</li>
+                <li>✓ Full Body Polish & Rica Waxing</li>
+                <li>✓ Final HD Makeup & Draping Trial</li>
+              </ul>
+            </div>
+
+            <!-- 3 Days Out -->
+            <div class="timeline-step-card">
+              <div class="step-tag">3 DAYS BEFORE WEDDING</div>
+              <h4 class="step-name">Phase 3: The Royal Touch</h4>
+              <ul class="step-tasks">
+                <li>✓ Gold Radiance Oxygen Facial</li>
+                <li>✓ Designer Gel Nail Extensions</li>
+                <li>✓ Pre-Wedding Lash Extensions</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="text-center margin-top">
+            <button class="btn btn-berry btn-lg" id="saveScheduleBtn">Send My Schedule to Iconic Studio via WhatsApp →</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bridal Packages -->
+  <section class="section packages-section" id="packages">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-label">SIGNATURE SELECTION</span>
+        <h2 class="section-title">BRIDAL MAKEOVER PACKAGES</h2>
+      </div>
+
+      <div class="grid grid-3">
+        <!-- Package 1: Silver -->
+        <div class="package-card">
+          <div class="package-header">
+            <span class="pkg-tier">SILVER TIER</span>
+            <h3 class="pkg-name">Dulhan Starter Package</h3>
+            <div class="pkg-price">₹ 14,999</div>
+          </div>
+          <ul class="pkg-features">
+            <li>✓ HD Airbrush Wedding Makeup</li>
+            <li>✓ Professional Hair Styling & Floral Accent</li>
+            <li>✓ Classic Saree / Dupatta Draping</li>
+            <li>✓ 1 Pre-Bridal Glow Facial</li>
+          </ul>
+          <a href="#book" class="btn btn-outline-dark btn-block package-btn" data-package="Dulhan Starter (Silver)">Book Consultation</a>
+        </div>
+
+        <!-- Package 2: Gold (MOST POPULAR) -->
+        <div class="package-card popular-card">
+          <div class="popular-ribbon">MOST POPULAR</div>
+          <div class="package-header">
+            <span class="pkg-tier gold-tier">GOLD TIER</span>
+            <h3 class="pkg-name">Royal Bridal Makeover</h3>
+            <div class="pkg-price">₹ 24,999</div>
+          </div>
+          <ul class="pkg-features">
+            <li>✓ Ultra-HD Waterproof Airbrush Makeup</li>
+            <li>✓ Premium Hair Extensions & Royal Hair Styling</li>
+            <li>✓ Double Dupatta Draping & Jewelry Setting</li>
+            <li>✓ 3-Day Complete Pre-Bridal Skin Care Ritual</li>
+            <li>✓ Manicure, Pedicure & Full Body Polish</li>
+          </ul>
+          <a href="#book" class="btn btn-berry btn-block package-btn" data-package="Royal Bridal (Gold)">Book Consultation</a>
+        </div>
+
+        <!-- Package 3: Platinum -->
+        <div class="package-card">
+          <div class="package-header">
+            <span class="pkg-tier">PLATINUM TIER</span>
+            <h3 class="pkg-name">Signature Royal Queen</h3>
+            <div class="pkg-price">₹ 39,999</div>
+          </div>
+          <ul class="pkg-features">
+            <li>✓ 2 Looks: Engagement / Sangeet + Wedding Day</li>
+            <li>✓ International Luxury HD Makeup</li>
+            <li>✓ Full Head Seamless Hair Extensions</li>
+            <li>✓ 7-Day Intensive Pre-Bridal Spa & Hydra Facial</li>
+          </ul>
+          <a href="#book" class="btn btn-outline-dark btn-block package-btn" data-package="Signature Queen (Platinum)">Book Consultation</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dusty Rose Booking Strip -->
+  <section class="section book-section" id="book">
+    <div class="container">
+      <div class="book-card">
+        <div class="book-header text-center">
+          <span class="section-label">CONSULTATION</span>
+          <h2 class="book-title">BOOK BRIDAL CONSULTATION</h2>
+          <p class="book-sub">Schedule a trial or discuss your custom wedding makeover package.</p>
+        </div>
+
+        <form class="book-form" id="bridalForm">
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="name">Bride's Name *</label>
+              <input type="text" id="name" required placeholder="e.g. Radhika Vaghela">
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone / Mobile Number *</label>
+              <input type="tel" id="phone" required placeholder="e.g. 9724567890" pattern="[0-9]{10}">
+            </div>
+
+            <div class="form-group">
+              <label for="occasion">Occasion / Package *</label>
+              <select id="occasion" required>
+                <option value="">Select Package / Service...</option>
+                <option value="Dulhan Starter Package (Silver)">Dulhan Starter Package (Silver)</option>
+                <option value="Royal Bridal Makeover (Gold)">Royal Bridal Makeover (Gold)</option>
+                <option value="Signature Royal Queen (Platinum)">Signature Royal Queen (Platinum)</option>
+                <option value="Custom Bridal Beauty Schedule">Custom Bridal Beauty Schedule</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="date">Wedding / Event Date *</label>
+              <input type="date" id="date" required>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-berry btn-block btn-lg">Book Consultation via WhatsApp →</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div>
+        <div class="logo-main">iconic</div>
+        <div class="logo-sub">THE SALON & BRIDAL STUDIO</div>
+        <p class="footer-desc">Bhavnagar's #1 Rated Beauty Parlour & Bridal Makeover Studio in Kaliyabid.</p>
+      </div>
+
+      <div class="footer-contact">
+        <p>📞 Phone: +91 97245 67890</p>
+        <p>📍 Address: Kaliyabid Main Road, Bhavnagar, Gujarat</p>
+      </div>
+    </div>
+    <div class="footer-bottom text-center">
+      <p>&copy; 2026 iconic the salon. All rights reserved. Developed by VyunixTech.</p>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

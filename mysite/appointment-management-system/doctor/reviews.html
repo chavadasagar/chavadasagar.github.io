@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%20fill%3D%22none%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23059669%22%2F%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230284C7%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2216%22%20fill%3D%22%2307171c%22%2F%3E%3Crect%20x%3D%222%22%20y%3D%222%22%20width%3D%2260%22%20height%3D%2260%22%20rx%3D%2214%22%20stroke%3D%22url(%23g)%22%20stroke-width%3D%222%22%20stroke-opacity%3D%220.6%22%2F%3E%3Crect%20x%3D%2214%22%20y%3D%2216%22%20width%3D%2236%22%20height%3D%2234%22%20rx%3D%224%22%20stroke%3D%22url(%23g)%22%20stroke-width%3D%222.5%22%20fill%3D%22%230c262e%22%2F%3E%3Cpath%20d%3D%22M14%2026h36M22%2012v6M42%2012v6%22%20stroke%3D%22url(%23g)%22%20stroke-width%3D%222.5%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M24%2038l6%206%2012-12%22%20stroke%3D%22%23059669%22%20stroke-width%3D%223%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%2F%3E%3C%2Fsvg%3E">
+  <link rel="shortcut icon" href="favicon.svg">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reviews - ClinicSys</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <style>
+    .rating-summary-card {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: var(--spacing-lg);
+      text-align: center;
+      background-color: var(--primary-light);
+      border-color: var(--primary);
+    }
+  </style>
+</head>
+<body>
+  <div class="app-container">
+    <!-- Sidebar injected here -->
+
+    <main class="main-content">
+      <header style="margin-bottom: var(--spacing-lg);">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%20fill%3D%22none%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23059669%22%2F%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230284C7%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2216%22%20fill%3D%22%2307171c%22%2F%3E%3Crect%20x%3D%222%22%20y%3D%222%22%20width%3D%2260%22%20height%3D%2260%22%20rx%3D%2214%22%20stroke%3D%22url(%23g)%22%20stroke-width%3D%222%22%20stroke-opacity%3D%220.6%22%2F%3E%3Crect%20x%3D%2214%22%20y%3D%2216%22%20width%3D%2236%22%20height%3D%2234%22%20rx%3D%224%22%20stroke%3D%22url(%23g)%22%20stroke-width%3D%222.5%22%20fill%3D%22%230c262e%22%2F%3E%3Cpath%20d%3D%22M14%2026h36M22%2012v6M42%2012v6%22%20stroke%3D%22url(%23g)%22%20stroke-width%3D%222.5%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M24%2038l6%206%2012-12%22%20stroke%3D%22%23059669%22%20stroke-width%3D%223%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%2F%3E%3C%2Fsvg%3E">
+  <link rel="shortcut icon" href="favicon.svg">
+  <h2>Reviews Received</h2>
+        <p style="color: var(--neutral-400); font-size: 14px;">Feedback and ratings left by your patients after their completed appointments.</p>
+      </header>
+
+      <div class="grid-cols-3" style="grid-template-columns: 1fr 2fr;">
+        <!-- Left: Rating Summary Card -->
+        <section class="card rating-summary-card">
+          <div style="font-size: 14px; text-transform: uppercase; font-weight: 600; color: var(--primary);">Average Rating</div>
+          <div style="font-size: 56px; font-weight: 800; color: var(--primary); margin: var(--spacing-sm) 0;" id="avg-rating-val">0.0</div>
+          <div style="font-size: 20px; letter-spacing: 2px;" id="avg-stars">⭐⭐⭐⭐⭐</div>
+          <div style="font-size: 12px; color: var(--neutral-600); margin-top: var(--spacing-sm);" id="total-reviews-count">Based on 0 reviews</div>
+        </section>
+
+        <!-- Right: Reviews List -->
+        <section class="card">
+          <h3 class="card-title">Patient Comments</h3>
+          <div style="display: flex; flex-direction: column; gap: var(--spacing-md);" id="reviews-list-container">
+            <!-- Loaded dynamically -->
+          </div>
+
+          <div id="no-reviews" class="empty-state" style="display: none; padding: 32px 0;">
+            <div class="empty-state-icon">⭐</div>
+            <div class="empty-state-title">No reviews yet</div>
+            <div class="empty-state-desc">Reviews left by patients after completing their visits will show up here.</div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <script src="../js/db.js"></script>
+  <script src="../js/auth.js"></script>
+  <script src="../js/toast.js"></script>
+  <script src="../js/modal.js"></script>
+  <script src="../js/navbar.js"></script>
+  <script>
+    // Role Guard
+    if (window.AUTH) {
+      window.AUTH.checkRole(['Doctor']);
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const avgRatingVal = document.getElementById('avg-rating-val');
+      const avgStars = document.getElementById('avg-stars');
+      const totalReviewsCount = document.getElementById('total-reviews-count');
+      const listContainer = document.getElementById('reviews-list-container');
+      const noReviewsEl = document.getElementById('no-reviews');
+
+      // Fetch Doctor Session
+      const currentUser = window.AUTH.getCurrentUser();
+      if (!currentUser || !currentUser.linkedId) {
+        window.location.href = '../login.html';
+        return;
+      }
+      const doctorId = currentUser.linkedId;
+
+      // Load Reviews Data
+      const reviews = window.DB.get(window.DB_COLLECTIONS.REVIEWS);
+      const docReviews = reviews.filter(r => r.doctorId === doctorId);
+      const patients = window.DB.get(window.DB_COLLECTIONS.PATIENTS);
+
+      // Sort newest first
+      docReviews.sort((a, b) => b.createdAt.localeCompare(a.createdAt));
+
+      // Calculate Average
+      let totalRating = 0;
+      let count = docReviews.length;
+      let avg = 0;
+
+      if (count > 0) {
+        totalRating = docReviews.reduce((sum, r) => sum + r.rating, 0);
+        avg = parseFloat((totalRating / count).toFixed(1));
+      }
+
+      avgRatingVal.textContent = avg.toFixed(1);
+      avgStars.textContent = '⭐'.repeat(Math.round(avg)) + '☆'.repeat(5 - Math.round(avg));
+      totalReviewsCount.textContent = `Based on ${count} ${count === 1 ? 'review' : 'reviews'}`;
+
+      if (count === 0) {
+        listContainer.style.display = 'none';
+        noReviewsEl.style.display = 'block';
+        return;
+      }
+
+      listContainer.style.display = 'flex';
+      noReviewsEl.style.display = 'none';
+
+      docReviews.forEach(rev => {
+        const patient = patients.find(p => p.id === rev.patientId) || {};
+        const revDate = new Date(rev.createdAt).toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric' });
+        
+        const card = document.createElement('div');
+        card.className = 'reminder-item';
+        card.style.background = 'white';
+        card.style.border = '1px solid var(--neutral-200)';
+        card.style.borderRadius = 'var(--radius-md)';
+        card.style.padding = '16px';
+
+        card.innerHTML = `
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 6px;">
+            <div>
+              <strong style="font-size: 14px; color: var(--neutral-800);">${patient.fullName || 'Anonymous Patient'}</strong>
+              <div style="font-size: 12px; color: var(--primary); margin-top: 2px;">${'⭐'.repeat(rev.rating)}</div>
+            </div>
+            <span style="font-size: 11px; color: var(--neutral-400);">${revDate}</span>
+          </div>
+          <p style="font-size: 13px; color: var(--neutral-600); font-style: italic; line-height: 1.4; margin: 0;">
+            "${rev.comment}"
+          </p>
+        `;
+
+        listContainer.appendChild(card);
+      });
+    });
+  </script>
+</body>
+</html>

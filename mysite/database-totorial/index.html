@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Database Design Masterclass | Learn Real-World Systems</title>
+  <meta name="description" content="Master real-world database design through interactive tutorials of production systems like E-Commerce, Chat Apps, Hospitals, SaaS platforms, and Bus Booking engines.">
+  
+  <!-- CSS Design System -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Top Scroll Progress Bar -->
+  <div class="scroll-progress-bar"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="container nav-wrap">
+      <a href="index.html" class="logo-brand">
+        <div class="logo-icon">🗄️</div>
+        <span>DB Masterclass</span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="concepts.html" class="nav-link">Concepts</a>
+        <a href="er-diagrams.html" class="nav-link">ER Diagrams</a>
+        <a href="quiz.html" class="nav-link">Quiz</a>
+        <a href="about.html" class="nav-link">About</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="search-modal-btn" title="Search (Cmd+K)">🔍</button>
+        <button class="icon-btn" id="theme-toggle-btn" onclick="toggleTheme()" title="Toggle Light/Dark Theme">🌙</button>
+        <button class="icon-btn mobile-hamburger" id="mobile-menu-btn" title="Toggle Navigation Menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Section 1: Hero -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="hero-badge">⚡ Interactive Learning Platform</div>
+      <h1 class="hero-title">Learn Database Design Through <span class="gradient-text">Real-World Systems</span></h1>
+      <p class="hero-subtitle">Explore production-style database architectures for E-Commerce, Chat Apps, Hospitals, SaaS Platforms, Booking Systems and more.</p>
+      
+      <div class="hero-actions">
+        <a href="projects.html" class="btn btn-primary">Explore Projects →</a>
+        <a href="concepts.html" class="btn btn-secondary">Start Learning</a>
+      </div>
+
+      <!-- Animated Relationship Visualizer Nodes -->
+      <div style="margin-top: 3.5rem; display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap;">
+        <div class="comp-box" style="padding: 0.85rem 1.25rem; font-size: 0.88rem; font-weight: 600; color: var(--accent-cyan);">users (user_id PK)</div>
+        <div style="font-size: 1.25rem; color: var(--accent-purple); display: flex; align-items: center;">──1:N──►</div>
+        <div class="comp-box" style="padding: 0.85rem 1.25rem; font-size: 0.88rem; font-weight: 600; color: var(--accent-teal);">orders (user_id FK)</div>
+        <div style="font-size: 1.25rem; color: var(--accent-purple); display: flex; align-items: center;">──1:N──►</div>
+        <div class="comp-box" style="padding: 0.85rem 1.25rem; font-size: 0.88rem; font-weight: 600; color: var(--accent-amber);">order_items</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2: Learning Statistics -->
+  <section style="padding: 3rem 0; background: var(--bg-surface); border-y: 1px solid var(--border-color);">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem; text-align: center;">
+        <div class="comp-box">
+          <div style="font-size: 2.5rem; font-weight: 800; color: var(--accent-cyan);" class="stat-counter" data-target="11">0</div>
+          <div style="color: var(--text-muted); font-size: 0.9rem; margin-top: 4px;">Real-World Projects</div>
+        </div>
+        <div class="comp-box">
+          <div style="font-size: 2.5rem; font-weight: 800; color: var(--accent-teal);" class="stat-counter" data-target="200">0</div>
+          <div style="color: var(--text-muted); font-size: 0.9rem; margin-top: 4px;">Database Tables</div>
+        </div>
+        <div class="comp-box">
+          <div style="font-size: 2.5rem; font-weight: 800; color: var(--accent-purple);" class="stat-counter" data-target="150">0</div>
+          <div style="color: var(--text-muted); font-size: 0.9rem; margin-top: 4px;">ER Relationships</div>
+        </div>
+        <div class="comp-box">
+          <div style="font-size: 2.5rem; font-weight: 800; color: var(--accent-amber);" class="stat-counter" data-target="50">0</div>
+          <div style="color: var(--text-muted); font-size: 0.9rem; margin-top: 4px;">Business Rules & Rules</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: Featured Projects -->
+  <section style="padding: 4.5rem 0;">
+    <div class="container">
+      <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 2.5rem;">
+        <div>
+          <h2>Featured Learning Projects</h2>
+          <p class="sub-text">Explore production-grade database systems step by step.</p>
+        </div>
+        <a href="projects.html" class="btn btn-secondary btn-sm">View All 11 Projects →</a>
+      </div>
+
+      <div class="card-grid">
+        <!-- 1. E-Commerce -->
+        <div class="card">
+          <div>
+            <div class="card-icon">🛒</div>
+            <div style="display: flex; gap: 6px; margin-bottom: 0.5rem;">
+              <span class="badge badge-category">E-Commerce</span>
+              <span class="badge badge-difficulty">Intermediate</span>
+            </div>
+            <h3 class="card-title">E-Commerce Platform</h3>
+            <p class="card-desc">Learn how Amazon/Flipkart-style platforms manage Users, Products, Variants, Inventory, Orders, Payments, Shipping, and Reviews.</p>
+          </div>
+          <div>
+            <div class="card-meta">
+              <span>📋 8 Modules</span>
+              <span>🗄️ 16 Tables</span>
+              <span>⏱️ 45 Mins</span>
+            </div>
+            <a href="project.html?id=ecommerce" class="btn btn-primary btn-sm" style="width: 100%; margin-top: 1.25rem;">Start Learning →</a>
+          </div>
+        </div>
+
+        <!-- 2. Chat App -->
+        <div class="card">
+          <div>
+            <div class="card-icon">💬</div>
+            <div style="display: flex; gap: 6px; margin-bottom: 0.5rem;">
+              <span class="badge badge-category">Communication</span>
+              <span class="badge badge-difficulty">Intermediate</span>
+            </div>
+            <h3 class="card-title">Real-time Chat Application</h3>
+            <p class="card-desc">Design messaging architecture for WhatsApp/Slack: 1-on-1 threads, group chats, message receipts (blue ticks), and pagination.</p>
+          </div>
+          <div>
+            <div class="card-meta">
+              <span>📋 6 Modules</span>
+              <span>🗄️ 12 Tables</span>
+              <span>⏱️ 40 Mins</span>
+            </div>
+            <a href="project.html?id=chat-app" class="btn btn-primary btn-sm" style="width: 100%; margin-top: 1.25rem;">Start Learning →</a>
+          </div>
+        </div>
+
+        <!-- 3. Bus Booking -->
+        <div class="card">
+          <div>
+            <div class="card-icon">🚌</div>
+            <div style="display: flex; gap: 6px; margin-bottom: 0.5rem;">
+              <span class="badge badge-category">Booking</span>
+              <span class="badge badge-difficulty">Intermediate</span>
+            </div>
+            <h3 class="card-title">Bus Booking System</h3>
+            <p class="card-desc">RedBus-style ticket reservation system with seat matrix layout, temporary 10-minute seat locks, and PNR ticket generation.</p>
+          </div>
+          <div>
+            <div class="card-meta">
+              <span>📋 6 Modules</span>
+              <span>🗄️ 8 Tables</span>
+              <span>⏱️ 45 Mins</span>
+            </div>
+            <a href="project.html?id=bus-booking" class="btn btn-primary btn-sm" style="width: 100%; margin-top: 1.25rem;">Start Learning →</a>
+          </div>
+        </div>
+
+        <!-- 4. Hospital System -->
+        <div class="card">
+          <div>
+            <div class="card-icon">🏥</div>
+            <div style="display: flex; gap: 6px; margin-bottom: 0.5rem;">
+              <span class="badge badge-category">Healthcare</span>
+              <span class="badge badge-difficulty">Intermediate</span>
+            </div>
+            <h3 class="card-title">Hospital Management System</h3>
+            <p class="card-desc">Patient registration with lifetime unique UHID strings, OPD appointments, IPD ward bed admissions, and merged hospital billing.</p>
+          </div>
+          <div>
+            <div class="card-meta">
+              <span>📋 6 Modules</span>
+              <span>🗄️ 14 Tables</span>
+              <span>⏱️ 45 Mins</span>
+            </div>
+            <a href="project.html?id=hospital-management" class="btn btn-primary btn-sm" style="width: 100%; margin-top: 1.25rem;">Start Learning →</a>
+          </div>
+        </div>
+
+        <!-- 5. CAPTCHA SaaS -->
+        <div class="card">
+          <div>
+            <div class="card-icon">🔐</div>
+            <div style="display: flex; gap: 6px; margin-bottom: 0.5rem;">
+              <span class="badge badge-category">SaaS</span>
+              <span class="badge badge-difficulty">Advanced</span>
+            </div>
+            <h3 class="card-title">CAPTCHA Management SaaS</h3>
+            <p class="card-desc">reCAPTCHA-style multi-tenant bot detection service managing public/secret site keys, single-use tokens, and confidence scores.</p>
+          </div>
+          <div>
+            <div class="card-meta">
+              <span>📋 5 Modules</span>
+              <span>🗄️ 8 Tables</span>
+              <span>⏱️ 35 Mins</span>
+            </div>
+            <a href="project.html?id=captcha-management" class="btn btn-primary btn-sm" style="width: 100%; margin-top: 1.25rem;">Start Learning →</a>
+          </div>
+        </div>
+
+        <!-- 6. Real Estate -->
+        <div class="card">
+          <div>
+            <div class="card-icon">🏠</div>
+            <div style="display: flex; gap: 6px; margin-bottom: 0.5rem;">
+              <span class="badge badge-category">Management</span>
+              <span class="badge badge-difficulty">Intermediate</span>
+            </div>
+            <h3 class="card-title">Real Estate Management System</h3>
+            <p class="card-desc">99acres-style portal for Property Buy/Rent listings, owner/agent profiles, amenities junction tables, and scheduled site visits.</p>
+          </div>
+          <div>
+            <div class="card-meta">
+              <span>📋 6 Modules</span>
+              <span>🗄️ 16 Tables</span>
+              <span>⏱️ 45 Mins</span>
+            </div>
+            <a href="project.html?id=real-estate" class="btn btn-primary btn-sm" style="width: 100%; margin-top: 1.25rem;">Start Learning →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: Why Learn Through Real Projects? -->
+  <section style="padding: 4rem 0; background: var(--bg-surface); border-y: 1px solid var(--border-color);">
+    <div class="container">
+      <div style="text-align: center; max-width: 700px; margin: 0 auto 3rem;">
+        <h2>Why Learn Through Real Projects?</h2>
+        <p class="sub-text">Theoretical database books don't teach you how production applications survive heavy real-world scale.</p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem;">
+        <div class="comp-box">
+          <div style="font-size: 1.8rem; margin-bottom: 0.75rem;">🔗</div>
+          <h3>Learn Relationships</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 0.5rem;">Understand exactly when to use 1:1, 1:N, or Many-to-Many junction tables in production environments.</p>
+        </div>
+        <div class="comp-box">
+          <div style="font-size: 1.8rem; margin-bottom: 0.75rem;">💡</div>
+          <h3>Learn Business Logic</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 0.5rem;">Discover why specific columns like historical price snapshots exist in order line items.</p>
+        </div>
+        <div class="comp-box">
+          <div style="font-size: 1.8rem; margin-bottom: 0.75rem;">🚀</div>
+          <h3>Production Thinking</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 0.5rem;">Learn how high-concurrency systems handle flash sales, atomic stock deductions, and indexes.</p>
+        </div>
+        <div class="comp-box">
+          <div style="font-size: 1.8rem; margin-bottom: 0.75rem;">💼</div>
+          <h3>Interview Ready</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 0.5rem;">Prepare to answer system design interview questions with confidence and technical depth.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 5: Learning Path Roadmap -->
+  <section style="padding: 4.5rem 0;">
+    <div class="container">
+      <div style="text-align: center; max-width: 700px; margin: 0 auto 3rem;">
+        <h2>The Database Design Roadmap</h2>
+        <p class="sub-text">Follow our 9-step methodology used by senior database architects.</p>
+      </div>
+
+      <div style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
+        <div class="comp-box" style="text-align: center; min-width: 140px;">
+          <div style="font-size: 0.8rem; color: var(--accent-cyan); font-weight: 700;">STEP 1</div>
+          <div style="font-weight: 700; margin-top: 4px;">Understand Business</div>
+        </div>
+        <div style="display: flex; align-items: center; color: var(--text-dim);">➔</div>
+        <div class="comp-box" style="text-align: center; min-width: 140px;">
+          <div style="font-size: 0.8rem; color: var(--accent-cyan); font-weight: 700;">STEP 2</div>
+          <div style="font-weight: 700; margin-top: 4px;">Identify Modules</div>
+        </div>
+        <div style="display: flex; align-items: center; color: var(--text-dim);">➔</div>
+        <div class="comp-box" style="text-align: center; min-width: 140px;">
+          <div style="font-size: 0.8rem; color: var(--accent-cyan); font-weight: 700;">STEP 3</div>
+          <div style="font-weight: 700; margin-top: 4px;">Identify Entities</div>
+        </div>
+        <div style="display: flex; align-items: center; color: var(--text-dim);">➔</div>
+        <div class="comp-box" style="text-align: center; min-width: 140px;">
+          <div style="font-size: 0.8rem; color: var(--accent-cyan); font-weight: 700;">STEP 4</div>
+          <div style="font-weight: 700; margin-top: 4px;">Design ER Links</div>
+        </div>
+        <div style="display: flex; align-items: center; color: var(--text-dim);">➔</div>
+        <div class="comp-box" style="text-align: center; min-width: 140px;">
+          <div style="font-size: 0.8rem; color: var(--accent-cyan); font-weight: 700;">STEP 5</div>
+          <div style="font-weight: 700; margin-top: 4px;">Define Tables</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Global Search Modal -->
+  <div class="search-modal-overlay" id="global-search-modal">
+    <div class="search-modal-content">
+      <div class="search-modal-input-wrap">
+        <span>🔍</span>
+        <input type="text" id="global-search-input" placeholder="Search projects, modules, tables, or concepts (Cmd+K)...">
+      </div>
+      <div class="search-modal-results" id="global-search-results">
+        <div style="padding:1rem; color:var(--text-muted);">Type to search projects, modules, tables, or concepts...</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" title="Back to Top">↑</button>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo-brand" style="margin-bottom: 0.75rem;">
+            <div class="logo-icon">🗄️</div>
+            <span>DB Masterclass</span>
+          </div>
+          <p style="color: var(--text-muted); font-size: 0.9rem;">Learn database design by exploring real-world production systems.</p>
+        </div>
+        <div>
+          <h4 style="margin-bottom: 1rem;">Platform</h4>
+          <ul style="display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.9rem; color: var(--text-muted);">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">All Projects</a></li>
+            <li><a href="concepts.html">Concepts Library</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 style="margin-bottom: 1rem;">Learning</h4>
+          <ul style="display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.9rem; color: var(--text-muted);">
+            <li><a href="er-diagrams.html">ER Diagrams</a></li>
+            <li><a href="quiz.html">Master Quiz</a></li>
+            <li><a href="about.html">About Author</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 style="margin-bottom: 1rem;">Connect</h4>
+          <ul style="display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.9rem; color: var(--text-muted);">
+            <li><a href="https://vyunixtech.in/" target="_blank">Vyunix Tech</a></li>
+            <li><a href="https://github.com/" target="_blank">GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Database Design Masterclass • Created by Sagar Chavada (Vyunix Tech)</p>
+        <p>Built with Pure HTML5, CSS3 & Vanilla JavaScript</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="data/projects-data.js"></script>
+  <script src="data/concepts-data.js"></script>
+  <script src="data/quiz-data.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/progress.js"></script>
+  <script src="js/bookmarks.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

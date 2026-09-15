@@ -1,0 +1,535 @@
+/* ==================================================
+   RESPONSIVE DESIGN SYSTEM (MOBILE-FIRST ZERO-OVERFLOW)
+   HRM Enterprise Platform
+   Tested & Validated: 320px, 375px (iPhone SE), 768px (Tablet), 1024px+ (Desktop)
+   STRICT RULE: Root page width must NEVER exceed device viewport (ZERO horizontal scroll).
+================================================== */
+
+/* ==================================================
+   1. DESKTOP SCREENS (>= 1024px)
+================================================== */
+@media (min-width: 1024px) {
+  .menu-toggle-btn {
+    display: none !important;
+  }
+
+  .sidebar-close-btn {
+    display: none !important;
+  }
+
+  .sidebar-backdrop {
+    display: none !important;
+  }
+}
+
+/* ==================================================
+   2. TABLET & MOBILE DRAWER (< 1024px)
+================================================== */
+@media (max-width: 1023px) {
+  /* Toggle buttons */
+  .menu-toggle-btn {
+    display: inline-flex !important;
+  }
+
+  .sidebar-close-btn {
+    display: inline-flex !important;
+  }
+
+  /* Off-canvas mobile navigation drawer */
+  .sidebar {
+    position: fixed !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    width: 280px !important;
+    max-width: 82vw !important;
+    height: 100vh !important;
+    transform: translateX(-100%) !important;
+    box-shadow: none !important;
+    transition: transform var(--transition-base), box-shadow var(--transition-base) !important;
+    /* CRITICAL: Sidebar drawer (250) MUST strictly be above backdrop (150) */
+    z-index: 250 !important;
+    background-color: var(--surface) !important;
+  }
+
+  .sidebar.open {
+    transform: translateX(0) !important;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.85) !important;
+  }
+
+  .sidebar-backdrop {
+    z-index: 150 !important;
+    background-color: rgba(0, 0, 0, 0.65) !important;
+    backdrop-filter: blur(4px) !important;
+  }
+
+  .sidebar-backdrop.active {
+    display: block !important;
+    opacity: 1 !important;
+  }
+}
+
+/* ==================================================
+   3. MOBILE DEVICES (< 768px - Phones & Small Tablets)
+================================================== */
+@media (max-width: 767px) {
+  /* --- Universal Sizing Reset --- */
+  *, *::before, *::after {
+    box-sizing: border-box !important;
+    min-width: 0 !important;
+  }
+
+  html, body {
+    width: 100% !important;
+    max-width: 100vw !important;
+    overflow-x: hidden !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    position: relative !important;
+  }
+
+  /* --- Layout Shell Containment --- */
+  .app-container {
+    width: 100% !important;
+    max-width: 100vw !important;
+    min-width: 0 !important;
+    overflow-x: hidden !important;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .main-wrapper {
+    width: 100% !important;
+    max-width: 100vw !important;
+    min-width: 0 !important;
+    flex: 1 1 100% !important;
+    overflow-x: hidden !important;
+  }
+
+  .main-content {
+    width: 100% !important;
+    max-width: 100vw !important;
+    min-width: 0 !important;
+    padding: 12px 10px !important;
+    box-sizing: border-box !important;
+    overflow-x: hidden !important;
+  }
+
+  /* --- Top Header Responsive Compaction --- */
+  .top-header {
+    height: 56px !important;
+    padding: 0 12px !important;
+    gap: 8px !important;
+    width: 100% !important;
+    max-width: 100vw !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    flex-shrink: 0 !important;
+  }
+
+  .header-left {
+    gap: 8px !important;
+    min-width: 0 !important;
+    flex: 0 1 auto !important;
+    display: flex !important;
+    align-items: center !important;
+  }
+
+  .menu-toggle-btn {
+    width: 34px !important;
+    height: 34px !important;
+    flex-shrink: 0 !important;
+    padding: 0 !important;
+  }
+
+  .header-breadcrumbs {
+    gap: 4px !important;
+    min-width: 0 !important;
+    overflow: hidden !important;
+    display: flex !important;
+    align-items: center !important;
+  }
+
+  /* Hide verbose breadcrumbs on mobile */
+  .breadcrumb-root,
+  .breadcrumb-separator {
+    display: none !important;
+  }
+
+  .breadcrumb-current {
+    font-size: var(--text-xs) !important;
+    max-width: 120px !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+  }
+
+  .header-right {
+    gap: 6px !important;
+    flex-shrink: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+  }
+
+  /* Hide verbose elements in header on mobile */
+  .header-badge,
+  .user-chip-text,
+  .logout-text {
+    display: none !important;
+  }
+
+  /* Compact User Chip (Avatar circle only) */
+  .header-user-chip {
+    padding: 2px !important;
+    background: transparent !important;
+    border: none !important;
+  }
+
+  /* Compact Logout Button (34x34px circle) */
+  #btn-header-logout {
+    width: 34px !important;
+    height: 34px !important;
+    padding: 0 !important;
+    border-radius: var(--radius-full) !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 0 !important;
+    min-height: auto !important;
+  }
+
+  /* Compact Notification Bell (34x34px) */
+  #btn-notification-bell {
+    width: 34px !important;
+    height: 34px !important;
+    padding: 0 !important;
+  }
+
+  /* Notification Dropdown Mobile Viewport fit */
+  #notification-dropdown {
+    width: calc(100vw - 20px) !important;
+    max-width: 330px !important;
+    right: -6px !important;
+  }
+
+  /* --- Page Modules & Headers Responsive Collapse --- */
+  [class*="-page"],
+  .permissions-page,
+  .users-page,
+  .roles-page,
+  .workflows-page,
+  .leaves-page,
+  .approvals-page,
+  .auditlogs-page,
+  .dashboard-page,
+  .settings-page {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    overflow-x: hidden !important;
+  }
+
+  /* Page Header top rows collapse into clean vertical stack */
+  .page-header,
+  .users-page > .flex:first-child,
+  .roles-page > .flex:first-child,
+  .permissions-page > .flex:first-child,
+  .workflows-page > .flex:first-child,
+  .leaves-page > .flex:first-child,
+  .approvals-page > .flex:first-child,
+  .dashboard-page > .flex:first-child,
+  .settings-page > .flex:first-child {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 10px !important;
+    margin-bottom: 16px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  /* Subtitles & Descriptions wrap naturally */
+  .page-header > div:first-child,
+  .users-page > .flex:first-child > div:first-child,
+  .roles-page > .flex:first-child > div:first-child,
+  .permissions-page > .flex:first-child > div:first-child,
+  .workflows-page > .flex:first-child > div:first-child,
+  .leaves-page > .flex:first-child > div:first-child,
+  .approvals-page > .flex:first-child > div:first-child,
+  .dashboard-page > .flex:first-child > div:first-child,
+  .settings-page > .flex:first-child > div:first-child {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  .page-header p,
+  [class*="-page"] > .flex:first-child p {
+    white-space: normal !important;
+    word-break: break-word !important;
+    font-size: var(--text-xs) !important;
+  }
+
+  /* Action & Badge containers wrap full width */
+  .page-actions,
+  .users-page > .flex:first-child > div:last-child,
+  .roles-page > .flex:first-child > div:last-child,
+  .permissions-page > .flex:first-child > div:last-child,
+  .workflows-page > .flex:first-child > div:last-child,
+  .leaves-page > .flex:first-child > div:last-child,
+  .approvals-page > .flex:first-child > div:last-child,
+  .dashboard-page > .flex:first-child > div:last-child,
+  .settings-page > .flex:first-child > div:last-child {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 6px !important;
+    justify-content: flex-start !important;
+  }
+
+  h1, .page-title {
+    font-size: 1.25rem !important;
+    line-height: 1.25 !important;
+    word-break: break-word !important;
+  }
+
+  /* --- Cards & Containers --- */
+  .card {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    border-radius: var(--radius-md) !important;
+    overflow: hidden !important;
+    margin-bottom: 16px !important;
+  }
+
+  .card-header {
+    padding: 12px 14px !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 8px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  .card-header > * {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  .card-body {
+    padding: 12px 14px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  .card-footer {
+    padding: 12px 14px !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 8px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  /* --- Search & Filter Bar Controls --- */
+  .card .flex.items-center.justify-between {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 8px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  /* Override hardcoded min-widths */
+  div[style*="min-width: 260px"],
+  div[style*="min-width: 240px"],
+  div[style*="min-width: 220px"] {
+    min-width: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: 1 1 100% !important;
+  }
+
+  .card .flex.items-center.gap-3,
+  .card .flex.items-center.gap-2 {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    flex-wrap: wrap !important;
+    gap: 6px !important;
+  }
+
+  .card select.select {
+    width: 100% !important;
+    min-width: 100% !important;
+  }
+
+  /* Input fields */
+  .input, .select, .textarea {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  /* --- Tables & Wrappers (STRICT Horizontal Isolation) --- */
+  .table-wrapper,
+  .table-responsive {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+    display: block !important;
+    border-radius: 0 !important;
+    border-left: none !important;
+    border-right: none !important;
+    margin: 0 !important;
+  }
+
+  .table {
+    min-width: 520px !important;
+    font-size: 11.5px !important;
+  }
+
+  .table th, .table td {
+    padding: 6px 10px !important;
+  }
+
+  /* --- Grids --- */
+  div[style*="grid-template-columns"],
+  .grid {
+    grid-template-columns: 1fr !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  .stat-card {
+    padding: 12px 14px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  .stat-value {
+    font-size: 1.5rem !important;
+  }
+
+  /* --- Modals --- */
+  .modal-overlay {
+    padding: 8px !important;
+  }
+
+  .modal-container {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    max-height: 92vh !important;
+    border-radius: var(--radius-md) !important;
+    margin: 0 auto !important;
+  }
+
+  .modal-header {
+    padding: 12px 14px !important;
+  }
+
+  .modal-body {
+    padding: 14px !important;
+    max-height: calc(92vh - 110px) !important;
+    overflow-y: auto !important;
+  }
+
+  .modal-footer {
+    padding: 12px 14px !important;
+    flex-direction: column-reverse !important;
+    width: 100% !important;
+    gap: 8px !important;
+  }
+
+  .modal-footer .btn {
+    width: 100% !important;
+  }
+
+  /* --- Toasts --- */
+  .toast-container {
+    left: 8px !important;
+    right: 8px !important;
+    bottom: 8px !important;
+    width: auto !important;
+    max-width: none !important;
+  }
+
+  .toast {
+    padding: 10px 12px !important;
+    width: 100% !important;
+  }
+
+  /* --- Login Viewport --- */
+  .login-viewport {
+    padding: 12px 8px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  .login-viewport > div {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  .quick-demo-user-btn {
+    white-space: normal !important;
+    text-align: left !important;
+    word-break: break-word !important;
+    font-size: 11px !important;
+    padding: 6px 10px !important;
+  }
+}
+
+/* ==================================================
+   4. ULTRA-SMALL MOBILE (320px - 375px iPhone SE)
+================================================== */
+@media (max-width: 479px) {
+  .sidebar {
+    width: 82% !important;
+    max-width: 280px !important;
+  }
+
+  /* Action buttons in header rows stretch full width */
+  .users-page > .flex:first-child button,
+  .roles-page > .flex:first-child button,
+  .workflows-page > .flex:first-child button,
+  .leaves-page > .flex:first-child button,
+  .approvals-page > .flex:first-child button,
+  .dashboard-page > .flex:first-child button,
+  .settings-page > .flex:first-child button {
+    width: 100% !important;
+    justify-content: center !important;
+  }
+
+  /* Filter module badges wrap neatly */
+  .btn-module-filter {
+    font-size: 10.5px !important;
+    padding: 3px 8px !important;
+  }
+
+  /* Tab buttons stretch */
+  .card .flex.items-center.gap-2 button {
+    flex: 1 1 auto !important;
+    font-size: 11px !important;
+    padding: 6px 8px !important;
+  }
+}

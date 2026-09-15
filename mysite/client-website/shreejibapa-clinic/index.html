@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shreejibapa Clinic | Interactive Symptom & Specialty Navigator in Bhavnagar</title>
+  <meta name="description" content="Shreejibapa Clinic - Multi-specialty & Aesthetic Clinic near Nandkuvarba Mahila College, Bhavnagar. Interactive symptom navigator for Skin, Joint Pain, Hair PRP & Laser.">
+  <meta name="keywords" content="Shreejibapa Clinic Bhavnagar, Symptom Navigator, Dermatologist Bhavnagar, Joint Pain Specialist Bhavnagar">
+  <meta name="robots" content="index, follow">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <span class="hours-badge"><span class="status-dot"></span> Open Today: 10:30 AM – 8:30 PM</span>
+      <span class="contact-top">📍 Abhinav Apartment, Near Nandkuvarba Mahila College | 📞 +91 98252 12345</span>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="#" class="logo">
+        <span class="logo-bold">SHREEJIBAPA</span>
+        <span class="logo-sub">CLINIC & AESTHETIC CENTRE</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="#navigator" class="nav-link highlight-link">🔍 Symptom Navigator</a>
+        <a href="#specialties" class="nav-link">Specialties</a>
+        <a href="#doctor" class="nav-link">Doctor Profile</a>
+        <a href="#book" class="btn btn-teal nav-btn">15-Sec Fast-Track Book</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="badge-tag">EST. 2007 · BHAVNAGAR · ★ 4.7 (293 REVIEWS)</div>
+        <h1 class="hero-title">SHREEJIBAPA CLINIC</h1>
+        <p class="hero-subtitle">Multi-Specialty & Advanced Aesthetic Centre</p>
+        <div class="teal-divider"></div>
+        <p class="hero-desc">Providing compassionate, evidence-based care in Skin Dermatology, Joint & Pain Management, Laser Cosmetology, and Weight Wellness for over 16 years.</p>
+        
+        <div class="hero-actions">
+          <a href="#navigator" class="btn btn-teal btn-lg glow-btn">Launch Symptom Navigator 🩺</a>
+          <a href="#book" class="btn btn-outline btn-lg">Book Appointment</a>
+        </div>
+      </div>
+
+      <div class="hero-stats-card">
+        <div class="stat-item">
+          <span class="stat-num">16+</span>
+          <span class="stat-lbl">Years Healing Patients</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">4.7★</span>
+          <span class="stat-lbl">293 Google Reviews</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OUT-OF-THE-BOX INNOVATION: SYMPTOM & SPECIALTY NAVIGATOR -->
+  <section class="section navigator-section" id="navigator">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-label text-teal">PATIENT DECISION ASSISTANT</span>
+        <h2 class="section-title">INTERACTIVE SYMPTOM & SPECIALTY NAVIGATOR</h2>
+        <p class="section-desc">Select your primary concern area below to see recommended treatments, doctor qualifications, and average session timelines.</p>
+      </div>
+
+      <div class="navigator-card">
+        <!-- Symptom Selector Buttons -->
+        <div class="symptom-chips">
+          <button class="s-chip-btn active" data-symptom="skin">💆‍♀️ Skin, Acne & Pigmentation</button>
+          <button class="s-chip-btn" data-symptom="joint">🦴 Joint Pain & Arthritis</button>
+          <button class="s-chip-btn" data-symptom="hair">💉 Hair Loss & PRP Therapy</button>
+          <button class="s-chip-btn" data-symptom="laser">⚡ Permanent Laser Hair Removal</button>
+          <button class="s-chip-btn" data-symptom="weight">⚖️ Medical Weight Loss</button>
+        </div>
+
+        <!-- Dynamic Output Panel -->
+        <div class="symptom-output-panel" id="symptomOutput">
+          <div class="nav-output-header">
+            <span class="nav-category-badge" id="navCategoryBadge">DERMATOLOGY & SKIN CARE</span>
+            <h3 class="nav-treatment-title" id="navTreatmentTitle">Acne Clearance & Chemical Peel Therapy</h3>
+          </div>
+
+          <div class="grid grid-3 nav-output-grid">
+            <div class="nav-info-box">
+              <span class="box-lbl">RECOMMENDED PROTOCOL</span>
+              <p id="navProtocolText">US-FDA approved Salicylic & Glycolic Peels with LED anti-bacterial therapy.</p>
+            </div>
+            <div class="nav-info-box">
+              <span class="box-lbl">ESTIMATED TIMELINE</span>
+              <p id="navTimelineText">3 to 5 sessions spaced 3 weeks apart for clear skin results.</p>
+            </div>
+            <div class="nav-info-box">
+              <span class="box-lbl">ATTENDING SPECIALIST</span>
+              <p id="navSpecialistText">Dr. Shreejibapa Specialist Team (MBBS, Fellowship Aesthetic Medicine)</p>
+            </div>
+          </div>
+
+          <div class="text-center margin-top">
+            <button class="btn btn-teal btn-lg" id="navBookBtn">Book Consultation for This Concern →</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Doctor Profile Card (Horizontal) -->
+  <section class="section doctor-section" id="doctor">
+    <div class="container">
+      <div class="doctor-card">
+        <div class="doctor-photo-col">
+          <div class="doctor-photo-placeholder">
+            <div class="doc-icon">👨‍⚕️</div>
+            <span class="doc-badge">16+ YEARS EXP</span>
+          </div>
+        </div>
+
+        <div class="doctor-info-col">
+          <span class="section-label">CHIEF MEDICAL CONSULTANT</span>
+          <h2 class="doctor-name">Dr. Shreejibapa Specialist Team</h2>
+          <p class="doctor-degree">MBBS · Fellowship in Aesthetic Medicine · Hair Transplant Specialist</p>
+
+          <div class="doc-divider"></div>
+
+          <p class="doctor-bio">With over 16 years of dedicated practice in Bhavnagar, our clinic blends clinical medicine with state-of-the-art aesthetic procedures. We prioritize patient comfort, privacy, and evidence-based medical results.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Book Appointment (Teal Strip) -->
+  <section class="section book-section" id="book">
+    <div class="container">
+      <div class="book-wrapper">
+        <div class="book-info">
+          <span class="section-label text-light">15-SECOND FAST-TRACK</span>
+          <h2 class="book-title">SCHEDULE A CONSULTATION</h2>
+          <p class="book-desc">Book your appointment with our medical specialists. Walk-ins and prior bookings supported.</p>
+
+          <div class="clinic-details">
+            <p><strong>📍 Address:</strong> Abhinav Apartment, Near Nandkuvarba Mahila College, Bhavnagar</p>
+            <p><strong>📞 Helpline:</strong> +91 98252 12345</p>
+          </div>
+        </div>
+
+        <form class="book-form" id="appointmentForm">
+          <div class="form-group">
+            <label for="name">Patient Full Name *</label>
+            <input type="text" id="name" required placeholder="e.g. Piyush Varma">
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Mobile Number *</label>
+            <input type="tel" id="phone" required placeholder="e.g. 9825212345" pattern="[0-9]{10}">
+          </div>
+
+          <div class="form-group">
+            <label for="specialty">Specialty Needed *</label>
+            <select id="specialty" required>
+              <option value="">Select Category...</option>
+              <option value="Skin Dermatology">Skin Dermatology</option>
+              <option value="Joint & Pain Relief">Joint & Pain Relief</option>
+              <option value="Hair Loss & PRP">Hair Loss & PRP</option>
+              <option value="Laser & Cosmetology">Laser & Cosmetology</option>
+              <option value="Weight Management">Weight Management</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn btn-navy btn-block btn-lg">Submit Appointment Request via WhatsApp →</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div>
+        <div class="logo-bold">SHREEJIBAPA CLINIC</div>
+        <p class="footer-copy">Multi-Specialty & Aesthetic Centre. Abhinav Apartment, Near Nandkuvarba Mahila College, Bhavnagar.</p>
+      </div>
+
+      <div class="footer-right">
+        <p>📞 Emergency / Booking: +91 98252 12345</p>
+      </div>
+    </div>
+    <div class="footer-bottom container text-center">
+      <p>&copy; 2026 Shreejibapa Clinic. All rights reserved. Developed by VyunixTech.</p>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

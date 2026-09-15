@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mr. Gill's Heritage Kitchen | Interactive Thali Builder & Amritsari Food</title>
+  <meta name="description" content="Build your own custom Amritsari Thali online at Mr. Gill's Heritage Kitchen in Bhavnagar. Fresh desi ghee preparation, traditional Punjabi taste. Order via WhatsApp.">
+  <meta name="keywords" content="Punjabi Thali Builder, Amritsari Thali Bhavnagar, Mr Gills Heritage Kitchen, Dal Makhani Bhavnagar, Best Punjabi Restaurant">
+  <meta name="robots" content="index, follow">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400;1,700&family=Lato:wght@400;600;700;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Announcement Bar -->
+  <div class="top-announcement">
+    <div class="container announcement-content">
+      <span>🌾 "Swaad jo ghar yaad dilaye." — Authentic Amritsari Flavors</span>
+      <span>📍 Jawahar Ground Area, Bhavnagar | 📞 +91 6353 42 13 13</span>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="#" class="brand-logo">
+        <span class="logo-main">Mr. Gill's</span>
+        <span class="logo-tag">HERITAGE KITCHEN</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="#thali-builder" class="nav-link highlight-link">🍱 Build Your Thali</a>
+        <a href="#menu" class="nav-link">Daily Menu</a>
+        <a href="#why-us" class="nav-link">Why Us</a>
+        <a href="#inquiry" class="btn btn-gold nav-btn">Reserve a Table</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section with Tandoor Fire Ambience -->
+  <section class="hero">
+    <div class="tandoor-fire-glow"></div>
+    <div class="container hero-container">
+      <div class="hero-box">
+        <span class="hero-badge">BHAVNAGAR KA NAYA PUNJAB</span>
+        <h1 class="hero-title">The Taste of Punjab,<br><em>Now in Bhavnagar.</em></h1>
+        <div class="gold-divider-sm"></div>
+        <p class="hero-subtitle">Authentic Amritsari Thali · Pure Desi Ghee Prep · Fresh Daily Spices</p>
+        <div class="hero-btns">
+          <a href="#thali-builder" class="btn btn-gold btn-lg glow-btn">Build Custom Thali 🍱</a>
+          <a href="#menu" class="btn btn-accent btn-lg">Explore Menu</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OUT-OF-THE-BOX INNOVATION: VIRTUAL THALI BUILDER WIDGET -->
+  <section class="section thali-builder-section" id="thali-builder">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-label gold-text">INTERACTIVE FOOD EXPERIENCE</span>
+        <h2 class="section-title">BUILD YOUR OWN AMRITSARI THALI</h2>
+        <div class="gold-divider-center"></div>
+        <p class="builder-sub">Customize your meal step-by-step, watch your thali assemble visually, and place a direct WhatsApp order!</p>
+      </div>
+
+      <div class="thali-builder-grid">
+        <!-- Selection Controls -->
+        <div class="builder-controls">
+          <div class="control-group">
+            <label class="control-label">1. Choose Special Paneer / Sabzi *</label>
+            <div class="chip-options" id="gravy1Options">
+              <button class="chip-btn active" data-name="Paneer Butter Masala" data-cal="280">Paneer Butter Masala</button>
+              <button class="chip-btn" data-name="Kadhai Paneer" data-cal="260">Kadhai Paneer</button>
+              <button class="chip-btn" data-name="Amritsari Chole" data-cal="240">Amritsari Chole</button>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label">2. Choose Signature Dal *</label>
+            <div class="chip-options" id="gravy2Options">
+              <button class="chip-btn active" data-name="12-Hour Dal Makhani" data-cal="310">12-Hour Dal Makhani</button>
+              <button class="chip-btn" data-name="Punjabi Rajma Masala" data-cal="230">Punjabi Rajma</button>
+              <button class="chip-btn" data-name="Tadka Dal Fry" data-cal="190">Yellow Dal Tadka</button>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label">3. Choose Tandoori Bread *</label>
+            <div class="chip-options" id="breadOptions">
+              <button class="chip-btn active" data-name="Butter Amritsari Kulcha (2 pcs)" data-cal="290">Stuffed Amritsari Kulcha</button>
+              <button class="chip-btn" data-name="Butter Naan (2 pcs)" data-cal="260">Garlic Butter Naan</button>
+              <button class="chip-btn" data-name="Tandoori Roti (3 pcs)" data-cal="180">Tandoori Roti</button>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label">4. Choose Beverage & Dessert *</label>
+            <div class="chip-options" id="beverageOptions">
+              <button class="chip-btn active" data-name="Kulhad Lassi & Gulab Jamun" data-cal="250">Kulhad Lassi + Gulab Jamun</button>
+              <button class="chip-btn" data-name="Masala Chaas & Kheer" data-cal="160">Masala Chaas + Rice Kheer</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Visual Thali Display Board -->
+        <div class="thali-display-board">
+          <div class="thali-plate">
+            <div class="katori katori-gravy1" id="plateGravy1">
+              <span class="k-label">Paneer Butter Masala</span>
+            </div>
+            <div class="katori katori-gravy2" id="plateGravy2">
+              <span class="k-label">Dal Makhani</span>
+            </div>
+            <div class="katori katori-bread" id="plateBread">
+              <span class="k-label">Amritsari Kulcha</span>
+            </div>
+            <div class="katori katori-rice">
+              <span class="k-label">Jeera Rice</span>
+            </div>
+            <div class="katori katori-sweet" id="plateSweet">
+              <span class="k-label">Lassi & Jamun</span>
+            </div>
+            <div class="katori katori-salad">
+              <span class="k-label">Onion & Pickle</span>
+            </div>
+          </div>
+
+          <div class="thali-summary-card">
+            <div class="summary-line">
+              <span>Thali Total Price:</span>
+              <strong class="price-gold">₹ 260</strong>
+            </div>
+            <div class="summary-line"><span>Estimated Calories:</span> <span id="calTotal">1,140 kcal</span></div>
+            <button class="btn btn-accent btn-block btn-lg" id="orderThaliBtn">Order This Thali via WhatsApp →</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <section class="section menu-section" id="menu">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-label">OUR SPECIALTIES</span>
+        <h2 class="section-title">HERITAGE PUNJABI THALI & DISHES</h2>
+        <div class="gold-divider-center"></div>
+      </div>
+
+      <div class="menu-tabs text-center">
+        <button class="menu-tab-btn active" data-category="thali">Signature Thalis</button>
+        <button class="menu-tab-btn" data-category="mains">Punjabi Mains</button>
+        <button class="menu-tab-btn" data-category="beverages">Lassi & Desserts</button>
+      </div>
+
+      <div class="menu-list" id="menuList">
+        <!-- Dish 1 -->
+        <div class="menu-item" data-cat="thali">
+          <div class="menu-item-img">🍱</div>
+          <div class="menu-item-details">
+            <div class="item-header">
+              <h3 class="item-name">Royal Amritsari Punjabi Thali <span class="tag-veg">PURE VEG</span></h3>
+              <span class="item-price">₹ 240</span>
+            </div>
+            <p class="item-desc">Paneer Butter Masala, Dal Makhani (slow cooked overnight), Amritsari Kulcha / Butter Naan (2 pcs), Jeera Rice, Boondi Raita, Sweet Gulab Jamun, Salad & Pickle.</p>
+          </div>
+        </div>
+
+        <!-- Dish 2 -->
+        <div class="menu-item" data-cat="thali">
+          <div class="menu-item-img">🥘</div>
+          <div class="menu-item-details">
+            <div class="item-header">
+              <h3 class="item-name">Authentic Amritsari Chole Kulche Thali</h3>
+              <span class="item-price">₹ 180</span>
+            </div>
+            <p class="item-desc">Tangy spicy Amritsari Pindi Chole, 2 stuffed Butter Kulche, pickled onions, green chili chutney, and complimentary glass of mint buttermilk.</p>
+          </div>
+        </div>
+
+        <!-- Dish 3 -->
+        <div class="menu-item" data-cat="mains">
+          <div class="menu-item-img">🍲</div>
+          <div class="menu-item-details">
+            <div class="item-header">
+              <h3 class="item-name">Special Dal Makhani (Handi)</h3>
+              <span class="item-price">₹ 210</span>
+            </div>
+            <p class="item-desc">Black lentils slow-cooked over tandoor charcoal for 12 hours, finished with fresh white butter and clotted cream.</p>
+          </div>
+        </div>
+
+        <!-- Dish 4 -->
+        <div class="menu-item" data-cat="beverages">
+          <div class="menu-item-img">🥛</div>
+          <div class="menu-item-details">
+            <div class="item-header">
+              <h3 class="item-name">Grand Amritsari Kulhad Lassi</h3>
+              <span class="item-price">₹ 90</span>
+            </div>
+            <p class="item-desc">Thick churned sweet curd topped with a heavy layer of fresh malai, crushed pistachios, and saffron strands served in a clay pot.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Visit Us / Inquiry Form -->
+  <section class="section inquiry-section" id="inquiry">
+    <div class="container">
+      <div class="inquiry-grid">
+        <div class="inquiry-info">
+          <span class="section-label">LOCATION & HOURS</span>
+          <h2 class="section-title">VISIT US TODAY</h2>
+          <div class="gold-divider-sm"></div>
+
+          <div class="info-block">
+            <strong>📍 Location</strong>
+            <p>Jawahar Ground Area, Near Central Circle, Bhavnagar, Gujarat</p>
+          </div>
+
+          <div class="info-block">
+            <strong>📞 Table Reservation / Order Line</strong>
+            <p>+91 6353 42 13 13</p>
+          </div>
+
+          <div class="info-block">
+            <strong>⏰ Opening Hours</strong>
+            <p>Lunch: 11:30 AM – 3:30 PM<br>Dinner: 7:00 PM – 11:00 PM (Open All 7 Days)</p>
+          </div>
+        </div>
+
+        <div class="inquiry-card">
+          <h3 class="form-title">TABLE / PARTY RESERVATION</h3>
+          <p class="form-sub">Reserve your table or place a party catering inquiry.</p>
+
+          <form id="tableForm">
+            <div class="form-group">
+              <label for="name">Full Name *</label>
+              <input type="text" id="name" required placeholder="e.g. Jaspreet Singh">
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number *</label>
+              <input type="tel" id="phone" required placeholder="e.g. 6353421313" pattern="[0-9]{10}">
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="party">Party Size *</label>
+                <select id="party" required>
+                  <option value="2 Guests">2 Guests</option>
+                  <option value="4 Guests">4 Guests</option>
+                  <option value="6-8 Guests">6–8 Guests</option>
+                  <option value="10+ Family Party">10+ Family Party</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="date">Preferred Date *</label>
+                <input type="date" id="date" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="notes">Special Request / Message</label>
+              <textarea id="notes" rows="2" placeholder="e.g. Birthday celebration, high chair needed..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-accent btn-block btn-lg">Reserve Table via WhatsApp →</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <span class="logo-main">Mr. Gill's</span>
+        <span class="logo-tag">HERITAGE KITCHEN</span>
+        <p>The Authentic Taste of Punjab in Bhavnagar.</p>
+      </div>
+
+      <div class="footer-contact">
+        <p>📞 Phone: +91 6353 42 13 13</p>
+        <p>📍 Location: Jawahar Ground Area, Bhavnagar</p>
+      </div>
+    </div>
+    <div class="footer-bottom text-center">
+      <p>&copy; 2026 Mr. Gill's Heritage Kitchen. All rights reserved. Developed by VyunixTech.</p>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

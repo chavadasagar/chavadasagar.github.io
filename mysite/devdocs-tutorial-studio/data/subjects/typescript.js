@@ -1,0 +1,4753 @@
+﻿window.DEVDOCS_SUBJECTS = window.DEVDOCS_SUBJECTS || {};
+window.DEVDOCS_SUBJECTS['typescript'] = [
+    {
+        "url": "https://www.w3schools.com/typescript/index.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "typescript_index",
+        "code_examples": [
+            {
+                "code": "console.log('Hello World!');",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "JavaScript & Frontend",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "TS HOME\nTS Introduction\nTS Get Started\nTS Simple Types\nTS Explicit & Inference\nTS Special Types\nTS Arrays\nTS Tuples\nTS Object Types\nTS Enums\nTS Aliases & Interfaces\nTS Union Types\nTS Functions\nTS Casting\nTS Classes\nTS Basic Generics\nTS Utility Types\nTS Keyof\nTS Null\nTS Definitely Typed\nTS 5 Updates\nTS Configuration\nTS with Node.js\nTS with React\nTS Tooling\nTS Advanced Types\nTS Type Guards\nTS Conditional Types\nTS Mapped Types\nTS Type Inference\nTS Literal Types\nTS Namespaces\nTS Index Signatures\nTS Declaration Merging\nTS Async Programming\nTS Decorators\nTS in JS Projects\nTS Migration\nTS Error Handling\nTS Best Practices",
+                "heading": "TypeScript tutorial"
+            },
+            {
+                "content": "TS Certificate",
+                "heading": "TypeScript Cert"
+            },
+            {
+                "content": "TS Editor\nTS Exercises\nTS Quiz\nTS Practice Problems\nTS Syllabus\nTS Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\nTypeScript Tutorial\n\n ❮ Home\n Next ❯",
+                "heading": "TypeScript Exercises"
+            },
+            {
+                "content": "TypeScript is JavaScript with added syntax for types.\n\n TypeScript is developed and maintained by Microsoft.\n\n Learn TypeScript now ❯\n\n Become TypeScript Certified\n Get certified with our TypeScript exam, includes a professionally curated study kit to guide you from beginner to exam-ready.\n\nGet Certified ❯\n\n CERTIFICATE OF COMPLETION\n This certifies that\n Your Name\n has passed the W3Schools TypeScript Certification exam and is hereby declared a\n\n Certified TypeScript Developer\n The candidate has passed the exam at the Professional level.\n Verify at\n verify.w3schools.com\n Stale Refsnes\n for w3schools.com",
+                "heading": "Learn TypeScript"
+            },
+            {
+                "content": "Our \"Try it Yourself\" editor makes it easy to learn TypeScript.\n\nYou can edit TypeScript code and view the result in your browser.\n\nExample\n\nconsole.log('Hello World!');\n\nTry it Yourself »\n\nClick on the \"Try it Yourself\" button to see how it works.\n\n We recommend reading this tutorial in the sequence listed in the left menu.",
+                "heading": "Examples in Each Chapter"
+            },
+            {
+                "content": "Create a W3Schools account and get access to more features and learning materials:\n\n View your completed tutorials, exercises, and quizzes\n\n Keep an eye on your progress and daily streaks\n\n Jump back in right where you left off\n-->\n Join the leaderboard and compete with others\n\n Get access to more challenges and tests\n-->\n Get your own avatar and unlock new skins\n\n Create your own personal website\n\n Sign Up »\n\nNote\nThis is an optional feature. You can study at W3Schools without creating an account.\n\n ❮ Home\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Track Your Progress"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:08:34Z",
+        "subject": "TypeScript",
+        "title": "TypeScript Tutorial"
+    },
+    {
+        "url": "https://www.w3schools.com/typescript/typescript_intro.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "typescript_typescript_intro",
+        "code_examples": [],
+        "category": "JavaScript & Frontend",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "TS HOME\nTS Introduction\nTS Get Started\nTS Simple Types\nTS Explicit & Inference\nTS Special Types\nTS Arrays\nTS Tuples\nTS Object Types\nTS Enums\nTS Aliases & Interfaces\nTS Union Types\nTS Functions\nTS Casting\nTS Classes\nTS Basic Generics\nTS Utility Types\nTS Keyof\nTS Null\nTS Definitely Typed\nTS 5 Updates\nTS Configuration\nTS with Node.js\nTS with React\nTS Tooling\nTS Advanced Types\nTS Type Guards\nTS Conditional Types\nTS Mapped Types\nTS Type Inference\nTS Literal Types\nTS Namespaces\nTS Index Signatures\nTS Declaration Merging\nTS Async Programming\nTS Decorators\nTS in JS Projects\nTS Migration\nTS Error Handling\nTS Best Practices",
+                "heading": "TypeScript tutorial"
+            },
+            {
+                "content": "TS Certificate",
+                "heading": "TypeScript Cert"
+            },
+            {
+                "content": "TS Editor\nTS Exercises\nTS Quiz\nTS Practice Problems\nTS Syllabus\nTS Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\n TypeScript Introduction\n\n ❮ Previous\n Next ❯\n\n TypeScript is JavaScript with added syntax for types.",
+                "heading": "TypeScript Exercises"
+            },
+            {
+                "content": "TypeScript is a syntactic superset of JavaScript which adds static typing.\n\nThis basically means that TypeScript adds syntax on top of JavaScript, allowing developers to add types.\n\n TypeScript being a Syntactic Superset means it shares the same base syntax as JavaScript, but adds something to it.",
+                "heading": "What is TypeScript?"
+            },
+            {
+                "content": "JavaScript is a loosely typed language.\n\nIt can be difficult to understand what types of data are being passed around in JavaScript.\n\nIn JavaScript, function parameters and variables don't have any information!\n\nSo developers need to look at documentation, or guess based on the implementation.\n\nTypeScript allows specifying the types of data being passed around within the code, and has the ability to report errors when the types don't match.\n\nFor example, TypeScript will report an error when passing a string into a function that expects a number.\n\nJavaScript will not.\n\n TypeScript uses compile time type checking.\n\n Which means it checks if the specified types match before running the code, not while running the code.",
+                "heading": "Why should I use TypeScript?"
+            },
+            {
+                "content": "A common way to use TypeScript is to use the official TypeScript compiler, which transpiles TypeScript code into JavaScript.\n\nThe next section shows how to get the compiler setup for a local project.\n\nSome popular code editors, such as Visual Studio Code, have built-in TypeScript support and can show errors as you write code!\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "How do I use TypeScript?"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:08:37Z",
+        "subject": "TypeScript",
+        "title": "TypeScript Introduction"
+    },
+    {
+        "url": "https://www.w3schools.com/typescript/typescript_getstarted.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "typescript_typescript_getstarted",
+        "code_examples": [
+            {
+                "code": "Example\n\nnpm install typescript --save-dev",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\nadded 1 package, and audited 2 packages in 2s\n\nfound 0 vulnerabilities",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\nnpx tsc",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\nVersion 4.5.5\n\ntsc: The TypeScript Compiler - Version 4.5.5",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\n npm install -g typescript",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\n tsc -v",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\nnpx tsc --init",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\nCreated a new tsconfig.json with:\n\nTS\n\n  target: es2016\n\n  module: commonjs\n\n  strict: true\n\n  esModuleInterop: true\n\n  skipLibCheck: true\n\n  forceConsistentCasingInFileNames: true",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\n{\n\n  \"include\": [\"src\"],\n\n  \"compilerOptions\": {\n\n    \"outDir\": \"./build\"\n\n  }\n\n}",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "hello.ts\n\nfunction greet(name: string): string {\n\n  return `Hello, ${name}!`;\n\n}\n\nconst message: string = greet(\"World\");\n\nconsole.log(message);",
+                "language": "typescript",
+                "heading": "hello.ts",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\nnpx tsc hello.ts",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\nfunction greet(name) {\n\n  return \"Hello, \".concat(name, \"!\");\n\n}\n\nconst message = greet(\"World\");\n\nconsole.log(message);",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\nnode hello.js",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\nHello, World!",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "JavaScript & Frontend",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "TS HOME\nTS Introduction\nTS Get Started\nTS Simple Types\nTS Explicit & Inference\nTS Special Types\nTS Arrays\nTS Tuples\nTS Object Types\nTS Enums\nTS Aliases & Interfaces\nTS Union Types\nTS Functions\nTS Casting\nTS Classes\nTS Basic Generics\nTS Utility Types\nTS Keyof\nTS Null\nTS Definitely Typed\nTS 5 Updates\nTS Configuration\nTS with Node.js\nTS with React\nTS Tooling\nTS Advanced Types\nTS Type Guards\nTS Conditional Types\nTS Mapped Types\nTS Type Inference\nTS Literal Types\nTS Namespaces\nTS Index Signatures\nTS Declaration Merging\nTS Async Programming\nTS Decorators\nTS in JS Projects\nTS Migration\nTS Error Handling\nTS Best Practices",
+                "heading": "TypeScript tutorial"
+            },
+            {
+                "content": "TS Certificate",
+                "heading": "TypeScript Cert"
+            },
+            {
+                "content": "TS Editor\nTS Exercises\nTS Quiz\nTS Practice Problems\nTS Syllabus\nTS Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\n TypeScript Getting Started\n\n❮ Previous\nNext ❯",
+                "heading": "TypeScript Exercises"
+            },
+            {
+                "content": "TypeScript is transpiled into JavaScript using a compiler.\n\nTypeScript being converted into JavaScript means it runs anywhere that JavaScript runs!",
+                "heading": "TypeScript Compiler"
+            },
+            {
+                "content": "TypeScript has an official compiler which can be installed through npm.\n\nLearn more about npm, and how to get started here: What is npm?\n\nWithin your npm project, run the following command to install the compiler:\n\nExample\n\nnpm install typescript --save-dev\n\nWhich should give you an output similar to:\n\nExample\n\nadded 1 package, and audited 2 packages in 2s\n\nfound 0 vulnerabilities\n\nThe compiler is installed in the node_modules directory and can be run with: npx tsc.\n\nExample\n\nnpx tsc\n\nWhich should give you an output similar to:\n\nExample\n\nVersion 4.5.5\n\ntsc: The TypeScript Compiler - Version 4.5.5\n\nFollowed by a list of all the Common Commands.",
+                "heading": "Installing the Compiler"
+            },
+            {
+                "content": "Installing TypeScript globally means adding the tsc command to your system PATH so it is available from any folder.\n\n Example\n\n npm install -g typescript\n\n Example\n\n tsc -v\n\n Pros\n\n Quick access to tsc from any project or directory.\n\n Useful for trying commands, learning, or one-off scripts.\n\n Some editors or tools can discover a global compiler automatically.\n\n Cons\n\n Different machines (or teammates) may have different global versions.\n\n Can drift from the version your project expects, causing subtle issues.\n\n May require elevated permissions on some systems to install globally.\n\n Best practice is to install TypeScript as a project devDependency and run it with npx tsc so the exact version is consistent across environments. A global install is optional and convenient for ad-hoc usage.",
+                "heading": "Installing Globally"
+            },
+            {
+                "content": "By default the TypeScript compiler will print a help message when run in an empty project.\n\nThe compiler can be configured using a tsconfig.json file.\n\nYou can have TypeScript create tsconfig.json with the recommended settings with:\n\nExample\n\nnpx tsc --init\n\nWhich should give you an output similar to:\n\nExample\n\nCreated a new tsconfig.json with:\n\nTS\n\n  target: es2016\n\n  module: commonjs\n\n  strict: true\n\n  esModuleInterop: true\n\n  skipLibCheck: true\n\n  forceConsistentCasingInFileNames: true\n\nYou can learn more at TypeScript Config\n\nHere is an example of more things you could add to the tsconfig.json file:\n\nExample\n\n{\n\n  \"include\": [\"src\"],\n\n  \"compilerOptions\": {\n\n    \"outDir\": \"./build\"\n\n  }\n\n}\n\nYou can open the file in an editor to add those options.\n\nThis will configure the TypeScript compiler to transpile TypeScript files located in the src/ directory of your project, into JavaScript files in the build/ directory.",
+                "heading": "Configuring the compiler"
+            },
+            {
+                "content": "Let's create a simple \"Hello, World!\" program to verify your TypeScript setup.\n\n Create a new file named hello.ts with the following content:\n\nhello.ts\n\nfunction greet(name: string): string {\n\n  return `Hello, ${name}!`;\n\n}\n\nconst message: string = greet(\"World\");\n\nconsole.log(message);\n\n Compile your TypeScript code:\n\nExample\n\nnpx tsc hello.ts\n\nThis will generate a hello.js file in the same directory:\n\nExample\n\nfunction greet(name) {\n\n  return \"Hello, \".concat(name, \"!\");\n\n}\n\nconst message = greet(\"World\");\n\nconsole.log(message);\n\n Run the compiled JavaScript:\n\nExample\n\nnode hello.js\n\nYou should see the output:\n\nExample\n\nHello, World!\n\n Note: If you're using the tsconfig.json configuration mentioned earlier, you would place your TypeScript files in the src directory and the compiled JavaScript will appear in the build directory.\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Your First TypeScript Program"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:08:37Z",
+        "subject": "TypeScript",
+        "title": "TypeScript Getting Started"
+    },
+    {
+        "url": "https://www.w3schools.com/typescript/typescript_simple_types.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "typescript_typescript_simple_types",
+        "code_examples": [
+            {
+                "code": "let isActive: boolean = true;\n\nlet hasPermission = false; // TypeScript infers 'boolean' type",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "JavaScript & Frontend",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "TS HOME\nTS Introduction\nTS Get Started\nTS Simple Types\nTS Explicit & Inference\nTS Special Types\nTS Arrays\nTS Tuples\nTS Object Types\nTS Enums\nTS Aliases & Interfaces\nTS Union Types\nTS Functions\nTS Casting\nTS Classes\nTS Basic Generics\nTS Utility Types\nTS Keyof\nTS Null\nTS Definitely Typed\nTS 5 Updates\nTS Configuration\nTS with Node.js\nTS with React\nTS Tooling\nTS Advanced Types\nTS Type Guards\nTS Conditional Types\nTS Mapped Types\nTS Type Inference\nTS Literal Types\nTS Namespaces\nTS Index Signatures\nTS Declaration Merging\nTS Async Programming\nTS Decorators\nTS in JS Projects\nTS Migration\nTS Error Handling\nTS Best Practices",
+                "heading": "TypeScript tutorial"
+            },
+            {
+                "content": "TS Certificate",
+                "heading": "TypeScript Cert"
+            },
+            {
+                "content": "TS Editor\nTS Exercises\nTS Quiz\nTS Practice Problems\nTS Syllabus\nTS Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\n TypeScript Simple Types\n\n❮ Previous\nNext ❯\n\nTypeScript enhances JavaScript by adding static types.",
+                "heading": "TypeScript Exercises"
+            },
+            {
+                "content": "The most basic types in TypeScript are called primitives.\n\nThese types form the building blocks of more complex types in your applications.\n\nTypeScript includes all JavaScript primitives plus additional type features.\n\nHere are the five primitive types you'll use most often:",
+                "heading": "JavaScript and TypeScript Primitives"
+            },
+            {
+                "content": "Represents true/false values.\n\nUsed for flags, toggles, and conditions.\n\nExample\n\nlet isActive: boolean = true;\n\nlet hasPermission = false; // TypeScript infers 'boolean' type\n\nTry it Yourself »",
+                "heading": "Boolean"
+            },
+            {
+                "content": "Represents both integers and floating-point numbers.\n\nTypeScript uses the same number type for all numeric values.\n\nExample\n\nlet decimal: number = 6;\n\nlet hex: number = 0xf00d;       // Hexadecimal\n\nlet binary: number = 0b1010;     // Binary\n\nlet octal: number = 0o744;      // Octal\n\nlet float: number = 3.14;      // Floating point\n\nTry it Yourself »",
+                "heading": "Number"
+            },
+            {
+                "content": "Represents text data.\n\nCan use single quotes ('), double quotes (\"), or backticks (`) for template literals.\n\nExample\n\nlet color: string = \"blue\";\n\nlet fullName: string = 'John Doe';\n\nlet age: number = 30;\n\nlet sentence: string = `Hello, my name is ${fullName} and I'll be ${age + 1} next year.`;\n\nTry it Yourself »",
+                "heading": "String"
+            },
+            {
+                "content": "Represents whole numbers larger than 253 - 1.\n\nExample\n\nconst hugeNumber = BigInt(9007199254740991);\n\nTry it Yourself »",
+                "heading": "BigInt (ES2020+)"
+            },
+            {
+                "content": "Creates unique identifiers.\n\nUseful for creating unique property keys and constants.\n\nExample\n\nconst uniqueKey: symbol = Symbol('description');\n\nconst obj = {\n\n  [uniqueKey]: 'This is a unique property'\n\n};\n\nconsole.log(obj[uniqueKey]); // \"This is a unique property\"\n\nTry it Yourself »\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Symbol"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:08:37Z",
+        "subject": "TypeScript",
+        "title": "TypeScript Simple Types"
+    },
+    {
+        "url": "https://www.w3schools.com/typescript/typescript_explicit_inference.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "typescript_typescript_explicit_inference",
+        "code_examples": [
+            {
+                "code": "// String\n\ngreeting: string = \"Hello, TypeScript!\";\n\n// Number\n\nuserCount: number = 42;\n\n// Boolean\n\nisLoading: boolean = true;\n\n// Array of numbers\n\nscores: number[] = [100, 95, 98];",
+                "language": "typescript",
+                "heading": "Basic Explicit Types",
+                "tryit_url": null
+            },
+            {
+                "code": "function add(a: number, b: number): number {\n\nreturn a + b;\n\n}\n\nconsole.log(add(\"5\", 3)); // Error: Argument of type 'string' is not assignable to parameter of type 'number'",
+                "language": "typescript",
+                "heading": "TypeScript Type Safety",
+                "tryit_url": null
+            }
+        ],
+        "category": "JavaScript & Frontend",
+        "notes_and_tips": [
+            "Avoid any When Possible\nUsing any disables TypeScript's type checking.\n\nInstead, consider these alternatives:\n\n Use type annotations\n\n Create interfaces for complex objects\n\n Use type guards for runtime type checking\n\n Enable noImplicitAny in your tsconfig.json"
+        ],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "TS HOME\nTS Introduction\nTS Get Started\nTS Simple Types\nTS Explicit & Inference\nTS Special Types\nTS Arrays\nTS Tuples\nTS Object Types\nTS Enums\nTS Aliases & Interfaces\nTS Union Types\nTS Functions\nTS Casting\nTS Classes\nTS Basic Generics\nTS Utility Types\nTS Keyof\nTS Null\nTS Definitely Typed\nTS 5 Updates\nTS Configuration\nTS with Node.js\nTS with React\nTS Tooling\nTS Advanced Types\nTS Type Guards\nTS Conditional Types\nTS Mapped Types\nTS Type Inference\nTS Literal Types\nTS Namespaces\nTS Index Signatures\nTS Declaration Merging\nTS Async Programming\nTS Decorators\nTS in JS Projects\nTS Migration\nTS Error Handling\nTS Best Practices",
+                "heading": "TypeScript tutorial"
+            },
+            {
+                "content": "TS Certificate",
+                "heading": "TypeScript Cert"
+            },
+            {
+                "content": "TS Editor\nTS Exercises\nTS Quiz\nTS Practice Problems\nTS Syllabus\nTS Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\n TypeScript Explicit Types and Inference\n\n❮ Previous\nNext ❯",
+                "heading": "TypeScript Exercises"
+            },
+            {
+                "content": "TypeScript offers two ways to work with types:\n\nExplicit Typing: You explicitly declare the type of a variable\n\nType Inference: TypeScript automatically determines the type based on the assigned value\n\nWhen to Use Each Approach\n\nUse explicit types for:\n\n Function parameters and return types\n\n Object literals\n\n When the initial value might not be the final type\n\nUse type inference for:\n\n Simple variable declarations with immediate assignment\n\n When the type is obvious from the context",
+                "heading": "Type Annotations and Inference"
+            },
+            {
+                "content": "Explicit typing means you tell TypeScript exactly what type a variable should be:\n\nBasic Explicit Types\n\n// String\n\ngreeting: string = \"Hello, TypeScript!\";\n\n// Number\n\nuserCount: number = 42;\n\n// Boolean\n\nisLoading: boolean = true;\n\n// Array of numbers\n\nscores: number[] = [100, 95, 98];\n\nTry it Yourself »\n\nBest Practice: Use explicit types for function parameters and return types to make your code more maintainable and self-documenting.\n\nFunction with Explicit Types\n\n// Function with explicit parameter and return types\n\nfunction greet(name: string): string {\n\nreturn `Hello, ${name}!`;\n\n}\n\n// TypeScript will ensure you pass the correct argument type\n\ngreet(\"Alice\"); // OK\n\ngreet(42);     // Error: Argument of type '42' is not assignable to parameter of type 'string'\n\nTry it Yourself »",
+                "heading": "Explicit Type Annotations"
+            },
+            {
+                "content": "TypeScript can automatically determine (infer) the type of a variable based on its initial value:\n\nBasic Type Inference\n\n// TypeScript infers 'string'\n\nlet username = \"alice\";\n\n// TypeScript infers 'number'\n\nlet score = 100;\n\n// TypeScript infers 'boolean[]'\n\nlet flags = [true, false, true];\n\n// TypeScript infers return type as 'number'\n\nfunction add(a: number, b: number) {\n\nreturn a + b;\n\n}\n\nTry it Yourself »\n\nNote: Type inference works best when variables are initialized at declaration.\n\nUninitialized variables have type 'any' by default unless you enable strictNullChecks in your tsconfig.json.\n\nWhen Inference Shines\n\nObject Literal Inference\n\n// TypeScript infers the shape of the object\n\nconst user = {\n\nname: \"Alice\",\n\nage: 30,\n\nisAdmin: true\n\n};\n\n// TypeScript knows these properties exist\n\nconsole.log(user.name);  // OK\n\nconsole.log(user.email); // Error: Property 'email' does not exist\n\nTry it Yourself »\n\nWatch Out: While type inference is convenient, being explicit with types can make your code more maintainable, especially in larger codebases or public APIs.",
+                "heading": "Type Inference"
+            },
+            {
+                "content": "One of TypeScript's main benefits is catching type-related errors during development.\n\nLet's look at how TypeScript helps prevent common mistakes.\n\nType Mismatch Errors\n\nExplicit Type Mismatch\n\nlet username: string = \"alice\";\n\nusername = 42; // Error: Type 'number' is not assignable to type 'string'\n\nTry it Yourself »\n\nImplicit Type Mismatch\n\nlet score = 100;  // TypeScript infers 'number'\n\nscore = \"high\";  // Error: Type 'string' is not assignable to type 'number'\n\nTry it Yourself »\n\nJavaScript vs TypeScript\n\nIn JavaScript, the following code would run without errors, potentially causing bugs:\n\nJavaScript Behavior\n\n// This is valid JavaScript but can lead to bugs\n\nfunction add(a, b) {\n\nreturn a + b;\n\n}\n\nconsole.log(add(\"5\", 3)); // Returns \"53\" (string concatenation)\n\nTypeScript catches these issues at compile time:\n\nTypeScript Type Safety\n\nfunction add(a: number, b: number): number {\n\nreturn a + b;\n\n}\n\nconsole.log(add(\"5\", 3)); // Error: Argument of type 'string' is not assignable to parameter of type 'number'\n\nTry it Yourself »",
+                "heading": "Type Safety in Action"
+            },
+            {
+                "content": "While TypeScript's type inference is powerful, there are cases where it can't determine the correct type.\n\nIn these situations, TypeScript falls back to the any type, which disables type checking.\n\nNote: any and other Special Types are covered in more detail in the next chapter.\n\nCommon Cases for any\n\n// 1. JSON.parse returns 'any' because the structure isn't known at compile time\n\nconst data = JSON.parse('{ \"name\": \"Alice\", \"age\": 30 }');\n\n// 2. Variables declared without initialization\n\nlet something;  // Type is 'any'\n\nsomething = 'hello';\n\nsomething = 42;  // No error\n\nTry it Yourself »\n\nAvoid any When Possible\nUsing any disables TypeScript's type checking.\n\nInstead, consider these alternatives:\n\n Use type annotations\n\n Create interfaces for complex objects\n\n Use type guards for runtime type checking\n\n Enable noImplicitAny in your tsconfig.json\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "When TypeScript Can't Infer Types"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:08:37Z",
+        "subject": "TypeScript",
+        "title": "TypeScript Explicit Types and Inference"
+    },
+    {
+        "url": "https://www.w3schools.com/typescript/typescript_special_types.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "typescript_typescript_special_types",
+        "code_examples": [
+            {
+                "code": "let u = true;\n\nu = \"string\"; // Error: Type 'string' is not assignable to type 'boolean'.\n\nMath.round(u); // Error: Argument of type 'boolean' is not assignable to parameter of type 'number'.",
+                "language": "typescript",
+                "heading": "Example without any",
+                "tryit_url": null
+            },
+            {
+                "code": "1. Function that never returns\n\n function throwError(message: string): never {\n\n   throw new Error(message);\n\n }",
+                "language": "typescript",
+                "heading": "1. Function that never returns",
+                "tryit_url": null
+            },
+            {
+                "code": "2. Exhaustiveness checking with discriminated unions\n\n type Shape = Circle | Square | Triangle;\n\n function getArea(shape: Shape): number {\n\n   switch (shape.kind) {\n\n     case 'circle':\n\n       return Math.PI * shape.radius ** 2;\n\n     case 'square':\n\n       return shape.sideLength ** 2;\n\n     default:\n\n       // TypeScript knows this should never happen\n\n       const _exhaustiveCheck: never = shape;\n\n       return _exhaustiveCheck;\n\n   }\n\n }",
+                "language": "typescript",
+                "heading": "2. Exhaustiveness checking with discriminated unions",
+                "tryit_url": null
+            },
+            {
+                "code": "let x: never = true; // Error: Type 'boolean' is not assignable to type 'never'.",
+                "language": "typescript",
+                "heading": "3. Basic never type (throws error when assigned)",
+                "tryit_url": null
+            },
+            {
+                "code": "// Nullish coalescing (??) - only uses default if value is null or undefined\n\n const value = input ?? 'default';\n\n // Optional chaining (?.) - safely access nested properties\n\n const street = user?.address?.street;",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "JavaScript & Frontend",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "TS HOME\nTS Introduction\nTS Get Started\nTS Simple Types\nTS Explicit & Inference\nTS Special Types\nTS Arrays\nTS Tuples\nTS Object Types\nTS Enums\nTS Aliases & Interfaces\nTS Union Types\nTS Functions\nTS Casting\nTS Classes\nTS Basic Generics\nTS Utility Types\nTS Keyof\nTS Null\nTS Definitely Typed\nTS 5 Updates\nTS Configuration\nTS with Node.js\nTS with React\nTS Tooling\nTS Advanced Types\nTS Type Guards\nTS Conditional Types\nTS Mapped Types\nTS Type Inference\nTS Literal Types\nTS Namespaces\nTS Index Signatures\nTS Declaration Merging\nTS Async Programming\nTS Decorators\nTS in JS Projects\nTS Migration\nTS Error Handling\nTS Best Practices",
+                "heading": "TypeScript tutorial"
+            },
+            {
+                "content": "TS Certificate",
+                "heading": "TypeScript Cert"
+            },
+            {
+                "content": "TS Editor\nTS Exercises\nTS Quiz\nTS Practice Problems\nTS Syllabus\nTS Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\n TypeScript Special Types\n\n❮ Previous\nNext ❯\n\nTypeScript includes several special types that have specific behaviors in the type system.\n\nThese types are used in various scenarios to handle cases where the type might not be known in advance or when you need to work with JavaScript primitives in a type-safe way.\n\n Note: These special types are part of TypeScript's type system and help make your code more type-safe and self-documenting.",
+                "heading": "TypeScript Exercises"
+            },
+            {
+                "content": "The any type is the most flexible type in TypeScript.\n\nIt essentially tells the compiler to skip type checking for a particular variable.\n\nWhile this can be useful in certain situations, it should be used sparingly as it bypasses TypeScript's type safety features.\n\n When to use any:\n\n When migrating JavaScript code to TypeScript\n\n When working with dynamic content where the type is unknown\n\n When you need to opt out of type checking for a specific case\n\nThe example below does not use any and will throw an error:\n\nExample without any\n\nlet u = true;\n\nu = \"string\"; // Error: Type 'string' is not assignable to type 'boolean'.\n\nMath.round(u); // Error: Argument of type 'boolean' is not assignable to parameter of type 'number'.\n\nTry it Yourself »\n\nSetting a variable to the special type any disables type checking:\n\nExample with any\n\nlet v: any = true;\n\nv = \"string\"; // no error as it can be \"any\" type\n\nMath.round(v); // no error as it can be \"any\" type\n\nTry it Yourself »\n\nany can be a useful way to get past errors since it disables type checking, but\nTypeScript will not be able to provide type safety, and tools which rely\n on type data, such as auto completion, will not work.\n\nRemember, it should be avoided at \"any\" cost...",
+                "heading": "Type: any"
+            },
+            {
+                "content": "The unknown type is a type-safe counterpart of any.\n\nIt's the type-safe way to say \"this could be anything, so you must perform some type of checking before you use it\".\n\n Key differences between unknown and any:\n\n unknown must be type-checked before use\n\n You can't access properties on an unknown type without type assertion\n\n You can't call or construct values of type unknown\n\nTypeScript will prevent unknown types from being used without proper type checking, as shown in the example below:\n\nExample\n\nlet w: unknown = 1;\n\nw = \"string\"; // no error\n\nw = {\n\n  runANonExistentMethod: () => {\n\n    console.log(\"I think therefore I am\");\n\n  }\n\n} as { runANonExistentMethod: () => void}\n\n// How can we avoid the error for the code commented out below when we don't know the type?\n\n// w.runANonExistentMethod(); // Error: Object is of type 'unknown'.\n\nif(typeof w === 'object' && w !== null) {\n\n  (w as { runANonExistentMethod: Function }).runANonExistentMethod();\n\n}\n\n// Although we have to cast multiple times we can do a check in the if to secure our type and have a safer casting\n\nTry it Yourself »\n\n When to use unknown:\n\n When working with data from external sources (APIs, user input, etc.)\n\n When you want to ensure type safety while still allowing flexibility\n\n When migrating from JavaScript to TypeScript in a type-safe way\n\n Type narrowing with unknown:\n\n You can narrow down the type of an unknown value using type guards:\n\n function processValue(value: unknown) {\n\n   if (typeof value === 'string') {\n\n     // value is now treated as string\n\n     console.log(value.toUpperCase());\n\n   } else if (Array.isArray(value)) {\n\n     // value is now treated as any[]\n\n     console.log(value.length);\n\n   }\n\n }",
+                "heading": "Type: unknown"
+            },
+            {
+                "content": "The never type represents the type of values that never occur.\n\nIt's used to indicate that something never happens or should never happen.\n\n Common use cases for never:\n\n Functions that never return (always throw an error or enter an infinite loop)\n\n Type guards that never pass type checking\n\n Exhaustiveness checking in discriminated unions\n\nExamples of never in action:\n\n 1. Function that never returns\n\n function throwError(message: string): never {\n\n   throw new Error(message);\n\n }\n\n 2. Exhaustiveness checking with discriminated unions\n\n type Shape = Circle | Square | Triangle;\n\n function getArea(shape: Shape): number {\n\n   switch (shape.kind) {\n\n     case 'circle':\n\n       return Math.PI * shape.radius ** 2;\n\n     case 'square':\n\n       return shape.sideLength ** 2;\n\n     default:\n\n       // TypeScript knows this should never happen\n\n       const _exhaustiveCheck: never = shape;\n\n       return _exhaustiveCheck;\n\n   }\n\n }\n\n 3. Basic never type (throws error when assigned)\n\n let x: never = true; // Error: Type 'boolean' is not assignable to type 'never'.\n\n Try it Yourself »\n\n When to use never:\n\n For functions that will never return a value\n\n In type guards that should never match\n\n For exhaustive type checking in switch statements\n\n In generic types to indicate certain cases are impossible",
+                "heading": "Type: never"
+            },
+            {
+                "content": "In TypeScript, both undefined and null have their own types, just like string or number.\n\nBy default, these types can be assigned to any other type, but this can be changed with TypeScript's strict null checks.\n\n Key points about undefined and null:\n\n undefined means a variable has been declared but not assigned a value\n\n null is an explicit assignment that represents no value or no object\n\n In TypeScript, both have their own types: undefined and null respectively\n\n With strictNullChecks enabled, you must explicitly handle these types\n\nBasic Usage\n\n let y: undefined = undefined;\n\n let z: null = null;\n\n Try it Yourself »\n\nOptional Parameters and Properties\n\n // Optional parameter (implicitly `string | undefined`)\n\n function greet(name?: string) {\n\n   return `Hello, ${name || 'stranger'}`;\n\n }\n\n // Optional property in an interface\n\n interface User {\n\n   name: string;\n\n   age?: number; // Same as `number | undefined`\n\n }\n\nNullish Coalescing and Optional Chaining\n\n // Nullish coalescing (??) - only uses default if value is null or undefined\n\n const value = input ?? 'default';\n\n // Optional chaining (?.) - safely access nested properties\n\n const street = user?.address?.street;\n\n Important: These types are most useful when strictNullChecks is enabled in your tsconfig.json file.\n\nThis ensures that null and undefined are only assignable to themselves and any.\n\n To enable strict null checks, add this to your tsconfig.json:\n\n {\n\n   \"compilerOptions\": {\n\n     \"strictNullChecks\": true\n\n   }\n\n }\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Type: undefined & null"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:08:37Z",
+        "subject": "TypeScript",
+        "title": "TypeScript Special Types"
+    },
+    {
+        "url": "https://www.w3schools.com/typescript/typescript_arrays.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "typescript_typescript_arrays",
+        "code_examples": [
+            {
+                "code": "const names: string[] = [];\n\nnames.push(\"Dylan\"); // no error\n\n// names.push(3); // Error: Argument of type 'number' is not assignable to parameter of type 'string'.",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "JavaScript & Frontend",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "TS HOME\nTS Introduction\nTS Get Started\nTS Simple Types\nTS Explicit & Inference\nTS Special Types\nTS Arrays\nTS Tuples\nTS Object Types\nTS Enums\nTS Aliases & Interfaces\nTS Union Types\nTS Functions\nTS Casting\nTS Classes\nTS Basic Generics\nTS Utility Types\nTS Keyof\nTS Null\nTS Definitely Typed\nTS 5 Updates\nTS Configuration\nTS with Node.js\nTS with React\nTS Tooling\nTS Advanced Types\nTS Type Guards\nTS Conditional Types\nTS Mapped Types\nTS Type Inference\nTS Literal Types\nTS Namespaces\nTS Index Signatures\nTS Declaration Merging\nTS Async Programming\nTS Decorators\nTS in JS Projects\nTS Migration\nTS Error Handling\nTS Best Practices",
+                "heading": "TypeScript tutorial"
+            },
+            {
+                "content": "TS Certificate",
+                "heading": "TypeScript Cert"
+            },
+            {
+                "content": "TS Editor\nTS Exercises\nTS Quiz\nTS Practice Problems\nTS Syllabus\nTS Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\nTypeScript Arrays\n\n❮ Previous\nNext ❯\n\nTypeScript has a specific syntax for typing arrays.\n\nRead more about arrays in our JavaScript Array chapter.\n\nExample\n\nconst names: string[] = [];\n\nnames.push(\"Dylan\"); // no error\n\n// names.push(3); // Error: Argument of type 'number' is not assignable to parameter of type 'string'.\n\nTry it Yourself »",
+                "heading": "TypeScript Exercises"
+            },
+            {
+                "content": "The readonly keyword can prevent arrays from being changed.\n\nExample\n\nconst names: readonly string[] = [\"Dylan\"];\n\nnames.push(\"Jack\"); // Error: Property 'push' does not exist on type 'readonly string[]'. \n\n// try removing the readonly modifier and see if it works?\n\nTry it Yourself »",
+                "heading": "Readonly"
+            },
+            {
+                "content": "TypeScript can infer the type of an array if it has values.\n\nExample\n\nconst numbers = [1, 2, 3]; // inferred to type number[]\n\nnumbers.push(4); // no error\n\n// comment line below out to see the successful assignment \n\nnumbers.push(\"2\"); // Error: Argument of type 'string' is not assignable to parameter of type 'number'.\n\nlet head: number = numbers[0]; // no error\n\nTry it Yourself »",
+                "heading": "Type Inference"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:08:38Z",
+        "subject": "TypeScript",
+        "title": "TypeScript Arrays"
+    },
+    {
+        "url": "https://www.w3schools.com/typescript/typescript_tuples.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "typescript_typescript_tuples",
+        "code_examples": [
+            {
+                "code": "// define our tuple\n\nlet ourTuple: [number, boolean, string];\n\n// initialize correctly\n\nourTuple = [5, false, 'Coding God was here'];",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\nconst graph: [number, number] = [55.2, 41.3];\n\nconst [x, y] = graph;",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "JavaScript & Frontend",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "TS HOME\nTS Introduction\nTS Get Started\nTS Simple Types\nTS Explicit & Inference\nTS Special Types\nTS Arrays\nTS Tuples\nTS Object Types\nTS Enums\nTS Aliases & Interfaces\nTS Union Types\nTS Functions\nTS Casting\nTS Classes\nTS Basic Generics\nTS Utility Types\nTS Keyof\nTS Null\nTS Definitely Typed\nTS 5 Updates\nTS Configuration\nTS with Node.js\nTS with React\nTS Tooling\nTS Advanced Types\nTS Type Guards\nTS Conditional Types\nTS Mapped Types\nTS Type Inference\nTS Literal Types\nTS Namespaces\nTS Index Signatures\nTS Declaration Merging\nTS Async Programming\nTS Decorators\nTS in JS Projects\nTS Migration\nTS Error Handling\nTS Best Practices",
+                "heading": "TypeScript tutorial"
+            },
+            {
+                "content": "TS Certificate",
+                "heading": "TypeScript Cert"
+            },
+            {
+                "content": "TS Editor\nTS Exercises\nTS Quiz\nTS Practice Problems\nTS Syllabus\nTS Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\n TypeScript Tuples\n\n ❮ Previous\n Next ❯",
+                "heading": "TypeScript Exercises"
+            },
+            {
+                "content": "A tuple is a typed array with a pre-defined length and types for each index.\n\nTuples are great because they allow each element in the array to be a known type of value.\n\nTo define a tuple, specify the type of each element in the array:\n\nExample\n\n// define our tuple\n\nlet ourTuple: [number, boolean, string];\n\n// initialize correctly\n\nourTuple = [5, false, 'Coding God was here'];\n\nTry it Yourself »\n\nAs you can see we have a number, boolean and a string.\n\nBut what happens if we try to set them in the wrong order:\n\nExample\n\n// define our tuple\n\nlet ourTuple: [number, boolean, string];\n\n// initialized incorrectly which throws an error\n\nourTuple = [false, 'Coding God was mistaken', 5];\n\nTry it Yourself »\n\n Even though we have a\n boolean,\n string,\n and number the order matters in our tuple and will throw an error.",
+                "heading": "Typed Arrays"
+            },
+            {
+                "content": "A good practice is to make your tuple readonly.\n\nTuples only have strongly defined types for the initial values:\n\nExample\n// define our tuple\n\nlet ourTuple: [number, boolean, string];\n\n// initialize correctly\n\nourTuple = [5, false, 'Coding God was here'];\n\n// We have no type safety in our tuple for indexes 3+\n\nourTuple.push('Something new and wrong');\n\nconsole.log(ourTuple);\n\nTry it Yourself »\n\nYou can see the new value.\n\nTuples only have strongly defined types for the initial values:\n\nExample\n// define our readonly tuple\n\nconst ourReadonlyTuple: readonly [number, boolean, string] = [5, true, 'The Real Coding God'];\n\n// throws error as it is readonly.\n\nourReadonlyTuple.push('Coding God took a day off');\n\nTry it Yourself »\n\nTo learn more about access modifiers like readonly go to our section on them here: TypeScript Classes.\n\nIf you have ever used React before you have worked with tuples more than likely.\n\nuseState returns a tuple of the value and a setter function.\n\nconst [firstName, setFirstName] = useState('Dylan') is a common example.\n\nBecause of the structure we know our first value in our list will be a certain value type in this case a string and the second value a function.",
+                "heading": "Readonly Tuple"
+            },
+            {
+                "content": "Named tuples allow us to provide context for our values at each index.\n\nExample\n\nconst graph: [x: number, y: number] = [55.2, 41.3];\n\nNamed tuples provide more context for what our index values represent.",
+                "heading": "Named Tuples"
+            },
+            {
+                "content": "Since tuples are arrays we can also destructure them.\n\nExample\n\nconst graph: [number, number] = [55.2, 41.3];\n\nconst [x, y] = graph;\n\nTo review destructuring check it out here.\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Destructuring Tuples"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:08:38Z",
+        "subject": "TypeScript",
+        "title": "TypeScript Tuples"
+    },
+    {
+        "url": "https://www.w3schools.com/typescript/typescript_object_types.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "typescript_typescript_object_types",
+        "code_examples": [
+            {
+                "code": "const car: { type: string, model: string, year: number } = {\n\n  type: \"Toyota\",\n\n  model: \"Corolla\",\n\n  year: 2009\n\n};",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "const car: { type: string, mileage?: number } = { // no error\n\n  type: \"Toyota\"\n\n};\n\ncar.mileage = 2000;",
+                "language": "typescript",
+                "heading": "Example with an optional property",
+                "tryit_url": null
+            }
+        ],
+        "category": "JavaScript & Frontend",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "TS HOME\nTS Introduction\nTS Get Started\nTS Simple Types\nTS Explicit & Inference\nTS Special Types\nTS Arrays\nTS Tuples\nTS Object Types\nTS Enums\nTS Aliases & Interfaces\nTS Union Types\nTS Functions\nTS Casting\nTS Classes\nTS Basic Generics\nTS Utility Types\nTS Keyof\nTS Null\nTS Definitely Typed\nTS 5 Updates\nTS Configuration\nTS with Node.js\nTS with React\nTS Tooling\nTS Advanced Types\nTS Type Guards\nTS Conditional Types\nTS Mapped Types\nTS Type Inference\nTS Literal Types\nTS Namespaces\nTS Index Signatures\nTS Declaration Merging\nTS Async Programming\nTS Decorators\nTS in JS Projects\nTS Migration\nTS Error Handling\nTS Best Practices",
+                "heading": "TypeScript tutorial"
+            },
+            {
+                "content": "TS Certificate",
+                "heading": "TypeScript Cert"
+            },
+            {
+                "content": "TS Editor\nTS Exercises\nTS Quiz\nTS Practice Problems\nTS Syllabus\nTS Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\n TypeScript Object Types\n\n❮ Previous\nNext ❯\n\nTypeScript has a specific syntax for typing objects.\n\nRead more about objects in our JavaScript Objects chapter.\n\nExample\n\nconst car: { type: string, model: string, year: number } = {\n\n  type: \"Toyota\",\n\n  model: \"Corolla\",\n\n  year: 2009\n\n};\n\nTry it Yourself »\n\nObject types like this can also be written separately, and even be reused, look at interfaces for more details.",
+                "heading": "TypeScript Exercises"
+            },
+            {
+                "content": "TypeScript can infer the types of properties based on their values.\n\nExample\n\nconst car = {\n\n  type: \"Toyota\",\n\n};\n\ncar.type = \"Ford\"; // no error\n\ncar.type = 2; // Error: Type 'number' is not assignable to type 'string'.\n\nTry it Yourself »",
+                "heading": "Type Inference"
+            },
+            {
+                "content": "Optional properties are properties that don't have to be defined in the object definition.\n\nExample without an optional property\n\nconst car: { type: string, mileage: number } = { // Error: Property 'mileage' is missing in type '{ type: string;\n}' but required in type '{ type: string; mileage: number; }'.\n\n  type: \"Toyota\",\n\n};\n\ncar.mileage = 2000;\n\nExample with an optional property\n\nconst car: { type: string, mileage?: number } = { // no error\n\n  type: \"Toyota\"\n\n};\n\ncar.mileage = 2000;\n\nTry it Yourself »",
+                "heading": "Optional Properties"
+            },
+            {
+                "content": "Index signatures can be used for objects without a defined list of properties.\n\nExample\n\nconst nameAgeMap: { [index: string]: number } = {};\n\nnameAgeMap.Jack = 25; // no error\n\nnameAgeMap.Mark = \"Fifty\"; // Error: Type 'string' is not assignable to type 'number'.\n\nTry it Yourself »\n\nIndex signatures like this one can also be expressed with utility types like Record<string, number>.\n\nLearn more about utility types like this in our TypeScript Utility Types chapter.\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Index Signatures"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:08:38Z",
+        "subject": "TypeScript",
+        "title": "TypeScript Object Types"
+    },
+    {
+        "url": "https://www.w3schools.com/typescript/typescript_enums.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "typescript_typescript_enums",
+        "code_examples": [
+            {
+                "code": "enum CardinalDirections {\n\n  North,\n\n  East,\n\n  South,\n\n  West\n\n}\n\nlet currentDirection = CardinalDirections.North;\n\n// logs 0\n\nconsole.log(currentDirection);\n\n// throws error as 'North' is not a valid enum\n\ncurrentDirection = 'North'; // Error: \"North\" is not assignable to type 'CardinalDirections'.",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "JavaScript & Frontend",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "TS HOME\nTS Introduction\nTS Get Started\nTS Simple Types\nTS Explicit & Inference\nTS Special Types\nTS Arrays\nTS Tuples\nTS Object Types\nTS Enums\nTS Aliases & Interfaces\nTS Union Types\nTS Functions\nTS Casting\nTS Classes\nTS Basic Generics\nTS Utility Types\nTS Keyof\nTS Null\nTS Definitely Typed\nTS 5 Updates\nTS Configuration\nTS with Node.js\nTS with React\nTS Tooling\nTS Advanced Types\nTS Type Guards\nTS Conditional Types\nTS Mapped Types\nTS Type Inference\nTS Literal Types\nTS Namespaces\nTS Index Signatures\nTS Declaration Merging\nTS Async Programming\nTS Decorators\nTS in JS Projects\nTS Migration\nTS Error Handling\nTS Best Practices",
+                "heading": "TypeScript tutorial"
+            },
+            {
+                "content": "TS Certificate",
+                "heading": "TypeScript Cert"
+            },
+            {
+                "content": "TS Editor\nTS Exercises\nTS Quiz\nTS Practice Problems\nTS Syllabus\nTS Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\n TypeScript Enums\n\n❮ Previous\nNext ❯\n\nAn enum is a special \"class\" that represents a group of constants (unchangeable variables).\n\nEnums come in two flavors string and numeric.\n\nLet's start with numeric.",
+                "heading": "TypeScript Exercises"
+            },
+            {
+                "content": "By default, enums will initialize the first value to 0 and add 1 to each additional value:\n\nExample\n\nenum CardinalDirections {\n\n  North,\n\n  East,\n\n  South,\n\n  West\n\n}\n\nlet currentDirection = CardinalDirections.North;\n\n// logs 0\n\nconsole.log(currentDirection);\n\n// throws error as 'North' is not a valid enum\n\ncurrentDirection = 'North'; // Error: \"North\" is not assignable to type 'CardinalDirections'.\n\nTry it Yourself »",
+                "heading": "Numeric Enums - Default"
+            },
+            {
+                "content": "You can set the value of the first numeric enum and have it auto increment from that:\n\nExample\n\nenum CardinalDirections {\n\n  North = 1,\n\n  East,\n\n  South,\n\n  West\n\n}\n\n// logs 1\n\nconsole.log(CardinalDirections.North);\n\n// logs 4\n\nconsole.log(CardinalDirections.West);\n\nTry it Yourself »",
+                "heading": "Numeric Enums - Initialized"
+            },
+            {
+                "content": "You can assign unique number values for each enum value.\n\nThen the values will not be incremented automatically:\n\nExample\n\nenum StatusCodes {\n\n  NotFound = 404,\n\n  Success = 200,\n\n  Accepted = 202,\n\n  BadRequest = 400\n\n}\n\n// logs 404\n\nconsole.log(StatusCodes.NotFound);\n\n// logs 200\n\nconsole.log(StatusCodes.Success);\n\nTry it Yourself »",
+                "heading": "Numeric Enums - Fully Initialized"
+            },
+            {
+                "content": "Enums can also contain strings.\n\nThis is more common than numeric enums, because of their readability and intent.\n\nExample\n\nenum CardinalDirections {\n\n  North = 'North',\n\n  East = \"East\",\n\n  South = \"South\",\n\n  West = \"West\"\n\n};\n\n// logs \"North\"\n\nconsole.log(CardinalDirections.North);\n\n// logs \"West\"\n\nconsole.log(CardinalDirections.West);\n\nTry it Yourself »\n\nTechnically, you can mix and match string and numeric enum values, but it is recommended not to do so.\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "String Enums"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:08:38Z",
+        "subject": "TypeScript",
+        "title": "TypeScript Enums"
+    },
+    {
+        "url": "https://www.w3schools.com/typescript/typescript_aliases_and_interfaces.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "typescript_typescript_aliases_and_interfaces",
+        "code_examples": [
+            {
+                "code": "type CarYear = number\n\ntype CarType = string\n\ntype CarModel = string\n\ntype Car = {\n\n  year: CarYear,\n\n  type: CarType,\n\n  model: CarModel\n\n}\n\nconst carYear: CarYear = 2001\n\nconst carType: CarType = \"Toyota\"\n\nconst carModel: CarModel = \"Corolla\"\n\nconst car: Car = {\n\n  year: carYear,\n\n  type: carType,\n\n  model: carModel\n\n};",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "interface Rectangle {\n\n  height: number,\n\n  width: number\n\n}\n\nconst rectangle: Rectangle = {\n\n  height: 20,\n\n  width: 10\n\n};",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "interface Rectangle {\n\n  height: number,\n\n  width: number\n\n}\n\ninterface ColoredRectangle extends Rectangle {\n\n  color: string\n\n}\n\nconst coloredRectangle: ColoredRectangle = {\n\n  height: 20,\n\n  width: 10,\n\n  color: \"red\"\n\n};",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "JavaScript & Frontend",
+        "notes_and_tips": [
+            "Extending an interface means you are creating a new interface with the same properties as the original, plus something new."
+        ],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "TS HOME\nTS Introduction\nTS Get Started\nTS Simple Types\nTS Explicit & Inference\nTS Special Types\nTS Arrays\nTS Tuples\nTS Object Types\nTS Enums\nTS Aliases & Interfaces\nTS Union Types\nTS Functions\nTS Casting\nTS Classes\nTS Basic Generics\nTS Utility Types\nTS Keyof\nTS Null\nTS Definitely Typed\nTS 5 Updates\nTS Configuration\nTS with Node.js\nTS with React\nTS Tooling\nTS Advanced Types\nTS Type Guards\nTS Conditional Types\nTS Mapped Types\nTS Type Inference\nTS Literal Types\nTS Namespaces\nTS Index Signatures\nTS Declaration Merging\nTS Async Programming\nTS Decorators\nTS in JS Projects\nTS Migration\nTS Error Handling\nTS Best Practices",
+                "heading": "TypeScript tutorial"
+            },
+            {
+                "content": "TS Certificate",
+                "heading": "TypeScript Cert"
+            },
+            {
+                "content": "TS Editor\nTS Exercises\nTS Quiz\nTS Practice Problems\nTS Syllabus\nTS Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\n TypeScript Type Aliases and Interfaces\n\n❮ Previous\nNext ❯\n\nTypeScript allows types to be defined separately from the variables that use them.\n\nAliases and Interfaces allows types to be easily shared between different variables/objects.",
+                "heading": "TypeScript Exercises"
+            },
+            {
+                "content": "Type Aliases allow defining types with a custom name (an Alias).\n\nType Aliases can be used for primitives like string or more complex types such as objects and arrays:\n\nExample\n\ntype CarYear = number\n\ntype CarType = string\n\ntype CarModel = string\n\ntype Car = {\n\n  year: CarYear,\n\n  type: CarType,\n\n  model: CarModel\n\n}\n\nconst carYear: CarYear = 2001\n\nconst carType: CarType = \"Toyota\"\n\nconst carModel: CarModel = \"Corolla\"\n\nconst car: Car = {\n\n  year: carYear,\n\n  type: carType,\n\n  model: carModel\n\n};\n\nTry it Yourself »\n\nExample: Union and Intersection Types\n\ntype Animal = { name: string };\n\ntype Bear = Animal & { honey: boolean };\n\nconst bear: Bear = { name: \"Winnie\", honey: true };\n\ntype Status = \"success\" | \"error\";\n\nlet response: Status = \"success\";",
+                "heading": "Type Aliases"
+            },
+            {
+                "content": "Interfaces are similar to type aliases, except they only apply to object types.\n\nExample\n\ninterface Rectangle {\n\n  height: number,\n\n  width: number\n\n}\n\nconst rectangle: Rectangle = {\n\n  height: 20,\n\n  width: 10\n\n};\n\nTry it Yourself »\n\nExample: Interface Merging\n\ninterface Animal { name: string; }\ninterface Animal { age: number; }\nconst dog: Animal = { name: \"Fido\", age: 5 };",
+                "heading": "Interfaces"
+            },
+            {
+                "content": "Extending: Both can be extended, but interfaces support declaration merging.\n\nUnions/Intersections: Only type aliases support union and intersection types.\n\nImplements: Classes can implement either.\n\nRecommendation: Use interface for objects, type for everything else.\n\nBest Practices:\n\nUse interface for defining object shapes and public APIs.\n\nUse type for unions, intersections, and primitives.\n\nFavor composition over inheritance for types.\n\nDocument your types and interfaces for clarity.\n\nCommon Pitfalls:\n\nUsing type when you need declaration merging (use interface).\n\nOvercomplicating types-keep them simple and focused.\n\nForgetting to update types/interfaces as code evolves.",
+                "heading": "Type vs Interface: Key Differences"
+            },
+            {
+                "content": "Interfaces can extend each other's definition.\n\nExtending an interface means you are creating a new interface with the same properties as the original, plus something new.\n\nExample\n\ninterface Rectangle {\n\n  height: number,\n\n  width: number\n\n}\n\ninterface ColoredRectangle extends Rectangle {\n\n  color: string\n\n}\n\nconst coloredRectangle: ColoredRectangle = {\n\n  height: 20,\n\n  width: 10,\n\n  color: \"red\"\n\n};\n\nTry it Yourself »\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Extending Interfaces"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:08:39Z",
+        "subject": "TypeScript",
+        "title": "TypeScript Type Aliases and Interfaces"
+    },
+    {
+        "url": "https://www.w3schools.com/typescript/typescript_union_types.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "typescript_typescript_union_types",
+        "code_examples": [
+            {
+                "code": "function printStatusCode(code: string | number) {\n\n  console.log(`My status code is ${code}.`)\n\n}\n\nprintStatusCode(404);\n\nprintStatusCode('404');",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "JavaScript & Frontend",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "TS HOME\nTS Introduction\nTS Get Started\nTS Simple Types\nTS Explicit & Inference\nTS Special Types\nTS Arrays\nTS Tuples\nTS Object Types\nTS Enums\nTS Aliases & Interfaces\nTS Union Types\nTS Functions\nTS Casting\nTS Classes\nTS Basic Generics\nTS Utility Types\nTS Keyof\nTS Null\nTS Definitely Typed\nTS 5 Updates\nTS Configuration\nTS with Node.js\nTS with React\nTS Tooling\nTS Advanced Types\nTS Type Guards\nTS Conditional Types\nTS Mapped Types\nTS Type Inference\nTS Literal Types\nTS Namespaces\nTS Index Signatures\nTS Declaration Merging\nTS Async Programming\nTS Decorators\nTS in JS Projects\nTS Migration\nTS Error Handling\nTS Best Practices",
+                "heading": "TypeScript tutorial"
+            },
+            {
+                "content": "TS Certificate",
+                "heading": "TypeScript Cert"
+            },
+            {
+                "content": "TS Editor\nTS Exercises\nTS Quiz\nTS Practice Problems\nTS Syllabus\nTS Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\n TypeScript Union Types\n\n❮ Previous\nNext ❯\n\nUnion types are used when a value can be more than a single type.\n\nSuch as when a property would be string or number.",
+                "heading": "TypeScript Exercises"
+            },
+            {
+                "content": "Using the | we are saying our parameter is a string or number:\n\nExample\n\nfunction printStatusCode(code: string | number) {\n\n  console.log(`My status code is ${code}.`)\n\n}\n\nprintStatusCode(404);\n\nprintStatusCode('404');\n\nTry it Yourself »",
+                "heading": "Union | (OR)"
+            },
+            {
+                "content": "Note: you need to know what your type is when union types are being used to avoid type errors:\n\nExample\n\nfunction printStatusCode(code: string | number) {\n\n  console.log(`My status code is ${code.toUpperCase()}.`) // error: Property 'toUpperCase' does not exist on type 'string | number'. Property 'toUpperCase' does not exist on type 'number'\n\n}\n\nIn our example we are having an issue invoking toUpperCase() as its a\nstring method and number doesn't have access\nto it.\n\nTry it Yourself »\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Union Type Errors"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:08:39Z",
+        "subject": "TypeScript",
+        "title": "TypeScript Union Types"
+    },
+    {
+        "url": "https://www.w3schools.com/typescript/typescript_functions.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "typescript_typescript_functions",
+        "code_examples": [
+            {
+                "code": "// the `: number` here specifies that this function returns a number\n\nfunction getTime(): number {\n\n  return new Date().getTime();\n\n}",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "JavaScript & Frontend",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "TS HOME\nTS Introduction\nTS Get Started\nTS Simple Types\nTS Explicit & Inference\nTS Special Types\nTS Arrays\nTS Tuples\nTS Object Types\nTS Enums\nTS Aliases & Interfaces\nTS Union Types\nTS Functions\nTS Casting\nTS Classes\nTS Basic Generics\nTS Utility Types\nTS Keyof\nTS Null\nTS Definitely Typed\nTS 5 Updates\nTS Configuration\nTS with Node.js\nTS with React\nTS Tooling\nTS Advanced Types\nTS Type Guards\nTS Conditional Types\nTS Mapped Types\nTS Type Inference\nTS Literal Types\nTS Namespaces\nTS Index Signatures\nTS Declaration Merging\nTS Async Programming\nTS Decorators\nTS in JS Projects\nTS Migration\nTS Error Handling\nTS Best Practices",
+                "heading": "TypeScript tutorial"
+            },
+            {
+                "content": "TS Certificate",
+                "heading": "TypeScript Cert"
+            },
+            {
+                "content": "TS Editor\nTS Exercises\nTS Quiz\nTS Practice Problems\nTS Syllabus\nTS Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\n TypeScript Functions\n\n❮ Previous\nNext ❯\n\nTypeScript has a specific syntax for typing function parameters and return values.\n\nRead more about functions here.",
+                "heading": "TypeScript Exercises"
+            },
+            {
+                "content": "The type of the value returned by the function can be explicitly defined.\n\nExample\n\n// the `: number` here specifies that this function returns a number\n\nfunction getTime(): number {\n\n  return new Date().getTime();\n\n}\n\nTry it Yourself »\n\nIf no return type is defined, TypeScript will attempt to infer it through the types of the variables or expressions returned.",
+                "heading": "Return Type"
+            },
+            {
+                "content": "The type void can be used to indicate a function doesn't return any value.\n\nExample\n\nfunction printHello(): void {\n\n  console.log('Hello!');\n\n}\n\nTry it Yourself »",
+                "heading": "Void Return Type"
+            },
+            {
+                "content": "Function parameters are typed with a similar syntax as variable declarations.\n\nExample\n\nfunction multiply(a: number, b: number) {\n\n  return a * b;\n\n}\n\nTry it Yourself »\n\nIf no parameter type is defined, TypeScript will default to using any, unless additional type information is available as shown in the Default Parameters and Type Alias sections below.",
+                "heading": "Parameters"
+            },
+            {
+                "content": "By default TypeScript will assume all parameters are required, but they can be explicitly marked as optional.\n\nExample\n\n// the `?` operator here marks parameter `c` as optional\n\nfunction add(a: number, b: number, c?: number) {\n\n  return a + b + (c || 0);\n\n}\n\nTry it Yourself »",
+                "heading": "Optional Parameters"
+            },
+            {
+                "content": "For parameters with default values, the default value goes after the type annotation:\n\nExample\n\nfunction pow(value: number, exponent: number = 10) {\n\n  return value ** exponent;\n\n}\n\nTry it Yourself »\n\nTypeScript can also infer the type from the default value.",
+                "heading": "Default Parameters"
+            },
+            {
+                "content": "Typing named parameters follows the same pattern as typing normal parameters.\n\nExample\n\nfunction divide({ dividend, divisor }: { dividend: number, divisor: number }) {\n\n  return dividend / divisor;\n\n}\n\nTry it Yourself »",
+                "heading": "Named Parameters"
+            },
+            {
+                "content": "Rest parameters can be typed like normal parameters, but the type must be an array as rest parameters are always arrays.\n\nExample\n\nfunction add(a: number, b: number, ...rest: number[]) {\n\n  return a + b + rest.reduce((p, c) => p + c, 0);\n\n}\n\nTry it Yourself »",
+                "heading": "Rest Parameters"
+            },
+            {
+                "content": "Function types can be specified separately from functions with type aliases.\n\nThese types are written similarly to arrow functions, read more about arrow functions here.\n\nExample\n\ntype Negate = (value: number) => number;\n\n// in this function, the parameter `value` automatically gets assigned the type `number` from the type `Negate`\n\nconst negateFunction: Negate = (value) => value * -1;\n\nTry it Yourself »\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Type Alias"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:08:39Z",
+        "subject": "TypeScript",
+        "title": "TypeScript Functions"
+    },
+    {
+        "url": "https://www.w3schools.com/typescript/typescript_casting.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "typescript_typescript_casting",
+        "code_examples": [
+            {
+                "code": "let x: unknown = 'hello';\n\nconsole.log((x as string).length);",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "JavaScript & Frontend",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "TS HOME\nTS Introduction\nTS Get Started\nTS Simple Types\nTS Explicit & Inference\nTS Special Types\nTS Arrays\nTS Tuples\nTS Object Types\nTS Enums\nTS Aliases & Interfaces\nTS Union Types\nTS Functions\nTS Casting\nTS Classes\nTS Basic Generics\nTS Utility Types\nTS Keyof\nTS Null\nTS Definitely Typed\nTS 5 Updates\nTS Configuration\nTS with Node.js\nTS with React\nTS Tooling\nTS Advanced Types\nTS Type Guards\nTS Conditional Types\nTS Mapped Types\nTS Type Inference\nTS Literal Types\nTS Namespaces\nTS Index Signatures\nTS Declaration Merging\nTS Async Programming\nTS Decorators\nTS in JS Projects\nTS Migration\nTS Error Handling\nTS Best Practices",
+                "heading": "TypeScript tutorial"
+            },
+            {
+                "content": "TS Certificate",
+                "heading": "TypeScript Cert"
+            },
+            {
+                "content": "TS Editor\nTS Exercises\nTS Quiz\nTS Practice Problems\nTS Syllabus\nTS Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\n TypeScript Casting\n\n❮ Previous\nNext ❯\n\nThere are times when working with types where it's necessary to override the type of a variable, such as when incorrect types are provided by a library.\n\nCasting is the process of overriding a type.",
+                "heading": "TypeScript Exercises"
+            },
+            {
+                "content": "A straightforward way to cast a variable is using the as keyword,\nwhich will directly change the type of the given variable.\n\nExample\n\nlet x: unknown = 'hello';\n\nconsole.log((x as string).length);\n\nTry it Yourself »\n\nCasting doesn't actually change the type of the data within the variable,\nfor example the following code will not work as expected since the variable x still holds a number.\n\nlet x: unknown = 4;\n\nconsole.log((x as string).length); // prints undefined since numbers don't have a length\n\nTypeScript will still attempt to typecheck casts to prevent casts that don't seem correct,\nfor example the following will throw a type error since TypeScript knows casting a string to a number doesn't make sense\nwithout converting the data:\n\nconsole.log((4 as string).length); // Error: Conversion of type 'number' to type 'string' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.\n\nThe Force casting section below covers how to override this.",
+                "heading": "Casting with as"
+            },
+            {
+                "content": "Using <> works the same as casting with as.\n\nExample\n\nlet x: unknown = 'hello';\n\nconsole.log((<string>x).length);\n\nTry it Yourself »\n\nThis type of casting will not work with TSX, such as when working on React files.",
+                "heading": "Casting with <>"
+            },
+            {
+                "content": "To override type errors that TypeScript may throw when casting, first cast to unknown, then to the target type.\n\nExample\n\nlet x = 'hello';\n\nconsole.log(((x as unknown) as number).length); // x is not actually a number so this will return undefined\n\nTry it Yourself »\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Force casting"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:08:39Z",
+        "subject": "TypeScript",
+        "title": "TypeScript Casting"
+    },
+    {
+        "url": "https://www.w3schools.com/typescript/typescript_classes.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "typescript_typescript_classes",
+        "code_examples": [
+            {
+                "code": "class Person {\n\n  name: string;\n\n}\n\nconst person = new Person();\n\nperson.name = \"Jane\";",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "JavaScript & Frontend",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "TS HOME\nTS Introduction\nTS Get Started\nTS Simple Types\nTS Explicit & Inference\nTS Special Types\nTS Arrays\nTS Tuples\nTS Object Types\nTS Enums\nTS Aliases & Interfaces\nTS Union Types\nTS Functions\nTS Casting\nTS Classes\nTS Basic Generics\nTS Utility Types\nTS Keyof\nTS Null\nTS Definitely Typed\nTS 5 Updates\nTS Configuration\nTS with Node.js\nTS with React\nTS Tooling\nTS Advanced Types\nTS Type Guards\nTS Conditional Types\nTS Mapped Types\nTS Type Inference\nTS Literal Types\nTS Namespaces\nTS Index Signatures\nTS Declaration Merging\nTS Async Programming\nTS Decorators\nTS in JS Projects\nTS Migration\nTS Error Handling\nTS Best Practices",
+                "heading": "TypeScript tutorial"
+            },
+            {
+                "content": "TS Certificate",
+                "heading": "TypeScript Cert"
+            },
+            {
+                "content": "TS Editor\nTS Exercises\nTS Quiz\nTS Practice Problems\nTS Syllabus\nTS Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\n TypeScript Classes\n\n❮ Previous\nNext ❯\n\nTypeScript adds types and visibility modifiers to JavaScript classes.\n\nLearn more about JavaScript classes here.",
+                "heading": "TypeScript Exercises"
+            },
+            {
+                "content": "The members of a class (properties & methods) are typed using type annotations, similar to variables.\n\nExample\n\nclass Person {\n\n  name: string;\n\n}\n\nconst person = new Person();\n\nperson.name = \"Jane\";\n\nTry it Yourself »",
+                "heading": "Members: Types"
+            },
+            {
+                "content": "Class members can also be given special modifiers that affect visibility.\n\nThere are three main visibility modifiers in TypeScript.\n\npublic - (default) allows access to the class member from anywhere\n\nprivate - only allows access to the class member from within the class\n\nprotected - allows access to the class member from itself and any classes that inherit it, which is covered in the inheritance section below\n\nExample\n\nclass Person {\n\n  private name: string;\n\n  public constructor(name: string) {\n\n    this.name = name;\n\n  }\n\n  public getName(): string {\n\n    return this.name;\n\n  }\n\n}\n\nconst person = new Person(\"Jane\");\n\nconsole.log(person.getName()); // no error\n\nconsole.log(person.name); // Error: Property 'name' is private and only accessible within class 'Person'.\n\nTry it Yourself »\n\nThe this keyword in a class usually refers to the instance of the class.\nRead more about this here.",
+                "heading": "Members: Visibility"
+            },
+            {
+                "content": "TypeScript provides a convenient way to define class members in the constructor, by adding a visibility modifier to the parameter.\n\nExample\n\nclass Person {\n\n  // name is a private member variable\n\n  public constructor(private name: string) {}\n\n  public getName(): string {\n\n    return this.name;\n\n  }\n\n}\n\nconst person = new Person(\"Jane\");\n\nconsole.log(person.getName());\n\nTry it Yourself »",
+                "heading": "Parameter Properties"
+            },
+            {
+                "content": "Similar to arrays, the readonly keyword can prevent class members from being changed.\n\nExample\n\nclass Person {\n\n  private readonly name: string;\n\n  public constructor(name: string) {\n\n    // name cannot be changed after this initial definition, which has to be either at its declaration or in the constructor.\n\n    this.name = name;\n\n  }\n\n  public getName(): string {\n\n    return this.name;\n\n  }\n\n}\n\nconst person = new Person(\"Jane\");\n\nconsole.log(person.getName());\n\nTry it Yourself »",
+                "heading": "Readonly"
+            },
+            {
+                "content": "Interfaces (covered here) can be used to define the type a class must follow through the implements keyword.\n\nExample\n\ninterface Shape {\n\n  getArea: () => number;\n\n}\n\nclass Rectangle implements Shape {\n\n  public constructor(protected readonly width: number, protected readonly height: number) {}\n\n  public getArea(): number {\n\n    return this.width * this.height;\n\n  }\n\n}\n\nTry it Yourself »\n\nA class can implement multiple interfaces by listing each one after implements, separated by a comma like so: class Rectangle implements Shape, Colored {",
+                "heading": "Inheritance: Implements"
+            },
+            {
+                "content": "Classes can extend each other through the extends keyword.\n\nA class can only extend one other class.\n\nExample\n\ninterface Shape {\n\n  getArea: () => number;\n\n}\n\nclass Rectangle implements Shape {\n\n  public constructor(protected readonly width: number, protected readonly height: number) {}\n\n  public getArea(): number {\n\n    return this.width * this.height;\n\n  }\n\n}\n\nclass Square extends Rectangle {\n\n  public constructor(width: number) {\n\n    super(width, width);\n\n  }\n\n  // getArea gets inherited from Rectangle\n\n}\n\nTry it Yourself »",
+                "heading": "Inheritance: Extends"
+            },
+            {
+                "content": "When a class extends another class, it can replace the members of the parent class with the same name.\n\nNewer versions of TypeScript allow explicitly marking this with the override keyword.\n\nExample\n\ninterface Shape {\n\n  getArea: () => number;\n\n}\n\nclass Rectangle implements Shape {\n\n  // using protected for these members allows access from classes that extend from this class, such as Square\n\n  public constructor(protected readonly width: number, protected readonly height: number) {}\n\n  public getArea(): number {\n\n    return this.width * this.height;\n\n  }\n\n  public toString(): string {\n\n    return `Rectangle[width=${this.width}, height=${this.height}]`;\n\n  }\n\n}\n\nclass Square extends Rectangle {\n\n  public constructor(width: number) {\n\n    super(width, width);\n\n  }\n\n  // this toString replaces the toString from Rectangle\n\n  public override toString(): string {\n\n    return `Square[width=${this.width}]`;\n\n  }\n\n}\n\nTry it Yourself »\n\nBy default the override keyword is optional when overriding a method, and only helps to prevent accidentally overriding a method that does not exist.\n\nUse the setting noImplicitOverride to force it to be used when overriding.",
+                "heading": "Override"
+            },
+            {
+                "content": "Classes can be written in a way that allows them to be used as a base class for other classes without having to implement all the members.\n\nThis is done by using the abstract keyword.\n\nMembers that are left unimplemented also use the abstract keyword.\n\nExample\n\nabstract class Polygon {\n\n  public abstract getArea(): number;\n\n  public toString(): string {\n\n    return `Polygon[area=${this.getArea()}]`;\n\n  }\n\n}\n\nclass Rectangle extends Polygon {\n\n  public constructor(protected readonly width: number, protected readonly height: number) {\n\n    super();\n\n  }\n\n  public getArea(): number {\n\n    return this.width * this.height;\n\n  }\n\n}\n\nTry it Yourself »\n\nAbstract classes cannot be directly instantiated, as they do not have all their members implemented.\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Abstract Classes"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:08:39Z",
+        "subject": "TypeScript",
+        "title": "TypeScript Classes"
+    },
+    {
+        "url": "https://www.w3schools.com/typescript/typescript_basic_generics.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "typescript_typescript_basic_generics",
+        "code_examples": [
+            {
+                "code": "function createPair<S, T>(v1: S, v2: T): [S, T] {\n\n  return [v1, v2];\n\n}\n\nconsole.log(createPair<string, number>('hello', 42)); // ['hello', 42]",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\nclass NamedValue<T = string> {\n\n  private _value: T | undefined;\n\n  constructor(private name: string) {}\n\n  public setValue(value: T) {\n\n    this._value = value;\n\n  }\n\n  public getValue(): T | undefined {\n\n    return this._value;\n\n  }\n\n  public toString(): string {\n\n    return `${this.name}: ${this._value}`;\n\n  }\n\n}\n\nlet value = new NamedValue('myNumber');\n\nvalue.setValue('myValue');\n\nconsole.log(value.toString()); // myNumber: myValue",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\nfunction createLoggedPair<S extends string | number, T extends string | number>(v1: S, v2: T): [S, T] {\n\n  console.log(`creating pair: v1='${v1}', v2='${v2}'`);\n\n  return [v1, v2];\n\n}",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "JavaScript & Frontend",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "TS HOME\nTS Introduction\nTS Get Started\nTS Simple Types\nTS Explicit & Inference\nTS Special Types\nTS Arrays\nTS Tuples\nTS Object Types\nTS Enums\nTS Aliases & Interfaces\nTS Union Types\nTS Functions\nTS Casting\nTS Classes\nTS Basic Generics\nTS Utility Types\nTS Keyof\nTS Null\nTS Definitely Typed\nTS 5 Updates\nTS Configuration\nTS with Node.js\nTS with React\nTS Tooling\nTS Advanced Types\nTS Type Guards\nTS Conditional Types\nTS Mapped Types\nTS Type Inference\nTS Literal Types\nTS Namespaces\nTS Index Signatures\nTS Declaration Merging\nTS Async Programming\nTS Decorators\nTS in JS Projects\nTS Migration\nTS Error Handling\nTS Best Practices",
+                "heading": "TypeScript tutorial"
+            },
+            {
+                "content": "TS Certificate",
+                "heading": "TypeScript Cert"
+            },
+            {
+                "content": "TS Editor\nTS Exercises\nTS Quiz\nTS Practice Problems\nTS Syllabus\nTS Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\n TypeScript Basic Generics\n\n❮ Previous\nNext ❯\n\nGenerics allow creating 'type variables' which can be used to create classes, functions & type aliases that don't need to explicitly define the types that they use.\n\nGenerics make it easier to write reusable code.",
+                "heading": "TypeScript Exercises"
+            },
+            {
+                "content": "Generics with functions help create more general functions that accurately represent the input and return types.\n\nExample\n\nfunction createPair<S, T>(v1: S, v2: T): [S, T] {\n\n  return [v1, v2];\n\n}\n\nconsole.log(createPair<string, number>('hello', 42)); // ['hello', 42]\n\nTry it Yourself »\n\nTypeScript can also infer the type of the generic parameter from the function parameters.",
+                "heading": "Functions"
+            },
+            {
+                "content": "Generics can be used to create generalized classes, like Map.\n\nExample\n\nclass NamedValue<T> {\n\n  private _value: T | undefined;\n\n  constructor(private name: string) {}\n\n  public setValue(value: T) {\n\n    this._value = value;\n\n  }\n\n  public getValue(): T | undefined {\n\n    return this._value;\n\n  }\n\n  public toString(): string {\n\n    return `${this.name}: ${this._value}`;\n\n  }\n\n}\n\nlet value = new NamedValue<number>('myNumber');\n\nvalue.setValue(10);\n\nconsole.log(value.toString()); // myNumber: 10\n\nTry it Yourself »\n\nTypeScript can also infer the type of the generic parameter if it's used in a constructor parameter.",
+                "heading": "Classes"
+            },
+            {
+                "content": "Generics in type aliases allow creating types that are more reusable.\n\nExample\n\ntype Wrapped<T> = { value: T };\n\nconst wrappedValue: Wrapped<number> = { value: 10 };\n\nThis also works with interfaces with the following syntax: interface Wrapped<T> {",
+                "heading": "Type Aliases"
+            },
+            {
+                "content": "Generics can be assigned default values which apply if no other value is specified or inferred.\n\nExample\n\nclass NamedValue<T = string> {\n\n  private _value: T | undefined;\n\n  constructor(private name: string) {}\n\n  public setValue(value: T) {\n\n    this._value = value;\n\n  }\n\n  public getValue(): T | undefined {\n\n    return this._value;\n\n  }\n\n  public toString(): string {\n\n    return `${this.name}: ${this._value}`;\n\n  }\n\n}\n\nlet value = new NamedValue('myNumber');\n\nvalue.setValue('myValue');\n\nconsole.log(value.toString()); // myNumber: myValue",
+                "heading": "Default Value"
+            },
+            {
+                "content": "Constraints can be added to generics to limit what's allowed.\n\nThe constraints make it possible to rely on a more specific type when using the generic type.\n\nExample\n\nfunction createLoggedPair<S extends string | number, T extends string | number>(v1: S, v2: T): [S, T] {\n\n  console.log(`creating pair: v1='${v1}', v2='${v2}'`);\n\n  return [v1, v2];\n\n}\n\nThis can be combined with a default value.\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Extends"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:08:39Z",
+        "subject": "TypeScript",
+        "title": "TypeScript Basic Generics"
+    },
+    {
+        "url": "https://www.w3schools.com/typescript/typescript_utility_types.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "typescript_typescript_utility_types",
+        "code_examples": [
+            {
+                "code": "interface Point {\n\n  x: number;\n\n  y: number;\n\n}\n\nlet pointPart: Partial<Point> = {}; // `Partial` allows x and y to be optional\npointPart.x = 10;",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "JavaScript & Frontend",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "TS HOME\nTS Introduction\nTS Get Started\nTS Simple Types\nTS Explicit & Inference\nTS Special Types\nTS Arrays\nTS Tuples\nTS Object Types\nTS Enums\nTS Aliases & Interfaces\nTS Union Types\nTS Functions\nTS Casting\nTS Classes\nTS Basic Generics\nTS Utility Types\nTS Keyof\nTS Null\nTS Definitely Typed\nTS 5 Updates\nTS Configuration\nTS with Node.js\nTS with React\nTS Tooling\nTS Advanced Types\nTS Type Guards\nTS Conditional Types\nTS Mapped Types\nTS Type Inference\nTS Literal Types\nTS Namespaces\nTS Index Signatures\nTS Declaration Merging\nTS Async Programming\nTS Decorators\nTS in JS Projects\nTS Migration\nTS Error Handling\nTS Best Practices",
+                "heading": "TypeScript tutorial"
+            },
+            {
+                "content": "TS Certificate",
+                "heading": "TypeScript Cert"
+            },
+            {
+                "content": "TS Editor\nTS Exercises\nTS Quiz\nTS Practice Problems\nTS Syllabus\nTS Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\n TypeScript Utility Types\n\n❮ Previous\nNext ❯\n\nTypeScript comes with a large number of types that can help with some common type manipulation, usually referred to as utility types.\n\nThis chapter covers the most popular utility types.",
+                "heading": "TypeScript Exercises"
+            },
+            {
+                "content": "Partial changes all the properties in an object to be optional.\n\nExample\n\ninterface Point {\n\n  x: number;\n\n  y: number;\n\n}\n\nlet pointPart: Partial<Point> = {}; // `Partial` allows x and y to be optional\npointPart.x = 10;\n\nTry it Yourself »",
+                "heading": "Partial"
+            },
+            {
+                "content": "Required changes all the properties in an object to be required.\n\nExample\n\ninterface Car {\n\n  make: string;\n\n  model: string;\n\n  mileage?: number;\n\n}\n\nlet myCar: Required<Car> = {\n\n  make: 'Ford',\n\n  model: 'Focus',\n\n  mileage: 12000 // `Required` forces mileage to be defined\n\n};\n\nTry it Yourself »",
+                "heading": "Required"
+            },
+            {
+                "content": "Record is a shortcut to defining an object type with a specific key type and value type.\n\nExample\n\nconst nameAgeMap: Record<string, number> = {\n\n  'Alice': 21,\n\n  'Bob': 25\n\n};\n\nTry it Yourself »\n\nRecord<string, number> is equivalent to { [key: string]: number }",
+                "heading": "Record"
+            },
+            {
+                "content": "Omit removes keys from an object type.\n\nExample\n\ninterface Person {\n\n  name: string;\n\n  age: number;\n\n  location?: string;\n\n}\n\nconst bob: Omit<Person, 'age' | 'location'> = {\n\n  name: 'Bob'\n\n  // `Omit` has removed age and location from the type and they can't be defined here\n\n};\n\nTry it Yourself »",
+                "heading": "Omit"
+            },
+            {
+                "content": "Pick removes all but the specified keys from an object type.\n\nExample\n\ninterface Person {\n\n  name: string;\n\n  age: number;\n\n  location?: string;\n\n}\n\nconst bob: Pick<Person, 'name'> = {\n\n  name: 'Bob'\n\n  // `Pick` has only kept name, so age and location were removed from the type and they can't be defined here\n\n};\n\nTry it Yourself »",
+                "heading": "Pick"
+            },
+            {
+                "content": "Exclude removes types from a union.\n\nExample\n\ntype Primitive = string | number | boolean\n\nconst value: Exclude<Primitive, string> = true; // a string cannot be used here since Exclude removed it from the type.\n\nTry it Yourself »",
+                "heading": "Exclude"
+            },
+            {
+                "content": "ReturnType extracts the return type of a function type.\n\nExample\n\ntype PointGenerator = () => { x: number; y: number; };\n\nconst point: ReturnType<PointGenerator> = {\n\n  x: 10,\n\n  y: 20\n\n};\n\nTry it Yourself »",
+                "heading": "ReturnType"
+            },
+            {
+                "content": "Parameters extracts the parameter types of a function type as an array.\n\nExample\n\ntype PointPrinter = (p: { x: number; y: number; }) => void;\n\nconst point: Parameters<PointPrinter>[0] = {\n\n  x: 10,\n\n  y: 20\n\n};\n\nTry it Yourself »",
+                "heading": "Parameters"
+            },
+            {
+                "content": "Readonly is used to create a new type where all properties are readonly, meaning they cannot be modified once assigned a value.\n\nKeep in mind TypeScript will prevent this at compile time, but in theory since it is compiled down to JavaScript you can still override a readonly property.\n\nExample\n\ninterface Person {\n\n  name: string;\n\n  age: number;\n\n}\n\nconst person: Readonly<Person> = {\n\n  name: \"Dylan\",\n\n  age: 35,\n\n};\n\nperson.name = 'Israel'; // prog.ts(11,8): error TS2540: Cannot assign to 'name' because it is a read-only property.\n\nTry it Yourself »\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Readonly"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:08:39Z",
+        "subject": "TypeScript",
+        "title": "TypeScript Utility Types"
+    },
+    {
+        "url": "https://www.w3schools.com/typescript/typescript_keyof.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "typescript_typescript_keyof",
+        "code_examples": [
+            {
+                "code": "interface Person {\n\n  name: string;\n\n  age: number;\n\n}\n\n// `keyof Person` here creates a union type of \"name\" and \"age\", other strings will not be allowed\n\nfunction printPersonProperty(person: Person, property: keyof Person) {\n\n  console.log(`Printing person property ${property}: \"${person[property]}\"`);\n\n}\n\nlet person = {\n\n  name: \"Max\",\n\n  age: 27\n\n};\n\nprintPersonProperty(person, \"name\"); // Printing person property name: \"Max\"",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "JavaScript & Frontend",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "TS HOME\nTS Introduction\nTS Get Started\nTS Simple Types\nTS Explicit & Inference\nTS Special Types\nTS Arrays\nTS Tuples\nTS Object Types\nTS Enums\nTS Aliases & Interfaces\nTS Union Types\nTS Functions\nTS Casting\nTS Classes\nTS Basic Generics\nTS Utility Types\nTS Keyof\nTS Null\nTS Definitely Typed\nTS 5 Updates\nTS Configuration\nTS with Node.js\nTS with React\nTS Tooling\nTS Advanced Types\nTS Type Guards\nTS Conditional Types\nTS Mapped Types\nTS Type Inference\nTS Literal Types\nTS Namespaces\nTS Index Signatures\nTS Declaration Merging\nTS Async Programming\nTS Decorators\nTS in JS Projects\nTS Migration\nTS Error Handling\nTS Best Practices",
+                "heading": "TypeScript tutorial"
+            },
+            {
+                "content": "TS Certificate",
+                "heading": "TypeScript Cert"
+            },
+            {
+                "content": "TS Editor\nTS Exercises\nTS Quiz\nTS Practice Problems\nTS Syllabus\nTS Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\n TypeScript Keyof\n\n❮ Previous\nNext ❯\n\nkeyof is a keyword in TypeScript which is used to extract the key type from an object type.",
+                "heading": "TypeScript Exercises"
+            },
+            {
+                "content": "When used on an object type with explicit keys, keyof creates a union type with those keys.\n\nExample\n\ninterface Person {\n\n  name: string;\n\n  age: number;\n\n}\n\n// `keyof Person` here creates a union type of \"name\" and \"age\", other strings will not be allowed\n\nfunction printPersonProperty(person: Person, property: keyof Person) {\n\n  console.log(`Printing person property ${property}: \"${person[property]}\"`);\n\n}\n\nlet person = {\n\n  name: \"Max\",\n\n  age: 27\n\n};\n\nprintPersonProperty(person, \"name\"); // Printing person property name: \"Max\"\n\nTry it Yourself »",
+                "heading": "keyof with explicit keys"
+            },
+            {
+                "content": "keyof can also be used with index signatures to extract the index type.\n\nExample\n\ntype StringMap = { [key: string]: unknown };\n\n// `keyof StringMap` resolves to `string` here\n\nfunction createStringPair(property: keyof StringMap, value: string): StringMap {\n\n  return { [property]: value };\n\n}\n\nTry it Yourself »\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "keyof with index signatures"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:08:40Z",
+        "subject": "TypeScript",
+        "title": "TypeScript Keyof"
+    },
+    {
+        "url": "https://www.w3schools.com/typescript/typescript_null.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "typescript_typescript_null",
+        "code_examples": [
+            {
+                "code": "let value: string | undefined | null = null;\n\nvalue = 'hello';\n\nvalue = undefined;",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "JavaScript & Frontend",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "TS HOME\nTS Introduction\nTS Get Started\nTS Simple Types\nTS Explicit & Inference\nTS Special Types\nTS Arrays\nTS Tuples\nTS Object Types\nTS Enums\nTS Aliases & Interfaces\nTS Union Types\nTS Functions\nTS Casting\nTS Classes\nTS Basic Generics\nTS Utility Types\nTS Keyof\nTS Null\nTS Definitely Typed\nTS 5 Updates\nTS Configuration\nTS with Node.js\nTS with React\nTS Tooling\nTS Advanced Types\nTS Type Guards\nTS Conditional Types\nTS Mapped Types\nTS Type Inference\nTS Literal Types\nTS Namespaces\nTS Index Signatures\nTS Declaration Merging\nTS Async Programming\nTS Decorators\nTS in JS Projects\nTS Migration\nTS Error Handling\nTS Best Practices",
+                "heading": "TypeScript tutorial"
+            },
+            {
+                "content": "TS Certificate",
+                "heading": "TypeScript Cert"
+            },
+            {
+                "content": "TS Editor\nTS Exercises\nTS Quiz\nTS Practice Problems\nTS Syllabus\nTS Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\n TypeScript Null & Undefined\n\n❮ Previous\nNext ❯\n\nTypeScript has a powerful system to deal with null or undefined values.\n\nBy default null and undefined handling is disabled, and can be enabled by setting strictNullChecks to true.\n\nThe rest of this page applies for when strictNullChecks is enabled.",
+                "heading": "TypeScript Exercises"
+            },
+            {
+                "content": "null and undefined are primitive types and can be used like other types, such as string.\n\nExample\n\nlet value: string | undefined | null = null;\n\nvalue = 'hello';\n\nvalue = undefined;\n\nTry it Yourself »\n\nWhen strictNullChecks is enabled, TypeScript requires values to be set\nunless undefined is explicitly added to the type.",
+                "heading": "Types"
+            },
+            {
+                "content": "Optional chaining is a JavaScript feature that works well with TypeScript's null handling.\n\nIt allows accessing properties on an object that may or may not exist, using compact syntax.\n\nIt can be used with the ?. operator when accessing properties.\n\nExample\n\ninterface House {\n\n  sqft: number;\n\n  yard?: {\n\n    sqft: number;\n\n  };\n\n}\n\nfunction printYardSize(house: House) {\n\n  const yardSize = house.yard?.sqft;\n\n  if (yardSize === undefined) {\n\n    console.log('No yard');\n\n  } else {\n\n    console.log(`Yard is ${yardSize} sqft`);\n\n  }\n\n}\n\nlet home: House = {\n\n  sqft: 500\n\n};\n\nprintYardSize(home); // Prints 'No yard'\n\nTry it Yourself »",
+                "heading": "Optional Chaining"
+            },
+            {
+                "content": "Nullish coalescing is another JavaScript feature that also works well with TypeScript's null handling.\n\nIt allows writing expressions that have a fallback specifically when dealing with null or undefined.\n\nThis is useful when other falsy values can occur in the expression but are still valid.\n\nIt can be used with the ?? operator in an expression, similar to using the && operator.\n\nExample\n\nfunction printMileage(mileage: number | null | undefined) {\n\n  console.log(`Mileage: ${mileage ?? 'Not Available'}`);\n\n}\n\nprintMileage(null); // Prints 'Mileage: Not Available'\n\nprintMileage(0); // Prints 'Mileage: 0'\n\nTry it Yourself »",
+                "heading": "Nullish Coalescing"
+            },
+            {
+                "content": "TypeScript's inference system isn't perfect, there are times when it makes sense to ignore a value's possibility of being null or undefined.\n\nAn easy way to do this is to use casting, but TypeScript also provides the ! operator as a convenient shortcut.\n\nExample\n\nfunction getValue(): string | undefined {\n\n  return 'hello';\n\n}\n\nlet value = getValue();\n\nconsole.log('value length: ' + value!.length);\n\nTry it Yourself »\n\nJust like casting, this can be unsafe and should be used with care.",
+                "heading": "Null Assertion"
+            },
+            {
+                "content": "Even with strictNullChecks enabled, by default TypeScript assumes array access will never return undefined (unless undefined is part of the array type).\n\nThe config noUncheckedIndexedAccess can be used to change this behavior.\n\nExample\n\nlet array: number[] = [1, 2, 3];\n\nlet value = array[0]; // with `noUncheckedIndexedAccess` this has the type `number | undefined`\n\nTry it Yourself »\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Array Bounds Handling"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:08:40Z",
+        "subject": "TypeScript",
+        "title": "TypeScript Null & Undefined"
+    },
+    {
+        "url": "https://www.w3schools.com/typescript/typescript_definitely_typed.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "typescript_typescript_definitely_typed",
+        "code_examples": [
+            {
+                "code": "Example\n\n npm install --save-dev @types/jquery",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "JavaScript & Frontend",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "TS HOME\nTS Introduction\nTS Get Started\nTS Simple Types\nTS Explicit & Inference\nTS Special Types\nTS Arrays\nTS Tuples\nTS Object Types\nTS Enums\nTS Aliases & Interfaces\nTS Union Types\nTS Functions\nTS Casting\nTS Classes\nTS Basic Generics\nTS Utility Types\nTS Keyof\nTS Null\nTS Definitely Typed\nTS 5 Updates\nTS Configuration\nTS with Node.js\nTS with React\nTS Tooling\nTS Advanced Types\nTS Type Guards\nTS Conditional Types\nTS Mapped Types\nTS Type Inference\nTS Literal Types\nTS Namespaces\nTS Index Signatures\nTS Declaration Merging\nTS Async Programming\nTS Decorators\nTS in JS Projects\nTS Migration\nTS Error Handling\nTS Best Practices",
+                "heading": "TypeScript tutorial"
+            },
+            {
+                "content": "TS Certificate",
+                "heading": "TypeScript Cert"
+            },
+            {
+                "content": "TS Editor\nTS Exercises\nTS Quiz\nTS Practice Problems\nTS Syllabus\nTS Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\n TypeScript Definitely Typed\n\n ❮ Previous\n Next ❯\n\n NPM packages in the broad JavaScript ecosystem don't always have types available.\n\n Sometimes the projects are no longer maintained, and other times they aren't interested in, agree with, or have time to use TypeScript.",
+                "heading": "TypeScript Exercises"
+            },
+            {
+                "content": "Using untyped NPM packages with TypeScript is not type-safe because types are missing.\n\n To help TypeScript developers use such packages, there is a community-maintained project called Definitely Typed.\n\n Definitely Typed is a project that provides a central repository of TypeScript definitions for NPM packages which do not have types.\n\n Example\n\n npm install --save-dev @types/jquery",
+                "heading": "Using non-typed NPM packages in TypeScript"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:08:40Z",
+        "subject": "TypeScript",
+        "title": "TypeScript Definitely Typed"
+    },
+    {
+        "url": "https://www.w3schools.com/typescript/typescript_5_updates.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "typescript_typescript_5_updates",
+        "code_examples": [
+            {
+                "code": "type Color = \"red\" | \"green\" | \"blue\"; \n\ntype HexColor<T extends Color> = `#${string}`;\n\n// Usage:\n\nlet myColor: HexColor = \"#0000FF\";",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "JavaScript & Frontend",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "TS HOME\nTS Introduction\nTS Get Started\nTS Simple Types\nTS Explicit & Inference\nTS Special Types\nTS Arrays\nTS Tuples\nTS Object Types\nTS Enums\nTS Aliases & Interfaces\nTS Union Types\nTS Functions\nTS Casting\nTS Classes\nTS Basic Generics\nTS Utility Types\nTS Keyof\nTS Null\nTS Definitely Typed\nTS 5 Updates\nTS Configuration\nTS with Node.js\nTS with React\nTS Tooling\nTS Advanced Types\nTS Type Guards\nTS Conditional Types\nTS Mapped Types\nTS Type Inference\nTS Literal Types\nTS Namespaces\nTS Index Signatures\nTS Declaration Merging\nTS Async Programming\nTS Decorators\nTS in JS Projects\nTS Migration\nTS Error Handling\nTS Best Practices",
+                "heading": "TypeScript tutorial"
+            },
+            {
+                "content": "TS Certificate",
+                "heading": "TypeScript Cert"
+            },
+            {
+                "content": "TS Editor\nTS Exercises\nTS Quiz\nTS Practice Problems\nTS Syllabus\nTS Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\n TypeScript 5.x Updates\n\n❮ Previous\nNext ❯\n\nTypeScript is actively maintained and updated by Microsoft.\n\nIn version 5.x a lot of utility and quality of life updates were made.\n\nThis chapter covers the most popular updates to allow stricter and more flexible type safety.\n\nAs a reminder these features will only be available in 5.x+",
+                "heading": "TypeScript Exercises"
+            },
+            {
+                "content": "Template Literal Types now allows us to create more precise types using template literals.\n\nWe can define custom types that depend on the actual values of strings at compile time.\n\nExample\n\ntype Color = \"red\" | \"green\" | \"blue\"; \n\ntype HexColor<T extends Color> = `#${string}`;\n\n// Usage:\n\nlet myColor: HexColor = \"#0000FF\";\n\nTry it Yourself »",
+                "heading": "Template Literal Types"
+            },
+            {
+                "content": "Index Signature Labels allows us to label index signatures using computed property names.\n\nIt helps in providing more descriptive type information when working with dynamic objects.\n\nExample\n\ntype DynamicObject = { [key: `dynamic_${string}`]: string };\n\n// Usage: \n\nlet obj: DynamicObject = { dynamic_key: \"value\" };\n\nTry it Yourself »\n\n5.x also now supports native JavaScript private fields.\n\nThe TypeScript 'private' still works as discussed in Classes section.\n\n❮ Previous\nNext ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Index Signature Labels"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:08:40Z",
+        "subject": "TypeScript",
+        "title": "TypeScript 5.x Updates"
+    },
+    {
+        "url": "https://www.w3schools.com/typescript/typescript_config.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "typescript_typescript_config",
+        "code_examples": [
+            {
+                "code": "Minimal tsconfig.json\n\n{\n\n  \"compilerOptions\": {\n\n    \"target\": \"es6\",\n\n    \"module\": \"commonjs\"\n\n  },\n\n  \"include\": [\"src/**/*\"]\n\n}",
+                "language": "typescript",
+                "heading": "Minimal tsconfig.json",
+                "tryit_url": null
+            },
+            {
+                "code": "Advanced tsconfig.json\n\n{\n\n  \"compilerOptions\": {\n\n    \"target\": \"es2020\",\n\n    \"module\": \"esnext\",\n\n    \"strict\": true,\n\n    \"baseUrl\": \".\",\n\n    \"paths\": {\n\n      \"@app/*\": [\"src/app/*\"]\n\n    },\n\n    \"outDir\": \"dist\",\n\n    \"esModuleInterop\": true\n\n  },\n\n  \"include\": [\"src\"],\n\n  \"exclude\": [\"node_modules\", \"dist\"]\n\n}",
+                "language": "typescript",
+                "heading": "Advanced tsconfig.json",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\ntsc --init",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "JavaScript & Frontend",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "TS HOME\nTS Introduction\nTS Get Started\nTS Simple Types\nTS Explicit & Inference\nTS Special Types\nTS Arrays\nTS Tuples\nTS Object Types\nTS Enums\nTS Aliases & Interfaces\nTS Union Types\nTS Functions\nTS Casting\nTS Classes\nTS Basic Generics\nTS Utility Types\nTS Keyof\nTS Null\nTS Definitely Typed\nTS 5 Updates\nTS Configuration\nTS with Node.js\nTS with React\nTS Tooling\nTS Advanced Types\nTS Type Guards\nTS Conditional Types\nTS Mapped Types\nTS Type Inference\nTS Literal Types\nTS Namespaces\nTS Index Signatures\nTS Declaration Merging\nTS Async Programming\nTS Decorators\nTS in JS Projects\nTS Migration\nTS Error Handling\nTS Best Practices",
+                "heading": "TypeScript tutorial"
+            },
+            {
+                "content": "TS Certificate",
+                "heading": "TypeScript Cert"
+            },
+            {
+                "content": "TS Editor\nTS Exercises\nTS Quiz\nTS Practice Problems\nTS Syllabus\nTS Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\n TypeScript Configuration\n\n ❮ Previous\n Next ❯",
+                "heading": "TypeScript Exercises"
+            },
+            {
+                "content": "The tsconfig.json file is the heart of every TypeScript project.\n\nIt tells the TypeScript compiler how to process your code, which files to include, and which features to enable or disable.\n\nA well-configured tsconfig.json ensures a smooth developer experience and reliable builds.",
+                "heading": "Introduction"
+            },
+            {
+                "content": "compilerOptions: Controls how TypeScript compiles your code (e.g., target, module, strictness).\n\n include: Files or folders to include in the compilation.\n\n exclude: Files or folders to exclude.\n\n files: Explicit list of files to include (rarely used with include).\n\n extends: Inherit options from another config file.\n\n references: Enable project references for monorepos or multi-package setups.",
+                "heading": "Key Concepts & Explanations"
+            },
+            {
+                "content": "Minimal tsconfig.json\n\n{\n\n  \"compilerOptions\": {\n\n    \"target\": \"es6\",\n\n    \"module\": \"commonjs\"\n\n  },\n\n  \"include\": [\"src/**/*\"]\n\n}\n\nAdvanced tsconfig.json\n\n{\n\n  \"compilerOptions\": {\n\n    \"target\": \"es2020\",\n\n    \"module\": \"esnext\",\n\n    \"strict\": true,\n\n    \"baseUrl\": \".\",\n\n    \"paths\": {\n\n      \"@app/*\": [\"src/app/*\"]\n\n    },\n\n    \"outDir\": \"dist\",\n\n    \"esModuleInterop\": true\n\n  },\n\n  \"include\": [\"src\"],\n\n  \"exclude\": [\"node_modules\", \"dist\"]\n\n}\n\nTo generate a tsconfig.json file, run:\n\nExample\n\ntsc --init",
+                "heading": "Step-by-Step Examples"
+            },
+            {
+                "content": "Monorepo: Use references and extends to share settings across packages.\n\n Library: Set declaration and outDir for type definitions.\n\n App: Use strict and esModuleInterop for best compatibility.",
+                "heading": "Real-World Scenarios"
+            },
+            {
+                "content": "Misconfigured include/exclude can cause files to be missed or included unexpectedly.\n\n Paths not resolving? Check baseUrl and paths settings.\n\n Type errors after changing strict? Review your code for type safety.",
+                "heading": "Common Pitfalls & Troubleshooting"
+            },
+            {
+                "content": "Always enable strict for safer code.\n\n Use extends to avoid duplicating config in monorepos or multiple projects.\n\n Do not commit build output folders (like dist) to version control.\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Best Practices"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:08:40Z",
+        "subject": "TypeScript",
+        "title": "TypeScript Configuration"
+    },
+    {
+        "url": "https://www.w3schools.com/typescript/typescript_nodejs.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "typescript_typescript_nodejs",
+        "code_examples": [
+            {
+                "code": "Example\n\nmkdir my-ts-node-app\n\ncd my-ts-node-app\n\nnpm init -y\n\nnpm install typescript @types/node --save-dev\n\nnpx tsc --init",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "mkdir src\n\n# later add files like: src/server.ts, src/middleware/auth.ts",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\n{\n\n    \"compilerOptions\": {\n\n    \"target\": \"ES2020\",\n\n    \"module\": \"commonjs\",\n\n    \"outDir\": \"./dist\",\n\n    \"rootDir\": \"./src\",\n\n    \"strict\": true,\n\n    \"esModuleInterop\": true,\n\n    \"skipLibCheck\": true,\n\n    \"forceConsistentCasingInFileNames\": true,\n\n    \"moduleResolution\": \"node\",\n\n    \"resolveJsonModule\": true,\n\n    \"sourceMap\": true\n\n  },\n\n  \"include\": [\"src/**/*\"],\n\n  \"exclude\": [\"node_modules\"]\n\n}",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\nnpm install express body-parser\n\nnpm install --save-dev ts-node nodemon @types/express",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "my-ts-node-app/\n\n  src/\n\n    server.ts\n\n    middleware/\n\n      auth.ts\n\n    entity/\n\n      User.ts\n\n    config/\n\n      database.ts\n\n  dist/\n\n  node_modules/\n\n  package.json\n\n  tsconfig.json",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "src/server.ts\n\nimport express, { Request, Response, NextFunction } from 'express';\n\nimport { json } from 'body-parser';\n\ninterface User {\n\n  id: number;\n\n  username: string;\n\n  email: string;\n\n}\n\n// Initialize Express app\n\nconst app = express();\n\nconst PORT = process.env.PORT || 3000;\n\n// Middleware\n\napp.use(json());\n\n// In-memory database\n\nconst users: User[] = [\n\n  { id: 1, username: 'user1', email: 'user1@example.com' },\n\n  { id: 2, username: 'user2', email: 'user2@example.com' }\n\n];\n\n// Routes\n\napp.get('/api/users', (req: Request, res: Response) => {\n\n  res.json(users);\n\n});\n\napp.get('/api/users/:id', (req: Request, res: Response) => {\n\n  const user = users.find(u => u.id === parseInt(req.params.id));\n\n  if (!user) return res.status(404).json({ message: 'User not found' });\n\n  res.json(user);\n\n});\n\napp.post('/api/users', (req: Request, res: Response) => {\n\n  const { username, email } = req.body;\n\n  if (!username || !email) {\n\n    return res.status(400).json({ message: 'Username and email are required' });\n\n  }\n\n  const newUser: User = {\n\n    id: users.length + 1,\n\n    username,\n\n    email\n\n  };\n\n  users.push(newUser);\n\n  res.status(201).json(newUser);\n\n});\n\n// Error handling middleware\n\napp.use((err: Error, req: Request, res: Response, next: NextFunction) => {\n\n  console.error(err.stack);\n\n  res.status(500).json({ message: 'Something went wrong!' });\n\n});\n\n// Start server\n\napp.listen(PORT, () => {\n\n  console.log(`Server is running on http://localhost:${PORT}`);\n\n});",
+                "language": "typescript",
+                "heading": "src/server.ts",
+                "tryit_url": null
+            },
+            {
+                "code": "src/middleware/auth.ts\n\nimport { Request, Response, NextFunction } from 'express';\n\n// Extend the Express Request type to include custom properties\n\ndeclare global {\n\n  namespace Express {\n\n    interface Request {\n\n      user?: { id: number; role: string };\n\n    }\n\n  }\n\n}\n\nexport const authenticate = (req: Request, res: Response, next: NextFunction) => {\n\n  const token = req.header('Authorization')?.replace('Bearer ', '');\n\n  if (!token) {\n\n    return res.status(401).json({ message: 'No token provided' });\n\n  }\n\n  try {\n\n    // In a real app, verify the JWT token here\n\n    const decoded = { id: 1, role: 'admin' }; // Mock decoded token\n\n    req.user = decoded;\n\n    next();\n\n  } catch (error) {\n\n    res.status(401).json({ message: 'Invalid token' });\n\n  }\n\n};\n\nexport const authorize = (roles: string[]) => {\n\n  return (req: Request, res: Response, next: NextFunction) => {\n\n    if (!req.user) {\n\n      return res.status(401).json({ message: 'Not authenticated' });\n\n    }\n\n    if (!roles.includes(req.user.role)) {\n\n      return res.status(403).json({ message: 'Not authorized' });\n\n    }\n\n    next();\n\n  };\n\n};",
+                "language": "typescript",
+                "heading": "src/middleware/auth.ts",
+                "tryit_url": null
+            },
+            {
+                "code": "Use the middleware in routes\n\n// src/server.ts\n\nimport { authenticate, authorize } from './middleware/auth';\n\napp.get('/api/admin', authenticate, authorize(['admin']), (req, res) => {\n\n  res.json({ message: `Hello admin ${req.user?.id}` });\n\n});",
+                "language": "typescript",
+                "heading": "Use the middleware in routes",
+                "tryit_url": null
+            },
+            {
+                "code": "src/entity/User.ts\n\nimport { Entity, PrimaryGeneratedColumn, Column, CreateDateColumn, UpdateDateColumn } from 'typeorm';\n\n@Entity('users')\n\nexport class User {\n\n  @PrimaryGeneratedColumn()\n\n  id: number;\n\n  @Column({ unique: true })\n\n  username: string;\n\n  @Column({ unique: true })\n\n  email: string;\n\n  @Column({ select: false })\n\n  password: string;\n\n  @Column({ default: 'user' })\n\n  role: string;\n\n  @CreateDateColumn()\n\n  createdAt: Date;\n\n  @UpdateDateColumn()\n\n  updatedAt: Date;\n\n}",
+                "language": "typescript",
+                "heading": "src/entity/User.ts",
+                "tryit_url": null
+            },
+            {
+                "code": "src/config/database.ts\n\nimport 'reflect-metadata';\n\nimport { DataSource } from 'typeorm';\n\nimport { User } from '../entity/User';\n\nexport const AppDataSource = new DataSource({\n\n  type: 'postgres',\n\n  host: process.env.DB_HOST || 'localhost',\n\n  port: parseInt(process.env.DB_PORT || '5432'),\n\n  username: process.env.DB_USERNAME || 'postgres',\n\n  password: process.env.DB_PASSWORD || 'postgres',\n\n  database: process.env.DB_NAME || 'mydb',\n\n  synchronize: process.env.NODE_ENV !== 'production',\n\n  logging: false,\n\n  entities: [User],\n\n  migrations: [],\n\n  subscribers: [],\n\n});",
+                "language": "typescript",
+                "heading": "src/config/database.ts",
+                "tryit_url": null
+            },
+            {
+                "code": "Initialize the Data Source before starting the server\n\n// src/server.ts\n\nimport { AppDataSource } from './config/database';\n\nAppDataSource.initialize()\n\n  .then(() => {\n\n   app.listen(PORT, () => console.log(`Server running on http://localhost:${PORT}`));\n\n  })\n\n  .catch((err) => {\n\n   console.error('DB init error', err);\n\n   process.exit(1);\n\n  });",
+                "language": "typescript",
+                "heading": "Initialize the Data Source before starting the server",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\n{\n\n  \"scripts\": {\n\n    \"build\": \"tsc\",\n\n    \"start\": \"node dist/server.js\",\n\n    \"dev\": \"nodemon --exec ts-node src/server.ts\",\n\n    \"watch\": \"tsc -w\",\n\n    \"test\": \"jest --config jest.config.js\"\n\n  }\n\n}",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\nnpm run dev",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\nnpm run build\n\nnpm start",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "node --enable-source-maps dist/server.js",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "JavaScript & Frontend",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "TS HOME\nTS Introduction\nTS Get Started\nTS Simple Types\nTS Explicit & Inference\nTS Special Types\nTS Arrays\nTS Tuples\nTS Object Types\nTS Enums\nTS Aliases & Interfaces\nTS Union Types\nTS Functions\nTS Casting\nTS Classes\nTS Basic Generics\nTS Utility Types\nTS Keyof\nTS Null\nTS Definitely Typed\nTS 5 Updates\nTS Configuration\nTS with Node.js\nTS with React\nTS Tooling\nTS Advanced Types\nTS Type Guards\nTS Conditional Types\nTS Mapped Types\nTS Type Inference\nTS Literal Types\nTS Namespaces\nTS Index Signatures\nTS Declaration Merging\nTS Async Programming\nTS Decorators\nTS in JS Projects\nTS Migration\nTS Error Handling\nTS Best Practices",
+                "heading": "TypeScript tutorial"
+            },
+            {
+                "content": "TS Certificate",
+                "heading": "TypeScript Cert"
+            },
+            {
+                "content": "TS Editor\nTS Exercises\nTS Quiz\nTS Practice Problems\nTS Syllabus\nTS Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\n TypeScript with Node.js\n\n ❮ Previous\n Next ❯",
+                "heading": "TypeScript Exercises"
+            },
+            {
+                "content": "TypeScript brings static typing to Node.js development, providing better tooling, improved code quality, and enhanced developer experience.\n\nKey benefits include:\n\n Type safety for JavaScript code\n\n Better IDE support with autocompletion\n\n Early error detection during development\n\n Improved code maintainability and documentation\n\n Easier refactoring\n\n Prerequisites: Install a recent Node.js LTS (v18+ recommended) and npm.\n\n Verify with node -v and npm -v.",
+                "heading": "Why Use TypeScript with Node.js?"
+            },
+            {
+                "content": "This section walks through creating a new Node.js project configured for TypeScript.\n\n Note: You write TypeScript (.ts) during development and compile it to JavaScript (.js) for Node.js to run in production.\n\n1. Initialize a New Project\n\nExample\n\nmkdir my-ts-node-app\n\ncd my-ts-node-app\n\nnpm init -y\n\nnpm install typescript @types/node --save-dev\n\nnpx tsc --init\n\n What these do:\n\n typescript adds the TypeScript compiler (tsc)\n\n @types/node provides Node.js type definitions\n\n npx tsc --init creates a tsconfig.json config file\n\n2. Create a Source Folder\nKeep source code in src/ and compiled output in dist/.\n\nmkdir src\n\n# later add files like: src/server.ts, src/middleware/auth.ts\n\n3. Configure TypeScript\nEdit the generated tsconfig.json:\n\nExample\n\n{\n\n    \"compilerOptions\": {\n\n    \"target\": \"ES2020\",\n\n    \"module\": \"commonjs\",\n\n    \"outDir\": \"./dist\",\n\n    \"rootDir\": \"./src\",\n\n    \"strict\": true,\n\n    \"esModuleInterop\": true,\n\n    \"skipLibCheck\": true,\n\n    \"forceConsistentCasingInFileNames\": true,\n\n    \"moduleResolution\": \"node\",\n\n    \"resolveJsonModule\": true,\n\n    \"sourceMap\": true\n\n  },\n\n  \"include\": [\"src/**/*\"],\n\n  \"exclude\": [\"node_modules\"]\n\n}\n\n Option highlights:\n\n rootDir/outDir: keeps source (src) separate from build output (dist).\n\n strict: enables the safest type checking.\n\n esModuleInterop: smoother interop with CommonJS/ES modules.\n\n sourceMap: generate maps for debugging compiled code.\n\n CommonJS vs ESM: This guide uses module: \"commonjs\".\n\n If you use ESM (type: \"module\" in package.json), set module: \"nodenext\" or node16, and use import/export consistently.\n\n4. Install Runtime and Dev Dependencies\nInstall Express for HTTP handling and helpful dev tools:\n\nExample\n\nnpm install express body-parser\n\nnpm install --save-dev ts-node nodemon @types/express\n\n Warning: Use ts-node and nodemon only for development.\n\n For production, compile with tsc and run Node on the JS output.\n\nProject Structure\nKeep your project organized:\n\nmy-ts-node-app/\n\n  src/\n\n    server.ts\n\n    middleware/\n\n      auth.ts\n\n    entity/\n\n      User.ts\n\n    config/\n\n      database.ts\n\n  dist/\n\n  node_modules/\n\n  package.json\n\n  tsconfig.json",
+                "heading": "Setting Up a TypeScript Node.js Project"
+            },
+            {
+                "content": "This example shows a minimal Express server written in TypeScript, including a typed User model and a few routes.\n\nsrc/server.ts\n\nimport express, { Request, Response, NextFunction } from 'express';\n\nimport { json } from 'body-parser';\n\ninterface User {\n\n  id: number;\n\n  username: string;\n\n  email: string;\n\n}\n\n// Initialize Express app\n\nconst app = express();\n\nconst PORT = process.env.PORT || 3000;\n\n// Middleware\n\napp.use(json());\n\n// In-memory database\n\nconst users: User[] = [\n\n  { id: 1, username: 'user1', email: 'user1@example.com' },\n\n  { id: 2, username: 'user2', email: 'user2@example.com' }\n\n];\n\n// Routes\n\napp.get('/api/users', (req: Request, res: Response) => {\n\n  res.json(users);\n\n});\n\napp.get('/api/users/:id', (req: Request, res: Response) => {\n\n  const user = users.find(u => u.id === parseInt(req.params.id));\n\n  if (!user) return res.status(404).json({ message: 'User not found' });\n\n  res.json(user);\n\n});\n\napp.post('/api/users', (req: Request, res: Response) => {\n\n  const { username, email } = req.body;\n\n  if (!username || !email) {\n\n    return res.status(400).json({ message: 'Username and email are required' });\n\n  }\n\n  const newUser: User = {\n\n    id: users.length + 1,\n\n    username,\n\n    email\n\n  };\n\n  users.push(newUser);\n\n  res.status(201).json(newUser);\n\n});\n\n// Error handling middleware\n\napp.use((err: Error, req: Request, res: Response, next: NextFunction) => {\n\n  console.error(err.stack);\n\n  res.status(500).json({ message: 'Something went wrong!' });\n\n});\n\n// Start server\n\napp.listen(PORT, () => {\n\n  console.log(`Server is running on http://localhost:${PORT}`);\n\n});\n\n What TypeScript adds here:\n\n Typed Request, Response, and NextFunction for Express handlers.\n\n A User interface to guarantee the shape of user data.\n\n Safer refactoring and better autocompletion with typed route params and bodies.",
+                "heading": "Basic TypeScript Server Example"
+            },
+            {
+                "content": "Middleware can be strongly typed.\n\nYou can also extend Express types via declaration merging to store authenticated user data on the request.\n\nsrc/middleware/auth.ts\n\nimport { Request, Response, NextFunction } from 'express';\n\n// Extend the Express Request type to include custom properties\n\ndeclare global {\n\n  namespace Express {\n\n    interface Request {\n\n      user?: { id: number; role: string };\n\n    }\n\n  }\n\n}\n\nexport const authenticate = (req: Request, res: Response, next: NextFunction) => {\n\n  const token = req.header('Authorization')?.replace('Bearer ', '');\n\n  if (!token) {\n\n    return res.status(401).json({ message: 'No token provided' });\n\n  }\n\n  try {\n\n    // In a real app, verify the JWT token here\n\n    const decoded = { id: 1, role: 'admin' }; // Mock decoded token\n\n    req.user = decoded;\n\n    next();\n\n  } catch (error) {\n\n    res.status(401).json({ message: 'Invalid token' });\n\n  }\n\n};\n\nexport const authorize = (roles: string[]) => {\n\n  return (req: Request, res: Response, next: NextFunction) => {\n\n    if (!req.user) {\n\n      return res.status(401).json({ message: 'Not authenticated' });\n\n    }\n\n    if (!roles.includes(req.user.role)) {\n\n      return res.status(403).json({ message: 'Not authorized' });\n\n    }\n\n    next();\n\n  };\n\n};\n\n Use the middleware in routes\n\n// src/server.ts\n\nimport { authenticate, authorize } from './middleware/auth';\n\napp.get('/api/admin', authenticate, authorize(['admin']), (req, res) => {\n\n  res.json({ message: `Hello admin ${req.user?.id}` });\n\n});",
+                "heading": "Using TypeScript with Express Middleware"
+            },
+            {
+                "content": "You can use ORMs like TypeORM with TypeScript decorators to map classes to tables.\n\n Before you start:\n\n Install packages: npm install typeorm reflect-metadata pg (use pg for PostgreSQL).\n\n Enable in tsconfig.json when using decorators:\n\n {\n \"compilerOptions\": {\n \"experimentalDecorators\": true,\n \"emitDecoratorMetadata\": true\n }\n}\n\n Import reflect-metadata once at app startup.\n\nsrc/entity/User.ts\n\nimport { Entity, PrimaryGeneratedColumn, Column, CreateDateColumn, UpdateDateColumn } from 'typeorm';\n\n@Entity('users')\n\nexport class User {\n\n  @PrimaryGeneratedColumn()\n\n  id: number;\n\n  @Column({ unique: true })\n\n  username: string;\n\n  @Column({ unique: true })\n\n  email: string;\n\n  @Column({ select: false })\n\n  password: string;\n\n  @Column({ default: 'user' })\n\n  role: string;\n\n  @CreateDateColumn()\n\n  createdAt: Date;\n\n  @UpdateDateColumn()\n\n  updatedAt: Date;\n\n}\n\nsrc/config/database.ts\n\nimport 'reflect-metadata';\n\nimport { DataSource } from 'typeorm';\n\nimport { User } from '../entity/User';\n\nexport const AppDataSource = new DataSource({\n\n  type: 'postgres',\n\n  host: process.env.DB_HOST || 'localhost',\n\n  port: parseInt(process.env.DB_PORT || '5432'),\n\n  username: process.env.DB_USERNAME || 'postgres',\n\n  password: process.env.DB_PASSWORD || 'postgres',\n\n  database: process.env.DB_NAME || 'mydb',\n\n  synchronize: process.env.NODE_ENV !== 'production',\n\n  logging: false,\n\n  entities: [User],\n\n  migrations: [],\n\n  subscribers: [],\n\n});\n\n Initialize the Data Source before starting the server\n\n// src/server.ts\n\nimport { AppDataSource } from './config/database';\n\nAppDataSource.initialize()\n\n  .then(() => {\n\n   app.listen(PORT, () => console.log(`Server running on http://localhost:${PORT}`));\n\n  })\n\n  .catch((err) => {\n\n   console.error('DB init error', err);\n\n   process.exit(1);\n\n  });",
+                "heading": "TypeScript with Database (TypeORM Example)"
+            },
+            {
+                "content": "1. Add scripts to package.json\n\nExample\n\n{\n\n  \"scripts\": {\n\n    \"build\": \"tsc\",\n\n    \"start\": \"node dist/server.js\",\n\n    \"dev\": \"nodemon --exec ts-node src/server.ts\",\n\n    \"watch\": \"tsc -w\",\n\n    \"test\": \"jest --config jest.config.js\"\n\n  }\n\n}\n\n Note: The test script is optional and assumes Jest is set up.\n\nIf you are not using Jest, you can omit it.\n\n2. Run in development mode\n\nExample\n\nnpm run dev\n\n3. Build for production\n\nExample\n\nnpm run build\n\nnpm start\n\nDebugging with Source Maps\nWith sourceMap enabled in tsconfig.json, you can debug compiled code and map back to your .ts files.\n\nnode --enable-source-maps dist/server.js\n\n Tip: Most IDEs (including VS Code) support TypeScript debugging with breakpoints when source maps are enabled.",
+                "heading": "Development Workflow"
+            },
+            {
+                "content": "Always define types for function parameters and return values\n\n Use interfaces for object shapes\n\n Enable strict mode in tsconfig.json\n\n Use type guards for runtime type checking\n\n Leverage TypeScript's utility types (Partial, Pick, Omit, etc.)\n\n Keep your type definitions in .d.ts files\n\n Use enums or const assertions for fixed sets of values\n\n Document complex types with JSDoc comments\n\n Prefer environment variables for secrets and config; validate them at startup.\n\n Use ts-node/nodemon only in dev; compile for prod.\n\n Consider ESLint + Prettier with @typescript-eslint for consistent code quality.\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Best Practices"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:08:41Z",
+        "subject": "TypeScript",
+        "title": "TypeScript with Node.js"
+    },
+    {
+        "url": "https://www.w3schools.com/typescript/typescript_react.php",
+        "summary": "Master TypeScript with React through comprehensive examples and best practices. Learn to build type-safe React applications with confidence.",
+        "topic_id": "typescript_typescript_react",
+        "code_examples": [
+            {
+                "code": "Example\n\nnpm create vite@latest my-app -- --template react-ts\n\ncd my-app\n\nnpm install\n\nnpm run dev",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\n{\n\n   \"compilerOptions\": {\n\n     \"target\": \"ES2020\",\n\n     \"lib\": [\"ES2020\", \"DOM\", \"DOM.Iterable\"],\n\n     \"module\": \"ESNext\",\n\n     \"moduleResolution\": \"Node\",\n\n     \"jsx\": \"react-jsx\",\n\n     \"strict\": true,\n\n     \"skipLibCheck\": true,\n\n     \"noEmit\": true,\n\n     \"resolveJsonModule\": true,\n\n     \"allowSyntheticDefaultImports\": true,\n\n     \"esModuleInterop\": true,\n\n     \"forceConsistentCasingInFileNames\": true\n\n   },\n\n   \"include\": [\"src\"]\n\n}",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\n// Greeting.tsx\n\n type GreetingProps = {\n\n   name: string;\n\n   age?: number;\n\n };\n\n export function Greeting({ name, age }: GreetingProps) {\n\n   return (\n\n     <div>\n\n       <h2>Hello, {name}!</h2>\n\n       {age !== undefined && <p>You are {age} years old</p>}\n\n     </div>\n\n   );\n\n }",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\n// Input change\n\n function NameInput() {\n\n   function handleChange(e: React.ChangeEvent<HTMLInputElement>) {\n\n     console.log(e.target.value);\n\n   }\n\n   return <input onChange={handleChange} />;\n\n }\n\n // Button click\n\n function SaveButton() {\n\n   function handleClick(e: React.MouseEvent<HTMLButtonElement>) {\n\n     e.preventDefault();\n\n   }\n\n   return <button onClick={handleClick}>Save</button>;\n\n }",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\nconst [count, setCount] = React.useState<number>(0);\n\n const [status, setStatus] = React.useState<'idle' | 'loading' | 'error'>('idle');\n\n type User = { id: string; name: string };\n\n const [user, setUser] = React.useState<User | null>(null);",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\nfunction FocusInput() {\n\n   const inputRef = React.useRef<HTMLInputElement>(null);\n\n   return <input ref={inputRef} onFocus={() => inputRef.current?.select()} />;\n\n }",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\n type CardProps = { title: string; children?: React.ReactNode };\n\n function Card({ title, children }: CardProps) {\n\n   return (\n\n     <div>\n\n       <h2>{title}</h2>\n\n       {children}\n\n     </div>\n\n   );\n\n }",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\nasync function fetchJson<T>(url: string): Promise<T> {\n\n   const res = await fetch(url);\n\n   if (!res.ok) throw new Error('Network error');\n\n   return res.json() as Promise<T>;\n\n }\n\n // Usage inside an async function/component effect\n\n async function loadPosts() {\n\n   type Post = { id: number; title: string };\n\n   const posts = await fetchJson<Post[]>(\"/api/posts\");\n\n   console.log(posts);\n\n }",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\n type Theme = 'light' | 'dark';\n\n const ThemeContext = React.createContext<{ theme: Theme; toggle(): void } | null>(null);\n\n function ThemeProvider({ children }: { children: React.ReactNode }) {\n\n   const [theme, setTheme] = React.useState<Theme>('light');\n\n   const value = { theme, toggle: () => setTheme(t => (t === 'light' ? 'dark' : 'light')) };\n\n   return <ThemeContext.Provider value={value}>{children}</ThemeContext.Provider>;\n\n }\n\n function useTheme() {\n\n   const ctx = React.useContext(ThemeContext);\n\n   if (!ctx) throw new Error('useTheme must be used within ThemeProvider');\n\n   return ctx;\n\n }",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\n// src/vite-env.d.ts\n\n/// <reference types=\"vite/client\" />",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\n{\n\n   \"compilerOptions\": {\n\n     \"types\": [\"vite/client\"]\n\n   }\n\n}",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\n{\n\n   \"compilerOptions\": {\n\n     \"baseUrl\": \".\",\n\n     \"paths\": {\n\n       \"@/*\": [\"src/*\"]\n\n    }\n\n  }\n\n}",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "JavaScript & Frontend",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "TS HOME\nTS Introduction\nTS Get Started\nTS Simple Types\nTS Explicit & Inference\nTS Special Types\nTS Arrays\nTS Tuples\nTS Object Types\nTS Enums\nTS Aliases & Interfaces\nTS Union Types\nTS Functions\nTS Casting\nTS Classes\nTS Basic Generics\nTS Utility Types\nTS Keyof\nTS Null\nTS Definitely Typed\nTS 5 Updates\nTS Configuration\nTS with Node.js\nTS with React\nTS Tooling\nTS Advanced Types\nTS Type Guards\nTS Conditional Types\nTS Mapped Types\nTS Type Inference\nTS Literal Types\nTS Namespaces\nTS Index Signatures\nTS Declaration Merging\nTS Async Programming\nTS Decorators\nTS in JS Projects\nTS Migration\nTS Error Handling\nTS Best Practices",
+                "heading": "TypeScript tutorial"
+            },
+            {
+                "content": "TS Certificate",
+                "heading": "TypeScript Cert"
+            },
+            {
+                "content": "TS Editor\nTS Exercises\nTS Quiz\nTS Practice Problems\nTS Syllabus\nTS Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\n TypeScript with React\n\n ❮ Previous\n Next ❯",
+                "heading": "TypeScript Exercises"
+            },
+            {
+                "content": "TypeScript enhances React with:\n\n Type safety for props, state, and context\n\n Better IDE autocompletion and refactoring\n\n Early error detection during development\n\n Note: This tutorial assumes basic knowledge of React.\n\n If you're new to React, consider checking out our React Tutorial first.",
+                "heading": "Why Use TypeScript with React?"
+            },
+            {
+                "content": "Create a new React + TypeScript app with Vite:\n\n Example\n\nnpm create vite@latest my-app -- --template react-ts\n\ncd my-app\n\nnpm install\n\nnpm run dev\n\nYour tsconfig.json should include these recommended compiler options:\n\nExample\n\n{\n\n   \"compilerOptions\": {\n\n     \"target\": \"ES2020\",\n\n     \"lib\": [\"ES2020\", \"DOM\", \"DOM.Iterable\"],\n\n     \"module\": \"ESNext\",\n\n     \"moduleResolution\": \"Node\",\n\n     \"jsx\": \"react-jsx\",\n\n     \"strict\": true,\n\n     \"skipLibCheck\": true,\n\n     \"noEmit\": true,\n\n     \"resolveJsonModule\": true,\n\n     \"allowSyntheticDefaultImports\": true,\n\n     \"esModuleInterop\": true,\n\n     \"forceConsistentCasingInFileNames\": true\n\n   },\n\n   \"include\": [\"src\"]\n\n}\n\n Note: Keep strict enabled for best type safety.\n\nThe shown options work well with Vite and Create React App.",
+                "heading": "Getting Started"
+            },
+            {
+                "content": "Define props with TypeScript and use them in a functional component:\n\n Example\n\n// Greeting.tsx\n\n type GreetingProps = {\n\n   name: string;\n\n   age?: number;\n\n };\n\n export function Greeting({ name, age }: GreetingProps) {\n\n   return (\n\n     <div>\n\n       <h2>Hello, {name}!</h2>\n\n       {age !== undefined && <p>You are {age} years old</p>}\n\n     </div>\n\n   );\n\n }",
+                "heading": "Component Typing"
+            },
+            {
+                "content": "Type-Safe Events\nType event handlers for inputs and buttons:\n\n Example\n\n// Input change\n\n function NameInput() {\n\n   function handleChange(e: React.ChangeEvent<HTMLInputElement>) {\n\n     console.log(e.target.value);\n\n   }\n\n   return <input onChange={handleChange} />;\n\n }\n\n // Button click\n\n function SaveButton() {\n\n   function handleClick(e: React.MouseEvent<HTMLButtonElement>) {\n\n     e.preventDefault();\n\n   }\n\n   return <button onClick={handleClick}>Save</button>;\n\n }\n\nTyping State with useState\nUse explicit types for numbers, unions, and nullable values:\n\nExample\n\nconst [count, setCount] = React.useState<number>(0);\n\n const [status, setStatus] = React.useState<'idle' | 'loading' | 'error'>('idle');\n\n type User = { id: string; name: string };\n\n const [user, setUser] = React.useState<User | null>(null);\n\nuseRef with DOM Elements\nType refs to DOM nodes to access properties safely:\n\nExample\n\nfunction FocusInput() {\n\n   const inputRef = React.useRef<HTMLInputElement>(null);\n\n   return <input ref={inputRef} onFocus={() => inputRef.current?.select()} />;\n\n }\n\nChildren Typing\nAccept children with the React.ReactNode type:\n\nExample\n\n type CardProps = { title: string; children?: React.ReactNode };\n\n function Card({ title, children }: CardProps) {\n\n   return (\n\n     <div>\n\n       <h2>{title}</h2>\n\n       {children}\n\n     </div>\n\n   );\n\n }\n\nFetch Helpers with Generics\nUse generics to type API responses:\n\nExample\n\nasync function fetchJson<T>(url: string): Promise<T> {\n\n   const res = await fetch(url);\n\n   if (!res.ok) throw new Error('Network error');\n\n   return res.json() as Promise<T>;\n\n }\n\n // Usage inside an async function/component effect\n\n async function loadPosts() {\n\n   type Post = { id: number; title: string };\n\n   const posts = await fetchJson<Post[]>(\"/api/posts\");\n\n   console.log(posts);\n\n }\n\nMinimal Context and Custom Hook\nProvide a small, typed context and a helper hook:\n\nExample\n\n type Theme = 'light' | 'dark';\n\n const ThemeContext = React.createContext<{ theme: Theme; toggle(): void } | null>(null);\n\n function ThemeProvider({ children }: { children: React.ReactNode }) {\n\n   const [theme, setTheme] = React.useState<Theme>('light');\n\n   const value = { theme, toggle: () => setTheme(t => (t === 'light' ? 'dark' : 'light')) };\n\n   return <ThemeContext.Provider value={value}>{children}</ThemeContext.Provider>;\n\n }\n\n function useTheme() {\n\n   const ctx = React.useContext(ThemeContext);\n\n   if (!ctx) throw new Error('useTheme must be used within ThemeProvider');\n\n   return ctx;\n\n }\n\nVite TypeScript types: Add Vite's ambient types to avoid missing definitions.\n\n Example\n\n// src/vite-env.d.ts\n\n/// <reference types=\"vite/client\" />\n\n Alternatively, add to tsconfig.json:\n\n Example\n\n{\n\n   \"compilerOptions\": {\n\n     \"types\": [\"vite/client\"]\n\n   }\n\n}\n\n About React.FC: Prefer directly typed function components.\n\nReact.FC is optional; it implicitly adds children but isn't required.\n\nOptional baseUrl and paths: These can simplify imports if supported by your bundler.\n\n Example\n\n{\n\n   \"compilerOptions\": {\n\n     \"baseUrl\": \".\",\n\n     \"paths\": {\n\n       \"@/*\": [\"src/*\"]\n\n    }\n\n  }\n\n}\n\nConfigure only if your tooling (e.g., Vite, tsconfig-paths) is set up for path aliases.\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Common Patterns"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:08:41Z",
+        "subject": "TypeScript",
+        "title": "TypeScript with React"
+    },
+    {
+        "url": "https://www.w3schools.com/typescript/typescript_tooling.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "typescript_typescript_tooling",
+        "code_examples": [
+            {
+                "code": "Example\n\n# Install ESLint with TypeScript support\n\nnpm install --save-dev eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\n// .eslintrc.json\n\n{\n\n  \"root\": true,\n\n  \"parser\": \"@typescript-eslint/parser\",\n\n  \"plugins\": [\"@typescript-eslint\"],\n\n  \"extends\": [\n\n    \"eslint:recommended\",\n\n    \"plugin:@typescript-eslint/recommended\",\n\n    \"plugin:@typescript-eslint/recommended-requiring-type-checking\"\n\n  ],\n\n  \"parserOptions\": {\n\n    \"project\": \"./tsconfig.json\",\n\n    \"ecmaVersion\": 2020,\n\n    \"sourceType\": \"module\"\n\n  },\n\n  \"rules\": {\n\n    \"@typescript-eslint/explicit-function-return-type\": \"warn\",\n\n    \"@typescript-eslint/no-explicit-any\": \"warn\",\n\n    \"@typescript-eslint/no-unused-vars\": [\"error\", { \"argsIgnorePattern\": \"^_\" }]\n\n  }\n\n}",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\n// package.json\n\n{\n\n  \"scripts\": {\n\n    \"lint\": \"eslint . --ext .ts,.tsx\",\n\n    \"lint:fix\": \"eslint . --ext .ts,.tsx --fix\",\n\n    \"type-check\": \"tsc --noEmit\"\n\n  }\n\n}",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\n# Install Prettier and related packages\n\nnpm install --save-dev prettier eslint-config-prettier eslint-plugin-prettier",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\n// .prettierrc\n\n{\n\n  \"semi\": true,\n\n  \"singleQuote\": true,\n\n  \"tabWidth\": 2,\n\n  \"printWidth\": 100,\n\n  \"trailingComma\": \"es5\",\n\n  \"bracketSpacing\": true,\n\n  \"arrowParens\": \"avoid\"\n\n}\n\n// .prettierignore\n\nnode_modules\n\nbuild\n\ndist\n\n.next\n\n.vscode",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\n// .eslintrc.json\n\n{\n\n  \"extends\": [\n\n    // ... other configs\n\n    \"plugin:prettier/recommended\" // Must be last in the array\n\n  ]\n\n}",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example: Integrate Prettier with ESLint\n\nnpm install --save-dev eslint-config-prettier eslint-plugin-prettier\n\n# In your .eslintrc.js or .eslintrc.json, add:\n\n{\n\n  \"extends\": [\"plugin:prettier/recommended\"]\n\n}",
+                "language": "typescript",
+                "heading": "Example: Integrate Prettier with ESLint",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\n# Create a new project with React + TypeScript\n\nnpm create vite@latest my-app -- --template react-ts\n\n# Navigate to project directory\n\ncd my-app\n\n# Install dependencies\n\nnpm install\n\n# Start development server\n\nnpm run dev",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\n// webpack.config.js\n\nconst path = require('path');\n\nconst HtmlWebpackPlugin = require('html-webpack-plugin');\n\nmodule.exports = {\n\n  entry: './src/index.tsx',\n\n  module: {\n\n    rules: [\n\n      {\n\n        test: /\\.(ts|tsx)$/,\n\n        use: 'ts-loader',\n\n        exclude: /node_modules/,\n\n      },\n\n      {\n\n        test: /\\.css$/,\n\n        use: ['style-loader', 'css-loader'],\n\n      },\n\n    ],\n\n  },\n\n  resolve: {\n\n    extensions: ['.tsx', '.ts', '.js'],\n\n  },\n\n  output: {\n\n    filename: 'bundle.js',\n\n    path: path.resolve(__dirname, 'dist'),\n\n  },\n\n  plugins: [\n\n    new HtmlWebpackPlugin({\n\n      template: './public/index.html',\n\n    }),\n\n  ],\n\n  devServer: {\n\n    static: path.join(__dirname, 'dist'),\n\n    compress: true,\n\n    port: 3000,\n\n    hot: true,\n\n  },\n\n};",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\n// tsconfig.json\n\n{\n\n  \"compilerOptions\": {\n\n    \"target\": \"es2020\",\n\n    \"module\": \"esnext\",\n\n    \"lib\": [\"dom\", \"dom.iterable\", \"esnext\"],\n\n    \"allowJs\": true,\n\n    \"skipLibCheck\": true,\n\n    \"esModuleInterop\": true,\n\n    \"allowSyntheticDefaultImports\": true,\n\n    \"strict\": true,\n\n    \"forceConsistentCasingInFileNames\": true,\n\n    \"moduleResolution\": \"node\",\n\n    \"resolveJsonModule\": true,\n\n    \"isolatedModules\": true,\n\n    \"noEmit\": true,\n\n    \"jsx\": \"react-jsx\",\n\n    \"baseUrl\": \".\",\n\n    \"paths\": {\n\n      \"@/*\": [\"src/*\"]\n\n    }\n\n  },\n\n  \"include\": [\"src\"],\n\n  \"exclude\": [\"node_modules\"]\n\n}",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\n// .vscode/settings.json\n\n{\n\n  \"editor.defaultFormatter\": \"esbenp.prettier-vscode\",\n\n  \"editor.formatOnSave\": true,\n\n  \"editor.codeActionsOnSave\": {\n\n    \"source.fixAll.eslint\": true,\n\n    \"source.organizeImports\": true\n\n  },\n\n  \"eslint.validate\": [\"javascript\", \"javascriptreact\", \"typescript\", \"typescriptreact\"],\n\n  \"typescript.tsdk\": \"node_modules/typescript/lib\",\n\n  \"typescript.preferences.importModuleSpecifier\": \"non-relative\"\n\n}",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\n// .vscode/launch.json\n\n{\n\n  \"version\": \"0.2.0\",\n\n  \"configurations\": [\n\n    {\n\n      \"type\": \"chrome\",\n\n      \"request\": \"launch\",\n\n      \"name\": \"Launch Chrome against localhost\",\n\n      \"url\": \"http://localhost:3000\",\n\n      \"webRoot\": \"${workspaceFolder}\",\n\n      \"sourceMaps\": true,\n\n      \"sourceMapPathOverrides\": {\n\n        \"webpack:///./~/*\": \"${workspaceFolder}/node_modules/*\",\n\n        \"webpack:///./*\": \"${workspaceFolder}/src/*\"\n\n      }\n\n    },\n\n    {\n\n      \"type\": \"node\",\n\n      \"request\": \"launch\",\n\n      \"name\": \"Debug Tests\",\n\n      \"runtimeExecutable\": \"${workspaceRoot}/node_modules/.bin/jest\",\n\n      \"args\": [\"--runInBand\", \"--watchAll=false\"],\n\n      \"console\": \"integratedTerminal\",\n\n      \"internalConsoleOptions\": \"neverOpen\",\n\n      \"sourceMaps\": true\n\n    }\n\n  ]\n\n}",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\n# Install testing dependencies\n\nnpm install --save-dev jest @types/jest ts-jest @testing-library/react @testing-library/jest-dom @testing-library/user-event",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\n// jest.config.js\n\nmodule.exports = {\n\n  preset: 'ts-jest',\n\n  testEnvironment: 'jsdom',\n\n  setupFilesAfterEnv: ['@testing-library/jest-dom'],\n\n  moduleNameMapper: {\n\n    '^@/(.*)$': '/src/$1',\n\n    '\\\\\\.(css|less|scss|sass)$': 'identity-obj-proxy',\n\n  },\n\n  transform: {\n\n    '^.+\\\\\\.tsx?$': 'ts-jest',\n\n  },\n\n  testMatch: ['**/__tests__/**/*.test.(ts|tsx)'],\n\n};",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\n// src/__tests__/Button.test.tsx\n\nimport React from 'react';\n\nimport { render, screen, fireEvent } from '@testing-library/react';\n\nimport '@testing-library/jest-dom';\n\nimport Button from '../components/Button';\n\ndescribe('Button', () => {\n\n  it('renders button with correct text', () => {\n\n    render(<Button>Click me</Button>);\n\n    expect(screen.getByRole('button', { name: /click me/i })).toBeInTheDocument();\n\n  });\n\n  it('calls onClick when clicked', () => {\n\n    const handleClick = jest.fn();\n\n    render(<Button onClick={handleClick}>Click me</Button>);\n\n    fireEvent.click(screen.getByRole('button'));\n\n    expect(handleClick).toHaveBeenCalledTimes(1);\n\n  });\n\n});",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "JavaScript & Frontend",
+        "notes_and_tips": [
+            "Development Workflow\n\n Use npm run dev for development with hot reloading\n\n Run npm run type-check to verify TypeScript types\n\n Use npm run lint to check for linting errors\n\n Run npm run build to create production build\n\n Performance Optimization\n\n Use code splitting with dynamic imports\n\n Enable tree-shaking in production builds\n\n Use React.memo and useMemo for expensive computations\n\n Lazy load non-critical components",
+            "TypeScript configuration: Ensure strict mode is enabled\n\n ESLint + Prettier conflicts: Use eslint-config-prettier to disable conflicting rules\n\n Slow builds: Consider using Vite or esbuild for faster development\n\n Missing type definitions: Install @types packages for all dependencies\n\n Debugging issues: Ensure source maps are properly configured",
+            "Bundlers: Vite, Webpack, Parcel\n\n Testing: Jest, React Testing Library, Cypress\n\n Linting/Formatting: ESLint, Prettier, Stylelint\n\n Documentation: TypeDoc, Storybook\n\n Performance: Web Vitals, Lighthouse"
+        ],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "TS HOME\nTS Introduction\nTS Get Started\nTS Simple Types\nTS Explicit & Inference\nTS Special Types\nTS Arrays\nTS Tuples\nTS Object Types\nTS Enums\nTS Aliases & Interfaces\nTS Union Types\nTS Functions\nTS Casting\nTS Classes\nTS Basic Generics\nTS Utility Types\nTS Keyof\nTS Null\nTS Definitely Typed\nTS 5 Updates\nTS Configuration\nTS with Node.js\nTS with React\nTS Tooling\nTS Advanced Types\nTS Type Guards\nTS Conditional Types\nTS Mapped Types\nTS Type Inference\nTS Literal Types\nTS Namespaces\nTS Index Signatures\nTS Declaration Merging\nTS Async Programming\nTS Decorators\nTS in JS Projects\nTS Migration\nTS Error Handling\nTS Best Practices",
+                "heading": "TypeScript tutorial"
+            },
+            {
+                "content": "TS Certificate",
+                "heading": "TypeScript Cert"
+            },
+            {
+                "content": "TS Editor\nTS Exercises\nTS Quiz\nTS Practice Problems\nTS Syllabus\nTS Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\n TypeScript Tooling\n\n ❮ Previous\n Next ❯",
+                "heading": "TypeScript Exercises"
+            },
+            {
+                "content": "TypeScript's tooling ecosystem is one of its greatest strengths, providing developers with powerful tools for every stage of development:\n\n Code Quality\n\n ESLint with TypeScript support\n\n Type checking and linting\n\n Code style enforcement\n\n Development\n\n VS Code integration\n\n Debugging tools\n\n Hot Module Replacement (HMR)\n\n Build & Deploy\n\n Bundlers (Vite, Webpack, Parcel)\n\n Module bundling\n\n Production optimization",
+                "heading": "TypeScript Development Ecosystem"
+            },
+            {
+                "content": "Installation\nInstall ESLint and the official TypeScript plugin/parser so ESLint can understand TypeScript syntax and rules.\n\nExample\n\n# Install ESLint with TypeScript support\n\nnpm install --save-dev eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin\n\nConfiguration\nThis configuration enables recommended ESLint rules for TypeScript, connects ESLint to your tsconfig for type-aware linting, and tweaks a few common rules.\n\nExample\n\n// .eslintrc.json\n\n{\n\n  \"root\": true,\n\n  \"parser\": \"@typescript-eslint/parser\",\n\n  \"plugins\": [\"@typescript-eslint\"],\n\n  \"extends\": [\n\n    \"eslint:recommended\",\n\n    \"plugin:@typescript-eslint/recommended\",\n\n    \"plugin:@typescript-eslint/recommended-requiring-type-checking\"\n\n  ],\n\n  \"parserOptions\": {\n\n    \"project\": \"./tsconfig.json\",\n\n    \"ecmaVersion\": 2020,\n\n    \"sourceType\": \"module\"\n\n  },\n\n  \"rules\": {\n\n    \"@typescript-eslint/explicit-function-return-type\": \"warn\",\n\n    \"@typescript-eslint/no-explicit-any\": \"warn\",\n\n    \"@typescript-eslint/no-unused-vars\": [\"error\", { \"argsIgnorePattern\": \"^_\" }]\n\n  }\n\n}\n\nNPM Scripts\nAdd scripts to run linting and a type-only check.\n\nUse lint:fix to auto-fix simple issues.\n\nExample\n\n// package.json\n\n{\n\n  \"scripts\": {\n\n    \"lint\": \"eslint . --ext .ts,.tsx\",\n\n    \"lint:fix\": \"eslint . --ext .ts,.tsx --fix\",\n\n    \"type-check\": \"tsc --noEmit\"\n\n  }\n\n}",
+                "heading": "Linting with ESLint"
+            },
+            {
+                "content": "Prettier enforces a consistent code style across your team.\n\nCombine it with ESLint to avoid formatting-related lint errors.\n\nInstallation\nInstall Prettier plus ESLint plugins that disable conflicting rules and surface formatting issues via ESLint.\n\nExample\n\n# Install Prettier and related packages\n\nnpm install --save-dev prettier eslint-config-prettier eslint-plugin-prettier\n\nConfiguration\nDefine your Prettier preferences in .prettierrc and ignore generated folders in .prettierignore.\n\nExample\n\n// .prettierrc\n\n{\n\n  \"semi\": true,\n\n  \"singleQuote\": true,\n\n  \"tabWidth\": 2,\n\n  \"printWidth\": 100,\n\n  \"trailingComma\": \"es5\",\n\n  \"bracketSpacing\": true,\n\n  \"arrowParens\": \"avoid\"\n\n}\n\n// .prettierignore\n\nnode_modules\n\nbuild\n\ndist\n\n.next\n\n.vscode\n\nIntegrate with ESLint\nExtend plugin:prettier/recommended so formatting problems are reported as ESLint issues.\n\nExample\n\n// .eslintrc.json\n\n{\n\n  \"extends\": [\n\n    // ... other configs\n\n    \"plugin:prettier/recommended\" // Must be last in the array\n\n  ]\n\n}\n\nExample: Integrate Prettier with ESLint\n\nnpm install --save-dev eslint-config-prettier eslint-plugin-prettier\n\n# In your .eslintrc.js or .eslintrc.json, add:\n\n{\n\n  \"extends\": [\"plugin:prettier/recommended\"]\n\n}",
+                "heading": "Code Formatting with Prettier"
+            },
+            {
+                "content": "Vite is the recommended choice for fast dev server and modern builds.\n\nWebpack remains common and highly configurable.\n\nVite (Recommended)\nCreate a new React + TypeScript project using Vite.\n\nIt starts a dev server with HMR for rapid feedback.\n\nExample\n\n# Create a new project with React + TypeScript\n\nnpm create vite@latest my-app -- --template react-ts\n\n# Navigate to project directory\n\ncd my-app\n\n# Install dependencies\n\nnpm install\n\n# Start development server\n\nnpm run dev\n\nWebpack Configuration\nIf you choose Webpack, this minimal setup transpiles TypeScript, handles CSS, and serves your app with webpack-dev-server.\n\nExample\n\n// webpack.config.js\n\nconst path = require('path');\n\nconst HtmlWebpackPlugin = require('html-webpack-plugin');\n\nmodule.exports = {\n\n  entry: './src/index.tsx',\n\n  module: {\n\n    rules: [\n\n      {\n\n        test: /\\.(ts|tsx)$/,\n\n        use: 'ts-loader',\n\n        exclude: /node_modules/,\n\n      },\n\n      {\n\n        test: /\\.css$/,\n\n        use: ['style-loader', 'css-loader'],\n\n      },\n\n    ],\n\n  },\n\n  resolve: {\n\n    extensions: ['.tsx', '.ts', '.js'],\n\n  },\n\n  output: {\n\n    filename: 'bundle.js',\n\n    path: path.resolve(__dirname, 'dist'),\n\n  },\n\n  plugins: [\n\n    new HtmlWebpackPlugin({\n\n      template: './public/index.html',\n\n    }),\n\n  ],\n\n  devServer: {\n\n    static: path.join(__dirname, 'dist'),\n\n    compress: true,\n\n    port: 3000,\n\n    hot: true,\n\n  },\n\n};\n\nTypeScript Configuration\nA strict tsconfig.json that targets modern browsers.\n\nThe optional baseUrl and paths help with absolute imports like @/components/Button.\n\nExample\n\n// tsconfig.json\n\n{\n\n  \"compilerOptions\": {\n\n    \"target\": \"es2020\",\n\n    \"module\": \"esnext\",\n\n    \"lib\": [\"dom\", \"dom.iterable\", \"esnext\"],\n\n    \"allowJs\": true,\n\n    \"skipLibCheck\": true,\n\n    \"esModuleInterop\": true,\n\n    \"allowSyntheticDefaultImports\": true,\n\n    \"strict\": true,\n\n    \"forceConsistentCasingInFileNames\": true,\n\n    \"moduleResolution\": \"node\",\n\n    \"resolveJsonModule\": true,\n\n    \"isolatedModules\": true,\n\n    \"noEmit\": true,\n\n    \"jsx\": \"react-jsx\",\n\n    \"baseUrl\": \".\",\n\n    \"paths\": {\n\n      \"@/*\": [\"src/*\"]\n\n    }\n\n  },\n\n  \"include\": [\"src\"],\n\n  \"exclude\": [\"node_modules\"]\n\n}",
+                "heading": "Modern Build Tools"
+            },
+            {
+                "content": "Configure your editor to surface lint errors, format on save, and debug efficiently.\n\nVS Code Extensions\n\n Recommended extensions for VS Code:\n\n TypeScript + Webpack Problem Matchers - For better error reporting\n\n ESLint - Integrates ESLint into VS Code\n\n Prettier - Code formatter - For consistent code formatting\n\n Path IntelliSense - Autocomplete filenames\n\n Error Lens - Show errors inline\n\nVS Code Settings\nUse Prettier as the default formatter, fix ESLint issues on save, and prefer non-relative import paths.\n\nExample\n\n// .vscode/settings.json\n\n{\n\n  \"editor.defaultFormatter\": \"esbenp.prettier-vscode\",\n\n  \"editor.formatOnSave\": true,\n\n  \"editor.codeActionsOnSave\": {\n\n    \"source.fixAll.eslint\": true,\n\n    \"source.organizeImports\": true\n\n  },\n\n  \"eslint.validate\": [\"javascript\", \"javascriptreact\", \"typescript\", \"typescriptreact\"],\n\n  \"typescript.tsdk\": \"node_modules/typescript/lib\",\n\n  \"typescript.preferences.importModuleSpecifier\": \"non-relative\"\n\n}\n\nDebugging Configuration\nLaunch Chrome against your dev server and run Node-based test debugging directly from VS Code.\n\nExample\n\n// .vscode/launch.json\n\n{\n\n  \"version\": \"0.2.0\",\n\n  \"configurations\": [\n\n    {\n\n      \"type\": \"chrome\",\n\n      \"request\": \"launch\",\n\n      \"name\": \"Launch Chrome against localhost\",\n\n      \"url\": \"http://localhost:3000\",\n\n      \"webRoot\": \"${workspaceFolder}\",\n\n      \"sourceMaps\": true,\n\n      \"sourceMapPathOverrides\": {\n\n        \"webpack:///./~/*\": \"${workspaceFolder}/node_modules/*\",\n\n        \"webpack:///./*\": \"${workspaceFolder}/src/*\"\n\n      }\n\n    },\n\n    {\n\n      \"type\": \"node\",\n\n      \"request\": \"launch\",\n\n      \"name\": \"Debug Tests\",\n\n      \"runtimeExecutable\": \"${workspaceRoot}/node_modules/.bin/jest\",\n\n      \"args\": [\"--runInBand\", \"--watchAll=false\"],\n\n      \"console\": \"integratedTerminal\",\n\n      \"internalConsoleOptions\": \"neverOpen\",\n\n      \"sourceMaps\": true\n\n    }\n\n  ]\n\n}",
+                "heading": "Development Environment Setup"
+            },
+            {
+                "content": "Jest with Testing Library is a popular setup for testing React + TypeScript apps.\n\nJest + Testing Library\nInstall Jest, TypeScript support, and React Testing Library utilities for DOM assertions and user interactions.\n\nExample\n\n# Install testing dependencies\n\nnpm install --save-dev jest @types/jest ts-jest @testing-library/react @testing-library/jest-dom @testing-library/user-event\n\nJest Configuration\nConfigure Jest to use ts-jest, map CSS modules, and resolve alias paths like @/.\n\nExample\n\n// jest.config.js\n\nmodule.exports = {\n\n  preset: 'ts-jest',\n\n  testEnvironment: 'jsdom',\n\n  setupFilesAfterEnv: ['@testing-library/jest-dom'],\n\n  moduleNameMapper: {\n\n    '^@/(.*)$': '/src/$1',\n\n    '\\\\\\.(css|less|scss|sass)$': 'identity-obj-proxy',\n\n  },\n\n  transform: {\n\n    '^.+\\\\\\.tsx?$': 'ts-jest',\n\n  },\n\n  testMatch: ['**/__tests__/**/*.test.(ts|tsx)'],\n\n};\n\nExample Test\nA simple component test that verifies rendering and click behavior using Testing Library.\n\nExample\n\n// src/__tests__/Button.test.tsx\n\nimport React from 'react';\n\nimport { render, screen, fireEvent } from '@testing-library/react';\n\nimport '@testing-library/jest-dom';\n\nimport Button from '../components/Button';\n\ndescribe('Button', () => {\n\n  it('renders button with correct text', () => {\n\n    render(<Button>Click me</Button>);\n\n    expect(screen.getByRole('button', { name: /click me/i })).toBeInTheDocument();\n\n  });\n\n  it('calls onClick when clicked', () => {\n\n    const handleClick = jest.fn();\n\n    render(<Button onClick={handleClick}>Click me</Button>);\n\n    fireEvent.click(screen.getByRole('button'));\n\n    expect(handleClick).toHaveBeenCalledTimes(1);\n\n  });\n\n});",
+                "heading": "Testing Setup"
+            },
+            {
+                "content": "Development Workflow\n\n Use npm run dev for development with hot reloading\n\n Run npm run type-check to verify TypeScript types\n\n Use npm run lint to check for linting errors\n\n Run npm run build to create production build\n\n Performance Optimization\n\n Use code splitting with dynamic imports\n\n Enable tree-shaking in production builds\n\n Use React.memo and useMemo for expensive computations\n\n Lazy load non-critical components",
+                "heading": "Best Practices"
+            },
+            {
+                "content": "TypeScript configuration: Ensure strict mode is enabled\n\n ESLint + Prettier conflicts: Use eslint-config-prettier to disable conflicting rules\n\n Slow builds: Consider using Vite or esbuild for faster development\n\n Missing type definitions: Install @types packages for all dependencies\n\n Debugging issues: Ensure source maps are properly configured",
+                "heading": "Common Pitfalls"
+            },
+            {
+                "content": "Bundlers: Vite, Webpack, Parcel\n\n Testing: Jest, React Testing Library, Cypress\n\n Linting/Formatting: ESLint, Prettier, Stylelint\n\n Documentation: TypeDoc, Storybook\n\n Performance: Web Vitals, Lighthouse\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Recommended Tools"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:08:41Z",
+        "subject": "TypeScript",
+        "title": "TypeScript Tooling"
+    },
+    {
+        "url": "https://www.w3schools.com/typescript/typescript_advanced_types.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "typescript_typescript_advanced_types",
+        "code_examples": [
+            {
+                "code": "// Convert all properties to boolean\n\ntype Flags<T> = {\n\n  [K in keyof T]: boolean;\n\n};\n\ninterface User {\n\n  id: number;\n\n  name: string;\n\n  email: string;\n\n}\n\ntype UserFlags = Flags<User>;\n\n// Equivalent to:\n\n// {\n\n//   id: boolean;\n\n//   name: boolean;\n\n//   email: boolean;\n\n// }",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "JavaScript & Frontend",
+        "notes_and_tips": [
+            "Key Advanced Type Features\n\n Mapped Types: Transform properties of existing types\n\n Conditional Types: Create types based on conditions\n\n Template Literal Types: Build types using string templates\n\n Utility Types: Built-in type helpers for common transformations\n\n Recursive Types: Self-referential types for tree-like structures\n\n Type Guards & Type Predicates: Runtime type checking\n\n Type Inference: Advanced pattern matching with infer",
+            "When to Use Advanced Types\n\n Use mapped types when you need to transform multiple properties of an object type\n\n Use conditional types when your type depends on another type\n\n Use template literal types for string manipulation and pattern matching\n\n Use utility types for common transformations (prefer built-in ones when possible)\n\n Use recursive types for tree-like or nested data structures\n\n Performance Considerations\n\n Deeply nested recursive types can slow down the TypeScript compiler\n\n Very large union types (100+ members) can cause performance issues\n\n Use type aliases to break down complex types",
+            "Type Inference Issues\n\n Conditional types distribute over union types, which can be surprising\n\n Type inference with infer works differently in different contexts\n\n Some utility types don't work well with any or unknown\n\n Maintainability\n\n Overusing complex types can make code hard to understand\n\n Document complex type transformations with comments\n\n Consider using type assertions or helper functions for very complex types"
+        ],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "TS HOME\nTS Introduction\nTS Get Started\nTS Simple Types\nTS Explicit & Inference\nTS Special Types\nTS Arrays\nTS Tuples\nTS Object Types\nTS Enums\nTS Aliases & Interfaces\nTS Union Types\nTS Functions\nTS Casting\nTS Classes\nTS Basic Generics\nTS Utility Types\nTS Keyof\nTS Null\nTS Definitely Typed\nTS 5 Updates\nTS Configuration\nTS with Node.js\nTS with React\nTS Tooling\nTS Advanced Types\nTS Type Guards\nTS Conditional Types\nTS Mapped Types\nTS Type Inference\nTS Literal Types\nTS Namespaces\nTS Index Signatures\nTS Declaration Merging\nTS Async Programming\nTS Decorators\nTS in JS Projects\nTS Migration\nTS Error Handling\nTS Best Practices",
+                "heading": "TypeScript tutorial"
+            },
+            {
+                "content": "TS Certificate",
+                "heading": "TypeScript Cert"
+            },
+            {
+                "content": "TS Editor\nTS Exercises\nTS Quiz\nTS Practice Problems\nTS Syllabus\nTS Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\n TypeScript Advanced Types\n\n ❮ Previous\n Next ❯",
+                "heading": "TypeScript Exercises"
+            },
+            {
+                "content": "TypeScript's advanced type system allows you to model complex type relationships with precision.\n\nThese features are particularly useful for building robust, maintainable applications with excellent type safety.\n\n Key Advanced Type Features\n\n Mapped Types: Transform properties of existing types\n\n Conditional Types: Create types based on conditions\n\n Template Literal Types: Build types using string templates\n\n Utility Types: Built-in type helpers for common transformations\n\n Recursive Types: Self-referential types for tree-like structures\n\n Type Guards & Type Predicates: Runtime type checking\n\n Type Inference: Advanced pattern matching with infer",
+                "heading": "Advanced TypeScript Types"
+            },
+            {
+                "content": "Mapped types allow you to create new types by transforming properties of existing types.\n\nBasic Mapped Type\nTransform every property of an object type into a new type using a single template.\n\nExample\n\n// Convert all properties to boolean\n\ntype Flags<T> = {\n\n  [K in keyof T]: boolean;\n\n};\n\ninterface User {\n\n  id: number;\n\n  name: string;\n\n  email: string;\n\n}\n\ntype UserFlags = Flags<User>;\n\n// Equivalent to:\n\n// {\n\n//   id: boolean;\n\n//   name: boolean;\n\n//   email: boolean;\n\n// }\n\nTry it Yourself »\n\nMapped Type Modifiers\nAdd or remove property modifiers like readonly and ? across all keys.\n\nExample\n\n// Make all properties optional\n\ninterface Todo {\n\n  title: string;\n\n  description: string;\n\n  completed: boolean;\n\n}\n\ntype OptionalTodo = {\n\n  [K in keyof Todo]?: Todo[K];\n\n};\n\n// Remove 'readonly' and '?' modifiers\n\ntype Concrete<T> = {\n\n  -readonly [K in keyof T]-?: T[K];\n\n};\n\n// Add 'readonly' and 'required' to all properties\n\ntype ReadonlyRequired<T> = {\n\n  +readonly [K in keyof T]-?: T[K];\n\n};\n\nTry it Yourself »\n\nKey Remapping\nRename or filter keys while mapping using as, string helpers, and conditional checks.\n\nExample\n\n// Add prefix to all property names\n\ntype Getters<T> = {\n\n  [K in keyof T as `get${Capitalize<string & K>}`]: () => T[K];\n\n};\n\ntype UserGetters = Getters<User>;\n\n// {\n\n//   getId: () => number;\n\n//   getName: () => string;\n\n//   getEmail: () => string;\n\n// }\n\n// Filter out properties\n\ntype MethodsOnly<T> = {\n\n  [K in keyof T as T[K] extends Function ? K : never]: T[K];\n\n};\n\nTry it Yourself »",
+                "heading": "Mapped Types"
+            },
+            {
+                "content": "Conditional types allow you to define types that depend on a condition.\n\nBasic Conditional Types\nSelect between types based on a condition checked at the type level.\n\nExample\n\ntype IsString<T> = T extends string ? true : false;\n\ntype A = IsString<string>;    // true\n\ntype B = IsString<number>;    // false\n\ntype C = IsString<'hello'>;    // true\n\ntype D = IsString<string | number>; // boolean\n\n// Extract array element type\n\ntype ArrayElement<T> = T extends (infer U)[] ? U : never;\n\ntype Numbers = ArrayElement<number[]>; // number\n\nTry it Yourself »\n\nInfer Keyword\nCapture a part of a type within a conditional type by introducing a new type variable with infer.\n\nExample\n\n// Get return type of a function\n\ntype ReturnType<T> = T extends (...args: any[]) => infer R ? R : any;\n\n// Get parameter types as a tuple\n\ntype Parameters<T> = T extends (...args: infer P) => any ? P : never;\n\n// Get constructor parameter types\n\ntype ConstructorParameters<T extends new (...args: any) => any> =\n\n  T extends new (...args: infer P) => any ? P : never;\n\n// Get instance type from a constructor\n\ntype InstanceType<T extends new (...args: any) => any> =\n\n  T extends new (...args: any) => infer R ? R : any;\n\nTry it Yourself »\n\nDistributed Conditional Types\nUnderstand how conditionals distribute over unions versus when they are wrapped to prevent distribution.\n\nExample\n\n// Without distribution\n\ntype ToArrayNonDist<T> = T extends any ? T[] : never;\n\ntype StrOrNumArr = ToArrayNonDist<string | number>; // (string | number)[]\n\n// With distribution\n\ntype ToArray<T> = [T] extends [any] ? T[] : never;\n\ntype StrOrNumArr2 = ToArray<string | number>; // string[] | number[]\n\n// Filter out non-string types\n\ntype FilterStrings<T> = T extends string ? T : never;\n\ntype Letters = FilterStrings<'a' | 'b' | 1 | 2 | 'c'>; // 'a' | 'b' | 'c'\n\nTry it Yourself »",
+                "heading": "Conditional Types"
+            },
+            {
+                "content": "Template literal types allow you to build types using template literal syntax.\n\nBasic Template Literal Types\nConstrain strings to specific patterns using template literals and unions.\n\nExample\n\ntype Greeting = `Hello, ${string}`;\n\nconst validGreeting: Greeting = 'Hello, World!';\n\nconst invalidGreeting: Greeting = 'Hi there!'; // Error\n\n// With unions\n\ntype Color = 'red' | 'green' | 'blue';\n\ntype Size = 'small' | 'medium' | 'large';\n\ntype Style = `${Color}-${Size}`;\n\n// 'red-small' | 'red-medium' | 'red-large' |\n\n// 'green-small' | 'green-medium' | 'green-large' |\n\n// 'blue-small' | 'blue-medium' | 'blue-large'\n\nTry it Yourself »\n\nString Manipulation Types\nApply built-in helpers to transform string literal types (uppercasing, capitalizing, etc.).\n\nExample\n\n// Built-in string manipulation types\n\ntype T1 = Uppercase<'hello'>;  // 'HELLO'\n\ntype T2 = Lowercase<'WORLD'>;  // 'world'\n\ntype T3 = Capitalize<'typescript'>;  // 'Typescript'\n\ntype T4 = Uncapitalize<'TypeScript'>;  // 'typeScript'\n\n// Create an event handler type\n\ntype EventType = 'click' | 'change' | 'keydown';\n\ntype EventHandler = `on${Capitalize<EventType>}`;\n\n// 'onClick' | 'onChange' | 'onKeydown'\n\nTry it Yourself »\n\nAdvanced Patterns\nCompose templates with inference and key remapping to extract metadata and generate APIs.\n\nExample\n\n// Extract route parameters\n\ntype ExtractRouteParams<T> =\n\n  T extends `${string}:${infer Param}/${infer Rest}`\n\n    ? { [K in Param | keyof ExtractRouteParams<`${Rest}`>]: string }\n\n    : T extends `${string}:${infer Param}`\n\n    ? { [K in Param]: string }\n\n    : {};\n\ntype Params = ExtractRouteParams<'/users/:userId/posts/:postId'>;\n\n// { userId: string; postId: string; }\n\n// Create a type-safe event emitter\n\ntype EventMap = {\n\n  click: { x: number; y: number };\n\n  change: string;\n\n  keydown: { key: string; code: number };\n\n};\n\ntype EventHandlers = {\n\n  [K in keyof EventMap as `on${Capitalize<K>}`]: (event: EventMap[K]) => void;\n\n};\n\nTry it Yourself »",
+                "heading": "Template Literal Types"
+            },
+            {
+                "content": "TypeScript provides several built-in utility types for common type transformations.\n\nCommon Utility Types\nUse built-ins like Partial, Pick, and Omit for common transformations.\n\nExample\n\n// Basic types\n\ninterface User {\n\n  id: number;\n\n  name: string;\n\n  email: string;\n\n  createdAt: Date;\n\n}\n\n// Make all properties optional\n\ntype PartialUser = Partial<User>;\n\n// make all properties required\n\ntype RequiredUser = Required<PartialUser>;\n\n// make all properties read-only\n\ntype ReadonlyUser = Readonly<User>;\n\n// pick specific properties\n\ntype UserPreview = Pick<User, 'id' | 'name'>;\n\n// omit specific properties\n\ntype UserWithoutEmail = Omit<User, 'email'>;\n\n// extract property types\n\ntype UserId = User['id']; // number\n\ntype UserKeys = keyof User; // 'id' | 'name' | 'email' | 'createdAt'\n\nTry it Yourself »\n\nAdvanced Utility Types\nExclude or extract members from unions and create custom mapped helpers.\n\nExample\n\n// Create a type that excludes null and undefined\n\ntype NonNullable<T> = T extends null | undefined ? never : T;\n\n// Exclude types from a union\n\ntype Numbers = 1 | 2 | 3 | 'a' | 'b';\n\ntype JustNumbers = Exclude<Numbers, string>; // 1 | 2 | 3\n\n// Extract types from a union\n\ntype JustStrings = Extract<Numbers, string>; // 'a' | 'b'\n\n// Get the type that is not in the second type\n\ntype A = { a: string; b: number; c: boolean };\n\ntype B = { a: string; b: number };\n\ntype C = Omit<A, keyof B>; // { c: boolean }\n\n// Create a type with all properties as mutable\n\ntype Mutable<T> = {\n\n  -readonly [K in keyof T]: T[K];\n\n};\n\nTry it Yourself »",
+                "heading": "Utility Types"
+            },
+            {
+                "content": "Recursive types are useful for modeling tree-like data structures where a type can reference itself.\n\nBasic Recursive Type\nModel self-referential structures like trees and nested JSON.\n\nExample\n\n// Simple binary tree\n\ntype BinaryTree<T> = {\n\n  value: T;\n\n  left?: BinaryTree<T>;\n\n  right?: BinaryTree<T>;\n\n};\n\n// JSON-like data structure\n\ntype JSONValue =\n\n  | string\n\n  | number\n\n  | boolean\n\n  | null\n\n  | JSONValue[]\n\n  | { [key: string]: JSONValue };\n\n// Nested comments\n\ntype Comment = {\n\n  id: number;\n\n  content: string;\n\n  replies: Comment[];\n\n  createdAt: Date;\n\n};\n\nTry it Yourself »\n\nAdvanced Recursive Types\nExpress linked lists, directory trees, and recursive state machines.\n\nExample\n\n// Type for a linked list\n\ntype LinkedList<T> = {\n\n  value: T;\n\n  next: LinkedList<T> | null;\n\n};\n\n// Type for a directory structure\n\ntype File = {\n\n  type: 'file';\n\n  name: string;\n\n  size: number;\n\n};\n\ntype Directory = {\n\n  type: 'directory';\n\n  name: string;\n\n  children: (File | Directory)[];\n\n};\n\n// Type for a state machine\n\ntype State = {\n\n  value: string;\n\n  transitions: {\n\n    [event: string]: State;\n\n  };\n\n};\n\n// Type for a recursive function\n\ntype RecursiveFunction<T> = (x: T | RecursiveFunction<T>) => void;\n\nTry it Yourself »",
+                "heading": "Recursive Types"
+            },
+            {
+                "content": "When to Use Advanced Types\n\n Use mapped types when you need to transform multiple properties of an object type\n\n Use conditional types when your type depends on another type\n\n Use template literal types for string manipulation and pattern matching\n\n Use utility types for common transformations (prefer built-in ones when possible)\n\n Use recursive types for tree-like or nested data structures\n\n Performance Considerations\n\n Deeply nested recursive types can slow down the TypeScript compiler\n\n Very large union types (100+ members) can cause performance issues\n\n Use type aliases to break down complex types",
+                "heading": "Best Practices"
+            },
+            {
+                "content": "Type Inference Issues\n\n Conditional types distribute over union types, which can be surprising\n\n Type inference with infer works differently in different contexts\n\n Some utility types don't work well with any or unknown\n\n Maintainability\n\n Overusing complex types can make code hard to understand\n\n Document complex type transformations with comments\n\n Consider using type assertions or helper functions for very complex types\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Common Pitfalls"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:08:42Z",
+        "subject": "TypeScript",
+        "title": "TypeScript Advanced Types"
+    },
+    {
+        "url": "https://www.w3schools.com/typescript/typescript_type_guards.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "typescript_typescript_type_guards",
+        "code_examples": [
+            {
+                "code": "// Simple type guard with typeof\n\nfunction formatValue(value: string | number): string {\n\n  if (typeof value === 'string') {\n\n    // TypeScript knows value is string here\n\n    return value.trim().toUpperCase();\n\n  } else {\n\n    // TypeScript knows value is number here\n\n    return value.toFixed(2);\n\n  }\n\n}\n\n// Example usage\n\nconst result1 = formatValue('  hello  ');  // \"HELLO\"\n\nconst result2 = formatValue(42.1234);      // \"42.12\"",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "JavaScript & Frontend",
+        "notes_and_tips": [
+            "Why Use Type Guards?\n\n Type Safety: Ensure operations are only performed on appropriate types\n\n Code Clarity: Make type checking explicit and self-documenting\n\n Better Tooling: Get accurate IntelliSense and code completion\n\n Error Prevention: Catch type-related errors at compile time\n\n Runtime Safety: Add an extra layer of type checking at runtime",
+            "Type Guard Patterns\n\n typeof type guards\n\n instanceof type guards\n\n User-defined type guards with type predicates\n\n Discriminated unions with literal types\n\n in operator type guards\n\n Type assertion functions",
+            "When to Use Each Type Guard\n\n Use typeof for primitive types (string, number, boolean, etc.)\n\n Use instanceof for class instances and built-in objects\n\n Use user-defined type guards for complex validation logic\n\n Use discriminated unions for related types with a common discriminant\n\n Use the in operator for checking property existence\n\n Use type assertion functions for runtime validation with errors\n\n Performance Considerations\n\n typeof and instanceof are very fast\n\n Avoid complex logic in user-defined type guards when performance is critical\n\n Consider using type predicates for expensive checks that are used multiple times"
+        ],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "TS HOME\nTS Introduction\nTS Get Started\nTS Simple Types\nTS Explicit & Inference\nTS Special Types\nTS Arrays\nTS Tuples\nTS Object Types\nTS Enums\nTS Aliases & Interfaces\nTS Union Types\nTS Functions\nTS Casting\nTS Classes\nTS Basic Generics\nTS Utility Types\nTS Keyof\nTS Null\nTS Definitely Typed\nTS 5 Updates\nTS Configuration\nTS with Node.js\nTS with React\nTS Tooling\nTS Advanced Types\nTS Type Guards\nTS Conditional Types\nTS Mapped Types\nTS Type Inference\nTS Literal Types\nTS Namespaces\nTS Index Signatures\nTS Declaration Merging\nTS Async Programming\nTS Decorators\nTS in JS Projects\nTS Migration\nTS Error Handling\nTS Best Practices",
+                "heading": "TypeScript tutorial"
+            },
+            {
+                "content": "TS Certificate",
+                "heading": "TypeScript Cert"
+            },
+            {
+                "content": "TS Editor\nTS Exercises\nTS Quiz\nTS Practice Problems\nTS Syllabus\nTS Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\n TypeScript Type Guards\n\n ❮ Previous\n Next ❯",
+                "heading": "TypeScript Exercises"
+            },
+            {
+                "content": "TypeScript Type Guards are powerful constructs that allow you to narrow down the type of a variable within a specific scope.\n\nThey help TypeScript understand and enforce type safety by providing explicit checks that determine the specific type of a variable at runtime.\n\n Why Use Type Guards?\n\n Type Safety: Ensure operations are only performed on appropriate types\n\n Code Clarity: Make type checking explicit and self-documenting\n\n Better Tooling: Get accurate IntelliSense and code completion\n\n Error Prevention: Catch type-related errors at compile time\n\n Runtime Safety: Add an extra layer of type checking at runtime\n\n Type Guard Patterns\n\n typeof type guards\n\n instanceof type guards\n\n User-defined type guards with type predicates\n\n Discriminated unions with literal types\n\n in operator type guards\n\n Type assertion functions",
+                "heading": "Understanding Type Guards in TypeScript"
+            },
+            {
+                "content": "The typeof operator is a built-in type guard that checks the type of a primitive value at runtime.\n\nIt's particularly useful for narrowing primitive types like strings, numbers, booleans, etc.\n\nBasic Usage\nUse typeof checks to narrow primitive unions inside conditional branches.\n\n Example\n\n// Simple type guard with typeof\n\nfunction formatValue(value: string | number): string {\n\n  if (typeof value === 'string') {\n\n    // TypeScript knows value is string here\n\n    return value.trim().toUpperCase();\n\n  } else {\n\n    // TypeScript knows value is number here\n\n    return value.toFixed(2);\n\n  }\n\n}\n\n// Example usage\n\nconst result1 = formatValue('  hello  ');  // \"HELLO\"\n\nconst result2 = formatValue(42.1234);      // \"42.12\"\n\nTry it Yourself »\n\nIn the above example, TypeScript understands the type of value in different branches of the if statement.",
+                "heading": "typeof Type Guards"
+            },
+            {
+                "content": "The instanceof operator checks if an object is an instance of a specific class or constructor function.\n\nIt's useful for narrowing types with custom classes or built-in objects.\n\nClass-based Type Guarding\nNarrow unions of class instances by checking the constructor with instanceof.\n\n Example\n\nclass Bird {\n\n  fly() {\n\n    console.log(\"Flying...\");\n\n   }\n\n}\n\nclass Fish {\n\n  swim() {\n\n    console.log(\"Swimming...\");\n\n   }\n\n}\n\nfunction move(animal: Bird | Fish) {\n\n  if (animal instanceof Bird) {\n\n    // TypeScript knows animal is Bird here\n\n    animal.fly();\n\n  } else {\n\n    // TypeScript knows animal is Fish here\n\n    animal.swim();\n\n  }\n\n}\n\nTry it Yourself »",
+                "heading": "instanceof Type Guards"
+            },
+            {
+                "content": "For more complex type checking, you can create custom type guard functions using type predicates.\n\nThese are functions that return a type predicate in the form parameterName is Type.\n\nType Predicate Functions\nReturn a predicate like value is Type so TypeScript narrows on the true branch.\n\n Example\n\ninterface Car {\n\n  make: string;\n\n  model: string;\n\n  year: number;\n\n}\n\ninterface Motorcycle {\n\n  make: string;\n\n  model: string;\n\n  year: number;\n\n  type: \"sport\" | \"cruiser\";\n\n}\n\n// Type predicate function\n\nfunction isCar(vehicle: Car | Motorcycle): vehicle is Car {\n\n  return (vehicle as Motorcycle).type === undefined;\n\n}\n\nfunction displayVehicleInfo(vehicle: Car | Motorcycle) {\n\n  console.log(`Make: ${vehicle.make}, Model: ${vehicle.model}, Year: ${vehicle.year}`);\n\n  if (isCar(vehicle)) {\n\n    // TypeScript knows vehicle is Car here\n\n    console.log(\"This is a car\");\n\n  } else {\n\n    // TypeScript knows vehicle is Motorcycle here\n\n    console.log(`This is a ${vehicle.type} motorcycle`);\n\n  }\n\n}\n\nTry it Yourself »\n\nThe function signature vehicle is Car is a type predicate that tells TypeScript to narrow the type when the function returns true.",
+                "heading": "User-Defined Type Guards"
+            },
+            {
+                "content": "Discriminated unions (also known as tagged unions) use a common property (the discriminant) to distinguish between different object types in a union.\n\nThis pattern is particularly powerful when combined with type guards.\n\nBasic Discriminated Union\nUse a shared literal property (like kind) to switch and narrow to the exact variant.\n\n Example\n\ninterface Circle {\n\n  kind: \"circle\";\n\n  radius: number;\n\n}\n\ninterface Square {\n\n  kind: \"square\";\n\n  sideLength: number;\n\n}\n\ntype Shape = Circle | Square;\n\nfunction calculateArea(shape: Shape) {\n\n  switch (shape.kind) {\n\n    case \"circle\":\n\n      // TypeScript knows shape is Circle here\n\n      return Math.PI * shape.radius ** 2;\n\n    case \"square\":\n\n      // TypeScript knows shape is Square here\n\n      return shape.sideLength ** 2;\n\n  }\n\n}\n\nTry it Yourself »\n\nThe kind property is used as a discriminant to determine the type of the shape.",
+                "heading": "Discriminated Unions"
+            },
+            {
+                "content": "The in operator checks for the existence of a property on an object.\n\nIt's particularly useful for narrowing union types where different types have distinct properties.\n\nProperty Existence Checking\nNarrow union members by testing whether a distinguishing property exists.\n\n Example\n\ninterface Dog {\n\n  bark(): void;\n\n}\n\ninterface Cat {\n\n  meow(): void;\n\n}\n\nfunction makeSound(animal: Dog | Cat) {\n\n  if (\"bark\" in animal) {\n\n    // TypeScript knows animal is Dog here\n\n    animal.bark();\n\n  } else {\n\n    // TypeScript knows animal is Cat here\n\n    animal.meow();\n\n  }\n\n}\n\nTry it Yourself »",
+                "heading": "The in Operator"
+            },
+            {
+                "content": "Type assertion functions are a special kind of type guard that can throw an error if the type assertion fails.\n\nThey're useful for validating data at runtime.\n\nAssertion Functions\nEncode runtime checks that narrow types and throw on invalid input.\n\n Example\n\n// Type assertion function\n\nfunction assertIsString(value: unknown): asserts value is string {\n\n  if (typeof value !== 'string') {\n\n    throw new Error('Value is not a string');\n\n  }\n\n}\n\n// Type assertion function with custom error\n\nfunction assert(condition: unknown, message: string): asserts condition {\n\n  if (!condition) {\n\n    throw new Error(message);\n\n  }\n\n}\n\n// Usage\n\nfunction processInput(input: unknown) {\n\n  assertIsString(input);\n\n  // input is now typed as string\n\n  console.log(input.toUpperCase());\n\n}\n\n// With custom error\n\nfunction processNumber(value: unknown): number {\n\n  assert(typeof value === 'number', 'Value must be a number');\n\n  // value is now typed as number\n\n  return value * 2;\n\n}\n\nTry it Yourself »",
+                "heading": "Type Assertion Functions"
+            },
+            {
+                "content": "When to Use Each Type Guard\n\n Use typeof for primitive types (string, number, boolean, etc.)\n\n Use instanceof for class instances and built-in objects\n\n Use user-defined type guards for complex validation logic\n\n Use discriminated unions for related types with a common discriminant\n\n Use the in operator for checking property existence\n\n Use type assertion functions for runtime validation with errors\n\n Performance Considerations\n\n typeof and instanceof are very fast\n\n Avoid complex logic in user-defined type guards when performance is critical\n\n Consider using type predicates for expensive checks that are used multiple times\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Best Practices"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:08:42Z",
+        "subject": "TypeScript",
+        "title": "TypeScript Type Guards"
+    },
+    {
+        "url": "https://www.w3schools.com/typescript/typescript_conditional_types.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "typescript_typescript_conditional_types",
+        "code_examples": [
+            {
+                "code": "type IsString<T> = T extends string ? true : false;\n\n// Usage examples\n\ntype Result1 = IsString<string>; // true\n\ntype Result2 = IsString<number>; // false\n\ntype Result3 = IsString<\"hello\">; // true (literal types extend their base types)\n\n// We can use this with variables too\n\nlet a: IsString<string>; // a has type 'true'\n\nlet b: IsString<number>; // b has type 'false'",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "JavaScript & Frontend",
+        "notes_and_tips": [
+            "Key Concepts\n\n Type-level logic: Perform conditional checks on types\n\n Type inference: Extract and manipulate types using infer\n\n Composition: Combine with other TypeScript features\n\n Utility types: Build powerful type utilities",
+            "Common Use Cases\n\n Type-safe function overloading\n\n API response type transformations\n\n Complex type validations\n\n Building reusable type utilities\n\n Advanced type inference",
+            "Do:\n\n Use conditional types for complex type transformations\n\n Combine with infer for type extraction\n\n Create reusable type utilities\n\n Document complex conditional types\n\n Test edge cases in your type definitions\n\n Don't:\n\n Overuse complex conditional types when simple types would suffice\n\n Create deeply nested conditional types that are hard to understand\n\n Forget about performance implications with very complex types\n\n Use conditional types for runtime logic\n\n Performance Considerations\n\n Deeply nested conditional types can increase compile times\n\n Consider using type aliases for intermediate results\n\n Be mindful of TypeScript's recursion depth limits"
+        ],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "TS HOME\nTS Introduction\nTS Get Started\nTS Simple Types\nTS Explicit & Inference\nTS Special Types\nTS Arrays\nTS Tuples\nTS Object Types\nTS Enums\nTS Aliases & Interfaces\nTS Union Types\nTS Functions\nTS Casting\nTS Classes\nTS Basic Generics\nTS Utility Types\nTS Keyof\nTS Null\nTS Definitely Typed\nTS 5 Updates\nTS Configuration\nTS with Node.js\nTS with React\nTS Tooling\nTS Advanced Types\nTS Type Guards\nTS Conditional Types\nTS Mapped Types\nTS Type Inference\nTS Literal Types\nTS Namespaces\nTS Index Signatures\nTS Declaration Merging\nTS Async Programming\nTS Decorators\nTS in JS Projects\nTS Migration\nTS Error Handling\nTS Best Practices",
+                "heading": "TypeScript tutorial"
+            },
+            {
+                "content": "TS Certificate",
+                "heading": "TypeScript Cert"
+            },
+            {
+                "content": "TS Editor\nTS Exercises\nTS Quiz\nTS Practice Problems\nTS Syllabus\nTS Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\n TypeScript Conditional Types\n\n ❮ Previous\n Next ❯",
+                "heading": "TypeScript Exercises"
+            },
+            {
+                "content": "Conditional types in TypeScript enable you to create types that depend on other types, similar to how if-else statements work in JavaScript.\n\nThey're a powerful feature that allows for sophisticated type transformations and type-level programming.\n\n Key Concepts\n\n Type-level logic: Perform conditional checks on types\n\n Type inference: Extract and manipulate types using infer\n\n Composition: Combine with other TypeScript features\n\n Utility types: Build powerful type utilities\n\n Common Use Cases\n\n Type-safe function overloading\n\n API response type transformations\n\n Complex type validations\n\n Building reusable type utilities\n\n Advanced type inference",
+                "heading": "Understanding Conditional Types in TypeScript"
+            },
+            {
+                "content": "Conditional types use the form T extends U ? X : Y, which means:\n\n\"if type T extends (or is assignable to) type U, use type X, otherwise use type Y\".\n\nExample\n\ntype IsString<T> = T extends string ? true : false;\n\n// Usage examples\n\ntype Result1 = IsString<string>; // true\n\ntype Result2 = IsString<number>; // false\n\ntype Result3 = IsString<\"hello\">; // true (literal types extend their base types)\n\n// We can use this with variables too\n\nlet a: IsString<string>; // a has type 'true'\n\nlet b: IsString<number>; // b has type 'false'\n\nTry it Yourself »",
+                "heading": "Basic Conditional Type Syntax"
+            },
+            {
+                "content": "Distributive Conditional Types\n\nConditional types are particularly useful with union types, where they're automatically distributed over union members:\n\nExample\n\ntype ToArray<T> = T extends any ? T[] : never;\n\n// When used with a union type, it applies to each member of the union\n\ntype StringOrNumberArray = ToArray<string | number>;\n\n// This becomes ToArray<string> | ToArray<number>\n\n// Which becomes string[] | number[]\n\n// We can also extract specific types from a union\n\ntype ExtractString<T> = T extends string ? T : never;\n\ntype StringsOnly = ExtractString<string | number | boolean | \"hello\">;\n\n// Result: string | \"hello\"\n\nTry it Yourself »",
+                "heading": "Conditional Types with Unions"
+            },
+            {
+                "content": "Extracting Types from Complex Structures\n\nThe infer keyword allows you to declare a type variable within the condition part of a conditional type and then use it in the true branch of the condition:\n\nExample\n\n// Extract the return type of a function type\n\ntype ReturnType<T> = T extends (...args: any[]) => infer R ? R : never;\n\n// Examples\n\nfunction greet() { return \"Hello, world!\"; }\n\nfunction getNumber() { return 42; }\n\ntype GreetReturnType = ReturnType<typeof greet>; // string\n\ntype NumberReturnType = ReturnType<typeof getNumber>; // number\n\n// Extract element type from array\n\ntype ElementType<T> = T extends (infer U)[] ? U : never;\n\ntype NumberArrayElement = ElementType<number[]>; // number\n\ntype StringArrayElement = ElementType<string[]>; // string\n\nTry it Yourself »",
+                "heading": "Type Inference with infer"
+            },
+            {
+                "content": "Standard Library Utilities\n\nTypeScript includes several built-in conditional types in its standard library:\n\nExample\n\n// Extract<T, U> - Extracts types from T that are assignable to U\n\ntype OnlyStrings = Extract<string | number | boolean, string>; // string\n\n// Exclude<T, U> - Excludes types from T that are assignable to U\n\ntype NoStrings = Exclude<string | number | boolean, string>; // number | boolean\n\n// NonNullable<T> - Removes null and undefined from T\n\ntype NotNull = NonNullable<string | null | undefined>; // string\n\n// Parameters<T> - Extracts parameter types from a function type\n\ntype Params = Parameters<(a: string, b: number) => void>; // [string, number]\n\n// ReturnType<T> - Extracts the return type from a function type\n\ntype Return = ReturnType<() => string>; // string\n\nTry it Yourself »",
+                "heading": "Built-in Conditional Types"
+            },
+            {
+                "content": "Recursive Conditional Types\n\nConditional types can be used recursively to create complex type transformations:\n\nExample\n\n// Deeply unwrap Promise types\n\ntype UnwrapPromise<T> = T extends Promise<infer U> ? UnwrapPromise<U> : T;\n\n// Examples\n\ntype A = UnwrapPromise<Promise<string>>; // string\n\ntype B = UnwrapPromise<Promise<Promise<number>>>; // number\n\ntype C = UnwrapPromise<boolean>; // boolean\n\nTry it Yourself »\n\nType-Level If-Else Chains\nChain multiple conditions together for complex type logic:\n\nExample\n\ntype TypeName<T> =\n\n  T extends string ? \"string\" :\n\n  T extends number ? \"number\" :\n\n  T extends boolean ? \"boolean\" :\n\n  T extends undefined ? \"undefined\" :\n\n  T extends Function ? \"function\" :\n\n  \"object\";\n\n// Usage\n\ntype T0 = TypeName<string>; // \"string\"\n\ntype T1 = TypeName<42>; // \"number\"\n\ntype T2 = TypeName<true>; // \"boolean\"\n\ntype T3 = TypeName<() => void>; // \"function\"\n\ntype T4 = TypeName<Date[]>; // \"object\"\n\nTry it Yourself »\n\nConditional types are powerful when creating generic utilities and type-safe libraries:\n\nExample\n\n// A function that returns different types based on input type\n\nfunction processValue<T>(value: T): T extends string\n\n  ? string\n\n  : T extends number\n\n  ? number\n\n  : T extends boolean\n\n  ? boolean\n\n  : never {\n\n  if (typeof value === \"string\") {\n\n    return value.toUpperCase() as any; // Type assertion needed due to limitations\n\n  } else if (typeof value === \"number\") {\n\n    return (value * 2) as any;\n\n  } else if (typeof value === \"boolean\") {\n\n    return (!value) as any;\n\n  } else {\n\n    throw new Error(\"Unsupported type\");\n\n  }\n\n}\n\n// Usage\n\nconst stringResult = processValue(\"hello\"); // Returns \"HELLO\" (type is string)\n\nconst numberResult = processValue(10); // Returns 20 (type is number)\n\nconst boolResult = processValue(true); // Returns false (type is boolean)\n\nTry it Yourself »",
+                "heading": "Advanced Patterns and Techniques"
+            },
+            {
+                "content": "Do:\n\n Use conditional types for complex type transformations\n\n Combine with infer for type extraction\n\n Create reusable type utilities\n\n Document complex conditional types\n\n Test edge cases in your type definitions\n\n Don't:\n\n Overuse complex conditional types when simple types would suffice\n\n Create deeply nested conditional types that are hard to understand\n\n Forget about performance implications with very complex types\n\n Use conditional types for runtime logic\n\n Performance Considerations\n\n Deeply nested conditional types can increase compile times\n\n Consider using type aliases for intermediate results\n\n Be mindful of TypeScript's recursion depth limits\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Best Practices"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:08:42Z",
+        "subject": "TypeScript",
+        "title": "TypeScript Conditional Types"
+    },
+    {
+        "url": "https://www.w3schools.com/typescript/typescript_mapped_types.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "typescript_typescript_mapped_types",
+        "code_examples": [
+            {
+                "code": "Example\n\n// Small example\n\ntype Person = { name: string; age: number };\n\ntype PartialPerson = { [P in keyof Person]?: Person[P] };\n\ntype ReadonlyPerson = { readonly [P in keyof Person]: Person[P] };",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "// Define an object type\n\ninterface Person {\n\n  name: string;\n\n  age: number;\n\n  email: string;\n\n}\n\n// Create a mapped type that makes all properties optional\n\ntype PartialPerson = {\n\n  [P in keyof Person]?: Person[P];\n\n};\n\n// Usage\n\nconst partialPerson: PartialPerson = {\n\n  name: \"John\"\n\n  // age and email are optional\n\n};\n\n// Create a mapped type that makes all properties readonly\n\ntype ReadonlyPerson = {\n\n  readonly [P in keyof Person]: Person[P];\n\n};\n\n// Usage\n\nconst readonlyPerson: ReadonlyPerson = {\n\n  name: \"Alice\",\n\n  age: 30,\n\n  email: \"alice@example.com\"\n\n};\n\n// readonlyPerson.age = 31; // Error: Cannot assign to 'age' because it is a read-only property",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "JavaScript & Frontend",
+        "notes_and_tips": [
+            "Key Concepts\n\n Type Transformation: Modify property types in bulk\n\n Property Modifiers: Add or remove readonly and ? modifiers\n\n Key Remapping: Rename or filter properties using as clauses\n\n Composition: Combine with other TypeScript features",
+            "Common Use Cases\n\n Creating read-only versions of types\n\n Making all properties optional or required\n\n Transforming property types (e.g., to nullable or readonly)\n\n Filtering properties based on their types\n\n Creating type-safe utility functions"
+        ],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "TS HOME\nTS Introduction\nTS Get Started\nTS Simple Types\nTS Explicit & Inference\nTS Special Types\nTS Arrays\nTS Tuples\nTS Object Types\nTS Enums\nTS Aliases & Interfaces\nTS Union Types\nTS Functions\nTS Casting\nTS Classes\nTS Basic Generics\nTS Utility Types\nTS Keyof\nTS Null\nTS Definitely Typed\nTS 5 Updates\nTS Configuration\nTS with Node.js\nTS with React\nTS Tooling\nTS Advanced Types\nTS Type Guards\nTS Conditional Types\nTS Mapped Types\nTS Type Inference\nTS Literal Types\nTS Namespaces\nTS Index Signatures\nTS Declaration Merging\nTS Async Programming\nTS Decorators\nTS in JS Projects\nTS Migration\nTS Error Handling\nTS Best Practices",
+                "heading": "TypeScript tutorial"
+            },
+            {
+                "content": "TS Certificate",
+                "heading": "TypeScript Cert"
+            },
+            {
+                "content": "TS Editor\nTS Exercises\nTS Quiz\nTS Practice Problems\nTS Syllabus\nTS Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\n TypeScript Mapped Types\n\n ❮ Previous\n Next ❯\n\nMapped types in TypeScript allow you to create new types by transforming properties of existing types.\n\n Mapped types = transform every property of a type\n\n Common ones: Partial, Readonly, Pick, Omit, Record\n\nExample\n\n// Small example\n\ntype Person = { name: string; age: number };\n\ntype PartialPerson = { [P in keyof Person]?: Person[P] };\n\ntype ReadonlyPerson = { readonly [P in keyof Person]: Person[P] };",
+                "heading": "TypeScript Exercises"
+            },
+            {
+                "content": "Core Syntax\n\nMapped types use the syntax { [P in K]: T } where:\n\n P is the property name being iterated\n\n K is a union of property names to iterate over\n\n T is the resulting type for each property\n\nExample\n\n// Define an object type\n\ninterface Person {\n\n  name: string;\n\n  age: number;\n\n  email: string;\n\n}\n\n// Create a mapped type that makes all properties optional\n\ntype PartialPerson = {\n\n  [P in keyof Person]?: Person[P];\n\n};\n\n// Usage\n\nconst partialPerson: PartialPerson = {\n\n  name: \"John\"\n\n  // age and email are optional\n\n};\n\n// Create a mapped type that makes all properties readonly\n\ntype ReadonlyPerson = {\n\n  readonly [P in keyof Person]: Person[P];\n\n};\n\n// Usage\n\nconst readonlyPerson: ReadonlyPerson = {\n\n  name: \"Alice\",\n\n  age: 30,\n\n  email: \"alice@example.com\"\n\n};\n\n// readonlyPerson.age = 31; // Error: Cannot assign to 'age' because it is a read-only property\n\nTry it Yourself »",
+                "heading": "Basic Mapped Type Syntax"
+            },
+            {
+                "content": "Standard Library Utilities\n\nTypeScript includes several useful built-in mapped types:\n\n Partial<T>: make all props optional\n\n Readonly<T>: make all props readonly\n\n Pick<T, K>: select a subset of keys\n\n Omit<T, K>: remove keys\n\n Record<K, V>: map keys to a value type\n\nExample\n\ninterface User {\n\n  id: number;\n\n  name: string;\n\n  email: string;\n\n  isAdmin: boolean;\n\n}\n\n// Partial<T> - Makes all properties optional\n\ntype PartialUser = Partial<User>;\n\n// Equivalent to: { id?: number; name?: string; email?: string; isAdmin?: boolean; }\n\n// Required<T> - Makes all properties required\n\ntype RequiredUser = Required<Partial<User>>;\n\n// Equivalent to: { id: number; name: string; email: string; isAdmin: boolean; }\n\n// Readonly<T> - Makes all properties readonly\n\ntype ReadonlyUser = Readonly<User>;\n\n// Equivalent to: { readonly id: number; readonly name: string; ... }\n\n// Pick<T, K> - Creates a type with a subset of properties from T\n\ntype UserCredentials = Pick<User, \"email\" | \"id\">;\n\n// Equivalent to: { email: string; id: number; }\n\n// Omit<T, K> - Creates a type by removing specified properties from T\n\ntype PublicUser = Omit<User, \"id\" | \"isAdmin\">;\n\n// Equivalent to: { name: string; email: string; }\n\n// Record<K, T> - Creates a type with specified keys and value types\n\ntype UserRoles = Record<\"admin\" | \"user\" | \"guest\", string>;\n\n// Equivalent to: { admin: string; user: string; guest: string; }\n\nTry it Yourself »",
+                "heading": "Built-in Mapped Types"
+            },
+            {
+                "content": "Basic Custom Mappers\n\nYou can create your own mapped types to transform types in specific ways:\n\nExample\n\n// Base interface\n\ninterface Product {\n\n  id: number;\n\n  name: string;\n\n  price: number;\n\n  inStock: boolean;\n\n}\n\n// Create a mapped type to convert all properties to string type\n\ntype StringifyProperties<T> = {\n\n  [P in keyof T]: string;\n\n};\n\n// Usage\n\ntype StringProduct = StringifyProperties<Product>;\n\n// Equivalent to: { id: string; name: string; price: string; inStock: string; }\n\n// Create a mapped type that adds validation functions for each property\n\ntype Validator<T> = {\n\n  [P in keyof T]: (value: T[P]) => boolean;\n\n};\n\n// Usage\n\nconst productValidator: Validator<Product> = {\n\n  id: (id) => id > 0,\n\n  name: (name) => name.length > 0,\n\n  price: (price) => price >= 0,\n\n  inStock: (inStock) => typeof inStock === \"boolean\"\n\n};\n\nTry it Yourself »",
+                "heading": "Creating Custom Mapped Types"
+            },
+            {
+                "content": "Adding and Removing Modifiers\n\nMapped types also allow you to add or remove property modifiers like readonly and ? (optional):\n\nExample\n\n// Base interface with some readonly and optional properties\n\ninterface Configuration {\n\n  readonly apiKey: string;\n\n  readonly apiUrl: string;\n\n  timeout?: number;\n\n  retries?: number;\n\n}\n\n// Remove readonly modifier from all properties\n\ntype Mutable<T> = {\n\n  -readonly [P in keyof T]: T[P];\n\n};\n\n// Usage\n\ntype MutableConfig = Mutable<Configuration>;\n\n// Equivalent to: { apiKey: string; apiUrl: string; timeout?: number; retries?: number; }\n\n// Make all optional properties required\n\ntype RequiredProps<T> = {\n\n  [P in keyof T]-?: T[P];\n\n};\n\n// Usage\n\ntype RequiredConfig = RequiredProps<Configuration>;\n\n// Equivalent to: { readonly apiKey: string; readonly apiUrl: string; timeout: number; retries: number; }\n\nTry it Yourself »",
+                "heading": "Modifying Property Modifiers"
+            },
+            {
+                "content": "Combining with Conditional Types\n\nMapped types become even more powerful when combined with conditional types:\n\nExample\n\n// Base interface\n\ninterface ApiResponse {\n\n  data: unknown;\n\n  status: number;\n\n  message: string;\n\n  timestamp: number;\n\n}\n\n// Conditional mapped type: Convert each numeric property to a formatted string\n\ntype FormattedResponse<T> = {\n\n  [P in keyof T]: T[P] extends number ? string : T[P];\n\n};\n\n// Usage\n\ntype FormattedApiResponse = FormattedResponse<ApiResponse>;\n\n// Equivalent to: { data: unknown; status: string; message: string; timestamp: string; }\n\n// Another example: Filter for only string properties\n\ntype StringPropsOnly<T> = {\n\n  [P in keyof T as T[P] extends string ? P : never]: T[P];\n\n};\n\n// Usage\n\ntype ApiResponseStringProps = StringPropsOnly<ApiResponse>;\n\n// Equivalent to: { message: string; }\n\nTry it Yourself »",
+                "heading": "Advanced Mapped Types"
+            },
+            {
+                "content": "Mapped types let you transform every property of a type in a consistent way.\n\n Key Concepts\n\n Type Transformation: Modify property types in bulk\n\n Property Modifiers: Add or remove readonly and ? modifiers\n\n Key Remapping: Rename or filter properties using as clauses\n\n Composition: Combine with other TypeScript features\n\n Common Use Cases\n\n Creating read-only versions of types\n\n Making all properties optional or required\n\n Transforming property types (e.g., to nullable or readonly)\n\n Filtering properties based on their types\n\n Creating type-safe utility functions\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Key Takeaways"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:08:42Z",
+        "subject": "TypeScript",
+        "title": "TypeScript Mapped Types"
+    },
+    {
+        "url": "https://www.w3schools.com/typescript/typescript_type_inference.php",
+        "summary": "Learn how TypeScript infers types automatically for variables, functions, and expressions. See contextual typing, best common type, const assertions, and more with examples.",
+        "topic_id": "typescript_typescript_type_inference",
+        "code_examples": [
+            {
+                "code": "// TypeScript infers these variable types\n\nlet name = \"Alice\"; // inferred as string\n\nlet age = 30; // inferred as number\n\nlet isActive = true; // inferred as boolean\n\nlet numbers = [1, 2, 3]; // inferred as number[]\n\nlet mixed = [1, \"two\", true]; // inferred as (string | number | boolean)[]\n\n// Using the inferred types\n\nname.toUpperCase(); // Works because name is inferred as string\n\nage.toFixed(2); // Works because age is inferred as number\n\n// name.toFixed(2); // Error: Property 'toFixed' does not exist on type 'string'",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "JavaScript & Frontend",
+        "notes_and_tips": [
+            "Recommended for Explicit Types\n\n Public API Contracts: Function parameters and return types in library code\n\n Complex Types: When the inferred type is too broad or complex\n\n Documentation: To make the code more self-documenting\n\n Type Safety: When you need to enforce specific constraints\n\n Empty Collections: Empty arrays or objects that will be populated later"
+        ],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "TS HOME\nTS Introduction\nTS Get Started\nTS Simple Types\nTS Explicit & Inference\nTS Special Types\nTS Arrays\nTS Tuples\nTS Object Types\nTS Enums\nTS Aliases & Interfaces\nTS Union Types\nTS Functions\nTS Casting\nTS Classes\nTS Basic Generics\nTS Utility Types\nTS Keyof\nTS Null\nTS Definitely Typed\nTS 5 Updates\nTS Configuration\nTS with Node.js\nTS with React\nTS Tooling\nTS Advanced Types\nTS Type Guards\nTS Conditional Types\nTS Mapped Types\nTS Type Inference\nTS Literal Types\nTS Namespaces\nTS Index Signatures\nTS Declaration Merging\nTS Async Programming\nTS Decorators\nTS in JS Projects\nTS Migration\nTS Error Handling\nTS Best Practices",
+                "heading": "TypeScript tutorial"
+            },
+            {
+                "content": "TS Certificate",
+                "heading": "TypeScript Cert"
+            },
+            {
+                "content": "TS Editor\nTS Exercises\nTS Quiz\nTS Practice Problems\nTS Syllabus\nTS Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\n TypeScript Type Inference\n\n ❮ Previous\n Next ❯",
+                "heading": "TypeScript Exercises"
+            },
+            {
+                "content": "Type inference is TypeScript's ability to automatically determine and assign types to variables, function returns, and expressions based on their usage and context, without requiring explicit type annotations.\n\nThis powerful feature reduces verbosity while maintaining type safety.\n\nKey Concepts\n\n Type inference: Automatic type detection from assigned values\n\n Contextual typing: Types inferred from surrounding context\n\n Best common type: Algorithm for finding a compatible type\n\n Widening/Narrowing: Types expand or get constrained by usage\n\n When it happens: variable init, returns, default params, callbacks, literals\n\n Example\n\n// TypeScript infers these variable types\n\nlet name = \"Alice\"; // inferred as string\n\nlet age = 30; // inferred as number\n\nlet isActive = true; // inferred as boolean\n\nlet numbers = [1, 2, 3]; // inferred as number[]\n\nlet mixed = [1, \"two\", true]; // inferred as (string | number | boolean)[]\n\n// Using the inferred types\n\nname.toUpperCase(); // Works because name is inferred as string\n\nage.toFixed(2); // Works because age is inferred as number\n\n// name.toFixed(2); // Error: Property 'toFixed' does not exist on type 'string'\n\nTry it Yourself »",
+                "heading": "Understanding Type Inference in TypeScript"
+            },
+            {
+                "content": "TypeScript can infer the return type of a function based on its return statements:\n\n Example\n\n// Return type is inferred as string\n\nfunction greet(name: string) {\n\n  return `Hello, ${name}!`;\n\n}\n\n// Return type is inferred as number\n\nfunction add(a: number, b: number) {\n\n  return a + b;\n\n}\n\n// Return type is inferred as string | number\n\nfunction getValue(key: string) {\n\n   if (key === \"name\") {\n\n    return \"Alice\";\n\n   } else {\n\n    return 42;\n\n   }\n\n}\n\n// Using the inferred return types\n\nlet greeting = greet(\"Bob\"); // inferred as string\n\nlet sum = add(5, 3); // inferred as number\n\nlet value = getValue(\"age\"); // inferred as string | number\n\nTry it Yourself »",
+                "heading": "Function Return Type Inference"
+            },
+            {
+                "content": "TypeScript can infer types based on the context in which expressions occur:\n\n Example\n\n// The type of the callback parameter is inferred from the array method context\n\nconst names = [\"Alice\", \"Bob\", \"Charlie\"];\n\n// Parameter 'name' is inferred as string\n\nnames.forEach(name => {\n\n  console.log(name.toUpperCase());\n\n});\n\n// Parameter 'name' is inferred as string, and the return type is inferred as number\n\nconst nameLengths = names.map(name => {\n\n  return name.length;\n\n});\n\n// nameLengths is inferred as number[]\n\n// Parameter types in event handlers are also inferred\n\ndocument.addEventListener(\"click\", event => {\n\n  // 'event' is inferred as MouseEvent\n\n  console.log(event.clientX, event.clientY);\n\n});\n\nTry it Yourself »",
+                "heading": "Contextual Typing"
+            },
+            {
+                "content": "When working with object literals, TypeScript infers the types of properties:\n\n Example\n\n// TypeScript infers the type of this object\n\nconst user = {\n\n  id: 1,\n\n  name: \"Alice\",\n\n  email: \"alice@example.com\",\n\n  active: true,\n\n  details: {\n\n    age: 30,\n\n    address: {\n\n      city: \"New York\",\n\n      country: \"USA\"\n\n    }\n\n  }\n\n};\n\n// Accessing inferred properties\n\nconsole.log(user.name.toUpperCase());\n\nconsole.log(user.details.age.toFixed(0));\n\nconsole.log(user.details.address.city.toLowerCase());\n\n// Type errors would be caught\n\n// console.log(user.age); // Error: Property 'age' does not exist on type '...'\n\n// console.log(user.details.name); // Error: Property 'name' does not exist on type '...'\n\n// console.log(user.details.address.zip); // Error: Property 'zip' does not exist on type '...'\n\nTry it Yourself »",
+                "heading": "Type Inference in Object Literals"
+            },
+            {
+                "content": "Const Assertions\n\n Example\n\n// Regular type inference (widens to string)\n\nlet name = \"Alice\";  // type: string\n\n// Const assertion (narrows to literal type)\n\nconst nameConst = \"Alice\" as const;  // type: \"Alice\"\n\n// With objects\n\nconst user = {\n\n  id: 1,\n\n  name: \"Alice\",\n\n  roles: [\"admin\", \"user\"] as const  // readonly tuple\n\n} as const;\n\n// user.name = \"Bob\";  // Error: Cannot assign to 'name' because it is a read-only property\n\nTry it Yourself »\n\nType Guards and Control Flow Analysis\n\n Example\n\nfunction processValue(value: string | number) {\n\n  // Type is narrowed to string in this block\n\n  if (typeof value === \"string\") {\n\n    console.log(value.toUpperCase());\n\n  }\n\n  // Type is narrowed to number here\n\n  else {\n\n    console.log(value.toFixed(2));\n\n  }\n\n}\n\n// Discriminated unions\n\ninterface Circle { kind: \"circle\"; radius: number; }\n\ninterface Square { kind: \"square\"; size: number; }\n\ntype Shape = Circle | Square;\n\nfunction area(shape: Shape) {\n\n  // Type is narrowed based on 'kind' property\n\n  switch (shape.kind) {\n\n    case \"circle\":\n\n      return Math.PI * shape.radius ** 2;\n\n    case \"square\":\n\n      return shape.size ** 2;\n\n  }\n\n}\n\nTry it Yourself »",
+                "heading": "Advanced Patterns"
+            },
+            {
+                "content": "Here are some best practices for working with TypeScript's type inference:\n\n Example\n\n// 1. Let TypeScript infer simple types\n\nlet message = \"Hello\"; // Good: no need for explicit type here\n\n// 2. Provide explicit types for function parameters\n\nfunction formatName(firstName: string, lastName: string) {\n\n  return `${firstName} ${lastName}`;\n\n}\n\n// 3. Consider adding return type annotations for complex functions\n\nfunction processData(input: string[]): { count: number; items: string[] } {\n\n  return {\n\n    count: input.length,\n\n    items: input.map(item => item.trim())\n\n  };\n\n}\n\n// 4. Use explicit type annotations for empty arrays or objects\n\nconst emptyArray: string[] = []; // Without annotation, inferred as any[]\n\nconst configOptions: Record<string, unknown> = {}; // Without annotation, inferred as {}\n\n// 5. Use type assertions when TypeScript cannot infer correctly\n\nconst canvas = document.getElementById(\"main-canvas\") as HTMLCanvasElement;\n\nTry it Yourself »",
+                "heading": "Best Practices"
+            },
+            {
+                "content": "While type inference is powerful, there are situations where explicit type annotations are recommended:\n\n Recommended for Explicit Types\n\n Public API Contracts: Function parameters and return types in library code\n\n Complex Types: When the inferred type is too broad or complex\n\n Documentation: To make the code more self-documenting\n\n Type Safety: When you need to enforce specific constraints\n\n Empty Collections: Empty arrays or objects that will be populated later\n\nPerformance Considerations\n\n Example\n\n// Good: Explicit type for complex return values\n\nfunction processData(input: string[]): { results: string[]; count: number } {\n\n  return {\n\n    results: input.map(processItem),\n\n    count: input.length\n\n  };\n\n}\n\n// Good: Explicit type for empty arrays\n\nconst items: Array<{ id: number; name: string }> = [];\n\n// Good: Explicit type for configuration objects\n\nconst config: {\n\n  apiUrl: string;\n\n  retries: number;\n\n  timeout: number;\n\n} = {\n\n  apiUrl: \"https://api.example.com\",\n\n  retries: 3,\n\n  timeout: 5000\n\n};\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "When to Use Explicit Types"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:08:42Z",
+        "subject": "TypeScript",
+        "title": "TypeScript Type Inference"
+    },
+    {
+        "url": "https://www.w3schools.com/typescript/typescript_literal_types.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "typescript_typescript_literal_types",
+        "code_examples": [
+            {
+                "code": "// A variable with a string literal type\n\nlet direction: \"north\" | \"south\" | \"east\" | \"west\";\n\n// Valid assignments\n\ndirection = \"north\";\n\ndirection = \"south\";\n\n// Invalid assignments would cause errors\n\n// direction = \"northeast\"; // Error: Type '\"northeast\"' is not assignable to type '\"north\" | \"south\" | \"east\" | \"west\"'\n\n// direction = \"up\"; // Error: Type '\"up\"' is not assignable to type '\"north\" | \"south\" | \"east\" | \"west\"'\n\n// Using string literal types in functions\n\nfunction move(direction: \"north\" | \"south\" | \"east\" | \"west\") {\n\n  console.log(`Moving ${direction}`);\n\n}\n\nmove(\"east\"); // Valid\n\n// move(\"up\"); // Error: Argument of type '\"up\"' is not assignable to parameter of type...",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "JavaScript & Frontend",
+        "notes_and_tips": [
+            "Key Concepts\n\n String Literals: Exact string values like \"success\" | \"error\"\n\n Numeric Literals: Specific numbers like 1 | 2 | 3\n\n Boolean Literals: Either true or false\n\n Template Literal Types: String literal types built using template string syntax",
+            "Common Use Cases\n\n Defining specific sets of allowed values\n\n Creating discriminated unions\n\n Type-safe event handling\n\n API response typing\n\n Configuration objects",
+            "Do's and Don'ts\n\n Do:\n\n Use literal types for fixed sets of values (enums, configuration options)\n\n Combine with union types for better type safety\n\n Use template literal types for string pattern matching\n\n Leverage type inference when possible\n\n Document the meaning of literal types\n\n Don't:\n\n Overuse literal types when a more general type would be better\n\n Create extremely large union types that hurt performance\n\n Use string literals when an enum would be more appropriate",
+            "Type Checking Performance\n\n Large union types can slow down type checking\n\n Complex template literal types can increase compilation time\n\n Consider using type aliases for complex literal types\n\n Be mindful of TypeScript's recursion depth limits"
+        ],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "TS HOME\nTS Introduction\nTS Get Started\nTS Simple Types\nTS Explicit & Inference\nTS Special Types\nTS Arrays\nTS Tuples\nTS Object Types\nTS Enums\nTS Aliases & Interfaces\nTS Union Types\nTS Functions\nTS Casting\nTS Classes\nTS Basic Generics\nTS Utility Types\nTS Keyof\nTS Null\nTS Definitely Typed\nTS 5 Updates\nTS Configuration\nTS with Node.js\nTS with React\nTS Tooling\nTS Advanced Types\nTS Type Guards\nTS Conditional Types\nTS Mapped Types\nTS Type Inference\nTS Literal Types\nTS Namespaces\nTS Index Signatures\nTS Declaration Merging\nTS Async Programming\nTS Decorators\nTS in JS Projects\nTS Migration\nTS Error Handling\nTS Best Practices",
+                "heading": "TypeScript tutorial"
+            },
+            {
+                "content": "TS Certificate",
+                "heading": "TypeScript Cert"
+            },
+            {
+                "content": "TS Editor\nTS Exercises\nTS Quiz\nTS Practice Problems\nTS Syllabus\nTS Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\n TypeScript Literal Types\n\n ❮ Previous\n Next ❯",
+                "heading": "TypeScript Exercises"
+            },
+            {
+                "content": "Literal types in TypeScript allow you to specify exact values that variables can hold, providing more precision than broader types like string or number.\n\nThey are the building blocks for creating precise and type-safe applications.\n\n Key Concepts\n\n String Literals: Exact string values like \"success\" | \"error\"\n\n Numeric Literals: Specific numbers like 1 | 2 | 3\n\n Boolean Literals: Either true or false\n\n Template Literal Types: String literal types built using template string syntax\n\n Common Use Cases\n\n Defining specific sets of allowed values\n\n Creating discriminated unions\n\n Type-safe event handling\n\n API response typing\n\n Configuration objects",
+                "heading": "Understanding Literal Types in TypeScript"
+            },
+            {
+                "content": "A string literal type represents a specific string value:\n\nExample\n\n// A variable with a string literal type\n\nlet direction: \"north\" | \"south\" | \"east\" | \"west\";\n\n// Valid assignments\n\ndirection = \"north\";\n\ndirection = \"south\";\n\n// Invalid assignments would cause errors\n\n// direction = \"northeast\"; // Error: Type '\"northeast\"' is not assignable to type '\"north\" | \"south\" | \"east\" | \"west\"'\n\n// direction = \"up\"; // Error: Type '\"up\"' is not assignable to type '\"north\" | \"south\" | \"east\" | \"west\"'\n\n// Using string literal types in functions\n\nfunction move(direction: \"north\" | \"south\" | \"east\" | \"west\") {\n\n  console.log(`Moving ${direction}`);\n\n}\n\nmove(\"east\"); // Valid\n\n// move(\"up\"); // Error: Argument of type '\"up\"' is not assignable to parameter of type...\n\nTry it Yourself »",
+                "heading": "String Literal Types"
+            },
+            {
+                "content": "Similar to string literals, numeric literal types represent specific numeric values:\n\nExample\n\n// A variable with a numeric literal type\n\nlet diceRoll: 1 | 2 | 3 | 4 | 5 | 6;\n\n// Valid assignments\n\ndiceRoll = 1;\n\ndiceRoll = 6;\n\n// Invalid assignments would cause errors\n\n// diceRoll = 0; // Error: Type '0' is not assignable to type '1 | 2 | 3 | 4 | 5 | 6'\n\n// diceRoll = 7; // Error: Type '7' is not assignable to type '1 | 2 | 3 | 4 | 5 | 6'\n\n// diceRoll = 2.5; // Error: Type '2.5' is not assignable to type '1 | 2 | 3 | 4 | 5 | 6'\n\n// Using numeric literal types in functions\n\nfunction rollDice(): 1 | 2 | 3 | 4 | 5 | 6 {\n\n  return Math.floor(Math.random() * 6) + 1 as 1 | 2 | 3 | 4 | 5 | 6;\n\n}\n\nconst result = rollDice();\n\nconsole.log(`You rolled a ${result}`);\n\nTry it Yourself »",
+                "heading": "Numeric Literal Types"
+            },
+            {
+                "content": "Boolean literal types are less commonly used since there are only two boolean values, but they can be useful in specific scenarios:\n\nExample\n\n// A type that can only be the literal value 'true'\n\ntype YesOnly = true;\n\n// A function that must return true\n\nfunction alwaysSucceed(): true {\n\n  // Always returns the literal value 'true'\n\n  return true;\n\n}\n\n// Boolean literal combined with other types\n\ntype SuccessFlag = true | \"success\" | 1;\n\ntype FailureFlag = false | \"failure\" | 0;\n\nfunction processResult(result: SuccessFlag | FailureFlag) {\n\n  if (result === true || result === \"success\" || result === 1) {\n\n    console.log(\"Operation succeeded\");\n\n  } else {\n\n    console.log(\"Operation failed\");\n\n  }\n\n}\n\nprocessResult(true); // \"Operation succeeded\"\n\nprocessResult(\"success\"); // \"Operation succeeded\"\n\nprocessResult(1); // \"Operation succeeded\"\n\nprocessResult(false); // \"Operation failed\"\n\nTry it Yourself »",
+                "heading": "Boolean Literal Types"
+            },
+            {
+                "content": "Literal types can be combined with object types to create very specific shapes:\n\nExample\n\n// Object with literal property values\n\ntype HTTPSuccess = {\n\n  status: 200 | 201 | 204;\n\n  statusText: \"OK\" | \"Created\" | \"No Content\";\n\n  data: any;\n\n};\n\ntype HTTPError = {\n\n  status: 400 | 401 | 403 | 404 | 500;\n\n  statusText: \"Bad Request\" | \"Unauthorized\" | \"Forbidden\" | \"Not Found\" | \"Internal Server Error\";\n\n  error: string;\n\n};\n\ntype HTTPResponse = HTTPSuccess | HTTPError;\n\nfunction handleResponse(response: HTTPResponse) {\n\n  if (response.status >= 200 && response.status Try it Yourself »",
+                "heading": "Literal Types with Objects"
+            },
+            {
+                "content": "TypeScript 4.1+ introduced template literal types, which allow you to create new string literal types by combining existing ones using template string syntax:\n\nExample\n\n// Basic template literals\n\ntype Direction = \"north\" | \"south\" | \"east\" | \"west\";\n\ntype Distance = \"1km\" | \"5km\" | \"10km\";\n\n// Using template literals to combine them\n\ntype DirectionAndDistance = `${Direction}-${Distance}`;\n\n// \"north-1km\" | \"north-5km\" | \"north-10km\" | \"south-1km\" | ...\n\nlet route: DirectionAndDistance;\n\nroute = \"north-5km\"; // Valid\n\nroute = \"west-10km\"; // Valid\n\n// route = \"north-2km\"; // Error\n\n// route = \"5km-north\"; // Error\n\n// Advanced string manipulation\n\ntype EventType = \"click\" | \"hover\" | \"scroll\";\n\ntype EventTarget = \"button\" | \"link\" | \"div\";\n\ntype EventName = `on${Capitalize<EventType>}${Capitalize<EventTarget>}`;\n\n// \"onClickButton\" | \"onClickLink\" | \"onClickDiv\" | ...\n\n// Dynamic property access\n\ntype User = {\n\n  id: number;\n\n  name: string;\n\n  email: string;\n\n  createdAt: Date;\n\n};\n\ntype GetterName<T> = `get${Capitalize<string & keyof T>}`;\n\ntype UserGetters = {\n\n [K in keyof User as GetterName<User>]: () => User[K];\n\n};\n\n// { getId: () => number; getName: () => string; ... }\n\n// String pattern matching\n\ntype ExtractRouteParams<T extends string> =\n\n  T extends `${string}:${infer Param}/${infer Rest}`\n\n    ? Param | ExtractRouteParams<Rest>\n\n    : T extends `${string}:${infer Param}`\n\n      ? Param\n\n    : never;\n\ntype Params = ExtractRouteParams<\"/users/:userId/posts/:postId\">; // \"userId\" | \"postId\"\n\n// CSS units and values\n\ntype CssUnit = 'px' | 'em' | 'rem' | '%' | 'vh' | 'vw';\n\ntype CssValue = `${number}${CssUnit}`;\n\nlet width: CssValue = '100px'; // Valid\n\nlet height: CssValue = '50%'; // Valid\n\n// let margin: CssValue = '10'; // Error\n\n// let padding: CssValue = '2ex'; // Error\n\n// API versioning\n\ntype ApiVersion = 'v1' | 'v2' | 'v3';\n\ntype Endpoint = 'users' | 'products' | 'orders';\n\ntype HttpMethod = 'GET' | 'POST' | 'PUT' | 'DELETE';\n\ntype ApiUrl = `https://api.example.com/${ApiVersion}/${Endpoint}`;\n\n// Complex example: Dynamic SQL query builder\n\ntype Table = 'users' | 'products' | 'orders';\n\ntype Column<T extends Table> =\n\n  T extends 'users' ? 'id' | 'name' | 'email' | 'created_at' :\n\n  T extends 'products' ? 'id' | 'name' | 'price' | 'in_stock' :\n\n  T extends 'orders' ? 'id' | 'user_id' | 'total' | 'status' : never;\n\ntype WhereCondition<T extends Table> = {\n\n  [K in Column<T>]?: {\n\n    equals?: any;\n\n    notEquals?: any;\n\n    in?: any[];\n\n  };\n\n};\n\nfunction query<T extends Table>(\n\n  table: T,\n\n  where?: WhereCondition<T>\n\n): `SELECT * FROM ${T}${string}` {\n\n  // Implementation would build the query\n\n  return `SELECT * FROM ${table}` as const;\n\n}\n\n// Usage\n\nconst userQuery = query('users', {\n\n  name: { equals: 'John' },\n\n  created_at: { in: ['2023-01-01', '2023-12-31'] }\n\n});\n\n// Type: \"SELECT * FROM users WHERE ...\"\n\nTry it Yourself »",
+                "heading": "Template Literal Types"
+            },
+            {
+                "content": "Do's and Don'ts\n\n Do:\n\n Use literal types for fixed sets of values (enums, configuration options)\n\n Combine with union types for better type safety\n\n Use template literal types for string pattern matching\n\n Leverage type inference when possible\n\n Document the meaning of literal types\n\n Don't:\n\n Overuse literal types when a more general type would be better\n\n Create extremely large union types that hurt performance\n\n Use string literals when an enum would be more appropriate",
+                "heading": "Best Practices"
+            },
+            {
+                "content": "Type Checking Performance\n\n Large union types can slow down type checking\n\n Complex template literal types can increase compilation time\n\n Consider using type aliases for complex literal types\n\n Be mindful of TypeScript's recursion depth limits\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Performance Considerations"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:08:43Z",
+        "subject": "TypeScript",
+        "title": "TypeScript Literal Types"
+    },
+    {
+        "url": "https://www.w3schools.com/typescript/typescript_namespaces.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "typescript_typescript_namespaces",
+        "code_examples": [
+            {
+                "code": "namespace Validation {\n\n  // Everything inside this block belongs to the Validation namespace\n\n  // Export things you want to make available outside the namespace\n\n  export interface StringValidator {\n\n    isValid(s: string): boolean;\n\n  }\n\n  // This is private to the namespace (not exported)\n\n  const lettersRegexp = /^[A-Za-z]+$/;\n\n  // Exported class - available outside the namespace\n\n  export class LettersValidator implements StringValidator {\n\n    isValid(s: string): boolean {\n\n      return lettersRegexp.test(s);\n\n    }\n\n  }\n\n  // Another exported class\n\n  export class ZipCodeValidator implements StringValidator {\n\n    isValid(s: string): boolean {\n\n      return /^[0-9]+$/.test(s) && s.length === 5;\n\n    }\n\n  }\n\n}\n\n// Using the namespace members\n\nlet letterValidator = new Validation.LettersValidator();\n\nlet zipCodeValidator = new Validation.ZipCodeValidator();\n\nconsole.log(letterValidator.isValid(\"Hello\")); // true\n\nconsole.log(letterValidator.isValid(\"Hello123\")); // false\n\nconsole.log(zipCodeValidator.isValid(\"12345\")); // true\n\nconsole.log(zipCodeValidator.isValid(\"1234\")); // false - wrong length",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\n/// <reference path=\"validators.ts\" />\n\nnamespace Validation {\n\n  const lettersRegexp = /^[A-Za-z]+$/;\n\n  export class LettersValidator implements StringValidator {\n\n    isValid(s: string): boolean {\n\n      return lettersRegexp.test(s);\n\n    }\n\n  }\n\n}",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\n/// <reference path=\"validators.ts\" />\n\nnamespace Validation {\n\n  const zipCodeRegexp = /^[0-9]+$/;\n\n  export class ZipCodeValidator implements StringValidator {\n\n    isValid(s: string): boolean {\n\n      return zipCodeRegexp.test(s) && s.length === 5;\n\n    }\n\n  }\n\n}",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\n/// <reference path=\"validators.ts\" />\n\n/// <reference path=\"letters-validator.ts\" />\n\n/// <reference path=\"zipcode-validator.ts\" />\n\n// Now you can use the validators from multiple files\n\nlet validators: { [s: string]: Validation.StringValidator } = {};\n\nvalidators[\"letters\"] = new Validation.LettersValidator();\n\nvalidators[\"zipcode\"] = new Validation.ZipCodeValidator();\n\n// Some samples to validate\n\nlet strings = [\"Hello\", \"98052\", \"101\"];\n\n// Validate each\n\nstrings.forEach(s => {\n\n  for (let name in validators) {\n\n    console.log(`\"${s}\" - ${validators[name].isValid(s) ? \"matches\" : \"does not match\"} ${name}`);\n\n  }\n\n});",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\ntsc --outFile sample.js main.ts",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\n// Original namespace\n\ndeclare namespace Express {\n\n  interface Request {\n\n    user?: { id: number; name: string };\n\n  }\n\n  interface Response {\n\n    json(data: any): void;\n\n  }\n\n}\n\n// Later in your application (e.g., in a .d.ts file)\n\ndeclare namespace Express {\n\n  // Augment the Request interface\n\n  interface Request {\n\n    // Add custom properties\n\n    requestTime?: number;\n\n    // Add methods\n\n    log(message: string): void;\n\n  }\n\n  // Add new types\n\n  interface UserSession {\n\n    userId: number;\n\n    expires: Date;\n\n  }\n\n}\n\n// Usage in your application\n\nconst app = express();\n\napp.use((req: Express.Request, res: Express.Response, next) => {\n\n  // Augmented properties and methods are available\n\n  req.requestTime = Date.now();\n\n  req.log('Request started');\n\n  next();\n\n});",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\n// Generic namespace example\n\nnamespace DataStorage {\n\n  export interface Repository<T> {\n\n    getAll(): T[];\n\n    getById(id: number): T | undefined;\n\n    add(item: T): void;\n\n    update(id: number, item: T): boolean;\n\n    delete(id: number): boolean;\n\n  }\n\n  // Concrete implementation\n\n  export class InMemoryRepository<T> implements Repository<T> {\n\n    private items: T[] = [];\n\n    getAll(): T[] {\n\n      return [...this.items];\n\n    }\n\n    getById(id: number): T | undefined {\n\n      return this.items[id];\n\n    }\n\n    add(item: T): void {\n\n      this.items.push(item);\n\n    }\n\n    update(id: number, item: T): boolean {\n\n      if (id >= 0 && id = 0 && id < this.items.length) {\n\n        this.items.splice(id, 1);\n\n        return true;\n\n      }\n\n      return false;\n\n    }\n\n  }\n\n}\n\n// Usage\n\ninterface User {\n\n  id: number;\n\n  name: string;\n\n  email: string;\n\n}\n\nconst userRepo = new DataStorage.InMemoryRepository<User>();\n\nuserRepo.add({ id: 1, name: 'John Doe', email: 'john@example.com' });\n\nconst allUsers = userRepo.getAll();",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\n// Before: Using namespaces\n\nnamespace MyApp {\n\n  export namespace Services {\n\n    export class UserService {\n\n      getUser(id: number) { /* ... */ }\n\n    }\n\n  }\n\n}\n\n// After: Using ES modules\n\n// services/UserService.ts\n\nexport class UserService {\n\n  getUser(id: number) { /* ... */ }\n\n}\n\n// app.ts\n\nimport { UserService } from './services/UserService';\n\nconst userService = new UserService();",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "JavaScript & Frontend",
+        "notes_and_tips": [
+            "Key Concepts\n\n Logical Grouping: Organize related code into named containers\n\n Scope Management: Control the visibility of code elements\n\n Name Collision Prevention: Avoid conflicts between similarly named components\n\n Code Organization: Structure large applications in a hierarchical manner",
+            "When to Use Namespaces\n\n Organizing code in large legacy applications\n\n Working with global libraries\n\n When migrating from older JavaScript codebases\n\n When working with code that needs to be available globally",
+            "Key Differences\n Understanding when to use namespaces versus modules is crucial for TypeScript development:\n\n Modules are the preferred way to organize code in modern TypeScript applications\n\n Namespaces are still useful for specific scenarios like declaration merging or working with legacy code\n\n Modules have better tooling support and tree-shaking capabilities\n\n Namespaces can be useful for creating global libraries",
+            "Namespace Best Practices\n\n Do:\n\n Use meaningful, hierarchical namespace names\n\n Export only what's needed from namespaces\n\n Use /// <reference /> for ordering in multi-file namespaces\n\n Consider using modules for new projects\n\n Use const enums within namespaces for better performance\n\n Document your namespaces with JSDoc comments\n\n Don't:\n\n Create overly deep namespace hierarchies (more than 2-3 levels)\n\n Pollute the global scope unnecessarily\n\n Mix namespaces and modules in the same project without a clear strategy\n\n Use namespaces for small applications - prefer modules\n\n Performance Considerations\n\n Large namespaces can increase bundle size\n\n Consider code splitting for large applications\n\n Be mindful of circular dependencies in complex namespace structures\n\n Use const enum for better performance with constant values",
+            "Migration Steps\n\n Convert each namespace to a module file\n\n Replace export with ES module exports\n\n Update imports to use ES module syntax\n\n Configure your build system to handle modules\n\n Update tests to work with the new module structure\n\n Consider using a bundler like webpack or Rollup\n\n Update your tsconfig.json to use \"module\": \"ESNext\"\n\n Migration Tools\n\n ts-migrate - Automated migration tool from Facebook\n\n tslint with no-namespace rule to detect namespaces\n\n TypeScript's built-in refactoring tools"
+        ],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "TS HOME\nTS Introduction\nTS Get Started\nTS Simple Types\nTS Explicit & Inference\nTS Special Types\nTS Arrays\nTS Tuples\nTS Object Types\nTS Enums\nTS Aliases & Interfaces\nTS Union Types\nTS Functions\nTS Casting\nTS Classes\nTS Basic Generics\nTS Utility Types\nTS Keyof\nTS Null\nTS Definitely Typed\nTS 5 Updates\nTS Configuration\nTS with Node.js\nTS with React\nTS Tooling\nTS Advanced Types\nTS Type Guards\nTS Conditional Types\nTS Mapped Types\nTS Type Inference\nTS Literal Types\nTS Namespaces\nTS Index Signatures\nTS Declaration Merging\nTS Async Programming\nTS Decorators\nTS in JS Projects\nTS Migration\nTS Error Handling\nTS Best Practices",
+                "heading": "TypeScript tutorial"
+            },
+            {
+                "content": "TS Certificate",
+                "heading": "TypeScript Cert"
+            },
+            {
+                "content": "TS Editor\nTS Exercises\nTS Quiz\nTS Practice Problems\nTS Syllabus\nTS Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\n TypeScript Namespaces\n\n ❮ Previous\n Next ❯",
+                "heading": "TypeScript Exercises"
+            },
+            {
+                "content": "TypeScript namespaces (previously known as \"internal modules\") provide a powerful way to organize code and prevent naming conflicts by creating a container for related functionality.\n\nThey help in structuring large codebases and managing scope in a clean, maintainable way.\n\n Key Concepts\n\n Logical Grouping: Organize related code into named containers\n\n Scope Management: Control the visibility of code elements\n\n Name Collision Prevention: Avoid conflicts between similarly named components\n\n Code Organization: Structure large applications in a hierarchical manner\n\n When to Use Namespaces\n\n Organizing code in large legacy applications\n\n Working with global libraries\n\n When migrating from older JavaScript codebases\n\n When working with code that needs to be available globally\n\n Note: While namespaces are still fully supported in TypeScript, modern applications typically use ES modules (import/export) for better modularity and tree-shaking support.\n\nHowever, understanding namespaces is valuable for maintaining legacy codebases and certain library development scenarios.",
+                "heading": "Understanding TypeScript Namespaces"
+            },
+            {
+                "content": "Creating and Using Namespaces\n\nA namespace is defined using the namespace keyword:\n\nExample\n\nnamespace Validation {\n\n  // Everything inside this block belongs to the Validation namespace\n\n  // Export things you want to make available outside the namespace\n\n  export interface StringValidator {\n\n    isValid(s: string): boolean;\n\n  }\n\n  // This is private to the namespace (not exported)\n\n  const lettersRegexp = /^[A-Za-z]+$/;\n\n  // Exported class - available outside the namespace\n\n  export class LettersValidator implements StringValidator {\n\n    isValid(s: string): boolean {\n\n      return lettersRegexp.test(s);\n\n    }\n\n  }\n\n  // Another exported class\n\n  export class ZipCodeValidator implements StringValidator {\n\n    isValid(s: string): boolean {\n\n      return /^[0-9]+$/.test(s) && s.length === 5;\n\n    }\n\n  }\n\n}\n\n// Using the namespace members\n\nlet letterValidator = new Validation.LettersValidator();\n\nlet zipCodeValidator = new Validation.ZipCodeValidator();\n\nconsole.log(letterValidator.isValid(\"Hello\")); // true\n\nconsole.log(letterValidator.isValid(\"Hello123\")); // false\n\nconsole.log(zipCodeValidator.isValid(\"12345\")); // true\n\nconsole.log(zipCodeValidator.isValid(\"1234\")); // false - wrong length\n\nTry it Yourself »",
+                "heading": "Basic Namespace Syntax"
+            },
+            {
+                "content": "Nested Namespaces\n\nNamespaces can be nested to create hierarchical organization:\n\nExample\n\nnamespace App {\n\n  export namespace Utils {\n\n    export function log(msg: string): void {\n\n      console.log(`[LOG]: ${msg}`);\n\n    }\n\n    export function error(msg: string): void {\n\n      console.error(`[ERROR]: ${msg}`);\n\n    }\n\n  }\n\n  export namespace Models {\n\n    export interface User {\n\n      id: number;\n\n      name: string;\n\n      email: string;\n\n    }\n\n    export class UserService {\n\n      getUser(id: number): User {\n\n        return { id, name: \"John Doe\", email: \"john@example.com\" };\n\n      }\n\n    }\n\n  }\n\n}\n\n// Using nested namespaces\n\nApp.Utils.log(\"Application starting\");\n\nconst userService = new App.Models.UserService();\n\nconst user = userService.getUser(1);\n\nApp.Utils.log(`User loaded: ${user.name}`);\n\n// This would be a type error in TypeScript\n\n// App.log(\"directly accessing log\"); // Error - log is not a direct member of App\n\nTry it Yourself »\n\nNamespace Aliases\n\nYou can create aliases for namespaces or their members to make long names more manageable:\n\nExample\n\nnamespace VeryLongNamespace {\n\n  export namespace DeeplyNested {\n\n    export namespace Components {\n\n      export class Button {\n\n        display(): void {\n\n          console.log(\"Button displayed\");\n\n        }\n\n      }\n\n      export class TextField {\n\n        display(): void {\n\n          console.log(\"TextField displayed\");\n\n        }\n\n      }\n\n    }\n\n  }\n\n}\n\n// Without alias - very verbose\n\nconst button1 = new VeryLongNamespace.DeeplyNested.Components.Button();\n\nbutton1.display();\n\n// With namespace alias\n\nimport Components = VeryLongNamespace.DeeplyNested.Components;\n\nconst button2 = new Components.Button();\n\nbutton2.display();\n\n// With specific member alias\n\nimport Button = VeryLongNamespace.DeeplyNested.Components.Button;\n\nconst button3 = new Button();\n\nbutton3.display();\n\nTry it Yourself »",
+                "heading": "Advanced Namespace Features"
+            },
+            {
+                "content": "Splitting Namespaces Across Files\n\nLarge applications often require splitting code across multiple files.\n\nTypeScript namespaces can be split across files and combined at compile time using reference comments:\n\nUsing Reference Comments\nReference comments help TypeScript understand the relationship between files:\n\nvalidators.ts file:\n\nExample\n\nnamespace Validation {\n\n  export interface StringValidator {\n\n    isValid(s: string): boolean;\n\n  }\n\n}\n\nletters-validator.ts file (extends Validation namespace):\n\nExample\n\n/// <reference path=\"validators.ts\" />\n\nnamespace Validation {\n\n  const lettersRegexp = /^[A-Za-z]+$/;\n\n  export class LettersValidator implements StringValidator {\n\n    isValid(s: string): boolean {\n\n      return lettersRegexp.test(s);\n\n    }\n\n  }\n\n}\n\nzipcode-validator.ts file:\n\nExample\n\n/// <reference path=\"validators.ts\" />\n\nnamespace Validation {\n\n  const zipCodeRegexp = /^[0-9]+$/;\n\n  export class ZipCodeValidator implements StringValidator {\n\n    isValid(s: string): boolean {\n\n      return zipCodeRegexp.test(s) && s.length === 5;\n\n    }\n\n  }\n\n}\n\nmain.ts file:\n\nExample\n\n/// <reference path=\"validators.ts\" />\n\n/// <reference path=\"letters-validator.ts\" />\n\n/// <reference path=\"zipcode-validator.ts\" />\n\n// Now you can use the validators from multiple files\n\nlet validators: { [s: string]: Validation.StringValidator } = {};\n\nvalidators[\"letters\"] = new Validation.LettersValidator();\n\nvalidators[\"zipcode\"] = new Validation.ZipCodeValidator();\n\n// Some samples to validate\n\nlet strings = [\"Hello\", \"98052\", \"101\"];\n\n// Validate each\n\nstrings.forEach(s => {\n\n  for (let name in validators) {\n\n    console.log(`\"${s}\" - ${validators[name].isValid(s) ? \"matches\" : \"does not match\"} ${name}`);\n\n  }\n\n});\n\nTo compile these files into a single JavaScript file, use:\n\nExample\n\ntsc --outFile sample.js main.ts",
+                "heading": "Working with Multi-file Namespaces"
+            },
+            {
+                "content": "Key Differences\n Understanding when to use namespaces versus modules is crucial for TypeScript development:\n\n Modules are the preferred way to organize code in modern TypeScript applications\n\n Namespaces are still useful for specific scenarios like declaration merging or working with legacy code\n\n Modules have better tooling support and tree-shaking capabilities\n\n Namespaces can be useful for creating global libraries\n\nHere's a comparison of when to use namespaces versus ES modules:\n\n Comparison Table\n\n Feature\n Namespaces\n ES Modules (import/export)\n\n Recommended scope/scale\n Simpler setups, small apps, legacy codebases\n Modern apps of any size; preferred for new projects\n\n Syntax and usage\n Global access via dot notation (e.g., MyNS.Member)\n Explicit import/export with file paths\n\n Loading/bundling\n No loader required; can emit single file via --outFile\n Typically uses a bundler/loader (Vite, webpack, etc.)\n\n Splitting across files\n Possible via /// <reference /> comments\n Natural; each file is a module with explicit exports/imports\n\n Tree-shaking\n Limited; harder for bundlers to eliminate unused code\n Excellent; designed for dead-code elimination\n\n Global scope\n Encourages globals (namespaced)\n Avoids globals; explicit dependencies\n\n Augmentation/merging\n Strong support via declaration merging\n Module augmentation possible, but more constrained\n\n Tooling and ecosystem\n Works, but less aligned with modern tooling\n Best support across modern tooling and platforms\n\n Best used for\n Legacy libraries, global scripts, ambient types\n All new development, libraries, and applications",
+                "heading": "Namespaces vs. Modules"
+            },
+            {
+                "content": "Example\n\n// Original namespace\n\ndeclare namespace Express {\n\n  interface Request {\n\n    user?: { id: number; name: string };\n\n  }\n\n  interface Response {\n\n    json(data: any): void;\n\n  }\n\n}\n\n// Later in your application (e.g., in a .d.ts file)\n\ndeclare namespace Express {\n\n  // Augment the Request interface\n\n  interface Request {\n\n    // Add custom properties\n\n    requestTime?: number;\n\n    // Add methods\n\n    log(message: string): void;\n\n  }\n\n  // Add new types\n\n  interface UserSession {\n\n    userId: number;\n\n    expires: Date;\n\n  }\n\n}\n\n// Usage in your application\n\nconst app = express();\n\napp.use((req: Express.Request, res: Express.Response, next) => {\n\n  // Augmented properties and methods are available\n\n  req.requestTime = Date.now();\n\n  req.log('Request started');\n\n  next();\n\n});\n\nNamespaces with Generics\n\nExample\n\n// Generic namespace example\n\nnamespace DataStorage {\n\n  export interface Repository<T> {\n\n    getAll(): T[];\n\n    getById(id: number): T | undefined;\n\n    add(item: T): void;\n\n    update(id: number, item: T): boolean;\n\n    delete(id: number): boolean;\n\n  }\n\n  // Concrete implementation\n\n  export class InMemoryRepository<T> implements Repository<T> {\n\n    private items: T[] = [];\n\n    getAll(): T[] {\n\n      return [...this.items];\n\n    }\n\n    getById(id: number): T | undefined {\n\n      return this.items[id];\n\n    }\n\n    add(item: T): void {\n\n      this.items.push(item);\n\n    }\n\n    update(id: number, item: T): boolean {\n\n      if (id >= 0 && id = 0 && id",
+                "heading": "Advanced Namespace Patterns"
+            },
+            {
+                "content": "Namespace Best Practices\n\n Do:\n\n Use meaningful, hierarchical namespace names\n\n Export only what's needed from namespaces\n\n Use /// <reference /> for ordering in multi-file namespaces\n\n Consider using modules for new projects\n\n Use const enums within namespaces for better performance\n\n Document your namespaces with JSDoc comments\n\n Don't:\n\n Create overly deep namespace hierarchies (more than 2-3 levels)\n\n Pollute the global scope unnecessarily\n\n Mix namespaces and modules in the same project without a clear strategy\n\n Use namespaces for small applications - prefer modules\n\n Performance Considerations\n\n Large namespaces can increase bundle size\n\n Consider code splitting for large applications\n\n Be mindful of circular dependencies in complex namespace structures\n\n Use const enum for better performance with constant values",
+                "heading": "Best Practices"
+            },
+            {
+                "content": "Example\n\n// Before: Using namespaces\n\nnamespace MyApp {\n\n  export namespace Services {\n\n    export class UserService {\n\n      getUser(id: number) { /* ... */ }\n\n    }\n\n  }\n\n}\n\n// After: Using ES modules\n\n// services/UserService.ts\n\nexport class UserService {\n\n  getUser(id: number) { /* ... */ }\n\n}\n\n// app.ts\n\nimport { UserService } from './services/UserService';\n\nconst userService = new UserService();\n\n Migration Steps\n\n Convert each namespace to a module file\n\n Replace export with ES module exports\n\n Update imports to use ES module syntax\n\n Configure your build system to handle modules\n\n Update tests to work with the new module structure\n\n Consider using a bundler like webpack or Rollup\n\n Update your tsconfig.json to use \"module\": \"ESNext\"\n\n Migration Tools\n\n ts-migrate - Automated migration tool from Facebook\n\n tslint with no-namespace rule to detect namespaces\n\n TypeScript's built-in refactoring tools\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Migrating from Namespaces to Modules"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:08:43Z",
+        "subject": "TypeScript",
+        "title": "TypeScript Namespaces"
+    },
+    {
+        "url": "https://www.w3schools.com/typescript/typescript_index_signatures.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "typescript_typescript_index_signatures",
+        "code_examples": [
+            {
+                "code": "// This interface represents an object with string keys and string values\n\ninterface StringDictionary {\n\n  [key: string]: string;\n\n}\n\n// Creating a compliant object\n\nconst names: StringDictionary = {\n\n  firstName: \"Alice\",\n\n  lastName: \"Smith\",\n\n  \"100\": \"One Hundred\"\n\n};\n\n// Accessing properties\n\nconsole.log(names[\"firstName\"]); // \"Alice\"\n\nconsole.log(names[\"lastName\"]); // \"Smith\"\n\nconsole.log(names[\"100\"]); // \"One Hundred\"\n\n// Adding new properties dynamically\n\nnames[\"age\"] = \"30\";\n\n// This would cause an error\n\n// names[\"age\"] = 30; // Error: Type 'number' is not assignable to type 'string'",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "JavaScript & Frontend",
+        "notes_and_tips": [
+            "Key Concepts\n\n Dynamic Property Access: Handle objects with arbitrary property names\n\n Type Safety: Ensure consistent value types across dynamic properties\n\n Flexible Data Structures: Model dictionaries, maps, and other dynamic data\n\n Runtime Safety: Catch type-related errors at compile time",
+            "Do's and Don'ts\n\n Do:\n\n Use index signatures for collections with dynamic keys\n\n Combine with explicit properties for known fields\n\n Keep value types specific (avoid any)\n\n Use readonly when mutation isn't needed\n\n Don't:\n\n Prefer fixed interfaces when keys are known\n\n Forget that all properties must conform to the index signature type\n\n Reinvent mapped types-use the dedicated page for transformations"
+        ],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "TS HOME\nTS Introduction\nTS Get Started\nTS Simple Types\nTS Explicit & Inference\nTS Special Types\nTS Arrays\nTS Tuples\nTS Object Types\nTS Enums\nTS Aliases & Interfaces\nTS Union Types\nTS Functions\nTS Casting\nTS Classes\nTS Basic Generics\nTS Utility Types\nTS Keyof\nTS Null\nTS Definitely Typed\nTS 5 Updates\nTS Configuration\nTS with Node.js\nTS with React\nTS Tooling\nTS Advanced Types\nTS Type Guards\nTS Conditional Types\nTS Mapped Types\nTS Type Inference\nTS Literal Types\nTS Namespaces\nTS Index Signatures\nTS Declaration Merging\nTS Async Programming\nTS Decorators\nTS in JS Projects\nTS Migration\nTS Error Handling\nTS Best Practices",
+                "heading": "TypeScript tutorial"
+            },
+            {
+                "content": "TS Certificate",
+                "heading": "TypeScript Cert"
+            },
+            {
+                "content": "TS Editor\nTS Exercises\nTS Quiz\nTS Practice Problems\nTS Syllabus\nTS Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\n TypeScript Index Signatures\n\n ❮ Previous\n Next ❯",
+                "heading": "TypeScript Exercises"
+            },
+            {
+                "content": "Index signatures in TypeScript provide a powerful way to define types for objects with dynamic property names while maintaining type safety.\n\nThey allow you to specify the types of values that can be accessed via bracket notation (obj[key]), even when the exact property names aren't known in advance.\n\n Key Concepts\n\n Dynamic Property Access: Handle objects with arbitrary property names\n\n Type Safety: Ensure consistent value types across dynamic properties\n\n Flexible Data Structures: Model dictionaries, maps, and other dynamic data\n\n Runtime Safety: Catch type-related errors at compile time",
+                "heading": "Understanding Index Signatures in TypeScript"
+            },
+            {
+                "content": "String Index Signatures\n\nIndex signatures in TypeScript allow you to define types for objects where you don't know the property names in advance, but you do know the shape of the values.\n\nAn index signature defines the types for properties accessed via an index like obj[key].\n\nExample\n\n// This interface represents an object with string keys and string values\n\ninterface StringDictionary {\n\n  [key: string]: string;\n\n}\n\n// Creating a compliant object\n\nconst names: StringDictionary = {\n\n  firstName: \"Alice\",\n\n  lastName: \"Smith\",\n\n  \"100\": \"One Hundred\"\n\n};\n\n// Accessing properties\n\nconsole.log(names[\"firstName\"]); // \"Alice\"\n\nconsole.log(names[\"lastName\"]); // \"Smith\"\n\nconsole.log(names[\"100\"]); // \"One Hundred\"\n\n// Adding new properties dynamically\n\nnames[\"age\"] = \"30\";\n\n// This would cause an error\n\n// names[\"age\"] = 30; // Error: Type 'number' is not assignable to type 'string'\n\nTry it Yourself »\n\nThe index signature syntax uses brackets [key: type] to describe the types of the property names (or keys) that are allowed, followed by the type of values these properties can have.",
+                "heading": "Basic Index Signatures"
+            },
+            {
+                "content": "Mixed Property Types\n\nYou can combine index signatures with explicit property declarations:\n\nExample\n\ninterface UserInfo {\n\n  name: string; // Required property with specific name\n\n  age: number;  // Required property with specific name\n\n  [key: string]: string | number; // All other properties must be string or number\n\n}\n\nconst user: UserInfo = {\n\n  name: \"Alice\", // Required\n\n  age: 30,      // Required\n\n  address: \"123 Main St\", // Optional\n\n  zipCode: 12345 // Optional\n\n};\n\n// This would cause an error\n\n// const invalidUser: UserInfo = {\n\n//  name: \"Bob\",\n\n//  age: \"thirty\", // Error: Type 'string' is not assignable to type 'number'\n\n//  isAdmin: true  // Error: Type 'boolean' is not assignable to type 'string | number'\n\n// };\n\nTry it Yourself »\n\n Important: When combining explicit properties with an index signature, the types of explicit properties must be assignable to the index signature's value type.\n\nReadOnly Index Signatures\n\nYou can make index signatures read-only to prevent modification after creation:\n\nExample\n\ninterface ReadOnlyStringArray {\n\n  readonly [index: number]: string;\n\n}\n\nconst names: ReadOnlyStringArray = [\"Alice\", \"Bob\", \"Charlie\"];\n\nconsole.log(names[0]); // \"Alice\"\n\n// This would cause an error\n\n// names[0] = \"Andrew\"; // Error: Index signature in type 'ReadOnlyStringArray' only permits reading\n\nTry it Yourself »\n\nFor constraining key sets and transforming shapes, see Mapped Types.",
+                "heading": "Advanced Index Signature Patterns"
+            },
+            {
+                "content": "API Response Handling\n\nExample\n\n// Type for API responses with dynamic keys\n\ninterface ApiResponse<T> {\n\n  data: {\n\n    [resourceType: string]: T[];  // e.g., { \"users\": User[], \"posts\": Post[] }\n\n  };\n\n  meta: {\n\n    page: number;\n\n    total: number;\n\n    [key: string]: any;  // Allow additional metadata\n\n  };\n\n}\n\n// Example usage with a users API\n\ninterface User {\n\n  id: number;\n\n  name: string;\n\n  email: string;\n\n}\n\n// Mock API response\n\nconst apiResponse: ApiResponse<User> = {\n\n  data: {\n\n    users: [\n\n      { id: 1, name: \"Alice\", email: \"alice@example.com\" },\n\n      { id: 2, name: \"Bob\", email: \"bob@example.com\" }\n\n    ]\n\n  },\n\n  meta: {\n\n    page: 1,\n\n    total: 2,\n\n    timestamp: \"2023-01-01T00:00:00Z\"\n\n  }\n\n};\n\n// Accessing the data\n\nconst users = apiResponse.data.users;\n\nconsole.log(users[0].name);  // \"Alice\"\n\nTry it Yourself »",
+                "heading": "Real-World Examples"
+            },
+            {
+                "content": "Do's and Don'ts\n\n Do:\n\n Use index signatures for collections with dynamic keys\n\n Combine with explicit properties for known fields\n\n Keep value types specific (avoid any)\n\n Use readonly when mutation isn't needed\n\n Don't:\n\n Prefer fixed interfaces when keys are known\n\n Forget that all properties must conform to the index signature type\n\n Reinvent mapped types-use the dedicated page for transformations",
+                "heading": "Best Practices"
+            },
+            {
+                "content": "Property Name Conflicts\n\n interface ConflictingTypes {\n\n   [key: string]: number;\n\n   name: string; // Error: not assignable to string index type 'number'\n\n }\n\n interface FixedTypes {\n\n   [key: string]: number | string;\n\n   name: string;  // OK\n\n   age: number;   // OK\n\n }",
+                "heading": "Common Pitfalls"
+            },
+            {
+                "content": "Use an index signature for flexible/dynamic keys and when mixing with other properties.\n\nUse Record<K, T> for concise simple mappings.\n\n// Index signature\n\ninterface StringMap {\n\n  [key: string]: string;\n\n}\n\n// Record\n\ntype StringRecord = Record<string, string>;",
+                "heading": "Index Signatures vs. Record<K, T>"
+            },
+            {
+                "content": "Use index signatures when keys are dynamic but value shapes are consistent.\n\nCombine with explicit properties where possible, and see Mapped Types and Utility Types for advanced transformations.\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Conclusion"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:08:43Z",
+        "subject": "TypeScript",
+        "title": "TypeScript Index Signatures"
+    },
+    {
+        "url": "https://www.w3schools.com/typescript/typescript_declaration_merging.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "typescript_typescript_declaration_merging",
+        "code_examples": [
+            {
+                "code": "// First declaration\n\ninterface Person {\n\n  name: string;\n\n  age: number;\n\n}\n\n// Second declaration with the same name\n\ninterface Person {\n\n  address: string;\n\n  email: string;\n\n}\n\n// TypeScript merges them into:\n\n// interface Person {\n\n// name: string;\n\n// age: number;\n\n// address: string;\n\n// email: string;\n\n// }\n\nconst person: Person = {\n\n  name: \"John\",\n\n  age: 30,\n\n  address: \"123 Main St\",\n\n  email: \"john@example.com\"\n\n};\n\nconsole.log(person);",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "// First part of the enum\n\nenum Direction {\n\n  North,\n\n  South\n\n}\n\n// Second part of the enum\n\nenum Direction {\n\n  East = 2,\n\n  West = 3\n\n}\n\n// After merging:\n\n// enum Direction {\n\n// North = 0,\n\n// South = 1,\n\n// East = 2,\n\n// West = 3\n\n// }\n\nconsole.log(Direction.North); // 0\n\nconsole.log(Direction.South); // 1\n\nconsole.log(Direction.East); // 2\n\nconsole.log(Direction.West); // 3\n\n// Can also access by value\n\nconsole.log(Direction[0]); // \"North\"\n\nconsole.log(Direction[2]); // \"East\"",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "JavaScript & Frontend",
+        "notes_and_tips": [
+            "Key Benefits\n\n Progressive Enhancement: Build types incrementally across multiple declarations\n\n Extensibility: Add new members to existing types without modifying original definitions\n\n Organization: Split large type definitions into logical groupings\n\n Compatibility: Extend third-party type definitions when needed",
+            "Common Use Cases\n\n Extending built-in types and third-party library types\n\n Adding type information for JavaScript libraries\n\n Organizing large interfaces across multiple files\n\n Creating fluent APIs with method chaining\n\n Implementing the module augmentation pattern",
+            "Compilation Time: Excessive declaration merging can increase compilation time\n\n Type Checking: Complex merged types may impact IDE performance\n\n Bundle Size: Declaration merging doesn't affect runtime performance or bundle size\n\n Optimization Tips:\n\n Keep merged interfaces focused and cohesive\n\n Avoid deep nesting in merged types\n\n Use type aliases for simple type combinations instead of merging"
+        ],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "TS HOME\nTS Introduction\nTS Get Started\nTS Simple Types\nTS Explicit & Inference\nTS Special Types\nTS Arrays\nTS Tuples\nTS Object Types\nTS Enums\nTS Aliases & Interfaces\nTS Union Types\nTS Functions\nTS Casting\nTS Classes\nTS Basic Generics\nTS Utility Types\nTS Keyof\nTS Null\nTS Definitely Typed\nTS 5 Updates\nTS Configuration\nTS with Node.js\nTS with React\nTS Tooling\nTS Advanced Types\nTS Type Guards\nTS Conditional Types\nTS Mapped Types\nTS Type Inference\nTS Literal Types\nTS Namespaces\nTS Index Signatures\nTS Declaration Merging\nTS Async Programming\nTS Decorators\nTS in JS Projects\nTS Migration\nTS Error Handling\nTS Best Practices",
+                "heading": "TypeScript tutorial"
+            },
+            {
+                "content": "TS Certificate",
+                "heading": "TypeScript Cert"
+            },
+            {
+                "content": "TS Editor\nTS Exercises\nTS Quiz\nTS Practice Problems\nTS Syllabus\nTS Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\n TypeScript Declaration Merging\n\n ❮ Previous\n Next ❯",
+                "heading": "TypeScript Exercises"
+            },
+            {
+                "content": "Declaration merging is a powerful TypeScript feature that allows you to combine multiple declarations with the same name into a single definition.\n\nThis enables you to build up complex types incrementally and extend existing types in a type-safe manner.\n\n Key Benefits\n\n Progressive Enhancement: Build types incrementally across multiple declarations\n\n Extensibility: Add new members to existing types without modifying original definitions\n\n Organization: Split large type definitions into logical groupings\n\n Compatibility: Extend third-party type definitions when needed\n\n Common Use Cases\n\n Extending built-in types and third-party library types\n\n Adding type information for JavaScript libraries\n\n Organizing large interfaces across multiple files\n\n Creating fluent APIs with method chaining\n\n Implementing the module augmentation pattern",
+                "heading": "Understanding Declaration Merging"
+            },
+            {
+                "content": "Interfaces with the same name are automatically merged:\n\n Example\n\n// First declaration\n\ninterface Person {\n\n  name: string;\n\n  age: number;\n\n}\n\n// Second declaration with the same name\n\ninterface Person {\n\n  address: string;\n\n  email: string;\n\n}\n\n// TypeScript merges them into:\n\n// interface Person {\n\n// name: string;\n\n// age: number;\n\n// address: string;\n\n// email: string;\n\n// }\n\nconst person: Person = {\n\n  name: \"John\",\n\n  age: 30,\n\n  address: \"123 Main St\",\n\n  email: \"john@example.com\"\n\n};\n\nconsole.log(person);\n\nTry it Yourself »",
+                "heading": "Interface Merging"
+            },
+            {
+                "content": "You can define multiple function declarations that later merge when implemented:\n\n Example\n\n// Function overloads\n\nfunction processValue(value: string): string;\n\nfunction processValue(value: number): number;\n\nfunction processValue(value: boolean): boolean;\n\n// Implementation that handles all overloads\n\nfunction processValue(value: string | number | boolean): string | number | boolean {\n\n  if (typeof value === \"string\") {\n\n    return value.toUpperCase();\n\n  } else if (typeof value === \"number\") {\n\n    return value * 2;\n\n  } else {\n\n    return !value;\n\n  }\n\n}\n\n// Using the function with different types\n\nconsole.log(processValue(\"hello\")); // \"HELLO\"\n\nconsole.log(processValue(10)); // 20\n\nconsole.log(processValue(true)); // false\n\nTry it Yourself »",
+                "heading": "Function Overloads with Merging"
+            },
+            {
+                "content": "Namespaces with the same name are merged:\n\n Example\n\nnamespace Validation {\n\n  export interface StringValidator {\n\n    isValid(s: string): boolean;\n\n  }\n\n}\n\nnamespace Validation {\n\n  export interface NumberValidator {\n\n    isValid(n: number): boolean;\n\n  }\n\n  export class ZipCodeValidator implements StringValidator {\n\n    isValid(s: string): boolean {\n\n      return s.length === 5 && /^\\d+$/.test(s);\n\n    }\n\n  }\n\n}\n\n// After merging:\n\n// namespace Validation {\n\n// export interface StringValidator { isValid(s: string): boolean; }\n\n// export interface NumberValidator { isValid(n: number): boolean; }\n\n// export class ZipCodeValidator implements StringValidator { ... }\n\n// }\n\n// Using the merged namespace\n\nconst zipValidator = new Validation.ZipCodeValidator();\n\nconsole.log(zipValidator.isValid(\"12345\")); // true\n\nconsole.log(zipValidator.isValid(\"1234\")); // false\n\nconsole.log(zipValidator.isValid(\"abcde\")); // false\n\nTry it Yourself »",
+                "heading": "Namespace Merging"
+            },
+            {
+                "content": "A class declaration can merge with an interface of the same name:\n\n Example\n\n// Interface declaration\n\ninterface Cart {\n\n  calculateTotal(): number;\n\n}\n\n// Class declaration with same name\n\nclass Cart {\n\n  items: { name: string; price: number }[] = [];\n\n  addItem(name: string, price: number): void {\n\n    this.items.push({ name, price });\n\n  }\n\n   // Must implement the interface method\n\n   calculateTotal(): number {\n\n    return this.items.reduce((sum, item) => sum + item.price, 0);\n\n  }\n\n}\n\n// Using the merged class and interface\n\nconst cart = new Cart();\n\ncart.addItem(\"Book\", 15.99);\n\ncart.addItem(\"Coffee Mug\", 8.99);\n\nconsole.log(`Total: $${cart.calculateTotal().toFixed(2)}`);",
+                "heading": "Class and Interface Merging"
+            },
+            {
+                "content": "Enum declarations with the same name are merged:\n\n Example\n\n// First part of the enum\n\nenum Direction {\n\n  North,\n\n  South\n\n}\n\n// Second part of the enum\n\nenum Direction {\n\n  East = 2,\n\n  West = 3\n\n}\n\n// After merging:\n\n// enum Direction {\n\n// North = 0,\n\n// South = 1,\n\n// East = 2,\n\n// West = 3\n\n// }\n\nconsole.log(Direction.North); // 0\n\nconsole.log(Direction.South); // 1\n\nconsole.log(Direction.East); // 2\n\nconsole.log(Direction.West); // 3\n\n// Can also access by value\n\nconsole.log(Direction[0]); // \"North\"\n\nconsole.log(Direction[2]); // \"East\"\n\nTry it Yourself »",
+                "heading": "Enum Merging"
+            },
+            {
+                "content": "You can extend existing modules or libraries by declaring additional types and functionality:\n\n Example\n\n// Original library definition\n\n// Imagine this comes from a third-party library\n\ndeclare namespace LibraryModule {\n\n  export interface User {\n\n    id: number;\n\n    name: string;\n\n  }\n\n  export function getUser(id: number): User;\n\n}\n\n// Augmenting with additional functionality (your code)\n\ndeclare namespace LibraryModule {\n\n  // Add new interface\n\n  export interface UserPreferences {\n\n    theme: string;\n\n    notifications: boolean;\n\n  }\n\n  // Add new property to existing interface\n\n  export interface User {\n\n    preferences?: UserPreferences;\n\n  }\n\n  // Add new function\n\n  export function getUserPreferences(userId: number): UserPreferences;\n\n}\n\n// Using the augmented module\n\nconst user = LibraryModule.getUser(123);\n\nconsole.log(user.preferences?.theme);\n\nconst prefs = LibraryModule.getUserPreferences(123);\n\nconsole.log(prefs.notifications);\n\nTry it Yourself »",
+                "heading": "Module Augmentation"
+            },
+            {
+                "content": "There are some rules to consider when using declaration merging:\n\n Order matters for function overloads: The implementation signature should be the most general\n\n Non-function members must be compatible: If two interfaces declare a property with the same name, the types must be identical or compatible\n\n Later interfaces take precedence: If conflicts exist in merged interfaces, the last declaration wins\n\n Private and protected members: Classes can't merge if they have private or protected members with the same name but different types\n\n Namespace exports: Only exported declarations are visible outside the namespace after merging",
+                "heading": "Best Practices"
+            },
+            {
+                "content": "Compilation Time: Excessive declaration merging can increase compilation time\n\n Type Checking: Complex merged types may impact IDE performance\n\n Bundle Size: Declaration merging doesn't affect runtime performance or bundle size\n\n Optimization Tips:\n\n Keep merged interfaces focused and cohesive\n\n Avoid deep nesting in merged types\n\n Use type aliases for simple type combinations instead of merging\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Performance Considerations"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:08:43Z",
+        "subject": "TypeScript",
+        "title": "TypeScript Declaration Merging"
+    },
+    {
+        "url": "https://www.w3schools.com/typescript/typescript_async.php",
+        "summary": "Master asynchronous programming in TypeScript with Promises, async/await, error handling, and advanced patterns. Learn best practices for writing robust async code.",
+        "topic_id": "typescript_typescript_async",
+        "code_examples": [
+            {
+                "code": "// Create a typed Promise that resolves to a string\n\n const fetchGreeting = (): Promise<string> => {\n\n   return new Promise((resolve, reject) => {\n\n     setTimeout(() => {\n\n       const success = Math.random() > 0.5;\n\n       if (success) {\n\n         resolve(\"Hello, TypeScript!\");\n\n       } else {\n\n         reject(new Error(\"Failed to fetch greeting\"));\n\n       }\n\n     }, 1000);\n\n   });\n\n };\n\n // Using the Promise with proper type inference\n\n fetchGreeting()\n\n   .then((greeting) => {\n\n     // TypeScript knows 'greeting' is a string\n\n     console.log(greeting.toUpperCase());\n\n   })\n\n   .catch((error: Error) => {\n\n     console.error(\"Error:\", error.message);\n\n   });",
+                "language": "typescript",
+                "heading": "Basic Promise Example",
+                "tryit_url": null
+            },
+            {
+                "code": "interface Product {\n\n   id: number;\n\n   name: string;\n\n   price: number;\n\n }\n\n async function fetchProduct(id: number): Promise<Product> {\n\n   console.log(`Fetching product ${id}...`);\n\n   await new Promise(resolve => setTimeout(resolve, Math.random() * 1000));\n\n   return { id, name: `Product ${id}`, price: Math.floor(Math.random() * 100) };\n\n }\n\n async function fetchMultipleProducts() {\n\n   try {\n\n     // Start all fetches in parallel\n\n     const [product1, product2, product3] = await Promise.all([\n\n       fetchProduct(1),\n\n       fetchProduct(2),\n\n       fetchProduct(3)\n\n     ]);\n\n     const total = [product1, product2, product3]\n\n       .reduce((sum, product) => sum + product.price, 0);\n\n     console.log(`Total price: $${total.toFixed(2)}`);\n\n   } catch (error) {\n\n     console.error('Error fetching products:', error);\n\n   }\n\n }\n\n fetchMultipleProducts();",
+                "language": "typescript",
+                "heading": "Parallel Execution with Promise.all",
+                "tryit_url": null
+            }
+        ],
+        "category": "JavaScript & Frontend",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "TS HOME\nTS Introduction\nTS Get Started\nTS Simple Types\nTS Explicit & Inference\nTS Special Types\nTS Arrays\nTS Tuples\nTS Object Types\nTS Enums\nTS Aliases & Interfaces\nTS Union Types\nTS Functions\nTS Casting\nTS Classes\nTS Basic Generics\nTS Utility Types\nTS Keyof\nTS Null\nTS Definitely Typed\nTS 5 Updates\nTS Configuration\nTS with Node.js\nTS with React\nTS Tooling\nTS Advanced Types\nTS Type Guards\nTS Conditional Types\nTS Mapped Types\nTS Type Inference\nTS Literal Types\nTS Namespaces\nTS Index Signatures\nTS Declaration Merging\nTS Async Programming\nTS Decorators\nTS in JS Projects\nTS Migration\nTS Error Handling\nTS Best Practices",
+                "heading": "TypeScript tutorial"
+            },
+            {
+                "content": "TS Certificate",
+                "heading": "TypeScript Cert"
+            },
+            {
+                "content": "TS Editor\nTS Exercises\nTS Quiz\nTS Practice Problems\nTS Syllabus\nTS Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\n TypeScript Async Programming\n\n ❮ Previous\n Next ❯\n\nTypeScript enhances JavaScript's asynchronous capabilities with static typing, making your async code more predictable and maintainable.\n\nThis guide covers everything from basic async/await to advanced patterns.\n\n This tutorial assumes basic knowledge of JavaScript Promises and asynchronous programming.\n\nIf you're new to these concepts, check out our JavaScript Async tutorial first.",
+                "heading": "TypeScript Exercises"
+            },
+            {
+                "content": "TypeScript enhances JavaScript Promises with type safety through generics.\n\nA Promise<T> represents an asynchronous operation that will complete with a value of type T or fail with a reason of type any.\n\n Key Points:\n\n Promise<T> - Generic type where T is the type of the resolved value\n\n Promise<void> - For Promises that don't return a value\n\n Promise<never> - For Promises that never resolve (rare)\n\n Basic Promise Example\n\n // Create a typed Promise that resolves to a string\n\n const fetchGreeting = (): Promise<string> => {\n\n   return new Promise((resolve, reject) => {\n\n     setTimeout(() => {\n\n       const success = Math.random() > 0.5;\n\n       if (success) {\n\n         resolve(\"Hello, TypeScript!\");\n\n       } else {\n\n         reject(new Error(\"Failed to fetch greeting\"));\n\n       }\n\n     }, 1000);\n\n   });\n\n };\n\n // Using the Promise with proper type inference\n\n fetchGreeting()\n\n   .then((greeting) => {\n\n     // TypeScript knows 'greeting' is a string\n\n     console.log(greeting.toUpperCase());\n\n   })\n\n   .catch((error: Error) => {\n\n     console.error(\"Error:\", error.message);\n\n   });\n\n Try it Yourself »\n\n Promise States and Type Flow\n\n Promise State Flow:\n\n pending → fulfilled (with value: T) // Success case\n\n pending → rejected (with reason: any) // Error case\n\n TypeScript tracks these states through the type system, ensuring you handle both success and error cases properly.\n\nThe type parameter in Promise<T> tells TypeScript what type the Promise will resolve to, allowing for better type checking and IDE support.",
+                "heading": "Promises in TypeScript"
+            },
+            {
+                "content": "TypeScript's async/await syntax provides a cleaner way to work with Promises, making asynchronous code look and behave more like synchronous code while maintaining type safety.\n\n Key Benefits of Async/Await\n\n Readability: Sequential code that's easier to follow\n\n Error Handling: Use try/catch for both sync and async errors\n\n Debugging: Easier to debug with synchronous-like stack traces\n\n Type Safety: Full TypeScript type inference and checking\n\n Basic Async/Await Example\n\n // Define types for our API response\n\n interface User {\n\n   id: number;\n\n   name: string;\n\n   email: string;\n\n   role: 'admin' | 'user' | 'guest';\n\n }\n\n // Function that returns a Promise of User array\n\n async function fetchUsers(): Promise<User[]> {\n\n   console.log('Fetching users...');\n\n   // Simulate API call\n\n   await new Promise(resolve => setTimeout(resolve, 1000));\n\n   return [\n\n     { id: 1, name: 'Alice', email: 'alice@example.com', role: 'admin' },\n\n     { id: 2, name: 'Bob', email: 'bob@example.com', role: 'user' }\n\n   ];\n\n }\n\n // Async function to process users\n\n async function processUsers() {\n\n   try {\n\n     // TypeScript knows users is User[]\n\n     const users = await fetchUsers();\n\n     console.log(`Fetched ${users.length} users`);\n\n     // Type-safe property access\n\n     const adminEmails = users\n\n       .filter(user => user.role === 'admin')\n\n       .map(user => user.email);\n\n     console.log('Admin emails:', adminEmails);\n\n     return users;\n\n   } catch (error) {\n\n     if (error instanceof Error) {\n\n       console.error('Failed to process users:', error.message);\n\n     } else {\n\n       console.error('An unknown error occurred');\n\n     }\n\n     throw error; // Re-throw to let caller handle\n\n   }\n\n }\n\n // Execute the async function\n\n processUsers()\n\n   .then(users => console.log('Processing complete'))\n\n   .catch(err => console.error('Processing failed:', err));\n\n Try it Yourself »\n\n Async Function Return Types\n All async functions in TypeScript return a Promise.\n\nThe return type is automatically wrapped in a Promise:\n\n async function getString(): string { } // Error: must return Promise\n\n async function getString(): Promise<string> { } // Correct\n\n Parallel Execution with Promise.all\n Run multiple async operations in parallel and wait for all to complete:\n\n interface Product {\n\n   id: number;\n\n   name: string;\n\n   price: number;\n\n }\n\n async function fetchProduct(id: number): Promise<Product> {\n\n   console.log(`Fetching product ${id}...`);\n\n   await new Promise(resolve => setTimeout(resolve, Math.random() * 1000));\n\n   return { id, name: `Product ${id}`, price: Math.floor(Math.random() * 100) };\n\n }\n\n async function fetchMultipleProducts() {\n\n   try {\n\n     // Start all fetches in parallel\n\n     const [product1, product2, product3] = await Promise.all([\n\n       fetchProduct(1),\n\n       fetchProduct(2),\n\n       fetchProduct(3)\n\n     ]);\n\n     const total = [product1, product2, product3]\n\n       .reduce((sum, product) => sum + product.price, 0);\n\n     console.log(`Total price: $${total.toFixed(2)}`);\n\n   } catch (error) {\n\n     console.error('Error fetching products:', error);\n\n   }\n\n }\n\n fetchMultipleProducts();\n\n Try it Yourself »\n\n Note: All async functions in TypeScript return a Promise.\n\nThe type parameter of the Promise corresponds to the return type you declare after the Promise keyword.",
+                "heading": "Async/Await with TypeScript"
+            },
+            {
+                "content": "For traditional callback-based asynchronous code, TypeScript helps ensure proper typing of the callback parameters:\n\nExample\n\n// Define a type for the callback\n\ntype FetchCallback = (error: Error | null, data?: string) => void;\n\n// Function that takes a typed callback\n\nfunction fetchDataWithCallback(url: string, callback: FetchCallback): void {\n\n  // Simulate async operation\n\n  setTimeout(() => {\n\n    try {\n\n      // Simulate successful response\n\n      callback(null, \"Response data\");\n\n    } catch (error) {\n\n      callback(error instanceof Error ? error : new Error('Unknown error'));\n\n    }\n\n  }, 1000);\n\n}\n\n// Using the callback function\n\nfetchDataWithCallback('https://api.example.com', (error, data) => {\n\n  if (error) {\n\n    console.error('Error:', error.message);\n\n    return;\n\n  }\n\n  // TypeScript knows data is a string (or undefined)\n\n  if (data) {\n\n    console.log(data.toUpperCase());\n\n  }\n\n});\n\nTry it Yourself »",
+                "heading": "Typing Callbacks for Async Operations"
+            },
+            {
+                "content": "TypeScript provides powerful utility types and methods for working with multiple Promises.\n\nThese methods help you manage concurrent operations and handle their results in a type-safe way.\n\n Promise Combination Methods\n\n Promise.all() - Waits for all promises to resolve\n\n Promise.race() - Returns the first settled promise\n\n Promise.allSettled() - Waits for all to settle (success or failure)\n\n Promise.any() - Returns the first fulfilled promise\n\n Promise.all - Parallel Execution\n Run multiple promises in parallel and wait for all to complete.\n\nFails fast if any promise rejects.\n\n // Different types of promises\n\n const fetchUser = (id: number): Promise<{ id: number; name: string }> =>\n\n   Promise.resolve({ id, name: `User ${id}` });\n\n const fetchPosts = (userId: number): Promise<Array<{ id: number; title: string }>> =>\n\n   Promise.resolve([\n     { id: 1, title: 'Post 1' },\n\n     { id: 2, title: 'Post 2' }\n\n   ]);\n\n const fetchStats = (userId: number): Promise<{ views: number; likes: number }> =>\n\n   Promise.resolve({ views: 100, likes: 25 });\n\n // Run all in parallel\n\n async function loadUserDashboard(userId: number) {\n\n   try {\n\n     const [user, posts, stats] = await Promise.all([\n\n       fetchUser(userId),\n\n       fetchPosts(userId),\n\n       fetchStats(userId)\n\n     ]);\n\n     // TypeScript knows the types of user, posts, and stats\n\n     console.log(`User: ${user.name}`);\n\n     console.log(`Posts: ${posts.length}`);\n\n     console.log(`Likes: ${stats.likes}`);\n\n     return { user, posts, stats };\n\n   } catch (error) {\n\n     console.error('Failed to load dashboard:', error);\n\n     throw error;\n\n   }\n\n }\n\n // Execute with a user ID\n\n loadUserDashboard(1);\n\n Try it Yourself »\n\n Promise.race - First to Settle\n Useful for timeouts or getting the first successful response from multiple sources.\n\n // Helper function for timeout\n\n const timeout = (ms: number): Promise<never> =>\n\n   new Promise((_, reject) =>\n\n     setTimeout(() => reject(new Error(`Timeout after ${ms}ms`)), ms)\n\n   );\n\n // Simulate API call with timeout\n\n async function fetchWithTimeout<T>(\n\n   promise: Promise<T>,\n\n   timeoutMs: number = 5000\n\n ): Promise<T> {\n\n   return Promise.race([\n\n     promise,\n\n     timeout(timeoutMs).then(() => {\n\n       throw new Error(`Request timed out after ${timeoutMs}ms`);\n\n     }),\n\n   ]);\n\n }\n\n // Usage example\n\n async function fetchUserData() {\n\n   try {\n\n     const response = await fetchWithTimeout(\n\n       fetch('https://api.example.com/user/1'),\n\n       3000 // 3 second timeout\n\n     );\n\n     const data = await response.json();\n\n     return data;\n\n   } catch (error) {\n\n     console.error('Error:', (error as Error).message);\n\n     throw error;\n\n   }\n\n }\n\n Try it Yourself »\n\n Promise.allSettled - Handle All Results\n When you want to wait for all promises to complete, regardless of success or failure.\n\n // Simulate multiple API calls with different outcomes\n\n const fetchData = async (id: number) => {\n\n   // Randomly fail some requests\n\n   if (Math.random() > 0.7) {\n\n     throw new Error(`Failed to fetch data for ID ${id}`);\n\n   }\n\n   return { id, data: `Data for ${id}` };\n\n };\n\n // Process multiple items with individual error handling\n\n async function processBatch(ids: number[]) {\n\n   const promises = ids.map(id => \n\n     fetchData(id)\n\n       .then(value => ({ status: 'fulfilled' as const, value }))\n\n       .catch(reason => ({ status: 'rejected' as const, reason }))\n\n   );\n\n   // Wait for all to complete\n\n   const results = await Promise.allSettled(promises);\n\n   // Process results\n\n   const successful = results\n\n     .filter((result): result is PromiseFulfilledResult<{ status: 'fulfilled', value: any }> => \n\n       result.status === 'fulfilled' && \n\n       result.value.status === 'fulfilled'\n\n     )\n\n     .map(r => r.value.value);\n\n   const failed = results\n\n     .filter((result): result is PromiseRejectedResult | \n\n       PromiseFulfilledResult<{ status: 'rejected', reason: any }> => {\n\n       if (result.status === 'rejected') return true;\n\n       return result.value.status === 'rejected';\n\n     });\n\n   console.log(`Successfully processed: ${successful.length}`);\n\n   console.log(`Failed: ${failed.length}`);\n\n   return { successful, failed };\n\n }\n\n // Process a batch of IDs\n\n processBatch([1, 2, 3, 4, 5]);\n\n Try it Yourself »\n\n Warning: When using Promise.all with an array of promises that have different types, TypeScript will infer the result type as an array of the union of all possible types.\n\nFor more precise typing, you may need to use type assertions or define the expected structure.",
+                "heading": "Promise Combinations"
+            },
+            {
+                "content": "TypeScript provides powerful tools for type-safe error handling in asynchronous code.\n\nLet's explore different patterns and best practices.\n\n Error Handling Strategies\n\n Try/Catch Blocks: For handling errors in async/await\n\n Error Boundaries: For React components\n\n Result Types: Functional approach with success/failure\n\n Error Subclassing: For domain-specific errors\n\n Custom Error Classes\n Create domain-specific error types for better error handling:\n\n // Base error class for our application\n\n class AppError extends Error {\n\n   constructor(\n\n     message: string,\n\n     public readonly code: string,\n\n     public readonly details?: unknown\n\n   ) {\n\n     super(message);\n\n     this.name = this.constructor.name;\n\n     Error.captureStackTrace?.(this, this.constructor);\n\n   }\n\n }\n\n // Specific error types\n\n class NetworkError extends AppError {\n\n   constructor(message: string, details?: unknown) {\n\n     super(message, 'NETWORK_ERROR', details);\n\n   }\n\n }\n\n class ValidationError extends AppError {\n\n   constructor(\n\n     public readonly field: string,\n\n     message: string\n\n   ) {\n\n     super(message, 'VALIDATION_ERROR', { field });\n\n   }\n\n }\n\n class NotFoundError extends AppError {\n\n   constructor(resource: string, id: string | number) {\n\n     super(\n\n       `${resource} with ID ${id} not found`,\n\n       'NOT_FOUND',\n\n       { resource, id }\n\n     );\n\n   }\n\n }\n\n // Usage example\n\n async function fetchUserData(userId: string): Promise<{ id: string; name: string }> {\n\n   try {\n\n     // Simulate API call\n\n     const response = await fetch(`/api/users/${userId}`);\n\n     if (!response.ok) {\n\n       if (response.status === 404) {\n\n         throw new NotFoundError('User', userId);\n\n        } else if (response.status >= 500) {\n\n         throw new NetworkError('Server error', { status: response.status });\n\n        } else {\n\n         throw new Error(`HTTP error! status: ${response.status}`);\n\n        }\n\n     }\n\n     const data = await response.json();\n\n     // Validate response data\n\n     if (!data.name) {\n\n       throw new ValidationError('name', 'Name is required');\n\n     }\n\n     return data;\n\n   } catch (error) {\n\n     if (error instanceof AppError) {\n\n       // Already one of our custom errors\n\n       throw error;\n\n     }\n\n     // Wrap unexpected errors\n\n     throw new AppError(\n\n       'Failed to fetch user data',\n\n       'UNEXPECTED_ERROR',\n\n       { cause: error }\n\n     );\n\n   }\n\n }\n\n // Error handling in the application\n\n async function displayUserProfile(userId: string) {\n\n   try {\n\n     const user = await fetchUserData(userId);\n\n     console.log('User profile:', user);\n\n   } catch (error) {\n\n     if (error instanceof NetworkError) {\n\n       console.error('Network issue:', error.message);\n\n       // Show retry UI\n\n     } else if (error instanceof ValidationError) {\n\n       console.error('Validation failed:', error.message);\n\n       // Highlight the invalid field\n\n     } else if (error instanceof NotFoundError) {\n\n       console.error('Not found:', error.message);\n\n       // Show 404 page\n\n     } else {\n\n       console.error('Unexpected error:', error);\n\n       // Show generic error message\n\n     }\n\n   }\n\n }\n\n // Execute with example data\n\n displayUserProfile('123');\n\n Try it Yourself »\n\n Error Handling Patterns\n Consider these patterns for robust error handling:\n\n Error Boundaries in React for component-level error handling\n\n Result Objects instead of throwing exceptions for expected cases\n\n Global Error Handler for uncaught exceptions\n\n Error Logging to capture and report errors",
+                "heading": "Error Handling in Async Code"
+            },
+            {
+                "content": "TypeScript supports async iterators and async generators with proper typing:\n\nExample\n\n// Async generator function\n\nasync function* generateNumbers(): AsyncGenerator<number, void, unknown> {\n\n  let i = 0;\n\n  while (i < 5) {\n\n    // Simulate async operation\n\n    await new Promise(resolve => setTimeout(resolve, 1000));\n\n    yield i++;\n\n  }\n\n}\n\n// Using the async generator\n\nasync function consumeNumbers() {\n\n  for await (const num of generateNumbers()) {\n\n    // TypeScript knows num is a number\n\n    console.log(num * 2);\n\n  }\n\n}\n\nTry it Yourself »\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Async Iteration with TypeScript"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:08:44Z",
+        "subject": "TypeScript",
+        "title": "TypeScript Async Programming"
+    },
+    {
+        "url": "https://www.w3schools.com/typescript/typescript_decorators.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "typescript_typescript_decorators",
+        "code_examples": [
+            {
+                "code": "tsconfig.json\n\n {\n\n   \"compilerOptions\": {\n\n     \"target\": \"ES2020\",\n\n     \"module\": \"commonjs\",\n\n     \"experimentalDecorators\": true,\n\n     \"emitDecoratorMetadata\": true,\n\n     \"strictPropertyInitialization\": false\n\n   },\n\n   \"include\": [\"src/**/*.ts\"]\n\n }",
+                "language": "typescript",
+                "heading": "tsconfig.json",
+                "tryit_url": null
+            },
+            {
+                "code": "// A simple class decorator that logs class definition\n\n function logClass(constructor: Function) {\n\n   console.log(`Class ${constructor.name} was defined at ${new Date().toISOString()}`);\n\n }\n\n // Applying the decorator\n\n @logClass\n\n class UserService {\n\n   getUsers() {\n\n     return ['Alice', 'Bob', 'Charlie'];\n\n   }\n\n }\n\n // Output when the file is loaded: \"Class UserService was defined at [timestamp]\"",
+                "language": "typescript",
+                "heading": "Class Decorator with Constructor Modification",
+                "tryit_url": null
+            },
+            {
+                "code": "Example: Property Decorator\n\nfunction readonly(target: any, propertyKey: string) {\n\n  Object.defineProperty(target, propertyKey, {\n\n    writable: false\n\n  });\n\n}\n\nclass Person {\n\n  @readonly\n\n  name = \"John\";\n\n}",
+                "language": "typescript",
+                "heading": "Example: Property Decorator",
+                "tryit_url": null
+            },
+            {
+                "code": "Example: Parameter Decorator\n\nfunction logParameter(target: any, propertyKey: string, parameterIndex: number) {\n\n  console.log(`Parameter in ${propertyKey} at index ${parameterIndex}`);\n\n}\n\nclass Demo {\n\n  greet(@logParameter message: string) {\n\n    return message;\n\n  }\n\n}",
+                "language": "typescript",
+                "heading": "Example: Parameter Decorator",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\n{\n\n   \"compilerOptions\": {\n\n     \"experimentalDecorators\": true\n\n   }\n\n}",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "JavaScript & Frontend",
+        "notes_and_tips": [
+            "Decorators are a powerful TypeScript feature that allow you to add metadata and modify classes and their members at design time.\n\n They are widely used in frameworks like Angular and NestJS for dependency injection, routing, and more.",
+            "Key Points About Class Decorators\n\n Class decorators are called when the class is declared, not when instances are created\n\n They receive the class constructor as their only parameter\n\n They can return a new constructor function to replace the original class\n\n They are executed bottom-up (the innermost decorator runs first)\n\n They can be used for logging, sealing, freezing, or adding metadata",
+            "Key Points About Method Decorators\n\n Method decorators are called when the method is defined, not when it's called\n\n They can modify the method's behavior by wrapping it with additional logic\n\n They can be used for cross-cutting concerns like logging, validation, and authorization\n\n They receive the method's property descriptor which allows modifying the method's behavior\n\n They must return a property descriptor or undefined (if not modifying the descriptor)",
+            "Key Points About Property Decorators\n\n Property decorators are called when the property is defined, not when it's accessed\n\n They don't receive a property descriptor like method decorators do\n\n To modify property behavior, you need to use Object.defineProperty\n\n They're often used for metadata reflection or to modify property access\n\n They can be combined with other decorators for more complex behaviors",
+            "Key Points About Parameter Decorators\n\n Parameter decorators are called when the method is defined, not when it's called\n\n They're often used with method decorators to implement cross-cutting concerns\n\n They can be used with the reflect-metadata library to store and retrieve metadata\n\n They're commonly used in dependency injection frameworks\n\n They receive the parameter index, which can be used to access the parameter value at runtime",
+            "Decorator Best Practices\n\n Follow these best practices when working with decorators:\n\n Keep decorators focused: Each decorator should have a single responsibility.\n\n Document behavior: Clearly document what your decorators do and any side effects they might have.\n\n Use decorator factories: Make decorators configurable using factories for better reusability.\n\n Consider performance: Be mindful of performance implications, especially with decorators that add runtime overhead.\n\n Type safety: Use TypeScript's type system to make decorators type-safe when possible.\n\n Error handling: Implement proper error handling within decorators.\n\n Testing: Write unit tests for your decorators to ensure they work as expected.\n\n Metadata: Use reflect-metadata for more advanced scenarios requiring runtime type information.",
+            "Common Decorator Pitfalls\n\n Avoid these common mistakes when working with decorators:\n\n Forgetting to enable decorators: Ensure experimentalDecorators is enabled in tsconfig.json.\n\n Incorrect decorator signature: Each decorator type has a specific signature. Using the wrong parameters can lead to runtime errors.\n\n Decorator evaluation order: Decorators are evaluated from bottom to top for each declaration.\n\n Property initialization: Property decorators run before instance properties are initialized.\n\n Metadata reflection: Forgetting to import reflect-metadata when using decorator metadata.\n\n Performance overhead: Be cautious with decorators that add significant runtime overhead in performance-critical code.\n\n Browser compatibility: Decorators are a stage 3 proposal and may require transpilation for older browsers."
+        ],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "TS HOME\nTS Introduction\nTS Get Started\nTS Simple Types\nTS Explicit & Inference\nTS Special Types\nTS Arrays\nTS Tuples\nTS Object Types\nTS Enums\nTS Aliases & Interfaces\nTS Union Types\nTS Functions\nTS Casting\nTS Classes\nTS Basic Generics\nTS Utility Types\nTS Keyof\nTS Null\nTS Definitely Typed\nTS 5 Updates\nTS Configuration\nTS with Node.js\nTS with React\nTS Tooling\nTS Advanced Types\nTS Type Guards\nTS Conditional Types\nTS Mapped Types\nTS Type Inference\nTS Literal Types\nTS Namespaces\nTS Index Signatures\nTS Declaration Merging\nTS Async Programming\nTS Decorators\nTS in JS Projects\nTS Migration\nTS Error Handling\nTS Best Practices",
+                "heading": "TypeScript tutorial"
+            },
+            {
+                "content": "TS Certificate",
+                "heading": "TypeScript Cert"
+            },
+            {
+                "content": "TS Editor\nTS Exercises\nTS Quiz\nTS Practice Problems\nTS Syllabus\nTS Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\n TypeScript Decorators\n\n ❮ Previous\n Next ❯\n\n Decorators are a powerful TypeScript feature that allow you to add metadata and modify classes and their members at design time.\n\n They are widely used in frameworks like Angular and NestJS for dependency injection, routing, and more.",
+                "heading": "TypeScript Exercises"
+            },
+            {
+                "content": "To use decorators in TypeScript, you need to enable them in your tsconfig.json:\n\n tsconfig.json\n\n {\n\n   \"compilerOptions\": {\n\n     \"target\": \"ES2020\",\n\n     \"module\": \"commonjs\",\n\n     \"experimentalDecorators\": true,\n\n     \"emitDecoratorMetadata\": true,\n\n     \"strictPropertyInitialization\": false\n\n   },\n\n   \"include\": [\"src/**/*.ts\"]\n\n }\n\n Note: The emitDecoratorMetadata option enables experimental support for emitting type metadata for decorators, which is used by libraries like TypeORM and class-validator.",
+                "heading": "Enabling Decorators"
+            },
+            {
+                "content": "TypeScript supports several types of decorators that can be applied to different declarations:\n\n Decorator Type\n Applies To\n Signature\n\n Class Decorator\n Class declarations\n (constructor: Function) => void\n\n Method Decorator\n Class methods\n (target: any, propertyKey: string, descriptor: PropertyDescriptor) => void\n\n Property Decorator\n Class properties\n (target: any, propertyKey: string) => void\n\n Parameter Decorator\n Method parameters\n (target: any, propertyKey: string, parameterIndex: number) => void",
+                "heading": "Types of Decorators"
+            },
+            {
+                "content": "Class decorators are applied to the constructor of a class and can be used to observe, modify, or replace a class definition.\n\nThey are called when the class is declared, not when instances are created.\n\nBasic Class Decorator\nThis simple decorator logs when a class is defined:\n\n // A simple class decorator that logs class definition\n\n function logClass(constructor: Function) {\n\n   console.log(`Class ${constructor.name} was defined at ${new Date().toISOString()}`);\n\n }\n\n // Applying the decorator\n\n @logClass\n\n class UserService {\n\n   getUsers() {\n\n     return ['Alice', 'Bob', 'Charlie'];\n\n   }\n\n }\n\n // Output when the file is loaded: \"Class UserService was defined at [timestamp]\"\n\n Try it Yourself »",
+                "heading": "Class Decorators"
+            },
+            {
+                "content": "Method decorators are applied to method definitions and can be used to observe, modify, or replace method definitions.\n\nThey receive three parameters:\n\n target: The prototype of the class (for instance methods) or the constructor function (for static methods)\n\n propertyKey: The name of the method\n\n descriptor: The property descriptor for the method\n\n Method Timing Decorator\n This decorator measures and logs the execution time of a method:\n\n // Method decorator to measure execution time\n\n function measureTime(\n\n   target: any,\n\n   propertyKey: string,\n\n   descriptor: PropertyDescriptor\n\n ) {\n\n   const originalMethod = descriptor.value;\n\n   descriptor.value = function (...args: any[]) {\n\n     const start = performance.now();\n\n     const result = originalMethod.apply(this, args);\n\n     const end = performance.now();\n\n     console.log(`${propertyKey} executed in ${(end - start).toFixed(2)}ms`);\n\n     return result;\n\n   };\n\n   return descriptor;\n\n }\n\n // Using the decorator\n\n class DataProcessor {\n\n   @measureTime\n\n   processData(data: number[]): number[] {\n\n     // Simulate processing time\n\n     for (let i = 0; i x * 2);\n\n   }\n\n }\n\n // When called, it will log the execution time\n\n const processor = new DataProcessor();\n\n processor.processData([1, 2, 3, 4, 5]);\n\n Try it Yourself »\n\n Method Authorization Decorator\n This example shows how to implement role-based access control using method decorators:\n\n // User roles\n\n type UserRole = 'admin' | 'editor' | 'viewer';\n\n // Current user context (simplified)\n\n const currentUser = {\n\n   id: 1,\n\n   name: 'John Doe',\n\n   roles: ['viewer'] as UserRole[]\n\n };\n\n // Decorator factory for role-based access control\n\n function AllowedRoles(...allowedRoles: UserRole[]) {\n\n   return function (\n\n     target: any,\n\n     propertyKey: string,\n\n     descriptor: PropertyDescriptor\n\n   ) {\n\n     const originalMethod = descriptor.value;\n\n     descriptor.value = function (...args: any[]) {\n\n       const hasPermission = allowedRoles.some(role => \n\n         currentUser.roles.includes(role)\n\n       );\n\n       if (!hasPermission) {\n\n         throw new Error(\n\n           `User ${currentUser.name} is not authorized to call ${propertyKey}`\n\n         );\n\n       }\n\n       return originalMethod.apply(this, args);\n\n     };\n\n     return descriptor;\n\n   };\n\n }\n\n // Using the decorator\n\n class DocumentService {\n\n   @AllowedRoles('admin', 'editor')\n\n   deleteDocument(id: string) {\n\n     console.log(`Document ${id} deleted`);\n\n   }\n\n   @AllowedRoles('admin', 'editor', 'viewer')\n\n   viewDocument(id: string) {\n\n     console.log(`Viewing document ${id}`);\n\n   }\n\n }\n\n // Usage\n\n const docService = new DocumentService();\n\n try {\n\n   docService.viewDocument('doc123'); // Works - viewer role is allowed\n\n   docService.deleteDocument('doc123'); // Throws error - viewer cannot delete\n\n } catch (error) {\n\n   console.error(error.message);\n\n }\n\n // Change user role to admin\n\n currentUser.roles = ['admin'];\n\n docService.deleteDocument('doc123'); // Now works - admin can delete\n\n Try it Yourself »\n\n Deprecation Warning Decorator\n This decorator adds a deprecation warning to a method that will be removed in a future version:\n\n function deprecated(message: string) {\n\n   return function (\n\n     target: any,\n\n     propertyKey: string,\n\n     descriptor: PropertyDescriptor\n\n   ) {\n\n     const originalMethod = descriptor.value;\n\n     descriptor.value = function (...args: any[]) {\n\n       console.warn(`Warning: ${propertyKey} is deprecated. ${message}`);\n\n       return originalMethod.apply(this, args);\n\n     };\n\n     return descriptor;\n\n  &nbsp};\n\n }\n\n class PaymentService {\n\n   @deprecated('Use processPaymentV2 instead')\n\n   processPayment(amount: number, currency: string) {\n\n     console.log(`Processing payment of ${amount} ${currency}`);\n\n   }\n\n   processPaymentV2(amount: number, currency: string) {\n\n     console.log(`Processing payment v2 of ${amount} ${currency}`);\n\n   }\n }\n\n const payment = new PaymentService();\n\n payment.processPayment(100, 'USD'); // Shows deprecation warning\n\n payment.processPaymentV2(100, 'USD'); // No warning\n\n Try it Yourself »\n\n Key Points About Method Decorators\n\n Method decorators are called when the method is defined, not when it's called\n\n They can modify the method's behavior by wrapping it with additional logic\n\n They can be used for cross-cutting concerns like logging, validation, and authorization\n\n They receive the method's property descriptor which allows modifying the method's behavior\n\n They must return a property descriptor or undefined (if not modifying the descriptor)",
+                "heading": "Method Decorators"
+            },
+            {
+                "content": "Property decorators are applied to property declarations and can be used to observe, modify, or replace property definitions.\n\nThey receive two parameters:\n\n target: The prototype of the class (for instance properties) or the constructor function (for static properties)\n\n propertyKey: The name of the property\n\n Formatted Property Decorator\n This decorator automatically formats a property when it's set:\n\n // Property decorator to format a string property\n\n function format(formatString: string) {\n\n   return function (target: any, propertyKey: string) {\n\n     let value: string;\n\n     const getter = () => value;\n\n     const setter = (newVal: string) => {\n\n       value = formatString.replace('{}', newVal);\n\n     };\n\n     Object.defineProperty(target, propertyKey, {\n\n       get: getter,\n\n       set: setter,\n\n       enumerable: true,\n\n       configurable: true\n\n     });\n\n   };\n\n }\n\n class Greeter {\n\n   @format('Hello, {}!')\n\n   greeting: string;\n\n }\n\n const greeter = new Greeter();\n\n greeter.greeting = 'World';\n\n console.log(greeter.greeting); // Outputs: Hello, World!\n\n Try it Yourself »\n\n Logging Property Decorator\n This decorator logs property access and changes:\n\n function logProperty(target: any, propertyKey: string) {\n\n   let value: any;\n\n   const getter = function() {\n\n     console.log(`Getting ${propertyKey}: ${value}`);\n\n     return value;\n\n   };\n\n   const setter = function(newVal: any) {\n\n     console.log(`Setting ${propertyKey} from ${value} to ${newVal}`);\n\n     value = newVal;\n\n   };\n\n   Object.defineProperty(target, propertyKey, {\n\n     get: getter,\n\n     set: setter,\n\n     enumerable: true,\n\n     configurable: true\n\n   });\n\n }\n\n class Product {\n\n   @logProperty\n\n   name: string;\n\n   @logProperty\n\n   price: number;\n\n   constructor(name: string, price: number) {\n\n     this.name = name;\n\n     this.price = price;\n\n   }\n\n }\n\n const product = new Product('Laptop', 999.99);\n\n product.price = 899.99; // Logs: Setting price from 999.99 to 899.99\n\n console.log(product.name); // Logs: Getting name: Laptop\n\n Try it Yourself »\n\n Required Property Decorator\n This decorator enforces that a property must be set:\n\n function required(target: any, propertyKey: string) {\n\n   let value: any;\n\n   const getter = function() {\n\n     if (value === undefined) {\n\n       throw new Error(`Property ${propertyKey} is required`);\n\n     }\n\n     return value;\n\n   };\n\n   const setter = function(newVal: any) {\n\n     value = newVal;\n\n   };\n\n   Object.defineProperty(target, propertyKey, {\n\n     get: getter,\n\n     set: setter,\n\n     enumerable: true,\n\n     configurable: true\n\n   });\n\n }\n\n class User {\n\n   @required\n\n   username: string;\n\n   @required\n\n   email: string;\n\n   age?: number;\n\n   constructor(username: string, email: string) {\n\n     this.username = username;\n\n     this.email = email;\n\n   }\n\n }\n\n const user1 = new User('johndoe', 'john@example.com'); // Works\n\n // const user2 = new User(undefined, 'test@example.com'); // Throws error: Property username is required\n\n // const user2 = new User('johndoe', undefined); // Throws error: Property email is required\n\n Try it Yourself »\n\n Key Points About Property Decorators\n\n Property decorators are called when the property is defined, not when it's accessed\n\n They don't receive a property descriptor like method decorators do\n\n To modify property behavior, you need to use Object.defineProperty\n\n They're often used for metadata reflection or to modify property access\n\n They can be combined with other decorators for more complex behaviors",
+                "heading": "Property Decorators"
+            },
+            {
+                "content": "Parameter decorators are applied to parameter declarations in a constructor or method.\n\nThey receive three parameters:\n\n target: The prototype of the class (for instance methods) or the constructor function (for static methods)\n\n propertyKey: The name of the method (or undefined for constructor parameters)\n\n parameterIndex: The ordinal index of the parameter in the function's parameter list\n\n Parameter Validation Decorator\n This decorator validates method parameters:\n\n function validateParam(type: 'string' | 'number' | 'boolean') {\n\n   return function (target: any, propertyKey: string | symbol, parameterIndex: number) {\n\n     const existingValidations: any[] = Reflect.getOwnMetadata('validations', target, propertyKey) || [];\n\n     existingValidations.push({ index: parameterIndex, type });\n\n     Reflect.defineMetadata('validations', existingValidations, target, propertyKey);\n\n   };\n\n }\n\n function validate(target: any, propertyKey: string, descriptor: PropertyDescriptor) {\n\n   const originalMethod = descriptor.value;\n\n   descriptor.value = function (...args: any[]) {\n\n     const validations: Array = \n\n       Reflect.getOwnMetadata('validations', target, propertyKey) || [];\n\n     for (const validation of validations) {\n\n       const { index, type } = validation;\n\n       const param = args[index];\n\n       let isValid = false;\n\n       switch (type) {\n\n         case 'string':\n\n           isValid = typeof param === 'string' && param.length > 0;\n\n           break;\n\n         case 'number':\n\n           isValid = typeof param === 'number' && !isNaN(param);\n\n           break;\n\n         case 'boolean':\n\n           isValid = typeof param === 'boolean';\n\n       }\n\n       if (!isValid) {\n\n         throw new Error(`Parameter at index ${index} failed ${type} validation`);\n\n       }\n\n     }\n\n     return originalMethod.apply(this, args);\n\n   };\n\n   return descriptor;\n\n }\n\n class UserService {\n\n   @validate\n\n   createUser(\n\n     @validateParam('string') name: string,\n\n     @validateParam('number') age: number,\n\n     @validateParam('boolean') isActive: boolean\n\n   ) {\n\n     console.log(`Creating user: ${name}, ${age}, ${isActive}`);\n\n   }\n\n }\n\n const service = new UserService();\n\n service.createUser('John', 30, true); // Works\n\n // service.createUser('', 30, true); // Throws error: Parameter at index 0 failed string validation\n\n // service.createUser('John', 'thirty', true); // Throws error: Parameter at index 1 failed number validation\n\n Try it Yourself »\n\n Key Points About Parameter Decorators\n\n Parameter decorators are called when the method is defined, not when it's called\n\n They're often used with method decorators to implement cross-cutting concerns\n\n They can be used with the reflect-metadata library to store and retrieve metadata\n\n They're commonly used in dependency injection frameworks\n\n They receive the parameter index, which can be used to access the parameter value at runtime",
+                "heading": "Parameter Decorators"
+            },
+            {
+                "content": "Decorator factories are functions that return a decorator function.\n\nThey allow you to configure decorators by passing parameters.\n\nThis makes your decorators more flexible and reusable.\n\n Configurable Logging Decorator\n This example shows how to create a configurable logging decorator that can be customized with different log levels:\n\n // Decorator factory that accepts configuration\n\n function logWithConfig(config: { level: 'log' | 'warn' | 'error', message?: string }) {\n\n   return function (target: any, propertyKey: string, descriptor: PropertyDescriptor) {\n\n     const originalMethod = descriptor.value;\n\n     descriptor.value = function (...args: any[]) {\n\n       const { level = 'log', message = 'Executing method' } = config;\n\n       console[level](`${message}: ${propertyKey}`, { arguments: args });\n\n       const result = originalMethod.apply(this, args);\n\n       console[level](`${propertyKey} completed`);\n\n       return result;\n\n     };\n\n     return descriptor;\n\n   };\n\n }\n\n class PaymentService {\n\n   @logWithConfig({ level: 'log', message: 'Processing payment' })\n\n   processPayment(amount: number) {\n\n     console.log(`Processing payment of $${amount}`);\n\n   }\n\n }\n\n Try it Yourself »\n\n Order of Evaluation\n This example shows the order of evaluation for multiple decorators:\n\n When multiple decorators are applied to a declaration, they are evaluated in the following order:\n\n Parameter Decorators, followed by Method, Accessor, or Property Decorators are applied for each instance member.\n\n Parameter Decorators, followed by Method, Accessor, or Property Decorators are applied for each static member.\n\n Parameter Decorators are applied for the constructor.\n\n Class Decorators are applied for the class.\n\n function first() {\n\n   console.log('first(): factory evaluated');\n\n   return function (target: any, propertyKey: string, descriptor: PropertyDescriptor) {\n\n     console.log('first(): called');\n\n   };\n\n }\n\n function second() {\n\n   console.log('second(): factory evaluated');\n\n   return function (target: any, propertyKey: string, descriptor: PropertyDescriptor) {\n\n     console.log('second(): called');\n\n   };\n\n }\n\n class ExampleClass {\n\n   @first()\n\n   @second()\n\n   method() {}\n\n }\n\n // Output:\n\n // second(): factory evaluated\n\n // first(): factory evaluated\n\n // first(): called\n\n // second(): called\n\n Try it Yourself »",
+                "heading": "Decorator Factories"
+            },
+            {
+                "content": "API Controller with Decorators\n This example shows how decorators can be used to create a simple API controller similar to those in NestJS or Express:\n\n // Simple decorator implementations (simplified for example)\n\n const ROUTES: any[] = [];\n\n function Controller(prefix: string = '') {\n\n   return function (constructor: Function) {\n\n     constructor.prototype.prefix = prefix;\n\n   };\n\n }\n\n function Get(path: string = '') {\n\n   return function (target: any, propertyKey: string, descriptor: PropertyDescriptor) {\n\n     ROUTES.push({\n\n       method: 'get',\n\n       path,\n\n       handler: descriptor.value,\n\n       target: target.constructor\n\n     });\n\n   };\n\n }\n\n // Using the decorators\n\n @Controller('/users')\n\n class UserController {\n\n   @Get('/')\n\n   getAllUsers() {\n\n     return { users: [{ id: 1, name: 'John' }] };\n\n   }\n\n   @Get('/:id')\n\n   getUserById(id: string) {\n\n     return { id, name: 'John' };\n\n   }\n\n }\n\n // Simulate route registration\n\n function registerRoutes() {\n\n   ROUTES.forEach(route => {\n\n     const prefix = route.target.prototype.prefix || '';\n\n     console.log(`Registered ${route.method.toUpperCase()} ${prefix}${route.path}`);\n\n   });\n\n }\n\n registerRoutes();\n\n // Output:\n\n // Registered GET /users\n\n // Registered GET /users/:id\n\n Try it Yourself »",
+                "heading": "Real-World Examples"
+            },
+            {
+                "content": "Decorator Best Practices\n\n Follow these best practices when working with decorators:\n\n Keep decorators focused: Each decorator should have a single responsibility.\n\n Document behavior: Clearly document what your decorators do and any side effects they might have.\n\n Use decorator factories: Make decorators configurable using factories for better reusability.\n\n Consider performance: Be mindful of performance implications, especially with decorators that add runtime overhead.\n\n Type safety: Use TypeScript's type system to make decorators type-safe when possible.\n\n Error handling: Implement proper error handling within decorators.\n\n Testing: Write unit tests for your decorators to ensure they work as expected.\n\n Metadata: Use reflect-metadata for more advanced scenarios requiring runtime type information.",
+                "heading": "Best Practices"
+            },
+            {
+                "content": "Common Decorator Pitfalls\n\n Avoid these common mistakes when working with decorators:\n\n Forgetting to enable decorators: Ensure experimentalDecorators is enabled in tsconfig.json.\n\n Incorrect decorator signature: Each decorator type has a specific signature. Using the wrong parameters can lead to runtime errors.\n\n Decorator evaluation order: Decorators are evaluated from bottom to top for each declaration.\n\n Property initialization: Property decorators run before instance properties are initialized.\n\n Metadata reflection: Forgetting to import reflect-metadata when using decorator metadata.\n\n Performance overhead: Be cautious with decorators that add significant runtime overhead in performance-critical code.\n\n Browser compatibility: Decorators are a stage 3 proposal and may require transpilation for older browsers.\n\nExample: Property Decorator\n\nfunction readonly(target: any, propertyKey: string) {\n\n  Object.defineProperty(target, propertyKey, {\n\n    writable: false\n\n  });\n\n}\n\nclass Person {\n\n  @readonly\n\n  name = \"John\";\n\n}\n\nExample: Parameter Decorator\n\nfunction logParameter(target: any, propertyKey: string, parameterIndex: number) {\n\n  console.log(`Parameter in ${propertyKey} at index ${parameterIndex}`);\n\n}\n\nclass Demo {\n\n  greet(@logParameter message: string) {\n\n    return message;\n\n  }\n\n}\n\nEnable decorators by adding this to your tsconfig.json:\n\nExample\n\n{\n\n   \"compilerOptions\": {\n\n     \"experimentalDecorators\": true\n\n   }\n\n}\n\nWhere are decorators used?\n\n Angular: For components, services, modules, etc.\n\n NestJS: For controllers, providers, routes, etc.\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Common Pitfalls"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:08:44Z",
+        "subject": "TypeScript",
+        "title": "TypeScript Decorators"
+    },
+    {
+        "url": "https://www.w3schools.com/typescript/typescript_jsdoc.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "typescript_typescript_jsdoc",
+        "code_examples": [
+            {
+                "code": "// @ts-check\n\n/**\n\n * Adds two numbers.\n\n * @param {number} a\n\n * @param {number} b\n\n * @returns {number}\n\n */\n\nfunction add(a, b) {\n\n  return a + b;\n\n}",
+                "language": "typescript",
+                "heading": "Example: JSDoc for Type Safety",
+                "tryit_url": null
+            },
+            {
+                "code": "// types.d.ts\n\ndeclare module 'my-module' {\n\n  export interface Config {\n\n    apiKey: string;\n\n    timeout?: number;\n\n    retries?: number;\n\n  }\n\n  export function initialize(config: Config): void;\n\n  export function fetchData<T = any>(url: string): Promise<T>;\n\n}",
+                "language": "typescript",
+                "heading": "Creating Declaration Files",
+                "tryit_url": null
+            }
+        ],
+        "category": "JavaScript & Frontend",
+        "notes_and_tips": [
+            "Follow these best practices when using JSDoc with TypeScript:\n\n Enable // @ts-check at the top of files where you want type checking\n\n Use @typedef for complex types that are used in multiple places\n\n Document all function parameters and return types\n\n Use @template for generic functions and types\n\n Create declaration files (.d.ts) for third-party libraries without types\n\n Use @ts-expect-error instead of @ts-ignore when you expect an error"
+        ],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "TS HOME\nTS Introduction\nTS Get Started\nTS Simple Types\nTS Explicit & Inference\nTS Special Types\nTS Arrays\nTS Tuples\nTS Object Types\nTS Enums\nTS Aliases & Interfaces\nTS Union Types\nTS Functions\nTS Casting\nTS Classes\nTS Basic Generics\nTS Utility Types\nTS Keyof\nTS Null\nTS Definitely Typed\nTS 5 Updates\nTS Configuration\nTS with Node.js\nTS with React\nTS Tooling\nTS Advanced Types\nTS Type Guards\nTS Conditional Types\nTS Mapped Types\nTS Type Inference\nTS Literal Types\nTS Namespaces\nTS Index Signatures\nTS Declaration Merging\nTS Async Programming\nTS Decorators\nTS in JS Projects\nTS Migration\nTS Error Handling\nTS Best Practices",
+                "heading": "TypeScript tutorial"
+            },
+            {
+                "content": "TS Certificate",
+                "heading": "TypeScript Cert"
+            },
+            {
+                "content": "TS Editor\nTS Exercises\nTS Quiz\nTS Practice Problems\nTS Syllabus\nTS Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\nTypeScript in JavaScript Projects (JSDoc)\n\n ❮ Previous\n Next ❯\n\n JSDoc with TypeScript allows you to add type checking to JavaScript files without converting them to .ts.\n\n This is perfect for gradual migration or when you want type safety in JavaScript projects.",
+                "heading": "TypeScript Exercises"
+            },
+            {
+                "content": "To enable TypeScript checking in JavaScript files, you need to:\n\n Create a tsconfig.json file (if you don't have one)\n\n Enable checkJs or use // @ts-check in individual files\n\nExample: JSDoc for Type Safety\n\n// @ts-check\n\n/**\n\n * Adds two numbers.\n\n * @param {number} a\n\n * @param {number} b\n\n * @returns {number}\n\n */\n\nfunction add(a, b) {\n\n  return a + b;\n\n}\n\nTry it Yourself »",
+                "heading": "Getting Started"
+            },
+            {
+                "content": "Inline Object Types\n\n// @ts-check\n\n/**\n\n * @param {{ firstName: string, lastName: string, age?: number }} person\n\n */\n\nfunction greet(person) {\n\n  return `Hello, ${person.firstName} ${person.lastName}`;\n\n}\n\ngreet({ firstName: 'John', lastName: 'Doe' }); // OK\n\ngreet({ firstName: 'Jane' }); // Error: Property 'lastName' is missing\n\nTry it Yourself »\n\nUsing @typedef for Complex Types\n\n// @ts-check\n\n/**\n\n * @typedef {Object} User\n\n * @property {number} id - The user ID\n\n * @property {string} username - The username\n\n * @property {string} [email] - Optional email address\n\n * @property {('admin'|'user'|'guest')} role - User role\n\n * @property {() => string} getFullName - Method that returns full name\n\n */\n\n/** @type {User} */\n\nconst currentUser = {\n\n  id: 1,\n\n  username: 'johndoe',\n\n  role: 'admin',\n\n  getFullName() {\n\n    return 'John Doe';\n\n  }\n\n};\n\n// TypeScript will provide autocomplete for User properties\n\nconsole.log(currentUser.role);\n\nTry it Yourself »\n\nExtending Types\n\n// @ts-check\n\n/** @typedef {{ x: number, y: number }} Point */\n\n/**\n\n * @typedef {Point & { z: number }} Point3D\n\n */\n\n/** @type {Point3D} */\n\nconst point3d = { x: 1, y: 2, z: 3 };\n\n// @ts-expect-error - missing z property\n\nconst point2d = { x: 1, y: 2 };\n\nTry it Yourself »",
+                "heading": "Objects and Interfaces"
+            },
+            {
+                "content": "Function Declarations\n\n// @ts-check\n\n/**\n\n * Calculates the area of a rectangle\n\n * @param {number} width - The width of the rectangle\n\n * @param {number} height - The height of the rectangle\n\n * @returns {number} The calculated area\n\n */\n\nfunction calculateArea(width, height) {\n\n  return width * height;\n\n}\n\n// TypeScript knows the parameter and return types\n\nconst area = calculateArea(10, 20);\n\nTry it Yourself »\n\nFunction Expressions and Callbacks\n\n// @ts-check\n\n/**\n\n * @callback StringProcessor\n\n * @param {string} input\n\n * @returns {string}\n\n */\n\n/**\n\n * @type {StringProcessor}\n\n */\n\nconst toUpperCase = (str) => str.toUpperCase();\n\n/**\n\n * @param {string[]} strings\n\n * @param {StringProcessor} processor\n\n * @returns {string[]}\n\n */\n\nfunction processStrings(strings, processor) {\n\n  return strings.map(processor);\n\n}\n\nconst result = processStrings(['hello', 'world'], toUpperCase);\n\n// result will be ['HELLO', 'WORLD']\n\nTry it Yourself »\n\nFunction Overloads\n\n// @ts-check\n\n/**\n\n * @overload\n\n * @param {string} a\n\n * @param {string} b\n\n * @returns {string}\n\n */\n\n/**\n\n * @overload\n\n * @param {number} a\n\n * @param {number} b\n\n * @returns {number}\n\n */\n\n/**\n\n * @param {string | number} a\n\n * @param {string | number} b\n\n * @returns {string | number}\n\n */\n\nfunction add(a, b) {\n\n  if (typeof a === 'string' || typeof b === 'string') {\n\n    return String(a) + String(b);\n\n  }\n\n  return a + b;\n\n}\n\nconst strResult = add('Hello, ', 'World!'); // string\n\nconst numResult = add(10, 20); // number\n\nTry it Yourself »",
+                "heading": "Function Types"
+            },
+            {
+                "content": "Union and Intersection Types\n\n// @ts-check\n\n/** @typedef {{ name: string, age: number }} Person */\n\n/** @typedef {Person & { employeeId: string }} Employee */\n\n/** @typedef {Person | { guestId: string, visitDate: Date }} Visitor */\n\n/** @type {Employee} */\n\nconst employee = {\n\n  name: 'Alice',\n\n  age: 30,\n\n  employeeId: 'E123'\n\n};\n\n/** @type {Visitor} */\n\nconst guest = {\n\n  guestId: 'G456',\n\n  visitDate: new Date()\n\n};\n\n/**\n\n * @param {Visitor} visitor\n\n * @returns {string}\n\n */\n\nfunction getVisitorId(visitor) {\n\n  if ('guestId' in visitor) {\n\n    return visitor.guestId; // TypeScript knows this is a guest\n\n  }\n\n  return visitor.name; // TypeScript knows this is a Person\n\n}\n\nTry it Yourself »\n\nMapped and Conditional Types\n\n// @ts-check\n\n/**\n * @template T\n * @typedef {[K in keyof T]: T[K] extends Function ? K : never}[keyof T] MethodNames\n */\n\n/**\n * @template T\n * @typedef {{ \n *   [K in keyof T as `get${''}`]: () => T[K] \n * }} Getters\n */\n\n/** @type {Getters } */\n\nconst userGetters = {\n\n  getName: () => 'John',\n\n  getAge: () => 30\n\n};\n\n// TypeScript enforces the return types\n\nconst name = userGetters.getName(); // string\n\nconst age = userGetters.getAge(); // number\n\nTry it Yourself »",
+                "heading": "Advanced Types"
+            },
+            {
+                "content": "Importing Types from Other Files\n\n// @ts-check\n\n// Importing types from TypeScript files\n\n/** @typedef {import('./types').User} User */\n\n// Importing types from node_modules\n\n/** @typedef {import('express').Request} ExpressRequest */\n\n// Importing with renaming\n\n/** @typedef {import('./api').default as ApiClient} ApiClient */\n\nCreating Declaration Files\nCreate a types.d.ts file in your project:\n\n// types.d.ts\n\ndeclare module 'my-module' {\n\n  export interface Config {\n\n    apiKey: string;\n\n    timeout?: number;\n\n    retries?: number;\n\n  }\n\n  export function initialize(config: Config): void;\n\n  export function fetchData<T = any>(url: string): Promise<T>;\n\n}\n\nThen use it in your JavaScript files:\n\n// @ts-check\n\n/** @type {import('my-module').Config} */\n\nconst config = {\n\n  apiKey: '12345',\n\n  timeout: 5000\n\n};\n\n// TypeScript will provide autocomplete and type checking\n\nimport { initialize } from 'my-module';\n\ninitialize(config);",
+                "heading": "Type Imports"
+            },
+            {
+                "content": "Follow these best practices when using JSDoc with TypeScript:\n\n Enable // @ts-check at the top of files where you want type checking\n\n Use @typedef for complex types that are used in multiple places\n\n Document all function parameters and return types\n\n Use @template for generic functions and types\n\n Create declaration files (.d.ts) for third-party libraries without types\n\n Use @ts-expect-error instead of @ts-ignore when you expect an error",
+                "heading": "Best Practices"
+            },
+            {
+                "content": "Watch out for these common issues:\n\n Missing // @ts-check: Type checking won't work without it\n\n Incorrect JSDoc syntax: A single typo can disable type checking\n\n Type conflicts: When types from different sources don't match\n\n Inference issues: Sometimes TypeScript can't infer types correctly\n\n Performance: Large JavaScript files with complex types can be slow to check",
+                "heading": "Common Pitfalls"
+            },
+            {
+                "content": "Using JSDoc with TypeScript provides a powerful way to add type safety to your JavaScript projects without the need to convert files to TypeScript.\n\nThis approach is particularly useful for:\n\n Gradually migrating JavaScript codebases to TypeScript\n\n Adding type checking to existing JavaScript projects\n\n Working in environments where .ts files aren't supported\n\n Documenting JavaScript code with type information\n\nBy following the patterns and best practices outlined in this tutorial, you can enjoy many of the benefits of TypeScript while continuing to work with JavaScript.\n\n Remember: While JSDoc provides excellent type checking, for new projects or complete migrations, consider using .ts files for the best TypeScript experience.\n\n Ready to try TypeScript with JSDoc?\n Start by adding // @ts-check to your JavaScript files and gradually add type annotations using JSDoc.\n\n The TypeScript compiler will help you catch errors before they reach production!\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Conclusion"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:08:44Z",
+        "subject": "TypeScript",
+        "title": "TypeScript in JavaScript Projects (JSDoc)"
+    },
+    {
+        "url": "https://www.w3schools.com/typescript/typescript_migration.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "typescript_typescript_migration",
+        "code_examples": [
+            {
+                "code": "Set Up Version Control\n Ensure you have a clean git repository or equivalent:\n\n# Create a new branch for the migration\n\ngit checkout -b typescript-migration\n\n# Commit your current state\n\ngit add .\n\ngit commit -m \"Pre-TypeScript migration state\"",
+                "language": "typescript",
+                "heading": "Set Up Version Control",
+                "tryit_url": null
+            },
+            {
+                "code": "Install TypeScript\n\n# Install TypeScript as a dev dependency\n\nnpm install --save-dev typescript @types/node",
+                "language": "typescript",
+                "heading": "Install TypeScript",
+                "tryit_url": null
+            },
+            {
+                "code": "{\n\n   \"compilerOptions\": {\n\n     \"target\": \"ES2020\",\n\n     \"module\": \"commonjs\",\n\n     \"strict\": true,\n\n     \"esModuleInterop\": true,\n\n     \"skipLibCheck\": true,\n\n     \"forceConsistentCasingInFileNames\": true,\n\n     \"outDir\": \"./dist\",\n\n     \"rootDir\": \"./src\"\n\n   },\n\n   \"include\": [\"src/**/*\"],\n\n   \"exclude\": [\"node_modules\"]\n\n}",
+                "language": "typescript",
+                "heading": "Create tsconfig.json",
+                "tryit_url": null
+            },
+            {
+                "code": "Start with Configuration\n Create a basic tsconfig.json with these recommended settings:\n\n{\n\n   \"compilerOptions\": {\n\n     \"target\": \"ES2020\",\n\n     \"module\": \"commonjs\",\n\n     \"strict\": true,\n\n     \"esModuleInterop\": true,\n\n     \"skipLibCheck\": true,\n\n     \"forceConsistentCasingInFileNames\": true,\n\n     \"outDir\": \"./dist\",\n\n     \"rootDir\": \"./src\",\n\n     \"allowJs\": true,\n\n     \"checkJs\": true,\n\n     \"noEmit\": true\n\n   },\n\n   \"include\": [\"src/**/*\"],\n\n   \"exclude\": [\"node_modules\", \"dist\"]\n\n}",
+                "language": "typescript",
+                "heading": "Start with Configuration",
+                "tryit_url": null
+            },
+            {
+                "code": "// @ts-check\n\n/** @type {string} */\n\nconst name = 'John';\n\n// TypeScript will catch this error\n\nname = 42; // Error: Type '42' is not assignable to type 'string'",
+                "language": "typescript",
+                "heading": "Enable Type Checking for JavaScript",
+                "tryit_url": null
+            },
+            {
+                "code": "Add Type Annotations\n Gradually add type annotations to your code:\n\n// Before\n\nfunction add(a, b) {\n\n  return a + b;\n\n}\n\n// After\n\nfunction add(a: number, b: number): number {\n\n  return a + b;\n\n}\n\n// With interface\n\ninterface User {\n\n  id: number;\n\n  name: string;\n\n  email?: string;\n\n}\n\nfunction getUser(id: number): User {\n\n  return { id, name: 'John Doe' };\n\n}",
+                "language": "typescript",
+                "heading": "Add Type Annotations",
+                "tryit_url": null
+            },
+            {
+                "code": "{\n\n   \"scripts\": {\n\n     \"build\": \"tsc\",\n\n     \"dev\": \"tsc --watch\",\n\n     \"test\": \"jest\"\n\n   }\n\n }",
+                "language": "typescript",
+                "heading": "Update Build and Test Scripts",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\n // Use type inference where possible\n\n const name = 'John'; // TypeScript infers 'string'\n\n const age = 30; // TypeScript infers 'number'\n\n // Use union types for flexibility\n\n type Status = 'active' | 'inactive' | 'pending';\n\n // Use type guards for runtime checks\n\n function isString(value: any): value is string {\n\n   return typeof value === 'string';\n\n }",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\n // Before\n\n const user = {};\n\n user.name = 'John'; // Error: Property 'name' does not exist",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\n // Option 1: Index signature\n\n interface User {\n\n   [key: string]: any;\n\n }\n\n const user: User = {};\n\n user.name = 'John'; // OK\n\n // Option 2: Type assertion\n\n const user = {} as { name: string };\n\n user.name = 'John'; // OK",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\n class Counter {\n\n   count = 0;\n\n   increment() {\n\n     setTimeout(function() {\n\n       this.count++; // Error: 'this' is not defined\n\n     }, 1000);\n\n   }\n\n }",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "Example\n\n // Solution 1: Arrow function\n\n setTimeout(() => {\n\n   this.count++; // 'this' is lexically scoped\n\n }, 1000);\n\n // Solution 2: Bind 'this'\n\n setTimeout(function(this: Counter) {\n\n   this.count++;\n\n }.bind(this), 1000);",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "JavaScript & Frontend",
+        "notes_and_tips": [
+            "Migrating from JavaScript to TypeScript can significantly improve your codebase's maintainability and developer experience.\n\nThis guide will walk you through the process step by step.",
+            "Assess Your Codebase\n Before starting the migration:\n\n Identify the size and complexity of your codebase\n\n Document the build process and dependencies\n\n Check for any existing type definitions (.d.ts files)\n\n Identify critical paths that need special attention",
+            "Migrating from JavaScript to TypeScript is a significant but rewarding investment in your codebase.\n\nBy following this guide, you can make the transition smoothly and incrementally.\n\n Key Takeaways:\n\n Start with a solid tsconfig.json configuration\n\n Use allowJs and checkJs for gradual migration\n\n Leverage TypeScript's type system to catch errors early\n\n Update your build and test processes to support TypeScript\n\n Address common challenges with the patterns shown above\n\n Remember that migration is a process, not an event.\n\nIt's okay to have a mixed codebase during the transition period.\n\nThe important thing is to keep making progress while maintaining code quality.",
+            "Ready to Start Your Migration?\n Begin by setting up TypeScript in your project and gradually adding type annotations.\n\nThe TypeScript compiler will guide you through the process of making your code more robust and maintainable.\n\n For more information, check out the official TypeScript migration guide."
+        ],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "TS HOME\nTS Introduction\nTS Get Started\nTS Simple Types\nTS Explicit & Inference\nTS Special Types\nTS Arrays\nTS Tuples\nTS Object Types\nTS Enums\nTS Aliases & Interfaces\nTS Union Types\nTS Functions\nTS Casting\nTS Classes\nTS Basic Generics\nTS Utility Types\nTS Keyof\nTS Null\nTS Definitely Typed\nTS 5 Updates\nTS Configuration\nTS with Node.js\nTS with React\nTS Tooling\nTS Advanced Types\nTS Type Guards\nTS Conditional Types\nTS Mapped Types\nTS Type Inference\nTS Literal Types\nTS Namespaces\nTS Index Signatures\nTS Declaration Merging\nTS Async Programming\nTS Decorators\nTS in JS Projects\nTS Migration\nTS Error Handling\nTS Best Practices",
+                "heading": "TypeScript tutorial"
+            },
+            {
+                "content": "TS Certificate",
+                "heading": "TypeScript Cert"
+            },
+            {
+                "content": "TS Editor\nTS Exercises\nTS Quiz\nTS Practice Problems\nTS Syllabus\nTS Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\nTypeScript Migration Guide\n\n ❮ Previous\n Next ❯\n\n Migrating from JavaScript to TypeScript can significantly improve your codebase's maintainability and developer experience.\n\nThis guide will walk you through the process step by step.",
+                "heading": "TypeScript Exercises"
+            },
+            {
+                "content": "Assess Your Codebase\n Before starting the migration:\n\n Identify the size and complexity of your codebase\n\n Document the build process and dependencies\n\n Check for any existing type definitions (.d.ts files)\n\n Identify critical paths that need special attention\n\n Set Up Version Control\n Ensure you have a clean git repository or equivalent:\n\n# Create a new branch for the migration\n\ngit checkout -b typescript-migration\n\n# Commit your current state\n\ngit add .\n\ngit commit -m \"Pre-TypeScript migration state\"",
+                "heading": "Preparation Phase"
+            },
+            {
+                "content": "Install TypeScript\n\n# Install TypeScript as a dev dependency\n\nnpm install --save-dev typescript @types/node\n\n Create tsconfig.json\n Create a basic tsconfig.json to start with:\n\n{\n\n   \"compilerOptions\": {\n\n     \"target\": \"ES2020\",\n\n     \"module\": \"commonjs\",\n\n     \"strict\": true,\n\n     \"esModuleInterop\": true,\n\n     \"skipLibCheck\": true,\n\n     \"forceConsistentCasingInFileNames\": true,\n\n     \"outDir\": \"./dist\",\n\n     \"rootDir\": \"./src\"\n\n   },\n\n   \"include\": [\"src/**/*\"],\n\n   \"exclude\": [\"node_modules\"]\n\n}\n\n Note: Adjust the target based on your minimum supported environments.",
+                "heading": "Configuration"
+            },
+            {
+                "content": "Gradual Migration\n Migrate one file at a time while keeping the rest as JavaScript.\n\n{\n\n  \"compilerOptions\": {\n\n    \"allowJs\": true,\n\n    \"checkJs\": true\n\n  }\n\n}\n\n Best for: Large codebases, minimal disruption\n\n All-at-Once Migration\n Rename all .js files to .ts and fix errors.\n\n# Rename all JS files to TS\n\nfind src -name \"*.js\" -exec sh -c 'mv \"$0\" \"${0%.js}.ts\"' {} \\;\n\n Best for: Small to medium projects, greenfield projects\n\n Important Note\n For large projects, we strongly recommend the gradual migration approach to minimize disruption and make the process more manageable.",
+                "heading": "Migration Approaches"
+            },
+            {
+                "content": "Start with Configuration\n Create a basic tsconfig.json with these recommended settings:\n\n{\n\n   \"compilerOptions\": {\n\n     \"target\": \"ES2020\",\n\n     \"module\": \"commonjs\",\n\n     \"strict\": true,\n\n     \"esModuleInterop\": true,\n\n     \"skipLibCheck\": true,\n\n     \"forceConsistentCasingInFileNames\": true,\n\n     \"outDir\": \"./dist\",\n\n     \"rootDir\": \"./src\",\n\n     \"allowJs\": true,\n\n     \"checkJs\": true,\n\n     \"noEmit\": true\n\n   },\n\n   \"include\": [\"src/**/*\"],\n\n   \"exclude\": [\"node_modules\", \"dist\"]\n\n}\n\n Enable Type Checking for JavaScript\n Add // @ts-check to the top of your JavaScript files to enable type checking:\n\n// @ts-check\n\n/** @type {string} */\n\nconst name = 'John';\n\n// TypeScript will catch this error\n\nname = 42; // Error: Type '42' is not assignable to type 'string'\n\n Note: You can disable type checking for specific lines using // @ts-ignore.\n\n Rename Files to .ts\n Start with non-critical files and rename them from .js to .ts:\n\n# Rename a single file\n\nmv src/utils/helpers.js src/utils/helpers.ts\n\n# Or rename all files in a directory (use with caution)\n\nfind src/utils -name \"*.js\" -exec sh -c 'mv \"$0\" \"${0%.js}.ts\"' {} \\;\n\n Add Type Annotations\n Gradually add type annotations to your code:\n\n// Before\n\nfunction add(a, b) {\n\n  return a + b;\n\n}\n\n// After\n\nfunction add(a: number, b: number): number {\n\n  return a + b;\n\n}\n\n// With interface\n\ninterface User {\n\n  id: number;\n\n  name: string;\n\n  email?: string;\n\n}\n\nfunction getUser(id: number): User {\n\n  return { id, name: 'John Doe' };\n\n}\n\n Update Build and Test Scripts\n Modify your package.json to include TypeScript compilation:\n\n {\n\n   \"scripts\": {\n\n     \"build\": \"tsc\",\n\n     \"dev\": \"tsc --watch\",\n\n     \"test\": \"jest\"\n\n   }\n\n }\n\n Note: Make sure to update your test configuration to work with TypeScript files.",
+                "heading": "Step-by-Step Migration"
+            },
+            {
+                "content": "ts-migrate\n Automated tool for migrating JavaScript to TypeScript\n\nnpx ts-migrate-full .\n\n GitHub Repository\n\n TypeStat\n Converts JavaScript to TypeScript with type safety\n\nnpx typestat\n\n GitHub Repository\n\n @types Packages\n Install type definitions for your dependencies\n\n npm install --save-dev @types/react @types/node\n\n TypeSearch",
+                "heading": "Migration Tools"
+            },
+            {
+                "content": "Start Small and Iterate\n\n Begin with utility functions and non-UI components\n\n Migrate one file or module at a time\n\n Commit after each successful migration step\n\nLeverage TypeScript Features\n\nExample\n\n // Use type inference where possible\n\n const name = 'John'; // TypeScript infers 'string'\n\n const age = 30; // TypeScript infers 'number'\n\n // Use union types for flexibility\n\n type Status = 'active' | 'inactive' | 'pending';\n\n // Use type guards for runtime checks\n\n function isString(value: any): value is string {\n\n   return typeof value === 'string';\n\n }\n\nHandle Third-Party Libraries\n\n Install @types packages for your dependencies\n\n Create declaration files for libraries without types\n\n Use declare module for global type extensions",
+                "heading": "Best Practices for TypeScript Migration"
+            },
+            {
+                "content": "Dynamic Properties\nProblem: JavaScript often uses objects as dictionaries.\n\nExample\n\n // Before\n\n const user = {};\n\n user.name = 'John'; // Error: Property 'name' does not exist\n\nSolution: Use index signatures or type assertions.\n\nExample\n\n // Option 1: Index signature\n\n interface User {\n\n   [key: string]: any;\n\n }\n\n const user: User = {};\n\n user.name = 'John'; // OK\n\n // Option 2: Type assertion\n\n const user = {} as { name: string };\n\n user.name = 'John'; // OK\n\nHandling this Context\nProblem: this binding issues in callbacks.\n\nExample\n\n class Counter {\n\n   count = 0;\n\n   increment() {\n\n     setTimeout(function() {\n\n       this.count++; // Error: 'this' is not defined\n\n     }, 1000);\n\n   }\n\n }\n\nSolution: Use arrow functions or bind this.\n\nExample\n\n // Solution 1: Arrow function\n\n setTimeout(() => {\n\n   this.count++; // 'this' is lexically scoped\n\n }, 1000);\n\n // Solution 2: Bind 'this'\n\n setTimeout(function(this: Counter) {\n\n   this.count++;\n\n }.bind(this), 1000);",
+                "heading": "Common Challenges and Solutions"
+            },
+            {
+                "content": "Migrating from JavaScript to TypeScript is a significant but rewarding investment in your codebase.\n\nBy following this guide, you can make the transition smoothly and incrementally.\n\n Key Takeaways:\n\n Start with a solid tsconfig.json configuration\n\n Use allowJs and checkJs for gradual migration\n\n Leverage TypeScript's type system to catch errors early\n\n Update your build and test processes to support TypeScript\n\n Address common challenges with the patterns shown above\n\n Remember that migration is a process, not an event.\n\nIt's okay to have a mixed codebase during the transition period.\n\nThe important thing is to keep making progress while maintaining code quality.\n\n Ready to Start Your Migration?\n Begin by setting up TypeScript in your project and gradually adding type annotations.\n\nThe TypeScript compiler will guide you through the process of making your code more robust and maintainable.\n\n For more information, check out the official TypeScript migration guide.\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Conclusion"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:08:44Z",
+        "subject": "TypeScript",
+        "title": "TypeScript Migration Guide"
+    },
+    {
+        "url": "https://www.w3schools.com/typescript/typescript_error_handling.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "typescript_typescript_error_handling",
+        "code_examples": [
+            {
+                "code": "function divide(a: number, b: number): number {\n\n  if (b === 0) {\n\n    throw new Error('Division by zero');\n\n  }\n\n  return a / b;\n\n}\n\ntry {\n\n  const result = divide(10, 0);\n\n  console.log(result);\n\n} catch (error) {\n\n   console.error('An error occurred:', error.message);\n\n}",
+                "language": "typescript",
+                "heading": "Try/Catch Blocks",
+                "tryit_url": null
+            },
+            {
+                "code": "interface User {\n\n   id: number;\n\n   name: string;\n\n   email: string;\n\n }\n\n // Using async/await with try/catch\n\n async function fetchUser(userId: number): Promise {\n\n   try {\n\n     const response = await fetch(`/api/users/${userId}`);\n\n     if (!response.ok) {\n\n       throw new Error(`HTTP error! status: ${response.status}`);\n\n     }\n\n     return await response.json() as User;\n\n   } catch (error) {\n\n     if (error instanceof Error) {\n\n       console.error('Failed to fetch user:', error.message);\n\n     }\n\n     throw error; // Re-throw to allow caller to handle\n\n   }\n\n }\n\n // Using Promise.catch() for error handling\n\n function fetchUserPosts(userId: number): Promise {\n\n   return fetch(`/api/users/${userId}/posts`)\n\n     .then(response => {\n\n       if (!response.ok) {\n\n         throw new Error(`HTTP error! status: ${response.status}`);\n\n       }\n\n       return response.json();\n\n     })\n\n     .catch(error => {\n\n       console.error('Failed to fetch posts:', error);\n\n       return []; // Return empty array as fallback\n\n     });\n\n }",
+                "language": "typescript",
+                "heading": "Handling Async/Await Errors",
+                "tryit_url": null
+            },
+            {
+                "code": "React Error Boundary Component\n Create an Error Boundary to catch JavaScript errors in React component trees:\n\n import React, { Component, ErrorInfo, ReactNode } from 'react';\n\n interface ErrorBoundaryProps {\n\n   children: ReactNode;\n\n   fallback?: ReactNode;\n\n }\n\n interface ErrorBoundaryState {\n\n   hasError: boolean;\n\n   error?: Error;\n\n }\n\n class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundaryState> {\n\n   public state: ErrorBoundaryState = {\n\n     hasError: false\n\n   };\n\n   public static getDerivedStateFromError(error: Error): ErrorBoundaryState {\n\n     return { hasError: true, error };\n\n   }\n\n   public componentDidCatch(error: Error, errorInfo: ErrorInfo) {\n\n     console.error('Uncaught error:', error, errorInfo);\n\n     // Log to error reporting service\n\n   }\n\n   public render() {\n\n     if (this.state.hasError) {\n\n       return this.props.fallback || (\n\n         <div className=\"error-boundary\">\n\n           <h2>Something went wrong</h2>\n\n           <p>{this.state.error?.message}</p>\n\n           <button onClick={() => this.setState({ hasError: false })}>\n\n             Try again\n\n           </button>\n\n         </div>\n\n       );\n\n     }\n\n     return this.props.children;\n\n   }\n\n }\n\n // Usage\n\n function App() {\n\n   return (\n\n     <ErrorBoundary fallback={<div>Oops! Something broke.</div>}>\n\n       <MyComponent />\n\n     </ErrorBoundary>\n\n   );\n\n }",
+                "language": "typescript",
+                "heading": "React Error Boundary Component",
+                "tryit_url": null
+            },
+            {
+                "code": "// Bad: Silent failure\n\n try { /* ... */ } catch { /* empty */ }\n\n // Good: At least log the error\n\n try { /* ... */ } catch (error) {\n\n   console.error('Operation failed:', error);\n\n }",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "class NetworkError extends Error {\n\n   constructor(public status: number, message: string) {\n\n     super(message);\n\n     this.name = 'NetworkError';\n\n   }\n\n }\n\n class ValidationError extends Error {\n\n   constructor(public field: string, message: string) {\n\n     super(message);\n\n     this.name = 'ValidationError';\n\n   }\n\n }",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            },
+            {
+                "code": "// In a data access layer\n\n async function getUser(id: string): Promise {\n\n   const response = await fetch(`/api/users/${id}`);\n\n   if (!response.ok) {\n\n     throw new NetworkError(response.status, 'Failed to fetch user');\n\n   }\n\n   return response.json();\n\n }\n\n // In a UI component\n\n async function loadUser() {\n\n   try {\n\n     const user = await getUser('123');\n\n     setUser(user);\n\n   } catch (error) {\n\n     if (error instanceof NetworkError) {\n\n       if (error.status === 404) {\n\n         showError('User not found');\n\n       } else {\n\n         showError('Network error. Please try again later.');\n\n       }\n\n     } else {\n\n       showError('An unexpected error occurred');\n\n     }\n\n   }\n\n }",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "JavaScript & Frontend",
+        "notes_and_tips": [
+            "Robust error handling is crucial for building reliable TypeScript applications.\n\nThis guide covers everything from basic try/catch to advanced error handling patterns.",
+            "Summary\n Effective error handling in TypeScript involves:\n\n Using try/catch blocks for synchronous code\n\n Handling promise rejections with .catch() or try/catch with async/await\n\n Creating custom error classes for domain-specific errors\n\n Using type guards to safely work with error objects\n\n Handling errors at the appropriate level in your application\n\n Providing meaningful error messages to users\n\n By following these practices, you can build more robust and maintainable TypeScript applications."
+        ],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "TS HOME\nTS Introduction\nTS Get Started\nTS Simple Types\nTS Explicit & Inference\nTS Special Types\nTS Arrays\nTS Tuples\nTS Object Types\nTS Enums\nTS Aliases & Interfaces\nTS Union Types\nTS Functions\nTS Casting\nTS Classes\nTS Basic Generics\nTS Utility Types\nTS Keyof\nTS Null\nTS Definitely Typed\nTS 5 Updates\nTS Configuration\nTS with Node.js\nTS with React\nTS Tooling\nTS Advanced Types\nTS Type Guards\nTS Conditional Types\nTS Mapped Types\nTS Type Inference\nTS Literal Types\nTS Namespaces\nTS Index Signatures\nTS Declaration Merging\nTS Async Programming\nTS Decorators\nTS in JS Projects\nTS Migration\nTS Error Handling\nTS Best Practices",
+                "heading": "TypeScript tutorial"
+            },
+            {
+                "content": "TS Certificate",
+                "heading": "TypeScript Cert"
+            },
+            {
+                "content": "TS Editor\nTS Exercises\nTS Quiz\nTS Practice Problems\nTS Syllabus\nTS Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\nTypeScript Error Handling\n\n ❮ Previous\n Next ❯\n\n Robust error handling is crucial for building reliable TypeScript applications.\n\nThis guide covers everything from basic try/catch to advanced error handling patterns.",
+                "heading": "TypeScript Exercises"
+            },
+            {
+                "content": "Try/Catch Blocks\n The foundation of error handling in TypeScript:\n\nfunction divide(a: number, b: number): number {\n\n  if (b === 0) {\n\n    throw new Error('Division by zero');\n\n  }\n\n  return a / b;\n\n}\n\ntry {\n\n  const result = divide(10, 0);\n\n  console.log(result);\n\n} catch (error) {\n\n   console.error('An error occurred:', error.message);\n\n}\n\n Try it Yourself »\n\n TypeScript 4.0+ Note\n In TypeScript 4.0 and later, the unknown type is the default type for catch variables. Always narrow the type before accessing properties.",
+                "heading": "Basic Error Handling"
+            },
+            {
+                "content": "Creating Custom Error Classes\n Extend the built-in Error class to create domain-specific errors:\n\nclass ValidationError extends Error {\n\n  constructor(message: string, public field?: string) {\n\n    super(message);\n\n    this.name = 'ValidationError';\n\n    // Restore prototype chain\n\n    Object.setPrototypeOf(this, ValidationError.prototype);\n\n  }\n\n}\n\nclass DatabaseError extends Error {\n\n  constructor(message: string, public code: number) {\n\n    super(message);\n\n    this.name = 'DatabaseError';\n\n    Object.setPrototypeOf(this, DatabaseError.prototype);\n\n  }\n\n}\n\n// Usage\n\nfunction validateUser(user: any) {\n\n  if (!user.name) {\n\n    throw new ValidationError('Name is required', 'name');\n\n  }\n\n  if (!user.email.includes('@')) {\n\n    throw new ValidationError('Invalid email format', 'email');\n\n  }\n\n}\n\n Try it Yourself »",
+                "heading": "Custom Error Classes"
+            },
+            {
+                "content": "Type Predicates for Error Handling\n Create type guards to safely work with different error types:\n\n// Type guards\n\nfunction isErrorWithMessage(error: unknown): error is { message: string } {\n\n  return (\n\n    typeof error === 'object' &&\n\n    error !== null &&\n\n    'message' in error &&\n\n    typeof (error as Record).message === 'string'\n\n  );\n\n}\n\nfunction isValidationError(error: unknown): error is ValidationError {\n\n  return error instanceof ValidationError;\n\n}\n\n// Usage in catch block\n\ntry {\n\n  validateUser({});\n\n} catch (error: unknown) {\n\n  if (isValidationError(error)) {\n\n    console.error(`Validation error in ${error.field}: ${error.message}`);\n\n  } else if (isErrorWithMessage(error)) {\n\n    console.error('An error occurred:', error.message);\n\n  } else {\n\n    console.error('An unknown error occurred');\n\n  }\n\n}\n\n Try it Yourself »\n\n Type Assertion Pattern\n For more complex error handling, consider using a type assertion function:\n\nfunction assertIsError(error: unknown): asserts error is Error {\n\n  if (!(error instanceof Error)) {\n\n    throw new Error('Caught value is not an Error instance');\n\n  }\n\n}\n\ntry {\n\n  // ...\n\n} catch (error) {\n\n  assertIsError(error);\n\n  console.error((error as Error).message); // TypeScript now knows error is Error\n\n}",
+                "heading": "Type Guards for Errors"
+            },
+            {
+                "content": "Handling Async/Await Errors\n Proper error handling in async/await code requires wrapping await calls in try/catch blocks:\n\n interface User {\n\n   id: number;\n\n   name: string;\n\n   email: string;\n\n }\n\n // Using async/await with try/catch\n\n async function fetchUser(userId: number): Promise {\n\n   try {\n\n     const response = await fetch(`/api/users/${userId}`);\n\n     if (!response.ok) {\n\n       throw new Error(`HTTP error! status: ${response.status}`);\n\n     }\n\n     return await response.json() as User;\n\n   } catch (error) {\n\n     if (error instanceof Error) {\n\n       console.error('Failed to fetch user:', error.message);\n\n     }\n\n     throw error; // Re-throw to allow caller to handle\n\n   }\n\n }\n\n // Using Promise.catch() for error handling\n\n function fetchUserPosts(userId: number): Promise {\n\n   return fetch(`/api/users/${userId}/posts`)\n\n     .then(response => {\n\n       if (!response.ok) {\n\n         throw new Error(`HTTP error! status: ${response.status}`);\n\n       }\n\n       return response.json();\n\n     })\n\n     .catch(error => {\n\n       console.error('Failed to fetch posts:', error);\n\n       return []; // Return empty array as fallback\n\n     });\n\n }\n\n Try it Yourself »\n\n Unhandled Promise Rejections\n Always handle promise rejections to prevent unhandled promise rejection warnings:\n\n // Bad: Unhandled promise rejection\n\n fetchData().then(data => console.log(data));\n\n // Good: Handle both success and error cases\n\n fetchData()\n\n   .then(data => console.log('Success:', data))\n\n   .catch(error => console.error('Error:', error));\n\n // Or use void for intentionally ignored errors\n\n void fetchData().catch(console.error);",
+                "heading": "Async Error Handling"
+            },
+            {
+                "content": "React Error Boundary Component\n Create an Error Boundary to catch JavaScript errors in React component trees:\n\n import React, { Component, ErrorInfo, ReactNode } from 'react';\n\n interface ErrorBoundaryProps {\n\n   children: ReactNode;\n\n   fallback?: ReactNode;\n\n }\n\n interface ErrorBoundaryState {\n\n   hasError: boolean;\n\n   error?: Error;\n\n }\n\n class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundaryState> {\n\n   public state: ErrorBoundaryState = {\n\n     hasError: false\n\n   };\n\n   public static getDerivedStateFromError(error: Error): ErrorBoundaryState {\n\n     return { hasError: true, error };\n\n   }\n\n   public componentDidCatch(error: Error, errorInfo: ErrorInfo) {\n\n     console.error('Uncaught error:', error, errorInfo);\n\n     // Log to error reporting service\n\n   }\n\n   public render() {\n\n     if (this.state.hasError) {\n\n       return this.props.fallback || (\n\n         <div className=\"error-boundary\">\n\n           <h2>Something went wrong</h2>\n\n           <p>{this.state.error?.message}</p>\n\n           <button onClick={() => this.setState({ hasError: false })}>\n\n             Try again\n\n           </button>\n\n         </div>\n\n       );\n\n     }\n\n     return this.props.children;\n\n   }\n\n }\n\n // Usage\n\n function App() {\n\n   return (\n\n     <ErrorBoundary fallback={<div>Oops! Something broke.</div>}>\n\n       <MyComponent />\n\n     </ErrorBoundary>\n\n   );\n\n }",
+                "heading": "Error Boundaries in React"
+            },
+            {
+                "content": "Always Handle Errors\nNever leave catch blocks empty.\n\nAt minimum, log the error:\n\n // Bad: Silent failure\n\n try { /* ... */ } catch { /* empty */ }\n\n // Good: At least log the error\n\n try { /* ... */ } catch (error) {\n\n   console.error('Operation failed:', error);\n\n }\n\nUse Specific Error Types\nCreate custom error classes for different error scenarios:\n\n class NetworkError extends Error {\n\n   constructor(public status: number, message: string) {\n\n     super(message);\n\n     this.name = 'NetworkError';\n\n   }\n\n }\n\n class ValidationError extends Error {\n\n   constructor(public field: string, message: string) {\n\n     super(message);\n\n     this.name = 'ValidationError';\n\n   }\n\n }\n\nHandle Errors at the Right Level\nHandle errors where you have enough context to recover or provide a good user experience:\n\n // In a data access layer\n\n async function getUser(id: string): Promise {\n\n   const response = await fetch(`/api/users/${id}`);\n\n   if (!response.ok) {\n\n     throw new NetworkError(response.status, 'Failed to fetch user');\n\n   }\n\n   return response.json();\n\n }\n\n // In a UI component\n\n async function loadUser() {\n\n   try {\n\n     const user = await getUser('123');\n\n     setUser(user);\n\n   } catch (error) {\n\n     if (error instanceof NetworkError) {\n\n       if (error.status === 404) {\n\n         showError('User not found');\n\n       } else {\n\n         showError('Network error. Please try again later.');\n\n       }\n\n     } else {\n\n       showError('An unexpected error occurred');\n\n     }\n\n   }\n\n }",
+                "heading": "Best Practices"
+            },
+            {
+                "content": "Not Handling Promise Rejections\n Always handle promise rejections to prevent unhandled promise rejection warnings:\n\n // Bad: Unhandled promise rejection\n\n fetchData();\n\n // Good: Handle the rejection\n\n fetchData().catch(console.error);\n\n Catching Without Proper Type Narrowing\n In TypeScript 4.0+, caught errors are of type unknown:\n\n // Bad: Error is of type 'unknown'\n\n try { /* ... */ } catch (error) {\n\n   console.log(error.message); // Error: Property 'message' does not exist on type 'unknown'\n\n }\n\n // Good: Narrow the type\n\n try { /* ... */ } catch (error) {\n\n   if (error instanceof Error) {\n\n     console.log(error.message); // OK\n\n   }\n\n }\n\n Swallowing Errors\n Avoid silently catching and ignoring errors without proper handling:\n\n // Bad: Error is silently ignored\n\n function saveData(data: Data) {\n\n   try {\n\n     database.save(data);\n\n   } catch {\n\n     // Ignore\n\n   }\n\n }\n\n // Better: Log the error and/or notify the user\n\n function saveData(data: Data) {\n\n   try {\n\n     database.save(data);\n\n   } catch (error) {\n\n     console.error('Failed to save data:', error);\n\n     showError('Failed to save data. Please try again.');\n\n   }\n\n }\n\n Summary\n Effective error handling in TypeScript involves:\n\n Using try/catch blocks for synchronous code\n\n Handling promise rejections with .catch() or try/catch with async/await\n\n Creating custom error classes for domain-specific errors\n\n Using type guards to safely work with error objects\n\n Handling errors at the appropriate level in your application\n\n Providing meaningful error messages to users\n\n By following these practices, you can build more robust and maintainable TypeScript applications.\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Common Pitfalls"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:08:44Z",
+        "subject": "TypeScript",
+        "title": "TypeScript Error Handling"
+    },
+    {
+        "url": "https://www.w3schools.com/typescript/typescript_best_practices.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "typescript_typescript_best_practices",
+        "code_examples": [
+            {
+                "code": "Enable Strict Mode\n Always enable strict mode in your tsconfig.json for maximum type safety:\n\n// tsconfig.json\n\n{\n\n  \"compilerOptions\": {\n\n    /* Enable all strict type-checking options */\n\n    \"strict\": true,\n\n    /* Additional recommended settings */\n\n    \"target\": \"ES2020\",\n\n    \"module\": \"commonjs\",\n\n    \"moduleResolution\": \"node\",\n\n    \"esModuleInterop\": true,\n\n    \"skipLibCheck\": true,\n\n    \"forceConsistentCasingInFileNames\": true\n\n  }\n\n}",
+                "language": "typescript",
+                "heading": "Enable Strict Mode",
+                "tryit_url": null
+            },
+            {
+                "code": "Enable Strict Checks\n Consider enabling these additional strict checks for better code quality:\n\n{\n\n  \"compilerOptions\": {\n\n    /* Additional strict checks */\n\n    \"noImplicitAny\": true,\n\n    \"strictNullChecks\": true,\n\n    \"strictFunctionTypes\": true,\n\n    \"strictBindCallApply\": true,\n\n    \"strictPropertyInitialization\": true,\n\n    \"noImplicitThis\": true,\n\n    \"alwaysStrict\": true\n\n  }\n\n}",
+                "language": "typescript",
+                "heading": "Enable Strict Checks",
+                "tryit_url": null
+            },
+            {
+                "code": "// Bad: Redundant type annotation\n\n const name: string = 'John';\n\n // Good: Let TypeScript infer the type\n\n const name = 'John';\n\n // Bad: Redundant return type\n\n function add(a: number, b: number): number {\n\n   return a + b;\n\n }\n\n // Good: Let TypeScript infer return type\n\n function add(a: number, b: number) {\n\n   return a + b;\n\n }",
+                "language": "typescript",
+                "heading": "Use Type Inference Where Possible",
+                "tryit_url": null
+            },
+            {
+                "code": "// Use interface for object shapes that can be extended/implemented\n\n interface User {\n\n   id: number;\n\n   name: string;\n\n }\n\n // Extending an interface\n\n interface AdminUser extends User {\n\n   permissions: string[];\n\n }\n\n // Use type for unions, tuples, or mapped types\n\n type UserRole = 'admin' | 'editor' | 'viewer';\n\n // Union types\n\n type UserId = number | string;\n\n // Mapped types\n\n type ReadonlyUser = Readonly<User>;\n\n // Tuple types\n\n type Point = [number, number];",
+                "language": "typescript",
+                "heading": "Interfaces vs. Type Aliases",
+                "tryit_url": null
+            },
+            {
+                "code": "Module Organization\n Organize code into logical modules with clear responsibilities:\n\n // user/user.model.ts\n\n export interface User {\n\n   id: string;\n\n   name: string;\n\n   email: string;\n\n }\n\n // user/user.service.ts\n\n import { User } from './user.model';\n\n export class UserService {\n\n   private users: User[] = [];\n\n   addUser(user: User) {\n\n     this.users.push(user);\n\n   }\n\n   getUser(id: string): User | undefined {\n\n     return this.users.find(user => user.id === id);\n\n   }\n\n }\n\n // user/index.ts (barrel file)\n\n export * from './user.model';\n\n export * from './user.service';",
+                "language": "typescript",
+                "heading": "Module Organization",
+                "tryit_url": null
+            },
+            {
+                "code": "File Naming Conventions\n Follow consistent file naming patterns:\n\n // Good\n\n user.service.ts // Service classes\n\n user.model.ts // Type definitions\n\n user.controller.ts // Controllers\n\n user.component.ts // Components\n\n user.utils.ts // Utility functions\n\n user.test.ts // Test files\n\n // Bad\n\n UserService.ts // Avoid PascalCase for file names\n\n user_service.ts // Avoid snake_case\n\n userService.ts // Avoid camelCase for file names",
+                "language": "typescript",
+                "heading": "File Naming Conventions",
+                "tryit_url": null
+            },
+            {
+                "code": "// Bad: No type information\n\n function process(user, notify) {\n\n   notify(user.name);\n\n }\n\n // Good: Explicit parameter and return types\n\n function processUser(\n\n   user: User,\n\n   notify: (message: string) => void\n\n ): void {\n\n   notify(`Processing user: ${user.name}`);\n\n }\n\n // Use default parameters instead of conditionals\n\n function createUser(\n\n   name: string,\n\n   role: UserRole = 'viewer',\n\n   isActive: boolean = true\n\n ): User {\n\n   return { name, role, isActive };\n\n }\n\n // Use rest parameters for variable arguments\n\n function sum(...numbers: number[]): number {\n\n   return numbers.reduce((total, num) => total + num, 0);\n\n }",
+                "language": "typescript",
+                "heading": "Function Parameters and Return Types",
+                "tryit_url": null
+            },
+            {
+                "code": "Proper Async/Await Usage\n Handle asynchronous operations effectively with proper error handling:\n\n // Bad: Not handling errors\n\n async function fetchData() {\n\n   const response = await fetch('/api/data');\n\n   return response.json();\n\n }\n\n // Good: Proper error handling\n\n async function fetchData<T>(url: string): Promise<T> {\n\n   try {\n\n     const response = await fetch(url);\n\n     if (!response.ok) {\n\n       throw new Error(`HTTP error! status: ${response.status}`);\n\n     }\n\n     return await response.json() as T;\n\n   } catch (error) {\n\n     console.error('Failed to fetch data:', error);\n\n     throw error; // Re-throw to allow caller to handle\n\n   }\n\n }\n\n // Better: Use Promise.all for parallel operations\n\n async function fetchMultipleData<T>(urls: string[]): Promise<T[]> {\n\n   try {\n\n     const promises = urls.map(url => fetchData<T>(url));\n\n     return await Promise.all(promises);\n\n   } catch (error) {\n\n     console.error('One or more requests failed:', error);\n\n     throw error;\n\n   }\n\n }\n\n // Example usage\n\n interface User {\n\n   id: string;\n\n   name: string;\n\n   email: string;\n\n }\n\n // Fetch user data with proper typing\n\n async function getUserData(userId: string): Promise<User> {\n\n   return fetchData<User>(`/api/users/${userId}`);\n\n }",
+                "language": "typescript",
+                "heading": "Proper Async/Await Usage",
+                "tryit_url": null
+            },
+            {
+                "code": "Avoid Nested Async/Await\n Flatten your async/await code to avoid callback hell:\n\n // Bad: Nested async/await (callback hell)\n\n async function processUser(userId: string) {\n\n   const user = await getUser(userId);\n\n   if (user) {\n\n     const orders = await getOrders(user.id);\n\n     if (orders.length > 0) {\n\n       const latestOrder = orders[0];\n\n       const items = await getOrderItems(latestOrder.id);\n\n       return { user, latestOrder, items };\n\n     }\n\n   }\n\n   return null;\n\n }\n\n // Better: Flatten the async/await chain\n\n async function processUser(userId: string) {\n\n   const user = await getUser(userId);\n\n   if (!user) return null;\n\n   const orders = await getOrders(user.id);\n\n   if (orders.length === 0) return { user, latestOrder: null, items: [] };\n\n   const latestOrder = orders[0];\n\n   const items = await getOrderItems(latestOrder.id);\n\n   return { user, latestOrder, items };\n\n }\n\n // Best: Use Promise.all for independent async operations\n\n async function processUser(userId: string) {\n\n   const [user, orders] = await Promise.all([\n\n     getUser(userId),\n\n     getOrders(userId)\n\n   ]);\n\n   if (!user) return null;\n\n   if (orders.length === 0) return { user, latestOrder: null, items: [] };\n\n   const latestOrder = orders[0];\n\n   const items = await getOrderItems(latestOrder.id);\n\n   return { user, latestOrder, items };\n\n }",
+                "language": "typescript",
+                "heading": "Avoid Nested Async/Await",
+                "tryit_url": null
+            },
+            {
+                "code": "Writing Testable Code\n Design your code with testability in mind by using dependency injection and pure functions:\n\n // Bad: Hard to test due to direct dependencies\n\n class PaymentProcessor {\n\n   async processPayment(amount: number) {\n\n     const paymentGateway = new PaymentGateway();\n\n     return paymentGateway.charge(amount);\n\n   }\n\n }\n\n // Better: Use dependency injection\n\n interface PaymentGateway {\n\n   charge(amount: number): Promise<boolean>;\n\n }\n\n class PaymentProcessor {\n\n   constructor(private paymentGateway: PaymentGateway) {}\n\n   async processPayment(amount: number): Promise<boolean> {\n\n     if (amount <= 0) {\n\n       throw new Error('Amount must be greater than zero');\n\n     }\n\n     return this.paymentGateway.charge(amount);\n\n   }\n\n }\n\n // Test example with Jest\n\n describe('PaymentProcessor', () => {\n\n   let processor: PaymentProcessor;\n\n   let mockGateway: jest.Mocked<PaymentGateway>;\n\n   beforeEach(() => {\n\n     mockGateway = {\n\n       charge: jest.fn()\n\n     };\n\n     processor = new PaymentProcessor(mockGateway);\n\n   });\n\n   it('should process a valid payment', async () => {\n\n     mockGateway.charge.mockResolvedValue(true);\n\n     const result = await processor.processPayment(100);\n\n     expect(result).toBe(true);\n\n     expect(mockGateway.charge).toHaveBeenCalledWith(100);\n\n   });\n\n   it('should throw for invalid amount', async () => {\n\n     await expect(processor.processPayment(-50))\n\n       .rejects\n\n       toThrow('Amount must be greater than zero');\n\n   });\n\n });",
+                "language": "typescript",
+                "heading": "Writing Testable Code",
+                "tryit_url": null
+            },
+            {
+                "code": "Type Testing\n Test your types to ensure they work as expected using type assertions and utilities:\n\n // Using @ts-expect-error to test for type errors\n\n // @ts-expect-error - Should not allow negative values\n\n const invalidUser: User = { id: -1, name: 'Test' };\n\n // Using type assertions in tests\n\n function assertIsString(value: unknown): asserts value is string {\n\n   if (typeof value !== 'string') {\n\n     throw new Error('Not a string');\n\n   }\n\n }\n\n // Using utility types for testing\n\n type IsString<T> = T extends string ? true : false;\n\n type Test1 = IsString<string>; // true\n\n type Test2 = IsString<number>; // false\n\n // Using tsd for type testing (install with: npm install --save-dev tsd)\n\n /*\n\n import { expectType } from 'tsd';\n\n const user = { id: 1, name: 'John' };\n\n expectType<{ id: number; name: string }>(user);\n\n expectType<string>(user.name);\n\n */",
+                "language": "typescript",
+                "heading": "Type Testing",
+                "tryit_url": null
+            },
+            {
+                "code": "Type-Only Imports and Exports\n Use type-only imports and exports to reduce bundle size and improve tree-shaking:\n\n // Bad: Imports both type and value\n\n import { User, fetchUser } from './api';\n\n // Good: Separate type and value imports\n\n import type { User } from './api';\n\n import { fetchUser } from './api';\n\n // Even better: Use type-only imports when possible\n\n import type { User, UserSettings } from './types';\n\n // Type-only export\n\n export type { User };\n\n // Runtime export\n\n export { fetchUser };\n\n // In tsconfig.json, enable \"isolatedModules\": true\n\n // to ensure type-only imports are properly handled",
+                "language": "typescript",
+                "heading": "Type-Only Imports and Exports",
+                "tryit_url": null
+            },
+            {
+                "code": "Avoid Excessive Type Complexity\n Be mindful of complex types that can impact compilation time:\n\n // Bad: Deeply nested mapped types can be slow\n\n type DeepPartial<T> = {\n\n   [P in keyof T]?: T[P] extends object ? DeepPartial<T[P]> : T[P];\n\n };\n\n // Better: Use built-in utility types when possible\n\n type User = {\n\n   id: string;\n\n   profile: {\n\n     name: string;\n\n     email: string;\n\n   };\n\n   preferences?: {\n\n     notifications: boolean;\n\n   };\n\n };\n\n // Instead of DeepPartial<User>, use Partial with type assertions\n\n const updateUser = (updates: Partial<User>) => {\n\n   // Implementation\n\n };\n\n // For complex types, consider using interfaces\n\n interface UserProfile {\n\n   name: string;\n\n   email: string;\n\n }\n\n interface UserPreferences {\n\n   notifications: boolean;\n\n }\n\n interface User {\n\n   id: string;\n\n   profile: UserProfile;\n\n   preferences?: UserPreferences;\n\n }",
+                "language": "typescript",
+                "heading": "Avoid Excessive Type Complexity",
+                "tryit_url": null
+            },
+            {
+                "code": "// Without const assertion (wider type)\n\n const colors = ['red', 'green', 'blue'];\n\n // Type: string[]\n\n // With const assertion (narrower, more precise type)\n\n const colors = ['red', 'green', 'blue'] as const;\n\n // Type: readonly [\"red\", \"green\", \"blue\"]\n\n // Extract union type from const array\n\n type Color = typeof colors[number]; // \"red\" | \"green\" | \"blue\"\n\n // Objects with const assertions\n\n const config = {\n\n   apiUrl: 'https://api.example.com',\n\n   timeout: 5000,\n\n   features: ['auth', 'notifications'],\n\n } as const;\n\n // Type is:\n\n // {\n\n // readonly apiUrl: \"https://api.example.com\";\n\n // readonly timeout: 5000;\n\n // readonly features: readonly [\"auth\", \"notifications\"];\n\n // }",
+                "language": "typescript",
+                "heading": "Use const Assertions for Literal Types",
+                "tryit_url": null
+            },
+            {
+                "code": "Not Using Strict Mode\n Always enable strict mode in your `tsconfig.json`:\n\n // tsconfig.json\n\n {\n\n   \"compilerOptions\": {\n\n     \"strict\": true,\n\n     /* Additional strictness flags */\n\n     \"noImplicitAny\": true,\n\n     \"strictNullChecks\": true,\n\n     \"strictFunctionTypes\": true,\n\n     \"strictBindCallApply\": true,\n\n     \"strictPropertyInitialization\": true,\n\n     \"noImplicitThis\": true,\n\n     \"alwaysStrict\": true\n\n   }\n\n }",
+                "language": "typescript",
+                "heading": "Not Using Strict Mode",
+                "tryit_url": null
+            },
+            {
+                "code": "Ignoring Type Inference\n Let TypeScript infer types when possible:\n\n // Redundant type annotation\n\n const name: string = 'John';\n\n // Let TypeScript infer the type\n\n const name = 'John'; // TypeScript knows it's a string\n\n // Redundant return type\n\n function add(a: number, b: number): number {\n\n   return a + b;\n\n }\n\n // Let TypeScript infer the return type\n\n function add(a: number, b: number) {\n\n   return a + b; // TypeScript infers number\n\n }",
+                "language": "typescript",
+                "heading": "Ignoring Type Inference",
+                "tryit_url": null
+            },
+            {
+                "code": "// Without type guard\n\n function process(input: string | number) {\n\n   return input.toUpperCase(); // Error: toUpperCase doesn't exist on number\n\n }\n\n // With type guard\n\n function isString(value: unknown): value is string {\n\n   return typeof value === 'string';\n\n }\n\n function process(input: string | number) {\n\n   if (isString(input)) {\n\n     return input.toUpperCase(); // TypeScript knows input is string here\n\n   } else {\n\n     return input.toFixed(2); // TypeScript knows input is number here\n\n   }\n\n }\n\n // Built-in type guards\n\n if (typeof value === 'string') { /* value is string */ }\n\n if (value instanceof Date) { /* value is Date */ }\n\n if ('id' in user) { /* user has id property */ }",
+                "language": "typescript",
+                "heading": "Not Using Type Guards",
+                "tryit_url": null
+            }
+        ],
+        "category": "JavaScript & Frontend",
+        "notes_and_tips": [
+            "This guide covers essential TypeScript best practices to help you write clean, maintainable, and type-safe code. Following these practices will improve code quality and developer experience."
+        ],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "TS HOME\nTS Introduction\nTS Get Started\nTS Simple Types\nTS Explicit & Inference\nTS Special Types\nTS Arrays\nTS Tuples\nTS Object Types\nTS Enums\nTS Aliases & Interfaces\nTS Union Types\nTS Functions\nTS Casting\nTS Classes\nTS Basic Generics\nTS Utility Types\nTS Keyof\nTS Null\nTS Definitely Typed\nTS 5 Updates\nTS Configuration\nTS with Node.js\nTS with React\nTS Tooling\nTS Advanced Types\nTS Type Guards\nTS Conditional Types\nTS Mapped Types\nTS Type Inference\nTS Literal Types\nTS Namespaces\nTS Index Signatures\nTS Declaration Merging\nTS Async Programming\nTS Decorators\nTS in JS Projects\nTS Migration\nTS Error Handling\nTS Best Practices",
+                "heading": "TypeScript tutorial"
+            },
+            {
+                "content": "TS Certificate",
+                "heading": "TypeScript Cert"
+            },
+            {
+                "content": "TS Editor\nTS Exercises\nTS Quiz\nTS Practice Problems\nTS Syllabus\nTS Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\nTypeScript Best Practices\n\n ❮ Previous\n Next ❯\n\n This guide covers essential TypeScript best practices to help you write clean, maintainable, and type-safe code. Following these practices will improve code quality and developer experience.",
+                "heading": "TypeScript Exercises"
+            },
+            {
+                "content": "Enable Strict Mode\n Always enable strict mode in your tsconfig.json for maximum type safety:\n\n// tsconfig.json\n\n{\n\n  \"compilerOptions\": {\n\n    /* Enable all strict type-checking options */\n\n    \"strict\": true,\n\n    /* Additional recommended settings */\n\n    \"target\": \"ES2020\",\n\n    \"module\": \"commonjs\",\n\n    \"moduleResolution\": \"node\",\n\n    \"esModuleInterop\": true,\n\n    \"skipLibCheck\": true,\n\n    \"forceConsistentCasingInFileNames\": true\n\n  }\n\n}\n\n Enable Strict Checks\n Consider enabling these additional strict checks for better code quality:\n\n{\n\n  \"compilerOptions\": {\n\n    /* Additional strict checks */\n\n    \"noImplicitAny\": true,\n\n    \"strictNullChecks\": true,\n\n    \"strictFunctionTypes\": true,\n\n    \"strictBindCallApply\": true,\n\n    \"strictPropertyInitialization\": true,\n\n    \"noImplicitThis\": true,\n\n    \"alwaysStrict\": true\n\n  }\n\n}",
+                "heading": "Project Configuration"
+            },
+            {
+                "content": "Use Type Inference Where Possible\n Let TypeScript infer types when the type is obvious from the assignment:\n\n // Bad: Redundant type annotation\n\n const name: string = 'John';\n\n // Good: Let TypeScript infer the type\n\n const name = 'John';\n\n // Bad: Redundant return type\n\n function add(a: number, b: number): number {\n\n   return a + b;\n\n }\n\n // Good: Let TypeScript infer return type\n\n function add(a: number, b: number) {\n\n   return a + b;\n\n }\n\n Try it Yourself »\n\n Precise Type Annotations\n Be explicit with types for public APIs and function parameters:\n\n // Bad: No type information\n\n function processUser(user) {\n\n   return user.name.toUpperCase();\n\n }\n\n // Good: Explicit parameter and return types\n\n interface User {\n\n   id: number;\n\n   name: string;\n\n   email?: string; // Optional property\n\n }\n\n function processUser(user: User): string {\n\n   return user.name.toUpperCase();\n\n }\n\n Interfaces vs. Type Aliases\n Know when to use interface vs type:\n\n // Use interface for object shapes that can be extended/implemented\n\n interface User {\n\n   id: number;\n\n   name: string;\n\n }\n\n // Extending an interface\n\n interface AdminUser extends User {\n\n   permissions: string[];\n\n }\n\n // Use type for unions, tuples, or mapped types\n\n type UserRole = 'admin' | 'editor' | 'viewer';\n\n // Union types\n\n type UserId = number | string;\n\n // Mapped types\n\n type ReadonlyUser = Readonly<User>;\n\n // Tuple types\n\n type Point = [number, number];\n\n Try it Yourself »\n\n Avoid any Type\n Prefer more specific types over any:\n\n // Bad: Loses type safety\n\n function logValue(value: any) {\n\n   console.log(value.toUpperCase()); // No error until runtime\n\n }\n\n // Better: Use generic type parameter\n\n function logValue<T>(value: T) {\n\n   console.log(String(value)); // Safer, but still not ideal\n\n }\n\n // Best: Be specific about expected types\n\n function logString(value: string) {\n\n   console.log(value.toUpperCase()); // Type-safe\n\n }\n\n // When you need to accept any value but still be type-safe\n\n function logUnknown(value: unknown) {\n\n   if (typeof value === 'string') {\n\n     console.log(value.toUpperCase());\n\n   } else {\n\n     console.log(String(value));\n\n   }\n\n }",
+                "heading": "Type System Best Practices"
+            },
+            {
+                "content": "Module Organization\n Organize code into logical modules with clear responsibilities:\n\n // user/user.model.ts\n\n export interface User {\n\n   id: string;\n\n   name: string;\n\n   email: string;\n\n }\n\n // user/user.service.ts\n\n import { User } from './user.model';\n\n export class UserService {\n\n   private users: User[] = [];\n\n   addUser(user: User) {\n\n     this.users.push(user);\n\n   }\n\n   getUser(id: string): User | undefined {\n\n     return this.users.find(user => user.id === id);\n\n   }\n\n }\n\n // user/index.ts (barrel file)\n\n export * from './user.model';\n\n export * from './user.service';\n\n File Naming Conventions\n Follow consistent file naming patterns:\n\n // Good\n\n user.service.ts // Service classes\n\n user.model.ts // Type definitions\n\n user.controller.ts // Controllers\n\n user.component.ts // Components\n\n user.utils.ts // Utility functions\n\n user.test.ts // Test files\n\n // Bad\n\n UserService.ts // Avoid PascalCase for file names\n\n user_service.ts // Avoid snake_case\n\n userService.ts // Avoid camelCase for file names",
+                "heading": "Code Organization"
+            },
+            {
+                "content": "Document your types and interfaces.\n\n Prefer composition over inheritance for types.\n\n Keep tsconfig.json strict and up-to-date.\n\n Refactor code to use more specific types as the codebase evolves.",
+                "heading": "Best Practices"
+            },
+            {
+                "content": "Function Parameters and Return Types\n Write clear and type-safe functions with proper parameter and return types:\n\n // Bad: No type information\n\n function process(user, notify) {\n\n   notify(user.name);\n\n }\n\n // Good: Explicit parameter and return types\n\n function processUser(\n\n   user: User,\n\n   notify: (message: string) => void\n\n ): void {\n\n   notify(`Processing user: ${user.name}`);\n\n }\n\n // Use default parameters instead of conditionals\n\n function createUser(\n\n   name: string,\n\n   role: UserRole = 'viewer',\n\n   isActive: boolean = true\n\n ): User {\n\n   return { name, role, isActive };\n\n }\n\n // Use rest parameters for variable arguments\n\n function sum(...numbers: number[]): number {\n\n   return numbers.reduce((total, num) => total + num, 0);\n\n }\n\n Try it Yourself »\n\n Avoid Function Overuse\n Be mindful of function complexity and responsibilities:\n\n // Bad: Too many responsibilities\n\n function processUserData(userData: any) {\n\n   // Validation\n\n   if (!userData || !userData.name) throw new Error('Invalid user data');\n\n   // Data transformation\n\n   const processedData = {\n\n     ...userData,\n\n     name: userData.name.trim(),\n\n     createdAt: new Date()\n\n   };\n\n   // Side effect\n\n   saveToDatabase(processedData);\n\n   // Notification\n\n   sendNotification(processedData.email, 'Profile updated');\n\n   return processedData;\n\n }\n\n // Better: Split into smaller, focused functions\n\n function validateUserData(data: unknown): UserData {\n\n   if (!data || typeof data !== 'object') {\n\n     throw new Error('Invalid user data');\n\n   }\n\n   return data as UserData;\n\n }\n\n function processUserData(userData: UserData): ProcessedUserData {\n\n   return {\n\n     ...userData,\n\n     name: userData.name.trim(),\n\n     createdAt: new Date()\n\n   };\n\n }",
+                "heading": "Functions and Methods"
+            },
+            {
+                "content": "Proper Async/Await Usage\n Handle asynchronous operations effectively with proper error handling:\n\n // Bad: Not handling errors\n\n async function fetchData() {\n\n   const response = await fetch('/api/data');\n\n   return response.json();\n\n }\n\n // Good: Proper error handling\n\n async function fetchData<T>(url: string): Promise<T> {\n\n   try {\n\n     const response = await fetch(url);\n\n     if (!response.ok) {\n\n       throw new Error(`HTTP error! status: ${response.status}`);\n\n     }\n\n     return await response.json() as T;\n\n   } catch (error) {\n\n     console.error('Failed to fetch data:', error);\n\n     throw error; // Re-throw to allow caller to handle\n\n   }\n\n }\n\n // Better: Use Promise.all for parallel operations\n\n async function fetchMultipleData<T>(urls: string[]): Promise<T[]> {\n\n   try {\n\n     const promises = urls.map(url => fetchData<T>(url));\n\n     return await Promise.all(promises);\n\n   } catch (error) {\n\n     console.error('One or more requests failed:', error);\n\n     throw error;\n\n   }\n\n }\n\n // Example usage\n\n interface User {\n\n   id: string;\n\n   name: string;\n\n   email: string;\n\n }\n\n // Fetch user data with proper typing\n\n async function getUserData(userId: string): Promise<User> {\n\n   return fetchData<User>(`/api/users/${userId}`);\n\n }\n\n Avoid Nested Async/Await\n Flatten your async/await code to avoid callback hell:\n\n // Bad: Nested async/await (callback hell)\n\n async function processUser(userId: string) {\n\n   const user = await getUser(userId);\n\n   if (user) {\n\n     const orders = await getOrders(user.id);\n\n     if (orders.length > 0) {\n\n       const latestOrder = orders[0];\n\n       const items = await getOrderItems(latestOrder.id);\n\n       return { user, latestOrder, items };\n\n     }\n\n   }\n\n   return null;\n\n }\n\n // Better: Flatten the async/await chain\n\n async function processUser(userId: string) {\n\n   const user = await getUser(userId);\n\n   if (!user) return null;\n\n   const orders = await getOrders(user.id);\n\n   if (orders.length === 0) return { user, latestOrder: null, items: [] };\n\n   const latestOrder = orders[0];\n\n   const items = await getOrderItems(latestOrder.id);\n\n   return { user, latestOrder, items };\n\n }\n\n // Best: Use Promise.all for independent async operations\n\n async function processUser(userId: string) {\n\n   const [user, orders] = await Promise.all([\n\n     getUser(userId),\n\n     getOrders(userId)\n\n   ]);\n\n   if (!user) return null;\n\n   if (orders.length === 0) return { user, latestOrder: null, items: [] };\n\n   const latestOrder = orders[0];\n\n   const items = await getOrderItems(latestOrder.id);\n\n   return { user, latestOrder, items };\n\n }",
+                "heading": "Async/Await Patterns"
+            },
+            {
+                "content": "Writing Testable Code\n Design your code with testability in mind by using dependency injection and pure functions:\n\n // Bad: Hard to test due to direct dependencies\n\n class PaymentProcessor {\n\n   async processPayment(amount: number) {\n\n     const paymentGateway = new PaymentGateway();\n\n     return paymentGateway.charge(amount);\n\n   }\n\n }\n\n // Better: Use dependency injection\n\n interface PaymentGateway {\n\n   charge(amount: number): Promise<boolean>;\n\n }\n\n class PaymentProcessor {\n\n   constructor(private paymentGateway: PaymentGateway) {}\n\n   async processPayment(amount: number): Promise<boolean> {\n\n     if (amount <= 0) {\n\n       throw new Error('Amount must be greater than zero');\n\n     }\n\n     return this.paymentGateway.charge(amount);\n\n   }\n\n }\n\n // Test example with Jest\n\n describe('PaymentProcessor', () => {\n\n   let processor: PaymentProcessor;\n\n   let mockGateway: jest.Mocked<PaymentGateway>;\n\n   beforeEach(() => {\n\n     mockGateway = {\n\n       charge: jest.fn()\n\n     };\n\n     processor = new PaymentProcessor(mockGateway);\n\n   });\n\n   it('should process a valid payment', async () => {\n\n     mockGateway.charge.mockResolvedValue(true);\n\n     const result = await processor.processPayment(100);\n\n     expect(result).toBe(true);\n\n     expect(mockGateway.charge).toHaveBeenCalledWith(100);\n\n   });\n\n   it('should throw for invalid amount', async () => {\n\n     await expect(processor.processPayment(-50))\n\n       .rejects\n\n       toThrow('Amount must be greater than zero');\n\n   });\n\n });\n\n Type Testing\n Test your types to ensure they work as expected using type assertions and utilities:\n\n // Using @ts-expect-error to test for type errors\n\n // @ts-expect-error - Should not allow negative values\n\n const invalidUser: User = { id: -1, name: 'Test' };\n\n // Using type assertions in tests\n\n function assertIsString(value: unknown): asserts value is string {\n\n   if (typeof value !== 'string') {\n\n     throw new Error('Not a string');\n\n   }\n\n }\n\n // Using utility types for testing\n\n type IsString<T> = T extends string ? true : false;\n\n type Test1 = IsString<string>; // true\n\n type Test2 = IsString<number>; // false\n\n // Using tsd for type testing (install with: npm install --save-dev tsd)\n\n /*\n\n import { expectType } from 'tsd';\n\n const user = { id: 1, name: 'John' };\n\n expectType<{ id: number; name: string }>(user);\n\n expectType<string>(user.name);\n\n */",
+                "heading": "Testing and Quality"
+            },
+            {
+                "content": "Type-Only Imports and Exports\n Use type-only imports and exports to reduce bundle size and improve tree-shaking:\n\n // Bad: Imports both type and value\n\n import { User, fetchUser } from './api';\n\n // Good: Separate type and value imports\n\n import type { User } from './api';\n\n import { fetchUser } from './api';\n\n // Even better: Use type-only imports when possible\n\n import type { User, UserSettings } from './types';\n\n // Type-only export\n\n export type { User };\n\n // Runtime export\n\n export { fetchUser };\n\n // In tsconfig.json, enable \"isolatedModules\": true\n\n // to ensure type-only imports are properly handled\n\n Avoid Excessive Type Complexity\n Be mindful of complex types that can impact compilation time:\n\n // Bad: Deeply nested mapped types can be slow\n\n type DeepPartial<T> = {\n\n   [P in keyof T]?: T[P] extends object ? DeepPartial<T[P]> : T[P];\n\n };\n\n // Better: Use built-in utility types when possible\n\n type User = {\n\n   id: string;\n\n   profile: {\n\n     name: string;\n\n     email: string;\n\n   };\n\n   preferences?: {\n\n     notifications: boolean;\n\n   };\n\n };\n\n // Instead of DeepPartial<User>, use Partial with type assertions\n\n const updateUser = (updates: Partial<User>) => {\n\n   // Implementation\n\n };\n\n // For complex types, consider using interfaces\n\n interface UserProfile {\n\n   name: string;\n\n   email: string;\n\n }\n\n interface UserPreferences {\n\n   notifications: boolean;\n\n }\n\n interface User {\n\n   id: string;\n\n   profile: UserProfile;\n\n   preferences?: UserPreferences;\n\n }\n\n Use const Assertions for Literal Types\n Improve type inference and performance with const assertions:\n\n // Without const assertion (wider type)\n\n const colors = ['red', 'green', 'blue'];\n\n // Type: string[]\n\n // With const assertion (narrower, more precise type)\n\n const colors = ['red', 'green', 'blue'] as const;\n\n // Type: readonly [\"red\", \"green\", \"blue\"]\n\n // Extract union type from const array\n\n type Color = typeof colors[number]; // \"red\" | \"green\" | \"blue\"\n\n // Objects with const assertions\n\n const config = {\n\n   apiUrl: 'https://api.example.com',\n\n   timeout: 5000,\n\n   features: ['auth', 'notifications'],\n\n } as const;\n\n // Type is:\n\n // {\n\n // readonly apiUrl: \"https://api.example.com\";\n\n // readonly timeout: 5000;\n\n // readonly features: readonly [\"auth\", \"notifications\"];\n\n // }\n\n Try it Yourself »",
+                "heading": "Performance Considerations"
+            },
+            {
+                "content": "Overusing the any Type\n Avoid using `any` as it defeats TypeScript's type checking:\n\n // Bad: Loses all type safety\n\n function process(data: any) {\n\n   return data.map(item => item.name);\n\n }\n\n // Better: Use generics for type safety\n\n function process<T extends { name: string }>(items: T[]) {\n\n   return items.map(item => item.name);\n\n }\n\n // Best: Use specific types when possible\n\n interface User {\n\n   name: string;\n\n   age: number;\n\n }\n\n function processUsers(users: User[]) {\n\n   return users.map(user => user.name);\n\n }\n\n Not Using Strict Mode\n Always enable strict mode in your `tsconfig.json`:\n\n // tsconfig.json\n\n {\n\n   \"compilerOptions\": {\n\n     \"strict\": true,\n\n     /* Additional strictness flags */\n\n     \"noImplicitAny\": true,\n\n     \"strictNullChecks\": true,\n\n     \"strictFunctionTypes\": true,\n\n     \"strictBindCallApply\": true,\n\n     \"strictPropertyInitialization\": true,\n\n     \"noImplicitThis\": true,\n\n     \"alwaysStrict\": true\n\n   }\n\n }\n\n Ignoring Type Inference\n Let TypeScript infer types when possible:\n\n // Redundant type annotation\n\n const name: string = 'John';\n\n // Let TypeScript infer the type\n\n const name = 'John'; // TypeScript knows it's a string\n\n // Redundant return type\n\n function add(a: number, b: number): number {\n\n   return a + b;\n\n }\n\n // Let TypeScript infer the return type\n\n function add(a: number, b: number) {\n\n   return a + b; // TypeScript infers number\n\n }\n\n Not Using Type Guards\n Use type guards to narrow types safely:\n\n // Without type guard\n\n function process(input: string | number) {\n\n   return input.toUpperCase(); // Error: toUpperCase doesn't exist on number\n\n }\n\n // With type guard\n\n function isString(value: unknown): value is string {\n\n   return typeof value === 'string';\n\n }\n\n function process(input: string | number) {\n\n   if (isString(input)) {\n\n     return input.toUpperCase(); // TypeScript knows input is string here\n\n   } else {\n\n     return input.toFixed(2); // TypeScript knows input is number here\n\n   }\n\n }\n\n // Built-in type guards\n\n if (typeof value === 'string') { /* value is string */ }\n\n if (value instanceof Date) { /* value is Date */ }\n\n if ('id' in user) { /* user has id property */ }\n\n Try it Yourself »\n\n Not Handling null and undefined\n Always handle potential `null` or `undefined` values:\n\n // Bad: Potential runtime error\n\n function getLength(str: string | null) {\n\n   return str.length; // Error: Object is possibly 'null'\n\n }\n\n // Good: Null check\n\n function getLength(str: string | null) {\n\n   if (str === null) return 0;\n\n   return str.length;\n\n }\n\n // Better: Use optional chaining and nullish coalescing\n\n function getLength(str: string | null) {\n\n   return str?.length ?? 0;\n\n }\n\n // For arrays\n\n const names: string[] | undefined = [];\n\n const count = names?.length ?? 0; // Safely handle undefined\n\n // For object properties\n\n interface User {\n\n   profile?: {\n\n     name?: string;\n\n   };\n\n }\n\n const user: User = {};\n\n const name = user.profile?.name ?? 'Anonymous';\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Common Mistakes to Avoid"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:08:45Z",
+        "subject": "TypeScript",
+        "title": "TypeScript Best Practices"
+    },
+    {
+        "url": "https://www.w3schools.com/typescript/typescript_exam.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "typescript_typescript_exam",
+        "code_examples": [],
+        "category": "JavaScript & Frontend",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "TS HOME\nTS Introduction\nTS Get Started\nTS Simple Types\nTS Explicit & Inference\nTS Special Types\nTS Arrays\nTS Tuples\nTS Object Types\nTS Enums\nTS Aliases & Interfaces\nTS Union Types\nTS Functions\nTS Casting\nTS Classes\nTS Basic Generics\nTS Utility Types\nTS Keyof\nTS Null\nTS Definitely Typed\nTS 5 Updates\nTS Configuration\nTS with Node.js\nTS with React\nTS Tooling\nTS Advanced Types\nTS Type Guards\nTS Conditional Types\nTS Mapped Types\nTS Type Inference\nTS Literal Types\nTS Namespaces\nTS Index Signatures\nTS Declaration Merging\nTS Async Programming\nTS Decorators\nTS in JS Projects\nTS Migration\nTS Error Handling\nTS Best Practices",
+                "heading": "TypeScript tutorial"
+            },
+            {
+                "content": "TS Certificate",
+                "heading": "TypeScript Cert"
+            },
+            {
+                "content": "TS Editor\nTS Exercises\nTS Quiz\nTS Practice Problems\nTS Syllabus\nTS Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\n TypeScript Certificate\n\n ❮ Previous\n Next ❯\n\n HTML Certification",
+                "heading": "TypeScript Exercises"
+            },
+            {
+                "content": "Prepare online at your own pace, take the exam when you are ready, and add a verified credential to your CV, LinkedIn profile, and portfolio.\n\n Designed for students, developers, and professionals who want a practical way to document their knowledge.\n\n Get Your HTML Certificate »\n\n Online exam. No expiration. Shareable verification link.\n\n w\n 3\n s\n c\n h\n o\n o\n l\n s\n\n C\n E\n R\n T\n I\n F\n I\n E\n D\n\n .\n\n 2\n 0\n 2\n 6",
+                "heading": "Get Certified in HTML"
+            },
+            {
+                "content": "Any student or professional working in digital fields can benefit from documenting their skills with a certificate.\n\n Certifications help demonstrate knowledge to current or future employers, clients, and collaborators in an increasingly competitive market.",
+                "heading": "Why Get Certified?"
+            },
+            {
+                "content": "W3Schools has more than two decades of experience teaching coding online.\n\n Our certificates provide a practical and professional way to show your skills in a format that is easy to verify and share.",
+                "heading": "Trusted Learning Platform"
+            },
+            {
+                "content": "The price is a small fraction of the cost of traditional education.\n\n You can prepare on your own schedule and take the exam when you are ready.",
+                "heading": "Affordable and Flexible"
+            },
+            {
+                "content": "Each certificate includes a unique verification link that can be shared with employers, clients, and your network.\n\n Download your certificate to showcase it, and validate it using the unique link or QR code.\n\n See how it looks in this example.",
+                "heading": "Get Your Certificate and Share It"
+            },
+            {
+                "content": "Fee\n\n 95 USD\n\n Achievable certification levels\n\n Intermediate (40%)\nAdvanced (75%)\nProfessional (90%)\n\n Number of questions\n\n Adaptive, 60 on average\n\n Requirement to pass\n\n Minimum 40% - Intermediate level\n\n Time limit\n\n 60 minutes\n\n Number of attempts\n\n 3\n\n Exam deadline\n\n None\n\n Certification expiration\n\n None\n\n Format\n\n Online, multiple choice\n\n Register Now »\n\n Have any questions? Send us an e-mail: sales@w3schools.com",
+                "heading": "Exam Overview"
+            },
+            {
+                "content": "Getting a certificate shows your commitment to improving your skills.\n\n You can add the certificate to your CV, resume, LinkedIn profile, and other professional platforms.\n\n It can help support career growth by making it easier to show your knowledge when applying for jobs, freelance work, or larger projects.",
+                "heading": "Advance Faster in Your Career"
+            },
+            {
+                "content": "Get Certified",
+                "heading": "Document Your Knowledge Today!"
+            },
+            {
+                "content": "01\n\n Study HTML for free at W3Schools.com\n\n 02\n\n Learn at your own speed and focus on the topics you need most\n\n 03\n\n Practice with quizzes and exercises\n\n 04\n\n Apply by paying the exam fee\n\n 05\n\n Take the exam online at any time and from any location",
+                "heading": "How It Works"
+            },
+            {
+                "content": "Getting a certificate shows initiative, helps you build credibility, and gives you a professional way to present your HTML knowledge.\n\n Get Your HTML Certificate »",
+                "heading": "Document Your Skills"
+            },
+            {
+                "content": "Are you an educator, manager, or business owner looking for courses or certifications for a group?\n\n We work with schools, companies, and organizations around the world.\n\n Send us an e-mail: sales@w3schools.com\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Looking to Add Multiple Users?"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:08:45Z",
+        "subject": "TypeScript",
+        "title": "TypeScript Certificate"
+    },
+    {
+        "url": "https://www.w3schools.com/typescript/typescript_editor.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "typescript_typescript_editor",
+        "code_examples": [],
+        "category": "JavaScript & Frontend",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "TS HOME\nTS Introduction\nTS Get Started\nTS Simple Types\nTS Explicit & Inference\nTS Special Types\nTS Arrays\nTS Tuples\nTS Object Types\nTS Enums\nTS Aliases & Interfaces\nTS Union Types\nTS Functions\nTS Casting\nTS Classes\nTS Basic Generics\nTS Utility Types\nTS Keyof\nTS Null\nTS Definitely Typed\nTS 5 Updates\nTS Configuration\nTS with Node.js\nTS with React\nTS Tooling\nTS Advanced Types\nTS Type Guards\nTS Conditional Types\nTS Mapped Types\nTS Type Inference\nTS Literal Types\nTS Namespaces\nTS Index Signatures\nTS Declaration Merging\nTS Async Programming\nTS Decorators\nTS in JS Projects\nTS Migration\nTS Error Handling\nTS Best Practices",
+                "heading": "TypeScript tutorial"
+            },
+            {
+                "content": "TS Certificate",
+                "heading": "TypeScript Cert"
+            },
+            {
+                "content": "TS Editor\nTS Exercises\nTS Quiz\nTS Practice Problems\nTS Syllabus\nTS Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\n TypeScript Online Editor\n\n ❮ Previous\n Next ❯",
+                "heading": "TypeScript Exercises"
+            },
+            {
+                "content": "With our online TypeScript editor, you can edit TypeScript code, and view the result in your browser.\n\nconsole.log('Hello World!');\n\nHello World!\n\n Try it Yourself »\n\nClick on the \"Try it Yourself\" button to see how it works.",
+                "heading": "TypeScript Editor"
+            },
+            {
+                "content": "If you want to create your own website or build TypeScript applications, W3Schools Spaces gives you an easy place to write, run, manage, and publish code online.\n\n If you don't know TypeScript, we suggest that you read our TypeScript Tutorial from scratch.\n\n If you don't know JavaScript, we suggest that you read our JavaScript Tutorial from scratch.\n\n If you don't know Node.js, we suggest that you read our Node.js Tutorial from scratch.\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Build and Publish TypeScript Projects"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:08:45Z",
+        "subject": "TypeScript",
+        "title": "TypeScript Online Editor"
+    },
+    {
+        "url": "https://www.w3schools.com/typescript/typescript_exercises.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "typescript_typescript_exercises",
+        "code_examples": [],
+        "category": "JavaScript & Frontend",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "TS HOME\nTS Introduction\nTS Get Started\nTS Simple Types\nTS Explicit & Inference\nTS Special Types\nTS Arrays\nTS Tuples\nTS Object Types\nTS Enums\nTS Aliases & Interfaces\nTS Union Types\nTS Functions\nTS Casting\nTS Classes\nTS Basic Generics\nTS Utility Types\nTS Keyof\nTS Null\nTS Definitely Typed\nTS 5 Updates\nTS Configuration\nTS with Node.js\nTS with React\nTS Tooling\nTS Advanced Types\nTS Type Guards\nTS Conditional Types\nTS Mapped Types\nTS Type Inference\nTS Literal Types\nTS Namespaces\nTS Index Signatures\nTS Declaration Merging\nTS Async Programming\nTS Decorators\nTS in JS Projects\nTS Migration\nTS Error Handling\nTS Best Practices",
+                "heading": "TypeScript tutorial"
+            },
+            {
+                "content": "TS Certificate",
+                "heading": "TypeScript Cert"
+            },
+            {
+                "content": "TS Editor\nTS Exercises\nTS Quiz\nTS Practice Problems\nTS Syllabus\nTS Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\n TypeScript Exercises\n\n❮ Previous\nNext ❯\n\nTest your TypeScript skills with exercises from all categories:",
+                "heading": "TypeScript Exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "Introduction3 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "Get Started3 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "Simple Types3 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "Explicit Types and Inference3 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "Special Types3 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "Arrays3 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "Tuples2 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "Object Types3 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "Enums3 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "Aliases & Interfaces3 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "Union Types3 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "Functions4 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "Casting4 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "Classes4 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "Basic Generics3 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "Utility Types4 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "Keyof4 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "Null3 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "Definitely Typed2 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "TypeScript 5 Updates2 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "Configuration3 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "Node.js3 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "React2 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "Tooling2 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "Advanced Types3 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "Type Guards4 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "Conditional Types3 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "Mapped Types4 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "Type Inference3 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "Literal Types4 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "Namespaces4 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "Index Signatures4 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "Declaration Merging3 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "Async4 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "Decorators4 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "JSDoc4 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "Migration4 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "Error Handling4 exercises"
+            },
+            {
+                "content": "OpenDone",
+                "heading": "Best Practices4 exercises"
+            },
+            {
+                "content": "If you haven't already, sign up to become a W3Schooler, and get points for every exercise you complete.\n\nAs a logged on W3Schools user you will have access to many features like having your own web page,\ntrack your learning progress,\nreceive personal guided paths, and\nmore.",
+                "heading": "Log in to track your progress"
+            },
+            {
+                "content": "The exercises are a mix of \"multiple choice\" and \"fill in the blanks\" questions. \nThere are between 3 and 9 questions in each category.\nThe answer can be found in the corresponding tutorial chapter. If you're stuck, \nor answer wrong, you can try again or hit the \"Show Answer\" button to see the correct answer.\n\n If you don't know TypeScript, we suggest that you read our TypeScript Tutorial from scratch.\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "The Exercise"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:08:46Z",
+        "subject": "TypeScript",
+        "title": "TypeScript Exercises"
+    },
+    {
+        "url": "https://www.w3schools.com/typescript/typescript_quiz.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "typescript_typescript_quiz",
+        "code_examples": [],
+        "category": "JavaScript & Frontend",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "TS HOME\nTS Introduction\nTS Get Started\nTS Simple Types\nTS Explicit & Inference\nTS Special Types\nTS Arrays\nTS Tuples\nTS Object Types\nTS Enums\nTS Aliases & Interfaces\nTS Union Types\nTS Functions\nTS Casting\nTS Classes\nTS Basic Generics\nTS Utility Types\nTS Keyof\nTS Null\nTS Definitely Typed\nTS 5 Updates\nTS Configuration\nTS with Node.js\nTS with React\nTS Tooling\nTS Advanced Types\nTS Type Guards\nTS Conditional Types\nTS Mapped Types\nTS Type Inference\nTS Literal Types\nTS Namespaces\nTS Index Signatures\nTS Declaration Merging\nTS Async Programming\nTS Decorators\nTS in JS Projects\nTS Migration\nTS Error Handling\nTS Best Practices",
+                "heading": "TypeScript tutorial"
+            },
+            {
+                "content": "TS Certificate",
+                "heading": "TypeScript Cert"
+            },
+            {
+                "content": "TS Editor\nTS Exercises\nTS Quiz\nTS Practice Problems\nTS Syllabus\nTS Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\n TypeScript Quiz\n\n ❮ Previous\n Next ❯\n\nYou can test your TypeScript skills with W3Schools' Quiz.",
+                "heading": "TypeScript Exercises"
+            },
+            {
+                "content": "The test contains 25 questions and there is no time limit.\n\nThe test is not official, it's just a nice way to see how much you know, or don't know, about TypeScript.",
+                "heading": "The Test"
+            },
+            {
+                "content": "You will get 1 point for\neach correct answer.\n\nAt the end of the Quiz, your total score will be displayed.\nMaximum score is 25 points.",
+                "heading": "Count Your Score"
+            },
+            {
+                "content": "Good luck!\n\nStart the TypeScript Quiz ❯\n\n If you don't know TypeScript, we suggest that you read our TypeScript Tutorial from scratch.\n\n Course Certification",
+                "heading": "Start the Quiz"
+            },
+            {
+                "content": "Complete the W3Schools coding course, strengthen your knowledge, and earn a certificate you can add to your CV, portfolio, and LinkedIn profile.\n\n Get Certified Today\n\n W3Schools Certificate\n\n Coding\n\n Learn it. Practice it. Prove it.\n\n w\n 3\n s\n c\n h\n o\n o\n l\n s\n\n C\n E\n R\n T\n I\n F\n I\n E\n D\n\n .\n\n 2\n 0\n 2\n 6\n\n -->",
+                "heading": "Get Certified in coding"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:08:46Z",
+        "subject": "TypeScript",
+        "title": "TypeScript Quiz"
+    },
+    {
+        "url": "https://www.w3schools.com/typescript/typescript_practice.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "typescript_typescript_practice",
+        "code_examples": [],
+        "category": "JavaScript & Frontend",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "TS HOME\nTS Introduction\nTS Get Started\nTS Simple Types\nTS Explicit & Inference\nTS Special Types\nTS Arrays\nTS Tuples\nTS Object Types\nTS Enums\nTS Aliases & Interfaces\nTS Union Types\nTS Functions\nTS Casting\nTS Classes\nTS Basic Generics\nTS Utility Types\nTS Keyof\nTS Null\nTS Definitely Typed\nTS 5 Updates\nTS Configuration\nTS with Node.js\nTS with React\nTS Tooling\nTS Advanced Types\nTS Type Guards\nTS Conditional Types\nTS Mapped Types\nTS Type Inference\nTS Literal Types\nTS Namespaces\nTS Index Signatures\nTS Declaration Merging\nTS Async Programming\nTS Decorators\nTS in JS Projects\nTS Migration\nTS Error Handling\nTS Best Practices",
+                "heading": "TypeScript tutorial"
+            },
+            {
+                "content": "TS Certificate",
+                "heading": "TypeScript Cert"
+            },
+            {
+                "content": "TS Editor\nTS Exercises\nTS Quiz\nTS Practice Problems\nTS Syllabus\nTS Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\n Practice TypeScript Coding Problems\n\n❮ Previous\nNext ❯\n\n ×\n\n Sign in required\n Sign in to your W3Schools account to unlock all problems, earn XP, and track your progress.\n\n Sign in\n Create account\n\nImprove your skills by solving real TypeScript coding problems.\n\nWrite code, submit, and get instant feedback.\n\n Weekly Problem",
+                "heading": "TypeScript Exercises"
+            },
+            {
+                "content": "Find the missing number in a sequence from 1 to N.\n\n Medium\n 50 XP\n\n Solve the Problem\n\n main.py\n\nn = int(input())\nnumbers = [int(input()) for _ in range(n - 1)]\n\n# Find and print the missing number\n\n Subscribe to Weekly Practice Problem\n Get the latest coding practice problem delivered to your inbox every week.\n\n Subscribe",
+                "heading": "Missing Number"
+            },
+            {
+                "content": "Problem\n Description\n Difficulty\n XP\n\n Say Hello\n Read a name from input and print a greeting.\n Easy\n 20 XP\n\n Celsius to Fahrenheit\n Convert a temperature from Celsius to Fahrenheit.\n Easy\n 20 XP\n\n Even or Odd\n Check if a number is even or odd.\n Easy\n 20 XP\n\n-->\n<!--",
+                "heading": "More Practice Problems"
+            },
+            {
+                "content": "Sign in to unlock all Practice Problems.\n\n Problem\n Description\n Difficulty\n XP\n\n-->\n\n Make a Username \n Create a username and initials from a first and last name.\n Easy\n 20 XP\n\n Voting Age \n Determine if a person is old enough to vote.\n Easy\n 20 XP\n\n Grade Calculator \n Convert a score into a letter grade.\n Easy\n 20 XP\n\n Multiplication Table \n Print the multiplication table for a given number.\n Easy\n 20 XP\n\n Factorial \n Create a function that calculates the factorial of a number.\n Easy\n 20 XP\n\n Sum of Numbers \n Read a list of numbers and calculate their sum.\n Easy\n 20 XP\n\n Area Calculator \n Calculate the area of a rectangle, triangle, or circle.\n Easy\n 20 XP\n\n Shopping Receipt \n Read item details from input and print a short receipt.\n Easy\n 20 XP\n\n Personal Info \n Read personal details from input and display them.\n Easy\n 20 XP\n\n Swap Values \n Read two values and print them in swapped order.\n Easy\n 20 XP\n\n Rectangle Border \n Print a rectangle border made of stars.\n Easy\n 20 XP\n\n Repeat Message \n Read a message and a number, then print the message that many times.\n Easy\n 20 XP\n\n Currency Exchange \n Calculate a currency exchange from an amount and rate.\n Easy\n 20 XP\n\n BMI Calculator \n Calculate Body Mass Index from weight and height.\n Easy\n 20 XP\n\n Circle Properties \n Calculate the circumference and area of a circle.\n Easy\n 20 XP\n\n Simple Calculator \n Perform basic arithmetic on two numbers.\n Easy\n 20 XP\n\n Discount Price \n Calculate a discounted price from a price and discount percentage.\n Easy\n 20 XP\n\n Split the Bill \n Split a total amount equally among a group of people.\n Easy\n 20 XP\n\n Digit Extractor \n Extract the individual digits of a 3-digit number.\n Easy\n 20 XP\n\n Word Counter \n Count the number of words in a sentence.\n Easy\n 20 XP\n\n Shout It Out \n Convert a string to uppercase and print its length.\n Easy\n 20 XP\n\n First and Last \n Print the first and last character of a word.\n Easy\n 20 XP\n\n Repeat String \n Read a string and a number, then print the string repeated that many times.\n Easy\n 20 XP\n\n Range Checker \n Check if a number falls within a given range.\n Easy\n 20 XP\n\n Password Check \n Check if a password is long enough.\n Easy\n 20 XP\n\n Ticket Price \n Determine the ticket type and price based on age.\n Easy\n 20 XP\n\n Positive Negative Zero \n Check if a number is positive, negative, or zero.\n Easy\n 20 XP\n\n Smallest of Three \n Find the smallest of three numbers.\n Easy\n 20 XP\n\n Countdown \n Count down from a number to 1 and print Go!\n Easy\n 20 XP\n\n FizzBuzz \n Implement the classic FizzBuzz challenge.\n Easy\n 20 XP\n\n Sum 1 to N \n Calculate the sum of all numbers from 1 to N.\n Easy\n 20 XP\n\n Star Triangle \n Print a right triangle made of stars.\n Easy\n 20 XP\n\n Tip Calculator \n Create a tip calculator function for a restaurant bill.\n Easy\n 20 XP\n\n Power Function \n Write a function that calculates the power of a number.\n Easy\n 20 XP\n\n Average Score \n Read a list of scores and calculate their average.\n Easy\n 20 XP\n\n Count Matches \n Count how many numbers in a list match a target value.\n Easy\n 20 XP\n\n Min and Max \n Find the smallest and largest numbers in a list.\n Easy\n 20 XP\n\n Absolute Difference \n Calculate the absolute difference between two numbers.\n Easy\n 20 XP\n\n Round Up or Down \n Round a decimal number to the nearest whole number.\n Easy\n 20 XP\n\n Leap Year \n Determine if a given year is a leap year.\n Medium\n 50 XP\n\n Day of Week \n Convert a day number to a day name.\n Medium\n 50 XP\n\n Triangle Classifier \n Classify a triangle based on its side lengths.\n Medium\n 50 XP\n\n Time Converter \n Convert a number of seconds into hours, minutes, and seconds.\n Medium\n 50 XP\n\n Reverse Words \n Reverse the order of words in a sentence.\n Medium\n 50 XP\n\n Palindrome Check \n Check if a word reads the same forwards and backwards.\n Medium\n 50 XP\n\n Count Vowels \n Count the number of vowels in a string.\n Medium\n 50 XP\n\n Title Case \n Capitalize the first letter of each word in a sentence.\n Medium\n 50 XP\n\n Remove Duplicates \n Remove consecutive duplicate characters from a string.\n Medium\n 50 XP\n\n Longest Word \n Find the longest word in a sentence.\n Medium\n 50 XP\n\n Access Control \n Determine if a person gets access based on role, age, and membership.\n Medium\n 50 XP\n\n Digit Sum \n Calculate the sum of all digits in a number.\n Medium\n 50 XP\n\n Number Pyramid \n Print a pyramid of numbers.\n Medium\n 50 XP\n\n Collatz Steps \n Count the steps to reach 1 using the Collatz sequence.\n Medium\n 50 XP\n\n Prime Check \n Check if a number is a prime number.\n Medium\n 50 XP\n\n Reverse Number \n Reverse the digits of a number.\n Medium\n 50 XP\n\n Is Palindrome Function \n Write a function that checks if a word is a palindrome.\n Medium\n 50 XP\n\n Min of Three \n Write a function that returns the smallest of three numbers.\n Medium\n 50 XP\n\n Count Digits \n Write a function that counts the number of digits in a number.\n Medium\n 50 XP\n\n Recursive Sum \n Write a recursive function to sum numbers from 1 to N.\n Medium\n 50 XP\n\n Array Map Function \n Write a function that doubles every number in a list.\n Medium\n 50 XP\n\n Find the Largest \n Read a list of numbers and find the largest one.\n Medium\n 50 XP\n\n Reverse a List \n Read a list of numbers and print them in reverse order.\n Medium\n 50 XP\n\n Second Largest \n Find the second largest number in a list.\n Medium\n 50 XP\n\n Running Sum \n Print the running (cumulative) sum of a list of numbers.\n Medium\n 50 XP\n\n Count Above Average \n Count how many numbers are above the average.\n Medium\n 50 XP\n\n Longest Streak \n Find the longest consecutive streak of the same number.\n Medium\n 50 XP\n\n Greatest Common Divisor \n Find the greatest common divisor (GCD) of two numbers.\n Medium\n 50 XP\n\n Fibonacci \n Print the first N numbers of the Fibonacci sequence.\n Medium\n 50 XP\n\n Prime Factors \n Find all prime factors of a number.\n Medium\n 50 XP\n\n Power of Two \n Check if a number is a power of 2.\n Medium\n 50 XP\n\n Sum of Squares \n Calculate the sum of squares from 1 to N.\n Medium\n 50 XP\n\n LCM Calculator \n Calculate the least common multiple of two numbers.\n Medium\n 50 XP\n\n Perfect Number \n Check if a number is a perfect number.\n Medium\n 50 XP\n\n Sort Three Numbers \n Read three numbers and print them in ascending order.\n Medium\n 50 XP\n\n Sort Numbers \n Read a list of numbers and print them sorted.\n Medium\n 50 XP\n\n Sort Words \n Read a list of words and print them sorted alphabetically.\n Medium\n 50 XP\n\n Letter Frequency \n Count how many times each letter appears in a word.\n Medium\n 50 XP\n\n Most Common Char \n Find the character that appears most often in a string.\n Medium\n 50 XP\n\n Digit Frequency \n Count how many times each digit appears in a number.\n Medium\n 50 XP\n\n Caesar Cipher \n Encrypt a message by shifting each letter in the alphabet.\n Hard\n 100 XP\n\n Anagram Check \n Check if two words are anagrams of each other.\n Hard\n 100 XP\n\n Run Length Encoding \n Compress a string using run-length encoding.\n Hard\n 100 XP\n\n Date Validator \n Check if a given date is valid.\n Hard\n 100 XP\n\n Diamond Pattern \n Print a diamond pattern of stars.\n Hard\n 100 XP\n\n Number to Binary \n Convert a decimal number to binary.\n Hard\n 100 XP\n\n Pascal Triangle Row \n Print a specific row of Pascal's triangle.\n Hard\n 100 XP\n\n Remove Duplicates \n Remove duplicate numbers from a list while keeping order.\n Hard\n 100 XP\n\n Rotate Left \n Rotate a list of numbers to the left by K positions.\n Hard\n 100 XP\n\n Merge Sorted \n Merge two sorted lists into one sorted list.\n Hard\n 100 XP\n\n Pair Sum \n Find the first pair of numbers that add up to a target.\n Hard\n 100 XP\n\n GCD Function \n Write a recursive function to find the GCD of two numbers.\n Hard\n 100 XP\n\n Number Base Convert \n Convert a number from one base to another.\n Hard\n 100 XP\n\n Bubble Sort \n Implement bubble sort and count the number of swaps.\n Hard\n 100 XP\n\n Selection Sort \n Implement selection sort and print each step.\n Hard\n 100 XP\n\n Insertion Sort \n Implement insertion sort and print each step.\n Hard\n 100 XP\n\n Word Frequency \n Count how many times each word appears in a sentence.\n Hard\n 100 XP\n\n Unique Elements Count \n Count how many unique numbers appear in a list.\n Hard\n 100 XP\n\n Sign in to access all Practice Problems and track your progress.\n\n Sign In",
+                "heading": "More Practice Problems"
+            },
+            {
+                "content": "Problem\n Description\n Difficulty\n XP\n\n Double or Nothing \n Double a number if it is positive, otherwise print zero.\n Easy\n 20 XP\n\n Balanced Brackets \n Check if a string of brackets is balanced.\n Medium\n 50 XP\n\n Matrix Diagonal Sum \n Calculate the sum of both diagonals of a square matrix.\n Hard\n 100 XP\n\n Sum of Digits \n Calculate the sum of all digits in a given number.\n Easy\n 20 XP\n\n Find the Duplicate \n Find the duplicate number in an array of integers.\n Medium\n 50 XP\n\n Maximum Subarray Sum \n Find the contiguous subarray with the largest sum.\n Hard\n 100 XP\n\n Reverse String \n Reverse a string without using built-in reverse functions.\n Easy\n 20 XP\n\n Count Consonants \n Count the number of consonants in a string.\n Medium\n 50 XP\n\n Sum of Primes \n Find the sum of all prime numbers up to N using a sieve.\n Hard\n 100 XP\n\n Capitalize Words \n Capitalize the first letter of every word in a sentence.\n Easy\n 20 XP\n\n Two Sum \n Find two numbers in a list that add up to a target.\n Medium\n 50 XP\n\n Matrix Transpose \n Transpose an N×N matrix.\n Hard\n 100 XP\n\n Count Words \n Count the number of words in a sentence.\n Easy\n 20 XP\n\n Common Characters \n Find characters that appear in both strings, in sorted order.\n Medium\n 50 XP\n\n Spiral Order \n Print the elements of a matrix in spiral order.\n Hard\n 100 XP\n\n Number Pattern \n Print a right-aligned triangle of row numbers.\n Easy\n 20 XP",
+                "heading": "Past Weekly Challenges"
+            },
+            {
+                "content": "Each challenge gives you starter code in TypeScript. Your program reads input and prints the correct output.\n\nWhen you submit, your code is tested against multiple hidden test cases with different inputs.\n\nYour score is based on how many tests pass. Partial credit is given for partially correct solutions.",
+                "heading": "How it Works"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:08:46Z",
+        "subject": "TypeScript",
+        "title": "Practice TypeScript Coding Problems"
+    },
+    {
+        "url": "https://www.w3schools.com/typescript/typescript_syllabus.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "typescript_typescript_syllabus",
+        "code_examples": [
+            {
+                "code": "console.log('Hello World!');",
+                "language": "typescript",
+                "heading": "Example",
+                "tryit_url": null
+            }
+        ],
+        "category": "JavaScript & Frontend",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "TS HOME\nTS Introduction\nTS Get Started\nTS Simple Types\nTS Explicit & Inference\nTS Special Types\nTS Arrays\nTS Tuples\nTS Object Types\nTS Enums\nTS Aliases & Interfaces\nTS Union Types\nTS Functions\nTS Casting\nTS Classes\nTS Basic Generics\nTS Utility Types\nTS Keyof\nTS Null\nTS Definitely Typed\nTS 5 Updates\nTS Configuration\nTS with Node.js\nTS with React\nTS Tooling\nTS Advanced Types\nTS Type Guards\nTS Conditional Types\nTS Mapped Types\nTS Type Inference\nTS Literal Types\nTS Namespaces\nTS Index Signatures\nTS Declaration Merging\nTS Async Programming\nTS Decorators\nTS in JS Projects\nTS Migration\nTS Error Handling\nTS Best Practices",
+                "heading": "TypeScript tutorial"
+            },
+            {
+                "content": "TS Certificate",
+                "heading": "TypeScript Cert"
+            },
+            {
+                "content": "TS Editor\nTS Exercises\nTS Quiz\nTS Practice Problems\nTS Syllabus\nTS Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\n TypeScript Syllabus\n\n ❮ Previous\n Next ❯",
+                "heading": "TypeScript Exercises"
+            },
+            {
+                "content": "The W3Schools TypeScript Tutorial is comprehensive and beginner-friendly.\n\nIt will give you a fundamental knowledge of TypeScript.\n\nIt is designed for beginners and requires only basic JavaScript knowledge.\n\nThe content has been carefully made to be bite-sized, simple, and easy to understand.\n\nThe content has been proven by millions of users over the years. It is updated and improved frequently.\n\nThe syllabus outline and its sequence are structured so you can learn TypeScript step by step, from the introduction to advanced features.\n\nGet Started With TypeScript »",
+                "heading": "Introduction"
+            },
+            {
+                "content": "Learn what TypeScript is and how to get started\n\n Work with simple types (string, number, boolean)\n\n Use special types (any, void, never, undefined, null)\n\n Create and work with arrays and tuples\n\n Define object types and enums\n\n Use type aliases and interfaces\n\n Work with union types and functions\n\n Understand type casting and classes\n\n Use basic generics and utility types\n\nNote: Are you a teacher teaching TypeScript? W3Schools Academy is a toolbox of features that can help you teach. It offers classroom features such as pre-built study plans, classroom administration and much more. Read more about Academy here.",
+                "heading": "Learning Outcomes"
+            },
+            {
+                "content": "Web Development:\n TypeScript enhances JavaScript development with static typing.\n\n Front-end Development:\n TypeScript is widely used in Angular and other frameworks.\n\n Back-end Development:\n TypeScript can be used with Node.js for server-side code.\n\n Application Development:\n TypeScript supports building large-scale applications.\n\n Enterprise Software:\n TypeScript provides better tooling and maintainability.\n\n API Development:\n TypeScript offers strong typing for API contracts.\n\n Full-stack Development:\n TypeScript enables type safety across the stack.\n\nGet Started",
+                "heading": "Which Subjects Are TypeScript Relevant For?"
+            },
+            {
+                "content": "In this tutorial we offer different activities for you to learn TypeScript for free:\n\n Lessons\n\n Exercises\n\n Quizzes",
+                "heading": "Activities"
+            },
+            {
+                "content": "You can also create an account to track your progress.\n\nAs a signed-in user, you get access to features such as:\n\n Learning paths\n\n Sandbox and lab environments\n\n Achievements\n\n And much more!\n\nSign Up",
+                "heading": "Sign in to Track Progress"
+            },
+            {
+                "content": "TS HOME\n\n TS Introduction\n\n TS Get Started\n\n TS Simple Types\n\n TS Special Types\n\n TS Arrays\n\n TS Tuples\n\n TS Object Types\n\n TS Enums\n\n TS Aliases & Interfaces\n\n TS Union Types\n\n TS Functions\n\n TS Casting\n\n TS Classes\n\n TS Basic Generics\n\n TS Utility Types\n\n TS Keyof\n\n TS Null\n\n TS Definitely Typed\n\n TS 5 Updates\n\nGet Started",
+                "heading": "Overview of the Modules"
+            },
+            {
+                "content": "TypeScript, like any programming language, is best learned through hands-on practice.\n\nTry this example using our editor:\n\n Example\n\n console.log('Hello World!');\n\n Try it Yourself »\n\nIf you want to explore more and host your project, we have a feature called Spaces \nthat allows you to build, test and run TypeScript applications.\n\nHere you get a secure sandbox environment called Spaces, where you can practice TypeScript code and test projects in real-time.\n\nSpaces allow you to test, build, and deploy code. This includes a W3Schools subdomain, hosting, and secure SSL certificates.\n\nSpaces require no installation and run directly in the browser.\n\nFeatures include:\n\n Collaboration\n\n File navigator\n\n Terminal & log\n\n Package manager\n\n Database\n\n Environment manager\n\n Analytics\n\nCreate a Spaces Account",
+                "heading": "Sandbox and Lab Environment"
+            },
+            {
+                "content": "W3Schools offers an end-of-pathway certification program.\n\nHere you can take exams to get certified.\n\nThe TypeScript exam is a test that summarizes the W3Schools TypeScript syllabus.\n\nAfter passing the exam you get the \"Certified TypeScript Developer\" Certification.\n\nThere are two different types of certifications:\n\nNon-adaptive\n\nAdaptive\n\nThe non-adaptive is pass or no pass.\n\nThe adaptive certification exam is adaptive and graded; students will get a grade from intermediate, advanced to professional.\n\nBuy Certificate »",
+                "heading": "TypeScript Certification"
+            },
+            {
+                "content": "Are you interested in learning how you can use W3Schools Academy to Teach \nTypeScript? \n\nWatch a demo of W3Schools Academy. You'll see how it works, and discover how it can make teaching programming easier and more engaging.\n\nWatch Demo »\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Are You a Teacher?"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:08:46Z",
+        "subject": "TypeScript",
+        "title": "TypeScript Syllabus"
+    },
+    {
+        "url": "https://www.w3schools.com/typescript/typescript_study_plan.php",
+        "summary": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.",
+        "topic_id": "typescript_typescript_study_plan",
+        "code_examples": [],
+        "category": "JavaScript & Frontend",
+        "notes_and_tips": [],
+        "sections": [
+            {
+                "content": "×\n\n ← All Topics",
+                "heading": "W3SCHOOLS TUTORIALS:"
+            },
+            {
+                "content": "×\n\n HTML\n Tag reference\n\n CSS\n Reference\n\n JavaScript\n Reference\n\n SQL\n Keyword reference\n\n Python\n Reference\n\n Java\n Reference\n\n C\n Reference\n\n C++\n Reference\n\n Colors\n Color names\n\n PHP\n Reference\n\n HTML DOM\n Reference\n\n MySQL\n Reference\n\n W3.CSS\n Reference\n\n Bootstrap 3\n Reference\n\n Bootstrap 4\n Reference\n\n Node.js\n Reference\n\n Django\n Reference\n\n jQuery\n Reference\n\n Vue\n Attributes\n\n Angular\n Reference\n\n Sass\n Reference\n\n XML\n Reference\n\n JSON\n Reference\n\n ASP\n Reference\n\n Icons\n Reference\n\n SVG\n Reference\n\n Canvas\n Reference\n\n Charsets\n Reference\n\n Emojis\n Reference\n\n AppML\n Reference\n\n W3.JS\n Reference\n\n ×\n\n Exercises\n Practice and test your skills with different exercises.\n\n Tip:\n Sign in\n to track your progress.",
+                "heading": "W3SCHOOLS REFERENCES:"
+            },
+            {
+                "content": "×\n\n HTML\n Exercises\n\n CSS\n Exercises\n\n JavaScript\n Exercises\n\n SQL\n Exercises\n\n Python\n Exercises\n\n Java\n Exercises\n\n C\n Exercises\n\n C++\n Exercises\n\n C#\n Exercises\n\n PHP\n Exercises\n\n React\n Exercises\n\n MySQL\n Exercises\n\n Excel\n Exercises\n\n DSA\n Exercises\n\n Bootstrap 3\n Exercises\n\n Bootstrap 4\n Exercises\n\n Bootstrap 5\n Exercises\n\n Node.js\n Exercises\n\n TypeScript\n Exercises\n\n Django\n Exercises\n\n PostgreSQL\n Exercises\n\n jQuery\n Exercises\n\n NumPy\n Exercises\n\n Pandas\n Exercises\n\n Angular\n Exercises\n\n Git\n Exercises\n\n MongoDB\n Exercises\n\n R\n Exercises\n\n Go\n Exercises\n\n Kotlin\n Exercises\n\n Swift\n Exercises\n\n Vue\n Exercises\n\n SciPy\n Exercises\n\n Bash\n Exercises",
+                "heading": "Select another topic:"
+            },
+            {
+                "content": "×\n\n HTML\n\n CSS\n\n JavaScript\n\n SQL\n\n Python\n\n Java\n\n C\n\n C++\n\n C#\n\n PHP\n\n React\n\n MySQL\n\n Excel\n\n DSA\n\n W3.CSS\n\n Bootstrap 3\n\n Bootstrap 4\n\n Bootstrap 5\n\n Node.js\n\n TypeScript\n\n Django\n\n PostgreSQL\n\n jQuery\n\n Vue\n\n NumPy\n\n Pandas\n\n XML\n\n Cyber Security\n\n Accessibility\n\n AngularJS\n\n Git\n\n MongoDB\n\n R\n\n Go\n\n Kotlin\n\n SASS\n\n SciPy\n\n BASH\n\n Rust",
+                "heading": "W3SCHOOLS CERTIFICATES:"
+            },
+            {
+                "content": "Dark mode\n\n \n\n Services filter input\n\n ×\n\n W3Schools offers a wide range of services and products for beginners and professionals,\n\n helping millions of people everyday to learn and master new skills.\n\n Free Tutorials\n Enjoy our free tutorials like millions of other internet users since 1999\n\n References\n Explore our selection of references covering all popular coding languages\n\n Create a Website\n\n Create your own website with\n W3Schools Spaces\n - no setup required\n\n Exercises\n Test your skills with different exercises\n\n Quizzes\n Test yourself with multiple choice questions\n\n Code Challenges\n Test your skills with interactive code challenges\n\n Get Certified\n Document your knowledge\n\n Log in / Sign Up\n Create an account to track your progress\n\n League\n Earn XP and climb the ranks with different challenges\n\n Upgrade\n Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)\n\n Where To Start\n Not sure where you want to start? Follow our guided path\n\n Code Editor (Try it)\n With our online code editor, you can edit code and view the result in your browser\n\n Bootcamps\n Learn from passionate instructors through live online sessions\n\n Templates\n We have created a bunch of responsive website templates you can use - for free!\n\n Web Hosting\n\n Host your own website, and share it to the world with\n W3Schools Spaces\n\n Create a Server\n Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.\n\n How To's\n Large collection of code snippets for HTML, CSS and JavaScript\n\n CSS Framework\n\n Build fast and responsive sites using our free\n W3.CSS\n framework\n\n Videos\n Learn the basics of HTML in a fun and engaging video tutorial\n\n Browser Statistics\n Read long term trends of browser usage\n\n Typing Speed\n Test your typing speed\n\n AWS Training\n Learn Amazon Web Services\n\n-->\n\n Color Picker\n\n Use our color picker to find different RGB, HEX and HSL colors.\n\n Newsletter\n Join our newsletter and get access to exclusive content every month\n\n Set Goal\n Get personalized learning journey based on your current skills and goals\n\n-->\n\n Emojis Reference\n\n Check out our refererence page with all the emojis supported in HTML\n\n &#128522;\n\n Code Game\n\n W3Schools Coding Game! Help the lynx collect pine cones\n\n UTF-8 Reference\n Check out our full UTF-8 Character reference\n\n Community\n Chat, Learn and Connect with Us on Discord\n\n Academy\n Contact us about W3Schools Academy for educational institutions\n\n For Businesses\n Contact us about W3Schools Academy for your organization\n\n Contact Us\n\n About sales:\n sales@w3schools.com\n\n About errors:\n help@w3schools.com\n\n \n\n \n\n \n\n \n\n ×\n\n    ❮   \n\n      ❯   \n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n W3.CSS\n C\n C++\n C#\n HOW TO\n BOOTSTRAP\n REACT\n MYSQL\n JQUERY\n EXCEL\n XML\n DJANGO\n NUMPY\n PANDAS\n NODEJS\n DSA \n TYPESCRIPT\n SWIFT\n ANGULAR\n ANGULARJS\n GIT\n POSTGRESQL\n MONGODB\n ASP\n AI\n R \n GO\n KOTLIN\n SWIFT\n SASS\n VUE\n GEN AI\n SCIPY\n AWS\n CYBERSECURITY\n DATA SCIENCE\n INTRO TO PROGRAMMING\n HTML & CSS\n BASH\n RUST\n TOOLS\n\n HTML\n CSS\n JAVASCRIPT\n SQL\n PYTHON\n JAVA\n PHP\n BOOTSTRAP\n HOW TO\n W3.CSS\n C\n C++\n C#\n REACT\n R\n JQUERY\n DJANGO\n TYPESCRIPT\n NODEJS\n MYSQL\n SWIFT\n\n-->",
+                "heading": "All Our Services"
+            },
+            {
+                "content": "TS HOME\nTS Introduction\nTS Get Started\nTS Simple Types\nTS Explicit & Inference\nTS Special Types\nTS Arrays\nTS Tuples\nTS Object Types\nTS Enums\nTS Aliases & Interfaces\nTS Union Types\nTS Functions\nTS Casting\nTS Classes\nTS Basic Generics\nTS Utility Types\nTS Keyof\nTS Null\nTS Definitely Typed\nTS 5 Updates\nTS Configuration\nTS with Node.js\nTS with React\nTS Tooling\nTS Advanced Types\nTS Type Guards\nTS Conditional Types\nTS Mapped Types\nTS Type Inference\nTS Literal Types\nTS Namespaces\nTS Index Signatures\nTS Declaration Merging\nTS Async Programming\nTS Decorators\nTS in JS Projects\nTS Migration\nTS Error Handling\nTS Best Practices",
+                "heading": "TypeScript tutorial"
+            },
+            {
+                "content": "TS Certificate",
+                "heading": "TypeScript Cert"
+            },
+            {
+                "content": "TS Editor\nTS Exercises\nTS Quiz\nTS Practice Problems\nTS Syllabus\nTS Study Plan\n\nny:-->\n\n ny:-->\n\nny:-->\n\n TypeScript Study Plan\n\n ❮ Previous\n Next ❯",
+                "heading": "TypeScript Exercises"
+            },
+            {
+                "content": "The TypeScript study plan helps you teach your students TypeScript step-by-step.\n\nCreating a study plan for TypeScript is easy.\n\nYou can use a pre-built study plan or customize it.\n\nStudents have different skill levels. The study plans can be customized to ensure that everyone is challenged.\n\nSave time with pre-built teacher materials and study plans. Easily organize your class with a timeline from the introduction of TypeScript to the final exam.",
+                "heading": "Introduction"
+            },
+            {
+                "content": "This study plan is a feature of W3Schools Academy.\n\nW3Schools Academy is a platform that has everything you need to teach coding, all in one place.\n\nIt offers you as a teacher a toolbox of features that helps you succeed with teaching in your classroom.\n\nYou need to have an active subscription to access the study plan feature.\n\n Full Access ($49.99 / year per student)\n\n Calculate your price and order here.\n\nLearn More »\n\nAcademy also offer other features such as:\n\n Managing your classroom\n\n Tracking of student progress and reports\n\n Labs, assignments, and code challenges (prebuilt challenges or create your own ones)\n\n Auto-grading\n\n Teaching materials\n\n Certification exams\n\nGet a free demo »",
+                "heading": "W3Schools Academy"
+            },
+            {
+                "content": "W3Schools has everything you need to teach TypeScript.\n\nThe TypeScript training materials is available for you to include and use in your study plan:\n\n W3Schools TypeScript Tutorial\n\n TypeScript Exercises\n\n TypeScript Quiz\n\n TypeScript Challenges (Coding challenges)\n\n TypeScript Certification Exam (End of Pathway Exam)",
+                "heading": "Teacher Materials"
+            },
+            {
+                "content": "With the TypeScript Syllabus, your students will start with the basics, like understanding types, variables, and interfaces, and move to more advanced topics, like working with classes, generics, and modules. Each chapter includes examples, try-it-yourself sections, exercises, and quizzes to make learning easy, interactive, and fun.\n\nRead more about TypeScript Syllabus.",
+                "heading": "TypeScript Syllabus"
+            },
+            {
+                "content": "The study plan features are made to help teachers and students. They make learning easy, flexible, and fun. These features work for different types of classes, learning styles and student level.\n\n Learning Paths\n\n You can add ready-made learning paths.\n\n The learning paths are by default ordered by our recommended order.\n\n You can change the order.\n\n You can add custom activities with text, links, or multi-media files.\n\n Drag and drop or click to make changes to the path.\n\n Interactive Content\n\n Tutorials\n\n Try-its (test code snippets)\n\n Exercises\n\n Quiz\n\n Challenges\n\n Labs\n\n Timeline and Pace\n\n You can set a timeline of your study plan (e.g., 4-week, 8-week, 12-week, 24-week plans).\n\n You can decide the learning pace for your class.\n\n Different study plans can be assigned to different students in the same class.\n\n The flexibility can help to make sure that everyone is challenged.\n\n Track Student Progress\n\n There are tools to track student progress.\n\n The analytic tools include: chapter progress, exercises results, quiz results, exam results, and much more.\n\n The challenges can be auto-graded or manually graded. The results are available to you as a teacher.\n\n End of Pathway Exam\n\n The TypeScript study plan aligns with the TypeScript Certification Exam.\n\n The exam can be taken at the end of the study plan, at your selected date.\n\n The exam summarizes the TypeScript Tutorial.\n\n You get reports of the students' results.\n\n Accessibility\n\n Study plans and learning materials are accessible on desktops, tablets, and smartphones.\n\n This ensures students can learn anytime, anywhere.\n\nLearn More »",
+                "heading": "Study Plan Overview"
+            },
+            {
+                "content": "You choose the timeline and pace of your study plans.\n\nSchools have different preferences.\n\nSome would like more intensive pace, e.g. 3 weeks, others 12 or more weeks.\n\nIt is completely up to you.\n\nFor example, this is how a 3-week TypeScript study plan could look like:\n\n Week 1: Essentials\n\n Week 2: Syntax and Variables, Functions\n\n Week 3: Arrays, Tuples, Object-oriented programming, TypeScript Certification Exam\n\nImage of Sample TypeScript study plan:",
+                "heading": "Sample Study Plan"
+            },
+            {
+                "content": "Start with TypeScript Study Plans today.\n\nGet Started »",
+                "heading": "Ready to get started?"
+            },
+            {
+                "content": "Are you interested in learning how you can use W3Schools Academy to Teach TypeScript programming? \n\nWatch a demo of W3Schools Academy. You'll see how it works, and discover how it can make teaching programming easier and more engaging.\n\nWatch Demo »\n\n ❮ Previous\n Next ❯\n\n ★\n\n +1\n\n Sign in to track progress\n\n REMOVE ADS",
+                "heading": "Are You a Teacher?"
+            },
+            {
+                "content": "Ad-free learning, track your progress, earn XP, streaks, compete in leagues,\nbuild and host websites, unlock coding challenges, and much more! \n\n Earn XP\n\n Streaks\n\n Leagues\n\n Your Own Space\n\n Sign Up for Free\n\n Your Progress\n 0%\n\n 0 / 50 lessons\n\n 0 / 100 challenges\n\nPLUS\n\nSPACES\n\nGET CERTIFIED\n\nFOR TEACHERS\n\nPRACTICE\n\nCONTACT US\n\n ×",
+                "heading": "Create a W3Schools Account"
+            },
+            {
+                "content": "If you want to use W3Schools services as an educational institution, team or enterprise, send us an e-mail:\nsales@w3schools.com",
+                "heading": "Contact Sales"
+            }
+        ],
+        "extracted_at": "2026-08-09T11:08:47Z",
+        "subject": "TypeScript",
+        "title": "TypeScript Study Plan"
+    }
+];

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HRM Platform Foundation</title>
+  <meta name="description" content="Pure client-side HRM enterprise application foundation featuring hash routing, centralized storage, and reusable UI components.">
+  <meta name="keywords" content="HRM, Workflow Management, Human Resource Management, Vanilla JS, Client-Side">
+  <meta name="robots" content="index, follow">
+
+  <!-- OpenGraph Metadata -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="HRM Platform Foundation">
+  <meta property="og:description" content="Enterprise HRM Application Foundation built with HTML5, CSS3, ES6+ and LocalStorage.">
+
+  <!-- Inline SVG Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%234f46e5'%3E%3Crect width='24' height='24' rx='6' fill='%23171f30'/%3E%3Cpath d='M7 6h3v12H7zm7 0h3v12h-3zm-7 5h10v2H7z' fill='%234f46e5'/%3E%3C/svg%3E">
+
+  <!-- Modular Stylesheets -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Backdrop for mobile off-canvas drawer -->
+    <div class="sidebar-backdrop" id="sidebar-backdrop" aria-hidden="true"></div>
+
+    <!-- Application Sidebar -->
+    <aside class="sidebar" id="sidebar" aria-label="Main Navigation"></aside>
+
+    <!-- Main Content Wrapper -->
+    <div class="main-wrapper">
+      <!-- Top Application Header -->
+      <header class="top-header" id="top-header" role="banner"></header>
+
+      <!-- Scrollable Route Viewport -->
+      <main class="main-content" id="main-content" role="main">
+        <!-- Route views injected here -->
+      </main>
+    </div>
+  </div>
+
+  <!-- Modular Scripts -->
+  <script src="js/storage.js"></script>
+  <script src="js/services/notificationService.js"></script>
+  <script src="js/services/auditService.js"></script>
+  <script src="js/services/authService.js"></script>
+  <script src="js/services/userRoleService.js"></script>
+  <script src="js/services/userService.js"></script>
+  <script src="js/services/roleService.js"></script>
+  <script src="js/services/permissionService.js"></script>
+  <script src="js/services/rolePermissionService.js"></script>
+  <script src="js/services/authorizationService.js"></script>
+  <script src="js/services/workflowStepService.js"></script>
+  <script src="js/services/workflowService.js"></script>
+  <script src="js/services/approvalEngine.js"></script>
+  <script src="js/services/leaveService.js"></script>
+  <script src="js/components/toast.js"></script>
+  <script src="js/components/modal.js"></script>
+  <script src="js/components/sidebar.js"></script>
+  <script src="js/components/header.js"></script>
+  <script src="js/pages/login.js"></script>
+  <script src="js/pages/dashboard.js"></script>
+  <script src="js/pages/users.js"></script>
+  <script src="js/pages/roles.js"></script>
+  <script src="js/pages/permissions.js"></script>
+  <script src="js/pages/workflows.js"></script>
+  <script src="js/pages/leaves.js"></script>
+  <script src="js/pages/approvals.js"></script>
+  <script src="js/pages/auditLogs.js"></script>
+  <script src="js/pages/accessDenied.js"></script>
+  <script src="js/pages/notFound.js"></script>
+  <script src="js/pages/comingSoon.js"></script>
+  <script src="js/pages/settings.js"></script>
+  <script src="js/router.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

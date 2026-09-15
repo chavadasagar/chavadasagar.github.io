@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upkar Home Care Service | Interactive Caregiver Match Wizard in Bhavnagar</title>
+  <meta name="description" content="Upkar Home Care Service - Interactive Caregiver Match Wizard in Bhavnagar. Find verified maids, elderly caregivers, patient nursing & newborn baby care.">
+  <meta name="keywords" content="Upkar Home Care Bhavnagar, Caregiver Match Wizard, Maid Service Bhavnagar, Elderly Care Bhavnagar">
+  <meta name="robots" content="index, follow">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;0,700;1,400&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Announcement -->
+  <div class="top-announcement">
+    <div class="container top-announcement-content">
+      <span>🛡️ 100% VERIFIED & BACKGROUND CHECKED STAFF IN BHAVNAGAR</span>
+      <span>📍 Bhavnagar City | 📞 Helpline: +91 97260 12345</span>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="#" class="brand-logo">
+        <span class="logo-main">UPKAR</span>
+        <span class="logo-sub">HOME CARE SERVICES</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="#wizard" class="nav-link highlight-link">🤝 Caregiver Match Wizard</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#trust" class="nav-link">Why Us</a>
+        <a href="#inquiry" class="btn btn-amber nav-btn">Enquire Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-container">
+      <div class="hero-content">
+        <span class="hero-eyebrow">DEPENDABLE FAMILY & NURSING CARE</span>
+        <h1 class="hero-title">Caring for Your Home,<br><em>So You Can Care for Yours.</em></h1>
+        <div class="amber-line"></div>
+        <p class="hero-subtitle">Bhavnagar's most trusted provider of trained maids, elderly caregivers, patient nursing assistants, and newborn baby care.</p>
+        <div class="hero-actions">
+          <a href="#wizard" class="btn btn-amber btn-lg glow-btn">Find Caregiver Match Wizard 🤝</a>
+          <a href="#inquiry" class="btn btn-outline-forest btn-lg">Quick Inquiry</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OUT-OF-THE-BOX INNOVATION: CAREGIVER MATCH WIZARD -->
+  <section class="section wizard-section" id="wizard">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-label">FAMILY DECISION ASSISTANT</span>
+        <h2 class="section-title">THE UPKAR CAREGIVER MATCH WIZARD</h2>
+        <p class="section-desc">Answer 3 simple questions to get matched with pre-verified home helpers & nursing attendants in Bhavnagar!</p>
+      </div>
+
+      <div class="wizard-card-wrapper">
+        <div class="wizard-card">
+          <!-- Wizard Step 1 -->
+          <div class="wiz-step active" id="wizStep1">
+            <span class="wiz-step-tag">STEP 1 OF 3</span>
+            <h3 class="wiz-question">Who requires care in your family?</h3>
+            <div class="wiz-grid">
+              <button class="wiz-opt-btn" data-step="1" data-val="Elderly Parent">👵 Senior / Elderly Parent</button>
+              <button class="wiz-opt-btn" data-step="1" data-val="Bedridden Patient">👨‍⚕️ Bedridden / Hospital Discharge Patient</button>
+              <button class="wiz-opt-btn" data-step="1" data-val="Newborn & Mother">👶 Newborn Infant & Mother</button>
+              <button class="wiz-opt-btn" data-step="1" data-val="Domestic Maid">🧹 Housekeeping & Domestic Maid</button>
+            </div>
+          </div>
+
+          <!-- Wizard Step 2 -->
+          <div class="wiz-step" id="wizStep2">
+            <span class="wiz-step-tag">STEP 2 OF 3</span>
+            <h3 class="wiz-question">Select your preferred shift duration:</h3>
+            <div class="wiz-grid">
+              <button class="wiz-opt-btn" data-step="2" data-val="Part-Time (4 Hours/day)">⏱️ Part-Time (4 Hours Shift)</button>
+              <button class="wiz-opt-btn" data-step="2" data-val="Full-Time Day (12 Hours)">☀️ Full-Time Day (12 Hours Shift)</button>
+              <button class="wiz-opt-btn" data-step="2" data-val="24x7 Live-in Care">🌙 24x7 Live-in Residential Care</button>
+            </div>
+          </div>
+
+          <!-- Wizard Step 3 / Result -->
+          <div class="wiz-step" id="wizResultStep">
+            <span class="wiz-step-tag text-amber">MATCHED CAREGIVER POOL FOUND</span>
+            <h3 class="wiz-result-title" id="wizResultTitle">Verified Patient Attendant Caregiver</h3>
+            
+            <div class="matched-profile-box">
+              <div class="profile-badge-row">
+                <span class="p-badge">✓ Aadhaar Verified</span>
+                <span class="p-badge">✓ Police Background Checked</span>
+                <span class="p-badge">★ 4.9 Rating</span>
+              </div>
+              <p class="profile-desc" id="wizResultDesc">Trained in vital monitoring, hygiene care, feeding assistance, and daily medication administration.</p>
+            </div>
+
+            <button class="btn btn-amber btn-block btn-lg" id="wizRequestBtn">Request This Caregiver Match via WhatsApp →</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="section services-section" id="services">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-label">OUR CARE OFFERINGS</span>
+        <h2 class="section-title">HOME CARE SERVICES</h2>
+      </div>
+
+      <div class="grid grid-3">
+        <div class="service-card">
+          <div class="s-icon">🧹</div>
+          <h3 class="s-title">Domestic Maid Service</h3>
+          <p class="s-desc">Daily dusting, floor mopping, kitchen cleaning, dishwashing, and home organization.</p>
+          <a href="#inquiry" class="s-link">Enquire Now →</a>
+        </div>
+
+        <div class="service-card">
+          <div class="s-icon">👨‍⚕️</div>
+          <h3 class="s-title">Patient Care & Attendants</h3>
+          <p class="s-desc">Bedridden patient assistance, medicine reminders, hygiene care, and vital monitoring.</p>
+          <a href="#inquiry" class="s-link">Enquire Now →</a>
+        </div>
+
+        <div class="service-card">
+          <div class="s-icon">👵</div>
+          <h3 class="s-title">Elderly Companionship</h3>
+          <p class="s-desc">Compassionate daily support for senior citizens, walking assistance, and meal serving.</p>
+          <a href="#inquiry" class="s-link">Enquire Now →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Inquiry Form -->
+  <section class="section inquiry-section" id="inquiry">
+    <div class="container">
+      <div class="inquiry-card-green">
+        <div class="inquiry-header text-center">
+          <span class="section-label text-amber">CARE REQUEST</span>
+          <h2 class="section-title text-white">BOOK A HOME CAREGIVER</h2>
+        </div>
+
+        <form class="inquiry-form" id="careForm">
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="name">Your Name *</label>
+              <input type="text" id="name" required placeholder="e.g. Bhavin Shah">
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Mobile Number *</label>
+              <input type="tel" id="phone" required placeholder="e.g. 9726012345" pattern="[0-9]{10}">
+            </div>
+
+            <div class="form-group">
+              <label for="serviceType">Service Needed *</label>
+              <select id="serviceType" required>
+                <option value="">Select Service Type...</option>
+                <option value="Maid Service">Domestic Maid Service</option>
+                <option value="Patient Care">Patient Nursing Attendant</option>
+                <option value="Elderly Care">Elderly Companionship</option>
+                <option value="Baby Care">Newborn & Baby Care</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="startDate">Preferred Start Date *</label>
+              <input type="date" id="startDate" required>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-amber btn-block btn-lg">Submit Care Inquiry via WhatsApp →</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div>
+        <div class="logo-main">UPKAR</div>
+        <div class="logo-sub text-amber">HOME CARE SERVICES</div>
+        <p class="footer-copy">Trusted Home Care & Nursing Services in Bhavnagar.</p>
+      </div>
+    </div>
+    <div class="footer-bottom text-center">
+      <p>&copy; 2026 Upkar Home Care Service. All rights reserved. Developed by VyunixTech.</p>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

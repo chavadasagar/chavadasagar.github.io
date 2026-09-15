@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DKs Unisex Salon | Interactive Style Finder & Hair Spa in Bhavnagar</title>
+  <meta name="description" content="DKs Unisex Salon - Interactive style & look finder, luxury hair spa, hydrafacial & bridal salon in Ambawadi Road, Bhavnagar. 519+ 4.9 Star reviews. Book online.">
+  <meta name="keywords" content="DKs Unisex Salon Bhavnagar, Style Finder Quiz, Hair Spa Bhavnagar, Best Salon Bhavnagar, Hydrafacial Bhavnagar">
+  <meta name="robots" content="index, follow">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Announcement -->
+  <div class="top-announcement">
+    <div class="container top-announcement-content">
+      <span>★ 4.9 RATED SALON IN BHAVNAGAR · 519+ GOOGLE REVIEWS</span>
+      <span>📍 109, 1st Floor, Shivalay Complex, Ambawadi Road | ⏰ 10:00 AM – 8:00 PM</span>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="#" class="brand-logo text-center">
+        <span class="logo-main">DKs</span>
+        <span class="logo-sub">UNISEX SALON</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle Navigation">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="#style-quiz" class="nav-link highlight-link">✨ Style Finder Quiz</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#stats" class="nav-link">Why DKs</a>
+        <a href="#book" class="btn btn-gold nav-btn">Book Appointment</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 50/50 Split Hero -->
+  <section class="hero-split">
+    <div class="hero-left">
+      <div class="hero-visual-card">
+        <div class="visual-badge">LUXURY EDITORIAL CARE</div>
+        <div class="visual-tagline">"Precision cuts, hair rejuvenation, & glowing skin."</div>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="hero-content-box">
+        <span class="eyebrow">EST. 2018 · BHAVNAGAR</span>
+        <h1 class="hero-title">EXPERT CARE.<br><em>EVERY VISIT.</em></h1>
+        <div class="gold-divider"></div>
+        <p class="hero-desc">Bhavnagar's premier high-end unisex salon for precision hair styling, advanced skin treatments, and red-carpet bridal makeup.</p>
+        
+        <div class="hero-meta">
+          <span class="rating-badge">★ 4.9 Rating</span>
+          <span class="reviews-count">(519 Client Reviews)</span>
+        </div>
+
+        <div class="hero-actions">
+          <a href="#style-quiz" class="btn btn-gold btn-lg glow-btn">Find My Ideal Style Quiz ✂️</a>
+          <a href="#book" class="btn btn-outline-light btn-lg">Book Appointment</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OUT-OF-THE-BOX INNOVATION: INTERACTIVE STYLE & LOOK FINDER QUIZ -->
+  <section class="section style-quiz-section" id="style-quiz">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-label">PERSONALIZED CONSULTATION</span>
+        <h2 class="section-title">THE DKs STYLE & LOOK FINDER</h2>
+        <p class="section-subtitle">Answer 3 quick questions to discover your recommended salon ritual & price package!</p>
+      </div>
+
+      <div class="quiz-card-wrapper">
+        <div class="quiz-card">
+          <!-- Step 1 -->
+          <div class="quiz-step active" id="quizStep1">
+            <span class="step-badge">STEP 1 OF 3</span>
+            <h3 class="quiz-question">What area would you like to treat today?</h3>
+            <div class="quiz-options">
+              <button class="quiz-option-btn" data-step="1" data-val="hair">💇‍♀️ Hair Care & Styling</button>
+              <button class="quiz-option-btn" data-step="1" data-val="skin">✨ Skin & Hydrafacial</button>
+              <button class="quiz-option-btn" data-step="1" data-val="makeup">💄 Bridal & Event Makeup</button>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="quiz-step" id="quizStep2">
+            <span class="step-badge">STEP 2 OF 3</span>
+            <h3 class="quiz-question">What is your primary goal or concern?</h3>
+            <div class="quiz-options" id="quizStep2Options">
+              <!-- Dynamically populated -->
+            </div>
+          </div>
+
+          <!-- Step 3 / Result -->
+          <div class="quiz-step" id="quizResultStep">
+            <span class="step-badge text-gold">MATCHED RECOMMENDATION</span>
+            <h3 class="quiz-result-title" id="quizResultTitle">Kérastase Deep Hair Spa</h3>
+            <p class="quiz-result-desc" id="quizResultDesc">Intensive hair mask treatment with scalp massage, steam therapy, and blowout styling.</p>
+            <div class="quiz-price-tag" id="quizResultPrice">₹ 1,499</div>
+            <button class="btn btn-gold btn-block btn-lg" id="quizBookBtn">Book Recommended Treatment →</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="section services-section" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">SALON MENU</span>
+        <h2 class="section-title">OUR CURATED SERVICES</h2>
+      </div>
+
+      <!-- Tab Filter Bar -->
+      <div class="service-tabs-wrapper">
+        <div class="service-tabs" id="serviceTabs">
+          <button class="tab-pill active" data-tab="hair">Hair Styling & Spa</button>
+          <button class="tab-pill" data-tab="skin">Skin & Facials</button>
+          <button class="tab-pill" data-tab="makeup">Bridal & Makeup</button>
+          <button class="tab-pill" data-tab="nails">Nails & Pedicure</button>
+          <button class="tab-pill" data-tab="kids">Grooming & Kids</button>
+        </div>
+      </div>
+
+      <!-- Service Cards Grid -->
+      <div class="grid grid-3" id="serviceGrid">
+        <!-- Hair 1 -->
+        <div class="service-card" data-category="hair">
+          <span class="service-label">HAIR CARE</span>
+          <h3 class="service-name">Kérastase Deep Nourishing Hair Spa</h3>
+          <p class="service-desc">Intensive hair mask treatment with scalp massage, steam treatment, and blowout styling.</p>
+          <div class="service-footer">
+            <span class="service-price">₹ 1,499</span>
+            <a href="#book" class="service-book-link" data-service="Kérastase Hair Spa">Book Now →</a>
+          </div>
+        </div>
+
+        <!-- Hair 2 -->
+        <div class="service-card" data-category="hair">
+          <span class="service-label">HAIR CARE</span>
+          <h3 class="service-name">Keratin & Smoothening Treatment</h3>
+          <p class="service-desc">Frizz-free, silky smooth hair transformation with formaldehyde-free natural proteins.</p>
+          <div class="service-footer">
+            <span class="service-price">₹ 3,999</span>
+            <a href="#book" class="service-book-link" data-service="Keratin Treatment">Book Now →</a>
+          </div>
+        </div>
+
+        <!-- Skin 1 -->
+        <div class="service-card" data-category="skin" style="display:none;">
+          <span class="service-label">SKINCARE</span>
+          <h3 class="service-name">Hydra facial & Oxy Glow Treatment</h3>
+          <p class="service-desc">Deep pore vacuum extraction, antioxidant infusion, and LED light therapy mask.</p>
+          <div class="service-footer">
+            <span class="service-price">₹ 2,499</span>
+            <a href="#book" class="service-book-link" data-service="Hydrafacial Treatment">Book Now →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stat Tiles (True Black Section) -->
+  <section class="stats-section" id="stats">
+    <div class="container">
+      <div class="grid grid-4 text-center">
+        <div class="stat-tile">
+          <div class="stat-num">519+</div>
+          <div class="stat-lbl">GOOGLE REVIEWS</div>
+        </div>
+
+        <div class="stat-tile">
+          <div class="stat-num">4.9★</div>
+          <div class="stat-lbl">AVERAGE RATING</div>
+        </div>
+
+        <div class="stat-tile">
+          <div class="stat-num">7+</div>
+          <div class="stat-lbl">YEARS OF EXCELLENCE</div>
+        </div>
+
+        <div class="stat-tile">
+          <div class="stat-num">15+</div>
+          <div class="stat-lbl">EXPERT STYLISTS</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pale Gold Booking Strip -->
+  <section class="section book-section" id="book">
+    <div class="container">
+      <div class="book-card">
+        <div class="book-header text-center">
+          <span class="section-label">RESERVATION</span>
+          <h2 class="book-title">BOOK YOUR APPOINTMENT</h2>
+          <p class="book-sub">Select your preferred service and time slot. We will confirm your booking via WhatsApp.</p>
+        </div>
+
+        <form class="book-form" id="bookingForm">
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="name">Full Name *</label>
+              <input type="text" id="name" required placeholder="e.g. Ananya Shah">
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone / WhatsApp Number *</label>
+              <input type="tel" id="phone" required placeholder="e.g. 9876543210" pattern="[0-9]{10}">
+            </div>
+
+            <div class="form-group">
+              <label for="service">Required Service *</label>
+              <select id="service" required>
+                <option value="">Choose Service...</option>
+                <option value="Kérastase Hair Spa">Kérastase Hair Spa</option>
+                <option value="Keratin / Smoothening">Keratin / Smoothening</option>
+                <option value="Hydrafacial Treatment">Hydrafacial Treatment</option>
+                <option value="Bridal / Event Makeup">Bridal / Event Makeup</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="date">Preferred Date *</label>
+              <input type="date" id="date" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="time">Preferred Time Slot</label>
+            <select id="time">
+              <option value="Morning (10:00 AM - 1:00 PM)">Morning (10:00 AM - 1:00 PM)</option>
+              <option value="Afternoon (1:00 PM - 4:00 PM)">Afternoon (1:00 PM - 4:00 PM)</option>
+              <option value="Evening (4:00 PM - 8:00 PM)">Evening (4:00 PM - 8:00 PM)</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn btn-dark btn-block btn-lg">Confirm Appointment via WhatsApp →</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div>
+        <div class="logo-main">DKs</div>
+        <div class="logo-sub">UNISEX SALON</div>
+        <p class="footer-address">109, 1st Floor, Shivalay Complex, Ambawadi Road, Bhavnagar, Gujarat.</p>
+      </div>
+
+      <div class="footer-info">
+        <p>📞 Appointment Helpline: +91 98989 12345</p>
+        <p>⏰ Salon Hours: 10:00 AM – 8:00 PM (Every Day)</p>
+      </div>
+    </div>
+    <div class="footer-bottom text-center">
+      <p>&copy; 2026 DKs Unisex Salon. All rights reserved. Developed by VyunixTech.</p>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
