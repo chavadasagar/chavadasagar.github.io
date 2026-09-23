@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#101827" />
+  <title>RouteBuddy Prototype</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="brandbar">
+      <div class="brand">
+        <div class="logo">R</div>
+        <div>
+          <strong>RouteBuddy</strong>
+          <small>Daily commute matching</small>
+        </div>
+      </div>
+      <button id="resetTopBtn" class="icon-btn hidden" title="Reset">↻</button>
+    </header>
+
+    <main>
+      <!-- STEP 1 -->
+      <section class="screen active" data-screen="vehicle">
+        <div class="progress"><span class="active"></span><span></span><span></span><span></span></div>
+        <div class="intro">
+          <span class="step">STEP 1</span>
+          <h1>Do you have a vehicle?</h1>
+          <p>This decides which commuters we should show you.</p>
+        </div>
+
+        <div class="choice-grid">
+          <button class="choice-card" data-vehicle="yes">
+            <div class="choice-icon">🚘</div>
+            <div>
+              <strong>Yes, I have a vehicle</strong>
+              <small>I can take someone with me or provide daily pickup/drop.</small>
+            </div>
+            <b>›</b>
+          </button>
+
+          <button class="choice-card" data-vehicle="no">
+            <div class="choice-icon">🎒</div>
+            <div>
+              <strong>No, I don't have a vehicle</strong>
+              <small>I need someone who travels on my route.</small>
+            </div>
+            <b>›</b>
+          </button>
+        </div>
+      </section>
+
+      <!-- STEP 2 -->
+      <section class="screen" data-screen="name">
+        <div class="progress"><span class="active"></span><span class="active"></span><span></span><span></span></div>
+        <button class="back-link" data-back="vehicle">‹ Back</button>
+
+        <div class="intro">
+          <span class="step">STEP 2</span>
+          <h1>What's your name?</h1>
+          <p>Only basic information for this prototype.</p>
+        </div>
+
+        <div class="form-card">
+          <label>
+            <span>Your name</span>
+            <input id="nameInput" type="text" placeholder="e.g. Sagar" autocomplete="off" />
+          </label>
+          <button id="nameNextBtn" class="primary-btn">Continue <span>→</span></button>
+        </div>
+      </section>
+
+      <!-- STEP 3 -->
+      <section class="screen" data-screen="route">
+        <div class="progress"><span class="active"></span><span class="active"></span><span class="active"></span><span></span></div>
+        <button class="back-link" data-back="name">‹ Back</button>
+
+        <div class="intro">
+          <span class="step">STEP 3</span>
+          <h1 id="routeTitle">Tell us your daily plan</h1>
+          <p id="routeSub">Where do you start and where do you usually need to go?</p>
+        </div>
+
+        <div class="form-card">
+          <div class="field-title">Job status</div>
+          <div class="segmented">
+            <button class="segment active" data-job="working">I have a job</button>
+            <button class="segment" data-job="looking">Looking for job</button>
+          </div>
+
+          <label>
+            <span>Home / Starting area</span>
+            <div class="with-icon">
+              <i>⌂</i>
+              <input id="homeInput" placeholder="e.g. Kalawad Road" />
+            </div>
+          </label>
+
+          <label id="jobLocationField">
+            <span>Office / Job location</span>
+            <div class="with-icon">
+              <i>⌖</i>
+              <input id="jobInput" placeholder="e.g. Raiya Circle" />
+            </div>
+          </label>
+
+          <div id="lookingInfo" class="info-box hidden">
+            <strong>💼 Looking for job?</strong>
+            <p>You can still use the app. Your starting area is enough. If you have a vehicle, people near your area can find you for daily pickup/drop.</p>
+          </div>
+
+          <div id="budgetBlock" class="budget-block">
+            <label>
+              <span>Monthly amount you can pay</span>
+              <div class="money-input">
+                <b>₹</b>
+                <input id="budgetInput" type="number" value="1800" min="0" step="100" />
+                <em>/ month</em>
+              </div>
+            </label>
+            <div class="quick-prices">
+              <button data-budget="1200">₹1,200</button>
+              <button data-budget="1800" class="active">₹1,800</button>
+              <button data-budget="2500">₹2,500</button>
+            </div>
+          </div>
+
+          <div id="vehicleOfferBlock" class="vehicle-offer hidden">
+            <div class="field-title">How can you help?</div>
+            <div class="stack-options">
+              <button class="small-option active" data-offer="route">
+                <span>🛣</span>
+                <div><strong>Share my daily office route</strong><small>Take someone who travels on my way.</small></div>
+              </button>
+              <button class="small-option" data-offer="pickup">
+                <span>🚕</span>
+                <div><strong>Available for daily pickup/drop</strong><small>Useful if you're looking for a job and want a monthly earning.</small></div>
+              </button>
+            </div>
+          </div>
+
+          <button id="routeNextBtn" class="primary-btn">Show matching users <span>→</span></button>
+        </div>
+      </section>
+
+      <!-- RESULTS -->
+      <section class="screen results-screen" data-screen="results">
+        <div class="top-section">
+          <div>
+            <span class="step">MATCHES FOR YOU</span>
+            <h1 id="resultHeading">People near your route</h1>
+            <p id="resultSub">Based on your role and daily travel preference.</p>
+          </div>
+          <button id="editBtn" class="outline-btn">Edit</button>
+        </div>
+
+        <div id="mySummary" class="summary-card"></div>
+
+        <div class="filter-row">
+          <button class="filter-chip active" data-filter="all">All</button>
+          <button class="filter-chip" data-filter="best">Best match</button>
+          <button class="filter-chip" data-filter="nearby">Nearby</button>
+        </div>
+
+        <div id="matchList" class="match-list"></div>
+      </section>
+    </main>
+  </div>
+
+  <!-- USER DETAIL -->
+  <div id="detailModal" class="modal hidden">
+    <div class="sheet">
+      <button class="close" data-close="detailModal">×</button>
+
+      <div class="person-head">
+        <div id="detailAvatar" class="avatar">A</div>
+        <div>
+          <span id="detailBadge" class="badge">Ride seeker</span>
+          <h2 id="detailName">Amit Patel</h2>
+          <p id="detailMeta">Needs daily ride</p>
+        </div>
+      </div>
+
+      <div class="route-card">
+        <div class="route-point">
+          <span class="dot green"></span>
+          <div><small>FROM</small><strong id="detailFrom"></strong></div>
+        </div>
+        <div class="route-line"></div>
+        <div class="route-point" id="detailToWrap">
+          <span class="dot purple"></span>
+          <div><small>TO</small><strong id="detailTo"></strong></div>
+        </div>
+      </div>
+
+      <div id="detailPriceCard" class="price-card">
+        <small>MONTHLY BUDGET</small>
+        <strong id="detailPrice">₹1,800 / month</strong>
+        <span id="detailPriceHint">This user can pay this amount monthly.</span>
+      </div>
+
+      <div class="safety">
+        🛡 Prototype only. In a real product, add phone verification, identity/vehicle verification, emergency contact and reporting.
+      </div>
+
+      <button id="requestBtn" class="primary-btn">Send request</button>
+    </div>
+  </div>
+
+  <!-- REQUEST -->
+  <div id="requestModal" class="modal hidden">
+    <div class="sheet">
+      <button class="close" data-close="requestModal">×</button>
+      <span class="step">CONNECT</span>
+      <h2 id="requestTitle">Send request</h2>
+      <p class="sheet-sub">Start the conversation for regular daily commute.</p>
+
+      <label>
+        <span>Pickup point</span>
+        <input id="pickupInput" />
+      </label>
+
+      <label id="dropField">
+        <span>Drop point</span>
+        <input id="dropInput" />
+      </label>
+
+      <label>
+        <span>Message</span>
+        <textarea id="messageInput" rows="4"></textarea>
+      </label>
+
+      <button id="confirmRequestBtn" class="primary-btn">Send request</button>
+    </div>
+  </div>
+
+  <div id="toast" class="toast"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
