@@ -1,6 +1,6 @@
 # 📚 Workspace Project Index & Documentation Hub
 
-Welcome to the central index for all **61** client-side tools, apps, and developer utilities in this repository.
+Welcome to the central index for all **64** client-side tools, apps, and developer utilities in this repository.
 
 ---
 
@@ -19,7 +19,7 @@ Welcome to the central index for all **61** client-side tools, apps, and develop
 | Project Name | Description | Live Demo | Docs |
 | :--- | :--- | :---: | :---: |
 | **ATS Resume Builder** | Build 100% ATS-friendly, single-column resumes with live real-time preview, ATS score checker, local persistence, and instant PDF export. | [Launch App](./resume-builder/index.html) | [README](./resume-builder/README.md) |
-| **Banana Prompt Builder** | An interactive, dark-themed AI image prompt builder that compiles professional art direction briefs for Midjourney, Stable Diffusion, and DALL-E. | [Launch App](./ai-prompt-builder/index.html) | [README](./ai-prompt-builder/README.md) |
+| **Banana Prompt Builder** | A self-contained AI prompt builder that creates platform-aware art direction briefs without image asset dependencies. | [Launch App](./ai-prompt-builder/index.html) | [README](./ai-prompt-builder/README.md) |
 | **Barcode & Label Generator** | Free Mobile-Friendly Thermal Barcode & Product Label Generator. Generate CODE128, EAN-13, custom sizes, batch SKUs, and pixel-perfect thermal printer labels. | [Launch App](./barcode-label-generator/index.html) | [README](./barcode-label-generator/README.md) |
 | **DataForge Pro** | Generate realistic mock data for developers, designers, and testers. Export as JSON, CSV, SQL, XML or interactive table view instantly. | [Launch App](./random-data-generator/index.html) | [README](./random-data-generator/README.md) |
 | **Fast Client** | Free, secure, 100% client-side file converter and text tool. Convert CSV to JSON, JSON to CSV, handle nested keys, preview interactive tables, transform text cases, and clean data with zero server uploads. | [Launch App](./file-converter/index.html) | [README](./file-converter/README.md) |
@@ -65,6 +65,7 @@ Welcome to the central index for all **61** client-side tools, apps, and develop
 | **ShopEase** | A browser-based Ecommerce Store web utility built with vanilla HTML, CSS, and JavaScript. | [Launch App](./ecommerce-store/index.html) | [README](./ecommerce-store/README.md) |
 | **Shree Khodiyar Jewellers** | A browser-based Khodiyar Jewelers Portal web utility built with vanilla HTML, CSS, and JavaScript. | [Launch App](./khodiyar-jewelers-portal/index.html) | [README](./khodiyar-jewelers-portal/README.md) |
 | **StayEase — Enterprise Hotel Management System** | A browser-based Hotel Management System web utility built with vanilla HTML, CSS, and JavaScript. | [Launch App](./hotel-management-system/index.html) | [README](./hotel-management-system/README.md) |
+| **StockFlow** | A browser-based Stock Request System web utility built with vanilla HTML, CSS, and JavaScript. | [Launch App](./stock-request-system/index.html) | [README](./stock-request-system/README.md) |
 
 ### 📊 Calculators & Trackers
 
@@ -81,6 +82,7 @@ Welcome to the central index for all **61** client-side tools, apps, and develop
 
 | Project Name | Description | Live Demo | Docs |
 | :--- | :--- | :---: | :---: |
+| **AdminERP** | A browser-based Adminerp web utility built with vanilla HTML, CSS, and JavaScript. | [Launch App](./adminerp/index.html) | [README](./adminerp/README.md) |
 | **Appointment Listings** | A browser-based Appointment Scheduler web utility built with vanilla HTML, CSS, and JavaScript. | [Launch App](./appointment-scheduler/index.html) | [README](./appointment-scheduler/README.md) |
 | **Client Website** | A browser-based Client Website web utility built with vanilla HTML, CSS, and JavaScript. | N/A | N/A |
 | **Database Design Masterclass** | Master real-world database design through interactive tutorials of production systems like E-Commerce, Chat Apps, Hospitals, SaaS platforms, and Bus Booking engines. | [Launch App](./database-totorial/index.html) | [README](./database-totorial/README.md) |
@@ -90,8 +92,9 @@ Welcome to the central index for all **61** client-side tools, apps, and develop
 | **Markdown Notes** | A fast, mobile-friendly Markdown Notes app with live split-view, tag filtering, debounced auto-save, and zero dependencies. | [Launch App](./notes-app/index.html) | [README](./notes-app/README.md) |
 | **Modern Markdown Reader** | A browser-based Markdown Reader web utility built with vanilla HTML, CSS, and JavaScript. | [Launch App](./markdown-reader/index.html) | [README](./markdown-reader/README.md) |
 | **Postman Web Studio** | Modern Mobile-Friendly Web Postman API Client Tool | [Launch App](./api-request-tester/index.html) | [README](./api-request-tester/README.md) |
-| **Sagar Chavda** | A browser-based Personal Portfolio web utility built with vanilla HTML, CSS, and JavaScript. | [Launch App](./personal-portfolio/index.html) | [README](./personal-portfolio/README.md) |
-| **Sagar Chavda — Resume** | A browser-based Developer Resume web utility built with vanilla HTML, CSS, and JavaScript. | [Launch App](./developer-resume/index.html) | [README](./developer-resume/README.md) |
+| **RouteBuddy Prototype** | A browser-based Routebuddy web utility built with vanilla HTML, CSS, and JavaScript. | [Launch App](./routebuddy/index.html) | [README](./routebuddy/README.md) |
+| **Sagar Chavda** | Sagar Chavda — Software Engineer specializing in .NET, ASP.NET Core, APIs, SQL, PostgreSQL, cloud integrations, and production-grade backend systems. | [Launch App](./portfolio/index.html) | [README](./portfolio/README.md) |
+| **Sagar Chavda — Resume** | A browser-based Resume web utility built with vanilla HTML, CSS, and JavaScript. | [Launch App](./resume/index.html) | [README](./resume/README.md) |
 | **Strong Password Generator & Enhancer** | Turn weak phrases into bulletproof passwords or generate cryptographically secure random passwords instantly. Fully mobile and PC friendly. | [Launch App](./password-strength-checker/index.html) | [README](./password-strength-checker/README.md) |
 | **SubFlow** | A browser-based Subscription Manager web utility built with vanilla HTML, CSS, and JavaScript. | [Launch App](./subscription-manager/index.html) | [README](./subscription-manager/README.md) |
 | **Task status using queue** | A browser-based Queue Task Manager web utility built with vanilla HTML, CSS, and JavaScript. | [Launch App](./queue-task-manager/index.html) | [README](./queue-task-manager/README.md) |
