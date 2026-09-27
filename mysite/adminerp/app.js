@@ -69,6 +69,7 @@ const OFFLINE_SVGS = {
   'calendar': '<svg class="erp-svg" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>',
   'bullseye': '<svg class="erp-svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>',
   'map-pin': '<svg class="erp-svg" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>',
+  'chevron-right': '<svg class="erp-svg" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>',
 
   // Analytics & Reports
   'chart-line': '<svg class="erp-svg" viewBox="0 0 24 24"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>',
@@ -159,7 +160,12 @@ function normalizeIconKey(icon) {
     'map-location-dot': 'compass',
     'layer-group': 'layers',
     'clock-rotate-left': 'clock',
-    'arrow-up-right-from-square': 'external'
+    'arrow-up-right-from-square': 'external',
+    'angle-right': 'chevron-right',
+    'caret-right': 'chevron-right',
+    'chevron-down': 'chevron-right',
+    'angle-down': 'chevron-right',
+    'list-tree': 'layers'
   };
   return aliasMap[str] || str;
 }
@@ -279,6 +285,39 @@ function seedDB() {
   (db.menus || []).forEach(m => {
     if (m.id === 'menu_analytics' && (m.icon === '📊' || !m.icon)) { m.icon = 'fa-solid fa-chart-line'; changed = true; }
     if (m.id === 'menu_helpdesk' && (m.icon === '🌐' || !m.icon)) { m.icon = 'fa-solid fa-headset'; changed = true; }
+    // Submenu support: every menu is either a root item (parentId '') or a nested submenu
+    if (typeof m.parentId !== 'string') { m.parentId = ''; changed = true; }
+  });
+  // Migration safety: drop parent references pointing at missing menus or creating cycles
+  (db.menus || []).forEach(m => {
+    if (!m.parentId) return;
+    if (!db.menus.some(x => x.id === m.parentId) || m.parentId === m.id) {
+      m.parentId = '';
+      changed = true;
+    }
+  });
+  // Cycle guard: only break the link when walking up from this menu revisits a node.
+  // (Checking "parentId is one of the ancestors" would wrongly clear every submenu.)
+  (db.menus || []).forEach(m => {
+    if (!m.parentId) return;
+    if (menuChainHasCycle(db.menus, m.id)) {
+      m.parentId = '';
+      changed = true;
+    }
+  });
+  // Role inheritance migration: submenus no longer hold their own role list.
+  // Any legacy roleIds on a submenu are merged up into its top-level parent so the
+  // effective visibility of that submenu stays exactly the same after the upgrade.
+  (db.menus || []).forEach(m => {
+    if (!m.parentId) return;
+    if (!Array.isArray(m.roleIds) || m.roleIds.length === 0) return;
+    const root = (db.menus || []).find(x => x.id === getMenuRootId({ menus: db.menus }, m.id));
+    if (root) {
+      if (!Array.isArray(root.roleIds)) root.roleIds = [];
+      m.roleIds.forEach(rid => { if (!root.roleIds.includes(rid)) root.roleIds.push(rid); });
+    }
+    m.roleIds = [];
+    changed = true;
   });
   if (!Array.isArray(db.audit)) { db.audit = []; changed = true; }
   if (!db.stats || typeof db.stats !== 'object') { db.stats = {}; changed = true; }
@@ -423,13 +462,6 @@ function restoreFormDraft(formId) {
       if (typeof updateProjCatTags === 'function') updateProjCatTags();
       hasData = true;
     }
-    if (data._roles && formId === 'menuForm') {
-      data._roles.forEach(rid => {
-        const cb = form.querySelector(`input[data-role-id="${rid}"]`);
-        if (cb) cb.checked = true;
-      });
-      hasData = true;
-    }
 
     if (formId === 'userForm' && typeof updateLiveUserPreview === 'function') updateLiveUserPreview();
     if (formId === 'deptForm' && typeof updateLiveDeptPreview === 'function') updateLiveDeptPreview();
@@ -464,10 +496,12 @@ function canAccessDynamicMenu(menuId) {
   const db = loadDB();
   const m = (db.menus || []).find(x => x.id === menuId);
   if (!m || m.status !== 'active') return false;
-  if (!m.roleIds || m.roleIds.length === 0) return true;
+  // Submenus inherit the role access of their top-level parent
+  const roleIds = getEffectiveRoleIds(db, menuId);
+  if (roleIds.length === 0) return true;
   const role = currentRole();
   if (role && role.name === 'Admin') return true;
-  return !!(role && m.roleIds.includes(role.id));
+  return !!(role && roleIds.includes(role.id));
 }
 
 function restoreLastPage() {
@@ -903,6 +937,12 @@ function goPage(name, viewName = 'list') {
   document.querySelectorAll('.page').forEach(p => p.classList.add('hidden'));
   const target = $('page-' + name);
   if (target) target.classList.remove('hidden');
+  if (window.activeDynamicMenuId) {
+    // Leaving the dynamic route view: clear the highlight and collapse-state of custom menus
+    window.activeDynamicMenuId = '';
+    renderCustomSidebarMenus();
+  }
+  if (window.currentWebviewUrl) hideWebview(); // stop any embedded page while away
   document.querySelectorAll('.menu-btn').forEach(b => b.classList.toggle('active', (b.dataset && b.dataset.page) === name));
   const label = PAGE_LABELS[name] || (name.charAt(0).toUpperCase() + name.slice(1));
   $('pageTitle').textContent = label;
@@ -3320,6 +3360,201 @@ window.switchMenuSubTab = function(subTab) {
   }
 };
 
+// ---------- MENU HIERARCHY (Submenu Support) ----------
+window.expandedMenuGroups = window.expandedMenuGroups || new Set();
+window.collapsedMenuGroups = window.collapsedMenuGroups || new Set();
+
+function sortMenusByOrder(list) {
+  return (list || []).slice().sort((a, b) => (parseInt(a.order, 10) || 1) - (parseInt(b.order, 10) || 1));
+}
+
+// All ancestor menu ids of a menu, walking up the parent chain (cycle safe)
+function getMenuAncestorIds(dbLike, menuId) {
+  const menus = (dbLike && dbLike.menus) || [];
+  const out = [];
+  const seen = new Set([menuId]);
+  let cur = menus.find(x => x.id === menuId);
+  let guard = 0;
+  while (cur && cur.parentId && guard++ < 50) {
+    if (seen.has(cur.parentId)) break;
+    out.push(cur.parentId);
+    seen.add(cur.parentId);
+    cur = menus.find(x => x.id === cur.parentId);
+  }
+  return out;
+}
+
+// True when walking up the parent chain from a menu revisits a node (self/loop nesting)
+function menuChainHasCycle(menus, menuId) {
+  const seen = new Set();
+  let cur = (menus || []).find(x => x.id === menuId);
+  let guard = 0;
+  while (cur && guard++ < 50) {
+    if (seen.has(cur.id)) return true;
+    seen.add(cur.id);
+    if (!cur.parentId) return false;
+    cur = (menus || []).find(x => x.id === cur.parentId);
+    if (!cur) return false; // dangling parent reference
+  }
+  return true;
+}
+
+// All descendant menu ids of a menu (cycle safe)
+function getMenuDescendantIds(dbLike, menuId) {
+  const menus = (dbLike && dbLike.menus) || [];
+  const out = new Set();
+  const stack = [menuId];
+  const seen = new Set([menuId]);
+  let guard = 0;
+  while (stack.length && guard++ < 200) {
+    const pid = stack.pop();
+    menus.forEach(m => {
+      if (m.parentId === pid && !seen.has(m.id)) {
+        seen.add(m.id);
+        out.add(m.id);
+        stack.push(m.id);
+      }
+    });
+  }
+  return out;
+}
+
+function getMenuChildren(dbLike, parentId) {
+  return sortMenusByOrder((dbLike.menus || []).filter(m => (m.parentId || '') === (parentId || '')));
+}
+
+function getMenuChildCount(dbLike, menuId) {
+  return (dbLike.menus || []).filter(m => m.parentId === menuId).length;
+}
+
+function menuParentTitle(dbLike, menuId) {
+  if (!menuId) return '';
+  const p = (dbLike.menus || []).find(x => x.id === menuId);
+  return p ? p.title : '';
+}
+
+// Top-level ancestor that owns the role access of a menu group.
+// Submenus never store roles of their own: they inherit from this root menu.
+function getMenuRootId(dbLike, menuId) {
+  const menus = (dbLike && dbLike.menus) || [];
+  const ancestors = getMenuAncestorIds(dbLike, menuId);
+  return ancestors.length ? ancestors[ancestors.length - 1] : menuId;
+}
+
+function getMenuRoot(dbLike, menuId) {
+  const menus = (dbLike && dbLike.menus) || [];
+  return menus.find(x => x.id === getMenuRootId(dbLike, menuId)) || null;
+}
+
+// Effective role access for a menu: inherited from the top-level parent for submenus
+function getEffectiveRoleIds(dbLike, menuId) {
+  const root = getMenuRoot(dbLike, menuId);
+  if (!root) return [];
+  return Array.isArray(root.roleIds) ? root.roleIds : [];
+}
+
+// The menu whose role list actually governs this menu (itself, or its top-level parent)
+function getMenuRoleOwner(dbLike, menu) {
+  if (!menu) return null;
+  if (!menu.parentId) return menu;
+  return getMenuRoot(dbLike, menu.id) || menu;
+}
+
+// "Parent › Child" breadcrumb label used in grids, dropdowns and detail views
+function menuPathLabel(dbLike, menu, maxDepth = 3) {
+  const chain = [menu.title];
+  let cur = menu;
+  let depth = 0;
+  while (cur && cur.parentId && depth < maxDepth) {
+    const p = (dbLike.menus || []).find(x => x.id === cur.parentId);
+    if (!p) break;
+    chain.unshift(p.title);
+    cur = p;
+    depth++;
+  }
+  return chain.join(' › ');
+}
+
+// Populate the "Parent Menu" select of the menu form.
+// Excludes the menu itself and all of its descendants so a cycle can never be created.
+function renderMenuParentOptions(selectedParentId = '', excludeMenuId = '') {
+  const sel = $('menuParent');
+  if (!sel) return;
+  const db = loadDB();
+  const blocked = new Set();
+  if (excludeMenuId) {
+    blocked.add(excludeMenuId);
+    getMenuDescendantIds(db, excludeMenuId).forEach(i => blocked.add(i));
+  }
+
+  const render = (parentId, depth) => {
+    let html = '';
+    getMenuChildren(db, parentId).forEach(m => {
+      if (blocked.has(m.id)) return;
+      const pad = depth > 0 ? '&nbsp;'.repeat(depth * 4) + '└ ' : '';
+      const kids = getMenuChildren(db, m.id).length;
+      const sub = kids ? ` <(${kids})` : '';
+      html += `<option value="${escapeHtml(m.id)}">${pad}${escapeHtml(m.title)}${sub}</option>`;
+      html += render(m.id, depth + 1);
+    });
+    return html;
+  };
+
+  sel.innerHTML = `<option value="">🚫 No Parent — Top-Level Menu</option>` + render('', 0);
+  sel.value = (selectedParentId && !blocked.has(selectedParentId)) ? selectedParentId : '';
+  if (sel.value !== (selectedParentId || '')) sel.value = '';
+}
+
+// Top-level menu = group header (no route, not clickable).
+// As soon as a parent is picked the Route Path + Target Action fields appear,
+// because only submenus own a page slug or a web link.
+function onMenuParentChange() {
+  const sel = $('menuParent');
+  const routeField = $('menuRouteField');
+  const targetField = $('menuTargetField');
+  const routeInput = $('menuRoute');
+  const currentId = ($('menuId') && $('menuId').value) || '';
+  const isChild = !!(sel && sel.value);
+
+  if (routeField) routeField.classList.toggle('hidden', !isChild);
+  if (targetField) targetField.classList.toggle('hidden', !isChild);
+  if (routeInput) routeInput.required = isChild;
+
+  if (isChild && routeInput && !routeInput.value.trim()) {
+    // Convenience: suggest a slug from the title (only for internal SPA routes)
+    const title = ($('menuTitle') && $('menuTitle').value) || '';
+    const slug = title.toLowerCase().trim().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+    if (slug) routeInput.value = slug;
+  }
+
+  // Safety net: a menu already saved as a submenu can never be silently demoted to a
+  // top-level group, so a stale form draft or a hand-edited value cannot detach it.
+  if (currentId && !isChild) {
+    const saved = (loadDB().menus || []).find(x => x.id === currentId);
+    if (saved && saved.parentId && isValidMenuParent(currentId, saved.parentId)) {
+      sel.value = saved.parentId;
+      routeField && routeField.classList.remove('hidden');
+      targetField && targetField.classList.remove('hidden');
+      if (routeInput) {
+        routeInput.required = true;
+        if (!routeInput.value.trim()) routeInput.value = saved.route || '';
+      }
+      toast(`"${saved.title}" is a submenu of "${menuParentTitle(loadDB(), saved.parentId)}" — parent kept`, 'info');
+    }
+  }
+}
+window.onMenuParentChange = onMenuParentChange;
+
+// Validate a candidate parent for a menu (blocks self-parenting and cycles)
+function isValidMenuParent(menuId, parentId) {
+  if (!parentId) return true;
+  if (menuId && parentId === menuId) return false;
+  const db = loadDB();
+  if (!(db.menus || []).some(m => m.id === parentId)) return false;
+  if (!menuId) return true;
+  return !getMenuDescendantIds(db, menuId).has(parentId);
+}
+
 function renderCustomSidebarMenus() {
   const db = loadDB();
   const cRole = currentRole();
@@ -3328,16 +3563,17 @@ function renderCustomSidebarMenus() {
   const heading = $('customMenuHeading');
   if (!menuContainer) return;
 
-  const menus = (db.menus || []).slice().sort((a, b) => (parseInt(a.order, 10) || 1) - (parseInt(b.order, 10) || 1));
+  const menus = sortMenusByOrder(db.menus || []);
 
   // Visibility:
   // 1. Menu must be active
-  // 2. If no roleIds or roleIds empty: PUBLIC -> visible to all authenticated roles
-  // 3. If roleIds specified: RESTRICTED -> visible ONLY if user's role is in roleIds
+  // 2. Role access is owned by the top-level parent: a submenu always inherits it,
+  //    so an entire group (parent + submenus) is shown or hidden together.
   const visible = menus.filter(m => {
     if (m.status !== 'active') return false;
-    if (!m.roleIds || m.roleIds.length === 0) return true;
-    return cRole && m.roleIds.includes(cRole.id);
+    const roleIds = getEffectiveRoleIds(db, m.id);
+    if (roleIds.length === 0) return true;
+    return cRole && roleIds.includes(cRole.id);
   });
 
   if (!visible.length) {
@@ -3350,20 +3586,159 @@ function renderCustomSidebarMenus() {
   if (divider) divider.classList.remove('hidden');
   if (heading) heading.classList.remove('hidden');
 
-  menuContainer.innerHTML = visible.map(m => {
-    const isExt = m.targetType === 'external';
-    if (isExt) {
-      return `<a href="${escapeHtml(m.route)}" target="_blank" rel="noopener noreferrer" class="menu-btn custom-menu-btn" title="${escapeHtml(m.title)} (External Link)">
-        <span class="menu-icon">${renderIcon(m.icon, 'fa-solid fa-link')}</span>
-        <span class="menu-label">${escapeHtml(m.title)}</span>
-        <span class="menu-ext-indicator">${renderIcon('external')}</span>
-      </a>`;
+  // Build the visible tree. A submenu is only nested when its parent group is
+  // visible for the current role; otherwise it is promoted to top level.
+  const visibleIds = new Set(visible.map(m => m.id));
+  const kidsOf = new Map();
+  visible.forEach(m => {
+    const pid = (m.parentId && visibleIds.has(m.parentId)) ? m.parentId : '';
+    if (!kidsOf.has(pid)) kidsOf.set(pid, []);
+    kidsOf.get(pid).push(m);
+  });
+
+  const activeId = window.activeDynamicMenuId || '';
+  // Groups on the path of the currently open submenu stay auto-expanded
+  const activeAncestors = new Set();
+  {
+    let cur = (db.menus || []).find(x => x.id === activeId);
+    let guard = 0;
+    while (cur && cur.parentId && guard++ < 50) {
+      if (activeAncestors.has(cur.parentId)) break;
+      activeAncestors.add(cur.parentId);
+      cur = (db.menus || []).find(x => x.id === cur.parentId);
     }
-    return `<button type="button" class="menu-btn custom-menu-btn" data-menuid="${m.id}" onclick="openDynamicPage('${m.id}')" title="${escapeHtml(m.title)}">
-      <span class="menu-icon">${renderIcon(m.icon, 'fa-solid fa-compass')}</span>
-      <span class="menu-label">${escapeHtml(m.title)}</span>
-    </button>`;
-  }).join('');
+  }
+
+  const groupHtml = (menu, depth) => {
+    const kids = kidsOf.get(menu.id) || [];
+    const icon = renderIcon(menu.icon, depth > 0 ? 'fa-solid fa-file-lines' : 'fa-solid fa-compass');
+    const isWebLink = !!resolveWebviewUrl(menu);
+    const extBadge = isWebLink
+      ? `<span class="menu-ext-indicator" title="Opens inside the app Web View">${renderIcon('external')}</span>` : '';
+    const extTitle = isWebLink ? ' (opens in app Web View)' : '';
+
+    // A menu WITHOUT submenus is a normal link: clicking it opens its page.
+    // Web URL routes open in the in-app Web View (never a new browser tab).
+    if (!kids.length) {
+      // A top-level group with no route and no submenus yet: a placeholder folder
+      if (!menu.route) {
+        return `<div class="menu-btn custom-menu-btn custom-menu-empty" title="${escapeHtml(menu.title)} — is group header me abhi koi submenu nahi hai. Iske andar submenu banayein.">
+          <span class="menu-icon">${icon}</span>
+          <span class="menu-label">${escapeHtml(menu.title)}</span>
+          <span class="custom-menu-empty-hint">empty</span>
+        </div>`;
+      }
+      return `<button type="button" class="menu-btn custom-menu-btn ${depth > 0 ? 'custom-submenu-item' : ''}" data-menuid="${menu.id}" onclick="openDynamicPage('${menu.id}')" title="${escapeHtml(menu.title)}${extTitle}">
+          <span class="menu-icon">${icon}</span>
+          <span class="menu-label">${escapeHtml(menu.title)}</span>${extBadge}
+        </button>`;
+    }
+
+    // A menu WITH submenus is a pure group header: clicking it ONLY expands/collapses
+    // the submenu list, it never navigates to the parent's own page.
+    // Groups are OPEN by default so a freshly added submenu is always visible in the
+    // sidebar. The user's manual collapse choice is remembered for the session.
+    const isExpanded = window.collapsedMenuGroups.has(menu.id)
+      ? activeAncestors.has(menu.id) || window.expandedMenuGroups.has(menu.id)
+      : true;
+    const onActivePath = activeAncestors.has(menu.id);
+    const childHtml = kids.map(c => groupHtml(c, depth + 1)).join('');
+
+    return `<div class="custom-menu-group ${isExpanded ? 'submenu-expanded' : ''}" data-group="${menu.id}">
+      <div class="custom-menu-row">
+        <button type="button" class="menu-btn custom-menu-btn custom-menu-parent ${depth > 0 ? 'custom-submenu-item' : ''} ${onActivePath ? 'submenu-parent-active' : ''}"
+                onclick="toggleMenuGroup('${menu.id}', event)"
+                aria-expanded="${isExpanded}"
+                title="${escapeHtml(menu.title)} — click to ${isExpanded ? 'collapse' : 'expand'} its ${kids.length} submenu item(s)">
+          <span class="menu-icon">${icon}</span>
+          <span class="menu-label">${escapeHtml(menu.title)}</span>
+          <span class="custom-menu-count" title="${kids.length} submenu item(s)">${kids.length}</span>
+          <span class="menu-caret-icon">${renderIcon('chevron-right')}</span>
+        </button>
+      </div>
+      <div class="custom-submenu ${isExpanded ? 'expanded' : 'collapsed'}">${childHtml}</div>
+    </div>`;
+  };
+
+  menuContainer.innerHTML = (kidsOf.get('') || []).map(m => groupHtml(m, 0)).join('');
+}
+
+// Expand / collapse a submenu group inside the sidebar (groups open by default)
+window.toggleMenuGroup = function(menuId, evt) {
+  if (evt && typeof evt.stopPropagation === 'function') evt.stopPropagation();
+  const group = document.querySelector(`.custom-menu-group[data-group="${menuId}"]`);
+  const currentlyOpen = group ? group.classList.contains('submenu-expanded') : true;
+  if (currentlyOpen) {
+    window.collapsedMenuGroups.add(menuId);
+    window.expandedMenuGroups.delete(menuId);
+  } else {
+    window.collapsedMenuGroups.delete(menuId);
+    window.expandedMenuGroups.add(menuId);
+  }
+  renderCustomSidebarMenus();
+  closeNav();
+};
+
+// ---------- IN-APP WEB VIEW (iframe) ----------
+// Only http/https URLs are ever loaded: blocks javascript:, data:, vbscript: etc.
+function sanitizeWebUrl(raw) {
+  const s = String(raw || '').trim();
+  if (!s) return '';
+  // Reject anything that declares a non-http(s) scheme (javascript:, data:, ftp:, ...)
+  if (/^[a-z][a-z0-9+.-]*:/i.test(s) && !/^https?:\/\//i.test(s)) return '';
+  const withProto = /^https?:\/\//i.test(s) ? s : 'https://' + s.replace(/^\/+/, '');
+  try {
+    const u = new URL(withProto);
+    if (u.protocol !== 'http:' && u.protocol !== 'https:') return '';
+    return u.href;
+  } catch (_) {
+    return '';
+  }
+}
+
+function isWebUrlRoute(route) {
+  const s = String(route || '').trim();
+  if (/^https?:\/\//i.test(s)) return true;
+  // "www.example.com" / "example.com/x" are usable links too (https is assumed)
+  return /^[a-z0-9-]+(\.[a-z0-9-]+)+([/?#].*)?$/i.test(s);
+}
+
+// Single source of truth: the URL a menu should load in the Web View (or '' for none).
+// Accepts "https://x.com", "www.x.com" and "x.com" — fixes the mismatch that made
+// a valid Web View route fail to open.
+function resolveWebviewUrl(menu) {
+  if (!menu) return '';
+  const wantsWebView = menu.targetType === 'external' || isWebUrlRoute(menu.route);
+  if (!wantsWebView) return '';
+  return sanitizeWebUrl(menu.route);
+}
+
+// Show the in-app web view: a bare iframe, no toolbar / status text around it
+function showWebview(url) {
+  const shell = $('dynWebview');
+  const frame = $('webviewFrame');
+  const canvas = $('dynCanvas');
+  const safe = sanitizeWebUrl(url);
+  if (!shell || !frame) return false;
+  if (!safe) {
+    toast('Invalid web link — only http:// or https:// URLs can open in the Web View', 'warning');
+    return false;
+  }
+  if (canvas) canvas.classList.add('hidden');
+  shell.classList.remove('hidden');
+  window.currentWebviewUrl = safe;
+  try { frame.src = safe; } catch (_) { frame.setAttribute('src', safe); }
+  return true;
+}
+
+function hideWebview() {
+  const shell = $('dynWebview');
+  const frame = $('webviewFrame');
+  const canvas = $('dynCanvas');
+  if (shell) shell.classList.add('hidden');
+  if (canvas) canvas.classList.remove('hidden');
+  if (frame) frame.removeAttribute('src');
+  window.currentWebviewUrl = '';
 }
 
 window.openDynamicPage = function(menuId) {
@@ -3371,6 +3746,14 @@ window.openDynamicPage = function(menuId) {
   const m = (db.menus || []).find(x => x.id === menuId);
   if (!m) return showAlert('Menu route not found');
   if (!canAccessDynamicMenu(menuId)) return showAlert('You do not have permission to access this menu', 'warning');
+
+  // Auto-expand every parent group of the opened submenu
+  window.activeDynamicMenuId = menuId;
+  getMenuAncestorIds(db, menuId).forEach(pid => {
+    window.expandedMenuGroups.add(pid);
+    window.collapsedMenuGroups.delete(pid);
+  });
+  renderCustomSidebarMenus();
 
   document.querySelectorAll('.page').forEach(p => p.classList.add('hidden'));
   const target = $('page-dynamic-view');
@@ -3386,15 +3769,31 @@ window.openDynamicPage = function(menuId) {
 
   if ($('dynPageTitle')) $('dynPageTitle').textContent = m.title;
   if ($('dynPageIcon')) $('dynPageIcon').innerHTML = renderIcon(m.icon, 'fa-solid fa-compass');
-  if ($('dynRouteBadge')) $('dynRouteBadge').textContent = '/' + m.route.replace(/^\/+/, '');
+
+  // Any web URL (top-level or submenu link) opens inside the in-app Web View.
+  // Internal slugs keep the SPA placeholder canvas.
+  const webUrl = resolveWebviewUrl(m);
+  if (webUrl) {
+    showWebview(webUrl);
+  } else {
+    hideWebview();
+    if (m.targetType === 'external' && m.route) {
+      toast(`"${m.title}" ka route valid web link nahi hai ("${m.route}") — Web View me nahi khul sakta`, 'warning');
+    }
+  }
   if ($('dynCanvasHeading')) $('dynCanvasHeading').textContent = m.title;
   if ($('dynCanvasDesc')) $('dynCanvasDesc').textContent = m.description || 'Dynamic route view configured via AdminERP Menu Builder.';
 
   if ($('dynRolesStrip')) {
-    if (!m.roleIds || m.roleIds.length === 0) {
-      $('dynRolesStrip').innerHTML = `<span class="badge primary">${renderIcon('globe')} Available to All Roles</span>`;
+    const owner = getMenuRoleOwner(db, m);
+    const roleIds = getEffectiveRoleIds(db, menuId);
+    const inheritedTag = m.parentId
+      ? `<span class="badge submenu-badge" style="margin-right:6px;">${renderIcon('layers')} Inherited from ${escapeHtml(owner ? owner.title : 'parent')}</span>`
+      : '';
+    if (roleIds.length === 0) {
+      $('dynRolesStrip').innerHTML = inheritedTag + `<span class="badge primary">${renderIcon('globe')} Available to All Roles</span>`;
     } else {
-      $('dynRolesStrip').innerHTML = m.roleIds.map(rid => {
+      $('dynRolesStrip').innerHTML = inheritedTag + roleIds.map(rid => {
         const r = (db.roles || []).find(x => x.id === rid);
         return `<span class="badge role-badge">${renderIcon('shield')} ${r ? escapeHtml(r.name) : 'Unknown Role'}</span>`;
       }).join('');
@@ -3419,10 +3818,16 @@ function renderMenus() {
   const db = loadDB();
   const q = ($('menuSearch') && $('menuSearch').value || '').toLowerCase().trim();
   const stFilter = ($('menuFilterStatus') && $('menuFilterStatus').value || '').trim();
+  const lvFilter = ($('menuFilterLevel') && $('menuFilterLevel').value || '').trim();
 
-  let list = (db.menus || []).slice().sort((a, b) => (parseInt(a.order, 10) || 1) - (parseInt(b.order, 10) || 1));
+  let list = sortMenusByOrder(db.menus || []);
   if (stFilter) {
     list = list.filter(m => m.status === stFilter);
+  }
+  if (lvFilter === 'root') {
+    list = list.filter(m => !m.parentId);
+  } else if (lvFilter === 'child') {
+    list = list.filter(m => !!m.parentId);
   }
 
   const columnDefs = [
@@ -3452,27 +3857,50 @@ function renderMenus() {
       minWidth: 200,
       cellRenderer: (params) => {
         const m = params.data;
+        const depth = m.depth || 0;
+        const indent = depth > 0
+          ? `<span class="grid-tree-indent" title="Nested ${depth} level(s) deep">${'&nbsp;'.repeat(depth * 3)}↳</span>`
+          : '';
+        const levelTag = depth > 0
+          ? `<span class="badge submenu-badge sm">${renderIcon('layers')} Submenu</span>`
+          : `<span class="badge muted sm">${renderIcon('compass')} Top-Level</span>`;
+        const kids = m.childCount || 0;
+        const kidsTag = kids ? `<span class="badge info sm" title="${kids} submenu item(s)">${kids} sub-item(s)</span>` : '';
         return `<div style="display:flex;align-items:center;gap:8px;">
           <span style="font-size:1.1rem;width:24px;text-align:center;">${renderIcon(m.icon)}</span>
           <div>
-            <b>${escapeHtml(m.title || '')}</b>
+            <b>${indent}${escapeHtml(m.title || '')}</b> ${levelTag} ${kidsTag}
             ${m.description ? `<div class="muted small">${escapeHtml(m.description)}</div>` : ''}
           </div>
         </div>`;
       }
     },
     {
-      headerName: 'Route Path',
-      field: 'route',
+      headerName: 'Submenu Of',
+      field: 'parentId',
       minWidth: 150,
-      cellRenderer: (params) => `<code>${escapeHtml(params.value || '')}</code>`
+      cellRenderer: (params) => {
+        const m = params.data;
+        if (!m.parentId) return '<span class="muted small">— Root Menu —</span>';
+        return `<span class="badge submenu-badge">${renderIcon('layers')} ${escapeHtml(m.parentTitle || 'Deleted Menu')}</span>`;
+      }
+    },
+    {
+      headerName: 'Route Path / Link',
+      field: 'route',
+      minWidth: 160,
+      cellRenderer: (params) => {
+        const m = params.data;
+        if (!m.route) return '<span class="badge muted sm">📁 Group Header (no route)</span>';
+        return isWebUrlRoute(m.route) ? `<code>${escapeHtml(m.route)}</code>` : `<code>/${escapeHtml(String(m.route).replace(/^\/+/, ''))}</code>`;
+      }
     },
     {
       headerName: 'Target Type',
       field: 'targetType',
-      width: 130,
+      width: 140,
       cellRenderer: (params) => params.value === 'external'
-        ? `<span class="badge warn">${renderIcon('external')} External</span>`
+        ? `<span class="badge warn">${renderIcon('external')} Web View</span>`
         : `<span class="badge primary">${renderIcon('bolt')} SPA View</span>`
     },
     {
@@ -3482,9 +3910,9 @@ function renderMenus() {
       cellRenderer: (params) => `<span class="badge" style="font-weight:700;">#${params.value || 1}</span>`
     },
     {
-      headerName: 'Mapped Roles',
+      headerName: 'Role Access (Inherited by Submenus)',
       field: 'rolesFormatted',
-      minWidth: 180,
+      minWidth: 200,
       flex: 1.5,
       cellRenderer: (params) => params.value || '—'
     },
@@ -3499,18 +3927,30 @@ function renderMenus() {
   ];
 
   const rowData = list.map(m => {
+    // Role access is owned by the top-level parent; submenus show it as inherited
+    const roleIds = getEffectiveRoleIds(db, m.id);
+    const owner = getMenuRoleOwner(db, m);
+    const inheritedTag = m.parentId
+      ? `<span class="badge submenu-badge" style="margin-right:4px;" title="Inherited from ${escapeHtml(owner ? owner.title : 'parent')}">${renderIcon('layers')} Inherited</span>`
+      : '';
     let rolesHtml = '';
-    if (!m.roleIds || m.roleIds.length === 0) {
-      rolesHtml = `<span class="badge info">${renderIcon('globe')} All Roles</span>`;
+    if (roleIds.length === 0) {
+      rolesHtml = inheritedTag + `<span class="badge info">${renderIcon('globe')} All Roles</span>`;
     } else {
-      const badges = m.roleIds.map(rid => {
+      const badges = roleIds.map(rid => {
         const r = (db.roles || []).find(x => x.id === rid);
         return `<span class="badge role-badge" style="margin-right:3px;">${renderIcon('shield')} ${r ? escapeHtml(r.name) : 'Deleted'}</span>`;
       });
-      rolesHtml = badges.join('');
+      rolesHtml = inheritedTag + badges.join('');
     }
     return {
       ...m,
+      parentId: m.parentId || '',
+      depth: getMenuAncestorIds(db, m.id).length,
+      parentTitle: m.parentId ? menuParentTitle(db, m.parentId) : '',
+      childCount: getMenuChildCount(db, m.id),
+      pathLabel: menuPathLabel(db, m),
+      roleOwnerTitle: owner ? owner.title : '',
       rolesFormatted: rolesHtml
     };
   });
@@ -3535,24 +3975,12 @@ function updateLiveMenuPreview() {
   }
 }
 
-function renderMenuFormRoleBoxes(selectedRoleIds = []) {
+// Role checkboxes intentionally do not exist in the menu form any more:
+// submenus inherit the role access of their top-level parent. Kept only so that
+// a stale draft (saved before this change) can never crash the form.
+function renderMenuFormRoleBoxes() {
   const container = $('menuFormRoleBoxes');
-  if (!container) return;
-  const db = loadDB();
-  const roles = db.roles || [];
-  if (!roles.length) {
-    container.innerHTML = '<span class="muted small">No roles available in system</span>';
-    return;
-  }
-  container.innerHTML = roles.map(r => {
-    const isChecked = Array.isArray(selectedRoleIds) && selectedRoleIds.includes(r.id);
-    return `
-      <label class="checkbox-pill" style="display:inline-flex; align-items:center; gap:6px; background:var(--bg-surface); padding:6px 12px; border-radius:6px; border:1px solid var(--border-subtle); cursor:pointer; font-size:0.85rem; user-select:none;">
-        <input type="checkbox" value="${r.id}" ${isChecked ? 'checked' : ''} style="cursor:pointer;">
-        <span>🛡️ ${escapeHtml(r.name)}</span>
-      </label>
-    `;
-  }).join('');
+  if (container) container.innerHTML = '';
 }
 
 window.openCreateMenu = function() {
@@ -3568,9 +3996,13 @@ window.openCreateMenu = function() {
   if ($('menuTargetType')) $('menuTargetType').value = 'internal';
   if ($('menuOrder')) $('menuOrder').value = (db.menus || []).length + 1;
   if ($('menuStatus')) $('menuStatus').value = 'active';
-  renderMenuFormRoleBoxes([]);
+  renderMenuParentOptions('');
+  onMenuParentChange();
   $('menuCancel').classList.remove('hidden');
   restoreFormDraft('menuForm');
+  // Draft restore writes the parent/select values without firing onchange, so the
+  // Route Path + Target Action fields must be re-synced with the restored parent
+  onMenuParentChange();
   updateLiveMenuPreview();
   switchMenuSubTab('list');
   setModuleView('menus', 'form');
@@ -3598,9 +4030,12 @@ window.editMenu = function(id) {
   $('menuDesc').value = m.description || '';
   $('menuFormTitle').textContent = 'Edit Menu: ' + m.title;
   $('menuCancel').classList.remove('hidden');
-  renderMenuFormRoleBoxes(m.roleIds || []);
+  renderMenuParentOptions(m.parentId || '', m.id);
   restoreFormDraft('menuForm');
   $('menuId').value = m.id;
+  // Draft restore may have injected a stale parent, re-assert a valid one
+  if ($('menuParent') && !isValidMenuParent(m.id, $('menuParent').value)) $('menuParent').value = m.parentId || '';
+  onMenuParentChange();
   updateLiveMenuPreview();
   switchMenuSubTab('list');
   setModuleView('menus', 'form');
@@ -3618,15 +4053,21 @@ function renderRoleMenuMappingUI() {
   const roleSel = $('mapRoleSelect');
   if (!menuSel || !roleSel) return;
 
-  const menus = (db.menus || []).slice().sort((a, b) => (parseInt(a.order, 10) || 1) - (parseInt(b.order, 10) || 1));
+  const menus = sortMenusByOrder(db.menus || []);
   const roles = db.roles || [];
 
-  const curMenuVal = menuSel.value;
-  menuSel.innerHTML = menus.length ? menus.map(m => `
-    <option value="${m.id}">${m.title} (${m.route}) - #${m.order || 1}</option>
-  `).join('') : '<option value="">No dynamic menus available</option>';
+  // Role access belongs to top-level menus only: submenus inherit it from their
+  // parent group, so the mapping dropdown lists root menus with a submenu count.
+  const roots = menus.filter(m => !m.parentId);
 
-  if (curMenuVal && menus.some(m => m.id === curMenuVal)) {
+  const curMenuVal = menuSel.value;
+  menuSel.innerHTML = roots.length ? roots.map(m => {
+    const kidCount = getMenuChildCount(db, m.id);
+    const sub = kidCount ? ` — ${kidCount} submenu item(s) included` : '';
+    return `<option value="${escapeHtml(m.id)}">📂 ${escapeHtml(m.title)} (${escapeHtml(m.route)})${sub}</option>`;
+  }).join('') : '<option value="">No top-level menus available</option>';
+
+  if (curMenuVal && roots.some(m => m.id === curMenuVal)) {
     menuSel.value = curMenuVal;
   }
 
@@ -3651,16 +4092,23 @@ function onMapMenuSelectChange() {
 
   const m = (db.menus || []).find(x => x.id === menuId);
   if (!m) {
-    container.innerHTML = '<span class="muted small">Select a menu to view mapped roles</span>';
+    container.innerHTML = '<span class="muted small">Select a top-level menu to view mapped roles</span>';
     return;
   }
 
-  if (!m.roleIds || m.roleIds.length === 0) {
-    container.innerHTML = `<span class="badge info">${renderIcon('globe')} Public (All Roles Allowed)</span>`;
+  // Safety net: roles always live on the top-level menu that owns the whole group
+  const owner = getMenuRoleOwner(db, m);
+  const roleIds = Array.isArray(owner.roleIds) ? owner.roleIds : [];
+
+  const kidCount = getMenuChildCount(db, m.id);
+  const groupTag = `<span class="badge muted" style="margin-right:8px;">${renderIcon('compass')} Top-Level Menu${kidCount ? ` (${kidCount} submenu item(s) included)` : ''}</span>`;
+
+  if (roleIds.length === 0) {
+    container.innerHTML = groupTag + `<span class="badge info">${renderIcon('globe')} Public (All Roles Allowed)</span>`;
     return;
   }
 
-  container.innerHTML = m.roleIds.map(rid => {
+  container.innerHTML = groupTag + roleIds.map(rid => {
     const r = (db.roles || []).find(x => x.id === rid);
     return `
       <span class="badge role-badge" style="display:inline-flex; align-items:center;">
@@ -3695,9 +4143,10 @@ window.makeMenuPublic = function() {
   const db = loadDB();
   const menuId = $('mapMenuSelect') && $('mapMenuSelect').value;
   const m = (db.menus || []).find(x => x.id === menuId);
-  if (!m) return showAlert('Please select a valid menu');
+  if (!m) return showAlert('Please select a valid top-level menu');
 
-  askConfirm(`Make menu "${m.title}" public to ALL roles?`, 'Yes, make public').then(ok => {
+  const kids = getMenuDescendantIds(db, m.id).size;
+  askConfirm(`Make menu "${m.title}" public to ALL roles?${kids ? `\n\nIts ${kids} submenu item(s) will also become public because they inherit this access.` : ''}`, 'Yes, make public').then(ok => {
     if (!ok) return;
     const db2 = loadDB();
     const target = (db2.menus || []).find(x => x.id === menuId);
@@ -3715,7 +4164,7 @@ window.makeMenuPublic = function() {
 function renderRoleMenuMappingTable() {
   const db = loadDB();
   const q = ($('mapSearch') && $('mapSearch').value || '').toLowerCase().trim();
-  const list = (db.menus || []).slice().sort((a, b) => (parseInt(a.order, 10) || 1) - (parseInt(b.order, 10) || 1));
+  const list = sortMenusByOrder(db.menus || []);
 
   const columnDefs = [
     {
@@ -3732,7 +4181,11 @@ function renderRoleMenuMappingTable() {
       cellRenderer: (params) => {
         const m = params.data;
         if (!m) return '';
-        const mapBtn = `<button type="button" class="btn primary sm" onclick="openRoleMappingModal('${m.id}')" title="Map Role to this Menu">➕ Map Role</button>`;
+        // Only top-level menus own role access; submenus inherit it
+        if (m.parentId) {
+          return `<span class="muted small" title="Submenus inherit the role access of their top-level parent">${renderIcon('lock')} Inherited</span>`;
+        }
+        const mapBtn = `<button type="button" class="btn primary sm" onclick="openRoleMappingModal('${m.id}')" title="Map Role to this Menu Group">➕ Map Role</button>`;
         const pubBtn = (m.roleIds && m.roleIds.length > 0)
           ? `<button type="button" class="btn secondary sm" onclick="makeMenuPublicDirect('${m.id}')" title="Make Public (Allow All Roles)">${renderIcon('globe')}</button>`
           : '';
@@ -3745,9 +4198,14 @@ function renderRoleMenuMappingTable() {
       minWidth: 180,
       cellRenderer: (params) => {
         const m = params.data;
+        const depth = m.depth || 0;
+        const indent = depth > 0 ? `<span class="grid-tree-indent">${'&nbsp;'.repeat(depth * 3)}↳</span>` : '';
+        const tag = depth > 0
+          ? `<span class="badge submenu-badge sm">${renderIcon('layers')} Submenu</span>`
+          : `<span class="badge muted sm">${renderIcon('compass')} Top-Level</span>`;
         return `<div style="display:flex;align-items:center;gap:8px;">
           <span style="font-size:1.1rem;width:24px;text-align:center;">${renderIcon(m.icon)}</span>
-          <b>${escapeHtml(m.title || '')}</b>
+          <b>${indent}${escapeHtml(m.title || '')}</b> ${tag}
         </div>`;
       }
     },
@@ -3762,7 +4220,7 @@ function renderRoleMenuMappingTable() {
       field: 'targetType',
       width: 120,
       cellRenderer: (params) => params.value === 'external'
-        ? '<span class="badge warn">External</span>'
+        ? '<span class="badge warn">Web View</span>'
         : '<span class="badge primary">Internal</span>'
     },
     {
@@ -3775,22 +4233,37 @@ function renderRoleMenuMappingTable() {
   ];
 
   const rowData = list.map(m => {
+    // Submenu rows show the inherited access of their top-level parent (read only)
+    const owner = getMenuRoleOwner(db, m);
+    const roleIds = Array.isArray(owner.roleIds) ? owner.roleIds : [];
     let rolesHtml = '';
-    if (!m.roleIds || m.roleIds.length === 0) {
+    if (roleIds.length === 0) {
       rolesHtml = `<span class="badge info">${renderIcon('globe')} All Roles (Public)</span>`;
     } else {
-      const badges = m.roleIds.map(rid => {
+      const badges = roleIds.map(rid => {
         const r = (db.roles || []).find(x => x.id === rid);
         const rName = r ? escapeHtml(r.name) : 'Unknown';
+        const unmap = m.parentId
+          ? ''
+          : `<button type="button" class="unmap-badge-btn" onclick="unmapRoleFromMenu('${m.id}', '${rid}')" title="Remove role">&times;</button>`;
         return `<span class="badge role-badge" style="margin-right: 4px; display:inline-flex; align-items:center; gap:4px;">
           ${renderIcon('shield')} ${rName}
-          <button type="button" class="unmap-badge-btn" onclick="unmapRoleFromMenu('${m.id}', '${rid}')" title="Remove role">&times;</button>
+          ${unmap}
         </span>`;
       });
       rolesHtml = badges.join('');
     }
+    if (m.parentId) {
+      rolesHtml = `<span class="badge submenu-badge" style="margin-right:4px;">${renderIcon('layers')} Inherited</span>` + rolesHtml;
+    }
     return {
       ...m,
+      parentId: m.parentId || '',
+      depth: getMenuAncestorIds(db, m.id).length,
+      parentTitle: m.parentId ? menuParentTitle(db, m.parentId) : '',
+      childCount: getMenuChildCount(db, m.id),
+      pathLabel: menuPathLabel(db, m),
+      roleOwnerTitle: owner ? owner.title : '',
       rolesFormatted: rolesHtml
     };
   });
@@ -3826,8 +4299,16 @@ window.openRoleMappingForMenu = function(menuId) {
 
 window.openRoleMappingModal = function(menuId) {
   const db = loadDB();
-  const m = (db.menus || []).find(x => x.id === menuId);
+  const found = (db.menus || []).find(x => x.id === menuId);
+  if (!found) return showAlert('Menu not found');
+
+  // A submenu has no role option of its own: it inherits from its top-level parent,
+  // so the mapping dialog is opened on the parent menu group instead.
+  const m = getMenuRoleOwner(db, found);
   if (!m) return showAlert('Menu not found');
+  if (m.id !== found.id) {
+    toast(`"${found.title}" is a submenu — showing role access of parent "${m.title}"`, 'info');
+  }
 
   const modal = $('roleMappingModal');
   if (!modal) return;
@@ -3948,7 +4429,7 @@ window.viewMenu = function(id) {
   const m = (db.menus || []).find(x => x.id === id);
   if (!m) return;
 
-  const mapBtn = `<button class="btn secondary" onclick="openRoleMappingForMenu('${m.id}')">${renderIcon('shield')} Manage Role Mappings</button>`;
+  const mapBtn = `<button class="btn secondary" onclick="openRoleMappingForMenu('${m.id}')" title="${m.parentId ? 'Submenus inherit role access — opens the top-level parent' : 'Manage role access for this menu group'}">${renderIcon('shield')} ${m.parentId ? 'Parent Role Access' : 'Manage Role Mappings'}</button>`;
   const editBtn = hasPerm('menus', 'update')
     ? `<button class="btn warn" onclick="editMenu('${m.id}')">✏️ Edit Menu</button>`
     : '';
@@ -3960,15 +4441,23 @@ window.viewMenu = function(id) {
     $('menuDetailActions').innerHTML = `${mapBtn} ${editBtn} ${delBtn}`;
   }
 
+  // Role access lives on the top-level parent; submenus show it as inherited
+  const roleOwner = getMenuRoleOwner(db, m);
+  const roleIds = Array.isArray(roleOwner.roleIds) ? roleOwner.roleIds : [];
+  const inheritedNote = m.parentId
+    ? `<div class="badge submenu-badge" style="margin-bottom:10px;">${renderIcon('layers')} Inherited from top-level menu "${escapeHtml(roleOwner.title)}" — submenus have no separate role option</div>`
+    : '';
+
   let rolesBlock = '';
-  if (!m.roleIds || m.roleIds.length === 0) {
+  if (roleIds.length === 0) {
     rolesBlock = `<div class="detail-card">
       <h4>🛡️ Role Access Mapping</h4>
+      ${inheritedNote}
       <div class="badge primary" style="font-size:0.9rem; padding: 6px 14px; margin-top:8px;">${renderIcon('globe')} Available to All Roles</div>
-      <p class="muted small" style="margin-top:8px;">No role restrictions applied. Every authenticated user can see this menu in their navigation sidebar.</p>
+      <p class="muted small" style="margin-top:8px;">No role restrictions applied. Every authenticated user can see this menu group in their navigation sidebar.</p>
     </div>`;
   } else {
-    const rolesList = m.roleIds.map(rid => {
+    const rolesList = roleIds.map(rid => {
       const r = (db.roles || []).find(x => x.id === rid);
       const userCount = (db.users || []).filter(u => u.roleId === rid).length;
       return `<div class="mapped-role-row">
@@ -3978,7 +4467,8 @@ window.viewMenu = function(id) {
     }).join('');
 
     rolesBlock = `<div class="detail-card">
-      <h4>🛡️ Mapped Roles (${m.roleIds.length})</h4>
+      <h4>🛡️ Mapped Roles (${roleIds.length})</h4>
+      ${inheritedNote}
       <p class="muted small" style="margin-bottom:12px;">Users belonging to any of these roles have sidebar navigation access:</p>
       <div class="mapped-roles-list">${rolesList}</div>
     </div>`;
@@ -4025,7 +4515,25 @@ window.viewMenu = function(id) {
               </div>
               <div class="detail-field">
                 <span class="detail-label">Target Type</span>
-                <span class="detail-value">${m.targetType === 'external' ? '↗ External Web Link' : '⚡ SPA Internal Route'}</span>
+                <span class="detail-value">${m.targetType === 'external' ? '🌐 Web View (opens inside the app)' : '⚡ SPA Internal Route'}</span>
+              </div>
+              <div class="detail-field">
+                <span class="detail-label">Menu Level</span>
+                <span class="detail-value">${m.parentId
+                  ? `<span class="badge submenu-badge">${renderIcon('layers')} Submenu of ${escapeHtml(menuParentTitle(db, m.parentId) || 'Deleted Menu')}</span>`
+                  : `<span class="badge muted">${renderIcon('compass')} Top-Level Menu</span>`}</span>
+              </div>
+              <div class="detail-field">
+                <span class="detail-label">Navigation Path</span>
+                <span class="detail-value"><code>${escapeHtml(menuPathLabel(db, m))}</code></span>
+              </div>
+              <div class="detail-field">
+                <span class="detail-label">Sub-items (Submenus)</span>
+                <span class="detail-value">${(() => {
+                  const kids = getMenuChildren(db, m.id);
+                  if (!kids.length) return '<span class="muted small">None</span>';
+                  return kids.map(k => `<span class="badge submenu-badge" style="margin: 2px 4px 2px 0;">${renderIcon('chevron-right')} ${escapeHtml(k.title)}</span>`).join('');
+                })()}</span>
               </div>
               <div class="detail-field">
                 <span class="detail-label">Display Order</span>
@@ -4058,18 +4566,33 @@ window.deleteMenu = function(id) {
   const db = loadDB();
   const m = (db.menus || []).find(x => x.id === id);
   if (!m) return;
-  askConfirm(`Delete menu "${m.title}"?`).then(ok => {
+
+  // Cascade delete: a parent takes its whole submenu tree down with it
+  const doomed = new Set([id, ...getMenuDescendantIds(db, id)]);
+  const kids = (db.menus || []).filter(x => x.id !== id && doomed.has(x.id));
+  const extraMsg = kids.length
+    ? `\n\n⚠️ Iske ${kids.length} submenu item(s) bhi delete ho jayenge:\n• ${kids.map(k => k.title).join('\n• ')}\n\nYe action wapas nahi aayega.`
+    : '';
+  askConfirm(`Delete menu "${m.title}"?${extraMsg}`, 'Yes, delete menu + submenus').then(ok => {
     if (!ok) return;
     const db2 = loadDB();
-    db2.menus = (db2.menus || []).filter(x => x.id !== id);
+    db2.menus = (db2.menus || []).filter(x => !doomed.has(x.id));
     saveDB(db2);
-    logAudit('Menus', 'delete', m.title, summarize('menus', m), '—');
+    logAudit('Menus', 'delete', m.title, summarize('menus', m),
+      kids.length ? `— (cascade deleted with ${kids.length} submenu item(s): ${kids.map(k => k.title).join(', ')})` : '—');
+    doomed.forEach(did => {
+      window.expandedMenuGroups.delete(did);
+      window.collapsedMenuGroups.delete(did);
+      if (window.activeDynamicMenuId === did) window.activeDynamicMenuId = '';
+    });
     renderMenus();
     renderSidebar();
     renderRoleMenuMappingUI();
     renderAudit();
     setModuleView('menus', 'list');
-    toast('Menu deleted');
+    toast(kids.length
+      ? `Menu + ${kids.length} submenu item(s) deleted`
+      : 'Menu deleted');
   });
 };
 
@@ -4113,7 +4636,7 @@ function summarize(module, o) {
     case 'categories': return parentName(o.parentId) ? `${o.name} (parent: ${parentName(o.parentId)})` : o.name;
     case 'projects': return `${o.name} [${(o.categoryIds || []).length} categories]`;
     case 'documents': return `${o.title} (v${o.currentVersion || 0})`;
-    case 'menus': return `${o.icon || '🧭'} ${o.title} (${o.route || ''}) [${(o.roleIds || []).length ? o.roleIds.length + ' roles' : 'All roles'}]`;
+    case 'menus': return `${o.icon || '🧭'} ${o.title} (${o.route || ''})${o.parentId ? ' [submenu]' : ''} [${(o.roleIds || []).length ? o.roleIds.length + ' roles' : 'All roles'}]`;
     default: return o.name || o.title || o.username || '';
   }
 }
@@ -5400,25 +5923,57 @@ document.addEventListener('DOMContentLoaded', () => {
       const id = $('menuId').value;
       const title = $('menuTitle').value.trim();
       const icon = $('menuIcon').value.trim() || 'fa-solid fa-compass';
-      const route = $('menuRoute').value.trim();
-      const targetType = $('menuTargetType').value || 'internal';
+      const parentSel = $('menuParent');
+      let parentId = (parentSel && parentSel.value) || '';
+      const routeInput = $('menuRoute');
       const order = parseInt($('menuOrder').value, 10) || 1;
       const status = $('menuStatus').value || 'active';
       const description = $('menuDesc').value.trim();
 
+      // Safety net: a menu saved as a submenu keeps its parent even if the form
+      // was reset by a stale draft — it can only be detached deliberately.
+      if (id && !parentId) {
+        const saved = db.menus.find(x => x.id === id);
+        if (saved && saved.parentId && isValidMenuParent(id, saved.parentId)) {
+          parentId = saved.parentId;
+          if (parentSel) parentSel.value = parentId;
+          onMenuParentChange();
+        }
+      }
+
+      // A top-level menu is only a group header, so it has no route of its own
+      const route = parentId ? (routeInput.value.trim() || (((db.menus.find(x => x.id === id) || {}).route) || '')) : '';
+      let targetType = parentId ? ($('menuTargetType').value || 'internal') : 'internal';
+
+      // Auto-detect: a web link must always open in the Web View, whatever the dropdown says
+      if (parentId && route && isWebUrlRoute(route) && targetType !== 'external') {
+        targetType = 'external';
+        if ($('menuTargetType')) $('menuTargetType').value = 'external';
+      }
+
       if (!title) return showAlert('Menu title is required');
-      if (!route) return showAlert('Route path is required');
+      if (parentId && !route) return showAlert('Submenu ke liye Route Path / Link zaroori hai (page slug ya http(s) URL)');
+      if (parentId && targetType === 'external' && !sanitizeWebUrl(route)) {
+        return showAlert('Web View needs a valid link starting with http:// or https:// (e.g. https://example.com)');
+      }
       if (!id && !hasPerm('menus', 'add')) return showAlert('You do not have add permission');
       if (id && !hasPerm('menus', 'update')) return showAlert('You do not have update permission');
+
+      if (parentId && !isValidMenuParent(id, parentId)) {
+        return showAlert('Invalid parent menu: a menu cannot be nested inside itself or one of its own submenus');
+      }
 
       const dupTitle = db.menus.find(m => m.title.toLowerCase() === title.toLowerCase() && m.id !== id);
       if (dupTitle) return showAlert(`A menu with title "${title}" already exists`);
 
-      const selectedRoleIds = [...document.querySelectorAll('#menuFormRoleBoxes input:checked')].map(c => c.value);
+      // Roles are NOT part of this form:
+      // - a new top-level menu starts public and is configured in "Role-Menu Mapping"
+      // - a submenu always inherits the role access of its top-level parent (roleIds = [])
       if (id) {
         const ex = db.menus.find(m => m.id === id);
         var menuBefore = { ...ex, roleIds: [...(ex.roleIds || [])] };
-        Object.assign(ex, { title, icon, route, targetType, order, status, description, roleIds: selectedRoleIds });
+        Object.assign(ex, { title, icon, route, targetType, order, status, description, parentId });
+        if (parentId) ex.roleIds = []; // submenu: access is always inherited
       } else {
         const newMenu = {
           id: uid('menu'),
@@ -5429,11 +5984,17 @@ document.addEventListener('DOMContentLoaded', () => {
           order,
           status,
           description,
-          roleIds: selectedRoleIds
+          roleIds: [],
+          parentId
         };
         db.menus.push(newMenu);
       }
       saveDB(db);
+
+      const parentLabel = parentId ? menuParentTitle(db, parentId) : '— Top-Level Menu —';
+      const accessLabel = parentId
+        ? `Inherited from "${(getMenuRoot(db, parentId) || {}).title || menuParentTitle(db, parentId)}"`
+        : 'Public (set from Role-Menu Mapping tab)';
 
       if (id) {
         const md = diffRows([
@@ -5441,6 +6002,7 @@ document.addEventListener('DOMContentLoaded', () => {
           ['icon', menuBefore.icon, icon],
           ['route', menuBefore.route, route],
           ['target', menuBefore.targetType, targetType],
+          ['parent', menuBefore.parentId ? menuParentTitle(db, menuBefore.parentId) : '—', parentLabel],
           ['order', menuBefore.order, order],
           ['status', menuBefore.status, status],
           ['description', menuBefore.description || '—', description || '—']
@@ -5452,8 +6014,10 @@ document.addEventListener('DOMContentLoaded', () => {
           ['icon', icon],
           ['route', route],
           ['target', targetType],
+          ['parent', parentLabel],
           ['order', order],
           ['status', status],
+          ['role access', accessLabel],
           ['description', description || '—']
         ]));
       }
@@ -5463,13 +6027,19 @@ document.addEventListener('DOMContentLoaded', () => {
         $('menuIcon').value = 'fa-solid fa-compass';
         $('menuIconPreview').innerHTML = renderIcon('fa-solid fa-compass');
         $('menuIconText').textContent = 'fa-solid fa-compass';
+        if ($('menuParent')) $('menuParent').value = '';
       });
+      // Make sure the freshly saved submenu is visible in the sidebar straight away
+      if (parentId) {
+        window.expandedMenuGroups.add(parentId);
+        window.collapsedMenuGroups.delete(parentId);
+      }
       renderMenus();
       renderSidebar();
       renderRoleMenuMappingUI();
       renderAudit();
       setModuleView('menus', 'list');
-      toast(id ? 'Menu updated' : 'Menu created');
+      toast(id ? `Menu updated${parentId ? ` (submenu of "${parentLabel}")` : ''}` : `Menu created${parentId ? ` as submenu of "${parentLabel}" — role access inherited` : ''}`);
     });
   }
 
@@ -5493,11 +6063,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const db = loadDB();
     const menuId = $('mapMenuSelect') && $('mapMenuSelect').value;
     const roleId = $('mapRoleSelect') && $('mapRoleSelect').value;
-    if (!menuId) return showAlert('Please select a dynamic menu');
+    if (!menuId) return showAlert('Please select a top-level menu');
     if (!roleId) return showAlert('Please select a role to map');
 
-    const m = (db.menus || []).find(x => x.id === menuId);
-    if (!m) return showAlert('Menu not found');
+    // Only top-level menus own role access; a submenu always resolves to its parent group
+    const selected = (db.menus || []).find(x => x.id === menuId);
+    if (!selected) return showAlert('Menu not found');
+    if (selected.parentId) return showAlert('Role access can only be mapped on a top-level menu (No Parent)');
+    const m = selected;
     const r = (db.roles || []).find(x => x.id === roleId);
     if (!r) return showAlert('Role not found');
 
@@ -5526,6 +6099,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if ($('menuStatus')) $('menuStatus').addEventListener('change', updateLiveMenuPreview);
   if ($('menuSearch')) $('menuSearch').addEventListener('input', renderMenus);
   if ($('menuFilterStatus')) $('menuFilterStatus').addEventListener('change', renderMenus);
+  if ($('menuFilterLevel')) $('menuFilterLevel').addEventListener('change', renderMenus);
   if ($('mapSearch')) $('mapSearch').addEventListener('input', renderRoleMenuMappingTable);
 
   // Icon Picker search & overlay listeners

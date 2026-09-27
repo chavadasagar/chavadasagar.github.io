@@ -775,6 +775,234 @@ code, kbd, pre {
   color: #ffffff !important;
 }
 
+/* ==========================================================================
+   Dynamic Menu Hierarchy (Submenu Groups)
+   ========================================================================== */
+.custom-menu-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.custom-menu-row {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.custom-menu-row > .custom-menu-btn {
+  flex: 1;
+  min-width: 0;
+}
+
+.custom-menu-caret {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--sidebar-text-muted);
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease, transform 0.2s ease;
+}
+
+.custom-menu-caret:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+/* Group header: the whole row is the expand/collapse trigger (no navigation) */
+.custom-menu-parent {
+  gap: 10px;
+}
+
+.custom-menu-parent .menu-caret-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--sidebar-text-muted);
+  transition: transform 0.2s ease, color 0.15s ease;
+}
+
+.custom-menu-parent:hover .menu-caret-icon {
+  color: #ffffff;
+}
+
+.custom-menu-group.submenu-expanded > .custom-menu-row > .custom-menu-parent .menu-caret-icon {
+  transform: rotate(90deg);
+}
+
+.custom-menu-parent.submenu-parent-active {
+  background: linear-gradient(90deg, rgba(99, 102, 241, 0.22) 0%, rgba(99, 102, 241, 0.08) 100%);
+  color: #ffffff;
+  border-left: 3px solid var(--brand-primary);
+}
+
+.custom-menu-parent.submenu-parent-active .menu-label {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.custom-menu-count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 6px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: rgba(108, 99, 255, 0.22);
+  color: #c7d2fe;
+  border: 1px solid rgba(108, 99, 255, 0.4);
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.custom-menu-parent .menu-caret-icon {
+  margin-left: auto;
+}
+
+/* Placeholder group: top-level folder with no submenus and no route */
+.custom-menu-empty {
+  cursor: default;
+  opacity: 0.6;
+  font-style: italic;
+}
+
+.custom-menu-empty:hover {
+  background: transparent !important;
+  color: var(--sidebar-text-muted) !important;
+}
+
+.custom-menu-empty .menu-label {
+  font-style: italic;
+}
+
+.custom-menu-empty-hint {
+  flex-shrink: 0;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 2px 7px;
+  border-radius: 10px;
+  background: rgba(148, 163, 184, 0.18);
+  color: var(--sidebar-text-muted);
+}
+
+.custom-submenu {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-left: 18px;
+  padding-left: 10px;
+  border-left: 1px dashed rgba(148, 163, 184, 0.35);
+  overflow: hidden;
+  transition: max-height 0.22s ease, opacity 0.18s ease;
+}
+
+.custom-submenu.collapsed {
+  max-height: 0;
+  opacity: 0;
+  padding-left: 10px;
+  border-left-color: transparent;
+}
+
+.custom-submenu.expanded {
+  max-height: 640px;
+  opacity: 1;
+}
+
+.custom-submenu-item {
+  font-size: 13px;
+  font-weight: 500;
+  padding: 8px 10px;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.custom-submenu-item .menu-icon {
+  width: 18px;
+  font-size: 14px;
+}
+
+.custom-submenu-item.active {
+  box-shadow: 0 4px 14px var(--brand-glow);
+}
+
+.custom-submenu .custom-submenu {
+  margin-left: 12px;
+}
+
+/* ==========================================================================
+   In-App Web View (bare iframe surface for URL routes)
+   The dynamic route view becomes a full-height flex column so the embedded
+   page fills the whole viewport — no empty space below it.
+   ========================================================================== */
+#page-dynamic-view {
+  min-height: 0;
+}
+
+#page-dynamic-view > .panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  padding-bottom: 22px;
+}
+
+.webview-shell {
+  display: flex;
+  flex: 1;
+  min-height: 0;
+  width: 100%;
+}
+
+.webview-frame {
+  flex: 1;
+  display: block;
+  width: 100%;
+  min-height: 420px;
+  border: 1px solid var(--border-subtle);
+  border-radius: 12px;
+  background: #ffffff;
+}
+
+@media (max-width: 640px) {
+  .webview-frame {
+    min-height: 320px;
+  }
+}
+
+/* Submenu badges inside grids, detail view and role mapping */
+.badge.submenu-badge {
+  background: rgba(16, 185, 129, 0.16);
+  color: #10b981;
+  border: 1px solid rgba(16, 185, 129, 0.4);
+}
+
+[data-theme="dark"] .badge.submenu-badge {
+  background: rgba(16, 185, 129, 0.2);
+  color: #6ee7b7;
+  border-color: rgba(16, 185, 129, 0.45);
+}
+
+.badge.submenu-badge.sm {
+  font-size: 11px;
+  padding: 2px 8px;
+}
+
+.grid-tree-indent {
+  color: var(--text-muted);
+  font-weight: 500;
+  margin-right: 2px;
+}
+
 /* Sub Navigation Tabs */
 .sub-nav-tabs {
   display: inline-flex;

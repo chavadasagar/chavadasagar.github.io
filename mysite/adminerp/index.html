@@ -1127,6 +1127,11 @@
                 <option value="active">Active Only</option>
                 <option value="inactive">Inactive Only</option>
               </select>
+              <select id="menuFilterLevel">
+                <option value="">All Levels</option>
+                <option value="root">Top-Level Menus</option>
+                <option value="child">Submenus (Has Parent)</option>
+              </select>
             </div>
             <div id="menusGrid" class="ag-theme-quartz erp-grid"></div>
             <table class="hidden"><tbody id="menusTable"></tbody></table>
@@ -1166,15 +1171,30 @@
                 <p class="muted small" style="margin-top: 4px;">Click the icon above to pick from offline vector icons or emojis</p>
               </div>
 
-              <label>Route Path / Slug
-                <input type="text" id="menuRoute" placeholder="e.g. reports, analytics, or https://..." required autocomplete="off">
+              <label class="full" id="menuRouteField">Route Path / Slug / Link
+                <input type="text" id="menuRoute" placeholder="e.g. reports, or https://example.com" autocomplete="off">
+                <p class="muted small" style="margin: 0;">
+                  Sirf <b>submenu</b> ke liye — page slug ya web link (http/https).
+                  Top-level menu ek <b>group header</b> hota hai, isliye usme route nahi hota.
+                </p>
               </label>
 
-              <label>Target Action
+              <label id="menuTargetField">Target Action
                 <select id="menuTargetType">
                   <option value="internal">Internal Dynamic Page (SPA View)</option>
-                  <option value="external">External Web Link (Opens in New Tab)</option>
+                  <option value="external">Web View (URL Link Loaded Inside App)</option>
                 </select>
+                <p class="muted small" style="margin: 0;">Web URL link select karne par woh link app ke andar hi Web View (iframe) me khulega — naye tab me nahi.</p>
+              </label>
+
+              <label class="full">Parent Menu (Make this item a Submenu)
+                <select id="menuParent" onchange="onMenuParentChange()">
+                  <option value="">🚫 No Parent — Top-Level Menu (Group Header)</option>
+                </select>
+                <p class="muted small" style="margin: 0;">
+                  <b>No Parent</b> = group header (sirf submenus hold karta hai, route nahi hota, click se expand/collapse).
+                  Parent select karte hi <b>Route Path</b> aa jaata hai aur ye menu us parent ke andar nest ho jaata hai.
+                </p>
               </label>
 
               <label>Display Order (Priority)
@@ -1187,12 +1207,6 @@
                   <option value="inactive">Inactive (Hidden)</option>
                 </select>
               </label>
-
-              <div class="full" style="background: var(--bg-surface-subtle); padding: 12px; border-radius: 8px; border: 1px solid var(--border-subtle);">
-                <div style="font-weight: 600; font-size: 0.85rem; color: var(--text-primary); margin-bottom: 6px;">Mapped Roles (Role-Based Visibility):</div>
-                <div id="menuFormRoleBoxes" class="checkbox-group" style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px;"></div>
-                <p class="muted small" style="margin-top: 6px; margin-bottom: 0;">Check roles that should see this menu in their sidebar. Leave all unchecked to make it <b>Public (Available to all roles)</b>.</p>
-              </div>
 
               <label class="full">Description
                 <input type="text" id="menuDesc" placeholder="Brief scope or objectives for this custom navigation route">
@@ -1214,11 +1228,11 @@
               <div class="panel-header">
                 <div>
                   <h3>🛡️ Map Menu to Role</h3>
-                  <p class="muted small">Select a dynamic menu and role to configure navigation visibility</p>
+                  <p class="muted small">Select a top-level menu and role to configure navigation visibility (submenus inherit their parent's access)</p>
                 </div>
               </div>
               <form id="roleMenuMapForm" class="form-grid" style="margin-top: 14px;" onsubmit="saveRoleMappingDirect(event); return false;">
-                <label class="full">Select Dynamic Menu
+                <label class="full">Select Top-Level Menu (No Parent only)
                   <select id="mapMenuSelect" required onchange="onMapMenuSelectChange()">
                     <!-- Options populated dynamically -->
                   </select>
@@ -1233,7 +1247,7 @@
                 <div class="full" style="background: var(--bg-surface-subtle); padding: 12px; border-radius: 8px; border: 1px solid var(--border-subtle);">
                   <div style="font-weight: 600; font-size: 0.85rem; color: var(--text-primary); margin-bottom: 6px;">Currently Mapped Roles for Selected Menu:</div>
                   <div id="mapSelectedMenuRoles" class="role-badge-group" style="min-height: 24px;"></div>
-                  <p class="muted small" style="margin-top: 6px; margin-bottom: 0;">If no roles are mapped, the menu is <b>Public (Available to all users)</b>.</p>
+                  <p class="muted small" style="margin-top: 6px; margin-bottom: 0;">If no roles are mapped, the menu group is <b>Public (Available to all users)</b>. All submenus under it inherit the same access.</p>
                 </div>
 
                 <div class="form-actions full" style="margin-top: 8px; display: flex; flex-direction: column; gap: 8px;">
@@ -1289,10 +1303,16 @@
               <span>← Back to Dashboard</span>
             </button>
             <h3 id="dynPageTitle">Custom Route</h3>
-            <span class="badge primary" id="dynRouteBadge">/custom</span>
           </div>
 
-          <div class="dynamic-canvas">
+          <!-- In-App Web View: any URL route (including submenu links) loads here -->
+          <div class="webview-shell hidden" id="dynWebview">
+            <iframe id="webviewFrame" class="webview-frame" title="Embedded Web View"
+                    sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-popups-to-escape-sandbox"
+                    referrerpolicy="no-referrer"></iframe>
+          </div>
+
+          <div class="dynamic-canvas" id="dynCanvas">
             <div class="dynamic-canvas-icon" id="dynPageIcon">🧭</div>
             <h3 id="dynCanvasHeading">Dynamic Page Workspace</h3>
             <p id="dynCanvasDesc">This is a dynamically configured route view managed by AdminERP Menu Builder.</p>
