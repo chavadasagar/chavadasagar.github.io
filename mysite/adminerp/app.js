@@ -5549,7 +5549,70 @@ function updateBackupStats() {
   }
 }
 
-window.exportApplicationJSON = function() {
+function verifyAdminPassword(entered) {
+  if (!entered) return false;
+  const db = loadDB();
+  const adminUser = (db.users || []).find(u => u.username.toLowerCase() === 'admin');
+  const adminRole = (db.roles || []).find(r => r.name === 'Admin');
+  const adminUsers = (db.users || []).filter(u => u.username.toLowerCase() === 'admin' || (adminRole && u.roleId === adminRole.id));
+  return adminUsers.some(u => u.password === entered || u.password === entered.trim()) ||
+         (adminUser && (adminUser.password === entered || adminUser.password === entered.trim()));
+}
+
+function promptAdminPasswordAuth({ title, subtitle, confirmBtnText = 'Verify & Proceed', confirmBtnColor = '#4f46e5', icon = 'warning', onVerified }) {
+  if (window.Swal) {
+    Swal.fire({
+      title: title || '🔒 Admin Password Required',
+      html: `
+        ${subtitle ? `<div style="text-align: left; margin-bottom: 12px; font-size: 0.9rem; line-height: 1.5; color: var(--text-secondary); background: var(--bg-surface-subtle); padding: 10px 14px; border-radius: 8px; border: 1px solid var(--border-subtle);">${subtitle}</div>` : ''}
+        <p style="margin: 0 0 10px 0; font-size: 0.92rem; text-align: left; font-weight: 500;">Please enter the <strong>Admin Password</strong> to authorize:</p>
+      `,
+      input: 'password',
+      inputPlaceholder: 'Enter admin password',
+      inputAttributes: {
+        autocapitalize: 'off',
+        autocorrect: 'off',
+        autocomplete: 'current-password',
+        style: 'box-sizing: border-box; font-size: 1rem;'
+      },
+      icon: icon || 'warning',
+      showCancelButton: true,
+      confirmButtonText: confirmBtnText,
+      confirmButtonColor: confirmBtnColor,
+      cancelButtonText: 'Cancel',
+      cancelButtonColor: '#4b5563',
+      focusConfirm: false,
+      focusCancel: true,
+      preConfirm: (inputPassword) => {
+        if (!inputPassword) {
+          Swal.showValidationMessage('Admin password is required');
+          return false;
+        }
+        if (!verifyAdminPassword(inputPassword)) {
+          Swal.showValidationMessage('Incorrect admin password. Action rejected.');
+          return false;
+        }
+        return true;
+      }
+    }).then(result => {
+      if (result.isConfirmed && typeof onVerified === 'function') {
+        onVerified();
+      }
+    });
+  } else {
+    const entered = prompt((subtitle ? subtitle + '\n\n' : '') + 'Please enter the Admin Password to authorize:');
+    if (entered === null) return;
+    if (!entered) {
+      return showAlert('Admin password is required', 'error');
+    }
+    if (!verifyAdminPassword(entered)) {
+      return showAlert('Incorrect admin password. Action aborted.', 'error');
+    }
+    if (typeof onVerified === 'function') onVerified();
+  }
+}
+
+function doExportApplicationJSON() {
   const db = loadDB();
   const u = currentUser();
   const now = new Date();
@@ -5598,11 +5661,27 @@ window.exportApplicationJSON = function() {
     else if (a.parentNode) a.parentNode.removeChild(a);
   }, 150);
 
-  logAudit('System', 'export', u ? u.username : 'admin', 'Full Database Backup', `Exported ${payload._meta.counts.users} users, ${payload._meta.counts.roles} roles, ${payload._meta.counts.menus} menus, theme: ${currentTheme}`);
+  logAudit('System', 'export', u ? u.username : 'admin', 'Full Database Backup', `Exported ${payload._meta.counts.users} users, ${payload._meta.counts.roles} roles, ${payload._meta.counts.menus} menus, theme: ${currentTheme} with admin password authorization`);
   toast('JSON Backup downloaded successfully!');
+}
+
+window.exportApplicationJSON = function() {
+  if (!hasPerm('backup', 'read')) {
+    return showAlert('You do not have permission to export backup data', 'error');
+  }
+
+  promptAdminPasswordAuth({
+    title: '🔒 Export Backup Authorization',
+    subtitle: 'Downloading the full system backup JSON contains user accounts, roles, documents, and database records.',
+    confirmBtnText: 'Verify & Download',
+    confirmBtnColor: '#4f46e5',
+    onVerified: () => {
+      doExportApplicationJSON();
+    }
+  });
 };
 
-window.copyBackupJSONToClipboard = function() {
+function doCopyBackupJSONToClipboard() {
   const db = loadDB();
   const u = currentUser();
   const currentTheme = localStorage.getItem(THEME_KEY) || db.theme || (document.documentElement.getAttribute('data-theme') || 'dark');
@@ -5623,6 +5702,7 @@ window.copyBackupJSONToClipboard = function() {
   if (navigator.clipboard && navigator.clipboard.writeText) {
     navigator.clipboard.writeText(jsonStr).then(() => {
       toast('Backup JSON copied to clipboard!');
+      logAudit('System', 'export', u ? u.username : 'admin', 'Backup JSON Copy', 'Copied full database JSON to clipboard with admin password authorization');
     }).catch(() => fallbackCopy(jsonStr));
   } else {
     fallbackCopy(jsonStr);
@@ -5633,11 +5713,32 @@ window.copyBackupJSONToClipboard = function() {
     ta.value = text;
     document.body.appendChild(ta);
     ta.select();
-    try { document.execCommand('copy'); toast('Backup JSON copied to clipboard!'); }
-    catch (_) { showAlert('Could not copy automatically. Please export file instead.'); }
+    try {
+      document.execCommand('copy');
+      toast('Backup JSON copied to clipboard!');
+      logAudit('System', 'export', u ? u.username : 'admin', 'Backup JSON Copy', 'Copied full database JSON to clipboard with admin password authorization');
+    } catch (_) {
+      showAlert('Could not copy automatically. Please export file instead.');
+    }
     if (typeof ta.remove === 'function') ta.remove();
     else if (ta.parentNode) ta.parentNode.removeChild(ta);
   }
+}
+
+window.copyBackupJSONToClipboard = function() {
+  if (!hasPerm('backup', 'read')) {
+    return showAlert('You do not have permission to export backup data', 'error');
+  }
+
+  promptAdminPasswordAuth({
+    title: '🔒 Export Backup Authorization',
+    subtitle: 'Copying the full database JSON to clipboard contains all credentials and records.',
+    confirmBtnText: 'Verify & Copy',
+    confirmBtnColor: '#4f46e5',
+    onVerified: () => {
+      doCopyBackupJSONToClipboard();
+    }
+  });
 };
 
 window.handleBackupFileSelect = function(e) {
