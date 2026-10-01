@@ -8,7 +8,7 @@ const PAGE_LABELS = {
   users: 'Users',
   roles: 'Access Control',
   departments: 'Department',
-  categories: 'Category Tree',
+  categories: 'Category',
   projects: 'Projects',
   documents: 'Documents',
   menus: 'Menu Builder',
