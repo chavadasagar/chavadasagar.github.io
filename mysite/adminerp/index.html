@@ -1974,43 +1974,91 @@
 <!-- ============ ANNOUNCEMENT DETAIL MODAL ============ -->
 <div id="annDetailModal" class="cmd-overlay hidden" onclick="if(event.target === this) closeAnnModal()">
   <div class="cmd-box ann-detail-modal-box">
-    <div class="modal-header space-between">
-      <div style="display: flex; align-items: center; gap: 10px;">
-        <span id="modalAnnTypeBadge" class="ticker-type-pill ticker-type-info">ℹ️ INFO</span>
-        <h3 id="modalAnnTitle" style="margin: 0; font-size: 1.15rem; font-weight: 700;">Announcement</h3>
+    <!-- Header -->
+    <div class="ann-modal-header">
+      <div class="ann-header-left">
+        <div class="ann-header-badge-row">
+          <span id="modalAnnTypeBadge" class="ticker-type-pill ticker-type-info">ℹ️ INFO</span>
+          <span class="ann-header-subtitle">System Broadcast</span>
+        </div>
+        <h3 id="modalAnnTitle" class="ann-header-title">Announcement</h3>
       </div>
-      <button class="modal-close-btn" onclick="closeAnnModal()">✕</button>
+      <button type="button" class="ann-modal-close-btn" onclick="closeAnnModal()" title="Close (Esc)">✕</button>
     </div>
+
+    <!-- Body -->
     <div class="ann-modal-body">
-      <div class="ann-meta-strip">
-        <div class="ann-meta-item">
-          <span class="muted small">Status:</span>
-          <span id="modalAnnStatusBadge" class="badge">Active</span>
+      <!-- 4-Card Status & Timeline Grid -->
+      <div class="ann-meta-grid">
+        <!-- Status Card -->
+        <div class="ann-meta-card">
+          <div class="ann-meta-card-label">
+            <span class="ann-meta-icon">📡</span>
+            <span>Status</span>
+          </div>
+          <div class="ann-meta-card-value">
+            <span id="modalAnnStatusBadge" class="ann-status-pill badge-live">🟢 Live Broadcast</span>
+          </div>
         </div>
-        <div class="ann-meta-item">
-          <span class="muted small">Starts:</span>
-          <span id="modalAnnStart" class="ann-meta-val">—</span>
+
+        <!-- Starts Card -->
+        <div class="ann-meta-card">
+          <div class="ann-meta-card-label">
+            <span class="ann-meta-icon">📅</span>
+            <span>Starts</span>
+          </div>
+          <div class="ann-meta-card-value">
+            <span id="modalAnnStart" class="ann-meta-text-val">—</span>
+          </div>
         </div>
-        <div class="ann-meta-item">
-          <span class="muted small">Expires:</span>
-          <span id="modalAnnExpiry" class="ann-meta-val">—</span>
+
+        <!-- Expires Card -->
+        <div class="ann-meta-card">
+          <div class="ann-meta-card-label">
+            <span class="ann-meta-icon">⏱️</span>
+            <span>Expires</span>
+          </div>
+          <div class="ann-meta-card-value">
+            <span id="modalAnnExpiry" class="ann-meta-text-val">—</span>
+          </div>
         </div>
-        <div class="ann-meta-item">
-          <span class="muted small">Time Remaining:</span>
-          <span id="modalAnnRemaining" class="badge warn">—</span>
+
+        <!-- Time Remaining Card -->
+        <div class="ann-meta-card">
+          <div class="ann-meta-card-label">
+            <span class="ann-meta-icon">⏳</span>
+            <span>Remaining</span>
+          </div>
+          <div class="ann-meta-card-value">
+            <span id="modalAnnRemaining" class="ann-status-pill badge-remaining">—</span>
+          </div>
         </div>
       </div>
-      <div class="ann-desc-box">
-        <div class="muted small" style="margin-bottom: 6px; font-weight: 600;">Message Content:</div>
+
+      <!-- Message Content Box -->
+      <div class="ann-message-card">
+        <div class="ann-message-card-header">
+          <div class="ann-message-label">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+            </svg>
+            <span>Broadcast Message</span>
+          </div>
+          <button type="button" class="ann-copy-btn" onclick="copyAnnouncementContent()" title="Copy message to clipboard">
+            📋 Copy
+          </button>
+        </div>
         <p id="modalAnnDesc" class="ann-desc-text"></p>
       </div>
     </div>
-    <div class="modal-actions space-between mt">
-      <button type="button" class="btn secondary" onclick="goPage('announcements'); closeAnnModal();">
+
+    <!-- Footer -->
+    <div class="ann-modal-footer">
+      <button type="button" class="btn secondary sm ann-center-btn" onclick="goPage('announcements'); closeAnnModal();">
         <span>📢 Go to Announcements Center</span>
       </button>
-      <div style="display: flex; gap: 8px;" id="modalAnnActionBtns">
-        <button type="button" class="btn primary" onclick="closeAnnModal()">Close</button>
+      <div class="ann-modal-btn-group" id="modalAnnActionBtns">
+        <button type="button" class="btn primary sm" onclick="closeAnnModal()">Close</button>
       </div>
     </div>
   </div>

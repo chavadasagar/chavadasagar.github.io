@@ -5101,12 +5101,21 @@ window.openAnnouncementDetailModal = function(id) {
   $('modalAnnTitle').textContent = a.title;
   $('modalAnnStart').textContent = formatDateTimePretty(a.startDateTime);
   $('modalAnnExpiry').textContent = formatDateTimePretty(a.expiryDateTime);
-  $('modalAnnRemaining').textContent = rem;
   $('modalAnnDesc').textContent = a.description || '—';
+
+  const remEl = $('modalAnnRemaining');
+  if (remEl) {
+    remEl.textContent = rem || '—';
+    if (rem === 'Expired' || state === 'expired') {
+      remEl.className = 'ann-status-pill badge-remaining-expired';
+    } else {
+      remEl.className = 'ann-status-pill badge-remaining';
+    }
+  }
 
   const statusBadge = $('modalAnnStatusBadge');
   if (statusBadge) {
-    statusBadge.className = `badge badge-${state}`;
+    statusBadge.className = `ann-status-pill badge-${state}`;
     statusBadge.textContent = state === 'active' ? '🟢 Live Broadcast' : (state === 'scheduled' ? '⏳ Scheduled' : (state === 'expired' ? '⛔ Expired' : '⚪ Inactive'));
   }
 
@@ -5119,7 +5128,7 @@ window.openAnnouncementDetailModal = function(id) {
     if (hasPerm('announcements', 'delete')) {
       extraBtns += `<button type="button" class="btn danger sm" onclick="closeAnnModal(); deleteAnnouncement('${a.id}');">🗑️ Delete</button>`;
     }
-    actBox.innerHTML = extraBtns + `<button type="button" class="btn primary sm" onclick="closeAnnModal()">Close</button>`;
+    actBox.innerHTML = extraBtns + `<button type="button" class="btn primary sm" onclick="closeAnnModal()">✕ Close</button>`;
   }
 
   modal.classList.remove('hidden');
@@ -5128,6 +5137,19 @@ window.openAnnouncementDetailModal = function(id) {
 window.closeAnnModal = function() {
   const modal = $('annDetailModal');
   if (modal) modal.classList.add('hidden');
+};
+
+window.copyAnnouncementContent = function() {
+  const text = $('modalAnnDesc') ? $('modalAnnDesc').textContent : '';
+  if (!text || text === '—') {
+    toast('No announcement content to copy.', 'info');
+    return;
+  }
+  navigator.clipboard.writeText(text).then(() => {
+    toast('Announcement text copied to clipboard!', 'success');
+  }).catch(() => {
+    toast('Failed to copy text.', 'error');
+  });
 };
 
 function renderAnnouncements(refreshGrid = true) {
