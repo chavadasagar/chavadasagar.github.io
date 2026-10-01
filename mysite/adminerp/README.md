@@ -10,7 +10,7 @@ AdminERP is a modern, responsive, client-side Enterprise Resource Planning (ERP)
 - **Left-Pinned Sticky Actions Column**: The Actions column across all grids is locked and pinned to the left edge (`pinned: 'left', lockPinned: true`), ensuring essential actions (View, Edit, Delete, Map Role) stay visible during wide table horizontal scrolling.
 - **100% Offline & CDN-Free Operation**: Zero external network or font dependencies. All libraries (`ag-grid-community.min.js`, `ag-grid.css`, `ag-theme-quartz.css`, `sweetalert2.all.min.js`) are served locally from `lib/`.
 - **Offline Vector SVG Icon Engine**: Inline vector SVGs and crisp system emojis across the entire UI, eliminating missing square boxes (`□`) offline and under `file:///` protocols.
-- **Full JSON Backup & Restore Engine**: Comprehensive export & import of all system entities (users, roles, departments, categories, projects, documents, dynamic menus, and audit trails) with safety validations and schema checks.
+- **Full JSON Backup & Restore Engine**: Comprehensive export & import of all system entities (users, roles, departments, categories, projects, documents, dynamic menus, announcements, and audit trails), including active UI theme preference (Dark / Light mode), with safety validations and schema checks.
 - **Form Screen & User Draft Persistence on Refresh (F5)**: Navigating to any Add or Edit screen across all 7 modules (Users, Roles, Departments, Categories, Projects, Documents, Dynamic Menus) and reloading the browser automatically restores the exact Form View instead of defaulting back to list view. Real-time auto-saving preserves all user-entered draft values (text, passwords, selects, textareas, checkboxes, tag chips, permission matrices) across browser refreshes, live previews are immediately updated upon reload, and drafts are cleanly removed upon form submit or cancel.
 - **Granular Backup & Restore Module Permissions**: The RBAC Module Permission Matrix includes a dedicated "Backup & Restore" module row, empowering administrators to control access to export/import operations via Read, Add, Update, and Delete permission flags.
 - **Live Department Preview Card & Quick Department Creation Modal**: Interactive real-time live preview card for department setup and fast inline modal dialog (`➕ Add New Department`) directly accessible from user creation forms.
@@ -22,6 +22,23 @@ AdminERP is a modern, responsive, client-side Enterprise Resource Planning (ERP)
 - **Top-Level Menus Are Group Folders (No Route)**: A menu created with **"No Parent"** is a pure group header — the `Route Path / Link` and `Target Action` fields are hidden and not required for it, because it has no page of its own. As soon as a parent is selected in the form, those fields appear (a slug is auto-suggested from the title) and the item becomes a real submenu with a page or a Web View link. A top-level folder that has neither submenus nor a route renders muted as an `empty` placeholder in the sidebar, and the Menus grid labels it `📁 Group Header (no route)`.
 - **Submenu Safety & Lifecycle Rules**: A menu can never be nested inside itself or one of its own submenus (cycle validation on save, in the parent dropdown, and via a `menuChainHasCycle` migration guard that only breaks genuinely circular links — so nesting survives a browser refresh). Deleting a menu is a **cascade delete**: the menu and its entire submenu tree are removed together after an explicit confirmation listing every affected submenu. Submenus whose parent is hidden by role-based visibility are promoted to the sidebar top level so allowed users never lose navigation.
 - **Submenus Are Visible Immediately**: Submenu groups open expanded by default so a freshly saved submenu is never hidden behind a collapsed parent, each parent row shows a live sub-item count badge, saving a submenu force-expands its parent group, and the user's manual collapse choice is remembered for the rest of the session. The Role-Menu Mapping menu dropdown is flattened into a parent-before-child tree (`📂 Parent` → `↳ Submenu`) so nested menus are easy to pick.
+- **Announcement Broadcast Center & Header Marquee Ticker**: Comprehensive system alert and notification module allowing administrators to create and schedule time-bound announcements with priority badges (`Info`, `Important`, `Urgent`). All active announcements scroll across the top header in an animated CSS marquee ticker accessible to all users. Features include hover-to-pause, click-to-read detail modal, real-time automated expiration engine (announcements automatically disappear from the ticker when their expiry time is reached with zero reload required), live preview during authoring, full RBAC permission matrix (Read, Add, Update, Delete), and JSON backup/restore support.
+- **Global Quick-Add Keyboard Shortcut (`Ctrl + Shift + O`)**: Pressing `Ctrl + Shift + O` from any module page immediately opens the Add / Create form for that active module (Users, Roles, Departments, Categories, Projects, Documents, Menus, Announcements) with automatic RBAC permission validation.
+- **Admin Password Protected Factory Reset**: Performing a system Factory Reset requires mandatory administrator password authorization via a secure prompt, preventing accidental or unauthorized database wipes.
+
+---
+
+## ⌨️ Keyboard Shortcuts
+
+| Shortcut | Description |
+|---|---|
+| `Ctrl + Shift + O` | **Quick Add / Create**: Opens the creation form for the currently active module |
+| `Alt + 1` .. `Alt + 0` | Direct navigation across modules (Dashboard, Users, Roles, Depts, Cats, Projs, Docs, Audit, Menus, Announcements) |
+| `Ctrl + K` | Universal Command Palette & quick search |
+| `Ctrl + Shift + L` | Quick Logout |
+| `/` | Focus search bar on Documents page |
+| `Enter` | Jump to next form field / submit on last field |
+| `Esc` | Close active modal, command palette, or exit create/edit form back to list view |
 
 ---
 

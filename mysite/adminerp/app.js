@@ -12,25 +12,42 @@ const PAGE_LABELS = {
   projects: 'Projects',
   documents: 'Documents',
   menus: 'Menu Builder',
+  announcements: 'Announcements',
   audit: 'Audit Trail'
 };
 
 function applyTheme(theme) {
+  theme = (theme === 'light') ? 'light' : 'dark';
   document.documentElement.setAttribute('data-theme', theme);
   const icon = document.getElementById('themeIcon');
   if (icon) icon.textContent = theme === 'dark' ? '☀️' : '🌙';
   const btn = document.getElementById('themeToggleBtn');
   if (btn) btn.title = theme === 'dark' ? 'Switch to Light Mode' : 'Switch to Dark Mode';
   localStorage.setItem(THEME_KEY, theme);
+  try {
+    const raw = localStorage.getItem(DB_KEY);
+    if (raw) {
+      const db = JSON.parse(raw);
+      if (db && typeof db === 'object') {
+        db.theme = theme;
+        localStorage.setItem(DB_KEY, JSON.stringify(db));
+      }
+    }
+  } catch (_) {}
 }
 
 function initTheme() {
-  const saved = localStorage.getItem(THEME_KEY);
-  if (saved) {
-    applyTheme(saved);
-  } else {
-    applyTheme('dark');
+  let saved = localStorage.getItem(THEME_KEY);
+  if (!saved) {
+    try {
+      const raw = localStorage.getItem(DB_KEY);
+      if (raw) {
+        const db = JSON.parse(raw);
+        if (db && db.theme) saved = db.theme;
+      }
+    } catch (_) {}
   }
+  applyTheme(saved || 'dark');
 }
 
 function toggleTheme() {
@@ -48,6 +65,7 @@ const MODULES = [
   { key: 'projects', label: 'Project' },
   { key: 'documents', label: 'Document' },
   { key: 'menus', label: 'Menus' },
+  { key: 'announcements', label: 'Announcements' },
   { key: 'audit', label: 'Audit' },
   { key: 'backup', label: 'Backup & Restore' }
 ];
@@ -270,7 +288,21 @@ function seedDB() {
       categories: [],
       projects: [],
       documents: [],
-      menus: defaultMenus
+      menus: defaultMenus,
+      announcements: [
+        {
+          id: 'ann_welcome',
+          title: 'Welcome to AdminERP Enterprise',
+          description: 'System-wide announcement marquee ticker is now live. Administrators can schedule announcements with custom start and expiry dates.',
+          type: 'info',
+          startDateTime: new Date(Date.now() - 3600000).toISOString().slice(0, 16),
+          expiryDateTime: new Date(Date.now() + 86400000 * 7).toISOString().slice(0, 16),
+          status: 'active',
+          createdBy: 'admin',
+          createdAt: new Date().toISOString()
+        }
+      ],
+      theme: localStorage.getItem(THEME_KEY) || 'dark'
     };
     localStorage.setItem(DB_KEY, JSON.stringify(db));
     return;
@@ -282,6 +314,22 @@ function seedDB() {
   if (!Array.isArray(db.projects)) { db.projects = []; changed = true; }
   if (!Array.isArray(db.documents)) { db.documents = []; changed = true; }
   if (!Array.isArray(db.menus)) { db.menus = defaultMenus; changed = true; }
+  if (!Array.isArray(db.announcements)) {
+    db.announcements = [
+      {
+        id: 'ann_welcome',
+        title: 'Welcome to AdminERP Enterprise',
+        description: 'System-wide announcement marquee ticker is now live. Administrators can schedule announcements with custom start and expiry dates.',
+        type: 'info',
+        startDateTime: new Date(Date.now() - 3600000).toISOString().slice(0, 16),
+        expiryDateTime: new Date(Date.now() + 86400000 * 7).toISOString().slice(0, 16),
+        status: 'active',
+        createdBy: 'admin',
+        createdAt: new Date().toISOString()
+      }
+    ];
+    changed = true;
+  }
   (db.menus || []).forEach(m => {
     if (m.id === 'menu_analytics' && (m.icon === '📊' || !m.icon)) { m.icon = 'fa-solid fa-chart-line'; changed = true; }
     if (m.id === 'menu_helpdesk' && (m.icon === '🌐' || !m.icon)) { m.icon = 'fa-solid fa-headset'; changed = true; }
@@ -346,6 +394,10 @@ function seedDB() {
       changed = true;
     }
   });
+  if (!db.theme) {
+    db.theme = localStorage.getItem(THEME_KEY) || 'dark';
+    changed = true;
+  }
   if (changed) localStorage.setItem(DB_KEY, JSON.stringify(db));
 }
 function loadDB() { return JSON.parse(localStorage.getItem(DB_KEY)); }
@@ -466,7 +518,11 @@ function restoreFormDraft(formId) {
     if (formId === 'userForm' && typeof updateLiveUserPreview === 'function') updateLiveUserPreview();
     if (formId === 'deptForm' && typeof updateLiveDeptPreview === 'function') updateLiveDeptPreview();
     if (formId === 'projForm' && typeof updateProjDescCount === 'function') updateProjDescCount();
+    if (formId === 'userForm' && typeof updateLiveUserPreview === 'function') updateLiveUserPreview();
+    if (formId === 'deptForm' && typeof updateLiveDeptPreview === 'function') updateLiveDeptPreview();
+    if (formId === 'projForm' && typeof updateProjDescCount === 'function') updateProjDescCount();
     if (formId === 'menuForm' && typeof updateLiveMenuPreview === 'function') updateLiveMenuPreview();
+    if (formId === 'annForm' && typeof updateLiveAnnouncementPreview === 'function') updateLiveAnnouncementPreview();
 
     return hasData;
   } catch (_) {
@@ -486,7 +542,7 @@ window.clearFormDraft = clearFormDraft;
 
 function canAccessPage(name) {
   if (name === 'dashboard') return true;
-  if (['users', 'roles', 'departments', 'categories', 'projects', 'documents', 'menus', 'audit'].includes(name)) {
+  if (['users', 'roles', 'departments', 'categories', 'projects', 'documents', 'menus', 'announcements', 'audit'].includes(name)) {
     return hasPerm(name, 'read');
   }
   return !!$('page-' + name);
@@ -522,6 +578,7 @@ function restoreLastPage() {
       else if (mod === 'projects' && typeof editProj === 'function') editProj(editId);
       else if (mod === 'documents' && typeof editDoc === 'function') editDoc(editId);
       else if (mod === 'menus' && typeof editMenu === 'function') editMenu(editId);
+      else if (mod === 'announcements' && typeof editAnnouncement === 'function') editAnnouncement(editId);
     } else {
       if (mod === 'users' && typeof openCreateUser === 'function') openCreateUser();
       else if (mod === 'roles' && typeof openCreateRole === 'function') openCreateRole();
@@ -530,6 +587,7 @@ function restoreLastPage() {
       else if (mod === 'projects' && typeof openCreateProj === 'function') openCreateProj();
       else if (mod === 'documents' && typeof openCreateDoc === 'function') openCreateDoc();
       else if (mod === 'menus' && typeof openCreateMenu === 'function') openCreateMenu();
+      else if (mod === 'announcements' && typeof openCreateAnnouncement === 'function') openCreateAnnouncement();
     }
   }
 
@@ -549,7 +607,7 @@ function restoreLastPage() {
       }
     } else if (hash.endsWith('-add')) {
       const mod = hash.replace(/-add$/, '');
-      if (['users', 'roles', 'departments', 'categories', 'projects', 'documents', 'menus'].includes(mod)) {
+      if (['users', 'roles', 'departments', 'categories', 'projects', 'documents', 'menus', 'announcements'].includes(mod)) {
         openModuleForm(mod, 'add', null, lastNav ? lastNav.parentId : null);
         return;
       }
@@ -557,7 +615,7 @@ function restoreLastPage() {
       const parts = hash.split('-edit-');
       const mod = parts[0];
       const editId = parts[1];
-      if (['users', 'roles', 'departments', 'categories', 'projects', 'documents', 'menus'].includes(mod) && editId) {
+      if (['users', 'roles', 'departments', 'categories', 'projects', 'documents', 'menus', 'announcements'].includes(mod) && editId) {
         openModuleForm(mod, 'edit', editId);
         return;
       }
@@ -707,8 +765,9 @@ const CMD_ITEMS = [
   { label: 'Document', hint: 'Alt+7', page: 'documents', module: 'documents' },
   { label: 'Audit Log', hint: 'Alt+8', page: 'audit', module: 'audit' },
   { label: 'Menu Builder', hint: 'Alt+9', page: 'menus', module: 'menus' },
+  { label: 'Announcements', hint: 'Alt+0', page: 'announcements', module: 'announcements' },
   { label: 'Backup & Restore Data (JSON Export/Import)', hint: 'Backup', action: 'backup' },
-  { label: 'New entry (focus form)', hint: 'Alt+N', action: 'new' },
+  { label: 'New entry (open Add form)', hint: 'Ctrl+Shift+O', action: 'new' },
   { label: 'Cancel editing', hint: 'Esc', action: 'cancel' },
   { label: 'My Profile', hint: 'Profile', action: 'profile' },
   { label: 'Change Password', hint: 'Profile', action: 'password' },
@@ -788,6 +847,18 @@ function cmdVisibleGroups() {
       }));
       if (docs.length) groups.push({ title: 'Documents', items: docs });
     }
+
+    // 7. Announcements
+    if (hasPerm('announcements', 'read')) {
+      const anns = (db.announcements || []).filter(a => (a.title || '').toLowerCase().includes(q) || (a.description || '').toLowerCase().includes(q)).slice(0, 5).map(a => ({
+        label: a.title,
+        hint: `[${(a.type || 'info').toUpperCase()}] ${a.status === 'active' ? 'Broadcast' : 'Inactive'}`,
+        avatar: '📢',
+        action: 'viewAnnouncement',
+        id: a.id
+      }));
+      if (anns.length) groups.push({ title: 'Announcements', items: anns });
+    }
   }
 
   return groups;
@@ -850,6 +921,33 @@ function openCmdPalette() {
 }
 function closeCmdPalette() { $('cmdPalette').classList.add('hidden'); }
 
+function triggerActiveModuleAdd() {
+  const active = document.querySelector('.page:not(.hidden)');
+  if (!active) return;
+  const mod = active.id.replace('page-', '');
+
+  const createActions = {
+    users: () => openCreateUser(),
+    roles: () => openCreateRole(),
+    departments: () => openCreateDept(),
+    categories: () => openCreateCat(),
+    projects: () => openCreateProj(),
+    documents: () => openCreateDoc(),
+    menus: () => openCreateMenu(),
+    announcements: () => openCreateAnnouncement()
+  };
+
+  if (createActions[mod]) {
+    if (!hasPerm(mod, 'add')) {
+      return showAlert(`You do not have permission to add new ${PAGE_LABELS[mod] || mod} records`, 'warning');
+    }
+    createActions[mod]();
+  } else {
+    toast(`No creation form on ${PAGE_LABELS[mod] || mod} page`, 'info');
+  }
+}
+window.triggerActiveModuleAdd = triggerActiveModuleAdd;
+
 function runCmdItem(it) {
   if (!it) return;
   closeCmdPalette();
@@ -863,18 +961,9 @@ function runCmdItem(it) {
   else if (it.action === 'viewDept') { viewDept(it.id); }
   else if (it.action === 'viewProj') { viewProj(it.id); }
   else if (it.action === 'viewDoc') { viewDoc(it.id); }
+  else if (it.action === 'viewAnnouncement') { viewAnnouncement(it.id); }
   else if (it.action === 'new') {
-    const active = document.querySelector('.page:not(.hidden)');
-    if (active) {
-      const mod = active.id.replace('page-', '');
-      if (mod === 'users') openCreateUser();
-      else if (mod === 'roles') openCreateRole();
-      else if (mod === 'departments') openCreateDept();
-      else if (mod === 'categories') openCreateCat();
-      else if (mod === 'projects') openCreateProj();
-      else if (mod === 'documents') openCreateDoc();
-      else if (mod === 'menus') openCreateMenu();
-    }
+    triggerActiveModuleAdd();
   }
   else if (it.action === 'cancel') {
     const active = document.querySelector('.page:not(.hidden)');
@@ -906,7 +995,8 @@ function setModuleView(module, viewName) {
     categories: 'catForm',
     projects: 'projForm',
     documents: 'docForm',
-    menus: 'menuForm'
+    menus: 'menuForm',
+    announcements: 'annForm'
   };
 
   if (viewName === 'form') {
@@ -921,9 +1011,15 @@ function setModuleView(module, viewName) {
     }
     setTimeout(() => {
       try {
-        Object.values(erpGrids).forEach(grid => {
-          if (grid && typeof grid.sizeColumnsToFit === 'function') grid.sizeColumnsToFit();
-        });
+        const grid = erpGrids[module];
+        const container = $(module + 'Grid');
+        if (grid && container && container.offsetParent !== null && typeof grid.sizeColumnsToFit === 'function') {
+          const cols = (typeof grid.getColumnDefs === 'function') ? grid.getColumnDefs() : null;
+          const totalColWidth = (cols || []).reduce((sum, col) => sum + (col.width || col.minWidth || 120), 0);
+          if (container.clientWidth >= totalColWidth) {
+            grid.sizeColumnsToFit();
+          }
+        }
       } catch (_) {}
     }, 60);
   }
@@ -949,7 +1045,7 @@ function goPage(name, viewName = 'list') {
   if ($('bcCurrent')) $('bcCurrent').textContent = label;
   closeNav();
   trackPageVisit(name);
-  if (['users', 'roles', 'departments', 'categories', 'projects', 'documents', 'menus'].includes(name)) {
+  if (['users', 'roles', 'departments', 'categories', 'projects', 'documents', 'menus', 'announcements'].includes(name)) {
     setModuleView(name, viewName);
   }
   focusFirstField(name);
@@ -964,9 +1060,15 @@ function goPage(name, viewName = 'list') {
 
   setTimeout(() => {
     try {
-      Object.values(erpGrids).forEach(grid => {
-        if (grid && typeof grid.sizeColumnsToFit === 'function') grid.sizeColumnsToFit();
-      });
+      const grid = erpGrids[name];
+      const container = $(name + 'Grid');
+      if (grid && container && container.offsetParent !== null && typeof grid.sizeColumnsToFit === 'function') {
+        const cols = (typeof grid.getColumnDefs === 'function') ? grid.getColumnDefs() : null;
+        const totalColWidth = (cols || []).reduce((sum, col) => sum + (col.width || col.minWidth || 120), 0);
+        if (container.clientWidth >= totalColWidth) {
+          grid.sizeColumnsToFit();
+        }
+      }
     } catch (_) {}
   }, 60);
 }
@@ -986,7 +1088,7 @@ function focusFirstField(page) {
   const map = {
     users: 'userName', roles: 'roleName', departments: 'deptName',
     categories: 'catName', projects: 'projName', documents: 'docTitle',
-    menus: 'menuTitle', audit: 'auditSearch'
+    menus: 'menuTitle', announcements: 'annTitle', audit: 'auditSearch'
   };
   const id = map[page];
   if (id && $(id)) setTimeout(() => $(id).focus(), 50);
@@ -1025,6 +1127,7 @@ function renderDashboard() {
   $('cProj').textContent = db.projects.length;
   if ($('cDocs')) $('cDocs').textContent = (db.documents || []).length;
   if ($('cAudit')) $('cAudit').textContent = (db.audit || []).length;
+  if ($('cAnnouncements')) $('cAnnouncements').textContent = (db.announcements || []).length;
   renderCharts(); renderRecent(); renderMostUsed();
 }
 function renderMostUsed() {
@@ -1233,7 +1336,14 @@ function initOrUpdateAGGrid(key, containerId, columnDefs, rowData, customOptions
         erpGrids[key].setGridOption('quickFilterText', customOptions.quickFilterText);
       }
       setTimeout(() => {
-        try { erpGrids[key].sizeColumnsToFit(); } catch (_) {}
+        try {
+          if (container.offsetParent !== null) {
+            const totalColWidth = columnDefs.reduce((sum, col) => sum + (col.width || col.minWidth || 120), 0);
+            if (container.clientWidth >= totalColWidth) {
+              erpGrids[key].sizeColumnsToFit();
+            }
+          }
+        } catch (_) {}
       }, 50);
       return erpGrids[key];
     } catch (e) {
@@ -1265,8 +1375,7 @@ function initOrUpdateAGGrid(key, containerId, columnDefs, rowData, customOptions
       sortable: true,
       filter: true,
       resizable: true,
-      minWidth: 110,
-      flex: 1
+      minWidth: 110
     },
     ...customOptions
   };
@@ -1275,7 +1384,14 @@ function initOrUpdateAGGrid(key, containerId, columnDefs, rowData, customOptions
     const api = agGrid.createGrid(container, gridOptions);
     erpGrids[key] = api;
     setTimeout(() => {
-      try { api.sizeColumnsToFit(); } catch (_) {}
+      try {
+        if (container.offsetParent !== null) {
+          const totalColWidth = columnDefs.reduce((sum, col) => sum + (col.width || col.minWidth || 120), 0);
+          if (container.clientWidth >= totalColWidth) {
+            api.sizeColumnsToFit();
+          }
+        }
+      } catch (_) {}
     }, 60);
     return api;
   } catch (err) {
@@ -4813,6 +4929,559 @@ window.clearAudit = function () {  if (!hasPerm('audit', 'delete')) return showA
 };
 
 // ==========================================================================
+// ANNOUNCEMENT BROADCAST ENGINE & HEADER MARQUEE TICKER
+// ==========================================================================
+window._tickerPaused = false;
+window._tickerDismissed = false;
+
+function toLocalDateTimeInput(d) {
+  if (!d) d = new Date();
+  if (typeof d === 'string') d = new Date(d);
+  if (isNaN(d.getTime())) d = new Date();
+  const pad = n => String(n).padStart(2, '0');
+  return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}T${pad(d.getHours())}:${pad(d.getMinutes())}`;
+}
+
+function formatDateTimePretty(isoStr) {
+  if (!isoStr) return '—';
+  try {
+    const d = new Date(isoStr);
+    if (isNaN(d.getTime())) return isoStr;
+    return d.toLocaleString('en-US', {
+      year: 'numeric',
+      month: 'short',
+      day: 'numeric',
+      hour: '2-digit',
+      minute: '2-digit'
+    });
+  } catch (_) {
+    return isoStr;
+  }
+}
+
+function isAnnouncementActive(a) {
+  if (!a || a.status !== 'active') return false;
+  const now = Date.now();
+  const start = a.startDateTime ? new Date(a.startDateTime).getTime() : 0;
+  const expiry = a.expiryDateTime ? new Date(a.expiryDateTime).getTime() : Infinity;
+  return now >= start && now < expiry;
+}
+
+function getAnnouncementState(a) {
+  if (!a || a.status === 'inactive') return 'inactive';
+  const now = Date.now();
+  const start = a.startDateTime ? new Date(a.startDateTime).getTime() : 0;
+  const expiry = a.expiryDateTime ? new Date(a.expiryDateTime).getTime() : Infinity;
+  if (now < start) return 'scheduled';
+  if (now >= expiry) return 'expired';
+  return 'active';
+}
+
+function formatTimeRemaining(expiryStr) {
+  if (!expiryStr) return '';
+  const diff = new Date(expiryStr).getTime() - Date.now();
+  if (diff <= 0) return 'Expired';
+  const totalMins = Math.floor(diff / 60000);
+  if (totalMins < 60) return `${totalMins}m left`;
+  const hrs = Math.floor(totalMins / 60);
+  const remMins = totalMins % 60;
+  if (hrs < 24) return `${hrs}h ${remMins}m left`;
+  const days = Math.floor(hrs / 24);
+  const remHrs = hrs % 24;
+  return `${days}d ${remHrs}h left`;
+}
+
+function getAnnTypeMeta(type) {
+  switch (type) {
+    case 'urgent':
+      return { label: 'URGENT', icon: '🚨', cssClass: 'ticker-type-urgent' };
+    case 'important':
+      return { label: 'IMPORTANT', icon: '⚠️', cssClass: 'ticker-type-important' };
+    case 'info':
+    default:
+      return { label: 'INFO', icon: 'ℹ️', cssClass: 'ticker-type-info' };
+  }
+}
+
+function updateAnnouncementTicker() {
+  const db = loadDB();
+  if (!db || !Array.isArray(db.announcements)) return;
+
+  // Filter ONLY currently active (non-expired and started) announcements
+  const activeList = db.announcements.filter(isAnnouncementActive);
+  const tickerBar = $('announcementTickerBar');
+  const notifBadge = $('notifBadge');
+
+  if (notifBadge) {
+    if (activeList.length > 0) {
+      notifBadge.textContent = activeList.length;
+      notifBadge.classList.remove('hidden');
+    } else {
+      notifBadge.classList.add('hidden');
+    }
+  }
+
+  if (!tickerBar) return;
+
+  if (activeList.length === 0 || window._tickerDismissed) {
+    tickerBar.classList.add('hidden');
+    return;
+  }
+
+  tickerBar.classList.remove('hidden');
+  const liveCountEl = $('tickerLiveCount');
+  if (liveCountEl) liveCountEl.textContent = activeList.length;
+
+  const track = $('tickerMarqueeTrack');
+  if (track) {
+    const itemsHtml = activeList.map(a => {
+      const meta = getAnnTypeMeta(a.type);
+      const rem = formatTimeRemaining(a.expiryDateTime);
+      const descSnippet = (a.description || '').replace(/\s+/g, ' ');
+      return `
+        <div class="ticker-item" onclick="openAnnouncementDetailModal('${a.id}')" title="Click to view full announcement">
+          <span class="ticker-type-pill ${meta.cssClass}">${meta.icon} ${meta.label}</span>
+          <span class="ticker-item-title">${escapeHtml(a.title)}:</span>
+          <span class="ticker-item-desc">${escapeHtml(descSnippet)}</span>
+          <span class="ticker-item-time">⏳ ${rem}</span>
+          <span class="ticker-item-sep">•</span>
+        </div>`;
+    }).join('');
+
+    // Duplicate content if short to make continuous loop marquee seamless
+    track.innerHTML = itemsHtml + (activeList.length < 3 ? itemsHtml : '');
+    track.classList.toggle('paused', !!window._tickerPaused);
+  }
+}
+
+window.toggleTickerPause = function() {
+  window._tickerPaused = !window._tickerPaused;
+  const track = $('tickerMarqueeTrack');
+  const btn = $('tickerPauseBtn');
+  if (track) track.classList.toggle('paused', window._tickerPaused);
+  if (btn) btn.textContent = window._tickerPaused ? '▶' : '⏸';
+  toast(window._tickerPaused ? 'Ticker animation paused' : 'Ticker animation resumed', 'info');
+};
+
+window.dismissTickerBar = function() {
+  window._tickerDismissed = true;
+  const tickerBar = $('announcementTickerBar');
+  if (tickerBar) tickerBar.classList.add('hidden');
+  toast('Announcement ticker hidden. Click the notification bell to restore.', 'info');
+};
+
+window.handleNotifBellClick = function() {
+  const db = loadDB();
+  const activeList = (db.announcements || []).filter(isAnnouncementActive);
+  if (window._tickerDismissed && activeList.length > 0) {
+    window._tickerDismissed = false;
+    updateAnnouncementTicker();
+    toast(`Restored announcement ticker (${activeList.length} live notice${activeList.length > 1 ? 's' : ''})`, 'success');
+  } else if (activeList.length > 0) {
+    openAnnouncementDetailModal(activeList[0].id);
+  } else {
+    toast('No live announcements at this time.', 'info');
+  }
+};
+
+window.openAnnouncementDetailModal = function(id) {
+  const db = loadDB();
+  const a = (db.announcements || []).find(x => x.id === id);
+  if (!a) return;
+
+  const modal = $('annDetailModal');
+  if (!modal) return;
+
+  const meta = getAnnTypeMeta(a.type);
+  const state = getAnnouncementState(a);
+  const rem = formatTimeRemaining(a.expiryDateTime);
+
+  $('modalAnnTypeBadge').className = `ticker-type-pill ${meta.cssClass}`;
+  $('modalAnnTypeBadge').textContent = `${meta.icon} ${meta.label}`;
+  $('modalAnnTitle').textContent = a.title;
+  $('modalAnnStart').textContent = formatDateTimePretty(a.startDateTime);
+  $('modalAnnExpiry').textContent = formatDateTimePretty(a.expiryDateTime);
+  $('modalAnnRemaining').textContent = rem;
+  $('modalAnnDesc').textContent = a.description || '—';
+
+  const statusBadge = $('modalAnnStatusBadge');
+  if (statusBadge) {
+    statusBadge.className = `badge badge-${state}`;
+    statusBadge.textContent = state === 'active' ? '🟢 Live Broadcast' : (state === 'scheduled' ? '⏳ Scheduled' : (state === 'expired' ? '⛔ Expired' : '⚪ Inactive'));
+  }
+
+  const actBox = $('modalAnnActionBtns');
+  if (actBox) {
+    let extraBtns = '';
+    if (hasPerm('announcements', 'update')) {
+      extraBtns += `<button type="button" class="btn warn sm" onclick="closeAnnModal(); editAnnouncement('${a.id}');">✏️ Edit</button>`;
+    }
+    if (hasPerm('announcements', 'delete')) {
+      extraBtns += `<button type="button" class="btn danger sm" onclick="closeAnnModal(); deleteAnnouncement('${a.id}');">🗑️ Delete</button>`;
+    }
+    actBox.innerHTML = extraBtns + `<button type="button" class="btn primary sm" onclick="closeAnnModal()">Close</button>`;
+  }
+
+  modal.classList.remove('hidden');
+};
+
+window.closeAnnModal = function() {
+  const modal = $('annDetailModal');
+  if (modal) modal.classList.add('hidden');
+};
+
+function renderAnnouncements(refreshGrid = true) {
+  const db = loadDB();
+  if (!Array.isArray(db.announcements)) db.announcements = [];
+
+  const list = db.announcements;
+
+  // Summary counts
+  let activeCount = 0, schedCount = 0, expCount = 0;
+  list.forEach(a => {
+    const s = getAnnouncementState(a);
+    if (s === 'active') activeCount++;
+    else if (s === 'scheduled') schedCount++;
+    else if (s === 'expired') expCount++;
+  });
+
+  if ($('statTotalAnn')) $('statTotalAnn').textContent = list.length;
+  if ($('statActiveAnn')) $('statActiveAnn').textContent = activeCount;
+  if ($('statScheduledAnn')) $('statScheduledAnn').textContent = schedCount;
+  if ($('statExpiredAnn')) $('statExpiredAnn').textContent = expCount;
+
+  // Form permission guard
+  if ($('annForm')) {
+    const btn = $('annForm').querySelector('button[type=submit]');
+    if (btn) btn.disabled = !(hasPerm('announcements', 'add') || hasPerm('announcements', 'update'));
+  }
+
+  // Filter values
+  const q = ($('annSearch') && $('annSearch').value || '').toLowerCase().trim();
+  const fType = ($('annFilterType') && $('annFilterType').value || '').trim();
+  const fStatus = ($('annFilterStatus') && $('annFilterStatus').value || '').trim();
+
+  const filtered = list.filter(a => {
+    if (fType && a.type !== fType) return false;
+    if (fStatus && getAnnouncementState(a) !== fStatus) return false;
+    if (q) {
+      const match = (a.title || '').toLowerCase().includes(q) ||
+                    (a.description || '').toLowerCase().includes(q) ||
+                    (a.createdBy || '').toLowerCase().includes(q);
+      if (!match) return false;
+    }
+    return true;
+  });
+
+  const columnDefs = [
+    {
+      headerName: 'Actions',
+      field: 'id',
+      pinned: 'left',
+      lockPinned: true,
+      width: 250,
+      minWidth: 240,
+      maxWidth: 275,
+      sortable: false,
+      filter: false,
+      resizable: false,
+      cellRenderer: (params) => {
+        const a = params.data;
+        if (!a) return '';
+        const viewBtn = `<button type="button" class="btn btn-act-view sm" onclick="viewAnnouncement('${a.id}')" title="View Announcement">👁️ View</button>`;
+        const editBtn = hasPerm('announcements', 'update')
+          ? `<button type="button" class="btn warn sm" onclick="editAnnouncement('${a.id}')" title="Edit Announcement">✏️ Edit</button>` : '';
+        const delBtn = hasPerm('announcements', 'delete')
+          ? `<button type="button" class="btn danger sm" onclick="deleteAnnouncement('${a.id}')" title="Delete Announcement">🗑️ Del</button>` : '';
+        const toggleBtn = hasPerm('announcements', 'update')
+          ? `<button type="button" class="btn secondary sm" onclick="toggleAnnouncementStatus('${a.id}')" title="Toggle active/inactive">${a.status === 'active' ? '⏸ Pause' : '▶ Publish'}</button>` : '';
+        return `<div class="grid-actions-cell">${viewBtn}${editBtn}${delBtn}${toggleBtn}</div>`;
+      }
+    },
+    {
+      headerName: 'Alert Level',
+      field: 'type',
+      width: 135,
+      minWidth: 125,
+      cellRenderer: (params) => {
+        const meta = getAnnTypeMeta(params.value);
+        return `<span class="ticker-type-pill ${meta.cssClass}">${meta.icon} ${meta.label}</span>`;
+      }
+    },
+    {
+      headerName: 'Announcement Title',
+      field: 'title',
+      width: 240,
+      minWidth: 200,
+      flex: 1.2,
+      cellRenderer: (params) => `<div class="ann-grid-cell-title" title="${escapeHtml(params.value || '')}"><b>${escapeHtml(params.value || '')}</b></div>`
+    },
+    {
+      headerName: 'Message Excerpt',
+      field: 'description',
+      width: 320,
+      minWidth: 240,
+      flex: 1.5,
+      cellRenderer: (params) => `<div class="ann-grid-cell-desc" title="${escapeHtml(params.value || '')}">${escapeHtml(params.value || '—')}</div>`
+    },
+    {
+      headerName: 'Live Status',
+      field: '_state',
+      width: 160,
+      minWidth: 150,
+      cellRenderer: (params) => {
+        const st = params.value;
+        if (st === 'active') return `<span class="badge badge-live">🟢 Live in Header</span>`;
+        if (st === 'scheduled') return `<span class="badge badge-scheduled">⏳ Scheduled</span>`;
+        if (st === 'expired') return `<span class="badge badge-expired">⛔ Auto-Expired</span>`;
+        return `<span class="badge badge-inactive">⚪ Inactive</span>`;
+      }
+    },
+    {
+      headerName: 'Start Date & Time',
+      field: 'startDateTime',
+      width: 180,
+      minWidth: 165,
+      cellRenderer: (params) => `<span class="ann-grid-datetime" title="${params.value || ''}">📅 ${formatDateTimePretty(params.value)}</span>`
+    },
+    {
+      headerName: 'Expiry Date & Time',
+      field: 'expiryDateTime',
+      width: 180,
+      minWidth: 165,
+      cellRenderer: (params) => `<span class="ann-grid-datetime" title="${params.value || ''}">⏱️ ${formatDateTimePretty(params.value)}</span>`
+    },
+    {
+      headerName: 'Time Left',
+      field: '_timeLeft',
+      width: 130,
+      minWidth: 115,
+      cellRenderer: (params) => `<span class="badge ${params.value === 'Expired' ? 'badge-expired' : 'warn'}">${escapeHtml(params.value || '—')}</span>`
+    }
+  ];
+
+  const rowData = filtered.map(a => ({
+    ...a,
+    _state: getAnnouncementState(a),
+    _timeLeft: formatTimeRemaining(a.expiryDateTime)
+  }));
+
+  if (refreshGrid) {
+    initOrUpdateAGGrid('announcements', 'announcementsGrid', columnDefs, rowData, {
+      quickFilterText: q
+    });
+  }
+
+  // Update fallback table
+  const tbody = $('annTable');
+  if (tbody) {
+    tbody.innerHTML = rowData.map(a => `
+      <tr>
+        <td><b>${escapeHtml(a.title)}</b></td>
+        <td>${escapeHtml(a.type)}</td>
+        <td>${escapeHtml(a._state)}</td>
+        <td>${formatDateTimePretty(a.startDateTime)}</td>
+        <td>${formatDateTimePretty(a.expiryDateTime)}</td>
+      </tr>
+    `).join('');
+  }
+}
+
+window.openCreateAnnouncement = function() {
+  if (!hasPerm('announcements', 'add')) return showAlert('You do not have permission to create announcements');
+  resetForm('annForm', 'annFormTitle', 'Add Announcement');
+  $('annId').value = '';
+  $('annType').value = 'info';
+  $('annStatus').value = 'active';
+
+  // Set default start now, default expiry 7 days later
+  const now = new Date();
+  const future = new Date(Date.now() + 7 * 24 * 60 * 60 * 1000);
+  $('annStart').value = toLocalDateTimeInput(now);
+  $('annExpiry').value = toLocalDateTimeInput(future);
+
+  $('annCancel').classList.remove('hidden');
+  restoreFormDraft('annForm');
+  updateLiveAnnouncementPreview();
+  setModuleView('announcements', 'form');
+  saveLastNav({ type: 'page', page: 'announcements', view: 'form', mode: 'add' });
+  if (window.location.hash !== '#announcements-add') {
+    try { history.replaceState(null, '', '#announcements-add'); } catch (_) {}
+  }
+};
+
+window.editAnnouncement = function(id) {
+  const db = loadDB();
+  const a = (db.announcements || []).find(x => x.id === id);
+  if (!a) return;
+
+  $('annId').value = a.id;
+  $('annTitle').value = a.title || '';
+  $('annType').value = a.type || 'info';
+  $('annStatus').value = a.status || 'active';
+  $('annStart').value = toLocalDateTimeInput(a.startDateTime);
+  $('annExpiry').value = toLocalDateTimeInput(a.expiryDateTime);
+  $('annDesc').value = a.description || '';
+
+  restoreFormDraft('annForm');
+  $('annId').value = a.id;
+  $('annFormTitle').textContent = 'Edit Announcement';
+  $('annCancel').classList.remove('hidden');
+  updateLiveAnnouncementPreview();
+  setModuleView('announcements', 'form');
+  saveLastNav({ type: 'page', page: 'announcements', view: 'form', mode: 'edit', editId: id });
+  if (window.location.hash !== '#announcements-edit-' + id) {
+    try { history.replaceState(null, '', '#announcements-edit-' + id); } catch (_) {}
+  }
+};
+
+window.viewAnnouncement = function(id) {
+  const db = loadDB();
+  const a = (db.announcements || []).find(x => x.id === id);
+  if (!a) return;
+
+  const meta = getAnnTypeMeta(a.type);
+  const state = getAnnouncementState(a);
+  const rem = formatTimeRemaining(a.expiryDateTime);
+
+  $('annDetailActions').innerHTML = `
+    ${hasPerm('announcements', 'update') ? `<button class="btn warn sm" onclick="editAnnouncement('${a.id}')">✏️ Edit Announcement</button>` : ''}
+    ${hasPerm('announcements', 'delete') ? `<button class="btn danger sm" onclick="deleteAnnouncement('${a.id}')">🗑️ Delete</button>` : ''}
+  `;
+
+  $('annDetailContent').innerHTML = `
+    <div class="detail-layout-split">
+      <div>
+        <div class="detail-card">
+          <div class="detail-card-header space-between">
+            <div style="display:flex;align-items:center;gap:10px;">
+              <span class="ticker-type-pill ${meta.cssClass}">${meta.icon} ${meta.label}</span>
+              <h3 style="margin:0;">${escapeHtml(a.title)}</h3>
+            </div>
+            <span class="badge badge-${state}">${state === 'active' ? '🟢 Live in Header' : (state === 'scheduled' ? '⏳ Scheduled' : (state === 'expired' ? '⛔ Expired' : '⚪ Inactive'))}</span>
+          </div>
+          <div class="detail-grid mt">
+            <div class="detail-item">
+              <span class="detail-label">Status</span>
+              <span class="detail-value">${escapeHtml(a.status)}</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Created By</span>
+              <span class="detail-value">${escapeHtml(a.createdBy || 'admin')}</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Broadcast Starts</span>
+              <span class="detail-value">${formatDateTimePretty(a.startDateTime)}</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Broadcast Expires</span>
+              <span class="detail-value">${formatDateTimePretty(a.expiryDateTime)}</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Time Remaining</span>
+              <span class="detail-value"><span class="badge warn">${rem}</span></span>
+            </div>
+          </div>
+          <div class="detail-desc mt">
+            <h4 style="margin:0 0 8px;">Detailed Content:</h4>
+            <div style="background:var(--bg-surface-subtle);padding:14px;border-radius:8px;border:1px solid var(--border-subtle);line-height:1.6;white-space:pre-wrap;">${escapeHtml(a.description || '—')}</div>
+          </div>
+        </div>
+      </div>
+      <div class="side-col">
+        <div class="side-info-card">
+          <div class="side-card-header">
+            <h4>📢 Live Ticker Simulation</h4>
+          </div>
+          <div class="preview-ticker-strip">
+            <div class="ticker-badge sm"><span>📢</span></div>
+            <div class="preview-ticker-content">
+              <span class="ticker-type-pill ${meta.cssClass}">${meta.icon} ${meta.label}</span>
+              <strong>${escapeHtml(a.title)}</strong>: ${escapeHtml((a.description || '').slice(0, 70))}...
+            </div>
+          </div>
+          <p class="muted small mt-xs">This announcement broadcasts directly across header bar for all system users when active.</p>
+        </div>
+      </div>
+    </div>
+  `;
+
+  setModuleView('announcements', 'detail');
+};
+
+window.deleteAnnouncement = function(id) {
+  if (!hasPerm('announcements', 'delete')) return showAlert('You do not have delete permission');
+  const db = loadDB();
+  const a = (db.announcements || []).find(x => x.id === id);
+  if (!a) return;
+
+  askConfirm(`Are you sure you want to delete announcement "${a.title}"?`, 'Yes, delete').then(ok => {
+    if (!ok) return;
+    db.announcements = db.announcements.filter(x => x.id !== id);
+    saveDB(db);
+    logAudit('Announcements', 'delete', a.title, `Type: ${a.type}`, 'Deleted');
+    renderAnnouncements();
+    updateAnnouncementTicker();
+    renderDashboard();
+    renderAudit();
+    setModuleView('announcements', 'list');
+    toast(`Announcement "${a.title}" deleted`);
+  });
+};
+
+window.toggleAnnouncementStatus = function(id) {
+  if (!hasPerm('announcements', 'update')) return showAlert('You do not have update permission');
+  const db = loadDB();
+  const a = (db.announcements || []).find(x => x.id === id);
+  if (!a) return;
+
+  const nextStatus = a.status === 'active' ? 'inactive' : 'active';
+  a.status = nextStatus;
+  saveDB(db);
+  logAudit('Announcements', 'update', a.title, `Status: ${a.status === 'active' ? 'inactive' : 'active'}`, `Status: ${nextStatus}`);
+  renderAnnouncements();
+  updateAnnouncementTicker();
+  toast(`Announcement status changed to ${nextStatus}`);
+};
+
+function updateLiveAnnouncementPreview() {
+  const title = ($('annTitle') && $('annTitle').value.trim()) || 'Notice Title';
+  const type = ($('annType') && $('annType').value) || 'info';
+  const status = ($('annStatus') && $('annStatus').value) || 'active';
+  const desc = ($('annDesc') && $('annDesc').value.trim()) || 'Notice message snippet...';
+  const start = $('annStart') ? $('annStart').value : '';
+  const expiry = $('annExpiry') ? $('annExpiry').value : '';
+
+  const meta = getAnnTypeMeta(type);
+
+  if ($('prevTypePill')) {
+    $('prevTypePill').className = `ticker-type-pill ${meta.cssClass}`;
+    $('prevTypePill').textContent = `${meta.icon} ${meta.label}`;
+  }
+  if ($('prevTitle')) $('prevTitle').textContent = title;
+  if ($('prevDesc')) $('prevDesc').textContent = desc.length > 70 ? desc.slice(0, 70) + '...' : desc;
+
+  if ($('prevCardType')) {
+    $('prevCardType').className = `ticker-type-pill ${meta.cssClass}`;
+    $('prevCardType').textContent = `${meta.icon} ${meta.label}`;
+  }
+  if ($('prevCardStatus')) {
+    $('prevCardStatus').textContent = status === 'active' ? 'Active' : 'Inactive';
+    $('prevCardStatus').className = `badge ${status === 'active' ? 'badge-live' : 'badge-inactive'}`;
+  }
+  if ($('prevCardTitle')) $('prevCardTitle').textContent = title;
+  if ($('prevCardDesc')) $('prevCardDesc').textContent = desc;
+  if ($('prevCardTimers')) {
+    $('prevCardTimers').textContent = `Starts: ${formatDateTimePretty(start)} • Expires: ${formatDateTimePretty(expiry)}`;
+  }
+  if ($('annDescCount')) {
+    const len = ($('annDesc') && $('annDesc').value.length) || 0;
+    $('annDescCount').textContent = `${len}/600`;
+  }
+}
+window.updateLiveAnnouncementPreview = updateLiveAnnouncementPreview;
+
+// ==========================================================================
 // DATA BACKUP & RESTORE (JSON EXPORT / IMPORT ENGINE)
 // ==========================================================================
 let curBackupTab = 'export';
@@ -4865,6 +5534,7 @@ function updateBackupStats() {
     { label: 'Projects', val: (db.projects || []).length, icon: '📁' },
     { label: 'Documents', val: (db.documents || []).length, icon: '📄' },
     { label: 'Menus', val: (db.menus || []).length, icon: '🧭' },
+    { label: 'Announcements', val: (db.announcements || []).length, icon: '📢' },
     { label: 'Audit Logs', val: (db.audit || []).length, icon: '📋' },
   ];
 
@@ -4885,6 +5555,8 @@ window.exportApplicationJSON = function() {
   const now = new Date();
   const pad = n => String(n).padStart(2, '0');
   const timestamp = `${now.getFullYear()}-${pad(now.getMonth() + 1)}-${pad(now.getDate())}_${pad(now.getHours())}-${pad(now.getMinutes())}`;
+  const currentTheme = localStorage.getItem(THEME_KEY) || db.theme || (document.documentElement.getAttribute('data-theme') || 'dark');
+  db.theme = currentTheme;
 
   const payload = {
     _meta: {
@@ -4894,6 +5566,7 @@ window.exportApplicationJSON = function() {
       exportedAt: now.toISOString(),
       exportedBy: u ? u.username : 'admin',
       format: 'AdminERP_FullBackup_v1',
+      theme: currentTheme,
       counts: {
         users: (db.users || []).length,
         roles: (db.roles || []).length,
@@ -4902,9 +5575,11 @@ window.exportApplicationJSON = function() {
         projects: (db.projects || []).length,
         documents: (db.documents || []).length,
         menus: (db.menus || []).length,
+        announcements: (db.announcements || []).length,
         audit: (db.audit || []).length
       }
     },
+    theme: currentTheme,
     data: db
   };
 
@@ -4923,20 +5598,24 @@ window.exportApplicationJSON = function() {
     else if (a.parentNode) a.parentNode.removeChild(a);
   }, 150);
 
-  logAudit('System', 'export', u ? u.username : 'admin', 'Full Database Backup', `Exported ${payload._meta.counts.users} users, ${payload._meta.counts.roles} roles, ${payload._meta.counts.menus} menus`);
+  logAudit('System', 'export', u ? u.username : 'admin', 'Full Database Backup', `Exported ${payload._meta.counts.users} users, ${payload._meta.counts.roles} roles, ${payload._meta.counts.menus} menus, theme: ${currentTheme}`);
   toast('JSON Backup downloaded successfully!');
 };
 
 window.copyBackupJSONToClipboard = function() {
   const db = loadDB();
   const u = currentUser();
+  const currentTheme = localStorage.getItem(THEME_KEY) || db.theme || (document.documentElement.getAttribute('data-theme') || 'dark');
+  db.theme = currentTheme;
   const payload = {
     _meta: {
       generator: 'AdminERP Backup Engine',
       version: '2.5.0',
       exportedAt: new Date().toISOString(),
-      exportedBy: u ? u.username : 'admin'
+      exportedBy: u ? u.username : 'admin',
+      theme: currentTheme
     },
+    theme: currentTheme,
     data: db
   };
   const jsonStr = JSON.stringify(payload, null, 2);
@@ -5005,6 +5684,12 @@ function parseAndValidateBackupJSON(rawText) {
       throw new Error('Missing core application tables: `users` and `roles` arrays are required.');
     }
 
+    // Capture theme from root payload, _meta, or dbData
+    const backupTheme = parsed.theme || (parsed._meta && parsed._meta.theme) || dbData.theme;
+    if (backupTheme && (backupTheme === 'dark' || backupTheme === 'light')) {
+      dbData.theme = backupTheme;
+    }
+
     const counts = {
       users: (dbData.users || []).length,
       roles: (dbData.roles || []).length,
@@ -5013,6 +5698,7 @@ function parseAndValidateBackupJSON(rawText) {
       projects: (dbData.projects || []).length,
       documents: (dbData.documents || []).length,
       menus: (dbData.menus || []).length,
+      announcements: (dbData.announcements || []).length,
       audit: (dbData.audit || []).length
     };
 
@@ -5025,7 +5711,7 @@ function parseAndValidateBackupJSON(rawText) {
           <span>✅ Valid AdminERP Backup File</span>
         </div>
         <div style="font-size: 0.8rem; opacity: 0.95;">
-          ${counts.users} Users • ${counts.roles} Roles • ${counts.departments} Depts • ${counts.projects} Projects • ${counts.menus} Dynamic Menus • ${counts.documents} Documents
+          ${counts.users} Users • ${counts.roles} Roles • ${counts.departments} Depts • ${counts.projects} Projects • ${counts.menus} Dynamic Menus • ${counts.announcements} Announcements • ${counts.documents} Documents${backupTheme ? ` • 🎨 <b>${escapeHtml(backupTheme.toUpperCase())}</b> Theme` : ''}
         </div>
       `;
       box.classList.remove('hidden');
@@ -5064,6 +5750,7 @@ window.executeDataRestore = function() {
     if (!ok) return;
 
     let finalDB;
+    const backupTheme = staged.theme;
     if (mode === 'replace') {
       finalDB = {
         departments: Array.isArray(staged.departments) ? staged.departments : [],
@@ -5073,8 +5760,10 @@ window.executeDataRestore = function() {
         projects: Array.isArray(staged.projects) ? staged.projects : [],
         documents: Array.isArray(staged.documents) ? staged.documents : [],
         menus: Array.isArray(staged.menus) ? staged.menus : [],
+        announcements: Array.isArray(staged.announcements) ? staged.announcements : [],
         audit: Array.isArray(staged.audit) ? staged.audit : [],
-        stats: (staged.stats && typeof staged.stats === 'object') ? staged.stats : {}
+        stats: (staged.stats && typeof staged.stats === 'object') ? staged.stats : {},
+        theme: backupTheme || localStorage.getItem(THEME_KEY) || 'dark'
       };
     } else {
       const currentDB = loadDB();
@@ -5095,14 +5784,19 @@ window.executeDataRestore = function() {
         projects: mergeArr(currentDB.projects, staged.projects),
         documents: mergeArr(currentDB.documents, staged.documents),
         menus: mergeArr(currentDB.menus, staged.menus),
+        announcements: mergeArr(currentDB.announcements, staged.announcements),
         audit: (currentDB.audit || []).concat(staged.audit || []),
-        stats: Object.assign({}, currentDB.stats || {}, staged.stats || {})
+        stats: Object.assign({}, currentDB.stats || {}, staged.stats || {}),
+        theme: backupTheme || currentDB.theme || localStorage.getItem(THEME_KEY) || 'dark'
       };
     }
 
     saveDB(finalDB);
     seedDB();
-    logAudit('System', 'import', (currentUser() && currentUser().username) || 'admin', 'Database Restore', `Restored via ${mode} mode`);
+    if (backupTheme && (backupTheme === 'dark' || backupTheme === 'light')) {
+      applyTheme(backupTheme);
+    }
+    logAudit('System', 'import', (currentUser() && currentUser().username) || 'admin', 'Database Restore', `Restored via ${mode} mode${backupTheme ? ` (Theme: ${backupTheme})` : ''}`);
 
     closeBackupModal();
     renderAll();
@@ -5113,7 +5807,7 @@ window.executeDataRestore = function() {
       Swal.fire({
         icon: 'success',
         title: 'Restore Completed!',
-        text: `Application data successfully restored (${mode === 'replace' ? 'Full Replace' : 'Smart Merge'}).`,
+        text: `Application data and ${backupTheme ? backupTheme.toUpperCase() + ' theme ' : ''}successfully restored (${mode === 'replace' ? 'Full Replace' : 'Smart Merge'}).`,
         confirmButtonColor: '#1e3a8a'
       });
     } else {
@@ -5126,20 +5820,102 @@ window.executeFactoryReset = function() {
   if (!hasPerm('backup', 'delete')) {
     return showAlert('You do not have permission to reset system data to factory defaults', 'error');
   }
-  askConfirm('WARNING: This will permanently delete all custom records and reset the system to factory defaults. Continue?', 'Yes, Factory Reset').then(ok => {
-    if (!ok) return;
+
+  const verifyAdminPassword = (entered) => {
+    if (!entered) return false;
+    const db = loadDB();
+    const adminUser = (db.users || []).find(u => u.username.toLowerCase() === 'admin');
+    const adminRole = (db.roles || []).find(r => r.name === 'Admin');
+    const adminUsers = (db.users || []).filter(u => u.username.toLowerCase() === 'admin' || (adminRole && u.roleId === adminRole.id));
+    return adminUsers.some(u => u.password === entered || u.password === entered.trim()) ||
+           (adminUser && (adminUser.password === entered || adminUser.password === entered.trim()));
+  };
+
+  const performReset = () => {
+    try {
+      Object.keys(localStorage).forEach(k => {
+        if (k.startsWith(DRAFT_PREFIX)) localStorage.removeItem(k);
+      });
+      localStorage.removeItem(LAST_NAV_KEY);
+    } catch (_) {}
+
     localStorage.removeItem(DB_KEY);
     seedDB();
+    localStorage.setItem(SESSION_KEY, 'u1');
     renderAll();
     renderSidebar();
     goPage('dashboard');
     closeBackupModal();
-    toast('System reset to factory defaults.');
-  });
+    logAudit('System', 'reset', 'admin', 'Factory Reset', 'Database reset to factory defaults with admin password authorization');
+
+    if (window.Swal) {
+      Swal.fire({
+        icon: 'success',
+        title: 'Factory Reset Completed',
+        text: 'The system has been successfully reset to default factory state.',
+        confirmButtonColor: '#1e3a8a'
+      });
+    } else {
+      toast('System reset to factory defaults.');
+    }
+  };
+
+  if (window.Swal) {
+    Swal.fire({
+      title: '⚠️ Factory Reset Authorization',
+      html: `
+        <div style="text-align: left; margin-bottom: 12px; font-size: 0.9rem; line-height: 1.5; color: #b91c1c; background: rgba(239, 68, 68, 0.08); padding: 12px 14px; border-radius: 8px; border: 1px solid rgba(239, 68, 68, 0.25);">
+          <strong>CRITICAL WARNING:</strong> This will permanently erase all custom users, roles, departments, categories, projects, documents, navigation menus, announcements, and audit logs.
+        </div>
+        <p style="margin: 0 0 10px 0; font-size: 0.92rem; text-align: left; font-weight: 500;">Please enter the <strong>Admin Password</strong> to authorize reset:</p>
+      `,
+      input: 'password',
+      inputPlaceholder: 'Enter admin password',
+      inputAttributes: {
+        autocapitalize: 'off',
+        autocorrect: 'off',
+        autocomplete: 'current-password',
+        style: 'box-sizing: border-box; font-size: 1rem;'
+      },
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonText: 'Authorize & Reset',
+      confirmButtonColor: '#dc2626',
+      cancelButtonText: 'Cancel',
+      cancelButtonColor: '#4b5563',
+      focusConfirm: false,
+      focusCancel: true,
+      preConfirm: (inputPassword) => {
+        if (!inputPassword) {
+          Swal.showValidationMessage('Admin password is required');
+          return false;
+        }
+        if (!verifyAdminPassword(inputPassword)) {
+          Swal.showValidationMessage('Incorrect admin password. Action rejected.');
+          return false;
+        }
+        return true;
+      }
+    }).then(result => {
+      if (result.isConfirmed) {
+        performReset();
+      }
+    });
+  } else {
+    const entered = prompt('CRITICAL WARNING: This will permanently erase all custom data and restore factory defaults.\n\nPlease enter the Admin Password to confirm Factory Reset:');
+    if (entered === null) return;
+    if (!entered) {
+      return showAlert('Admin password is required to perform Factory Reset', 'error');
+    }
+    if (!verifyAdminPassword(entered)) {
+      return showAlert('Incorrect admin password. Factory Reset aborted.', 'error');
+    }
+    performReset();
+  }
 };
 
 function renderAll() {
-  renderDashboard(); renderUsers(); renderRoles(); renderDepartments(); renderCategories(); renderProjects(); renderDocuments(); renderMenus(); renderRoleMenuMappingUI(); renderAudit();
+  renderDashboard(); renderUsers(); renderRoles(); renderDepartments(); renderCategories(); renderProjects(); renderDocuments(); renderMenus(); renderRoleMenuMappingUI(); renderAnnouncements(); updateAnnouncementTicker(); renderAudit();
 }
 function resetForm(formId, titleId, titleText, extra) {
   $(formId).reset();
@@ -5304,20 +6080,25 @@ document.addEventListener('DOMContentLoaded', () => {
       return;
     }
 
-    // Alt + N -> open create screen for active module
-    if (e.altKey && !e.ctrlKey && !e.shiftKey && e.key.toLowerCase() === 'n') {
+    // Alt + 0 -> Announcements
+    if (e.altKey && !e.ctrlKey && !e.shiftKey && e.key === '0') {
       e.preventDefault();
-      const active = document.querySelector('.page:not(.hidden)');
-      if (active) {
-        const mod = active.id.replace('page-', '');
-        if (mod === 'users') openCreateUser();
-        else if (mod === 'roles') openCreateRole();
-        else if (mod === 'departments') openCreateDept();
-        else if (mod === 'categories') openCreateCat();
-        else if (mod === 'projects') openCreateProj();
-        else if (mod === 'documents') openCreateDoc();
-        else if (mod === 'menus') openCreateMenu();
-      }
+      if (hasPerm('announcements', 'read')) goPage('announcements');
+      return;
+    }
+
+    // Ctrl + Shift + O -> open create screen for active module
+    if (e.ctrlKey && e.shiftKey && !e.altKey && (e.key === 'O' || e.key === 'o' || e.code === 'KeyO')) {
+      e.preventDefault();
+      e.stopPropagation();
+      triggerActiveModuleAdd();
+      return;
+    }
+
+    // Alt + N -> open create screen for active module (backward compatible)
+    if (e.altKey && !e.ctrlKey && !e.shiftKey && (e.key === 'n' || e.key === 'N' || e.code === 'KeyN')) {
+      e.preventDefault();
+      triggerActiveModuleAdd();
       return;
     }
 
@@ -5325,6 +6106,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (e.key === 'Escape') {
       if (document.body.classList.contains('nav-open')) { closeNav(); return; }
       if (paletteOpen) { closeCmdPalette(); return; }
+      if ($('annDetailModal') && !$('annDetailModal').classList.contains('hidden')) { closeAnnModal(); return; }
       if ($('quickRoleModal') && !$('quickRoleModal').classList.contains('hidden')) { closeQuickRoleModal(); return; }
       if ($('quickDeptModal') && !$('quickDeptModal').classList.contains('hidden')) { closeQuickDeptModal(); return; }
       if ($('iconPickerModal') && !$('iconPickerModal').classList.contains('hidden')) { closeIconPickerModal(); return; }
@@ -5371,7 +6153,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // ---------- DRAFT AUTO-SAVE FOR ALL FORMS ----------
-  const monitoredDraftForms = ['userForm', 'roleForm', 'deptForm', 'catForm', 'projForm', 'docForm', 'menuForm'];
+  const monitoredDraftForms = ['userForm', 'roleForm', 'deptForm', 'catForm', 'projForm', 'docForm', 'menuForm', 'announcementForm'];
   document.addEventListener('input', (e) => {
     const form = e.target && e.target.closest && e.target.closest('form');
     if (form && monitoredDraftForms.includes(form.id)) {
@@ -6113,6 +6895,127 @@ document.addEventListener('DOMContentLoaded', () => {
       if (e.target === $('iconPickerModal')) closeIconPickerModal();
     });
   }
+
+  // ANNOUNCEMENT FORM & FILTERS
+  if ($('annForm')) {
+    $('annForm').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const db = loadDB();
+      if (!Array.isArray(db.announcements)) db.announcements = [];
+
+      const id = $('annId').value;
+      const title = $('annTitle').value.trim();
+      const type = $('annType').value || 'info';
+      const status = $('annStatus').value || 'active';
+      const startDateTime = $('annStart').value;
+      const expiryDateTime = $('annExpiry').value;
+      const description = $('annDesc').value.trim();
+
+      if (!title) return showAlert('Announcement title is required');
+      if (title.length < 2) return showAlert('Title must be at least 2 characters');
+      if (!description) return showAlert('Announcement description is required');
+      if (description.length < 3) return showAlert('Description must be at least 3 characters');
+      if (!startDateTime) return showAlert('Start Date & Time is required');
+      if (!expiryDateTime) return showAlert('Expiry Date & Time is required');
+
+      const startTime = new Date(startDateTime).getTime();
+      const expiryTime = new Date(expiryDateTime).getTime();
+      if (isNaN(startTime) || isNaN(expiryTime)) {
+        return showAlert('Invalid date or time provided');
+      }
+      if (expiryTime <= startTime) {
+        return showAlert('Expiry Date & Time must be after Start Date & Time');
+      }
+
+      if (!id && !hasPerm('announcements', 'add')) return showAlert('You do not have add permission');
+      if (id && !hasPerm('announcements', 'update')) return showAlert('You do not have update permission');
+
+      const u = currentUser();
+      const username = u ? u.username : 'admin';
+
+      if (id) {
+        const ex = db.announcements.find(a => a.id === id);
+        if (!ex) return showAlert('Announcement not found');
+        const before = { ...ex };
+        Object.assign(ex, {
+          title,
+          type,
+          status,
+          startDateTime,
+          expiryDateTime,
+          description,
+          updatedAt: new Date().toISOString()
+        });
+        logAudit('Announcements', 'update', title, `Type: ${before.type}, Status: ${before.status}`, `Type: ${type}, Status: ${status}`);
+      } else {
+        const newAnn = {
+          id: uid('ann'),
+          title,
+          type,
+          status,
+          startDateTime,
+          expiryDateTime,
+          description,
+          createdBy: username,
+          createdAt: new Date().toISOString()
+        };
+        db.announcements.unshift(newAnn);
+        logAudit('Announcements', 'add', title, '-', `Type: ${type}, Status: ${status}, Expires: ${expiryDateTime}`);
+      }
+
+      saveDB(db);
+      clearFormDraft('annForm');
+      resetForm('annForm', 'annFormTitle', 'Add Announcement', () => {
+        $('annCancel').classList.add('hidden');
+        $('annType').value = 'info';
+        $('annStatus').value = 'active';
+        $('annStart').value = toLocalDateTimeInput(new Date());
+        $('annExpiry').value = toLocalDateTimeInput(new Date(Date.now() + 7 * 86400000));
+        updateLiveAnnouncementPreview();
+      });
+      renderAnnouncements();
+      updateAnnouncementTicker();
+      renderDashboard();
+      renderAudit();
+      setModuleView('announcements', 'list');
+      toast(id ? 'Announcement updated successfully' : 'Announcement created and live in header');
+    });
+  }
+
+  if ($('annCancel')) {
+    $('annCancel').addEventListener('click', () => {
+      clearFormDraft('annForm');
+      resetForm('annForm', 'annFormTitle', 'Add Announcement', () => {
+        $('annCancel').classList.add('hidden');
+        updateLiveAnnouncementPreview();
+      });
+      setModuleView('announcements', 'list');
+    });
+  }
+
+  // Live preview & counter listeners for Announcement Form
+  if ($('annTitle')) $('annTitle').addEventListener('input', updateLiveAnnouncementPreview);
+  if ($('annType')) $('annType').addEventListener('change', updateLiveAnnouncementPreview);
+  if ($('annStatus')) $('annStatus').addEventListener('change', updateLiveAnnouncementPreview);
+  if ($('annStart')) $('annStart').addEventListener('change', updateLiveAnnouncementPreview);
+  if ($('annExpiry')) $('annExpiry').addEventListener('change', updateLiveAnnouncementPreview);
+  if ($('annDesc')) $('annDesc').addEventListener('input', updateLiveAnnouncementPreview);
+
+  // Filters for Announcements List
+  if ($('annSearch')) $('annSearch').addEventListener('input', () => renderAnnouncements());
+  if ($('annFilterType')) $('annFilterType').addEventListener('change', () => renderAnnouncements());
+  if ($('annFilterStatus')) $('annFilterStatus').addEventListener('change', () => renderAnnouncements());
+
+  // Recurring live expiry ticker check:
+  // Every 10 seconds, checks active announcements. If an announcement expires, it immediately
+  // vanishes from the header marquee across the entire application without page reload.
+  setInterval(() => {
+    updateAnnouncementTicker();
+    const active = document.querySelector('.page:not(.hidden)');
+    if (active && active.id === 'page-announcements') {
+      renderAnnouncements(false);
+    }
+  }, 10000);
 
   // Handle browser Back / Forward history navigation
   window.addEventListener('hashchange', () => {

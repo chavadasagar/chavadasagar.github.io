@@ -129,6 +129,11 @@
         <span class="menu-label">Menu Builder</span>
         <kbd class="menu-kbd">Alt+9</kbd>
       </button>
+      <button data-page="announcements" data-module="announcements" class="menu-btn" title="Alt+0">
+        <span class="menu-icon">📢</span>
+        <span class="menu-label">Announcements</span>
+        <kbd class="menu-kbd">Alt+0</kbd>
+      </button>
 
       <button type="button" data-module="backup" class="menu-btn" onclick="openBackupModal()" title="Database Backup & Restore (JSON Export/Import)">
         <span class="menu-icon">💾</span>
@@ -180,8 +185,9 @@
         </button>
 
         <!-- Notification Bell -->
-        <button id="notifBellBtn" class="theme-toggle-btn" title="Notifications" aria-label="Notifications" onclick="toast('You have no unread notifications.', 'info')">
+        <button id="notifBellBtn" class="theme-toggle-btn notif-bell-btn" title="Announcements & Notifications" aria-label="Notifications" onclick="handleNotifBellClick()">
           <span style="font-size: 1.05rem;">🔔</span>
+          <span id="notifBadge" class="notif-badge hidden">0</span>
         </button>
 
         <!-- Backup & Restore Quick Button -->
@@ -217,6 +223,23 @@
         </div>
       </div>
     </header>
+
+    <!-- GLOBAL ANNOUNCEMENT TICKER (MARQUEE) -->
+    <div id="announcementTickerBar" class="announcement-ticker-bar hidden">
+      <div class="ticker-badge" onclick="goPage('announcements')" title="Click to view all announcements in module">
+        <span class="ticker-pulse-dot"></span>
+        <span class="ticker-icon">📢</span>
+        <span class="ticker-title">ANNOUNCEMENT</span>
+        <span id="tickerLiveCount" class="ticker-count">0</span>
+      </div>
+      <div class="ticker-track-container" id="tickerTrackContainer">
+        <div id="tickerMarqueeTrack" class="ticker-marquee-track"></div>
+      </div>
+      <div class="ticker-controls">
+        <button id="tickerPauseBtn" class="ticker-ctrl-btn" title="Pause / Resume Ticker Animation" onclick="toggleTickerPause()">⏸</button>
+        <button id="tickerDismissBtn" class="ticker-ctrl-btn" title="Dismiss announcement ticker" onclick="dismissTickerBar()">✕</button>
+      </div>
+    </div>
 
     <div class="content-body">
       <!-- ============ DASHBOARD ============ -->
@@ -285,6 +308,15 @@
             </div>
             <div class="kpi-arrow">→</div>
           </div>
+
+          <div class="card card-kpi" data-goto="announcements" title="Click to view Announcements">
+            <div class="kpi-icon-wrap kpi-blue">📢</div>
+            <div class="kpi-content">
+              <h3 id="cAnnouncements">0</h3>
+              <p>Announcements</p>
+            </div>
+            <div class="kpi-arrow">→</div>
+          </div>
         </div>
 
         <!-- CHARTS GRID -->
@@ -334,7 +366,7 @@
                 <h3>👥 Users Directory</h3>
                 <p class="muted small">Manage system user accounts, assigned departments, and roles</p>
               </div>
-              <button class="btn primary" onclick="openCreateUser()">
+              <button class="btn primary" onclick="openCreateUser()" title="Add New User (Ctrl+Shift+O)">
                 <span>➕ Add New User</span>
               </button>
             </div>
@@ -477,7 +509,7 @@
                 <button id="deleteAllRolesBtn" class="btn danger sm" title="Remove all custom roles">
                   <span>🗑️ Remove Selected Roles</span>
                 </button>
-                <button class="btn primary" onclick="openCreateRole()">
+                <button class="btn primary" onclick="openCreateRole()" title="Add New Role (Ctrl+Shift+O)">
                   <span>➕ + New Role</span>
                 </button>
               </div>
@@ -612,7 +644,7 @@
                 <h3>🏢 Departments Directory</h3>
                 <p class="muted small">Manage organizational units and departmental divisions</p>
               </div>
-              <button class="btn primary" onclick="openCreateDept()">
+              <button class="btn primary" onclick="openCreateDept()" title="Add New Department (Ctrl+Shift+O)">
                 <span>➕ Add New Department</span>
               </button>
             </div>
@@ -755,7 +787,7 @@
                 <h3>📂 Category Tree Hierarchy</h3>
                 <p class="muted small">Manage infinite multi-level categories and sub-branches</p>
               </div>
-              <button class="btn primary" onclick="openCreateCat()">
+              <button class="btn primary" onclick="openCreateCat()" title="Add Top-Level Category (Ctrl+Shift+O)">
                 <span>➕ Add Top-Level Category</span>
               </button>
             </div>
@@ -844,7 +876,7 @@
                 <h3>📁 Projects Directory</h3>
                 <p class="muted small">Manage organizational projects and assigned category tags</p>
               </div>
-              <button class="btn primary" onclick="openCreateProj()">
+              <button class="btn primary" onclick="openCreateProj()" title="Add New Project (Ctrl+Shift+O)">
                 <span>➕ Add New Project</span>
               </button>
             </div>
@@ -945,7 +977,7 @@
                 <h3>📄 Document Repository</h3>
                 <p class="muted small">Store, organize, and version control enterprise documents</p>
               </div>
-              <button class="btn primary" onclick="openCreateDoc()">
+              <button class="btn primary" onclick="openCreateDoc()" title="Add New Document (Ctrl+Shift+O)">
                 <span>➕ Add New Document</span>
               </button>
             </div>
@@ -1112,7 +1144,7 @@
                 <button type="button" class="btn secondary" onclick="switchMenuSubTab('mapping')">
                   <span>🛡️ Role-Menu Mapping</span>
                 </button>
-                <button type="button" class="btn primary" onclick="openCreateMenu()">
+                <button type="button" class="btn primary" onclick="openCreateMenu()" title="Add New Menu (Ctrl+Shift+O)">
                   <span>➕ Add New Menu</span>
                 </button>
               </div>
@@ -1291,6 +1323,214 @@
               <div id="menuDetailActions" class="view-actions"></div>
             </div>
             <div id="menuDetailContent"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ ANNOUNCEMENTS ============ -->
+      <section id="page-announcements" class="page hidden">
+        <!-- 1. Announcements Listing Screen -->
+        <div id="announcements-list-view" class="module-view">
+          <div class="panel">
+            <div class="panel-header space-between">
+              <div>
+                <h3>📢 Announcement Broadcast Center</h3>
+                <p class="muted small">Create time-bound alerts, broadcast ticker notices, and configure priority banners</p>
+              </div>
+              <button class="btn primary" onclick="openCreateAnnouncement()" title="Add New Announcement (Ctrl+Shift+O)">
+                <span>➕ Add New Announcement</span>
+              </button>
+            </div>
+
+            <!-- Summary KPI Strip -->
+            <div class="ann-stats-strip">
+              <div class="ann-stat-card">
+                <div class="ann-stat-icon">📢</div>
+                <div class="ann-stat-info">
+                  <span class="ann-stat-val" id="statTotalAnn">0</span>
+                  <span class="ann-stat-lbl">Total Notices</span>
+                </div>
+              </div>
+              <div class="ann-stat-card live-card">
+                <div class="ann-stat-icon pulse-icon">🟢</div>
+                <div class="ann-stat-info">
+                  <span class="ann-stat-val" id="statActiveAnn">0</span>
+                  <span class="ann-stat-lbl">Live in Ticker</span>
+                </div>
+              </div>
+              <div class="ann-stat-card">
+                <div class="ann-stat-icon">⏳</div>
+                <div class="ann-stat-info">
+                  <span class="ann-stat-val" id="statScheduledAnn">0</span>
+                  <span class="ann-stat-lbl">Scheduled</span>
+                </div>
+              </div>
+              <div class="ann-stat-card">
+                <div class="ann-stat-icon">⛔</div>
+                <div class="ann-stat-info">
+                  <span class="ann-stat-val" id="statExpiredAnn">0</span>
+                  <span class="ann-stat-lbl">Auto-Expired</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Toolbar -->
+            <div class="toolbar">
+              <div class="search-wrap">
+                <span>🔍</span>
+                <input type="text" id="annSearch" placeholder="Search announcements by title, details, or author...">
+              </div>
+              <select id="annFilterType">
+                <option value="">All Priorities</option>
+                <option value="info">ℹ️ Info Only</option>
+                <option value="important">⚠️ Important Only</option>
+                <option value="urgent">🚨 Urgent Only</option>
+              </select>
+              <select id="annFilterStatus">
+                <option value="">All Statuses</option>
+                <option value="active">Active (Currently Live)</option>
+                <option value="scheduled">Scheduled (Upcoming)</option>
+                <option value="expired">Expired Notices</option>
+                <option value="inactive">Inactive</option>
+              </select>
+            </div>
+
+            <div id="announcementsGrid" class="ag-theme-quartz erp-grid"></div>
+            <table class="hidden"><tbody id="annTable"></tbody></table>
+          </div>
+        </div>
+
+        <!-- 2. Announcements Create / Edit Form Screen -->
+        <div id="announcements-form-view" class="module-view hidden">
+          <div class="view-header">
+            <button type="button" class="btn secondary btn-back" onclick="setModuleView('announcements', 'list')">
+              <span>← Back to Announcements List</span>
+            </button>
+            <h3 id="annFormTitle">Add Announcement</h3>
+            <span class="panel-tag">Form</span>
+          </div>
+
+          <div class="form-layout-split">
+            <!-- Left Form Panel -->
+            <div class="panel form-panel">
+              <form id="annForm" class="form-grid">
+                <input type="hidden" id="annId">
+
+                <label class="full">Announcement Title <span class="required-star">*</span>
+                  <input type="text" id="annTitle" placeholder="e.g. System Maintenance Notice or Annual Review Update" required minlength="2">
+                </label>
+
+                <label>Priority / Alert Level <span class="required-star">*</span>
+                  <select id="annType" required>
+                    <option value="info">ℹ️ Info (General Information)</option>
+                    <option value="important">⚠️ Important (Warning / Priority Notice)</option>
+                    <option value="urgent">🚨 Urgent (Critical / Immediate Action)</option>
+                  </select>
+                </label>
+
+                <label>Publication Status <span class="required-star">*</span>
+                  <select id="annStatus" required>
+                    <option value="active">Active (Broadcast to Users)</option>
+                    <option value="inactive">Inactive (Hidden / Draft)</option>
+                  </select>
+                </label>
+
+                <label>Start Date & Time <span class="required-star">*</span>
+                  <input type="datetime-local" id="annStart" required>
+                  <span class="field-hint">When this announcement starts appearing in the header ticker</span>
+                </label>
+
+                <label>Expiry Date & Time <span class="required-star">*</span>
+                  <input type="datetime-local" id="annExpiry" required>
+                  <span class="field-hint">When this announcement automatically disappears from the header ticker</span>
+                </label>
+
+                <label class="full">Detailed Message / Description <span class="required-star">*</span>
+                  <div class="desc-counter-wrap">
+                    <textarea id="annDesc" rows="4" placeholder="Enter complete announcement content that users will read..." required minlength="3" maxlength="600"></textarea>
+                    <span id="annDescCount" class="char-count">0/600</span>
+                  </div>
+                </label>
+
+                <div class="form-actions full">
+                  <button type="submit" id="annSubmitBtn" class="btn primary">Save Announcement</button>
+                  <button type="button" id="annCancel" class="btn secondary" onclick="setModuleView('announcements', 'list')">Cancel</button>
+                </div>
+              </form>
+            </div>
+
+            <!-- Right Info & Live Preview -->
+            <div class="side-col">
+              <!-- Live Preview Card -->
+              <div class="side-info-card">
+                <div class="side-card-header">
+                  <h4>👁️ Real-Time Ticker & Banner Preview</h4>
+                </div>
+                <div class="ann-preview-box">
+                  <div class="preview-subheading">Header Marquee Ticker Appearance:</div>
+                  <div class="preview-ticker-strip">
+                    <div class="ticker-badge sm">
+                      <span>📢</span>
+                    </div>
+                    <div class="preview-ticker-content" id="previewTickerSnippet">
+                      <span class="ticker-type-pill ticker-type-info" id="prevTypePill">ℹ️ INFO</span>
+                      <strong id="prevTitle">Notice Title</strong>: <span id="prevDesc">Notice message snippet...</span>
+                    </div>
+                  </div>
+
+                  <div class="preview-subheading mt-sm">Card Overview Preview:</div>
+                  <div class="preview-card-box" id="previewCardBox">
+                    <div class="preview-card-top">
+                      <span class="ticker-type-pill ticker-type-info" id="prevCardType">ℹ️ INFO</span>
+                      <span class="badge" id="prevCardStatus">Active</span>
+                    </div>
+                    <h4 id="prevCardTitle" style="margin: 6px 0; color: var(--text-primary);">Notice Title</h4>
+                    <p id="prevCardDesc" style="margin: 0; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.45;">Notice message snippet...</p>
+                    <div class="preview-card-timers mt-xs">
+                      <span class="muted small" id="prevCardTimers">Starts: Now • Expires: Tomorrow</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Expiry & Priority Guidelines -->
+              <div class="side-info-card">
+                <div class="side-card-header">
+                  <h4>💡 Announcement Guidelines</h4>
+                </div>
+                <ul class="guide-list">
+                  <li class="guide-item">
+                    <span class="guide-icon">ℹ️</span>
+                    <span><b>Info:</b> Routine announcements, holiday notices, and informative bulletins.</span>
+                  </li>
+                  <li class="guide-item">
+                    <span class="guide-icon">⚠️</span>
+                    <span><b>Important:</b> Scheduled system downtime, policy updates, and deadline reminders.</span>
+                  </li>
+                  <li class="guide-item">
+                    <span class="guide-icon">🚨</span>
+                    <span><b>Urgent:</b> Critical emergency alerts, security warnings, or immediate outage notices.</span>
+                  </li>
+                  <li class="guide-item">
+                    <span class="guide-icon">⏳</span>
+                    <span><b>Automatic Expiry:</b> When the Expiry Date & Time arrives, the alert automatically vanishes from the header marquee across all users with no reload required.</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Announcements Details View Screen -->
+        <div id="announcements-detail-view" class="module-view hidden">
+          <div class="panel">
+            <div class="view-header">
+              <button type="button" class="btn secondary btn-back" onclick="setModuleView('announcements', 'list')">
+                <span>← Back to Announcements List</span>
+              </button>
+              <div id="annDetailActions" class="view-actions"></div>
+            </div>
+            <div id="annDetailContent"></div>
           </div>
         </div>
       </section>
@@ -1714,10 +1954,10 @@
             <h4 style="margin: 0; color: #dc2626; font-size: 1.05rem;">Reset Application to Factory Defaults</h4>
           </div>
           <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.45; margin: 0 0 14px;">
-            This will permanently erase all created users, roles, categories, projects, documents, custom menus, and audit logs, restoring only the initial sample dataset (Admin user, Admin role, and Default dynamic menus).
+            This will permanently erase all created users, roles, categories, projects, documents, custom menus, and audit logs, restoring only the initial sample dataset (Admin user, Admin role, and Default dynamic menus). <strong>Requires Admin password authorization.</strong>
           </p>
           <button type="button" class="btn danger sm" onclick="executeFactoryReset()" style="font-weight: 700;">
-            <span>💣 Reset to Factory Defaults</span>
+            <span>💣 Reset to Factory Defaults (Password Required)</span>
           </button>
         </div>
       </div>
@@ -1727,6 +1967,51 @@
     <div class="modal-footer" style="padding: 12px 20px; border-top: 1px solid var(--border-subtle); display: flex; justify-content: space-between; align-items: center; background: var(--bg-surface-subtle); border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;">
       <span class="muted small">🔒 100% Client-Side Local Storage Privacy</span>
       <button type="button" class="btn secondary sm" onclick="closeBackupModal()">Close</button>
+    </div>
+  </div>
+</div>
+
+<!-- ============ ANNOUNCEMENT DETAIL MODAL ============ -->
+<div id="annDetailModal" class="cmd-overlay hidden" onclick="if(event.target === this) closeAnnModal()">
+  <div class="cmd-box ann-detail-modal-box">
+    <div class="modal-header space-between">
+      <div style="display: flex; align-items: center; gap: 10px;">
+        <span id="modalAnnTypeBadge" class="ticker-type-pill ticker-type-info">ℹ️ INFO</span>
+        <h3 id="modalAnnTitle" style="margin: 0; font-size: 1.15rem; font-weight: 700;">Announcement</h3>
+      </div>
+      <button class="modal-close-btn" onclick="closeAnnModal()">✕</button>
+    </div>
+    <div class="ann-modal-body">
+      <div class="ann-meta-strip">
+        <div class="ann-meta-item">
+          <span class="muted small">Status:</span>
+          <span id="modalAnnStatusBadge" class="badge">Active</span>
+        </div>
+        <div class="ann-meta-item">
+          <span class="muted small">Starts:</span>
+          <span id="modalAnnStart" class="ann-meta-val">—</span>
+        </div>
+        <div class="ann-meta-item">
+          <span class="muted small">Expires:</span>
+          <span id="modalAnnExpiry" class="ann-meta-val">—</span>
+        </div>
+        <div class="ann-meta-item">
+          <span class="muted small">Time Remaining:</span>
+          <span id="modalAnnRemaining" class="badge warn">—</span>
+        </div>
+      </div>
+      <div class="ann-desc-box">
+        <div class="muted small" style="margin-bottom: 6px; font-weight: 600;">Message Content:</div>
+        <p id="modalAnnDesc" class="ann-desc-text"></p>
+      </div>
+    </div>
+    <div class="modal-actions space-between mt">
+      <button type="button" class="btn secondary" onclick="goPage('announcements'); closeAnnModal();">
+        <span>📢 Go to Announcements Center</span>
+      </button>
+      <div style="display: flex; gap: 8px;" id="modalAnnActionBtns">
+        <button type="button" class="btn primary" onclick="closeAnnModal()">Close</button>
+      </div>
     </div>
   </div>
 </div>
