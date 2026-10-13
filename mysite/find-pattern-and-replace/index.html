@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pattern Finder — find, jump and replace</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%233b5bdb'/%3E%3Ccircle cx='14' cy='14' r='6.5' fill='none' stroke='white' stroke-width='3'/%3E%3Cpath d='M19 19l6 6' stroke='white' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+    // apply the saved theme before first paint
+    try { var t = localStorage.getItem('fpr.theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="logo" aria-hidden="true"></span>
+      <div>
+        <h1>Pattern Finder</h1>
+        <p>Paste text · pick a pattern · jump through matches · replace</p>
+      </div>
+    </div>
+    <div class="actions">
+      <button class="btn" id="btnOpen" title="Open a text, CSV or log file">Open file</button>
+      <input type="file" id="fileInput" hidden accept=".txt,.csv,.tsv,.log,.md,.json,.xml,.html,.sql,.ini,.yaml,.yml,text/*">
+      <button class="btn" id="btnCopy" title="Copy all the text">Copy text</button>
+      <button class="btn" id="btnDownload" title="Save the text as a file">Download</button>
+      <span class="vsep" aria-hidden="true"></span>
+      <button class="btn" id="btnUndo" title="Undo (Ctrl+Z)" disabled>Undo</button>
+      <button class="btn" id="btnRedo" title="Redo (Ctrl+Y)" disabled>Redo</button>
+      <span class="vsep" aria-hidden="true"></span>
+      <button class="btn" id="btnWrap" aria-pressed="true" title="Wrap long lines">Wrap</button>
+      <button class="btn" id="btnClear" title="Remove all the text">Clear</button>
+      <button class="btn" id="btnTheme" title="Switch light / dark">Theme</button>
+    </div>
+  </header>
+
+  <main class="layout">
+    <section class="workspace" aria-label="Text editor">
+      <div class="findbar" role="search">
+        <div class="frow">
+          <label class="flabel" for="find">Find</label>
+          <div class="field" id="findField">
+            <input id="find" type="text" placeholder="Type text to find — or pick a pattern on the right" autocomplete="off" spellcheck="false">
+            <div class="pill" id="pill" hidden>
+              <span class="ico" id="pillIco"></span>
+              <span class="pill-label" id="pillLabel"></span>
+              <button class="pill-btn" id="pillRegex" title="Edit this pattern as a regular expression">.*</button>
+              <button class="pill-btn" id="pillClear" title="Clear pattern (Esc)" aria-label="Clear pattern">✕</button>
+            </div>
+            <div class="toggles" id="toggles">
+              <button class="toggle" id="optCase" aria-pressed="false" title="Match UPPER / lower case exactly">Aa</button>
+              <button class="toggle" id="optWord" aria-pressed="false" title="Whole words only"><u>ab</u></button>
+              <button class="toggle" id="optRegex" aria-pressed="false" title="Use a regular expression">.*</button>
+            </div>
+          </div>
+          <span class="counter" id="counter" aria-live="polite"></span>
+          <button class="btn" id="btnPrev" title="Previous match (Shift+Enter)" disabled>↑ Prev</button>
+          <button class="btn" id="btnNext" title="Next match (Enter)" disabled>↓ Next</button>
+        </div>
+
+        <div class="frow">
+          <label class="flabel" for="replace">Replace</label>
+          <select id="replaceMode" class="select" aria-label="What to replace each match with">
+            <option value="text">with text</option>
+            <option value="after">keep it, add after</option>
+            <option value="before">keep it, add before</option>
+            <option value="below">keep it, add on a new line below</option>
+            <option value="above">keep it, add on a new line above</option>
+            <option value="remove">remove it</option>
+            <option value="upper">make UPPERCASE</option>
+            <option value="lower">make lowercase</option>
+            <option value="title">make Title Case</option>
+            <option value="mask">mask as ****</option>
+          </select>
+          <div class="field" id="replaceField">
+            <input id="replace" type="text" placeholder="New text (leave empty to delete matches)" autocomplete="off" spellcheck="false">
+          </div>
+          <button class="btn" id="btnReplace" title="Replace this match and go to the next (Enter)" disabled>Replace</button>
+          <button class="btn primary" id="btnReplaceAll" title="Replace every match (Ctrl+Enter)" disabled>Replace all</button>
+        </div>
+
+        <div class="frow extras" id="extras" hidden>
+          <label class="scope" id="scopeWrap" hidden>
+            <span>Search in</span>
+            <select id="scope" class="select"></select>
+          </label>
+          <div class="chips" id="chips" hidden></div>
+          <label class="scope" id="linkScopeWrap" hidden>
+            <span>take it from</span>
+            <select id="linkScope" class="select">
+              <option value="line">the same line</option>
+              <option value="near">same line, else the nearest</option>
+            </select>
+          </label>
+          <div class="find-error" id="findError" hidden></div>
+        </div>
+      </div>
+
+      <div class="changes-bar" id="changesBar" hidden>
+        <span class="changes-dot" aria-hidden="true"></span>
+        <span id="changesText" aria-live="polite"></span>
+        <button class="btn" id="chgPrev" title="Previous change">↑</button>
+        <button class="btn" id="chgNext" title="Next change">↓</button>
+        <button class="link" id="chgHide" title="Stop showing the changes">Hide</button>
+      </div>
+
+      <div class="editor" id="editor">
+        <div class="scroller" id="scroller">
+          <div class="inner" id="inner">
+            <div class="backdrop" id="backdrop" aria-hidden="true"></div>
+            <textarea id="ta" spellcheck="false" autocomplete="off" autocapitalize="off" aria-label="Your text"></textarea>
+          </div>
+        </div>
+        <div class="empty" id="empty">
+          <div class="empty-card">
+            <h2>Paste your text here</h2>
+            <p>Click and press <kbd>Ctrl</kbd> + <kbd>V</kbd>, or drop a file. Notes, logs, CSV, tables — anything.</p>
+            <p class="empty-try">No text handy?
+              <button class="link" data-sample="notes">Try messy notes</button> ·
+              <button class="link" data-sample="csv">Try a CSV</button>
+            </p>
+          </div>
+        </div>
+        <div class="dropzone" id="dropzone">Drop the file to open it</div>
+      </div>
+
+      <footer class="statusbar">
+        <span id="statPos">Ln 1, Col 1</span>
+        <span id="statText"></span>
+        <span id="statTable" class="stat-table"></span>
+      </footer>
+    </section>
+
+    <aside class="sidebar" aria-label="Patterns">
+      <div class="tabs" role="tablist">
+        <button class="tab active" role="tab" data-tab="patterns" aria-selected="true">Patterns</button>
+        <button class="tab" role="tab" data-tab="builder" aria-selected="false">Builder</button>
+        <button class="tab" role="tab" data-tab="results" aria-selected="false">Results <span class="tab-count" id="tabCount"></span></button>
+      </div>
+
+      <div class="panel" id="panel-patterns" role="tabpanel"></div>
+
+      <div class="panel" id="panel-builder" role="tabpanel" hidden>
+        <div class="b-section">
+          <label class="b-title" for="bExample">Start from an example</label>
+          <div class="b-example">
+            <input id="bExample" type="text" placeholder="e.g. INV-2024-0012" autocomplete="off" spellcheck="false">
+            <button class="btn primary" id="bFromExample">Create</button>
+          </div>
+          <button class="link" id="bFromSelection">Use the text selected in the editor</button>
+          <p class="b-tip">Tip: right-click any text in the editor and choose <b>Create pattern</b>.</p>
+        </div>
+
+        <div class="b-section">
+          <div class="b-title">Your pattern, piece by piece</div>
+          <ol class="blocks" id="blocks"></ol>
+          <div class="b-add" id="bAdd"></div>
+        </div>
+
+        <div class="b-section b-preview" id="bPreview" hidden>
+          <div class="b-result" id="bCount"></div>
+          <div class="b-reads"><span class="b-k">Reads as</span><span id="bReads"></span></div>
+          <div class="b-opts">
+            <label class="check"><input type="checkbox" id="bIgnoreCase"> ignore UPPER / lower case</label>
+            <label class="check"><input type="checkbox" id="bWholeWord"> whole word only</label>
+          </div>
+          <div class="b-save">
+            <input id="bName" type="text" placeholder="Name it to reuse later" maxlength="40" autocomplete="off">
+            <button class="btn" id="bSave">Save</button>
+            <button class="btn" id="bClear">Clear</button>
+          </div>
+          <details class="b-regex">
+            <summary>Show the regular expression</summary>
+            <code id="bRegex"></code>
+          </details>
+        </div>
+      </div>
+
+      <div class="panel" id="panel-results" role="tabpanel" hidden>
+        <div class="res-tools" id="resTools" hidden>
+          <button class="btn" id="btnCopyMatches">Copy matches</button>
+          <button class="btn" id="btnCopyUnique">Copy unique</button>
+          <div class="res-pick">
+            <span id="resPickText"></span>
+            <button class="link" id="btnPickAll">Tick all</button>
+            <button class="link" id="btnPickNone">Untick all</button>
+          </div>
+        </div>
+        <div id="results"></div>
+      </div>
+    </aside>
+  </main>
+
+  <div class="ctx" id="ctx" role="menu" aria-label="Actions for this text" hidden></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/core.js"></script>
+  <script src="js/samples.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
