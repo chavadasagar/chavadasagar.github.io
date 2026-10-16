@@ -1,0 +1,57 @@
+Module: [Module Name]
+Stack: ASP.NET Core + PostgreSQL (optional, badal sakte ho)
+
+W3Schools jaisa tutorial website banao, ek single HTML file (HTML + CSS + JS, 
+koi external dependency nahi, diagrams inline SVG me). Language: Hinglish.
+Left sidebar me navigation, right side me content, mobile responsive, 
+dark/light toggle, har section ke end me "Next →" button.
+
+Rules:
+- Poore tutorial me EK hi real scenario use karo (example data ke saath).
+- Har section ke upar 2-3 line ka "Yaad rakhne wali baat" box.
+- Simple likho, over-engineering nahi.
+
+Sections is order me:
+
+1. Overview (Big Picture)
+   - Module kya karta hai, kaun use karta hai, 1 paragraph
+   - Poore module ka ek architecture/flow diagram
+
+2. Tables
+   - Har table ka purpose, columns, PK/FK, sample 2-3 rows
+   - ER diagram
+
+3. Flow
+   - Main flow ka flowchart
+   - Har important operation ka sequence diagram (User → UI → API → DB)
+   - Status/state diagram (agar status columns hain)
+
+4. Screens
+   - Kitni screens, har screen ka kaam
+   - Navigation flow (screen se screen)
+
+5. API Endpoints
+   - Har endpoint: method, URL, request JSON, success response, error responses
+
+6. API-to-Table Mapping (matrix)
+   Columns: Endpoint + HTTP method | Business operation | Tables read | 
+   Tables inserted | Tables updated | Tables deleted/revoked | 
+   Kis condition me DB operation trigger hoga
+
+7. Screen-to-Table + Validation (matrix)
+   Columns: Screen | User action | Kaunse table me insert/update | 
+   Validation rule | Error message (user ko dikhne wala)
+
+8. Transaction Boundary Matrix
+   Columns: Business operation | Ek transaction me kaunse changes | 
+   Atomicity required? | Commit ke baad kya hoga | Email/SMS fail ho to kya | 
+   Retry se duplicate ka risk | Idempotency kaise implement hogi
+
+9. Edge Cases & Failure Scenarios
+   - Double click, network timeout, partial failure, concurrent request
+
+10. Folder Structure
+   - Tree view (Clean Architecture), har folder ke saamne 1 line ka kaam
+
+Output: Pehle poori file ek baar me do. Agar bahut badi ho to section 1-5, 
+phir 6-10 me tod ke do, par ek hi HTML file me merge hone layak.

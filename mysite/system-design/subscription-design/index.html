@@ -1,749 +1,217 @@
+<!DOCTYPE html>
+<html lang="hi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Subscription Module Tutorial</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
 <style>
-  /* Layout: tutorial site — fixed top bar, sticky left lesson index, single reading column with lesson blocks, prev/next per lesson */
-  :root {
-    --bg: #f7f8fa; --surface: #ffffff; --fg: #1a2130; --muted: #5b6475;
-    --line: #dfe3ea; --ink: #14324a; --ink-fg: #e9f1f7;
-    --accent: #0f7a6c; --accent-soft: #e2f3f0;
-    --try: #b4620a; --try-soft: #fdf0e1;
-    --code-bg: #f1f3f7; --ok: #157a3c; --bad: #b42318; --warn: #a15c07;
-    --font-display: "Bricolage Grotesque", "Segoe UI", sans-serif;
-    --font-body: "Manrope", system-ui, sans-serif;
-    --font-mono: "JetBrains Mono", ui-monospace, Consolas, monospace;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root:not([data-theme="light"]) {
-      --bg: #0f1318; --surface: #161b22; --fg: #e3e8ef; --muted: #98a2b3;
-      --line: #273040; --ink: #0b2233; --ink-fg: #dbe8f2;
-      --accent: #4cc2b0; --accent-soft: #12302c;
-      --try: #f0a54a; --try-soft: #33240f;
-      --code-bg: #1d232d; --ok: #4ccb7a; --bad: #f2756a; --warn: #f0b24a;
-      color-scheme: dark;
-    }
-  }
-  :root[data-theme="dark"] {
-    --bg: #0f1318; --surface: #161b22; --fg: #e3e8ef; --muted: #98a2b3;
-    --line: #273040; --ink: #0b2233; --ink-fg: #dbe8f2;
-    --accent: #4cc2b0; --accent-soft: #12302c;
-    --try: #f0a54a; --try-soft: #33240f;
-    --code-bg: #1d232d; --ok: #4ccb7a; --bad: #f2756a; --warn: #f0b24a;
-    color-scheme: dark;
-  }
-  * { box-sizing: border-box; }
-  html { scroll-behavior: smooth; }
-  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
-  body { background: var(--bg); color: var(--fg); font-family: var(--font-body); font-size: 15.5px; line-height: 1.65; }
+:root{--bg:#fbfaf7;--sb:#f0ede6;--tx:#1d2a2a;--mu:#5d6b6b;--ac:#0b6e6e;--bd:#d8d3c7;--cd:#fff;--tip:#e4f3ee;--code:#f3f1ea;--ok:#2e7d32;--er:#b3261e}
+:root[data-theme=dark]{--bg:#12191a;--sb:#182224;--tx:#e6ecea;--mu:#9bb0ad;--ac:#4fc3b8;--bd:#2c3b3d;--cd:#1b2729;--tip:#173a36;--code:#1e2b2d;--ok:#7bd88a;--er:#ff8a80}
+*{box-sizing:border-box}html{height:100%}
+body{margin:0;height:100%;background:var(--bg);color:var(--tx);font:16px/1.65 Georgia,"Noto Serif",serif;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+#sb{position:fixed;left:0;top:env(safe-area-inset-top,0px);bottom:0;width:250px;background:var(--sb);border-right:1px solid var(--bd);overflow:auto;padding:14px 0;transition:transform .2s;z-index:5}
+#sb h1{font:700 15px system-ui,sans-serif;margin:0 16px 10px;color:var(--ac)}
+#sb a{display:block;padding:7px 16px;color:var(--tx);text-decoration:none;font:14px system-ui,sans-serif;border-left:3px solid transparent}
+#sb a.on{border-color:var(--ac);background:var(--bg);color:var(--ac);font-weight:600}
+#top{display:none;position:fixed;top:env(safe-area-inset-top,0px);left:0;right:0;height:46px;background:var(--sb);border-bottom:1px solid var(--bd);align-items:center;gap:10px;padding:0 12px;z-index:6;font-family:system-ui}
+button{font:600 14px system-ui,sans-serif;cursor:pointer;border:1px solid var(--bd);background:var(--cd);color:var(--tx);border-radius:6px;padding:6px 12px}
+#th{position:fixed;right:14px;top:calc(env(safe-area-inset-top,0px) + 10px);z-index:7}
+main{margin-left:250px;max-width:900px;padding:28px 32px 60px}
+section{display:none}section.on{display:block}
+h2{font:700 26px system-ui,sans-serif;margin:0 0 12px}h3{font:700 18px system-ui,sans-serif;margin:26px 0 8px;color:var(--ac)}
+.tip{background:var(--tip);border-left:4px solid var(--ac);padding:10px 14px;border-radius:4px;margin:0 0 18px;font-size:15px}
+.tip b{font-family:system-ui}
+.w{overflow-x:auto;margin:10px 0}
+table{border-collapse:collapse;font:13.5px/1.45 system-ui,sans-serif;min-width:100%}
+th,td{border:1px solid var(--bd);padding:7px 9px;text-align:left;vertical-align:top}th{background:var(--sb)}
+pre,code{background:var(--code);font:13px/1.5 ui-monospace,Consolas,monospace}code{padding:1px 5px;border-radius:3px}
+pre{padding:12px;overflow:auto;border-radius:6px;border:1px solid var(--bd)}
+svg{max-width:100%;height:auto;display:block;margin:10px 0;background:var(--cd);border:1px solid var(--bd);border-radius:6px}
+svg text{fill:var(--tx);font:12px system-ui,sans-serif}svg .b{fill:var(--cd);stroke:var(--ac);stroke-width:1.5}svg .d{fill:var(--tip);stroke:var(--ac)}svg .l{stroke:var(--mu);stroke-width:1.3;fill:none}svg .dl{stroke:var(--mu);stroke-dasharray:4 3}svg .h{font-weight:700}
+.ep{border:1px solid var(--bd);border-radius:6px;margin:14px 0;background:var(--cd);overflow:hidden}.ep>h4{margin:0;padding:8px 12px;background:var(--sb);font:600 14px ui-monospace,monospace}.ep>div{padding:0 12px 4px}
+.ok{color:var(--ok)}.er{color:var(--er)}
+.nx{display:block;margin:34px 0 0 auto;background:var(--ac);color:var(--bg);border:0;padding:10px 20px;font-size:15px}
+@media(max-width:800px){#sb{transform:translateX(-100%)}#sb.open{transform:none}#top{display:flex}main{margin:0;padding:64px 14px 50px}#th{top:calc(env(safe-area-inset-top,0px) + 8px)}}
+</style></head><body>
+<div id="top"><button id="mb">☰</button><b>Subscription Tutorial</b></div>
+<button id="th">🌓</button>
+<nav id="sb"><h1>Subscription Module</h1></nav>
+<main>
 
-  .topbar { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 10; background: var(--ink); color: var(--ink-fg); display: flex; align-items: center; gap: 14px; padding: 10px 16px; }
-  .brand { font-family: var(--font-display); font-weight: 700; font-size: 18px; letter-spacing: -.01em; }
-  .brand span { color: var(--accent); }
-  .topbar .crumb { font-size: 13px; opacity: .75; }
-  .menu-btn { display: none; margin-left: auto; background: transparent; color: var(--ink-fg); border: 1px solid rgba(255,255,255,.3); border-radius: 6px; padding: 5px 10px; font: inherit; font-size: 13px; cursor: pointer; }
+<section data-t="1. Overview">
+<h2>1. Overview (Big Picture)</h2>
+<div class="tip"><b>Yaad rakhne wali baat:</b> Subscription = user ek plan leta hai, har period pe paise kat-te hain, aur access status se control hota hai. Status hi sabka boss hai.</div>
+<p>Hum ek hi scenario poore tutorial me use karenge: <b>Rahul Shah</b> "NoteNest" app me <b>Pro Monthly (₹499/month)</b> plan leta hai, payment hota hai, har mahine renew hota hai, aur baad me cancel kar deta hai. Ye module user ko plans dikhata hai, subscribe karwata hai, payment record karta hai, renewal background job se chalata hai, aur cancel handle karta hai. Use karne wale: end-user (Rahul), admin (support), aur payment gateway (webhook se).</p>
+<svg viewBox="0 0 700 150" width="700"><defs><marker id="a" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0L8,4L0,8z" fill="#888"/></marker></defs>
+<g class="b"><rect x="10" y="55" width="100" height="40" rx="6"/><rect x="150" y="55" width="110" height="40" rx="6"/><rect x="300" y="55" width="120" height="40" rx="6"/><rect x="460" y="20" width="110" height="40" rx="6"/><rect x="460" y="90" width="110" height="40" rx="6"/><rect x="590" y="55" width="100" height="40" rx="6"/></g>
+<g class="l" marker-end="url(#a)"><path d="M110 75H150" marker-end="url(#a)"/><path d="M260 75H300" marker-end="url(#a)"/><path d="M420 65L460 42" marker-end="url(#a)"/><path d="M420 85L460 110" marker-end="url(#a)"/><path d="M570 110L590 85" marker-end="url(#a)"/></g>
+<text x="60" y="79" text-anchor="middle">Rahul (UI)</text><text x="205" y="79" text-anchor="middle">ASP.NET Core API</text><text x="360" y="79" text-anchor="middle">Application layer</text><text x="515" y="44" text-anchor="middle">PostgreSQL</text><text x="515" y="114" text-anchor="middle">Payment Gateway</text><text x="640" y="79" text-anchor="middle">Email/SMS</text>
+<text x="350" y="145" text-anchor="middle">Background job (renewal) bhi Application layer ko hi call karta hai</text></svg>
+</section>
 
-  .layout { display: grid; grid-template-columns: 250px minmax(0, 1fr); max-width: 1200px; margin: 0 auto; }
-  aside { position: sticky; top: 52px; align-self: start; height: calc(100vh - 52px); overflow-y: auto; border-right: 1px solid var(--line); background: var(--surface); padding-block: 18px; }
-  aside h3 { font-size: 11px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin: 14px 18px 6px; }
-  aside a { display: block; padding: 6px 18px; font-size: 14px; color: var(--fg); text-decoration: none; border-left: 3px solid transparent; }
-  aside a:hover, aside a:focus-visible { background: var(--accent-soft); outline: none; }
-  aside a.active { border-left-color: var(--accent); background: var(--accent-soft); color: var(--accent); font-weight: 600; }
+<section data-t="2. Tables">
+<h2>2. Tables</h2>
+<div class="tip"><b>Yaad rakhne wali baat:</b> 5 tables hain. <code>subscriptions</code> current haal batata hai, <code>payments</code> paise ka record, <code>subscription_events</code> history (audit).</div>
+<div id="tables"></div>
+<h3>ER Diagram</h3>
+<svg viewBox="0 0 700 250" width="700"><g class="b"><rect x="20" y="20" width="150" height="70" rx="5"/><rect x="270" y="20" width="170" height="110" rx="5"/><rect x="520" y="20" width="160" height="70" rx="5"/><rect x="270" y="170" width="170" height="70" rx="5"/><rect x="20" y="150" width="150" height="70" rx="5"/></g>
+<g class="l"><path d="M170 55H270"/><path d="M440 55H520"/><path d="M355 130V170"/></g>
+<text class="h" x="30" y="38">plans</text><text x="30" y="58">id PK, name</text><text x="30" y="75">price_paise, interval</text>
+<text class="h" x="280" y="38">subscriptions</text><text x="280" y="58">id PK</text><text x="280" y="75">user_id, plan_id FK</text><text x="280" y="92">status</text><text x="280" y="109">current_period_end</text>
+<text class="h" x="530" y="38">subscription_events</text><text x="530" y="58">id PK, subscription_id FK</text><text x="530" y="75">type, created_at</text>
+<text class="h" x="280" y="188">payments</text><text x="280" y="208">id PK, subscription_id FK</text><text x="280" y="225">amount, gateway_ref UNIQUE</text>
+<text class="h" x="30" y="168">idempotency_keys</text><text x="30" y="188">key PK, user_id</text><text x="30" y="205">response_json</text>
+<text x="175" y="50">1</text><text x="248" y="50">N</text><text x="445" y="50">1</text><text x="502" y="50">N</text><text x="362" y="150">1—N</text></svg>
+</section>
 
-  main { padding-inline: 32px; padding-block: 28px 80px; min-width: 0; display: grid; gap: 56px; }
-  .lesson { display: grid; gap: 16px; scroll-margin-top: 64px; min-width: 0; }
-  .lesson + .lesson { border-top: 1px solid var(--line); padding-top: 48px; }
-  .eyebrow { font-family: var(--font-mono); font-size: 12px; color: var(--accent); letter-spacing: .04em; }
-  h1, h2.title { font-family: var(--font-display); font-weight: 700; letter-spacing: -.015em; margin: 0; text-wrap: balance; }
-  h1 { font-size: 36px; line-height: 1.15; }
-  h2.title { font-size: 30px; line-height: 1.2; }
-  h4 { font-size: 17px; margin: 8px 0 0; }
-  p { margin: 0; max-width: 72ch; }
-  ul.plain { margin: 0; padding-left: 20px; max-width: 72ch; display: grid; gap: 4px; }
-  code.i { font-family: var(--font-mono); font-size: .88em; background: var(--code-bg); padding: 1px 5px; border-radius: 4px; }
+<section data-t="3. Flow">
+<h2>3. Flow</h2>
+<div class="tip"><b>Yaad rakhne wali baat:</b> Subscribe me pehle payment, phir ACTIVE. Koi bhi status change <code>subscription_events</code> me likhna mat bhoolo.</div>
+<h3>Main flow: Rahul subscribe karta hai</h3>
+<div id="flow"></div>
+<h3>Sequence: Subscribe</h3><div id="sq1"></div>
+<h3>Sequence: Cancel</h3><div id="sq2"></div>
+<h3>Status / State diagram</h3>
+<svg viewBox="0 0 700 170" width="700"><defs><marker id="a2" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0L8,4L0,8z" fill="#888"/></marker></defs>
+<g class="b"><rect x="10" y="60" width="100" height="36" rx="18"/><rect x="170" y="60" width="100" height="36" rx="18"/><rect x="330" y="60" width="110" height="36" rx="18"/><rect x="500" y="10" width="110" height="36" rx="18"/><rect x="500" y="110" width="110" height="36" rx="18"/></g>
+<g class="l"><path d="M110 78H170" marker-end="url(#a2)"/><path d="M270 78H330" marker-end="url(#a2)"/><path d="M440 70L500 34" marker-end="url(#a2)"/><path d="M440 88L500 124" marker-end="url(#a2)"/><path d="M270 66C300 20 400 20 430 60" class="dl" marker-end="url(#a2)"/></g>
+<text x="60" y="83" text-anchor="middle">PENDING</text><text x="220" y="83" text-anchor="middle">ACTIVE</text><text x="385" y="83" text-anchor="middle">PAST_DUE</text><text x="555" y="33" text-anchor="middle">EXPIRED</text><text x="555" y="133" text-anchor="middle">CANCELLED</text>
+<text x="140" y="72" text-anchor="middle">pay ok</text><text x="300" y="72" text-anchor="middle">renew fail</text><text x="350" y="30">cancel at period end</text><text x="440" y="162">retry 3 baar fail</text></svg>
+</section>
 
-  .note { border-left: 4px solid var(--accent); background: var(--accent-soft); padding: 12px 16px; border-radius: 0 6px 6px 0; max-width: 72ch; }
-  .note.warn { border-left-color: var(--try); background: var(--try-soft); }
-  .note b { display: block; font-size: 13px; text-transform: uppercase; letter-spacing: .05em; margin-bottom: 2px; }
+<section data-t="4. Screens">
+<h2>4. Screens</h2>
+<div class="tip"><b>Yaad rakhne wali baat:</b> Sirf 4 screens. Har screen ek hi kaam karti hai.</div>
+<div class="w"><table><tr><th>#</th><th>Screen</th><th>Kaam</th></tr>
+<tr><td>S1</td><td>Plans</td><td>Saare plans dikhao (Pro Monthly ₹499 etc.)</td></tr>
+<tr><td>S2</td><td>Checkout</td><td>Plan confirm + payment method, "Subscribe" button</td></tr>
+<tr><td>S3</td><td>My Subscription</td><td>Current status, next renewal date, Cancel button</td></tr>
+<tr><td>S4</td><td>Payment History</td><td>Rahul ke saare payments ki list</td></tr></table></div>
+<h3>Navigation flow</h3>
+<svg viewBox="0 0 700 90" width="700"><defs><marker id="a3" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0L8,4L0,8z" fill="#888"/></marker></defs>
+<g class="b"><rect x="10" y="25" width="120" height="40" rx="6"/><rect x="190" y="25" width="120" height="40" rx="6"/><rect x="370" y="25" width="140" height="40" rx="6"/><rect x="560" y="25" width="130" height="40" rx="6"/></g>
+<g class="l"><path d="M130 45H190" marker-end="url(#a3)"/><path d="M310 45H370" marker-end="url(#a3)"/><path d="M510 45H560" marker-end="url(#a3)"/></g>
+<text x="70" y="49" text-anchor="middle">S1 Plans</text><text x="250" y="49" text-anchor="middle">S2 Checkout</text><text x="440" y="49" text-anchor="middle">S3 My Subscription</text><text x="625" y="49" text-anchor="middle">S4 Payments</text></svg>
+</section>
 
-  .example { border: 1px solid var(--line); border-radius: 8px; overflow: hidden; background: var(--surface); min-width: 0; }
-  .example-head { display: flex; justify-content: space-between; align-items: center; padding: 6px 12px; background: var(--code-bg); border-bottom: 1px solid var(--line); font-size: 12px; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; }
-  .copy { font: inherit; font-size: 12px; text-transform: none; letter-spacing: 0; background: var(--surface); color: var(--fg); border: 1px solid var(--line); border-radius: 5px; padding: 2px 10px; cursor: pointer; }
-  .copy:focus-visible { outline: 2px solid var(--accent); }
-  pre.code { margin: 0; padding: 14px 16px; overflow-x: auto; font-family: var(--font-mono); font-size: 13px; line-height: 1.6; color: var(--fg); background: var(--surface); }
-  .c { color: var(--muted); }
-  .k { color: var(--accent); font-weight: 500; }
-  .s { color: var(--try); }
+<section data-t="5. API Endpoints">
+<h2>5. API Endpoints</h2>
+<div class="tip"><b>Yaad rakhne wali baat:</b> Paisa/state badalne wale POST me <code>Idempotency-Key</code> header zaroor. Error format sab jagah same rakho.</div>
+<div id="eps"></div>
+</section>
 
-  .diagram { border: 1px solid var(--line); border-radius: 8px; background: var(--surface); padding: 16px; overflow-x: auto; }
-  .diagram pre.mermaid { margin: 0; display: flex; justify-content: center; min-width: 520px; background: transparent; }
-  .diagram figcaption { font-size: 12.5px; color: var(--muted); margin-top: 8px; text-align: center; }
+<section data-t="6. API → Table">
+<h2>6. API-to-Table Mapping</h2>
+<div class="tip"><b>Yaad rakhne wali baat:</b> Har endpoint ke liye pehle likho kaunsa table read/insert/update hoga. Ye hi tumhara code-review checklist hai.</div>
+<div class="w" id="m6"></div>
+</section>
 
-  table.ref { border-collapse: collapse; width: 100%; font-size: 14px; }
-  .table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); }
-  table.ref th, table.ref td { text-align: left; padding: 8px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
-  table.ref th { background: var(--code-bg); font-size: 12px; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); }
-  table.ref tr:last-child td { border-bottom: 0; }
-  table.ref td.num { font-variant-numeric: tabular-nums; text-align: right; }
+<section data-t="7. Screen → Table">
+<h2>7. Screen-to-Table + Validation</h2>
+<div class="tip"><b>Yaad rakhne wali baat:</b> Validation UI me bhi, API me bhi. UI sirf user-friendly hai, asli security API validation hai.</div>
+<div class="w" id="m7"></div>
+</section>
 
-  .try { border: 2px solid var(--try); border-radius: 10px; background: var(--surface); overflow: hidden; }
-  .try-head { background: var(--try); color: #fff; padding: 8px 14px; font-weight: 700; font-size: 14px; }
-  .try-body { padding: 16px; display: grid; gap: 14px; }
-  .fields { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; }
-  .fields label { display: grid; gap: 4px; font-size: 12.5px; font-weight: 600; color: var(--muted); }
-  .fields select, .fields input { font: inherit; font-size: 14px; padding: 7px 9px; border: 1px solid var(--line); border-radius: 6px; background: var(--bg); color: var(--fg); min-width: 0; }
-  .fields select:focus-visible, .fields input:focus-visible { outline: 2px solid var(--try); }
-  .result { font-family: var(--font-mono); font-size: 13.5px; padding: 12px 14px; border-radius: 6px; background: var(--code-bg); white-space: pre-wrap; }
-  .result .ok { color: var(--ok); font-weight: 600; }
-  .result .bad { color: var(--bad); font-weight: 600; }
-  .result .warn { color: var(--warn); font-weight: 600; }
+<section data-t="8. Transactions">
+<h2>8. Transaction Boundary Matrix</h2>
+<div class="tip"><b>Yaad rakhne wali baat:</b> DB changes ek transaction me. Email/SMS transaction ke <b>baad</b>, aur fail ho to business operation rollback nahi hota.</div>
+<div class="w" id="m8"></div>
+</section>
 
-  .pager { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-top: 8px; }
-  .pager a { text-decoration: none; font-weight: 600; font-size: 14px; color: #fff; background: var(--accent); padding: 8px 16px; border-radius: 6px; }
-  .pager a.prev { background: var(--surface); color: var(--fg); border: 1px solid var(--line); }
-  .pager a:focus-visible { outline: 2px solid var(--fg); outline-offset: 2px; }
-  .pager .spacer { flex: 1; }
+<section data-t="9. Edge Cases">
+<h2>9. Edge Cases &amp; Failure Scenarios</h2>
+<div class="tip"><b>Yaad rakhne wali baat:</b> Network kabhi bhi fail ho sakta hai. Har operation ko "do baar chale to bhi safe" banao.</div>
+<div class="w" id="m9"></div>
+</section>
 
-  details.ex { border: 1px solid var(--line); border-radius: 8px; background: var(--surface); padding: 10px 14px; }
-  details.ex summary { cursor: pointer; font-weight: 600; }
-  details.ex[open] summary { margin-bottom: 8px; }
-
-  @media (max-width: 900px) {
-    .menu-btn { display: inline-block; }
-    .topbar .crumb { display: none; }
-    .layout { grid-template-columns: 1fr; }
-    aside { position: static; height: auto; border-right: 0; border-bottom: 1px solid var(--line); }
-    aside.closed { display: none; }
-    main { padding-inline: 16px; }
-    h1 { font-size: 28px; } h2.title { font-size: 24px; }
-  }
-</style>
-
-<div class="topbar">
-  <div class="brand">Sub<span>Learn</span></div>
-  <div class="crumb">Subscription Module Tutorial · SnapNotes project</div>
-  <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="sidebar">Lessons</button>
-</div>
-
-<div class="layout">
-  <aside id="sidebar" class="closed" aria-label="Lessons">
-    <h3>Basics</h3>
-    <a href="#intro">Introduction</a>
-    <a href="#plans">Plans aur Features</a>
-    <a href="#lifecycle">Subscription Lifecycle</a>
-    <a href="#signup">Signup aur Trial</a>
-    <h3>Usage</h3>
-    <a href="#usage">Usage Tracking</a>
-    <a href="#entitlements">Entitlements (Limit Check)</a>
-    <h3>Billing</h3>
-    <a href="#planchange">Upgrade / Downgrade / Cancel</a>
-    <a href="#webhooks">Payments aur Webhooks</a>
-    <a href="#invoices">Invoices aur Overage</a>
-    <h3>Background</h3>
-    <a href="#cron">Cron Jobs</a>
-    <a href="#notifications">Notifications</a>
-    <h3>Practice</h3>
-    <a href="#exercises">Exercises</a>
-  </aside>
-
-  <main>
-    <!-- 1 -->
-    <section class="lesson" id="intro">
-      <div class="eyebrow">Lesson 1 of 12</div>
-      <h1>Subscription Module Tutorial</h1>
-      <p>Is tutorial me hum ek SaaS app <b>SnapNotes</b> ke liye subscription module step-by-step design karenge: plans, trial, usage limits, payments, invoices aur cron jobs.</p>
-      <div class="note"><b>Aap kya seekhoge</b>
-        Plan aur feature limits ko DB me kaise store kare, usage kaise count kare, limit cross hone par kya kare, aur billing automatically kaise chale.</div>
-      <h4>Project ke plans</h4>
-      <div class="table-wrap"><table class="ref">
-        <tr><th>Plan</th><th>Price / month</th><th>Notes</th><th>Storage</th><th>AI Summaries</th><th>Team</th></tr>
-        <tr><td>Free</td><td class="num">₹0</td><td class="num">50</td><td class="num">100 MB</td><td class="num">10</td><td class="num">1</td></tr>
-        <tr><td>Pro</td><td class="num">₹299</td><td class="num">1,000</td><td class="num">5 GB</td><td class="num">200</td><td class="num">3</td></tr>
-        <tr><td>Team</td><td class="num">₹999</td><td class="num">Unlimited</td><td class="num">50 GB</td><td class="num">1,000</td><td class="num">10</td></tr>
-      </table></div>
-      <h4>Big picture</h4>
-      <figure class="diagram" style="margin:0">
-<pre class="mermaid">
-flowchart LR
-  UI["User Dashboard"] --> API["API + Auth"]
-  API --> ENT{"Entitlements check"}
-  ENT -->|allowed| CORE["Notes / Files / AI"]
-  ENT -->|blocked| ERR["402 Upgrade"]
-  CORE --> USG["Usage Tracking"]
-  API --> SUB["Subscription"]
-  SUB --> PAY["Payment Gateway"]
-  PAY -->|webhook| SUB
-  CRON["Cron Jobs"] --> SUB
-  CRON --> BILL["Invoices"]
-  USG --> NOTIF["Notifications"]
+<section data-t="10. Folder Structure">
+<h2>10. Folder Structure</h2>
+<div class="tip"><b>Yaad rakhne wali baat:</b> Dependency andar ki taraf: Api → Application → Domain. Domain kisi ko nahi jaanta.</div>
+<pre>
+Subscription.sln
+├─ Subscription.Domain          # Entities, enums, rules (no EF, no packages)
+│  ├─ Entities/                 # Plan, Subscription, Payment, SubscriptionEvent
+│  └─ Enums/                    # SubscriptionStatus (Pending, Active, ...)
+├─ Subscription.Application     # Business use-cases (CQRS)
+│  ├─ Commands/                 # CreateSubscription, CancelSubscription
+│  ├─ Queries/                  # GetPlans, GetMySubscription
+│  ├─ Interfaces/               # IPaymentGateway, IEmailSender, IAppDbContext
+│  └─ Validators/               # FluentValidation rules
+├─ Subscription.Infrastructure  # Bahar ki duniya se baat
+│  ├─ Persistence/              # EF Core DbContext, migrations (PostgreSQL)
+│  ├─ Payments/                 # Gateway client implementation
+│  ├─ Messaging/                # Email/SMS sender, outbox
+│  └─ Jobs/                     # RenewalJob (background service)
+└─ Subscription.Api             # Controllers, middleware
+   ├─ Controllers/              # SubscriptionsController, WebhooksController
+   └─ Middleware/               # Idempotency, global error handler
 </pre>
-        <figcaption>Har protected action pehle Entitlements se pass hota hai.</figcaption>
-      </figure>
-      <div class="pager"><span class="spacer"></span><a href="#plans">Next: Plans aur Features ❯</a></div>
-    </section>
-
-    <!-- 2 -->
-    <section class="lesson" id="plans">
-      <div class="eyebrow">Lesson 2 of 12</div>
-      <h2 class="title">Plans aur Features</h2>
-      <p>Plan ka naam code me kabhi hardcode mat karo (<code class="i">if plan == "pro"</code>). Limits DB me rakho, taaki naya plan bina code change ke add ho sake.</p>
-      <h4>Teen tables</h4>
-      <ul class="plain">
-        <li><code class="i">plans</code>: naam, price, trial days</li>
-        <li><code class="i">features</code>: kya cheez limit hoti hai (notes, storage_mb, ai_summaries, team_members)</li>
-        <li><code class="i">plan_features</code>: kis plan me kis feature ki kitni limit, aur limit <b>hard</b> hai ya <b>soft</b></li>
-      </ul>
-      <div class="example">
-        <div class="example-head">SQL Example<button class="copy" type="button">Copy</button></div>
-<pre class="code"><span class="k">CREATE TABLE</span> plan_features (
-  id          INT PRIMARY KEY AUTO_INCREMENT,
-  plan_id     INT NOT NULL,
-  feature_id  INT NOT NULL,
-  limit_value INT NOT NULL,          <span class="c">-- -1 = unlimited</span>
-  limit_type  ENUM(<span class="s">'hard'</span>,<span class="s">'soft'</span>) NOT NULL,
-  UNIQUE KEY (plan_id, feature_id)
-);
-
-<span class="c">-- Pro plan ki saari limits</span>
-<span class="k">SELECT</span> f.code, pf.limit_value, pf.limit_type
-<span class="k">FROM</span> plan_features pf
-<span class="k">JOIN</span> features f <span class="k">ON</span> f.id = pf.feature_id
-<span class="k">WHERE</span> pf.plan_id = 2;</pre>
-      </div>
-      <div class="table-wrap"><table class="ref">
-        <tr><th>Limit type</th><th>Limit cross hone par</th><th>Example</th></tr>
-        <tr><td><b>hard</b></td><td>Action block (402)</td><td>Notes, Team members</td></tr>
-        <tr><td><b>soft</b></td><td>Action allow, extra ka paisa (overage)</td><td>Storage, AI Summaries (paid plans)</td></tr>
-      </table></div>
-      <div class="note"><b>Tip</b><code class="i">features.reset_period</code> batata hai ki counter har billing period reset hoga (<code class="i">billing_period</code>) ya cumulative rahega (<code class="i">none</code>).</div>
-      <div class="pager"><a class="prev" href="#intro">❮ Previous</a><a href="#lifecycle">Next: Lifecycle ❯</a></div>
-    </section>
-
-    <!-- 3 -->
-    <section class="lesson" id="lifecycle">
-      <div class="eyebrow">Lesson 3 of 12</div>
-      <h2 class="title">Subscription Lifecycle</h2>
-      <p>Har subscription ek <b>state machine</b> hai. Status sirf webhook ya cron se badalna chahiye, frontend se kabhi nahi.</p>
-      <figure class="diagram" style="margin:0">
-<pre class="mermaid">
-stateDiagram-v2
-  [*] --> trialing: Paid plan choose
-  [*] --> active: Free plan
-  trialing --> active: payment success
-  trialing --> canceled: trial end, payment fail
-  active --> active: renewal paid
-  active --> past_due: payment failed
-  past_due --> active: retry success
-  past_due --> canceled: grace period over
-  active --> canceled: cancel at period end
-  canceled --> [*]
-</pre>
-        <figcaption>Har transition par subscription_events me ek row likho (audit trail).</figcaption>
-      </figure>
-      <div class="table-wrap"><table class="ref">
-        <tr><th>Status</th><th>Matlab</th><th>Access</th></tr>
-        <tr><td><code class="i">trialing</code></td><td>Free trial chal raha hai</td><td>Full plan</td></tr>
-        <tr><td><code class="i">active</code></td><td>Payment ho chuka hai</td><td>Full plan</td></tr>
-        <tr><td><code class="i">past_due</code></td><td>Payment fail, 3 din grace</td><td>Full plan (grace me)</td></tr>
-        <tr><td><code class="i">canceled</code></td><td>Khatam</td><td>Free plan par shift</td></tr>
-      </table></div>
-      <div class="example">
-        <div class="example-head">JavaScript Example<button class="copy" type="button">Copy</button></div>
-<pre class="code"><span class="c">// Allowed transitions — galat change ko rokta hai</span>
-<span class="k">const</span> TRANSITIONS = {
-  trialing: [<span class="s">'active'</span>, <span class="s">'canceled'</span>],
-  active:   [<span class="s">'active'</span>, <span class="s">'past_due'</span>, <span class="s">'canceled'</span>],
-  past_due: [<span class="s">'active'</span>, <span class="s">'canceled'</span>],
-  canceled: []
-};
-
-<span class="k">function</span> changeStatus(sub, next) {
-  <span class="k">if</span> (!TRANSITIONS[sub.status].includes(next)) {
-    <span class="k">throw new</span> Error(<span class="s">`Invalid: ${sub.status} → ${next}`</span>);
-  }
-  sub.status = next;
-}</pre>
-      </div>
-      <div class="pager"><a class="prev" href="#plans">❮ Previous</a><a href="#signup">Next: Signup aur Trial ❯</a></div>
-    </section>
-
-    <!-- 4 -->
-    <section class="lesson" id="signup">
-      <div class="eyebrow">Lesson 4 of 12</div>
-      <h2 class="title">Signup aur Trial</h2>
-      <p>Signup hote hi user ko Free subscription do aur har feature ka usage counter 0 se banao. Paid plan choose karne par 7 din ka trial start hota hai.</p>
-      <figure class="diagram" style="margin:0">
-<pre class="mermaid">
-flowchart TD
-  A["User signup"] --> B["users insert"]
-  B --> C["Free subscription, status active"]
-  C --> D["usage_counters rows, used = 0"]
-  D --> E{"Pro / Team choose?"}
-  E -->|No| F["Free par rahe"]
-  E -->|Yes| G["Free sub canceled"]
-  G --> H["Naya sub: trialing, trial_end = +7 days"]
-  H --> I["Cumulative counters carry over"]
-</pre>
-      </figure>
-      <div class="example">
-        <div class="example-head">Node.js Example<button class="copy" type="button">Copy</button></div>
-<pre class="code"><span class="k">async function</span> startTrial(userId, planId) {
-  <span class="k">const</span> plan = <span class="k">await</span> db.plans.find(planId);
-  <span class="k">const</span> now = <span class="k">new</span> Date();
-  <span class="k">const</span> trialEnd = addDays(now, plan.trial_days);   <span class="c">// 7</span>
-
-  <span class="k">await</span> db.subscriptions.update(
-    { user_id: userId, status: <span class="s">'active'</span> },
-    { status: <span class="s">'canceled'</span>, canceled_at: now }
-  );
-
-  <span class="k">return</span> db.subscriptions.insert({
-    user_id: userId,
-    plan_id: planId,
-    status: <span class="s">'trialing'</span>,
-    trial_end: trialEnd,
-    current_period_start: now,
-    current_period_end: trialEnd
-  });
-}</pre>
-      </div>
-      <div class="note warn"><b>Dhyan do</b>Ek user ko ek hi baar trial do. Check karo ki <code class="i">subscription_events</code> me pehle se <code class="i">trial_started</code> to nahi hai.</div>
-      <div class="pager"><a class="prev" href="#lifecycle">❮ Previous</a><a href="#usage">Next: Usage Tracking ❯</a></div>
-    </section>
-
-    <!-- 5 -->
-    <section class="lesson" id="usage">
-      <div class="eyebrow">Lesson 5 of 12</div>
-      <h2 class="title">Usage Tracking</h2>
-      <p>Usage do tables me rakho: <b>events</b> (har action ka raw record) aur <b>counters</b> (jaldi check karne ke liye total).</p>
-      <div class="table-wrap"><table class="ref">
-        <tr><th>Table</th><th>Kaam</th><th>Kab use</th></tr>
-        <tr><td><code class="i">usage_events</code></td><td>Har action ki ek row, append-only</td><td>Audit, dispute, recalculation</td></tr>
-        <tr><td><code class="i">usage_counters</code></td><td>Per subscription, per feature, per period total</td><td>Har request par limit check</td></tr>
-      </table></div>
-      <div class="example">
-        <div class="example-head">SQL Example<button class="copy" type="button">Copy</button></div>
-<pre class="code"><span class="c">-- 1. Event likho (idempotency_key UNIQUE hai)</span>
-<span class="k">INSERT INTO</span> usage_events
-  (subscription_id, user_id, feature_id, quantity, idempotency_key, source_ref)
-<span class="k">VALUES</span> (2, 3, 1, 1, <span class="s">'note-create-req-8f21'</span>, <span class="s">'note:415'</span>);
-
-<span class="c">-- 2. Counter badhao (atomic)</span>
-<span class="k">UPDATE</span> usage_counters
-<span class="k">SET</span> used = used + 1
-<span class="k">WHERE</span> subscription_id = 2 <span class="k">AND</span> feature_id = 1
-  <span class="k">AND</span> period_start = <span class="s">'2026-09-20'</span>;</pre>
-      </div>
-      <div class="note"><b>Idempotency kyu?</b>Network retry me same request do baar aa sakti hai. <code class="i">idempotency_key</code> UNIQUE hone se dusra insert fail hoga aur usage do baar count nahi hoga.</div>
-      <div class="note"><b>Delete par</b>Note ya file delete hone par negative quantity (<code class="i">-1</code>) ka event likho aur counter ghatao.</div>
-      <div class="pager"><a class="prev" href="#signup">❮ Previous</a><a href="#entitlements">Next: Entitlements ❯</a></div>
-    </section>
-
-    <!-- 6 -->
-    <section class="lesson" id="entitlements">
-      <div class="eyebrow">Lesson 6 of 12</div>
-      <h2 class="title">Entitlements (Limit Check)</h2>
-      <p>Ek central function <code class="i">can(user, feature, qty)</code> banao. Har protected route isi ko call kare.</p>
-      <figure class="diagram" style="margin:0">
-<pre class="mermaid">
-flowchart TD
-  A["Request: create note"] --> B{"Subscription active?"}
-  B -->|No| X["403 inactive"]
-  B -->|Yes| C{"limit = -1?"}
-  C -->|Yes| OK["Allow"]
-  C -->|No| D{"used + qty > limit?"}
-  D -->|No| OK
-  D -->|Yes| E{"limit type"}
-  E -->|hard| Y["402 limit reached"]
-  E -->|soft| OV["Allow + overage"]
-  OK --> L["usage_events + counter update"]
-  OV --> L
-  L --> N{"80% / 100% cross?"}
-  N -->|Yes| M["Notification"]
-</pre>
-      </figure>
-      <div class="example">
-        <div class="example-head">Node.js Example<button class="copy" type="button">Copy</button></div>
-<pre class="code"><span class="k">async function</span> can(sub, featureCode, qty = 1) {
-  <span class="k">if</span> ([<span class="s">'canceled'</span>, <span class="s">'expired'</span>].includes(sub.status))
-    <span class="k">return</span> { ok: <span class="k">false</span>, reason: <span class="s">'Subscription inactive'</span> };
-
-  <span class="k">const</span> pf = <span class="k">await</span> getPlanFeature(sub.plan_id, featureCode);
-  <span class="k">if</span> (pf.limit_value === -1) <span class="k">return</span> { ok: <span class="k">true</span> };
-
-  <span class="k">const</span> used = <span class="k">await</span> getUsed(sub.id, featureCode, sub.current_period_start);
-  <span class="k">if</span> (used + qty &lt;= pf.limit_value) <span class="k">return</span> { ok: <span class="k">true</span> };
-
-  <span class="k">if</span> (pf.limit_type === <span class="s">'soft'</span>) <span class="k">return</span> { ok: <span class="k">true</span>, overage: <span class="k">true</span> };
-  <span class="k">return</span> { ok: <span class="k">false</span>, reason: <span class="s">`Limit reached (${pf.limit_value})`</span> };
-}
-
-<span class="c">// Express middleware</span>
-<span class="k">const</span> requireQuota = (feature) =&gt; <span class="k">async</span> (req, res, next) =&gt; {
-  <span class="k">const</span> r = <span class="k">await</span> can(req.subscription, feature);
-  <span class="k">if</span> (!r.ok) <span class="k">return</span> res.status(402).json({ error: r.reason });
-  req.overage = !!r.overage;
-  next();
-};
-
-app.post(<span class="s">'/notes'</span>, requireQuota(<span class="s">'notes'</span>), createNote);</pre>
-      </div>
-
-      <div class="try">
-        <div class="try-head">Try it Yourself: Limit Checker</div>
-        <div class="try-body">
-          <div class="fields">
-            <label for="tPlan">Plan
-              <select id="tPlan"><option value="free">Free</option><option value="pro" selected>Pro</option><option value="team">Team</option></select></label>
-            <label for="tStatus">Status
-              <select id="tStatus"><option>active</option><option>trialing</option><option>past_due</option><option>canceled</option></select></label>
-            <label for="tFeature">Feature
-              <select id="tFeature"><option value="notes">notes</option><option value="storage_mb">storage_mb</option><option value="ai_summaries">ai_summaries</option><option value="team_members">team_members</option></select></label>
-            <label for="tUsed">Already used
-              <input id="tUsed" type="number" min="0" value="995"></label>
-            <label for="tQty">Request qty
-              <input id="tQty" type="number" min="1" value="10"></label>
-          </div>
-          <div class="result" id="tResult" aria-live="polite"></div>
-        </div>
-      </div>
-      <div class="note warn"><b>Race condition</b>Do request ek saath aaye to dono check pass kar sakti hain. Fix: <code class="i">UPDATE ... SET used = used + 1 WHERE used + 1 &lt;= limit</code> aur affected rows check karo, ya Redis <code class="i">INCRBY</code> use karo.</div>
-      <div class="pager"><a class="prev" href="#usage">❮ Previous</a><a href="#planchange">Next: Plan Change ❯</a></div>
-    </section>
-
-    <!-- 7 -->
-    <section class="lesson" id="planchange">
-      <div class="eyebrow">Lesson 7 of 12</div>
-      <h2 class="title">Upgrade / Downgrade / Cancel</h2>
-      <div class="table-wrap"><table class="ref">
-        <tr><th>Action</th><th>Kab apply</th><th>DB change</th></tr>
-        <tr><td>Upgrade</td><td>Turant</td><td><code class="i">plan_id</code> update + proration invoice</td></tr>
-        <tr><td>Downgrade</td><td>Period end par</td><td><code class="i">scheduled_plan_id</code> set</td></tr>
-        <tr><td>Cancel</td><td>Period end par</td><td><code class="i">cancel_at_period_end = 1</code></td></tr>
-        <tr><td>Resume</td><td>Turant</td><td><code class="i">cancel_at_period_end = 0</code></td></tr>
-      </table></div>
-      <figure class="diagram" style="margin:0">
-<pre class="mermaid">
-flowchart TD
-  A["Plan change request"] --> B{"Type?"}
-  B -->|Upgrade| U1["Proration calculate"]
-  U1 --> U2["Charge"]
-  U2 --> U3{"Paid?"}
-  U3 -->|Yes| U4["plan_id update turant"]
-  U3 -->|No| U5["Plan same, error"]
-  B -->|Downgrade| D1["scheduled_plan_id set"]
-  D1 --> D2["Renewal cron apply karega"]
-  B -->|Cancel| C1["cancel_at_period_end = 1"]
-  C1 --> C2["Period end: canceled, Free plan"]
-</pre>
-      </figure>
-      <h4>Proration formula</h4>
-      <div class="example">
-        <div class="example-head">Example<button class="copy" type="button">Copy</button></div>
-<pre class="code"><span class="c">// Pro (₹299) se Team (₹999), 30 din ke period me 20 din bache hain</span>
-<span class="k">const</span> daysLeft  = 20, periodDays = 30;
-<span class="k">const</span> unusedOld = 299 * daysLeft / periodDays;   <span class="c">// 199.33 credit</span>
-<span class="k">const</span> newCost   = 999 * daysLeft / periodDays;   <span class="c">// 666.00</span>
-<span class="k">const</span> charge    = newCost - unusedOld;            <span class="c">// ₹466.67 (+ GST)</span></pre>
-      </div>
-      <div class="note warn"><b>Downgrade rule</b>Agar usage naye plan ki limit se zyada hai, to purana data delete mat karo. Sirf naye creates block karo.</div>
-      <div class="pager"><a class="prev" href="#entitlements">❮ Previous</a><a href="#webhooks">Next: Webhooks ❯</a></div>
-    </section>
-
-    <!-- 8 -->
-    <section class="lesson" id="webhooks">
-      <div class="eyebrow">Lesson 8 of 12</div>
-      <h2 class="title">Payments aur Webhooks</h2>
-      <p>Payment ka result gateway webhook se aata hai. Frontend ka "payment success" message kabhi trust mat karo.</p>
-      <figure class="diagram" style="margin:0">
-<pre class="mermaid">
-sequenceDiagram
-  participant App
-  participant GW as Gateway
-  participant WH as Webhook Handler
-  participant DB
-  App->>DB: invoice create (open)
-  App->>GW: charge request
-  GW->>WH: payment.success / payment.failed
-  WH->>DB: event_id pehle se hai?
-  alt Duplicate
-    WH-->>GW: 200 OK (skip)
-  else New
-    WH->>DB: webhook_events + payments insert
-    alt success
-      WH->>DB: invoice paid, sub active
-    else failed
-      WH->>DB: sub past_due, grace_until = +3 days
-    end
-    WH-->>GW: 200 OK
-  end
-</pre>
-      </figure>
-      <div class="example">
-        <div class="example-head">Node.js Example<button class="copy" type="button">Copy</button></div>
-<pre class="code">app.post(<span class="s">'/webhooks/payment'</span>, <span class="k">async</span> (req, res) =&gt; {
-  <span class="k">if</span> (!verifySignature(req)) <span class="k">return</span> res.sendStatus(401);
-  <span class="k">const</span> evt = req.body;
-
-  <span class="k">try</span> {
-    <span class="k">await</span> db.webhook_events.insert({        <span class="c">// event_id UNIQUE</span>
-      event_id: evt.id, event_type: evt.type, payload: evt
-    });
-  } <span class="k">catch</span> (e) {
-    <span class="k">if</span> (e.code === <span class="s">'ER_DUP_ENTRY'</span>) <span class="k">return</span> res.sendStatus(200);
-    <span class="k">throw</span> e;
-  }
-
-  <span class="k">if</span> (evt.type === <span class="s">'payment.success'</span>) <span class="k">await</span> markPaid(evt);
-  <span class="k">if</span> (evt.type === <span class="s">'payment.failed'</span>)  <span class="k">await</span> markPastDue(evt);
-
-  <span class="k">await</span> db.webhook_events.update({ event_id: evt.id },
-    { status: <span class="s">'processed'</span>, processed_at: <span class="k">new</span> Date() });
-  res.sendStatus(200);
-});</pre>
-      </div>
-      <div class="pager"><a class="prev" href="#planchange">❮ Previous</a><a href="#invoices">Next: Invoices ❯</a></div>
-    </section>
-
-    <!-- 9 -->
-    <section class="lesson" id="invoices">
-      <div class="eyebrow">Lesson 9 of 12</div>
-      <h2 class="title">Invoices aur Overage</h2>
-      <p>Invoice = base price + pichhle period ka overage + 18% GST. Har line <code class="i">invoice_items</code> me alag row hoti hai.</p>
-      <div class="example">
-        <div class="example-head">Formula<button class="copy" type="button">Copy</button></div>
-<pre class="code">overage_qty    = max(0, used - limit)        <span class="c">// sirf soft features</span>
-overage_amount = overage_qty × overage_unit_price
-subtotal       = base + Σ overage_amount
-tax            = subtotal × 0.18
-total          = subtotal + tax</pre>
-      </div>
-      <h4>Example: Priya (Pro plan)</h4>
-      <div class="table-wrap"><table class="ref">
-        <tr><th>Item</th><th>Qty</th><th>Rate</th><th>Amount</th></tr>
-        <tr><td>Pro plan base</td><td class="num">1</td><td class="num">₹299.00</td><td class="num">₹299.00</td></tr>
-        <tr><td>Storage overage (5300 − 5120 MB)</td><td class="num">180</td><td class="num">₹0.05</td><td class="num">₹9.00</td></tr>
-        <tr><td>AI Summaries overage (215 − 200)</td><td class="num">15</td><td class="num">₹1.00</td><td class="num">₹15.00</td></tr>
-        <tr><td><b>Subtotal</b></td><td></td><td></td><td class="num"><b>₹323.00</b></td></tr>
-        <tr><td>GST 18%</td><td></td><td></td><td class="num">₹58.14</td></tr>
-        <tr><td><b>Total</b></td><td></td><td></td><td class="num"><b>₹381.14</b></td></tr>
-      </table></div>
-
-      <div class="try">
-        <div class="try-head">Try it Yourself: Invoice Calculator (Pro plan)</div>
-        <div class="try-body">
-          <div class="fields">
-            <label for="iStorage">Storage used (MB)
-              <input id="iStorage" type="number" min="0" value="5300"></label>
-            <label for="iAi">AI summaries used
-              <input id="iAi" type="number" min="0" value="215"></label>
-          </div>
-          <div class="result" id="iResult" aria-live="polite"></div>
-        </div>
-      </div>
-      <div class="pager"><a class="prev" href="#webhooks">❮ Previous</a><a href="#cron">Next: Cron Jobs ❯</a></div>
-    </section>
-
-    <!-- 10 -->
-    <section class="lesson" id="cron">
-      <div class="eyebrow">Lesson 10 of 12</div>
-      <h2 class="title">Cron Jobs</h2>
-      <div class="table-wrap"><table class="ref">
-        <tr><th>Job</th><th>Kab</th><th>Kaam</th></tr>
-        <tr><td><code class="i">renewal_job</code></td><td>Roz</td><td>Period end wale subs renew, downgrade apply, overage bill</td></tr>
-        <tr><td><code class="i">trial_expiry_job</code></td><td>Roz</td><td>3 din pehle reminder, trial end par charge</td></tr>
-        <tr><td><code class="i">grace_expiry_job</code></td><td>Roz</td><td>Grace khatam to cancel + Free plan</td></tr>
-        <tr><td><code class="i">usage_flush_job</code></td><td>Har 5 min</td><td>Redis counters DB me (optional)</td></tr>
-      </table></div>
-      <figure class="diagram" style="margin:0">
-<pre class="mermaid">
-flowchart TD
-  A["renewal_job start"] --> B["Subs: active AND period_end passed"]
-  B --> C{"cancel_at_period_end?"}
-  C -->|Yes| D["canceled + Free plan"]
-  C -->|No| E{"scheduled_plan_id?"}
-  E -->|Yes| F["Plan switch"]
-  E -->|No| G["Plan same"]
-  F --> H["Overage calculate"]
-  G --> H
-  H --> I["Invoice + charge"]
-  I --> J["Naya period"]
-  J --> K["ai_summaries = 0, baaki carry over"]
-  K --> L["job_runs: success"]
-</pre>
-      </figure>
-      <div class="example">
-        <div class="example-head">SQL: Kaun renew hoga<button class="copy" type="button">Copy</button></div>
-<pre class="code"><span class="k">SELECT</span> * <span class="k">FROM</span> subscriptions
-<span class="k">WHERE</span> status = <span class="s">'active'</span> <span class="k">AND</span> current_period_end &lt;= NOW();
-
-<span class="c">-- Grace khatam</span>
-<span class="k">SELECT</span> * <span class="k">FROM</span> subscriptions
-<span class="k">WHERE</span> status = <span class="s">'past_due'</span> <span class="k">AND</span> grace_until &lt; NOW();</pre>
-      </div>
-      <div class="note"><b>Tip</b>Cron job ko idempotent banao: ek hi din me do baar chale to bhi double invoice na bane. Invoice ke liye <code class="i">(subscription_id, period_start)</code> unique rakho.</div>
-      <div class="pager"><a class="prev" href="#invoices">❮ Previous</a><a href="#notifications">Next: Notifications ❯</a></div>
-    </section>
-
-    <!-- 11 -->
-    <section class="lesson" id="notifications">
-      <div class="eyebrow">Lesson 11 of 12</div>
-      <h2 class="title">Notifications</h2>
-      <div class="table-wrap"><table class="ref">
-        <tr><th>Type</th><th>Trigger</th><th>Channel</th></tr>
-        <tr><td><code class="i">usage_80</code></td><td>Usage 80% cross</td><td>In-app</td></tr>
-        <tr><td><code class="i">usage_100</code></td><td>Limit cross</td><td>Email + in-app</td></tr>
-        <tr><td><code class="i">trial_ending</code></td><td>Trial end se 3 din pehle</td><td>Email</td></tr>
-        <tr><td><code class="i">payment_failed</code></td><td>Webhook payment.failed</td><td>Email</td></tr>
-        <tr><td><code class="i">renewed</code> / <code class="i">canceled</code></td><td>Renewal / cancel</td><td>Email</td></tr>
-      </table></div>
-      <div class="example">
-        <div class="example-head">Duplicate alert rokna<button class="copy" type="button">Copy</button></div>
-<pre class="code"><span class="c">-- dedupe_key UNIQUE: ek period me ek hi 80% alert</span>
-<span class="k">INSERT IGNORE INTO</span> notifications (user_id, type, title, message, channel, dedupe_key)
-<span class="k">VALUES</span> (2, <span class="s">'usage_80'</span>, <span class="s">'Notes limit 80%'</span>,
-        <span class="s">'You have used 40 of 50 notes.'</span>, <span class="s">'in_app'</span>,
-        <span class="s">'u2-notes-80-2026-10-01'</span>);</pre>
-      </div>
-      <div class="pager"><a class="prev" href="#cron">❮ Previous</a><a href="#exercises">Next: Exercises ❯</a></div>
-    </section>
-
-    <!-- 12 -->
-    <section class="lesson" id="exercises">
-      <div class="eyebrow">Lesson 12 of 12</div>
-      <h2 class="title">Exercises</h2>
-      <p>Dummy data (<code class="i">snapnotes_schema_and_seed.sql</code>) load karke ye solve karo.</p>
-      <details class="ex"><summary>1. Kaun se users kisi limit ke 80% se upar hain?</summary>
-        <div class="example"><div class="example-head">Answer<button class="copy" type="button">Copy</button></div>
-<pre class="code"><span class="k">SELECT</span> name, plan_code, feature, used, limit_value, pct_used
-<span class="k">FROM</span> v_current_usage
-<span class="k">WHERE</span> pct_used &gt;= 80
-<span class="k">ORDER BY</span> pct_used <span class="k">DESC</span>;</pre></div>
-      </details>
-      <details class="ex"><summary>2. Plan-wise MRR nikalo.</summary>
-        <div class="example"><div class="example-head">Answer<button class="copy" type="button">Copy</button></div>
-<pre class="code"><span class="k">SELECT</span> * <span class="k">FROM</span> v_mrr;
-<span class="c">-- Yearly price ko 12 se divide karke monthly banaya gaya hai</span></pre></div>
-      </details>
-      <details class="ex"><summary>3. Rahul (Free) 3 naye notes banana chahta hai. Allowed hai?</summary>
-        <p>Nahi. Used 48 + 3 = 51 &gt; 50, aur Free plan me notes ki limit <b>hard</b> hai. Response: 402. Sirf 2 notes ban sakte hain.</p>
-      </details>
-      <details class="ex"><summary>4. Karan ka grace 13 Oct ko khatam hua. Kya steps honge?</summary>
-        <ul class="plain">
-          <li><code class="i">subscriptions.status</code> = canceled, <code class="i">canceled_at</code> = now</li>
-          <li>Invoice INV-2026-0005 ka status = uncollectible</li>
-          <li>Naya Free subscription create</li>
-          <li><code class="i">subscription_events</code>: canceled, <code class="i">notifications</code>: canceled</li>
-          <li>Notes 780 hain, Free limit 50: data delete nahi, naye notes block</li>
-        </ul>
-      </details>
-      <details class="ex"><summary>5. Same webhook do baar aaya. Kya hoga?</summary>
-        <p><code class="i">webhook_events.event_id</code> UNIQUE hai, isliye dusra insert duplicate error dega. Handler 200 return karke skip kar dega, payment do baar record nahi hogi.</p>
-      </details>
-      <h4>Build challenges</h4>
-      <ul class="plain">
-        <li>Coupon system: <code class="i">coupons</code> table + invoice me <code class="i">discount</code> line item</li>
-        <li>Team plan me per-seat billing (extra seat ₹99)</li>
-        <li>Redis counter + Lua script se race-condition-safe limit check</li>
-        <li>State machine aur <code class="i">can()</code> ke unit tests</li>
-      </ul>
-      <div class="pager"><a class="prev" href="#notifications">❮ Previous</a><a href="#intro">Back to start ❯</a></div>
-    </section>
-  </main>
-</div>
-
+</section>
+</main>
 <script>
-  // Sidebar toggle (mobile)
-  const sidebar = document.getElementById('sidebar');
-  const menuBtn = document.getElementById('menuBtn');
-  const mq = window.matchMedia('(max-width: 900px)');
-  function syncSidebar() { if (!mq.matches) sidebar.classList.remove('closed'); else sidebar.classList.add('closed'); menuBtn.setAttribute('aria-expanded', 'false'); }
-  syncSidebar();
-  mq.addEventListener ? mq.addEventListener('change', syncSidebar) : mq.addListener(syncSidebar);
-  menuBtn.addEventListener('click', () => {
-    const open = sidebar.classList.toggle('closed') === false;
-    menuBtn.setAttribute('aria-expanded', String(open));
-  });
-  sidebar.addEventListener('click', e => { if (e.target.tagName === 'A' && mq.matches) { sidebar.classList.add('closed'); menuBtn.setAttribute('aria-expanded', 'false'); } });
-
-  // Active lesson highlight
-  const links = [...sidebar.querySelectorAll('a')];
-  const byId = Object.fromEntries(links.map(a => [a.getAttribute('href').slice(1), a]));
-  const io = new IntersectionObserver(entries => {
-    entries.forEach(en => {
-      if (en.isIntersecting) {
-        links.forEach(l => l.classList.remove('active'));
-        const a = byId[en.target.id]; if (a) a.classList.add('active');
-      }
-    });
-  }, { rootMargin: '-30% 0px -60% 0px' });
-  document.querySelectorAll('.lesson').forEach(s => io.observe(s));
-  if (links[0]) links[0].classList.add('active');
-
-  // Copy buttons
-  document.querySelectorAll('.copy').forEach(btn => {
-    btn.addEventListener('click', () => {
-      const pre = btn.closest('.example').querySelector('pre');
-      const text = pre.innerText;
-      const done = () => { btn.textContent = 'Copied'; setTimeout(() => btn.textContent = 'Copy', 1500); };
-      const fallback = () => {
-        const r = document.createRange(); r.selectNodeContents(pre);
-        const s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
-        btn.textContent = 'Selected, press Ctrl+C'; setTimeout(() => btn.textContent = 'Copy', 2500);
-      };
-      try { navigator.clipboard.writeText(text).then(done, fallback); } catch (e) { fallback(); }
-    });
-  });
-
-  // Try it: limit checker
-  const LIMITS = {
-    free: { notes: [50, 'hard'], storage_mb: [100, 'hard'], ai_summaries: [10, 'hard'], team_members: [1, 'hard'] },
-    pro:  { notes: [1000, 'hard'], storage_mb: [5120, 'soft'], ai_summaries: [200, 'soft'], team_members: [3, 'hard'] },
-    team: { notes: [-1, 'hard'], storage_mb: [51200, 'soft'], ai_summaries: [1000, 'soft'], team_members: [10, 'hard'] }
-  };
-  const $ = id => document.getElementById(id);
-  function esc(s) { return String(s).replace(/[&<>]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c])); }
-  function runCheck() {
-    const plan = $('tPlan').value, status = $('tStatus').value, f = $('tFeature').value;
-    const used = Math.max(0, parseInt($('tUsed').value, 10) || 0);
-    const qty = Math.max(1, parseInt($('tQty').value, 10) || 1);
-    const [limit, type] = LIMITS[plan][f];
-    let lines = [`plan=${plan}  feature=${f}  limit=${limit === -1 ? 'unlimited' : limit} (${type})`, `used=${used}  qty=${qty}  after=${used + qty}`, ''];
-    let verdict;
-    if (status === 'canceled') verdict = '<span class="bad">✗ 403 BLOCKED</span>  Subscription inactive';
-    else if (limit === -1) verdict = '<span class="ok">✓ ALLOWED</span>  Unlimited feature';
-    else if (used + qty <= limit) {
-      const pct = Math.round((used + qty) / limit * 100);
-      verdict = `<span class="ok">✓ ALLOWED</span>  ${pct}% used` + (pct >= 80 ? `\n<span class="warn">! Notification: usage_${pct >= 100 ? 100 : 80}</span>` : '');
-    } else if (type === 'soft') {
-      verdict = `<span class="warn">✓ ALLOWED + OVERAGE</span>  ${used + qty - limit} units next invoice me bill honge`;
-    } else {
-      verdict = `<span class="bad">✗ 402 BLOCKED</span>  Limit reached. Sirf ${Math.max(0, limit - used)} aur allowed.`;
-    }
-    const grace = status === 'past_due' ? '<span class="warn">Note: past_due, grace period chal raha hai</span>\n' : '';
-    $('tResult').innerHTML = lines.map(esc).join('\n') + grace + verdict;
-  }
-  ['tPlan', 'tStatus', 'tFeature', 'tUsed', 'tQty'].forEach(id => $(id).addEventListener('input', runCheck));
-  runCheck();
-
-  // Try it: invoice calculator
-  const inr = n => '₹' + n.toLocaleString('en-IN', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-  function runInvoice() {
-    const st = Math.max(0, parseInt($('iStorage').value, 10) || 0);
-    const ai = Math.max(0, parseInt($('iAi').value, 10) || 0);
-    const base = 299, stOver = Math.max(0, st - 5120), aiOver = Math.max(0, ai - 200);
-    const stAmt = Math.round(stOver * 0.05 * 100) / 100, aiAmt = aiOver * 1;
-    const sub = Math.round((base + stAmt + aiAmt) * 100) / 100;
-    const tax = Math.round(sub * 0.18 * 100) / 100;
-    const pad = s => s.padEnd(30, ' ');
-    $('iResult').textContent =
-      pad('Pro plan base') + inr(base) + '\n' +
-      pad(`Storage overage ${stOver} MB`) + inr(stAmt) + '\n' +
-      pad(`AI overage ${aiOver}`) + inr(aiAmt) + '\n' +
-      '-'.repeat(42) + '\n' +
-      pad('Subtotal') + inr(sub) + '\n' +
-      pad('GST 18%') + inr(tax) + '\n' +
-      pad('TOTAL') + inr(Math.round((sub + tax) * 100) / 100);
-  }
-  ['iStorage', 'iAi'].forEach(id => $(id).addEventListener('input', runInvoice));
-  runInvoice();
-</script>
+const $=id=>document.getElementById(id);
+const tbl=(h,r)=>'<table><tr>'+h.map(x=>'<th>'+x+'</th>').join('')+'</tr>'+r.map(a=>'<tr>'+a.map(x=>'<td>'+x+'</td>').join('')+'</tr>').join('')+'</table>';
+const esc=s=>s.replace(/</g,'&lt;');
+// Tables
+const T=[
+['plans','Kaun-kaun se plan bechte hain.','id <b>PK</b>, name, price_paise, interval',[['1','Pro Monthly','49900','month'],['2','Pro Yearly','499000','year']],['id','name','price_paise','interval']],
+['subscriptions','User ka current subscription aur status.','id <b>PK</b>, user_id, plan_id <b>FK→plans</b>, status, current_period_end, cancel_at_period_end',[['101','7 (Rahul)','1','ACTIVE','2026-11-16','false']],['id','user_id','plan_id','status','current_period_end','cancel_at_period_end']],
+['payments','Har charge ka record.','id <b>PK</b>, subscription_id <b>FK→subscriptions</b>, amount_paise, status, gateway_ref <b>UNIQUE</b>',[['5001','101','49900','SUCCESS','pay_Ab12'],['5002','101','49900','FAILED','pay_Cd34']],['id','subscription_id','amount_paise','status','gateway_ref']],
+['subscription_events','History/audit: kab kya hua.','id <b>PK</b>, subscription_id <b>FK</b>, type, created_at',[['1','101','CREATED','2026-10-16 10:00'],['2','101','ACTIVATED','2026-10-16 10:01']],['id','subscription_id','type','created_at']],
+['idempotency_keys','Duplicate request rokne ke liye.','key <b>PK</b>, user_id, response_json, created_at',[['k-7f3a','7','{"id":101}','2026-10-16 10:00']],['key','user_id','response_json','created_at']]];
+$('tables').innerHTML=T.map(t=>'<h3>'+t[0]+'</h3><p>'+t[1]+'<br><small>'+t[2]+'</small></p><div class="w">'+tbl(t[4],t[3])+'</div>').join('');
+// Flow
+(function(){const s=[['Rahul "Subscribe" dabata hai'],['Validation: plan valid? pehle se ACTIVE to nahi?','d'],['Subscription PENDING + event (DB transaction)'],['Gateway se ₹499 charge'],['Charge success?','d'],['Haan: payment SUCCESS, status ACTIVE'],['Commit ke baad confirmation email']];
+let o='<svg viewBox="0 0 700 '+(s.length*52+10)+'" width="700"><defs><marker id="a4" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0L8,4L0,8z" fill="#888"/></marker></defs>';
+s.forEach((x,i)=>{const y=8+i*52;o+='<rect class="'+(x[1]?'d':'b')+'" x="170" y="'+y+'" width="360" height="34" rx="'+(x[1]?17:6)+'"/><text x="350" y="'+(y+21)+'" text-anchor="middle">'+x[0]+'</text>';if(i<s.length-1)o+='<path class="l" d="M350 '+(y+34)+'V'+(y+52)+'" marker-end="url(#a4)"/>'});
+o+='<text x="540" y="'+(8+4*52+21)+'">Nahi: payment FAILED, status PENDING rehta hai</text></svg>';$('flow').innerHTML=o})();
+// Sequence generator
+function seq(A,M){const W=700,n=A.length,g=W/n,x=i=>g/2+i*g,h=50+M.length*38;let o='<svg viewBox="0 0 '+W+' '+h+'" width="700"><defs><marker id="sm" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0L8,4L0,8z" fill="#888"/></marker></defs>';
+A.forEach((a,i)=>{o+='<rect class="b" x="'+(x(i)-45)+'" y="4" width="90" height="26" rx="5"/><text class="h" x="'+x(i)+'" y="21" text-anchor="middle">'+a+'</text><path class="l dl" d="M'+x(i)+' 30V'+(h-6)+'"/>'});
+M.forEach((m,i)=>{const y=58+i*38,a=x(m[0]),b=x(m[1]);o+='<path class="l'+(m[3]?' dl':'')+'" d="M'+a+' '+y+'H'+b+'" marker-end="url(#sm)"/><text x="'+((a+b)/2)+'" y="'+(y-6)+'" text-anchor="middle">'+m[2]+'</text>'});
+return o+'</svg>'}
+const AC=['User','UI','API','DB','Gateway'];
+$('sq1').innerHTML=seq(AC,[[0,1,'Subscribe click'],[1,2,'POST /subscriptions'],[2,3,'insert PENDING + event'],[2,4,'charge ₹499'],[4,2,'success',1],[2,3,'payment + ACTIVE (txn)'],[2,1,'201 Created',1],[1,0,'"Pro active ho gaya"',1]]);
+$('sq2').innerHTML=seq(AC.slice(0,4),[[0,1,'Cancel click + confirm'],[1,2,'POST /{id}/cancel'],[2,3,'cancel_at_period_end=true'],[2,3,'insert CANCEL_REQUESTED event'],[2,1,'200 OK',1],[1,0,'"16 Nov tak access rahega"',1]]);
+// Endpoints
+const E=[
+['GET','/api/plans','—','[{"id":1,"name":"Pro Monthly","pricePaise":49900}]','500 server_error'],
+['POST','/api/subscriptions','Header: Idempotency-Key: k-7f3a\n{"planId":1,"paymentMethodId":"pm_9x"}','201 {"id":101,"status":"ACTIVE","currentPeriodEnd":"2026-11-16"}','400 invalid_plan | 409 already_subscribed | 402 payment_failed'],
+['GET','/api/subscriptions/me','—','200 {"id":101,"status":"ACTIVE","planName":"Pro Monthly","cancelAtPeriodEnd":false}','404 no_subscription'],
+['POST','/api/subscriptions/{id}/cancel','Header: Idempotency-Key\n{"reason":"too_expensive"}','200 {"status":"ACTIVE","cancelAtPeriodEnd":true}','404 not_found | 409 already_cancelled | 403 not_owner'],
+['POST','/api/webhooks/payment','Gateway JSON + signature header\n{"event":"payment.success","ref":"pay_Ab12"}','200 {}','401 bad_signature']];
+$('eps').innerHTML=E.map(e=>'<div class="ep"><h4>'+e[0]+' '+e[1]+'</h4><div><p><b>Request:</b></p><pre>'+esc(e[2])+'</pre><p><b class="ok">Success:</b></p><pre>'+esc(e[3])+'</pre><p><b class="er">Errors:</b> '+esc(e[4])+'</p></div></div>').join('')+'<p>Renewal ke liye endpoint nahi hai: <code>RenewalJob</code> background me roz chalta hai.</p>';
+// Matrices
+$('m6').innerHTML=tbl(['Endpoint + method','Business operation','Tables read','Inserted','Updated','Deleted/revoked','DB operation kab trigger'],[
+['GET /api/plans','Plans dikhana','plans','—','—','—','Hamesha (read only)'],
+['POST /api/subscriptions','Naya subscription','plans, subscriptions, idempotency_keys','subscriptions, payments, subscription_events, idempotency_keys','subscriptions (PENDING→ACTIVE)','—','Plan valid + koi ACTIVE sub nahi + gateway success'],
+['GET /api/subscriptions/me','Apna status dekhna','subscriptions, plans','—','—','—','Hamesha (read only)'],
+['POST /api/subscriptions/{id}/cancel','Period end pe cancel','subscriptions, idempotency_keys','subscription_events, idempotency_keys','subscriptions (cancel_at_period_end)','Access revoke hota hai period end pe (RenewalJob)','Sub ACTIVE hai aur user owner hai'],
+['POST /api/webhooks/payment','Gateway ka final result','payments','subscription_events','payments, subscriptions','—','Signature sahi + gateway_ref pehle processed nahi']]);
+$('m7').innerHTML=tbl(['Screen','User action','Insert/update','Validation rule','Error message (user ko)'],[
+['S1 Plans','Plan select','Koi nahi','Plan active hona chahiye','"Ye plan ab available nahi hai."'],
+['S2 Checkout','Subscribe click','subscriptions, payments, events (insert)','Payment method mandatory; pehle se ACTIVE nahi','"Payment method chuniye." / "Aapka subscription pehle se active hai."'],
+['S2 Checkout','Payment fail','payments FAILED (insert)','Gateway response','"Payment fail ho gaya. Dobara try kijiye ya dusra card use kijiye."'],
+['S3 My Subscription','Cancel click','subscriptions, events (update/insert)','Status ACTIVE; confirm dialog "Haan"','"Ye subscription cancel nahi ho sakta."'],
+['S4 Payments','List dekhna','Koi nahi','Login zaroori','"Pehle login kijiye."']]);
+$('m8').innerHTML=tbl(['Operation','Ek transaction me changes','Atomic?','Commit ke baad','Email/SMS fail ho to','Retry me duplicate risk','Idempotency kaise'],[
+['Subscribe (step 1)','subscriptions PENDING + event','Haan','Gateway call (transaction ke bahar)','Lagu nahi','Do PENDING rows ban sakti hain','Unique (user_id) jahan status PENDING/ACTIVE; Idempotency-Key'],
+['Subscribe (step 2)','payments SUCCESS + subscriptions ACTIVE + event','Haan (teeno ya koi nahi)','Confirmation email','Outbox me rehta hai, baad me retry; subscription ACTIVE hi rahega','Double payment record','payments.gateway_ref UNIQUE'],
+['Cancel','cancel_at_period_end + event','Haan','Cancel email','Same: outbox retry, cancel rollback nahi','Event do baar likha ja sakta hai','Pehle status check; same key pe saved response return'],
+['Renewal (job)','payment + current_period_end + event','Haan','Receipt email','Outbox retry','Ek mahine me do baar charge','Unique (subscription_id, period_start)'],
+['Webhook','payments status + subscriptions status','Haan','Koi nahi','Lagu nahi','Gateway same event dobara bhejta hai','gateway_ref pehle se processed ho to seedha 200']]);
+$('m9').innerHTML=tbl(['Scenario','Rahul ke saath kya hota hai','Kya hoga (galat)','Fix'],[
+['Double click','Subscribe 2 baar dabaya','2 charge','UI button disable + Idempotency-Key + DB unique constraint'],
+['Network timeout','Charge hua par response nahi mila','UI "fail" dikhata hai, par paisa kata','Retry same key pe; webhook final status set karta hai'],
+['Partial failure','Gateway success, DB commit fail','Paisa kata, ACTIVE nahi','Gateway ref pehle save; reconcile job PENDING ko check karta hai'],
+['Concurrent request','2 tab se ek saath subscribe','2 ACTIVE rows','Partial unique index + row lock (<code>SELECT ... FOR UPDATE</code>)'],
+['Webhook pehle, API baad me','Webhook aaya par payment row nahi','Event drop','Webhook gateway_ref se upsert kare; retry queue']]);
+// Navigation
+const secs=[...document.querySelectorAll('section')],sb=$('sb');
+secs.forEach((s,i)=>{const a=document.createElement('a');a.href='#s'+(i+1);a.textContent=s.dataset.t;sb.appendChild(a);
+if(i<secs.length-1){const b=document.createElement('button');b.className='nx';b.textContent='Next →';b.onclick=()=>go(i+1);s.appendChild(b)}});
+function go(i){i=Math.max(0,Math.min(secs.length-1,i));secs.forEach((s,k)=>s.classList.toggle('on',k==i));sb.querySelectorAll('a').forEach((a,k)=>a.classList.toggle('on',k==i));sb.classList.remove('open');history.replaceState(null,'','#s'+(i+1));scrollTo(0,0)}
+sb.onclick=e=>{if(e.target.tagName=='A'){e.preventDefault();go(+e.target.getAttribute('href').slice(2)-1)}};
+$('mb').onclick=()=>sb.classList.toggle('open');
+const r=document.documentElement,sv=(()=>{try{return localStorage.th}catch(e){}})();
+r.dataset.theme=sv||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');
+$('th').onclick=()=>{r.dataset.theme=r.dataset.theme=='dark'?'light':'dark';try{localStorage.th=r.dataset.theme}catch(e){}};
+go((parseInt(location.hash.slice(2))||1)-1);
+</script></body></html>
