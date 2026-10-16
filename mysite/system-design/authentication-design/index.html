@@ -3,273 +3,152 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Authentication Tutorial - Tables, Flow aur Flowchart</title>
+<title>Auth Module Tutorial</title>
 <style>
-:root{--bg:#fff;--panel:#f1f5f4;--ink:#1d2a28;--mute:#5d6e6b;--line:#d5dedc;--ac:#0b7a6b;--acink:#fff;--code:#14211f;--codeink:#d8f3ec;--warn:#fff4d6;--box:#e3f3ef;--dec:#fff0d9;
-box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#101716;--panel:#18221f;--ink:#e3eeeb;--mute:#93a7a2;--line:#2b3b37;--ac:#3cc2ad;--acink:#08201c;--code:#0a100f;--codeink:#c9efe6;--warn:#3a3217;--box:#173530;--dec:#3b2f17}}
-:root[data-theme="dark"]{--bg:#101716;--panel:#18221f;--ink:#e3eeeb;--mute:#93a7a2;--line:#2b3b37;--ac:#3cc2ad;--acink:#08201c;--code:#0a100f;--codeink:#c9efe6;--warn:#3a3217;--box:#173530;--dec:#3b2f17}
-*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
-body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 "Segoe UI",system-ui,sans-serif}
-header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;display:flex;gap:12px;align-items:center;padding:10px 16px;background:var(--ac);color:var(--acink)}
-body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--ac);z-index:10}
-header b{font-size:18px}header span{opacity:.85;font-size:14px;flex:1}
-header button{background:none;border:1px solid currentColor;color:inherit;border-radius:6px;padding:4px 10px;cursor:pointer}
-.wrap{display:flex;min-height:100vh}
-nav{width:250px;flex:none;background:var(--panel);border-right:1px solid var(--line);padding:10px 0;position:sticky;top:48px;align-self:flex-start;max-height:calc(100vh - 48px);overflow:auto}
-nav button{display:block;width:100%;text-align:left;border:0;background:none;color:var(--ink);padding:8px 18px;font:inherit;font-size:15px;cursor:pointer;border-left:4px solid transparent}
-nav button:hover{background:var(--box)}nav button.on{background:var(--box);border-left-color:var(--ac);font-weight:600}
-main{flex:1;min-width:0;max-width:880px;padding:22px 26px 60px}
-section{display:none}section.on{display:block}
-h1{margin:0 0 6px;font-size:30px}h2{margin:28px 0 8px;font-size:21px}p{max-width:75ch}
-.lead{color:var(--mute)}
-.note{background:var(--warn);border-left:4px solid #e0a800;padding:10px 14px;border-radius:4px;margin:14px 0;max-width:75ch}
-.scroll{overflow-x:auto;margin:10px 0}
-table{border-collapse:collapse;width:100%;font-size:14.5px}
-th,td{border:1px solid var(--line);padding:6px 10px;text-align:left;vertical-align:top}
-th{background:var(--ac);color:var(--acink)}tr:nth-child(even) td{background:var(--panel)}
-td:first-child{font-weight:600;white-space:nowrap}
-.cap{font-weight:600;margin-top:18px}.cap code{background:var(--box);padding:2px 8px;border-radius:4px}
-pre{background:var(--code);color:var(--codeink);padding:14px;border-radius:6px;overflow:auto;font:13.5px/1.5 Consolas,monospace}
-code{font-family:Consolas,monospace}
-.flow{display:flex;flex-direction:column;align-items:center;margin:14px 0;padding:16px 8px;background:var(--panel);border-radius:8px}
-.st{position:relative;width:min(100%,430px);text-align:center;padding:9px 12px;border:2px solid var(--ac);background:var(--box);border-radius:8px;font-size:14.5px}
-.st.s,.st.e{border-radius:30px;background:var(--ac);color:var(--acink);font-weight:600}
-.st.d{background:var(--dec);border-color:#d98e00;border-radius:4px;clip-path:none;font-weight:600}
-.st.d::before{content:"\25C7  ";}
-.no{font-size:13px;color:#b3261e;font-weight:400;display:block;margin-top:4px}
-@media (prefers-color-scheme:dark){.no{color:#ff8a80}}
-.ar{height:22px;width:2px;background:var(--ac);position:relative;margin:0 auto}
-.ar::after{content:"";position:absolute;bottom:-1px;left:-4px;border:5px solid transparent;border-top:7px solid var(--ac);border-bottom:0}
-.er{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}.er div{background:var(--box);border:1px solid var(--line);border-radius:6px;padding:6px 10px;font-size:14px}
-.pn{display:flex;justify-content:space-between;margin-top:36px;gap:10px}
-.pn button{background:var(--ac);color:var(--acink);border:0;padding:9px 18px;border-radius:6px;font:inherit;cursor:pointer}
-.pn button:disabled{opacity:.3;cursor:default}
-#mt{display:none}
-@media(max-width:760px){nav{position:fixed;left:0;top:calc(48px + env(safe-area-inset-top,0px));bottom:0;z-index:4;transform:translateX(-100%);transition:transform .2s;max-height:none}nav.open{transform:none}#mt{display:inline-block}main{padding:16px}}
-:focus-visible{outline:3px solid #e0a800;outline-offset:2px}
+:root{--bg:#fff;--card:#f3f6fa;--tx:#1d2733;--mu:#5a6877;--ac:#2563eb;--bd:#d5dde6;--ok:#15803d;--er:#b91c1c;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+:root:not([data-theme=light]){color-scheme:light}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#10161d;--card:#1a232d;--tx:#e6edf3;--mu:#9aa8b6;--ac:#60a5fa;--bd:#2d3945;--ok:#4ade80;--er:#f87171;color-scheme:dark}}
+:root[data-theme=dark]{--bg:#10161d;--card:#1a232d;--tx:#e6edf3;--mu:#9aa8b6;--ac:#60a5fa;--bd:#2d3945;--ok:#4ade80;--er:#f87171;color-scheme:dark}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.6 system-ui,sans-serif}
+header{position:sticky;top:0;z-index:5;display:flex;gap:10px;align-items:center;padding:10px 16px;background:var(--card);border-bottom:1px solid var(--bd)}
+header b{flex:1}button{font:inherit;cursor:pointer;border:1px solid var(--bd);background:var(--bg);color:var(--tx);border-radius:6px;padding:6px 12px}
+#menu{display:none}
+nav{position:fixed;top:52px;bottom:0;left:0;width:260px;overflow:auto;padding:12px;background:var(--card);border-right:1px solid var(--bd)}
+nav a{display:block;padding:8px 10px;border-radius:6px;color:var(--tx);text-decoration:none;font-size:15px}nav a.on{background:var(--ac);color:#fff}
+main{margin-left:260px;padding:20px 28px;max-width:980px}
+.memo{background:var(--card);border-left:4px solid var(--ac);padding:10px 14px;border-radius:6px;margin:12px 0 20px}
+.memo b{color:var(--ac)}h1{margin-top:0}h2{margin-top:28px;border-bottom:1px solid var(--bd);padding-bottom:4px}
+.w{overflow-x:auto;margin:10px 0}table{border-collapse:collapse;font-size:14px;min-width:100%}th,td{border:1px solid var(--bd);padding:6px 9px;text-align:left;vertical-align:top}th{background:var(--card)}
+pre{background:var(--card);border:1px solid var(--bd);padding:10px;border-radius:6px;overflow:auto;font-size:13px;margin:6px 0}
+code{background:var(--card);padding:1px 5px;border-radius:4px}
+.m{display:inline-block;font-weight:700;color:#fff;background:var(--ac);border-radius:4px;padding:1px 8px;margin-right:6px}
+.ok{color:var(--ok)}.er{color:var(--er)}
+svg{max-width:100%;height:auto;font-size:12px}svg text{fill:var(--tx)}svg .b{fill:var(--card);stroke:var(--ac);stroke-width:1.5}svg .l{stroke:var(--mu);stroke-width:1.3;stroke-dasharray:4 3;fill:none}svg .a{stroke:var(--mu);stroke-width:1.5;fill:none}svg .r{fill:var(--er)}
+.next{margin:30px 0 40px;text-align:right}.next button{background:var(--ac);color:#fff;border:0;padding:10px 22px}
+@media(max-width:800px){#menu{display:block}nav{transform:translateX(-100%);transition:.2s;z-index:6;width:80%}nav.open{transform:none}main{margin:0;padding:14px}}
 </style>
 </head>
 <body>
-<header><button id="mt" aria-label="Menu">Menu</button><b>AuthLearn</b><span>Authentication module - Hinglish tutorial</span><button id="th">Dark/Light</button></header>
-<div class="wrap"><nav id="nav"></nav><main id="main">
-
-<section data-t="Intro">
-<h1>Authentication Introduction</h1>
-<p class="lead">Is tutorial me hum seekhenge ki ek Authentication module me kaun-kaun se submodules, database tables, flow aur flowchart hote hain (ASP.NET Core + SQL Server style).</p>
-<h2>Authentication vs Authorization</h2>
-<div class="scroll"><table><tr><th></th><th>Authentication (AuthN)</th><th>Authorization (AuthZ)</th></tr>
-<tr><td>Sawaal</td><td>Tum kaun ho?</td><td>Tum kya kar sakte ho?</td></tr>
-<tr><td>Kaam</td><td>Identity verify karna</td><td>Permission check karna</td></tr>
-<tr><td>Example</td><td>Login, OTP, JWT</td><td>Role, Policy, Claims</td></tr>
-<tr><td>HTTP code</td><td>401 Unauthorized</td><td>403 Forbidden</td></tr></table></div>
-<h2>Is tutorial me kya milega</h2>
-<p>Submodules ki list, 11 database tables ki poori design, har flow ka step-by-step flowchart (Register, Login, Refresh, Forgot Password, MFA, Logout), API endpoints, code sample aur security checklist.</p>
-</section>
-
-<section data-t="Submodules">
-<h1>Submodules</h1>
-<p class="lead">Ek production Authentication module me aam taur par ye 12 submodules hote hain.</p>
-<div class="scroll"><table><tr><th>#</th><th>Submodule</th><th>Kaam</th><th>Level</th></tr>
-<tr><td>1</td><td>Registration</td><td>Naya user banana, password hash karna</td><td>Core</td></tr>
-<tr><td>2</td><td>Email/Phone Verification</td><td>Email ya mobile confirm karna</td><td>Core</td></tr>
-<tr><td>3</td><td>Login</td><td>Credentials check karke token dena</td><td>Core</td></tr>
-<tr><td>4</td><td>Token Management</td><td>JWT access + refresh token, rotation</td><td>Core</td></tr>
-<tr><td>5</td><td>Logout</td><td>Token revoke, session band</td><td>Core</td></tr>
-<tr><td>6</td><td>Password Management</td><td>Forgot, reset, change password</td><td>Core</td></tr>
-<tr><td>7</td><td>MFA / 2FA</td><td>OTP ya authenticator app</td><td>Security</td></tr>
-<tr><td>8</td><td>Lockout / Rate limit</td><td>Brute-force se bachav</td><td>Security</td></tr>
-<tr><td>9</td><td>External / Social Login</td><td>Google, Microsoft (OAuth2/OIDC)</td><td>Advanced</td></tr>
-<tr><td>10</td><td>SSO</td><td>SAML / OIDC enterprise login</td><td>Advanced</td></tr>
-<tr><td>11</td><td>Session / Device Management</td><td>Active sessions, remote logout</td><td>Advanced</td></tr>
-<tr><td>12</td><td>Audit Logging</td><td>Har auth event ka record</td><td>Advanced</td></tr></table></div>
-<div class="note">Authorization (Roles, Permissions) alag module rakho, lekin Roles aur UserRoles tables yahin se link hote hain.</div>
-</section>
-
-<section data-t="Tables">
-<h1>Database Tables</h1>
-<p class="lead">Total 11 tables. PK = Primary Key, FK = Foreign Key.</p>
-<h2>Relationships</h2>
-<div class="er"><div>Users 1 : N RefreshTokens</div><div>Users 1 : N EmailVerifications</div><div>Users 1 : N PasswordResetTokens</div><div>Users 1 : N UserMfa</div><div>Users 1 : N ExternalLogins</div><div>Users 1 : N UserSessions</div><div>Users 1 : N LoginAttempts</div><div>Users 1 : N AuditLogs</div><div>Users N : M Roles (UserRoles)</div><div>RolePermissions: Roles N : M Permissions</div></div>
-<div id="tbls"></div>
-<div class="note"><b>Tip:</b> Token aur reset code kabhi plain text me DB me mat rakho, sirf hash (SHA-256) store karo. Password ke liye BCrypt ya Argon2 use karo.</div>
-</section>
-
-<section data-t="Register">
-<h1>Registration Flow</h1>
-<p>User signup karta hai, password hash hota hai aur email verification link jaata hai. Tables: <code>Users</code>, <code>EmailVerifications</code>, <code>UserRoles</code>, <code>AuditLogs</code>.</p>
-<div class="flow" data-f="reg"></div>
-<h2>Endpoint</h2><pre>POST /api/auth/register
-{ "email": "a@b.com", "password": "Str0ng@Pass", "name": "Sagar" }
-POST /api/auth/verify-email?token=xxxx</pre>
-</section>
-
-<section data-t="Login">
-<h1>Login Flow</h1>
-<p>Sabse important flow. Isme lockout, verification aur MFA ke checks hote hain. Tables: <code>Users</code>, <code>LoginAttempts</code>, <code>RefreshTokens</code>, <code>UserSessions</code>.</p>
-<div class="flow" data-f="login"></div>
-<h2>Endpoint</h2><pre>POST /api/auth/login
-{ "email": "a@b.com", "password": "..." }
-200 -> { "accessToken": "...", "refreshToken": "...", "expiresIn": 900 }</pre>
-<div class="note">Error me hamesha same message do: "Invalid email or password". Isse attacker ko pata nahi chalta ki email exist karta hai ya nahi.</div>
-</section>
-
-<section data-t="Token">
-<h1>JWT aur Refresh Token</h1>
-<div class="scroll"><table><tr><th></th><th>Access Token</th><th>Refresh Token</th></tr>
-<tr><td>Life</td><td>5-15 minute</td><td>7-30 din</td></tr>
-<tr><td>Store</td><td>Memory / header me bhejo</td><td>DB me hash + httpOnly cookie</td></tr>
-<tr><td>Kaam</td><td>API call authorize karna</td><td>Naya access token lena</td></tr>
-<tr><td>Revoke</td><td>Nahi hota (short life)</td><td>DB se revoke hota hai</td></tr></table></div>
-<h2>Refresh Token Rotation Flow</h2>
-<div class="flow" data-f="ref"></div>
-<h2>C# Sample</h2>
-<pre>var claims = new[] {
-  new Claim(JwtRegisteredClaimNames.Sub, user.Id.ToString()),
-  new Claim(ClaimTypes.Email, user.Email),
-  new Claim(ClaimTypes.Role, "Admin")
-};
-var key   = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(cfg["Jwt:Key"]));
-var token = new JwtSecurityToken(
-  issuer: cfg["Jwt:Issuer"], audience: cfg["Jwt:Audience"],
-  claims: claims, expires: DateTime.UtcNow.AddMinutes(15),
-  signingCredentials: new SigningCredentials(key, SecurityAlgorithms.HmacSha256));
-return new JwtSecurityTokenHandler().WriteToken(token);</pre>
-</section>
-
-<section data-t="Password">
-<h1>Forgot / Reset Password</h1>
-<p>Tables: <code>PasswordResetTokens</code>, <code>Users</code>, <code>RefreshTokens</code>.</p>
-<div class="flow" data-f="pw"></div>
-<h2>Endpoints</h2><pre>POST /api/auth/forgot-password   { "email": "..." }
-POST /api/auth/reset-password    { "token": "...", "newPassword": "..." }
-POST /api/auth/change-password   { "oldPassword": "...", "newPassword": "..." }</pre>
-<h2>Password Policy</h2><p>Minimum 8-12 characters, upper + lower + number + symbol, common passwords block karo, aur last 3-5 passwords reuse mat hone do.</p>
-</section>
-
-<section data-t="MFA">
-<h1>MFA / 2FA</h1>
-<p>Password ke baad doosra proof. Types: Email OTP, SMS OTP, TOTP (Google Authenticator), Backup codes. Table: <code>UserMfa</code>.</p>
-<div class="flow" data-f="mfa"></div>
-<h2>Endpoints</h2><pre>POST /api/auth/mfa/setup      -> secret + QR code
-POST /api/auth/mfa/enable     { "code": "123456" }
-POST /api/auth/mfa/verify     { "mfaToken": "...", "code": "123456" }</pre>
-</section>
-
-<section data-t="Lockout">
-<h1>Lockout aur Rate Limiting</h1>
-<div class="scroll"><table><tr><th>Rule</th><th>Example</th></tr>
-<tr><td>Failed attempts limit</td><td>5 galat password par account lock</td></tr>
-<tr><td>Lockout time</td><td>15 minute (ya badhta hua: 15, 30, 60)</td></tr>
-<tr><td>IP rate limit</td><td>1 IP se 10 login/minute</td></tr>
-<tr><td>Captcha</td><td>3 fail ke baad captcha dikhao</td></tr>
-<tr><td>Reset</td><td>Successful login par FailedLoginCount = 0</td></tr></table></div>
-<p>Data kahan: <code>Users.FailedLoginCount</code>, <code>Users.LockoutEnd</code> aur history ke liye <code>LoginAttempts</code>.</p>
-<pre>builder.Services.AddRateLimiter(o =>
-  o.AddFixedWindowLimiter("login", x => { x.PermitLimit = 10; x.Window = TimeSpan.FromMinutes(1); }));</pre>
-</section>
-
-<section data-t="Social">
-<h1>Social Login aur SSO</h1>
-<div class="flow" data-f="soc"></div>
-<div class="scroll"><table><tr><th></th><th>Social Login</th><th>SSO (Enterprise)</th></tr>
-<tr><td>Protocol</td><td>OAuth2 / OpenID Connect</td><td>SAML 2.0 / OIDC</td></tr>
-<tr><td>Provider</td><td>Google, Microsoft, GitHub</td><td>Azure AD, Okta</td></tr>
-<tr><td>Table</td><td>ExternalLogins</td><td>ExternalLogins + tenant config</td></tr>
-<tr><td>Use</td><td>Consumer apps</td><td>B2B SaaS (eDiscovery type)</td></tr></table></div>
-</section>
-
-<section data-t="Logout">
-<h1>Logout aur Session Management</h1>
-<div class="flow" data-f="out"></div>
-<h2>Endpoints</h2><pre>POST   /api/auth/logout               (current session)
-POST   /api/auth/logout-all           (sab devices)
-GET    /api/auth/sessions             (active sessions list)
-DELETE /api/auth/sessions/{id}        (remote logout)</pre>
-</section>
-
-<section data-t="API">
-<h1>Saare API Endpoints</h1>
-<div class="scroll"><table><tr><th>Method</th><th>URL</th><th>Kaam</th><th>Auth</th></tr>
-<tr><td>POST</td><td>/auth/register</td><td>Signup</td><td>Public</td></tr>
-<tr><td>POST</td><td>/auth/verify-email</td><td>Email verify</td><td>Public</td></tr>
-<tr><td>POST</td><td>/auth/login</td><td>Login</td><td>Public</td></tr>
-<tr><td>POST</td><td>/auth/refresh-token</td><td>Naya token pair</td><td>Public</td></tr>
-<tr><td>POST</td><td>/auth/logout</td><td>Logout</td><td>Bearer</td></tr>
-<tr><td>POST</td><td>/auth/forgot-password</td><td>Reset mail</td><td>Public</td></tr>
-<tr><td>POST</td><td>/auth/reset-password</td><td>Naya password</td><td>Public</td></tr>
-<tr><td>POST</td><td>/auth/change-password</td><td>Password badlo</td><td>Bearer</td></tr>
-<tr><td>POST</td><td>/auth/mfa/verify</td><td>OTP check</td><td>MFA token</td></tr>
-<tr><td>GET</td><td>/auth/external/{provider}</td><td>Social login</td><td>Public</td></tr>
-<tr><td>GET</td><td>/auth/sessions</td><td>Active sessions</td><td>Bearer</td></tr></table></div>
-<h2>Clean Architecture Folder</h2>
-<pre>Auth.Domain          -> User, RefreshToken entities
-Auth.Application     -> Commands/Queries (CQRS), Validators, DTOs
-Auth.Infrastructure  -> EF Core, JwtService, EmailService
-Auth.API             -> AuthController, Middleware</pre>
-</section>
-
-<section data-t="Security">
-<h1>Security Checklist</h1>
-<div class="scroll"><table><tr><th>Point</th><th>Kya karna hai</th></tr>
-<tr><td>Password hashing</td><td>BCrypt / Argon2, kabhi plain ya MD5 nahi</td></tr>
-<tr><td>HTTPS</td><td>Sab kuch HTTPS par, HSTS on</td></tr>
-<tr><td>Token store</td><td>Refresh token httpOnly + Secure + SameSite cookie</td></tr>
-<tr><td>Short access token</td><td>15 min ya kam</td></tr>
-<tr><td>Rotation</td><td>Refresh token har baar naya, reuse par family revoke</td></tr>
-<tr><td>Generic errors</td><td>"Invalid email or password"</td></tr>
-<tr><td>Hashed tokens</td><td>Reset/verify/refresh token DB me hash</td></tr>
-<tr><td>Validation</td><td>Input validate, SQL injection se bachav (EF parameterized)</td></tr>
-<tr><td>CORS</td><td>Sirf allowed origins</td></tr>
-<tr><td>Secrets</td><td>JWT key config / Key Vault me, code me nahi</td></tr>
-<tr><td>Audit</td><td>Login, fail, reset, MFA change sab log karo</td></tr></table></div>
-<div class="note">Bas! Ab tum Authentication module ka poora design bana sakte ho.</div>
-</section>
-
-<div class="pn"><button id="pv">&laquo; Previous</button><button id="nx">Next &raquo;</button></div>
-</main></div>
-
+<svg width="0" height="0" style="position:absolute"><defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#7a8794"/></marker></defs></svg>
+<header><button id="menu">☰</button><b>🔐 Auth Module Tutorial</b><button id="th">🌓</button></header>
+<nav id="nav"></nav>
+<main id="main"></main>
 <script>
-var T={
-Users:[["Id","GUID","PK"],["Email","nvarchar(256)","UNIQUE, NOT NULL"],["PasswordHash","nvarchar(max)","BCrypt/Argon2 hash"],["Name","nvarchar(100)","Display name"],["IsEmailVerified","bit","Default 0"],["IsActive","bit","Disable/ban ke liye"],["FailedLoginCount","int","Galat attempts"],["LockoutEnd","datetime2 NULL","Is time tak locked"],["CreatedAt / UpdatedAt","datetime2","UTC"]],
-Roles:[["Id","int","PK"],["Name","nvarchar(50)","UNIQUE (Admin, User)"],["Description","nvarchar(200)","Optional"]],
-UserRoles:[["UserId","GUID","FK Users, composite PK"],["RoleId","int","FK Roles, composite PK"]],
-RefreshTokens:[["Id","GUID","PK"],["UserId","GUID","FK Users"],["SessionId","GUID","FK UserSessions"],["TokenHash","nvarchar(128)","SHA-256, INDEX"],["ExpiresAt","datetime2","Expiry"],["CreatedAt / CreatedByIp","datetime2 / nvarchar","Audit ke liye"],["RevokedAt","datetime2 NULL","NULL = active"],["ReplacedByTokenId","GUID NULL","Rotation chain"]],
-EmailVerifications:[["Id","GUID","PK"],["UserId","GUID","FK Users"],["TokenHash","nvarchar(128)","Link token ka hash"],["ExpiresAt","datetime2","24 ghante"],["UsedAt","datetime2 NULL","NULL = unused"]],
-PasswordResetTokens:[["Id","GUID","PK"],["UserId","GUID","FK Users"],["TokenHash","nvarchar(128)","Hash"],["ExpiresAt","datetime2","15-30 minute"],["UsedAt","datetime2 NULL","One-time use"],["RequestedIp","nvarchar(45)","Audit"]],
-UserMfa:[["Id","GUID","PK"],["UserId","GUID","FK Users"],["Type","tinyint","1=TOTP 2=SMS 3=Email"],["SecretKey","nvarchar(256)","Encrypted"],["IsEnabled","bit","Setup confirm hone par 1"],["BackupCodesHash","nvarchar(max)","Hashed recovery codes"]],
-LoginAttempts:[["Id","bigint","PK identity"],["UserId","GUID NULL","User na mile to NULL"],["Email","nvarchar(256)","Jis email se try hua"],["IpAddress","nvarchar(45)","Client IP"],["UserAgent","nvarchar(500)","Browser/device"],["IsSuccess","bit","Pass/fail"],["FailureReason","nvarchar(100)","WrongPassword, Locked..."],["AttemptedAt","datetime2","UTC"]],
-ExternalLogins:[["Id","GUID","PK"],["UserId","GUID","FK Users"],["Provider","nvarchar(50)","Google, Microsoft"],["ProviderUserId","nvarchar(256)","Provider ka user id, UNIQUE(Provider, ProviderUserId)"],["Email","nvarchar(256)","Provider email"]],
-UserSessions:[["Id","GUID","PK"],["UserId","GUID","FK Users"],["DeviceName","nvarchar(100)","Chrome on Windows"],["IpAddress","nvarchar(45)","Last IP"],["LastActiveAt","datetime2","Activity"],["IsActive","bit","Logout par 0"]],
-AuditLogs:[["Id","bigint","PK identity"],["UserId","GUID NULL","FK Users"],["Action","nvarchar(100)","Login, PasswordChanged, MfaEnabled"],["Details","nvarchar(max)","JSON"],["IpAddress","nvarchar(45)","Client IP"],["CreatedAt","datetime2","UTC"]]
-};
-// s=start, p=process, d=decision (n = No branch), e=end
-var F={
-reg:[["s","User signup form bharta hai"],["p","Input validate karo (email format, password policy)"],["d","Email pehle se exist karta hai?","Yes: 409 Conflict error do"],["p","Password hash karo (BCrypt / Argon2)"],["p","Users table me insert (IsEmailVerified = 0) + default Role"],["p","EmailVerifications me token hash save karo, mail bhejo"],["p","AuditLogs me 'Registered' likho"],["e","201 Created"]],
-login:[["s","User email + password bhejta hai"],["p","Email se user dhundo"],["d","User mila aur IsActive hai?","No: 401 Invalid email or password"],["d","Account locked hai? (LockoutEnd > now)","Yes: 423 Locked"],["d","Password hash match hua?","No: FailedLoginCount++, LoginAttempts log, limit par lock"],["d","Email verified hai?","No: 403 Verify your email"],["p","FailedLoginCount = 0 reset karo"],["d","MFA enabled hai?","Yes: mfaToken do, MFA flow par jao"],["p","UserSessions row banao, Access + Refresh token generate karo"],["p","RefreshTokens me hash save, LoginAttempts me success log"],["e","200 OK + tokens"]],
-ref:[["s","Access token expire, API ne 401 diya"],["p","Client refresh token bhejta hai"],["d","Token DB me mila, expire nahi, revoke nahi?","No: 401, dobara login karo"],["d","Ye token pehle use ho chuka hai? (ReplacedBy not null)","Yes: Theft! Poori token family revoke karo"],["p","Purana token revoke karo, ReplacedByTokenId set karo"],["p","Naya Access + Refresh token pair banao"],["e","200 OK + naye tokens"]],
-pw:[["s","User 'Forgot password' dabata hai"],["p","Email enter karta hai"],["p","User mile ya na mile, response same do (enumeration se bachav)"],["p","Random token banao, hash PasswordResetTokens me save (15 min)"],["p","Mail me reset link bhejo"],["p","User link kholkar naya password dalta hai"],["d","Token valid, unused aur expire nahi?","No: 400 Invalid or expired token"],["p","Naya password hash karke Users update karo"],["p","Token UsedAt set karo, sab RefreshTokens revoke karo"],["e","200 Password changed"]],
-mfa:[["s","Login me password sahi, MFA enabled"],["p","Temporary mfaToken do (5 min, sirf MFA ke liye)"],["p","User OTP / TOTP code dalta hai"],["d","Code sahi hai?","No: attempt++, 5 fail par lock"],["p","Final Access + Refresh token issue karo"],["e","200 OK"]],
-soc:[["s","User 'Login with Google' dabata hai"],["p","Google login page par redirect"],["p","User allow karta hai, callback me code aata hai"],["p","Backend code se provider token + profile leta hai"],["d","ExternalLogins me (Provider, ProviderUserId) mila?","No: Users + ExternalLogins me naya record banao"],["p","Apna Access + Refresh token issue karo"],["e","200 OK"]],
-out:[["s","User Logout dabata hai"],["p","Refresh token server ko bhejo"],["p","RefreshTokens.RevokedAt set karo"],["p","UserSessions.IsActive = 0, AuditLogs me likho"],["p","Client se tokens delete karo"],["e","204 No Content"]]
-};
-var $=function(s,r){return(r||document).querySelectorAll(s)};
-function buildFlows(){$(".flow").forEach(function(el){var h="";F[el.dataset.f].forEach(function(s,i){
-h+=(i?'<div class="ar"></div>':'')+'<div class="st '+s[0]+'">'+s[1]+(s[2]?'<span class="no">'+s[2]+'</span>':'')+'</div>'});el.innerHTML=h})}
-function buildTables(){var h="";for(var k in T){h+='<div class="cap">Table: <code>'+k+'</code></div><div class="scroll"><table><tr><th>Column</th><th>Type</th><th>Note</th></tr>'+T[k].map(function(r){return"<tr><td>"+r.join("</td><td>")+"</td></tr>"}).join("")+"</table></div>"}
-document.getElementById("tbls").innerHTML=h}
-var secs=$("section"),nav=document.getElementById("nav"),cur=0;
-secs.forEach(function(s,i){var b=document.createElement("button");b.textContent=(i+1)+". "+s.dataset.t;b.onclick=function(){go(i)};nav.appendChild(b)});
-function go(i){cur=i;secs.forEach(function(s,j){s.classList.toggle("on",i===j)});
-$("nav button").forEach(function(b,j){b.classList.toggle("on",i===j)});
-document.getElementById("pv").disabled=i===0;document.getElementById("nx").disabled=i===secs.length-1;
-nav.classList.remove("open");window.scrollTo(0,0);try{history.replaceState(null,"","#"+secs[i].dataset.t)}catch(e){}}
-document.getElementById("pv").onclick=function(){go(cur-1)};
-document.getElementById("nx").onclick=function(){go(cur+1)};
-document.getElementById("mt").onclick=function(){nav.classList.toggle("open")};
-document.getElementById("th").onclick=function(){var r=document.documentElement,d=matchMedia("(prefers-color-scheme:dark)").matches;var now=r.dataset.theme||(d?"dark":"light");r.dataset.theme=now==="dark"?"light":"dark"};
-buildFlows();buildTables();
-var start=0;secs.forEach(function(s,i){if(location.hash==="#"+s.dataset.t)start=i});go(start);
+const tbl=(h,r)=>`<div class=w><table><tr>${h.map(x=>`<th>${x}</th>`).join('')}</tr>${r.map(x=>`<tr>${x.map(c=>`<td>${c}</td>`).join('')}</tr>`).join('')}</table></div>`;
+const J=o=>'<pre>'+JSON.stringify(o,null,1)+'</pre>';
+const ep=(m,u,rq,ok,er)=>`<h3><span class=m>${m}</span><code>${u}</code></h3>${rq?'<b>Request</b>'+J(rq):'<b>Request:</b> body nahi (Authorization header / cookie)<br>'}<b class=ok>Success 200</b>${J(ok)}<b class=er>Errors</b><ul>${er.map(e=>`<li>${e}</li>`).join('')}</ul>`;
+function seq(a,m){const W=170,n=a.length,w=W*n,h=50+m.length*36;let s=`<div class=w><svg viewBox="0 0 ${w} ${h}" style="min-width:${Math.min(w,640)}px">`;
+a.forEach((x,i)=>{const c=W*i+W/2;s+=`<rect class=b x=${c-55} y=4 width=110 height=26 rx=5 /><text x=${c} y=22 text-anchor=middle>${x}</text><line class=l x1=${c} y1=30 x2=${c} y2=${h} />`});
+m.forEach((e,i)=>{const y=58+i*36,x1=W*e[0]+W/2,x2=W*e[1]+W/2;
+if(x1==x2)s+=`<path class=a d="M${x1} ${y-8}h40v16h-40" marker-end="url(#ar)" /><text x=${x1+46} y=${y+4}>${e[2]}</text>`;
+else s+=`<line class=a x1=${x1} y1=${y} x2=${x2} y2=${y} marker-end="url(#ar)" ${e[3]?'stroke-dasharray="5 3"':''} /><text x=${(x1+x2)/2} y=${y-6} text-anchor=middle>${e[2]}</text>`});
+return s+'</svg></div>'}
+function flow(a){let y=6,s='';a.forEach((t,i)=>{const d=t[0]=='?',[l,side]=t.replace('?','').split('|'),hh=d?54:36;
+if(i)s+=`<line class=a x1=130 y1=${y-22} x2=130 y2=${y-2} marker-end="url(#ar)" />`;
+s+=d?`<polygon class=b points="130,${y} 250,${y+27} 130,${y+54} 10,${y+27}" />`:`<rect class=b x=10 y=${y} width=240 height=36 rx=6 />`;
+s+=`<text x=130 y=${y+hh/2+4} text-anchor=middle>${l}</text>`;if(side)s+=`<text class=r x=262 y=${y+hh/2+4}>${side}</text>`;y+=hh+24});
+return `<div class=w><svg viewBox="0 0 520 ${y}" style="min-width:420px">${s}</svg></div>`}
+const box=(x,y,w,t)=>`<rect class=b x=${x} y=${y} width=${w} height=34 rx=6 /><text x=${x+w/2} y=${y+21} text-anchor=middle>${t}</text>`;
+const ar=(a,b,c,d)=>`<line class=a x1=${a} y1=${b} x2=${c} y2=${d} marker-end="url(#ar)" />`;
+
+const S=[
+["1. Overview","Auth module = app ka darwaza. Pehle pehchano (login), phir andar jaane do. Poore tutorial me ek hi user: <b>Rahul Sharma</b> (rahul@example.com).",
+`<h2>Module kya karta hai?</h2><p>Auth module user ko <b>register</b>, <b>login</b>, <b>logout</b> aur <b>password reset</b> karne deta hai. Login ke baad API ek <b>JWT access token</b> (15 min) aur ek <b>refresh token</b> (7 din) deta hai. Isko har end-user use karta hai (Rahul jaise customer), aur baaki saare modules is token ko check karke hi kaam karte hain. Passwords kabhi plain text me save nahi hote — sirf hash.</p>
+<h2>Architecture / Flow diagram</h2><div class=w><svg viewBox="0 0 700 150" style="min-width:600px">${box(10,20,110,'Browser (UI)')}${box(170,20,120,'ASP.NET API')}${box(340,20,130,'Application (CQRS)')}${box(520,20,110,'PostgreSQL')}${ar(120,37,170,37)}${ar(290,37,340,37)}${ar(470,37,520,37)}${box(340,100,130,'Email Service')}${ar(405,54,405,100)}<text x=10 y=90>JWT + Refresh token wapas UI ko</text></svg></div>
+${tbl(['Part','Kaam'],[['UI','Forms dikhata hai, token store karta hai'],['API Controller','Request leta hai, Application ko pass karta hai'],['Application','Business rules (password check, token banana)'],['PostgreSQL','Users, RefreshTokens, PasswordResetTokens'],['Email Service','Reset link bhejta hai']])}`],
+
+["2. Tables","Sirf 3 tables: Users, RefreshTokens, PasswordResetTokens. Token ka hash save hota hai, asli token nahi.",
+`<h2>users</h2><p>Purpose: har registered account ek row.</p>${tbl(['Column','Type','Key','Note'],[['id','uuid','PK',''],['email','varchar(150)','UNIQUE','login ID'],['password_hash','varchar(200)','','BCrypt hash'],['full_name','varchar(100)','',''],['status','varchar(10)','','Active / Locked'],['failed_attempts','int','','galat password count'],['created_at','timestamptz','','']])}
+${tbl(['id','email','full_name','status','failed_attempts'],[['u-101','rahul@example.com','Rahul Sharma','Active','0'],['u-102','priya@example.com','Priya Patel','Locked','5']])}
+<h2>refresh_tokens</h2><p>Purpose: login session. Logout = row revoke.</p>${tbl(['Column','Type','Key'],[['id','uuid','PK'],['user_id','uuid','FK → users.id'],['token_hash','varchar(100)',''],['expires_at','timestamptz',''],['revoked_at','timestamptz (null)',''],['created_at','timestamptz','']])}
+${tbl(['id','user_id','expires_at','revoked_at'],[['t-1','u-101','2026-10-23','null'],['t-0','u-101','2026-10-20','2026-10-16']])}
+<h2>password_reset_tokens</h2><p>Purpose: forgot password ka one-time link.</p>${tbl(['Column','Type','Key'],[['id','uuid','PK'],['user_id','uuid','FK → users.id'],['token_hash','varchar(100)',''],['expires_at','timestamptz','30 min'],['used_at','timestamptz (null)','']])}
+${tbl(['id','user_id','expires_at','used_at'],[['r-1','u-101','2026-10-16 10:30','null']])}
+<h2>ER diagram</h2><div class=w><svg viewBox="0 0 620 110" style="min-width:520px">${box(10,35,120,'refresh_tokens')}${box(250,35,100,'users')}${box(470,35,140,'password_reset_tokens')}${ar(250,52,130,52)}${ar(350,52,470,52)}<text x=140 y=45>N : 1</text><text x=375 y=45>1 : N</text></svg></div><p>Ek user ke <b>kai</b> tokens ho sakte hain (kai devices).</p>`],
+
+["3. Flow","Login ka flow sabse important hai. Baaki operations usi pattern par chalte hain.",
+`<h2>Login flowchart</h2>${flow(['Rahul email + password bhejta hai','?User mila?|Nahi → 401','?Status Locked?|Haan → 423','?Password sahi?|Nahi → failed_attempts+1 (5 pe Locked)','failed_attempts = 0','JWT + refresh token banao, DB me hash save','200 OK + tokens'])}
+<h2>Sequence: Login</h2>${seq(['User','UI','API','DB'],[[0,1,'email, password'],[1,2,'POST /login'],[2,3,'SELECT user'],[3,2,'user row',1],[2,2,'hash verify'],[2,3,'INSERT refresh_token'],[2,1,'200 + tokens',1],[1,0,'Dashboard',1]])}
+<h2>Sequence: Register</h2>${seq(['User','UI','API','DB'],[[0,1,'form submit'],[1,2,'POST /register'],[2,3,'email exists?'],[2,3,'INSERT user'],[2,1,'201 Created',1],[1,0,'Login screen',1]])}
+<h2>Sequence: Forgot + Reset Password</h2>${seq(['User','API','DB','Email'],[[0,1,'forgot-password'],[1,2,'INSERT reset_token'],[1,3,'reset link bhejo'],[3,0,'Email aaya',1],[0,1,'reset-password + token'],[1,2,'UPDATE password, used_at'],[1,2,'REVOKE refresh tokens'],[1,0,'200 OK',1]])}
+<h2>State diagram: users.status</h2><div class=w><svg viewBox="0 0 520 110" style="min-width:420px">${box(30,35,100,'Active')}${box(370,35,100,'Locked')}${ar(130,45,370,45)}${ar(370,65,130,65)}<text x=165 y=38>5 galat attempts</text><text x=165 y=82>Password reset ke baad</text></svg></div>`],
+
+["4. Screens","5 screens. Register, Login, Forgot, Reset — aur login ke baad Dashboard.",
+`${tbl(['#','Screen','Kaam'],[['1','Register','Naya account banana'],['2','Login','Email + password se andar aana'],['3','Forgot Password','Email dena, reset link mangna'],['4','Reset Password','Email wale link se naya password set'],['5','Dashboard','Login ke baad home; yahan Logout button hai']])}
+<h2>Navigation flow</h2><div class=w><svg viewBox="0 0 700 170" style="min-width:600px">${box(10,10,100,'Register')}${box(200,10,100,'Login')}${box(390,10,110,'Dashboard')}${box(200,100,120,'Forgot Password')}${box(420,100,120,'Reset Password')}${ar(110,27,200,27)}${ar(300,27,390,27)}${ar(250,44,250,100)}${ar(320,117,420,117)}${ar(480,100,290,44)}<text x=120 y=20>register ho gaya</text><text x=310 y=20>login OK</text><text x=330 y=110>email link</text></svg></div>`],
+
+["5. API Endpoints","Saare endpoints <code>/api/auth</code> ke neeche. Error hamesha JSON me: <code>{message}</code>.",
+ep('POST','/api/auth/register',{fullName:"Rahul Sharma",email:"rahul@example.com",password:"Rahul@123"},{userId:"u-101",message:"Account ban gaya"},['400 – Password weak','409 – Email already registered'])+
+ep('POST','/api/auth/login',{email:"rahul@example.com",password:"Rahul@123"},{accessToken:"eyJhbGci...",refreshToken:"rt_9f3a...",expiresIn:900},['401 – Email ya password galat','423 – Account locked'])+
+ep('POST','/api/auth/refresh',{refreshToken:"rt_9f3a..."},{accessToken:"eyJhbGci...",refreshToken:"rt_new1..."},['401 – Token invalid / expired / revoked'])+
+ep('POST','/api/auth/logout',{refreshToken:"rt_9f3a..."},{message:"Logout ho gaya"},['401 – Access token missing'])+
+ep('POST','/api/auth/forgot-password',{email:"rahul@example.com"},{message:"Agar email registered hai to link bhej diya gaya"},['400 – Email format galat'])+
+ep('POST','/api/auth/reset-password',{token:"reset_ab12...",newPassword:"Rahul@456"},{message:"Password badal gaya"},['400 – Token invalid / expired / used','400 – Password weak'])],
+
+["6. API-to-Table Mapping","Rule: forgot-password hamesha same response deta hai — taaki koi email guess na kar sake.",
+tbl(['Endpoint + Method','Business operation','Read','Insert','Update','Delete / Revoke','DB kab trigger hoga'],[
+['POST /register','Naya account','users','users','—','—','Email unique + password rule pass'],
+['POST /login','Login','users','refresh_tokens','users (failed_attempts, status)','—','Sahi password → token insert, attempts=0. Galat → attempts+1, 5 pe Locked'],
+['POST /refresh','Naya token lena','refresh_tokens, users','refresh_tokens (naya)','—','refresh_tokens (purana revoked_at)','Token valid, not expired, not revoked'],
+['POST /logout','Logout','refresh_tokens','—','—','refresh_tokens (revoked_at)','Token mila aur user ka apna hai'],
+['POST /forgot-password','Reset link mangna','users','password_reset_tokens','—','—','Email registered ho (warna kuch nahi, response same)'],
+['POST /reset-password','Naya password','password_reset_tokens','—','users (password_hash, status=Active), password_reset_tokens (used_at)','refresh_tokens (user ke sab revoke)','Token valid, used_at null, expire nahi']])],
+
+["7. Screen-to-Table + Validation","Validation pehle UI me (turant feedback), phir API me bhi (asli suraksha).",
+tbl(['Screen','User action','Table insert / update','Validation rule','Error message'],[
+['Register','Submit','users insert','Email format; password 8+ chars, 1 number, 1 capital','“Email sahi nahi hai” / “Password kam se kam 8 character, 1 number aur 1 capital ka ho” / “Ye email pehle se registered hai”'],
+['Login','Login click','refresh_tokens insert; users update (attempts)','Email aur password khali na ho','“Email ya password galat hai” / “Account lock hai, password reset karein”'],
+['Forgot Password','Link bhejo','password_reset_tokens insert','Email format sahi ho','“Email sahi nahi hai” (success pe: “Agar email registered hai to link bhej diya gaya”)'],
+['Reset Password','Save','users update; password_reset_tokens update','Password rule; confirm password match','“Password match nahi kar rahe” / “Link expire ho gaya, dobara mangwayein”'],
+['Dashboard','Logout','refresh_tokens update (revoked_at)','Login hona chahiye','“Session expire ho gaya, dobara login karein”']])],
+
+["8. Transaction Boundary","Rule: jo changes saath me hone chahiye, ek DB transaction me. Email transaction ke <b>bahar</b> bhejo.",
+tbl(['Operation','Ek transaction me','Atomic?','Commit ke baad','Email/SMS fail','Retry se duplicate risk','Idempotency'],[
+['Register','users insert','Haan','201 return','Welcome email optional; fail = ignore','Same email 2 baar → duplicate user','users.email UNIQUE; 2nd request ko 409 do'],
+['Login','refresh_tokens insert + users.failed_attempts reset','Haan','Tokens return','Email nahi hota','Do tokens ban sakte hain','Harmless — har device ka alag token; purane expire ho jaate hain'],
+['Refresh','Naya token insert + purana revoke','Haan (dono ya koi nahi)','Naya token return','Email nahi hota','Do refresh ek saath → 2 naye tokens','Purane token par <code>revoked_at IS NULL</code> wali conditional UPDATE; 2nd request fail'],
+['Forgot Password','reset_token insert','Haan','Email bhejo','Fail ho to log + background retry; user dobara try kar sakta hai','Do links ban sakte hain','Naya token banate waqt purane unused tokens expire kar do'],
+['Reset Password','users update + used_at set + refresh_tokens revoke','Haan — sab ya kuch nahi','200 return','Confirmation email fail = ignore','Same link 2 baar use','<code>UPDATE ... WHERE used_at IS NULL</code>; 0 rows update → 400']])],
+
+["9. Edge Cases","Real life me user double click karta hai, net toot jaata hai. Pehle se socho.",
+tbl(['Scenario','Kya hoga','Solution'],[
+['Register par double click','2 requests ek saath','UI me button disable; DB me UNIQUE email → 2nd ko 409'],
+['Login ke time network timeout','Server ne token bana diya, UI ko response nahi mila','User dobara login kare — naya token mil jayega. Purane tokens expiry par khatam'],
+['Forgot password: DB me token bana, email fail','User ko link nahi mila','Email retry queue me; user dobara “Forgot password” dabaye'],
+['Reset par partial failure (password update hua, revoke nahi)','Purane sessions zinda rahenge — khatarnak','Teeno steps ek transaction me; fail → rollback'],
+['2 devices se ek hi refresh token ek saath','Dono naya token chahte hain','Conditional UPDATE (revoked_at IS NULL); ek jeetega, doosre ko 401 → re-login'],
+['Galat password baar-baar (brute force)','Attacker guess karta hai','5 attempts par Locked; IP par rate limit']])],
+
+["10. Folder Structure","Clean Architecture: andar wali layer bahar wali ko nahi jaanti. Domain sabse andar.",
+`<pre>Auth/
+├── Auth.Domain/            # Entities aur rules, kisi par depend nahi
+│   ├── Entities/           # User, RefreshToken, PasswordResetToken
+│   └── Enums/              # UserStatus (Active, Locked)
+├── Auth.Application/       # Business logic (CQRS)
+│   ├── Commands/           # Register, Login, Refresh, Logout, ResetPassword
+│   ├── Queries/            # Read-only operations
+│   ├── Interfaces/         # IUserRepository, IEmailSender, ITokenService
+│   └── Validators/         # Password / email validation rules
+├── Auth.Infrastructure/    # Bahar ki duniya se baat
+│   ├── Persistence/        # DbContext, EF Core configs, migrations (PostgreSQL)
+│   ├── Repositories/       # Interfaces ka asli DB code
+│   ├── Security/           # BCrypt hasher, JWT generator
+│   └── Email/              # Email sender implementation
+└── Auth.Api/               # ASP.NET Core Web API
+    ├── Controllers/        # AuthController (6 endpoints)
+    ├── Middleware/         # Global error handling
+    └── Program.cs          # DI setup, JWT config</pre>`]
+];
+
+const nav=document.getElementById('nav'),main=document.getElementById('main');
+S.forEach((s,i)=>{const a=document.createElement('a');a.href='#'+i;a.textContent=s[0];nav.appendChild(a)});
+function show(){let i=parseInt(location.hash.slice(1))||0;if(!S[i])i=0;const s=S[i];
+main.innerHTML=`<h1>${s[0]}</h1><div class=memo><b>💡 Yaad rakhne wali baat:</b> ${s[1]}</div>${s[2]}<div class=next>${S[i+1]?`<button onclick="location.hash=${i+1}">Next → ${S[i+1][0].replace(/^\d+\. /,'')}</button>`:'<b class=ok>Tutorial complete ✓</b>'}</div>`;
+[...nav.children].forEach((a,j)=>a.classList.toggle('on',j==i));nav.classList.remove('open');scrollTo(0,0)}
+addEventListener('hashchange',show);show();
+document.getElementById('menu').onclick=()=>nav.classList.toggle('open');
+document.getElementById('th').onclick=()=>{const d=document.documentElement,cur=d.dataset.theme||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light'),n=cur=='dark'?'light':'dark';d.dataset.theme=n;try{localStorage.setItem('t',n)}catch(e){}};
+try{const t=localStorage.getItem('t');if(t)document.documentElement.dataset.theme=t}catch(e){}
 </script>
 </body>
 </html>
